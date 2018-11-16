@@ -6,7 +6,7 @@ var path = require('path')
 
 var errorLog = path.resolve(__dirname) + '/../error.log'
 
-var instance = axios.create({ timeout: 10000, maxRedirects: 0 })
+var instance = axios.create()
 
 function _writeToLog(test, msg, url) {
   var now = new Date()
@@ -32,23 +32,22 @@ function _parsePlaylist(parent, playlist) {
 
     if(/(\.m3u|\.m3u8)/i.test(file)) {
 
-      try{
+      try {
         var response = await instance.get(file)
         console.log(file)
         console.log(response.status)
 
-        var sublist = M3U.parse(response.data);
-        // console.log(sublist)
-        _parsePlaylist(file, sublist)
+        // INFO: temporary disabled
+        // var sublist = M3U.parse(response.data);
+        // _parsePlaylist(file, sublist)
 
       } catch(err) {
         console.log(file)
         console.log('Error:',err.message)
 
-        if(err.response && /(404)/.test(err.response.status)) {
+        if(err.response || err.request) {
           _writeToLog('testThatAllLinksIsWorking', err.message, file)
         }
-
       }
     }
 
@@ -60,6 +59,7 @@ function testThatAllLinksIsWorking() {
 
   var playlist = M3U.parse(fs.readFileSync(path.resolve(__dirname) + "/../index.m3u", { encoding: "utf8" }));
   // playlist = playlist.slice(1600, 1700)
+  // playlist = [{ file: 'http://163.172.107.234:1914/live/medoum1/FH6Oxe1vOH/19.m3u8' }]
 
   _parsePlaylist(null, playlist)
 
