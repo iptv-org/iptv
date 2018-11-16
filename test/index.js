@@ -30,14 +30,14 @@ function _parsePlaylist(parent, playlist) {
 
     var file = _getFullPathToFile(parent, item.file)
 
-    if(/(\.m3u|\.m3u8)/i.test(file)) {
+    if(/^(http)/i.test(file) && /(\.m3u|\.m3u8)/i.test(file)) {
 
       try {
         var response = await instance.get(file)
         console.log(file)
         console.log(response.status)
 
-        // INFO: temporary disabled
+        // DEBUG: return errors if link is working
         // var sublist = M3U.parse(response.data);
         // _parsePlaylist(file, sublist)
 
