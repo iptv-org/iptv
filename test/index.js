@@ -34,8 +34,8 @@ function _parsePlaylist(parent, playlist) {
 
       try {
         var response = await instance.get(file)
-        console.log(file)
-        console.log(response.status)
+        // console.log(file)
+        // console.log(response.status)
 
         // DEBUG: return errors if link is working
         // var sublist = M3U.parse(response.data);
@@ -47,6 +47,7 @@ function _parsePlaylist(parent, playlist) {
 
         if(err.response || err.request) {
           _writeToLog('testThatAllLinksIsWorking', err.message, file)
+          process.exit(0)
         }
       }
     }
