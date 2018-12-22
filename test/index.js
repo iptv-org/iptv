@@ -63,7 +63,7 @@ async function testAllLinksIsWorking() {
     
   } else {
 
-    console.log(`FAILURES (${tests} tests, ${channels} channels, ${failures} failures)`)
+    console.log(`FAILURES! (${tests} tests, ${channels} channels, ${failures} failures)`)
 
   }
 
