@@ -1,69 +1,72 @@
-var parsers = require('playlist-parser');
-var M3U = parsers.M3U;
-var fs = require("fs");
-var axios = require('axios')
-var path = require('path')
+const parsers = require('playlist-parser');
+const M3U = parsers.M3U;
+const fs = require("fs");
+const axios = require('axios')
+const path = require('path')
 
-var errorLog = path.resolve(__dirname) + '/../error.log'
+const errorLog = 'error.log'
+const timeout = 10000
 
-var instance = axios.create()
+let tests = 0
+let channels = 0
+let failures = 0
 
-function _writeToLog(test, msg, url) {
+const http = axios.create({ timeout })
+http.defaults.headers.common["User-Agent"] = "VLC/2.2.4 LibVLC/2.2.4"
+
+function _writeToLog(test, country, msg, url) {
   var now = new Date()
-  var line = `${now.toISOString()} ${test}(): ${msg} '${url}'`
-  fs.appendFileSync(errorLog, line + '\n')
+  var line = `${test}(): ${country}: ${msg} '${url}'`
+  fs.appendFileSync(path.resolve(__dirname) + '/../' + errorLog, now.toISOString() + ' ' + line + '\n')
+  console.log(line)
 }
 
-function _getFullPathToFile(parent, file) {
-  if(/(http|https)/i.test(file) || !parent) {
-    return file
-  }
-
-  var parsedUrl = parent.substring(0, parent.lastIndexOf("/"))
-
-  return parsedUrl + '/' + file
+function _loadPlaylist(filename) {
+  return M3U.parse(fs.readFileSync(path.resolve(__dirname) + "/../" + filename, { encoding: "utf8" }))
 }
 
-function _parsePlaylist(parent, playlist) {
-  playlist.forEach(async (item) => {
-    if(!item) return
+async function testAllLinksIsWorking() {
 
-    var file = _getFullPathToFile(parent, item.file)
+  tests++
 
-    if(/^(http)/i.test(file) && /(\.m3u|\.m3u8)/i.test(file)) {
+  let countries = _loadPlaylist('index.m3u')
+  // countries = countries.slice(0, 2)
+
+  for(let country of countries) {
+
+    const playlist = _loadPlaylist(country.file)
+
+    for(let channel of playlist) {
+
+      channels++
 
       try {
-        var response = await instance.get(file)
-        // console.log(file)
-        // console.log(response.status)
 
-        // DEBUG: return errors if link is working
-        // var sublist = M3U.parse(response.data);
-        // _parsePlaylist(file, sublist)
+        await http.get(channel.file)
 
-      } catch(err) {
-        console.log(file)
-        console.log('Error:',err.message)
+        continue
 
-        if(err.response || err.request) {
-          _writeToLog('testThatAllLinksIsWorking', err.message, file)
-          process.exit(0)
-        }
+      } catch (err) {
+
+        failures++
+
+        _writeToLog('testAllLinksIsWorking', country.file, err.message, channel.file)
+
       }
+
     }
+  }
 
-    return
-  })
+  if(failures === 0) {
+
+    console.log(`OK (${tests} tests, ${channels} channels)`)
+    
+  } else {
+
+    console.log(`FAILURES (${tests} tests, ${channels} channels, ${failures} failures)`)
+
+  }
+
 }
 
-function testThatAllLinksIsWorking() {
-
-  var playlist = M3U.parse(fs.readFileSync(path.resolve(__dirname) + "/../index.m3u", { encoding: "utf8" }));
-  // playlist = playlist.slice(1600, 1700)
-  // playlist = [{ file: 'http://163.172.107.234:1914/live/medoum1/FH6Oxe1vOH/19.m3u8' }]
-
-  _parsePlaylist(null, playlist)
-
-}
-
-testThatAllLinksIsWorking()
+testAllLinksIsWorking()
