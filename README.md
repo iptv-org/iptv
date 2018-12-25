@@ -65,6 +65,7 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 | Kazakhstan             | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kz.m3u`
 | Kosovo                 | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/xk.m3u`
 | Kuwait                 | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kw.m3u`
+| Kyrgyzstan             | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kg.m3u`
 | Latvia                 | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lv.m3u`
 | Lebanon                | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lb.m3u`
 | Libya                  | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ly.m3u`
