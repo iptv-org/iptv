@@ -89,7 +89,7 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 | Portugal               | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pt.m3u`
 | Qatar                  | 14       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/qa.m3u`
 | Romania                | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ro.m3u`
-| Russia                 | 665      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ru.m3u`
+| Russia                 | 628      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ru.m3u`
 | Rwanda                 | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/rw.m3u`
 | San Marino             | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sm.m3u`
 | Saudi Arabia           | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sa.m3u`
@@ -117,4 +117,18 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 
 ## Contribution
 
-If you found an error or have any suggestions on how to organize a playlist just send an [issue](https://github.com/freearhey/iptv/issues) or a [pull request](https://github.com/freearhey/iptv/pulls)
+If you want to add new channel to the playlist you need add link to stream and add some information about it. For example:
+
+```xml
+#EXTINF:-1 tvg-id="exampletv.us" tvg-name="Example TV" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
+http://example.com/stream.m3u8
+```
+
+| Attribute   | Description
+| ----------- | ---
+| tvg-id      | Unique channel id which used to load EPG. Here you can id for most channels: https://xtream-editor.com/en/epg (optional)
+| tvg-name    | Official channel name. In most cases, you can use the name listed here: https://xtream-editor.com/en/epg (optional)
+| tvg-logo    | Logo of the channel from http://www.tv-logo.com/ (optional)
+| group-title | One of the following categories: Auto, Business, CCTV, Entertainment, Food, General, Hobby, Kids, Local, Movies, Music, News, Religious, Shop, Sport, Travel, XXX (optional)
+
+If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/freearhey/iptv/issues) or a [pull request](https://github.com/freearhey/iptv/pulls)
