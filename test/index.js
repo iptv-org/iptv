@@ -69,4 +69,6 @@ async function testAllLinksIsWorking() {
 
 }
 
+console.log('Test is running...')
+
 testAllLinksIsWorking()
