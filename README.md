@@ -126,7 +126,7 @@ http://example.com/stream.m3u8
 
 | Attribute   | Description
 | ----------- | ---
-| tvg-id      | Unique channel id which used to load EPG. Here you can id for most channels: https://xtream-editor.com/en/epg (optional)
+| tvg-id      | Unique channel id that is used to load EPG. Here you can find id for most channels: https://xtream-editor.com/en/epg (optional)
 | tvg-name    | Official channel name. In most cases, you can use the name listed here: https://xtream-editor.com/en/epg (optional)
 | tvg-logo    | Logo of the channel from http://www.tv-logo.com/ (optional)
 | group-title | One of the following categories: Auto, Business, CCTV, Entertainment, Food, General, Hobby, Kids, Local, Movies, Music, News, Religious, Shop, Sport, Travel, XXX (optional)
