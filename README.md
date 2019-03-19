@@ -134,7 +134,9 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 
 ## Contribution
 
-If you want to add new channel to the playlist you need add link to stream and add some information about it. For example:
+The easiest way to help the project is to sort channels by country. Specifically for this was created playlist `channels/unsorted.m3u` which contains channels that are not yet sorted by other playlists. If you recognize one of the channels in this playlist, just copy its title and link to the desired country playlist. That's it!
+
+If you want to add new channel to the playlist you need add link to stream and some information about it. For example:
 
 ```xml
 #EXTINF:-1 tvg-id="exampletv.us" tvg-name="Example TV" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
