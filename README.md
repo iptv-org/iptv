@@ -81,7 +81,7 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 | Luxembourg             | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lu.m3u`
 | Macau                  | 20       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mo.m3u`
 | Macedonia              | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mk.m3u`
-| Malaysia               | 22       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/my.m3u`
+| Malaysia               | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/my.m3u`
 | Malta                  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mt.m3u`
 | Mexico                 | 42       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mx.m3u`
 | Moldova                | 14       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u`
