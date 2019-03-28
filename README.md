@@ -23,7 +23,7 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 | Afghanistan            | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/af.m3u`
 | Albania                | 13       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/al.m3u`
 | Algeria                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/dz.m3u`
-| Argentina              | 73       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ar.m3u`
+| Argentina              | 70       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ar.m3u`
 | Armenia                | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/am.m3u`
 | Australia              | 28       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/au.m3u`
 | Austria                | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/at.m3u`
@@ -55,20 +55,20 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 | Estonia                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ee.m3u`
 | Finland                | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fi.m3u`
 | France                 | 56       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fr.m3u`
-| Germany                | 97       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/de.m3u`
+| Germany                | 95       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/de.m3u`
 | Greece                 | 26       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gr.m3u`
 | Guatemala              | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gt.m3u`
 | Haiti                  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ht.m3u`
 | Honduras               | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hn.m3u`
 | Hungary                | 6        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hu.m3u`
 | Iceland                | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/is.m3u`
-| India                  | 154      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/in.m3u`
-| Indonesia              | 118      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/id.m3u`
+| India                  | 150      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/in.m3u`
+| Indonesia              | 115      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/id.m3u`
 | Iran                   | 14       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ir.m3u`
 | Iraq                   | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/iq.m3u`
 | Ireland                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ie.m3u`
 | Israel                 | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/il.m3u`
-| Italia                 | 113      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/it.m3u`
+| Italia                 | 112      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/it.m3u`
 | Jamaica                | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/jm.m3u`
 | Japan                  | 15       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/jp.m3u`
 | Jordan                 | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/jo.m3u`
@@ -84,7 +84,7 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 | Macedonia              | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mk.m3u`
 | Malaysia               | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/my.m3u`
 | Malta                  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mt.m3u`
-| Mexico                 | 48       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mx.m3u`
+| Mexico                 | 44       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mx.m3u`
 | Moldova                | 14       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u`
 | Montenegro             | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/me.m3u`
 | Morocco                | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ma.m3u`
@@ -96,16 +96,16 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 | Norway                 | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/no.m3u`
 | Oman                   | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/om.m3u`
 | Pakistan               | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pk.m3u`
-| Palestine              | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ps.m3u`
+| Palestine              | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ps.m3u`
 | Panama                 | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pa.m3u`
 | Peru                   | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pe.m3u`
 | Philippines            | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ph.m3u`
 | Poland                 | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pl.m3u`
-| Portugal               | 54       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pt.m3u`
+| Portugal               | 55       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pt.m3u`
 | Puerto Rico            | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pr.m3u`
 | Qatar                  | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/qa.m3u`
-| Romania                | 45       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ro.m3u`
-| Russia                 | 346      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ru.m3u`
+| Romania                | 44       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ro.m3u`
+| Russia                 | 332      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ru.m3u`
 | Rwanda                 | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/rw.m3u`
 | San Marino             | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sm.m3u`
 | Saudi Arabia           | 13       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sa.m3u`
@@ -124,10 +124,10 @@ In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](h
 | Trinidad and Tobago    | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tt.m3u`
 | Tunisia                | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tn.m3u`
 | Turkey                 | 78       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tr.m3u`
-| Ukraine                | 194      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ua.m3u`
+| Ukraine                | 189      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ua.m3u`
 | United Arab Emirates   | 54       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ae.m3u`
-| United Kingdom         | 37       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uk.m3u`
-| United States          | 436      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/us.m3u`
+| United Kingdom         | 39       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uk.m3u`
+| United States          | 424      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/us.m3u`
 | Uruguay                | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uy.m3u`
 | Venezuela              | 6        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ve.m3u`
 | Vietnam                | 68       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/vn.m3u`
