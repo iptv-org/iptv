@@ -1,6 +1,6 @@
-const parsers = require('playlist-parser');
-const M3U = parsers.M3U;
-const fs = require("fs");
+const parsers = require('playlist-parser')
+const M3U = parsers.M3U
+const fs = require("fs")
 const axios = require('axios')
 const path = require('path')
 
@@ -15,14 +15,14 @@ let failures = 0
 const http = axios.create({ timeout })
 http.defaults.headers.common["User-Agent"] = "VLC/2.2.4 LibVLC/2.2.4"
 
-function _writeToLog(test, country, msg, url) {
+function writeToLog(test, country, msg, url) {
   var now = new Date()
   var line = `${test}(): ${country}: ${msg} '${url}'`
   fs.appendFileSync(path.resolve(__dirname) + '/../' + errorLog, now.toISOString() + ' ' + line + '\n')
   console.log(line)
 }
 
-function _loadPlaylist(filename) {
+function loadPlaylist(filename) {
   return M3U.parse(fs.readFileSync(path.resolve(__dirname) + "/../" + filename, { encoding: "utf8" }))
 }
 
@@ -30,12 +30,12 @@ async function testAllLinksIsWorking() {
 
   tests++
 
-  let countries = _loadPlaylist('index.m3u')
+  let countries = loadPlaylist('index.m3u')
   // countries = countries.slice(0, 2)
 
   for(let country of countries) {
 
-    const playlist = _loadPlaylist(country.file)
+    const playlist = loadPlaylist(country.file)
 
     for(let channel of playlist) {
 
@@ -55,7 +55,7 @@ async function testAllLinksIsWorking() {
 
         failures++
 
-        _writeToLog('testAllLinksIsWorking', country.file, err.message, channel.file)
+        writeToLog('testAllLinksIsWorking', country.file, err.message, channel.file)
 
       }
 
