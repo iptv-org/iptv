@@ -12,6 +12,10 @@ To open the playlist in VLC player you just need click `File` - > `Open Network.
 
 then just press the 'Open' button
 
+### Android
+
+To watch IPTV on your Android device you can use any player with support M3U-playlists and this playlist: [https://raw.githubusercontent.com/freearhey/iptv/master/index.all.m3u](https://raw.githubusercontent.com/freearhey/iptv/master/index.all.m3u). Or select a playlist for a specific country from the list below.
+
 ### Plex App
 
 In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](https://github.com/Cigaras/IPTV.bundle) plugin.
