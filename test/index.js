@@ -22,6 +22,14 @@ function writeToLog(test, country, msg, url) {
   console.log(line)
 }
 
+function skipPlaylist(filename) {
+	let test_country = process.env.TEST_COUNTRY
+	if (test_country && filename !== 'channels/' + test_country + '.m3u') {
+		return true;
+	}
+	return false;
+}
+
 function loadPlaylist(filename) {
   return M3U.parse(fs.readFileSync(path.resolve(__dirname) + "/../" + filename, { encoding: "utf8" }))
 }
@@ -34,6 +42,10 @@ async function testAllLinksIsWorking() {
   // countries = countries.slice(0, 2)
 
   for(let country of countries) {
+
+    if (skipPlaylist(country.file)) {
+	    continue;
+    }
 
     const playlist = loadPlaylist(country.file)
 
