@@ -16,6 +16,11 @@ then just press the 'Open' button
 
 To watch IPTV on your Android device you can use any player with support M3U-playlists and this playlist: [https://raw.githubusercontent.com/freearhey/iptv/master/index.all.m3u](https://raw.githubusercontent.com/freearhey/iptv/master/index.all.m3u). Or select a playlist for a specific country from the list below.
 
+### iOS
+
+To watch IPTV on your iOS device you can use [Movie Stream - M3U IP TV Films](https://itunes.apple.com/us/app/movie-stream-ip-tv-films/id1450912244?mt=8) or any other IPTV player with support M3U-playlists and this playlist
+[All Sources](https://raw.githubusercontent.com/freearhey/iptv/master/index.all.m3u). Or select a playlist for a specific country from the list below.
+
 ### Plex App
 
 In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](https://github.com/Cigaras/IPTV.bundle) plugin.
