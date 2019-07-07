@@ -4,7 +4,7 @@ Collection of 6000+ free IPTV channels from all over the world.
 
 ## Usage
 
-To watch IPTV you just need to paste this link `https://github.com/freearhey/iptv/blob/master/index.m3u` to any player with support M3U-playlists.
+To watch IPTV you just need to paste this link `https://raw.githubusercontent.com/freearhey/iptv/master/index.m3u` to any player with support M3U-playlists.
 
 ![VLC Network Panel](https://github.com/freearhey/iptv/raw/master/preview.png)
 
