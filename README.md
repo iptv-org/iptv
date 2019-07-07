@@ -181,7 +181,7 @@ http://example.com/stream.m3u8
 | tvg-id      | Unique channel id that is used to load EPG. Here you can find id for most channels: https://xtream-editor.com/en/epg (optional)
 | tvg-name    | Official channel name. In most cases, you can use the name listed here: https://xtream-editor.com/en/epg (optional)
 | tvg-logo    | Logo of the channel from http://www.tv-logo.com/ (optional)
-| group-title | One of the following categories: Auto, Business, CCTV, Entertainment, Food, General, Hobby, Kids, Local, Movies, Music, News, Religious, Shop, Sport, Travel, XXX (optional)
+| group-title | One of the following categories: Auto, Business,  CCTV,  Classic, Comedy, Documentary, Education, Entertainment,  Family, Fashion, Food,  General,  Health,  History,  Hobby,  Kids,  Legislative, Lifestyle, Local,  Movies,  Music,  News,  Quiz, Radio,  Religious, Sci-Fi,  Shop,  Sport,  Travel,  Weather,  XXX (optional)
 
 If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/freearhey/iptv/issues) or a [pull request](https://github.com/freearhey/iptv/pulls)
 
