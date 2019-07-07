@@ -5,11 +5,44 @@ const path = require('path')
 const urlParser = require('url')
 
 let total = 0
+const supportedGroups = [ 
+  'Auto',
+  'Business', 
+  'CCTV', 
+  'Classic',
+  'Comedy',
+  'Documentary',
+  'Education',
+  'Entertainment', 
+  'Family',
+  'Fashion',
+  'Food', 
+  'General', 
+  'Health', 
+  'History', 
+  'Hobby', 
+  'Kids', 
+  'Legislative',
+  'Lifestyle',
+  'Local', 
+  'Movies', 
+  'Music', 
+  'News', 
+  'Quiz',
+  'Radio', 
+  'Religious',
+  'Sci-Fi', 
+  'Shop', 
+  'Sport', 
+  'Travel', 
+  'Weather', 
+  'XXX'
+]
 
 function init() {
 
   let countries = loadPlaylist('index.m3u')
-  // countries = countries.slice(0, 10)
+  // countries = countries.slice(0, 4)
 
   let channels = []
 
@@ -99,8 +132,16 @@ function parseTvgLogo(item) {
 function parseGroupTitle(item) {
   let info = getInfo(item)
   let matches = info.match(/group\-title\=\"(.*?)\"/i)
+  let groupTitle = (matches && matches.length > 1) ? matches[1] : ''
+  let groupIndex = supportedGroups.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
 
-  return (matches && matches.length > 1) ? matches[1] : ''
+  if(groupIndex === -1) {
+    groupTitle = ''
+  } else {
+    groupTitle = supportedGroups[groupIndex]
+  }
+
+  return groupTitle
 }
 
 function byTitle(a, b) {
