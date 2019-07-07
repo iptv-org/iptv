@@ -4,26 +4,27 @@ Collection of 6000+ free IPTV channels from all over the world.
 
 ## Usage
 
-### VLC Player
-
-To open the playlist in VLC player you just need click `File` - > `Open Network...` and in the window that opens, insert a link to the playlist itself: `https://raw.githubusercontent.com/freearhey/iptv/master/index.m3u`
+To watch IPTV you just need to paste this link `https://github.com/freearhey/iptv/blob/master/index.m3u` to any player with support M3U-playlists.
 
 ![VLC Network Panel](https://github.com/freearhey/iptv/raw/master/preview.png)
 
-then just press the 'Open' button
+Below you can find a manually selected list of such applications for different platforms.
 
-### Android
+### Windows
 
-To watch IPTV on your Android device you can use any player with support M3U-playlists and this playlist: [https://raw.githubusercontent.com/freearhey/iptv/master/index.all.m3u](https://raw.githubusercontent.com/freearhey/iptv/master/index.all.m3u). Or select a playlist for a specific country from the list below.
+- [VLC for Windows](https://www.videolan.org/vlc/download-windows.html) is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
+
+### Mac
+
+- [VLC for Mac OS X](https://www.videolan.org/vlc/download-macosx.html) is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
 
 ### iOS
 
-To watch IPTV on your iOS device you can use [Movie Stream - M3U IP TV Films](https://itunes.apple.com/us/app/movie-stream-ip-tv-films/id1450912244?mt=8) or any other IPTV player with support M3U-playlists and this playlist
-[All Sources](https://raw.githubusercontent.com/freearhey/iptv/master/index.all.m3u). Or select a playlist for a specific country from the list below.
+- [Stream - Watch IPTV & Movies](https://itunes.apple.com/us/app/movie-stream-ip-tv-films/id1450912244?mt=8)
 
-### Plex App
+### PlayStation 4
 
-In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](https://github.com/Cigaras/IPTV.bundle) plugin.
+- [Plex](https://www.plex.tv/apps-devices/#modal-devices-playstation-4) media server allows you to aggregate all your personal media and access it anywhere you go. In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](https://github.com/Cigaras/IPTV.bundle) plugin.
 
 ## Playlists by country
 
