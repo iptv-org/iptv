@@ -191,4 +191,10 @@ If you just found an error or have any suggestions on how to organize a playlist
 npm run test
 ```
 
-Be prepared test may take a long time. After the tests end all broken links will be saved to the file `error.log`.
+Be prepared test may take a long time. Or if you want to test the playlist of a particular country, you can specify the [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166) of the country as an argument when running the test.
+
+```sh
+npm run test --country=uk
+```
+
+After the test is over all broken links will be saved to the file `error.log`.
