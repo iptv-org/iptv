@@ -37,6 +37,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | Algeria                | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/dz.m3u`
 | Argentina              | 89       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ar.m3u`
 | Armenia                | 23       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/am.m3u`
+| Aruba                  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/aw.m3u`
 | Australia              | 29       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/au.m3u`
 | Austria                | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/at.m3u`
 | Azerbaijan             | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/az.m3u`
@@ -50,6 +51,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | Brazil                 | 75       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/br.m3u`
 | Bulgaria               | 26       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bg.m3u`
 | Cambodia               | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kh.m3u`
+| Cameroon               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cm.m3u`
 | Canada                 | 37       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ca.m3u`
 | Chile                  | 77       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cl.m3u`
 | China                  | 1009     | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cn.m3u`
@@ -57,6 +59,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | Costa Rica             | 15       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cr.m3u`
 | Croatia                | 33       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hr.m3u`
 | Cuba                   | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cu.m3u`
+| Curaçao                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cw.m3u`
 | Cyprus                 | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cy.m3u`
 | Czech Republic         | 17       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cz.m3u`
 | Democratic Republic of the Congo | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cd.m3u`
@@ -67,6 +70,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | El Salvador            | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sv.m3u`
 | Equatorial Guinea      | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gq.m3u`
 | Estonia                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ee.m3u`
+| Ethiopia               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/et.m3u`
 | Finland                | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fi.m3u`
 | France                 | 81       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fr.m3u`
 | Georgia                | 6        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ge.m3u`
@@ -165,6 +169,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | Venezuela              | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ve.m3u`
 | Vietnam                | 135      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/vn.m3u`
 | Yemen                  | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ye.m3u`
+| Zimbabwe               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/zw.m3u`
 
 
 ## Contribution
