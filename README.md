@@ -123,6 +123,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | New Zealand            | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/nz.m3u`
 | Nicaragua              | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ni.m3u`
 | Nigeria                | 6        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ng.m3u`
+| North Korea            | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kp.m3u`
 | Norway                 | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/no.m3u`
 | Oman                   | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/om.m3u`
 | Pakistan               | 23       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pk.m3u`
