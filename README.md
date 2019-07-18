@@ -113,8 +113,8 @@ If the app does not support nested playlists you can instead use a special "all 
 | Malta                  | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mt.m3u`
 | Mexico                 | 57       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mx.m3u`
 | Moldova                | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u`
-| Mongolia               | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mn.m3u`
-| Montenegro             | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/me.m3u`
+| Mongolia               | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mn.m3u`
+| Montenegro             | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/me.m3u`
 | Morocco                | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ma.m3u`
 | Mozambique             | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mz.m3u`
 | Myanmar                | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mm.m3u`
