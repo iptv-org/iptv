@@ -41,6 +41,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | Australia              | 29       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/au.m3u`
 | Austria                | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/at.m3u`
 | Azerbaijan             | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/az.m3u`
+| Bahamas                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bs.m3u`
 | Bahrain                | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bh.m3u`
 | Bangladesh             | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bd.m3u`
 | Barbados               | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bb.m3u`
