@@ -172,6 +172,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | Uzbekistan             | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uz.m3u`
 | Venezuela              | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ve.m3u`
 | Vietnam                | 135      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/vn.m3u`
+| Western Sahara         | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/eh.m3u`
 | Yemen                  | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ye.m3u`
 | Zimbabwe               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/zw.m3u`
 
