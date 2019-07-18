@@ -105,6 +105,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | Latvia                 | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lv.m3u`
 | Lebanon                | 17       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lb.m3u`
 | Libya                  | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ly.m3u`
+| Lithuania              | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lt.m3u`
 | Luxembourg             | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lu.m3u`
 | Macau                  | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mo.m3u`
 | Macedonia              | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mk.m3u`
