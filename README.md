@@ -149,6 +149,7 @@ If the app does not support nested playlists you can instead use a special "all 
 | Slovakia               | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sk.m3u`
 | Slovenia               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/si.m3u`
 | Somalia                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/so.m3u`
+| South Africa           | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/za.m3u`
 | South Korea            | 36       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kr.m3u`
 | Spain                  | 119      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/es.m3u`
 | Sri Lanka              | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lk.m3u`
