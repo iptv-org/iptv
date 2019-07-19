@@ -136,7 +136,7 @@ function parseGroupTitle(item) {
   let groupIndex = supportedGroups.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
 
   if(groupIndex === -1) {
-    groupTitle = 'Undefined'
+    groupTitle = ''
   } else {
     groupTitle = supportedGroups[groupIndex]
   }
