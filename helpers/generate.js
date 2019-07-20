@@ -17,7 +17,7 @@ function init() {
     countries = countries.slice(0, 1)
   }
 
-  util.createFile(outputFile)
+  util.createFile(outputFile, '#EXTM3U\n')
 
   for(let country of countries) {
 
@@ -39,7 +39,9 @@ function init() {
 
       } else {
 
-        util.writeToFile(outputFile, info, file)
+        const data = '#EXTINF:' + info + '\n' + file + '\n'
+
+        util.writeToFile(outputFile, data)
         
         addToCache(file)
       

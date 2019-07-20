@@ -80,12 +80,12 @@ function sortByTitle(arr) {
   return arr.sort(byTitle)
 }
 
-function writeToFile(filename, info, file) {
-  fs.appendFileSync(path.resolve(__dirname) + '/../' + filename, '#EXTINF:' + info + '\n' + file + '\n')
+function writeToFile(filename, data) {
+  fs.appendFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
-function createFile(filename) {
-  fs.writeFileSync(path.resolve(__dirname) + '/../' + filename, '#EXTM3U\n')
+function createFile(filename, data) {
+  fs.writeFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
 function getBasename(filename) {
