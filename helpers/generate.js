@@ -1,7 +1,7 @@
 const util = require('./util')
 const urlParser = require('url')
 
-const types = ['full', 'country', 'topic']
+const types = ['full', 'country', 'content']
 const debug = false
 let cache = {}
 let stats = {
@@ -48,7 +48,7 @@ function init() {
             groupTitle = [ countryName, channel.group ].filter(i => i).join(';')
           } else if(type === 'country') {
             groupTitle = countryName
-          } else if(type === 'topic') {
+          } else if(type === 'content') {
             groupTitle = channel.group
           }
           
