@@ -226,9 +226,9 @@ http://tvgubernia-htlive.cdn.ngenix.net/live/mp4:tv-gubernia-live/playlist.m3u8
 #EXTINF:-1 tvg-id="TV1000ActionEast.ru" tvg-name="TV1000 Action" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/viasat_tv1000_action_east.jpg" group-title="Movies",TV1000 Action [480p]
 http://ott-cdn.ucom.am/s91/index.m3u8
 #EXTINF:-1 tvg-id="tvm.ru" tvg-name="TVMChannel" tvg-logo="" group-title="Music",TVMChannel
-http://149.154.68.132:8081/HOLA/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="tvm.ru" tvg-name="TVMChannel" tvg-logo="" group-title="Music",TVMChannel
 https://strm.yandex.ru/kal/tvm_supres/tvm_supres0.m3u8
+#EXTINF:-1 tvg-id="tvm.ru" tvg-name="TVMChannel" tvg-logo="" group-title="Music",TVMChannel
+http://149.154.68.132:8081/HOLA/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",Undefined
 http://ott-cdn.ucom.am/s78/index.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Local",UniverTV (Opt-1)
@@ -479,10 +479,10 @@ https://strm.yandex.ru/kal/muztv_supres/muztv_supres0.m3u8
 http://hls.tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/chunklist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.muz1.tv/im/vesna2019/logo/1.png" group-title="",Музыка Первого
 http://st5.allplay.uz/iptv/38/tracks-v2a1/mono.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://kt.kg/upload/medialibrary/802/ozkqyoc/0orqjt.jpg" group-title="",Мульт
-http://ott-cdn.ucom.am/s58/04.m3u8
 #EXTINF:-1 tvg-id="Mult.ru" tvg-name="Мульт" tvg-logo="" group-title="Kids",Мульт
 http://92.43.140.249/s58/04.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://kt.kg/upload/medialibrary/802/ozkqyoc/0orqjt.jpg" group-title="",Мульт
+http://ott-cdn.ucom.am/s58/04.m3u8
 #EXTINF:-1 tvg-id="Mult.ru" tvg-name="Мульт" tvg-logo="" group-title="Kids",Мульт [480p]
 http://ott-cdn.ucom.am/s58/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://xn--b1ats.xn--80asehdb/img/logo.png" group-title="",Муниципальное Телевидение Волгограда
@@ -801,8 +801,6 @@ http://109.68.40.67/life/magnolia.m3u8
 http://hls.shansontv.cdnvideo.ru/shansontv/shansontv_hq.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://lion-tv.com/uploads/posts/2016-09/1472964269_178.png" group-title="",Шансон ТВ (Opt-2)
 http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live.m3u8
-#EXTINF:-1 tvg-id="shansontv.ru" tvg-name="Шансон ТВ" tvg-logo="https://www.shanson.tv/image/logo_160120.png" group-title="Music",Шансон ТВ (Opt-7)
-http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="shansontv.ru" tvg-name="Шансон ТВ" tvg-logo="https://www.shanson.tv/image/logo_160120.png" group-title="Music",Шансон ТВ (Opt-3)
 https://hls-shansontv.cdnvideo.ru/shansontv/smil:shansontv.smil/chunklist_b1996000.m3u8?hls_proxy_host=pub1.rtmp.s01.l.shansontv
 #EXTINF:-1 tvg-id="shansontv.ru" tvg-name="Шансон ТВ" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/shanson_tv.jpg" group-title="Music",Шансон ТВ (Opt-4)
@@ -811,6 +809,8 @@ http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
 http://hls.shansontv.cdnvideo.ru/shansontv/smil:shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="shansontv.ru" tvg-name="Шансон ТВ" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/shanson_tv.jpg" group-title="Music",Шансон ТВ (Opt-6)
 http://ott-cdn.ucom.am/s43/index.m3u8
+#EXTINF:-1 tvg-id="shansontv.ru" tvg-name="Шансон ТВ" tvg-logo="https://www.shanson.tv/image/logo_160120.png" group-title="Music",Шансон ТВ (Opt-7)
+http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",Шокирующее HD
 http://91.223.105.236:8081/hlsx/472/472.m3u8?id=1188&p=87e0c783e9b31451
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://tv41.ru/images/00.png" group-title="",Щелковское ТВ
