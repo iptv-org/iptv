@@ -1,44 +1,51 @@
-const parsers = require('playlist-parser')
-const M3U = parsers.M3U
-const fs = require("fs")
-const path = require('path')
+const util = require('./util')
 const urlParser = require('url')
 
-let outputPath = path.resolve(__dirname) + '/../index.all.m3u'
-let channels = 0
-let duplicates = 0
+const outputFile = 'index.full.m3u'
+const debug = false
 let cache = {}
-
-fs.writeFileSync(outputPath, '#EXTM3U\n')
+let stats = {
+  total: 0,
+  duplicates: 0
+}
 
 function init() {
 
-  let countries = loadPlaylist('index.m3u')
-  // countries = countries.slice(0, 2)
+  let countries = util.parsePlaylist('index.m3u')
+
+  if(debug) {
+    countries = countries.slice(0, 1)
+  }
+
+  util.createFile(outputFile)
 
   for(let country of countries) {
 
-    const playlist = loadPlaylist(country.file)
+    const countryName = util.getTitle(country.title)
+    const countryCode = util.getBasename(country.file).toUpperCase()
+    const playlist = util.parsePlaylist(country.file)
 
     for(let item of playlist) {
 
-      let title = (item.artist) ? item.length + ',' + item.artist + '-' + item.title : item.title
+      const channel = util.parseChannelData(item)
+      const groupTitle = [ countryName, channel.group ].filter(i => i).join(';')
 
-      let url = item.file
+      const info = `-1 tvg-id="${channel.id}" tvg-name="${channel.name}" tvg-logo="${channel.logo}" group-title="${groupTitle}",${channel.title}`
+      const file = channel.file
 
-      if(checkCache(url)) {
+      if(checkCache(file)) {
 
-        duplicates++
+        stats.duplicates++
 
       } else {
 
-        writeToFile(title, url)
-
-        addToCache(url)
+        util.writeToFile(outputFile, info, file)
+        
+        addToCache(file)
       
       }
 
-      channels++
+      stats.total++
 
     }
 
@@ -47,16 +54,7 @@ function init() {
 
 init()
 
-console.log(`Total: ${channels}. Duplicates: ${duplicates}.`)
-
-
-function loadPlaylist(filename) {
-  return M3U.parse(fs.readFileSync(path.resolve(__dirname) + `/../${filename}`, { encoding: "utf8" }))
-}
-
-function writeToFile(title, file) {
-  fs.appendFileSync(outputPath, '#EXTINF:' + title + '\n' + file + '\n')
-}
+console.log(`Total: ${stats.total}. Duplicates: ${stats.duplicates}. Unique: ${stats.total - stats.duplicates}`)
 
 function addToCache(url) {
   let id = getUrlPath(url)
