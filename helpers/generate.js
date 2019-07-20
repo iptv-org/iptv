@@ -1,7 +1,7 @@
 const util = require('./util')
 const urlParser = require('url')
 
-const outputFile = 'index.full.m3u'
+const types = ['country', 'topic']
 const debug = false
 let cache = {}
 let stats = {
@@ -17,7 +17,9 @@ function init() {
     countries = countries.slice(0, 1)
   }
 
-  util.createFile(outputFile, '#EXTM3U\n')
+  for(const type of types) {
+    util.createFile(`index.${type}.m3u`, '#EXTM3U\n')
+  }
 
   for(let country of countries) {
 
@@ -28,9 +30,10 @@ function init() {
     for(let item of playlist) {
 
       const channel = util.parseChannelData(item)
-      const groupTitle = [ countryName, channel.group ].filter(i => i).join(';')
+      
 
-      const info = `-1 tvg-id="${channel.id}" tvg-name="${channel.name}" tvg-logo="${channel.logo}" group-title="${groupTitle}",${channel.title}`
+      
+
       const file = channel.file
 
       if(checkCache(file)) {
@@ -39,9 +42,21 @@ function init() {
 
       } else {
 
-        const data = '#EXTINF:' + info + '\n' + file + '\n'
+        for(const type of types) {
+          let groupTitle = ''
+          if(type === 'full') {
+            groupTitle = [ countryName, channel.group ].filter(i => i).join(';')
+          } else if(type === 'country') {
+            groupTitle = countryName
+          } else if(type === 'topic') {
+            groupTitle = channel.group
+          }
+          
+          const info = `-1 tvg-id="${channel.id}" tvg-name="${channel.name}" tvg-logo="${channel.logo}" group-title="${groupTitle}",${channel.title}`
+          const data = '#EXTINF:' + info + '\n' + file + '\n'
 
-        util.writeToFile(outputFile, data)
+          util.writeToFile(`index.${type}.m3u`, data)
+        }
         
         addToCache(file)
       
