@@ -1,24 +1,26 @@
-const parsers = require('playlist-parser')
-const M3U = parsers.M3U
-const fs = require("fs")
+const util = require('../helpers/util')
 const axios = require('axios')
 const path = require('path')
 
 const errorLog = 'error.log'
-const timeout = 60000
-const delay = 200
+const config = {
+  timeout: 60000,
+  delay: 200
+}
 
-let tests = 0
-let channels = 0
-let failures = 0
+let stats = {
+  tests: 0,
+  channels: 0,
+  failures: 0
+}
 
-const http = axios.create({ timeout })
+const http = axios.create({ timeout: config.timeout })
 http.defaults.headers.common["User-Agent"] = "VLC/2.2.4 LibVLC/2.2.4"
 
 function writeToLog(test, country, msg, url) {
   var now = new Date()
   var line = `${test}(): ${country}: ${msg} '${url}'`
-  fs.appendFileSync(path.resolve(__dirname) + '/../' + errorLog, now.toISOString() + ' ' + line + '\n')
+  util.writeToFile(errorLog, now.toISOString() + ' ' + line + '\n')
   console.log(line)
 }
 
@@ -30,16 +32,11 @@ function skipPlaylist(filename) {
 	return false;
 }
 
-function loadPlaylist(filename) {
-  return M3U.parse(fs.readFileSync(path.resolve(__dirname) + "/../" + filename, { encoding: "utf8" }))
-}
+async function test() {
 
-async function testAllLinksIsWorking() {
+  stats.tests++
 
-  tests++
-
-  let countries = loadPlaylist('index.m3u')
-  // countries = countries.slice(0, 2)
+  let countries = util.parsePlaylist('index.m3u')
 
   for(let country of countries) {
 
@@ -47,15 +44,15 @@ async function testAllLinksIsWorking() {
 	    continue;
     }
 
-    const playlist = loadPlaylist(country.file)
+    const playlist = util.parsePlaylist(country.file)
 
     for(let channel of playlist) {
 
       await new Promise(resolve => {
-        setTimeout(resolve, delay)
+        setTimeout(resolve, config.delay)
       })
 
-      channels++
+      stats.channels++
 
       try {
 
@@ -65,22 +62,22 @@ async function testAllLinksIsWorking() {
 
       } catch (err) {
 
-        failures++
+        stats.failures++
 
-        writeToLog('testAllLinksIsWorking', country.file, err.message, channel.file)
+        writeToLog('test', country.file, err.message, channel.file)
 
       }
 
     }
   }
 
-  if(failures === 0) {
+  if(stats.failures === 0) {
 
-    console.log(`OK (${tests} tests, ${channels} channels)`)
+    console.log(`OK (${stats.tests} tests, ${stats.channels} channels)`)
     
   } else {
 
-    console.log(`FAILURES! (${tests} tests, ${channels} channels, ${failures} failures)`)
+    console.log(`FAILURES! (${stats.tests} tests, ${stats.channels} channels, ${stats.failures} failures)`)
 
   }
 
@@ -88,4 +85,4 @@ async function testAllLinksIsWorking() {
 
 console.log('Test is running...')
 
-testAllLinksIsWorking()
+test()
