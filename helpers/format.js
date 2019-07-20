@@ -27,12 +27,14 @@ function init() {
 
     channels = util.sortByTitle(channels)
 
-    util.createFile(country.file)
+    util.createFile(country.file, '#EXTM3U\n')
 
     channels.forEach(channel => {
       const info = `-1 tvg-id="${channel.id}" tvg-name="${channel.name}" tvg-logo="${channel.logo}" group-title="${channel.group}",${channel.title}`
 
-      util.writeToFile(country.file, info, channel.file)
+      const data = '#EXTINF:' + info + '\n' + channel.file + '\n'
+
+      util.writeToFile(country.file, data)
     })
 
     total += channels.length
