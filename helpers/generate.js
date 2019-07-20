@@ -1,7 +1,7 @@
 const util = require('./util')
 const urlParser = require('url')
 
-const types = ['country', 'topic']
+const types = ['full', 'country', 'topic']
 const debug = false
 let cache = {}
 let stats = {
