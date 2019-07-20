@@ -1,11 +1,15 @@
 const util = require('./util')
 
+const debug = false
 let total = 0
 
 function init() {
 
   let countries = util.parsePlaylist('index.m3u')
-  countries = countries.slice(0, 1)
+
+  if(debug) {
+    countries = countries.slice(0, 2)
+  }
 
   let channels = []
 
