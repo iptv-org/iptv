@@ -26,7 +26,7 @@ Below you can find a manually selected list of such applications for different p
 
 - [Plex](https://www.plex.tv/apps-devices/#modal-devices-playstation-4) media server allows you to aggregate all your personal media and access it anywhere you go. In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](https://github.com/Cigaras/IPTV.bundle) plugin.
 
-If the app does not support nested playlists you can instead use a special "all in one" playlist: `https://raw.githubusercontent.com/freearhey/iptv/master/index.full.m3u`
+If the app does not support nested playlists you can instead use a special "all in one" playlist: `https://raw.githubusercontent.com/freearhey/iptv/master/index.full.m3u` or select one of the playlists from the list below.
 
 ## Playlists by country
 
