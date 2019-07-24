@@ -1,7 +1,7 @@
 const util = require('./util')
 const urlParser = require('url')
 
-const types = ['full', 'country', 'content']
+const types = ['full', 'country', 'content', 'sport']
 const debug = false
 let cache = {}
 let stats = {
@@ -50,12 +50,20 @@ function init() {
             groupTitle = countryName
           } else if(type === 'content') {
             groupTitle = channel.group
+          } else {
+            groupTitle = channel.group
           }
           
           const info = `-1 tvg-id="${channel.id}" tvg-name="${channel.name}" tvg-logo="${channel.logo}" group-title="${groupTitle}",${channel.title}`
           const data = '#EXTINF:' + info + '\n' + file + '\n'
 
-          util.writeToFile(`index.${type}.m3u`, data)
+          if(type === 'sport') {
+            if(groupTitle === 'Sport') {
+              util.writeToFile(`index.${type}.m3u`, data)
+            }
+          } else {
+            util.writeToFile(`index.${type}.m3u`, data)
+          }
         }
         
         addToCache(file)

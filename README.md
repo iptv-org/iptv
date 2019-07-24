@@ -29,8 +29,9 @@ Below you can find a manually selected list of such applications for different p
 If your application does not support nested playlists, you can instead use one of these playlists:
 
 - `https://raw.githubusercontent.com/freearhey/iptv/master/index.full.m3u` (grouped by country and content)
-- `https://raw.githubusercontent.com/freearhey/iptv/master/index.country.m3u` (grouped only by country)
-- `https://raw.githubusercontent.com/freearhey/iptv/master/index.content.m3u` (grouped only by content) 
+- `https://raw.githubusercontent.com/freearhey/iptv/master/index.country.m3u` (grouped by country)
+- `https://raw.githubusercontent.com/freearhey/iptv/master/index.content.m3u` (grouped by content) 
+- `https://raw.githubusercontent.com/freearhey/iptv/master/index.sport.m3u` (contains only sports channels) 
 
 Or select a playlist for a specific country from the list below.
 
