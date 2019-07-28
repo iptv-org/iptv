@@ -2339,8 +2339,6 @@ http://89.163.140.211:9898/sfrsport2/index.m3u8
 http://rtmp.ottdemo.rrsat.com/rrsatrtv1/rrsatrtvmulti.smil/chunklist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="News",RT
 https://rt-news.secure.footprint.net/1103-inadv-qidx-1k_v3.m3u8?stream_start_offset=14000000&stream_dvr_window=0
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.rt.com/static/block/touch-icon/apple-touch-icon-144x144-precomposed.png" group-title="News",RT Español (Opt-1)
-https://rt-esp.secure.footprint.net/1102.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.rt.com/static/block/touch-icon/apple-touch-icon-144x144-precomposed.png" group-title="News",RT America (RU) (Opt-1)
 https://rt-usa.secure.footprint.net/1105.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.rt.com/static/block/touch-icon/apple-touch-icon-144x144-precomposed.png" group-title="",RT America (RU) (Opt-2)
@@ -2351,6 +2349,8 @@ http://rt-arab.secure.footprint.net:80/1104.m3u8?streamType=live
 https://rt-arab.secure.footprint.net/1104-inadv-qidx-1k_v3.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://s18.postimg.org/4h4wag8k9/rtdoc.jpg" group-title="",RT DOCUMENTARY
 http://rtmp.api.rt.com/hls/rtdru.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.rt.com/static/block/touch-icon/apple-touch-icon-144x144-precomposed.png" group-title="News",RT Español (Opt-1)
+https://rt-esp.secure.footprint.net/1102.m3u8?fluxustv.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://static.iptv-epg.com/ru/RTEspanol.ru.png" group-title="",RT Español (Opt-2)
 http://rt-esp.secure.footprint.net/1102-inadv-qidx-1k_v3.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://static.iptv-epg.com/ru/RTInternational.ru.png" group-title="News",RT International
@@ -3833,10 +3833,10 @@ http://hbfc.chinashadt.com:2036/live/6.stream/playlist.m3u8
 http://weblive.hebtv.com/live/hbjj_lc/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",河北经济 (Opt-3)
 http://wuqiao.chinashadt.com:2035/live/di3.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",河北购物
-http://weblive.hebtv.com/live/sjgw_bq/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",河北购物
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",河北购物 (Opt-1)
 http://weblive.hebtv.com/live/sjgw_lc/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",河北购物 (Opt-2)
+http://weblive.hebtv.com/live/sjgw_bq/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",河南民生
 http://117.158.206.60:9080/live/live29_tzwj_500k.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",河南移动戏曲宝
@@ -3899,12 +3899,12 @@ http://124.232.231.246:6610/000000001001/201600020006/index.m3u8?A
 http://124.232.231.246:6610/000000001001/201600020002/index.m3u8?A
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",湖南经视
 http://vod.zzlknews.cn:40731/live/_definst_/hnjs/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",湖南都市
-http://124.232.231.246:6610/000000001001/201600020003/index.m3u8?A
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",湖南都市
-http://hnsd.chinashadt.com:2036/live/stream:hunandushi.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",湖南都市
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",湖南都市 (Opt-1)
 http://vod.zzlknews.cn:40731/live/_definst_/hnds/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",湖南都市 (Opt-2)
+http://124.232.231.246:6610/000000001001/201600020003/index.m3u8?A
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",湖南都市 (Opt-3)
+http://hnsd.chinashadt.com:2036/live/stream:hunandushi.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",湘潭公共频道
 http://live.hnxttv.com:9601/live/dspd/800K/tzwj_video.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",湘潭新闻综合
@@ -3951,10 +3951,10 @@ http://218.29.171.2:380/live/py3/index.m3u8
 http://117.156.28.119/270000001111/1110000145/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://devwebsvr2.cosmel.com/uat.cits.hk/mytv-super/public/images/Free-Pearl.png" group-title="",無綫明珠
 http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=12&FvSeid=1&Fsv_filetype=1&Fsv_ctype=LIVES&Fsv_cid=0&Fsv_chan_hls_se_idx=12&Fsv_rate_id=2&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Provider_id=&Pcontent_id=.m3u8&Fsv_CMSID=&Fsv_otype=1
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.badouxia.com/Uploads/vod/2019-01-10/5c36e354f35b9.jpg" group-title="",無綫財經資訊台
-http://e1.vdowowza.vip.hk1.tvb.com/tvblive/smil:mobilehd_financeintl.smil/chunklist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://devwebsvr2.cosmel.com/uat.cits.hk/mytv-super/public/images/Free-J5.png" group-title="",無綫財經資訊台
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://devwebsvr2.cosmel.com/uat.cits.hk/mytv-super/public/images/Free-J5.png" group-title="",無綫財經資訊台 (Opt-1)
 http://e1.vdowowza.vip.hk1.tvb.com/tvblive/smil:mobilehd_financeintl.smil/chunklist_w1211981021_b1096000.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.badouxia.com/Uploads/vod/2019-01-10/5c36e354f35b9.jpg" group-title="",無綫財經資訊台 (Opt-2)
+http://e1.vdowowza.vip.hk1.tvb.com/tvblive/smil:mobilehd_financeintl.smil/chunklist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",焦作公共频道
 http://222.143.133.157:90/hls/pd2.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",焦作教育频道
