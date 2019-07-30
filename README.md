@@ -81,6 +81,7 @@ Or select a playlist for a specific country from the list below.
 | Estonia                | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ee.m3u`
 | Ethiopia               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/et.m3u`
 | Finland                | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fi.m3u`
+| Fiji                   | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fj.m3u`
 | France                 | 89       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fr.m3u`
 | Georgia                | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ge.m3u`
 | Germany                | 147      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/de.m3u`
