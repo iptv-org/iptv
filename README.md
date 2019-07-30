@@ -1,6 +1,6 @@
 # IPTV
 
-Collection of 6000+ free IPTV channels from all over the world.
+Collection of 7000+ free IPTV channels from all over the world.
 
 ## Usage
 
