@@ -168,6 +168,7 @@ Or select a playlist for a specific country from the list below.
 | Switzerland            | 20       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ch.m3u`
 | Syria                  | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sy.m3u`
 | Taiwan                 | 52       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tw.m3u`
+| Tanzania               | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tz.m3u`
 | Thailand               | 64       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/th.m3u`
 | Trinidad and Tobago    | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tt.m3u`
 | Tunisia                | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tn.m3u`
