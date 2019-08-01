@@ -175,7 +175,7 @@ Or select a playlist for a specific country from the list below.
 | Turkey                 | 102      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tr.m3u`
 | Turkmenistan           | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tm.m3u`
 | Uganda                 | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ug.m3u`
-| Ukraine                | 207      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ua.m3u`
+| Ukraine                | 196      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ua.m3u`
 | United Arab Emirates   | 101      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ae.m3u`
 | United Kingdom         | 115      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uk.m3u`
 | United States          | 688      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/us.m3u`
