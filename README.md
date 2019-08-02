@@ -47,7 +47,7 @@ Or select a playlist for a specific country from the list below.
 | Argentina              | 84       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ar.m3u`
 | Armenia                | 48       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/am.m3u`
 | Aruba                  | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/aw.m3u`
-| Australia              | 22       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/au.m3u`
+| Australia              | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/au.m3u`
 | Austria                | 15       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/at.m3u`
 | Azerbaijan             | 21       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/az.m3u`
 | Bahamas                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bs.m3u`
