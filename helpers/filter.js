@@ -4,6 +4,7 @@ const debug = false
 const blacklist = [
   '80.80.160.168', // repeats on a loop
   '63.237.48.3', // not a live stream
+  '189.216.247.113', // not working streams
 ]
 let stats = {
   total: 0,
