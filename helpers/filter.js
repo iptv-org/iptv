@@ -3,6 +3,7 @@ const util = require('./util')
 const debug = false
 const blacklist = [
   '80.80.160.168', // repeats on a loop
+  '63.237.48.3', // not a live stream
 ]
 let stats = {
   total: 0,
