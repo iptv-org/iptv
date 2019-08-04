@@ -155,6 +155,7 @@ Or select a playlist for a specific country from the list below.
 | San Marino             | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sm.m3u`
 | Saudi Arabia           | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sa.m3u`
 | Serbia                 | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/rs.m3u`
+| Sierra Leone           | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sl.m3u`
 | Singapore              | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sg.m3u`
 | Slovakia               | 35       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sk.m3u`
 | Slovenia               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/si.m3u`
