@@ -136,7 +136,7 @@ Or select a playlist for a specific country from the list below.
 | Nicaragua              | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ni.m3u`
 | Nigeria                | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ng.m3u`
 | North Korea            | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kp.m3u`
-| Norway                 | 6        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/no.m3u`
+| Norway                 | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/no.m3u`
 | Oman                   | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/om.m3u`
 | Pakistan               | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pk.m3u`
 | Palestine              | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ps.m3u`
