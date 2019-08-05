@@ -140,7 +140,7 @@ Or select a playlist for a specific country from the list below.
 | Oman                   | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/om.m3u`
 | Pakistan               | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pk.m3u`
 | Palestine              | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ps.m3u`
-| Panama                 | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pa.m3u`
+| Panama                 | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pa.m3u`
 | Paraguay               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/py.m3u`
 | Peru                   | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pe.m3u`
 | Philippines            | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ph.m3u`
