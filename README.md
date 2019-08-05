@@ -117,7 +117,7 @@ Or select a playlist for a specific country from the list below.
 | Lebanon                | 27       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lb.m3u`
 | Libya                  | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ly.m3u`
 | Lithuania              | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lt.m3u`
-| Luxembourg             | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lu.m3u`
+| Luxembourg             | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lu.m3u`
 | Macau                  | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mo.m3u`
 | Macedonia              | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mk.m3u`
 | Malaysia               | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/my.m3u`
