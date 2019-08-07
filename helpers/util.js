@@ -24,9 +24,9 @@ class Playlist {
 
 class Channel {
   constructor(data) {
-    this.id = data.id
-    this.name = data.name
-    this.logo = data.logo
+    this.id = data.id || ''
+    this.name = data.name || ''
+    this.logo = data.logo || ''
     this.group = this._getGroup(data.group)
     this.url = data.url
     this.title = data.title
