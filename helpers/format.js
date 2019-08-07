@@ -15,11 +15,14 @@ async function main() {
   let countries = playlist.items
   if(debug) {
     console.log('Debug mode is turn on')
-    countries = countries.slice(0, 1)
-    // countries = [{ url: 'channels/ru.m3u' }]
+    // countries = countries.slice(0, 1)
+    countries = [{ url: 'channels/ru.m3u' }, { url: 'channels/ua.m3u' }]
   }
 
   for(let country of countries) {
+    console.log(`Clear cache...`)
+    util.clearCache()
+
     console.log(`Parsing '${country.url}'...`)
     const playlist = util.parsePlaylist(country.url)
 
