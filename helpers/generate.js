@@ -24,7 +24,10 @@ function main() {
   }
 
   for(let country of countries) {
-    console.log(`Clear cache...`)
+
+    if(debug) {
+      console.log(`Clear cache...`)
+    }
     util.clearCache()
 
     console.log(`Parsing '${country.url}'...`)
