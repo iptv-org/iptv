@@ -4,7 +4,8 @@ const debug = false
 let stats = {
   countries: 0,
   channels: 0,
-  updated: 0
+  updated: 0,
+  duplicates: 0
 }
 let buffer = {}
 
@@ -15,7 +16,7 @@ async function main() {
   if(debug) {
     console.log('Debug mode is turn on')
     countries = countries.slice(0, 1)
-    // countries = [{ url: 'channels/au.m3u' }]
+    // countries = [{ url: 'channels/ru.m3u' }]
   }
 
   for(let country of countries) {
@@ -35,7 +36,13 @@ async function main() {
         url: item.url,
         title: item.inf.title
       })
-      channels.push(channel)
+
+      if(!util.checkCache(channel.url)) {
+        channels.push(channel)
+        util.addToCache(channel.url)
+      } else {
+        stats.duplicates++
+      }
     }
 
     const epgUrl = playlist.attrs['x-tvg-url']
@@ -92,7 +99,7 @@ async function main() {
     stats.channels += channels.length
   }
 
-  console.log(`Countries: ${stats.countries}. Channels: ${stats.channels}. Updated: ${stats.updated}.`)
+  console.log(`Countries: ${stats.countries}. Channels: ${stats.channels}. Updated: ${stats.updated}. Duplicates: ${stats.duplicates}.`)
 }
 
 main()
