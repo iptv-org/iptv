@@ -15,8 +15,8 @@ async function main() {
   let countries = playlist.items
   if(debug) {
     console.log('Debug mode is turn on')
-    countries = countries.slice(0, 1)
-    // countries = [{ url: 'channels/ru.m3u' }]
+    // countries = countries.slice(0, 1)
+    // countries = [{ url: 'channels/au.m3u' }]
   }
 
   for(let country of countries) {
@@ -49,7 +49,7 @@ async function main() {
     for(let channel of channels) {
       let channelId = channel.id
       if(!channelId) continue
-      let c = buffer[epgUrl].channels[channelId]
+      let c = buffer[epgUrl] ? buffer[epgUrl].channels[channelId] : null
       if(!c) continue
       let updated = false
       
