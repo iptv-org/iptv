@@ -1,37 +1,39 @@
-const parsers = require('playlist-parser')
-const M3U = parsers.M3U
 const fs = require("fs")
 const path = require('path')
+const M3U8FileParser = require('m3u8-file-parser')
+const https = require("https")
+const zlib = require("zlib")
+const DOMParser = require('xmldom').DOMParser;
 
-function parsePlaylist(filename) {
-  return M3U.parse(fs.readFileSync(path.resolve(__dirname) + `/../${filename}`, { encoding: "utf8" }))
+class Playlist {
+  constructor(data) {
+    this.attrs = data.attrs
+    this.items = data.items
+  }
+
+  getHeader() {
+    let parts = ['#EXTM3U']
+    for(let key in this.attrs) {
+      let value = this.attrs[key]
+      parts.push(`${key}="${value}"`)
+    }
+
+    return `${parts.join(' ')}\n`
+  }
 }
 
-function parseChannelData(item) {
-  const info = getInfo(item)
-
-  function getTvgId(info) {
-    const matches = info.match(/tvg\-id\=\"(.*?)\"/i)
-
-    return (matches && matches.length > 1) ? matches[1] : ''
+class Channel {
+  constructor(data) {
+    this.id = data.id
+    this.name = data.name
+    this.logo = data.logo
+    this.group = this._getGroup(data.group)
+    this.url = data.url
+    this.title = data.title
   }
 
-  function getTvgName(info) {
-    const matches = info.match(/tvg\-name\=\"(.*?)\"/i)
-
-    return (matches && matches.length > 1) ? matches[1] : ''
-  }
-
-  function getTvgLogo(info) {
-    const matches = info.match(/tvg\-logo\=\"(.*?)\"/i)
-
-    return (matches && matches.length > 1) ? matches[1] : ''
-  }
-
-  function getGroupTitle(item) {
+  _getGroup(groupTitle) {
     const supportedGroups = [ 'Auto','Business', 'CCTV', 'Classic','Comedy','Documentary','Education','Entertainment', 'Family','Fashion','Food', 'General', 'Health', 'History', 'Hobby', 'Kids', 'Legislative','Lifestyle','Local', 'Movies', 'Music', 'News', 'Quiz','Radio', 'Religious','Sci-Fi', 'Shop', 'Sport', 'Travel', 'Weather', 'XXX' ]
-    const matches = info.match(/group\-title\=\"(.*?)\"/i)
-    let groupTitle = (matches && matches.length > 1) ? matches[1] : ''
     const groupIndex = supportedGroups.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
 
     if(groupIndex === -1) {
@@ -43,24 +45,101 @@ function parseChannelData(item) {
     return groupTitle
   }
 
-  return {
-    title: getTitle(info),
-    file: item.file,
-    id: getTvgId(info),
-    name: getTvgName(info),
-    logo: getTvgLogo(info),
-    group: getGroupTitle(info)
+  toString() {
+    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-logo="${this.logo}" group-title="${this.group}",${this.title}`
+
+    return '#EXTINF:' + info + '\n' + this.url + '\n'
   }
 }
 
-function getInfo(item) {
-  return (item.artist) ? item.artist + '-' + item.title : item.title
+function getGzipped(url) {
+  return new Promise((resolve, reject) => {
+    var buffer = []
+    https.get(url, function(res) {
+      var gunzip = zlib.createGunzip()         
+      res.pipe(gunzip)
+      gunzip.on('data', function(data) {
+        buffer.push(data.toString())
+      }).on("end", function() {
+        resolve(buffer.join(""))
+      }).on("error", function(e) {
+        reject(e)
+      })
+    }).on('error', function(e) {
+      reject(e)
+    })
+  })
 }
 
-function getTitle(info) {
-  const parts = info.split(',')
+function readFile(filename) {
+  return fs.readFileSync(path.resolve(__dirname) + `/../${filename}`, { encoding: "utf8" })
+}
 
-  return parts[parts.length - 1].trim()
+async function loadEPG(url) {
+  const data = await getGzipped(url)
+  const doc = new DOMParser().parseFromString(data, 'text/xml')
+  const channelElements = doc.getElementsByTagName('channel')
+  let channels = {}
+  for(let i = 0; i < channelElements.length; i++) {
+    let channel = {}
+    let channelElement = channelElements[i]
+    channel.id = channelElement.getAttribute('id')
+    channel.names = []
+    for(let nameElement of Object.values(channelElement.getElementsByTagName('display-name'))) {
+      if(nameElement.firstChild) {
+        channel.names.push(nameElement.firstChild.nodeValue)
+      }
+    }
+    channel.names = channel.names.filter(n => n)
+    const iconElements = channelElement.getElementsByTagName('icon')
+    if(iconElements.length) {
+      channel.icon = iconElements[0].getAttribute('src')
+    }
+
+    channels[channel.id] = channel
+  }
+
+  return Promise.resolve({ 
+    url, 
+    channels 
+  })
+}
+
+function createChannel(data) {
+  return new Channel({
+    id: data.id,
+    name: data.name,
+    logo: data.logo,
+    group: data.group,
+    url: data.url,
+    title: data.title
+  })
+}
+
+function parsePlaylist(filename) {
+  const parser = new M3U8FileParser()
+  const content = readFile(filename)
+  parser.read(content)
+  let results = parser.getResult()
+  let contentMatches = content.match(/^.+(?=#|\n|\r)/g)
+  let head = contentMatches.length ? contentMatches[0] : null
+  let attrs = {}
+  if(head) {
+    const parts = head.split(' ').filter(p => p !== '#EXTM3U').filter(p => p)
+
+    for(const attr of parts) {
+      let attrParts = attr.split('=')
+      
+      attrs[attrParts[0]] = attrParts[1].replace(/\"/g, '')
+    }
+  }
+
+  results.attrs = attrs
+
+  return new Playlist({
+    attrs: results.attrs,
+    items: results.segments
+  })
 }
 
 function byTitle(a, b) {
@@ -80,7 +159,7 @@ function sortByTitle(arr) {
   return arr.sort(byTitle)
 }
 
-function writeToFile(filename, data) {
+function appendToFile(filename, data) {
   fs.appendFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
@@ -88,16 +167,12 @@ function createFile(filename, data) {
   fs.writeFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
-function getBasename(filename) {
-  return path.basename(filename, path.extname(filename))
-}
-
 module.exports = {
   parsePlaylist,
-  parseChannelData,
-  getTitle,
   sortByTitle,
-  writeToFile,
+  appendToFile,
   createFile,
-  getBasename
+  readFile,
+  loadEPG,
+  createChannel
 }
