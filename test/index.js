@@ -17,36 +17,25 @@ let stats = {
 const http = axios.create({ timeout: config.timeout })
 http.defaults.headers.common["User-Agent"] = "VLC/2.2.4 LibVLC/2.2.4"
 
-function writeToLog(test, country, msg, url) {
-  var now = new Date()
-  var line = `${test}(): ${country}: ${msg} '${url}'`
-  util.writeToFile(errorLog, now.toISOString() + ' ' + line + '\n')
-  console.log(line)
-}
-
-function skipPlaylist(filename) {
-	let test_country = process.env.npm_config_country
-	if (test_country && filename !== 'channels/' + test_country + '.m3u') {
-		return true;
-	}
-	return false;
-}
-
 async function test() {
 
   stats.tests++
 
-  let countries = util.parsePlaylist('index.m3u')
+  const playlist = util.parsePlaylist('index.m3u')
+  
+  const countries = playlist.items
 
   for(let country of countries) {
 
-    if (skipPlaylist(country.file)) {
+    if (skipPlaylist(country.url)) {
 	    continue;
     }
 
-    const playlist = util.parsePlaylist(country.file)
+    console.log(`Checking '${country.url}'...`)
 
-    for(let channel of playlist) {
+    const playlist = util.parsePlaylist(country.url)
+
+    for(let item of playlist.items) {
 
       await new Promise(resolve => {
         setTimeout(resolve, config.delay)
@@ -56,7 +45,7 @@ async function test() {
 
       try {
 
-        await http.get(channel.file)
+        await http.get(item.url)
 
         continue
 
@@ -64,7 +53,7 @@ async function test() {
 
         stats.failures++
 
-        writeToLog('test', country.file, err.message, channel.file)
+        writeToLog('test', country.url, err.message, item.url)
 
       }
 
@@ -86,3 +75,18 @@ async function test() {
 console.log('Test is running...')
 
 test()
+
+function writeToLog(test, country, msg, url) {
+  var now = new Date()
+  var line = `${test}(): ${country}: ${msg} '${url}'`
+  util.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
+  console.log(`Error: ${msg} '${url}'`)
+}
+
+function skipPlaylist(filename) {
+  let test_country = process.env.npm_config_country
+  if (test_country && filename !== 'channels/' + test_country + '.m3u') {
+    return true;
+  }
+  return false;
+}
