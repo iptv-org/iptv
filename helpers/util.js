@@ -186,6 +186,10 @@ function checkCache(url) {
   return cache.hasOwnProperty(id)
 }
 
+function clearCache() {
+  cache = {}
+}
+
 function getUrlPath(u) {
   let parsed = urlParser.parse(u)
   let searchQuery = parsed.search || ''
@@ -204,5 +208,6 @@ module.exports = {
   createChannel,
   getBasename,
   addToCache,
-  checkCache
+  checkCache,
+  clearCache
 }
