@@ -1,7 +1,6 @@
 const util = require('./util')
 
-const debug = true
-const verbal = false
+const debug = false
 let stats = {
   countries: 0,
   channels: 0,
@@ -10,20 +9,22 @@ let stats = {
 let buffer = {}
 
 async function main() {
-  console.log('Parsing index.m3u...')
+  console.log(`Parsing 'index.m3u'...`)
   const playlist = util.parsePlaylist('index.m3u')
   let countries = playlist.items
   if(debug) {
     console.log('Debug mode is turn on')
-    // countries = countries.slice(0, 1)
+    countries = countries.slice(0, 1)
     // countries = [{ url: 'channels/au.m3u' }]
   }
 
   for(let country of countries) {
-    console.log(`Parsing ${country.url}...`)
+    console.log(`Parsing '${country.url}'...`)
     const playlist = util.parsePlaylist(country.url)
 
-    console.log(`Creating channels list...`)
+    if(debug) {
+      console.log(`Creating channels list...`)
+    }
     let channels = []
     for(let item of playlist.items) {
       let channel = util.createChannel({
@@ -39,45 +40,49 @@ async function main() {
 
     const epgUrl = playlist.attrs['x-tvg-url']
     if(epgUrl && !buffer[epgUrl]) {
-      console.log(`Loading ${epgUrl}...`)
+      console.log(`Loading '${epgUrl}'...`)
       const epg = await util.loadEPG(epgUrl)
-      console.log(`Adding ${epgUrl} to buffer...`)
+      console.log(`Adding '${epgUrl}' to buffer...`)
       buffer[epgUrl] = epg
     }
 
-    console.log(`Fills in missing channel's data...`)
-    for(let channel of channels) {
-      let channelId = channel.id
-      if(!channelId) continue
-      let c = buffer[epgUrl] ? buffer[epgUrl].channels[channelId] : null
-      if(!c) continue
-      let updated = false
-      
-      if(!channel.name && c.names[0]) {
-        channel.name = c.names[0]
-        updated = true
-        if(verbal) {
-          console.log(`Added name '${c.names[0]}' to '${channel.id}'`)
+    if(buffer[epgUrl]) {
+      console.log(`Fills in missing channel's data...`)
+      for(let channel of channels) {
+        let channelId = channel.id
+        if(!channelId) continue
+        let c = buffer[epgUrl].channels[channelId]
+        if(!c) continue
+        let updated = false
+        
+        if(!channel.name && c.names[0]) {
+          channel.name = c.names[0]
+          updated = true
+          if(debug) {
+            console.log(`Added name '${c.names[0]}' to '${channel.id}'`)
+          }
         }
-      }
 
-      if(!channel.logo && c.icon) {
-        channel.logo = c.icon
-        updated = true
-        if(verbal) {
-          console.log(`Added logo '${c.icon}' to '${channel.id}'`)
+        if(!channel.logo && c.icon) {
+          channel.logo = c.icon
+          updated = true
+          if(debug) {
+            console.log(`Added logo '${c.icon}' to '${channel.id}'`)
+          }
         }
-      }
 
-      if(updated) {
-        stats.updated++
+        if(updated) {
+          stats.updated++
+        }
       }
     }
     
-    console.log(`Sorting channels...`)
+    if(debug) {
+      console.log(`Sorting channels...`)
+    }
     channels = util.sortByTitle(channels)
 
-    console.log(`Writing result to file...`)
+    console.log(`Updating '${country.url}'...`)
     util.createFile(country.url, playlist.getHeader())
     channels.forEach(channel => {
       util.appendToFile(country.url, channel.toString())
