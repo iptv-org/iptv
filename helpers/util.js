@@ -3,7 +3,10 @@ const path = require('path')
 const M3U8FileParser = require('m3u8-file-parser')
 const https = require("https")
 const zlib = require("zlib")
-const DOMParser = require('xmldom').DOMParser;
+const DOMParser = require('xmldom').DOMParser
+const urlParser = require('url')
+
+let cache = {}
 
 class Playlist {
   constructor(data) {
@@ -167,6 +170,30 @@ function createFile(filename, data) {
   fs.writeFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
+function getBasename(filename) {
+  return path.basename(filename, path.extname(filename))
+}
+
+function addToCache(url) {
+  let id = getUrlPath(url)
+
+  cache[id] = true
+}
+
+function checkCache(url) {
+  let id = getUrlPath(url)
+
+  return cache.hasOwnProperty(id)
+}
+
+function getUrlPath(u) {
+  let parsed = urlParser.parse(u)
+  let searchQuery = parsed.search || ''
+
+  return parsed.host + parsed.pathname + searchQuery
+}
+
+
 module.exports = {
   parsePlaylist,
   sortByTitle,
@@ -174,5 +201,8 @@ module.exports = {
   createFile,
   readFile,
   loadEPG,
-  createChannel
+  createChannel,
+  getBasename,
+  addToCache,
+  checkCache
 }
