@@ -54,7 +54,7 @@ Or select a playlist for a specific country from the list below.
 | Bahrain                | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bh.m3u` |
 | Bangladesh             | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bd.m3u` |
 | Barbados               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bb.m3u` |
-| Belarus                | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/by.m3u` |
+| Belarus                | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/by.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Belgium                | 34       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/be.m3u` |
 | Bolivia                | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bo.m3u` |
 | Bosnia and Herzegovina | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ba.m3u` |
