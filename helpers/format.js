@@ -1,48 +1,93 @@
 const util = require('./util')
 
-const debug = false
-let total = 0
+const debug = true
+const verbal = false
+let stats = {
+  countries: 0,
+  channels: 0,
+  updated: 0
+}
+let buffer = {}
 
-function init() {
-
-  let countries = util.parsePlaylist('index.m3u')
-
+async function main() {
+  console.log('Parsing index.m3u...')
+  const playlist = util.parsePlaylist('index.m3u')
+  let countries = playlist.items
   if(debug) {
-    countries = countries.slice(0, 2)
+    console.log('Debug mode is turn on')
+    countries = countries.slice(0, 1)
+    // countries = [{ url: 'channels/ru.m3u' }]
   }
-
-  let channels = []
 
   for(let country of countries) {
+    console.log(`Parsing ${country.url}...`)
+    const playlist = util.parsePlaylist(country.url)
 
-    const playlist = util.parsePlaylist(country.file)
-
-    for(let item of playlist) {
-
-      let channel = util.parseChannelData(item)
-
+    console.log(`Creating channels list...`)
+    let channels = []
+    for(let item of playlist.items) {
+      let channel = util.createChannel({
+        id: item.inf['tvg-id'],
+        name: item.inf['tvg-name'],
+        logo: item.inf['tvg-logo'],
+        group: item.inf['group-title'],
+        url: item.url,
+        title: item.inf.title
+      })
       channels.push(channel)
-
     }
 
+    const epgUrl = playlist.attrs['x-tvg-url']
+    if(epgUrl && !buffer[epgUrl]) {
+      console.log(`Loading ${epgUrl}...`)
+      const epg = await util.loadEPG(epgUrl)
+      console.log(`Adding ${epgUrl} to buffer...`)
+      buffer[epgUrl] = epg
+    }
+
+    console.log(`Fills in missing channel's data...`)
+    for(let channel of channels) {
+      let channelId = channel.id
+      if(!channelId) continue
+      let c = buffer[epgUrl].channels[channelId]
+      if(!c) continue
+      let updated = false
+      
+      if(!channel.name && c.names[0]) {
+        channel.name = c.names[0]
+        updated = true
+        if(verbal) {
+          console.log(`Added name '${c.names[0]}' to '${channel.id}'`)
+        }
+      }
+
+      if(!channel.logo && c.icon) {
+        channel.logo = c.icon
+        updated = true
+        if(verbal) {
+          console.log(`Added logo '${c.icon}' to '${channel.id}'`)
+        }
+      }
+
+      if(updated) {
+        stats.updated++
+      }
+    }
+    
+    console.log(`Sorting channels...`)
     channels = util.sortByTitle(channels)
 
-    util.createFile(country.file, '#EXTM3U\n')
-
+    console.log(`Writing result to file...`)
+    util.createFile(country.url, playlist.getHeader())
     channels.forEach(channel => {
-      const info = `-1 tvg-id="${channel.id}" tvg-name="${channel.name}" tvg-logo="${channel.logo}" group-title="${channel.group}",${channel.title}`
-
-      const data = '#EXTINF:' + info + '\n' + channel.file + '\n'
-
-      util.writeToFile(country.file, data)
+      util.appendToFile(country.url, channel.toString())
     })
 
-    total += channels.length
-
-    channels = []
+    stats.countries++
+    stats.channels += channels.length
   }
+
+  console.log(`Countries: ${stats.countries}. Channels: ${stats.channels}. Updated: ${stats.updated}.`)
 }
 
-init()
-
-console.log(`Total: ${total}.`)
+main()
