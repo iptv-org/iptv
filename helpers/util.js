@@ -52,27 +52,41 @@ class Channel {
   }
 }
 
-function getGzipped(url) {
-  return new Promise((resolve, reject) => {
-    var buffer = []
-    https.get(url, function(res) {
-      var gunzip = zlib.createGunzip()         
-      res.pipe(gunzip)
-      gunzip.on('data', function(data) {
-        buffer.push(data.toString())
-      }).on("end", function() {
-        resolve(buffer.join(""))
-      }).on("error", function(e) {
-        reject(e)
-      })
-    }).on('error', function(e) {
-      reject(e)
-    })
+function parsePlaylist(filename) {
+  const parser = new M3U8FileParser()
+  const content = readFile(filename)
+  parser.read(content)
+  let results = parser.getResult()
+  let contentMatches = content.match(/^.+(?=#|\n|\r)/g)
+  let head = contentMatches.length ? contentMatches[0] : null
+  let attrs = {}
+  if(head) {
+    const parts = head.split(' ').filter(p => p !== '#EXTM3U').filter(p => p)
+
+    for(const attr of parts) {
+      let attrParts = attr.split('=')
+      
+      attrs[attrParts[0]] = attrParts[1].replace(/\"/g, '')
+    }
+  }
+
+  results.attrs = attrs
+
+  return new Playlist({
+    attrs: results.attrs,
+    items: results.segments
   })
 }
 
-function readFile(filename) {
-  return fs.readFileSync(path.resolve(__dirname) + `/../${filename}`, { encoding: "utf8" })
+function createChannel(data) {
+  return new Channel({
+    id: data.id,
+    name: data.name,
+    logo: data.logo,
+    group: data.group,
+    url: data.url,
+    title: data.title
+  })
 }
 
 async function loadEPG(url) {
@@ -105,40 +119,22 @@ async function loadEPG(url) {
   })
 }
 
-function createChannel(data) {
-  return new Channel({
-    id: data.id,
-    name: data.name,
-    logo: data.logo,
-    group: data.group,
-    url: data.url,
-    title: data.title
-  })
-}
-
-function parsePlaylist(filename) {
-  const parser = new M3U8FileParser()
-  const content = readFile(filename)
-  parser.read(content)
-  let results = parser.getResult()
-  let contentMatches = content.match(/^.+(?=#|\n|\r)/g)
-  let head = contentMatches.length ? contentMatches[0] : null
-  let attrs = {}
-  if(head) {
-    const parts = head.split(' ').filter(p => p !== '#EXTM3U').filter(p => p)
-
-    for(const attr of parts) {
-      let attrParts = attr.split('=')
-      
-      attrs[attrParts[0]] = attrParts[1].replace(/\"/g, '')
-    }
-  }
-
-  results.attrs = attrs
-
-  return new Playlist({
-    attrs: results.attrs,
-    items: results.segments
+function getGzipped(url) {
+  return new Promise((resolve, reject) => {
+    var buffer = []
+    https.get(url, function(res) {
+      var gunzip = zlib.createGunzip()         
+      res.pipe(gunzip)
+      gunzip.on('data', function(data) {
+        buffer.push(data.toString())
+      }).on("end", function() {
+        resolve(buffer.join(""))
+      }).on("error", function(e) {
+        reject(e)
+      })
+    }).on('error', function(e) {
+      reject(e)
+    })
   })
 }
 
@@ -157,6 +153,10 @@ function byTitle(a, b) {
 
 function sortByTitle(arr) {
   return arr.sort(byTitle)
+}
+
+function readFile(filename) {
+  return fs.readFileSync(path.resolve(__dirname) + `/../${filename}`, { encoding: "utf8" })
 }
 
 function appendToFile(filename, data) {
