@@ -1,101 +1,86 @@
 const util = require('./util')
-const urlParser = require('url')
 
-const types = ['full', 'country', 'content', 'sport']
 const debug = false
-let cache = {}
+const types = ['full', 'country', 'content', 'sport']
 let stats = {
-  total: 0,
+  countries: 0,
+  channels: 0,
   duplicates: 0
 }
 
-function init() {
-
-  let countries = util.parsePlaylist('index.m3u')
-
+function main() {
+  console.log(`Parsing 'index.m3u'...`)
+  const playlist = util.parsePlaylist('index.m3u')
+  let countries = playlist.items
   if(debug) {
+    console.log('Debug mode is turn on')
     countries = countries.slice(0, 1)
   }
 
-  for(const type of types) {
-    util.createFile(`index.${type}.m3u`, '#EXTM3U\n')
+  for(let type of types) {
+    const filename = `index.${type}.m3u`
+    console.log(`Creating '${filename}'...`)
+    util.createFile(filename, '#EXTM3U\n')
   }
 
   for(let country of countries) {
 
-    const countryName = util.getTitle(country.title)
-    const countryCode = util.getBasename(country.file).toUpperCase()
-    const playlist = util.parsePlaylist(country.file)
+    console.log(`Parsing '${country.url}'...`)
+    const playlist = util.parsePlaylist(country.url)
 
-    for(let item of playlist) {
+    const c = {
+      name: country.inf.title,
+      code: util.getBasename(country.url).toUpperCase()
+    }
 
-      const channel = util.parseChannelData(item)
-      
+    for(let item of playlist.items) {
 
-      
+      let channel = util.createChannel({
+        id: item.inf['tvg-id'],
+        name: item.inf['tvg-name'],
+        logo: item.inf['tvg-logo'],
+        group: item.inf['group-title'],
+        url: item.url,
+        title: item.inf.title
+      })
 
-      const file = channel.file
-
-      if(checkCache(file)) {
-
+      if(util.checkCache(channel.url)) {
+        
         stats.duplicates++
-
+      
       } else {
 
-        for(const type of types) {
-          let groupTitle = ''
-          if(type === 'full') {
-            groupTitle = [ countryName, channel.group ].filter(i => i).join(';')
-          } else if(type === 'country') {
-            groupTitle = countryName
-          } else if(type === 'content') {
-            groupTitle = channel.group
-          } else {
-            groupTitle = channel.group
-          }
-          
-          const info = `-1 tvg-id="${channel.id}" tvg-name="${channel.name}" tvg-logo="${channel.logo}" group-title="${groupTitle}",${channel.title}`
-          const data = '#EXTINF:' + info + '\n' + file + '\n'
+        let category = channel.group
 
+        for(const type of types) {
+          if(type === 'full') {
+            channel.group = [ c.name, channel.group ].filter(i => i).join(';')
+          } else if(type === 'country') {
+            channel.group = c.name
+          } else {
+            channel.group = category
+          }
+
+          const filename = `index.${type}.m3u`
           if(type === 'sport') {
-            if(groupTitle === 'Sport') {
-              util.writeToFile(`index.${type}.m3u`, data)
+            if(channel.group === 'Sport') {
+              util.appendToFile(filename, channel.toString())
             }
           } else {
-            util.writeToFile(`index.${type}.m3u`, data)
+            util.appendToFile(filename, channel.toString())
           }
         }
         
-        addToCache(file)
-      
+        util.addToCache(channel.url)
       }
 
-      stats.total++
-
+      stats.channels++
     }
 
+    stats.countries++
   }
 }
 
-init()
+main()
 
-console.log(`Total: ${stats.total}. Duplicates: ${stats.duplicates}. Unique: ${stats.total - stats.duplicates}`)
-
-function addToCache(url) {
-  let id = getUrlPath(url)
-
-  cache[id] = true
-}
-
-function checkCache(url) {
-  let id = getUrlPath(url)
-
-  return cache.hasOwnProperty(id)
-}
-
-function getUrlPath(u) {
-  let parsed = urlParser.parse(u)
-  let searchQuery = parsed.search || ''
-
-  return parsed.host + parsed.pathname + searchQuery
-}
+console.log(`Countries: ${stats.countries}. Channels: ${stats.channels}. Unique: ${stats.channels - stats.duplicates}. Duplicates: ${stats.duplicates}.`)
