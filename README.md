@@ -117,7 +117,7 @@ Or select a playlist for a specific country from the list below.
 | Lebanon                | 27       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lb.m3u` |
 | Libya                  | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ly.m3u` |
 | Liechtenstein          | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/li.m3u` |
-| Lithuania              | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lt.m3u` |
+| Lithuania              | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lt.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Luxembourg             | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lu.m3u` |
 | Macau                  | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mo.m3u` |
 | Macedonia              | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mk.m3u` |
@@ -125,7 +125,7 @@ Or select a playlist for a specific country from the list below.
 | Maldives               | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mv.m3u` |
 | Malta                  | 6        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mt.m3u` |
 | Mexico                 | 59       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mx.m3u` |
-| Moldova                | 18       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u` |
+| Moldova                | 17       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/md.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Mongolia               | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mn.m3u` |
 | Montenegro             | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/me.m3u` |
 | Morocco                | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ma.m3u` |
