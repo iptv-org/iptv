@@ -58,13 +58,9 @@ async function test() {
 
       } catch (err) {
 
-        if(!err.response) {
+        stats.failures++
 
-          stats.failures++
-
-          writeToLog(country.url, err.message, item.url)
-
-        }
+        writeToLog(country.url, err.message, item.url)
 
       }
 
