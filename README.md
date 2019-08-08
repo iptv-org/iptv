@@ -79,7 +79,7 @@ Or select a playlist for a specific country from the list below.
 | Egypt                  | 29       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/eg.m3u` |
 | El Salvador            | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sv.m3u` |
 | Equatorial Guinea      | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gq.m3u` |
-| Estonia                | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ee.m3u` |
+| Estonia                | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ee.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Ethiopia               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/et.m3u` |
 | Finland                | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fi.m3u` |
 | Fiji                   | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fj.m3u` |
