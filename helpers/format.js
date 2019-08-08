@@ -1,22 +1,25 @@
 const util = require('./util')
 
 const debug = false
+
 let stats = {
-  countries: 0,
-  channels: 0,
+  total: 0,
   updated: 0,
-  duplicates: 0
+  duplicates: 0,
+  unvalid: 0, 
+  removed: 0
 }
 let buffer = {}
 
 async function main() {
+
   console.log(`Parsing 'index.m3u'...`)
   const playlist = util.parsePlaylist('index.m3u')
   let countries = playlist.items
   if(debug) {
     console.log('Debug mode is turn on')
-    // countries = countries.slice(0, 1)
-    countries = [{ url: 'channels/ru.m3u' }, { url: 'channels/ua.m3u' }]
+    countries = countries.slice(0, 1)
+    // countries = [{ url: 'channels/ru.m3u' }, { url: 'channels/ua.m3u' }]
   }
 
   for(let country of countries) {
@@ -43,11 +46,15 @@ async function main() {
         title: item.inf.title
       })
 
-      if(!util.checkCache(channel.url)) {
+      if(util.checkCache(channel.url)) {
+        stats.duplicates++
+        stats.removed++
+      } else if(!util.validateUrl(channel.url)) {
+        stats.unvalid++
+        stats.removed++
+      } else {
         channels.push(channel)
         util.addToCache(channel.url)
-      } else {
-        stats.duplicates++
       }
     }
 
@@ -101,11 +108,10 @@ async function main() {
       util.appendToFile(country.url, channel.toString())
     })
 
-    stats.countries++
-    stats.channels += channels.length
+    stats.total += channels.length
   }
 
-  console.log(`Countries: ${stats.countries}. Channels: ${stats.channels}. Updated: ${stats.updated}. Duplicates: ${stats.duplicates}.`)
+  console.log(`Total: ${stats.total}. Duplicates: ${stats.duplicates}. Unvalid: ${stats.unvalid}. Updated: ${stats.updated}. Removed: ${stats.removed}.`)
 }
 
 main()
