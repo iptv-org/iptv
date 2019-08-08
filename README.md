@@ -107,7 +107,7 @@ Or select a playlist for a specific country from the list below.
 | Jamaica                | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/jm.m3u` |
 | Japan                  | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/jp.m3u` |
 | Jordan                 | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/jo.m3u` |
-| Kazakhstan             | 38       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kz.m3u` |
+| Kazakhstan             | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kz.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Kenya                  | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ke.m3u` |
 | Kosovo                 | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/xk.m3u` |
 | Kuwait                 | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kw.m3u` |
