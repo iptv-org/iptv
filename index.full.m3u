@@ -1005,10 +1005,6 @@ http://live.tamilvision.tv:8081/TVI/SD/chunks.m3u8
 https://teleqmmd.mmdlive.lldns.net/teleqmmd/f386e3b206814e1f8c8c1c71c0f8e748/chunklist_b2592000.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Canada;Shop",The Shopping Channel
 http://tscstreaming-lh.akamaihd.net/i/TSCLiveStreaming_1@91031/master.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.canadawanderer.com/wp-content/uploads/2012/11/CN-tower-Toronto-ilkerender.jpg" group-title="Canada;CCTV",Toronto - CN Tower 1
-http://video3.earthcam.com:1935/fecnetwork/9299.flv/chunklist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.canadawanderer.com/wp-content/uploads/2012/11/CN-tower-Toronto-ilkerender.jpg" group-title="Canada;CCTV",Toronto - CN Tower 2
-http://video3.earthcam.com:1935/fecnetwork/9298.flv/chunklist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://i.imgur.com/u13UUNX.jpg" group-title="Canada",Toronto - Ontario - CN Tower (East) (Opt-1)
 http://video3.earthcam.com/fecnetwork/9298.flv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://i.imgur.com/u13UUNX.jpg" group-title="Canada",Toronto - Ontario - CN Tower (West) (Opt-1)
@@ -3761,11 +3757,11 @@ http://rtmp.ott.mx1.com/tvge1/tvge1multi.smil/master.m3u8
 http://rtmp.ott.mx1.com/tvge1/tvge1multi.smil/chunklist_w2108596902_b1500000.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/mt3YmuP.png" group-title="Equatorial Guinea",TVGE Int. (New!)
 http://rtmp.ott.mx1.com/tvge1/tvge1multi.smil/master.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Eesti_Televisioon_Logo.svg/300px-Eesti_Televisioon_Logo.svg.png" group-title="Estonia",ETV
+#EXTINF:-1 tvg-id="etv-ee" tvg-name="ETV Эстония" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Eesti_Televisioon_Logo.svg/300px-Eesti_Televisioon_Logo.svg.png" group-title="Estonia",ETV
 http://95.153.22.122:8000/play/a004/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/ETV%2B_logo.png" group-title="Estonia",ETV +
+#EXTINF:-1 tvg-id="etv-plus-ee" tvg-name="ETV+ Эстония" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a2/ETV%2B_logo.png" group-title="Estonia",ETV+
 http://95.153.22.122:8000/play/a018/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ETV2_logo.svg/300px-ETV2_logo.svg.png" group-title="Estonia",ETV 2
+#EXTINF:-1 tvg-id="etv2-ee" tvg-name="ETV2 Эстония" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ETV2_logo.svg/300px-ETV2_logo.svg.png" group-title="Estonia",ETV2
 http://95.153.22.122:8000/play/a005/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://kanal11.postimees.ee/img/header-logo.png" group-title="Estonia",Kanal 11
 http://95.153.22.122:8000/play/a00z/index.m3u8
@@ -3773,7 +3769,7 @@ http://95.153.22.122:8000/play/a00z/index.m3u8
 http://95.153.22.122:8000/play/a00o/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Kanal_2_logo.svg/225px-Kanal_2_logo.svg.png" group-title="Estonia",Kanal 2
 http://95.153.22.122:8000/play/a00a/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.freeetv.com/images/03_logo/Tallinna_Televisioon_Estonia.jpg" group-title="Estonia",Tallinna
+#EXTINF:-1 tvg-id="tallinna-tv" tvg-name="Tallinna TV" tvg-logo="http://www.freeetv.com/images/03_logo/Tallinna_Televisioon_Estonia.jpg" group-title="Estonia",Tallinna TV
 http://95.153.22.122:8000/play/a009/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/KAg6MOI.png" group-title="Ethiopia",Addis TV
 https://rrsatrtmp.tulix.tv/addis1/addis1multi.smil/playlist.m3u8
@@ -6207,55 +6203,45 @@ http://livecdnh2.tvanywhere.ae/hls/jordan/04.m3u8
 http://stream.joinvisions.net:1935/jorlive/jrtv/playlist.m3u8?DVR
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.roya.tv/img/royatv/royaTvLogo.png" group-title="Jordan",Ro'ya TV
 https://roya-live.ercdn.net/roya/roya.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan;Business",Atameken Business Channel [720p]
-http://live-atameken.cdnvideo.ru/atameken/atameken_hq.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://aktobetv.kz/assets/regions/logo/aqtobe.png" group-title="Kazakhstan",Aктобе
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://aktobetv.kz/assets/regions/logo/aqtobe.png" group-title="Kazakhstan",Aqtóbe
 http://onrez.kaztrk.kz/regional/aktobetv/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan;CCTV",costa del mar Caspio 14 m
-http://cam.x-com.kz:8081/caspy14/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan;CCTV",El Mar Caspio 5/7 mrn
-http://cam.x-com.kz:8081/caspy5/index.m3u8
+#EXTINF:-1 tvg-id="atameken-business" tvg-name="Atameken Business" tvg-logo="" group-title="Kazakhstan;Business",Atameken Business
+http://live-atameken.cdnvideo.ru/atameken/atameken_hq.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://pavlodartv.kz/assets/regions/logo/ertis.png" group-title="Kazakhstan",Ertis
 http://onrez.kaztrk.kz/regional/pavlodartv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://taraztv.kz/assets/regions/logo/jambyl.png" group-title="Kazakhstan",Jambyl
 http://onrez.kaztrk.kz/regional/taraztv/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/9/92/Kazakh_tv_logo_png_1.png" group-title="Kazakhstan",Kazakh TV
+#EXTINF:-1 tvg-id="kazakh-tv" tvg-name="Kazakh TV" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/9/92/Kazakh_tv_logo_png_1.png" group-title="Kazakhstan",Kazakh TV (EN) (Opt-1)
 http://kazakhtvru.ultraiptv.com/live_en/playlist1/index.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan",KAZAKH TV (English)
+#EXTINF:-1 tvg-id="kazakh-tv" tvg-name="Kazakh TV" tvg-logo="" group-title="Kazakhstan",Kazakh TV (EN) (Opt-2)
 http://212.8.233.150:8081/kazahtv/stream_en/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan",KAZAKH TV (KG)
+#EXTINF:-1 tvg-id="kazakh-tv" tvg-name="Kazakh TV" tvg-logo="" group-title="Kazakhstan",Kazakh TV (KG)
 http://212.8.233.150:8081/kazahtv/stream_kg/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan",KAZAKH TV (KZ)
+#EXTINF:-1 tvg-id="kazakh-tv" tvg-name="Kazakh TV" tvg-logo="" group-title="Kazakhstan",Kazakh TV (KZ)
 http://212.8.233.150:8081/kazahtv/stream_kz/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan",KAZAKH TV [360p]
+#EXTINF:-1 tvg-id="kazakh-tv" tvg-name="Kazakh TV" tvg-logo="" group-title="Kazakhstan",Kazakh TV (RU) (Opt-1)
 http://212.8.233.150:8081/kazahtv/stream_ru/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan",KAZAKH TV [360p]
+#EXTINF:-1 tvg-id="kazakh-tv" tvg-name="Kazakh TV" tvg-logo="" group-title="Kazakhstan",Kazakh TV (RU) (Opt-2)
 http://kazakhtvru.ultraiptv.com/live_ru/playlist1/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png" group-title="Kazakhstan",KTK
-http://89.218.30.37/ktklive/live.hq/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan;CCTV",La costa del mar Caspio 15 mn
-http://cam.x-com.kz:8081/caspy15/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://mtrk.kz/wp-content/themes/mtrk/images/logo.png" group-title="Kazakhstan",MTRK
-http://tv2.esilnet.com/hls/mtrk.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://oraltv.kz/assets/regions/logo/aqjaiyq.png?v=1" group-title="Kazakhstan",Oral
 http://onrez.kaztrk.kz/regional/oraltv/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://kostanaytv.kz/assets/regions/logo/qostanay.png" group-title="Kazakhstan",Qostanai ’
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://kostanaytv.kz/assets/regions/logo/qostanay.png" group-title="Kazakhstan",Qostanai
 http://onrez.kaztrk.kz/regional/kostanaytv/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan;CCTV",Regiones bajas
-http://cam.x-com.kz:8081/downtown/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan;CCTV",Regiones superiores
-http://cam.x-com.kz:8081/yntymak/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://kartv.kz/assets/regions/logo/saryarqa.png" group-title="Kazakhstan",Saryarqa
 http://onrez.kaztrk.kz/regional/karagandytv/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://semeytv.kz/assets/regions/logo/semey.png" group-title="Kazakhstan",Semei’
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://semeytv.kz/assets/regions/logo/semey.png" group-title="Kazakhstan",Semei
 http://onrez.kaztrk.kz/regional/semeytv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://pbs.twimg.com/profile_images/1034442917753118720/stLuQkd6_400x400.jpg" group-title="Kazakhstan",Tamasha
 https://tamasha.rtrk.kz/tamasha_480/tamasha_480/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://almaty.tv/images/almatylogomart.png" group-title="Kazakhstan",Аlmaty
+#EXTINF:-1 tvg-id="almaty" tvg-name="Алматы" tvg-logo="https://almaty.tv/images/almatylogomart.png" group-title="Kazakhstan",Алматы
 http://live-almatytv.cdnvideo.ru/almatytv/almatytv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan",Новое Телевидение
+#EXTINF:-1 tvg-id="ktk-kz" tvg-name="КТК" tvg-logo="https://www.ktk.kz/images/logo/2018-light.png" group-title="Kazakhstan",КТК
+http://89.218.30.37/ktklive/live.hq/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://mtrk.kz/wp-content/themes/mtrk/images/logo.png" group-title="Kazakhstan",МТРК
+http://tv2.esilnet.com/hls/mtrk.m3u8
+#EXTINF:-1 tvg-id="novoe-televidenie" tvg-name="Новое телевидение" tvg-logo="" group-title="Kazakhstan",Новое телевидение
 http://serv25.vintera.tv:8081/novoetv/nov_tv/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kazakhstan",Хабар 24
+#EXTINF:-1 tvg-id="xabar24" tvg-name="Хабар 24" tvg-logo="https://iptvx.one/icn/xabar24.png" group-title="Kazakhstan",Хабар 24
 http://serv30.vintera.tv:8081/habar/habar24/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/CGTN_Africa.png/220px-CGTN_Africa.png" group-title="Kenya",CGTN Africa
 http://116.199.5.51:8114/index.m3u8?Fsv_chan_hls_se_idx=14&FvSeid=1&Fsv_ctype=LIVES&Fsv_otype=1&Provider_id=&Pcontent_id=.m3u8
@@ -6347,9 +6333,9 @@ http://onlinetv.ktrk.kg:1935/live/myStream6/playlist.m3u8
 http://onlinetv.ktrk.kg:1935/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.ktrk.kg/images/channels/small/music.png" group-title="Kyrgyzstan;Music",КТРК Музыка
 http://onlinetv.ktrk.kg:1935/live/myStream2/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.ktrk.kg/images/channels/nav/sport.png" group-title="Kyrgyzstan;Sport",КТРК Спорт (Opt-1)
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.ktrk.kg/images/channels/nav/sport.png" group-title="Kyrgyzstan;Sport",КТРК Спорт
 http://onlinetv.ktrk.kg:1935/live/myStream4/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kyrgyzstan",Любимый HD/ТНТ4 (KG)
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Kyrgyzstan",Любимый HD/ТНТ4
 http://92.245.103.126:1935/live/live.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.malimarcdn.com/laochampatvHD.jpg" group-title="Laos",Lao Champa TV
 https://livefta.malimarcdn.com/ftaedge00/laochampa1.sdp/chunklist.m3u8
@@ -6359,39 +6345,39 @@ https://livefta.malimarcdn.com/ftaedge00/laochampa2.stream/chunklist.m3u8
 https://livefta.malimarcdn.com/ftaedge00/laochampa3.stream/chunklist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.mvtv.co.th/wp-content/uploads/2019/01/mvlao.jpg" group-title="Laos",MVTV Laos
 https://edge1a.v2h-cdn.com/appt7/MVLAO.stream_720p/chunklist_w1228847336.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://en.1bma.lv/uploaded/spaw/images/1m.jpg" group-title="Latvia",1 Baltic Music
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://en.1bma.lv/uploaded/spaw/images/1m.jpg" group-title="Latvia;Music",1BM
 https://streamer5.tvdom.tv/in/tvdom/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://yt3.ggpht.com/-jEVyYmA7My4/AAAAAAAAAAI/AAAAAAAAAAA/rVNF0_izisA/s900-c-k-no-mo-rj-c0xffffff/photo.jpg" group-title="Latvia",Chau TV
 http://video.chaula.tv/hls/live/high/playlist_high.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://neskaties.lv/misc/kanals2/logo.png" group-title="Latvia",Kanals 2
+#EXTINF:-1 tvg-id="kanals2" tvg-name="Kanāls 2" tvg-logo="https://neskaties.lv/misc/kanals2/logo.png" group-title="Latvia",Kanāls 2
 https://cdn2.tvplayhome.lt/live/eds/Kanals2_LV_SD/HLS_encr/Kanals2_LV_SD-audio_20001=96000-video=2200000.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/Ss9Q7uS.png" group-title="Latvia",Latvijas Radio 1 106.1 FM Latgale
 http://5a44e5b800a41.streamlock.net:1935/liveVLR1/mp4:LR1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.userlogos.org/files/logos/spaljeni/tvnet.png" group-title="Latvia",Latvijas Radio 3 Klasika
 http://5a44e5b800a41.streamlock.net:1935/liveVLR3/mp4:Klasika/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://neskaties.lv/misc/lnt/logo.png" group-title="Latvia",LNT
+#EXTINF:-1 tvg-id="lnt" tvg-name="LNT" tvg-logo="https://neskaties.lv/misc/lnt/logo.png" group-title="Latvia",LNT
 https://cdn2.tvplayhome.lt/live/eds/LNT_LV_SD/HLS_encr/LNT_LV_SD-audio_20001=96000-video=2200000.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/8/8e/LTV1_logo_2017.png/revision/latest?cb=20180715080428" group-title="Latvia",LTV1
+#EXTINF:-1 tvg-id="ltv1" tvg-name="LTV1" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/8/8e/LTV1_logo_2017.png/revision/latest?cb=20180715080428" group-title="Latvia",LTV1
 https://cdn2.tvplayhome.lt/live/eds/LTV1_LV_SD/HLS_encr/LTV1_LV_SD-audio_20001=96000-video=2200000.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://ltv.lsm.lv/assets/channel/logo2.png" group-title="Latvia",LTV7
+#EXTINF:-1 tvg-id="ltv7" tvg-name="LTV7" tvg-logo="https://ltv.lsm.lv/assets/channel/logo2.png" group-title="Latvia",LTV7
 https://cdn2.tvplayhome.lt/live/eds/LTV7_LV_SD/HLS_encr/LTV7_LV_SD-audio_20000=96000-video=2200000.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.retv.lv/wp-content/uploads/2017/03/logo-a-e1489505827441.png" group-title="Latvia",RE:TV (Opt-1)
+#EXTINF:-1 tvg-id="re-tv" tvg-name="Re:TV Латвия" tvg-logo="http://www.retv.lv/wp-content/uploads/2017/03/logo-a-e1489505827441.png" group-title="Latvia",Re:TV (Opt-1)
 http://edge-telia1.tiesraides.lv/live/retv.lv.1_1/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Latvia",RE:TV (Opt-2)
+#EXTINF:-1 tvg-id="re-tv" tvg-name="Re:TV Латвия" tvg-logo="" group-title="Latvia",Re:TV (Opt-2)
 http://edge-telia1.tiesraides.lv/live/retv.lv.1_1/playlist_b1825196.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Latvia",RE:TV (Opt-3)
+#EXTINF:-1 tvg-id="re-tv" tvg-name="Re:TV Латвия" tvg-logo="" group-title="Latvia",Re:TV (Opt-3)
 http://edge-telia2.tiesraides.lv/live/retv.lv.1_1/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.userlogos.org/files/logos/spaljeni/tvnet.png" group-title="Latvia",TV Net
-http://player.tvnet.lv/stream/amlst:61659/chunklist_w1822312625_b528000_pd892000.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://neskaties.lv/misc/tv3/logo.png" group-title="Latvia",TV3 Latvija
+#EXTINF:-1 tvg-id="tv3-lv" tvg-name="TV3 LV" tvg-logo="https://neskaties.lv/misc/tv3/logo.png" group-title="Latvia",TV3
 https://cdn2.tvplayhome.lt/live/eds/TV3_LV_SD/HLS_encr/TV3_LV_SD-audio_20001=96000-video=2200000.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://neskaties.lv/misc/tv6/logo.png" group-title="Latvia",TV6 Latvija
+#EXTINF:-1 tvg-id="tv6-lv" tvg-name="TV6 LV" tvg-logo="https://neskaties.lv/misc/tv6/logo.png" group-title="Latvia",TV6
 https://cdn2.tvplayhome.lt/live/eds/TV6_LV_SD/HLS_encr/TV6_LV_SD-audio_20001=96000-video=2200000.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://kartina24.tv/images/news/multimania.png" group-title="Latvia",Мультимания
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.userlogos.org/files/logos/spaljeni/tvnet.png" group-title="Latvia",TVNET
+http://player.tvnet.lv/stream/amlst:61659/chunklist_w1822312625_b528000_pd892000.m3u8
+#EXTINF:-1 tvg-id="multimania-lv" tvg-name="Мультимания LV" tvg-logo="https://kartina24.tv/images/news/multimania.png" group-title="Latvia",Мультимания
 http://82.193.71.93/MultimaniaLV/video.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ren_tv_ru_baltic.png/106px-Ren_tv_ru_baltic.png" group-title="Latvia",Рен ТВ Baltic
+#EXTINF:-1 tvg-id="rentv-baltic" tvg-name="РенТВ Baltic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ren_tv_ru_baltic.png/106px-Ren_tv_ru_baltic.png" group-title="Latvia",Рен ТВ Baltic (Opt-1)
 http://ott-cdn.ucom.am/s85/04.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ren_tv_ru_baltic.png/106px-Ren_tv_ru_baltic.png" group-title="Latvia",Рен ТВ Baltic
+#EXTINF:-1 tvg-id="rentv-baltic" tvg-name="РенТВ Baltic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Ren_tv_ru_baltic.png/106px-Ren_tv_ru_baltic.png" group-title="Latvia",Рен ТВ Baltic (Opt-2)
 http://ott-cdn.ucom.am/s85/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://aghaniaghani.com/images/logo.png" group-title="Lebanon",Aaghani
 http://109.236.92.216:9090/Aghani/tracks-v1a1/mono.m3u8
@@ -6463,11 +6449,11 @@ http://streamer11.elementssys.com:8080/demo/rasmyah/index.m3u8
 http://31.10.19.12:8066/live/999/0.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/Drxu8Du.png" group-title="Liechtenstein",Mediashop TV
 https://cdn1-europe.smartcast.tv/mediashop/mediashop1/chunklist_w1921464012.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Tv3_logo_rgb_transparent.png/1200px-Tv3_logo_rgb_transparent.png" group-title="Lithuania",TV3 Lietuva
+#EXTINF:-1 tvg-id="tv3-lt" tvg-name="TV3 LT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Tv3_logo_rgb_transparent.png/1200px-Tv3_logo_rgb_transparent.png" group-title="Lithuania",TV3
 https://cdn2.tvplayhome.lt/live/eds/TV3_LT_SD/HLS_encr/TV3_LT_SD-audio_20001=96000-video=2200000.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/TV62018.jpg/230px-TV62018.jpg" group-title="Lithuania",TV6 Lietuva
+#EXTINF:-1 tvg-id="tv6-lt" tvg-name="TV6 LT" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/TV62018.jpg/230px-TV62018.jpg" group-title="Lithuania",TV6
 https://cdn2.tvplayhome.lt/live/eds/TV6_LT_SD/HLS_encr/TV6_LT_SD-audio_20002=96000-video=2200000.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/TV8_logo_for_Sweden_and_Lithuania.png" group-title="Lithuania",TV8 Lietuva
+#EXTINF:-1 tvg-id="tv8-lt" tvg-name="TV8 Литва" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/9/9c/TV8_logo_for_Sweden_and_Lithuania.png" group-title="Lithuania",TV8
 https://cdn2.tvplayhome.lt/live/eds/TV8_LT_SD/HLS_encr/TV8_LT_SD-audio_20001=96000-video=2200000.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/YldMnap.jpg" group-title="Luxembourg",Chamber TV
 https://media.webtvlive.eu/chd/_definst_/smil:chamber_tv.smil/playlist.m3u8
@@ -6683,39 +6669,37 @@ https://180ce25c70.site.internapcdn.net/puebla_live/chunklist.m3u8
 http://ooyalahd2-f.akamaihd.net/i/UnoTV01_delivery@122640/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://acasatv.perfecte.md/design/acasatv_md/images/acasa_in_moldova_logo5.png" group-title="Moldova",Acasa TV
 http://hls.protv.md/acasatv/acasatv.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://a-tv.md/templates/test/img/logo-site.png" group-title="Moldova",Accent TV
+#EXTINF:-1 tvg-id="accent-tv" tvg-name="Accent TV" tvg-logo="http://a-tv.md/templates/test/img/logo-site.png" group-title="Moldova",Accent TV
 http://video.a-tv.md/hls/accent.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",Canal Regional (Moldova)
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",Canal Regional
 http://canalregional.md/tv/live/canalregional.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.trm.md/img/pages/2018/10/18/moldova-1/moldova-1.png" group-title="Moldova",Moldova 1
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",Elita TV
+http://46.55.111.242:8080/Rezina.m3u8
+#EXTINF:-1 tvg-id="moldova-1" tvg-name="Moldova 1" tvg-logo="https://www.trm.md/img/pages/2018/10/18/moldova-1/moldova-1.png" group-title="Moldova",Moldova 1 (Opt-1)
 http://live.trm.md:1935/live/MoldovaUnu1/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",Moldova 1 [432p]
+#EXTINF:-1 tvg-id="moldova-1" tvg-name="Moldova 1" tvg-logo="" group-title="Moldova",Moldova 1 (Opt-2)
 http://live.trm.md:1935/live/M1Mlive/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",Moldova 1 [432p]
+#EXTINF:-1 tvg-id="moldova-1" tvg-name="Moldova 1" tvg-logo="" group-title="Moldova",Moldova 1 (Opt-3)
 http://212.0.209.209:1935/live/MoldovaUnu1/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://www.trm.md/img/pages/2018/10/18/moldova-2/moldova-2.png" group-title="Moldova",Moldova 2
+#EXTINF:-1 tvg-id="moldova-2" tvg-name="" tvg-logo="https://www.trm.md/img/pages/2018/10/18/moldova-2/moldova-2.png" group-title="Moldova",Moldova 2
 http://live.trm.md:1935/live/MoldovaDoi2/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://oklivetv.com/wp-content/uploads/2015/02/noroctv1.png" group-title="Moldova",Noroc TV
+#EXTINF:-1 tvg-id="noroc-tv-md" tvg-name="Noroc TV Moldova" tvg-logo="http://oklivetv.com/wp-content/uploads/2015/02/noroctv1.png" group-title="Moldova",Noroc TV
 http://live.noroc.tv/hls/noroctv_chisinau.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",ProTV Chișinău
+#EXTINF:-1 tvg-id="pro-tv-md" tvg-name="Pro TV Moldova" tvg-logo="" group-title="Moldova",Pro TV
 http://hls.protv.md/hls/protv.m3u8
-#EXTINF:-1 tvg-id="publika" tvg-name="" tvg-logo="" group-title="Moldova",Publika TV
+#EXTINF:-1 tvg-id="publika-tv" tvg-name="Publika TV" tvg-logo="" group-title="Moldova",Publika TV (Opt-1)
 http://livebeta.publika.md/LIVE/P/1000.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova;News",Publika TV
+#EXTINF:-1 tvg-id="publika-tv" tvg-name="Publika TV" tvg-logo="" group-title="Moldova",Publika TV (Opt-2)
 http://livebeta.publika.md/LIVE/P/6810.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",Publika TV
+#EXTINF:-1 tvg-id="publika-tv" tvg-name="Publika TV" tvg-logo="" group-title="Moldova",Publika TV (Opt-3)
 http://livebeta.publika.md/LIVE/P/1500.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.manutv.net/wp-content/uploads/893793546.png" group-title="Moldova",Tele M
 http://webmobile.xdev.ro:81/tv16/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",TV ELITA
-http://46.55.111.242:8080/Rezina.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",TV8 Moldova
+#EXTINF:-1 tvg-id="tv8-md" tvg-name="TV8 Moldova" tvg-logo="" group-title="Moldova",TV8
 http://live.cdn.tv8.md/TV7/video1.m3u8?token=1
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://tvrmoldova.md/img/tvr-moldova-oriz-mic.png" group-title="Moldova",TVR Moldova
 http://89.136.209.26:1935/liveedge/TVRMOLDOVA.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/zFYfPjp.png" group-title="Moldova",TVR Moldova
-http://mn-nl.mncdn.com/tvr_moldova/smil:TVRMOLDOVA.smil/playlist.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Moldova",НТВ Moldova
+#EXTINF:-1 tvg-id="ntv-moldova" tvg-name="НТВ-Молдова" tvg-logo="" group-title="Moldova",НТВ-Молдова
 http://93.115.137.166/hls/ntvm.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.mnb.mn/images/mini/mnews.png" group-title="Mongolia",Монголын Мэдээ
 http://103.14.38.107:1935/live/mn2.stream/chunklist.m3u8
@@ -6893,8 +6877,6 @@ https://rrsatrtmp.tulix.tv/questtv1/questtv1multi.smil/chunklist.m3u8
 http://d2ktlibtvvj8vp.cloudfront.net/trace_naija/6/prog_index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="North Korea",Korean Central Television
 https://tv.nknews.org/tvhls/stream.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://i.imgur.com/TL6iaIh.png" group-title="Norway;CCTV",Bergen - Festplassen
-http://stream.vosskom.no:1935/bt/Festplassen.stream/chunklist_w1948801769.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/YRCNjvp.jpg" group-title="Norway;Sport",Canal Motor
 https://digicom.hls.iptvdc.com/canalmotor/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/XZHqsMw.png" group-title="Norway",Kanal 10 Norge
@@ -7409,8 +7391,6 @@ http://92.43.140.249/s64/04.m3u8
 http://ott-cdn.ucom.am/s34/04.m3u8
 #EXTINF:-1 tvg-id="bridge-tv" tvg-name="Bridge TV" tvg-logo="https://i.imgur.com/L71iY9t.png" group-title="Russia;Music",Bridge TV (Opt-2)
 http://ott-cdn.ucom.am/s34/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.europaplus.ru/template/2012/img/logo.png" group-title="Russia;CCTV",Capital FM (Москва)
-http://www.m24.ru/trans/moscowcity/trans.m3u8
 #EXTINF:-1 tvg-id="cctv-ru" tvg-name="CCTV-Русский" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/0/0c/CGTN_Russian.png" group-title="Russia",CCTV-Русский (Opt-1)
 http://39.135.16.142:6060/PLTV/88888888/224/3221225667/1/index.m3u8?fmt=ts2hls
 #EXTINF:-1 tvg-id="cctv-ru" tvg-name="CCTV-Русский" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d2/Cgtn.jpg" group-title="Russia",CCTV-Русский (Opt-2)
@@ -7455,8 +7435,6 @@ http://nano.teleservice.su:8080/hls/luxury.m3u8
 http://81.30.182.82:18092/hls/live.m3u8
 #EXTINF:-1 tvg-id="ocean-tv" tvg-name="Ocean TV" tvg-logo="" group-title="Russia;Entertainment",Ocean TV
 https://strm.yandex.ru/kal/oceantv_supres/oceantv_supres0.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://redcom.ru/include/logo_best.png" group-title="Russia;CCTV",Redcom TV
-https://tvstreamer.redcom.ru/Redcams/index.m3u8
 #EXTINF:-1 tvg-id="rt-america" tvg-name="RT America" tvg-logo="" group-title="Russia;News",RT America (Opt-1)
 https://strm.yandex.ru/kal/rt_hd/rt_hd0.m3u8
 #EXTINF:-1 tvg-id="rt-america" tvg-name="RT America" tvg-logo="" group-title="Russia;News",RT America (Opt-2)
@@ -7827,10 +7805,10 @@ http://ott-cdn.ucom.am/s47/index.m3u8
 http://92.43.140.249/s47/04.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Russia;Movies",Премьера TV
 http://live.planeta-online.tv:1935/public/channel_5/playlist.m3u8
-#EXTINF:-1 tvg-id="prikluchenia-hd" tvg-name="Приключения HD" tvg-logo="https://upload.wikimedia.org/wikipedia/ru/thumb/8/8d/PriklucheniaHDLogo2017.png/1200px-PriklucheniaHDLogo2017.png" group-title="Russia;Travel",Приключения HD
-http://ott-cdn.ucom.am/s99/index.m3u8
-#EXTINF:-1 tvg-id="prikluchenia-hd" tvg-name="Приключения HD" tvg-logo="" group-title="Russia;Travel",Приключения HD
+#EXTINF:-1 tvg-id="prikluchenia-hd" tvg-name="Приключения HD" tvg-logo="" group-title="Russia;Travel",Приключения HD (Opt-1)
 http://ott-cdn.ucom.am/s99/04.m3u8
+#EXTINF:-1 tvg-id="prikluchenia-hd" tvg-name="Приключения HD" tvg-logo="https://upload.wikimedia.org/wikipedia/ru/thumb/8/8d/PriklucheniaHDLogo2017.png/1200px-PriklucheniaHDLogo2017.png" group-title="Russia;Travel",Приключения HD (Opt-2)
+http://ott-cdn.ucom.am/s99/index.m3u8
 #EXTINF:-1 tvg-id="prodvizhenie" tvg-name="Продвижение" tvg-logo="" group-title="Russia",Продвижение
 https://strm.yandex.ru/kal/prodvizheniye/prodvizheniye0.m3u8
 #EXTINF:-1 tvg-id="piatnica-pl2" tvg-name="Пятница +2" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/%D0%9F%D1%8F%D1%82%D0%BD%D0%B8%D1%86%D0%B0_%28%D1%81_2013%29.svg/1200px-%D0%9F%D1%8F%D1%82%D0%BD%D0%B8%D1%86%D0%B0_%28%D1%81_2013%29.svg.png" group-title="Russia",Пятница! (+2) (Opt-1)
@@ -7839,12 +7817,10 @@ http://ott-cdn.ucom.am/s50/index.m3u8
 http://ott-cdn.ucom.am/s50/04.m3u8
 #EXTINF:-1 tvg-id="pes-i-ko" tvg-name="Пес и Ко" tvg-logo="" group-title="Russia;Entertainment",Пёс и Ко
 https://strm.yandex.ru/kal/pesiko_supres/pesiko_supres0.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://govoritmoskva.ru/static/images/new-logo.png" group-title="Russia;CCTV",Радио Говорит Москва
-http://video.govoritmoskva.ru:8080/rufm/index.m3u8
-#EXTINF:-1 tvg-id="radio-shanson" tvg-name="Радио Шансон" tvg-logo="" group-title="Russia;Music",Радио Шансон
-http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live_hiq/index.m3u8
-#EXTINF:-1 tvg-id="radio-shanson" tvg-name="Радио Шансон" tvg-logo="http://lion-tv.com/uploads/posts/2016-09/1472964269_178.png" group-title="Russia;Music",Радио Шансон
+#EXTINF:-1 tvg-id="radio-shanson" tvg-name="Радио Шансон" tvg-logo="http://lion-tv.com/uploads/posts/2016-09/1472964269_178.png" group-title="Russia;Music",Радио Шансон (Opt-1)
 http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live.m3u8
+#EXTINF:-1 tvg-id="radio-shanson" tvg-name="Радио Шансон" tvg-logo="" group-title="Russia;Music",Радио Шансон (Opt-2)
+http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live_hiq/index.m3u8
 #EXTINF:-1 tvg-id="ratnik" tvg-name="Ратник" tvg-logo="" group-title="Russia;Entertainment",Ратник (Opt-1)
 http://live-ratnik.cdnvideo.ru/ratnik/ratnik.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="ratnik" tvg-name="Ратник" tvg-logo="" group-title="Russia;Entertainment",Ратник (Opt-2)
@@ -7979,10 +7955,10 @@ https://sitv.ru/hls/s861024.m3u8
 http://ott-cdn.ucom.am/s56/04.m3u8
 #EXTINF:-1 tvg-id="teleputeshestvia" tvg-name="Телепутешествия HD" tvg-logo="http://teletravel.tv/assets/logo-header-5c45c1d5a95358ae14c2e49de4594df6fa31f22e29805e02cc9cfaffda5edfa6.png" group-title="Russia;Travel",Телепутешествия
 http://78.29.1.87/live/teletravel_hd/copy/playlist.m3u8
-#EXTINF:-1 tvg-id="texno-24" tvg-name="Техно 24" tvg-logo="https://iptvx.one/icn/texno-24.png" group-title="Russia",Техно 24
-http://92.43.140.249/s68/04.m3u8
-#EXTINF:-1 tvg-id="texno-24" tvg-name="Техно 24" tvg-logo="https://i.imgur.com/5zAk3hi.png" group-title="Russia",Техно 24
+#EXTINF:-1 tvg-id="texno-24" tvg-name="Техно 24" tvg-logo="https://i.imgur.com/5zAk3hi.png" group-title="Russia",Техно 24 (Opt-1)
 http://ott-cdn.ucom.am/s68/index.m3u8?fluxustv.m3u8
+#EXTINF:-1 tvg-id="texno-24" tvg-name="Техно 24" tvg-logo="https://iptvx.one/icn/texno-24.png" group-title="Russia",Техно 24 (Opt-2)
+http://92.43.140.249/s68/04.m3u8
 #EXTINF:-1 tvg-id="tivikom" tvg-name="Тивиком" tvg-logo="" group-title="Russia;Local",Тивиком (Улан-Удэ)
 http://tvcom.stream.intelema.ru/tvcom/studio/index.m3u8
 #EXTINF:-1 tvg-id="trk-ryazan" tvg-name="ТКР Рязань" tvg-logo="http://www.tkr.su/sites/default/files/logo_vsn_0_0.gif" group-title="Russia",ТКР (Рязань)
@@ -9027,8 +9003,6 @@ http://stream.rs.co.th/you-hi/index.m3u8
 http://thaitvstream.com/play/a071260/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/mmZzICt.png" group-title="Trinidad and Tobago",TV Jaagriti
 http://161.0.157.38/PLTV/88888888/224/3221226848/index.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Tunisia;CCTV",Jawhara FM [720p]
-http://streaming.toutech.net:1935/live/mp4:jawharafm.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/76/Logo_de_Nessma.png" group-title="Tunisia",Neesma
 http://livecdnh2.tvanywhere.ae/hls/nessma/04.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://saheltv.tn/wp-content/uploads/2018/03/saheltv_logox2.png" group-title="Tunisia",Sahel TV
@@ -9537,8 +9511,6 @@ http://prm-hls1.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
 http://api.tv.ipnet.ua/api/v1/manifest/1312714970.m3u8
 #EXTINF:-1 tvg-id="rada-ua" tvg-name="Рада" tvg-logo="https://iptvx.one/icn/rada.png" group-title="Ukraine",Рада (Opt-2)
 http://api.tv.ipnet.ua/api/v1/manifest/1312714970.m3u8?codec=mpeg4
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://radio10.ua/wp-content/uploads/2018/09/logo.png" group-title="Ukraine;CCTV",Радио 10
-http://langate.tv/acc/tracks-v1/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.i.ua/radio/logo/1/161.jpg" group-title="Ukraine",Радио Люкс
 http://stream1.luxnet.ua/luxstudio/smil:luxstudio.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="raiua" tvg-name="РАІ" tvg-logo="" group-title="Ukraine",РАІ (Opt-1)
@@ -10193,8 +10165,6 @@ http://bcsecurelivehls-i.akamaihd.net/hls/live/621275/1539097700001/master_240p.
 https://bcsecurelivehls-i.akamaihd.net/hls/live/621275/1539097700001/master_1080p.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="United States;Local",DC COUNCIL CHANNEL [1080p]
 http://video.oct.dc.gov/out/u/15_12.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="http://www.dceaglecam.org/img/american_eagle_foundation_logo.png" group-title="United States;CCTV",DC Eagle Cam
-http://americaneagle-lh.akamaihd.net:80/i/AEF_DC1@31049/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/q66RMSc.png" group-title="United States",Denver 8 TV
 http://granicusliveus8-a.akamaihd.net/denver/G0080_002/chunklist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="United States;Local",DISTRICT OF COLUMBIA NETWORK [540p]
