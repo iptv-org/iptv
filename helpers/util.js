@@ -6,6 +6,14 @@ const zlib = require("zlib")
 const DOMParser = require('xmldom').DOMParser
 const urlParser = require('url')
 
+const supportedGroups = [ 'Auto','Business', 'CCTV', 'Classic','Comedy','Documentary','Education','Entertainment', 'Family','Fashion','Food', 'General', 'Health', 'History', 'Hobby', 'Kids', 'Legislative','Lifestyle','Local', 'Movies', 'Music', 'News', 'Quiz','Radio', 'Religious','Sci-Fi', 'Shop', 'Sport', 'Travel', 'Weather', 'XXX' ]
+
+const blacklist = [
+  '80.80.160.168', // repeats on a loop
+  '63.237.48.3', // not a live stream
+  '189.216.247.113', // not working streams
+]
+
 let cache = {}
 
 class Playlist {
@@ -36,7 +44,6 @@ class Channel {
   }
 
   _getGroup(groupTitle) {
-    const supportedGroups = [ 'Auto','Business', 'CCTV', 'Classic','Comedy','Documentary','Education','Entertainment', 'Family','Fashion','Food', 'General', 'Health', 'History', 'Hobby', 'Kids', 'Legislative','Lifestyle','Local', 'Movies', 'Music', 'News', 'Quiz','Radio', 'Religious','Sci-Fi', 'Shop', 'Sport', 'Travel', 'Weather', 'XXX' ]
     const groupIndex = supportedGroups.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
 
     if(groupIndex === -1) {
@@ -197,6 +204,12 @@ function getUrlPath(u) {
   return parsed.host + parsed.pathname + searchQuery
 }
 
+function validateUrl(channelUrl) {
+  const url = new URL(channelUrl)
+  const host = url.hostname
+
+  return blacklist.indexOf(host) === -1
+}
 
 module.exports = {
   parsePlaylist,
@@ -209,5 +222,6 @@ module.exports = {
   getBasename,
   addToCache,
   checkCache,
-  clearCache
+  clearCache,
+  validateUrl
 }
