@@ -2,7 +2,7 @@ const util = require('../helpers/util')
 const axios = require('axios')
 const https = require('https')
 
-const verbose = true
+const verbose = false
 const errorLog = 'error.log'
 const config = {
   timeout: 60000,
