@@ -113,7 +113,7 @@ Or select a playlist for a specific country from the list below.
 | Kuwait                 | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kw.m3u` |
 | Kyrgyzstan             | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kg.m3u` |
 | Laos                   | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/la.m3u` |
-| Latvia                 | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lv.m3u` |
+| Latvia                 | 17       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lv.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Lebanon                | 27       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lb.m3u` |
 | Libya                  | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ly.m3u` |
 | Liechtenstein          | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/li.m3u` |
