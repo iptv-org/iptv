@@ -1,5 +1,6 @@
 const util = require('../helpers/util')
 const axios = require('axios')
+const https = require('https')
 
 const errorLog = 'error.log'
 const config = {
@@ -13,7 +14,12 @@ let stats = {
   failures: 0
 }
 
-const http = axios.create({ timeout: config.timeout })
+const http = axios.create({ 
+  timeout: config.timeout,
+  httpsAgent: new https.Agent({  
+    rejectUnauthorized: false
+  })
+})
 http.defaults.headers.common["User-Agent"] = "VLC/2.2.4 LibVLC/2.2.4"
 
 async function test() {
@@ -36,6 +42,8 @@ async function test() {
 
     for(let item of playlist.items) {
 
+      if(item.url.indexOf('rtmp://') > -1) continue
+
       await new Promise(resolve => {
         setTimeout(resolve, config.delay)
       })
@@ -50,9 +58,13 @@ async function test() {
 
       } catch (err) {
 
-        stats.failures++
+        if(!err.response) {
 
-        writeToLog(country.url, err.message, item.url)
+          stats.failures++
+
+          writeToLog(country.url, err.message, item.url)
+
+        }
 
       }
 
