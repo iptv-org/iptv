@@ -1,6 +1,5 @@
 const util = require('../helpers/util')
 const axios = require('axios')
-const path = require('path')
 
 const errorLog = 'error.log'
 const config = {
