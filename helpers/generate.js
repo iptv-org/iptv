@@ -4,8 +4,7 @@ const debug = false
 const types = ['full', 'country', 'content', 'sport']
 let stats = {
   countries: 0,
-  channels: 0,
-  duplicates: 0
+  channels: 0
 }
 
 function main() {
@@ -49,34 +48,25 @@ function main() {
         title: item.inf.title
       })
 
-      if(util.checkCache(channel.url)) {
-        
-        stats.duplicates++
-      
-      } else {
+      let category = channel.group
 
-        let category = channel.group
+      for(const type of types) {
+        if(type === 'full') {
+          channel.group = [ c.name, channel.group ].filter(i => i).join(';')
+        } else if(type === 'country') {
+          channel.group = c.name
+        } else {
+          channel.group = category
+        }
 
-        for(const type of types) {
-          if(type === 'full') {
-            channel.group = [ c.name, channel.group ].filter(i => i).join(';')
-          } else if(type === 'country') {
-            channel.group = c.name
-          } else {
-            channel.group = category
-          }
-
-          const filename = `index.${type}.m3u`
-          if(type === 'sport') {
-            if(channel.group === 'Sport') {
-              util.appendToFile(filename, channel.toString())
-            }
-          } else {
+        const filename = `index.${type}.m3u`
+        if(type === 'sport') {
+          if(channel.group === 'Sport') {
             util.appendToFile(filename, channel.toString())
           }
+        } else {
+          util.appendToFile(filename, channel.toString())
         }
-        
-        util.addToCache(channel.url)
       }
 
       stats.channels++
@@ -88,4 +78,4 @@ function main() {
 
 main()
 
-console.log(`Countries: ${stats.countries}. Channels: ${stats.channels}. Unique: ${stats.channels - stats.duplicates}. Duplicates: ${stats.duplicates}.`)
+console.log(`Countries: ${stats.countries}. Channels: ${stats.channels}.`)
