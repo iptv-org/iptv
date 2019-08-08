@@ -53,7 +53,7 @@ async function test() {
 
         stats.failures++
 
-        writeToLog('test', country.url, err.message, item.url)
+        writeToLog(country.url, err.message, item.url)
 
       }
 
@@ -76,9 +76,9 @@ console.log('Test is running...')
 
 test()
 
-function writeToLog(test, country, msg, url) {
+function writeToLog(country, msg, url) {
   var now = new Date()
-  var line = `${test}(): ${country}: ${msg} '${url}'`
+  var line = `${country}: ${msg} '${url}'`
   util.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
   console.log(`Error: ${msg} '${url}'`)
 }
