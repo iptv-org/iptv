@@ -1,7 +1,7 @@
 const fs = require("fs")
 const path = require('path')
 const M3U8FileParser = require('m3u8-file-parser')
-const https = require("https")
+const axios = require('axios')
 const zlib = require("zlib")
 const DOMParser = require('xmldom').DOMParser
 const urlParser = require('url')
@@ -132,9 +132,13 @@ async function loadEPG(url) {
 function getGzipped(url) {
   return new Promise((resolve, reject) => {
     var buffer = []
-    https.get(url, function(res) {
+    axios({
+      method: 'get',
+      url: url,
+      responseType:'stream'
+    }).then(res => {
       var gunzip = zlib.createGunzip()         
-      res.pipe(gunzip)
+      res.data.pipe(gunzip)
       gunzip.on('data', function(data) {
         buffer.push(data.toString())
       }).on("end", function() {
@@ -142,7 +146,7 @@ function getGzipped(url) {
       }).on("error", function(e) {
         reject(e)
       })
-    }).on('error', function(e) {
+    }).catch(e => {
       reject(e)
     })
   })
