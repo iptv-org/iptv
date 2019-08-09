@@ -6,8 +6,7 @@ let stats = {
   total: 0,
   updated: 0,
   duplicates: 0,
-  unvalid: 0, 
-  removed: 0
+  unvalid: 0
 }
 let buffer = {}
 
@@ -48,10 +47,8 @@ async function main() {
 
       if(util.checkCache(channel.url)) {
         stats.duplicates++
-        stats.removed++
       } else if(!util.validateUrl(channel.url)) {
         stats.unvalid++
-        stats.removed++
       } else {
         channels.push(channel)
         util.addToCache(channel.url)
@@ -111,7 +108,7 @@ async function main() {
     stats.total += channels.length
   }
 
-  console.log(`Total: ${stats.total}. Duplicates: ${stats.duplicates}. Unvalid: ${stats.unvalid}. Updated: ${stats.updated}. Removed: ${stats.removed}.`)
+  console.log(`Total: ${stats.total}. Duplicates: ${stats.duplicates}. Unvalid: ${stats.unvalid}. Updated: ${stats.updated}.`)
 }
 
 main()
