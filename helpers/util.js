@@ -44,6 +44,8 @@ class Channel {
   }
 
   _getGroup(groupTitle) {
+    if(!groupTitle) return ''
+      
     const groupIndex = supportedGroups.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
 
     if(groupIndex === -1) {
