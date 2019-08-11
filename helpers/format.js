@@ -1,6 +1,7 @@
 const util = require('./util')
 
 const debug = false
+const parseEpg = process.env.npm_config_epg || false
 
 let stats = {
   total: 0,
@@ -56,7 +57,7 @@ async function main() {
     }
 
     const epgUrl = playlist.attrs['x-tvg-url']
-    if(epgUrl && !buffer[epgUrl]) {
+    if(epgUrl && !buffer[epgUrl] && parseEpg) {
       console.log(`Loading '${epgUrl}'...`)
       const epg = await util.loadEPG(epgUrl)
       console.log(`Adding '${epgUrl}' to buffer...`)
