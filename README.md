@@ -14,9 +14,10 @@ Below you can find a manually selected list of such applications for different p
 
 - [VLC for Windows](https://www.videolan.org/vlc/download-windows.html) is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
 
-### Mac
+### macOS
 
 - [VLC for Mac OS X](https://www.videolan.org/vlc/download-macosx.html) is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
+- [IINA](https://iina.io/), the modern media player for macOS.
 
 ### iOS
 
@@ -98,11 +99,11 @@ Or select a playlist for a specific country from the list below.
 | Iceland                | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/is.m3u` |
 | India                  | 267      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/in.m3u` |
 | Indonesia              | 221      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/id.m3u` |
-| Iran                   | 17       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ir.m3u` |
+| Iran                   | 27       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ir.m3u` | `http://195.154.221.171/epg/guideiran.xml.gz`
 | Iraq                   | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/iq.m3u` |
 | Ireland                | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ie.m3u` |
 | Israel                 | 22       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/il.m3u` |
-| Italia                 | 270      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/it.m3u` |
+| Italy                  | 241      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/it.m3u` | `http://195.154.221.171/epg/guideitaly.xml.gz`
 | Ivory Coast            | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ci.m3u` |
 | Jamaica                | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/jm.m3u` |
 | Japan                  | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/jp.m3u` |
