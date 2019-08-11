@@ -17,6 +17,7 @@ Below you can find a manually selected list of such applications for different p
 ### Mac
 
 - [VLC for Mac OS X](https://www.videolan.org/vlc/download-macosx.html) is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
+- [IINA](https://iina.io/), the modern media player for macOS.
 
 ### iOS
 
