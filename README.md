@@ -87,7 +87,7 @@ Or select a playlist for a specific country from the list below.
 | Georgia                | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ge.m3u` |
 | Germany                | 136      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/de.m3u` | `http://195.154.221.171/epg/guidegermany.xml.gz`
 | Ghana                  | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gh.m3u` |
-| Greece                 | 32       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gr.m3u` |
+| Greece                 | 71       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gr.m3u` | `http://195.154.221.171/epg/guidegreece.xml.gz`
 | Guatemala              | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gt.m3u` |
 | Guinea                 | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gn.m3u` |
 | Guyana                 | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gy.m3u` |
