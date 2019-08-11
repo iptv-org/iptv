@@ -70,7 +70,7 @@ Or select a playlist for a specific country from the list below.
 | Croatia                | 35       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hr.m3u` |
 | Cuba                   | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cu.m3u` |
 | Curaçao                | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cw.m3u` |
-| Cyprus                 | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cy.m3u` |
+| Cyprus                 | 6        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cy.m3u` | `http://195.154.221.171/epg/guidegreece.xml.gz`
 | Czech Republic         | 36       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cz.m3u` |
 | Democratic Republic of the Congo | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cd.m3u` |
 | Denmark                | 14       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/dk.m3u` | `http://195.154.221.171/epg/guidedenmark.xml.gz`
