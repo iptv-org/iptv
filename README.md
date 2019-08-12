@@ -134,7 +134,7 @@ Or select a playlist for a specific country from the list below.
 | Mozambique             | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mz.m3u` |
 | Myanmar                | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mm.m3u` |
 | Nepal                  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/np.m3u` |
-| Netherlands            | 24       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/nl.m3u` |
+| Netherlands            | 24       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/nl.m3u` | `http://195.154.221.171/epg/guidenetherlands.xml.gz`
 | New Zealand            | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/nz.m3u` |
 | Nicaragua              | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ni.m3u` |
 | Nigeria                | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ng.m3u` |
@@ -147,8 +147,8 @@ Or select a playlist for a specific country from the list below.
 | Paraguay               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/py.m3u` |
 | Peru                   | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pe.m3u` |
 | Philippines            | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ph.m3u` |
-| Poland                 | 18       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pl.m3u` |
-| Portugal               | 68       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pt.m3u` |
+| Poland                 | 14       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pl.m3u` | `http://195.154.221.171/epg/guidepoland.xml.gz`
+| Portugal               | 33       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pt.m3u` | `http://195.154.221.171/epg/guideportugal.xml.gz`
 | Puerto Rico            | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/pr.m3u` |
 | Qatar                  | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/qa.m3u` |
 | Republic of the Congo  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cg.m3u` |
