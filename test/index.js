@@ -33,8 +33,8 @@ async function test() {
 
   for(let country of countries) {
 
-    if (skipPlaylist(country.url)) {
-	    continue;
+    if (util.skipPlaylist(country.url)) {
+	    continue
     }
 
     console.log(`Checking '${country.url}'...`)
@@ -93,12 +93,4 @@ function writeToLog(country, msg, url) {
   var line = `${country}: ${msg} '${url}'`
   util.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
   console.log(`Error: ${msg} '${url}'`)
-}
-
-function skipPlaylist(filename) {
-  let test_country = process.env.npm_config_country
-  if (test_country && filename !== 'channels/' + test_country + '.m3u') {
-    return true;
-  }
-  return false;
 }
