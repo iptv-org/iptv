@@ -23,6 +23,10 @@ async function main() {
   }
 
   for(let country of countries) {
+
+    if (util.skipPlaylist(country.url)) {
+      continue
+    }
     
     if(debug) {
       console.log(`Clear cache...`)
