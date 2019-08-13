@@ -50,7 +50,7 @@ Or select a playlist for a specific country from the list below.
 | Aruba                  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/aw.m3u` |
 | Australia              | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/au.m3u` |
 | Austria                | 15       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/at.m3u` |
-| Azerbaijan             | 21       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/az.m3u` |
+| Azerbaijan             | 22       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/az.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Bahamas                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bs.m3u` |
 | Bahrain                | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bh.m3u` |
 | Bangladesh             | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bd.m3u` |
@@ -187,7 +187,7 @@ Or select a playlist for a specific country from the list below.
 | United Kingdom         | 40       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uk.m3u` | `http://195.154.221.171/epg/guideuk.xml.gz`
 | United States          | 688      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/us.m3u` |
 | Uruguay                | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uy.m3u` |
-| Uzbekistan             | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uz.m3u` |
+| Uzbekistan             | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uz.m3u` |
 | Venezuela              | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ve.m3u` |
 | Vietnam                | 132      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/vn.m3u` |
 | Virgin Islands of the United States | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/vi.m3u` |
