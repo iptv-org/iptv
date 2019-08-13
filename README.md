@@ -182,7 +182,7 @@ Or select a playlist for a specific country from the list below.
 | Uganda                 | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ug.m3u` |
 | Ukraine                | 190      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ua.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | United Arab Emirates   | 101      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ae.m3u` |
-| United Kingdom         | 115      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uk.m3u` |
+| United Kingdom         | 40       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uk.m3u` | `http://195.154.221.171/epg/guideuk.xml.gz`
 | United States          | 688      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/us.m3u` |
 | Uruguay                | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uy.m3u` |
 | Uzbekistan             | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uz.m3u` |
