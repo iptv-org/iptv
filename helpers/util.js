@@ -139,9 +139,16 @@ function getGzipped(url) {
       url: url,
       responseType:'stream'
     }).then(res => {
-      var gunzip = zlib.createGunzip()         
-      res.data.pipe(gunzip)
-      gunzip.on('data', function(data) {
+      let stream
+      if(res.headers['content-type'] === 'application/xml') {
+        stream = res.data
+      } else {
+        let gunzip = zlib.createGunzip()         
+        res.data.pipe(gunzip)
+        stream = gunzip
+      }
+
+      stream.on('data', function(data) {
         buffer.push(data.toString())
       }).on("end", function() {
         resolve(buffer.join(""))
