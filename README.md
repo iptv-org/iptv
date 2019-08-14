@@ -52,7 +52,7 @@ Or select a playlist for a specific country from the list below.
 | Austria                | 15       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/at.m3u` |
 | Azerbaijan             | 22       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/az.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Bahamas                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bs.m3u` |
-| Bahrain                | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bh.m3u` | `x-tvg-url="http://195.154.221.171/epg/guidearab.xml.gz"`
+| Bahrain                | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bh.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
 | Bangladesh             | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bd.m3u` |
 | Barbados               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bb.m3u` |
 | Belarus                | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/by.m3u` | `https://iptvx.one/epg/epg.xml.gz`
