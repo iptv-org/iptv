@@ -48,8 +48,8 @@ Or select a playlist for a specific country from the list below.
 | Argentina              | 84       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ar.m3u` |
 | Armenia                | 48       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/am.m3u` |
 | Aruba                  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/aw.m3u` |
-| Australia              | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/au.m3u` | `http://i.mjh.nz/nzau/epg.xml.gz`
-| Austria                | 15       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/at.m3u` |
+| Australia              | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/au.m3u` | `http://i.mjh.nz/nzau/epg.xml.gz`
+| Austria                | 37       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/at.m3u` |
 | Azerbaijan             | 22       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/az.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Bahamas                | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bs.m3u` |
 | Bahrain                | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bh.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
@@ -59,12 +59,12 @@ Or select a playlist for a specific country from the list below.
 | Belgium                | 34       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/be.m3u` | `http://195.154.221.171/epg/guidebelgium.xml.gz`
 | Bolivia                | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bo.m3u` |
 | Bosnia and Herzegovina | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ba.m3u` |
-| Brazil                 | 74       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/br.m3u` | `http://infinitytv.xyz/guide.xml`
+| Brazil                 | 79       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/br.m3u` | `http://infinitytv.xyz/guide.xml`
 | Bulgaria               | 26       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bg.m3u` | `http://195.154.221.171/epg/guidebulgaria.xml.gz`
 | Cambodia               | 17       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kh.m3u` |
 | Cameroon               | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cm.m3u` |
 | Canada                 | 37       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ca.m3u` |
-| Chile                  | 55       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cl.m3u` |
+| Chile                  | 49       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cl.m3u` |
 | China                  | 1127     | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cn.m3u` |
 | Colombia               | 18       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/co.m3u` |
 | Costa Rica             | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cr.m3u` |
@@ -99,7 +99,7 @@ Or select a playlist for a specific country from the list below.
 | Iceland                | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/is.m3u` |
 | India                  | 267      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/in.m3u` |
 | Indonesia              | 221      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/id.m3u` |
-| International          | 185      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/int.m3u`|
+| International          | 234      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/int.m3u`|
 | Iran                   | 27       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ir.m3u` | `http://195.154.221.171/epg/guideiran.xml.gz`
 | Iraq                   | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/iq.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
 | Ireland                | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ie.m3u` |
@@ -136,7 +136,7 @@ Or select a playlist for a specific country from the list below.
 | Myanmar                | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/mm.m3u` |
 | Nepal                  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/np.m3u` |
 | Netherlands            | 24       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/nl.m3u` | `http://195.154.221.171/epg/guidenetherlands.xml.gz`
-| New Zealand            | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/nz.m3u` | `http://i.mjh.nz/nzau/epg.xml.gz`
+| New Zealand            | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/nz.m3u` | `http://i.mjh.nz/nzau/epg.xml.gz`
 | Nicaragua              | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ni.m3u` |
 | Nigeria                | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ng.m3u` |
 | North Korea            | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kp.m3u` |
@@ -154,7 +154,7 @@ Or select a playlist for a specific country from the list below.
 | Qatar                  | 9        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/qa.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
 | Republic of the Congo  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cg.m3u` |
 | Romania                | 64       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ro.m3u` | `http://195.154.221.171/epg/guideromania.xml.gz`
-| Russia                 | 348      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ru.m3u` | `https://iptvx.one/epg/epg.xml.gz`
+| Russia                 | 338      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ru.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | Rwanda                 | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/rw.m3u` |
 | Saint Kitts and Nevis  | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kn.m3u` |
 | San Marino             | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sm.m3u` |
