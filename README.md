@@ -85,6 +85,7 @@ Or select a playlist for a specific country from the list below.
 | Finland                | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fi.m3u` | `http://195.154.221.171/epg/guidefinland.xml.gz`
 | Fiji                   | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fj.m3u` |
 | France                 | 86       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/fr.m3u` | `http://195.154.221.171/epg/guidefrance.xml.gz`
+| Gambia                 | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gm.m3u` |
 | Georgia                | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ge.m3u` |
 | Germany                | 136      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/de.m3u` | `http://195.154.221.171/epg/guidegermany.xml.gz`
 | Ghana                  | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gh.m3u` |
