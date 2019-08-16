@@ -132,6 +132,8 @@ async function loadEPG(url) {
 }
 
 function getGzipped(url) {
+  const supportedTypes = ['application/x-gzip', 'application/octet-stream']
+
   return new Promise((resolve, reject) => {
     var buffer = []
     axios({
@@ -140,12 +142,12 @@ function getGzipped(url) {
       responseType:'stream'
     }).then(res => {
       let stream
-      if(res.headers['content-type'] === 'application/xml') {
-        stream = res.data
-      } else {
+      if(supportedTypes.indexOf(res.headers['content-type']) > -1) {
         let gunzip = zlib.createGunzip()         
         res.data.pipe(gunzip)
         stream = gunzip
+      } else {
+        stream = res.data        
       }
 
       stream.on('data', function(data) {
