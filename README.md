@@ -63,7 +63,7 @@ Or select a playlist for a specific country from the list below.
 | Bulgaria               | 26       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bg.m3u` | `http://195.154.221.171/epg/guidebulgaria.xml.gz`
 | Cambodia               | 17       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kh.m3u` |
 | Cameroon               | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cm.m3u` |
-| Canada                 | 37       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ca.m3u` |
+| Canada                 | 40       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ca.m3u` | `http://epg.streamstv.me/epg/guide-canada.xml.gz`
 | Chile                  | 49       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cl.m3u` |
 | China                  | 1127     | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cn.m3u` |
 | Colombia               | 18       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/co.m3u` |
@@ -98,7 +98,7 @@ Or select a playlist for a specific country from the list below.
 | Hong Kong              | 51       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hk.m3u` |
 | Hungary                | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hu.m3u` |
 | Iceland                | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/is.m3u` |
-| India                  | 267      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/in.m3u` |
+| India                  | 160      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/in.m3u` | `http://epg.streamstv.me/epg/guide-india.xml.gz`
 | Indonesia              | 221      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/id.m3u` |
 | International          | 234      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/int.m3u`|
 | Iran                   | 27       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ir.m3u` | `http://195.154.221.171/epg/guideiran.xml.gz`
