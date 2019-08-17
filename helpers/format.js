@@ -1,6 +1,7 @@
 const util = require('./util')
 
 const debug = false
+const verbose = false
 const parseEpg = process.env.npm_config_epg || false
 
 let stats = {
@@ -28,7 +29,7 @@ async function main() {
       continue
     }
     
-    if(debug) {
+    if(verbose) {
       console.log(`Clear cache...`)
     }
     util.clearCache()
@@ -36,7 +37,7 @@ async function main() {
     console.log(`Parsing '${country.url}'...`)
     const playlist = util.parsePlaylist(country.url)
 
-    if(debug) {
+    if(verbose) {
       console.log(`Creating channels list...`)
     }
     let channels = []
@@ -80,16 +81,17 @@ async function main() {
         if(!channel.name && c.names[0]) {
           channel.name = c.names[0]
           updated = true
-          if(debug) {
+          if(verbose) {
             console.log(`Added name '${c.names[0]}' to '${channel.id}'`)
           }
         }
 
         if(!channel.logo && c.icon) {
-          channel.logo = c.icon
+          const icon = c.icon.split('|')[0]
+          channel.logo = icon
           updated = true
-          if(debug) {
-            console.log(`Added logo '${c.icon}' to '${channel.id}'`)
+          if(verbose) {
+            console.log(`Added logo '${icon}' to '${channel.id}'`)
           }
         }
 
@@ -99,7 +101,7 @@ async function main() {
       }
     }
     
-    if(debug) {
+    if(verbose) {
       console.log(`Sorting channels...`)
     }
     channels = util.sortByTitle(channels)
