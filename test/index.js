@@ -5,7 +5,7 @@ const https = require('https')
 const verbose = process.env.npm_config_debug || false
 const errorLog = 'error.log'
 const config = {
-  timeout: 60000,
+  timeout: 5000,
   delay: 200
 }
 
@@ -21,7 +21,6 @@ const instance = axios.create({
     rejectUnauthorized: false
   })
 })
-instance.defaults.headers.common["User-Agent"] = "VLC/2.2.4 LibVLC/2.2.4"
 
 async function test() {
 
@@ -43,8 +42,6 @@ async function test() {
 
     for(let item of playlist.items) {
 
-      if(item.url.indexOf('rtmp://') > -1) continue
-
       await new Promise(resolve => {
         setTimeout(resolve, config.delay)
       })
@@ -63,9 +60,11 @@ async function test() {
 
       } catch (err) {
 
-        stats.failures++
+        if(err.response || (err.request && ['ENOTFOUND'].indexOf(err.code) > -1)) {
+          stats.failures++
 
-        writeToLog(country.url, err.message, item.url)
+          writeToLog(country.url, err.message, item.url)
+        }
 
       }
 
