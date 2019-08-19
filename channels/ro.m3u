@@ -1,6 +1,8 @@
 #EXTM3U x-tvg-url="http://195.154.221.171/epg/guideromania.xml.gz"
 #EXTINF:-1 tvg-id="" tvg-name="Music Channel" tvg-logo="https://iptv.live/images/logo/channel/smalls/025fef3f53d612aee7f64a663fcdda9b.png" group-title="Music",1 Music Channel
 https://edge126.rcs-rds.ro/utvedge/musicchannelhq.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="6 TV" tvg-logo="https://new.6tv.ro/wp-content/uploads/2017/08/6tv_logo.png" group-title="",6 TV
+https://stream.chrominance.ro/enescu/encoder1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",Actualitatea TV (Opt-1)
 http://webmobile.xdev.ro:81/tv4/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="",Actualitatea TV (Opt-2)
@@ -11,8 +13,16 @@ http://webmobile.xdev.ro:81/tv9/playlist.m3u8?fluxustv.m3u8
 http://webmobile.xdev.ro:81/tv9/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://i.imgur.com/dmdcwC6.png" group-title="",Alfa Media TV
 http://webmobile.xdev.ro:81/tv27/playlist.m3u8?fluxustv.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://img00.deviantart.net/473b/i/2016/214/9/8/catali2016_s_logo_remake__alfa_omega_tv_2016_by_catali2016-dace34w.png" group-title="",Alfa Omega TV
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="" group-title="Religious",Alfa Omega TV (Opt-1)
+http://s5.alfaomega.tv:1935/alfaomega/smil:alfaomegatv/chunklist_w369018163_b780800.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-logo="https://img00.deviantart.net/473b/i/2016/214/9/8/catali2016_s_logo_remake__alfa_omega_tv_2016_by_catali2016-dace34w.png" group-title="Religious",Alfa Omega TV (Opt-2)
 http://s5.alfaomega.tv:1935/alfaomega/alfaomega1.sdp/playlist.m3u8?wowzasessionid=1441530266&time=1463063123262
+#EXTINF:-1 tvg-id="" tvg-name="Alpha Media TV" tvg-logo="http://stvron.com/canale/512/tv-alpha-media.png" group-title="",Alpha Media TV
+http://webmobile.xdev.ro:81/tv27/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Antena Comedy" tvg-logo="https://assets.antenaplay.ro/2019/02/08/fsBW8DJnT3KdTKAcTVxS.png" group-title="",Antena Comedy
+http://stream1.antenaplay.ro/live/smil:ComedyPlay.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="Antena Monden" tvg-logo="https://assets.antenaplay.ro/2019/02/08/ASCEI8MhBY2ItX0av7KS.png" group-title="",Antena Monden
+http://stream1.antenaplay.ro/live/smil:AntenaMonden.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="B1 RO" tvg-name="B1 RO" tvg-logo="https://www.b1.ro/static/images/b1.jpg" group-title="",B1 (Opt-1)
 http://stream.adunity.com/b1/b1_640-.m3u8
 #EXTINF:-1 tvg-id="B1 RO" tvg-name="B1 RO" tvg-logo="https://2.bp.blogspot.com/-diL-ndtqU2A/WFTv1oXXObI/AAAAAAAANW4/HA5iscL25ycSaAvOWzGK1vnCP5KpXCBTACLcB/s1600/B1tvrom.jpg" group-title="",B1 (Opt-2)
