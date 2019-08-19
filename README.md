@@ -1,6 +1,6 @@
 # IPTV
 
-Collection of 5000+ publicly available IPTV channels from all over the world.
+Collection of 6000+ publicly available IPTV channels from all over the world.
 
 ## Usage
 
