@@ -8,19 +8,38 @@ let stats = {
   total: 0,
   updated: 0,
   duplicates: 0,
-  unvalid: 0
+  unvalid: 0,
+  removed: 0
 }
 let buffer = {}
+let unsorted = {}
 
 async function main() {
 
   console.log(`Parsing 'index.m3u'...`)
   const playlist = util.parsePlaylist('index.m3u')
   let countries = playlist.items
+  const unsortedIndex = countries.map(c => c.url).indexOf('channels/unsorted.m3u')
+  if(unsortedIndex > -1) {
+    countries.splice(unsortedIndex, 1)
+  }
+
   if(debug) {
     console.log('Debug mode is turn on')
-    countries = countries.slice(0, 1)
+    // countries = countries.slice(0, 1)
     // countries = [{ url: 'channels/ru.m3u' }, { url: 'channels/ua.m3u' }]
+  }
+
+  const unsortedPlaylist = util.parsePlaylist('channels/unsorted.m3u')
+  for(const item of unsortedPlaylist.items) {
+    unsorted[item.url] = util.createChannel({
+      id: item.inf['tvg-id'],
+      name: item.inf['tvg-name'],
+      logo: item.inf['tvg-logo'],
+      group: item.inf['group-title'],
+      url: item.url,
+      title: item.inf.title
+    })
   }
 
   for(let country of countries) {
@@ -58,6 +77,14 @@ async function main() {
       } else {
         channels.push(channel)
         util.addToCache(channel.url)
+      }
+
+      if(unsorted[channel.url]) {
+        if(verbose) {
+          console.log(`Removed '${channel.url}' from 'channels/unsorted.m3u'...`)
+        }
+        delete unsorted[channel.url]
+        stats.removed++
       }
     }
 
@@ -106,13 +133,23 @@ async function main() {
     }
     channels = util.sortByTitle(channels)
 
-    console.log(`Updating '${country.url}'...`)
-    util.createFile(country.url, playlist.getHeader())
-    channels.forEach(channel => {
-      util.appendToFile(country.url, channel.toString())
-    })
+    if(!debug) {
+      console.log(`Updating '${country.url}'...`)
+      util.createFile(country.url, playlist.getHeader())
+      channels.forEach(channel => {
+        util.appendToFile(country.url, channel.toString())
+      })
+    }
 
     stats.total += channels.length
+  }
+
+  if(!debug & stats.removed > 0) {
+    console.log(`Updating 'channels/unsorted.m3u'...`)
+    util.createFile('channels/unsorted.m3u', playlist.getHeader())
+    Object.values(unsorted).forEach(channel => {
+      util.appendToFile('channels/unsorted.m3u', channel.toString())
+    })
   }
 
   console.log(`Total: ${stats.total}. Duplicates: ${stats.duplicates}. Unvalid: ${stats.unvalid}. Updated: ${stats.updated}.`)
