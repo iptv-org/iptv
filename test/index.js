@@ -19,7 +19,10 @@ const instance = axios.create({
   timeout: config.timeout,
   httpsAgent: new https.Agent({  
     rejectUnauthorized: false
-  })
+  }),
+  validateStatus: function (status) {
+    return status >= 200 && status < 404
+  }
 })
 
 async function test() {
