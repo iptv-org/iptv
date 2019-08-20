@@ -178,7 +178,7 @@ Or select a playlist for a specific country from the list below.
 | Tajikistan             | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tj.m3u` |
 | Tanzania               | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tz.m3u` |
 | Thailand               | 62       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/th.m3u` |
-| Trinidad and Tobago    | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tt.m3u` |
+| Trinidad and Tobago    | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tt.m3u` |
 | Tunisia                | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tn.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
 | Turkey                 | 86       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tr.m3u` | `http://195.154.221.171/epg/guideturkey.xml.gz`
 | Turkmenistan           | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tm.m3u` |
