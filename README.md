@@ -60,6 +60,7 @@ Or select a playlist for a specific country from the list below.
 | Bolivia                | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bo.m3u` |
 | Bosnia and Herzegovina | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ba.m3u` | `http://epg.streamstv.me/epg/guide-exyu.xml.gz`
 | Brazil                 | 69       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/br.m3u` | `http://infinitytv.xyz/guide.xml`
+| Brunei                 | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bn.m3u` |
 | Bulgaria               | 25       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/bg.m3u` | `http://195.154.221.171/epg/guidebulgaria.xml.gz`
 | Cambodia               | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kh.m3u` |
 | Cameroon               | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cm.m3u` |
