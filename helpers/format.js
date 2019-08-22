@@ -85,6 +85,7 @@ async function main() {
         }
         delete unsorted[channel.url]
         stats.removed++
+        stats.duplicates++
       }
     }
 
