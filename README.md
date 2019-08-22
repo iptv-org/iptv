@@ -140,6 +140,7 @@ Or select a playlist for a specific country from the list below.
 | Netherlands            | 29       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/nl.m3u` | `http://195.154.221.171/epg/guidenetherlands.xml.gz`
 | New Zealand            | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/nz.m3u` | `http://i.mjh.nz/nzau/epg.xml.gz`
 | Nicaragua              | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ni.m3u` |
+| Niger                  | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ne.m3u` |
 | Nigeria                | 13       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ng.m3u` |
 | North Korea            | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kp.m3u` |
 | Norway                 | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/no.m3u` | `http://epg.streamstv.me/epg/guide-norway.xml.gz`
