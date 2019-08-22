@@ -64,6 +64,7 @@ Or select a playlist for a specific country from the list below.
 | Cambodia               | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kh.m3u` |
 | Cameroon               | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cm.m3u` |
 | Canada                 | 40       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ca.m3u` | `http://epg.streamstv.me/epg/guide-canada.xml.gz`
+| Cape Verde             | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cv.m3u` |
 | Chile                  | 47       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cl.m3u` |
 | China                  | 1059     | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cn.m3u` |
 | Colombia               | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/co.m3u` |
