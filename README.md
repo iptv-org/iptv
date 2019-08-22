@@ -162,6 +162,7 @@ Or select a playlist for a specific country from the list below.
 | Saint Kitts and Nevis  | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kn.m3u` |
 | San Marino             | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sm.m3u` |
 | Saudi Arabia           | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sa.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
+| Senegal                | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sn.m3u` |
 | Serbia                 | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/rs.m3u` | `http://epg.streamstv.me/epg/guide-exyu.xml.gz`
 | Sierra Leone           | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sl.m3u` |
 | Singapore              | 10       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sg.m3u` |
