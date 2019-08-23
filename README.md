@@ -99,7 +99,6 @@ Or select a playlist for a specific country from the list below.
 | Guadeloupe             | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gp.m3u` |
 | Guam                   | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gu.m3u` |
 | Guatemala              | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gt.m3u` |
-| Guinea                 | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gn.m3u` |
 | Guyana                 | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/gy.m3u` |
 | Haiti                  | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ht.m3u` |
 | Honduras               | 15       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hn.m3u` |
