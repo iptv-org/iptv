@@ -184,7 +184,7 @@ Or select a playlist for a specific country from the list below.
 | Sudan                  | 6        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sd.m3u` |
 | Suriname               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sr.m3u` |
 | Sweden                 | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/se.m3u` | `http://195.154.221.171/epg/guidesweden.xml.gz`
-| Switzerland            | 29       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ch.m3u` | `http://195.154.221.171/epg/guideswitzerland.xml.gz`
+| Switzerland            | 30       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ch.m3u` | `http://195.154.221.171/epg/guideswitzerland.xml.gz`
 | Syria                  | 16       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sy.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
 | Taiwan                 | 38       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tw.m3u` |
 | Tajikistan             | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/tj.m3u` |
