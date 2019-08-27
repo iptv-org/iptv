@@ -35,4 +35,4 @@ jobs:
       run: git remote set-url origin https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
     
     - name: "git push origin master"
-      run: git push origin master
+      run: git push origin master --force
