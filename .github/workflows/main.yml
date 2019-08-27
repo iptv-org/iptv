@@ -1,0 +1,15 @@
+name: Generate grouped playlists
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: "npm run generate"
+      run: npm run generate
