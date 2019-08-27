@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'channels/*'
 
 jobs:
   generate:
@@ -30,4 +32,4 @@ jobs:
       run: git commit -m "Generated grouped playlists"
 
     - name: "git push origin master"
-      run: git push origin master
+      run: git push git@github.com:${GITHUB_REPOSITORY}.git master
