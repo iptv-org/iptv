@@ -29,10 +29,5 @@ jobs:
     - name: "git commit -m"
       run: git commit -m "Generated grouped playlists"
 
-    - name: Create Pull Request
-      uses: peter-evans/create-pull-request@v1.1.1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
-        PULL_REQUEST_TITLE: Generated grouped playlists
-        PULL_REQUEST_BODY: This is an auto-generated PR
+    - name: "git push origin master"
+      run: git push origin master
