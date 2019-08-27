@@ -30,6 +30,9 @@ jobs:
       
     - name: "git commit -m"
       run: git commit -m "Generated grouped playlists"
-
+    
+    - name: "git remote set-url origin"
+      run: git remote set-url origin https://${GITHUB_ACTOR}:${secrets.GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+    
     - name: "git push origin master"
-      run: git push git@github.com:${GITHUB_REPOSITORY}.git master
+      run: git push origin master
