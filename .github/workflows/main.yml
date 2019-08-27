@@ -19,8 +19,14 @@ jobs:
     - name: "npm run generate"
       run: npm run generate
       
-    - name: "git add ."
+    - name: "git add"
       run: git add .
       
-    - name: "git commit -m 'Generated grouped playlists'"
+    - name: "git config user.name"
+      run: git config user.name freearhey
+      
+    - name: "git config user.email"
+      run: git config user.email free.arhey@gmail.com
+      
+    - name: "git commit -m"
       run: git commit -m "Generated grouped playlists"
