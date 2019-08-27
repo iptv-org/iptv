@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
+    
+    - name: "npm install"
+      run: npm install
 
     - name: "npm run generate"
       run: npm run generate
