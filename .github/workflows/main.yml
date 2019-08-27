@@ -18,7 +18,7 @@ jobs:
 
     - name: "npm run generate"
       run: npm run generate
-      
+    
     - name: "git add"
       run: git add .
       
@@ -34,5 +34,11 @@ jobs:
     - name: "git remote set-url origin"
       run: git remote set-url origin https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
     
+    - name: "git remote -v"
+      run: git remote -v
+      
+    - name: "git checkout"
+      run: git checkout
+    
     - name: "git push origin master"
-      run: git push origin master --force
+      run: git push origin dev
