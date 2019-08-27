@@ -12,7 +12,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    
+      
+    - name: "git checkout master"
+      run: git checkout master
+      
     - name: "npm install"
       run: npm install
 
