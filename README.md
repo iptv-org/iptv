@@ -23,6 +23,10 @@ Below you can find a manually selected list of such applications for different p
 
 - [Stream - Watch IPTV & Movies](https://itunes.apple.com/us/app/movie-stream-ip-tv-films/id1450912244?mt=8)
 
+### Android
+
+- [NET IP TV](https://play.google.com/store/apps/details?id=com.dnamedya.netiptv)
+
 ### PlayStation 4
 
 - [Plex](https://www.plex.tv/apps-devices/#modal-devices-playstation-4) media server allows you to aggregate all your personal media and access it anywhere you go. In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](https://github.com/Cigaras/IPTV.bundle) plugin.
