@@ -5,7 +5,7 @@ const https = require('https')
 const verbose = process.env.npm_config_debug || false
 const errorLog = 'error.log'
 const config = {
-  timeout: 5000,
+  timeout: 1000,
   delay: 200
 }
 
