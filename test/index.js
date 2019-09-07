@@ -82,6 +82,8 @@ async function test() {
 
     console.log(`FAILURES! (${stats.tests} tests, ${stats.channels} channels, ${stats.failures} failures)`)
 
+    process.exit(1)
+
   }
 
 }
