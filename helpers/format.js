@@ -132,7 +132,7 @@ async function main() {
     if(verbose) {
       console.log(`Sorting channels...`)
     }
-    channels = util.sortByTitle(channels)
+    channels = util.sortByTitleAndUrl(channels)
 
     if(!debug) {
       console.log(`Updating '${country.url}'...`)
