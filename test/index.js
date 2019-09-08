@@ -41,7 +41,7 @@ async function test() {
 
   for(let country of countries) {
 
-    if (util.skipPlaylist(country.url)) {
+    if (skipPlaylist(country.url)) {
 	    continue
     }
 
@@ -113,4 +113,17 @@ function writeToLog(country, msg, url) {
   var line = `${country}: ${msg} '${url}'`
   util.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
   console.log(`Error: ${msg} '${url}'`)
+}
+
+function skipPlaylist(filename) {
+  let testCountry = process.env.npm_config_country
+  let excludeCountries = process.env.npm_config_exclude.split(',')
+  
+  if (testCountry && filename !== 'channels/' + testCountry + '.m3u') return true
+  
+  for(const countryCode of excludeCountries) {
+    if (filename === 'channels/' + countryCode + '.m3u') return true
+  }
+
+  return false
 }
