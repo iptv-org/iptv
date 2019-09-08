@@ -229,14 +229,6 @@ function validateUrl(channelUrl) {
   return blacklist.indexOf(host) === -1
 }
 
-function skipPlaylist(filename) {
-  let test_country = process.env.npm_config_country
-  if (test_country && filename !== 'channels/' + test_country + '.m3u') {
-    return true;
-  }
-  return false;
-}
-
 module.exports = {
   parsePlaylist,
   sortByTitleAndUrl,
@@ -249,6 +241,5 @@ module.exports = {
   addToCache,
   checkCache,
   clearCache,
-  validateUrl,
-  skipPlaylist
+  validateUrl
 }
