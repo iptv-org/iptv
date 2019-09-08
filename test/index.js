@@ -5,7 +5,7 @@ const https = require('https')
 const verbose = process.env.npm_config_debug || false
 const errorLog = 'error.log'
 const config = {
-  timeout: 1000,
+  timeout: 60000,
   delay: 200
 }
 
@@ -21,7 +21,7 @@ const instance = axios.create({
     rejectUnauthorized: false
   }),
   validateStatus: function (status) {
-    return status >= 200 && status < 404
+    return status >= 200 && status < 400
   },
   headers: {
     'Accept': '*/*',
@@ -81,13 +81,9 @@ async function test() {
 
       } catch (err) {
 
-        if(err.response || (err.request && ['ENOTFOUND'].indexOf(err.code) > -1)) {
-          
-          stats.failures++
+        stats.failures++
 
-          writeToLog(country.url, err.message, item.url)
-        
-        }
+        writeToLog(country.url, err.message, item.url)
 
       }
 
