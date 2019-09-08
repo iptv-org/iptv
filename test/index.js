@@ -5,7 +5,7 @@ const https = require('https')
 const verbose = process.env.npm_config_debug || false
 const errorLog = 'error.log'
 const config = {
-  timeout: 1000,
+  timeout: 60000,
   delay: 200
 }
 
@@ -21,7 +21,7 @@ const instance = axios.create({
     rejectUnauthorized: false
   }),
   validateStatus: function (status) {
-    return status >= 200 && status < 404
+    return status >= 200 && status < 400
   },
   headers: {
     'Accept': '*/*',
@@ -41,7 +41,7 @@ async function test() {
 
   for(let country of countries) {
 
-    if (util.skipPlaylist(country.url)) {
+    if (skipPlaylist(country.url)) {
 	    continue
     }
 
@@ -81,13 +81,9 @@ async function test() {
 
       } catch (err) {
 
-        if(err.response || (err.request && ['ENOTFOUND'].indexOf(err.code) > -1)) {
-          
-          stats.failures++
+        stats.failures++
 
-          writeToLog(country.url, err.message, item.url)
-        
-        }
+        writeToLog(country.url, err.message, item.url)
 
       }
 
@@ -117,4 +113,17 @@ function writeToLog(country, msg, url) {
   var line = `${country}: ${msg} '${url}'`
   util.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
   console.log(`Error: ${msg} '${url}'`)
+}
+
+function skipPlaylist(filename) {
+  let testCountry = process.env.npm_config_country
+  let excludeCountries = process.env.npm_config_exclude.split(',')
+  
+  if (testCountry && filename !== 'channels/' + testCountry + '.m3u') return true
+  
+  for(const countryCode of excludeCountries) {
+    if (filename === 'channels/' + countryCode + '.m3u') return true
+  }
+
+  return false
 }
