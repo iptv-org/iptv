@@ -22,6 +22,12 @@ const instance = axios.create({
   }),
   validateStatus: function (status) {
     return status >= 200 && status < 404
+  },
+  headers: {
+    'Accept': '*/*',
+    'Accept-Language': 'en_US',
+    'User-Agent': 'VLC/3.0.8 LibVLC/3.0.8',
+    'Range': 'bytes=0-'
   }
 })
 
@@ -57,16 +63,30 @@ async function test() {
           console.log(`Checking '${item.url}'...`)
         }
 
-        await instance.get(item.url)
+        let response = await instance.get(item.url)
+
+        let string = response.data.toString()
+
+        let head = string.slice(0,7)
+
+        if(head !== '#EXTM3U') {
+
+          stats.failures++
+
+          writeToLog(country.url, 'Wrong content type', item.url)
+
+        }
 
         continue
 
       } catch (err) {
 
         if(err.response || (err.request && ['ENOTFOUND'].indexOf(err.code) > -1)) {
+          
           stats.failures++
 
           writeToLog(country.url, err.message, item.url)
+        
         }
 
       }
