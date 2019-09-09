@@ -18,6 +18,9 @@ jobs:
       
     - name: "npm install"
       run: npm install
+      
+    - name: "npm run format"
+      run: npm run format
     
     - name: "npm run generate"
       run: npm run generate
