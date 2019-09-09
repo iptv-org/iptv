@@ -21,7 +21,8 @@ Below you can find a manually selected list of such applications for different p
 
 ### iOS
 
-- [Stream - Watch IPTV & Movies](https://itunes.apple.com/us/app/movie-stream-ip-tv-films/id1450912244?mt=8)
+- [GSE SMART IPTV](https://apps.apple.com/us/app/gse-smart-iptv/id1028734023) is a complete user defined Advanced IPTV solutions for live and non-live TV/stream.
+- [Movie Stream: Watch Smart IPTV](https://apps.apple.com/us/app/movie-stream-ip-tv-films/id1450912244), Chromecast-enabled app which lets you stream your favourites videos from your mobile device to your TV.
 
 ### Android
 
