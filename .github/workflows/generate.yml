@@ -1,11 +1,8 @@
 name: Generate grouped playlists
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - 'channels/*'
+  schedule:
+    - cron:  '0 0 * * *'
 
 jobs:
   generate:
@@ -19,9 +16,6 @@ jobs:
     - name: "npm install"
       run: npm install
       
-    - name: "npm run format"
-      run: npm run format
-    
     - name: "npm run generate"
       run: npm run generate
     
@@ -30,6 +24,6 @@ jobs:
       with:
         commit_author_email: free.arhey@gmail.com
         commit_author_name: Arhey
-        commit_message: Generate grouped playlists
+        commit_message: Generated grouped playlists
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
