@@ -1,8 +1,8 @@
-name: Generate grouped playlists 2
+name: generate
 
 on:
   schedule:
-    - cron:  '0 * * * *'
+    - cron:  '0 0 * * *'
 
 jobs:
   generate:
