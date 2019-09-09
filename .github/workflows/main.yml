@@ -21,6 +21,15 @@ jobs:
       
     - name: "npm run format"
       run: npm run format
+      
+    - name: Commit all changes
+      uses: stefanzweifel/git-auto-commit-action@v2.0.0
+      with:
+        commit_author_email: free.arhey@gmail.com
+        commit_author_name: Arhey
+        commit_message: Formatted playlists
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
     - name: "npm run generate"
       run: npm run generate
@@ -30,6 +39,6 @@ jobs:
       with:
         commit_author_email: free.arhey@gmail.com
         commit_author_name: Arhey
-        commit_message: Generate grouped playlists
+        commit_message: Generated grouped playlists
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
