@@ -163,21 +163,23 @@ function getGzipped(url) {
   })
 }
 
-function byTitle(a, b) {
-  var nameA = a.title.toLowerCase()
-  var nameB = b.title.toLowerCase()
-  if (nameA < nameB) {
-    return -1
-  }
-  if (nameA > nameB) {
-    return 1
-  }
+function byTitleAndUrl(a, b) {
+  var titleA = a.title.toLowerCase()
+  var titleB = b.title.toLowerCase()
+  var urlA = a.url.toLowerCase()
+  var urlB = b.url.toLowerCase()
+  
+  if(titleA < titleB) return -1
+  if(titleA > titleB) return 1
+
+  if(urlA < urlB) return -1
+  if(urlA > urlB) return 1
 
   return 0
 }
 
-function sortByTitle(arr) {
-  return arr.sort(byTitle)
+function sortByTitleAndUrl(arr) {
+  return arr.sort(byTitleAndUrl)
 }
 
 function readFile(filename) {
@@ -215,8 +217,9 @@ function clearCache() {
 function getUrlPath(u) {
   let parsed = urlParser.parse(u)
   let searchQuery = parsed.search || ''
+  let path = parsed.host + parsed.pathname + searchQuery
 
-  return parsed.host + parsed.pathname + searchQuery
+  return path.toLowerCase()
 }
 
 function validateUrl(channelUrl) {
@@ -227,16 +230,22 @@ function validateUrl(channelUrl) {
 }
 
 function skipPlaylist(filename) {
-  let test_country = process.env.npm_config_country
-  if (test_country && filename !== 'channels/' + test_country + '.m3u') {
-    return true;
+  let testCountry = process.env.npm_config_country
+  let excludeList = process.env.npm_config_exclude
+  let excludeCountries = excludeList ? excludeList.split(',') : []
+  
+  if (testCountry && filename !== 'channels/' + testCountry + '.m3u') return true
+  
+  for(const countryCode of excludeCountries) {
+    if (filename === 'channels/' + countryCode + '.m3u') return true
   }
-  return false;
+
+  return false
 }
 
 module.exports = {
   parsePlaylist,
-  sortByTitle,
+  sortByTitleAndUrl,
   appendToFile,
   createFile,
   readFile,
