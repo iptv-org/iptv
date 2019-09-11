@@ -1,0 +1,29 @@
+name: generate
+
+on:
+  schedule:
+    - cron:  '0 0 * * *'
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: "git checkout master"
+      run: git checkout master
+      
+    - name: "npm install"
+      run: npm install
+      
+    - name: "npm run generate"
+      run: npm run generate
+    
+    - name: Commit all changes
+      uses: stefanzweifel/git-auto-commit-action@v2.0.0
+      with:
+        commit_author_email: free.arhey@gmail.com
+        commit_author_name: Arhey
+        commit_message: Generated grouped playlists
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
