@@ -38,7 +38,7 @@ If your application does not support nested playlists, you can instead use one o
 - `https://raw.githubusercontent.com/freearhey/iptv/master/index.country.m3u` (grouped by country)
 - `https://raw.githubusercontent.com/freearhey/iptv/master/index.content.m3u` (grouped by content)
 
-Or select a playlist for a specific country from the lists below.
+Or select one of the playlists from the list below.
 
 ## Playlists by category
 
