@@ -6,7 +6,7 @@ const zlib = require("zlib")
 const DOMParser = require('xmldom').DOMParser
 const urlParser = require('url')
 
-const supportedGroups = [ 'Auto','Business', 'CCTV', 'Classic','Comedy','Documentary','Education','Entertainment', 'Family','Fashion','Food', 'General', 'Health', 'History', 'Hobby', 'Kids', 'Legislative','Lifestyle','Local', 'Movies', 'Music', 'News', 'Quiz','Radio', 'Religious','Sci-Fi', 'Shop', 'Sport', 'Travel', 'Weather', 'XXX' ]
+const supportedCategories = [ 'Auto','Business', 'Classic','Comedy','Documentary','Education','Entertainment', 'Family','Fashion','Food', 'General', 'Health', 'History', 'Hobby', 'Kids', 'Legislative','Lifestyle','Local', 'Movies', 'Music', 'News', 'Quiz', 'Religious','Sci-Fi', 'Shop', 'Sport', 'Travel', 'Weather', 'XXX' ]
 
 const blacklist = [
   '80.80.160.168', // repeats on a loop
@@ -46,12 +46,12 @@ class Channel {
   _getGroup(groupTitle) {
     if(!groupTitle) return ''
       
-    const groupIndex = supportedGroups.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
+    const groupIndex = supportedCategories.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
 
     if(groupIndex === -1) {
       groupTitle = ''
     } else {
-      groupTitle = supportedGroups[groupIndex]
+      groupTitle = supportedCategories[groupIndex]
     }
 
     return groupTitle
@@ -256,5 +256,6 @@ module.exports = {
   checkCache,
   clearCache,
   validateUrl,
-  skipPlaylist
+  skipPlaylist,
+  supportedCategories
 }

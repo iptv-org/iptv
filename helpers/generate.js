@@ -1,11 +1,18 @@
 const util = require('./util')
 
 const debug = false
-const types = ['full', 'country', 'content', 'sport']
+const types = ['full', 'country', 'content']
+const categories = util.supportedCategories.map(c => c.toLowerCase())
 let stats = {
   countries: 0,
   channels: 0
 }
+
+let buffer = {}
+categories.push('other')
+categories.forEach(category => {
+  buffer[category] = []
+})
 
 function main() {
   console.log(`Parsing 'index.m3u'...`)
@@ -22,13 +29,13 @@ function main() {
     util.createFile(filename, '#EXTM3U\n')
   }
 
+  for(let category of categories) {
+    const filename = `categories/${category}.m3u`
+    console.log(`Creating '${filename}'...`)
+    util.createFile(filename, '#EXTM3U\n')
+  }
+
   for(let country of countries) {
-
-    if(debug) {
-      console.log(`Clear cache...`)
-    }
-    util.clearCache()
-
     console.log(`Parsing '${country.url}'...`)
     const playlist = util.parsePlaylist(country.url)
 
@@ -48,7 +55,7 @@ function main() {
         title: item.inf.title
       })
 
-      let category = channel.group
+      let group = channel.group
 
       for(const type of types) {
         if(type === 'full') {
@@ -56,23 +63,33 @@ function main() {
         } else if(type === 'country') {
           channel.group = c.name
         } else {
-          channel.group = category
+          channel.group = group
         }
 
-        const filename = `index.${type}.m3u`
-        if(type === 'sport') {
-          if(channel.group === 'Sport') {
-            util.appendToFile(filename, channel.toString())
-          }
-        } else {
-          util.appendToFile(filename, channel.toString())
-        }
+        util.appendToFile(`index.${type}.m3u`, channel.toString())
+      }
+
+      let category = channel.group.toLowerCase()
+      if(buffer[category]) {
+        buffer[category].push(channel)
+      } else {
+        buffer['other'].push(channel)
       }
 
       stats.channels++
     }
 
     stats.countries++
+  }
+
+  for(const category in buffer) {
+    let channels = util.sortByTitleAndUrl(buffer[category])
+    for(const channel of channels) {
+      if(!util.checkCache(channel.url)) {
+        util.appendToFile(`categories/${category}.m3u`, channel.toString())
+        util.addToCache(channel.url)
+      }
+    }
   }
 }
 
