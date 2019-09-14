@@ -146,7 +146,6 @@ Or select a playlist for a specific country from the lists below.
 | Iceland                | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/is.m3u` |
 | India                  | 153      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/in.m3u` | `http://epg.streamstv.me/epg/guide-india.xml.gz`
 | Indonesia              | 207      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/id.m3u` |
-| International          | 408      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/int.m3u`|
 | Iran                   | 32       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ir.m3u` | `http://195.154.221.171/epg/guideiran.xml.gz`
 | Iraq                   | 14       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/iq.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
 | Ireland                | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ie.m3u` |
@@ -247,6 +246,7 @@ Or select a playlist for a specific country from the lists below.
 | Western Sahara         | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/eh.m3u` |
 | Yemen                  | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ye.m3u` |
 | Zimbabwe               | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/zw.m3u` |
+| International          | 408      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/int.m3u`|
 
 
 ## Contribution
