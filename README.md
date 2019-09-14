@@ -265,7 +265,7 @@ http://example.com/stream.m3u8
 | tvg-id      | Channel ID that is used to load EPG (optional)
 | tvg-name    | Channel name (optional)
 | tvg-logo    | The logo of the channel (optional)
-| group-title | One of the following categories: Auto, Business,  CCTV,  Classic, Comedy, Documentary, Education, Entertainment,  Family, Fashion, Food,  General,  Health,  History,  Hobby,  Kids,  Legislative, Lifestyle, Local,  Movies,  Music,  News,  Quiz, Radio,  Religious, Sci-Fi,  Shop,  Sport,  Travel,  Weather,  XXX (optional)
+| group-title | One of the following categories: Auto, Business, Classic, Comedy, Documentary, Education, Entertainment, Family, Fashion, Food, General, Health, History, Hobby, Kids, Legislative, Lifestyle, Local, Movies, Music, News, Quiz, Religious, Sci-Fi, Shop, Sport, Travel, Weather, XXX (optional)
 
 If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/freearhey/iptv/issues) or a [pull request](https://github.com/freearhey/iptv/pulls)
 
