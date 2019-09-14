@@ -5,7 +5,7 @@ If you want to help the project you can do this in several ways. Here are some o
 - [Add channel](#add-channel)
 - [Sort channels by category](#sort-channels-by-category)
 - [Sort channels by country](#sort-channels-by-country)
-- [Add EPG source](#add-epg-sources)
+- [Add EPG source](#add-epg-source)
 
 ## Add channel
 
