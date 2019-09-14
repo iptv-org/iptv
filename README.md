@@ -36,10 +36,44 @@ If your application does not support nested playlists, you can instead use one o
 
 - `https://raw.githubusercontent.com/freearhey/iptv/master/index.full.m3u` (grouped by country and content)
 - `https://raw.githubusercontent.com/freearhey/iptv/master/index.country.m3u` (grouped by country)
-- `https://raw.githubusercontent.com/freearhey/iptv/master/index.content.m3u` (grouped by content) 
-- `https://raw.githubusercontent.com/freearhey/iptv/master/index.sport.m3u` (contains only sports channels) 
+- `https://raw.githubusercontent.com/freearhey/iptv/master/index.content.m3u` (grouped by content)
 
-Or select a playlist for a specific country from the list below.
+Or select a playlist for a specific country from the lists below.
+
+## Playlists by category
+
+| Category      | Channels | Playlist
+| :------------ | -------: | :-------
+| Auto          | 4        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/auto.m3u`
+| Business      | 34       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/business.m3u`
+| Classic       | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/classic.m3u`
+| Comedy        | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/comedy.m3u`
+| Documentary   | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/documentary.m3u`
+| Education     | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/education.m3u`
+| Entertainment | 96       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/entertainment.m3u`
+| Family        | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/family.m3u`
+| Fashion       | 32       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/fashion.m3u`
+| Food          | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/food.m3u`
+| General       | 36       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/general.m3u`
+| Health        | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/health.m3u`
+| History       | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/history.m3u`
+| Hobby         | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/hobby.m3u`
+| Kids          | 47       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/kids.m3u`
+| Legislative   | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/legislative.m3u` 
+| Lifestyle     | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/lifestyle.m3u`
+| Local         | 272      | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/local.m3u`
+| Movies        | 107      | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/movies.m3u`
+| Music         | 234      | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/music.m3u`
+| News          | 315      | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/news.m3u`
+| Quiz          | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/quiz.m3u`
+| Religious     | 94       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/religious.m3u`
+| Sci-Fi        | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/sci-fi.m3u`
+| Shop          | 20       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/shop.m3u`
+| Sport         | 186      | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/sport.m3u`
+| Travel        | 8        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/travel.m3u`
+| Weather       | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/weather.m3u`
+| XXX           | 32       | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/xxx.m3u`
+| Other         | 6623     | `https://raw.githubusercontent.com/freearhey/iptv/master/categories/other.m3u`
 
 ## Playlists by country
 
