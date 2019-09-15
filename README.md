@@ -249,27 +249,6 @@ Or select one of the playlists from the list below.
 | International          | 408      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/int.m3u`|
 
 
-## Testing
-
-```sh
-npm test
-```
-
-Be prepared test may take a long time. Or if you want to test the playlist of a particular country, you can specify the [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166) of the country as an argument when running the test.
-
-```sh
-npm test --country=uk
-```
-
-Another option to exclude specific playlists from tests:
-
-```sh
-npm test --exclude=cn,int
-```
-
-After the test is over all broken links will be saved to the file `error.log`.
-
-
 ## Contribution
 
 Please make sure to read the [Contributing Guide](https://github.com/freearhey/iptv/blob/master/.github/CONTRIBUTING.md) before making a pull request.
