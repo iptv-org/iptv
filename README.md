@@ -251,23 +251,9 @@ Or select one of the playlists from the list below.
 
 ## Contribution
 
-The easiest way to help the project is to sort channels by country. Specifically for this was created playlist `channels/unsorted.m3u` which contains channels that are not yet sorted by other playlists. If you recognize one of the channels in this playlist, just copy its title and link to the desired country playlist. That's it!
+Please make sure to read the [Contributing Guide](https://github.com/freearhey/iptv/blob/master/.github/CONTRIBUTING.md) before making a pull request.
 
-If you want to add new channel to the playlist you need add link to stream and some information about it. For example:
-
-```xml
-#EXTINF:-1 tvg-id="exampletv.us" tvg-name="Example TV" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
-http://example.com/stream.m3u8
-```
-
-| Attribute   | Description
-| ----------- | ---
-| tvg-id      | Channel ID that is used to load EPG (optional)
-| tvg-name    | Channel name (optional)
-| tvg-logo    | The logo of the channel (optional)
-| group-title | One of the following categories: Auto, Business, Classic, Comedy, Documentary, Education, Entertainment, Family, Fashion, Food, General, Health, History, Hobby, Kids, Legislative, Lifestyle, Local, Movies, Music, News, Quiz, Religious, Sci-Fi, Shop, Sport, Travel, Weather, XXX (optional)
-
-If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/freearhey/iptv/issues) or a [pull request](https://github.com/freearhey/iptv/pulls)
+If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/freearhey/iptv/issues)
 
 
 ## Testing
