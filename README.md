@@ -191,7 +191,7 @@ Or select one of the playlists from the list below.
 | Slovakia               | 37       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/sk.m3u` |
 | Slovenia               | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/si.m3u` | `http://195.154.221.171/epg/guideslovenia.xml.gz`
 | Somalia                | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/so.m3u` |
-| South Africa           | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/za.m3u` |
+| South Africa           | 3        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/za.m3u` | `http://i.mjh.nz/za/DStv/epg.xml.gz`
 | South Korea            | 54       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/kr.m3u` |
 | Spain                  | 162      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/es.m3u` | `http://195.154.221.171/epg/guidespain.xml.gz`
 | Sri Lanka              | 7        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/lk.m3u` |
