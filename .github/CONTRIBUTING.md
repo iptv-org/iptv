@@ -5,6 +5,7 @@ If you want to help the project you can do this in several ways. Here are some o
 - [Add channel](#add-channel)
 - [Sort channels by category](#sort-channels-by-category)
 - [Sort channels by country](#sort-channels-by-country)
+- [Remove broken broadcasts](#remove-broken-broadcasts)
 - [Add EPG source](#add-epg-source)
 
 ## Add channel
@@ -63,6 +64,44 @@ A complete list of supported categories can be found [here](https://github.com/f
 You can help sorting channels by country by moving the link to the channel with the entire description from one playlist in the `channels/` folder to another. Be careful, any changes outside the `channels/` folder will not be accepted, since the rest of the playlists are generated automatically.
 
 It should also be noted that the channels are not sorted by country of stream source, but by the country in which they are broadcast. If the same channel is broadcast in several countries at once, you can move it to the `channels/int.m3u`.
+
+## Remove broken broadcasts
+
+To make sure that the broadcast does not work, just start it in one of the supported players (preferably in the VLC player) and wait at least a minute. The fact is that some broadcasts are started with a delay due to the location of the source. 
+
+If it turns out that the broadcast still does not start, this means that it can be safely deleted from the playlist. At the same time, you should delete not only the link to the channel but also the description for it. 
+
+It would also be nice if you indicated in the description of the PR the reason for the removal of the channel, so that other members of the community could also double-check the channel for their part.
+
+It is also possible to automatically find broken broadcasts. To do this, you first need to install [Node.js](https://nodejs.org/en/) on your computer.
+
+Copy this repository to your computer. Then open it in the console line and install all the dependencies from it by running this command:
+
+```sh
+npm install
+```
+
+And as soon as everything is installed, you can run tests, like this:
+
+```sh
+npm test
+```
+
+And be prepared test may take a long time. 
+
+If you want to test the playlist of a particular country, you can specify the [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166) of the country as an argument when running the test.
+
+```sh
+npm test --country=uk
+```
+
+Another option to exclude specific playlists from tests:
+
+```sh
+npm test --exclude=cn,int
+```
+
+After the test is over all broken links will be saved to the file `error.log`.
 
 ## Add EPG source
 
