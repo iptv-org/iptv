@@ -8,30 +8,6 @@ To watch IPTV you just need to paste this link `https://raw.githubusercontent.co
 
 ![VLC Network Panel](https://github.com/freearhey/iptv/raw/master/preview.png)
 
-Below you can find a manually selected list of such applications for different platforms.
-
-### Windows
-
-- [VLC for Windows](https://www.videolan.org/vlc/download-windows.html) is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
-
-### macOS
-
-- [VLC for Mac OS X](https://www.videolan.org/vlc/download-macosx.html) is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
-- [IINA](https://iina.io/), the modern media player for macOS.
-
-### iOS
-
-- [GSE SMART IPTV](https://apps.apple.com/us/app/gse-smart-iptv/id1028734023) is a complete user defined Advanced IPTV solutions for live and non-live TV/stream.
-- [Movie Stream: Watch Smart IPTV](https://apps.apple.com/us/app/movie-stream-ip-tv-films/id1450912244), Chromecast-enabled app which lets you stream your favourites videos from your mobile device to your TV.
-
-### Android
-
-- [NET IP TV](https://play.google.com/store/apps/details?id=com.dnamedya.netiptv)
-
-### PlayStation 4
-
-- [Plex](https://www.plex.tv/apps-devices/#modal-devices-playstation-4) media server allows you to aggregate all your personal media and access it anywhere you go. In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](https://github.com/Cigaras/IPTV.bundle) plugin.
-
 If your application does not support nested playlists, you can instead use one of these playlists:
 
 - `https://raw.githubusercontent.com/freearhey/iptv/master/index.full.m3u` (grouped by country and content)
@@ -248,6 +224,31 @@ Or select one of the playlists from the list below.
 | Zimbabwe               | 2        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/zw.m3u` |
 | International          | 408      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/int.m3u`|
 
+## List of supported apps
+
+Below you can find a list of manually selected applications with support of IPTV-playlists for different platforms. Please note that some of the apps may not be able to display channel logos, categories or EPG.
+
+### Windows
+
+- [VLC for Windows](https://www.videolan.org/vlc/download-windows.html) is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
+
+### macOS
+
+- [VLC for Mac OS X](https://www.videolan.org/vlc/download-macosx.html) is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.
+- [IINA](https://iina.io/), the modern media player for macOS.
+
+### iOS
+
+- [GSE SMART IPTV](https://apps.apple.com/us/app/gse-smart-iptv/id1028734023) is a complete user defined Advanced IPTV solutions for live and non-live TV/stream.
+- [Movie Stream: Watch Smart IPTV](https://apps.apple.com/us/app/movie-stream-ip-tv-films/id1450912244), Chromecast-enabled app which lets you stream your favourites videos from your mobile device to your TV.
+
+### Android
+
+- [NET IP TV](https://play.google.com/store/apps/details?id=com.dnamedya.netiptv)
+
+### PlayStation 4
+
+- [Plex](https://www.plex.tv/apps-devices/#modal-devices-playstation-4) media server allows you to aggregate all your personal media and access it anywhere you go. In order to watch IPTV through Plex App, you can use the [Cigaras/IPTV.bundle](https://github.com/Cigaras/IPTV.bundle) plugin.
 
 ## Contribution
 
