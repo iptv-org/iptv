@@ -249,13 +249,6 @@ Or select one of the playlists from the list below.
 | International          | 408      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/int.m3u`|
 
 
-## Contribution
-
-Please make sure to read the [Contributing Guide](https://github.com/freearhey/iptv/blob/master/.github/CONTRIBUTING.md) before making a pull request.
-
-If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/freearhey/iptv/issues)
-
-
 ## Testing
 
 ```sh
@@ -275,3 +268,10 @@ npm test --exclude=cn,int
 ```
 
 After the test is over all broken links will be saved to the file `error.log`.
+
+
+## Contribution
+
+Please make sure to read the [Contributing Guide](https://github.com/freearhey/iptv/blob/master/.github/CONTRIBUTING.md) before making a pull request.
+
+If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/freearhey/iptv/issues)
