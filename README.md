@@ -254,4 +254,4 @@ Below you can find a list of manually selected applications with support of IPTV
 
 Please make sure to read the [Contributing Guide](https://github.com/freearhey/iptv/blob/master/.github/CONTRIBUTING.md) before making a pull request.
 
-If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/freearhey/iptv/issues)
+If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/freearhey/iptv/issues).
