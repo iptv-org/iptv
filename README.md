@@ -83,7 +83,7 @@ Or select one of the playlists from the list below.
 | Canada                 | 40       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ca.m3u` | `http://epg.streamstv.me/epg/guide-canada.xml.gz`
 | Cape Verde             | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cv.m3u` |
 | Chile                  | 73       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cl.m3u` |
-| China                  | 3192     | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cn.m3u` |
+| China                  | 2722     | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cn.m3u` |
 | Colombia               | 33       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/co.m3u` |
 | Costa Rica             | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/cr.m3u` |
 | Croatia                | 33       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hr.m3u` | `http://tvprofil.net/xmltv/data/epg_tvprofil.net.xml`
