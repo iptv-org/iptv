@@ -212,7 +212,7 @@ Or select one of the playlists from the list below.
 | Uganda                 | 1        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ug.m3u` |
 | Ukraine                | 180      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ua.m3u` | `https://iptvx.one/epg/epg.xml.gz`
 | United Arab Emirates   | 89       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ae.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
-| United Kingdom         | 42       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uk.m3u` | `http://195.154.221.171/epg/guideuk.xml.gz`
+| United Kingdom         | 20       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uk.m3u` | `http://195.154.221.171/epg/guideuk.xml.gz`
 | United States          | 565      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/us.m3u` | `http://epg.streamstv.me/epg/guide-usa.xml.gz`
 | Uruguay                | 5        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uy.m3u` |
 | Uzbekistan             | 0        | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/uz.m3u` |
