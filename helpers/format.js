@@ -18,11 +18,7 @@ async function main() {
 
   console.log(`Parsing 'index.m3u'...`)
   const playlist = util.parsePlaylist('index.m3u')
-  let countries = playlist.items
-  const unsortedIndex = countries.map(c => c.url).indexOf('channels/unsorted.m3u')
-  if(unsortedIndex > -1) {
-    countries.splice(unsortedIndex, 1)
-  }
+  const countries = playlist.items
 
   if(debug) {
     console.log('Debug mode is turn on')
