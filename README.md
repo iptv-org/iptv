@@ -120,7 +120,7 @@ Or select one of the playlists from the list below.
 | Hong Kong              | 43       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hk.m3u` |
 | Hungary                | 12       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/hu.m3u` | `http://epg.streamstv.me/epg/guide-hungry.xml.gz`
 | Iceland                | 11       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/is.m3u` |
-| India                  | 324      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/in.m3u` | `http://epg.streamstv.me/epg/guide-india.xml.gz`
+| India                  | 315      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/in.m3u` | `http://epg.streamstv.me/epg/guide-india.xml.gz`
 | Indonesia              | 208      | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/id.m3u` |
 | Iran                   | 32       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/ir.m3u` | `http://195.154.221.171/epg/guideiran.xml.gz`
 | Iraq                   | 14       | `https://raw.githubusercontent.com/freearhey/iptv/master/channels/iq.m3u` | `http://195.154.221.171/epg/guidearab.xml.gz`
