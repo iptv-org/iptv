@@ -22,8 +22,6 @@ async function main() {
 
   if(debug) {
     console.log('Debug mode is turn on')
-    // countries = countries.slice(0, 1)
-    // countries = [{ url: 'channels/ru.m3u' }, { url: 'channels/ua.m3u' }]
   }
 
   const unsortedPlaylist = util.parsePlaylist('channels/unsorted.m3u')
