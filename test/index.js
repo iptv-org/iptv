@@ -28,7 +28,8 @@ const instance = axios.create({
     'Accept-Language': 'en_US',
     'User-Agent': 'VLC/3.0.8 LibVLC/3.0.8',
     'Range': 'bytes=0-'
-  }
+  },
+  responseType: 'stream'
 })
 
 async function test() {
@@ -65,21 +66,13 @@ async function test() {
 
         let response = await instance.get(item.url)
 
-        let string = response.data.toString()
-
-        let head = string.slice(0,7)
-
-        if(head !== '#EXTM3U') {
-
-          stats.failures++
-
-          writeToLog(country.url, 'Wrong content type', item.url)
-
-        }
+        response.data.destroy()
 
         continue
 
       } catch (err) {
+
+        if(err.request && ['ECONNRESET'].indexOf(err.code) > -1) continue
 
         stats.failures++
 
