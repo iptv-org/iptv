@@ -226,7 +226,7 @@ Or select one of the playlists from the list below.
 
 ## Resources
 
-You can find a links to various IPTV related resources in a separate [freearhey/awesome-iptv](https://github.com/freearhey/awesome-iptv) repository.
+You can find a links to various IPTV related resources in a separate [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
 
 ## Contribution
 
