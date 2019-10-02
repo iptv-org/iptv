@@ -28,5 +28,6 @@ jobs:
         commit_author_email: free.arhey@gmail.com
         commit_author_name: Arhey
         commit_message: Formatted playlists
+        branch: ${{ github.head_ref }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
