@@ -25,6 +25,6 @@ jobs:
         commit_author_email: free.arhey@gmail.com
         commit_author_name: Arhey
         commit_message: Generated grouped playlists
-        branch: ${{ github.head_ref }}
+        branch: master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
