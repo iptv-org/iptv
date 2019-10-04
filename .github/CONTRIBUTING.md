@@ -55,7 +55,7 @@ To help sort channels by category, you need to add the corresponding category in
 http://example.com/cnn.m3u8
 ```
 
-For convenience, `https://raw.githubusercontent.com/iptv-org/iptv/master/categories/other.m3u`  contains all the channels for which a category has not yet been specified. But be careful, changes can only be made in the playlists located in the `channels/` folder, since the other playlists are automatically generated.
+For convenience, `https://iptv-org.github.io/iptv/categories/other.m3u`  contains all the channels for which a category has not yet been specified. But be careful, changes can only be made in the playlists located in the `channels/` folder, since the other playlists are automatically generated.
 
 A complete list of supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category).
 
