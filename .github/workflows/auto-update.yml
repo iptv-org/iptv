@@ -27,6 +27,6 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PULL_REQUEST_BRANCH: auto-update/patch
-        PULL_REQUEST_TITLE: [Bot] Auto-update playlists
+        PULL_REQUEST_TITLE: '[Bot] Auto-update playlists'
         PULL_REQUEST_BODY: >
             This pull request is auto-generated. It formats links and generates grouped playlists.
