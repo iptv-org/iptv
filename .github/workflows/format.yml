@@ -22,12 +22,7 @@ jobs:
     - name: "npm run format"
       run: npm run format
     
-    - name: Commit all changes
-      uses: stefanzweifel/git-auto-commit-action@v2.1.0
-      with:
-        commit_author_email: free.arhey@gmail.com
-        commit_author_name: Arhey
-        commit_message: Formatted playlists
-        branch: master
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v1.5.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
