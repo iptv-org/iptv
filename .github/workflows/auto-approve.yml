@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: hmarr/auto-approve-action@v2.0.0
-      if: github.actor == 'create-pull-request/patch-64ab693'
+      if: github.head_ref == 'create-pull-request/patch'
       with:
         github-token: "${{ secrets.GITHUB_TOKEN }}"
