@@ -26,14 +26,7 @@ async function main() {
 
   const unsortedPlaylist = util.parsePlaylist('channels/unsorted.m3u')
   for(const item of unsortedPlaylist.items) {
-    unsorted[item.url] = util.createChannel({
-      id: item.inf['tvg-id'],
-      name: item.inf['tvg-name'],
-      logo: item.inf['tvg-logo'],
-      group: item.inf['group-title'],
-      url: item.url,
-      title: item.inf.title
-    })
+    unsorted[item.url] = util.createChannel(item)
   }
 
   for(let country of countries) {
@@ -55,14 +48,7 @@ async function main() {
     }
     let channels = []
     for(let item of playlist.items) {
-      let channel = util.createChannel({
-        id: item.inf['tvg-id'],
-        name: item.inf['tvg-name'],
-        logo: item.inf['tvg-logo'],
-        group: item.inf['group-title'],
-        url: item.url,
-        title: item.inf.title
-      })
+      let channel = util.createChannel(item)
 
       if(util.checkCache(channel.url)) {
         stats.duplicates++

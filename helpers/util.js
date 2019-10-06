@@ -18,7 +18,10 @@ let cache = {}
 
 class Playlist {
   constructor(data) {
-    this.attrs = data.attrs
+    this.attrs = {
+      'x-tvg-url': data.tvg.url
+    }
+
     this.items = data.items
   }
 
@@ -26,7 +29,9 @@ class Playlist {
     let parts = ['#EXTM3U']
     for(let key in this.attrs) {
       let value = this.attrs[key]
-      parts.push(`${key}="${value}"`)
+      if(value) {
+        parts.push(`${key}="${value}"`)
+      }
     }
 
     return `${parts.join(' ')}\n`
@@ -35,12 +40,12 @@ class Playlist {
 
 class Channel {
   constructor(data) {
-    this.id = data.id || ''
-    this.name = data.name || ''
-    this.logo = data.logo || ''
-    this.group = this._getGroup(data.group)
+    this.id = data.tvg.id
+    this.name = data.tvg.name
+    this.logo = data.tvg.logo
+    this.group = this._getGroup(data.group.title)
     this.url = data.url
-    this.title = data.title
+    this.title = data.name
   }
 
   _getGroup(groupTitle) {
@@ -68,23 +73,11 @@ function parsePlaylist(filename) {
   const content = readFile(filename)
   const result = parser.parse(content)
 
-  console.log(result)
-
-  return new Playlist({
-    attrs: results.attrs,
-    items: results.segments
-  })
+  return new Playlist(result)
 }
 
 function createChannel(data) {
-  return new Channel({
-    id: data.id,
-    name: data.name,
-    logo: data.logo,
-    group: data.group,
-    url: data.url,
-    title: data.title
-  })
+  return new Channel(data)
 }
 
 async function loadEPG(url) {

@@ -40,20 +40,13 @@ function main() {
     const playlist = util.parsePlaylist(country.url)
 
     const c = {
-      name: country.inf.title,
+      name: country.name,
       code: util.getBasename(country.url).toUpperCase()
     }
 
     for(let item of playlist.items) {
 
-      let channel = util.createChannel({
-        id: item.inf['tvg-id'],
-        name: item.inf['tvg-name'],
-        logo: item.inf['tvg-logo'],
-        group: item.inf['group-title'],
-        url: item.url,
-        title: item.inf.title
-      })
+      let channel = util.createChannel(item)
 
       let group = channel.group
 
