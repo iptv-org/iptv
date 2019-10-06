@@ -2,7 +2,7 @@ name: auto-update
 
 on:
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '0 0 * * *'
 
 jobs:
   generate:
@@ -26,7 +26,7 @@ jobs:
       uses: peter-evans/create-pull-request@v1.5.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        PULL_REQUEST_BRANCH: auto-update/patche
-        PULL_REQUEST_TITLE: Auto-update playlists
+        PULL_REQUEST_BRANCH: auto-update/patch
+        PULL_REQUEST_TITLE: [Bot] Auto-update playlists
         PULL_REQUEST_BODY: >
             This pull request is auto-generated. It formats links and generates grouped playlists.
