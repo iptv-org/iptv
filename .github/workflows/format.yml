@@ -26,3 +26,4 @@ jobs:
       uses: peter-evans/create-pull-request@v1.5.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH_SUFFIX: none
