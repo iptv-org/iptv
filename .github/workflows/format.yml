@@ -27,3 +27,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH_SUFFIX: none
+    
+    - name: Auto-approve Pull Request
+      uses: hmarr/auto-approve-action@v2.0.0
+      with:
+        github-token: "${{ secrets.GITHUB_TOKEN }}"
