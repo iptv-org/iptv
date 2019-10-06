@@ -1,6 +1,6 @@
 const fs = require("fs")
 const path = require('path')
-const M3U8FileParser = require('m3u8-file-parser')
+const parser = require('iptv-playlist-parser')
 const axios = require('axios')
 const zlib = require("zlib")
 const DOMParser = require('xmldom').DOMParser
@@ -65,24 +65,10 @@ class Channel {
 }
 
 function parsePlaylist(filename) {
-  const parser = new M3U8FileParser()
   const content = readFile(filename)
-  parser.read(content)
-  let results = parser.getResult()
-  let contentMatches = content.match(/^.+(?=#|\n|\r)/g)
-  let head = contentMatches.length ? contentMatches[0] : null
-  let attrs = {}
-  if(head) {
-    const parts = head.split(' ').filter(p => p !== '#EXTM3U').filter(p => p)
+  const result = parser.parse(content)
 
-    for(const attr of parts) {
-      let attrParts = attr.split('=')
-      
-      attrs[attrParts[0]] = attrParts[1].replace(/\"/g, '')
-    }
-  }
-
-  results.attrs = attrs
+  console.log(result)
 
   return new Playlist({
     attrs: results.attrs,
