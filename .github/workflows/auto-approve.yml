@@ -2,13 +2,13 @@ name: auto-approve
 on:
   push:
     branches:
-      - dev
+      - master
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - uses: hmarr/auto-approve-action@v2.0.0
-      if: github.head_ref == 'create-pull-request/patch'
+      if: github.actor == 'github-actions'
       with:
         github-token: "${{ secrets.GITHUB_TOKEN }}"
