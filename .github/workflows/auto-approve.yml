@@ -1,5 +1,7 @@
 name: auto-approve
-on: pull_request
+on: 
+  pull_request:
+    types: [opened]
 
 jobs:
   build:
