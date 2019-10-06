@@ -1,6 +1,6 @@
 const fs = require("fs")
 const path = require('path')
-const M3U8FileParser = require('m3u8-file-parser')
+const parser = require('iptv-playlist-parser')
 const axios = require('axios')
 const zlib = require("zlib")
 const DOMParser = require('xmldom').DOMParser
@@ -18,7 +18,10 @@ let cache = {}
 
 class Playlist {
   constructor(data) {
-    this.attrs = data.attrs
+    this.attrs = {
+      'x-tvg-url': data.tvg.url
+    }
+
     this.items = data.items
   }
 
@@ -26,7 +29,9 @@ class Playlist {
     let parts = ['#EXTM3U']
     for(let key in this.attrs) {
       let value = this.attrs[key]
-      parts.push(`${key}="${value}"`)
+      if(value) {
+        parts.push(`${key}="${value}"`)
+      }
     }
 
     return `${parts.join(' ')}\n`
@@ -35,12 +40,12 @@ class Playlist {
 
 class Channel {
   constructor(data) {
-    this.id = data.id || ''
-    this.name = data.name || ''
-    this.logo = data.logo || ''
-    this.group = this._getGroup(data.group)
+    this.id = data.tvg.id
+    this.name = data.tvg.name
+    this.logo = data.tvg.logo
+    this.group = this._getGroup(data.group.title)
     this.url = data.url
-    this.title = data.title
+    this.title = data.name
   }
 
   _getGroup(groupTitle) {
@@ -65,40 +70,14 @@ class Channel {
 }
 
 function parsePlaylist(filename) {
-  const parser = new M3U8FileParser()
   const content = readFile(filename)
-  parser.read(content)
-  let results = parser.getResult()
-  let contentMatches = content.match(/^.+(?=#|\n|\r)/g)
-  let head = contentMatches.length ? contentMatches[0] : null
-  let attrs = {}
-  if(head) {
-    const parts = head.split(' ').filter(p => p !== '#EXTM3U').filter(p => p)
+  const result = parser.parse(content)
 
-    for(const attr of parts) {
-      let attrParts = attr.split('=')
-      
-      attrs[attrParts[0]] = attrParts[1].replace(/\"/g, '')
-    }
-  }
-
-  results.attrs = attrs
-
-  return new Playlist({
-    attrs: results.attrs,
-    items: results.segments
-  })
+  return new Playlist(result)
 }
 
 function createChannel(data) {
-  return new Channel({
-    id: data.id,
-    name: data.name,
-    logo: data.logo,
-    group: data.group,
-    url: data.url,
-    title: data.title
-  })
+  return new Channel(data)
 }
 
 async function loadEPG(url) {
