@@ -18,17 +18,14 @@ let cache = {}
 
 class Playlist {
   constructor(data) {
-    this.attrs = {
-      'x-tvg-url': data.tvg.url
-    }
-
+    this.header = data.header
     this.items = data.items
   }
 
   getHeader() {
     let parts = ['#EXTM3U']
-    for(let key in this.attrs) {
-      let value = this.attrs[key]
+    for(let key in this.header.attrs) {
+      let value = this.header.attrs[key]
       if(value) {
         parts.push(`${key}="${value}"`)
       }
