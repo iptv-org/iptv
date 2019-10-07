@@ -69,7 +69,7 @@ async function main() {
       }
     }
 
-    const epgUrl = playlist.attrs['x-tvg-url']
+    const epgUrl = playlist.header.attrs['x-tvg-url']
     if(epgUrl && !buffer[epgUrl] && parseEpg) {
       console.log(`Loading '${epgUrl}'...`)
       const epg = await util.loadEPG(epgUrl)
