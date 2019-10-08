@@ -1,5 +1,7 @@
 name: auto-approve
-on: pull_request
+on: 
+  push:
+    branches: master
 
 jobs:
   build:
