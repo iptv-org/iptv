@@ -2,7 +2,7 @@ name: auto-update
 
 on:
   schedule:
-    - cron:  '*/5 * * * *'
+    - cron:  '0 0 * * *'
 
 jobs:
   generate:
