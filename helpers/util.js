@@ -5,6 +5,7 @@ const axios = require('axios')
 const zlib = require("zlib")
 const DOMParser = require('xmldom').DOMParser
 const urlParser = require('url')
+const tablemark = require('tablemark')
 
 const supportedCategories = [ 'Auto','Business', 'Classic','Comedy','Documentary','Education','Entertainment', 'Family','Fashion','Food', 'General', 'Health', 'History', 'Hobby', 'Kids', 'Legislative','Lifestyle','Local', 'Movies', 'Music', 'News', 'Quiz', 'Religious','Sci-Fi', 'Shop', 'Sport', 'Travel', 'Weather', 'XXX' ]
 
@@ -219,6 +220,10 @@ function skipPlaylist(filename) {
   return false
 }
 
+function generateTable(data, options) {
+  return tablemark(data, options)
+}
+
 module.exports = {
   parsePlaylist,
   sortByTitleAndUrl,
@@ -233,5 +238,6 @@ module.exports = {
   clearCache,
   validateUrl,
   skipPlaylist,
-  supportedCategories
+  supportedCategories,
+  generateTable
 }
