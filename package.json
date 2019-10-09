@@ -3,7 +3,8 @@
   "scripts": {
     "test": "node test/index.js",
     "generate": "node helpers/generate.js",
-    "format": "node helpers/format.js"
+    "format": "node helpers/format.js",
+    "generate:readme": "node_modules/.bin/markdown-include ./helpers/markdown.json"
   },
   "author": "Arhey <free.arhey@gmail.com>",
   "private": true,
@@ -12,6 +13,8 @@
   "devDependencies": {
     "axios": ">=0.18.1",
     "iptv-playlist-parser": "^0.2.2",
+    "markdown-include": "^0.4.3",
+    "tablemark": "^2.0.0",
     "xmldom": "^0.1.27"
   }
 }

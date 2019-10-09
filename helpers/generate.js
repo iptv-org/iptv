@@ -14,6 +14,11 @@ categories.forEach(category => {
   buffer[category] = []
 })
 
+let repo = {
+  categories: {},
+  countries: {}
+}
+
 function main() {
   console.log(`Parsing 'index.m3u'...`)
   const playlist = util.parsePlaylist('index.m3u')
@@ -33,6 +38,8 @@ function main() {
     const filename = `categories/${category}.m3u`
     console.log(`Creating '${filename}'...`)
     util.createFile(filename, '#EXTM3U\n')
+    const categoryName = util.supportedCategories.find(c => c.toLowerCase() === category) || 'Other'
+    repo.categories[category] = { category: categoryName, channels: 0, playlist: `\`https://iptv-org.github.io/iptv/${filename}\`` }
   }
 
   for(let country of countries) {
@@ -43,6 +50,9 @@ function main() {
       name: country.name,
       code: util.getBasename(country.url).toUpperCase()
     }
+
+    const epg = playlist.header.attrs['x-tvg-url'] ? `\`${playlist.header.attrs['x-tvg-url']}\`` : ''
+    repo.countries[c.code] = { country: c.name, channels: playlist.items.length, playlist: `\`https://iptv-org.github.io/iptv/${country.url}\``, epg }
 
     for(let item of playlist.items) {
 
@@ -81,9 +91,28 @@ function main() {
       if(!util.checkCache(channel.url)) {
         util.appendToFile(`categories/${category}.m3u`, channel.toString())
         util.addToCache(channel.url)
+        repo.categories[category].channels++
       }
     }
   }
+
+  const categoriesTable = util.generateTable(Object.values(repo.categories), {
+    columns: [
+      { name: 'Category', align: 'left' },
+      { name: 'Channels', align: 'right' },
+      { name: 'Playlist', align: 'left' }
+    ]
+  })
+  util.createFile('./helpers/categories.md', categoriesTable)
+  const countriesTable = util.generateTable(Object.values(repo.countries), {
+    columns: [
+      { name: 'Country', align: 'left' },
+      { name: 'Channels', align: 'right' },
+      { name: 'Playlist', align: 'left' },
+      { name: 'EPG', align: 'left' }
+    ]
+  })
+  util.createFile('./helpers/countries.md', countriesTable)
 }
 
 main()
