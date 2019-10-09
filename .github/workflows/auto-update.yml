@@ -26,7 +26,8 @@ jobs:
       uses: peter-evans/create-pull-request@v1.5.1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        COMMIT_MESSAGE: 'Auto-update playlists'
         PULL_REQUEST_BRANCH: auto-update/patch
         PULL_REQUEST_TITLE: '[Bot] Auto-update playlists'
         PULL_REQUEST_BODY: >
-            This pull request is auto-generated. It formats links and generates grouped playlists.
+            This pull request is auto-generated. It formats links and updates grouped playlists.
