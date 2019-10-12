@@ -40,18 +40,18 @@ Or select one of the playlists from the list below.
 | Legislative   |       10 | `https://iptv-org.github.io/iptv/categories/legislative.m3u`   |
 | Lifestyle     |        5 | `https://iptv-org.github.io/iptv/categories/lifestyle.m3u`     |
 | Local         |      263 | `https://iptv-org.github.io/iptv/categories/local.m3u`         |
-| Movies        |      135 | `https://iptv-org.github.io/iptv/categories/movies.m3u`        |
-| Music         |      244 | `https://iptv-org.github.io/iptv/categories/music.m3u`         |
-| News          |      337 | `https://iptv-org.github.io/iptv/categories/news.m3u`          |
+| Movies        |      136 | `https://iptv-org.github.io/iptv/categories/movies.m3u`        |
+| Music         |      249 | `https://iptv-org.github.io/iptv/categories/music.m3u`         |
+| News          |      338 | `https://iptv-org.github.io/iptv/categories/news.m3u`          |
 | Quiz          |        0 | `https://iptv-org.github.io/iptv/categories/quiz.m3u`          |
-| Religious     |       93 | `https://iptv-org.github.io/iptv/categories/religious.m3u`     |
+| Religious     |       97 | `https://iptv-org.github.io/iptv/categories/religious.m3u`     |
 | Sci-Fi        |        0 | `https://iptv-org.github.io/iptv/categories/sci-fi.m3u`        |
 | Shop          |       22 | `https://iptv-org.github.io/iptv/categories/shop.m3u`          |
 | Sport         |      245 | `https://iptv-org.github.io/iptv/categories/sport.m3u`         |
 | Travel        |       10 | `https://iptv-org.github.io/iptv/categories/travel.m3u`        |
 | Weather       |        6 | `https://iptv-org.github.io/iptv/categories/weather.m3u`       |
 | XXX           |       47 | `https://iptv-org.github.io/iptv/categories/xxx.m3u`           |
-| Other         |     5908 | `https://iptv-org.github.io/iptv/categories/other.m3u`         |
+| Other         |     5935 | `https://iptv-org.github.io/iptv/categories/other.m3u`         |
 
 
 ## Playlists by country
@@ -63,7 +63,7 @@ Or select one of the playlists from the list below.
 | Algeria                             |        2 | `https://iptv-org.github.io/iptv/channels/dz.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
 | Andorra                             |        4 | `https://iptv-org.github.io/iptv/channels/ad.m3u`  |                                                       |
 | Angola                              |        1 | `https://iptv-org.github.io/iptv/channels/ao.m3u`  |                                                       |
-| Argentina                           |       85 | `https://iptv-org.github.io/iptv/channels/ar.m3u`  |                                                       |
+| Argentina                           |       87 | `https://iptv-org.github.io/iptv/channels/ar.m3u`  |                                                       |
 | Armenia                             |       52 | `https://iptv-org.github.io/iptv/channels/am.m3u`  |                                                       |
 | Aruba                               |        3 | `https://iptv-org.github.io/iptv/channels/aw.m3u`  |                                                       |
 | Australia                           |       15 | `https://iptv-org.github.io/iptv/channels/au.m3u`  | `http://i.mjh.nz/nzau/epg.xml.gz`                     |
@@ -82,7 +82,7 @@ Or select one of the playlists from the list below.
 | Bulgaria                            |       26 | `https://iptv-org.github.io/iptv/channels/bg.m3u`  | `http://195.154.221.171/epg/guidebulgaria.xml.gz`     |
 | Burkina Faso                        |        2 | `https://iptv-org.github.io/iptv/channels/bf.m3u`  |                                                       |
 | Cambodia                            |       27 | `https://iptv-org.github.io/iptv/channels/kh.m3u`  |                                                       |
-| Cameroon                            |        3 | `https://iptv-org.github.io/iptv/channels/cm.m3u`  |                                                       |
+| Cameroon                            |       25 | `https://iptv-org.github.io/iptv/channels/cm.m3u`  |                                                       |
 | Canada                              |       48 | `https://iptv-org.github.io/iptv/channels/ca.m3u`  | `http://epg.streamstv.me/epg/guide-canada.xml.gz`     |
 | Cape Verde                          |        1 | `https://iptv-org.github.io/iptv/channels/cv.m3u`  |                                                       |
 | Chile                               |       72 | `https://iptv-org.github.io/iptv/channels/cl.m3u`  |                                                       |
@@ -98,7 +98,7 @@ Or select one of the playlists from the list below.
 | Denmark                             |       17 | `https://iptv-org.github.io/iptv/channels/dk.m3u`  | `http://195.154.221.171/epg/guidedenmark.xml.gz`      |
 | Dominican Republic                  |       51 | `https://iptv-org.github.io/iptv/channels/do.m3u`  |                                                       |
 | Ecuador                             |       11 | `https://iptv-org.github.io/iptv/channels/ec.m3u`  |                                                       |
-| Egypt                               |       54 | `https://iptv-org.github.io/iptv/channels/eg.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
+| Egypt                               |       56 | `https://iptv-org.github.io/iptv/channels/eg.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
 | El Salvador                         |        2 | `https://iptv-org.github.io/iptv/channels/sv.m3u`  |                                                       |
 | Equatorial Guinea                   |        3 | `https://iptv-org.github.io/iptv/channels/gq.m3u`  |                                                       |
 | Estonia                             |       12 | `https://iptv-org.github.io/iptv/channels/ee.m3u`  | `http://195.154.221.171/epg/guideestonia.xml.gz`      |
@@ -108,7 +108,7 @@ Or select one of the playlists from the list below.
 | Fiji                                |        1 | `https://iptv-org.github.io/iptv/channels/fj.m3u`  |                                                       |
 | France                              |       91 | `https://iptv-org.github.io/iptv/channels/fr.m3u`  | `http://195.154.221.171/epg/guidefrance.xml.gz`       |
 | Gambia                              |        1 | `https://iptv-org.github.io/iptv/channels/gm.m3u`  |                                                       |
-| Georgia                             |       11 | `https://iptv-org.github.io/iptv/channels/ge.m3u`  |                                                       |
+| Georgia                             |       12 | `https://iptv-org.github.io/iptv/channels/ge.m3u`  |                                                       |
 | Germany                             |      179 | `https://iptv-org.github.io/iptv/channels/de.m3u`  | `http://195.154.221.171/epg/guidegermany.xml.gz`      |
 | Ghana                               |        4 | `https://iptv-org.github.io/iptv/channels/gh.m3u`  |                                                       |
 | Gibraltar                           |        1 | `https://iptv-org.github.io/iptv/channels/gi.m3u`  |                                                       |
@@ -166,11 +166,11 @@ Or select one of the playlists from the list below.
 | New Zealand                         |       10 | `https://iptv-org.github.io/iptv/channels/nz.m3u`  | `http://i.mjh.nz/nzau/epg.xml.gz`                     |
 | Nicaragua                           |       10 | `https://iptv-org.github.io/iptv/channels/ni.m3u`  |                                                       |
 | Niger                               |        0 | `https://iptv-org.github.io/iptv/channels/ne.m3u`  |                                                       |
-| Nigeria                             |       13 | `https://iptv-org.github.io/iptv/channels/ng.m3u`  |                                                       |
+| Nigeria                             |       14 | `https://iptv-org.github.io/iptv/channels/ng.m3u`  |                                                       |
 | North Korea                         |        1 | `https://iptv-org.github.io/iptv/channels/kp.m3u`  |                                                       |
 | Norway                              |        4 | `https://iptv-org.github.io/iptv/channels/no.m3u`  | `http://epg.streamstv.me/epg/guide-norway.xml.gz`     |
 | Oman                                |        8 | `https://iptv-org.github.io/iptv/channels/om.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
-| Pakistan                            |       24 | `https://iptv-org.github.io/iptv/channels/pk.m3u`  |                                                       |
+| Pakistan                            |       34 | `https://iptv-org.github.io/iptv/channels/pk.m3u`  |                                                       |
 | Palestine                           |       21 | `https://iptv-org.github.io/iptv/channels/ps.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
 | Panama                              |        5 | `https://iptv-org.github.io/iptv/channels/pa.m3u`  |                                                       |
 | Paraguay                            |        1 | `https://iptv-org.github.io/iptv/channels/py.m3u`  |                                                       |
@@ -216,7 +216,7 @@ Or select one of the playlists from the list below.
 | Uganda                              |        2 | `https://iptv-org.github.io/iptv/channels/ug.m3u`  |                                                       |
 | Ukraine                             |      182 | `https://iptv-org.github.io/iptv/channels/ua.m3u`  | `https://iptvx.one/epg/epg.xml.gz`                    |
 | United Arab Emirates                |      143 | `https://iptv-org.github.io/iptv/channels/ae.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
-| United Kingdom                      |       82 | `https://iptv-org.github.io/iptv/channels/uk.m3u`  | `http://195.154.221.171/epg/guideuk.xml.gz`           |
+| United Kingdom                      |       84 | `https://iptv-org.github.io/iptv/channels/uk.m3u`  | `http://195.154.221.171/epg/guideuk.xml.gz`           |
 | United States                       |      550 | `https://iptv-org.github.io/iptv/channels/us.m3u`  | `http://epg.streamstv.me/epg/guide-usa.xml.gz`        |
 | Uruguay                             |        5 | `https://iptv-org.github.io/iptv/channels/uy.m3u`  |                                                       |
 | Uzbekistan                          |        0 | `https://iptv-org.github.io/iptv/channels/uz.m3u`  |                                                       |
