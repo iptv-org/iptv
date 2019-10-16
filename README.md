@@ -51,7 +51,7 @@ Or select one of the playlists from the list below.
 | Travel        |       10 | `https://iptv-org.github.io/iptv/categories/travel.m3u`        |
 | Weather       |        6 | `https://iptv-org.github.io/iptv/categories/weather.m3u`       |
 | XXX           |       46 | `https://iptv-org.github.io/iptv/categories/xxx.m3u`           |
-| Other         |     5826 | `https://iptv-org.github.io/iptv/categories/other.m3u`         |
+| Other         |     5833 | `https://iptv-org.github.io/iptv/categories/other.m3u`         |
 
 
 ## Playlists by country
@@ -75,10 +75,10 @@ Or select one of the playlists from the list below.
 | Barbados                            |        1 | `https://iptv-org.github.io/iptv/channels/bb.m3u`  |                                                       |
 | Belarus                             |        7 | `https://iptv-org.github.io/iptv/channels/by.m3u`  | `https://iptvx.one/epg/epg.xml.gz`                    |
 | Belgium                             |       39 | `https://iptv-org.github.io/iptv/channels/be.m3u`  | `http://195.154.221.171/epg/guidebelgium.xml.gz`      |
-| Bolivia                             |        9 | `https://iptv-org.github.io/iptv/channels/bo.m3u`  |                                                       |
+| Bolivia                             |       15 | `https://iptv-org.github.io/iptv/channels/bo.m3u`  |                                                       |
 | Bosnia and Herzegovina              |        8 | `https://iptv-org.github.io/iptv/channels/ba.m3u`  | `http://epg.streamstv.me/epg/guide-exyu.xml.gz`       |
 | Brazil                              |       87 | `https://iptv-org.github.io/iptv/channels/br.m3u`  | `http://infinitytv.xyz/guide.xml`                     |
-| Brunei                              |        2 | `https://iptv-org.github.io/iptv/channels/bn.m3u`  |                                                       |
+| Brunei                              |        3 | `https://iptv-org.github.io/iptv/channels/bn.m3u`  |                                                       |
 | Bulgaria                            |       24 | `https://iptv-org.github.io/iptv/channels/bg.m3u`  | `http://195.154.221.171/epg/guidebulgaria.xml.gz`     |
 | Burkina Faso                        |        1 | `https://iptv-org.github.io/iptv/channels/bf.m3u`  |                                                       |
 | Cambodia                            |       25 | `https://iptv-org.github.io/iptv/channels/kh.m3u`  |                                                       |
