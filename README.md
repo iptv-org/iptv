@@ -51,7 +51,7 @@ Or select one of the playlists from the list below.
 | Travel        |       10 | `https://iptv-org.github.io/iptv/categories/travel.m3u`        |
 | Weather       |        6 | `https://iptv-org.github.io/iptv/categories/weather.m3u`       |
 | XXX           |       46 | `https://iptv-org.github.io/iptv/categories/xxx.m3u`           |
-| Other         |     5792 | `https://iptv-org.github.io/iptv/categories/other.m3u`         |
+| Other         |     5797 | `https://iptv-org.github.io/iptv/categories/other.m3u`         |
 
 
 ## Playlists by country
@@ -116,7 +116,7 @@ Or select one of the playlists from the list below.
 | Grenada                             |        1 | `https://iptv-org.github.io/iptv/channels/gd.m3u`  |                                                       |
 | Guadeloupe                          |        2 | `https://iptv-org.github.io/iptv/channels/gp.m3u`  |                                                       |
 | Guam                                |        0 | `https://iptv-org.github.io/iptv/channels/gu.m3u`  |                                                       |
-| Guatemala                           |        0 | `https://iptv-org.github.io/iptv/channels/gt.m3u`  |                                                       |
+| Guatemala                           |        2 | `https://iptv-org.github.io/iptv/channels/gt.m3u`  |                                                       |
 | Guyana                              |        2 | `https://iptv-org.github.io/iptv/channels/gy.m3u`  |                                                       |
 | Haiti                               |       25 | `https://iptv-org.github.io/iptv/channels/ht.m3u`  |                                                       |
 | Honduras                            |       31 | `https://iptv-org.github.io/iptv/channels/hn.m3u`  |                                                       |
@@ -138,7 +138,7 @@ Or select one of the playlists from the list below.
 | Kazakhstan                          |       23 | `https://iptv-org.github.io/iptv/channels/kz.m3u`  | `https://iptvx.one/epg/epg.xml.gz`                    |
 | Kenya                               |        5 | `https://iptv-org.github.io/iptv/channels/ke.m3u`  |                                                       |
 | Kosovo                              |       19 | `https://iptv-org.github.io/iptv/channels/xk.m3u`  |                                                       |
-| Kuwait                              |       29 | `https://iptv-org.github.io/iptv/channels/kw.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
+| Kuwait                              |       31 | `https://iptv-org.github.io/iptv/channels/kw.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
 | Kyrgyzstan                          |        6 | `https://iptv-org.github.io/iptv/channels/kg.m3u`  |                                                       |
 | Laos                                |        4 | `https://iptv-org.github.io/iptv/channels/la.m3u`  |                                                       |
 | Latvia                              |       22 | `https://iptv-org.github.io/iptv/channels/lv.m3u`  | `https://iptvx.one/epg/epg.xml.gz`                    |
@@ -211,7 +211,7 @@ Or select one of the playlists from the list below.
 | Togo                                |        0 | `https://iptv-org.github.io/iptv/channels/tg.m3u`  |                                                       |
 | Trinidad and Tobago                 |        1 | `https://iptv-org.github.io/iptv/channels/tt.m3u`  |                                                       |
 | Tunisia                             |        4 | `https://iptv-org.github.io/iptv/channels/tn.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
-| Turkey                              |      117 | `https://iptv-org.github.io/iptv/channels/tr.m3u`  | `http://195.154.221.171/epg/guideturkey.xml.gz`       |
+| Turkey                              |      118 | `https://iptv-org.github.io/iptv/channels/tr.m3u`  | `http://195.154.221.171/epg/guideturkey.xml.gz`       |
 | Turkmenistan                        |       10 | `https://iptv-org.github.io/iptv/channels/tm.m3u`  |                                                       |
 | Uganda                              |        4 | `https://iptv-org.github.io/iptv/channels/ug.m3u`  |                                                       |
 | Ukraine                             |      182 | `https://iptv-org.github.io/iptv/channels/ua.m3u`  | `https://iptvx.one/epg/epg.xml.gz`                    |
