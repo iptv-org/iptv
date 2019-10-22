@@ -51,7 +51,7 @@ Or select one of the playlists from the list below.
 | Travel        |       10 | `https://iptv-org.github.io/iptv/categories/travel.m3u`        |
 | Weather       |        6 | `https://iptv-org.github.io/iptv/categories/weather.m3u`       |
 | XXX           |       46 | `https://iptv-org.github.io/iptv/categories/xxx.m3u`           |
-| Other         |     5801 | `https://iptv-org.github.io/iptv/categories/other.m3u`         |
+| Other         |     5807 | `https://iptv-org.github.io/iptv/categories/other.m3u`         |
 
 
 ## Playlists by country
@@ -98,7 +98,7 @@ Or select one of the playlists from the list below.
 | Denmark                             |       17 | `https://iptv-org.github.io/iptv/channels/dk.m3u`  | `http://195.154.221.171/epg/guidedenmark.xml.gz`      |
 | Dominican Republic                  |       51 | `https://iptv-org.github.io/iptv/channels/do.m3u`  |                                                       |
 | Ecuador                             |       11 | `https://iptv-org.github.io/iptv/channels/ec.m3u`  |                                                       |
-| Egypt                               |       56 | `https://iptv-org.github.io/iptv/channels/eg.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
+| Egypt                               |       58 | `https://iptv-org.github.io/iptv/channels/eg.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
 | El Salvador                         |        2 | `https://iptv-org.github.io/iptv/channels/sv.m3u`  |                                                       |
 | Equatorial Guinea                   |        3 | `https://iptv-org.github.io/iptv/channels/gq.m3u`  |                                                       |
 | Estonia                             |       11 | `https://iptv-org.github.io/iptv/channels/ee.m3u`  | `http://195.154.221.171/epg/guideestonia.xml.gz`      |
@@ -142,7 +142,7 @@ Or select one of the playlists from the list below.
 | Kyrgyzstan                          |        6 | `https://iptv-org.github.io/iptv/channels/kg.m3u`  |                                                       |
 | Laos                                |        4 | `https://iptv-org.github.io/iptv/channels/la.m3u`  |                                                       |
 | Latvia                              |       22 | `https://iptv-org.github.io/iptv/channels/lv.m3u`  | `https://iptvx.one/epg/epg.xml.gz`                    |
-| Lebanon                             |       28 | `https://iptv-org.github.io/iptv/channels/lb.m3u`  |                                                       |
+| Lebanon                             |       30 | `https://iptv-org.github.io/iptv/channels/lb.m3u`  |                                                       |
 | Libya                               |        7 | `https://iptv-org.github.io/iptv/channels/ly.m3u`  |                                                       |
 | Liechtenstein                       |        2 | `https://iptv-org.github.io/iptv/channels/li.m3u`  |                                                       |
 | Lithuania                           |       11 | `https://iptv-org.github.io/iptv/channels/lt.m3u`  | `https://iptvx.one/epg/epg.xml.gz`                    |
@@ -186,7 +186,7 @@ Or select one of the playlists from the list below.
 | Rwanda                              |        2 | `https://iptv-org.github.io/iptv/channels/rw.m3u`  |                                                       |
 | Saint Kitts and Nevis               |        3 | `https://iptv-org.github.io/iptv/channels/kn.m3u`  |                                                       |
 | San Marino                          |        2 | `https://iptv-org.github.io/iptv/channels/sm.m3u`  |                                                       |
-| Saudi Arabia                        |       15 | `https://iptv-org.github.io/iptv/channels/sa.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
+| Saudi Arabia                        |       16 | `https://iptv-org.github.io/iptv/channels/sa.m3u`  | `http://195.154.221.171/epg/guidearab.xml.gz`         |
 | Senegal                             |        5 | `https://iptv-org.github.io/iptv/channels/sn.m3u`  |                                                       |
 | Serbia                              |       16 | `https://iptv-org.github.io/iptv/channels/rs.m3u`  | `http://epg.streamstv.me/epg/guide-exyu.xml.gz`       |
 | Sierra Leone                        |        1 | `https://iptv-org.github.io/iptv/channels/sl.m3u`  |                                                       |
@@ -197,7 +197,7 @@ Or select one of the playlists from the list below.
 | Somalia                             |        5 | `https://iptv-org.github.io/iptv/channels/so.m3u`  |                                                       |
 | South Africa                        |        2 | `https://iptv-org.github.io/iptv/channels/za.m3u`  | `http://i.mjh.nz/za/DStv/epg.xml.gz`                  |
 | South Korea                         |       82 | `https://iptv-org.github.io/iptv/channels/kr.m3u`  |                                                       |
-| Spain                               |      185 | `https://iptv-org.github.io/iptv/channels/es.m3u`  | `http://195.154.221.171/epg/guidespain.xml.gz`        |
+| Spain                               |      186 | `https://iptv-org.github.io/iptv/channels/es.m3u`  | `http://195.154.221.171/epg/guidespain.xml.gz`        |
 | Sri Lanka                           |        6 | `https://iptv-org.github.io/iptv/channels/lk.m3u`  |                                                       |
 | Sudan                               |        7 | `https://iptv-org.github.io/iptv/channels/sd.m3u`  |                                                       |
 | Suriname                            |        0 | `https://iptv-org.github.io/iptv/channels/sr.m3u`  |                                                       |
