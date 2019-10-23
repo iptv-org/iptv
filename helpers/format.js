@@ -83,7 +83,7 @@ async function main() {
         for(let channelId in buffer[epgUrl].channels) {
           let c = buffer[epgUrl].channels[channelId]
           for(let epgName of c.names) {
-            let regexp = new RegExp(`^${epgName}`, 'i')
+            let regexp = new RegExp(`^${epgName}$`, 'i')
             if(regexp.test(channel.title)) {
               if(!channel.id) {
                 channel.id = c.id
