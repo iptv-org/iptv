@@ -83,8 +83,9 @@ async function main() {
         for(let channelId in buffer[epgUrl].channels) {
           let c = buffer[epgUrl].channels[channelId]
           for(let epgName of c.names) {
+            channelTitle = channel.title.replace(/(fhd|hd|sd|高清)$/i, '').trim()
             let regexp = new RegExp(`^${epgName}$`, 'i')
-            if(regexp.test(channel.title)) {
+            if(regexp.test(channelTitle)) {
               if(!channel.id) {
                 channel.id = c.id
                 continue
