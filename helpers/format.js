@@ -78,6 +78,23 @@ async function main() {
     }
 
     if(buffer[epgUrl]) {
+      console.log('Add missing tvg-id from EPG by channel title...')
+      for(let channel of channels) {
+        for(let channelId in buffer[epgUrl].channels) {
+          let c = buffer[epgUrl].channels[channelId]
+          for(let epgName of c.names) {
+            let regexp = new RegExp(`^${epgName}`, 'i')
+            if(regexp.test(channel.title)) {
+              if(!channel.id) {
+                channel.id = c.id
+              }
+            }
+          }
+        }
+      }
+    }
+
+    if(buffer[epgUrl]) {
       console.log(`Fills in missing channel's data...`)
       for(let channel of channels) {
         let channelId = channel.id
