@@ -1,4 +1,5 @@
 const util = require('./util')
+const escapeStringRegexp = require('escape-string-regexp')
 
 const debug = false
 const verbose = false
@@ -83,6 +84,7 @@ async function main() {
         for(let channelId in buffer[epgUrl].channels) {
           let c = buffer[epgUrl].channels[channelId]
           for(let epgName of c.names) {
+            epgName = escapeStringRegexp(epgName)
             channelTitle = channel.title.replace(/(fhd|hd|sd|高清)$/i, '').trim()
             let regexp = new RegExp(`^${epgName}$`, 'i')
             if(regexp.test(channelTitle)) {
