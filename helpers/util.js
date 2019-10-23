@@ -5,7 +5,6 @@ const axios = require('axios')
 const zlib = require("zlib")
 const DOMParser = require('xmldom').DOMParser
 const urlParser = require('url')
-const tablemark = require('tablemark')
 
 const supportedCategories = [ 'Auto','Business', 'Classic','Comedy','Documentary','Education','Entertainment', 'Family','Fashion','Food', 'General', 'Health', 'History', 'Hobby', 'Kids', 'Legislative','Lifestyle','Local', 'Movies', 'Music', 'News', 'Quiz', 'Religious','Sci-Fi', 'Shop', 'Sport', 'Travel', 'Weather', 'XXX' ]
 
@@ -221,7 +220,32 @@ function skipPlaylist(filename) {
 }
 
 function generateTable(data, options) {
-  return tablemark(data, options)
+  let output = '<table>'
+
+  output += '<thead><tr>'
+  for (let column of options.columns) {
+    output += `<th align="${column.align}">${column.name}</th>`
+  }
+  output += '</tr></thead>'
+
+  output += '<tbody>'
+  for (let item of data) {
+    output += '<tr>'
+    let i = 0
+    for (let prop in item) {
+      const column = options.columns[i]
+      let nowrap = column.nowrap
+      let align = column.align
+      output += `<td align="${align}"${nowrap ? ' nowrap' : ''}>${item[prop]}</td>`
+      i++
+    }
+    output += '</tr>'
+  }
+  output += '</tbody>'
+
+  output += '</table>'
+
+  return output
 }
 
 module.exports = {
