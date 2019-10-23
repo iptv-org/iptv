@@ -87,6 +87,7 @@ async function main() {
             if(regexp.test(channel.title)) {
               if(!channel.id) {
                 channel.id = c.id
+                continue
               }
             }
           }
