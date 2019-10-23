@@ -39,7 +39,7 @@ function main() {
     console.log(`Creating '${filename}'...`)
     util.createFile(filename, '#EXTM3U\n')
     const categoryName = util.supportedCategories.find(c => c.toLowerCase() === category) || 'Other'
-    repo.categories[category] = { category: categoryName, channels: 0, playlist: `\`https://iptv-org.github.io/iptv/${filename}\`` }
+    repo.categories[category] = { category: categoryName, channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/${filename}</code>` }
   }
 
   for(let country of countries) {
@@ -51,8 +51,8 @@ function main() {
       code: util.getBasename(country.url).toUpperCase()
     }
 
-    const epg = playlist.header.attrs['x-tvg-url'] ? `\`${playlist.header.attrs['x-tvg-url']}\`` : ''
-    repo.countries[c.code] = { country: c.name, channels: playlist.items.length, playlist: `\`https://iptv-org.github.io/iptv/${country.url}\``, epg }
+    const epg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
+    repo.countries[c.code] = { country: c.name, channels: playlist.items.length, playlist: `<code>https://iptv-org.github.io/iptv/${country.url}</code>`, epg }
 
     for(let item of playlist.items) {
 
@@ -108,7 +108,7 @@ function main() {
     columns: [
       { name: 'Country', align: 'left' },
       { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left' },
+      { name: 'Playlist', align: 'left', nowrap: true },
       { name: 'EPG', align: 'left' }
     ]
   })
