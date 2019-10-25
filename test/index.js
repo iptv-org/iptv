@@ -1,6 +1,7 @@
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+
 const util = require('../helpers/util')
-const axios = require('axios')
-const https = require('https')
+const ffmpeg = require('fluent-ffmpeg')
 
 const verbose = process.env.npm_config_debug || false
 const errorLog = 'error.log'
@@ -14,23 +15,6 @@ let stats = {
   channels: 0,
   failures: 0
 }
-
-const instance = axios.create({ 
-  timeout: config.timeout,
-  httpsAgent: new https.Agent({  
-    rejectUnauthorized: false
-  }),
-  validateStatus: function (status) {
-    return status >= 200 && status < 400
-  },
-  headers: {
-    'Accept': '*/*',
-    'Accept-Language': 'en_US',
-    'User-Agent': 'VLC/3.0.8 LibVLC/3.0.8',
-    'Range': 'bytes=0-'
-  },
-  responseType: 'stream'
-})
 
 async function test() {
 
@@ -52,33 +36,30 @@ async function test() {
 
     for(let item of playlist.items) {
 
-      await new Promise(resolve => {
-        setTimeout(resolve, config.delay)
-      })
-
       stats.channels++
 
-      try {
-
-        if(verbose) {
-          console.log(`Checking '${item.url}'...`)
-        }
-
-        let response = await instance.get(item.url)
-
-        response.data.destroy()
-
-        continue
-
-      } catch (err) {
-
-        if(err.request && ['ECONNRESET'].indexOf(err.code) > -1) continue
-
-        stats.failures++
-
-        writeToLog(country.url, err.message, item.url)
-
+      if(verbose) {
+        console.log(`Checking '${item.url}'...`)
       }
+
+      await new Promise(resolve => {
+        ffmpeg(item.url, { timeout: config.timeout }).ffprobe((err) => {
+      
+          if(err) {
+            const message = err.message.split('\n').find(line => {
+              return /^\[[\w|\s|\d|@|\]]+/i.test(line)
+            }).split(']')[1].trim()
+
+            stats.failures++
+
+            writeToLog(country.url, message, item.url)
+
+          }
+
+          resolve()
+
+        })
+      })
 
     }
   }
@@ -105,5 +86,5 @@ function writeToLog(country, msg, url) {
   var now = new Date()
   var line = `${country}: ${msg} '${url}'`
   util.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
-  console.log(`Error: ${msg} '${url}'`)
+  console.log(`${msg} '${url}'`)
 }
