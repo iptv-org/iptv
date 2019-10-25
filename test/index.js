@@ -46,9 +46,7 @@ async function test() {
         ffmpeg(item.url, { timeout: config.timeout }).ffprobe((err) => {
       
           if(err) {
-            const message = err.message.split('\n').find(line => {
-              return /^\[[\w|\s|\d|@|\]]+/i.test(line)
-            }).split(']')[1].trim()
+            const message = parseMessage(err, item.url)
 
             stats.failures++
 
@@ -87,4 +85,20 @@ function writeToLog(country, msg, url) {
   var line = `${country}: ${msg} '${url}'`
   util.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
   console.log(`${msg} '${url}'`)
+}
+
+function parseMessage(err, u) {
+  if(!err || !err.message) return
+
+  const msgArr = err.message.split('\n')
+
+  if(msgArr.length === 0) return
+
+  const line = msgArr.find(line => {
+    return line.indexOf(u) === 0
+  })
+
+  if(!line) return
+
+  return line.replace(`${u}: `, '')
 }
