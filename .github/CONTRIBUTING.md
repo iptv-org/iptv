@@ -79,9 +79,9 @@ If it turns out that the broadcast still does not start, this means that it can 
 
 It would also be nice if you indicated in the description of the PR the reason for the removal of the channel, so that other members of the community could also double-check the channel for their part.
 
-It is also possible to automatically find broken broadcasts. To do this, you first need to install [Node.js](https://nodejs.org/en/) on your computer.
+It is also possible to automatically find broken broadcasts. To do this, you first need to install [Node.js](https://nodejs.org/en/) and [ffmpeg](https://www.ffmpeg.org) on your computer.
 
-Copy this repository to your computer. Then open it in the console line and install all the dependencies from it by running this command:
+After that copy this repository to your computer, open it in the console and install all the dependencies from it by running this command:
 
 ```sh
 npm install
