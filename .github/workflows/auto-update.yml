@@ -16,8 +16,8 @@ jobs:
     - name: "npm install"
       run: npm install
       
-    - name: "npm run format"
-      run: npm run format
+    - name: "npm run format --epg"
+      run: npm run format --epg
 
     - name: "npm run generate"
       run: npm run generate
