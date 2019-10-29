@@ -44,14 +44,10 @@ async function test() {
       await new Promise(resolve => {
         
         const timeout = setTimeout(() => {
-          stats.failures++
-
-          writeToLog(country.url, `Timeout exceeded`, item.url)
-
           resolve()
         }, config.timeout * 1000)
 
-        ffmpeg(item.url, { timeout: config.timeout }).ffprobe((err) => {
+        ffmpeg(item.url).ffprobe((err) => {
       
           if(err) {
             const message = parseMessage(err, item.url)
@@ -59,7 +55,6 @@ async function test() {
             stats.failures++
 
             writeToLog(country.url, message, item.url)
-
           }
 
           clearTimeout(timeout)
