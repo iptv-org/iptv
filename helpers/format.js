@@ -1,5 +1,6 @@
 const util = require('./util')
 const escapeStringRegexp = require('escape-string-regexp')
+const ISO6391 = require('iso-639-1')
 
 const debug = false
 const verbose = false
@@ -87,14 +88,16 @@ async function main() {
       for(let channel of channels) {
         for(let channelId in buffer[epgUrl].channels) {
           let c = buffer[epgUrl].channels[channelId]
-          for(let epgName of c.names) {
-            epgName = escapeStringRegexp(epgName)
-            channelTitle = channel.title.replace(/(fhd|hd|sd|高清)$/i, '').trim()
-            let regexp = new RegExp(`^${epgName}$`, 'i')
-            if(regexp.test(channelTitle)) {
-              if(!channel.id) {
-                channel.id = c.id
-                continue
+          for(let epgName of c.name) {
+            if(epgName.value) {
+              let escaped = escapeStringRegexp(epgName.value)
+              channelTitle = channel.title.replace(/(fhd|hd|sd|高清)$/i, '').trim()
+              let regexp = new RegExp(`^${escaped}$`, 'i')
+              if(regexp.test(channelTitle)) {
+                if(!channel.id) {
+                  channel.id = c.id
+                  continue
+                }
               }
             }
           }
@@ -111,16 +114,25 @@ async function main() {
         if(!c) continue
         let updated = false
         
-        if(!channel.name && c.names[0]) {
-          channel.name = c.names[0]
+        if(!channel.name && c.name.length) {
+          channel.name = c.name[0].value
           updated = true
           if(verbose) {
-            console.log(`Added name '${c.names[0]}' to '${channel.id}'`)
+            console.log(`Added name '${c.name[0].value}' to '${channel.id}'`)
           }
         }
 
-        if(!channel.logo && c.icon) {
-          const icon = c.icon.split('|')[0]
+        if(!channel.language && c.name.length && c.name[0].lang) {
+          let language = ISO6391.getName(c.name[0].lang)
+          channel.language = language
+          updated = true
+          if(verbose) {
+            console.log(`Added language '${language}' to '${channel.id}'`)
+          }
+        }
+
+        if(!channel.logo && c.icon.length) {
+          const icon = c.icon[0].split('|')[0]
           channel.logo = icon
           updated = true
           if(verbose) {

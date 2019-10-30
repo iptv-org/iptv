@@ -3,7 +3,7 @@ const path = require('path')
 const parser = require('iptv-playlist-parser')
 const axios = require('axios')
 const zlib = require("zlib")
-const DOMParser = require('xmldom').DOMParser
+const epgParser = require('epg-parser')
 const urlParser = require('url')
 
 const supportedCategories = [ 'Auto','Business', 'Classic','Comedy','Documentary','Education','Entertainment', 'Family','Fashion','Food', 'General', 'Health', 'History', 'Hobby', 'Kids', 'Legislative','Lifestyle','Local', 'Movies', 'Music', 'News', 'Quiz', 'Religious','Sci-Fi', 'Shop', 'Sport', 'Travel', 'Weather', 'XXX' ]
@@ -39,6 +39,7 @@ class Channel {
   constructor(data) {
     this.id = data.tvg.id
     this.name = data.tvg.name
+    this.language = data.tvg.language
     this.logo = data.tvg.logo
     this.group = this._getGroup(data.group.title)
     this.url = data.url
@@ -60,7 +61,7 @@ class Channel {
   }
 
   toString() {
-    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-logo="${this.logo}" group-title="${this.group}",${this.title}`
+    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" group-title="${this.group}",${this.title}`
 
     return '#EXTINF:' + info + '\n' + this.url + '\n'
   }
@@ -78,38 +79,20 @@ function createChannel(data) {
 }
 
 async function loadEPG(url) {
-  const data = await getGzipped(url)
-  const doc = new DOMParser().parseFromString(data, 'text/xml')
-  const channelElements = doc.getElementsByTagName('channel')
-  let channels = {}
-  for(let i = 0; i < channelElements.length; i++) {
-    let channel = {}
-    let channelElement = channelElements[i]
-    channel.id = channelElement.getAttribute('id')
-    channel.names = []
-    for(let nameElement of Object.values(channelElement.getElementsByTagName('display-name'))) {
-      if(nameElement.firstChild) {
-        channel.names.push(nameElement.firstChild.nodeValue)
-      }
-    }
-    channel.names = channel.names.filter(n => n)
-    const iconElements = channelElement.getElementsByTagName('icon')
-    if(iconElements.length) {
-      channel.icon = iconElements[0].getAttribute('src')
-    }
-
+  const content = await getEPGFile(url)
+  const result = epgParser.parse(content)
+  const channels = {}
+  for(let channel of result.channels) {
     channels[channel.id] = channel
   }
 
   return Promise.resolve({ 
     url, 
-    channels 
+    channels
   })
 }
 
-function getGzipped(url) {
-  const supportedTypes = ['application/x-gzip', 'application/octet-stream']
-
+function getEPGFile(url) {
   return new Promise((resolve, reject) => {
     var buffer = []
     axios({
@@ -118,7 +101,7 @@ function getGzipped(url) {
       responseType:'stream'
     }).then(res => {
       let stream
-      if(supportedTypes.indexOf(res.headers['content-type']) > -1) {
+      if(/\.gz$/i.test(url)) {
         let gunzip = zlib.createGunzip()         
         res.data.pipe(gunzip)
         stream = gunzip
