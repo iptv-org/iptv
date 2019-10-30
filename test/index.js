@@ -6,7 +6,7 @@ const ffmpeg = require('fluent-ffmpeg')
 const verbose = process.env.npm_config_debug || false
 const errorLog = 'error.log'
 const config = {
-  timeout: 60
+  timeout: 10
 }
 
 let stats = {
@@ -44,10 +44,12 @@ async function test() {
       await new Promise(resolve => {
         
         const timeout = setTimeout(() => {
+
           resolve()
+        
         }, config.timeout * 1000)
 
-        ffmpeg(item.url).ffprobe((err) => {
+        ffmpeg(item.url, { timeout: 60 }).ffprobe((err) => {
       
           if(err) {
             const message = parseMessage(err, item.url)
