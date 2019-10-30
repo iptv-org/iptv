@@ -1,5 +1,6 @@
 const util = require('./util')
 const escapeStringRegexp = require('escape-string-regexp')
+const ISO6391 = require('iso-639-1')
 
 const debug = false
 const verbose = false
@@ -118,6 +119,15 @@ async function main() {
           updated = true
           if(verbose) {
             console.log(`Added name '${c.name[0].value}' to '${channel.id}'`)
+          }
+        }
+
+        if(!channel.language && c.name.length && c.name[0].lang) {
+          let language = ISO6391.getName(c.name[0].lang)
+          channel.language = language
+          updated = true
+          if(verbose) {
+            console.log(`Added language '${language}' to '${channel.id}'`)
           }
         }
 

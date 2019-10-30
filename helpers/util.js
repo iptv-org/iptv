@@ -39,6 +39,7 @@ class Channel {
   constructor(data) {
     this.id = data.tvg.id
     this.name = data.tvg.name
+    this.language = data.tvg.language
     this.logo = data.tvg.logo
     this.group = this._getGroup(data.group.title)
     this.url = data.url
@@ -60,7 +61,7 @@ class Channel {
   }
 
   toString() {
-    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-logo="${this.logo}" group-title="${this.group}",${this.title}`
+    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" group-title="${this.group}",${this.title}`
 
     return '#EXTINF:' + info + '\n' + this.url + '\n'
   }
