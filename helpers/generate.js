@@ -64,21 +64,6 @@ function main() {
 
       let channel = util.createChannel(item)
 
-      let group = channel.group
-      for(const type of types) {
-        if(type === 'full') {
-          channel.group = [ c.name, channel.group ].filter(i => i).join(';')
-        } else if(type === 'country') {
-          channel.group = c.name
-        } else if(type === 'language') {
-          channel.group = channel.language
-        } else {
-          channel.group = group
-        }
-
-        util.appendToFile(`index.${type}.m3u`, channel.toString())
-      }
-
       let category = channel.group.toLowerCase()
       if(categoryBuffer[category]) {
         categoryBuffer[category].push(channel)
@@ -95,6 +80,21 @@ function main() {
         languageBuffer[languageCode].push(channel)
       } else {
         languageBuffer['undefined'].push(channel)
+      }
+
+      let group = channel.group
+      for(const type of types) {
+        if(type === 'full') {
+          channel.group = [ c.name, channel.group ].filter(i => i).join(';')
+        } else if(type === 'country') {
+          channel.group = c.name
+        } else if(type === 'language') {
+          channel.group = channel.language
+        } else {
+          channel.group = group
+        }
+
+        util.appendToFile(`index.${type}.m3u`, channel.toString())
       }
 
       stats.channels++
