@@ -8,6 +8,26 @@ let list = {
   categories: {}
 }
 
+function main() {
+  console.log(`Parsing index...`)
+  parseIndex()
+  console.log('Generating index.country.m3u...')
+  generateCountryIndex()
+  console.log('Generating index.language.m3u...')
+  generateLanguageIndex()
+  console.log('Generating index.content.m3u...')
+  generateContentIndex()
+  console.log('Generating index.full.m3u...')
+  generateFullIndex()
+  console.log('Generating /categories...')
+  generateCategories()
+  console.log('Generating /languages...')
+  generateLanguages()
+  console.log('Done.\n')
+
+  console.log(`Countries: ${Object.values(list.countries).length}. Languages: ${Object.values(list.languages).length}. Categories: ${Object.values(list.categories).length}. Channels: ${list.all.length}.`)
+}
+
 function parseIndex() {
   const root = util.parsePlaylist('index.m3u')
 
@@ -140,57 +160,6 @@ function generateLanguages() {
       util.appendToFile(filename, channel.toString())
     }
   }
-}
-
-function main() {
-  console.log(`Parsing index...`)
-  parseIndex()
-  console.log('Generating index.country.m3u...')
-  generateCountryIndex()
-  console.log('Generating index.language.m3u...')
-  generateLanguageIndex()
-  console.log('Generating index.content.m3u...')
-  generateContentIndex()
-  console.log('Generating index.full.m3u...')
-  generateFullIndex()
-  console.log('Generating /categories...')
-  generateCategories()
-  console.log('Generating /languages...')
-  generateLanguages()
-  // console.log(output)
-
-  // const categories = util.supportedCategories
-  // for(let category of categories) {
-  //   const categoryCode = category.toLowerCase()
-  //   util.createFile(`categories/${categoryCode}.m3u`, '#EXTM3U\n')
-  // }
-
-  // util.clearCache()
-  // for(const languageCode in languageBuffer) {
-  //   const filename = `languages/${languageCode}.m3u`
-  //   util.createFile(filename, '#EXTM3U\n')
-    
-  //   let channels = util.sortByTitleAndUrl(languageBuffer[languageCode])
-  //   for(const channel of channels) {
-  //     if(!util.checkCache(channel.url)) {
-  //       util.appendToFile(filename, channel.toString())
-  //       util.addToCache(channel.url)
-  //     }
-  //   }
-  // }
-
-  // util.clearCache()
-  // for(const category in categoryBuffer) {
-  //   let channels = util.sortByTitleAndUrl(categoryBuffer[category])
-  //   for(const channel of channels) {
-  //     if(!util.checkCache(channel.url)) {
-  //       util.appendToFile(`categories/${category}.m3u`, channel.toString())
-  //       util.addToCache(channel.url)
-  //     }
-  //   }
-  // }
-  // 
-  // console.log(`Countries: ${stats.countries}. Languages: ${stats.channels}. Categories: ${stats.channels}. Channels: ${stats.channels}.`)
 }
 
 main()
