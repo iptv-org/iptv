@@ -41,12 +41,12 @@ class Channel {
     this.name = data.tvg.name
     this.language = data.tvg.language
     this.logo = data.tvg.logo
-    this.group = this._getGroup(data.group.title)
+    this.group = this._filterGroup(data.group.title)
     this.url = data.url
     this.title = data.name
   }
 
-  _getGroup(groupTitle) {
+  _filterGroup(groupTitle) {
     if(!groupTitle) return ''
       
     const groupIndex = supportedCategories.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
