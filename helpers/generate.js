@@ -19,12 +19,6 @@ categories.forEach(category => {
   categoryBuffer[category] = []
 })
 
-let repo = {
-  categories: {},
-  countries: {},
-  languages: {}
-}
-
 function main() {
   console.log(`Parsing 'index.m3u'...`)
   const playlist = util.parsePlaylist('index.m3u')
@@ -45,7 +39,6 @@ function main() {
     console.log(`Creating '${filename}'...`)
     util.createFile(filename, '#EXTM3U\n')
     const categoryName = util.supportedCategories.find(c => c.toLowerCase() === category) || 'Other'
-    repo.categories[category] = { category: categoryName, channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/${filename}</code>` }
   }
 
   for(let country of countries) {
@@ -56,9 +49,6 @@ function main() {
       name: country.name,
       code: util.getBasename(country.url).toUpperCase()
     }
-
-    const epg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
-    repo.countries[c.code] = { country: c.name, channels: playlist.items.length, playlist: `<code>https://iptv-org.github.io/iptv/${country.url}</code>`, epg }
 
     for(let item of playlist.items) {
 
@@ -103,14 +93,6 @@ function main() {
     stats.countries++
   }
 
-  for(const languageCode in languageBuffer) {
-    let languageName = ISO6391.getName(languageCode)
-    if(languageName) {
-      repo.languages[languageCode] = { language: languageName, channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/languages/${languageCode}.m3u</code>` }
-    }
-  }
-  repo.languages['undefined'] = { language: 'Undefined', channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code>` }
-
   util.clearCache()
   for(const languageCode in languageBuffer) {
     const filename = `languages/${languageCode}.m3u`
@@ -121,7 +103,6 @@ function main() {
       if(!util.checkCache(channel.url)) {
         util.appendToFile(filename, channel.toString())
         util.addToCache(channel.url)
-        repo.languages[languageCode].channels++
       }
     }
   }
@@ -133,47 +114,9 @@ function main() {
       if(!util.checkCache(channel.url)) {
         util.appendToFile(`categories/${category}.m3u`, channel.toString())
         util.addToCache(channel.url)
-        repo.categories[category].channels++
       }
     }
   }
-
-  const languages = Object.values(repo.languages)
-  const lastRow = languages.splice(languages.length - 1, 1)[0]
-  languages.sort((a, b) => {
-    if(a.language < b.language) { return -1 }
-    if(a.language > b.language) { return 1 }
-    return 0
-  })
-  languages.push(lastRow)
-
-  const languagesTable = util.generateTable(languages, {
-    columns: [
-      { name: 'Language', align: 'left' },
-      { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left' }
-    ]
-  })
-  util.createFile('./helpers/languages.md', languagesTable)
-
-  const categoriesTable = util.generateTable(Object.values(repo.categories), {
-    columns: [
-      { name: 'Category', align: 'left' },
-      { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left' }
-    ]
-  })
-  util.createFile('./helpers/categories.md', categoriesTable)
-
-  const countriesTable = util.generateTable(Object.values(repo.countries), {
-    columns: [
-      { name: 'Country', align: 'left' },
-      { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left', nowrap: true },
-      { name: 'EPG', align: 'left' }
-    ]
-  })
-  util.createFile('./helpers/countries.md', countriesTable)
 }
 
 main()
