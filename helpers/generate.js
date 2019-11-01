@@ -120,6 +120,28 @@ function generateFullIndex() {
   }
 }
 
+function generateCategories() {
+  for(let cid in list.categories) {
+    let category = list.categories[cid]
+    const filename = `categories/${cid}.m3u`
+    util.createFile(filename, '#EXTM3U\n')
+    for(let channel of category) {
+      util.appendToFile(filename, channel.toString())
+    }
+  }
+}
+
+function generateLanguages() {
+  for(let lid in list.languages) {
+    let language = list.languages[lid]
+    const filename = `languages/${lid}.m3u`
+    util.createFile(filename, '#EXTM3U\n')
+    for(let channel of language) {
+      util.appendToFile(filename, channel.toString())
+    }
+  }
+}
+
 function main() {
   console.log(`Parsing index...`)
   parseIndex()
@@ -131,29 +153,11 @@ function main() {
   generateContentIndex()
   console.log('Generating index.full.m3u...')
   generateFullIndex()
+  console.log('Generating /categories...')
+  generateCategories()
+  console.log('Generating /languages...')
+  generateLanguages()
   // console.log(output)
-
-  // let group = channel.group
-      // for(const type of types) {
-      //   if(type === 'full') {
-      //     channel.group = [ c.name, channel.group ].filter(i => i).join(';')
-      //   } else if(type === 'country') {
-      //     channel.group = c.name
-      //   } else if(type === 'language') {
-      //     channel.group = channel.language
-      //   } else {
-      //     channel.group = group
-      //   }
-
-      //   util.appendToFile(`index.${type}.m3u`, channel.toString())
-      // }
-
-
-  // for(let type of types) {
-  //   const filename = `index.${type}.m3u`
-  //   console.log(`Creating '${filename}'...`)
-  //   util.createFile(filename, '#EXTM3U\n')
-  // }
 
   // const categories = util.supportedCategories
   // for(let category of categories) {
