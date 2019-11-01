@@ -5,6 +5,7 @@ const axios = require('axios')
 const zlib = require("zlib")
 const epgParser = require('epg-parser')
 const urlParser = require('url')
+const ISO6391 = require('iso-639-1')
 
 const supportedCategories = [ 'Auto','Business', 'Classic','Comedy','Documentary','Education','Entertainment', 'Family','Fashion','Food', 'General', 'Health', 'History', 'Hobby', 'Kids', 'Legislative','Lifestyle','Local', 'Movies', 'Music', 'News', 'Quiz', 'Religious','Sci-Fi', 'Shop', 'Sport', 'Travel', 'Weather', 'XXX' ]
 
@@ -39,7 +40,7 @@ class Channel {
   constructor(data) {
     this.id = data.tvg.id
     this.name = data.tvg.name
-    this.language = data.tvg.language
+    this.language = this._filterLanguage(data.tvg.language)
     this.logo = data.tvg.logo
     this.group = this._filterGroup(data.group.title)
     this.url = data.url
@@ -58,6 +59,14 @@ class Channel {
     }
 
     return groupTitle
+  }
+
+  _filterLanguage(languageName) {
+    if(ISO6391.getCode(languageName) !== '') {
+      return languageName
+    }
+
+    return ''
   }
 
   toString() {
