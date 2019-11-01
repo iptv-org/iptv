@@ -22,8 +22,8 @@ jobs:
     - name: "npm run generate"
       run: npm run generate
 
-    - name: "npm run generate:readme"
-      run: npm run generate:readme
+    - name: "npm run update-readme"
+      run: npm run update-readme
     
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v1.5.1
