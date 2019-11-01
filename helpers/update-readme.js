@@ -34,6 +34,7 @@ function main() {
   }
 
   for(let category of categories) {
+    const filename = `categories/${category}.m3u`
     const categoryName = util.supportedCategories.find(c => c.toLowerCase() === category) || 'Other'
     repo.categories[category] = { category: categoryName, channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/${filename}</code>` }
   }
