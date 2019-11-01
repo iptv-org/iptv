@@ -1,17 +1,14 @@
 const util = require('./util')
 const ISO6391 = require('iso-639-1')
+const markdownInclude = require('markdown-include')
+const path = require('path')
 
-const debug = false
-const categories = util.supportedCategories.map(c => c.toLowerCase())
-let stats = {
-  countries: 0,
-  channels: 0
-}
 
 let languageBuffer = {
   undefined: []
 }
 
+let categories = util.supportedCategories.map(c => c.toLowerCase())
 let categoryBuffer = {}
 categories.push('other')
 categories.forEach(category => {
@@ -28,28 +25,28 @@ function main() {
   console.log(`Parsing 'index.m3u'...`)
   const playlist = util.parsePlaylist('index.m3u')
   let countries = playlist.items
-  if(debug) {
-    console.log('Debug mode is turn on')
-    countries = countries.slice(0, 1)
-  }
 
   for(let category of categories) {
     const filename = `categories/${category}.m3u`
     const categoryName = util.supportedCategories.find(c => c.toLowerCase() === category) || 'Other'
-    repo.categories[category] = { category: categoryName, channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/${filename}</code>` }
+    repo.categories[category] = { 
+      category: categoryName, 
+      channels: 0, 
+      playlist: `<code>https://iptv-org.github.io/iptv/${filename}</code>` 
+    }
   }
 
   for(let country of countries) {
     console.log(`Parsing '${country.url}'...`)
     const playlist = util.parsePlaylist(country.url)
 
-    const c = {
-      name: country.name,
-      code: util.getBasename(country.url).toUpperCase()
+    const countryCode = util.getBasename(country.url).toUpperCase()
+    repo.countries[countryCode] = { 
+      country: country.name, 
+      channels: playlist.items.length, 
+      playlist: `<code>https://iptv-org.github.io/iptv/${country.url}</code>`, 
+      epg: playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
     }
-
-    const epg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
-    repo.countries[c.code] = { country: c.name, channels: playlist.items.length, playlist: `<code>https://iptv-org.github.io/iptv/${country.url}</code>`, epg }
 
     for(let item of playlist.items) {
 
@@ -72,20 +69,25 @@ function main() {
       } else {
         languageBuffer['undefined'].push(channel)
       }
-
-      stats.channels++
     }
-
-    stats.countries++
   }
 
   for(const languageCode in languageBuffer) {
     let languageName = ISO6391.getName(languageCode)
     if(languageName) {
-      repo.languages[languageCode] = { language: languageName, channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/languages/${languageCode}.m3u</code>` }
+      repo.languages[languageCode] = { 
+        language: languageName, 
+        channels: 0, 
+        playlist: `<code>https://iptv-org.github.io/iptv/languages/${languageCode}.m3u</code>` 
+      }
     }
   }
-  repo.languages['undefined'] = { language: 'Undefined', channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code>` }
+
+  repo.languages['undefined'] = { 
+    language: 'Undefined', 
+    channels: 0, 
+    playlist: `<code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code>` 
+  }
 
   util.clearCache()
   for(const languageCode in languageBuffer) {
@@ -145,8 +147,10 @@ function main() {
     ]
   })
   util.createFile('./helpers/countries.md', countriesTable)
+
+  markdownInclude.compileFiles(path.resolve(__dirname, './markdown.json'))
 }
 
 main()
 
-console.log(`Countries: ${stats.countries}. Channels: ${stats.channels}.`)
+console.log(`Done.`)
