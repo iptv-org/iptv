@@ -3,7 +3,7 @@ const ISO6391 = require('iso-639-1')
 const markdownInclude = require('markdown-include')
 const path = require('path')
 
-let data = {
+let output = {
   countries: [],
   languages: [],
   categories: []
@@ -33,7 +33,7 @@ function parseIndex() {
     const countryCode = util.getBasename(rootItem.url).toUpperCase()
     const epg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
 
-    data.countries.push({ 
+    output.countries.push({ 
       country: rootItem.name, 
       channels: playlist.items.length, 
       playlist: `<code>https://iptv-org.github.io/iptv/${rootItem.url}</code>`, 
@@ -42,7 +42,7 @@ function parseIndex() {
 
     for(let item of playlist.items) {
       // language
-      const languageName = item.group.title || 'Undefined'
+      const languageName = item.tvg.language || 'Undefined'
       const languageCode = ISO6391.getCode(languageName) || 'undefined'
       if(languages[languageCode]) { 
         languages[languageCode].channels++
@@ -69,12 +69,12 @@ function parseIndex() {
     }
   }
 
-  data.languages = Object.values(languages)
-  data.categories = Object.values(categories)
+  output.languages = Object.values(languages)
+  output.categories = Object.values(categories)
 }
 
 function generateCountriesTable() {
-  const table = util.generateTable(data.countries, {
+  const table = util.generateTable(output.countries, {
     columns: [
       { name: 'Country', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -87,7 +87,7 @@ function generateCountriesTable() {
 }
 
 function generateLanguagesTable() {
-  data.languages.sort((a, b) => {
+  output.languages.sort((a, b) => {
     if(a.language === 'Undefined') { return 1 }
     if(b.language === 'Undefined') { return -1 }
     if(a.language < b.language) { return -1 }
@@ -95,7 +95,7 @@ function generateLanguagesTable() {
     return 0
   })
 
-  const table = util.generateTable(data.languages, {
+  const table = util.generateTable(output.languages, {
     columns: [
       { name: 'Language', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -107,7 +107,7 @@ function generateLanguagesTable() {
 }
 
 function generateCategoriesTable() {
-  data.categories.sort((a, b) => {
+  output.categories.sort((a, b) => {
     if(a.category === 'Other') { return 1 }
     if(b.category === 'Other') { return -1 }
     if(a.category < b.category) { return -1 }
@@ -115,7 +115,7 @@ function generateCategoriesTable() {
     return 0
   })
 
-  const table = util.generateTable(data.categories, {
+  const table = util.generateTable(output.categories, {
     columns: [
       { name: 'Category', align: 'left' },
       { name: 'Channels', align: 'right' },
