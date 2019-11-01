@@ -33,6 +33,7 @@ function parseIndex() {
     const countryCode = util.getBasename(rootItem.url).toUpperCase()
     const epg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
 
+    // country
     output.countries.push({ 
       country: rootItem.name, 
       channels: playlist.items.length, 
@@ -41,6 +42,7 @@ function parseIndex() {
     })
 
     for(let item of playlist.items) {
+      
       // language
       const languageName = item.tvg.language || 'Undefined'
       const languageCode = ISO6391.getCode(languageName) || 'undefined'
