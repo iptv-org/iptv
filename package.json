@@ -4,7 +4,7 @@
     "test": "node test/index.js",
     "generate": "node helpers/generate.js",
     "format": "node helpers/format.js",
-    "generate:readme": "node_modules/.bin/markdown-include ./helpers/markdown.json"
+    "update-readme": "node helpers/update-readme.js"
   },
   "author": "Arhey <free.arhey@gmail.com>",
   "private": true,
