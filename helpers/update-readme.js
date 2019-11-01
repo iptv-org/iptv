@@ -3,7 +3,15 @@ const ISO6391 = require('iso-639-1')
 const markdownInclude = require('markdown-include')
 const path = require('path')
 
+let data = {
+  countries: [],
+  languages: [],
+  categories: []
+}
+
 function main() {
+  console.log(`Parsing index...`)
+  parseIndex()
   console.log(`Generating countries table...`)
   generateCountriesTable()
   console.log(`Generating languages table...`)
@@ -15,24 +23,58 @@ function main() {
   console.log(`Done.`)
 }
 
-function generateCountriesTable() {
+function parseIndex() {
   const root = util.parsePlaylist('index.m3u')
 
-  let countries = []
-  for(let item of root.items) {
-    const playlist = util.parsePlaylist(item.url)
-    const countryCode = util.getBasename(item.url).toUpperCase()
+  let languages = {}
+  let categories = {}
+  for(let rootItem of root.items) {
+    const playlist = util.parsePlaylist(rootItem.url)
+    const countryCode = util.getBasename(rootItem.url).toUpperCase()
     const epg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
 
-    countries.push({ 
-      country: item.name, 
+    data.countries.push({ 
+      country: rootItem.name, 
       channels: playlist.items.length, 
-      playlist: `<code>https://iptv-org.github.io/iptv/${item.url}</code>`, 
+      playlist: `<code>https://iptv-org.github.io/iptv/${rootItem.url}</code>`, 
       epg
     })
+
+    for(let item of playlist.items) {
+      // language
+      const languageName = item.group.title || 'Undefined'
+      const languageCode = ISO6391.getCode(languageName) || 'undefined'
+      if(languages[languageCode]) { 
+        languages[languageCode].channels++
+      } else {
+        languages[languageCode] = { 
+          language: languageName, 
+          channels: 1, 
+          playlist: `<code>https://iptv-org.github.io/iptv/languages/${languageCode}.m3u</code>` 
+        }
+      }
+
+      // category
+      const categoryName = util.supportedCategories.find(c => c === item.group.title) || 'Other'
+      const categoryCode = categoryName.toLowerCase()
+      if(categories[categoryCode]) {
+        categories[categoryCode].channels++
+      } else {
+        categories[categoryCode] = { 
+          category: categoryName, 
+          channels: 1, 
+          playlist: `<code>https://iptv-org.github.io/iptv/categories/${categoryCode}.m3u</code>` 
+        }
+      }
+    }
   }
 
-  const table = util.generateTable(countries, {
+  data.languages = Object.values(languages)
+  data.categories = Object.values(categories)
+}
+
+function generateCountriesTable() {
+  const table = util.generateTable(data.countries, {
     columns: [
       { name: 'Country', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -45,25 +87,7 @@ function generateCountriesTable() {
 }
 
 function generateLanguagesTable() {
-  const playlist = util.parsePlaylist('index.language.m3u')
-
-  let languages = {}
-  for(let item of playlist.items) {
-    const languageName = item.group.title || 'Undefined'
-    const languageCode = ISO6391.getCode(languageName) || 'undefined'
-    if(languages[languageCode]) { 
-      languages[languageCode].channels++
-    } else {
-      languages[languageCode] = { 
-        language: languageName, 
-        channels: 1, 
-        playlist: `<code>https://iptv-org.github.io/iptv/languages/${languageCode}.m3u</code>` 
-      }
-    }
-  }
-
-  languages = Object.values(languages)
-  languages.sort((a, b) => {
+  data.languages.sort((a, b) => {
     if(a.language === 'Undefined') { return 1 }
     if(b.language === 'Undefined') { return -1 }
     if(a.language < b.language) { return -1 }
@@ -71,7 +95,7 @@ function generateLanguagesTable() {
     return 0
   })
 
-  const table = util.generateTable(languages, {
+  const table = util.generateTable(data.languages, {
     columns: [
       { name: 'Language', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -83,25 +107,7 @@ function generateLanguagesTable() {
 }
 
 function generateCategoriesTable() {
-  const playlist = util.parsePlaylist('index.content.m3u')
-
-  let categories = {}
-  for(let item of playlist.items) {
-    const categoryName = util.supportedCategories.find(c => c === item.group.title) || 'Other'
-    const categoryCode = categoryName.toLowerCase()
-    if(categories[categoryCode]) {
-      categories[categoryCode].channels++
-    } else {
-      categories[categoryCode] = { 
-        category: categoryName, 
-        channels: 1, 
-        playlist: `<code>https://iptv-org.github.io/iptv/categories/${categoryCode}.m3u</code>` 
-      }
-    }
-  }
-  
-  categories = Object.values(categories)
-  categories.sort((a, b) => {
+  data.categories.sort((a, b) => {
     if(a.category === 'Other') { return 1 }
     if(b.category === 'Other') { return -1 }
     if(a.category < b.category) { return -1 }
@@ -109,7 +115,7 @@ function generateCategoriesTable() {
     return 0
   })
 
-  const table = util.generateTable(categories, {
+  const table = util.generateTable(data.categories, {
     columns: [
       { name: 'Category', align: 'left' },
       { name: 'Channels', align: 'right' },
