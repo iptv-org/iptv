@@ -138,7 +138,16 @@ function main() {
     }
   }
 
-  const languagesTable = util.generateTable(Object.values(repo.languages), {
+  const languages = Object.values(repo.languages)
+  const lastRow = languages.splice(languages.length - 1, 1)[0]
+  languages.sort((a, b) => {
+    if(a.language < b.language) { return -1 }
+    if(a.language > b.language) { return 1 }
+    return 0
+  })
+  languages.push(lastRow)
+
+  const languagesTable = util.generateTable(languages, {
     columns: [
       { name: 'Language', align: 'left' },
       { name: 'Channels', align: 'right' },
