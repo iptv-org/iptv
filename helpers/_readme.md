@@ -15,12 +15,17 @@ If your application does not support nested playlists, you can instead use one o
 - `https://iptv-org.github.io/iptv/index.full.m3u` (grouped by country and content)
 - `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
 - `https://iptv-org.github.io/iptv/index.content.m3u` (grouped by content)
+- `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
 
 Or select one of the playlists from the list below.
 
 ## Playlists by category
 
 #include "./helpers/categories.md"
+
+## Playlists by language
+
+#include "./helpers/languages.md"
 
 ## Playlists by country
 
