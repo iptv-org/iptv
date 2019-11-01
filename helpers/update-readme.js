@@ -85,7 +85,7 @@ function generateCountriesTable() {
     ]
   })
 
-  util.createFile('./helpers/countries.md', table)
+  util.createFile('./.readme/_countries.md', table)
 }
 
 function generateLanguagesTable() {
@@ -105,7 +105,7 @@ function generateLanguagesTable() {
     ]
   })
 
-  util.createFile('./helpers/languages.md', table)
+  util.createFile('./.readme/_languages.md', table)
 }
 
 function generateCategoriesTable() {
@@ -125,11 +125,11 @@ function generateCategoriesTable() {
     ]
   })
 
-  util.createFile('./helpers/categories.md', table)
+  util.createFile('./.readme/_categories.md', table)
 }
 
 function generateReadme() {
-  markdownInclude.compileFiles(path.resolve(__dirname, './markdown.json'))
+  markdownInclude.compileFiles(path.resolve(__dirname, '../.readme/config.json'))
 }
 
 main()

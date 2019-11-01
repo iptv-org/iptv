@@ -21,15 +21,15 @@ Or select one of the playlists from the list below.
 
 ## Playlists by category
 
-#include "./helpers/categories.md"
+#include "./.readme/_categories.md"
 
 ## Playlists by language
 
-#include "./helpers/languages.md"
+#include "./.readme/_languages.md"
 
 ## Playlists by country
 
-#include "./helpers/countries.md"
+#include "./.readme/_countries.md"
 
 ## Resources
 
