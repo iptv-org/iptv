@@ -1,22 +1,28 @@
 const util = require('./util')
+const ISO6391 = require('iso-639-1')
 
 const debug = false
-const types = ['full', 'country', 'content']
+const types = ['full', 'country', 'content', 'language']
 const categories = util.supportedCategories.map(c => c.toLowerCase())
 let stats = {
   countries: 0,
   channels: 0
 }
 
-let buffer = {}
+let languageBuffer = {
+  undefined: []
+}
+
+let categoryBuffer = {}
 categories.push('other')
 categories.forEach(category => {
-  buffer[category] = []
+  categoryBuffer[category] = []
 })
 
 let repo = {
   categories: {},
-  countries: {}
+  countries: {},
+  languages: {}
 }
 
 function main() {
@@ -58,25 +64,37 @@ function main() {
 
       let channel = util.createChannel(item)
 
-      let group = channel.group
+      let category = channel.group.toLowerCase()
+      if(categoryBuffer[category]) {
+        categoryBuffer[category].push(channel)
+      } else {
+        categoryBuffer['other'].push(channel)
+      }
 
+      let languageCode = ISO6391.getCode(channel.language)
+      if(languageCode) {
+        if(!languageBuffer[languageCode]) {
+          languageBuffer[languageCode] = []
+        }
+
+        languageBuffer[languageCode].push(channel)
+      } else {
+        languageBuffer['undefined'].push(channel)
+      }
+
+      let group = channel.group
       for(const type of types) {
         if(type === 'full') {
           channel.group = [ c.name, channel.group ].filter(i => i).join(';')
         } else if(type === 'country') {
           channel.group = c.name
+        } else if(type === 'language') {
+          channel.group = channel.language
         } else {
           channel.group = group
         }
 
         util.appendToFile(`index.${type}.m3u`, channel.toString())
-      }
-
-      let category = channel.group.toLowerCase()
-      if(buffer[category]) {
-        buffer[category].push(channel)
-      } else {
-        buffer['other'].push(channel)
       }
 
       stats.channels++
@@ -85,8 +103,32 @@ function main() {
     stats.countries++
   }
 
-  for(const category in buffer) {
-    let channels = util.sortByTitleAndUrl(buffer[category])
+  for(const languageCode in languageBuffer) {
+    let languageName = ISO6391.getName(languageCode)
+    if(languageName) {
+      repo.languages[languageCode] = { language: languageName, channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/languages/${languageCode}.m3u</code>` }
+    }
+  }
+  repo.languages['undefined'] = { language: 'Undefined', channels: 0, playlist: `<code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code>` }
+
+  util.clearCache()
+  for(const languageCode in languageBuffer) {
+    const filename = `languages/${languageCode}.m3u`
+    util.createFile(filename, '#EXTM3U\n')
+    
+    let channels = util.sortByTitleAndUrl(languageBuffer[languageCode])
+    for(const channel of channels) {
+      if(!util.checkCache(channel.url)) {
+        util.appendToFile(filename, channel.toString())
+        util.addToCache(channel.url)
+        repo.languages[languageCode].channels++
+      }
+    }
+  }
+
+  util.clearCache()
+  for(const category in categoryBuffer) {
+    let channels = util.sortByTitleAndUrl(categoryBuffer[category])
     for(const channel of channels) {
       if(!util.checkCache(channel.url)) {
         util.appendToFile(`categories/${category}.m3u`, channel.toString())
@@ -96,6 +138,15 @@ function main() {
     }
   }
 
+  const languagesTable = util.generateTable(Object.values(repo.languages), {
+    columns: [
+      { name: 'Language', align: 'left' },
+      { name: 'Channels', align: 'right' },
+      { name: 'Playlist', align: 'left' }
+    ]
+  })
+  util.createFile('./helpers/languages.md', languagesTable)
+
   const categoriesTable = util.generateTable(Object.values(repo.categories), {
     columns: [
       { name: 'Category', align: 'left' },
@@ -104,6 +155,7 @@ function main() {
     ]
   })
   util.createFile('./helpers/categories.md', categoriesTable)
+
   const countriesTable = util.generateTable(Object.values(repo.countries), {
     columns: [
       { name: 'Country', align: 'left' },
