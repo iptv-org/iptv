@@ -55,6 +55,7 @@ function parseIndex() {
       const channel = helper.createChannel(item)
       channel.countryCode = countryCode
       channel.countryName = countryName
+      channel.epg = playlist.header.attrs['x-tvg-url'] || ''
 
       // all
       list.all.push(channel)
