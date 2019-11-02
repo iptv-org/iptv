@@ -256,6 +256,13 @@ class Channel {
   }
 
   toString() {
+    const country = this.countryCode.toUpperCase()
+    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" tvg-country="${country}" group-title="${this.group}",${this.title}`
+
+    return '#EXTINF:' + info + '\n' + this.url + '\n'
+  }
+
+  toShortString() {
     const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" group-title="${this.group}",${this.title}`
 
     return '#EXTINF:' + info + '\n' + this.url + '\n'

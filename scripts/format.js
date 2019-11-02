@@ -153,7 +153,7 @@ async function main() {
       console.log(`Updating '${country.url}'...`)
       helper.createFile(country.url, playlist.getHeader())
       channels.forEach(channel => {
-        helper.appendToFile(country.url, channel.toString())
+        helper.appendToFile(country.url, channel.toShortString())
       })
     }
 
@@ -164,7 +164,7 @@ async function main() {
     console.log(`Updating 'channels/unsorted.m3u'...`)
     helper.createFile('channels/unsorted.m3u', playlist.getHeader())
     Object.values(unsorted).forEach(channel => {
-      helper.appendToFile('channels/unsorted.m3u', channel.toString())
+      helper.appendToFile('channels/unsorted.m3u', channel.toShortString())
     })
   }
 
