@@ -1,6 +1,6 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
-const helper = require('../scripts/helper')
+const helper = require('./helper')
 const ffmpeg = require('fluent-ffmpeg')
 
 const verbose = process.env.npm_config_debug || false
