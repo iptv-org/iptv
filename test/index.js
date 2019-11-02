@@ -1,6 +1,6 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
-const util = require('../helpers/util')
+const helper = require('../scripts/helper')
 const ffmpeg = require('fluent-ffmpeg')
 
 const verbose = process.env.npm_config_debug || false
@@ -19,19 +19,19 @@ async function test() {
 
   stats.tests++
 
-  const playlist = util.parsePlaylist('index.m3u')
+  const playlist = helper.parsePlaylist('index.m3u')
   
   const countries = playlist.items
 
   for(let country of countries) {
 
-    if (util.skipPlaylist(country.url)) {
+    if (helper.skipPlaylist(country.url)) {
 	    continue
     }
 
     console.log(`Checking '${country.url}'...`)
 
-    const playlist = util.parsePlaylist(country.url)
+    const playlist = helper.parsePlaylist(country.url)
 
     for(let item of playlist.items) {
 
@@ -90,7 +90,7 @@ test()
 function writeToLog(country, msg, url) {
   var now = new Date()
   var line = `${country}: ${msg} '${url}'`
-  util.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
+  helper.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
   console.log(`${msg} '${url}'`)
 }
 
