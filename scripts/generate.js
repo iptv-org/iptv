@@ -93,6 +93,10 @@ function generateLanguageIndex() {
   const channels = list.all.sort((a, b) => {
     if(a.language < b.language) { return -1 }
     if(a.language > b.language) { return 1 }
+    if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1 }
+    if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1 }
+    if(a.url < b.url) { return -1 }
+    if(a.url > b.url) { return 1 }
     return 0
   })
 
@@ -111,6 +115,10 @@ function generateContentIndex() {
   const channels = list.all.sort((a, b) => {
     if(a.group < b.group) { return -1 }
     if(a.group > b.group) { return 1 }
+    if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1 }
+    if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1 }
+    if(a.url < b.url) { return -1 }
+    if(a.url > b.url) { return 1 }
     return 0
   })
 
@@ -128,6 +136,10 @@ function generateFullIndex() {
     if(a.countryName > b.countryName) { return 1 }
     if(a.group < b.group) { return -1 }
     if(a.group > b.group) { return 1 }
+    if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1 }
+    if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1 }
+    if(a.url < b.url) { return -1 }
+    if(a.url > b.url) { return 1 }
     return 0
   })
 
