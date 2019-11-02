@@ -147,7 +147,7 @@ async function main() {
     if(verbose) {
       console.log(`Sorting channels...`)
     }
-    channels = helper.sortByTitleAndUrl(channels)
+    channels = helper.sortBy(channels, ['title', 'url'])
 
     if(!debug) {
       console.log(`Updating '${country.url}'...`)
