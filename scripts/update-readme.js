@@ -23,23 +23,29 @@ function main() {
 function parseIndex() {
   const root = helper.parsePlaylist('index.m3u')
 
+  let countries = {}
   let languages = {}
   let categories = {}
   for(let rootItem of root.items) {
     const playlist = helper.parsePlaylist(rootItem.url)
-    const countryCode = helper.getBasename(rootItem.url).toUpperCase()
-    const epg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
-
-    // country
-    output.countries.push({ 
-      country: rootItem.name, 
-      channels: playlist.items.length, 
-      playlist: `<code>https://iptv-org.github.io/iptv/${rootItem.url}</code>`, 
-      epg
-    })
+    const countryName = rootItem.name
+    const countryCode = helper.getBasename(rootItem.url).toLowerCase()
+    const countryEpg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
 
     for(let item of playlist.items) {
       
+      // country
+      if(countries[countryCode]) { 
+        countries[countryCode].channels++
+      } else {
+        countries[countryCode] = { 
+          country: countryName, 
+          channels: playlist.items.length, 
+          playlist: `<code>https://iptv-org.github.io/iptv/countries/${countryCode}.m3u</code>`, 
+          epg: countryEpg
+        }
+      }
+
       // language
       const languageName = item.tvg.language || 'Undefined'
       const languageCode = helper.getISO6391Code(languageName) || 'undefined'
@@ -68,6 +74,7 @@ function parseIndex() {
     }
   }
 
+  output.countries = Object.values(countries)
   output.languages = Object.values(languages)
   output.categories = Object.values(categories)
 }
