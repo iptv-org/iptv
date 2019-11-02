@@ -1,6 +1,6 @@
 const fs = require("fs")
 const path = require('path')
-const parser = require('iptv-playlist-parser')
+const playlistParser = require('iptv-playlist-parser')
 const axios = require('axios')
 const zlib = require("zlib")
 const epgParser = require('epg-parser')
@@ -29,8 +29,8 @@ helper.getISO6391Code = function(name) {
 }
 
 helper.parsePlaylist = function(filename) {
-  const content = readFile(filename)
-  const result = parser.parse(content)
+  const content = this.readFile(filename)
+  const result = playlistParser.parse(content)
 
   return new Playlist(result)
 }
@@ -125,13 +125,13 @@ helper.getBasename = function(filename) {
 }
 
 helper.addToCache = function(url) {
-  let id = getUrlPath(url)
+  let id = this.getUrlPath(url)
 
   cache[id] = true
 }
 
 helper.checkCache = function(url) {
-  let id = getUrlPath(url)
+  let id = this.getUrlPath(url)
 
   return cache.hasOwnProperty(id)
 }
