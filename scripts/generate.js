@@ -20,8 +20,8 @@ function main() {
   generateCountryIndex()
   console.log('Generating index.language.m3u...')
   generateLanguageIndex()
-  console.log('Generating index.content.m3u...')
-  generateContentIndex()
+  console.log('Generating index.category.m3u...')
+  generateCategoryIndex()
   console.log('Generating index.full.m3u...')
   generateFullIndex()
   console.log('Generating /countries...')
@@ -137,8 +137,8 @@ function generateLanguageIndex() {
   }
 }
 
-function generateContentIndex() {
-  const filename = `${ROOT_DIR}/index.content.m3u`
+function generateCategoryIndex() {
+  const filename = `${ROOT_DIR}/index.category.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = list.all.sort((a, b) => {
