@@ -1,5 +1,7 @@
 const helper = require('./helper')
 
+const ROOT_DIR = './.gh-pages'
+
 let list = {
   all: [],
   countries: {},
@@ -10,6 +12,8 @@ let list = {
 function main() {
   console.log(`Parsing index...`)
   parseIndex()
+  console.log('Creating public directory...')
+  createPublicDirectory()
   console.log('Generating index.country.m3u...')
   generateCountryIndex()
   console.log('Generating index.language.m3u...')
@@ -25,6 +29,10 @@ function main() {
   console.log('Done.\n')
 
   console.log(`Countries: ${Object.values(list.countries).length}. Languages: ${Object.values(list.languages).length}. Categories: ${Object.values(list.categories).length}. Channels: ${list.all.length}.`)
+}
+
+function createPublicDirectory() {
+  helper.createDir(ROOT_DIR)
 }
 
 function parseIndex() {
@@ -75,7 +83,7 @@ function parseIndex() {
 }
 
 function generateCountryIndex() {
-  const filename = `index.country.m3u`
+  const filename = `${ROOT_DIR}/index.country.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   for(let channel of list.all) {
@@ -87,7 +95,7 @@ function generateCountryIndex() {
 }
 
 function generateLanguageIndex() {
-  const filename = `index.language.m3u`
+  const filename = `${ROOT_DIR}/index.language.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = list.all.sort((a, b) => {
@@ -109,7 +117,7 @@ function generateLanguageIndex() {
 }
 
 function generateContentIndex() {
-  const filename = `index.content.m3u`
+  const filename = `${ROOT_DIR}/index.content.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = list.all.sort((a, b) => {
@@ -128,7 +136,7 @@ function generateContentIndex() {
 }
 
 function generateFullIndex() {
-  const filename = `index.full.m3u`
+  const filename = `${ROOT_DIR}/index.full.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = list.all.sort((a, b) => {
@@ -152,9 +160,12 @@ function generateFullIndex() {
 }
 
 function generateCategories() {
+  const outputDir = `${ROOT_DIR}/categories`
+  helper.createDir(outputDir)
+
   for(let cid in list.categories) {
     let category = list.categories[cid]
-    const filename = `categories/${cid}.m3u`
+    const filename = `${outputDir}/${cid}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
     for(let channel of category) {
       helper.appendToFile(filename, channel.toString())
@@ -163,9 +174,12 @@ function generateCategories() {
 }
 
 function generateLanguages() {
+  const outputDir = `${ROOT_DIR}/languages`
+  helper.createDir(outputDir)
+  
   for(let lid in list.languages) {
     let language = list.languages[lid]
-    const filename = `languages/${lid}.m3u`
+    const filename = `${outputDir}/${lid}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
     for(let channel of language) {
       helper.appendToFile(filename, channel.toString())
