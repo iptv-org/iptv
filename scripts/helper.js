@@ -51,18 +51,6 @@ helper.parsePlaylist = function(filename) {
   return new Playlist(result)
 }
 
-helper.createChannel = function(data) {
-  return new Channel({
-    id: data.tvg.id,
-    name: data.tvg.name,
-    language: data.tvg.language,
-    logo: data.tvg.logo,
-    group: data.group.title,
-    url: data.url,
-    title: data.name
-  })
-}
-
 helper.loadEPG = async function(url) {
   const content = await getEPGFile(url)
   const result = epgParser.parse(content)
@@ -202,6 +190,18 @@ helper.generateTable = function(data, options) {
   return output
 }
 
+helper.createChannel = function(data) {
+  return new Channel({
+    id: data.tvg.id,
+    name: data.tvg.name,
+    language: data.tvg.language,
+    logo: data.tvg.logo,
+    group: data.group.title,
+    url: data.url,
+    title: data.name
+  })
+}
+
 class Playlist {
   constructor(data) {
     this.header = data.header
@@ -257,7 +257,8 @@ class Channel {
 
   toString() {
     const country = this.countryCode.toUpperCase()
-    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" tvg-country="${country}" group-title="${this.group}",${this.title}`
+    const epg = (this.id && this.epg) ? this.epg : ''
+    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" tvg-country="${country}" tvg-url="${epg}" group-title="${this.group}",${this.title}`
 
     return '#EXTINF:' + info + '\n' + this.url + '\n'
   }
