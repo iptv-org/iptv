@@ -12,6 +12,12 @@ const markdownInclude = require('markdown-include')
 let cache = {}
 let helper = {}
 
+helper.createDir = function(dir) {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir)
+  }
+}
+
 helper.compileMarkdown = function(filepath) {
   return markdownInclude.compileFiles(path.resolve(__dirname, filepath))
 }
