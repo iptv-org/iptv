@@ -1,7 +1,4 @@
-const util = require('./util')
-const ISO6391 = require('iso-639-1')
-const markdownInclude = require('markdown-include')
-const path = require('path')
+const helper = require('./helper')
 
 let output = {
   countries: [],
@@ -24,13 +21,13 @@ function main() {
 }
 
 function parseIndex() {
-  const root = util.parsePlaylist('index.m3u')
+  const root = helper.parsePlaylist('index.m3u')
 
   let languages = {}
   let categories = {}
   for(let rootItem of root.items) {
-    const playlist = util.parsePlaylist(rootItem.url)
-    const countryCode = util.getBasename(rootItem.url).toUpperCase()
+    const playlist = helper.parsePlaylist(rootItem.url)
+    const countryCode = helper.getBasename(rootItem.url).toUpperCase()
     const epg = playlist.header.attrs['x-tvg-url'] ? `<code>${playlist.header.attrs['x-tvg-url']}</code>` : ''
 
     // country
@@ -45,7 +42,7 @@ function parseIndex() {
       
       // language
       const languageName = item.tvg.language || 'Undefined'
-      const languageCode = ISO6391.getCode(languageName) || 'undefined'
+      const languageCode = helper.getISO6391Code(languageName) || 'undefined'
       if(languages[languageCode]) { 
         languages[languageCode].channels++
       } else {
@@ -57,7 +54,7 @@ function parseIndex() {
       }
 
       // category
-      const categoryName = util.supportedCategories.find(c => c === item.group.title) || 'Other'
+      const categoryName = item.group.title || 'Other'
       const categoryCode = categoryName.toLowerCase()
       if(categories[categoryCode]) {
         categories[categoryCode].channels++
@@ -76,7 +73,7 @@ function parseIndex() {
 }
 
 function generateCountriesTable() {
-  const table = util.generateTable(output.countries, {
+  const table = helper.generateTable(output.countries, {
     columns: [
       { name: 'Country', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -85,7 +82,7 @@ function generateCountriesTable() {
     ]
   })
 
-  util.createFile('./.readme/_countries.md', table)
+  helper.createFile('./.readme/_countries.md', table)
 }
 
 function generateLanguagesTable() {
@@ -97,7 +94,7 @@ function generateLanguagesTable() {
     return 0
   })
 
-  const table = util.generateTable(output.languages, {
+  const table = helper.generateTable(output.languages, {
     columns: [
       { name: 'Language', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -105,7 +102,7 @@ function generateLanguagesTable() {
     ]
   })
 
-  util.createFile('./.readme/_languages.md', table)
+  helper.createFile('./.readme/_languages.md', table)
 }
 
 function generateCategoriesTable() {
@@ -117,7 +114,7 @@ function generateCategoriesTable() {
     return 0
   })
 
-  const table = util.generateTable(output.categories, {
+  const table = helper.generateTable(output.categories, {
     columns: [
       { name: 'Category', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -125,11 +122,11 @@ function generateCategoriesTable() {
     ]
   })
 
-  util.createFile('./.readme/_categories.md', table)
+  helper.createFile('./.readme/_categories.md', table)
 }
 
 function generateReadme() {
-  markdownInclude.compileFiles(path.resolve(__dirname, '../.readme/config.json'))
+  helper.compileMarkdown('../.readme/config.json')
 }
 
 main()

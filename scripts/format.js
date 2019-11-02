@@ -1,6 +1,4 @@
-const util = require('./util')
-const escapeStringRegexp = require('escape-string-regexp')
-const ISO6391 = require('iso-639-1')
+const helper = require('./helper')
 
 const debug = false
 const verbose = false
@@ -19,46 +17,46 @@ let unsorted = {}
 async function main() {
 
   console.log(`Parsing 'index.m3u'...`)
-  const playlist = util.parsePlaylist('index.m3u')
+  const playlist = helper.parsePlaylist('index.m3u')
   const countries = playlist.items
 
   if(debug) {
     console.log('Debug mode is turn on')
   }
 
-  const unsortedPlaylist = util.parsePlaylist('channels/unsorted.m3u')
+  const unsortedPlaylist = helper.parsePlaylist('channels/unsorted.m3u')
   for(const item of unsortedPlaylist.items) {
-    unsorted[item.url] = util.createChannel(item)
+    unsorted[item.url] = helper.createChannel(item)
   }
 
   for(let country of countries) {
 
-    if (util.skipPlaylist(country.url)) {
+    if (helper.skipPlaylist(country.url)) {
       continue
     }
     
     if(verbose) {
       console.log(`Clear cache...`)
     }
-    util.clearCache()
+    helper.clearCache()
 
     console.log(`Parsing '${country.url}'...`)
-    const playlist = util.parsePlaylist(country.url)
+    const playlist = helper.parsePlaylist(country.url)
 
     if(verbose) {
       console.log(`Creating channels list...`)
     }
     let channels = []
     for(let item of playlist.items) {
-      let channel = util.createChannel(item)
+      let channel = helper.createChannel(item)
 
-      if(util.checkCache(channel.url)) {
+      if(helper.checkCache(channel.url)) {
         stats.duplicates++
-      } else if(!util.validateUrl(channel.url)) {
+      } else if(!helper.validateUrl(channel.url)) {
         stats.unvalid++
       } else {
         channels.push(channel)
-        util.addToCache(channel.url)
+        helper.addToCache(channel.url)
       }
 
       if(unsorted[channel.url]) {
@@ -75,7 +73,7 @@ async function main() {
     if(epgUrl && !buffer[epgUrl] && parseEpg) {
       try {
         console.log(`Loading '${epgUrl}'...`)
-        const epg = await util.loadEPG(epgUrl)
+        const epg = await helper.loadEPG(epgUrl)
         console.log(`Adding '${epgUrl}' to buffer...`)
         buffer[epgUrl] = epg
       } catch(e) {
@@ -90,7 +88,7 @@ async function main() {
           let c = buffer[epgUrl].channels[channelId]
           for(let epgName of c.name) {
             if(epgName.value) {
-              let escaped = escapeStringRegexp(epgName.value)
+              let escaped = helper.escapeStringRegexp(epgName.value)
               channelTitle = channel.title.replace(/(fhd|hd|sd|高清)$/i, '').trim()
               let regexp = new RegExp(`^${escaped}$`, 'i')
               if(regexp.test(channelTitle)) {
@@ -123,7 +121,7 @@ async function main() {
         }
 
         if(!channel.language && c.name.length && c.name[0].lang) {
-          let language = ISO6391.getName(c.name[0].lang)
+          let language = helper.getISO6391Name(c.name[0].lang)
           channel.language = language
           updated = true
           if(verbose) {
@@ -149,13 +147,13 @@ async function main() {
     if(verbose) {
       console.log(`Sorting channels...`)
     }
-    channels = util.sortByTitleAndUrl(channels)
+    channels = helper.sortByTitleAndUrl(channels)
 
     if(!debug) {
       console.log(`Updating '${country.url}'...`)
-      util.createFile(country.url, playlist.getHeader())
+      helper.createFile(country.url, playlist.getHeader())
       channels.forEach(channel => {
-        util.appendToFile(country.url, channel.toString())
+        helper.appendToFile(country.url, channel.toString())
       })
     }
 
@@ -164,9 +162,9 @@ async function main() {
 
   if(!debug & stats.removed > 0) {
     console.log(`Updating 'channels/unsorted.m3u'...`)
-    util.createFile('channels/unsorted.m3u', playlist.getHeader())
+    helper.createFile('channels/unsorted.m3u', playlist.getHeader())
     Object.values(unsorted).forEach(channel => {
-      util.appendToFile('channels/unsorted.m3u', channel.toString())
+      helper.appendToFile('channels/unsorted.m3u', channel.toString())
     })
   }
 
