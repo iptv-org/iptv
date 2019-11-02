@@ -18,7 +18,7 @@ jobs:
       run: npm install
       
     - name: Format Playlists
-      run: npm run format --epg
+      run: npm run format
     
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v1.5.1
