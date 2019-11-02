@@ -10,7 +10,7 @@ To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/
 
 ![VLC Network Panel](preview.png)
 
-If your application does not support nested playlists, you can instead use one of these playlists:
+Also you can instead use one of these playlists:
 
 - `https://iptv-org.github.io/iptv/index.full.m3u` (grouped by country and content)
 - `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
