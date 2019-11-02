@@ -12,6 +12,16 @@ const markdownInclude = require('markdown-include')
 let cache = {}
 let helper = {}
 
+helper.sortBy = function(arr, fields) {
+  return arr.sort((a, b) => {
+    for(let field of fields) {
+      if(a[field].toLowerCase() < b[field].toLowerCase()) { return -1 }
+      if(a[field].toLowerCase() > b[field].toLowerCase()) { return 1 }
+    }
+    return 0
+  })
+}
+
 helper.createDir = function(dir) {
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir)
@@ -94,23 +104,6 @@ helper.getEPGFile = function(url) {
     }).catch(e => {
       reject(e)
     })
-  })
-}
-
-helper.sortByTitleAndUrl = function(arr) {
-  return arr.sort(function(a, b) {
-    var titleA = a.title.toLowerCase()
-    var titleB = b.title.toLowerCase()
-    var urlA = a.url.toLowerCase()
-    var urlB = b.url.toLowerCase()
-    
-    if(titleA < titleB) return -1
-    if(titleA > titleB) return 1
-
-    if(urlA < urlB) return -1
-    if(urlA > urlB) return 1
-
-    return 0
   })
 }
 

@@ -90,14 +90,7 @@ function generateIndex() {
   const filename = `${ROOT_DIR}/index.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
-  const channels = list.all.sort((a, b) => {
-    if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1 }
-    if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1 }
-    if(a.url < b.url) { return -1 }
-    if(a.url > b.url) { return 1 }
-    return 0
-  })
-
+  const channels = helper.sortBy(list.all, ['title', 'url'])
   for(let channel of channels) {
     helper.appendToFile(filename, channel.toString())
   }
@@ -107,7 +100,8 @@ function generateCountryIndex() {
   const filename = `${ROOT_DIR}/index.country.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
-  for(let channel of list.all) {
+  const channels = helper.sortBy(list.all, ['countryName', 'title', 'url'])
+  for(let channel of channels) {
     const group = channel.group
     channel.group = channel.countryName
     helper.appendToFile(filename, channel.toString())
@@ -119,16 +113,7 @@ function generateLanguageIndex() {
   const filename = `${ROOT_DIR}/index.language.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
-  const channels = list.all.sort((a, b) => {
-    if(a.language < b.language) { return -1 }
-    if(a.language > b.language) { return 1 }
-    if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1 }
-    if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1 }
-    if(a.url < b.url) { return -1 }
-    if(a.url > b.url) { return 1 }
-    return 0
-  })
-
+  const channels = helper.sortBy(list.all, ['language', 'title', 'url'])
   for(let channel of channels) {
     const group = channel.group
     channel.group = channel.language
@@ -141,16 +126,7 @@ function generateCategoryIndex() {
   const filename = `${ROOT_DIR}/index.category.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
-  const channels = list.all.sort((a, b) => {
-    if(a.group < b.group) { return -1 }
-    if(a.group > b.group) { return 1 }
-    if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1 }
-    if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1 }
-    if(a.url < b.url) { return -1 }
-    if(a.url > b.url) { return 1 }
-    return 0
-  })
-
+  const channels = helper.sortBy(list.all, ['group', 'title', 'url'])
   for(let channel of channels) {
     helper.appendToFile(filename, channel.toString())
   }
@@ -160,18 +136,7 @@ function generateFullIndex() {
   const filename = `${ROOT_DIR}/index.full.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
-  const channels = list.all.sort((a, b) => {
-    if(a.countryName < b.countryName) { return -1 }
-    if(a.countryName > b.countryName) { return 1 }
-    if(a.group < b.group) { return -1 }
-    if(a.group > b.group) { return 1 }
-    if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1 }
-    if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1 }
-    if(a.url < b.url) { return -1 }
-    if(a.url > b.url) { return 1 }
-    return 0
-  })
-
+  const channels = helper.sortBy(list.all, ['countryName', 'group', 'title', 'url'])
   for(let channel of channels) {
     const group = channel.group
     channel.group = [ channel.countryName, channel.group ].filter(i => i).join(';')
@@ -188,7 +153,9 @@ function generateCountries() {
     let country = list.countries[cid]
     const filename = `${outputDir}/${cid}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
-    for(let channel of country) {
+
+    const channels = helper.sortBy(Object.values(country), ['title', 'url'])
+    for(let channel of channels) {
       helper.appendToFile(filename, channel.toString())
     }
   }
@@ -202,7 +169,9 @@ function generateCategories() {
     let category = list.categories[cid]
     const filename = `${outputDir}/${cid}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
-    for(let channel of category) {
+
+    const channels = helper.sortBy(Object.values(category), ['title', 'url'])
+    for(let channel of channels) {
       helper.appendToFile(filename, channel.toString())
     }
   }
@@ -216,7 +185,9 @@ function generateLanguages() {
     let language = list.languages[lid]
     const filename = `${outputDir}/${lid}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
-    for(let channel of language) {
+
+    const channels = helper.sortBy(Object.values(language), ['title', 'url'])
+    for(let channel of channels) {
       helper.appendToFile(filename, channel.toString())
     }
   }
