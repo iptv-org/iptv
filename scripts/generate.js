@@ -14,6 +14,8 @@ function main() {
   parseIndex()
   console.log('Creating public directory...')
   createPublicDirectory()
+  console.log('Generating index.m3u...')
+  generateIndex()
   console.log('Generating index.country.m3u...')
   generateCountryIndex()
   console.log('Generating index.language.m3u...')
@@ -22,6 +24,8 @@ function main() {
   generateContentIndex()
   console.log('Generating index.full.m3u...')
   generateFullIndex()
+  console.log('Generating /countries...')
+  generateCountries()
   console.log('Generating /categories...')
   generateCategories()
   console.log('Generating /languages...')
@@ -80,6 +84,23 @@ function parseIndex() {
   list.countries = countries
   list.languages = languages
   list.categories = categories
+}
+
+function generateIndex() {
+  const filename = `${ROOT_DIR}/index.m3u`
+  helper.createFile(filename, '#EXTM3U\n')
+
+  const channels = list.all.sort((a, b) => {
+    if(a.title.toLowerCase() < b.title.toLowerCase()) { return -1 }
+    if(a.title.toLowerCase() > b.title.toLowerCase()) { return 1 }
+    if(a.url < b.url) { return -1 }
+    if(a.url > b.url) { return 1 }
+    return 0
+  })
+
+  for(let channel of channels) {
+    helper.appendToFile(filename, channel.toString())
+  }
 }
 
 function generateCountryIndex() {
@@ -159,6 +180,20 @@ function generateFullIndex() {
   }
 }
 
+function generateCountries() {
+  const outputDir = `${ROOT_DIR}/countries`
+  helper.createDir(outputDir)
+
+  for(let cid in list.countries) {
+    let country = list.countries[cid]
+    const filename = `${outputDir}/${cid}.m3u`
+    helper.createFile(filename, '#EXTM3U\n')
+    for(let channel of country) {
+      helper.appendToFile(filename, channel.toString())
+    }
+  }
+}
+
 function generateCategories() {
   const outputDir = `${ROOT_DIR}/categories`
   helper.createDir(outputDir)
@@ -176,7 +211,7 @@ function generateCategories() {
 function generateLanguages() {
   const outputDir = `${ROOT_DIR}/languages`
   helper.createDir(outputDir)
-  
+
   for(let lid in list.languages) {
     let language = list.languages[lid]
     const filename = `${outputDir}/${lid}.m3u`
