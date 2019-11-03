@@ -1,11 +1,8 @@
-name: Format Playlists
+name: Format playlists
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - 'channels/*'
+  schedule:
+    - cron:  '0 0 * * *'
 
 jobs:
   format:
