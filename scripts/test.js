@@ -3,33 +3,30 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 const helper = require('./helper')
 const ffmpeg = require('fluent-ffmpeg')
 
-const verbose = process.env.npm_config_debug || false
-const errorLog = 'error.log'
 const config = {
+  debug: process.env.npm_config_debug || false,
+  country: process.env.npm_config_country,
+  exclude: process.env.npm_config_exclude,
   timeout: 10
 }
 
 let stats = {
-  tests: 0,
+  playlists: 0,
   channels: 0,
   failures: 0
 }
 
 async function test() {
 
-  stats.tests++
-
   const playlist = helper.parsePlaylist('index.m3u')
   
-  const countries = playlist.items
+  const countries = helper.filterPlaylists(playlist.items, config.country, config.exclude)
 
   for(let country of countries) {
 
-    if (helper.skipPlaylist(country.url)) {
-	    continue
-    }
+    stats.playlists++
 
-    console.log(`Checking '${country.url}'...`)
+    console.log(`Processing '${country.url}'...`)
 
     const playlist = helper.parsePlaylist(country.url)
 
@@ -37,9 +34,7 @@ async function test() {
 
       stats.channels++
 
-      if(verbose) {
-        console.log(`Checking '${item.url}'...`)
-      }
+      if(config.debug) { console.log(`Checking '${item.url}'...`) }
 
       await new Promise(resolve => {
         
@@ -52,11 +47,13 @@ async function test() {
         ffmpeg(item.url, { timeout: 60 }).ffprobe((err) => {
       
           if(err) {
-            const message = parseMessage(err, item.url)
+            const message = helper.parseMessage(err, item.url)
 
             stats.failures++
 
-            writeToLog(country.url, message, item.url)
+            helper.writeToLog(country.url, message, item.url)
+
+            console.log(`${message} '${item.url}'`)
           }
 
           clearTimeout(timeout)
@@ -71,11 +68,11 @@ async function test() {
 
   if(stats.failures === 0) {
 
-    console.log(`OK (${stats.tests} tests, ${stats.channels} channels)`)
+    console.log(`OK (${stats.playlists} playlists, ${stats.channels} channels)`)
     
   } else {
 
-    console.log(`FAILURES! (${stats.tests} tests, ${stats.channels} channels, ${stats.failures} failures)`)
+    console.log(`FAILURES! (${stats.playlists} playlists, ${stats.channels} channels, ${stats.failures} failures)`)
 
     process.exit(1)
 
@@ -86,26 +83,3 @@ async function test() {
 console.log('Test is running...')
 
 test()
-
-function writeToLog(country, msg, url) {
-  var now = new Date()
-  var line = `${country}: ${msg} '${url}'`
-  helper.appendToFile(errorLog, now.toISOString() + ' ' + line + '\n')
-  console.log(`${msg} '${url}'`)
-}
-
-function parseMessage(err, u) {
-  if(!err || !err.message) return
-
-  const msgArr = err.message.split('\n')
-
-  if(msgArr.length === 0) return
-
-  const line = msgArr.find(line => {
-    return line.indexOf(u) === 0
-  })
-
-  if(!line) return
-
-  return line.replace(`${u}: `, '')
-}

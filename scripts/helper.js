@@ -136,20 +136,6 @@ helper.filterPlaylists = function(arr, include = '', exclude = '') {
   return arr
 }
 
-helper.skipPlaylist = function(filename) {
-  let testCountry = process.env.npm_config_country
-  let excludeList = process.env.npm_config_exclude
-  let excludeCountries = excludeList ? excludeList.split(',') : []
-  
-  if (testCountry && filename !== 'channels/' + testCountry + '.m3u') return true
-  
-  for(const countryCode of excludeCountries) {
-    if (filename === 'channels/' + countryCode + '.m3u') return true
-  }
-
-  return false
-}
-
 helper.generateTable = function(data, options) {
   let output = '<table>\n'
 
@@ -189,6 +175,28 @@ helper.createChannel = function(data) {
     url: data.url,
     title: data.name
   })
+}
+
+helper.writeToLog = function(country, msg, url) {
+  var now = new Date()
+  var line = `${country}: ${msg} '${url}'`
+  this.appendToFile('error.log', now.toISOString() + ' ' + line + '\n')
+}
+
+helper.parseMessage = function(err, u) {
+  if(!err || !err.message) return
+
+  const msgArr = err.message.split('\n')
+
+  if(msgArr.length === 0) return
+
+  const line = msgArr.find(line => {
+    return line.indexOf(u) === 0
+  })
+
+  if(!line) return
+
+  return line.replace(`${u}: `, '')
 }
 
 class Playlist {
