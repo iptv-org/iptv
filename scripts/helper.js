@@ -147,6 +147,20 @@ helper.validateUrl = function(channelUrl) {
   return blacklist.indexOf(host) === -1
 }
 
+helper.filterPlaylists = function(arr, include = '', exclude = '') {
+  if(include) {
+    const included = include.split(',').map(filename => `channels/${filename}.m3u`)
+    
+    return arr.filter(i => included.indexOf(i.url) > -1)
+  }
+
+  if(exclude) {
+    const excluded = exclude.split(',').map(filename => `channels/${filename}.m3u`)
+    
+    return arr.filter(i => excluded.indexOf(i.url) === -1)
+  }
+}
+
 helper.skipPlaylist = function(filename) {
   let testCountry = process.env.npm_config_country
   let excludeList = process.env.npm_config_exclude
