@@ -71,7 +71,8 @@ helper.getEPG = function(url) {
     axios({
       method: 'get',
       url: url,
-      responseType:'stream'
+      responseType: 'stream',
+      timeout: 60000
     }).then(res => {
       let stream
       if(/\.gz$/i.test(url)) {
@@ -119,18 +120,6 @@ helper.getUrlPath = function(u) {
   return path.toLowerCase()
 }
 
-helper.validateUrl = function(channelUrl) {
-  const url = new URL(channelUrl)
-  const host = url.hostname
-  const blacklist = [
-    '80.80.160.168', // repeats on a loop
-    '63.237.48.3', // not a live stream
-    '189.216.247.113', // not working streams
-  ]
-
-  return blacklist.indexOf(host) === -1
-}
-
 helper.filterPlaylists = function(arr, include = '', exclude = '') {
   if(include) {
     const included = include.split(',').map(filename => `channels/${filename}.m3u`)
@@ -143,6 +132,8 @@ helper.filterPlaylists = function(arr, include = '', exclude = '') {
     
     return arr.filter(i => excluded.indexOf(i.url) === -1)
   }
+
+  return arr
 }
 
 helper.skipPlaylist = function(filename) {
