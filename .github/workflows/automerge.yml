@@ -1,0 +1,14 @@
+name: Automerge Pull Requests
+
+on:
+  pull_request:
+    types:
+      - opened
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: automerge
+        uses: pascalgn/automerge-action@f84dd310ea4a19890c70a4ff11ab282a872fb94b
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
