@@ -12,8 +12,8 @@ let list = {
 function main() {
   console.log(`Parsing index...`)
   parseIndex()
-  console.log('Creating public directory...')
-  createPublicDirectory()
+  console.log('Creating root directory...')
+  createRootDirectory()
   console.log('Generating index.m3u...')
   generateIndex()
   console.log('Generating index.country.m3u...')
@@ -35,7 +35,7 @@ function main() {
   console.log(`Countries: ${Object.values(list.countries).length}. Languages: ${Object.values(list.languages).length}. Categories: ${Object.values(list.categories).length}. Channels: ${list.all.length}.`)
 }
 
-function createPublicDirectory() {
+function createRootDirectory() {
   helper.createDir(ROOT_DIR)
 }
 
