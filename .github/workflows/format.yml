@@ -23,7 +23,7 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v1.6.0
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.REPO_SCOPED_TOKEN }}
         COMMIT_MESSAGE: 'Formatted playlists'
         PULL_REQUEST_BRANCH: bot-patch
         PULL_REQUEST_TITLE: '[Bot] Format playlists'
