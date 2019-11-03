@@ -51,8 +51,8 @@ helper.parsePlaylist = function(filename) {
   return new Playlist(result)
 }
 
-helper.loadEPG = async function(url) {
-  const content = await getEPGFile(url)
+helper.parseEPG = async function(url) {
+  const content = await this.getEPG(url)
   const result = epgParser.parse(content)
   const channels = {}
   for(let channel of result.channels) {
@@ -65,7 +65,7 @@ helper.loadEPG = async function(url) {
   })
 }
 
-helper.getEPGFile = function(url) {
+helper.getEPG = function(url) {
   return new Promise((resolve, reject) => {
     var buffer = []
     axios({
@@ -109,22 +109,6 @@ helper.createFile = function(filename, data) {
 
 helper.getBasename = function(filename) {
   return path.basename(filename, path.extname(filename))
-}
-
-helper.addToCache = function(url) {
-  let id = this.getUrlPath(url)
-
-  cache[id] = true
-}
-
-helper.checkCache = function(url) {
-  let id = this.getUrlPath(url)
-
-  return cache.hasOwnProperty(id)
-}
-
-helper.clearCache = function() {
-  cache = {}
 }
 
 helper.getUrlPath = function(u) {
@@ -220,6 +204,7 @@ class Playlist {
   constructor(data) {
     this.header = data.header
     this.items = data.items
+    this.changed = false
   }
 
   getHeader() {
