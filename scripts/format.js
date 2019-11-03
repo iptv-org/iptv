@@ -1,21 +1,37 @@
 const helper = require('./helper')
 
 const config = {
-  debug: false,
+  debug: process.env.npm_config_debug || false,
   country: process.env.npm_config_country,
   exclude: process.env.npm_config_exclude,
   epg: process.env.npm_config_epg || false
 }
 
-// let stats = {
-//   total: 0,
-//   updated: 0,
-//   duplicates: 0,
-//   removed: 0
-// }
-// let buffer = {}
-
 let playlists = {}
+let isChanged = false
+
+async function main() {
+  console.log(`Parsing index...`)
+  parseIndex()
+  console.log(`Sorting channels...`)
+  sortChannels()
+  console.log(`Removing duplicates...`)
+  removeDuplicates()
+
+  if(config.epg) {
+    console.log('Adding the missing data from EPG files...')
+    await addMissingData()
+  }
+
+  if(isChanged) {
+    console.log('Updating files...')
+    updateFiles()
+  } else {
+    console.log('Nothing is changed.')
+  }
+
+  console.log('Done.\n')
+}
 
 function parseIndex() {
   const root = helper.parsePlaylist('index.m3u')
@@ -23,162 +39,110 @@ function parseIndex() {
   
   for(let rootItem of rootItems) {
     const playlist = helper.parsePlaylist(rootItem.url)
-    playlists[rootItem.url] = {}
-    for(let item of playlist.items) {
-      playlists[rootItem.url][item.url] = helper.createChannel(item)
+    const tvgUrl = playlist.header.attrs['x-tvg-url']
+
+    playlists[rootItem.url] = playlist
+    playlists[rootItem.url].items = playlist.items.map(item => {
+      let channel = helper.createChannel(item)
+      channel.epg = tvgUrl
+      
+      return channel
+    })
+  }
+}
+
+function sortChannels() {
+  for(let pid in playlists) {
+    const channels = playlists[pid].items
+    playlists[pid].items = helper.sortBy(channels, ['title', 'url'])
+    if(channels !== playlists[pid].items) { 
+      playlists[pid].changed = true 
+      isChanged = true
     }
   }
 }
 
-function main() {
-  console.log(`Parsing index...`)
-  parseIndex()
-  console.log(playlists)
-  // add missing data from epg (if exists)
-  // sort channels
-  // save all playlists back
-  // display stats
+function removeDuplicates() {
+  let buffer = {}
+  for(let pid in playlists) {
+    const channels = playlists[pid].items
+    playlists[pid].items = channels.filter(i => {
+      let result = typeof buffer[i.url] === 'undefined'
+      
+      if(result) {
+        buffer[i.url] = true
+      } else {
+        if(config.debug) {
+          console.log(`Duplicate of '${i.title}' has been removed from '${pid}'`)
+        }
+      }
+      
+      return result
+    })
 
-  // for(let country of countries) {
+    if(channels.length !== playlists[pid].items.length) { 
+      playlists[pid].changed = true 
+      isChanged = true
+    }
+  }
+}
 
-  //   if (helper.skipPlaylist(country.url)) {
-  //     continue
-  //   }
-    
-  //   if(verbose) {
-  //     console.log(`Clear cache...`)
-  //   }
-  //   helper.clearCache()
+function updateFiles() {
+  for(let pid in playlists) {
+    let playlist = playlists[pid]
+    if(playlist.changed) {
+      helper.createFile(pid, playlist.getHeader())
+      for(let channel of playlist.items) {
+        helper.appendToFile(pid, channel.toShortString())
+      }
 
-  //   console.log(`Parsing '${country.url}'...`)
-  //   const playlist = helper.parsePlaylist(country.url)
+      if(config.debug) {
+        console.log(`File '${pid}' has been updated`)
+      }
+    }
+  }
+}
 
-  //   if(verbose) {
-  //     console.log(`Creating channels list...`)
-  //   }
-  //   let channels = []
-  //   for(let item of playlist.items) {
-  //     let channel = helper.createChannel(item)
+async function addMissingData() {
+  let guides = {}
+  for(let playlist of Object.values(playlists)) {
+    for(let item of playlist.items) {
+      if(!item.epg) continue
+      try {
+        const guide = guides[item.epg] || await helper.parseEPG(item.epg)
+        guides[item.epg] = guide
 
-  //     if(helper.checkCache(channel.url)) {
-  //       stats.duplicates++
-  //     } else if(!helper.validateUrl(channel.url)) {
-  //       stats.unvalid++
-  //     } else {
-  //       channels.push(channel)
-  //       helper.addToCache(channel.url)
-  //     }
-
-  //     if(unsorted[channel.url]) {
-  //       if(verbose) {
-  //         console.log(`Removed '${channel.url}' from 'channels/unsorted.m3u'...`)
-  //       }
-  //       delete unsorted[channel.url]
-  //       stats.removed++
-  //       stats.duplicates++
-  //     }
-  //   }
-
-  //   const epgUrl = playlist.header.attrs['x-tvg-url']
-  //   if(epgUrl && !buffer[epgUrl] && parseEpg) {
-  //     try {
-  //       console.log(`Loading '${epgUrl}'...`)
-  //       const epg = await helper.loadEPG(epgUrl)
-  //       console.log(`Adding '${epgUrl}' to buffer...`)
-  //       buffer[epgUrl] = epg
-  //     } catch(e) {
-  //       console.log(`Could not load '${epgUrl}'`)
-  //     }
-  //   }
-
-  //   if(buffer[epgUrl]) {
-  //     console.log('Add missing tvg-id from EPG by channel title...')
-  //     for(let channel of channels) {
-  //       for(let channelId in buffer[epgUrl].channels) {
-  //         let c = buffer[epgUrl].channels[channelId]
-  //         for(let epgName of c.name) {
-  //           if(epgName.value) {
-  //             let escaped = helper.escapeStringRegexp(epgName.value)
-  //             channelTitle = channel.title.replace(/(fhd|hd|sd|高清)$/i, '').trim()
-  //             let regexp = new RegExp(`^${escaped}$`, 'i')
-  //             if(regexp.test(channelTitle)) {
-  //               if(!channel.id) {
-  //                 channel.id = c.id
-  //                 continue
-  //               }
-  //             }
-  //           }
-  //         }
-  //       }
-  //     }
-  //   }
-
-  //   if(buffer[epgUrl]) {
-  //     console.log(`Fills in missing channel's data...`)
-  //     for(let channel of channels) {
-  //       let channelId = channel.id
-  //       if(!channelId) continue
-  //       let c = buffer[epgUrl].channels[channelId]
-  //       if(!c) continue
-  //       let updated = false
+        if(!item.id) continue
         
-  //       if(!channel.name && c.name.length) {
-  //         channel.name = c.name[0].value
-  //         updated = true
-  //         if(verbose) {
-  //           console.log(`Added name '${c.name[0].value}' to '${channel.id}'`)
-  //         }
-  //       }
+        const channel = guide.channels[item.id]
+        if(!channel) continue
 
-  //       if(!channel.language && c.name.length && c.name[0].lang) {
-  //         let language = helper.getISO6391Name(c.name[0].lang)
-  //         channel.language = language
-  //         updated = true
-  //         if(verbose) {
-  //           console.log(`Added language '${language}' to '${channel.id}'`)
-  //         }
-  //       }
+        if(!item.name && channel.name.length) {
+          item.name = channel.name[0].value
+          if(config.debug) {
+            console.log(`Added tvg-name '${item.name}' to '${item.id}'`)
+          }
+        }
 
-  //       if(!channel.logo && c.icon.length) {
-  //         const icon = c.icon[0].split('|')[0]
-  //         channel.logo = icon
-  //         updated = true
-  //         if(verbose) {
-  //           console.log(`Added logo '${icon}' to '${channel.id}'`)
-  //         }
-  //       }
+        if(!item.language && channel.name.length && channel.name[0].lang) {
+          item.language = channel.name[0].lang
+          if(config.debug) {
+            console.log(`Added tvg-language '${item.language}' to '${item.id}'`)
+          }
+        }
 
-  //       if(updated) {
-  //         stats.updated++
-  //       }
-  //     }
-  //   }
-    
-  //   if(verbose) {
-  //     console.log(`Sorting channels...`)
-  //   }
-  //   channels = helper.sortBy(channels, ['title', 'url'])
-
-  //   if(!debug) {
-  //     console.log(`Updating '${country.url}'...`)
-  //     helper.createFile(country.url, playlist.getHeader())
-  //     channels.forEach(channel => {
-  //       helper.appendToFile(country.url, channel.toShortString())
-  //     })
-  //   }
-
-  //   stats.total += channels.length
-  // }
-
-  // if(!debug & stats.removed > 0) {
-  //   console.log(`Updating 'channels/unsorted.m3u'...`)
-  //   helper.createFile('channels/unsorted.m3u', playlist.getHeader())
-  //   Object.values(unsorted).forEach(channel => {
-  //     helper.appendToFile('channels/unsorted.m3u', channel.toShortString())
-  //   })
-  // }
-
-  // console.log(`Total: ${stats.total}. Duplicates: ${stats.duplicates}. Unvalid: ${stats.unvalid}. Updated: ${stats.updated}.`)
+        if(!item.logo && channel.icon.length) {
+          item.logo = channel.icon[0]
+          if(config.debug) {
+            console.log(`Added tvg-logo '${item.logo}' to '${item.id}'`)
+          }
+        }
+      } catch(err) {
+        console.error(`Could not load '${item.epg}'`)
+        continue
+      }
+    }
+  }
 }
 
 main()
