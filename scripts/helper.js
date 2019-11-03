@@ -151,17 +151,17 @@ helper.skipPlaylist = function(filename) {
 }
 
 helper.generateTable = function(data, options) {
-  let output = '<table>'
+  let output = '<table>\n'
 
-  output += '<thead><tr>'
+  output += '\t<thead>\n\t\t<tr>'
   for (let column of options.columns) {
     output += `<th align="${column.align}">${column.name}</th>`
   }
-  output += '</tr></thead>'
+  output += '</tr>\n\t</thead>\n'
 
-  output += '<tbody>'
+  output += '\t<tbody>\n'
   for (let item of data) {
-    output += '<tr>'
+    output += '\t\t<tr>'
     let i = 0
     for (let prop in item) {
       const column = options.columns[i]
@@ -170,9 +170,9 @@ helper.generateTable = function(data, options) {
       output += `<td align="${align}"${nowrap ? ' nowrap' : ''}>${item[prop]}</td>`
       i++
     }
-    output += '</tr>'
+    output += '</tr>\n'
   }
-  output += '</tbody>'
+  output += '\t</tbody>\n'
 
   output += '</table>'
 
