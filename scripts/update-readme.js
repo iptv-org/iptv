@@ -34,19 +34,19 @@ function parseIndex() {
 
     for(let item of playlist.items) {
       
-      // country
+      // countries
       if(countries[countryCode]) { 
         countries[countryCode].channels++
       } else {
         countries[countryCode] = { 
           country: countryName, 
-          channels: playlist.items.length, 
+          channels: 1, 
           playlist: `<code>https://iptv-org.github.io/iptv/countries/${countryCode}.m3u</code>`, 
           epg: countryEpg
         }
       }
 
-      // language
+      // languages
       const languageName = item.tvg.language || 'Undefined'
       const languageCode = helper.getISO6391Code(languageName) || 'undefined'
       if(languages[languageCode]) { 
@@ -59,7 +59,7 @@ function parseIndex() {
         }
       }
 
-      // category
+      // categories
       const categoryName = item.group.title || 'Other'
       const categoryCode = categoryName.toLowerCase()
       if(categories[categoryCode]) {
