@@ -12,7 +12,7 @@
 		<tr><td align="left">Armenia</td><td align="right">9</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/am.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Aruba</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/aw.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Australia</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/au.m3u</code></td><td align="left"><code>http://i.mjh.nz/nzau/epg.xml.gz</code></td></tr>
-		<tr><td align="left">Austria</td><td align="right">19</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/at.m3u</code></td><td align="left"><code>http://epg.streamstv.me/epg/guide-austria.xml.gz</code></td></tr>
+		<tr><td align="left">Austria</td><td align="right">20</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/at.m3u</code></td><td align="left"><code>http://epg.streamstv.me/epg/guide-austria.xml.gz</code></td></tr>
 		<tr><td align="left">Azerbaijan</td><td align="right">17</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/az.m3u</code></td><td align="left"><code>https://iptvx.one/epg/epg.xml.gz</code></td></tr>
 		<tr><td align="left">Bahamas</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/bs.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Bahrain</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/bh.m3u</code></td><td align="left"><code>http://195.154.221.171/epg/guidearab.xml.gz</code></td></tr>
@@ -90,7 +90,7 @@
 		<tr><td align="left">Lithuania</td><td align="right">12</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/lt.m3u</code></td><td align="left"><code>https://iptvx.one/epg/epg.xml.gz</code></td></tr>
 		<tr><td align="left">Luxembourg</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/lu.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Macau</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mo.m3u</code></td><td align="left"></td></tr>
-		<tr><td align="left">Macedonia</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mk.m3u</code></td><td align="left"></td></tr>
+		<tr><td align="left">North Macedonia</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mk.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Malaysia</td><td align="right">18</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/my.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Maldives</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mv.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Malta</td><td align="right">8</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mt.m3u</code></td><td align="left"><code>http://epg.streamstv.me/epg/guide-malta.xml.gz</code></td></tr>
