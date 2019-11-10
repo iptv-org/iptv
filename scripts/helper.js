@@ -104,7 +104,7 @@ helper.appendToFile = function(filename, data) {
   fs.appendFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
-helper.createFile = function(filename, data) {
+helper.createFile = function(filename, data = '') {
   fs.writeFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
