@@ -14,8 +14,6 @@ function main() {
   parseIndex()
   console.log('Creating root directory...')
   createRootDirectory()
-  console.log('Creating .nojekill...')
-  createNoJekillFile()
   console.log('Generating index.m3u...')
   generateIndex()
   console.log('Generating index.country.m3u...')
@@ -39,10 +37,6 @@ function main() {
 
 function createRootDirectory() {
   helper.createDir(ROOT_DIR)
-}
-
-function createNoJekillFile() {
-  helper.createFile(`${ROOT_DIR}/.nojekyll`)
 }
 
 function parseIndex() {
