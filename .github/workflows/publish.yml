@@ -2,7 +2,7 @@ name: Publish playlists
 
 on:
   schedule:
-    - cron:  '*/10 * * * *'
+    - cron:  '*/5 * * * *'
 
 jobs:
   deploy:
@@ -26,7 +26,7 @@ jobs:
         FOLDER: .gh-pages
   update-readme:
     runs-on: ubuntu-latest
-    needs: generate
+    needs: deploy
     steps:
     - name: Checkout
       uses: actions/checkout@master
