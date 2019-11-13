@@ -2,7 +2,7 @@ name: Publish playlists
 
 on:
   schedule:
-    - cron:  '0 1 * * *'
+    - cron:  */5 * * * *'
 
 jobs:
   deploy:
