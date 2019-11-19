@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@master
+      uses: actions/checkout@v1
 
     - name: Install Dependencies
       run: npm install
@@ -20,7 +20,7 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@releases/v3
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.REPO_SCOPED_TOKEN }}
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: .gh-pages
