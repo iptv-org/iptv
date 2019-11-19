@@ -18,12 +18,12 @@ jobs:
       run: npm run generate
 
     - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
+      uses: JamesIves/github-pages-deploy-action@master
+      env:
         ACCESS_TOKEN: ${{ secrets.REPO_SCOPED_TOKEN }}
         BASE_BRANCH: master
         BRANCH: gh-pages
-        FOLDER: '.gh-pages'
+        FOLDER: .gh-pages
   update-readme:
     runs-on: ubuntu-latest
     needs: deploy
