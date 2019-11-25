@@ -64,7 +64,7 @@
 		<tr><td align="left">Slovak</td><td align="right">39</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sk.m3u</code></td></tr>
 		<tr><td align="left">Slovene</td><td align="right">6</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sl.m3u</code></td></tr>
 		<tr><td align="left">Somali</td><td align="right">5</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/so.m3u</code></td></tr>
-		<tr><td align="left">Spanish</td><td align="right">585</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/es.m3u</code></td></tr>
+		<tr><td align="left">Spanish</td><td align="right">586</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/es.m3u</code></td></tr>
 		<tr><td align="left">Swahili</td><td align="right">7</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sw.m3u</code></td></tr>
 		<tr><td align="left">Swedish</td><td align="right">11</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sv.m3u</code></td></tr>
 		<tr><td align="left">Tagalog</td><td align="right">11</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/tl.m3u</code></td></tr>
