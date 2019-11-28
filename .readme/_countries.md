@@ -102,7 +102,7 @@
 		<tr><td align="left">Myanmar</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mm.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Nepal</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/np.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Netherlands</td><td align="right">67</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/nl.m3u</code></td><td align="left"><code>http://195.154.221.171/epg/guidenetherlands.xml.gz</code></td></tr>
-		<tr><td align="left">New Zealand</td><td align="right">10</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/nz.m3u</code></td><td align="left"><code>http://i.mjh.nz/nzau/epg.xml.gz</code></td></tr>
+		<tr><td align="left">New Zealand</td><td align="right">19</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/nz.m3u</code></td><td align="left"><code>http://i.mjh.nz/nzau/epg.xml.gz</code></td></tr>
 		<tr><td align="left">Nicaragua</td><td align="right">10</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ni.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Nigeria</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ng.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">North Korea</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/kp.m3u</code></td><td align="left"></td></tr>
