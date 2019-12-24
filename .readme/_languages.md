@@ -35,7 +35,7 @@
 		<tr><td align="left">Icelandic</td><td align="right">6</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/is.m3u</code></td></tr>
 		<tr><td align="left">Indonesian</td><td align="right">129</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/id.m3u</code></td></tr>
 		<tr><td align="left">Italian</td><td align="right">223</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/it.m3u</code></td></tr>
-		<tr><td align="left">Japanese</td><td align="right">33</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ja.m3u</code></td></tr>
+		<tr><td align="left">Japanese</td><td align="right">34</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ja.m3u</code></td></tr>
 		<tr><td align="left">Kazakh</td><td align="right">19</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/kk.m3u</code></td></tr>
 		<tr><td align="left">Khmer</td><td align="right">25</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/km.m3u</code></td></tr>
 		<tr><td align="left">Kinyarwanda</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/rw.m3u</code></td></tr>
@@ -57,7 +57,7 @@
 		<tr><td align="left">Persian</td><td align="right">61</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fa.m3u</code></td></tr>
 		<tr><td align="left">Polish</td><td align="right">12</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/pl.m3u</code></td></tr>
 		<tr><td align="left">Portuguese</td><td align="right">115</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/pt.m3u</code></td></tr>
-		<tr><td align="left">Romanian</td><td align="right">104</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ro.m3u</code></td></tr>
+		<tr><td align="left">Romanian</td><td align="right">110</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ro.m3u</code></td></tr>
 		<tr><td align="left">Russian</td><td align="right">234</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ru.m3u</code></td></tr>
 		<tr><td align="left">Serbian</td><td align="right">16</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sr.m3u</code></td></tr>
 		<tr><td align="left">Sinhala</td><td align="right">7</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/si.m3u</code></td></tr>
