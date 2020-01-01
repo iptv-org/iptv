@@ -27,7 +27,7 @@
 		<tr><td align="left">French</td><td align="right">142</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fr.m3u</code></td></tr>
 		<tr><td align="left">Georgian</td><td align="right">14</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ka.m3u</code></td></tr>
 		<tr><td align="left">German</td><td align="right">219</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/de.m3u</code></td></tr>
-		<tr><td align="left">Greek</td><td align="right">76</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/el.m3u</code></td></tr>
+		<tr><td align="left">Greek</td><td align="right">77</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/el.m3u</code></td></tr>
 		<tr><td align="left">Hausa</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ha.m3u</code></td></tr>
 		<tr><td align="left">Hebrew</td><td align="right">20</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/he.m3u</code></td></tr>
 		<tr><td align="left">Hindi</td><td align="right">218</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/hi.m3u</code></td></tr>
