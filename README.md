@@ -65,7 +65,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Akan</td><td align="right">3</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ak.m3u</code></td></tr>
 		<tr><td align="left">Albanian</td><td align="right">40</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sq.m3u</code></td></tr>
 		<tr><td align="left">Amharic</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/am.m3u</code></td></tr>
-		<tr><td align="left">Arabic</td><td align="right">428</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ar.m3u</code></td></tr>
+		<tr><td align="left">Arabic</td><td align="right">453</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ar.m3u</code></td></tr>
 		<tr><td align="left">Armenian</td><td align="right">9</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/hy.m3u</code></td></tr>
 		<tr><td align="left">Azerbaijani</td><td align="right">17</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/az.m3u</code></td></tr>
 		<tr><td align="left">Bengali</td><td align="right">11</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/bn.m3u</code></td></tr>
@@ -135,7 +135,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Ukrainian</td><td align="right">161</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/uk.m3u</code></td></tr>
 		<tr><td align="left">Urdu</td><td align="right">37</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ur.m3u</code></td></tr>
 		<tr><td align="left">Vietnamese</td><td align="right">62</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/vi.m3u</code></td></tr>
-		<tr><td align="left">Undefined</td><td align="right">31</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
+		<tr><td align="left">Undefined</td><td align="right">6</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
 
