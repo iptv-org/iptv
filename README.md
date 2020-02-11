@@ -79,11 +79,11 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Danish</td><td align="right">16</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/da.m3u</code></td></tr>
 		<tr><td align="left">Divehi</td><td align="right">5</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/dv.m3u</code></td></tr>
 		<tr><td align="left">Dutch</td><td align="right">85</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/nl.m3u</code></td></tr>
-		<tr><td align="left">English</td><td align="right">835</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/en.m3u</code></td></tr>
+		<tr><td align="left">English</td><td align="right">836</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/en.m3u</code></td></tr>
 		<tr><td align="left">Estonian</td><td align="right">11</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/et.m3u</code></td></tr>
 		<tr><td align="left">Faroese</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fo.m3u</code></td></tr>
 		<tr><td align="left">Finnish</td><td align="right">3</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fi.m3u</code></td></tr>
-		<tr><td align="left">French</td><td align="right">146</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fr.m3u</code></td></tr>
+		<tr><td align="left">French</td><td align="right">148</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fr.m3u</code></td></tr>
 		<tr><td align="left">Georgian</td><td align="right">14</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ka.m3u</code></td></tr>
 		<tr><td align="left">German</td><td align="right">203</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/de.m3u</code></td></tr>
 		<tr><td align="left">Greek</td><td align="right">77</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/el.m3u</code></td></tr>
@@ -123,7 +123,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Slovak</td><td align="right">39</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sk.m3u</code></td></tr>
 		<tr><td align="left">Slovene</td><td align="right">6</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sl.m3u</code></td></tr>
 		<tr><td align="left">Somali</td><td align="right">10</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/so.m3u</code></td></tr>
-		<tr><td align="left">Spanish</td><td align="right">590</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/es.m3u</code></td></tr>
+		<tr><td align="left">Spanish</td><td align="right">591</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/es.m3u</code></td></tr>
 		<tr><td align="left">Swahili</td><td align="right">7</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sw.m3u</code></td></tr>
 		<tr><td align="left">Swedish</td><td align="right">11</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sv.m3u</code></td></tr>
 		<tr><td align="left">Tagalog</td><td align="right">11</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/tl.m3u</code></td></tr>
@@ -135,7 +135,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Ukrainian</td><td align="right">163</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/uk.m3u</code></td></tr>
 		<tr><td align="left">Urdu</td><td align="right">37</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ur.m3u</code></td></tr>
 		<tr><td align="left">Vietnamese</td><td align="right">62</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/vi.m3u</code></td></tr>
-		<tr><td align="left">Undefined</td><td align="right">6</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
+		<tr><td align="left">Undefined</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
 
