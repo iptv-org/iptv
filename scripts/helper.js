@@ -5,7 +5,7 @@ const axios = require('axios')
 const zlib = require('zlib')
 const epgParser = require('epg-parser')
 const urlParser = require('url')
-const ISO6391 = require('iso-639-1')
+const langs = require('langs')
 const escapeStringRegexp = require('escape-string-regexp')
 const markdownInclude = require('markdown-include')
 
@@ -41,11 +41,11 @@ helper.escapeStringRegexp = function (scring) {
 }
 
 helper.getISO6391Name = function (code) {
-  return ISO6391.getName(code)
+  return langs.has('3', code) ? langs.where('3', code).name : null
 }
 
 helper.getISO6391Code = function (name) {
-  return ISO6391.getCode(name)
+  return langs.has('name', name) ? langs.where('name', name)['3'] : null
 }
 
 helper.parsePlaylist = function (filename) {
@@ -287,7 +287,7 @@ class Channel {
   }
 
   _filterLanguage(languageName) {
-    if (ISO6391.getCode(languageName) !== '') {
+    if (helper.getISO6391Code(languageName)) {
       return languageName
     }
 
