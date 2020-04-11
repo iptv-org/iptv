@@ -7,11 +7,11 @@ assignees: ''
 
 ---
 
-#### Country of the channel:
+**Country of the channel:**
 <!-- If you are not sure what country the channel belongs to, use the search on https://www.lyngsat.com/search.html -->
 
-#### Channel Name:
+**Channel Name:**
 
-#### Channel Language:
+**Channel Language:**
 
-#### Additional Information (optional):
+**Additional Information (optional):**
