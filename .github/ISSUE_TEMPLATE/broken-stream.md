@@ -7,13 +7,13 @@ assignees: ''
 
 ---
 
-#### What's wrong?
+**What's wrong?**
 
-#### Country of the channel:
+**Country of the channel:**
 
-#### Channel Name:
+**Channel Name:**
 
-#### Broken Link:
+**Broken Link:**
 <!-- Just copy the link to the broadcast from the playlist -->
 
-#### Additional Information (optional):
+**Additional Information (optional):**
