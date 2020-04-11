@@ -175,15 +175,7 @@ helper.generateTable = function (data, options) {
 }
 
 helper.createChannel = function (data) {
-  return new Channel({
-    id: data.tvg.id,
-    name: data.tvg.name,
-    language: data.tvg.language,
-    logo: data.tvg.logo,
-    group: data.group.title,
-    url: data.url,
-    title: data.name
-  })
+  return new Channel(data)
 }
 
 helper.writeToLog = function (country, msg, url) {
@@ -230,13 +222,15 @@ class Playlist {
 
 class Channel {
   constructor(data) {
-    this.id = data.id
-    this.name = data.name
-    this.language = this._filterLanguage(data.language)
-    this.logo = data.logo
-    this.group = this._filterGroup(data.group)
+    this.id = data.tvg.id
+    this.name = data.tvg.name
+    this.language = this._filterLanguage(data.tvg.language)
+    this.logo = data.tvg.logo
+    this.group = this._filterGroup(data.group.title)
     this.url = data.url
-    this.title = data.title
+    this.title = data.name.trim()
+    this.userAgent = data.http['user-agent']
+    this.referrer = data.http['referrer']
   }
 
   _filterGroup(groupTitle) {
@@ -297,13 +291,30 @@ class Channel {
   toString() {
     const country = this.countryCode.toUpperCase()
     const epg = this.id && this.epg ? this.epg : ''
-    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" tvg-country="${country}" tvg-url="${epg}" group-title="${this.group}",${this.title}`
+
+    let info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" tvg-country="${country}" tvg-url="${epg}" group-title="${this.group}",${this.title}`
+
+    if (this.referrer) {
+      info += `\n#EXTVLCOPT:http-referrer=${this.referrer}`
+    }
+
+    if (this.userAgent) {
+      info += `\n#EXTVLCOPT:http-user-agent=${this.userAgent}`
+    }
 
     return '#EXTINF:' + info + '\n' + this.url + '\n'
   }
 
   toShortString() {
-    const info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" group-title="${this.group}",${this.title}`
+    let info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" group-title="${this.group}",${this.title}`
+
+    if (this.referrer) {
+      info += `\n#EXTVLCOPT:http-referrer=${this.referrer}`
+    }
+
+    if (this.userAgent) {
+      info += `\n#EXTVLCOPT:http-user-agent=${this.userAgent}`
+    }
 
     return '#EXTINF:' + info + '\n' + this.url + '\n'
   }
