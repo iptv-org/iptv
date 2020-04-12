@@ -17,67 +17,60 @@ let stats = {
 }
 
 async function test() {
-
   const playlist = helper.parsePlaylist('index.m3u')
-  
+
   const countries = helper.filterPlaylists(playlist.items, config.country, config.exclude)
 
-  for(let country of countries) {
-
+  for (let country of countries) {
     stats.playlists++
 
     console.log(`Processing '${country.url}'...`)
 
     const playlist = helper.parsePlaylist(country.url)
 
-    for(let item of playlist.items) {
-
+    for (let item of playlist.items) {
       stats.channels++
 
-      if(config.debug) { console.log(`Checking '${item.url}'...`) }
+      if (config.debug) {
+        console.log(`Checking '${item.url}'...`)
+      }
 
       await new Promise(resolve => {
-        
         const timeout = setTimeout(() => {
-
           resolve()
-        
         }, config.timeout * 1000)
 
-        ffmpeg(item.url, { timeout: 60 }).ffprobe((err) => {
-      
-          if(err) {
-            const message = helper.parseMessage(err, item.url)
+        ffmpeg(item.url, { timeout: 60 }).ffprobe(
+          ['-user_agent', `"Mozilla/5.0 (Windows NT 10.0; Win64; x64)"`],
+          err => {
+            if (err) {
+              const message = helper.parseMessage(err, item.url)
 
-            stats.failures++
+              stats.failures++
 
-            helper.writeToLog(country.url, message, item.url)
+              helper.writeToLog(country.url, message, item.url)
 
-            console.log(`${message} '${item.url}'`)
+              console.log(`${message} '${item.url}'`)
+            }
+
+            clearTimeout(timeout)
+
+            resolve()
           }
-
-          clearTimeout(timeout)
-
-          resolve()
-
-        })
+        )
       })
-
     }
   }
 
-  if(stats.failures === 0) {
-
+  if (stats.failures === 0) {
     console.log(`OK (${stats.playlists} playlists, ${stats.channels} channels)`)
-    
   } else {
-
-    console.log(`FAILURES! (${stats.playlists} playlists, ${stats.channels} channels, ${stats.failures} failures)`)
+    console.log(
+      `FAILURES! (${stats.playlists} playlists, ${stats.channels} channels, ${stats.failures} failures)`
+    )
 
     process.exit(1)
-
   }
-
 }
 
 console.log('Test is running...')
