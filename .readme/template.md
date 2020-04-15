@@ -12,7 +12,6 @@ To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/
 
 Also you can instead use one of these playlists:
 
-- `https://iptv-org.github.io/iptv/index.full.m3u` (grouped by country and category)
 - `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
 - `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
 - `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
@@ -33,10 +32,10 @@ Or select one of the playlists from the list below.
 
 ## Resources
 
-You can find a links to various IPTV related resources in a separate [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
+You can find links to various IPTV related resources in this repository [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv).
 
 ## Contribution
 
 Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before making a pull request.
 
-If you just found an error or have any suggestions on how to organize a playlist please send an [issue](https://github.com/iptv-org/iptv/issues).
+If you find an error or have any suggestions on how to organize a playlist, please send an [issue](https://github.com/iptv-org/iptv/issues).

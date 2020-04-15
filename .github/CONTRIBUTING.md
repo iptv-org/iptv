@@ -40,12 +40,20 @@ More details about each attribute:
 
 | Attribute    | Description
 | ------------ | ---
-| tvg-id       | Channel ID that is used to load EPG (optional)
-| tvg-name     | Channel name that is also sometimes used to load EPG (optional)
-| tvg-language | Channel language. The name of the language must conform to the standard [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) (optional)
+| tvg-id       | Channel ID that is used to load EPG. Must match `id` from the EPG file. (optional)
+| tvg-name     | Channel name that is also sometimes used to load EPG. Must match `display-name` from the EPG file. (optional)
+| tvg-language | Channel language. If the channel is broadcast in several languages, you can specify other languages via semicolon, like so: `tvg-language="English;Chinese"`. The name of the language must conform to the standard [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500). (optional)
 | tvg-logo     | The logo of the channel that will be displayed in the player if it supports it (optional)
 | group-title  | The category to which the channel belongs. These categories are also displayed in some players, and grouped playlists are also generated based on them. The list of currently supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category) (optional)
 
+Also, if necessary, you can specify custom HTTP User-Agent or Referrer via `#EXTVLCOPT` tag:
+
+```xml
+#EXTINF:-1 tvg-id="exampletv.us" tvg-name="Example TV" tvg-language="English" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
+#EXTVLCOPT:http-referrer=http://example.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://example.com/stream.m3u8
+```
 
 ## Sort channels by category
 
