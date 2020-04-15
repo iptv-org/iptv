@@ -224,7 +224,10 @@ class Channel {
   constructor(data) {
     this.id = data.tvg.id
     this.name = data.tvg.name
-    this.language = this._filterLanguage(data.tvg.language)
+    this.language = data.tvg.language
+      .split(';')
+      .filter(l => !!helper.getISO6391Code(l))
+      .join(';')
     this.logo = data.tvg.logo
     this.group = this._filterGroup(data.group.title)
     this.url = data.url
@@ -278,14 +281,6 @@ class Channel {
     }
 
     return groupTitle
-  }
-
-  _filterLanguage(languageName) {
-    if (helper.getISO6391Code(languageName)) {
-      return languageName
-    }
-
-    return ''
   }
 
   toString() {
