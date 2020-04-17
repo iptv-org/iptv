@@ -75,11 +75,13 @@ function parseIndex() {
       countries[countryCode].push(channel)
 
       // language
-      const languageCode = helper.getISO6391Code(channel.language) || 'undefined'
-      if (!languages[languageCode]) {
-        languages[languageCode] = []
+      for (let language of channel.language.split(';')) {
+        const languageCode = helper.getISO6391Code(language) || 'undefined'
+        if (!languages[languageCode]) {
+          languages[languageCode] = []
+        }
+        languages[languageCode].push(channel)
       }
-      languages[languageCode].push(channel)
 
       // category
       const categoryCode = channel.group.toLowerCase() || 'other'
