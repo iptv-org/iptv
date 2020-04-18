@@ -5,9 +5,9 @@ const axios = require('axios')
 const zlib = require('zlib')
 const epgParser = require('epg-parser')
 const urlParser = require('url')
-const langs = require('langs')
 const escapeStringRegexp = require('escape-string-regexp')
 const markdownInclude = require('markdown-include')
+const iso6393 = require('iso-639-3')
 
 let cache = {}
 let helper = {}
@@ -41,11 +41,15 @@ helper.escapeStringRegexp = function (scring) {
 }
 
 helper.getISO6391Name = function (code) {
-  return langs.has('3', code) ? langs.where('3', code).name : null
+  const lang = iso6393.find((l) => l.iso6393 === code.toLowerCase())
+
+  return lang && lang.name ? lang.name : null
 }
 
 helper.getISO6391Code = function (name) {
-  return langs.has('name', name) ? langs.where('name', name)['3'] : null
+  const lang = iso6393.find((l) => l.name === name)
+
+  return lang && lang.iso6393 ? lang.iso6393 : null
 }
 
 helper.parsePlaylist = function (filename) {
@@ -65,7 +69,7 @@ helper.parseEPG = async function (url) {
 
   return Promise.resolve({
     url,
-    channels
+    channels,
   })
 }
 
@@ -76,9 +80,9 @@ helper.getEPG = function (url) {
       method: 'get',
       url: url,
       responseType: 'stream',
-      timeout: 60000
+      timeout: 60000,
     })
-      .then(res => {
+      .then((res) => {
         let stream
         if (/\.gz$/i.test(url)) {
           let gunzip = zlib.createGunzip()
@@ -99,7 +103,7 @@ helper.getEPG = function (url) {
             reject(e)
           })
       })
-      .catch(e => {
+      .catch((e) => {
         reject(e)
       })
   })
@@ -127,22 +131,6 @@ helper.getUrlPath = function (u) {
   let path = parsed.host + parsed.pathname + searchQuery
 
   return path.toLowerCase()
-}
-
-helper.filterPlaylists = function (arr, include = '', exclude = '') {
-  if (include) {
-    const included = include.split(',').map(filename => `channels/${filename}.m3u`)
-
-    return arr.filter(i => included.indexOf(i.url) > -1)
-  }
-
-  if (exclude) {
-    const excluded = exclude.split(',').map(filename => `channels/${filename}.m3u`)
-
-    return arr.filter(i => excluded.indexOf(i.url) === -1)
-  }
-
-  return arr
 }
 
 helper.generateTable = function (data, options) {
@@ -191,7 +179,7 @@ helper.parseMessage = function (err, u) {
 
   if (msgArr.length === 0) return
 
-  const line = msgArr.find(line => {
+  const line = msgArr.find((line) => {
     return line.indexOf(u) === 0
   })
 
@@ -226,7 +214,7 @@ class Channel {
     this.name = data.tvg.name
     this.language = data.tvg.language
       .split(';')
-      .filter(l => !!helper.getISO6391Code(l))
+      .filter((l) => !!helper.getISO6391Code(l))
       .join(';')
     this.logo = data.tvg.logo
     this.group = this._filterGroup(data.group.title)
@@ -268,10 +256,10 @@ class Channel {
       'Sport',
       'Travel',
       'Weather',
-      'XXX'
+      'XXX',
     ]
     const groupIndex = supportedCategories
-      .map(g => g.toLowerCase())
+      .map((g) => g.toLowerCase())
       .indexOf(groupTitle.toLowerCase())
 
     if (groupIndex === -1) {
