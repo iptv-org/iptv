@@ -65,7 +65,7 @@ helper.parseEPG = async function (url) {
 
   return Promise.resolve({
     url,
-    channels
+    channels,
   })
 }
 
@@ -76,9 +76,9 @@ helper.getEPG = function (url) {
       method: 'get',
       url: url,
       responseType: 'stream',
-      timeout: 60000
+      timeout: 60000,
     })
-      .then(res => {
+      .then((res) => {
         let stream
         if (/\.gz$/i.test(url)) {
           let gunzip = zlib.createGunzip()
@@ -99,7 +99,7 @@ helper.getEPG = function (url) {
             reject(e)
           })
       })
-      .catch(e => {
+      .catch((e) => {
         reject(e)
       })
   })
@@ -127,22 +127,6 @@ helper.getUrlPath = function (u) {
   let path = parsed.host + parsed.pathname + searchQuery
 
   return path.toLowerCase()
-}
-
-helper.filterPlaylists = function (arr, include = '', exclude = '') {
-  if (include) {
-    const included = include.split(',').map(filename => `channels/${filename}.m3u`)
-
-    return arr.filter(i => included.indexOf(i.url) > -1)
-  }
-
-  if (exclude) {
-    const excluded = exclude.split(',').map(filename => `channels/${filename}.m3u`)
-
-    return arr.filter(i => excluded.indexOf(i.url) === -1)
-  }
-
-  return arr
 }
 
 helper.generateTable = function (data, options) {
@@ -191,7 +175,7 @@ helper.parseMessage = function (err, u) {
 
   if (msgArr.length === 0) return
 
-  const line = msgArr.find(line => {
+  const line = msgArr.find((line) => {
     return line.indexOf(u) === 0
   })
 
@@ -226,7 +210,7 @@ class Channel {
     this.name = data.tvg.name
     this.language = data.tvg.language
       .split(';')
-      .filter(l => !!helper.getISO6391Code(l))
+      .filter((l) => !!helper.getISO6391Code(l))
       .join(';')
     this.logo = data.tvg.logo
     this.group = this._filterGroup(data.group.title)
@@ -268,10 +252,10 @@ class Channel {
       'Sport',
       'Travel',
       'Weather',
-      'XXX'
+      'XXX',
     ]
     const groupIndex = supportedCategories
-      .map(g => g.toLowerCase())
+      .map((g) => g.toLowerCase())
       .indexOf(groupTitle.toLowerCase())
 
     if (groupIndex === -1) {
