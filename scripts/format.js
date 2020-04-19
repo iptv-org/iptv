@@ -4,7 +4,7 @@ const config = {
   debug: process.env.npm_config_debug || false,
   country: process.env.npm_config_country,
   exclude: process.env.npm_config_exclude,
-  epg: process.env.npm_config_epg || false
+  epg: process.env.npm_config_epg || false,
 }
 
 let updated = 0
@@ -58,7 +58,7 @@ async function main() {
 
 function parseIndex() {
   const playlist = helper.parsePlaylist('index.m3u')
-  playlist.items = helper.filterPlaylists(playlist.items, config.country, config.exclude)
+  playlist.items = filterPlaylists(playlist.items, config.country, config.exclude)
 
   console.log(`Found ${playlist.items.length} playlist(s)`)
 
@@ -68,7 +68,7 @@ function parseIndex() {
 function parsePlaylist(url) {
   const playlist = helper.parsePlaylist(url)
 
-  playlist.items = playlist.items.map(item => {
+  playlist.items = playlist.items.map((item) => {
     return helper.createChannel(item)
   })
 
@@ -88,7 +88,7 @@ function sortChannels(playlist) {
 function removeDuplicates(playlist) {
   let buffer = {}
   const channels = JSON.stringify(playlist.items)
-  playlist.items = playlist.items.filter(i => {
+  playlist.items = playlist.items.filter((i) => {
     let result = typeof buffer[i.url] === 'undefined'
 
     if (result) {
@@ -163,6 +163,22 @@ function updatePlaylist(filepath, playlist) {
   }
 
   console.log(`Playlist '${filepath}' has been updated`)
+}
+
+function filterPlaylists(arr, include = '', exclude = '') {
+  if (include) {
+    const included = include.split(',').map((filename) => `channels/${filename}.m3u`)
+
+    return arr.filter((i) => included.indexOf(i.url) > -1)
+  }
+
+  if (exclude) {
+    const excluded = exclude.split(',').map((filename) => `channels/${filename}.m3u`)
+
+    return arr.filter((i) => excluded.indexOf(i.url) === -1)
+  }
+
+  return arr
 }
 
 main()
