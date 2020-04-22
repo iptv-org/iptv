@@ -49,8 +49,13 @@ function parseIndex() {
 
       // languages
       const languageNames = item.tvg.language || 'Undefined'
-      for (let languageName of item.tvg.language.split(';')) {
-        const languageCode = helper.getISO6391Code(languageName) || 'undefined'
+      for (let languageName of languageNames.split(';')) {
+        let languageCode = 'undefined'
+        if (languageName !== 'Undefined') {
+          languageCode = helper.getISO6391Code(languageName)
+          if (!languageCode) continue
+        }
+
         if (languages[languageCode]) {
           languages[languageCode].channels++
         } else {
