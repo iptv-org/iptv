@@ -3,7 +3,7 @@ const helper = require('./helper')
 let output = {
   countries: [],
   languages: [],
-  categories: []
+  categories: [],
 }
 
 function main() {
@@ -43,20 +43,22 @@ function parseIndex() {
           country: countryName,
           channels: 1,
           playlist: `<code>https://iptv-org.github.io/iptv/countries/${countryCode}.m3u</code>`,
-          epg: countryEpg
+          epg: countryEpg,
         }
       }
 
       // languages
-      const languageName = item.tvg.language || 'Undefined'
-      const languageCode = helper.getISO6391Code(languageName) || 'undefined'
-      if (languages[languageCode]) {
-        languages[languageCode].channels++
-      } else {
-        languages[languageCode] = {
-          language: languageName,
-          channels: 1,
-          playlist: `<code>https://iptv-org.github.io/iptv/languages/${languageCode}.m3u</code>`
+      const languageNames = item.tvg.language || 'Undefined'
+      for (let languageName of item.tvg.language.split(';')) {
+        const languageCode = helper.getISO6391Code(languageName) || 'undefined'
+        if (languages[languageCode]) {
+          languages[languageCode].channels++
+        } else {
+          languages[languageCode] = {
+            language: languageName,
+            channels: 1,
+            playlist: `<code>https://iptv-org.github.io/iptv/languages/${languageCode}.m3u</code>`,
+          }
         }
       }
 
@@ -69,7 +71,7 @@ function parseIndex() {
         categories[categoryCode] = {
           category: categoryName,
           channels: 1,
-          playlist: `<code>https://iptv-org.github.io/iptv/categories/${categoryCode}.m3u</code>`
+          playlist: `<code>https://iptv-org.github.io/iptv/categories/${categoryCode}.m3u</code>`,
         }
       }
     }
@@ -86,8 +88,8 @@ function generateCountriesTable() {
       { name: 'Country', align: 'left' },
       { name: 'Channels', align: 'right' },
       { name: 'Playlist', align: 'left', nowrap: true },
-      { name: 'EPG', align: 'left' }
-    ]
+      { name: 'EPG', align: 'left' },
+    ],
   })
 
   helper.createFile('./.readme/_countries.md', table)
@@ -114,8 +116,8 @@ function generateLanguagesTable() {
     columns: [
       { name: 'Language', align: 'left' },
       { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left' }
-    ]
+      { name: 'Playlist', align: 'left' },
+    ],
   })
 
   helper.createFile('./.readme/_languages.md', table)
@@ -142,8 +144,8 @@ function generateCategoriesTable() {
     columns: [
       { name: 'Category', align: 'left' },
       { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left' }
-    ]
+      { name: 'Playlist', align: 'left' },
+    ],
   })
 
   helper.createFile('./.readme/_categories.md', table)
