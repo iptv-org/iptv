@@ -8,6 +8,7 @@ const config = {
 }
 
 let updated = 0
+let items = []
 
 async function main() {
   console.log(`Parsing index...`)
@@ -16,10 +17,13 @@ async function main() {
   for (let item of index.items) {
     console.log(`Processing '${item.url}'...`)
     let playlist = parsePlaylist(item.url)
+    items = items.concat(playlist.items)
+
     if (config.debug) {
       console.log(`Sorting channels...`)
     }
     playlist = sortChannels(playlist)
+
     if (config.debug) {
       console.log(`Removing duplicates...`)
     }
@@ -51,6 +55,9 @@ async function main() {
     }
   }
 
+  console.log(`Processing 'channels/unsorted.m3u'...`)
+  filterUnsorted()
+
   console.log(`Updated ${updated} playlist(s)`)
 
   console.log('Done.\n')
@@ -60,7 +67,7 @@ function parseIndex() {
   const playlist = helper.parsePlaylist('index.m3u')
   playlist.items = filterPlaylists(playlist.items, config.country, config.exclude)
 
-  console.log(`Found ${playlist.items.length} playlist(s)`)
+  console.log(`Found ${playlist.items.length + 1} playlist(s)`)
 
   return playlist
 }
@@ -179,6 +186,18 @@ function filterPlaylists(arr, include = '', exclude = '') {
   }
 
   return arr
+}
+
+function filterUnsorted() {
+  const urls = items.map((i) => i.url)
+  const unsortedPlaylist = parsePlaylist('channels/unsorted.m3u')
+  const before = unsortedPlaylist.items.length
+  unsortedPlaylist.items = unsortedPlaylist.items.filter((i) => !urls.includes(i.url))
+
+  if (before !== unsortedPlaylist.items.length) {
+    updatePlaylist('channels/unsorted.m3u', unsortedPlaylist)
+    updated++
+  }
 }
 
 main()
