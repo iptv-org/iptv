@@ -188,6 +188,22 @@ helper.parseMessage = function (err, u) {
   return line.replace(`${u}: `, '')
 }
 
+helper.filterPlaylists = function (arr, include = '', exclude = '') {
+  if (include) {
+    const included = include.split(',').map((filename) => `channels/${filename}.m3u`)
+
+    return arr.filter((i) => included.indexOf(i.url) > -1)
+  }
+
+  if (exclude) {
+    const excluded = exclude.split(',').map((filename) => `channels/${filename}.m3u`)
+
+    return arr.filter((i) => excluded.indexOf(i.url) === -1)
+  }
+
+  return arr
+}
+
 class Playlist {
   constructor(data) {
     this.header = data.header
