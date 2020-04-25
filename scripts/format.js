@@ -65,7 +65,7 @@ async function main() {
 
 function parseIndex() {
   const playlist = helper.parsePlaylist('index.m3u')
-  playlist.items = filterPlaylists(playlist.items, config.country, config.exclude)
+  playlist.items = helper.filterPlaylists(playlist.items, config.country, config.exclude)
 
   console.log(`Found ${playlist.items.length + 1} playlist(s)`)
 
@@ -170,22 +170,6 @@ function updatePlaylist(filepath, playlist) {
   }
 
   console.log(`Playlist '${filepath}' has been updated`)
-}
-
-function filterPlaylists(arr, include = '', exclude = '') {
-  if (include) {
-    const included = include.split(',').map((filename) => `channels/${filename}.m3u`)
-
-    return arr.filter((i) => included.indexOf(i.url) > -1)
-  }
-
-  if (exclude) {
-    const excluded = exclude.split(',').map((filename) => `channels/${filename}.m3u`)
-
-    return arr.filter((i) => excluded.indexOf(i.url) === -1)
-  }
-
-  return arr
 }
 
 function filterUnsorted() {
