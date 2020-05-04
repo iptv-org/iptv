@@ -4,7 +4,7 @@ const config = {
   debug: process.env.npm_config_debug || false,
   country: process.env.npm_config_country,
   exclude: process.env.npm_config_exclude,
-  epg: process.env.npm_config_epg || false,
+  epg: process.env.npm_config_epg || false
 }
 
 let updated = 0
@@ -75,7 +75,7 @@ function parseIndex() {
 function parsePlaylist(url) {
   const playlist = helper.parsePlaylist(url)
 
-  playlist.items = playlist.items.map((item) => {
+  playlist.items = playlist.items.map(item => {
     return helper.createChannel(item)
   })
 
@@ -84,7 +84,7 @@ function parsePlaylist(url) {
 
 function sortChannels(playlist) {
   const channels = JSON.stringify(playlist.items)
-  playlist.items = helper.sortBy(playlist.items, ['title', 'url'])
+  playlist.items = helper.sortBy(playlist.items, ['name', 'url'])
   if (channels !== JSON.stringify(playlist.items)) {
     playlist.changed = true
   }
@@ -95,14 +95,14 @@ function sortChannels(playlist) {
 function removeDuplicates(playlist) {
   let buffer = {}
   const channels = JSON.stringify(playlist.items)
-  playlist.items = playlist.items.filter((i) => {
+  playlist.items = playlist.items.filter(i => {
     let result = typeof buffer[i.url] === 'undefined'
 
     if (result) {
       buffer[i.url] = true
     } else {
       if (config.debug) {
-        console.log(`Duplicate of '${i.title}' has been removed`)
+        console.log(`Duplicate of '${i.name}' has been removed`)
       }
     }
 
@@ -128,34 +128,34 @@ async function loadEPG(url) {
 function addDataFromEPG(playlist, epg) {
   if (!epg) return playlist
 
-  for (let item of playlist.items) {
-    if (!item.id) continue
+  for (let channel of playlist.items) {
+    if (!channel.tvg.id) continue
 
-    const channel = epg.channels[item.id]
+    const epgItem = epg.channels[channel.tvg.id]
 
-    if (!channel) continue
+    if (!epgItem) continue
 
-    if (!item.name && channel.name.length) {
-      item.name = channel.name[0].value
+    if (!channel.tvg.name && epgItem.name.length) {
+      channel.tvg.name = epgItem.name[0].value
       playlist.changed = true
       if (config.debug) {
-        console.log(`Added tvg-name '${item.name}' to '${item.title}'`)
+        console.log(`Added tvg-name '${channel.tvg.name}' to '${channel.name}'`)
       }
     }
 
-    if (!item.language && channel.name.length && channel.name[0].lang) {
-      item.language = channel.name[0].lang
+    if (!channel.language.length && epgItem.name.length && epgItem.name[0].lang) {
+      channel.setLanguage(epgItem.name[0].lang)
       playlist.changed = true
       if (config.debug) {
-        console.log(`Added tvg-language '${item.language}' to '${item.title}'`)
+        console.log(`Added tvg-language '${epgItem.name[0].lang}' to '${channel.name}'`)
       }
     }
 
-    if (!item.logo && channel.icon.length) {
-      item.logo = channel.icon[0]
+    if (!channel.logo && epgItem.icon.length) {
+      channel.logo = epgItem.icon[0]
       playlist.changed = true
       if (config.debug) {
-        console.log(`Added tvg-logo '${item.logo}' to '${item.title}'`)
+        console.log(`Added tvg-logo '${channel.logo}' to '${channel.name}'`)
       }
     }
   }
@@ -173,10 +173,10 @@ function updatePlaylist(filepath, playlist) {
 }
 
 function filterUnsorted() {
-  const urls = items.map((i) => i.url)
+  const urls = items.map(i => i.url)
   const unsortedPlaylist = parsePlaylist('channels/unsorted.m3u')
   const before = unsortedPlaylist.items.length
-  unsortedPlaylist.items = unsortedPlaylist.items.filter((i) => !urls.includes(i.url))
+  unsortedPlaylist.items = unsortedPlaylist.items.filter(i => !urls.includes(i.url))
 
   if (before !== unsortedPlaylist.items.length) {
     updatePlaylist('channels/unsorted.m3u', unsortedPlaylist)
