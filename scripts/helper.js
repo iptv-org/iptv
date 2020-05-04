@@ -278,7 +278,30 @@ class Channel {
   }
 
   parseData(data) {
-    const language = data.tvg.language
+    this.logo = data.tvg.logo
+    this.category = helper.filterGroup(data.group.title)
+    this.url = data.url
+    this.name = data.name.trim()
+    this.http = data.http
+    this.tvg = data.tvg
+    this.country = {
+      code: null,
+      name: null
+    }
+
+    this.setLanguage(data.tvg.language)
+  }
+
+  get ['language.name']() {
+    return this.language[0] ? this.language[0].name : null
+  }
+
+  get ['country.name']() {
+    return this.country.name || null
+  }
+
+  setLanguage(lang) {
+    this.language = lang
       .split(';')
       .map(name => {
         const code = name ? helper.getISO6391Code(name) : null
@@ -290,26 +313,6 @@ class Channel {
         }
       })
       .filter(l => l)
-
-    this.language = language
-    this.logo = data.tvg.logo
-    this.category = helper.filterGroup(data.group.title)
-    this.url = data.url
-    this.name = data.name.trim()
-    this.http = data.http
-    this.tvg = data.tvg
-    this.country = {
-      code: null,
-      name: null
-    }
-  }
-
-  get ['language.name']() {
-    return this.language[0] ? this.language[0].name : null
-  }
-
-  get ['country.name']() {
-    return this.country.name || null
   }
 
   toString() {
