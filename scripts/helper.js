@@ -336,7 +336,7 @@ class Channel {
   toShortString() {
     const language = this.language.map(l => l.name).join(';')
 
-    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${language}" tvg-logo="${this.logo}" group-title="${this.category}",${this.namee}`
+    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${language}" tvg-logo="${this.logo}" group-title="${this.category}",${this.name}`
 
     if (this.http['referrer']) {
       info += `\n#EXTVLCOPT:http-referrer=${this.http['referrer']}`
