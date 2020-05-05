@@ -15,10 +15,13 @@ let helper = {}
 helper.sortBy = function (arr, fields) {
   return arr.sort((a, b) => {
     for (let field of fields) {
-      if (a[field].toLowerCase() < b[field].toLowerCase()) {
+      let propA = a[field] ? a[field].toLowerCase() : ''
+      let propB = b[field] ? b[field].toLowerCase() : ''
+
+      if (propA < propB) {
         return -1
       }
-      if (a[field].toLowerCase() > b[field].toLowerCase()) {
+      if (propA > propB) {
         return 1
       }
     }
@@ -41,13 +44,13 @@ helper.escapeStringRegexp = function (scring) {
 }
 
 helper.getISO6391Name = function (code) {
-  const lang = iso6393.find((l) => l.iso6393 === code.toLowerCase())
+  const lang = iso6393.find(l => l.iso6393 === code.toLowerCase())
 
   return lang && lang.name ? lang.name : null
 }
 
 helper.getISO6391Code = function (name) {
-  const lang = iso6393.find((l) => l.name === name)
+  const lang = iso6393.find(l => l.name === name)
 
   return lang && lang.iso6393 ? lang.iso6393 : null
 }
@@ -69,7 +72,7 @@ helper.parseEPG = async function (url) {
 
   return Promise.resolve({
     url,
-    channels,
+    channels
   })
 }
 
@@ -80,9 +83,9 @@ helper.getEPG = function (url) {
       method: 'get',
       url: url,
       responseType: 'stream',
-      timeout: 60000,
+      timeout: 60000
     })
-      .then((res) => {
+      .then(res => {
         let stream
         if (/\.gz$/i.test(url)) {
           let gunzip = zlib.createGunzip()
@@ -103,7 +106,7 @@ helper.getEPG = function (url) {
             reject(e)
           })
       })
-      .catch((e) => {
+      .catch(e => {
         reject(e)
       })
   })
@@ -179,7 +182,7 @@ helper.parseMessage = function (err, u) {
 
   if (msgArr.length === 0) return
 
-  const line = msgArr.find((line) => {
+  const line = msgArr.find(line => {
     return line.indexOf(u) === 0
   })
 
@@ -190,18 +193,63 @@ helper.parseMessage = function (err, u) {
 
 helper.filterPlaylists = function (arr, include = '', exclude = '') {
   if (include) {
-    const included = include.split(',').map((filename) => `channels/${filename}.m3u`)
+    const included = include.split(',').map(filename => `channels/${filename}.m3u`)
 
-    return arr.filter((i) => included.indexOf(i.url) > -1)
+    return arr.filter(i => included.indexOf(i.url) > -1)
   }
 
   if (exclude) {
-    const excluded = exclude.split(',').map((filename) => `channels/${filename}.m3u`)
+    const excluded = exclude.split(',').map(filename => `channels/${filename}.m3u`)
 
-    return arr.filter((i) => excluded.indexOf(i.url) === -1)
+    return arr.filter(i => excluded.indexOf(i.url) === -1)
   }
 
   return arr
+}
+
+helper.filterGroup = function (groupTitle) {
+  if (!groupTitle) return ''
+
+  const supportedCategories = [
+    'Auto',
+    'Business',
+    'Classic',
+    'Comedy',
+    'Documentary',
+    'Education',
+    'Entertainment',
+    'Family',
+    'Fashion',
+    'Food',
+    'General',
+    'Health',
+    'History',
+    'Hobby',
+    'Kids',
+    'Legislative',
+    'Lifestyle',
+    'Local',
+    'Movies',
+    'Music',
+    'News',
+    'Quiz',
+    'Religious',
+    'Sci-Fi',
+    'Shop',
+    'Sport',
+    'Travel',
+    'Weather',
+    'XXX'
+  ]
+  const groupIndex = supportedCategories.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
+
+  if (groupIndex === -1) {
+    groupTitle = ''
+  } else {
+    groupTitle = supportedCategories[groupIndex]
+  }
+
+  return groupTitle
 }
 
 class Playlist {
@@ -226,96 +274,95 @@ class Playlist {
 
 class Channel {
   constructor(data) {
-    this.id = data.tvg.id
-    this.name = data.tvg.name
-    this.language = data.tvg.language
-      .split(';')
-      .filter((l) => !!helper.getISO6391Code(l))
-      .join(';')
-    this.logo = data.tvg.logo
-    this.group = this._filterGroup(data.group.title)
-    this.url = data.url
-    this.title = data.name.trim()
-    this.userAgent = data.http['user-agent']
-    this.referrer = data.http['referrer']
+    this.parseData(data)
   }
 
-  _filterGroup(groupTitle) {
-    if (!groupTitle) return ''
-
-    const supportedCategories = [
-      'Auto',
-      'Business',
-      'Classic',
-      'Comedy',
-      'Documentary',
-      'Education',
-      'Entertainment',
-      'Family',
-      'Fashion',
-      'Food',
-      'General',
-      'Health',
-      'History',
-      'Hobby',
-      'Kids',
-      'Legislative',
-      'Lifestyle',
-      'Local',
-      'Movies',
-      'Music',
-      'News',
-      'Quiz',
-      'Religious',
-      'Sci-Fi',
-      'Shop',
-      'Sport',
-      'Travel',
-      'Weather',
-      'XXX',
-    ]
-    const groupIndex = supportedCategories
-      .map((g) => g.toLowerCase())
-      .indexOf(groupTitle.toLowerCase())
-
-    if (groupIndex === -1) {
-      groupTitle = ''
-    } else {
-      groupTitle = supportedCategories[groupIndex]
+  parseData(data) {
+    this.logo = data.tvg.logo
+    this.category = helper.filterGroup(data.group.title)
+    this.url = data.url
+    this.name = data.name.trim()
+    this.http = data.http
+    this.tvg = data.tvg
+    this.country = {
+      code: null,
+      name: null
     }
 
-    return groupTitle
+    this.setLanguage(data.tvg.language)
+  }
+
+  get ['language.name']() {
+    return this.language[0] ? this.language[0].name : null
+  }
+
+  get ['country.name']() {
+    return this.country.name || null
+  }
+
+  setLanguage(lang) {
+    this.language = lang
+      .split(';')
+      .map(name => {
+        const code = name ? helper.getISO6391Code(name) : null
+        if (!code) return null
+
+        return {
+          code,
+          name
+        }
+      })
+      .filter(l => l)
   }
 
   toString() {
-    const country = this.countryCode.toUpperCase()
-    const epg = this.id && this.epg ? this.epg : ''
+    const country = this.country.code ? this.country.code.toUpperCase() : ''
+    const tvgUrl = (this.tvg.id || this.tvg.name) && this.tvg.url ? this.tvg.url : ''
+    const language = this.language.map(l => l.name).join(';')
 
-    let info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" tvg-country="${country}" tvg-url="${epg}" group-title="${this.group}",${this.title}`
+    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${language}" tvg-logo="${this.logo}" tvg-country="${country}" tvg-url="${tvgUrl}" group-title="${this.category}",${this.name}`
 
-    if (this.referrer) {
-      info += `\n#EXTVLCOPT:http-referrer=${this.referrer}`
+    if (this.http['referrer']) {
+      info += `\n#EXTVLCOPT:http-referrer=${this.http['referrer']}`
     }
 
-    if (this.userAgent) {
-      info += `\n#EXTVLCOPT:http-user-agent=${this.userAgent}`
+    if (this.http['user-agent']) {
+      info += `\n#EXTVLCOPT:http-user-agent=${this.http['user-agent']}`
     }
 
     return '#EXTINF:' + info + '\n' + this.url + '\n'
   }
 
   toShortString() {
-    let info = `-1 tvg-id="${this.id}" tvg-name="${this.name}" tvg-language="${this.language}" tvg-logo="${this.logo}" group-title="${this.group}",${this.title}`
+    const language = this.language.map(l => l.name).join(';')
 
-    if (this.referrer) {
-      info += `\n#EXTVLCOPT:http-referrer=${this.referrer}`
+    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${language}" tvg-logo="${this.logo}" group-title="${this.category}",${this.name}`
+
+    if (this.http['referrer']) {
+      info += `\n#EXTVLCOPT:http-referrer=${this.http['referrer']}`
     }
 
-    if (this.userAgent) {
-      info += `\n#EXTVLCOPT:http-user-agent=${this.userAgent}`
+    if (this.http['user-agent']) {
+      info += `\n#EXTVLCOPT:http-user-agent=${this.http['user-agent']}`
     }
 
     return '#EXTINF:' + info + '\n' + this.url + '\n'
+  }
+
+  toJSON() {
+    return {
+      name: this.name,
+      logo: this.logo || null,
+      url: this.url,
+      category: this.category || null,
+      language: this.language,
+      country: this.country,
+      tvg: {
+        id: this.tvg.id || null,
+        name: this.tvg.name || null,
+        url: this.tvg.url || null
+      }
+    }
   }
 }
 
