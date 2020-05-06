@@ -38,7 +38,7 @@ In addition to the above methods, you can also get a list of all available chann
 To do this, you just have to make a GET request to:
 
 ```
-https://github.com/iptv-org/iptv/channels.json
+https://iptv-org.github.io/iptv/channels.json
 ```
 
 If successful, you should get the following response:
