@@ -3,7 +3,7 @@
 		<tr><th align="left">Country</th><th align="right">Channels</th><th align="left">Playlist</th><th align="left">EPG</th></tr>
 	</thead>
 	<tbody>
-		<tr><td align="left">Afghanistan</td><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/af.m3u</code></td><td align="left"></td></tr>
+		<tr><td align="left">Afghanistan</td><td align="right">8</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/af.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Albania</td><td align="right">41</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/al.m3u</code></td><td align="left"><code>http://195.154.221.171/epg/guidealbania.xml.gz</code></td></tr>
 		<tr><td align="left">Algeria</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/dz.m3u</code></td><td align="left"><code>http://195.154.221.171/epg/guidearab.xml.gz</code></td></tr>
 		<tr><td align="left">Andorra</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ad.m3u</code></td><td align="left"></td></tr>
@@ -138,7 +138,7 @@
 		<tr><td align="left">Sudan</td><td align="right">9</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sd.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Sweden</td><td align="right">13</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/se.m3u</code></td><td align="left"><code>http://195.154.221.171/epg/guidesweden.xml.gz</code></td></tr>
 		<tr><td align="left">Switzerland</td><td align="right">23</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ch.m3u</code></td><td align="left"><code>http://195.154.221.171/epg/guideswitzerland.xml.gz</code></td></tr>
-		<tr><td align="left">Syria</td><td align="right">24</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sy.m3u</code></td><td align="left"><code>http://195.154.221.171/epg/guidearab.xml.gz</code></td></tr>
+		<tr><td align="left">Syria</td><td align="right">25</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sy.m3u</code></td><td align="left"><code>http://195.154.221.171/epg/guidearab.xml.gz</code></td></tr>
 		<tr><td align="left">Taiwan</td><td align="right">92</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tw.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Tajikistan</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tj.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">Tanzania</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tz.m3u</code></td><td align="left"></td></tr>
