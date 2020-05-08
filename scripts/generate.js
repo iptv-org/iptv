@@ -121,7 +121,7 @@ function generateChannels() {
   const filename = `${ROOT_DIR}/channels.json`
   const sorted = helper.sortBy(list.all, ['name', 'url'])
   const channels = sorted.map(c => c.toJSON())
-  helper.createFile(filename, JSON.stringify(channels, null, '\t'))
+  helper.createFile(filename, JSON.stringify(channels))
 }
 
 function generateCountryIndex() {

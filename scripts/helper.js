@@ -12,6 +12,19 @@ const iso6393 = require('iso-639-3')
 let cache = {}
 let helper = {}
 
+helper.code2flag = function (code) {
+  switch (code) {
+    case 'uk':
+      return '🇬🇧'
+    case 'int':
+      return '🌎'
+    default:
+      return code
+        .toUpperCase()
+        .replace(/./g, char => String.fromCodePoint(char.charCodeAt(0) + 127397))
+  }
+}
+
 helper.sortBy = function (arr, fields) {
   return arr.sort((a, b) => {
     for (let field of fields) {

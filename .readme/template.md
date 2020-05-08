@@ -30,6 +30,47 @@ Or select one of the playlists from the list below.
 
 #include "./.readme/_countries.md"
 
+
+## For Developers
+
+In addition to the above methods, you can also get a list of all available channels in JSON format.
+
+To do this, you just have to make a GET request to:
+
+```
+https://iptv-org.github.io/iptv/channels.json
+```
+
+If successful, you should get the following response:
+
+```
+[
+  ...
+  {
+    "name": "CNN",
+    "logo": "https://i.imgur.com/ilZJT5s.png",
+    "url": "http://ott-cdn.ucom.am/s27/index.m3u8",
+    "category": "News",
+    "language": [
+      {
+        "code": "eng",
+        "name": "English"
+      }
+    ],
+    "country": {
+      "code": "us",
+      "name": "United States"
+    },
+    "tvg": {
+      "id": "cnn.us",
+      "name": "CNN",
+      "url": "http://epg.streamstv.me/epg/guide-usa.xml.gz"
+    }
+  },
+  ...
+]
+```
+
 ## Resources
 
 You can find links to various IPTV related resources in this repository [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv).
