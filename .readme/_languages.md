@@ -19,7 +19,7 @@
 		<tr><td align="left">Czech</td><td align="right">29</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ces.m3u</code></td></tr>
 		<tr><td align="left">Danish</td><td align="right">14</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/dan.m3u</code></td></tr>
 		<tr><td align="left">Dutch</td><td align="right">75</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/nld.m3u</code></td></tr>
-		<tr><td align="left">English</td><td align="right">699</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/eng.m3u</code></td></tr>
+		<tr><td align="left">English</td><td align="right">700</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/eng.m3u</code></td></tr>
 		<tr><td align="left">Estonian</td><td align="right">3</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/est.m3u</code></td></tr>
 		<tr><td align="left">Faroese</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fao.m3u</code></td></tr>
 		<tr><td align="left">Finnish</td><td align="right">3</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fin.m3u</code></td></tr>
@@ -44,7 +44,7 @@
 		<tr><td align="left">Latvian</td><td align="right">5</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/lav.m3u</code></td></tr>
 		<tr><td align="left">Luxembourgish</td><td align="right">5</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ltz.m3u</code></td></tr>
 		<tr><td align="left">Macedonian</td><td align="right">5</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/mkd.m3u</code></td></tr>
-		<tr><td align="left">Mandarin Chinese</td><td align="right">138</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/cmn.m3u</code></td></tr>
+		<tr><td align="left">Mandarin Chinese</td><td align="right">139</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/cmn.m3u</code></td></tr>
 		<tr><td align="left">Min Nan Chinese</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/nan.m3u</code></td></tr>
 		<tr><td align="left">Mongolian</td><td align="right">6</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/mon.m3u</code></td></tr>
 		<tr><td align="left">Norwegian Bokmål</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/nob.m3u</code></td></tr>
