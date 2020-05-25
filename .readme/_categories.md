@@ -5,9 +5,9 @@
 	<tbody>
 		<tr><td align="left">Auto</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/auto.m3u</code></td></tr>
 		<tr><td align="left">Azteca</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/azteca.m3u</code></td></tr>
-		<tr><td align="left">Business</td><td align="right">39</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/business.m3u</code></td></tr>
+		<tr><td align="left">Business</td><td align="right">38</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/business.m3u</code></td></tr>
 		<tr><td align="left">Comedy</td><td align="right">4</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/comedy.m3u</code></td></tr>
-		<tr><td align="left">Documentary</td><td align="right">21</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/documentary.m3u</code></td></tr>
+		<tr><td align="left">Documentary</td><td align="right">20</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/documentary.m3u</code></td></tr>
 		<tr><td align="left">Education</td><td align="right">34</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/education.m3u</code></td></tr>
 		<tr><td align="left">Entertainment</td><td align="right">95</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/entertainment.m3u</code></td></tr>
 		<tr><td align="left">Family</td><td align="right">7</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/family.m3u</code></td></tr>
@@ -30,6 +30,6 @@
 		<tr><td align="left">Travel</td><td align="right">9</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/travel.m3u</code></td></tr>
 		<tr><td align="left">Weather</td><td align="right">5</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/weather.m3u</code></td></tr>
 		<tr><td align="left">XXX</td><td align="right">45</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/xxx.m3u</code></td></tr>
-		<tr><td align="left">Other</td><td align="right">3653</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
+		<tr><td align="left">Other</td><td align="right">3647</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
 	</tbody>
 </table>
