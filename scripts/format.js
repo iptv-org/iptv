@@ -47,18 +47,11 @@ async function main() {
       }
     }
 
-    if (playlist.changed) {
-      updatePlaylist(item.url, playlist)
-      updated++
-    } else {
-      console.log('Nothing is changed')
-    }
+    updatePlaylist(item.url, playlist)
   }
 
   console.log(`Processing 'channels/unsorted.m3u'...`)
   filterUnsorted()
-
-  console.log(`Updated ${updated} playlist(s)`)
 
   console.log('Done.\n')
 }
@@ -85,9 +78,6 @@ function parsePlaylist(url) {
 function sortChannels(playlist) {
   const channels = JSON.stringify(playlist.items)
   playlist.items = helper.sortBy(playlist.items, ['name', 'url'])
-  if (channels !== JSON.stringify(playlist.items)) {
-    playlist.changed = true
-  }
 
   return playlist
 }
@@ -108,10 +98,6 @@ function removeDuplicates(playlist) {
 
     return result
   })
-
-  if (channels !== JSON.stringify(playlist.items)) {
-    playlist.changed = true
-  }
 
   return playlist
 }
@@ -168,8 +154,6 @@ function updatePlaylist(filepath, playlist) {
   for (let channel of playlist.items) {
     helper.appendToFile(filepath, channel.toShortString())
   }
-
-  console.log(`Playlist '${filepath}' has been updated`)
 }
 
 function filterUnsorted() {
