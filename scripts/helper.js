@@ -188,22 +188,6 @@ helper.writeToLog = function (country, msg, url) {
   this.appendToFile('error.log', now.toISOString() + ' ' + line + '\n')
 }
 
-helper.parseMessage = function (err, u) {
-  if (!err || !err.message) return
-
-  const msgArr = err.message.split('\n')
-
-  if (msgArr.length === 0) return
-
-  const line = msgArr.find(line => {
-    return line.indexOf(u) === 0
-  })
-
-  if (!line) return
-
-  return line.replace(`${u}: `, '')
-}
-
 helper.filterPlaylists = function (arr, include = '', exclude = '') {
   if (include) {
     const included = include.split(',').map(filename => `channels/${filename}.m3u`)
