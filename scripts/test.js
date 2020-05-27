@@ -7,7 +7,7 @@ const config = {
   debug: process.env.npm_config_debug || false,
   country: process.env.npm_config_country,
   exclude: process.env.npm_config_exclude,
-  timeout: 10000
+  timeout: 60000
 }
 
 let stats = {
