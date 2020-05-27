@@ -1,13 +1,13 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
 
 const helper = require('./helper')
-const ffmpeg = require('fluent-ffmpeg')
+const iptvChecker = require('iptv-checker-module')
 
 const config = {
   debug: process.env.npm_config_debug || false,
   country: process.env.npm_config_country,
   exclude: process.env.npm_config_exclude,
-  timeout: 10
+  timeout: 10000
 }
 
 let stats = {
@@ -26,40 +26,24 @@ async function test() {
 
     console.log(`Processing '${country.url}'...`)
 
-    const playlist = helper.parsePlaylist(country.url)
+    const options = {
+      timeout: config.timeout,
+      userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+      debug: config.debug,
+      omitMetadata: true,
+      parallel: 1,
+      itemCallback: item => {
+        if (!item.status.ok && item.status.reason !== 'Timed out') {
+          stats.failures++
 
-    for (let item of playlist.items) {
-      stats.channels++
+          helper.writeToLog(country.url, item.status.reason, item.url)
 
-      if (config.debug) {
-        console.log(`Checking '${item.url}'...`)
+          console.log(`${item.status.reason} '${item.url}'`)
+        }
       }
-
-      await new Promise(resolve => {
-        const timeout = setTimeout(() => {
-          resolve()
-        }, config.timeout * 1000)
-
-        ffmpeg(item.url, { timeout: 60 }).ffprobe(
-          ['-user_agent', `"Mozilla/5.0 (Windows NT 10.0; Win64; x64)"`],
-          err => {
-            if (err) {
-              const message = helper.parseMessage(err, item.url)
-
-              stats.failures++
-
-              helper.writeToLog(country.url, message, item.url)
-
-              console.log(`${message} '${item.url}'`)
-            }
-
-            clearTimeout(timeout)
-
-            resolve()
-          }
-        )
-      })
     }
+
+    await iptvChecker(country.url, options)
   }
 
   if (stats.failures === 0) {
