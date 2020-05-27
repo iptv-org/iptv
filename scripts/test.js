@@ -7,7 +7,7 @@ const config = {
   debug: process.env.npm_config_debug || false,
   country: process.env.npm_config_country,
   exclude: process.env.npm_config_exclude,
-  timeout: 60000
+  timeout: 10000
 }
 
 let stats = {
@@ -33,7 +33,7 @@ async function test() {
       omitMetadata: true,
       parallel: 1,
       itemCallback: item => {
-        if (!item.status.ok) {
+        if (!item.status.ok && item.status.reason !== 'Timed out') {
           stats.failures++
 
           helper.writeToLog(country.url, item.status.reason, item.url)
