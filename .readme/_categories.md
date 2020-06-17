@@ -14,7 +14,7 @@
 		<tr><td align="left">Food</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/food.m3u</code></td></tr>
 		<tr><td align="left">General</td><td align="right">127</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/general.m3u</code></td></tr>
 		<tr><td align="left">Health</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/health.m3u</code></td></tr>
-		<tr><td align="left">History</td><td align="right">3</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/history.m3u</code></td></tr>
+		<tr><td align="left">History</td><td align="right">4</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/history.m3u</code></td></tr>
 		<tr><td align="left">Hobby</td><td align="right">9</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/hobby.m3u</code></td></tr>
 		<tr><td align="left">Kids</td><td align="right">77</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/kids.m3u</code></td></tr>
 		<tr><td align="left">Legislative</td><td align="right">25</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/legislative.m3u</code></td></tr>
