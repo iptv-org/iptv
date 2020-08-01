@@ -1,8 +1,11 @@
-# IPTV
-
+## IPTV
+<details> <summary>
+## IPTV
+</summary>
 Collection of 8000+ publicly available IPTV channels from all over the world. 
 
 Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks. 
+</details>
 
 ## Usage
 
@@ -135,6 +138,7 @@ Or select one of the playlists from the list below.
 </table>
 
 ## Playlists by country
+<details> <summary>Country</summary>
 
 <table>
 	<thead>
@@ -294,7 +298,8 @@ Or select one of the playlists from the list below.
 	</tbody>
 </table>
 
-
+<details>
+	
 ## For Developers
 
 In addition to the above methods, you can also get a list of all available channels in JSON format.
