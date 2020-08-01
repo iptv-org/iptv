@@ -1,13 +1,15 @@
 ## IPTV
+
 <details> <summary>
-## IPTV
+## IPTV >>
 </summary>
 Collection of 8000+ publicly available IPTV channels from all over the world. 
-
 Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks. 
 </details>
-
 ## Usage
+<details> <summary>
+Usage >>
+</summary>
 
 To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player with support M3U-playlists.
 
@@ -20,8 +22,12 @@ Also you can instead use one of these playlists:
 - `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
 
 Or select one of the playlists from the list below.
+</details>
 
-## Playlists by category
+## By category
+<details> <summary>
+Playlists by category >>
+</summary>
 
 <table>
 	<thead>
@@ -58,7 +64,11 @@ Or select one of the playlists from the list below.
 	</tbody>
 </table>
 
-## Playlists by language
+</details>
+## By language
+<details> <summary>
+## Playlists by language >>
+</summary>
 
 <table>
 	<thead>
@@ -136,9 +146,12 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Undefined</td><td align="right">152</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
+</details>
 
-## Playlists by country
-<details> <summary>Country</summary>
+##Playlists by country
+<details> <summary>
+Country >>
+</summary>
 
 <table>
 	<thead>
@@ -298,9 +311,12 @@ Or select one of the playlists from the list below.
 	</tbody>
 </table>
 
-<details>
-	
+</details>
+
 ## For Developers
+<details> <summary>	
+For Developers >>
+</summary>
 
 In addition to the above methods, you can also get a list of all available channels in JSON format.
 
@@ -349,3 +365,5 @@ You can find links to various IPTV related resources in this repository [iptv-or
 Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before making a pull request.
 
 If you find an error or have any suggestions on how to organize a playlist, please send an [issue](https://github.com/iptv-org/iptv/issues).
+
+</details>
