@@ -3,11 +3,11 @@
 If you want to help the project you can do this in several ways. Here are some options:
 
 - [Add channel](#add-channel)
+- [Add EPG source](#add-epg-source)
 - [Sort channels by category](#sort-channels-by-category)
 - [Sort channels by language](#sort-channels-by-language)
 - [Sort channels by country](#sort-channels-by-country)
 - [Remove broken broadcasts](#remove-broken-broadcasts)
-- [Add EPG source](#add-epg-source)
 
 ## Add channel
 
@@ -55,6 +55,37 @@ Also, if necessary, you can specify custom HTTP User-Agent or Referrer via `#EXT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 http://example.com/stream.m3u8
 ```
+
+## Add EPG source
+
+To add a new source of EPG (Electronic Program Guide), you must add the `x-tvg-url` attribute to the beginning of the corresponding playlist, like this:
+
+```xml
+#EXTM3U x-tvg-url="http://example.com/epg.xml.gz"
+```
+
+The next step is to copy the corresponding `tvg-id` and `tvg-name` from EPG into the description of the channels. To do this, we need to open the EPG file in a browser or any text editor, find the list of channels. Usually it looks like this:
+
+```xml
+<tv>
+  <channel id="cnn">
+    <display-name>CNN</display-name>
+  </channel>
+  <channel id="nbc">
+    <display-name>NBC</display-name>
+  </channel>
+  ...
+</tv>
+```
+
+Copy `id` and `display-name` from it and paste it to the channel description, like this:
+
+```xml
+#EXTINF:-1 tvg-id="cnn" tvg-name="CNN",CNN
+http://example.com/cnn.m3u8
+```
+
+And if you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels. In some cases, it may also be necessary to manually specify the source of EPG in the player itself.
 
 ## Sort channels by category
 
@@ -140,34 +171,3 @@ npm test --exclude=cn,int
 ```
 
 After the test is over all broken links will be saved to the file `error.log`.
-
-## Add EPG source
-
-To add a new source of EPG (Electronic Program Guide), you must add the `x-tvg-url` attribute to the beginning of the corresponding playlist, like this:
-
-```xml
-#EXTM3U x-tvg-url="http://example.com/epg.xml.gz"
-```
-
-The next step is to copy the corresponding `tvg-id` and `tvg-name` from EPG into the description of the channels. To do this, we need to open the EPG file in a browser or any text editor, find the list of channels. Usually it looks like this:
-
-```xml
-<tv>
-  <channel id="cnn">
-    <display-name>CNN</display-name>
-  </channel>
-  <channel id="nbc">
-    <display-name>NBC</display-name>
-  </channel>
-  ...
-</tv>
-```
-
-Copy `id` and `display-name` from it and paste it to the channel description, like this:
-
-```xml
-#EXTINF:-1 tvg-id="cnn" tvg-name="CNN",CNN
-http://example.com/cnn.m3u8
-```
-
-And if you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels. In some cases, it may also be necessary to manually specify the source of EPG in the player itself.
