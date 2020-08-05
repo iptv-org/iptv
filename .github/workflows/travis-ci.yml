@@ -1,3 +1,4 @@
+fi
 # This is a basic workflow to help you get started with Actions
 
 name: CI
@@ -9,8 +10,8 @@ on:
     branches: [ Patch-2 ]
   pull_request:
     branches: [ Patch-2 ]
-    JOBS: |
-     git clone --depth=100 --branch=master https://github.com/I-Cat/iptv/
+    
+    git clone --depth=50 --branch=master 
      sudo apt-get install npm
      ruby --version
      sudo npm install -g markdown-link-check
@@ -52,9 +53,9 @@ Build config :
       run: |
            install:
            - sudo apt-get install npm
-           - sudo npm install -g markdown-link-check
+          - sudo npm install -g markdown-link-check
 
-   script: | 
+   script: 
            - ./check_dead_links
              
              
