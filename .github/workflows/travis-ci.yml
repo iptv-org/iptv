@@ -1,0 +1,59 @@
+fi
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the Patch-2 branch
+on:
+  push:
+    branches: [ Patch-2 ]
+  pull_request:
+    branches: [ Patch-2 ]
+    
+    git clone --depth=50 --branch=master 
+     sudo apt-get install npm
+     ruby --version
+     sudo npm install -g markdown-link-check
+    
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  #build:
+    # The type of runner that the job will run on
+ #   runs-on: ubuntu-latest
+#   Build config to be moved
+Build config :
+{
+  "language": "ruby",
+  "os": [
+    "linux"
+  ],
+  "dist": "xenial",
+  "install": [
+    "sudo apt-get install npm",
+    "sudo npm install -g markdown-link-check"
+  ],
+  "script": [
+    "./check_dead_links"
+  ]
+} Next :
+    # Steps represent a sequence of tasks that will be executed as part of the job
+#    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+#    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+#    - name: Run a one-line script
+#      run: echo Hello, world!
+
+    # Runs a set of commands using the runners shell
+     - name: Run a multi-line script
+      run: |
+           install:
+           - sudo apt-get install npm
+          - sudo npm install -g markdown-link-check
+
+   script: 
+           - ./check_dead_links
