@@ -1,4 +1,4 @@
----
+====
 name: Channel Request
 about: The playlists are missing your favorite channel
 title: ''
@@ -19,4 +19,3 @@ assignees: ''
 
 
 **Additional Information (optional):**
-

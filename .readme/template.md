@@ -1,8 +1,8 @@
-# IPTV
+## IPTV
 
-Collection of 8000+ publicly available IPTV channels from all over the world. 
+Collection of 8000+ publicly available IPTV channels from all over the world.
 
-Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks. 
+Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks.
 
 ## Usage
 
@@ -20,11 +20,11 @@ Or select one of the playlists from the list below.
 
 ## Playlists by category
 
-#include "./.readme/_categories.md"
+## include "./readme/_categories.md"
 
 ## Playlists by language
 
-#include "./.readme/_languages.md"
+#include "./readme/_languages.md"
 
 ## Playlists by country
 

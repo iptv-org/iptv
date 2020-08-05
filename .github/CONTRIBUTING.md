@@ -1,4 +1,4 @@
-# Contributing Guide
+ # Contributing Guide
 
 If you want to help the project you can do this in several ways. Here are some options:
 
@@ -11,13 +11,13 @@ If you want to help the project you can do this in several ways. Here are some o
 
 ## Add channel
 
-To add a channel to one of the playlists, you first need to make sure that the channel broadcast is working stably. Otherwise, we just have to delete the channel you just added. 
+To add a channel to one of the playlists, you first need to make sure that the channel broadcast is working stably. Otherwise, we just have to delete the channel you just added.
 
-To do this, start the broadcast in one of the players (preferably a VLC player) and keep it on for at least a minute. The fact is that some broadcasts are configured to automatically turn off after 10-15 seconds or sometimes after a couple of minutes. 
+To do this, start the broadcast in one of the players (preferably a VLC player) and keep it on for at least a minute. The fact is that some broadcasts are configured to automatically turn off after 10-15 seconds or sometimes after a couple of minutes.
 
-You should also make sure that this is a live broadcast and not a looped video (this also happens). The easiest way is to start the broadcast several times in a row after a short period of time and compare the beginning. 
+You should also make sure that this is a live broadcast and not a looped video (this also happens). The easiest way is to start the broadcast several times in a row after a short period of time and compare the beginning.
 
-If everything is fine, then you can proceed to add the channel to the playlist. 
+If everything is fine, then you can proceed to add the channel to the playlist.
 
 If you know exactly in which country this channel is broadcast, then simply select the appropriate playlist from the `channels/` folder and add the channel to it.
 
@@ -138,7 +138,7 @@ However, there are situations when the channel is literally not assigned to any 
 
 To make sure that the broadcast works you need to run it in two main applications: VLC player (https://www.videolan.org/) and Kodi (https://kodi.tv/). After starting, do not forget to wait at least a minute, as some broadcasts are started with a delay due to the location of the source.
 
-If it turns out that the broadcast still does not start, this means that it can be safely deleted from the playlist. At the same time, you should delete not only the link to the channel but also the description for it. 
+If it turns out that the broadcast still does not start, this means that it can be safely deleted from the playlist. At the same time, you should delete not only the link to the channel but also the description for it.
 
 It would also be nice if you indicated in the description of the PR the reason for the removal of the channel, so that other members of the community could also double-check the channel for their part.
 
@@ -156,7 +156,7 @@ And as soon as everything is installed, you can run tests, like this:
 npm test
 ```
 
-And be prepared test may take a long time. 
+And be prepared test may take a long time.
 
 If you want to test the playlist of a particular country, you can specify the [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166) of the country as an argument when running the test.
 
