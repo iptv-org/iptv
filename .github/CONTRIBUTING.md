@@ -1,4 +1,3 @@
- # Contributing Guide
 
  # Contributing Guide
 If you want to help the project you can do this in several ways. Here are some options:
@@ -10,8 +9,8 @@ If you want to help the project you can do this in several ways. Here are some o
 - [Sort channels by country](#sort-channels-by-country)
 - [Remove broken broadcasts](#remove-broken-broadcasts)
 
-## Add channel
  ## Add channel
+
 
 To add a channel to one of the playlists, you first need to make sure that the channel broadcast is working stably. Otherwise, we just have to delete the channel you just added.
 
@@ -140,7 +139,6 @@ However, there are situations when the channel is literally not assigned to any 
 
 To make sure that the broadcast works you need to run it in two main applications: VLC player (https://www.videolan.org/) and Kodi (https://kodi.tv/). After starting, do not forget to wait at least a minute, as some broadcasts are started with a delay due to the location of the source.
 
-If it turns out that the broadcast still does not start, this means that it can be safely deleted from the playlist. At the same time, you should delete not only the link to the channel but also the description for it.
 
 If it turns out that the broadcast still does not start, this means that it can be safely deleted from the playlist. At the same time, you should delete not only the link to the channel but also the description for it.
 It would also be nice if you indicated in the description of the PR the reason for the removal of the channel, so that other members of the community could also double-check the channel for their part.

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 98c56ecd... Deploying to gh-pages from master b4b7b60f7bc4aac90f6a127da572c9c259ab003c
 <table>
 	<thead>
 		<tr><th align="left">Country</th><th align="right">Channels</th><th align="left">Playlist</th><th align="left">EPG</th></tr>
@@ -156,5 +159,8 @@
 		<tr><td align="left">🇪🇭&nbsp;Western Sahara</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/eh.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇾🇪&nbsp;Yemen</td><td align="right">8</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ye.m3u</code></td><td align="left"></td></tr>
 	</tbody>
+<<<<<<< HEAD
 </table>
+=======
 </table>
+>>>>>>> parent of 98c56ecd... Deploying to gh-pages from master b4b7b60f7bc4aac90f6a127da572c9c259ab003c

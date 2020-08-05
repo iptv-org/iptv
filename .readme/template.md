@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## IPTV
 
 Collection of 8000+ publicly available IPTV channels from all over the world.
@@ -27,6 +28,7 @@ Or select one of the playlists from the list below.
 
 ## Playlists by category
 
+<<<<<<< HEAD
 ## include "./readme/_categories.md"
 
 ## Playlists by language

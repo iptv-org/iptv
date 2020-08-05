@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 98c56ecd... Deploying to gh-pages from master b4b7b60f7bc4aac90f6a127da572c9c259ab003c
 <table>
 	<thead>
 		<tr><th align="left">Language</th><th align="right">Channels</th><th align="left">Playlist</th></tr>
@@ -77,5 +80,8 @@
 		<tr><td align="left">Yue Chinese</td><td align="right">13</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/yue.m3u</code></td></tr>
 		<tr><td align="left">Undefined</td><td align="right">74</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
 	</tbody>
+<<<<<<< HEAD
 </table>
+=======
 </table>
+>>>>>>> parent of 98c56ecd... Deploying to gh-pages from master b4b7b60f7bc4aac90f6a127da572c9c259ab003c
