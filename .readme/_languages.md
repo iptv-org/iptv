@@ -78,3 +78,4 @@
 		<tr><td align="left">Undefined</td><td align="right">74</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
+</table>

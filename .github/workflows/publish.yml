@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 ==
+=======
+>>>>>>> parent of 98c56ecd... Deploying to gh-pages from master b4b7b60f7bc4aac90f6a127da572c9c259ab003c
 name: Publish playlists
 
 on:
@@ -31,6 +34,7 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master
+<<<<<<< HEAD
 
     - name: Install Dependencies
       run: npm install
@@ -38,6 +42,15 @@ jobs:
     - name: Update README.md
       run: npm run update-readme
 
+=======
+      
+    - name: Install Dependencies
+      run: npm install
+      
+    - name: Update README.md
+      run: npm run update-readme
+    
+>>>>>>> parent of 98c56ecd... Deploying to gh-pages from master b4b7b60f7bc4aac90f6a127da572c9c259ab003c
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v1.5.1
       env:

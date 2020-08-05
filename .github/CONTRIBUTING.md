@@ -1,5 +1,6 @@
  # Contributing Guide
 
+ # Contributing Guide
 If you want to help the project you can do this in several ways. Here are some options:
 
 - [Add channel](#add-channel)
@@ -10,6 +11,7 @@ If you want to help the project you can do this in several ways. Here are some o
 - [Remove broken broadcasts](#remove-broken-broadcasts)
 
 ## Add channel
+ ## Add channel
 
 To add a channel to one of the playlists, you first need to make sure that the channel broadcast is working stably. Otherwise, we just have to delete the channel you just added.
 
@@ -140,6 +142,7 @@ To make sure that the broadcast works you need to run it in two main application
 
 If it turns out that the broadcast still does not start, this means that it can be safely deleted from the playlist. At the same time, you should delete not only the link to the channel but also the description for it.
 
+If it turns out that the broadcast still does not start, this means that it can be safely deleted from the playlist. At the same time, you should delete not only the link to the channel but also the description for it.
 It would also be nice if you indicated in the description of the PR the reason for the removal of the channel, so that other members of the community could also double-check the channel for their part.
 
 It is also possible to automatically find broken broadcasts. To do this, you first need to install [Node.js](https://nodejs.org/en/) and [ffmpeg](https://www.ffmpeg.org) on your computer.

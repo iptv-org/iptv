@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 98c56ecd... Deploying to gh-pages from master b4b7b60f7bc4aac90f6a127da572c9c259ab003c
 <table>
 	<thead>
 		<tr><th align="left">Category</th><th align="right">Channels</th><th align="left">Playlist</th></tr>
@@ -32,4 +35,8 @@
 		<tr><td align="left">XXX</td><td align="right">45</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/xxx.m3u</code></td></tr>
 		<tr><td align="left">Other</td><td align="right">3028</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
 	</tbody>
+<<<<<<< HEAD
 </table>
+=======
+</table>
+>>>>>>> parent of 98c56ecd... Deploying to gh-pages from master b4b7b60f7bc4aac90f6a127da572c9c259ab003c
