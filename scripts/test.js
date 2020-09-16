@@ -33,6 +33,7 @@ async function test() {
       omitMetadata: true,
       parallel: 1,
       itemCallback: item => {
+        stats.channels++
         if (!item.status.ok && item.status.reason !== 'Timed out') {
           stats.failures++
 
