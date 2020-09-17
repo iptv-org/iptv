@@ -70,7 +70,7 @@ function parseIndex() {
       }
 
       // categories
-      const categoryName = item.group.title || 'Other'
+      const categoryName = helper.filterGroup(item.group.title) || 'Other'
       const categoryCode = categoryName.toLowerCase()
       if (categories[categoryCode]) {
         categories[categoryCode].channels++
