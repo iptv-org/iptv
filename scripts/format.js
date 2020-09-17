@@ -15,6 +15,8 @@ async function main() {
   const index = parseIndex()
 
   for (let item of index.items) {
+    if (item.name === 'Unsorted') continue
+
     console.log(`Processing '${item.url}'...`)
     let playlist = parsePlaylist(item.url)
     items = items.concat(playlist.items)
