@@ -18,6 +18,8 @@ helper.code2flag = function (code) {
       return '🇬🇧'
     case 'int':
       return '🌎'
+    case 'unsorted':
+      return ''
     default:
       return code
         .toUpperCase()
