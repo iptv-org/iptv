@@ -18,7 +18,7 @@
 		<tr><td align="left">Kids</td><td align="right">48</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/kids.m3u</code></td></tr>
 		<tr><td align="left">Legislative</td><td align="right">21</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/legislative.m3u</code></td></tr>
 		<tr><td align="left">Lifestyle</td><td align="right">5</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/lifestyle.m3u</code></td></tr>
-		<tr><td align="left">Local</td><td align="right">186</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/local.m3u</code></td></tr>
+		<tr><td align="left">Local</td><td align="right">187</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/local.m3u</code></td></tr>
 		<tr><td align="left">Movies</td><td align="right">46</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/movies.m3u</code></td></tr>
 		<tr><td align="left">Music</td><td align="right">159</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/music.m3u</code></td></tr>
 		<tr><td align="left">News</td><td align="right">212</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/news.m3u</code></td></tr>
@@ -28,6 +28,6 @@
 		<tr><td align="left">Travel</td><td align="right">7</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/travel.m3u</code></td></tr>
 		<tr><td align="left">Weather</td><td align="right">5</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/weather.m3u</code></td></tr>
 		<tr><td align="left">XXX</td><td align="right">43</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/xxx.m3u</code></td></tr>
-		<tr><td align="left">Other</td><td align="right">3923</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
+		<tr><td align="left">Other</td><td align="right">3937</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
 	</tbody>
 </table>
