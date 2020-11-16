@@ -3,14 +3,16 @@
   "scripts": {
     "test": "node scripts/test.js",
     "format": "node scripts/format.js",
-    "generate": "node scripts/generate.js",
+    "generate": "concurrently npm:generate:full npm:generate:sfw",
+    "generate:full": "node scripts/generate.js",
+    "generate:sfw": "node scripts/generate.js SFW",
     "update-readme": "node scripts/update-readme.js"
   },
   "author": "Arhey",
   "private": true,
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
+    "concurrently": "^5.3.0",
     "axios": ">=0.18.1",
     "epg-parser": "^0.1.1",
     "escape-string-regexp": "^2.0.0",

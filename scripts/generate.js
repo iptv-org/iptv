@@ -2,6 +2,11 @@ const helper = require('./helper')
 
 const ROOT_DIR = './.gh-pages'
 
+let PREFIX = ''
+let generate_sfw_lists = false
+
+const cli_args = process.argv.slice(2);
+
 let list = {
   all: [],
   countries: {},
@@ -10,28 +15,36 @@ let list = {
 }
 
 function main() {
+  if(cli_args[0] == "SFW"){
+    PREFIX = '.sfw'
+    generate_sfw_lists = true
+    console.log('Generating SFW versions')
+  }
+
   console.log(`Parsing index...`)
   parseIndex()
   console.log('Creating root directory...')
   createRootDirectory()
   console.log('Creating .nojekyll...')
   createNoJekyllFile()
-  console.log('Generating index.m3u...')
+  console.log(`Generating index${PREFIX}.m3u...`)
   generateIndex()
-  console.log('Generating channels.json...')
+  console.log(`Generating channels${PREFIX}.json...`)
   generateChannels()
-  console.log('Generating index.country.m3u...')
+  console.log(`Generating index.country${PREFIX}.m3u...`)
   generateCountryIndex()
-  console.log('Generating index.language.m3u...')
+  console.log(`Generating index.language${PREFIX}.m3u...`)
   generateLanguageIndex()
-  console.log('Generating index.category.m3u...')
+  console.log(`Generating index.category${PREFIX}.m3u...`)
   generateCategoryIndex()
   console.log('Generating /countries...')
   generateCountries()
-  console.log('Generating /categories...')
-  generateCategories()
   console.log('Generating /languages...')
   generateLanguages()
+  if(!generate_sfw_lists){
+    console.log('Generating /categories...')
+    generateCategories()
+  }
   console.log('Done.\n')
 
   console.log(
@@ -61,7 +74,11 @@ function parseIndex() {
     const countryCode = helper.getBasename(rootItem.url).toLowerCase()
     const countryName = rootItem.name
 
-    for (let item of playlist.items) {
+    let items = generate_sfw_lists ? 
+      playlist.items.filter(i => i.group.title != 'XXX') : playlist.items
+  
+    for (let item of items) {
+
       const channel = helper.createChannel(item)
       channel.country.code = countryCode
       channel.country.name = countryName
@@ -108,7 +125,7 @@ function parseIndex() {
 }
 
 function generateIndex() {
-  const filename = `${ROOT_DIR}/index.m3u`
+  const filename = `${ROOT_DIR}/index${PREFIX}.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = helper.sortBy(list.all, ['name', 'url'])
@@ -118,14 +135,14 @@ function generateIndex() {
 }
 
 function generateChannels() {
-  const filename = `${ROOT_DIR}/channels.json`
+  const filename = `${ROOT_DIR}/channels${PREFIX}.json`
   const sorted = helper.sortBy(list.all, ['name', 'url'])
   const channels = sorted.map(c => c.toJSON())
   helper.createFile(filename, JSON.stringify(channels))
 }
 
 function generateCountryIndex() {
-  const filename = `${ROOT_DIR}/index.country.m3u`
+  const filename = `${ROOT_DIR}/index.country${PREFIX}.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = helper.sortBy(list.all, ['country.name', 'name', 'url'])
@@ -138,7 +155,7 @@ function generateCountryIndex() {
 }
 
 function generateLanguageIndex() {
-  const filename = `${ROOT_DIR}/index.language.m3u`
+  const filename = `${ROOT_DIR}/index.language${PREFIX}.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = helper.sortBy(list.all, ['language.name', 'name', 'url'])
@@ -151,7 +168,7 @@ function generateLanguageIndex() {
 }
 
 function generateCategoryIndex() {
-  const filename = `${ROOT_DIR}/index.category.m3u`
+  const filename = `${ROOT_DIR}/index.category${PREFIX}.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = helper.sortBy(list.all, ['category', 'name', 'url'])
@@ -166,7 +183,7 @@ function generateCountries() {
 
   for (let cid in list.countries) {
     let country = list.countries[cid]
-    const filename = `${outputDir}/${cid}.m3u`
+    const filename = `${outputDir}/${cid}${PREFIX}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
 
     const channels = helper.sortBy(Object.values(country), ['name', 'url'])
@@ -182,7 +199,7 @@ function generateCategories() {
 
   for (let cid in list.categories) {
     let category = list.categories[cid]
-    const filename = `${outputDir}/${cid}.m3u`
+    const filename = `${outputDir}/${cid}${PREFIX}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
 
     const channels = helper.sortBy(Object.values(category), ['name', 'url'])
@@ -198,7 +215,7 @@ function generateLanguages() {
 
   for (let lid in list.languages) {
     let language = list.languages[lid]
-    const filename = `${outputDir}/${lid}.m3u`
+    const filename = `${outputDir}/${lid}${PREFIX}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
 
     const channels = helper.sortBy(Object.values(language), ['name', 'url'])

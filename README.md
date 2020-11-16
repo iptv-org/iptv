@@ -6,7 +6,8 @@ Internet Protocol television (IPTV) is the delivery of television content over I
 
 ## Usage
 
-To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player with support M3U-playlists.
+To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player with support M3U-playlists.   
+NOTE: Add `.sfw` to the end of the filename for the lists without any adult channels (For example: `https://iptv-org.github.io/iptv/index.sfw.m3u`)
 
 ![VLC Network Panel](preview.png)
 
