@@ -88,7 +88,7 @@
 		<tr><td align="left">🇲🇴&nbsp;Macau</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mo.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇲🇾&nbsp;Malaysia</td><td align="right">18</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/my.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇲🇹&nbsp;Malta</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mt.m3u</code></td><td align="left"></td></tr>
-		<tr><td align="left">🇲🇽&nbsp;Mexico</td><td align="right">36</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mx.m3u</code></td><td align="left"></td></tr>
+		<tr><td align="left">🇲🇽&nbsp;Mexico</td><td align="right">37</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mx.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇲🇩&nbsp;Moldova</td><td align="right">15</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/md.m3u</code></td><td align="left"><code>https://iptvx.one/epg/epg.xml.gz</code></td></tr>
 		<tr><td align="left">🇲🇳&nbsp;Mongolia</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mn.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇲🇪&nbsp;Montenegro</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/me.m3u</code></td><td align="left"></td></tr>
