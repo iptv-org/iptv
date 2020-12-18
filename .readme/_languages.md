@@ -63,7 +63,7 @@
 		<tr><td align="left">Slovak</td><td align="right">30</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/slk.m3u</code></td></tr>
 		<tr><td align="left">Slovenian</td><td align="right">6</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/slv.m3u</code></td></tr>
 		<tr><td align="left">Somali</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/som.m3u</code></td></tr>
-		<tr><td align="left">Spanish</td><td align="right">653</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/spa.m3u</code></td></tr>
+		<tr><td align="left">Spanish</td><td align="right">658</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/spa.m3u</code></td></tr>
 		<tr><td align="left">Swedish</td><td align="right">11</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/swe.m3u</code></td></tr>
 		<tr><td align="left">Tagalog</td><td align="right">11</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/tgl.m3u</code></td></tr>
 		<tr><td align="left">Tamil</td><td align="right">48</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/tam.m3u</code></td></tr>
@@ -75,6 +75,6 @@
 		<tr><td align="left">Vietnamese</td><td align="right">44</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/vie.m3u</code></td></tr>
 		<tr><td align="left">Western Frisian</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fry.m3u</code></td></tr>
 		<tr><td align="left">Yue Chinese</td><td align="right">8</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/yue.m3u</code></td></tr>
-		<tr><td align="left">Undefined</td><td align="right">564</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
+		<tr><td align="left">Undefined</td><td align="right">567</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
