@@ -49,7 +49,7 @@
 		<tr><td align="left">🇫🇴&nbsp;Faroe Islands</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fo.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇫🇮&nbsp;Finland</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fi.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇫🇯&nbsp;Fiji</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fj.m3u</code></td><td align="left"></td></tr>
-		<tr><td align="left">🇫🇷&nbsp;France</td><td align="right">88</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fr.m3u</code></td><td align="left"></td></tr>
+		<tr><td align="left">🇫🇷&nbsp;France</td><td align="right">67</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fr.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇬🇲&nbsp;Gambia</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/gm.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇬🇪&nbsp;Georgia</td><td align="right">44</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ge.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇩🇪&nbsp;Germany</td><td align="right">142</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/de.m3u</code></td><td align="left"></td></tr>
