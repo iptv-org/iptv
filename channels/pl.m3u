@@ -1,53 +1,75 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/c59VWgF.jpg" group-title="Music",4FUN TV
-https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
+https://stream.4fun.tv:8888/hls/4f_med/index.m3u8
+#EXTINF:-1 tvg-id="WTK PL" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/N318K6a.jpg" group-title="",dlaCiebieTV
+http://94.246.128.53:1935/tv/_definst_/dlaCiebieTv/playlist.m3u8
+#EXTINF:-1 tvg-id="WTK PL" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/a5DX4nh.jpg" group-title="",Echo24
+https://insysgo.live.rd.insyscd.net/echo24.720.smil/manifest.mpd
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="" tvg-logo="https://i.imgur.com/hJAoLIq.png" group-title="",EZO TV
-http://live.ezotv.pl:1935/live/EZOTV/chunklist.m3u8
+http://live.ezotv.pl:1935/live/EZOTV/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="" tvg-logo="https://i.imgur.com/kgE2maL.jpg" group-title="",Sfera TV
+http://stream.sferatv.pl:1935/sferalive/smil:sferalive.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="WTK PL" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/lIgNdhD.jpg" group-title="",STELLA
+rtmp://live-tvk.tvkstella.pl/flvplayback/StellaLive
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/tgLWe9o.jpg" group-title="",Telewizja Kujawy
 http://stream.tvkujawy.pl:8080/live/broadcast.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/GkfXKz5.jpg" group-title="",Telewizja Pogranicze
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/ilGvIug.jpeg" group-title="",Telewizja Pogranicze (Głubczyce)
 http://95.160.28.218:1935/pogranicze/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="TV Republika PL" tvg-name="TV Republika PL" tvg-language="Polish" tvg-logo="https://i.imgur.com/ImFmWk5.png" group-title="",Telewizja Republika
 https://ec08.luz1.cache.orange.pl/jupiter/o2-cl7/live/tvrepublika/live.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/GdbkqCM.png" group-title="",Telewizja Toruń
 http://217.173.176.107:1935/live/ngrp:tvk.stream_all/master.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/GdbkqCM.png" group-title="",Telewizja Toruń
-http://217.173.176.107:1935/live/ngrp:tvk.stream_mobile/chunks.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TV Regionalna
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/rtRF8Ee.jpg" group-title="",TV Kujawy
+http://stream.tvkujawy.pl:8080/live/broadcast.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/l8tRJVW.jpg" group-title="",TV Regionalna
 https://tvreg.klemit.net/regionalna/stream/index.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Białystok
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/idt6Zz3.jpg" group-title="",TVP Info
+http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpinfo
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/CpgzCZq.jpg" group-title="",TVP Parlament
+http://hbbtvlive3.v3.tvp.pl/hbbtvlive/livestream.php?app_id=kanal1
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/zPSpvss.jpg" group-title="",TVP 3 Białystok
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpbialystok
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Bydgoszcz
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/b0Xevsc.jpg" group-title="",TVP 3 Bydgoszcz
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpbydgoszcz
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Gdańsk
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/wGZCj7G.jpg" group-title="",TVP 3 Gdańsk
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpgdansk
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Gorzów
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/H3jtBQm.jpg" group-title="",TVP 3 Gorzów Wielkopolski
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpgorzow
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Katowice
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/burRKHa.jpg" group-title="",TVP 3 Katowice
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpkatowice
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Kielce
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/YcQxM94.jpg" group-title="",TVP 3 Kielce
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpkielce
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Kraków
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/MbAKxD1.jpg" group-title="",TVP 3 Kraków
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpkrakow
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Lublin
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/h7oq2yg.jpg" group-title="",TVP 3 Lublin
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvplodz
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Olsztyn
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/Aa0HedU.jpg" group-title="",TVP 3 Olsztyn
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpolsztyn
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Opole
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/dYRtDRA.jpg" group-title="",TVP 3 Opole
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpopole
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Poznań
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/mTnjVGQ.jpg" group-title="",TVP 3 Poznań
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvppoznan
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Rzeszów
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/6jGX6Xy.jpg" group-title="",TVP 3 Rzeszów
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvprzeszow
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Szczecin
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/NRb6S8z.jpg" group-title="",TVP 3 Szczecin
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpszczecin
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Warszawa
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/AfZOO8U.jpg" group-title="",TVP 3 Warszawa
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpwarszawa
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Wrocław
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/0em2QIh.jpg" group-title="",TVP 3 Wrocław
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvpwroclaw
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="" group-title="",TVP3 Łódź
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/r5wxdkB.jpg" group-title="",TVP 3 Łódź
 http://hbbtvlive.v3.tvp.pl/hbbtvlive/livestream.php?app_id=tvplublin
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/hjODZvI.jpg" group-title="",TVT Zgorzelec
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/ec8DxWx.jpg" group-title="",Twoja TV
+http://94.246.169.19/ttv_hls/live_720p/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/zhzVpgf.jpg" group-title="",TVT Zgorzelec
 http://gargoyle.tomkow.pl/hls/tvt.m3u8
-#EXTINF:-1 tvg-id="WTK PL" tvg-name="WTK PL" tvg-language="Polish" tvg-logo="https://i.imgur.com/QjuWBxr.jpg" group-title="",WTK
+#EXTINF:-1 tvg-id="" tvg-name="WTK PL" tvg-language="Polish" tvg-logo="https://i.imgur.com/kL3VMLv.jpg" group-title="",WTK & wPolsce
 http://188.47.232.6/jupiter/o1-cl4/live/wtk-a-wtktv/live.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/pJKndl0.jpg" group-title="",TVT Telewizja regionalna (Rybnik)
+http://176.107.129.219/media/tvt/index.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/VaiHvZ3.jpg" group-title="",Telewizja Republika
+https://ec08.luz1.cache.orange.pl/jupiter/o2-cl7/live/tvrepublika/live-tvrepublika-1700k.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/Ic07Biz.jpg" group-title="",TRUSO.TV (Elbląg)
+http://95.160.28.218:1935/elblag/myStream_aac/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Polish" tvg-logo="https://i.imgur.com/k6zdLLu.jpg" group-title="",TV Trwam
+https://trwamtv.live.e59-po.insyscd.net/cl01/out/u/trwam_3.m3u8
