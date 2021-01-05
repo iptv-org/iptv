@@ -25,7 +25,7 @@ jobs:
           FOLDER: .gh-pages
   update-readme:
     runs-on: ubuntu-latest
-    needs: deploy
+    needs: generate
     steps:
       - name: Checkout
         uses: actions/checkout@v2
