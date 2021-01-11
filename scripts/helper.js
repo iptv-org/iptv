@@ -253,7 +253,6 @@ class Playlist {
   constructor(data) {
     this.header = data.header
     this.items = data.items
-    this.changed = false
   }
 
   getHeader() {
