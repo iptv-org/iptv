@@ -129,7 +129,7 @@
 		<tr><td align="left">🇸🇩&nbsp;Sudan</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sd.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇸🇪&nbsp;Sweden</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/se.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇨🇭&nbsp;Switzerland</td><td align="right">20</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ch.m3u</code></td><td align="left"></td></tr>
-		<tr><td align="left">🇸🇾&nbsp;Syria</td><td align="right">15</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sy.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
+		<tr><td align="left">🇸🇾&nbsp;Syria</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sy.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
 		<tr><td align="left">🇹🇼&nbsp;Taiwan</td><td align="right">60</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tw.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇹🇯&nbsp;Tajikistan</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tj.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇹🇿&nbsp;Tanzania</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tz.m3u</code></td><td align="left"></td></tr>
