@@ -213,7 +213,7 @@ async function done() {
 }
 
 function finish() {
-  console.info('Done.\n')
+  console.info('Done.')
 }
 
 main()
