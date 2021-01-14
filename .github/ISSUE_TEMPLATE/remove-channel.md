@@ -1,8 +1,8 @@
 ---
-name: Channel Request
-about: Request to add a channel to the playlist
-title: 'Add: xxx'
-labels: channel request
+name: Remove Channel
+about: Request to remove a channel from the playlist
+title: 'Remove: xxx'
+labels: DMCA
 assignees: ''
 
 ---
@@ -13,6 +13,5 @@ efficiently process your request -->
 <!-- IMPORTANT: An issue may contain a request for only one channel, otherwise it will be closed -->
 
 ***Channel Name:*** xxx
-***Country:*** xxx
-***Language:*** xxx
+***DMCA Notice (link):*** xxx
 ***Notes (optional):*** xxx
