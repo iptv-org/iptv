@@ -1,19 +1,18 @@
 ---
 name: Broken Stream
-about: Any problems with the channel broadcasting
-title: ''
+about: Request to replace a broken stream
+title: 'Fix: xxx'
 labels: broken stream
 assignees: ''
 
 ---
 
-**What's wrong?**
+<!-- Please fill out the information in this issue template so that we can
+efficiently process your request -->
 
-**Country of the channel:**
+<!-- IMPORTANT: An issue may contain a request for only one channel, otherwise it will be closed -->
 
-**Channel Name:**
-
-**Broken Link:**
-<!-- Just copy the link to the broadcast from the playlist -->
-
-**Additional Information (optional):**
+***Channel Name:*** xxx
+***Country:*** xxx
+***Language:*** xxx
+***Notes (optional):*** xxx
