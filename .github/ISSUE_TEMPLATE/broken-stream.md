@@ -13,6 +13,6 @@ efficiently process your request -->
 <!-- IMPORTANT: An issue may contain a request for only one channel, otherwise it will be closed -->
 
 ***Channel Name:*** xxx
-***Country:*** xxx
-***Language:*** xxx
+***Broken Link (from playlist):*** xxx
+***Possible Replacement (optional):*** xxx
 ***Notes (optional):*** xxx
