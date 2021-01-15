@@ -1,8 +1,8 @@
 # IPTV
 
-Collection of 5000+ publicly available IPTV channels from all over the world. 
+Collection of 5000+ publicly available IPTV channels from all over the world.
 
-Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks. 
+Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks.
 
 ## Usage
 
@@ -20,16 +20,15 @@ Or select one of the playlists from the list below.
 
 ## Playlists by category
 
-#include "./.readme/_categories.md"
+#include "./.readme/\_categories.md"
 
 ## Playlists by language
 
-#include "./.readme/_languages.md"
+#include "./.readme/\_languages.md"
 
 ## Playlists by country
 
-#include "./.readme/_countries.md"
-
+#include "./.readme/\_countries.md"
 
 ## For Developers
 
@@ -79,11 +78,12 @@ You can find links to various IPTV related resources in this repository [iptv-or
 
 Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before making a pull request.
 
-If you find an error or have any suggestions on how to organize a playlist, please send an [issue](https://github.com/iptv-org/iptv/issues).
+If you find an error or have any suggestions on how to organize a playlist, please send an [issue](https://github.com/iptv-org/iptv/issues/new/choose).
+
+If your favorite channel is not on playlist you can let us know about it [here](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) (IMPORTANT: an issue should contain a request for only one channel, otherwise it will be closed).
 
 ## Legal
 
-No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, which to the best of our knowledge have been intentionally made publicly by the copyright holders. If any links in these playlists infringe on your rights as a copyright holder, they may be removed by sending a pull request or opening an issue. 
+No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, which to the best of our knowledge have been intentionally made publicly by the copyright holders. If any links in these playlists infringe on your rights as a copyright holder, they may be removed by sending a pull request or opening an issue.
 
-
-However, note that we have **no control** over the destination of the link, and just removing the link from the playlist will not remove its contents from the web.  Note that linking does not directly infringe copyright because no copy is made on the site providing the link, and thus this is **not** a valid reason to send a DMCA notice to GitHub. To remove this content from the web, you should contact the web host that's actually hosting the content (**not** GitHub, nor the maintainers of this repository).
+However, note that we have **no control** over the destination of the link, and just removing the link from the playlist will not remove its contents from the web. Note that linking does not directly infringe copyright because no copy is made on the site providing the link, and thus this is **not** a valid reason to send a DMCA notice to GitHub. To remove this content from the web, you should contact the web host that's actually hosting the content (**not** GitHub, nor the maintainers of this repository).
