@@ -1,22 +1,18 @@
 ---
 name: Channel Request
-about: The playlists are missing your favorite channel
-title: ''
+about: Request to add a channel to the playlist
+title: 'Add: xxx'
 labels: channel request
 assignees: ''
 
 ---
 
-**Country of the channel:**
-<!-- If you are not sure what country the channel belongs to, use the search on https://www.lyngsat.com/search.html -->
+<!-- Please fill out the information in this issue template so that we can
+efficiently process your request -->
 
+<!-- IMPORTANT: An issue may contain a request for only one channel, otherwise it will be closed -->
 
-**Channel Name:**
-<!-- If you are looking for more than one channel from the same country, you can specify the list below -->
-
-
-**Channel Language:**
-
-
-**Additional Information (optional):**
-
+***Channel Name:*** xxx
+***Country:*** xxx
+***Language:*** xxx
+***Notes (optional):*** xxx
