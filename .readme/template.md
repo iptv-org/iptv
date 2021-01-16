@@ -20,15 +20,18 @@ Or select one of the playlists from the list below.
 
 ## Playlists by category
 
-#include "./.readme/\_categories.md"
+<!-- prettier-ignore -->
+#include "./.readme/_categories.md"
 
 ## Playlists by language
 
-#include "./.readme/\_languages.md"
+<!-- prettier-ignore -->
+#include "./.readme/_languages.md"
 
 ## Playlists by country
 
-#include "./.readme/\_countries.md"
+<!-- prettier-ignore -->
+#include "./.readme/_countries.md"
 
 ## For Developers
 
