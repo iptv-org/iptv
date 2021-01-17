@@ -1,11 +1,16 @@
+const { program } = require('commander')
 const helper = require('./helper')
 
-const config = {
-  debug: process.env.npm_config_debug || false,
-  country: process.env.npm_config_country,
-  exclude: process.env.npm_config_exclude,
-  epg: process.env.npm_config_epg || false
-}
+program
+  .version('1.0.0', '-v, --version')
+  .usage('[OPTIONS]...')
+  .option('-d, --debug', 'Debug mode')
+  .option('-c, --country <country>', 'Comma-separated list of country codes')
+  .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded ')
+  .option('--epg', 'Turn on EPG parser')
+  .parse(process.argv)
+
+const config = program.opts()
 
 let updated = 0
 let items = []
