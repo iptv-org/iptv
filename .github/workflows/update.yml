@@ -14,7 +14,7 @@ jobs:
         run: npm install
 
       - name: Generate Playlists
-        run: npm run generate
+        run: node scripts/generate.js
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@master
@@ -34,7 +34,7 @@ jobs:
         run: npm install
 
       - name: Update README.md
-        run: npm run update-readme
+        run: node scripts/update-readme.js
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
