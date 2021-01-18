@@ -102,7 +102,7 @@ In case you were unable to determine which country the channel belongs to, you c
 ## Channel Description Scheme
 
 ```
-#EXTINF:-1 tvg-id="EPG_ID" tvg-name="EPG_NAME" tvg-language="PRIMARY_LANGUAGE;SECONDARY_LANGUAGE" tvg-logo="LOGO_URL" group-title="CATEGORY",FULL_NAME TIME_SHIFT (ALTERNATIVE_NAME) (STREAM_RESOLUTION) [STREAM_STATUS]
+#EXTINF:-1 tvg-id="EPG_ID" tvg-name="EPG_NAME" tvg-language="PRIMARY_LANGUAGE;SECONDARY_LANGUAGE" tvg-logo="LOGO_URL" group-title="CATEGORY",FULL_NAME STREAM_TIME_SHIFT (ALTERNATIVE_NAME) (STREAM_RESOLUTION) [STREAM_STATUS]
 STREAM_URL
 ```
 
@@ -115,10 +115,10 @@ STREAM_URL
 | `LOGO_URL`           | The logo of the channel that will be displayed if the player supports it. (optional)                                                                                                                                                                                                             |
 | `CATEGORY`           | The category to which the channel belongs. The list of currently supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category). (optional)                                                                                                                    |
 | `FULL_NAME`          | Full name of the channel. It is recommended to use the name listed on [lyngsat](https://www.lyngsat.com/search.html) or [wikipedia](https://www.wikipedia.org/) if possible. May contain any characters except plus sign, minus sign, round and square brackets.                                 |
-| `TIME_SHIFT`         | Must be specified if the channel is broadcast with a shift in time relative to the main stream. Should only contain a number and a sign. (optional)                                                                                                                                              |
+| `STREAM_TIME_SHIFT`  | Must be specified if the channel is broadcast with a shift in time relative to the main stream. Should only contain a number and a sign. (optional)                                                                                                                                              |
 | `ALTERNATIVE_NAME`   | Can be used to specify a short name or name in another language. May contain any characters except round and square brackets. (optional)                                                                                                                                                         |
-| `RESOLUTION`         | The maximum height of the frame with a "p" at the end. In case of VLC Player this information can be found in `Window > Media Information... > Codec Details`. (optional)                                                                                                                        |
-| `STATUS`             | Specified if the broadcast for some reason is interrupted or does not work in a particular application. May contain any characters except round and square brackets. (optional)                                                                                                                  |
+| `STREAM_RESOLUTION`  | The maximum height of the frame with a "p" at the end. In case of VLC Player this information can be found in `Window > Media Information... > Codec Details`. (optional)                                                                                                                        |
+| `STREAM_STATUS`      | Specified if the broadcast for some reason is interrupted or does not work in a particular application. May contain any characters except round and square brackets. (optional)                                                                                                                  |
 | `STREAM_URL`         | Channel broadcast URL.                                                                                                                                                                                                                                                                           |
 
 Example:
