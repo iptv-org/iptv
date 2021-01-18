@@ -8,7 +8,7 @@ Internet Protocol television (IPTV) is the delivery of television content over I
 
 To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists.
 
-![VLC Network Panel](preview.png)
+![VLC Network Panel](.readme/preview.png)
 
 Also you can instead use one of these playlists:
 
@@ -79,11 +79,7 @@ You can find links to various IPTV related resources in this repository [iptv-or
 
 ## Contribution
 
-Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before making a pull request.
-
-If you find an error or have any suggestions on how to organize a playlist, please send an [issue](https://github.com/iptv-org/iptv/issues/new/choose).
-
-If your favorite channel is not on playlist you can let us know about it [here](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) (IMPORTANT: an issue should contain a request for only one channel, otherwise it will be closed).
+Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before sending an issue or making a pull request.
 
 ## Legal
 
