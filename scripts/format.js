@@ -12,6 +12,7 @@ program
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded ')
   .option('--epg', 'Turn on EPG parser')
   .option('--resolution', 'Turn on resolution parser')
+  .option('--delay <delay>', 'Delay between parser requests', 0)
   .parse(process.argv)
 
 const config = program.opts()
