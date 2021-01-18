@@ -11,6 +11,7 @@ program
   .option('-c, --country <country>', 'Comma-separated list of country codes')
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded ')
   .option('--epg', 'Turn on EPG parser')
+  .option('--resolution', 'Turn on resolution parser')
   .parse(process.argv)
 
 const config = program.opts()
