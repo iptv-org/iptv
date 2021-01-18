@@ -63,6 +63,7 @@ function parseIndex() {
 
     for (let item of playlist.items) {
       const channel = helper.createChannel(item)
+      if (!channel.url) continue
       channel.country.code = countryCode
       channel.country.name = countryName
       channel.tvg.url = playlist.header.attrs['x-tvg-url'] || ''
