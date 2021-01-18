@@ -13,6 +13,9 @@ Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=
 - make sure that the link you want to add works. It is recommended to use [VLC media player](https://www.videolan.org/vlc/index.html) for this.
 - check if the channel is working outside your country. You can use services like [streamtest.in](https://streamtest.in/) to do this.
 - find the file that contains the original link. You can use a [GitHub Search](https://github.com/search/advanced?q=CNN+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this (**IMPORTANT:** the file must be in the `channels/` folder).
+- replace the link
+- commit all changes
+- send a pull request
 
 **Do you want to report a channel that is not on the playlist?**
 
