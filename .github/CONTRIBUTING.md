@@ -1,12 +1,22 @@
 # Contributing Guide
 
-**Do you want to report a channel that is not on the playlist?**
-
-Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a request for only one channel, otherwise it will be closed immediately).
-
 **Do you have an idea how to improve the project?**
 
 Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=discussion&template=feature-request.md&title=Propose%3A+xxx) with a detailed description of your idea.
+
+**Do you want to report a broadcast that is not working?**
+
+Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
+
+**Do you want to replace the broken stream link?**
+
+- make sure that the link you want to add works. It is recommended to use [VLC media player](https://www.videolan.org/vlc/index.html) for this.
+- check if the channel is working outside your country. You can use services like [streamtest.in](https://streamtest.in/) to do this.
+- find the file that contains the original link. You can use a [GitHub Search](https://github.com/search/advanced?q=CNN+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this (**IMPORTANT:** the file must be in the `channels/` folder).
+
+**Do you want to report a channel that is not on the playlist?**
+
+Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a request for only one channel, otherwise it will be closed immediately).
 
 **Would you like to add a new channel to playlist?**
 
