@@ -1,5 +1,6 @@
 name: format
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
 jobs:
@@ -13,7 +14,7 @@ jobs:
         run: npm install
 
       - name: Format Playlists
-        run: npm run format
+        run: node scripts/format.js
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3

@@ -37,7 +37,8 @@ async function test() {
         if (
           !item.status.ok &&
           item.status.reason !== 'Timed out' &&
-          item.status.reason !== 'Duplicate'
+          item.status.reason !== 'Duplicate' &&
+          item.status.reason !== 'Server returned 403 Forbidden (access denied)'
         ) {
           stats.failures++
 
