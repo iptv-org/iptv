@@ -2,7 +2,6 @@ const { program } = require('commander')
 const helper = require('./helper')
 const axios = require('axios')
 const ProgressBar = require('progress')
-const instance = axios.create({ timeout: 1000, maxContentLength: 1000 })
 
 program
   .version('1.0.0', '-v, --version')
@@ -13,9 +12,12 @@ program
   .option('--epg', 'Turn on EPG parser')
   .option('--resolution', 'Turn on resolution parser')
   .option('--delay <delay>', 'Delay between parser requests', 0)
+  .option('--timeout <timeout>', 'Set timeout for each request', 5000)
   .parse(process.argv)
 
 const config = program.opts()
+
+const instance = axios.create({ timeout: config.timeout, maxContentLength: 1000 })
 
 let globalBuffer = []
 let bar
