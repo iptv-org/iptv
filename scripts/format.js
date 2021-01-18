@@ -17,7 +17,10 @@ program
 
 const config = program.opts()
 
-const instance = axios.create({ timeout: config.timeout, maxContentLength: 1000 })
+const instance = axios.create({
+  timeout: config.timeout,
+  maxContentLength: 5000
+})
 
 let globalBuffer = []
 let bar
