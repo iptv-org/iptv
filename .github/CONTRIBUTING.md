@@ -1,51 +1,119 @@
 # Contributing Guide
 
-If you want to help the project you can do this in several ways. Here are some options:
+**Do you want to report a channel that is not on the playlist?**
 
-- [Add channel](#add-channel)
-- [Add EPG source](#add-epg-source)
-- [Sort channels by category](#sort-channels-by-category)
-- [Sort channels by language](#sort-channels-by-language)
-- [Sort channels by country](#sort-channels-by-country)
-- [Remove broken broadcasts](#remove-broken-broadcasts)
+Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a request for only one channel, otherwise it will be closed immediately).
 
-## Add channel
+**Do you have an idea how to improve the project?**
 
-To add a channel to one of the playlists, you first need to make sure that the channel broadcast is working stably. Otherwise, we just have to delete the channel you just added. 
+Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=discussion&template=feature-request.md&title=Propose%3A+xxx) with a detailed description of your idea.
 
-To do this, start the broadcast in one of the players (preferably a VLC player) and keep it on for at least a minute. The fact is that some broadcasts are configured to automatically turn off after 10-15 seconds or sometimes after a couple of minutes. 
+**Would you like to add a new channel to playlist?**
 
-You should also make sure that this is a live broadcast and not a looped video (this also happens). The easiest way is to start the broadcast several times in a row after a short period of time and compare the beginning. 
+- make sure that the link you want to add works. It is recommended to use [VLC media player](https://www.videolan.org/vlc/index.html) for this
+- check if the channel is working outside your country. You can use services like [streamtest.in](https://streamtest.in/) to do this
+- find out the full name of the channel and from which country it is broadcasting. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
+- find the corresponding country code in [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) table
+- open the `channels/` folder and find a file with the same name as the country code
+- at the very end of this file add a link to the channel with a description
+- commit all changes
+- send a pull request
 
-If everything is fine, then you can proceed to add the channel to the playlist. 
+In case you were unable to determine which country the channel belongs to, you can put a link to it in the `channels/unsorted.m3u`.
 
-If you know exactly in which country this channel is broadcast, then simply select the appropriate playlist from the `channels/` folder and add the channel to it.
+**Do you want to sort the channels from "channels/unsorted.m3u"?**
 
-If you are not sure which playlist to add this channel to, you can add it to the `channels/unsorted.m3u` file. It was created specifically for such cases.
+- find out the full name of the channel and from which country it is broadcasting. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
+- update the channel name if necessary
+- find the corresponding country code in [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) table
+- open the `channels/` folder and find a file with the same name as the country code
+- at the very end of this file add a link to the channel with a description
+- commit all changes
+- send a pull request
 
-Further on the format of links in the playlist. For the broadcast to work in the playlist, you need to add at least minimal information about the channel, like so:
+**Did you find a mistake in README.md?**
 
-```xml
-#EXTINF:-1,Example TV
-http://example.com/stream.m3u8
+- open `.readme/template.md`
+- make any necessary changes to the file
+- commit all changes
+- send a pull request
+
+**Did you find a mistake in this guide?**
+
+- open `.github/CONTRIBUTING.md`
+- make any necessary changes to the file
+- commit all changes
+- send a pull request
+
+**Would you like us to remove the link to the channel you own the rights to?**
+
+- publish somethere DMCA notice
+- create an issue using this [link](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=remove-channel.md&title=Remove%3A+xxx) and add a link to the DMCA notice in it
+
+## Project Structure
+
+- `.github/`
+  - `ISSUE_TEMPLATE/`
+    - `broken-stream.md`: issue template for reporting a broken stream.
+    - `channel-request.md`: template for channel request.
+    - `feature-request.md`: template for feature request.
+    - `remove-channel.md`: template for channel deletion request.
+  - `workflows/`
+    - `automerge.yml`: contain action that automatically merges all the changes created by other workflows.
+    - `format.yml`: contain actions that automatically sorts channels and removes duplicates from each playlist.
+    - `update.yml`: contain actions that automatically generates all additional playlists and updates the `README.md` file.
+  - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
+  - `CONTRIBUTING.md`: file you are currently reading.
+- `.readme/`
+  - `_categories.md`: automatically generated list of all categories and their corresponding playlists.
+  - `_countries.md`: automatically generated list of all countries and their corresponding playlists.
+  - `_languages.md`: automatically generated list of all languages and their corresponding playlists.
+  - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
+  - `preview.png`: image displayed in the `README.md`.
+  - `template.md`: template for `README.md`.
+- `channels/`
+  - `ad.m3u`: country specific playlist.
+  - ...
+  - `int.m3u`: playlist for channels not belonging to any one particular country. These are usually channels that broadcast exclusively on the internet.
+  - ...
+  - `unsorted.m3u`: playlist with channels not yet sorted.
+- `scripts/`
+  - `format.js`: used within GitHub Action to sort channels and remove duplicates from each playlist.
+  - `generate.js`: used within GitHub Action to generate all additional playlists.
+  - `helper.js`: contains functions that are used in other scripts.
+  - `test.js`: allows you to automatically test all channels in a playlist.
+  - `update-readme.js`: used within GitHub Action to update the `README.md` file.
+- `index.m3u`: main playlist that contains links to all playlists in the `channels/` folder.
+- `README.md`: project description generated from the contents of the `.readme/` folder.
+
+## Channel Description Scheme
+
+```
+#EXTINF:-1 tvg-id="EPG_ID" tvg-name="EPG_NAME" tvg-language="PRIMARY_LANGUAGE;SECONDARY_LANGUAGE" tvg-logo="LOGO_URL" group-title="CATEGORY",FULL_NAME TIME_SHIFT (ALTERNATIVE_NAME) (STREAM_RESOLUTION) [STREAM_STATUS]
+STREAM_URL
 ```
 
-But of course, the more channel information you add, the better. Here's an example of what a full version of a link in a playlist might look like:
+| Attribute            | Description                                                                                                                                                                                                                                                                                      |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `EPG_ID`             | Channel ID that is used to load EPG. Must match `id` from the EPG file specified in the playlist header. (optional)                                                                                                                                                                              |
+| `EPG_NAME`           | Channel name that is also sometimes used to load EPG. Must match `<display-name>` from the EPG file specified in the playlist header. (optional)                                                                                                                                                 |
+| `PRIMARY_LANGUAGE`   | Channel language. The name of the language must conform to the standard [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500). (optional) |
+| `SECONDARY_LANGUAGE` | If the channel is broadcast in several languages. (optional)                                                                                                                                                                                                                                     |
+| `LOGO_URL`           | The logo of the channel that will be displayed if the player supports it. (optional)                                                                                                                                                                                                             |
+| `CATEGORY`           | The category to which the channel belongs. The list of currently supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category). (optional)                                                                                                                    |
+| `FULL_NAME`          | Full name of the channel. It is recommended to use the name listed on [lyngsat](https://www.lyngsat.com/search.html) or [wikipedia](https://www.wikipedia.org/) if possible. May contain any characters except plus sign, minus sign, round and square brackets.                                 |
+| `TIME_SHIFT`         | Must be specified if the channel is broadcast with a shift in time relative to the main stream. Should only contain a number and a sign. (optional)                                                                                                                                              |
+| `ALTERNATIVE_NAME`   | Can be used to specify a short name or name in another language. May contain any characters except round and square brackets. (optional)                                                                                                                                                         |
+| `RESOLUTION`         | The maximum height of the frame with a "p" at the end. In case of VLC Player this information can be found in `Window > Media Information... > Codec Details`. (optional)                                                                                                                        |
+| `STATUS`             | Specified if the broadcast for some reason is interrupted or does not work in a particular application. May contain any characters except round and square brackets. (optional)                                                                                                                  |
+| `STREAM_URL`         | Channel broadcast URL.                                                                                                                                                                                                                                                                           |
+
+Example:
 
 ```xml
-#EXTINF:-1 tvg-id="exampletv.us" tvg-name="Example TV" tvg-language="English" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
-http://example.com/stream.m3u8
+#EXTINF:-1 tvg-id="example.ua" tvg-name="Example TV" tvg-language="Ukrainian;Russian" tvg-logo="https://i.imgur.com/bu12f89.png" group-title="Kids",Example TV +3 (Пример ТВ) (720p) [not 24/7]
+https://example.com/playlist.m3u8
 ```
-
-More details about each attribute:
-
-| Attribute    | Description
-| ------------ | ---
-| tvg-id       | Channel ID that is used to load EPG. Must match `id` from the EPG file. (optional)
-| tvg-name     | Channel name that is also sometimes used to load EPG. Must match `display-name` from the EPG file. (optional)
-| tvg-language | Channel language. If the channel is broadcast in several languages, you can specify other languages via semicolon, like so: `tvg-language="English;Chinese"`. The name of the language must conform to the standard [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500). (optional)
-| tvg-logo     | The logo of the channel that will be displayed in the player if it supports it (optional)
-| group-title  | The category to which the channel belongs. These categories are also displayed in some players, and grouped playlists are also generated based on them. The list of currently supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category) (optional)
 
 Also, if necessary, you can specify custom HTTP User-Agent or Referrer via `#EXTVLCOPT` tag:
 
@@ -55,119 +123,3 @@ Also, if necessary, you can specify custom HTTP User-Agent or Referrer via `#EXT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 http://example.com/stream.m3u8
 ```
-
-## Add EPG source
-
-To add a new source of EPG (Electronic Program Guide), you must add the `x-tvg-url` attribute to the beginning of the corresponding playlist, like this:
-
-```xml
-#EXTM3U x-tvg-url="http://example.com/epg.xml.gz"
-```
-
-The next step is to copy the corresponding `tvg-id` and `tvg-name` from EPG into the description of the channels. To do this, we need to open the EPG file in a browser or any text editor, find the list of channels. Usually it looks like this:
-
-```xml
-<tv>
-  <channel id="cnn">
-    <display-name>CNN</display-name>
-  </channel>
-  <channel id="nbc">
-    <display-name>NBC</display-name>
-  </channel>
-  ...
-</tv>
-```
-
-Copy `id` and `display-name` from it and paste it to the channel description, like this:
-
-```xml
-#EXTINF:-1 tvg-id="cnn" tvg-name="CNN",CNN
-http://example.com/cnn.m3u8
-```
-
-And if you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels. In some cases, it may also be necessary to manually specify the source of EPG in the player itself.
-
-## Sort channels by category
-
-To help sort channels by category, you need to add the corresponding category in the description of the channel, like this:
-
-```xml
-#EXTINF:-1 group-title="News",CNN
-http://example.com/cnn.m3u8
-```
-
-For convenience, `https://iptv-org.github.io/iptv/categories/other.m3u` contains all the channels for which a category has not yet been specified. But be careful, changes can only be made in the playlists located in the `channels/` folder, since the other playlists are automatically generated.
-
-A complete list of supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category).
-
-## Sort channels by language
-
-To sort the channel by language, you only need to specify the appropriate language in `tvg-language` attribute in the channel description. For example:
-
-```xml
-#EXTINF:-1 tvg-language="Arabic",Abu Dhabi Drama
-http://example.com/ad-drama.m3u8
-```
-
-And at the next update the channel will automatically get to the necessary playlist, in this case it is `languages/ara.m3u`.
-
-Importantly, the name of the language must comply with [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500) standart otherwise it will simply be ignored during the playlist update.
-
-If a channel is broadcast in several languages at once, you can specify them all through a semicolon, like this:
-
-```xml
-#EXTINF:-1 tvg-language="English;Chinese",CCTV
-http://example.com/cctv.m3u8
-```
-
-In case you do not know exactly which language the given channel is broadcast in, you can leave the field `tvg-language` empty. In this case, the channel will be automatically saved in `languages/undefined.m3u` file and someone from the community will be able to specify the correct language later.
-
-## Sort channels by country
-
-You can help sorting channels by country by moving the link to the channel with the entire description from one playlist in the `channels/` folder to another. Be careful, any changes outside the `channels/` folder will not be accepted, since the rest of the playlists are generated automatically.
-
-To determine which country the channel belongs to you can search for it on the [LyngSat](https://www.lyngsat.com/search.html). This site contains a short description for most satellite TV channels, but in this case we are only interested in the country name written under the channel logo, as here: https://www.lyngsat.com/radiochannels/us/CNN-USA.html
-
-Also you can try searching for a channel on [Wikipedia](https://www.wikipedia.org/). Usually channels have a separate raw in the description indicating the country. You can see what it looks like on this page - https://en.wikipedia.org/wiki/CNN
-
-It also happens that a channel belongs to more than one country. In this case, it should be saved to all relevant playlists.
-
-However, there are situations when the channel is literally not assigned to any country (for example, DJing or Red Bull TV). In this case, you can simply move the link to a special international playlist - `channels/int.m3u`.
-
-## Remove broken broadcasts
-
-To make sure that the broadcast works you need to run it in two main applications: VLC player (https://www.videolan.org/) and Kodi (https://kodi.tv/). After starting, do not forget to wait at least a minute, as some broadcasts are started with a delay due to the location of the source.
-
-If it turns out that the broadcast still does not start, this means that it can be safely deleted from the playlist. At the same time, you should delete not only the link to the channel but also the description for it. 
-
-It would also be nice if you indicated in the description of the PR the reason for the removal of the channel, so that other members of the community could also double-check the channel for their part.
-
-It is also possible to automatically find broken broadcasts. To do this, you first need to install [Node.js](https://nodejs.org/en/) and [ffmpeg](https://www.ffmpeg.org) on your computer.
-
-After that copy this repository to your computer, open it in the console and install all the dependencies from it by running this command:
-
-```sh
-npm install
-```
-
-And as soon as everything is installed, you can run tests, like this:
-
-```sh
-npm test
-```
-
-And be prepared test may take a long time. 
-
-If you want to test the playlist of a particular country, you can specify the [ISO 3166 code](https://en.wikipedia.org/wiki/ISO_3166) of the country as an argument when running the test.
-
-```sh
-npm test --country=uk
-```
-
-Another option to exclude specific playlists from tests:
-
-```sh
-npm test --exclude=cn,int
-```
-
-After the test is over all broken links will be saved to the file `error.log`.
