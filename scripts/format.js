@@ -20,7 +20,7 @@ const config = program.opts()
 
 const instance = axios.create({
   timeout: config.timeout,
-  maxContentLength: 5000,
+  maxContentLength: 20000,
   httpsAgent: new https.Agent({
     rejectUnauthorized: false
   })
@@ -120,10 +120,14 @@ async function detectResolution(playlist) {
       .get(url)
       .then(sleep(config.delay))
       .catch(err => {})
-    if (isValid(response)) {
-      const resolution = parseResolution(response.data)
-      if (resolution) {
-        item.resolution = resolution
+    if (response) {
+      if (response.status === 200) {
+        if (/^#EXTM3U/.test(response.data)) {
+          const resolution = parseResolution(response.data)
+          if (resolution) {
+            item.resolution = resolution
+          }
+        }
       }
     }
 
@@ -198,10 +202,6 @@ function sleep(ms) {
   return function (x) {
     return new Promise(resolve => setTimeout(() => resolve(x), ms))
   }
-}
-
-function isValid(response) {
-  return response && response.status === 200 && /^#EXTM3U/.test(response.data)
 }
 
 async function updatePlaylist(playlist) {
