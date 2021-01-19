@@ -2,6 +2,7 @@ const { program } = require('commander')
 const helper = require('./helper')
 const axios = require('axios')
 const ProgressBar = require('progress')
+const https = require('https')
 
 program
   .version('1.0.0', '-v, --version')
@@ -19,7 +20,10 @@ const config = program.opts()
 
 const instance = axios.create({
   timeout: config.timeout,
-  maxContentLength: 5000
+  maxContentLength: 5000,
+  httpsAgent: new https.Agent({
+    rejectUnauthorized: false
+  })
 })
 
 let globalBuffer = []
