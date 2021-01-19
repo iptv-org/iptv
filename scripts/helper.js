@@ -249,6 +249,12 @@ helper.filterGroup = function (groupTitle) {
   return groupTitle
 }
 
+helper.sleep = function (ms) {
+  return function (x) {
+    return new Promise(resolve => setTimeout(() => resolve(x), ms))
+  }
+}
+
 class Playlist {
   constructor(data) {
     this.header = data.header
