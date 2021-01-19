@@ -5,11 +5,10 @@ const ProgressBar = require('progress')
 const https = require('https')
 
 program
-  .version('1.0.0', '-v, --version')
   .usage('[OPTIONS]...')
   .option('-d, --debug', 'Debug mode')
-  .option('-c, --country <country>', 'Comma-separated list of country codes')
-  .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded ')
+  .option('-c, --country <country>', 'Comma-separated list of country codes', '')
+  .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
   .option('--epg', 'Turn on EPG parser')
   .option('--resolution', 'Turn on resolution parser')
   .option('--delay <delay>', 'Delay between parser requests', 0)
@@ -27,7 +26,6 @@ const instance = axios.create({
 })
 
 let globalBuffer = []
-let bar
 
 async function main() {
   const index = parseIndex()
@@ -109,7 +107,7 @@ async function removeDuplicates(playlist) {
 
 async function detectResolution(playlist) {
   if (!config.resolution) return playlist
-  bar = new ProgressBar('  Detecting resolution: [:bar] :current/:total (:percent) ', {
+  const bar = new ProgressBar('  Detecting resolution: [:bar] :current/:total (:percent) ', {
     total: playlist.items.length
   })
   const results = []
@@ -118,7 +116,7 @@ async function detectResolution(playlist) {
     const url = item.url
     const response = await instance
       .get(url)
-      .then(sleep(config.delay))
+      .then(helper.sleep(config.delay))
       .catch(err => {})
     if (response) {
       if (response.status === 200) {
@@ -196,12 +194,6 @@ async function removeUnsortedDuplicates(playlist) {
   playlist.items = items
 
   return playlist
-}
-
-function sleep(ms) {
-  return function (x) {
-    return new Promise(resolve => setTimeout(() => resolve(x), ms))
-  }
 }
 
 async function updatePlaylist(playlist) {
