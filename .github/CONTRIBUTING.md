@@ -8,12 +8,15 @@ Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=
 
 Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
 
-**Do you want to replace the broken stream link?**
+**Do you want to replace the broken stream?**
 
 - make sure that the link you want to add works. It is recommended to use [VLC media player](https://www.videolan.org/vlc/index.html) for this.
 - check if the channel is working outside your country. You can use services like [streamtest.in](https://streamtest.in/) to do this.
-- find the file that contains the original link. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this (**IMPORTANT:** the file must be in the `channels/` folder).
-- replace the link
+- find out from which country channel is broadcasting. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
+- find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
+- open the `/channels` folder and find the file that has the same code in its name and open it
+- find the broken link in this file
+- replace it with working one
 - commit all changes
 - send a pull request
 
@@ -26,7 +29,7 @@ Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=
 - make sure that the link you want to add works. It is recommended to use [VLC media player](https://www.videolan.org/vlc/index.html) for this
 - check if the channel is working outside your country. You can use services like [streamtest.in](https://streamtest.in/) to do this
 - find out the full name of the channel and from which country it is broadcasting. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
-- find the corresponding country code in [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) table
+- find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
 - open the `channels/` folder and find a file with the same name as the country code
 - at the very end of this file add a link to the channel with a description
 - commit all changes
@@ -38,11 +41,87 @@ In case you were unable to determine which country the channel belongs to, you c
 
 - find out the full name of the channel and from which country it is broadcasting. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
 - update the channel name if necessary
-- find the corresponding country code in [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) table
+- find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
 - open the `channels/` folder and find a file with the same name as the country code
 - at the very end of this file add a link to the channel with a description
 - commit all changes
 - send a pull request
+
+**Do you want to change the channel category?**
+
+- find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this.
+- open the file
+- find the channel description
+- specify the appropriate category in the `group-title` attribute. A complete list of supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category).
+- commit all changes
+- send a pull request
+
+**Do you want to change the channel language?**
+
+- find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this.
+- open the file
+- find the channel description
+- specify the appropriate language in the `tvg-language` attribute. The name of the language must comply with [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500) standart.
+- commit all changes
+- send a pull request
+
+If a channel is broadcast in several languages at once, you can specify them all through a semicolon, like this:
+
+```xml
+#EXTINF:-1 tvg-language="English;Chinese",CCTV
+http://example.com/cctv.m3u8
+```
+
+**Do you want to add a new EPG (Electronic Program Guide) source?**
+
+- check which country the EPG is intended for
+- check that this source is not already listed in the playlist. To do this, find the country in this [table](https://github.com/iptv-org/iptv#playlists-by-country) and see if there is any other link. If not, continue.
+- find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
+- open the `channels/` folder and find a file with the same name as the country code
+- in the header of the playlist, next to `#EXTM3U`, add an `x-tvg-url` attribute with a link to the EPG source.
+
+The result should look something like this:
+
+```xml
+#EXTM3U x-tvg-url="https://example.com/epg.xml.gz"
+```
+
+**Do you want to activate the program guide for the channel?**
+
+- find out which country the channel belongs to. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
+- find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
+- open the `/channels` folder and find the file that has the same code in its name and open it
+- check that the EPG source is specified in the file. To do this, just look at the header of the playlist. If the `x-tvg-url` attribute is present and has a link in it, everything is fine.
+- open the file specified in the `x-tvg-url`
+- find the channel list in the file. Usually it looks like this:
+
+  ```xml
+  <tv>
+    <channel id="cnn">
+      <display-name>CNN</display-name>
+    </channel>
+    <channel id="nbc">
+      <display-name>NBC</display-name>
+    </channel>
+    ...
+  </tv>
+  ```
+
+- find the channel you are interested in
+- copy it `id` and paste it to the `tvg-id` attribute of the channel description inside the playlist
+- copy the `<display-name>` tag value and paste it into the `tvg-name` attribute of the channel description. The result should look something like this:
+
+```xml
+#EXTINF:-1 tvg-id="cnn" tvg-name="CNN",CNN
+http://example.com/cnn.m3u8
+```
+
+- commit all changes
+- send a pull request
+
+If you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels.
+
+In some cases, it may also be necessary to manually specify the source of EPG in the player itself.
 
 **Did you find a mistake in README.md?**
 
@@ -60,7 +139,7 @@ In case you were unable to determine which country the channel belongs to, you c
 
 **Would you like us to remove the link to the channel you own the rights to?**
 
-- publish somethere DMCA notice
+- publish your DMCA notice somewhere
 - create an issue using this [link](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=remove-channel.md&title=Remove%3A+xxx) and add a link to the DMCA notice in it
 
 ## Project Structure
@@ -100,6 +179,10 @@ In case you were unable to determine which country the channel belongs to, you c
 - `README.md`: project description generated from the contents of the `.readme/` folder.
 
 ## Channel Description Scheme
+
+Channels should be added to playlists using the following template.
+
+Explanation of attributes:
 
 ```
 #EXTINF:-1 tvg-id="EPG_ID" tvg-name="EPG_NAME" tvg-language="PRIMARY_LANGUAGE;SECONDARY_LANGUAGE" tvg-logo="LOGO_URL" group-title="CATEGORY",FULL_NAME STREAM_TIME_SHIFT (ALTERNATIVE_NAME) (STREAM_RESOLUTION) [STREAM_STATUS]
