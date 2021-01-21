@@ -40,7 +40,7 @@
 		<tr><td align="left">🇩🇰&nbsp;Denmark</td><td align="right">12</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/dk.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇩🇴&nbsp;Dominican Republic</td><td align="right">44</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/do.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇪🇨&nbsp;Ecuador</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ec.m3u</code></td><td align="left"></td></tr>
-		<tr><td align="left">🇪🇬&nbsp;Egypt</td><td align="right">10</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/eg.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
+		<tr><td align="left">🇪🇬&nbsp;Egypt</td><td align="right">11</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/eg.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
 		<tr><td align="left">🇸🇻&nbsp;El Salvador</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sv.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇬🇶&nbsp;Equatorial Guinea</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/gq.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇪🇪&nbsp;Estonia</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ee.m3u</code></td><td align="left"></td></tr>
@@ -62,7 +62,7 @@
 		<tr><td align="left">🇮🇸&nbsp;Iceland</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/is.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇮🇳&nbsp;India</td><td align="right">190</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/in.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇮🇩&nbsp;Indonesia</td><td align="right">36</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/id.m3u</code></td><td align="left"></td></tr>
-		<tr><td align="left">🌎&nbsp;International</td><td align="right">72</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/int.m3u</code></td><td align="left"></td></tr>
+		<tr><td align="left">🌎&nbsp;International</td><td align="right">70</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/int.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇮🇷&nbsp;Iran</td><td align="right">64</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ir.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇮🇶&nbsp;Iraq</td><td align="right">29</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/iq.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
 		<tr><td align="left">🇮🇪&nbsp;Ireland</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ie.m3u</code></td><td align="left"></td></tr>
@@ -82,7 +82,7 @@
 		<tr><td align="left">🇱🇾&nbsp;Libya</td><td align="right">9</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ly.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
 		<tr><td align="left">🇱🇮&nbsp;Liechtenstein</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/li.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇱🇹&nbsp;Lithuania</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/lt.m3u</code></td><td align="left"><code>https://iptvx.one/epg/epg.xml.gz</code></td></tr>
-		<tr><td align="left">🇱🇺&nbsp;Luxembourg</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/lu.m3u</code></td><td align="left"></td></tr>
+		<tr><td align="left">🇱🇺&nbsp;Luxembourg</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/lu.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇲🇴&nbsp;Macau</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mo.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇲🇾&nbsp;Malaysia</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/my.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇲🇹&nbsp;Malta</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mt.m3u</code></td><td align="left"></td></tr>
@@ -102,7 +102,7 @@
 		<tr><td align="left">🇳🇴&nbsp;Norway</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/no.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇴🇲&nbsp;Oman</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/om.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
 		<tr><td align="left">🇵🇰&nbsp;Pakistan</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/pk.m3u</code></td><td align="left"></td></tr>
-		<tr><td align="left">🇵🇸&nbsp;Palestine</td><td align="right">10</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ps.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
+		<tr><td align="left">🇵🇸&nbsp;Palestine</td><td align="right">11</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ps.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
 		<tr><td align="left">🇵🇦&nbsp;Panama</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/pa.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇵🇾&nbsp;Paraguay</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/py.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇵🇪&nbsp;Peru</td><td align="right">9</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/pe.m3u</code></td><td align="left"></td></tr>
@@ -112,7 +112,7 @@
 		<tr><td align="left">🇵🇷&nbsp;Puerto Rico</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/pr.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇶🇦&nbsp;Qatar</td><td align="right">13</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/qa.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
 		<tr><td align="left">🇷🇴&nbsp;Romania</td><td align="right">67</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ro.m3u</code></td><td align="left"></td></tr>
-		<tr><td align="left">🇷🇺&nbsp;Russia</td><td align="right">223</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ru.m3u</code></td><td align="left"><code>https://iptvx.one/epg/epg.xml.gz</code></td></tr>
+		<tr><td align="left">🇷🇺&nbsp;Russia</td><td align="right">224</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ru.m3u</code></td><td align="left"><code>https://iptvx.one/epg/epg.xml.gz</code></td></tr>
 		<tr><td align="left">🇷🇼&nbsp;Rwanda</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/rw.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇸🇦&nbsp;Saudi Arabia</td><td align="right">34</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sa.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
 		<tr><td align="left">🇷🇸&nbsp;Serbia</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/rs.m3u</code></td><td align="left"></td></tr>
@@ -128,7 +128,7 @@
 		<tr><td align="left">🇸🇩&nbsp;Sudan</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sd.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇸🇪&nbsp;Sweden</td><td align="right">13</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/se.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇨🇭&nbsp;Switzerland</td><td align="right">20</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ch.m3u</code></td><td align="left"></td></tr>
-		<tr><td align="left">🇸🇾&nbsp;Syria</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sy.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
+		<tr><td align="left">🇸🇾&nbsp;Syria</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/sy.m3u</code></td><td align="left"><code>https://raw.githubusercontent.com/Fazzani/grab/master/merge.zip</code></td></tr>
 		<tr><td align="left">🇹🇼&nbsp;Taiwan</td><td align="right">57</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tw.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇹🇯&nbsp;Tajikistan</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tj.m3u</code></td><td align="left"></td></tr>
 		<tr><td align="left">🇹🇿&nbsp;Tanzania</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tz.m3u</code></td><td align="left"></td></tr>
