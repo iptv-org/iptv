@@ -12,7 +12,7 @@ Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=
 
 - make sure that the link you want to add works. It is recommended to use [VLC media player](https://www.videolan.org/vlc/index.html) for this.
 - check if the channel is working outside your country. You can use services like [streamtest.in](https://streamtest.in/) to do this.
-- find out from which country channel is broadcasting. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
+- find out from which the country channel is broadcasting. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
 - find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
 - open the `/channels` folder and find the file that has the same code in its name and open it
 - find the broken link in this file
@@ -80,7 +80,7 @@ http://example.com/cctv.m3u8
 - open the `channels/` folder and find a file with the same name as the country code
 - in the header of the playlist, next to `#EXTM3U`, add an `x-tvg-url` attribute with a link to the EPG source.
 
-The result should look something like this:
+The result should be something like this:
 
 ```xml
 #EXTM3U x-tvg-url="https://example.com/epg.xml.gz"
@@ -109,7 +109,7 @@ The result should look something like this:
 
 - find the channel you are interested in
 - copy it `id` and paste it to the `tvg-id` attribute of the channel description inside the playlist
-- copy the `<display-name>` tag value and paste it into the `tvg-name` attribute of the channel description. The result should look something like this:
+- copy the `<display-name>` tag value and paste it into the `tvg-name` attribute of the channel description. The result should be something like this:
 
 ```xml
 #EXTINF:-1 tvg-id="cnn" tvg-name="CNN",CNN
