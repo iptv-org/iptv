@@ -1,7 +1,7 @@
 ---
 name: Broken Stream
 about: Request to replace a broken stream
-title: 'Fix: xxx'
+title: 'Replace: xxx'
 labels: broken stream
 assignees: ''
 
