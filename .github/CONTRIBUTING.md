@@ -182,8 +182,6 @@ In some cases, it may also be necessary to manually specify the EPG source in th
 
 Channels should be added to playlists using the following template.
 
-Explanation of attributes:
-
 ```
 #EXTINF:-1 tvg-id="EPG_ID" tvg-name="EPG_NAME" tvg-language="PRIMARY_LANGUAGE;SECONDARY_LANGUAGE" tvg-logo="LOGO_URL" group-title="CATEGORY",FULL_NAME STREAM_TIME_SHIFT (ALTERNATIVE_NAME) (STREAM_RESOLUTION) [STREAM_STATUS]
 STREAM_URL
