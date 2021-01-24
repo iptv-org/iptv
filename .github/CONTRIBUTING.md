@@ -108,13 +108,13 @@ The result should be something like this:
   ```
 
 - find the channel you are interested in
-- copy it `id` and paste it to the `tvg-id` attribute of the channel description inside the playlist
+- copy the `id` and paste it into the `tvg-id` attribute of the channel description
 - copy the `<display-name>` tag value and paste it into the `tvg-name` attribute of the channel description. The result should be something like this:
 
-```xml
-#EXTINF:-1 tvg-id="cnn" tvg-name="CNN",CNN
-http://example.com/cnn.m3u8
-```
+  ```xml
+  #EXTINF:-1 tvg-id="cnn" tvg-name="CNN",CNN
+  http://example.com/cnn.m3u8
+  ```
 
 - commit all changes
 - send a pull request
