@@ -28,7 +28,7 @@ Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=
 
 - make sure that the link you want to add works. It is recommended to use [VLC media player](https://www.videolan.org/vlc/index.html) for this
 - check if the channel is working outside your country. You can use services like [streamtest.in](https://streamtest.in/) to do this
-- find out the full name of the channel and from which country it is broadcasting. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
+- find out the full name of the channel and from which country it is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
 - find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
 - open the `channels/` folder and find a file with the same name as the country code
 - at the very end of this file add a link to the channel with a description
