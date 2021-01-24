@@ -35,11 +35,11 @@ Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=
 - commit all changes
 - send a pull request
 
-In case you were unable to determine which country the channel belongs to, you can put a link to it in the `channels/unsorted.m3u`.
+In case you were unable to determine which country the channel belongs to, add the channel onto the `channels/unsorted.m3u` playlist.
 
 **Do you want to sort the channels from "channels/unsorted.m3u"?**
 
-- find out the full name of the channel and from which country it is broadcasting. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
+- find out the full name of the channel and from which country it is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
 - update the channel name if necessary
 - find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
 - open the `channels/` folder and find a file with the same name as the country code
@@ -61,11 +61,11 @@ In case you were unable to determine which country the channel belongs to, you c
 - find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this.
 - open the file
 - find the channel description
-- specify the appropriate language in the `tvg-language` attribute. The name of the language must comply with [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500) standart.
+- specify the appropriate language in the `tvg-language` attribute. The name of the language must comply with the [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500) standard.
 - commit all changes
 - send a pull request
 
-If a channel is broadcast in several languages at once, you can specify them all through a semicolon, like this:
+If a channel is broadcasted in several languages at once, you can specify them all through a semicolon, like this:
 
 ```xml
 #EXTINF:-1 tvg-language="English;Chinese",CCTV
@@ -76,7 +76,7 @@ http://example.com/cctv.m3u8
 
 - check which country the EPG is intended for
 - check that this source is not already listed in the playlist. To do this, find the country in this [table](https://github.com/iptv-org/iptv#playlists-by-country) and see if there is any other link. If not, continue.
-- find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
+- find the corresponding [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) country code.
 - open the `channels/` folder and find a file with the same name as the country code
 - in the header of the playlist, next to `#EXTM3U`, add an `x-tvg-url` attribute with a link to the EPG source.
 
@@ -89,7 +89,7 @@ The result should be something like this:
 **Do you want to activate the program guide for the channel?**
 
 - find out which country the channel belongs to. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
-- find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
+- find the corresponding [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) country code.
 - open the `/channels` folder and find the file that has the same code in its name and open it
 - check that the EPG source is specified in the file. To do this, just look at the header of the playlist. If the `x-tvg-url` attribute is present and has a link in it, everything is fine.
 - open the file specified in the `x-tvg-url`
@@ -121,20 +121,20 @@ http://example.com/cnn.m3u8
 
 If you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels.
 
-In some cases, it may also be necessary to manually specify the source of EPG in the player itself.
+In some cases, it may also be necessary to manually specify the EPG source in the player itself.
 
 **Did you find a mistake in README.md?**
 
 - open `.readme/template.md`
-- make any necessary changes to the file
-- commit all changes
+- make the necessary changes
+- commit the updated README
 - send a pull request
 
 **Did you find a mistake in this guide?**
 
 - open `.github/CONTRIBUTING.md`
-- make any necessary changes to the file
-- commit all changes
+- make the necessary changes
+- commit the updated guide
 - send a pull request
 
 **Would you like us to remove the link to the channel you own the rights to?**
@@ -211,7 +211,7 @@ Example:
 https://example.com/playlist.m3u8
 ```
 
-Also, if necessary, you can specify custom HTTP User-Agent or Referrer via `#EXTVLCOPT` tag:
+Also, if necessary, you can specify custom HTTP User-Agent or Referrer via the `#EXTVLCOPT` tag:
 
 ```xml
 #EXTINF:-1 tvg-id="exampletv.us" tvg-name="Example TV" tvg-language="English" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
