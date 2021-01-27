@@ -43,6 +43,7 @@ async function main() {
   if (index.items.length) {
     await loadPlaylist('channels/unsorted.m3u')
       .then(removeUnsortedDuplicates)
+      .then(sortChannels)
       .then(updatePlaylist)
       .then(done)
   }
