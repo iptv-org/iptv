@@ -40,7 +40,8 @@ helper.supportedCategories = {
   sport: 'Sport',
   travel: 'Travel',
   weather: 'Weather',
-  xxx: 'XXX'
+  xxx: 'XXX',
+  other: 'Other'
 }
 
 helper.code2flag = function (code) {
