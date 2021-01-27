@@ -181,11 +181,12 @@ function generateCategories() {
   const outputDir = `${ROOT_DIR}/categories`
   helper.createDir(outputDir)
 
-  for (let cid in list.categories) {
+  for (let cid in helper.supportedCategories) {
     let category = list.categories[cid]
     const filename = `${outputDir}/${cid}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
 
+    if (!category) continue
     const channels = helper.sortBy(Object.values(category), ['name', 'url'])
     for (let channel of channels) {
       helper.appendToFile(filename, channel.toString())
