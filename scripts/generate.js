@@ -18,6 +18,8 @@ function main() {
   createNoJekyllFile()
   console.log('Generating index.m3u...')
   generateIndex()
+  console.log('Generating index.sfw.m3u...')
+  generateSFWIndex()
   console.log('Generating channels.json...')
   generateChannels()
   console.log('Generating index.country.m3u...')
@@ -113,6 +115,17 @@ function generateIndex() {
   helper.createFile(filename, '#EXTM3U\n')
 
   const channels = helper.sortBy(list.all, ['name', 'url'])
+  for (let channel of channels) {
+    helper.appendToFile(filename, channel.toString())
+  }
+}
+
+function generateSFWIndex() {
+  const filename = `${ROOT_DIR}/index.sfw.m3u`
+  helper.createFile(filename, '#EXTM3U\n')
+
+  const sorted = helper.sortBy(list.all, ['name', 'url'])
+  const channels = helper.filterNSFW(sorted)
   for (let channel of channels) {
     helper.appendToFile(filename, channel.toString())
   }

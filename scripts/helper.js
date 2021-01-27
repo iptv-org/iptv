@@ -241,6 +241,41 @@ helper.filterGroup = function (groupTitle) {
   return this.supportedCategories[groupTitle.toLowerCase()] || ''
 }
 
+helper.filterNSFW = function (arr) {
+  const sfwCategories = [
+    'Auto',
+    'Business',
+    'Classic',
+    'Comedy',
+    'Documentary',
+    'Education',
+    'Entertainment',
+    'Family',
+    'Fashion',
+    'Food',
+    'General',
+    'Health',
+    'History',
+    'Hobby',
+    'Kids',
+    'Legislative',
+    'Lifestyle',
+    'Local',
+    'Movies',
+    'Music',
+    'News',
+    'Quiz',
+    'Religious',
+    'Sci-Fi',
+    'Shop',
+    'Sport',
+    'Travel',
+    'Weather'
+  ]
+
+  return arr.filter(i => sfwCategories.includes(i.category))
+}
+
 helper.sleep = function (ms) {
   return function (x) {
     return new Promise(resolve => setTimeout(() => resolve(x), ms))
