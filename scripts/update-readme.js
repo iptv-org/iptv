@@ -26,6 +26,15 @@ function parseIndex() {
   let countries = {}
   let languages = {}
   let categories = {}
+
+  for (let categoryCode in helper.supportedCategories) {
+    categories[categoryCode] = {
+      category: helper.supportedCategories[categoryCode],
+      channels: 0,
+      playlist: `<code>https://iptv-org.github.io/iptv/categories/${categoryCode}.m3u</code>`
+    }
+  }
+
   for (let rootItem of root.items) {
     const playlist = helper.parsePlaylist(rootItem.url)
     const countryName = rootItem.name
@@ -74,12 +83,6 @@ function parseIndex() {
       const categoryCode = categoryName.toLowerCase()
       if (categories[categoryCode]) {
         categories[categoryCode].channels++
-      } else {
-        categories[categoryCode] = {
-          category: categoryName,
-          channels: 1,
-          playlist: `<code>https://iptv-org.github.io/iptv/categories/${categoryCode}.m3u</code>`
-        }
       }
     }
   }
