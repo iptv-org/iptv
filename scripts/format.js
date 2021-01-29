@@ -68,7 +68,7 @@ async function loadPlaylist(url) {
   playlist.url = url
   playlist.items = playlist.items
     .map(item => {
-      return helper.createChannel(item)
+      return helper.createChannel(item, playlist)
     })
     .filter(i => i.url)
 
