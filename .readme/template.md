@@ -53,16 +53,22 @@ If successful, you should get the following response:
     "logo": "https://i.imgur.com/ilZJT5s.png",
     "url": "http://ott-cdn.ucom.am/s27/index.m3u8",
     "category": "News",
-    "language": [
+    "languages": [
       {
         "code": "eng",
         "name": "English"
       }
     ],
-    "country": {
-      "code": "us",
-      "name": "United States"
-    },
+    "countries": [
+      {
+        "code": "us",
+        "name": "United States"
+      },
+      {
+        "code": "ca",
+        "name": "Canada"
+      }
+    ],
     "tvg": {
       "id": "cnn.us",
       "name": "CNN",
