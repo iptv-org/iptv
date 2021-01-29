@@ -54,60 +54,57 @@ function createNoJekyllFile() {
 function parseIndex() {
   const root = helper.parsePlaylist('index.m3u')
 
-  let countries = {}
-  let languages = {}
-  let categories = {}
-
   for (let rootItem of root.items) {
     const playlist = helper.parsePlaylist(rootItem.url)
-    const countryCode = helper.getBasename(rootItem.url).toLowerCase()
-    const countryName = rootItem.name
-
     for (let item of playlist.items) {
-      const channel = helper.createChannel(item)
+      const channel = helper.createChannel(item, playlist)
       if (!channel.url) continue
-      channel.country.code = countryCode
-      channel.country.name = countryName
-      channel.tvg.url = playlist.header.attrs['x-tvg-url'] || ''
 
       // all
       list.all.push(channel)
 
       // country
-      if (!countries[countryCode]) {
-        countries[countryCode] = []
+      if (!channel.countries.length) {
+        const countryCode = 'undefined'
+        if (!list.countries[countryCode]) {
+          list.countries[countryCode] = []
+        }
+        list.countries[countryCode].push(channel)
+      } else {
+        for (let country of channel.countries) {
+          const countryCode = country.code || 'undefined'
+          if (!list.countries[countryCode]) {
+            list.countries[countryCode] = []
+          }
+          list.countries[countryCode].push(channel)
+        }
       }
-      countries[countryCode].push(channel)
 
       // language
       if (!channel.language.length) {
         const languageCode = 'undefined'
-        if (!languages[languageCode]) {
-          languages[languageCode] = []
+        if (!list.languages[languageCode]) {
+          list.languages[languageCode] = []
         }
-        languages[languageCode].push(channel)
+        list.languages[languageCode].push(channel)
       } else {
         for (let language of channel.language) {
           const languageCode = language.code || 'undefined'
-          if (!languages[languageCode]) {
-            languages[languageCode] = []
+          if (!list.languages[languageCode]) {
+            list.languages[languageCode] = []
           }
-          languages[languageCode].push(channel)
+          list.languages[languageCode].push(channel)
         }
       }
 
       // category
       const categoryCode = channel.category ? channel.category.toLowerCase() : 'other'
-      if (!categories[categoryCode]) {
-        categories[categoryCode] = []
+      if (!list.categories[categoryCode]) {
+        list.categories[categoryCode] = []
       }
-      categories[categoryCode].push(channel)
+      list.categories[categoryCode].push(channel)
     }
   }
-
-  list.countries = countries
-  list.languages = languages
-  list.categories = categories
 }
 
 function generateIndex() {
@@ -142,10 +139,10 @@ function generateCountryIndex() {
   const filename = `${ROOT_DIR}/index.country.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
-  const channels = helper.sortBy(list.all, ['country.name', 'name', 'url'])
+  const channels = helper.sortBy(list.all, ['countryName', 'name', 'url'])
   for (let channel of channels) {
     const category = channel.category
-    channel.category = channel.country.name
+    channel.category = channel.countries.map(c => c.name).join(';')
     helper.appendToFile(filename, channel.toString())
     channel.category = category
   }
@@ -155,10 +152,10 @@ function generateLanguageIndex() {
   const filename = `${ROOT_DIR}/index.language.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
-  const channels = helper.sortBy(list.all, ['language.name', 'name', 'url'])
+  const channels = helper.sortBy(list.all, ['languageName', 'name', 'url'])
   for (let channel of channels) {
     const category = channel.category
-    channel.category = channel.language.map(l => l.name).join(';')
+    channel.category = channel.getLanguageAttribute()
     helper.appendToFile(filename, channel.toString())
     channel.category = category
   }
@@ -190,6 +187,22 @@ function generateCountries() {
   }
 }
 
+function generateLanguages() {
+  const outputDir = `${ROOT_DIR}/languages`
+  helper.createDir(outputDir)
+
+  for (let lid in list.languages) {
+    let language = list.languages[lid]
+    const filename = `${outputDir}/${lid}.m3u`
+    helper.createFile(filename, '#EXTM3U\n')
+
+    const channels = helper.sortBy(Object.values(language), ['name', 'url'])
+    for (let channel of channels) {
+      helper.appendToFile(filename, channel.toString())
+    }
+  }
+}
+
 function generateCategories() {
   const outputDir = `${ROOT_DIR}/categories`
   helper.createDir(outputDir)
@@ -201,22 +214,6 @@ function generateCategories() {
 
     if (!category) continue
     const channels = helper.sortBy(Object.values(category), ['name', 'url'])
-    for (let channel of channels) {
-      helper.appendToFile(filename, channel.toString())
-    }
-  }
-}
-
-function generateLanguages() {
-  const outputDir = `${ROOT_DIR}/languages`
-  helper.createDir(outputDir)
-
-  for (let lid in list.languages) {
-    let language = list.languages[lid]
-    const filename = `${outputDir}/${lid}.m3u`
-    helper.createFile(filename, '#EXTM3U\n')
-
-    const channels = helper.sortBy(Object.values(language), ['name', 'url'])
     for (let channel of channels) {
       helper.appendToFile(filename, channel.toString())
     }
