@@ -81,14 +81,14 @@ function parseIndex() {
       }
 
       // language
-      if (!channel.language.length) {
+      if (!channel.languages.length) {
         const languageCode = 'undefined'
         if (!list.languages[languageCode]) {
           list.languages[languageCode] = []
         }
         list.languages[languageCode].push(channel)
       } else {
-        for (let language of channel.language) {
+        for (let language of channel.languages) {
           const languageCode = language.code || 'undefined'
           if (!list.languages[languageCode]) {
             list.languages[languageCode] = []
@@ -139,7 +139,7 @@ function generateCountryIndex() {
   const filename = `${ROOT_DIR}/index.country.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
-  const channels = helper.sortBy(list.all, ['countryName', 'name', 'url'])
+  const channels = helper.sortBy(list.all, ['countryAttribute', 'name', 'url'])
   for (let channel of channels) {
     const category = channel.category
     channel.category = channel.countries.map(c => c.name).join(';')
@@ -152,7 +152,7 @@ function generateLanguageIndex() {
   const filename = `${ROOT_DIR}/index.language.m3u`
   helper.createFile(filename, '#EXTM3U\n')
 
-  const channels = helper.sortBy(list.all, ['languageName', 'name', 'url'])
+  const channels = helper.sortBy(list.all, ['languageAttribute', 'name', 'url'])
   for (let channel of channels) {
     const category = channel.category
     channel.category = channel.getLanguageAttribute()
