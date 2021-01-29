@@ -1,52 +1,13 @@
 const fs = require('fs')
 const path = require('path')
-const playlistParser = require('iptv-playlist-parser')
 const axios = require('axios')
 const zlib = require('zlib')
-const epgParser = require('epg-parser')
 const urlParser = require('url')
 const escapeStringRegexp = require('escape-string-regexp')
 const markdownInclude = require('markdown-include')
 const iso6393 = require('iso-639-3')
-const intlDisplayNames = new Intl.DisplayNames(['en'], {
-  style: 'long',
-  type: 'region'
-})
 
 let helper = {}
-
-helper.supportedCategories = {
-  auto: 'Auto',
-  business: 'Business',
-  classic: 'Classic',
-  comedy: 'Comedy',
-  documentary: 'Documentary',
-  education: 'Education',
-  entertainment: 'Entertainment',
-  family: 'Family',
-  fashion: 'Fashion',
-  food: 'Food',
-  general: 'General',
-  health: 'Health',
-  history: 'History',
-  hobby: 'Hobby',
-  kids: 'Kids',
-  legislative: 'Legislative',
-  lifestyle: 'Lifestyle',
-  local: 'Local',
-  movies: 'Movies',
-  music: 'Music',
-  news: 'News',
-  quiz: 'Quiz',
-  religious: 'Religious',
-  'sci-fi': 'Sci-Fi',
-  shop: 'Shop',
-  sport: 'Sport',
-  travel: 'Travel',
-  weather: 'Weather',
-  xxx: 'XXX',
-  other: 'Other'
-}
 
 helper.code2flag = function (code) {
   switch (code) {
@@ -61,6 +22,25 @@ helper.code2flag = function (code) {
         .toUpperCase()
         .replace(/./g, char => String.fromCodePoint(char.charCodeAt(0) + 127397))
   }
+}
+
+helper.code2name = function (code) {
+  const intlDisplayNames = new Intl.DisplayNames(['en'], {
+    style: 'long',
+    type: 'region'
+  })
+
+  try {
+    return intlDisplayNames.of(code.toUpperCase())
+  } catch (e) {
+    return null
+  }
+}
+
+helper.language2code = function (name) {
+  const lang = iso6393.find(l => l.name === name)
+
+  return lang && lang.iso6393 ? lang.iso6393 : null
 }
 
 helper.sortBy = function (arr, fields) {
@@ -80,54 +60,7 @@ helper.sortBy = function (arr, fields) {
   })
 }
 
-helper.createDir = function (dir) {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir)
-  }
-}
-
-helper.compileMarkdown = function (filepath) {
-  return markdownInclude.compileFiles(path.resolve(__dirname, filepath))
-}
-
-helper.escapeStringRegexp = function (scring) {
-  return escapeStringRegexp(string)
-}
-
-helper.getISO6391Name = function (code) {
-  const lang = iso6393.find(l => l.iso6393 === code.toLowerCase())
-
-  return lang && lang.name ? lang.name : null
-}
-
-helper.getISO6391Code = function (name) {
-  const lang = iso6393.find(l => l.name === name)
-
-  return lang && lang.iso6393 ? lang.iso6393 : null
-}
-
-helper.parsePlaylist = function (filename) {
-  const content = this.readFile(filename)
-  const result = playlistParser.parse(content)
-  const playlist = new Playlist(result)
-  playlist.url = filename
-
-  return playlist
-}
-
-helper.parseEPG = async function (url) {
-  return this.getEPG(url).then(content => {
-    const result = epgParser.parse(content)
-    const channels = {}
-    for (let channel of result.channels) {
-      channels[channel.id] = channel
-    }
-
-    return { url, channels }
-  })
-}
-
-helper.getEPG = function (url) {
+helper.loadEPG = function (url) {
   return new Promise((resolve, reject) => {
     var buffer = []
     axios({
@@ -163,28 +96,24 @@ helper.getEPG = function (url) {
   })
 }
 
-helper.readFile = function (filename) {
-  return fs.readFileSync(path.resolve(__dirname) + `/../${filename}`, { encoding: 'utf8' })
-}
-
-helper.appendToFile = function (filename, data) {
-  fs.appendFileSync(path.resolve(__dirname) + '/../' + filename, data)
-}
-
-helper.createFile = function (filename, data = '') {
-  fs.writeFileSync(path.resolve(__dirname) + '/../' + filename, data)
-}
-
 helper.getBasename = function (filename) {
   return path.basename(filename, path.extname(filename))
 }
 
-helper.getUrlPath = function (u) {
-  let parsed = urlParser.parse(u)
-  let searchQuery = parsed.search || ''
-  let path = parsed.host + parsed.pathname + searchQuery
+helper.filterPlaylists = function (arr, include = '', exclude = '') {
+  if (include) {
+    const included = include.split(',').map(filename => `channels/${filename}.m3u`)
 
-  return path.toLowerCase()
+    return arr.filter(i => included.indexOf(i.url) > -1)
+  }
+
+  if (exclude) {
+    const excluded = exclude.split(',').map(filename => `channels/${filename}.m3u`)
+
+    return arr.filter(i => excluded.indexOf(i.url) === -1)
+  }
+
+  return arr
 }
 
 helper.generateTable = function (data, options) {
@@ -216,34 +145,36 @@ helper.generateTable = function (data, options) {
   return output
 }
 
-helper.createChannel = function (data, parent) {
-  return new Channel(data, parent)
+helper.createDir = function (dir) {
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir)
+  }
+}
+
+helper.readFile = function (filename) {
+  return fs.readFileSync(path.resolve(__dirname) + `/../${filename}`, { encoding: 'utf8' })
+}
+
+helper.appendToFile = function (filename, data) {
+  fs.appendFileSync(path.resolve(__dirname) + '/../' + filename, data)
+}
+
+helper.compileMarkdown = function (filepath) {
+  return markdownInclude.compileFiles(path.resolve(__dirname, filepath))
+}
+
+helper.escapeStringRegexp = function (scring) {
+  return escapeStringRegexp(string)
+}
+
+helper.createFile = function (filename, data = '') {
+  fs.writeFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
 helper.writeToLog = function (country, msg, url) {
   var now = new Date()
   var line = `${country}: ${msg} '${url}'`
   this.appendToFile('error.log', now.toISOString() + ' ' + line + '\n')
-}
-
-helper.filterPlaylists = function (arr, include = '', exclude = '') {
-  if (include) {
-    const included = include.split(',').map(filename => `channels/${filename}.m3u`)
-
-    return arr.filter(i => included.indexOf(i.url) > -1)
-  }
-
-  if (exclude) {
-    const excluded = exclude.split(',').map(filename => `channels/${filename}.m3u`)
-
-    return arr.filter(i => excluded.indexOf(i.url) === -1)
-  }
-
-  return arr
-}
-
-helper.filterGroup = function (groupTitle) {
-  return this.supportedCategories[groupTitle.toLowerCase()] || ''
 }
 
 helper.filterNSFW = function (arr) {
@@ -284,183 +215,6 @@ helper.filterNSFW = function (arr) {
 helper.sleep = function (ms) {
   return function (x) {
     return new Promise(resolve => setTimeout(() => resolve(x), ms))
-  }
-}
-
-helper.code2country = function (code) {
-  code = code ? code.toLowerCase() : ''
-  if (code === 'int') {
-    return { code: 'int', name: 'International' }
-  } else if (code === 'unsorted') {
-    return null
-  }
-
-  return { code, name: intlDisplayNames.of(code.toUpperCase()) }
-}
-
-helper.parseCountries = function (value, source) {
-  if (!value) {
-    const country = helper.code2country(source)
-    return country ? [country] : []
-  }
-
-  return value
-    .split(';')
-    .filter(i => i)
-    .map(helper.code2country)
-}
-
-helper.parseName = function (title) {
-  return title
-    .trim()
-    .split(' ')
-    .map(s => s.trim())
-    .filter(s => {
-      return !/\[|\]/i.test(s) && !/\((\d+)P\)/i.test(s)
-    })
-    .join(' ')
-}
-
-helper.parseStatus = function (title) {
-  const regex = /\[(.*)\]/i
-  const match = title.match(regex)
-
-  return match ? match[1] : null
-}
-
-helper.parseResolution = function (title) {
-  const regex = /\((\d+)P\)/i
-  const match = title.match(regex)
-
-  return {
-    width: null,
-    height: match ? parseInt(match[1]) : null
-  }
-}
-
-helper.parseLanguages = function (lang) {
-  return lang
-    .split(';')
-    .map(name => {
-      const code = name ? helper.getISO6391Code(name) : null
-      if (!code) return null
-
-      return {
-        code,
-        name
-      }
-    })
-    .filter(l => l)
-}
-
-class Playlist {
-  constructor(data) {
-    this.header = data.header
-    this.items = data.items
-  }
-
-  getHeader() {
-    let parts = ['#EXTM3U']
-    for (let key in this.header.attrs) {
-      let value = this.header.attrs[key]
-      if (value) {
-        parts.push(`${key}="${value}"`)
-      }
-    }
-
-    return `${parts.join(' ')}\n`
-  }
-}
-
-class Channel {
-  constructor(data, parent) {
-    this.parseData(data, parent)
-  }
-
-  parseData(data, parent) {
-    this.source = helper.getBasename(parent.url)
-    this.logo = data.tvg.logo
-    this.category = helper.filterGroup(data.group.title)
-    this.url = data.url
-    this.name = helper.parseName(data.name)
-    this.status = helper.parseStatus(data.name)
-    this.http = data.http
-    this.tvg = data.tvg
-    this.tvg.url = parent.header.attrs['x-tvg-url'] || ''
-    this.countries = helper.parseCountries(data.tvg.country, this.source)
-    this.resolution = helper.parseResolution(data.name)
-    this.languages = helper.parseLanguages(data.tvg.language)
-  }
-
-  get languageAttribute() {
-    return this.getLanguageAttribute()
-  }
-
-  get countryAttribute() {
-    return this.getCountryAttribute()
-  }
-
-  getCountryAttribute() {
-    return this.countries.map(c => c.code.toUpperCase()).join(';')
-  }
-
-  getLanguageAttribute() {
-    return this.languages.map(l => l.name).join(';')
-  }
-
-  toString() {
-    const country = this.getCountryAttribute()
-    const language = this.getLanguageAttribute()
-    const tvgUrl = (this.tvg.id || this.tvg.name) && this.tvg.url ? this.tvg.url : ''
-    const resolution = this.resolution.height ? ` (${this.resolution.height}p)` : ''
-    const status = this.status ? ` [${this.status}]` : ''
-
-    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${language}" tvg-logo="${this.logo}" tvg-country="${country}" tvg-url="${tvgUrl}" group-title="${this.category}",${this.name}${resolution}${status}`
-
-    if (this.http['referrer']) {
-      info += `\n#EXTVLCOPT:http-referrer=${this.http['referrer']}`
-    }
-
-    if (this.http['user-agent']) {
-      info += `\n#EXTVLCOPT:http-user-agent=${this.http['user-agent']}`
-    }
-
-    return '#EXTINF:' + info + '\n' + this.url + '\n'
-  }
-
-  toShortString() {
-    const country = this.getCountryAttribute()
-    const language = this.getLanguageAttribute()
-    const resolution = this.resolution.height ? ` (${this.resolution.height}p)` : ''
-    const status = this.status ? ` [${this.status}]` : ''
-
-    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${language}" tvg-logo="${this.logo}" tvg-country="${country}" group-title="${this.category}",${this.name}${resolution}${status}`
-
-    if (this.http['referrer']) {
-      info += `\n#EXTVLCOPT:http-referrer=${this.http['referrer']}`
-    }
-
-    if (this.http['user-agent']) {
-      info += `\n#EXTVLCOPT:http-user-agent=${this.http['user-agent']}`
-    }
-
-    return '#EXTINF:' + info + '\n' + this.url + '\n'
-  }
-
-  toJSON() {
-    return {
-      name: this.name,
-      logo: this.logo || null,
-      url: this.url,
-      category: this.category || null,
-      languages: this.languages,
-      countries: this.countries,
-      tvg: {
-        id: this.tvg.id || null,
-        name: this.tvg.name || null,
-        url: this.tvg.url || null
-      }
-    }
   }
 }
 
