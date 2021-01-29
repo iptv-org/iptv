@@ -8,6 +8,10 @@ const urlParser = require('url')
 const escapeStringRegexp = require('escape-string-regexp')
 const markdownInclude = require('markdown-include')
 const iso6393 = require('iso-639-3')
+const intlDisplayNames = new Intl.DisplayNames(['en'], {
+  style: 'long',
+  type: 'region'
+})
 
 let helper = {}
 
@@ -105,14 +109,15 @@ helper.getISO6391Code = function (name) {
 helper.parsePlaylist = function (filename) {
   const content = this.readFile(filename)
   const result = playlistParser.parse(content)
+  const playlist = new Playlist(result)
+  playlist.url = filename
 
-  return new Playlist(result)
+  return playlist
 }
 
 helper.parseEPG = async function (url) {
   return this.getEPG(url).then(content => {
     const result = epgParser.parse(content)
-    console.log('wo')
     const channels = {}
     for (let channel of result.channels) {
       channels[channel.id] = channel
@@ -211,8 +216,8 @@ helper.generateTable = function (data, options) {
   return output
 }
 
-helper.createChannel = function (data) {
-  return new Channel(data)
+helper.createChannel = function (data, parent) {
+  return new Channel(data, parent)
 }
 
 helper.writeToLog = function (country, msg, url) {
@@ -282,6 +287,17 @@ helper.sleep = function (ms) {
   }
 }
 
+helper.code2country = function (code) {
+  code = code ? code.toLowerCase() : ''
+  if (code === 'int') {
+    return { code: 'int', name: 'International' }
+  } else if (code === 'unsorted') {
+    return null
+  }
+
+  return { code, name: intlDisplayNames.of(code.toUpperCase()) }
+}
+
 class Playlist {
   constructor(data) {
     this.header = data.header
@@ -302,11 +318,12 @@ class Playlist {
 }
 
 class Channel {
-  constructor(data) {
-    this.parseData(data)
+  constructor(data, parent) {
+    this.parseData(data, parent)
   }
 
-  parseData(data) {
+  parseData(data, parent) {
+    this.source = helper.getBasename(parent.url)
     this.logo = data.tvg.logo
     this.category = helper.filterGroup(data.group.title)
     this.url = data.url
@@ -314,21 +331,34 @@ class Channel {
     this.status = this.parseStatus(data.name)
     this.http = data.http
     this.tvg = data.tvg
-    this.country = {
-      code: null,
-      name: null
-    }
+    this.tvg.url = parent.header.attrs['x-tvg-url'] || ''
+    this.countries = this.parseCountries(data.tvg.country)
     this.resolution = this.parseResolution(data.name)
-
-    this.setLanguage(data.tvg.language)
+    this.language = this.parseLanguage(data.tvg.language)
   }
 
-  get ['language.name']() {
+  get languageName() {
     return this.language[0] ? this.language[0].name : null
   }
 
-  get ['country.name']() {
-    return this.country.name || null
+  get countryName() {
+    return this.countries[0] ? this.countries[0].name : null
+  }
+
+  get countryCode() {
+    return this.countries[0] ? this.countries[0].code : null
+  }
+
+  parseCountries(value) {
+    if (!value) {
+      const country = helper.code2country(this.source)
+      return country ? [country] : []
+    }
+
+    return value
+      .split(';')
+      .filter(i => i)
+      .map(helper.code2country)
   }
 
   parseName(title) {
@@ -359,8 +389,8 @@ class Channel {
     }
   }
 
-  setLanguage(lang) {
-    this.language = lang
+  parseLanguage(lang) {
+    return lang
       .split(';')
       .map(name => {
         const code = name ? helper.getISO6391Code(name) : null
@@ -374,10 +404,18 @@ class Channel {
       .filter(l => l)
   }
 
+  getCountryAttribute() {
+    return this.countries.map(c => c.code.toUpperCase()).join(';')
+  }
+
+  getLanguageAttribute() {
+    return this.language.map(l => l.name).join(';')
+  }
+
   toString() {
-    const country = this.country.code ? this.country.code.toUpperCase() : ''
+    const country = this.getCountryAttribute()
+    const language = this.getLanguageAttribute()
     const tvgUrl = (this.tvg.id || this.tvg.name) && this.tvg.url ? this.tvg.url : ''
-    const language = this.language.map(l => l.name).join(';')
     const resolution = this.resolution.height ? ` (${this.resolution.height}p)` : ''
     const status = this.status ? ` [${this.status}]` : ''
 
@@ -395,11 +433,12 @@ class Channel {
   }
 
   toShortString() {
-    const language = this.language.map(l => l.name).join(';')
+    const country = this.getCountryAttribute()
+    const language = this.getLanguageAttribute()
     const resolution = this.resolution.height ? ` (${this.resolution.height}p)` : ''
     const status = this.status ? ` [${this.status}]` : ''
 
-    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${language}" tvg-logo="${this.logo}" group-title="${this.category}",${this.name}${resolution}${status}`
+    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${language}" tvg-logo="${this.logo}" tvg-country="${country}" group-title="${this.category}",${this.name}${resolution}${status}`
 
     if (this.http['referrer']) {
       info += `\n#EXTVLCOPT:http-referrer=${this.http['referrer']}`
@@ -419,7 +458,7 @@ class Channel {
       url: this.url,
       category: this.category || null,
       language: this.language,
-      country: this.country,
+      countries: this.countries,
       tvg: {
         id: this.tvg.id || null,
         name: this.tvg.name || null,
