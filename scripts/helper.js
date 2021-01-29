@@ -298,6 +298,61 @@ helper.code2country = function (code) {
   return { code, name: intlDisplayNames.of(code.toUpperCase()) }
 }
 
+helper.parseCountries = function (value, source) {
+  if (!value) {
+    const country = helper.code2country(source)
+    return country ? [country] : []
+  }
+
+  return value
+    .split(';')
+    .filter(i => i)
+    .map(helper.code2country)
+}
+
+helper.parseName = function (title) {
+  return title
+    .trim()
+    .split(' ')
+    .map(s => s.trim())
+    .filter(s => {
+      return !/\[|\]/i.test(s) && !/\((\d+)P\)/i.test(s)
+    })
+    .join(' ')
+}
+
+helper.parseStatus = function (title) {
+  const regex = /\[(.*)\]/i
+  const match = title.match(regex)
+
+  return match ? match[1] : null
+}
+
+helper.parseResolution = function (title) {
+  const regex = /\((\d+)P\)/i
+  const match = title.match(regex)
+
+  return {
+    width: null,
+    height: match ? parseInt(match[1]) : null
+  }
+}
+
+helper.parseLanguages = function (lang) {
+  return lang
+    .split(';')
+    .map(name => {
+      const code = name ? helper.getISO6391Code(name) : null
+      if (!code) return null
+
+      return {
+        code,
+        name
+      }
+    })
+    .filter(l => l)
+}
+
 class Playlist {
   constructor(data) {
     this.header = data.header
@@ -327,81 +382,22 @@ class Channel {
     this.logo = data.tvg.logo
     this.category = helper.filterGroup(data.group.title)
     this.url = data.url
-    this.name = this.parseName(data.name)
-    this.status = this.parseStatus(data.name)
+    this.name = helper.parseName(data.name)
+    this.status = helper.parseStatus(data.name)
     this.http = data.http
     this.tvg = data.tvg
     this.tvg.url = parent.header.attrs['x-tvg-url'] || ''
-    this.countries = this.parseCountries(data.tvg.country)
-    this.resolution = this.parseResolution(data.name)
-    this.language = this.parseLanguage(data.tvg.language)
+    this.countries = helper.parseCountries(data.tvg.country, this.source)
+    this.resolution = helper.parseResolution(data.name)
+    this.languages = helper.parseLanguages(data.tvg.language)
   }
 
-  get languageName() {
-    return this.language[0] ? this.language[0].name : null
+  get languageAttribute() {
+    return this.getLanguageAttribute()
   }
 
-  get countryName() {
-    return this.countries[0] ? this.countries[0].name : null
-  }
-
-  get countryCode() {
-    return this.countries[0] ? this.countries[0].code : null
-  }
-
-  parseCountries(value) {
-    if (!value) {
-      const country = helper.code2country(this.source)
-      return country ? [country] : []
-    }
-
-    return value
-      .split(';')
-      .filter(i => i)
-      .map(helper.code2country)
-  }
-
-  parseName(title) {
-    return title
-      .trim()
-      .split(' ')
-      .map(s => s.trim())
-      .filter(s => {
-        return !/\[|\]/i.test(s) && !/\((\d+)P\)/i.test(s)
-      })
-      .join(' ')
-  }
-
-  parseStatus(title) {
-    const regex = /\[(.*)\]/i
-    const match = title.match(regex)
-
-    return match ? match[1] : null
-  }
-
-  parseResolution(title) {
-    const regex = /\((\d+)P\)/i
-    const match = title.match(regex)
-
-    return {
-      width: null,
-      height: match ? parseInt(match[1]) : null
-    }
-  }
-
-  parseLanguage(lang) {
-    return lang
-      .split(';')
-      .map(name => {
-        const code = name ? helper.getISO6391Code(name) : null
-        if (!code) return null
-
-        return {
-          code,
-          name
-        }
-      })
-      .filter(l => l)
+  get countryAttribute() {
+    return this.getCountryAttribute()
   }
 
   getCountryAttribute() {
@@ -409,7 +405,7 @@ class Channel {
   }
 
   getLanguageAttribute() {
-    return this.language.map(l => l.name).join(';')
+    return this.languages.map(l => l.name).join(';')
   }
 
   toString() {
@@ -457,7 +453,7 @@ class Channel {
       logo: this.logo || null,
       url: this.url,
       category: this.category || null,
-      language: this.language,
+      languages: this.languages,
       countries: this.countries,
       tvg: {
         id: this.tvg.id || null,
