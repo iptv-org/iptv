@@ -172,8 +172,8 @@ async function updateFromEPG(playlist) {
         if (!channel.tvg.name && epgItem.name.length) {
           channel.tvg.name = epgItem.name[0].value
         }
-        if (!channel.language.length && epgItem.name.length && epgItem.name[0].lang) {
-          channel.setLanguage(epgItem.name[0].lang)
+        if (!channel.languages.length && epgItem.name.length && epgItem.name[0].lang) {
+          channel.languages = helper.parseLanguages(epgItem.name[0].lang)
         }
         if (!channel.logo && epgItem.icon.length) {
           channel.logo = epgItem.icon[0]
