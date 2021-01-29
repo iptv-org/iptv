@@ -1,4 +1,5 @@
-const helper = require('./helper')
+const utils = require('./utils')
+const parser = require('./parser')
 
 const ROOT_DIR = './.gh-pages'
 
@@ -10,56 +11,38 @@ let list = {
 }
 
 function main() {
-  console.log(`Parsing index...`)
   parseIndex()
-  console.log('Creating root directory...')
   createRootDirectory()
-  console.log('Creating .nojekyll...')
   createNoJekyllFile()
-  console.log('Generating index.m3u...')
   generateIndex()
-  console.log('Generating index.sfw.m3u...')
   generateSFWIndex()
-  console.log('Generating channels.json...')
-  generateChannels()
-  console.log('Generating index.country.m3u...')
+  generateChannelsJson()
   generateCountryIndex()
-  console.log('Generating index.language.m3u...')
   generateLanguageIndex()
-  console.log('Generating index.category.m3u...')
   generateCategoryIndex()
-  console.log('Generating /countries...')
   generateCountries()
-  console.log('Generating /categories...')
-  generateCategories()
-  console.log('Generating /languages...')
   generateLanguages()
-  console.log('Done.\n')
-
-  console.log(
-    `Countries: ${Object.values(list.countries).length}. Languages: ${
-      Object.values(list.languages).length
-    }. Categories: ${Object.values(list.categories).length}. Channels: ${list.all.length}.`
-  )
+  generateCategories()
+  finish()
 }
 
 function createRootDirectory() {
-  helper.createDir(ROOT_DIR)
+  console.log('Creating root directory...')
+  utils.createDir(ROOT_DIR)
 }
 
 function createNoJekyllFile() {
-  helper.createFile(`${ROOT_DIR}/.nojekyll`)
+  console.log('Creating .nojekyll...')
+  utils.createFile(`${ROOT_DIR}/.nojekyll`)
 }
 
 function parseIndex() {
-  const root = helper.parsePlaylist('index.m3u')
+  console.log(`Parsing index...`)
+  const items = parser.parseIndex()
 
-  for (let rootItem of root.items) {
-    const playlist = helper.parsePlaylist(rootItem.url)
-    for (let item of playlist.items) {
-      const channel = helper.createChannel(item, playlist)
-      if (!channel.url) continue
-
+  for (let item of items) {
+    const playlist = parser.parsePlaylist(item.url)
+    for (let channel of playlist.channels) {
       // all
       list.all.push(channel)
 
@@ -108,116 +91,135 @@ function parseIndex() {
 }
 
 function generateIndex() {
+  console.log('Generating index.m3u...')
   const filename = `${ROOT_DIR}/index.m3u`
-  helper.createFile(filename, '#EXTM3U\n')
+  utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = helper.sortBy(list.all, ['name', 'url'])
+  const channels = utils.sortBy(list.all, ['name', 'url'])
   for (let channel of channels) {
-    helper.appendToFile(filename, channel.toString())
+    utils.appendToFile(filename, channel.toString())
   }
 }
 
 function generateSFWIndex() {
+  console.log('Generating index.sfw.m3u...')
   const filename = `${ROOT_DIR}/index.sfw.m3u`
-  helper.createFile(filename, '#EXTM3U\n')
+  utils.createFile(filename, '#EXTM3U\n')
 
-  const sorted = helper.sortBy(list.all, ['name', 'url'])
-  const channels = helper.filterNSFW(sorted)
+  const sorted = utils.sortBy(list.all, ['name', 'url'])
+  const channels = utils.filterNSFW(sorted)
   for (let channel of channels) {
-    helper.appendToFile(filename, channel.toString())
+    utils.appendToFile(filename, channel.toString())
   }
 }
 
-function generateChannels() {
+function generateChannelsJson() {
+  console.log('Generating channels.json...')
   const filename = `${ROOT_DIR}/channels.json`
-  const sorted = helper.sortBy(list.all, ['name', 'url'])
+  const sorted = utils.sortBy(list.all, ['name', 'url'])
   const channels = sorted.map(c => c.toJSON())
-  helper.createFile(filename, JSON.stringify(channels))
+  utils.createFile(filename, JSON.stringify(channels))
 }
 
 function generateCountryIndex() {
+  console.log('Generating index.country.m3u...')
   const filename = `${ROOT_DIR}/index.country.m3u`
-  helper.createFile(filename, '#EXTM3U\n')
+  utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = helper.sortBy(list.all, ['countryAttribute', 'name', 'url'])
+  const channels = utils.sortBy(list.all, ['tvgCountry', 'name', 'url'])
   for (let channel of channels) {
     const category = channel.category
-    channel.category = channel.countries.map(c => c.name).join(';')
-    helper.appendToFile(filename, channel.toString())
+    channel.category = channel.tvgCountry
+    utils.appendToFile(filename, channel.toString())
     channel.category = category
   }
 }
 
 function generateLanguageIndex() {
+  console.log('Generating index.language.m3u...')
   const filename = `${ROOT_DIR}/index.language.m3u`
-  helper.createFile(filename, '#EXTM3U\n')
+  utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = helper.sortBy(list.all, ['languageAttribute', 'name', 'url'])
+  const channels = utils.sortBy(list.all, ['tvgLanguage', 'name', 'url'])
   for (let channel of channels) {
     const category = channel.category
-    channel.category = channel.getLanguageAttribute()
-    helper.appendToFile(filename, channel.toString())
+    channel.category = channel.tvgLanguage
+    utils.appendToFile(filename, channel.toString())
     channel.category = category
   }
 }
 
 function generateCategoryIndex() {
+  console.log('Generating index.category.m3u...')
   const filename = `${ROOT_DIR}/index.category.m3u`
-  helper.createFile(filename, '#EXTM3U\n')
+  utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = helper.sortBy(list.all, ['category', 'name', 'url'])
+  const channels = utils.sortBy(list.all, ['category', 'name', 'url'])
   for (let channel of channels) {
-    helper.appendToFile(filename, channel.toString())
+    utils.appendToFile(filename, channel.toString())
   }
 }
 
 function generateCountries() {
+  console.log('Generating /countries...')
   const outputDir = `${ROOT_DIR}/countries`
-  helper.createDir(outputDir)
+  utils.createDir(outputDir)
 
   for (let cid in list.countries) {
     let country = list.countries[cid]
     const filename = `${outputDir}/${cid}.m3u`
-    helper.createFile(filename, '#EXTM3U\n')
+    utils.createFile(filename, '#EXTM3U\n')
 
-    const channels = helper.sortBy(Object.values(country), ['name', 'url'])
+    const channels = utils.sortBy(Object.values(country), ['name', 'url'])
     for (let channel of channels) {
-      helper.appendToFile(filename, channel.toString())
+      utils.appendToFile(filename, channel.toString())
     }
   }
 }
 
 function generateLanguages() {
+  console.log('Generating /languages...')
   const outputDir = `${ROOT_DIR}/languages`
-  helper.createDir(outputDir)
+  utils.createDir(outputDir)
 
   for (let lid in list.languages) {
     let language = list.languages[lid]
     const filename = `${outputDir}/${lid}.m3u`
-    helper.createFile(filename, '#EXTM3U\n')
+    utils.createFile(filename, '#EXTM3U\n')
 
-    const channels = helper.sortBy(Object.values(language), ['name', 'url'])
+    const channels = utils.sortBy(Object.values(language), ['name', 'url'])
     for (let channel of channels) {
-      helper.appendToFile(filename, channel.toString())
+      utils.appendToFile(filename, channel.toString())
     }
   }
 }
 
 function generateCategories() {
+  console.log('Generating /categories...')
   const outputDir = `${ROOT_DIR}/categories`
-  helper.createDir(outputDir)
+  utils.createDir(outputDir)
 
-  for (let cid in helper.supportedCategories) {
+  for (let cid in utils.supportedCategories) {
     let category = list.categories[cid]
     const filename = `${outputDir}/${cid}.m3u`
-    helper.createFile(filename, '#EXTM3U\n')
+    utils.createFile(filename, '#EXTM3U\n')
 
     if (!category) continue
-    const channels = helper.sortBy(Object.values(category), ['name', 'url'])
+    const channels = utils.sortBy(Object.values(category), ['name', 'url'])
     for (let channel of channels) {
-      helper.appendToFile(filename, channel.toString())
+      utils.appendToFile(filename, channel.toString())
     }
   }
+}
+
+function finish() {
+  console.log('Done.\n')
+
+  console.log(
+    `Countries: ${Object.values(list.countries).length}. Languages: ${
+      Object.values(list.languages).length
+    }. Categories: ${Object.values(list.categories).length}. Channels: ${list.all.length}.`
+  )
 }
 
 main()
