@@ -1,10 +1,16 @@
 #EXTM3U x-tvg-url="https://www.tdtchannels.com/epg/TV.xml"
+#EXTINF:-1 tvg-id="" tvg-name="+24" tvg-language="Spanish;English" tvg-logo="https://graph.facebook.com/24htve/picture?width=320&height=320" group-title="",+24
+http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/irtve01_lv3_aosv4_gl0/irtve01_lv3_aosv4_gl0.isml/irtve01_lv3_aosv4_gl0.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="+24" tvg-language="Spanish" tvg-logo="https://graph.facebook.com/24htve/picture?width=320&height=320" group-title="",+24
+http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/irtve03_lv3_aosv4_gl0/irtve03_lv3_aosv4_gl0.isml/master.m3u8
 #EXTINF:-1 tvg-id="24Horas.TV" tvg-name="" tvg-language="Spanish" tvg-logo="https://i.imgur.com/SvUWRQm.png" group-title="News",24 Horas (576p)
 https://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="24h Catalunya" tvg-language="Catalan" tvg-logo="https://graph.facebook.com/24htve/picture?width=320&height=320" group-title="",24h Catalunya (576p)
 https://hlsliveamdgl8-lh.akamaihd.net/i/hlslive_1@156275/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Catalan" tvg-logo="https://i.imgur.com/CnIVW9o.jpg" group-title="News",324 (360p)
 https://directes-tv-int.ccma.cat/int/ngrp:324_web/chunklist.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Spanish" tvg-logo="https://graph.facebook.com/Canal33/picture?width=320&height=320" group-title="",33
+https://directes-tv-int.ccma.cat/int/ngrp:c33_web/playlist_DVR.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Spanish" tvg-logo="https://i.imgur.com/M0JqHa9.png" group-title="Local",7 Murcia (360p)
 https://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Spanish" tvg-logo="https://i.imgur.com/pzJAYan.png" group-title="",Alcarria TV
@@ -77,6 +83,8 @@ https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
 https://5940924978228.streamlock.net/8009/8009/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Spanish" tvg-logo="https://i.imgur.com/gh5VQtG.jpg" group-title="",Radio Onda Madrid
 http://telemadridhls-live.hls.adaptive.level3.net/telemadrid/tvradio/bitrate_2.m3u8
+#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Spanish" tvg-logo="" group-title="Sport",Real Madrid
+http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-b.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Spanish" tvg-logo="" group-title="Sport",Real Madrid (404p)
 https://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Spanish" tvg-logo="https://i.imgur.com/RPXusvS.png" group-title="",Sophia TV (720p)
@@ -121,11 +129,3 @@ https://www.urbanrevolution.es:444/live/5e6d8470a3832/index.m3u8
 https://5940924978228.streamlock.net/j_Directo1/j_Directo1.smil/.m3u8
 #EXTINF:-1 tvg-id="APUNT.TV" tvg-name="" tvg-language="Catalan" tvg-logo="https://graph.facebook.com/apuntmedia/picture?width=200&height=200" group-title="General",À Punt (720p)
 https://bcovlive-a.akamaihd.net/1e7e91116b104391a4f22e13a694d94f/eu-central-1/6057955885001/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="+24" tvg-language="Spanish;English" tvg-logo="https://graph.facebook.com/24htve/picture?width=320&height=320" group-title="",+24
-http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/irtve01_lv3_aosv4_gl0/irtve01_lv3_aosv4_gl0.isml/irtve01_lv3_aosv4_gl0.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="+24" tvg-language="Spanish" tvg-logo="https://graph.facebook.com/24htve/picture?width=320&height=320" group-title="",+24
-http://rtvev4-live.hss.adaptive.level3.net/egress/ahandler/rtvegl0/irtve03_lv3_aosv4_gl0/irtve03_lv3_aosv4_gl0.isml/master.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Spanish" tvg-logo="https://graph.facebook.com/Canal33/picture?width=320&height=320" group-title="",33
-https://directes-tv-int.ccma.cat/int/ngrp:c33_web/playlist_DVR.m3u8
-#EXTINF:-1 tvg-id="" tvg-name="" tvg-language="Spanish" tvg-logo="" group-title="Sport",Real Madrid
-http://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/index_1000_av-b.m3u8
