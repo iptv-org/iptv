@@ -40,6 +40,11 @@ function parseIndex() {
   console.log(`Parsing index...`)
   const items = parser.parseIndex()
 
+  for (const category of utils.supportedCategories) {
+    list.categories[category.id] = []
+  }
+  list.categories['other'] = []
+
   for (let item of items) {
     const playlist = parser.parsePlaylist(item.url)
     for (let channel of playlist.channels) {
@@ -81,11 +86,12 @@ function parseIndex() {
       }
 
       // category
-      const categoryCode = channel.category ? channel.category.toLowerCase() : 'other'
-      if (!list.categories[categoryCode]) {
-        list.categories[categoryCode] = []
+      const categoryId = channel.category.toLowerCase()
+      if (!list.categories[categoryId]) {
+        list.categories['other'].push(channel)
+      } else {
+        list.categories[categoryId].push(channel)
       }
-      list.categories[categoryCode].push(channel)
     }
   }
 }
@@ -165,13 +171,13 @@ function generateCountries() {
   const outputDir = `${ROOT_DIR}/countries`
   utils.createDir(outputDir)
 
-  for (let cid in list.countries) {
-    let country = list.countries[cid]
-    const filename = `${outputDir}/${cid}.m3u`
+  for (const countryId in list.countries) {
+    const filename = `${outputDir}/${countryId}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
 
-    const channels = utils.sortBy(Object.values(country), ['name', 'url'])
-    for (let channel of channels) {
+    let channels = Object.values(list.countries[countryId])
+    channels = utils.sortBy(channels, ['name', 'url'])
+    for (const channel of channels) {
       utils.appendToFile(filename, channel.toString())
     }
   }
@@ -182,13 +188,13 @@ function generateLanguages() {
   const outputDir = `${ROOT_DIR}/languages`
   utils.createDir(outputDir)
 
-  for (let lid in list.languages) {
-    let language = list.languages[lid]
-    const filename = `${outputDir}/${lid}.m3u`
+  for (const languageId in list.languages) {
+    const filename = `${outputDir}/${languageId}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
 
-    const channels = utils.sortBy(Object.values(language), ['name', 'url'])
-    for (let channel of channels) {
+    let channels = Object.values(list.languages[languageId])
+    channels = utils.sortBy(channels, ['name', 'url'])
+    for (const channel of channels) {
       utils.appendToFile(filename, channel.toString())
     }
   }
@@ -199,14 +205,13 @@ function generateCategories() {
   const outputDir = `${ROOT_DIR}/categories`
   utils.createDir(outputDir)
 
-  for (let cid in utils.supportedCategories) {
-    let category = list.categories[cid]
-    const filename = `${outputDir}/${cid}.m3u`
+  for (const category of utils.supportedCategories) {
+    const filename = `${outputDir}/${category.id}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
 
-    if (!category) continue
-    const channels = utils.sortBy(Object.values(category), ['name', 'url'])
-    for (let channel of channels) {
+    let channels = Object.values(list.categories[category.id])
+    channels = utils.sortBy(channels, ['name', 'url'])
+    for (const channel of channels) {
       utils.appendToFile(filename, channel.toString())
     }
   }
