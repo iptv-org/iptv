@@ -6,6 +6,10 @@ const urlParser = require('url')
 const escapeStringRegexp = require('escape-string-regexp')
 const markdownInclude = require('markdown-include')
 const iso6393 = require('iso-639-3')
+const intlDisplayNames = new Intl.DisplayNames(['en'], {
+  style: 'narrow',
+  type: 'region'
+})
 
 const utils = {}
 
@@ -180,15 +184,27 @@ utils.code2name = function (code) {
       return 'United States'
   }
 
-  const intlDisplayNames = new Intl.DisplayNames(['en'], {
-    style: 'narrow',
-    type: 'region'
-  })
-
   try {
     return intlDisplayNames.of(code.toUpperCase())
   } catch (e) {
     return null
+  }
+}
+
+utils.codeIsValid = function (code) {
+  switch (code.toLowerCase()) {
+    case 'int':
+      return true
+    case 'us':
+      return true
+  }
+
+  try {
+    intlDisplayNames.of(code.toUpperCase())
+
+    return true
+  } catch (e) {
+    return false
   }
 }
 
