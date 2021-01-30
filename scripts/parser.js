@@ -87,7 +87,7 @@ class Playlist {
       .filter(channel => channel.url)
   }
 
-  getHeader() {
+  toString(short = false) {
     let parts = ['#EXTM3U']
     for (let key in this.header.attrs) {
       let value = this.header.attrs[key]
@@ -96,7 +96,12 @@ class Playlist {
       }
     }
 
-    return `${parts.join(' ')}\n`
+    let output = `${parts.join(' ')}\n`
+    for (let channel of this.channels) {
+      output += channel.toString(short)
+    }
+
+    return output
   }
 }
 
