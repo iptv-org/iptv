@@ -7,9 +7,157 @@ const escapeStringRegexp = require('escape-string-regexp')
 const markdownInclude = require('markdown-include')
 const iso6393 = require('iso-639-3')
 
-let helper = {}
+const utils = {}
 
-helper.code2flag = function (code) {
+utils.supportedCategories = [
+  {
+    name: 'Auto',
+    id: 'auto',
+    nsfw: false
+  },
+  {
+    name: 'Business',
+    id: 'business',
+    nsfw: false
+  },
+  {
+    name: 'Classic',
+    id: 'classic',
+    nsfw: false
+  },
+  {
+    name: 'Comedy',
+    id: 'comedy',
+    nsfw: false
+  },
+  {
+    name: 'Documentary',
+    id: 'documentary',
+    nsfw: false
+  },
+  {
+    name: 'Education',
+    id: 'education',
+    nsfw: false
+  },
+  {
+    name: 'Entertainment',
+    id: 'entertainment',
+    nsfw: false
+  },
+  {
+    name: 'Family',
+    id: 'family',
+    nsfw: false
+  },
+  {
+    name: 'Fashion',
+    id: 'fashion',
+    nsfw: false
+  },
+  {
+    name: 'Food',
+    id: 'food',
+    nsfw: false
+  },
+  {
+    name: 'General',
+    id: 'general',
+    nsfw: false
+  },
+  {
+    name: 'Health',
+    id: 'health',
+    nsfw: false
+  },
+  {
+    name: 'History',
+    id: 'history',
+    nsfw: false
+  },
+  {
+    name: 'Hobby',
+    id: 'hobby',
+    nsfw: false
+  },
+  {
+    name: 'Kids',
+    id: 'kids',
+    nsfw: false
+  },
+  {
+    name: 'Legislative',
+    id: 'legislative',
+    nsfw: false
+  },
+  {
+    name: 'Lifestyle',
+    id: 'lifestyle',
+    nsfw: false
+  },
+  {
+    name: 'Local',
+    id: 'local',
+    nsfw: false
+  },
+  {
+    name: 'Movies',
+    id: 'movies',
+    nsfw: false
+  },
+  {
+    name: 'Music',
+    id: 'music',
+    nsfw: false
+  },
+  {
+    name: 'News',
+    id: 'news',
+    nsfw: false
+  },
+  {
+    name: 'Quiz',
+    id: 'quiz',
+    nsfw: false
+  },
+  {
+    name: 'Religious',
+    id: 'religious',
+    nsfw: false
+  },
+  {
+    name: 'Sci-Fi',
+    id: 'sci-fi',
+    nsfw: false
+  },
+  {
+    name: 'Shop',
+    id: 'shop',
+    nsfw: false
+  },
+  {
+    name: 'Sport',
+    id: 'sport',
+    nsfw: false
+  },
+  {
+    name: 'Travel',
+    id: 'travel',
+    nsfw: false
+  },
+  {
+    name: 'Weather',
+    id: 'weather',
+    nsfw: false
+  },
+  {
+    name: 'XXX',
+    id: 'xxx',
+    nsfw: true
+  }
+]
+
+utils.code2flag = function (code) {
   switch (code) {
     case 'uk':
       return '🇬🇧'
@@ -24,9 +172,16 @@ helper.code2flag = function (code) {
   }
 }
 
-helper.code2name = function (code) {
+utils.code2name = function (code) {
+  switch (code.toLowerCase()) {
+    case 'int':
+      return 'International'
+    case 'us':
+      return 'United States'
+  }
+
   const intlDisplayNames = new Intl.DisplayNames(['en'], {
-    style: 'long',
+    style: 'narrow',
     type: 'region'
   })
 
@@ -37,17 +192,33 @@ helper.code2name = function (code) {
   }
 }
 
-helper.language2code = function (name) {
+utils.language2code = function (name) {
   const lang = iso6393.find(l => l.name === name)
 
   return lang && lang.iso6393 ? lang.iso6393 : null
 }
 
-helper.sortBy = function (arr, fields) {
+utils.sortBy = function (arr, fields) {
   return arr.sort((a, b) => {
     for (let field of fields) {
       let propA = a[field] ? a[field].toLowerCase() : ''
       let propB = b[field] ? b[field].toLowerCase() : ''
+
+      if (propA === 'undefined') {
+        return 1
+      }
+
+      if (propB === 'undefined') {
+        return -1
+      }
+
+      if (propA === 'other') {
+        return 1
+      }
+
+      if (propB === 'other') {
+        return -1
+      }
 
       if (propA < propB) {
         return -1
@@ -60,7 +231,7 @@ helper.sortBy = function (arr, fields) {
   })
 }
 
-helper.loadEPG = function (url) {
+utils.loadEPG = function (url) {
   return new Promise((resolve, reject) => {
     var buffer = []
     axios({
@@ -96,11 +267,11 @@ helper.loadEPG = function (url) {
   })
 }
 
-helper.getBasename = function (filename) {
+utils.getBasename = function (filename) {
   return path.basename(filename, path.extname(filename))
 }
 
-helper.filterPlaylists = function (arr, include = '', exclude = '') {
+utils.filterPlaylists = function (arr, include = '', exclude = '') {
   if (include) {
     const included = include.split(',').map(filename => `channels/${filename}.m3u`)
 
@@ -116,7 +287,7 @@ helper.filterPlaylists = function (arr, include = '', exclude = '') {
   return arr
 }
 
-helper.generateTable = function (data, options) {
+utils.generateTable = function (data, options) {
   let output = '<table>\n'
 
   output += '\t<thead>\n\t\t<tr>'
@@ -145,77 +316,48 @@ helper.generateTable = function (data, options) {
   return output
 }
 
-helper.createDir = function (dir) {
+utils.createDir = function (dir) {
   if (!fs.existsSync(dir)) {
     fs.mkdirSync(dir)
   }
 }
 
-helper.readFile = function (filename) {
+utils.readFile = function (filename) {
   return fs.readFileSync(path.resolve(__dirname) + `/../${filename}`, { encoding: 'utf8' })
 }
 
-helper.appendToFile = function (filename, data) {
+utils.appendToFile = function (filename, data) {
   fs.appendFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
-helper.compileMarkdown = function (filepath) {
+utils.compileMarkdown = function (filepath) {
   return markdownInclude.compileFiles(path.resolve(__dirname, filepath))
 }
 
-helper.escapeStringRegexp = function (scring) {
+utils.escapeStringRegexp = function (scring) {
   return escapeStringRegexp(string)
 }
 
-helper.createFile = function (filename, data = '') {
+utils.createFile = function (filename, data = '') {
   fs.writeFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
-helper.writeToLog = function (country, msg, url) {
+utils.writeToLog = function (country, msg, url) {
   var now = new Date()
   var line = `${country}: ${msg} '${url}'`
   this.appendToFile('error.log', now.toISOString() + ' ' + line + '\n')
 }
 
-helper.filterNSFW = function (arr) {
-  const sfwCategories = [
-    'Auto',
-    'Business',
-    'Classic',
-    'Comedy',
-    'Documentary',
-    'Education',
-    'Entertainment',
-    'Family',
-    'Fashion',
-    'Food',
-    'General',
-    'Health',
-    'History',
-    'Hobby',
-    'Kids',
-    'Legislative',
-    'Lifestyle',
-    'Local',
-    'Movies',
-    'Music',
-    'News',
-    'Quiz',
-    'Religious',
-    'Sci-Fi',
-    'Shop',
-    'Sport',
-    'Travel',
-    'Weather'
-  ]
+utils.filterNSFW = function (arr) {
+  const sfwCategories = utils.supportedCategories.filter(c => !c.nsfw).map(c => c.name)
 
   return arr.filter(i => sfwCategories.includes(i.category))
 }
 
-helper.sleep = function (ms) {
+utils.sleep = function (ms) {
   return function (x) {
     return new Promise(resolve => setTimeout(() => resolve(x), ms))
   }
 }
 
-module.exports = helper
+module.exports = utils
