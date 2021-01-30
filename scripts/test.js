@@ -1,5 +1,6 @@
 const { program } = require('commander')
-const helper = require('./helper')
+const utils = require('./utils')
+const parser = require('./parser')
 const axios = require('axios')
 const https = require('https')
 const ProgressBar = require('progress')
@@ -30,28 +31,27 @@ let stats = {
 }
 
 async function test() {
-  const playlist = helper.parsePlaylist('index.m3u')
+  let items = parser.parseIndex()
+  items = utils.filterPlaylists(items, config.country, config.exclude)
 
-  const countries = helper.filterPlaylists(playlist.items, config.country, config.exclude)
-
-  for (let country of countries) {
-    const playlist = helper.parsePlaylist(country.url)
-    const bar = new ProgressBar(`Processing '${country.url}'...:current/:total\n`, {
-      total: playlist.items.length
+  for (const item of items) {
+    const playlist = parser.parsePlaylist(item.url)
+    const bar = new ProgressBar(`Processing '${item.url}'...:current/:total`, {
+      total: playlist.channels.length
     })
 
     stats.playlists++
 
-    for (let channel of playlist.items) {
+    for (let channel of playlist.channels) {
       bar.tick()
       stats.channels++
       await instance
         .get(channel.url)
-        .then(helper.sleep(config.delay))
+        .then(utils.sleep(config.delay))
         .catch(error => {
           if (error.response) {
             stats.failures++
-            helper.writeToLog(country.url, error.message, channel.url)
+            utils.writeToLog(country.url, error.message, channel.url)
             console.log(`Error: ${error.message} '${channel.url}'`)
           }
         })
