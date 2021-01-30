@@ -38,7 +38,7 @@ async function main() {
       .then(removeDuplicates)
       .then(detectResolution)
       .then(updateFromEPG)
-      .then(updatePlaylist)
+      .then(savePlaylist)
       .then(done)
   }
 
@@ -46,7 +46,7 @@ async function main() {
     await loadPlaylist('channels/unsorted.m3u')
       .then(removeUnsortedDuplicates)
       .then(sortChannels)
-      .then(updatePlaylist)
+      .then(savePlaylist)
       .then(done)
   }
 
@@ -191,12 +191,9 @@ async function removeUnsortedDuplicates(playlist) {
   return playlist
 }
 
-async function updatePlaylist(playlist) {
+async function savePlaylist(playlist) {
   const original = utils.readFile(playlist.url)
-  let output = playlist.getHeader()
-  for (let channel of playlist.channels) {
-    output += channel.toString(true)
-  }
+  const output = playlist.toString(true)
 
   if (original === output) {
     console.info(`No changes have been made.`)
