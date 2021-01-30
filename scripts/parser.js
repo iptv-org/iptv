@@ -21,7 +21,7 @@ parser.parsePlaylist = function (filename) {
 parser.parseCountries = function (string) {
   return string
     .split(';')
-    .filter(i => i)
+    .filter(code => code && utils.codeIsValid(code))
     .map(code => ({ code: code.toLowerCase(), name: utils.code2name(code) }))
 }
 
