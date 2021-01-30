@@ -1,38 +1,6 @@
 const playlistParser = require('iptv-playlist-parser')
 const epgParser = require('epg-parser')
 const utils = require('./utils')
-const supportedCategories = {
-  auto: 'Auto',
-  business: 'Business',
-  classic: 'Classic',
-  comedy: 'Comedy',
-  documentary: 'Documentary',
-  education: 'Education',
-  entertainment: 'Entertainment',
-  family: 'Family',
-  fashion: 'Fashion',
-  food: 'Food',
-  general: 'General',
-  health: 'Health',
-  history: 'History',
-  hobby: 'Hobby',
-  kids: 'Kids',
-  legislative: 'Legislative',
-  lifestyle: 'Lifestyle',
-  local: 'Local',
-  movies: 'Movies',
-  music: 'Music',
-  news: 'News',
-  quiz: 'Quiz',
-  religious: 'Religious',
-  'sci-fi': 'Sci-Fi',
-  shop: 'Shop',
-  sport: 'Sport',
-  travel: 'Travel',
-  weather: 'Weather',
-  xxx: 'XXX',
-  other: 'Other'
-}
 
 const parser = {}
 
@@ -54,16 +22,7 @@ parser.parseCountries = function (string) {
   return string
     .split(';')
     .filter(i => i)
-    .map(code => {
-      code = code ? code.toLowerCase() : ''
-      if (code === 'int') {
-        return { code: 'int', name: 'International' }
-      } else if (code === 'unsorted') {
-        return null
-      }
-
-      return { code, name: utils.code2name(code) }
-    })
+    .map(code => ({ code: code.toLowerCase(), name: utils.code2name(code) }))
 }
 
 parser.parseLanguages = function (string) {
@@ -82,7 +41,9 @@ parser.parseLanguages = function (string) {
 }
 
 parser.parseCategory = function (string) {
-  return supportedCategories[string.toLowerCase()] || ''
+  const category = utils.supportedCategories.find(c => c.id === string.toLowerCase())
+
+  return category ? category.name : ''
 }
 
 parser.parseTitle = function (title) {
