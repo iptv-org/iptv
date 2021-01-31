@@ -1,6 +1,7 @@
 const playlistParser = require('iptv-playlist-parser')
 const epgParser = require('epg-parser')
 const utils = require('./utils')
+const categories = require('./categories')
 
 const parser = {}
 
@@ -16,54 +17,6 @@ parser.parsePlaylist = function (filename) {
   const result = playlistParser.parse(content)
 
   return new Playlist({ header: result.header, items: result.items, url: filename })
-}
-
-parser.parseCountries = function (string) {
-  return string
-    .split(';')
-    .filter(code => code && utils.codeIsValid(code))
-    .map(code => ({ code: code.toLowerCase(), name: utils.code2name(code) }))
-}
-
-parser.parseLanguages = function (string) {
-  return string
-    .split(';')
-    .map(name => {
-      const code = name ? utils.language2code(name) : null
-      if (!code) return null
-
-      return {
-        code,
-        name
-      }
-    })
-    .filter(l => l)
-}
-
-parser.parseCategory = function (string) {
-  const category = utils.supportedCategories.find(c => c.id === string.toLowerCase())
-
-  return category ? category.name : ''
-}
-
-parser.parseTitle = function (title) {
-  const channelName = title
-    .trim()
-    .split(' ')
-    .map(s => s.trim())
-    .filter(s => {
-      return !/\[|\]/i.test(s) && !/\((\d+)P\)/i.test(s)
-    })
-    .join(' ')
-
-  const streamStatusMatch = title.match(/\[(.*)\]/i)
-  const streamStatus = streamStatusMatch ? streamStatusMatch[1] : null
-
-  const streamResolutionMatch = title.match(/\((\d+)P\)/i)
-  const streamResolutionHeight = streamResolutionMatch ? parseInt(streamResolutionMatch[1]) : null
-  const streamResolution = { width: null, height: streamResolutionHeight }
-
-  return { channelName, streamStatus, streamResolution }
 }
 
 parser.parseEPG = async function (url) {
@@ -113,13 +66,14 @@ class Channel {
       const filename = utils.getBasename(sourceUrl)
       const countryName = utils.code2name(filename)
       this.countries = countryName ? [{ code: filename.toLowerCase(), name: countryName }] : []
+      this.tvg.country = this.countries.map(c => c.code.toUpperCase()).join(';')
     }
 
     this.tvg.url = header.attrs['x-tvg-url'] || ''
   }
 
   parseData(data) {
-    const title = parser.parseTitle(data.name)
+    const title = this.parseTitle(data.name)
 
     this.tvg = data.tvg
     this.http = data.http
@@ -128,17 +82,85 @@ class Channel {
     this.name = title.channelName
     this.status = title.streamStatus
     this.resolution = title.streamResolution
-    this.countries = parser.parseCountries(data.tvg.country)
-    this.languages = parser.parseLanguages(data.tvg.language)
-    this.category = parser.parseCategory(data.group.title)
+    this.countries = this.parseCountries(data.tvg.country)
+    this.languages = this.parseLanguages(data.tvg.language)
+    this.category = this.parseCategory(data.group.title)
+  }
+
+  parseCountries(string) {
+    let arr = string
+      .split(';')
+      .reduce((acc, curr) => {
+        const codes = utils.region2codes(curr)
+        if (codes.length) {
+          for (let code of codes) {
+            if (!acc.includes(code)) {
+              acc.push(code)
+            }
+          }
+        } else {
+          acc.push(curr)
+        }
+
+        return acc
+      }, [])
+      .filter(code => code && utils.code2name(code))
+
+    return arr.map(code => {
+      return { code: code.toLowerCase(), name: utils.code2name(code) }
+    })
+  }
+
+  parseLanguages(string) {
+    return string
+      .split(';')
+      .map(name => {
+        const code = name ? utils.language2code(name) : null
+        if (!code) return null
+
+        return {
+          code,
+          name
+        }
+      })
+      .filter(l => l)
+  }
+
+  parseCategory(string) {
+    const category = categories.find(c => c.id === string.toLowerCase())
+
+    return category ? category.name : ''
+  }
+
+  parseTitle(title) {
+    const channelName = title
+      .trim()
+      .split(' ')
+      .map(s => s.trim())
+      .filter(s => {
+        return !/\[|\]/i.test(s) && !/\((\d+)P\)/i.test(s)
+      })
+      .join(' ')
+
+    const streamStatusMatch = title.match(/\[(.*)\]/i)
+    const streamStatus = streamStatusMatch ? streamStatusMatch[1] : null
+
+    const streamResolutionMatch = title.match(/\((\d+)P\)/i)
+    const streamResolutionHeight = streamResolutionMatch ? parseInt(streamResolutionMatch[1]) : null
+    const streamResolution = { width: null, height: streamResolutionHeight }
+
+    return { channelName, streamStatus, streamResolution }
   }
 
   get tvgCountry() {
-    return this.countries.map(c => c.code.toUpperCase()).join(';')
+    return this.tvg.country
+      .split(';')
+      .map(code => utils.code2name(code))
+      .join(';')
   }
 
   get tvgLanguage() {
-    return this.languages.map(l => l.name).join(';')
+    return this.tvg.language
   }
 
   get tvgUrl() {
@@ -146,7 +168,9 @@ class Channel {
   }
 
   toString(short = false) {
-    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${this.tvgLanguage}" tvg-logo="${this.logo}" tvg-country="${this.tvgCountry}"`
+    this.tvg.country = this.tvg.country.toUpperCase()
+
+    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}" tvg-country="${this.tvg.country}"`
 
     if (!short) {
       info += ` tvg-url="${this.tvgUrl}"`
