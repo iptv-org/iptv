@@ -1,10 +1,11 @@
 const utils = require('./utils')
 const parser = require('./parser')
+const categories = require('./categories')
 
 const list = {
-  countries: [],
-  languages: [],
-  categories: []
+  countries: {},
+  languages: {},
+  categories: {}
 }
 
 function main() {
@@ -20,11 +21,7 @@ function parseIndex() {
   console.log(`Parsing index...`)
   const items = parser.parseIndex()
 
-  const countries = {}
-  const languages = {}
-  const categories = {}
-
-  countries['undefined'] = {
+  list.countries['undefined'] = {
     country: 'Undefined',
     channels: 0,
     playlist: `<code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code>`,
@@ -32,20 +29,20 @@ function parseIndex() {
     name: 'Undefined'
   }
 
-  languages['undefined'] = {
+  list.languages['undefined'] = {
     language: 'Undefined',
     channels: 0,
     playlist: `<code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code>`
   }
 
-  for (const category of utils.supportedCategories) {
-    categories[category.id] = {
+  for (const category of categories) {
+    list.categories[category.id] = {
       category: category.name,
       channels: 0,
       playlist: `<code>https://iptv-org.github.io/iptv/categories/${category.id}.m3u</code>`
     }
   }
-  categories['other'] = {
+  list.categories['other'] = {
     category: 'Other',
     channels: 0,
     playlist: `<code>https://iptv-org.github.io/iptv/categories/other.m3u</code>`
@@ -56,14 +53,14 @@ function parseIndex() {
     for (let channel of playlist.channels) {
       // countries
       if (!channel.countries.length) {
-        countries['undefined'].channels++
+        list.countries['undefined'].channels++
       } else {
         for (let country of channel.countries) {
-          if (countries[country.code]) {
-            countries[country.code].channels++
+          if (list.countries[country.code]) {
+            list.countries[country.code].channels++
           } else {
             let flag = utils.code2flag(country.code)
-            countries[country.code] = {
+            list.countries[country.code] = {
               country: flag + '&nbsp;' + country.name,
               channels: 1,
               playlist: `<code>https://iptv-org.github.io/iptv/countries/${country.code}.m3u</code>`,
@@ -78,13 +75,13 @@ function parseIndex() {
 
       // languages
       if (!channel.languages.length) {
-        languages['undefined'].channels++
+        list.languages['undefined'].channels++
       } else {
         for (let language of channel.languages) {
-          if (languages[language.code]) {
-            languages[language.code].channels++
+          if (list.languages[language.code]) {
+            list.languages[language.code].channels++
           } else {
-            languages[language.code] = {
+            list.languages[language.code] = {
               language: language.name,
               channels: 1,
               playlist: `<code>https://iptv-org.github.io/iptv/languages/${language.code}.m3u</code>`
@@ -96,16 +93,16 @@ function parseIndex() {
       // categories
       const categoryId = channel.category.toLowerCase()
       if (!categoryId) {
-        categories['other'].channels++
-      } else if (categories[categoryId]) {
-        categories[categoryId].channels++
+        list.categories['other'].channels++
+      } else if (list.categories[categoryId]) {
+        list.categories[categoryId].channels++
       }
     }
   }
 
-  list.countries = Object.values(countries)
-  list.languages = Object.values(languages)
-  list.categories = Object.values(categories)
+  list.countries = Object.values(list.countries)
+  list.languages = Object.values(list.languages)
+  list.categories = Object.values(list.categories)
 }
 
 function generateCountriesTable() {
