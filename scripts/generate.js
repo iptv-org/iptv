@@ -1,5 +1,6 @@
 const utils = require('./utils')
 const parser = require('./parser')
+const categories = require('./categories')
 
 const ROOT_DIR = './.gh-pages'
 
@@ -40,7 +41,7 @@ function parseIndex() {
   console.log(`Parsing index...`)
   const items = parser.parseIndex()
 
-  for (const category of utils.supportedCategories) {
+  for (const category of categories) {
     list.categories[category.id] = []
   }
   list.categories['other'] = []
@@ -205,7 +206,7 @@ function generateCategories() {
   const outputDir = `${ROOT_DIR}/categories`
   utils.createDir(outputDir)
 
-  for (const category of utils.supportedCategories) {
+  for (const category of categories) {
     const filename = `${outputDir}/${category.id}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
 
