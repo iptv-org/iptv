@@ -109,11 +109,18 @@ The result should be something like this:
 
 If you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels. In some cases, it may also be necessary to manually specify the EPG source in the player itself. Note: Playlists are updated only once per 24 hours.
 
-## Make changes to README.md and CONTRIBUTING.md
+## Make changes to README.md
 
-- open `.readme/template.md` or `.github/CONTRIBUTING.md`
+- open `.readme/template.md`
 - make the necessary changes
-- commit the updated README
+- commit the updated file
+- send a pull request
+
+## Make changes to this Guide
+
+- open `.github/CONTRIBUTING.md`
+- make the necessary changes
+- commit the updated file
 - send a pull request
 
 ## Request Stream Removal
