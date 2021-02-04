@@ -123,7 +123,7 @@ If you did everything right, then by opening a playlist in a player that support
 - commit the updated file
 - send a pull request
 
-## Request Stream Removal
+## Request Channel Removal
 
 - publish your DMCA notice somewhere
 - create an issue using this [link](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=remove-channel.md&title=Remove%3A+xxx) and add a link to the DMCA notice in it
