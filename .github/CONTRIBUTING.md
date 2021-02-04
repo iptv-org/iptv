@@ -1,41 +1,25 @@
 # Contributing Guide
 
-**Do you have an idea how to improve the project?**
+## Feature Requests
+If you have an idea how to improve the project create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=discussion&template=feature-request.md&title=Propose%3A+xxx) with a detailed description of your idea.
 
-Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=discussion&template=feature-request.md&title=Propose%3A+xxx) with a detailed description of your idea.
+## Report a Broken Stream
+To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
 
-**Do you want to report a broadcast that is not working?**
+## Add or Replace a Stream
+If you would like to replace a broken stream or add a new one, please do the following:
+- Make sure that the link you want to add works by using a program like [VLC media player](https://www.videolan.org/vlc/index.html).
+- Check if the channel is working outside your country by using a vpn or use a service we highly reccomend like [streamtest.in](https://streamtest.in/).
+- Find out from which country the channel is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/) If you are unable to determine which country the channel belongs to, add the channel onto the `channels/unsorted.m3u` playlist.
+- Find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
+- Open the `/channels` folder and find the file that has the same code in its name and open it
+- If broken, find the broken link in this file and replace it with working one.
+- If new, at the very end of this file add a link to the channel with a description.
+- Commit all changes and send a pull request.
 
-Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
+## Request a Stream for a Channel
 
-**Do you want to replace the broken stream?**
-
-- make sure that the link you want to add works. It is recommended to use [VLC media player](https://www.videolan.org/vlc/index.html) for this.
-- check if the channel is working outside your country. You can use services like [streamtest.in](https://streamtest.in/) to do this.
-- find out from which country the channel is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
-- find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
-- open the `/channels` folder and find the file that has the same code in its name and open it
-- find the broken link in this file
-- replace it with working one
-- commit all changes
-- send a pull request
-
-**Do you want to report a channel that is not on the playlist?**
-
-Create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a request for only one channel, otherwise it will be closed immediately).
-
-**Would you like to add a new channel to playlist?**
-
-- make sure that the link you want to add works. It is recommended to use [VLC media player](https://www.videolan.org/vlc/index.html) for this
-- check if the channel is working outside your country. You can use services like [streamtest.in](https://streamtest.in/) to do this
-- find out the full name of the channel and from which country it is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
-- find the corresponding ISO_3166-2 code for the country. You can find a full list of codes here: https://en.wikipedia.org/wiki/ISO_3166-2
-- open the `channels/` folder and find a file with the same name as the country code
-- at the very end of this file add a link to the channel with a description
-- commit all changes
-- send a pull request
-
-In case you were unable to determine which country the channel belongs to, add the channel onto the `channels/unsorted.m3u` playlist.
+To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do. 
 
 **Do you want to sort the channels from "channels/unsorted.m3u"?**
 
@@ -47,7 +31,7 @@ In case you were unable to determine which country the channel belongs to, add t
 - commit all changes
 - send a pull request
 
-**Do you want to change the channel category?**
+## Add a Category to a Channel
 
 - find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this.
 - open the file
@@ -56,7 +40,7 @@ In case you were unable to determine which country the channel belongs to, add t
 - commit all changes
 - send a pull request
 
-**Do you want to change the channel language?**
+## Add a Language to a Channel
 
 - find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this.
 - open the file
@@ -72,7 +56,7 @@ If a channel is broadcasted in several languages at once, you can specify them a
 http://example.com/cctv.m3u8
 ```
 
-**Do you want to add a new EPG (Electronic Program Guide) source?**
+## Add an EPG (Electronic Program Guide) Source
 
 - check which country the EPG is intended for
 - check that this source is not already listed in the playlist. To do this, find the country in this [table](https://github.com/iptv-org/iptv#playlists-by-country) and see if there is any other link. If not, continue.
@@ -86,7 +70,7 @@ The result should be something like this:
 #EXTM3U x-tvg-url="https://example.com/epg.xml.gz"
 ```
 
-**Do you want to activate the program guide for the channel?**
+## Setting up A Channel to Use an EPG
 
 - find out which country the channel belongs to. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
 - find the corresponding [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) country code.
@@ -119,25 +103,16 @@ The result should be something like this:
 - commit all changes
 - send a pull request
 
-If you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels.
+If you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels. In some cases, it may also be necessary to manually specify the EPG source in the player itself. Note: Playlists are updated only once per 24 hours.
 
-In some cases, it may also be necessary to manually specify the EPG source in the player itself.
+## Make changes to README.md and CONTRIBUTING.md`
 
-**Did you find a mistake in README.md?**
-
-- open `.readme/template.md`
+- open `.readme/template.md` or `.github/CONTRIBUTING.md`
 - make the necessary changes
 - commit the updated README
 - send a pull request
 
-**Did you find a mistake in this guide?**
-
-- open `.github/CONTRIBUTING.md`
-- make the necessary changes
-- commit the updated guide
-- send a pull request
-
-**Would you like us to remove the link to the channel you own the rights to?**
+## Request Stream Removal
 
 - publish your DMCA notice somewhere
 - create an issue using this [link](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=remove-channel.md&title=Remove%3A+xxx) and add a link to the DMCA notice in it
