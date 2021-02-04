@@ -25,7 +25,7 @@ If you would like to replace a broken stream or add a new one, please do the fol
 
 To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do.
 
-**Do you want to sort the channels from "channels/unsorted.m3u"?**
+## Sort channels from `channels/unsorted.m3u`
 
 - find out the full name of the channel and from which country it is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
 - update the channel name if necessary
