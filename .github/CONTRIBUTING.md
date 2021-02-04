@@ -1,13 +1,17 @@
 # Contributing Guide
 
 ## Feature Requests
+
 If you have an idea how to improve the project create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=discussion&template=feature-request.md&title=Propose%3A+xxx) with a detailed description of your idea.
 
 ## Report a Broken Stream
+
 To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
 
 ## Add or Replace a Stream
+
 If you would like to replace a broken stream or add a new one, please do the following:
+
 - Make sure that the link you want to add works by using a program like [VLC media player](https://www.videolan.org/vlc/index.html).
 - Check if the channel is working outside your country by using a vpn or use a service we highly reccomend like [streamtest.in](https://streamtest.in/).
 - Find out from which country the channel is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/) If you are unable to determine which country the channel belongs to, add the channel onto the `channels/unsorted.m3u` playlist.
@@ -19,7 +23,7 @@ If you would like to replace a broken stream or add a new one, please do the fol
 
 ## Request a Stream for a Channel
 
-To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do. 
+To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do.
 
 **Do you want to sort the channels from "channels/unsorted.m3u"?**
 
@@ -105,7 +109,7 @@ The result should be something like this:
 
 If you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels. In some cases, it may also be necessary to manually specify the EPG source in the player itself. Note: Playlists are updated only once per 24 hours.
 
-## Make changes to README.md and CONTRIBUTING.md`
+## Make changes to README.md and CONTRIBUTING.md
 
 - open `.readme/template.md` or `.github/CONTRIBUTING.md`
 - make the necessary changes
