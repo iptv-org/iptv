@@ -11,6 +11,39 @@ const iso6393 = require('iso-639-3')
 
 let helper = {}
 
+helper.supportedCategories = {
+  auto: 'Auto',
+  business: 'Business',
+  classic: 'Classic',
+  comedy: 'Comedy',
+  documentary: 'Documentary',
+  education: 'Education',
+  entertainment: 'Entertainment',
+  family: 'Family',
+  fashion: 'Fashion',
+  food: 'Food',
+  general: 'General',
+  health: 'Health',
+  history: 'History',
+  hobby: 'Hobby',
+  kids: 'Kids',
+  legislative: 'Legislative',
+  lifestyle: 'Lifestyle',
+  local: 'Local',
+  movies: 'Movies',
+  music: 'Music',
+  news: 'News',
+  quiz: 'Quiz',
+  religious: 'Religious',
+  'sci-fi': 'Sci-Fi',
+  shop: 'Shop',
+  sport: 'Sport',
+  travel: 'Travel',
+  weather: 'Weather',
+  xxx: 'XXX',
+  other: 'Other'
+}
+
 helper.code2flag = function (code) {
   switch (code) {
     case 'uk':
@@ -205,9 +238,11 @@ helper.filterPlaylists = function (arr, include = '', exclude = '') {
 }
 
 helper.filterGroup = function (groupTitle) {
-  if (!groupTitle) return ''
+  return this.supportedCategories[groupTitle.toLowerCase()] || ''
+}
 
-  const supportedCategories = [
+helper.filterNSFW = function (arr) {
+  const sfwCategories = [
     'Auto',
     'Business',
     'Classic',
@@ -235,18 +270,16 @@ helper.filterGroup = function (groupTitle) {
     'Shop',
     'Sport',
     'Travel',
-    'Weather',
-    'XXX'
+    'Weather'
   ]
-  const groupIndex = supportedCategories.map(g => g.toLowerCase()).indexOf(groupTitle.toLowerCase())
 
-  if (groupIndex === -1) {
-    groupTitle = ''
-  } else {
-    groupTitle = supportedCategories[groupIndex]
+  return arr.filter(i => sfwCategories.includes(i.category))
+}
+
+helper.sleep = function (ms) {
+  return function (x) {
+    return new Promise(resolve => setTimeout(() => resolve(x), ms))
   }
-
-  return groupTitle
 }
 
 class Playlist {
