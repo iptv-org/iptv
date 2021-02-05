@@ -18,6 +18,8 @@ function main() {
   createNoJekyllFile()
   console.log('Generating index.m3u...')
   generateIndex()
+  console.log('Generating index.sfw.m3u...')
+  generateSFWIndex()
   console.log('Generating channels.json...')
   generateChannels()
   console.log('Generating index.country.m3u...')
@@ -118,6 +120,17 @@ function generateIndex() {
   }
 }
 
+function generateSFWIndex() {
+  const filename = `${ROOT_DIR}/index.sfw.m3u`
+  helper.createFile(filename, '#EXTM3U\n')
+
+  const sorted = helper.sortBy(list.all, ['name', 'url'])
+  const channels = helper.filterNSFW(sorted)
+  for (let channel of channels) {
+    helper.appendToFile(filename, channel.toString())
+  }
+}
+
 function generateChannels() {
   const filename = `${ROOT_DIR}/channels.json`
   const sorted = helper.sortBy(list.all, ['name', 'url'])
@@ -181,11 +194,12 @@ function generateCategories() {
   const outputDir = `${ROOT_DIR}/categories`
   helper.createDir(outputDir)
 
-  for (let cid in list.categories) {
+  for (let cid in helper.supportedCategories) {
     let category = list.categories[cid]
     const filename = `${outputDir}/${cid}.m3u`
     helper.createFile(filename, '#EXTM3U\n')
 
+    if (!category) continue
     const channels = helper.sortBy(Object.values(category), ['name', 'url'])
     for (let channel of channels) {
       helper.appendToFile(filename, channel.toString())

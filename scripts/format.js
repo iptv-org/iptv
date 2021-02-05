@@ -2,23 +2,30 @@ const { program } = require('commander')
 const helper = require('./helper')
 const axios = require('axios')
 const ProgressBar = require('progress')
-const instance = axios.create({ timeout: 1000, maxContentLength: 1000 })
+const https = require('https')
 
 program
-  .version('1.0.0', '-v, --version')
   .usage('[OPTIONS]...')
   .option('-d, --debug', 'Debug mode')
-  .option('-c, --country <country>', 'Comma-separated list of country codes')
-  .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded ')
+  .option('-c, --country <country>', 'Comma-separated list of country codes', '')
+  .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
   .option('--epg', 'Turn on EPG parser')
   .option('--resolution', 'Turn on resolution parser')
   .option('--delay <delay>', 'Delay between parser requests', 0)
+  .option('--timeout <timeout>', 'Set timeout for each request', 5000)
   .parse(process.argv)
 
 const config = program.opts()
 
+const instance = axios.create({
+  timeout: config.timeout,
+  maxContentLength: 20000,
+  httpsAgent: new https.Agent({
+    rejectUnauthorized: false
+  })
+})
+
 let globalBuffer = []
-let bar
 
 async function main() {
   const index = parseIndex()
@@ -36,6 +43,7 @@ async function main() {
   if (index.items.length) {
     await loadPlaylist('channels/unsorted.m3u')
       .then(removeUnsortedDuplicates)
+      .then(sortChannels)
       .then(updatePlaylist)
       .then(done)
   }
@@ -100,7 +108,7 @@ async function removeDuplicates(playlist) {
 
 async function detectResolution(playlist) {
   if (!config.resolution) return playlist
-  bar = new ProgressBar('  Detecting resolution: [:bar] :current/:total (:percent) ', {
+  const bar = new ProgressBar('  Detecting resolution: [:bar] :current/:total (:percent) ', {
     total: playlist.items.length
   })
   const results = []
@@ -109,12 +117,16 @@ async function detectResolution(playlist) {
     const url = item.url
     const response = await instance
       .get(url)
-      .then(sleep(config.delay))
+      .then(helper.sleep(config.delay))
       .catch(err => {})
-    if (isValid(response)) {
-      const resolution = parseResolution(response.data)
-      if (resolution) {
-        item.resolution = resolution
+    if (response) {
+      if (response.status === 200) {
+        if (/^#EXTM3U/.test(response.data)) {
+          const resolution = parseResolution(response.data)
+          if (resolution) {
+            item.resolution = resolution
+          }
+        }
       }
     }
 
@@ -183,16 +195,6 @@ async function removeUnsortedDuplicates(playlist) {
   playlist.items = items
 
   return playlist
-}
-
-function sleep(ms) {
-  return function (x) {
-    return new Promise(resolve => setTimeout(() => resolve(x), ms))
-  }
-}
-
-function isValid(response) {
-  return response && response.status === 200 && /^#EXTM3U/.test(response.data)
 }
 
 async function updatePlaylist(playlist) {
