@@ -137,9 +137,7 @@ If you did everything right, then by opening a playlist in a player that support
     - `feature-request.md`: template for feature request.
     - `remove-channel.md`: template for channel deletion request.
   - `workflows/`
-    - `automerge.yml`: contain action that automatically merges all the changes created by other workflows.
-    - `format.yml`: contain actions that automatically sorts channels and removes duplicates from each playlist.
-    - `update.yml`: contain actions that automatically generates all additional playlists and updates the `README.md` file.
+    - `auto-update.yml`: contain actions that automatically updates all playlists every day.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
   - `CONTRIBUTING.md`: file you are currently reading.
 - `.readme/`
@@ -152,15 +150,16 @@ If you did everything right, then by opening a playlist in a player that support
 - `channels/`
   - `ad.m3u`: country specific playlist.
   - ...
-  - `int.m3u`: playlist for channels not belonging to any one particular country. These are usually channels that broadcast exclusively on the internet.
-  - ...
   - `unsorted.m3u`: playlist with channels not yet sorted.
 - `scripts/`
+  - `categories.json`: list of supported categories.
   - `format.js`: used within GitHub Action to sort channels and remove duplicates from each playlist.
   - `generate.js`: used within GitHub Action to generate all additional playlists.
-  - `helper.js`: contains functions that are used in other scripts.
-  - `test.js`: allows you to automatically test all channels in a playlist.
+  - `parser.js`: contains functions for parsing playlists.
+  - `regions.json`: list of supported region codes.
+  - `test.js`: script for channel testing.
   - `update-readme.js`: used within GitHub Action to update the `README.md` file.
+  - `utils.js`: contains functions that are used in other scripts.
 - `index.m3u`: main playlist that contains links to all playlists in the `channels/` folder.
 - `README.md`: project description generated from the contents of the `.readme/` folder.
 
