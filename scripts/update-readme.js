@@ -25,7 +25,6 @@ function parseIndex() {
     country: 'Undefined',
     channels: 0,
     playlist: `<code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code>`,
-    epg: '',
     name: 'Undefined'
   }
 
@@ -64,9 +63,6 @@ function parseIndex() {
               country: flag + '&nbsp;' + country.name,
               channels: 1,
               playlist: `<code>https://iptv-org.github.io/iptv/countries/${country.code}.m3u</code>`,
-              epg: playlist.header.attrs['x-tvg-url']
-                ? `<code>${playlist.header.attrs['x-tvg-url']}</code>`
-                : '',
               name: country.name
             }
           }
@@ -115,8 +111,7 @@ function generateCountriesTable() {
     columns: [
       { name: 'Country', align: 'left' },
       { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left', nowrap: true },
-      { name: 'EPG', align: 'left' }
+      { name: 'Playlist', align: 'left', nowrap: true }
     ]
   })
 
