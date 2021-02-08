@@ -170,7 +170,7 @@ class Channel {
   toString(short = false) {
     this.tvg.country = this.tvg.country.toUpperCase()
 
-    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}" tvg-country="${this.tvg.country}"`
+    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
 
     if (!short) {
       info += ` tvg-url="${this.tvgUrl}"`
