@@ -20,6 +20,8 @@ utils.code2flag = function (code) {
   switch (code) {
     case 'UK':
       return '🇬🇧'
+    case 'INT':
+      return '🌍'
     case 'UNSORTED':
       return ''
     default:
@@ -38,6 +40,7 @@ utils.code2name = function (code) {
     code = code.toUpperCase()
     if (regions[code]) return regions[code].name
     if (code === 'US') return 'United States'
+    if (code === 'INT') return 'International'
     return intlDisplayNames.of(code)
   } catch (e) {
     return null
