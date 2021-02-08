@@ -57,13 +57,13 @@
 		<tr><td align="left">Portuguese</td><td align="right">99</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/por.m3u</code></td></tr>
 		<tr><td align="left">Pushto</td><td align="right">4</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/pus.m3u</code></td></tr>
 		<tr><td align="left">Romanian</td><td align="right">81</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ron.m3u</code></td></tr>
-		<tr><td align="left">Russian</td><td align="right">378</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/rus.m3u</code></td></tr>
+		<tr><td align="left">Russian</td><td align="right">379</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/rus.m3u</code></td></tr>
 		<tr><td align="left">Serbian</td><td align="right">7</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/srp.m3u</code></td></tr>
 		<tr><td align="left">Sinhala</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/sin.m3u</code></td></tr>
 		<tr><td align="left">Slovak</td><td align="right">31</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/slk.m3u</code></td></tr>
 		<tr><td align="left">Slovenian</td><td align="right">6</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/slv.m3u</code></td></tr>
 		<tr><td align="left">Somali</td><td align="right">8</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/som.m3u</code></td></tr>
-		<tr><td align="left">Spanish</td><td align="right">404</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/spa.m3u</code></td></tr>
+		<tr><td align="left">Spanish</td><td align="right">403</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/spa.m3u</code></td></tr>
 		<tr><td align="left">Swedish</td><td align="right">12</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/swe.m3u</code></td></tr>
 		<tr><td align="left">Tagalog</td><td align="right">8</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/tgl.m3u</code></td></tr>
 		<tr><td align="left">Tamil</td><td align="right">32</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/tam.m3u</code></td></tr>
