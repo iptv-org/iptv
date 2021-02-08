@@ -1,5 +1,7 @@
 # Contributing Guide
 
+## Table of Contents
+
 - [Feature Requests](#feature-requests)
 - [Request a Channel](#request-a-channel)
 - [Report a Broken Stream](#report-a-broken-stream)
@@ -9,9 +11,9 @@
 - [Add a Language to a Channel](#add-a-language-to-a-channel)
 - [Add an EPG (Electronic Program Guide) source](#add-an-epg-electronic-program-guide-source)
 - [Setting up a Сhannel to use an EPG](#setting-up-a-channel-to-use-an-epg)
-- [Sort сhannels from `channels/unsorted.m3u`](#sort-channels-from-channels-unsorted.m3u`)
+- [Sort сhannels from `channels/unsorted.m3u`](#sort-channels-from-channelsunsortedm3u)
 - [Request Channel Removal](#request-channel-removal)
-- [Make changes to README.md](#make-changes-to-readme.md)
+- [Make changes to README.md](#make-changes-to-readmemd)
 - [Make changes to this Guide](#make-changes-to-this-guide)
 - [Channel Description Scheme](#channel-description-scheme)
 - [Supported Region Codes](#supported-region-codes)
