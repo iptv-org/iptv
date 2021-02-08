@@ -1,5 +1,6 @@
 const { program } = require('commander')
-const helper = require('./helper')
+const parser = require('./parser')
+const utils = require('./utils')
 const axios = require('axios')
 const ProgressBar = require('progress')
 const https = require('https')
@@ -28,23 +29,24 @@ const instance = axios.create({
 let globalBuffer = []
 
 async function main() {
-  const index = parseIndex()
-  for (const item of index.items) {
-    await loadPlaylist(item.url)
+  const playlists = parseIndex()
+
+  for (const playlist of playlists) {
+    await loadPlaylist(playlist.url)
       .then(addToBuffer)
       .then(sortChannels)
       .then(removeDuplicates)
       .then(detectResolution)
       .then(updateFromEPG)
-      .then(updatePlaylist)
+      .then(savePlaylist)
       .then(done)
   }
 
-  if (index.items.length) {
+  if (playlists.length) {
     await loadPlaylist('channels/unsorted.m3u')
       .then(removeUnsortedDuplicates)
       .then(sortChannels)
-      .then(updatePlaylist)
+      .then(savePlaylist)
       .then(done)
   }
 
@@ -53,38 +55,30 @@ async function main() {
 
 function parseIndex() {
   console.info(`Parsing 'index.m3u'...`)
-  const playlist = helper.parsePlaylist('index.m3u')
-  playlist.items = helper
-    .filterPlaylists(playlist.items, config.country, config.exclude)
+  let playlists = parser.parseIndex()
+  playlists = utils
+    .filterPlaylists(playlists, config.country, config.exclude)
     .filter(i => i.url !== 'channels/unsorted.m3u')
-  console.info(`Found ${playlist.items.length} playlist(s)\n`)
+  console.info(`Found ${playlists.length} playlist(s)\n`)
 
-  return playlist
+  return playlists
 }
 
 async function loadPlaylist(url) {
   console.info(`Processing '${url}'...`)
-  const playlist = helper.parsePlaylist(url)
-  playlist.url = url
-  playlist.items = playlist.items
-    .map(item => {
-      return helper.createChannel(item)
-    })
-    .filter(i => i.url)
-
-  return playlist
+  return parser.parsePlaylist(url)
 }
 
 async function addToBuffer(playlist) {
   if (playlist.url === 'channels/unsorted.m3u') return playlist
-  globalBuffer = globalBuffer.concat(playlist.items)
+  globalBuffer = globalBuffer.concat(playlist.channels)
 
   return playlist
 }
 
 async function sortChannels(playlist) {
   console.info(`  Sorting channels...`)
-  playlist.items = helper.sortBy(playlist.items, ['name', 'url'])
+  playlist.channels = utils.sortBy(playlist.channels, ['name', 'url'])
 
   return playlist
 }
@@ -92,7 +86,7 @@ async function sortChannels(playlist) {
 async function removeDuplicates(playlist) {
   console.info(`  Looking for duplicates...`)
   let buffer = {}
-  const items = playlist.items.filter(i => {
+  const channels = playlist.channels.filter(i => {
     const result = typeof buffer[i.url] === 'undefined'
     if (result) {
       buffer[i.url] = true
@@ -101,7 +95,7 @@ async function removeDuplicates(playlist) {
     return result
   })
 
-  playlist.items = items
+  playlist.channels = channels
 
   return playlist
 }
@@ -109,31 +103,31 @@ async function removeDuplicates(playlist) {
 async function detectResolution(playlist) {
   if (!config.resolution) return playlist
   const bar = new ProgressBar('  Detecting resolution: [:bar] :current/:total (:percent) ', {
-    total: playlist.items.length
+    total: playlist.channels.length
   })
   const results = []
-  for (const item of playlist.items) {
+  for (const channel of playlist.channels) {
     bar.tick()
-    const url = item.url
+    const url = channel.url
     const response = await instance
       .get(url)
-      .then(helper.sleep(config.delay))
+      .then(utils.sleep(config.delay))
       .catch(err => {})
     if (response) {
       if (response.status === 200) {
         if (/^#EXTM3U/.test(response.data)) {
           const resolution = parseResolution(response.data)
           if (resolution) {
-            item.resolution = resolution
+            channel.resolution = resolution
           }
         }
       }
     }
 
-    results.push(item)
+    results.push(channel)
   }
 
-  playlist.items = results
+  playlist.channels = results
 
   return playlist
 }
@@ -160,20 +154,20 @@ async function updateFromEPG(playlist) {
 
   console.info(`  Adding data from '${tvgUrl}'...`)
 
-  return helper
+  return utils
     .parseEPG(tvgUrl)
     .then(epg => {
       if (!epg) return playlist
 
-      playlist.items.map(channel => {
+      playlist.channels.map(channel => {
         if (!channel.tvg.id) return channel
         const epgItem = epg.channels[channel.tvg.id]
         if (!epgItem) return channel
         if (!channel.tvg.name && epgItem.name.length) {
           channel.tvg.name = epgItem.name[0].value
         }
-        if (!channel.language.length && epgItem.name.length && epgItem.name[0].lang) {
-          channel.setLanguage(epgItem.name[0].lang)
+        if (!channel.languages.length && epgItem.name.length && epgItem.name[0].lang) {
+          channel.languages = utils.parseLanguages(epgItem.name[0].lang)
         }
         if (!channel.logo && epgItem.icon.length) {
           channel.logo = epgItem.icon[0]
@@ -190,25 +184,22 @@ async function updateFromEPG(playlist) {
 async function removeUnsortedDuplicates(playlist) {
   console.info(`  Looking for duplicates...`)
   const urls = globalBuffer.map(i => i.url)
-  const items = playlist.items.filter(i => !urls.includes(i.url))
-  if (items.length === playlist.items.length) return playlist
-  playlist.items = items
+  const channels = playlist.channels.filter(i => !urls.includes(i.url))
+  if (channels.length === playlist.channels.length) return playlist
+  playlist.channels = channels
 
   return playlist
 }
 
-async function updatePlaylist(playlist) {
-  const original = helper.readFile(playlist.url)
-  let output = playlist.getHeader()
-  for (let channel of playlist.items) {
-    output += channel.toShortString()
-  }
+async function savePlaylist(playlist) {
+  const original = utils.readFile(playlist.url)
+  const output = playlist.toString(true)
 
   if (original === output) {
     console.info(`No changes have been made.`)
     return false
   } else {
-    helper.createFile(playlist.url, output)
+    utils.createFile(playlist.url, output)
     console.info(`Playlist has been updated.`)
   }
 
