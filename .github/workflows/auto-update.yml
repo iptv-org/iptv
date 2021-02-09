@@ -53,4 +53,5 @@ jobs:
           git config user.email github-actions@github.com
           git add .
           git diff-index --quiet HEAD || git commit -m "[Bot] Update README.md"
+          git pull
           git push
