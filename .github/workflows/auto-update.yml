@@ -18,7 +18,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "[Bot] Format playlists"
+          git diff-index --quiet HEAD || git commit -m "[Bot] Format playlists"
           git push
   generate:
     runs-on: ubuntu-latest
@@ -52,5 +52,5 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git commit -m "[Bot] Update README.md"
+          git diff-index --quiet HEAD || git commit -m "[Bot] Update README.md"
           git push
