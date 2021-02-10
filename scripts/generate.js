@@ -26,7 +26,7 @@ function createRootDirectory() {
 }
 
 function createNoJekyllFile() {
-  console.log('Creating .nojekyll...')
+  console.log('Creating .nojekyll file...')
   utils.createFile(`${ROOT_DIR}/.nojekyll`)
 }
 
@@ -93,12 +93,23 @@ function generateLanguageIndex() {
   const filename = `${ROOT_DIR}/index.language.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = db.channels.sortBy(['tvgLanguage', 'name', 'url']).all()
+  const channels = db.channels.sortBy(['name', 'url']).forLanguage({ code: null })
   for (const channel of channels) {
     const category = channel.category
-    channel.category = channel.tvgLanguage
+    channel.category = ''
     utils.appendToFile(filename, channel.toString())
     channel.category = category
+  }
+
+  const languages = db.languages.sortBy(['name']).all()
+  for (const language of languages) {
+    const channels = db.channels.sortBy(['name', 'url']).forLanguage(language)
+    for (const channel of channels) {
+      const category = channel.category
+      channel.category = language.name
+      utils.appendToFile(filename, channel.toString())
+      channel.category = category
+    }
   }
 }
 
@@ -113,8 +124,31 @@ function generateCategoryIndex() {
   }
 }
 
+function generateCategories() {
+  console.log('Generating a playlist for each category...')
+  const outputDir = `${ROOT_DIR}/categories`
+  utils.createDir(outputDir)
+
+  for (const category of db.categories.all()) {
+    const filename = `${outputDir}/${category.id}.m3u`
+    utils.createFile(filename, '#EXTM3U\n')
+
+    const channels = db.channels.sortBy(['name', 'url']).forCategory(category)
+    for (const channel of channels) {
+      utils.appendToFile(filename, channel.toString())
+    }
+  }
+
+  const other = `${outputDir}/other.m3u`
+  const channels = db.channels.sortBy(['name', 'url']).forCategory({ id: null })
+  utils.createFile(other, '#EXTM3U\n')
+  for (const channel of channels) {
+    utils.appendToFile(other, channel.toString())
+  }
+}
+
 function generateCountries() {
-  console.log('Generating /countries...')
+  console.log('Generating a playlist for each country...')
   const outputDir = `${ROOT_DIR}/countries`
   utils.createDir(outputDir)
 
@@ -130,7 +164,7 @@ function generateCountries() {
 }
 
 function generateLanguages() {
-  console.log('Generating /languages...')
+  console.log('Generating a playlist for each language...')
   const outputDir = `${ROOT_DIR}/languages`
   utils.createDir(outputDir)
 
@@ -139,22 +173,6 @@ function generateLanguages() {
     utils.createFile(filename, '#EXTM3U\n')
 
     const channels = db.channels.sortBy(['name', 'url']).forLanguage(language)
-    for (const channel of channels) {
-      utils.appendToFile(filename, channel.toString())
-    }
-  }
-}
-
-function generateCategories() {
-  console.log('Generating /categories...')
-  const outputDir = `${ROOT_DIR}/categories`
-  utils.createDir(outputDir)
-
-  for (const category of db.categories.all()) {
-    const filename = `${outputDir}/${category.id}.m3u`
-    utils.createFile(filename, '#EXTM3U\n')
-
-    const channels = db.channels.sortBy(['name', 'url']).forCategory(category)
     for (const channel of channels) {
       utils.appendToFile(filename, channel.toString())
     }
