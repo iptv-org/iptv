@@ -160,6 +160,13 @@ function generateCountries() {
       utils.appendToFile(filename, channel.toString())
     }
   }
+
+  const other = `${outputDir}/undefined.m3u`
+  const channels = db.channels.sortBy(['name', 'url']).forCountry({ code: null })
+  utils.createFile(other, '#EXTM3U\n')
+  for (const channel of channels) {
+    utils.appendToFile(other, channel.toString())
+  }
 }
 
 function generateLanguages() {
@@ -175,6 +182,13 @@ function generateLanguages() {
     for (const channel of channels) {
       utils.appendToFile(filename, channel.toString())
     }
+  }
+
+  const other = `${outputDir}/undefined.m3u`
+  const channels = db.channels.sortBy(['name', 'url']).forLanguage({ code: null })
+  utils.createFile(other, '#EXTM3U\n')
+  for (const channel of channels) {
+    utils.appendToFile(other, channel.toString())
   }
 }
 
