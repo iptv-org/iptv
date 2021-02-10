@@ -40,9 +40,13 @@ db.channels = {
     return this.list.filter(channel => channel.countries.map(c => c.code).includes(country.code))
   },
   forLanguage(language) {
+    if (!language.code) return this.list.filter(channel => !channel.languages.length)
+
     return this.list.filter(channel => channel.languages.map(c => c.code).includes(language.code))
   },
   forCategory(category) {
+    if (!category.id) return this.list.filter(channel => !channel.category)
+
     return this.list.filter(channel => channel.category.toLowerCase() === category.id)
   },
   count() {
@@ -89,6 +93,11 @@ db.languages = {
   },
   count() {
     return this.list.length
+  },
+  sortBy(fields) {
+    this.list = utils.sortBy(this.list, fields)
+
+    return this
   }
 }
 
