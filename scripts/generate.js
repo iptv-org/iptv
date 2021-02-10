@@ -35,8 +35,8 @@ function generateIndex() {
   const filename = `${ROOT_DIR}/index.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = utils.sortBy(db.channels.all(), ['name', 'url'])
-  for (let channel of channels) {
+  const channels = db.channels.sortBy(['name', 'url']).all()
+  for (const channel of channels) {
     utils.appendToFile(filename, channel.toString())
   }
 }
@@ -46,9 +46,8 @@ function generateSFWIndex() {
   const filename = `${ROOT_DIR}/index.sfw.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  const sorted = utils.sortBy(db.channels.all(), ['name', 'url'])
-  const channels = utils.filterNSFW(sorted)
-  for (let channel of channels) {
+  const channels = db.channels.sortBy(['name', 'url']).sfw()
+  for (const channel of channels) {
     utils.appendToFile(filename, channel.toString())
   }
 }
