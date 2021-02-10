@@ -1,19 +1,11 @@
+const db = require('./db')
 const utils = require('./utils')
-const parser = require('./parser')
-const categories = require('./categories')
 
 const ROOT_DIR = './.gh-pages'
 
-let list = {
-  all: [],
-  playlists: {},
-  languages: {},
-  categories: {},
-  countries: {}
-}
+db.load()
 
 function main() {
-  parseIndex()
   createRootDirectory()
   createNoJekyllFile()
   generateIndex()
@@ -29,7 +21,7 @@ function main() {
 }
 
 function createRootDirectory() {
-  console.log('Creating root directory...')
+  console.log('Creating .gh-pages folder...')
   utils.createDir(ROOT_DIR)
 }
 
@@ -38,103 +30,12 @@ function createNoJekyllFile() {
   utils.createFile(`${ROOT_DIR}/.nojekyll`)
 }
 
-function parseIndex() {
-  console.log(`Parsing index...`)
-  const items = parser.parseIndex()
-
-  for (const category of categories) {
-    list.categories[category.id] = []
-  }
-  list.categories['other'] = []
-
-  for (let item of items) {
-    const playlist = parser.parsePlaylist(item.url)
-    for (let channel of playlist.channels) {
-      // all
-      list.all.push(channel)
-
-      // playlists
-      if (!channel.countries.length) {
-        const UNDEFINED = 'undefined'
-        if (!list.playlists[UNDEFINED]) {
-          list.playlists[UNDEFINED] = []
-        }
-        list.playlists[UNDEFINED].push(channel)
-      } else {
-        for (let country of channel.countries) {
-          const countryCode = country.code || 'undefined'
-          if (!list.playlists[countryCode]) {
-            list.playlists[countryCode] = []
-          }
-          list.playlists[countryCode].push(channel)
-        }
-      }
-
-      // countries
-      if (!channel.countries.length) {
-        const UNDEFINED = 'undefined'
-        if (!list.countries[UNDEFINED]) {
-          list.countries[UNDEFINED] = []
-        }
-        list.countries[UNDEFINED].push(channel)
-      } else {
-        for (let country of channel.countries) {
-          const countryName = country.name
-          if (!list.countries[countryName]) {
-            list.countries[countryName] = []
-          }
-          list.countries[countryName].push(channel)
-        }
-      }
-
-      // languages
-      if (!channel.languages.length) {
-        const UNDEFINED = 'undefined'
-        if (!list.languages[UNDEFINED]) {
-          list.languages[UNDEFINED] = []
-        }
-        list.languages[UNDEFINED].push(channel)
-      } else {
-        for (let language of channel.languages) {
-          const languageCode = language.code || 'undefined'
-          if (!list.languages[languageCode]) {
-            list.languages[languageCode] = []
-          }
-          list.languages[languageCode].push(channel)
-        }
-      }
-
-      // categories
-      const categoryId = channel.category.toLowerCase()
-      if (!list.categories[categoryId]) {
-        list.categories['other'].push(channel)
-      } else {
-        list.categories[categoryId].push(channel)
-      }
-    }
-  }
-
-  list.countries = Object.keys(list.countries)
-    .sort((a, b) => {
-      if (a === 'undefined') return -1
-      if (b === 'undefined') return 1
-
-      if (a < b) return -1
-      if (a > b) return 1
-      return 0
-    })
-    .reduce((obj, key) => {
-      obj[key] = list.countries[key]
-      return obj
-    }, {})
-}
-
 function generateIndex() {
   console.log('Generating index.m3u...')
   const filename = `${ROOT_DIR}/index.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = utils.sortBy(list.all, ['name', 'url'])
+  const channels = utils.sortBy(db.channels.all(), ['name', 'url'])
   for (let channel of channels) {
     utils.appendToFile(filename, channel.toString())
   }
@@ -145,7 +46,7 @@ function generateSFWIndex() {
   const filename = `${ROOT_DIR}/index.sfw.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  const sorted = utils.sortBy(list.all, ['name', 'url'])
+  const sorted = utils.sortBy(db.channels.all(), ['name', 'url'])
   const channels = utils.filterNSFW(sorted)
   for (let channel of channels) {
     utils.appendToFile(filename, channel.toString())
@@ -155,8 +56,10 @@ function generateSFWIndex() {
 function generateChannelsJson() {
   console.log('Generating channels.json...')
   const filename = `${ROOT_DIR}/channels.json`
-  const sorted = utils.sortBy(list.all, ['name', 'url'])
-  const channels = sorted.map(c => c.toJSON())
+  const channels = db.channels
+    .sortBy(['name', 'url'])
+    .all()
+    .map(c => c.toJSON())
   utils.createFile(filename, JSON.stringify(channels))
 }
 
@@ -165,11 +68,20 @@ function generateCountryIndex() {
   const filename = `${ROOT_DIR}/index.country.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  for (let country in list.countries) {
-    const channels = utils.sortBy(list.countries[country], ['name', 'url'])
-    for (let channel of channels) {
+  const channels = db.channels.sortBy(['name', 'url']).forCountry({ code: null })
+  for (const channel of channels) {
+    const category = channel.category
+    channel.category = ''
+    utils.appendToFile(filename, channel.toString())
+    channel.category = category
+  }
+
+  const countries = db.countries.sortBy(['name']).all()
+  for (const country of countries) {
+    const channels = db.channels.sortBy(['name', 'url']).forCountry(country)
+    for (const channel of channels) {
       const category = channel.category
-      channel.category = country !== 'undefined' ? country : ''
+      channel.category = country.name
       utils.appendToFile(filename, channel.toString())
       channel.category = category
     }
@@ -181,8 +93,8 @@ function generateLanguageIndex() {
   const filename = `${ROOT_DIR}/index.language.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = utils.sortBy(list.all, ['tvgLanguage', 'name', 'url'])
-  for (let channel of channels) {
+  const channels = db.channels.sortBy(['tvgLanguage', 'name', 'url']).all()
+  for (const channel of channels) {
     const category = channel.category
     channel.category = channel.tvgLanguage
     utils.appendToFile(filename, channel.toString())
@@ -195,8 +107,8 @@ function generateCategoryIndex() {
   const filename = `${ROOT_DIR}/index.category.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = utils.sortBy(list.all, ['category', 'name', 'url'])
-  for (let channel of channels) {
+  const channels = db.channels.sortBy(['category', 'name', 'url']).all()
+  for (const channel of channels) {
     utils.appendToFile(filename, channel.toString())
   }
 }
@@ -206,12 +118,11 @@ function generateCountries() {
   const outputDir = `${ROOT_DIR}/countries`
   utils.createDir(outputDir)
 
-  for (const code in list.playlists) {
-    const filename = `${outputDir}/${code}.m3u`
+  for (const country of db.countries.all()) {
+    const filename = `${outputDir}/${country.code}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
 
-    let channels = Object.values(list.playlists[code])
-    channels = utils.sortBy(channels, ['name', 'url'])
+    const channels = db.channels.sortBy(['name', 'url']).forCountry(country)
     for (const channel of channels) {
       utils.appendToFile(filename, channel.toString())
     }
@@ -223,12 +134,11 @@ function generateLanguages() {
   const outputDir = `${ROOT_DIR}/languages`
   utils.createDir(outputDir)
 
-  for (const languageId in list.languages) {
-    const filename = `${outputDir}/${languageId}.m3u`
+  for (const language of db.languages.all()) {
+    const filename = `${outputDir}/${language.code}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
 
-    let channels = Object.values(list.languages[languageId])
-    channels = utils.sortBy(channels, ['name', 'url'])
+    const channels = db.channels.sortBy(['name', 'url']).forLanguage(language)
     for (const channel of channels) {
       utils.appendToFile(filename, channel.toString())
     }
@@ -240,12 +150,11 @@ function generateCategories() {
   const outputDir = `${ROOT_DIR}/categories`
   utils.createDir(outputDir)
 
-  for (const category of categories) {
+  for (const category of db.categories.all()) {
     const filename = `${outputDir}/${category.id}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
 
-    let channels = Object.values(list.categories[category.id])
-    channels = utils.sortBy(channels, ['name', 'url'])
+    const channels = db.channels.sortBy(['name', 'url']).forCategory(category)
     for (const channel of channels) {
       utils.appendToFile(filename, channel.toString())
     }
@@ -253,13 +162,11 @@ function generateCategories() {
 }
 
 function finish() {
-  console.log('Done.\n')
-
   console.log(
-    `Countries: ${Object.keys(list.countries).length - 1}. Languages: ${
-      Object.values(list.languages).length
-    }. Categories: ${Object.values(list.categories).length}. Channels: ${list.all.length}.`
+    `Countries: ${db.countries.count()}. Languages: ${db.languages.count()}. Categories: ${db.categories.count()}. Channels: ${db.channels.count()}.`
   )
+
+  console.log('Done.')
 }
 
 main()
