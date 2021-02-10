@@ -214,6 +214,7 @@ http://example.com/stream.m3u8
 | [AFR](https://en.wikipedia.org/wiki/Africa)                              | Africa                         |
 | [AMER](https://en.wikipedia.org/wiki/Americas)                           | Americas                       |
 | [APAC](https://en.wikipedia.org/wiki/Asia-Pacific)                       | Asia-Pacific                   |
+| [ARAB](https://en.wikipedia.org/wiki/Arab_world)                         | Arab world                     |
 | [ASIA](https://en.wikipedia.org/wiki/Asia)                               | Asia                           |
 | [CARIB](https://en.wikipedia.org/wiki/Caribbean)                         | Caribbean                      |
 | [EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa) | Europe, Middle East and Africa |
