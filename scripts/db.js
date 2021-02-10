@@ -34,6 +34,11 @@ db.channels = {
   all() {
     return this.list
   },
+  sfw() {
+    const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
+
+    return this.list.filter(i => sfwCategories.includes(i.category))
+  },
   forCountry(country) {
     if (!country.code) return this.list.filter(channel => !channel.countries.length)
 
