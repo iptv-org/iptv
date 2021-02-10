@@ -256,7 +256,7 @@ function finish() {
   console.log('Done.\n')
 
   console.log(
-    `Countries: ${list.countries.length}. Languages: ${
+    `Countries: ${Object.keys(list.countries).length - 1}. Languages: ${
       Object.values(list.languages).length
     }. Categories: ${Object.values(list.categories).length}. Channels: ${list.all.length}.`
   )
