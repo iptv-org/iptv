@@ -203,12 +203,6 @@ utils.writeToLog = function (country, msg, url) {
   this.appendToFile('error.log', now.toISOString() + ' ' + line + '\n')
 }
 
-utils.filterNSFW = function (arr) {
-  const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
-
-  return arr.filter(i => sfwCategories.includes(i.category))
-}
-
 utils.sleep = function (ms) {
   return function (x) {
     return new Promise(resolve => setTimeout(() => resolve(x), ms))
