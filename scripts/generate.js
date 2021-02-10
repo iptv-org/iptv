@@ -6,9 +6,10 @@ const ROOT_DIR = './.gh-pages'
 
 let list = {
   all: [],
-  countries: {},
+  playlists: {},
   languages: {},
-  categories: {}
+  categories: {},
+  countries: {}
 }
 
 function main() {
@@ -52,30 +53,47 @@ function parseIndex() {
       // all
       list.all.push(channel)
 
-      // country
+      // playlists
       if (!channel.countries.length) {
-        const countryCode = 'undefined'
-        if (!list.countries[countryCode]) {
-          list.countries[countryCode] = []
+        const UNDEFINED = 'undefined'
+        if (!list.playlists[UNDEFINED]) {
+          list.playlists[UNDEFINED] = []
         }
-        list.countries[countryCode].push(channel)
+        list.playlists[UNDEFINED].push(channel)
       } else {
         for (let country of channel.countries) {
           const countryCode = country.code || 'undefined'
-          if (!list.countries[countryCode]) {
-            list.countries[countryCode] = []
+          if (!list.playlists[countryCode]) {
+            list.playlists[countryCode] = []
           }
-          list.countries[countryCode].push(channel)
+          list.playlists[countryCode].push(channel)
         }
       }
 
-      // language
-      if (!channel.languages.length) {
-        const languageCode = 'undefined'
-        if (!list.languages[languageCode]) {
-          list.languages[languageCode] = []
+      // countries
+      if (!channel.countries.length) {
+        const UNDEFINED = 'undefined'
+        if (!list.countries[UNDEFINED]) {
+          list.countries[UNDEFINED] = []
         }
-        list.languages[languageCode].push(channel)
+        list.countries[UNDEFINED].push(channel)
+      } else {
+        for (let country of channel.countries) {
+          const countryName = country.name
+          if (!list.countries[countryName]) {
+            list.countries[countryName] = []
+          }
+          list.countries[countryName].push(channel)
+        }
+      }
+
+      // languages
+      if (!channel.languages.length) {
+        const UNDEFINED = 'undefined'
+        if (!list.languages[UNDEFINED]) {
+          list.languages[UNDEFINED] = []
+        }
+        list.languages[UNDEFINED].push(channel)
       } else {
         for (let language of channel.languages) {
           const languageCode = language.code || 'undefined'
@@ -86,7 +104,7 @@ function parseIndex() {
         }
       }
 
-      // category
+      // categories
       const categoryId = channel.category.toLowerCase()
       if (!list.categories[categoryId]) {
         list.categories['other'].push(channel)
@@ -95,6 +113,20 @@ function parseIndex() {
       }
     }
   }
+
+  list.countries = Object.keys(list.countries)
+    .sort((a, b) => {
+      if (a === 'undefined') return -1
+      if (b === 'undefined') return 1
+
+      if (a < b) return -1
+      if (a > b) return 1
+      return 0
+    })
+    .reduce((obj, key) => {
+      obj[key] = list.countries[key]
+      return obj
+    }, {})
 }
 
 function generateIndex() {
@@ -133,12 +165,14 @@ function generateCountryIndex() {
   const filename = `${ROOT_DIR}/index.country.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = utils.sortBy(list.all, ['tvgCountry', 'name', 'url'])
-  for (let channel of channels) {
-    const category = channel.category
-    channel.category = channel.tvgCountry
-    utils.appendToFile(filename, channel.toString())
-    channel.category = category
+  for (let country in list.countries) {
+    const channels = utils.sortBy(list.countries[country], ['name', 'url'])
+    for (let channel of channels) {
+      const category = channel.category
+      channel.category = country !== 'undefined' ? country : ''
+      utils.appendToFile(filename, channel.toString())
+      channel.category = category
+    }
   }
 }
 
@@ -172,11 +206,11 @@ function generateCountries() {
   const outputDir = `${ROOT_DIR}/countries`
   utils.createDir(outputDir)
 
-  for (const countryId in list.countries) {
-    const filename = `${outputDir}/${countryId}.m3u`
+  for (const code in list.playlists) {
+    const filename = `${outputDir}/${code}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
 
-    let channels = Object.values(list.countries[countryId])
+    let channels = Object.values(list.playlists[code])
     channels = utils.sortBy(channels, ['name', 'url'])
     for (const channel of channels) {
       utils.appendToFile(filename, channel.toString())
@@ -222,7 +256,7 @@ function finish() {
   console.log('Done.\n')
 
   console.log(
-    `Countries: ${Object.values(list.countries).length}. Languages: ${
+    `Countries: ${list.countries.length}. Languages: ${
       Object.values(list.languages).length
     }. Categories: ${Object.values(list.categories).length}. Channels: ${list.all.length}.`
   )
