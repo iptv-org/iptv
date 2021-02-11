@@ -28,8 +28,49 @@ db.load = function () {
 
 db.channels = {
   list: [],
+  filter: null,
   add(channel) {
     this.list.push(channel)
+  },
+  get() {
+    let output
+    if (this.filter) {
+      switch (this.filter.field) {
+        case 'countries':
+          if (!this.filter.value) {
+            output = this.list.filter(channel => !channel.countries.length)
+          } else {
+            output = this.list.filter(channel =>
+              channel.countries.map(c => c.code).includes(this.filter.value)
+            )
+          }
+          break
+        case 'languages':
+          if (!this.filter.value) {
+            output = this.list.filter(channel => !channel.languages.length)
+          } else {
+            output = this.list.filter(channel =>
+              channel.countries.map(c => c.code).includes(this.filter.value)
+            )
+          }
+          break
+        case 'category':
+          if (!this.filter.value) {
+            output = this.list.filter(channel => !channel.category)
+          } else {
+            output = this.list.filter(
+              channel => channel.category.toLowerCase() === this.filter.value
+            )
+          }
+          break
+      }
+    } else {
+      output = this.all()
+    }
+
+    this.filter = null
+
+    return output
   },
   all() {
     return this.list
@@ -40,22 +81,31 @@ db.channels = {
     return this.list.filter(i => sfwCategories.includes(i.category))
   },
   forCountry(country) {
-    if (!country.code) return this.list.filter(channel => !channel.countries.length)
+    this.filter = {
+      field: 'countries',
+      value: country.code
+    }
 
-    return this.list.filter(channel => channel.countries.map(c => c.code).includes(country.code))
+    return this
   },
   forLanguage(language) {
-    if (!language.code) return this.list.filter(channel => !channel.languages.length)
+    this.filter = {
+      field: 'languages',
+      value: language.code
+    }
 
-    return this.list.filter(channel => channel.languages.map(c => c.code).includes(language.code))
+    return this
   },
   forCategory(category) {
-    if (!category.id) return this.list.filter(channel => !channel.category)
+    this.filter = {
+      field: 'category',
+      value: category.id
+    }
 
-    return this.list.filter(channel => channel.category.toLowerCase() === category.id)
+    return this
   },
   count() {
-    return this.list.length
+    return this.get().length
   },
   sortBy(fields) {
     this.list = utils.sortBy(this.list, fields)
