@@ -50,7 +50,7 @@ db.channels = {
             output = this.list.filter(channel => !channel.languages.length)
           } else {
             output = this.list.filter(channel =>
-              channel.countries.map(c => c.code).includes(this.filter.value)
+              channel.languages.map(c => c.code).includes(this.filter.value)
             )
           }
           break
