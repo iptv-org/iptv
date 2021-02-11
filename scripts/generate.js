@@ -6,6 +6,7 @@ const ROOT_DIR = './.gh-pages'
 db.load()
 
 function main() {
+  start()
   createRootDirectory()
   createNoJekyllFile()
   generateIndex()
@@ -190,6 +191,10 @@ function generateLanguages() {
   for (const channel of channels) {
     utils.appendToFile(other, channel.toString())
   }
+}
+
+function start() {
+  console.log(`Starting...`)
 }
 
 function finish() {
