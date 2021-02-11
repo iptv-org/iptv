@@ -6,9 +6,7 @@ const db = require('./db')
 db.load()
 
 const list = {
-  countries: {},
-  languages: {},
-  categories: {}
+  countries: {}
 }
 
 function main() {
@@ -29,12 +27,6 @@ function parseIndex() {
     channels: 0,
     playlist: `<code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code>`,
     name: 'Undefined'
-  }
-
-  list.languages['undefined'] = {
-    language: 'Undefined',
-    channels: 0,
-    playlist: `<code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code>`
   }
 
   for (const item of items) {
@@ -58,28 +50,10 @@ function parseIndex() {
           }
         }
       }
-
-      // languages
-      if (!channel.languages.length) {
-        list.languages['undefined'].channels++
-      } else {
-        for (let language of channel.languages) {
-          if (list.languages[language.code]) {
-            list.languages[language.code].channels++
-          } else {
-            list.languages[language.code] = {
-              language: language.name,
-              channels: 1,
-              playlist: `<code>https://iptv-org.github.io/iptv/languages/${language.code}.m3u</code>`
-            }
-          }
-        }
-      }
     }
   }
 
   list.countries = Object.values(list.countries)
-  list.languages = Object.values(list.languages)
 }
 
 function generateCategoriesTable() {
@@ -111,6 +85,35 @@ function generateCategoriesTable() {
   utils.createFile('./.readme/_categories.md', table)
 }
 
+function generateLanguagesTable() {
+  console.log(`Generating languages table...`)
+  const languages = []
+
+  for (const language of db.languages.sortBy(['name']).all()) {
+    languages.push({
+      language: language.name,
+      channels: db.channels.forLanguage(language).count(),
+      playlist: `<code>https://iptv-org.github.io/iptv/languages/${language.code}.m3u</code>`
+    })
+  }
+
+  languages.push({
+    language: 'Undefined',
+    channels: db.channels.forLanguage({ code: null }).count(),
+    playlist: `<code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code>`
+  })
+
+  const table = utils.generateTable(languages, {
+    columns: [
+      { name: 'Language', align: 'left' },
+      { name: 'Channels', align: 'right' },
+      { name: 'Playlist', align: 'left' }
+    ]
+  })
+
+  utils.createFile('./.readme/_languages.md', table)
+}
+
 function generateCountriesTable() {
   console.log(`Generating countries table...`)
   list.countries = utils.sortBy(list.countries, ['name'])
@@ -126,20 +129,6 @@ function generateCountriesTable() {
   })
 
   utils.createFile('./.readme/_countries.md', table)
-}
-
-function generateLanguagesTable() {
-  console.log(`Generating languages table...`)
-  list.languages = utils.sortBy(list.languages, ['language'])
-  const table = utils.generateTable(list.languages, {
-    columns: [
-      { name: 'Language', align: 'left' },
-      { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left' }
-    ]
-  })
-
-  utils.createFile('./.readme/_languages.md', table)
 }
 
 function generateReadme() {
