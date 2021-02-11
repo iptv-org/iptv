@@ -6,7 +6,6 @@ const ROOT_DIR = './.gh-pages'
 db.load()
 
 function main() {
-  start()
   createRootDirectory()
   createNoJekyllFile()
   generateIndex()
@@ -15,9 +14,9 @@ function main() {
   generateCountryIndex()
   generateLanguageIndex()
   generateCategoryIndex()
-  generateCountries()
-  generateLanguages()
   generateCategories()
+  generateLanguages()
+  generateCountries()
   finish()
 }
 
@@ -27,7 +26,7 @@ function createRootDirectory() {
 }
 
 function createNoJekyllFile() {
-  console.log('Creating .nojekyll file...')
+  console.log('Creating .nojekyll...')
   utils.createFile(`${ROOT_DIR}/.nojekyll`)
 }
 
@@ -125,7 +124,7 @@ function generateCategoryIndex() {
 }
 
 function generateCategories() {
-  console.log('Generating a playlist for each category...')
+  console.log(`Generating /categories...`)
   const outputDir = `${ROOT_DIR}/categories`
   utils.createDir(outputDir)
 
@@ -148,7 +147,7 @@ function generateCategories() {
 }
 
 function generateCountries() {
-  console.log('Generating a playlist for each country...')
+  console.log(`Generating /countries...`)
   const outputDir = `${ROOT_DIR}/countries`
   utils.createDir(outputDir)
 
@@ -171,7 +170,7 @@ function generateCountries() {
 }
 
 function generateLanguages() {
-  console.log('Generating a playlist for each language...')
+  console.log(`Generating /languages...`)
   const outputDir = `${ROOT_DIR}/languages`
   utils.createDir(outputDir)
 
@@ -193,16 +192,10 @@ function generateLanguages() {
   }
 }
 
-function start() {
-  console.log(`Starting...`)
-}
-
 function finish() {
   console.log(
-    `Countries: ${db.countries.count()}. Languages: ${db.languages.count()}. Categories: ${db.categories.count()}. Channels: ${db.channels.count()}.`
+    `\nTotal: ${db.channels.count()} channels, ${db.countries.count()} countries, ${db.languages.count()} languages, ${db.categories.count()} categories.`
   )
-
-  console.log('Done.')
 }
 
 main()
