@@ -1,16 +1,10 @@
 const utils = require('./utils')
-const parser = require('./parser')
-const categories = require('./categories')
 const db = require('./db')
 
 db.load()
 
-const list = {
-  countries: {}
-}
-
 function main() {
-  parseIndex()
+  start()
   generateCountriesTable()
   generateLanguagesTable()
   generateCategoriesTable()
@@ -18,42 +12,34 @@ function main() {
   finish()
 }
 
-function parseIndex() {
-  console.log(`Parsing index...`)
-  const items = parser.parseIndex()
+function generateCountriesTable() {
+  console.log(`Generating countries table...`)
+  const countries = []
 
-  list.countries['undefined'] = {
+  for (const country of db.countries.sortBy(['name']).all()) {
+    let flag = utils.code2flag(country.code)
+    countries.push({
+      country: flag + '&nbsp;' + country.name,
+      channels: db.channels.forCountry(country).count(),
+      playlist: `<code>https://iptv-org.github.io/iptv/countries/${country.code}.m3u</code>`
+    })
+  }
+
+  countries.push({
     country: 'Undefined',
-    channels: 0,
-    playlist: `<code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code>`,
-    name: 'Undefined'
-  }
+    channels: db.channels.forCountry({ code: null }).count(),
+    playlist: `<code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code>`
+  })
 
-  for (const item of items) {
-    const playlist = parser.parsePlaylist(item.url)
-    for (let channel of playlist.channels) {
-      // countries
-      if (!channel.countries.length) {
-        list.countries['undefined'].channels++
-      } else {
-        for (let country of channel.countries) {
-          if (list.countries[country.code]) {
-            list.countries[country.code].channels++
-          } else {
-            let flag = utils.code2flag(country.code)
-            list.countries[country.code] = {
-              country: flag + '&nbsp;' + country.name,
-              channels: 1,
-              playlist: `<code>https://iptv-org.github.io/iptv/countries/${country.code}.m3u</code>`,
-              name: country.name
-            }
-          }
-        }
-      }
-    }
-  }
+  const table = utils.generateTable(countries, {
+    columns: [
+      { name: 'Country', align: 'left' },
+      { name: 'Channels', align: 'right' },
+      { name: 'Playlist', align: 'left', nowrap: true }
+    ]
+  })
 
-  list.countries = Object.values(list.countries)
+  utils.createFile('./.readme/_countries.md', table)
 }
 
 function generateCategoriesTable() {
@@ -114,26 +100,13 @@ function generateLanguagesTable() {
   utils.createFile('./.readme/_languages.md', table)
 }
 
-function generateCountriesTable() {
-  console.log(`Generating countries table...`)
-  list.countries = utils.sortBy(list.countries, ['name'])
-  list.countries.forEach(function (i) {
-    delete i.name
-  })
-  const table = utils.generateTable(list.countries, {
-    columns: [
-      { name: 'Country', align: 'left' },
-      { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left', nowrap: true }
-    ]
-  })
-
-  utils.createFile('./.readme/_countries.md', table)
-}
-
 function generateReadme() {
   console.log(`Generating README.md...`)
   utils.compileMarkdown('../.readme/config.json')
+}
+
+function start() {
+  console.log(`Starting...`)
 }
 
 function finish() {
