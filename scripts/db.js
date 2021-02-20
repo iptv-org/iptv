@@ -8,6 +8,7 @@ db.load = function () {
   const items = parser.parseIndex()
   for (const item of items) {
     const playlist = parser.parsePlaylist(item.url)
+    db.playlists.add(playlist)
     for (const channel of playlist.channels) {
       db.channels.add(channel)
 
@@ -160,6 +161,30 @@ db.categories = {
   list: categories,
   all() {
     return this.list
+  },
+  count() {
+    return this.list.length
+  }
+}
+
+db.playlists = {
+  list: [],
+  add(playlist) {
+    this.list.push(playlist)
+  },
+  all() {
+    return this.list
+  },
+  only(list = []) {
+    return this.list.filter(playlist => list.includes(playlist.name))
+  },
+  except(list = []) {
+    return this.list.filter(playlist => !list.includes(playlist.name))
+  },
+  sortBy(fields) {
+    this.list = utils.sortBy(this.list, fields)
+
+    return this
   },
   count() {
     return this.list.length
