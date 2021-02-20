@@ -67,20 +67,19 @@ function generateCountryIndex() {
   const filename = `${ROOT_DIR}/index.country.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
-  const channels = db.channels.sortBy(['name', 'url']).forCountry({ code: null }).get()
-  for (const channel of channels) {
+  const unsorted = db.playlists.only(['unsorted'])[0]
+  for (const channel of unsorted.channels) {
     const category = channel.category
     channel.category = ''
     utils.appendToFile(filename, channel.toString())
     channel.category = category
   }
 
-  const countries = db.countries.sortBy(['name']).all()
-  for (const country of countries) {
-    const channels = db.channels.sortBy(['name', 'url']).forCountry(country).get()
-    for (const channel of channels) {
+  const playlists = db.playlists.sortBy(['country']).except(['unsorted'])
+  for (const playlist of playlists) {
+    for (const channel of playlist.channels) {
       const category = channel.category
-      channel.category = country.name
+      channel.category = playlist.country
       utils.appendToFile(filename, channel.toString())
       channel.category = category
     }
