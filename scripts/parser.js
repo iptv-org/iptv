@@ -2,6 +2,7 @@ const playlistParser = require('iptv-playlist-parser')
 const epgParser = require('epg-parser')
 const utils = require('./utils')
 const categories = require('./categories')
+const path = require('path');
 
 const parser = {}
 
@@ -15,8 +16,10 @@ parser.parseIndex = function () {
 parser.parsePlaylist = function (filename) {
   const content = utils.readFile(filename)
   const result = playlistParser.parse(content)
+  const name = path.parse(filename).name
+  const country = utils.code2name(name)
 
-  return new Playlist({ header: result.header, items: result.items, url: filename })
+  return new Playlist({ header: result.header, items: result.items, url: filename, country, name })
 }
 
 parser.parseEPG = async function (url) {
@@ -32,8 +35,10 @@ parser.parseEPG = async function (url) {
 }
 
 class Playlist {
-  constructor({ header, items, url }) {
+  constructor({ header, items, url, name, country }) {
     this.url = url
+    this.name = name
+    this.country = country
     this.header = header
     this.channels = items
       .map(item => new Channel({ data: item, header, sourceUrl: url }))
