@@ -60,6 +60,7 @@ Or select one of the playlists from the list below.
 	</tbody>
 </table>
 </details>
+
 ## Playlists by language
 <details open>
 <summary>Click to Expand</summary>
