@@ -4,10 +4,6 @@ Collection of 5000+ publicly available IPTV channels from all over the world.
 
 Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks.
 
-## Contribution
-
-Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before sending an issue or making a pull request.
-
 ## Usage
 
 To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists. You can also use the SFW version of the playlist `https://iptv-org.github.io/iptv/index.sfw.m3u`.
@@ -23,7 +19,8 @@ Also you can instead use one of these playlists:
 Or select one of the playlists from the list below.
 
 ## Playlists by category
-
+<details open>
+<summary>Playlists by category</summary>
 <!-- prettier-ignore -->
 <table>
 	<thead>
@@ -153,6 +150,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Undefined</td><td align="right">5</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
+</details>
 
 ## Playlists by country
 
@@ -399,6 +397,10 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Undefined</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
+
+## Contribution
+
+Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before sending an issue or making a pull request.
 
 ## For Developers
 
