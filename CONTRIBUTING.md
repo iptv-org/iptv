@@ -241,7 +241,6 @@ http://example.com/stream.m3u8
   - `workflows/`
     - `auto-update.yml`: contain actions that automatically updates all playlists every day.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
-  - `CONTRIBUTING.md`: file you are currently reading.
 - `.readme/`
   - `_categories.md`: automatically generated list of all categories and their corresponding playlists.
   - `_countries.md`: automatically generated list of all countries and their corresponding playlists.
@@ -262,5 +261,6 @@ http://example.com/stream.m3u8
   - `test.js`: script for channel testing.
   - `update-readme.js`: used within GitHub Action to update the `README.md` file.
   - `utils.js`: contains functions that are used in other scripts.
+- `CONTRIBUTING.md`: file you are currently reading.
 - `index.m3u`: main playlist that contains links to all playlists in the `channels/` folder.
 - `README.md`: project description generated from the contents of the `.readme/` folder.
