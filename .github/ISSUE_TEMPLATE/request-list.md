@@ -9,4 +9,4 @@ assignees: ''
 
 List of requests for XXX channels from other issues:
 
-- [] xxx
+- [ ] xxx
