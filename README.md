@@ -20,7 +20,7 @@ Or select one of the playlists from the list below.
 
 ## Playlists by category
 <details open>
-<summary>Playlists by category</summary>
+<summary>Click to Expand</summary>
 <!-- prettier-ignore -->
 <table>
 	<thead>
@@ -59,9 +59,10 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Other</td><td align="right">2847</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
 	</tbody>
 </table>
-
+</details>
 ## Playlists by language
-
+<details open>
+<summary>Click to Expand</summary>
 <!-- prettier-ignore -->
 <table>
 	<thead>
@@ -153,7 +154,8 @@ Or select one of the playlists from the list below.
 </details>
 
 ## Playlists by country
-
+<details open>
+<summary>Click to Expand</summary>
 <!-- prettier-ignore -->
 <table>
 	<thead>
@@ -397,7 +399,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Undefined</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
-
+</details>
 ## Contribution
 
 Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before sending an issue or making a pull request.
