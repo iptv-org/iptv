@@ -101,7 +101,7 @@
 		<tr><td align="left">🇮🇶&nbsp;Iraq</td><td align="right">72</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/iq.m3u</code></td></tr>
 		<tr><td align="left">🇮🇪&nbsp;Ireland</td><td align="right">37</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ie.m3u</code></td></tr>
 		<tr><td align="left">🇮🇱&nbsp;Israel</td><td align="right">15</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/il.m3u</code></td></tr>
-		<tr><td align="left">🇮🇹&nbsp;Italy</td><td align="right">125</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/it.m3u</code></td></tr>
+		<tr><td align="left">🇮🇹&nbsp;Italy</td><td align="right">126</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/it.m3u</code></td></tr>
 		<tr><td align="left">🇯🇲&nbsp;Jamaica</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/jm.m3u</code></td></tr>
 		<tr><td align="left">🇯🇵&nbsp;Japan</td><td align="right">35</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/jp.m3u</code></td></tr>
 		<tr><td align="left">🇯🇴&nbsp;Jordan</td><td align="right">45</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/jo.m3u</code></td></tr>
@@ -139,7 +139,7 @@
 		<tr><td align="left">🇲🇳&nbsp;Mongolia</td><td align="right">8</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mn.m3u</code></td></tr>
 		<tr><td align="left">🇲🇪&nbsp;Montenegro</td><td align="right">19</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/me.m3u</code></td></tr>
 		<tr><td align="left">🇲🇸&nbsp;Montserrat</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ms.m3u</code></td></tr>
-		<tr><td align="left">🇲🇦&nbsp;Morocco</td><td align="right">60</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ma.m3u</code></td></tr>
+		<tr><td align="left">🇲🇦&nbsp;Morocco</td><td align="right">62</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ma.m3u</code></td></tr>
 		<tr><td align="left">🇲🇿&nbsp;Mozambique</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mz.m3u</code></td></tr>
 		<tr><td align="left">🇲🇲&nbsp;Myanmar</td><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/mm.m3u</code></td></tr>
 		<tr><td align="left">🇳🇦&nbsp;Namibia</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/na.m3u</code></td></tr>
