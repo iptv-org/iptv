@@ -401,7 +401,6 @@ Or select one of the playlists from the list below.
 	</tbody>
 </table>
 </details>
-
 ## Contribution
 
 Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before sending an issue or making a pull request.
