@@ -19,8 +19,7 @@ Also you can instead use one of these playlists:
 Or select one of the playlists from the list below.
 
 ## Playlists by category
-
-<details>
+<details open>
 <summary>Click to Expand</summary>
 <!-- prettier-ignore -->
 <table>
@@ -63,7 +62,7 @@ Or select one of the playlists from the list below.
 </details>
 
 ## Playlists by language
-<details>
+<details open>
 <summary>Click to Expand</summary>
 <!-- prettier-ignore -->
 <table>
@@ -156,7 +155,7 @@ Or select one of the playlists from the list below.
 </details>
 
 ## Playlists by country
-<details>
+<details open>
 <summary>Click to Expand</summary>
 <!-- prettier-ignore -->
 <table>
