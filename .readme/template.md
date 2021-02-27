@@ -18,20 +18,38 @@ Also you can instead use one of these playlists:
 
 Or select one of the playlists from the list below.
 
-## Playlists by category
+### By category
+
+<details>
+<summary>Expand</summary>
+<br>
 
 <!-- prettier-ignore -->
 #include "./.readme/_categories.md"
 
-## Playlists by language
+</details>
+
+### By language
+
+<details>
+<summary>Expand</summary>
+<br>
 
 <!-- prettier-ignore -->
 #include "./.readme/_languages.md"
 
-## Playlists by country
+</details>
+
+### By country
+
+<details>
+<summary>Expand</summary>
+<br>
 
 <!-- prettier-ignore -->
 #include "./.readme/_countries.md"
+
+</details>
 
 ## For Developers
 
@@ -45,6 +63,10 @@ https://iptv-org.github.io/iptv/channels.json
 
 If successful, you should get the following response:
 
+<details>
+<summary>Expand</summary>
+<br>
+  
 ```
 [
   ...
@@ -78,6 +100,7 @@ If successful, you should get the following response:
   ...
 ]
 ```
+</details>
 
 ## Resources
 
@@ -89,6 +112,4 @@ Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) befor
 
 ## Legal
 
-No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, which to the best of our knowledge have been intentionally made publicly by the copyright holders. If any links in these playlists infringe on your rights as a copyright holder, they may be removed by sending a pull request or opening an issue.
-
-However, note that we have **no control** over the destination of the link, and just removing the link from the playlist will not remove its contents from the web. Note that linking does not directly infringe copyright because no copy is made on the site providing the link, and thus this is **not** a valid reason to send a DMCA notice to GitHub. To remove this content from the web, you should contact the web host that's actually hosting the content (**not** GitHub, nor the maintainers of this repository).
+No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, which to the best of our knowledge have been intentionally made publicly by the copyright holders. If any links in these playlists infringe on your rights as a copyright holder, they may be removed by sending a pull request or opening an issue. However, note that we have **no control** over the destination of the link, and just removing the link from the playlist will not remove its contents from the web. Note that linking does not directly infringe copyright because no copy is made on the site providing the link, and thus this is **not** a valid reason to send a DMCA notice to GitHub. To remove this content from the web, you should contact the web host that's actually hosting the content (**not** GitHub, nor the maintainers of this repository).
