@@ -18,7 +18,7 @@ Also you can instead use one of these playlists:
 
 Or select one of the playlists from the list below.
 
-### By Category
+### By category
 
 <details>
 <summary>Expand</summary>
@@ -29,7 +29,7 @@ Or select one of the playlists from the list below.
 
 </details>
 
-### By Language
+### By language
 
 <details>
 <summary>Expand</summary>
@@ -40,7 +40,7 @@ Or select one of the playlists from the list below.
 
 </details>
 
-### By Country
+### By country
 
 <details>
 <summary>Expand</summary>
@@ -51,15 +51,7 @@ Or select one of the playlists from the list below.
 
 </details>
 
-## Contribution
-
-Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before sending an issue or making a pull request.
-
 ## For Developers
-
-<details>
-<summary>Expand</summary>
-<br>
 
 In addition to the above methods, you can also get a list of all available channels in JSON format.
 
@@ -71,6 +63,10 @@ https://iptv-org.github.io/iptv/channels.json
 
 If successful, you should get the following response:
 
+<details>
+<summary>Expand</summary>
+<br>
+  
 ```
 [
   ...
@@ -109,6 +105,10 @@ If successful, you should get the following response:
 ## Resources
 
 You can find links to various IPTV related resources in this repository [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv).
+
+## Contribution
+
+Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before sending an issue or making a pull request.
 
 ## Legal
 
