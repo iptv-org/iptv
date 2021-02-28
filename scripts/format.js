@@ -47,6 +47,7 @@ async function main() {
   if (playlists.length) {
     await loadPlaylist('channels/unsorted.m3u')
       .then(removeUnsortedDuplicates)
+      .then(filterChannels)
       .then(sortChannels)
       .then(savePlaylist)
       .then(done)
