@@ -184,8 +184,8 @@ async function updateFromEPG(playlist) {
 
 async function removeUnsortedDuplicates(playlist) {
   console.info(`  Looking for duplicates...`)
-  const urls = globalBuffer.map(i => i.url)
-  const channels = playlist.channels.filter(i => !urls.includes(i.url))
+  const urls = globalBuffer.map(i => i.url.replace(/(^\w+:|^)\/\//, ''))
+  const channels = playlist.channels.filter(i => !urls.includes(i.url.replace(/(^\w+:|^)\/\//, '')))
   if (channels.length === playlist.channels.length) return playlist
   playlist.channels = channels
 
