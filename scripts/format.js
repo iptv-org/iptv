@@ -87,9 +87,10 @@ async function removeDuplicates(playlist) {
   console.info(`  Looking for duplicates...`)
   let buffer = {}
   const channels = playlist.channels.filter(i => {
-    const result = typeof buffer[i.url] === 'undefined'
+    const url = i.url.replace(/(^\w+:|^)\/\//, '')
+    const result = typeof buffer[url] === 'undefined'
     if (result) {
-      buffer[i.url] = true
+      buffer[url] = true
     }
 
     return result
