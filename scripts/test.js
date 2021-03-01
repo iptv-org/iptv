@@ -51,8 +51,7 @@ async function test() {
         .catch(error => {
           if (error.response) {
             stats.failures++
-            utils.writeToLog(country.url, error.message, channel.url)
-            console.log(`Error: ${error.message} '${channel.url}'`)
+            utils.writeToLog(item.url, error.message, channel.url)
           }
         })
     }
@@ -62,7 +61,8 @@ async function test() {
     console.log(`\nOK (${stats.playlists} playlists, ${stats.channels} channels)`)
   } else {
     console.log(
-      `\nFAILURES! (${stats.playlists} playlists, ${stats.channels} channels, ${stats.failures} failures)`
+      `\nFAILURES! (${stats.playlists} playlists, ${stats.channels} channels, ${stats.failures} failures)
+      \n\nCheck the "error.log" file to see which links failed.`
     )
 
     process.exit(1)
