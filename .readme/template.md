@@ -108,7 +108,7 @@ You can find links to various IPTV related resources in this repository [iptv-or
 
 ## Contribution
 
-Please make sure to read the [Contributing Guide](.github/CONTRIBUTING.md) before sending an issue or making a pull request.
+Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sending an issue or making a pull request.
 
 ## Legal
 
