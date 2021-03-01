@@ -1,4 +1,5 @@
 const { program } = require('commander')
+const blacklist = require('./blacklist')
 const parser = require('./parser')
 const utils = require('./utils')
 const axios = require('axios')
@@ -35,6 +36,7 @@ async function main() {
     await loadPlaylist(playlist.url)
       .then(addToBuffer)
       .then(sortChannels)
+      .then(filterChannels)
       .then(removeDuplicates)
       .then(detectResolution)
       .then(updateFromEPG)
@@ -45,6 +47,7 @@ async function main() {
   if (playlists.length) {
     await loadPlaylist('channels/unsorted.m3u')
       .then(removeUnsortedDuplicates)
+      .then(filterChannels)
       .then(sortChannels)
       .then(savePlaylist)
       .then(done)
@@ -83,13 +86,24 @@ async function sortChannels(playlist) {
   return playlist
 }
 
+async function filterChannels(playlist) {
+  console.info(`  Filtering channels...`)
+  const list = blacklist.map(i => i.toLowerCase())
+  playlist.channels = playlist.channels.filter(i => {
+    return !list.includes(i.name.toLowerCase())
+  })
+
+  return playlist
+}
+
 async function removeDuplicates(playlist) {
   console.info(`  Looking for duplicates...`)
   let buffer = {}
   const channels = playlist.channels.filter(i => {
-    const result = typeof buffer[i.url] === 'undefined'
+    const url = i.url.replace(/(^\w+:|^)\/\//, '')
+    const result = typeof buffer[url] === 'undefined'
     if (result) {
-      buffer[i.url] = true
+      buffer[url] = true
     }
 
     return result
@@ -183,8 +197,8 @@ async function updateFromEPG(playlist) {
 
 async function removeUnsortedDuplicates(playlist) {
   console.info(`  Looking for duplicates...`)
-  const urls = globalBuffer.map(i => i.url)
-  const channels = playlist.channels.filter(i => !urls.includes(i.url))
+  const urls = globalBuffer.map(i => i.url.replace(/(^\w+:|^)\/\//, ''))
+  const channels = playlist.channels.filter(i => !urls.includes(i.url.replace(/(^\w+:|^)\/\//, '')))
   if (channels.length === playlist.channels.length) return playlist
   playlist.channels = channels
 
