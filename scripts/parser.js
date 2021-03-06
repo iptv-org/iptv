@@ -2,7 +2,7 @@ const playlistParser = require('iptv-playlist-parser')
 const epgParser = require('epg-parser')
 const utils = require('./utils')
 const categories = require('./categories')
-const path = require('path');
+const path = require('path')
 
 const parser = {}
 
@@ -172,10 +172,18 @@ class Channel {
     return (this.tvg.id || this.tvg.name) && this.tvg.url ? this.tvg.url : ''
   }
 
+  get tvgId() {
+    return this.tvg.id || ''
+  }
+
+  get tvgName() {
+    return this.tvg.name || this.name
+  }
+
   toString(short = false) {
     this.tvg.country = this.tvg.country.toUpperCase()
 
-    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
+    let info = `-1 tvg-id="${this.tvgId}" tvg-name="${this.tvgName}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
 
     if (!short) {
       info += ` tvg-url="${this.tvgUrl}"`
@@ -211,8 +219,8 @@ class Channel {
       languages: this.languages,
       countries: this.countries,
       tvg: {
-        id: this.tvg.id || null,
-        name: this.tvg.name || null,
+        id: this.tvgId || null,
+        name: this.tvgName || null,
         url: this.tvg.url || null
       }
     }
