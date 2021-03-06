@@ -94,42 +94,6 @@ utils.sortBy = function (arr, fields) {
   })
 }
 
-utils.loadEPG = function (url) {
-  return new Promise((resolve, reject) => {
-    var buffer = []
-    axios({
-      method: 'get',
-      url: url,
-      responseType: 'stream',
-      timeout: 60000
-    })
-      .then(res => {
-        let stream
-        if (/\.gz$/i.test(url)) {
-          let gunzip = zlib.createGunzip()
-          res.data.pipe(gunzip)
-          stream = gunzip
-        } else {
-          stream = res.data
-        }
-
-        stream
-          .on('data', function (data) {
-            buffer.push(data.toString())
-          })
-          .on('end', function () {
-            resolve(buffer.join(''))
-          })
-          .on('error', function (e) {
-            reject(e)
-          })
-      })
-      .catch(e => {
-        reject(e)
-      })
-  })
-}
-
 utils.getBasename = function (filename) {
   return path.basename(filename, path.extname(filename))
 }
