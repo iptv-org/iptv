@@ -6,6 +6,7 @@ const urlParser = require('url')
 const escapeStringRegexp = require('escape-string-regexp')
 const markdownInclude = require('markdown-include')
 const iso6393 = require('iso-639-3')
+const transliteration = require('transliteration')
 const regions = require('./regions')
 const categories = require('./categories')
 const intlDisplayNames = new Intl.DisplayNames(['en'], {
@@ -14,6 +15,13 @@ const intlDisplayNames = new Intl.DisplayNames(['en'], {
 })
 
 const utils = {}
+
+utils.name2id = function (name) {
+  return transliteration
+    .transliterate(name)
+    .replace(/\+/gi, 'Plus')
+    .replace(/[^a-z\d]+/gi, '')
+}
 
 utils.code2flag = function (code) {
   code = code.toUpperCase()
