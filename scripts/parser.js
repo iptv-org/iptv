@@ -67,10 +67,10 @@ class Channel {
   constructor({ data, header, sourceUrl }) {
     this.parseData(data)
 
+    this.filename = utils.getBasename(sourceUrl)
     if (!this.countries.length) {
-      const filename = utils.getBasename(sourceUrl)
-      const countryName = utils.code2name(filename)
-      this.countries = countryName ? [{ code: filename.toLowerCase(), name: countryName }] : []
+      const countryName = utils.code2name(this.filename)
+      this.countries = countryName ? [{ code: this.filename, name: countryName }] : []
       this.tvg.country = this.countries.map(c => c.code.toUpperCase()).join(';')
     }
 
@@ -173,7 +173,15 @@ class Channel {
   }
 
   get tvgId() {
-    return this.tvg.id || ''
+    if (this.tvg.id) {
+      return this.tvg.id
+    } else if (this.filename !== 'unsorted') {
+      const id = utils.name2id(this.tvgName)
+
+      return id ? `${id}.${this.filename}` : ''
+    }
+
+    return ''
   }
 
   get tvgName() {
