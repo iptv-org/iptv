@@ -172,7 +172,13 @@ class Channel {
   }
 
   get tvgName() {
-    return this.tvg.name || this.name
+    if (this.tvg.name) {
+      return this.tvg.name
+    } else if (this.filename !== 'unsorted') {
+      return this.name.replace(/\"/gi, '')
+    }
+
+    return ''
   }
 
   toString(short = false) {
