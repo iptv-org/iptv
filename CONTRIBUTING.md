@@ -37,6 +37,7 @@ If you would like to replace a broken stream or add a new one, please do the fol
 
 - make sure that the link you want to add works by using a program like [VLC media player](https://www.videolan.org/vlc/index.html)
 - check if the channel is working outside your country by using a vpn or use a service we highly recommend like [streamtest.in](https://streamtest.in/)
+- if the broadcast is not available outside of a certain country, add the label `[Geo-blocked]` to the end of the channel name
 - find out from which country the channel is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/). If you are unable to determine which country the channel belongs to, add the channel onto the `channels/unsorted.m3u` playlist
 - find the corresponding [ISO_3166-2 code](https://en.wikipedia.org/wiki/ISO_3166-2) for the country
 - open the `/channels` folder and find the file that has the same code in its name and open it
