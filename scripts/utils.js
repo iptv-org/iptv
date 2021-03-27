@@ -181,4 +181,8 @@ utils.sleep = function (ms) {
   }
 }
 
+utils.removeProtocol = function (string) {
+  return string.replace(/(^\w+:|^)\/\//, '')
+}
+
 module.exports = utils
