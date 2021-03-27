@@ -98,7 +98,7 @@ async function removeDuplicates(playlist) {
   console.info(`  Looking for duplicates...`)
   let buffer = {}
   const channels = playlist.channels.filter(i => {
-    const url = i.url.replace(/(^\w+:|^)\/\//, '')
+    const url = utils.removeProtocol(i.url)
     const result = typeof buffer[url] === 'undefined'
     if (result) {
       buffer[url] = true
@@ -161,9 +161,20 @@ function parseResolution(string) {
 
 async function removeUnsortedDuplicates(playlist) {
   console.info(`  Looking for duplicates...`)
-  const urls = globalBuffer.map(i => i.url.replace(/(^\w+:|^)\/\//, ''))
-  const channels = playlist.channels.filter(i => !urls.includes(i.url.replace(/(^\w+:|^)\/\//, '')))
+  // locally
+  let buffer = {}
+  let channels = playlist.channels.filter(i => {
+    const url = utils.removeProtocol(i.url)
+    const result = typeof buffer[url] === 'undefined'
+    if (result) buffer[url] = true
+
+    return result
+  })
+  // globally
+  const urls = globalBuffer.map(i => utils.removeProtocol(i.url))
+  channels = channels.filter(i => !urls.includes(utils.removeProtocol(i.url)))
   if (channels.length === playlist.channels.length) return playlist
+
   playlist.channels = channels
 
   return playlist
