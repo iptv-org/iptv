@@ -21,7 +21,10 @@ const instance = axios.create({
   maxContentLength: 20000,
   httpsAgent: new https.Agent({
     rejectUnauthorized: false
-  })
+  }),
+  validateStatus: function (status) {
+    return (status >= 200 && status < 300) || status === 403
+  }
 })
 
 let stats = {
@@ -45,6 +48,9 @@ async function test() {
     for (let channel of playlist.channels) {
       bar.tick()
       stats.channels++
+
+      if (channel.url.startsWith('rtmp://')) continue
+
       await instance
         .get(channel.url)
         .then(utils.sleep(config.delay))
