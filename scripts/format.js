@@ -34,9 +34,9 @@ async function main() {
   for (const playlist of playlists) {
     await loadPlaylist(playlist.url)
       .then(addToBuffer)
+      .then(removeDuplicates)
       .then(sortChannels)
       .then(filterChannels)
-      .then(removeDuplicates)
       .then(detectResolution)
       .then(savePlaylist)
       .then(done)
