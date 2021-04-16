@@ -36,7 +36,7 @@
 		<tr><td align="left">Indonesian</td><td align="right">32</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ind.m3u</code></td></tr>
 		<tr><td align="left">Inuktitut</td><td align="right">3</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/iku.m3u</code></td></tr>
 		<tr><td align="left">Italian</td><td align="right">158</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/ita.m3u</code></td></tr>
-		<tr><td align="left">Japanese</td><td align="right">47</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/jpn.m3u</code></td></tr>
+		<tr><td align="left">Japanese</td><td align="right">46</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/jpn.m3u</code></td></tr>
 		<tr><td align="left">Javanese</td><td align="right">3</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/jav.m3u</code></td></tr>
 		<tr><td align="left">Kannada</td><td align="right">6</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/kan.m3u</code></td></tr>
 		<tr><td align="left">Kazakh</td><td align="right">12</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/kaz.m3u</code></td></tr>
