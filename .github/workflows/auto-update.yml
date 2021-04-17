@@ -31,7 +31,7 @@ jobs:
       - name: Generate Playlists
         run: node scripts/generate.js
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@master
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         env:
           ACCESS_TOKEN: ${{ secrets.REPO_SCOPED_TOKEN }}
           BASE_BRANCH: master
