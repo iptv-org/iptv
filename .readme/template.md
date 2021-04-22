@@ -6,19 +6,28 @@ Internet Protocol television (IPTV) is the delivery of television content over I
 
 ## Usage
 
-To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists. You can also use the SFW version of the playlist `https://iptv-org.github.io/iptv/index.sfw.m3u`.
+To watch IPTV you just need to paste one of the links available to any player that supports M3U playlists.
+
+Below is an example of playlist usage in VLC :
 
 ![VLC Network Panel](.readme/preview.png)
 
-Also you can instead use one of these playlists:
+## Available playlists
 
-- `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
-- `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
-- `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
+There are multiple playlists available for each of your desires :
+
+- `https://iptv-org.github.io/iptv/index.m3u` contains all the links that we've gathered so far.
+- `https://iptv-org.github.io/iptv/index.sfw.m3u` contains links we've classified as "safe for work", meaning no adult channels are in there.
+
+*Note that if you find any adult channel that we did not classify as "XXX", please let us know by making a pull request.*
+
+- `https://iptv-org.github.io/iptv/index.country.m3u` contains all the links grouped by their country (of streaming origin, specific countries available below)
+- `https://iptv-org.github.io/iptv/index.category.m3u` contains all the links grouped by their category (specific categories available below)
+- `https://iptv-org.github.io/iptv/index.language.m3u` contains all the links grouped by their language (specific languages available below)
 
 Or select one of the playlists from the list below.
 
-### By category
+### Playlists by category
 
 <details>
 <summary>Expand</summary>
@@ -29,7 +38,7 @@ Or select one of the playlists from the list below.
 
 </details>
 
-### By language
+### Playlists by language
 
 <details>
 <summary>Expand</summary>
@@ -40,7 +49,7 @@ Or select one of the playlists from the list below.
 
 </details>
 
-### By country
+### Playlists by country
 
 <details>
 <summary>Expand</summary>
