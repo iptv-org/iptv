@@ -25,7 +25,7 @@ There are multiple playlists available for each of your desires :
 - `https://iptv-org.github.io/iptv/index.category.m3u` contains all the links grouped by their category (specific categories available below)
 - `https://iptv-org.github.io/iptv/index.language.m3u` contains all the links grouped by their language (specific languages available below)
 
-Are your tastes more specific, or do you really need something specific ? Use one of the playlists from the list below.
+Are your tastes more targeted, or do you need something specific ? Use one of the playlists from the list below.
 
 ### Playlists by category
 
