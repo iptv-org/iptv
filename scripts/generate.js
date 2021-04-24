@@ -41,9 +41,7 @@ function generateIndex() {
     const info = channel.getInfo()
     if (!buffer.includes(info)) {
       utils.appendToFile(filename, channel.toString())
-      if (channel.filename !== 'unsorted') {
-        buffer.push(info)
-      }
+      buffer.push(info)
     }
   }
 }
@@ -59,9 +57,7 @@ function generateSFWIndex() {
     const info = channel.getInfo()
     if (!buffer.includes(info)) {
       utils.appendToFile(filename, channel.toString())
-      if (channel.filename !== 'unsorted') {
-        buffer.push(info)
-      }
+      buffer.push(info)
     }
   }
 }
@@ -81,15 +77,19 @@ function generateCountryIndex() {
   const filename = `${ROOT_DIR}/index.country.m3u`
   utils.createFile(filename, '#EXTM3U\n')
 
+  const buffer = []
   const unsorted = db.playlists.only(['unsorted'])[0]
   for (const channel of unsorted.channels) {
     const category = channel.category
     channel.category = ''
-    utils.appendToFile(filename, channel.toString())
+    const info = channel.getInfo()
+    if (!buffer.includes(info)) {
+      utils.appendToFile(filename, channel.toString())
+      buffer.push(info)
+    }
     channel.category = category
   }
 
-  const buffer = []
   const playlists = db.playlists.sortBy(['country']).except(['unsorted'])
   for (const playlist of playlists) {
     for (const channel of playlist.channels) {
@@ -118,16 +118,13 @@ function generateLanguageIndex() {
     const info = channel.getInfo()
     if (!buffer.includes(info)) {
       utils.appendToFile(filename, channel.toString())
-      if (channel.filename !== 'unsorted') {
-        buffer.push(info)
-      }
+      buffer.push(info)
     }
     channel.category = category
   }
 
   const languages = db.languages.sortBy(['name']).all()
   for (const language of languages) {
-    const buffer = []
     const channels = db.channels.sortBy(['name', 'url']).forLanguage(language).get()
     for (const channel of channels) {
       const category = channel.category
@@ -153,9 +150,7 @@ function generateCategoryIndex() {
     const info = channel.getInfo()
     if (!buffer.includes(info)) {
       utils.appendToFile(filename, channel.toString())
-      if (channel.filename !== 'unsorted') {
-        buffer.push(info)
-      }
+      buffer.push(info)
     }
   }
 }
@@ -175,9 +170,7 @@ function generateCategories() {
       const info = channel.getInfo()
       if (!buffer.includes(info)) {
         utils.appendToFile(filename, channel.toString())
-        if (channel.filename !== 'unsorted') {
-          buffer.push(info)
-        }
+        buffer.push(info)
       }
     }
   }
@@ -190,9 +183,7 @@ function generateCategories() {
     const info = channel.getInfo()
     if (!buffer.includes(info)) {
       utils.appendToFile(other, channel.toString())
-      if (channel.filename !== 'unsorted') {
-        buffer.push(info)
-      }
+      buffer.push(info)
     }
   }
 }
@@ -212,9 +203,7 @@ function generateCountries() {
       const info = channel.getInfo()
       if (!buffer.includes(info)) {
         utils.appendToFile(filename, channel.toString())
-        if (channel.filename !== 'unsorted') {
-          buffer.push(info)
-        }
+        buffer.push(info)
       }
     }
   }
@@ -227,9 +216,7 @@ function generateCountries() {
     const info = channel.getInfo()
     if (!buffer.includes(info)) {
       utils.appendToFile(other, channel.toString())
-      if (channel.filename !== 'unsorted') {
-        buffer.push(info)
-      }
+      buffer.push(info)
     }
   }
 }
@@ -249,9 +236,7 @@ function generateLanguages() {
       const info = channel.getInfo()
       if (!buffer.includes(info)) {
         utils.appendToFile(filename, channel.toString())
-        if (channel.filename !== 'unsorted') {
-          buffer.push(info)
-        }
+        buffer.push(info)
       }
     }
   }
@@ -264,9 +249,7 @@ function generateLanguages() {
     const info = channel.getInfo()
     if (!buffer.includes(info)) {
       utils.appendToFile(other, channel.toString())
-      if (channel.filename !== 'unsorted') {
-        buffer.push(info)
-      }
+      buffer.push(info)
     }
   }
 }
