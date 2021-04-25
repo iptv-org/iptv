@@ -25,11 +25,11 @@ If you have an idea how to improve the project create an [issue](https://github.
 
 ## Request a Channel
 
-To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=-----channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do.
+To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=------channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do.
 
 ## Report a Broken Stream
 
-To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=---broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
+To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=----broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
 
 ## Add or Replace a Stream
 
@@ -234,11 +234,7 @@ http://example.com/stream.m3u8
 ## Project Structure
 
 - `.github/`
-  - `ISSUE_TEMPLATE/`
-    - `broken-stream.md`: issue template for reporting a broken stream.
-    - `channel-request.md`: template for channel request.
-    - `feature-request.md`: template for feature request.
-    - `remove-channel.md`: template for channel deletion request.
+  - `ISSUE_TEMPLATE/`: issue templates for this repository.
   - `workflows/`
     - `auto-update.yml`: contain actions that automatically updates all playlists every day.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
@@ -254,7 +250,9 @@ http://example.com/stream.m3u8
   - ...
   - `unsorted.m3u`: playlist with channels not yet sorted.
 - `scripts/`
+  - `blacklist.json`: list of channels banned for addition to the repository.
   - `categories.json`: list of supported categories.
+  - `db.js`: contains functions for retrieving and managing the channel list.
   - `format.js`: used within GitHub Action to sort channels and remove duplicates from each playlist.
   - `generate.js`: used within GitHub Action to generate all additional playlists.
   - `parser.js`: contains functions for parsing playlists.
