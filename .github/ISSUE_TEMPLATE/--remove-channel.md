@@ -1,5 +1,5 @@
 ---
-name: Remove Channel
+name: "❌ Remove Channel"
 about: Request to remove a channel
 title: 'Remove: xxx'
 labels: DMCA
