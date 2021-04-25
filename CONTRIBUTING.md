@@ -21,15 +21,15 @@
 
 ## Feature Requests
 
-If you have an idea how to improve the project create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=discussion&template=feature-request.md&title=Propose%3A+xxx) with a detailed description of your idea.
+If you have an idea how to improve the project create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=discussion&template=----feature-request.md&title=Propose%3A+xxx) with a detailed description of your idea.
 
 ## Request a Channel
 
-To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do.
+To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=-----channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do.
 
 ## Report a Broken Stream
 
-To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
+To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=---broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
 
 ## Add or Replace a Stream
 
@@ -154,7 +154,7 @@ If you did everything right, then by opening a playlist in a player that support
 ## Request Channel Removal
 
 - publish your DMCA notice somewhere
-- create an issue using this [link](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=remove-channel.md&title=Remove%3A+xxx) and add a link to the DMCA notice in it
+- create an issue using this [link](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=--remove-channel.md&title=Remove%3A+xxx) and add a link to the DMCA notice in it
 
 ## Make changes to README.md
 
