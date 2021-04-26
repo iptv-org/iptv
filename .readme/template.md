@@ -18,7 +18,7 @@ Also you can instead use one of these playlists:
 
 Or select one of the playlists from the list below.
 
-### By category
+### Playlists by category
 
 <details>
 <summary>Expand</summary>
@@ -29,7 +29,7 @@ Or select one of the playlists from the list below.
 
 </details>
 
-### By language
+### Playlists by language
 
 <details>
 <summary>Expand</summary>
@@ -40,7 +40,7 @@ Or select one of the playlists from the list below.
 
 </details>
 
-### By country
+### Playlists by country
 
 <details>
 <summary>Expand</summary>
