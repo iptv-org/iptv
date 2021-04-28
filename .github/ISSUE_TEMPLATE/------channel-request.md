@@ -1,5 +1,5 @@
 ---
-name: Channel Request
+name: "\U0001F4FA Channel Request"
 about: Request to add a channel to the playlist
 title: 'Add: xxx'
 labels: channel request

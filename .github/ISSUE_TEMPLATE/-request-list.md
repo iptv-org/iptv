@@ -1,8 +1,8 @@
 ---
-name: Request List
-about: A list of channel requests from any one country
+name: "\U0001F4DD Request List"
+about: List of requests from other issues
 title: xxx Request Channels
-labels: ''
+labels: channel request
 assignees: ''
 
 ---
