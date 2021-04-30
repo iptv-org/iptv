@@ -1,6 +1,7 @@
 name: check
 on:
   workflow_dispatch:
+  push:
   pull_request:
     types: [opened, synchronize, reopened, edited]
 jobs:
