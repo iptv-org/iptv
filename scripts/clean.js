@@ -66,14 +66,19 @@ async function checkStatus(playlist) {
     ) {
       results.push(channel)
     } else {
-      const response = await instance
+      await instance
         .get(channel.url)
+        .then(() => {
+          results.push(channel)
+        })
         .then(utils.sleep(config.delay))
-        .catch(err => {})
-
-      if (response && response.status === 200) {
-        results.push(channel)
-      }
+        .catch(err => {
+          if (err.response && err.response.status === 404) {
+            //console.error(err)
+          } else {
+            results.push(channel)
+          }
+        })
     }
   }
 
