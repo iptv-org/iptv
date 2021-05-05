@@ -118,13 +118,13 @@ async function detectResolution(playlist) {
   const results = []
   for (const channel of playlist.channels) {
     bar.tick()
-    const url = channel.url
-    const response = await instance
-      .get(url)
-      .then(utils.sleep(config.delay))
-      .catch(err => {})
-    if (response) {
-      if (response.status === 200) {
+    if (!channel.resolution.height) {
+      const response = await instance
+        .get(channel.url)
+        .then(utils.sleep(config.delay))
+        .catch(err => {})
+
+      if (response && response.status === 200) {
         if (/^#EXTM3U/.test(response.data)) {
           const resolution = parseResolution(response.data)
           if (resolution) {
