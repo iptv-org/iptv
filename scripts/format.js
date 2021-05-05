@@ -180,7 +180,7 @@ async function removeUnsortedDuplicates(playlist) {
 
 async function savePlaylist(playlist) {
   const original = utils.readFile(playlist.url)
-  const output = playlist.toString(true)
+  const output = playlist.toString()
 
   if (original === output) {
     console.info(`No changes have been made.`)
