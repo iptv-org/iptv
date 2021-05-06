@@ -167,6 +167,12 @@ jobs:
           ]
       max-parallel: 2
     steps:
+      - name: Create Branch
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'bot/patch-1'
       - name: Checkout
         uses: actions/checkout@v2
         with:
