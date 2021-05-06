@@ -10,8 +10,8 @@ program
   .option('-d, --debug', 'Debug mode')
   .option('-c, --country <country>', 'Comma-separated list of country codes', '')
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
-  .option('--delay <delay>', 'Delay between parser requests', 1000)
-  .option('--timeout <timeout>', 'Set timeout for each request', 3000)
+  .option('--delay <delay>', 'Delay between parser requests', 0)
+  .option('--timeout <timeout>', 'Set timeout for each request', 1000)
   .parse(process.argv)
 
 const config = program.opts()
