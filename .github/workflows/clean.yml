@@ -184,10 +184,12 @@ jobs:
       - name: Commit Changes
         run: |
           git add .
-          git diff-index --quiet HEAD || git commit -m "[Bot] Update ${{ matrix.country }}.m3u"
-          git config pull.rebase false
-          git pull origin bot/patch-1
-          git push -u origin bot/patch-1
+          git commit -m "[Bot] Update ${{ matrix.country }}.m3u"
+      - name: Push Changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: bot/patch-1
   # create-pr:
   #   runs-on: ubuntu-latest
   #   needs: update
