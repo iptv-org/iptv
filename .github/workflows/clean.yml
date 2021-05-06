@@ -185,6 +185,7 @@ jobs:
         run: |
           git add .
           git diff-index --quiet HEAD || git commit -m "[Bot] Update ${{ matrix.country }}.m3u"
+          git pull origin bot/patch-1
           git push -u origin bot/patch-1
   # create-pr:
   #   runs-on: ubuntu-latest
