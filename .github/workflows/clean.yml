@@ -177,3 +177,9 @@ jobs:
         run: npm install
       - name: Remove Broken Links
         run: node scripts/clean.js --country=${{ matrix.country }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: '[Bot] Remove broken links'
+          body: |
+            This pull request is created automatically.
