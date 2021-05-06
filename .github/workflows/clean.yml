@@ -10,10 +10,10 @@ jobs:
             # ad
             # ae,
             # af,
-            al
+            al,
             # am,
             # ao,
-            # ar,
+            ar
             # at,
             # au,
             # aw,
@@ -180,3 +180,4 @@ jobs:
           title: '[Bot] Remove broken links'
           body: |
             This pull request is created automatically.
+          commit-message: 'Update ${{ matrix.country }}.m3u'
