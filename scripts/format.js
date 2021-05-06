@@ -12,14 +12,14 @@ program
   .option('-c, --country <country>', 'Comma-separated list of country codes', '')
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
   .option('--delay <delay>', 'Delay between parser requests', 1000)
-  .option('--timeout <timeout>', 'Set timeout for each request', 3000)
+  .option('--timeout <timeout>', 'Set timeout for each request', 5000)
   .parse(process.argv)
 
 const config = program.opts()
 
 const instance = axios.create({
   timeout: config.timeout,
-  maxContentLength: 20000,
+  maxContentLength: 200000,
   httpsAgent: new https.Agent({
     rejectUnauthorized: false
   })
@@ -41,14 +41,14 @@ async function main() {
       .then(done)
   }
 
-  if (playlists.length) {
-    await loadPlaylist('channels/unsorted.m3u')
-      .then(removeUnsortedDuplicates)
-      .then(filterChannels)
-      .then(sortChannels)
-      .then(savePlaylist)
-      .then(done)
-  }
+  // if (playlists.length) {
+  //   await loadPlaylist('channels/unsorted.m3u')
+  //     .then(removeUnsortedDuplicates)
+  //     .then(filterChannels)
+  //     .then(sortChannels)
+  //     .then(savePlaylist)
+  //     .then(done)
+  // }
 
   finish()
 }
