@@ -10,8 +10,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        country:
-          [
+        country: [
             ad,
             ae,
             af,
@@ -167,8 +166,8 @@ jobs:
             vn,
             xk,
             ye,
-            zm,
-            unsorted
+            zm
+            # unsorted
           ]
     steps:
       - name: Checkout
@@ -176,7 +175,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Remove Broken Links
-        run: node scripts/clean.js --country=${{ matrix.country }}
+        run: node scripts/clean.js --country=${{ matrix.country }} --debug
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
