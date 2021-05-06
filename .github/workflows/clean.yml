@@ -7,14 +7,14 @@ jobs:
     strategy:
       matrix:
         country: [
-            ad,
-            ae,
-            af,
-            al,
-            am,
-            ao,
-            ar,
-            at
+            ad
+            # ae,
+            # af,
+            # al,
+            # am,
+            # ao,
+            # ar,
+            # at
             # au,
             # aw,
             # az,
@@ -165,6 +165,7 @@ jobs:
             # zm,
             # unsorted
           ]
+      max-parallel: 2
     steps:
       - name: Checkout
         uses: actions/checkout@v2
