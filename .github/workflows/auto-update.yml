@@ -4,21 +4,203 @@ on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
-  format:
+  remove-duplicates:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Dependencies
         run: npm install
-      - name: Format Playlists
-        run: node scripts/format.js
+      - name: Remove Duplicates
+        run: node scripts/remove-duplicates.js
       - name: Commit Changes
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git diff-index --quiet HEAD || git commit -m "[Bot] Format playlists"
+          git diff-index --quiet HEAD || git commit -m "[Bot] Remove duplicates"
+          git pull
+          git push
+  format:
+    runs-on: ubuntu-latest
+    needs: remove-duplicates
+    continue-on-error: true
+    strategy:
+      matrix:
+        country:
+          [
+            ad,
+            ae,
+            af,
+            al,
+            am,
+            ao,
+            ar,
+            at,
+            au,
+            aw,
+            az,
+            ba,
+            bb,
+            bd,
+            be,
+            bf,
+            bg,
+            bh,
+            bn,
+            bo,
+            br,
+            bs,
+            by,
+            ca,
+            cd,
+            cg,
+            ch,
+            ci,
+            cl,
+            cm,
+            cn,
+            co,
+            cr,
+            cu,
+            cw,
+            cy,
+            cz,
+            de,
+            dk,
+            do,
+            dz,
+            ec,
+            ee,
+            eg,
+            es,
+            et,
+            fi,
+            fj,
+            fo,
+            fr,
+            ge,
+            gh,
+            gm,
+            gn,
+            gp,
+            gq,
+            gr,
+            gt,
+            hk,
+            hn,
+            hr,
+            ht,
+            hu,
+            id,
+            ie,
+            il,
+            in,
+            iq,
+            ir,
+            is,
+            it,
+            jm,
+            jo,
+            jp,
+            ke,
+            kg,
+            kh,
+            kp,
+            kr,
+            kw,
+            kz,
+            la,
+            lb,
+            li,
+            lk,
+            lt,
+            lu,
+            lv,
+            ly,
+            ma,
+            mc,
+            md,
+            me,
+            mk,
+            ml,
+            mm,
+            mn,
+            mo,
+            mt,
+            mx,
+            my,
+            mz,
+            ne,
+            ng,
+            nl,
+            no,
+            np,
+            nz,
+            om,
+            pa,
+            pe,
+            ph,
+            pk,
+            pl,
+            pr,
+            ps,
+            pt,
+            py,
+            qa,
+            ro,
+            rs,
+            ru,
+            rw,
+            sa,
+            sd,
+            se,
+            sg,
+            si,
+            sk,
+            sl,
+            sm,
+            sn,
+            so,
+            sv,
+            sy,
+            th,
+            tj,
+            tm,
+            tn,
+            tr,
+            tt,
+            tw,
+            tz,
+            ua,
+            ug,
+            uk,
+            us,
+            uy,
+            uz,
+            va,
+            ve,
+            vi,
+            vn,
+            xk,
+            ye,
+            zm
+          ]
+      fail-fast: false
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Format Playlists
+        run: node scripts/format.js --country=${{ matrix.country }}
+      - name: Commit Changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git diff-index --quiet HEAD || git commit -m "[Bot] Format ${{ matrix.country }}.m3u"
+          git pull
           git push
   generate:
     runs-on: ubuntu-latest
