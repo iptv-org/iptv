@@ -112,7 +112,8 @@ async function removeDuplicates(playlist) {
 }
 
 async function detectResolution(playlist) {
-  const bar = new ProgressBar('  Detecting resolution: [:bar] :current/:total (:percent) ', {
+  console.log('  Detecting resolution...')
+  const bar = new ProgressBar('    Progress: [:bar] :current/:total (:percent) ', {
     total: playlist.channels.length
   })
   const results = []
