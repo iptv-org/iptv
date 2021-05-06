@@ -185,8 +185,7 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "[Bot] Update ${{ matrix.country }}.m3u"
       - name: Pull Remote
         run: |
-          git config pull.ff only
-          git pull origin bot/patch-1 --allow-unrelated-histories
+          git pull origin bot/patch-1 --rebase
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
