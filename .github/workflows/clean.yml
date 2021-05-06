@@ -165,7 +165,7 @@ jobs:
             # zm,
             # unsorted
           ]
-      max-parallel: 2
+      max-parallel: 1
     steps:
       - name: Create Branch
         uses: peterjgrainger/action-create-branch@v2.0.1
