@@ -10,13 +10,13 @@ jobs:
     strategy:
       matrix:
         country: [
-            ad,
-            ae,
-            af,
-            al,
-            am,
-            ao,
-            ar
+            ad
+            # ae,
+            # af,
+            # al,
+            # am,
+            # ao,
+            # ar
             # at,
             # au,
             # aw,
@@ -172,16 +172,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          ref: bot/patch-${{ github.run_number }}
+      - name: Create Branch
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git checkout -b bot/patch-1
       - name: Install Dependencies
         run: npm install
       - name: Remove Broken Links
         run: node scripts/clean.js --country=${{ matrix.country }}
       - name: Commit Changes
         run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
           git add .
           git diff-index --quiet HEAD || git commit -m "[Bot] Update ${{ matrix.country }}.m3u"
           git pull
@@ -193,7 +194,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/patch-${{ github.run_number }}
+          ref: bot/patch-1
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
