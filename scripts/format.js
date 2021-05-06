@@ -25,30 +25,18 @@ const instance = axios.create({
   })
 })
 
-let globalBuffer = []
-
 async function main() {
   const playlists = parseIndex()
 
   for (const playlist of playlists) {
     await loadPlaylist(playlist.url)
       .then(addToBuffer)
-      .then(removeDuplicates)
       .then(sortChannels)
       .then(filterChannels)
       .then(detectResolution)
       .then(savePlaylist)
       .then(done)
   }
-
-  // if (playlists.length) {
-  //   await loadPlaylist('channels/unsorted.m3u')
-  //     .then(removeUnsortedDuplicates)
-  //     .then(filterChannels)
-  //     .then(sortChannels)
-  //     .then(savePlaylist)
-  //     .then(done)
-  // }
 
   finish()
 }
@@ -69,13 +57,6 @@ async function loadPlaylist(url) {
   return parser.parsePlaylist(url)
 }
 
-async function addToBuffer(playlist) {
-  if (playlist.url === 'channels/unsorted.m3u') return playlist
-  globalBuffer = globalBuffer.concat(playlist.channels)
-
-  return playlist
-}
-
 async function sortChannels(playlist) {
   console.info(`  Sorting channels...`)
   playlist.channels = utils.sortBy(playlist.channels, ['name', 'url'])
@@ -89,24 +70,6 @@ async function filterChannels(playlist) {
   playlist.channels = playlist.channels.filter(i => {
     return !list.includes(i.name.toLowerCase())
   })
-
-  return playlist
-}
-
-async function removeDuplicates(playlist) {
-  console.info(`  Looking for duplicates...`)
-  let buffer = {}
-  const channels = playlist.channels.filter(i => {
-    const url = utils.removeProtocol(i.url)
-    const result = typeof buffer[url] === 'undefined'
-    if (result) {
-      buffer[url] = true
-    }
-
-    return result
-  })
-
-  playlist.channels = channels
 
   return playlist
 }
@@ -158,30 +121,9 @@ function parseResolution(string) {
     : undefined
 }
 
-async function removeUnsortedDuplicates(playlist) {
-  console.info(`  Looking for duplicates...`)
-  // locally
-  let buffer = {}
-  let channels = playlist.channels.filter(i => {
-    const url = utils.removeProtocol(i.url)
-    const result = typeof buffer[url] === 'undefined'
-    if (result) buffer[url] = true
-
-    return result
-  })
-  // globally
-  const urls = globalBuffer.map(i => utils.removeProtocol(i.url))
-  channels = channels.filter(i => !urls.includes(utils.removeProtocol(i.url)))
-  if (channels.length === playlist.channels.length) return playlist
-
-  playlist.channels = channels
-
-  return playlist
-}
-
 async function savePlaylist(playlist) {
   const original = utils.readFile(playlist.url)
-  const output = playlist.toString(true)
+  const output = playlist.toString()
 
   if (original === output) {
     console.info(`No changes have been made.`)
