@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 6 * * 0'
 jobs:
-  clean:
+  check:
     runs-on: ubuntu-latest
     continue-on-error: true
     strategy:
@@ -183,7 +183,7 @@ jobs:
           name: channels
           path: channels/${{ matrix.country }}.m3u
   pull-request:
-    needs: clean
+    needs: check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
