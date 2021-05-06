@@ -12,7 +12,7 @@ program
   .option('-c, --country <country>', 'Comma-separated list of country codes', '')
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
   .option('--delay <delay>', 'Delay between parser requests', 1000)
-  .option('--timeout <timeout>', 'Set timeout for each request', 5000)
+  .option('--timeout <timeout>', 'Set timeout for each request', 3000)
   .parse(process.argv)
 
 const config = program.opts()
