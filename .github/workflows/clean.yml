@@ -185,6 +185,7 @@ jobs:
           git diff-index --quiet HEAD || git commit -m "[Bot] Update ${{ matrix.country }}.m3u"
       - name: Push Changes
         run: |
+          git branch --set-upstream-to=origin/bot/patch-1 bot/patch-1
           git pull
           git push
   # create-pr:
