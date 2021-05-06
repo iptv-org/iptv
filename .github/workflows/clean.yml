@@ -2,19 +2,19 @@ name: clean
 on:
   workflow_dispatch:
 jobs:
-  update:
+  clean:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         country: [
-            ad,
-            ae,
-            af,
-            al,
-            am,
-            ao,
-            ar,
-            at
+            ad
+            # ae,
+            # af,
+            # al,
+            # am,
+            # ao,
+            # ar,
+            # at
             # au,
             # aw,
             # az,
@@ -167,39 +167,16 @@ jobs:
           ]
       max-parallel: 1
     steps:
-      - name: Create Branch
-        uses: peterjgrainger/action-create-branch@v2.0.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          branch: 'bot/patch-1'
       - name: Checkout
         uses: actions/checkout@v2
-        with:
-          ref: bot/patch-1
       - name: Install Dependencies
         run: npm install
       - name: Remove Broken Links
         run: node scripts/clean.js --country=${{ matrix.country }}
-      - name: Commit Changes
-        run: |
-          git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add .
-          git diff-index --quiet HEAD || git commit -m "[Bot] Update ${{ matrix.country }}.m3u"
-          git pull
-          git push
-  create-pr:
-    runs-on: ubuntu-latest
-    needs: update
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: bot/patch-1
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
+          branch: bot/remove-broken-links
           title: '[Bot] Remove broken links'
           body: |
             This pull request is created automatically.
