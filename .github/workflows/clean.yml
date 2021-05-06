@@ -176,7 +176,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: channels
-          path: channels/
+          path: channels/${{ matrix.country }}.m3u
   pull-request:
     needs: clean
     runs-on: ubuntu-latest
