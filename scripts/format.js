@@ -11,7 +11,7 @@ program
   .option('-d, --debug', 'Debug mode')
   .option('-c, --country <country>', 'Comma-separated list of country codes', '')
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
-  .option('--delay <delay>', 'Delay between parser requests', 0)
+  .option('--delay <delay>', 'Delay between parser requests', 1000)
   .option('--timeout <timeout>', 'Set timeout for each request', 5000)
   .parse(process.argv)
 
@@ -19,13 +19,11 @@ const config = program.opts()
 
 const instance = axios.create({
   timeout: config.timeout,
-  maxContentLength: 20000,
+  maxContentLength: 200000,
   httpsAgent: new https.Agent({
     rejectUnauthorized: false
   })
 })
-
-let globalBuffer = []
 
 async function main() {
   const playlists = parseIndex()
@@ -33,19 +31,9 @@ async function main() {
   for (const playlist of playlists) {
     await loadPlaylist(playlist.url)
       .then(addToBuffer)
-      .then(removeDuplicates)
       .then(sortChannels)
       .then(filterChannels)
       .then(detectResolution)
-      .then(savePlaylist)
-      .then(done)
-  }
-
-  if (playlists.length) {
-    await loadPlaylist('channels/unsorted.m3u')
-      .then(removeUnsortedDuplicates)
-      .then(filterChannels)
-      .then(sortChannels)
       .then(savePlaylist)
       .then(done)
   }
@@ -69,13 +57,6 @@ async function loadPlaylist(url) {
   return parser.parsePlaylist(url)
 }
 
-async function addToBuffer(playlist) {
-  if (playlist.url === 'channels/unsorted.m3u') return playlist
-  globalBuffer = globalBuffer.concat(playlist.channels)
-
-  return playlist
-}
-
 async function sortChannels(playlist) {
   console.info(`  Sorting channels...`)
   playlist.channels = utils.sortBy(playlist.channels, ['name', 'url'])
@@ -93,26 +74,9 @@ async function filterChannels(playlist) {
   return playlist
 }
 
-async function removeDuplicates(playlist) {
-  console.info(`  Looking for duplicates...`)
-  let buffer = {}
-  const channels = playlist.channels.filter(i => {
-    const url = utils.removeProtocol(i.url)
-    const result = typeof buffer[url] === 'undefined'
-    if (result) {
-      buffer[url] = true
-    }
-
-    return result
-  })
-
-  playlist.channels = channels
-
-  return playlist
-}
-
 async function detectResolution(playlist) {
-  const bar = new ProgressBar('  Detecting resolution: [:bar] :current/:total (:percent) ', {
+  console.log('  Detecting resolution...')
+  const bar = new ProgressBar('    Progress: [:bar] :current/:total (:percent) ', {
     total: playlist.channels.length
   })
   const results = []
@@ -155,27 +119,6 @@ function parseResolution(string) {
         return prev.height > current.height ? prev : current
       })
     : undefined
-}
-
-async function removeUnsortedDuplicates(playlist) {
-  console.info(`  Looking for duplicates...`)
-  // locally
-  let buffer = {}
-  let channels = playlist.channels.filter(i => {
-    const url = utils.removeProtocol(i.url)
-    const result = typeof buffer[url] === 'undefined'
-    if (result) buffer[url] = true
-
-    return result
-  })
-  // globally
-  const urls = globalBuffer.map(i => utils.removeProtocol(i.url))
-  channels = channels.filter(i => !urls.includes(utils.removeProtocol(i.url)))
-  if (channels.length === playlist.channels.length) return playlist
-
-  playlist.channels = channels
-
-  return playlist
 }
 
 async function savePlaylist(playlist) {
