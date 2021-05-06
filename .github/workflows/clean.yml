@@ -186,7 +186,7 @@ jobs:
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
-          path: channels/
+          path: artifacts/
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
