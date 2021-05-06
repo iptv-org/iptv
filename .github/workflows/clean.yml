@@ -10,10 +10,10 @@ jobs:
             # ad
             # ae,
             # af,
-            al,
+            al
             # am,
             # ao,
-            ar
+            # ar
             # at,
             # au,
             # aw,
@@ -172,7 +172,8 @@ jobs:
         run: npm install
       - name: Remove Broken Links
         run: node scripts/clean.js --country=${{ matrix.country }}
-      - uses: actions/upload-artifact@v2
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
         with:
           name: ${{ matrix.country }}.m3u
           path: channels/${{ matrix.country }}.m3u
@@ -182,9 +183,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
-        with:
-          path: .
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
