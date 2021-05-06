@@ -185,7 +185,9 @@ jobs:
         run: |
           git add .
           git diff-index --quiet HEAD || git commit -m "[Bot] Update ${{ matrix.country }}.m3u"
-          git pull
+      - name: Pull Remote
+        run: |
+          git pull origin bot/patch-1
       - name: Push Changes
         uses: ad-m/github-push-action@master
         with:
