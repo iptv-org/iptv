@@ -1,8 +1,7 @@
 {
   "name": "iptv",
   "scripts": {
-    "lint": "npx m3u-linter -c m3u-linter.json",
-    "test": "node scripts/test.js"
+    "lint": "npx m3u-linter -c m3u-linter.json"
   },
   "pre-push": [
     "lint"
