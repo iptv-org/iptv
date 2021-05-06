@@ -26,6 +26,7 @@ jobs:
     needs: remove-duplicates
     continue-on-error: true
     strategy:
+      fail-fast: false
       matrix:
         country:
           [
@@ -186,7 +187,6 @@ jobs:
             ye,
             zm
           ]
-      fail-fast: false
     steps:
       - name: Checkout
         uses: actions/checkout@v2
