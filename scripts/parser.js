@@ -32,7 +32,8 @@ class Playlist {
       .filter(channel => channel.url)
   }
 
-  toString(short = false) {
+  toString(options = {}) {
+    const config = { raw: false, ...options }
     let parts = ['#EXTM3U']
     for (let key in this.header.attrs) {
       let value = this.header.attrs[key]
@@ -43,7 +44,7 @@ class Playlist {
 
     let output = `${parts.join(' ')}\n`
     for (let channel of this.channels) {
-      output += channel.toString(short)
+      output += channel.toString(config.raw)
     }
 
     return output
@@ -77,6 +78,7 @@ class Channel {
     this.countries = this.parseCountries(data.tvg.country)
     this.languages = this.parseLanguages(data.tvg.language)
     this.category = this.parseCategory(data.group.title)
+    this.raw = data.raw
   }
 
   parseCountries(string) {
@@ -181,14 +183,12 @@ class Channel {
     return ''
   }
 
-  toString(short = false) {
+  toString(raw = false) {
+    if (raw) return this.raw + '\n'
+
     this.tvg.country = this.tvg.country.toUpperCase()
 
     let info = `-1 tvg-id="${this.tvgId}" tvg-name="${this.tvgName}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
-
-    if (!short) {
-      info += ` tvg-url="${this.tvgUrl}"`
-    }
 
     info += ` group-title="${this.category}",${this.name}`
 
