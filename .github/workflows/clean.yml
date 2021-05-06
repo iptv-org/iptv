@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: '0 6 * * 0'
 jobs:
-  grab:
+  clean:
     runs-on: ubuntu-latest
     continue-on-error: true
     strategy:
