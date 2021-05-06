@@ -10,11 +10,11 @@ jobs:
             # ad
             # ae,
             # af,
-            al
+            al,
             # am,
             # ao,
             # ar
-            # at,
+            at
             # au,
             # aw,
             # az,
@@ -191,3 +191,5 @@ jobs:
           title: '[Bot] Remove broken links'
           body: |
             This pull request is created automatically.
+          commit-message: '[Bot] Update playlists'
+          committer: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
