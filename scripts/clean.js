@@ -31,7 +31,7 @@ const instance = axios.create({
 const ignore = ['Geo-blocked', 'Not 24/7']
 
 async function main() {
-  console.info(`\nStarting...`)
+  console.info(`\nStarting...\n`)
   if (config.debug) {
     console.info(chalk.yellow(`INFO: Debug mode enabled\n`))
   }
