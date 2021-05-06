@@ -7,17 +7,17 @@ jobs:
     strategy:
       matrix:
         country: [
-            # ad
-            # ae,
-            # af,
+            ad,
+            ae,
+            af,
             al,
-            # am,
-            # ao,
-            # ar
-            at
-            # au,
-            # aw,
-            # az,
+            am,
+            ao,
+            ar,
+            at,
+            au,
+            aw,
+            az
             # ba,
             # bb,
             # bd,
@@ -192,4 +192,3 @@ jobs:
           body: |
             This pull request is created automatically.
           commit-message: '[Bot] Update playlists'
-          committer: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
