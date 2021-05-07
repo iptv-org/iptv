@@ -87,10 +87,21 @@ async function detectResolution(playlist) {
   for (const channel of playlist.channels) {
     bar.tick()
     if (!channel.resolution.height) {
+      const CancelToken = axios.CancelToken
+      const source = CancelToken.source()
+      const timeout = setTimeout(() => {
+        source.cancel()
+      }, config.timeout)
+
       const response = await instance
-        .get(channel.url)
+        .get(channel.url, { cancelToken: source.token })
+        .then(() => {
+          clearTimeout(timeout)
+        })
         .then(utils.sleep(config.delay))
-        .catch(err => {})
+        .catch(err => {
+          clearTimeout(timeout)
+        })
 
       if (response && response.status === 200) {
         if (/^#EXTM3U/.test(response.data)) {
