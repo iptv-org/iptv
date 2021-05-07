@@ -27,6 +27,7 @@ jobs:
     continue-on-error: true
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
         country:
           [
@@ -193,7 +194,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Format Playlists
-        run: node scripts/format.js --country=${{ matrix.country }}
+        run: node scripts/format.js --country=${{ matrix.country }} --resolution
       - name: Commit Changes
         run: |
           git config user.name github-actions
