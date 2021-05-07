@@ -83,9 +83,16 @@ async function checkStatus(playlist) {
         console.info(`  ${counter} ${chalk.green('online')} ${chalk.white(channel.url)}`)
       }
     } else {
+      const CancelToken = axios.CancelToken
+      const source = CancelToken.source()
+      const timeout = setTimeout(() => {
+        source.cancel()
+      }, config.timeout)
+
       await instance
-        .get(channel.url)
+        .get(channel.url, { cancelToken: source.token })
         .then(() => {
+          clearTimeout(timeout)
           results.push(channel)
           if (config.debug) {
             console.info(`  ${counter} ${chalk.green('online')} ${chalk.white(channel.url)}`)
@@ -93,6 +100,7 @@ async function checkStatus(playlist) {
         })
         .then(utils.sleep(config.delay))
         .catch(err => {
+          clearTimeout(timeout)
           if (err.response && err.response.status === 404) {
             //console.error(err)
             if (config.debug) {
