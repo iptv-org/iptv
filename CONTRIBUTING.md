@@ -245,19 +245,19 @@ http://example.com/stream.m3u8
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
   - `preview.png`: image displayed in the `README.md`.
   - `template.md`: template for `README.md`.
-- `channels/`
-  - `ad.m3u`: country specific playlist.
+- `channels/`: contains all channels broken down by the country from which they are broadcast.
   - ...
   - `unsorted.m3u`: playlist with channels not yet sorted.
 - `scripts/`
   - `blacklist.json`: list of channels banned for addition to the repository.
   - `categories.json`: list of supported categories.
+  - `clean.js`: used in GitHub Action to check all links and remove broken ones.
   - `db.js`: contains functions for retrieving and managing the channel list.
   - `format.js`: used within GitHub Action to sort channels and remove duplicates from each playlist.
   - `generate.js`: used within GitHub Action to generate all additional playlists.
   - `parser.js`: contains functions for parsing playlists.
   - `regions.json`: list of supported region codes.
-  - `test.js`: script for channel testing.
+  - `remove-duplicates.js`: used in GitHub Action to remove duplicates from the playlist.
   - `update-readme.js`: used within GitHub Action to update the `README.md` file.
   - `utils.js`: contains functions that are used in other scripts.
 - `CONTRIBUTING.md`: file you are currently reading.

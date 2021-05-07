@@ -1,8 +1,7 @@
 {
   "name": "iptv",
   "scripts": {
-    "lint": "npx m3u-linter -c m3u-linter.json",
-    "test": "node scripts/test.js"
+    "lint": "npx m3u-linter -c m3u-linter.json"
   },
   "pre-push": [
     "lint"
@@ -12,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.21.1",
+    "chalk": "^4.1.1",
     "commander": "^7.0.0",
     "escape-string-regexp": "^2.0.0",
     "iptv-playlist-parser": "^0.5.4",
