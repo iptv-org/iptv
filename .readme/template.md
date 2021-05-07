@@ -55,7 +55,7 @@ Or select one of the playlists from the list below.
 </details>
 <br>
 
-Also each playlist has a "Safe For Work" version. In order to use it, just add `sfw` to the file name, like this: `https://iptv-org.github.io/iptv/countries/fr.sfw.m3u`.
+NOTE: Add `.sfw` to the end of the filename for the lists without any adult channels (For example: `https://iptv-org.github.io/iptv/countries/fr.sfw.m3u`).
 
 ## For Developers
 
