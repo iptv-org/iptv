@@ -194,7 +194,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Format Playlists
-        run: node scripts/format.js --country=${{ matrix.country }} --resolution
+        run: node scripts/format.js --country=${{ matrix.country }}
       - name: Commit Changes
         run: |
           git config user.name github-actions
