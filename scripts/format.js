@@ -95,8 +95,10 @@ async function detectResolution(playlist) {
 
       const response = await instance
         .get(channel.url, { cancelToken: source.token })
-        .then(() => {
+        .then(res => {
           clearTimeout(timeout)
+
+          return res
         })
         .then(utils.sleep(config.delay))
         .catch(err => {
