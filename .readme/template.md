@@ -1,5 +1,8 @@
 # IPTV
 
+![auto-update](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml/badge.svg)
+![clean](https://github.com/iptv-org/iptv/actions/workflows/clean.yml/badge.svg)
+
 Collection of publicly available IPTV channels from all over the world.
 
 Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks.
