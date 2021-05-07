@@ -9,6 +9,7 @@ const https = require('https')
 program
   .usage('[OPTIONS]...')
   .option('-d, --debug', 'Debug mode')
+  .option('-r --resolution', 'Parse stream resolution')
   .option('-c, --country <country>', 'Comma-separated list of country codes', '')
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
   .option('--delay <delay>', 'Delay between parser requests', 1000)
@@ -74,6 +75,7 @@ async function filterChannels(playlist) {
 }
 
 async function detectResolution(playlist) {
+  if (!config.resolution) return playlist
   console.log('  Detecting resolution...')
   const bar = new ProgressBar('    Progress: [:bar] :current/:total (:percent) ', {
     total: playlist.channels.length
