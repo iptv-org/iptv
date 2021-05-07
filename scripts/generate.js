@@ -38,7 +38,7 @@ function generateIndex() {
   const buffer = []
   const channels = db.channels.sortBy(['name', 'url']).all()
   for (const channel of channels) {
-    const info = channel.getInfo()
+    const info = channel.toString()
     if (!buffer.includes(info)) {
       utils.appendToFile(filename, channel.toString())
       buffer.push(info)
@@ -54,7 +54,7 @@ function generateSFWIndex() {
   const buffer = []
   const channels = db.channels.sortBy(['name', 'url']).sfw()
   for (const channel of channels) {
-    const info = channel.getInfo()
+    const info = channel.toString()
     if (!buffer.includes(info)) {
       utils.appendToFile(filename, channel.toString())
       buffer.push(info)
@@ -82,7 +82,7 @@ function generateCountryIndex() {
   for (const channel of unsorted.channels) {
     const category = channel.category
     channel.category = ''
-    const info = channel.getInfo()
+    const info = channel.toString()
     if (!buffer.includes(info)) {
       utils.appendToFile(filename, channel.toString())
       buffer.push(info)
@@ -95,7 +95,7 @@ function generateCountryIndex() {
     for (const channel of playlist.channels) {
       const category = channel.category
       channel.category = playlist.country
-      const info = channel.getInfo()
+      const info = channel.toString()
       if (!buffer.includes(info)) {
         utils.appendToFile(filename, channel.toString())
         buffer.push(info)
@@ -115,7 +115,7 @@ function generateLanguageIndex() {
   for (const channel of channels) {
     const category = channel.category
     channel.category = ''
-    const info = channel.getInfo()
+    const info = channel.toString()
     if (!buffer.includes(info)) {
       utils.appendToFile(filename, channel.toString())
       buffer.push(info)
@@ -129,7 +129,7 @@ function generateLanguageIndex() {
     for (const channel of channels) {
       const category = channel.category
       channel.category = language.name
-      const info = channel.getInfo()
+      const info = channel.toString()
       if (!buffer.includes(info)) {
         utils.appendToFile(filename, channel.toString())
         buffer.push(info)
@@ -147,7 +147,7 @@ function generateCategoryIndex() {
   const buffer = []
   const channels = db.channels.sortBy(['category', 'name', 'url']).all()
   for (const channel of channels) {
-    const info = channel.getInfo()
+    const info = channel.toString()
     if (!buffer.includes(info)) {
       utils.appendToFile(filename, channel.toString())
       buffer.push(info)
@@ -167,7 +167,7 @@ function generateCategories() {
     const buffer = []
     const channels = db.channels.sortBy(['name', 'url']).forCategory(category).get()
     for (const channel of channels) {
-      const info = channel.getInfo()
+      const info = channel.toString()
       if (!buffer.includes(info)) {
         utils.appendToFile(filename, channel.toString())
         buffer.push(info)
@@ -180,7 +180,7 @@ function generateCategories() {
   const channels = db.channels.sortBy(['name', 'url']).forCategory({ id: null }).get()
   utils.createFile(other, '#EXTM3U\n')
   for (const channel of channels) {
-    const info = channel.getInfo()
+    const info = channel.toString()
     if (!buffer.includes(info)) {
       utils.appendToFile(other, channel.toString())
       buffer.push(info)
@@ -200,7 +200,7 @@ function generateCountries() {
     const buffer = []
     const channels = db.channels.sortBy(['name', 'url']).forCountry(country).get()
     for (const channel of channels) {
-      const info = channel.getInfo()
+      const info = channel.toString()
       if (!buffer.includes(info)) {
         utils.appendToFile(filename, channel.toString())
         buffer.push(info)
@@ -213,7 +213,7 @@ function generateCountries() {
   const channels = db.channels.sortBy(['name', 'url']).forCountry({ code: null }).get()
   utils.createFile(other, '#EXTM3U\n')
   for (const channel of channels) {
-    const info = channel.getInfo()
+    const info = channel.toString()
     if (!buffer.includes(info)) {
       utils.appendToFile(other, channel.toString())
       buffer.push(info)
@@ -233,7 +233,7 @@ function generateLanguages() {
     const buffer = []
     const channels = db.channels.sortBy(['name', 'url']).forLanguage(language).get()
     for (const channel of channels) {
-      const info = channel.getInfo()
+      const info = channel.toString()
       if (!buffer.includes(info)) {
         utils.appendToFile(filename, channel.toString())
         buffer.push(info)
@@ -246,7 +246,7 @@ function generateLanguages() {
   const channels = db.channels.sortBy(['name', 'url']).forLanguage({ code: null }).get()
   utils.createFile(other, '#EXTM3U\n')
   for (const channel of channels) {
-    const info = channel.getInfo()
+    const info = channel.toString()
     if (!buffer.includes(info)) {
       utils.appendToFile(other, channel.toString())
       buffer.push(info)
