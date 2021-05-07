@@ -23,7 +23,7 @@ There are multiple playlists available for each of your desires :
 - `https://iptv-org.github.io/iptv/index.m3u` contains all the links that we've gathered so far.
 - `https://iptv-org.github.io/iptv/index.sfw.m3u` contains links we've classified as "safe for work", meaning no adult channels are in there.
 
-*Note that if you find any adult channel that we did not classify as "XXX", please let us know by making a pull request.*
+*Note that if you find any adult channel that we did not classify as "XXX", please let us know by making an "Question" issue.*
 
 *All channels, sorted by specific order*
 - `https://iptv-org.github.io/iptv/index.country.m3u` contains all the links grouped by their country (of streaming origin, specific countries available below)
