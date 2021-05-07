@@ -30,7 +30,6 @@ async function main() {
 
   for (const playlist of playlists) {
     await loadPlaylist(playlist.url)
-      .then(addToBuffer)
       .then(sortChannels)
       .then(filterChannels)
       .then(detectResolution)
