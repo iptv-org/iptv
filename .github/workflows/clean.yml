@@ -196,7 +196,7 @@ jobs:
           body: |
             This pull request is created automatically with `scripts/clean.js`. 
 
-            The script checks each link and removes only those that return a HTTP 404 code (Not Found). Also, the script ignores links with labels in the title: `[Geo-blocked]`, `[Not 24/7]`.
+            The script checks each link and removes only those that return a HTTP 404 code (Not Found). Also, the script ignores links with labels `[Geo-blocked]` and `[Not 24/7]` in the title.
 
-            Before merging all links should be checked manually to make sure that the response from the server has not changed.
+            **IMPORTANT:** Before merging all links should be checked manually to make sure that the response from the server has not changed.
           commit-message: '[Bot] Update playlists'
