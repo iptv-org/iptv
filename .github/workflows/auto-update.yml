@@ -4,8 +4,26 @@ on:
   schedule:
     - cron: '0 0 * * *'
 jobs:
+  remove-duplicates:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Remove Duplicates
+        run: node scripts/remove-duplicates.js
+      - name: Commit Changes
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git diff-index --quiet HEAD || git commit -m "[Bot] Remove duplicates"
+          git pull
+          git push
   format:
     runs-on: ubuntu-latest
+    needs: remove-duplicates
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -19,6 +37,7 @@ jobs:
           git config user.email github-actions@github.com
           git add .
           git diff-index --quiet HEAD || git commit -m "[Bot] Format playlists"
+          git pull
           git push
   generate:
     runs-on: ubuntu-latest
