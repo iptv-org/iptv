@@ -30,8 +30,11 @@ const instance = axios.create({
 
 const ignore = ['Geo-blocked', 'Not 24/7']
 
+const stats = { broken: 0 }
+
 async function main() {
-  console.info(`\nStarting...\n`)
+  console.info(`\nStarting...`)
+  console.time('Process completed in')
   if (config.debug) {
     console.info(chalk.yellow(`INFO: Debug mode enabled\n`))
   }
@@ -94,6 +97,7 @@ async function checkStatus(playlist) {
             //console.error(err)
             if (config.debug) {
               console.info(`  ${counter} ${chalk.red('offline')} ${chalk.white(channel.url)}`)
+              stats.broken++
             }
           } else {
             results.push(channel)
@@ -119,7 +123,7 @@ async function savePlaylist(playlist) {
     return false
   } else {
     utils.createFile(playlist.url, output)
-    console.info(`Playlist has been updated.`)
+    console.info(`Playlist has been updated. Removed ${stats.broken} broken links.`)
   }
 
   return true
@@ -130,7 +134,7 @@ async function done() {
 }
 
 function finish() {
-  console.info('Done.')
+  console.timeEnd('Process completed in')
 }
 
 main()
