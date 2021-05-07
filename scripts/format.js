@@ -27,6 +27,9 @@ const instance = axios.create({
 })
 
 async function main() {
+  console.info('Starting...')
+  console.time('Done in')
+
   const playlists = parseIndex()
 
   for (const playlist of playlists) {
@@ -42,7 +45,7 @@ async function main() {
 }
 
 function parseIndex() {
-  console.info(`Parsing 'index.m3u'...`)
+  console.info(`\nParsing 'index.m3u'...`)
   let playlists = parser.parseIndex()
   playlists = utils
     .filterPlaylists(playlists, config.country, config.exclude)
@@ -142,7 +145,7 @@ async function done() {
 }
 
 function finish() {
-  console.info('Done.')
+  console.timeEnd('Done in')
 }
 
 main()
