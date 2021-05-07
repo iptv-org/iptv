@@ -183,9 +183,7 @@ class Channel {
     return ''
   }
 
-  toString(raw = false) {
-    if (raw) return this.raw + '\n'
-    
+  getInfo() {
     this.tvg.country = this.tvg.country.toUpperCase()
 
     let info = `-1 tvg-id="${this.tvgId}" tvg-name="${this.tvgName}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
@@ -211,8 +209,10 @@ class Channel {
     return info
   }
 
-  toString(short = false) {
-    const info = this.getInfo(short)
+  toString(raw = false) {
+    if (raw) return this.raw + '\n'
+
+    const info = this.getInfo()
 
     return '#EXTINF:' + info + '\n' + this.url + '\n'
   }
