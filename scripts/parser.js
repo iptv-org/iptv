@@ -214,9 +214,7 @@ class Channel {
   toString(raw = false) {
     if (raw) return this.raw + '\n'
 
-    const info = this.getInfo()
-
-    return '#EXTINF:' + info + '\n' + this.url + '\n'
+    return '#EXTINF:' + this.getInfo() + '\n' + this.url + '\n'
   }
 
   toObject() {
