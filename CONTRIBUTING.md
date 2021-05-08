@@ -46,7 +46,7 @@ If you would like to replace a broken stream or add a new one, please do the fol
 - select a channel that does not have a category specified
 - find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this
 - find the desired channel in this file
-- specify the appropriate category in the `group-title` attribute. A complete list of supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category)
+- specify the appropriate category in the `group-title` attribute. A complete list of supported categories can be found [here](https://github.com/iptv-org/iptv/blob/master/.readme/supported-categories.md)
 - commit all changes and send a pull request
 
 ### Add a Language to a Channel
