@@ -63,8 +63,6 @@ class Channel {
       this.countries = countryName ? [{ code: this.filename, name: countryName }] : []
       this.tvg.country = this.countries.map(c => c.code.toUpperCase()).join(';')
     }
-
-    this.tvg.url = header.attrs['x-tvg-url'] || ''
   }
 
   parseData(data) {
@@ -160,7 +158,7 @@ class Channel {
   }
 
   get tvgUrl() {
-    return (this.tvg.id || this.tvg.name) && this.tvg.url ? this.tvg.url : ''
+    return this.tvg.id && this.tvg.url ? this.tvg.url : ''
   }
 
   get tvgId() {
@@ -228,7 +226,7 @@ class Channel {
       tvg: {
         id: this.tvgId || null,
         name: this.tvgName || null,
-        url: this.tvg.url || null
+        url: this.tvgUrl || null
       }
     }
   }
