@@ -9,7 +9,7 @@ Internet Protocol television (IPTV) is the delivery of television content over I
 
 ## Usage
 
-To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists. You can also use the SFW version of the playlist `https://iptv-org.github.io/iptv/index.sfw.m3u`.
+To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists.
 
 ![VLC Network Panel](.readme/preview.png)
 
@@ -53,6 +53,9 @@ Or select one of the playlists from the list below.
 #include "./.readme/_countries.md"
 
 </details>
+<br>
+
+NOTE: Add `.sfw` to the end of the filename for the lists without any adult channels (For example: `https://iptv-org.github.io/iptv/countries/fr.sfw.m3u`).
 
 ## For Developers
 

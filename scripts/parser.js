@@ -3,6 +3,8 @@ const utils = require('./utils')
 const categories = require('./categories')
 const path = require('path')
 
+const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
+
 const parser = {}
 
 parser.parseIndex = function () {
@@ -225,6 +227,10 @@ class Channel {
         url: this.tvg.url || null
       }
     }
+  }
+
+  isSFW() {
+    return sfwCategories.includes(this.category)
   }
 }
 
