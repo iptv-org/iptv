@@ -13,8 +13,8 @@ function main() {
   generateCountryIndex()
   generateLanguageIndex()
   generateCategories()
-  generateLanguages()
   generateCountries()
+  generateLanguages()
   generateChannelsJson()
   finish()
 }
@@ -205,7 +205,7 @@ function generateChannelsJson() {
   const channels = db.channels
     .sortBy(['name', 'url'])
     .all()
-    .map(c => c.toJSON())
+    .map(c => c.toObject())
   utils.createFile(filename, JSON.stringify(channels))
 }
 
