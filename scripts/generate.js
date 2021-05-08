@@ -13,8 +13,8 @@ function main() {
   generateCountryIndex()
   generateLanguageIndex()
   generateCategories()
-  generateLanguages()
   generateCountries()
+  generateLanguages()
   generateChannelsJson()
   finish()
 }
@@ -37,8 +37,13 @@ function generateIndex() {
   const sfwFilename = `${ROOT_DIR}/index.sfw.m3u`
   utils.createFile(sfwFilename, '#EXTM3U\n')
 
+  const buffer = []
   const channels = db.channels.sortBy(['name', 'url']).all()
   for (const channel of channels) {
+    const info = channel.getInfo()
+    if (buffer.includes(info)) continue
+    buffer.push(info)
+
     utils.appendToFile(filename, channel.toString())
     if (channel.isSFW()) {
       utils.appendToFile(sfwFilename, channel.toString())
@@ -54,8 +59,13 @@ function generateCategoryIndex() {
   const sfwFilename = `${ROOT_DIR}/index.category.sfw.m3u`
   utils.createFile(sfwFilename, '#EXTM3U\n')
 
+  const buffer = []
   const channels = db.channels.sortBy(['category', 'name', 'url']).all()
   for (const channel of channels) {
+    const info = channel.getInfo()
+    if (buffer.includes(info)) continue
+    buffer.push(info)
+
     utils.appendToFile(filename, channel.toString())
     if (channel.isSFW()) {
       utils.appendToFile(sfwFilename, channel.toString())
@@ -71,8 +81,13 @@ function generateCountryIndex() {
   const sfwFilename = `${ROOT_DIR}/index.country.sfw.m3u`
   utils.createFile(sfwFilename, '#EXTM3U\n')
 
+  const buffer = []
   const unsorted = db.playlists.only(['unsorted'])[0]
   for (const channel of unsorted.channels) {
+    const info = channel.getInfo()
+    if (buffer.includes(info)) continue
+    buffer.push(info)
+
     const category = channel.category
     const sfw = channel.isSFW()
     channel.category = ''
@@ -86,6 +101,10 @@ function generateCountryIndex() {
   const playlists = db.playlists.sortBy(['country']).except(['unsorted'])
   for (const playlist of playlists) {
     for (const channel of playlist.channels) {
+      const info = channel.getInfo()
+      if (buffer.includes(info)) continue
+      buffer.push(info)
+
       const category = channel.category
       const sfw = channel.isSFW()
       channel.category = playlist.country
@@ -106,8 +125,13 @@ function generateLanguageIndex() {
   const sfwFilename = `${ROOT_DIR}/index.language.sfw.m3u`
   utils.createFile(sfwFilename, '#EXTM3U\n')
 
-  const channels = db.channels.sortBy(['name', 'url']).forLanguage({ code: null }).get()
+  const buffer = []
+  const channels = db.channels.sortBy(['name', 'url']).forLanguage({ code: 'undefined' }).get()
   for (const channel of channels) {
+    const info = channel.getInfo()
+    if (buffer.includes(info)) continue
+    buffer.push(info)
+
     const category = channel.category
     const sfw = channel.isSFW()
     channel.category = ''
@@ -122,6 +146,10 @@ function generateLanguageIndex() {
   for (const language of languages) {
     const channels = db.channels.sortBy(['name', 'url']).forLanguage(language).get()
     for (const channel of channels) {
+      const info = channel.getInfo()
+      if (buffer.includes(info)) continue
+      buffer.push(info)
+
       const category = channel.category
       const sfw = channel.isSFW()
       channel.category = language.name
@@ -139,12 +167,17 @@ function generateCategories() {
   const outputDir = `${ROOT_DIR}/categories`
   utils.createDir(outputDir)
 
+  const buffer = []
   for (const category of [...db.categories.all(), { id: 'other' }]) {
     const filename = `${outputDir}/${category.id}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
 
     const channels = db.channels.sortBy(['name', 'url']).forCategory(category).get()
     for (const channel of channels) {
+      const info = channel.getInfo()
+      if (buffer.includes(info)) continue
+      buffer.push(info)
+
       utils.appendToFile(filename, channel.toString())
     }
   }
@@ -155,6 +188,7 @@ function generateCountries() {
   const outputDir = `${ROOT_DIR}/countries`
   utils.createDir(outputDir)
 
+  const buffer = []
   for (const country of [...db.countries.all(), { code: 'undefined' }]) {
     const filename = `${outputDir}/${country.code}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
@@ -164,6 +198,10 @@ function generateCountries() {
 
     const channels = db.channels.sortBy(['name', 'url']).forCountry(country).get()
     for (const channel of channels) {
+      const info = channel.getInfo()
+      if (buffer.includes(info)) continue
+      buffer.push(info)
+
       utils.appendToFile(filename, channel.toString())
       if (channel.isSFW()) {
         utils.appendToFile(sfwFilename, channel.toString())
@@ -177,6 +215,7 @@ function generateLanguages() {
   const outputDir = `${ROOT_DIR}/languages`
   utils.createDir(outputDir)
 
+  const buffer = []
   for (const language of [...db.languages.all(), { code: 'undefined' }]) {
     const filename = `${outputDir}/${language.code}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
@@ -186,6 +225,10 @@ function generateLanguages() {
 
     const channels = db.channels.sortBy(['name', 'url']).forLanguage(language).get()
     for (const channel of channels) {
+      const info = channel.getInfo()
+      if (buffer.includes(info)) continue
+      buffer.push(info)
+
       utils.appendToFile(filename, channel.toString())
       if (channel.isSFW()) {
         utils.appendToFile(sfwFilename, channel.toString())
@@ -200,7 +243,7 @@ function generateChannelsJson() {
   const channels = db.channels
     .sortBy(['name', 'url'])
     .all()
-    .map(c => c.toJSON())
+    .map(c => c.toObject())
   utils.createFile(filename, JSON.stringify(channels))
 }
 

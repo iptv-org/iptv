@@ -185,9 +185,7 @@ class Channel {
     return ''
   }
 
-  toString(raw = false) {
-    if (raw) return this.raw + '\n'
-
+  getInfo() {
     this.tvg.country = this.tvg.country.toUpperCase()
 
     let info = `-1 tvg-id="${this.tvgId}" tvg-name="${this.tvgName}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
@@ -210,10 +208,16 @@ class Channel {
       info += `\n#EXTVLCOPT:http-user-agent=${this.http['user-agent']}`
     }
 
-    return '#EXTINF:' + info + '\n' + this.url + '\n'
+    return info
   }
 
-  toJSON() {
+  toString(raw = false) {
+    if (raw) return this.raw + '\n'
+
+    return '#EXTINF:' + this.getInfo() + '\n' + this.url + '\n'
+  }
+
+  toObject() {
     return {
       name: this.name,
       logo: this.logo || null,
