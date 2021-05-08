@@ -2,6 +2,8 @@ const categories = require('./categories')
 const parser = require('./parser')
 const utils = require('./utils')
 
+const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
+
 const db = {}
 
 db.load = function () {
@@ -38,7 +40,7 @@ db.channels = {
     if (this.filter) {
       switch (this.filter.field) {
         case 'countries':
-          if (!this.filter.value) {
+          if (this.filter.value === 'undefined') {
             output = this.list.filter(channel => !channel.countries.length)
           } else {
             output = this.list.filter(channel =>
@@ -47,7 +49,7 @@ db.channels = {
           }
           break
         case 'languages':
-          if (!this.filter.value) {
+          if (this.filter.value === 'undefined') {
             output = this.list.filter(channel => !channel.languages.length)
           } else {
             output = this.list.filter(channel =>
@@ -56,7 +58,7 @@ db.channels = {
           }
           break
         case 'category':
-          if (!this.filter.value) {
+          if (this.filter.value === 'other') {
             output = this.list.filter(channel => !channel.category)
           } else {
             output = this.list.filter(
@@ -77,8 +79,6 @@ db.channels = {
     return this.list
   },
   sfw() {
-    const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
-
     return this.list.filter(i => sfwCategories.includes(i.category))
   },
   forCountry(country) {
