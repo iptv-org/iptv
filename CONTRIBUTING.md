@@ -7,10 +7,8 @@
 - [Report a Broken Stream](#report-a-broken-stream)
 - [Add or Replace a Stream](#add-or-replace-a-stream)
 - [Add a Category to a Сhannel](#add-a-category-to-a-channel)
-- [Add a Country to a Сhannel](#add-a-country-to-a-channel)
 - [Add a Language to a Channel](#add-a-language-to-a-channel)
-- [Add an EPG (Electronic Program Guide) source](#add-an-epg-electronic-program-guide-source)
-- [Setting up a Сhannel to use an EPG](#setting-up-a-channel-to-use-an-epg)
+- [Add a Country to a Сhannel](#add-a-country-to-a-channel)
 - [Sort сhannels from `channels/unsorted.m3u`](#sort-channels-from-channelsunsortedm3u)
 - [Request Channel Removal](#request-channel-removal)
 - [Make changes to README.md](#make-changes-to-readmemd)
@@ -45,22 +43,37 @@ If you would like to replace a broken stream or add a new one, please do the fol
 - if new, at the very end of this file add a link to the channel with a description
 - commit all changes and send a pull request
 
-## Add a Category to a channel
+## Add a Category to a Channel
 
+- select a channel that does not have a category specified
 - find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this
-- open the file
-- find the channel description
+- find the desired channel in this file
 - specify the appropriate category in the `group-title` attribute. A complete list of supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category)
 - commit all changes and send a pull request
 
-## Add a Country to a channel
+## Add a Language to a Channel
 
-- make sure the channel is broadcast in the country. This information can usually be found in the channel description on Wikipedia
-- find the corresponding [ISO_3166-2 code](https://en.wikipedia.org/wiki/ISO_3166-2) for the country
+- select a channel that does not have a language specified
 - find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this.
-- open the file
-- find the channel in the list
-- paste the country code into `tvg-country` attribute of the channel description
+- find the desired channel in this file
+- specify the appropriate language in the `tvg-language` attribute. The name of the language must comply with the [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500) standard.
+- commit all changes and send a pull request
+
+If a channel is broadcasted in several languages at once, you can specify them all through a semicolon, like this:
+
+```xml
+#EXTINF:-1 tvg-language="English;Chinese",CCTV
+http://example.com/cctv.m3u8
+```
+
+## Add a Country to a Channel
+
+- select a channel that does not have a country specified
+- find out in which country the channel is broadcast. This information can usually be found in the channel description on Wikipedia.
+- find the corresponding [ISO_3166-2 code](https://en.wikipedia.org/wiki/ISO_3166-2) corresponding to the country
+- find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this.
+- find the desired channel in this file
+- paste the country ISO_3166-2 code into `tvg-country` attribute of the channel description
 - commit all changes and send a pull request
 
 If a channel is broadcasted in several countries at once, you can specify them all through a semicolon, like this:
@@ -79,71 +92,9 @@ In case the channel is broadcast worldwide you can use the code `INT`:
 http://example.com/cnn.m3u8
 ```
 
-## Add a Language to a Channel
-
-- find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this.
-- open the file
-- find the channel description
-- specify the appropriate language in the `tvg-language` attribute. The name of the language must comply with the [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500) standard.
-- commit all changes and send a pull request
-
-If a channel is broadcasted in several languages at once, you can specify them all through a semicolon, like this:
-
-```xml
-#EXTINF:-1 tvg-language="English;Chinese",CCTV
-http://example.com/cctv.m3u8
-```
-
-## Add an EPG (Electronic Program Guide) source
-
-- check which country the EPG is intended for
-- check that this source is not already listed in the playlist. To do this, find the country in this [table](https://github.com/iptv-org/iptv#playlists-by-country) and see if there is any other link. If not, continue.
-- find the corresponding [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) country code.
-- open the `channels/` folder and find a file with the same name as the country code
-- in the header of the playlist, next to `#EXTM3U`, add an `x-tvg-url` attribute with a link to the EPG source
-
-The result should be something like this:
-
-```xml
-#EXTM3U x-tvg-url="https://example.com/epg.xml.gz"
-```
-
-## Setting up a channel to use an EPG
-
-- find out which country the channel belongs to. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
-- find the corresponding [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) country code
-- open the `/channels` folder and find the file that has the same code in its name and open it
-- check that the EPG source is specified in the file. To do this, just look at the header of the playlist. If the `x-tvg-url` attribute is present and has a link in it, everything is fine
-- open the file specified in the `x-tvg-url`
-- find the channel list in the file. Usually it looks like this:
-
-  ```xml
-  <tv>
-    <channel id="cnn">
-      <display-name>CNN</display-name>
-    </channel>
-    <channel id="nbc">
-      <display-name>NBC</display-name>
-    </channel>
-    ...
-  </tv>
-  ```
-
-- find the channel you are interested in
-- copy the `id` and paste it into the `tvg-id` attribute of the channel description
-- copy the `<display-name>` tag value and paste it into the `tvg-name` attribute of the channel description. The result should be something like this:
-
-  ```xml
-  #EXTINF:-1 tvg-id="cnn" tvg-name="CNN",CNN
-  http://example.com/cnn.m3u8
-  ```
-
-- commit all changes and send a pull request
-
-If you did everything right, then by opening a playlist in a player that supports EPG, you should see the program guide for all updated channels. In some cases, it may also be necessary to manually specify the EPG source in the player itself. Note: playlists are updated only once per 24 hours.
-
 ## Sort channels from `channels/unsorted.m3u`
 
+- select any channel from [channels/unsorted.m3u](https://github.com/iptv-org/iptv/blob/master/channels/unsorted.m3u)
 - find out the full name of the channel and from which country it is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
 - update the channel name if necessary
 - find the corresponding [ISO_3166-2 code](https://en.wikipedia.org/wiki/ISO_3166-2) for the country
@@ -179,8 +130,8 @@ STREAM_URL
 
 | Attribute           | Description                                                                                                                                                                                                                                                                                                                                                                                   |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `EPG_ID`            | Channel ID that is used to load EPG. Must match `id` from the EPG file specified in the playlist header. (optional)                                                                                                                                                                                                                                                                           |
-| `EPG_NAME`          | Channel name that is also sometimes used to load EPG. Must match `<display-name>` from the EPG file specified in the playlist header. (optional)                                                                                                                                                                                                                                              |
+| `EPG_ID`            | Channel ID that is used to load EPG. Must match `id` from the EPG file. (optional)                                                                                                                                                                                                                                                                                                            |
+| `EPG_NAME`          | Channel name that is also sometimes used to load EPG. Must match `<display-name>` from the EPG file. (optional)                                                                                                                                                                                                                                                                               |
 | `COUNTRY`           | The code of the country in which the channel is broadcast. The code of the country must conform to the standard [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2). If the channel is broadcast in several countries you can list them separated by a semicolon. You can also use one of these [region codes](#supported-region-codes). (optional)                                        |
 | `LANGUAGE`          | Channel language. The name of the language must conform to the standard [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500). If the channel is broadcast in several languages you can list them separated by a semicolon. (optional) |
 | `LOGO_URL`          | The logo of the channel that will be displayed if the player supports it. Supports files in png, jpeg and gif format. (optional)                                                                                                                                                                                                                                                              |
