@@ -1,35 +1,33 @@
 # Contributing Guide
 
-## Table of Contents
+Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
 
-- [Feature Requests](#feature-requests)
-- [Request a Channel](#request-a-channel)
-- [Report a Broken Stream](#report-a-broken-stream)
-- [Add or Replace a Stream](#add-or-replace-a-stream)
-- [Add a Category to a Сhannel](#add-a-category-to-a-channel)
-- [Add a Language to a Channel](#add-a-language-to-a-channel)
-- [Add a Country to a Сhannel](#add-a-country-to-a-channel)
-- [Sort сhannels from `channels/unsorted.m3u`](#sort-channels-from-channelsunsortedm3u)
-- [Request Channel Removal](#request-channel-removal)
-- [Make changes to README.md](#make-changes-to-readmemd)
-- [Make changes to this Guide](#make-changes-to-this-guide)
+- [Issue Reporting Guidelines](#issue-reporting-guidelines)
+- [Pull Request Guidelines](#pull-request-guidelines)
 - [Channel Description Scheme](#channel-description-scheme)
-- [Supported Region Codes](#supported-region-codes)
 - [Project Structure](#project-structure)
 
-## Feature Requests
+## Issue Reporting Guidelines
+
+### Feature Requests
 
 If you have an idea how to improve the project create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=discussion&template=----feature-request.md&title=Propose%3A+xxx) with a detailed description of your idea.
 
-## Request a Channel
+### Request a Channel
 
 To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=------channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do.
 
-## Report a Broken Stream
+### Report a Broken Stream
 
 To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=----broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
 
-## Add or Replace a Stream
+### Request Channel Removal
+
+Publish your DMCA notice somewhere and send us a link to it through this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=--remove-channel.md&title=Remove%3A+xxx).
+
+## Pull Request Guidelines
+
+### Add or Replace a Stream
 
 If you would like to replace a broken stream or add a new one, please do the following:
 
@@ -43,7 +41,7 @@ If you would like to replace a broken stream or add a new one, please do the fol
 - if new, at the very end of this file add a link to the channel with a description
 - commit all changes and send a pull request
 
-## Add a Category to a Channel
+### Add a Category to a Channel
 
 - select a channel that does not have a category specified
 - find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this
@@ -51,7 +49,7 @@ If you would like to replace a broken stream or add a new one, please do the fol
 - specify the appropriate category in the `group-title` attribute. A complete list of supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category)
 - commit all changes and send a pull request
 
-## Add a Language to a Channel
+### Add a Language to a Channel
 
 - select a channel that does not have a language specified
 - find the file that contains the channel. You can use a [GitHub Search](https://github.com/search/advanced?q=CHANNEL_NAME+repo%3Aiptv-org%2Fiptv+path%3A%2Fchannels&type=Code) to do this.
@@ -66,7 +64,7 @@ If a channel is broadcasted in several languages at once, you can specify them a
 http://example.com/cctv.m3u8
 ```
 
-## Add a Country to a Channel
+### Add a Country to a Channel
 
 - select a channel that does not have a country specified
 - find out in which country the channel is broadcast. This information can usually be found in the channel description on Wikipedia.
@@ -83,7 +81,7 @@ If a channel is broadcasted in several countries at once, you can specify them a
 http://example.com/cnn.m3u8
 ```
 
-If a channel is broadcast for an entire region, you can use one of the [supported region code](#supported-region-codes) to avoid listing all countries. In this case the channel will be added to the playlists of all countries from that region.
+If a channel is broadcast for an entire region, you can use one of the [supported region code](https://github.com/iptv-org/iptv/blob/master/.readme/supported-region-codes.md) to avoid listing all countries. In this case the channel will be added to the playlists of all countries from that region.
 
 In case the channel is broadcast worldwide you can use the code `INT`:
 
@@ -92,7 +90,7 @@ In case the channel is broadcast worldwide you can use the code `INT`:
 http://example.com/cnn.m3u8
 ```
 
-## Sort channels from `channels/unsorted.m3u`
+### Sort channels from `channels/unsorted.m3u`
 
 - select any channel from [channels/unsorted.m3u](https://github.com/iptv-org/iptv/blob/master/channels/unsorted.m3u)
 - find out the full name of the channel and from which country it is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
@@ -102,18 +100,13 @@ http://example.com/cnn.m3u8
 - at the very end of this file add a link to the channel with a description
 - commit all changes and send a pull request
 
-## Request Channel Removal
-
-- publish your DMCA notice somewhere
-- create an issue using this [link](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=--remove-channel.md&title=Remove%3A+xxx) and add a link to the DMCA notice in it
-
-## Make changes to README.md
+### Update README.md
 
 - open `.readme/template.md`
 - make the necessary changes
 - commit all changes and send a pull request
 
-## Make changes to this Guide
+### Update this Guide
 
 - open `.github/CONTRIBUTING.md`
 - make the necessary changes
@@ -121,7 +114,7 @@ http://example.com/cnn.m3u8
 
 ## Channel Description Scheme
 
-Channels should be added to playlists using the following template.
+For a channel to be approved, its description must follow this template:
 
 ```
 #EXTINF:-1 tvg-id="EPG_ID" tvg-name="EPG_NAME" tvg-country="COUNTRY" tvg-language="LANGUAGE" tvg-logo="LOGO_URL" group-title="CATEGORY",FULL_NAME STREAM_TIME_SHIFT (ALTERNATIVE_NAME) (STREAM_RESOLUTION) [STREAM_STATUS]
@@ -159,29 +152,6 @@ Also, if necessary, you can specify custom HTTP User-Agent or Referrer via the `
 http://example.com/stream.m3u8
 ```
 
-## Supported Region Codes
-
-| Code                                                                     | Description                    |
-| ------------------------------------------------------------------------ | ------------------------------ |
-| [AFR](https://en.wikipedia.org/wiki/Africa)                              | Africa                         |
-| [AMER](https://en.wikipedia.org/wiki/Americas)                           | Americas                       |
-| [APAC](https://en.wikipedia.org/wiki/Asia-Pacific)                       | Asia-Pacific                   |
-| [ARAB](https://en.wikipedia.org/wiki/Arab_world)                         | Arab world                     |
-| [ASIA](https://en.wikipedia.org/wiki/Asia)                               | Asia                           |
-| [CARIB](https://en.wikipedia.org/wiki/Caribbean)                         | Caribbean                      |
-| [EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa) | Europe, Middle East and Africa |
-| [EUR](https://en.wikipedia.org/wiki/Europe)                              | Europe                         |
-| [LATAM](https://en.wikipedia.org/wiki/Latin_America)                     | Latin America                  |
-| [MAGHRIB](https://en.wikipedia.org/wiki/Maghreb)                         | Maghrib                        |
-| [MENA](https://en.wikipedia.org/wiki/MENA)                               | Middle East and North Africa   |
-| [MIDEAST](https://en.wikipedia.org/wiki/Middle_East)                     | Middle East                    |
-| [NORAM](https://en.wikipedia.org/wiki/North_America)                     | North America                  |
-| [NORD](https://en.wikipedia.org/wiki/Nordic_countries)                   | Nordics                        |
-| [OCE](https://en.wikipedia.org/wiki/Oceania)                             | Oceania                        |
-| [SAS](https://en.wikipedia.org/wiki/South_Asia)                          | South Asia                     |
-| [SSA](https://en.wikipedia.org/wiki/Sub-Saharan_Africa)                  | Sub-Saharan Africa             |
-| [WAFR](https://en.wikipedia.org/wiki/West_Africa)                        | West Africa                    |
-
 ## Project Structure
 
 - `.github/`
@@ -195,6 +165,7 @@ http://example.com/stream.m3u8
   - `_languages.md`: automatically generated list of all languages and their corresponding playlists.
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
   - `preview.png`: image displayed in the `README.md`.
+  - `supported-region-codes.md`: list of supported region codes.
   - `template.md`: template for `README.md`.
 - `channels/`: contains all channels broken down by the country from which they are broadcast.
   - ...
