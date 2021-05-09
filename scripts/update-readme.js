@@ -5,11 +5,40 @@ db.load()
 
 function main() {
   start()
+  generateCategoriesTable()
   generateCountriesTable()
   generateLanguagesTable()
-  generateCategoriesTable()
   generateReadme()
   finish()
+}
+
+function generateCategoriesTable() {
+  console.log(`Generating categories table...`)
+  const categories = []
+
+  for (const category of db.categories.all()) {
+    categories.push({
+      category: category.name,
+      channels: db.channels.forCategory(category).count(),
+      playlist: `<code>https://iptv-org.github.io/iptv/categories/${category.id}.m3u</code>`
+    })
+  }
+
+  categories.push({
+    category: 'Other',
+    channels: db.channels.forCategory({ id: 'other' }).count(),
+    playlist: `<code>https://iptv-org.github.io/iptv/categories/other.m3u</code>`
+  })
+
+  const table = utils.generateTable(categories, {
+    columns: [
+      { name: 'Category', align: 'left' },
+      { name: 'Channels', align: 'right' },
+      { name: 'Playlist', align: 'left' }
+    ]
+  })
+
+  utils.createFile('./.readme/_categories.md', table)
 }
 
 function generateCountriesTable() {
@@ -27,7 +56,7 @@ function generateCountriesTable() {
 
   countries.push({
     country: 'Undefined',
-    channels: db.channels.forCountry({ code: null }).count(),
+    channels: db.channels.forCountry({ code: 'undefined' }).count(),
     playlist: `<code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code>`
   })
 
@@ -40,35 +69,6 @@ function generateCountriesTable() {
   })
 
   utils.createFile('./.readme/_countries.md', table)
-}
-
-function generateCategoriesTable() {
-  console.log(`Generating categories table...`)
-  const categories = []
-
-  for (const category of db.categories.all()) {
-    categories.push({
-      category: category.name,
-      channels: db.channels.forCategory(category).count(),
-      playlist: `<code>https://iptv-org.github.io/iptv/categories/${category.id}.m3u</code>`
-    })
-  }
-
-  categories.push({
-    category: 'Other',
-    channels: db.channels.forCategory({ id: null }).count(),
-    playlist: `<code>https://iptv-org.github.io/iptv/categories/other.m3u</code>`
-  })
-
-  const table = utils.generateTable(categories, {
-    columns: [
-      { name: 'Category', align: 'left' },
-      { name: 'Channels', align: 'right' },
-      { name: 'Playlist', align: 'left' }
-    ]
-  })
-
-  utils.createFile('./.readme/_categories.md', table)
 }
 
 function generateLanguagesTable() {
@@ -85,7 +85,7 @@ function generateLanguagesTable() {
 
   languages.push({
     language: 'Undefined',
-    channels: db.channels.forLanguage({ code: null }).count(),
+    channels: db.channels.forLanguage({ code: 'undefined' }).count(),
     playlist: `<code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code>`
   })
 
