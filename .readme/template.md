@@ -53,7 +53,6 @@ Or select one of the playlists from the list below.
 #include "./.readme/_countries.md"
 
 </details>
-<br>
 
 NOTE: Add `.sfw` to the end of the filename for the lists without any adult channels (For example: `https://iptv-org.github.io/iptv/countries/fr.sfw.m3u`).
 
