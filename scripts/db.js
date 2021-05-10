@@ -32,6 +32,7 @@ db.load = function () {
 db.channels = {
   list: [],
   filter: null,
+  duplicates: true,
   add(channel) {
     this.list.push(channel)
   },
@@ -68,12 +69,29 @@ db.channels = {
           break
       }
     } else {
-      output = this.all()
+      output = this.list
     }
 
+    if (!this.duplicates) {
+      const buffer = []
+      output = output.filter(channel => {
+        const info = channel.getInfo()
+        if (buffer.includes(info)) return false
+        buffer.push(info)
+
+        return true
+      })
+    }
+
+    this.duplicates = true
     this.filter = null
 
     return output
+  },
+  removeDuplicates() {
+    this.duplicates = false
+
+    return this
   },
   all() {
     return this.list
