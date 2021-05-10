@@ -188,7 +188,6 @@ function generateCountries() {
   const outputDir = `${ROOT_DIR}/countries`
   utils.createDir(outputDir)
 
-  const buffer = []
   for (const country of [...db.countries.all(), { code: 'undefined' }]) {
     const filename = `${outputDir}/${country.code}.m3u`
     utils.createFile(filename, '#EXTM3U\n')
@@ -196,6 +195,7 @@ function generateCountries() {
     const sfwFilename = `${outputDir}/${country.code}.sfw.m3u`
     utils.createFile(sfwFilename, '#EXTM3U\n')
 
+    const buffer = []
     const channels = db.channels.sortBy(['name', 'url']).forCountry(country).get()
     for (const channel of channels) {
       const info = channel.getInfo()
