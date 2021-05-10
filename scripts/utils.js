@@ -30,7 +30,7 @@ utils.code2flag = function (code) {
       return '🇬🇧'
     case 'INT':
       return '🌍'
-    case 'UNSORTED':
+    case 'UNDEFINED':
       return ''
     default:
       return code.replace(/./g, char => String.fromCodePoint(char.charCodeAt(0) + 127397))
