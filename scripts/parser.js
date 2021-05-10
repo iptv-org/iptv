@@ -3,6 +3,8 @@ const utils = require('./utils')
 const categories = require('./categories')
 const path = require('path')
 
+const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
+
 const parser = {}
 
 parser.parseIndex = function () {
@@ -61,8 +63,6 @@ class Channel {
       this.countries = countryName ? [{ code: this.filename, name: countryName }] : []
       this.tvg.country = this.countries.map(c => c.code.toUpperCase()).join(';')
     }
-
-    this.tvg.url = header.attrs['x-tvg-url'] || ''
   }
 
   parseData(data) {
@@ -158,7 +158,7 @@ class Channel {
   }
 
   get tvgUrl() {
-    return (this.tvg.id || this.tvg.name) && this.tvg.url ? this.tvg.url : ''
+    return this.tvg.id && this.tvg.url ? this.tvg.url : ''
   }
 
   get tvgId() {
@@ -183,9 +183,7 @@ class Channel {
     return ''
   }
 
-  toString(raw = false) {
-    if (raw) return this.raw + '\n'
-
+  getInfo() {
     this.tvg.country = this.tvg.country.toUpperCase()
 
     let info = `-1 tvg-id="${this.tvgId}" tvg-name="${this.tvgName}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
@@ -208,10 +206,16 @@ class Channel {
       info += `\n#EXTVLCOPT:http-user-agent=${this.http['user-agent']}`
     }
 
-    return '#EXTINF:' + info + '\n' + this.url + '\n'
+    return info
   }
 
-  toJSON() {
+  toString(raw = false) {
+    if (raw) return this.raw + '\n'
+
+    return '#EXTINF:' + this.getInfo() + '\n' + this.url + '\n'
+  }
+
+  toObject() {
     return {
       name: this.name,
       logo: this.logo || null,
@@ -222,9 +226,13 @@ class Channel {
       tvg: {
         id: this.tvgId || null,
         name: this.tvgName || null,
-        url: this.tvg.url || null
+        url: this.tvgUrl || null
       }
     }
+  }
+
+  isSFW() {
+    return sfwCategories.includes(this.category)
   }
 }
 
