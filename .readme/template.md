@@ -7,14 +7,6 @@ Collection of publicly available IPTV channels from all over the world.
 
 Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks.
 
-## Usage
-
-To watch IPTV you just need to paste one of the links available to any player that supports M3U playlists.
-
-Below is an example of playlist usage in VLC :
-
-![VLC Network Panel](.readme/preview.png)
-
 ## Available playlists
 
 There are multiple playlists available for each of your desires :
@@ -24,6 +16,9 @@ There are multiple playlists available for each of your desires :
 - `https://iptv-org.github.io/iptv/index.sfw.m3u` contains links we've classified as "safe for work", meaning no adult channels are in there.
 
 *Note that if you find any adult channel that we did not classify as "XXX", please let us know by making an "Question" issue.*
+
+Here is an example on how it works : 
+![VLC Network Panel](.readme/preview.png)
 
 *All channels, sorted by specific order*
 - `https://iptv-org.github.io/iptv/index.country.m3u` contains all the links grouped by their country (of streaming origin, specific countries available below)
@@ -65,8 +60,7 @@ Are you interested into something more specific ? Use one of the playlists from 
 
 </details>
 
-*Note that each country has got his own "Safe for Work" playlist ! Just follow this pattern : https://iptv-org.github.io/iptv/countrycode.sfw.m3u
-Example : https://iptv-org.github.io/iptv/fr.sfw.m3u*
+**NOTE:** Add `.sfw` to the end of the filename for the lists without any adult channels (For example: `https://iptv-org.github.io/iptv/countries/fr.sfw.m3u`).
 
 ## For Developers
 
