@@ -16,7 +16,7 @@
 		<tr><td align="left">🇦🇼&nbsp;Aruba</td><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/aw.m3u</code></td></tr>
 		<tr><td align="left">🇦🇺&nbsp;Australia</td><td align="right">110</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/au.m3u</code></td></tr>
 		<tr><td align="left">🇦🇹&nbsp;Austria</td><td align="right">53</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/at.m3u</code></td></tr>
-		<tr><td align="left">🇦🇿&nbsp;Azerbaijan</td><td align="right">29</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/az.m3u</code></td></tr>
+		<tr><td align="left">🇦🇿&nbsp;Azerbaijan</td><td align="right">20</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/az.m3u</code></td></tr>
 		<tr><td align="left">🇧🇸&nbsp;Bahamas</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/bs.m3u</code></td></tr>
 		<tr><td align="left">🇧🇭&nbsp;Bahrain</td><td align="right">57</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/bh.m3u</code></td></tr>
 		<tr><td align="left">🇧🇩&nbsp;Bangladesh</td><td align="right">13</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/bd.m3u</code></td></tr>
@@ -72,7 +72,7 @@
 		<tr><td align="left">🇫🇴&nbsp;Faroe Islands</td><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fo.m3u</code></td></tr>
 		<tr><td align="left">🇫🇯&nbsp;Fiji</td><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fj.m3u</code></td></tr>
 		<tr><td align="left">🇫🇮&nbsp;Finland</td><td align="right">15</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fi.m3u</code></td></tr>
-		<tr><td align="left">🇫🇷&nbsp;France</td><td align="right">158</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fr.m3u</code></td></tr>
+		<tr><td align="left">🇫🇷&nbsp;France</td><td align="right">157</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/fr.m3u</code></td></tr>
 		<tr><td align="left">🇬🇫&nbsp;French Guiana</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/gf.m3u</code></td></tr>
 		<tr><td align="left">🇵🇫&nbsp;French Polynesia</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/pf.m3u</code></td></tr>
 		<tr><td align="left">🇹🇫&nbsp;French Southern Territories</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tf.m3u</code></td></tr>
@@ -94,9 +94,9 @@
 		<tr><td align="left">🇭🇰&nbsp;Hong Kong</td><td align="right">25</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/hk.m3u</code></td></tr>
 		<tr><td align="left">🇭🇺&nbsp;Hungary</td><td align="right">42</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/hu.m3u</code></td></tr>
 		<tr><td align="left">🇮🇸&nbsp;Iceland</td><td align="right">12</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/is.m3u</code></td></tr>
-		<tr><td align="left">🇮🇳&nbsp;India</td><td align="right">233</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/in.m3u</code></td></tr>
+		<tr><td align="left">🇮🇳&nbsp;India</td><td align="right">232</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/in.m3u</code></td></tr>
 		<tr><td align="left">🇮🇩&nbsp;Indonesia</td><td align="right">50</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/id.m3u</code></td></tr>
-		<tr><td align="left">🌍&nbsp;International</td><td align="right">86</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/int.m3u</code></td></tr>
+		<tr><td align="left">🌍&nbsp;International</td><td align="right">90</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/int.m3u</code></td></tr>
 		<tr><td align="left">🇮🇷&nbsp;Iran</td><td align="right">94</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ir.m3u</code></td></tr>
 		<tr><td align="left">🇮🇶&nbsp;Iraq</td><td align="right">82</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/iq.m3u</code></td></tr>
 		<tr><td align="left">🇮🇪&nbsp;Ireland</td><td align="right">24</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ie.m3u</code></td></tr>
@@ -172,7 +172,7 @@
 		<tr><td align="left">🇵🇷&nbsp;Puerto Rico</td><td align="right">19</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/pr.m3u</code></td></tr>
 		<tr><td align="left">🇶🇦&nbsp;Qatar</td><td align="right">62</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/qa.m3u</code></td></tr>
 		<tr><td align="left">🇷🇴&nbsp;Romania</td><td align="right">83</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ro.m3u</code></td></tr>
-		<tr><td align="left">🇷🇺&nbsp;Russia</td><td align="right">555</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ru.m3u</code></td></tr>
+		<tr><td align="left">🇷🇺&nbsp;Russia</td><td align="right">465</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ru.m3u</code></td></tr>
 		<tr><td align="left">🇷🇼&nbsp;Rwanda</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/rw.m3u</code></td></tr>
 		<tr><td align="left">🇷🇪&nbsp;Réunion</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/re.m3u</code></td></tr>
 		<tr><td align="left">🇼🇸&nbsp;Samoa</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ws.m3u</code></td></tr>
@@ -215,16 +215,16 @@
 		<tr><td align="left">🇹🇴&nbsp;Tonga</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/to.m3u</code></td></tr>
 		<tr><td align="left">🇹🇹&nbsp;Trinidad & Tobago</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tt.m3u</code></td></tr>
 		<tr><td align="left">🇹🇳&nbsp;Tunisia</td><td align="right">45</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tn.m3u</code></td></tr>
-		<tr><td align="left">🇹🇷&nbsp;Turkey</td><td align="right">316</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tr.m3u</code></td></tr>
+		<tr><td align="left">🇹🇷&nbsp;Turkey</td><td align="right">298</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tr.m3u</code></td></tr>
 		<tr><td align="left">🇹🇲&nbsp;Turkmenistan</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tm.m3u</code></td></tr>
 		<tr><td align="left">🇹🇨&nbsp;Turks & Caicos Islands</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tc.m3u</code></td></tr>
 		<tr><td align="left">🇹🇻&nbsp;Tuvalu</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/tv.m3u</code></td></tr>
 		<tr><td align="left">🇻🇮&nbsp;U.S. Virgin Islands</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/vi.m3u</code></td></tr>
 		<tr><td align="left">🇺🇬&nbsp;Uganda</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ug.m3u</code></td></tr>
-		<tr><td align="left">🇺🇦&nbsp;Ukraine</td><td align="right">89</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ua.m3u</code></td></tr>
+		<tr><td align="left">🇺🇦&nbsp;Ukraine</td><td align="right">86</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ua.m3u</code></td></tr>
 		<tr><td align="left">🇦🇪&nbsp;United Arab Emirates</td><td align="right">119</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ae.m3u</code></td></tr>
-		<tr><td align="left">🇬🇧&nbsp;United Kingdom</td><td align="right">149</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/uk.m3u</code></td></tr>
-		<tr><td align="left">🇺🇸&nbsp;United States</td><td align="right">1626</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/us.m3u</code></td></tr>
+		<tr><td align="left">🇬🇧&nbsp;United Kingdom</td><td align="right">150</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/uk.m3u</code></td></tr>
+		<tr><td align="left">🇺🇸&nbsp;United States</td><td align="right">1617</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/us.m3u</code></td></tr>
 		<tr><td align="left">🇺🇾&nbsp;Uruguay</td><td align="right">8</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/uy.m3u</code></td></tr>
 		<tr><td align="left">🇺🇿&nbsp;Uzbekistan</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/uz.m3u</code></td></tr>
 		<tr><td align="left">🇻🇺&nbsp;Vanuatu</td><td align="right">5</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/vu.m3u</code></td></tr>
@@ -237,6 +237,6 @@
 		<tr><td align="left">🇿🇲&nbsp;Zambia</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/zm.m3u</code></td></tr>
 		<tr><td align="left">🇿🇼&nbsp;Zimbabwe</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/zw.m3u</code></td></tr>
 		<tr><td align="left">🇦🇽&nbsp;Åland Islands</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ax.m3u</code></td></tr>
-		<tr><td align="left">Undefined</td><td align="right">2779</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
+		<tr><td align="left">Undefined</td><td align="right">2742</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
