@@ -94,6 +94,7 @@ jobs:
           commit-message: '[Bot] Update playlists'
           branch: bot/auto-update
           delete-branch: true
+          token: ${{ secrets.PAT }}
       - name: Merge Pull Request
         if: steps.pr.outputs.pull-request-operation == 'created'
         uses: peter-evans/enable-pull-request-automerge@v1
