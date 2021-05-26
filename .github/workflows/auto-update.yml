@@ -84,6 +84,12 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: README.md
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Create Pull Request
         id: pr
         uses: peter-evans/create-pull-request@v3
@@ -94,8 +100,8 @@ jobs:
           commit-message: '[Bot] Update playlists'
           branch: bot/auto-update
           delete-branch: true
-          token: ${{ secrets.PAT }}
-      - name: Merge Pull Request
+          token: ${{ steps.generate-token.outputs.token }}
+      - name: Enable Pull Request Automerge
         if: steps.pr.outputs.pull-request-operation == 'created'
         uses: peter-evans/enable-pull-request-automerge@v1
         with:
