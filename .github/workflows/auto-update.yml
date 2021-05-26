@@ -44,3 +44,12 @@ jobs:
         run: |
           git add README.md
           git diff-index --quiet HEAD || git commit -m "[Bot] Update README.md"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: '[Bot] Update Playlists'
+          body: |
+            This pull request is created automatically by `auto-update` action.
+          base: bot/auto-update
+          branch: bot/auto-update-pr
+          delete-branch: true
