@@ -94,12 +94,6 @@ jobs:
           commit-message: '[Bot] Update playlists'
           branch: bot/auto-update
           delete-branch: true
-      - name: Approve Pull Request
-        if: steps.pr.outputs.pull-request-operation == 'created'
-        uses: juliangruber/approve-pull-request-action@v1
-        with:
-          github-token: ${{ secrets.PAT }}
-          number: ${{ steps.pr.outputs.pull-request-number }}
       - name: Merge Pull Request
         if: steps.pr.outputs.pull-request-operation == 'created'
         uses: peter-evans/enable-pull-request-automerge@v1
@@ -107,3 +101,9 @@ jobs:
           token: ${{ secrets.PAT }}
           pull-request-number: ${{ steps.pr.outputs.pull-request-number }}
           merge-method: squash
+      - name: Approve Pull Request
+        if: steps.pr.outputs.pull-request-operation == 'created'
+        uses: juliangruber/approve-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.pr.outputs.pull-request-number }}
