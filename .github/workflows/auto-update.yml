@@ -98,6 +98,7 @@ jobs:
           body: |
             This pull request is created automatically by `auto-update` action.
           commit-message: '[Bot] Update playlists'
+          committer: GitHub <noreply@github.com>
           branch: bot/auto-update
           delete-branch: true
           token: ${{ steps.generate-token.outputs.token }}
