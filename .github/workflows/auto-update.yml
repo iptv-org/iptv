@@ -44,9 +44,9 @@ jobs:
         run: |
           git add README.md
           git diff-index --quiet HEAD || git commit -m "[Bot] Update README.md"
-      - name: Revert Uncommited Changes
+      - name: Discard Uncommited Changes
         run: |
-          git checkout .
+          git checkout -- .
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
