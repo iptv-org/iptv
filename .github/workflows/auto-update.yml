@@ -98,7 +98,7 @@ jobs:
         if: steps.pr.outputs.pull-request-operation == 'created'
         uses: juliangruber/approve-pull-request-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.PAT }}
           number: ${{ steps.pr.outputs.pull-request-number }}
       - name: Merge Pull Request
         if: steps.pr.outputs.pull-request-operation == 'created'
