@@ -18,7 +18,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git diff-index --quiet HEAD || git commit -m "[Bot] Remove duplicates [skip ci]"
+          git diff-index --quiet HEAD || git commit -m "[Bot] Remove duplicates"
           git pull
           git push
   format:
@@ -36,7 +36,7 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git diff-index --quiet HEAD || git commit -m "[Bot] Format playlists [skip ci]"
+          git diff-index --quiet HEAD || git commit -m "[Bot] Format playlists"
           git pull
           git push
   generate:
@@ -69,6 +69,6 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@github.com
           git add .
-          git diff-index --quiet HEAD || git commit -m "[Bot] Update README.md [skip ci]"
+          git diff-index --quiet HEAD || git commit -m "[Bot] Update README.md"
           git pull
           git push
