@@ -79,6 +79,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: channels
+          path: channels/
       - name: Download README.md
         uses: actions/download-artifact@v2
         with:
