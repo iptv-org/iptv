@@ -75,8 +75,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Download Artifacts
+      - name: Download /channels
         uses: actions/download-artifact@v2
+        with:
+          name: channels
+      - name: Download README.md
+        uses: actions/download-artifact@v2
+        with:
+          name: README.md
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
