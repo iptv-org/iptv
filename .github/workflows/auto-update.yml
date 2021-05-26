@@ -17,7 +17,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add .
+          git add channels/*
           git diff-index --quiet HEAD || git commit -m "[Bot] Remove duplicates"
           git pull
           git push
@@ -35,7 +35,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add .
+          git add channels/*
           git diff-index --quiet HEAD || git commit -m "[Bot] Format playlists"
           git pull
           git push
@@ -68,7 +68,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git add .
+          git add README.md
           git diff-index --quiet HEAD || git commit -m "[Bot] Update README.md"
           git pull
           git push
