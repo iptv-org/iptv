@@ -2,6 +2,8 @@ const categories = require('./categories')
 const parser = require('./parser')
 const utils = require('./utils')
 
+const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
+
 const db = {}
 
 db.load = function () {
@@ -30,6 +32,7 @@ db.load = function () {
 db.channels = {
   list: [],
   filter: null,
+  duplicates: true,
   add(channel) {
     this.list.push(channel)
   },
@@ -38,7 +41,7 @@ db.channels = {
     if (this.filter) {
       switch (this.filter.field) {
         case 'countries':
-          if (!this.filter.value) {
+          if (this.filter.value === 'undefined') {
             output = this.list.filter(channel => !channel.countries.length)
           } else {
             output = this.list.filter(channel =>
@@ -47,7 +50,7 @@ db.channels = {
           }
           break
         case 'languages':
-          if (!this.filter.value) {
+          if (this.filter.value === 'undefined') {
             output = this.list.filter(channel => !channel.languages.length)
           } else {
             output = this.list.filter(channel =>
@@ -56,7 +59,7 @@ db.channels = {
           }
           break
         case 'category':
-          if (!this.filter.value) {
+          if (this.filter.value === 'other') {
             output = this.list.filter(channel => !channel.category)
           } else {
             output = this.list.filter(
@@ -66,19 +69,34 @@ db.channels = {
           break
       }
     } else {
-      output = this.all()
+      output = this.list
     }
 
+    if (!this.duplicates) {
+      const buffer = []
+      output = output.filter(channel => {
+        const info = channel.getInfo()
+        if (buffer.includes(info)) return false
+        buffer.push(info)
+
+        return true
+      })
+    }
+
+    this.duplicates = true
     this.filter = null
 
     return output
+  },
+  removeDuplicates() {
+    this.duplicates = false
+
+    return this
   },
   all() {
     return this.list
   },
   sfw() {
-    const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
-
     return this.list.filter(i => sfwCategories.includes(i.category))
   },
   forCountry(country) {

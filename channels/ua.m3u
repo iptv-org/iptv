@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://iptvx.one/epg/epg.xml.gz"
+#EXTM3U
 #EXTINF:-1 tvg-id="1Plus1.ua" tvg-name="1+1" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="" group-title="",1+1
 http://spacetv.in/stream/DIPK8H19CP8/172.m3u8
 #EXTINF:-1 tvg-id="100News.ua" tvg-name="100% News" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/11llLr1.jpg" group-title="News",100% News
@@ -11,7 +11,7 @@ http://streamvideol1.luxnet.ua/news24/news24.stream/chunklist.m3u8
 http://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/chunklist.m3u8
 #EXTINF:-1 tvg-id="24Kanal.ua" tvg-name="24 Канал" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="" group-title="News",24 Канал (1080p)
 http://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="34kanal.ua" tvg-name="34 канал" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="" group-title="",34 канал
+#EXTINF:-1 tvg-id="34kanal.ua" tvg-name="34 канал" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="" group-title="",34 канал (576p)
 http://streamvideol.luxnet.ua/34ua/34ua.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="4kanal.ua" tvg-name="4 канал" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/8k3JjOW.png" group-title="",4 канал
 http://95.67.106.10/hls/nta_ua_hi/index.m3u8
@@ -31,18 +31,18 @@ http://cdn1.live-tv.od.ua:8081/bbb/bbbtv-abr/playlist.m3u8
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_3.m3u8
 #EXTINF:-1 tvg-id="FilmTV.ua" tvg-name="Film TV" tvg-country="INT" tvg-language="Ukrainian;Russian" tvg-logo="" group-title="Movies",Film TV
 http://filmtv.zapto.org:8050/hls/stream/index.m3u8
+#EXTINF:-1 tvg-id="GIT.ua" tvg-name="GIT" tvg-country="UA" tvg-language="" tvg-logo="https://i.imgur.com/v5J8tiS.png" group-title="",GIT
+https://stream.uagit.tv/gittv.m3u8
 #EXTINF:-1 tvg-id="GTV.ua" tvg-name="GTV" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/Rc6UGkb.jpg" group-title="",GTV (576p)
 http://cdn1.live-tv.od.ua:8081/a1od/gtvod-abr/a1od/gtvod-480p/playlist.m3u8
 #EXTINF:-1 tvg-id="GTV.ua" tvg-name="GTV" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/Rc6UGkb.jpg" group-title="",GTV (720p)
 http://cdn1.live-tv.od.ua:8081/a1od/gtvod-abr/a1od/gtvod-720p/playlist.m3u8
 #EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" tvg-name="HDFashion & LifeStyle" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://www.parsatv.com/index_files/channels/hdfashion.png" group-title="",HDFashion & LifeStyle
 http://95.67.47.114/hls/hdfashion_ua_low/index.m3u8
-#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" tvg-name="HDFashion & LifeStyle" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/LtQL1q9.jpg" group-title="Fashion",HDFashion & LifeStyle
+#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" tvg-name="HDFashion & LifeStyle" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/LtQL1q9.jpg" group-title="Lifestyle",HDFashion & LifeStyle
 http://95.67.47.115/hls/hdfashion_ua_hi/index.m3u8
-#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" tvg-name="HDFashion & LifeStyle" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/LtQL1q9.jpg" group-title="Fashion",HDFashion & LifeStyle
+#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" tvg-name="HDFashion & LifeStyle" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/LtQL1q9.jpg" group-title="Lifestyle",HDFashion & LifeStyle
 http://95.67.47.115/hls/hdfashion_ua_mid/index.m3u8
-#EXTINF:-1 tvg-id="ICTV.ua" tvg-name="ICTV" tvg-country="UA" tvg-language="Russian;Ukrainian" tvg-logo="" group-title="",ICTV (576p)
-http://51.195.44.53:8081/tv/ictv/playlist.m3u8
 #EXTINF:-1 tvg-id="Inter.ua" tvg-name="Iнтер" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/0n7Bk5s.png" group-title="",Iнтер
 https://edge3.iptv.macc.com.ua/img/inter_3/index.m3u8
 #EXTINF:-1 tvg-id="KinderTV.ua" tvg-name="Kinder TV" tvg-country="INT" tvg-language="Ukrainian;Russian" tvg-logo="" group-title="Kids",Kinder TV
@@ -61,10 +61,8 @@ http://85.238.112.40:8810/hls_sec/239.33.116.26-.m3u8
 https://hls.simon.ua/live-HD/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Skrypinua.ua" tvg-name="Skrypin.ua" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="" group-title="",Skrypin.ua
 https://open-cdn.lanet.tv/live/1008.m3u8
-#EXTINF:-1 tvg-id="Sport1.ua" tvg-name="Sport 1" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/wBJI5Jw.png" group-title="Sport",Sport 1
+#EXTINF:-1 tvg-id="Sport1.ua" tvg-name="Sport 1" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/wBJI5Jw.png" group-title="Sports",Sport 1
 https://95-213-224-183.livesports24.online/sport1ua.m3u8
-#EXTINF:-1 tvg-id="TET.ua" tvg-name="TET" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="" group-title="",TET (576p)
-http://51.195.44.53:8081/tv/tet/playlist.m3u8
 #EXTINF:-1 tvg-id="TravelGuideTV.ua" tvg-name="Travel Guide TV" tvg-country="UA" tvg-language="Ukrainian;Russian" tvg-logo="" group-title="Travel",Travel Guide TV (720p)
 http://cdn10.live-tv.od.ua:8081/leonovtv/1080i/playlist.m3u8
 #EXTINF:-1 tvg-id="TravelGuideTV.ua" tvg-name="Travel Guide TV" tvg-country="UA" tvg-language="Ukrainian;Russian" tvg-logo="" group-title="Travel",Travel Guide TV (720p)
@@ -75,7 +73,7 @@ http://hls.cdn.ua/tv5.zp.ua_live/_definst_/mp4:tv5/playlist.m3u8
 http://hls.cdn.ua/tv5.zp.ua_live/_definst_:tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" tvg-name="TV5" tvg-country="UA" tvg-language="Ukrainian;Russian" tvg-logo="https://i.imgur.com/ixKcTad.png" group-title="",TV5 (Запорожье) (360p)
 http://rtsp.cdn.ua/tv5.zp.ua_live/_definst_/mp4:tv5/playlist.m3u8
-#EXTINF:-1 tvg-id="TV7Plus.ua" tvg-name="TV7+" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/5qwIslT.jpg" group-title="Local",TV7+ (Хмельницький)
+#EXTINF:-1 tvg-id="TV7Plus.ua" tvg-name="TV7+" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/5qwIslT.jpg" group-title="Local",TV7+ (Хмельницький) [Not 24/7]
 https://tv7plus.com/hls/tv7.m3u8
 #EXTINF:-1 tvg-id="TV7Plus.ua" tvg-name="TV7+" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/5qwIslT.jpg" group-title="Local",TV7+ (Хмельницький)
 https://tv7plus.com/hls/tv7_site.m3u8
@@ -199,16 +197,12 @@ http://cdn10.live-tv.od.ua:8081/riood/tisod-abr/riood/tisod504/playlist.m3u8
 http://cdn10.live-tv.od.ua:8081/riood/tisod-abr-lq/riood/tisod504/playlist.m3u8
 #EXTINF:-1 tvg-id="TISTV.ua" tvg-name="ТІС ТВ" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="" group-title="",ТІС ТВ (Одесса) (216p)
 http://cdn10.live-tv.od.ua:8081/riood/tisod-abr/riood/tisod240/playlist.m3u8
-#EXTINF:-1 tvg-id="Futbol1.ua" tvg-name="Футбол 1" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/J1VuYAB.png" group-title="Sport",Футбол 1
+#EXTINF:-1 tvg-id="Futbol1.ua" tvg-name="Футбол 1" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/J1VuYAB.png" group-title="Sports",Футбол 1
 https://95-213-224-183.livesports24.online/uafootballua1.m3u8
-#EXTINF:-1 tvg-id="Futbol2.ua" tvg-name="Футбол 2" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://i.imgur.com/e7E9Of9.jpg" group-title="Sport",Футбол 2
-https://95-213-224-183.livesports24.online/fooootball2.m3u8
 #EXTINF:-1 tvg-id="HersonPlyus.ua" tvg-name="Херсон Плюс" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://khersontv.com/wp-content/themes/hueman/img/logo.png" group-title="",Херсон Плюс
 http://46.175.163.130/ks_plus/index.m3u8
 #EXTINF:-1 tvg-id="Cherniveckiypromin.ua" tvg-name="Чернівецький промінь" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="" group-title="",Чернівецький промінь (720p)
 https://langate.tv/promin/live_720/index.m3u8
-#EXTINF:-1 tvg-id="Chernivci.ua" tvg-name="Чернівці" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="" group-title="Local",Чернівці (576p)
-http://91.205.207.20:1935/live/mtrk.chernivtsi.rvqs-92g8-sg04-6h4t/playlist.m3u8
 #EXTINF:-1 tvg-id="ChPinfo.ua" tvg-name="ЧП.інфо" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://iptvx.one/icn/chpinfo.png" group-title="",ЧП.інфо
 http://109.68.40.67/life/magnolia.m3u8
 #EXTINF:-1 tvg-id="ChPinfo.ua" tvg-name="ЧП.інфо" tvg-country="UA" tvg-language="Ukrainian" tvg-logo="https://iptvx.one/icn/chpinfo.png" group-title="",ЧП.інфо
