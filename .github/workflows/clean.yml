@@ -1,0 +1,213 @@
+name: clean
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 0'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        country: [
+            ad,
+            ae,
+            af,
+            al,
+            am,
+            ao,
+            ar,
+            at,
+            au,
+            aw,
+            az,
+            ba,
+            bb,
+            bd,
+            be,
+            bf,
+            bg,
+            bh,
+            bn,
+            bo,
+            br,
+            bs,
+            by,
+            ca,
+            cd,
+            cg,
+            ch,
+            ci,
+            cl,
+            cm,
+            cn,
+            co,
+            cr,
+            cu,
+            cw,
+            cy,
+            cz,
+            de,
+            dk,
+            do,
+            dz,
+            ec,
+            ee,
+            eg,
+            es,
+            et,
+            fi,
+            fj,
+            fo,
+            fr,
+            ge,
+            gh,
+            gm,
+            gn,
+            gp,
+            gq,
+            gr,
+            gt,
+            hk,
+            hn,
+            hr,
+            ht,
+            hu,
+            id,
+            ie,
+            il,
+            in,
+            iq,
+            ir,
+            is,
+            it,
+            jm,
+            jo,
+            jp,
+            ke,
+            kg,
+            kh,
+            kp,
+            kr,
+            kw,
+            kz,
+            la,
+            lb,
+            li,
+            lk,
+            lt,
+            lu,
+            lv,
+            ly,
+            ma,
+            mc,
+            md,
+            me,
+            mk,
+            ml,
+            mm,
+            mn,
+            mo,
+            mt,
+            mx,
+            my,
+            mz,
+            ne,
+            ng,
+            nl,
+            no,
+            np,
+            nz,
+            om,
+            pa,
+            pe,
+            ph,
+            pk,
+            pl,
+            pr,
+            ps,
+            pt,
+            py,
+            qa,
+            ro,
+            rs,
+            ru,
+            rw,
+            sa,
+            sd,
+            se,
+            sg,
+            si,
+            sk,
+            sl,
+            sm,
+            sn,
+            so,
+            sv,
+            sy,
+            th,
+            tj,
+            tm,
+            tn,
+            tr,
+            tt,
+            tw,
+            tz,
+            ua,
+            ug,
+            uk,
+            us,
+            uy,
+            uz,
+            va,
+            ve,
+            vi,
+            vn,
+            xk,
+            ye,
+            zm
+            # unsorted
+          ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Remove Broken Links
+        run: node scripts/clean.js --country=${{ matrix.country }} --debug
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: channels
+          path: channels/${{ matrix.country }}.m3u
+  pull-request:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: '[Bot] Remove broken links'
+          body: |
+            This pull request is created automatically by `clean` action. 
+
+            The script checks each link and removes only those that return a HTTP 404 code (Not Found). Also, the script ignores links with labels `[Geo-blocked]` and `[Not 24/7]` in the title.
+
+            **IMPORTANT:** Before merging all links should be checked manually to make sure that the response from the server has not changed. Working links should be marked as `[Not 24/7]` so that next time the script will not delete them.
+          commit-message: '[Bot] Update playlists'
+          committer: GitHub <noreply@github.com>
+          branch: bot/remove-broken-links
+          delete-branch: true
+          draft: true
+          token: ${{ steps.generate-token.outputs.token }}

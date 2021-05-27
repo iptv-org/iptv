@@ -3,6 +3,8 @@ const utils = require('./utils')
 const categories = require('./categories')
 const path = require('path')
 
+const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
+
 const parser = {}
 
 parser.parseIndex = function () {
@@ -32,7 +34,8 @@ class Playlist {
       .filter(channel => channel.url)
   }
 
-  toString(short = false) {
+  toString(options = {}) {
+    const config = { raw: false, ...options }
     let parts = ['#EXTM3U']
     for (let key in this.header.attrs) {
       let value = this.header.attrs[key]
@@ -43,7 +46,7 @@ class Playlist {
 
     let output = `${parts.join(' ')}\n`
     for (let channel of this.channels) {
-      output += channel.toString(short)
+      output += channel.toString(config.raw)
     }
 
     return output
@@ -60,8 +63,6 @@ class Channel {
       this.countries = countryName ? [{ code: this.filename, name: countryName }] : []
       this.tvg.country = this.countries.map(c => c.code.toUpperCase()).join(';')
     }
-
-    this.tvg.url = header.attrs['x-tvg-url'] || ''
   }
 
   parseData(data) {
@@ -77,6 +78,7 @@ class Channel {
     this.countries = this.parseCountries(data.tvg.country)
     this.languages = this.parseLanguages(data.tvg.language)
     this.category = this.parseCategory(data.group.title)
+    this.raw = data.raw
   }
 
   parseCountries(string) {
@@ -156,7 +158,7 @@ class Channel {
   }
 
   get tvgUrl() {
-    return (this.tvg.id || this.tvg.name) && this.tvg.url ? this.tvg.url : ''
+    return this.tvg.id && this.tvg.url ? this.tvg.url : ''
   }
 
   get tvgId() {
@@ -181,14 +183,10 @@ class Channel {
     return ''
   }
 
-  toString(short = false) {
+  getInfo() {
     this.tvg.country = this.tvg.country.toUpperCase()
 
     let info = `-1 tvg-id="${this.tvgId}" tvg-name="${this.tvgName}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
-
-    if (!short) {
-      info += ` tvg-url="${this.tvgUrl}"`
-    }
 
     info += ` group-title="${this.category}",${this.name}`
 
@@ -208,10 +206,16 @@ class Channel {
       info += `\n#EXTVLCOPT:http-user-agent=${this.http['user-agent']}`
     }
 
-    return '#EXTINF:' + info + '\n' + this.url + '\n'
+    return info
   }
 
-  toJSON() {
+  toString(raw = false) {
+    if (raw) return this.raw + '\n'
+
+    return '#EXTINF:' + this.getInfo() + '\n' + this.url + '\n'
+  }
+
+  toObject() {
     return {
       name: this.name,
       logo: this.logo || null,
@@ -222,9 +226,13 @@ class Channel {
       tvg: {
         id: this.tvgId || null,
         name: this.tvgName || null,
-        url: this.tvg.url || null
+        url: this.tvgUrl || null
       }
     }
+  }
+
+  isSFW() {
+    return sfwCategories.includes(this.category)
   }
 }
 
