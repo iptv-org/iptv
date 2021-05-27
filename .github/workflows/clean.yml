@@ -189,16 +189,25 @@ jobs:
         uses: actions/checkout@v2
       - name: Download Artifacts
         uses: actions/download-artifact@v2
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
           title: '[Bot] Remove broken links'
           body: |
-            This pull request is created automatically with `scripts/clean.js`. 
+            This pull request is created automatically by `clean` action. 
 
             The script checks each link and removes only those that return a HTTP 404 code (Not Found). Also, the script ignores links with labels `[Geo-blocked]` and `[Not 24/7]` in the title.
 
-            **IMPORTANT:** Before merging all links should be checked manually to make sure that the response from the server has not changed.
+            **IMPORTANT:** Before merging all links should be checked manually to make sure that the response from the server has not changed. Working links should be marked as `[Not 24/7]` so that next time the script will not delete them.
           commit-message: '[Bot] Update playlists'
+          committer: GitHub <noreply@github.com>
           branch: bot/remove-broken-links
           delete-branch: true
+          draft: true
+          token: ${{ steps.generate-token.outputs.token }}
