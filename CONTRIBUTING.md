@@ -9,10 +9,6 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ## Issue Reporting Guidelines
 
-### Feature Requests
-
-If you have an idea how to improve the project create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=discussion&template=----feature-request.md&title=Propose%3A+xxx) with a detailed description of your idea.
-
 ### Request a Channel
 
 To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=------channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do.
