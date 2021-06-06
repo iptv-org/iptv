@@ -48,7 +48,7 @@ function generateCountriesTable() {
     const prefix = flag ? `${flag}&nbsp;` : ''
     countries.push({
       country: prefix + country.name,
-      channels: db.channels.forCountry(country).removeDuplicates().count(),
+      channels: db.channels.forCountry(country).removeDuplicates().removeNSFW().count(),
       playlist: `<code>https://iptv-org.github.io/iptv/countries/${country.code}.m3u</code>`
     })
   }
@@ -74,7 +74,7 @@ function generateLanguagesTable() {
   ]) {
     languages.push({
       language: language.name,
-      channels: db.channels.forLanguage(language).removeDuplicates().count(),
+      channels: db.channels.forLanguage(language).removeDuplicates().removeNSFW().count(),
       playlist: `<code>https://iptv-org.github.io/iptv/languages/${language.code}.m3u</code>`
     })
   }
