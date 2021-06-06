@@ -16,4 +16,8 @@ efficiently process your request -->
 **Country:** xxx
 **Language:** xxx
 **External Link (optional):** xxx
+<!-- If the channel you want to be added is hosted on YouTube, Dailymotion, Twitch, OK.ru or any other links, please try one of these hosts. -->
+<!-- https://salvahe.co/headless?url= *insert link of the resource* -->
+<!-- https://iptv--iptv.repl.co/streamlink?url= *insert link of the resource* -->
+<!-- https://query-streamlink.lanesh4d0w.repl.co/iptv-query?streaming-ip= *insert link of the resource* -->
 **Notes (optional):** xxx
