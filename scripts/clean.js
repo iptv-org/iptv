@@ -24,7 +24,7 @@ const instance = axios.create({
     rejectUnauthorized: false
   }),
   validateStatus: function (status) {
-    return status !== 404
+    return status !== 404 && status < 500
   }
 })
 
@@ -101,8 +101,7 @@ async function checkStatus(playlist) {
         .then(utils.sleep(config.delay))
         .catch(err => {
           clearTimeout(timeout)
-          if (err.response && err.response.status === 404) {
-            //console.error(err)
+          if (err.response && (err.response.status === 404 || err.response.status >= 500)) {
             if (config.debug) {
               console.info(`  ${counter} ${chalk.red('offline')} ${chalk.white(channel.url)}`)
               stats.broken++
