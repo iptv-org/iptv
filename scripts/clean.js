@@ -17,6 +17,7 @@ program
 
 const config = program.opts()
 
+const offlineStatusCodes = [404, 410, 500, 501]
 const instance = axios.create({
   timeout: config.timeout,
   maxContentLength: 200000,
@@ -24,7 +25,7 @@ const instance = axios.create({
     rejectUnauthorized: false
   }),
   validateStatus: function (status) {
-    return status !== 404
+    return !offlineStatusCodes.includes(status)
   }
 })
 
@@ -34,7 +35,7 @@ const stats = { broken: 0 }
 
 async function main() {
   console.info(`\nStarting...`)
-  console.time('Process completed in')
+  console.time('Done in')
   if (config.debug) {
     console.info(chalk.yellow(`INFO: Debug mode enabled\n`))
   }
@@ -101,12 +102,11 @@ async function checkStatus(playlist) {
         .then(utils.sleep(config.delay))
         .catch(err => {
           clearTimeout(timeout)
-          if (err.response && err.response.status === 404) {
-            //console.error(err)
+          if (err.response && offlineStatusCodes.includes(err.response.status)) {
             if (config.debug) {
               console.info(`  ${counter} ${chalk.red('offline')} ${chalk.white(channel.url)}`)
-              stats.broken++
             }
+            stats.broken++
           } else {
             results.push(channel)
             if (config.debug) {
@@ -131,7 +131,7 @@ async function savePlaylist(playlist) {
     return false
   } else {
     utils.createFile(playlist.url, output)
-    console.info(`Playlist has been updated. Removed ${stats.broken} broken links.`)
+    console.info(`Playlist has been updated. Removed ${stats.broken} links.`)
   }
 
   return true
@@ -142,7 +142,7 @@ async function done() {
 }
 
 function finish() {
-  console.timeEnd('Process completed in')
+  console.timeEnd('Done in')
 }
 
 main()
