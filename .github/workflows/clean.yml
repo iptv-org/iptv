@@ -10,7 +10,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        country: [
+        country:
+          [
             ad,
             ae,
             af,
@@ -166,8 +167,8 @@ jobs:
             vn,
             xk,
             ye,
-            zm
-            # unsorted
+            zm,
+            unsorted
           ]
     steps:
       - name: Checkout
