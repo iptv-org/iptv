@@ -233,7 +233,7 @@ class Channel {
   }
 
   isNSFW() {
-    return sfwCategories.includes(this.category)
+    return nsfwCategories.includes(this.category)
   }
 
   isNSFW() {
