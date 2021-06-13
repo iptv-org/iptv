@@ -2,7 +2,7 @@ const categories = require('./categories')
 const parser = require('./parser')
 const utils = require('./utils')
 
-const nsfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
+const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
 
 const db = {}
 
@@ -106,8 +106,8 @@ db.channels = {
   all() {
     return this.list
   },
-  nsfw() {
-    return this.list.filter(i => nsfwCategories.includes(i.category))
+  sfw() {
+    return this.list.filter(i => sfwCategories.includes(i.category))
   },
   forCountry(country) {
     this.filter = {

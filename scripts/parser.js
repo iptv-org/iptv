@@ -3,7 +3,7 @@ const utils = require('./utils')
 const categories = require('./categories')
 const path = require('path')
 
-const nsfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
+const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
 const nsfwCategories = categories.filter(c => c.nsfw).map(c => c.name)
 
 const parser = {}
@@ -232,8 +232,8 @@ class Channel {
     }
   }
 
-  isNSFW() {
-    return nsfwCategories.includes(this.category)
+  isSFW() {
+    return sfwCategories.includes(this.category)
   }
 
   isNSFW() {
