@@ -33,6 +33,7 @@ db.channels = {
   list: [],
   filter: null,
   duplicates: true,
+  nsfw: true,
   add(channel) {
     this.list.push(channel)
   },
