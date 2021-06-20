@@ -89,10 +89,10 @@ http://streaming03.zas.media:1935/redemaoamiga/redemaoamiga/live.m3u8
 http://tv02.logicahost.com.br:1935/rederc/rederc/live.m3u8
 #EXTINF:-1 tvg-id="RedeSuper.br" tvg-name="Rede Super" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/3ODbxcM.png" group-title="Religious",Rede Super (432p)
 https://api.new.livestream.com/accounts/10205943/events/3429501/live.m3u8
-#EXTINF:-1 tvg-id="RedeSeculo21.br" tvg-name="Rede Século 21" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/vvrCWVo.jpg" group-title="Religious",Rede Século 21
-https://dhxt2zok2aqcr.cloudfront.net/live/rs21_360p614k/index.m3u8
 #EXTINF:-1 tvg-id="RedeSeculo21.br" tvg-name="Rede Século 21" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/vvrCWVo.jpg" group-title="Religious",Rede Século 21 (240p) [Not 24/7]
 https://d1gs793b1l6k9i.cloudfront.net/out/v1/a3aac39375df40a1a564635d7b41e90c/index.m3u8
+#EXTINF:-1 tvg-id="RedeSeculo21.br" tvg-name="Rede Século 21" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/vvrCWVo.jpg" group-title="Religious",Rede Século 21
+https://dhxt2zok2aqcr.cloudfront.net/live/rs21_360p614k/index.m3u8
 #EXTINF:-1 tvg-id="RedeTVES.br" tvg-name="Rede TV! ES" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://www.livetvnews.com.br/wp-content/uploads/2019/03/Logo-RedeTV.png" group-title="General",Rede TV! ES
 https://hls.brasilstream.com.br/live/redetves/redetves/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="RedeVida.br" tvg-name="Rede Vida" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/h4WaIw5.jpg" group-title="Religious",Rede Vida (720p)
@@ -189,8 +189,6 @@ https://api.new.livestream.com/accounts/5381476/events/8947634/live.m3u8
 http://api.new.livestream.com:80/accounts/5381476/events/8947634/live.m3u8
 #EXTINF:-1 tvg-id="TVGIDEOES.br" tvg-name="TV GIDEOES" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TV GIDEOES
 https://streaming01.zas.media/gideoes/programacao/playlist.m3u8
-#EXTINF:-1 tvg-id="TVGuara.br" tvg-name="TV Guará" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/f/ff/Logotipo_TV_Guar%C3%A1.png" group-title="News",TV Guará (720p)
-https://59f2354c05961.streamlock.net:1443/tvguara/_definst_/tvguara/playlist.m3u8
 #EXTINF:-1 tvg-id="TVIKIM.br" tvg-name="TV IKIM" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TV IKIM
 http://edge.vediostream.com:80/abr/tvikim/live/tvikim_source/chunks.m3u8
 #EXTINF:-1 tvg-id="TVInterlagos.br" tvg-name="TV Interlagos" tvg-country="BR" tvg-language="Portuguese" tvg-logo="http://www.tvinterlagos.com.br/images/logo_tv2.jpg" group-title="Local",TV Interlagos (576p)
@@ -211,10 +209,6 @@ http://c2.manasat.com:1935/iglesia-online/espanhol3/playlist.m3u8
 http://c2.manasat.com:1935/eglise-online/frances3/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMANARU.br" tvg-name="TV MANA (RU)" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TV MANA (RU) (486p)
 http://c2.manasat.com:1935/tserkov-online/russo3/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMana1.br" tvg-name="TV Maná 1" tvg-country="BR" tvg-language="" tvg-logo="https://cdn.teleon.tv/logo/tv_mana_1_pt.png" group-title="",TV Maná 1 [Not 24/7]
-http://195.22.11.11:1935/tvmana/tvmana1/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMana2.br" tvg-name="TV Maná 2" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TV Maná 2 (720p) [Not 24/7]
-http://195.22.11.11:1935/tvmana/tvmana2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMANAMAPUTO.br" tvg-name="TV MANA MAPUTO" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TV MANA MAPUTO (574p) [Not 24/7]
 http://csvl03.manasat.com:1935/tvmz/tvmz3/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMANAMAPUTO.br" tvg-name="TV MANA MAPUTO" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TV MANA MAPUTO (574p) [Not 24/7]
@@ -223,6 +217,10 @@ http://streamspub.manasat.com:1935/tvmz/tvmz2/playlist.m3u8
 http://csvl04.manasat.com:1935/tvmana/tvmana3/playlist.m3u8
 #EXTINF:-1 tvg-id="TVManchete.br" tvg-name="TV Manchete" tvg-country="BR" tvg-language="" tvg-logo="https://i.imgur.com/VeELX7K.png" group-title="",TV Manchete (360p)
 https://srv5.zcast.com.br/tvmanchete/tvmanchete/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMana1.br" tvg-name="TV Maná 1" tvg-country="BR" tvg-language="" tvg-logo="https://cdn.teleon.tv/logo/tv_mana_1_pt.png" group-title="",TV Maná 1 [Not 24/7]
+http://195.22.11.11:1935/tvmana/tvmana1/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMana2.br" tvg-name="TV Maná 2" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TV Maná 2 (720p) [Not 24/7]
+http://195.22.11.11:1935/tvmana/tvmana2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVManaCordoba.br" tvg-name="TV Maná Córdoba" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TV Maná Córdoba (576p)
 http://csvl03.manasat.com:1935/tvar/tvmanaar2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMAX.br" tvg-name="TV MAX" tvg-country="BR" tvg-language="" tvg-logo="https://i.imgur.com/2Pg0baJ.png" group-title="",TV MAX (720p)
@@ -271,8 +269,8 @@ https://14398c.ha.azioncdn.net/primary/smil:tv_universal.smil/playlist.m3u8
 https://596639ebdd89b.streamlock.net/8124/8124/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCI.br" tvg-name="TVCI" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TVCI (360p)
 http://flash8.crossdigital.com.br:1935/2306/2306/live.m3u8
-#EXTINF:-1 tvg-id="TVCIParanagua.br" tvg-name="TVCI Paranaguá" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/4GKZbXD.png" group-title="General",TVCI Paranaguá (360p)
-http://flash8.crossdigital.com.br/2306/2306/playlist.m3u8
+#EXTINF:-1 tvg-id="TVE.br" tvg-name="TVE" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TVE
+http://stream2.ba.gov.br:80/hls-live/livepkgr/_definst_/irdeb/pgm-1.m3u8
 #EXTINF:-1 tvg-id="TVEBahia.br" tvg-name="TVE Bahia" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/TVE_Bahia_logo.svg/800px-TVE_Bahia_logo.svg.png" group-title="Local",TVE Bahia
 http://stream2.ba.gov.br/hls-live/livepkgr/_definst_/irdeb/pgm-1.m3u8
 #EXTINF:-1 tvg-id="TVERS.br" tvg-name="TVE RS" tvg-country="BR" tvg-language="" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/c/c2/Logotipo_da_TVE_RS.png" group-title="",TVE RS
@@ -309,5 +307,3 @@ https://edge-df-01.eduplay.rnp.br/media/ocp(r(iRGrcw)t(AAAAAAAAAAA)p(d(Dxg)k(Qdk
 https://srv5.zcast.com.br/andre4369/andre4369/playlist.m3u8
 #EXTINF:-1 tvg-id="Yeeaah.br" tvg-name="Yeeaah!" tvg-country="BR" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/TxdOyKS.png" group-title="General",Yeeaah! (720p)
 https://srv3.zcast.com.br/yeeaah/yeeaah/playlist.m3u8
-#EXTINF:-1 tvg-id="TVE.br" tvg-name="TVE" tvg-country="BR" tvg-language="" tvg-logo="" group-title="",TVE
-http://stream2.ba.gov.br:80/hls-live/livepkgr/_definst_/irdeb/pgm-1.m3u8
