@@ -1,12 +1,14 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="1001Noites.pt" tvg-name="1001 Noites" tvg-country="PT" tvg-language="" tvg-logo="" group-title="",1001 Noites (720p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/chunklist.m3u8
-#EXTINF:-1 tvg-id="Caca Vision PT" tvg-name="Caca Vision PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/3qB3JL7.png" group-title="Outdoor",Caçavision (HQ)
+#EXTINF:-1 tvg-id="CacaVision.pt" tvg-name="Caca Vision" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/3qB3JL7.png" group-title="Outdoor",Caçavision (HQ)
 https://cdn039.fractalmedia.es/hls/caz_pt_high.m3u8
-#EXTINF:-1 tvg-id="Caca Vision PT" tvg-name="Caca Vision PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/3qB3JL7.png" group-title="Outdoor",Caçavision (LQ)
+#EXTINF:-1 tvg-id="CacaVision.pt" tvg-name="Caca Vision" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/3qB3JL7.png" group-title="Outdoor",Caçavision (LQ)
 https://cdn039.fractalmedia.es/hls/caz_pt_low.m3u8
-#EXTINF:-1 tvg-id="Caca Vision PT" tvg-name="Caca Vision PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/3qB3JL7.png" group-title="Outdoor",Caçavision (MQ)
+#EXTINF:-1 tvg-id="CacaVision.pt" tvg-name="Caca Vision" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/3qB3JL7.png" group-title="Outdoor",Caçavision (MQ)
 https://cdn039.fractalmedia.es/hls/caz_pt_med.m3u8
+#EXTINF:-1 tvg-id="Hot.pt" tvg-name="Hot" tvg-country="PT" tvg-language="Portuguese" tvg-logo="" group-title="XXX",Hot
+http://185.236.229.21:9981/play/a03p
 #EXTINF:-1 tvg-id="IgrejaOnline.pt" tvg-name="Igreja Online" tvg-country="PT" tvg-language="" tvg-logo="http://www.igreja-online.tv/img/logo.png" group-title="",Igreja Online
 http://195.22.11.11:1935/igronline/igronline2/playlist.m3u8
 #EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-name="Kuriakos Cine" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/GbQuvWG.png" group-title="Movies",Kuriakos Cine (1080p)
@@ -33,41 +35,57 @@ http://195.22.11.11:1935/ktv/ktv1/iptvm3uplaylists.com.m3u8
 http://195.22.11.11:1935/ktv/ktv1/TeamBlue.m3u8
 #EXTINF:-1 tvg-id="KuriakosTV.pt" tvg-name="Kuriakos TV" tvg-country="PT" tvg-language="" tvg-logo="https://cdn.teleon.tv/logo/kuriakos_tv_pt.png" group-title="",Kuriakos TV (576p)
 http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8
+#EXTINF:-1 tvg-id="NOSStudiosHD.pt" tvg-name="NOS Studios HD" tvg-country="PT" tvg-language="" tvg-logo="" group-title="Movies",NOS Studios HD
+http://185.236.229.21:9981/play/a054
 #EXTINF:-1 tvg-id="PortoCanal.pt" tvg-name="Porto Canal" tvg-country="PT" tvg-language="" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Logo_Porto_Canal.jpg/300px-Logo_Porto_Canal.jpg" group-title="",Porto Canal (360p)
 https://streamer-a01.videos.sapo.pt/live/portocanal/playlist.m3u8
-#EXTINF:-1 tvg-id="Porto Canal PT" tvg-name="Porto Canal PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/ba/Logo_Porto_Canal.jpg" group-title="General",Porto Canal (360p)
+#EXTINF:-1 tvg-id="PortoCanal.pt" tvg-name="Porto Canal" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/ba/Logo_Porto_Canal.jpg" group-title="General",Porto Canal (360p)
 https://streamer-b02.videos.sapo.pt/live/portocanal/playlist.m3u8
 #EXTINF:-1 tvg-id="PortoCanalPortugalPT.pt" tvg-name="Porto Canal Portugal PT" tvg-country="PT" tvg-language="" tvg-logo="" group-title="",Porto Canal Portugal PT (360p)
 https://streamer-b02.videos.sapo.pt/live/portocanal/master.m3u8
-#EXTINF:-1 tvg-id="RTP Acores PT" tvg-name="RTP Acores PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/106-563419141305.png" group-title="General",RTP Açores
+#EXTINF:-1 tvg-id="RTPAcores.pt" tvg-name="RTP Acores" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/106-563419141305.png" group-title="General",RTP Açores
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://streaming-live.rtp.pt/liverepeater/smil:rtpacores.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP Internacional PT" tvg-name="RTP Internacional PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/120-344318101410.png" group-title="General",RTP Internacional (480p)
+#EXTINF:-1 tvg-id="RTPInternacional.pt" tvg-name="RTP Internacional" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/120-344318101410.png" group-title="General",RTP Internacional (480p)
 http://210.210.155.35/qwr9ew/s/s38/index.m3u8
-#EXTINF:-1 tvg-id="RTP Internacional PT" tvg-name="RTP Internacional PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/120-344318101410.png" group-title="General",RTP Internacional
+#EXTINF:-1 tvg-id="RTPInternacional.pt" tvg-name="RTP Internacional" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/120-344318101410.png" group-title="General",RTP Internacional
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://streaming-live.rtp.pt/liverepeater/smil:rtpi.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP Madeira PT" tvg-name="RTP Madeira PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/107-443519141305.png" group-title="General",RTP Madeira
+#EXTINF:-1 tvg-id="RTPMadeira.pt" tvg-name="RTP Madeira" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/107-443519141305.png" group-title="General",RTP Madeira
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP Africa PT" tvg-name="RTP Africa PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/27-363219141305.png" group-title="General",RTP África [not 24/7]
+#EXTINF:-1 tvg-id="RTPAfrica.pt" tvg-name="RTP Africa" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/27-363219141305.png" group-title="General",RTP África [not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://streaming-live.rtp.pt/liverepeater/smil:rtpafrica.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP 1 PT" tvg-name="RTP 1 PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/5-563718101410.png" group-title="General",RTP1 [not 24/7]
+#EXTINF:-1 tvg-id="RTP1.pt" tvg-name="RTP 1" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/5-563718101410.png" group-title="General",RTP1 [not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://streaming-live.rtp.pt/liverepeater/smil:rtp1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP 3 PT" tvg-name="RTP 3 PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/64-393818101410.png" group-title="News",RTP3 [not 24/7]
+#EXTINF:-1 tvg-id="RTP3.pt" tvg-name="RTP 3" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/64-393818101410.png" group-title="News",RTP3 [not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://streaming-live.rtp.pt/livetvhlsDVR/rtpndvr.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SICMulher.pt" tvg-name="SIC Mulher" tvg-country="PT" tvg-language="Portuguese" tvg-logo="" group-title="Entertainment",SIC Mulher
+http://185.236.229.21:9981/play/a037
 #EXTINF:-1 tvg-id="SobrenaturalTV.pt" tvg-name="Sobrenatural TV" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/jYIf7Mz.png" group-title="Religious",Sobrenatural TV (1080p)
 http://213.13.26.11:1935/live/sobrenaturaltv/livestream.m3u8
 #EXTINF:-1 tvg-id="SobrenaturalTV.pt" tvg-name="Sobrenatural TV" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/VgzVZto.png" group-title="Religious",Sobrenatural TV (720p) [Not 24/7]
 http://livestreamcdn.net:1935/SobrenaturalTV/SobrenaturalTV/playlist.m3u8
+#EXTINF:-1 tvg-id="SportTVPlus.pt" tvg-name="Sport TV+" tvg-country="PT" tvg-language="Portuguese" tvg-logo="" group-title="Sport",Sport TV+
+http://185.236.229.21:9981/play/a03c
+#EXTINF:-1 tvg-id="SportTV5.pt" tvg-name="Sport TV 5" tvg-country="PT" tvg-language="Portuguese" tvg-logo="" group-title="Sport",Sport TV 5
+http://185.236.229.21:9981/play/a03n
+#EXTINF:-1 tvg-id="TVCineAction.pt" tvg-name="TVCine Action" tvg-country="PT" tvg-language="Portuguese;English" tvg-logo="" group-title="Movies",TVCine Action
+http://185.236.229.21:9981/play/a04n
+#EXTINF:-1 tvg-id="TVCineEdition.pt" tvg-name="TVCine Edition" tvg-country="PT" tvg-language="Portuguese;English" tvg-logo="" group-title="Movies",TVCine Edition
+http://185.236.229.21:9981/play/a061
+#EXTINF:-1 tvg-id="TVCineEmotion.pt" tvg-name="TVCine Emotion" tvg-country="PT" tvg-language="Portuguese;English" tvg-logo="" group-title="Movies",TVCine Emotion
+http://185.236.229.21:9981/play/a05z
+#EXTINF:-1 tvg-id="TVCineTop.pt" tvg-name="TVCine Top" tvg-country="PT" tvg-language="Portuguese;English" tvg-logo="" group-title="Movies",TVCine Top
+http://185.236.229.21:9981/play/a04w
 #EXTINF:-1 tvg-id="TVFatima.pt" tvg-name="TV Fátima" tvg-country="PT" tvg-language="" tvg-logo="" group-title="",TV Fátima (1080p)
 http://213.13.26.11:1935/live/santuario.stream/livestream.m3u8
 #EXTINF:-1 tvg-id="TVFatima.pt" tvg-name="TV Fátima" tvg-country="PT" tvg-language="" tvg-logo="" group-title="",TV Fátima
 https://streamer-b02.videos.sapo.pt/live/santuario.stream/chunklist.m3u8
-#EXTINF:-1 tvg-id="TV Fatima PT" tvg-name="TV Fatima PT" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/hCFVc5S.jpg" group-title="Religious",TV Fátima (1080p)
+#EXTINF:-1 tvg-id="TVFatima.pt" tvg-name="TV Fatima" tvg-country="PT" tvg-language="Portuguese" tvg-logo="https://i.imgur.com/hCFVc5S.jpg" group-title="Religious",TV Fátima (1080p)
 https://streamer-b02.videos.sapo.pt/live/santuario.stream/livestream.m3u8
 #EXTINF:-1 tvg-id="TVIReality.pt" tvg-name="TVI Reality" tvg-country="PT" tvg-language="" tvg-logo="" group-title="",TVI Reality
 https://video-auth2.iol.pt/live_tvi_direct/live_tvi_direct/edge_servers/tvireality-480p/chunks.m3u8
