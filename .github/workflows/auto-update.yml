@@ -47,11 +47,14 @@ jobs:
         run: npm install
       - name: Generate Playlists
         run: node scripts/generate.js
-      - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+      - name: Publish to 000webhost.
+        uses: SamKirkland/FTP-Deploy-Action@4.1.0
         with:
-          branch: gh-pages
-          folder: .gh-pages
+          server: files.000webhost.com
+          username: iptv-org
+          password: iptv-password
+          local-dir: .gh-pages
+          server-dir: public_html
   update-readme:
     runs-on: ubuntu-latest
     needs: generate
