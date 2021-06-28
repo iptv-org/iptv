@@ -9,16 +9,16 @@ Internet Protocol television (IPTV) is the delivery of television content over I
 
 ## Usage
 
-To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists.
+To watch IPTV you just need to paste this link `https://iptv-org.000webhostapp.com/index.m3u` to any player which supports M3U-playlists.
 
 ![VLC Network Panel](.readme/preview.png)
 
 Also you can instead use one of these playlists:
 
-- `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
-- `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
-- `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
-- `https://iptv-org.github.io/iptv/index.nsfw.m3u` (includes adult channels)
+- `https://iptv-org.000webhostapp.com/index.country.m3u` (grouped by country)
+- `https://iptv-org.000webhostapp.com/index.category.m3u` (grouped by category)
+- `https://iptv-org.000webhostapp.com/index.language.m3u` (grouped by language)
+- `https://iptv-org.000webhostapp.com/index.nsfw.m3u` (includes adult channels)
 
 Or select one of the playlists from the list below.
 
@@ -62,7 +62,7 @@ In addition to the above methods, you can also get a list of all available chann
 To do this, you just have to make a GET request to:
 
 ```
-https://iptv-org.github.io/iptv/channels.json
+https://iptv-org.000webhostapp.com/channels.json
 ```
 
 If successful, you should get the following response:
