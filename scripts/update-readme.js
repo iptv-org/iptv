@@ -21,7 +21,7 @@ function generateCategoriesTable() {
     categories.push({
       category: category.name,
       channels: db.channels.forCategory(category).removeDuplicates().count(),
-      playlist: `<code>https://iptv-org.github.io/iptv/categories/${category.id}.m3u</code>`
+      playlist: `<code>https://iptv-org.000webhostapp.com/categories/${category.id}.m3u</code>`
     })
   }
 
@@ -49,7 +49,7 @@ function generateCountriesTable() {
     countries.push({
       country: prefix + country.name,
       channels: db.channels.forCountry(country).removeDuplicates().removeNSFW().count(),
-      playlist: `<code>https://iptv-org.github.io/iptv/countries/${country.code}.m3u</code>`
+      playlist: `<code>https://iptv-org.000webhostapp.com/countries/${country.code}.m3u</code>`
     })
   }
 
@@ -75,7 +75,7 @@ function generateLanguagesTable() {
     languages.push({
       language: language.name,
       channels: db.channels.forLanguage(language).removeDuplicates().removeNSFW().count(),
-      playlist: `<code>https://iptv-org.github.io/iptv/languages/${language.code}.m3u</code>`
+      playlist: `<code>https://iptv-org.000webhostapp.com/languages/${language.code}.m3u</code>`
     })
   }
 
