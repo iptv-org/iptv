@@ -1,9 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ABNsat.iq" tvg-name="ABNsat" tvg-country="IQ" tvg-language="Arabic" tvg-logo="http://vidmgr.abnvideos.com/images/playlists/phpENpJQS.jpeg" group-title="Religious",ABNsat
 http://rtmp1.abnsat.com/hls/arabic.m3u8
-#EXTINF:-1 tvg-id="AL Hurra HD" tvg-name="AL Hurra HD" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://gdb.alhurra.eu/C4BE79AD-607A-4EBA-8449-7CC6E2B12566_w1200_r1_s.jpg" group-title="News",Al Hurra (486p)
+#EXTINF:-1 tvg-id="AFAQTV.iq" tvg-name="AFAQ TV" tvg-country="IQ" tvg-language="Arabic" tvg-logo="" group-title="",AFAQ TV
+http://149.100.19.226:8001/play/AFAQ_TV
+#EXTINF:-1 tvg-id="AlHurraHD.iq" tvg-name="AL Hurra HD" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://gdb.alhurra.eu/C4BE79AD-607A-4EBA-8449-7CC6E2B12566_w1200_r1_s.jpg" group-title="News",Al Hurra (486p)
 https://mbnhls-lh.akamaihd.net/i/MBN_1@118619/master.m3u8
-#EXTINF:-1 tvg-id="AL Hurra Iraq HD" tvg-name="AL Hurra Iraq HD" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://i.imgur.com/8EmVL2d.jpg" group-title="News",Al Hurra Iraq (720p)
+#EXTINF:-1 tvg-id="ALHurraHD.iq" tvg-name="AL Hurra HD" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://i.imgur.com/8EmVL2d.jpg" group-title="News",Al Hurra Iraq (720p)
 https://mbningestworld-i.akamaihd.net/hls/live/644021/iraqworldsafe/master.m3u8
 #EXTINF:-1 tvg-id="AlIraqiyaAl3ama.iq" tvg-name="Al Iraqiya Al 3ama" tvg-country="IQ" tvg-language="Arabic" tvg-logo="http://imn.iq/wp-content/uploads/2018/03/Logo.jpg" group-title="News",Al Iraqiya Al 3ama (720p)
 #EXTVLCOPT:http-referrer=http://imn.iq
@@ -17,8 +19,16 @@ https://cdg8.edge.technocdn.com/arrafidaintv/abr_live/playlist.m3u8
 http://149.202.79.190:8081/arrafidaintv/publish/playlist.m3u8
 #EXTINF:-1 tvg-id="AlRasheed.iq" tvg-name="Al Rasheed" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://alrasheedmedia.com/wp-content/themes/alrasheedv4/alr-logo.png" group-title="General",Al Rasheed (408p)
 https://media1.livaat.com/AL-RASHEED-HD/index.m3u8
-#EXTINF:-1 tvg-id="Al sharqya" tvg-name="Al sharqya" tvg-country="IQ" tvg-language="Arabic" tvg-logo="http://alsharqiyatv.info/tv.jpg" group-title="General",Al Sharqiya (450p)
+#EXTINF:-1 tvg-id="AlSharqiyahd.iq" tvg-name="Alsharqiya hd" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Al Sharqiya
+http://ns8.indexforce.com:1935/home/mystream/chunklist.m3u8
+#EXTINF:-1 tvg-id="AlSharqiya.iq" tvg-name="Alsharqiya" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Al Sharqiya (1080p)
+http://ns8.indexforce.com:1935/home/mystream/gmswf.m3u8
+#EXTINF:-1 tvg-id="AlSharqiyaTV.iq" tvg-name="Al Sharqiya TV" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Al Sharqiya
+http://ns8.indexforce.com:1935/home/mystream/gmswf.m3u8?v=
+#EXTINF:-1 tvg-id="AlSharqiya.iq" tvg-name="Al Sharqiya" tvg-country="IQ" tvg-language="Arabic" tvg-logo="http://alsharqiyatv.info/tv.jpg" group-title="General",Al Sharqiya (450p)
 http://ns8.indexforce.com:1935/home/mystream/playlist.m3u8
+#EXTINF:-1 tvg-id="AlSharqiyaNews.iq" tvg-name="Alsharqiya News" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Al Sharqiya News
+http://ns8.indexforce.com:1935/alsharqiyalive/mystream/chunklist_w1419797891.m3u8?v=86757236
 #EXTINF:-1 tvg-id="AlSharqiyaNews.iq" tvg-name="Al Sharqiya News" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://i.imgur.com/qNi4rwG.jpg" group-title="News",Al Sharqiya News (450p)
 http://ns8.indexforce.com:1935/alsharqiyalive/mystream/playlist.m3u8
 #EXTINF:-1 tvg-id="ALSharqiyaTV.iq" tvg-name="AL Sharqiya TV" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",AL Sharqiya TV
@@ -27,22 +37,26 @@ http://ns8.indexforce.com:1935/home/mystream/chunklist_w565406043.m3u8
 http://iptv.repl.co/Arabic/Al_summaria/
 #EXTINF:-1 tvg-id="AlRafidainTV.iq" tvg-name="Al-Rafidain TV" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://i.imgur.com/x5buqzt.jpg" group-title="General",Al-Rafidain TV
 http://149.202.79.190:8081/arrafidaintv/publish/chunks.m3u8
-#EXTINF:-1 tvg-id="Alsharqiya.iq" tvg-name="Alsharqiya" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Alsharqiya (1080p)
-http://ns8.indexforce.com:1935/home/mystream/gmswf.m3u8
-#EXTINF:-1 tvg-id="Alsharqiyahd.iq" tvg-name="Alsharqiya hd" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Alsharqiya hd
-http://ns8.indexforce.com:1935/home/mystream/chunklist.m3u8
-#EXTINF:-1 tvg-id="AlsharqiyaNews.iq" tvg-name="Alsharqiya News" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Alsharqiya News
-http://ns8.indexforce.com:1935/alsharqiyalive/mystream/chunklist_w1419797891.m3u8?v=86757236
-#EXTINF:-1 tvg-id="Alsharqiyatv.iq" tvg-name="Alsharqiya tv" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Alsharqiya tv
-http://ns8.indexforce.com:1935/home/mystream/gmswf.m3u8?v=
-#EXTINF:-1 tvg-id="arrafidaintv.iq" tvg-name="arrafidaintv" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",arrafidaintv
+#EXTINF:-1 tvg-id="AlkafeelBetweenthetwoholyshrines.iq" tvg-name="Alkafeel: Between the two holy shrines" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://alkafeel.net/src/svg/logo_stripped.svg" group-title="Religious",Alkafeel: Between the two holy shrines
+https://stream.alkafeel.net/live/alkafeel/rAa5PGot4/manifest.m3u8
+#EXTINF:-1 tvg-id="AlkafeelTheentranceoftheholysanctuary.iq" tvg-name="Alkafeel: The entrance of the holy sanctuary" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://alkafeel.net/src/svg/logo_stripped.svg" group-title="Religious",Alkafeel: The entrance of the holy sanctuary [Not 24/7]
+https://stream.alkafeel.net/live/alkafeel/rAa5PGot3/manifest.m3u8
+#EXTINF:-1 tvg-id="AlkafeelTheHolyTomb.iq" tvg-name="Alkafeel: The Holy Tomb" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://alkafeel.net/src/svg/logo_stripped.svg" group-title="Religious",Alkafeel: The Holy Tomb [Not 24/7]
+https://stream.alkafeel.net/live/alkafeel/rAa5PGot2/manifest.m3u8
+#EXTINF:-1 tvg-id="AlkafeelThewindowofAlKafeel.iq" tvg-name="Alkafeel: The window of Al-Kafeel" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://alkafeel.net/src/svg/logo_stripped.svg" group-title="Religious",Alkafeel: The window of Al-Kafeel
+https://stream.alkafeel.net/live/alkafeel/rAa5PGot1/manifest.m3u8
+#EXTINF:-1 tvg-id="ArRafidainTV.iq" tvg-name="Ar Rafidain TV" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Ar Rafidain TV
 http://149.202.79.190:8081/arrafidaintv/publish/playlist.m3u8?v=
 #EXTINF:-1 tvg-id="AssyrianANB.iq" tvg-name="Assyrian ANB" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://i.imgur.com/way7KwN.jpg" group-title="General",Assyrian ANB (720p)
 https://597f64b67707a.streamlock.net/anbsat.com/anb2/playlist.m3u8
+#EXTINF:-1 tvg-id="AvaEntertainment.iq" tvg-name="Ava Entertainment" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://i.imgur.com/me5igxY.jpg" group-title="",Ava Entertainment
+https://wowzaprod219-i.akamaihd.net/hls/live/1003949/c9aa559e/playlist.m3u8
+#EXTINF:-1 tvg-id="BabylonTV.iq" tvg-name="Babylon TV" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://babylontv.net/wp-content/themes/babylontv/images/logo.png" group-title="General",Babylon TV
+http://163.172.39.215:25461/line/C4@!a3a1@!w72A/28
 #EXTINF:-1 tvg-id="BabylonTV.iq" tvg-name="Babylon TV" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://babylontv.net/wp-content/themes/babylontv/images/logo.png" group-title="General",Babylon TV
 https://iqlivestream.com/live/babylontv.flv
 #EXTINF:-1 tvg-id="Dijlah.iq" tvg-name="Dijlah" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://www.dijlah.tv/templates/default-2/live-page/images/logo-new1.png" group-title="News",Dijlah
-http://91.134.145.75:10001/Dijlah/tracks-v1a1/mono.m3u8
+http://91.134.145.75:10001/Dijlah/index.m3u8
 #EXTINF:-1 tvg-id="Dijlah.iq" tvg-name="Dijlah" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://www.dijlah.tv/templates/default-2/live-page/images/logo-new1.png" group-title="News",Dijlah (576p)
 https://ghaasiflu.online/Dijlah/index.m3u8
 #EXTINF:-1 tvg-id="DijlahTarab.iq" tvg-name="Dijlah Tarab" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://www.dijlah.tv/templates/default-2/live-page/images/tarab-logo.png" group-title="Music",Dijlah Tarab (576p)
@@ -61,23 +75,49 @@ https://live.imamhossaintv.com/live/ih4.m3u8
 https://ur.imamhusseintv.com/live/ih4.m3u8
 #EXTINF:-1 tvg-id="IshtarTV.iq" tvg-name="Ishtar TV" tvg-country="IQ" tvg-language="Arabic" tvg-logo="http://live.ishtartv.com/files/ishtar_animated.gif" group-title="General",Ishtar TV (1080p)
 http://176.9.102.245:1935/iShtarTV/liveStream/playlist.m3u8
-#EXTINF:-1 tvg-id="KIRKUKTV.iq" tvg-name="KIRKUK TV" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",KIRKUK TV
+#EXTINF:-1 tvg-id="KIRKUKTV.iq" tvg-name="KIRKUK TV" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="" group-title="",KIRKUK TV
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/58
-#EXTINF:-1 tvg-id="KIRKUKTV.iq" tvg-name="KIRKUK TV" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",KIRKUK TV
+#EXTINF:-1 tvg-id="KIRKUKTV.iq" tvg-name="KIRKUK TV" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="" group-title="",KIRKUK TV
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/58.m3u8
+#EXTINF:-1 tvg-id="Kurdistan24.iq" tvg-name="Kurdistan 24" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="" group-title="",Kurdistan 24
+http://176.10.117.18:8000/play/a00a/index.m3u8
+#EXTINF:-1 tvg-id="Kurdistan24.iq" tvg-name="Kurdistan 24" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="" group-title="",Kurdistan 24
+https://d1x82nydcxndze.cloudfront.net/live/index.m3u8
+#EXTINF:-1 tvg-id="KurdistanTV.iq" tvg-name="Kurdistan TV" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://i.imgur.com/GLfhYSH.png" group-title="General",Kurdistan TV
+http://163.172.39.215:25461/line/C4@!a3a1@!w72A/42
 #EXTINF:-1 tvg-id="KurdistanTV.iq" tvg-name="Kurdistan TV" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://i.imgur.com/GLfhYSH.png" group-title="General",Kurdistan TV (720p)
-https://5a3ed7a72ed4b.streamlock.net/live/SMIL:myStream.smil/chunklist.m3u8
-#EXTINF:-1 tvg-id="KurdistanTVHD.iq" tvg-name="Kurdistan TV HD" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",Kurdistan TV HD (720p)
 https://5a3ed7a72ed4b.streamlock.net/live/SMIL:myStream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="KURDMAX.iq" tvg-name="KURDMAX" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",KURDMAX (1080p)
-http://31.14.40.139:1935/liveTrans/ngrp:myStream2_all/playlist.m3u8
-#EXTINF:-1 tvg-id="KURDMAXHDPlusKUR.iq" tvg-name="KURDMAX HD+ KUR" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",KURDMAX HD+ KUR
+#EXTINF:-1 tvg-id="KurdMax.iq" tvg-name="KurdMax" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://kurdmaxcms.com/asset/image/footer_logo/%D9%A1_1.png" group-title="",KurdMax (1080p)
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/30.m3u8
-#EXTINF:-1 tvg-id="KURDMAXHDPlusSOR.iq" tvg-name="KURDMAX HD+ SOR" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",KURDMAX HD+ SOR
+#EXTINF:-1 tvg-id="KurdMax.iq" tvg-name="KurdMax" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://kurdmaxcms.com/asset/image/footer_logo/%D9%A1_1.png" group-title="",KurdMax (1080p)
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/31.m3u8
-#EXTINF:-1 tvg-id="KURDMAXSHOWHDPlus.iq" tvg-name="KURDMAX SHOW HD+" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",KURDMAX SHOW HD+
+#EXTINF:-1 tvg-id="KurdMax.iq" tvg-name="KurdMax" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://kurdmaxcms.com/asset/image/footer_logo/%D9%A1_1.png" group-title="",KurdMax (1080p)
+http://31.14.40.139:1935/liveTrans/ngrp:myStream2_all/playlist.m3u8
+#EXTINF:-1 tvg-id="KurdMax.iq" tvg-name="KurdMax" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://kurdmaxcms.com/asset/image/footer_logo/%D9%A1_1.png" group-title="",KurdMax (1080p)
+https://5aa8c7549bfa9.streamlock.net/liveTrans/ngrp:myStream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="KurdMaxMusic.iq" tvg-name="KurdMax Music" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://kurdmaxcms.com/asset/image/footer_logo/music_2.png" group-title="Music",KurdMax Music (1080p)
+https://5aa8c7549bfa9.streamlock.net/music/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="KurdMaxShow.iq" tvg-name="KurdMax Show" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://kurdmaxcms.com/asset/image/footer_logo/show_2.png" group-title="",KurdMax Show (1080p)
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/32.m3u8
+#EXTINF:-1 tvg-id="KurdMaxShow.iq" tvg-name="KurdMax Show" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://kurdmaxcms.com/asset/image/footer_logo/show_2.png" group-title="",KurdMax Show (1080p)
+https://5aa8c7549bfa9.streamlock.net/liveTrans/ngrp:SHOW1_all/playlist.m3u8
+#EXTINF:-1 tvg-id="KurdSatHD.iq" tvg-name="KurdSat HD" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://kurdmaxcms.com/asset/image/footer_logo/show_2.png" group-title="",KurdSat HD
+http://176.10.117.18:8000/play/a006/index.m3u8
+#EXTINF:-1 tvg-id="KurdSatHD.iq" tvg-name="KurdSat HD" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://kurdmaxcms.com/asset/image/footer_logo/show_2.png" group-title="",KurdSat HD
+http://ikomg2.s.llnwi.net/kurdsathd/playlist.m3u8
+#EXTINF:-1 tvg-id="NRTTVHD.iq" tvg-name="NRT TV HD" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://i.imgur.com/4li5hRA.png" group-title="",NRT TV HD
+https://media.streambrothers.com:1936/8328/8328/playlist.m3u8
+#EXTINF:-1 tvg-id="PAYAMTVHDPlus.iq" tvg-name="PAYAM TV HD+" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="" group-title="",PAYAM TV HD+
+http://163.172.39.215:25461/line/C4@!a3a1@!w72A/50
+#EXTINF:-1 tvg-id="PAYAMTVHDPlus.iq" tvg-name="PAYAM TV HD+" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="" group-title="",PAYAM TV HD+
+http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/50.m3u8
+#EXTINF:-1 tvg-id="RudawTV.iq" tvg-name="Rudaw TV" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://i.imgur.com/5ZQ4GTu.jpg" group-title="News",Rudaw TV
+http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/34.m3u8
 #EXTINF:-1 tvg-id="RudawTV.iq" tvg-name="Rudaw TV" tvg-country="IQ" tvg-language="Kurdish" tvg-logo="https://i.imgur.com/5ZQ4GTu.jpg" group-title="News",Rudaw TV (1080p)
 https://svs.itworkscdn.net/rudawlive/rudawlive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Zagros.iq" tvg-name="Zagros" tvg-country="IQ" tvg-language="Arabic" tvg-logo="https://www.zagrosnews.net/sites/default/files/zagros-logo-01_1.png" group-title="General",Zagros (720p)
 https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ZAGROSTVHDPlus.iq" tvg-name="ZAGROS TV HD+" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",ZAGROS TV HD+
+http://163.172.39.215:25461/line/C4@!a3a1@!w72A/48
+#EXTINF:-1 tvg-id="ZAGROSTVHDPlus.iq" tvg-name="ZAGROS TV HD+" tvg-country="IQ" tvg-language="" tvg-logo="" group-title="",ZAGROS TV HD+
+http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/48.m3u8

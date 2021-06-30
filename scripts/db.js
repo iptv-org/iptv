@@ -33,6 +33,7 @@ db.channels = {
   list: [],
   filter: null,
   duplicates: true,
+  nsfw: true,
   add(channel) {
     this.list.push(channel)
   },
@@ -83,6 +84,11 @@ db.channels = {
       })
     }
 
+    if (!this.nsfw) {
+      output = output.filter(channel => !channel.isNSFW())
+    }
+
+    this.nsfw = true
     this.duplicates = true
     this.filter = null
 
@@ -90,6 +96,11 @@ db.channels = {
   },
   removeDuplicates() {
     this.duplicates = false
+
+    return this
+  },
+  removeNSFW() {
+    this.nsfw = false
 
     return this
   },
