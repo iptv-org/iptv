@@ -7,14 +7,14 @@ assignees: ''
 
 ---
 
-<!-- Please fill out the information in this issue template so that we can
+<!-- Please fill out the issue template as much as you can so we could
 efficiently process your request -->
 
 <!-- IMPORTANT: An issue may contain a request for only one channel, otherwise it will be closed -->
-<!-- If you think the channel you're requesting needs to have some additional workaround (grabbing a token, livestream.com streams), please attach on the "Notes" section the full stream URL and the website where you got it from. -->
 
 **Channel Name:** xxx
 **Country:** xxx
 **Language:** xxx
+**Website link (necessary for any web player sources):** xxx
 **External Link (optional):** xxx
 **Notes (optional):** xxx
