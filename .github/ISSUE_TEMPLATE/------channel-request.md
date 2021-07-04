@@ -7,14 +7,13 @@ assignees: ''
 
 ---
 
-<!-- Please fill out the issue template as much as you can so we could
-efficiently process your request -->
+<!-- Please fill out the issue template as much as you can so we could efficiently process your request -->
 
 <!-- IMPORTANT: An issue may contain a request for only one channel, otherwise it will be closed -->
 
 **Channel Name:** xxx
 **Country:** xxx
 **Language:** xxx
-**Broadcast page (required for any web player sources):** xxx
-**Stream Link (optional):** xxx
+**Website:** xxx
+**Stream URL (optional):** xxx
 **Notes (optional):** xxx
