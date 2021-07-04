@@ -15,6 +15,6 @@ efficiently process your request -->
 **Channel Name:** xxx
 **Country:** xxx
 **Language:** xxx
-**Website link (necessary for any web player sources):** xxx
-**External Link (optional):** xxx
+**Broadcast page (required for any web player sources):** xxx
+**Stream Link (optional):** xxx
 **Notes (optional):** xxx
