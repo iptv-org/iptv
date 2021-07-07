@@ -5,7 +5,7 @@ const zlib = require('zlib')
 const urlParser = require('url')
 const escapeStringRegexp = require('escape-string-regexp')
 const markdownInclude = require('markdown-include')
-const iso6393 = require('iso-639-3')
+const iso6393 = require('@freearhey/iso-639-3')
 const transliteration = require('transliteration')
 const regions = require('./regions')
 const categories = require('./categories')
@@ -58,7 +58,7 @@ utils.code2name = function (code) {
 utils.language2code = function (name) {
   const lang = iso6393.find(l => l.name === name)
 
-  return lang && lang.iso6393 ? lang.iso6393 : null
+  return lang && lang.code ? lang.code : null
 }
 
 utils.sortBy = function (arr, fields) {
