@@ -49,9 +49,9 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Kids</td><td align="right">134</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/kids.m3u</code></td></tr>
 		<tr><td align="left">Legislative</td><td align="right">59</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/legislative.m3u</code></td></tr>
 		<tr><td align="left">Lifestyle</td><td align="right">47</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/lifestyle.m3u</code></td></tr>
-		<tr><td align="left">Local</td><td align="right">409</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/local.m3u</code></td></tr>
+		<tr><td align="left">Local</td><td align="right">410</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/local.m3u</code></td></tr>
 		<tr><td align="left">Movies</td><td align="right">149</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/movies.m3u</code></td></tr>
-		<tr><td align="left">Music</td><td align="right">336</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/music.m3u</code></td></tr>
+		<tr><td align="left">Music</td><td align="right">337</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/music.m3u</code></td></tr>
 		<tr><td align="left">News</td><td align="right">381</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/news.m3u</code></td></tr>
 		<tr><td align="left">Outdoor</td><td align="right">46</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/outdoor.m3u</code></td></tr>
 		<tr><td align="left">Relax</td><td align="right">15</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/relax.m3u</code></td></tr>
@@ -63,7 +63,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Travel</td><td align="right">21</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/travel.m3u</code></td></tr>
 		<tr><td align="left">Weather</td><td align="right">10</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/weather.m3u</code></td></tr>
 		<tr><td align="left">XXX</td><td align="right">79</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/xxx.m3u</code></td></tr>
-		<tr><td align="left">Other</td><td align="right">6791</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
+		<tr><td align="left">Other</td><td align="right">6789</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
 	</tbody>
 </table>
 
@@ -106,7 +106,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">French</td><td align="right">155</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fra.m3u</code></td></tr>
 		<tr><td align="left">Galician</td><td align="right">9</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/glg.m3u</code></td></tr>
 		<tr><td align="left">Georgian</td><td align="right">8</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/kat.m3u</code></td></tr>
-		<tr><td align="left">German</td><td align="right">210</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/deu.m3u</code></td></tr>
+		<tr><td align="left">German</td><td align="right">211</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/deu.m3u</code></td></tr>
 		<tr><td align="left">Hebrew</td><td align="right">12</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/heb.m3u</code></td></tr>
 		<tr><td align="left">Hindi</td><td align="right">106</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/hin.m3u</code></td></tr>
 		<tr><td align="left">Hungarian</td><td align="right">14</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/hun.m3u</code></td></tr>
@@ -165,7 +165,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">Vietnamese</td><td align="right">51</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/vie.m3u</code></td></tr>
 		<tr><td align="left">Western Frisian</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/fry.m3u</code></td></tr>
 		<tr><td align="left">Yue Chinese</td><td align="right">10</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/yue.m3u</code></td></tr>
-		<tr><td align="left">Undefined</td><td align="right">3929</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
+		<tr><td align="left">Undefined</td><td align="right">3928</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
 
@@ -230,7 +230,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">🇨🇬&nbsp;Congo - Brazzaville</td><td align="right">8</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/cg.m3u</code></td></tr>
 		<tr><td align="left">🇨🇩&nbsp;Congo - Kinshasa</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/cd.m3u</code></td></tr>
 		<tr><td align="left">🇨🇰&nbsp;Cook Islands</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ck.m3u</code></td></tr>
-		<tr><td align="left">🇨🇷&nbsp;Costa Rica</td><td align="right">44</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/cr.m3u</code></td></tr>
+		<tr><td align="left">🇨🇷&nbsp;Costa Rica</td><td align="right">45</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/cr.m3u</code></td></tr>
 		<tr><td align="left">🇭🇷&nbsp;Croatia</td><td align="right">15</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/hr.m3u</code></td></tr>
 		<tr><td align="left">🇨🇺&nbsp;Cuba</td><td align="right">18</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/cu.m3u</code></td></tr>
 		<tr><td align="left">🇨🇼&nbsp;Curaçao</td><td align="right">7</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/cw.m3u</code></td></tr>
@@ -260,7 +260,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">🇬🇦&nbsp;Gabon</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ga.m3u</code></td></tr>
 		<tr><td align="left">🇬🇲&nbsp;Gambia</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/gm.m3u</code></td></tr>
 		<tr><td align="left">🇬🇪&nbsp;Georgia</td><td align="right">17</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ge.m3u</code></td></tr>
-		<tr><td align="left">🇩🇪&nbsp;Germany</td><td align="right">341</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/de.m3u</code></td></tr>
+		<tr><td align="left">🇩🇪&nbsp;Germany</td><td align="right">342</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/de.m3u</code></td></tr>
 		<tr><td align="left">🇬🇭&nbsp;Ghana</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/gh.m3u</code></td></tr>
 		<tr><td align="left">🇬🇷&nbsp;Greece</td><td align="right">124</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/gr.m3u</code></td></tr>
 		<tr><td align="left">🇬🇱&nbsp;Greenland</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/gl.m3u</code></td></tr>
@@ -418,7 +418,7 @@ Or select one of the playlists from the list below.
 		<tr><td align="left">🇿🇲&nbsp;Zambia</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/zm.m3u</code></td></tr>
 		<tr><td align="left">🇿🇼&nbsp;Zimbabwe</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/zw.m3u</code></td></tr>
 		<tr><td align="left">🇦🇽&nbsp;Åland Islands</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ax.m3u</code></td></tr>
-		<tr><td align="left">Undefined</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
+		<tr><td align="left">Undefined</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
 	</tbody>
 </table>
 
