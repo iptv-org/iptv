@@ -2,8 +2,6 @@ const parser = require('./parser')
 const utils = require('./utils')
 const blacklist = require('./blacklist.json')
 
-let globalBuffer = []
-
 async function main() {
   const playlists = parseIndex()
   for (const playlist of playlists) {
@@ -28,9 +26,15 @@ async function loadPlaylist(url) {
 
 async function removeBlacklisted(playlist) {
   console.info(`  Looking for blacklisted channels...`)
-  const list = blacklist.map(i => i.toLowerCase())
-  playlist.channels = playlist.channels.filter(i => {
-    return !list.includes(i.name.toLowerCase())
+  playlist.channels = playlist.channels.filter(channel => {
+    return !blacklist.find(i => {
+      const channelName = channel.name.toLowerCase()
+      return (
+        (i.name.toLowerCase() === channelName ||
+          i.aliases.map(i => i.toLowerCase()).includes(channelName)) &&
+        i.country === channel.filename
+      )
+    })
   })
 
   return playlist
