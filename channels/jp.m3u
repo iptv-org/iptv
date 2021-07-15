@@ -3,6 +3,11 @@
 http://210.210.155.35/dr9445/h/h02/01.m3u8
 #EXTINF:-1 tvg-id="AnimaxJapan.jp" tvg-name="Animax Japan" tvg-country="JP" tvg-language="Japanese;Indonesian" tvg-logo="" group-title="Animation",Animax Japan (Indonesian Subs) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h144/01.m3u8
+#EXTINF:-1 tvg-id="AnimaxJapan.jp" tvg-name="Animax Japan" tvg-country="JP" tvg-language="Japanese;Indonesian" tvg-logo="" group-title="Animation",Animax Japan (Indonesian Subs)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
+https://tv.mbed.cc/u/master.m3u8?id=animax&bandwidth=default&sync=0
+#EXTINF:-1 tvg-id="AnimaxJapan.jp" tvg-name="Animax Japan" tvg-country="JP" tvg-language="Japanese;Thai" tvg-logo="" group-title="Animation",Animax Japan (Thai Subs)
+http://27.254.130.62/feed/LC38/playlist.m3u8
 #EXTINF:-1 tvg-id="AnimaxJapan.jp" tvg-name="Animax Japan" tvg-country="JP" tvg-language="Japanese;Vietnamese" tvg-logo="" group-title="Animation",Animax Japan (Vietnamese Subs)
 #EXTVLCOPT:http-user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36"
 https://livecdn.fptplay.net/hda3/animaxport_2000.stream/playlist.m3u8
@@ -30,7 +35,7 @@ https://gemstv.wide-stream.net/gemstv01/smil:gemstv01.smil/chunklist.m3u8
 https://gorilla.gaki-no-tsukai.eu/hls/test.m3u8
 #EXTINF:-1 tvg-id="GunmaTV.jp" tvg-name="Gunma TV" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Gtv_logo_ja_01.svg/800px-Gtv_logo_ja_01.svg.png" group-title="Local",Gunma TV
 https://movie.mcas.jp/switcher/smil:mcas8.smil/master.m3u8
-#EXTINF:-1 tvg-id="HiroshimaWeatherInformation.jp" tvg-name="Hiroshima Weather Information" tvg-country="JP" tvg-language="" tvg-logo="https://i.imgur.com/ZoYNgdd.png" group-title="",Hiroshima Weather Information
+#EXTINF:-1 tvg-id="HiroshimaWeatherInformation.jp" tvg-name="Hiroshima Weather Information" tvg-country="JP" tvg-language="" tvg-logo="https://i.imgur.com/ZoYNgdd.png" group-title="Weather",Hiroshima Weather Information
 https://hiroshima-tv-live.hls.wselive.stream.ne.jp/hiroshima-tv-live/live/playlist.m3u8
 #EXTINF:-1 tvg-id="JapanetChannelDX.jp" tvg-name="Japanet Channel DX" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://img.japanet.co.jp/shopping/img/senqua/header/logo.gif" group-title="Shop",Japanet Channel DX (1080p)
 https://bcsecurelivehls-i.akamaihd.net/hls/live/265320/5043843989001/140130JTDX/index.m3u8
@@ -50,23 +55,21 @@ http://203.162.235.41:16903
 https://nhk.mov3.co/hls/nhk.m3u8
 #EXTINF:-1 tvg-id="NHKWorld.jp" tvg-name="NHKWorld" tvg-country="JP" tvg-language="" tvg-logo="https://www3.nhk.or.jp/nhkworld/common/site_images/nw_webapp_1500x1500.png" group-title="",NHK World (720p)
 https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/sycc-live/zh/playlist.m3u8
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World Japan" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://i.imgur.com/SQISXoD.jpg" group-title="News",NHK World Japan (720p)
+https://b-nhkwlive-xjp.webcdn.stream.ne.jp/hls/live/2003458-b/nhkwlive-xjp-en/index.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World Japan" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://i.imgur.com/SQISXoD.jpg" group-title="News",NHK World Japan (1080p)
 https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index.m3u8
-#EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World Japan" tvg-country="JP" tvg-language="" tvg-logo="" group-title="",NHK World Japan
-https://nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp-en/index_600k.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" tvg-name="NHK World Japan" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://i.imgur.com/SQISXoD.jpg" group-title="News",NHK World Japan (720p)
 https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/global/2003458/live.m3u8
-#EXTINF:-1 tvg-id="NHKWorldPremium.jp" tvg-name="NHK World Premium" tvg-country="JP" tvg-language="" tvg-logo="https://nhkworldpremium.com/img/common/logo.png" group-title="",NHK World Premium
-https://liveanevia.mncnow.id/live/eds/NHKWorldPremium/sa_dash_vmx/NHKWorldPremium.mpd
 #EXTINF:-1 tvg-id="NHKWORLDTV.jp" tvg-name="NHK WORLD TV" tvg-country="JP" tvg-language="" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/nhkworldtv.png" group-title="",NHK WORLD TV
 https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index_4M.m3u8
 #EXTINF:-1 tvg-id="NHKHuaYuShiJie.jp" tvg-name="NHK华语视界" tvg-country="JP" tvg-language="" tvg-logo="http://www.tvyan.com/uploads/dianshi/nhkhuayu.jpg" group-title="",NHK华语视界 (720p)
 https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/zh/725580/livecom_zh.m3u8
 #EXTINF:-1 tvg-id="NipponTVJOAXDTV.jp" tvg-name="Nippon TV (JOAX-DTV)" tvg-country="JP" tvg-language="Japanese" tvg-logo="http://www.itver.cc/wp-content/uploads/2015/07/NTV.png" group-title="Local",Nippon TV (JOAX-DTV)
 http://203.162.235.41:16905
-#EXTINF:-1 tvg-id="NipponTVNews24.jp" tvg-name="Nippon TV News 24" tvg-country="JP" tvg-language="Japanese" tvg-logo="" group-title="",Nippon TV News 24
+#EXTINF:-1 tvg-id="NipponTVNews24.jp" tvg-name="Nippon TV News 24" tvg-country="JP" tvg-language="Japanese" tvg-logo="" group-title="News",Nippon TV News 24
 https://n24-cdn-live-b.ntv.co.jp/ch01/High.m3u8
-#EXTINF:-1 tvg-id="NipponTVNews24.jp" tvg-name="Nippon TV News 24" tvg-country="JP" tvg-language="Japanese" tvg-logo="" group-title="",Nippon TV News 24
+#EXTINF:-1 tvg-id="NipponTVNews24.jp" tvg-name="Nippon TV News 24" tvg-country="JP" tvg-language="Japanese" tvg-logo="" group-title="News",Nippon TV News 24
 https://n24-cdn-live.ntv.co.jp/ch01/High.m3u8
 #EXTINF:-1 tvg-id="NTVNews24.jp" tvg-name="NTV News24" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://i.imgur.com/Ya4yHpC.jpg" group-title="News",NTV News24 (480p)
 https://www.news24.jp/livestream/index.m3u8
