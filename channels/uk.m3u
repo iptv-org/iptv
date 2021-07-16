@@ -11,8 +11,6 @@ http://109.123.126.14:1935/live/livestream1.sdp/chunklist.m3u8
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/akaal_tv/hls1_smart_akaal/akaal_tv.m3u8
 #EXTINF:-1 tvg-id="AkaalTV.uk" tvg-name="Akaal TV" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",Akaal TV (480p)
 http://akaal.zecast.net/akaal-live/smil:akaaltv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AlarabyTV.uk" tvg-name="Alaraby TV" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",Alaraby TV
-http://alaraby.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/chunklist_b2500000.m3u8
 #EXTINF:-1 tvg-id="AlarabyTV.uk" tvg-name="Alaraby TV" tvg-country="ARAB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/LNI1HNi.png" group-title="News",Alaraby TV (1080p)
 https://alaraby.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AlhiwarTV.uk" tvg-name="Alhiwar TV" tvg-country="ARAB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/ooiJwD5.png" group-title="",Alhiwar TV (1080p)
@@ -57,12 +55,16 @@ https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_four_h
 https://livecdn.fptplay.net/qnetlive/bbclifestyle_2000.stream/chunklist.m3u8
 #EXTINF:-1 tvg-id="BBCLifestyle.uk" tvg-name="BBC Lifestyle" tvg-country="PL" tvg-language="Polish;English" tvg-logo="http://epg.51zmt.top:8000/tb1/gt/BBCLifestyle.png" group-title="Lifestyle",BBC Lifestyle (Poland)
 http://91.218.60.3:8001/play/a00s
-#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News
-http://51.52.156.22:8888/http/004
-#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="News",BBC News (540p) [Geo-Blocked]
+#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News (720p)
+http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
+#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News (480p)
+http://www.filmon.com/vr-streams/27.high/playlist.m3u8
+#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News (540p) [Geo-Blocked]
 https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
-#EXTINF:-1 tvg-id="BBCNewsHD.uk" tvg-name="BBC News HD" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="News",BBC News HD (720p) [Geo-Blocked]
+#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News (720p) [Geo-Blocked]
 https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
+#EXTINF:-1 tvg-id="BBCNews.uk" tvg-name="BBC News" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News (720p) [Geo-Blocked]
+https://cdnuk001.broadcastcdn.net/KUK-BBCNEWSHD/index.m3u8
 #EXTINF:-1 tvg-id="BBCOneCambridge.uk" tvg-name="BBC One Cambridge" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",BBC One Cambridge (540p) [Geo-Blocked]
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_cambridge/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
 #EXTINF:-1 tvg-id="BBCOneChannelIslands.uk" tvg-name="BBC One Channel Islands" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",BBC One Channel Islands (540p) [Geo-Blocked]
@@ -209,7 +211,7 @@ https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
 #EXTINF:-1 tvg-id="BritAsiaLiveUSPacific.uk" tvg-name="Brit Asia Live (US Pacific)" tvg-country="UK" tvg-language="" tvg-logo="https://i.imgur.com/BPS22GM.png" group-title="",Brit Asia Live (US Pacific)
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
 #EXTINF:-1 tvg-id="BritAsiaTV.uk" tvg-name="Brit Asia TV" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",Brit Asia TV
-https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/hi/c.m3u8
+https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
 #EXTINF:-1 tvg-id="BritishMuslimTV.uk" tvg-name="British Muslim TV" tvg-country="UK" tvg-language="English" tvg-logo="http://www.britishmuslim.tv/images/BMTV_Identity.svg" group-title="Religious",British Muslim TV
 https://api.visionip.tv/live/ASHTTP/visiontvuk-international-britishmuslimtv-hsslive-25f-16x9-MB/playlist.m3u8
 #EXTINF:-1 tvg-id="BTSports1.uk" tvg-name="BT Sports 1" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="Sports",BT Sports 1
@@ -258,8 +260,6 @@ https://edgesports-plex.amagi.tv/playlist.m3u8
 https://edgesports-roku.amagi.tv/hls/amagi_hls_data_imgAAA2AA-edgesports/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="EDGEsports.uk" tvg-name="EDGEsport" tvg-country="UK" tvg-language="" tvg-logo="" group-title="Sports",EDGEsport
 https://edgesports-row-rakuten.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="EDGEsport" tvg-name="EDGEsport" tvg-country="US" tvg-language="English" tvg-logo="https://i.imgur.com/Mg7BTDP.jpg" group-title="Sports",EDGEsport
-https://imgedge.akamaized.net/amagi_hls_data_imgAAA2AA-edgesports/CDN/1920x1080_5640800/index.m3u8
 #EXTINF:-1 tvg-id="EDGEsports.uk" tvg-name="EDGEsport" tvg-country="US" tvg-language="English" tvg-logo="https://static1.squarespace.com/static/5a6f534f017db2d628751be1/t/5a6f5557652deada67290f54" group-title="Sports",EDGEsport (1080p)
 https://imgedge.akamaized.net/amagi_hls_data_imgAAA2AA-edgesports/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="EDGEsportSTIRR.uk" tvg-name="EDGEsport (STIRR)" tvg-country="US" tvg-language="English" tvg-logo="https://komonews.com/resources/media2/3x1/full/119/center/90/9661e155-c5b8-43f3-9e1c-0e87cb75ae94-small3x1_STIRR_Logo_0320_EdgeSport_1920x1080_EPG.png?cb=c81e728d9d4c2f636f067f89cc14862c" group-title="Sports",EDGEsport (STIRR) (1080p)
@@ -318,11 +318,7 @@ https://live.playstop.me/1816184091/index.m3u8
 #EXTINF:-1 tvg-id="IslamChannel.uk" tvg-name="Islam Channel" tvg-country="UK" tvg-language="English" tvg-logo="https://simplestream-portal.s3.eu-west-1.amazonaws.com/172/642f780c-islamtv.png" group-title="Religious",Islam Channel (576p)
 https://live.islamchannel.tv/islamtv/islamtv_english/bitrate1.isml/live.m3u8
 #EXTINF:-1 tvg-id="ITV.uk" tvg-name="ITV" tvg-country="UK" tvg-language="" tvg-logo="https://i.imgur.com/SsgOgRF.png" group-title="",ITV
-http://sportportal1.akamaized.net/hls/live/702646/itvlive/ITV1PORTAL2/master_Main1800.m3u8
-#EXTINF:-1 tvg-id="ITV.uk" tvg-name="ITV" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",ITV
 https://sportportal1.akamaized.net/hls/live/702646/itvlive/ITV1PORTAL2/master.m3u8
-#EXTINF:-1 tvg-id="ITVUK.uk" tvg-name="ITV UK" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",ITV UK
-http://sportportal1.akamaized.net/hls/live/702646/itvlive/ITV1PORTAL2/master_Main600.m3u8
 #EXTINF:-1 tvg-id="ITV2.uk" tvg-name="ITV2" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",ITV2
 http://51.52.156.22:8888/http/005
 #EXTINF:-1 tvg-id="ITV3.uk" tvg-name="ITV3" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",ITV3
@@ -349,46 +345,24 @@ http://w10.streamgb.com:1935/kool/kool/playlist.m3u8
 http://bcoveliveios-i.akamaihd.net/hls/live/217434/3083279840001/master.m3u8
 #EXTINF:-1 tvg-id="Magic.uk" tvg-name="Magic" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/HXfKkwj.png" group-title="",Magic (576p)
 http://csm-e.tm.yospace.com/csm/extlive/boxplus01,magic-desktop.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/magic/
-#EXTINF:-1 tvg-id="Manoto.uk" tvg-name="Manoto" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",Manoto
-https://d2rwmwucnr0d10.cloudfront.net/live_1500.m3u8
-#EXTINF:-1 tvg-id="Manoto.uk" tvg-name="Manoto" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",Manoto
-https://d2rwmwucnr0d10.cloudfront.net/live_2500.m3u8
-#EXTINF:-1 tvg-id="Manoto.uk" tvg-name="Manoto" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",Manoto
-https://d2rwmwucnr0d10.cloudfront.net/live_500.m3u8
-#EXTINF:-1 tvg-id="Manoto.uk" tvg-name="Manoto" tvg-country="UK" tvg-language="" tvg-logo="https://i.imgur.com/y2oiXz6.png" group-title="",Manoto
-https://d2rwmwucnr0d10.cloudfront.net/live_750.m3u8
 #EXTINF:-1 tvg-id="ManotoTV.uk" tvg-name="Manoto TV" tvg-country="UK" tvg-language="Persian" tvg-logo="https://i.imgur.com/dNB92lj.png" group-title="Entertainment",Manoto TV (1080p)
 https://d2rwmwucnr0d10.cloudfront.net/live.m3u8
 #EXTINF:-1 tvg-id="MoonBug.uk" tvg-name="MoonBug" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",MoonBug
 https://moonbug-rokuus.amagi.tv/hls/amagi_hls_data_moonbugAA-moonbug-roku-us/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="MoonbugKids.uk" tvg-name="Moonbug Kids" tvg-country="UK" tvg-language="" tvg-logo="https://www.samsung.com/us/smg/content/dam/s7/home/televisions-and-home-theater/tvs/tv-plus/all-channels/07212020/circle_190x190.png?raw=true" group-title="Kids",Moonbug Kids
 https://moonbug-rokuus.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="MTA1.uk" tvg-name="MTA 1" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",MTA 1
-http://ooyalahd2-f.akamaihd.net:80/i/mtaorigin_delivery@353498/index_1100_av-p.m3u8
 #EXTINF:-1 tvg-id="MTA1.uk" tvg-name="MTA 1" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/b3nn216.png" group-title="",MTA 1 (720p)
 https://cflive-emea.live-delivery.ooyala.com/out/u/3vkkbgnvsm2r5/101593/1lanVtaDE6sCK6v0vDomDayqoKeSal6G/cn/8fb839e3a82045bd99a92ecd9df257e5.m3u8
-#EXTINF:-1 tvg-id="MTA1.uk" tvg-name="MTA 1" tvg-country="UK" tvg-language="" tvg-logo="https://i.imgur.com/b3nn216.png" group-title="",MTA 1
-https://ooyalahd2-f.akamaihd.net/i/mtaeng_delivery@345736/index_3000_av-p.m3u8
 #EXTINF:-1 tvg-id="MTA1English.uk" tvg-name="MTA 1 English" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/b3nn216.png" group-title="",MTA 1 English (1080p)
 https://ooyalahd2-f.akamaihd.net/i/mtaeng_delivery@345736/master.m3u8
 #EXTINF:-1 tvg-id="MTA1Original.uk" tvg-name="MTA 1 Original" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/b3nn216.png" group-title="",MTA 1 Original (1080p)
 https://ooyalahd2-f.akamaihd.net/i/mtaorigin_delivery@353498/master.m3u8
-#EXTINF:-1 tvg-id="MTA1Urdu.uk" tvg-name="MTA 1 Urdu" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",MTA 1 Urdu
-https://ooyalahd2-f.akamaihd.net/i/mtaurdu_delivery@350117/index_3000_av-p.m3u8
 #EXTINF:-1 tvg-id="MTA1Urdu.uk" tvg-name="MTA 1 Urdu" tvg-country="UK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/b3nn216.png" group-title="",MTA 1 Urdu (1080p)
 https://ooyalahd2-f.akamaihd.net/i/mtaurdu_delivery@350117/master.m3u8
-#EXTINF:-1 tvg-id="MTA2.uk" tvg-name="MTA 2" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",MTA 2
-https://ooyalahd2-f.akamaihd.net/i/mtach7audio_delivery@65519/index_2400_av-p.m3u8
 #EXTINF:-1 tvg-id="MTA2.uk" tvg-name="MTA 2" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/V6uUz9l.png" group-title="",MTA 2 (720p)
 https://ooyalahd2-f.akamaihd.net/i/mtach7audio_delivery@65519/master.m3u8
-#EXTINF:-1 tvg-id="MTA2Urdu.uk" tvg-name="MTA 2 Urdu" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",MTA 2 Urdu
-https://ooyalahd2-f.akamaihd.net/i/mtageraudio_delivery@308889/index_1100_av-p.m3u8
 #EXTINF:-1 tvg-id="MTA2Urdu.uk" tvg-name="MTA 2 Urdu" tvg-country="UK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/V6uUz9l.png" group-title="",MTA 2 Urdu (720p)
 https://ooyalahd2-f.akamaihd.net/i/mtageraudio_delivery@308889/master.m3u8
-#EXTINF:-1 tvg-id="MTA3.uk" tvg-name="MTA 3" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",MTA 3
-http://ooyalahd2-f.akamaihd.net/i/mtach7_delivery@348438/index_1700_av-p.m3u8
-#EXTINF:-1 tvg-id="MTA3.uk" tvg-name="MTA 3" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",MTA 3
-https://ooyalahd2-f.akamaihd.net/i/mtach7_delivery@348438/index_3000_av-p.m3u8
 #EXTINF:-1 tvg-id="MTA3.uk" tvg-name="MTA 3" tvg-country="UK" tvg-language="Arabic" tvg-logo="https://i.imgur.com/C5nT9yi.png" group-title="",MTA 3 (1080p)
 https://ooyalahd2-f.akamaihd.net/i/mtach7_delivery@348438/master.m3u8
 #EXTINF:-1 tvg-id="MTAAfrica.uk" tvg-name="MTA Africa" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/xT3X6L9.png" group-title="",MTA Africa (1080p)
@@ -427,7 +401,7 @@ https://esmhls2-i.akamaihd.net/hls/live/510581/hls2/playlist.m3u8
 https://esmhls3-i.akamaihd.net/hls/live/510582/hls3/playlist.m3u8
 #EXTINF:-1 tvg-id="S4C.uk" tvg-name="S4C" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",S4C (540p) [Geo-Blocked]
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:s4cpbs/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
-#EXTINF:-1 tvg-id="SangatTelevision.uk" tvg-name="Sangat Television" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/KcPEkHh.png" group-title="",Sangat Television (720p)
+#EXTINF:-1 tvg-id="SangatTelevision.uk" tvg-name="Sangat Television" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/KcPEkHh.png" group-title="",Sangat Television (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/6986636/events/5362122/live.m3u8
 #EXTINF:-1 tvg-id="SheffieldLiveTV.uk" tvg-name="Sheffield Live TV" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eUqnYU1.png" group-title="Local",Sheffield Live TV
 http://tv.sheffieldlive.org/hls/main.m3u8
@@ -493,8 +467,6 @@ https://cdn-shop-lc-01.akamaized.net/Content/HLS_HLS/Live/channel(TJCOTT)/index.
 https://toongoggles-toongoggles-3-gb.samsung.wurl.com/manifest/playlist.m3u8
 #EXTINF:-1 tvg-id="Truly.uk" tvg-name="Truly" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/MWkm3no.png" group-title="",Truly (720p)
 https://barcroft-truly-1-gb.samsung.wurl.com/manifest/playlist.m3u8
-#EXTINF:-1 tvg-id="V2BEAT.uk" tvg-name="V2BEAT" tvg-country="UK" tvg-language="" tvg-logo="" group-title="",V2BEAT
-https://abr.de1se01.v2beat.live/live/live6/chunks.m3u8
 #EXTINF:-1 tvg-id="V2BEAT.uk" tvg-name="V2BEAT" tvg-country="UK" tvg-language="English" tvg-logo="https://graph.facebook.com/vtwobeat/picture?width=320&height=320" group-title="Music",V2BEAT (720p)
 https://abr.de1se01.v2beat.live/playlist.m3u8
 #EXTINF:-1 tvg-id="V2BEAT.uk" tvg-name="V2BEAT" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/Ll6GlqY.png" group-title="Music",V2BEAT (720p)
