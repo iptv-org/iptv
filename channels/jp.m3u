@@ -45,8 +45,9 @@ http://203.162.235.41:16901
 https://aka-amd-njpwworld-hls-enlive.akamaized.net/hls/video/njpw_en/njpw_en_channel01_3/playlist_DVR.m3u8
 #EXTINF:-1 tvg-id="NHKBSPremiumBS103.jp" tvg-name="NHK BS Premium (BS103)" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/21/NHK_BS%E3%83%97%E3%83%AC%E3%83%9F%E3%82%A2%E3%83%A0_%E6%96%B0%E3%83%AD%E3%82%B4.png" group-title="Local",NHK BS Premium (BS103)
 http://203.162.235.41:16910
-#EXTINF:-1 tvg-id="NHKBS1BS101.jp" tvg-name="NHK BS1 (BS101)" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6d/NHKBS1%E3%83%AD%E3%82%B42020-.png" group-title="Local",NHK BS1 (BS101)
-http://203.162.235.41:16909
+#EXTINF:-1 tvg-id="NHKBS1BS101.jp" tvg-name="NHK BS1 (BS101)" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6d/NHKBS1%E3%83%AD%E3%82%B42020-.png" group-title="Local",NHK BS1 (BS101) [Geo-blocked]
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36"
+http://redlabmcdn.s.llnwi.net/nv02/bs01hd/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKChineseVision.jp" tvg-name="NHK Chinese Vision" tvg-country="JP" tvg-language="Chinese" tvg-logo="https://i.imgur.com/4yRulEZ.png" group-title="News",NHK Chinese Vision
 https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKGeneralJOAKDTV.jp" tvg-name="NHK General (JOAK-DTV)" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/6f/NHK%E7%B7%8F%E5%90%88%E3%83%AD%E3%82%B42020-.png" group-title="Local",NHK General (JOAK-DTV)
@@ -96,8 +97,9 @@ https://movie.mcas.jp/mcas/mx2_2/master.m3u8
 http://203.162.235.41:16906
 #EXTINF:-1 tvg-id="TVAsahi1.jp" tvg-name="TV Asahi 1" tvg-country="JP" tvg-language="" tvg-logo="" group-title="",TV Asahi 1
 http://122.155.180.8:5021/live/223
-#EXTINF:-1 tvg-id="TVTokyo.jp" tvg-name="TV Tokyo" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://i.imgur.com/vgEnHX6.png" group-title="",TV Tokyo
-http://203.162.235.41:16908
+#EXTINF:-1 tvg-id="TVTokyo.jp" tvg-name="TV Tokyo" tvg-country="JP" tvg-language="Japanese" tvg-logo="https://i.imgur.com/vgEnHX6.png" group-title="",TV Tokyo [Geo-blocked]
+#EXTVLCOPT:http-user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36"
+http://redlabmcdn.s.llnwi.net/nv02/ryowa6/playlist.m3u8
 #EXTINF:-1 tvg-id="WakuWakuJapan.jp" tvg-name="WakuWaku Japan" tvg-country="JP" tvg-language="" tvg-logo="https://www.dialog.lk/dialogdocroot/content/images/channel-highlights/waku-waku-large.png" group-title="",WakuWaku Japan
 https://liveanevia.mncnow.id/live/eds/WakuWakuJapan/sa_dash_vmx/WakuWakuJapan.mpd
 #EXTINF:-1 tvg-id="WeatherChanneluezaniyusuBSWNI.jp" tvg-name="Weather Channel (ウェザーニュース) (BS | WNI)" tvg-country="JP" tvg-language="" tvg-logo="" group-title="",Weather Channel (ウェザーニュース) (BS | WNI) (720p)
