@@ -171,7 +171,8 @@ http://example.com/stream.m3u8
   - `categories.json`: list of supported categories.
   - `clean.js`: used in GitHub Action to check all links and remove broken ones.
   - `db.js`: contains functions for retrieving and managing the channel list.
-  - `format.js`: used within GitHub Action to sort channels and remove duplicates from each playlist.
+  - `filter.js`: used within GitHub Action to remove blacklisted channels from playlists.
+  - `format.js`: used within GitHub Action to format channel descriptions and sort playlists.
   - `generate.js`: used within GitHub Action to generate all additional playlists.
   - `parser.js`: contains functions for parsing playlists.
   - `regions.json`: list of supported region codes.
