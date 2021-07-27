@@ -1,5 +1,4 @@
 const { program } = require('commander')
-const blacklist = require('./blacklist')
 const parser = require('./parser')
 const utils = require('./utils')
 const axios = require('axios')
@@ -35,7 +34,6 @@ async function main() {
   for (const playlist of playlists) {
     await loadPlaylist(playlist.url)
       .then(sortChannels)
-      .then(filterChannels)
       .then(detectResolution)
       .then(savePlaylist)
       .then(done)
@@ -63,16 +61,6 @@ async function loadPlaylist(url) {
 async function sortChannels(playlist) {
   console.info(`  Sorting channels...`)
   playlist.channels = utils.sortBy(playlist.channels, ['name', 'url'])
-
-  return playlist
-}
-
-async function filterChannels(playlist) {
-  console.info(`  Filtering channels...`)
-  const list = blacklist.map(i => i.toLowerCase())
-  playlist.channels = playlist.channels.filter(i => {
-    return !list.includes(i.name.toLowerCase())
-  })
 
   return playlist
 }

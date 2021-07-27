@@ -18,9 +18,26 @@ jobs:
         with:
           name: channels
           path: channels/
-  format:
+  filter:
     runs-on: ubuntu-latest
     needs: remove-duplicates
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Filter Playlists
+        run: node scripts/filter.js
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: channels
+          path: channels/
+  format:
+    runs-on: ubuntu-latest
+    needs: filter
     steps:
       - name: Checkout
         uses: actions/checkout@v2
