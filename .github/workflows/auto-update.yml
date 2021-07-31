@@ -46,7 +46,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Format Playlists
-        run: node scripts/format.js
+        run: node scripts/format.js --resolution
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
