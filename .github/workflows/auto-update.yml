@@ -38,6 +38,23 @@ jobs:
   format:
     runs-on: ubuntu-latest
     needs: filter
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+      - name: Install Dependencies
+        run: npm install
+      - name: Format Playlists
+        run: node scripts/format.js
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: channels
+          path: channels/
+  detect-resolution:
+    runs-on: ubuntu-latest
+    needs: format
     continue-on-error: true
     strategy:
       fail-fast: false
@@ -212,8 +229,8 @@ jobs:
         uses: actions/download-artifact@v2
       - name: Install Dependencies
         run: npm install
-      - name: Format Playlists
-        run: node scripts/format.js --country=${{ matrix.country }} --resolution
+      - name: Detect Resolution
+        run: node scripts/detect-resolution.js --country=${{ matrix.country }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -221,7 +238,7 @@ jobs:
           path: channels/${{ matrix.country }}.m3u
   generate:
     runs-on: ubuntu-latest
-    needs: format
+    needs: detect-resolution
     steps:
       - name: Checkout
         uses: actions/checkout@v2
