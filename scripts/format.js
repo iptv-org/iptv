@@ -16,7 +16,6 @@ async function main() {
   console.time('\nDone in')
 
   const playlists = parseIndex()
-
   for (const playlist of playlists) {
     await loadPlaylist(playlist.url).then(sortChannels).then(savePlaylist)
   }
