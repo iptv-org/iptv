@@ -1,5 +1,6 @@
-const fs = require('fs')
+const markdownInclude = require('markdown-include')
 const path = require('path')
+const fs = require('fs')
 
 const rootPath = path.resolve(__dirname) + '/../../'
 const file = {}
@@ -30,8 +31,8 @@ file.create = function (filename, data = '') {
   fs.writeFileSync(rootPath + filename, data)
 }
 
-file.compileMarkdown = function (filepath) {
-  return markdownInclude.compileFiles(path.resolve(__dirname, filepath))
+file.compileMarkdown = function (filename) {
+  markdownInclude.compileFiles(rootPath + filename)
 }
 
 module.exports = file
