@@ -1,13 +1,13 @@
 const { program } = require('commander')
-const parser = require('./parser')
-const utils = require('./utils')
-const axios = require('axios')
 const ProgressBar = require('progress')
+const axios = require('axios')
 const https = require('https')
+const parser = require('./helpers/parser')
+const utils = require('./helpers/utils')
+const log = require('./helpers/log')
 
 program
   .usage('[OPTIONS]...')
-  .option('-d, --debug', 'Debug mode')
   .option('-c, --country <country>', 'Comma-separated list of country codes', '')
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
   .option('--delay <delay>', 'Delay between parser requests', 1000)
@@ -15,7 +15,6 @@ program
   .parse(process.argv)
 
 const config = program.opts()
-
 const instance = axios.create({
   timeout: config.timeout,
   maxContentLength: 200000,
@@ -25,36 +24,30 @@ const instance = axios.create({
 })
 
 async function main() {
-  utils.log('Starting...\n')
-  console.time('Done in')
+  log.start()
 
-  const playlists = parseIndex()
-  for (const playlist of playlists) {
-    await loadPlaylist(playlist.url).then(detectResolution).then(savePlaylist)
-  }
-
-  finish()
-}
-
-function parseIndex() {
-  utils.log(`Parsing 'index.m3u'...\n`)
+  log.print(`Parsing 'index.m3u'...\n`)
   let playlists = parser.parseIndex()
   playlists = utils
     .filterPlaylists(playlists, config.country, config.exclude)
     .filter(i => i.url !== 'channels/unsorted.m3u')
 
-  return playlists
-}
+  for (const playlist of playlists) {
+    await parser
+      .parsePlaylist(playlist.url)
+      .then(detectResolution)
+      .then(p => p.save())
+  }
 
-async function loadPlaylist(url) {
-  return parser.parsePlaylist(url)
+  log.finish()
 }
 
 async function detectResolution(playlist) {
+  const channels = []
   const bar = new ProgressBar(`Processing '${playlist.url}': [:bar] :current/:total (:percent) `, {
     total: playlist.channels.length
   })
-  const results = []
+  let updated = false
   for (const channel of playlist.channels) {
     bar.tick()
     if (!channel.resolution.height) {
@@ -81,15 +74,19 @@ async function detectResolution(playlist) {
           const resolution = parseResolution(response.data)
           if (resolution) {
             channel.resolution = resolution
+            updated = true
           }
         }
       }
     }
 
-    results.push(channel)
+    channels.push(channel)
   }
 
-  playlist.channels = results
+  if (updated) {
+    log.print(`File '${playlist.url}' has been updated\n`)
+    playlist.channels = channels
+  }
 
   return playlist
 }
@@ -107,24 +104,6 @@ function parseResolution(string) {
         return prev.height > current.height ? prev : current
       })
     : undefined
-}
-
-async function savePlaylist(playlist) {
-  const original = utils.readFile(playlist.url)
-  const output = playlist.toString()
-
-  if (original === output) {
-    return false
-  } else {
-    utils.createFile(playlist.url, output)
-    utils.log(`Playlist '${playlist.url}' has been updated\n`)
-  }
-
-  return true
-}
-
-function finish() {
-  console.timeEnd('Done in')
 }
 
 main()
