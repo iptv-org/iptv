@@ -51,7 +51,7 @@ async function checkStatus(playlist) {
   let bar = new ProgressBar(`Checking '${playlist.url}': [:bar] :current/:total (:percent) `, {
     total: playlist.channels.length
   })
-  const results = []
+  const channels = []
   const total = playlist.channels.length
   for (const [index, channel] of playlist.channels.entries()) {
     const current = index + 1
@@ -61,7 +61,7 @@ async function checkStatus(playlist) {
       (channel.status && ignore.map(i => i.toLowerCase()).includes(channel.status.toLowerCase())) ||
       (!channel.url.startsWith('http://') && !channel.url.startsWith('https://'))
     ) {
-      results.push(channel)
+      channels.push(channel)
     } else {
       const CancelToken = axios.CancelToken
       const source = CancelToken.source()
@@ -73,7 +73,7 @@ async function checkStatus(playlist) {
         .get(channel.url, { cancelToken: source.token })
         .then(() => {
           clearTimeout(timeout)
-          results.push(channel)
+          channels.push(channel)
         })
         .then(utils.sleep(config.delay))
         .catch(err => {
@@ -81,13 +81,16 @@ async function checkStatus(playlist) {
           if (err.response && offlineStatusCodes.includes(err.response.status)) {
             broken++
           } else {
-            results.push(channel)
+            channels.push(channel)
           }
         })
     }
   }
 
-  playlist.channels = results
+  if (playlist.channels.length !== channels.length) {
+    log.print(`File '${playlist.url}' has been updated\n`)
+    playlist.channels = channels
+  }
 
   return playlist
 }
