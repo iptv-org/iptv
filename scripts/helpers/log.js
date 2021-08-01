@@ -6,11 +6,11 @@ log.print = function (string) {
 
 log.start = function () {
   this.print('Starting...\n')
-  console.time('\nDone in')
+  console.time('Done in')
 }
 
 log.finish = function () {
-  console.timeEnd('\nDone in')
+  console.timeEnd('Done in')
 }
 
 module.exports = log
