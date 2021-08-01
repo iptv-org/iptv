@@ -66,29 +66,12 @@ utils.sortBy = function (arr, fields) {
     for (let field of fields) {
       let propA = a[field] ? a[field].toLowerCase() : ''
       let propB = b[field] ? b[field].toLowerCase() : ''
-
-      if (propA === 'undefined') {
-        return 1
-      }
-
-      if (propB === 'undefined') {
-        return -1
-      }
-
-      if (propA === 'other') {
-        return 1
-      }
-
-      if (propB === 'other') {
-        return -1
-      }
-
-      if (propA < propB) {
-        return -1
-      }
-      if (propA > propB) {
-        return 1
-      }
+      if (propA === 'undefined') return 1
+      if (propB === 'undefined') return -1
+      if (propA === 'other') return 1
+      if (propB === 'other') return -1
+      if (propA < propB) return -1
+      if (propA > propB) return 1
     }
     return 0
   })
@@ -169,12 +152,6 @@ utils.createFile = function (filename, data = '') {
   fs.writeFileSync(path.resolve(__dirname) + '/../' + filename, data)
 }
 
-utils.writeToLog = function (country, msg, url) {
-  var now = new Date()
-  var line = `${country}: ${msg} '${url}'`
-  this.appendToFile('error.log', now.toISOString() + ' ' + line + '\n')
-}
-
 utils.sleep = function (ms) {
   return function (x) {
     return new Promise(resolve => setTimeout(() => resolve(x), ms))
@@ -185,8 +162,17 @@ utils.removeProtocol = function (string) {
   return string.replace(/(^\w+:|^)\/\//, '')
 }
 
-utils.log = function (string) {
-  process.stdout.write(string)
+utils.savePlaylist = async function (playlist) {
+  const original = utils.readFile(playlist.url)
+  const output = playlist.toString({ raw: true })
+
+  if (original === output) {
+    return false
+  } else {
+    utils.createFile(playlist.url, output)
+  }
+
+  return true
 }
 
 module.exports = utils
