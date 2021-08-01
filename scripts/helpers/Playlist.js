@@ -32,13 +32,9 @@ module.exports = class Playlist {
 
   save() {
     const original = file.read(this.url)
-    const output = this.toString({ raw: true })
-    if (original === output) {
-      return false
-    } else {
+    const output = this.toString()
+    if (original !== output) {
       file.create(this.url, output)
     }
-
-    return true
   }
 }
