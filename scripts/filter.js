@@ -31,9 +31,8 @@ async function removeBlacklisted(playlist) {
 
   if (playlist.channels.length !== channels.length) {
     log.print(`updated`)
+    playlist.channels = channels
   }
-
-  playlist.channels = channels
 
   return playlist
 }
