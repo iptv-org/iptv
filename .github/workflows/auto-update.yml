@@ -47,8 +47,10 @@ jobs:
             ad,
             ae,
             af,
+            ag,
             al,
             am,
+            an,
             ao,
             ar,
             at,
@@ -143,11 +145,13 @@ jobs:
             mn,
             mo,
             mt,
+            mv,
             mx,
             my,
             mz,
             ne,
             ng,
+            ni,
             nl,
             no,
             np,
@@ -209,7 +213,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Format Playlists
-        run: node scripts/format.js --country=${{ matrix.country }}
+        run: node scripts/format.js --country=${{ matrix.country }} --resolution
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
