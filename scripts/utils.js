@@ -185,4 +185,8 @@ utils.removeProtocol = function (string) {
   return string.replace(/(^\w+:|^)\/\//, '')
 }
 
+utils.log = function (string) {
+  process.stdout.write(string)
+}
+
 module.exports = utils
