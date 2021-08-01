@@ -15,7 +15,7 @@ parser.parseIndex = function () {
   return result.items
 }
 
-parser.parsePlaylist = function (filename) {
+parser.parsePlaylist = async function (filename) {
   const content = utils.readFile(filename)
   const result = playlistParser.parse(content)
   const name = path.parse(filename).name
