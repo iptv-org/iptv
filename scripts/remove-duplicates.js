@@ -4,37 +4,31 @@ const utils = require('./utils')
 let globalBuffer = []
 
 async function main() {
-  const playlists = parseIndex()
+  utils.log('Starting...\n')
+  console.time('\nDone in')
 
+  const playlists = parseIndex()
   for (const playlist of playlists) {
-    await loadPlaylist(playlist.url)
-      .then(addToBuffer)
-      .then(removeDuplicates)
-      .then(savePlaylist)
-      .then(done)
+    await loadPlaylist(playlist.url).then(addToBuffer).then(removeDuplicates).then(savePlaylist)
   }
 
   if (playlists.length) {
-    await loadPlaylist('channels/unsorted.m3u')
-      .then(removeUnsortedDuplicates)
-      .then(savePlaylist)
-      .then(done)
+    await loadPlaylist('channels/unsorted.m3u').then(removeUnsortedDuplicates).then(savePlaylist)
   }
 
   finish()
 }
 
 function parseIndex() {
-  console.info(`Parsing 'index.m3u'...`)
+  utils.log(`Parsing 'index.m3u'...`)
   let playlists = parser.parseIndex()
   playlists = playlists.filter(i => i.url !== 'channels/unsorted.m3u')
-  console.info(`Found ${playlists.length} playlist(s)\n`)
 
   return playlists
 }
 
 async function loadPlaylist(url) {
-  console.info(`Processing '${url}'...`)
+  utils.log(`\nProcessing '${url}'...`)
   return parser.parsePlaylist(url)
 }
 
@@ -46,9 +40,8 @@ async function addToBuffer(playlist) {
 }
 
 async function removeDuplicates(playlist) {
-  console.info(`  Looking for duplicates...`)
   let buffer = {}
-  const channels = playlist.channels.filter(i => {
+  playlist.channels = playlist.channels.filter(i => {
     const url = utils.removeProtocol(i.url)
     const result = typeof buffer[url] === 'undefined'
     if (result) {
@@ -58,13 +51,10 @@ async function removeDuplicates(playlist) {
     return result
   })
 
-  playlist.channels = channels
-
   return playlist
 }
 
 async function removeUnsortedDuplicates(playlist) {
-  console.info(`  Looking for duplicates...`)
   // locally
   let buffer = {}
   let channels = playlist.channels.filter(i => {
@@ -89,22 +79,17 @@ async function savePlaylist(playlist) {
   const output = playlist.toString({ raw: true })
 
   if (original === output) {
-    console.info(`No changes have been made.`)
     return false
   } else {
     utils.createFile(playlist.url, output)
-    console.info(`Playlist has been updated.`)
+    utils.log(`updated`)
   }
 
   return true
 }
 
-async function done() {
-  console.info(` `)
-}
-
 function finish() {
-  console.info('Done.')
+  console.timeEnd('\nDone in')
 }
 
 main()
