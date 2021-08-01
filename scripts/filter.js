@@ -1,7 +1,7 @@
-const blacklist = require('./blacklist.json')
-const parser = require('./parser')
-const utils = require('./utils')
-const log = require('./log')
+const blacklist = require('./helpers/blacklist.json')
+const parser = require('./helpers/parser')
+const utils = require('./helpers/utils')
+const log = require('./helpers/log')
 
 async function main() {
   log.start()
@@ -13,6 +13,7 @@ async function main() {
     await parser.parsePlaylist(playlist.url).then(removeBlacklisted).then(utils.savePlaylist)
   }
 
+  log.print('\n')
   log.finish()
 }
 
