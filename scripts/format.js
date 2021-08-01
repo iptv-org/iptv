@@ -1,65 +1,29 @@
-const { program } = require('commander')
 const parser = require('./parser')
 const utils = require('./utils')
-
-program
-  .usage('[OPTIONS]...')
-  .option('-d, --debug', 'Debug mode')
-  .option('-c, --country <country>', 'Comma-separated list of country codes', '')
-  .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
-  .parse(process.argv)
-
-const config = program.opts()
+const log = require('./log')
 
 async function main() {
-  utils.log('Starting...\n')
-  console.time('\nDone in')
+  log.start()
 
-  const playlists = parseIndex()
+  log.print(`Parsing 'index.m3u'...`)
+  let playlists = parser.parseIndex().filter(i => i.url !== 'channels/unsorted.m3u')
   for (const playlist of playlists) {
-    await loadPlaylist(playlist.url).then(sortChannels).then(savePlaylist)
+    log.print(`\nProcessing '${playlist.url}'...`)
+    await parser.parsePlaylist(playlist.url).then(sortChannels).then(utils.savePlaylist)
   }
 
-  finish()
-}
-
-function parseIndex() {
-  utils.log(`Parsing 'index.m3u'...`)
-  let playlists = parser.parseIndex()
-  playlists = utils
-    .filterPlaylists(playlists, config.country, config.exclude)
-    .filter(i => i.url !== 'channels/unsorted.m3u')
-
-  return playlists
-}
-
-async function loadPlaylist(url) {
-  utils.log(`\nProcessing '${url}'...`)
-  return parser.parsePlaylist(url)
+  log.finish()
 }
 
 async function sortChannels(playlist) {
-  playlist.channels = utils.sortBy(playlist.channels, ['name', 'url'])
+  const channels = [...playlist.channels]
+  utils.sortBy(channels, ['name', 'url'])
+
+  if (JSON.stringify(playlist.channels) !== JSON.stringify(channels)) log.print('updated')
+
+  playlist.channels = channels
 
   return playlist
-}
-
-async function savePlaylist(playlist) {
-  const original = utils.readFile(playlist.url)
-  const output = playlist.toString()
-
-  if (original === output) {
-    return false
-  } else {
-    utils.createFile(playlist.url, output)
-    utils.log(`updated`)
-  }
-
-  return true
-}
-
-function finish() {
-  console.timeEnd('\nDone in')
 }
 
 main()
