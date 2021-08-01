@@ -1,6 +1,6 @@
-const parser = require('./parser')
-const utils = require('./utils')
-const log = require('./log')
+const parser = require('./helpers/parser')
+const utils = require('./helpers/utils')
+const log = require('./helpers/log')
 
 let globalBuffer = []
 
@@ -15,7 +15,7 @@ async function main() {
       .parsePlaylist(playlist.url)
       .then(addToBuffer)
       .then(removeDuplicates)
-      .then(utils.savePlaylist)
+      .then(p => p.save())
   }
 
   if (playlists.length) {
@@ -23,14 +23,14 @@ async function main() {
     await parser
       .parsePlaylist('channels/unsorted.m3u')
       .then(removeUnsortedDuplicates)
-      .then(utils.savePlaylist)
+      .then(p => p.save())
   }
 
+  log.print('\n')
   log.finish()
 }
 
 async function addToBuffer(playlist) {
-  if (playlist.url === 'channels/unsorted.m3u') return playlist
   globalBuffer = globalBuffer.concat(playlist.channels)
 
   return playlist
