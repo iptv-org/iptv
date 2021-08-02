@@ -171,9 +171,10 @@ http://example.com/stream.m3u8
   - `clean.js`: used in GitHub Action to check all links and remove broken ones.
   - `detect-resolution.js`: used in GitHub Action to detect resolution of the streams.
   - `filter.js`: used within GitHub Action to remove blacklisted channels from playlists.
-  - `format.js`: used within GitHub Action to format channel descriptions and sort playlists.
+  - `format.js`: used within GitHub Action to format channel descriptions.
   - `generate.js`: used within GitHub Action to generate all additional playlists.
   - `remove-duplicates.js`: used in GitHub Action to remove duplicates from the playlist.
+  - `sort.js`: used within GitHub Action to sort channels by name.
   - `update-readme.js`: used within GitHub Action to update the `README.md` file.
 - `CONTRIBUTING.md`: file you are currently reading.
 - `index.m3u`: main playlist that contains links to all playlists in the `channels/` folder.
