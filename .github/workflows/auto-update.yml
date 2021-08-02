@@ -10,7 +10,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Create Branch
-        run: git branch bot/auto-update && git push
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'bot/auto-update'
   remove-duplicates:
     runs-on: ubuntu-latest
     needs: create-branch
