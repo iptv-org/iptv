@@ -30,7 +30,7 @@ jobs:
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: '[Bot] Remove duplicates\nhttps://github.com/iptv-org/iptv/runs/${{ github.job }}'
+          commit_message: '[Bot] Remove duplicates'
           commit_user_name: iptv-bot
           commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
@@ -339,6 +339,8 @@ jobs:
           title: '[Bot] Update playlists'
           body: |
             This pull request is created automatically by `auto-update` action.
+
+            https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
           committer: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           delete-branch: true
