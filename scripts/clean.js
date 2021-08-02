@@ -90,6 +90,7 @@ async function checkStatus(playlist) {
   if (playlist.channels.length !== channels.length) {
     log.print(`File '${playlist.url}' has been updated\n`)
     playlist.channels = channels
+    playlist.updated = true
   }
 
   return playlist

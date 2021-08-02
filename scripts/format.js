@@ -26,6 +26,7 @@ async function sortChannels(playlist) {
   if (JSON.stringify(playlist.channels) !== JSON.stringify(channels)) {
     log.print('updated')
     playlist.channels = channels
+    playlist.updated = true
   }
 
   return playlist

@@ -51,6 +51,7 @@ async function removeDuplicates(playlist) {
   if (playlist.channels.length !== channels.length) {
     log.print('updated')
     playlist.channels = channels
+    playlist.updated = true
   }
 
   return playlist
@@ -74,6 +75,7 @@ async function removeUnsortedDuplicates(playlist) {
   if (channels.length !== playlist.channels.length) {
     log.print('updated')
     playlist.channels = channels
+    playlist.updated = true
   }
 
   return playlist
