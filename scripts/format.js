@@ -12,7 +12,7 @@ async function main() {
     log.print(`\nProcessing '${playlist.url}'...`)
     await parser
       .parsePlaylist(playlist.url)
-      .then(addMissingData)
+      .then(formatPlaylist)
       .then(playlist => {
         if (file.read(playlist.url) !== playlist.toString()) {
           log.print('updated')
@@ -27,24 +27,26 @@ async function main() {
   log.finish()
 }
 
-async function addMissingData(playlist) {
+async function formatPlaylist(playlist) {
   for (const channel of playlist.channels) {
     const code = file.getBasename(playlist.url)
-    // tvg-name
+    // add missing tvg-name
     if (!channel.tvg.name && code !== 'unsorted' && channel.name) {
       channel.tvg.name = channel.name.replace(/\"/gi, '')
     }
-    // tvg-id
+    // add missing tvg-id
     if (!channel.tvg.id && code !== 'unsorted' && channel.tvg.name) {
       const id = utils.name2id(channel.tvg.name)
       channel.tvg.id = id ? `${id}.${code}` : ''
     }
-    // country
+    // add missing country
     if (!channel.countries.length) {
       const name = utils.code2name(code)
       channel.countries = name ? [{ code, name }] : []
       channel.tvg.country = channel.countries.map(c => c.code.toUpperCase()).join(';')
     }
+    // update group-title
+    channel.group.title = channel.category
   }
 
   return playlist
