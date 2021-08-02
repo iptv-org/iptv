@@ -12,10 +12,11 @@ module.exports = class Channel {
     this.http = data.http
     this.url = data.url
     this.logo = data.tvg.logo
-    this.category = data.group.title
+    this.group = data.group
     this.name = this.parseName(data.name)
     this.status = this.parseStatus(data.name)
     this.resolution = this.parseResolution(data.name)
+    this.category = this.parseCategory(data.group.title)
     this.countries = this.parseCountries(data.tvg.country)
     this.languages = this.parseLanguages(data.tvg.language)
   }
@@ -41,6 +42,13 @@ module.exports = class Channel {
     const height = match ? parseInt(match[1]) : null
 
     return { width: null, height }
+  }
+
+  parseCategory(string) {
+    const category = categories.find(c => c.id === string.toLowerCase())
+    if (!category) return ''
+
+    return category.name
   }
 
   parseCountries(string) {
@@ -92,7 +100,7 @@ module.exports = class Channel {
   getInfo() {
     let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
 
-    info += ` group-title="${this.category}",${this.name}`
+    info += ` group-title="${this.group.title}",${this.name}`
 
     if (this.resolution.height) {
       info += ` (${this.resolution.height}p)`
