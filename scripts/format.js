@@ -15,7 +15,6 @@ async function main() {
       .parsePlaylist(playlist.url)
       .then(removeWrongCategories)
       .then(addMissingData)
-      .then(sortChannels)
       .then(playlist => {
         if (file.read(playlist.url) !== playlist.toString()) {
           log.print('updated')
@@ -61,14 +60,6 @@ async function addMissingData(playlist) {
       channel.tvg.country = channel.countries.map(c => c.code.toUpperCase()).join(';')
     }
   }
-
-  return playlist
-}
-
-async function sortChannels(playlist) {
-  const channels = [...playlist.channels]
-  utils.sortBy(channels, ['name', 'url'])
-  playlist.channels = channels
 
   return playlist
 }

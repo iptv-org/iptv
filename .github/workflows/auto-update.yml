@@ -57,9 +57,30 @@ jobs:
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: channels/*
-  filter:
+  sort:
     runs-on: ubuntu-latest
     needs: format
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Install Dependencies
+        run: npm install
+      - name: Sort Channels
+        run: node scripts/sort.js
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '[Bot] Sort channels'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          branch: bot/auto-update
+          file_pattern: channels/*
+  filter:
+    runs-on: ubuntu-latest
+    needs: sort
     steps:
       - name: Checkout
         uses: actions/checkout@v2
