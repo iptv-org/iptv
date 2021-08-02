@@ -8,15 +8,15 @@ async function main() {
   await loadDatabase()
   createRootDirectory()
   createNoJekyllFile()
-  generateIndex()
-  generateCategoryIndex()
+  // generateIndex()
+  // generateCategoryIndex()
   generateCountryIndex()
   generateLanguageIndex()
-  generateCategories()
-  generateCountries()
-  generateLanguages()
-  generateChannelsJson()
-  showResults()
+  // generateCategories()
+  // generateCountries()
+  // generateLanguages()
+  // generateChannelsJson()
+  // showResults()
 }
 
 async function loadDatabase() {
@@ -74,13 +74,13 @@ function generateCountryIndex() {
       .removeDuplicates()
       .get()
     for (const channel of channels) {
-      const category = channel.category
+      const groupTitle = channel.group.title
       const nsfw = channel.isNSFW()
-      channel.category = country.name || ''
+      channel.group.title = country.name || ''
       if (!nsfw) {
         file.append(filename, channel.toString())
       }
-      channel.category = category
+      channel.group.title = groupTitle
     }
   }
 }
@@ -97,13 +97,13 @@ function generateLanguageIndex() {
       .removeDuplicates()
       .get()
     for (const channel of channels) {
-      const category = channel.category
+      const groupTitle = channel.group.title
       const nsfw = channel.isNSFW()
-      channel.category = language.name || ''
+      channel.group.title = language.name || ''
       if (!nsfw) {
         file.append(filename, channel.toString())
       }
-      channel.category = category
+      channel.group.title = groupTitle
     }
   }
 }
