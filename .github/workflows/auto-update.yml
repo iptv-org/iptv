@@ -9,6 +9,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: master
       - name: Create Branch
         uses: peterjgrainger/action-create-branch@v2.0.1
         env:
