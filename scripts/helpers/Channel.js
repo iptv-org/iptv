@@ -6,36 +6,46 @@ const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
 const nsfwCategories = categories.filter(c => c.nsfw).map(c => c.name)
 
 module.exports = class Channel {
-  constructor({ data, header, sourceUrl }) {
-    this.parseData(data)
-
-    this.filename = file.getBasename(sourceUrl)
-    if (!this.countries.length) {
-      const countryName = utils.code2name(this.filename)
-      this.countries = countryName ? [{ code: this.filename, name: countryName }] : []
-      this.tvg.country = this.countries.map(c => c.code.toUpperCase()).join(';')
-    }
-  }
-
-  parseData(data) {
-    const title = this.parseTitle(data.name)
-
+  constructor(data) {
+    this.raw = data.raw
     this.tvg = data.tvg
     this.http = data.http
     this.url = data.url
     this.logo = data.tvg.logo
-    this.name = title.channelName
-    this.status = title.streamStatus
-    this.resolution = title.streamResolution
+    this.category = data.group.title
+    this.name = this.parseName(data.name)
+    this.status = this.parseStatus(data.name)
+    this.resolution = this.parseResolution(data.name)
     this.countries = this.parseCountries(data.tvg.country)
     this.languages = this.parseLanguages(data.tvg.language)
-    this.category = this.parseCategory(data.group.title)
-    this.raw = data.raw
+  }
+
+  parseName(title) {
+    return title
+      .trim()
+      .split(' ')
+      .map(s => s.trim())
+      .filter(s => {
+        return !/\[|\]/i.test(s) && !/\((\d+)P\)/i.test(s)
+      })
+      .join(' ')
+  }
+
+  parseStatus(title) {
+    const match = title.match(/\[(.*)\]/i)
+    return match ? match[1] : null
+  }
+
+  parseResolution(title) {
+    const match = title.match(/\((\d+)P\)/i)
+    const height = match ? parseInt(match[1]) : null
+
+    return { width: null, height }
   }
 
   parseCountries(string) {
-    let arr = string
-      .split(';')
+    const list = string.split(';')
+    return list
       .reduce((acc, curr) => {
         const codes = utils.region2codes(curr)
         if (codes.length) {
@@ -50,95 +60,37 @@ module.exports = class Channel {
 
         return acc
       }, [])
-      .filter(code => code && utils.code2name(code))
+      .map(code => {
+        const name = code ? utils.code2name(code) : null
+        if (!name) return null
 
-    return arr.map(code => {
-      return { code: code.toLowerCase(), name: utils.code2name(code) }
-    })
+        return { code: code.toLowerCase(), name }
+      })
+      .filter(c => c)
   }
 
   parseLanguages(string) {
-    return string
-      .split(';')
+    const list = string.split(';')
+    return list
       .map(name => {
         const code = name ? utils.language2code(name) : null
         if (!code) return null
 
-        return {
-          code,
-          name
-        }
+        return { code, name }
       })
       .filter(l => l)
   }
 
-  parseCategory(string) {
-    const category = categories.find(c => c.id === string.toLowerCase())
-
-    return category ? category.name : ''
+  isSFW() {
+    return sfwCategories.includes(this.category)
   }
 
-  parseTitle(title) {
-    const channelName = title
-      .trim()
-      .split(' ')
-      .map(s => s.trim())
-      .filter(s => {
-        return !/\[|\]/i.test(s) && !/\((\d+)P\)/i.test(s)
-      })
-      .join(' ')
-
-    const streamStatusMatch = title.match(/\[(.*)\]/i)
-    const streamStatus = streamStatusMatch ? streamStatusMatch[1] : null
-
-    const streamResolutionMatch = title.match(/\((\d+)P\)/i)
-    const streamResolutionHeight = streamResolutionMatch ? parseInt(streamResolutionMatch[1]) : null
-    const streamResolution = { width: null, height: streamResolutionHeight }
-
-    return { channelName, streamStatus, streamResolution }
-  }
-
-  get tvgCountry() {
-    return this.tvg.country
-      .split(';')
-      .map(code => utils.code2name(code))
-      .join(';')
-  }
-
-  get tvgLanguage() {
-    return this.tvg.language
-  }
-
-  get tvgUrl() {
-    return this.tvg.id && this.tvg.url ? this.tvg.url : ''
-  }
-
-  get tvgId() {
-    if (this.tvg.id) {
-      return this.tvg.id
-    } else if (this.filename !== 'unsorted') {
-      const id = utils.name2id(this.tvgName)
-
-      return id ? `${id}.${this.filename}` : ''
-    }
-
-    return ''
-  }
-
-  get tvgName() {
-    if (this.tvg.name) {
-      return this.tvg.name
-    } else if (this.filename !== 'unsorted') {
-      return this.name.replace(/\"/gi, '')
-    }
-
-    return ''
+  isNSFW() {
+    return nsfwCategories.includes(this.category)
   }
 
   getInfo() {
-    this.tvg.country = this.tvg.country.toUpperCase()
-
-    let info = `-1 tvg-id="${this.tvgId}" tvg-name="${this.tvgName}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
+    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
 
     info += ` group-title="${this.category}",${this.name}`
 
@@ -176,18 +128,10 @@ module.exports = class Channel {
       languages: this.languages,
       countries: this.countries,
       tvg: {
-        id: this.tvgId || null,
-        name: this.tvgName || null,
-        url: this.tvgUrl || null
+        id: this.tvg.id || null,
+        name: this.tvg.name || null,
+        url: this.tvg.url || null
       }
     }
-  }
-
-  isSFW() {
-    return sfwCategories.includes(this.category)
-  }
-
-  isNSFW() {
-    return nsfwCategories.includes(this.category)
   }
 }
