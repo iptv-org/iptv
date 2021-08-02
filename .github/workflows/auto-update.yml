@@ -31,6 +31,8 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Remove duplicates'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: channels/*
@@ -50,6 +52,8 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Filtere channels'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: channels/*
@@ -69,6 +73,8 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Formate playlists'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: channels/*
@@ -269,6 +275,8 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Detect resolution'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: channels/*
@@ -305,6 +313,8 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Update README.md'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: README.md
