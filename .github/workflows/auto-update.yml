@@ -30,8 +30,9 @@ jobs:
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: '[Bot] Removed duplicates'
+          commit_message: '[Bot] Remove duplicates'
           branch: bot/auto-update
+          file_pattern: channels/*
   filter:
     runs-on: ubuntu-latest
     needs: remove-duplicates
@@ -47,8 +48,9 @@ jobs:
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: '[Bot] Filtered channels'
+          commit_message: '[Bot] Filtere channels'
           branch: bot/auto-update
+          file_pattern: channels/*
   format:
     runs-on: ubuntu-latest
     needs: filter
@@ -64,8 +66,9 @@ jobs:
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: '[Bot] Formated playlists'
+          commit_message: '[Bot] Formate playlists'
           branch: bot/auto-update
+          file_pattern: channels/*
   detect-resolution:
     runs-on: ubuntu-latest
     needs: format
@@ -262,8 +265,9 @@ jobs:
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: '[Bot] Detected resolution'
+          commit_message: '[Bot] Detect resolution'
           branch: bot/auto-update
+          file_pattern: channels/*
   generate:
     runs-on: ubuntu-latest
     needs: commit-changes
@@ -293,11 +297,12 @@ jobs:
         run: npm install
       - name: Update README.md
         run: node scripts/update-readme.js
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          name: README.md
-          path: README.md
+          commit_message: '[Bot] Update README.md'
+          branch: bot/auto-update
+          file_pattern: README.md
   pull-request:
     needs: update-readme
     runs-on: ubuntu-latest
