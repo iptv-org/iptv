@@ -31,6 +31,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Remove duplicates'
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: channels/*
   filter:
@@ -49,6 +50,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Filtere channels'
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: channels/*
   format:
@@ -67,6 +69,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Formate playlists'
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: channels/*
   detect-resolution:
@@ -266,6 +269,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Detect resolution'
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: channels/*
   generate:
@@ -301,6 +305,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: '[Bot] Update README.md'
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           file_pattern: README.md
   pull-request:
@@ -324,7 +329,7 @@ jobs:
           title: '[Bot] Update playlists'
           body: |
             This pull request is created automatically by `auto-update` action.
-          committer: GitHub <noreply@github.com>
+          committer: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-update
           delete-branch: true
           token: ${{ steps.generate-token.outputs.token }}
