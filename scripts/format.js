@@ -1,4 +1,3 @@
-const categories = require('./helpers/categories')
 const parser = require('./helpers/parser')
 const utils = require('./helpers/utils')
 const file = require('./helpers/file')
@@ -13,7 +12,6 @@ async function main() {
     log.print(`\nProcessing '${playlist.url}'...`)
     await parser
       .parsePlaylist(playlist.url)
-      .then(removeWrongCategories)
       .then(addMissingData)
       .then(playlist => {
         if (file.read(playlist.url) !== playlist.toString()) {
@@ -27,18 +25,6 @@ async function main() {
 
   log.print('\n')
   log.finish()
-}
-
-async function removeWrongCategories(playlist) {
-  for (const channel of playlist.channels) {
-    if (!channel.category) continue
-    const valid = categories.find(c => c.name === channel.category)
-    if (!valid) {
-      channel.category = ''
-    }
-  }
-
-  return playlist
 }
 
 async function addMissingData(playlist) {
