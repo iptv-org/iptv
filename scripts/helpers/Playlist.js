@@ -10,6 +10,7 @@ module.exports = class Playlist {
     this.channels = items
       .map(item => new Channel({ data: item, header, sourceUrl: url }))
       .filter(channel => channel.url)
+    this.updated = false
   }
 
   toString(options = {}) {
@@ -31,10 +32,8 @@ module.exports = class Playlist {
   }
 
   save() {
-    const original = file.read(this.url)
-    const output = this.toString()
-    if (original !== output) {
-      file.create(this.url, output)
+    if (this.updated) {
+      file.create(this.url, this.toString())
     }
   }
 }
