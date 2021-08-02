@@ -7,9 +7,7 @@ module.exports = class Playlist {
     this.name = name
     this.country = country
     this.header = header
-    this.channels = items
-      .map(item => new Channel({ data: item, header, sourceUrl: url }))
-      .filter(channel => channel.url)
+    this.channels = items.map(item => new Channel(item)).filter(channel => channel.url)
     this.updated = false
   }
 
