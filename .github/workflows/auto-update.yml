@@ -383,6 +383,8 @@ jobs:
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Update from master
+        run: git merge origin/master
       - name: Create Pull Request
         id: pr
         uses: peter-evans/create-pull-request@v3
