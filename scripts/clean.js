@@ -16,7 +16,7 @@ program
   .parse(process.argv)
 
 const config = program.opts()
-const offlineStatusCodes = [404, 410, 500, 501]
+const offlineStatusCodes = [404, 410, 451, 500, 501]
 const ignore = ['Geo-blocked', 'Not 24/7']
 const instance = axios.create({
   timeout: config.timeout,
