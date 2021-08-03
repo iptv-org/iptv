@@ -1,67 +1,43 @@
-const parser = require('./parser')
-const utils = require('./utils')
-const blacklist = require('./blacklist.json')
+const blacklist = require('./helpers/blacklist.json')
+const parser = require('./helpers/parser')
+const log = require('./helpers/log')
 
 async function main() {
-  const playlists = parseIndex()
+  log.start()
+
+  log.print(`Parsing 'index.m3u'...`)
+  const playlists = parser.parseIndex()
   for (const playlist of playlists) {
-    await loadPlaylist(playlist.url).then(removeBlacklisted).then(savePlaylist).then(done)
+    log.print(`\nProcessing '${playlist.url}'...`)
+    await parser
+      .parsePlaylist(playlist.url)
+      .then(removeBlacklisted)
+      .then(p => p.save())
   }
 
-  finish()
-}
-
-function parseIndex() {
-  console.info(`Parsing 'index.m3u'...`)
-  let playlists = parser.parseIndex()
-  console.info(`Found ${playlists.length} playlist(s)\n`)
-
-  return playlists
-}
-
-async function loadPlaylist(url) {
-  console.info(`Processing '${url}'...`)
-  return parser.parsePlaylist(url)
+  log.print('\n')
+  log.finish()
 }
 
 async function removeBlacklisted(playlist) {
-  console.info(`  Looking for blacklisted channels...`)
-  playlist.channels = playlist.channels.filter(channel => {
-    return !blacklist.find(i => {
-      const channelName = channel.name.toLowerCase()
-      return (
-        (i.name.toLowerCase() === channelName ||
-          i.aliases.map(i => i.toLowerCase()).includes(channelName)) &&
-        i.country === channel.filename
-      )
+  const channels = playlist.channels.filter(channel => {
+    return !blacklist.find(item => {
+      const hasSameName =
+        item.name.toLowerCase() === channel.name.toLowerCase() ||
+        item.aliases.map(alias => alias.toLowerCase()).includes(channel.name.toLowerCase())
+      const fromSameCountry = channel.countries.find(c => c.code === item.country)
+
+      return hasSameName && fromSameCountry
     })
   })
 
-  return playlist
-}
-
-async function savePlaylist(playlist) {
-  console.info(`  Saving playlist...`)
-  const original = utils.readFile(playlist.url)
-  const output = playlist.toString({ raw: true })
-
-  if (original === output) {
-    console.info(`No changes have been made.`)
-    return false
-  } else {
-    utils.createFile(playlist.url, output)
-    console.info(`Playlist has been updated.`)
+  if (playlist.channels.length !== channels.length) {
+    log.print(`updated`)
+    playlist.channels = channels
+    playlist.updated = true
   }
 
-  return true
-}
-
-async function done() {
-  console.info(` `)
-}
-
-function finish() {
-  console.info('Done.')
+  return playlist
 }
 
 main()
