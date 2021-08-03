@@ -47,9 +47,9 @@ jobs:
         with:
           ref: bot/auto-update
       - name: Fetch Origin
-        run: git fetch origin --allow-unrelated-histories
+        run: git fetch origin
       - name: Update from master
-        run: git merge origin/master
+        run: git merge --allow-unrelated-histories origin/master
       - name: Generate Token
         uses: tibdex/github-app-token@v1
         id: generate-token
