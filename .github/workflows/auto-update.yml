@@ -54,13 +54,13 @@ jobs:
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Create Pull Request
         id: pr
-        uses: tretuna/sync-branches@1.2.0
+        uses: repo-sync/pull-request@v2
         with:
-          FROM_BRANCH: 'bot/auto-update'
-          TO_BRANCH: 'master'
-          PULL_REQUEST_TITLE: '[Bot] Update playlists'
-          PULL_REQUEST_BODY: |
+          source_branch: 'bot/auto-update'
+          destination_branch: 'master'
+          pr_title: '[Bot] Update playlists'
+          pr_body: |
             This pull request is created by [auto-update][1] workflow.
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
+          github_token: ${{ steps.generate-token.outputs.token }}
