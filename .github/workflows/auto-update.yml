@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: patch-2
+          ref: ${{ github.ref }}
       - name: Create Branch
         uses: peterjgrainger/action-create-branch@v2.0.1
         env:
