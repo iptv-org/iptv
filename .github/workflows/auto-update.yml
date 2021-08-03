@@ -398,15 +398,14 @@ jobs:
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
           github_token: ${{ steps.generate-token.outputs.token }}
       - name: Enable Pull Request Automerge
-        if: steps.pr.outputs.pull-request-operation == 'created'
         uses: peter-evans/enable-pull-request-automerge@v1
         with:
           token: ${{ secrets.PAT }}
-          pull-request-number: ${{ steps.pr.outputs.pull-request-number }}
+          pull-request-number: ${{ steps.pr.outputs.pr_number }}
           merge-method: squash
       - name: Approve Pull Request
-        if: github.ref == 'refs/heads/master' && steps.pr.outputs.pull-request-operation == 'created'
+        if: github.ref == 'refs/heads/master'
         uses: juliangruber/approve-pull-request-action@v1
         with:
           github-token: ${{ secrets.PAT }}
-          number: ${{ steps.pr.outputs.pull-request-number }}
+          number: ${{ steps.pr.outputs.pr_number }}
