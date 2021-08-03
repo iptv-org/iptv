@@ -239,31 +239,21 @@ http://serv30.vintera.tv:8081/sochi/sochi_stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TRK555.ru" tvg-name="TRK 555" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",TRK 555
 http://trk555.tv:8888/live
 #EXTINF:-1 tvg-id="TVBRICSChinese.ru" tvg-name="TV BRICS Chinese" tvg-country="CN" tvg-language="Russian;Chinese" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS Chinese
-http://brics.bonus-tv.ru/cdn/brics/chinese/tracks-v1a1/index.m3u8
-#EXTINF:-1 tvg-id="TVBRICSChinese.ru" tvg-name="TV BRICS Chinese" tvg-country="CN" tvg-language="Russian;Chinese" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS Chinese
-https://brics.bonus-tv.ru/cdn/brics/chinese/tracks-v1a1/mono.m3u8
+https://brics.bonus-tv.ru/cdn/brics/chinese/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBRICSEnglish.ru" tvg-name="TV BRICS English" tvg-country="INT" tvg-language="Russian;English" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS English
-http://brics.bonus-tv.ru/cdn/brics/english/tracks-v1a1/index.m3u8
-#EXTINF:-1 tvg-id="TVBRICSEnglish.ru" tvg-name="TV BRICS English" tvg-country="INT" tvg-language="Russian;English" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS English
-https://brics.bonus-tv.ru/cdn/brics/english/tracks-v1a1/mono.m3u8
+https://brics.bonus-tv.ru/cdn/brics/english/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBRICSRussian.ru" tvg-name="TV BRICS Russian" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS Russian
-https://brics.bonus-tv.ru/cdn/brics/russian/tracks-v1a1/index.m3u8
-#EXTINF:-1 tvg-id="TVBRICSRussian.ru" tvg-name="TV BRICS Russian" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS Russian
-https://brics.bonus-tv.ru/cdn/brics/russian/tracks-v1a1/mono.m3u8
+https://brics.bonus-tv.ru/cdn/brics/russian/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPRO.ru" tvg-name="TV PRO" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",TV PRO [Not 24/7]
 http://rtmp.tvpro-online.ru/hls/ch1.m3u8
 #EXTINF:-1 tvg-id="TVGuberniya.ru" tvg-name="TV Губерния" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",TV Губерния (Воронеж) (720p)
 https://tvgubernia-htlive.cdn.ngenix.net/live/mp4:tv-gubernia-live/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMChannel.ru" tvg-name="TVMChannel" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",TVMChannel (576p)
-http://cdn-01.bonus-tv.ru:8080/tvm_edge/tracks-v1a1/index.m3u8
+http://cdn-01.bonus-tv.ru:8080/tvm_edge/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMChannel.ru" tvg-name="TVMChannel" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",TVMChannel (720p)
 https://strm.yandex.ru/kal/tvm_supres/tvm_supres0.m3u8
-#EXTINF:-1 tvg-id="UniverTV.ru" tvg-name="Univer TV" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Univer TV (720p)
-http://cdn.universmotri.ru/live/hq.sdp/chunklist_w1792531.m3u8
-#EXTINF:-1 tvg-id="UniverTV.ru" tvg-name="Univer TV" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Univer TV (720p)
-http://cdn.universmotri.ru/live/hq.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="UniverTV.ru" tvg-name="Univer TV" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Univer TV (576p)
-http://cdn.universmotri.ru/live/mq.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="UniverTV.ru" tvg-name="Univer TV" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Univer TV (1080p)
+https://cdn.universmotri.ru/live/smil:univer.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="UniverTV.ru" tvg-name="Univer TV" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Univer TV (1080p)
 https://cdn.universmotri.ru/live/smil:mbr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="VIVARussia.ru" tvg-name="VIVA Russia" tvg-country="RU" tvg-language="Russian" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/VIVA_2011_logo.svg/1280px-VIVA_2011_logo.svg.png" group-title="Music",VIVA Russia (1080p)
@@ -283,36 +273,16 @@ http://ott-cdn.ucom.am/s68/index.m3u8
 https://live.mediacdn.ru/sr1/arhis24/playlist.m3u8
 #EXTINF:-1 tvg-id="Arhyz24.ru" tvg-name="Архыз 24" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Архыз 24 (720p)
 https://strm.yandex.ru/kal/arhyz24/arhyz240.m3u8
-#EXTINF:-1 tvg-id="Astrahan24.ru" tvg-name="Астрахань 24" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Астрахань 24 (720p)
-http://streaming.astrakhan.ru/astrakhan24/index.m3u8
-#EXTINF:-1 tvg-id="Astrahan24.ru" tvg-name="Астрахань 24" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Астрахань 24
-https://streaming.astrakhan.ru/astrakhan24/tracks-v2a1/index.m3u8
-#EXTINF:-1 tvg-id="Astrahan24.ru" tvg-name="Астрахань 24" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Астрахань 24
-https://streaming.astrakhan.ru/astrakhan24/tracks-v3a1/index.m3u8
+#EXTINF:-1 tvg-id="Astrahan24.ru" tvg-name="Астрахань 24" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Астрахань 24 (720p)
+https://streaming.astrakhan.ru/astrakhan24/playlist.m3u8
 #EXTINF:-1 tvg-id="Astrahan24.ru" tvg-name="Астрахань 24" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Астрахань 24 (720p)
 https://strm.yandex.ru/kal/astrahan24/astrahan240.m3u8
-#EXTINF:-1 tvg-id="Astrahan24Plus1.ru" tvg-name="Астрахань 24 +1" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Астрахань 24 +1
-http://streaming.astrakhan.ru/astrakhan24/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-id="Astrahan24HD.ru" tvg-name="Астрахань 24 HD" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Астрахань 24 HD (720p)
 http://83.234.104.142/astrakhan24hd/playlist.m3u8
-#EXTINF:-1 tvg-id="Astrahan24HD.ru" tvg-name="Астрахань 24 HD" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Астрахань 24 HD
-https://streaming.astrakhan.ru/astrakhan24/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="AstrahanRuSport.ru" tvg-name="Астрахань.Ru Sport" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Астрахань.Ru Sport
-http://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v5a1/index.m3u8
 #EXTINF:-1 tvg-id="AstrahanRuSport.ru" tvg-name="Астрахань.Ru Sport" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Sports",Астрахань.Ru Sport
-https://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v1a1/index.m3u8
-#EXTINF:-1 tvg-id="AstrahanRuSport.ru" tvg-name="Астрахань.Ru Sport" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Sports",Астрахань.Ru Sport
-https://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v2a1/index.m3u8
-#EXTINF:-1 tvg-id="AstrahanRuSport.ru" tvg-name="Астрахань.Ru Sport" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Sports",Астрахань.Ru Sport
-https://streaming.astrakhan.ru/astrakhanrusporthd/tracks-v3a1/index.m3u8
+https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
 #EXTINF:-1 tvg-id="AstrahanRuTV.ru" tvg-name="Астрахань.Ru TV" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Астрахань.Ru TV
-http://streaming.astrakhan.ru/astrakhanrulivehd/tracks-v5a1/index.m3u8
-#EXTINF:-1 tvg-id="AstrahanRuTV.ru" tvg-name="Астрахань.Ru TV" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Астрахань.Ru TV
-https://streaming.astrakhan.ru/astrakhanrulivehd/tracks-v1a1/index.m3u8
-#EXTINF:-1 tvg-id="AstrahanRuTV.ru" tvg-name="Астрахань.Ru TV" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Астрахань.Ru TV
-https://streaming.astrakhan.ru/astrakhanrulivehd/tracks-v2a1/index.m3u8
-#EXTINF:-1 tvg-id="AstrahanRuTV.ru" tvg-name="Астрахань.Ru TV" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Астрахань.Ru TV
-https://streaming.astrakhan.ru/astrakhanrulivehd/tracks-v3a1/index.m3u8
+https://streaming.astrakhan.ru/astrakhanrulivehd/playlist.m3u8
 #EXTINF:-1 tvg-id="Afontovo.ru" tvg-name="Афонтово" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Афонтово (Красноярск)
 http://xstream.afontovo.ru/afontovo_ya.m3u8
 #EXTINF:-1 tvg-id="Bashkortostan24.ru" tvg-name="Башкортостан 24" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Башкортостан 24
@@ -355,8 +325,6 @@ http://iptv.rubintele.com:8552/play/a007
 http://clients.apsny.camera/tv_gal_tv_hd_online/index.m3u8
 #EXTINF:-1 tvg-id="GorodskoytelekanalYaroslavl.ru" tvg-name="Городской телеканал (Ярославль)" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Городской телеканал (Ярославль)
 http://www.gtk.tv/hls/gtyar.m3u8
-#EXTINF:-1 tvg-id="GuberniyaSamara.ru" tvg-name="Губерния (Самара)" tvg-country="RU" tvg-language="Russian" tvg-logo="https://www.guberniatv.ru/img/logo.png" group-title="",Губерния (Самара)
-http://live.guberniatv.cdnvideo.ru/guberniatv/guberniatv.sdp/chunklist.m3u8
 #EXTINF:-1 tvg-id="GuberniyaSamara.ru" tvg-name="Губерния (Самара)" tvg-country="RU" tvg-language="Russian" tvg-logo="https://www.guberniatv.ru/img/logo.png" group-title="",Губерния (Самара) (576p)
 http://live.guberniatv.cdnvideo.ru/guberniatv/guberniatv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Guberniya33.ru" tvg-name="Губерния 33" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Губерния 33 (Владимир) (360p)
@@ -463,8 +431,6 @@ http://spacetv.in/stream/DIPK8H19CP8/74.m3u8
 http://188.40.68.167/russia/komediya/playlist.m3u8
 #EXTINF:-1 tvg-id="KonnyyMir.ru" tvg-name="Конный Мир" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Конный Мир
 http://cdn-01.bonus-tv.ru:80/konnyimir/playlist.m3u8
-#EXTINF:-1 tvg-id="Krasnayaliniya.ru" tvg-name="Красная линия" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="General",Красная линия
-https://kprf-htlive.cdn.ngenix.net/live/stream_high/chunklist.m3u8
 #EXTINF:-1 tvg-id="Krasnayaliniya.ru" tvg-name="Красная линия" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="General",Красная линия (480p)
 https://kprf-htlive.cdn.ngenix.net/live/stream_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KrasnogorskTV.ru" tvg-name="Красногорск ТВ" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Красногорск ТВ (480p)
@@ -532,7 +498,7 @@ http://live-minidey.cdnvideo.ru/minidey/minidey.sdp/playlist.m3u8
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="Mir.ru" tvg-name="Мир" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Мир
 http://uiptv.do.am/1ufc/113500247/playlist.m3u8
-#EXTINF:-1 tvg-id="MirPlus3.ru" tvg-name="Мир +3" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Мир +3 (540p)
+#EXTINF:-1 tvg-id="MirPlus2.ru" tvg-name="Мир +3" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Мир +2 (540p)
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv2_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="MirPlus4.ru" tvg-name="Мир +4" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/CrFWXTD.png" group-title="",Мир +4 (540p)
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv3_2500/playlist.m3u8
@@ -575,7 +541,7 @@ http://188.40.68.167/russia/moskva24/playlist.m3u8
 #EXTINF:-1 tvg-id="Moskva24.ru" tvg-name="Москва 24" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Москва 24
 https://a3569458063-s26881.cdn.ngenix.net/live/smil:m24.smil/index.m3u8
 #EXTINF:-1 tvg-id="Moskva24.ru" tvg-name="Москва 24" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Москва 24
-https://radio-live-mg.rtr-vesti.ru/hls/moscow_24/playlist_3.m3u8
+https://radio-live-mg.rtr-vesti.ru/hls/moscow_24/playlist.m3u8
 #EXTINF:-1 tvg-id="Moskva24.ru" tvg-name="Москва 24" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/BOry400.png" group-title="Local",Москва 24
 https://radio-live-mg.rtr-vesti.ru/live/smil:m24.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Moskva24.ru" tvg-name="Москва 24" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Москва 24 (720p)
@@ -597,8 +563,6 @@ http://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3
 http://ott-cdn.ucom.am/s28/index.m3u8
 #EXTINF:-1 tvg-id="MuzTV.ru" tvg-name="Муз-ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/n7bGFXj.png" group-title="Music",Муз-ТВ (720p)
 https://strm.yandex.ru/kal/muztv_supres/muztv_supres0.m3u8
-#EXTINF:-1 tvg-id="MuzSoyuz.ru" tvg-name="МузСоюз" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Music",МузСоюз
-http://hls.tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/chunklist.m3u8
 #EXTINF:-1 tvg-id="MuzSoyuz.ru" tvg-name="МузСоюз" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",МузСоюз (576p)
 http://hls.tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
 #EXTINF:-1 tvg-id="Multilandiya.ru" tvg-name="Мультиландия" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Мультиландия (576p)
@@ -639,7 +603,7 @@ http://spacetv.in/stream/DIPK8H19CP8/344.m3u8
 #EXTINF:-1 tvg-id="Novoeradio.ru" tvg-name="Новое радио" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Music",Новое радио (1080p)
 https://hls-video01.cdnvideo.ru/video01/smil:video01.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NovoeTV.ru" tvg-name="Новое ТВ" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Новое ТВ
-http://serv25.vintera.tv:8081/novoetv/nov_tv/chunks.m3u8
+http://serv25.vintera.tv:8081/novoetv/nov_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="NovoeTV.ru" tvg-name="Новое ТВ" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Новое ТВ
 https://sc.id-tv.kz/New_Television_34_35.m3u8
 #EXTINF:-1 tvg-id="NovoeTV.ru" tvg-name="Новое ТВ" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Новое ТВ
@@ -664,7 +628,7 @@ http://ott-cdn.ucom.am/s17/index.m3u8
 #EXTINF:-1 tvg-id="NTVStil.ru" tvg-name="НТВ Стиль" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",НТВ Стиль (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s77/index.m3u8
-#EXTINF:-1 tvg-id="NTVPlusSport.ru" tvg-name="НТВ+ Спорт" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",НТВ+ Спорт (720p)
+#EXTINF:-1 tvg-id="1Plus1Sport.ru" tvg-name="1+1 Спорт" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",1+1 Спорт (720p)
 https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NTM.ru" tvg-name="НТМ" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",НТМ (Народное телевидение Мордовии) (720p)
 https://live-ntm13.cdnvideo.ru/ntm13/smil:ntm13.smil/playlist.m3u8
@@ -672,10 +636,8 @@ https://live-ntm13.cdnvideo.ru/ntm13/smil:ntm13.smil/playlist.m3u8
 https://peqk71plnjy.a.trbcdn.net/livemaster/w4kz7pki62_nts_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="O.ru" tvg-name="О!" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Kids",О!
 https://sc.id-tv.kz/o_34_35.m3u8
-#EXTINF:-1 tvg-id="O2TV.ru" tvg-name="О2ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",О2ТВ (1080p)
-https://strm.yandex.ru/kal/o2/o20.m3u8
 #EXTINF:-1 tvg-id="O2TV.ru" tvg-name="О2ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="https://ustanovca-tricorol-tv.ru/wp-content/uploads/2017/12/o-tv.png" group-title="",О2ТВ
-https://strm.yandex.ru/kal/o2/o20_169_480p.json/index-v1-a1.m3u8
+https://strm.yandex.ru/kal/o2/o20.m3u8
 #EXTINF:-1 tvg-id="Oplot2.ru" tvg-name="Оплот 2" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Оплот 2
 http://ott.inmart.tv:8081/17/index.m3u8
 #EXTINF:-1 tvg-id="OplotTV.ru" tvg-name="Оплот ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Оплот ТВ
@@ -768,18 +730,8 @@ http://live-ratnik.cdnvideo.ru/ratnik/ratnik.sdp/playlist.m3u8
 https://online-video.rbc.ru/online/rbctv.m3u8
 #EXTINF:-1 tvg-id="RBK.ru" tvg-name="РБК" tvg-country="RU" tvg-language="Russian" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/rbk_tv_ru.jpg" group-title="Business",РБК
 http://92.50.128.180/utv/1358/index.m3u8
-#EXTINF:-1 tvg-id="RBK.ru" tvg-name="РБК" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",РБК
-http://e2.online.video.rbc.ru/online2/rbctv_576p/index.m3u8
-#EXTINF:-1 tvg-id="RBK.ru" tvg-name="РБК" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/D5M4Gjr.png" group-title="",РБК
-http://e3.online.video.rbc.ru/online2/rbctv_576p/index.m3u8
 #EXTINF:-1 tvg-id="RBK.ru" tvg-name="РБК" tvg-country="RU" tvg-language="Russian" tvg-logo="http://145.239.78.42/logos/rbk.png" group-title="Business",РБК
-http://e6.online.video.rbc.ru/online2/rbctv_480p/index.m3u8
-#EXTINF:-1 tvg-id="RBK.ru" tvg-name="РБК" tvg-country="RU" tvg-language="Russian" tvg-logo="http://www.livenewsbox.com/wp-content/uploads/2015/05/RBC-TV1.jpg" group-title="Business",РБК
-http://online-video.rbc.ru/online/rbctv_480p/index.m3u8
-#EXTINF:-1 tvg-id="RBK.ru" tvg-name="РБК" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",РБК
-http://online.video.rbc.ru/online/rbctv_224p/index.m3u8
-#EXTINF:-1 tvg-id="RBK.ru" tvg-name="РБК" tvg-country="RU" tvg-language="Russian" tvg-logo="http://www.tv-logo.com/pt-data/uploads/images/logo/rbk_tv_ru.jpg" group-title="Business",РБК
-http://online.video.rbc.ru/online/rbctv_576p/index.m3u8
+https://online-video.rbc.ru/online/rbctv.m3u8
 #EXTINF:-1 tvg-id="RBK.ru" tvg-name="РБК" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/AGj8EJF.png" group-title="",РБК (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s36/index.m3u8
@@ -812,9 +764,9 @@ http://cdnmg.secure.live.rtr-vesti.ru/vgtrkrtmp/smil:kaluga_r1.smil/playlist.m3u
 #EXTINF:-1 tvg-id="Rossiya1MariyEl.ru" tvg-name="Россия 1 (Марий Эл)" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Россия 1 (Марий Эл) (720p)
 http://gtrkmariel-live.cdnvideo.ru/gtrkmariel/gtrkmariel/playlist.m3u8
 #EXTINF:-1 tvg-id="Rossiya1Plus6.ru" tvg-name="Россия 1 +6" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="General",Россия 1 +6
-http://tv-online.gtrkchita.ru:8080/hls/r1-chita_180p.m3u8
+https://gtrkchita.ru:8081/hls/r1-chita_180p.m3u8
 #EXTINF:-1 tvg-id="Rossiya1Plus6.ru" tvg-name="Россия 1 +6" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="General",Россия 1 +6
-http://tv-online.gtrkchita.ru:8080/hls/r1-chita_360p.m3u8
+https://gtrkchita.ru:8081/hls/r1-chita_360p.m3u8
 #EXTINF:-1 tvg-id="Rossiya1HD.ru" tvg-name="Россия 1 HD" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="General",Россия 1 HD (720p)
 http://cdnmg.secure.live.rtr-vesti.ru/hls/russia_hd/playlist.m3u8
 #EXTINF:-1 tvg-id="Rossiya1HD.ru" tvg-name="Россия 1 HD" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="General",Россия 1 HD
