@@ -46,10 +46,6 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: bot/auto-update
-      - name: Fetch Origin
-        run: git fetch origin
-      - name: Update from master
-        run: git merge --allow-unrelated-histories origin/master
       - name: Generate Token
         uses: tibdex/github-app-token@v1
         id: generate-token
@@ -58,15 +54,13 @@ jobs:
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Create Pull Request
         id: pr
-        uses: peter-evans/create-pull-request@v3
+        uses: tretuna/sync-branches@1.2.0
         with:
-          title: '[Bot] Update playlists'
-          body: |
+          FROM_BRANCH: 'bot/auto-update'
+          TO_BRANCH: 'master'
+          PULL_REQUEST_TITLE: '[Bot] Update playlists'
+          PULL_REQUEST_BODY: |
             This pull request is created by [auto-update][1] workflow.
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-          author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: 'bot/auto-update'
-          delete-branch: false
-          base: master
-          token: ${{ steps.generate-token.outputs.token }}
+          GITHUB_TOKEN: ${{ steps.generate-token.outputs.token }}
