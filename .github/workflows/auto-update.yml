@@ -409,14 +409,3 @@ jobs:
         with:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pr.outputs.pull-request-number }}
-  delete-branch:
-    runs-on: ubuntu-latest
-    needs: pull-request
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Delete Branch
-        uses: dawidd6/action-delete-branch@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branches: 'bot/auto-update'
