@@ -10,9 +10,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
-      - name: Push Branch
-        run: git push -u origin bot/auto-update
+          ref: patch-2
+      - name: Create Branch
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'bot/auto-update'
   format:
     runs-on: ubuntu-latest
     needs: create-branch
