@@ -375,6 +375,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: master
       - name: Generate Token
         uses: tibdex/github-app-token@v1
         id: generate-token
