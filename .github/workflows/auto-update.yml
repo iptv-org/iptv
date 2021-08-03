@@ -389,15 +389,14 @@ jobs:
         with:
           title: '[Bot] Update playlists'
           body: |
-            This pull request is created automatically by `auto-update` action.
+            This pull request is created by [auto-update][1] workflow.
 
-            https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
+            [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
           author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: bot/auto-pull-request
           delete-branch: true
           token: ${{ steps.generate-token.outputs.token }}
       - name: Enable Pull Request Automerge
-        if: steps.generate-token.outputs.pull-request-operation == 'created'
+        if: steps.pr.outputs.pull-request-operation == 'created'
         uses: peter-evans/enable-pull-request-automerge@v1
         with:
           token: ${{ secrets.PAT }}
