@@ -1,52 +1,42 @@
-const parser = require('./parser')
-const utils = require('./utils')
+const parser = require('./helpers/parser')
+const utils = require('./helpers/utils')
+const log = require('./helpers/log')
 
 let globalBuffer = []
 
 async function main() {
-  const playlists = parseIndex()
+  log.start()
 
+  log.print(`Parsing 'index.m3u'...`)
+  const playlists = parser.parseIndex().filter(i => i.url !== 'channels/unsorted.m3u')
   for (const playlist of playlists) {
-    await loadPlaylist(playlist.url)
+    log.print(`\nProcessing '${playlist.url}'...`)
+    await parser
+      .parsePlaylist(playlist.url)
       .then(addToBuffer)
       .then(removeDuplicates)
-      .then(savePlaylist)
-      .then(done)
+      .then(p => p.save())
   }
 
   if (playlists.length) {
-    await loadPlaylist('channels/unsorted.m3u')
+    log.print(`\nProcessing 'channels/unsorted.m3u'...`)
+    await parser
+      .parsePlaylist('channels/unsorted.m3u')
       .then(removeUnsortedDuplicates)
-      .then(savePlaylist)
-      .then(done)
+      .then(p => p.save())
   }
 
-  finish()
-}
-
-function parseIndex() {
-  console.info(`Parsing 'index.m3u'...`)
-  let playlists = parser.parseIndex()
-  playlists = playlists.filter(i => i.url !== 'channels/unsorted.m3u')
-  console.info(`Found ${playlists.length} playlist(s)\n`)
-
-  return playlists
-}
-
-async function loadPlaylist(url) {
-  console.info(`Processing '${url}'...`)
-  return parser.parsePlaylist(url)
+  log.print('\n')
+  log.finish()
 }
 
 async function addToBuffer(playlist) {
-  if (playlist.url === 'channels/unsorted.m3u') return playlist
   globalBuffer = globalBuffer.concat(playlist.channels)
 
   return playlist
 }
 
 async function removeDuplicates(playlist) {
-  console.info(`  Looking for duplicates...`)
   let buffer = {}
   const channels = playlist.channels.filter(i => {
     const url = utils.removeProtocol(i.url)
@@ -58,13 +48,16 @@ async function removeDuplicates(playlist) {
     return result
   })
 
-  playlist.channels = channels
+  if (playlist.channels.length !== channels.length) {
+    log.print('updated')
+    playlist.channels = channels
+    playlist.updated = true
+  }
 
   return playlist
 }
 
 async function removeUnsortedDuplicates(playlist) {
-  console.info(`  Looking for duplicates...`)
   // locally
   let buffer = {}
   let channels = playlist.channels.filter(i => {
@@ -74,37 +67,18 @@ async function removeUnsortedDuplicates(playlist) {
 
     return result
   })
+
   // globally
   const urls = globalBuffer.map(i => utils.removeProtocol(i.url))
   channels = channels.filter(i => !urls.includes(utils.removeProtocol(i.url)))
-  if (channels.length === playlist.channels.length) return playlist
 
-  playlist.channels = channels
-
-  return playlist
-}
-
-async function savePlaylist(playlist) {
-  const original = utils.readFile(playlist.url)
-  const output = playlist.toString({ raw: true })
-
-  if (original === output) {
-    console.info(`No changes have been made.`)
-    return false
-  } else {
-    utils.createFile(playlist.url, output)
-    console.info(`Playlist has been updated.`)
+  if (channels.length !== playlist.channels.length) {
+    log.print('updated')
+    playlist.channels = channels
+    playlist.updated = true
   }
 
-  return true
-}
-
-async function done() {
-  console.info(` `)
-}
-
-function finish() {
-  console.info('Done.')
+  return playlist
 }
 
 main()
