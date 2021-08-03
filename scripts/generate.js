@@ -8,15 +8,15 @@ async function main() {
   await loadDatabase()
   createRootDirectory()
   createNoJekyllFile()
-  // generateIndex()
-  // generateCategoryIndex()
+  generateIndex()
+  generateCategoryIndex()
   generateCountryIndex()
   generateLanguageIndex()
-  // generateCategories()
-  // generateCountries()
-  // generateLanguages()
-  // generateChannelsJson()
-  // showResults()
+  generateCategories()
+  generateCountries()
+  generateLanguages()
+  generateChannelsJson()
+  showResults()
 }
 
 async function loadDatabase() {
