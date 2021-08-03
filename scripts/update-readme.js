@@ -1,20 +1,25 @@
-const utils = require('./utils')
-const db = require('./db')
-const parser = require('./parser')
+const utils = require('./helpers/utils')
+const file = require('./helpers/file')
+const log = require('./helpers/log')
+const db = require('./helpers/db')
 
-db.load()
-
-function main() {
-  start()
+async function main() {
+  log.start()
+  await loadDatabase()
   generateCategoriesTable()
   generateCountriesTable()
   generateLanguagesTable()
   generateReadme()
-  finish()
+  log.finish()
+}
+
+async function loadDatabase() {
+  log.print('Loading database...\n')
+  await db.load()
 }
 
 function generateCategoriesTable() {
-  console.log(`Generating categories table...`)
+  log.print('Generating categories table...\n')
 
   const categories = []
   for (const category of [...db.categories.all(), { name: 'Other', id: 'other' }]) {
@@ -25,7 +30,7 @@ function generateCategoriesTable() {
     })
   }
 
-  const table = utils.generateTable(categories, {
+  const table = generateTable(categories, {
     columns: [
       { name: 'Category', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -33,11 +38,11 @@ function generateCategoriesTable() {
     ]
   })
 
-  utils.createFile('./.readme/_categories.md', table)
+  file.create('./.readme/_categories.md', table)
 }
 
 function generateCountriesTable() {
-  console.log(`Generating countries table...`)
+  log.print('Generating countries table...\n')
 
   const countries = []
   for (const country of [
@@ -53,7 +58,7 @@ function generateCountriesTable() {
     })
   }
 
-  const table = utils.generateTable(countries, {
+  const table = generateTable(countries, {
     columns: [
       { name: 'Country', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -61,11 +66,11 @@ function generateCountriesTable() {
     ]
   })
 
-  utils.createFile('./.readme/_countries.md', table)
+  file.create('./.readme/_countries.md', table)
 }
 
 function generateLanguagesTable() {
-  console.log(`Generating languages table...`)
+  log.print('Generating languages table...\n')
   const languages = []
 
   for (const language of [
@@ -79,7 +84,7 @@ function generateLanguagesTable() {
     })
   }
 
-  const table = utils.generateTable(languages, {
+  const table = generateTable(languages, {
     columns: [
       { name: 'Language', align: 'left' },
       { name: 'Channels', align: 'right' },
@@ -87,20 +92,41 @@ function generateLanguagesTable() {
     ]
   })
 
-  utils.createFile('./.readme/_languages.md', table)
+  file.create('./.readme/_languages.md', table)
+}
+
+function generateTable(data, options) {
+  let output = '<table>\n'
+
+  output += '\t<thead>\n\t\t<tr>'
+  for (let column of options.columns) {
+    output += `<th align="${column.align}">${column.name}</th>`
+  }
+  output += '</tr>\n\t</thead>\n'
+
+  output += '\t<tbody>\n'
+  for (let item of data) {
+    output += '\t\t<tr>'
+    let i = 0
+    for (let prop in item) {
+      const column = options.columns[i]
+      let nowrap = column.nowrap
+      let align = column.align
+      output += `<td align="${align}"${nowrap ? ' nowrap' : ''}>${item[prop]}</td>`
+      i++
+    }
+    output += '</tr>\n'
+  }
+  output += '\t</tbody>\n'
+
+  output += '</table>'
+
+  return output
 }
 
 function generateReadme() {
-  console.log(`Generating README.md...`)
-  utils.compileMarkdown('../.readme/config.json')
-}
-
-function start() {
-  console.log(`Starting...`)
-}
-
-function finish() {
-  console.log(`Done.`)
+  log.print('Generating README.md...\n')
+  file.compileMarkdown('.readme/config.json')
 }
 
 main()
