@@ -343,7 +343,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: .gh-pages
+          folder: gh-pages
           token: ${{ steps.generate-token.outputs.token }}
           git-config-name: iptv-bot
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
@@ -392,7 +392,7 @@ jobs:
             This pull request is created automatically by `auto-update` action.
 
             https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-          committer: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
           branch: bot/auto-pull-request
           delete-branch: true
           token: ${{ steps.pr-token.outputs.token }}
