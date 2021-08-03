@@ -408,3 +408,8 @@ jobs:
         with:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pr.outputs.pull-request-number }}
+      - name: Delete Branch
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branches: 'bot/auto-update'
