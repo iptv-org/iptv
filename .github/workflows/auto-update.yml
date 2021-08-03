@@ -376,8 +376,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master
-          fetch-depth: 0
+          ref: bot/auto-update
       - name: Generate Token
         uses: tibdex/github-app-token@v1
         id: generate-token
@@ -394,8 +393,8 @@ jobs:
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
           author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: bot/auto-update
-          delete-branch: false
+          delete-branch: true
+          base: origin/master
           token: ${{ steps.generate-token.outputs.token }}
       - name: Enable Pull Request Automerge
         if: steps.pr.outputs.pull-request-operation == 'created'
