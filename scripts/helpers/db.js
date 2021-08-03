@@ -2,14 +2,12 @@ const categories = require('./categories')
 const parser = require('./parser')
 const utils = require('./utils')
 
-const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
-
 const db = {}
 
-db.load = function () {
+db.load = async function () {
   const items = parser.parseIndex()
   for (const item of items) {
-    const playlist = parser.parsePlaylist(item.url)
+    const playlist = await parser.parsePlaylist(item.url)
     db.playlists.add(playlist)
     for (const channel of playlist.channels) {
       db.channels.add(channel)
@@ -106,9 +104,6 @@ db.channels = {
   },
   all() {
     return this.list
-  },
-  sfw() {
-    return this.list.filter(i => sfwCategories.includes(i.category))
   },
   forCountry(country) {
     this.filter = {
