@@ -393,7 +393,8 @@ jobs:
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
           author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          delete-branch: true
+          branch: 'bot/auto-update'
+          delete-branch: false
           base: master
           token: ${{ steps.generate-token.outputs.token }}
       - name: Enable Pull Request Automerge
