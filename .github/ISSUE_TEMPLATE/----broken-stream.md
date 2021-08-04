@@ -1,7 +1,7 @@
 ---
 name: '🛠 Broken Stream'
 about: Report a broken stream
-title: 'Fix: xxx'
+title: ''
 labels: broken stream
 assignees: ''
 ---
