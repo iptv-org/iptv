@@ -207,8 +207,6 @@ jobs:
           ref: bot/remove-broken-links
       - name: Download Artifacts
         uses: actions/download-artifact@v2
-        with:
-          name: channels
       - name: Commit Changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
