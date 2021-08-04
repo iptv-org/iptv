@@ -1,10 +1,9 @@
 ---
 name: "\U0001F4FA Channel Request"
 about: Request to add a channel to the playlist
-title: 'Add: xxx'
+title: ''
 labels: channel request
 assignees: ''
-
 ---
 
 <!-- Please fill out the issue template as much as you can so we could efficiently process your request -->
