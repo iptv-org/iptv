@@ -336,6 +336,7 @@ jobs:
         uses: actions/download-artifact@v2
         with:
           name: gh-pages
+          path: .gh-pages
       - name: Generate Token
         uses: tibdex/github-app-token@v1
         id: generate-token
@@ -346,7 +347,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
-          folder: gh-pages
+          folder: .gh-pages
           token: ${{ steps.generate-token.outputs.token }}
           git-config-name: iptv-bot
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
