@@ -4,6 +4,19 @@ on:
   schedule:
     - cron: '0 6 * * 0'
 jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Create Branch
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'bot/remove-broken-links'
   test:
     runs-on: ubuntu-latest
     continue-on-error: true
@@ -15,8 +28,10 @@ jobs:
             ad,
             ae,
             af,
+            ag,
             al,
             am,
+            an,
             ao,
             ar,
             at,
@@ -62,6 +77,7 @@ jobs:
             fj,
             fo,
             fr,
+            pf,
             ge,
             gh,
             gm,
@@ -111,11 +127,13 @@ jobs:
             mn,
             mo,
             mt,
+            mv,
             mx,
             my,
             mz,
             ne,
             ng,
+            ni,
             nl,
             no,
             np,
@@ -173,6 +191,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: bot/remove-broken-links
       - name: Install Dependencies
         run: npm install
       - name: Remove Broken Links
@@ -182,14 +202,33 @@ jobs:
         with:
           name: channels
           path: channels/${{ matrix.country }}.m3u
-  pull-request:
-    needs: test
+  commit-changes:
     runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          ref: bot/remove-broken-links
       - name: Download Artifacts
         uses: actions/download-artifact@v2
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '[Bot] Update playlists'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          branch: bot/remove-broken-links
+          file_pattern: channels/*
+  pull-request:
+    runs-on: ubuntu-latest
+    needs: commit-changes
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/remove-broken-links
       - name: Generate Token
         uses: tibdex/github-app-token@v1
         id: generate-token
@@ -197,18 +236,18 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v3
+        uses: repo-sync/pull-request@v2
         with:
-          title: '[Bot] Remove broken links'
-          body: |
-            This pull request is created automatically by `clean` action. 
+          source_branch: 'bot/remove-broken-links'
+          destination_branch: 'master'
+          pr_title: '[Bot] Remove broken links'
+          pr_body: |
+            This pull request is created by [clean][1] workflow. 
 
             The script checks each link and removes only those that return a HTTP 404 code (Not Found). Also, the script ignores links with labels `[Geo-blocked]` and `[Not 24/7]` in the title.
 
             **IMPORTANT:** Before merging all links should be checked manually to make sure that the response from the server has not changed. Working links should be marked as `[Not 24/7]` so that next time the script will not delete them.
-          commit-message: '[Bot] Update playlists'
-          committer: GitHub <noreply@github.com>
-          branch: bot/remove-broken-links
-          delete-branch: true
-          draft: true
-          token: ${{ steps.generate-token.outputs.token }}
+
+            [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
+          pr_draft: true
+          github_token: ${{ steps.generate-token.outputs.token }}
