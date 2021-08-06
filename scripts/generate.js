@@ -42,7 +42,7 @@ function generateIndex() {
   const nsfwFilename = `${ROOT_DIR}/index.nsfw.m3u`
   file.create(nsfwFilename, '#EXTM3U\n')
 
-  const channels = db.channels.sortBy(['name', 'url']).removeDuplicates().get()
+  const channels = db.channels.sortBy(['name', 'url']).removeDuplicates().removeOffline().get()
   for (const channel of channels) {
     if (!channel.isNSFW()) {
       file.append(filename, channel.toString())
@@ -56,7 +56,11 @@ function generateCategoryIndex() {
   const filename = `${ROOT_DIR}/index.category.m3u`
   file.create(filename, '#EXTM3U\n')
 
-  const channels = db.channels.sortBy(['category', 'name', 'url']).removeDuplicates().get()
+  const channels = db.channels
+    .sortBy(['category', 'name', 'url'])
+    .removeDuplicates()
+    .removeOffline()
+    .get()
   for (const channel of channels) {
     file.append(filename, channel.toString())
   }
@@ -72,6 +76,7 @@ function generateCountryIndex() {
       .sortBy(['name', 'url'])
       .forCountry(country)
       .removeDuplicates()
+      .removeOffline()
       .get()
     for (const channel of channels) {
       const groupTitle = channel.group.title
@@ -95,6 +100,7 @@ function generateLanguageIndex() {
       .sortBy(['name', 'url'])
       .forLanguage(language)
       .removeDuplicates()
+      .removeOffline()
       .get()
     for (const channel of channels) {
       const groupTitle = channel.group.title
@@ -121,6 +127,7 @@ function generateCategories() {
       .sortBy(['name', 'url'])
       .forCategory(category)
       .removeDuplicates()
+      .removeOffline()
       .get()
     for (const channel of channels) {
       file.append(filename, channel.toString())
@@ -141,6 +148,7 @@ function generateCountries() {
       .sortBy(['name', 'url'])
       .forCountry(country)
       .removeDuplicates()
+      .removeOffline()
       .get()
     for (const channel of channels) {
       if (!channel.isNSFW()) {
@@ -163,6 +171,7 @@ function generateLanguages() {
       .sortBy(['name', 'url'])
       .forLanguage(language)
       .removeDuplicates()
+      .removeOffline()
       .get()
     for (const channel of channels) {
       if (!channel.isNSFW()) {
