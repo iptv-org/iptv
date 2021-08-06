@@ -31,6 +31,7 @@ db.channels = {
   list: [],
   filter: null,
   duplicates: true,
+  offline: true,
   nsfw: true,
   add(channel) {
     this.list.push(channel)
@@ -86,8 +87,13 @@ db.channels = {
       output = output.filter(channel => !channel.isNSFW())
     }
 
+    if (!this.offline) {
+      output = output.filter(channel => channel.status !== 'Offline')
+    }
+
     this.nsfw = true
     this.duplicates = true
+    this.offline = true
     this.filter = null
 
     return output
@@ -99,6 +105,11 @@ db.channels = {
   },
   removeNSFW() {
     this.nsfw = false
+
+    return this
+  },
+  removeOffline() {
+    this.offline = false
 
     return this
   },
