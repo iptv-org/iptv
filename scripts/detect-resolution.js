@@ -15,6 +15,7 @@ program
   .parse(process.argv)
 
 const config = program.opts()
+const ignoreStatus = ['Offline']
 const instance = axios.create({
   timeout: config.timeout,
   maxContentLength: 200000,
@@ -50,7 +51,10 @@ async function detectResolution(playlist) {
   let updated = false
   for (const channel of playlist.channels) {
     bar.tick()
-    if (!channel.resolution.height) {
+    const skipChannel =
+      channel.status &&
+      ignoreStatus.map(i => i.toLowerCase()).includes(channel.status.toLowerCase())
+    if (!channel.resolution.height && !skipChannel) {
       const CancelToken = axios.CancelToken
       const source = CancelToken.source()
       const timeout = setTimeout(() => {
