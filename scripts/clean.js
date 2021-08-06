@@ -17,7 +17,7 @@ program
 
 const config = program.opts()
 const offlineStatusCodes = [404, 410, 451, 500, 501]
-const ignore = ['Geo-blocked', 'Not 24/7']
+const ignoreStatus = ['Geo-blocked', 'Not 24/7', 'Offline']
 const instance = axios.create({
   timeout: config.timeout,
   maxContentLength: 200000,
@@ -56,9 +56,12 @@ async function checkStatus(playlist) {
   for (const [index, channel] of playlist.channels.entries()) {
     const current = index + 1
     const counter = chalk.gray(`[${current}/${total}]`)
+    const skipChannel =
+      channel.status &&
+      ignoreStatus.map(i => i.toLowerCase()).includes(channel.status.toLowerCase())
     bar.tick()
     if (
-      (channel.status && ignore.map(i => i.toLowerCase()).includes(channel.status.toLowerCase())) ||
+      skipChannel ||
       (!channel.url.startsWith('http://') && !channel.url.startsWith('https://'))
     ) {
       channels.push(channel)
