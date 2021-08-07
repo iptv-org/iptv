@@ -2,14 +2,12 @@ const categories = require('./categories')
 const parser = require('./parser')
 const utils = require('./utils')
 
-const sfwCategories = categories.filter(c => !c.nsfw).map(c => c.name)
-
 const db = {}
 
-db.load = function () {
+db.load = async function () {
   const items = parser.parseIndex()
   for (const item of items) {
-    const playlist = parser.parsePlaylist(item.url)
+    const playlist = await parser.parsePlaylist(item.url)
     db.playlists.add(playlist)
     for (const channel of playlist.channels) {
       db.channels.add(channel)
@@ -33,6 +31,7 @@ db.channels = {
   list: [],
   filter: null,
   duplicates: true,
+  offline: true,
   nsfw: true,
   add(channel) {
     this.list.push(channel)
@@ -88,8 +87,13 @@ db.channels = {
       output = output.filter(channel => !channel.isNSFW())
     }
 
+    if (!this.offline) {
+      output = output.filter(channel => channel.status !== 'Offline')
+    }
+
     this.nsfw = true
     this.duplicates = true
+    this.offline = true
     this.filter = null
 
     return output
@@ -104,11 +108,13 @@ db.channels = {
 
     return this
   },
+  removeOffline() {
+    this.offline = false
+
+    return this
+  },
   all() {
     return this.list
-  },
-  sfw() {
-    return this.list.filter(i => sfwCategories.includes(i.category))
   },
   forCountry(country) {
     this.filter = {

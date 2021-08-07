@@ -28,6 +28,8 @@ https://livevideo.infomaniak.com/streaming/livecast/latele/playlist.m3u8
 #EXTINF:-1 tvg-id="LFMCH.ch" tvg-name="LFM (CH)" tvg-country="CH" tvg-language="" tvg-logo="https://i.imgur.com/UE1E3uH.png" group-title="Music",LFM (CH)
 https://edge7.vedge.infomaniak.com/livecast/ik:lfmmd/chunklist_w1230106190_b3000000.m3u8?spark=625bf5d7-210c-49c0-96af-3663c8de1d1d&token=
 #EXTINF:-1 tvg-id="LFMTV.ch" tvg-name="LFM TV" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",LFM TV (1080p)
+http://lfmmd.vedge.infomaniak.com/livecast/smil:lfmmd.smil/manifest.m3u8
+#EXTINF:-1 tvg-id="LFMTV.ch" tvg-name="LFM TV" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",LFM TV (1080p)
 https://edge3.vedge.infomaniak.com/livecast/ik:lfmmd/chunklist.m3u8
 #EXTINF:-1 tvg-id="CHLFMTV.ch" tvg-name="LFM TV" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",LFM TV
 https://edge3.vedge.infomaniak.com/livecast/ik:lfmmd/chunklist_w1211388897_b3000000.m3u8
@@ -37,11 +39,9 @@ https://edge3.vedge.infomaniak.com/livecast/ik:lfmmd/playlist.m3u8
 https://edge4.vedge.infomaniak.com/livecast/ik:lfmmd/manifest.m3u8?spark=cf45faac-ae15-4c71-92c5-6c3527ed8e0f&token=
 #EXTINF:-1 tvg-id="LFMTV.ch" tvg-name="LFM TV" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",LFM TV (1080p)
 https://lfmhd.vedge.infomaniak.com/livecast/lfmhd/playlist.m3u8
-#EXTINF:-1 tvg-id="LFMTVHD.ch" tvg-name="LFM TV HD" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",LFM TV HD (1080p)
-http://lfmmd.vedge.infomaniak.com/livecast/smil:lfmmd.smil/manifest.m3u8
 #EXTINF:-1 tvg-id="Meteonews.ch" tvg-name="Meteonews" tvg-country="CH" tvg-language="" tvg-logo="https://i.imgur.com/YtYhbJD.png" group-title="News",Meteonews
 https://streaming.meteonews.net/hls/stream.m3u8
-#EXTINF:-1 tvg-id="ONEFMTV.ch" tvg-name="ONE FM TV" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",ONE FM TV
+#EXTINF:-1 tvg-id="ONEFMTV.ch" tvg-name="ONE FM TV" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",ONE FM TV (720p)
 https://edge4.vedge.infomaniak.com/livecast/smil:onefmmd.smil/manifest.m3u8
 #EXTINF:-1 tvg-id="OneTV.ch" tvg-name="One TV" tvg-country="CH" tvg-language="French" tvg-logo="https://i.imgur.com/YEQ957V.png" group-title="",One TV (720p)
 https://edge9.vedge.infomaniak.com/livecast/ik:onefmmd/chunklist.m3u8
@@ -56,10 +56,6 @@ https://livevideo.infomaniak.com/streaming/livecast/rp_tv_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RougeTV.ch" tvg-name="Rouge TV" tvg-country="CH" tvg-language="French" tvg-logo="https://od.lk/s/MF8yMjYwNDgzMzhf/RougeTV_225x225.png" group-title="XXX",Rouge TV (720p)
 http://event.vedge.infomaniak.com/livecast/event.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RougeTV.ch" tvg-name="Rouge TV" tvg-country="CH" tvg-language="French" tvg-logo="https://od.lk/s/MF8yMjYwNDgzMzhf/RougeTV_225x225.png" group-title="XXX",Rouge TV (720p)
-https://edge7.vedge.infomaniak.com/livecast/rougetv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="RougeTV.ch" tvg-name="Rouge TV" tvg-country="CH" tvg-language="French" tvg-logo="https://od.lk/s/MF8yMjYwNDgzMzhf/RougeTV_225x225.png" group-title="XXX",Rouge TV (720p)
-https://livevideo.infomaniak.com/streaming/livecast/rougetv/playlist.m3u8
-#EXTINF:-1 tvg-id="RougeTV.ch" tvg-name="Rouge TV" tvg-country="CH" tvg-language="French" tvg-logo="https://od.lk/s/MF8yMjYwNDgzMzhf/RougeTV_225x225.png" group-title="XXX",Rouge TV (720p)
 https://rougetv.vedge.infomaniak.com/livecast/rougetv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RougeTV.ch" tvg-name="Rouge TV" tvg-country="CH" tvg-language="French" tvg-logo="https://od.lk/s/MF8yMjYwNDgzMzhf/RougeTV_225x225.png" group-title="XXX",Rouge TV (720p)
 https://rougetv.vedge.infomaniak.com/livecast/rougetv/playlist.m3u8
@@ -69,15 +65,15 @@ http://source2.primetime.ch:2981/play/royaltv/index.m3u8
 https://stream.schweiz5.ch/schweiz52020/stream.m3u8
 #EXTINF:-1 tvg-id="SofyTV.ch" tvg-name="Sofy TV" tvg-country="DE" tvg-language="German" tvg-logo="https://i.imgur.com/Srxa6cR.png" group-title="",Sofy TV (720p)
 https://sofy-ger-samsung.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="SofyTV.ch" tvg-name="Sofy TV" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",Sofy TV
+#EXTINF:-1 tvg-id="SofyTV.ch" tvg-name="Sofy TV" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",Sofy TV (1080p)
 https://sofytv-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SofyTV.ch" tvg-name="Sofy TV" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/Srxa6cR.png" group-title="",Sofy TV (720p)
 https://sofytv-samsungfr.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SofyTV.ch" tvg-name="Sofy TV" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/Srxa6cR.png" group-title="",Sofy TV (720p)
 https://sofytv-samsunguk.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="SofyTVItaly.ch" tvg-name="Sofy TV (Italy)" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",Sofy TV (Italy)
+#EXTINF:-1 tvg-id="SofyTVItaly.ch" tvg-name="Sofy TV (Italy)" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",Sofy TV (Italy) (720p)
 https://sofytv-samsungit.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="SofyTVSpain.ch" tvg-name="Sofy TV (Spain)" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",Sofy TV (Spain)
+#EXTINF:-1 tvg-id="SofyTVSpain.ch" tvg-name="Sofy TV (Spain)" tvg-country="CH" tvg-language="" tvg-logo="" group-title="",Sofy TV (Spain) (720p)
 https://sofytv-samsunges.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SwissSportTV.ch" tvg-name="Swiss Sport TV" tvg-country="CH" tvg-language="English" tvg-logo="https://i.imgur.com/HC0j4cC.jpg" group-title="Sports",Swiss Sport TV (720p)
 https://av02.upstream-cloud.ch/sstvlinear/ngrp:sstvlinear_all/playlist.m3u8
