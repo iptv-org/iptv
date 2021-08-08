@@ -25,7 +25,6 @@ async function main() {
 
   if (config.debug) log.print(`Debug mode enabled\n`)
 
-  log.print(`Parsing 'index.m3u'...`)
   let playlists = parser.parseIndex()
   playlists = utils.filterPlaylists(playlists, config.country, config.exclude)
   for (const playlist of playlists) {
@@ -39,9 +38,11 @@ async function main() {
 }
 
 async function checkPlaylist(playlist) {
-  bar = new ProgressBar(`Checking '${playlist.url}': [:bar] :current/:total (:percent) `, {
-    total: playlist.channels.length
-  })
+  if (!config.debug) {
+    bar = new ProgressBar(`Checking '${playlist.url}': [:bar] :current/:total (:percent) `, {
+      total: playlist.channels.length
+    })
+  }
   const channels = []
   const total = playlist.channels.length
   for (const [index, channel] of playlist.channels.entries()) {
@@ -59,10 +60,10 @@ async function checkPlaylist(playlist) {
       ) {
         channels.push(channel)
       } else {
-        if (config.debug) bar.interrupt(`ERR: ${channel.url}: ${result.status.reason}`)
+        if (config.debug) log.print(`ERR: ${channel.url}: ${result.status.reason}\n`)
       }
     }
-    bar.tick()
+    if (!config.debug) bar.tick()
   }
 
   if (playlist.channels.length !== channels.length) {
