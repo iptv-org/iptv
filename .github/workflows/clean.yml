@@ -224,6 +224,7 @@ jobs:
           branch: bot/remove-broken-links
           file_pattern: channels/*
   pull-request:
+    if: ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     needs: commit-changes
     steps:
