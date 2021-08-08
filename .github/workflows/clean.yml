@@ -19,6 +19,7 @@ jobs:
           branch: 'bot/remove-broken-links'
   test:
     runs-on: ubuntu-latest
+    needs: create-branch
     continue-on-error: true
     strategy:
       fail-fast: false
