@@ -60,7 +60,7 @@ async function checkPlaylist(playlist) {
       ) {
         channels.push(channel)
       } else {
-        if (config.debug) log.print(`ERR: ${channel.url}: ${result.status.reason}\n`)
+        if (config.debug) log.print(`ERR: ${channel.url} (${result.status.reason})\n`)
       }
     }
     if (!config.debug) bar.tick()
