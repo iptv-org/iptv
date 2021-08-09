@@ -56,7 +56,8 @@ async function checkPlaylist(playlist) {
       if (
         result.status.ok ||
         result.status.reason.includes('timed out') ||
-        result.status.reason.includes('access denied')
+        result.status.reason.includes('access denied') ||
+        result.status.reason.includes('not one of 40{0,1,3,4}')
       ) {
         channels.push(channel)
       } else {
