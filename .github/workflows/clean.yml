@@ -248,9 +248,9 @@ jobs:
           pr_body: |
             This pull request is created by [clean][1] workflow. 
 
-            The script checks each link and removes those that do not contain working streams or return any error, except for HTTP error 403 (Forbidden). Also, the script ignores all links with labels `[Geo-blocked]`, `[Offline]` or `[Not 24/7]` in the title.
+            The script checks all links except those with labels `[Geo-blocked]`, `[Offline]` or `[Not 24/7]` in the title.
 
-            **IMPORTANT:** Before merging all links should be checked manually to make sure that the response from the server has not changed. Working links should be marked as `[Not 24/7]` so that next time the script will not delete them.
+            **IMPORTANT:** Before merging all links should be checked manually to make sure that the response from the server has not changed. If the link works for you but occasionally return an HTTP code 403 (Forbidden) then it should be marked as `[Geo-blocked]`. If the link does not work but has no alternative, you can mark it as `[Offline]` to save it in the playlist along with a description. Working links should be marked as `[Not 24/7]` so that the script will skip them next time.
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
           pr_draft: true
