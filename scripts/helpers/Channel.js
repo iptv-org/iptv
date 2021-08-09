@@ -7,6 +7,7 @@ const nsfwCategories = categories.filter(c => c.nsfw).map(c => c.name)
 
 module.exports = class Channel {
   constructor(data) {
+    this.data = data
     this.raw = data.raw
     this.tvg = data.tvg
     this.http = data.http
