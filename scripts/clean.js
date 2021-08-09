@@ -53,11 +53,7 @@ async function checkPlaylist(playlist) {
       channels.push(channel)
     } else {
       const result = await checker.checkStream(channel.data)
-      if (
-        result.status.ok ||
-        result.status.reason.includes('timed out') ||
-        result.status.reason.includes('not one of 40{0,1,3,4}')
-      ) {
+      if (result.status.ok || result.status.reason.includes('timed out')) {
         channels.push(channel)
       } else {
         if (config.debug) log.print(`ERR: ${channel.url} (${result.status.reason})\n`)
