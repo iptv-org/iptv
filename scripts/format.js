@@ -27,8 +27,8 @@ async function main() {
   log.start()
 
   if (config.debug) log.print(`Debug mode enabled\n`)
-  if (config.status) log.print(`Updating channel status...\n`)
-  if (config.resolution) log.print(`Detecting channel resolution...\n`)
+  if (config.status) log.print(`Status check enabled\n`)
+  if (config.resolution) log.print(`Resolution detection enabled\n`)
 
   let playlists = parser.parseIndex().filter(i => i.url !== 'channels/unsorted.m3u')
   playlists = utils.filterPlaylists(playlists, config.country, config.exclude)
@@ -69,9 +69,19 @@ async function updatePlaylist(playlist) {
       await checker
         .checkStream(channel.data)
         .then(result => {
-          if (config.status) updateStatus(channel, result.status)
-          if (config.resolution && result.status.ok)
+          const status = parseStatus(result.status)
+
+          if (config.status) {
+            updateStatus(channel, status)
+          }
+
+          if (config.resolution && status === 'online') {
             updateResolution(channel, result.status.metadata)
+          }
+
+          if (config.debug && status === 'offline') {
+            log.print(`  ERR: ${channel.url} (${result.status.reason})\n`)
+          }
         })
         .catch(err => {
           if (config.debug) log.print(`  ERR: ${channel.url} (${err.message})\n`)
@@ -81,6 +91,31 @@ async function updatePlaylist(playlist) {
   }
 
   return playlist
+}
+
+function parseStatus(status) {
+  if (status.ok) {
+    return 'online'
+  } else if (status.reason.includes('timed out')) {
+    return 'timeout'
+  } else if (status.reason.includes('403')) {
+    return 'error_403'
+  } else if (status.reason.includes('not one of 40{0,1,3,4}')) {
+    return 'error_40x' // 402, 451
+  } else {
+    return 'offline'
+  }
+}
+
+function updateStatus(channel, status) {
+  switch (status) {
+    case 'online':
+      channel.status = null
+      break
+    case 'offline':
+      channel.status = 'Offline'
+      break
+  }
 }
 
 function addMissingData(channel) {
@@ -101,21 +136,6 @@ function addMissingData(channel) {
   }
   // update group-title
   channel.group.title = channel.category
-}
-
-function updateStatus(channel, status) {
-  if (status.ok) {
-    channel.status = null
-  } else if (
-    status.reason.includes('timed out') ||
-    status.reason.includes('not one of 40{0,1,3,4}') ||
-    status.reason.includes('403')
-  ) {
-    // nothing
-  } else {
-    channel.status = 'Offline'
-    if (config.debug) log.print(`  ERR: ${channel.url} (${status.reason})\n`)
-  }
 }
 
 function updateResolution(channel, metadata) {
