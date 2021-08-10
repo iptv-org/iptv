@@ -22,11 +22,6 @@ module.exports = class Channel {
     this.languages = this.parseLanguages(data.tvg.language)
   }
 
-  updateUrl(url) {
-    this.url = url
-    this.data.url = url
-  }
-
   parseName(title) {
     return title
       .trim()
