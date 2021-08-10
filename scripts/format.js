@@ -106,7 +106,10 @@ function addMissingData(channel) {
 function updateStatus(channel, status) {
   if (status.ok) {
     channel.status = null
-  } else if (status.reason.includes('timed out')) {
+  } else if (
+    status.reason.includes('timed out') ||
+    status.reason.includes('not one of 40{0,1,3,4}')
+  ) {
     // nothing
   } else {
     channel.status = 'Offline'
