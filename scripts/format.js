@@ -108,7 +108,8 @@ function updateStatus(channel, status) {
     channel.status = null
   } else if (
     status.reason.includes('timed out') ||
-    status.reason.includes('not one of 40{0,1,3,4}')
+    status.reason.includes('not one of 40{0,1,3,4}') ||
+    status.reason.includes('403')
   ) {
     // nothing
   } else {
