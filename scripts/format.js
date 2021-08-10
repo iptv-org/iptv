@@ -54,6 +54,8 @@ async function updatePlaylist(playlist) {
     bar = new ProgressBar(`Processing '${playlist.url}': [:bar] :current/:total (:percent) `, {
       total: playlist.channels.length
     })
+  } else {
+    log.print(`Processing '${playlist.url}'...\n`)
   }
 
   for (const channel of playlist.channels) {
@@ -70,12 +72,12 @@ async function updatePlaylist(playlist) {
             if (config.status) updateStatus(channel, null)
             if (config.resolution) updateResolution(channel, result.status.metadata)
           } else {
-            if (config.debug) log.print(`ERR: ${channel.url} (${result.status.reason})\n`)
+            if (config.debug) log.print(`  ${channel.url} (${result.status.reason})\n`)
             if (config.status) updateStatus(channel, 'Offline')
           }
         })
         .catch(err => {
-          if (config.debug) log.print(`ERR: ${channel.url} (${err.message})\n`)
+          if (config.debug) log.print(`  ${channel.url} (${err.message})\n`)
         })
     }
     if (!config.debug) bar.tick()
