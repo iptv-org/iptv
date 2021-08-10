@@ -68,13 +68,9 @@ async function updatePlaylist(playlist) {
       await checker
         .checkStream(channel.data)
         .then(result => {
-          if (result.status.ok || result.status.reason.includes('timed out')) {
-            if (config.status) updateStatus(channel, null)
-            if (config.resolution) updateResolution(channel, result.status.metadata)
-          } else {
-            if (config.debug) log.print(`  ERR: ${channel.url} (${result.status.reason})\n`)
-            if (config.status) updateStatus(channel, 'Offline')
-          }
+          if (config.status) updateStatus(channel, result.status)
+          if (config.resolution && result.status.ok)
+            updateResolution(channel, result.status.metadata)
         })
         .catch(err => {
           if (config.debug) log.print(`  ERR: ${channel.url} (${err.message})\n`)
@@ -107,7 +103,17 @@ function addMissingData(channel) {
 }
 
 function updateStatus(channel, status) {
-  channel.status = status
+  if (status.ok) {
+    channel.status = null
+  } else if (status.reason.includes('timed out')) {
+    // nothing
+  } else if (status.reason.includes('403')) {
+    channel.status = 'Geo-blocked'
+    if (config.debug) log.print(`  ERR: ${channel.url} (${status.reason})\n`)
+  } else {
+    channel.status = 'Offline'
+    if (config.debug) log.print(`  ERR: ${channel.url} (${status.reason})\n`)
+  }
 }
 
 function updateResolution(channel, metadata) {
