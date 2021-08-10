@@ -125,7 +125,7 @@ STREAM_URL
 | `LANGUAGE`          | Channel language. The name of the language must conform to the standard [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500). If the channel is broadcast in several languages you can list them separated by a semicolon. (optional) |
 | `LOGO_URL`          | The logo of the channel that will be displayed if the player supports it. Supports files in png, jpeg and gif format. (optional)                                                                                                                                                                                                                                                              |
 | `CATEGORY`          | The category to which the channel belongs. The list of currently supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category). (optional)                                                                                                                                                                                                                 |
-| `FULL_NAME`         | Full name of the channel. It is recommended to use the name listed on [lyngsat](https://www.lyngsat.com/search.html) or [wikipedia](https://www.wikipedia.org/) if possible. May contain any characters except round and square brackets.                                                                                                                                                     |
+| `FULL_NAME`         | Full name of the channel. It is recommended to use the name listed on [lyngsat](https://www.lyngsat.com/search.html) or [wikipedia](https://www.wikipedia.org/) if possible. May contain any characters except plus sign, minus sign, round and square brackets.                                                                                                                              |
 | `STREAM_TIME_SHIFT` | Must be specified if the channel is broadcast with a shift in time relative to the main stream. Should only contain a number and a sign. (optional)                                                                                                                                                                                                                                           |
 | `ALTERNATIVE_NAME`  | Can be used to specify a short name or name in another language. May contain any characters except round and square brackets. (optional)                                                                                                                                                                                                                                                      |
 | `STREAM_RESOLUTION` | The maximum height of the frame with a "p" at the end. In case of VLC Player this information can be found in `Window > Media Information... > Codec Details`. (optional)                                                                                                                                                                                                                     |
@@ -153,8 +153,7 @@ http://example.com/stream.m3u8
 - `.github/`
   - `ISSUE_TEMPLATE/`: issue templates for this repository.
   - `workflows/`
-    - `auto-update.yml`: GitHub Action that automatically updates all playlists every day.
-    - `check.yml`: GitHub Action that automatically checks every pull request for syntax errors.
+    - `auto-update.yml`: contain actions that automatically updates all playlists every day.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
 - `.readme/`
   - `_categories.md`: automatically generated list of all categories and their corresponding playlists.
@@ -169,6 +168,8 @@ http://example.com/stream.m3u8
   - `unsorted.m3u`: playlist with channels not yet sorted.
 - `scripts/`
   - `helpers/`: helper scripts used in GitHub Actions.
+  - `clean.js`: used in GitHub Action to check all links and remove broken ones.
+  - `detect-resolution.js`: used in GitHub Action to detect resolution of the streams.
   - `filter.js`: used within GitHub Action to remove blacklisted channels from playlists.
   - `format.js`: used within GitHub Action to format channel descriptions.
   - `generate.js`: used within GitHub Action to generate all additional playlists.
