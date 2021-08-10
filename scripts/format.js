@@ -32,6 +32,7 @@ async function main() {
 
   let playlists = parser.parseIndex().filter(i => i.url !== 'channels/unsorted.m3u')
   playlists = utils.filterPlaylists(playlists, config.country, config.exclude)
+  if (!playlists.length) log.print(`No playlist is selected\n`)
   for (const playlist of playlists) {
     await parser
       .parsePlaylist(playlist.url)
