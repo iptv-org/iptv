@@ -107,9 +107,6 @@ function updateStatus(channel, status) {
     channel.status = null
   } else if (status.reason.includes('timed out')) {
     // nothing
-  } else if (status.reason.includes('403')) {
-    channel.status = 'Geo-blocked'
-    if (config.debug) log.print(`  ERR: ${channel.url} (${status.reason})\n`)
   } else {
     channel.status = 'Offline'
     if (config.debug) log.print(`  ERR: ${channel.url} (${status.reason})\n`)
