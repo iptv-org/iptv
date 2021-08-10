@@ -62,10 +62,10 @@ async function updatePlaylist(playlist) {
   for (const channel of playlist.channels) {
     addMissingData(channel)
     const checkOnline = config.status || config.resolution
-    const skip =
+    const skipChannel =
       channel.status &&
       ignoreStatus.map(i => i.toLowerCase()).includes(channel.status.toLowerCase())
-    if (checkOnline && !skip) {
+    if (checkOnline && !skipChannel) {
       await checker
         .checkStream(channel.data)
         .then(result => {
