@@ -1,4 +1,5 @@
 const IPTVChecker = require('iptv-checker')
+const normalize = require('normalize-url')
 const { program } = require('commander')
 const ProgressBar = require('progress')
 const parser = require('./helpers/parser')
@@ -61,6 +62,9 @@ async function updatePlaylist(playlist) {
 
   for (const channel of playlist.channels) {
     addMissingData(channel)
+    updateGroupTitle(channel)
+    normalizeUrl(channel)
+
     const checkOnline = config.status || config.resolution
     const skipChannel =
       channel.status &&
@@ -119,23 +123,30 @@ function updateStatus(channel, status) {
 }
 
 function addMissingData(channel) {
-  // add tvg-name
+  // tvg-name
   if (!channel.tvg.name && channel.name) {
     channel.tvg.name = channel.name.replace(/\"/gi, '')
   }
-  // add tvg-id
+  // tvg-id
   if (!channel.tvg.id && channel.tvg.name) {
     const id = utils.name2id(channel.tvg.name)
     channel.tvg.id = id ? `${id}.${code}` : ''
   }
-  // add country
+  // country
   if (!channel.countries.length) {
     const name = utils.code2name(code)
     channel.countries = name ? [{ code, name }] : []
     channel.tvg.country = channel.countries.map(c => c.code.toUpperCase()).join(';')
   }
-  // update group-title
+}
+
+function updateGroupTitle(channel) {
   channel.group.title = channel.category
+}
+
+function normalizeUrl(channel) {
+  const normalized = normalize(channel.url, { stripWWW: false })
+  channel.updateUrl(normalized)
 }
 
 function updateResolution(channel, metadata) {
