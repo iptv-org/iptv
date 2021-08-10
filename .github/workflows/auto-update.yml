@@ -193,6 +193,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: bot/auto-update
+      - name: Setup FFmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v1
       - name: Install Dependencies
         run: npm install
       - name: Format Playlists
