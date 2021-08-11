@@ -1,4 +1,3 @@
-const escapeStringRegexp = require('escape-string-regexp')
 const transliteration = require('transliteration')
 const iso6393 = require('@freearhey/iso-639-3')
 const categories = require('./categories')
@@ -69,16 +68,6 @@ utils.sortBy = function (arr, fields) {
     }
     return 0
   })
-}
-
-utils.escapeStringRegexp = function (scring) {
-  return escapeStringRegexp(string)
-}
-
-utils.sleep = function (ms) {
-  return function (x) {
-    return new Promise(resolve => setTimeout(() => resolve(x), ms))
-  }
 }
 
 utils.removeProtocol = function (string) {
