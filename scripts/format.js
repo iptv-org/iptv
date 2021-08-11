@@ -146,7 +146,8 @@ function updateGroupTitle(channel) {
 
 function normalizeUrl(channel) {
   const normalized = normalize(channel.url, { stripWWW: false })
-  channel.updateUrl(normalized)
+  const decoded = decodeURIComponent(normalized).replace(/\s/g, '+')
+  channel.updateUrl(decoded)
 }
 
 function updateResolution(channel, metadata) {
