@@ -20,6 +20,11 @@ module.exports = class Channel {
     this.category = this.parseCategory(data.group.title)
     this.countries = this.parseCountries(data.tvg.country)
     this.languages = this.parseLanguages(data.tvg.language)
+    this.hash = this.generateHash()
+  }
+
+  generateHash() {
+    return `${this.tvg.id}:${this.tvg.name}:${this.tvg.country}:${this.tvg.language}:${this.logo}:${this.group.title}:${this.name}`.toLowerCase()
   }
 
   updateUrl(url) {
