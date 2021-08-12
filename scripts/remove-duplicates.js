@@ -13,7 +13,7 @@ async function main() {
     log.print(`\nProcessing '${playlist.url}'...`)
     await parser
       .parsePlaylist(playlist.url)
-      .then(addToBuffer)
+      .then(addToGlobalBuffer)
       .then(removeDuplicates)
       .then(p => p.save())
   }
@@ -22,7 +22,8 @@ async function main() {
     log.print(`\nProcessing 'channels/unsorted.m3u'...`)
     await parser
       .parsePlaylist('channels/unsorted.m3u')
-      .then(removeUnsortedDuplicates)
+      .then(removeDuplicates)
+      .then(removeGlobalDuplicates)
       .then(p => p.save())
   }
 
@@ -30,22 +31,25 @@ async function main() {
   log.finish()
 }
 
-async function addToBuffer(playlist) {
-  globalBuffer = globalBuffer.concat(playlist.channels)
+async function addToGlobalBuffer(playlist) {
+  playlist.channels.forEach(channel => {
+    const url = utils.removeProtocol(channel.url)
+    globalBuffer.push(url)
+  })
 
   return playlist
 }
 
 async function removeDuplicates(playlist) {
-  let buffer = {}
-  const channels = playlist.channels.filter(i => {
-    const url = utils.removeProtocol(i.url)
-    const result = typeof buffer[url] === 'undefined'
-    if (result) {
-      buffer[url] = true
+  const buffer = []
+  const channels = playlist.channels.filter(channel => {
+    const url = utils.removeProtocol(channel.url)
+    if (!buffer.includes(url)) {
+      buffer.push(url)
+      return true
     }
 
-    return result
+    return false
   })
 
   if (playlist.channels.length !== channels.length) {
@@ -57,20 +61,11 @@ async function removeDuplicates(playlist) {
   return playlist
 }
 
-async function removeUnsortedDuplicates(playlist) {
-  // locally
-  let buffer = {}
-  let channels = playlist.channels.filter(i => {
-    const url = utils.removeProtocol(i.url)
-    const result = typeof buffer[url] === 'undefined'
-    if (result) buffer[url] = true
-
-    return result
+async function removeGlobalDuplicates(playlist) {
+  const channels = playlist.channels.filter(channel => {
+    const url = utils.removeProtocol(channel.url)
+    return !globalBuffer.includes(url)
   })
-
-  // globally
-  const urls = globalBuffer.map(i => utils.removeProtocol(i.url))
-  channels = channels.filter(i => !urls.includes(utils.removeProtocol(i.url)))
 
   if (channels.length !== playlist.channels.length) {
     log.print('updated')
