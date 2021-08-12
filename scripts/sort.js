@@ -21,7 +21,7 @@ async function main() {
 
 async function sortChannels(playlist) {
   const channels = [...playlist.channels]
-  utils.sortBy(channels, ['name', 'url'])
+  utils.sortBy(channels, ['name', 'status', 'url'])
 
   if (JSON.stringify(channels) !== JSON.stringify(playlist.channels)) {
     log.print('updated')
