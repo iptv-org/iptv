@@ -43,14 +43,15 @@ async function addToGlobalBuffer(playlist) {
 async function removeDuplicates(playlist) {
   const buffer = []
   const channels = playlist.channels.filter(channel => {
-    const sameUrl = buffer.find(i => i.url === utils.removeProtocol(channel.url))
-    const sameHash = buffer.find(i => i.getHash() === channel.getHash())
-    if (!sameUrl && !(sameHash && channel.status === 'Offline')) {
-      buffer.push(channel)
-      return true
-    }
+    const sameUrl = buffer.find(item => {
+      return utils.removeProtocol(item.url) === utils.removeProtocol(channel.url)
+    })
+    if (sameUrl) return false
+    const sameHash = buffer.find(item => item.hash === channel.hash)
+    if (sameHash && channel.status === 'Offline') return false
 
-    return false
+    buffer.push(channel)
+    return true
   })
 
   if (playlist.channels.length !== channels.length) {
