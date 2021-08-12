@@ -1,7 +1,6 @@
 # IPTV
 
-![auto-update](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml/badge.svg)
-![clean](https://github.com/iptv-org/iptv/actions/workflows/clean.yml/badge.svg)
+[![auto-update](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml/badge.svg)](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml)
 
 Collection of publicly available IPTV channels from all over the world.
 
