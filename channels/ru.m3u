@@ -40,7 +40,7 @@ https://sc.id-tv.kz/amedia_hit_hd.m3u8
 http://ott-cdn.ucom.am/s64/index.m3u8
 #EXTINF:-1 tvg-id="AtamekenBusiness.ru" tvg-name="Atameken Business" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Business",Atameken Business (1080p)
 http://live.atameken.cdnvideo.ru/atameken/atameken.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="BollywoodHD.ru" tvg-name="Bollywood HD" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Movies",Bollywood HD
+#EXTINF:-1 tvg-id="BollywoodHD.ru" tvg-name="Bollywood HD" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Movies",Bollywood HD [Offline]
 https://sc.id-tv.kz/bollywood_hd.m3u8
 #EXTINF:-1 tvg-id="BridgeTV.ru" tvg-name="Bridge TV" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/L71iY9t.png" group-title="Music",Bridge TV (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
@@ -319,12 +319,10 @@ https://sc.id-tv.kz/Indiiskoe_kino.m3u8
 http://ott-cdn.ucom.am/s40/index.m3u8
 #EXTINF:-1 tvg-id="K16Sarov.ru" tvg-name="К16 (Саров)" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",К16 (Саров) (406p)
 http://serv25.vintera.tv:8081/test/k16/playlist.m3u8
-#EXTINF:-1 tvg-id="KabbalaTV.ru" tvg-name="Каббала ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="http://kab.tv/static/images/kab_tv_rus.gif" group-title="Religious",Каббала ТВ (504p)
-https://edge2.de.kab.tv/live/tvrus-rus-high/playlist.m3u8
-#EXTINF:-1 tvg-id="KabbalaTV.ru" tvg-name="Каббала ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="http://kab.tv/static/images/kab_tv_rus.gif" group-title="Religious",Каббала ТВ (360p)
-https://edge2.de.kab.tv/live/tvrus-rus-medium/playlist.m3u8
 #EXTINF:-1 tvg-id="KabbalaTV.ru" tvg-name="Каббала ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="http://kab.tv/static/images/kab_tv_rus.gif" group-title="Religious",Каббала ТВ (360p)
 https://edge2.uk.kab.tv/live/tvrus-rus-medium/playlist.m3u8
+#EXTINF:-1 tvg-id="KabbalaTV.ru" tvg-name="Каббала ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="http://kab.tv/static/images/kab_tv_rus.gif" group-title="Religious",Каббала ТВ (504p) [Offline]
+https://edge2.de.kab.tv/live/tvrus-rus-high/playlist.m3u8
 #EXTINF:-1 tvg-id="Kavkaz24.ru" tvg-name="Кавказ 24" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Кавказ 24 (720p)
 https://strm.yandex.ru/kal/kavkaz24_supres/kavkaz24_supres0.m3u8
 #EXTINF:-1 tvg-id="KarapuzTV.ru" tvg-name="Карапуз ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Kids",Карапуз ТВ (1080p)
@@ -548,7 +546,7 @@ https://strm.yandex.ru/kal/otstv/otstv0.m3u8
 http://ott-cdn.ucom.am/s62/index.m3u8
 #EXTINF:-1 tvg-id="OhotnikirybolovInternational.ru" tvg-name="Охотник и рыболов International" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Outdoor",Охотник и рыболов International (1080p)
 https://strm.yandex.ru/kal/ohotnik/ohotnik0.m3u8
-#EXTINF:-1 tvg-id="Pervyykanal.ru" tvg-name="Первый канал" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/iW5vhkb.png" group-title="General",Первый канал
+#EXTINF:-1 tvg-id="Pervyykanal.ru" tvg-name="Первый канал" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/iW5vhkb.png" group-title="General",Первый канал (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s14/04.m3u8
 #EXTINF:-1 tvg-id="Pervyykanal.ru" tvg-name="Первый канал" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Первый канал [Offline]
@@ -691,7 +689,7 @@ https://sitv.ru/hls/stv.m3u8
 https://bsttv.bonus-tv.ru/cdn/salyam/playlist.m3u8
 #EXTINF:-1 tvg-id="SamaraGIS.ru" tvg-name="Самара ГИС" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Самара ГИС (1080p) [Not 24/7]
 http://45.67.57.9:8080/new/new/playlist.m3u8
-#EXTINF:-1 tvg-id="Saratov24.ru" tvg-name="Саратов 24" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Саратов 24 (576p)
+#EXTINF:-1 tvg-id="Saratov24.ru" tvg-name="Саратов 24" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Саратов 24 (576p) [Offline]
 https://saratov24.tv/online/playlist.php
 #EXTINF:-1 tvg-id="Sarafan.ru" tvg-name="Сарафан" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/AgX6qoz.png" group-title="",Сарафан (576p)
 http://195.26.83.96:7024/play/82
@@ -703,7 +701,7 @@ https://live2.mediacdn.ru/sr1/sever-mobile/playlist.m3u8
 https://live2.mediacdn.ru/sr1/sever/playlist.m3u8
 #EXTINF:-1 tvg-id="SelengaTV.ru" tvg-name="Селенга ТВ" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Селенга ТВ (576p)
 http://90.188.37.86/live/playlist.m3u8
-#EXTINF:-1 tvg-id="Siesta.ru" tvg-name="Сиеста" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Сиеста (720p)
+#EXTINF:-1 tvg-id="Siesta.ru" tvg-name="Сиеста" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Сиеста (720p) [Offline]
 https://1hdru-hls-otcnet.cdnvideo.ru/siesta/index.m3u8
 #EXTINF:-1 tvg-id="SmaylikTV.ru" tvg-name="Смайлик ТВ" tvg-country="RU" tvg-language="Russian" tvg-logo="http://smilik.tv/wp-content/uploads/2016/02/Desktop_-1.png" group-title="Kids",Смайлик ТВ (720p)
 http://62.32.67.187:1935/WEB_Smilik/ngrp:Smilik.stream-adaptive/playlist.m3u8
