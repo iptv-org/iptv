@@ -25,7 +25,7 @@ function generateCategoriesTable() {
   for (const category of [...db.categories.all(), { name: 'Other', id: 'other' }]) {
     categories.push({
       category: category.name,
-      channels: db.channels.forCategory(category).removeDuplicates().count(),
+      channels: db.channels.forCategory(category).removeOffline().removeDuplicates().count(),
       playlist: `<code>https://iptv-org.github.io/iptv/categories/${category.id}.m3u</code>`
     })
   }
@@ -53,7 +53,12 @@ function generateCountriesTable() {
     const prefix = flag ? `${flag}&nbsp;` : ''
     countries.push({
       country: prefix + country.name,
-      channels: db.channels.forCountry(country).removeDuplicates().removeNSFW().count(),
+      channels: db.channels
+        .forCountry(country)
+        .removeOffline()
+        .removeDuplicates()
+        .removeNSFW()
+        .count(),
       playlist: `<code>https://iptv-org.github.io/iptv/countries/${country.code}.m3u</code>`
     })
   }
@@ -79,7 +84,12 @@ function generateLanguagesTable() {
   ]) {
     languages.push({
       language: language.name,
-      channels: db.channels.forLanguage(language).removeDuplicates().removeNSFW().count(),
+      channels: db.channels
+        .forLanguage(language)
+        .removeOffline()
+        .removeDuplicates()
+        .removeNSFW()
+        .count(),
       playlist: `<code>https://iptv-org.github.io/iptv/languages/${language.code}.m3u</code>`
     })
   }
