@@ -14,6 +14,7 @@ program
   .option('-r, --resolution', 'Detect stream resolution')
   .option('-c, --country <country>', 'Comma-separated list of country codes', '')
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
+  .option('--delay <delay>', 'Set delay for each request', 0)
   .option('--timeout <timeout>', 'Set timeout for each request', 5000)
   .parse(process.argv)
 
@@ -61,7 +62,7 @@ async function updatePlaylist(playlist) {
   }
 
   for (const channel of playlist.channels) {
-    addMissingData(channel)
+    addMissingData(channel, playlist)
     updateGroupTitle(channel)
     normalizeUrl(channel)
 
@@ -90,6 +91,8 @@ async function updatePlaylist(playlist) {
         .catch(err => {
           if (config.debug) log.print(`  ERR: ${channel.url} (${err.message})\n`)
         })
+
+      await utils.sleep(config.delay)
     }
     if (!config.debug) bar.tick()
   }
@@ -122,7 +125,8 @@ function updateStatus(channel, status) {
   }
 }
 
-function addMissingData(channel) {
+function addMissingData(channel, playlist) {
+  const code = playlist.country.code
   // tvg-name
   if (!channel.tvg.name && channel.name) {
     channel.tvg.name = channel.name.replace(/\"/gi, '')
