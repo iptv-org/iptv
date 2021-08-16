@@ -1,0 +1,78 @@
+name: cleanup
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 0'
+jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Create Branch
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'bot/cleanup'
+  remove-broken-links:
+    runs-on: ubuntu-latest
+    needs: create-branch
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/cleanup
+      - name: Install Dependencies
+        run: npm install
+      - name: Remove Broken Links
+        run: node scripts/remove-broken-links.js
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '[Bot] Remove broken links'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          branch: bot/cleanup
+          file_pattern: channels/*
+  pull-request:
+    if: ${{ github.ref == 'refs/heads/master' }}
+    runs-on: ubuntu-latest
+    needs: remove-broken-links
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/cleanup
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Create Pull Request
+        id: pr
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: 'bot/cleanup'
+          destination_branch: 'master'
+          pr_title: '[Bot] Cleaning playlists'
+          pr_body: |
+            This pull request is created by [cleanup][1] workflow.
+
+            [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
+          github_token: ${{ steps.generate-token.outputs.token }}
+      - name: Enable Pull Request Automerge
+        uses: peter-evans/enable-pull-request-automerge@v1
+        with:
+          token: ${{ secrets.PAT }}
+          pull-request-number: ${{ steps.pr.outputs.pr_number }}
+          merge-method: squash
+      - name: Approve Pull Request
+        uses: juliangruber/approve-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.pr.outputs.pr_number }}
