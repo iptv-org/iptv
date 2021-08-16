@@ -15,10 +15,13 @@ parser.parseIndex = function () {
 parser.parsePlaylist = async function (url) {
   const content = file.read(url)
   const result = playlistParser.parse(content)
-  const name = file.getFilename(url)
-  const country = utils.code2name(name)
+  const filename = file.getFilename(url)
+  const country = {
+    code: filename,
+    name: utils.code2name(filename)
+  }
 
-  return new Playlist({ header: result.header, items: result.items, url, country, name })
+  return new Playlist({ header: result.header, items: result.items, url, filename, country })
 }
 
 module.exports = parser
