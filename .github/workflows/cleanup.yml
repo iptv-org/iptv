@@ -54,6 +54,7 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Create Pull Request
+        id: pr
         uses: repo-sync/pull-request@v2
         with:
           source_branch: 'bot/cleanup'
@@ -62,8 +63,16 @@ jobs:
           pr_body: |
             This pull request is created by [cleanup][1] workflow.
 
-            **IMPORTANT:** Before merging all links should be checked manually to make sure that the response from the server has not changed. Working links should be marked as `[Not 24/7]` so that the script will skip them next time.
-
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-          pr_draft: true
           github_token: ${{ steps.generate-token.outputs.token }}
+      - name: Enable Pull Request Automerge
+        uses: peter-evans/enable-pull-request-automerge@v1
+        with:
+          token: ${{ secrets.PAT }}
+          pull-request-number: ${{ steps.pr.outputs.pr_number }}
+          merge-method: squash
+      - name: Approve Pull Request
+        uses: juliangruber/approve-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.pr.outputs.pr_number }}
