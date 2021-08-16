@@ -61,7 +61,7 @@ async function updatePlaylist(playlist) {
   }
 
   for (const channel of playlist.channels) {
-    addMissingData(channel)
+    addMissingData(channel, playlist)
     updateGroupTitle(channel)
     normalizeUrl(channel)
 
@@ -122,7 +122,8 @@ function updateStatus(channel, status) {
   }
 }
 
-function addMissingData(channel) {
+function addMissingData(channel, playlist) {
+  const code = playlist.country.code
   // tvg-name
   if (!channel.tvg.name && channel.name) {
     channel.tvg.name = channel.name.replace(/\"/gi, '')
