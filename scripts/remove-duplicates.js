@@ -47,8 +47,6 @@ async function removeDuplicates(playlist) {
       return utils.removeProtocol(item.url) === utils.removeProtocol(channel.url)
     })
     if (sameUrl) return false
-    const sameHash = buffer.find(item => item.hash === channel.hash)
-    if (sameHash && channel.status === 'Offline') return false
 
     buffer.push(channel)
     return true
