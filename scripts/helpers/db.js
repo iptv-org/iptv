@@ -211,10 +211,10 @@ db.playlists = {
     return this.list
   },
   only(list = []) {
-    return this.list.filter(playlist => list.includes(playlist.name))
+    return this.list.filter(playlist => list.includes(playlist.filename))
   },
   except(list = []) {
-    return this.list.filter(playlist => !list.includes(playlist.name))
+    return this.list.filter(playlist => !list.includes(playlist.filename))
   },
   sortBy(fields) {
     this.list = utils.sortBy(this.list, fields)

@@ -90,4 +90,10 @@ utils.filterPlaylists = function (arr, include = '', exclude = '') {
   return arr
 }
 
+utils.sleep = function (ms) {
+  return function (x) {
+    return new Promise(resolve => setTimeout(() => resolve(x), ms))
+  }
+}
+
 module.exports = utils
