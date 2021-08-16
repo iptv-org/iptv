@@ -5,10 +5,6 @@ const fs = require('fs')
 const rootPath = path.resolve(__dirname) + '/../../'
 const file = {}
 
-file.getBasename = function (filename) {
-  return path.basename(filename, path.extname(filename))
-}
-
 file.getFilename = function (filename) {
   return path.parse(filename).name
 }
