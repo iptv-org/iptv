@@ -14,6 +14,7 @@ program
   .option('-r, --resolution', 'Detect stream resolution')
   .option('-c, --country <country>', 'Comma-separated list of country codes', '')
   .option('-e, --exclude <exclude>', 'Comma-separated list of country codes to be excluded', '')
+  .option('--delay <delay>', 'Set delay for each request', 0)
   .option('--timeout <timeout>', 'Set timeout for each request', 5000)
   .parse(process.argv)
 
@@ -90,6 +91,8 @@ async function updatePlaylist(playlist) {
         .catch(err => {
           if (config.debug) log.print(`  ERR: ${channel.url} (${err.message})\n`)
         })
+
+      await utils.sleep(config.delay)
     }
     if (!config.debug) bar.tick()
   }
