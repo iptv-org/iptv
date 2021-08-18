@@ -1,7 +1,6 @@
 const IPTVChecker = require('iptv-checker')
 const normalize = require('normalize-url')
 const { program } = require('commander')
-const ProgressBar = require('progress')
 const parser = require('./helpers/parser')
 const utils = require('./helpers/utils')
 const file = require('./helpers/file')
@@ -47,14 +46,13 @@ function savePlaylist(playlist) {
 }
 
 async function updatePlaylist(playlist) {
-  const bar = new ProgressBar(`Processing '${playlist.url}': [:bar] :current/:total (:percent) `, {
-    total: playlist.channels.length
-  })
+  const total = playlist.channels.length
+  log.print(`Processing '${playlist.url}'...\n`)
 
   buffer = {}
   origins = {}
   for (const [i, channel] of playlist.channels.entries()) {
-    bar.tick()
+    const curr = i + 1
     updateDescription(channel, playlist)
     normalizeUrl(channel)
 
@@ -74,7 +72,6 @@ async function updatePlaylist(playlist) {
         } else {
           buffer[i] = null
           if (config.debug) {
-            if (!bar.complete) log.print(`\n`)
             log.print(`  INFO: ${channel.url} (${result.error})\n`)
           }
         }
@@ -82,7 +79,6 @@ async function updatePlaylist(playlist) {
       .catch(err => {
         buffer[i] = null
         if (config.debug) {
-          if (!bar.complete) log.print(`\n`)
           log.print(`  ERR: ${channel.data.url} (${err.message})\n`)
         }
       })
