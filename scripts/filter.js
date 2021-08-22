@@ -19,13 +19,14 @@ async function main() {
   log.finish()
 }
 
-async function removeBlacklisted(playlist) {
+function removeBlacklisted(playlist) {
   const channels = playlist.channels.filter(channel => {
+    const channelName = normalizeName(channel.name)
     return !blacklist.find(item => {
       const hasSameName =
-        item.name.toLowerCase() === channel.name.toLowerCase() ||
-        item.aliases.map(alias => alias.toLowerCase()).includes(channel.name.toLowerCase())
-      const fromSameCountry = channel.countries.find(c => c.code === item.country)
+        normalizeName(item.name) === channelName ||
+        item.aliases.map(alias => normalizeName(alias)).includes(channelName)
+      const fromSameCountry = playlist.country.code === item.country
 
       return hasSameName && fromSameCountry
     })
@@ -38,6 +39,10 @@ async function removeBlacklisted(playlist) {
   }
 
   return playlist
+}
+
+function normalizeName(str) {
+  return str.replace(/[^a-zA-Z0-9 ]/gi, '').toLowerCase()
 }
 
 main()
