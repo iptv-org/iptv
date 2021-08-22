@@ -19,13 +19,12 @@ async function main() {
   log.finish()
 }
 
-async function removeBlacklisted(playlist) {
+function removeBlacklisted(playlist) {
   const channels = playlist.channels.filter(channel => {
     return !blacklist.find(item => {
-      const hasSameName =
-        item.name.toLowerCase() === channel.name.toLowerCase() ||
-        item.aliases.map(alias => alias.toLowerCase()).includes(channel.name.toLowerCase())
-      const fromSameCountry = channel.countries.find(c => c.code === item.country)
+      const regexp = new RegExp(item.regex, 'i')
+      const hasSameName = regexp.test(channel.name)
+      const fromSameCountry = playlist.country.code === item.country
 
       return hasSameName && fromSameCountry
     })
