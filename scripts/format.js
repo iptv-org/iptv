@@ -109,7 +109,7 @@ function updateOrigins(channel, requests) {
 function updateStatus(channel, status) {
   switch (status) {
     case 'online':
-      channel.status = null
+      channel.status = channel.status === 'Offline' ? 'Not 24/7' : null
       break
     case 'offline':
       channel.status = 'Offline'

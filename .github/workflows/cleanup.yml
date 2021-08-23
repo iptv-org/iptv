@@ -71,8 +71,3 @@ jobs:
           token: ${{ secrets.PAT }}
           pull-request-number: ${{ steps.pr.outputs.pr_number }}
           merge-method: squash
-      - name: Approve Pull Request
-        uses: juliangruber/approve-pull-request-action@v1
-        with:
-          github-token: ${{ secrets.PAT }}
-          number: ${{ steps.pr.outputs.pr_number }}
