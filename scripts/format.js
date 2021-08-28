@@ -11,6 +11,7 @@ const ignoreStatus = ['Geo-blocked', 'Not 24/7']
 program
   .usage('[OPTIONS]...')
   .option('--debug', 'Enable debug mode')
+  .option('--offline', 'Enable offline mode')
   .option('-d, --delay <delay>', 'Set delay for each request', parseNumber, 0)
   .option('-t, --timeout <timeout>', 'Set timeout for each request', parseNumber, 5000)
   .option('-c, --country <country>', 'Comma-separated list of country codes', '')
@@ -56,7 +57,7 @@ async function updatePlaylist(playlist) {
     updateDescription(channel, playlist)
     normalizeUrl(channel)
 
-    if (ignoreStatus.includes(channel.status)) {
+    if (config.offline || ignoreStatus.includes(channel.status)) {
       continue
     }
 
