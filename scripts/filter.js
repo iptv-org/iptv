@@ -1,4 +1,4 @@
-const blacklist = require('./helpers/blacklist.json')
+const blacklist = require('./data/blacklist.json')
 const parser = require('./helpers/parser')
 const log = require('./helpers/log')
 
