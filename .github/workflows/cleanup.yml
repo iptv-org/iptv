@@ -64,10 +64,5 @@ jobs:
             This pull request is created by [cleanup][1] workflow.
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
+          pr_draft: true
           github_token: ${{ steps.generate-token.outputs.token }}
-      - name: Enable Pull Request Automerge
-        uses: peter-evans/enable-pull-request-automerge@v1
-        with:
-          token: ${{ secrets.PAT }}
-          pull-request-number: ${{ steps.pr.outputs.pr_number }}
-          merge-method: squash
