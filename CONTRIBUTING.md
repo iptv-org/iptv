@@ -168,6 +168,7 @@ http://example.com/stream.m3u8
   - ...
   - `unsorted.m3u`: playlist with channels not yet sorted.
 - `scripts/`
+  - `data/`: data used in scripts.
   - `helpers/`: helper scripts used in GitHub Actions.
   - `filter.js`: used within GitHub Action to remove blacklisted channels from playlists.
   - `format.js`: used within GitHub Action to format channel descriptions.
