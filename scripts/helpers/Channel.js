@@ -1,4 +1,4 @@
-const categories = require('./categories')
+const categories = require('../data/categories')
 const utils = require('./utils')
 const file = require('./file')
 
