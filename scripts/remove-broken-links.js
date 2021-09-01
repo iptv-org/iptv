@@ -1,4 +1,3 @@
-const blacklist = require('./data/blacklist.json')
 const parser = require('./helpers/parser')
 const log = require('./helpers/log')
 
@@ -6,12 +5,12 @@ async function main() {
   log.start()
 
   log.print(`Parsing 'index.m3u'...`)
-  const playlists = parser.parseIndex()
+  const playlists = parser.parseIndex().filter(i => i.url !== 'channels/unsorted.m3u')
   for (const playlist of playlists) {
     log.print(`\nProcessing '${playlist.url}'...`)
     await parser
       .parsePlaylist(playlist.url)
-      .then(removeBlacklisted)
+      .then(removeBrokenLinks)
       .then(p => p.save())
   }
 
@@ -19,19 +18,18 @@ async function main() {
   log.finish()
 }
 
-function removeBlacklisted(playlist) {
+async function removeBrokenLinks(playlist) {
+  const buffer = []
   const channels = playlist.channels.filter(channel => {
-    return !blacklist.find(item => {
-      const regexp = new RegExp(item.regex, 'i')
-      const hasSameName = regexp.test(channel.name)
-      const fromSameCountry = playlist.country.code === item.country
+    const sameHash = buffer.find(item => item.hash === channel.hash)
+    if (sameHash && channel.status === 'Offline') return false
 
-      return hasSameName && fromSameCountry
-    })
+    buffer.push(channel)
+    return true
   })
 
   if (playlist.channels.length !== channels.length) {
-    log.print(`updated`)
+    log.print('updated')
     playlist.channels = channels
     playlist.updated = true
   }
