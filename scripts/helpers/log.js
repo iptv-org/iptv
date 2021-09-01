@@ -1,7 +1,8 @@
 const log = {}
 
-log.print = function (string) {
-  process.stdout.write(string)
+log.print = function (message) {
+  if (typeof message === 'object') message = JSON.stringify(message, null, 2)
+  process.stdout.write(message)
 }
 
 log.start = function () {

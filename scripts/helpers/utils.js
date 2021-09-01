@@ -1,7 +1,7 @@
 const transliteration = require('transliteration')
 const iso6393 = require('@freearhey/iso-639-3')
-const categories = require('./categories')
-const regions = require('./regions')
+const categories = require('../data/categories')
+const regions = require('../data/regions')
 
 const utils = {}
 const intlDisplayNames = new Intl.DisplayNames(['en'], {
@@ -88,6 +88,12 @@ utils.filterPlaylists = function (arr, include = '', exclude = '') {
   }
 
   return arr
+}
+
+utils.sleep = function (ms) {
+  return function (x) {
+    return new Promise(resolve => setTimeout(() => resolve(x), ms))
+  }
 }
 
 module.exports = utils
