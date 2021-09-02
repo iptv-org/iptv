@@ -1,0 +1,396 @@
+gh extension install <repo> [flags]
+name: github/workflows/auto-update.yml
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  create-branch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Create Branch
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'bot/auto-update'
+  format:
+    runs-on: ubuntu-latest
+    needs: create-branch
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        country:
+          [
+            ad,
+            ae,
+            af,
+            ag,
+            al,
+            am,
+            ao,
+            ar,
+            at,
+            au,
+            aw,
+            az,
+            ba,
+            bb,
+            bd,
+            be,
+            bf,
+            bg,
+            bh,
+            bn,
+            bo,
+            br,
+            bs,
+            by,
+            ca,
+            cd,
+            cg,
+            ch,
+            ci,
+            cl,
+            cm,
+            cn,
+            co,
+            cr,
+            cu,
+            cw,
+            cy,
+            cz,
+            de,
+            dk,
+            do,
+            dz,
+            ec,
+            ee,
+            eg,
+            es,
+            et,
+            fi,
+            fj,
+            fo,
+            fr,
+            pf,
+            ge,
+            gh,
+            gm,
+            gn,
+            gp,
+            gq,
+            gr,
+            gt,
+            hk,
+            hn,
+            hr,
+            ht,
+            hu,
+            id,
+            ie,
+            il,
+            in,
+            iq,
+            ir,
+            is,
+            it,
+            jm,
+            jo,
+            jp,
+            ke,
+            kg,
+            kh,
+            kp,
+            kr,
+            kw,
+            kz,
+            la,
+            lb,
+            li,
+            lk,
+            lt,
+            lu,
+            lv,
+            ly,
+            ma,
+            mc,
+            md,
+            me,
+            mk,
+            ml,
+            mm,
+            mn,
+            mo,
+            mt,
+            mv,
+            mx,
+            my,
+            mz,
+            ne,
+            ng,
+            ni,
+            nl,
+            no,
+            np,
+            nz,
+            om,
+            pa,
+            pe,
+            ph,
+            pk,
+            pl,
+            pr,
+            ps,
+            pt,
+            py,
+            qa,
+            ro,
+            rs,
+            ru,
+            rw,
+            sa,
+            sd,
+            se,
+            sg,
+            si,
+            sk,
+            sl,
+            sm,
+            sn,
+            so,
+            sv,
+            sy,
+            th,
+            tj,
+            tm,
+            tn,
+            tr,
+            tt,
+            tw,
+            tz,
+            ua,
+            ug,
+            uk,
+            us,
+            uy,
+            uz,
+            va,
+            ve,
+            vi,
+            vn,
+            xk,
+            ye,
+            zm
+          ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Setup FFmpeg
+        uses: FedericoCarboni/setup-ffmpeg@v1
+      - name: Install Dependencies
+        run: npm install
+      - name: Format Playlists
+        run: node scripts/format.js --country=${{ matrix.country }} --debug
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: channels
+          path: channels/${{ matrix.country }}.m3u
+  commit-changes:
+    runs-on: ubuntu-latest
+    needs: format
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: channels
+          path: channels
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '[Bot] Format playlists'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          branch: bot/auto-update
+          file_pattern: channels/*
+  remove-duplicates:
+    runs-on: ubuntu-latest
+    needs: commit-changes
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Install Dependencies
+        run: npm install
+      - name: Remove Duplicates
+        run: node scripts/remove-duplicates.js
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '[Bot] Remove duplicates'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          branch: bot/auto-update
+          file_pattern: channels/*
+  sort:
+    runs-on: ubuntu-latest
+    needs: remove-duplicates
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Install Dependencies
+        run: npm install
+      - name: Sort Channels
+        run: node scripts/sort.js
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '[Bot] Sort channels'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          branch: bot/auto-update
+          file_pattern: channels/*
+  filter:
+    runs-on: ubuntu-latest
+    needs: sort
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Install Dependencies
+        run: npm install
+      - name: Filter Playlists
+        run: node scripts/filter.js
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '[Bot] Filter channels'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          branch: bot/auto-update
+          file_pattern: channels/*
+  generate:
+    runs-on: ubuntu-latest
+    needs: filter
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Install Dependencies
+        run: npm install
+      - name: Generate Playlists
+        run: node scripts/generate.js
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: gh-pages
+          path: .gh-pages/
+  deploy:
+    if: ${{ github.ref == 'refs/heads/master' }}
+    runs-on: ubuntu-latest
+    needs: generate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+        with:
+          name: gh-pages
+          path: .gh-pages
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+          token: ${{ steps.generate-token.outputs.token }}
+          git-config-name: iptv-bot
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to GitHub Pages'
+  update-readme:
+    runs-on: ubuntu-latest
+    needs: generate
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Install Dependencies
+        run: npm install
+      - name: Update README.md
+        run: node scripts/update-readme.js
+      - name: Commit Changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: '[Bot] Update README.md'
+          commit_user_name: iptv-bot
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
+          branch: bot/auto-update
+          file_pattern: README.md
+  pull-request:
+    if: ${{ github.ref == 'refs/heads/master' }}
+    needs: update-readme
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Generate Token
+        uses: tibdex/github-app-token@v1
+        id: generate-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - name: Create Pull Request
+        id: pr
+        uses: repo-sync/pull-request@v2
+        with:
+          source_branch: 'bot/auto-update'
+          destination_branch: 'master'
+          pr_title: '[Bot] Update playlists'
+          pr_body: |
+            This pull request is created by [auto-update][1] workflow.
+
+            [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
+          github_token: ${{ steps.generate-token.outputs.token }}
+      - name: Enable Pull Request Automerge
+        uses: peter-evans/enable-pull-request-automerge@v1
+        with:
+          token: ${{ secrets.PAT }}
+          pull-request-number: ${{ steps.pr.outputs.pr_number }}
+          merge-method: squash
+      - name: Approve Pull Request
+        uses: juliangruber/approve-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.pr.outputs.pr_number }}
