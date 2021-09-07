@@ -24,7 +24,7 @@ module.exports = class Channel {
   }
 
   generateHash() {
-    return `${this.tvg.id}:${this.tvg.name}:${this.tvg.country}:${this.tvg.language}:${this.logo}:${this.group.title}:${this.name}`.toLowerCase()
+    return `${this.tvg.id}:${this.tvg.country}:${this.tvg.language}:${this.logo}:${this.group.title}:${this.name}`.toLowerCase()
   }
 
   updateUrl(url) {
