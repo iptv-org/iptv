@@ -30,7 +30,6 @@ async function main() {
   const include = config.country.split(',').filter(i => i)
   const exclude = config.exclude.split(',').filter(i => i)
   let files = await file.list(include, exclude)
-  files = files.filter(file => file !== 'channels/unsorted.m3u')
   if (!files.length) log.print(`No files is selected\n`)
   for (const file of files) {
     await parser.parsePlaylist(file).then(updatePlaylist).then(savePlaylist)
