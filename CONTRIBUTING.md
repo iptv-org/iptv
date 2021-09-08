@@ -152,15 +152,14 @@ http://example.com/stream.m3u8
 - `.github/`
   - `ISSUE_TEMPLATE/`: issue templates for this repository.
   - `workflows/`
-    - `auto-update.yml`: GitHub Action that automatically updates all playlists every day.
-    - `check.yml`: GitHub Action that automatically checks every pull request for syntax errors.
+    - `auto-update.yml`: GitHub workflow that automatically updates all playlists every day.
+    - `check.yml`: GitHub workflow that automatically checks every pull request for syntax errors.
+    - `cleanup.yml`: GitHub workflow that automatically removes broken links every week.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
 - `.readme/`
-  - `_categories.md`: automatically generated list of all categories and their corresponding playlists.
-  - `_countries.md`: automatically generated list of all countries and their corresponding playlists.
-  - `_languages.md`: automatically generated list of all languages and their corresponding playlists.
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
   - `preview.png`: image displayed in the `README.md`.
+  - `supported-categories.md`: list of supported categories.
   - `supported-region-codes.md`: list of supported region codes.
   - `template.md`: template for `README.md`.
 - `channels/`: contains all channels broken down by the country from which they are broadcast.
@@ -168,13 +167,13 @@ http://example.com/stream.m3u8
   - `unsorted.m3u`: playlist with channels not yet sorted.
 - `scripts/`
   - `data/`: data used in scripts.
-  - `helpers/`: helper scripts used in GitHub Actions.
-  - `filter.js`: used within GitHub Action to remove blacklisted channels from playlists.
-  - `format.js`: used within GitHub Action to format channel descriptions.
-  - `generate.js`: used within GitHub Action to generate all additional playlists.
-  - `remove-duplicates.js`: used in GitHub Action to remove duplicates from the playlist.
-  - `sort.js`: used within GitHub Action to sort channels by name.
-  - `update-readme.js`: used within GitHub Action to update the `README.md` file.
+  - `helpers/`: helper scripts.
+  - `filter.js`: used within GitHub workflow to remove blacklisted channels from playlists.
+  - `format.js`: used within GitHub workflow to format channel descriptions.
+  - `generate.js`: used within GitHub workflow to generate all additional playlists.
+  - `remove-broken-links.js`: used in GitHub workflow to remove broken links from the playlist.
+  - `remove-duplicates.js`: used in GitHub workflow to remove duplicates from the playlist.
+  - `sort.js`: used within GitHub workflow to sort channels by name.
+  - `update-readme.js`: used within GitHub workflow to update the `README.md` file.
 - `CONTRIBUTING.md`: file you are currently reading.
-- `index.m3u`: main playlist that contains links to all playlists in the `channels/` folder.
 - `README.md`: project description generated from the contents of the `.readme/` folder.
