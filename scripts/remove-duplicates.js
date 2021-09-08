@@ -1,5 +1,6 @@
 const parser = require('./helpers/parser')
 const utils = require('./helpers/utils')
+const file = require('./helpers/file')
 const log = require('./helpers/log')
 
 let globalBuffer = []
@@ -7,18 +8,19 @@ let globalBuffer = []
 async function main() {
   log.start()
 
-  log.print(`Parsing 'index.m3u'...`)
-  const playlists = parser.parseIndex().filter(i => i.url !== 'channels/unsorted.m3u')
-  for (const playlist of playlists) {
-    log.print(`\nProcessing '${playlist.url}'...`)
+  let files = await file.list()
+  if (!files.length) log.print(`No files is selected\n`)
+  files = files.filter(file => file !== 'channels/unsorted.m3u')
+  for (const file of files) {
+    log.print(`\nProcessing '${file}'...`)
     await parser
-      .parsePlaylist(playlist.url)
+      .parsePlaylist(file)
       .then(addToGlobalBuffer)
       .then(removeDuplicates)
       .then(p => p.save())
   }
 
-  if (playlists.length) {
+  if (files.length) {
     log.print(`\nProcessing 'channels/unsorted.m3u'...`)
     await parser
       .parsePlaylist('channels/unsorted.m3u')
