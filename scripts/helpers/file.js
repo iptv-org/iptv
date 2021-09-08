@@ -8,7 +8,7 @@ const file = {}
 
 file.list = function (include = [], exclude = []) {
   return new Promise(resolve => {
-    glob('channels/*.m3u', function (err, files) {
+    glob('channels/**/*.m3u', function (err, files) {
       if (include.length) {
         include = include.map(filename => `channels/${filename}.m3u`)
         files = files.filter(filename => include.includes(filename))
