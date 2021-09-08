@@ -113,14 +113,13 @@ http://example.com/cnn.m3u8
 For a channel to be approved, its description must follow this template:
 
 ```
-#EXTINF:-1 tvg-id="EPG_ID" tvg-name="EPG_NAME" tvg-country="COUNTRY" tvg-language="LANGUAGE" tvg-logo="LOGO_URL" group-title="CATEGORY",FULL_NAME STREAM_TIME_SHIFT (ALTERNATIVE_NAME) (STREAM_RESOLUTION) [STREAM_STATUS]
+#EXTINF:-1 tvg-id="EPG_ID" tvg-country="COUNTRY" tvg-language="LANGUAGE" tvg-logo="LOGO_URL" group-title="CATEGORY",FULL_NAME STREAM_TIME_SHIFT (ALTERNATIVE_NAME) (STREAM_RESOLUTION) [STREAM_STATUS]
 STREAM_URL
 ```
 
 | Attribute           | Description                                                                                                                                                                                                                                                                                                                                                                                   |
 | ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `EPG_ID`            | Channel ID that is used to load EPG. Must match `id` from the EPG file. (optional)                                                                                                                                                                                                                                                                                                            |
-| `EPG_NAME`          | Channel name that is also sometimes used to load EPG. Must match `<display-name>` from the EPG file. (optional)                                                                                                                                                                                                                                                                               |
 | `COUNTRY`           | The code of the country in which the channel is broadcast. The code of the country must conform to the standard [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2). If the channel is broadcast in several countries you can list them separated by a semicolon. You can also use one of these [region codes](#supported-region-codes). (optional)                                        |
 | `LANGUAGE`          | Channel language. The name of the language must conform to the standard [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500). If the channel is broadcast in several languages you can list them separated by a semicolon. (optional) |
 | `LOGO_URL`          | The logo of the channel that will be displayed if the player supports it. Supports files in png, jpeg and gif format. (optional)                                                                                                                                                                                                                                                              |
@@ -135,14 +134,14 @@ STREAM_URL
 Example:
 
 ```xml
-#EXTINF:-1 tvg-id="example.ua" tvg-name="Example TV" tvg-country="UA" tvg-language="Ukrainian;Russian" tvg-logo="https://i.imgur.com/bu12f89.png" group-title="Kids",Example TV +3 (Пример ТВ) (720p) [not 24/7]
+#EXTINF:-1 tvg-id="example.ua" tvg-country="UA" tvg-language="Ukrainian;Russian" tvg-logo="https://i.imgur.com/bu12f89.png" group-title="Kids",Example TV +3 (Пример ТВ) (720p) [not 24/7]
 https://example.com/playlist.m3u8
 ```
 
 Also, if necessary, you can specify custom HTTP User-Agent or Referrer via the `#EXTVLCOPT` tag:
 
 ```xml
-#EXTINF:-1 tvg-id="exampletv.us" tvg-name="Example TV" tvg-country="US" tvg-language="English" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
+#EXTINF:-1 tvg-id="exampletv.us" tvg-country="US" tvg-language="English" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 http://example.com/stream.m3u8
