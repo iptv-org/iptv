@@ -23,6 +23,12 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: bot/auto-update
+      - name: Install Dependencies
+        run: npm install
       - name: Create Matrix
         id: set-matrix
         run: node scripts/create-matrix.js
