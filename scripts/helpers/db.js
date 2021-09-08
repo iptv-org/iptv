@@ -1,13 +1,14 @@
 const categories = require('../data/categories')
 const parser = require('./parser')
 const utils = require('./utils')
+const file = require('./file')
 
 const db = {}
 
 db.load = async function () {
-  const items = parser.parseIndex()
-  for (const item of items) {
-    const playlist = await parser.parsePlaylist(item.url)
+  let files = await file.list()
+  for (const file of files) {
+    const playlist = await parser.parsePlaylist(file)
     db.playlists.add(playlist)
     for (const channel of playlist.channels) {
       db.channels.add(channel)
