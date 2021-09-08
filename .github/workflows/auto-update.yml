@@ -23,8 +23,9 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - id: set-matrix
-        run: echo "::set-output name=matrix::{\"country\":[\"ad\"]}"
+      - name: Create Matrix
+        id: set-matrix
+        run: node scripts/create-matrix.js
   format:
     runs-on: ubuntu-latest
     needs: create-matrix
