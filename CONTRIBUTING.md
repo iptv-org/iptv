@@ -168,6 +168,7 @@ http://example.com/stream.m3u8
 - `scripts/`
   - `data/`: data used in scripts.
   - `helpers/`: helper scripts.
+  - `create-matrix.js`: used within GitHub workflow to create matrix of files to process.
   - `filter.js`: used within GitHub workflow to remove blacklisted channels from playlists.
   - `format.js`: used within GitHub workflow to format channel descriptions.
   - `generate.js`: used within GitHub workflow to generate all additional playlists.
