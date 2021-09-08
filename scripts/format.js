@@ -1,4 +1,3 @@
-const glob = require('glob')
 const IPTVChecker = require('iptv-checker')
 const normalize = require('normalize-url')
 const { program } = require('commander')
@@ -25,16 +24,15 @@ const checker = new IPTVChecker({
 })
 
 let buffer, origins
-function main() {
+async function main() {
   log.start()
 
-  glob('channels/*.m3u', { ignore: ['unsorted.m3u'] }, handleFiles)
-}
-
-async function handleFiles(er, files) {
-  const filtered = utils.filterFiles(files, config.country, config.exclude)
-  if (!filtered.length) log.print(`No files is selected\n`)
-  for (const file of filtered) {
+  const include = config.country.split(',').filter(i => i)
+  const exclude = config.exclude.split(',').filter(i => i)
+  let files = await file.list(include, exclude)
+  files = files.filter(file => file !== 'channels/unsorted.m3u')
+  if (!files.length) log.print(`No files is selected\n`)
+  for (const file of files) {
     await parser.parsePlaylist(file).then(updatePlaylist).then(savePlaylist)
   }
 
