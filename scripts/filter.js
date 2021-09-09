@@ -1,16 +1,17 @@
 const blacklist = require('./data/blacklist.json')
 const parser = require('./helpers/parser')
+const file = require('./helpers/file')
 const log = require('./helpers/log')
 
 async function main() {
   log.start()
 
-  log.print(`Parsing 'index.m3u'...`)
-  const playlists = parser.parseIndex()
-  for (const playlist of playlists) {
-    log.print(`\nProcessing '${playlist.url}'...`)
+  const files = await file.list()
+  if (!files.length) log.print(`No files is selected\n`)
+  for (const file of files) {
+    log.print(`\nProcessing '${file}'...`)
     await parser
-      .parsePlaylist(playlist.url)
+      .parsePlaylist(file)
       .then(removeBlacklisted)
       .then(p => p.save())
   }

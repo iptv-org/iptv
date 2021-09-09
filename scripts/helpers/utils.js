@@ -74,22 +74,6 @@ utils.removeProtocol = function (string) {
   return string.replace(/(^\w+:|^)\/\//, '')
 }
 
-utils.filterPlaylists = function (arr, include = '', exclude = '') {
-  if (include) {
-    const included = include.split(',').map(filename => `channels/${filename}.m3u`)
-
-    return arr.filter(i => included.indexOf(i.url) > -1)
-  }
-
-  if (exclude) {
-    const excluded = exclude.split(',').map(filename => `channels/${filename}.m3u`)
-
-    return arr.filter(i => excluded.indexOf(i.url) === -1)
-  }
-
-  return arr
-}
-
 utils.sleep = function (ms) {
   return function (x) {
     return new Promise(resolve => setTimeout(() => resolve(x), ms))
