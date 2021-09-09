@@ -24,7 +24,7 @@ module.exports = class Channel {
   }
 
   generateHash() {
-    return `${this.tvg.id}:${this.tvg.name}:${this.tvg.country}:${this.tvg.language}:${this.logo}:${this.group.title}:${this.name}`.toLowerCase()
+    return `${this.tvg.id}:${this.tvg.country}:${this.tvg.language}:${this.logo}:${this.group.title}:${this.name}`.toLowerCase()
   }
 
   updateUrl(url) {
@@ -109,7 +109,7 @@ module.exports = class Channel {
   }
 
   getInfo() {
-    let info = `-1 tvg-id="${this.tvg.id}" tvg-name="${this.tvg.name}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
+    let info = `-1 tvg-id="${this.tvg.id}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
 
     info += ` group-title="${this.group.title}",${this.name}`
 

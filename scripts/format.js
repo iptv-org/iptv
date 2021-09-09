@@ -27,11 +27,12 @@ let buffer, origins
 async function main() {
   log.start()
 
-  let playlists = parser.parseIndex().filter(i => i.url !== 'channels/unsorted.m3u')
-  playlists = utils.filterPlaylists(playlists, config.country, config.exclude)
-  if (!playlists.length) log.print(`No playlist is selected\n`)
-  for (const playlist of playlists) {
-    await parser.parsePlaylist(playlist.url).then(updatePlaylist).then(savePlaylist)
+  const include = config.country.split(',').filter(i => i)
+  const exclude = config.exclude.split(',').filter(i => i)
+  let files = await file.list(include, exclude)
+  if (!files.length) log.print(`No files is selected\n`)
+  for (const file of files) {
+    await parser.parsePlaylist(file).then(updatePlaylist).then(savePlaylist)
   }
 
   log.finish()

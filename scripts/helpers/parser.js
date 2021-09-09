@@ -5,13 +5,6 @@ const file = require('./file')
 
 const parser = {}
 
-parser.parseIndex = function () {
-  const content = file.read('index.m3u')
-  const result = playlistParser.parse(content)
-
-  return result.items
-}
-
 parser.parsePlaylist = async function (url) {
   const content = file.read(url)
   const result = playlistParser.parse(content)
