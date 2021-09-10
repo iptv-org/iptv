@@ -317,8 +317,6 @@ https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
 http://live.agmediachandigarh.com/lifepunjabi/e27b5c8d89b83882ca3b018eeed14888.sdp/mono.m3u8
 #EXTINF:-1 tvg-id="LifeTV.in" tvg-country="IN" tvg-language="" tvg-logo="" group-title="",Life TV (480p)
 http://59c3ec70cfde0.streamlock.net/channel_6/channel6/playlist.m3u8
-#EXTINF:-1 tvg-id="LokSabhaTV.in" tvg-country="IN" tvg-language="" tvg-logo="https://i.imgur.com/eoAeDrU.jpg" group-title="",Lok Sabha TV (576p) [Not 24/7]
-https://nicls1-lh.akamaihd.net/i/lst_1@26969/index_1_av-p.m3u8?rebase=on&sd=10
 #EXTINF:-1 tvg-id="LokSabhaTV.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Lok Sabha TV (576p) [Not 24/7]
 https://nicls1-lh.akamaihd.net/i/lst_1@26969/master.m3u8
 #EXTINF:-1 tvg-id="MahaMovie.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/hpShFDL.png" group-title="Movies",Maha Movie (576p)
@@ -561,10 +559,12 @@ http://208.115.215.42/Sony_Max_HD_02/playlist.m3u8
 #EXTINF:-1 tvg-id="SonyMAXHD.in" tvg-country="IN" tvg-language="" tvg-logo="" group-title="",Sony MAX HD [Offline]
 http://208.115.215.42/Sony_Max_HD/playlist.m3u8
 #EXTINF:-1 tvg-id="SonySabHD.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/jo0o7op.png" group-title="Entertainment",Sony Sab HD (1080p)
-http://indo51.gcdn.co/hindi-SONYSABHD/tracks-v1a1/mono.m3u8
+#EXTVLCOPT:http-user-agent=stream
+http://indo51.gcdn.co/hindi-SONYSABHD/playlist.m3u8
 #EXTINF:-1 tvg-id="SonySabHD.in" tvg-country="IN" tvg-language="" tvg-logo="" group-title="",Sony Sab HD [Offline]
 http://208.115.215.42/Sony_Sab_HD/playlist.m3u8
 #EXTINF:-1 tvg-id="SonySixHD.in" tvg-country="IN" tvg-language="" tvg-logo="" group-title="",Sony Six HD (1080p) [Offline]
+#EXTVLCOPT:http-user-agent=stream
 http://103.81.104.118/hls/stream10.m3u8
 #EXTINF:-1 tvg-id="SonyWAH.in" tvg-country="IN" tvg-language="" tvg-logo="" group-title="",Sony WAH (404p) [Offline]
 https://d2gowxuvx77j6q.cloudfront.net/WAH.m3u8
@@ -577,10 +577,12 @@ http://c0.cdn.trinity-tv.net/stream/nh9u54a7sfnc2hwzxr2zwykwkqm43bgyyzsm68ybbbnj
 #EXTINF:-1 tvg-id="StarFamily.in" tvg-country="IN" tvg-language="" tvg-logo="" group-title="Family",Star Family (576p)
 http://c0.cdn.trinity-tv.net/stream/zfmjgma9zn46fa797ez9fgkw7msh9mj4tppspg23gey6mmx5fqiy7ky3jqx4uhgsfsrd8r76si8ykb2anw9442g4qkq5fzpdvwdqf5te24ixu9zrx3aesm9fzt59q5y2s8qwgbqhvf6d3z5bjy3qb2t4.m3u8
 #EXTINF:-1 tvg-id="StarGoldHD.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Star Gold HD (1080p) [Offline]
+#EXTVLCOPT:http-user-agent=stream
 http://103.81.104.118/hls/stream19.m3u8
 #EXTINF:-1 tvg-id="StarMaa.in" tvg-country="IN" tvg-language="Telugu" tvg-logo="https://i.imgur.com/oBXBjk6.png" group-title="Entertainment",Star Maa [Geo-blocked]
 http://maatv-i.akamaihd.net/hls/live/569930/maatv/master_2000.m3u8
 #EXTINF:-1 tvg-id="StarPlusHD.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/Hgl0JGO.png" group-title="",Star Plus HD (720p)
+#EXTVLCOPT:http-user-agent=stream
 http://208.115.215.42/Utsav_Plus_HD/playlist.m3u8
 #EXTINF:-1 tvg-id="StarUtsav.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Star Utsav [Offline]
 https://dolv5imquuojb.cloudfront.net/ST_UTSAV.m3u8
@@ -600,8 +602,10 @@ https://query-streamlink.herokuapp.com/iptv-query?streaming-ip=https://www.youtu
 #EXTINF:-1 tvg-id="SunNews.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="https://i.imgur.com/mQWpBdv.png" group-title="",Sun News (720p) [Offline]
 https://query-streamlink.herokuapp.com/iptv-query?streaming-ip=https://www.youtube.com/channel/UCYlh4lH762HvHt6mmiecyWQ/live
 #EXTINF:-1 tvg-id="SunTV.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="https://i.imgur.com/U30x7Y4.jpg" group-title="",Sun TV (720p)
+#EXTVLCOPT:http-user-agent=stream
 http://uk4.zecast.com:1935/star-live/suntv.stream/index.m3u8
 #EXTINF:-1 tvg-id="SuryaMovies.in" tvg-country="IN" tvg-language="Malayalam" tvg-logo="" group-title="Movies",Surya Movies (406p)
+#EXTVLCOPT:http-user-agent=stream
 https://catchup.yuppcdn.net/amazonv2/20/preview/suryamovies/master/master.m3u8
 #EXTINF:-1 tvg-id="SuryaMusic.in" tvg-country="IN" tvg-language="Malayalam" tvg-logo="https://i.imgur.com/jsC8FC7.png" group-title="Music",Surya Music (480p)
 https://indo51.gcdn.co/MALYLAM-SuryaMusic/index.m3u8
@@ -645,8 +649,8 @@ http://103.199.160.85/Content/24news/Live/Channel(24news)/index.m3u8
 https://cdn.logicwebs.in/hls/ublhdkey.m3u8
 #EXTINF:-1 tvg-id="UthradamMovies.in" tvg-country="IN" tvg-language="Malayalam" tvg-logo="https://i.imgur.com/KdsS0g5.png" group-title="Movies",Uthradam Movies (576p)
 http://185.105.4.245:1935/livesp/uthradam/playlist.m3u8
-#EXTINF:-1 tvg-id="UtsavGold.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/FYym7gH.png" group-title="Movies",Utsav Gold (720p) [Offline]
-http://xlx723.dyndns.org/iproxy/miniProxy.php/http://208.115.215.42/Utsav_Gold_HD/index.m3u8
+#EXTINF:-1 tvg-id="UtsavGold.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/FYym7gH.png" group-title="Movies",Utsav Gold (720p) [Not 24/7]
+http://208.115.215.42/Utsav_Gold_HD/index.m3u8
 #EXTINF:-1 tvg-id="Vaanavil.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="https://i.imgur.com/etr1k08.png" group-title="Music",Vaanvavil (576p)
 http://14.199.164.20:4001/play/a0nx/index.m3u8
 #EXTINF:-1 tvg-id="VasanthTV.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="" group-title="Entertainment",Vasanth TV [Offline]
