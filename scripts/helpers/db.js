@@ -11,11 +11,10 @@ db.load = async function () {
   const codes = await epg.codes.load()
   for (const file of files) {
     const playlist = await parser.parsePlaylist(file)
-    let guides = []
     for (const channel of playlist.channels) {
       const code = codes.find(ch => ch['tvg_id'] === channel.tvg.id)
-      if (code && Array.isArray(code.guides)) {
-        guides = [...guides, ...code.guides]
+      if (code && Array.isArray(code.guides) && code.guides.length) {
+        channel.tvg.url = code.guides[0]
       }
 
       db.channels.add(channel)
@@ -32,8 +31,6 @@ db.load = async function () {
         }
       }
     }
-
-    if (guides.length) playlist.header.attrs['url-tvg'] = guides.join(',')
 
     db.playlists.add(playlist)
   }
