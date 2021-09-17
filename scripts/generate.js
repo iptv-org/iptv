@@ -36,13 +36,16 @@ function createNoJekyllFile() {
 
 function generateIndex() {
   log.print('Generating index.m3u...\n')
+  const channels = db.channels.sortBy(['name', 'url']).removeDuplicates().removeOffline().get()
+  const guides = channels.map(channel => channel.tvg.url)
+
   const filename = `${ROOT_DIR}/index.m3u`
-  file.create(filename, '#EXTM3U\n')
+  const urlTvg = generateUrlTvg(guides)
+  file.create(filename, `#EXTM3U url-tvg="${urlTvg}"\n`)
 
   const nsfwFilename = `${ROOT_DIR}/index.nsfw.m3u`
-  file.create(nsfwFilename, '#EXTM3U\n')
+  file.create(nsfwFilename, `#EXTM3U url-tvg="${urlTvg}"\n`)
 
-  const channels = db.channels.sortBy(['name', 'url']).removeDuplicates().removeOffline().get()
   for (const channel of channels) {
     if (!channel.isNSFW()) {
       file.append(filename, channel.toString())
@@ -53,14 +56,17 @@ function generateIndex() {
 
 function generateCategoryIndex() {
   log.print('Generating index.category.m3u...\n')
-  const filename = `${ROOT_DIR}/index.category.m3u`
-  file.create(filename, '#EXTM3U\n')
-
   const channels = db.channels
     .sortBy(['category', 'name', 'url'])
     .removeDuplicates()
     .removeOffline()
     .get()
+  const guides = channels.map(channel => channel.tvg.url)
+
+  const filename = `${ROOT_DIR}/index.category.m3u`
+  const urlTvg = generateUrlTvg(guides)
+  file.create(filename, `#EXTM3U url-tvg="${urlTvg}"\n`)
+
   for (const channel of channels) {
     file.append(filename, channel.toString())
   }
@@ -68,50 +74,56 @@ function generateCategoryIndex() {
 
 function generateCountryIndex() {
   log.print('Generating index.country.m3u...\n')
-  const filename = `${ROOT_DIR}/index.country.m3u`
-  file.create(filename, '#EXTM3U\n')
 
+  const guides = []
+  const lines = []
   for (const country of [{ code: 'undefined' }, ...db.countries.sortBy(['name']).all()]) {
     const channels = db.channels
       .sortBy(['name', 'url'])
       .forCountry(country)
       .removeDuplicates()
+      .removeNSFW()
       .removeOffline()
       .get()
     for (const channel of channels) {
       const groupTitle = channel.group.title
-      const nsfw = channel.isNSFW()
       channel.group.title = country.name || ''
-      if (!nsfw) {
-        file.append(filename, channel.toString())
-      }
+      lines.push(channel.toString())
       channel.group.title = groupTitle
+      guides.push(channel.tvg.url)
     }
   }
+
+  const filename = `${ROOT_DIR}/index.country.m3u`
+  const urlTvg = generateUrlTvg(guides)
+  file.create(filename, `#EXTM3U url-tvg="${urlTvg}"\n${lines.join('')}`)
 }
 
 function generateLanguageIndex() {
   log.print('Generating index.language.m3u...\n')
-  const filename = `${ROOT_DIR}/index.language.m3u`
-  file.create(filename, '#EXTM3U\n')
 
+  const guides = []
+  const lines = []
   for (const language of [{ code: 'undefined' }, ...db.languages.sortBy(['name']).all()]) {
     const channels = db.channels
       .sortBy(['name', 'url'])
       .forLanguage(language)
       .removeDuplicates()
+      .removeNSFW()
       .removeOffline()
       .get()
     for (const channel of channels) {
       const groupTitle = channel.group.title
-      const nsfw = channel.isNSFW()
       channel.group.title = language.name || ''
-      if (!nsfw) {
-        file.append(filename, channel.toString())
-      }
+      lines.push(channel.toString())
       channel.group.title = groupTitle
+      guides.push(channel.tvg.url)
     }
   }
+
+  const filename = `${ROOT_DIR}/index.language.m3u`
+  const urlTvg = generateUrlTvg(guides)
+  file.create(filename, `#EXTM3U url-tvg="${urlTvg}"\n${lines.join('')}`)
 }
 
 function generateCategories() {
@@ -120,15 +132,17 @@ function generateCategories() {
   file.createDir(outputDir)
 
   for (const category of [...db.categories.all(), { id: 'other' }]) {
-    const filename = `${outputDir}/${category.id}.m3u`
-    file.create(filename, '#EXTM3U\n')
-
     const channels = db.channels
       .sortBy(['name', 'url'])
       .forCategory(category)
       .removeDuplicates()
       .removeOffline()
       .get()
+    const guides = channels.map(channel => channel.tvg.url)
+
+    const filename = `${outputDir}/${category.id}.m3u`
+    const urlTvg = generateUrlTvg(guides)
+    file.create(filename, `#EXTM3U url-tvg="${urlTvg}"\n`)
     for (const channel of channels) {
       file.append(filename, channel.toString())
     }
@@ -141,19 +155,20 @@ function generateCountries() {
   file.createDir(outputDir)
 
   for (const country of [...db.countries.all(), { code: 'undefined' }]) {
-    const filename = `${outputDir}/${country.code}.m3u`
-    file.create(filename, '#EXTM3U\n')
-
     const channels = db.channels
       .sortBy(['name', 'url'])
       .forCountry(country)
       .removeDuplicates()
       .removeOffline()
+      .removeNSFW()
       .get()
+    const guides = channels.map(channel => channel.tvg.url)
+
+    const filename = `${outputDir}/${country.code}.m3u`
+    const urlTvg = generateUrlTvg(guides)
+    file.create(filename, `#EXTM3U url-tvg="${urlTvg}"\n`)
     for (const channel of channels) {
-      if (!channel.isNSFW()) {
-        file.append(filename, channel.toString())
-      }
+      file.append(filename, channel.toString())
     }
   }
 }
@@ -164,19 +179,20 @@ function generateLanguages() {
   file.createDir(outputDir)
 
   for (const language of [...db.languages.all(), { code: 'undefined' }]) {
-    const filename = `${outputDir}/${language.code}.m3u`
-    file.create(filename, '#EXTM3U\n')
-
     const channels = db.channels
       .sortBy(['name', 'url'])
       .forLanguage(language)
       .removeDuplicates()
       .removeOffline()
+      .removeNSFW()
       .get()
+    const guides = channels.map(channel => channel.tvg.url)
+
+    const filename = `${outputDir}/${language.code}.m3u`
+    const urlTvg = generateUrlTvg(guides)
+    file.create(filename, `#EXTM3U url-tvg="${urlTvg}"\n`)
     for (const channel of channels) {
-      if (!channel.isNSFW()) {
-        file.append(filename, channel.toString())
-      }
+      file.append(filename, channel.toString())
     }
   }
 }
@@ -195,6 +211,15 @@ function showResults() {
   log.print(
     `Total: ${db.channels.count()} channels, ${db.countries.count()} countries, ${db.languages.count()} languages, ${db.categories.count()} categories.\n`
   )
+}
+
+function generateUrlTvg(guides) {
+  const output = guides.reduce((acc, curr) => {
+    if (curr && !acc.includes(curr)) acc.push(curr)
+    return acc
+  }, [])
+
+  return output.sort().join(',')
 }
 
 main()

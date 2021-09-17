@@ -187,10 +187,6 @@ function parseRequests(requests) {
 
 function updateDescription(channel, playlist) {
   const code = playlist.country.code
-  // tvg-name
-  if (!channel.tvg.name && channel.name) {
-    channel.tvg.name = channel.name.replace(/\"/gi, '')
-  }
   // tvg-id
   if (!channel.tvg.id && channel.tvg.name) {
     const id = utils.name2id(channel.tvg.name)
