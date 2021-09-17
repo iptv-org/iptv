@@ -33,14 +33,14 @@ http://ott-cdn.ucom.am/s33/index.m3u8
 https://sc.id-tv.kz/A2.m3u8
 #EXTINF:-1 tvg-id="AkudjiTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Movies",Akudji TV (720p)
 https://hls.goodgame.ru/hls/5346.m3u8
-#EXTINF:-1 tvg-id="AmediaHit.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Movies",Amedia Hit (1080p) [Offline]
+#EXTINF:-1 tvg-id="AmediaHit.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Movies",Amedia Hit (1080p) [Not 24/7]
 https://sc.id-tv.kz/amedia_hit_hd.m3u8
 #EXTINF:-1 tvg-id="AmediaPremium.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/UHo6cwX.png" group-title="",Amedia Premium (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s64/index.m3u8
 #EXTINF:-1 tvg-id="AtamekenBusiness.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Business",Atameken Business (1080p) [Not 24/7]
 http://live.atameken.cdnvideo.ru/atameken/atameken.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="BollywoodHD.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Movies",Bollywood HD [Offline]
+#EXTINF:-1 tvg-id="BollywoodHD.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Movies",Bollywood HD [Not 24/7]
 https://sc.id-tv.kz/bollywood_hd.m3u8
 #EXTINF:-1 tvg-id="BridgeTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/L71iY9t.png" group-title="Music",Bridge TV (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
@@ -62,7 +62,7 @@ https://v3.catcast.tv/content/38105/index.m3u8
 http://37.193.6.155:34040/udp/239.1.9.2:1234
 #EXTINF:-1 tvg-id="HDMedia.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/hd-media.png" group-title="Entertainment",HD Медиа (720p)
 https://strm.yandex.ru/kal/hdmedia/hdmedia0.m3u8
-#EXTINF:-1 tvg-id="HDL.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Documentary",HDL [Offline]
+#EXTINF:-1 tvg-id="HDL.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Documentary",HDL [Not 24/7]
 https://sc.id-tv.kz/hdl.m3u8
 #EXTINF:-1 tvg-id="HITV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Music",HITV (1080p)
 https://strm.yandex.ru/kal/hittv/hittv0.m3u8
@@ -397,10 +397,10 @@ http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8
 https://sc.id-tv.kz/Mir24.m3u8
 #EXTINF:-1 tvg-id="MirBelogorya.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="http://mirbelogorya.ru/images/stories/news/2014/08/мир/0белогорья_логотип.jpg" group-title="Local",Мир Белагорья (720p)
 http://mirbelogorya.ru:8080/mirbelogorya/index.m3u8
-#EXTINF:-1 tvg-id="MirBelogorya.ru" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Мир Белогорья (720p)
-http://live-mirbelogorya.cdnvideo.ru/mirbelogorya/mirbelogorya1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="MirBelogorya.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="http://mirbelogorya.ru/images/stories/news/2014/08/мир%20белогорья_логотип.jpg" group-title="Local",Мир Белогорья (720p)
 http://stream.tvbelgorod.ru:8080/mirbelogorya/index.m3u8
+#EXTINF:-1 tvg-id="MirBelogorya.ru" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Мир Белогорья (720p) [Offline]
+http://live-mirbelogorya.cdnvideo.ru/mirbelogorya/mirbelogorya1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="MirSeriala.ru" tvg-country="RU" tvg-language="" tvg-logo="" group-title="",Мир Сериала (576p)
 http://185.161.224.216/dash/Mir_seriala_SD.ism/playlist.mpd
 #EXTINF:-1 tvg-id="Mirseriala.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Movies",Мир сериала (576p)
