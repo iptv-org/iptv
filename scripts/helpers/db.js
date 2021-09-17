@@ -2,15 +2,21 @@ const categories = require('../data/categories')
 const parser = require('./parser')
 const utils = require('./utils')
 const file = require('./file')
+const epg = require('./epg')
 
 const db = {}
 
 db.load = async function () {
-  let files = await file.list()
+  const files = await file.list()
+  const codes = await epg.codes.load()
   for (const file of files) {
     const playlist = await parser.parsePlaylist(file)
-    db.playlists.add(playlist)
     for (const channel of playlist.channels) {
+      const code = codes.find(ch => ch['tvg_id'] === channel.tvg.id)
+      if (code && Array.isArray(code.guides) && code.guides.length) {
+        channel.tvg.url = code.guides[0]
+      }
+
       db.channels.add(channel)
 
       for (const country of channel.countries) {
@@ -25,6 +31,8 @@ db.load = async function () {
         }
       }
     }
+
+    db.playlists.add(playlist)
   }
 }
 
