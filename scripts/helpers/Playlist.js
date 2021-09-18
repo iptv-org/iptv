@@ -11,17 +11,21 @@ module.exports = class Playlist {
     this.updated = false
   }
 
-  toString(options = {}) {
-    const config = { raw: false, ...options }
-    let parts = ['#EXTM3U']
+  getHeader() {
+    let header = ['#EXTM3U']
     for (let key in this.header.attrs) {
       let value = this.header.attrs[key]
       if (value) {
-        parts.push(`${key}="${value}"`)
+        header.push(`${key}="${value}"`)
       }
     }
 
-    let output = `${parts.join(' ')}\n`
+    return header.join(' ')
+  }
+
+  toString(options = {}) {
+    const config = { raw: false, ...options }
+    let output = `${this.getHeader()}\n`
     for (let channel of this.channels) {
       output += channel.toString(config.raw)
     }
