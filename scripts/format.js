@@ -114,6 +114,7 @@ function updateStatus(channel, status) {
       channel.status = channel.status === 'Offline' ? 'Not 24/7' : null
       break
     case 'offline':
+    case 'error_403':
       channel.status = 'Offline'
       break
   }
