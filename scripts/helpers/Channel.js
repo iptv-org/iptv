@@ -148,7 +148,7 @@ module.exports = class Channel {
       countries: this.countries,
       tvg: {
         id: this.tvg.id || null,
-        name: this.tvg.name || null,
+        name: this.tvg.name || this.name.replace(/\"/gi, ''),
         url: this.tvg.url || null
       }
     }
