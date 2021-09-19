@@ -40,40 +40,6 @@ async function main() {
   log.finish()
 }
 
-function loadCodes() {
-  return epg.codes
-    .load()
-    .then(codes => {
-      let output = {}
-      codes.forEach(item => {
-        output[item['tvg_id']] = item
-      })
-      return output
-    })
-    .catch(console.log)
-}
-
-function loadChannelJson() {
-  return axios
-    .get('https://iptv-org.github.io/iptv/channels.json')
-    .then(r => r.data)
-    .then(channels => {
-      let output = {}
-      channels.forEach(channel => {
-        const item = output[channel.tvg.id]
-        if (!item) {
-          output[channel.tvg.id] = channel
-        } else {
-          item.logo = item.logo || channel.logo
-          item.languages = item.languages.length ? item.languages : channel.languages
-          item.category = item.category || channel.category
-        }
-      })
-      return output
-    })
-    .catch(console.log)
-}
-
 function savePlaylist(playlist) {
   if (file.read(playlist.url) !== playlist.toString()) {
     log.print(`File '${playlist.url}' has been updated\n`)
@@ -87,10 +53,15 @@ async function updatePlaylist(playlist) {
   const total = playlist.channels.length
   log.print(`Processing '${playlist.url}'...\n`)
 
+  let channels = {}
+  let codes = {}
+  if (!config.offline) {
+    channels = await loadChannelJson()
+    codes = await loadCodes()
+  }
+
   buffer = {}
   origins = {}
-  const channels = await loadChannelJson()
-  const codes = await loadCodes()
   for (const [i, channel] of playlist.channels.entries()) {
     const curr = i + 1
     updateTvgName(channel)
@@ -285,6 +256,40 @@ function normalizeUrl(channel) {
 
 function parseNumber(str) {
   return parseInt(str)
+}
+
+function loadCodes() {
+  return epg.codes
+    .load()
+    .then(codes => {
+      let output = {}
+      codes.forEach(item => {
+        output[item['tvg_id']] = item
+      })
+      return output
+    })
+    .catch(console.log)
+}
+
+function loadChannelJson() {
+  return axios
+    .get('https://iptv-org.github.io/iptv/channels.json')
+    .then(r => r.data)
+    .then(channels => {
+      let output = {}
+      channels.forEach(channel => {
+        const item = output[channel.tvg.id]
+        if (!item) {
+          output[channel.tvg.id] = channel
+        } else {
+          item.logo = item.logo || channel.logo
+          item.languages = item.languages.length ? item.languages : channel.languages
+          item.category = item.category || channel.category
+        }
+      })
+      return output
+    })
+    .catch(console.log)
 }
 
 main()
