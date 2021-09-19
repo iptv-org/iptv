@@ -1,6 +1,7 @@
-const IPTVChecker = require('iptv-checker')
-const normalize = require('normalize-url')
+const axios = require('axios')
 const { program } = require('commander')
+const normalize = require('normalize-url')
+const IPTVChecker = require('iptv-checker')
 const parser = require('./helpers/parser')
 const utils = require('./helpers/utils')
 const file = require('./helpers/file')
@@ -38,6 +39,27 @@ async function main() {
   log.finish()
 }
 
+function loadChannelJson() {
+  return axios
+    .get('https://iptv-org.github.io/iptv/channels.json')
+    .then(r => r.data)
+    .then(channels => {
+      let output = {}
+      channels.forEach(channel => {
+        const item = output[channel.tvg.id]
+        if (!item) {
+          output[channel.tvg.id] = channel
+        } else {
+          item.logo = item.logo || channel.logo
+          item.languages = item.languages.length ? item.languages : channel.languages
+          item.category = item.category || channel.category
+        }
+      })
+      return output
+    })
+    .catch(console.log)
+}
+
 function savePlaylist(playlist) {
   if (file.read(playlist.url) !== playlist.toString()) {
     log.print(`File '${playlist.url}' has been updated\n`)
@@ -53,10 +75,20 @@ async function updatePlaylist(playlist) {
 
   buffer = {}
   origins = {}
+  const channels = await loadChannelJson()
   for (const [i, channel] of playlist.channels.entries()) {
     const curr = i + 1
-    updateDescription(channel, playlist)
+    updateTvgName(channel)
+    updateTvgId(channel, playlist)
+    updateTvgCountry(channel, playlist)
     normalizeUrl(channel)
+
+    const data = channels[channel.tvg.id]
+    if (data) {
+      updateLogo(channel, data)
+      updateGroupTitle(channel, data)
+      updateTvgLanguage(channel, data)
+    }
 
     if (config.offline || ignoreStatus.includes(channel.status)) {
       continue
@@ -186,21 +218,45 @@ function parseRequests(requests) {
   return requests
 }
 
-function updateDescription(channel, playlist) {
+function updateTvgName(channel) {
+  if (!channel.tvg.name) {
+    channel.tvg.name = channel.name.replace(/\"/gi, '')
+  }
+}
+
+function updateTvgId(channel, playlist) {
   const code = playlist.country.code
-  // tvg-id
   if (!channel.tvg.id && channel.tvg.name) {
     const id = utils.name2id(channel.tvg.name)
     channel.tvg.id = id ? `${id}.${code}` : ''
   }
-  // country
+}
+
+function updateTvgCountry(channel, playlist) {
+  const code = playlist.country.code
   if (!channel.countries.length) {
     const name = utils.code2name(code)
     channel.countries = name ? [{ code, name }] : []
     channel.tvg.country = channel.countries.map(c => c.code.toUpperCase()).join(';')
   }
-  // group-title
-  channel.group.title = channel.category
+}
+
+function updateLogo(channel, data) {
+  if (!channel.logo) {
+    channel.logo = data.logo
+  }
+}
+
+function updateTvgLanguage(channel, data) {
+  if (!channel.tvg.language) {
+    channel.tvg.language = data.languages.map(l => l.name).join(';')
+  }
+}
+
+function updateGroupTitle(channel, data) {
+  if (!channel.group.title) {
+    channel.group.title = channel.category || data.category || ''
+  }
 }
 
 function normalizeUrl(channel) {
