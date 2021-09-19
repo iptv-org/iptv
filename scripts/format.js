@@ -6,6 +6,7 @@ const parser = require('./helpers/parser')
 const utils = require('./helpers/utils')
 const file = require('./helpers/file')
 const log = require('./helpers/log')
+const epg = require('./helpers/epg')
 
 const ignoreStatus = ['Geo-blocked', 'Not 24/7']
 
@@ -37,6 +38,19 @@ async function main() {
   }
 
   log.finish()
+}
+
+function loadCodes() {
+  return epg.codes
+    .load()
+    .then(codes => {
+      let output = {}
+      codes.forEach(item => {
+        output[item['tvg_id']] = item
+      })
+      return output
+    })
+    .catch(console.log)
 }
 
 function loadChannelJson() {
@@ -76,6 +90,7 @@ async function updatePlaylist(playlist) {
   buffer = {}
   origins = {}
   const channels = await loadChannelJson()
+  const codes = await loadCodes()
   for (const [i, channel] of playlist.channels.entries()) {
     const curr = i + 1
     updateTvgName(channel)
@@ -84,11 +99,10 @@ async function updatePlaylist(playlist) {
     normalizeUrl(channel)
 
     const data = channels[channel.tvg.id]
-    if (data) {
-      updateLogo(channel, data)
-      updateGroupTitle(channel, data)
-      updateTvgLanguage(channel, data)
-    }
+    const epgData = codes[channel.tvg.id]
+    updateLogo(channel, data, epgData)
+    updateGroupTitle(channel, data)
+    updateTvgLanguage(channel, data)
 
     if (config.offline || ignoreStatus.includes(channel.status)) {
       continue
@@ -241,20 +255,24 @@ function updateTvgCountry(channel, playlist) {
   }
 }
 
-function updateLogo(channel, data) {
+function updateLogo(channel, data, epgData) {
   if (!channel.logo) {
-    channel.logo = data.logo
+    if (data) {
+      channel.logo = data.logo
+    } else if (epgData) {
+      channel.logo = epgData.logo
+    }
   }
 }
 
 function updateTvgLanguage(channel, data) {
-  if (!channel.tvg.language) {
+  if (!channel.tvg.language && data) {
     channel.tvg.language = data.languages.map(l => l.name).join(';')
   }
 }
 
 function updateGroupTitle(channel, data) {
-  if (!channel.group.title) {
+  if (!channel.group.title && data) {
     channel.group.title = channel.category || data.category || ''
   }
 }
