@@ -56,7 +56,7 @@ async function updatePlaylist(playlist) {
   let channels = {}
   let codes = {}
   if (!config.offline) {
-    channels = await loadChannelJson()
+    channels = await loadChannelsJson()
     codes = await loadCodes()
   }
 
@@ -271,7 +271,7 @@ function loadCodes() {
     .catch(console.log)
 }
 
-function loadChannelJson() {
+function loadChannelsJson() {
   return axios
     .get('https://iptv-org.github.io/iptv/channels.json')
     .then(r => r.data)
