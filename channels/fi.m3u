@@ -1,13 +1,21 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="HimlenTV7.fi" tvg-country="FI" tvg-language="" tvg-logo="https://i.imgur.com/pW6pPFF.jpg" group-title="",Himlen TV 7 (720p)
-http://vod.tv7.fi:1935/tv7-se/_definst_/smil:tv7-se.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="HimlenTV7SE.fi" tvg-country="FI" tvg-language="" tvg-logo="" group-title="",Himlen TV7 (SE) (720p)
-http://vod.tv7.fi:1935/tv7-se/tv7-se.stream_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="TaevasTV7.fi" tvg-country="FI" tvg-language="" tvg-logo="https://i.imgur.com/FaQQdzz.png" group-title="",Taevas TV 7 (720p)
-https://vod.tv7.fi/tv7-ee/_definst_/smil:tv7-ee.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TaevasTV7EST.fi" tvg-country="FI" tvg-language="" tvg-logo="" group-title="",Taevas TV7 (EST) (720p)
-http://vod.tv7.fi:1935/tv7-ee/tv7-ee.stream_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="TaivasTV7.fi" tvg-country="FI" tvg-language="" tvg-logo="https://i.imgur.com/pIYSEUN.jpg" group-title="",Taivas TV7 (720p)
-http://vod.tv7.fi:1935/tv7-fi/tv7-fi.stream_720p/chunklist_w2131949141.m3u8
-#EXTINF:-1 tvg-id="TV7.fi" tvg-country="FI;SE;EE" tvg-language="Finnish" tvg-logo="https://i.imgur.com/pIYSEUN.jpg" group-title="",TV7 (720p)
-http://vod.tv7.fi:1935/tv7-fi/tv7-fi.stream_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="HimlenTV7.fi" tvg-country="SE" tvg-language="English;Swedish" tvg-logo="https://i.imgur.com/pW6pPFF.jpg" group-title="Religious",Himlen TV7 (720p)
+https://vod.tv7.fi/tv7-se/tv7-se.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TaevasTV7.fi" tvg-country="EE" tvg-language="Finnish;Estonian" tvg-logo="https://i.imgur.com/pIYSEUN.jpg" group-title="Religious",Taevas TV7 (720p)
+https://vod.tv7.fi/tv7-ee/tv7-ee.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TaivasTV7.fi" tvg-country="FI" tvg-language="Finnish" tvg-logo="https://i.imgur.com/pIYSEUN.jpg" group-title="Religious",Taivas TV7 (720p)
+https://vod.tv7.fi/tv7-fi/tv7-fi.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="NebesaTV7.fi" tvg-country="RU" tvg-language="Russian" tvg-logo="https://www.nebesatv7.com/wp-content/themes/tv7-theme/assets/img/logo_nebesa_short.png" group-title="Religious",Небеса ТВ7 (720p)
+https://vod.tv7.fi/tv7-ru/tv7-ru.smil/playlist.m3u8
+#EXTINF:0 tvg-id="YLETeemaFem.fi" tvg-country="INT" tvg-language="Finnish" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Yle_Teema_%26_Fem.svg/799px-Yle_Teema_%26_Fem.svg.png" group-title="",YLE Teema Fem (720p) [Not 24/7]
+https://yletvhdliveworld-lh.akamaihd.net/i/yleteemafemfiw_1@308915/master.m3u8
+#EXTINF:0 tvg-id="YLETeemaFem.fi" tvg-country="FI" tvg-language="Finnish" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Yle_Teema_%26_Fem.svg/799px-Yle_Teema_%26_Fem.svg.png" group-title="",YLE Teema Fem (720p) [Geo-blocked]
+https://yletv-lh.akamaihd.net/i/yleteemafemfi_1@490775/master.m3u8
+#EXTINF:0 tvg-id="YLETV1.fi" tvg-country="INT" tvg-language="Finnish" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Yle_TV1_logo.svg/382px-Yle_TV1_logo.svg.png" group-title="",YLE TV 1 (720p) [Not 24/7]
+https://yletvhdliveworld-lh.akamaihd.net/i/yletv1hdworld_1@187592/master.m3u8
+#EXTINF:0 tvg-id="YLETV1.fi" tvg-country="FI" tvg-language="Finnish" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Yle_TV1_logo.svg/382px-Yle_TV1_logo.svg.png" group-title="",YLE TV 1 (720p) [Geo-blocked]
+https://yletv-lh.akamaihd.net/i/yletv1hls_1@103188/master.m3u8
+#EXTINF:0 tvg-id="YLETV2.fi" tvg-country="INT" tvg-language="Finnish" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Yle_TV2_logo.svg/399px-Yle_TV2_logo.svg.png" group-title="",YLE TV 2 (720p) [Not 24/7]
+https://yletvhdliveworld-lh.akamaihd.net/i/yletv2hdworld_1@187593/master.m3u8
+#EXTINF:0 tvg-id="YLETV2.fi" tvg-country="FI" tvg-language="Finnish" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Yle_TV2_logo.svg/399px-Yle_TV2_logo.svg.png" group-title="",YLE TV 2 (720p) [Geo-blocked]
+https://yletv-lh.akamaihd.net/i/yletv2hls_1@103189/master.m3u8
