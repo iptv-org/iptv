@@ -36,7 +36,11 @@ function createNoJekyllFile() {
 
 function generateIndex() {
   log.print('Generating index.m3u...\n')
-  const channels = db.channels.sortBy(['name', 'url']).removeDuplicates().removeOffline().get()
+  const channels = db.channels
+    .sortBy(['name', 'status', 'resolution.height', 'url'], ['asc', 'asc', 'desc', 'asc'])
+    .removeDuplicates()
+    .removeOffline()
+    .get()
   const guides = channels.map(channel => channel.tvg.url)
 
   const filename = `${ROOT_DIR}/index.m3u`
@@ -57,7 +61,10 @@ function generateIndex() {
 function generateCategoryIndex() {
   log.print('Generating index.category.m3u...\n')
   const channels = db.channels
-    .sortBy(['category', 'name', 'url'])
+    .sortBy(
+      ['category', 'name', 'status', 'resolution.height', 'url'],
+      ['asc', 'asc', 'asc', 'desc', 'asc']
+    )
     .removeDuplicates()
     .removeOffline()
     .get()
@@ -79,7 +86,7 @@ function generateCountryIndex() {
   const lines = []
   for (const country of [{ code: 'undefined' }, ...db.countries.sortBy(['name']).all()]) {
     const channels = db.channels
-      .sortBy(['name', 'url'])
+      .sortBy(['name', 'status', 'resolution.height', 'url'], ['asc', 'asc', 'desc', 'asc'])
       .forCountry(country)
       .removeDuplicates()
       .removeNSFW()
@@ -106,7 +113,7 @@ function generateLanguageIndex() {
   const lines = []
   for (const language of [{ code: 'undefined' }, ...db.languages.sortBy(['name']).all()]) {
     const channels = db.channels
-      .sortBy(['name', 'url'])
+      .sortBy(['name', 'status', 'resolution.height', 'url'], ['asc', 'asc', 'desc', 'asc'])
       .forLanguage(language)
       .removeDuplicates()
       .removeNSFW()
@@ -133,7 +140,7 @@ function generateCategories() {
 
   for (const category of [...db.categories.all(), { id: 'other' }]) {
     const channels = db.channels
-      .sortBy(['name', 'url'])
+      .sortBy(['name', 'status', 'resolution.height', 'url'], ['asc', 'asc', 'desc', 'asc'])
       .forCategory(category)
       .removeDuplicates()
       .removeOffline()
@@ -156,7 +163,7 @@ function generateCountries() {
 
   for (const country of [...db.countries.all(), { code: 'undefined' }]) {
     const channels = db.channels
-      .sortBy(['name', 'url'])
+      .sortBy(['name', 'status', 'resolution.height', 'url'], ['asc', 'asc', 'desc', 'asc'])
       .forCountry(country)
       .removeDuplicates()
       .removeOffline()
@@ -180,7 +187,7 @@ function generateLanguages() {
 
   for (const language of [...db.languages.all(), { code: 'undefined' }]) {
     const channels = db.channels
-      .sortBy(['name', 'url'])
+      .sortBy(['name', 'status', 'resolution.height', 'url'], ['asc', 'asc', 'desc', 'asc'])
       .forLanguage(language)
       .removeDuplicates()
       .removeOffline()
@@ -201,7 +208,7 @@ function generateChannelsJson() {
   log.print('Generating channels.json...\n')
   const filename = `${ROOT_DIR}/channels.json`
   const channels = db.channels
-    .sortBy(['name', 'url'])
+    .sortBy(['name', 'status', 'resolution.height', 'url'], ['asc', 'asc', 'desc', 'asc'])
     .get()
     .map(c => c.toObject())
   file.create(filename, JSON.stringify(channels))
