@@ -84,9 +84,8 @@ db.channels = {
     if (!this.duplicates) {
       const buffer = []
       output = output.filter(channel => {
-        const info = channel.getInfo()
-        if (buffer.includes(info)) return false
-        buffer.push(info)
+        if (buffer.includes(channel.hash)) return false
+        buffer.push(channel.hash)
 
         return true
       })
