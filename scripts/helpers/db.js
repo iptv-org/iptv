@@ -84,9 +84,8 @@ db.channels = {
     if (!this.duplicates) {
       const buffer = []
       output = output.filter(channel => {
-        const info = channel.getInfo()
-        if (buffer.includes(info)) return false
-        buffer.push(info)
+        if (buffer.includes(channel.hash)) return false
+        buffer.push(channel.hash)
 
         return true
       })
@@ -152,8 +151,8 @@ db.channels = {
   count() {
     return this.get().length
   },
-  sortBy(fields) {
-    this.list = utils.sortBy(this.list, fields)
+  sortBy(fields, order) {
+    this.list = utils.sortBy(this.list, fields, order)
 
     return this
   }
@@ -173,8 +172,8 @@ db.countries = {
   count() {
     return this.list.length
   },
-  sortBy(fields) {
-    this.list = utils.sortBy(this.list, fields)
+  sortBy(fields, order) {
+    this.list = utils.sortBy(this.list, fields, order)
 
     return this
   }
@@ -194,8 +193,8 @@ db.languages = {
   count() {
     return this.list.length
   },
-  sortBy(fields) {
-    this.list = utils.sortBy(this.list, fields)
+  sortBy(fields, order) {
+    this.list = utils.sortBy(this.list, fields, order)
 
     return this
   }
@@ -225,8 +224,8 @@ db.playlists = {
   except(list = []) {
     return this.list.filter(playlist => !list.includes(playlist.filename))
   },
-  sortBy(fields) {
-    this.list = utils.sortBy(this.list, fields)
+  sortBy(fields, order) {
+    this.list = utils.sortBy(this.list, fields, order)
 
     return this
   },
