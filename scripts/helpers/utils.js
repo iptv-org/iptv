@@ -1,5 +1,6 @@
-const transliteration = require('transliteration')
+const { orderBy } = require('natural-orderby')
 const iso6393 = require('@freearhey/iso-639-3')
+const transliteration = require('transliteration')
 const categories = require('../data/categories')
 const regions = require('../data/regions')
 
@@ -54,20 +55,13 @@ utils.language2code = function (name) {
   return lang && lang.code ? lang.code : null
 }
 
-utils.sortBy = function (arr, fields) {
-  return arr.sort((a, b) => {
-    for (let field of fields) {
-      let propA = a[field] ? a[field].toLowerCase() : ''
-      let propB = b[field] ? b[field].toLowerCase() : ''
-      if (propA === 'undefined') return 1
-      if (propB === 'undefined') return -1
-      if (propA === 'other') return 1
-      if (propB === 'other') return -1
-      if (propA < propB) return -1
-      if (propA > propB) return 1
-    }
-    return 0
+utils.sortBy = function (arr, fields, order = null) {
+  fields = fields.map(field => {
+    if (field === 'resolution.height') return channel => channel.resolution.height || 0
+    if (field === 'status') return channel => channel.status || ''
+    return channel => channel[field]
   })
+  return orderBy(arr, fields, order)
 }
 
 utils.removeProtocol = function (string) {
