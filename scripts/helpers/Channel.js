@@ -109,9 +109,11 @@ module.exports = class Channel {
   }
 
   getInfo() {
-    let info = `-1 tvg-id="${this.tvg.id}" tvg-country="${this.tvg.country}" tvg-language="${this.tvg.language}" tvg-logo="${this.logo}"`
+    let info = `-1 tvg-id="${this.tvg.id}" tvg-country="${this.tvg.country || ''}" tvg-language="${
+      this.tvg.language || ''
+    }" tvg-logo="${this.logo || ''}"`
 
-    info += ` group-title="${this.group.title}",${this.name}`
+    info += ` group-title="${this.group.title || ''}",${this.name}`
 
     if (this.resolution.height) {
       info += ` (${this.resolution.height}p)`
@@ -148,7 +150,7 @@ module.exports = class Channel {
       countries: this.countries,
       tvg: {
         id: this.tvg.id || null,
-        name: this.tvg.name || null,
+        name: this.tvg.name || this.name.replace(/\"/gi, ''),
         url: this.tvg.url || null
       }
     }

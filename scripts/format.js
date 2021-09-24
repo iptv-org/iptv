@@ -1,10 +1,12 @@
-const IPTVChecker = require('iptv-checker')
-const normalize = require('normalize-url')
+const axios = require('axios')
 const { program } = require('commander')
+const normalize = require('normalize-url')
+const IPTVChecker = require('iptv-checker')
 const parser = require('./helpers/parser')
 const utils = require('./helpers/utils')
 const file = require('./helpers/file')
 const log = require('./helpers/log')
+const epg = require('./helpers/epg')
 
 const ignoreStatus = ['Geo-blocked', 'Not 24/7']
 
@@ -51,12 +53,27 @@ async function updatePlaylist(playlist) {
   const total = playlist.channels.length
   log.print(`Processing '${playlist.url}'...\n`)
 
+  let channels = {}
+  let codes = {}
+  if (!config.offline) {
+    channels = await loadChannelsJson()
+    codes = await loadCodes()
+  }
+
   buffer = {}
   origins = {}
   for (const [i, channel] of playlist.channels.entries()) {
     const curr = i + 1
-    updateDescription(channel, playlist)
+    updateTvgName(channel)
+    updateTvgId(channel, playlist)
+    updateTvgCountry(channel, playlist)
     normalizeUrl(channel)
+
+    const data = channels[channel.tvg.id]
+    const epgData = codes[channel.tvg.id]
+    updateLogo(channel, data, epgData)
+    updateGroupTitle(channel, data)
+    updateTvgLanguage(channel, data)
 
     if (config.offline || ignoreStatus.includes(channel.status)) {
       continue
@@ -114,6 +131,7 @@ function updateStatus(channel, status) {
       channel.status = channel.status === 'Offline' ? 'Not 24/7' : null
       break
     case 'offline':
+    case 'error_403':
       channel.status = 'Offline'
       break
   }
@@ -185,25 +203,49 @@ function parseRequests(requests) {
   return requests
 }
 
-function updateDescription(channel, playlist) {
-  const code = playlist.country.code
-  // tvg-name
-  if (!channel.tvg.name && channel.name) {
+function updateTvgName(channel) {
+  if (!channel.tvg.name) {
     channel.tvg.name = channel.name.replace(/\"/gi, '')
   }
-  // tvg-id
+}
+
+function updateTvgId(channel, playlist) {
+  const code = playlist.country.code
   if (!channel.tvg.id && channel.tvg.name) {
     const id = utils.name2id(channel.tvg.name)
     channel.tvg.id = id ? `${id}.${code}` : ''
   }
-  // country
+}
+
+function updateTvgCountry(channel, playlist) {
+  const code = playlist.country.code
   if (!channel.countries.length) {
     const name = utils.code2name(code)
     channel.countries = name ? [{ code, name }] : []
     channel.tvg.country = channel.countries.map(c => c.code.toUpperCase()).join(';')
   }
-  // group-title
-  channel.group.title = channel.category
+}
+
+function updateLogo(channel, data, epgData) {
+  if (!channel.logo) {
+    if (data) {
+      channel.logo = data.logo
+    } else if (epgData) {
+      channel.logo = epgData.logo
+    }
+  }
+}
+
+function updateTvgLanguage(channel, data) {
+  if (!channel.tvg.language && data) {
+    channel.tvg.language = data.languages.map(l => l.name).join(';')
+  }
+}
+
+function updateGroupTitle(channel, data) {
+  if (!channel.group.title && data) {
+    channel.group.title = channel.category || data.category || ''
+  }
 }
 
 function normalizeUrl(channel) {
@@ -214,6 +256,40 @@ function normalizeUrl(channel) {
 
 function parseNumber(str) {
   return parseInt(str)
+}
+
+function loadCodes() {
+  return epg.codes
+    .load()
+    .then(codes => {
+      let output = {}
+      codes.forEach(item => {
+        output[item['tvg_id']] = item
+      })
+      return output
+    })
+    .catch(console.log)
+}
+
+function loadChannelsJson() {
+  return axios
+    .get('https://iptv-org.github.io/iptv/channels.json')
+    .then(r => r.data)
+    .then(channels => {
+      let output = {}
+      channels.forEach(channel => {
+        const item = output[channel.tvg.id]
+        if (!item) {
+          output[channel.tvg.id] = channel
+        } else {
+          item.logo = item.logo || channel.logo
+          item.languages = item.languages.length ? item.languages : channel.languages
+          item.category = item.category || channel.category
+        }
+      })
+      return output
+    })
+    .catch(console.log)
 }
 
 main()

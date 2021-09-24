@@ -2,15 +2,21 @@ const categories = require('../data/categories')
 const parser = require('./parser')
 const utils = require('./utils')
 const file = require('./file')
+const epg = require('./epg')
 
 const db = {}
 
 db.load = async function () {
-  let files = await file.list()
+  const files = await file.list()
+  const codes = await epg.codes.load()
   for (const file of files) {
     const playlist = await parser.parsePlaylist(file)
-    db.playlists.add(playlist)
     for (const channel of playlist.channels) {
+      const code = codes.find(ch => ch['tvg_id'] === channel.tvg.id)
+      if (code && Array.isArray(code.guides) && code.guides.length) {
+        channel.tvg.url = code.guides[0]
+      }
+
       db.channels.add(channel)
 
       for (const country of channel.countries) {
@@ -25,6 +31,8 @@ db.load = async function () {
         }
       }
     }
+
+    db.playlists.add(playlist)
   }
 }
 
@@ -76,9 +84,8 @@ db.channels = {
     if (!this.duplicates) {
       const buffer = []
       output = output.filter(channel => {
-        const info = channel.getInfo()
-        if (buffer.includes(info)) return false
-        buffer.push(info)
+        if (buffer.includes(channel.hash)) return false
+        buffer.push(channel.hash)
 
         return true
       })
@@ -144,8 +151,8 @@ db.channels = {
   count() {
     return this.get().length
   },
-  sortBy(fields) {
-    this.list = utils.sortBy(this.list, fields)
+  sortBy(fields, order) {
+    this.list = utils.sortBy(this.list, fields, order)
 
     return this
   }
@@ -165,8 +172,8 @@ db.countries = {
   count() {
     return this.list.length
   },
-  sortBy(fields) {
-    this.list = utils.sortBy(this.list, fields)
+  sortBy(fields, order) {
+    this.list = utils.sortBy(this.list, fields, order)
 
     return this
   }
@@ -186,8 +193,8 @@ db.languages = {
   count() {
     return this.list.length
   },
-  sortBy(fields) {
-    this.list = utils.sortBy(this.list, fields)
+  sortBy(fields, order) {
+    this.list = utils.sortBy(this.list, fields, order)
 
     return this
   }
@@ -217,8 +224,8 @@ db.playlists = {
   except(list = []) {
     return this.list.filter(playlist => !list.includes(playlist.filename))
   },
-  sortBy(fields) {
-    this.list = utils.sortBy(this.list, fields)
+  sortBy(fields, order) {
+    this.list = utils.sortBy(this.list, fields, order)
 
     return this
   },
