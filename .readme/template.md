@@ -105,6 +105,12 @@ If successful, you should get the following response:
 ```
 </details>
 
+## EPG
+
+Playlists already have a built-in list of EPG, so players that support the `url-tvg` tag should load it automatically. If not, you can find a list of available programs here:
+
+https://github.com/iptv-org/epg
+
 ## Resources
 
 You can find links to various IPTV related resources in this repository [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv).
