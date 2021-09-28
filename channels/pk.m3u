@@ -1,13 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="92News.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/OifwcrE.png" group-title="News",92 News (720p) [Offline]
-https://92news.vdn.dstreamone.net/92newshd/92hd/playlist.m3u8
+https://query-streamlink.herokuapp.com/iptv-query?streaming-ip=https://www.youtube.com/channel/UCsgC5cbz3DE2Shh34gNKiog/live
 #EXTINF:-1 tvg-id="92NewsUK.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/SzaGz3D.jpg" group-title="Local",92 News UK (576p)
 https://securecontributions.sechls01.visionip.tv/live/securecontributions-securecontributions-92_news-hsslive-25f-16x9-SD/chunklist.m3u8
-#EXTINF:-1 tvg-id="ARYDigital.pk" tvg-country="PK" tvg-language="" tvg-logo="https://i.imgur.com/TVP7g03.png" group-title="",ARY Digital [Offline]
-#EXTVLCOPT:http-referrer=https://live.arydigital.tv
+#EXTINF:-1 tvg-id="ARYDigital.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/TVP7g03.png" group-title="",ARY Digital (1080p) [Offline]
+#EXTVLCOPT:http-referrer=https://live.arydigital.tv/
 https://6zklx4wryw9b-hls-live.5centscdn.com/arydigital/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="ARYNews.pk" tvg-country="PK" tvg-language="" tvg-logo="https://i.imgur.com/R4KtTbJ.jpg" group-title="News",ARY News [Offline]
-#EXTVLCOPT:http-referrer=https://live.arynews.tv
+#EXTINF:-1 tvg-id="ARYNews.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/R4KtTbJ.jpg" group-title="News",ARY News (720p) [Offline]
+#EXTVLCOPT:http-referrer=https://live.arynews.tv/
 https://6zklx4wryw9b-hls-live.5centscdn.com/arynewsweb/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="AVTKhyber.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/uh8HAPY.jpg" group-title="",AVT Khyber (414p) [Not 24/7]
 https://dcunilive38-lh.akamaihd.net/i/dclive_1@692670/master.m3u8
@@ -39,9 +39,15 @@ https://dcunilive38-lh.akamaihd.net/i/dclive_1@692677/master.m3u8
 http://mlive.lahorenews.tv/lahorelive/lnews_1/chunklist_DVR.m3u8
 #EXTINF:-1 tvg-id="OneGolf.pk" tvg-country="PK" tvg-language="" tvg-logo="https://i.imgur.com/CKnSeT7.png" group-title="Sports",One Golf (720p)
 http://162.250.201.58:6211/pk/ONEGOLF/index.m3u8
-#EXTINF:-1 tvg-id="PTV.pk" tvg-country="PK" tvg-language="" tvg-logo="" group-title="",PTV (480p) [Not 24/7]
-https://iptv--iptv.repl.co/streamlink?url=https://dai.ly/x5cr6b9
-#EXTINF:-1 tvg-id="PTVSports.pk" tvg-country="PK" tvg-language="" tvg-logo="" group-title="",PTV Sports (1080p) [Offline]
+#EXTINF:-1 tvg-id="PTVHome.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/mJxpdBU.png" group-title="",PTV Home (238p)
+https://live.ptv.com.pk/live/stream/ptvhome/playlist.m3u8
+#EXTINF:-1 tvg-id="PTVNews.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/LyqGxwv.jpg" group-title="News",PTV News (1080p) [Not 24/7]
+https://query-streamlink.herokuapp.com/iptv-query?streaming-ip=https://www.youtube.com/channel/UC5RvV_LtR1dxPCVFGw6dxXA/live
+#EXTINF:-1 tvg-id="PTVSports.pk" tvg-country="PK" tvg-language="" tvg-logo="https://i.imgur.com/MWm7yEa.png" group-title="Sport",PTV Sports (1080p) [Offline]
 http://103.81.104.118/hls/stream11.m3u8
+#EXTINF:-1 tvg-id="PTVWorld.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/eeDFRgN.png" group-title="",PTV World (360p)
+https://live.ptv.com.pk/live/ptvworld/playlist.m3u8
+#EXTINF:-1 tvg-id="SuchTV.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/WlxWJm1.png" group-title="News",Such TV (720p) [Not 24/7]
+https://query-streamlink.herokuapp.com/iptv-query?streaming-ip=https://www.dailymotion.com/video/x72hrde
 #EXTINF:-1 tvg-id="ZindagiTV.pk" tvg-country="PK" tvg-language="Urdu" tvg-logo="https://i.imgur.com/RtHeRwp.png" group-title="",Zindagi TV (576p)
 https://5ad386ff92705.streamlock.net/live_transcoder/ngrp:zindagitv.stream_all/chunklist.m3u8
