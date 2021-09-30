@@ -15,7 +15,7 @@ http://85.132.81.184:8080/atv-2/index.m3u8
 http://85.132.81.184:8080/atv-4/index.m3u8
 #EXTINF:-1 tvg-id="AzNewsTV.az" tvg-country="AZ" tvg-language="" tvg-logo="" group-title="News",Az News TV (720p)
 https://swow1.socialsmart.tv/aznews/smil:aznews.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CBC.az" tvg-country="AZ;TR;GE" tvg-language="Azerbaijani;Russian" tvg-logo="https://i.imgur.com/4VAiAnb.jpg" group-title="",CBC (720p) [Offline]
+#EXTINF:-1 tvg-id="CBC.az" tvg-country="AZ;TR;GE" tvg-language="Azerbaijani;Russian" tvg-logo="https://i.imgur.com/4VAiAnb.jpg" group-title="",CBC (720p) [Not 24/7]
 http://cbctvlive.flashmediacast.com:1935/CBCTVLive/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ELTV.az" tvg-country="AZ" tvg-language="" tvg-logo="" group-title="",EL TV (432p) [Not 24/7]
 http://85.132.53.162:1935/live/eltv/playlist.m3u8
@@ -23,9 +23,13 @@ http://85.132.53.162:1935/live/eltv/playlist.m3u8
 https://node19.connect.az:8086/ch1/ch1.hi.m3u8
 #EXTINF:-1 tvg-id="ITV.az" tvg-country="AZ" tvg-language="Azerbaijani" tvg-logo="https://www.lyngsat-stream.com/logo/tv/ii/ictimai-tv-az.png" group-title="",İTV
 https://node19.connect.az:8086/ch1/ch1.med.m3u8
+<<<<<<< HEAD
 #EXTINF:-1 tvg-id="ITV.az" tvg-country="AZ" tvg-language="Azerbaijani" tvg-logo="https://www.lyngsat-stream.com/logo/tv/ii/ictimai-tv-az.png" group-title="",İTV
 https://node19.connect.az:9081/tv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="QBLTV.az" tvg-country="AZ" tvg-language="" tvg-logo="" group-title="",QƏBƏLƏ TV (480p)
+=======
+#EXTINF:-1 tvg-id="QBLTV.az" tvg-country="AZ" tvg-language="" tvg-logo="" group-title="",QƏBƏLƏ TV (480p) [Offline]
+>>>>>>> origin/master
 https://qebele.tv/live/stream/index.m3u8
 #EXTINF:-1 tvg-id="StarTV.az" tvg-country="AZ" tvg-language="" tvg-logo="" group-title="",Star TV (1080p) [Not 24/7]
 http://live.azstartv.com/azstar/smil:azstar.smil/playlist.m3u8
