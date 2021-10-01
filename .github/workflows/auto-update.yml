@@ -49,7 +49,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Format Playlists
-        run: node scripts/format.js --country=${{ matrix.country }} --debug --offline
+        run: node scripts/format.js --country=${{ matrix.country }} --debug
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
