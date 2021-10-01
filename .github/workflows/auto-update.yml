@@ -49,7 +49,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Format Playlists
-        run: node scripts/format.js --country=${{ matrix.country }} --debug
+        run: node scripts/format.js --country=${{ matrix.country }} --debug --offline
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -234,14 +234,9 @@ jobs:
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
           github_token: ${{ steps.generate-token.outputs.token }}
-      - name: Enable Pull Request Automerge
-        uses: peter-evans/enable-pull-request-automerge@v1
-        with:
-          token: ${{ secrets.PAT }}
-          pull-request-number: ${{ steps.pr.outputs.pr_number }}
-          merge-method: squash
-      - name: Approve Pull Request
-        uses: juliangruber/approve-pull-request-action@v1
+      - name: Merge Pull Request
+        uses: juliangruber/merge-pull-request-action@v1
         with:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pr.outputs.pr_number }}
+          method: squash
