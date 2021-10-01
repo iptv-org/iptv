@@ -55,9 +55,9 @@ https://edge6.vedge.infomaniak.com/livecast/smil:dbmtv.smil/manifest.m3u8
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ElHeddafTV.fr" tvg-country="DZ" tvg-language="" tvg-logo="https://i.imgur.com/qd1sCE8.png" group-title="",El Heddaf TV [Not 24/7]
 https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/htatv/EL_HEDDAF_TV_720p/chunks.m3u8
-#EXTINF:-1 tvg-id="EMCITV.fr" tvg-country="FR" tvg-language="" tvg-logo="https://i.imgur.com/avIsx8W.png" group-title="",EMCI TV (1080p)
+#EXTINF:-1 tvg-id="EMCITV.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/avIsx8W.png" group-title="",EMCI TV (1080p)
 https://emci-fr-hls.akamaized.net/hls/live/2007265/emcifrhls/04.m3u8
-#EXTINF:-1 tvg-id="EMCITV.fr" tvg-country="FR" tvg-language="" tvg-logo="https://i.imgur.com/avIsx8W.png" group-title="",EMCI TV Montreal (1080p)
+#EXTINF:-1 tvg-id="EMCITV.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/avIsx8W.png" group-title="",EMCI TV Montreal (1080p)
 https://emci-td-hls.akamaized.net/hls/live/2007264/emcitdhls/index.m3u8
 #EXTINF:-1 tvg-id="EuronewsAlbania.fr" tvg-country="AL" tvg-language="Albanian" tvg-logo="https://i.imgur.com/hTBah1z.jpg" group-title="News",Euronews Albania (1080p)
 https://iptv.dc-team.com/query?url=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
@@ -127,7 +127,7 @@ https://static.france24.com/live/F24_FR_HI_HLS/live_web.m3u8
 https://iptv.dc-team.com/query?url=https://www.youtube.com/c/franceinfo/live
 #EXTINF:-1 tvg-id="Francophonie.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/lvrvwtm.png" group-title="",Francophonie (360p)
 http://mv2.tvfrancophonie.org/live/Stream1/playlist.m3u8
-#EXTINF:-1 tvg-id="Francophonie24.fr" tvg-country="FR" tvg-language="" tvg-logo="https://github.com/geonsey/Free2ViewTV/blob/master/images/logos/Francophonie24_275x275.png?raw=true" group-title="",Francophonie24 (1080p)
+#EXTINF:-1 tvg-id="Francophonie24.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://github.com/geonsey/Free2ViewTV/blob/master/images/logos/Francophonie24_275x275.png?raw=true" group-title="",Francophonie24 (1080p)
 https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FTVNews.fr" tvg-country="FR" tvg-language="" tvg-logo="" group-title="News",FTV News (720p)
 http://210.61.56.23/hls/ftvtv/index.m3u8
@@ -205,12 +205,12 @@ http://51.210.199.21/hls/stream.m3u8
 http://51.210.199.59/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaVarzesh.fr" tvg-country="IR" tvg-language="Persian" tvg-logo="" group-title="Sports",Persiana Varzesh (1080p) [Offline]
 http://51.210.199.16/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PokerTV.fr" tvg-country="IR" tvg-language="" tvg-logo="https://i.imgur.com/l5fZQ3V.png" group-title="Sports",Poker TV [Not 24/7]
+#EXTINF:-1 tvg-id="PokerTV.fr" tvg-country="IR" tvg-language="English" tvg-logo="https://i.imgur.com/l5fZQ3V.png" group-title="Sports",Poker TV [Not 24/7]
 http://51.210.199.17/hls/stream.m3u8
 #EXTINF:-1 tvg-id="RMCDecouverte.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/2pZBr1Y.jpg" group-title="Documentary",RMC Découverte (720p) [Offline]
 https://s6.tntendirect.com/rmcdecouverte/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TebeSud.fr" tvg-country="FR" tvg-language="" tvg-logo="https://i.imgur.com/WCjP4Wk.jpg" group-title="",TébéSud (1080p)
-https://edge-live-ger1.ovstream.com/hls/10/index.m3u8
+#EXTINF:-1 tvg-id="TebeSud.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/WCjP4Wk.jpg" group-title="Local",TébéSud (1080p)
+https://edge-live-ger1.ovstream.com/hls/10/source.m3u8
 #EXTINF:-1 tvg-id="TF1.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/CJAbJfM.png" group-title="Entertainment",TF1 (720p)
 http://stream.suboroiptv.tv/TF1/playlist.m3u8
 #EXTINF:-1 tvg-id="TF1.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/CJAbJfM.png" group-title="Entertainment",TF1 (302p) [Not 24/7]
@@ -227,11 +227,11 @@ http://188.40.68.167/russia/tiji/playlist.m3u8
 http://hls.tmacaraibes.com/live/index.m3u8
 #EXTINF:-1 tvg-id="TMC.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/Neh3Yhm.jpg" group-title="",TMC (720p) [Offline]
 https://s6.tntendirect.com/tmc/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-country="FR" tvg-language="" tvg-logo="https://i.imgur.com/mwHtXya.jpg" group-title="General",TV5 Monde Europe (1080p)
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/mwHtXya.jpg" group-title="General",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-country="FR" tvg-language="" tvg-logo="https://i.imgur.com/mwHtXya.jpg" group-title="General",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/master.m3u8
-#EXTINF:-1 tvg-id="TV5MondeFranciaFR.fr" tvg-country="FR" tvg-language="" tvg-logo="" group-title="General",TV5Monde Francia FR (1080p)
+#EXTINF:-1 tvg-id="TV5MondeFranciaFR.fr" tvg-country="FR" tvg-language="French" tvg-logo="" group-title="General",TV5Monde Francia FR (1080p)
 https://tv5infohls-i.akamaihd.net/hls/live/631613/tv5infohls/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeInfo.fr" tvg-country="FR" tvg-language="French" tvg-logo="https://i.imgur.com/AJx5Fy2.png" group-title="General",TV5Monde Info (1080p)
 https://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/index.m3u8
