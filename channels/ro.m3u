@@ -37,8 +37,8 @@ https://stream1.antenaplay.ro/live/smil:CookPlay.smil/playlist.m3u8
 http://89.149.30.158:1935/CorneaTV/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="CredoTV.ro" tvg-country="RO" tvg-language="" tvg-logo="" group-title="",Credo TV (720p) [Not 24/7]
 http://cdn.credonet.tv:1935/ctv/smil:livecredo.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Digi24.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="" group-title="",Digi 24 (720p) [Offline]
-http://d-e-02.cdn.rdsnet.ro/DVR/digi24hdb.stream/playlit.m3u8
+#EXTINF:-1 tvg-id="Digi24.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="" group-title="",Digi 24 (720p)
+https://iptv-all.lanesh4d0w.codes/romania/digi24
 #EXTINF:-1 tvg-id="ElitaTV.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="https://i.imgur.com/Lmbmx3y.png" group-title="",Elita TV (576p)
 http://46.55.111.242:8080/Rezina.m3u8
 #EXTINF:-1 tvg-id="EstTVNeamt.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="https://i.ibb.co/kQJ10r8/est-tv-ro.png" group-title="Local",Est TV (Neamt) (576p) [Offline]
@@ -59,6 +59,15 @@ https://fms-https1.mediadirect.ro/live3/_definst_/kiss.smil/playlist.m3u8?publis
 http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
 #EXTINF:-1 tvg-id="MEDIAREGIONAL.ro" tvg-country="RO" tvg-language="" tvg-logo="" group-title="",MEDIA REGIONAL (576p)
 http://83.103.150.198:8080
+#EXTINF:-1 tvg-id="MoozDance.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="https://mooz.tv/site/img/mooz-dance.jpg" group-title="Music",MoozDance
+#EXTVLCOPT:http-referrer=https://mooz.tv/
+https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8
+#EXTINF:-1 tvg-id="MoozHits.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="https://mooz.tv/site/img/mooz-hits.jpg" group-title="Music",MoozHits
+#EXTVLCOPT:http-referrer=https://mooz.tv/
+https://rtmp.digitalbroadcast.ro/moozhits/moozhits.m3u8
+#EXTINF:-1 tvg-id="MoozRo.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="https://mooz.tv/site/img/mooz-ro1.png" group-title="Music",MoozRo
+#EXTVLCOPT:http-referrer=https://mooz.tv/
+https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8
 #EXTINF:-1 tvg-id="MusicChannelRomania.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="https://i.imgur.com/PRgvj4c.png" group-title="Music",Music Channel Romania (576p) [Offline]
 https://edge126.rcs-rds.ro/utvedge/musicchannelhq.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NasulTV.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="" group-title="",Naşul TV (720p) [Not 24/7]
@@ -89,7 +98,7 @@ http://us200.streamkit.tv/edge/sperantatv_1200/playlist.m3u8
 http://play.streamkit.tv/content/channel/sperantatv/live/sperantatv.player.m3u8
 #EXTINF:-1 tvg-id="Telestar1.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="https://i.imgur.com/qSd8DTI.png" group-title="",Telestar1 (480p)
 http://193.34.109.10:8090
-#EXTINF:-1 tvg-id="Telestar1.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="https://i.imgur.com/qSd8DTI.png" group-title="",Telestar1 (480p) [Offline]
+#EXTINF:-1 tvg-id="Telestar1.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="https://i.imgur.com/qSd8DTI.png" group-title="",Telestar1 (480p) [Not 24/7]
 http://s1.streamnet.ro:8053/stream.flv
 #EXTINF:-1 tvg-id="TravelMix.ro" tvg-country="RO" tvg-language="Romanian" tvg-logo="" group-title="Travel",Travel Mix (576p) [Offline]
 http://89.38.8.131:39520
