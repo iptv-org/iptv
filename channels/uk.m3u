@@ -239,10 +239,10 @@ https://ap02.iqplay.tv:8082/iqb8002/3m9n/playlist.m3u8
 #EXTINF:-1 tvg-id="EnglishClubTV.uk" tvg-country="UK" tvg-language="English" tvg-logo="http://ocdn.eu/images/program-tv/NTU7MDA_/e7114237dc0731c7dd660c32d6822432.png" group-title="",English Club TV (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s37/index.m3u8
-#EXTINF:-1 tvg-id="FadakTV.uk" tvg-country="UK" tvg-language="Arabic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/13/FadakTV.png" group-title="Religious",Fadak TV (1080p)
-http://free.fullspeed.tv/query?url=https://www.youtube.com/c/ddrricky/live
 #EXTINF:-1 tvg-id="FadakTV.uk" tvg-country="ARAB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/P72KE0t.png" group-title="Religious",Fadak TV (1080p) [Not 24/7]
 https://query-streamlink.herokuapp.com/iptv-query?streaming-ip=https://www.youtube.com/channel/UCBgM-sKkB4ySrdiCsk0ikUA/live
+#EXTINF:-1 tvg-id="FadakTV.uk" tvg-country="UK" tvg-language="Arabic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/13/FadakTV.png" group-title="Religious",Fadak TV (1080p) [Offline]
+http://free.fullspeed.tv/query?url=https://www.youtube.com/c/ddrricky/live
 #EXTINF:-1 tvg-id="FreeSports.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://images.stv.tv/player/master/595831-freesports.jpg" group-title="Sports",FreeSports (1080p) [Not 24/7]
 https://csm-e-stv.tls1.yospace.com/csm/live/203444271.m3u8
 #EXTINF:-1 tvg-id="GarshomTV.uk" tvg-country="UK" tvg-language="Malayalam" tvg-logo="" group-title="",Garshom TV (360p) [Not 24/7]
@@ -277,13 +277,13 @@ https://live.playstop.me/LS-63503-4/index.m3u8
 https://live.islamchannel.tv/islamtv/islamtv_english/bitrate1.isml/live.m3u8
 #EXTINF:-1 tvg-id="ITV.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/SsgOgRF.png" group-title="",ITV (302p) [Not 24/7]
 http://31.220.41.88:8081/live/itv1.stream/chunks.m3u8
-#EXTINF:-1 tvg-id="ITV2.uk" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",ITV2 (432p)
-http://31.220.41.88:8081/live/itv2.stream/chunks.m3u8
 #EXTINF:-1 tvg-id="ITV2.uk" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",ITV2 (576p) [Not 24/7]
 http://93.190.139.35:8278/streams/d/itv2_antik/playlist.m3u8
+#EXTINF:-1 tvg-id="ITV2.uk" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",ITV2 (432p) [Offline]
+http://31.220.41.88:8081/live/itv2.stream/chunks.m3u8
 #EXTINF:-1 tvg-id="ITV3.uk" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",ITV3 (432p) [Not 24/7]
 http://31.220.41.88:8081/live/itv3.stream/chunks.m3u8
-#EXTINF:-1 tvg-id="ITV4.uk" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",ITV4 (302p)
+#EXTINF:-1 tvg-id="ITV4.uk" tvg-country="UK" tvg-language="English" tvg-logo="" group-title="",ITV4 (302p) [Offline]
 http://31.220.41.88:8081/live/itv4.stream/chunks.m3u8
 #EXTINF:-1 tvg-id="JewelleryMaker.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/azSptPw.png" group-title="Lifestyle",Jewelery Maker (720p)
 https://lo2-1.gemporia.com/abrjewellerymaker/smil:livestream.smil/playlist.m3u8
@@ -299,6 +299,8 @@ https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,kerrang-alldev.m3u8
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,kerrang-alldev.m3u8?yo.up=https://boxtv.secure.footprint.net/kerrang/
 #EXTINF:-1 tvg-id="Kiss.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/AqVdlpz.png" group-title="",Kiss (576p) [Offline]
 http://csm-e.tm.yospace.com/csm/extlive/boxplus01,kiss-inapp.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/kiss/
+#EXTINF:-1 tvg-id="kMTV.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://www.kentonline.co.uk/_assets/kmtvlogo2017_2.png" group-title="",KMTV (576p)
+https://dk7psf0dh3v1r.cloudfront.net/KMTV/playlist.m3u8
 #EXTINF:-1 tvg-id="KoolLondonRadio.uk" tvg-country="UK" tvg-language="English" tvg-logo="http://undergroundbass.co.uk/image/koollondon.png" group-title="Music",Kool London Radio (720p)
 http://w10.streamgb.com:1935/kool/kool/playlist.m3u8
 #EXTINF:-1 tvg-id="LondonLive.uk" tvg-country="UK" tvg-language="" tvg-logo="https://raw.githubusercontent.com/jnk22/kodinerds-iptv/master/logos/tv/londonlive.png" group-title="",London Live (720p) [Offline]
@@ -355,9 +357,9 @@ https://d2xeo83q8fcni6.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d2
 http://skydvn-sn-mobile-prod.skydvn.com/skynews/1404/latest.m3u8
 #EXTINF:-1 tvg-id="SkyNews.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/WvNd8yg.png" group-title="News",Sky News (720p) [Geo-blocked]
 http://skynews-sn-cdhls.ak-cdn.skydvn.com/cdhlsskynews/1404/latest.m3u8
-#EXTINF:-1 tvg-id="SkyNewsArabia.uk" tvg-country="ARAB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/kF7TvcH.png" group-title="News",Sky News Arabia (720p)
+#EXTINF:-1 tvg-id="SkyNewsArabia.uk" tvg-country="ARAB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/kF7TvcH.png" group-title="News",Sky News Arabia (720p) [Offline]
 https://stream.skynewsarabia.com/hls/sna.m3u8
-#EXTINF:-1 tvg-id="SkyNewsArabia.uk" tvg-country="ARAB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/kF7TvcH.png" group-title="News",Sky News Arabia (Portrait) (1080p)
+#EXTINF:-1 tvg-id="SkyNewsArabia.uk" tvg-country="ARAB" tvg-language="Arabic" tvg-logo="https://i.imgur.com/kF7TvcH.png" group-title="News",Sky News Arabia (Portrait) (1080p) [Offline]
 https://stream.skynewsarabia.com/vertical/vertical.m3u8
 #EXTINF:-1 tvg-id="SkyNewsExtra1.uk" tvg-country="AU" tvg-language="English" tvg-logo="https://i.imgur.com/Wl0iGsD.png" group-title="News",Sky News Extra 1 (576p)
 https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
