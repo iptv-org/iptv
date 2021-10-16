@@ -113,6 +113,10 @@ module.exports = class Channel {
       this.tvg.language || ''
     }" tvg-logo="${this.logo || ''}"`
 
+    if (this.http['user-agent']) {
+      info += ` user-agent="${this.http['user-agent']}"`
+    }
+
     info += ` group-title="${this.group.title || ''}",${this.name}`
 
     if (this.resolution.height) {
