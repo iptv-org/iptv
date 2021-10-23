@@ -237,8 +237,13 @@ function updateLogo(channel, data, epgData) {
 }
 
 function updateTvgLanguage(channel, data) {
-  if (!channel.tvg.language && data) {
-    channel.tvg.language = data.languages.map(l => l.name).join(';')
+  if (!channel.tvg.language) {
+    if (data) {
+      channel.tvg.language = data.languages.map(l => l.name).join(';')
+    } else if (channel.countries.length) {
+      const countryCode = channel.countries[0].code
+      channel.tvg.language = utils.country2language(countryCode)
+    }
   }
 }
 
