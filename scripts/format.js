@@ -66,7 +66,7 @@ async function updatePlaylist(playlist) {
     const curr = i + 1
     updateTvgName(channel)
     updateTvgId(channel, playlist)
-    updateTvgCountry(channel, playlist)
+    updateTvgCountry(channel)
     normalizeUrl(channel)
 
     const data = channels[channel.tvg.id]
@@ -217,9 +217,9 @@ function updateTvgId(channel, playlist) {
   }
 }
 
-function updateTvgCountry(channel, playlist) {
-  const code = playlist.country.code
-  if (!channel.countries.length) {
+function updateTvgCountry(channel) {
+  if (!channel.countries.length && channel.tvg.id) {
+    const code = channel.tvg.id.split('.')[1] || null
     const name = utils.code2name(code)
     channel.countries = name ? [{ code, name }] : []
     channel.tvg.country = channel.countries.map(c => c.code.toUpperCase()).join(';')
