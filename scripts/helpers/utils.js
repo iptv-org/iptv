@@ -1,7 +1,8 @@
 const { orderBy } = require('natural-orderby')
-const iso6393 = require('@freearhey/iso-639-3')
 const transliteration = require('transliteration')
+const countries = require('../data/countries')
 const categories = require('../data/categories')
+const languages = require('../data/languages')
 const regions = require('../data/regions')
 
 const utils = {}
@@ -50,9 +51,17 @@ utils.code2name = function (code) {
 }
 
 utils.language2code = function (name) {
-  const lang = iso6393.find(l => l.name === name)
+  const lang = languages.find(l => l.name === name)
 
   return lang && lang.code ? lang.code : null
+}
+
+utils.country2language = function (code) {
+  const country = countries[code.toUpperCase()]
+  if (!country.languages.length) return ''
+  const language = languages.find(l => l.code === country.languages[0])
+
+  return language ? language.name : ''
 }
 
 utils.sortBy = function (arr, fields, order = null) {
