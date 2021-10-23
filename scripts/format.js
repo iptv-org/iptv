@@ -66,7 +66,7 @@ async function updatePlaylist(playlist) {
     const curr = i + 1
     updateTvgName(channel)
     updateTvgId(channel, playlist)
-    updateTvgCountry(channel, playlist)
+    updateTvgCountry(channel)
     normalizeUrl(channel)
 
     const data = channels[channel.tvg.id]
@@ -217,9 +217,9 @@ function updateTvgId(channel, playlist) {
   }
 }
 
-function updateTvgCountry(channel, playlist) {
-  const code = playlist.country.code
-  if (!channel.countries.length) {
+function updateTvgCountry(channel) {
+  if (!channel.countries.length && channel.tvg.id) {
+    const code = channel.tvg.id.split('.')[1] || null
     const name = utils.code2name(code)
     channel.countries = name ? [{ code, name }] : []
     channel.tvg.country = channel.countries.map(c => c.code.toUpperCase()).join(';')
@@ -237,8 +237,13 @@ function updateLogo(channel, data, epgData) {
 }
 
 function updateTvgLanguage(channel, data) {
-  if (!channel.tvg.language && data) {
-    channel.tvg.language = data.languages.map(l => l.name).join(';')
+  if (!channel.tvg.language) {
+    if (data) {
+      channel.tvg.language = data.languages.map(l => l.name).join(';')
+    } else if (channel.countries.length) {
+      const countryCode = channel.countries[0].code
+      channel.tvg.language = utils.country2language(countryCode)
+    }
   }
 }
 
