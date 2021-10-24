@@ -95,9 +95,9 @@ https://d2e40kvaojifd6.cloudfront.net/stream/24b/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMAcademy.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="https://www.gemonline.tv/Assets/channels-box/gemusa.png" group-title="Movies",GEM Academy (540p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemusa
 https://d2e40kvaojifd6.cloudfront.net/stream/gem_usa/playlist.m3u8
-#EXTINF:-1 tvg-id="GEMArabia.ir" tvg-country="IR" tvg-language="Arabic" tvg-logo="https://www.gemonline.tv/Assets/channels-box/gem_arabia.png" group-title="Music",GEM Arabia (576p) [Offline]
+#EXTINF:-1 tvg-id="GEMArabia.ir" tvg-country="IR" tvg-language="Arabic" tvg-logo="https://www.gemonline.tv/Assets/channels-box/gem_arabia.png" group-title="Music",GEM Arabia (576p) [Not 24/7]
 http://216.66.42.47:7777/GemArabia_HD.m3u8
-#EXTINF:-1 tvg-id="GEMAZ.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="https://www.gemonline.tv/Assets/channels-box/gem_az.png" group-title="Music",GEM AZ (576p) [Offline]
+#EXTINF:-1 tvg-id="GEMAZ.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="https://www.gemonline.tv/Assets/channels-box/gem_az.png" group-title="Music",GEM AZ (576p) [Not 24/7]
 http://216.66.42.47:7777/GemAZ_HD.m3u8
 #EXTINF:-1 tvg-id="GEMBollywood.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="https://www.gemonline.tv/Assets/channels-box/gembollywood.png" group-title="Movies",GEM Bollywood (576p) [Offline]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gembollywood
@@ -105,7 +105,7 @@ https://stream-cdn.gemonline.tv/live/gembollywood/index.m3u8
 #EXTINF:-1 tvg-id="GEMClassic.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="https://www.gemonline.tv/Assets/channels-box/gem_az.png?14" group-title="Classic",GEM Classic (576p) [Offline]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemclassic
 https://stream-cdn.gemonline.tv/live/gemclassic/index.m3u8
-#EXTINF:-1 tvg-id="GEMComedy.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="https://www.gemonline.tv/Assets/channels-box/gem_comedy.png" group-title="Movies",GEM Comedy (576p) [Offline]
+#EXTINF:-1 tvg-id="GEMComedy.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="https://www.gemonline.tv/Assets/channels-box/gem_comedy.png" group-title="Movies",GEM Comedy (576p) [Not 24/7]
 http://216.66.42.47:7777/GemComedy_HD.m3u8
 #EXTINF:-1 tvg-id="GEMCrypto.ir" tvg-country="IR" tvg-language="English" tvg-logo="https://i.imgur.com/Pt59QNN.png" group-title="",GEM Crypto (576p) [Offline]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gem_crypto
@@ -190,7 +190,7 @@ http://51.210.199.7/hls/stream.m3u8
 https://live.presstv.ir/ifilmlive/smil:ifilmtv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="iFILMArabic.ir" tvg-country="IR" tvg-language="Arabic" tvg-logo="https://i.imgur.com/RPwKZUD.jpg" group-title="Movies",iFILM Arabic (720p)
 https://live.presstv.ir/ifilmlive/smil:ifilmar.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="iFILMEnglish.ir" tvg-country="IR" tvg-language="English" tvg-logo="https://i.imgur.com/GgmXZRU.png" group-title="Movies",iFILM English [Offline]
+#EXTINF:-1 tvg-id="iFILMEnglish.ir" tvg-country="IR" tvg-language="English" tvg-logo="https://i.imgur.com/GgmXZRU.png" group-title="Movies",iFILM English [Geo-blocked]
 https://live1.presstv.ir/live/ifilmen.m3u8
 #EXTINF:-1 tvg-id="iFILMPersian2.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="https://fa2.ifilmtv.com/img/test-final02.png" group-title="Movies",iFILM Persian 2 [Not 24/7]
 https://live1.presstv.ir/live/ifilm2.m3u8
@@ -462,3 +462,5 @@ https://sdm.telewebion.com/live/taban/playlist.m3u8
 https://sdw.telewebion.com/live/taban/playlist.m3u8
 #EXTINF:-1 tvg-id="YourTimeTV.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="https://yourtime.tv/img/utv-logo.png" group-title="Entertainment",YourTime TV (720p) [Not 24/7]
 https://hls.yourtime.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="DiyarTV.ir" tvg-country="IR" tvg-language="Persian" tvg-logo="" group-title="Music",Diyar TV
+http://51.210.199.28/hls/stream.m3u8
