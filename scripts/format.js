@@ -228,9 +228,9 @@ function updateTvgCountry(channel) {
 
 function updateLogo(channel, data, epgData) {
   if (!channel.logo) {
-    if (data) {
+    if (data && data.logo) {
       channel.logo = data.logo
-    } else if (epgData) {
+    } else if (epgData && epgData.logo) {
       channel.logo = epgData.logo
     }
   }
@@ -238,7 +238,7 @@ function updateLogo(channel, data, epgData) {
 
 function updateTvgLanguage(channel, data) {
   if (!channel.tvg.language) {
-    if (data) {
+    if (data && data.languages.length) {
       channel.tvg.language = data.languages.map(l => l.name).join(';')
     } else if (channel.countries.length) {
       const countryCode = channel.countries[0].code
@@ -248,8 +248,12 @@ function updateTvgLanguage(channel, data) {
 }
 
 function updateGroupTitle(channel, data) {
-  if (!channel.group.title && data) {
-    channel.group.title = channel.category || data.category || ''
+  if (!channel.group.title) {
+    if (channel.category) {
+      channel.group.title = channel.category
+    } else if (data && data.category) {
+      channel.group.title = data.category
+    }
   }
 }
 
