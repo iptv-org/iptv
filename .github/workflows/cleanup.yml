@@ -1,8 +1,6 @@
 name: cleanup
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 6 1 * *'
 jobs:
   create-branch:
     runs-on: ubuntu-latest
