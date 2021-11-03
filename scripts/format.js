@@ -130,8 +130,10 @@ function updateStatus(channel, status) {
     case 'online':
       channel.status = channel.status === 'Offline' ? 'Not 24/7' : null
       break
-    case 'offline':
     case 'error_403':
+      channel.status = 'Geo-blocked'
+      break
+    case 'offline':
       channel.status = 'Offline'
       break
   }
