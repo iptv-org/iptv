@@ -8,7 +8,7 @@ const file = require('./helpers/file')
 const log = require('./helpers/log')
 const epg = require('./helpers/epg')
 
-const ignoreStatus = ['Geo-blocked', 'Not 24/7']
+const ignoreStatus = ['Geo-blocked']
 
 program
   .usage('[OPTIONS]...')
@@ -128,13 +128,14 @@ function updateOrigins(channel, requests) {
 function updateStatus(channel, status) {
   switch (status) {
     case 'online':
-      channel.status = channel.status === 'Offline' ? 'Not 24/7' : null
+      if (channel.status !== 'Not 24/7')
+        channel.status = channel.status === 'Offline' ? 'Not 24/7' : null
       break
     case 'error_403':
       channel.status = 'Geo-blocked'
       break
     case 'offline':
-      channel.status = 'Offline'
+      if (channel.status !== 'Not 24/7') channel.status = 'Offline'
       break
   }
 }
