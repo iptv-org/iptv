@@ -6,6 +6,8 @@ on:
 jobs:
   create-branch:
     runs-on: ubuntu-latest
+    outputs:
+      branch_name: ${{ steps.set-branch-name.outputs.branch_name }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -13,21 +15,23 @@ jobs:
           ref: ${{ github.ref }}
       - name: Set Branch Name
         id: set-branch-name
-        run: echo "::set-output name=branch_name::bot/auto-update-$(date +'%Y%m%d')"
+        run: echo "::set-output name=branch_name::bot/auto-update-$(date +'%Y%m%d%H%M%S')"
       - name: Create Branch
         uses: peterjgrainger/action-create-branch@v2.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           branch: ${{ steps.set-branch-name.outputs.branch_name }}
-      - name: Exit
-        run: exit 1
   create-matrix:
     runs-on: ubuntu-latest
     needs: create-branch
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
+      - name: Display Branch Name
+        run: echo ${{ needs.create-branch.outputs.branch_name }}
+      - name: Exit
+        run: exit 1
       - name: Checkout
         uses: actions/checkout@v2
         with:
