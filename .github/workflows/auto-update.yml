@@ -13,7 +13,7 @@ jobs:
           ref: ${{ github.ref }}
       - name: Set Branch Name
         id: set-branch-name
-        run: echo "::set-output name=branch_name::bot/auto-update"
+        run: echo "::set-output name=branch_name::bot/auto-update-$(date +'%Y%m%d')"
       - name: Create Branch
         uses: peterjgrainger/action-create-branch@v2.0.1
         env:
