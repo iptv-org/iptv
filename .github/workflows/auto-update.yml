@@ -4,8 +4,22 @@ on:
   schedule:
     - cron: '0 0,12 * * *'
 jobs:
+  delete-old-branch:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Delete Branch
+        uses: dawidd6/action-delete-branch@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branches: 'bot/auto-update'
   create-branch:
     runs-on: ubuntu-latest
+    needs: delete-old-branch
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -27,6 +41,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: bot/auto-update
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
       - name: Install Dependencies
         run: npm install
       - name: Create Matrix
@@ -46,10 +65,15 @@ jobs:
           ref: bot/auto-update
       - name: Setup FFmpeg
         uses: FedericoCarboni/setup-ffmpeg@v1
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
       - name: Install Dependencies
         run: npm install
       - name: Format Playlists
-        run: node scripts/format.js --country=${{ matrix.country }} --debug
+        run: node scripts/format.js --country=${{ matrix.country }} --timeout=60000 --debug
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -85,6 +109,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: bot/auto-update
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
       - name: Install Dependencies
         run: npm install
       - name: Remove Duplicates
@@ -106,6 +135,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: bot/auto-update
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
       - name: Install Dependencies
         run: npm install
       - name: Sort Channels
@@ -127,6 +161,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: bot/auto-update
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
       - name: Install Dependencies
         run: npm install
       - name: Filter Playlists
@@ -148,6 +187,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: bot/auto-update
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
       - name: Install Dependencies
         run: npm install
       - name: Generate Playlists
@@ -158,7 +202,6 @@ jobs:
           name: gh-pages
           path: .gh-pages/
   deploy:
-    if: ${{ github.ref == 'refs/heads/master' }}
     runs-on: ubuntu-latest
     needs: generate
     steps:
@@ -178,6 +221,7 @@ jobs:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - name: Deploy to GitHub Pages
+        if: ${{ github.ref == 'refs/heads/master' }}
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
@@ -194,6 +238,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           ref: bot/auto-update
+      - name: Setup Node
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+          cache: 'npm'
       - name: Install Dependencies
         run: npm install
       - name: Update README.md
