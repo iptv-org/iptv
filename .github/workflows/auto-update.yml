@@ -15,7 +15,7 @@ jobs:
           ref: ${{ github.ref }}
       - name: Set Branch Name
         id: set-branch-name
-        run: echo "::set-output name=branch_name::bot/auto-update-$(date +'%Y%m%d%H%M%S')"
+        run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%Y%m%d%H%M00')"
       - name: Create Branch
         uses: peterjgrainger/action-create-branch@v2.0.1
         env:
@@ -28,14 +28,10 @@ jobs:
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
     steps:
-      - name: Display Branch Name
-        run: echo ${{ needs.create-branch.outputs.branch_name }}
-      - name: Exit
-        run: exit 1
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
@@ -48,7 +44,7 @@ jobs:
         run: node scripts/create-matrix.js
   format:
     runs-on: ubuntu-latest
-    needs: create-matrix
+    needs: [create-matrix, create-branch]
     continue-on-error: true
     strategy:
       fail-fast: false
@@ -57,7 +53,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Setup FFmpeg
         uses: FedericoCarboni/setup-ffmpeg@v1
       - name: Setup Node
@@ -68,7 +64,7 @@ jobs:
       - name: Install Dependencies
         run: npm install
       - name: Format Playlists
-        run: node scripts/format.js --country=${{ matrix.country }} --debug
+        run: node scripts/format.js --country=${{ matrix.country }} --debug --offline
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -76,12 +72,12 @@ jobs:
           path: channels/${{ matrix.country }}.m3u
   commit-changes:
     runs-on: ubuntu-latest
-    needs: format
+    needs: [format, create-branch]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
@@ -94,16 +90,16 @@ jobs:
           commit_user_name: iptv-bot
           commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: bot/auto-update
+          branch: ${{ needs.create-branch.outputs.branch_name }}
           file_pattern: channels/*
   remove-duplicates:
     runs-on: ubuntu-latest
-    needs: commit-changes
+    needs: [commit-changes, create-branch]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
@@ -120,16 +116,16 @@ jobs:
           commit_user_name: iptv-bot
           commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: bot/auto-update
+          branch: ${{ needs.create-branch.outputs.branch_name }}
           file_pattern: channels/*
   sort:
     runs-on: ubuntu-latest
-    needs: remove-duplicates
+    needs: [remove-duplicates, create-branch]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
@@ -146,16 +142,16 @@ jobs:
           commit_user_name: iptv-bot
           commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: bot/auto-update
+          branch: ${{ needs.create-branch.outputs.branch_name }}
           file_pattern: channels/*
   filter:
     runs-on: ubuntu-latest
-    needs: sort
+    needs: [sort, create-branch]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
@@ -172,16 +168,16 @@ jobs:
           commit_user_name: iptv-bot
           commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: bot/auto-update
+          branch: ${{ needs.create-branch.outputs.branch_name }}
           file_pattern: channels/*
   generate:
     runs-on: ubuntu-latest
-    needs: filter
+    needs: [filter, create-branch]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
@@ -198,12 +194,12 @@ jobs:
           path: .gh-pages/
   deploy:
     runs-on: ubuntu-latest
-    needs: generate
+    needs: [generate, create-branch]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Download Artifacts
         uses: actions/download-artifact@v2
         with:
@@ -227,12 +223,12 @@ jobs:
           commit-message: '[Bot] Deploy to GitHub Pages'
   update-readme:
     runs-on: ubuntu-latest
-    needs: generate
+    needs: [generate, create-branch]
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
@@ -249,17 +245,17 @@ jobs:
           commit_user_name: iptv-bot
           commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: bot/auto-update
+          branch: ${{ needs.create-branch.outputs.branch_name }}
           file_pattern: README.md
   pull-request:
     if: ${{ github.ref == 'refs/heads/master' }}
-    needs: update-readme
+    needs: [update-readme, create-branch]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: bot/auto-update
+          ref: ${{ needs.create-branch.outputs.branch_name }}
       - name: Generate Token
         uses: tibdex/github-app-token@v1
         id: generate-token
@@ -270,7 +266,7 @@ jobs:
         id: pr
         uses: repo-sync/pull-request@v2
         with:
-          source_branch: 'bot/auto-update'
+          source_branch: ${{ needs.create-branch.outputs.branch_name }}
           destination_branch: 'master'
           pr_title: '[Bot] Update playlists'
           pr_body: |
