@@ -130,8 +130,6 @@ http://111.63.117.13:6060/030000001000/CCTV-4/CCTV-4.m3u8
 #EXTINF:-1 tvg-id="CCTV4.cn" tvg-country="CN" tvg-language="Chinese;Mandarin Chinese" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/thumb/0/07/CCTV-4_Logo.svg/800px-CCTV-4_Logo.svg.png" group-title="General",CCTV-4中文国际 (540p)
 http://112.25.48.68/live/program/live/cctv4/1300000/mnf.m3u8
 #EXTINF:-1 tvg-id="CCTV4.cn" tvg-country="CN" tvg-language="Chinese;Mandarin Chinese" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/thumb/0/07/CCTV-4_Logo.svg/800px-CCTV-4_Logo.svg.png" group-title="General",CCTV-4中文国际 (360p)
-http://cctvalih5ca.v.myalicdn.com/live/cctvamerica_2/index.m3u8
-#EXTINF:-1 tvg-id="CCTV4.cn" tvg-country="CN" tvg-language="Chinese;Mandarin Chinese" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/thumb/0/07/CCTV-4_Logo.svg/800px-CCTV-4_Logo.svg.png" group-title="General",CCTV-4中文国际 (360p)
 http://cctvalih5ca.v.myalicdn.com/live/cctveurope_2/index.m3u8
 #EXTINF:-1 tvg-id="CCTV4.cn" tvg-country="CN" tvg-language="Chinese;Mandarin Chinese" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/thumb/0/07/CCTV-4_Logo.svg/800px-CCTV-4_Logo.svg.png" group-title="General",CCTV-4中文国际 (360p)
 https://cctvcnch5ca.v.wscdns.com/live/cctvamerica_2/index.m3u8
@@ -151,6 +149,8 @@ http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221227378/index.m3u8
 http://183.207.249.15/PLTV/4/224/3221225781/index.m3u8
 #EXTINF:-1 tvg-id="CCTV4.cn" tvg-country="CN" tvg-language="Chinese;Mandarin Chinese" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/thumb/0/07/CCTV-4_Logo.svg/800px-CCTV-4_Logo.svg.png" group-title="General",CCTV-4中文国际 (576p) [Offline]
 http://223.110.245.159/ott.js.chinamobile.com/PLTV/3/224/3221225781/index.m3u8
+#EXTINF:-1 tvg-id="CCTV4.cn" tvg-country="CN" tvg-language="Chinese;Mandarin Chinese" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/thumb/0/07/CCTV-4_Logo.svg/800px-CCTV-4_Logo.svg.png" group-title="General",CCTV-4中文国际 (360p) [Offline]
+http://cctvalih5ca.v.myalicdn.com/live/cctvamerica_2/index.m3u8
 #EXTINF:-1 tvg-id="CCTV5Plus.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",CCTV-5+体育赛事 (1080p)
 http://39.134.66.66/PLTV/88888888/224/3221225507/index.m3u8
 #EXTINF:-1 tvg-id="CCTV5Plus.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",CCTV-5+体育赛事 (1080p)
@@ -1513,7 +1513,7 @@ http://149.129.100.78/guangdong.php?id=46
 http://116.199.5.51:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=83&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
 #EXTINF:-1 tvg-id="GuangDongShaoEr.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",广东少儿 (540p) [Offline]
 http://149.129.100.78/guangdong.php?id=54
-#EXTINF:-1 tvg-id="GuangDongYingShi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",广东影视 (576p)
+#EXTINF:-1 tvg-id="GuangDongYingShi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",广东影视 (576p) [Offline]
 http://116.199.5.51:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=86&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
 #EXTINF:-1 tvg-id="GuangDongYingShi.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",广东影视 (540p) [Offline]
 http://149.129.100.78/guangdong.php?id=53
@@ -2085,7 +2085,7 @@ http://tmpstream.hyrtv.cn/hygg/sd/live.m3u8
 http://tmpstream.hyrtv.cn/xwzh/sd/live.m3u8
 #EXTINF:-1 tvg-id="HeYuanZongHe.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",河源综合 (480p)
 http://dslive.grtn.cn/hyzh/playlist.m3u8
-#EXTINF:-1 tvg-id="LuoYangZongHe.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",洛陽綜合頻道 (720p)
+#EXTINF:-1 tvg-id="LuoYangZongHe.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",洛陽綜合頻道 (720p) [Offline]
 http://live1.lytv.com.cn:1935/live/LYTV1-1/playlist.m3u8
 #EXTINF:-1 tvg-id="HongYaXinWenZongHe.cn" tvg-country="CN" tvg-language="Chinese" tvg-logo="" group-title="",洪雅新闻综合 (1080p)
 http://117.172.215.250:8083/videos/live/35/39/GQVbrgob5CGJM/GQVbrgob5CGJM.m3u8
