@@ -1,0 +1,63 @@
+name: 🛠 Broken Stream
+description: Report a broken stream
+title: 'Fix: '
+labels: [ "broken stream" ]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+       Please fill out the issue template as much as you can so we could efficiently process your request
+
+       **IMPORTANT**: An issue may contain a request for only one channel, otherwise it will be closed
+       
+
+  - type: checkboxes
+    id: preliminary
+  attributes:
+    label: I am assuring that:
+    options:
+      - label: I use self-updatable playlist link and not a downloaded file
+        required: true
+      - label: My TV player has updated this playlist after 0:00 GMT time and is set to update it daily
+        required: true
+      - label: I double-checked it just know and it is broken/absent from the playlist still
+        required: true
+
+  - type: input
+    id: name
+    attributes:
+      label: Channel Name
+      description: Full name of the channel. It is recommended to tell exact name that was used in a playlist
+      placeholder: 'Fox Life Russia'
+    validations:
+      required: true
+   
+  - type: input
+    id: playlist
+    attributes:
+      label: Playlist
+      description: What playlist was used to get the channel from?
+      placeholder: 'ex. https://iptv-org.github.io/iptv/countries/au.m3u'
+    validations:
+      required: true
+   
+  - type: input
+    id: link
+    attributes:
+      label:  Broken Link
+      description: Please specify the broken link from a playlist if you can
+      placeholder: 'ex. https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
+      
+  - type: input
+    id: alt
+    attributes:
+      label: Possible Replacement
+      description: If you know an alternate non-protected source or the way to fix current stream please let us know 
+      placeholder: 'ex. https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
+   
+  - type: input
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: 'Anything else we should know?'
