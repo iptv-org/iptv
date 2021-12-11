@@ -25,24 +25,24 @@ body:
       - label: I am aware that the channel source may have temporal outages. It is broken/absent from the playlist for couple of hours or days 
         required: true
         
-  - type: dropdown
-    id: reason
-    attributes:
-      label: What happened to a stream?
-      options:
-        - It is now offline
-        - It is broadcasting a single frame/the same segment
-        - I see visual artifacts
-        - It is buffering to unplayable point
-    validations:
-      required: true
-
   - type: input
     id: name
     attributes:
       label: Channel Name
       description: Full name of the channel. It is recommended to tell exact name that was used in a playlist
       placeholder: 'Fox Life Russia'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reason
+    attributes:
+      label: What happened to a stream?
+      options:
+        - It is now offline
+        - It is stuck at a single frame/the same segment
+        - I see visual artifacts
+        - It is buffering to unplayable point
     validations:
       required: true
       
