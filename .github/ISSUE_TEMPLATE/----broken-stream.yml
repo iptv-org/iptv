@@ -16,11 +16,11 @@ body:
   - type: checkboxes
     id: preliminary
     attributes:
-     label: I am assuring that
+     label: I have verified that
      options:
-      - label: I use self-updatable playlist link and not a downloaded file
+      - label: I use the GitHub playlist link and not a downloaded/cached version of the file
         required: true
-      - label: My TV player has updated this playlist after 0:00 GMT time and is set to update it daily
+      - label: My TV player has updated this playlist after 0:00 GMT and is set to update it daily
         required: true
       - label: I am aware that the channel source may have temporal outages. It is broken/absent from the playlist for couple of hours or days 
         required: true
@@ -29,7 +29,7 @@ body:
     id: name
     attributes:
       label: Channel Name
-      description: Full name of the channel. It is recommended to tell exact name that was used in a playlist
+      description: Full name of the channel. Please use the exact name, as in how it appears in the playlist.
       placeholder: 'Fox Life Russia'
     validations:
       required: true
@@ -37,7 +37,7 @@ body:
   - type: dropdown
     id: reason
     attributes:
-      label: What happened to a stream?
+      label: What happened to the stream?
       options:
         - It is now offline (disappeared from the playlist)
         - It is stuck at a single frame/the same segment
@@ -58,7 +58,7 @@ body:
   - type: input
     id: link
     attributes:
-      label:  Broken Link
+      label: Broken Link
       description: Please specify the broken link from a playlist if you can
       placeholder: 'ex. https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
       
