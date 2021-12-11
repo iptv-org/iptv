@@ -10,6 +10,9 @@ body:
          Please fill out the issue template as much as you can so we could efficiently process your request
          **IMPORTANT**: An issue may contain a request for only one channel, otherwise it will be closed
          
+         Channels present in this repository come from variety of sources, some may have overbalanced load at times, temporal issues or just be far away from your location to play smoothly.
+         Please wait for a few hours at least before filling this form.
+         
   - type: checkboxes
     id: preliminary
     attributes:
@@ -19,9 +22,21 @@ body:
         required: true
       - label: My TV player has updated this playlist after 0:00 GMT time and is set to update it daily
         required: true
-      - label: I double-checked it just now and it is broken/absent from the playlist still
+      - label: I am aware that the channel source may have temporal outages. It is broken/absent from the playlist for couple of hours or days 
         required: true
         
+  - type: dropdown
+    id: reason
+    attributes:
+      label: What happened to a stream?
+      options:
+        - It is now offline
+        - It is broadcasting a single frame/the same segment
+        - I see visual artifacts
+        - It is buffering to unplayable point
+    validations:
+      required: true
+
   - type: input
     id: name
     attributes:
