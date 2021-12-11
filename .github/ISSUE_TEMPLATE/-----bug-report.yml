@@ -1,0 +1,22 @@
+name: 🐞 Bug Report
+description: Report an error in this repository
+title: "Fix: "
+labels: [ "bug" ]
+assignees:
+  - freearhey
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+       This form is **ONLY** intended for auto-update, channel sorting and other automation scripts related issues.
+       If you're experiencing problems viewing a channel, **this is not the right form**. Please file a Broken stream form instead.
+
+       Please describe the error in as much detail as possible so that we can fix it quickly.
+
+  - type: textarea
+    id: bug
+    attributes:
+      label: Describe your issue
+    validations:
+      required: true
