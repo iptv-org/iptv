@@ -8,3 +8,14 @@ body:
       value: |
        Please fill out the issue template as much as you can so we could efficiently process your request
        **IMPORTANT**: An issue may contain a request for only one channel, otherwise it will be closed
+- type: checkboxes
+    id: preliminary
+    attributes:
+    label: I am assuring that
+    options:
+      - label: I use self-updatable playlist link and not a downloaded file
+        required: true
+      - label: My TV player has updated this playlist after 0:00 GMT time and is set to update it daily
+        required: true
+      - label: I double-checked it just now and it is broken/absent from the playlist still
+        required: true
