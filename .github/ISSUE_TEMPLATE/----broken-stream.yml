@@ -2,14 +2,13 @@ name: 🛠 Broken Stream
 description: Report a broken stream
 title: "Fix: "
 labels: [ "broken stream" ]
-
 body:
   - type: markdown
     attributes:
       value: |
        Please fill out the issue template as much as you can so we could efficiently process your request
        **IMPORTANT**: An issue may contain a request for only one channel, otherwise it will be closed
-
+       
   - type: checkboxes
     id: preliminary
   attributes:
@@ -19,9 +18,9 @@ body:
         required: true
       - label: My TV player has updated this playlist after 0:00 GMT time and is set to update it daily
         required: true
-      - label: I double-checked it just know and it is broken/absent from the playlist still
+      - label: I double-checked it just now and it is broken/absent from the playlist still
         required: true
-
+        
   - type: input
     id: name
     attributes:
@@ -30,8 +29,8 @@ body:
       placeholder: 'Fox Life Russia'
     validations:
       required: true
-   
-  - type: input
+      
+   - type: input
     id: playlist
     attributes:
       label: Playlist
