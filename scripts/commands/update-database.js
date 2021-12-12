@@ -15,6 +15,7 @@ const EPG_CODES_FILEPATH = process.env.EPG_CODES_FILEPATH || 'scripts/data/codes
 async function main() {
   await setUp()
   await loadDatabase()
+  await removeDuplicates()
   await loadCheckResults()
   await findStreamOrigins()
   await updateStreams()
@@ -29,6 +30,16 @@ async function loadDatabase() {
   streams = await db.find({})
 
   logger.info(`Found ${streams.length} streams`)
+}
+
+async function removeDuplicates() {
+  logger.info('Removing duplicates...')
+
+  const before = streams.length
+  streams = _.uniqBy(streams, 'id')
+  const after = streams.length
+
+  logger.info(`Removed ${before - after} links`)
 }
 
 async function loadCheckResults() {
