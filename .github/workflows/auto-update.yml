@@ -69,11 +69,19 @@ jobs:
           path: scripts/logs
       - run: npm install
       - run: node scripts/commands/update-database.js
+      - uses: actions/upload-artifact@v2
+        with:
+          name: database
+          path: scripts/channels.db
       - run: node scripts/commands/update-playlists.js
       - run: |
           git add channels/*
           git commit -m "[Bot] Update playlists"
       - run: node scripts/commands/generate-playlists.js
+      - uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: scripts/logs
       - run: node scripts/commands/update-readme.js
       - run: |
           git add README.md
