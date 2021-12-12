@@ -1,4 +1,4 @@
-## Supported Region Codes
+## Supported Regions
 
 | Code                                                                     | Description                        |
 | ------------------------------------------------------------------------ | ---------------------------------- |
@@ -10,11 +10,11 @@
 | [CARIB](https://en.wikipedia.org/wiki/Caribbean)                         | Caribbean                          |
 | [CAS](https://en.wikipedia.org/wiki/Central_Asia)                        | Central Asia                       |
 | [CIS](https://en.wikipedia.org/wiki/Commonwealth_of_Independent_States)  | Commonwealth of Independent States |
-| [EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa) | Europe, Middle East and Africa     |
+| [EMEA](https://en.wikipedia.org/wiki/Europe,_the_Middle_East_and_Africa) | Europe, the Middle East and Africa |
 | [EUR](https://en.wikipedia.org/wiki/Europe)                              | Europe                             |
 | [HISPAM](https://en.wikipedia.org/wiki/Hispanic_America)                 | Hispanic America                   |
 | [LATAM](https://en.wikipedia.org/wiki/Latin_America)                     | Latin America                      |
-| [MAGHRIB](https://en.wikipedia.org/wiki/Maghreb)                         | Maghrib                            |
+| [MAGHREB](https://en.wikipedia.org/wiki/Maghreb)                         | Maghreb                            |
 | [MENA](https://en.wikipedia.org/wiki/MENA)                               | Middle East and North Africa       |
 | [MIDEAST](https://en.wikipedia.org/wiki/Middle_East)                     | Middle East                        |
 | [NORAM](https://en.wikipedia.org/wiki/North_America)                     | North America                      |
