@@ -94,7 +94,7 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Generate playlists'
       - uses: repo-sync/pull-request@v2
-        if: ${{ !env.ACT }}
+        if: ${{ github.ref == 'refs/heads/master' }}
         id: pull-request
         with:
           github_token: ${{ steps.create-app-token.outputs.token }}
