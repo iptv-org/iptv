@@ -3,12 +3,9 @@ const path = require('path')
 const { execSync } = require('child_process')
 
 beforeEach(() => {
-  fs.copyFileSync('tests/__data__/input/test.db', 'tests/__data__/temp/test.db')
-})
-
-afterEach(() => {
   fs.rmdirSync('tests/__data__/temp', { recursive: true })
   fs.mkdirSync('tests/__data__/temp')
+  fs.copyFileSync('tests/__data__/input/test.db', 'tests/__data__/temp/test.db')
 })
 
 it('can update database', () => {
