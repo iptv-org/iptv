@@ -22,7 +22,7 @@ parser.parseLogs = async function (filepath) {
 parser.parseNumber = function (string) {
   const parsed = parseInt(string)
   if (isNaN(parsed)) {
-    logger.error('Not a number')
+    throw new Error('scripts/core/parser.js:parseNumber() Input value is not a number')
   }
 
   return parsed
