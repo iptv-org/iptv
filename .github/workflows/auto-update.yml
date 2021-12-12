@@ -4,279 +4,110 @@ on:
   schedule:
     - cron: '0 0,12 * * *'
 jobs:
-  create-branch:
+  setup:
     runs-on: ubuntu-latest
-    outputs:
-      branch_name: ${{ steps.set-branch-name.outputs.branch_name }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref }}
-      - name: Set Branch Name
-        id: set-branch-name
-        run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%Y%m%d%H%M00')"
-      - name: Create Branch
-        uses: peterjgrainger/action-create-branch@v2.0.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          branch: ${{ steps.set-branch-name.outputs.branch_name }}
-  create-matrix:
-    runs-on: ubuntu-latest
-    needs: create-branch
-    outputs:
-      matrix: ${{ steps.set-matrix.outputs.matrix }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Setup Node
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
         with:
           node-version: '14'
           cache: 'npm'
-      - name: Install Dependencies
-        run: npm install
-      - name: Create Matrix
-        id: set-matrix
-        run: node scripts/create-matrix.js
-  format:
+      - run: npm install
+      - run: node scripts/commands/create-database.js
+      - run: node scripts/commands/create-matrix.js
+        id: create-matrix
+      - uses: actions/upload-artifact@v2
+        with:
+          name: database
+          path: scripts/channels.db
+    outputs:
+      matrix: ${{ steps.create-matrix.outputs.matrix }}
+  load:
     runs-on: ubuntu-latest
-    needs: [create-matrix, create-branch]
+    needs: setup
     continue-on-error: true
     strategy:
       fail-fast: false
-      matrix: ${{fromJSON(needs.create-matrix.outputs.matrix)}}
+      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - uses: actions/download-artifact@v2
         with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Setup FFmpeg
-        uses: FedericoCarboni/setup-ffmpeg@v1
-      - name: Setup Node
-        uses: actions/setup-node@v2
+          name: database
+          path: scripts
+      - uses: FedericoCarboni/setup-ffmpeg@v1
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
         with:
           node-version: '14'
-          cache: 'npm'
-      - name: Install Dependencies
-        run: npm install
-      - name: Format Playlists
-        run: node scripts/format.js --country=${{ matrix.country }} --debug
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
+      - run: npm install
+      - run: node scripts/commands/check-streams.js --cluster-id=${{ matrix.cluster_id }}
+      - uses: actions/upload-artifact@v2
         with:
-          name: channels
-          path: channels/${{ matrix.country }}.m3u
-  commit-changes:
+          name: logs
+          path: scripts/logs
+  update:
     runs-on: ubuntu-latest
-    needs: [format, create-branch]
+    needs: load
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
+      - run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%s')"
+        id: create-branch-name
+      - run: |
+          git config user.name 'iptv-bot[bot]'
+          git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
+      - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
+      - run: curl -L -o scripts/data/codes.json https://iptv-org.github.io/epg/codes.json
+      - uses: actions/download-artifact@v2
         with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Download Artifacts
-        uses: actions/download-artifact@v2
+          name: database
+          path: scripts
+      - uses: actions/download-artifact@v2
         with:
-          name: channels
-          path: channels
-      - name: Commit Changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: '[Bot] Format playlists'
-          commit_user_name: iptv-bot
-          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: ${{ needs.create-branch.outputs.branch_name }}
-          file_pattern: channels/*
-  remove-duplicates:
-    runs-on: ubuntu-latest
-    needs: [commit-changes, create-branch]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          cache: 'npm'
-      - name: Install Dependencies
-        run: npm install
-      - name: Remove Duplicates
-        run: node scripts/remove-duplicates.js
-      - name: Commit Changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: '[Bot] Remove duplicates'
-          commit_user_name: iptv-bot
-          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: ${{ needs.create-branch.outputs.branch_name }}
-          file_pattern: channels/*
-  sort:
-    runs-on: ubuntu-latest
-    needs: [remove-duplicates, create-branch]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          cache: 'npm'
-      - name: Install Dependencies
-        run: npm install
-      - name: Sort Channels
-        run: node scripts/sort.js
-      - name: Commit Changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: '[Bot] Sort channels'
-          commit_user_name: iptv-bot
-          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: ${{ needs.create-branch.outputs.branch_name }}
-          file_pattern: channels/*
-  filter:
-    runs-on: ubuntu-latest
-    needs: [sort, create-branch]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          cache: 'npm'
-      - name: Install Dependencies
-        run: npm install
-      - name: Filter Playlists
-        run: node scripts/filter.js
-      - name: Commit Changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: '[Bot] Filter channels'
-          commit_user_name: iptv-bot
-          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: ${{ needs.create-branch.outputs.branch_name }}
-          file_pattern: channels/*
-  generate:
-    runs-on: ubuntu-latest
-    needs: [filter, create-branch]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          cache: 'npm'
-      - name: Install Dependencies
-        run: npm install
-      - name: Generate Playlists
-        run: node scripts/generate.js
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: gh-pages
-          path: .gh-pages/
-  deploy:
-    runs-on: ubuntu-latest
-    needs: [generate, create-branch]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Download Artifacts
-        uses: actions/download-artifact@v2
-        with:
-          name: gh-pages
-          path: .gh-pages
-      - name: Generate Token
-        uses: tibdex/github-app-token@v1
-        id: generate-token
+          name: logs
+          path: scripts/logs
+      - run: npm install
+      - run: node scripts/commands/update-database.js
+      - run: node scripts/commands/update-playlists.js
+      - run: |
+          git add channels/*
+          git commit -m "[Bot] Update playlists"
+      - run: node scripts/commands/generate-playlists.js
+      - run: node scripts/commands/update-readme.js
+      - run: |
+          git add README.md
+          git commit -m "[Bot] Update README.md"
+      - uses: tibdex/github-app-token@v1
+        if: ${{ !env.ACT }}
+        id: create-app-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - name: Deploy to GitHub Pages
+      - uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ github.ref == 'refs/heads/master' }}
-        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: gh-pages
           folder: .gh-pages
-          token: ${{ steps.generate-token.outputs.token }}
-          git-config-name: iptv-bot
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to GitHub Pages'
-  update-readme:
-    runs-on: ubuntu-latest
-    needs: [generate, create-branch]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+          commit-message: '[Bot] Generate playlists'
+      - uses: repo-sync/pull-request@v2
+        if: ${{ !env.ACT }}
+        id: pull-request
         with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Setup Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-          cache: 'npm'
-      - name: Install Dependencies
-        run: npm install
-      - name: Update README.md
-        run: node scripts/update-readme.js
-      - name: Commit Changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: '[Bot] Update README.md'
-          commit_user_name: iptv-bot
-          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: ${{ needs.create-branch.outputs.branch_name }}
-          file_pattern: README.md
-  pull-request:
-    if: ${{ github.ref == 'refs/heads/master' }}
-    needs: [update-readme, create-branch]
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ needs.create-branch.outputs.branch_name }}
-      - name: Generate Token
-        uses: tibdex/github-app-token@v1
-        id: generate-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - name: Create Pull Request
-        id: pr
-        uses: repo-sync/pull-request@v2
-        with:
-          source_branch: ${{ needs.create-branch.outputs.branch_name }}
+          github_token: ${{ steps.create-app-token.outputs.token }}
+          source_branch: ${{ steps.create-branch-name.outputs.branch_name }}
           destination_branch: 'master'
-          pr_title: '[Bot] Update playlists'
+          pr_title: '[Bot] Daily playlists update'
           pr_body: |
             This pull request is created by [auto-update][1] workflow.
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-          github_token: ${{ steps.generate-token.outputs.token }}
-      - name: Merge Pull Request
-        uses: juliangruber/merge-pull-request-action@v1
+      - uses: juliangruber/merge-pull-request-action@v1
+        if: ${{ github.ref == 'refs/heads/master' }}
         with:
           github-token: ${{ secrets.PAT }}
-          number: ${{ steps.pr.outputs.pr_number }}
+          number: ${{ steps.pull-request.outputs.pr_number }}
           method: squash
