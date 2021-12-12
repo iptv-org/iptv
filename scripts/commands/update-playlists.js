@@ -5,7 +5,6 @@ async function main() {
   let items = await db
     .find({})
     .sort({ name: 1, 'status.level': 1, 'resolution.height': -1, url: 1 })
-  items = _.uniqBy(items, 'url')
   const files = _.groupBy(items, 'filepath')
 
   for (const filepath in files) {
