@@ -11,15 +11,15 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ### Request a Channel
 
-To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=------channel-request.md) and complete all details requested. Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately)
+To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=------channel-request.yml&title=Add%3A+) and complete all details requested. Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately)
 
 ### Report a Broken Stream
 
-To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=----broken-stream.md) with a description of the channel. (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately)
+To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=-----broken-stream.yml&title=Replace%3A+) with a description of the channel. (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately)
 
 ### Request Channel Removal
 
-Publish your DMCA notice somewhere and send us a link to it through this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=--remove-channel.md).
+Publish your DMCA notice somewhere and send us a link to it through this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=--remove-channel.yml&title=Remove%3A+).
 
 ## Pull Request Guidelines
 
