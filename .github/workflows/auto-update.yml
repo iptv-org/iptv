@@ -54,9 +54,8 @@ jobs:
       - uses: actions/checkout@v2
       - run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%s')"
         id: create-branch-name
-      - run: |
-          git config user.name 'iptv-bot[bot]'
-          git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
+      - run: git config user.name 'iptv-bot[bot]'
+      - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
       - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
       - run: curl -L -o scripts/data/codes.json https://iptv-org.github.io/epg/codes.json
       - uses: actions/download-artifact@v2
@@ -67,6 +66,10 @@ jobs:
         with:
           name: logs
           path: scripts/logs
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
       - run: npm install
       - run: node scripts/commands/update-database.js
       - uses: actions/upload-artifact@v2
@@ -74,41 +77,31 @@ jobs:
           name: database
           path: scripts/channels.db
       - run: node scripts/commands/update-playlists.js
-      - run: |
-          git add channels/*
-          git commit -m "[Bot] Update playlists"
+      - run: git add channels/*
+      - run: git commit -m "[Bot] Update playlists"
       - run: node scripts/commands/generate-playlists.js
       - uses: actions/upload-artifact@v2
         with:
           name: logs
           path: scripts/logs
       - run: node scripts/commands/update-readme.js
-      - run: |
-          git add README.md
-          git commit -m "[Bot] Update README.md"
+      - run: git add README.md
+      - run: git commit -m "[Bot] Update README.md"
+      - run: git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: ${{ github.ref == 'refs/heads/master' }}
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          token: ${{ steps.create-app-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Generate playlists'
       - uses: repo-sync/pull-request@v2
-        if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT }}
         id: pull-request
         with:
           github_token: ${{ steps.create-app-token.outputs.token }}
           source_branch: ${{ steps.create-branch-name.outputs.branch_name }}
           destination_branch: 'master'
-          pr_title: '[Bot] Daily playlists update'
+          pr_title: '[Bot] Daily update'
           pr_body: |
             This pull request is created by [auto-update][1] workflow.
 
@@ -119,3 +112,12 @@ jobs:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pull-request.outputs.pr_number }}
           method: squash
+      - uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Generate playlists'
