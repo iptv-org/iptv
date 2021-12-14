@@ -86,11 +86,20 @@ async function updateStreams() {
 
     if (result) {
       const { error, streams, requests } = result
-      const status = parseStatus(error, item.status)
       const resolution = parseResolution(streams)
       const origin = findOrigin(requests)
+      let status = parseStatus(error)
 
       if (status) {
+        const prevStatus = item.status
+        if (prevStatus.code === 'not_247') // not_247 -> * = not_247
+          status = item.status
+        else if (prevStatus.code === 'geo_blocked') // geo_blocked -> * = geo_blocked
+          status = item.status
+        else if(prevStatus.code === 'offline' && status.code === 'online') // offline -> online = not_247
+          status = statuses['not_247']
+
+
         stream.set('status', { status })
         stream.set('is_broken', { status: stream.get('status') })
       }
@@ -200,24 +209,9 @@ function parseResolution(streams) {
   return null
 }
 
-// Mapping Scheme:
-// ===============
-// not_247 -> * = not_247
-// geo_blocked -> * = geo_blocked
-// offline -> online = not_247
-// * -> online = online
-// * -> timeout = timeout
-// * -> geo_blocked = geo_blocked
-// * -> offline = offline
-
-function parseStatus(error, prevStatus) {
-  if (['not_247', 'geo_blocked'].includes(prevStatus.code)) return null
-  if(!error && prevStatus.code === 'offline') return statuses['not_247']
-  if(!error) return statuses['online']
+function parseStatus(error) {
   if (error) {
-    if (['not_247', 'geo_blocked'].includes(prevStatus.code)) {
-      return prevStatus
-    } else if (error.includes('timed out')) {
+    if (error.includes('timed out')) {
       return statuses['timeout']
     } else if (error.includes('403')) {
       return statuses['geo_blocked']
@@ -225,7 +219,7 @@ function parseStatus(error, prevStatus) {
     return statuses['offline']
   }
 
-  return null
+  return statuses['online']
 }
 
 function findLogo(id) {

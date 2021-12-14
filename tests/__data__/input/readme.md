@@ -34,9 +34,9 @@ Or select one of the playlists from the list below.
     <tr><th align="left">Category</th><th align="right">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left">General</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/general.m3u</code></td></tr>
-    <tr><td align="left">News</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/news.m3u</code></td></tr>
-    <tr><td align="left">Other</td><td align="right">0</td><td align="left"><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
+    <tr><td align="left">General</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/categories/general.m3u</code></td></tr>
+    <tr><td align="left">News</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/categories/news.m3u</code></td></tr>
+    <tr><td align="left">Other</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/categories/other.m3u</code></td></tr>
   </tbody>
 </table>
 
@@ -54,10 +54,10 @@ Or select one of the playlists from the list below.
     <tr><th align="left">Language</th><th align="right">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left">Catalan</td><td align="right">0</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/cat.m3u</code></td></tr>
-    <tr><td align="left">English</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/eng.m3u</code></td></tr>
-    <tr><td align="left">Russian</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/rus.m3u</code></td></tr>
-    <tr><td align="left">Undefined</td><td align="right">0</td><td align="left"><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
+    <tr><td align="left">Catalan</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/cat.m3u</code></td></tr>
+    <tr><td align="left">English</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/eng.m3u</code></td></tr>
+    <tr><td align="left">Russian</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/rus.m3u</code></td></tr>
+    <tr><td align="left">Undefined</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
@@ -75,11 +75,11 @@ Or select one of the playlists from the list below.
     <tr><th align="left">Region</th><th align="right">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left">Asia</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/regions/asia.m3u</code></td></tr>
-    <tr><td align="left">Commonwealth of Independent States</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/regions/cis.m3u</code></td></tr>
-    <tr><td align="left">Europe</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/regions/eur.m3u</code></td></tr>
-    <tr><td align="left">Europe, the Middle East and Africa</td><td align="right">2</td><td align="left"><code>https://iptv-org.github.io/iptv/regions/emea.m3u</code></td></tr>
-    <tr><td align="left">Undefined</td><td align="right">0</td><td align="left"><code>https://iptv-org.github.io/iptv/regions/undefined.m3u</code></td></tr>
+    <tr><td align="left">Asia</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/asia.m3u</code></td></tr>
+    <tr><td align="left">Commonwealth of Independent States</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/cis.m3u</code></td></tr>
+    <tr><td align="left">Europe</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/eur.m3u</code></td></tr>
+    <tr><td align="left">Europe, the Middle East and Africa</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/emea.m3u</code></td></tr>
+    <tr><td align="left">Undefined</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
@@ -97,11 +97,11 @@ Or select one of the playlists from the list below.
     <tr><th align="left">Country</th><th align="right">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left">🇦🇩 Andorra</td><td align="right">0</td><td align="left"><code>https://iptv-org.github.io/iptv/countries/ad.m3u</code></td></tr>
-    <tr><td align="left">🇷🇺 Russia</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/countries/ru.m3u</code></td></tr>
-    <tr><td align="left">🇬🇧 United Kingdom</td><td align="right">1</td><td align="left"><code>https://iptv-org.github.io/iptv/countries/uk.m3u</code></td></tr>
-    <tr><td align="left">🌍 International</td><td align="right">0</td><td align="left"><code>https://iptv-org.github.io/iptv/countries/int.m3u</code></td></tr>
-    <tr><td align="left">Undefined</td><td align="right">0</td><td align="left"><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
+    <tr><td align="left">🇦🇩 Andorra</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ad.m3u</code></td></tr>
+    <tr><td align="left">🇷🇺 Russia</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/ru.m3u</code></td></tr>
+    <tr><td align="left">🇬🇧 United Kingdom</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/uk.m3u</code></td></tr>
+    <tr><td align="left">🌍 International</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/int.m3u</code></td></tr>
+    <tr><td align="left">Undefined</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
