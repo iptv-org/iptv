@@ -14,9 +14,10 @@ To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/
 
 Also you can instead use one of these playlists:
 
-- `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
 - `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
 - `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
+- `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
+- `https://iptv-org.github.io/iptv/index.region.m3u` (grouped by region)
 - `https://iptv-org.github.io/iptv/index.nsfw.m3u` (includes adult channels)
 
 Or select one of the playlists from the list below.
@@ -40,6 +41,17 @@ Or select one of the playlists from the list below.
 
 <!-- prettier-ignore -->
 #include "./.readme/_languages.md"
+
+</details>
+
+### Playlists by region
+
+<details>
+<summary>Expand</summary>
+<br>
+
+<!-- prettier-ignore -->
+#include "./.readme/_regions.md"
 
 </details>
 
@@ -77,11 +89,10 @@ If successful, you should get the following response:
     "name": "CNN",
     "logo": "https://i.imgur.com/ilZJT5s.png",
     "url": "http://ott-cdn.ucom.am/s27/index.m3u8",
-    "category": "News",
-    "languages": [
+    "categories": [
       {
-        "code": "eng",
-        "name": "English"
+        "name": "News",
+        "slug": "news"
       }
     ],
     "countries": [
@@ -92,6 +103,12 @@ If successful, you should get the following response:
       {
         "code": "ca",
         "name": "Canada"
+      }
+    ],
+    "languages": [
+      {
+        "code": "eng",
+        "name": "English"
       }
     ],
     "tvg": {

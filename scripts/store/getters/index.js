@@ -1,0 +1,7 @@
+exports.group_title = require('./group_title')
+exports.title = require('./title')
+exports.tvg_country = require('./tvg_country')
+exports.tvg_id = require('./tvg_id')
+exports.tvg_language = require('./tvg_language')
+exports.tvg_logo = require('./tvg_logo')
+exports.tvg_url = require('./tvg_url')
