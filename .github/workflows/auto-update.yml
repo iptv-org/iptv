@@ -14,7 +14,7 @@ jobs:
           node-version: '14'
           cache: 'npm'
       - run: npm install
-      - run: node scripts/commands/create-database.js --max-clusters=10000
+      - run: node scripts/commands/create-database.js
       - run: node scripts/commands/create-matrix.js
         id: create-matrix
       - uses: actions/upload-artifact@v2
@@ -29,9 +29,7 @@ jobs:
     continue-on-error: true
     strategy:
       fail-fast: false
-      # matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
-      matrix:
-        cluster_id: [1]
+      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/download-artifact@v2
@@ -68,6 +66,10 @@ jobs:
         with:
           name: logs
           path: scripts/logs
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
       - run: npm install
       - run: node scripts/commands/update-database.js
       - uses: actions/upload-artifact@v2
