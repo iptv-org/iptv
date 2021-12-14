@@ -96,9 +96,9 @@ it('can update database', () => {
   })
   expect(JSON.parse(lines[4])).toMatchObject({
     id: 'KayhanTV.af',
-    status: { label: 'Timeout', code: 'timeout', level: 4 },
-    is_broken: true,
-    updated: true
+    status: { label: 'Geo-blocked', code: 'geo_blocked', level: 2 },
+    is_broken: false,
+    updated: false
   })
   expect(JSON.parse(lines[5])).toMatchObject({
     id: 'Sharq.af',
