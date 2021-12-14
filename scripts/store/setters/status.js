@@ -7,19 +7,5 @@ module.exports = function ({ title, status = {} }) {
     return Object.values(statuses).find(s => s.label === label) || statuses['online']
   }
 
-  if (status) {
-    switch (status.code) {
-      case 'not_247':
-      case 'geo_blocked':
-        return status
-      case 'offline':
-        return statuses['not_247']
-      case 'timeout':
-        return statuses['timeout']
-      default:
-        return statuses['online']
-    }
-  }
-
   return status
 }

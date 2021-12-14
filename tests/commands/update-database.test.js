@@ -5,7 +5,7 @@ const { execSync } = require('child_process')
 beforeEach(() => {
   fs.rmdirSync('tests/__data__/temp', { recursive: true })
   fs.mkdirSync('tests/__data__/temp')
-  fs.copyFileSync('tests/__data__/input/test.db', 'tests/__data__/temp/test.db')
+  fs.copyFileSync('tests/__data__/input/update.db', 'tests/__data__/temp/test.db')
 })
 
 it('can update database', () => {
@@ -86,12 +86,24 @@ it('can update database', () => {
     guides: ['https://iptv-org.github.io/epg/guides/ad/andorradifusio.ad.epg.xml'],
     logo: 'https://i.imgur.com/kJCjeQ4.png',
     resolution: { height: 720, width: null },
-    status: { label: 'Timeout', code: 'timeout', level: 4 },
+    status: { label: 'Offline', code: 'offline', level: 5 },
     url: 'https://iptv-all.lanesh4d0w.repl.co/andorra/atv',
     http: { referrer: '', 'user-agent': '' },
     is_nsfw: false,
     is_broken: true,
     updated: true,
     cluster_id: 1
+  })
+  expect(JSON.parse(lines[4])).toMatchObject({
+    id: 'KayhanTV.af',
+    status: { label: 'Geo-blocked', code: 'geo_blocked', level: 2 },
+    is_broken: false,
+    updated: false
+  })
+  expect(JSON.parse(lines[5])).toMatchObject({
+    id: 'Sharq.af',
+    status: { label: 'Offline', code: 'offline', level: 5 },
+    is_broken: true,
+    updated: true
   })
 })
