@@ -86,7 +86,7 @@ async function updateStreams() {
 
     if (result) {
       const { error, streams, requests } = result
-      const status = parseStatus(error)
+      const status = parseStatus(error, item.status)
       const resolution = parseResolution(streams)
       const origin = findOrigin(requests)
 
@@ -200,9 +200,24 @@ function parseResolution(streams) {
   return null
 }
 
-function parseStatus(error) {
+// Mapping Scheme:
+// ===============
+// not_247 -> * = not_247
+// geo_blocked -> * = geo_blocked
+// offline -> online = not_247
+// * -> online = online
+// * -> timeout = timeout
+// * -> geo_blocked = geo_blocked
+// * -> offline = offline
+
+function parseStatus(error, prevStatus) {
+  if (['not_247', 'geo_blocked'].includes(prevStatus.code)) return null
+  if(!error && prevStatus.code === 'offline') return statuses['not_247']
+  if(!error) return statuses['online']
   if (error) {
-    if (error.includes('timed out')) {
+    if (['not_247', 'geo_blocked'].includes(prevStatus.code)) {
+      return prevStatus
+    } else if (error.includes('timed out')) {
       return statuses['timeout']
     } else if (error.includes('403')) {
       return statuses['geo_blocked']
