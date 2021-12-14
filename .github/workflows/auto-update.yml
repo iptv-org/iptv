@@ -53,25 +53,12 @@ jobs:
     runs-on: ubuntu-latest
     needs: load
     steps:
-      - uses: tibdex/github-app-token@v1
-        if: ${{ !env.ACT }}
-        id: create-app-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - uses: actions/checkout@v2
       - run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%s')"
         id: create-branch-name
-      - uses: peterjgrainger/action-create-branch@v2.0.1
-        env:
-          GITHUB_TOKEN: ${{ steps.create-app-token.outputs.token }}
-        with:
-          branch: ${{ steps.create-branch-name.outputs.branch_name }}
-      - uses: actions/checkout@v2
-        with:
-          ref: ${{ steps.create-branch-name.outputs.branch_name }}
-      - run: |
-          git config user.name 'iptv-bot[bot]'
-          git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
+      - run: git config user.name 'iptv-bot[bot]'
+      - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
+      - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
       - run: curl -L -o scripts/data/codes.json https://iptv-org.github.io/epg/codes.json
       - uses: actions/download-artifact@v2
         with:
@@ -88,20 +75,25 @@ jobs:
           name: database
           path: scripts/channels.db
       - run: node scripts/commands/update-playlists.js
-      - run: |
-          git add channels/*
-          git commit -m "[Bot] Update playlists"
+      - run: git add channels/*
+      - run: git commit -m "[Bot] Update playlists"
       - run: node scripts/commands/generate-playlists.js
       - uses: actions/upload-artifact@v2
         with:
           name: logs
           path: scripts/logs
       - run: node scripts/commands/update-readme.js
-      - run: |
-          git add README.md
-          git commit -m "[Bot] Update README.md"
+      - run: git add README.md
+      - run: git commit -m "[Bot] Update README.md"
+      - run: git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
+      - uses: tibdex/github-app-token@v1
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - uses: repo-sync/pull-request@v2
-        # if: ${{ github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT }}
         id: pull-request
         with:
           github_token: ${{ steps.create-app-token.outputs.token }}
