@@ -86,7 +86,7 @@ async function updateStreams() {
 
     if (result) {
       const { error, streams, requests } = result
-      const status = parseStatus(error)
+      const status = parseStatus(error, item.status)
       const resolution = parseResolution(streams)
       const origin = findOrigin(requests)
 
@@ -200,17 +200,19 @@ function parseResolution(streams) {
   return null
 }
 
-function parseStatus(error) {
+function parseStatus(error, prevStatus) {
   if (error) {
     if (error.includes('timed out')) {
       return statuses['timeout']
     } else if (error.includes('403')) {
       return statuses['geo_blocked']
+    } else if (['not_247', 'geo_blocked'].includes(prevStatus.code)) {
+      return prevStatus
     }
     return statuses['offline']
   }
 
-  return null
+  return statuses['online']
 }
 
 function findLogo(id) {
