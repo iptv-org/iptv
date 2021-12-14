@@ -5,7 +5,7 @@ const { execSync } = require('child_process')
 beforeEach(() => {
   fs.rmdirSync('tests/__data__/temp', { recursive: true })
   fs.mkdirSync('tests/__data__/temp')
-  fs.copyFileSync('tests/__data__/input/test.db', 'tests/__data__/temp/test.db')
+  fs.copyFileSync('tests/__data__/input/update.db', 'tests/__data__/temp/test.db')
 })
 
 it('can update database', () => {
@@ -93,5 +93,17 @@ it('can update database', () => {
     is_broken: true,
     updated: true,
     cluster_id: 1
+  })
+  expect(JSON.parse(lines[4])).toMatchObject({
+    id: 'KayhanTV.af',
+    status: { label: 'Timeout', code: 'timeout', level: 4 },
+    is_broken: true,
+    updated: true
+  })
+  expect(JSON.parse(lines[5])).toMatchObject({
+    id: 'Sharq.af',
+    status: { label: 'Offline', code: 'offline', level: 5 },
+    is_broken: true,
+    updated: true
   })
 })
