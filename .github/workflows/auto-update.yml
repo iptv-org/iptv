@@ -14,7 +14,7 @@ jobs:
           node-version: '14'
           cache: 'npm'
       - run: npm install
-      - run: node scripts/commands/create-database.js
+      - run: node scripts/commands/create-database.js --max-clusters=10000
       - run: node scripts/commands/create-matrix.js
         id: create-matrix
       - uses: actions/upload-artifact@v2
@@ -29,7 +29,9 @@ jobs:
     continue-on-error: true
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      # matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      matrix:
+        cluster_id: [1]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/download-artifact@v2
@@ -51,13 +53,25 @@ jobs:
     runs-on: ubuntu-latest
     needs: load
     steps:
-      - uses: actions/checkout@v2
+      - uses: tibdex/github-app-token@v1
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
       - run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%s')"
         id: create-branch-name
+      - uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ steps.create-app-token.outputs.token }}
+        with:
+          branch: ${{ steps.create-branch-name.outputs.branch_name }}
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ steps.create-branch-name.outputs.branch_name }}
       - run: |
           git config user.name 'iptv-bot[bot]'
           git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
-      - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
       - run: curl -L -o scripts/data/codes.json https://iptv-org.github.io/epg/codes.json
       - uses: actions/download-artifact@v2
         with:
@@ -86,23 +100,8 @@ jobs:
       - run: |
           git add README.md
           git commit -m "[Bot] Update README.md"
-      - uses: tibdex/github-app-token@v1
-        if: ${{ !env.ACT }}
-        id: create-app-token
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: ${{ github.ref == 'refs/heads/master' }}
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          token: ${{ steps.create-app-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Generate playlists'
       - uses: repo-sync/pull-request@v2
-        if: ${{ github.ref == 'refs/heads/master' }}
+        # if: ${{ github.ref == 'refs/heads/master' }}
         id: pull-request
         with:
           github_token: ${{ steps.create-app-token.outputs.token }}
@@ -119,3 +118,12 @@ jobs:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pull-request.outputs.pr_number }}
           method: squash
+      - uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: ${{ github.ref == 'refs/heads/master' }}
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Generate playlists'
