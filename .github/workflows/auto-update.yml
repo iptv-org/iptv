@@ -101,7 +101,7 @@ jobs:
           github_token: ${{ steps.create-app-token.outputs.token }}
           source_branch: ${{ steps.create-branch-name.outputs.branch_name }}
           destination_branch: 'master'
-          pr_title: '[Bot] Daily playlists update'
+          pr_title: '[Bot] Daily update'
           pr_body: |
             This pull request is created by [auto-update][1] workflow.
 
