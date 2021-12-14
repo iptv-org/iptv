@@ -86,7 +86,7 @@ it('can update database', () => {
     guides: ['https://iptv-org.github.io/epg/guides/ad/andorradifusio.ad.epg.xml'],
     logo: 'https://i.imgur.com/kJCjeQ4.png',
     resolution: { height: 720, width: null },
-    status: { label: 'Timeout', code: 'timeout', level: 4 },
+    status: { label: 'Offline', code: 'offline', level: 5 },
     url: 'https://iptv-all.lanesh4d0w.repl.co/andorra/atv',
     http: { referrer: '', 'user-agent': '' },
     is_nsfw: false,
