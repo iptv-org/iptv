@@ -41,7 +41,7 @@ async function generateCategoryTable() {
   const table = markdown.createTable(rows, [
     { name: 'Category', align: 'left' },
     { name: 'Channels', align: 'right' },
-    { name: 'Playlist', align: 'left' }
+    { name: 'Playlist', align: 'left', nowrap: true }
   ])
 
   await file.create('./.readme/_categories.md', table)
@@ -65,7 +65,7 @@ async function generateCountryTable() {
   const table = markdown.createTable(rows, [
     { name: 'Country', align: 'left' },
     { name: 'Channels', align: 'right' },
-    { name: 'Playlist', align: 'left' }
+    { name: 'Playlist', align: 'left', nowrap: true }
   ])
 
   await file.create('./.readme/_countries.md', table)
@@ -86,7 +86,7 @@ async function generateRegionTable() {
   const table = markdown.createTable(rows, [
     { name: 'Region', align: 'left' },
     { name: 'Channels', align: 'right' },
-    { name: 'Playlist', align: 'left' }
+    { name: 'Playlist', align: 'left', nowrap: true }
   ])
 
   await file.create('./.readme/_regions.md', table)
@@ -107,7 +107,7 @@ async function generateLanguageTable() {
   const table = markdown.createTable(rows, [
     { name: 'Language', align: 'left' },
     { name: 'Channels', align: 'right' },
-    { name: 'Playlist', align: 'left' }
+    { name: 'Playlist', align: 'left', nowrap: true }
   ])
 
   await file.create('./.readme/_languages.md', table)
