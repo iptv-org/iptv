@@ -215,12 +215,12 @@ function parseStatus(error, prevStatus) {
   if(!error && prevStatus.code === 'offline') return statuses['not_247']
   if(!error) return statuses['online']
   if (error) {
-    if (error.includes('timed out')) {
+    if (['not_247', 'geo_blocked'].includes(prevStatus.code)) {
+      return prevStatus
+    } else if (error.includes('timed out')) {
       return statuses['timeout']
     } else if (error.includes('403')) {
       return statuses['geo_blocked']
-    } else if (['not_247', 'geo_blocked'].includes(prevStatus.code)) {
-      return prevStatus
     }
     return statuses['offline']
   }
