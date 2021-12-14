@@ -1,4 +1,12 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="AndFlix.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://static.epg.best/in/AndFlix.in.png" group-title="Movies",&Flix (720p) [Geo-blocked]
+https://sneh-z5api.herokuapp.com/?c=0-9-channel_2105335046
+#EXTINF:-1 tvg-id="AndPictures.in" tvg-country="SAS" tvg-language="Pashto" tvg-logo="https://static.epg.best/in/AndPictures.in.png" group-title="Movies",&Pictures (720p) [Geo-blocked]
+https://sneh-z5api.herokuapp.com/?c=0-9-tvpictureshd
+#EXTINF:-1 tvg-id="AndPriveHD.in" tvg-country="SAS" tvg-language="Pashto" tvg-logo="https://static.epg.best/in/AndPrive.in.png" group-title="Movies",&privé HD (720p) [Geo-blocked]
+https://sneh-z5api.herokuapp.com/?c=0-9-privéhd
+#EXTINF:-1 tvg-id="AndTVHD.in" tvg-country="SAS" tvg-language="Pashto" tvg-logo="https://static.epg.best/in/AndTV.in.png" group-title="Movies",&TV HD (720p) [Geo-blocked]
+https://sneh-z5api.herokuapp.com/?c=0-9-tvhd_0
 #EXTINF:-1 tvg-id="3TamilTV.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="https://i.imgur.com/WfAU7pB.png" group-title="Entertainment",3 Tamil TV (720p) [Not 24/7]
 https://6n3yogbnd9ok-hls-live.5centscdn.com/threetamil/d0dbe915091d400bd8ee7f27f0791303.sdp/index.m3u8
 #EXTINF:-1 tvg-id="7SMusic.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="https://i.imgur.com/P5EXpPy.jpg" group-title="Music",7S Music (576p) [Offline]
@@ -9,14 +17,6 @@ http://14.199.164.20:4001/play/a0nc/index.m3u8
 http://14.199.164.20:4001/play/a0mx/index.m3u8
 #EXTINF:-1 tvg-id="9XM.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/fD7wLka.jpg" group-title="Music",9XM (480p)
 https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8
-#EXTINF:-1 tvg-id="AndFlix.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://static.epg.best/in/AndFlix.in.png" group-title="Movies",&Flix (720p) [Geo-blocked]
-https://sneh-z5api.herokuapp.com/?c=0-9-channel_2105335046
-#EXTINF:-1 tvg-id="AndPictures.in" tvg-country="SAS" tvg-language="Pashto" tvg-logo="https://static.epg.best/in/AndPictures.in.png" group-title="Movies",&Pictures (720p) [Geo-blocked]
-https://sneh-z5api.herokuapp.com/?c=0-9-tvpictureshd
-#EXTINF:-1 tvg-id="AndPriveHD.in" tvg-country="SAS" tvg-language="Pashto" tvg-logo="https://static.epg.best/in/AndPrive.in.png" group-title="Movies",&privé HD (720p) [Geo-blocked]
-https://sneh-z5api.herokuapp.com/?c=0-9-privéhd
-#EXTINF:-1 tvg-id="AndTVHD.in" tvg-country="SAS" tvg-language="Pashto" tvg-logo="https://static.epg.best/in/AndTV.in.png" group-title="Movies",&TV HD (720p) [Geo-blocked]
-https://sneh-z5api.herokuapp.com/?c=0-9-tvhd_0
 #EXTINF:-1 tvg-id="ANEWSdonsTVBhangraFlava.in" tvg-country="IN" tvg-language="Punjabi" tvg-logo="" group-title="Music",A NEWSDONs TV- SWAG SADDA VAKRAA (720p) [Not 24/7]
 http://newsjatt.camdvr.org:1935/newsjatt/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="AajTak.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/x1Y2P21.png" group-title="News",Aaj Tak (576p) [Geo-blocked]
@@ -191,7 +191,7 @@ http://14.199.164.20:4001/play/a0sq/index.m3u8
 http://14.199.164.20:4001/play/a0pc/index.m3u8
 #EXTINF:-1 tvg-id="EETTV.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="https://i.imgur.com/f7J37yv.png" group-title="Entertainment",EET TV (720p) [Not 24/7]
 https://live.streamjo.com/eetlive/eettv.m3u8
-#EXTINF:-1 tvg-id="Enter10Bangla.in" tvg-country="IN" tvg-language="Bangla" tvg-logo="https://i.imgur.com/fkOxQtS.png" group-title="Entertainment",Enter10 Bangla (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Enter10Bangla.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/fkOxQtS.png" group-title="Entertainment",Enter10 Bangla (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0j5/index.m3u8
 #EXTINF:-1 tvg-id="Enter10Rangeela.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/419CJW8.png" group-title="Entertainment",Enter10 Rangeela (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0tp/index.m3u8
@@ -426,12 +426,8 @@ https://dammikartmp.tulix.tv/slrc3/slrc3/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC2f4w_ppqHplvjiNaoTAK9w/live
 #EXTINF:-1 tvg-id="News7Tamil.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="https://i.imgur.com/oBjgUTc.png" group-title="News",News 7 Tamil (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0kp/index.m3u8
-#EXTINF:-1 tvg-id="News18Assam.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="News",News18 Assam (504p) [Not 24/7]
-https://news18assam-lh.akamaihd.net/i/n18assamne_1@526575/index_5_av-p.m3u8
 #EXTINF:-1 tvg-id="News18Assam.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="News",News 18 Assam (360p) [Not 24/7]
 https://news18assam-lh.akamaihd.net/i/n18assamne_1@526575/index_4_av-p.m3u8?rebase=on&sd=10
-#EXTINF:-1 tvg-id="News18Bangla.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="News",News18 Bangla (360p) [Not 24/7]
-https://news18bangla-lh.akamaihd.net/i/n18bangla_1@2289/index_4_av-p.m3u8
 #EXTINF:-1 tvg-id="News18Bengali.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/ApY5STle.png" group-title="News",News 18 Bengali (360p) [Not 24/7]
 https://news18bangla-lh.akamaihd.net/i/n18bangla_1@2289/index_4_av-p.m3u8?rebase=on&sd=10
 #EXTINF:-1 tvg-id="News18Chhattisgarh.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="News",News 18 Chhattisgarh (360p)
@@ -440,8 +436,6 @@ https://news18mp-lh.akamaihd.net/i/n18mpcg_1@175737/index_4_av-p.m3u8?rebase=on&
 https://news18gujarati-lh.akamaihd.net/i/n18gujarat_1@370955/index_4_av-p.m3u8?rebase=on&sd=10
 #EXTINF:-1 tvg-id="News18Hindi.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="News",News 18 Hindi (360p)
 https://news18india-lh.akamaihd.net/i/news18india_1@174951/index_4_av-p.m3u8?rebase=on&sd=10
-#EXTINF:-1 tvg-id="News18India.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/hqclXeVK.png" group-title="News",News18 India (504p)
-https://news18india-lh.akamaihd.net/i/news18india_1@174951/index_5_av-p.m3u8
 #EXTINF:-1 tvg-id="News18Jharkhand.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="News",News 18 Jharkhand (360p)
 https://news18bihar-lh.akamaihd.net/i/n18biharjh_1@175736/index_4_av-p.m3u8?rebase=on&sd=10
 #EXTINF:-1 tvg-id="News18Kannada.in" tvg-country="IN" tvg-language="Kannada" tvg-logo="https://static.kannada.news18.com/kannada/uploads/2020/03/Kannada1.png" group-title="News",News 18 Kannada (360p)
@@ -470,6 +464,12 @@ https://vidcdn.vidgyor.com/news24-origin/liveabr/news24-origin/live1/playlist.m3
 https://vidcdn.vidgyor.com/news24-origin/liveabr/news24-origin/live2/playlist.m3u8
 #EXTINF:-1 tvg-id="NewsJ.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/7/7e/News_J.jpeg/revision/latest?cb=20191226093118" group-title="News",News J (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=QH4zszwdIKE
+#EXTINF:-1 tvg-id="News18Assam.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="News",News18 Assam (504p) [Not 24/7]
+https://news18assam-lh.akamaihd.net/i/n18assamne_1@526575/index_5_av-p.m3u8
+#EXTINF:-1 tvg-id="News18Bangla.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="News",News18 Bangla (360p) [Not 24/7]
+https://news18bangla-lh.akamaihd.net/i/n18bangla_1@2289/index_4_av-p.m3u8
+#EXTINF:-1 tvg-id="News18India.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/hqclXeVK.png" group-title="News",News18 India (504p)
+https://news18india-lh.akamaihd.net/i/news18india_1@174951/index_5_av-p.m3u8
 #EXTINF:-1 tvg-id="NextTVMalabar.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://cdn.statically.io/img/nexttv.in/f=auto,w=160/assets/images/toplogo-2.png?v=1" group-title="Local",Next TV Malabar (720p) [Not 24/7]
 https://6zklxbgpdw9b-hls-live.5centscdn.com/next/c9a1fdac6e082dd89e7173244f34d7b3.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="OdishaTV.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/8ZmnDAS3.png" group-title="",Odisha TV (480p) [Not 24/7]
@@ -688,21 +688,13 @@ http://cdn18.live247stream.com/ndachannel/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="YuppThirai.in" tvg-country="IN" tvg-language="Tamil" tvg-logo="https://i.imgur.com/6E8SbCf.png" group-title="Movies",Yupp Thirai (270p)
 http://119.81.82.28/encoded/yuppthirai_800/playlist.m3u8
 #EXTINF:-1 tvg-id="ZLivingUSA.in" tvg-country="US;IN" tvg-language="English" tvg-logo="https://github.com/geonsey/Free2ViewTV/blob/master/images/logos/ZLiving_512x512.png?raw=true" group-title="",Z Living USA (720p) [Geo-blocked]
-https://f8e7y4c6.ssl.hwcdn.net/zlivingusa_r/index.m3u8
-#EXTINF:-1 tvg-id="ZLivingUSA.in" tvg-country="US;IN" tvg-language="English" tvg-logo="https://github.com/geonsey/Free2ViewTV/blob/master/images/logos/ZLiving_512x512.png?raw=true" group-title="",Z Living USA (720p) [Geo-blocked]
 https://f8e7y4c6.ssl.hwcdn.net/zlivingusa_r_prod/playlist.m3u8
 #EXTINF:-1 tvg-id="ZLivingUSA.in" tvg-country="US;IN" tvg-language="English" tvg-logo="https://github.com/geonsey/Free2ViewTV/blob/master/images/logos/ZLiving_512x512.png?raw=true" group-title="",Z Living USA (720p) [Geo-blocked]
-https://y5w8j4a9.ssl.hwcdn.net/zlivingusa_r/index.m3u8
+https://f8e7y4c6.ssl.hwcdn.net/zlivingusa_r/index.m3u8
 #EXTINF:-1 tvg-id="ZLivingUSA.in" tvg-country="US;IN" tvg-language="English" tvg-logo="https://github.com/geonsey/Free2ViewTV/blob/master/images/logos/ZLiving_512x512.png?raw=true" group-title="",Z Living USA (720p) [Geo-blocked]
 https://y5w8j4a9.ssl.hwcdn.net/zlivingusa_r_prod/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee5Originals.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee5 Originals (1080p) [Geo-blocked]
-https://f8e7y4c6.ssl.hwcdn.net/zee5_originals/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee5Originals.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee5 Originals (1080p) [Geo-blocked]
-https://y5w8j4a9.ssl.hwcdn.net/zee5_originals/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee5Romance.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee5 Romance (1080p) [Geo-blocked]
-https://f8e7y4c6.ssl.hwcdn.net/zee5_romance/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee5Romance.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee5 Romance (1080p) [Geo-blocked]
-https://y5w8j4a9.ssl.hwcdn.net/zee5_romance/playlist.m3u8
+#EXTINF:-1 tvg-id="ZLivingUSA.in" tvg-country="US;IN" tvg-language="English" tvg-logo="https://github.com/geonsey/Free2ViewTV/blob/master/images/logos/ZLiving_512x512.png?raw=true" group-title="",Z Living USA (720p) [Geo-blocked]
+https://y5w8j4a9.ssl.hwcdn.net/zlivingusa_r/index.m3u8
 #EXTINF:-1 tvg-id="Zee24.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee 24 (576p) [Geo-blocked]
 https://f8e7y4c6.ssl.hwcdn.net/kalak/playlist.m3u8
 #EXTINF:-1 tvg-id="Zee24.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee 24 (576p) [Geo-blocked]
@@ -721,15 +713,15 @@ https://y5w8j4a9.ssl.hwcdn.net/action/playlist.m3u8
 https://f8e7y4c6.ssl.hwcdn.net/zanmolcnm/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeAnmolCinema.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/oRDt6fY8.png" group-title="",Zee Anmol Cinema (576p) [Geo-blocked]
 https://y5w8j4a9.ssl.hwcdn.net/zanmolcnm/playlist.m3u8
-#EXTINF:-1 tvg-id="ZeeBangla.in" tvg-country="IN" tvg-language="Bangla" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/USKY2MD6.png" group-title="Movies",Zee Bangla (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ZeeBangla.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/USKY2MD6.png" group-title="Movies",Zee Bangla (720p) [Geo-blocked]
 https://sneh-z5api.herokuapp.com/?c=0-9-zeebangla
-#EXTINF:-1 tvg-id="ZeeBanglaCinema.in" tvg-country="IN" tvg-language="Bangla" tvg-logo="https://i.imgur.com/QFqJax5.png" group-title="Movies",Zee Bangla Cinema (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ZeeBanglaCinema.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/QFqJax5.png" group-title="Movies",Zee Bangla Cinema (720p) [Geo-blocked]
 https://sneh-z5api.herokuapp.com/?c=0-9-zeebanglacinema
 #EXTINF:-1 tvg-id="ZeeBiharJharkhand.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/JdOC9ieM.png" group-title="",Zee Bihar Jharkhand (576p) [Geo-blocked]
 https://sneh-z5api.herokuapp.com/?c=0-9-zeebiharjharkhand
 #EXTINF:-1 tvg-id="ZeeBioskop.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/CdXieB6.png" group-title="",Zee Bioskop (360p) [Geo-blocked]
 http://210.210.155.35/qwr9ew/s/s32/index.m3u8
-#EXTINF:-1 tvg-id="ZeeBollywood.in" tvg-country="IN" tvg-language="Bangla" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gq8mpPvf.png" group-title="Movies",Zee Bollywood (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ZeeBollywood.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/gq8mpPvf.png" group-title="Movies",Zee Bollywood (720p) [Geo-blocked]
 https://sneh-z5api.herokuapp.com/?c=0-9-zeeclassic
 #EXTINF:-1 tvg-id="ZeeBusiness.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="http://imagesdishtvd2h.whatsonindia.com/dasimages/channel/landscape/360x270/vExrDK9r.png" group-title="Business",Zee Business [Geo-blocked]
 https://sneh-z5api.herokuapp.com/?c=0-9-zeebusiness
@@ -825,6 +817,14 @@ https://sneh-z5api.herokuapp.com/?c=0-9-353
 https://f8e7y4c6.ssl.hwcdn.net/world/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeWorld.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://rndcdn.dstv.com/dstvcms/2017/11/07/DStv_ZeeWorld_4-3_001_xlrg.png" group-title="",Zee World (576p) [Geo-blocked]
 https://y5w8j4a9.ssl.hwcdn.net/world/playlist.m3u8
+#EXTINF:-1 tvg-id="Zee5Originals.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee5 Originals (1080p) [Geo-blocked]
+https://f8e7y4c6.ssl.hwcdn.net/zee5_originals/playlist.m3u8
+#EXTINF:-1 tvg-id="Zee5Originals.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee5 Originals (1080p) [Geo-blocked]
+https://y5w8j4a9.ssl.hwcdn.net/zee5_originals/playlist.m3u8
+#EXTINF:-1 tvg-id="Zee5Romance.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee5 Romance (1080p) [Geo-blocked]
+https://f8e7y4c6.ssl.hwcdn.net/zee5_romance/playlist.m3u8
+#EXTINF:-1 tvg-id="Zee5Romance.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="" group-title="",Zee5 Romance (1080p) [Geo-blocked]
+https://y5w8j4a9.ssl.hwcdn.net/zee5_romance/playlist.m3u8
 #EXTINF:-1 tvg-id="Zing.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/SUWblss.png" group-title="",Zing (576p) [Geo-blocked]
 https://f8e7y4c6.ssl.hwcdn.net/zing/playlist.m3u8
 #EXTINF:-1 tvg-id="Zing.in" tvg-country="IN" tvg-language="Hindi" tvg-logo="https://i.imgur.com/SUWblss.png" group-title="",Zing (576p) [Geo-blocked]
