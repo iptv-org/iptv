@@ -98,7 +98,7 @@ it('can update database', () => {
     id: 'KayhanTV.af',
     status: { label: 'Geo-blocked', code: 'geo_blocked', level: 2 },
     is_broken: false,
-    updated: true
+    updated: false
   })
   expect(JSON.parse(lines[5])).toMatchObject({
     id: 'Sharq.af',

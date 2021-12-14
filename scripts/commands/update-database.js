@@ -200,7 +200,20 @@ function parseResolution(streams) {
   return null
 }
 
+// Mapping Scheme:
+// ===============
+// not_247 -> * = not_247
+// geo_blocked -> * = geo_blocked
+// offline -> online = not_247
+// * -> online = online
+// * -> timeout = timeout
+// * -> geo_blocked = geo_blocked
+// * -> offline = offline
+
 function parseStatus(error, prevStatus) {
+  if (['not_247', 'geo_blocked'].includes(prevStatus.code)) return null
+  if(!error && prevStatus.code === 'offline') return statuses['not_247']
+  if(!error) return statuses['online']
   if (error) {
     if (['not_247', 'geo_blocked'].includes(prevStatus.code)) {
       return prevStatus
@@ -212,7 +225,7 @@ function parseStatus(error, prevStatus) {
     return statuses['offline']
   }
 
-  return statuses['online']
+  return null
 }
 
 function findLogo(id) {
