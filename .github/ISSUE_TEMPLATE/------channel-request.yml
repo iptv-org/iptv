@@ -1,0 +1,58 @@
+name: 📺 Channel Request
+description: Request to add a channel into the playlist
+title: "Add: "
+labels: [ "channel request" ]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+       Please fill out the issue template as much as you can so we could efficiently process your request
+
+       **IMPORTANT**: An issue may contain a request for only one channel, otherwise it will be closed
+
+  - type: input
+    id: name
+    attributes:
+      label: Channel Name
+      description: Full name of the channel. It is recommended to use the name listed on [lyngsat](https://www.lyngsat.com/search.html) or [wikipedia](https://www.wikipedia.org/) if possible.
+      placeholder: 'Fox Life Russia'
+    validations:
+      required: true
+   
+  - type: input
+    id: origin
+    attributes:
+      label: Country
+      description: Country from which the channel originates from
+    validations:
+      required: true
+   
+  - type: input
+    id: lang
+    attributes:
+      label: Language
+    validations:
+      required: true
+  
+  - type: input
+    id: source
+    attributes:
+      label: Website
+      description: Where did you find the broadcast?
+      placeholder: 'ex. https://www.filmon.com/channel/strange-paradise'
+    validations:
+      required: true
+
+  - type: input
+    id: stream
+    attributes:
+      label: Stream URL
+      description: Link to a stream in m3u8 format
+      placeholder: 'ex. https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
+      
+  - type: input
+    id: notes
+    attributes:
+      label: Notes
+      placeholder: 'Anything else we should know about this broadcast? Is it 24/7?'
