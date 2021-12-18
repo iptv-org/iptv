@@ -1,0 +1,22 @@
+name: 🐞 Bug Report
+description: Report an error in this repository
+title: "Fix: "
+labels: [ "bug" ]
+assignees:
+  - freearhey
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+       This form is **ONLY** intended for auto-update, channel sorting and other automation scripts related issues.
+       If you're experiencing problems viewing a channel, **this is not the right form**. Please fill a [Broken stream](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=-----broken-stream.yml&title=Fix%3A+) form instead.
+
+       Please describe the error in as much detail as possible so that we can fix it quickly.
+
+  - type: textarea
+    id: bug
+    attributes:
+      label: Describe your issue
+    validations:
+      required: true
