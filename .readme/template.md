@@ -4,7 +4,7 @@
 
 Collection of publicly available IPTV channels from all over the world.
 
-Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks. This community database compiles into organized playlists the available IPTV stations, regardless of their local or international scope.
+Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks. This community database compiles into organized and ready-to-use playlists the available IPTV stations, regardless of their local or international scope.
 
 ## Usage
 
