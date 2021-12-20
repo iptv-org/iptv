@@ -8,7 +8,7 @@ Internet Protocol television (IPTV) is the delivery of television content over I
 
 If your are using IPTV for first time see the Resources section. Most stations can be accessed without lag, although you can report if any station is no longer broadcasting. Some of them are hybrid radio stations (also called "visual radio"). Some channels are streaming in high resolution (720p, 1080p, 2160p or more) and requires a fast connection (this means that if you have a slow connection, you might experience stutters and/or signal loss).
 
-If you own an Online TV station, you are welcome to join this community. Please see the Contribution section for more details.
+If you own an Online TV station, you are welcome to join this community. We appreciate you indicating the name of the station, its country and official website. Please see the Contribution section for more details.
 
 ## Usage
 
