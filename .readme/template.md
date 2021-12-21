@@ -8,7 +8,7 @@ Internet Protocol television (IPTV) is the delivery of television content over I
 
 ## Usage
 
-To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists.
+To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists. 
 
 ![VLC Network Panel](.readme/preview.png)
 
@@ -21,8 +21,6 @@ Also you can instead use one of these playlists:
 - `https://iptv-org.github.io/iptv/index.nsfw.m3u` (includes adult channels)
 
 Or select one of the playlists from the list below.
-
-Note: Some channels are streaming in high resolution (720p, 1080p, 2160p or more) and requires a fast connection (this means that if you have a slow connection, you might experience stutters and/or signal loss).
 
 ### Playlists by category
 
@@ -133,6 +131,8 @@ https://github.com/iptv-org/epg
 ## Resources
 
 You can find links to various IPTV related resources in this repository [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv).
+
+Also, you will need fast connection for stream some channels in high resolution (720p, 1080p, 2160p or more). This means that if you have a slow connection, you might experience stutters and/or signal loss.
 
 ## Contribution
 
