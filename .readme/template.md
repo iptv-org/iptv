@@ -6,10 +6,6 @@ Collection of publicly available IPTV channels from all over the world.
 
 Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks. This repository is maintained by a community that organizes into different playlists all the available IPTV stations without restrictions of access, whether they are local or international. IPTV stations have web addresses that are obtained from official websites or authorized services for easier access to the end user who has any media player that supports streaming.
 
-If your are using IPTV for first time see the Resources section. Most stations can be accessed without lag, although you can report if any station is no longer broadcasting. Some of them are hybrid radio stations (also called "visual radio"). Some channels are streaming in high resolution (720p, 1080p, 2160p or more) and requires a fast connection (this means that if you have a slow connection, you might experience stutters and/or signal loss).
-
-If you own an Online TV station or you have permission to share it, you are welcome to add for this community. We appreciate you indicating the name of the station, its country and official website. Please see the Contribution section for more details.
-
 ## Usage
 
 To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists.
@@ -25,6 +21,8 @@ Also you can instead use one of these playlists:
 - `https://iptv-org.github.io/iptv/index.nsfw.m3u` (includes adult channels)
 
 Or select one of the playlists from the list below.
+
+Note: Some channels are streaming in high resolution (720p, 1080p, 2160p or more) and requires a fast connection (this means that if you have a slow connection, you might experience stutters and/or signal loss).
 
 ### Playlists by category
 
@@ -138,7 +136,7 @@ You can find links to various IPTV related resources in this repository [iptv-or
 
 ## Contribution
 
-Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sending an issue or making a pull request.
+Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sending an issue or making a pull request. If you own an Online TV station or you have permission to share it, ask a Github user for help to add your channel to the list.
 
 ## Legal
 
