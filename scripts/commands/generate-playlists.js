@@ -178,7 +178,31 @@ async function generateIndexCategory() {
   await generator.generate(
     `${PUBLIC_PATH}/index.category.m3u`,
     {},
-    { sortBy: item => item.group_title }
+    { 
+      onLoad: function (items) {
+        let results = items
+          .filter(item => !item.categories || !item.categories.length)
+          .map(item => {
+            const newItem = _.cloneDeep(item)
+            newItem.group_title = ''
+            return newItem
+          })
+        for (const category of _.sortBy(Object.values(categories), ['name'])) {
+          let filtered = items
+            .filter(item => {
+              return Array.isArray(item.categories) && item.categories.map(c => c.slug).includes(category.slug)
+            })
+            .map(item => {
+              const newItem = _.cloneDeep(item)
+              newItem.group_title = category.name
+              return newItem
+            })
+          results = results.concat(filtered)
+        }
+
+        return results
+      },
+      sortBy: item => item.group_title }
   )
 }
 
@@ -191,7 +215,7 @@ async function generateIndexCountry() {
     {
       onLoad: function (items) {
         let results = items
-          .filter(item => !item.countries.length)
+          .filter(item => !item.countries || !item.countries.length)
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
@@ -200,7 +224,7 @@ async function generateIndexCountry() {
         for (const country of _.sortBy(Object.values(countries), ['name'])) {
           let filtered = items
             .filter(item => {
-              return item.countries.map(c => c.code).includes(country.code)
+              return Array.isArray(item.countries) && item.countries.map(c => c.code).includes(country.code)
             })
             .map(item => {
               const newItem = _.cloneDeep(item)
@@ -226,7 +250,7 @@ async function generateIndexLanguage() {
     {
       onLoad: function (items) {
         let results = items
-          .filter(item => !item.languages.length)
+          .filter(item => !item.languages || !item.languages.length)
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
@@ -235,7 +259,7 @@ async function generateIndexLanguage() {
         for (const language of languages) {
           let filtered = items
             .filter(item => {
-              return item.languages.map(c => c.code).includes(language.code)
+              return Array.isArray(item.languages) && item.languages.map(c => c.code).includes(language.code)
             })
             .map(item => {
               const newItem = _.cloneDeep(item)
@@ -290,16 +314,16 @@ async function generateIndexRegion() {
 async function generateChannelsJson() {
   logger.info('Generating channels.json...')
 
-  await generator.generate(`${PUBLIC_PATH}/channels.json`, {}, { format: 'json' })
+  await generator.generate(`${PUBLIC_PATH}/channels.json`, {}, { format: 'json', includeNSFW: true })
 }
 
 async function setUp() {
   logger.info(`Loading database...`)
   const items = await db.find({})
-  categories = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.categories)), 'slug'), ['name'])
-  countries = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.countries)), 'code'), ['name'])
-  languages = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.languages)), 'code'), ['name'])
-  regions = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.regions)), 'code'), ['name'])
+  categories = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.categories)), 'slug'), ['name']).filter(i => i)
+  countries = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.countries)), 'code'), ['name']).filter(i => i)
+  languages = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.languages)), 'code'), ['name']).filter(i => i)
+  regions = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.regions)), 'code'), ['name']).filter(i => i)
 
   const categoriesLog = `${LOGS_PATH}/generate-playlists/categories.log`
   const countriesLog = `${LOGS_PATH}/generate-playlists/countries.log`
