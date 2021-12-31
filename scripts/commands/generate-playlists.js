@@ -226,7 +226,7 @@ async function generateIndexLanguage() {
     {
       onLoad: function (items) {
         let results = items
-          .filter(item => !item.languages.length)
+          .filter(item => !item.languages || !item.languages.length)
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
@@ -235,7 +235,7 @@ async function generateIndexLanguage() {
         for (const language of languages) {
           let filtered = items
             .filter(item => {
-              return item.languages.map(c => c.code).includes(language.code)
+              return item.languages && item.languages.map(c => c.code).includes(language.code)
             })
             .map(item => {
               const newItem = _.cloneDeep(item)
@@ -296,10 +296,10 @@ async function generateChannelsJson() {
 async function setUp() {
   logger.info(`Loading database...`)
   const items = await db.find({})
-  categories = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.categories)), 'slug'), ['name'])
-  countries = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.countries)), 'code'), ['name'])
-  languages = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.languages)), 'code'), ['name'])
-  regions = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.regions)), 'code'), ['name'])
+  categories = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.categories)), 'slug'), ['name']).filter(i => i)
+  countries = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.countries)), 'code'), ['name']).filter(i => i)
+  languages = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.languages)), 'code'), ['name']).filter(i => i)
+  regions = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.regions)), 'code'), ['name']).filter(i => i)
 
   const categoriesLog = `${LOGS_PATH}/generate-playlists/categories.log`
   const countriesLog = `${LOGS_PATH}/generate-playlists/countries.log`
