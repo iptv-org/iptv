@@ -96,7 +96,9 @@ async function updateStreams() {
           status = item.status
         else if (prevStatus.code === 'geo_blocked') // geo_blocked -> * = geo_blocked
           status = item.status
-        else if(prevStatus.code === 'offline' && status.code === 'online') // offline -> online = not_247
+        else if (status.code === 'geo_blocked') // * -> geo_blocked = *
+          status = item.status
+        else if (prevStatus.code === 'offline' && status.code === 'online') // offline -> online = not_247
           status = statuses['not_247']
 
 
