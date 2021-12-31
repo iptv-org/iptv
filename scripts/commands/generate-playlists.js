@@ -178,7 +178,31 @@ async function generateIndexCategory() {
   await generator.generate(
     `${PUBLIC_PATH}/index.category.m3u`,
     {},
-    { sortBy: item => item.group_title }
+    { 
+      onLoad: function (items) {
+        let results = items
+          .filter(item => !item.categories || !item.categories.length)
+          .map(item => {
+            const newItem = _.cloneDeep(item)
+            newItem.group_title = ''
+            return newItem
+          })
+        for (const category of _.sortBy(Object.values(categories), ['name'])) {
+          let filtered = items
+            .filter(item => {
+              return Array.isArray(item.categories) && item.categories.map(c => c.slug).includes(category.slug)
+            })
+            .map(item => {
+              const newItem = _.cloneDeep(item)
+              newItem.group_title = category.name
+              return newItem
+            })
+          results = results.concat(filtered)
+        }
+
+        return results
+      },
+      sortBy: item => item.group_title }
   )
 }
 
@@ -191,7 +215,7 @@ async function generateIndexCountry() {
     {
       onLoad: function (items) {
         let results = items
-          .filter(item => !item.countries.length)
+          .filter(item => !item.countries || !item.countries.length)
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
@@ -200,7 +224,7 @@ async function generateIndexCountry() {
         for (const country of _.sortBy(Object.values(countries), ['name'])) {
           let filtered = items
             .filter(item => {
-              return item.countries.map(c => c.code).includes(country.code)
+              return Array.isArray(item.countries) && item.countries.map(c => c.code).includes(country.code)
             })
             .map(item => {
               const newItem = _.cloneDeep(item)
@@ -235,7 +259,7 @@ async function generateIndexLanguage() {
         for (const language of languages) {
           let filtered = items
             .filter(item => {
-              return item.languages && item.languages.map(c => c.code).includes(language.code)
+              return Array.isArray(item.languages) && item.languages.map(c => c.code).includes(language.code)
             })
             .map(item => {
               const newItem = _.cloneDeep(item)
