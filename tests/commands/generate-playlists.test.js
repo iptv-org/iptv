@@ -26,7 +26,13 @@ afterEach(() => {
 it('can generate categories', () => {
   expect(content('.gh-pages/categories/general.m3u'))
     .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
+http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
+`)
+
+    expect(content('.gh-pages/categories/legislative.m3u'))
+    .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 `)
 
@@ -39,7 +45,7 @@ http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
 it('can generate countries', () => {
   expect(content('.gh-pages/countries/ru.m3u'))
     .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 `)
 
@@ -52,7 +58,7 @@ http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
 it('can generate languages', () => {
   expect(content('.gh-pages/languages/rus.m3u'))
     .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 `)
 
@@ -65,13 +71,13 @@ http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
 it('can generate regions', () => {
   expect(content('.gh-pages/regions/asia.m3u'))
     .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 `)
 
   expect(content('.gh-pages/regions/cis.m3u'))
     .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 `)
 
@@ -79,7 +85,7 @@ http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
     .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News HD (720p) [Not 24/7]
 http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 `)
 
@@ -87,24 +93,26 @@ http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
     .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News HD (720p) [Not 24/7]
 http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 `)
 })
 
 it('can generate channels.json', () => {
   expect(content('.gh-pages/channels.json')).toBe(
-    `[{"name":"BBC News HD","logo":"https://i.imgur.com/eNPIQ9f.png","url":"http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8","categories":[{"name":"News","slug":"news"}],"countries":[{"name":"United Kingdom","code":"UK"}],"languages":[{"name":"English","code":"eng"}],"tvg":{"id":"BBCNews.uk","name":"BBC News HD","url":""}},{"name":"Visit-X TV","logo":"","url":"https://stream.visit-x.tv/vxtv/ngrp:live_all/playlist.m3u8","categories":[{"name":"XXX","slug":"xxx"}],"countries":[],"languages":[],"tvg":{"id":"","name":"Visit-X TV","url":""}},{"name":"ЛДПР ТВ","logo":"https://iptvx.one/icn/ldpr-tv.png","url":"http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8","categories":[{"name":"General","slug":"general"}],"countries":[{"name":"Russia","code":"RU"}],"languages":[{"name":"Russian","code":"rus"}],"tvg":{"id":"LDPRTV.ru","name":"ЛДПР ТВ","url":"https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"}}]`
+    `[{"name":"BBC News HD","logo":"https://i.imgur.com/eNPIQ9f.png","url":"http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8","categories":[{"name":"News","slug":"news"}],"countries":[{"name":"United Kingdom","code":"UK"}],"languages":[{"name":"English","code":"eng"}],"tvg":{"id":"BBCNews.uk","name":"BBC News HD","url":""}},{"name":"Visit-X TV","logo":"","url":"https://stream.visit-x.tv/vxtv/ngrp:live_all/playlist.m3u8","categories":[{"name":"XXX","slug":"xxx"}],"countries":[],"languages":[],"tvg":{"id":"","name":"Visit-X TV","url":""}},{"name":"ЛДПР ТВ","logo":"https://iptvx.one/icn/ldpr-tv.png","url":"http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8","categories":[{"name":"General","slug":"general"},{"name":"Legislative","slug":"legislative"}],"countries":[{"name":"Russia","code":"RU"}],"languages":[{"name":"Russian","code":"rus"}],"tvg":{"id":"LDPRTV.ru","name":"ЛДПР ТВ","url":"https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"}}]`
   )
 })
 
 it('can generate index.category.m3u', () => {
   expect(content('.gh-pages/index.category.m3u'))
     .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
-#EXTINF:-1 tvg-id="BBCNews.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News HD (720p) [Not 24/7]
-http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
 #EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="Legislative",ЛДПР ТВ (1080p)
+http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="BBCNews.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News HD (720p) [Not 24/7]
+http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
 `)
 })
 
@@ -151,7 +159,7 @@ it('can generate index.m3u', () => {
     .toBe(`#EXTM3U x-tvg-url="https://iptv-org.github.io/epg/guides/ru/tv.yandex.ru.epg.xml"
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-country="UK" tvg-language="English" tvg-logo="https://i.imgur.com/eNPIQ9f.png" group-title="News",BBC News HD (720p) [Not 24/7]
 http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 `)
 })
@@ -163,7 +171,7 @@ it('can generate index.nsfw.m3u', () => {
 http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-country="" tvg-language="" tvg-logo="" group-title="XXX",Visit-X TV
 https://stream.visit-x.tv/vxtv/ngrp:live_all/playlist.m3u8
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
+#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General;Legislative",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 `)
 })
@@ -171,6 +179,7 @@ http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 it('can generate logs categories', () => {
   expect(content('logs/generate-playlists/categories.log'))
     .toBe(`{"name":"General","slug":"general","count":1}
+{"name":"Legislative","slug":"legislative","count":1}
 {"name":"News","slug":"news","count":1}
 {"name":"XXX","slug":"xxx","count":1}
 {"name":"Other","slug":"other","count":0}
