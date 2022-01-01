@@ -26,11 +26,11 @@ https://edge2-tv-ll.facecast.io/evacoder_hls_hi/UBZfFgtKB1JwTwoDERNQVGGs/index.m
 #EXTINF:-1 tvg-id="A1.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/lXlwfyw.png" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148" group-title="Series",A1 (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s45/index.m3u8
-#EXTINF:-1 tvg-id="A2.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/GwQgT6X.png" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148" group-title="Series",A2 (480p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
-http://ott-cdn.ucom.am/s33/index.m3u8
 #EXTINF:-1 tvg-id="A2.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/GwQgT6X.png" group-title="Series",A2 (576p) [Not 24/7]
 https://sc.id-tv.kz/A2.m3u8
+#EXTINF:-1 tvg-id="A2.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/GwQgT6X.png" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148" group-title="Series",A2 (480p) [Timeout]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s33/index.m3u8
 #EXTINF:-1 tvg-id="AkudjiTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Movies",Akudji TV (720p) [Offline]
 https://hls.goodgame.ru/hls/5346.m3u8
 #EXTINF:-1 tvg-id="AmediaHit.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://avatars.mds.yandex.net/get-tv-channel-logos/69315/2a0000016653697bea0c072bf5c5bc1c11ec/260x160" group-title="Movies",Amedia Hit (1080p) [Not 24/7]
@@ -158,7 +158,7 @@ https://brics.bonus-tv.ru/cdn/brics/english/playlist.m3u8
 https://brics.bonus-tv.ru/cdn/brics/portuguese/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBRICSRussian.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS Russian (1080p)
 https://brics.bonus-tv.ru/cdn/brics/russian/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPRO.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",TV PRO (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVPRO.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",TV PRO (600p) [Not 24/7]
 http://rtmp.tvpro-online.ru/hls/ch1.m3u8
 #EXTINF:-1 tvg-id="TVGuberniya.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://avatars.mds.yandex.net/get-tv-channel-logos/54380/2a00000152365a4eef84a2834ed51cf5645c/z" group-title="Local",TV Губерния (Воронеж) (720p)
 https://tvgubernia-htlive.cdn.ngenix.net/live/mp4:tv-gubernia-live/playlist.m3u8
@@ -191,9 +191,9 @@ https://streaming.astrakhan.ru/astrakhan24/playlist.m3u8
 https://strm.yandex.ru/kal/astrahan24/astrahan240.m3u8
 #EXTINF:-1 tvg-id="Astrahan24.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Астрахань 24 (720p) [Not 24/7]
 http://83.234.104.142/astrakhan24hd/playlist.m3u8
-#EXTINF:-1 tvg-id="AstrahanRuSport.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Sports",Астрахань.Ru Sport (720p)
+#EXTINF:-1 tvg-id="AstrahanRuSport.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Sports",Астрахань.Ru Sport (1080p)
 https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
-#EXTINF:-1 tvg-id="AstrahanRuTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Астрахань.Ru TV (480p)
+#EXTINF:-1 tvg-id="AstrahanRuTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Астрахань.Ru TV (720p)
 https://streaming.astrakhan.ru/astrakhanrulivehd/playlist.m3u8
 #EXTINF:-1 tvg-id="Afontovo.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="Local",Афонтово (Красноярск) (1080p) [Geo-blocked]
 http://xstream.afontovo.ru/afontovo_ya.m3u8
@@ -283,7 +283,7 @@ https://strm.yandex.ru/kal/firebird/firebird0.m3u8
 http://streamer.rtcommufa.ru:1935/ptica/ptica1/playlist.m3u8
 #EXTINF:-1 tvg-id="Zhara.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Жара (576p) [Not 24/7]
 http://185.161.224.216/dash/JaraTv_SD.ism/playlist.mpd
-#EXTINF:-1 tvg-id="Zagorodnyy.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/RAfV5p7.png" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148" group-title="",Загородный (480p) [Timeout]
+#EXTINF:-1 tvg-id="Zagorodnyy.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/RAfV5p7.png" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148" group-title="",Загородный (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s31/index.m3u8
 #EXTINF:-1 tvg-id="Zvezda.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/n9zLVyR.png" group-title="General",Звезда (1080p)
@@ -435,7 +435,7 @@ http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3
 https://sc.id-tv.kz/Mujskoe_kino_hd.m3u8
 #EXTINF:-1 tvg-id="Muzsoyuz.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Муз союз (576p)
 http://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
-#EXTINF:-1 tvg-id="MuzTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/n7bGFXj.png" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148" group-title="Music",Муз-ТВ (480p) [Timeout]
+#EXTINF:-1 tvg-id="MuzTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/n7bGFXj.png" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148" group-title="Music",Муз-ТВ (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s28/index.m3u8
 #EXTINF:-1 tvg-id="MuzTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://i.imgur.com/n7bGFXj.png" group-title="Music",Муз-ТВ (720p) [Offline]
@@ -733,7 +733,7 @@ https://sc.id-tv.kz/TDK-42.m3u8
 https://sitv.ru/hls/s86.m3u8
 #EXTINF:-1 tvg-id="Telecafe.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://avatars.mds.yandex.net/get-tv-channel-logos/69315/2a0000016285b7ee7ed6e5120fb155f395f6/428x280" group-title="",Телекафе (576p)
 http://91.185.3.218:4000/play/605
-#EXTINF:-1 tvg-id="Teleputeshestviya.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://avatars.mds.yandex.net/get-tv-channel-logos/70787/2a000001662fa9eb27aefc58bb87bcf68f33/260x160" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148" group-title="Travel",Телепутешествия (480p)
+#EXTINF:-1 tvg-id="Teleputeshestviya.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://avatars.mds.yandex.net/get-tv-channel-logos/70787/2a000001662fa9eb27aefc58bb87bcf68f33/260x160" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148" group-title="Travel",Телепутешествия (480p) [Timeout]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s71/index.m3u8
 #EXTINF:-1 tvg-id="TelestanciyaMIRNovosibirsk.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="" group-title="",Телестанция МИР (Новосибирск) (720p) [Not 24/7]
