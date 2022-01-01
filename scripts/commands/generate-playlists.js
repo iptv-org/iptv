@@ -76,16 +76,6 @@ async function generateCountries() {
     })
   }
 
-  const { count: intCount } = await generator.generate(`${PUBLIC_PATH}/countries/int.m3u`, {
-    tvg_country: 'INT'
-  })
-
-  await log('countries', {
-    name: 'International',
-    code: 'INT',
-    count: intCount
-  })
-
   const { count: undefinedCount } = await generator.generate(
     `${PUBLIC_PATH}/countries/undefined.m3u`,
     {
