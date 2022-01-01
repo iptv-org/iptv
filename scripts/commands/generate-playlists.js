@@ -219,6 +219,7 @@ async function generateIndexCountry() {
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
+            newItem.categories = []
             return newItem
           })
         for (const country of _.sortBy(Object.values(countries), ['name'])) {
@@ -254,6 +255,7 @@ async function generateIndexLanguage() {
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
+            newItem.categories = []
             return newItem
           })
         for (const language of languages) {
@@ -289,6 +291,7 @@ async function generateIndexRegion() {
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
+            newItem.categories = []
             return newItem
           })
         for (const region of regions) {
