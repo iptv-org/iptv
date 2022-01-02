@@ -26,7 +26,8 @@ it('can create database', () => {
     countries: [{ name: 'Andorra', code: 'AD', lang: 'cat' }],
     regions: [
       { name: 'Europe, the Middle East and Africa', code: 'EMEA' },
-      { name: 'Europe', code: 'EUR' }
+      { name: 'Europe', code: 'EUR' },
+      { name: 'Worldwide', code: 'INT' }
     ],
     languages: [{ name: 'Catalan', code: 'cat' }],
     categories: [{ name: 'General', slug: 'general', nsfw: false }],
