@@ -9,21 +9,6 @@ body:
       value: |
          Please fill out the issue template as much as you can so we could efficiently process your request
          **IMPORTANT**: An issue may contain a request for only one channel, otherwise it will be closed
-         
-         Channels present in this repository come from variety of sources, some may have overbalanced load at times, temporal issues or just be far away from your location to play smoothly.
-         Please wait for a few hours at least before filling this form.
-         
-  - type: checkboxes
-    id: preliminary
-    attributes:
-     label: I have verified that
-     options:
-      - label: I use the GitHub playlist link and not a downloaded/cached version of the file
-        required: true
-      - label: My TV player has updated this playlist after 0:00 GMT and is set to update it daily
-        required: true
-      - label: I am aware that the channel source may have temporal outages. It is broken/absent from the playlist for couple of hours or days 
-        required: true
         
   - type: input
     id: name
@@ -39,7 +24,7 @@ body:
     attributes:
       label: What happened to the stream?
       options:
-        - It is now offline (disappeared from the playlist)
+        - It is disappeared from the playlist
         - It is stuck at a single frame/the same segment
         - I see visual artifacts
         - It is buffering to unplayable point
