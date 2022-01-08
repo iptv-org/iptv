@@ -4,6 +4,7 @@
 
 Collection of publicly available IPTV channels from all over the world.
 
+## About
 Internet Protocol television (IPTV) is the delivery of television content over Internet Protocol (IP) networks. This repository is maintained by a community that organizes into different playlists all the available IPTV stations without restrictions of access, whether they are local or international. IPTV stations have web addresses that are obtained from official websites or authorized services for easier access to the end user who has any media player that supports streaming.
 
 ## Usage
