@@ -132,8 +132,6 @@ function getCountryFlag(code) {
   switch (code) {
     case 'UK':
       return '🇬🇧'
-    case 'INT':
-      return '🌍'
     case 'UNDEFINED':
       return ''
     default:

@@ -76,16 +76,6 @@ async function generateCountries() {
     })
   }
 
-  const { count: intCount } = await generator.generate(`${PUBLIC_PATH}/countries/int.m3u`, {
-    tvg_country: 'INT'
-  })
-
-  await log('countries', {
-    name: 'International',
-    code: 'INT',
-    count: intCount
-  })
-
   const { count: undefinedCount } = await generator.generate(
     `${PUBLIC_PATH}/countries/undefined.m3u`,
     {
@@ -219,6 +209,7 @@ async function generateIndexCountry() {
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
+            newItem.categories = []
             return newItem
           })
         for (const country of _.sortBy(Object.values(countries), ['name'])) {
@@ -254,6 +245,7 @@ async function generateIndexLanguage() {
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
+            newItem.categories = []
             return newItem
           })
         for (const language of languages) {
@@ -289,6 +281,7 @@ async function generateIndexRegion() {
           .map(item => {
             const newItem = _.cloneDeep(item)
             newItem.group_title = ''
+            newItem.categories = []
             return newItem
           })
         for (const region of regions) {
