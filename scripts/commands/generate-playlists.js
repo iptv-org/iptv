@@ -307,7 +307,7 @@ async function generateIndexRegion() {
 async function generateChannelsJson() {
   logger.info('Generating channels.json...')
 
-  await generator.generate(`${PUBLIC_PATH}/channels.json`, {}, { format: 'json', includeNSFW: true })
+  await generator.generate(`${PUBLIC_PATH}/channels.json`, {}, { format: 'json', includeNSFW: true, uniqBy: null })
 }
 
 async function setUp() {
