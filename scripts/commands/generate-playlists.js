@@ -48,7 +48,15 @@ async function generateCategories() {
   const { count: otherCount } = await generator.generate(
     `${PUBLIC_PATH}/categories/other.m3u`,
     { categories: { $size: 0 } },
-    { saveEmpty: true }
+    {
+      saveEmpty: true,
+      onLoad: function (items) {
+        return items.map(item => {
+          item.group_title = 'Other'
+          return item
+        })
+      }
+    }
   )
 
   await log('categories', {
@@ -80,6 +88,14 @@ async function generateCountries() {
     `${PUBLIC_PATH}/countries/undefined.m3u`,
     {
       countries: { $size: 0 }
+    },
+    {
+      onLoad: function (items) {
+        return items.map(item => {
+          item.group_title = 'Undefined'
+          return item
+        })
+      }
     }
   )
 
@@ -109,6 +125,14 @@ async function generateLanguages() {
     `${PUBLIC_PATH}/languages/undefined.m3u`,
     {
       languages: { $size: 0 }
+    },
+    {
+      onLoad: function (items) {
+        return items.map(item => {
+          item.group_title = 'Undefined'
+          return item
+        })
+      }
     }
   )
 
@@ -140,7 +164,15 @@ async function generateRegions() {
   const { count: undefinedCount } = await generator.generate(
     `${PUBLIC_PATH}/regions/undefined.m3u`,
     { regions: { $size: 0 } },
-    { saveEmpty: true }
+    {
+      saveEmpty: true,
+      onLoad: function (items) {
+        return items.map(item => {
+          item.group_title = 'Undefined'
+          return item
+        })
+      }
+    }
   )
 
   await log('regions', {
@@ -153,13 +185,50 @@ async function generateRegions() {
 async function generateIndexNSFW() {
   logger.info(`Generating index.nsfw.m3u...`)
 
-  await generator.generate(`${PUBLIC_PATH}/index.nsfw.m3u`, {}, { includeNSFW: true })
+  await generator.generate(
+    `${PUBLIC_PATH}/index.nsfw.m3u`,
+    {},
+    {
+      includeNSFW: true,
+      onLoad: function (items) {
+        return items.map(item => {
+          if (!item.categories || !item.categories.length) {
+            item.group_title = 'Other'
+          }
+
+          return item
+        })
+      },
+      sortBy: item => {
+        if (item.group_title === 'Other') return '_'
+        return item.group_title || ''
+      }
+    }
+  )
 }
 
 async function generateIndex() {
   logger.info(`Generating index.m3u...`)
 
-  await generator.generate(`${PUBLIC_PATH}/index.m3u`, {})
+  await generator.generate(
+    `${PUBLIC_PATH}/index.m3u`,
+    {},
+    {
+      onLoad: function (items) {
+        return items.map(item => {
+          if (!item.categories || !item.categories.length) {
+            item.group_title = 'Other'
+          }
+
+          return item
+        })
+      },
+      sortBy: item => {
+        if (item.group_title === 'Other') return '_'
+        return item.group_title || ''
+      }
+    }
+  )
 }
 
 async function generateIndexCategory() {
@@ -168,19 +237,22 @@ async function generateIndexCategory() {
   await generator.generate(
     `${PUBLIC_PATH}/index.category.m3u`,
     {},
-    { 
+    {
       onLoad: function (items) {
         let results = items
           .filter(item => !item.categories || !item.categories.length)
           .map(item => {
             const newItem = _.cloneDeep(item)
-            newItem.group_title = ''
+            newItem.group_title = 'Other'
             return newItem
           })
         for (const category of _.sortBy(Object.values(categories), ['name'])) {
           let filtered = items
             .filter(item => {
-              return Array.isArray(item.categories) && item.categories.map(c => c.slug).includes(category.slug)
+              return (
+                Array.isArray(item.categories) &&
+                item.categories.map(c => c.slug).includes(category.slug)
+              )
             })
             .map(item => {
               const newItem = _.cloneDeep(item)
@@ -192,7 +264,11 @@ async function generateIndexCategory() {
 
         return results
       },
-      sortBy: item => item.group_title }
+      sortBy: item => {
+        if (item.group_title === 'Other') return '_'
+        return item.group_title
+      }
+    }
   )
 }
 
@@ -208,14 +284,17 @@ async function generateIndexCountry() {
           .filter(item => !item.countries || !item.countries.length)
           .map(item => {
             const newItem = _.cloneDeep(item)
-            newItem.group_title = ''
+            newItem.group_title = 'Undefined'
             newItem.categories = []
             return newItem
           })
         for (const country of _.sortBy(Object.values(countries), ['name'])) {
           let filtered = items
             .filter(item => {
-              return Array.isArray(item.countries) && item.countries.map(c => c.code).includes(country.code)
+              return (
+                Array.isArray(item.countries) &&
+                item.countries.map(c => c.code).includes(country.code)
+              )
             })
             .map(item => {
               const newItem = _.cloneDeep(item)
@@ -227,7 +306,10 @@ async function generateIndexCountry() {
 
         return results
       },
-      sortBy: item => item.group_title
+      sortBy: item => {
+        if (item.group_title === 'Undefined') return '_'
+        return item.group_title
+      }
     }
   )
 }
@@ -244,14 +326,17 @@ async function generateIndexLanguage() {
           .filter(item => !item.languages || !item.languages.length)
           .map(item => {
             const newItem = _.cloneDeep(item)
-            newItem.group_title = ''
+            newItem.group_title = 'Undefined'
             newItem.categories = []
             return newItem
           })
         for (const language of languages) {
           let filtered = items
             .filter(item => {
-              return Array.isArray(item.languages) && item.languages.map(c => c.code).includes(language.code)
+              return (
+                Array.isArray(item.languages) &&
+                item.languages.map(c => c.code).includes(language.code)
+              )
             })
             .map(item => {
               const newItem = _.cloneDeep(item)
@@ -263,7 +348,10 @@ async function generateIndexLanguage() {
 
         return results
       },
-      sortBy: item => item.group_title
+      sortBy: item => {
+        if (item.group_title === 'Undefined') return '_'
+        return item.group_title
+      }
     }
   )
 }
@@ -280,7 +368,7 @@ async function generateIndexRegion() {
           .filter(item => !item.regions.length)
           .map(item => {
             const newItem = _.cloneDeep(item)
-            newItem.group_title = ''
+            newItem.group_title = 'Undefined'
             newItem.categories = []
             return newItem
           })
@@ -299,7 +387,10 @@ async function generateIndexRegion() {
 
         return results
       },
-      sortBy: item => item.group_title
+      sortBy: item => {
+        if (item.group_title === 'Undefined') return '_'
+        return item.group_title
+      }
     }
   )
 }
@@ -307,16 +398,28 @@ async function generateIndexRegion() {
 async function generateChannelsJson() {
   logger.info('Generating channels.json...')
 
-  await generator.generate(`${PUBLIC_PATH}/channels.json`, {}, { format: 'json', includeNSFW: true })
+  await generator.generate(
+    `${PUBLIC_PATH}/channels.json`,
+    {},
+    { format: 'json', includeNSFW: true, uniqBy: null }
+  )
 }
 
 async function setUp() {
   logger.info(`Loading database...`)
   const items = await db.find({})
-  categories = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.categories)), 'slug'), ['name']).filter(i => i)
-  countries = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.countries)), 'code'), ['name']).filter(i => i)
-  languages = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.languages)), 'code'), ['name']).filter(i => i)
-  regions = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.regions)), 'code'), ['name']).filter(i => i)
+  categories = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.categories)), 'slug'), ['name']).filter(
+    i => i
+  )
+  countries = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.countries)), 'code'), ['name']).filter(
+    i => i
+  )
+  languages = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.languages)), 'code'), ['name']).filter(
+    i => i
+  )
+  regions = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.regions)), 'code'), ['name']).filter(
+    i => i
+  )
 
   const categoriesLog = `${LOGS_PATH}/generate-playlists/categories.log`
   const countriesLog = `${LOGS_PATH}/generate-playlists/countries.log`
