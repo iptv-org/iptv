@@ -134,11 +134,11 @@ Also, you will need fast connection for stream some channels in high resolution 
 
 ## About
 
-This repository is maintained by a community that organizes into different playlists all the available IPTV stations without restrictions of access, whether they are local or international. In non-technical words, IPTV (Internet Protocol television) stations have web addresses that are obtained from official websites or authorized services for easier access to the end user who has any media player that supports streaming.
+This repository is maintained by a community that organizes into different playlists all the available IPTV stations without restrictions of access, whether they are local or international. In non-technical words, IPTV (Internet Protocol television) stations have web addresses that *are obtained from official websites or authorized services for easier access to the end user who has any media player that supports streaming*. A software is used to periodically check if they are currently online.
 
 ### Contribution
 
-Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sending an issue or making a pull request. If you own an Online TV station or you have permission to share it, ask a Github user for help to add your channel to the list.
+Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sending an issue or making a pull request. If you own an Online TV station or you have permission to share or update, ask a Github user for help to add your channel to the list.
 
 ### Legal
 
