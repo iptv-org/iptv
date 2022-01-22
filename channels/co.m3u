@@ -57,7 +57,7 @@ https://vcp.myplaytv.com/moviefe/ngrp:moviefe_all/playlist.m3u8
 http://vcp1.myplaytv.com:1935/mundomas/mundomas/playlist.m3u8
 #EXTINF:-1 tvg-id="NoticiasCaracol.co" tvg-country="CO" tvg-language="Spanish" tvg-logo="https://platform-static.cdn.mdstrm.com/player/logo/589b13f631f1bebd088ff756.png" group-title="News",Noticias Caracol (720p) [Geo-blocked]
 https://mdstrm.com/live-stream-playlist/58dc3d471cbe05ff3c8e463e.m3u8
-#EXTINF:-1 tvg-id="NoticiasCaracol.co" tvg-country="CO" tvg-language="Spanish" tvg-logo="https://platform-static.cdn.mdstrm.com/player/logo/589b13f631f1bebd088ff756.png" group-title="News",Noticias Caracol (320p)
+#EXTINF:-1 tvg-id="NoticiasCaracol.co" tvg-country="CO" tvg-language="Spanish" tvg-logo="https://platform-static.cdn.mdstrm.com/player/logo/589b13f631f1bebd088ff756.png" group-title="News",Noticias Caracol (360p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC2Xq2PK-got3Rtz9ZJ32hLQ/live
 #EXTINF:-1 tvg-id="NTN24.co" tvg-country="CO;HISPAM" tvg-language="Spanish" tvg-logo="https://graph.facebook.com/NTN24/picture?width=320&height=320" group-title="News",NTN24 (Nuestra Tele Noticias) (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCEJs1fTF3KszRJGxJY14VrA/live
@@ -76,8 +76,9 @@ https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive.smil/playlist.
 #EXTINF:-1 tvg-id="Teleantioquia2.co" tvg-country="CO" tvg-language="Spanish" tvg-logo="" group-title="General",Teleantioquia 2 (360p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive2.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Telecafe.co" tvg-country="CO" tvg-language="Spanish" tvg-logo="http://cdn-std-1.sibasa.netdna-cdn.com/co/b3aef974216995f45cbb271e6be36964.jpg" group-title="General",Telecafé [Offline]
-http://38.131.11.9:1080/play/a0ct
+#EXTINF:-1 tvg-id="Telecafe.co" tvg-country="CO" tvg-language="Spanish" tvg-logo="http://cdn-std-1.sibasa.netdna-cdn.com/co/b3aef974216995f45cbb271e6be36964.jpg" group-title="General",Telecafé [Not 24/7]
+#EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
+https://liveingesta118.cdnmedia.tv/telecafelive/smil:dvrlive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Telecaribe.co" tvg-country="CO" tvg-language="Spanish" tvg-logo="https://i.imgur.com/i5wyEor.png" group-title="General",Telecaribe (720p) [Offline]
 https://iptv-all.lanesh4d0w.repl.co/colombia/telecaribe_adaptive
 #EXTINF:-1 tvg-id="Teleislas.co" tvg-country="CO" tvg-language="Spanish" tvg-logo="https://i.imgur.com/4xNgb8H.png" group-title="General",Teleislas (486p) [Not 24/7]
