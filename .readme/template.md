@@ -130,11 +130,9 @@ https://github.com/iptv-org/epg
 
 You can find links to various IPTV related resources in this repository [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv).
 
-Also, you will need fast connection for stream some channels in high resolution (720p, 1080p, 2160p or more). This means that if you have a slow connection, you might experience stutters and/or signal loss.
-
 ## About
 
-This repository is maintained by a community that organizes into different playlists all the available IPTV stations without restrictions of access, whether they are local or international. In non-technical words, IPTV (Internet Protocol television) stations have web addresses that *are obtained from official websites or authorized services for easier access to the end user who has any media player that supports streaming*. A software is used to periodically check if web addresses are currently online.
+This repository is maintained by a community that organizes into different playlists all the available IPTV stations without restrictions of access, whether they are local or international. In non-technical words, IPTV (Internet Protocol television) stations have web addresses that *are obtained from official websites or authorized services for easier access to the end user who has any media player that supports streaming*. A software is used to periodically check if web addresses are currently online with the available resolution (like 480p, 720p, 1080p, 2160p or more).
 
 ### Contribution
 
