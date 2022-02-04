@@ -1,5 +1,4 @@
-const { db, file, parser, store, logger } = require('../core')
-const transliteration = require('transliteration')
+const { db, file, parser, store, logger, cid } = require('../core')
 const { program } = require('commander')
 const _ = require('lodash')
 
@@ -17,19 +16,19 @@ const options = program
 const links = []
 
 async function main() {
-  logger.info('Starting...')
-  logger.info(`Number of clusters: ${options.maxClusters}`)
+  logger.info('starting...')
+  logger.info(`number of clusters: ${options.maxClusters}`)
 
   await loadChannels()
   await saveToDatabase()
 
-  logger.info('Done')
+  logger.info('done')
 }
 
 main()
 
 async function loadChannels() {
-  logger.info(`Loading links...`)
+  logger.info(`loading links...`)
 
   const files = await file.list(`${options.inputDir}/**/*.m3u`)
   for (const filepath of files) {
@@ -39,41 +38,33 @@ async function loadChannels() {
       links.push(item)
     }
   }
-  logger.info(`Found ${links.length} links`)
+  logger.info(`found ${links.length} links`)
 }
 
 async function saveToDatabase() {
-  logger.info('Saving to the database...')
+  logger.info('saving to the database...')
 
   await db.reset()
   const chunks = split(_.shuffle(links), options.maxClusters)
   for (const [i, chunk] of chunks.entries()) {
     for (const item of chunk) {
       const stream = store.create()
-      stream.set('name', { title: item.name })
       stream.set('id', { id: item.tvg.id })
+      stream.set('display_name', { display_name: item.name })
       stream.set('filepath', { filepath: item.filepath })
-      stream.set('src_country', { filepath: item.filepath })
-      stream.set('tvg_country', { tvg_country: item.tvg.country })
-      stream.set('countries', { tvg_country: item.tvg.country })
-      stream.set('regions', { countries: stream.get('countries') })
-      stream.set('languages', { tvg_language: item.tvg.language })
-      stream.set('categories', { group_title: item.group.title })
-      stream.set('tvg_url', { tvg_url: item.tvg.url })
-      stream.set('guides', { tvg_url: item.tvg.url })
-      stream.set('logo', { logo: item.tvg.logo })
       stream.set('resolution', { title: item.name })
       stream.set('status', { title: item.name })
       stream.set('url', { url: item.url })
       stream.set('http', { http: item.http })
-      stream.set('is_nsfw', { categories: stream.get('categories') })
       stream.set('is_broken', { status: stream.get('status') })
       stream.set('updated', { updated: false })
       stream.set('cluster_id', { cluster_id: i + 1 })
 
       if (!stream.get('id')) {
-        const id = generateChannelId(stream.get('name'), stream.get('src_country'))
+        const id = cid.generate(item.name, item.filepath)
+
         stream.set('id', { id })
+        stream.set('updated', { updated: true })
       }
 
       await db.insert(stream.data())
@@ -87,18 +78,4 @@ function split(arr, n) {
     result.push(arr.splice(0, Math.ceil(arr.length / i)))
   }
   return result
-}
-
-function generateChannelId(name, src_country) {
-  if (name && src_country) {
-    const slug = transliteration
-      .transliterate(name)
-      .replace(/\+/gi, 'Plus')
-      .replace(/[^a-z\d]+/gi, '')
-    const code = src_country.code.toLowerCase()
-
-    return `${slug}.${code}`
-  }
-
-  return null
 }
