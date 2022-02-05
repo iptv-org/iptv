@@ -9,7 +9,7 @@ async function main() {
 
   for (const filepath in files) {
     const items = files[filepath]
-    await generator.saveAsM3U(filepath, items, { includeGuides: false })
+    await generator.saveAsM3U(filepath, items)
   }
 }
 
