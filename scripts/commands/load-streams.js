@@ -15,7 +15,7 @@ const config = {
   debug: options.debug
 }
 
-const LOGS_PATH = process.env.LOGS_PATH || 'scripts/logs'
+const LOGS_PATH = process.env.LOGS_PATH || 'scripts/logs/load-streams'
 
 async function main() {
   logger.info('starting...')
@@ -23,7 +23,7 @@ async function main() {
   logger.info(`delay: ${options.delay}ms`)
   timer.start()
 
-  const clusterLog = `${LOGS_PATH}/load-streams/cluster_${options.clusterId}.log`
+  const clusterLog = `${LOGS_PATH}/cluster_${options.clusterId}.log`
   logger.info(`loading cluster: ${options.clusterId}`)
   logger.info(`creating '${clusterLog}'...`)
   await file.create(clusterLog)
