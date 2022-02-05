@@ -50,7 +50,7 @@ async function saveToDatabase() {
     for (const item of chunk) {
       const stream = store.create()
       stream.set('id', { id: item.tvg.id })
-      stream.set('display_name', { display_name: item.name })
+      stream.set('title', { title: item.name })
       stream.set('filepath', { filepath: item.filepath })
       stream.set('resolution', { title: item.name })
       stream.set('status', { title: item.name })

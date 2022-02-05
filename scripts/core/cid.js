@@ -1,11 +1,12 @@
 const file = require('./file')
+const parser = require('./parser')
 const transliteration = require('transliteration')
 
 const cid = {}
 
 cid.generate = function (title, filepath) {
-  const name = parseChannelName(title)
-  const code = parseCountryCode(filepath)
+  const name = parser.parseChannelName(title)
+  const code = parser.parseCountryCode(filepath)
 
   if (name && code) {
     const slug = transliteration
@@ -20,22 +21,3 @@ cid.generate = function (title, filepath) {
 }
 
 module.exports = cid
-
-function parseCountryCode(filepath) {
-  if (!filepath) return null
-  const basename = file.basename(filepath)
-  const [code] = basename.split('_') || [null]
-
-  return code
-}
-
-function parseChannelName(title) {
-  return title
-    .trim()
-    .split(' ')
-    .map(s => s.trim())
-    .filter(s => {
-      return !/\[|\]/i.test(s) && !/\((\d+)P\)/i.test(s)
-    })
-    .join(' ')
-}
