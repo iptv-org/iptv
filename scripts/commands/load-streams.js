@@ -18,20 +18,20 @@ const config = {
 const LOGS_PATH = process.env.LOGS_PATH || 'scripts/logs'
 
 async function main() {
-  logger.info('Starting...')
-  logger.info(`Timeout: ${options.timeout}ms`)
-  logger.info(`Delay: ${options.delay}ms`)
+  logger.info('starting...')
+  logger.info(`timeout: ${options.timeout}ms`)
+  logger.info(`delay: ${options.delay}ms`)
   timer.start()
 
-  const clusterLog = `${LOGS_PATH}/check-streams/cluster_${options.clusterId}.log`
-  logger.info(`Loading cluster: ${options.clusterId}`)
-  logger.info(`Creating '${clusterLog}'...`)
+  const clusterLog = `${LOGS_PATH}/load-streams/cluster_${options.clusterId}.log`
+  logger.info(`loading cluster: ${options.clusterId}`)
+  logger.info(`creating '${clusterLog}'...`)
   await file.create(clusterLog)
   const items = await db.find({ cluster_id: options.clusterId })
   const total = items.length
-  logger.info(`Found ${total} links`)
+  logger.info(`found ${total} links`)
 
-  logger.info('Checking...')
+  logger.info('checking...')
   const results = {}
   for (const [i, item] of items.entries()) {
     const message = `[${i + 1}/${total}] ${item.filepath}: ${item.url}`
@@ -44,7 +44,7 @@ async function main() {
     await file.append(clusterLog, JSON.stringify(result) + '\n')
   }
 
-  logger.info(`Done in ${timer.format('HH[h] mm[m] ss[s]')}`)
+  logger.info(`done in ${timer.format('HH[h] mm[m] ss[s]')}`)
 }
 
 main()
