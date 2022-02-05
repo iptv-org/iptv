@@ -5,10 +5,10 @@ const { execSync } = require('child_process')
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.emptyDirSync('tests/__data__/temp')
-  fs.copyFileSync('tests/__data__/input/channels.db', 'tests/__data__/temp/channels.db')
+  fs.copyFileSync('tests/__data__/input/streams.db', 'tests/__data__/temp/streams.db')
 
   const stdout = execSync(
-    'DB_FILEPATH=tests/__data__/temp/channels.db LOGS_PATH=tests/__data__/output/logs node scripts/commands/load-streams.js --cluster-id=1 --timeout=1',
+    'DB_FILEPATH=tests/__data__/temp/streams.db LOGS_PATH=tests/__data__/output/logs/load-streams node scripts/commands/load-streams.js --cluster-id=1 --timeout=1',
     { encoding: 'utf8' }
   )
 })
