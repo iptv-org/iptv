@@ -42,7 +42,7 @@ parser.parseChannelName = function (string) {
 parser.parseCountryCode = function (filepath) {
   if (!filepath) return null
   const basename = file.basename(filepath)
-  const [code] = basename.split('_') || [null]
+  const [_, code] = basename.match(/^([a-z]{2})(_|\.)/) || [null, null]
 
   return code
 }
