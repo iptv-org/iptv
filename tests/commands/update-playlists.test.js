@@ -13,20 +13,17 @@ beforeEach(() => {
 })
 
 it('can update playlist', () => {
-  const output1 = content('tests/__data__/output/channels/ad.m3u')
-  const expected1 = content('tests/__data__/expected/channels/ad.m3u')
+  expect(content('tests/__data__/output/channels/ad.m3u')).toBe(
+    content('tests/__data__/expected/channels/ad.m3u')
+  )
 
-  expect(output1).toBe(expected1)
+  expect(content('tests/__data__/output/channels/ru.m3u')).toBe(
+    content('tests/__data__/expected/channels/ru.m3u')
+  )
 
-  const output2 = content('tests/__data__/output/channels/ru.m3u')
-  const expected2 = content('tests/__data__/expected/channels/ru.m3u')
-
-  expect(output2).toBe(expected2)
-
-  const output3 = content('tests/__data__/output/channels/uk.m3u')
-  const expected3 = content('tests/__data__/expected/channels/uk.m3u')
-
-  expect(output3).toBe(expected3)
+  expect(content('tests/__data__/output/channels/uk.m3u')).toBe(
+    content('tests/__data__/expected/channels/uk.m3u')
+  )
 })
 
 function content(filepath) {
