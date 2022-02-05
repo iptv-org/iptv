@@ -50,11 +50,11 @@ generator.generate = async function (filepath, query = {}, options = {}) {
   return { filepath, query, options, count: items.length }
 }
 
-async function saveAsM3U(filepath, items, options) {
+async function saveAsM3U(filepath, items, options = {}) {
   const playlist = await createPlaylist(filepath)
 
   const header = {}
-  if (options.includeGuides) {
+  if (options.public) {
     let guides = items.map(item => item.guides)
     guides = _.uniq(_.flatten(guides)).sort().join(',')
 
@@ -64,23 +64,28 @@ async function saveAsM3U(filepath, items, options) {
   await playlist.header(header)
   for (const item of items) {
     const stream = store.create(item)
-    await playlist.link(
-      stream.get('url'),
-      stream.get('title'),
-      {
+
+    let attrs
+    if (options.public) {
+      attrs = {
         'tvg-id': stream.get('tvg_id'),
         'tvg-country': stream.get('tvg_country'),
         'tvg-language': stream.get('tvg_language'),
         'tvg-logo': stream.get('tvg_logo'),
-        // 'tvg-url': stream.get('tvg_url') || undefined,
         'user-agent': stream.get('http.user-agent') || undefined,
         'group-title': stream.get('group_title')
-      },
-      {
-        'http-referrer': stream.get('http.referrer') || undefined,
-        'http-user-agent': stream.get('http.user-agent') || undefined
       }
-    )
+    } else {
+      attrs = {
+        'tvg-id': stream.get('tvg_id'),
+        'user-agent': stream.get('http.user-agent') || undefined
+      }
+    }
+
+    await playlist.link(stream.get('url'), stream.get('display_name'), attrs, {
+      'http-referrer': stream.get('http.referrer') || undefined,
+      'http-user-agent': stream.get('http.user-agent') || undefined
+    })
   }
 }
 

@@ -1,37 +1,36 @@
-const fs = require('fs')
+const fs = require('fs-extra')
 const path = require('path')
 const { execSync } = require('child_process')
 
 beforeEach(() => {
-  fs.copyFileSync('tests/__data__/input/test.db', 'tests/__data__/temp/test.db')
-})
+  fs.emptyDirSync('tests/__data__/temp')
+  fs.copyFileSync('tests/__data__/input/streams.db', 'tests/__data__/temp/streams.db')
 
-afterEach(() => {
-  fs.rmdirSync('tests/__data__/temp', { recursive: true })
-  fs.mkdirSync('tests/__data__/temp')
+  const stdout = execSync(
+    'DB_FILEPATH=tests/__data__/temp/streams.db node scripts/commands/update-playlists.js',
+    { encoding: 'utf8' }
+  )
 })
 
 it('can update playlist', () => {
-  const result = execSync(
-    'DB_FILEPATH=tests/__data__/temp/test.db node scripts/commands/update-playlists.js',
-    { encoding: 'utf8' }
-  )
+  const output1 = content('tests/__data__/output/channels/ad.m3u')
+  const expected1 = content('tests/__data__/expected/channels/ad.m3u')
 
-  const adPlaylist = fs.readFileSync('tests/__data__/output/channels/ad.m3u', {
-    encoding: 'utf8'
-  })
+  expect(output1).toBe(expected1)
 
-  expect(adPlaylist).toBe(`#EXTM3U
-#EXTINF:-1 tvg-id="AndorraTV.ad" tvg-country="AD" tvg-language="Catalan" tvg-logo="https://i.imgur.com/kJCjeQ4.png" group-title="General",ATV (720p) [Offline]
-https://iptv-all.lanesh4d0w.repl.co/andorra/atv
-`)
+  const output2 = content('tests/__data__/output/channels/ru.m3u')
+  const expected2 = content('tests/__data__/expected/channels/ru.m3u')
 
-  const ruPlaylist = fs.readFileSync('tests/__data__/output/channels/ru.m3u', {
-    encoding: 'utf8'
-  })
+  expect(output2).toBe(expected2)
 
-  expect(ruPlaylist).toBe(`#EXTM3U
-#EXTINF:-1 tvg-id="LDPRTV.ru" tvg-country="RU" tvg-language="Russian" tvg-logo="https://iptvx.one/icn/ldpr-tv.png" group-title="General",ЛДПР ТВ (1080p)
-http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
-`)
+  const output3 = content('tests/__data__/output/channels/uk.m3u')
+  const expected3 = content('tests/__data__/expected/channels/uk.m3u')
+
+  expect(output3).toBe(expected3)
 })
+
+function content(filepath) {
+  return fs.readFileSync(path.resolve(filepath), {
+    encoding: 'utf8'
+  })
+}
