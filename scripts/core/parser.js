@@ -28,4 +28,23 @@ parser.parseNumber = function (string) {
   return parsed
 }
 
+parser.parseChannelName = function (string) {
+  return string
+    .trim()
+    .split(' ')
+    .map(s => s.trim())
+    .filter(s => {
+      return !/\[|\]/i.test(s) && !/\((\d+)P\)/i.test(s)
+    })
+    .join(' ')
+}
+
+parser.parseCountryCode = function (filepath) {
+  if (!filepath) return null
+  const basename = file.basename(filepath)
+  const [code] = basename.split('_') || [null]
+
+  return code
+}
+
 module.exports = parser
