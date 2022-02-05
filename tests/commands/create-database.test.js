@@ -1,10 +1,9 @@
-const fs = require('fs')
+const fs = require('fs-extra')
 const path = require('path')
 const { execSync } = require('child_process')
 
 beforeEach(() => {
-  fs.rmdirSync('tests/__data__/output', { recursive: true })
-  fs.mkdirSync('tests/__data__/output')
+  fs.emptyDirSync('tests/__data__/output')
 
   const stdout = execSync(
     'DB_FILEPATH=tests/__data__/output/channels.db node scripts/commands/create-database.js --input-dir=tests/__data__/input/channels --max-clusters=1',
