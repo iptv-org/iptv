@@ -27,7 +27,8 @@ it('can create database', () => {
   expect(output).toEqual(
     expect.arrayContaining([
       expect.objectContaining(expected[0]),
-      expect.objectContaining(expected[1])
+      expect.objectContaining(expected[1]),
+      expect.objectContaining(expected[2])
     ])
   )
 })
