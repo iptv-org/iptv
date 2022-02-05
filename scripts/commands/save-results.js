@@ -28,7 +28,7 @@ async function loadDatabase() {
 }
 
 async function loadResults() {
-  logger.info('loading results from logs/...')
+  logger.info('loading results from logs/load-streams...')
 
   const files = await file.list(`${LOGS_PATH}/cluster_*.log`)
   for (const filepath of files) {
