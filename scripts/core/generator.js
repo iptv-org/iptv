@@ -2,6 +2,7 @@ const { create: createPlaylist } = require('./playlist')
 const logger = require('./logger')
 const file = require('./file')
 const generators = require('../generators')
+const _ = require('lodash')
 
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/generators'
@@ -11,6 +12,12 @@ const generator = {}
 generator.generate = async function (name, items = []) {
   if (typeof generators[name] === 'function') {
     try {
+      items = _.orderBy(
+        items,
+        ['channel.name', 'status.level', 'resolution.height'],
+        ['asc', 'asc', 'desc']
+      )
+      items = _.uniqBy(items, s => s.channel_id || _.uniqueId())
       const output = await generators[name].bind()(items)
       await file.create(`${LOGS_DIR}/${name}.log`, output.map(toJSON).join('\n'))
       for (const type of output) {

@@ -5,12 +5,11 @@ const _ = require('lodash')
 async function main() {
   const streams = await loadStreams()
 
-  logger.info(`generating categories/...`)
   await generator.generate('categories', streams)
   await generator.generate('countries', streams)
+  await generator.generate('languages', streams)
+  await generator.generate('regions', streams)
 
-  // await generateCountries(streams)
-  // await generateLanguages()
   // await generateRegions()
   // await generateIndex()
   // await generateIndexNSFW()
@@ -26,143 +25,44 @@ async function main() {
 
 main()
 
-async function generateCountries(streams) {
-  logger.info(`generating countries/...`)
-  const countries = await loadCountries()
-  const regions = await loadRegions()
-  for (const country of countries) {
-    let areaCodes = _.filter(regions, { countries: [country.code] }).map(r => r.code)
-    areaCodes.push(country.code)
-    const { count, items } = await generator.generate(
-      `${PUBLIC_PATH}/countries/${country.code.toLowerCase()}.m3u`,
-      streams,
-      {
-        public: true,
-        filter: s => _.intersection(areaCodes, s.broadcast_area).length
-      }
-    )
+// async function generateRegions() {
+//   logger.info(`Generating regions/...`)
 
-    log.countries.push({
-      name: country.name,
-      code: country.code,
-      count
-    })
-  }
+//   for (const region of regions) {
+//     const { count } = await generator.generate(
+//       `${PUBLIC_PATH}/regions/${region.code.toLowerCase()}.m3u`,
+//       {
+//         regions: { $elemMatch: region }
+//       }
+//     )
 
-  const { count } = await generator.generate(`${PUBLIC_PATH}/countries/undefined.m3u`, streams, {
-    public: true,
-    filter: s => !s.broadcast_area.length,
-    onLoad: items => {
-      return items.map(item => {
-        item.group_title = 'Undefined'
-        return item
-      })
-    }
-  })
+//     await log('regions', {
+//       name: region.name,
+//       code: region.code,
+//       count
+//     })
+//   }
 
-  log.countries.push({
-    name: 'Undefined',
-    id: 'UNDEFINED',
-    count
-  })
+//   const { count: undefinedCount } = await generator.generate(
+//     `${PUBLIC_PATH}/regions/undefined.m3u`,
+//     { regions: { $size: 0 } },
+//     {
+//       saveEmpty: true,
+//       onLoad: function (items) {
+//         return items.map(item => {
+//           item.group_title = 'Undefined'
+//           return item
+//         })
+//       }
+//     }
+//   )
 
-  // const { count: undefinedCount } = await generator.generate(
-  //   `${PUBLIC_PATH}/countries/undefined.m3u`,
-  //   {
-  //     countries: { $size: 0 }
-  //   },
-  //   {
-  //     onLoad: function (items) {
-  //       return items.map(item => {
-  //         item.group_title = 'Undefined'
-  //         return item
-  //       })
-  //     }
-  //   }
-  // )
-
-  // await log('countries', {
-  //   name: 'Undefined',
-  //   code: 'UNDEFINED',
-  //   count: undefinedCount
-  // })
-}
-
-async function generateLanguages() {
-  logger.info(`Generating languages/...`)
-
-  for (const language of _.uniqBy(languages, 'code')) {
-    const { count } = await generator.generate(`${PUBLIC_PATH}/languages/${language.code}.m3u`, {
-      languages: { $elemMatch: language }
-    })
-
-    await log('languages', {
-      name: language.name,
-      code: language.code,
-      count
-    })
-  }
-
-  const { count: undefinedCount } = await generator.generate(
-    `${PUBLIC_PATH}/languages/undefined.m3u`,
-    {
-      languages: { $size: 0 }
-    },
-    {
-      onLoad: function (items) {
-        return items.map(item => {
-          item.group_title = 'Undefined'
-          return item
-        })
-      }
-    }
-  )
-
-  await log('languages', {
-    name: 'Undefined',
-    code: 'undefined',
-    count: undefinedCount
-  })
-}
-
-async function generateRegions() {
-  logger.info(`Generating regions/...`)
-
-  for (const region of regions) {
-    const { count } = await generator.generate(
-      `${PUBLIC_PATH}/regions/${region.code.toLowerCase()}.m3u`,
-      {
-        regions: { $elemMatch: region }
-      }
-    )
-
-    await log('regions', {
-      name: region.name,
-      code: region.code,
-      count
-    })
-  }
-
-  const { count: undefinedCount } = await generator.generate(
-    `${PUBLIC_PATH}/regions/undefined.m3u`,
-    { regions: { $size: 0 } },
-    {
-      saveEmpty: true,
-      onLoad: function (items) {
-        return items.map(item => {
-          item.group_title = 'Undefined'
-          return item
-        })
-      }
-    }
-  )
-
-  await log('regions', {
-    name: 'Undefined',
-    code: 'UNDEFINED',
-    count: undefinedCount
-  })
-}
+//   await log('regions', {
+//     name: 'Undefined',
+//     code: 'UNDEFINED',
+//     count: undefinedCount
+//   })
+// }
 
 async function generateIndexNSFW() {
   logger.info(`Generating index.nsfw.m3u...`)
