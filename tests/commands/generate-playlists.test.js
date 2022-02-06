@@ -18,7 +18,7 @@ beforeEach(() => {
   console.log(stdout)
 })
 
-it.each([
+fit.each([
   '.gh-pages/categories/general.m3u',
   '.gh-pages/categories/legislative.m3u',
   '.gh-pages/categories/news.m3u',
@@ -28,12 +28,14 @@ it.each([
   expect(content(`output/${filepath}`)).toBe(content(`expected/${filepath}`))
 })
 
-it.each(['countries/ru.m3u', 'countries/uk.m3u', 'countries/undefined.m3u'])(
-  'can generate %s',
-  filepath => {
-    expect(content(`output/.gh-pages/${filepath}`)).toBe(content(`expected/.gh-pages/${filepath}`))
-  }
-)
+it.each([
+  '.gh-pages/countries/ru.m3u',
+  '.gh-pages/countries/uk.m3u',
+  '.gh-pages/countries/undefined.m3u',
+  'logs/generators/countries.log'
+])('can generate %s', filepath => {
+  expect(content(`output/${filepath}`)).toBe(content(`expected/${filepath}`))
+})
 
 function content(filepath) {
   return fs.readFileSync(`tests/__data__/${filepath}`, {

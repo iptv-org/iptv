@@ -7,6 +7,7 @@ async function main() {
 
   logger.info(`generating categories/...`)
   await generator.generate('categories', streams)
+  await generator.generate('countries', streams)
 
   // await generateCountries(streams)
   // await generateLanguages()
