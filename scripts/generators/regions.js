@@ -9,11 +9,11 @@ module.exports = async function (streams = []) {
 		const areaCodes = region.countries
 		areaCodes.push(region.code)
 		let items = _.filter(streams, s => _.intersection(areaCodes, s.broadcast_area).length)
-		output.push({ id: region.code.toLowerCase(), items })
+		output.push({ filepath: `regions/${region.code.toLowerCase()}.m3u`, items })
 	}
 
 	let items = _.filter(streams, s => !s.broadcast_area.length)
-	output.push({ id: 'undefined', items })
+	output.push({ filepath: 'regions/undefined.m3u', items })
 
 	return output
 }
