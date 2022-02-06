@@ -1,61 +1,75 @@
-const Database = require('nedb-promises')
+const nedb = require('nedb-promises')
 const file = require('./file')
 
-const DB_FILEPATH = process.env.DB_FILEPATH || './scripts/channels.db'
+const DB_DIR = process.env.DB_DIR || './scripts/database'
 
-const nedb = Database.create({
-  filename: file.resolve(DB_FILEPATH),
-  autoload: true,
-  onload(err) {
-    if (err) console.error(err)
-  },
-  compareStrings: (a, b) => {
-    a = a.replace(/\s/g, '_')
-    b = b.replace(/\s/g, '_')
+class Database {
+  constructor(filepath) {
+    this.filepath = filepath
+  }
 
-    return a.localeCompare(b, undefined, {
-      sensitivity: 'accent',
-      numeric: true
+  load() {
+    this.db = nedb.create({
+      filename: file.resolve(this.filepath),
+      autoload: true,
+      onload: err => {
+        if (err) console.error(err)
+      },
+      compareStrings: (a, b) => {
+        a = a.replace(/\s/g, '_')
+        b = b.replace(/\s/g, '_')
+
+        return a.localeCompare(b, undefined, {
+          sensitivity: 'accent',
+          numeric: true
+        })
+      }
     })
   }
-})
+
+  removeIndex(field) {
+    return this.db.removeIndex(field)
+  }
+
+  addIndex(options) {
+    return this.db.ensureIndex(options)
+  }
+
+  compact() {
+    return this.db.persistence.compactDatafile()
+  }
+
+  stopAutocompact() {
+    return this.db.persistence.stopAutocompaction()
+  }
+
+  reset() {
+    return file.clear(this.filepath)
+  }
+
+  count(query) {
+    return this.db.count(query)
+  }
+
+  insert(doc) {
+    return this.db.insert(doc)
+  }
+
+  update(query, update) {
+    return this.db.update(query, update)
+  }
+
+  find(query) {
+    return this.db.find(query)
+  }
+
+  remove(query, options) {
+    return this.db.remove(query, options)
+  }
+}
 
 const db = {}
 
-db.removeIndex = function (field) {
-  return nedb.removeIndex(field)
-}
-
-db.addIndex = function (options) {
-  return nedb.ensureIndex(options)
-}
-
-db.compact = function () {
-  return nedb.persistence.compactDatafile()
-}
-
-db.reset = function () {
-  return file.clear(DB_FILEPATH)
-}
-
-db.count = function (query) {
-  return nedb.count(query)
-}
-
-db.insert = function (doc) {
-  return nedb.insert(doc)
-}
-
-db.update = function (query, update) {
-  return nedb.update(query, update)
-}
-
-db.find = function (query) {
-  return nedb.find(query)
-}
-
-db.remove = function (query, options) {
-  return nedb.remove(query, options)
-}
+db.streams = new Database(`${DB_DIR}/streams.db`)
 
 module.exports = db

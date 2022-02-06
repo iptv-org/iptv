@@ -1,0 +1,1 @@
+exports.categories = require('./categories')

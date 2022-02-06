@@ -1,5 +1,5 @@
 module.exports = function () {
-  let title = this.title
+  let title = this.channel_name
 
   if (this.resolution.height) {
     title += ` (${this.resolution.height}p)`

@@ -1,5 +1,5 @@
 exports.group_title = require('./group_title')
-exports.display_name = require('./display_name')
+exports.title = require('./title')
 exports.tvg_country = require('./tvg_country')
 exports.tvg_id = require('./tvg_id')
 exports.tvg_language = require('./tvg_language')
