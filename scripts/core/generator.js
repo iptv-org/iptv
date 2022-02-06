@@ -14,16 +14,17 @@ generator.generate = async function (name, items = []) {
     try {
       items = _.orderBy(
         items,
-        ['channel.name', 'status.level', 'resolution.height'],
+        ['channel_name', 'status.level', 'resolution.height'],
         ['asc', 'asc', 'desc']
       )
       items = _.uniqBy(items, s => s.channel_id || _.uniqueId())
-      const output = await generators[name].bind()(items)
-      await file.create(`${LOGS_DIR}/${name}.log`, output.map(toJSON).join('\n'))
+      let output = await generators[name].bind()(items)
+      output = Array.isArray(output) ? output : [output]
       for (const type of output) {
         const playlist = createPlaylist(type.items, { public: true })
-        await file.create(`${PUBLIC_DIR}/${name}/${type.id}.m3u`, playlist.toString())
+        await file.create(`${PUBLIC_DIR}/${type.filepath}`, playlist.toString())
       }
+      await file.create(`${LOGS_DIR}/${name}.log`, output.map(toJSON).join('\n'))
     } catch (error) {
       logger.error(`generators/${name}.js: ${error.message}`)
     }
@@ -33,5 +34,7 @@ generator.generate = async function (name, items = []) {
 module.exports = generator
 
 function toJSON(type) {
-  return JSON.stringify({ id: type.id, count: type.items.length })
+  type.count = type.items.length
+  delete type.items
+  return JSON.stringify(type)
 }

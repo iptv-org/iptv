@@ -9,12 +9,12 @@ module.exports = async function (streams = []) {
 	for (const language of languages) {
 		let items = _.filter(streams, { channel: { languages: [language.code] } })
 		if (items.length) {
-			output.push({ id: language.code, items })
+			output.push({ filepath: `languages/${language.code}.m3u`, items })
 		}
 	}
 
 	let items = _.filter(streams, s => !s.languages.length)
-	output.push({ id: 'undefined', items })
+	output.push({ filepath: 'languages/undefined.m3u', items })
 
 	return output
 }

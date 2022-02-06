@@ -7,11 +7,11 @@ module.exports = async function (streams = []) {
 	const categories = await api.categories.all()
 	for (const category of categories) {
 		let items = _.filter(streams, { channel: { categories: [category.id] } })
-		output.push({ id: category.id, items })
+		output.push({ filepath: `categories/${category.id}.m3u`, items })
 	}
 
 	let items = _.filter(streams, s => !s.categories.length)
-	output.push({ id: 'undefined', items })
+	output.push({ filepath: 'categories/undefined.m3u', items })
 
 	return output
 }

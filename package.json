@@ -6,7 +6,10 @@
     "test": "jest --runInBand"
   },
   "jest": {
-    "testRegex": "tests/(.*?/)?.*test.js$"
+    "testRegex": "tests/(.*?/)?.*test.js$",
+    "setupFilesAfterEnv": [
+      "@alex_neo/jest-expect-message"
+    ]
   },
   "author": "Arhey",
   "private": true,
@@ -28,5 +31,9 @@
     "normalize-url": "^6.1.0",
     "transliteration": "^2.2.0",
     "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@alex_neo/jest-expect-message": "^1.0.5",
+    "jest-expect-message": "^1.0.2"
   }
 }
