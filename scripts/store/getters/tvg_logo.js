@@ -1,3 +1,3 @@
 module.exports = function () {
-  return this.logo || ''
+  return this.channel && this.channel.logo ? this.channel.logo : ''
 }

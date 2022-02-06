@@ -16,11 +16,25 @@ class API {
   find(query) {
     return _.find(this.collection, query)
   }
+
+  filter(query) {
+    return _.filter(this.collection, query)
+  }
+
+  all() {
+    return this.collection
+  }
 }
 
 const api = {}
 
 api.channels = new API(`${DATA_DIR}/channels.json`)
 api.countries = new API(`${DATA_DIR}/countries.json`)
+api.guides = new API(`${DATA_DIR}/guides.json`)
+api.categories = new API(`${DATA_DIR}/categories.json`)
+api.languages = new API(`${DATA_DIR}/languages.json`)
+api.regions = new API(`${DATA_DIR}/regions.json`)
+api.statuses = new API(`${DATA_DIR}/statuses.json`)
+api.blocklist = new API(`${DATA_DIR}/blocklist.json`)
 
 module.exports = api

@@ -1,109 +1,90 @@
-const { db, logger, generator, file } = require('../core')
+const { create: createPlaylist } = require('../core/playlist')
+const { db, logger, generator, file, api } = require('../core')
 const _ = require('lodash')
 
-let languages = []
-let countries = []
-let categories = []
-let regions = []
-
-const LOGS_PATH = process.env.LOGS_PATH || 'scripts/logs'
-const PUBLIC_PATH = process.env.PUBLIC_PATH || '.gh-pages'
-
 async function main() {
-  await setUp()
+  const streams = await loadStreams()
 
-  await generateCategories()
-  await generateCountries()
-  await generateLanguages()
-  await generateRegions()
-  await generateIndex()
-  await generateIndexNSFW()
-  await generateIndexCategory()
-  await generateIndexCountry()
-  await generateIndexLanguage()
-  await generateIndexRegion()
+  logger.info(`generating categories/...`)
+  await generator.generate('categories', streams)
 
-  await generateChannelsJson()
+  // await generateCountries(streams)
+  // await generateLanguages()
+  // await generateRegions()
+  // await generateIndex()
+  // await generateIndexNSFW()
+  // await generateIndexCategory()
+  // await generateIndexCountry()
+  // await generateIndexLanguage()
+  // await generateIndexRegion()
+
+  // await generateChannelsJson()
+
+  // await saveLogs()
 }
 
 main()
 
-async function generateCategories() {
-  logger.info(`Generating categories/...`)
-
-  for (const category of categories) {
-    const { count } = await generator.generate(
-      `${PUBLIC_PATH}/categories/${category.slug}.m3u`,
-      { categories: { $elemMatch: category } },
-      { saveEmpty: true, includeNSFW: true }
-    )
-
-    await log('categories', {
-      name: category.name,
-      slug: category.slug,
-      count
-    })
-  }
-
-  const { count: otherCount } = await generator.generate(
-    `${PUBLIC_PATH}/categories/other.m3u`,
-    { categories: { $size: 0 } },
-    {
-      saveEmpty: true,
-      onLoad: function (items) {
-        return items.map(item => {
-          item.group_title = 'Other'
-          return item
-        })
-      }
-    }
-  )
-
-  await log('categories', {
-    name: 'Other',
-    slug: 'other',
-    count: otherCount
-  })
-}
-
-async function generateCountries() {
-  logger.info(`Generating countries/...`)
-
+async function generateCountries(streams) {
+  logger.info(`generating countries/...`)
+  const countries = await loadCountries()
+  const regions = await loadRegions()
   for (const country of countries) {
-    const { count } = await generator.generate(
+    let areaCodes = _.filter(regions, { countries: [country.code] }).map(r => r.code)
+    areaCodes.push(country.code)
+    const { count, items } = await generator.generate(
       `${PUBLIC_PATH}/countries/${country.code.toLowerCase()}.m3u`,
+      streams,
       {
-        countries: { $elemMatch: country }
+        public: true,
+        filter: s => _.intersection(areaCodes, s.broadcast_area).length
       }
     )
 
-    await log('countries', {
+    log.countries.push({
       name: country.name,
       code: country.code,
       count
     })
   }
 
-  const { count: undefinedCount } = await generator.generate(
-    `${PUBLIC_PATH}/countries/undefined.m3u`,
-    {
-      countries: { $size: 0 }
-    },
-    {
-      onLoad: function (items) {
-        return items.map(item => {
-          item.group_title = 'Undefined'
-          return item
-        })
-      }
+  const { count } = await generator.generate(`${PUBLIC_PATH}/countries/undefined.m3u`, streams, {
+    public: true,
+    filter: s => !s.broadcast_area.length,
+    onLoad: items => {
+      return items.map(item => {
+        item.group_title = 'Undefined'
+        return item
+      })
     }
-  )
-
-  await log('countries', {
-    name: 'Undefined',
-    code: 'UNDEFINED',
-    count: undefinedCount
   })
+
+  log.countries.push({
+    name: 'Undefined',
+    id: 'UNDEFINED',
+    count
+  })
+
+  // const { count: undefinedCount } = await generator.generate(
+  //   `${PUBLIC_PATH}/countries/undefined.m3u`,
+  //   {
+  //     countries: { $size: 0 }
+  //   },
+  //   {
+  //     onLoad: function (items) {
+  //       return items.map(item => {
+  //         item.group_title = 'Undefined'
+  //         return item
+  //       })
+  //     }
+  //   }
+  // )
+
+  // await log('countries', {
+  //   name: 'Undefined',
+  //   code: 'UNDEFINED',
+  //   count: undefinedCount
+  // })
 }
 
 async function generateLanguages() {
@@ -395,47 +376,44 @@ async function generateIndexRegion() {
   )
 }
 
-async function generateChannelsJson() {
-  logger.info('Generating channels.json...')
+async function loadStreams() {
+  await api.channels.load()
+  let channels = await api.channels.all()
+  channels = _.keyBy(channels, 'id')
 
-  await generator.generate(
-    `${PUBLIC_PATH}/channels.json`,
-    {},
-    { format: 'json', includeNSFW: true, uniqBy: null }
-  )
-}
+  await api.countries.load()
+  let countries = await api.countries.all()
+  countries = _.keyBy(countries, 'code')
 
-async function setUp() {
-  logger.info(`Loading database...`)
-  const items = await db.find({})
-  categories = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.categories)), 'slug'), ['name']).filter(
-    i => i
-  )
-  countries = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.countries)), 'code'), ['name']).filter(
-    i => i
-  )
-  languages = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.languages)), 'code'), ['name']).filter(
-    i => i
-  )
-  regions = _.sortBy(_.uniqBy(_.flatten(items.map(i => i.regions)), 'code'), ['name']).filter(
-    i => i
-  )
+  await api.categories.load()
+  let categories = await api.categories.all()
+  categories = _.keyBy(categories, 'id')
 
-  const categoriesLog = `${LOGS_PATH}/generate-playlists/categories.log`
-  const countriesLog = `${LOGS_PATH}/generate-playlists/countries.log`
-  const languagesLog = `${LOGS_PATH}/generate-playlists/languages.log`
-  const regionsLog = `${LOGS_PATH}/generate-playlists/regions.log`
+  await api.languages.load()
+  let languages = await api.languages.all()
+  languages = _.keyBy(languages, 'code')
 
-  logger.info(`Creating '${categoriesLog}'...`)
-  await file.create(categoriesLog)
-  logger.info(`Creating '${countriesLog}'...`)
-  await file.create(countriesLog)
-  logger.info(`Creating '${languagesLog}'...`)
-  await file.create(languagesLog)
-  logger.info(`Creating '${regionsLog}'...`)
-  await file.create(regionsLog)
-}
+  await api.guides.load()
+  let guides = await api.guides.all()
+  guides = _.groupBy(guides, 'channel')
 
-async function log(type, data) {
-  await file.append(`${LOGS_PATH}/generate-playlists/${type}.log`, JSON.stringify(data) + '\n')
+  await db.streams.load()
+  let streams = await db.streams.find({})
+
+  return streams.map(stream => {
+    const channel = channels[stream.channel_id] || null
+
+    stream.channel = channel
+    stream.broadcast_area = channel
+      ? channel.broadcast_area.map(item => {
+          const [_, code] = item.split('/')
+          return code
+        })
+      : []
+    stream.categories = channel ? channel.categories.map(id => categories[id]) : []
+    stream.languages = channel ? channel.languages.map(code => languages[code]) : []
+    stream.guides = guides[stream.channel_id] ? guides[stream.channel_id].map(g => g.url) : []
+
+    return stream
+  })
 }
