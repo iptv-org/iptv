@@ -51,7 +51,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: node scripts/commands/load-streams.js --cluster-id=${{ matrix.cluster_id }}
+      - run: node scripts/commands/load-cluster.js --cluster-id=${{ matrix.cluster_id }}
       - uses: actions/upload-artifact@v2
         with:
           name: logs
