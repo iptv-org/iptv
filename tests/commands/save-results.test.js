@@ -4,19 +4,21 @@ const { execSync } = require('child_process')
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/temp')
-  fs.copyFileSync('tests/__data__/input/save-results.streams.db', 'tests/__data__/temp/streams.db')
+  fs.copyFileSync(
+    'tests/__data__/input/database/save-results.streams.db',
+    'tests/__data__/temp/streams.db'
+  )
 
   const stdout = execSync(
-    'DB_FILEPATH=tests/__data__/temp/streams.db LOGS_PATH=tests/__data__/input/logs/load-streams node scripts/commands/save-results.js',
+    'DB_DIR=tests/__data__/temp LOGS_DIR=tests/__data__/input/logs/load-cluster node scripts/commands/save-results.js',
     { encoding: 'utf8' }
   )
 })
 
 it('can save results', () => {
-  const output = content('tests/__data__/temp/streams.db')
-  const expected = content('tests/__data__/expected/save-results.streams.db')
-
-  expect(output).toEqual(expected)
+  expect(content('tests/__data__/temp/streams.db')).toEqual(
+    content('tests/__data__/expected/save-results.streams.db')
+  )
 })
 
 function content(filepath) {
