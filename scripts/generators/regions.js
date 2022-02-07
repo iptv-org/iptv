@@ -5,6 +5,7 @@ module.exports = async function (streams = []) {
 	const output = []
 	await api.regions.load()
 	const regions = await api.regions.all()
+	streams = _.filter(streams, s => !s.channel || s.channel.is_nsfw === false)
 	for (const region of regions) {
 		const areaCodes = region.countries
 		areaCodes.push(region.code)
