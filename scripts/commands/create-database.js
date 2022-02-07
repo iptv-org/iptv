@@ -7,7 +7,7 @@ const options = program
     '--max-clusters <max-clusters>',
     'Set maximum number of clusters',
     parser.parseNumber,
-    200
+    256
   )
   .option('--input-dir <input-dir>', 'Set path to input directory', 'channels')
   .parse(process.argv)
