@@ -6,14 +6,14 @@ beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DB_FILEPATH=tests/__data__/output/streams.db node scripts/commands/create-database.js --input-dir=tests/__data__/input/channels --max-clusters=1',
+    'DB_DIR=tests/__data__/output/database node scripts/commands/create-database.js --input-dir=tests/__data__/input/channels --max-clusters=1',
     { encoding: 'utf8' }
   )
 })
 
 it('can create database', () => {
-  let output = content('tests/__data__/output/streams.db')
-  let expected = content('tests/__data__/expected/streams.db')
+  let output = content('tests/__data__/output/database/streams.db')
+  let expected = content('tests/__data__/expected/database/streams.db')
 
   output = output.map(i => {
     i._id = null

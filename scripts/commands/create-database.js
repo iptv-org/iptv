@@ -13,44 +13,45 @@ const options = program
   .parse(process.argv)
   .opts()
 
-const links = []
-
 async function main() {
   logger.info('starting...')
   logger.info(`number of clusters: ${options.maxClusters}`)
 
-  await loadChannels()
-  await saveToDatabase()
+  await saveToDatabase(await findStreams())
 
   logger.info('done')
 }
 
 main()
 
-async function loadChannels() {
-  logger.info(`loading links...`)
+async function findStreams() {
+  logger.info(`looking for streams...`)
 
+  await db.streams.load()
   const files = await file.list(`${options.inputDir}/**/*.m3u`)
+  const streams = []
   for (const filepath of files) {
     const items = await parser.parsePlaylist(filepath)
     for (const item of items) {
       item.filepath = filepath
-      links.push(item)
+      streams.push(item)
     }
   }
-  logger.info(`found ${links.length} links`)
+  logger.info(`found ${streams.length} streams`)
+
+  return streams
 }
 
-async function saveToDatabase() {
+async function saveToDatabase(streams = []) {
   logger.info('saving to the database...')
 
-  await db.reset()
-  const chunks = split(_.shuffle(links), options.maxClusters)
+  await db.streams.reset()
+  const chunks = split(_.shuffle(streams), options.maxClusters)
   for (const [i, chunk] of chunks.entries()) {
     for (const item of chunk) {
       const stream = store.create()
-      stream.set('id', { id: item.tvg.id })
-      stream.set('title', { title: item.name })
+      stream.set('channel_id', { channel_id: item.tvg.id })
+      stream.set('channel_name', { title: item.name })
       stream.set('filepath', { filepath: item.filepath })
       stream.set('resolution', { title: item.name })
       stream.set('status', { title: item.name })
@@ -60,14 +61,14 @@ async function saveToDatabase() {
       stream.set('updated', { updated: false })
       stream.set('cluster_id', { cluster_id: i + 1 })
 
-      if (!stream.get('id')) {
-        const id = cid.generate(item.name, item.filepath)
+      if (!stream.get('channel_id')) {
+        const channel_id = cid.generate(item.name, item.filepath)
 
-        stream.set('id', { id })
+        stream.set('channel_id', { channel_id })
         stream.set('updated', { updated: true })
       }
 
-      await db.insert(stream.data())
+      await db.streams.insert(stream.data())
     }
   }
 }
