@@ -16,7 +16,7 @@ module.exports = async function (streams = []) {
 		}
 	}
 
-	let items = _.filter(streams, s => !s.languages.length)
+	let items = _.filter(streams, stream => !stream.channel || !stream.channel.languages.length)
 	output.push({ filepath: 'languages/undefined.m3u', items })
 
 	return output

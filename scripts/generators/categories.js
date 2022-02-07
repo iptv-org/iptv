@@ -10,7 +10,7 @@ module.exports = async function (streams = []) {
 		output.push({ filepath: `categories/${category.id}.m3u`, items })
 	}
 
-	let items = _.filter(streams, s => !s.categories.length)
+	let items = _.filter(streams, stream => !stream.channel || !stream.channel.categories.length)
 	output.push({ filepath: 'categories/undefined.m3u', items })
 
 	return output

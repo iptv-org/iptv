@@ -53,10 +53,8 @@ playlist.create = function (items = [], options = {}) {
 
   const header = {}
   if (options.public) {
-    let guides = items.map(item => item.guides)
-    guides = _.uniq(_.flatten(guides)).sort().join(',')
-
-    header['x-tvg-url'] = guides
+    let guides = items.map(item => item.tvg_url).filter(i => i)
+    header['x-tvg-url'] = _.uniq(guides).sort().join(',')
   }
   p.setHeader(header)
 
