@@ -1,4 +1,5 @@
 const _ = require('lodash')
+const { orderBy } = require('natural-orderby')
 const { create: createPlaylist } = require('../core/playlist')
 const { db, logger, file } = require('../core')
 
@@ -11,17 +12,10 @@ async function main() {
 
   for (const filepath in files) {
     let items = files[filepath]
-    items = items.sort(naturalOrder)
+    items = orderBy(items, ['channel_name'], ['asc'])
     const playlist = createPlaylist(items, { public: false })
     await file.create(filepath, playlist.toString())
   }
 }
 
 main()
-
-function naturalOrder(a, b) {
-  return a.channel_name.localeCompare(b.channel_name, undefined, {
-    numeric: true,
-    sensitivity: 'base'
-  })
-}
