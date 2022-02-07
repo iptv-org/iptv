@@ -68,48 +68,6 @@ async function loadStreams() {
   })
 }
 
-// async function generateIndexCountry() {
-//   logger.info(`Generating index.country.m3u...`)
-
-//   await generator.generate(
-//     `${PUBLIC_PATH}/index.country.m3u`,
-//     {},
-//     {
-//       onLoad: function (items) {
-//         let results = items
-//           .filter(item => !item.countries || !item.countries.length)
-//           .map(item => {
-//             const newItem = _.cloneDeep(item)
-//             newItem.group_title = 'Undefined'
-//             newItem.categories = []
-//             return newItem
-//           })
-//         for (const country of _.sortBy(Object.values(countries), ['name'])) {
-//           let filtered = items
-//             .filter(item => {
-//               return (
-//                 Array.isArray(item.countries) &&
-//                 item.countries.map(c => c.code).includes(country.code)
-//               )
-//             })
-//             .map(item => {
-//               const newItem = _.cloneDeep(item)
-//               newItem.group_title = country.name
-//               return newItem
-//             })
-//           results = results.concat(filtered)
-//         }
-
-//         return results
-//       },
-//       sortBy: item => {
-//         if (item.group_title === 'Undefined') return '_'
-//         return item.group_title
-//       }
-//     }
-//   )
-// }
-
 // async function generateIndexLanguage() {
 //   logger.info(`Generating index.language.m3u...`)
 

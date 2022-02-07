@@ -2,11 +2,13 @@ const api = require('../core/api')
 const _ = require('lodash')
 
 module.exports = async function (streams = []) {
-	const output = []
+	streams = _.filter(streams, s => !s.channel || s.channel.is_nsfw === false)
+
 	await api.languages.load()
 	let languages = await api.languages.all()
 	languages = _.uniqBy(languages, 'code')
-	streams = _.filter(streams, s => !s.channel || s.channel.is_nsfw === false)
+
+	const output = []
 	for (const language of languages) {
 		let items = _.filter(streams, { channel: { languages: [language.code] } })
 		if (items.length) {
