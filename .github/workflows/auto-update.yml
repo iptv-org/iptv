@@ -29,7 +29,11 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: database
-          path: scripts/channels.db
+          path: scripts/database
+      - uses: actions/upload-artifact@v2
+        with:
+          name: data
+          path: scripts/data
     outputs:
       matrix: ${{ steps.create-matrix.outputs.matrix }}
   load:
@@ -38,7 +42,9 @@ jobs:
     continue-on-error: true
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      # matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      matrix:
+        cluster_id: [1]
     steps:
       - uses: actions/checkout@v2
       - uses: actions/download-artifact@v2
@@ -73,6 +79,10 @@ jobs:
           path: scripts
       - uses: actions/download-artifact@v2
         with:
+          name: data
+          path: scripts
+      - uses: actions/download-artifact@v2
+        with:
           name: logs
           path: scripts/logs
       - uses: actions/setup-node@v2
@@ -84,7 +94,7 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: database
-          path: scripts/channels.db
+          path: scripts/database
       - run: node scripts/commands/update-playlists.js
       - run: git add channels/*
       - run: git commit -m "[Bot] Update playlists"
