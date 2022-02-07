@@ -6,6 +6,7 @@ module.exports = async function (streams = []) {
 	await api.languages.load()
 	let languages = await api.languages.all()
 	languages = _.uniqBy(languages, 'code')
+	streams = _.filter(streams, s => !s.channel || s.channel.is_nsfw === false)
 	for (const language of languages) {
 		let items = _.filter(streams, { channel: { languages: [language.code] } })
 		if (items.length) {
