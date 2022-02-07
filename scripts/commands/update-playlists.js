@@ -1,15 +1,18 @@
 const _ = require('lodash')
-const { generator, db, logger } = require('../core')
+const { create: createPlaylist } = require('../core/playlist')
+const { db, logger, file } = require('../core')
 
 async function main() {
-  let items = await db
+  await db.streams.load()
+  let items = await db.streams
     .find({})
     .sort({ name: 1, 'status.level': 1, 'resolution.height': -1, url: 1 })
   const files = _.groupBy(items, 'filepath')
 
   for (const filepath in files) {
     const items = files[filepath]
-    await generator.saveAsM3U(filepath, items)
+    const playlist = createPlaylist(items, { public: false })
+    await file.create(filepath, playlist.toString())
   }
 }
 
