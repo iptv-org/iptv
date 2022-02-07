@@ -1,3 +1,3 @@
 module.exports = function () {
-  return this.guides.length ? this.guides[0] : ''
+  return this.tvg_url || ''
 }
