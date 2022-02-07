@@ -2,48 +2,53 @@ const _ = require('lodash')
 const statuses = require('../data/statuses')
 const { db, store, parser, file, logger } = require('../core')
 
-let streams = []
-let results = {}
-const origins = {}
 const items = []
 
-const LOGS_PATH = process.env.LOGS_PATH || 'scripts/logs/load-streams'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/load-cluster'
 
 async function main() {
-  await loadDatabase()
-  await loadResults()
-  await findStreamOrigins()
-  await updateStreams()
-  await updateDatabase()
+  let streams = await loadStreams()
+  const results = await loadResults()
+  const origins = await findOrigins(results)
+  streams = await updateStreams(streams, results, origins)
+
+  await updateDatabase(streams)
 }
 
 main()
 
-async function loadDatabase() {
-  logger.info('loading database...')
+async function loadStreams() {
+  logger.info('loading streams...')
 
-  streams = await db.find({})
+  await db.streams.load()
+  const streams = await db.streams.find({})
 
   logger.info(`found ${streams.length} streams`)
+
+  return streams
 }
 
 async function loadResults() {
-  logger.info('loading results from logs/load-streams...')
+  logger.info('loading results from logs...')
 
-  const files = await file.list(`${LOGS_PATH}/cluster_*.log`)
+  const results = {}
+  const files = await file.list(`${LOGS_DIR}/cluster_*.log`)
   for (const filepath of files) {
     const parsed = await parser.parseLogs(filepath)
-    for (const result of parsed) {
-      results[result._id] = result
+    for (const item of parsed) {
+      results[item._id] = item
     }
   }
 
   logger.info(`found ${Object.values(results).length} results`)
+
+  return results
 }
 
-async function findStreamOrigins() {
+async function findOrigins(results = {}) {
   logger.info('searching for stream origins...')
 
+  const origins = {}
   for (const { error, requests } of Object.values(results)) {
     if (error || !Array.isArray(requests) || !requests.length) continue
 
@@ -59,20 +64,23 @@ async function findStreamOrigins() {
   }
 
   logger.info(`found ${_.uniq(Object.values(origins)).length} origins`)
+
+  return origins
 }
 
-async function updateStreams() {
+async function updateStreams(items = [], results = {}, origins = {}) {
   logger.info('updating streams...')
 
   let updated = 0
-  for (const item of streams) {
+  const output = []
+  for (const item of items) {
     const stream = store.create(item)
     const result = results[item._id]
 
     if (result) {
       const { error, streams, requests } = result
       const resolution = parseResolution(streams)
-      const origin = findOrigin(requests)
+      const origin = findOrigin(requests, origins)
       let status = parseStatus(error)
 
       if (status) {
@@ -105,26 +113,28 @@ async function updateStreams() {
 
     if (stream.changed) {
       stream.set('updated', true)
-      items.push(stream.data())
+      output.push(stream.data())
       updated++
     }
   }
 
-  logger.info(`updated ${updated} items`)
+  logger.info(`updated ${updated} streams`)
+
+  return output
 }
 
-async function updateDatabase() {
+async function updateDatabase(streams = []) {
   logger.info('updating database...')
 
-  for (const item of items) {
-    await db.update({ _id: item._id }, item)
+  for (const stream of streams) {
+    await db.streams.update({ _id: stream._id }, stream)
   }
-  db.compact()
+  db.streams.compact()
 
   logger.info('done')
 }
 
-function findOrigin(requests) {
+function findOrigin(requests = [], origins = {}) {
   if (origins && Array.isArray(requests)) {
     requests = requests.map(r => r.url.replace(/(^\w+:|^)/, ''))
     for (const url of requests) {
