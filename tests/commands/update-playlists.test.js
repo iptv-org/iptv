@@ -4,12 +4,15 @@ const glob = require('glob')
 const { execSync } = require('child_process')
 
 beforeEach(() => {
-  fs.emptyDirSync('tests/__data__/temp')
-  fs.copyFileSync('tests/__data__/input/database/streams.db', 'tests/__data__/temp/streams.db')
+  fs.emptyDirSync('tests/__data__/output')
+  fs.copyFileSync('tests/__data__/input/database/streams.db', 'tests/__data__/output/streams.db')
 
-  const stdout = execSync('DB_DIR=tests/__data__/temp node scripts/commands/update-playlists.js', {
-    encoding: 'utf8'
-  })
+  const stdout = execSync(
+    'DB_DIR=tests/__data__/output node scripts/commands/update-playlists.js',
+    {
+      encoding: 'utf8'
+    }
+  )
 })
 
 it('can update playlists', () => {
