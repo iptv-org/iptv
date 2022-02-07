@@ -19,7 +19,7 @@ beforeEach(() => {
 
 it('can remove broken links from database', () => {
   expect(content('tests/__data__/output/streams.db')).toEqual(
-    content('tests/__data__/expected/cleanup-database.streams.db')
+    content('tests/__data__/expected/database/cleanup-database.streams.db')
   )
 })
 
