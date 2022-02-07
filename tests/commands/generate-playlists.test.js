@@ -15,8 +15,6 @@ beforeEach(() => {
     'DB_DIR=tests/__data__/temp DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.gh-pages LOGS_DIR=tests/__data__/output/logs/generators node --trace-warnings scripts/commands/generate-playlists.js',
     { encoding: 'utf8' }
   )
-
-  console.log(stdout)
 })
 
 it('can generate playlists', () => {
