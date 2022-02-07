@@ -10,8 +10,9 @@ async function main() {
   await generator.generate('languages', streams)
   await generator.generate('regions', streams)
   await generator.generate('index_m3u', streams)
+  await generator.generate('index_nsfw_m3u', streams)
+  await generator.generate('index_category_m3u', streams)
 
-  // await generateIndexNSFW()
   // await generateIndexCategory()
   // await generateIndexCountry()
   // await generateIndexLanguage()
@@ -61,31 +62,6 @@ async function loadStreams() {
     return stream
   })
 }
-
-// async function generateIndexNSFW() {
-//   logger.info(`Generating index.nsfw.m3u...`)
-
-//   await generator.generate(
-//     `${PUBLIC_PATH}/index.nsfw.m3u`,
-//     {},
-//     {
-//       includeNSFW: true,
-//       onLoad: function (items) {
-//         return items.map(item => {
-//           if (!item.categories || !item.categories.length) {
-//             item.group_title = 'Other'
-//           }
-
-//           return item
-//         })
-//       },
-//       sortBy: item => {
-//         if (item.group_title === 'Other') return '_'
-//         return item.group_title || ''
-//       }
-//     }
-//   )
-// }
 
 // async function generateIndexCategory() {
 //   logger.info(`Generating index.category.m3u...`)
