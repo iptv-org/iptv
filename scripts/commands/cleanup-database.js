@@ -1,24 +1,25 @@
 const { db, logger } = require('../core')
 
 async function main() {
-  logger.info(`Loading database...`)
-  let streams = await db.find({})
+  logger.info(`loading streams...`)
+  await db.streams.load()
+  let streams = await db.streams.find({})
 
-  logger.info(`Removing broken links...`)
+  logger.info(`removing broken links...`)
   let removed = 0
-  const buffer = []
+  const buffer = {}
   for (const stream of streams) {
-    const duplicate = buffer.find(i => i.id === stream.id)
+    const duplicate = buffer[stream.channel_id]
     if (duplicate && ['offline', 'timeout'].includes(stream.status.code)) {
-      await db.remove({ _id: stream._id })
+      await db.streams.remove({ _id: stream._id })
       removed++
     } else {
-      buffer.push(stream)
+      buffer[stream.channel_id] = stream
     }
   }
-  db.compact()
+  db.streams.compact()
 
-  logger.info(`Removed ${removed} links`)
+  logger.info(`removed ${removed} links`)
 }
 
 main()
