@@ -4,20 +4,18 @@ const { execSync } = require('child_process')
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
-  fs.emptyDirSync('tests/__data__/temp')
-  fs.copyFileSync('tests/__data__/input/database/streams.db', 'tests/__data__/temp/streams.db')
+  fs.copyFileSync('tests/__data__/input/database/streams.db', 'tests/__data__/output/streams.db')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/temp LOGS_DIR=tests/__data__/output/logs/load-cluster node scripts/commands/load-cluster.js --cluster-id=1 --timeout=1',
+    'DB_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs/load-cluster node scripts/commands/load-cluster.js --cluster-id=1 --timeout=1',
     { encoding: 'utf8' }
   )
 })
 
 it('return results', () => {
-  let output = content('tests/__data__/output/logs/load-cluster/cluster_1.log')
-  let expected = content('tests/__data__/expected/logs/load-cluster/cluster_1.log')
-
-  expect(output).toEqual(expected)
+  expect(content('tests/__data__/output/logs/load-cluster/cluster_1.log')).toEqual(
+    content('tests/__data__/expected/logs/load-cluster/cluster_1.log')
+  )
 })
 
 function content(filepath) {
