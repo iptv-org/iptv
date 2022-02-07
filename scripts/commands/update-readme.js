@@ -1,12 +1,8 @@
-const { file, markdown, parser, logger } = require('../core')
+const { file, markdown, parser, logger, api } = require('../core')
+const { create: createTable } = require('../core/table')
 const { program } = require('commander')
 
-let categories = []
-let countries = []
-let languages = []
-let regions = []
-
-const LOGS_PATH = process.env.LOGS_PATH || 'scripts/logs'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/generators'
 
 const options = program
   .option('-c, --config <config>', 'Set path to config file', '.readme/config.json')
@@ -14,97 +10,79 @@ const options = program
   .opts()
 
 async function main() {
-  await setUp()
-
-  await generateCategoryTable()
-  await generateLanguageTable()
-  await generateRegionTable()
-  await generateCountryTable()
-
+  await createCategoryTable()
+  await createCountryTable()
+  await createLanguageTable()
+  await createRegionTable()
   await updateReadme()
 }
 
 main()
 
-async function generateCategoryTable() {
-  logger.info('Generating category table...')
-
+async function createCategoryTable() {
+  logger.info('creating category table...')
   const rows = []
-  for (const category of categories) {
+  await api.categories.load()
+  const items = await parser.parseLogs(`${LOGS_DIR}/categories.log`)
+  for (const item of items) {
+    const id = file.getFilename(item.filepath)
+    const category = await api.categories.find({ id })
     rows.push({
-      category: category.name,
-      channels: category.count,
-      playlist: `<code>https://iptv-org.github.io/iptv/categories/${category.slug}.m3u</code>`
+      name: category ? category.name : 'Undefined',
+      channels: item.count,
+      playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
     })
   }
 
-  const table = markdown.createTable(rows, [
-    { name: 'Category', align: 'left' },
+  const table = createTable(rows, [
+    { name: 'Category' },
     { name: 'Channels', align: 'right' },
-    { name: 'Playlist', align: 'left', nowrap: true }
+    { name: 'Playlist', nowrap: true }
   ])
 
   await file.create('./.readme/_categories.md', table)
 }
 
-async function generateCountryTable() {
-  logger.info('Generating country table...')
-
+async function createCountryTable() {
+  logger.info('creating country table...')
   const rows = []
-  for (const country of countries) {
-    const flag = getCountryFlag(country.code)
-    const prefix = flag ? `${flag} ` : ''
-
+  await api.countries.load()
+  const items = await parser.parseLogs(`${LOGS_DIR}/countries.log`)
+  for (const item of items) {
+    const code = file.getFilename(item.filepath)
+    const country = await api.countries.find({ code: code.toUpperCase() })
     rows.push({
-      country: prefix + country.name,
-      channels: country.count,
-      playlist: `<code>https://iptv-org.github.io/iptv/countries/${country.code.toLowerCase()}.m3u</code>`
+      name: country ? `${country.flag} ${country.name}` : 'Undefined',
+      channels: item.count,
+      playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
     })
   }
 
-  const table = markdown.createTable(rows, [
-    { name: 'Country', align: 'left' },
+  const table = createTable(rows, [
+    { name: 'Country' },
     { name: 'Channels', align: 'right' },
-    { name: 'Playlist', align: 'left', nowrap: true }
+    { name: 'Playlist', nowrap: true }
   ])
 
   await file.create('./.readme/_countries.md', table)
 }
 
-async function generateRegionTable() {
-  logger.info('Generating region table...')
-
+async function createLanguageTable() {
+  logger.info('creating language table...')
   const rows = []
-  for (const region of regions) {
+  await api.languages.load()
+  const items = await parser.parseLogs(`${LOGS_DIR}/languages.log`)
+  for (const item of items) {
+    const code = file.getFilename(item.filepath)
+    const language = await api.languages.find({ code })
     rows.push({
-      region: region.name,
-      channels: region.count,
-      playlist: `<code>https://iptv-org.github.io/iptv/regions/${region.code.toLowerCase()}.m3u</code>`
+      name: language ? language.name : 'Undefined',
+      channels: item.count,
+      playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
     })
   }
 
-  const table = markdown.createTable(rows, [
-    { name: 'Region', align: 'left' },
-    { name: 'Channels', align: 'right' },
-    { name: 'Playlist', align: 'left', nowrap: true }
-  ])
-
-  await file.create('./.readme/_regions.md', table)
-}
-
-async function generateLanguageTable() {
-  logger.info('Generating language table...')
-
-  const rows = []
-  for (const language of languages) {
-    rows.push({
-      language: language.name,
-      channels: language.count,
-      playlist: `<code>https://iptv-org.github.io/iptv/languages/${language.code}.m3u</code>`
-    })
-  }
-
-  const table = markdown.createTable(rows, [
+  const table = createTable(rows, [
     { name: 'Language', align: 'left' },
     { name: 'Channels', align: 'right' },
     { name: 'Playlist', align: 'left', nowrap: true }
@@ -113,28 +91,33 @@ async function generateLanguageTable() {
   await file.create('./.readme/_languages.md', table)
 }
 
-async function updateReadme() {
-  logger.info('Updating README.md...')
+async function createRegionTable() {
+  logger.info('creating region table...')
+  const rows = []
+  await api.regions.load()
+  const items = await parser.parseLogs(`${LOGS_DIR}/regions.log`)
+  for (const item of items) {
+    const code = file.getFilename(item.filepath)
+    const region = await api.regions.find({ code: code.toUpperCase() })
+    rows.push({
+      name: region ? region.name : 'Undefined',
+      channels: item.count,
+      playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
+    })
+  }
 
+  const table = createTable(rows, [
+    { name: 'Region', align: 'left' },
+    { name: 'Channels', align: 'right' },
+    { name: 'Playlist', align: 'left', nowrap: true }
+  ])
+
+  await file.create('./.readme/_regions.md', table)
+}
+
+async function updateReadme() {
+  logger.info('updating readme.md...')
   const config = require(file.resolve(options.config))
   await file.createDir(file.dirname(config.build))
   await markdown.compile(options.config)
-}
-
-async function setUp() {
-  categories = await parser.parseLogs(`${LOGS_PATH}/generate-playlists/categories.log`)
-  countries = await parser.parseLogs(`${LOGS_PATH}/generate-playlists/countries.log`)
-  languages = await parser.parseLogs(`${LOGS_PATH}/generate-playlists/languages.log`)
-  regions = await parser.parseLogs(`${LOGS_PATH}/generate-playlists/regions.log`)
-}
-
-function getCountryFlag(code) {
-  switch (code) {
-    case 'UK':
-      return '🇬🇧'
-    case 'UNDEFINED':
-      return ''
-    default:
-      return code.replace(/./g, char => String.fromCodePoint(char.charCodeAt(0) + 127397))
-  }
 }

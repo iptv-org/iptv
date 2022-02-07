@@ -1,23 +1,26 @@
-const fs = require('fs')
+const fs = require('fs-extra')
 const path = require('path')
 const { execSync } = require('child_process')
 
 beforeEach(() => {
-  fs.rmdirSync(path.resolve('tests/__data__/output'), { recursive: true })
+  fs.emptyDirSync('tests/__data__/output')
+
+  const stdout = execSync(
+    'DATA_DIR=tests/__data__/input/data LOGS_DIR=tests/__data__/input/logs/generators node scripts/commands/update-readme.js --config=tests/__data__/input/_readme.json',
+    { encoding: 'utf8' }
+  )
 })
 
 it('can update readme.md', () => {
-  const result = execSync(
-    'LOGS_PATH=tests/__data__/input/logs node scripts/commands/update-readme.js --config=tests/__data__/input/readme.json',
-    { encoding: 'utf8' }
+  expect(content('tests/__data__/output/readme.md')).toEqual(
+    content('tests/__data__/expected/_readme.md')
   )
-
-  const readme = fs.readFileSync(path.resolve('tests/__data__/output/readme.md'), {
-    encoding: 'utf8'
-  })
-  const expected = fs.readFileSync(path.resolve('tests/__data__/input/readme.md'), {
-    encoding: 'utf8'
-  })
-
-  expect(readme).toBe(expected)
 })
+
+function content(filepath) {
+  const data = fs.readFileSync(path.resolve(filepath), {
+    encoding: 'utf8'
+  })
+
+  return JSON.stringify(data)
+}

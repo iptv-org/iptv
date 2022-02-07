@@ -2,23 +2,20 @@
 
 [![auto-update](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml/badge.svg)](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml)
 
-Collection of publicly available IPTV channels from all over the world.
+Collection of publicly available IPTV (Internet Protocol television) channels from all over the world.
 
 ## Usage
 
-To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists.
+![VLC Network Panel](https://github.com/iptv-org/iptv/raw/master/.readme/preview.png)
 
-![VLC Network Panel](.readme/preview.png)
+To watch IPTV, simply insert one of the links below into any player that supports M3U playlists:
 
-Also you can instead use one of these playlists:
-
-- `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
-- `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
-- `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
-- `https://iptv-org.github.io/iptv/index.region.m3u` (grouped by region)
+- `https://iptv-org.github.io/iptv/index.m3u`
 - `https://iptv-org.github.io/iptv/index.nsfw.m3u` (includes adult channels)
-
-Or select one of the playlists from the list below.
+- `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
+- `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
+- `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
+- `https://iptv-org.github.io/iptv/index.region.m3u` (grouped by region)
 
 ### Playlists by category
 
@@ -28,6 +25,17 @@ Or select one of the playlists from the list below.
 
 <!-- prettier-ignore -->
 #include "./.readme/_categories.md"
+
+</details>
+
+### Playlists by country
+
+<details>
+<summary>Expand</summary>
+<br>
+
+<!-- prettier-ignore -->
+#include "./.readme/_countries.md"
 
 </details>
 
@@ -53,82 +61,19 @@ Or select one of the playlists from the list below.
 
 </details>
 
-### Playlists by country
-
-<details>
-<summary>Expand</summary>
-<br>
-
-<!-- prettier-ignore -->
-#include "./.readme/_countries.md"
-
-</details>
-
-## For Developers
-
-In addition to the above methods, you can also get a list of all available channels in JSON format.
-
-To do this, you just have to make a GET request to:
-
-```
-https://iptv-org.github.io/iptv/channels.json
-```
-
-If successful, you should get the following response:
-
-<details>
-<summary>Expand</summary>
-<br>
-  
-```
-[
-  ...
-  {
-    "name": "CNN",
-    "logo": "https://i.imgur.com/ilZJT5s.png",
-    "url": "http://ott-cdn.ucom.am/s27/index.m3u8",
-    "categories": [
-      {
-        "name": "News",
-        "slug": "news"
-      }
-    ],
-    "countries": [
-      {
-        "code": "us",
-        "name": "United States"
-      },
-      {
-        "code": "ca",
-        "name": "Canada"
-      }
-    ],
-    "languages": [
-      {
-        "code": "eng",
-        "name": "English"
-      }
-    ],
-    "tvg": {
-      "id": "cnn.us",
-      "name": "CNN",
-      "url": "http://epg.streamstv.me/epg/guide-usa.xml.gz"
-    }
-  },
-  ...
-]
-```
-</details>
-
 ## EPG
 
-Playlists already have a built-in list of EPG, so players that support the `url-tvg` tag should load it automatically. If not, you can find a list of available programs here:
+Playlists already have a built-in list of EPG, so players that support the `x-tvg-url` tag should load it automatically. If not, you can find a list of available programs here:
 
 https://github.com/iptv-org/epg
 
 ## Resources
 
 You can find links to various IPTV related resources in this repository [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv).
+
+## API
+
+The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
 
 ## Contribution
 
