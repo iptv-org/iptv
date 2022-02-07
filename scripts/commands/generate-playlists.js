@@ -4,7 +4,7 @@ const _ = require('lodash')
 
 async function main() {
   const streams = await loadStreams()
-
+  // console.log(streams)
   await generator.generate('categories', streams)
   await generator.generate('countries', streams)
   await generator.generate('languages', streams)
@@ -12,8 +12,8 @@ async function main() {
   await generator.generate('index_m3u', streams)
   await generator.generate('index_nsfw_m3u', streams)
   await generator.generate('index_category_m3u', streams)
+  await generator.generate('index_country_m3u', streams)
 
-  // await generateIndexCategory()
   // await generateIndexCountry()
   // await generateIndexLanguage()
   // await generateIndexRegion()
@@ -49,60 +49,24 @@ async function loadStreams() {
     const channel = channels[stream.channel_id] || null
 
     stream.channel = channel
-    stream.broadcast_area = channel
-      ? channel.broadcast_area.map(item => {
-          const [_, code] = item.split('/')
-          return code
-        })
-      : []
-    stream.categories = channel ? channel.categories.map(id => categories[id]) : []
-    stream.languages = channel ? channel.languages.map(code => languages[code]) : []
-    stream.guides = guides[stream.channel_id] ? guides[stream.channel_id].map(g => g.url) : []
+    if (channel) {
+      stream.broadcast_area = channel.broadcast_area.map(item => {
+        const [_, code] = item.split('/')
+        return code
+      })
+      stream.categories = channel.categories.map(id => categories[id])
+      stream.languages = channel.languages.map(code => languages[code])
+      stream.guides = guides[stream.channel_id] ? guides[stream.channel_id].map(g => g.url) : []
+    } else {
+      stream.broadcast_area = []
+      stream.categories = []
+      stream.languages = []
+      stream.guides = []
+    }
 
     return stream
   })
 }
-
-// async function generateIndexCategory() {
-//   logger.info(`Generating index.category.m3u...`)
-
-//   await generator.generate(
-//     `${PUBLIC_PATH}/index.category.m3u`,
-//     {},
-//     {
-//       onLoad: function (items) {
-//         let results = items
-//           .filter(item => !item.categories || !item.categories.length)
-//           .map(item => {
-//             const newItem = _.cloneDeep(item)
-//             newItem.group_title = 'Other'
-//             return newItem
-//           })
-//         for (const category of _.sortBy(Object.values(categories), ['name'])) {
-//           let filtered = items
-//             .filter(item => {
-//               return (
-//                 Array.isArray(item.categories) &&
-//                 item.categories.map(c => c.slug).includes(category.slug)
-//               )
-//             })
-//             .map(item => {
-//               const newItem = _.cloneDeep(item)
-//               newItem.group_title = category.name
-//               return newItem
-//             })
-//           results = results.concat(filtered)
-//         }
-
-//         return results
-//       },
-//       sortBy: item => {
-//         if (item.group_title === 'Other') return '_'
-//         return item.group_title
-//       }
-//     }
-//   )
-// }
 
 // async function generateIndexCountry() {
 //   logger.info(`Generating index.country.m3u...`)
