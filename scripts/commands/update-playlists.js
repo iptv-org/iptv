@@ -10,10 +10,18 @@ async function main() {
   const files = _.groupBy(items, 'filepath')
 
   for (const filepath in files) {
-    const items = files[filepath]
+    let items = files[filepath]
+    items = items.sort(naturalOrder)
     const playlist = createPlaylist(items, { public: false })
     await file.create(filepath, playlist.toString())
   }
 }
 
 main()
+
+function naturalOrder(a, b) {
+  return a.channel_name.localeCompare(b.channel_name, undefined, {
+    numeric: true,
+    sensitivity: 'base'
+  })
+}
