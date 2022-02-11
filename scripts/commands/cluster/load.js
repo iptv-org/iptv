@@ -15,7 +15,7 @@ const config = {
   debug: options.debug
 }
 
-const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/stream/load'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/cluster/load'
 
 async function main() {
   logger.info('starting...')
