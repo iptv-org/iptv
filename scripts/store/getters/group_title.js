@@ -3,6 +3,7 @@ module.exports = function () {
 
   if (this.categories.length) {
     return this.categories
+      .filter(c => c)
       .map(category => category.name)
       .sort()
       .join(';')
