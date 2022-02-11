@@ -2,7 +2,7 @@ const api = require('../core/api')
 const _ = require('lodash')
 
 module.exports = async function (streams = []) {
-	streams = _.filter(streams, stream => !stream.channel || stream.channel.is_nsfw === false)
+	streams = _.filter(streams, stream => stream.is_nsfw === false)
 
 	await api.regions.load()
 	let regions = await api.regions.all()
@@ -10,14 +10,14 @@ module.exports = async function (streams = []) {
 
 	let items = []
 	streams.forEach(stream => {
-		if (!stream.channel || !stream.channel.broadcast_area.length) {
+		if (!stream.broadcast_area.length) {
 			const item = _.cloneDeep(stream)
-			item.group_title = null
+			item.group_title = 'Undefined'
 			items.push(item)
 			return
 		}
 
-		getChannelRegions(stream.channel, { regions }).forEach(region => {
+		getChannelRegions(stream, { regions }).forEach(region => {
 			const item = _.cloneDeep(stream)
 			item.group_title = region.name
 			items.push(item)
@@ -25,15 +25,16 @@ module.exports = async function (streams = []) {
 	})
 
 	items = _.sortBy(items, i => {
-		if (!i.group_title) return ''
+		if (i.group_title === 'Undefined') return ''
+
 		return i.group_title
 	})
 
 	return { filepath: 'index.region.m3u', items }
 }
 
-function getChannelRegions(channel, { regions }) {
-	return channel.broadcast_area
+function getChannelRegions(stream, { regions }) {
+	return stream.broadcast_area
 		.reduce((acc, item) => {
 			const [type, code] = item.split('/')
 			switch (type) {

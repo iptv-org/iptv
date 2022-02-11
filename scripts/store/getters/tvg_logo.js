@@ -1,3 +1,5 @@
 module.exports = function () {
-  return this.tvg_logo || ''
+  if (this.tvg_logo) return this.tvg_logo
+
+  return this.logo || ''
 }

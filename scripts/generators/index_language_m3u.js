@@ -1,30 +1,27 @@
-const api = require('../core/api')
 const _ = require('lodash')
 
 module.exports = async function (streams = []) {
-	streams = _.filter(streams, s => !s.channel || s.channel.is_nsfw === false)
-
-	await api.languages.load()
-	let languages = await api.languages.all()
-	languages = _.keyBy(languages, 'code')
+	streams = _.filter(streams, stream => stream.is_nsfw === false)
 
 	let items = []
 	streams.forEach(stream => {
-		if (!stream.channel || !stream.channel.languages.length) {
+		if (!stream.languages.length) {
 			const item = _.cloneDeep(stream)
-			item.group_title = null
+			item.group_title = 'Undefined'
 			items.push(stream)
 			return
 		}
 
-		stream.channel.languages.forEach(code => {
+		stream.languages.forEach(language => {
 			const item = _.cloneDeep(stream)
-			item.group_title = languages[code] ? languages[code].name : null
+			item.group_title = language.name
 			items.push(item)
 		})
 	})
+
 	items = _.sortBy(items, i => {
-		if (!i.group_title) return ''
+		if (i.group_title === 'Undefined') return ''
+
 		return i.group_title
 	})
 

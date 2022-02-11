@@ -2,7 +2,7 @@ const api = require('../core/api')
 const _ = require('lodash')
 
 module.exports = async function (streams = []) {
-	streams = _.filter(streams, s => !s.channel || s.channel.is_nsfw === false)
+	streams = _.filter(streams, stream => stream.is_nsfw === false)
 
 	await api.languages.load()
 	let languages = await api.languages.all()
@@ -10,13 +10,13 @@ module.exports = async function (streams = []) {
 
 	const output = []
 	for (const language of languages) {
-		let items = _.filter(streams, { channel: { languages: [language.code] } })
+		let items = _.filter(streams, { languages: [{ code: language.code }] })
 		if (items.length) {
 			output.push({ filepath: `languages/${language.code}.m3u`, items })
 		}
 	}
 
-	let items = _.filter(streams, stream => !stream.channel || !stream.channel.languages.length)
+	let items = _.filter(streams, stream => !stream.languages.length)
 	output.push({ filepath: 'languages/undefined.m3u', items })
 
 	return output

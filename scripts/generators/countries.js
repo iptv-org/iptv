@@ -2,7 +2,7 @@ const api = require('../core/api')
 const _ = require('lodash')
 
 module.exports = async function (streams = []) {
-	streams = _.filter(streams, stream => !stream.channel || stream.channel.is_nsfw === false)
+	streams = _.filter(streams, stream => stream.is_nsfw === false)
 
 	await api.countries.load()
 	const countries = await api.countries.all()
@@ -15,15 +15,15 @@ module.exports = async function (streams = []) {
 			r => `r/${r.code}`
 		)
 		countryAreaCodes.push(`c/${country.code}`)
-		let items = _.filter(
-			streams,
-			stream =>
-				stream.channel && _.intersection(stream.channel.broadcast_area, countryAreaCodes).length
-		)
+
+		let items = _.filter(streams, stream => {
+			return _.intersection(stream.broadcast_area, countryAreaCodes).length
+		})
+
 		output.push({ filepath: `countries/${country.code.toLowerCase()}.m3u`, items })
 	}
 
-	let items = _.filter(streams, stream => !stream.channel || !stream.channel.broadcast_area.length)
+	let items = _.filter(streams, stream => !stream.broadcast_area.length)
 	output.push({ filepath: 'countries/undefined.m3u', items })
 
 	return output
