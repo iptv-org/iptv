@@ -1,5 +1,5 @@
+const { db, logger, timer, checker, store, file, parser } = require('../../core')
 const { program } = require('commander')
-const { db, logger, timer, checker, store, file, parser } = require('../core')
 
 const options = program
   .requiredOption('-c, --cluster-id <cluster-id>', 'The ID of cluster to load', parser.parseNumber)
@@ -15,7 +15,7 @@ const config = {
   debug: options.debug
 }
 
-const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/load-cluster'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/stream/load'
 
 async function main() {
   logger.info('starting...')

@@ -1,5 +1,5 @@
-const { file, markdown, parser, logger, api } = require('../core')
-const { create: createTable } = require('../core/table')
+const { file, markdown, parser, logger, api } = require('../../core')
+const { create: createTable } = require('../../core/table')
 const { program } = require('commander')
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/generators'

@@ -1,4 +1,4 @@
-const { db, generator, api, logger, file } = require('../core')
+const { db, generator, api, logger, file } = require('../../core')
 const _ = require('lodash')
 
 async function main() {

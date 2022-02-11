@@ -1,12 +1,12 @@
+const { execSync } = require('child_process')
 const fs = require('fs-extra')
 const path = require('path')
-const { execSync } = require('child_process')
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DATA_DIR=tests/__data__/input/data LOGS_DIR=tests/__data__/input/logs/generators node scripts/commands/update-readme.js --config=tests/__data__/input/_readme.json',
+    'DATA_DIR=tests/__data__/input/data LOGS_DIR=tests/__data__/input/logs/generators node scripts/commands/readme/update.js --config=tests/__data__/input/_readme.json',
     { encoding: 'utf8' }
   )
 })

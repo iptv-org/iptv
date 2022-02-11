@@ -2,9 +2,12 @@ const { execSync } = require('child_process')
 
 it('show error if channel name in the blocklist', () => {
   try {
-    execSync('node scripts/commands/validate.js tests/__data__/input/channels/us_blocked.m3u', {
-      encoding: 'utf8'
-    })
+    execSync(
+      'DATA_DIR=tests/__data__/input/data node scripts/commands/playlist/validate.js tests/__data__/input/channels/us_blocked.m3u',
+      {
+        encoding: 'utf8'
+      }
+    )
   } catch (err) {
     expect(err.status).toBe(1)
     expect(err.stdout).toBe(
@@ -15,7 +18,7 @@ it('show error if channel name in the blocklist', () => {
 
 it('show warning if channel has wrong id', () => {
   const stdout = execSync(
-    'node scripts/commands/validate.js tests/__data__/input/channels/wrong_id.m3u',
+    'DATA_DIR=tests/__data__/input/data node scripts/commands/playlist/validate.js tests/__data__/input/channels/wrong_id.m3u',
     {
       encoding: 'utf8'
     }
