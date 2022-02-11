@@ -3,7 +3,12 @@
   "scripts": {
     "validate": "node scripts/commands/validate.js",
     "lint": "npx m3u-linter -c m3u-linter.json",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "test:commands": "jest --runInBand -- commands",
+    "test:commands:database": "jest --runInBand -- database",
+    "test:commands:playlist": "jest --runInBand -- playlist",
+    "test:commands:readme": "jest --runInBand -- readme",
+    "test:commands:stream": "jest --runInBand -- stream"
   },
   "jest": {
     "testRegex": "tests/(.*?/)?.*test.js$",

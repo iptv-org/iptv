@@ -8,7 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Download channels from API
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
+          cache: 'npm'
+      - name: Download data from API
         run: |
           mkdir -p scripts/data
           curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
@@ -17,23 +22,18 @@ jobs:
           curl -L -o scripts/data/languages.json https://iptv-org.github.io/api/languages.json
           curl -L -o scripts/data/regions.json https://iptv-org.github.io/api/regions.json
           curl -L -o scripts/data/guides.json https://iptv-org.github.io/api/guides.json
-      - uses: actions/setup-node@v2
-        if: ${{ !env.ACT }}
+      - uses: actions/upload-artifact@v2
         with:
-          node-version: '14'
-          cache: 'npm'
+          name: data
+          path: scripts/data
       - run: npm install
-      - run: node scripts/commands/create-database.js
-      - run: node scripts/commands/create-matrix.js
+      - run: node scripts/commands/database/create.js
+      - run: node scripts/commands/database/matrix.js
         id: create-matrix
       - uses: actions/upload-artifact@v2
         with:
           name: database
           path: scripts/database
-      - uses: actions/upload-artifact@v2
-        with:
-          name: data
-          path: scripts/data
     outputs:
       matrix: ${{ steps.create-matrix.outputs.matrix }}
   load:
@@ -57,7 +57,7 @@ jobs:
         with:
           node-version: '14'
       - run: npm install
-      - run: node scripts/commands/load-cluster.js --cluster-id=${{ matrix.cluster_id }}
+      - run: node scripts/commands/stream/load.js --cluster-id=${{ matrix.cluster_id }}
       - uses: actions/upload-artifact@v2
         with:
           name: logs
@@ -73,6 +73,10 @@ jobs:
       - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
       - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
       - run: curl -L -o scripts/data/codes.json https://iptv-org.github.io/epg/codes.json
+      - uses: actions/setup-node@v2
+        if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
       - uses: actions/download-artifact@v2
         with:
           name: database
@@ -85,25 +89,21 @@ jobs:
         with:
           name: logs
           path: scripts/logs
-      - uses: actions/setup-node@v2
-        if: ${{ !env.ACT }}
-        with:
-          node-version: '14'
       - run: npm install
-      - run: node scripts/commands/save-results.js
+      - run: node scripts/commands/database/update.js
       - uses: actions/upload-artifact@v2
         with:
           name: database
           path: scripts/database
-      - run: node scripts/commands/update-playlists.js
+      - run: node scripts/commands/playlist/update.js
       - run: git add channels/*
       - run: git commit -m "[Bot] Update playlists"
-      - run: node scripts/commands/generate-playlists.js
+      - run: node scripts/commands/playlist/generate.js
       - uses: actions/upload-artifact@v2
         with:
           name: logs
           path: scripts/logs
-      - run: node scripts/commands/update-readme.js
+      - run: node scripts/commands/readme/update.js
       - run: git add README.md
       - run: git commit -m "[Bot] Update README.md"
       - run: git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
