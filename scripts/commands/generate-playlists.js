@@ -1,4 +1,4 @@
-const { db, generator, api, logger } = require('../core')
+const { db, generator, api, logger, file } = require('../core')
 const _ = require('lodash')
 
 async function main() {
@@ -30,7 +30,7 @@ main()
 
 async function loadStreams() {
   await db.streams.load()
-  let streams = await db.streams.find({})
+  let streams = await db.streams.find({ is_broken: false })
 
   await api.channels.load()
   let channels = await api.channels.all()
@@ -50,31 +50,16 @@ async function loadStreams() {
 
   return streams.map(stream => {
     const channel = channels[stream.channel_id] || null
+    const filename = file.getFilename(stream.filepath)
+    const [_, code] = filename.match(/^([a-z]{2})(_|$)/) || [null, null]
+    const defaultBroadcastArea = code ? [`c/${code.toUpperCase()}`] : []
 
-    if (channel) {
-      stream.group_title = channel.categories
-        .map(id => (categories[id] ? categories[id].name : null))
-        .filter(i => i)
-        .sort()
-        .join(';')
-      stream.tvg_language = channel.languages
-        .map(code => (languages[code] ? languages[code].name : ''))
-        .filter(i => i)
-        .sort()
-        .join(';')
-      stream.tvg_country = channel.broadcast_area
-        .map(item => {
-          const [_, code] = item.split('/')
-          return code
-        })
-        .filter(i => i)
-        .sort()
-        .join(';')
-      stream.tvg_logo = channel.logo
-      stream.tvg_url =
-        guides[channel.id] && guides[channel.id].length ? guides[channel.id][0].url : null
-      stream.channel = channel
-    }
+    stream.guides = channel && Array.isArray(guides[channel.id]) ? guides[channel.id] : []
+    stream.categories = channel ? channel.categories.map(id => categories[id]) : []
+    stream.languages = channel ? channel.languages.map(id => languages[id]) : []
+    stream.broadcast_area = channel ? channel.broadcast_area : defaultBroadcastArea
+    stream.is_nsfw = channel ? channel.is_nsfw : false
+    stream.logo = channel ? channel.logo : null
 
     return stream
   })

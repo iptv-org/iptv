@@ -1,32 +1,27 @@
-const api = require('../core/api')
 const _ = require('lodash')
 
 module.exports = async function (streams = []) {
-	streams = _.filter(streams, s => !s.channel || s.channel.is_nsfw === false)
-
-	await api.categories.load()
-	let categories = await api.categories.all()
-	categories = _.keyBy(categories, 'id')
+	streams = _.filter(streams, stream => stream.is_nsfw === false)
 
 	let items = []
 	streams.forEach(stream => {
-		if (!stream.channel || !stream.channel.categories.length) {
+		if (!stream.categories.length) {
 			const item = _.cloneDeep(stream)
-			item.group_title = null
+			item.group_title = 'Undefined'
 			items.push(item)
 
 			return
 		}
 
-		stream.channel.categories.forEach(id => {
+		stream.categories.forEach(category => {
 			const item = _.cloneDeep(stream)
-			item.group_title = categories[id] ? categories[id].name : null
+			item.group_title = category.name
 			items.push(item)
 		})
 	})
 
 	items = _.sortBy(items, item => {
-		if (!item.group_title) return ''
+		if (item.group_title === 'Undefined') return ''
 
 		return item.group_title
 	})
