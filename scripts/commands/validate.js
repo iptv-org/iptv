@@ -1,55 +1,67 @@
-const blocklist = require('../data/blocklist')
-const parser = require('iptv-playlist-parser')
-const { file, logger } = require('../core')
+const { file, logger, api, parser, blocklist } = require('../core')
 const { program } = require('commander')
+const chalk = require('chalk')
 
-const options = program
-  .option('--input-dir <input-dir>', 'Set path to input directory', 'channels')
-  .parse(process.argv)
-  .opts()
+program.argument('<filepath>', 'Path to file to validate').parse(process.argv)
 
 async function main() {
-  const files = await file.list(`${options.inputDir}/**/*.m3u`)
-  const errors = []
-  for (const filepath of files) {
-    const content = await file.read(filepath)
-    const playlist = parser.parse(content)
+  await api.channels.load()
+
+  let errors = []
+  let warnings = []
+  for (const filepath of program.args) {
+    if (!filepath.endsWith('.m3u')) continue
+
     const basename = file.basename(filepath)
-    const [_, country] = basename.match(/([a-z]{2})(|_.*)\.m3u/i) || [null, null]
+    const [_, countryCode] = basename.match(/([a-z]{2})(|_.*)\.m3u/i) || [null, null]
 
-    const items = playlist.items
-      .map(item => {
-        const details = check(item, country)
+    const fileLog = []
+    const streams = await parser.parsePlaylist(filepath)
+    for (const stream of streams) {
+      const found = blocklist.find(stream.name, countryCode.toUpperCase())
+      if (found) {
+        fileLog.push({
+          type: 'error',
+          line: stream.line,
+          message: `"${found.name}" is on the blocklist due to claims of copyright holders (${found.reference})`
+        })
+      }
 
-        return details ? { ...item, details } : null
+      if (stream.tvg.id && !api.channels.find({ id: stream.tvg.id })) {
+        fileLog.push({
+          type: 'warning',
+          line: stream.line,
+          message: `"${stream.tvg.id}" is not in the database`
+        })
+      }
+    }
+
+    if (fileLog.length) {
+      logger.info(`\n${chalk.underline(filepath)}`)
+
+      fileLog.forEach(err => {
+        const position = err.line.toString().padEnd(6, ' ')
+        const type = err.type.padEnd(9, ' ')
+        const status = err.type === 'error' ? chalk.red(type) : chalk.yellow(type)
+        logger.info(` ${chalk.gray(position)}${status}${err.message}`)
       })
-      .filter(i => i)
 
-    items.forEach(item => {
-      errors.push(
-        `${filepath}:${item.line}   '${item.details.name}' is on the blocklist due to claims of copyright holders (${item.details.reference})`
-      )
-    })
+      errors = errors.concat(fileLog.filter(e => e.type === 'error'))
+      warnings = warnings.concat(fileLog.filter(e => e.type === 'warning'))
+    }
   }
 
-  errors.forEach(error => {
-    logger.error(error)
-  })
+  logger.error(
+    chalk.red(
+      `\n${errors.length + warnings.length} problems (${errors.length} errors, ${
+        warnings.length
+      } warnings)`
+    )
+  )
 
   if (errors.length) {
-    logger.info('')
     process.exit(1)
   }
-}
-
-function check(channel, country) {
-  return blocklist.find(item => {
-    const regexp = new RegExp(item.regex, 'i')
-    const hasSameName = regexp.test(channel.name)
-    const fromSameCountry = country === item.country.toLowerCase()
-
-    return hasSameName && fromSameCountry
-  })
 }
 
 main()
