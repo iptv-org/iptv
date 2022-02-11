@@ -1,14 +1,21 @@
 {
   "name": "iptv",
   "scripts": {
-    "validate": "node scripts/commands/validate.js",
-    "lint": "npx m3u-linter -c m3u-linter.json",
+    "db:create": "node scripts/commands/database/create.js",
+    "db:matrix": "node scripts/commands/database/matrix.js",
+    "db:update": "node scripts/commands/database/update.js",
+    "cluster:load": "node scripts/commands/cluster/load.js",
+    "playlist:validate": "node scripts/commands/playlist/validate.js",
+    "playlist:generate": "node scripts/commands/playlist/generate.js",
+    "playlist:update": "node scripts/commands/playlist/update.js",
+    "playlist:lint": "npx m3u-linter -c m3u-linter.json",
+    "readme:update": "node scripts/commands/readme/update.js",
     "test": "jest --runInBand",
     "test:commands": "jest --runInBand -- commands",
     "test:commands:database": "jest --runInBand -- database",
     "test:commands:playlist": "jest --runInBand -- playlist",
-    "test:commands:readme": "jest --runInBand -- readme",
-    "test:commands:stream": "jest --runInBand -- stream"
+    "test:commands:stream": "jest --runInBand -- stream",
+    "test:commands:readme": "jest --runInBand -- readme"
   },
   "jest": {
     "testRegex": "tests/(.*?/)?.*test.js$",
