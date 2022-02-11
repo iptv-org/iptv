@@ -7,14 +7,14 @@ beforeEach(() => {
   fs.copyFileSync('tests/__data__/input/database/streams.db', 'tests/__data__/output/streams.db')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs/stream/load node scripts/commands/stream/load.js --cluster-id=1 --timeout=1',
+    'DB_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs/cluster/load node scripts/commands/cluster/load.js --cluster-id=1 --timeout=1',
     { encoding: 'utf8' }
   )
 })
 
 it('return results', () => {
-  expect(content('tests/__data__/output/logs/stream/load/cluster_1.log')).toEqual(
-    content('tests/__data__/expected/logs/stream/load/cluster_1.log')
+  expect(content('tests/__data__/output/logs/cluster/load/cluster_1.log')).toEqual(
+    content('tests/__data__/expected/logs/cluster/load/cluster_1.log')
   )
 })
 
