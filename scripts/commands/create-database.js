@@ -1,4 +1,4 @@
-const { db, file, parser, store, logger, cid } = require('../core')
+const { db, file, parser, store, logger, id } = require('../core')
 const { program } = require('commander')
 const _ = require('lodash')
 
@@ -62,7 +62,7 @@ async function saveToDatabase(streams = []) {
       stream.set('cluster_id', { cluster_id: i + 1 })
 
       if (!stream.get('channel_id')) {
-        const channel_id = cid.generate(item.name, item.filepath)
+        const channel_id = id.generate(item.name, item.filepath)
 
         stream.set('channel_id', { channel_id })
         stream.set('updated', { updated: true })

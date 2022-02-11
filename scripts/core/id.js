@@ -2,9 +2,9 @@ const file = require('./file')
 const parser = require('./parser')
 const transliteration = require('transliteration')
 
-const cid = {}
+const id = {}
 
-cid.generate = function (title, filepath) {
+id.generate = function (title, filepath) {
   const name = parser.parseChannelName(title)
   const code = parser.parseCountryCode(filepath)
 
@@ -20,4 +20,4 @@ cid.generate = function (title, filepath) {
   return null
 }
 
-module.exports = cid
+module.exports = id
