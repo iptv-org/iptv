@@ -6,12 +6,12 @@ const glob = require('glob')
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.copyFileSync(
-    'tests/__data__/input/database/playlist-generate.streams.db',
+    'tests/__data__/input/database/playlist_generate.streams.db',
     'tests/__data__/output/streams.db'
   )
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.gh-pages LOGS_DIR=tests/__data__/output/logs/generators node --trace-warnings scripts/commands/playlist/generate.js',
+    'DB_DIR=tests/__data__/output DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.gh-pages LOGS_DIR=tests/__data__/output/logs/generators npm run playlist:generate',
     { encoding: 'utf8' }
   )
 })
