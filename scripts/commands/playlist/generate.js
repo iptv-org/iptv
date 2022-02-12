@@ -1,4 +1,5 @@
 const { db, generator, api, logger, file } = require('../../core')
+const { orderBy } = require('natural-orderby')
 const _ = require('lodash')
 
 async function main() {
@@ -31,6 +32,12 @@ main()
 async function loadStreams() {
   await db.streams.load()
   let streams = await db.streams.find({ is_broken: false })
+  streams = _.orderBy(
+    streams,
+    ['channel_name', 'status.level', 'resolution.height', 'url'],
+    ['asc', 'asc', 'desc', 'asc']
+  )
+  streams = _.uniqBy(streams, stream => stream.channel_id || _.uniqueId())
 
   await api.channels.load()
   let channels = await api.channels.all()
