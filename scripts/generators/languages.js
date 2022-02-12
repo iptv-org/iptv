@@ -1,11 +1,12 @@
-const api = require('../core/api')
 const _ = require('lodash')
 
 module.exports = async function (streams = []) {
 	streams = _.filter(streams, stream => stream.is_nsfw === false)
 
-	await api.languages.load()
-	let languages = await api.languages.all()
+	let languages = []
+	streams.forEach(stream => {
+		languages = languages.concat(stream.languages)
+	})
 	languages = _.uniqBy(languages, 'code')
 
 	const output = []
