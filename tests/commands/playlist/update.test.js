@@ -1,13 +1,16 @@
+const { execSync } = require('child_process')
 const fs = require('fs-extra')
 const path = require('path')
 const glob = require('glob')
-const { execSync } = require('child_process')
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
-  fs.copyFileSync('tests/__data__/input/database/streams.db', 'tests/__data__/output/streams.db')
+  fs.copyFileSync(
+    'tests/__data__/input/database/playlist_update.streams.db',
+    'tests/__data__/output/streams.db'
+  )
 
-  const stdout = execSync('DB_DIR=tests/__data__/output node scripts/commands/playlist/update.js', {
+  const stdout = execSync('DB_DIR=tests/__data__/output npm run playlist:update', {
     encoding: 'utf8'
   })
 })

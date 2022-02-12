@@ -5,15 +5,16 @@ const _ = require('lodash')
 
 async function main() {
   await db.streams.load()
-  let items = await db.streams
-    .find({})
-    .sort({ name: 1, 'status.level': 1, 'resolution.height': -1, url: 1 })
-  const files = _.groupBy(items, 'filepath')
+  let streams = await db.streams.find({})
+  streams = orderBy(
+    streams,
+    ['channel_name', i => i.status.level, i => i.resolution.height, 'url'],
+    ['asc', 'asc', 'desc', 'asc']
+  )
 
+  const files = _.groupBy(streams, 'filepath')
   for (const filepath in files) {
-    let items = files[filepath]
-    items = orderBy(items, ['channel_name'], ['asc'])
-    const playlist = createPlaylist(items, { public: false })
+    const playlist = createPlaylist(files[filepath], { public: false })
     await file.create(filepath, playlist.toString())
   }
 }
