@@ -13,11 +13,13 @@ module.exports = async function (streams = []) {
 			return
 		}
 
-		stream.categories.forEach(category => {
-			const item = _.cloneDeep(stream)
-			item.group_title = category.name
-			items.push(item)
-		})
+		stream.categories
+			.filter(c => c)
+			.forEach(category => {
+				const item = _.cloneDeep(stream)
+				item.group_title = category.name
+				items.push(item)
+			})
 	})
 
 	items = _.sortBy(items, item => {
