@@ -32,9 +32,9 @@ main()
 async function loadStreams() {
   await db.streams.load()
   let streams = await db.streams.find({ is_broken: false })
-  streams = _.orderBy(
+  streams = orderBy(
     streams,
-    ['channel_name', 'status.level', 'resolution.height', 'url'],
+    ['channel_name', i => i.status.level, i => i.resolution.height, 'url'],
     ['asc', 'asc', 'desc', 'asc']
   )
   streams = _.uniqBy(streams, stream => stream.channel_id || _.uniqueId())
