@@ -10,12 +10,7 @@
     "playlist:update": "node scripts/commands/playlist/update.js",
     "playlist:lint": "npx m3u-linter -c m3u-linter.json",
     "readme:update": "node scripts/commands/readme/update.js",
-    "test": "jest --runInBand",
-    "test:commands": "jest --runInBand -- commands",
-    "test:commands:database": "jest --runInBand -- database",
-    "test:commands:playlist": "jest --runInBand -- playlist",
-    "test:commands:stream": "jest --runInBand -- stream",
-    "test:commands:readme": "jest --runInBand -- readme"
+    "test": "jest --runInBand"
   },
   "jest": {
     "testRegex": "tests/(.*?/)?.*test.js$",
