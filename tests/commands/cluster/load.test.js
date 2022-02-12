@@ -4,10 +4,13 @@ const path = require('path')
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
-  fs.copyFileSync('tests/__data__/input/database/streams.db', 'tests/__data__/output/streams.db')
+  fs.copyFileSync(
+    'tests/__data__/input/database/base_streams.db',
+    'tests/__data__/output/streams.db'
+  )
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs/cluster/load node scripts/commands/cluster/load.js --cluster-id=1 --timeout=1',
+    'DB_DIR=tests/__data__/output LOGS_DIR=tests/__data__/output/logs/cluster/load npm run cluster:load -- --cluster-id=1 --timeout=1',
     { encoding: 'utf8' }
   )
 })
