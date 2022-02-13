@@ -135,8 +135,10 @@ function parseStreams(streams) {
     .filter(s => s.codec_type === 'video')
     .reduce(
       (acc, curr) => {
-        if (curr.height > acc.height)
-          return { width: curr.width, height: curr.height, bitrate: curr.bitrate }
+        if (curr.height > acc.height) {
+          const bitrate = curr.tags.variant_bitrate ? parseInt(curr.tags.variant_bitrate) : 0
+          return { width: curr.width, height: curr.height, bitrate }
+        }
         return acc
       },
       { width: 0, height: 0, bitrate: 0 }
