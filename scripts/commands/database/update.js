@@ -134,7 +134,11 @@ function findOrigin(requests = [], origins = {}) {
 
 function parseStreams(streams) {
   streams = streams.filter(s => s.codec_type === 'video')
-  streams = _.orderBy(streams, ['height', 'tags.variant_bitrate'], ['desc', 'desc'])
+  streams = _.orderBy(
+    streams,
+    ['height', s => (s.tags.variant_bitrate ? parseInt(s.tags.variant_bitrate) : 0)],
+    ['desc', 'desc']
+  )
 
   const data = _.head(streams)
   if (data) {
