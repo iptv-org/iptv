@@ -31,7 +31,7 @@ main()
 
 async function loadStreams() {
   await db.streams.load()
-  let streams = await db.streams.find({ is_online: true })
+  let streams = await db.streams.find({ status: { $in: ['online', 'timeout', 'blocked'] } })
   streams = orderBy(streams, ['channel', 'height', 'url'], ['asc', 'desc', 'asc'])
   streams = _.uniqBy(streams, stream => stream.channel || _.uniqueId())
 
