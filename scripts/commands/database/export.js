@@ -12,12 +12,12 @@ async function main() {
       channel: stream.channel,
       title: stream.title,
       url: stream.url,
+      http_referrer: stream.http_referrer,
+      user_agent: stream.user_agent,
+      is_online: stream.is_online,
       width: stream.width,
       height: stream.height,
-      bitrate: stream.bitrate,
-      is_online: stream.is_online,
-      http_referrer: stream.http_referrer,
-      user_agent: stream.user_agent
+      bitrate: stream.bitrate
     }
   })
 
