@@ -4,16 +4,49 @@ const _ = require('lodash')
 const playlist = {}
 
 class Playlist {
-  constructor() {
+  constructor(items = [], options = {}) {
+    this.header = {}
+    if (options.public) {
+      let guides = items
+        .map(item => (item.guides.length ? item.guides[0].url : null))
+        .filter(i => i)
+      this.header['x-tvg-url'] = _.uniq(guides).sort().join(',')
+    }
+
     this.links = []
-  }
+    for (const item of items) {
+      const stream = store.create(item)
 
-  setHeader(attrs = {}) {
-    this.header = attrs
-  }
+      let attrs
+      if (options.public) {
+        attrs = {
+          'tvg-id': stream.get('tvg_id'),
+          'tvg-country': stream.get('tvg_country'),
+          'tvg-language': stream.get('tvg_language'),
+          'tvg-logo': stream.get('tvg_logo'),
+          'user-agent': stream.get('http.user-agent') || undefined,
+          'group-title': stream.get('group_title')
+        }
+      } else {
+        attrs = {
+          'tvg-id': stream.get('tvg_id'),
+          status: stream.get('status'),
+          'user-agent': stream.get('http.user-agent') || undefined
+        }
+      }
 
-  add(url, title, attrs, vlcOpts) {
-    this.links.push({ url, title, attrs, vlcOpts })
+      const vlcOpts = {
+        'http-referrer': stream.get('http.referrer') || undefined,
+        'http-user-agent': stream.get('http.user-agent') || undefined
+      }
+
+      this.links.push({
+        url: stream.get('url'),
+        title: stream.get('title'),
+        attrs,
+        vlcOpts
+      })
+    }
   }
 
   toString() {
@@ -48,43 +81,8 @@ class Playlist {
   }
 }
 
-playlist.create = function (items = [], options = {}) {
-  const p = new Playlist()
-
-  const header = {}
-  if (options.public) {
-    let guides = items.map(item => (item.guides.length ? item.guides[0].url : null)).filter(i => i)
-    header['x-tvg-url'] = _.uniq(guides).sort().join(',')
-  }
-  p.setHeader(header)
-
-  for (const item of items) {
-    const stream = store.create(item)
-
-    let attrs
-    if (options.public) {
-      attrs = {
-        'tvg-id': stream.get('tvg_id'),
-        'tvg-country': stream.get('tvg_country'),
-        'tvg-language': stream.get('tvg_language'),
-        'tvg-logo': stream.get('tvg_logo'),
-        'user-agent': stream.get('http.user-agent') || undefined,
-        'group-title': stream.get('group_title')
-      }
-    } else {
-      attrs = {
-        'tvg-id': stream.get('tvg_id'),
-        'user-agent': stream.get('http.user-agent') || undefined
-      }
-    }
-
-    p.add(stream.get('url'), stream.get('title'), attrs, {
-      'http-referrer': stream.get('http.referrer') || undefined,
-      'http-user-agent': stream.get('http.user-agent') || undefined
-    })
-  }
-
-  return p
+playlist.create = function (items, options) {
+  return new Playlist(items, options)
 }
 
 module.exports = playlist
