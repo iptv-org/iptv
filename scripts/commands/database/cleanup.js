@@ -1,4 +1,5 @@
 const { db, logger } = require('../../core')
+const _ = require('lodash')
 
 async function main() {
   logger.info(`loading streams...`)
@@ -7,16 +8,15 @@ async function main() {
 
   logger.info(`removing broken links...`)
   let removed = 0
-  const buffer = {}
-  for (const stream of streams) {
-    const duplicate = buffer[stream.channel]
-    if (duplicate && !stream.is_online) {
+  const failed = _.filter(streams, { status: 'error' })
+  for (const stream of failed) {
+    const hasDuplicate = _.find(streams, s => s.channel === stream.channel && s.status !== 'error')
+    if (hasDuplicate) {
       await db.streams.remove({ _id: stream._id })
       removed++
-    } else {
-      buffer[stream.channel] = stream
     }
   }
+
   db.streams.compact()
 
   logger.info(`removed ${removed} links`)
