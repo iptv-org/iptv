@@ -1,5 +1,4 @@
 const { db, store, parser, file, logger } = require('../../core')
-const statuses = require('../../data/statuses')
 const _ = require('lodash')
 
 const items = []
@@ -80,8 +79,8 @@ async function updateStreams(items = [], results = {}, origins = {}) {
     if (result) {
       const { error, streams, requests } = result
 
-      const { is_online } = parseError(error)
-      stream.set('is_online', { is_online })
+      const status = parseStatus(error)
+      stream.set('status', { status })
 
       if (streams.length) {
         const { width, height, bitrate } = parseStreams(streams)
@@ -136,28 +135,28 @@ function parseStreams(streams) {
   streams = streams.filter(s => s.codec_type === 'video')
   streams = _.orderBy(
     streams,
-    ['height', s => (s.tags.variant_bitrate ? parseInt(s.tags.variant_bitrate) : 0)],
+    ['height', s => (s.tags && s.tags.variant_bitrate ? parseInt(s.tags.variant_bitrate) : 0)],
     ['desc', 'desc']
   )
 
   const data = _.head(streams)
   if (data) {
-    const bitrate = data.tags.variant_bitrate ? parseInt(data.tags.variant_bitrate) : 0
+    const bitrate = data.tags && data.tags.variant_bitrate ? parseInt(data.tags.variant_bitrate) : 0
     return { width: data.width, height: data.height, bitrate }
   }
 
   return {}
 }
 
-function parseError(error) {
-  const output = {
-    is_online: true,
-    message: error
-  }
+function parseStatus(error) {
+  if (!error) return 'online'
 
-  if (error && !error.includes('403')) {
-    output.is_online = false
+  switch (error) {
+    case 'Operation timed out':
+      return 'timeout'
+    case 'Server returned 403 Forbidden (access denied)':
+      return 'blocked'
+    default:
+      return 'error'
   }
-
-  return output
 }
