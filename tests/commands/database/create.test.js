@@ -13,7 +13,7 @@ beforeEach(() => {
 
 it('can create database', () => {
   let output = content('tests/__data__/output/database/streams.db')
-  let expected = content('tests/__data__/expected/database/streams.db')
+  let expected = content('tests/__data__/expected/database/db_create.streams.db')
 
   output = output.map(i => {
     i._id = null
@@ -28,7 +28,8 @@ it('can create database', () => {
     expect.arrayContaining([
       expect.objectContaining(expected[0]),
       expect.objectContaining(expected[1]),
-      expect.objectContaining(expected[2])
+      expect.objectContaining(expected[2]),
+      expect.objectContaining(expected[3])
     ])
   )
 })

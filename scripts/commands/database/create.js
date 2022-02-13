@@ -1,4 +1,4 @@
-const { db, file, parser, store, logger, id } = require('../../core')
+const { db, file, parser, store, logger, id, api } = require('../../core')
 const { program } = require('commander')
 const _ = require('lodash')
 
@@ -27,7 +27,9 @@ main()
 async function findStreams() {
   logger.info(`looking for streams...`)
 
+  await api.channels.load()
   await db.streams.load()
+
   const files = await file.list(`${options.inputDir}/**/*.m3u`)
   const streams = []
   for (const filepath of files) {
@@ -50,23 +52,16 @@ async function saveToDatabase(streams = []) {
   for (const [i, chunk] of chunks.entries()) {
     for (const item of chunk) {
       const stream = store.create()
-      stream.set('channel_id', { channel_id: item.tvg.id })
-      stream.set('channel_name', { title: item.name })
+      const channel = await api.channels.find({ id: item.tvg.id })
+      const channel_id = channel ? channel.id : null
+
+      stream.set('channel', { channel: channel_id })
+      stream.set('title', { title: item.name })
       stream.set('filepath', { filepath: item.filepath })
-      stream.set('resolution', { title: item.name })
-      stream.set('status', { title: item.name })
       stream.set('url', { url: item.url })
-      stream.set('http', { http: item.http })
-      stream.set('is_broken', { status: stream.get('status') })
-      stream.set('updated', { updated: false })
+      stream.set('http_referrer', { http_referrer: item.http.referrer })
+      stream.set('user_agent', { user_agent: item.http['user-agent'] })
       stream.set('cluster_id', { cluster_id: i + 1 })
-
-      if (!stream.get('channel_id')) {
-        const channel_id = id.generate(item.name, item.filepath)
-
-        stream.set('channel_id', { channel_id })
-        stream.set('updated', { updated: true })
-      }
 
       await db.streams.insert(stream.data())
     }
