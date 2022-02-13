@@ -4,7 +4,7 @@ const fs = require('fs-extra')
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.copyFileSync(
-    'tests/__data__/input/database/base_streams.db',
+    'tests/__data__/input/database/db_export.streams.db',
     'tests/__data__/output/streams.db'
   )
 
