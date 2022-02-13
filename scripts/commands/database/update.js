@@ -98,6 +98,8 @@ async function updateStreams(items = [], results = {}, origins = {}) {
       }
     }
 
+    if (stream.changed) updated++
+
     output.push(stream.data())
   }
 
@@ -107,7 +109,7 @@ async function updateStreams(items = [], results = {}, origins = {}) {
 }
 
 async function updateDatabase(streams = []) {
-  logger.info('updating database...')
+  logger.info('saving to database...')
 
   for (const stream of streams) {
     await db.streams.update({ _id: stream._id }, stream)
