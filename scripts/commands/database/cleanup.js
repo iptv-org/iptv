@@ -9,12 +9,12 @@ async function main() {
   let removed = 0
   const buffer = {}
   for (const stream of streams) {
-    const duplicate = buffer[stream.channel_id]
-    if (duplicate && ['offline', 'timeout'].includes(stream.status.code)) {
+    const duplicate = buffer[stream.channel]
+    if (duplicate && !stream.is_online) {
       await db.streams.remove({ _id: stream._id })
       removed++
     } else {
-      buffer[stream.channel_id] = stream
+      buffer[stream.channel] = stream
     }
   }
   db.streams.compact()
