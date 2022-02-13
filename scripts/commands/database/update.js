@@ -133,20 +133,16 @@ function findOrigin(requests = [], origins = {}) {
 }
 
 function parseStreams(streams) {
-  const data = streams
-    .filter(s => s.codec_type === 'video')
-    .reduce(
-      (acc, curr) => {
-        if (curr.height > acc.height) {
-          const bitrate = curr.tags.variant_bitrate ? parseInt(curr.tags.variant_bitrate) : 0
-          return { width: curr.width, height: curr.height, bitrate }
-        }
-        return acc
-      },
-      { width: 0, height: 0, bitrate: 0 }
-    )
+  streams = streams.filter(s => s.codec_type === 'video')
+  streams = _.orderBy(streams, ['height', 'bitrate'], ['desc', 'desc'])
 
-  return data
+  const data = _.head(streams)
+  if (data) {
+    const bitrate = data.tags.variant_bitrate ? parseInt(data.tags.variant_bitrate) : 0
+    return { width: data.width, height: data.height, bitrate }
+  }
+
+  return {}
 }
 
 function parseError(error) {
