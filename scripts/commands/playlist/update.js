@@ -6,11 +6,7 @@ const _ = require('lodash')
 async function main() {
   await db.streams.load()
   let streams = await db.streams.find({})
-  streams = orderBy(
-    streams,
-    ['channel_name', i => i.status.level, i => i.resolution.height, 'url'],
-    ['asc', 'asc', 'desc', 'asc']
-  )
+  streams = orderBy(streams, ['title', 'height', 'url'], ['asc', 'desc', 'asc'])
 
   const files = _.groupBy(streams, 'filepath')
   for (const filepath in files) {
