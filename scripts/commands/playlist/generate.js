@@ -31,13 +31,9 @@ main()
 
 async function loadStreams() {
   await db.streams.load()
-  let streams = await db.streams.find({ is_broken: false })
-  streams = orderBy(
-    streams,
-    ['channel_name', i => i.status.level, i => i.resolution.height, 'url'],
-    ['asc', 'asc', 'desc', 'asc']
-  )
-  streams = _.uniqBy(streams, stream => stream.channel_id || _.uniqueId())
+  let streams = await db.streams.find({ is_online: true })
+  streams = orderBy(streams, ['channel', 'height', 'url'], ['asc', 'desc', 'asc'])
+  streams = _.uniqBy(streams, stream => stream.channel || _.uniqueId())
 
   await api.channels.load()
   let channels = await api.channels.all()
@@ -55,8 +51,8 @@ async function loadStreams() {
   let guides = await api.guides.all()
   guides = _.groupBy(guides, 'channel')
 
-  return streams.map(stream => {
-    const channel = channels[stream.channel_id] || null
+  streams = streams.map(stream => {
+    const channel = channels[stream.channel] || null
     const filename = file.getFilename(stream.filepath)
     const [_, code] = filename.match(/^([a-z]{2})(_|$)/) || [null, null]
     const defaultBroadcastArea = code ? [`c/${code.toUpperCase()}`] : []
@@ -70,4 +66,8 @@ async function loadStreams() {
 
     return stream
   })
+
+  streams = orderBy(streams, ['title'], ['asc'])
+
+  return streams
 }
