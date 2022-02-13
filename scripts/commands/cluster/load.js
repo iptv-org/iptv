@@ -42,7 +42,13 @@ async function main() {
     } else {
       logger.info(`${message} (${result.error})`)
     }
-    await file.append(clusterLog, JSON.stringify(result) + '\n')
+    const output = {
+      _id: result._id,
+      error: result.error,
+      streams: result.streams,
+      requests: result.requests
+    }
+    await file.append(clusterLog, JSON.stringify(output) + '\n')
   }
 
   logger.info(`done in ${timer.format('HH[h] mm[m] ss[s]')}`)
