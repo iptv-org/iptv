@@ -9,11 +9,15 @@ async function main() {
   streams = _.sortBy(streams, 'channel_id')
   streams = streams.map(stream => {
     return {
-      channel: stream.channel_id,
-      display_name: stream.display_name,
+      channel: stream.channel,
+      title: stream.title,
       url: stream.url,
-      http_referrer: stream.http['referrer'],
-      user_agent: stream.http['user-agent']
+      width: stream.width,
+      height: stream.height,
+      bitrate: stream.bitrate,
+      is_online: stream.is_online,
+      http_referrer: stream.http_referrer,
+      user_agent: stream.user_agent
     }
   })
 
