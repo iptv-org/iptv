@@ -1,7 +1,7 @@
 const { logger, db, file } = require('../../core')
 const _ = require('lodash')
 
-const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
+const PUBLIC_DIR = process.env.PUBLIC_DIR || '.api'
 
 async function main() {
   await db.streams.load()

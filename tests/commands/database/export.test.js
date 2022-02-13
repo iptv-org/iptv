@@ -9,13 +9,13 @@ beforeEach(() => {
   )
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output PUBLIC_DIR=tests/__data__/output/.gh-pages npm run db:export',
+    'DB_DIR=tests/__data__/output PUBLIC_DIR=tests/__data__/output/.api npm run db:export',
     { encoding: 'utf8' }
   )
 })
 
 it('can create streams.json', () => {
-  expect(content(`output/.gh-pages/streams.json`)).toBe(content(`expected/.gh-pages/streams.json`))
+  expect(content(`output/.api/streams.json`)).toBe(content(`expected/.api/streams.json`))
 })
 
 function content(filepath) {
