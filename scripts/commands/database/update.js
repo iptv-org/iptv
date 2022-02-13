@@ -75,47 +75,30 @@ async function updateStreams(items = [], results = {}, origins = {}) {
   const output = []
   for (const item of items) {
     const stream = store.create(item)
-    const result = results[item._id]
 
+    const result = results[item._id]
     if (result) {
       const { error, streams, requests } = result
-      const resolution = parseResolution(streams)
-      const origin = findOrigin(requests, origins)
-      let status = parseStatus(error)
 
-      if (status) {
-        const prevStatus = item.status
-        if (prevStatus.code === 'not_247')
-          // not_247 -> * = not_247
-          status = item.status
-        else if (prevStatus.code === 'geo_blocked')
-          // geo_blocked -> * = geo_blocked
-          status = item.status
-        else if (status.code === 'geo_blocked')
-          // * -> geo_blocked = *
-          status = item.status
-        else if (prevStatus.code === 'offline' && status.code === 'online')
-          // offline -> online = not_247
-          status = statuses['not_247']
+      const { is_online } = parseError(error)
+      stream.set('is_online', { is_online })
 
-        stream.set('status', { status })
-        stream.set('is_broken', { status: stream.get('status') })
+      if (streams.length) {
+        const { width, height, bitrate } = parseStreams(streams)
+        stream.set('width', { width })
+        stream.set('height', { height })
+        stream.set('bitrate', { bitrate })
       }
 
-      if (resolution) {
-        stream.set('resolution', { resolution })
-      }
-
-      if (origin) {
-        stream.set('url', { url: origin })
+      if (requests.length) {
+        const origin = findOrigin(requests, origins)
+        if (origin) {
+          stream.set('url', { url: origin })
+        }
       }
     }
 
-    if (stream.changed) {
-      stream.set('updated', true)
-      output.push(stream.data())
-      updated++
-    }
+    output.push(stream.data())
   }
 
   logger.info(`updated ${updated} streams`)
@@ -147,30 +130,30 @@ function findOrigin(requests = [], origins = {}) {
   return null
 }
 
-function parseResolution(streams) {
-  const resolution = streams
+function parseStreams(streams) {
+  const data = streams
     .filter(s => s.codec_type === 'video')
     .reduce(
       (acc, curr) => {
-        if (curr.height > acc.height) return { width: curr.width, height: curr.height }
+        if (curr.height > acc.height)
+          return { width: curr.width, height: curr.height, bitrate: curr.bitrate }
         return acc
       },
-      { width: 0, height: 0 }
+      { width: 0, height: 0, bitrate: 0 }
     )
 
-  if (resolution.width > 0 && resolution.height > 0) return resolution
-  return null
+  return data
 }
 
-function parseStatus(error) {
-  if (error) {
-    if (error.includes('timed out')) {
-      return statuses['timeout']
-    } else if (error.includes('403')) {
-      return statuses['geo_blocked']
-    }
-    return statuses['offline']
+function parseError(error) {
+  const output = {
+    is_online: true,
+    message: error
   }
 
-  return statuses['online']
+  if (error && !error.includes('403')) {
+    output.is_online = false
+  }
+
+  return output
 }
