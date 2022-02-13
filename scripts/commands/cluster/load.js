@@ -36,7 +36,15 @@ async function main() {
   const results = {}
   for (const [i, item] of items.entries()) {
     const message = `[${i + 1}/${total}] ${item.filepath}: ${item.url}`
-    const result = await checker.check(item, config)
+    const request = {
+      _id: item._id,
+      url: item.url,
+      http: {
+        referrer: item.http_referrer,
+        'user-agent': item.user_agent
+      }
+    }
+    const result = await checker.check(request, config)
     if (!result.error) {
       logger.info(message)
     } else {
