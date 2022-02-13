@@ -34,7 +34,6 @@ api.guides = new API(`${DATA_DIR}/guides.json`)
 api.categories = new API(`${DATA_DIR}/categories.json`)
 api.languages = new API(`${DATA_DIR}/languages.json`)
 api.regions = new API(`${DATA_DIR}/regions.json`)
-api.statuses = new API(`${DATA_DIR}/statuses.json`)
 api.blocklist = new API(`${DATA_DIR}/blocklist.json`)
 
 module.exports = api
