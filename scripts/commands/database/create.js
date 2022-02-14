@@ -9,7 +9,7 @@ const options = program
     parser.parseNumber,
     256
   )
-  .option('--input-dir <input-dir>', 'Set path to input directory', 'channels')
+  .option('--input-dir <input-dir>', 'Set path to input directory', 'streams')
   .parse(process.argv)
   .opts()
 
