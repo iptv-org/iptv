@@ -1,20 +1,62 @@
 const { db, store, parser, file, logger } = require('../../core')
 const _ = require('lodash')
 
-const items = []
-
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/cluster/load'
 
 async function main() {
-  let streams = await loadStreams()
+  const streams = await loadStreams()
   const results = await loadResults()
-  const origins = await findOrigins(results)
-  streams = await updateStreams(streams, results, origins)
+  const origins = await loadOrigins(results)
 
-  await updateDatabase(streams)
+  await updateStreams(streams, results, origins)
 }
 
 main()
+
+async function updateStreams(items = [], results = {}, origins = {}) {
+  logger.info('updating streams...')
+
+  let buffer = {}
+  let updated = 0
+  let removed = 0
+  for (const item of items) {
+    const stream = store.create(item)
+    const result = results[item._id]
+    if (result) {
+      const status = parseStatus(result.error)
+      stream.set('status', { status })
+
+      if (result.streams.length) {
+        const { width, height, bitrate } = parseMediaInfo(result.streams)
+        stream.set('width', { width })
+        stream.set('height', { height })
+        stream.set('bitrate', { bitrate })
+      }
+
+      if (result.requests.length) {
+        const origin = findOrigin(result.requests, origins)
+        if (origin) {
+          stream.set('url', { url: origin })
+        }
+      }
+    }
+
+    if (buffer[stream.get('url')]) {
+      await db.streams.remove({ _id: stream.get('_id') })
+      removed++
+    } else if (stream.changed) {
+      await db.streams.update({ _id: stream.get('_id') }, stream.data())
+      buffer[stream.get('url')] = true
+      updated++
+    }
+  }
+
+  db.streams.compact()
+
+  logger.info(`updated ${updated} streams`)
+  logger.info(`removed ${removed} duplicates`)
+  logger.info('done')
+}
 
 async function loadStreams() {
   logger.info('loading streams...')
@@ -28,7 +70,7 @@ async function loadStreams() {
 }
 
 async function loadResults() {
-  logger.info('loading results from logs...')
+  logger.info('loading check results...')
 
   const results = {}
   const files = await file.list(`${LOGS_DIR}/cluster_*.log`)
@@ -44,8 +86,8 @@ async function loadResults() {
   return results
 }
 
-async function findOrigins(results = {}) {
-  logger.info('searching for stream origins...')
+async function loadOrigins(results = {}) {
+  logger.info('loading origins...')
 
   const origins = {}
   for (const { error, requests } of Object.values(results)) {
@@ -67,57 +109,6 @@ async function findOrigins(results = {}) {
   return origins
 }
 
-async function updateStreams(items = [], results = {}, origins = {}) {
-  logger.info('updating streams...')
-
-  let updated = 0
-  const output = []
-  for (const item of items) {
-    const stream = store.create(item)
-
-    const result = results[item._id]
-    if (result) {
-      const { error, streams, requests } = result
-
-      const status = parseStatus(error)
-      stream.set('status', { status })
-
-      if (streams.length) {
-        const { width, height, bitrate } = parseStreams(streams)
-        stream.set('width', { width })
-        stream.set('height', { height })
-        stream.set('bitrate', { bitrate })
-      }
-
-      if (requests.length) {
-        const origin = findOrigin(requests, origins)
-        if (origin) {
-          stream.set('url', { url: origin })
-        }
-      }
-    }
-
-    if (stream.changed) updated++
-
-    output.push(stream.data())
-  }
-
-  logger.info(`updated ${updated} streams`)
-
-  return output
-}
-
-async function updateDatabase(streams = []) {
-  logger.info('saving to database...')
-
-  for (const stream of streams) {
-    await db.streams.update({ _id: stream._id }, stream)
-  }
-  db.streams.compact()
-
-  logger.info('done')
-}
-
 function findOrigin(requests = [], origins = {}) {
   if (origins && Array.isArray(requests)) {
     requests = requests.map(r => r.url.replace(/(^\w+:|^)/, ''))
@@ -131,7 +122,7 @@ function findOrigin(requests = [], origins = {}) {
   return null
 }
 
-function parseStreams(streams) {
+function parseMediaInfo(streams) {
   streams = streams.filter(s => s.codec_type === 'video')
   streams = _.orderBy(
     streams,
