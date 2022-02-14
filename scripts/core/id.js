@@ -1,23 +1,19 @@
-const file = require('./file')
-const parser = require('./parser')
-const transliteration = require('transliteration')
+const { transliterate } = require('transliteration')
 
 const id = {}
 
-id.generate = function (title, filepath) {
-  const name = parser.parseChannelName(title)
-  const code = parser.parseCountryCode(filepath)
+id.generate = function (name, code) {
+  if (!name || !code) return null
 
-  if (name && code) {
-    const slug = transliteration
-      .transliterate(name)
-      .replace(/\+/gi, 'Plus')
-      .replace(/[^a-z\d]+/gi, '')
+  name = name.replace(/ *\([^)]*\) */g, '')
+  name = name.replace(/ *\[[^)]*\] */g, '')
+  name = name.replace(/\+/gi, 'Plus')
+  name = name.replace(/[^a-z\d]+/gi, '')
+  name = name.trim()
+  name = transliterate(name)
+  code = code.toLowerCase()
 
-    return `${slug}.${code.toLowerCase()}`
-  }
-
-  return null
+  return `${name}.${code}`
 }
 
 module.exports = id
