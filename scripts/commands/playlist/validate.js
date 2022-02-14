@@ -1,37 +1,57 @@
-const { file, logger, api, parser, blocklist } = require('../../core')
+const { file, logger, api, parser, id } = require('../../core')
 const { program } = require('commander')
 const chalk = require('chalk')
+const _ = require('lodash')
 
-program.argument('<filepath>', 'Path to file to validate').parse(process.argv)
+program.argument('[filepath]', 'Path to file to validate').parse(process.argv)
 
 async function main() {
+  const files = program.args.length ? program.args : await file.list('channels/*.m3u')
+
+  logger.info(`loading blocklist...`)
   await api.channels.load()
+  await api.blocklist.load()
+
+  let blocklist = await api.blocklist.all()
+  blocklist = blocklist
+    .map(blocked => {
+      const channel = api.channels.find({ id: blocked.channel })
+      if (!channel) return null
+      return { ...blocked, name: channel.name }
+    })
+    .filter(i => i)
+  logger.info(`found ${blocklist.length} records`)
 
   let errors = []
   let warnings = []
-  for (const filepath of program.args) {
+  for (const filepath of files) {
     if (!filepath.endsWith('.m3u')) continue
 
     const basename = file.basename(filepath)
-    const [_, countryCode] = basename.match(/([a-z]{2})(|_.*)\.m3u/i) || [null, null]
+    const [__, country] = basename.match(/([a-z]{2})(|_.*)\.m3u/i) || [null, null]
 
     const fileLog = []
-    const streams = await parser.parsePlaylist(filepath)
-    for (const stream of streams) {
-      const found = blocklist.find(stream.name, countryCode.toUpperCase())
-      if (found) {
+    const items = await parser.parsePlaylist(filepath)
+    for (const item of items) {
+      if (item.tvg.id && !api.channels.find({ id: item.tvg.id })) {
         fileLog.push({
-          type: 'error',
-          line: stream.line,
-          message: `"${found.name}" is on the blocklist due to claims of copyright holders (${found.reference})`
+          type: 'warning',
+          line: item.line,
+          message: `"${item.tvg.id}" is not in the database`
         })
       }
 
-      if (stream.tvg.id && !api.channels.find({ id: stream.tvg.id })) {
+      const channel_id = id.generate(item.name, country)
+      const found = blocklist.find(
+        blocked =>
+          item.tvg.id.toLowerCase() === blocked.channel.toLowerCase() ||
+          channel_id.toLowerCase() === blocked.channel.toLowerCase()
+      )
+      if (found) {
         fileLog.push({
-          type: 'warning',
-          line: stream.line,
-          message: `"${stream.tvg.id}" is not in the database`
+          type: 'error',
+          line: item.line,
+          message: `"${found.name}" is on the blocklist due to claims of copyright holders (${found.ref})`
         })
       }
     }
