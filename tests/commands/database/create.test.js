@@ -6,7 +6,7 @@ beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database npm run db:create -- --input-dir=tests/__data__/input/channels --max-clusters=1',
+    'DB_DIR=tests/__data__/output/database npm run db:create -- --input-dir=tests/__data__/input/streams --max-clusters=1',
     { encoding: 'utf8' }
   )
 })
