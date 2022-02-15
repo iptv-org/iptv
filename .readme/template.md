@@ -28,17 +28,6 @@ To watch IPTV, simply insert one of the links below into any player that support
 
 </details>
 
-### Playlists by country
-
-<details>
-<summary>Expand</summary>
-<br>
-
-<!-- prettier-ignore -->
-#include "./.readme/_countries.md"
-
-</details>
-
 ### Playlists by language
 
 <details>
@@ -47,6 +36,17 @@ To watch IPTV, simply insert one of the links below into any player that support
 
 <!-- prettier-ignore -->
 #include "./.readme/_languages.md"
+
+</details>
+
+### Playlists by country
+
+<details>
+<summary>Expand</summary>
+<br>
+
+<!-- prettier-ignore -->
+#include "./.readme/_countries.md"
 
 </details>
 
