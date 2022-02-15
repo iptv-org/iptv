@@ -63,17 +63,19 @@ To watch IPTV, simply insert one of the links below into any player that support
 
 ## EPG
 
-Playlists already have a built-in list of EPG, so players that support the `x-tvg-url` tag should load it automatically. If not, you can find a list of available programs here:
+The playlists already contain links to all guides, so players with support the `x-tvg-url` tag should load it automatically. Otherwise, you can choose one of the guides featured in the [iptv-org/epg](https://github.com/iptv-org/epg) repository.
 
-https://github.com/iptv-org/epg
+## Database
 
-## Resources
-
-You can find links to various IPTV related resources in this repository [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv).
+If you find an error in the description of the channel, please create an issue in the [iptv-org/database](https://github.com/iptv-org/database) repository.
 
 ## API
 
 The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
+
+## Resources
+
+Links to other useful IPTV-related resources can be found in the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
 
 ## Contribution
 
@@ -82,3 +84,7 @@ Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sendin
 ## Legal
 
 No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, which to the best of our knowledge have been intentionally made publicly by the copyright holders. If any links in these playlists infringe on your rights as a copyright holder, they may be removed by sending a pull request or opening an issue. However, note that we have **no control** over the destination of the link, and just removing the link from the playlist will not remove its contents from the web. Note that linking does not directly infringe copyright because no copy is made on the site providing the link, and thus this is **not** a valid reason to send a DMCA notice to GitHub. To remove this content from the web, you should contact the web host that's actually hosting the content (**not** GitHub, nor the maintainers of this repository).
+
+## License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](LICENSE)
