@@ -1,7 +1,7 @@
 {
   "name": "iptv",
   "scripts": {
-    "act:auto-update": "act workflow_dispatch -W .github/workflows/auto-update.yml",
+    "act:auto-update": "act workflow_dispatch -W .github/workflows/auto-update.yml --artifact-server-path=.artifacts",
     "act:check": "act pull_request -W .github/workflows/check.yml",
     "db:create": "node scripts/commands/database/create.js",
     "db:matrix": "node scripts/commands/database/matrix.js",
