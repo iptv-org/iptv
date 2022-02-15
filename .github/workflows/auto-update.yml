@@ -43,9 +43,9 @@ jobs:
     continue-on-error: true
     strategy:
       fail-fast: false
-      # matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
-      matrix:
-        cluster_id: [1]
+      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      # matrix:
+      #   cluster_id: [1]
     steps:
       - uses: actions/checkout@v2
       - uses: FedericoCarboni/setup-ffmpeg@v1
@@ -57,7 +57,6 @@ jobs:
         with:
           name: database
           path: scripts/database
-      - run: ls scripts/database
       - run: npm install
       - run: npm run cluster:load -- --cluster-id=${{ matrix.cluster_id }}
       - uses: actions/upload-artifact@v2
@@ -139,7 +138,7 @@ jobs:
           git commit -m "[Bot] Update README.md"
           git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
       - uses: repo-sync/pull-request@v2
-        if: ${{ !env.ACT }}
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
         with:
           github_token: ${{ steps.create-app-token.outputs.token }}
