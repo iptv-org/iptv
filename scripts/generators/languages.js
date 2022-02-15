@@ -8,6 +8,7 @@ module.exports = async function (streams = []) {
 		languages = languages.concat(stream.languages)
 	})
 	languages = _.uniqBy(languages, 'code')
+	languages = _.sortBy(languages, 'name')
 
 	const output = []
 	for (const language of languages) {
