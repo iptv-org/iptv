@@ -67,45 +67,4 @@ file.basename = function (filepath) {
   return path.basename(filepath)
 }
 
-// file.saveAsM3U = async function (filepath, items, options = {}) {
-//   const playlist = createPlaylist(filepath)
-
-//   const header = {}
-//   if (options.public) {
-//     let guides = items.map(item => item.guides)
-//     guides = _.uniq(_.flatten(guides)).sort().join(',')
-
-//     header['x-tvg-url'] = guides
-//   }
-//   playlist.setHeader(header)
-
-//   for (const item of items) {
-//     const stream = store.create(item)
-
-//     let attrs
-//     if (options.public) {
-//       attrs = {
-//         'tvg-id': stream.get('tvg_id'),
-//         'tvg-country': stream.get('tvg_country'),
-//         'tvg-language': stream.get('tvg_language'),
-//         'tvg-logo': stream.get('tvg_logo'),
-//         'user-agent': stream.get('http.user-agent') || undefined,
-//         'group-title': stream.get('group_title')
-//       }
-//     } else {
-//       attrs = {
-//         'tvg-id': stream.get('tvg_id'),
-//         'user-agent': stream.get('http.user-agent') || undefined
-//       }
-//     }
-
-//     playlist.add(stream.get('url'), stream.get('display_name'), attrs, {
-//       'http-referrer': stream.get('http.referrer') || undefined,
-//       'http-user-agent': stream.get('http.user-agent') || undefined
-//     })
-//   }
-
-//   return file.write(filepath, playlist.toString())
-// }
-
 module.exports = file
