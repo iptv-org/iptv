@@ -11,15 +11,15 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ### Request a Channel
 
-To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=------channel-request.md&title=Add%3A+xxx) and complete all details requested. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately). Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do.
+To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=channel+request&template=------channel-request.yml&title=Add%3A+) and complete all details requested. Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately)
 
 ### Report a Broken Stream
 
-To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=----broken-stream.md&title=Fix%3A+xxx) with a description of the channel (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately).
+To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=-----broken-stream.yml&title=Replace%3A+) with a description of the channel. (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately)
 
 ### Request Channel Removal
 
-Publish your DMCA notice somewhere and send us a link to it through this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=--remove-channel.md&title=Remove%3A+xxx).
+Publish your DMCA notice somewhere and send us a link to it through this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=DMCA&template=--remove-channel.yml&title=Remove%3A+).
 
 ## Pull Request Guidelines
 
@@ -29,12 +29,13 @@ If you would like to replace a broken stream or add a new one, please do the fol
 
 - make sure that the link you want to add works by using a program like [VLC media player](https://www.videolan.org/vlc/index.html)
 - check if the channel is working outside your country by using a VPN or use a service like [streamtest.in](https://streamtest.in/)
-- if the broadcast is not available outside of a certain country, add the label `[Geo-blocked]` to the end of the channel name
 - find out from which country the channel is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/). If you are unable to determine which country the channel belongs to, add the channel onto the `channels/unsorted.m3u` playlist
 - find the corresponding [ISO_3166-2 code](https://en.wikipedia.org/wiki/ISO_3166-2) for the country
 - open the `/channels` folder and find the file that has the same code in its name and open it
 - if broken, find the broken link in this file and replace it with working one
 - if new, at the very end of this file add a link to the channel with a description
+- if the broadcast is not available outside of a certain country, add the label `[Geo-blocked]` to the end of the channel name and list these countries in the `tvg-country` attribute
+- if the broadcast is not available 24 hours a day, add the label `[Not 24/7]`
 - commit all changes and send a pull request
 
 ### Add a Category to a Channel
@@ -77,7 +78,7 @@ If a channel is broadcasted in several countries at once, you can specify them a
 http://example.com/cnn.m3u8
 ```
 
-If a channel is broadcast for an entire region, you can use one of the [supported region code](https://github.com/iptv-org/iptv/blob/master/.readme/supported-region-codes.md) to avoid listing all countries. In this case the channel will be added to the playlists of all countries from that region.
+If a channel is broadcast for an entire region, you can use one of the [supported region code](https://github.com/iptv-org/iptv/blob/master/.readme/supported-regions.md) to avoid listing all countries. In this case the channel will be added to the playlists of all countries from that region.
 
 In case the channel is broadcast worldwide you can use the code `INT`:
 
@@ -117,31 +118,31 @@ For a channel to be approved, its description must follow this template:
 STREAM_URL
 ```
 
-| Attribute           | Description                                                                                                                                                                                                                                                                                                                                                                                   |
-| ------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `EPG_ID`            | Channel ID that is used to load EPG. Must match `id` from the EPG file. (optional)                                                                                                                                                                                                                                                                                                            |
-| `COUNTRY`           | The code of the country in which the channel is broadcast. The code of the country must conform to the standard [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2). If the channel is broadcast in several countries you can list them separated by a semicolon. You can also use one of these [region codes](#supported-region-codes). (optional)                                        |
-| `LANGUAGE`          | Channel language. The name of the language must conform to the standard [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500). If the channel is broadcast in several languages you can list them separated by a semicolon. (optional) |
-| `LOGO_URL`          | The logo of the channel that will be displayed if the player supports it. Supports files in png, jpeg and gif format. (optional)                                                                                                                                                                                                                                                              |
-| `CATEGORY`          | The category to which the channel belongs. The list of currently supported categories can be found [here](https://github.com/iptv-org/iptv#playlists-by-category). (optional)                                                                                                                                                                                                                 |
-| `FULL_NAME`         | Full name of the channel. It is recommended to use the name listed on [lyngsat](https://www.lyngsat.com/search.html) or [wikipedia](https://www.wikipedia.org/) if possible. May contain any characters except round and square brackets.                                                                                                                                                     |
-| `STREAM_TIME_SHIFT` | Must be specified if the channel is broadcast with a shift in time relative to the main stream. Should only contain a number and a sign. (optional)                                                                                                                                                                                                                                           |
-| `ALTERNATIVE_NAME`  | Can be used to specify a short name or name in another language. May contain any characters except round and square brackets. (optional)                                                                                                                                                                                                                                                      |
-| `STREAM_RESOLUTION` | The maximum height of the frame with a "p" at the end. In case of VLC Player this information can be found in `Window > Media Information... > Codec Details`. (optional)                                                                                                                                                                                                                     |
-| `STREAM_STATUS`     | Specified if the broadcast for some reason is interrupted or does not work in a particular application. May contain any characters except round and square brackets. (optional)                                                                                                                                                                                                               |
-| `STREAM_URL`        | Channel broadcast URL.                                                                                                                                                                                                                                                                                                                                                                        |
+| Attribute           | Description                                                                                                                                                                                                                                                                                                                                                                                              |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `EPG_ID`            | Channel ID that is used to load EPG. The same ID is used in [iptv-org/epg](https://iptv-org.github.io/epg/index.html) to search for the corresponding program. (optional)                                                                                                                                                                                                                                |
+| `COUNTRY`           | The code of the country in which the channel is broadcast. The code of the country must conform to the standard [ISO_3166-2](https://en.wikipedia.org/wiki/ISO_3166-2). If the channel is broadcast in several countries you can list them separated by a semicolon. You can also use one of these [region codes](https://github.com/iptv-org/iptv/blob/master/.readme/supported-regions.md). (optional) |
+| `LANGUAGE`          | Channel language. The name of the language must conform to the standard [ISO 639-3](https://iso639-3.sil.org/code_tables/639/data?title=&field_iso639_cd_st_mmbrshp_639_1_tid=94671&name_3=&field_iso639_element_scope_tid=All&field_iso639_language_type_tid=51&items_per_page=500). If the channel is broadcast in several languages you can list them separated by a semicolon. (optional)            |
+| `LOGO_URL`          | The logo of the channel that will be displayed if the player supports it. Supports files in png, jpeg and gif format. (optional)                                                                                                                                                                                                                                                                         |
+| `CATEGORY`          | The category to which the channel belongs. The list of currently supported categories can be found [here](https://github.com/iptv-org/iptv/blob/master/.readme/supported-categories.md). (optional)                                                                                                                                                                                                      |
+| `FULL_NAME`         | Full name of the channel. It is recommended to use the name listed on [lyngsat](https://www.lyngsat.com/search.html) or [wikipedia](https://www.wikipedia.org/) if possible. May contain any characters except round and square brackets.                                                                                                                                                                |
+| `STREAM_TIME_SHIFT` | Must be specified if the channel is broadcast with a shift in time relative to the main stream. Should only contain a number and a sign. (optional)                                                                                                                                                                                                                                                      |
+| `ALTERNATIVE_NAME`  | Can be used to specify a short name or name in another language. May contain any characters except round and square brackets. (optional)                                                                                                                                                                                                                                                                 |
+| `STREAM_RESOLUTION` | The maximum height of the frame with a "p" at the end. In case of VLC Player this information can be found in `Window > Media Information... > Codec Details`. (optional)                                                                                                                                                                                                                                |
+| `STREAM_STATUS`     | Specified if the broadcast for some reason is interrupted or does not work in a particular application. The list of currently supported statuses can be found [here](https://github.com/iptv-org/iptv/blob/master/.readme/supported-statuses.md). (optional)                                                                                                                                             |
+| `STREAM_URL`        | Channel broadcast URL.                                                                                                                                                                                                                                                                                                                                                                                   |
 
 Example:
 
 ```xml
-#EXTINF:-1 tvg-id="example.ua" tvg-country="UA" tvg-language="Ukrainian;Russian" tvg-logo="https://i.imgur.com/bu12f89.png" group-title="Kids",Example TV +3 (Пример ТВ) (720p) [not 24/7]
+#EXTINF:-1 tvg-id="ExampleTVPlus3.ua" tvg-country="UA" tvg-language="Ukrainian;Russian" tvg-logo="https://i.imgur.com/bu12f89.png" group-title="Kids",Example TV +3 (Пример ТВ) (720p) [not 24/7]
 https://example.com/playlist.m3u8
 ```
 
 Also, if necessary, you can specify custom HTTP User-Agent or Referrer via the `#EXTVLCOPT` tag:
 
 ```xml
-#EXTINF:-1 tvg-id="exampletv.us" tvg-country="US" tvg-language="English" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
+#EXTINF:-1 tvg-id="ExampleTV.us" tvg-country="US" tvg-language="English" tvg-logo="http://example.com/channel-logo.png" group-title="News",Example TV
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 http://example.com/stream.m3u8
@@ -152,29 +153,22 @@ http://example.com/stream.m3u8
 - `.github/`
   - `ISSUE_TEMPLATE/`: issue templates for this repository.
   - `workflows/`
-    - `auto-update.yml`: GitHub workflow that automatically updates all playlists every day.
-    - `check.yml`: GitHub workflow that automatically checks every pull request for syntax errors.
-    - `cleanup.yml`: GitHub workflow that automatically removes broken links every week.
+    - `auto-update.yml`: GitHub workflow that launches daily playlist updates (at 0:00 and 12:00 UTC).
+    - `check.yml`: GitHub workflow that checks every pull request for syntax errors.
+    - `cleanup.yml`: GitHub workflow that removes broken links by request.
+    - `validate.yml`: GitHub workflow that compares channel names with the blocklist each time a pull request is made.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
 - `.readme/`
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
   - `preview.png`: image displayed in the `README.md`.
   - `supported-categories.md`: list of supported categories.
-  - `supported-region-codes.md`: list of supported region codes.
+  - `supported-statuses.md`: list of supported statuses.
+  - `supported-regions.md`: list of supported regions.
   - `template.md`: template for `README.md`.
 - `channels/`: contains all channels broken down by the country from which they are broadcast.
   - ...
   - `unsorted.m3u`: playlist with channels not yet sorted.
-- `scripts/`
-  - `data/`: data used in scripts.
-  - `helpers/`: helper scripts.
-  - `create-matrix.js`: used within GitHub workflow to create matrix of files to process.
-  - `filter.js`: used within GitHub workflow to remove blacklisted channels from playlists.
-  - `format.js`: used within GitHub workflow to format channel descriptions.
-  - `generate.js`: used within GitHub workflow to generate all additional playlists.
-  - `remove-broken-links.js`: used in GitHub workflow to remove broken links from the playlist.
-  - `remove-duplicates.js`: used in GitHub workflow to remove duplicates from the playlist.
-  - `sort.js`: used within GitHub workflow to sort channels by name.
-  - `update-readme.js`: used within GitHub workflow to update the `README.md` file.
+- `scripts/`: contains all the scripts used in GitHub workflows.
+- `tests/`: contains tests to check the scripts in the folder above.
 - `CONTRIBUTING.md`: file you are currently reading.
 - `README.md`: project description generated from the contents of the `.readme/` folder.

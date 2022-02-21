@@ -5,17 +5,15 @@ http://hls.protv.md/acasatv/acasatv.m3u8
 http://77.89.199.174:8000/play/1024/index.m3u8
 #EXTINF:-1 tvg-id="CanalRegional.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="https://i.imgur.com/ZiwyCkA.png" group-title="",Canal Regional (576p) [Not 24/7]
 https://canalregional.md/tv/live/canalregional.m3u8
-#EXTINF:-1 tvg-id="Drochia.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="" group-title="",Drochia (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Drochia.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="" group-title="",Drochia (1080p) [Not 24/7]
 https://hls.drochia.tv/tv/web.m3u8
-#EXTINF:-1 tvg-id="ElitaTV.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="https://i.imgur.com/Z27Eyqv.jpg" group-title="",Elita TV (576p)
+#EXTINF:-1 tvg-id="ElitaTV.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="https://i.imgur.com/Z27Eyqv.jpg" group-title="",Elita TV (576p) [Timeout]
 http://46.55.111.242:8080/Rezina.m3u8
 #EXTINF:-1 tvg-id="Moldova1.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="" group-title="",Moldova1 (1080p) [Offline]
-rtsp://212.0.209.209:1935/live/_definst_/mp4:MoldovaUnu1
-#EXTINF:-1 tvg-id="Moldova1.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="" group-title="",Moldova1 (1080p) [Offline]
-rtsp://live.trm.md:1935/live/M1Mlive
-#EXTINF:-1 tvg-id="Moldova2.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="" group-title="",Moldova2 (1080p) [Not 24/7]
-rtmp://212.0.209.209:1935/live/_definst_mp4:MoldovaDoi2
-#EXTINF:-1 tvg-id="noroc-tv-md" tvg-country="MD" tvg-language="Romanian" tvg-logo="https://i.imgur.com/39qL2Ht.png" group-title="",Noroc TV (576p)
+http://212.0.209.209:1935/live/M1Mlive/playlist.m3u8
+#EXTINF:-1 tvg-id="Moldova2.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="" group-title="",Moldova2 (1080p) [Offline]
+http://212.0.209.209:1935/live/M2Mlive/playlist.m3u8
+#EXTINF:-1 tvg-id="NorocTV.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="https://i.imgur.com/39qL2Ht.png" group-title="",Noroc TV (576p)
 http://live.noroc.tv/hls/noroctv_chisinau.m3u8
 #EXTINF:-1 tvg-id="PublikaTV.md" tvg-country="MD" tvg-language="Romanian" tvg-logo="https://i.imgur.com/Hquii9k.jpg" group-title="News",Publika TV (720p)
 http://livebeta.publika.md/LIVE/P/6810.m3u8

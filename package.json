@@ -1,25 +1,31 @@
 {
   "name": "iptv",
   "scripts": {
-    "lint": "npx m3u-linter -c m3u-linter.json"
+    "validate": "node scripts/commands/validate.js",
+    "lint": "npx m3u-linter -c m3u-linter.json",
+    "test": "jest --runInBand"
   },
-  "pre-push": [
-    "lint"
-  ],
+  "jest": {
+    "testRegex": "tests/(.*?/)?.*test.js$"
+  },
   "author": "Arhey",
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.4",
+    "chunk": "^0.0.3",
     "commander": "^7.0.0",
-    "iptv-checker": "^0.21.0",
-    "iptv-playlist-parser": "^0.9.0",
-    "m3u-linter": "^0.2.2",
+    "crypto": "^1.0.1",
+    "dayjs": "^1.10.7",
+    "iptv-checker": "^0.22.0",
+    "iptv-playlist-parser": "^0.10.2",
+    "jest": "^27.4.3",
+    "lodash": "^4.17.21",
+    "m3u-linter": "^0.3.0",
     "markdown-include": "^0.4.3",
-    "natural-orderby": "^2.0.3",
+    "mz": "^2.7.0",
+    "nedb-promises": "^5.0.2",
     "normalize-url": "^6.1.0",
-    "pre-push": "^0.1.1",
-    "progress": "^2.0.3",
-    "transliteration": "^2.2.0"
+    "transliteration": "^2.2.0",
+    "winston": "^3.3.3"
   }
 }

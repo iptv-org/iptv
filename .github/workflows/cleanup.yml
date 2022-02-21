@@ -2,65 +2,38 @@ name: cleanup
 on:
   workflow_dispatch:
 jobs:
-  create-branch:
+  cleanup:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: ${{ github.ref }}
-      - name: Create Branch
-        uses: peterjgrainger/action-create-branch@v2.0.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          branch: 'bot/cleanup'
-  remove-broken-links:
-    runs-on: ubuntu-latest
-    needs: create-branch
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: bot/cleanup
-      - name: Install Dependencies
-        run: npm install
-      - name: Remove Broken Links
-        run: node scripts/remove-broken-links.js
-      - name: Commit Changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: '[Bot] Remove broken links'
-          commit_user_name: iptv-bot
-          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit_author: 'iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>'
-          branch: bot/cleanup
-          file_pattern: channels/*
-  pull-request:
-    if: ${{ github.ref == 'refs/heads/master' }}
-    runs-on: ubuntu-latest
-    needs: remove-broken-links
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          ref: bot/cleanup
-      - name: Generate Token
-        uses: tibdex/github-app-token@v1
-        id: generate-token
+      - uses: actions/checkout@v2
+      - run: echo "::set-output name=branch_name::$(date +'bot/cleanup-%s')"
+        id: create-branch-name
+      - run: |
+          git config user.name 'iptv-bot[bot]'
+          git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
+      - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
+      - run: npm install
+      - run: node scripts/commands/create-database.js
+      - run: node scripts/commands/cleanup-database.js
+      - run: node scripts/commands/update-playlists.js
+      - run: |
+          git add channels/*
+          git commit -m "[Bot] Update playlists"
+      - uses: tibdex/github-app-token@v1
+        if: ${{ !env.ACT }}
+        id: create-app-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - name: Create Pull Request
-        id: pr
-        uses: repo-sync/pull-request@v2
+      - uses: repo-sync/pull-request@v2
+        if: ${{ github.ref == 'refs/heads/master' }}
+        id: pull-request
         with:
-          source_branch: 'bot/cleanup'
+          github_token: ${{ steps.create-app-token.outputs.token }}
+          source_branch: ${{ steps.create-branch-name.outputs.branch_name }}
           destination_branch: 'master'
-          pr_title: '[Bot] Cleaning playlists'
+          pr_title: '[Bot] Remove broken links'
           pr_body: |
             This pull request is created by [cleanup][1] workflow.
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-          pr_draft: true
-          github_token: ${{ steps.generate-token.outputs.token }}
