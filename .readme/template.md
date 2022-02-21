@@ -2,23 +2,20 @@
 
 [![auto-update](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml/badge.svg)](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml)
 
-Collection of publicly available IPTV channels from all over the world.
+Collection of publicly available IPTV (Internet Protocol television) channels from all over the world.
 
 ## Usage
 
-To watch IPTV you just need to paste this link `https://iptv-org.github.io/iptv/index.m3u` to any player which supports M3U-playlists.
+![VLC Network Panel](https://github.com/iptv-org/iptv/raw/master/.readme/preview.png)
 
-![VLC Network Panel](.readme/preview.png)
+To watch IPTV, simply insert one of the links below into any player that supports M3U playlists:
 
-Also you can instead use one of these playlists:
-
-- `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
-- `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
-- `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
-- `https://iptv-org.github.io/iptv/index.region.m3u` (grouped by region)
+- `https://iptv-org.github.io/iptv/index.m3u`
 - `https://iptv-org.github.io/iptv/index.nsfw.m3u` (includes adult channels)
-
-Or select one of the playlists from the list below.
+- `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
+- `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
+- `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
+- `https://iptv-org.github.io/iptv/index.region.m3u` (grouped by region)
 
 ### Playlists by category
 
@@ -42,17 +39,6 @@ Or select one of the playlists from the list below.
 
 </details>
 
-### Playlists by region
-
-<details>
-<summary>Expand</summary>
-<br>
-
-<!-- prettier-ignore -->
-#include "./.readme/_regions.md"
-
-</details>
-
 ### Playlists by country
 
 <details>
@@ -64,71 +50,32 @@ Or select one of the playlists from the list below.
 
 </details>
 
-## For Developers
-
-In addition to the above methods, you can also get a list of all available channels in JSON format.
-
-To do this, you just have to make a GET request to:
-
-```
-https://iptv-org.github.io/iptv/channels.json
-```
-
-If successful, you should get the following response:
+### Playlists by region
 
 <details>
 <summary>Expand</summary>
 <br>
-  
-```
-[
-  ...
-  {
-    "name": "CNN",
-    "logo": "https://i.imgur.com/ilZJT5s.png",
-    "url": "http://ott-cdn.ucom.am/s27/index.m3u8",
-    "categories": [
-      {
-        "name": "News",
-        "slug": "news"
-      }
-    ],
-    "countries": [
-      {
-        "code": "us",
-        "name": "United States"
-      },
-      {
-        "code": "ca",
-        "name": "Canada"
-      }
-    ],
-    "languages": [
-      {
-        "code": "eng",
-        "name": "English"
-      }
-    ],
-    "tvg": {
-      "id": "cnn.us",
-      "name": "CNN",
-      "url": "http://epg.streamstv.me/epg/guide-usa.xml.gz"
-    }
-  },
-  ...
-]
-```
+
+<!-- prettier-ignore -->
+#include "./.readme/_regions.md"
+
 </details>
 
 ## EPG
 
-Playlists already have a built-in list of EPG, so players that support the `url-tvg` tag should load it automatically. If not, you can find a list of available programs here:
+The playlists already contain links to all guides, so players with support the `x-tvg-url` tag should load it automatically. Otherwise, you can choose one of the guides featured in the [iptv-org/epg](https://github.com/iptv-org/epg) repository.
 
-https://github.com/iptv-org/epg
+## Database
+
+If you find an error in the description of the channel, please create an issue in the [iptv-org/database](https://github.com/iptv-org/database) repository.
+
+## API
+
+The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
 
 ## Resources
 
-You can find links to various IPTV related resources in this repository [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv).
+Links to other useful IPTV-related resources can be found in the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
 
 ## Contribution
 
@@ -137,3 +84,7 @@ Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sendin
 ## Legal
 
 No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, which to the best of our knowledge have been intentionally made publicly by the copyright holders. If any links in these playlists infringe on your rights as a copyright holder, they may be removed by sending a pull request or opening an issue. However, note that we have **no control** over the destination of the link, and just removing the link from the playlist will not remove its contents from the web. Note that linking does not directly infringe copyright because no copy is made on the site providing the link, and thus this is **not** a valid reason to send a DMCA notice to GitHub. To remove this content from the web, you should contact the web host that's actually hosting the content (**not** GitHub, nor the maintainers of this repository).
+
+## License
+
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](LICENSE)

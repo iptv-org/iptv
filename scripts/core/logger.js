@@ -1,42 +1,13 @@
-const { createLogger, format, transports, addColors } = require('winston')
-const { combine, timestamp, printf } = format
+const { Signale } = require('signale')
 
-const consoleFormat = ({ level, message, timestamp }) => {
-  if (typeof message === 'object') return JSON.stringify(message)
-  return message
-}
+const options = {}
 
-const config = {
-  levels: {
-    error: 0,
-    warn: 1,
-    info: 2,
-    failed: 3,
-    success: 4,
-    http: 5,
-    verbose: 6,
-    debug: 7,
-    silly: 8
-  },
-  colors: {
-    info: 'white',
-    success: 'green',
-    failed: 'red'
-  }
-}
+const logger = new Signale(options)
 
-const t = [
-  new transports.Console({
-    format: format.combine(format.printf(consoleFormat))
-  })
-]
-
-const logger = createLogger({
-  transports: t,
-  levels: config.levels,
-  level: 'verbose'
+logger.config({
+  displayLabel: false,
+  displayScope: false,
+  displayBadge: false
 })
-
-addColors(config.colors)
 
 module.exports = logger
