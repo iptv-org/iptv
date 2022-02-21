@@ -1,12 +1,13 @@
 module.exports = function () {
   if (this.group_title) return this.group_title
 
-  if (Array.isArray(this.categories)) {
+  if (this.categories.length) {
     return this.categories
-      .map(i => i.name)
+      .filter(c => c)
+      .map(category => category.name)
       .sort()
       .join(';')
   }
 
-  return ''
+  return 'Undefined'
 }
