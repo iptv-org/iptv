@@ -68,6 +68,8 @@ jobs:
     needs: load
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%s')"
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
@@ -136,6 +138,7 @@ jobs:
           git commit -m "[Bot] Update streams"
           git add README.md
           git commit -m "[Bot] Update README.md"
+          git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
