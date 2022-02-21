@@ -1,49 +1,88 @@
-const file = require('./file')
+const store = require('./store')
+const _ = require('lodash')
 
 const playlist = {}
 
-playlist.create = async function (filepath) {
-  playlist.filepath = filepath
-  const dir = file.dirname(filepath)
-  file.createDir(dir)
-  await file.create(filepath, '')
+class Playlist {
+  constructor(items = [], options = {}) {
+    this.header = {}
+    if (options.public) {
+      let guides = items
+        .map(item => (item.guides.length ? item.guides[0].url : null))
+        .filter(i => i)
+      this.header['x-tvg-url'] = _.uniq(guides).sort().join(',')
+    }
 
-  return playlist
-}
+    this.links = []
+    for (const item of items) {
+      const stream = store.create(item)
 
-playlist.header = async function (attrs) {
-  let header = `#EXTM3U`
-  for (const name in attrs) {
-    const value = attrs[name]
-    header += ` ${name}="${value}"`
-  }
-  header += `\n`
+      let attrs
+      if (options.public) {
+        attrs = {
+          'tvg-id': stream.get('tvg_id'),
+          'tvg-country': stream.get('tvg_country'),
+          'tvg-language': stream.get('tvg_language'),
+          'tvg-logo': stream.get('tvg_logo'),
+          'user-agent': stream.get('http.user-agent') || undefined,
+          'group-title': stream.get('group_title')
+        }
+      } else {
+        attrs = {
+          'tvg-id': stream.get('tvg_id'),
+          status: stream.get('status'),
+          'user-agent': stream.get('http.user-agent') || undefined
+        }
+      }
 
-  await file.append(playlist.filepath, header)
+      const vlcOpts = {
+        'http-referrer': stream.get('http.referrer') || undefined,
+        'http-user-agent': stream.get('http.user-agent') || undefined
+      }
 
-  return playlist
-}
-
-playlist.link = async function (url, title, attrs, vlcOpts) {
-  let link = `#EXTINF:-1`
-  for (const name in attrs) {
-    const value = attrs[name]
-    if (value !== undefined) {
-      link += ` ${name}="${value}"`
+      this.links.push({
+        url: stream.get('url'),
+        title: stream.get('title'),
+        attrs,
+        vlcOpts
+      })
     }
   }
-  link += `,${title}\n`
-  for (const name in vlcOpts) {
-    const value = vlcOpts[name]
-    if (value !== undefined) {
-      link += `#EXTVLCOPT:${name}=${value}\n`
+
+  toString() {
+    let output = `#EXTM3U`
+    for (const attr in this.header) {
+      const value = this.header[attr]
+      output += ` ${attr}="${value}"`
     }
+    output += `\n`
+
+    for (const link of this.links) {
+      output += `#EXTINF:-1`
+      for (const name in link.attrs) {
+        const value = link.attrs[name]
+        if (value !== undefined) {
+          output += ` ${name}="${value}"`
+        }
+      }
+      output += `,${link.title}\n`
+
+      for (const name in link.vlcOpts) {
+        const value = link.vlcOpts[name]
+        if (value !== undefined) {
+          output += `#EXTVLCOPT:${name}=${value}\n`
+        }
+      }
+
+      output += `${link.url}\n`
+    }
+
+    return output
   }
-  link += `${url}\n`
+}
 
-  await file.append(playlist.filepath, link)
-
-  return playlist
+playlist.create = function (items, options) {
+  return new Playlist(items, options)
 }
 
 module.exports = playlist

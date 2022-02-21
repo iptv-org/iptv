@@ -1,10 +1,15 @@
 name: ❌ Removal Request
-description: Request to remove a link
+description: Request to remove content
 title: 'Remove: '
 labels: ['removal request']
 assignees:
   - freearhey
 body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is only for requests from the copyright owner or an agent authorized to act on behalf of the copyright owner. If you're experiencing problems viewing a channel please fill a [Broken Stream](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&template=-----broken-stream.yml&title=Fix%3A+) form instead.
+
   - type: input
     attributes:
       label: Your full legal name
