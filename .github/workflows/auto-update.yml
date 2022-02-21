@@ -136,7 +136,6 @@ jobs:
           git commit -m "[Bot] Update streams"
           git add README.md
           git commit -m "[Bot] Update README.md"
-          git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
