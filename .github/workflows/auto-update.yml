@@ -109,6 +109,16 @@ jobs:
         with:
           name: logs
           path: scripts/logs
+      - run: npm run readme:update
+      - name: Commit Changes
+        if: ${{ !env.ACT }}
+        run: |
+          git add streams/*
+          git commit -m "[Bot] Update streams"
+          git add README.md
+          git commit -m "[Bot] Update README.md"
+          git status
+          git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
       - uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
@@ -118,6 +128,7 @@ jobs:
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Generate playlists'
+          clean: false
       - run: npm run db:export
       - uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
@@ -130,15 +141,6 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to iptv-org/api'
           clean: false
-      - run: npm run readme:update
-      - name: Commit Changes
-        if: ${{ !env.ACT }}
-        run: |
-          git add streams/*
-          git commit -m "[Bot] Update streams"
-          git add README.md
-          git commit -m "[Bot] Update README.md"
-          git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
