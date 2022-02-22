@@ -143,7 +143,7 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to GitHub Pages'
           clean: false
-      - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
+      - run: git checkout ${{ steps.create-branch-name.outputs.branch_name }}
       - name: Deploy to iptv-org/api
         uses: JamesIves/github-pages-deploy-action@4.2.0
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
