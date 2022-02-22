@@ -24,20 +24,20 @@ class Playlist {
           'tvg-country': stream.get('tvg_country'),
           'tvg-language': stream.get('tvg_language'),
           'tvg-logo': stream.get('tvg_logo'),
-          'user-agent': stream.get('http.user-agent') || undefined,
-          'group-title': stream.get('group_title')
+          'group-title': stream.get('group_title'),
+          'user-agent': stream.get('user_agent') || undefined
         }
       } else {
         attrs = {
           'tvg-id': stream.get('tvg_id'),
           status: stream.get('status'),
-          'user-agent': stream.get('http.user-agent') || undefined
+          'user-agent': stream.get('user_agent') || undefined
         }
       }
 
       const vlcOpts = {
-        'http-referrer': stream.get('http.referrer') || undefined,
-        'http-user-agent': stream.get('http.user-agent') || undefined
+        'http-referrer': stream.get('http_referrer') || undefined,
+        'http-user-agent': stream.get('user_agent') || undefined
       }
 
       this.links.push({
