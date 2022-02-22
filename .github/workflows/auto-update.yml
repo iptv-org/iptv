@@ -13,14 +13,28 @@ jobs:
         with:
           node-version: '14'
           cache: 'npm'
+      - name: Download data from API
+        run: |
+          mkdir -p scripts/data
+          curl -L -o scripts/data/blocklist.json https://iptv-org.github.io/api/blocklist.json
+          curl -L -o scripts/data/categories.json https://iptv-org.github.io/api/categories.json
+          curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
+          curl -L -o scripts/data/countries.json https://iptv-org.github.io/api/countries.json
+          curl -L -o scripts/data/guides.json https://iptv-org.github.io/api/guides.json
+          curl -L -o scripts/data/languages.json https://iptv-org.github.io/api/languages.json
+          curl -L -o scripts/data/regions.json https://iptv-org.github.io/api/regions.json
+      - uses: actions/upload-artifact@v2
+        with:
+          name: data
+          path: scripts/data
       - run: npm install
-      - run: node scripts/commands/create-database.js
-      - run: node scripts/commands/create-matrix.js
-        id: create-matrix
+      - run: npm run db:create
       - uses: actions/upload-artifact@v2
         with:
           name: database
-          path: scripts/channels.db
+          path: scripts/database
+      - run: npm run db:matrix
+        id: create-matrix
     outputs:
       matrix: ${{ steps.create-matrix.outputs.matrix }}
   load:
@@ -30,19 +44,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      # matrix:
+      #   cluster_id: [1]
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/download-artifact@v2
-        with:
-          name: database
-          path: scripts
       - uses: FedericoCarboni/setup-ffmpeg@v1
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT }}
         with:
           node-version: '14'
+      - uses: actions/download-artifact@v2
+        with:
+          name: database
+          path: scripts/database
       - run: npm install
-      - run: node scripts/commands/check-streams.js --cluster-id=${{ matrix.cluster_id }}
+      - run: npm run cluster:load -- --cluster-id=${{ matrix.cluster_id }}
       - uses: actions/upload-artifact@v2
         with:
           name: logs
@@ -52,50 +68,60 @@ jobs:
     needs: load
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%s')"
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
       - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
       - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
-      - run: curl -L -o scripts/data/codes.json https://iptv-org.github.io/epg/codes.json
-      - uses: actions/download-artifact@v2
-        with:
-          name: database
-          path: scripts
-      - uses: actions/download-artifact@v2
-        with:
-          name: logs
-          path: scripts/logs
-      - uses: actions/setup-node@v2
-        if: ${{ !env.ACT }}
-        with:
-          node-version: '14'
-      - run: npm install
-      - run: node scripts/commands/update-database.js
-      - uses: actions/upload-artifact@v2
-        with:
-          name: database
-          path: scripts/channels.db
-      - run: node scripts/commands/update-playlists.js
-      - run: git add channels/*
-      - run: git commit -m "[Bot] Update playlists"
-      - run: node scripts/commands/generate-playlists.js
-      - uses: actions/upload-artifact@v2
-        with:
-          name: logs
-          path: scripts/logs
-      - run: node scripts/commands/update-readme.js
-      - run: git add README.md
-      - run: git commit -m "[Bot] Update README.md"
-      - run: git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: repo-sync/pull-request@v2
+      - uses: actions/setup-node@v2
         if: ${{ !env.ACT }}
+        with:
+          node-version: '14'
+      - uses: actions/download-artifact@v2
+        with:
+          name: data
+          path: scripts/data
+      - uses: actions/download-artifact@v2
+        with:
+          name: database
+          path: scripts/database
+      - uses: actions/download-artifact@v2
+        with:
+          name: logs
+          path: scripts/logs
+      - run: npm install
+      - run: npm run db:update
+      - uses: actions/upload-artifact@v2
+        with:
+          name: database
+          path: scripts/database
+      - run: npm run playlist:update
+      - run: npm run playlist:generate
+      - run: npm run db:export
+      - run: npm run readme:update
+      - uses: actions/upload-artifact@v2
+        with:
+          name: logs
+          path: scripts/logs
+      - name: Commit Changes
+        if: ${{ !env.ACT }}
+        run: |
+          git add streams/*
+          git commit -m "[Bot] Update streams"
+          git add README.md
+          git commit -m "[Bot] Update README.md"
+          git status
+          git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
+      - uses: repo-sync/pull-request@v2
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
         with:
           github_token: ${{ steps.create-app-token.outputs.token }}
@@ -106,18 +132,30 @@ jobs:
             This pull request is created by [auto-update][1] workflow.
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-      - uses: juliangruber/merge-pull-request-action@v1
-        if: ${{ github.ref == 'refs/heads/master' }}
-        with:
-          github-token: ${{ secrets.PAT }}
-          number: ${{ steps.pull-request.outputs.pr_number }}
-          method: squash
-      - uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: ${{ github.ref == 'refs/heads/master' }}
+      - uses: JamesIves/github-pages-deploy-action@4.2.0
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           branch: gh-pages
           folder: .gh-pages
           token: ${{ steps.create-app-token.outputs.token }}
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Generate playlists'
+          commit-message: '[Bot] Deploy to GitHub Pages'
+          clean: false
+      - uses: JamesIves/github-pages-deploy-action@4.2.0
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          repository-name: iptv-org/api
+          branch: gh-pages
+          folder: .api
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to iptv-org/api'
+          clean: false
+      - uses: juliangruber/merge-pull-request-action@v1
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.pull-request.outputs.pr_number }}
+          method: squash

@@ -1,61 +1,61 @@
 name: 🛠 Broken Stream
 description: Report a broken stream
-title: "Replace: "
-labels: [ "broken stream" ]
+title: 'Replace: '
+labels: ['broken stream']
 
 body:
   - type: markdown
     attributes:
       value: |
-         Please fill out the issue template as much as you can so we could efficiently process your request
-         **IMPORTANT**: An issue may contain a request for only one channel, otherwise it will be closed
-        
+        Please fill out the issue template as much as you can so we could efficiently process your request
+
   - type: input
-    id: name
     attributes:
-      label: Channel Name
-      description: Full name of the channel. Please use the exact name, as in how it appears in the playlist.
-      placeholder: 'Fox Life Russia'
+      label: Stream Title
+      description: Please use the exact title, as in how it appears in the playlist.
+      placeholder: 'BBC America East (720p) [Geo-blocked]'
     validations:
       required: true
 
   - type: dropdown
-    id: reason
     attributes:
       label: What happened to the stream?
       options:
         - It is disappeared from the playlist
         - It is stuck at a single frame/the same segment
-        - I see visual artifacts
         - It is buffering to unplayable point
+        - I see visual artifacts
+        - Other
     validations:
       required: true
-      
+
   - type: input
-    id: playlist
     attributes:
       label: Playlist
       description: What playlist was used to get the channel from?
-      placeholder: 'ex. https://iptv-org.github.io/iptv/countries/au.m3u'
+      placeholder: 'https://iptv-org.github.io/iptv/countries/au.m3u'
     validations:
       required: true
-      
+
   - type: input
-    id: link
     attributes:
       label: Broken Link
       description: Please specify the broken link from a playlist if you can
-      placeholder: 'ex. https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
-      
+      placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
+
   - type: input
-    id: alt
     attributes:
       label: Possible Replacement
-      description: If you know an alternate non-protected source or the way to fix current stream please let us know 
+      description: If you know an alternate source or the way to fix current stream please let us know
       placeholder: 'ex. https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
-      
+
   - type: input
-    id: notes
     attributes:
       label: Notes
       placeholder: 'Anything else we should know?'
+
+  - type: checkboxes
+    attributes:
+      label: Please confirm the following
+      options:
+        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#report-a-broken-stream)

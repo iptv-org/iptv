@@ -1,31 +1,46 @@
 {
   "name": "iptv",
   "scripts": {
-    "validate": "node scripts/commands/validate.js",
-    "lint": "npx m3u-linter -c m3u-linter.json",
+    "act:auto-update": "act workflow_dispatch -W .github/workflows/auto-update.yml --artifact-server-path=.artifacts",
+    "act:check": "act pull_request -W .github/workflows/check.yml",
+    "db:create": "node scripts/commands/database/create.js",
+    "db:matrix": "node scripts/commands/database/matrix.js",
+    "db:update": "node scripts/commands/database/update.js",
+    "db:export": "node scripts/commands/database/export.js",
+    "cluster:load": "node scripts/commands/cluster/load.js",
+    "playlist:validate": "node scripts/commands/playlist/validate.js",
+    "playlist:generate": "node scripts/commands/playlist/generate.js",
+    "playlist:update": "node scripts/commands/playlist/update.js",
+    "playlist:lint": "npx m3u-linter -c m3u-linter.json",
+    "readme:update": "node scripts/commands/readme/update.js",
     "test": "jest --runInBand"
   },
   "jest": {
-    "testRegex": "tests/(.*?/)?.*test.js$"
+    "testRegex": "tests/(.*?/)?.*test.js$",
+    "setupFilesAfterEnv": [
+      "@alex_neo/jest-expect-message"
+    ]
   },
   "author": "Arhey",
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "chunk": "^0.0.3",
-    "commander": "^7.0.0",
-    "crypto": "^1.0.1",
+    "@alex_neo/jest-expect-message": "^1.0.5",
+    "chalk": "^4.1.2",
+    "commander": "^8.3.0",
     "dayjs": "^1.10.7",
+    "fs-extra": "^10.0.0",
     "iptv-checker": "^0.22.0",
     "iptv-playlist-parser": "^0.10.2",
-    "jest": "^27.4.3",
+    "jest": "^27.5.1",
+    "jest-expect-message": "^1.0.2",
     "lodash": "^4.17.21",
     "m3u-linter": "^0.3.0",
     "markdown-include": "^0.4.3",
-    "mz": "^2.7.0",
+    "natural-orderby": "^2.0.3",
     "nedb-promises": "^5.0.2",
     "normalize-url": "^6.1.0",
-    "transliteration": "^2.2.0",
-    "winston": "^3.3.3"
+    "signale": "^1.4.0",
+    "transliteration": "^2.2.0"
   }
 }
