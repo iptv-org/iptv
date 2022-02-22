@@ -28,7 +28,7 @@ jobs:
           name: data
           path: scripts/data
       - run: npm install
-      - run: npm run db:create
+      - run: npm run db:create -- --max-clusters=30000
       - uses: actions/upload-artifact@v2
         with:
           name: database
