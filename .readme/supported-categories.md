@@ -17,7 +17,6 @@
 | Kids          | Programming targeted to children                                      |
 | Legislative   | Programming specific to the operation of government                   |
 | Lifestyle     | Programs related to health, fitness, leisure, fashion, decor, etc.    |
-| Local         | Channels that are targeted for a local area or region                 |
 | Movies        | Channels that only show movies                                        |
 | Music         | Programming is music or music related                                 |
 | News          | Programming is mostly news                                            |
@@ -31,4 +30,3 @@
 | Travel        | Programming is travel related                                         |
 | Weather       | Programming is focused on weather                                     |
 | XXX           | Programming is adult oriented and x-rated                             |
-| Other         | No category assigned                                                  |

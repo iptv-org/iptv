@@ -1,6 +1,9 @@
+const { create: createPlaylist } = require('./playlist')
+const store = require('./store')
 const path = require('path')
 const glob = require('glob')
-const fs = require('mz/fs')
+const fs = require('fs-extra')
+const _ = require('lodash')
 
 const file = {}
 

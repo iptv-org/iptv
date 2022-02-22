@@ -1,3 +1,3 @@
 module.exports = function () {
-  return this.id || ''
+  return this.channel || ''
 }
