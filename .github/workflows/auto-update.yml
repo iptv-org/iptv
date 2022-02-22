@@ -43,9 +43,9 @@ jobs:
     continue-on-error: true
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
-      # matrix:
-      #   cluster_id: [1]
+      # matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      matrix:
+        cluster_id: [1]
     steps:
       - uses: actions/checkout@v2
       - uses: FedericoCarboni/setup-ffmpeg@v1
@@ -119,43 +119,43 @@ jobs:
           git commit -m "[Bot] Update README.md"
           git status
           git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
-      - uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          token: ${{ steps.create-app-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Generate playlists'
-          clean: false
-      - run: npm run db:export
-      - uses: JamesIves/github-pages-deploy-action@4.1.1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          repository-name: iptv-org/api
-          branch: gh-pages
-          folder: .api
-          token: ${{ steps.create-app-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to iptv-org/api'
-          clean: false
-      - uses: repo-sync/pull-request@v2
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        id: pull-request
-        with:
-          github_token: ${{ steps.create-app-token.outputs.token }}
-          source_branch: ${{ steps.create-branch-name.outputs.branch_name }}
-          destination_branch: 'master'
-          pr_title: '[Bot] Daily update'
-          pr_body: |
-            This pull request is created by [auto-update][1] workflow.
+      # - uses: JamesIves/github-pages-deploy-action@4.1.1
+      #   if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+      #   with:
+      #     branch: gh-pages
+      #     folder: .gh-pages
+      #     token: ${{ steps.create-app-token.outputs.token }}
+      #     git-config-name: iptv-bot[bot]
+      #     git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+      #     commit-message: '[Bot] Generate playlists'
+      #     clean: false
+      # - run: npm run db:export
+      # - uses: JamesIves/github-pages-deploy-action@4.1.1
+      #   if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+      #   with:
+      #     repository-name: iptv-org/api
+      #     branch: gh-pages
+      #     folder: .api
+      #     token: ${{ steps.create-app-token.outputs.token }}
+      #     git-config-name: iptv-bot[bot]
+      #     git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+      #     commit-message: '[Bot] Deploy to iptv-org/api'
+      #     clean: false
+      # - uses: repo-sync/pull-request@v2
+      #   if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+      #   id: pull-request
+      #   with:
+      #     github_token: ${{ steps.create-app-token.outputs.token }}
+      #     source_branch: ${{ steps.create-branch-name.outputs.branch_name }}
+      #     destination_branch: 'master'
+      #     pr_title: '[Bot] Daily update'
+      #     pr_body: |
+      #       This pull request is created by [auto-update][1] workflow.
 
-            [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-      - uses: juliangruber/merge-pull-request-action@v1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          github-token: ${{ secrets.PAT }}
-          number: ${{ steps.pull-request.outputs.pr_number }}
-          method: squash
+      #       [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
+      # - uses: juliangruber/merge-pull-request-action@v1
+      #   if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+      #   with:
+      #     github-token: ${{ secrets.PAT }}
+      #     number: ${{ steps.pull-request.outputs.pr_number }}
+      #     method: squash
