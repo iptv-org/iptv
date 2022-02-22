@@ -17,7 +17,7 @@ beforeEach(() => {
 
 it('can update playlists', () => {
   const files = glob
-    .sync('tests/__data__/expected/channels/*.m3u')
+    .sync('tests/__data__/expected/streams/*.m3u')
     .map(f => f.replace('tests/__data__/expected/', ''))
 
   files.forEach(filepath => {
