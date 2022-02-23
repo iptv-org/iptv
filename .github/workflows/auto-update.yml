@@ -138,7 +138,7 @@ jobs:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pull-request.outputs.pr_number }}
           method: squash
-      - name: deploy to gh-pages
+      - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
@@ -149,7 +149,7 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to GitHub Pages'
           clean: false
-      - name: deploy to iptv-org/api
+      - name: Deploy to iptv-org/api
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
