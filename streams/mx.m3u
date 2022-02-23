@@ -39,7 +39,7 @@ https://video.cdmx.gob.mx/livestream/stream.m3u8
 http://170.83.242.153:8000/play/a00d
 #EXTINF:-1 tvg-id="ClaroSinLimites.mx" status="error",Claro Sin Limites (480p) [Offline]
 http://170.83.242.153:8000/play/a01k
-#EXTINF:-1 tvg-id="ClaroSports.mx" status="timeout",Claro Sports (480p)
+#EXTINF:-1 tvg-id="ClaroSports.mx" status="online",Claro Sports (480p)
 http://45.179.140.242:8000/play/a0ht
 #EXTINF:-1 tvg-id="ConectaTV.mx" status="online",Conecta TV (720p)
 http://204.12.211.210:1935/conectatv/conectatv/playlist.m3u8
@@ -93,24 +93,24 @@ https://canal10.mediaflix.istream.mx/wza_live/live/movil/playlist.m3u8
 http://live.canaloncelive.tv:1935/livepkgr2/smil:internacional.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OnceMexico.mx" status="error",Once Mexico (720p) [Not 24/7]
 http://live.canaloncelive.tv/livepkgr/smil:nacional.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="OnceMexico.mx" status="online",Once Mexico (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="OnceMexico.mx" status="error",Once Mexico (720p) [Not 24/7]
 https://live2.canaloncelive.tv/livepkgr3/cepro/playlist.m3u8
-#EXTINF:-1 tvg-id="XHTJBTDT.mx" status="error",Once Niñas y Niños (XHTJB-TDT) (432p) [Offline]
+#EXTINF:-1 tvg-id="XHTJBTDT.mx" status="timeout",Once Niñas y Niños (XHTJB-TDT) (432p) [Offline]
 https://streams.the6tv.duckdns.org:2443/locals/SanDiego/xhtjb-tdt2.m3u8
-#EXTINF:-1 tvg-id="XHTJBTDT.mx" status="error",Once TV (XHTJB-TDT) (1080p) [Offline]
+#EXTINF:-1 tvg-id="XHTJBTDT.mx" status="timeout",Once TV (XHTJB-TDT) (1080p) [Offline]
 https://streams.the6tv.duckdns.org:2443/locals/SanDiego/xhtjb-tdt.m3u8
 #EXTINF:-1 tvg-id="POPTV.mx" status="online",POP TV (542p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico3/smil:obregon.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="QuieroTV.mx" status="online",Quiero TV (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x8452uw
-#EXTINF:-1 tvg-id="RCGTV2.mx" status="online",RCG TV 2 (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="RCGTV2.mx" status="timeout",RCG TV 2 (360p) [Not 24/7]
 http://wowzacontrol.com:1936/stream23/stream23/playlist.m3u8
-#EXTINF:-1 tvg-id="RCGTV2.mx" status="online",RCG TV 2 (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="RCGTV2.mx" status="timeout",RCG TV 2 (360p) [Not 24/7]
 https://5caf24a595d94.streamlock.net:1937/stream23/stream23/playlist.m3u8
+#EXTINF:-1 tvg-id="RCGTV3.mx" status="timeout",RCG TV 3 (360p) [Not 24/7]
+https://5caf24a595d94.streamlock.net:1937/stream56/stream56/playlist.m3u8
 #EXTINF:-1 tvg-id="RCGTV3.mx" status="online",RCG TV 3 (360p) [Not 24/7]
 http://wowzacontrol.com:1936/stream56/stream56/playlist.m3u8
-#EXTINF:-1 tvg-id="RCGTV3.mx" status="online",RCG TV 3 (360p) [Not 24/7]
-https://5caf24a595d94.streamlock.net:1937/stream56/stream56/playlist.m3u8
 #EXTINF:-1 tvg-id="RCGTV.mx" status="online",RCG TV (1080p)
 https://video1.getstreamhosting.com:1936/8172/8172/playlist.m3u8
 #EXTINF:-1 tvg-id="RTQQueretaro.mx" status="online",RTQ Queretaro (360p) [Not 24/7]
@@ -133,7 +133,7 @@ http://s5.mexside.net:1935/telemax/telemax/playlist.m3u8
 http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8
 #EXTINF:-1 tvg-id="TelevisaAguascalientes.mx" status="timeout",Televisa Aguascalientes (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC5ZtV3bu3bjSuOLoA6oCFIg/live
-#EXTINF:-1 tvg-id="TelevisaChihuahua.mx" status="online",Televisa Chihuahua (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaChihuahua.mx" status="error",Televisa Chihuahua (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCjfxDe7In59Jbfw2HmIh_Vg/live
 #EXTINF:-1 tvg-id="TelevisaCiudadJuarez.mx" status="online",Televisa Ciudad Juarez (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCot4t8PVKz8TT5xVM8Eb00w/live
@@ -145,7 +145,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC9DH82HVSf4katwMeUpY80w
 #EXTINF:-1 tvg-id="TelevisaGuadalajara.mx" status="online",Televisa Guadalajara (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRujF_YxVVFmTRWURQH-Cww/live
-#EXTINF:-1 tvg-id="TelevisaGuerrero.mx" status="timeout",Televisa Guerrero (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaGuerrero.mx" status="error",Televisa Guerrero (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCnxTRk2K1iNsQkgpWXxyj4w/live
 #EXTINF:-1 tvg-id="TelevisaLaguna.mx" status="online",Televisa Laguna (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC_mwCcsKDJLSWjply5s0h8w/live
@@ -175,7 +175,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC5EnLdE7ASjYzWt7wvT-QSg/live
 #EXTINF:-1 tvg-id="TelevisaZacatecas.mx" status="online",Televisa Zacatecas (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQb3i7gu9J8A4zzQU7j6C1Q/live
-#EXTINF:-1 tvg-id="" status="error",Tlaxcala Televisión (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",Tlaxcala Televisión (360p) [Not 24/7]
 https://vid.mega00.com:5443/LiveApp/streams/928111829917388844551988/928111829917388844551988.m3u8?token=null
 #EXTINF:-1 tvg-id="TransmediaTelevisionMorelia.mx" status="error",Transmedia Televisión Morelia (614p) [Not 24/7]
 http://streamingcws20.com:1935/tmtv/videotmtv/playlist.m3u8
