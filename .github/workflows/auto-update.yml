@@ -115,7 +115,7 @@ jobs:
         if: ${{ !env.ACT }}
         run: |
           git add streams/*
-          git commit -m "[Bot] Update streams"
+          git commit -m "[Bot] Update /streams"
           git add README.md
           git commit -m "[Bot] Update README.md"
           git status
@@ -132,7 +132,13 @@ jobs:
             This pull request is created by [auto-update][1] workflow.
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-      - name: Deploy to GitHub Pages
+      - uses: juliangruber/merge-pull-request-action@v1
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          github-token: ${{ secrets.PAT }}
+          number: ${{ steps.pull-request.outputs.pr_number }}
+          method: squash
+      - name: deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
@@ -143,7 +149,7 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to GitHub Pages'
           clean: false
-      - name: Deploy to iptv-org/api
+      - name: deploy to iptv-org/api
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
@@ -155,9 +161,3 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to iptv-org/api'
           clean: false
-      - uses: juliangruber/merge-pull-request-action@v1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          github-token: ${{ secrets.PAT }}
-          number: ${{ steps.pull-request.outputs.pr_number }}
-          method: squash
