@@ -31,12 +31,12 @@ https://5940924978228.streamlock.net/8289/smil:8289.smil/master.m3u8
 https://9laloma.tv/live.m3u8
 #EXTINF:-1 tvg-id="11TV.es" status="online",11 TV (576p) [Not 24/7]
 http://51.210.199.43/hls/stream.m3u8
-#EXTINF:-1 tvg-id="Plus24.es" status="error",+24 (576p)
-https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586404/master.m3u8
 #EXTINF:-1 tvg-id="Plus24.es" status="online",+24 (576p)
 https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586402/master.m3u8
 #EXTINF:-1 tvg-id="Plus24.es" status="online",+24 (576p)
 https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586403/master.m3u8
+#EXTINF:-1 tvg-id="Plus24.es" status="online",+24 (576p)
+https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586404/master.m3u8
 #EXTINF:-1 tvg-id="Plus24.es" status="online",+24 (576p)
 https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586405/master.m3u8
 #EXTINF:-1 tvg-id="25TV.es" status="online",25 TV (480p) [Not 24/7]
@@ -113,7 +113,7 @@ https://videos.canal56.com/directe/stream/index.m3u8
 http://canal2000.berkano-systems.net/streaming/streams/canal2000.m3u8
 #EXTINF:-1 tvg-id="CanalDiocesano.es" status="online",Canal Diocesano (576p) [Not 24/7]
 https://cdn01.yowi.tv/DDDDDDDDDD/master.m3u8
-#EXTINF:-1 tvg-id="CanalDonana.es" status="error",Canal Doñana (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CanalDonana.es" status="online",Canal Doñana (720p) [Not 24/7]
 https://secure5.todostreaming.es/live/division-alm.m3u8
 #EXTINF:-1 tvg-id="CanalExtremadura.es" status="online",Canal Extremadura (576p) [Not 24/7]
 https://cdnlive.shooowit.net/canalextremaduralive/smil:channel1DVR.smil/playlist.m3u8
@@ -277,7 +277,7 @@ http://78.41.83.88:8880/hls/tvixa.m3u8
 https://str.intercomarcal.com/hls/tvixa.m3u8
 #EXTINF:-1 tvg-id="IntercomarcalTV.es" status="timeout",Intercomarcal TV (576p) [Not 24/7]
 https://str.intercomarcal.com/hls/tvisd.m3u8
-#EXTINF:-1 tvg-id="Islatel.es" status="online",Islatel (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="Islatel.es" status="error",Islatel (404p) [Not 24/7]
 https://zone.controlstreams.com:5443/LiveApp/streams/islatel.m3u8
 #EXTINF:-1 tvg-id="JuntaCastillayLeon.es" status="error",Junta Castilla y León (1080p) [Not 24/7]
 https://16escalones-live2.flumotion.com/chunks.m3u8
@@ -285,7 +285,7 @@ https://16escalones-live2.flumotion.com/chunks.m3u8
 https://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8
 #EXTINF:-1 tvg-id="La1.es" status="timeout",La 1 (720p) [Geo-blocked]
 https://rtvelivestreamv3.akamaized.net/rtvesec/la1_bkp_dvr.m3u8
-#EXTINF:-1 tvg-id="La1.es" status="timeout",La 1 (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="La1.es" status="blocked",La 1 (720p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/1688877.m3u8
 #EXTINF:-1 tvg-id="La1Canarias.es" status="blocked",La 1 Canarias (576p) [Geo-blocked]
 https://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@134665/master.m3u8
@@ -311,11 +311,11 @@ https://cdnlive.shooowit.net/la8bierzolive/smil:streamswitchingchannel.smil/play
 https://cdnlive.shooowit.net/la8burgoslive/smil:streamswitchingchannel.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="La8Leon.es" status="online",La 8 Leon (720p) [Not 24/7]
 https://cdnlive.shooowit.net/la8leonlive/smil:streamswitchingchannel.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="La8Mediterraneo.es" status="error",La 8 Mediterráneo (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="La8Mediterraneo.es" status="online",La 8 Mediterráneo (1080p) [Not 24/7]
 https://play.cdn.enetres.net/489DDF7FE98241D19D8970314BC9D3EF021/0226/playlist.m3u8
 #EXTINF:-1 tvg-id="La8Palencia.es" status="online",La 8 Palencia (270p) [Not 24/7]
 https://cdnlive.shooowit.net/la8palencialive/smil:streamswitchingchannel.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="La8Salamanca.es" status="online",La 8 Salamanca (720p)
+#EXTINF:-1 tvg-id="La8Salamanca.es" status="error",La 8 Salamanca (720p)
 https://cdnlive.shooowit.net/la8salamancalive/smil:streamswitchingchannel.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="La8Segovia.es" status="online",La 8 Segovia (720p)
 https://cdnlive.shooowit.net/la8segovialive/smil:streamswitchingchannel.smil/playlist.m3u8
@@ -365,7 +365,7 @@ https://mdslivehlsb-i.akamaihd.net/hls/live/875601/niusdiario/01.m3u8
 https://mdslivehlsb-i.akamaihd.net/hls/live/875601-b/niusdiario/01.m3u8
 #EXTINF:-1 tvg-id="NoroesteTV.es" status="online",Noroeste TV (720p) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8032/index.m3u8
-#EXTINF:-1 tvg-id="OizmendiTelebista.es" status="error",Oizmendi Telebista (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="OizmendiTelebista.es" status="online",Oizmendi Telebista (404p) [Not 24/7]
 https://5940924978228.streamlock.net/8161/8161/master.m3u8
 #EXTINF:-1 tvg-id="OlympicsChannel.es" status="error",Olympics Channel (1080p) [Geo-blocked]
 https://iptv-all.lanesh4d0w.repl.co/special/olympics
@@ -381,13 +381,13 @@ https://cloud.streamingconnect.tv:455/mezquita/mezquita.m3u8
 https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
 #EXTINF:-1 tvg-id="PlatziTV.es" status="online",Platzi TV (1080p)
 https://mdstrm.com/live-stream-playlist/5b9076d18ef7b22560354649.m3u8
-#EXTINF:-1 tvg-id="PopularTVCantabria.es" status="online",Popular TV Cantabria (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="PopularTVCantabria.es" status="error",Popular TV Cantabria (576p) [Not 24/7]
 https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8
 #EXTINF:-1 tvg-id="PopularTVMelilla.es" status="online",Popular TV Melilla (720p) [Not 24/7]
 http://5940924978228.streamlock.net:1935/8009/8009/playlist.m3u8
 #EXTINF:-1 tvg-id="PopularTVMelilla.es" status="online",Popular TV Melilla (720p) [Not 24/7]
 https://5940924978228.streamlock.net/8009/8009/master.m3u8
-#EXTINF:-1 tvg-id="PopularTVMurcia.es" status="error",Popular TV Murcia (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PopularTVMurcia.es" status="online",Popular TV Murcia (720p) [Not 24/7]
 https://cloud.streamingconnect.tv:455/populartvrm/populartvrm.m3u8
 #EXTINF:-1 tvg-id="Punt3VallUixo.es" status="online",Punt 3 Vall Uixó (1080p)
 https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8
