@@ -139,7 +139,7 @@ jobs:
           number: ${{ steps.pull-request.outputs.pr_number }}
           method: squash
       - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           branch: gh-pages
@@ -150,7 +150,7 @@ jobs:
           commit-message: '[Bot] Deploy to GitHub Pages'
           clean: false
       - name: Deploy to iptv-org/api
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           repository-name: iptv-org/api
