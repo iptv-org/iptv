@@ -21,7 +21,7 @@ https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8
 https://live-anandtv.anandmedia.net/anandtvapp/anandtv/index.m3u8
 #EXTINF:-1 tvg-id="AriseNews.uk" status="online",Arise News (480p)
 https://contributionstreams.sechls01.visionip.tv/live/visiontv-contributionstreams-arise-tv-25f-16x9-SDh/playlist.m3u8
-#EXTINF:-1 tvg-id="AriseNews.uk" status="error",Arise News (576p)
+#EXTINF:-1 tvg-id="AriseNews.uk" status="online",Arise News (576p)
 https://news.ashttp9.visionip.tv/live/visiontvuk-news-arise-tv-hsslive-25f-16x9-SD/playlist.m3u8
 #EXTINF:-1 tvg-id="AwraasTV.uk" status="error",Awraas TV (540p) [Not 24/7]
 https://b01c02nl.mediatriple.net/videoonlylive/mtqtqloqdxtlive/broadcast_5cefc3677caee.smil/playlist.m3u8
@@ -50,9 +50,9 @@ https://livecdn.fptplay.net/qnetlive/bbclifestyle_2000.stream/chunklist.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk" status="blocked",BBC News (540p) [Geo-blocked]
 https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk" status="blocked",BBC News HD (720p) [Geo-blocked]
-https://cdnuk001.broadcastcdn.net/KUK-BBCNEWSHD/index.m3u8
-#EXTINF:-1 tvg-id="BBCNews.uk" status="blocked",BBC News HD (720p) [Geo-blocked]
 https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
+#EXTINF:-1 tvg-id="BBCNews.uk" status="online",BBC News HD (720p) [Geo-blocked]
+https://cdnuk001.broadcastcdn.net/KUK-BBCNEWSHD/index.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk" status="error",BBC News HD (720p) [Not 24/7]
 http://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8
 #EXTINF:-1 tvg-id="BBCOneCambridge.uk" status="blocked",BBC One Cambridge (540p) [Geo-blocked]
@@ -236,7 +236,7 @@ https://live-hochanda.simplestreamcdn.com/hochanda/live.m3u8
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/cruise_tv/hls_video/index.m3u8
 #EXTINF:-1 tvg-id="DeenTV.uk" status="online",Deen TV (576p) [Not 24/7]
 https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/deentv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",EDGEsport (1080p) [Offline]
+#EXTINF:-1 tvg-id="" status="timeout",EDGEsport (1080p) [Offline]
 https://csm-e-stv.tls1.yospace.com/csm/live/195300285.m3u8
 #EXTINF:-1 tvg-id="EDGEsports.uk" status="error",EDGEsport (1080p) [Offline]
 https://imgedge.akamaized.net/amagi_hls_data_imgAAA2AA-edgesports/CDN/playlist.m3u8
@@ -363,7 +363,7 @@ https://api.new.livestream.com/accounts/6986636/events/5362122/live.m3u8
 http://tv.sheffieldlive.org/hls/main.m3u8
 #EXTINF:-1 tvg-id="SkiTV.uk" status="online",Ski TV (1080p) [Not 24/7]
 https://d2xeo83q8fcni6.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/SkiTV-Zee/193.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Sky News (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="error",Sky News (720p) [Geo-blocked]
 http://skydvn-sn-mobile-prod.skydvn.com/skynews/1404/latest.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Sky News (720p) [Geo-blocked]
 http://skynews-sn-cdhls.ak-cdn.skydvn.com/cdhlsskynews/1404/latest.m3u8
