@@ -97,7 +97,7 @@ https://5940924978228.streamlock.net/Directo3/Directo3/playlist.m3u8
 http://ventdelnord.tv:8080/escala/directe.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal 24 horas (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7QZIf0dta-XPXsp9Hv4dTw/live
-#EXTINF:-1 tvg-id="" status="online",Canal 24 horas (720p) [Timeout]
+#EXTINF:-1 tvg-id="" status="timeout",Canal 24 horas (720p) [Timeout]
 https://rtvelivestreamv3.akamaized.net/24h_main_dvr.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Canal 24 horas (1080p) [Timeout]
 https://rtvelivestreamv3.akamaized.net/24h_bkp_dvr.m3u8
@@ -365,11 +365,11 @@ https://mdslivehlsb-i.akamaihd.net/hls/live/875601/niusdiario/01.m3u8
 https://mdslivehlsb-i.akamaihd.net/hls/live/875601-b/niusdiario/01.m3u8
 #EXTINF:-1 tvg-id="NoroesteTV.es" status="online",Noroeste TV (720p) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8032/index.m3u8
-#EXTINF:-1 tvg-id="OizmendiTelebista.es" status="error",Oizmendi Telebista (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="OizmendiTelebista.es" status="online",Oizmendi Telebista (404p) [Not 24/7]
 https://5940924978228.streamlock.net/8161/8161/master.m3u8
 #EXTINF:-1 tvg-id="OlympicsChannel.es" status="error",Olympics Channel (1080p) [Geo-blocked]
 https://iptv-all.lanesh4d0w.repl.co/special/olympics
-#EXTINF:-1 tvg-id="OndaCadiz.es" status="error",Onda Cádiz (1080p)
+#EXTINF:-1 tvg-id="OndaCadiz.es" status="online",Onda Cádiz (1080p)
 https://adc-hls.flumotion.com/playlist.m3u8
 #EXTINF:-1 tvg-id="OndaMadrid.es" status="error",Onda Madrid (360p) [Offline]
 http://ondamadridhls-live.hls.adaptive.level3.net/telemadrid/ondamadrid1/index.m3u8
@@ -387,7 +387,7 @@ https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8
 http://5940924978228.streamlock.net:1935/8009/8009/playlist.m3u8
 #EXTINF:-1 tvg-id="PopularTVMelilla.es" status="online",Popular TV Melilla (720p) [Not 24/7]
 https://5940924978228.streamlock.net/8009/8009/master.m3u8
-#EXTINF:-1 tvg-id="PopularTVMurcia.es" status="online",Popular TV Murcia (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PopularTVMurcia.es" status="error",Popular TV Murcia (720p) [Not 24/7]
 https://cloud.streamingconnect.tv:455/populartvrm/populartvrm.m3u8
 #EXTINF:-1 tvg-id="Punt3VallUixo.es" status="online",Punt 3 Vall Uixó (1080p)
 https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8
@@ -417,10 +417,10 @@ https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0
 https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8
 #EXTINF:-1 tvg-id="SophiaTV.es" status="online",Sophia TV (720p)
 https://www.onairport.live/sophiatv-es-live/livestream/master.m3u8
-#EXTINF:-1 tvg-id="TAC12.es" status="error",TAC 12 (720p) [Not 24/7]
-https://nodo02-cloud01.streaming-pro.com/tac12tv/hls/tac12_2.m3u8
 #EXTINF:-1 tvg-id="TAC12.es" status="online",TAC 12 (720p) [Not 24/7]
 https://nodo01-cloud01.streaming-pro.com/tac12tv/hls/tac12_2.m3u8
+#EXTINF:-1 tvg-id="TAC12.es" status="online",TAC 12 (720p) [Not 24/7]
+https://nodo02-cloud01.streaming-pro.com/tac12tv/hls/tac12_2.m3u8
 #EXTINF:-1 tvg-id="Taroteame.es" status="online",Tarotéame (576p) [Not 24/7]
 http://93.93.67.117:1935/taroteame/tarot_web/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Tarotvision (576p) [Not 24/7]
