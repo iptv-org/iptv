@@ -83,6 +83,13 @@ Also, if necessary, you can specify custom HTTP User-Agent and Referrer via the 
 http://example.com/stream.m3u8
 ```
 
+Each stream also have a `status` attribute which is updated daily by the [iptv-bot](https://github.com/apps/iptv-bot). The attribute can have one of the following values:
+
+- `online` - stream was successfully loaded
+- `blocked` - server returned HTTP code [403 Forbidden](https://en.wikipedia.org/wiki/HTTP_403)
+- `timeout` - request time exceeded 60 seconds
+- `error` - stream could not be loaded for some other reason
+
 ## Project Structure
 
 - `.github/`
