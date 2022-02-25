@@ -43,7 +43,7 @@ http://170.83.242.153:8000/play/a01k
 http://45.179.140.242:8000/play/a0ht
 #EXTINF:-1 tvg-id="ConectaTV.mx" status="online",Conecta TV (720p)
 http://204.12.211.210:1935/conectatv/conectatv/playlist.m3u8
-#EXTINF:-1 tvg-id="CortTV.mx" status="error",CorTV (800p) [Offline]
+#EXTINF:-1 tvg-id="CortTV.mx" status="online",CorTV (800p) [Offline]
 https://stream.oursnetworktv.com/latin/encoder29/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Energía Musical TV (360p) [Not 24/7]
 https://ss2.domint.net:3224/emtv_str/energiamusical/playlist.m3u8
@@ -51,7 +51,7 @@ https://ss2.domint.net:3224/emtv_str/energiamusical/playlist.m3u8
 https://live-streams-notusa.televisa.com/channel02-b/index.m3u8
 #EXTINF:-1 tvg-id="GoldenLatinoamerica.mx" status="online",Golden Latinoamérica (720p) [Not 24/7]
 https://cloud2.streaminglivehd.com:1936/8026/8026/playlist.m3u8
-#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipodromo de las Americas (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="error",Hipodromo de las Americas (360p) [Not 24/7]
 http://wms10.tecnoxia.com/soelvi/slv423/playlist.m3u8
 #EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipódromo de las Américas (480p) [Geo-blocked]
 http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
@@ -59,13 +59,13 @@ http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 https://5ca9af4645e15.streamlock.net/canal11/videocanal11/playlist.m3u8
 #EXTINF:-1 tvg-id="ImagenMulticast.mx" status="online",Imagen Multicast (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/live
-#EXTINF:-1 tvg-id="ImagenRadio.mx" status="error",Imagen Radio (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ImagenRadio.mx" status="online",Imagen Radio (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCB0BUmdBOrH9mYU2ebs1eWA/live
 #EXTINF:-1 tvg-id="" status="online",Imagen TV (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x82z4if
 #EXTINF:-1 tvg-id="JaliscoTV.mx" status="online",Jalisco TV (720p) [Geo-blocked]
 https://5fa5de1a545ae.streamlock.net/sisjalisciense/sisjalisciense/playlist.m3u8
-#EXTINF:-1 tvg-id="LaOctava.mx" status="error",La Octava TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="LaOctava.mx" status="online",La Octava TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x80mow9
 #EXTINF:-1 tvg-id="MariaVisionMexico.mx" status="online",María Visión Mexico (360p) [Not 24/7]
 https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:Mariavision/master.m3u8
@@ -91,10 +91,10 @@ https://dcunilive21-lh.akamaihd.net/i/dclive_1@59479/master.m3u8
 https://canal10.mediaflix.istream.mx/wza_live/live/movil/playlist.m3u8
 #EXTINF:-1 tvg-id="OnceInternacional.mx" status="error",Once Internacional [Offline]
 http://live.canaloncelive.tv:1935/livepkgr2/smil:internacional.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="OnceMexico.mx" status="error",Once Mexico (720p) [Not 24/7]
-http://live.canaloncelive.tv/livepkgr/smil:nacional.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OnceMexico.mx" status="online",Once Mexico (720p) [Not 24/7]
 https://live2.canaloncelive.tv/livepkgr3/cepro/playlist.m3u8
+#EXTINF:-1 tvg-id="OnceMexico.mx" status="error",Once Mexico (720p) [Not 24/7]
+http://live.canaloncelive.tv/livepkgr/smil:nacional.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="XHTJBTDT.mx" status="error",Once Niñas y Niños (XHTJB-TDT) (432p) [Offline]
 https://streams.the6tv.duckdns.org:2443/locals/SanDiego/xhtjb-tdt2.m3u8
 #EXTINF:-1 tvg-id="XHTJBTDT.mx" status="error",Once TV (XHTJB-TDT) (1080p) [Offline]
@@ -171,7 +171,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCtm1LvYEIQ_NrfOUVJ08YhQ/live
 #EXTINF:-1 tvg-id="TelevisaSonora.mx" status="online",Televisa Sonora (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCyzWMHGS7bs0sot6KZk5EZg/live
-#EXTINF:-1 tvg-id="TelevisaVeracruz.mx" status="online",Televisa Veracruz (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaVeracruz.mx" status="error",Televisa Veracruz (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC5EnLdE7ASjYzWt7wvT-QSg/live
 #EXTINF:-1 tvg-id="TelevisaZacatecas.mx" status="online",Televisa Zacatecas (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQb3i7gu9J8A4zzQU7j6C1Q/live
