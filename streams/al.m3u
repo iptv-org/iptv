@@ -83,7 +83,7 @@ http://us.bestvideostreaming.is/8883/playlist.m3u8
 http://us.bestvideostreaming.is/8793/playlist.m3u8
 #EXTINF:-1 tvg-id="ElrodiTV.al" status="blocked",Elrodi TV (576p) [Geo-blocked]
 http://us.bestvideostreaming.is/8718/playlist.m3u8
-#EXTINF:-1 tvg-id="FaxNews.al" status="online",Fax News (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="FaxNews.al" status="error",Fax News (360p) [Not 24/7]
 http://edge01eu.ekranet.com/faxnews/index.m3u8
 #EXTINF:-1 tvg-id="FirstChannel.al" status="blocked",First Channel (1080p) [Geo-blocked]
 http://us.bestvideostreaming.is/8717/playlist.m3u8
@@ -145,12 +145,12 @@ https://tvlive.rtsh.dev/live/rtsh_11mob1/playlist.m3u8
 http://93.157.62.180/RTSH1/index.m3u8
 #EXTINF:-1 tvg-id="RTSH2.al" status="online",RTSH 2 (406p) [Not 24/7]
 https://tvlive.rtsh.dev/live/rtsh_2ott/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",RTSH 2 HD (406p)
+#EXTINF:-1 tvg-id="" status="blocked",RTSH 2 HD (406p)
 http://93.157.62.180/RTSH2/index.m3u8
-#EXTINF:-1 tvg-id="RTSH3.al" status="blocked",RTSH 3 (406p)
-http://93.157.62.180/RTSH3/index.m3u8
 #EXTINF:-1 tvg-id="RTSH3.al" status="online",RTSH 3 (406p)
 https://tvlive.rtsh.dev/live/rtsh3ott/playlist.m3u8
+#EXTINF:-1 tvg-id="RTSH3.al" status="blocked",RTSH 3 (406p)
+http://93.157.62.180/RTSH3/index.m3u8
 #EXTINF:-1 tvg-id="RTSH24.al" status="blocked",RTSH 24 (406p)
 http://93.157.62.180/RTSH24/index.m3u8
 #EXTINF:-1 tvg-id="RTSH24.al" status="online",RTSH 24 (406p) [Not 24/7]
@@ -203,10 +203,10 @@ http://93.157.62.180/Sofia/index.m3u8
 http://us.bestvideostreaming.is/8781/playlist.m3u8
 #EXTINF:-1 tvg-id="SyriHD.al" status="blocked",Syri HD (720p) [Not 24/7]
 http://93.157.62.180/SyriTV/index.m3u8
-#EXTINF:-1 tvg-id="SyriTV.al" status="error",Syri TV (720p) [Not 24/7]
-rtmp://live.syri.tv:8001/input/bluehd
 #EXTINF:-1 tvg-id="SyriTV.al" status="online",Syri TV (720p) [Not 24/7]
 http://live.syri.tv:6969/live/syriblue/hd/23.ts
+#EXTINF:-1 tvg-id="SyriTV.al" status="error",Syri TV (720p) [Not 24/7]
+rtmp://live.syri.tv:8001/input/bluehd
 #EXTINF:-1 tvg-id="TipTV.al" status="blocked",Tip TV (576p) [Geo-blocked]
 http://us.bestvideostreaming.is/8776/playlist.m3u8
 #EXTINF:-1 tvg-id="TopChannel.al" status="blocked",Top Channel (720p) [Geo-blocked]
