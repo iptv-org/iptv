@@ -49,7 +49,7 @@ https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_four_h
 https://livecdn.fptplay.net/qnetlive/bbclifestyle_2000.stream/chunklist.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk" status="blocked",BBC News (540p) [Geo-blocked]
 https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
-#EXTINF:-1 tvg-id="BBCNews.uk" status="blocked",BBC News HD (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="BBCNews.uk" status="online",BBC News HD (720p) [Geo-blocked]
 https://cdnuk001.broadcastcdn.net/KUK-BBCNEWSHD/index.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk" status="blocked",BBC News HD (720p) [Geo-blocked]
 https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
@@ -206,7 +206,7 @@ https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
 #EXTINF:-1 tvg-id="BritishMuslimTV.uk" status="online",British Muslim TV (576p) [Not 24/7]
 https://api.visionip.tv/live/ASHTTP/visiontvuk-international-britishmuslimtv-hsslive-25f-16x9-MB/playlist.m3u8
-#EXTINF:-1 tvg-id="BTSport1.uk" status="online" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",BT Sport 1 (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="BTSport1.uk" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",BT Sport 1 (576p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://sport.livedoomovie.com/02_BTSPORTHD_1_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="BTSport2.uk" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",BT Sport 2 (576p) [Not 24/7]
@@ -297,16 +297,16 @@ http://31.220.41.88:8081/live/itv4.stream/chunks.m3u8
 http://31.220.41.88:8081/live/itv1.stream/chunks.m3u8
 #EXTINF:-1 tvg-id="JewelleryMaker.uk" status="online",Jewelery Maker (1080p)
 https://lo2-1.gemporia.com/abrjewellerymaker/smil:livestream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="JimJamRossiya.uk" status="timeout",JimJam Россия (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="JimJamRossiya.uk" status="error",JimJam Россия (576p) [Not 24/7]
 http://188.40.68.167/russia/jimjam/playlist.m3u8
 #EXTINF:-1 tvg-id="KalemehTV.uk" status="online",Kalemeh TV (576p) [Not 24/7]
 http://51.210.199.37/hls/stream.m3u8
 #EXTINF:-1 tvg-id="KanshiTV.uk" status="online",Kanshi TV (720p) [Not 24/7]
 https://live.kanshitv.co.uk/mobile/kanshitvkey.m3u8
-#EXTINF:-1 tvg-id="Kerrang.uk" status="timeout",Kerrang (576p) [Geo-blocked]
-https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,kerrang-alldev.m3u8?yo.up=https://boxtv.secure.footprint.net/kerrang/
 #EXTINF:-1 tvg-id="Kerrang.uk" status="online",Kerrang (576p) [Geo-blocked]
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,kerrang-alldev.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/kerrang/
+#EXTINF:-1 tvg-id="Kerrang.uk" status="timeout",Kerrang (576p) [Geo-blocked]
+https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,kerrang-alldev.m3u8?yo.up=https://boxtv.secure.footprint.net/kerrang/
 #EXTINF:-1 tvg-id="Kiss.uk" status="error",Kiss (576p) [Offline]
 http://csm-e.tm.yospace.com/csm/extlive/boxplus01,kiss-inapp.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/kiss/
 #EXTINF:-1 tvg-id="kMTV.uk" status="online",KMTV (576p)
@@ -363,15 +363,15 @@ https://api.new.livestream.com/accounts/6986636/events/5362122/live.m3u8
 http://tv.sheffieldlive.org/hls/main.m3u8
 #EXTINF:-1 tvg-id="SkiTV.uk" status="online",Ski TV (1080p) [Not 24/7]
 https://d2xeo83q8fcni6.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/SkiTV-Zee/193.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Sky News (720p) [Geo-blocked]
-http://skydvn-sn-mobile-prod.skydvn.com/skynews/1404/latest.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Sky News (720p) [Geo-blocked]
 http://skynews-sn-cdhls.ak-cdn.skydvn.com/cdhlsskynews/1404/latest.m3u8
+#EXTINF:-1 tvg-id="" status="error",Sky News (720p) [Geo-blocked]
+http://skydvn-sn-mobile-prod.skydvn.com/skynews/1404/latest.m3u8
 #EXTINF:-1 tvg-id="SkyNewsArabia.uk" status="online",Sky News Arabia (720p) [Not 24/7]
 https://stream.skynewsarabia.com/hls/sna.m3u8
 #EXTINF:-1 tvg-id="SkyNewsArabia.uk" status="online",Sky News Arabia (Portrait) (1280p) [Not 24/7]
 https://stream.skynewsarabia.com/vertical/vertical.m3u8
-#EXTINF:-1 tvg-id="SkyNewsExtra1.uk" status="online",Sky News Extra 1 (540p)
+#EXTINF:-1 tvg-id="SkyNewsExtra1.uk" status="error",Sky News Extra 1 (540p)
 https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
 #EXTINF:-1 tvg-id="SkyNewsExtra2.uk" status="online",Sky News Extra 2 (540p) [Not 24/7]
 https://skynewsau-live.akamaized.net/hls/live/2002690/skynewsau-extra2/master.m3u8
