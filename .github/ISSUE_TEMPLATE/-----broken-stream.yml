@@ -42,6 +42,8 @@ body:
       label: Broken Link
       description: Please specify the broken link from a playlist if you can
       placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
+    validations:
+      required: true
 
   - type: input
     attributes:
@@ -59,3 +61,5 @@ body:
       label: Please confirm the following
       options:
         - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#report-a-broken-stream)
+    validations:
+      required: true
