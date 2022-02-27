@@ -41,7 +41,7 @@ https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ElHeddafTV.fr" status="blocked",El Heddaf TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/htatv/EL_HEDDAF_TV_720p/chunks.m3u8
-#EXTINF:-1 tvg-id="EMCITV.fr" status="online",EMCI TV (1080p)
+#EXTINF:-1 tvg-id="EMCITV.fr",EMCI TV (1080p)
 https://emci-fr-hls.akamaized.net/hls/live/2007265/emcifrhls/index.m3u8
 #EXTINF:-1 tvg-id="EMCITV.fr" status="online",EMCI TV Montreal (1080p)
 https://emci-td-hls.akamaized.net/hls/live/2007264/emcitdhls/index.m3u8
@@ -53,10 +53,10 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/eu
 https://d1mpprlbe8tn2j.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/euronewsLive/87O7AhxRUdeeIVqf/ewnsabren_eng.m3u8
 #EXTINF:-1 tvg-id="EuronewsHungary.fr" status="online",Euronews Hungary (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
-#EXTINF:-1 tvg-id="Euronewsporusski.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
+#EXTINF:-1 tvg-id="Euronewsporusski.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s89/index.m3u8
-#EXTINF:-1 tvg-id="Euronewsporusski.fr" status="online",Euronews по-русски (720p)
+#EXTINF:-1 tvg-id="Euronewsporusski.fr" status="error",Euronews по-русски (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
 #EXTINF:-1 tvg-id="FashionTV.fr" status="online",Fashion TV (576p) [Not 24/7]
 http://entertainment.ashttp9.visionip.tv/live/visiontvuk-entertainment-edgytv-hsslive-25f-16x9-SD/playlist.m3u8
@@ -115,7 +115,7 @@ https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8
 https://static.france24.com/live/F24_FR_HI_HLS/live_web.m3u8
 #EXTINF:-1 tvg-id="FranceInter.fr" status="online",France Inter (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCJldRgT_D7Am-ErRHQZ90uw/live
-#EXTINF:-1 tvg-id="Franceinfo.fr" status="online",Franceinfo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Franceinfo.fr" status="error",Franceinfo (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/franceinfo/live
 #EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie24 (1080p)
 https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8
@@ -165,7 +165,7 @@ https://s6.tntendirect.com/nrj12/live/playlist.m3u8
 https://panel.streamparis.fr:3743/stream/play.m3u8
 #EXTINF:-1 tvg-id="PersianaBillboard.fr" status="error",Persiana Billboard (720p) [Not 24/7]
 http://51.210.199.10/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaCinema.fr" status="error",Persiana Cinema (720p)
+#EXTINF:-1 tvg-id="PersianaCinema.fr" status="online",Persiana Cinema (720p)
 http://51.210.199.15/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaClassic.fr" status="online",Persiana Classic (720p) [Not 24/7]
 http://51.210.199.26/hls/stream.m3u8
