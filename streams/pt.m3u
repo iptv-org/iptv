@@ -19,11 +19,11 @@ http://195.22.11.11:1935/ktv/ktv1/master.m3u8
 https://streamer-a01.videos.sapo.pt/live/portocanal/playlist.m3u8
 #EXTINF:-1 tvg-id="PortoCanal.pt" status="online",Porto Canal (360p) [Not 24/7]
 https://streamer-b02.videos.sapo.pt/live/portocanal/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioClubeTV.pt" status="error",Radio Clube TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioClubeTV.pt" status="online",Radio Clube TV (720p) [Not 24/7]
 https://stmv1.srvsite.com/clubefmradio/clubefmradio/playlist.m3u8
 #EXTINF:-1 tvg-id="RTP1.pt" status="online",RTP1 (480p)
 http://162.212.178.69:41042/bysid/608
-#EXTINF:-1 tvg-id="RTP1.pt" status="error" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP1 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTP1.pt" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP1 (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/rtpClean1HD.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTP2.pt" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP2 (504p) [Not 24/7]
@@ -64,7 +64,7 @@ https://streaming-live.rtp.pt/liverepeater/smil:zigzagHD.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPRadiozigzag.pt" status="error" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP Rádio Zig Zag [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:zigzag.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SICInternacional.pt" status="blocked",SIC Internacional (720p) [Offline]
+#EXTINF:-1 tvg-id="SICInternacional.pt" status="blocked",SIC Internacional (720p)
 http://live.impresa.pt/live/sicint/sicint.m3u8
 #EXTINF:-1 tvg-id="SICNoticias.pt" status="blocked",SIC Noticias [Geo-blocked]
 http://live.impresa.pt/live/sicnot/sicnot.m3u8
@@ -110,7 +110,7 @@ http://streamspub.manasat.com:1935/tvmz/tvmz2/playlist.m3u8
 http://csvl03.manasat.com:1935/tvmz/tvmz3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV MANA-1 PORTUGAL (1080p) [Not 24/7]
 http://csvl04.manasat.com:1935/tvmana/tvmana3/playlist.m3u8
-#EXTINF:-1 tvg-id="TVI24.pt" status="error",TVI24 (480p) [Offline]
+#EXTINF:-1 tvg-id="TVI24.pt" status="error",TVI24 (480p)
 https://video-auth2.iol.pt/live_edge/tvi24_abr/edge_servers/tvi24-480p/chunks.m3u8
 #EXTINF:-1 tvg-id="TVI.pt" status="online",TVI (480p)
 https://video-auth2.iol.pt/live_edge/tvi_abr/edge_servers/tvi-480p/chunks.m3u8
