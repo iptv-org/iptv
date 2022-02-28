@@ -11,7 +11,7 @@ http://live.azstartv.com/azstar/smil:azstar.smil/playlist.m3u8
 http://live.livestreamtv.ca/azstar/smil:azstar.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCTorontoGaundaPunjab.ca" status="online",BBC Toronto Gaunda Punjab (720p) [Not 24/7]
 http://start.agmediachandigarh.com/gaundapunjab/tv/playlist.m3u8
-#EXTINF:-1 tvg-id="CanadaOne.ca" status="online",Canada One (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CanadaOne.ca" status="error",Canada One (720p) [Not 24/7]
 http://cdn8.live247stream.com/canadaone/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CanadaStarTV.ca" status="error",Canada Star TV (1080p) [Offline]
 http://live.canadastartv.com:1935/canadastartv/canadastartv/playlist.m3u
@@ -89,7 +89,7 @@ https://streamer12.vdn.dstreamone.net/saazoawaz/saazoawaz/playlist.m3u8
 https://eu.streamjo.com/eetlive/eettv.m3u8
 #EXTINF:-1 tvg-id="FightNetwork.ca" status="online",Fight Network (1080p)
 https://d12a2vxqkkh1bo.cloudfront.net/hls/main.m3u8
-#EXTINF:-1 tvg-id="GlobalNewsToronto.ca" status="error",Global Toronto (720p) [Offline]
+#EXTINF:-1 tvg-id="GlobalNewsToronto.ca" status="timeout",Global Toronto (720p) [Offline]
 http://encodercdn1.frontline.ca/encoder184/output/Global_Toronto_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="GurSikhSabhaTV.ca" status="online",GurSikh Sabha TV (720p) [Not 24/7]
 http://cdn12.henico.net:8080/live/gsctv/index.m3u8
@@ -103,9 +103,9 @@ https://rcavlive.akamaized.net/hls/live/696615/xcancbft/master.m3u8
 https://rcavlive-dai.akamaized.net/hls/live/696614/cancbftprem/master.m3u8
 #EXTINF:-1 tvg-id="ICIRadioCanadaRDI.ca" status="online",ICI RDI (720p)
 https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master.m3u8
-#EXTINF:-1 tvg-id="IIPCTV.ca" status="blocked",IIPC TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="IIPCTV.ca" status="online",IIPC TV (480p) [Geo-blocked]
 https://uni10rtmp.tulix.tv/iipctv/iipctv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ITCTV.ca" status="online",ITC TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ITCTV.ca" status="blocked",ITC TV (480p) [Geo-blocked]
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/f05d55e42dc746c8bd36edafbace7cc1/playlist.m3u8
 #EXTINF:-1 tvg-id="Knowledge.ca" status="blocked",Knowledge (720p) [Geo-blocked]
 http://knstream1.azureedge.net/knlive/knlive_high.m3u8
@@ -117,7 +117,7 @@ http://94.130.180.175:8081/live/greektv/playlist.m3u8
 http://stream.pivotalelements.com/nactv/stream.m3u8
 #EXTINF:-1 tvg-id="NETVToronto.ca" status="online",NETV Toronto (720p) [Not 24/7]
 https://live.streams.ovh/NetvToronto/NetvToronto/playlist.m3u8
-#EXTINF:-1 tvg-id="NRBTV.ca" status="online",NRB TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="NRBTV.ca" status="error",NRB TV (1080p) [Not 24/7]
 https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/nrb-eu.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NTV.ca" status="online",NTV (Newfoundland) (576p) [Not 24/7]
 https://2-fss-1.streamhoster.com/pl_122/201748-1282644-1/playlist.m3u8
@@ -149,7 +149,7 @@ https://zm6gdaxeyn93-hls-live.5centscdn.com/slworld/d65ce2bdd03471fde0a1dc5e01d7
 http://toronto3.live247stream.com:8081/sanjhapunjab/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SikhSpiritualCentreRexdale.ca" status="online",Sikh Spiritual Centre Rexdale (720p)
 https://cdn12.henico.net:8443/live/ssct/index.m3u8
-#EXTINF:-1 tvg-id="TAGTV.ca" status="error",TAG TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TAGTV.ca" status="online",TAG TV (1080p) [Not 24/7]
 http://cdn11.live247stream.com/tag/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TamilVisionTV.ca" status="online",Tamil Vision TV (720p)
 http://live.tamilvision.tv:8081/TVI/SD/playlist.m3u8
@@ -185,7 +185,7 @@ http://s1.mysportz.tv:2082/tsn4/playlist.m3u8
 http://rtmp.smartstream.video:1935/capco/tv29/playlist.m3u8
 #EXTINF:-1 tvg-id="CFTM.ca" status="blocked",TVA [Geo-blocked]
 https://tvalive-nondai.akamaized.net/Content/HLS/Live/channel(a7315e07-037c-12a8-bdc8-da7bd513da9d)/index.m3u8
-#EXTINF:-1 tvg-id="TVC9.ca" status="error",TVC9 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVC9.ca" status="online",TVC9 (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC0JP0ek-HhcqisiEpsZiQZA/live
 #EXTINF:-1 tvg-id="TVOKids.ca" status="online",TVOKids (360p) [Not 24/7]
 https://bcsecurelivehls-i.akamaihd.net/hls/live/623607/15364602001/tvokids/master.m3u8
