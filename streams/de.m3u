@@ -9,9 +9,9 @@ https://augsburgtv.iptv-playoutcenter.de/augsburgtv/augsburgtv.stream_1/playlist
 https://serve-first.folxplay.tv/folx/ch-1/master.m3u8
 #EXTINF:-1 tvg-id="AlexBerlin.de" status="online",Alex Berlin (1080p) [Not 24/7]
 https://alex-stream.rosebud-media.de/live/alexlivetv40.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AnixeHDSerie.de" status="timeout",Anixe HD Serie (360p)
+#EXTINF:-1 tvg-id="AnixeHDSerie.de" status="online",Anixe HD Serie (360p)
 https://ma.anixa.tv/clips/stream/anixehd/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Antenne Vorarlberg (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Antenne Vorarlberg (720p) [Not 24/7]
 http://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ARDEvent1.de" status="error",ARD Event 1 (540p)
 http://wdrardevent1-lh.akamaihd.net/i/ardevent1_weltweit@566648/master.m3u8
@@ -196,25 +196,25 @@ https://ndrevent-lh.akamaihd.net/i/ndrevent_2@429805/master.m3u8
 https://ndrevent-lh.akamaihd.net/i/ndrevent_3@409068/master.m3u8
 #EXTINF:-1 tvg-id="NDRFernsehen.de" status="timeout",NDR Fernsehen (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_fs@430230/master.m3u8
-#EXTINF:-1 tvg-id="NDRHamburg.de" status="online",NDR Hamburg (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
 #EXTINF:-1 tvg-id="NDRHamburg.de" status="timeout",NDR Hamburg (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_hh/master.m3u8
-#EXTINF:-1 tvg-id="NDRInternational.de" status="timeout",NDR International (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NDRHamburg.de" status="online",NDR Hamburg (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
+#EXTINF:-1 tvg-id="NDRInternational.de" status="online",NDR International (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_int@430236/master.m3u8
-#EXTINF:-1 tvg-id="NDRMecklenburgVorpommern.de" status="online",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
 #EXTINF:-1 tvg-id="NDRMecklenburgVorpommern.de" status="timeout",NDR Mecklenburg-Vorpommern (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
-#EXTINF:-1 tvg-id="NDRNiedersachsen.de" status="timeout",NDR Niedersachsen (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_nds@430233/master.m3u8
+#EXTINF:-1 tvg-id="NDRMecklenburgVorpommern.de" status="timeout",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
 #EXTINF:-1 tvg-id="NDRNiedersachsen.de" status="timeout",NDR Niedersachsen (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
-#EXTINF:-1 tvg-id="NDRSchleswigHolstein.de" status="online",NDR Schleswig-Holstein (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_sh@430234/master.m3u8
+#EXTINF:-1 tvg-id="NDRNiedersachsen.de" status="online",NDR Niedersachsen (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_nds@430233/master.m3u8
 #EXTINF:-1 tvg-id="NDRSchleswigHolstein.de" status="timeout",NDR Schleswig-Holstein (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
-#EXTINF:-1 tvg-id="NDRWeltweiter.de" status="online",NDR Weltweiter (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NDRSchleswigHolstein.de" status="online",NDR Schleswig-Holstein (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_sh@430234/master.m3u8
+#EXTINF:-1 tvg-id="NDRWeltweiter.de" status="timeout",NDR Weltweiter (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_ww@430235/master.m3u8
 #EXTINF:-1 tvg-id="NiederbayernTV.de" status="error",Niederbayern TV (1080p) [Not 24/7]
 https://stream03.stream.welocal.world/stream/nla/ngrp:nla.stream_all/playlist.m3u8
@@ -296,7 +296,7 @@ http://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-wernigerode_high/playl
 http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-wernigerode_high/playlist.m3u8
 #EXTINF:-1 tvg-id="oldenburgeins.de" status="online",oldenburg eins (1080p) [Not 24/7]
 https://oeins.de/live/studio.m3u8
-#EXTINF:-1 tvg-id="ONE1Music.de" status="timeout",ONE1 Music (1080p)
+#EXTINF:-1 tvg-id="ONE1Music.de" status="error",ONE1 Music (1080p)
 https://serve-first.folxplay.tv/folx/ch-3/master.m3u8
 #EXTINF:-1 tvg-id="ONE1Slovenija.de" status="timeout",ONE1 Slovenija (1080p)
 https://serve-first.folxplay.tv/folx/ch-6/master.m3u8
@@ -430,10 +430,10 @@ http://62.113.210.250/medienasa-live/tvhalle_high/playlist.m3u8
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:tvhalle_high/playlist.m3u8
 #EXTINF:-1 tvg-id="TVIngolstadt.de" status="error",TV Ingolstadt (1080p)
 https://stream01.stream.welocal.world/stream/tvi/ngrp:tvi.stream_all/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMainfranken.de" status="online",TV Mainfranken (1080p) [Not 24/7]
-https://tvtouringw.iptv-playoutcenter.de/tvtouringw/tvtouringw.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMainfranken.de" status="error",TV Mainfranken (1080p)
 https://stream01.stream.welocal.world/stream/tvm/ngrp:tvm.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMainfranken.de" status="online",TV Mainfranken (1080p) [Not 24/7]
+https://tvtouringw.iptv-playoutcenter.de/tvtouringw/tvtouringw.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMittelrhein.de" status="error",TV Mittelrhein (404p)
 https://sdn-global-live-http-cache.3qsdn.com/2979/amlst:5714-sbr/playlist.m3u8
 #EXTINF:-1 tvg-id="TVOberfranken.de" status="error",TV Oberfranken (1080p)
