@@ -31,9 +31,9 @@ http://51.79.193.108:8080/hls/j00005/index.m3u8
 #EXTINF:-1 tvg-id="BSNipponTV.jp" status="online",BS Nippon TV (540p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00005/index.m3u8
 #EXTINF:-1 tvg-id="BSNipponTV.jp" status="online",BS Nippon TV (720p) [Not 24/7]
-http://51.79.193.108:8080/hls/j00047/index.m3u8
-#EXTINF:-1 tvg-id="BSNipponTV.jp" status="online",BS Nippon TV (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00047/index.m3u8
+#EXTINF:-1 tvg-id="BSNipponTV.jp" status="timeout",BS Nippon TV (720p) [Not 24/7]
+http://51.79.193.108:8080/hls/j00047/index.m3u8
 #EXTINF:-1 tvg-id="BSTVTokyo.jp" status="online",BS TV Tokyo (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00050/index.m3u8
 #EXTINF:-1 tvg-id="BSTVTokyo.jp" status="online",BS TV Tokyo (720p) [Not 24/7]
@@ -66,15 +66,15 @@ https://movie.mcas.jp/switcher/smil:mcas8.smil/master.m3u8
 https://hiroshima-tv-live.hls.wselive.stream.ne.jp/hiroshima-tv-live/live/playlist.m3u8
 #EXTINF:-1 tvg-id="JSports1.jp" status="online",J Sports 1 (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00042/index.m3u8
-#EXTINF:-1 tvg-id="JSports1.jp" status="online",J Sports 1 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JSports1.jp" status="timeout",J Sports 1 (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00042/index.m3u8
 #EXTINF:-1 tvg-id="JSports2.jp" status="online",J Sports 2 (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00041/index.m3u8
 #EXTINF:-1 tvg-id="JSports2.jp" status="online",J Sports 2 (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00041/index.m3u8
-#EXTINF:-1 tvg-id="JSports3.jp" status="online",J Sports 3 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JSports3.jp" status="timeout",J Sports 3 (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00040/index.m3u8
-#EXTINF:-1 tvg-id="JSports3.jp" status="online",J Sports 3 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JSports3.jp" status="timeout",J Sports 3 (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00040/index.m3u8
 #EXTINF:-1 tvg-id="JSports4.jp" status="online",J Sports 4 (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00039/index.m3u8
@@ -86,17 +86,17 @@ http://51.79.193.108:8080/hls/j00006/index.m3u8
 http://51.79.193.108:8080/hlsok/j00006/index.m3u8
 #EXTINF:-1 tvg-id="MBS.jp" status="online",MBS (Mainichi Broadcasting System) (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00038/index.m3u8
-#EXTINF:-1 tvg-id="MBS.jp" status="online",MBS (Mainichi Broadcasting System) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MBS.jp" status="timeout",MBS (Mainichi Broadcasting System) (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00038/index.m3u8
 #EXTINF:-1 tvg-id="NewJapanProWrestlingWorld.jp" status="online",New Japan Pro Wrestling World (540p)
 https://aka-amd-njpwworld-hls-enlive.akamaized.net/hls/video/njpw_en/njpw_en_channel01_3/playlist_DVR.m3u8
-#EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="online",NHK + NHE (Sub Audio) (2160p) [Not 24/7]
+#EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="timeout",NHK + NHE (Sub Audio) (2160p) [Not 24/7]
 http://iptv.tvfix.org/hls/nhkg2.m3u8
 #EXTINF:-1 tvg-id="NHKEducational.jp" status="timeout",NHK + NHKE (540p) [Not 24/7]
 http://iptv.tvfix.org/hls/nhke.m3u8
 #EXTINF:-1 tvg-id="NHKEducational.jp" status="timeout",NHK + NHKE (Sub Audio) (2160p) [Not 24/7]
 http://iptv.tvfix.org/hls/nhke2.m3u8
-#EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="online",NHK + NHKG (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="timeout",NHK + NHKG (540p) [Not 24/7]
 http://iptv.tvfix.org/hls/nhkg.m3u8
 #EXTINF:-1 tvg-id="NHKBS1.jp" status="online",NHK BS1 (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00037/index.m3u8
@@ -155,9 +155,9 @@ http://51.79.193.108:8080/hls/j00018/index.m3u8
 #EXTINF:-1 tvg-id="Star2.jp" status="online",Star 2 (540p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00018/index.m3u8
 #EXTINF:-1 tvg-id="Star3.jp" status="online",Star 3 (720p) [Not 24/7]
-http://51.79.193.108:8080/hls/j00017/index.m3u8
-#EXTINF:-1 tvg-id="Star3.jp" status="online",Star 3 (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00017/index.m3u8
+#EXTINF:-1 tvg-id="Star3.jp" status="timeout",Star 3 (720p) [Not 24/7]
+http://51.79.193.108:8080/hls/j00017/index.m3u8
 #EXTINF:-1 tvg-id="JORXDTV.jp" status="error",TBS (540p) [Not 24/7]
 https://tbs.mov3.co/hls/tbs.m3u8
 #EXTINF:-1 tvg-id="JORXDTV.jp" status="online",TBS (720p) [Not 24/7]
@@ -184,9 +184,9 @@ http://51.79.193.108:8080/hlsok/j00014/index.m3u8
 http://51.79.193.108:8080/hls/j00013/index.m3u8
 #EXTINF:-1 tvg-id="TVOsaka.jp" status="online",TV Osaka (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00013/index.m3u8
-#EXTINF:-1 tvg-id="JOTXDTV.jp" status="online",TV Tokyo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JOTXDTV.jp" status="timeout",TV Tokyo (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00012/index.m3u8
-#EXTINF:-1 tvg-id="JOAXDTV.jp" status="online",TV Tokyo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JOAXDTV.jp" status="timeout",TV Tokyo (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00012/index.m3u8
 #EXTINF:-1 tvg-id="WakuWakuJapan.jp" status="error" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",WakuWaku Japan
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
