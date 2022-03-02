@@ -35,10 +35,10 @@ http://hls-live-media.cdn01.net/default/stream_10429_1.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
-http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_1.m3u8
-#EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
-#EXTINF:-1 tvg-id="DonezkTV.ua" status="error",Donezk TV (720p)
+#EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
+http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_1.m3u8
+#EXTINF:-1 tvg-id="DonezkTV.ua" status="timeout",Donezk TV (720p)
 http://stream.dn.ua/hls/stream.m3u8
 #EXTINF:-1 tvg-id="GIT.ua" status="online",GIT (720p)
 https://stream.uagit.tv/gittv.m3u8
@@ -123,9 +123,9 @@ http://194.50.51.34/playlist.m3u8
 http://video.vtvplus.com.ua:81/hls/online/index.m3u8
 #EXTINF:-1 tvg-id="Glas.ua" status="online",Глас (576p)
 http://85.238.112.69:8811/hls_sec/239.0.4.18-.m3u8
-#EXTINF:-1 tvg-id="GlassRU.ua" status="online",Гласс (RU) (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="GlassRU.ua" status="error",Гласс (RU) (576p) [Not 24/7]
 https://glas.org.ua/hls/glassru.m3u8
-#EXTINF:-1 tvg-id="GlassUA.ua" status="online",Гласс (UA) (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="GlassUA.ua" status="error",Гласс (UA) (576p) [Not 24/7]
 https://glas.org.ua/hls/glassua.m3u8
 #EXTINF:-1 tvg-id="DonbasOnline.ua" status="timeout",Донбас Online (1080p) [Not 24/7]
 http://176.110.1.30:1935/live/donbasonline/playlist.m3u8
@@ -165,7 +165,7 @@ https://edge3.iptv.macc.com.ua/img/ntn_3/index.m3u8
 http://85.238.112.40:8810/hls_sec/239.33.75.33-.m3u8
 #EXTINF:-1 tvg-id="Odessa.ua" status="blocked",Одесса (576p) [Geo-blocked]
 https://cdn1.live-tv.od.ua:8083/riood/riood-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="Odessa.ua" status="blocked",Одесса (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Odessa.ua" status="error",Одесса (576p) [Geo-blocked]
 https://cdn1.live-tv.od.ua:8083/riood/riood/playlist.m3u8
 #EXTINF:-1 tvg-id="OrbitaTV.ua" status="online",Орбіта ТВ (360p) [Not 24/7]
 http://ftp.orbita.dn.ua/hls/orbita.m3u8
