@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="" status="error",AkíTV (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/Akitv/Akitv.myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="Ame47.do" status="error",Amé 47 (720p)
+#EXTINF:-1 tvg-id="Ame47.do" status="timeout",Amé 47 (720p)
 https://ss6.domint.net:3028/ame_str/amecanal47/playlist.m3u8
 #EXTINF:-1 tvg-id="AnimeZoneTV.do" status="online",Anime Zone TV (480p) [Not 24/7]
 http://azxtv.com/hls/stream.m3u8
@@ -11,11 +11,11 @@ https://5b38ce71f1f00.streamlock.net/8180/8180/playlist.m3u8
 https://cdn4.hostlagarto.com:8081/static/telecanal12/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal56.do" status="error",Canal 56 (720p) [Geo-blocked]
 https://cloudflare.streamgato.us:3549/live/canal56live.m3u8
-#EXTINF:-1 tvg-id="CanalAme47.do" status="error",Canal Amé 47 (720p)
+#EXTINF:-1 tvg-id="CanalAme47.do" status="timeout",Canal Amé 47 (720p)
 http://ss6.domint.net:2028/ame_str/amecanal47/master.m3u8
-#EXTINF:-1 tvg-id="Carivision.do" status="error",Carivision (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Carivision.do" status="timeout",Carivision (720p) [Not 24/7]
 http://ss6.domint.net:2012/tes_str/teleelsalvador/playlist.m3u8
-#EXTINF:-1 tvg-id="ChinolaTV.do" status="error",Chinola TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ChinolaTV.do" status="online",Chinola TV (480p) [Not 24/7]
 https://cdn4.hostlagarto.com:8081/static/Chinolatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CinevisionCanal19.do" status="online",Cinevision Canal 19 (720p)
 https://live.teledom.info:3713/live/cinevisionlive.m3u8
@@ -39,7 +39,7 @@ https://video.misistemareseller.com/Fuegotv/Fuegotv/playlist.m3u8
 https://ss2.domint.net:3200/gdm_str/gdmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="GHTelevisionCanal10.do" status="error",GH Television Canal 10 (1080p) [Not 24/7]
 https://cloudflare.streamgato.us:3352/live/ghtelevisionhdlive.m3u8
-#EXTINF:-1 tvg-id="HermanasMirabalTV.do" status="online",Hermanas Mirabal TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="HermanasMirabalTV.do" status="blocked",Hermanas Mirabal TV (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/Hmtv/hmtv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hilando Fino (1080p) [Not 24/7]
 https://primary-out.iptv-global.net/HilandoFinoTV/ngrp:HilandoFinoTV_all/playlist.m3u8
@@ -59,7 +59,7 @@ https://uni01rtmp.tulix.tv/playout2multi9/lavozdemaria.stream/playlist.m3u8
 http://stream3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 #EXTINF:-1 tvg-id="Microvision10.do" status="online",Microvision 10 (720p) [Not 24/7]
 http://190.103.183.24:1935/live/MicroHD/playlist.m3u8
-#EXTINF:-1 tvg-id="MisionELTV.do" status="online",Mision ELTV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="MisionELTV.do" status="error",Mision ELTV (480p) [Not 24/7]
 https://5790d294af2dc.streamlock.net/8286/8286/playlist.m3u8
 #EXTINF:-1 tvg-id="ORBITTV.do" status="online",ORBIT TV (480p) [Geo-blocked]
 https://ss3.domint.net:3134/otv_str/orbittv/playlist.m3u8
@@ -121,9 +121,9 @@ http://server3.prostudionetwork.com:1945/teleunion/TU/playlist.m3u8
 http://tengomusica.ddns.net:1935/telever/telever.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV Éxitos (720p) [Not 24/7]
 https://vdo1.streamgato.us:3359/live/tvexitoslive.m3u8
-#EXTINF:-1 tvg-id="TVMontanaCanal10.do" status="error",TV Montaña Canal 10 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVMontanaCanal10.do" status="timeout",TV Montaña Canal 10 (720p) [Not 24/7]
 http://ss6.domint.net:2060/tvm_str/montanatv/master.m3u8
-#EXTINF:-1 tvg-id="TVPlata.do" status="error",TV Plata (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVPlata.do" status="timeout",TV Plata (1080p) [Not 24/7]
 https://ss6.domint.net:3104/tvp_str/tvplata/playlist.m3u8
 #EXTINF:-1 tvg-id="TVS.do" status="blocked",TVS (540p) [Geo-blocked]
 http://cm.hostlagarto.com:8081/Tvstv/TvstvHD.myStream/playlist.m3u8
@@ -131,7 +131,7 @@ http://cm.hostlagarto.com:8081/Tvstv/TvstvHD.myStream/playlist.m3u8
 http://190.103.183.24:1935/Vallevision/ValleHD/playlist.m3u8
 #EXTINF:-1 tvg-id="VallevisionCanal10.do" status="online",Vallevision Canal 10 (720p) [Not 24/7]
 https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8
-#EXTINF:-1 tvg-id="VegaTeve.do" status="error",Vega Teve (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="VegaTeve.do" status="timeout",Vega Teve (720p) [Not 24/7]
 https://ss6.domint.net:3012/tes_str/teleelsalvador/playlist.m3u8
 #EXTINF:-1 tvg-id="VivaCanal5.do" status="error",Viva Canal 5 (720p) [Not 24/7]
 https://iptv-all.lanesh4d0w.repl.co/dominicanrepublic/viva-canal-5
