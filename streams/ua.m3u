@@ -80,9 +80,9 @@ https://hls.simon.ua/live-HD/live/playlist.m3u8
 https://open-cdn.lanet.tv/play/skrypin.m3u8
 #EXTINF:-1 tvg-id="Sport1.ua" status="timeout",Sport 1 (576p) [Not 24/7]
 https://95-213-224-183.livesports24.online/sport1ua.m3u8
-#EXTINF:-1 tvg-id="TravelGuideTV.ua" status="online",Travel Guide TV (720p)
+#EXTINF:-1 tvg-id="TravelGuideTV.ua" status="error",Travel Guide TV (720p)
 https://cdn10.live-tv.od.ua:8083/leonovtv/test1/playlist.m3u8
-#EXTINF:-1 tvg-id="TravelGuideTV.ua" status="online",Travel Guide TV (720p)
+#EXTINF:-1 tvg-id="TravelGuideTV.ua" status="error",Travel Guide TV (720p)
 https://cdn10.live-tv.od.ua:8083/leonovtv/test-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://hls.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
@@ -96,16 +96,16 @@ https://rtsp.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
 https://tv7plus.com/hls/tv7.m3u8
 #EXTINF:-1 tvg-id="UAOdesa.ua" status="online",UA: Одеса (384p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/odtrkod/odtrkod-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="UATV.ua" status="online",UATV (720p)
-https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="UATV.ua" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",UATV (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua.m3u8
 #EXTINF:-1 tvg-id="UATV.ua" status="online",UATV (720p)
+https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_mid/index.m3u8
+#EXTINF:-1 tvg-id="UATV.ua" status="online",UATV (720p)
 https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="UATV.ua" status="error",UATV (720p)
 https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_hi/index.m3u8
-#EXTINF:-1 tvg-id="UkrLive.ua" status="online",UkrLive (Перший незалежний) (1080p)
+#EXTINF:-1 tvg-id="UkrLive.ua" status="error",UkrLive (Перший незалежний) (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCeOlmFkSt4KFVkivMe7uEvw/live
 #EXTINF:-1 tvg-id="Z.ua" status="online",Z (Запорожье) (1080p)
 https://stream.ztv.zp.ua/hls/live.m3u8
@@ -119,7 +119,7 @@ https://cdn10.live-tv.od.ua:8083/36chod/36chod-abr/playlist.m3u8
 https://arhat.tv/public/720p/index.m3u8
 #EXTINF:-1 tvg-id="BaltaTV.ua" status="online",Балта ТВ (768p)
 http://194.50.51.34/playlist.m3u8
-#EXTINF:-1 tvg-id="VTV.ua" status="online",ВТВ (576p)
+#EXTINF:-1 tvg-id="VTV.ua" status="error",ВТВ (576p)
 http://video.vtvplus.com.ua:81/hls/online/index.m3u8
 #EXTINF:-1 tvg-id="Glas.ua" status="online",Глас (576p)
 http://85.238.112.69:8811/hls_sec/239.0.4.18-.m3u8
@@ -149,7 +149,7 @@ http://edge3.iptv.macc.com.ua/life/k1.m3u8
 https://cdn1.live-tv.od.ua:8083/krugod/krugod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="LanetTV.ua" status="online",Ланет.TV (486p)
 http://kiev1-cdn.lanet.tv/live/1008.m3u8
-#EXTINF:-1 tvg-id="NadiyaNovyykanal.ua" status="online",Надия/Новый канал (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="NadiyaNovyykanal.ua" status="timeout",Надия/Новый канал (576p) [Not 24/7]
 http://nadiya.home-net.com.ua/mob/mystream.m3u8
 #EXTINF:-1 tvg-id="Nadiya.ua" status="online",Надія (720p) [Not 24/7]
 https://stream.hope.ua/hopeua/live_1/playlist.m3u8
@@ -256,7 +256,7 @@ https://cdn1.live-tv.od.ua:8083/krugod/krugod/playlist.m3u8
 https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Трофей ТВ (720p)
 https://5db1ab4f970be.streamlock.net/live/smil:trofey.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Ukraina24.ua" status="error",Україна 24 (1080p)
+#EXTINF:-1 tvg-id="Ukraina24.ua" status="online",Україна 24 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCMp5Buw-6LpbbV9r9Sl_5yg/live
 #EXTINF:-1 tvg-id="Futbol1.ua" status="timeout",Футбол 1 (576p) [Not 24/7]
 https://95-213-224-183.livesports24.online/uafootballua1.m3u8
