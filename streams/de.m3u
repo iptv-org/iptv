@@ -23,7 +23,7 @@ https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/139
 #EXTINF:-1 tvg-id="" status="timeout",ARTI TV (480p) [Not 24/7]
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/139.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",ARTI TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",ARTI TV (1080p) [Not 24/7]
 http://176.10.117.18:8000/play/a002/index.m3u8
 #EXTINF:-1 tvg-id="BadenTV.de" status="online",Baden TV (1080p) [Not 24/7]
 http://badentv-stream2.siebnich.info/rtplive/btv.stream/live.m3u8
@@ -65,7 +65,7 @@ http://62.113.210.250/medienasa-live/ok-wernigerode_high/hasbahca.m3u8?bitrate=8
 http://62.113.210.250/medienasa-live/ok-wernigerode_high/chunklist_w937425968.m3u8
 #EXTINF:-1 tvg-id="ChemnitzFernsehen.de" status="online",Chemnitz Fernsehen (1080p)
 https://chemnitz.iptv-playoutcenter.de/chemnitz/chemnitzfernsehen.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",CIRA TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",CIRA TV (720p) [Not 24/7]
 http://176.10.117.18:8000/play/a00f/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ÇİRA TV (480p) [Not 24/7]
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/25
@@ -87,7 +87,7 @@ http://tv.artcom-venture.de:1322/dmf/tv.m3u8
 https://tv.artcom-venture.de/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DresdenFernsehen.de" status="online",Dresden Fernsehen (1080p) [Not 24/7]
 https://dresden.iptv-playoutcenter.de/dresden/dresdenfernsehen.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="DW.de" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
+#EXTINF:-1 tvg-id="DW.de" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s26/index.m3u8
 #EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
@@ -164,7 +164,7 @@ http://58bd5b7a98e04.streamlock.net/medienasa-live/kulturmd_high/playlist.m3u8
 http://62.113.210.250/medienasa-live/mp4:kulturmd_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KulturMD.de" status="online",KulturMD (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:kulturmd_high/playlist.m3u8
-#EXTINF:-1 tvg-id="KWTVWildau.de" status="error",KW TV Wildau (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KWTVWildau.de" status="online",KW TV Wildau (720p) [Not 24/7]
 https://58af0c57eaf3e.streamlock.net/easycast11-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="Lausitzwelle.de" status="online",Lausitzwelle (Fernsehen) (1080p)
 https://5856e1a25f71a.streamlock.net/easycast9-live/mp4:livestreamhd10/playlist.m3u8
@@ -198,13 +198,13 @@ https://ndrevent-lh.akamaihd.net/i/ndrevent_3@409068/master.m3u8
 https://ndrfs-lh.akamaihd.net/i/ndrfs_fs@430230/master.m3u8
 #EXTINF:-1 tvg-id="NDRHamburg.de" status="timeout",NDR Hamburg (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_hh/master.m3u8
-#EXTINF:-1 tvg-id="NDRHamburg.de" status="timeout",NDR Hamburg (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NDRHamburg.de" status="online",NDR Hamburg (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
-#EXTINF:-1 tvg-id="NDRInternational.de" status="online",NDR International (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NDRInternational.de" status="timeout",NDR International (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_int@430236/master.m3u8
 #EXTINF:-1 tvg-id="NDRMecklenburgVorpommern.de" status="timeout",NDR Mecklenburg-Vorpommern (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
-#EXTINF:-1 tvg-id="NDRMecklenburgVorpommern.de" status="timeout",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NDRMecklenburgVorpommern.de" status="online",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
 #EXTINF:-1 tvg-id="NDRNiedersachsen.de" status="timeout",NDR Niedersachsen (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
@@ -214,7 +214,7 @@ https://ndrfs-lh.akamaihd.net/i/ndrfs_nds@430233/master.m3u8
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
 #EXTINF:-1 tvg-id="NDRSchleswigHolstein.de" status="online",NDR Schleswig-Holstein (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_sh@430234/master.m3u8
-#EXTINF:-1 tvg-id="NDRWeltweiter.de" status="online",NDR Weltweiter (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NDRWeltweiter.de" status="timeout",NDR Weltweiter (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_ww@430235/master.m3u8
 #EXTINF:-1 tvg-id="NiederbayernTV.de" status="error",Niederbayern TV (1080p) [Not 24/7]
 https://stream03.stream.welocal.world/stream/nla/ngrp:nla.stream_all/playlist.m3u8
@@ -322,7 +322,7 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3u
 #EXTINF:-1 tvg-id="PunktumSdharz.de" status="online",Punktum S�dharz (1080p)
 http://62.113.210.250/medienasa-live/punktum_high/master.m3u8
-#EXTINF:-1 tvg-id="Radio21TV.de" status="online",Radio 21 TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Radio21TV.de" status="error",Radio 21 TV (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/22300508/events/6675945/live.m3u8
 #EXTINF:-1 tvg-id="RadioWeserTVBremen.de" status="online",Radio Weser TV Bremen (576p)
 https://5857499ee635b.streamlock.net/radiowesertv-live/mp4:livestreamTV/playlist.m3u8
@@ -368,9 +368,9 @@ https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/playlist.m3
 https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
-#EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RocklandTV.de" status="error",Rockland TV (720p) [Not 24/7]
 http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
-#EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RocklandTV.de" status="error",Rockland TV (720p) [Not 24/7]
 http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RONTV.de" status="error",RON TV (1080p)
 https://ron-i.akamaihd.net/hls/live/523496/ron/master.m3u8
