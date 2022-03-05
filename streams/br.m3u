@@ -25,7 +25,7 @@ https://evpp.mm.uol.com.br/geob_band/band/playlist.m3u8
 https://evpp.mm.uol.com.br/geob_band/bandnewstv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",BM&C [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoja0MNI4SIvXqJR3szbSfw/live
-#EXTINF:-1 tvg-id="Canal25Jundiai.br" status="online",Canal 25 Jundiaí (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal25Jundiai.br" status="error",Canal 25 Jundiaí (404p) [Not 24/7]
 https://stream01.msolutionbrasil.com.br/hls/canal25/live.m3u8
 #EXTINF:-1 tvg-id="CanaldoBoi.br" status="error",Canal do Boi
 https://aovivo.equipea.com.br:5443/WebRTCAppEE/streams/713829795440060188004130.m3u8
@@ -87,7 +87,7 @@ http://stream.novotempo.com:1935/tv/tvnovotempo.smil/live.m3u8
 https://stream.live.novotempo.com/tv/smil:tvnovotempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NuevoTiempo.br" status="online",Nuevo Tiempo (720p) [Not 24/7]
 https://stream.live.novotempo.com/tv/smil:tvnuevotiempo.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="PeruChannel.br" status="online",Perú Channel (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PeruChannel.br" status="error",Perú Channel (720p) [Not 24/7]
 https://stmv1.duvoxtv.com.br/novelaplz/novelaplz/playlist.m3u8
 #EXTINF:-1 tvg-id="PUCTVGoias.br" status="online",PUC TV Goiás (326p) [Not 24/7]
 http://flash.softhost.com.br:1935/pucgoias/aovivo/live.m3u8
@@ -143,7 +143,7 @@ https://59f1cbe63db89.streamlock.net:1443/tvpampa/tvpampa/playlist.m3u8
 https://hls.brasilstream.com.br/live/redetv/redetv/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeVida.br" status="online",Rede Vida (720p) [Not 24/7]
 https://cvd1.cds.ebtcvd.net/live-redevida/smil:redevida.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RedeTVTocantins.br" status="online",RedeTV! Tocantins (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RedeTVTocantins.br" status="blocked",RedeTV! Tocantins (720p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/redetvro/redetvro/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroCartoon.br" status="online",Retrô Cartoon (480p) [Not 24/7]
 https://stmv1.srvif.com/retrotv/retrotv/playlist.m3u8
@@ -159,7 +159,7 @@ https://evpp.mm.uol.com.br/ne10/ne10-tvjornal-caruaru-video-web.sdp/playlist.m3u
 #EXTINF:-1 tvg-id="TVJornal.br" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",SBT TV Jornal Recife (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://evpp.mm.uol.com.br/ne10/ne10.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSerraDourada.br" status="blocked",SBT TV Serra Dourada (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVSerraDourada.br" status="online",SBT TV Serra Dourada (720p) [Not 24/7]
 https://5a1c76baf08c0.streamlock.net/tvsd2/smil:tvsd2_20042020.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Sesc TV (1080p) [Not 24/7]
 https://slbps-ml-sambatech.akamaized.net/samba-live/2472/7424/8a00fe7cc36ac263b2c3e9324497d5ff/video/0c884f97-4264-446f-abcd-03aa46089a96_index.m3u8
@@ -176,9 +176,9 @@ http://stmv8.conectastm.com/wagner1168/wagner1168/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAparecida.br" status="online",TV Aparecida (1080p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
-http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8
-#EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
 https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/tvdigitalbirigui/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
+http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8
 #EXTINF:-1 tvg-id="TVBNO.br" status="online",TV BNO (270p) [Not 24/7]
 http://tv02.logicahost.com.br:1935/bonner/bonner/live.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br" status="timeout",TV Brasil
@@ -213,11 +213,11 @@ https://edge-pe-01.eduplay.rnp.br/media/ocp(r(SOtSyQ)t(AAAAAAAAAAA)p(d(ADo)k(EBE
 https://5f593df7851db.streamlock.net/evangelizar/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TVFuturo.br" status="error",TV Futuro (720p) [Not 24/7]
 https://streaming03.zas.media/tvfuturo/tvfuturo/playlist.m3u8
-#EXTINF:-1 tvg-id="TVGalegaBlumenau.br" status="timeout",TV Galega Blumenau (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVGalegaBlumenau.br" status="online",TV Galega Blumenau (720p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-8538/LVW8538_KBtZ9UMIZn/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGazeta.br" status="online",TV Gazeta (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/5381476/events/8947634/live.m3u8
-#EXTINF:-1 tvg-id="TVGideoes.br" status="error",TV Gideoes (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVGideoes.br" status="online",TV Gideoes (1080p) [Not 24/7]
 https://streaming01.zas.media/gideoes/programacao/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGuara.br" status="online",TV Guará (720p) [Not 24/7]
 https://59f2354c05961.streamlock.net:1443/tvguara/tvguara/playlist.m3u8
