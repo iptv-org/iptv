@@ -23,7 +23,7 @@ https://sb.top-ix.org/avtvlive/streaming/playlist.m3u8
 http://backup.superstreaming.inaria.me/BikeSmartMobilityDTT/playlist.m3u8
 #EXTINF:-1 tvg-id="BoingFrance.it" status="error",Boing France (720p) [Not 24/7]
 http://flusonic-1.platinum-tv.com/boing/index.m3u8?token=test
-#EXTINF:-1 tvg-id="BoingSpain.it" status="timeout",Boing Spain
+#EXTINF:-1 tvg-id="BoingSpain.it" status="error",Boing Spain
 http://149.62.177.157:8000/play/a010
 #EXTINF:-1 tvg-id="CafeTV24.it" status="online",CafeTV24 (720p)
 https://srvx1.selftv.video/cafe/live/playlist.m3u8
@@ -183,17 +183,17 @@ https://rtl-video2-stream.thron.com/live-video/video2/ngrp:video2/playlist.m3u8
 https://5929b138b139d.streamlock.net/RadioIbizaTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioIglesias.it" status="online",Radio Iglesias (576p) [Geo-blocked]
 http://wms.shared.streamshow.it/visualradio/mp4:visualradio/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="online",Radio Iglesias Sardegna (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="blocked",Radio Iglesias Sardegna (576p) [Geo-blocked]
 https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioItaliaTV.it" status="online",Radio Italia TV (480p)
 https://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/master.m3u8
-#EXTINF:-1 tvg-id="RadioLombardiaTV.it" status="online",Radio Lombardia TV (720p)
+#EXTINF:-1 tvg-id="RadioLombardiaTV.it" status="error",Radio Lombardia TV (720p)
 https://flash7.xdevel.com/radiolombardiatv/radiolombardiatv/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioMontecarlo.it" status="error",Radio Montecarlo (576p)
 https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(bb)/index.m3u8
 #EXTINF:-1 tvg-id="RadioNumberOne.it" status="online",Radio Number One (720p) [Not 24/7]
 https://56b50ada2d659.streamlock.net/RN1TV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioPiterPanTV.it" status="online",Radio Piter Pan TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioPiterPanTV.it" status="error",Radio Piter Pan TV (720p) [Not 24/7]
 https://58d921499d3d3.streamlock.net/RadioPiterpanTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioRadicaleTV.it" status="online",Radio Radicale TV (240p) [Not 24/7]
 https://video-ar.radioradicale.it/diretta/padtv2/playlist.m3u8
@@ -340,7 +340,7 @@ http://wms.shared.streamshow.it/telepavia/telepavia/playlist.m3u8
 https://flash2.xdevel.com/telepegasocanale812/telepegasocanale812/playlist.m3u8
 #EXTINF:-1 tvg-id="TelePordenone.it" status="online",Tele Pordenone (576p) [Not 24/7]
 http://213.187.12.18/telepn/telepn.m3u8
-#EXTINF:-1 tvg-id="TeleQuattro.it" status="online",Tele Quattro (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleQuattro.it" status="error",Tele Quattro (480p) [Not 24/7]
 http://wms.shared.streamshow.it/telequattro/telequattro/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleRadioSciacca.it" status="online",Tele Radio Sciacca (240p) [Not 24/7]
 http://5cbd3bc28341f.streamlock.net:1935/trs_live/teleradiosciacca-tv/playlist.m3u8
@@ -359,10 +359,10 @@ https://1aadf145546f475282c5b4e658c0ac4b.msvdn.net/live/324149/hlbAWtl/playlist.
 #EXTINF:-1 tvg-id="Telecupole.it" status="error",Telecupole (540p)
 https://live.livevideosolution.it/telecupole/dd6d85e5b7452f7b85a099509292b421.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Telefoggia.it" status="online",Telefoggia (480p) [Not 24/7]
-https://59d7d6f47d7fc.streamlock.net/telefoggia/telefoggia/playlist.m3u8
-#EXTINF:-1 tvg-id="Telefoggia.it" status="error",Telefoggia (480p) [Not 24/7]
 http://wms.shared.streamshow.it/telefoggia/mp4:telefoggia/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleFormula.it" status="online",TeleFormula (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Telefoggia.it" status="online",Telefoggia (480p) [Not 24/7]
+https://59d7d6f47d7fc.streamlock.net/telefoggia/telefoggia/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleFormula.it" status="error",TeleFormula (720p) [Not 24/7]
 https://wms60.tecnoxia.com/radiof/abr_radioftele/playlist.m3u8
 #EXTINF:-1 tvg-id="Telefriuli.it" status="error",Telefriuli (720p) [Not 24/7]
 https://streamtechglobal.akamaized.net/hls/live/2024685/telefriuli/Group01/playlist.m3u8
@@ -374,7 +374,7 @@ http://live.sloode.com:1935/telegranda_live/C2AD-0664-DC75-4744/playlist.m3u8
 http://api.new.livestream.com/accounts/17114188/events/4902226/live.m3u8
 #EXTINF:-1 tvg-id="TeleMia.it" status="online",TeleMia (576p)
 https://playerssl.telemia.tv/fileadmin/hls/TelemiaHD/telemia85_mediachunks.m3u8
-#EXTINF:-1 tvg-id="TeleMiaExtra.it" status="online",TeleMia Extra (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleMiaExtra.it" status="error",TeleMia Extra (720p) [Not 24/7]
 https://playerssl.telemia.tv/fileadmin/hls/TelemiaExtra/stream.m3u8
 #EXTINF:-1 tvg-id="Telemolise.it" status="error",Telemolise (406p)
 http://185.202.128.1:1935/TelemoliseStream/telemoliseTV.stream_tlm/playlist.m3u8
@@ -404,7 +404,7 @@ https://5cbd3bc28341f.streamlock.net:444/telesud/live/playlist.m3u8
 https://diretta.teleterni.it/live/stream_src.m3u8
 #EXTINF:-1 tvg-id="Teletricolore.it" status="online",Teletricolore (480p) [Not 24/7]
 https://59d7d6f47d7fc.streamlock.net/rs2/rs2/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleTusciaSabina2000.it" status="online",TeleTusciaSabina 2000 (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleTusciaSabina2000.it" status="error",TeleTusciaSabina 2000 (576p) [Not 24/7]
 http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleVenezia.it" status="online",TeleVenezia (576p)
 https://59d8c0cee6f3d.streamlock.net/televenezia/televenezia/playlist.m3u8
@@ -430,7 +430,7 @@ https://5e73cf528f404.streamlock.net/TrentinoTV/livestream/playlist.m3u8
 http://w1.streamingmedia.it:1935/trmh24/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TSNTeleSondrioNews.it" status="online",TSN Tele Sondrio News (480p) [Not 24/7]
 http://wms.shared.streamshow.it/tsn/tsn_mobile/playlist.m3u8
-#EXTINF:-1 tvg-id="TV7Azzurra.it" status="error",TV7 Azzurra (270p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV7Azzurra.it" status="online",TV7 Azzurra (270p) [Not 24/7]
 http://217.61.26.46:8080/hls/azzurra.m3u8
 #EXTINF:-1 tvg-id="TV7Benevento.it" status="online",TV7 Benevento (288p) [Not 24/7]
 http://streaming.senecadot.com/live/flv:tv7.sdp/playlist.m3u8
@@ -462,7 +462,7 @@ https://umbriatv.stream.rubidia.it:8083/live/umbriatv/playlist.m3u8
 http://wms.shared.streamshow.it/veratv/mp4:veratv/playlist.m3u8
 #EXTINF:-1 tvg-id="VeraTVMarche.it" status="online",Vera TV (Marche) (1080p) [Not 24/7]
 http://wms.shared.streamshow.it/veratv/veratv/playlist.m3u8
-#EXTINF:-1 tvg-id="VideoBresciaTV.it" status="online",Video Brescia TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="VideoBresciaTV.it" status="error",Video Brescia TV (720p) [Not 24/7]
 http://wms.shared.streamshow.it/videobrescia/videobrescia/playlist.m3u8
 #EXTINF:-1 tvg-id="VideoCalabria.it" status="error",Video Calabria (480p) [Not 24/7]
 http://wms.shared.streamshow.it/videocalabria/videocalabria/playlist.m3u8
