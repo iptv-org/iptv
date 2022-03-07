@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="1Plus1.ua" status="online",1+1 (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCVEaAWKfv7fE1c-ZuBs7TKQ/live
 #EXTINF:-1 tvg-id="1Plus1Sport.ua" status="online",1+1 Спорт (720p) [Not 24/7]
 https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",4 канал (720p)
@@ -10,7 +12,7 @@ http://95.67.106.10/hls/nta_ua_hi/index.m3u8
 http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
 http://95.67.106.10/hls/nta_ua_low/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",4 канал (1080p)
+#EXTINF:-1 tvg-id="" status="online",4 канал (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
 #EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
 https://cdn10.live-tv.od.ua:8083/7tvod/7tvod-abr/playlist.m3u8
@@ -94,7 +96,7 @@ https://rtsp.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
 https://rtsp.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Plus.ua" status="error",TV7+ (Хмельницький) (576p) [Not 24/7]
 https://tv7plus.com/hls/tv7.m3u8
-#EXTINF:-1 tvg-id="UAOdesa.ua" status="online",UA: Одеса (384p) [Not 24/7]
+#EXTINF:-1 tvg-id="UAOdesa.ua" status="error",UA: Одеса (384p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/odtrkod/odtrkod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="UATV.ua" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",UATV (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
@@ -105,7 +107,7 @@ https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_mid/index.m3u8
 https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="UATV.ua" status="error",UATV (720p)
 https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_hi/index.m3u8
-#EXTINF:-1 tvg-id="UkrLive.ua" status="error",UkrLive (Перший незалежний) (1080p)
+#EXTINF:-1 tvg-id="UkrLive.ua" status="online",UkrLive (Перший незалежний) (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCeOlmFkSt4KFVkivMe7uEvw/live
 #EXTINF:-1 tvg-id="Z.ua" status="online",Z (Запорожье) (1080p)
 https://stream.ztv.zp.ua/hls/live.m3u8
@@ -113,7 +115,7 @@ https://stream.ztv.zp.ua/hls/live.m3u8
 https://cdn1.live-tv.od.ua:8083/a1od/a1od-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="Avtoradio.ua" status="online",Авторадио (720p) [Not 24/7]
 https://rtmp.radiogroup.com.ua:8080/live/avto/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Академия (Одесса) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Академия (Одесса) (720p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/36chod/36chod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="ArhatTV.ua" status="online",Архат ТВ (720p)
 https://arhat.tv/public/720p/index.m3u8
@@ -149,7 +151,7 @@ http://edge3.iptv.macc.com.ua/life/k1.m3u8
 https://cdn1.live-tv.od.ua:8083/krugod/krugod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="LanetTV.ua" status="online",Ланет.TV (486p)
 http://kiev1-cdn.lanet.tv/live/1008.m3u8
-#EXTINF:-1 tvg-id="NadiyaNovyykanal.ua" status="online",Надия/Новый канал (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="NadiyaNovyykanal.ua" status="timeout",Надия/Новый канал (576p) [Not 24/7]
 http://nadiya.home-net.com.ua/mob/mystream.m3u8
 #EXTINF:-1 tvg-id="Nadiya.ua" status="online",Надія (720p) [Not 24/7]
 https://stream.hope.ua/hopeua/live_1/playlist.m3u8
@@ -232,7 +234,7 @@ http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/playlist.m3u8
 http://80.91.177.102:1935/live/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="Svarozhichi.ua" status="online",Сварожичи (720p)
 http://tv.tv-project.com:1935/live/live1/playlist.m3u8
-#EXTINF:-1 tvg-id="SK1.ua" status="online",СК 1 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SK1.ua" status="error",СК 1 (720p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/sk1zt/sk1zt-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="STB.ua" status="timeout",СТБ
 http://188.35.9.11:11021/j
@@ -272,5 +274,3 @@ http://109.68.40.67/life/magnolia.m3u8
 https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="YaTB.ua" status="online",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
-#EXTINF:-1 tvg-id="1Plus1.ua",1+1 (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCVEaAWKfv7fE1c-ZuBs7TKQ/live
