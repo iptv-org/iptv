@@ -1,12 +1,14 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="ANTV.id" status="online",ANTV (720p)
+http://210.210.155.35/qwr9ew/s/s07/index1.m3u8
 #EXTINF:-1 tvg-id="BeritaSatu.id" status="online",BeritaSatu (540p)
 http://edge.linknetott.swiftserve.com/live/BsNew/amlst:beritasatunewsbs/playlist.m3u8
 #EXTINF:-1 tvg-id="BeritaSatu.id" status="online",BeritaSatu (720p)
 https://b1news.beritasatumedia.com/Beritasatu/B1News_manifest.m3u8
-#EXTINF:-1 tvg-id="BeritaSatuEnglish.id" status="online",BeritaSatu English (540p) [Not 24/7]
-http://edge.linknetott.swiftserve.com/live/BsNew/amlst:bsenglish/playlist.m3u8
 #EXTINF:-1 tvg-id="BeritaSatuWorld.id" status="online",BeritaSatu World (540p) [Not 24/7]
 http://edge.linknetott.swiftserve.com/live/BsNew/amlst:bsnew/playlist.m3u8
+#EXTINF:-1 tvg-id="BeritaSatuWorld.id" status="online",BeritaSatu World (720p) [Not 24/7]
+https://b1world.beritasatumedia.com/Beritasatu/B1World_1280x720.m3u8
 #EXTINF:-1 tvg-id="CNBCIndonesia.id" status="online",CNBC Indonesia (720p)
 https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/master.m3u8
 #EXTINF:-1 tvg-id="CNNIndonesia.id" status="online",CNN Indonesia (720p)
@@ -23,22 +25,26 @@ https://liveanevia.mncnow.id/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd
 http://iamchannel.org:1935/tes/1/playlist.m3u8
 #EXTINF:-1 tvg-id="IndonesiaChannel.id" status="online",Indonesia Channel (720p) [Not 24/7]
 http://wowzaprod236-i.akamaihd.net/hls/live/1019903/7dd4cf51/playlist.m3u8
-#EXTINF:-1 tvg-id="Indosiar.id" status="blocked",Indosiar [Geo-blocked]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.vidio.com/live/205-indosiar
-#EXTINF:-1 tvg-id="" status="online",iNews (720p)
+#EXTINF:-1 tvg-id="Indosiar.id" status="online",Indosiar (720p)
+http://rr2.dens.tv/s/s04/01.m3u8
+#EXTINF:-1 tvg-id="INews.id" status="online",iNews (720p)
 https://vcdn2.rctiplus.id/live/eds/inews_fta/live_fta/inews_fta.m3u8
-#EXTINF:-1 tvg-id="KompasTV.id" status="error",Kompas TV [Geo-blocked]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.vidio.com/live/874-kompas-tv
+#EXTINF:-1 tvg-id="BeritaSatuEnglish.id" status="online",JakartaGlobe News (540p) [Not 24/7]
+http://edge.linknetott.swiftserve.com/live/BsNew/amlst:bsenglish/playlist.m3u8
+#EXTINF:-1 tvg-id="BeritaSatuEnglish.id" status="online",JakartaGlobe News (720p) [Not 24/7]
+https://b1english.beritasatumedia.com/Beritasatu/B1English_1280x720.m3u8
+#EXTINF:-1 tvg-id="KompasTV.id" status="online",Kompas TV (720p)
+https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(dc9040ad-a4e1-4d08-883c-a65542b69602)/index.m3u8
 #EXTINF:-1 tvg-id="MetroTV.id" status="online",Metro TV (360p) [Not 24/7]
 http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MNCTV.id" status="online",MNCTV (720p)
 https://vcdn2.rctiplus.id/live/eds/mnctv_fta/live_fta/mnctv_fta.m3u8
-#EXTINF:-1 tvg-id="MyTV.id" status="error",MyTV (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.vidio.com/live/6711-mytv
-#EXTINF:-1 tvg-id="NetTV.id" status="error",Net. TV [Geo-blocked]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.vidio.com/live/875-net-tv
-#EXTINF:-1 tvg-id="OChannel.id" status="error",O Channel [Geo-blocked]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.vidio.com/live/206-ochannel
+#EXTINF:-1 tvg-id="MyTV.id" status="online",MyTV (720p) [Not 24/7]
+http://playlist.urfan.web.id/x6bnqe/s/s88/S4/mnf.m3u8
+#EXTINF:-1 tvg-id="NetTV.id" status="online",Net. TV (720p) [Not 24/7]
+http://45.126.83.51/qwr9ew/s/s08/01.m3u8
+#EXTINF:-1 tvg-id="OChannel.id" status="online",O Channel (720p)
+http://rr3.dens.tv/s/s73/01.m3u8
 #EXTINF:-1 tvg-id="OneTV.id" status="online",One TV (720p) [Not 24/7]
 https://liveanevia.mncnow.id/live/eds/SetOne/sa_dash_vmx/SetOne.mpd
 #EXTINF:-1 tvg-id="Radio51TV.id" status="online",Radio 51 TV (480p) [Geo-blocked]
@@ -49,16 +55,20 @@ https://vcdn2.rctiplus.id/live/eds/rcti_fta/live_fta/rcti_fta.m3u8
 http://edge.linknetott.swiftserve.com/live/BsNew/amlst:reformedch/playlist.m3u8
 #EXTINF:-1 tvg-id="RRINet.id" status="online",RRI Net (720p) [Not 24/7]
 http://36.89.47.217:11935/rrinet/live/index.m3u8
-#EXTINF:-1 tvg-id="RTV.id" status="error",RTV [Geo-blocked]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.vidio.com/live/1561-rtv
-#EXTINF:-1 tvg-id="SCTV.id" status="error",SCTV (480p) [Not 24/7]
-https://liveanevia.mncnow.id/live/eds/SCTV/sa_dash_vmx/SCTV.mpd
+#EXTINF:-1 tvg-id="RTV.id" status="online",RTV (720p)
+https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(41869351-4a9c-4e57-b54b-8cf5dfc919e1)/index.m3u8
+#EXTINF:-1 tvg-id="SCTV.id" status="online",SCTV (720p) [Not 24/7]
+http://rr2.dens.tv/s/s03/01.m3u8
+#EXTINF:-1 tvg-id="SeaToday.id" status="online",Sea Today (720p)
+https://cdn-telkomsel-01.akamaized.net/Content/DASH/Live/channel(9ce3f094-4044-467e-84b7-b684a49571d5)/manifest.mpd
 #EXTINF:-1 tvg-id="Trans7.id" status="online",Trans7 (720p) [Not 24/7]
 https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TransTV.id" status="online",Trans TV (720p)
 https://video.detik.com/transtv/smil:transtv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVKU.id" status="online",TVKU (720p) [Not 24/7]
 http://103.30.1.14:8080/hls/live.m3u8
+#EXTINF:-1 tvg-id="TVOne.id" status="online",TVOne (720p)
+http://rr2.dens.tv/s/s105/01.m3u8
 #EXTINF:-1 tvg-id="TVRParlemen.id" status="error",TVR Parlemen (720p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenBadanAnggaran.id" status="error",TVR Parlemen Badan Anggaran (720p) [Not 24/7]
