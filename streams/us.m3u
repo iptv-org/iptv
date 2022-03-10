@@ -523,7 +523,7 @@ http://s1.mysportz.tv:2082/CNBC/playlist.m3u8
 http://ott-cdn.ucom.am/s65/index.m3u8
 #EXTINF:-1 tvg-id="CNBCIndonesia.us" status="online",CNBC Indonesia (720p)
 https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CNNBrasil.us" status="error",CNN Brasil (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="CNNBrasil.us" status="online",CNN Brasil (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCvdwhh_fDyWccR42-rReZLw/live
 #EXTINF:-1 tvg-id="CNNChile.us" status="timeout",CNN Chile (720p)
 https://unlimited1-cl-movistar.dps.live/cnn/cnn.smil/playlist.m3u8
@@ -688,7 +688,7 @@ https://cdn20.liveonlineservices.com/hls/eye95tv.m3u8
 https://cs.ebmcdn.net/eastbay-live-hs-1/fairfax-pull/mp4:fairfax.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="FaithLifeTV.us" status="error",Faith & Life TV (720p)
 https://na-all9.secdn.net/logos-channel/live/faithlifetv/playlist.m3u8
-#EXTINF:-1 tvg-id="FashionBoxHD.us" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Fast&Fun Box (Russian) (480p)
+#EXTINF:-1 tvg-id="FashionBoxHD.us" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Fast&Fun Box (Russian) (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s79/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",FastWay (576p)
@@ -697,7 +697,7 @@ http://fastway.ddns.net:6421/fastway/live10/index.m3u8
 https://a.jsrdn.com/broadcast/7536b84786/+0000/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",FIGHT SPORTS (1080p)
 https://shls-fight-sports-ak.akamaized.net/out/v1/ee7e6475b12e484bbfa5c31461ad4306/index.m3u8
-#EXTINF:-1 tvg-id="FightBoxHD.us" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",FightBox HD (480p)
+#EXTINF:-1 tvg-id="FightBoxHD.us" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",FightBox HD (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s86/index.m3u8
 #EXTINF:-1 tvg-id="FightingSpirit.us" status="online",Fighting Spirit (720p)
@@ -776,7 +776,7 @@ http://209.91.213.10:8088/play/a01z
 https://dai.google.com/linear/hls/event/SIvlK2VmTsqL_hgyKeFIPg/master.m3u8
 #EXTINF:-1 tvg-id="GalavisionOeste.us" status="online",Galavision West [Geo-blocked] (720p)
 https://dai.google.com/linear/hls/event/Nx4jutBDR5ekuML_73omhg/master.m3u8
-#EXTINF:-1 tvg-id="GalvestonCountyTV.us" status="error",Galveston County TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="GalvestonCountyTV.us" status="online",Galveston County TV (720p) [Not 24/7]
 https://stream.swagit.com/live-edge/galvestontx/smil:hd-16x9-1-b/playlist.m3u8
 #EXTINF:-1 tvg-id="GalxyTV.us" status="online",Galxy TV (720p)
 https://content.uplynk.com/channel/f467430e4a8e49a59ff3183cf51092b2.m3u8
@@ -804,10 +804,10 @@ https://5e6cea03e25b6.streamlock.net/live/GRIT.stream/playlist.m3u8
 https://d37j5jg7ob6kji.cloudfront.net/index.m3u8
 #EXTINF:-1 tvg-id="GunAzTV.us" status="error",GünAz TV (480p)
 rtsp://gtv.live-s.cdn.bitgravity.com/cdn-live/_definst_/gtv/live/feed02?nc=1
-#EXTINF:-1 tvg-id="GunAzTV.us" status="online",GünAz TV (720p) [Not 24/7]
-https://gtv.live-s.cdn.bitgravity.com/cdn-live/_definst_/gtv/live/feed03/playlist.m3u8
 #EXTINF:-1 tvg-id="GunAzTV.us" status="error",GünAz TV (720p) [Not 24/7]
 http://gtv.live.cdn.bitgravity.com/gtv/live/feed03
+#EXTINF:-1 tvg-id="GunAzTV.us" status="error",GünAz TV (720p) [Not 24/7]
+https://gtv.live-s.cdn.bitgravity.com/cdn-live/_definst_/gtv/live/feed03/playlist.m3u8
 #EXTINF:-1 tvg-id="GustoTV.us" status="error",Gusto TV (720p)
 https://a.jsrdn.com/broadcast/ebf95254ca/+0000/c.m3u8
 #EXTINF:-1 tvg-id="GustoTV.us" status="online",Gusto TV (1080p)
@@ -819,7 +819,7 @@ https://www.livedoomovie.com/02_H2HD_720p/chunklist.m3u8
 https://hdtv.prod2.ioio.tv/broker/play/e529407a-cb61-45ce-a9ad-94f0ad5e0ad9.m3u8
 #EXTINF:-1 tvg-id="HarleyDavidsonRacingTV.us" status="online",Harley Davidson Racing TV (720p) [Not 24/7]
 https://hdtv.prod2.ioio.tv/broker/play/de245a96-516c-413d-81e9-419c05bbc6a7.m3u8
-#EXTINF:-1 tvg-id="HarleyDavidsonRidesTV.us" status="online",Harley Davidson Rides TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="HarleyDavidsonRidesTV.us",Harley Davidson Rides TV (1080p) [Not 24/7]
 https://hdtv.prod2.ioio.tv/broker/play/d4b0111a-3dcb-46fb-b2bb-1c27eca5df35.m3u8
 #EXTINF:-1 tvg-id="HarleyDavidsonTV.us" status="error",Harley Davidson TV (1080p)
 https://hdtv.prod2.ioio.tv/broker/play/cb4086ca-daba-42f5-8acf-27ee93fee0e8.m3u8
@@ -1146,7 +1146,7 @@ http://5.255.90.184:2001/play/a04i
 https://cdn1.mobiletv.bg/T5/ng_wild_hd/ng_wild_hd_794613_850k.m3u8
 #EXTINF:-1 tvg-id="NationalGeographicWildMiddleEast.us" status="error",National Geographic Wild Middle East (720p) [Not 24/7]
 http://50.7.161.82:8278/streams/d/Natgeowild/playlist.m3u8
-#EXTINF:-1 tvg-id="NationalGeographicWildRussia.us" status="timeout",National Geographic Wild Russia (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="NationalGeographicWildRussia.us" status="online",National Geographic Wild Russia (1080p) [Not 24/7]
 https://sc.id-tv.kz/NatGeoWildHD_34_35.m3u8
 #EXTINF:-1 tvg-id="NAUTVNorthernArizonaUniversity.us" status="online",NAU-TV Northern Arizona University (720p) [Not 24/7]
 http://stream.ec.nau.edu/live/amlst:channelfour/playlist.m3u8
@@ -1163,7 +1163,7 @@ https://wrclive-f.akamaihd.net/i/wrcb1_1@46880/master.m3u8
 https://wnbclive-f.akamaihd.net/i/NY_STREAM1@13992/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NBC4 WRC-TV Washington News (1080p)
 https://wrclive-f.akamaihd.net/i/DC_STREAM1@22925/master.m3u8
-#EXTINF:-1 tvg-id="" status="error",NBC5 KXAS-TV News Dallas TX (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",NBC5 KXAS-TV News Dallas TX (1080p) [Not 24/7]
 https://kxaslive-f.akamaihd.net/i/DALLAS_STREAM5@5495/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NBC 5 News Chicago IL (WMAQ-TV) (1080p)
 https://wmaqlive-f.akamaihd.net/i/CHICAGO_STREAM1@22923/master.m3u8
@@ -1469,7 +1469,7 @@ http://18.191.91.130:1935/live/safetv/playlist.m3u8
 https://d23gend7a1exlu.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-id="SciFi4U.us" status="online",Sci-Fi 4U (720p)
 https://broadcast.mytvtogo.net/SciFiTV4u/SciFiTV4u/playlist.m3u8
-#EXTINF:-1 tvg-id="Screamfest.us" status="error",Screamfest (720p)
+#EXTINF:-1 tvg-id="Screamfest.us",Screamfest (720p)
 https://vcnleomarkstudios.teleosmedia.com/stream/leomarkstudios/screamfest/playlist.m3u8
 #EXTINF:-1 tvg-id="ScreenDreams.us" status="online",Screen Dreams (720p)
 https://content.uplynk.com/channel/3e4b9cada2b74cf18977298804134a36.m3u8
@@ -1503,9 +1503,9 @@ https://t01587-lh.akamaihd.net/i/t01587SmartLifeStyle_1@692079/master.m3u8
 https://api.new.livestream.com/accounts/27460990/events/8266916/live.m3u8
 #EXTINF:-1 tvg-id="SoniderosTV.us" status="error",Sonideros TV (360p) [Not 24/7]
 https://tv2.fastcast4u.com:3728/live/soniderostvlive.m3u8
-#EXTINF:-1 tvg-id="SBN.us" status="online",SonLife Broadcasting (SBN) (720p)
+#EXTINF:-1 tvg-id="" status="online",SonLife Broadcasting (SBN) (720p)
 https://sonlife7-i.akamaihd.net/hls/live/585011/ch7/master.m3u8
-#EXTINF:-1 tvg-id="SBN.us" status="error",SonLife Broadcasting (SBN) (720p)
+#EXTINF:-1 tvg-id="" status="error",SonLife Broadcasting (SBN) (720p)
 https://sonlife5-i.akamaihd.net/hls/live/584631/ch5/master.m3u8
 #EXTINF:-1 tvg-id="SBNGlobal.us" status="error",SonLife Broadcasting Global (SBN) (720p)
 https://sonlife10-i.akamaihd.net/hls/live/585013/ch10/master.m3u8
@@ -1549,7 +1549,7 @@ https://stitcheraws.unreel.me/wse-node02.powr.com/live/5af61f59d5eeee7af3d1db8f/
 https://tastemadessai.akamaized.net/amagi_hls_data_tastemade-tastemade/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="TastemadeAustralia.us" status="online",Tastemade Australia (1080p)
 https://tastemadeintaus-smindia.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="TastemadeenEspanol.us" status="online",Tastemade en Español (1080p)
+#EXTINF:-1 tvg-id="TastemadeenEspanol.us",Tastemade en Español (1080p)
 https://tastemadees16intl-brightcove.amagi.tv/hls/amagi_hls_data_tastemade-tastemade-es16intl-brightcove/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="TBD.us" status="online",TBD. (720p)
 https://content.uplynk.com/channel/1831163f97674328ad9f4b4814ed39c5.m3u8
@@ -1748,10 +1748,6 @@ https://rpn1.bozztv.com/36bay2/gusa-tvstallyho/index.m3u8
 https://rpn1.bozztv.com/36bay2/gusa-tavern/index.m3u8
 #EXTINF:-1 tvg-id="TVSTelevisionNetwork.us" status="online",TVS Television Network (480p)
 https://rpn1.bozztv.com/36bay2/gusa-tvstn/index.m3u8
-#EXTINF:-1 tvg-id="WATCDT1.us" status="",WATC-DT
-https://uni01rtmp.tulix.tv/watc57/watc57/playlist.m3u8
-#EXTINF:-1 tvg-id="WATCDT2.us" status="",WATC-DT2
-https://uni01rtmp.tulix.tv/watc57-2/watc57-2/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSTodayHomeEntertainmentNetwork.us" status="online",TVS Today Home Entertainment Network (720p) [Not 24/7]
 https://rpn1.bozztv.com/36bay2/gusa-TVSTodayHomeEntertainment/index.m3u8
 #EXTINF:-1 tvg-id="TVSTravel.us" status="online",TVS Travel Network (720p) [Not 24/7]
@@ -1827,6 +1823,10 @@ http://203.154.243.89:11205
 #EXTINF:-1 tvg-id="" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Warner TV (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://www.livedoomovie.com/02_WarnerTVHD_720p/chunklist.m3u8
+#EXTINF:-1 tvg-id="WATCDT1.us" status="online",WATC-DT
+https://uni01rtmp.tulix.tv/watc57/watc57/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",WATC-DT2
+https://uni01rtmp.tulix.tv/watc57-2/watc57-2/playlist.m3u8
 #EXTINF:-1 tvg-id="WatchItKid.us" status="online",Watch It Kid (486p)
 https://content.uplynk.com/channel/ce3b524c342247549e996e7d3a977157.m3u8
 #EXTINF:-1 tvg-id="WatchItScream.us" status="online",Watch It Scream! (720p)
