@@ -9,7 +9,7 @@ http://109.123.126.14:1935/live/livestream1.sdp/playlist.m3u8
 https://5f3e23ac71915.streamlock.net:4434/live/livestream1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Ahwazna.uk" status="error",Ahwazna (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/ahwaznach
-#EXTINF:-1 tvg-id="AkaalTV.uk" status="online",Akaal TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="AkaalTV.uk" status="timeout",Akaal TV (360p) [Not 24/7]
 http://akaal.zecast.net/akaal-live/smil:akaaltv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AkaalTV.uk" status="online",Akaal TV (396p) [Geo-blocked]
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/akaal_tv/hls1_smart_akaal/akaal_tv.m3u8
@@ -329,19 +329,19 @@ http://159.69.58.154/manoto_plus2/manoto2.m3u8
 https://d2rwmwucnr0d10.cloudfront.net/live.m3u8
 #EXTINF:-1 tvg-id="MTA1.uk" status="error",MTA 1 (720p)
 https://cflive-emea.live-delivery.ooyala.com/out/u/3vkkbgnvsm2r5/101593/1lanVtaDE6sCK6v0vDomDayqoKeSal6G/cn/8fb839e3a82045bd99a92ecd9df257e5.m3u8
-#EXTINF:-1 tvg-id="MTA1English.uk" status="online",MTA 1 English (1080p)
+#EXTINF:-1 tvg-id="MTA1English.uk" status="error",MTA 1 English (1080p)
 https://ooyalahd2-f.akamaihd.net/i/mtaeng_delivery@345736/master.m3u8
 #EXTINF:-1 tvg-id="MTA1Original.uk" status="online",MTA 1 Original (1080p)
 https://ooyalahd2-f.akamaihd.net/i/mtaorigin_delivery@353498/master.m3u8
-#EXTINF:-1 tvg-id="MTA1Urdu.uk" status="online",MTA 1 Urdu (1080p)
+#EXTINF:-1 tvg-id="MTA1Urdu.uk" status="error",MTA 1 Urdu (1080p)
 https://ooyalahd2-f.akamaihd.net/i/mtaurdu_delivery@350117/master.m3u8
-#EXTINF:-1 tvg-id="MTA2.uk" status="online",MTA 2 (720p)
+#EXTINF:-1 tvg-id="MTA2.uk" status="error",MTA 2 (720p)
 https://ooyalahd2-f.akamaihd.net/i/mtach7audio_delivery@65519/master.m3u8
 #EXTINF:-1 tvg-id="MTA2Urdu.uk" status="online",MTA 2 Urdu (720p)
 https://ooyalahd2-f.akamaihd.net/i/mtageraudio_delivery@308889/master.m3u8
-#EXTINF:-1 tvg-id="MTA3.uk" status="online",MTA 3 (1080p)
+#EXTINF:-1 tvg-id="MTA3.uk" status="error",MTA 3 (1080p)
 https://ooyalahd2-f.akamaihd.net/i/mtach7_delivery@348438/master.m3u8
-#EXTINF:-1 tvg-id="MTAAfrica.uk" status="online",MTA Africa (1080p)
+#EXTINF:-1 tvg-id="MTAAfrica.uk" status="error",MTA Africa (1080p)
 https://ooyalahd2-f.akamaihd.net/i/mtaengaudio_delivery@138280/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",n TV (US Eastern) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22680_3BR3zocwi9/-0500/c.m3u8
@@ -363,10 +363,10 @@ https://api.new.livestream.com/accounts/6986636/events/5362122/live.m3u8
 http://tv.sheffieldlive.org/hls/main.m3u8
 #EXTINF:-1 tvg-id="SkiTV.uk" status="online",Ski TV (1080p) [Not 24/7]
 https://d2xeo83q8fcni6.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/SkiTV-Zee/193.m3u8
-#EXTINF:-1 tvg-id="" status="online",Sky News (720p) [Geo-blocked]
-http://skydvn-sn-mobile-prod.skydvn.com/skynews/1404/latest.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Sky News (720p) [Geo-blocked]
 http://skynews-sn-cdhls.ak-cdn.skydvn.com/cdhlsskynews/1404/latest.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Sky News (720p) [Geo-blocked]
+http://skydvn-sn-mobile-prod.skydvn.com/skynews/1404/latest.m3u8
 #EXTINF:-1 tvg-id="SkyNewsArabia.uk" status="online",Sky News Arabia (720p) [Not 24/7]
 https://stream.skynewsarabia.com/hls/sna.m3u8
 #EXTINF:-1 tvg-id="SkyNewsArabia.uk" status="online",Sky News Arabia (Portrait) (1280p) [Not 24/7]
