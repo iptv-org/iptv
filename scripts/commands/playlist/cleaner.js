@@ -19,7 +19,7 @@ async function main() {
     for (const stream of playlist.items) {
       const [_, status] = stream.raw.match(/status="([a-z]+)"/) || [null, null]
       stream.status = status
-      if (status === 'error' && /^(http|https)/.test(stream.url)) {
+      if (status === 'error' && /^(http|https)/.test(stream.url) && !/\[.*\]$/.test(stream.name)) {
         const result = await checkStream(stream)
         const newStatus = parseStatus(result.error)
         if (status === newStatus) {
