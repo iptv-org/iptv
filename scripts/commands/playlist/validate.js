@@ -6,7 +6,7 @@ const _ = require('lodash')
 program.argument('[filepath]', 'Path to file to validate').parse(process.argv)
 
 async function main() {
-  const files = program.args.length ? program.args : await file.list('channels/*.m3u')
+  const files = program.args.length ? program.args : await file.list('streams/*.m3u')
 
   logger.info(`loading blocklist...`)
   await api.channels.load()
