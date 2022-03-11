@@ -15,9 +15,9 @@ http://95.67.106.10/hls/nta_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
 #EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
-https://cdn10.live-tv.od.ua:8083/7tvod/7tvod-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
 https://cdn10.live-tv.od.ua:8083/7tvod/7tvod/playlist.m3u8
+#EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
+https://cdn10.live-tv.od.ua:8083/7tvod/7tvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="24Kanal.ua" status="online",24 Канал (1080p)
 http://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",34 канал (576p) [Not 24/7]
@@ -121,7 +121,7 @@ https://cdn10.live-tv.od.ua:8083/36chod/36chod-abr/playlist.m3u8
 https://arhat.tv/public/720p/index.m3u8
 #EXTINF:-1 tvg-id="BaltaTV.ua" status="online",Балта ТВ (768p)
 http://194.50.51.34/playlist.m3u8
-#EXTINF:-1 tvg-id="VTV.ua" status="error",ВТВ (576p)
+#EXTINF:-1 tvg-id="VTV.ua" status="timeout",ВТВ (576p)
 http://video.vtvplus.com.ua:81/hls/online/index.m3u8
 #EXTINF:-1 tvg-id="Glas.ua" status="online",Глас (576p)
 http://85.238.112.69:8811/hls_sec/239.0.4.18-.m3u8
@@ -201,9 +201,9 @@ http://rtmp.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="Pershiynezalezhniy.ua" status="online",Перший незалежний (1080p)
 https://app.live.112.events/hls-ua/112hd_mid/index.m3u8
 #EXTINF:-1 tvg-id="Pershiynezalezhniy.ua" status="online",Перший незалежний (1080p)
-https://app.live.112.events/hls/112hd_mid/index.m3u8
-#EXTINF:-1 tvg-id="Pershiynezalezhniy.ua" status="error",Перший незалежний (1080p)
 https://app.live.112.events/hls/112hd_hi/index.m3u8
+#EXTINF:-1 tvg-id="Pershiynezalezhniy.ua" status="online",Перший незалежний (1080p)
+https://app.live.112.events/hls/112hd_mid/index.m3u8
 #EXTINF:-1 tvg-id="Pershiynezalezhniy.ua" status="online",Перший незалежний (1080p) [Not 24/7]
 http://app.live.112.events/hls-ua/112hd_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",ПравдаТУТ (720p)
@@ -272,5 +272,5 @@ http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 http://109.68.40.67/life/magnolia.m3u8
 #EXTINF:-1 tvg-id="" status="online",Южная Волна (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="YaTB.ua" status="online",ЯТБ (576p)
+#EXTINF:-1 tvg-id="YaTB.ua" status="timeout",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
