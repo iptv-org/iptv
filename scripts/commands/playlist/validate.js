@@ -31,8 +31,8 @@ async function main() {
     const [__, country] = basename.match(/([a-z]{2})(|_.*)\.m3u/i) || [null, null]
 
     const fileLog = []
-    const items = await parser.parsePlaylist(filepath)
-    for (const item of items) {
+    const playlist = await parser.parsePlaylist(filepath)
+    for (const item of playlist.items) {
       if (item.tvg.id && !api.channels.find({ id: item.tvg.id })) {
         fileLog.push({
           type: 'warning',
