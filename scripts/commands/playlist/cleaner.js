@@ -13,7 +13,9 @@ async function main() {
 
   for (const filepath of files) {
     if (!filepath.endsWith('.m3u')) continue
+    logger.info(`${filepath}`)
     const playlist = await parser.parsePlaylist(filepath)
+    const before = playlist.items.length
     for (const stream of playlist.items) {
       const [_, status] = stream.raw.match(/status="([a-z]+)"/) || [null, null]
       stream.status = status
@@ -22,6 +24,7 @@ async function main() {
         const newStatus = parseStatus(result.error)
         if (status === newStatus) {
           stream.remove = true
+          logger.info(`removed "${stream.name}"`)
         }
       }
     }
@@ -42,8 +45,11 @@ async function main() {
         }
       }))
 
-    const output = m3u.create(items)
-    await file.create(filepath, output)
+    if (before !== items.length) {
+      const output = m3u.create(items)
+      await file.create(filepath, output)
+      logger.info(`saved`)
+    }
   }
 }
 
