@@ -1,12 +1,14 @@
 const { file, parser, logger, checker, m3u } = require('../../core')
 const { program } = require('commander')
 
-const options = program
+program
   .argument('[filepath]', 'Path to file to validate')
   .option('-t, --timeout <timeout>', 'Set timeout for each request', parser.parseNumber, 60000)
   .option('-d, --delay <delay>', 'Set delay for each request', parser.parseNumber, 0)
   .option('--debug', 'Enable debug mode')
   .parse(process.argv)
+
+const options = program.opts()
 
 async function main() {
   const files = program.args.length ? program.args : await file.list('streams/*.m3u')
@@ -17,6 +19,7 @@ async function main() {
     const playlist = await parser.parsePlaylist(filepath)
     const before = playlist.items.length
     for (const stream of playlist.items) {
+      if (options.debug) logger.info(stream.url)
       const [_, status] = stream.raw.match(/status="([a-z]+)"/) || [null, null]
       stream.status = status
       if (status === 'error' && /^(http|https)/.test(stream.url) && !/\[.*\]$/.test(stream.name)) {
