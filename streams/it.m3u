@@ -47,7 +47,7 @@ http://wms.shared.streamshow.it/canale8/mp4:canale8/playlist.m3u8
 http://37.187.142.147:1935/ch10live/high.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Canale10Ostia.it" status="online",Canale 10 Ostia (540p) [Not 24/7]
 http://canale10.cloud:1935/ch10live/high.stream/master.m3u8
-#EXTINF:-1 tvg-id="Canale21Lazio.it" status="online",Canale 21 Lazio (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canale21Lazio.it" status="error",Canale 21 Lazio (480p) [Not 24/7]
 https://stream.mariatvcdn.com/canaleventuno/f5d2060b3682e0dfffd5b2f18e935ad3.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="CanaleItalia83.it" status="error",Canale Italia 83 (576p) [Not 24/7]
 http://ovp-live.akamaized.net/ac024_live/video1/playlist.m3u8
@@ -170,9 +170,9 @@ https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channe
 #EXTINF:-1 tvg-id="Radio105.it" status="error",Radio 105 (576p)
 https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(EC)/index.m3u8
 #EXTINF:-1 tvg-id="Radio105TV.it" status="error",Radio 105 TV (576p)
-https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
-#EXTINF:-1 tvg-id="Radio105TV.it" status="error",Radio 105 TV (576p)
 https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
+#EXTINF:-1 tvg-id="Radio105TV.it" status="error",Radio 105 TV (576p)
+https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
 #EXTINF:-1 tvg-id="RadioBirikinaTV.it" status="online",Radio Birikina TV (720p) [Not 24/7]
 https://56b50ada2d659.streamlock.net/RadioBirikinaTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioCapitalTV.it" status="online",Radio Capital TV (360p)
@@ -258,10 +258,10 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747011
 https://everyrai-lh.akamaihd.net/i/raisportjolly1_1@177967/master.m3u8
 #EXTINF:-1 tvg-id="RaiSport.it" status="error",Rai Sport [Geo-blocked]
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=179975
+#EXTINF:-1 tvg-id="" status="online",Rai Sport+ [Geo-blocked]
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025
 #EXTINF:-1 tvg-id="" status="error",Rai Sport+ [Geo-blocked]
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
-#EXTINF:-1 tvg-id="" status="error",Rai Sport+ [Geo-blocked]
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025
 #EXTINF:-1 tvg-id="RaiStoria.it" status="online",Rai Storia (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990
 #EXTINF:-1 tvg-id="" status="online",Rai YoYo (576p) [Geo-blocked]
@@ -374,7 +374,7 @@ http://live.sloode.com:1935/telegranda_live/C2AD-0664-DC75-4744/playlist.m3u8
 http://api.new.livestream.com/accounts/17114188/events/4902226/live.m3u8
 #EXTINF:-1 tvg-id="TeleMia.it" status="online",TeleMia (576p)
 https://playerssl.telemia.tv/fileadmin/hls/TelemiaHD/telemia85_mediachunks.m3u8
-#EXTINF:-1 tvg-id="TeleMiaExtra.it" status="online",TeleMia Extra (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleMiaExtra.it" status="error",TeleMia Extra (720p) [Not 24/7]
 https://playerssl.telemia.tv/fileadmin/hls/TelemiaExtra/stream.m3u8
 #EXTINF:-1 tvg-id="Telemolise.it" status="error",Telemolise (406p)
 http://185.202.128.1:1935/TelemoliseStream/telemoliseTV.stream_tlm/playlist.m3u8
