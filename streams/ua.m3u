@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1Plus1.ua" status="error",1+1 (1080p)
+#EXTINF:-1 tvg-id="1Plus1.ua" status="timeout",1+1 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCVEaAWKfv7fE1c-ZuBs7TKQ/live
 #EXTINF:-1 tvg-id="1Plus1Sport.ua" status="online",1+1 Спорт (720p) [Not 24/7]
 https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
@@ -15,9 +15,9 @@ http://95.67.106.10/hls/nta_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",4 канал (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
 #EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
-https://cdn10.live-tv.od.ua:8083/7tvod/7tvod/playlist.m3u8
-#EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
 https://cdn10.live-tv.od.ua:8083/7tvod/7tvod-abr/playlist.m3u8
+#EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
+https://cdn10.live-tv.od.ua:8083/7tvod/7tvod/playlist.m3u8
 #EXTINF:-1 tvg-id="24Kanal.ua" status="online",24 Канал (1080p)
 http://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",34 канал (576p) [Not 24/7]
@@ -46,9 +46,9 @@ http://stream.dn.ua/hls/stream.m3u8
 https://stream.uagit.tv/gittv.m3u8
 #EXTINF:-1 tvg-id="GTV.ua" status="online",GTV (720p)
 https://cdn1.live-tv.od.ua:8083/a1od/gtvod-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="online",HDFashion & LifeStyle (1080p)
+#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="error",HDFashion & LifeStyle (1080p)
 http://95.67.47.114/hls/hdfashion_ua.m3u8
-#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="online",HDFashion & LifeStyle (1080p)
+#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="error",HDFashion & LifeStyle (1080p)
 http://95.67.47.115/hls/hdfashion_ua.m3u8
 #EXTINF:-1 tvg-id="IDFashion.ua" status="online",ID Fashion (1080p) [Not 24/7]
 https://idfashion.cdn-02.cosmonova.net.ua/hls/idfashion_ua.m3u8
@@ -121,7 +121,7 @@ https://cdn10.live-tv.od.ua:8083/36chod/36chod-abr/playlist.m3u8
 https://arhat.tv/public/720p/index.m3u8
 #EXTINF:-1 tvg-id="BaltaTV.ua" status="online",Балта ТВ (768p)
 http://194.50.51.34/playlist.m3u8
-#EXTINF:-1 tvg-id="VTV.ua" status="timeout",ВТВ (576p)
+#EXTINF:-1 tvg-id="VTV.ua" status="error",ВТВ (576p)
 http://video.vtvplus.com.ua:81/hls/online/index.m3u8
 #EXTINF:-1 tvg-id="Glas.ua" status="online",Глас (576p)
 http://85.238.112.69:8811/hls_sec/239.0.4.18-.m3u8
@@ -258,7 +258,7 @@ https://cdn1.live-tv.od.ua:8083/krugod/krugod/playlist.m3u8
 https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Трофей ТВ (720p)
 https://5db1ab4f970be.streamlock.net/live/smil:trofey.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Ukraina24.ua" status="error",Україна 24 (1080p)
+#EXTINF:-1 tvg-id="Ukraina24.ua" status="timeout",Україна 24 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCMp5Buw-6LpbbV9r9Sl_5yg/live
 #EXTINF:-1 tvg-id="Futbol1.ua" status="timeout",Футбол 1 (576p) [Not 24/7]
 https://95-213-224-183.livesports24.online/uafootballua1.m3u8
@@ -272,5 +272,5 @@ http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 http://109.68.40.67/life/magnolia.m3u8
 #EXTINF:-1 tvg-id="" status="online",Южная Волна (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="YaTB.ua" status="online",ЯТБ (576p)
+#EXTINF:-1 tvg-id="YaTB.ua" status="timeout",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
