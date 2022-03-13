@@ -6,9 +6,8 @@ const parser = {}
 
 parser.parsePlaylist = async function (filepath) {
   const content = await file.read(filepath)
-  const playlist = ipp.parse(content)
 
-  return playlist.items
+  return ipp.parse(content)
 }
 
 parser.parseLogs = async function (filepath) {
