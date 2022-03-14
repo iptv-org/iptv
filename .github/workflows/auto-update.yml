@@ -23,6 +23,7 @@ jobs:
           curl -L -o scripts/data/guides.json https://iptv-org.github.io/api/guides.json
           curl -L -o scripts/data/languages.json https://iptv-org.github.io/api/languages.json
           curl -L -o scripts/data/regions.json https://iptv-org.github.io/api/regions.json
+          curl -L -o scripts/data/subdivisions.json https://iptv-org.github.io/api/subdivisions.json
       - uses: actions/upload-artifact@v2
         with:
           name: data
