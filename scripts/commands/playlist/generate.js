@@ -33,7 +33,12 @@ async function loadStreams() {
   await db.streams.load()
   let streams = await db.streams.find({})
   streams = _.filter(streams, stream => stream.status !== 'error')
-  streams = orderBy(streams, ['channel', 'height', 'url'], ['asc', 'desc', 'asc'])
+  const levels = { online: 1, blocked: 2, timeout: 3, error: 4, default: 5 }
+  streams = orderBy(
+    streams,
+    ['channel', s => levels[s.status] || levels['default'], 'height', 'url'],
+    ['asc', 'asc', 'desc', 'asc']
+  )
   streams = _.uniqBy(streams, stream => stream.channel || _.uniqueId())
 
   await api.channels.load()
