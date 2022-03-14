@@ -12,6 +12,10 @@ module.exports = async function (streams = []) {
 	let countries = await api.countries.all()
 	countries = _.keyBy(countries, 'code')
 
+	await api.subdivisions.load()
+	let subdivisions = await api.subdivisions.all()
+	subdivisions = _.keyBy(subdivisions, 'code')
+
 	let items = []
 	streams.forEach(stream => {
 		if (!stream.broadcast_area.length) {
@@ -21,7 +25,8 @@ module.exports = async function (streams = []) {
 			return
 		}
 
-		getBroadcastCountries(stream, { countries, regions }).forEach(country => {
+		const broadcastCountries = getBroadcastCountries(stream, { countries, regions, subdivisions })
+		broadcastCountries.forEach(country => {
 			const item = _.cloneDeep(stream)
 			item.group_title = country.name
 			items.push(item)
@@ -37,7 +42,7 @@ module.exports = async function (streams = []) {
 	return { filepath: 'index.country.m3u', items }
 }
 
-function getBroadcastCountries(stream, { countries, regions }) {
+function getBroadcastCountries(stream, { countries, regions, subdivisions }) {
 	let codes = stream.broadcast_area.reduce((acc, item) => {
 		const [type, code] = item.split('/')
 		switch (type) {
@@ -50,8 +55,9 @@ function getBroadcastCountries(stream, { countries, regions }) {
 				}
 				break
 			case 's':
-				const [c] = item.split('-')
-				acc.push(c)
+				if (subdivisions[code]) {
+					acc.push(subdivisions[code].country)
+				}
 				break
 		}
 		return acc
