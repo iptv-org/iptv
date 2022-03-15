@@ -476,8 +476,8 @@ https://b83608fe932143099bb8b25a66857730.mediatailor.us-east-1.amazonaws.com/v1/
 https://broadcast.mytvtogo.net/classictv4u/classictv4u/playlist.m3u8
 #EXTINF:-1 tvg-id="CloudflareTV.us" status="online",Cloudflare TV (720p)
 https://cloudflare.tv/hls/live.m3u8
-#EXTINF:-1 tvg-id="CNBC.us" status="error",CNBC (1080p) [Not 24/7]
-http://s1.mysportz.tv:2082/CNBC/playlist.m3u8
+#EXTINF:-1 tvg-id="CNBC.us" status="online",CNBC (1080p)
+https://16live00.akamaized.net/CNBC/index.m3u8
 #EXTINF:-1 tvg-id="CNBCEurope.us" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",CNBC Europe (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s65/index.m3u8
@@ -1676,3 +1676,11 @@ https://thegateway.app/YouToo/CueTones/playlist.m3u8
 https://thegateway.app/YouToo/YTamerica/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalDisney.us" status="timeout",Канал Disney (576p) [Not 24/7]
 http://188.40.68.167/russia/disney/playlist.m3u8
+#EXTINF:-1 tvg-id="WLWTDT2.us",MeTV (WLWT-DT2) Cincinnati OH (480p)
+https://16live00.akamaized.net/ME_TV_EAST/index.m3u8
+#EXTINF:-1 tvg-id="WCWNDT1.us",The CW (WCWN-DT1) Albamy NY (1080p)
+https://16live00.akamaized.net/CW/index.m3u8
+#EXTINF:-1 tvg-id="WPLGDT1.us",abc (WPLG-DT1) Miami FL (720p)
+https://16live00.akamaized.net/ABC_EAST/index.m3u8
+#EXTINF:-1 tvg-id="WWJDT1.us",CBS (WWJ-DT1) Detroit MI (720p)
+https://16live00.akamaized.net/CBS_EAST/index.m3u8
