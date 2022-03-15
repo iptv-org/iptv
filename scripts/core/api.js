@@ -35,5 +35,6 @@ api.categories = new API(`${DATA_DIR}/categories.json`)
 api.languages = new API(`${DATA_DIR}/languages.json`)
 api.regions = new API(`${DATA_DIR}/regions.json`)
 api.blocklist = new API(`${DATA_DIR}/blocklist.json`)
+api.subdivisions = new API(`${DATA_DIR}/subdivisions.json`)
 
 module.exports = api
