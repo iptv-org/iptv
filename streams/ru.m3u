@@ -269,7 +269,7 @@ http://infochhdcdn.trkeurasia.ru/orsk-infochhd/infochhd/playlist.m3u8
 https://infochh.trkeurasia.ru/hlsinfoch/infochhd.m3u8
 #EXTINF:-1 tvg-id="Evronovosti.ru" status="online",Евроновости (540p)
 http://evronovosti.mediacdn.ru/sr1/evronovosti/playlist.m3u8
-#EXTINF:-1 tvg-id="Evronovosti.ru" status="error",Евроновости (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Evronovosti.ru" status="timeout",Евроновости (720p) [Geo-blocked]
 https://strm.yandex.ru/kal/euronews_supres/euronews_supres0.m3u8
 #EXTINF:-1 tvg-id="Enisey.ru" status="online",Енисей (1080p) [Not 24/7]
 http://hls-eniseytv.cdnvideo.ru/eniseytv/stream1/playlist.m3u8
@@ -282,7 +282,7 @@ http://185.161.224.216/dash/JaraTv_SD.ism/playlist.mpd
 #EXTINF:-1 tvg-id="Zagorodnyy.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Загородный (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s31/index.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Звезда (480p)
+#EXTINF:-1 tvg-id="Zvezda.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Звезда (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s85/index.m3u8
 #EXTINF:-1 tvg-id="Zvezda.ru" status="online",Звезда (1080p) [Not 24/7]
@@ -315,7 +315,7 @@ https://sc.id-tv.kz/Kinokomediya_hd.m3u8
 https://sc.id-tv.kz/Kinomix_hd.m3u8
 #EXTINF:-1 tvg-id="" status="online",Кинопремьера (1080p) [Not 24/7]
 https://sc.id-tv.kz/Kinopremiera_hd.m3u8
-#EXTINF:-1 tvg-id="Kinosvidanie.ru" status="online",Киносвидание (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kinosvidanie.ru" status="timeout",Киносвидание (1080p) [Not 24/7]
 https://sc.id-tv.kz/Kinosvidanie_hd.m3u8
 #EXTINF:-1 tvg-id="" status="online",Киносемья (1080p) [Not 24/7]
 https://sc.id-tv.kz/Kinosemiya_hd.m3u8
@@ -405,7 +405,7 @@ http://mirbelogorya.ru:8080/mirbelogorya/index.m3u8
 http://live-mirbelogorya.cdnvideo.ru/mirbelogorya/mirbelogorya1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Мир Белогорья (720p) [Geo-blocked]
 http://stream.tvbelgorod.ru:8080/mirbelogorya/index.m3u8
-#EXTINF:-1 tvg-id="MirSeriala.ru" status="timeout",Мир Сериала (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="MirSeriala.ru" status="online",Мир Сериала (576p) [Not 24/7]
 http://185.161.224.216/dash/Mir_seriala_SD.ism/playlist.mpd
 #EXTINF:-1 tvg-id="" status="timeout",Мир сериала (576p) [Not 24/7]
 http://188.40.68.167/russia/mir_seriala/playlist.m3u8
@@ -521,7 +521,7 @@ http://91.185.3.218:4000/play/603
 http://stream.euroasia.lfstrm.tv/perviy_evrasia/1/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый канал Евразия (576p) [Not 24/7]
 https://sc.id-tv.kz/1KanalEvraziya.m3u8
-#EXTINF:-1 tvg-id="Pervyykrymskiy.ru" status="online",Первый крымский (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="Pervyykrymskiy.ru" status="timeout",Первый крымский (540p) [Not 24/7]
 http://mrlive.1tvcrimea.ru:8080/1tvcrimea.m3u8
 #EXTINF:-1 tvg-id="PervyyPskovskiy.ru" status="online",Первый Псковский (540p) [Not 24/7]
 http://194.190.78.91/pskov/rewind-10800.m3u8
@@ -679,7 +679,7 @@ https://strm.yandex.ru/kal/soyuz/soyuz0.m3u8
 http://spas.mediacdn.ru/cdn/spas/playlist.m3u8
 #EXTINF:-1 tvg-id="Start.ru" status="error",Старт (1080p)
 https://strm.yandex.ru/kal/start/start0.m3u8
-#EXTINF:-1 tvg-id="" status="online",СТВ Казахстан (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",СТВ Казахстан (576p) [Not 24/7]
 https://sc.id-tv.kz/STV.m3u8
 #EXTINF:-1 tvg-id="" status="online",Страна FM (720p) [Not 24/7]
 http://live.stranafm.cdnvideo.ru/stranafm/stranafm_hd.sdp/playlist.m3u8
@@ -692,7 +692,7 @@ http://ott-cdn.ucom.am/s52/04.m3u8
 https://sc.id-tv.kz/STS.m3u8
 #EXTINF:-1 tvg-id="Surgut24.ru" status="blocked",Сургут 24 (720p) [Not 24/7]
 https://video1.in-news.ru/c24/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Такт/Рен ТВ (Курск) (294p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",Такт/Рен ТВ (Курск) (294p) [Not 24/7]
 http://109.194.62.29:8080
 #EXTINF:-1 tvg-id="Tamyr.ru" status="online",Тамыр (576p)
 https://bsttv.bonus-tv.ru/cdn/tamyr/playlist.m3u8
