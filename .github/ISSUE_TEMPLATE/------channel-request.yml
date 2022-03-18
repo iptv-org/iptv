@@ -26,10 +26,8 @@ body:
   - type: input
     attributes:
       label: Website
-      description: Where did you find the broadcast?
+      description: Where have you seen the broadcast of this channel?
       placeholder: 'https://example.com/live-tv'
-    validations:
-      required: true
 
   - type: input
     attributes:
@@ -47,3 +45,4 @@ body:
       label: Please confirm the following
       options:
         - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#request-a-channel)
+          required: true
