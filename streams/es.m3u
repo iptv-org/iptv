@@ -4,11 +4,11 @@ https://directes-tv-int.ccma.cat/int/ngrp:324_web/master.m3u8
 #EXTINF:-1 tvg-id="7LaRioja.es" status="online",7 La Rioja (1080p) [Not 24/7]
 https://pc-la7delarioja-hls.flumotion.com/playlist.m3u8
 #EXTINF:-1 tvg-id="7Noticias.es" status="online",7 Noticias (1080p)
-https://amg01573-7nn-7nnono-ono-pcdj3.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="7Noticias.es",7 Noticias (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCCydt40S3mVi9YXQJjK8Nsw/live
-#EXTINF:-1 tvg-id="7Noticias.es",7 Noticias (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/7nntv
+#EXTINF:-1 tvg-id="7Noticias.es" status="online",7 Noticias (1080p)
+https://amg01573-7nn-7nnono-ono-pcdj3.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="7Noticias.es" status="online",7 Noticias (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCCydt40S3mVi9YXQJjK8Nsw/live
 #EXTINF:-1 tvg-id="7TelevisionRegiondeMurcia.es" status="error",7 Televisión Región de Murcia (360p) [Not 24/7]
 https://rtvmurcia_01-lh.akamaihd.net/i/rtvmurcia_1_0@507973/master.m3u8
 #EXTINF:-1 tvg-id="7TVAndalucia.es" status="error",7 TV Andalucía (720p)
@@ -105,7 +105,7 @@ http://ventdelnord.tv:8080/escala/directe.m3u8
 https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@429494/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Canal 24 horas (720p)
 https://rtvelivestreamv3.akamaized.net/24h_main_dvr.m3u8
-#EXTINF:-1 tvg-id="" status="error",Canal 24 horas (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",Canal 24 horas (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7QZIf0dta-XPXsp9Hv4dTw/live
 #EXTINF:-1 tvg-id="" status="timeout",Canal 24 horas (1080p)
 https://rtvelivestreamv3.akamaized.net/24h_bkp_dvr.m3u8
@@ -193,7 +193,7 @@ https://etbvnogeo-lh.akamaihd.net/i/ETBEITBEUS_1@300391/master.m3u8
 https://directes-tv-int.ccma.cat/int/ngrp:c33_web/playlist_DVR.m3u8
 #EXTINF:-1 tvg-id="ElFuturoentumano.es" status="online",El Futuro en tu mano (720p)
 https://limited24.todostreaming.es/live/renjillo-livestream.m3u8
-#EXTINF:-1 tvg-id="ElFuturoentumano.es" status="error",El Futuro en tu mano (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ElFuturoentumano.es" status="online",El Futuro en tu mano (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCZSw3jfFZo_8I9BHSMlT2Fg/live
 #EXTINF:-1 tvg-id="ElToroTV.es" status="online",El Toro TV (720p) [Not 24/7]
 https://live1-eltorotv.flumotion.com/playlist.m3u8
@@ -245,7 +245,7 @@ https://livelist01.yowi.tv/lista/183a351ddb0e57af6d735256226e6033c32219ab/master
 https://livelist01.yowi.tv/lista/f04129475945936b248aa723de56519ea2ff10fc/master.m3u8
 #EXTINF:-1 tvg-id="HQMDance.es" status="timeout",HQM Dance (1080p)
 https://livelist01.yowi.tv/lista/57cf2f51b07ff21988a7a6f0270a66d41086d4a4/master.m3u8
-#EXTINF:-1 tvg-id="HQMFolk.es",HQM Folk (1080p)
+#EXTINF:-1 tvg-id="HQMFolk.es" status="timeout",HQM Folk (1080p)
 https://livelist01.yowi.tv/lista/9f5310c179e8e840188d183be235f755b18cf703/master.m3u8
 #EXTINF:-1 tvg-id="HQMGym.es" status="timeout",HQM Gym (1080p)
 https://livelist01.yowi.tv/lista/abb87f329d0ed03072b1930e9636a53e8076c8d5/master.m3u8
@@ -289,12 +289,12 @@ https://str.intercomarcal.com/hls/tvisd.m3u8
 https://zone.controlstreams.com:5443/LiveApp/streams/islatel.m3u8
 #EXTINF:-1 tvg-id="JuntaCastillayLeon.es" status="online",Junta Castilla y León (1080p) [Not 24/7]
 https://16escalones-live2.flumotion.com/chunks.m3u8
+#EXTINF:-1 tvg-id="La1.es" status="blocked",La 1 (720p) [Geo-blocked]
+https://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8
 #EXTINF:-1 tvg-id="La1.es" status="timeout",La 1 (720p) [Geo-blocked]
 https://rtvelivestreamv3.akamaized.net/rtvesec/la1_bkp_dvr.m3u8
 #EXTINF:-1 tvg-id="La1.es" status="timeout",La 1 (720p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/1688877.m3u8
-#EXTINF:-1 tvg-id="La1.es",La 1 (720p) [Geo-blocked]
-https://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",La 1 Canarias (576p) [Geo-blocked]
 https://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@134665/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",La 1 Canarias (576p) [Geo-blocked]
@@ -319,7 +319,7 @@ https://cdnlive.shooowit.net/la8bierzolive/smil:streamswitchingchannel.smil/play
 https://cdnlive.shooowit.net/la8burgoslive/smil:streamswitchingchannel.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="La8Leon.es" status="online",La 8 Leon (720p) [Not 24/7]
 https://cdnlive.shooowit.net/la8leonlive/smil:streamswitchingchannel.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="La8Mediterraneo.es" status="online",La 8 Mediterráneo (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="La8Mediterraneo.es" status="error",La 8 Mediterráneo (1080p) [Not 24/7]
 https://play.cdn.enetres.net/489DDF7FE98241D19D8970314BC9D3EF021/0226/playlist.m3u8
 #EXTINF:-1 tvg-id="La8Palencia.es" status="online",La 8 Palencia (270p) [Not 24/7]
 https://cdnlive.shooowit.net/la8palencialive/smil:streamswitchingchannel.smil/playlist.m3u8
@@ -353,7 +353,7 @@ http://streamer1.streamhost.org/salive/logosH/playlist.m3u8
 https://streamer1.streamhost.org/salive/logosH/master.m3u8
 #EXTINF:-1 tvg-id="M95TelevisionMarbella.es" status="error",M95 Televisión Marbella (576p) [Not 24/7]
 https://limited2.todostreaming.es/live/m95-livestream.m3u8
-#EXTINF:-1 tvg-id="MaestratTV.es" status="online",Maestrat TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MaestratTV.es" status="timeout",Maestrat TV (1080p) [Not 24/7]
 https://stream.maestrat.tv/hls/stream.m3u8
 #EXTINF:-1 tvg-id="MarTV.es" status="online",Mar TV (1080p) [Not 24/7]
 http://iptv.btpba1.es.network.do:8080/martv-web/video.m3u8
@@ -419,7 +419,7 @@ https://vidartv2.todostreaming.es/live/radiovida-emisiontvhd.m3u8
 https://rtvc-live1-rm.flumotion.com/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVE.es" status="blocked",RTVE (576p) [Geo-blocked]
 http://hlsliveamdgl8-lh.akamaihd.net/i/hlsdvrlive_1@583030/index_1500_av-b.m3u8
-#EXTINF:-1 tvg-id="SalTelevision.es" status="error",Sal Televisión (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SalTelevision.es" status="online",Sal Televisión (720p) [Not 24/7]
 https://www.tdtchannels.com/stream/saltv.m3u8
 #EXTINF:-1 tvg-id="SevillaFCTV.es" status="online",Sevilla FC TV (360p) [Not 24/7]
 https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0_ye0b8tc0/format/applehttp/protocol/https/uiConfId/30026292/a.m3u8
