@@ -9,7 +9,7 @@ async function main() {
   const levels = { online: 1, blocked: 2, timeout: 3, error: 4, default: 5 }
   streams = orderBy(
     streams,
-    ['title', s => levels[s.status] || levels['default'], 'height', 'url'],
+    ['channel', s => levels[s.status] || levels['default'], 'height', 'url'],
     ['asc', 'asc', 'desc', 'asc']
   )
 
