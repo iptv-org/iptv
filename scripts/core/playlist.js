@@ -1,4 +1,5 @@
 const store = require('./store')
+const m3u = require('./m3u')
 const _ = require('lodash')
 
 const playlist = {}
@@ -50,34 +51,7 @@ class Playlist {
   }
 
   toString() {
-    let output = `#EXTM3U`
-    for (const attr in this.header) {
-      const value = this.header[attr]
-      output += ` ${attr}="${value}"`
-    }
-    output += `\n`
-
-    for (const link of this.links) {
-      output += `#EXTINF:-1`
-      for (const name in link.attrs) {
-        const value = link.attrs[name]
-        if (value !== undefined) {
-          output += ` ${name}="${value}"`
-        }
-      }
-      output += `,${link.title}\n`
-
-      for (const name in link.vlcOpts) {
-        const value = link.vlcOpts[name]
-        if (value !== undefined) {
-          output += `#EXTVLCOPT:${name}=${value}\n`
-        }
-      }
-
-      output += `${link.url}\n`
-    }
-
-    return output
+    return m3u.create(this.links, this.header)
   }
 }
 
