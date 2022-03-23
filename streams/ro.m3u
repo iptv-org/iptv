@@ -19,10 +19,10 @@ http://stream1.antenaplay.ro/live/smil:ComedyPlay.smil/playlist.m3u8
 https://iptv-all.lanesh4d0w.repl.co/romania/ai
 #EXTINF:-1 tvg-id="AntenaMonden.ro" status="error",Antena Monden (720p) [Not 24/7]
 http://stream1.antenaplay.ro/live/smil:AntenaMonden.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AntenaStars.ro" status="error",Antena Stars (720p)
-https://iptv-all.lanesh4d0w.repl.co/romania/astars
 #EXTINF:-1 tvg-id="AntenaSport.ro" status="online",AntenaSport (720p) [Not 24/7]
 https://stream1.antenaplay.ro/dfs/farasecrete5/playlist.m3u8
+#EXTINF:-1 tvg-id="AntenaStars.ro",Antena Stars (720p)
+https://iptv-all.lanesh4d0w.repl.co/romania/astars
 #EXTINF:-1 tvg-id="B1.ro" status="online",B1 (272p) [Not 24/7]
 https://stream.adunity.com/b1/b1.m3u8
 #EXTINF:-1 tvg-id="BucovinaTV.ro" status="online",Bucovina TV (480p)
@@ -50,7 +50,7 @@ https://iptv-all.lanesh4d0w.repl.co/romania/happy-channel
 http://46.4.14.12:9999/intermedia1/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalD.ro" status="online",Kanal D (384p) [Not 24/7]
 https://stream1.kanald.ro/iphone/live.m3u8
-#EXTINF:-1 tvg-id="KissTV.ro" status="timeout",Kiss TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="KissTV.ro" status="online",Kiss TV (576p) [Not 24/7]
 https://fms-https1.mediadirect.ro/live3/_definst_/kiss.smil/playlist.m3u8?publisher=83
 #EXTINF:-1 tvg-id="LightChannel.ro" status="online",Light Channel (480p) [Not 24/7]
 http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
@@ -79,10 +79,6 @@ rtmp://v1.arya.ro:1935/live/ptv1.flv
 https://stream1.1616.ro:1945/prima/livestream/playlist.m3u8?wowzatokenhash=hOdIznDoakApEuQ8FaFI3yrJuBMZHqCB7B3cWTmRWsc=
 #EXTINF:-1 tvg-id="ProTV.ro" status="online",Pro TV (1080p)
 https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0
-#EXTINF:-1 tvg-id="" status="online",Profit.ro (404p)
-https://stream1.1616.ro:1945/profit/livestream/playlist.m3u8?wowzatokenhash=hOdIznDoakApEuQ8FaFI3yrJuBMZHqCB7B3cWTmRWsc=
-#EXTINF:-1 tvg-id="" status="online",Profit.ro (404p) [Not 24/7]
-https://stream1.profit.ro:1945/profit/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RapsodiaTV.ro" status="error",Rapsodia TV (576p)
 rtmp://rapsodia1.arya.ro/live/rapsodiatv1
 #EXTINF:-1 tvg-id="RealitateaTV.ro" status="online",Realitatea FM (Studio) (576p) [Not 24/7]
@@ -93,7 +89,7 @@ https://livestream.realitatea.net/livestream/liverealitatea.stream/playlist.m3u8
 https://fms-https1.mediadirect.ro/live3/_definst_/rocktv.smil/master.m3u8
 #EXTINF:-1 tvg-id="SangeorzTV.ro" status="error",Sangeorz TV (396p) [Not 24/7]
 http://s2.streamnet.ro:8035/stream.flv
-#EXTINF:-1 tvg-id="SomaxTV.ro" status="error",Somax TV
+#EXTINF:-1 tvg-id="SomaxTV.ro" status="timeout",Somax TV
 http://webmobile.xdev.ro:81/tv12/playlist.m3u8
 #EXTINF:-1 tvg-id="SperantaTV.ro" status="online",Speranta TV (720p) [Not 24/7]
 http://play.streamkit.tv/content/channel/sperantatv/live/sperantatv.player.m3u8
@@ -101,14 +97,12 @@ http://play.streamkit.tv/content/channel/sperantatv/live/sperantatv.player.m3u8
 http://us200.streamkit.tv/edge/sperantatv_1200/playlist.m3u8
 #EXTINF:-1 tvg-id="SuperTV.ro" status="error",SuperTV (1080p) [Not 24/7]
 http://live.supertv.ro:1935/live/smil:hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Telestar1.ro" status="error",Telestar1 (480p) [Not 24/7]
-http://s1.streamnet.ro:8053/stream.flv
 #EXTINF:-1 tvg-id="Telestar1.ro" status="error",Telestar1 (576p)
 http://193.34.109.10:8090
+#EXTINF:-1 tvg-id="Telestar1.ro" status="error",Telestar1 (480p) [Not 24/7]
+http://s1.streamnet.ro:8053/stream.flv
 #EXTINF:-1 tvg-id="TravelMix.ro" status="error",Travel Mix (1080p) [Not 24/7]
 http://89.38.8.131:39520
-#EXTINF:-1 tvg-id="TVSE.ro" status="online",TV SE (576p) [Not 24/7]
-http://89.38.8.130:39419
 #EXTINF:-1 tvg-id="TVPlusSuceava.ro" status="online",TVPlus Suceava (576p)
 http://85.186.146.34:8080
 #EXTINF:-1 tvg-id="TVR1.ro" status="online",TVR 1 (720p) [Geo-blocked]
@@ -133,6 +127,8 @@ https://mn-nl.mncdn.com/tvrtgmures_new/smil:tvrtgmures_new.smil/index.m3u8
 https://mn-nl.mncdn.com/tvrtimisoara_new/smil:tvrtimisoara_new.smil/index.m3u8
 #EXTINF:-1 tvg-id="TVSat.ro" status="online",TVSat (576p) [Not 24/7]
 http://89.38.8.130:39443
+#EXTINF:-1 tvg-id="TVSE.ro" status="online",TV SE (576p) [Not 24/7]
+http://89.38.8.130:39419
 #EXTINF:-1 tvg-id="UTV.ro" status="error" user-agent="iPhone",UTV (576p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://iptv-all.lanesh4d0w.repl.co/romania/utv
@@ -140,5 +136,9 @@ https://iptv-all.lanesh4d0w.repl.co/romania/utv
 http://89.38.8.130:39437
 #EXTINF:-1 tvg-id="ZURadioTV.ro" status="error",ZU Radio TV (720p)
 https://iptv-all.lanesh4d0w.repl.co/romania/zuradiotv
+#EXTINF:-1 tvg-id="" status="online",Profit.ro (404p)
+https://stream1.1616.ro:1945/profit/livestream/playlist.m3u8?wowzatokenhash=hOdIznDoakApEuQ8FaFI3yrJuBMZHqCB7B3cWTmRWsc=
+#EXTINF:-1 tvg-id="" status="online",Profit.ro (404p) [Not 24/7]
+https://stream1.profit.ro:1945/profit/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",ZU TV (720p)
 https://iptv-all.lanesh4d0w.repl.co/romania/zutv
