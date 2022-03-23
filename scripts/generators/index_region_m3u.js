@@ -42,7 +42,7 @@ function getChannelRegions(stream, { regions }) {
 					acc.push(regions[code])
 					break
 				case 's':
-					const [c] = item.split('-')
+					const [c] = code.split('-')
 					const r1 = _.filter(regions, { countries: [c] })
 					acc = acc.concat(r1)
 					break
