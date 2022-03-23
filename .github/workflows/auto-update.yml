@@ -13,7 +13,6 @@ jobs:
         with:
           node-version: '14'
           cache: 'npm'
-      # - run: sudo chmod 755 'scripts/commands/api/load.sh'
       - run: npm run api:load
       - uses: actions/upload-artifact@v2
         with:
