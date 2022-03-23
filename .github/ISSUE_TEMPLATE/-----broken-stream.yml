@@ -35,10 +35,9 @@ body:
   - type: input
     attributes:
       label: Possible Replacement
-      description: If you know an alternate source or the way to fix current stream please let us know
       placeholder: 'ex. https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
 
-  - type: input
+  - type: textarea
     attributes:
       label: Notes
       placeholder: 'Anything else we should know?'
