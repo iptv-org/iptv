@@ -8,12 +8,18 @@ module.exports = async function (streams = []) {
 	const countries = await api.countries.all()
 	await api.regions.load()
 	const regions = await api.regions.all()
+	await api.subdivisions.load()
+	const subdivisions = await api.subdivisions.all()
 
 	const output = []
 	for (const country of countries) {
-		const countryAreaCodes = _.filter(regions, { countries: [country.code] }).map(
+		let countryRegionCodes = _.filter(regions, { countries: [country.code] }).map(
 			r => `r/${r.code}`
 		)
+		const countrySubdivisionCodes = _.filter(subdivisions, { country: country.code}).map(
+			r => `s/${r.code}`
+		)
+		const countryAreaCodes = countryRegionCodes.concat(countrySubdivisionCodes)
 		countryAreaCodes.push(`c/${country.code}`)
 
 		let items = _.filter(streams, stream => {
