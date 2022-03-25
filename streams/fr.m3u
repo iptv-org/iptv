@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="7ALimoges.fr" status="online",7ALimoges (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCdFv_ZWQ3Xk_NfRiaK-ryGg/live
-#EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="error",Alpe d’Huez TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="online",Alpe d’Huez TV (720p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
 #EXTINF:-1 tvg-id="Alsace20.fr" status="online",Alsace 20 (720p)
 http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
@@ -118,7 +118,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/vid
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6.fr" status="blocked",M6 (720p) [Not 24/7]
 http://flusonic-4.platinum-tv.com/M6/mono.m3u8?token=test
-#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -154,7 +154,7 @@ http://51.210.199.22/hls/stream.m3u8
 http://51.210.199.18/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaKorea.fr" status="online",Persiana Korea (720p)
 http://51.210.199.14/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaMusic.fr" status="online",Persiana Music (720p)
+#EXTINF:-1 tvg-id="PersianaMusic.fr",Persiana Music (720p)
 http://51.210.199.24/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaNostalgia.fr" status="online",Persiana Nostalgia (720p)
 http://51.210.199.20/hls/stream.m3u8
@@ -226,8 +226,6 @@ https://d1mpprlbe8tn2j.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20
 https://live.creacast.com/mirabelletv/smil:mirabelletv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Fashion TV (576p) [Not 24/7]
 http://entertainment.ashttp9.visionip.tv/live/visiontvuk-entertainment-edgytv-hsslive-25f-16x9-SD/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",France 24 Español (576p)
-https://static.france24.com/live/F24_ES_LO_HLS/live_web.m3u8
 #EXTINF:-1 tvg-id="" status="online",viàVosges (576p) [Not 24/7]
 https://vosgestv.hdr-tv.com/live/vosgestv/livestream/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",viàMATÉLÉ (540p) [Not 24/7]
@@ -247,5 +245,7 @@ https://s6.tntendirect.com/lequipe21/live/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x62islg
 #EXTINF:-1 tvg-id="" status="error",Wéo (Picardie) (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x63085w
+#EXTINF:-1 tvg-id="" status="error",France 24 Español (576p)
+https://static.france24.com/live/F24_ES_LO_HLS/live_web.m3u8
 #EXTINF:-1 tvg-id="" status="error",TV5Monde Francia FR (1080p)
 https://tv5infohls-i.akamaihd.net/hls/live/631613/tv5infohls/index.m3u8
