@@ -83,6 +83,8 @@ function parseStatus(error) {
     case 'Operation timed out':
       return 'timeout'
     case 'Server returned 403 Forbidden (access denied)':
+    case 'Server returned 4XX Client Error, but not one of 40{0,1,3,4}': // 451 temp fix
+    //case 'Server returned 451 Unavailable For Legal Reasons': // not in the ffprobe yet
       return 'blocked'
     default:
       return 'error'
