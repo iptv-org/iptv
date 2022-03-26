@@ -25,7 +25,7 @@ https://abp-i.akamaihd.net/hls/live/765529/abphindi/master.m3u8
 http://hindiabp-lh.akamaihd.net/i/hindiabp1new_1@192103/master.m3u8
 #EXTINF:-1 tvg-id="ABPMajha.in" status="online",ABP Majha (720p)
 https://abp-i.akamaihd.net/hls/live/765531/abpmajha/master.m3u8
-#EXTINF:-1 tvg-id="ACV.in",ACV
+#EXTINF:-1 tvg-id="ACV.in" status="error",ACV
 https://acv.asianetmobiletvplus.com/webstreams/8f8e72769cb3e3a6e27c220e1e3887b8.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ACVJukebox.in" status="error" user-agent="AsianetMobileTVPlus",ACV JukeBox (404p)
 #EXTVLCOPT:http-user-agent=AsianetMobileTVPlus
@@ -410,7 +410,7 @@ https://live.neestream.com/neestream_01/nee_cinema/playlist.m3u8
 https://dammikartmp.tulix.tv/slrc3/slrc3/playlist.m3u8
 #EXTINF:-1 tvg-id="News7Tamil.in" status="online",News 7 Tamil (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC2f4w_ppqHplvjiNaoTAK9w/live
-#EXTINF:-1 tvg-id="News7Tamil.in" status="online",News 7 Tamil (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="News7Tamil.in" status="error",News 7 Tamil (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0kp/index.m3u8
 #EXTINF:-1 tvg-id="News18Assam.in" status="online",News18 Assam (504p) [Not 24/7]
 https://news18assam-lh.akamaihd.net/i/n18assamne_1@526575/index_5_av-p.m3u8
@@ -598,7 +598,7 @@ http://uk4.zecast.com:1935/star-live/suntv.stream/index.m3u8
 https://indo51.gcdn.co/MALYLAM-SuryaMusic/index.m3u8
 #EXTINF:-1 tvg-id="SuryaTV.in" status="error",Surya TV (720p) [Not 24/7]
 https://indo51.gcdn.co/MALYLAM-SuryaHD/index.m3u8
-#EXTINF:-1 tvg-id="Swantham.in" status="online",Swantham (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Swantham.in" status="error",Swantham (720p) [Not 24/7]
 http://131.153.22.8:1935/SWANTHAM/live/playlist.m3u8
 #EXTINF:-1 tvg-id="SwarajExpress.in" status="online",Swaraj Express (720p) [Not 24/7]
 https://live.wmncdn.net/highnews/swaraj.stream/index.m3u8
@@ -794,6 +794,8 @@ http://live.singamcloud.in:1935/nvision/nvision/playlist.m3u8
 http://103.72.179.30:1935/GECHindi/ngrp:SONY_SAB.stream_all/Playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",FASTWAY NEWS (720p) [Not 24/7]
 http://163.47.214.155:1935/fwnews/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",KITE Victers (Kerala) (720p) [Not 24/7]
+https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Zee News Malayalam
 https://d1vd9xhq6jlm48.cloudfront.net/out/v1/71fcc57c8fe74c5b938451bc2435a93e/index_4.m3u8
 #EXTINF:-1 tvg-id="" status="online",Dishum (576p) [Not 24/7]
@@ -814,8 +816,6 @@ https://m-c29-j2apps.s.llnwi.net/hls/5332.Dishum.in.m3u8
 https://republic.pc.cdn.bitgravity.com/live/bharat_hls/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Zee TV (480p)
 https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/ZEETV/ZEETV.isml/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Times Now Navbharat [Geo-blocked]
-https://pubads.g.doubleclick.net/ssai/event/nRWQsGoJSzmcErJFgAy67g/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",Peppers (576p) [Not 24/7]
 http://103.199.160.85/Content/peppers/Live/Channel(Peppers)/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Sony MAX 2
@@ -827,8 +827,6 @@ http://cdncities.com/8012/8012/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error" user-agent="stream",Sony Sab HD (1080p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=stream
 http://indo51.gcdn.co/hindi-SONYSABHD/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",KITE Victers (Kerala) (720p) [Not 24/7]
-https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Sony WAH (404p)
 https://d2gowxuvx77j6q.cloudfront.net/WAH.m3u8
 #EXTINF:-1 tvg-id="" status="error",Sony YAY (404p)
@@ -839,6 +837,8 @@ https://dolv5imquuojb.cloudfront.net/ST_UTSAV.m3u8
 https://f8e7y4c6.ssl.hwcdn.net/apacsea/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Nandighosha Tv (720p) [Not 24/7]
 https://live.mycast.in/ngtv/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Times Now Navbharat [Geo-blocked]
+https://pubads.g.doubleclick.net/ssai/event/nRWQsGoJSzmcErJFgAy67g/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",Sanskaar (1080p) [Not 24/7]
 https://sanskarlive.sanskargroup.in/sanskartvlive.m3u8
 #EXTINF:-1 tvg-id="" status="error",Wion (720p) [Geo-blocked]
