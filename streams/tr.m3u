@@ -105,7 +105,7 @@ http://kuzeykibris.tv/m3u8/tv_genc.m3u8
 https://broadcasttr.com:446/tuncerciftci/smil:tuncerciftci.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="GRT.tr" status="online",GRT (720p)
 https://waw2.artiyerelmedya.net/grt/bant1/chunks.m3u8
-#EXTINF:-1 tvg-id="GRTGaziantep.tr" status="online",GRT Gaziantep (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="GRTGaziantep.tr" status="blocked",GRT Gaziantep (720p) [Geo-blocked]
 http://yerelmedya.tv:1935/grt/_definst_/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="GSTV.tr" status="blocked",GSTV [Geo-blocked]
 https://owifavo5.rocketcdn.com/gstv/gstv.smil/playlist.m3u8
@@ -130,10 +130,10 @@ https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p)
 http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
-#EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p) [Not 24/7]
-https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="error",İBB TV (720p)
 http://wowza.istweb.tv:1935/dp/istanbul2/playlist.m3u8
+#EXTINF:-1 tvg-id="IBBTV.tr" status="error",IBB TV (1080p) [Not 24/7]
+https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="error",İBB TV [Not 24/7]
 rtmp://wowza.istweb.tv:1935/webtv/webtv_wowza1
 #EXTINF:-1 tvg-id="IcelTV.tr" status="online",Icel TV (720p) [Not 24/7]
@@ -314,7 +314,7 @@ https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe45
 https://live.thaqalayn.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="TonTV.tr" status="online",Ton TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/tontv/bant1/chunks.m3u8
-#EXTINF:-1 tvg-id="ToprakTV.tr" status="error",Toprak TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ToprakTV.tr" status="online",Toprak TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/topraktv/playlist.m3u8
 #EXTINF:-1 tvg-id="TorbaTV.tr" status="online",Torba TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/torbatv/playlist.m3u8
@@ -413,7 +413,7 @@ https://5be5d840359c6.streamlock.net/unitv/unitv/playlist.m3u8
 http://uskudarunv.mediatriple.net/uskudarunv/uskudar2/playlist.m3u8
 #EXTINF:-1 tvg-id="Vizyon58TV.tr" status="online",Vizyon 58 TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/vizyon58/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="VTV.tr" status="online",VTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="VTV.tr" status="timeout",VTV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/kanalv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="VuslatTV.tr" status="online",Vuslat TV (720p) [Not 24/7]
 http://yayin3.canlitv.com:1935/live/vuslattv/HasBahCa.m3u8
@@ -429,8 +429,6 @@ https://592f1881b3d5f.streamlock.net:1443/santraltv_925/santraltv_925/playlist.m
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/107.m3u8
 #EXTINF:-1 tvg-id="" status="online",Med Müzik TV (1080p) [Not 24/7]
 http://137.74.205.201/medmuzik/MedStream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",tv100 (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
 #EXTINF:-1 tvg-id="" status="online",KANAL 58 (720p) [Not 24/7]
 https://broadcasttr.com:446/kanal58/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ALTAS TV (720p) [Not 24/7]
@@ -459,6 +457,8 @@ http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/29.m3u8
 http://176.10.117.18:8000/play/a004/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",CRI Türk Belgesel (480p)
 http://cri.aa.net.tr:1935/belgesel/belgesel/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",tv100 (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
 #EXTINF:-1 tvg-id="" status="error",tv100 (720p) [Not 24/7]
 https://livex458745.livestreamlive.xyz/tv100.m3u8
 #EXTINF:-1 tvg-id="" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Tay TV (720p)
