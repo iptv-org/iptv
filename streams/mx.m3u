@@ -21,7 +21,7 @@ https://5e50264bd6766.streamlock.net/canal44/videocanal44/playlist.m3u8
 https://d3nljkrx6mjqra.cloudfront.net/out/v1/1b9d9efd27814b3b8dc570113ae54409/index.m3u8
 #EXTINF:-1 tvg-id="CanaldelasEstrellas.mx" status="error",Canal de Las Estrellas (480p)
 http://170.83.242.153:8000/play/a012
-#EXTINF:-1 tvg-id="CanalMundoPlus.mx" status="error",Canal Mundo+ (560p) [Not 24/7]
+#EXTINF:-1 tvg-id="CanalMundoPlus.mx" status="online",Canal Mundo+ (560p) [Not 24/7]
 http://vcp1.myplaytv.com:1935/mundomas/mundomas/playlist.m3u8
 #EXTINF:-1 tvg-id="Capital21.mx" status="online",Capital 21 (720p) [Not 24/7]
 https://video.cdmx.gob.mx/livestream/stream.m3u8
@@ -29,7 +29,7 @@ https://video.cdmx.gob.mx/livestream/stream.m3u8
 http://170.83.242.153:8000/play/a00d
 #EXTINF:-1 tvg-id="ClaroSinLimites.mx" status="error",Claro Sin Limites (480p)
 http://170.83.242.153:8000/play/a01k
-#EXTINF:-1 tvg-id="ClaroSports.mx" status="online",Claro Sports (480p)
+#EXTINF:-1 tvg-id="ClaroSports.mx" status="error",Claro Sports (480p)
 http://45.179.140.242:8000/play/a0ht
 #EXTINF:-1 tvg-id="ConectaTV.mx" status="online",Conecta TV (720p)
 http://204.12.211.210:1935/conectatv/conectatv/playlist.m3u8
@@ -113,7 +113,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC9DH82HVSf4katwMeUpY80w
 #EXTINF:-1 tvg-id="TelevisaGuadalajara.mx" status="online",Televisa Guadalajara (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRujF_YxVVFmTRWURQH-Cww/live
-#EXTINF:-1 tvg-id="TelevisaGuerrero.mx" status="timeout",Televisa Guerrero (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaGuerrero.mx" status="error",Televisa Guerrero (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCnxTRk2K1iNsQkgpWXxyj4w/live
 #EXTINF:-1 tvg-id="TelevisaLaguna.mx" status="online",Televisa Laguna (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC_mwCcsKDJLSWjply5s0h8w/live
@@ -123,9 +123,9 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGDJLLphnP0zQQaE3kgo5Wg/live
 #EXTINF:-1 tvg-id="TelevisaMorelos.mx" status="timeout",Televisa Morelos
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcC9ykApQrgl4UxbKg2U4zw/live
-#EXTINF:-1 tvg-id="TelevisaNewsMexico.mx" status="online",Televisa News Mexico (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaNewsMexico.mx" status="timeout",Televisa News Mexico (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCUsm-fannqOY02PNN67C0KA/live
-#EXTINF:-1 tvg-id="TelevisaNoreste.mx" status="error",Televisa Noreste (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaNoreste.mx" status="online",Televisa Noreste (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC752DYv5vPlTSMrvEjfZXcw/live
 #EXTINF:-1 tvg-id="TelevisaPiedrasNegras.mx" status="error",Televisa Piedras Negras (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCxK8C1E8UZ5RipNXIBYEvTA/live
@@ -177,12 +177,12 @@ https://5ca3e84a76d30.streamlock.net/gpacifico1/smil:gpculiacan.smil/playlist.m3
 https://5ca3e84a76d30.streamlock.net/tvunam/videotvunam/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="" status="online",Alcarria TV (576p) [Not 24/7]
 http://217.182.77.27/live/alcarriatv-livestream.m3u8
-#EXTINF:-1 tvg-id="" status="online",TELE SISTEMA CANAL 9 (486p) [Geo-blocked]
-http://k4.usastreams.com/ARBtv/ARBtv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tlaxcala Televisión (360p) [Not 24/7]
 https://vid.mega00.com:5443/LiveApp/streams/928111829917388844551988/928111829917388844551988.m3u8?token=null
 #EXTINF:-1 tvg-id="" status="blocked",Canal 22 (XEIMT-TDT) [Geo-blocked]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://conceptoweb-studio.com/radio/video/canal22/
+#EXTINF:-1 tvg-id="" status="blocked",TELE SISTEMA CANAL 9 (486p) [Geo-blocked]
+http://k4.usastreams.com/ARBtv/ARBtv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ForoTV (720p) [Geo-blocked]
 https://live-streams-notusa.televisa.com/channel02-b/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Multipremier (480p)
