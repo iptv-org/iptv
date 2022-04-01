@@ -159,7 +159,7 @@ https://salto-streams.nl/hls/sotv1_high.m3u8
 https://server-67.stream-server.nl:1936/Samen1TV/Samen1TV/playlist.m3u8
 #EXTINF:-1 tvg-id="SilenceTV.nl" status="online",Silence TV (720p) [Not 24/7]
 http://93.190.140.42:8081/SilenceTV/live/playlist.m3u8
-#EXTINF:-1 tvg-id="SirisTV.nl" status="error",Siris TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SirisTV.nl" status="online",Siris TV (720p) [Not 24/7]
 https://videostream.siris.nl/hls/playoutweb/index.m3u8
 #EXTINF:-1 tvg-id="StreekTV.nl" status="online",Streek TV (720p) [Not 24/7]
 http://cdn22.streampartner.nl/streektv/streektv/playlist.m3u8
@@ -209,9 +209,9 @@ https://web.omroepgelderland.nl/live/livetv.m3u8
 https://ms2.mx-cd.net/tv/163-669433/RTV_Arnhem.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",RN 7 TV (1080p) [Geo-blocked]
 https://streaming.rn7.nl/rn7live_abr/tv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",JIN TV (720p) [Not 24/7]
-http://163.172.39.215:25461/line/C4@!a3a1@!w72A/27
-#EXTINF:-1 tvg-id="" status="timeout",JIN TV (720p) [Not 24/7]
-http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/27.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Omroep Gelderland (1080p)
 https://rrr.sz.xlcdn.com/?account=omroepgelderland&file=livetv&output=playlist.m3u8&protocol=http&service=wowza&type=live
+#EXTINF:-1 tvg-id="" status="error",JIN TV (720p) [Not 24/7]
+http://163.172.39.215:25461/line/C4@!a3a1@!w72A/27
+#EXTINF:-1 tvg-id="" status="error",JIN TV (720p) [Not 24/7]
+http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/27.m3u8
