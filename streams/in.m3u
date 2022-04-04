@@ -11,7 +11,7 @@ http://14.199.164.20:4001/play/a0mx/index.m3u8
 https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8
 #EXTINF:-1 tvg-id="AajTak.in" status="blocked",Aaj Tak (360p) [Geo-blocked]
 https://lmil.live-s.cdn.bitgravity.com/cdn-live/_definst_/lmil/live/aajtak_app.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AathavanTV.in" status="online",Aathavan TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AathavanTV.in" status="error",Aathavan TV (720p) [Not 24/7]
 http://45.77.66.224:1935/athavantv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ABPAnanda.in" status="online",ABP Ananda (720p)
 https://abp-i.akamaihd.net/hls/live/765530/abpananda/master.m3u8
@@ -42,7 +42,7 @@ http://cdn.asianetmobiletvplus.com/channels/acvutsav_021c9292219a98f899a7b74f0f3
 #EXTINF:-1 tvg-id="ADNGold.in" status="error" user-agent="AsianetMobileTVPlus",ADN Gold (404p)
 #EXTVLCOPT:http-user-agent=AsianetMobileTVPlus
 http://cdn.asianetmobiletvplus.com/channels/adngold_dibbcspwxywdcuwawgrvurjwitwbiksl/playlist.m3u8
-#EXTINF:-1 tvg-id="AkaramKidz.in" status="timeout",Akaram Kidz (460p) [Not 24/7]
+#EXTINF:-1 tvg-id="AkaramKidz.in" status="online",Akaram Kidz (460p) [Not 24/7]
 http://akaram.zecast.net/akaram-live/akaramkidz/index.m3u8
 #EXTINF:-1 tvg-id="AKDCalcuttaNews.in" status="blocked",AKD Calcutta News (540p) [Geo-blocked]
 https://d39iawgzv3h0yo.cloudfront.net/out/v1/1ef4344a3b4a41908915d58ac7bd5e23/index.m3u8
@@ -217,7 +217,7 @@ http://104.237.60.234/live/gabruutv.m3u8
 http://akalmultimedia.net:1935/gdnslive/gdns-live/chunklist.m3u8
 #EXTINF:-1 tvg-id="GlobalPunjab.in" status="online",Global Punjab (720p) [Not 24/7]
 https://media.streambrothers.com:1936/8522/8522/playlist.m3u8
-#EXTINF:-1 tvg-id="GSTV.in" status="error",GSTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="GSTV.in" status="online",GSTV (720p) [Not 24/7]
 https://1-213-10546-44.b.cdn13.com/388656798579293628302251.m3u8
 #EXTINF:-1 tvg-id="HiDosti.in" status="online",Hi Dosti (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0rg/index.m3u8
@@ -530,9 +530,9 @@ https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
 http://media.7starcloud.com:1935/live/sanatv2/playlist.m3u8
 #EXTINF:-1 tvg-id="SanaTV.in" status="online",Sana TV (576p) [Not 24/7]
 http://hdserver.7starcloud.com:1935/sanatv/sanatv/playlist.m3u8
-#EXTINF:-1 tvg-id="SanthoraShortFlim.in" status="timeout",Santhora Short Flim (720p)
+#EXTINF:-1 tvg-id="SanthoraShortFlim.in" status="online",Santhora Short Flim (720p)
 http://rtmp.santhoratv.zecast.net/santhora/santhorashortfilm/playlist.m3u8
-#EXTINF:-1 tvg-id="SanthoraTV.in" status="timeout",Santhora TV (720p)
+#EXTINF:-1 tvg-id="SanthoraTV.in" status="online",Santhora TV (720p)
 http://santhoratv.zecast.net/santhoratv/santhoratv/index.m3u8
 #EXTINF:-1 tvg-id="SathiyamTV.in" status="error",Sathiyam TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip==https://www.youtube.com/channel/UC2ziCMHFPWkFHjocUMXT__Q/live
@@ -632,7 +632,7 @@ http://14.199.164.20:4001/play/a0nx/index.m3u8
 http://vasanth.live.cdn.bitgravity.com/vasanth/secure/live/feed03?bgsecuredir=1&e=0&h=a9be0836bc39f96d0a9a958a659dfc1d
 #EXTINF:-1 tvg-id="VathanamTV.in" status="timeout",Vathanam TV
 http://95.216.167.183:5080/LiveApp/streams/443106610169904881506470.m3u8
-#EXTINF:-1 tvg-id="Velicham.in" status="error",Velicham (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="Velicham.in" status="online",Velicham (360p) [Not 24/7]
 https://rtmp.smartstream.video/velichamtv/velichamtv/playlist.m3u8
 #EXTINF:-1 tvg-id="VismayaNews.in" status="error",Vismaya News (720p) [Not 24/7]
 http://live.singamcloud.in:1935/vismayanews/vismayanews/playlist.m3u8
@@ -644,22 +644,12 @@ http://cdn18.live247stream.com/ndachannel/tv/playlist.m3u8
 http://cdn.logicwebs.in/hls/yolo.m3u8
 #EXTINF:-1 tvg-id="YuppThirai.in" status="online",Yupp Thirai (270p)
 http://119.81.82.28/encoded/yuppthirai_800/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee5Originals.in" status="error",Zee5 Originals (1080p) [Geo-blocked]
-https://f8e7y4c6.ssl.hwcdn.net/zee5_originals/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee5Originals.in" status="error",Zee5 Originals (1080p) [Geo-blocked]
-https://y5w8j4a9.ssl.hwcdn.net/zee5_originals/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee5Romance.in" status="error",Zee5 Romance (1080p) [Geo-blocked]
-https://f8e7y4c6.ssl.hwcdn.net/zee5_romance/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee5Romance.in" status="error",Zee5 Romance (1080p) [Geo-blocked]
-https://y5w8j4a9.ssl.hwcdn.net/zee5_romance/playlist.m3u8
+#EXTINF:-1 tvg-id="Zee24Ghanta.in" status="error",Zee 24 Ghanta (576p)
+https://sneh-z5api.herokuapp.com/?c=0-9-24ghantatv
 #EXTINF:-1 tvg-id="Zee24Kalak.in" status="error",Zee 24 (576p) [Geo-blocked]
 https://f8e7y4c6.ssl.hwcdn.net/kalak/playlist.m3u8
 #EXTINF:-1 tvg-id="Zee24Kalak.in" status="error",Zee 24 (576p) [Geo-blocked]
 https://y5w8j4a9.ssl.hwcdn.net/kalak/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee24Ghanta.in" status="error",Zee 24 Ghanta (576p)
-https://sneh-z5api.herokuapp.com/?c=0-9-24ghantatv
-#EXTINF:-1 tvg-id="ZeeMadhyaPradeshChhattisgarh.in" status="error",Zee 24 Madhya Pradesh Chhattisgarh [Geo-blocked]
-https://sneh-z5api.herokuapp.com/?c=0-9-zeemadhyapradeshchat
 #EXTINF:-1 tvg-id="Zee24Taas.in" status="error",Zee 24 Taas (576p) [Geo-blocked]
 https://sneh-z5api.herokuapp.com/?c=0-9-zee24taas
 #EXTINF:-1 tvg-id="ZeeAction.in" status="error",Zee Action (576p) [Geo-blocked]
@@ -704,28 +694,20 @@ https://y5w8j4a9.ssl.hwcdn.net/classic/playlist.m3u8
 https://sneh-z5api.herokuapp.com/?c=0-9-zeehindustan
 #EXTINF:-1 tvg-id="ZeeKeralamHD.in" status="error",Zee Keralam HD (720p) [Geo-blocked]
 https://f8e7y4c6.ssl.hwcdn.net/zkeralamhd/index.m3u8
+#EXTINF:-1 tvg-id="ZeeMadhyaPradeshChhattisgarh.in" status="error",Zee News MPCG (576p) [Geo-blocked]
+https://f8e7y4c6.ssl.hwcdn.net/newsmpcg/playlist.m3u8
+#EXTINF:-1 tvg-id="ZeeMadhyaPradeshChhattisgarh.in" status="error",Zee 24 Madhya Pradesh Chhattisgarh [Geo-blocked]
+https://sneh-z5api.herokuapp.com/?c=0-9-zeemadhyapradeshchat
+#EXTINF:-1 tvg-id="ZeeMadhyaPradeshChhattisgarh.in" status="error",Zee News MPCG (576p) [Geo-blocked]
+https://y5w8j4a9.ssl.hwcdn.net/newsmpcg/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeMarathiHD.in" status="error",Zee Marathi HD (720p) [Geo-blocked]
 https://sneh-z5api.herokuapp.com/?c=0-9-zeemarathi
-#EXTINF:-1 tvg-id="ZeeMarathiUSA.in" status="error",Zee Marathi USA (576p) [Geo-blocked]
-https://f8e7y4c6.ssl.hwcdn.net/marathiusa/playlist.m3u8
-#EXTINF:-1 tvg-id="ZeeMarathiUSA.in" status="error",Zee Marathi USA (576p) [Geo-blocked]
-https://y5w8j4a9.ssl.hwcdn.net/marathiusa/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeMundo.in" status="error",Zee Mundo (720p) [Geo-blocked]
 https://f8e7y4c6.ssl.hwcdn.net/mundohd/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeMundo.in" status="error",Zee Mundo (720p) [Geo-blocked]
 https://y5w8j4a9.ssl.hwcdn.net/mundohd/playlist.m3u8
-#EXTINF:-1 tvg-id="ZeeMusic.in" status="error",Zee Music (576p) [Geo-blocked]
-https://f8e7y4c6.ssl.hwcdn.net/magic/playlist.m3u8
-#EXTINF:-1 tvg-id="ZeeMusic.in" status="error",Zee Music (576p) [Geo-blocked]
-https://y5w8j4a9.ssl.hwcdn.net/magic/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeNews.in" status="error",Zee News
 https://sneh-z5api.herokuapp.com/?c=0-9-zeenews
-#EXTINF:-1 tvg-id="ZeeMadhyaPradeshChhattisgarh.in" status="error",Zee News MPCG (576p) [Geo-blocked]
-https://f8e7y4c6.ssl.hwcdn.net/newsmpcg/playlist.m3u8
-#EXTINF:-1 tvg-id="ZeeMadhyaPradeshChhattisgarh.in" status="error",Zee News MPCG (576p) [Geo-blocked]
-https://y5w8j4a9.ssl.hwcdn.net/newsmpcg/playlist.m3u8
-#EXTINF:-1 tvg-id="ZeeUttarPradeshUttarakhand.in" status="error",Zee News Uttar Pradesh Uttrakhand [Geo-blocked]
-https://sneh-z5api.herokuapp.com/?c=0-9-channel_265145625
 #EXTINF:-1 tvg-id="ZeePunjabi.in" status="error",Zee Punjabi (576p) [Geo-blocked]
 https://f8e7y4c6.ssl.hwcdn.net/punjabi/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeePunjabi.in" status="error",Zee Punjabi (576p) [Geo-blocked]
@@ -760,6 +742,8 @@ https://y5w8j4a9.ssl.hwcdn.net/russia/playlist.m3u8
 https://f8e7y4c6.ssl.hwcdn.net/ztvsdusa/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeTVUSA.us" status="error",Zee TV USA (576p) [Geo-blocked]
 https://y5w8j4a9.ssl.hwcdn.net/ztvsdusa/playlist.m3u8
+#EXTINF:-1 tvg-id="ZeeUttarPradeshUttarakhand.in" status="error",Zee News Uttar Pradesh Uttrakhand [Geo-blocked]
+https://sneh-z5api.herokuapp.com/?c=0-9-channel_265145625
 #EXTINF:-1 tvg-id="ZeeVajwa.in" status="error",Zee Vajwa (576p) [Geo-blocked]
 https://sneh-z5api.herokuapp.com/?c=0-9-353
 #EXTINF:-1 tvg-id="ZeeWorld.za" status="error",Zee World (576p) [Geo-blocked]
@@ -808,6 +792,8 @@ http://c0.cdn.trinity-tv.net/stream/zfmjgma9zn46fa797ez9fgkw7msh9mj4tppspg23gey6
 https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",MH1 Music (360p) [Not 24/7]
 http://rtmp.smartstream.video:1935/mhonemusic/mhonemusic/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",MH1 Prime (360p) [Not 24/7]
+http://rtmp.smartstream.video:1935/mhonenews/mhonenews/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Channel Win (360p) [Not 24/7]
 https://cdn.smartstream.video/smartstream-us/channelwinlive/channelwinlive/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Dishum [Geo-blocked]
@@ -827,8 +813,6 @@ http://cdncities.com/8012/8012/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error" user-agent="stream",Sony Sab HD (1080p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=stream
 http://indo51.gcdn.co/hindi-SONYSABHD/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",MH1 Prime (360p) [Not 24/7]
-http://rtmp.smartstream.video:1935/mhonenews/mhonenews/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Sony WAH (404p)
 https://d2gowxuvx77j6q.cloudfront.net/WAH.m3u8
 #EXTINF:-1 tvg-id="" status="error",Sony YAY (404p)
@@ -837,6 +821,14 @@ https://d20fdzcwhk7szz.cloudfront.net/SONY_YAY.m3u8
 https://dolv5imquuojb.cloudfront.net/ST_UTSAV.m3u8
 #EXTINF:-1 tvg-id="" status="error",Zee TV APAC (576p) [Geo-blocked]
 https://f8e7y4c6.ssl.hwcdn.net/apacsea/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Zee Music (576p) [Geo-blocked]
+https://f8e7y4c6.ssl.hwcdn.net/magic/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Zee Marathi USA (576p) [Geo-blocked]
+https://f8e7y4c6.ssl.hwcdn.net/marathiusa/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Zee5 Originals (1080p) [Geo-blocked]
+https://f8e7y4c6.ssl.hwcdn.net/zee5_originals/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Zee5 Romance (1080p) [Geo-blocked]
+https://f8e7y4c6.ssl.hwcdn.net/zee5_romance/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Nandighosha Tv (720p) [Not 24/7]
 https://live.mycast.in/ngtv/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Sanskaar (1080p) [Not 24/7]
@@ -847,3 +839,11 @@ https://sneh-z5api.herokuapp.com/?c=0-9-wion
 https://sneh-z5api.herokuapp.com/?c=0-9-zeecinemalu
 #EXTINF:-1 tvg-id="" status="error",Zee TV APAC (576p) [Geo-blocked]
 https://y5w8j4a9.ssl.hwcdn.net/apacsea/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Zee Music (576p) [Geo-blocked]
+https://y5w8j4a9.ssl.hwcdn.net/magic/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Zee Marathi USA (576p) [Geo-blocked]
+https://y5w8j4a9.ssl.hwcdn.net/marathiusa/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Zee5 Originals (1080p) [Geo-blocked]
+https://y5w8j4a9.ssl.hwcdn.net/zee5_originals/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Zee5 Romance (1080p) [Geo-blocked]
+https://y5w8j4a9.ssl.hwcdn.net/zee5_romance/playlist.m3u8
