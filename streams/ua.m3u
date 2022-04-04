@@ -83,7 +83,7 @@ http://kiev1-cdn.lanet.tv/live/1008.m3u8
 http://live.m2.tv/hls2/stream.m3u8
 #EXTINF:-1 tvg-id="M2.ua" status="online",M2 (540p)
 http://live.m2.tv/hls3/stream.m3u8
-#EXTINF:-1 tvg-id="MostVideoTV.ua" status="online",MostVideo.TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MostVideoTV.ua" status="error",MostVideo.TV (720p) [Not 24/7]
 http://w4.mostvideo.tv/tv/ch1.m3u8
 #EXTINF:-1 tvg-id="Nadiya.ua" status="error",Надія (720p) [Not 24/7]
 https://stream.hope.ua/hopeua/live_1/playlist.m3u8
@@ -91,10 +91,10 @@ https://stream.hope.ua/hopeua/live_1/playlist.m3u8
 http://nadiya.home-net.com.ua/mob/mystream.m3u8
 #EXTINF:-1 tvg-id="NLOTV.ua" status="blocked",НЛО ТВ (576p) [Geo-blocked]
 https://xx001.vivat.live/t-0301.0f6f.d/sd/00047/2m/index.m3u8
-#EXTINF:-1 tvg-id="NTN.ua" status="online",НТН (576p)
-https://edge2.iptv.macc.com.ua/img/ntn_3/index.m3u8
 #EXTINF:-1 tvg-id="NTN.ua" status="online",НТН (576p) [Not 24/7]
 https://edge3.iptv.macc.com.ua/img/ntn_3/index.m3u8
+#EXTINF:-1 tvg-id="NTN.ua" status="timeout",НТН (576p)
+https://edge2.iptv.macc.com.ua/img/ntn_3/index.m3u8
 #EXTINF:-1 tvg-id="ObshchestvennoeNezavisimoeTelevidenie.ua" status="online",Общественное Независимое Телевидение (576p)
 http://85.238.112.40:8810/hls_sec/239.33.75.33-.m3u8
 #EXTINF:-1 tvg-id="Odessa.ua" status="error",Одесса (576p) [Geo-blocked]
