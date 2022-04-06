@@ -69,7 +69,7 @@ https://ms7.mx-cd.net/tv/153-840564/Omroep_Peel_en_Maas_TV.smil/playlist.m3u8
 https://ms2.mx-cd.net/tv/184-782326/Omroep_Tilburg_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OmroepTilburgTV.nl" status="online",Omroep Tilburg TV (480p)
 https://ms7.mx-cd.net/tv/184-782326/Omroep_Tilburg_TV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="OmropFryslanTV.nl" status="online",Omrop Fryslân (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="OmropFryslanTV.nl" status="timeout",Omrop Fryslân (1080p) [Not 24/7]
 https://d3pvma9xb2775h.cloudfront.net/live/omropfryslan/stream04/index.m3u8
 #EXTINF:-1 tvg-id="OpenRotterdam.nl" status="online",Open Rotterdam (480p) [Not 24/7]
 http://ms2.mx-cd.net/tv/141-573555/OPEN_Rotterdam.smil/playlist.m3u8
@@ -163,11 +163,11 @@ http://93.190.140.42:8081/SilenceTV/live/playlist.m3u8
 https://videostream.siris.nl/hls/playoutweb/index.m3u8
 #EXTINF:-1 tvg-id="StreekTV.nl" status="online",Streek TV (720p) [Not 24/7]
 http://cdn22.streampartner.nl/streektv/streektv/playlist.m3u8
-#EXTINF:-1 tvg-id="StreekTV.nl" status="error",Streek TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="StreekTV.nl" status="timeout",Streek TV (720p) [Not 24/7]
 https://58e4d59f4ba2c.streamlock.net/streektv/streektv/playlist.m3u8
 #EXTINF:-1 tvg-id="TommyTeleshopping.nl" status="online",Tommy Teleshopping (480p)
 http://ms7.mx-cd.net/tv/71-1356094/Tommy_Teleshopping.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVEllef.nl" status="error",TV Ellef (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVEllef.nl" status="timeout",TV Ellef (540p) [Not 24/7]
 https://58e4d59f4ba2c.streamlock.net/tvellef/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVValkenburg.nl" status="online",TV Valkenburg (720p) [Not 24/7]
 https://livestream.tvvalkenburg.tv/hls/tv-valkenburg/tv-valkenburg.m3u8
@@ -197,8 +197,6 @@ https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
 https://ms7.mx-cd.net/tv/192-840604/Jenz_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",L1mburg (720p) [Not 24/7]
 https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",JIN TV (720p)
-https://live.jintv.org:12443/medialive/jintv.m3u8
 #EXTINF:-1 tvg-id="" status="online",XITE (720p) [Not 24/7]
 https://ms2.mx-cd.net/tv/226-1855782/XITE_NL.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",XITE (BE) (720p) [Not 24/7]
@@ -215,3 +213,5 @@ https://rrr.sz.xlcdn.com/?account=omroepgelderland&file=livetv&output=playlist.m
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/27
 #EXTINF:-1 tvg-id="" status="error",JIN TV (720p) [Not 24/7]
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/27.m3u8
+#EXTINF:-1 tvg-id="" status="error",JIN TV (720p)
+https://live.jintv.org:12443/medialive/jintv.m3u8
