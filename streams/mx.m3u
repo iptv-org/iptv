@@ -81,7 +81,7 @@ https://5caf24a595d94.streamlock.net:1937/stream23/stream23/playlist.m3u8
 http://wowzacontrol.com:1936/stream56/stream56/playlist.m3u8
 #EXTINF:-1 tvg-id="RCGTV3.mx" status="online",RCG TV 3 (360p) [Not 24/7]
 https://5caf24a595d94.streamlock.net:1937/stream56/stream56/playlist.m3u8
-#EXTINF:-1 tvg-id="RCGTV.mx" status="online",RCG TV (1080p)
+#EXTINF:-1 tvg-id="RCGTV.mx" status="timeout",RCG TV (1080p)
 https://video1.getstreamhosting.com:1936/8172/8172/playlist.m3u8
 #EXTINF:-1 tvg-id="RTQQueretaro.mx" status="online",RTQ Queretaro (360p) [Not 24/7]
 http://wms.tecnoxia.com:1935/rytqrolive/rytqrolive/master.m3u8
@@ -119,7 +119,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGDJLLphnP0zQQaE3kgo5Wg/live
 #EXTINF:-1 tvg-id="TelevisaMorelos.mx" status="timeout",Televisa Morelos
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcC9ykApQrgl4UxbKg2U4zw/live
-#EXTINF:-1 tvg-id="TelevisaNewsMexico.mx" status="timeout",Televisa News Mexico (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaNewsMexico.mx" status="online",Televisa News Mexico (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCUsm-fannqOY02PNN67C0KA/live
 #EXTINF:-1 tvg-id="TelevisaNoreste.mx" status="online",Televisa Noreste (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC752DYv5vPlTSMrvEjfZXcw/live
@@ -145,7 +145,7 @@ https://5ca3e84a76d30.streamlock.net/tmtv/videotmtv/playlist.m3u8
 http://streamingcws20.com:1935/lobodurango/videolobodurango/playlist.m3u8
 #EXTINF:-1 tvg-id="TVP.mx" status="online",TVP (720p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico4/smil:mazatlan.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPLosMochis.mx" status="error",TVP Los Mochis (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVPLosMochis.mx" status="online",TVP Los Mochis (720p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico2/mochis.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPObregon.mx" status="online",TVP Obregón (542p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico3/obregon.smil/playlist.m3u8
@@ -167,10 +167,6 @@ https://streams.the6tv.duckdns.org:2443/locals/SanDiego/xhtjb-tdt2.m3u8
 https://streams.the6tv.duckdns.org:2443/locals/SanDiego/xhtjb-tdt.m3u8
 #EXTINF:-1 tvg-id="" status="online",CorTV (800p)
 https://stream.oursnetworktv.com/latin/encoder29/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Imagen TV (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x82z4if
-#EXTINF:-1 tvg-id="" status="online",Televisa San Luis Potosí (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCaRuyaHshLdq462E9_pLzdA/live
 #EXTINF:-1 tvg-id="" status="online",TVP Culiacán (720p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico1/smil:gpculiacan.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV Unam (720p)
@@ -185,8 +181,6 @@ https://vid.mega00.com:5443/LiveApp/streams/928111829917388844551988/92811182991
 https://live-streams-notusa.televisa.com/channel02-b/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Multipremier (480p)
 http://201.168.205.12:8000/play/a0cp/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Golden Latinoamérica (720p) [Not 24/7]
-https://cloud2.streaminglivehd.com:1936/8026/8026/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Azcorazon (480p)
 http://181.115.72.65:8099/play/a016/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Azmundo (480p)
@@ -195,7 +189,13 @@ http://181.115.72.65:8099/play/a025/index.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://conceptoweb-studio.com/radio/video/canal22/
 #EXTINF:-1 tvg-id="" status="error",Telefórmula (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7u0spq
+#EXTINF:-1 tvg-id="" status="error",Imagen TV (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x82z4if
+#EXTINF:-1 tvg-id="" status="error",Televisa San Luis Potosí (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCaRuyaHshLdq462E9_pLzdA/live
 #EXTINF:-1 tvg-id="" status="error",Televisa Del Bajio
 http://viptv-query/?streaming-ip=https://www.youtube.com/channel/UC-uYy4_jIvDoJ4wigEv1S5A/live
+#EXTINF:-1 tvg-id="" status="error",Golden Latinoamérica (720p) [Not 24/7]
+https://cloud2.streaminglivehd.com:1936/8026/8026/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Energía Musical TV (360p) [Not 24/7]
 https://ss2.domint.net:3224/emtv_str/energiamusical/playlist.m3u8
