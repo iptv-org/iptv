@@ -63,12 +63,21 @@ async function loadStreams() {
     const [_, code] = filename.match(/^([a-z]{2})(_|$)/) || [null, null]
     const defaultBroadcastArea = code ? [`c/${code.toUpperCase()}`] : []
 
-    stream.guides = channel && Array.isArray(guides[channel.id]) ? guides[channel.id] : []
-    stream.categories = channel ? channel.categories.map(id => categories[id]) : []
-    stream.languages = channel ? channel.languages.map(id => languages[id]) : []
-    stream.broadcast_area = channel ? channel.broadcast_area : defaultBroadcastArea
-    stream.is_nsfw = channel ? channel.is_nsfw : false
-    stream.logo = channel ? channel.logo : null
+    if (channel) {
+      stream.guides = Array.isArray(guides[channel.id]) ? guides[channel.id] : []
+      stream.categories = channel.categories.map(id => categories[id]).filter(i => i)
+      stream.languages = channel.languages.map(id => languages[id]).filter(i => i)
+      stream.broadcast_area = channel.broadcast_area
+      stream.is_nsfw = channel.is_nsfw
+      stream.logo = channel.logo
+    } else {
+      stream.guides = []
+      stream.categories = []
+      stream.languages = []
+      stream.broadcast_area = defaultBroadcastArea
+      stream.is_nsfw = false
+      stream.logo = null
+    }
 
     return stream
   })
