@@ -8,10 +8,10 @@ http://51.79.193.108:8080/hlsok/j00026/index.m3u8?type=jp
 https://livecdn.fptplay.net/hda3/animaxport_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AnimaxJapan.jp" status="online",Animax Japan (Indonesian Subs) (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h02/01.m3u8
-#EXTINF:-1 tvg-id="AnimaxJapan.jp" status="online",Animax Japan (Indonesian Subs) (576p) [Geo-blocked]
-http://210.210.155.35/dr9445/h/h144/01.m3u8
 #EXTINF:-1 tvg-id="AnimaxJapan.jp" status="error",Animax Japan (Thai Subs)
 http://27.254.130.62/feed/LC38/playlist.m3u8
+#EXTINF:-1 tvg-id="AnimaxJapan.jp" status="error",Animax Japan (Indonesian Subs) (576p) [Geo-blocked]
+http://210.210.155.35/dr9445/h/h144/01.m3u8
 #EXTINF:-1 tvg-id="ATX.jp" status="online",AT-X (720p) [Not 24/7]
 https://sub2.neetball.net/live/neet.m3u8
 #EXTINF:-1 tvg-id="ATX.jp" status="online",AT-X (540p) [Not 24/7]
@@ -146,12 +146,12 @@ http://51.79.193.108:8080/hls/j00004/index.m3u8?type=jp
 http://51.79.193.108:8080/hlsok/j00004/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="NipponTV.jp" status="error",Nippon TV (540p) [Not 24/7]
 https://ntv1.mov3.co/hls/ntv.m3u8
-#EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCuTAXTexrhetbOe3zgskJBQ/live
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
 https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
 https://n24-cdn-live.ntv.co.jp/ch02/index.m3u8
+#EXTINF:-1 tvg-id="NTVNews24.jp" status="error",NTV News24 (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCuTAXTexrhetbOe3zgskJBQ/live
 #EXTINF:-1 tvg-id="ShopChannel.jp" status="online",Shop Channel (1080p) [Not 24/7]
 https://stream3.shopch.jp/HLS/master.m3u8
 #EXTINF:-1 tvg-id="Star1.jp" status="online",Star 1 (720p) [Not 24/7]
@@ -181,22 +181,14 @@ http://51.79.193.108:8080/hls/j00014/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="TVAsahi.jp" status="online",TV Asahi (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00014/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="TVOsaka.jp" status="online",TV Osaka (720p) [Not 24/7]
-http://51.79.193.108:8080/hls/j00013/index.m3u8?type=jp
-#EXTINF:-1 tvg-id="TVOsaka.jp" status="online",TV Osaka (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00013/index.m3u8?type=jp
+#EXTINF:-1 tvg-id="TVOsaka.jp" status="timeout",TV Osaka (720p) [Not 24/7]
+http://51.79.193.108:8080/hls/j00013/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="WakuWakuJapan.jp" status="error" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36",WakuWaku Japan
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36
 https://liveanevia.mncnow.id/live/eds/WakuWakuJapan/sa_dash_vmx/WakuWakuJapan.mpd
 #EXTINF:-1 tvg-id="WeatherNews.jp" status="online",Weather News (720p)
 https://movie.mcas.jp/mcas/smil:wn1.smil/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",TBS News
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC6AG81pAkf6Lbi_1VC5NmPA/live
-#EXTINF:-1 tvg-id="" status="online",All-Nippon News Network
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGCZAYq5Xxojl_tSXcVJhiQ/live
-#EXTINF:-1 tvg-id="" status="online",Fuji News Network (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoQBJMzcwmXrRSHBFAlTsIw/live
-#EXTINF:-1 tvg-id="" status="online",Hokkaido Television Broadcasting (HTB) News 24
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSWOnDD1KIriGmyQ7SgNA4A/live
 #EXTINF:-1 tvg-id="" status="online",Weather Channel (ウェザーニュース) (BS | WNI) (720p)
 http://movie.mcas.jp/mcas/wn1_2/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NHK华语视界 (360p)
@@ -205,3 +197,11 @@ https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/zh/725580/livecom_zh.m3u8
 http://51.79.193.108:8080/hls/j00011/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="" status="online",Family Gekijo (Japanese Subs) (540p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00011/index.m3u8?type=jp
+#EXTINF:-1 tvg-id="" status="timeout",All-Nippon News Network
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGCZAYq5Xxojl_tSXcVJhiQ/live
+#EXTINF:-1 tvg-id="" status="timeout",Hokkaido Television Broadcasting (HTB) News 24
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSWOnDD1KIriGmyQ7SgNA4A/live
+#EXTINF:-1 tvg-id="" status="error",TBS News
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC6AG81pAkf6Lbi_1VC5NmPA/live
+#EXTINF:-1 tvg-id="" status="error",Fuji News Network (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoQBJMzcwmXrRSHBFAlTsIw/live
