@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="5AABTV.ca" status="online",5AAB TV (720p) [Not 24/7]
 http://158.69.124.9:1935/5aabtv/5aabtv/playlist.m3u8
-#EXTINF:-1 tvg-id="AmazingDiscoveriesTV.ca" status="online",Amazing Discoveries TV (720p)
+#EXTINF:-1 tvg-id="AmazingDiscoveriesTV.ca" status="blocked",Amazing Discoveries TV (720p)
 https://uni01rtmp.tulix.tv/amazingdtv/amazingdtv/playlist.m3u8
 #EXTINF:-1 tvg-id="AssembleenationaleduQuebec.ca" status="error",Canal de l'Assemblée nationale (544p) [Not 24/7]
 https://wowzaprod231-i.akamaihd.net/hls/live/1013830/177d227e/playlist.m3u8
@@ -75,7 +75,7 @@ https://d7z3qjdsxbwoq.cloudfront.net/groupa/live/f9809cea-1e07-47cd-a94d-2ddd3e1
 http://159.69.58.154/cpmtv/cpmtv.m3u8
 #EXTINF:-1 tvg-id="CTV.ca" status="online",CTV (720p)
 https://pe-fa-lp02a.9c9media.com/live/News1Digi/p/hls/00000201/38ef78f479b07aa0/index/0c6a10a2/live/stream/h264/v1/3500000/manifest.m3u8
-#EXTINF:-1 tvg-id="DesheBidesheTV.ca" status="error",DesheBideshe TV (720p)
+#EXTINF:-1 tvg-id="DesheBidesheTV.ca" status="online",DesheBideshe TV (720p)
 https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/deshebideshe.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="DoyelTV.ca" status="online",Doyel TV (720p) [Not 24/7]
 http://ipm.oncast.me:1934/iplived/ip-doyeltv.stream/playlist.m3u8
@@ -113,7 +113,7 @@ http://knstream1.azureedge.net/knlive/knlive_high.m3u8
 https://tvalive.akamaized.net/hls/live/2014213/tvan01/tvan01.m3u8
 #EXTINF:-1 tvg-id="MontrealGreekTV.ca" status="online",Montreal Greek TV (480p) [Not 24/7]
 http://94.130.180.175:8081/live/greektv/playlist.m3u8
-#EXTINF:-1 tvg-id="NACTV.ca" status="online",NACTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NACTV.ca" status="timeout",NACTV (720p) [Not 24/7]
 http://stream.pivotalelements.com/nactv/stream.m3u8
 #EXTINF:-1 tvg-id="NETVToronto.ca" status="online",NETV Toronto (720p) [Not 24/7]
 https://live.streams.ovh/NetvToronto/NetvToronto/playlist.m3u8
@@ -153,7 +153,7 @@ http://live.tamilvision.tv:8081/TVI/HD/playlist.m3u8
 http://live.tamilvision.tv:8081/TVI/SD/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCulturelleMedias.ca" status="online",Télé Culturelle Médias (720p) [Not 24/7]
 https://5790d294af2dc.streamlock.net/8150/8150/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleMag.ca" status="error",Télé-Mag Québec (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleMag.ca" status="online",Télé-Mag Québec (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/ctmq/live
 #EXTINF:-1 tvg-id="TeleMagQuebec.ca" status="error",Télé-Mag Québec (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCNKXYT-Nng5LBMUQrZJ9zWA/live
@@ -185,12 +185,12 @@ https://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8
 https://wowzastream.westmancom.com/wcgtvlive/highstream.sdp/master.m3u8
 #EXTINF:-1 tvg-id="WeatherNetwork.ca" status="error",The Weather Network Event (720p) [Not 24/7]
 https://bcliveunivsecure-lh.akamaihd.net/i/twn_1@631672/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",Azstar TV (1080p) [Not 24/7]
-http://live.livestreamtv.ca/azstar/smil:azstar.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ontario Parliamentary Network (FR) (720p)
 http://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-fr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",QVTV (720p)
 https://qvmstream.tulix.tv/720p/720p/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Azstar TV (1080p) [Not 24/7]
+http://live.livestreamtv.ca/azstar/smil:azstar.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",CityTV Toronto CFTO-DT (720p)
 http://encodercdn1.frontline.ca/bespin/output/City_Toronto_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Cheknews (1080p) [Not 24/7]
