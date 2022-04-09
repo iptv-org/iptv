@@ -6,12 +6,8 @@ http://51.79.193.108:8080/hlsok/j00026/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="AnimaxJapan.jp" status="online" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Animax Japan (Vietnamese Subs) (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://livecdn.fptplay.net/hda3/animaxport_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AnimaxJapan.jp" status="online",Animax Japan (Indonesian Subs) (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="AnimaxJapan.jp" status="blocked",Animax Japan (Indonesian Subs) (576p) (-1 year in programmation) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h144/01.m3u8
-#EXTINF:-1 tvg-id="AnimaxJapan.jp" status="error",Animax Japan (Thai Subs)
-http://27.254.130.62/feed/LC38/playlist.m3u8
-#EXTINF:-1 tvg-id="AnimaxJapan.jp" status="error",Animax Japan (Indonesian Subs) (576p) [Geo-blocked]
-http://210.210.155.35/dr9445/h/h02/01.m3u8
 #EXTINF:-1 tvg-id="ATX.jp" status="online",AT-X (720p) [Not 24/7]
 https://sub2.neetball.net/live/neet.m3u8
 #EXTINF:-1 tvg-id="ATX.jp" status="online",AT-X (540p) [Not 24/7]
@@ -36,8 +32,8 @@ http://51.79.193.108:8080/hls/j00005/index.m3u8?type=jp
 http://51.79.193.108:8080/hlsok/j00005/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="BSTBS.jp" status="online",BS-TBS (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00051/index.m3u8?type=jp
-#EXTINF:-1 tvg-id="BSTBS.jp" status="error",BS-TBS (720p) [Not 24/7]
-http://50.7.74.29:8880/hlsok/j00051/index.m3u8?type=jp
+#EXTINF:-1 tvg-id="BSTBS.jp" status="online",BS-TBS (720p) [Not 24/7]
+http://51.79.193.108:8080/hlsok/j00051/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="BSTVTokyo.jp" status="online",BS TV Tokyo (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00050/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="BSTVTokyo.jp" status="online",BS TV Tokyo (720p) [Not 24/7]
@@ -46,14 +42,14 @@ http://51.79.193.108:8080/hlsok/j00050/index.m3u8?type=jp
 http://cgntv-glive.ofsdelivery.net/live/cgntv_jp/playlist.m3u8
 #EXTINF:-1 tvg-id="FujiTV.jp" status="online",Fuji TV (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00010/index.m3u8?type=jp
-#EXTINF:-1 tvg-id="FujiTV.jp" status="error",Fuji TV (540p) [Not 24/7]
-https://fujitv1.mov3.co/hls/fujitv.m3u8
+#EXTINF:-1 tvg-id="FujiTV.jp" status="",Fuji TV (540p) [Not 24/7]
+https://fujitv2.mov3.co/hls/fujitv.m3u8
 #EXTINF:-1 tvg-id="GAORA.jp" status="online",GAORA (540p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00045/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="GAORA.jp" status="online",GAORA (540p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00045/index.m3u8?type=jp
-#EXTINF:-1 tvg-id="GSTV.jp" status="error",GSTV (720p)
-https://gemstv.wide-stream.net/gemstv01/smil:gemstv01.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="GSTV.jp" status="online",GSTV (720p)
+https://gstv-tnz-gsmediastreaming.preview-jpea.channel.media.azure.net/dfd06b62-e9d1-4a7f-bcbb-89d2ecbc82ee/preview.ism/manifest(format=mpd-time-csf,audio-only=false)
 #EXTINF:-1 tvg-id="GTNTyphome.jp" status="online",GTN Typhome (English Subs) (720p) [Not 24/7]
 https://hamada.gaki-no-tsukai.eu:2087/hls/test.m3u8
 #EXTINF:-1 tvg-id="GunmaTV.jp" status="online",Gunma TV (720p)
@@ -120,8 +116,8 @@ http://51.79.193.108:8080/hls/j00035/index.m3u8?type=jp
 http://51.79.193.108:8080/hlsok/j00034/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="NHKEducationalTV.jp" status="online",NHK E (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00035/index.m3u8?type=jp
-#EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="error",NHK General TV (540p) [Not 24/7]
-https://nhk1.mov3.co/hls/nhk.m3u8
+#EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="",NHK General TV (540p) [Not 24/7]
+https://nhk2.mov3.co/hls/nhk.m3u8
 #EXTINF:-1 tvg-id="NHKGOsaka.jp" status="online",NHK G Osaka (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00032/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="NHKGOsaka.jp" status="online",NHK G Osaka (720p) [Not 24/7]
@@ -144,8 +140,8 @@ https://b-nhkwlive-xjp.webcdn.stream.ne.jp/hls/live/2003458-b/nhkwlive-xjp-en/in
 http://51.79.193.108:8080/hls/j00004/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="NipponTV.jp" status="online",Nippon TV (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00004/index.m3u8?type=jp
-#EXTINF:-1 tvg-id="NipponTV.jp" status="error",Nippon TV (540p) [Not 24/7]
-https://ntv1.mov3.co/hls/ntv.m3u8
+#EXTINF:-1 tvg-id="NipponTV.jp" status="",Nippon TV (540p) [Not 24/7]
+https://ntv2.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
 https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
