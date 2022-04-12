@@ -1,4 +1,7 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="24B.ir" status="error",GEM 24b (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=24b
+https://d2e40kvaojifd6.cloudfront.net/stream/24b/playlist.m3u8
 #EXTINF:-1 tvg-id="AFNTV.ir" status="online",AFN TV (720p) [Not 24/7]
 https://bozztv.com/1gbw5/tintv2/tintv2/playlist.m3u8
 #EXTINF:-1 tvg-id="AlAlam.ir" status="online",Al Alam (360p) [Not 24/7]
@@ -33,9 +36,6 @@ https://faraztv.net/hls/stream.m3u8
 http://cdn1.live.irib.ir:1935/epg-live/smil:fars/playlist.m3u8
 #EXTINF:-1 tvg-id="Film1.ir" status="error",Film 1 (720p)
 http://159.69.58.154/film1/film1tv.m3u8
-#EXTINF:-1 tvg-id="GEM24b.ir" status="error",GEM 24b (1080p) [Geo-blocked]
-#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=24b
-https://d2e40kvaojifd6.cloudfront.net/stream/24b/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMAcademy.ir" status="error",GEM Academy (540p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemusa
 https://d2e40kvaojifd6.cloudfront.net/stream/gem_usa/playlist.m3u8
@@ -72,37 +72,21 @@ https://stream-cdn.gemonline.tv/live/gemkids/index.m3u8
 #EXTINF:-1 tvg-id="GEMLatino.ir" status="error",GEM Latino (540p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gem_latino
 https://d2e40kvaojifd6.cloudfront.net/stream/gem_latino/playlist.m3u8
-#EXTINF:-1 tvg-id="GEMLifeTV.ir" status="error",GEM Life (576p)
+#EXTINF:-1 tvg-id="GEMLife.ir" status="error",GEM Life (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gem_life
 https://stream-cdn.gemonline.tv/live/gemlife/index.m3u8
-#EXTINF:-1 tvg-id="GEMMaxx.ir" status="error",GEM Maxx (576p)
-#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=maxx
-https://stream-cdn.gemonline.tv/live/gemmaxx/index.m3u8
-#EXTINF:-1 tvg-id="GEMMifa.ir" status="timeout",GEM Mifa (360p)
-http://65.21.196.79/mifa/master.m3u8
-#EXTINF:-1 tvg-id="GEMModernEconomy.ir" status="error",GEM Modern Economy (540p) [Geo-blocked]
-#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=modern_economy
-https://d2e40kvaojifd6.cloudfront.net/stream/modern_economy/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMNature.ir" status="timeout",GEM Nature (360p)
 http://65.21.196.79/gem_nature/master.m3u8
-#EXTINF:-1 tvg-id="GEMOnyx.ir" status="error",GEM Onyx (1080p) [Geo-blocked]
-#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=onyx
-https://d2e40kvaojifd6.cloudfront.net/stream/onyx/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMProperty.ir" status="error",GEM Property (540p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gem_property
 https://d2e40kvaojifd6.cloudfront.net/stream/gem_property/playlist.m3u8
-#EXTINF:-1 tvg-id="GEMRiver.ir" status="timeout",GEM River (360p)
-http://65.21.196.79/gem_river/master.m3u8
-#EXTINF:-1 tvg-id="GEMRubix.ir" status="error",GEM Rubix (576p)
-#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=rubix
-https://stream-cdn.gemonline.tv/live/rubix/index.m3u8
 #EXTINF:-1 tvg-id="GEMSeries.ir" status="timeout",GEM Series (360p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemseries
 http://65.21.196.79/gem_series/master.m3u8
 #EXTINF:-1 tvg-id="GEMTravel.ir" status="error",GEM Travel (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gem_travel
 https://stream-cdn.gemonline.tv/live/gemtravel/index.m3u8
-#EXTINF:-1 tvg-id="GEMTv.ir" status="timeout",GEM Tv (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="GEMTV.ir" status="timeout",GEM Tv (360p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemtv
 http://65.21.196.79/gem_tv/master.m3u8
 #EXTINF:-1 tvg-id="GOLESTAN.ir" status="online",GOLESTAN (240p)
@@ -115,10 +99,10 @@ http://51.210.199.7/hls/stream.m3u8
 https://live.presstv.ir/ifilmlive/smil:ifilmtv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="iFILMPersian2.ir" status="online",iFILM Persian 2 (480p) [Not 24/7]
 https://live1.presstv.ir/live/ifilm2.m3u8
-#EXTINF:-1 tvg-id="ImamHusseinTV.ir" status="online",Imam Hussein TV 1 (360p)
-https://live.imamhossaintv.com/live/ih103/index.m3u8
-#EXTINF:-1 tvg-id="ImamHusseinTV.ir" status="error",Imam Hussein TV (720p)
+#EXTINF:-1 tvg-id="ImamHusseinTV.ir" status="online",Imam Hussein TV (720p)
 https://fa.imamhusseintv.com/live/ih1.m3u8
+#EXTINF:-1 tvg-id="ImamHusseinTV.ir" status="online",Imam Hussein TV 1 (360p)
+https://live.imamhossaintv.com/live/ih1.m3u8
 #EXTINF:-1 tvg-id="INTVSimayeAzadi.ir" status="online",INTV Simaye Azadi (1080p)
 https://sima-i.akamaihd.net/hls/live/624111/sima/index.m3u8
 #EXTINF:-1 tvg-id="IranBeauty.ir" status="online",Iran Beauty (720p) [Not 24/7]
@@ -137,8 +121,16 @@ https://live.kalemehtv.tv/live/ngrp:kalemeh_all/playlist.m3u8
 https://5caf24a595d94.streamlock.net:1937/8130/8130/playlist.m3u8
 #EXTINF:-1 tvg-id="Marjaeyat.ir" status="online",Marjaeyat (1080p) [Not 24/7]
 https://livefa.marjaeyattv.com/mtv_fa/playlist.m3u8
+#EXTINF:-1 tvg-id="Maxx.ir" status="error",GEM Maxx (576p)
+#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=maxx
+https://stream-cdn.gemonline.tv/live/gemmaxx/index.m3u8
+#EXTINF:-1 tvg-id="Mifa.ir" status="timeout",GEM Mifa (360p)
+http://65.21.196.79/mifa/master.m3u8
 #EXTINF:-1 tvg-id="MihanTV.ir" status="online",Mihan TV (360p) [Not 24/7]
 https://iptv.mihantv.com/live/playlist1/index.m3u8
+#EXTINF:-1 tvg-id="ModernEconomy.ir" status="error",GEM Modern Economy (540p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=modern_economy
+https://d2e40kvaojifd6.cloudfront.net/stream/modern_economy/playlist.m3u8
 #EXTINF:-1 tvg-id="MohabatTV.ir" status="online",Mohabat TV (540p)
 http://204.11.235.251:1935/live_transcoder/ngrp:mohabat.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="MohabatTV.ir" status="online",Mohabat TV (540p)
@@ -153,6 +145,9 @@ http://51.210.227.130/hls/stream.m3u8
 https://cdn.videoevent.live:19360/elfaro4/elfaro4.m3u8
 #EXTINF:-1 tvg-id="OmideIranTV.us" status="online",Omide Iran (720p) [Not 24/7]
 http://51.210.199.38/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Onyx.ir" status="error",GEM Onyx (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=onyx
+https://d2e40kvaojifd6.cloudfront.net/stream/onyx/playlist.m3u8
 #EXTINF:-1 tvg-id="OXIRTV.ir" status="error",OXIR TV (720p)
 http://51.210.199.36/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ParnianTV.ir" status="online",Parnian TV (1080p) [Not 24/7]
@@ -181,6 +176,11 @@ https://live1.presstv.ir/live/presstvfr/index.m3u8
 https://live.presstv.ir/liveprs/smil:liveprs/playlist.m3u8
 #EXTINF:-1 tvg-id="RangarangTV.ir" status="online",Rangarang TV (720p) [Not 24/7]
 https://iptv.rangarang.us/live/playlist.m3u8
+#EXTINF:-1 tvg-id="River.ir" status="timeout",GEM River (360p)
+http://65.21.196.79/gem_river/master.m3u8
+#EXTINF:-1 tvg-id="Rubix.ir" status="error",GEM Rubix (576p)
+#EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=rubix
+https://stream-cdn.gemonline.tv/live/rubix/index.m3u8
 #EXTINF:-1 tvg-id="SAHAND.ir" status="online",SAHAND (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:sahand/playlist.m3u8
 #EXTINF:-1 tvg-id="Sahar.ir" status="online",Sahar (480p)
