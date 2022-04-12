@@ -13,7 +13,7 @@ https://manar.live/x.smil/playlist.m3u8
 http://istream.binarywaves.com:8081/hls/arabica/playlist.m3u8
 #EXTINF:-1 tvg-id="CharityTV.lb" status="online",CharityTV (1080p) [Not 24/7]
 http://185.105.4.236:1935/live/ngrp:livestream_all/live.m3u8
-#EXTINF:-1 tvg-id="LBCInternational.lb" status="online",LBC International
+#EXTINF:-1 tvg-id="LBCInternational.lb" status="blocked",LBC International
 http://zinachannels.zinamedia.net/ar-s/lbc-internatonal/index.m3u8
 #EXTINF:-1 tvg-id="LBCInternational.lb" status="blocked",LBC International (1080p) [Geo-blocked]
 https://shls-lbci-prod-dub.shahid.net/out/v1/d8cce30036e743318a7f338539689968/index.m3u8
@@ -44,12 +44,12 @@ https://cdn.catiacast.video/abr/ed8f807e2548db4507d2a6f4ba0c4a06/playlist.m3u8
 https://cdn.tvseventeen.com/test_tv_seventeen/index.m3u8
 #EXTINF:-1 tvg-id="NourSat.lb" status="online",NourSAT (576p)
 https://svs.itworkscdn.net/nour4satlive/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="AlJadeed.lb" status="online",Al Jadeed (480p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7ztkw7
 #EXTINF:-1 tvg-id="" status="online",Aliman TV (240p) [Not 24/7]
 https://svs.itworkscdn.net/alimanlive/imantv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OTV.lb" status="blocked",OTV (720p) [Not 24/7]
 http://62.182.82.104/OTV/index.m3u8?token=test
+#EXTINF:-1 tvg-id="AlJadeed.lb" status="error",Al Jadeed (480p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7ztkw7
 #EXTINF:-1 tvg-id="OTV.lb" status="error",OTV (1080p) [Geo-blocked]
 https://iptv-all.lanesh4d0w.repl.co/lebanon/otv
 #EXTINF:-1 tvg-id="AlMayadeenTV.lb" status="error",Al Mayadeen (576p)
