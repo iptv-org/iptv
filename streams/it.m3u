@@ -11,7 +11,7 @@ https://tsw.streamingwebtv24.it:1936/abchanneltv/abchanneltv/playlist.m3u8
 https://59ef7ad665d1d.streamlock.net:1443/abchannel/abchannel/playlist.m3u8
 #EXTINF:-1 tvg-id="AlmaTV.it" status="timeout",Alma TV (576p)
 http://151.0.207.99:1935/AlmaTv/AlmaTv/playlist.m3u8
-#EXTINF:-1 tvg-id="AltoAdigeTV.it" status="timeout",Alto Adige TV (720p)
+#EXTINF:-1 tvg-id="AltoAdigeTV.it" status="online",Alto Adige TV (720p)
 https://5f204aff97bee.streamlock.net/AltoAdigeTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="AntennaTreVeneto.it" status="online",Antenna Tre Veneto (480p) [Geo-blocked]
 https://59d8c0cee6f3d.streamlock.net/antennatreveneto/antennatreveneto.stream/playlist.m3u8
@@ -145,13 +145,13 @@ https://59ef7ad665d1d.streamlock.net:1443/paradisetv/paradisetv/playlist.m3u8
 https://5db313b643fd8.streamlock.net/Paroledivita/Paroledivita/playlist.m3u8
 #EXTINF:-1 tvg-id="PrimaTivvu.it" status="error",Prima Tivvu (272p)
 https://celinel.akamaized.net/hls/live/2032089/2032089/primativvu/primativvu/playlist.m3u8
-#EXTINF:-1 tvg-id="Primocanale.it" status="online",Primocanale (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Primocanale.it" status="timeout",Primocanale (1080p) [Not 24/7]
 https://msh0203.stream.seeweb.it/live/flv:stream2.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="R101.it" status="error",R101 (576p)
 https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(er)/index.m3u8
 #EXTINF:-1 tvg-id="Radio24.it" status="error",Radio 24 (1080p) [Not 24/7]
 http://radio24-lh.akamaihd.net/i/radio24video_1@379914/master.m3u8
-#EXTINF:-1 tvg-id="Radio51TV.it" status="error",Radio 51 TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Radio51TV.it" status="online",Radio 51 TV (480p) [Geo-blocked]
 http://178.32.140.155/canale51/canale51/playlist.m3u8
 #EXTINF:-1 tvg-id="Radio101.it" status="error",Radio 101 (576p)
 https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ER)/index.m3u8
@@ -352,7 +352,7 @@ https://59d8c0cee6f3d.streamlock.net/telenord/telenord/playlist.m3u8
 https://wms.shared.streamshow.it/telenord/telenord/playlist.m3u8
 #EXTINF:-1 tvg-id="TelePegasoCatania.it" status="online",Tele Pegaso Catania (404p) [Not 24/7]
 https://flash2.xdevel.com/telepegasocanale812/telepegasocanale812/playlist.m3u8
-#EXTINF:-1 tvg-id="TelePordenone.it" status="online",Tele Pordenone (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelePordenone.it" status="error",Tele Pordenone (576p) [Not 24/7]
 http://213.187.12.18/telepn/telepn.m3u8
 #EXTINF:-1 tvg-id="TeleQuattro.it" status="online",Tele Quattro (480p) [Not 24/7]
 http://wms.shared.streamshow.it/telequattro/telequattro/playlist.m3u8
@@ -452,6 +452,8 @@ http://212.43.97.35:1935/winechannel/winechannel/playlist.m3u8
 https://yviistreamer.kernel.online/hls/yviitv.m3u8
 #EXTINF:-1 tvg-id="" status="online",telePAVIA (720p)
 http://wms.shared.streamshow.it/telepavia/mp4:telepavia/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Tele Pavia (720p)
+http://wms.shared.streamshow.it/telepavia/telepavia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",telePAVIA (720p)
 http://wms.shared.streamshow.it:1935/telepavia/telepavia/live.m3u8
 #EXTINF:-1 tvg-id="" status="online",Rai 1 (Geo) (576p)
@@ -470,8 +472,6 @@ http://4k-server-mia.2cdn.eu/HilandoFinoTV/ngrp:HilandoFinoTV_all/playlist.m3u8
 http://46.165.210.112/radionorbatv/norbatv_source.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Rai Sport+ [Geo-blocked]
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
-#EXTINF:-1 tvg-id="" status="error",Tele Pavia (720p)
-http://wms.shared.streamshow.it/telepavia/telepavia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",DeeJay TV (360p)
 https://deejay_tv-lh.akamaihd.net/i/DeejayTv_1@129866/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",R 101 Italia IT (576p)
