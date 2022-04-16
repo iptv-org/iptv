@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="5AABTV.ca" status="online",5AAB TV (720p) [Not 24/7]
 http://158.69.124.9:1935/5aabtv/5aabtv/playlist.m3u8
-#EXTINF:-1 tvg-id="AmazingDiscoveriesTV.ca" status="online",Amazing Discoveries TV (720p)
+#EXTINF:-1 tvg-id="AmazingDiscoveriesTV.ca" status="blocked",Amazing Discoveries TV (720p)
 https://uni01rtmp.tulix.tv/amazingdtv/amazingdtv/playlist.m3u8
 #EXTINF:-1 tvg-id="AssembleenationaleduQuebec.ca" status="error",Canal de l'Assemblée nationale (544p) [Not 24/7]
 https://wowzaprod231-i.akamaihd.net/hls/live/1013830/177d227e/playlist.m3u8
@@ -25,8 +25,6 @@ https://hls.savoir.media/live/stream.m3u8
 https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/canbanglatv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CBCCalgary.ca" status="blocked",CBC Calgary [Geo-blocked]
 https://cbclivedai4-i.akamaihd.net/hls/live/567230/event2/CBRT/master5.m3u8
-#EXTINF:-1 tvg-id="CBCCBLT.ca" status="error",CBC Toronto (720p)
-http://encodercdn1.frontline.ca/encoder181/output/CBC_Toronto_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="CBCCharlottetown.ca" status="blocked",CBC Charlottetown [Geo-blocked]
 https://cbclivedai6-i.akamaihd.net/hls/live/567239/event2/CBCT/master5.m3u8
 #EXTINF:-1 tvg-id="CBCEdmonton.ca" status="blocked",CBC Edmonton [Geo-blocked]
@@ -47,6 +45,8 @@ https://cbclivedai2-i.akamaihd.net/hls/live/566969/event2/CBKT/master5.m3u8
 https://cbclivedai5-i.akamaihd.net/hls/live/567236/event2/CBNT/master5.m3u8
 #EXTINF:-1 tvg-id="CBCToronto.ca" status="blocked",CBC Toronto [Geo-blocked]
 https://cbclivedai1-i.akamaihd.net/hls/live/566940/event2/CBLT/master5.m3u8
+#EXTINF:-1 tvg-id="CBCToronto.ca" status="error",CBC Toronto (720p)
+http://encodercdn1.frontline.ca/encoder181/output/CBC_Toronto_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="CBCVancouver.ca" status="blocked",CBC Vancouver [Geo-blocked]
 https://cbclivedai2-i.akamaihd.net/hls/live/566968/event2/CBUT/master5.m3u8
 #EXTINF:-1 tvg-id="CBCWindsor.ca" status="blocked",CBC Windsor [Geo-blocked]
@@ -103,8 +103,6 @@ https://ici-i.akamaihd.net/hls/live/873426/ICI-Live-Stream/master.m3u8
 https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master.m3u8
 #EXTINF:-1 tvg-id="IIPCTV.ca" status="online",IIPC TV (480p) [Geo-blocked]
 https://uni10rtmp.tulix.tv/iipctv/iipctv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="isumatv.ca" status="online",Uvagut TV (1080p)
-http://dee7mwgg9dzvl.cloudfront.net/hls/uvagut/playlist.m3u8
 #EXTINF:-1 tvg-id="ITCTV.ca" status="blocked",ITC TV (480p) [Geo-blocked]
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/f05d55e42dc746c8bd36edafbace7cc1/playlist.m3u8
 #EXTINF:-1 tvg-id="Knowledge.ca" status="blocked",Knowledge (720p) [Geo-blocked]
@@ -153,9 +151,9 @@ http://live.tamilvision.tv:8081/TVI/HD/playlist.m3u8
 http://live.tamilvision.tv:8081/TVI/SD/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCulturelleMedias.ca" status="online",Télé Culturelle Médias (720p) [Not 24/7]
 https://5790d294af2dc.streamlock.net/8150/8150/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleMag.ca" status="error",Télé-Mag Québec (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleMag.ca" status="online",Télé-Mag Québec (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/ctmq/live
-#EXTINF:-1 tvg-id="TeleMagQuebec.ca" status="error",Télé-Mag Québec (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleMagQuebec.ca" status="online",Télé-Mag Québec (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCNKXYT-Nng5LBMUQrZJ9zWA/live
 #EXTINF:-1 tvg-id="Teletoon.ca" status="error",Teletoon (720p) [Not 24/7]
 http://s1.mysportz.tv:2082/teletoon/playlist.m3u8
@@ -179,6 +177,8 @@ http://rtmp.smartstream.video:1935/capco/tv29/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC0JP0ek-HhcqisiEpsZiQZA/live
 #EXTINF:-1 tvg-id="TVOKids.ca" status="online",TVOKids (360p) [Not 24/7]
 https://bcsecurelivehls-i.akamaihd.net/hls/live/623607/15364602001/tvokids/master.m3u8
+#EXTINF:-1 tvg-id="UvagutTV.ca" status="online",Uvagut TV (1080p)
+http://dee7mwgg9dzvl.cloudfront.net/hls/uvagut/playlist.m3u8
 #EXTINF:-1 tvg-id="VBS.ca" status="online",VBS (480p) [Not 24/7]
 https://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="WCGtv.ca" status="error",WCGtv Brandon (720p) [Not 24/7]
