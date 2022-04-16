@@ -5,9 +5,9 @@ http://158.69.124.9:1935/5aabtv/5aabtv/playlist.m3u8
 https://uni01rtmp.tulix.tv/amazingdtv/amazingdtv/playlist.m3u8
 #EXTINF:-1 tvg-id="AssembleenationaleduQuebec.ca" status="error",Canal de l'Assemblée nationale (544p) [Not 24/7]
 https://wowzaprod231-i.akamaihd.net/hls/live/1013830/177d227e/playlist.m3u8
-#EXTINF:-1 tvg-id="AzStarTV.ca" status="online",Az Star TV (1080p)
+#EXTINF:-1 tvg-id="AzStarTV.ca" status="timeout",Az Star TV (1080p)
 http://live.azstartv.com/azstar/smil:azstar.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AzStarTV.ca" status="error",Az Star TV (240p)
+#EXTINF:-1 tvg-id="AzStarTV.ca" status="timeout",Az Star TV (240p)
 https://live.livestreamtv.ca/azstar/ngrp:azstar/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCTorontoGaundaPunjab.ca" status="online",BBC Toronto Gaunda Punjab (720p) [Not 24/7]
 http://start.agmediachandigarh.com/gaundapunjab/tv/playlist.m3u8
@@ -25,8 +25,6 @@ https://hls.savoir.media/live/stream.m3u8
 https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/canbanglatv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CBCCalgary.ca" status="blocked",CBC Calgary [Geo-blocked]
 https://cbclivedai4-i.akamaihd.net/hls/live/567230/event2/CBRT/master5.m3u8
-#EXTINF:-1 tvg-id="CBCCBLT.ca" status="error",CBC Toronto (720p)
-http://encodercdn1.frontline.ca/encoder181/output/CBC_Toronto_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="CBCCharlottetown.ca" status="blocked",CBC Charlottetown [Geo-blocked]
 https://cbclivedai6-i.akamaihd.net/hls/live/567239/event2/CBCT/master5.m3u8
 #EXTINF:-1 tvg-id="CBCEdmonton.ca" status="blocked",CBC Edmonton [Geo-blocked]
@@ -47,6 +45,8 @@ https://cbclivedai2-i.akamaihd.net/hls/live/566969/event2/CBKT/master5.m3u8
 https://cbclivedai5-i.akamaihd.net/hls/live/567236/event2/CBNT/master5.m3u8
 #EXTINF:-1 tvg-id="CBCToronto.ca" status="blocked",CBC Toronto [Geo-blocked]
 https://cbclivedai1-i.akamaihd.net/hls/live/566940/event2/CBLT/master5.m3u8
+#EXTINF:-1 tvg-id="CBCToronto.ca" status="error",CBC Toronto (720p)
+http://encodercdn1.frontline.ca/encoder181/output/CBC_Toronto_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="CBCVancouver.ca" status="blocked",CBC Vancouver [Geo-blocked]
 https://cbclivedai2-i.akamaihd.net/hls/live/566968/event2/CBUT/master5.m3u8
 #EXTINF:-1 tvg-id="CBCWindsor.ca" status="blocked",CBC Windsor [Geo-blocked]
@@ -101,19 +101,17 @@ http://encodercdn1.frontline.ca/encoder181/output/History_720p/playlist.m3u8
 https://ici-i.akamaihd.net/hls/live/873426/ICI-Live-Stream/master.m3u8
 #EXTINF:-1 tvg-id="ICIRadioCanadaRDI.ca" status="online",ICI RDI (720p)
 https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master.m3u8
-#EXTINF:-1 tvg-id="IIPCTV.ca" status="blocked",IIPC TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="IIPCTV.ca" status="online",IIPC TV (480p) [Geo-blocked]
 https://uni10rtmp.tulix.tv/iipctv/iipctv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="isumatv.ca" status="online",Uvagut TV (1080p)
-http://dee7mwgg9dzvl.cloudfront.net/hls/uvagut/playlist.m3u8
 #EXTINF:-1 tvg-id="ITCTV.ca" status="blocked",ITC TV (480p) [Geo-blocked]
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/f05d55e42dc746c8bd36edafbace7cc1/playlist.m3u8
 #EXTINF:-1 tvg-id="Knowledge.ca" status="blocked",Knowledge (720p) [Geo-blocked]
 http://knstream1.azureedge.net/knlive/knlive_high.m3u8
 #EXTINF:-1 tvg-id="LCN.ca" status="blocked",LCN [Geo-blocked]
 https://tvalive.akamaized.net/hls/live/2014213/tvan01/tvan01.m3u8
-#EXTINF:-1 tvg-id="MontrealGreekTV.ca" status="online",Montreal Greek TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="MontrealGreekTV.ca" status="error",Montreal Greek TV (480p) [Not 24/7]
 http://94.130.180.175:8081/live/greektv/playlist.m3u8
-#EXTINF:-1 tvg-id="NACTV.ca" status="error",NACTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NACTV.ca" status="online",NACTV (720p) [Not 24/7]
 http://stream.pivotalelements.com/nactv/stream.m3u8
 #EXTINF:-1 tvg-id="NETVToronto.ca" status="online",NETV Toronto (720p) [Not 24/7]
 https://live.streams.ovh/NetvToronto/NetvToronto/playlist.m3u8
@@ -179,11 +177,13 @@ http://rtmp.smartstream.video:1935/capco/tv29/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC0JP0ek-HhcqisiEpsZiQZA/live
 #EXTINF:-1 tvg-id="TVOKids.ca" status="online",TVOKids (360p) [Not 24/7]
 https://bcsecurelivehls-i.akamaihd.net/hls/live/623607/15364602001/tvokids/master.m3u8
+#EXTINF:-1 tvg-id="UvagutTV.ca" status="online",Uvagut TV (1080p)
+http://dee7mwgg9dzvl.cloudfront.net/hls/uvagut/playlist.m3u8
 #EXTINF:-1 tvg-id="VBS.ca" status="online",VBS (480p) [Not 24/7]
 https://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="WCGtv.ca" status="error",WCGtv Brandon (720p) [Not 24/7]
 https://wowzastream.westmancom.com/wcgtvlive/highstream.sdp/master.m3u8
-#EXTINF:-1 tvg-id="WeatherNetwork.ca" status="online",The Weather Network Event (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="WeatherNetwork.ca" status="error",The Weather Network Event (720p) [Not 24/7]
 https://bcliveunivsecure-lh.akamaihd.net/i/twn_1@631672/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ontario Parliamentary Network (FR) (720p)
 http://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-fr/playlist.m3u8
