@@ -137,7 +137,7 @@ https://dc1.webstream.eu/hls/hls/jnetvhdstreaming_high/index.m3u8
 https://tvdatta.com:3517/live/kachorrotvlive.m3u8
 #EXTINF:-1 tvg-id="Karibena.pe" status="online",Karibeña (720p) [Not 24/7]
 https://cu.onliv3.com/livevd/user1.m3u8
-#EXTINF:-1 tvg-id="KBOQuillabamba.pe" status="online",KBO Quillabamba (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="KBOQuillabamba.pe" status="error",KBO Quillabamba (1080p) [Not 24/7]
 https://cdnhd.iblups.com/hls/YGpW43RUOD.m3u8
 #EXTINF:-1 tvg-id="KeBuenaBarranca.pe" status="error",KeBuena (Barranca) (480p) [Not 24/7]
 https://inliveserver.com:1936/18016/18016/playlist.m3u8
@@ -211,10 +211,10 @@ https://stmv.panel.grupolimalive.com/orientaltv/orientaltv/playlist.m3u8
 http://cdn2.ujjina.com:1935/iptvovacion1/liveovacion1tv/playlist.m3u8
 #EXTINF:-1 tvg-id="OvacionTV.pe" status="online",Ovación TV (720p) [Not 24/7]
 https://5c3fb01839654.streamlock.net:1963/iptvovacion1/liveovacion1tv/playlist.m3u8
-#EXTINF:-1 tvg-id="PanamericanaTV.pe" status="online",Panamericana TV (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/PanamericanaPTV
 #EXTINF:-1 tvg-id="PanamericanaTV.pe" status="online",Panamericana TV (298p) [Not 24/7]
 https://cdnhd.iblups.com/hls/ptv2.m3u8
+#EXTINF:-1 tvg-id="PanamericanaTV.pe" status="error",Panamericana TV (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/PanamericanaPTV
 #EXTINF:-1 tvg-id="PaxTV.pe" status="online",Pax TV (480p) [Not 24/7]
 https://d2fxrfbiedz1tm.cloudfront.net/livepaxtv/smil:PC.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PBO.pe" status="online",PBO Digital (720p) [Not 24/7]
@@ -253,7 +253,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/radiolibe
 https://tvdatta.com:3413/live/pachatusanlive.m3u8
 #EXTINF:-1 tvg-id="RadioSanBorjaTV.pe" status="error",Radio San Borja TV (720p) [Not 24/7]
 https://5c3fb01839654.streamlock.net:1963/iptvsanborja/livesanborjatv/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioTropicalTarapoto.pe" status="error",Radio Tropical Tarapoto (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioTropicalTarapoto.pe" status="online",Radio Tropical Tarapoto (480p) [Not 24/7]
 https://videoserver.tmcreativos.com:19360/raditropical/raditropical.m3u8
 #EXTINF:-1 tvg-id="RadioTVBinacional.pe" status="timeout",Radio TV Binacional (Desaguadero) (720p) [Not 24/7]
 https://cp.sradiotv.com:1936/binacional/binacional/playlist.m3u8
@@ -347,7 +347,7 @@ https://5790d294af2dc.streamlock.net/8134/8134/playlist.m3u8
 https://s1.tvdatta.com:3883/live/tvenlinealive.m3u8
 #EXTINF:-1 tvg-id="TvfacesOnline.pe" status="online",Tvfaces Online (360p) [Not 24/7]
 https://tvdatta.com:3211/stream/play.m3u8
-#EXTINF:-1 tvg-id="TVHuarmey.pe" status="error",TV Huarmey (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVHuarmey.pe" status="online",TV Huarmey (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/tvhuarmey
 #EXTINF:-1 tvg-id="TVMundoArequipa.pe" status="error",TV Mundo (Arequipa) (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQH-6sv6ovHg4Nx-niZ_C1g/live
@@ -403,6 +403,10 @@ http://177.53.152.186:8000/play/a00j/index.m3u8
 https://live.obslivestream.com/autenticatvmux/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Telecolor (Yurimaguas) (720p) [Not 24/7]
 https://live.obslivestream.com/telecolormux/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",VZ Televisión (720p) [Not 24/7]
+https://live.obslivestream.com/vzmux/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",Proyecta Televisión (Huacho) (720p) [Not 24/7]
+https://servilive.com:3194/live/proyectatvlive.m3u8
 #EXTINF:-1 tvg-id="" status="online",SolTV (Trujillo) [Not 24/7]
 https://stmv1.srvif.com/topagency2/topagency2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tropical TV (Puerto Maldonado) (720p) [Not 24/7]
@@ -425,10 +429,6 @@ http://iptv.perueduca.pe:1935/canal2/canal22/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCwsURxTXqGqijgu98ndod3A/live
 #EXTINF:-1 tvg-id="" status="error",Salgalú TV [Not 24/7]
 https://6075e60da1f27.streamlock.net/live/wowza/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",VZ Televisión (720p) [Not 24/7]
-https://live.obslivestream.com/vzmux/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Proyecta Televisión (Huacho) (720p) [Not 24/7]
-https://servilive.com:3194/live/proyectatvlive.m3u8
 #EXTINF:-1 tvg-id="" status="error",Wtv (La Verdad y Punto) (Chincha) (720p) [Not 24/7]
 https://v4.tustreaming.cl/wtv/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Vía Televisión (Tarapoto) (720p) [Not 24/7]
