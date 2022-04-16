@@ -14,19 +14,15 @@ https://video13.virtualtronics.com/streamer/canal2.m3u8
 #EXTINF:-1 tvg-id="Canal12.co" status="error",Canal 12 (Valledupar | Cesar) (486p)
 https://iptv-all.lanesh4d0w.repl.co/colombia/canal-12-valledupar.m3u8
 #EXTINF:-1 tvg-id="CanalC.co" status="online",Canal C (Santiago de Cali | Valle del Cauca) (720p) [Not 24/7]
-https://cloud2.streaminglivehd.com:1936/8104/8104/playlist.m3u8
+https://stmv2.voxtvhd.com.br/canalccali/canalccali/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalCapital.co" status="online",Canal Capital (720p) [Not 24/7]
 https://mdstrm.com/live-stream-playlist/57d01d6c28b263eb73b59a5a.m3u8
 #EXTINF:-1 tvg-id="CanalCaracol.co" status="blocked",Canal Caracol (720p) [Geo-blocked]
 https://mdstrm.com/live-stream-playlist/574463697b9817cf0886fc17.m3u8
-#EXTINF:-1 tvg-id="CanalDos.co" status="online",Canal Dos (Yopal | Casanare) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CanalDos.co" status="timeout",Canal Dos (Yopal | Casanare) (720p) [Not 24/7]
 http://131.221.42.25:1935/streaming/canal2/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalInstitucionalTV.co" status="online",Canal Institucional TV (1080p)
 https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalRCNNovelas.co" status="online",Canal RCN Novelas (480p)
-http://45.179.140.242:8000/play/a0jf
-#EXTINF:-1 tvg-id="CanalRCNNovelas.co" status="timeout",Canal RCN Novelas (480p) [Not 24/7]
-http://38.131.11.9:1080/play/a037
 #EXTINF:-1 tvg-id="CanalSonTV.co" status="online",Canal Son TV (720p) [Not 24/7]
 https://server12.videostreaming.net:3628/stream/play.m3u8
 #EXTINF:-1 tvg-id="CanalVisionDorada.co" status="online",Canal Visión Dorada (720p) [Not 24/7]
@@ -43,7 +39,7 @@ https://rtmp02.portalexpress.es/thefchanel/thefchanel/playlist.m3u8
 https://rtmp02.portalexpress.es/marinastereo/marinastereo/playlist.m3u8
 #EXTINF:-1 tvg-id="MelodyChannelColombia.co" status="timeout",Melody Channel Colombia (480p)
 https://5b464b69d264e.streamlock.net/Channels_live/ngrp:MelodyChannel_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MiGenteTV.co" status="online",Mi Gente TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MiGenteTV.co" status="error",Mi Gente TV (720p) [Not 24/7]
 https://hvtrafico.ddns.net/migente720/migente720.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="MovieFe.co" status="online",MovieFe (360p) [Not 24/7]
 https://vcp.myplaytv.com/moviefe/ngrp:moviefe_all/playlist.m3u8
@@ -53,6 +49,8 @@ http://vcp1.myplaytv.com:1935/mundomas/mundomas/playlist.m3u8
 https://mdstrm.com/live-stream-playlist/58dc3d471cbe05ff3c8e463e.m3u8
 #EXTINF:-1 tvg-id="NTN24.co" status="error",NTN24 (Nuestra Tele Noticias) (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCEJs1fTF3KszRJGxJY14VrA/live
+#EXTINF:-1 tvg-id="RCNNovelas.co" status="error",Canal RCN Novelas (480p)
+http://45.179.140.242:8000/play/a0jf
 #EXTINF:-1 tvg-id="SenalColombia.co" status="online",Señal Colombia (1080p)
 https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SuramTV.co" status="online",Suram TV (1080p) [Not 24/7]
@@ -67,12 +65,12 @@ https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive2.smil/playlist
 https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Telecafe.co" status="timeout",Telecafé
 http://38.131.11.9:1080/play/a0ct
-#EXTINF:-1 tvg-id="Telecaribe.co" status="error",Telecaribe (720p)
-https://iptv-all.lanesh4d0w.repl.co/colombia/telecaribe_adaptive
-#EXTINF:-1 tvg-id="Teleislas.co" status="online",Teleislas (486p) [Not 24/7]
-https://5ab772334c39c.streamlock.net/live-teleislas/teleislas/playlist.m3u8
+#EXTINF:-1 tvg-id="Telecaribe.co" status="online",Telecaribe (720p)
+https://tkx.mp.lura.live/rest/v2/mcp/video/adstB64MXYxqLZwy?anvack=4gXmVVoVIp3YeECJWm6af3j0mlHwl6vO&eud=SKjoH1L/9Enwo5zQBiBTRfTSNGfENMNO6udm4CQNVvix/L9XX8kucBOvzWalIghNrL5GllGH8ou17ICYGv29Rg==
 #EXTINF:-1 tvg-id="Teleislas.co" status="error",Teleislas (486p) [Not 24/7]
 http://vbox2.cehis.net/live-teleislas/smil:teleislas.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Teleislas.co" status="error",Teleislas (486p) [Not 24/7]
+https://5ab772334c39c.streamlock.net/live-teleislas/teleislas/playlist.m3u8
 #EXTINF:-1 tvg-id="Telemedellin.co" status="online",Telemedellin (720p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta118.cdnmedia.tv/telemedellintvlive/smil:dvrlive.smil/playlist.m3u8
@@ -88,16 +86,44 @@ https://stmvideo2.livecastv.com/celestialtv/celestialtv/playlist.m3u8
 https://streamyes.alsolnet.com/tvgracia/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNGlobal.co" status="online",TVN Global (614p) [Not 24/7]
 https://stmv2.voxtvhd.com.br/tvnglobal/tvnglobal/playlist.m3u8
-#EXTINF:-1 tvg-id="UNOPLAY.co" status="online",UNO PLAY (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="UNOPLAY.co" status="error",UNO PLAY (720p) [Not 24/7]
 https://live-edge-bhs-1.cdn.enetres.net/184784E1D210401F8041E3E1266822CC021/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Cinema+ (720p)
-https://hvtrafico.ddns.net/cinema720/cinema720.stream_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Canal 6 (Bogotà DC) (720p)
+http://190.93.137.61:1935/live/canal6/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Canal Trece (1080p)
+https://stream.logicideas.media/canaltrece-live/smil:live.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Canal Trece + (1080p)
+https://stream.logicideas.media/canaltreceplus-live/smil:live1plus.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Alpavision Canal 2 (Neiva | Huila) (720p) [Not 24/7]
 https://stmv1.voxtvhd.com.br/alpavision/alpavision/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Canal CNC Montería (720p)
-https://stmv1.voxtvhd.com.br/cncmonteria/cncmonteria/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",LATAM TV (Bogotà) (540p) [Not 24/7]
+https://q-s-l4n3sh4d0w.onrender.com/iptv-query?streaming-ip=https://livestream.com/latamtv/envivo
 #EXTINF:-1 tvg-id="" status="online",Teleamiga (Bogotà | Cundinamarca) (480p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta118.cdnmedia.tv/teleamigatvlive/smil:dvrlive.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",LATAM TV (Bogotà) (540p) [Not 24/7]
-https://iptv-all.lanesh4d0w.repl.co/latam
+#EXTINF:-1 tvg-id="" status="online",Canal CNC Montería (720p)
+https://stmv1.voxtvhd.com.br/cncmonteria/cncmonteria/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",ATN Televisión (Cúcuta | Norte de Santander) (640p)
+https://59ef525c24caa.streamlock.net/atntelevision/atntelevision/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Canal Capital Eureka (720p) [Geo-blocked]
+https://mdstrm.com/live-stream-playlist/57d2ebe8fd61d8f9327f8ad1.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Canal CNC HD Tulua (Tulua | Valle del Cauca) (1080p)
+https://servers.amelbasoluciones.co:19360/cnctulua/cnctulua.m3u8
+#EXTINF:-1 tvg-id="" status="error",Amaga TV (720p) (Amagá | Antioquia)
+https://hvtrafico.ddns.net/amagatv/smil:amagatv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Cinema+ (720p)
+https://hvtrafico.ddns.net/cinema720/cinema720.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Canal CNC HD Medellin (Medellin | Antioquia) (1080p)
+https://hvtrafico.ddns.net/cncmedellin720/canalcncmedellin.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Canal CNC HD Online (Pasto | Nariño) (1080p)
+https://hvtrafico.ddns.net/cnconline/cnconline.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Alpavision Canal 2 (Neiva | Huila) (720p) [Not 24/7]
+https://stmv1.voxtvhd.com.br/alpavision/alpavision/playlist.m3u8
+#EXTINF:-1 tvg-id="",Canal CNC Plus (Pasto | Nariño) (360p)
+https://hvtrafico.ddns.net/channelplus/channelplus/playlist.m3u8
+#EXTINF:-1 tvg-id="",Multicanal Televisión (Cali | Valle del Cauca) (720p)
+https://cloud2.streaminglivehd.com:1936/8010/8010/playlist.m3u8
+#EXTINF:-1 tvg-id="",Canal PyC (Ibagué | Tolima) (360p)
+https://byecableiptv.com/canapycvivo/canalpyc.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="",Canal SonTV (720p)
+https://server12.videostreaming.net:3628/stream/play.m3u8
