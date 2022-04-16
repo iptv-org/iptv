@@ -73,7 +73,7 @@ https://edge2.iptv.macc.com.ua/life/k1_2/index.m3u8
 https://cdn10.live-tv.od.ua:8083/kratu/kratu-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="Kratu.ua" status="error",Kratu (576p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/kratu/kratu/playlist.m3u8
-#EXTINF:-1 tvg-id="Krug.ua" status="error",Круг (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Krug.ua" status="online",Круг (576p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/krugod/krugod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="Lale.ua" status="online",Lale (504p)
 http://stream.atr.ua/lale/live/index.m3u8
@@ -158,7 +158,7 @@ https://cdn10.live-tv.od.ua:8083/leonovtv/test-abr/playlist.m3u8
 https://cdn1.live-tv.od.ua:8083/3tvod/3tvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKAleks.ua" status="online",ТРК Алекс (576p)
 http://46.46.112.223/live/livestream1.m3u8
-#EXTINF:-1 tvg-id="TRKKrug.ua" status="error",ТРК Круг (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TRKKrug.ua" status="online",ТРК Круг (576p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/krugod/krugod/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKReporter.ua" status="online",ТРК Репортер (480p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
@@ -213,10 +213,6 @@ http://hls.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_1.m3u8
 #EXTINF:-1 tvg-id="" status="online",Перший Західний (Львов) (576p)
 http://rtmp.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",НТК (1080p) [Not 24/7]
-https://stream.ntktv.ua/s/ntk/ntk.m3u8
-#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
-http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
@@ -230,10 +226,12 @@ http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_hi/i
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Кривой Рог) (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/1tvkr/1tvkr/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
-https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
+#EXTINF:-1 tvg-id="" status="online",Южная Волна (720p) [Not 24/7]
+https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (576p)
 http://91.194.79.46:8081/stream2/channel2/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
+http://95.67.106.10/hls/nta_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",ПравдаТУТ (720p)
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Прямий (576p)
@@ -246,8 +244,6 @@ https://edge1.iptv.macc.com.ua/img/inter_3/index.m3u8
 https://cdn1.live-tv.od.ua:8083/1tvod/1tvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (504p)
 https://cdn1.live-tv.od.ua:8083/1tvod/1tvod/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Южная Волна (720p) [Not 24/7]
-https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Прямий (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
@@ -262,7 +258,9 @@ http://93.78.206.172:8080/stream3/stream.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
 http://95.67.106.10/hls/nta_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
-http://95.67.106.10/hls/nta_ua_low/index.m3u8
+http://95.67.106.10/hls/nta_ua_mid/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",I-UA.tv (1080p)
+https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="error",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",ПравдаТУТ (720p)
@@ -271,3 +269,5 @@ http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_low/
 https://5db1ab4f970be.streamlock.net/live/smil:trofey.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Академия (Одесса) (720p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/36chod/36chod-abr/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",НТК (1080p) [Not 24/7]
+https://stream.ntktv.ua/s/ntk/ntk.m3u8
