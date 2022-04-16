@@ -401,7 +401,7 @@ The playlists already contain links to all guides, so players with support the `
 
 ## Database
 
-If you find an error in the description of the channel, please create an issue in the [iptv-org/database](https://github.com/iptv-org/database) repository.
+All channel data is taken from the [iptv-org/database](https://github.com/iptv-org/database) repository. If you find any errors please open a new [issue](https://github.com/iptv-org/database/issues) there.
 
 ## API
 
