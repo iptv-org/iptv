@@ -11,7 +11,7 @@ http://45.174.77.243:8000/play/a0fl/index.m3u8
 https://mdstrm.com/live-stream-playlist/5a7b1e63a8da282c34d65445.m3u8
 #EXTINF:-1 tvg-id="Canal10Cancun.mx" status="online",Canal 10 Cancún (720p) [Not 24/7]
 http://stream2.dynalias.com:1935/live/tvlive1/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal28.mx" status="online",Canal 28 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal28.mx" status="error",Canal 28 (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/3789491/events/8003011/live.m3u8
 #EXTINF:-1 tvg-id="Canal44.mx" status="online",Canal 44 Chihuahua (720p) [Not 24/7]
 https://5e50264bd6766.streamlock.net/canal442/videocanal442/playlist.m3u8
@@ -65,9 +65,9 @@ https://dcunilive21-lh.akamaihd.net/i/dclive_1@59479/master.m3u8
 https://canal10.mediaflix.istream.mx/wza_live/live/movil/playlist.m3u8
 #EXTINF:-1 tvg-id="OnceInternacional.mx" status="timeout",Once Internacional
 http://live.canaloncelive.tv:1935/livepkgr2/smil:internacional.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="OnceMexico.mx" status="error",Once Mexico (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="OnceMexico.mx" status="timeout",Once Mexico (720p) [Not 24/7]
 http://live.canaloncelive.tv/livepkgr/smil:nacional.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="OnceMexico.mx" status="error",Once Mexico (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="OnceMexico.mx" status="timeout",Once Mexico (720p) [Not 24/7]
 https://live2.canaloncelive.tv/livepkgr3/cepro/playlist.m3u8
 #EXTINF:-1 tvg-id="POPTV.mx" status="online",POP TV (542p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico3/smil:obregon.smil/playlist.m3u8
@@ -109,7 +109,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC9DH82HVSf4katwMeUpY80w
 #EXTINF:-1 tvg-id="TelevisaGuadalajara.mx" status="online",Televisa Guadalajara (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRujF_YxVVFmTRWURQH-Cww/live
-#EXTINF:-1 tvg-id="TelevisaGuerrero.mx" status="timeout",Televisa Guerrero (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaGuerrero.mx" status="error",Televisa Guerrero (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCnxTRk2K1iNsQkgpWXxyj4w/live
 #EXTINF:-1 tvg-id="TelevisaLaguna.mx" status="online",Televisa Laguna (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC_mwCcsKDJLSWjply5s0h8w/live
@@ -175,8 +175,6 @@ https://5ca3e84a76d30.streamlock.net/gpacifico1/smil:gpculiacan.smil/playlist.m3
 https://5ca3e84a76d30.streamlock.net/tvunam/videotvunam/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="" status="online",Alcarria TV (576p) [Not 24/7]
 http://217.182.77.27/live/alcarriatv-livestream.m3u8
-#EXTINF:-1 tvg-id="" status="online",Tlaxcala Televisión (360p) [Not 24/7]
-https://vid.mega00.com:5443/LiveApp/streams/928111829917388844551988/928111829917388844551988.m3u8?token=null
 #EXTINF:-1 tvg-id="" status="blocked",TELE SISTEMA CANAL 9 (486p) [Geo-blocked]
 http://k4.usastreams.com/ARBtv/ARBtv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ForoTV (720p) [Geo-blocked]
@@ -199,3 +197,5 @@ http://viptv-query/?streaming-ip=https://www.youtube.com/channel/UC-uYy4_jIvDoJ4
 https://cloud2.streaminglivehd.com:1936/8026/8026/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Energía Musical TV (360p) [Not 24/7]
 https://ss2.domint.net:3224/emtv_str/energiamusical/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Tlaxcala Televisión (360p) [Not 24/7]
+https://vid.mega00.com:5443/LiveApp/streams/928111829917388844551988/928111829917388844551988.m3u8?token=null
