@@ -87,7 +87,7 @@ https://cdn.yayin.com.tr/TVEM/TVEM/playlist.m3u8
 http://win20.yayin.com.tr/ertsahtv/ertsahtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ErzurumWebTV.tr" status="online",Erzurum Web TV (720p)
 https://win29.yayin.com.tr/erzurumwebtv/erzurumwebtv/playlist.m3u8
-#EXTINF:-1 tvg-id="ETVManisa.tr" status="online",ETV Manisa (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ETVManisa.tr" status="error",ETV Manisa (1080p) [Not 24/7]
 https://broadcasttr.com:446/manisaetv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Euro90Channel.tr" status="online",Euro 90 Channel (1080p) [Not 24/7]
 https://ssl4.radyotvonline.com/e90tv/e90tvlive/playlist.m3u8
@@ -288,7 +288,7 @@ https://tv.ensonhaber.com/tv/tr/showtv/index.m3u8
 http://4ce5e2d62ee2c10e43c709f9b87c44d5.streamhost.cc/m3u8/Turkish/8b8823ce5525d9b.m3u8
 #EXTINF:-1 tvg-id="SinopYildizTV.tr" status="online",Sinop Yildiz TV (360p)
 https://s01.vpis.io/sinopyildiz/sinopyildiz.m3u8
-#EXTINF:-1 tvg-id="SportsTV.tr" status="online",Sports TV (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SportsTV.tr" status="error",Sports TV (720p) [Geo-blocked]
 https://live.sportstv.com.tr/hls/low/sportstv.m3u8
 #EXTINF:-1 tvg-id="StarTV.tr" status="online",Star TV (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=http://www.dailymotion.com/video/x729whv
@@ -312,7 +312,7 @@ https://tv.ensonhaber.com/tv/tr/tgrteu/index.m3u8
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe4598be8e5d.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ThaqalaynTV.tr" status="online",Thaqalayn TV (720p) [Not 24/7]
 https://live.thaqalayn.tv/hls/live.m3u8
-#EXTINF:-1 tvg-id="TonTV.tr" status="timeout",Ton TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TonTV.tr" status="online",Ton TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/tontv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="ToprakTV.tr" status="online",Toprak TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/topraktv/playlist.m3u8
@@ -382,7 +382,7 @@ http://stream.taksimbilisim.com:1935/tv41/bant1/TV41.m3u8
 http://stream.taksimbilisim.com:1935/tv41/smil:tv41.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TV41.tr" status="online",TV 41 (720p) [Geo-blocked]
 https://waw1.artiyerelmedya.net/tv41/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TV41.tr" status="timeout",TV41 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV41.tr" status="online",TV41 (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/tv41/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="TV52.tr" status="online",TV 52 (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/tv52/smil:tv52.smil/playlist.m3u8
@@ -413,7 +413,7 @@ https://5be5d840359c6.streamlock.net/unitv/unitv/playlist.m3u8
 http://uskudarunv.mediatriple.net/uskudarunv/uskudar2/playlist.m3u8
 #EXTINF:-1 tvg-id="Vizyon58TV.tr" status="online",Vizyon 58 TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/vizyon58/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="VTV.tr" status="timeout",VTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="VTV.tr" status="online",VTV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/kanalv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="VuslatTV.tr" status="online",Vuslat TV (720p) [Not 24/7]
 http://yayin3.canlitv.com:1935/live/vuslattv/HasBahCa.m3u8
@@ -445,6 +445,8 @@ https://svs.itworkscdn.net/sat7parslive/sat7pars.smil/playlist.m3u8
 https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Habertürk TV (720p) [Not 24/7]
 https://tv.ensonhaber.com/tv/tr/haberturk/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",AKSU TV (720p) [Geo-blocked]
+https://waw2.artiyerelmedya.net/aksutv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Er TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/ertv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Haber61 TV (720p) [Not 24/7]
@@ -465,5 +467,3 @@ https://mn-nl.mncdn.com/blutv_taytv/smil:taytv_sd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",teve2 (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://mn-nl.mncdn.com/blutv_teve2/smil:teve2_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",AKSU TV (720p) [Geo-blocked]
-https://waw2.artiyerelmedya.net/aksutv/bant1/playlist.m3u8
