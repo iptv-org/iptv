@@ -11,7 +11,7 @@ https://rtmp.info/anexiontv/envivo/playlist.m3u8
 http://inliveserver.com:1935/14510/14510/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal2.cr" status="online",Repretel CDR-2 Central de Radios (360p) [Not 24/7]
 https://d30zjikdv9ntds.cloudfront.net/repretel/canal2/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal4.cr" status="online",Canal 4 (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal4.cr" status="error",Canal 4 (360p) [Not 24/7]
 https://d30zjikdv9ntds.cloudfront.net/repretel/canal4/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal6.cr" status="online",Canal 6 (360p) [Not 24/7]
 https://d30zjikdv9ntds.cloudfront.net/repretel/canal6/smil:live.smil/playlist.m3u8
@@ -43,7 +43,7 @@ http://k3.usastreams.com:1935/HBTV/HBTV/playlist.m3u8
 https://srv.panelcast.net/humor247/humor247/playlist.m3u8
 #EXTINF:-1 tvg-id="LuzNacienteTV.cr" status="error",Luz Naciente TV (720p) [Not 24/7]
 https://cloudflare.streamgato.us:3399/live/luznacientetvlive.m3u8
-#EXTINF:-1 tvg-id="NicoyaTV.cr" status="online",NicoyaTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NicoyaTV.cr" status="error",NicoyaTV (720p) [Not 24/7]
 https://59ef525c24caa.streamlock.net/nicoyatv/nicoyatv/playlist.m3u8
 #EXTINF:-1 tvg-id="QuinceUCR.cr" status="error",Quince UCR (Universidad de Costa Rica) (720p) [Not 24/7]
 http://163.178.170.127:1935/quinceucr/live.stream_720p/playlist.m3u8
@@ -53,11 +53,11 @@ http://tvretropalmares.com:8090/hls/envivo.m3u8
 https://cp.sradiotv.com:1936/8064/8064/playlist.m3u8
 #EXTINF:-1 tvg-id="SMOTV.cr" status="timeout",SMO TV
 http://186.15.50.30:8080/hls/smotv.m3u8
-#EXTINF:-1 tvg-id="STVElCamalFamiliar.cr" status="online",STV El Camal Familiar (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="STVElCamalFamiliar.cr" status="error",STV El Camal Familiar (720p) [Not 24/7]
 http://tiquiciatv.com:1935/stv/web/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleredTelevision.cr" status="online",Telered Television (720p) [Not 24/7]
 http://k4.usastreams.com/ARBtv/teleplus/playlist.m3u8
-#EXTINF:-1 tvg-id="Telesistema.cr" status="online",Telesistema (486p)
+#EXTINF:-1 tvg-id="Telesistema.cr" status="blocked",Telesistema (486p)
 https://59ef525c24caa.streamlock.net/ARBtv/ARBtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleSURCostaRica.cr" status="online",TeleSUR Costa Rica (720p) [Not 24/7]
 http://k3.usastreams.com/telesur/telesur/playlist.m3u8
@@ -79,5 +79,5 @@ https://59ef525c24caa.streamlock.net/vmtv/vmlatino/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/zonafilmstv
 #EXTINF:-1 tvg-id="" status="online",Telefides
 https://s2.cwebtv.net:4433/telefides/telefides/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Sarapiqui TV
+#EXTINF:-1 tvg-id="" status="error",Sarapiqui TV
 https://tiquiciatv.duckdns.org/hls/livestv.m3u8
