@@ -29,17 +29,17 @@ http://170.83.242.153:8000/play/a01k
 http://45.179.140.242:8000/play/a0ht
 #EXTINF:-1 tvg-id="ConectaTV.mx" status="online",Conecta TV (720p)
 http://204.12.211.210:1935/conectatv/conectatv/playlist.m3u8
-#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipódromo de las Américas (480p) [Geo-blocked]
-http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipodromo de las Americas (360p) [Not 24/7]
 http://wms10.tecnoxia.com/soelvi/slv423/playlist.m3u8
+#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="blocked",Hipódromo de las Américas (480p) [Geo-blocked]
+http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="IcrtvColima.mx" status="online",Icrtv Colima (720p) [Not 24/7]
 https://5ca9af4645e15.streamlock.net/canal11/videocanal11/playlist.m3u8
 #EXTINF:-1 tvg-id="ImagenMulticast.mx" status="online",Imagen Multicast (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/live
 #EXTINF:-1 tvg-id="ImagenRadio.mx" status="online",Imagen Radio (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCB0BUmdBOrH9mYU2ebs1eWA/live
-#EXTINF:-1 tvg-id="JaliscoTV.mx" status="blocked",Jalisco TV (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="JaliscoTV.mx" status="online",Jalisco TV (720p) [Geo-blocked]
 https://5fa5de1a545ae.streamlock.net/sisjalisciense/sisjalisciense/playlist.m3u8
 #EXTINF:-1 tvg-id="LaOctava.mx" status="error",La Octava TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x80mow9
@@ -66,9 +66,9 @@ https://canal10.mediaflix.istream.mx/wza_live/live/movil/playlist.m3u8
 #EXTINF:-1 tvg-id="OnceInternacional.mx" status="timeout",Once Internacional
 http://live.canaloncelive.tv:1935/livepkgr2/smil:internacional.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OnceMexico.mx" status="timeout",Once Mexico (720p) [Not 24/7]
-http://live.canaloncelive.tv/livepkgr/smil:nacional.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="OnceMexico.mx" status="error",Once Mexico (720p) [Not 24/7]
 https://live2.canaloncelive.tv/livepkgr3/cepro/playlist.m3u8
+#EXTINF:-1 tvg-id="OnceMexico.mx" status="error",Once Mexico (720p) [Not 24/7]
+http://live.canaloncelive.tv/livepkgr/smil:nacional.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="POPTV.mx" status="online",POP TV (542p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico3/smil:obregon.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="QuieroTV.mx" status="online",Quiero TV (480p) [Not 24/7]
@@ -167,6 +167,8 @@ https://streams.the6tv.duckdns.org:2443/locals/SanDiego/xhtjb-tdt2.m3u8
 https://streams.the6tv.duckdns.org:2443/locals/SanDiego/xhtjb-tdt.m3u8
 #EXTINF:-1 tvg-id="" status="online",CorTV (800p)
 https://stream.oursnetworktv.com/latin/encoder29/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Imagen TV (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x82z4if
 #EXTINF:-1 tvg-id="" status="online",Televisa San Luis Potosí (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCaRuyaHshLdq462E9_pLzdA/live
 #EXTINF:-1 tvg-id="" status="online",TVP Culiacán (720p) [Not 24/7]
@@ -191,8 +193,6 @@ http://181.115.72.65:8099/play/a025/index.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://conceptoweb-studio.com/radio/video/canal22/
 #EXTINF:-1 tvg-id="" status="error",Telefórmula (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7u0spq
-#EXTINF:-1 tvg-id="" status="error",Imagen TV (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x82z4if
 #EXTINF:-1 tvg-id="" status="error",Televisa Del Bajio
 http://viptv-query/?streaming-ip=https://www.youtube.com/channel/UC-uYy4_jIvDoJ4wigEv1S5A/live
 #EXTINF:-1 tvg-id="" status="error",Golden Latinoamérica (720p) [Not 24/7]
