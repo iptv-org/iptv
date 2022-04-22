@@ -365,12 +365,6 @@ http://58bd5b7a98e04.streamlock.net/medienasa-live/punktum_high/playlist.m3u8
 http://58bd5b7a98e04.streamlock.net/medienasa-live/ran1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",RFH TV (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/RFH_high/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",rheinmaintv (720p) [Not 24/7]
-https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/chunklist.m3u8
-#EXTINF:-1 tvg-id="" status="online",rheinmaintv (720p) [Not 24/7]
-https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",rheinmaintv (720p) [Not 24/7]
-https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/playlist.m3u8?=&ref=www.rheinmaintv.de&seid=598541
 #EXTINF:-1 tvg-id="" status="online",NRWISION (1080p)
 https://fms.nrwision.de/live/livestreamHD.stream_source/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",MyTVplus (Dresden) (576p)
@@ -385,14 +379,14 @@ https://serve-first.folxplay.tv/folx/ch-2/master.m3u8
 https://serve-first.folxplay.tv/folx/ch-5/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",TVO (1080p) [Not 24/7]
 https://tvoberfranken.iptv-playoutcenter.de/tvoberfranken/tvoberfranken.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",oeins (Oldenburg) (1080p) [Not 24/7]
-https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="" status="online",Antenne Vorarlberg (720p) [Not 24/7]
 http://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",BR Fernsehen Nord (720p) [Geo-blocked]
 http://livestreams.br.de/i/bfsnord_germany@119898/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",ARD-alpha (720p)
 http://livestreams.br.de/i/bralpha_germany@119899/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",SÃ¼dtirol TV (720p)
+https://5ce9406b73c33.streamlock.net/SudTirolTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",BR Fernsehen Süd (720p)
 https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",BR Fernsehen Nord (720p) [Geo-blocked]
@@ -405,12 +399,12 @@ https://ndrevent-lh.akamaihd.net/i/ndrevent_1@409066/master.m3u8
 https://ndrevent-lh.akamaihd.net/i/ndrevent_2@429805/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Fernsehen (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_fs@430230/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",NDR Hamburg (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR International (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_int@430236/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",NDR Niedersachsen (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_nds@430233/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Weltweiter (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_ww@430235/master.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
@@ -434,8 +428,8 @@ https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",NDR Schleswig-Holstein (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NDR Niedersachsen (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_nds@430233/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",NDR Hamburg (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",NDR Schleswig-Holstein (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_sh@430234/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",WDR Koeln (720p)
@@ -454,8 +448,12 @@ http://176.10.117.18:8000/play/a00f/index.m3u8
 http://176.10.117.18:8000/play/a002/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",BR Fernsehen Süd (720p) [Geo-blocked]
 http://livestreams.br.de/i/bfssued_germany@119890/master.m3u8
-#EXTINF:-1 tvg-id="" status="error",SÃ¼dtirol TV (720p)
-https://5ce9406b73c33.streamlock.net/SudTirolTV/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",rheinmaintv (720p) [Not 24/7]
+https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/chunklist.m3u8
+#EXTINF:-1 tvg-id="" status="error",rheinmaintv (720p) [Not 24/7]
+https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",rheinmaintv (720p) [Not 24/7]
+https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/playlist.m3u8?=&ref=www.rheinmaintv.de&seid=598541
 #EXTINF:-1 tvg-id="" status="error",BR Fernsehen Süd (720p) [Geo-blocked]
 https://br_hdslive-f.akamaihd.net/i/bfssued_germany@119890/index_3776_av-p.m3u8
 #EXTINF:-1 tvg-id="" status="error",BR Fernsehen Süd (720p) [Geo-blocked]
@@ -464,3 +462,5 @@ https://brlive-lh.akamaihd.net/i/bfssued_germany@119890/master.m3u8
 https://cdn1.mobiletv.bg/T5/rtl/rtl_794613_850k.m3u8
 #EXTINF:-1 tvg-id="" status="error",WDR Fernsehen (720p)
 https://wdr_fs-lh.akamaihd.net/i/wdrfs_weltweit@112033/master.m3u8
+#EXTINF:-1 tvg-id="" status="error",oeins (Oldenburg) (1080p) [Not 24/7]
+https://www.oeins.de/live/studio.m3u8
