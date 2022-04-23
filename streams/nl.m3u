@@ -37,10 +37,10 @@ https://ms2.mx-cd.net/dtv-02/204-1147034/3ML_TV.smil/playlist.m3u8
 http://stream.tvtap.net:8081/live/nl-npo1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NPO1.nl" status="error",NPO 1 (342p) [Geo-blocked]
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo1/npo1.isml/.m3u8
-#EXTINF:-1 tvg-id="NPO2.nl" status="online",NPO 2 (342p)
-http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo2/npo2.isml/.m3u8
 #EXTINF:-1 tvg-id="NPO2.nl" status="blocked",NPO 2 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/nl-npo2.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="NPO2.nl" status="error",NPO 2 (342p)
+http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo2/npo2.isml/.m3u8
 #EXTINF:-1 tvg-id="NPO3.nl" status="blocked",NPO 3 (1080p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/nl-npo3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NPO3.nl" status="error",NPO 3 (342p) [Not 24/7]
@@ -99,7 +99,7 @@ http://558bd16067b67.streamlock.net:1935/radionl/radionl/playlist.m3u8
 http://streaming.rn7.nl/rn7tv/live_576/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioVeronica.nl" status="error",Radio Veronica (270p)
 https://talparadiohls-i.akamaihd.net/hls/live/585615/VR-Veronica-1/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioVOSFM.nl" status="online",Radio VOS FM (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioVOSFM.nl" status="error",Radio VOS FM (720p) [Not 24/7]
 http://593aed234297b.streamlock.net:1935/henrymeeuws/henrymeeuws/playlist.m3u8
 #EXTINF:-1 tvg-id="Regio8TV.nl" status="online",Regio8 TV (1080p)
 https://ms7.mx-cd.net/tv/71-475821/Regio8TV.smil/playlist.m3u8
@@ -175,7 +175,7 @@ https://livestream.tvvalkenburg.tv/hls/tv-valkenburg/tv-valkenburg.m3u8
 https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/ustad/index.m3u8
 #EXTINF:-1 tvg-id="VechtdalTV.nl" status="online",Vechtdal TV (480p)
 https://ms2.mx-cd.net/tv/81-334271/VechtdalTV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="VisitXTV.nl" status="error",Visit-X TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="VisitXTV.nl" status="online",Visit-X TV (720p) [Not 24/7]
 https://stream.visit-x.tv/vxtv/ngrp:live_all/playlist.m3u8
 #EXTINF:-1 tvg-id="WOS.nl" status="online",WOS TV (1080p)
 https://ms2.mx-cd.net/dtv-11/99-660295/WOS.smil/playlist.m3u8
