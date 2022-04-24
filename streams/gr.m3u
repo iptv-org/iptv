@@ -3,7 +3,7 @@
 http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="34100TV.gr" status="blocked",34100 TV (720p) [Geo-blocked]
 https://s1.cystream.net/live/34100/playlist.m3u8
-#EXTINF:-1 tvg-id="AcheloosTV.gr" status="online",Acheloos TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="AcheloosTV.gr" status="error",Acheloos TV (576p) [Not 24/7]
 http://srv.viiideo.gr:1935/axeloos/live/playlist.m3u8
 #EXTINF:-1 tvg-id="AkritasTV.gr" status="error",Akritas TV (1080p) [Not 24/7]
 http://akritastv1.flashmediacast.com:1935/akritastv1/livestream/playlist.m3u8
@@ -27,7 +27,7 @@ https://eco.streams.ovh/BarazaTV/BarazarazaTV/BarazaTV/playlist.m3u8
 https://eco.streams.ovh/BarazaTV/BarazaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTV.gr" status="timeout",Baraza TV (1080p) [Geo-blocked]
 https://panik.cast-control.eu:1936/Admin_1/Admin_1/playlist.m3u8
-#EXTINF:-1 tvg-id="BCI24News.gr",BCI 24 News (720p)
+#EXTINF:-1 tvg-id="BCI24News.gr" status="online",BCI 24 News (720p)
 https://live.streams.ovh/netmedia/netmedia/playlist.m3u8
 #EXTINF:-1 tvg-id="BestTV.gr" status="online",Best TV (720p) [Not 24/7]
 https://stream.net7.gr/hls/best/index.m3u8
@@ -36,9 +36,9 @@ https://nrpus.bozztv.com/36bay2/gusa-camerasmile/index.m3u8
 #EXTINF:-1 tvg-id="CanaliTV.gr" status="online",Canali TV (720p) [Geo-blocked]
 http://live.streams.ovh:1935/cannali/cannali/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel9.gr" status="online",Channel 9 (720p)
-http://176.9.123.140:1935/channel9/channel9/playlist.m3u8
-#EXTINF:-1 tvg-id="Channel9.gr" status="online",Channel 9 (720p)
 https://e-e.cyou:8222/channel9/channel9/playlist.m3u8
+#EXTINF:-1 tvg-id="Channel9.gr",Channel 9 (720p)
+http://176.9.123.140:1935/channel9/channel9/playlist.m3u8
 #EXTINF:-1 tvg-id="Choice.gr" status="online",Choice (956p) [Not 24/7]
 https://vod.streams.ovh:3528/stream/play.m3u8
 #EXTINF:-1 tvg-id="CorfuTV.gr" status="online",Corfu TV (576p) [Not 24/7]
@@ -55,7 +55,7 @@ https://live.cast-control.eu/ekpdipso/ekpdipso/playlist.m3u8
 https://video.streams.ovh:1936/egnatiatv/egnatiatv/index.m3u8
 #EXTINF:-1 tvg-id="Ekklisia.gr" status="online",Εκκλησία (1080p)
 https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8
-#EXTINF:-1 tvg-id="EllasTV.gr",Ellas TV (1080p)
+#EXTINF:-1 tvg-id="EllasTV.gr" status="online",Ellas TV (1080p)
 http://ellastv.gotdns.com:88/freetv/promo/index.m3u8
 #EXTINF:-1 tvg-id="EnaChannel.gr" status="online",Ena Channel (576p) [Not 24/7]
 http://176.9.123.140:1935/1c/stream/master.m3u8
@@ -90,12 +90,12 @@ https://channel.streams.ovh:1936/galaxygr-1/galaxygr-1/playlist.m3u8
 #EXTINF:-1 tvg-id="GreekCinema.gr" status="error",Greek Cinema (720p)
 https://vdo.alphaserver.gr:3613/stream/play.m3u8
 #EXTINF:-1 tvg-id="GreekTVLondon.gr" status="online",Greek TV London (720p) [Not 24/7]
-https://vdo3.alphaserver.gr:3466/live/greektvlondonlive.m3u8
-#EXTINF:-1 tvg-id="GreekTVLondon.gr" status="online",Greek TV London (720p) [Not 24/7]
 https://vdo3.alphaserver.gr:3466/stream/play.m3u8
+#EXTINF:-1 tvg-id="GreekTVLondon.gr" status="online",Greek TV London (720p) [Not 24/7]
+https://vdo3.alphaserver.gr:3466/live/greektvlondonlive.m3u8
 #EXTINF:-1 tvg-id="GroovyTV.gr" status="online",Groovy TV (360p)
 http://web.onair-radio.eu:1935/groovytv/groovytv/playlist.m3u8
-#EXTINF:-1 tvg-id="HellenicTV.gr" status="error",Hellenic TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="HellenicTV.gr" status="online",Hellenic TV (720p) [Not 24/7]
 https://l5.cloudskep.com/hellenictv/htv/playlist.m3u8
 #EXTINF:-1 tvg-id="HighTV.gr" status="online",High TV (200p) [Not 24/7]
 http://live.streams.ovh:1935/hightv/hightv/playlist.m3u8
@@ -125,7 +125,7 @@ https://itv.streams.ovh/magictv/magictv/playlist.m3u8
 https://antennaamdnoenc.akamaized.net/maktv_akamai/abr/playlist.m3u8
 #EXTINF:-1 tvg-id="MaroussiotikaTV.gr" status="online",Maroussiotika TV (480p) [Not 24/7]
 http://maroussiotika.dynu.com:8000/greektv/FZlHCCdBHL1/359142
-#EXTINF:-1 tvg-id="MegaTV.gr" status="error",Mega TV
+#EXTINF:-1 tvg-id="MegaTV.gr" status="online",Mega TV
 https://streamcdnb7-c98db5952cb54b358365984178fb898a.msvdn.net/live/S86713049/gonOwuUacAxM/playlist.m3u8
 #EXTINF:-1 tvg-id="MesogeiosTV.gr" status="online",Mesogeios TV (432p)
 http://176.9.123.140:1935/mesogeiostv/stream/master.m3u8
@@ -139,10 +139,10 @@ https://vdo.alphaserver.gr:3305/stream/play.m3u8
 https://live.neatv.gr:8888/hls/neatv.m3u8
 #EXTINF:-1 tvg-id="NetmaxTV.gr" status="online",Netmax TV (720p) [Not 24/7]
 http://live.netmaxtv.com:8080/live/live/playlist.m3u8
-#EXTINF:-1 tvg-id="NG.gr" status="online",NG (720p)
-https://live.streams.ovh/NGradio/NGradio/playlist.m3u8
 #EXTINF:-1 tvg-id="NG.gr" status="online",NG (614p)
 http://live.streams.ovh:1935/NGradio/NGradio/playlist.m3u8
+#EXTINF:-1 tvg-id="NG.gr" status="online",NG (720p)
+https://live.streams.ovh/NGradio/NGradio/playlist.m3u8
 #EXTINF:-1 tvg-id="NotioiTV.gr" status="online",Notioi TV (720p)
 https://live.streams.ovh/YourStreaming/YourStreaming/playlist.m3u8
 #EXTINF:-1 tvg-id="NRG91.gr" status="online",NRG 91 (720p) [Not 24/7]
@@ -155,7 +155,7 @@ http://176.9.123.140:1935/nstv1/stream/playlist.m3u8
 https://liveopencloud.siliconweb.com/1/ZlRza2R6L2tFRnFJ/eWVLSlQx/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="OpenTVBUP.gr" status="timeout",Open TV BUP
 http://78.83.87.222:9999/play/a013/index.m3u8
-#EXTINF:-1 tvg-id="PellaTV.gr" status="error",Pella TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="PellaTV.gr" status="online",Pella TV (576p) [Not 24/7]
 https://video.streams.ovh:1936/pellatv/pellatv/master.m3u8
 #EXTINF:-1 tvg-id="PlayTV.gr" status="online",Play TV (480p) [Not 24/7]
 http://web.onair-radio.eu:1935/Alpha-Host/Alpha-Host/playlist.m3u8
@@ -205,20 +205,20 @@ https://zouglalive-lh.akamaihd.net/i/zouglalive_1@340792/master.m3u8
 http://167.86.89.20:5080/LiveApp/streams/064918158666216168224216.m3u8
 #EXTINF:-1 tvg-id="" status="online",Zerouno TV (720p)
 http://5db313b643fd8.streamlock.net:1935/ZerounoTV/ZerounoTV/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",ΡΙΚ Sat (720p) [Not 24/7]
+http://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Skai (720p)
 https://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Skai (720p)
 https://skai-live.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Alert (576p) [Not 24/7]
 https://itv.streams.ovh/ALEERT/ALEERT/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση 2 (540p) [Not 24/7]
+https://streamer-cache.grnet.gr/parliament/hls/webtv2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση 3 (540p)
 https://streamer-cache.grnet.gr/parliament/hls/webtv3.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση (540p)
 https://streamer-cache.grnet.gr/parliament/hls/webtv.m3u8
-#EXTINF:-1 tvg-id="" status="online",ΡΙΚ Sat (720p) [Not 24/7]
-http://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση 2 (540p) [Not 24/7]
-https://streamer-cache.grnet.gr/parliament/hls/webtv2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση (360p)
 https://streamer-cache.grnet.gr/parliament/parltv.sdp/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Alpha BUP
