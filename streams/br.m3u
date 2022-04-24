@@ -12,7 +12,7 @@ https://evpp.mm.uol.com.br/geob_band/agromais/playlist.m3u8
 https://5cf4a2c2512a2.streamlock.net/dgrau/dgrau/playlist.m3u8
 #EXTINF:-1 tvg-id="Animestation.br" status="error",Animestation (480p) [Not 24/7]
 https://stmv.video.expressolider.com.br/animestation1/animestation1/playlist.m3u8
-#EXTINF:-1 tvg-id="AnimeTV.br" status="online",Anime TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="AnimeTV.br" status="error",Anime TV (360p) [Not 24/7]
 https://stmv1.srvif.com/animetv/animetv/playlist.m3u8
 #EXTINF:-1 tvg-id="Band.br" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Band (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
@@ -30,7 +30,7 @@ https://arkyvbre1g.zoeweb.tv/fiocruz/fiocruz/playlist.m3u8
 https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8
 #EXTINF:-1 tvg-id="CatveFM.br" status="online",Catve FM (720p) [Not 24/7]
 https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="CatveMasterTV.br" status="online",Catve Master TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CatveMasterTV.br" status="error",Catve Master TV (720p) [Not 24/7]
 https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="CBNRio.br" status="online",CBN Rio (720p)
 https://medias.sgr.globo.com/hls/vCBNRJ/vCBNRJ.m3u8
@@ -50,7 +50,7 @@ https://tv.unisc.br/hls/test.m3u8
 https://stmv.video.expressolider.com.br/ghostv/ghostv/playlist.m3u8
 #EXTINF:-1 tvg-id="GospelCartoon.br" status="error",Gospel Cartoon (480p)
 https://stmv1.srvstm.com/gospelcartoon2/gospelcartoon2/playlist.m3u8
-#EXTINF:-1 tvg-id="GospelMovieTV.br" status="online",Gospel Movie TV (360p)
+#EXTINF:-1 tvg-id="GospelMovieTV.br" status="error",Gospel Movie TV (360p)
 https://stmv1.srvif.com/gospelf/gospelf/playlist.m3u8
 #EXTINF:-1 tvg-id="HotFM.br" status="error",Hot FM SP (720p) [Not 24/7]
 http://flash8.crossdigital.com.br/id2266/id2266/playlist.m3u8
@@ -75,9 +75,9 @@ https://stream.live.novotempo.com/tv/smil:tvnovotempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NovoTempo.br" status="online",Novo Tempo (480p)
 http://stream.novotempo.com/tv/tvnovotempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NovoTempo.br" status="online",Novo Tempo (480p)
-http://stream.novotempo.com:1935/tv/smil:tvnovotempo.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="NovoTempo.br",Novo Tempo (480p)
 http://stream.novotempo.com:1935/tv/tvnovotempo.smil/live.m3u8
+#EXTINF:-1 tvg-id="NovoTempo.br",Novo Tempo (480p)
+http://stream.novotempo.com:1935/tv/smil:tvnovotempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NuevoTiempo.br" status="online",Nuevo Tiempo (720p) [Not 24/7]
 https://stream.live.novotempo.com/tv/smil:tvnuevotiempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PeruChannel.br" status="online",Perú Channel (720p) [Not 24/7]
@@ -134,7 +134,7 @@ https://hls.brasilstream.com.br/live/redetves/redetves/playlist.m3u8
 https://59f1cbe63db89.streamlock.net:1443/redetvro/redetvro/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeVida.br" status="online",Rede Vida (720p) [Not 24/7]
 https://cvd1.cds.ebtcvd.net/live-redevida/smil:redevida.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RetroCartoon.br" status="online",Retrô Cartoon (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="RetroCartoon.br" status="error",Retrô Cartoon (480p) [Not 24/7]
 https://stmv1.srvif.com/retrotv/retrotv/playlist.m3u8
 #EXTINF:-1 tvg-id="SantaCeciliaTV.br" status="online",Santa Cecilia TV (288p) [Not 24/7]
 http://flash1.crossdigital.com.br/2063/2063/playlist.m3u8
@@ -178,10 +178,10 @@ https://stmv1.transmissaodigital.com/cidadeverde/cidadeverde/playlist.m3u8
 http://tv01.logicahost.com.br:1935/tvcinec/tvcinec/live.m3u8
 #EXTINF:-1 tvg-id="TVCulturaNacional.br" status="online",Cultura PR Catve (720p)
 http://wowza4.catve.com.br:1935/live/livestream/media.m3u8
-#EXTINF:-1 tvg-id="TVDestak.br" status="online",TV Destak (360p)
-http://tv02.logicahost.com.br:1935/pascoal/pascoal/live.m3u8
 #EXTINF:-1 tvg-id="TVDestak.br" status="online",TV Destak (320p)
 https://59f2354c05961.streamlock.net:1443/pascoal/pascoal/playlist.m3u8
+#EXTINF:-1 tvg-id="TVDestak.br" status="online",TV Destak (360p)
+http://tv02.logicahost.com.br:1935/pascoal/pascoal/live.m3u8
 #EXTINF:-1 tvg-id="TVDiariodoSertao.br" status="online",TV Diário do Sertão (720p)
 http://painelvj.com.br:1935/pdsertaotv/pdsertaotv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVE.br" status="online",TVE RS (1080p) [Not 24/7]
@@ -246,13 +246,13 @@ https://srv1.zcast.com.br/tvmon/tvmon/playlist.m3u8
 http://painelvj.com.br:1935/tvnbrasil/tvnbrasil.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNBrasil.br" status="online",TVN Brasil (720p) [Not 24/7]
 http://wz3.dnip.com.br/tvnbrasil/tvnbrasil.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TVNovaOnda.br" status="error",TV Nova Onda (720p)
+#EXTINF:-1 tvg-id="TVNovaOnda.br",TV Nova Onda (720p)
 https://5c483b9d1019c.streamlock.net/8078/8078/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPaiEterno.br" status="online",TV Pai Eterno (480p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/teste01/teste01/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPaiEterno.br" status="error",TV Pai Eterno (360p) [Not 24/7]
 http://flash8.crossdigital.com.br/2306/2306/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPampa.br" status="error",Rede TV! Pampa (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVPampa.br" status="online",Rede TV! Pampa (720p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/tvpampa/tvpampa/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPantanalMS.br" status="online",TV Pantanal MS (720p) [Not 24/7]
 https://5e837408ea907.streamlock.net:1936/tvpantanalms/tvpantanalms/playlist.m3u8
