@@ -29,9 +29,9 @@ https://59d52c5a5ce5e.streamlock.net:4443/canal3rosario/ngrp:canal3rosario_all/p
 http://184.154.28.210:1935/canal4/canal4/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4Balcarce.ar" status="error",Canal 4 Balcarce (480p) [Not 24/7]
 http://inliveserver.com:1935/8550/8550/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal4Jujuy.ar" status="online",Canal 4 Jujuy (720p)
+#EXTINF:-1 tvg-id="Canal4Jujuy.ar" status="timeout",Canal 4 Jujuy (720p)
 http://190.52.32.13:1935/canal4/smil:manifest.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal4Jujuy.ar" status="online",Canal 4 Jujuy (720p)
+#EXTINF:-1 tvg-id="Canal4Jujuy.ar" status="timeout",Canal 4 Jujuy (720p)
 https://5cd577a3dd8ec.streamlock.net/canal4/smil:manifest.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4Posadas.ar" status="error",Canal 4 Posadas (360p) [Geo-blocked]
 http://184.154.28.210:1935/canal4/canal4/live.m3u8
@@ -56,9 +56,9 @@ http://arcast.net:1935/mp/mp/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (720p)
 http://200.115.193.177/live/26hd-720/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (180p)
-http://live-edge01.telecentro.net.ar/live/smil:c26.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (180p)
 http://live-edge02.telecentro.net.ar/live/c26.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (180p)
+http://live-edge01.telecentro.net.ar/live/smil:c26.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalC.ar" status="error",Canal C (Córdoba | Provincia de Córdoba) (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canalccordoba
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
@@ -86,7 +86,7 @@ https://59537faa0729a.streamlock.net/cincotv/cincotv/playlist.m3u8
 https://5fb24b460df87.streamlock.net/live-cont.ar/cinear/playlist.m3u8
 #EXTINF:-1 tvg-id="CiudadTVResistencia.ar" status="online",Ciudad TV Resistencia (Chaco) (720p) [Not 24/7]
 http://coninfo.net:1935/chacodxdtv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="CN3Pinamar.ar" status="online",CN3 Pinamar (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CN3Pinamar.ar" status="error",CN3 Pinamar (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/canal3/canal3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CrossingTVCrossingContenidos.ar" status="online",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
 https://vivo.solumedia.com:19360/crossing/crossing.m3u8
@@ -130,15 +130,15 @@ https://videostream.shockmedia.com.ar:19360/planetamultimedia/planetamultimedia.
 https://wowza.telpin.com.ar:1935/live-powerTV/power.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="QuatroTV.ar" status="error",Quatro TV (540p) [Not 24/7]
 https://59d52c5a5ce5e.streamlock.net:4443/quatro/quatro/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioTVNeuquen.ar" status="online",Radio TV Neuquen (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioTVNeuquen.ar" status="error",Radio TV Neuquen (720p) [Not 24/7]
 http://media.neuquen.gov.ar/rtn/television/playlist.m3u8
-#EXTINF:-1 tvg-id="RTN.ar" status="online",RTN (Neuquén) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTN.ar" status="error",RTN (Neuquén) (720p) [Not 24/7]
 http://media.neuquen.gov.ar/rtn/television/media.m3u8
 #EXTINF:-1 tvg-id="SantaMariaTV.ar" status="online",Santa María TV (360p) [Not 24/7]
 http://www.trimi.com.ar/santa_maria/streaming/mystream.m3u8
 #EXTINF:-1 tvg-id="T5Satelital.ar" status="error",T5 Satelital (540p) [Not 24/7]
 https://api.new.livestream.com/accounts/20819504/events/8664197/live.m3u8
-#EXTINF:-1 tvg-id="Telefe.ar" status="timeout",Telefe (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="Telefe.ar" status="error",Telefe (480p) [Not 24/7]
 http://170.83.242.153:8000/play/a00b
 #EXTINF:-1 tvg-id="TelefeRosario.ar" status="online",Telefe Rosario (720p) [Not 24/7]
 http://telefewhitehls-lh.akamaihd.net/i/whitelist_hls@302302/master.m3u8
