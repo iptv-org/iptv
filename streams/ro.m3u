@@ -13,7 +13,7 @@ http://s5.alfaomega.tv:1935/alfaomega/smil:alfaomegatv/playlist.m3u8
 https://iptv-all.lanesh4d0w.repl.co/romania/a1
 #EXTINF:-1 tvg-id="Antena3.ro" status="error",Antena 3 (720p)
 https://iptv-all.lanesh4d0w.repl.co/romania/a3
-#EXTINF:-1 tvg-id="AntenaComedy.ro" status="error",Antena Comedy (432p) [Not 24/7]
+#EXTINF:-1 tvg-id="AntenaComedy.ro",Antena Comedy (432p) [Not 24/7]
 http://stream1.antenaplay.ro/live/smil:ComedyPlay.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AntenaInternational.ro" status="error",Antena International (576p)
 https://iptv-all.lanesh4d0w.repl.co/romania/ai
@@ -46,19 +46,19 @@ http://89.38.8.130:39435
 rtmp://gtv1.arya.ro:1935/live/gtv1.flv
 #EXTINF:-1 tvg-id="HappyChannel.ro" status="error",Happy Channel (720p) [Not 24/7]
 https://iptv-all.lanesh4d0w.repl.co/romania/happy-channel
-#EXTINF:-1 tvg-id="IntermediaTV.ro" status="online",Intermedia TV (576p)
+#EXTINF:-1 tvg-id="IntermediaTV.ro" status="timeout",Intermedia TV (576p)
 http://46.4.14.12:9999/intermedia1/playlist.m3u8
-#EXTINF:-1 tvg-id="KanalD.ro" status="online",Kanal D (384p) [Not 24/7]
+#EXTINF:-1 tvg-id="KanalD.ro" status="error",Kanal D (384p) [Not 24/7]
 https://stream1.kanald.ro/iphone/live.m3u8
-#EXTINF:-1 tvg-id="KissTV.ro" status="error",Kiss TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="KissTV.ro" status="online",Kiss TV (576p) [Not 24/7]
 https://fms-https1.mediadirect.ro/live3/_definst_/kiss.smil/playlist.m3u8?publisher=83
-#EXTINF:-1 tvg-id="LightChannel.ro" status="online",Light Channel (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="LightChannel.ro" status="error",Light Channel (480p) [Not 24/7]
 http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
 #EXTINF:-1 tvg-id="MEDIAREGIONAL.ro" status="online",MEDIA REGIONAL (576p)
 http://83.103.150.198:8080
 #EXTINF:-1 tvg-id="Mireasa.ro" status="error",Mireasa (480p)
 https://iptv-all.lanesh4d0w.repl.co/romania/mireasa
-#EXTINF:-1 tvg-id="MoozDance.ro" status="online",MoozDance (576p)
+#EXTINF:-1 tvg-id="MoozDance.ro",MoozDance (576p)
 #EXTVLCOPT:http-referrer=https://mooz.tv/
 https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8
 #EXTINF:-1 tvg-id="MoozHits.ro" status="online",MoozHits (576p)
@@ -81,10 +81,10 @@ https://stream1.1616.ro:1945/prima/livestream/playlist.m3u8?wowzatokenhash=hOdIz
 https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0
 #EXTINF:-1 tvg-id="RapsodiaTV.ro" status="error",Rapsodia TV (576p)
 rtmp://rapsodia1.arya.ro/live/rapsodiatv1
+#EXTINF:-1 tvg-id="RealitateaTV.ro" status="online",Realitatea FM (Studio) (576p) [Not 24/7]
+https://live.realitatea.net/livertmp/plus/playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaTV.ro" status="timeout",Realitatea Plus (720p)
 https://livestream.realitatea.net/livestream/liverealitatea.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="RealitateaTV.ro" status="error",Realitatea FM (Studio) (576p) [Not 24/7]
-https://live.realitatea.net/livertmp/plus/playlist.m3u8
 #EXTINF:-1 tvg-id="RockTV.ro" status="online",Rock TV (480p)
 https://fms-https1.mediadirect.ro/live3/_definst_/rocktv.smil/master.m3u8
 #EXTINF:-1 tvg-id="SangeorzTV.ro" status="error",Sangeorz TV (396p) [Not 24/7]
@@ -132,7 +132,7 @@ http://89.38.8.130:39419
 #EXTINF:-1 tvg-id="UTV.ro" status="error" user-agent="iPhone",UTV (576p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://iptv-all.lanesh4d0w.repl.co/romania/utv
-#EXTINF:-1 tvg-id="VPTV.ro" status="error",VP TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="VPTV.ro",VP TV (576p) [Not 24/7]
 http://89.38.8.130:39437
 #EXTINF:-1 tvg-id="ZuTV.ro" status="error",ZU Radio TV (720p)
 https://iptv-all.lanesh4d0w.repl.co/romania/zuradiotv
@@ -140,5 +140,5 @@ https://iptv-all.lanesh4d0w.repl.co/romania/zuradiotv
 https://stream1.1616.ro:1945/profit/livestream/playlist.m3u8?wowzatokenhash=hOdIznDoakApEuQ8FaFI3yrJuBMZHqCB7B3cWTmRWsc=
 #EXTINF:-1 tvg-id="" status="online",Profit.ro (404p) [Not 24/7]
 https://stream1.profit.ro:1945/profit/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",ZU TV (720p)
+#EXTINF:-1 tvg-id="",ZU TV (720p)
 https://iptv-all.lanesh4d0w.repl.co/romania/zutv
