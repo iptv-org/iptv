@@ -60,9 +60,9 @@ https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/
 #EXTINF:-1 tvg-id="ClassCNBC.us" status="online",Class CNBC (576p)
 https://streamcdnb10-859c1818ed614cc5b0047439470927b0.msvdn.net/live/S76890577/tDoFkZD3T1Lw/playlist.m3u8
 #EXTINF:-1 tvg-id="CompanyTV.it" status="online",Company TV (720p)
-https://5929b138b139d.streamlock.net/CompanyTV/smil:CompanyTV.smil/master.m3u8
-#EXTINF:-1 tvg-id="CompanyTV.it",Company TV (720p)
 http://wma10.fluidstream.net/CompanyTV/mp4:livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="CompanyTV.it" status="online",Company TV (720p)
+https://5929b138b139d.streamlock.net/CompanyTV/smil:CompanyTV.smil/master.m3u8
 #EXTINF:-1 tvg-id="CusanoItaliaTV.it" status="online",Cusano Italia TV (720p) [Not 24/7]
 https://stream9.xdevel.com/video0s975363-691/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="DonnaShopping.it" status="online",Donna Shopping (1080p) [Not 24/7]
@@ -300,10 +300,10 @@ https://54627d4fc5996.streamlock.net/SuperJtv/SuperJtv/playlist.m3u8
 http://uk4.streamingpulse.com:1935/SuperJtv/SuperJtv/playlist.m3u8
 #EXTINF:-1 tvg-id="SuperSixLombardia.it" status="online",SuperSix Lombardia (720p)
 https://5db313b643fd8.streamlock.net/SUPERSIXLombardia/SUPERSIXLombardia/playlist.m3u8
-#EXTINF:-1 tvg-id="SuperTV.it" status="online",Super TV (720p)
-http://wms.shared.streamshow.it/supertv/mp4:supertv/playlist.m3u8
 #EXTINF:-1 tvg-id="SuperTV.it" status="online",Super TV Brescia (720p)
 http://wms.shared.streamshow.it:1935/supertv/supertv/live.m3u8
+#EXTINF:-1 tvg-id="SuperTV.it",Super TV (720p)
+http://wms.shared.streamshow.it/supertv/mp4:supertv/playlist.m3u8
 #EXTINF:-1 tvg-id="SuperTVOristano.it" status="timeout",Super TV Oristano (720p) [Not 24/7]
 http://193.70.81.40:1935/supertvoristano/supertvoristano/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleAbruzzo.it" status="online",Tele Abruzzo (384p)
@@ -385,9 +385,9 @@ https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kf)/
 #EXTINF:-1 tvg-id="TGNorba24.it" status="online",TG Norba 24 (360p)
 http://flash5.streaming.xdevel.com/tgnorba_24/smil:tgnorba_24.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TGNorba24.it" status="online",TG Norba 24 (360p)
-https://flash2.xdevel.com/tgnorba_24/tgnorba_24_source.stream/index.m3u8
-#EXTINF:-1 tvg-id="TGNorba24.it" status="online",TG Norba 24 (360p)
 https://flash5.xdevel.com/tgnorba_24/smil:tgnorba_24.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TGNorba24.it",TG Norba 24 (360p)
+https://flash2.xdevel.com/tgnorba_24/tgnorba_24_source.stream/index.m3u8
 #EXTINF:-1 tvg-id="TLNTeleLazioNord.it" status="error",TLN Tele Lazio Nord (720p) [Not 24/7]
 http://tln.srfms.com:1935/TLN/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TopCrime.it" status="blocked",Top Crime [Geo-blocked]
@@ -428,7 +428,7 @@ http://ftp.tiscali.it/francescovernata/TVUNO/monoscopioTvUNOint-1.wmv
 https://umbriatv.stream.rubidia.it:8083/live/umbriatv/playlist.m3u8
 #EXTINF:-1 tvg-id="VeraTV.it" status="online",Vera TV (1080p) [Not 24/7]
 http://wms.shared.streamshow.it/veratv/mp4:veratv/playlist.m3u8
-#EXTINF:-1 tvg-id="VeraTVMarche.it" status="online",Vera TV (Marche) (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="VeraTVMarche.it",Vera TV (Marche) (1080p) [Not 24/7]
 http://wms.shared.streamshow.it/veratv/veratv/playlist.m3u8
 #EXTINF:-1 tvg-id="VideoBresciaTV.it" status="error",Video Brescia TV (720p) [Not 24/7]
 http://wms.shared.streamshow.it/videobrescia/videobrescia/playlist.m3u8
@@ -462,10 +462,6 @@ http://wms.shared.streamshow.it:1935/telepavia/telepavia/live.m3u8
 http://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=2606803
 #EXTINF:-1 tvg-id="" status="online",Rai YoYo (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899
-#EXTINF:-1 tvg-id="" status="online",CANALE 7 (480p)
-http://wms.shared.streamshow.it/canale7/mp4:canale7/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",CANALE 8 (480p)
-http://wms.shared.streamshow.it/canale8/mp4:canale8/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Juwelo Italia (480p)
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/7841/7841_264_live.m3u8
 #EXTINF:-1 tvg-id="" status="error",Hilando Fino (1080p) [Not 24/7]
@@ -488,3 +484,7 @@ https://rtl-video2-stream.thron.com/live-video/video2/ngrp:video2/playlist.m3u8
 https://rtl-video4-stream.thron.com/live-video/video4/ngrp:video4/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",TeleFormula (720p) [Not 24/7]
 https://wms60.tecnoxia.com/radiof/abr_radioftele/playlist.m3u8
+#EXTINF:-1 tvg-id="",CANALE 7 (480p)
+http://wms.shared.streamshow.it/canale7/mp4:canale7/playlist.m3u8
+#EXTINF:-1 tvg-id="",CANALE 8 (480p)
+http://wms.shared.streamshow.it/canale8/mp4:canale8/playlist.m3u8
