@@ -73,7 +73,7 @@ https://ms7.mx-cd.net/tv/184-782326/Omroep_Tilburg_TV.smil/playlist.m3u8
 https://d3pvma9xb2775h.cloudfront.net/live/omropfryslan/stream04/index.m3u8
 #EXTINF:-1 tvg-id="OpenRotterdam.nl" status="online",Open Rotterdam (480p) [Not 24/7]
 http://ms2.mx-cd.net/tv/141-573555/OPEN_Rotterdam.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ORTS.nl" status="online",ORTS (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ORTS.nl",ORTS (480p) [Not 24/7]
 http://ms7.mx-cd.net/tv/200-1006554/ORTS_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PodiumTV2.nl" status="online",Podium.TV 2 (1080p) [Not 24/7]
 http://rrr.sz.xlcdn.com/?account=ndc_mediagroep&file=NDC2&output=playlist.m3u8&service=wowza&type=live
@@ -99,7 +99,7 @@ http://558bd16067b67.streamlock.net:1935/radionl/radionl/playlist.m3u8
 http://streaming.rn7.nl/rn7tv/live_576/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioVeronica.nl" status="error",Radio Veronica (270p)
 https://talparadiohls-i.akamaihd.net/hls/live/585615/VR-Veronica-1/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioVOSFM.nl" status="error",Radio VOS FM (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioVOSFM.nl" status="online",Radio VOS FM (720p) [Not 24/7]
 http://593aed234297b.streamlock.net:1935/henrymeeuws/henrymeeuws/playlist.m3u8
 #EXTINF:-1 tvg-id="Regio8TV.nl" status="online",Regio8 TV (1080p)
 https://ms7.mx-cd.net/tv/71-475821/Regio8TV.smil/playlist.m3u8
@@ -113,7 +113,7 @@ https://live.rtva.nl/live/zender.m3u8
 https://ms7.mx-cd.net/tv/163-669433/RTV_Arnhem.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVDordrecht.nl" status="online",RTV Dordrecht (480p)
 https://ms2.mx-cd.net/dtv-02/107-475823/RTV_Dordrecht.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTVDordrecht.nl" status="online",RTV Dordrecht (480p)
+#EXTINF:-1 tvg-id="RTVDordrecht.nl",RTV Dordrecht (480p)
 https://ms7.mx-cd.net/dtv-02/107-475823/RTV_Dordrecht.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVDrenthe.nl" status="online",RTV Drenthe (1080p)
 https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8
@@ -135,7 +135,7 @@ http://cdn15.streampartner.nl:1935/rtvnof2/live/playlist.m3u8
 https://593aed234297b.streamlock.net/rtvnof/rtvnof/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVOost.nl" status="error",RTV Oost (720p)
 https://mediacdn.rtvoost.nl/live/rtvoost/tv-oost/index.m3u8
-#EXTINF:-1 tvg-id="RTVPurmerend.nl" status="online",RTV Purmerend (720p)
+#EXTINF:-1 tvg-id="RTVPurmerend.nl",RTV Purmerend (720p)
 https://ms2.mx-cd.net/dtv-10/268-2641474/RTV_Purmerend_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVRijnmond.nl" status="error",RTV Rijnmond (1080p)
 https://d3r4bk4fg0k2xi.cloudfront.net/rijnmondTv/index.m3u8
@@ -203,8 +203,6 @@ https://live.jintv.org:12443/medialive/jintv.m3u8
 https://ms2.mx-cd.net/tv/226-1855782/XITE_NL.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",XITE (BE) (720p) [Not 24/7]
 https://ms7.mx-cd.net/tv/226-1855782/XITE_NL.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Omroep Gelderland (720p) [Not 24/7]
-https://web.omroepgelderland.nl/live/livetv.m3u8
 #EXTINF:-1 tvg-id="" status="online",RTV Arnhem (480p)
 https://ms2.mx-cd.net/tv/163-669433/RTV_Arnhem.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",RN 7 TV (1080p) [Geo-blocked]
@@ -215,3 +213,5 @@ https://rrr.sz.xlcdn.com/?account=omroepgelderland&file=livetv&output=playlist.m
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/27
 #EXTINF:-1 tvg-id="" status="error",JIN TV (720p) [Not 24/7]
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/27.m3u8
+#EXTINF:-1 tvg-id="",Omroep Gelderland (720p) [Not 24/7]
+https://web.omroepgelderland.nl/live/livetv.m3u8
