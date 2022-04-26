@@ -13,12 +13,12 @@ https://katapy.hs.llnwd.net/dieutvwza1/DIEUTVLIVE/smil:dieutv.smil/playlist.m3u8
 http://source2.primetime.ch/play/elittv/index.m3u8
 #EXTINF:-1 tvg-id="Kanal9.ch" status="online",Kanal 9 en Français (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:livehd/master.m3u8
-#EXTINF:-1 tvg-id="Kanal9.ch" status="online",Kanal 9 auf Deutsch (1080p)
-https://edge.vedge.infomaniak.com/livecast/ik:livesd2/master.m3u8
 #EXTINF:-1 tvg-id="Kanal9.ch" status="online",Kanal 9 en Français (1080p)
 https://livehd.vedge.infomaniak.com/livecast/livehd/master.m3u8
 #EXTINF:-1 tvg-id="Kanal9.ch" status="online",Kanal 9 auf Deutsch (1080p)
 https://livesd2.vedge.infomaniak.com/livecast/ik:livesd2/master.m3u8
+#EXTINF:-1 tvg-id="Kanal9.ch" status="error",Kanal 9 auf Deutsch (1080p)
+https://edge.vedge.infomaniak.com/livecast/ik:livesd2/master.m3u8
 #EXTINF:-1 tvg-id="LaTele.ch" status="online",La Télé (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:latele/playlist.m3u8
 #EXTINF:-1 tvg-id="LaTele.ch" status="online",La Télé (1080p)
@@ -63,7 +63,7 @@ http://xapp510394368c1000199.f.l.z.lb.core-cdn.net/10096xtelebase/ios_500/master
 https://edge.vedge.infomaniak.com/livecast/ik:telebielinguech/manifest.m3u8
 #EXTINF:-1 tvg-id="TeleBielingue.ch" status="online",TeleBielingue (720p)
 https://livevideo.infomaniak.com/streaming/livecast/telebielinguech/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleM1.ch" status="error",Tele M1 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleM1.ch" status="online",Tele M1 (720p) [Not 24/7]
 https://cdnapisec.kaltura.com/p/1719221/sp/171922100/playManifest/entryId/1_ljzy3evp/format/applehttp/protocol/https/a.m3u8
 #EXTINF:-1 tvg-id="TeleTicino.ch" status="online",TeleTicino (720p)
 https://livestream.gruppocdt.ch/hls/teleticino.m3u8
@@ -75,11 +75,11 @@ https://edge.vedge.infomaniak.com/livecast/tvm3/playlist.m3u8
 https://tvm3.vedge.infomaniak.com/livecast/tvm3/playlist.m3u8
 #EXTINF:-1 tvg-id="TVO.ch" status="online",TVO (CH) (1080p) [Not 24/7]
 https://s3.welocal.world/tvo/media/447348/videos/hls.m3u8
-#EXTINF:-1 tvg-id="" status="online",LFM TV (1080p)
-https://edge.vedge.infomaniak.com/livecast/ik:lfmhd/manifest.m3u8
 #EXTINF:-1 tvg-id="" status="online",TVO (CH) (720p)
 https://cdnapisec.kaltura.com/p/1719221/sp/171922100/playManifest/entryId/1_t5h46v64/format/applehttp/protocol/https/a.m3u8
 #EXTINF:-1 tvg-id="" status="online",LFM TV (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:lfmmd/manifest.m3u8
 #EXTINF:-1 tvg-id="" status="online",Die Neue Zeit (576p)
 https://www.onairport.live/die-neue-zeit-tv-live/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="",LFM TV (1080p)
+https://edge.vedge.infomaniak.com/livecast/ik:lfmhd/manifest.m3u8
