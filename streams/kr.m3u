@@ -24,16 +24,16 @@ https://5e04aba713813.streamlock.net/live/livetv/playlist.m3u8
 #EXTINF:-1 tvg-id="DaejeonMBCTV.kr" status="online",대전MBC (MBC Daejeon) (720p) [Not 24/7]
 https://5c482867a8b63.streamlock.net/live/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="EBS1TV.kr" status="online",EBS 1 (400p)
-http://ebsonair.ebs.co.kr/groundwavefamilypc/familypc1m/playlist.m3u8
-#EXTINF:-1 tvg-id="EBS1TV.kr" status="timeout",EBS 1 (400p)
 http://ebsonair.ebs.co.kr/ebs1familypc/familypc1m/playlist.m3u8
-#EXTINF:-1 tvg-id="EBS2TV.kr" status="online",EBS 2 (400p)
+#EXTINF:-1 tvg-id="EBS1TV.kr" status="online",EBS 1 (400p)
+http://ebsonair.ebs.co.kr/groundwavefamilypc/familypc1m/playlist.m3u8
+#EXTINF:-1 tvg-id="EBS2TV.kr" status="timeout",EBS 2 (400p)
 http://ebsonair.ebs.co.kr/ebs2familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-id="EBSEnglish.kr" status="online",EBS e (400p)
 http://ebsonair.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-id="EBSKids.kr" status="online",EBS KIDS (400p)
 http://ebsonair.ebs.co.kr/ebsufamilypc/familypc1m/playlist.m3u8
-#EXTINF:-1 tvg-id="EBSPlus1.kr" status="online",EBS+ 1 (400p)
+#EXTINF:-1 tvg-id="EBSPlus1.kr" status="timeout",EBS+ 1 (400p)
 http://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-id="EBSPlus2.kr" status="online",EBS+ 2 (400p)
 http://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8
@@ -51,7 +51,7 @@ http://liveen24-manminglobal3.ktcdn.co.kr/liveen24/gcnus_high/playlist.m3u8
 http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="JejuMBCTV.kr" status="online",제주 MBC (MBC Jeju) (352p) [Not 24/7]
 https://5cf58a556f9b2.streamlock.net/live/tv_jejumbc/playlist.m3u8
-#EXTINF:-1 tvg-id="JIBSTV.kr" status="error",JIBS SBS (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JIBSTV.kr" status="online",JIBS SBS (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
 #EXTINF:-1 tvg-id="KBSLiveCamDokDo.kr" status="online",KBS LiveCam DokDo (540p)
 http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
@@ -107,11 +107,11 @@ http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index_1.m3u8
 http://210.210.155.35/dr9445/h/h02/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",TBC 대구 (SBS 大邱) (540p) [Geo-blocked]
 http://221.157.125.239:1935/live/psike/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",One (Indonesian Sub) (360p) [Geo-blocked]
-http://210.210.155.35/uq2663/h/h143/02.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",CJB청주방송 (SBS 淸州) (540p) [Not 24/7]
 http://1.222.207.80:1935/live/cjbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",KBS 1 (1080p) [Not 24/7]
 http://121.130.210.101:9981/stream/channelid/637185705
+#EXTINF:-1 tvg-id="" status="error",One (Indonesian Sub) (360p) [Geo-blocked]
+http://210.210.155.35/uq2663/h/h143/02.m3u8
 #EXTINF:-1 tvg-id="" status="error",가요TV (1080p) [Not 24/7]
 http://gayotv.net:1935/live/gayotv/playlist.m3u8
