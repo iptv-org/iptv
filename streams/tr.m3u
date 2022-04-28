@@ -38,7 +38,7 @@ https://waw2.artiyerelmedya.net/brtv/bant1/playlist.m3u8
 https://waw2.artiyerelmedya.net/astv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="BursaTV.tr" status="online",Bursa TV (720p) [Not 24/7]
 https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8
-#EXTINF:-1 tvg-id="BursaTV.tr" status="error",Bursa TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="BursaTV.tr" status="online",Bursa TV (720p) [Not 24/7]
 https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CanTV.tr" status="online",Can TV (720p)
 http://canbroadcast.com:7000/canlican/tv.m3u8
@@ -124,10 +124,10 @@ https://tv.ensonhaber.com/tv/tr/haberglobal/index.m3u8
 #EXTINF:-1 tvg-id="HalkTV.tr" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Halk TV (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://mn-nl.mncdn.com/blutv_halktv/smil:halktv_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Not 24/7]
-https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Not 24/7]
+https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p)
 http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p) [Not 24/7]
@@ -308,15 +308,15 @@ https://tv.ensonhaber.com/tv/tr/tgrtbelgesel/index.m3u8
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TGRTEU.tr" status="online",TGRT EU (576p)
 https://tv.ensonhaber.com/tv/tr/tgrteu/index.m3u8
-#EXTINF:-1 tvg-id="TGRTHaber.tr" status="online",TGRT Haber (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="TGRTHaber.tr" status="timeout",TGRT Haber (360p) [Not 24/7]
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe4598be8e5d.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ThaqalaynTV.tr" status="online",Thaqalayn TV (720p) [Not 24/7]
 https://live.thaqalayn.tv/hls/live.m3u8
-#EXTINF:-1 tvg-id="TonTV.tr" status="timeout",Ton TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TonTV.tr" status="online",Ton TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/tontv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="ToprakTV.tr" status="online",Toprak TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/topraktv/playlist.m3u8
-#EXTINF:-1 tvg-id="TorbaTV.tr" status="online",Torba TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TorbaTV.tr" status="error",Torba TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/torbatv/playlist.m3u8
 #EXTINF:-1 tvg-id="TR24TV.tr" status="online",TR24 TV (720p) [Not 24/7]
 https://tv.ensonhaber.com/tv/tr/24tv/index.m3u8
@@ -382,7 +382,7 @@ http://stream.taksimbilisim.com:1935/tv41/bant1/TV41.m3u8
 http://stream.taksimbilisim.com:1935/tv41/smil:tv41.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TV41.tr" status="online",TV 41 (720p) [Geo-blocked]
 https://waw1.artiyerelmedya.net/tv41/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TV41.tr" status="timeout",TV41 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV41.tr" status="online",TV41 (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/tv41/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="TV52.tr" status="online",TV 52 (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/tv52/smil:tv52.smil/playlist.m3u8
