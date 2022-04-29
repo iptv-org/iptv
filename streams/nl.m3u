@@ -39,7 +39,7 @@ http://stream.tvtap.net:8081/live/nl-npo1.stream/playlist.m3u8
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo1/npo1.isml/.m3u8
 #EXTINF:-1 tvg-id="NPO2.nl" status="blocked",NPO 2 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/nl-npo2.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="NPO2.nl",NPO 2 (342p)
+#EXTINF:-1 tvg-id="NPO2.nl" status="error",NPO 2 (342p)
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo2/npo2.isml/.m3u8
 #EXTINF:-1 tvg-id="NPO3.nl" status="blocked",NPO 3 (1080p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/nl-npo3.stream/playlist.m3u8
@@ -99,13 +99,13 @@ http://558bd16067b67.streamlock.net:1935/radionl/radionl/playlist.m3u8
 http://streaming.rn7.nl/rn7tv/live_576/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioVeronica.nl" status="error",Radio Veronica (270p)
 https://talparadiohls-i.akamaihd.net/hls/live/585615/VR-Veronica-1/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioVOSFM.nl" status="online",Radio VOS FM (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioVOSFM.nl" status="error",Radio VOS FM (720p) [Not 24/7]
 http://593aed234297b.streamlock.net:1935/henrymeeuws/henrymeeuws/playlist.m3u8
 #EXTINF:-1 tvg-id="Regio8TV.nl" status="online",Regio8 TV (1080p)
 https://ms7.mx-cd.net/tv/71-475821/Regio8TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Regio90TV.nl" status="error",Regio90 TV (480p)
 https://ms7.mx-cd.net/MC-Monitoring/260-2403096/90TV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RegioTVNieuws.nl" status="blocked",Regio TV Nieuws (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="RegioTVNieuws.nl" status="online",Regio TV Nieuws (1080p) [Not 24/7]
 http://highvolume04.streampartner.nl/regiomedia/regiomedia/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVAmstelveen.nl" status="online",RTV Amstelveen (720p) [Not 24/7]
 https://live.rtva.nl/live/zender.m3u8
