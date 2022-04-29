@@ -85,7 +85,7 @@ http://wpso.com:1936/hls/wzra.m3u8
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
-#EXTINF:-1 tvg-id="Galaxy.gr" status="blocked",Galaxy (432p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Galaxy.gr" status="online",Galaxy (432p) [Geo-blocked]
 https://channel.streams.ovh:1936/galaxygr-1/galaxygr-1/playlist.m3u8
 #EXTINF:-1 tvg-id="GreekCinema.gr" status="error",Greek Cinema (720p)
 https://vdo.alphaserver.gr:3613/stream/play.m3u8
@@ -110,9 +110,9 @@ https://www.hellasnet.tv/rest.live.hn/ws.iri/playlist.m3u8
 #EXTINF:-1 tvg-id="KidsTV.gr" status="online",Kids TV (480p)
 http://wpso.com:1936/hls/kidshd.m3u8
 #EXTINF:-1 tvg-id="KontraChannel.gr" status="online",Kontra Channel (1080p)
-http://kontralive.siliconweb.com/live/kontratv/playlist.m3u8
-#EXTINF:-1 tvg-id="KontraChannel.gr" status="error",Kontra Channel (1080p)
 http://flashcloud.mediacdn.com/live/kontratv/.m3u8
+#EXTINF:-1 tvg-id="KontraChannel.gr" status="online",Kontra Channel (1080p)
+http://kontralive.siliconweb.com/live/kontratv/playlist.m3u8
 #EXTINF:-1 tvg-id="KPHTHTV.gr" status="online",KPHTH TV (720p) [Not 24/7]
 http://live.cretetv.gr:1935/cretetv/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="KritiTV.gr" status="online",Κρήτη TV (720p) [Not 24/7]
@@ -139,10 +139,10 @@ https://vdo.alphaserver.gr:3305/stream/play.m3u8
 https://live.neatv.gr:8888/hls/neatv.m3u8
 #EXTINF:-1 tvg-id="NetmaxTV.gr" status="online",Netmax TV (720p) [Not 24/7]
 http://live.netmaxtv.com:8080/live/live/playlist.m3u8
-#EXTINF:-1 tvg-id="NG.gr" status="online",NG (720p)
-https://live.streams.ovh/NGradio/NGradio/playlist.m3u8
 #EXTINF:-1 tvg-id="NG.gr" status="online",NG (614p)
 http://live.streams.ovh:1935/NGradio/NGradio/playlist.m3u8
+#EXTINF:-1 tvg-id="NG.gr" status="online",NG (720p)
+https://live.streams.ovh/NGradio/NGradio/playlist.m3u8
 #EXTINF:-1 tvg-id="NotioiTV.gr" status="online",Notioi TV (720p)
 https://live.streams.ovh/YourStreaming/YourStreaming/playlist.m3u8
 #EXTINF:-1 tvg-id="NRG91.gr" status="online",NRG 91 (720p) [Not 24/7]
@@ -213,12 +213,12 @@ https://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 https://skai-live.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Alert (576p) [Not 24/7]
 https://itv.streams.ovh/ALEERT/ALEERT/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση 2 (540p) [Not 24/7]
-https://streamer-cache.grnet.gr/parliament/hls/webtv2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση 3 (540p)
 https://streamer-cache.grnet.gr/parliament/hls/webtv3.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση (540p)
 https://streamer-cache.grnet.gr/parliament/hls/webtv.m3u8
+#EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση 2 (540p) [Not 24/7]
+https://streamer-cache.grnet.gr/parliament/hls/webtv2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση (360p)
 https://streamer-cache.grnet.gr/parliament/parltv.sdp/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Alpha BUP
