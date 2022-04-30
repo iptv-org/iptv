@@ -116,7 +116,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/vid
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="online",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
-#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -160,8 +160,6 @@ http://51.210.199.20/hls/stream.m3u8
 http://51.210.199.21/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaSonnati.fr" status="timeout",Persiana Sonati (576p) [Not 24/7]
 http://51.210.199.59/hls/stream.m3u8
-#EXTINF:-1 tvg-id="" status="online",Persiana Varzesh (720p) [Not 24/7]
-http://51.210.199.16/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PokerTV.fr" status="error",Poker TV (720p) [Not 24/7]
 http://51.210.199.17/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PublicSenat.fr" status="online",Public Sénat (480p) [Not 24/7]
@@ -186,7 +184,7 @@ https://s6.tntendirect.com/tmc/live/playlist.m3u8
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/master.m3u8
-#EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="timeout",TV7 Bordeaux (720p)
+#EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="error",TV7 Bordeaux (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=vGrlJbbfsE4
 #EXTINF:-1 tvg-id="TV7Colmar.fr" status="online",TV7 Colmar (576p)
 https://tv7.hdr-tv.com/live/tv7/livestream/playlist.m3u8
@@ -235,6 +233,8 @@ https://streamer01.myvideoplace.tv/streamer02/hls/MDS_VIA_PAD_301117.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s89/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",Persiana Varzesh (720p) [Not 24/7]
+http://51.210.199.16/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ARTE Français (720p) [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Wéo (Hauts-de-France) (480p) [Not 24/7]
