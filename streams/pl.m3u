@@ -7,16 +7,12 @@ http://94.246.128.53:1935/tv/dlaCiebieTv/playlist.m3u8
 https://live-insysgo.cf.insyscd.net/echo24.720.smil/manifest.mpd
 #EXTINF:-1 tvg-id="EzoTV.pl" status="online",Ezo TV (576p) [Not 24/7]
 http://live.ezotv.pl:1935/live/EZOTV/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioCzworka.pl" status="error",Radio Czworka (1080p)
-http://stream14.polskieradio.pl:1935/pr4_video/video_pr4.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="SferaTV.pl" status="online",Sfera TV (480p) [Not 24/7]
 http://stream.sferatv.pl:1935/sferalive/smil:sferalive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TelewizjaPograniczeGlubczyce.pl" status="error",Telewizja Pogranicze (Głubczyce) (720p) [Not 24/7]
 http://95.160.28.218:1935/pogranicze/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="TelewizjaTorun.pl" status="online",Telewizja Toruń (1080p) [Not 24/7]
 http://217.173.176.107:1935/live/ngrp:tvk.stream_mobile/chunks.m3u8
-#EXTINF:-1 tvg-id="TVTrwam.pl" status="online",Trwam TV (480p)
-http://trwamtv.live.e57-po.insyscd.net/cl01/out/u/trwam_3.m3u8
 #EXTINF:-1 tvg-id="TVKujawy.pl" status="online",TV Kujawy (576p) [Not 24/7]
 http://stream.tvkujawy.pl:8080/live/broadcast.m3u8
 #EXTINF:-1 tvg-id="TVP1.pl" status="error",TVP 1 (720p)
@@ -61,7 +57,7 @@ http://hbbtvlive3.v3.tvp.pl/hbbtvlive/livestream.php?app_id=kanal1
 http://hbbtvlive3.v3.tvp.pl/hbbtvlive/livestream.php?app_id=kanal2
 #EXTINF:-1 tvg-id="TVPSejm.pl" status="error",TVP Sejm (404p)
 http://hbbtvlive3.v3.tvp.pl/hbbtvlive/livestream.php?app_id=sejm
-#EXTINF:-1 tvg-id="TVPSenat.pl" status="timeout",TVP Senat (404p)
+#EXTINF:-1 tvg-id="TVPSenat.pl" status="error",TVP Senat (404p)
 http://hbbtvlive3.v3.tvp.pl/hbbtvlive/livestream.php?app_id=senat
 #EXTINF:-1 tvg-id="TVRegionalnaLubin.pl" status="online",TV Regionalna (Lubin) (576p) [Not 24/7]
 https://tvreg.klemit.net/regionalna/stream/index.m3u8
@@ -73,6 +69,8 @@ http://m1-tvrepublika.4vod.tv/smil:premium_abr.ism/playlist.m3u8
 http://176.107.129.219/media/tvt/index.m3u8
 #EXTINF:-1 tvg-id="TVTorun.pl" status="online",TV Toruń (1080p)
 http://217.173.176.107:1935/live/tvk.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVTrwam.pl" status="online",Trwam TV (480p)
+http://trwamtv.live.e57-po.insyscd.net/cl01/out/u/trwam_3.m3u8
 #EXTINF:-1 tvg-id="TVTZgorzelec.pl" status="online",TVT Zgorzelec (576p) [Not 24/7]
 http://gargoyle.tomkow.pl/hls/tvt.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV REPUBLIKA (1080p)
@@ -81,3 +79,5 @@ http://188.47.212.71/jupiter/o1-cl1/live/tvrepublika/live.m3u8
 https://stream.4fun.tv:8888/hls/4f_high/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV Trwam (480p)
 https://trwamtv.live.e59-po.insyscd.net/cl01/out/u/trwam_3.m3u8
+#EXTINF:-1 tvg-id="" status="error",Radio Czworka (1080p)
+http://stream14.polskieradio.pl:1935/pr4_video/video_pr4.stream/playlist.m3u8
