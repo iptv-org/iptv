@@ -31,8 +31,6 @@ https://panik.cast-control.eu:1936/Admin_1/Admin_1/playlist.m3u8
 https://live.streams.ovh/netmedia/netmedia/playlist.m3u8
 #EXTINF:-1 tvg-id="BestTV.gr" status="online",Best TV (720p) [Not 24/7]
 https://stream.net7.gr/hls/best/index.m3u8
-#EXTINF:-1 tvg-id="CameraSmile.gr" status="timeout",Camera Smile (480p)
-https://nrpus.bozztv.com/36bay2/gusa-camerasmile/index.m3u8
 #EXTINF:-1 tvg-id="CanaliTV.gr" status="online",Canali TV (720p) [Geo-blocked]
 http://live.streams.ovh:1935/cannali/cannali/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel9.gr" status="online",Channel 9 (720p)
@@ -43,8 +41,8 @@ https://e-e.cyou:8222/channel9/channel9/playlist.m3u8
 https://vod.streams.ovh:3528/stream/play.m3u8
 #EXTINF:-1 tvg-id="CorfuTV.gr" status="online",Corfu TV (576p) [Not 24/7]
 https://itv.streams.ovh/corfuchannel/corfuchannel/playlist.m3u8
-#EXTINF:-1 tvg-id="Creta.gr" status="online",Creta (540p) [Not 24/7]
-http://live.streams.ovh:1935/tvcreta/tvcreta/playlist.m3u8
+#EXTINF:-1 tvg-id="CreteTV.gr" status="online",KPHTH TV (720p) [Not 24/7]
+http://live.cretetv.gr:1935/cretetv/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="DiavataTV.gr" status="online",Diavata TV (720p)
 https://video.streams.ovh:1936/DiavataTV/DiavataTV/playlist.m3u8
 #EXTINF:-1 tvg-id="Diktyo1.gr" status="error",Diktyo1 (360p)
@@ -85,7 +83,7 @@ http://wpso.com:1936/hls/wzra.m3u8
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
-#EXTINF:-1 tvg-id="Galaxy.gr" status="online",Galaxy (432p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Galaxy.gr" status="blocked",Galaxy (432p) [Geo-blocked]
 https://channel.streams.ovh:1936/galaxygr-1/galaxygr-1/playlist.m3u8
 #EXTINF:-1 tvg-id="GreekCinema.gr" status="error",Greek Cinema (720p)
 https://vdo.alphaserver.gr:3613/stream/play.m3u8
@@ -101,9 +99,9 @@ https://l5.cloudskep.com/hellenictv/htv/playlist.m3u8
 http://live.streams.ovh:1935/hightv/hightv/playlist.m3u8
 #EXTINF:-1 tvg-id="HorseRaces.gr" status="online",Horse Races (432p) [Not 24/7]
 https://odiehls-i.akamaihd.net/hls/live/233406/odie3/odie.m3u8
-#EXTINF:-1 tvg-id="IonianChannel.gr" status="online",Ionian Channel (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="IonianTVHD.gr" status="online",Ionian Channel (1080p) [Not 24/7]
 http://stream.ioniantv.gr:8081/ionian/live/playlist.m3u8
-#EXTINF:-1 tvg-id="IonianChannel.gr" status="online",Ionian Channel (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="IonianTVHD.gr" status="online",Ionian Channel (720p) [Not 24/7]
 https://stream.ioniantv.gr/ionian/live_abr/playlist.m3u8
 #EXTINF:-1 tvg-id="IridaTV.gr" status="online",Irida TV (226p) [Not 24/7]
 https://www.hellasnet.tv/rest.live.hn/ws.iri/playlist.m3u8
@@ -113,8 +111,6 @@ http://wpso.com:1936/hls/kidshd.m3u8
 http://flashcloud.mediacdn.com/live/kontratv/.m3u8
 #EXTINF:-1 tvg-id="KontraChannel.gr" status="online",Kontra Channel (1080p)
 http://kontralive.siliconweb.com/live/kontratv/playlist.m3u8
-#EXTINF:-1 tvg-id="KPHTHTV.gr" status="online",KPHTH TV (720p) [Not 24/7]
-http://live.cretetv.gr:1935/cretetv/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="KritiTV.gr" status="online",Κρήτη TV (720p) [Not 24/7]
 http://live.cretetv.gr:1935/cretetv/myStream/f1tv.m3u8
 #EXTINF:-1 tvg-id="LiveTV.gr" status="error",Live TV (272p)
@@ -125,7 +121,7 @@ https://itv.streams.ovh/magictv/magictv/playlist.m3u8
 https://antennaamdnoenc.akamaized.net/maktv_akamai/abr/playlist.m3u8
 #EXTINF:-1 tvg-id="MaroussiotikaTV.gr" status="online",Maroussiotika TV (480p) [Not 24/7]
 http://maroussiotika.dynu.com:8000/greektv/FZlHCCdBHL1/359142
-#EXTINF:-1 tvg-id="MegaTV.gr" status="error",Mega TV
+#EXTINF:-1 tvg-id="MegaTV.gr" status="online",Mega TV
 https://streamcdnb7-c98db5952cb54b358365984178fb898a.msvdn.net/live/S86713049/gonOwuUacAxM/playlist.m3u8
 #EXTINF:-1 tvg-id="MesogeiosTV.gr" status="online",Mesogeios TV (432p)
 http://176.9.123.140:1935/mesogeiostv/stream/master.m3u8
@@ -173,18 +169,14 @@ http://78.83.87.222:9999/play/a016/index.m3u8
 https://s1.cystream.net/live/smile/playlist.m3u8
 #EXTINF:-1 tvg-id="Star.gr" status="online",Star (720p)
 https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8
-#EXTINF:-1 tvg-id="StarBUP.gr" status="timeout",Star BUP
-http://78.83.87.222:9999/play/a017/index.m3u8
 #EXTINF:-1 tvg-id="SuperB.gr" status="online",Super B (576p) [Not 24/7]
 https://til.pp.ua:3424/live/superblive.m3u8
-#EXTINF:-1 tvg-id="SuperChannel.gr" status="error",Super Channel (300p)
-https://vdo.alphaserver.gr:3587/stream/play.m3u8
-#EXTINF:-1 tvg-id="SyrosTV1.gr" status="error",Σύρος TV1 (720p) [Not 24/7]
-http://176.9.123.140:1935/msg116s/msg116s/playlist.m3u8
 #EXTINF:-1 tvg-id="Tilemousiki.gr" status="online",Tilemousiki (480p) [Not 24/7]
 http://wpso.com:1936/hls/music1.m3u8
 #EXTINF:-1 tvg-id="TV100.gr" status="online",TV 100 (576p) [Not 24/7]
 https://live.fm100.gr/hls/tv100/index.m3u8
+#EXTINF:-1 tvg-id="TVCreta.gr" status="online",Creta (540p) [Not 24/7]
+http://live.streams.ovh:1935/tvcreta/tvcreta/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCreta.gr" status="online",TV Creta (540p) [Not 24/7]
 https://live.streams.ovh/tvcreta/tvcreta/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVFilopoli.gr" status="online",TV Filopoli (360p) [Not 24/7]
@@ -225,7 +217,15 @@ https://streamer-cache.grnet.gr/parliament/parltv.sdp/master.m3u8
 http://78.83.87.222:9999/play/a011/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",M.TV
 http://78.83.87.222:9999/play/a015/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Star BUP
+http://78.83.87.222:9999/play/a017/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Camera Smile (480p)
+https://nrpus.bozztv.com/36bay2/gusa-camerasmile/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Σύρος TV1 (720p) [Not 24/7]
+http://176.9.123.140:1935/msg116s/msg116s/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Alpha (720p)
 https://alphalive-i.akamaihd.net/hls/live/682300/live/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",ANT1 (1080p) [Geo-blocked]
 https://antennaamdnoenc.akamaized.net/ant1_akamai/abr/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Super Channel (300p)
+https://vdo.alphaserver.gr:3587/stream/play.m3u8
