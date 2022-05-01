@@ -132,7 +132,7 @@ http://188.35.9.11:11021/j
 http://80.91.177.102:1935/live/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="Svarozhichi.ua" status="online",Сварожичи (720p)
 http://tv.tv-project.com:1935/live/live1/playlist.m3u8
-#EXTINF:-1 tvg-id="TISTV.ua" status="online",Тис ТВ (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TISTV.ua" status="error",Тис ТВ (480p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/riood/tisod504/playlist.m3u8
 #EXTINF:-1 tvg-id="TravelGuideTV.ua" status="online",Travel Guide TV (720p)
 https://cdn10.live-tv.od.ua:8083/leonovtv/test1/playlist.m3u8
@@ -218,8 +218,6 @@ http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
 https://cdn1.live-tv.od.ua:8083/1tvkr/1tvkr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Южная Волна (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
-https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (576p)
 http://91.194.79.46:8081/stream2/channel2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
@@ -238,6 +236,8 @@ https://cdn1.live-tv.od.ua:8083/1tvod/1tvod-abr/playlist.m3u8
 https://cdn1.live-tv.od.ua:8083/1tvod/1tvod/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ТРК Репортер (480p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
+https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Прямий (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
