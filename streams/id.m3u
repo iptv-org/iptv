@@ -41,9 +41,7 @@ http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8
 https://mnctv-linier.rctiplus.id/live/eds/MNCTV_2021/live_fta/index.m3u8
 #EXTINF:-1 tvg-id="MyTV.id" status="error",MyTV (720p) [Not 24/7] [Geo-blocked]
 http://playlist.urfan.web.id/x6bnqe/s/s88/S4/mnf.m3u8
-#EXTINF:-1 tvg-id="NET.id" status="error",Net. TV (720p) [Not 24/7] [Geo-blocked]
-http://rr2.dens.tv/s/s08/01.m3u8
-#EXTINF:-1 tvg-id="NET.id" status="error",Net. TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="NET.id" status="online",Net. TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtube.com/user/NetInsights/live
 #EXTINF:-1 tvg-id="OChannel.id" status="error",O Channel (720p) [Geo-blocked]
 http://rr2.dens.tv/s/s41/index.m3u8
@@ -55,8 +53,6 @@ https://rcti-linier.rctiplus.id/live/eds/RCTI_2021/live_fta/index.m3u8
 http://edge.linknetott.swiftserve.com/live/BsNew/amlst:reformedch/playlist.m3u8
 #EXTINF:-1 tvg-id="RRINet.id" status="online",RRI Net (720p) [Not 24/7]
 http://36.89.47.217:11935/rrinet/live/index.m3u8
-#EXTINF:-1 tvg-id="RajawaliTV.id" status="blocked",RTV (720p) [Geo-blocked]
-https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(41869351-4a9c-4e57-b54b-8cf5dfc919e1)/index.m3u8
 #EXTINF:-1 tvg-id="SCTV.id" status="error",SCTV (720p) [Geo-blocked]
 http://rr2.dens.tv/s/s03/01.m3u8
 #EXTINF:-1 tvg-id="SEAToday.id" status="blocked",Sea Today (720p) [Geo-blocked]
@@ -199,6 +195,12 @@ http://118.97.50.107/Content/HLS/Live/Channel(TVRIriau)/index.m3u8
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIriau)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIRiau.id" status="online",TVRI Riau (720p) [Not 24/7]
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIriau)/index.m3u8
+#EXTINF:-1 tvg-id="TVRISport.id" status="online",TVRI Sport (720p)
+http://118.97.50.107/Content/HLS/Live/Channel(TVRI4)/index.m3u8
+#EXTINF:-1 tvg-id="TVRISport.id" status="online",TVRI Sport (720p)
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRI4)/index.m3u8
+#EXTINF:-1 tvg-id="TVRISport.id" status="online",TVRI Sport (720p)
+http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRI4)/index.m3u8
 #EXTINF:-1 tvg-id="TVRISulawesiBarat.id" status="online",TVRI Sulawesi Barat (720p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIsulbarmajene)/index.m3u8
 #EXTINF:-1 tvg-id="TVRISulawesiBarat.id" status="online",TVRI Sulawesi Barat (720p)
@@ -293,12 +295,6 @@ http://103.18.181.69:1935/golive/livestream8/playlist.m3u8
 http://103.18.181.69:1935/golive/livestream10/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiXI.id" status="error",TVR Parlemen Komisi XI (720p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream11/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRISport.id" status="online",TVRI Sport (720p)
-http://118.97.50.107/Content/HLS/Live/Channel(TVRI4)/index.m3u8
-#EXTINF:-1 tvg-id="TVRISport.id" status="online",TVRI Sport (720p)
-http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRI4)/index.m3u8
-#EXTINF:-1 tvg-id="TVRISport.id" status="online",TVRI Sport (720p)
-http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRI4)/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",The Indonesia Channel
 https://cdn3.wowza.com/1/NEtzTTZ4c1FTTUN2/SkJBbVJs/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hits (720p) [Not 24/7]
