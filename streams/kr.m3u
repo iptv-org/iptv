@@ -49,9 +49,9 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://liveen24-manminglobal3.ktcdn.co.kr/liveen24/gcnus_high/playlist.m3u8
 #EXTINF:-1 tvg-id="GugbangTV.kr" status="online",Gugbang TV (1080p) [Not 24/7]
 http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="online",제주 MBC (MBC Jeju) (352p) [Not 24/7]
+#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="error",제주 MBC (MBC Jeju) (352p) [Not 24/7]
 https://5cf58a556f9b2.streamlock.net/live/tv_jejumbc/playlist.m3u8
-#EXTINF:-1 tvg-id="JIBSTV.kr" status="error",JIBS SBS (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JIBSTV.kr" status="online",JIBS SBS (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
 #EXTINF:-1 tvg-id="KBSLiveCamDokDo.kr" status="online",KBS LiveCam DokDo (540p)
 http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
@@ -63,7 +63,7 @@ https://livecdn.fptplay.net/sdb/kbs_hls.smil/playlist.m3u8
 http://211.220.195.200:1935/live/mp4:KnnTV.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="KPlus.sg" status="online",K+ (576p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h08/index.m3u8
-#EXTINF:-1 tvg-id="MBCTV.kr" status="error",MBC (1080p)
+#EXTINF:-1 tvg-id="MBCTV.kr" status="online",MBC (1080p)
 http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
 #EXTINF:-1 tvg-id="MTN.kr" status="online",MTN (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UClErHbdZKUnD1NyIUeQWvuQ/live
@@ -77,7 +77,7 @@ https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
 http://live.worktv.or.kr:1935/live/wowtvlive1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="YeosuMBCTV.kr" status="error",MBC Yeosu (720p) [Not 24/7]
 https://5c3639aa99149.streamlock.net/live_TV/TV/playlist.m3u8
-#EXTINF:-1 tvg-id="YTN.kr" status="online",YTN (1080p)
+#EXTINF:-1 tvg-id="YTN.kr" status="timeout",YTN (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w/live
 #EXTINF:-1 tvg-id="YTNDMB.kr" status="timeout",YTN DMB
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC38IlqMxZ_YtFg3eSGmmJnQ/live
@@ -103,15 +103,15 @@ http://amdlive.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCZdBJIbJz0P9xyFipgOj1fA/live
 #EXTINF:-1 tvg-id="" status="online",한국선거방송 (720p)
 http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index_1.m3u8
-#EXTINF:-1 tvg-id="" status="online",Aniplus (Indonesian Subs) (576p) [Geo-blocked]
-http://210.210.155.35/dr9445/h/h02/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",CJB청주방송 (SBS 淸州) (540p) [Not 24/7]
-http://1.222.207.80:1935/live/cjbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TBC 대구 (SBS 大邱) (540p) [Geo-blocked]
 http://221.157.125.239:1935/live/psike/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",One (Indonesian Sub) (360p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h143/02.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",CJB청주방송 (SBS 淸州) (540p) [Not 24/7]
+http://1.222.207.80:1935/live/cjbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",KBS 1 (1080p) [Not 24/7]
 http://121.130.210.101:9981/stream/channelid/637185705
+#EXTINF:-1 tvg-id="" status="error",Aniplus (Indonesian Subs) (576p) [Geo-blocked]
+http://210.210.155.35/dr9445/h/h02/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",가요TV (1080p) [Not 24/7]
 http://gayotv.net:1935/live/gayotv/playlist.m3u8
