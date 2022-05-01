@@ -18,13 +18,15 @@ https://live.cnbcindonesia.com/livecnbc/smil:cnbctv.smil/master.m3u8
 #EXTINF:-1 tvg-id="CNNIndonesia.id" status="online",CNN Indonesia (720p)
 https://live.cnnindonesia.com/livecnn/smil:cnntv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="GTV.id" status="timeout",GTV (720p)
-https://gtv-linier.rctiplus.id/live/eds/GTV2021/live_fta/index.m3u8
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+https://d322b885qvsbxg.cloudfront.net/GTV2021.m3u8
 #EXTINF:-1 tvg-id="IAmChannel.id" status="online",I AM CHANNEL (576p) [Not 24/7]
 http://iamchannel.org:1935/tes/1/playlist.m3u8
 #EXTINF:-1 tvg-id="Indosiar.id" status="error",Indosiar (720p) [Geo-blocked]
 http://rr2.dens.tv/s/s04/01.m3u8
 #EXTINF:-1 tvg-id="INews.id" status="timeout",iNews (720p)
-https://inews-linier.rctiplus.id/live/eds/INEWS_2021/live_fta/index.m3u8
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+https://d2hfpzcndkyscp.cloudfront.net/INEWS_2021.m3u8
 #EXTINF:-1 tvg-id="KompasTV.id" status="online",Kompas TV (720p)
 https://live-kg.jixie.media/live/kompastv_lhd.m3u8
 #EXTINF:-1 tvg-id="KompasTV.id" status="blocked",Kompas TV (720p)
@@ -38,7 +40,8 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://m.youtube.com/c/Metrotv
 #EXTINF:-1 tvg-id="MetroTV.id" status="online",Metro TV (480p) [Not 24/7]
 http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MNCTV.id" status="timeout",MNCTV (720p)
-https://mnctv-linier.rctiplus.id/live/eds/MNCTV_2021/live_fta/index.m3u8
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+https://d33j155pv2xyba.cloudfront.net/MNCTV_2021.m3u8
 #EXTINF:-1 tvg-id="MyTV.id" status="error",MyTV (720p) [Not 24/7] [Geo-blocked]
 http://playlist.urfan.web.id/x6bnqe/s/s88/S4/mnf.m3u8
 #EXTINF:-1 tvg-id="NET.id" status="online",Net. TV (1080p) [Not 24/7]
@@ -48,7 +51,8 @@ http://rr2.dens.tv/s/s41/index.m3u8
 #EXTINF:-1 tvg-id="OneTV.id" status="online",One TV (720p) [Not 24/7]
 https://liveanevia.mncnow.id/live/eds/SetOne/sa_dash_vmx/SetOne.mpd
 #EXTINF:-1 tvg-id="RCTI.id" status="timeout",RCTI (720p)
-https://rcti-linier.rctiplus.id/live/eds/RCTI_2021/live_fta/index.m3u8
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com/
+https://d35d0ifx19oopq.cloudfront.net/RCTI_2021.m3u8
 #EXTINF:-1 tvg-id="Reformed21.id" status="online",Reformed 21 (540p)
 http://edge.linknetott.swiftserve.com/live/BsNew/amlst:reformedch/playlist.m3u8
 #EXTINF:-1 tvg-id="RRINet.id" status="online",RRI Net (720p) [Not 24/7]
@@ -301,10 +305,6 @@ https://cdn3.wowza.com/1/NEtzTTZ4c1FTTUN2/SkJBbVJs/hls/live/playlist.m3u8
 https://liveanevia.mncnow.id/live/eds/HITS/sa_dash_vmx/HITS.mpd
 #EXTINF:-1 tvg-id="" status="online",Hits Movies (720p) [Not 24/7]
 https://liveanevia.mncnow.id/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd
-#EXTINF:-1 tvg-id="" status="online",iNews (720p)
-https://vcdn2.rctiplus.id/live/eds/inews_fta/live_fta/inews_fta.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",RTV (720p) [Geo-blocked]
-https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(41869351-4a9c-4e57-b54b-8cf5dfc919e1)/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",HIDUP TV (568p)
 http://202.93.133.3:1935/SVR1/ch_hiduptv.stream_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Net. TV (720p) [Not 24/7] [Geo-blocked]
