@@ -1,8 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ALTV.th" status="online",ALTV (1080p)
 https://thaipbs-ujxrch.cdn.byteark.com/live/playlist_1080p/index.m3u8
-#EXTINF:-1 tvg-id="ASTVNews1.th" status="online",ASTV News 1 (720p) [Not 24/7]
-http://news1.live14.com/stream/news1.m3u8
 #EXTINF:-1 tvg-id="Channel5.th" status="online",Channel 5 (1080p)
 http://110.170.117.27:1935/apptv5hd1live/vdo-tv5hd1/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel5.th" status="online",Channel 5 (480p)
@@ -46,8 +44,8 @@ https://dltv-live-edge.catcdn.cloud/dltv15.m3u8
 https://smart-tv.livedoomovie.com:4431/02_golfhd_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="Mono29.th" status="blocked",Mono 29 (1080p) [Geo-blocked]
 https://edge2-bkk.3bb.co.th:9443/MONO29_HLS_1080P/mono29hls_1080TH.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="NBTBangkok.th" status="online",NBT Bangkok (1080p) [Not 24/7]
-http://live.prd.go.th:1935/live/ch1_L.sdp/chunklist.m3u8
+#EXTINF:-1 tvg-id="News1.th" status="online",ASTV News 1 (720p) [Not 24/7]
+http://news1.live14.com/stream/news1.m3u8
 #EXTINF:-1 tvg-id="ThairathTV32.th" status="online",Thairath TV 32 (720p)
 https://live.thairath.co.th/trtv2/playlist.m3u8
 #EXTINF:-1 tvg-id="TruePremierFootballHD1.th" status="blocked" user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.3809.25 Safari/537.36",True Premier Football HD 1 (720p) [Not 24/7]
@@ -71,7 +69,7 @@ https://smart-tv.livedoomovie.com:4431/02_sport5_480p/chunklist.m3u8
 #EXTINF:-1 tvg-id="TrueSport7.th" status="blocked" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36",True Sport 7 (480p Scaled) (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36
 https://smart-tv.livedoomovie.com:4431/02_sport7_480p/chunklist.m3u8
-#EXTINF:-1 tvg-id="TrueSportHD2.th" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36",True Sport HD 2 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TrueSportHD2.th" status="blocked" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36",True Sport HD 2 (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36
 https://smart-tv.livedoomovie.com:4431/02_2sporthd2_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="TrueSportHD3.th" status="blocked" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36",True Sport HD 3 (720p) [Not 24/7]
@@ -83,10 +81,12 @@ https://smart-tv.livedoomovie.com:4431/02_2sporthd4_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="TrueTennisHD.th" status="blocked" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36",True Tennis HD (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36
 https://smart-tv.livedoomovie.com:4431/02_TennisHD_720p/chunklist.m3u8
-#EXTINF:-1 tvg-id="TVMuslim.th" status="online",TV Muslim (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVMuslimThailand.th" status="online",TV Muslim (1080p) [Not 24/7]
 http://vip2.liveanywhere.asia:1935/tvmuslim/tvmuslim/playlist.m3u8
 #EXTINF:-1 tvg-id="WhiteChannel.th" status="online",White Channel (1080p)
 http://symc-cdn.violin.co.th:1935/tndedge/whitechannel/chunklist.m3u8
+#EXTINF:-1 tvg-id="" status="online",NBT Bangkok (1080p) [Not 24/7]
+http://live.prd.go.th:1935/live/ch1_L.sdp/chunklist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Thai PBS (Opt-4) (1080p) [Not 24/7]
 https://thaipbs-live.cdn.byteark.com/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TPTV (286p) [Not 24/7]

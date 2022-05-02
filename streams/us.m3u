@@ -44,12 +44,10 @@ https://abcnews-streams.akamaized.net/hls/live/2023567/abcnews8/master.m3u8
 https://abcnews-streams.akamaized.net/hls/live/2023568/abcnews9/master.m3u8
 #EXTINF:-1 tvg-id="ABCNewsLive10.us" status="online",ABC News Live 10 (720p)
 https://abcnews-streams.akamaized.net/hls/live/2023569/abcnews10/master.m3u8
-#EXTINF:-1 tvg-id="ABTV.us" status="online",AB TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ABTV.us" status="error",AB TV (720p) [Not 24/7]
 https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/abtvusa.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ACCNetwork.us" status="online",ACC Network (720p)
 https://a.jsrdn.com/broadcast/542cb2ce3c/+0000/c.m3u8
-#EXTINF:-1 tvg-id="Actionable.us" status="online",Actionable (720p)
-https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c7e25a1932c8368bdbfd87d/playlist.m3u8
 #EXTINF:-1 tvg-id="ActionMaxEast.us" status="blocked",ActionMax East (360p) [Geo-blocked]
 http://31.220.41.88:8081/live/us-cinemaxaction.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="AdoracionReal.us" status="error",Adoración Real (360p) [Not 24/7]
@@ -145,7 +143,7 @@ https://bcovlive-a.akamaihd.net/8e64fad5ddbe4d3e95b23b0f9c062f03/us-east-1/62407
 http://stream04.amp.csulb.edu:1935/Beach_TV/smil:BeachTV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BeachTVFloridaAlabama.us" status="online",Beach TV Florida & Alabama (720p)
 http://media4.tripsmarter.com:1935/LiveTV/DTVHD/playlist.m3u8
-#EXTINF:-1 tvg-id="BeachTVFloridaAlabama.us",Beach TV Florida & Alabama (720p)
+#EXTINF:-1 tvg-id="BeachTVFloridaAlabama.us" status="online",Beach TV Florida & Alabama (720p)
 https://5ed325193d4e1.streamlock.net:444/LiveTV/DTVHD/playlist.m3u8
 #EXTINF:-1 tvg-id="BeachTVKeyWestFloridaKeys.us" status="online",Beach TV Key West & Florida Keys (720p)
 https://5ed325193d4e1.streamlock.net:444/LiveTV/KTVHD/playlist.m3u8
@@ -239,7 +237,7 @@ https://playout4multirtmp.tulix.tv/live7/Stream1/playlist.m3u8
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=269
 #EXTINF:-1 tvg-id="CanelaTV.us" status="online",Canela TV (720p)
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=65
-#EXTINF:-1 tvg-id="CaptitalOTBBetting.us" status="error",Captital OTB Betting (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CaptitalOTBBetting.us" status="online",Captital OTB Betting (720p) [Not 24/7]
 https://d2up1hmow19bcd.cloudfront.net/livecf/liveracing/playlist.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkAsia.sg" status="timeout",Cartoon Network Asia (720p)
 http://198.16.106.62:8278/streams/d/Cn/playlist.m3u8
@@ -247,7 +245,7 @@ http://198.16.106.62:8278/streams/d/Cn/playlist.m3u8
 http://70.39.83.58:8278/cartoonnetworkhindikdin/playlist.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkLatinAmerica.us" status="timeout",Cartoon Network Latin America
 http://209.91.213.10:8088/play/a00k
-#EXTINF:-1 tvg-id="CartoonNetworkVietnam.vn" status="blocked",Cartoon Network Vietnam (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="CartoonNetworkVietnam.vn" status="error",Cartoon Network Vietnam (720p) [Geo-blocked]
 https://htv-drm-live-cdn.fptplay.net/CDN-FPT02/CARTOON-SD-720p/playlist.m3u8
 #EXTINF:-1 tvg-id="CatholicTV.us" status="online",Catholic TV (720p) [Not 24/7]
 http://catholictvhd-lh.akamaihd.net/i/ctvhd_1@88148/master.m3u8
@@ -322,7 +320,7 @@ https://broadcast.mytvtogo.net/classictv4u/classictv4u/playlist.m3u8
 https://cloudflare.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="CNBC.us" status="blocked",CNBC (1080p)
 https://16live00.akamaized.net/CNBC/index.m3u8
-#EXTINF:-1 tvg-id="CNBCEurope.uk" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",CNBC Europe (480p)
+#EXTINF:-1 tvg-id="CNBCEurope.uk" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",CNBC Europe (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s65/index.m3u8
 #EXTINF:-1 tvg-id="CNBCIndonesia.id" status="online",CNBC Indonesia (720p)
@@ -341,7 +339,7 @@ https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_3_
 https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_4_1064000.m3u8
 #EXTINF:-1 tvg-id="CNN.us" status="blocked",CNN USA (360p)
 http://stream.tvtap.live:8081/live/us-cnn.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="CNNBrasil.br" status="online",CNN Brasil (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="CNNBrasil.br" status="error",CNN Brasil (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCvdwhh_fDyWccR42-rReZLw/live
 #EXTINF:-1 tvg-id="CNNChile.cl" status="timeout",CNN Chile (720p)
 https://unlimited1-cl-movistar.dps.live/cnn/cnn.smil/playlist.m3u8
@@ -405,7 +403,7 @@ https://video.oct.dc.gov/out/u/15_12.m3u8
 http://americaneagle-lh.akamaihd.net/i/AEF_DC1@31049/master.m3u8
 #EXTINF:-1 tvg-id="DistrictofColumbiaNetwork.us" status="online",District of Columbia Network (DCN) (1080p)
 https://video.oct.dc.gov/out/u/DCN.m3u8
-#EXTINF:-1 tvg-id="DittyTV.us" status="online",Ditty TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="DittyTV.us" status="error",Ditty TV (720p) [Not 24/7]
 https://azroe0x-lh.akamaihd.net/i/test_1@775856/master.m3u8
 #EXTINF:-1 tvg-id="DivineVision.us" status="online",Divine Vision (480p) [Not 24/7]
 https://divineplayout-us2.tulix.tv/live/Stream1/.m3u8
@@ -439,14 +437,12 @@ https://a.jsrdn.com/broadcast/7b1451fa52/+0000/c.m3u8
 https://cdn3.wowza.com/1/QmVNUVhTNTZSS3Uz/YWQ0aHpi/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="EWTNCanada.ca" status="online",EWTN Canada (720p) [Not 24/7]
 https://cdn3.wowza.com/1/YW5wSWZiRGd2eFlU/bGV0aVBq/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="EWTNelCanalCatolico.us",EWTN el Canal Católico (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="EWTNelCanalCatolico.us" status="online",EWTN el Canal Católico (720p) [Not 24/7]
 https://cdn3.wowza.com/1/SmVrQmZCUXZhVDgz/b3J3MFJv/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="EWTNEurope.us" status="online",EWTN Europe (720p) [Not 24/7]
 https://cdn3.wowza.com/1/T2NXeHF6UGlGbHY3/WFluRldQ/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="EWTNkatholischesTV.us" status="error",EWTN katholisches TV [Not 24/7]
 https://cdn3.wowza.com/1/NWFLbEVOVjNsQWhP/YnpVbld5/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="ExternalOttera.us" status="online",External Ottera (720p)
-https://otteravision-tg.ottera.tv/live/master.m3u8?channel=tg_tg_us
 #EXTINF:-1 tvg-id="ExtremaTV.us" status="online",Extrema TV (720p)
 http://livestreamcdn.net:1935/ExtremaTV/ExtremaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="EYE95America.us" status="online",EYE95 America (1080p) [Not 24/7]
@@ -467,7 +463,7 @@ https://a.jsrdn.com/broadcast/aee08372e5/+0000/c.m3u8
 https://a.jsrdn.com/broadcast/8b43a16c1e/+0000/c.m3u8
 #EXTINF:-1 tvg-id="Fite.us" status="online",Fite (720p) [Not 24/7]
 https://cdn-cf.fite.tv/linear/fite247/playlist.m3u8
-#EXTINF:-1 tvg-id="FolkTVEast.us" status="online",Folk TV East (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="FolkTV.us" status="online",Folk TV East (480p) [Not 24/7]
 https://584b0aa350b92.streamlock.net/folk-tv/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="FoxBusiness.us" status="blocked",Fox Business [Geo-blocked]
 http://199.66.95.242/1/1172/index.m3u8?token=test
@@ -536,7 +532,7 @@ https://hdtv.prod2.ioio.tv/broker/play/d4b0111a-3dcb-46fb-b2bb-1c27eca5df35.m3u8
 https://vips-livecdn.fptplay.net/hda1/hbo_vhls.smil/chunklist.m3u8
 #EXTINF:-1 tvg-id="HighTimes.us" status="online",High Times (720p)
 https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c7e2503932c8368bdbfd875/playlist.m3u8
-#EXTINF:-1 tvg-id="HighVision.us" status="online",High Vision (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="HighVisionTV.us" status="online",High Vision (1080p) [Not 24/7]
 https://streamer1.connectto.com/HIGHVISION_WEB_1205/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="History.us" status="error",History (540p) [Not 24/7]
 http://s1.mysportz.tv:2082/history/playlist.m3u8
@@ -605,7 +601,7 @@ https://uni8rtmp.tulix.tv/shalomtv-pc/smil:shalomtv.smil/master.m3u8
 https://59ec5453559f0.streamlock.net/JennyLive/JennyLive/playlist.m3u8
 #EXTINF:-1 tvg-id="JewelryTV.us" status="online",Jewelry Television (720p)
 https://cdn3.wowza.com/1/eUdsNEcyMmRvckor/K3pydHZw/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="JewelryTV.us" status="online",Jewelry Television (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JewelryTV.us" status="error",Jewelry Television (720p) [Not 24/7]
 https://wowzaprod134-i.akamaihd.net/hls/live/577814/ccddaf02/playlist.m3u8
 #EXTINF:-1 tvg-id="JewishLifeTV.us" status="error",Jewish Life TV (480p) [Not 24/7]
 https://d3svwuchx5fp62.cloudfront.net/rtplive/smil:jltv.smil/playlist.m3u8
@@ -619,7 +615,7 @@ http://d3lzjtrf5mvf3p.cloudfront.net/playlist.m3u8
 https://vcnplex.teleosmedia.com/linear/ovation/journy/playlist.m3u8
 #EXTINF:-1 tvg-id="JudgeKarensCourt.us" status="online",Judge Karen's Court (540p)
 https://cb5273f195a147f2bcf23544e4495f66.mediatailor.us-east-1.amazonaws.com/v1/master/82ded7a88773aef3d6dd1fedce15ba2d57eb6bca/wse_powr_com_5eb1e7261474f9020c06f9ec/playlist.m3u8
-#EXTINF:-1 tvg-id="JuventudRenovadaenelEspirituSanto.us" status="online",Juventud Renovada en el Espiritu Santo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JuventudRenovadaenelEspirituSanto.us" status="error",Juventud Renovada en el Espiritu Santo (720p) [Not 24/7]
 http://teleredmcp.com:1935/jrestv/jrestv/playlist.m3u8
 #EXTINF:-1 tvg-id="K17JIDT2.us" status="online",3ABN Proclaim! (720p) [Not 24/7]
 https://moiptvhls-i.akamaihd.net/hls/live/652317/secure/master.m3u8
@@ -633,89 +629,89 @@ https://moiptvhls-i.akamaihd.net/hls/live/652315/secure/master.m3u8
 http://184.75.208.98:1935/live/kalemeh/playlist.m3u8
 #EXTINF:-1 tvg-id="KartoonCircus.us" status="online",Kartoon Circus (720p)
 https://simultv.s.llnwi.net/n4s4/KartoonCircus/interlink.m3u8
-#EXTINF:-1 tvg-id="KATUDT1.us" status="online",ABC Portland OR (KATU-DT1) (720p)
+#EXTINF:-1 tvg-id="KATUDT1.us" status="timeout",ABC Portland OR (KATU-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_PORTLAND_OR_KATU/video.m3u8
 #EXTINF:-1 tvg-id="KBPSports.us" status="online",KBP Sports (720p) [Not 24/7]
 https://live-k2302-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KBSVAssyriaSat.us" status="online",KBSV/AssyriaSat (720p) [Not 24/7]
 http://66.242.170.53/hls/live/temp/index.m3u8
-#EXTINF:-1 tvg-id="KCBSDT1.us" status="online",CBS Los Angeles CA (KCBS-DT1) (1080p)
+#EXTINF:-1 tvg-id="KCBSDT1.us" status="timeout",CBS Los Angeles CA (KCBS-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_LOS_ANGELES_CA_KCBS/video.m3u8
 #EXTINF:-1 tvg-id="KCKSLD12.us" status="online",Jewelry TV (KCKS-LD12) (480p)
 https://cdn.igocast.com/channel12_hls/channel12_master.m3u8
-#EXTINF:-1 tvg-id="KCNCDT1.us" status="online",CBS Denver CO (KCNC-DT1) (1080p)
+#EXTINF:-1 tvg-id="KCNCDT1.us" status="timeout",CBS Denver CO (KCNC-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_DENVER_CO_KCNC/video.m3u8
 #EXTINF:-1 tvg-id="KCPQDT1.us" status="timeout",FOX Seattle WA (KCPQ-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_SEATTLE_WA_KCPQ/video.m3u8
-#EXTINF:-1 tvg-id="KCRADT1.us" status="online",NBC Sacramento CA (KCRA-DT1) (720p)
+#EXTINF:-1 tvg-id="KCRADT1.us" status="timeout",NBC Sacramento CA (KCRA-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_SACRAMENTO_CA_KCRA/video.m3u8
-#EXTINF:-1 tvg-id="KDFWDT1.us" status="online",FOX Dallas TX (KDFW-DT1) (720p)
+#EXTINF:-1 tvg-id="KDFWDT1.us" status="timeout",FOX Dallas TX (KDFW-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_DALLAS_TX_KDFW/video.m3u8
-#EXTINF:-1 tvg-id="KDKADT1.us" status="online",CBS Pittsburgh PA (KDKA-DT1) (1080p)
+#EXTINF:-1 tvg-id="KDKADT1.us" status="timeout",CBS Pittsburgh PA (KDKA-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_PITTSBURGH_PA_KDKA/video.m3u8
 #EXTINF:-1 tvg-id="KDTVDT1.us" status="timeout",Univision San Francisco CA (KDTVDT1) [Geo-blocked] (720p)
 https://dai.google.com/linear/hls/event/lTSACKfkQNSrCSBM_hE-mg/master.m3u8
-#EXTINF:-1 tvg-id="KDVRDT1.us" status="online",FOX Denver CO (KDVR-DT1) (720p)
+#EXTINF:-1 tvg-id="KDVRDT1.us" status="timeout",FOX Denver CO (KDVR-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_DENVER_CO_KDVR/video.m3u8
 #EXTINF:-1 tvg-id="KFMBDT1.us" status="online",CBS San Diego CA (KFMB-DT1) (720p)
 http://51.161.118.146:8080/ISG03_CBS_SAN_DIEGO_CA_KFMB/video.m3u8
-#EXTINF:-1 tvg-id="KGODT1.us" status="online",ABC San Francisco CA (KGO-DT1) (720p)
+#EXTINF:-1 tvg-id="KGODT1.us" status="timeout",ABC San Francisco CA (KGO-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_SAN_FRANCISCO_CA_KGO/video.m3u8
-#EXTINF:-1 tvg-id="KGTVDT1.us" status="online",ABC San Diego CA (KGTV-DT1) (720p)
+#EXTINF:-1 tvg-id="KGTVDT1.us" status="timeout",ABC San Diego CA (KGTV-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_SAN_DIEGO_CA_KGTV/video.m3u8
-#EXTINF:-1 tvg-id="KHOUDT1.us",CBS Houston TX (KHOU-DT1) (1080p)
+#EXTINF:-1 tvg-id="KHOUDT1.us" status="timeout",CBS Houston TX (KHOU-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_HOUSTON_TX_KHOU/video.m3u8
 #EXTINF:-1 tvg-id="KidsFlix.us" status="online",KidsFlix (1080p) [Not 24/7]
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=50
-#EXTINF:-1 tvg-id="KINGDT1.us" status="online",NBC Seattle WA (KING-DT1) (720p)
+#EXTINF:-1 tvg-id="KINGDT1.us" status="timeout",NBC Seattle WA (KING-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_SEATTLE_WA_KING/video.m3u8
-#EXTINF:-1 tvg-id="KIRODT1.us" status="online",CBS Seattle WA (KIRO-DT1) (1080p)
+#EXTINF:-1 tvg-id="KIRODT1.us" status="timeout",CBS Seattle WA (KIRO-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_SEATTLE_WA_KIRO/video.m3u8
-#EXTINF:-1 tvg-id="KMGHDT1.us" status="online",ABC Denver CO (KMGH-DT1) (720p)
+#EXTINF:-1 tvg-id="KMGHDT1.us" status="timeout",ABC Denver CO (KMGH-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_DENVER_CO_KMGH/video.m3u8
-#EXTINF:-1 tvg-id="KNBCDT1.us" status="online",NBC Los Angeles CA (KNBC-DT1) (720p)
+#EXTINF:-1 tvg-id="KNBCDT1.us" status="timeout",NBC Los Angeles CA (KNBC-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_LOS_ANGELES_CA_KNBC/video.m3u8
 #EXTINF:-1 tvg-id="KNETCD2.us" status="online",Panarmenian TV (KNET-CD 25.2) (360p) [Not 24/7]
 http://granicusliveus6-a.akamaihd.net/torrance/G0057_005/playlist.m3u8
-#EXTINF:-1 tvg-id="KNTVDT1.us" status="online",NBC San Francisco CA (KNTV-DT1) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KNTVDT1.us" status="timeout",NBC San Francisco CA (KNTV-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_NBC_SAN_FRANCISCO_CA_KNTV/video.m3u8
-#EXTINF:-1 tvg-id="KNXVDT1.us" status="online",ABC Phoenix AZ (KNXV-DT1) (720p)
+#EXTINF:-1 tvg-id="KNXVDT1.us" status="timeout",ABC Phoenix AZ (KNXV-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_PHOENIX_AZ_KNXV/video.m3u8
-#EXTINF:-1 tvg-id="KOMODT1.us" status="online",ABC Seattle WA (KOMO-DT1) (720p)
+#EXTINF:-1 tvg-id="KOMODT1.us" status="timeout",ABC Seattle WA (KOMO-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_SEATTLE_WA_KOMO/video.m3u8
 #EXTINF:-1 tvg-id="KoolTV.us" status="timeout",Kool TV (1080p)
 http://209.182.219.50:1935/roku/roku/playlist.m3u8
 #EXTINF:-1 tvg-id="KOVRDT1.us" status="online",CBS Sacramento CA (KOVR-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_SACRAMENTO_CA_KOVR/tracks-v5a1/mono.m3u8
-#EXTINF:-1 tvg-id="KPHODT1.us" status="online",CBS Phoenix AZ (KPHO-DT1) (1080p)
+#EXTINF:-1 tvg-id="KPHODT1.us" status="error",CBS Phoenix AZ (KPHO-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_PHOENIX_AZ_KPHO/tracks-v5a1/mono.m3u8
 #EXTINF:-1 tvg-id="KPIXDT1.us" status="online",CBS San Francisco CA (KPIX-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_SAN_FRANCISCO_CA_KPIX/video.m3u8
-#EXTINF:-1 tvg-id="KPNXDT1.us" status="online",NBC Phoenix AZ (KPNX-DT1) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KPNXDT1.us" status="timeout",NBC Phoenix AZ (KPNX-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_NBC_PHOENIX_AZ_KPNX/video.m3u8
-#EXTINF:-1 tvg-id="KPRCDT1.us" status="online",NBC Houston TX (KPRC-DT1) (720p)
+#EXTINF:-1 tvg-id="KPRCDT1.us" status="timeout",NBC Houston TX (KPRC-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_HOUSTON_TX_KPRC/video.m3u8
-#EXTINF:-1 tvg-id="KRIVDT1.us" status="online",FOX Houston TX (KRIV-DT1) (720p)
+#EXTINF:-1 tvg-id="KRIVDT1.us" status="timeout",FOX Houston TX (KRIV-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_HOUSTON_TX_KRIV/video.m3u8
-#EXTINF:-1 tvg-id="KSAZDT1.us" status="online",FOX Phoenix AZ (KSAZ-DT1) (720p)
+#EXTINF:-1 tvg-id="KSAZDT1.us" status="timeout",FOX Phoenix AZ (KSAZ-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_PHOENIX_AZ_KSAZ/video.m3u8
-#EXTINF:-1 tvg-id="KSWBDT1.us",FOX San Diego CA (KSWB-DT1) (720p)
+#EXTINF:-1 tvg-id="KSWBDT1.us" status="timeout",FOX San Diego CA (KSWB-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_SAN_DIEGO_CA_KSWB/video.m3u8
 #EXTINF:-1 tvg-id="KTLADT1.us" status="blocked",The CW Los Angeles CA (KTLA-DT1) (720p) [Not 24/7]
 http://trn03.tulix.tv/teleup-N8qwnqgUq2/playlist.m3u8
 #EXTINF:-1 tvg-id="KTRKDT1.us" status="timeout",ABC Houston TX (KTRK-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_ABC_HOUSTON_TX_KTRK/video.m3u8
-#EXTINF:-1 tvg-id="KTTVDT1.us" status="online",FOX Los Angeles CA (KTTV-DT1) (720p)
+#EXTINF:-1 tvg-id="KTTVDT1.us" status="timeout",FOX Los Angeles CA (KTTV-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_LOS_ANGELES_CA_KTTV/video.m3u8
-#EXTINF:-1 tvg-id="KTVTDT1.us" status="online",CBS Dallas TX (KTVT-DT1) (1080p)
+#EXTINF:-1 tvg-id="KTVTDT1.us" status="error",CBS Dallas TX (KTVT-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_DALLAS_TX_KTVT/tracks-v5a1/mono.m3u8
-#EXTINF:-1 tvg-id="KTVUDT1.us" status="online",FOX San Francisco CA (KTVU-DT1) (720p)
+#EXTINF:-1 tvg-id="KTVUDT1.us" status="timeout",FOX San Francisco CA (KTVU-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_SAN_FRANCISCO_CA_KTVU/video.m3u8
-#EXTINF:-1 tvg-id="KTXLDT1.us" status="online",FOX Sacramento CA (KTXL-DT1) (720p)
+#EXTINF:-1 tvg-id="KTXLDT1.us" status="timeout",FOX Sacramento CA (KTXL-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_SACRAMENTO_CA_KTXL/video.m3u8
 #EXTINF:-1 tvg-id="KweliTV.us" status="online",Kweli TV (720p)
 https://a.jsrdn.com/broadcast/9c897f1973/+0000/c.m3u8
-#EXTINF:-1 tvg-id="KXTVDT1.us" status="online",ABC Sacramento CA (KXTV-DT1) (720p)
+#EXTINF:-1 tvg-id="KXTVDT1.us" status="timeout",ABC Sacramento CA (KXTV-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_SACRAMENTO_CA_KXTV/video.m3u8
 #EXTINF:-1 tvg-id="LakeHavasuCity4.us" status="online",Lake Havasu City 4 (240p) [Not 24/7]
 https://granicusliveus3-a.akamaihd.net/lakehavasucity/G0643_002/playlist.m3u8
@@ -723,7 +719,7 @@ https://granicusliveus3-a.akamaihd.net/lakehavasucity/G0643_002/playlist.m3u8
 http://68.235.35.243:1935/lamegamundial/lamegamundial2/playlist.m3u8
 #EXTINF:-1 tvg-id="LaMegaMundial.us" status="online",La Mega Mundial (720p) [Not 24/7]
 https://59514edd5dd8e.streamlock.net/lamegamundial/lamegamundial2/playlist.m3u8
-#EXTINF:-1 tvg-id="LaoThaiUSTV.us" status="online",Lao-Thai US TV (720p)
+#EXTINF:-1 tvg-id="LaoThaiTVHD.us" status="online",Lao-Thai US TV (720p)
 https://livefta.malimarcdn.com/ftaedge00/laothaius.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="LatinosNCTV.us" status="timeout",Latinos NCTV (480p) [Not 24/7]
 https://live.latinosnc.tv:1443/MRR/live/playlist.m3u8
@@ -731,14 +727,12 @@ https://live.latinosnc.tv:1443/MRR/live/playlist.m3u8
 https://lawcrime.s.llnwi.net/h72/lawcrimech2/playlist_scte.m3u8
 #EXTINF:-1 tvg-id="LaxSportsNetworkTV.us" status="online",Lax Sports Network TV (720p)
 https://1840769862.rsc.cdn77.org/FTF/LSN_SCTE.m3u8
-#EXTINF:-1 tvg-id="LeominsterTVEducational.us" status="error",Leominster TV Educational (720p)
+#EXTINF:-1 tvg-id="LeominsterTVEducational.us" status="online",Leominster TV Educational (720p)
 http://edu.leominster.tv/Edu/smil:Edu.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="LeominsterTVGovernment.us" status="error",Leominster TV Government (720p)
+#EXTINF:-1 tvg-id="LeominsterTVGovernment.us" status="online",Leominster TV Government (720p)
 http://gov.leominster.tv/Gov/smil:Gov.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="LeominsterTVPublic.us" status="error",Leominster TV Public (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LeominsterTVPublic.us" status="online",Leominster TV Public (720p) [Not 24/7]
 http://gov.leominster.tv/Pub/smil:Pub.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="LevelOne.us" status="timeout",Level One
-https://stitcheraws.unreel.me/wse-node04.powr.com/live/5af61be7d5eeee7af3d1db47/playlist.m3u8
 #EXTINF:-1 tvg-id="LexTV.us" status="online",Lex TV (720p)
 https://granicusliveus2-a.akamaihd.net/lfucg/G0264_002/playlist.m3u8
 #EXTINF:-1 tvg-id="Lifestyle.us" status="error",Lifestyle (720p) [Not 24/7]
@@ -759,7 +753,7 @@ https://5aafcc5de91f1.streamlock.net/logoschannel.com/logostv.smil/playlist.m3u8
 https://58cc65c534c67.streamlock.net/logoschannel.com/logoshym/playlist.m3u8
 #EXTINF:-1 tvg-id="LogosTVEnglish.us" status="online",Logos TV English (1080p) [Not 24/7]
 https://5aafcc5de91f1.streamlock.net/logoschannel.com/logoseng/playlist.m3u8
-#EXTINF:-1 tvg-id="LoneStar.us",Lone Star (960p)
+#EXTINF:-1 tvg-id="LoneStar.us" status="online",Lone Star (960p)
 https://a.jsrdn.com/broadcast/5oWx2VgEmK/+0000/c.m3u8
 #EXTINF:-1 tvg-id="Loop80sWest.us" status="online",Loop 80s West (1080p) [Geo-blocked]
 https://a500d902bdf94ea69ad343720add6036.mediatailor.us-west-2.amazonaws.com/v1/master/6b8beeb9ed833d048c8c8155a25a28fe617c5474/80s_party_littlstar/master.m3u8
@@ -803,7 +797,7 @@ https://90a0d12cbaff4b959ea24bb8a3560adf.mediatailor.us-west-2.amazonaws.com/v1/
 http://d2dw21aq0j0l5c.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-id="MadDogandMerrill.us" status="online",Mad Dog and Merrill (540p) [Not 24/7]
 https://rpn1.bozztv.com/36bay2/gusa-mwg/playlist.m3u8
-#EXTINF:-1 tvg-id="MajestadTelevision.us" status="online",Majestad Televisión (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="MajestadTV.us" status="online",Majestad Televisión (480p) [Not 24/7]
 https://5b3050bb1b2d8.streamlock.net/majestadtv/majestadtv/playlist.m3u8
 #EXTINF:-1 tvg-id="MarvelHQ.us" status="timeout",Marvel HQ (1080p)
 https://feed.play.mv/live/10005200/niZoVrR2vD/master.m3u8
@@ -861,7 +855,7 @@ https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8
 https://livecdn.fptplay.net/foxlive/natgeohd_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NationalGeographicWildMiddleEast.us" status="error",National Geographic Wild Middle East (720p) [Not 24/7]
 http://50.7.161.82:8278/streams/d/Natgeowild/playlist.m3u8
-#EXTINF:-1 tvg-id="NationalGeographicWildRussia.ru" status="online",National Geographic Wild Russia (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="NationalGeographicWildRussia.ru" status="timeout",National Geographic Wild Russia (1080p) [Not 24/7]
 https://sc.id-tv.kz/NatGeoWildHD_34_35.m3u8
 #EXTINF:-1 tvg-id="NAUTVNorthernArizonaUniversity.us" status="online",NAU-TV Northern Arizona University (720p) [Not 24/7]
 http://stream.ec.nau.edu/live/amlst:channelfour/playlist.m3u8
@@ -930,7 +924,29 @@ http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
 https://5b0f5374bdf0c.streamlock.net:444/LiveTV/NOTVHD/playlist.m3u8
 #EXTINF:-1 tvg-id="NRBTV.us" status="online",NRB TV (480p)
 https://uni6rtmp.tulix.tv/nrbnetwork/myStream.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="NYXT.us" status="online",NYXT (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="NTDTV.us" status="online",NTD TV (New Tang Dynasty Television)
+http://live.ntdimg.com/live400/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDTV.us" status="online",NTD TV (New Tang Dynasty Television)
+http://live2.ntdimg.com/live330/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDTV.us" status="online",NTD TV (New Tang Dynasty Television)
+http://cnhls.ntdtv.com/cn/live400/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDTV.us" status="online",NTD TV (New Tang Dynasty Television)
+http://live2.ntdimg.com/aplive200/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDTV.us" status="online",NTD TV (New Tang Dynasty Television)
+http://live.ntdimg.com/uwlive990/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDTV.us" status="online",NTD TV (New Tang Dynasty Television)
+http://live.ntdimg.com/mllive860/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDTV.us" status="online",NTD TV (New Tang Dynasty Television)
+http://live.ntdimg.com/cwlive220/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDTV.us" status="online",NTD TV (New Tang Dynasty Television)
+http://live.ntdimg.com/sflive990/playlist.m3u8
+#EXTINF:-1 tvg-id="NTDEast.us" status="online",NTD TV East (New Tang Dynasty Television)
+https://ntd02.akamaized.net/NTDA/index.m3u8
+#EXTINF:-1 tvg-id="NTDWest.us" status="online",NTD TV West (New Tang Dynasty Television)
+https://ntd02.akamaized.net/NTD-West/index.m3u8
+#EXTINF:-1 tvg-id="NTDUK.us" status="online",NTD TV UK (New Tang Dynasty Television)
+https://ntd02.akamaized.net/NTD-UK/index.m3u8
+#EXTINF:-1 tvg-id="NYXT.us" status="error",NYXT (1080p) [Not 24/7]
 https://api.new.livestream.com/accounts/19770665/events/5522162/live.m3u8
 #EXTINF:-1 tvg-id="OANEncore.us" status="online",OAN Encore (720p) [Geo-blocked]
 https://cdn.herringnetwork.com/80A4DFF/oane_oregon/OAN_Encore.m3u8
@@ -1026,10 +1042,6 @@ https://live-qvcuk.simplestreamcdn.com/live/qvcuk_extra_clean/bitrate1.isml/live
 https://live-qvcuk.simplestreamcdn.com/hera/remote/qvcuk_primary_sdi1/live.m3u8
 #EXTINF:-1 tvg-id="QVCUKStyle.us" status="online",QVC UK Style (540p)
 http://live.qvcuk.simplestreamcdn.com/live/qvcuk_style_clean/bitrate1.isml/live.m3u8
-#EXTINF:-1 tvg-id="RadioInmaculada.us" status="error",Radio Inmaculada (1080p) [Not 24/7]
-https://tv2.fastcast4u.com:3594/live/vsojgreilive.m3u8
-#EXTINF:-1 tvg-id="RadioRitmo.us" status="online",Radio Ritmo (1080p) [Not 24/7]
-https://59514edd5dd8e.streamlock.net/lax/lax/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioUTV.us" status="online",Radio U TV (720p) [Not 24/7]
 https://cdnlive.radiou.com/LS-ATL-43240-1/index.m3u8
 #EXTINF:-1 tvg-id="RadioyTelevisionMarti.us" status="error",Radio y Televisión Martí (1080p)
@@ -1058,7 +1070,7 @@ https://broadcast.mytvtogo.net/SciFiTV4u/SciFiTV4u/playlist.m3u8
 https://content.uplynk.com/channel/3e4b9cada2b74cf18977298804134a36.m3u8
 #EXTINF:-1 tvg-id="SeattleChannel.us" status="error",Seattle Channel (720p) [Not 24/7]
 https://wowzaprod188-i.akamaihd.net/hls/live/730322/3fa8d5f5/playlist.m3u8
-#EXTINF:-1 tvg-id="SentTVGlobalNetwork.us",Sent TV Global Network (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SentTVGlobalNetwork.us" status="online",Sent TV Global Network (720p) [Not 24/7]
 https://rpn1.bozztv.com/36bay2/gusa-stgn/mono.m3u8
 #EXTINF:-1 tvg-id="SGTN49.us" status="timeout",Sent TV Global Network Atlanta (SGTN-49) (720p)
 http://stgn-49.tulix.tv/live19/Stream1/playlist.m3u8
@@ -1076,17 +1088,15 @@ https://cdn-shop-lc-01.akamaized.net/Content/DASH_DASH/Live/channel(ott)/master.
 https://shoutfactory-shoutfactory-zype.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Skwad.us" status="online",SKWAD (1080p)
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=71
-#EXTINF:-1 tvg-id="Slimo.us" status="online",Slimo (540p)
-https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c7e2783932c8368bdbfd8a5/playlist.m3u8
 #EXTINF:-1 tvg-id="Smile.us" status="online",Smile (540p) [Not 24/7]
 https://api.new.livestream.com/accounts/27460990/events/8266916/live.m3u8
 #EXTINF:-1 tvg-id="SoniderosTV.us" status="error",Sonideros TV (360p) [Not 24/7]
 https://tv2.fastcast4u.com:3728/live/soniderostvlive.m3u8
-#EXTINF:-1 tvg-id="SpiritTV.us",Spirit TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SpiritTV.us" status="online",Spirit TV (720p) [Not 24/7]
 https://cdnlive.myspirit.tv/LS-ATL-43240-2/index.m3u8
 #EXTINF:-1 tvg-id="SportsGrid.us" status="blocked",SportsGrid (720p)
 https://playout4multirtmp.tulix.tv/live6/Stream1/playlist.m3u8
-#EXTINF:-1 tvg-id="SportskoolTV.us" status="online",Sportskool TV (720p)
+#EXTINF:-1 tvg-id="Sportskool.us" status="online",Sportskool TV (720p)
 https://a.jsrdn.com/broadcast/fabeab4b08/+0000/c.m3u8
 #EXTINF:-1 tvg-id="SpydarTV.us" status="online",Spydar TV (720p)
 https://simultv.s.llnwi.net/n4s4/Spydar/interlink.m3u8
@@ -1198,11 +1208,6 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=37
 http://content.uplynk.com/channel/04cce35dcd994bbc82d61805ae67a65f.m3u8
 #EXTINF:-1 tvg-id="TopStoriesbyNewsy.us" status="online",Top Stories by Newsy (720p)
 https://content.uplynk.com/channel/33c48f602cfd4474b957eb4ad999caf8.m3u8
-#EXTINF:-1 tvg-id="TPTNow.us" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36",TPT Now KTCA-DT5 (720p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
-https://api.new.livestream.com/accounts/12638076/events/8488790/live.m3u8
-#EXTINF:-1 tvg-id="TranquilThunderstorms.us" status="online",Tranquil Thunderstorms (720p)
-https://a.jsrdn.com/broadcast/18b42f9aef/+0000/c.m3u8
 #EXTINF:-1 tvg-id="TrinityChannel.us" status="online",Trinity Channel (480p) [Not 24/7]
 http://rtmp1.abnsat.com/hls/trinity.m3u8
 #EXTINF:-1 tvg-id="TruTVAmericaLatina.us" status="error",Tru TV América Latina
@@ -1281,7 +1286,7 @@ https://rpn1.bozztv.com/36bay2/gusa-tvstn/index.m3u8
 https://rpn1.bozztv.com/36bay2/gusa-TVSTodayHomeEntertainment/index.m3u8
 #EXTINF:-1 tvg-id="TVSTravel.us" status="online",TVS Travel Network (720p) [Not 24/7]
 https://rpn1.bozztv.com/36bay2/gusa-tvstravel/index.m3u8
-#EXTINF:-1 tvg-id="TVSTurbo.us",TVS Turbo (360p)
+#EXTINF:-1 tvg-id="TVSTurbo.us" status="online",TVS Turbo (360p)
 https://rpn1.bozztv.com/36bay2/gusa-tvsturbo/index.m3u8
 #EXTINF:-1 tvg-id="TVSWesternMovie.us" status="online",TVS Western Movie (270p)
 https://rpn1.bozztv.com/36bay2/gusa-tvswesternmovies/index.m3u8
@@ -1327,15 +1332,15 @@ https://uni01rtmp.tulix.tv/watc57/watc57/playlist.m3u8
 https://content.uplynk.com/channel/ce3b524c342247549e996e7d3a977157.m3u8
 #EXTINF:-1 tvg-id="WatchItScream.us" status="online",Watch It Scream! (720p)
 https://content.uplynk.com/channel/29aff31fecb848ab9044369db2d61642.m3u8
-#EXTINF:-1 tvg-id="WBALDT1.us" status="online",NBC Baltimore MD (WBAL-DT1) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="WBALDT1.us" status="timeout",NBC Baltimore MD (WBAL-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_NBC_BALTIMORE_MD_WBAL/video.m3u8
 #EXTINF:-1 tvg-id="WBBMDT1.us" status="online",CBS Chicago IL (WBBM-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_CHICAGO_IL_WBBM/tracks-v5a1/mono.m3u8
-#EXTINF:-1 tvg-id="WBTVDT1.us" status="online",CBS Charlotte NC (WBTV-DT1) (720p)
+#EXTINF:-1 tvg-id="WBTVDT1.us" status="error",CBS Charlotte NC (WBTV-DT1) (720p)
 http://51.161.118.146:8080/ISG03_CBS_CHARLOTTE_NC_WBTV/tracks-v4a1/mono.m3u8
 #EXTINF:-1 tvg-id="WBZDT1.us" status="online",CBS Boston MA (WBZ-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_BOSTON_MA_WBZ/video.m3u8
-#EXTINF:-1 tvg-id="WCNCDT1.us" status="online",NBC Charlotte NC (WCNC-DT1) (720p)
+#EXTINF:-1 tvg-id="WCNCDT1.us" status="timeout",NBC Charlotte NC (WCNC-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_CHARLOTTE_NC_WCNC/video.m3u8
 #EXTINF:-1 tvg-id="WCTVDT2.us" status="blocked",MeTV (WCTV-DT2) Tallahassee FL (480p)
 https://5e6cea03e25b6.streamlock.net/live/WCTVDT2.stream/playlist.m3u8
@@ -1345,15 +1350,15 @@ http://51.161.118.146:8080/ISG03_ABC_BOSTON_MA_WCVB/video.m3u8
 https://16live00.akamaized.net/CW/index.m3u8
 #EXTINF:-1 tvg-id="WDIVDT1.us" status="online",NBC Detroit MI (WDIV-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_DETROIT_MI_WDIV/video.m3u8
-#EXTINF:-1 tvg-id="WDJTDT1.us" status="online",CBS Milwaukee WI (WDJT-DT1) (1080p)
+#EXTINF:-1 tvg-id="WDJTDT1.us" status="timeout",CBS Milwaukee WI (WDJT-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_MILWAUKEE_WI_WDJT/video.m3u8
-#EXTINF:-1 tvg-id="WDSUDT1.us" status="online",NBC New Orleans LA (WDSU-DT1) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="WDSUDT1.us" status="timeout",NBC New Orleans LA (WDSU-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_NBC_NEW_ORLEANS_LA_WDSU/video.m3u8
 #EXTINF:-1 tvg-id="WESHDT1.us" status="online",NBC Orlando FL (WESH-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_ORLANDO_FL_WESH/video.m3u8
 #EXTINF:-1 tvg-id="Westerns4U.us" status="error",Westerns 4U (480p) [Not 24/7]
 https://broadcast.mytvtogo.net/westerntv4u/westerntv4u/playlist.m3u8
-#EXTINF:-1 tvg-id="WEWSDT1.us" status="online",ABC Cleveland OH (WEWS-DT1) (720p)
+#EXTINF:-1 tvg-id="WEWSDT1.us" status="timeout",ABC Cleveland OH (WEWS-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_CLEVELAND_OH_WEWS/video.m3u8
 #EXTINF:-1 tvg-id="WFAADT1.us" status="online",ABC Dallas TX (WFAA-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_DALLAS_TX_WFAA/video.m3u8
@@ -1361,19 +1366,19 @@ http://51.161.118.146:8080/ISG03_ABC_DALLAS_TX_WFAA/video.m3u8
 http://hls1.livestreamingcdn.com:1935/livecdn631/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="WFLDDT1.us" status="timeout",FOX Chicago IL (WFLD-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_CHICAGO_IL_WFLD/video.m3u8
-#EXTINF:-1 tvg-id="WFORDT1.us" status="online",CBS Miami FL (WFOR-DT1) (1080p)
-http://51.161.118.146:8080/ISG03_CBS_MIAMI_FL_WFOR/tracks-v5a1/mono.m3u8
 #EXTINF:-1 tvg-id="WFORDT1.us" status="error",CBS (WFOR-DT1) Miami FL (1080p)
 http://38.127.211.18/live/c2eds/CBS/HLS/index.m3u8
+#EXTINF:-1 tvg-id="WFORDT1.us" status="error",CBS Miami FL (WFOR-DT1) (1080p)
+http://51.161.118.146:8080/ISG03_CBS_MIAMI_FL_WFOR/tracks-v5a1/mono.m3u8
 #EXTINF:-1 tvg-id="WFOXDT1.us" status="online",FOX Jacksonville FL (WFOX-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_JACKSONVILLE_FL_WFOX/video.m3u8
 #EXTINF:-1 tvg-id="WFSBDT1.us" status="online",CBS Hatford CT (WFSB-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_HARTFORD_CT_WFSB/video.m3u8
-#EXTINF:-1 tvg-id="WFTVDT1.us" status="online",ABC Orlando FL (WFTVD-DT1) (720p)
+#EXTINF:-1 tvg-id="WFTVDT1.us" status="timeout",ABC Orlando FL (WFTVD-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_ORLANDO_FL_WFTV/video.m3u8
-#EXTINF:-1 tvg-id="WFXTDT1.us" status="online",FOX Boston MA (WAGA-DT1) (720p)
+#EXTINF:-1 tvg-id="WFXTDT1.us" status="timeout",FOX Boston MA (WAGA-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_BOSTON_MA_WFXT/video.m3u8
-#EXTINF:-1 tvg-id="WGCLDT1.us" status="online",CBS Atlanta GA (WGCL-DT1) (720p)
+#EXTINF:-1 tvg-id="WGCLDT1.us" status="error",CBS Atlanta GA (WGCL-DT1) (720p)
 http://51.161.118.146:8080/ISG03_CBS_ATLANTA_GA_WGCL/tracks-v4a1/mono.m3u8
 #EXTINF:-1 tvg-id="WGNDT1.us" status="blocked",WGN Chicago IL (WGN-TV1) (720p)
 http://trn03.tulix.tv/teleup-mBm5MQ50rA/playlist.m3u8
@@ -1381,9 +1386,9 @@ http://trn03.tulix.tv/teleup-mBm5MQ50rA/playlist.m3u8
 https://stream.swagit.com/live-edge/whiteplainsny/smil:std-4x3-1-b/playlist.m3u8
 #EXTINF:-1 tvg-id="WISCDT2.us" status="online",My Madison TV (WISC-DT2) (720p)
 https://ad-playlistserver.aws.syncbak.com/playlist/13613390/master.m3u8?access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IkdyYXkyMDE2MDgyOSJ9.eyJtaWQiOjEzNjEzMzkwLCJtZDUiOiI2Y2M5MzczYjIxZWIwNzQ4ZDA0YTRlYzYyMjU2YjBhMiIsImlhdCI6MTQ5NzM4MTU5NywiaXNzIjoiU3luY2JhayIsInN1YiI6IkdyYXkifQ.qJPiMCbnGjAn9wgPrGjVl3M9Xfc4CVSyoZTZ5OH-1jo
-#EXTINF:-1 tvg-id="WISNDT1.us" status="online",ABC Milwaukee WI (WISN-DT1) (720p)
+#EXTINF:-1 tvg-id="WISNDT1.us" status="timeout",ABC Milwaukee WI (WISN-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_MILWAUKEE_WI_WISN/video.m3u8
-#EXTINF:-1 tvg-id="WITIDT1.us" status="online",FOX Milwaukee WI (WITI-DT1) (720p)
+#EXTINF:-1 tvg-id="WITIDT1.us" status="timeout",FOX Milwaukee WI (WITI-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_MILWAUKEE_WI_WITI/video.m3u8
 #EXTINF:-1 tvg-id="WJACDT1.us" status="blocked",NBC Altoona PA (WJAC1) (720p)
 http://trn03.tulix.tv/teleup-nbc-wgal-new1/playlist.m3u8
@@ -1397,9 +1402,9 @@ http://51.161.118.146:8080/ISG03_ABC_WASHINGTON_DC_WJLA/video.m3u8
 http://51.161.118.146:8080/ISG03_FOX_CLEVELAND_OH_WJW/video.m3u8
 #EXTINF:-1 tvg-id="WJZDT1.us" status="online",CBS Baltimore MD (WJZ-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_BALTIMORE_MD_WJZ/video.m3u8
-#EXTINF:-1 tvg-id="WKMGDT1.us" status="online",CBS Orlando FL (WKMG-DT1) (1080p)
+#EXTINF:-1 tvg-id="WKMGDT1.us" status="timeout",CBS Orlando FL (WKMG-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_ORLANDO_FL_WKMG/video.m3u8
-#EXTINF:-1 tvg-id="WKRNDT1.us" status="online",ABC Nashville TN (WKRN-DT1) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="WKRNDT1.us" status="timeout",ABC Nashville TN (WKRN-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_ABC_NASHVILLE_TN_WKRN/video.m3u8
 #EXTINF:-1 tvg-id="WKYCDT1.us" status="online",NBC Cleveland OH (WKYC-DT1) (540p)
 http://51.161.118.146:8080/ISG03_NBC_CLEVELAND_OH_WKYC/video.m3u8
@@ -1409,31 +1414,31 @@ http://wlngstudiowebcam.srfms.com:1935/wlngstudiowebcam/livestream/playlist.m3u8
 http://51.161.118.146:8080/ISG03_ABC_CHICAGO_IL_WLS/video.m3u8
 #EXTINF:-1 tvg-id="WLWTDT2.us" status="blocked",MeTV (WLWT-DT2) Cincinnati OH (480p)
 https://16live00.akamaized.net/ME_TV_EAST/index.m3u8
-#EXTINF:-1 tvg-id="WMAQDT1.us" status="online",NBC Chicago IL (WMAQ-DT1) (720p)
+#EXTINF:-1 tvg-id="WMAQDT1.us" status="error",NBC Chicago IL (WMAQ-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_CHICAGO_IL_WMAQ/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="WOFLDT1.us" status="online",FOX Orlando FL (WOFL-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_ORLANDO_FL_WOFL/video.m3u8
-#EXTINF:-1 tvg-id="WOIODT1.us" status="online",CBS Cleveland OH (WOIO-DT1) (1080p)
+#EXTINF:-1 tvg-id="WOIODT1.us" status="error",CBS Cleveland OH (WOIO-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_CLEVELAND_OH_WOIO/tracks-v5a1/mono.m3u8
 #EXTINF:-1 tvg-id="WorldChannel.us" status="online",PBS World Channel (480p)
 https://cs.ebmcdn.net/eastbay-live-hs-1/apt/mp4:apt-world/playlist.m3u8
-#EXTINF:-1 tvg-id="WPLGDT1.us" status="online",ABC Miami FL (WPLG-DT1) (720p)
-http://51.161.118.146:8080/ISG03_ABC_MIAMI_FL_WPLG/video.m3u8
 #EXTINF:-1 tvg-id="WPLGDT1.us" status="blocked",abc (WPLG-DT1) Miami FL (720p)
 https://16live00.akamaized.net/ABC_EAST/index.m3u8
+#EXTINF:-1 tvg-id="WPLGDT1.us" status="timeout",ABC Miami FL (WPLG-DT1) (720p)
+http://51.161.118.146:8080/ISG03_ABC_MIAMI_FL_WPLG/video.m3u8
 #EXTINF:-1 tvg-id="WPLGDT1.us" status="error",abc (WPLG-DT1) Miami FL (720p)
 http://38.127.211.18/live/c2eds/ABC/HLS/index.m3u8
 #EXTINF:-1 tvg-id="WPSUDT1.us" status="blocked",PBS (WPSU-DT1) Altoona PA (720p)
 http://trn03.tulix.tv/lnABbIUBrO/playlist.m3u8
-#EXTINF:-1 tvg-id="WPXIDT1.us" status="online",NBC Pittsburgh PA (WPXI-DT1) (720p)
+#EXTINF:-1 tvg-id="WPXIDT1.us" status="timeout",NBC Pittsburgh PA (WPXI-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_PITTSBURGH_PA_WPXI/video.m3u8
-#EXTINF:-1 tvg-id="WRTVDT1.us" status="online",ABC Indianapolis IN (WRTV-DT1) (720p)
+#EXTINF:-1 tvg-id="WRTVDT1.us" status="timeout",ABC Indianapolis IN (WRTV-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_INDIANAPOLIS_IN_WRTV/video.m3u8
 #EXTINF:-1 tvg-id="WSBDT1.us" status="timeout",ABC Atlanta GA (WSB-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_ABC_ATLANTA_GA_WSB/video.m3u8
 #EXTINF:-1 tvg-id="WSBSDT1.us" status="online",Mega TV Key West FL (WSBS-DT1) (720p)
 https://livestream.lamusica.com/megatvP320/ngrp:megatvP320_all/playlist.m3u8
-#EXTINF:-1 tvg-id="WSMVDT1.us" status="online",NBC Nashville TN (WSMV-DT1) (576p)
+#EXTINF:-1 tvg-id="WSMVDT1.us" status="timeout",NBC Nashville TN (WSMV-DT1) (576p)
 http://51.161.118.146:8080/ISG03_NBC_NASHVILLE_TN_WSMV/video.m3u8
 #EXTINF:-1 tvg-id="WSOCDT1.us" status="online",ABC Charlotte NC (WSOC-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_CHARLOTTE_NC_WSOC/video.m3u8
@@ -1441,25 +1446,25 @@ http://51.161.118.146:8080/ISG03_ABC_CHARLOTTE_NC_WSOC/video.m3u8
 http://51.161.118.146:8080/ISG03_FOX_MIAMI_FL_WSVN/video.m3u8
 #EXTINF:-1 tvg-id="WSVNDT1.us" status="error",Fox (WSVN-DT1) Miami FL (720p)
 http://38.127.211.18/live/c2eds/FOX/HLS/index.m3u8
-#EXTINF:-1 tvg-id="WSYXDT1.us" status="online",ABC Columbus OH (WSYX-DT1) (720p)
+#EXTINF:-1 tvg-id="WSYXDT1.us" status="timeout",ABC Columbus OH (WSYX-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_COLUMBUS_OH_WSYX/video.m3u8
 #EXTINF:-1 tvg-id="WTAEDT1.us" status="timeout",ABC Pittsburgh PA (WTAE-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_ABC_PITTSBURGH_PA_WTAE/video.m3u8
 #EXTINF:-1 tvg-id="WTAJDT1.us" status="blocked",CBS Altoona PA (WTAJ1) (720p)
 http://trn03.tulix.tv/teleup-cbs-whp-new1/playlist.m3u8
-#EXTINF:-1 tvg-id="WTHRDT1.us" status="online",NBC Indianapolis IN (WTHR-DT1) (720p)
+#EXTINF:-1 tvg-id="WTHRDT1.us" status="timeout",NBC Indianapolis IN (WTHR-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_INDIANAPOLIS_IN_WTHR/video.m3u8
-#EXTINF:-1 tvg-id="WTICDT1.us" status="online",FOX Hartford CT (WTIC-DT1) (720p)
+#EXTINF:-1 tvg-id="WTICDT1.us" status="timeout",FOX Hartford CT (WTIC-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_HARTFORD_CT_WTIC/video.m3u8
-#EXTINF:-1 tvg-id="WTSPDT1.us" status="online",CBS Tampa FL (WTSP-DT1) (1080p)
+#EXTINF:-1 tvg-id="WTSPDT1.us" status="error",CBS Tampa FL (WTSP-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_TAMPA_FL_WTSP/tracks-v5a1/mono.m3u8
 #EXTINF:-1 tvg-id="WTTGDT1.us" status="timeout",FOX Washington DC (WTTG-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_WASHINGTON_DC_WTTG/video.m3u8
-#EXTINF:-1 tvg-id="WTVDDT1.us" status="online",ABC Raleigh NC (WTVD-DT1) (720p)
+#EXTINF:-1 tvg-id="WTVDDT1.us" status="timeout",ABC Raleigh NC (WTVD-DT1) (720p)
 http://51.161.118.146:8080/ISG03_ABC_RALEIGH_NC_WTVD/video.m3u8
-#EXTINF:-1 tvg-id="WTVFDT1.us" status="online",CBS Nashville TN (WTVF-DT1) (1080p)
+#EXTINF:-1 tvg-id="WTVFDT1.us" status="error",CBS Nashville TN (WTVF-DT1) (1080p)
 http://51.161.118.146:8080/ISG03_CBS_NASHVILLE_TN_WTVF/tracks-v5a1/mono.m3u8
-#EXTINF:-1 tvg-id="WTVJDT1.us" status="online",NBC Miami FL (WTVJ-DT1) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="WTVJDT1.us" status="timeout",NBC Miami FL (WTVJ-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_NBC_MIAMI_FL_WTVJ/video.m3u8
 #EXTINF:-1 tvg-id="WTVJDT1.us" status="error",NBC (WTVJ-DT1) Miami FL (1080p)
 http://38.127.211.18/live/c2eds/NBC/HLS/index.m3u8
@@ -1469,7 +1474,7 @@ http://51.161.118.146:8080/ISG03_CBS_WASHINGTON_DC_WUSA/video.m3u8
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=73
 #EXTINF:-1 tvg-id="WVITDT1.us" status="online",NBC Hartford CT (WVIT-DT1) (720p)
 http://51.161.118.146:8080/ISG03_NBC_HARTFORD_CT_WVIT/video.m3u8
-#EXTINF:-1 tvg-id="WVUEDT1.us" status="online",FOX New Orleans LA (WVUE-DT1) (720p)
+#EXTINF:-1 tvg-id="WVUEDT1.us" status="timeout",FOX New Orleans LA (WVUE-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_NEW_ORLEANS_LA_WVUE/video.m3u8
 #EXTINF:-1 tvg-id="WWCPDT1.us" status="blocked",FOX Altoona PA (WWCP1) (720p)
 http://trn03.tulix.tv/teleup-fox-wpmt-new1/playlist.m3u8
@@ -1481,11 +1486,11 @@ https://16live00.akamaized.net/CBS_EAST/index.m3u8
 http://51.161.118.146:8080/ISG03_CBS_NEW_ORLEANS_LA_WWL/video.m3u8
 #EXTINF:-1 tvg-id="WXIADT1.us" status="online",NBC Atlanta GA (WXIA-DT1) (720p) [Not 24/7]
 http://51.161.118.146:8080/ISG03_NBC_ATLANTA_GA_WXIA/video.m3u8
-#EXTINF:-1 tvg-id="WXINDT1.us" status="online",FOX Indianapolis IN (WXIN-DT1) (720p)
+#EXTINF:-1 tvg-id="WXINDT1.us" status="timeout",FOX Indianapolis IN (WXIN-DT1) (720p)
 http://51.161.118.146:8080/ISG03_FOX_INDIANAPOLIS_IN_WXIN/video.m3u8
 #EXTINF:-1 tvg-id="Xcorps.us" status="timeout",Xcorps (720p)
 https://simultv.s.llnwi.net/n4s4/xcorps/interlink.m3u8
-#EXTINF:-1 tvg-id="XploreReisen.us" status="error",Xplore Reisen (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="XploreReisen.us" status="online",Xplore Reisen (720p) [Not 24/7]
 https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/v1/master/81bfcafb76f9c947b24574657a9ce7fe14ad75c0/live-prod/1ecb875d-8be7-11eb-a7de-bacfe1f83627/0/master.m3u8?country=DE&optout=0&uid=749544ec3d9a45d48c600d03cac91dfd&vendor=philips
 #EXTINF:-1 tvg-id="YahooFinance.us" status="online",Yahoo! Finance (1080p)
 https://d1ewctnvcwvvvu.cloudfront.net/playlist.m3u8
@@ -1497,18 +1502,18 @@ https://a.jsrdn.com/broadcast/e0f99ab19c/+0000/c.m3u8
 https://thegateway.app/YouToo/CueTones/playlist.m3u8
 #EXTINF:-1 tvg-id="YoutooAmerica.us" status="online",Youtoo America (1080p)
 https://thegateway.app/YouToo/YTamerica/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",SonLife Broadcasting (SBN) (720p)
-https://sonlife7-i.akamaihd.net/hls/live/585011/ch7/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",CNN
-http://38.127.211.18/live/c2eds/CNN/HLS/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",BUTV10 (Boston University) (1080p) [Not 24/7]
 http://butv10-livestream.bu.edu/live/WIFI-2096k-1080p/WIFI-2096k-1080p.m3u8
+#EXTINF:-1 tvg-id="" status="online",Radio Ritmo (1080p) [Not 24/7]
+https://59514edd5dd8e.streamlock.net/lax/lax/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",VH1 (1080p)
 https://content.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf.m3u8
 #EXTINF:-1 tvg-id="" status="online",Vice East
 https://d2do1g43aq7264.cloudfront.net/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Techno Warehouse (US) (1080p) [Not 24/7]
 https://eu-nl-012.worldcast.tv/dancetelevisionthree/dancetelevisionthree.m3u8
+#EXTINF:-1 tvg-id="" status="online",ESR 24x7 eSports Network (1080p)
+https://eyeonesports.com/ES2RA-628g.m3u8
 #EXTINF:-1 tvg-id="" status="online",CBS 5 Ft Smith AR (KFSM-TV) (1080p)
 https://livevideo01.5newsonline.com/hls/live/2011653/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="" status="online",NBC 9 Denver CO (KUSA) (1080p)
@@ -1605,14 +1610,16 @@ https://livevideo01.wusa9.com/hls/live/2015498/newscasts/live.m3u8
 https://livevideo01.wwltv.com/hls/live/2016516/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="" status="online",ABC 13 Grand Rapids MI (WZZM) (1080p)
 https://livevideo01.wzzm13.com/hls/live/2016280/newscasts/live.m3u8
+#EXTINF:-1 tvg-id="" status="online",External Ottera (720p)
+https://otteravision-tg.ottera.tv/live/master.m3u8?channel=tg_tg_us
 #EXTINF:-1 tvg-id="" status="online",Fox HD Russia
 https://sc.id-tv.kz/FOX_HD.m3u8
 #EXTINF:-1 tvg-id="" status="online",FIGHT SPORTS (1080p)
 https://shls-fight-sports-ak.akamaized.net/out/v1/ee7e6475b12e484bbfa5c31461ad4306/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Radio Javan (720p)
-https://stream.rjtv.stream/live/smil:rjtv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ABC 5 Cleveland OH (WEWS-TV) (1080p)
 https://wews-syndication.ewscloud.com/out/v1/72729e3f4dbe4aafbab93d6b1117e5f1/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",CNN
+http://38.127.211.18/live/c2eds/CNN/HLS/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",MTV
 http://38.127.211.18/live/c2eds/MTV/HLS/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",FOX Detroit MI (WJBK-DT1) (720p)
@@ -1627,6 +1634,8 @@ http://162.244.81.156:1935/whprtv33roku/whprtv33roku/playlist.m3u8
 http://cms-wowza.lunabyte.io/wbrz-live-1/_definst_/smil:wbrz-live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",WDEF-TV News Chattanooga TN (720p)
 http://dai.google.com/linear/hls/event/iVH_b5kWTteyRCy-YCoHOw/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",AXN Latinoamérica (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/anxcx913
 #EXTINF:-1 tvg-id="" status="online",Metro Nashville Network
 http://granicusliveus10-a.akamaihd.net/nashville/G2157_002/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hope Channel Norge (720p)
@@ -1639,6 +1648,8 @@ https://2-fss-2.streamhoster.com/pl_138/amlst:201950-1309230/playlist.m3u8
 https://5ebe6889de541.streamlock.net/live/stream_10/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Alkerazatv (720p)
 https://597f64b67707a.streamlock.net/alkerazatv.org/alkerazatv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Tranquil Thunderstorms (720p)
+https://a.jsrdn.com/broadcast/18b42f9aef/+0000/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",NBC 15 Madison WI (WMTV) (720p)
 https://ad-playlistserver.aws.syncbak.com/playlist/899088/master.m3u8?access_token=eyJhbGciOiJIUzI1NiIsImtpZCI6IkdyYXkyMDE2MDgyOSIsInN1YiI6IioiLCJ0eXAiOiJKV1QifQ.eyJleHAiOjE3OTAzNjkxMDUsImlzcyI6IldMUyIsIm1kNSI6ImJhZTU4Y2ZlZWM2NmU1MjZkNmVjZmE1YmUzNTQxMzQ4IiwibWlkIjoiODk5MDg4In0.vBWkHmqS3z3dpq8UWfbk4wFd-vQlj6B0up-rpt7X_7Q
 #EXTINF:-1 tvg-id="" status="online",Digi TV (WFTY-DT6) (720p)
@@ -1687,6 +1698,8 @@ https://content.uplynk.com/channel/98828f7707b84dc496472d5789143df2.m3u8
 https://content.uplynk.com/channel/aa92b664ac5941de81cd410803329da2.m3u8
 #EXTINF:-1 tvg-id="" status="online",WPTV News West Palm Beach FL (720p)
 https://content.uplynk.com/channel/b02350ef854c4eef8358eead1f59a5cc.m3u8
+#EXTINF:-1 tvg-id="" status="online",CBS 6 Albany NY (WRGB) (720p)
+https://content.uplynk.com/channel/bba3e7da884a49bba96341ecf5128f0f.m3u8
 #EXTINF:-1 tvg-id="" status="online",Fox 28 Savannah GA (WTGS) (720p)
 https://content.uplynk.com/channel/e56ba52a1b9d45ad8c8a033fd83fe480.m3u8
 #EXTINF:-1 tvg-id="" status="online",KTRK TV News (720p)
@@ -1741,34 +1754,33 @@ https://mn-nl.mncdn.com/blutv_foxtv2/live.m3u8
 https://moiptvhls-i.akamaihd.net/hls/live/652042/secure/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",WDAY News Fargo ND (720p)
 https://player-api.new.livestream.com/accounts/27442514/events/8305246/live.m3u8
-#EXTINF:-1 tvg-id="" status="online",WDAY-X Automatic Weather Frago ND (720p)
-https://player-api.new.livestream.com/accounts/27442514/events/8331542/live.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tropical Moon TV
 https://srv.panelcast.net/musictv/musictv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tropical Moon Somos Cultura TV
 https://srv.panelcast.net/somosculturatv/somosculturatv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tropical Moon Urban TV
 https://srv.panelcast.net/urbantvnetott/urbantvnetott/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Slimo (540p)
+https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c7e2783932c8368bdbfd8a5/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",WATC-DT2
 https://uni01rtmp.tulix.tv/watc57-2/watc57-2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",AXN Latinoamérica (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/anxcx913
 #EXTINF:-1 tvg-id="" status="online",3ABN Français (720p) [Not 24/7]
 https://moiptvhls-i.akamaihd.net/hls/live/652314/secure/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Toonami Aftermath Movies (540p)
 http://api.toonamiaftermath.com:3000/movies/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hope Channel Norge (540p)
 http://media1.adventist.no:1935/live/hope2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Hope Channel Norge (360p)
-http://media1.adventist.no:1935/live/hope3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",7News Boston MA (WHDH) (540p)
 https://bcsecurelivehls-i.akamaihd.net/hls/live/598046/4744899807001_1/livestream/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",Actionable (720p)
+https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c7e25a1932c8368bdbfd87d/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Toonami Aftermath East (480p)
 http://api.toonamiaftermath.com:3000/est/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Toonami Aftermath West (480p)
 http://api.toonamiaftermath.com:3000/pst/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Toonami Aftermath Radio (480p)
-http://api.toonamiaftermath.com:3000/radio/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36",TPT Now KTCA-DT5 (720p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
+https://api.new.livestream.com/accounts/12638076/events/8488790/live.m3u8
 #EXTINF:-1 tvg-id="" status="online",Buzzr (KCKS-LD1) (480p)
 https://cdn.igocast.com/channel1_hls/channel1_master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NewsNet (KCKS-LD2) (480p) [Not 24/7]
@@ -1789,6 +1801,8 @@ https://cdn.igocast.com/channel8_hls/channel8_master.m3u8
 https://cdn.igocast.com/channel9_hls/channel9_master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Shop LC (KCKS-LD10) (480p) [Not 24/7]
 https://cdn.igocast.com/channel10_hls/channel10_master.m3u8
+#EXTINF:-1 tvg-id="" status="online",Red Apple 21 (Fairfax County Public Schools) (480p) [Not 24/7]
+https://cs.ebmcdn.net/eastbay-live-hs-1/fcps/mp4:fcps/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",PBS 39 Extra Philadelphia PA (WPPT) (480p)
 https://forerunnerrtmp.livestreamingcdn.com/output18-2/output18-2.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Winthrop Community Access TV (WCAT 22) (480p)
@@ -1801,20 +1815,26 @@ https://worcester.vod.castus.tv/live/ch1.m3u8
 https://dai.google.com/linear/hls/event/HZ3JdLVcQ463l3b1BLXmmQ/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",KCRT-TV 28 Richmond CA (KCRT) (360p)
 http://granicusliveus3-a.akamaihd.net/richmond/G0034_002/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Hope Channel Norge (360p)
+http://media1.adventist.no:1935/live/hope3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Village of Hastings-On-Hudson NY (WHOH-TV) (360p)
 http://stream.swagit.com/live-edge/hastingsonhudsonny/smil:std-4x3-1-a/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",CBS News Live (360p)
 https://cbsnewshd-lh.akamaihd.net/i/CBSNHD_7@199302/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",Galavision West [Geo-blocked] (720p)
-https://dai.google.com/linear/hls/event/Nx4jutBDR5ekuML_73omhg/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",Unimas East (National Feed) [Geo-blocked] (720p)
+https://dai.google.com/linear/hls/event/D8RY01WsRv6SMK6X3AoWAg/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",Galavision East [Geo-blocked] (720p)
+https://dai.google.com/linear/hls/event/SIvlK2VmTsqL_hgyKeFIPg/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Winthrop Community Access TV (WCAT 15) (360p) [Not 24/7]
 https://edu-wcat.azureedge.net/live/live.m3u8
 #EXTINF:-1 tvg-id="" status="online",KITV (News)
 https://fuel-streaming-prod01.fuelmedia.io/v1/sem/c4067ddc-0e67-4928-b7ec-624481f721a6.m3u8
+#EXTINF:-1 tvg-id="" status="online",Radio Javan (720p)
+https://stream.rjtv.stream/live/smil:rjtv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",KTLA 5 Los Angeles CA (144p)
 https://content.uplynk.com/channel/6cbf2d32a5384dc1b787539b1102433c.m3u8
-#EXTINF:-1 tvg-id="" status="online",ESR 24x7 eSports Network (1080p)
-https://eyeonesports.com/ES2RA-628g.m3u8
+#EXTINF:-1 tvg-id="" status="online",SonLife Broadcasting (SBN) (720p)
+https://sonlife7-i.akamaihd.net/hls/live/585011/ch7/master.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Boomerang Latinoamérica [Geo-blocked]
 http://45.5.8.78:8000/play/a00i
 #EXTINF:-1 tvg-id="" status="blocked",Brazzers Latinoamérica [Geo-blocked]
@@ -1855,6 +1875,8 @@ https://16live00.akamaized.net/FREEFORM/index.m3u8
 https://16live00.akamaized.net/NBC_EAST/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Start TV
 https://16live00.akamaized.net/START_TV/index.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",TNT
+https://16live00.akamaized.net/TNT/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Nickelodeon Deutschland [Geo-blocked]
 https://unilivemtveu-lh.akamaihd.net/i/nickde_1@448749/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",National Geographic España
@@ -1881,22 +1903,24 @@ http://209.91.213.10:8088/play/a01a
 http://209.91.213.10:8088/play/a011
 #EXTINF:-1 tvg-id="" status="timeout",TUDN US [Geo-blocked] (720p)
 https://dai.google.com/linear/hls/event/bQ2JGGVzTpqfCfcTZWay1Q/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Unimas East (National Feed) [Geo-blocked] (720p)
-https://dai.google.com/linear/hls/event/D8RY01WsRv6SMK6X3AoWAg/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Unimas West (National Feed) [Geo-blocked] (720p)
 https://dai.google.com/linear/hls/event/fQCAqHLkSPeYW0FmDm7aOQ/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Galavision West [Geo-blocked] (720p)
+https://dai.google.com/linear/hls/event/Nx4jutBDR5ekuML_73omhg/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Univision West (National Feed) [Geo-blocked] (720p)
 https://dai.google.com/linear/hls/event/OB8_g3B_Th2LAr1AVmM4Mw/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Univision East (National Feed) [Geo-blocked] (720p)
 https://dai.google.com/linear/hls/event/pa2-p-dKTaCqDOi0eFyHXw/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Galavision East [Geo-blocked] (720p)
-https://dai.google.com/linear/hls/event/SIvlK2VmTsqL_hgyKeFIPg/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Level One
+https://stitcheraws.unreel.me/wse-node04.powr.com/live/5af61be7d5eeee7af3d1db47/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",CBS 7 Seattle WA (KIRO-TV)
 https://svc-lvanvato-cxtv-kiro.cmgvideo.com/kiro/1864k/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",CBS 7 Dayton OH (WHIO)
 https://svc-lvanvato-cxtv-whio.cmgvideo.com/whio/2596k/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",SyFy (México)
 http://168.232.168.242:8000/play/a05k/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Toonami Aftermath Radio (480p)
+http://api.toonamiaftermath.com:3000/radio/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Noticias Univision 24/7
 http://dai.google.com/linear/hls/event/JnnLYlsCSwKi-0-eoUEFdA/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",Fox Boston MA (WFXT1) (720p) [Not 24/7]
@@ -1983,8 +2007,12 @@ https://live.field59.com/wgcl/ngrp:wgcl1_all/playlist.m3u8
 https://livevideo01.11alive.com/hls/live/2015499/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="" status="error",WMFD-TV 68 Mansfield OH (720p) [Not 24/7]
 https://player-api.new.livestream.com/accounts/1194911/events/3466400/live.m3u8
+#EXTINF:-1 tvg-id="" status="error",WDAY-X Automatic Weather Frago ND (720p)
+https://player-api.new.livestream.com/accounts/27442514/events/8331542/live.m3u8
 #EXTINF:-1 tvg-id="" status="error",Disney Channel Japan (720p) [Not 24/7]
 https://redlabmcdn.s.llnwi.net/jp04/bs13hd/index.mpd
+#EXTINF:-1 tvg-id="" status="error",Radio Inmaculada (1080p) [Not 24/7]
+https://tv2.fastcast4u.com:3594/live/vsojgreilive.m3u8
 #EXTINF:-1 tvg-id="" status="error",NBC 5 News Chicago IL (WMAQ-TV) (1080p)
 https://wmaqlive-f.akamaihd.net/i/CHICAGO_STREAM1@22923/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",Telemundo WSNS Noticias Chicago IL (1080p) [Not 24/7]
@@ -2004,9 +2032,3 @@ https://wvitlive-f.akamaihd.net/i/HARTFORD_STREAM1@22924/master.m3u8
 #EXTINF:-1 tvg-id="" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Warner TV (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://www.livedoomovie.com/02_WarnerTVHD_720p/chunklist.m3u8
-#EXTINF:-1 tvg-id="",TNT
-https://16live00.akamaized.net/TNT/index.m3u8
-#EXTINF:-1 tvg-id="",CBS 6 Albany NY (WRGB) (720p)
-https://content.uplynk.com/channel/bba3e7da884a49bba96341ecf5128f0f.m3u8
-#EXTINF:-1 tvg-id="",Red Apple 21 (Fairfax County Public Schools) (480p) [Not 24/7]
-https://cs.ebmcdn.net/eastbay-live-hs-1/fcps/mp4:fcps/playlist.m3u8
