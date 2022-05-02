@@ -27,7 +27,7 @@ https://langate.tv/promin/live/index.m3u8
 http://109.68.40.67/life/magnolia.m3u8
 #EXTINF:-1 tvg-id="DonbassOnline.ua" status="timeout",Донбас Online (1080p) [Not 24/7]
 http://176.110.1.30:1935/live/donbasonline/playlist.m3u8
-#EXTINF:-1 tvg-id="DonezkTV.ua" status="error",Donezk TV (720p)
+#EXTINF:-1 tvg-id="DonezkTV.ua" status="online",Donezk TV (720p)
 http://stream.dn.ua/hls/stream.m3u8
 #EXTINF:-1 tvg-id="DumskayaTVHD.ua" status="online",Думская ТВ (1080p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/dumska/dumska-abr/playlist.m3u8
@@ -218,6 +218,8 @@ http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
 https://cdn1.live-tv.od.ua:8083/1tvkr/1tvkr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Южная Волна (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
+https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (576p)
 http://91.194.79.46:8081/stream2/channel2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
@@ -236,8 +238,6 @@ https://cdn1.live-tv.od.ua:8083/1tvod/1tvod-abr/playlist.m3u8
 https://cdn1.live-tv.od.ua:8083/1tvod/1tvod/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ТРК Репортер (480p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
-https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Прямий (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
