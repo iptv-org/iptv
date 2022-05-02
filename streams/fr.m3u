@@ -84,7 +84,7 @@ https://static.france24.com/live/F24_AR_LO_HLS/live_web.m3u8
 http://f24hls-i.akamaihd.net/hls/live/221147/F24_EN_HI_HLS/master.m3u8
 #EXTINF:-1 tvg-id="France24English.fr" status="error",France 24 English (576p)
 https://static.france24.com/live/F24_EN_LO_HLS/live_web.m3u8
-#EXTINF:-1 tvg-id="Franceinfo.fr" status="error",Franceinfo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Franceinfo.fr" status="online",Franceinfo (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/franceinfo/live
 #EXTINF:-1 tvg-id="FranceInter.fr" status="online",France Inter (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCJldRgT_D7Am-ErRHQZ90uw/live
@@ -114,7 +114,7 @@ https://lci-hls-live-ssl.tf1.fr/lci/1/hls/live_2328.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xji3qy
 #EXTINF:-1 tvg-id="M6.fr" status="online",M6 (1080p)
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
-#EXTINF:-1 tvg-id="M6Music.fr" status="online",M6 Music (1080p)
+#EXTINF:-1 tvg-id="M6Music.fr" status="error",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
 #EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
@@ -168,7 +168,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/vid
 https://s6.tntendirect.com/rmcdecouverte/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TebeSud.fr" status="online",TébéSud (1080p) [Not 24/7]
 https://edge-live-ger1.ovstream.com/hls/10/source.m3u8
-#EXTINF:-1 tvg-id="TF1.fr" status="online",TF1 (1080p)
+#EXTINF:-1 tvg-id="TF1.fr" status="error",TF1 (1080p)
 http://185.234.217.27:8002/play/a045/index.m3u8
 #EXTINF:-1 tvg-id="TF1SeriesFilms.fr" status="error",TF1 Séries Films (360p)
 https://s6.tntendirect.com/hd1/live/playlist.m3u8
@@ -196,12 +196,8 @@ https://streamtv.cdn.dvmr.fr/TV78/ngrp:tv78.stream_all/master.m3u8
 https://streamtv.cdn.dvmr.fr/TVR/ngrp:tvr.stream_all/master.m3u8
 #EXTINF:-1 tvg-id="TZiK.fr" status="timeout",TZiK [Not 24/7]
 https://54627d4fc5996.streamlock.net/tzik/tzik/chunklist.m3u8
-#EXTINF:-1 tvg-id="W9.fr" status="online",W9 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="W9.fr" status="error",W9 (1080p) [Not 24/7]
 http://185.234.217.27:8002/play/a047/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Trace Latina
-http://185.234.217.27:8002/play/a02f/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",CStar Hits France
-http://185.234.217.27:8002/play/a03u/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",France 24 Español (1080p)
 http://f24hls-i.akamaihd.net/hls/live/520845/F24_ES_HI_HLS/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Cnews (1080p) [Not 24/7]
@@ -237,6 +233,10 @@ http://ott-cdn.ucom.am/s89/index.m3u8
 http://51.210.199.16/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ARTE Français (720p) [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Trace Latina
+http://185.234.217.27:8002/play/a02f/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",CStar Hits France
+http://185.234.217.27:8002/play/a03u/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Wéo (Hauts-de-France) (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x62islg
 #EXTINF:-1 tvg-id="" status="error",Wéo (Picardie) (480p) [Not 24/7]
