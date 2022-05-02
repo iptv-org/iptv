@@ -1,28 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="7alaTV.ps" status="blocked",7ala TV [Geo-blocked]
-http://vstream3.hadara.ps:8081/7alafm2020/7alafm2020/playlist.m3u8
-#EXTINF:-1 tvg-id="AjyalTV.ps" status="error",Ajyal TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AjyalTV.ps" status="online",Ajyal TV (720p) [Not 24/7]
 http://htvajyal.mada.ps:8888/ajyal/index.m3u8
-#EXTINF:-1 tvg-id="AjyalTV.ps" status="error",Ajyal TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AjyalTV.ps" status="online",Ajyal TV (720p) [Not 24/7]
 http://htvmada.mada.ps:8888/ajyal/index.m3u8
 #EXTINF:-1 tvg-id="AlAqsaTV.ps" status="online",Al Aqsa Channel (416p) [Not 24/7]
 https://live-1.linuxway.info/aqsatv/live/tv/playlist.m3u8
-#EXTINF:-1 tvg-id="Audeh.ps" status="online",Audeh (480p)
-http://htvpalsat.mada.ps:8888/audeh/index.m3u8
 #EXTINF:-1 tvg-id="Falastini.ps" status="error",Falastini (720p)
 http://51.255.84.28:8081/palestiniantv_source/live/playlist.m3u8
-#EXTINF:-1 tvg-id="HebronTV.ps" status="error",Hebron TV (720p) [Not 24/7]
-https://streaming.zaytonatube.com:8081/newhebron/newheb/playlist.m3u8
-#EXTINF:-1 tvg-id="HekayaTV.ps" status="error",Hekaya TV (720p) [Not 24/7]
-https://streaming.zaytonatube.com:8081/Hekaya/hekayamix/playlist.m3u8
 #EXTINF:-1 tvg-id="MarahFM.ps" status="online",Marah FM (720p) [Not 24/7]
 http://vstream3.hadara.ps:8081/marahFM_web/web/playlist.m3u8
-#EXTINF:-1 tvg-id="Mawal.ps" status="online",Mawal (720p) [Not 24/7]
-http://vstream3.hadara.ps:8081/MawwalHD_web/web/playlist.m3u8
 #EXTINF:-1 tvg-id="MusawaChannel.ps" status="online",MusawaChannel (404p) [Not 24/7]
 http://htvpalsat.mada.ps:8888/musawa/index.m3u8
-#EXTINF:-1 tvg-id="NablusTV.ps" status="online",Nablus TV (720p) [Not 24/7]
-http://htvmada.mada.ps:8888/nabluslive/index.m3u8
 #EXTINF:-1 tvg-id="PalestineMubasher.ps" status="online",Palestine Mubasher (404p)
 http://htvpalsat.mada.ps:8888/PBCLive/index.m3u8
 #EXTINF:-1 tvg-id="PalestineSatelliteChannel.ps" status="online",Palestine Satellite Channel (1080p)
@@ -31,15 +19,27 @@ https://pbc.furrera.ps/palestinehd/index.m3u8
 http://htvpalsat.mada.ps:8888/PBC/index.m3u8
 #EXTINF:-1 tvg-id="PalestineToday.ps" status="blocked",Palestine Today (480p) [Geo-blocked]
 https://live.paltoday.tv/paltv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="palestiniantv.ps" status="online",palestiniantv (720p)
-http://palestiniantv.origin.technostreaming.net:8081/palestiniantv_source/live/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioAlbaladTV.ps" status="online",Radio Albalad TV (1080p) [Not 24/7]
-http://streaming.zaytonatube.com:8080/radioalbalad/radioalbalad/playlist.m3u8
 #EXTINF:-1 tvg-id="RajeenTV.ps" status="online",Rajeen TV (1080p) [Not 24/7]
 https://mn-nl.mncdn.com/palabroad/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ShababFM.ps" status="online",Shabab FM (720p) [Not 24/7]
 https://streaming.zaytonatube.com:8081/ShababFM/shabab/index.m3u8
-#EXTINF:-1 tvg-id="WatarTV.ps" status="error",Watar TV (720p) [Not 24/7]
-http://htvint.mada.ps:8889/orient/index.m3u8
 #EXTINF:-1 tvg-id="WattanTV.ps" status="online",Wattan TV (720p) [Not 24/7]
 http://htvmada.mada.ps:8888/wattan/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",Watar TV (720p) [Not 24/7]
+http://htvint.mada.ps:8889/orient/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",Nablus TV (720p) [Not 24/7]
+http://htvmada.mada.ps:8888/nabluslive/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",palestiniantv (720p)
+http://palestiniantv.origin.technostreaming.net:8081/palestiniantv_source/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Mawal (720p) [Not 24/7]
+http://vstream3.hadara.ps:8081/MawwalHD_web/web/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Audeh (480p)
+http://htvpalsat.mada.ps:8888/audeh/index.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",7ala TV [Geo-blocked]
+http://vstream3.hadara.ps:8081/7alafm2020/7alafm2020/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Radio Albalad TV (1080p) [Not 24/7]
+http://streaming.zaytonatube.com:8080/radioalbalad/radioalbalad/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Hekaya TV (720p) [Not 24/7]
+https://streaming.zaytonatube.com:8081/Hekaya/hekayamix/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Hebron TV (720p) [Not 24/7]
+https://streaming.zaytonatube.com:8081/newhebron/newheb/playlist.m3u8
