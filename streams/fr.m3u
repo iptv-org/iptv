@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="7ALimoges.fr" status="online",7ALimoges (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="7ALimoges.fr" status="error",7ALimoges (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCdFv_ZWQ3Xk_NfRiaK-ryGg/live
 #EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="online",Alpe d’Huez TV (720p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
@@ -57,7 +57,7 @@ https://fash1043.cloudycdn.services/slive/ftv_ftv_asia_gmt_vmf_43163_default_129
 https://fash1043.cloudycdn.services/slive/ftv_pg13_adaptive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVPG16.fr" status="online",Fashion TV PG16 (144p)
 http://fash1043.cloudycdn.services/slive/ftv_pg16_adaptive.smil/media.m3u8
-#EXTINF:-1 tvg-id="FashionTVRussia.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Fashion TV Russia (480p)
+#EXTINF:-1 tvg-id="FashionTVRussia.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Fashion TV Russia (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s30/index.m3u8
 #EXTINF:-1 tvg-id="FashionTVSingapore.fr" status="online",Fashion TV Singapore (240p)
@@ -121,7 +121,7 @@ http://185.234.217.27:8002/play/a03d/index.m3u8
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
 http://tv.mondeduloisir.fr:1935/tixtv/smil:web.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Mezzo.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Mezzo (480p)
+#EXTINF:-1 tvg-id="Mezzo.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Mezzo (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s35/index.m3u8
 #EXTINF:-1 tvg-id="NancyWebTV.fr" status="online",Nancy Web TV (394p) [Not 24/7]
@@ -210,10 +210,6 @@ https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8
 https://static.france24.com/live/F24_FR_HI_HLS/live_web.m3u8
 #EXTINF:-1 tvg-id="" status="online",Euronews Hungary (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
-#EXTINF:-1 tvg-id="" status="online",Euronews по-русски (720p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
-#EXTINF:-1 tvg-id="" status="online",Euronews en Español (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/euronewses/live
 #EXTINF:-1 tvg-id="" status="online",Euronews English (720p)
 https://d1mpprlbe8tn2j.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/euronewsLive/87O7AhxRUdeeIVqf/ewnsabren_eng.m3u8
 #EXTINF:-1 tvg-id="" status="online",viàMoselleTV (720p) [Not 24/7]
@@ -241,6 +237,10 @@ http://185.234.217.27:8002/play/a03u/index.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x62islg
 #EXTINF:-1 tvg-id="" status="error",Wéo (Picardie) (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x63085w
+#EXTINF:-1 tvg-id="" status="error",Euronews по-русски (720p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
+#EXTINF:-1 tvg-id="" status="error",Euronews en Español (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/euronewses/live
 #EXTINF:-1 tvg-id="" status="error",L'EQUIPE (360p)
 https://s6.tntendirect.com/lequipe21/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",France 24 Español (576p)
