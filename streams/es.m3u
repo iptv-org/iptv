@@ -149,7 +149,7 @@ https://cdn01.yowi.tv/KQRSDA7GDB/master.m3u8
 https://etbvnogeo-lh.akamaihd.net/i/ETBSTR2_1@595582/master.m3u8
 #EXTINF:-1 tvg-id="EITB.es" status="online",EITB (480p)
 https://etbvnogeo-lh.akamaihd.net/i/ETBEITBEUS_1@300391/master.m3u8
-#EXTINF:-1 tvg-id="El33.es" status="timeout",El 33 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="El33.es" status="online",El 33 (1080p) [Not 24/7]
 https://directes-tv-int.ccma.cat/int/ngrp:c33_web/playlist_DVR.m3u8
 #EXTINF:-1 tvg-id="Elche7TV.es" status="error",Elche 7 TV (1080p) [Not 24/7]
 https://streaming.elche7tv.es/hls/canal2.m3u8
@@ -321,7 +321,7 @@ https://cloudvideo.servers10.com:8081/8032/index.m3u8
 https://5940924978228.streamlock.net/8161/8161/master.m3u8
 #EXTINF:-1 tvg-id="OlympicsChannel.es" status="error",Olympics Channel (1080p) [Geo-blocked]
 https://iptv-all.lanesh4d0w.repl.co/special/olympics
-#EXTINF:-1 tvg-id="OndaCadizHD.es" status="error",Onda Cádiz (1080p)
+#EXTINF:-1 tvg-id="OndaCadizHD.es" status="online",Onda Cádiz (1080p)
 https://adc-hls.flumotion.com/playlist.m3u8
 #EXTINF:-1 tvg-id="OndaMadrid.es" status="error",Onda Madrid (360p)
 http://ondamadridhls-live.hls.adaptive.level3.net/telemadrid/ondamadrid1/index.m3u8
@@ -397,7 +397,7 @@ https://directes-tv-int.ccma.cat/int/ngrp:tv3_web/playlist_DVR.m3u8
 https://directes-tv-int.ccma.cat/int/ngrp:tvi_web/playlist_DVR.m3u8
 #EXTINF:-1 tvg-id="TV3Catalunya.es" status="online",TV3 Catalunya (1080p)
 https://directes-tv-int.ccma.cat/int/ngrp:tv3_web/playlist.m3u8
-#EXTINF:-1 tvg-id="TVA.es" status="error",TV Artequatre (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVA.es" status="online",TV Artequatre (576p) [Not 24/7]
 https://streaming01.gestec-video.com/hls/artequatreTVA.m3u8
 #EXTINF:-1 tvg-id="TVCanaria.es" status="error",TV Canaria (576p)
 https://rtvc-live1.flumotion.com/playlist.m3u8
@@ -445,8 +445,6 @@ https://16escalones-live2.flumotion.com/chunks.m3u8
 https://cloud.streamingconnect.tv:455/radiotvzafra/radiotvzafra.m3u8
 #EXTINF:-1 tvg-id="" status="online",A3Series Internacional
 https://mdstrm.com/live-stream-playlist/5cae562e0ca2f30815231c0f.m3u8?access_token=DST4b676d7da5a2a92ee15f8efcbcd00606
-#EXTINF:-1 tvg-id="" status="online",Canal 24 horas (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7QZIf0dta-XPXsp9Hv4dTw/live
 #EXTINF:-1 tvg-id="" status="online",LA7 (720p)
 https://cdnlive.shooowit.net/la7live/smil:channel1.smil/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",+24 (576p)
@@ -491,6 +489,8 @@ https://rtvelivestreamv3.akamaized.net/cat/la1_cat_main_dvr.m3u8
 https://ztnr.rtve.es/ztnr/3293681.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",La 1 Canarias (576p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/5190066.m3u8
+#EXTINF:-1 tvg-id="" status="error",Canal 24 horas (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7QZIf0dta-XPXsp9Hv4dTw/live
 #EXTINF:-1 tvg-id="" status="error",Tele Sagunto
 https://5940924978228.streamlock.net/Directo1_1/smil:Directo1_1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",GOL (720p)
