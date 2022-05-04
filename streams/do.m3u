@@ -1,11 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Ame47.do" status="error",Amé 47 (720p)
 https://ss6.domint.net:3028/ame_str/amecanal47/playlist.m3u8
-#EXTINF:-1 tvg-id="AnimeZoneTV.do" status="error",Anime Zone TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="AnimeZoneTV.do" status="online",Anime Zone TV (480p) [Not 24/7]
 http://azxtv.com/hls/stream.m3u8
 #EXTINF:-1 tvg-id="Boreal.do" status="error",Boreal (720p)
 https://5b38ce71f1f00.streamlock.net/8180/8180/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal12.do" status="online",Canal 12 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal12.do" status="error",Canal 12 (720p) [Not 24/7]
 https://cdn4.hostlagarto.com:8081/static/telecanal12/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalAme47.do" status="error",Canal Amé 47 (720p)
 http://ss6.domint.net:2028/ame_str/amecanal47/master.m3u8
@@ -27,7 +27,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts
 https://ss3.domint.net:3120/dv6_str/digitalvision/playlist.m3u8
 #EXTINF:-1 tvg-id="FuegoTV.do" status="online",Fuego TV (720p) [Not 24/7]
 https://video.misistemareseller.com/Fuegotv/Fuegotv/playlist.m3u8
-#EXTINF:-1 tvg-id="GDMTV.do" status="error",GDMTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="GDMTV.do" status="online",GDMTV (720p) [Not 24/7]
 https://ss2.domint.net:3200/gdm_str/gdmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="HermanasMirabalTV.do" status="error",Hermanas Mirabal TV (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/Hmtv/hmtv.myStream/playlist.m3u8
@@ -37,13 +37,13 @@ http://cm.hostlagarto.com:8081/hits360tv/hits360HD.myStream/playlist.m3u8
 http://cm.hostlagarto.com:8081/Hmtv/hmtv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="LAMIATV.do" status="timeout",LA MIA TV (720p) [Not 24/7]
 https://ss8.domint.net:3108/mia_str/lamiatv/playlist.m3u8
-#EXTINF:-1 tvg-id="LocomotionTV.do" status="error",Locomotion TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="LocomotionTV.do" status="online",Locomotion TV (480p) [Not 24/7]
 http://51.222.85.85:81/hls/loco/index.m3u8
 #EXTINF:-1 tvg-id="LocomotionTV.do" status="error",Locomotion TV (480p) [Not 24/7]
 http://locomotiontv.com/envivo/loco_ch/stream.m3u8
 #EXTINF:-1 tvg-id="LVM.do" status="online",LVM (720p)
 https://uni01rtmp.tulix.tv/playout2multi9/lavozdemaria.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="MegavisionCanal43.do" status="online",Megavision Canal 43 (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="MegavisionCanal43.do" status="error",Megavision Canal 43 (480p) [Not 24/7]
 http://stream3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 #EXTINF:-1 tvg-id="Microvision10.do" status="online",Microvision 10 (720p) [Not 24/7]
 http://190.103.183.24:1935/live/MicroHD/playlist.m3u8
@@ -119,16 +119,16 @@ https://primary-out.iptv-global.net/HilandoFinoTV/ngrp:HilandoFinoTV_all/playlis
 https://vdo1.streamgato.us:3359/live/tvexitoslive.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ecovisión (480p) [Not 24/7]
 https://vdo1.streamgato.us:3014/live/ecovisionlive.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Color Vision Canal 9
-http://177.52.221.214:8000/play/a0c0/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Telesistema 11
-http://177.52.221.214:8000/play/a0fk/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Telefuturo Canal 23 (720p) [Not 24/7]
 http://ss8.domint.net:2118/tf_str/futu/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Super TV 55 (Santiago) (720p) [Not 24/7]
 http://ss8.domint.net:2128/stv_str/tv55/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Super TV 55 (Santiago) (720p) [Not 24/7]
 https://ss8.domint.net:3128/stv_str/tv55/master.m3u8
+#EXTINF:-1 tvg-id="" status="error",Color Vision Canal 9
+http://177.52.221.214:8000/play/a0c0/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Telesistema 11
+http://177.52.221.214:8000/play/a0fk/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Telever Canal 12
 http://tengomusica.ddns.net:1935/telever/telever.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",GH Television Canal 10 (1080p) [Not 24/7]
