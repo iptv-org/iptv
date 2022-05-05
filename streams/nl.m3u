@@ -9,7 +9,7 @@ http://wowza5.video-streams.nl:1935/denhaag/denhaag/playlist.m3u8
 https://58c04fb1d143f.streamlock.net/feel_good_radio_1/feel_good_radio_1/playlist.m3u8
 #EXTINF:-1 tvg-id="GigantFM.nl" status="timeout",Gigant FM (720p)
 https://streams.uitzending.tv/gigantfm/gigantfm/playlist.m3u8
-#EXTINF:-1 tvg-id="GORTV.nl" status="online",GO-RTV (720p)
+#EXTINF:-1 tvg-id="GORTV.nl" status="error",GO-RTV (720p)
 http://593aed234297b.streamlock.net:1935/gotvsjoerd/gotvsjoerd/playlist.m3u8
 #EXTINF:-1 tvg-id="Groningen1.nl" status="online",Groningen1 (1080p) [Not 24/7]
 http://59132e529e3d1.streamlock.net/Groningen1/Groningen1/playlist.m3u8
@@ -37,10 +37,10 @@ http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo1/npo1.i
 http://stream.tvtap.net:8081/live/nl-npo2.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NPO2.nl" status="error",NPO 2 (342p)
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo2/npo2.isml/.m3u8
+#EXTINF:-1 tvg-id="NPO3.nl" status="blocked",NPO 3 (1080p) [Geo-blocked]
+http://stream.tvtap.net:8081/live/nl-npo3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NPO3.nl" status="error",NPO 3 (342p) [Not 24/7]
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo3/npo3.isml/.m3u8
-#EXTINF:-1 tvg-id="NPO3.nl" status="error",NPO 3 (1080p) [Geo-blocked]
-http://stream.tvtap.net:8081/live/nl-npo3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NPONieuws.nl" status="error",NPO Nieuws (576p)
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/thematv/journaal24/journaal24.isml/.m3u8
 #EXTINF:-1 tvg-id="NPOPolitiek.nl" status="error",NPO Politiek (576p)
