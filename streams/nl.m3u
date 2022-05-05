@@ -31,16 +31,16 @@ https://593aed234297b.streamlock.net/meervandaag/meervandaag/playlist.m3u8
 https://ms2.mx-cd.net/dtv-02/204-1147034/3ML_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NPO1.nl" status="blocked",NPO 1 (1080p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/nl-npo1.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="NPO1.nl",NPO 1 (342p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NPO1.nl" status="error",NPO 1 (342p) [Geo-blocked]
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo1/npo1.isml/.m3u8
 #EXTINF:-1 tvg-id="NPO2.nl" status="blocked",NPO 2 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/nl-npo2.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NPO2.nl" status="error",NPO 2 (342p)
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo2/npo2.isml/.m3u8
-#EXTINF:-1 tvg-id="NPO3.nl" status="blocked",NPO 3 (1080p) [Geo-blocked]
-http://stream.tvtap.net:8081/live/nl-npo3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NPO3.nl" status="error",NPO 3 (342p) [Not 24/7]
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo3/npo3.isml/.m3u8
+#EXTINF:-1 tvg-id="NPO3.nl" status="error",NPO 3 (1080p) [Geo-blocked]
+http://stream.tvtap.net:8081/live/nl-npo3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NPONieuws.nl" status="error",NPO Nieuws (576p)
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/thematv/journaal24/journaal24.isml/.m3u8
 #EXTINF:-1 tvg-id="NPOPolitiek.nl" status="error",NPO Politiek (576p)
