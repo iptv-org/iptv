@@ -534,12 +534,6 @@ https://free.fullspeed.tv/iptv-query?streaming-ip=https://www.vidio.com/live/794
 https://v2.siar.us/primatv/livestream/chunks.m3u8
 #EXTINF:-1 tvg-id="" status="error",ATVLI (720p)
 https://wowza.convergen.co/atvli/atvli.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Kugo 1 (720p)
-https://bravo.kugo.id/kugoone/udp.stream_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="AFBTV.id" status="error",AFB TV (576p)
-https://5e396e0211d7a.streamlock.net/afbtv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="AFBTV.id" status="error",AFB TV (576p)
-https://wowza58.indostreamserver.com/afbtv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="SpaceToonIndonesia.id" status="error",Spacetoon Indonesia (360p)
 https://bravo.kugo.id/spacetoon/udp.stream_360p/playlist.m3u8
 #EXTINF:-1 tvg-id="Maleo.id" status="error",Maleo (360p)
@@ -548,8 +542,6 @@ https://bravo.kugo.id/maleo/udp.stream_360p/playlist.m3u8
 https://bravo.kugo.id/nuchannel/udp.stream_360p/playlist.m3u8
 #EXTINF:-1 tvg-id="SalingSapaTV.id" status="error",Saling Sapa TV (360p)
 https://bravo.kugo.id/salingsapa/rtmp.stream_360p/playlist.m3u8
-#EXTINF:-1 tvg-id="PopMusik.id" status="error",Pop Musik (360p) (bad stream)
-https://bravo.kugo.id/popmusik/udp.stream_360p/chunklist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Jangkar TV (360p)
 http://bravo.kugo.id:1935/jangkartv/rtmp.stream_360p/chunklist.m3u8
 #EXTINF:-1 tvg-id="NET.id" status="error",NET. (360p)
@@ -560,11 +552,9 @@ https://v3.siar.us/ficomchannel/live/playlist.m3u8
 https://cdn3.wowza.com/1/NEtzTTZ4c1FTTUN2/SkJBbVJs/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="IndonesiaChannel.id" status="error",The Indonesia Channel (720p) [Geo-blocked]
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(20baf7aa-fd51-480f-87b3-dc4198090e86)/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Hits (720p) [Not 24/7]
-https://liveanevia.mncnow.id/live/eds/HITS/sa_dash_vmx/HITS.mpd
-#EXTINF:-1 tvg-id="" status="online",Hits Movies (720p) [Not 24/7]
-https://liveanevia.mncnow.id/live/eds/HitsMovies/sa_dash_vmx/HitsMovies.mpd
 #EXTINF:-1 tvg-id="" status="timeout",HIDUP TV (568p)
 http://202.93.133.3:1935/SVR1/ch_hiduptv.stream_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",NET. (720p) [Not 24/7] [Geo-blocked]
+#EXTINF:-1 tvg-id="NET.id" status="error",NET. (720p) [Not 24/7] [Geo-blocked]
 http://rr2.dens.tv/s/s08/01.m3u8
+#EXTINF:-1 tvg-id="" status="error",Kugo 1 (720p)
+https://bravo.kugo.id/kugoone/udp.stream_720p/playlist.m3u8
