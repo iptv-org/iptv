@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="24Horas.cl" status="online",24 Horas (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="24Horas.cl" status="error",24 Horas (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/24HORAS/live
 #EXTINF:-1 tvg-id="ADNRadio.cl" status="online",ADN Radio (1080p)
 https://unlimited1-us.dps.live/adntv/adntv.smil/playlist.m3u8
@@ -65,7 +65,7 @@ https://unlimited1-us.dps.live/carolinatv/carolinatv.smil/playlist.m3u8
 https://unlimited6-cl.dps.live/carolinatv/carolinatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CEACTVSantiago.cl" status="online",CEAC TV (Santiago) (480p)
 https://hd.chileservidores.cl:1936/ceactv/ceactv/playlist.m3u8
-#EXTINF:-1 tvg-id="ChileVision.cl" status="error",ChileVisión (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ChileVision.cl" status="blocked",ChileVisión (720p) [Geo-blocked]
 http://chv-m3u.chorroaeboy.repl.co
 #EXTINF:-1 tvg-id="ChileVision.cl" status="error",ChileVisión (360p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/chv_003cl
@@ -217,14 +217,14 @@ http://server1.oklanet.cl:1935/maximavideo1/maximavideo1/playlist.m3u8
 https://5eff35271151c.streamlock.net:1936/8090/8090/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioRancaguaFM.cl" status="online",Radio Rancagua FM (768p) [Not 24/7]
 https://5eff35271151c.streamlock.net:1936/8056/8056/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioRitmoFM.cl" status="error",Radio Ritmo FM (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioRitmoFM.cl" status="online",Radio Ritmo FM (720p) [Not 24/7]
 https://5eff35271151c.streamlock.net:1936/8032/8032/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioUniem.cl" status="online",Radio Uniem (480p) [Not 24/7]
 https://5eff35271151c.streamlock.net:1936/8110/8110/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioZetaTV.cl" status="online",Radio Zeta TV (240p) [Not 24/7]
-https://unlimited1-us.dps.live/radioztv/radioztv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioZetaTV.cl" status="timeout",Radio Zeta TV (480p)
 https://unlimited1-cl.dps.live/radioztv/radioztv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioZetaTV.cl" status="error",Radio Zeta TV (240p) [Not 24/7]
+https://unlimited1-us.dps.live/radioztv/radioztv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RCKTV.cl" status="online",RCK TV (720p)
 https://mediacpstreamchile.com:1936/ricardoaravena/ricardoaravena/playlist.m3u8
 #EXTINF:-1 tvg-id="RealProOnline.cl" status="error",RealPro Online (540p)
@@ -337,7 +337,7 @@ http://cl.origin.grupoz.cl/uestv/live/playlist.m3u8
 http://edge1.cl.grupoz.cl/uestv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="UESTV.cl" status="timeout",UESTV (720p)
 https://tls.cdnz.cl/uestv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="ULosLagosTV.cl" status="online",U Los Lagos TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ULosLagosTV.cl" status="error",U Los Lagos TV (1080p) [Not 24/7]
 http://tv.ulagos.cl/web/live.m3u8
 #EXTINF:-1 tvg-id="UMAGTVTelevision.cl" status="timeout",UMAGTV Televisión (Punta Arenas) (720p)
 http://edge1.cl.grupoz.cl/tser5/live/playlist.m3u8
@@ -373,8 +373,6 @@ http://38.131.11.9:1080/play/a00x
 https://srv3.zcast.com.br/juancarlos9451/juancarlos9451/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal Diputados (720p) [Not 24/7]
 http://camara.03.cl.cdnz.cl/camara19/live/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",CHV Noticias (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
 #EXTINF:-1 tvg-id="" status="online",Región Televisión Ñuble (Chillán) (720p) [Not 24/7]
 https://live.tvcontrolcp.com:1936/guzman/guzman/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal SCÑ (San Carlos Ñuble) (720p) [Not 24/7]
@@ -385,6 +383,8 @@ https://pantera1-100gb-cl-movistar.dps.live/estaciontv/estaciontv.smil/playlist.
 https://videostreaming.cloudserverlatam.com/CLOUDFM/CLOUDFM/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Camara de Diputados (DVR) (720p) [Not 24/7]
 http://camara.02.cl.cdnz.cl/cdndvr/ngrp:live_all/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",CHV Noticias (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
 #EXTINF:-1 tvg-id="" status="error",Bajo Cero TV (Corporación Eva) (656p)
 https://stmv.panel.mivideo.pro/bajocerotv/bajocerotv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Spectrum Channel LGBTQ+ (480p) [Not 24/7]
