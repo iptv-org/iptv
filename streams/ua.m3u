@@ -27,7 +27,7 @@ https://langate.tv/promin/live/index.m3u8
 http://109.68.40.67/life/magnolia.m3u8
 #EXTINF:-1 tvg-id="DonbassOnline.ua" status="timeout",Донбас Online (1080p) [Not 24/7]
 http://176.110.1.30:1935/live/donbasonline/playlist.m3u8
-#EXTINF:-1 tvg-id="DonezkTV.ua" status="online",Donezk TV (720p)
+#EXTINF:-1 tvg-id="DonezkTV.ua" status="error",Donezk TV (720p)
 http://stream.dn.ua/hls/stream.m3u8
 #EXTINF:-1 tvg-id="DumskayaTVHD.ua" status="online",Думская ТВ (1080p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/dumska/dumska-abr/playlist.m3u8
@@ -56,7 +56,7 @@ https://cdn1.live-tv.od.ua:8083/a1od/gtvod-abr/playlist.m3u8
 http://95.67.47.114/hls/hdfashion_ua.m3u8
 #EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="error",HDFashion & LifeStyle (1080p)
 http://95.67.47.115/hls/hdfashion_ua.m3u8
-#EXTINF:-1 tvg-id="HersonPlyus.ua" status="blocked",Херсон Плюс (576p)
+#EXTINF:-1 tvg-id="HersonPlyus.ua" status="timeout",Херсон Плюс (576p)
 http://46.175.163.130/ks_plus/index.m3u8
 #EXTINF:-1 tvg-id="IDFashion.ua" status="online",ID Fashion (1080p) [Not 24/7]
 https://idfashion.cdn-02.cosmonova.net.ua/hls/idfashion_ua.m3u8
@@ -173,7 +173,7 @@ https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_mid/index.m3u8
 https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="UATV.ua" status="error",UATV (720p)
 https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_hi/index.m3u8
-#EXTINF:-1 tvg-id="Ukraina24.ua" status="error",Україна 24 (1080p)
+#EXTINF:-1 tvg-id="Ukraina24.ua" status="online",Україна 24 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCMp5Buw-6LpbbV9r9Sl_5yg/live
 #EXTINF:-1 tvg-id="VTV.ua" status="error",ВТВ (576p)
 http://video.vtvplus.com.ua:81/hls/online/index.m3u8
@@ -183,10 +183,6 @@ https://stream.ztv.zp.ua/hls/live.m3u8
 https://cdn1.live-tv.od.ua:8083/zdorovood/zdorovo/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
 http://95.67.106.10/hls/nta_ua_hi/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Телеканал Прямий (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCH9H_b9oJtSHBovh94yB5HA/live
-#EXTINF:-1 tvg-id="" status="online",4 канал (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://hls-live-media.cdn01.net/default/stream_10429_1.m3u8
 #EXTINF:-1 tvg-id="" status="online",Перший Західний (Львов) (576p)
@@ -251,6 +247,10 @@ http://93.78.206.172:8080/stream3/stream.m3u8
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",UkrLive (Перший незалежний) (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCeOlmFkSt4KFVkivMe7uEvw/live
+#EXTINF:-1 tvg-id="" status="error",Телеканал Прямий (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCH9H_b9oJtSHBovh94yB5HA/live
+#EXTINF:-1 tvg-id="" status="error",4 канал (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
 #EXTINF:-1 tvg-id="" status="error",Орбіта ТВ (360p) [Not 24/7]
 http://ftp.orbita.dn.ua/hls/orbita.m3u8
 #EXTINF:-1 tvg-id="" status="error",CNL Европа (216p)
