@@ -56,11 +56,11 @@ https://cdn1.live-tv.od.ua:8083/a1od/gtvod-abr/playlist.m3u8
 http://95.67.47.114/hls/hdfashion_ua.m3u8
 #EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="error",HDFashion & LifeStyle (1080p)
 http://95.67.47.115/hls/hdfashion_ua.m3u8
-#EXTINF:-1 tvg-id="HersonPlyus.ua" status="timeout",Херсон Плюс (576p)
+#EXTINF:-1 tvg-id="HersonPlyus.ua" status="blocked",Херсон Плюс (576p)
 http://46.175.163.130/ks_plus/index.m3u8
 #EXTINF:-1 tvg-id="IDFashion.ua" status="online",ID Fashion (1080p) [Not 24/7]
 https://idfashion.cdn-02.cosmonova.net.ua/hls/idfashion_ua.m3u8
-#EXTINF:-1 tvg-id="Inshiy.ua" status="online",Інший (720p)
+#EXTINF:-1 tvg-id="Inshiy.ua" status="error",Інший (720p)
 https://cdn1.live-tv.od.ua:8083/ktkod/ktkod/playlist.m3u8
 #EXTINF:-1 tvg-id="Inter.ua" status="online",Iнтер (576p)
 https://edge3.iptv.macc.com.ua/img/inter_3/index.m3u8
@@ -84,7 +84,7 @@ http://kiev1-cdn.lanet.tv/live/1008.m3u8
 http://live.m2.tv/hls2/stream.m3u8
 #EXTINF:-1 tvg-id="M2.ua" status="online",M2 (540p)
 http://live.m2.tv/hls3/stream.m3u8
-#EXTINF:-1 tvg-id="MostVideoTV.ua" status="online",MostVideo.TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MostVideoTV.ua" status="error",MostVideo.TV (720p) [Not 24/7]
 http://w4.mostvideo.tv/tv/ch1.m3u8
 #EXTINF:-1 tvg-id="Nadiya.ua" status="online",Надия/Новый канал (576p) [Not 24/7]
 http://nadiya.home-net.com.ua/mob/mystream.m3u8
@@ -102,13 +102,13 @@ http://85.238.112.40:8810/hls_sec/239.33.75.33-.m3u8
 https://cdn1.live-tv.od.ua:8083/riood/riood-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="Odessa.ua" status="error",Одесса (576p) [Geo-blocked]
 https://cdn1.live-tv.od.ua:8083/riood/riood/playlist.m3u8
-#EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="timeout",Перший незалежний (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="error",Перший незалежний (1080p) [Not 24/7]
 http://app.live.112.events/hls-ua/112hd_hi/index.m3u8
-#EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="timeout",Перший незалежний (1080p)
+#EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="error",Перший незалежний (1080p)
 https://app.live.112.events/hls-ua/112hd_mid/index.m3u8
-#EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="timeout",Перший незалежний (1080p)
+#EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="error",Перший незалежний (1080p)
 https://app.live.112.events/hls/112hd_hi/index.m3u8
-#EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="timeout",Перший незалежний (1080p)
+#EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="error",Перший незалежний (1080p)
 https://app.live.112.events/hls/112hd_mid/index.m3u8
 #EXTINF:-1 tvg-id="PervyygorodskoyKrivoyRog.ua" status="online",Первый городской (Кривой Рог) (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/1tvkr/1tvkr-abr/playlist.m3u8
@@ -175,7 +175,7 @@ https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_low/index.m3u8
 https://ua-tv.cdn-02.cosmonova.net.ua/hls/ua-tv_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="Ukraina24.ua" status="online",Україна 24 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCMp5Buw-6LpbbV9r9Sl_5yg/live
-#EXTINF:-1 tvg-id="VTV.ua" status="timeout",ВТВ (576p)
+#EXTINF:-1 tvg-id="VTV.ua" status="error",ВТВ (576p)
 http://video.vtvplus.com.ua:81/hls/online/index.m3u8
 #EXTINF:-1 tvg-id="Z.ua" status="online",Z (Запорожье) (1080p)
 https://stream.ztv.zp.ua/hls/live.m3u8
@@ -216,8 +216,6 @@ http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_hi/i
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Кривой Рог) (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/1tvkr/1tvkr/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
-https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (576p)
 http://91.194.79.46:8081/stream2/channel2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
@@ -236,8 +234,6 @@ https://cdn1.live-tv.od.ua:8083/1tvod/1tvod-abr/playlist.m3u8
 https://cdn1.live-tv.od.ua:8083/1tvod/1tvod/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ТРК Репортер (480p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Южная Волна (720p) [Not 24/7]
-https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Прямий (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
@@ -249,6 +245,8 @@ http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
 http://46.175.163.130/live_yatb/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Micto (360p)
 http://93.78.206.172:8080/stream3/stream.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",I-UA.tv (1080p)
+https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="error",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",UkrLive (Перший незалежний) (1080p)
@@ -263,6 +261,8 @@ http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_3.m3u8
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Трофей ТВ (720p)
 https://5db1ab4f970be.streamlock.net/live/smil:trofey.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Южная Волна (720p) [Not 24/7]
+https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Академия (Одесса) (720p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/36chod/36chod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Kratu (576p) [Not 24/7]
