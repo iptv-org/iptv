@@ -90,7 +90,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/franc
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCJldRgT_D7Am-ErRHQZ90uw/live
 #EXTINF:-1 tvg-id="Francophonie24.fr" status="timeout",Francophonie24 (1080p)
 https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Francophonie.fr" status="timeout",Francophonie (360p)
+#EXTINF:-1 tvg-id="Francophonie.fr" status="error",Francophonie (360p)
 http://mv2.tvfrancophonie.org/live/Stream1/playlist.m3u8
 #EXTINF:-1 tvg-id="GenerationsTV.fr" status="online",Generations TV (576p)
 https://edge.vedge.infomaniak.com/livecast/ik:generation-tv/manifest.m3u8
@@ -134,9 +134,9 @@ https://panel.streamparis.fr:3743/stream/play.m3u8
 http://51.210.199.10/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaCinema.fr" status="online",Persiana Cinema (720p)
 http://51.210.199.15/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaClassic.fr" status="online",Persiana Classic (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PersianaClassic.fr" status="error",Persiana Classic (720p) [Not 24/7]
 http://51.210.199.26/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaComedy.fr" status="online",Persiana Comedy (720p)
+#EXTINF:-1 tvg-id="PersianaComedy.fr" status="error",Persiana Comedy (720p)
 http://51.210.199.27/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaDocumentary.fr" status="online",Persiana Documentary (720p) [Not 24/7]
 http://51.210.199.23/hls/stream.m3u8
@@ -152,7 +152,7 @@ http://51.210.199.22/hls/stream.m3u8
 http://51.210.199.18/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaKorea.fr" status="online",Persiana Korea (720p)
 http://51.210.199.14/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaMusic.fr" status="online",Persiana Music (720p)
+#EXTINF:-1 tvg-id="PersianaMusic.fr" status="error",Persiana Music (720p)
 http://51.210.199.24/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaNostalgia.fr" status="online",Persiana Nostalgia (720p)
 http://51.210.199.20/hls/stream.m3u8
@@ -202,12 +202,12 @@ http://185.234.217.27:8002/play/a047/index.m3u8
 http://f24hls-i.akamaihd.net/hls/live/520845/F24_ES_HI_HLS/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Cnews (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x3b68jn
+#EXTINF:-1 tvg-id="" status="online",Euronews Albania (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
 #EXTINF:-1 tvg-id="" status="online",France 24 Français (1080p)
 https://static.france24.com/live/F24_FR_HI_HLS/live_tv.m3u8
 #EXTINF:-1 tvg-id="" status="online",France 24 Français (1080p)
 https://static.france24.com/live/F24_FR_HI_HLS/live_web.m3u8
-#EXTINF:-1 tvg-id="" status="online",Euronews Hungary (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
 #EXTINF:-1 tvg-id="" status="online",Euronews по-русски (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
 #EXTINF:-1 tvg-id="" status="online",Euronews en Español (720p) [Not 24/7]
@@ -239,8 +239,8 @@ http://185.234.217.27:8002/play/a03u/index.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x62islg
 #EXTINF:-1 tvg-id="" status="error",Wéo (Picardie) (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x63085w
-#EXTINF:-1 tvg-id="" status="error",Euronews Albania (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
+#EXTINF:-1 tvg-id="" status="error",Euronews Hungary (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
 #EXTINF:-1 tvg-id="" status="error",L'EQUIPE (360p)
 https://s6.tntendirect.com/lequipe21/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",France 24 Español (576p)
