@@ -109,7 +109,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://cdnlive.codev8.net/rtvalive/smil:channel1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalSurAndalucia.es" status="online",Canal Sur Andalucía (720p)
 https://cdnlive.shooowit.net/rtvalive/smil:channel1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalTaronja.es",Canal Taronja Osona i Moianés (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="CanalTaronja.es" status="blocked",Canal Taronja Osona i Moianés (480p) [Not 24/7]
 https://taronjavic.streaming-pro.com/hls/vic.m3u8
 #EXTINF:-1 tvg-id="CCMAExclusiu1.es" status="online",CCMA Exclusiu 1 (1080p) [Not 24/7]
 https://directes-tv-int.ccma.cat/int/ngrp:oca1_web/playlist_DVR.m3u8
@@ -119,7 +119,7 @@ https://directes-tv-int.ccma.cat/int/ngrp:oca2_web/playlist_DVR.m3u8
 https://rtvelivestreamv3.akamaized.net/rtvesec/clan_bkp_dvr.m3u8
 #EXTINF:-1 tvg-id="Clan.es" status="timeout",Clan TVE (1080p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/5466990.m3u8
-#EXTINF:-1 tvg-id="CMMTV.es",CMM TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="CMMTV.es" status="online",CMM TV (360p) [Not 24/7]
 http://cdnapi.kaltura.com/p/2288691/sp/39582391/playManifest/entryId/0_xs45iy5i/format/applehttp/.m3u8
 #EXTINF:-1 tvg-id="Condavision.es" status="timeout",Condavisión (720p) [Not 24/7]
 http://145.239.141.154:1935/live/uSCQc5ky/playlist.m3u8
@@ -227,7 +227,7 @@ https://livelist01.yowi.tv/lista/0d6c7ccfac89946bfd41ae34c527e8d94734065c/master
 https://livelist01.yowi.tv/lista/8635ae40f8d1a32eccd63d1f58b55662c9c98f9f/master.m3u8
 #EXTINF:-1 tvg-id="HuescaTV.es" status="error",Huesca TV (240p) [Not 24/7]
 https://streaming2.radiohuesca.com/hls-live/livepkgr/_definst_/huescatv/huescatv.m3u8
-#EXTINF:-1 tvg-id="IB3.es" status="error",IB3 Global (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="IB3.es" status="online",IB3 Global (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCff_CBVJDTHP4wOHPjP5BMg/live
 #EXTINF:-1 tvg-id="IbizaGlobalTV.es" status="online",Ibiza Global TV (720p) [Not 24/7]
 https://ibgrtv.streaming-pro.com/hls/ibgrlive.m3u8
@@ -249,12 +249,12 @@ https://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8
 https://rtvelivestreamv3.akamaized.net/rtvesec/la1_bkp_dvr.m3u8
 #EXTINF:-1 tvg-id="La1.es" status="timeout",La 1 (720p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/1688877.m3u8
+#EXTINF:-1 tvg-id="La2.es" status="online",La 2 (1080p)
+https://rtvelivestreamv3.akamaized.net/rtvesec/la2_bkp_dvr.m3u8
+#EXTINF:-1 tvg-id="La2.es" status="online",La 2 (1080p)
+https://ztnr.rtve.es/ztnr/1688885.m3u8
 #EXTINF:-1 tvg-id="La2.es" status="online",La 2 (720p)
 https://hlsliveamdgl0-lh.akamaihd.net/i/hlsdvrlive_1@60531/master.m3u8
-#EXTINF:-1 tvg-id="La2.es" status="timeout",La 2 (1080p)
-https://rtvelivestreamv3.akamaized.net/rtvesec/la2_bkp_dvr.m3u8
-#EXTINF:-1 tvg-id="La2.es" status="timeout",La 2 (1080p)
-https://ztnr.rtve.es/ztnr/1688885.m3u8
 #EXTINF:-1 tvg-id="La8Avila.es" status="online",La 8 Avila (720p) [Not 24/7]
 https://cdnlive.shooowit.net/la8avilalive/smil:streamswitchingchannel.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="La8Bierzo.es" status="online",La 8 Bierzo (720p)
@@ -263,7 +263,7 @@ https://cdnlive.shooowit.net/la8bierzolive/smil:streamswitchingchannel.smil/play
 https://cdnlive.shooowit.net/la8burgoslive/smil:streamswitchingchannel.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="La8Leon.es" status="online",La 8 Leon (720p) [Not 24/7]
 https://cdnlive.shooowit.net/la8leonlive/smil:streamswitchingchannel.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="La8Mediterraneo.es" status="online",La 8 Mediterráneo (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="La8Mediterraneo.es" status="error",La 8 Mediterráneo (1080p) [Not 24/7]
 https://play.cdn.enetres.net/489DDF7FE98241D19D8970314BC9D3EF021/0226/playlist.m3u8
 #EXTINF:-1 tvg-id="La8Palencia.es" status="online",La 8 Palencia (270p) [Not 24/7]
 https://cdnlive.shooowit.net/la8palencialive/smil:streamswitchingchannel.smil/playlist.m3u8
@@ -281,7 +281,7 @@ https://cdnlive.shooowit.net/la8zamoralive/smil:streamswitchingchannel.smil/play
 https://cdn01.yowi.tv/I7V5TFE97R/master.m3u8
 #EXTINF:-1 tvg-id="LaOtra.es" status="online",LaOtra (720p)
 https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/laotra_1/index.m3u8
-#EXTINF:-1 tvg-id="LaUrbanTV.es" status="error",La Urban TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="LaUrbanTV.es" status="online",La Urban TV (1080p) [Not 24/7]
 https://urbanrevolution.es:8443/live/TV/playlist.m3u8
 #EXTINF:-1 tvg-id="LaVoz24h.es" status="error",La Voz 24h (720p)
 https://pull12.atresmedia.com/lavoz/master.m3u8
@@ -297,7 +297,7 @@ http://streamer1.streamhost.org/salive/logosH/playlist.m3u8
 https://streamer1.streamhost.org/salive/logosH/master.m3u8
 #EXTINF:-1 tvg-id="M95TelevisionMarbella.es" status="online",M95 Televisión Marbella (576p) [Not 24/7]
 https://limited2.todostreaming.es/live/m95-livestream.m3u8
-#EXTINF:-1 tvg-id="MaestratTV.es" status="online",Maestrat TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MaestratTV.es" status="timeout",Maestrat TV (1080p) [Not 24/7]
 https://stream.maestrat.tv/hls/stream.m3u8
 #EXTINF:-1 tvg-id="MarTV.es" status="error",Mar TV (1080p) [Not 24/7]
 http://iptv.btpba1.es.network.do:8080/martv-web/video.m3u8
@@ -351,7 +351,7 @@ https://5b38ce71f1f00.streamlock.net/8162/8162/playlist.m3u8
 https://rmtvlive-lh.akamaihd.net/i/rmtv_1@154306/master.m3u8
 #EXTINF:-1 tvg-id="RealMadridTV.es" status="timeout",Real Madrid TV
 http://154.62.74.11:1935/live/realmadridnntv/playlist.m3u8
-#EXTINF:-1 tvg-id="RTVC.es" status="online",RTVC (Radio Televisión Canaria) (720p)
+#EXTINF:-1 tvg-id="RTVC.es" status="error",RTVC (Radio Televisión Canaria) (720p)
 https://rtvc-live1-rm.flumotion.com/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVVida.es" status="online",RTV Vida (1080p)
 https://vidartv2.todostreaming.es/live/radiovida-emisiontvhd.m3u8
@@ -441,22 +441,14 @@ https://mccdn-hls-a01-rbx.datah0stn3t.com/live/xtra/index.m3u8
 https://mccdn-hls-a01-rbx.datah0stn3t.com/live/xtra/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Junta Castilla y León (1080p) [Not 24/7]
 https://16escalones-live2.flumotion.com/chunks.m3u8
-#EXTINF:-1 tvg-id="" status="online",Zafra TV (720p) [Not 24/7]
-https://cloud.streamingconnect.tv:455/radiotvzafra/radiotvzafra.m3u8
 #EXTINF:-1 tvg-id="" status="online",A3Series Internacional
 https://mdstrm.com/live-stream-playlist/5cae562e0ca2f30815231c0f.m3u8?access_token=DST4b676d7da5a2a92ee15f8efcbcd00606
-#EXTINF:-1 tvg-id="" status="online",Canal 24 horas (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7QZIf0dta-XPXsp9Hv4dTw/live
 #EXTINF:-1 tvg-id="" status="online",LA7 (720p)
 https://cdnlive.shooowit.net/la7live/smil:channel1.smil/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",+24 (576p)
-https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586402/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",+24 (576p)
-https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586403/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",+24 (576p)
-https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586404/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",+24 (576p)
-https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586405/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",Canal 24 horas (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7QZIf0dta-XPXsp9Hv4dTw/live
+#EXTINF:-1 tvg-id="" status="online",Zafra TV (720p) [Not 24/7]
+https://cloud.streamingconnect.tv:455/radiotvzafra/radiotvzafra.m3u8
 #EXTINF:-1 tvg-id="" status="online",Radio Rutas del Perú (360p) [Not 24/7]
 https://tv.portalexpress.es:3731/stream/play.m3u8
 #EXTINF:-1 tvg-id="" status="online",Aragón Radio (Zaragoza) [Not 24/7]
@@ -515,9 +507,17 @@ https://cdn041.fractalmedia.es/stream/live/udtv/index.m3u8
 https://cloud.streamingconnect.tv:455/mezquita/mezquita.m3u8
 #EXTINF:-1 tvg-id="" status="error",BARVA.TV (360p)
 https://cp.sradiotv.com:1936/8076/8076/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",+24 (576p)
+https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586402/master.m3u8
+#EXTINF:-1 tvg-id="" status="error",+24 (576p)
+https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586403/master.m3u8
+#EXTINF:-1 tvg-id="" status="error",+24 (576p)
+https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586404/master.m3u8
+#EXTINF:-1 tvg-id="" status="error",+24 (576p)
+https://hlsliveamdgl0-lh.akamaihd.net/i/hlslive_1@586405/master.m3u8
+#EXTINF:-1 tvg-id="" status="error",TAC 12 (720p) [Not 24/7]
+https://nodo01-cloud01.streaming-pro.com/tac12tv/hls/tac12_2.m3u8
 #EXTINF:-1 tvg-id="" status="error",TAC 12 (720p) [Not 24/7]
 https://nodo02-cloud01.streaming-pro.com/tac12tv/hls/tac12_2.m3u8
 #EXTINF:-1 tvg-id="" status="error",RT (720p)
 https://rt-esp-gd.secure2.footprint.net/1102.m3u8
-#EXTINF:-1 tvg-id="",TAC 12 (720p) [Not 24/7]
-https://nodo01-cloud01.streaming-pro.com/tac12tv/hls/tac12_2.m3u8
