@@ -5,7 +5,7 @@ https://5b464b69d264e.streamlock.net/Channels_live/ngrp:amordiscos_all/playlist.
 https://movil.ejeserver.com/live/verteve.m3u8
 #EXTINF:-1 tvg-id="AvivamientoTV.co" status="online",Avivamiento TV (1080p) [Not 24/7]
 https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8
-#EXTINF:-1 tvg-id="BuenisimaRadioTV.co" status="online",Buenísima Radio TV (Gamarra | Cesar) (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="BuenisimaRadioTV.co" status="error",Buenísima Radio TV (Gamarra | Cesar) (1080p) [Not 24/7]
 https://streamyes.alsolnet.com/buturama/live/playlist.m3u8
 #EXTINF:-1 tvg-id="CaliTV.co" status="online",Cali TV (Santiago de Cali | Valle del Cauca) (540p) [Not 24/7]
 https://5ab772334c39c.streamlock.net/live-calitv/calitv1/playlist.m3u8
@@ -76,12 +76,10 @@ http://vbox2.cehis.net/live-teleislas/smil:teleislas.smil/playlist.m3u8
 https://liveingesta118.cdnmedia.tv/telemedellintvlive/smil:dvrlive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TelemusicaTV.co" status="timeout",Telemúsica TV (480p)
 https://5b464b69d264e.streamlock.net/Channels_live/ngrp:telemusica_all/playlist.m3u8
-#EXTINF:-1 tvg-id="Telepacifico.co",Telepacífico (Santiago de Cali | Valle del Cauca) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Telepacifico.co" status="online",Telepacífico (Santiago de Cali | Valle del Cauca) (720p) [Not 24/7]
 https://stream.logicideas.media/telepacifico-live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Telepetroleo.co" status="error",Telepetróleo (Barrancabermeja | Santander) (720p)
 https://iptv-all.lanesh4d0w.repl.co/colombia/telepetroleo.m3u8
-#EXTINF:-1 tvg-id="TelevisionCelestial.co" status="error",Television Celestial (480p) [Not 24/7]
-https://stmvideo2.livecastv.com/celestialtv/celestialtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGracia.co" status="online",TVGracia (720p)
 https://streamyes.alsolnet.com/tvgracia/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNGlobal.co" status="online",TVN Global (614p) [Not 24/7]
@@ -90,16 +88,18 @@ https://stmv2.voxtvhd.com.br/tvnglobal/tvnglobal/playlist.m3u8
 https://live-edge-bhs-1.cdn.enetres.net/184784E1D210401F8041E3E1266822CC021/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal 6 (Bogotà DC) (720p)
 http://190.93.137.61:1935/live/canal6/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",CTV barranquilla (Barranquilla | Atlántico) (720p)
+https://59a564764e2b6.streamlock.net/ctvbarranquilla/_definst_/ctv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal Trece (1080p)
 https://stream.logicideas.media/canaltrece-live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal Trece + (1080p)
 https://stream.logicideas.media/canaltreceplus-live/smil:live1plus.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Canal Zoom (Bogotà DC) (1080p)
+https://canalzoom.itex.com.co:3027/live/canalzoombr1live.m3u8
 #EXTINF:-1 tvg-id="" status="online",Multicanal Televisión (Cali | Valle del Cauca) (720p)
 https://cloud2.streaminglivehd.com:1936/8010/8010/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal CNC Cartagena (Cartagena | Bolívar) (720p)
 https://cloud2.streaminglivehd.com:1936/8054/8054/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Canal NorteVision (Pasto | Nariño) (480p)
-https://eu1.servers10.com:8081/8092/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal CNC HD Tulua (Tulua | Valle del Cauca) (1080p)
 https://servers.amelbasoluciones.co:19360/cnctulua/cnctulua.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal Tele Palmar (Palmira | Valle del cauca) (720p)
@@ -108,6 +108,10 @@ https://servers.amelbasoluciones.co:19360/telepalmarlive/telepalmarlive.m3u8
 https://stmv1.voxtvhd.com.br/alpavision/alpavision/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal CNC Montería (720p)
 https://stmv1.voxtvhd.com.br/cncmonteria/cncmonteria/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Cosmovision (Medellin | Antioquia) (720p)
+https://videohls2.cosmovision.tv/hls/sd.m3u8
+#EXTINF:-1 tvg-id="" status="online",Canal NorteVision (Pasto | Nariño) (480p)
+https://eu1.servers10.com:8081/8092/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",LATAM TV (Bogotà) (540p) [Not 24/7]
 https://q-s-l4n3sh4d0w.onrender.com/iptv-query?streaming-ip=https://livestream.com/latamtv/envivo
 #EXTINF:-1 tvg-id="" status="online",Teleamiga (Bogotà | Cundinamarca) (480p) [Not 24/7]
