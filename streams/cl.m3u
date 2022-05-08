@@ -7,7 +7,7 @@ https://unlimited1-us.dps.live/adntv/adntv.smil/playlist.m3u8
 https://unlimited6-cl.dps.live/adntv/adntv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AERadioTV.cl" status="timeout",AE Radio TV (720p) [Not 24/7]
 http://edge1.cl.grupoz.cl/aeradio/live/index.m3u8
-#EXTINF:-1 tvg-id="AlegriaTV.cl" status="online",Alegria TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="AlegriaTV.cl" status="blocked",Alegria TV (480p) [Geo-blocked]
 https://593b04c4c5670.streamlock.net/8192/8192/playlist.m3u8
 #EXTINF:-1 tvg-id="AlternativaTV.cl" status="online",Alternativa TV (Huasco) (720p) [Not 24/7]
 https://srv2.zcast.com.br/carlos2469/carlos2469/playlist.m3u8
@@ -15,7 +15,7 @@ https://srv2.zcast.com.br/carlos2469/carlos2469/playlist.m3u8
 https://unlimited6-cl.dps.live/atv/atv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArabTV.cl" status="online",ARABTV (720p)
 https://livefocamundo.com:8081/arabtv/playlist.m3u8
-#EXTINF:-1 tvg-id="AricaTV.cl" status="blocked",Arica TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="AricaTV.cl" status="error",Arica TV (480p) [Not 24/7]
 https://5eff35271151c.streamlock.net:1936/8002/8002/playlist.m3u8
 #EXTINF:-1 tvg-id="AtacamaTV.cl" status="online",Atacama TV (Copiapó) (720p) [Not 24/7]
 https://v2.tustreaming.cl/atacamatv/index.m3u8
@@ -32,9 +32,9 @@ https://pantera1-100gb-cl-movistar.dps.live/campustv/campustv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal2HDSanAntonio.cl" status="online",Canal 2 (San Antonio) (720p) [Not 24/7]
 https://unlimited1-us.dps.live/canal2/canal2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9BioBioTelevision.cl" status="online",Canal 9 Bío Bío Televisión (1080p) [Not 24/7]
-https://unlimited6-cl.dps.live/c9/c9.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal9BioBioTelevision.cl" status="online",Canal 9 Bío Bío Televisión (1080p) [Not 24/7]
 https://unlimited1-us.dps.live/c9/c9.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal9BioBioTelevision.cl" status="online",Canal 9 Bío Bío Televisión (1080p) [Not 24/7]
+https://unlimited6-cl.dps.live/c9/c9.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal13.cl" status="blocked",Canal 13 (720p) [Geo-blocked]
 http://canal13-m3u.chorroaeboy.repl.co
 #EXTINF:-1 tvg-id="Canal21.cl" status="timeout",Canal 21 (720p) [Not 24/7]
@@ -131,7 +131,7 @@ https://mediacpstreamchile.com:1936/hiperconectados/hiperconectados/playlist.m3u
 https://inliveserver.com:1936/11010/11010/playlist.m3u8
 #EXTINF:-1 tvg-id="HolvoetTVCopiapo.cl" status="online",Holvoet TV (Copiapó) (720p) [Not 24/7]
 https://unlimited1-us.dps.live/holvoettv/holvoettv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Interradio.cl" status="timeout",Interradio (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Interradio.cl" status="error",Interradio (1080p) [Not 24/7]
 https://video01.logicahost.com.br/interradiofrutillar/smil:transcoder.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="IquiqueTV.cl" status="online",Iquique TV [Not 24/7]
 https://marine2.miplay.cl/arcatel/iquiquetv720/video.m3u8
@@ -161,7 +161,7 @@ https://593b04c4c5670.streamlock.net/8008/8008/playlist.m3u8
 https://server1.oklanet.cl:1936/maximavideo1/maximavideo1/playlist.m3u8
 #EXTINF:-1 tvg-id="Mega.cl" status="blocked",Mega [Geo-blocked]
 http://186.67.117.178:8081/play/a00x
-#EXTINF:-1 tvg-id="Meganoticias.cl" status="online",Meganoticias (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Meganoticias.cl" status="error",Meganoticias (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCkccyEbqhhM3uKOI6Shm-4Q/live
 #EXTINF:-1 tvg-id="MIX247.cl" status="error",MIX 24/7 Vdj Retro (720p)
 http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/1.m3u8
@@ -295,7 +295,7 @@ https://593b04c4c5670.streamlock.net/8014/8014/playlist.m3u8
 http://cdn.streamingmedia.cl:1935/live/canalcosta/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCosta.cl" status="error",TV Costa (San Antonio) (720p) [Not 24/7]
 https://hd.chileservidores.cl:1936/tvcosta1/tvcosta1/playlist.m3u8
-#EXTINF:-1 tvg-id="TVElquiLaSerena.cl" status="online",TV Elqui (La Serena) (720p)
+#EXTINF:-1 tvg-id="TVElquiLaSerena.cl" status="error",TV Elqui (La Serena) (720p)
 https://5eff35271151c.streamlock.net:1936/8070/8070/playlist.m3u8
 #EXTINF:-1 tvg-id="TVN.cl" status="error",TVN (720p) [Not 24/7]
 https://unlimited1-us.dps.live/tvn/tvn.smil/playlist.m3u8
@@ -305,7 +305,7 @@ https://unlimited10-cl.dps.live/tvn/tvn.smil/playlist.m3u8
 https://pantera1-100gb-cl-movistar.dps.live/tvo/tvo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVOSanVicente.cl" status="timeout",TVO San Vicente (720p) [Not 24/7]
 https://unlimited2-cl-movistar.dps.live/tvo/tvo.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVOTocopilla.cl" status="online",TVO Tocopilla (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVOTocopilla.cl" status="error",TVO Tocopilla (360p) [Not 24/7]
 http://srv3.zcast.com.br/cristian5592/cristian5592/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPop.cl" status="online",TV Pop (720p)
 https://v4.tustreaming.cl/poptv/playlist.m3u8
@@ -373,6 +373,8 @@ http://38.131.11.9:1080/play/a00x
 https://srv3.zcast.com.br/juancarlos9451/juancarlos9451/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal Diputados (720p) [Not 24/7]
 http://camara.03.cl.cdnz.cl/camara19/live/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",CHV Noticias (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
 #EXTINF:-1 tvg-id="" status="online",Región Televisión Ñuble (Chillán) (720p) [Not 24/7]
 https://live.tvcontrolcp.com:1936/guzman/guzman/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal SCÑ (San Carlos Ñuble) (720p) [Not 24/7]
@@ -383,8 +385,6 @@ https://pantera1-100gb-cl-movistar.dps.live/estaciontv/estaciontv.smil/playlist.
 https://videostreaming.cloudserverlatam.com/CLOUDFM/CLOUDFM/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Camara de Diputados (DVR) (720p) [Not 24/7]
 http://camara.02.cl.cdnz.cl/cdndvr/ngrp:live_all/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",CHV Noticias (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
 #EXTINF:-1 tvg-id="" status="error",Bajo Cero TV (Corporación Eva) (656p)
 https://stmv.panel.mivideo.pro/bajocerotv/bajocerotv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Spectrum Channel LGBTQ+ (480p) [Not 24/7]
