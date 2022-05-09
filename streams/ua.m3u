@@ -116,7 +116,7 @@ https://cdn1.live-tv.od.ua:8083/1tvkr/1tvkr-abr/playlist.m3u8
 http://91.194.79.46:8081/stream1/channel1/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioLyuks.ua" status="online",Радио Люкс (1080p)
 https://stream1.luxnet.ua/luxstudio/smil:luxstudio.stream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Renome.ua" status="online",Renome (576p)
+#EXTINF:-1 tvg-id="Renome.ua" status="error",Renome (576p)
 http://85.238.112.40:8810/hls_sec/online/list-renome.m3u8
 #EXTINF:-1 tvg-id="Simon.ua" status="timeout",Simon (576p) [Not 24/7]
 https://hls.simon.ua/live-HD/live/playlist.m3u8
@@ -185,6 +185,8 @@ https://cdn1.live-tv.od.ua:8083/zdorovood/zdorovo/playlist.m3u8
 http://95.67.106.10/hls/nta_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Телеканал Прямий (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCH9H_b9oJtSHBovh94yB5HA/live
+#EXTINF:-1 tvg-id="" status="online",4 канал (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://hls-live-media.cdn01.net/default/stream_10429_1.m3u8
 #EXTINF:-1 tvg-id="" status="online",Перший Західний (Львов) (576p)
@@ -224,8 +226,6 @@ http://95.67.106.10/hls/nta_ua_low/index.m3u8
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Прямий (576p)
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_mid/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",34 канал (576p) [Not 24/7]
-http://streamvideol.luxnet.ua/34ua/34ua.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",IHTEP (576p)
 https://edge1.iptv.macc.com.ua/img/inter_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (504p)
@@ -239,6 +239,8 @@ https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",34 канал (576p) [Not 24/7]
+http://streamvideol.luxnet.ua/34ua/34ua.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ОТВ (Днепр) (576p)
 http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ЯТБ (576p)
@@ -249,8 +251,6 @@ http://93.78.206.172:8080/stream3/stream.m3u8
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",UkrLive (Перший незалежний) (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCeOlmFkSt4KFVkivMe7uEvw/live
-#EXTINF:-1 tvg-id="" status="error",4 канал (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
 #EXTINF:-1 tvg-id="" status="error",Орбіта ТВ (360p) [Not 24/7]
 http://ftp.orbita.dn.ua/hls/orbita.m3u8
 #EXTINF:-1 tvg-id="" status="error",CNL Европа (216p)
