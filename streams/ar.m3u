@@ -64,12 +64,12 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canalccor
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g5.proy-hor.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8?sense=true
-#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
-https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="iPhone",Canal Luz (1080p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
+https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalProvincial.ar" status="online",Canal Provincial (San Miguel) (360p) [Not 24/7]
 http://www.trimi.com.ar/provincial/streaming/mystream.m3u8
 #EXTINF:-1 tvg-id="CanalTDC.ar" status="online",CANAL TDC (1080p) [Not 24/7]
@@ -84,9 +84,9 @@ https://59537faa0729a.streamlock.net/cincotv/cincotv/playlist.m3u8
 https://5fb24b460df87.streamlock.net/live-cont.ar/cinear/playlist.m3u8
 #EXTINF:-1 tvg-id="CiudadTVResistencia.ar" status="online",Ciudad TV Resistencia (Chaco) (720p) [Not 24/7]
 http://coninfo.net:1935/chacodxdtv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="CrossingCanalIPTV.ar" status="online",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CrossingCanalIPTV.ar" status="error",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
 https://vivo.solumedia.com:19360/crossing/crossing.m3u8
-#EXTINF:-1 tvg-id="DeporTV.ar" status="error",DeporTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="DeporTV.ar" status="online",DeporTV (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSmh3DFxBwFurMttT60PQ1g/live
 #EXTINF:-1 tvg-id="ElDoce.ar" status="online",El Doce TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?feature=emb_title&streaming-ip=https://www.youtube.com/watch?v=gBbMbqILzXU
@@ -142,7 +142,7 @@ http://live-edge01.telecentro.net.ar/live/smil:trm.smil/playlist.m3u8
 https://live.admefy.com/live/default/great_salmon_9bd9d.m3u8
 #EXTINF:-1 tvg-id="TVManaArgentina.ar" status="online",TV Maná Argentina (576p) [Not 24/7]
 http://streamspub.manasat.com:1935/tvar/tvmanaar2/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPublica.ar" status="error",TV Pública (TVP) (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVPublica.ar" status="online",TV Pública (TVP) (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/TVPublicaArgentina/live
 #EXTINF:-1 tvg-id="TVUniversidad.ar" status="online",TVU Universidad Nacional de La Plata (720p) [Not 24/7]
 https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8
