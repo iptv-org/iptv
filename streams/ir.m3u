@@ -148,7 +148,7 @@ http://51.210.199.29/hls/stream.m3u8
 https://live1.presstv.ir/live/presstvfr/index.m3u8
 #EXTINF:-1 tvg-id="PressTV.ir" status="online",Press TV English (720p)
 https://live.presstv.ir/liveprs/smil:liveprs/playlist.m3u8
-#EXTINF:-1 tvg-id="RangarangTV.ir" status="online",Rangarang TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RangarangTV.ir" status="error",Rangarang TV (720p) [Not 24/7]
 https://iptv.rangarang.us/live/playlist.m3u8
 #EXTINF:-1 tvg-id="River.ir" status="error",GEM River (360p)
 http://65.21.196.79/gem_river/master.m3u8
@@ -215,6 +215,8 @@ https://live.presstv.ir/live/smil:live.smil/playlist.m3u8
 http://178.252.143.156:1935/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",QAZVIN (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:qazvin/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Khatereh TV (368p) [Geo-blocked]
+https://5caf24a595d94.streamlock.net:1937/8130/8130/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",4U TV (720p) [Not 24/7]
 http://116.202.255.113:1935/4utv/livehd/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",4U TV (480p) [Not 24/7]
@@ -235,8 +237,6 @@ http://159.69.58.154/t2_movies/master.m3u8
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/56
 #EXTINF:-1 tvg-id="" status="error",1TvPersian (720p) [Not 24/7]
 https://1-215-11778-1.b.cdn13.com/onetvpersia001.m3u8
-#EXTINF:-1 tvg-id="" status="error",Khatereh TV (368p) [Geo-blocked]
-https://5caf24a595d94.streamlock.net:1937/8130/8130/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Faraz TV (720p) [Not 24/7]
 https://faraztv.net/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="error",Valiasr (480p)
