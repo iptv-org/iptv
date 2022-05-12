@@ -50,9 +50,9 @@ https://stream.mariatvcdn.com/canaleventuno/f5d2060b3682e0dfffd5b2f18e935ad3.sdp
 #EXTINF:-1 tvg-id="CanaleItalia83.it" status="error",Canale Italia 83 (576p) [Not 24/7]
 http://ovp-live.akamaized.net/ac024_live/video1/playlist.m3u8
 #EXTINF:-1 tvg-id="CarinaTV.it" status="online",Carina TV (720p)
-http://wms.shared.streamshow.it/carinatv/carinatv/playlist.m3u8
-#EXTINF:-1 tvg-id="CarinaTV.it" status="online",Carina TV (720p)
 http://wms.shared.streamshow.it/carinatv/mp4:carinatv/playlist.m3u8
+#EXTINF:-1 tvg-id="CarinaTV.it" status="error",Carina TV (720p)
+http://wms.shared.streamshow.it/carinatv/carinatv/playlist.m3u8
 #EXTINF:-1 tvg-id="Cine34.it" status="blocked",Cine 34 [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(b6)/index.m3u8
 #EXTINF:-1 tvg-id="ClassCNBC.us" status="online",Class CNBC (576p)
@@ -129,7 +129,7 @@ https://m2otv-lh.akamaihd.net/i/m2oTv_1@186074/master.m3u8
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kq)/index.m3u8
 #EXTINF:-1 tvg-id="NSL.it" status="online",NSL (1080p)
 https://streannunsec-lh.akamaihd.net/i/tv_1@868496/master.m3u8
-#EXTINF:-1 tvg-id="OndaNovaraTV.it",Onda Novara TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="OndaNovaraTV.it" status="online",Onda Novara TV (720p) [Not 24/7]
 https://585b674743bbb.streamlock.net/9006/9006/master.m3u8
 #EXTINF:-1 tvg-id="OrlerTV.it" status="online",Orler TV (420p) [Not 24/7]
 https://w1.mediastreaming.it/orlertv/livestream/playlist.m3u8
@@ -416,7 +416,7 @@ https://live2-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channe
 http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8
 #EXTINF:-1 tvg-id="Vuemme.it" status="online",Vuemme (480p)
 https://5db313b643fd8.streamlock.net/Vuemme/Vuemme/playlist.m3u8
-#EXTINF:-1 tvg-id="WineChannel.it",Wine Channel (720p)
+#EXTINF:-1 tvg-id="WineChannel.it" status="error",Wine Channel (720p)
 http://212.43.97.35:1935/winechannel/winechannel/playlist.m3u8
 #EXTINF:-1 tvg-id="YviiTVSicilia.it" status="error",Yvii TV Sicilia (1080p) [Not 24/7]
 https://yviistreamer.kernel.online/hls/yviitv.m3u8
