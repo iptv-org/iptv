@@ -22,7 +22,7 @@ async function main() {
       if (options.debug) logger.info(stream.url)
       const [_, status] = stream.raw.match(/status="([a-z]+)"/) || [null, null]
       stream.status = status
-      if (status === 'error' && /^(http|https)/.test(stream.url) && !/\[.*\]$/.test(stream.name)) {
+      if (status === 'error' && /^(http|https)/.test(stream.url)) {
         const result = await checkStream(stream)
         const newStatus = parseStatus(result.error)
         if (status === newStatus) {
