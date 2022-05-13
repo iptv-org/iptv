@@ -191,7 +191,7 @@ http://188.40.68.167/russia/komediya/playlist.m3u8
 http://185.97.150.19:8082/2402
 #EXTINF:-1 tvg-id="KonniyMir.ru" status="online",Конный Мир (576p) [Geo-blocked]
 http://cdn-01.bonus-tv.ru/konnyimir/playlist.m3u8
-#EXTINF:-1 tvg-id="KrasnayaLiniya.ru" status="timeout",Красная линия (480p)
+#EXTINF:-1 tvg-id="KrasnayaLiniya.ru" status="error",Красная линия (480p)
 https://kprf-htlive.cdn.ngenix.net/live/stream_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KrikTV.ru" status="blocked",Крик-ТВ (576p) [Geo-blocked]
 https://strm.yandex.ru/kal/krik_tv/krik_tv0.m3u8
@@ -677,11 +677,11 @@ https://brics.bonus-tv.ru/cdn/brics/english/playlist.m3u8
 https://brics.bonus-tv.ru/cdn/brics/portuguese/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBRICSRussian.ru" status="online",TV BRICS Russian (1080p)
 https://brics.bonus-tv.ru/cdn/brics/russian/playlist.m3u8
-#EXTINF:-1 tvg-id="TVCentr.ru" status="online",ТВ Центр (432p)
-http://uiptv.do.am/1ufc/000000009/playlist.m3u8
-#EXTINF:-1 tvg-id="TVCentr.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",ТВ Центр (480p)
+#EXTINF:-1 tvg-id="TVCentr.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",ТВ Центр (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s54/index.m3u8
+#EXTINF:-1 tvg-id="TVCentr.ru" status="online",ТВ Центр (432p)
+http://uiptv.do.am/1ufc/000000009/playlist.m3u8
 #EXTINF:-1 tvg-id="TVEkstra.ru" status="online",ТВ Экстра (720p)
 http://live-1.otcnet.ru/tvextra720b/index.m3u8
 #EXTINF:-1 tvg-id="TVGuberniya.ru" status="online",TV Губерния (Воронеж) (720p)
@@ -746,7 +746,7 @@ https://strm.yandex.ru/kal/firebird/firebird0.m3u8
 http://ott-cdn.ucom.am/s92/index.m3u8
 #EXTINF:-1 tvg-id="Zvezda.ru" status="online",Звезда (1080p) [Not 24/7]
 https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Звезда (480p)
+#EXTINF:-1 tvg-id="Zvezda.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Звезда (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s85/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ростов-папа (1080p)
