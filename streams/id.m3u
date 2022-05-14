@@ -1,14 +1,14 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="ANTV.id" status="error",ANTV (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ANTV.id" status="online",ANTV (720p) [Geo-blocked]
 http://210.210.155.35/qwr9ew/s/s07/index1.m3u8
 #EXTINF:-1 tvg-id="BeritaSatu.id" status="online",BeritaSatu (720p)
 https://b1news.beritasatumedia.com/Beritasatu/B1News_manifest.m3u8
 #EXTINF:-1 tvg-id="BeritaSatu.id" status="online",BeritaSatu (540p)
 http://edge.linknetott.swiftserve.com/live/BsNew/amlst:beritasatunewsbs/playlist.m3u8
-#EXTINF:-1 tvg-id="BeritaSatuEnglish.id" status="online",JakartaGlobe News (720p) [Not 24/7]
-https://b1english.beritasatumedia.com/Beritasatu/B1English_manifest.m3u8
 #EXTINF:-1 tvg-id="BeritaSatuEnglish.id" status="online",JakartaGlobe News (540p) [Not 24/7]
 http://edge.linknetott.swiftserve.com/live/BsNew/amlst:bsenglish/playlist.m3u8
+#EXTINF:-1 tvg-id="BeritaSatuEnglish.id" status="online",JakartaGlobe News (720p) [Not 24/7]
+https://b1english.beritasatumedia.com/Beritasatu/B1English_manifest.m3u8
 #EXTINF:-1 tvg-id="BeritaSatuWorld.id" status="online",BeritaSatu World (720p) [Not 24/7]
 https://b1world.beritasatumedia.com/Beritasatu/B1World_manifest.m3u8
 #EXTINF:-1 tvg-id="BeritaSatuWorld.id" status="online",BeritaSatu World (540p) [Not 24/7]
@@ -61,7 +61,7 @@ https://tv.rodja.live/live/ngrp:rodja_all/playlist.m3u8
 http://36.89.47.217:11935/rrinet/live/index.m3u8
 #EXTINF:-1 tvg-id="SCTV.id" status="error",SCTV (720p) [Geo-blocked]
 http://rr2.dens.tv/s/s03/01.m3u8
-#EXTINF:-1 tvg-id="SEAToday.id",Sea Today (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SEAToday.id" status="blocked",Sea Today (720p) [Geo-blocked]
 https://cdn-telkomsel-01.akamaized.net/Content/DASH/Live/channel(9ce3f094-4044-467e-84b7-b684a49571d5)/manifest.mpd
 #EXTINF:-1 tvg-id="Trans7.id" status="online",Trans7 (720p) [Not 24/7]
 https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8
@@ -82,9 +82,9 @@ http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIACEH)/ind
 #EXTINF:-1 tvg-id="TVRIBali.id" status="online",TVRI Bali (480p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIBALI)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIBali.id" status="online",TVRI Bali (480p)
-http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIBALI)/index.m3u8
-#EXTINF:-1 tvg-id="TVRIBali.id" status="online",TVRI Bali (480p)
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIBali)/index.m3u8
+#EXTINF:-1 tvg-id="TVRIBali.id" status="online",TVRI Bali (480p)
+http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIBALI)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIBangkaBelitung.id" status="online",TVRI Bangka Belitung (480p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIBABEL)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIBangkaBelitung.id" status="online",TVRI Bangka Belitung (480p)
@@ -106,9 +106,9 @@ http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIDKI)/inde
 #EXTINF:-1 tvg-id="TVRIGorontalo.id" status="online",TVRI Gorontalo (480p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIGORONTALO)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIGorontalo.id" status="online",TVRI Gorontalo (480p)
-http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIGORONTALO)/index.m3u8
-#EXTINF:-1 tvg-id="TVRIGorontalo.id" status="online",TVRI Gorontalo (480p)
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIGorontalo)/index.m3u8
+#EXTINF:-1 tvg-id="TVRIGorontalo.id" status="online",TVRI Gorontalo (480p)
+http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIGORONTALO)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIJambi.id" status="online",TVRI Jambi (720p) [Not 24/7]
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIJAMBI)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIJambi.id" status="online",TVRI Jambi (720p) [Not 24/7]
@@ -184,11 +184,11 @@ http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRINtbmataram)/index.m3u8
 #EXTINF:-1 tvg-id="TVRINusaTenggaraBarat.id" status="online",TVRI Nusa Tenggara Barat (720p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRINTBMATARAM)/index.m3u8
 #EXTINF:-1 tvg-id="TVRINusaTenggaraTimur.id" status="online",TVRI Nusa Tenggara Timur (480p)
+http://118.97.50.107/Content/HLS/Live/Channel(TVRINTTKUPANG)/index.m3u8
+#EXTINF:-1 tvg-id="TVRINusaTenggaraTimur.id" status="online",TVRI Nusa Tenggara Timur (480p)
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRINttkupang)/index.m3u8
 #EXTINF:-1 tvg-id="TVRINusaTenggaraTimur.id" status="online",TVRI Nusa Tenggara Timur (480p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRINTTKUPANG)/index.m3u8
-#EXTINF:-1 tvg-id="TVRINusaTenggaraTimur.id",TVRI Nusa Tenggara Timur (480p)
-http://118.97.50.107/Content/HLS/Live/Channel(TVRINTTKUPANG)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIPapua.id" status="online",TVRI Papua (480p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIPAPUA)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIPapua.id" status="online",TVRI Papua (480p)
@@ -250,11 +250,11 @@ http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISumsel)/index.m3u8
 #EXTINF:-1 tvg-id="TVRISumateraSelatan.id" status="online",TVRI Sumatera Selatan (480p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRISUMSEL)/index.m3u8
 #EXTINF:-1 tvg-id="TVRISumateraUtara.id" status="online",TVRI Sumatera Utara (480p)
+http://118.97.50.107/Content/HLS/Live/Channel(TVRISUMUTMEDAN)/index.m3u8
+#EXTINF:-1 tvg-id="TVRISumateraUtara.id" status="online",TVRI Sumatera Utara (480p)
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISumutmedan)/index.m3u8
 #EXTINF:-1 tvg-id="TVRISumateraUtara.id" status="online",TVRI Sumatera Utara (480p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRISUMUTMEDAN)/index.m3u8
-#EXTINF:-1 tvg-id="TVRISumateraUtara.id" status="online",TVRI Sumatera Utara (480p)
-http://118.97.50.107/Content/HLS/Live/Channel(TVRISUMUTMEDAN)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIWorld.id" status="online",TVRI World (720p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRI3)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIWorld.id" status="online",TVRI World (720p)
