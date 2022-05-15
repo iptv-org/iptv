@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="8kanal.by" status="timeout",8 канал (Витебск) (576p) [Not 24/7]
 http://95.46.208.8:24433/art
-#EXTINF:-1 tvg-id="Belarus3.by" status="error",Беларусь 3 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Belarus3.by" status="online",Беларусь 3 (1080p) [Not 24/7]
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus3.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Belarus4.by" status="timeout",Беларусь 4 (576p)
 http://95.46.208.8:26258/belarus4
@@ -11,8 +11,6 @@ https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8
 http://95.46.208.8:26259/nashe
 #EXTINF:-1 tvg-id="ONT.by" status="online",ОНТ (576p) [Not 24/7]
 https://stream.dc.beltelecom.by/ont/ont/playlist.m3u8
-#EXTINF:-1 tvg-id="PervyyMuzykalnyyKanal.by" status="online",Первый Музыкальный Канал (2160p)
-http://rtmp.one.by:1499
 #EXTINF:-1 tvg-id="PervyyMuzykalnyyKanal.by" status="online",Первый Музыкальный Канал (1080p)
 http://rtmp.one.by:1300
 #EXTINF:-1 tvg-id="PervyyMuzykalnyyKanal.by" status="online",Первый Музыкальный Канал (720p)
@@ -21,13 +19,15 @@ http://hz1.teleport.cc/HLS/HD.m3u8
 http://hz1.teleport.cc/HLS/SD.m3u8
 #EXTINF:-1 tvg-id="PervyyMuzykalnyyKanal.by" status="online",Первый Музыкальный Канал (576p)
 http://rtmp.one.by:1200
+#EXTINF:-1 tvg-id="PervyyMuzykalnyyKanal.by" status="timeout",Первый Музыкальный Канал (2160p)
+http://rtmp.one.by:1499
 #EXTINF:-1 tvg-id="PervyyMuzykalnyyRussia.by" status="online",Первый Музыкальный Канал Россия (1080p)
 http://rtmp.one.by:2300
 #EXTINF:-1 tvg-id="PervyyMuzykalnyyRussia.by" status="online",Первый Музыкальный Канал Россия (576p)
 http://rtmp.one.by:2200
 #EXTINF:-1 tvg-id="RadioHit.by" status="online",Радио Хит (Орск) (720p)
 http://lova.me/hls/hithd.m3u8
-#EXTINF:-1 tvg-id="STV.by" status="online",СТВ (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="STV.by" status="timeout",СТВ (576p) [Not 24/7]
 http://212.98.171.116/HLS/ctvby/playlist.m3u8
 #EXTINF:-1 tvg-id="Vitebsk.by" status="online",Витебск (720p) [Not 24/7]
 https://flu.vtv.by/tvt-non-by/playlist.m3u8
