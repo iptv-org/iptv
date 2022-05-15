@@ -67,7 +67,7 @@ http://62.113.210.250/medienasa-live/mp4:elbe_high/playlist.m3u8
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:elbe_high/playlist.m3u8
 #EXTINF:-1 tvg-id="emsTVLingen.de" status="online",ems TV Lingen (280p)
 https://5889e7d0d6e28.streamlock.net/ev1tv-live/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="eoTV.de" status="online",eo TV (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="eoTV.de" status="error",eo TV (1080p) [Geo-blocked]
 https://5856e1a25f71a.streamlock.net/easycast9-live/mp4:livestreamhd5/playlist.m3u8
 #EXTINF:-1 tvg-id="ERF1.de" status="error",ERF 1
 http://14000-l.z.core.cdn.streamfarm.net/007erfiphonelive/smil:stream_live.smil/playlist.m3u8
@@ -267,7 +267,7 @@ https://stream01.stream.welocal.world/stream/fhd-rfo_66876/ngrp:stream_all/playl
 https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
-#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
 http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
 http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
@@ -313,7 +313,7 @@ https://tagesschau-lh.akamaihd.net/i/tagesschau_1@119231/master.m3u8
 https://live1.markenfunk.com/t1/live/playlist.m3u8
 #EXTINF:-1 tvg-id="teltOwkanal.de" status="online",teltOwkanal (1080p)
 https://5856e1a25f71a.streamlock.net/easycast8-live/mp4:livestreamhd8/playlist.m3u8
-#EXTINF:-1 tvg-id="TesasTV.de" status="error",Tesas TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TesasTV.de" status="online",Tesas TV (720p) [Not 24/7]
 https://jola.live:16200/tesastv.m3u8
 #EXTINF:-1 tvg-id="TideTV.de" status="online",Tide TV (1080p) [Not 24/7]
 https://5889e7d0d6e28.streamlock.net/tide-live/smil:livestream.smil/playlist.m3u8
@@ -401,8 +401,12 @@ https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8
 https://ndrevent-lh.akamaihd.net/i/ndrevent_1@409066/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Event 2 (720p)
 https://ndrevent-lh.akamaihd.net/i/ndrevent_2@429805/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",NDR Fernsehen (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_fs@430230/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Hamburg (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Niedersachsen (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_nds@430233/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Weltweiter (720p) [Geo-blocked]
@@ -428,12 +432,8 @@ https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",NDR Schleswig-Holstein (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NDR Fernsehen (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_fs@430230/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",NDR International (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_int@430236/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",NDR Schleswig-Holstein (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_sh@430234/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",WDR Koeln (720p)
