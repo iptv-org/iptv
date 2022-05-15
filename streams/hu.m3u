@@ -21,7 +21,7 @@ http://telekomtv-ro.akamaized.net/shls/LIVE$ErdelyTV/6.m3u8/Level(1677721)?end=E
 https://stream.y5.hu/stream/stream_filmp/hls1/stream.m3u8
 #EXTINF:-1 tvg-id="FilmPlus.hu" status="online",Film+ (360p) [Not 24/7]
 https://stream.y5.hu/stream/stream_filmp/hls0/stream.m3u8
-#EXTINF:-1 tvg-id="HalomTV.hu" status="online",Halom TV (540p)
+#EXTINF:-1 tvg-id="HalomTV.hu" status="error",Halom TV (540p)
 http://stream.battanet.hu:8080/hls/livestream1/1_2/index.m3u8
 #EXTINF:-1 tvg-id="Hatoscsatorna.hu" status="online",Hatoscsatorna (360p) [Not 24/7]
 https://hatoscsatorna.hu:8082/Hatoscsatorna/livestream/playlist.m3u8
@@ -67,15 +67,15 @@ https://www.tiszatv.hu/onlinetv/tiszatv_1.m3u8
 https://stream.y5.hu/stream/stream_bekescsaba/stream.m3u8
 #EXTINF:-1 tvg-id="VTVFuzesabony.hu" status="online",VTV Füzesabony (720p) [Not 24/7]
 https://stream.unrealhosting.hu:7962/live.m3u8
-#EXTINF:-1 tvg-id="" status="online",1Music Channel Hungary (576p)
-http://1music.hu/1music.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hegyvidek Tv Budapest (576p) [Not 24/7]
 http://tv.hegyvidek.hu/stream_mpeg.flv
-#EXTINF:-1 tvg-id="" status="online",1Music Channel Hungary (576p)
-http://www.1music.hu/1music.m3u8
-#EXTINF:-1 tvg-id="" status="online",H!T Music Channel (480p)
-http://hitmusic.hu/hitmusic.m3u8
 #EXTINF:-1 tvg-id="" status="online",Bonum TV (360p)
 https://stream.y5.hu/stream/stream_bonum/stream.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",FEM3 [Geo-blocked]
 https://streaming.mytvback.com/stream/Nc8b6c6tUH4gh3GdRR-zFw/1617462698/channel016/stream.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",H!T Music Channel (480p)
+http://hitmusic.hu/hitmusic.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",1Music Channel Hungary (576p)
+http://www.1music.hu/1music.m3u8
+#EXTINF:-1 tvg-id="" status="error",1Music Channel Hungary (576p)
+http://1music.hu/1music.m3u8
