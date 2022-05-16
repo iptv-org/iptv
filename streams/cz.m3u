@@ -23,20 +23,20 @@ https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8
 https://ocko-live.ssl.cdn.cra.cz/cra_live2/ocko_gold.stream.1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PolarTV.cz" status="online",Polar TV (1080p)
 https://stream.polar.cz/polar/polarlive-1/playlist.m3u8
-#EXTINF:-1 tvg-id="PolarTV.cz" status="online",Polar TV (1080p)
+#EXTINF:-1 tvg-id="PolarTV.cz" status="error",Polar TV (1080p)
 rtmp://stream.polar.cz/polar/polarlive-2
 #EXTINF:-1 tvg-id="PrahaTV.cz" status="online",Praha TV (1080p)
 https://stream.polar.cz/prahatv/prahatvlive-1/playlist.m3u8
-#EXTINF:-1 tvg-id="PrahaTV.cz" status="online",Praha TV (1080p)
+#EXTINF:-1 tvg-id="PrahaTV.cz" status="error",Praha TV (1080p)
 rtmp://stream.polar.cz/prahatv/prahatvlive-1
 #EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",Retro Music TV (360p)
 http://89.185.253.55/retrotv/retrotvHQ1/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",Retro Music Television (360p)
 http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
-#EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",Retro Music Television (360p)
-rtmp://stream.mediawork.cz:1935/retrotv/retrotvHQ1
 #EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",RetroMusicTV (360p)
 http://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RetroMusicTV.cz" status="error",Retro Music Television (360p)
+rtmp://stream.mediawork.cz:1935/retrotv/retrotvHQ1
 #EXTINF:-1 tvg-id="RTMplus.cz" status="online",RTM plus (720p)
 http://www.rtmplus.cz/live/1-playlist.m3u8
 #EXTINF:-1 tvg-id="Slagr2.cz" status="online",Šlágr 2 (576p)
@@ -49,12 +49,12 @@ http://slagrtv-live-hls.ssl.cdn.cra.cz/channels/slagrtv/playlist.m3u8
 https://media1.tvnatura.cz/live_out/1/live.m3u8
 #EXTINF:-1 tvg-id="VychodoceskaTV.cz" status="online",Východočeská TV (576p)
 https://stream.polar.cz/vctv/vctvlive-1/playlist.m3u8
-#EXTINF:-1 tvg-id="VychodoceskaTV.cz" status="online",Východočeská TV (576p)
+#EXTINF:-1 tvg-id="VychodoceskaTV.cz" status="error",Východočeská TV (576p)
 rtmp://stream.polar.cz/vctv/vctvlive-2
+#EXTINF:-1 tvg-id="" status="online",ČT1 (1080p)
+http://213.151.233.20:8000/dna-5100-tv-pc.m3u8
 #EXTINF:-1 tvg-id="" status="online",Extasy HD / Leo TV HD (576p)
 http://213.151.233.20:8000/dna-6233-tv-pc.m3u8
-#EXTINF:-1 tvg-id="CeskaTelevize1.cz" status="online",ČT1 (1080p)
-http://213.151.233.20:8000/dna-5100-tv-pc.m3u8
 #EXTINF:-1 tvg-id="" status="online",Настоящее Время (720p) [Not 24/7]
 http://rfe-lh.akamaihd.net/i/rfe_tvmc5@383630/master.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Настоящее Время (480p)
