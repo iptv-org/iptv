@@ -13,13 +13,13 @@ https://www.ast.tv/stream/1/master.m3u8
 https://www.ast.tv/stream/2/master.m3u8
 #EXTINF:-1 tvg-id="BRT1HD.cy" status="online",BRT 1 HD (720p) [Not 24/7]
 http://kuzeykibris.tv/m3u8/tv_brt1.m3u8
-#EXTINF:-1 tvg-id="BRT1HD.cy" status="error",BRT 1 HD (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="BRT1HD.cy" status="online",BRT 1 HD (576p) [Not 24/7]
 http://wms.brtk.net:1935/live/BRTHD/playlist.m3u8
 #EXTINF:-1 tvg-id="BRT1HD.cy" status="error",BRT 1 HD (576p) [Not 24/7]
 rtmp://wms.brtk.net:1935/live/BRTHD
 #EXTINF:-1 tvg-id="BRT2HD.cy" status="online",BRT 2 HD (406p) [Not 24/7]
 http://wms.brtk.net:1935/live/brt1/playlist.m3u8
-#EXTINF:-1 tvg-id="BRT3.cy" status="error",BRT 3 (406p) [Not 24/7]
+#EXTINF:-1 tvg-id="BRT3.cy" status="online",BRT 3 (406p) [Not 24/7]
 http://wms.brtk.net:1935/live/brt2/playlist.m3u8
 #EXTINF:-1 tvg-id="CityChannel.cy" status="online",City Channel (720p) [Not 24/7]
 https://dev.aftermind.xyz/edge-hls/unitrust/citychannel/index.m3u8?token=8TXWzhY3h6jrzqEqu
@@ -59,8 +59,6 @@ http://kuzeykibris.tv/m3u8/tv_dialog.m3u8
 https://dev.aftermind.xyz/edge-hls/unitrust/voulitv/index.m3u8?token=8TXWzhY3h6jrzqEqu
 #EXTINF:-1 tvg-id="" status="online",Vouli TV (1080p)
 https://dev.aftermind.xyz/hls/unitrust/voulitv/index.m3u8?token=8TXWzhY3h6jrzqEqu
-#EXTINF:-1 tvg-id="" status="online",SAT-7 KIDS (1080p)
-https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="" status="online",Reload (804p)
 http://web.onair-radio.eu:1935/video/video/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",SAT-7 ARABIC (240p)
@@ -69,6 +67,8 @@ https://svs.itworkscdn.net/sat7arabiclive/sat7arabic.smil/playlist_dvr.m3u8
 https://svs.itworkscdn.net/sat7parslive/sat7pars.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="" status="online",SAT-7 TÜRK (720p)
 https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="" status="online",SAT-7 KIDS (1080p)
+https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="" status="error",Kuzey Kibris TV (720p) [Not 24/7]
 http://kuzeykibris.tv/m3u8/tv_kktv.m3u8
 #EXTINF:-1 tvg-id="" status="error",RIK 1 (CYBC 1) [Geo-blocked]
