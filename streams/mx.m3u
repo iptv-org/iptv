@@ -27,15 +27,15 @@ http://170.83.242.153:8000/play/a00d
 http://45.179.140.242:8000/play/a0ht
 #EXTINF:-1 tvg-id="ConectaTV.mx" status="online",Conecta TV (720p)
 http://204.12.211.210:1935/conectatv/conectatv/playlist.m3u8
+#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipódromo de las Américas (480p) [Geo-blocked]
+http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipodromo de las Americas (360p) [Not 24/7]
 http://wms10.tecnoxia.com/soelvi/slv423/playlist.m3u8
-#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="blocked",Hipódromo de las Américas (480p) [Geo-blocked]
-http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="IcrtvColima.mx" status="online",Icrtv Colima (720p) [Not 24/7]
 https://5ca9af4645e15.streamlock.net/canal11/videocanal11/playlist.m3u8
-#EXTINF:-1 tvg-id="ImagenMulticast.mx" status="error",Imagen Multicast (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ImagenMulticast.mx" status="online",Imagen Multicast (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/live
-#EXTINF:-1 tvg-id="ImagenRadio.mx" status="error",Imagen Radio (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ImagenRadio.mx" status="online",Imagen Radio (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCB0BUmdBOrH9mYU2ebs1eWA/live
 #EXTINF:-1 tvg-id="JaliscoTV.mx" status="online",Jalisco TV (720p) [Geo-blocked]
 https://5fa5de1a545ae.streamlock.net/sisjalisciense/sisjalisciense/playlist.m3u8
@@ -67,14 +67,12 @@ http://live.canaloncelive.tv:1935/livepkgr2/smil:internacional.smil/playlist.m3u
 http://live.canaloncelive.tv/livepkgr/smil:nacional.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OnceMexico.mx" status="error",Once Mexico (720p) [Not 24/7]
 https://live2.canaloncelive.tv/livepkgr3/cepro/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",POP TV (542p) [Not 24/7]
-https://5ca3e84a76d30.streamlock.net/gpacifico3/smil:obregon.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="QuieroTV.mx" status="online",Quiero TV (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x8452uw
+#EXTINF:-1 tvg-id="RCGTV2.mx" status="blocked",RCG TV 2 (360p) [Not 24/7]
+https://5caf24a595d94.streamlock.net:1937/stream23/stream23/playlist.m3u8
 #EXTINF:-1 tvg-id="RCGTV2.mx" status="error",RCG TV 2 (360p) [Not 24/7]
 http://wowzacontrol.com:1936/stream23/stream23/playlist.m3u8
-#EXTINF:-1 tvg-id="RCGTV2.mx" status="error",RCG TV 2 (360p) [Not 24/7]
-https://5caf24a595d94.streamlock.net:1937/stream23/stream23/playlist.m3u8
 #EXTINF:-1 tvg-id="RCGTV3.mx" status="online",RCG TV 3 (360p) [Not 24/7]
 http://wowzacontrol.com:1936/stream56/stream56/playlist.m3u8
 #EXTINF:-1 tvg-id="RCGTV3.mx" status="online",RCG TV 3 (360p) [Not 24/7]
@@ -97,7 +95,7 @@ https://59d39900ebfb8.streamlock.net/8410/8410/playlist.m3u8
 http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8
 #EXTINF:-1 tvg-id="TelevisaAguascalientes.mx" status="timeout",Televisa Aguascalientes (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC5ZtV3bu3bjSuOLoA6oCFIg/live
-#EXTINF:-1 tvg-id="TelevisaChihuahua.mx" status="error",Televisa Chihuahua (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaChihuahua.mx" status="online",Televisa Chihuahua (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCjfxDe7In59Jbfw2HmIh_Vg/live
 #EXTINF:-1 tvg-id="TelevisaCiudadJuarez.mx" status="online",Televisa Ciudad Juarez (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCot4t8PVKz8TT5xVM8Eb00w/live
@@ -105,7 +103,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQ08tNTPiBn44c975S81ftg/live
 #EXTINF:-1 tvg-id="TelevisaEstado.mx" status="online",Televisa Estado (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC9DH82HVSf4katwMeUpY80w
-#EXTINF:-1 tvg-id="TelevisaGuadalajara.mx" status="online",Televisa Guadalajara (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaGuadalajara.mx" status="error",Televisa Guadalajara (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRujF_YxVVFmTRWURQH-Cww/live
 #EXTINF:-1 tvg-id="TelevisaGuerrero.mx" status="timeout",Televisa Guerrero (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCnxTRk2K1iNsQkgpWXxyj4w/live
@@ -127,7 +125,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC-HNztluSQSffhIWJTL-LUw/live
 #EXTINF:-1 tvg-id="TelevisaQueretaro.mx" status="timeout",Televisa Queretaro
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC9QNz6VS3gGz55dzxAQtgtA/live
-#EXTINF:-1 tvg-id="TelevisaSinaloa.mx" status="timeout",Televisa Sinaloa
+#EXTINF:-1 tvg-id="TelevisaSinaloa.mx" status="error",Televisa Sinaloa
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCtm1LvYEIQ_NrfOUVJ08YhQ/live
 #EXTINF:-1 tvg-id="TelevisaSonora.mx" status="online",Televisa Sonora (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCyzWMHGS7bs0sot6KZk5EZg/live
@@ -173,6 +171,8 @@ https://5ca3e84a76d30.streamlock.net/gpacifico1/smil:gpculiacan.smil/playlist.m3
 https://5ca3e84a76d30.streamlock.net/tvunam/videotvunam/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="" status="online",Alcarria TV (576p) [Not 24/7]
 http://217.182.77.27/live/alcarriatv-livestream.m3u8
+#EXTINF:-1 tvg-id="" status="online",POP TV (542p) [Not 24/7]
+https://5ca3e84a76d30.streamlock.net/gpacifico3/smil:obregon.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TELE SISTEMA CANAL 9 (486p) [Geo-blocked]
 http://k4.usastreams.com/ARBtv/ARBtv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tlaxcala Televisión (360p) [Not 24/7]
