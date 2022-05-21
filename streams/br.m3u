@@ -1,9 +1,9 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1001Noites.br",1001 Noites (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="1001Noites.br" status="online",1001 Noites (720p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8
 #EXTINF:-1 tvg-id="AgroBrasilTV.br" status="online",AgroBrasil TV (720p) [Not 24/7]
 http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8
-#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="blocked",AgroBrasil TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="online",AgroBrasil TV (720p) [Not 24/7]
 https://server.flixtv.com.br/agrobrasiltv/agrobrasiltv/playlist.m3u8
 #EXTINF:-1 tvg-id="Agromais.br" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Agromais (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
@@ -28,7 +28,7 @@ https://aovivo.equipea.com.br:5443/WebRTCAppEE/streams/713829795440060188004130.
 https://arkyvbre1g.zoeweb.tv/fiocruz/fiocruz/playlist.m3u8
 #EXTINF:-1 tvg-id="Catve2.br" status="online",Catve2 (720p)
 https://5b33b873179a2.streamlock.net:1443/catve2/catve2/playlist.m3u8
-#EXTINF:-1 tvg-id="CatveFM.br",Catve FM (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CatveFM.br" status="online",Catve FM (720p) [Not 24/7]
 https://5b33b873179a2.streamlock.net:1443/radiocamera/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="CatveMasterTV.br" status="online",Catve Master TV (720p) [Not 24/7]
 https://5b33b873179a2.streamlock.net:1443/mastertv/livestream/playlist.m3u8
@@ -58,7 +58,7 @@ http://flash8.crossdigital.com.br/id2266/id2266/playlist.m3u8
 https://58a4464faef53.streamlock.net/impd/ngrp:impd_all/playlist.m3u8
 #EXTINF:-1 tvg-id="ISTV.br" status="online",ISTV (1080p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-9883/LVW9883_lFcfKysrHF/chunklist.m3u8
-#EXTINF:-1 tvg-id="ITV.br" status="online",ITV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ITV.br" status="error",ITV (480p) [Not 24/7]
 http://tv02.logicahost.com.br:1935/itutv/itutv/live.m3u8
 #EXTINF:-1 tvg-id="JovemPanNews.br" status="online",Jovem Pan News (1080p) [Not 24/7]
 https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/index.m3u8
@@ -126,9 +126,9 @@ http://tv02.logicahost.com.br:1935/rederc/rederc/live.m3u8
 https://cdn.jmvstream.com/w/LVW-10024/ngrp:LVW10024_H3QLdAY6kx_all/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeSuper.br" status="error",Rede Super (432p) [Not 24/7]
 https://api.new.livestream.com/accounts/10205943/events/3429501/live.m3u8
-#EXTINF:-1 tvg-id="RedeTV.br" status="error",Rede TV! SP (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RedeTV.br" status="timeout",Rede TV! SP (720p) [Not 24/7]
 https://hls.brasilstream.com.br/live/redetv/redetv/playlist.m3u8
-#EXTINF:-1 tvg-id="RedeTVES.br" status="error",Rede TV! ES (720p)
+#EXTINF:-1 tvg-id="RedeTVES.br" status="timeout",Rede TV! ES (720p)
 https://hls.brasilstream.com.br/live/redetves/redetves/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeTVTocantins.br" status="online",RedeTV! Tocantins (720p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/redetvro/redetvro/playlist.m3u8
@@ -149,9 +149,9 @@ http://stmv8.conectastm.com/wagner1168/wagner1168/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAparecida.br" status="online",TV Aparecida (1080p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
-https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/tvdigitalbirigui/playlist.m3u8
-#EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
 http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8
+#EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
+https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/tvdigitalbirigui/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBNO.br" status="online",TV BNO (270p) [Not 24/7]
 http://tv02.logicahost.com.br:1935/bonner/bonner/live.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br" status="timeout",TV Brasil
@@ -236,7 +236,7 @@ http://cdn.tvmatic.net/funny.m3u8
 http://cdn.tvmatic.net/tiktok.m3u8
 #EXTINF:-1 tvg-id="TVMAX.br" status="online",TV MAX (720p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/tvmax/tvmax/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMetropole.br" status="online",TV Metropole (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVMetropole.br" status="error",TV Metropole (720p) [Not 24/7]
 https://cdn-fundacao-2110.ciclano.io:1443/fundacao-2110/fundacao-2110/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMetropolitanaRio.br" status="error",TV Metropolitana Rio (480p)
 https://59f1cbe63db89.streamlock.net:1443/caxiastv/caxiastv/playlist.m3u8
@@ -260,7 +260,7 @@ https://5e837408ea907.streamlock.net:1936/tvpantanalms/tvpantanalms/playlist.m3u
 http://200.189.113.201/hls/tve.m3u8
 #EXTINF:-1 tvg-id="TVPocos.br" status="online",TV Poços (192p) [Not 24/7]
 http://rtmp.cdn.upx.net.br/00084/myStream.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSantaCruz.br" status="error",TV Santa Cruz (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVSantaCruz.br" status="online",TV Santa Cruz (720p) [Not 24/7]
 https://rtmp.info/tvsantacruz/envivo/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSerraDourada.br" status="online",SBT TV Serra Dourada (720p) [Not 24/7]
 https://5a1c76baf08c0.streamlock.net/tvsd2/smil:tvsd2_20042020.smil/playlist.m3u8
@@ -270,7 +270,7 @@ http://streaming03.zas.media:1935/tvsol/tvsol/playlist.m3u8
 https://streamer1.streamhost.org/salive/GMI3anjoh/livestream.m3u8
 #EXTINF:-1 tvg-id="TVThathi.br" status="online",TV Thathi (720p) [Not 24/7]
 https://cdn-grupo-10049.ciclano.io:1443/grupo-10049/grupo-10049/playlist.m3u8
-#EXTINF:-1 tvg-id="TVTokyo.br",TV Tokyo (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVTokyo.br" status="error",TV Tokyo (360p) [Not 24/7]
 https://stmv1.voxtvhd.com.br/tvtokio/tvtokio/playlist.m3u8
 #EXTINF:-1 tvg-id="TVTropical.br" status="error",TV Tropical (480p) [Not 24/7]
 https://59f2354c05961.streamlock.net:1443/tvtropical/tvtropical/playlist.m3u8
