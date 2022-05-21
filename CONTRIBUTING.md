@@ -15,11 +15,11 @@ To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/
 
 ### Report a Broken Stream
 
-To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=broken+stream&template=-----broken-stream.yml&title=Replace%3A+) with a description of the channel. (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately)
+To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=🛠+broken+stream&template=-----broken-stream.yml&title=Broken%3A+) with a description of the channel. (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately)
 
 ### Content Removal Request
 
-If you find any content in the repository that you own and you would like us to remove, please create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=freearhey&labels=removal+request&template=--removal-request.yml&title=Remove%3A+) and provide all necessary information. If the request is granted, the specified content will be removed from the repository within one business day.
+If you find any content in the repository that you own and you would like us to remove, please create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=❌+removal+request&template=--removal-request.yml&title=Remove%3A+) and provide all necessary information. If the request is granted, the specified content will be removed from the repository within one business day.
 
 ## Pull Request Guidelines
 
