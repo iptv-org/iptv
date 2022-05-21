@@ -16,7 +16,7 @@ https://akittv-live.ercdn.net/akittv/akittv.m3u8
 http://win4.yayin.com.tr/postatv/postatv/playlist.m3u8
 #EXTINF:-1 tvg-id="AlZahraTVTurkic.tr" status="online",Al-Zahra TV Turkic (720p) [Not 24/7]
 https://live.al-zahratv.com/live/playlist.m3u8
-#EXTINF:-1 tvg-id="ArasTV.tr" status="online",ARAS TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="ArasTV.tr" status="blocked",ARAS TV (576p) [Not 24/7]
 http://1.rtmp.org/tv217/yayin.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ASTV.tr" status="online",Bursa AS TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/astv/bant1/playlist.m3u8
@@ -54,10 +54,10 @@ https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv/playlist.m3u8
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/104.m3u8
 #EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (1080p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/ciftcitv/smil:ciftcitv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (720p) [Not 24/7]
+https://waw1.artiyerelmedya.net/ciftcitv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/ciftcitv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="CiftciTV.tr" status="timeout",Çiftçi TV (720p) [Not 24/7]
-https://waw1.artiyerelmedya.net/ciftcitv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="DehaTV.tr" status="online",Deha TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/dehatv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="DenizPostasiTV.tr" status="online",Deniz Postası TV (720p) [Not 24/7]
@@ -87,7 +87,7 @@ http://win20.yayin.com.tr/ertsahtv/ertsahtv/playlist.m3u8
 https://win29.yayin.com.tr/erzurumwebtv/erzurumwebtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ETVManisa.tr" status="online",ETV Manisa (1080p) [Not 24/7]
 https://broadcasttr.com:446/manisaetv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Euro90Channel.tr" status="online",Euro 90 Channel (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Euro90Channel.tr" status="error",Euro 90 Channel (1080p) [Not 24/7]
 https://ssl4.radyotvonline.com/e90tv/e90tvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroGenc.tr" status="error",Euro Genc (1080p) [Not 24/7]
 https://dcunilive258-lh.akamaihd.net/i/dclive_1@126972/master.m3u8
@@ -140,7 +140,7 @@ http://stream.taksimbilisim.com:1935/kanal3/bant1/playlist.m3u8
 https://waw2.artiyerelmedya.net/kanal3/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal7.tr" status="online",Kanal 7 (1080p)
 https://live.kanal7.com/live/kanal7LiveDesktop/index.m3u8
-#EXTINF:-1 tvg-id="Kanal7.tr" status="error",Kanal 7 (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal7.tr" status="online",Kanal 7 (576p) [Not 24/7]
 https://live.kanal7.com/live/kanal7LiveMobile/index.m3u8
 #EXTINF:-1 tvg-id="Kanal7Avrupa.tr" status="online",Kanal 7 Avrupa (1080p) [Not 24/7]
 https://live.kanal7.com/live/kanal7AvrupaLive/index.m3u8
@@ -168,10 +168,10 @@ https://waw2.artiyerelmedya.net/kanal68/bant1/playlist.m3u8
 http://51.15.2.151/hls/kanalavrupa.m3u8
 #EXTINF:-1 tvg-id="KanalB.tr" status="online",Kanal B (480p) [Not 24/7]
 http://212.174.58.161/hls-live/livepkgr/_definst_/liveevent/kanalb.m3u8
+#EXTINF:-1 tvg-id="KanalD.tr" status="timeout",Kanal D (540p)
+https://2122248074.duhnet.tv/S2/HLS_LIVE/kanaldnp/track_3_750/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalD.tr" status="error",Kanal D (480p) [Not 24/7]
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/66.m3u8
-#EXTINF:-1 tvg-id="KanalD.tr" status="error",Kanal D (540p)
-https://2122248074.duhnet.tv/S2/HLS_LIVE/kanaldnp/track_3_750/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalFirat.tr" status="online",Kanal Firat (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/kanalfirat/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalUrfa.tr" status="online",Kanal Urfa (576p) [Not 24/7]
@@ -351,7 +351,7 @@ http://canli.tvden.com.tr/hls/live.m3u8
 http://cdn-tvem.yayin.com.tr/TVEM/TVEM/playlist.m3u8
 #EXTINF:-1 tvg-id="TVEm.tr" status="online",TV Em (486p)
 https://cdn.yayin.com.tr/TVEM/TVEM/chunklist.m3u8
-#EXTINF:-1 tvg-id="UcanKusTV.tr" status="timeout",UçanKuş TV (720p)
+#EXTINF:-1 tvg-id="UcanKusTV.tr" status="online",UçanKuş TV (720p)
 https://ucankus-live.cdnnew.com/ucankus/ucankus.m3u8
 #EXTINF:-1 tvg-id="UcanKusTV.tr" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",UçanKuş TV (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
@@ -411,8 +411,6 @@ https://59cba4d34b678.streamlock.net/canlitv/kanal-2000/playlist.m3u8
 https://s01.vpis.io/ogun/ogun.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Şaban TV (720p) [Geo-blocked]
 http://145.239.37.125:20458/sabantv3/sabantv3/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Petra TV (1080p) [Not 24/7]
-http://tt61.mine.nu/live/PetraTV/Fw99Gpq7Gq/6478.m3u8
 #EXTINF:-1 tvg-id="" status="error",Medya Haber TV (480p) [Not 24/7]
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/23
 #EXTINF:-1 tvg-id="" status="error",Habertürk TV (480p) [Not 24/7]
@@ -439,6 +437,8 @@ http://kuzeykibris.tv/m3u8/tv_gunes.m3u8
 http://kuzeykibris.tv/m3u8/tv_kanalt.m3u8
 #EXTINF:-1 tvg-id="" status="error",Tarsus Güney TV (270p)
 http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Petra TV (1080p) [Not 24/7]
+http://tt61.mine.nu/live/PetraTV/Fw99Gpq7Gq/6478.m3u8
 #EXTINF:-1 tvg-id="" status="error",Yeni Malatyaspor TV (720p) [Not 24/7]
 https://592f1881b3d5f.streamlock.net:1443/santraltv_925/santraltv_925/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Medya Haber TV (1080p)
