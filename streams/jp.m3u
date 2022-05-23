@@ -40,7 +40,7 @@ http://cgntv-glive.ofsdelivery.net/live/cgntv_jp/playlist.m3u8
 https://fujitv2.mov3.co/hls/fujitv.m3u8
 #EXTINF:-1 tvg-id="FujiTV.jp" status="error",Fuji TV (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00010/index.m3u8?type=jp
-#EXTINF:-1 tvg-id="GSTV.jp" status="online",GSTV (720p)
+#EXTINF:-1 tvg-id="GSTV.jp" status="timeout",GSTV (720p)
 https://gstv-tnz-gsmediastreaming.preview-jpea.channel.media.azure.net/dfd06b62-e9d1-4a7f-bcbb-89d2ecbc82ee/preview.ism/manifest(format=mpd-time-csf,audio-only=false)
 #EXTINF:-1 tvg-id="GTNTyphome.jp" status="error",GTN Typhome (English Subs) (720p) [Not 24/7]
 https://hamada.gaki-no-tsukai.eu:2087/hls/test.m3u8
@@ -101,6 +101,8 @@ http://51.79.193.108:8080/hlsok/j00035/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="online",NHK General TV (540p) [Not 24/7]
 https://nhk2.mov3.co/hls/nhk.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="online",NHK World Japan (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="online",NHK World Japan (1080p)
 https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="online",NHK World Japan (720p)
 http://nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp-en/index_1M.m3u8
@@ -108,8 +110,6 @@ http://nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp-en/index_1M.m3u8
 https://b-nhkwlive-xjp.webcdn.stream.ne.jp/hls/live/2003458-b/nhkwlive-xjp-en/index.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="online",NHK World Japan (720p)
 https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/sycc-live/zh/playlist.m3u8
-#EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="error",NHK World Japan (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live
 #EXTINF:-1 tvg-id="NipponTV.jp" status="online",Nippon TV (540p) [Not 24/7]
 https://ntv2.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="NipponTV.jp" status="error",Nippon TV (720p) [Not 24/7]
@@ -163,6 +163,10 @@ https://movie.mcas.jp/mcas/smil:wn1.smil/master.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=H3D90-436C4
 #EXTINF:-1 tvg-id="" status="online",TBS News
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC6AG81pAkf6Lbi_1VC5NmPA/live
+#EXTINF:-1 tvg-id="" status="online",All-Nippon News Network
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGCZAYq5Xxojl_tSXcVJhiQ/live
+#EXTINF:-1 tvg-id="" status="online",Fuji News Network (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoQBJMzcwmXrRSHBFAlTsIw/live
 #EXTINF:-1 tvg-id="" status="online",Hokkaido Television Broadcasting (HTB) News 24
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSWOnDD1KIriGmyQ7SgNA4A/live
 #EXTINF:-1 tvg-id="" status="online",Weather Channel (ウェザーニュース) (BS | WNI) (720p)
@@ -197,7 +201,3 @@ http://51.79.193.108:8080/hlsok/j00038/index.m3u8?type=jp
 http://51.79.193.108:8080/hlsok/j00045/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="" status="error",BS Fuji TV (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00049/index.m3u8?type=jp
-#EXTINF:-1 tvg-id="" status="error",All-Nippon News Network
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGCZAYq5Xxojl_tSXcVJhiQ/live
-#EXTINF:-1 tvg-id="" status="error",Fuji News Network (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoQBJMzcwmXrRSHBFAlTsIw/live
