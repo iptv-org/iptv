@@ -1,9 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="1001Noites.br" status="online",1001 Noites (720p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="timeout",AgroBrasil TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="online",AgroBrasil TV (720p) [Not 24/7]
 http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8
-#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="timeout",AgroBrasil TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="online",AgroBrasil TV (720p) [Not 24/7]
 https://server.flixtv.com.br/agrobrasiltv/agrobrasiltv/playlist.m3u8
 #EXTINF:-1 tvg-id="Agromais.br" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Agromais (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
@@ -44,7 +44,7 @@ https://596639ebdd89b.streamlock.net/8032/8032/playlist.m3u8
 http://str.portalcultura.com.br/funtelpa/tv_funtelpa/live.m3u8
 #EXTINF:-1 tvg-id="FonteTV.br" status="online",Fonte TV (1080p) [Not 24/7]
 http://flash.softhost.com.br:1935/fonte/fontetv/live.m3u8
-#EXTINF:-1 tvg-id="Futura.br" status="online",Futura (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="Futura.br" status="error",Futura (540p) [Not 24/7]
 https://tv.unisc.br/hls/test.m3u8
 #EXTINF:-1 tvg-id="GhostTV.br" status="online",Ghost TV (712p) [Not 24/7]
 https://stmv.video.expressolider.com.br/ghostv/ghostv/playlist.m3u8
@@ -149,9 +149,9 @@ http://stmv8.conectastm.com/wagner1168/wagner1168/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAparecida.br" status="online",TV Aparecida (1080p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
-http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8
-#EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
 https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/tvdigitalbirigui/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
+http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8
 #EXTINF:-1 tvg-id="TVBNO.br" status="online",TV BNO (270p) [Not 24/7]
 http://tv02.logicahost.com.br:1935/bonner/bonner/live.m3u8
 #EXTINF:-1 tvg-id="TVBrasil.br" status="timeout",TV Brasil
@@ -258,7 +258,7 @@ https://59f1cbe63db89.streamlock.net:1443/tvpampa/tvpampa/playlist.m3u8
 https://5e837408ea907.streamlock.net:1936/tvpantanalms/tvpantanalms/playlist.m3u8
 #EXTINF:-1 tvg-id="TVParanaTurismo.br" status="online",TV Paraná Turismo (720p) [Not 24/7]
 http://200.189.113.201/hls/tve.m3u8
-#EXTINF:-1 tvg-id="TVPocos.br" status="online",TV Poços (192p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVPocos.br" status="error",TV Poços (192p) [Not 24/7]
 http://rtmp.cdn.upx.net.br/00084/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSantaCruz.br" status="online",TV Santa Cruz (720p) [Not 24/7]
 https://rtmp.info/tvsantacruz/envivo/playlist.m3u8
