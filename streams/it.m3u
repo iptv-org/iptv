@@ -109,10 +109,10 @@ https://58f12ffd2447a.streamlock.net/KKTV01/livestream/playlist.m3u8
 https://59253971be783.streamlock.net/KissKissTV/KissKissTV.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="La5.it" status="blocked",La 5 [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ka)/index.m3u8
-#EXTINF:-1 tvg-id="La7.it" status="",La7
-https://d15umi5iaezxgx.cloudfront.net/LA7/CLN/HLS/Live.m3u8
-#EXTINF:-1 tvg-id="La7.it" status="",La7
+#EXTINF:-1 tvg-id="La7.it" status="online",La7
 https://d15umi5iaezxgx.cloudfront.net/LA7/CLN/HLS-B/Live.m3u8
+#EXTINF:-1 tvg-id="La7.it" status="online",La7
+https://d15umi5iaezxgx.cloudfront.net/LA7/CLN/HLS/Live.m3u8
 #EXTINF:-1 tvg-id="LaCTV.it" status="error",La CTV (720p) [Not 24/7]
 http://streamcdnc3.mainstreaming.tv/cdn/live/100197/SOrBDPy/playlist.m3u8
 #EXTINF:-1 tvg-id="LaCTV.it" status="error",La C TV (720p) [Not 24/7]
@@ -244,7 +244,7 @@ https://59d7d6f47d7fc.streamlock.net/reggiotv/reggiotv/playlist.m3u8
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8
 #EXTINF:-1 tvg-id="Rete55.it" status="online",Rete 55 (720p) [Not 24/7]
 https://stream.internet.one/Rete55_Live/index.m3u8
-#EXTINF:-1 tvg-id="ReteBiellaTV.it" status="online",Rete Biella TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ReteBiellaTV.it" status="error",Rete Biella TV (720p) [Not 24/7]
 https://sb.top-ix.org/retebiella/streaming/playlist.m3u8
 #EXTINF:-1 tvg-id="Retemia.it" status="online",Retemia (720p) [Not 24/7]
 https://5db313b643fd8.streamlock.net/Retemia/Retemia/playlist.m3u8
@@ -376,7 +376,7 @@ https://live3-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(lt)/
 https://5e73cf528f404.streamlock.net/TrentinoTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TRMh24.it" status="online",TRM h24 Basilicata (480p) [Not 24/7]
 http://w1.streamingmedia.it:1935/trmh24/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TSNTV.it" status="online",Tele Sondrio News (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TSNTV.it" status="error",Tele Sondrio News (480p) [Not 24/7]
 https://59d8c0cee6f3d.streamlock.net/tsn/tsn_mobile/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Benevento.it" status="error",TV7 Benevento (288p) [Not 24/7]
 http://streaming.senecadot.com/live/flv:tv7.sdp/playlist.m3u8
@@ -440,8 +440,6 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899
 http://wms.shared.streamshow.it/canale7/mp4:canale7/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",CANALE 8 (480p)
 http://wms.shared.streamshow.it/canale8/mp4:canale8/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",TSN Tele Sondrio News (480p) [Not 24/7]
-http://wms.shared.streamshow.it/tsn/tsn_mobile/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Juwelo Italia (480p)
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/7841/7841_264_live.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV7 Azzurra (270p) [Not 24/7]
@@ -472,6 +470,8 @@ http://halowtv.online:8080/HalowTV/FSyzHfEhvb/139
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
 #EXTINF:-1 tvg-id="" status="error",Radio 24 (1080p) [Not 24/7]
 http://radio24-lh.akamaihd.net/i/radio24video_1@379914/master.m3u8
+#EXTINF:-1 tvg-id="" status="error",TSN Tele Sondrio News (480p) [Not 24/7]
+http://wms.shared.streamshow.it/tsn/tsn_mobile/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Video Brescia TV (720p) [Not 24/7]
 http://wms.shared.streamshow.it/videobrescia/videobrescia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",DeeJay TV (360p)
