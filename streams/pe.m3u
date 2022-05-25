@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="ActivaTV.pe" status="error",Activa TV [Not 24/7]
+#EXTINF:-1 tvg-id="ActivaTV.pe" status="online",Activa TV [Not 24/7]
 https://cloudvideo.servers10.com:8081/8126/index.m3u8
 #EXTINF:-1 tvg-id="AndesTelevision.pe" status="online",Andes Televisión (Sicusani) (720p) [Not 24/7]
 https://stmv1.voxhdnet.com/tvsicuani/tvsicuani/playlist.m3u8
@@ -27,7 +27,7 @@ https://tv.inka.net.pe/bestcable/bestcable/index.m3u8
 https://tv.inka.net.pe/bestcablesports/bestcablesports/index.m3u8
 #EXTINF:-1 tvg-id="BethelTV.pe" status="online",Bethel TV (720p) [Not 24/7]
 https://ott.streann.com/loadbalancer/services/public/channels/5e0689c82cdcb4fdbcd79151/playlist.m3u8
-#EXTINF:-1 tvg-id="BeXtremeTVLima.pe" status="online",BeXtreme TV (Lima) (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="BeXtremeTVLima.pe" status="blocked",BeXtreme TV (Lima) (1080p) [Geo-blocked]
 https://video1.getstreamhosting.com:1936/8106/8106/playlist.m3u8
 #EXTINF:-1 tvg-id="BHTV.pe" status="online",BHTV (720p) [Not 24/7]
 http://cdn1.ujjina.com:1935/iptvbhtv/livebhtvtv/playlist.m3u8
@@ -49,7 +49,7 @@ https://srv1.mediastreamperu.com:8081/8006/index.m3u8
 http://191.97.56.183:1935/caribetv/caribetv/playlist.m3u8
 #EXTINF:-1 tvg-id="CentralTV.pe" status="online",Central TV (Chosica) (614p) [Not 24/7]
 https://5c3fb01839654.streamlock.net:1963/iptvcentraltv/livecentraltvtv/playlist.m3u8
-#EXTINF:-1 tvg-id="CharapaTV.pe" status="error",CharapaTV (Pucallpa) [Not 24/7]
+#EXTINF:-1 tvg-id="CharapaTV.pe" status="online",CharapaTV (Pucallpa) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8168/index.m3u8
 #EXTINF:-1 tvg-id="ChicosIPe.pe" status="online",Chicos IPe (1080p) [Not 24/7]
 http://cdnh4.iblups.com/hls/OVJNKV4pSr.m3u8
@@ -57,11 +57,11 @@ http://cdnh4.iblups.com/hls/OVJNKV4pSr.m3u8
 https://servilive.com:3176/live/cineclublive.m3u8
 #EXTINF:-1 tvg-id="ClipsTV.pe" status="online",ClipsTV (Ica) (360p) [Not 24/7]
 https://7.innovatestream.pe:19360/clipstv/clipstv.m3u8
-#EXTINF:-1 tvg-id="CNBellezaAndina.pe" status="error",Cable Netword Belleza Andina TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CNBellezaAndina.pe" status="online",Cable Netword Belleza Andina TV (720p) [Not 24/7]
 https://tv.inka.net.pe/bellezaandina/index.m3u8
 #EXTINF:-1 tvg-id="CNCCajamarca.pe" status="error",CNC (Cajamarca) (720p)
 https://7.innovatestream.pe:19360/cnctv/cnctv.m3u8
-#EXTINF:-1 tvg-id="CNCDigital.pe" status="error",CNC Digital (Iquitos) (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="CNCDigital.pe" status="online",CNC Digital (Iquitos) (480p) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8150/index.m3u8
 #EXTINF:-1 tvg-id="CNCumbia.pe" status="online",Cable Netword Cumbia TV (720p) [Not 24/7]
 https://tv.inka.net.pe/cumbiatv/index.m3u8
@@ -73,8 +73,8 @@ https://servilive.com:3114/live/liveulive.m3u8
 https://live.obslivestream.com/cdeportivomux/index.m3u8
 #EXTINF:-1 tvg-id="ControversiaTV.pe" status="online",Controversia TV (Moyobamba) (720p) [Not 24/7]
 https://live.obslivestream.com/controversiamux/index.m3u8
-#EXTINF:-1 tvg-id="CreoTV.pe" status="error",CreoTV (Cajamarca) (720p) [Not 24/7]
-https://srv1.mediastreamperu.com:8081/creotv/index.m3u8
+#EXTINF:-1 tvg-id="CreoTV.pe" status="online",CreoTV (Cajamarca) (720p) [Not 24/7]
+https://srv1.mediastreamperu.com/creotv/creotv/playlist.m3u8
 #EXTINF:-1 tvg-id="CRTelevisionMoyobamba.pe" status="online",CR Television (Moyobamba) (720p) [Not 24/7]
 https://live.obslivestream.com/crtvmux/index.m3u8
 #EXTINF:-1 tvg-id="CTC.pe" status="online",CTC (720p)
@@ -107,10 +107,12 @@ https://tvsource.gacetaucayalina.com/hls/prueba.m3u8
 https://pacific.direcnode.com:3715/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="GeniosTVMoyobamba.pe" status="online",Genios TV (Moyobamba) (720p) [Not 24/7]
 https://live.obslivestream.com/geniostvmux/index.m3u8
+#EXTINF:-1 tvg-id="GlobalTV.pe" status="online",Global TV
+http://190.108.83.142:8000/play/a00x/index.m3u8
 #EXTINF:-1 tvg-id="GoldValleyTV.pe" status="error",Gold Valley TV (Casma) (360p) [Not 24/7]
 https://stmv.panel.grupolimalive.com/gold/gold/playlist.m3u8
-#EXTINF:-1 tvg-id="GoresamTV.pe" status="error",GORESAM TV [Not 24/7]
-https://video.obslivestream.com/gtv/index.m3u8
+#EXTINF:-1 tvg-id="GoresamTV.pe" status="online",GORESAM TV [Not 24/7]
+https://stream.plixitv.live/goresamtv/goresamtv/playlist.m3u8
 #EXTINF:-1 tvg-id="HatunTV.pe" status="online",Hatun TV (720p) [Not 24/7]
 https://tv.inka.net.pe/bestcablehatuntv/bestcablehatuntv/index.m3u8
 #EXTINF:-1 tvg-id="Hoynet.pe" status="online",Hoynet (540p) [Not 24/7]
@@ -127,7 +129,7 @@ https://stmv.panel.grupolimalive.com/antonio/antonio/playlist.m3u8
 https://5c3fb01839654.streamlock.net:1963/iptvrci/livercitv/playlist.m3u8
 #EXTINF:-1 tvg-id="ImagenTelevisionRioja.pe" status="timeout",Imagen Televisión (Rioja) (720p) [Not 24/7]
 http://191.97.56.183:1935/imagentv/imagentv/playlist.m3u8
-#EXTINF:-1 tvg-id="ImpactoTelevision.pe" status="error",Impacto Televisión (Cajamarca) (720p)
+#EXTINF:-1 tvg-id="ImpactoTelevision.pe" status="online",Impacto Televisión (Cajamarca) (720p)
 https://eu1.servers10.com:8081/impactotv/index.m3u8
 #EXTINF:-1 tvg-id="ImperialTelevision.pe" status="online",Imperial Televisión (Huancayo) (720p) [Not 24/7]
 https://stmv.panel.grupolimalive.com/imperu/imperu/playlist.m3u8
@@ -151,6 +153,8 @@ https://inliveserver.com:1936/18016/18016/playlist.m3u8
 https://megastreamm.com:3183/live/korattvlive.m3u8
 #EXTINF:-1 tvg-id="LaAbeja.pe" status="online",La Abeja (720p) [Not 24/7]
 http://cdnhd.iblups.com/hls/F87ppt1YAT.m3u8
+#EXTINF:-1 tvg-id="LaIslillaTV.pe" status="online",La Islilla TV [Not 24/7]
+http://190.108.83.142:8000/play/a00b/index.m3u8
 #EXTINF:-1 tvg-id="LaLuzTV.pe" status="online",La Luz TV (720p) [Not 24/7]
 http://ott.streann.com:8080/loadbalancer/services/public/channels/59ce7f292cdc7ba015a93b82/playlist.m3u8
 #EXTINF:-1 tvg-id="LaRiberena.pe" status="error",La Ribereña (Pucallpa) (480p) [Not 24/7]
@@ -161,7 +165,7 @@ http://177.53.152.186:8000/play/a019/index.m3u8
 https://mdstrm.com/live-stream-playlist/5ce7109c7398b977dc0744cd.m3u8
 #EXTINF:-1 tvg-id="LimaLive.pe" status="online",LimaLive (536p) [Not 24/7]
 https://stmv.panel.grupolimalive.com/limalive/limalive/playlist.m3u8
-#EXTINF:-1 tvg-id="LotPlusTV.pe" status="online",LotPlus TV (Chiclayo) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LotPlusTV.pe",LotPlus TV (Chiclayo) (720p) [Not 24/7]
 https://stmv.panel.grupolimalive.com/lotplustv/lotplustv/playlist.m3u8
 #EXTINF:-1 tvg-id="MasterTVTarapoto.pe" status="online",Master TV (Tarapoto) (480p) [Not 24/7]
 https://tv.oyotunstream.com:1936/master/master/playlist.m3u8
@@ -191,10 +195,10 @@ https://tvdatta.com:3383/live/huancayotvlive.m3u8
 http://vs8.live.opencaster.com/20100152275/jcpstream/playlist.m3u8
 #EXTINF:-1 tvg-id="MonterricoTV.pe" status="online",Monterrico TV (1080p) [Not 24/7]
 https://ed3od.live.opencaster.com/jcpstream_hd720/index.m3u8
-#EXTINF:-1 tvg-id="MonterricoTV.pe" status="online",Monterrico TV (360p) [Not 24/7]
-https://ed3od.live.opencaster.com/jcpstream_mid/index.m3u8
 #EXTINF:-1 tvg-id="MonterricoTV.pe" status="online",Monterrico TV (1080p) [Not 24/7]
 https://www.opencaster.com/resources/hls_stream/hipodromojcp2.m3u8
+#EXTINF:-1 tvg-id="MonterricoTV.pe" status="online",Monterrico TV (360p) [Not 24/7]
+https://ed3od.live.opencaster.com/jcpstream_mid/index.m3u8
 #EXTINF:-1 tvg-id="MTVMasAncash.pe" status="error",MTV Más (Ancash) (720p) [Not 24/7]
 https://mediacp.hostradios.com.ar:19360/8044/8044.m3u8
 #EXTINF:-1 tvg-id="NacionalTV.pe" status="online",NacionalTV (720p) [Not 24/7]
@@ -205,10 +209,10 @@ https://5c3fb01839654.streamlock.net:1963/iptvnazarenas/livenazarenastv/playlist
 https://live.tvcontrolcp.com:1936/8140/8140/playlist.m3u8
 #EXTINF:-1 tvg-id="NuestraTVLima.pe" status="online",Nuestra TV (Lima) (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/nuestratvlima
-#EXTINF:-1 tvg-id="OasisRTV.pe" status="online",Oasis RTV (Trujillo) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="OasisRTV.pe" status="error",Oasis RTV (Trujillo) (720p) [Not 24/7]
 https://7.innovatestream.pe:19360/oasisrtv/oasisrtv.m3u8
-#EXTINF:-1 tvg-id="OKTeVe.pe" status="error",OK TeVe (Yurimaguas) (720p) [Not 24/7]
-https://stmv.panel.grupolimalive.com/wesdey3/wesdey3/playlist.m3u8
+#EXTINF:-1 tvg-id="OKTeVe.pe" status="online",OK TeVe (Yurimaguas) (720p) [Not 24/7]
+https://live.obslivestream.com/oktvmux/index.m3u8
 #EXTINF:-1 tvg-id="OmegaTVYurimaguas.pe" status="error",Omega TV (Yurimaguas) (480p) [Not 24/7]
 https://7.innovatestream.pe:19360/omega/omega.m3u8
 #EXTINF:-1 tvg-id="OndaDigital.pe" status="online",Onda Digital (720p) [Not 24/7]
@@ -237,9 +241,9 @@ https://stmv.panel.grupolimalive.com/peruviantv/peruviantv/playlist.m3u8
 http://190.108.83.142:8000/play/a00d/index.m3u8
 #EXTINF:-1 tvg-id="PlanetaTVBagua.pe" status="error",Planeta TV Bagua (720p) [Not 24/7]
 https://stmv.panel.grupolimalive.com/planeatv/planeatv/playlist.m3u8
-#EXTINF:-1 tvg-id="PlanetaTVMoyobamba.pe" status="online",Planeta TV Moyobamba (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PlanetaTVMoyobamba.pe" status="error",Planeta TV Moyobamba (720p) [Not 24/7]
 https://live.obslivestream.com/planetatvmux/index.m3u8
-#EXTINF:-1 tvg-id="Primavera15RadiotelevisionMoquegua.pe" status="online",Primavera 15 Radiotelevisión (Moquegua) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Primavera15RadiotelevisionMoquegua.pe" status="error",Primavera 15 Radiotelevisión (Moquegua) (720p) [Not 24/7]
 https://tv.portalexpress.es:3270/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="ProyectaTelevision.pe" status="online",Proyecta Televisión (Huacho) (720p) [Not 24/7]
 https://servilive.com:3194/live/proyectatvlive.m3u8
@@ -279,7 +283,7 @@ https://tv.portalexpress.es:3611/live/radiotvjuanjuilive.m3u8
 https://stmv.panel.grupolimalive.com/orientetv/orientetv/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioUnoTacna.pe" status="online",Radio Uno (Tacna) (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCK0lpuL9PQb3I5CDcu7Y7bA/live
-#EXTINF:-1 tvg-id="RadioVictoria780AM.pe" status="error",Radio Victoria 780 AM (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioVictoria780AM.pe",Radio Victoria 780 AM (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC2pEdgRlAdGozFhlEb73PKA/live
 #EXTINF:-1 tvg-id="RadioyTvFiladelfia.pe" status="error",Radio y Tv Filadelfia (720p) [Not 24/7]
 https://streamlive7.hearthis.at/hls/9355343.m3u8
@@ -303,7 +307,7 @@ https://tvdatta.com:3344/live/rumbamixlive.m3u8
 https://tvdatta.com:3952/live/rwtelevisionlive.m3u8
 #EXTINF:-1 tvg-id="SalgaluTV.pe" status="error",Salgalú TV [Not 24/7]
 https://6075e60da1f27.streamlock.net/live/wowza/playlist.m3u8
-#EXTINF:-1 tvg-id="SanjuaneraTV.pe" status="online",SanjuaneraTV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="SanjuaneraTV.pe" status="error",SanjuaneraTV (1080p) [Not 24/7]
 https://live.obslivestream.com/sanjuaneramux/playlist.m3u8
 #EXTINF:-1 tvg-id="SatelTV.pe" status="error",SatelTV (Puno) (720p) [Not 24/7]
 https://7.innovatestream.pe:19360/satel/satel.m3u8
@@ -339,7 +343,7 @@ https://1667517699.rsc.cdn77.org/hls/camana.m3u8
 https://1667517699.rsc.cdn77.org/hls/ilo.m3u8
 #EXTINF:-1 tvg-id="TelesurMollendo.pe" status="online",Telesur (Mollendo) (240p) [Not 24/7]
 https://1667517699.rsc.cdn77.org/hls/mollendo.m3u8
-#EXTINF:-1 tvg-id="TelesurMoquegua.pe" status="error",Telesur (Moquegua) (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelesurMoquegua.pe" status="online",Telesur (Moquegua) (360p) [Not 24/7]
 https://1667517699.rsc.cdn77.org/hls/moquegua.m3u8
 #EXTINF:-1 tvg-id="TelesurTacna.pe" status="online",Telesur (Tacna) (720p) [Not 24/7]
 https://1667517699.rsc.cdn77.org/hls/tacna.m3u8
@@ -377,6 +381,8 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/TVN
 http://cdnh4.iblups.com/hls/RMuwrdk7M9.m3u8
 #EXTINF:-1 tvg-id="TVPalmeras.pe" status="online",TV Palmeras (480p) [Not 24/7]
 https://srv.panelcast.net/palmerastv/palmerastv/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPeru.pe" status="online",TV Perú [Not 24/7]
+http://190.108.83.142:8000/play/a00i/index.m3u8
 #EXTINF:-1 tvg-id="TVPeru.pe" status="online",TV Perú (450p) [Not 24/7]
 https://cdnh8.iblups.com/hls/R9WtilpKKB.m3u8
 #EXTINF:-1 tvg-id="TVPeruanisima.pe" status="online",TV Peruanísima (720p) [Not 24/7]
@@ -389,6 +395,8 @@ https://cdnh8.iblups.com/hls/RMuwrdk7M9.m3u8
 https://tv.inka.net.pe/tvsensacion/tvsensacion/index.m3u8
 #EXTINF:-1 tvg-id="TVSistemasCuzco.pe" status="online",TV Sistemas Cuzco (Cuzco) (360p) [Not 24/7]
 https://stmv1.voxhdnet.com/sistemascusco/sistemascusco/playlist.m3u8
+#EXTINF:-1 tvg-id="UchuTV.pe" status="online",Uchu TV (Cusco) [Not 24/7]
+http://190.108.83.142:8000/play/a006/index.m3u8
 #EXTINF:-1 tvg-id="UCI.pe" status="online",UCI (720p) [Not 24/7]
 https://servilive.com:3449/live/mlecaroslive.m3u8
 #EXTINF:-1 tvg-id="Unitel.pe" status="online",Unitel (Huancayo) (720p) [Not 24/7]
@@ -397,7 +405,7 @@ https://stmv.panel.grupolimalive.com/uniteltv/uniteltv/playlist.m3u8
 https://tvdatta.com:3670/live/universitariatvlive.m3u8
 #EXTINF:-1 tvg-id="UranioTVYurimaguas.pe" status="online",Uranio TV (Yurimaguas) (720p) [Not 24/7]
 https://live.obslivestream.com/uraniomux/index.m3u8
-#EXTINF:-1 tvg-id="USILTV.pe" status="online",USIL TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="USILTV.pe" status="error",USIL TV (720p) [Not 24/7]
 https://video.servidor.stream:3366/live/redeslive.m3u8
 #EXTINF:-1 tvg-id="USMPTV.pe" status="error",USMPTV (720p) [Not 24/7]
 https://streamusmptv.ddns.net/dash/stream.mpd
@@ -413,8 +421,8 @@ https://srv6.zcast.com.br/virgennatividad/virgennatividad/playlist.m3u8
 https://multimedia.tmcreativos.com:1936/visionmusica/visionmusica/playlist.m3u8
 #EXTINF:-1 tvg-id="VNP.pe" status="error",Visión Noticias Perú (VNP) (720p) [Not 24/7]
 https://videoserver.tmcreativos.com:19360/vnpnoticias/vnpnoticias.m3u8
-#EXTINF:-1 tvg-id="VZTV.pe" status="error",VZ Televisión (720p) [Not 24/7]
-https://live.obslivestream.com/vzmux/index.m3u8
+#EXTINF:-1 tvg-id="VZTV.pe" status="online",VZ Televisión (720p) [Not 24/7]
+https://live.obslivestream.com/vztvmux/index.m3u8
 #EXTINF:-1 tvg-id="WillaxTV.pe" status="online",Willax (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/WillaxTV
 #EXTINF:-1 tvg-id="Wtv.pe" status="error",Wtv (Bambamarca) (480p) [Not 24/7]

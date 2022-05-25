@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="CanelaTV.ec" status="online",CanelaTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CanelaTV.ec" status="error",CanelaTV (720p) [Not 24/7]
 https://59d39900ebfb8.streamlock.net/canelatv/canelatv/playlist.m3u8
 #EXTINF:-1 tvg-id="EcotelTV.ec" status="online",Ecotel (720p) [Not 24/7]
 https://ecotel.streamseguro.com/hls/ecoteltv.m3u8
@@ -17,7 +17,7 @@ http://37.187.7.106/hechostv/live.m3u8
 https://multicanal.streamseguro.com/hls/streaming.m3u8
 #EXTINF:-1 tvg-id="PuruwaTV.ec" status="online",Puruwa TV (720p)
 https://srv.panelcast.net/puruwalive/puruwalive/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioImpacto2.ec" status="online",Radio Impacto 2 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioImpacto2.ec" status="error",Radio Impacto 2 (1080p) [Not 24/7]
 https://sv72.ecuaradiotv.net/impacto2tv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="RTS.ec" status="error",RTS (RadioTeleSistema) (480p)
 http://45.179.140.242:8000/play/a0kw
@@ -31,6 +31,8 @@ http://ecuastreamhd.com:1935/UCSGHQ/UCSGHQ/chunklist.m3u
 https://streamingwowza.com:1936/wuanplus/wuanplus/playlist.m3u8
 #EXTINF:-1 tvg-id="ZaracayTV.ec" status="error",Zaracay TV (720p) [Not 24/7]
 https://streamingwowza.com:1936/zaracaytv/smil:zaracaytv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Paraíso Digital (264p) [Not 24/7]
+https://cloudvideo.servers10.com:8081/8106/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Pasión TV (360p) [Not 24/7]
 https://tv.portalexpress.es:3753/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Visión Radio Televisión (808p)
@@ -41,8 +43,6 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://player.vimeo.com/video/
 https://59c3c7bda15f4.streamlock.net:444/universal/smil:universal.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Teleamazonas (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/1359588/events/4428723/live.m3u8
-#EXTINF:-1 tvg-id="" status="error",Paraíso Digital (264p) [Not 24/7]
-https://cloudvideo.servers10.com:8081/8106/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Loreto TV (720p) [Not 24/7]
 https://srv1.zcast.com.br/diego3282/diego3282/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Princesa Estéreo TV (720p) [Not 24/7]
