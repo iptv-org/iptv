@@ -40,18 +40,18 @@ http://vod.ortas.sy:1935/oLive/sedu05042022/playlist.m3u8
 #EXTINF:-1 tvg-id="SyrianNewsChannel.sy" status="online",Syrian News Channel (360p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCjmUU7Zy3BYHGSyUdRFuFIg/live
 #EXTINF:-1 tvg-id="SyrianNewsChannel.sy" status="online",Syrian News Channel (360p) [Not 24/7]
-http://vod.ortas.sy:1935/oLive/snews05042022/playlist.m3u8
-#EXTINF:-1 tvg-id="SyrianNewsChannel.sy",Syrian News Channel (360p) [Not 24/7]
 http://vod.alikhbaria.net:1935/oLive/snews05042022/playlist.m3u8
+#EXTINF:-1 tvg-id="SyrianNewsChannel.sy" status="online",Syrian News Channel (360p) [Not 24/7]
+http://vod.ortas.sy:1935/oLive/snews05042022/playlist.m3u8
 #EXTINF:-1 tvg-id="SyrianSatelliteChannel.sy" status="online",Syria Satellite Channel (360p) [Not 24/7]
 http://vod.ortas.sy:1935/oLive/sat05042022/playlist.m3u8
 #EXTINF:-1 tvg-id="SyriaTV.sy" status="online",Syria TV (1080p) [Not 24/7]
 https://svs.itworkscdn.net/syriatvlive/syriatv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="UgaritTV.sy" status="error",Ugarit TV (160p) [Not 24/7]
-http://82.137.248.16:1935/Ugarit/stream19042021/playlist.m3u8
-#EXTINF:-1 tvg-id="UgaritTV.sy" user-agent="Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36",Ugarit TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="UgaritTV.sy" status="blocked" user-agent="Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36",Ugarit TV (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.101 Mobile Safari/537.36
 https://linkastream.co/headless?url=https://ok.ru/live/2231907917430
+#EXTINF:-1 tvg-id="UgaritTV.sy" status="error",Ugarit TV (160p) [Not 24/7]
+http://82.137.248.16:1935/Ugarit/stream19042021/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",alltv (400p)
 http://185.96.70.242:1935/live/alltv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Minbij TV (576p) [Not 24/7]
