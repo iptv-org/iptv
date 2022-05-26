@@ -7,7 +7,7 @@ https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
 https://cdn10.live-tv.od.ua:8083/7tvod/7tvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
 https://cdn10.live-tv.od.ua:8083/7tvod/7tvod/playlist.m3u8
-#EXTINF:-1 tvg-id="24Kanal.ua" status="online",24 Канал (1080p)
+#EXTINF:-1 tvg-id="24Kanal.ua" status="error",24 Канал (1080p)
 http://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="100News.ua" status="online",100% News (576p)
 http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
@@ -66,7 +66,7 @@ https://cdn1.live-tv.od.ua:8083/ktkod/ktkod/playlist.m3u8
 https://edge3.iptv.macc.com.ua/img/inter_3/index.m3u8
 #EXTINF:-1 tvg-id="Inter.ua" status="online",Интер (512p) [Not 24/7]
 http://109.68.40.67/img/inter_2/index.m3u8
-#EXTINF:-1 tvg-id="IRT.ua",ИРТ (Днепр) (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="IRT.ua" status="blocked",ИРТ (Днепр) (576p) [Not 24/7]
 http://91.193.128.233:1935/live/irt.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="IzmailTV.ua" status="online",Измаил ТВ (576p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/izod/izod-abr/playlist.m3u8
@@ -147,13 +147,13 @@ https://cdn1.live-tv.od.ua:8083/krugod/krugod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKKrug.ua" status="online",ТРК Круг (576p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/krugod/krugod/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
+https://hls.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
+#EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://hls.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://rtsp.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://rtsp.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5.ua",TV5 (Запорожье) (360p)
-https://hls.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Plus.ua" status="error",TV7+ (Хмельницький) (576p) [Not 24/7]
 https://tv7plus.com/hls/tv7.m3u8
 #EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
