@@ -27,7 +27,7 @@ https://langate.tv/promin/live/index.m3u8
 http://109.68.40.67/life/magnolia.m3u8
 #EXTINF:-1 tvg-id="DonbassOnline.ua" status="timeout",Донбас Online (1080p) [Not 24/7]
 http://176.110.1.30:1935/live/donbasonline/playlist.m3u8
-#EXTINF:-1 tvg-id="DonezkTV.ua" status="online",Donezk TV (720p)
+#EXTINF:-1 tvg-id="DonezkTV.ua" status="error",Donezk TV (720p)
 http://stream.dn.ua/hls/stream.m3u8
 #EXTINF:-1 tvg-id="DumskayaTVHD.ua" status="online",Думская ТВ (1080p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/dumska/dumska-abr/playlist.m3u8
@@ -66,7 +66,7 @@ https://cdn1.live-tv.od.ua:8083/ktkod/ktkod/playlist.m3u8
 https://edge3.iptv.macc.com.ua/img/inter_3/index.m3u8
 #EXTINF:-1 tvg-id="Inter.ua" status="online",Интер (512p) [Not 24/7]
 http://109.68.40.67/img/inter_2/index.m3u8
-#EXTINF:-1 tvg-id="IRT.ua",ИРТ (Днепр) (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="IRT.ua" status="blocked",ИРТ (Днепр) (576p) [Not 24/7]
 http://91.193.128.233:1935/live/irt.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="IzmailTV.ua" status="online",Измаил ТВ (576p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/izod/izod-abr/playlist.m3u8
@@ -147,13 +147,13 @@ https://cdn1.live-tv.od.ua:8083/krugod/krugod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKKrug.ua" status="online",ТРК Круг (576p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/krugod/krugod/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
+https://hls.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
+#EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://hls.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://rtsp.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://rtsp.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5.ua",TV5 (Запорожье) (360p)
-https://hls.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Plus.ua" status="error",TV7+ (Хмельницький) (576p) [Not 24/7]
 https://tv7plus.com/hls/tv7.m3u8
 #EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
