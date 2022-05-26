@@ -16,9 +16,9 @@ http://cdn8.live247stream.com/canadaone/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CanadaStarTV.ca" status="timeout",Canada Star TV (1080p)
 http://live.canadastartv.com:1935/canadastartv/canadastartv/playlist.m3u
 #EXTINF:-1 tvg-id="CanadianArabTV.ca" status="online",Canadian Arab TV (720p) [Not 24/7]
-http://142.112.39.133:8080/hls/catv/index.m3u8
-#EXTINF:-1 tvg-id="CanadianArabTV.ca",Canadian Arab TV (720p) [Not 24/7]
 http://142.112.39.133:8080/catv.mp4
+#EXTINF:-1 tvg-id="CanadianArabTV.ca" status="online",Canadian Arab TV (720p) [Not 24/7]
+http://142.112.39.133:8080/hls/catv/index.m3u8
 #EXTINF:-1 tvg-id="CanBanglaTV.ca" status="online",CanBangla TV (1080p) [Not 24/7]
 https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/canbanglatv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CBATDT.ca" status="blocked",CBC Fredericton [Geo-blocked]
@@ -33,7 +33,7 @@ https://cbclivedai1-i.akamaihd.net/hls/live/566941/event2/CBET/master5.m3u8
 https://rcavlive.akamaized.net/hls/live/696615/xcancbft/master.m3u8
 #EXTINF:-1 tvg-id="CBFTDT.ca" status="blocked",Ici Radio-Canada Télé (1080p) [Geo-blocked]
 https://rcavlive-dai.akamaized.net/hls/live/696614/cancbftprem/master.m3u8
-#EXTINF:-1 tvg-id="CBHTDT.ca",CBC Halifax [Geo-blocked]
+#EXTINF:-1 tvg-id="CBHTDT.ca" status="blocked",CBC Halifax [Geo-blocked]
 https://cbclivedai3-i.akamaihd.net/hls/live/566977/event2/CBHT/master5.m3u8
 #EXTINF:-1 tvg-id="CBKTDT.ca" status="blocked",CBC Regina [Geo-blocked]
 https://cbclivedai2-i.akamaihd.net/hls/live/566969/event2/CBKT/master5.m3u8
@@ -87,7 +87,7 @@ https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeF
 http://cdn12.henico.net:8080/live/dncal/index.m3u8
 #EXTINF:-1 tvg-id="EawazTV.ca" status="online",Eawaz TV (720p) [Not 24/7]
 https://streamer12.vdn.dstreamone.net/saazoawaz/saazoawaz/playlist.m3u8
-#EXTINF:-1 tvg-id="ECanada.ca",E! Canada (720p)
+#EXTINF:-1 tvg-id="ECanada.ca" status="error",E! Canada (720p)
 http://encodercdn1.frontline.ca/vantrix/ltv/Bell_E!HD_AtopItci_2015_01_12_HD/hls_hd.m3u8
 #EXTINF:-1 tvg-id="EETTV.ca" status="online",EET TV (1080p) [Not 24/7]
 https://eu.streamjo.com/eetlive/eettv.m3u8
