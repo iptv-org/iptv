@@ -69,8 +69,6 @@ rtsp://212.200.255.151/rtv1
 mmsh://212.200.255.151/rtv2
 #EXTINF:-1 tvg-id="RTV2.rs" status="timeout",RTV 2 (576p) [Not 24/7]
 rtsp://212.200.255.151/rtv2
-#EXTINF:-1 tvg-id="RTVAS.rs" status="online",RTV AS (576p)
-https://srv1.adriatelekom.com/TVAS/index.m3u8
 #EXTINF:-1 tvg-id="RTVCityUb.rs" status="error",RTV City Ub (576p) [Not 24/7]
 http://167.172.39.13/hls/tvcityub.m3u8
 #EXTINF:-1 tvg-id="RTVNoviPazar.rs" status="online",RTV Novi Pazar (576p)
@@ -83,5 +81,7 @@ http://92.60.238.10:1935/live/belleamie/playlist.m3u8
 http://109.92.29.10:1935/tvduga/tvduga/playlist.m3u8
 #EXTINF:-1 tvg-id="TVHram.rs" status="online",TV Hram (576p) [Not 24/7]
 https://vod1.laki.eu/live/hram/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",RTV AS (576p)
+https://srv1.adriatelekom.com/TVAS/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Adria Music TV (1080p)
 https://srv1.adriatelekom.com/AdriaMusicTV/index.m3u8
