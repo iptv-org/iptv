@@ -307,7 +307,7 @@ https://5852afe96c9bb.streamlock.net/studio47-live/mp4:livestream/playlist.m3u8
 https://swrswr3vrhls-i.akamaihd.net/hls/live/780818/vrswr3/master.m3u8
 #EXTINF:-1 tvg-id="Sylt1.de" status="error",Sylt1 (404p)
 https://5aec29c5dd23b.streamlock.net:8443/sylt1/sylt1_high1.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Tagesschau24.de" status="error",Tagesschau24 (720p)
+#EXTINF:-1 tvg-id="tagesschau24.de" status="error",Tagesschau24 (720p)
 https://tagesschau-lh.akamaihd.net/i/tagesschau_1@119231/master.m3u8
 #EXTINF:-1 tvg-id="TeinsTV.de" status="error",Teins TV (1080p) [Not 24/7]
 https://live1.markenfunk.com/t1/live/playlist.m3u8
@@ -401,12 +401,14 @@ https://ndrevent-lh.akamaihd.net/i/ndrevent_1@409066/master.m3u8
 https://ndrevent-lh.akamaihd.net/i/ndrevent_2@429805/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Fernsehen (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_fs@430230/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",NDR Hamburg (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",NDR International (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_int@430236/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Niedersachsen (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_nds@430233/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",NDR Schleswig-Holstein (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_sh@430234/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Weltweiter (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_ww@430235/master.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
@@ -430,10 +432,8 @@ https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",NDR Schleswig-Holstein (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NDR Hamburg (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NDR International (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_int@430236/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",NDR Schleswig-Holstein (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_sh@430234/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",WDR Koeln (720p)
 https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",ÇİRA TV (480p) [Not 24/7]
