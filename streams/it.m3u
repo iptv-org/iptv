@@ -4,9 +4,9 @@ https://5929b138b139d.streamlock.net/12TVParma/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="20Mediaset.it" status="blocked",20 Mediaset [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/index.m3u8
 #EXTINF:-1 tvg-id="51RadioTV.it" status="online",51 Radio TV (480p) [Geo-blocked]
-http://wms.shared.streamshow.it/canale51/canale51/playlist.m3u8
-#EXTINF:-1 tvg-id="51RadioTV.it" status="online",51 Radio TV (480p) [Geo-blocked]
 https://59d7d6f47d7fc.streamlock.net/canale51/canale51/playlist.m3u8
+#EXTINF:-1 tvg-id="51RadioTV.it" status="blocked",51 Radio TV (480p) [Geo-blocked]
+http://wms.shared.streamshow.it/canale51/canale51/playlist.m3u8
 #EXTINF:-1 tvg-id="ABChannel.it" status="error",AB Channel (768p)
 https://59ef7ad665d1d.streamlock.net:1443/abchannel/abchannel/playlist.m3u8
 #EXTINF:-1 tvg-id="ABChannel.it" status="error",AB Channel (720p) [Not 24/7]
@@ -123,7 +123,7 @@ https://59ef7ad665d1d.streamlock.net:1443/eslife/eslife/playlist.m3u8
 https://tsw.streamingwebtv24.it:1936/eslife1/eslife1/playlist.m3u8
 #EXTINF:-1 tvg-id="LazioTV.it" status="timeout",Lazio TV (576p)
 http://151.0.207.99:1935/live/LAZIOTV12/playlist.m3u8
-#EXTINF:-1 tvg-id="LiraTV.it" status="online",Lira TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LiraTV.it",Lira TV (720p) [Not 24/7]
 https://5d79ae45bc63b.streamlock.net/Liratv/Liratv/playlist.m3u8
 #EXTINF:-1 tvg-id="LucaniaChannel.it" status="online",Lucania Channel (480p) [Not 24/7]
 http://wms.shared.streamshow.it/lucaniatv/mp4:lucaniatv/playlist.m3u8
@@ -362,11 +362,11 @@ https://59d7d6f47d7fc.streamlock.net/tva/tva/playlist.m3u8
 https://5926fc9c7c5b2.streamlock.net/9098/9098/playlist.m3u8
 #EXTINF:-1 tvg-id="TGCom24.it" status="blocked",TGCom 24 [Geo-blocked]
 https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kf)/index.m3u8
-#EXTINF:-1 tvg-id="TGNorba24.it" status="online",TG Norba 24 (360p)
+#EXTINF:-1 tvg-id="TGNorba24.it" status="error",TG Norba 24 (360p)
 http://flash5.streaming.xdevel.com/tgnorba_24/smil:tgnorba_24.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TGNorba24.it" status="online",TG Norba 24 (360p)
+#EXTINF:-1 tvg-id="TGNorba24.it" status="error",TG Norba 24 (360p)
 https://flash2.xdevel.com/tgnorba_24/tgnorba_24_source.stream/index.m3u8
-#EXTINF:-1 tvg-id="TGNorba24.it" status="online",TG Norba 24 (360p)
+#EXTINF:-1 tvg-id="TGNorba24.it" status="error",TG Norba 24 (360p)
 https://flash5.xdevel.com/tgnorba_24/smil:tgnorba_24.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TLNTeleLazioNord.it" status="error",TLN Tele Lazio Nord (720p) [Not 24/7]
 http://tln.srfms.com:1935/TLN/livestream/playlist.m3u8
@@ -392,7 +392,7 @@ http://fms.tvavicenza.it:1935/live/diretta_1/playlist.m3u8
 https://live.mariatvcdn.com/mariatvcdn/70564e1c6884c007c76f0c128d679eed.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVQuiModena.it" status="online",TV Qui (Modena) (480p)
 https://59d7d6f47d7fc.streamlock.net/tvqui/tvqui/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRS.it" status="online",TVRS (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRS.it" status="error",TVRS (576p) [Not 24/7]
 http://wms.shared.streamshow.it:1935/tvrs/tvrs/live.m3u8
 #EXTINF:-1 tvg-id="TVSeiHD.it" status="online",TV Sei (576p) [Not 24/7]
 http://185.202.128.1:1935/Tv6Stream/tv6TV.stream/playlist.m3u8
