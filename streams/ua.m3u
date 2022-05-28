@@ -7,7 +7,7 @@ https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
 https://cdn10.live-tv.od.ua:8083/7tvod/7tvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
 https://cdn10.live-tv.od.ua:8083/7tvod/7tvod/playlist.m3u8
-#EXTINF:-1 tvg-id="24Kanal.ua" status="error",24 Канал (1080p)
+#EXTINF:-1 tvg-id="24Kanal.ua" status="online",24 Канал (1080p)
 http://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="100News.ua" status="online",100% News (576p)
 http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
@@ -23,11 +23,11 @@ https://rtmp.radiogroup.com.ua:8080/live/avto/index.m3u8
 https://cdn1.live-tv.od.ua:8083/bbb/bbbtv-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="Cherniveckiypromin.ua" status="error",Чернівецький промінь (720p) [Not 24/7]
 https://langate.tv/promin/live/index.m3u8
-#EXTINF:-1 tvg-id="ChPinfo.ua" status="error",ЧП.інфо (576p)
+#EXTINF:-1 tvg-id="ChPInfo.ua" status="error",ЧП.інфо (576p)
 http://109.68.40.67/life/magnolia.m3u8
 #EXTINF:-1 tvg-id="DonbassOnline.ua" status="timeout",Донбас Online (1080p) [Not 24/7]
 http://176.110.1.30:1935/live/donbasonline/playlist.m3u8
-#EXTINF:-1 tvg-id="DonezkTV.ua" status="online",Donezk TV (720p)
+#EXTINF:-1 tvg-id="DonezkTV.ua" status="error",Donezk TV (720p)
 http://stream.dn.ua/hls/stream.m3u8
 #EXTINF:-1 tvg-id="DumskayaTVHD.ua" status="online",Думская ТВ (1080p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/dumska/dumska-abr/playlist.m3u8
@@ -98,10 +98,6 @@ https://edge2.iptv.macc.com.ua/img/ntn_3/index.m3u8
 https://edge3.iptv.macc.com.ua/img/ntn_3/index.m3u8
 #EXTINF:-1 tvg-id="ObshchestvennoeNezavisimoeTelevidenie.ua" status="online",Общественное Независимое Телевидение (576p)
 http://85.238.112.40:8810/hls_sec/239.33.75.33-.m3u8
-#EXTINF:-1 tvg-id="Odessa.ua" status="error",Одесса (576p) [Geo-blocked]
-https://cdn1.live-tv.od.ua:8083/riood/riood-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="Odessa.ua" status="error",Одесса (576p) [Geo-blocked]
-https://cdn1.live-tv.od.ua:8083/riood/riood/playlist.m3u8
 #EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="timeout",Перший незалежний (1080p) [Not 24/7]
 http://app.live.112.events/hls-ua/112hd_hi/index.m3u8
 #EXTINF:-1 tvg-id="PershiyNezalezhniy.ua" status="timeout",Перший незалежний (1080p)
@@ -226,14 +222,14 @@ http://95.67.106.10/hls/nta_ua_low/index.m3u8
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Прямий (576p)
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_mid/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",34 канал (576p) [Not 24/7]
+http://streamvideol.luxnet.ua/34ua/34ua.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",IHTEP (576p)
 https://edge1.iptv.macc.com.ua/img/inter_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (504p)
 https://cdn1.live-tv.od.ua:8083/1tvod/1tvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (504p)
 https://cdn1.live-tv.od.ua:8083/1tvod/1tvod/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",34 канал (576p) [Not 24/7]
-http://streamvideol.luxnet.ua/34ua/34ua.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ТРК Репортер (480p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Прямий (576p)
@@ -261,6 +257,10 @@ http://ftp.orbita.dn.ua/hls/orbita.m3u8
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Трофей ТВ (720p)
 https://5db1ab4f970be.streamlock.net/live/smil:trofey.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Одесса (576p) [Geo-blocked]
+https://cdn1.live-tv.od.ua:8083/riood/riood-abr/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Одесса (576p) [Geo-blocked]
+https://cdn1.live-tv.od.ua:8083/riood/riood/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Южная Волна (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/wave/wave-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Академия (Одесса) (720p) [Not 24/7]
