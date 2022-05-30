@@ -53,6 +53,12 @@ http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
 #EXTINF:-1 tvg-id="JIBSTV.kr" status="online",JIBS SBS (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
+#EXTINF:-1 tvg-id="JTBC.kr" status="online",JTBC (540p) [Not 24/7]
+http://51.81.66.195:1935/krtv/jtbc_540/playlist.m3u8
+#EXTINF:-1 tvg-id="KBS1TV.kr" status="online",KBS1 (540p) [Not 24/7]
+http://51.81.66.195:1935/krtv/kbs1_540/playlist.m3u8
+#EXTINF:-1 tvg-id="KBS2TV.kr" status="online",KBS2 (540p) [Not 24/7]
+http://51.81.66.195:1935/krtv/kbs2_540/playlist.m3u8
 #EXTINF:-1 tvg-id="KBSLiveCamDokDo.kr" status="online",KBS LiveCam DokDo (540p)
 http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="KBSLiveCamDokDo.kr" status="error",KBS LiveCam DokDo (540p)
@@ -63,14 +69,20 @@ https://livecdn.fptplay.net/sdb/kbs_hls.smil/playlist.m3u8
 http://211.220.195.200:1935/live/mp4:KnnTV.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="KPlus.sg" status="error",K+ (576p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h08/index.m3u8
+#EXTINF:-1 tvg-id="MBCTV.kr" status="online",MBC (540p) [Not 24/7]
+http://51.81.66.195:1935/krtv/mbc_540/playlist.m3u8
 #EXTINF:-1 tvg-id="MBCTV.kr" status="error",MBC (1080p)
 http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
+#EXTINF:-1 tvg-id="Mnet.kr" status="online",MNet (576p) [Not 24/7]
+http://51.81.66.195:1935/krtv/mnet_540/playlist.m3u8
 #EXTINF:-1 tvg-id="MTN.kr" status="online",MTN (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UClErHbdZKUnD1NyIUeQWvuQ/live
 #EXTINF:-1 tvg-id="MTN.kr" status="online",MTN (720p) [Not 24/7]
 http://183.110.27.87/mtnlive/720/playlist.m3u8
 #EXTINF:-1 tvg-id="NBS.kr" status="online",NBS Korea Agricultural Broadcasting (720p)
 https://media.joycorp.co.kr:4443/live/ngrp:live_all/playlist.m3u8
+#EXTINF:-1 tvg-id="SBSTV.kr" status="online",SBS (540p) [Not 24/7]
+http://51.81.66.195:1935/krtv/sbs_540/playlist.m3u8
 #EXTINF:-1 tvg-id="TBSTV.kr" status="online",TBS Seoul (720p)
 https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVWorkNet.kr" status="online",TVWorkNet (480p)
@@ -109,7 +121,7 @@ http://210.210.155.35/dr9445/h/h02/index.m3u8
 http://221.157.125.239:1935/live/psike/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",CJB청주방송 (SBS 淸州) (540p) [Not 24/7]
 http://1.222.207.80:1935/live/cjbtv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",KBS 1 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="KBS1TV.kr" status="timeout",KBS1 (1080p) [Not 24/7]
 http://121.130.210.101:9981/stream/channelid/637185705
 #EXTINF:-1 tvg-id="" status="error",One (Indonesian Sub) (360p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h143/02.m3u8
