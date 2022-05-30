@@ -22,7 +22,7 @@ http://live.beitolabbas.tv/live/beitolabbastv.m3u8
 https://vid1.caltexmusic.com/hls/caltextv.m3u8
 #EXTINF:-1 tvg-id="EBC1TV.ir" status="online",EBC1 TV (720p) [Geo-blocked]
 https://vsn1-cdn-phx.icastcenter.com/EBC1/EBC1/playlist.m3u8
-#EXTINF:-1 tvg-id="FarsTV.ir" status="online",FARS (240p)
+#EXTINF:-1 tvg-id="FarsTV.ir" status="error",FARS (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:fars/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMAcademy.ir" status="error",GEM Academy (540p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemusa
@@ -77,7 +77,7 @@ https://stream-cdn.gemonline.tv/live/gemtravel/index.m3u8
 #EXTINF:-1 tvg-id="GEMTV.ir" status="error",GEM Tv (360p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemtv
 http://65.21.196.79/gem_tv/master.m3u8
-#EXTINF:-1 tvg-id="GolestanTV.ir" status="online",GOLESTAN (240p)
+#EXTINF:-1 tvg-id="GolestanTV.ir" status="error",GOLESTAN (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:golestan/playlist.m3u8
 #EXTINF:-1 tvg-id="HastiTVHD.ir" status="online",Hasti TV (1080p) [Not 24/7]
 https://live.hastitv.com/hls/livetv.m3u8
@@ -87,10 +87,10 @@ http://51.210.199.7/hls/stream.m3u8
 https://live1.presstv.ir/live/ifilm2.m3u8
 #EXTINF:-1 tvg-id="iFilmPersian.ir" status="online",iFILM (720p) [Not 24/7]
 https://live.presstv.ir/ifilmlive/smil:ifilmtv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ImamHusseinTV.ir" status="online",Imam Hussein TV (720p)
-https://fa.imamhusseintv.com/live/ih1.m3u8
-#EXTINF:-1 tvg-id="ImamHusseinTV.ir" status="error",Imam Hussein TV 1 (360p)
+#EXTINF:-1 tvg-id="ImamHusseinTV.ir" status="online",Imam Hussein TV 1 (360p)
 https://live.imamhossaintv.com/live/ih1.m3u8
+#EXTINF:-1 tvg-id="ImamHusseinTV.ir" status="error",Imam Hussein TV (720p)
+https://fa.imamhusseintv.com/live/ih1.m3u8
 #EXTINF:-1 tvg-id="INTVSimayeAzadi.ir" status="online",INTV Simaye Azadi (1080p)
 https://sima-i.akamaihd.net/hls/live/624111/sima/index.m3u8
 #EXTINF:-1 tvg-id="IranBeauty.ir" status="online",Iran Beauty (720p) [Not 24/7]
@@ -99,7 +99,7 @@ http://51.210.199.57/hls/stream.m3u8
 http://159.69.58.154/irane_arya/irane_arya.m3u8
 #EXTINF:-1 tvg-id="iToon.ir" status="error",iToon (360p)
 http://159.69.58.154/itoon/master.m3u8
-#EXTINF:-1 tvg-id="JahanbinTV.ir" status="online",JAHANBIN (240p)
+#EXTINF:-1 tvg-id="JahanbinTV.ir" status="error",JAHANBIN (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:jahanbin/playlist.m3u8
 #EXTINF:-1 tvg-id="KalemehTV.ir" status="online",Kalemeh TV (1080p) [Not 24/7]
 https://live.kalemehtv.tv/live/ngrp:kalemeh_all/playlist.m3u8
@@ -155,7 +155,7 @@ http://65.21.196.79/gem_river/master.m3u8
 #EXTINF:-1 tvg-id="Rubix.ir" status="error",GEM Rubix (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=rubix
 https://stream-cdn.gemonline.tv/live/rubix/index.m3u8
-#EXTINF:-1 tvg-id="SahandTV.ir" status="online",SAHAND (240p)
+#EXTINF:-1 tvg-id="SahandTV.ir" status="error",SAHAND (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:sahand/playlist.m3u8
 #EXTINF:-1 tvg-id="SalamTV.ir" status="online",Salam TV (720p)
 https://iptv.salaamtv.org/salaam/playlist.m3u8
@@ -213,8 +213,6 @@ https://live1.presstv.ir/live/ifilmen.m3u8
 https://live.presstv.ir/live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Al Kawthar TV (240p) [Not 24/7]
 http://178.252.143.156:1935/live/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",QAZVIN (240p)
-http://cdn1.live.irib.ir:1935/epg-live/smil:qazvin/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Nour (720p) [Not 24/7]
 https://cdn.videoevent.live:19360/elfaro4/elfaro4.m3u8
 #EXTINF:-1 tvg-id="" status="error",Mono TV (720p)
@@ -233,6 +231,8 @@ http://159.69.58.154/music1/music1_tv.m3u8
 http://159.69.58.154/t2_movies/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",SAHAR KURDI (576p) [Not 24/7]
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/56
+#EXTINF:-1 tvg-id="" status="error",QAZVIN (240p)
+http://cdn1.live.irib.ir:1935/epg-live/smil:qazvin/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",1TvPersian (720p) [Not 24/7]
 https://1-215-11778-1.b.cdn13.com/onetvpersia001.m3u8
 #EXTINF:-1 tvg-id="" status="error",Khatereh TV (368p) [Geo-blocked]
