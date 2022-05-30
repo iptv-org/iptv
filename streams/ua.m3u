@@ -53,9 +53,9 @@ https://glas.org.ua/hls/glassua.m3u8
 #EXTINF:-1 tvg-id="GTV.ua" status="online",GTV (720p)
 https://cdn1.live-tv.od.ua:8083/a1od/gtvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="error",HDFashion & LifeStyle (1080p)
-http://95.67.47.114/hls/hdfashion_ua.m3u8
-#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="error",HDFashion & LifeStyle (1080p)
 http://95.67.47.115/hls/hdfashion_ua.m3u8
+#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua",HDFashion & LifeStyle (1080p)
+http://95.67.47.114/hls/hdfashion_ua.m3u8
 #EXTINF:-1 tvg-id="HersonPlyus.ua" status="blocked",Херсон Плюс (576p)
 http://46.175.163.130/ks_plus/index.m3u8
 #EXTINF:-1 tvg-id="IDFashion.ua" status="online",ID Fashion (1080p) [Not 24/7]
@@ -222,6 +222,8 @@ http://95.67.106.10/hls/nta_ua_low/index.m3u8
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Прямий (576p)
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_mid/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",34 канал (576p) [Not 24/7]
+http://streamvideol.luxnet.ua/34ua/34ua.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",IHTEP (576p)
 https://edge1.iptv.macc.com.ua/img/inter_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (504p)
@@ -253,8 +255,6 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://ftp.orbita.dn.ua/hls/orbita.m3u8
 #EXTINF:-1 tvg-id="" status="error",ПравдаТУТ (720p)
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_low/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",34 канал (576p) [Not 24/7]
-http://streamvideol.luxnet.ua/34ua/34ua.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Трофей ТВ (720p)
 https://5db1ab4f970be.streamlock.net/live/smil:trofey.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Одесса (576p) [Geo-blocked]
