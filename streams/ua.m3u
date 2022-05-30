@@ -53,9 +53,9 @@ https://glas.org.ua/hls/glassua.m3u8
 #EXTINF:-1 tvg-id="GTV.ua" status="online",GTV (720p)
 https://cdn1.live-tv.od.ua:8083/a1od/gtvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="error",HDFashion & LifeStyle (1080p)
-http://95.67.47.115/hls/hdfashion_ua.m3u8
-#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua",HDFashion & LifeStyle (1080p)
 http://95.67.47.114/hls/hdfashion_ua.m3u8
+#EXTINF:-1 tvg-id="HDFashionLifeStyle.ua" status="error",HDFashion & LifeStyle (1080p)
+http://95.67.47.115/hls/hdfashion_ua.m3u8
 #EXTINF:-1 tvg-id="HersonPlyus.ua" status="blocked",Херсон Плюс (576p)
 http://46.175.163.130/ks_plus/index.m3u8
 #EXTINF:-1 tvg-id="IDFashion.ua" status="online",ID Fashion (1080p) [Not 24/7]
@@ -212,8 +212,6 @@ http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_hi/i
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Кривой Рог) (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/1tvkr/1tvkr/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
-https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (576p)
 http://91.194.79.46:8081/stream2/channel2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
@@ -232,6 +230,8 @@ https://cdn1.live-tv.od.ua:8083/1tvod/1tvod-abr/playlist.m3u8
 https://cdn1.live-tv.od.ua:8083/1tvod/1tvod/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ТРК Репортер (480p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
+https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Прямий (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
