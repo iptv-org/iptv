@@ -139,7 +139,7 @@ https://585b674743bbb.streamlock.net/9006/9006/master.m3u8
 https://w1.mediastreaming.it/orlertv/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="OttoFMTV.ch" status="online",Otto FM TV (576p)
 http://streaming.bitonlive.net:8080/hls/ottofm2/index.m3u8
-#EXTINF:-1 tvg-id="PadrePioTV.it" status="timeout",Padre Pio TV (330p)
+#EXTINF:-1 tvg-id="PadrePioTV.it" status="error",Padre Pio TV (330p)
 https://56972e8bd3345.streamlock.net/TRPP_live/smil:bcffcc98-ac2f-4b73-b0a5-ad1bfb96d845_all.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ParadiseTV.it" status="error",Paradise TV (720p)
 https://59ef7ad665d1d.streamlock.net:1443/paradisetv/paradisetv/playlist.m3u8
@@ -163,9 +163,9 @@ https://56b50ada2d659.streamlock.net/RadioBirikinaTV/livestream/playlist.m3u8
 http://capital-live-tv-01-hls.akamai.media.kataweb.it/i/CapitalTv_1@183098/master.m3u8
 #EXTINF:-1 tvg-id="RadioIbizaTV.it" status="online",Radio Ibiza TV (720p) [Not 24/7]
 https://5929b138b139d.streamlock.net/RadioIbizaTV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioIglesias.it" status="online",Radio Iglesias (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RadioIglesias.it" status="blocked",Radio Iglesias (576p) [Geo-blocked]
 http://wms.shared.streamshow.it/visualradio/mp4:visualradio/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="blocked",Radio Iglesias Sardegna (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="online",Radio Iglesias Sardegna (576p) [Geo-blocked]
 https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioItaliaTV.it" status="online",Radio Italia TV (480p)
 https://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/master.m3u8
@@ -193,11 +193,11 @@ https://unlimited1-cl.dps.live/radioztv/radioztv.smil/radioztv/livestream2/chunk
 https://rtl-video3-stream.thron.com/live-video/video3/ngrp:video3/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai1.it" status="online",Rai 1 (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
-#EXTINF:-1 tvg-id="Rai1.it" status="blocked",Rai 1 (302p) [Geo-blocked]
-http://stream.tvtap.net:8081/live/it-rai1.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Rai1.it" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Rai 1 (480p)
+#EXTINF:-1 tvg-id="Rai1.it" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Rai 1 (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s29/04.m3u8
+#EXTINF:-1 tvg-id="Rai1.it" status="blocked",Rai 1 (302p) [Geo-blocked]
+http://stream.tvtap.net:8081/live/it-rai1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai2.it" status="online",Rai 2 (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718
 #EXTINF:-1 tvg-id="Rai2.it" status="blocked",Rai 2 (302p) [Geo-blocked]
@@ -310,9 +310,9 @@ http://wms.shared.streamshow.it/telefoggia/mp4:telefoggia/playlist.m3u8
 https://59d7d6f47d7fc.streamlock.net/telefoggia/telefoggia/playlist.m3u8
 #EXTINF:-1 tvg-id="Telefriuli.it" status="error",Telefriuli (720p) [Not 24/7]
 https://streamtechglobal.akamaized.net/hls/live/2024685/telefriuli/Group01/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleGenova.it" status="error",TeleGenova (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleGenova.it" status="online",TeleGenova (404p) [Not 24/7]
 https://5db313b643fd8.streamlock.net/Telegenova/Telegenova/playlist.m3u8
-#EXTINF:-1 tvg-id="Telegranda.it" status="error",Telegranda (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Telegranda.it" status="online",Telegranda (720p) [Not 24/7]
 http://live.sloode.com:1935/telegranda_live/C2AD-0664-DC75-4744/playlist.m3u8
 #EXTINF:-1 tvg-id="TelelibertaHD.it" status="online",Teleliberta (486p) [Not 24/7]
 http://api.new.livestream.com/accounts/17114188/events/4902226/live.m3u8

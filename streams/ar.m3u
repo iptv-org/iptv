@@ -49,7 +49,7 @@ https://cdn2.zencast.tv:30443/live/canal10smil/playlist.m3u8
 http://panel.dattalive.com:1935/8204/8204/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal11LaRioja.ar" status="online",Canal 11 La Rioja (Fénix Multiplataforma) (360p)
 http://stmv4.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal12Web.ar" status="online",Canal 12 Puerto Madryn (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal12Web.ar" status="error",Canal 12 Puerto Madryn (720p) [Not 24/7]
 https://5f700d5b2c46f.streamlock.net/madryntv/madryntv/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal13LaRioja.ar" status="online",Canal 13 La Rioja (480p)
 http://arcast.net:1935/mp/mp/playlist.m3u8
@@ -64,12 +64,12 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canalccor
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g5.proy-hor.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8?sense=true
-#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
-https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="iPhone",Canal Luz (1080p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
+https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalProvincial.ar" status="error",Canal Provincial (San Miguel) (360p) [Not 24/7]
 http://www.trimi.com.ar/provincial/streaming/mystream.m3u8
 #EXTINF:-1 tvg-id="CanalTDC.ar" status="online",CANAL TDC (1080p) [Not 24/7]
@@ -78,7 +78,7 @@ https://5e7cdf2370883.streamlock.net/tdconline/tdconline/playlist.m3u8
 https://5b7ecefab6325.streamlock.net/Streamtv/chacotv/playlist.m3u8
 #EXTINF:-1 tvg-id="ChacraTV.ar" status="online",Chacra TV (480p) [Not 24/7]
 https://s8.stweb.tv/chacra/live/playlist.m3u8
-#EXTINF:-1 tvg-id="CincoTV.ar" status="online",Cinco TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="CincoTV.ar" status="error",Cinco TV (480p) [Not 24/7]
 https://59537faa0729a.streamlock.net/cincotv/cincotv/playlist.m3u8
 #EXTINF:-1 tvg-id="Cinear.ar" status="online",CINE.AR (720p) [Not 24/7]
 https://5fb24b460df87.streamlock.net/live-cont.ar/cinear/playlist.m3u8
@@ -100,7 +100,7 @@ https://stmv1.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
 https://videohd.live:19360/8010/8010.m3u8
 #EXTINF:-1 tvg-id="InformacionPeriodistica.ar" status="online",Informacion Periodística (1080p)
 https://d1nmqgphjn0y4.cloudfront.net/live/ip/live.isml/5ee6e167-1167-4a85-9d8d-e08a3f55cff3.m3u8
-#EXTINF:-1 tvg-id="LaVozdeTucuman.ar" status="online",La Voz de Tucuman (480p)
+#EXTINF:-1 tvg-id="LaVozdeTucuman.ar" status="error",La Voz de Tucuman (480p)
 https://srv1.zcast.com.br/lavozdetucuman/lavozdetucuman/playlist.m3u8
 #EXTINF:-1 tvg-id="LivePeruTVStreaming.ar" status="error",Live Perú TV Streaming (720p) [Not 24/7]
 http://209.126.108.55/app/stream/playlist.m3u8
@@ -150,18 +150,18 @@ https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCvCTWHCbBC0b9UIeLeNs8ug/live
 #EXTINF:-1 tvg-id="VTV.ar" status="online",VerTV (VTV) (720p) [Not 24/7]
 https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Power TV (720p) [Not 24/7]
-https://wowza.telpin.com.ar:1935/live-powerTV/power.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Catacama TV (288p)
-https://5f700d5b2c46f.streamlock.net/catamarcatelevision/catamarcatelevision/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ElOnce (1080p) [Not 24/7]
 https://elonceovh.elonce.com/hls/live.m3u8
+#EXTINF:-1 tvg-id="" status="online",Power TV (720p) [Not 24/7]
+https://wowza.telpin.com.ar:1935/live-powerTV/power.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Canal 4 (Posadas) (360p) [Geo-blocked]
 http://184.154.28.210:1935/canal4/canal4/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Medios Rioja (864p) [Not 24/7]
 http://streamyes.alsolnet.com/mediosrioja/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Santa María TV (360p) [Not 24/7]
 http://www.trimi.com.ar/santa_maria/streaming/mystream.m3u8
+#EXTINF:-1 tvg-id="" status="error",Catacama TV (288p)
+https://5f700d5b2c46f.streamlock.net/catamarcatelevision/catamarcatelevision/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Quatro TV (540p) [Not 24/7]
 https://59d52c5a5ce5e.streamlock.net:4443/quatro/quatro/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Magic Kids (720p) [Not 24/7]
