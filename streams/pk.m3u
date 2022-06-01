@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="92News.pk" status="error",92 News (720p) [Not 24/7]
 https://query-streamlink.herokuapp.com/iptv-query?streaming-ip=https://www.youtube.com/channel/UCsgC5cbz3DE2Shh34gNKiog/live
-#EXTINF:-1 tvg-id="92NewsUK.pk" status="error",92 News UK (576p)
+#EXTINF:-1 tvg-id="92NewsUK.pk" status="online",92 News UK (576p)
 https://securecontributions.sechls01.visionip.tv/live/securecontributions-securecontributions-92_news-hsslive-25f-16x9-SD/chunklist.m3u8
 #EXTINF:-1 tvg-id="ARYDigital.pk" status="error",ARY Digital (1080p)
 #EXTVLCOPT:http-referrer=https://live.arydigital.tv/
@@ -19,14 +19,14 @@ https://dcunilive38-lh.akamaihd.net/i/dclive_1@692670/index_150_av-p.m3u8
 https://dcunilive38-lh.akamaihd.net/i/dclive_1@692670/master.m3u8
 #EXTINF:-1 tvg-id="DhartiTV.pk" status="online",Dharti TV
 https://streamone.simpaisa.com:8443/pitvlive1/dhartitv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="DunyaNews.pk" status="online",Dunya News (UK Feed) (720p) [Not 24/7]
+https://ukintl.dunyanews.tv/liveuk/ngrp:dunyalive_all/playlist.m3u8
 #EXTINF:-1 tvg-id="DunyaNews.pk" status="online",Dunya News (360p) [Not 24/7]
 https://imob.dunyanews.tv/live/_definst_/ngrp:dunyalive_1_all/playlist.m3u8
 #EXTINF:-1 tvg-id="DunyaNews.pk" status="online",Dunya News (480p) [Not 24/7]
 https://imob.dunyanews.tv/livehd/_definst_/ngrp:dunyalivehd_2_all/playlist.m3u8
 #EXTINF:-1 tvg-id="DunyaNews.pk" status="online",Dunya News (INT Feed) (480p) [Not 24/7]
 https://intl.dunyanews.tv/livehd/_definst_/ngrp:dunyalivehd_2_all/playlist.m3u8?dvr=
-#EXTINF:-1 tvg-id="DunyaNews.pk" status="online",Dunya News (UK Feed) (720p) [Not 24/7]
-https://ukintl.dunyanews.tv/liveuk/ngrp:dunyalive_all/playlist.m3u8
 #EXTINF:-1 tvg-id="DunyaNews.pk" status="error",Dunya News (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCnMBV5Iw4WqKILKue1nP6Hg/live
 #EXTINF:-1 tvg-id="DunyaNews.pk" status="error",Dunya News (USA Feed) (1080p) [Not 24/7]
@@ -35,9 +35,9 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://jk3lz82elw79-hls-live.5centscdn.com/Geo/eae835e83c0494a376229f254f7d3392.sdp/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="K21News.pk" status="online",K21 News
 https://streamone.simpaisa.com:8443/pitvlive1/k21.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Kay2TV.pk" status="error",Kay2 TV (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kay2HD.pk" status="error",Kay2 TV (404p) [Not 24/7]
 https://dcunilive36-lh.akamaihd.net/i/dclive_1@662109/index_150_av-p.m3u8
-#EXTINF:-1 tvg-id="Kay2TV.pk" status="error",Kay2 TV (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kay2HD.pk" status="error",Kay2 TV (404p) [Not 24/7]
 https://dcunilive36-lh.akamaihd.net/i/dclive_1@662109/master.m3u8
 #EXTINF:-1 tvg-id="KhyberMiddleEastTV.pk" status="error",Khyber Middle East TV (720p) [Not 24/7]
 https://dcunilive83-lh.akamaihd.net/i/dclive_1@16122/master.m3u8
@@ -45,9 +45,9 @@ https://dcunilive83-lh.akamaihd.net/i/dclive_1@16122/master.m3u8
 https://streamone.simpaisa.com:8443/pitvlive1/khybernews.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KohenoorNews.pk" status="online",Kohenoor News
 https://streamer12.vdn.dstreamone.net/dsone/kohenoortv/playlist.m3u8
-#EXTINF:-1 tvg-id="LahoreNews.pk" status="online",Lahore News (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LahoreNewsHD.pk" status="online",Lahore News (720p) [Not 24/7]
 https://vcdn.dunyanews.tv/lahorelive/_definst_/ngrp:lnews_1_all/playlist.m3u8
-#EXTINF:-1 tvg-id="LahoreNews.pk" status="timeout",Lahore News (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LahoreNewsHD.pk" status="timeout",Lahore News (720p) [Not 24/7]
 http://mlive.lahorenews.tv/lahorelive/lnews_1/chunklist_DVR.m3u8
 #EXTINF:-1 tvg-id="MadaniChannelBangla.bd" status="error",Madani Channel Bangla (1080p) [Not 24/7]
 https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/madanitvbangla.stream/playlist.m3u8
