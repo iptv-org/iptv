@@ -41,9 +41,9 @@ https://rtmp02.portalexpress.es/marinastereo/marinastereo/playlist.m3u8
 https://5b464b69d264e.streamlock.net/Channels_live/ngrp:MelodyChannel_all/playlist.m3u8
 #EXTINF:-1 tvg-id="MovieFe.co" status="online",MovieFe (360p) [Not 24/7]
 https://vcp.myplaytv.com/moviefe/ngrp:moviefe_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MundoMas.co" status="timeout",Mundo +
+#EXTINF:-1 tvg-id="MundoMas.co" status="online",Mundo +
 http://vcp1.myplaytv.com:1935/mundomas/mundomas/playlist.m3u8
-#EXTINF:-1 tvg-id="NoticiasCaracol.co",Noticias Caracol (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NoticiasCaracol.co" status="blocked",Noticias Caracol (720p) [Geo-blocked]
 https://mdstrm.com/live-stream-playlist/58dc3d471cbe05ff3c8e463e.m3u8
 #EXTINF:-1 tvg-id="NTN24.co" status="error",NTN24 (Nuestra Tele Noticias) (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCEJs1fTF3KszRJGxJY14VrA/live
@@ -51,14 +51,14 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://45.179.140.242:8000/play/a0jf
 #EXTINF:-1 tvg-id="SenalColombia.co" status="online",Señal Colombia (1080p)
 https://streaming.rtvc.gov.co/TV_Senal_Colombia_live/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SuramTV.co" status="online",Suram TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="SuramTV.co" status="error",Suram TV (1080p) [Not 24/7]
 https://5b3050bb1b2d8.streamlock.net/suramtv/suramtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TDIColombia.co" status="online",TDI Colombia (720p) [Not 24/7]
 https://play.amelbasoluciones.co:3971/live/tdicolombiatvlive.m3u8
-#EXTINF:-1 tvg-id="Teleantioquia2.co" status="online",Teleantioquia 2 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Teleantioquia2.co" status="error",Teleantioquia 2 (720p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive2.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Teleantioquia.co" status="online",Teleantioquia (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="Teleantioquia.co" status="error",Teleantioquia (360p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Telecafe.co" status="timeout",Telecafé
