@@ -44,7 +44,7 @@ http://pershij-dlovij.cdn-02.cosmonova.net.ua/hls/pershij-dlovij_ua_low/index.m3
 https://95-213-224-183.livesports24.online/uafootballua1.m3u8
 #EXTINF:-1 tvg-id="GIT.ua" status="online",GIT (720p)
 https://stream.uagit.tv/gittv.m3u8
-#EXTINF:-1 tvg-id="Glas.ua" status="online",Глас (576p)
+#EXTINF:-1 tvg-id="Glas.ua" status="error",Глас (576p)
 http://85.238.112.69:8811/hls_sec/239.0.4.18-.m3u8
 #EXTINF:-1 tvg-id="GlassRU.ua" status="online",Гласс (RU) (576p) [Not 24/7]
 https://glas.org.ua/hls/glassru.m3u8
@@ -68,9 +68,9 @@ https://edge3.iptv.macc.com.ua/img/inter_3/index.m3u8
 http://109.68.40.67/img/inter_2/index.m3u8
 #EXTINF:-1 tvg-id="IRT.ua" status="blocked",ИРТ (Днепр) (576p) [Not 24/7]
 http://91.193.128.233:1935/live/irt.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="IzmailTV.ua" status="online",Измаил ТВ (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="IzmailTV.ua" status="error",Измаил ТВ (576p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/izod/izod-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="IzmailTV.ua" status="online",Измаил ТВ (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="IzmailTV.ua" status="error",Измаил ТВ (576p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/izod/izod/playlist.m3u8
 #EXTINF:-1 tvg-id="K1.ua" status="online",К1 (576p)
 http://edge3.iptv.macc.com.ua/life/k1.m3u8
@@ -138,9 +138,9 @@ https://cdn10.live-tv.od.ua:8083/leonovtv/test-abr/playlist.m3u8
 https://cdn1.live-tv.od.ua:8083/3tvod/3tvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKAleks.ua" status="online",ТРК Алекс (576p)
 http://46.46.112.223/live/livestream1.m3u8
-#EXTINF:-1 tvg-id="TRKKrug.ua" status="online",Круг (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TRKKrug.ua" status="error",Круг (576p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/krugod/krugod-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="TRKKrug.ua" status="online",ТРК Круг (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TRKKrug.ua" status="error",ТРК Круг (576p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/krugod/krugod/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://hls.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
@@ -195,8 +195,14 @@ http://rtmp.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
 https://stream.ntktv.ua/s/ntk/ntk.m3u8
 #EXTINF:-1 tvg-id="" status="online",Балта ТВ (768p)
 http://194.50.51.34/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
+http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
+http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
+#EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
+http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",ПравдаТУТ (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua.m3u8
@@ -206,10 +212,10 @@ http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_hi/i
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Кривой Рог) (720p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/1tvkr/1tvkr/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
+https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (576p)
 http://91.194.79.46:8081/stream2/channel2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
-http://95.67.106.10/hls/nta_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",ПравдаТУТ (720p)
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Прямий (576p)
@@ -227,32 +233,26 @@ https://cdn1.live-tv.od.ua:8083/31chod/31chod-sub/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Прямий (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",CNL Европа (216p)
+http://hls-live-media.cdn01.net/default/stream_10429_3.m3u8
+#EXTINF:-1 tvg-id="" status="online",CNL Европа (216p)
+http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_3.m3u8
 #EXTINF:-1 tvg-id="" status="online",Micto (360p)
 http://93.78.206.172:8080/stream3/stream.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ОТВ (Днепр) (576p)
 http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
-http://95.67.106.10/hls/nta_ua_mid/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",I-UA.tv (1080p)
-https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
-#EXTINF:-1 tvg-id="" status="error",ЯТБ (576p)
+#EXTINF:-1 tvg-id="" status="timeout",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
+http://95.67.106.10/hls/nta_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",UkrLive (Перший незалежний) (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCeOlmFkSt4KFVkivMe7uEvw/live
 #EXTINF:-1 tvg-id="" status="error",Орбіта ТВ (360p) [Not 24/7]
 http://ftp.orbita.dn.ua/hls/orbita.m3u8
-#EXTINF:-1 tvg-id="" status="error",CNL Европа (360p)
-http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
-#EXTINF:-1 tvg-id="" status="error",CNL Европа (216p)
-http://hls-live-media.cdn01.net/default/stream_10429_3.m3u8
-#EXTINF:-1 tvg-id="" status="error",CNL Европа (360p)
-http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
-#EXTINF:-1 tvg-id="" status="error",CNL Европа (216p)
-http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_3.m3u8
 #EXTINF:-1 tvg-id="" status="error",ПравдаТУТ (720p)
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Трофей ТВ (720p)
