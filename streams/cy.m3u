@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AdaTV.cy" status="online",Ada TV (1080p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/kibrisadatv/playlist.m3u8
-#EXTINF:-1 tvg-id="AdaTV.cy" status="error",Ada TV (720p)
+#EXTINF:-1 tvg-id="AdaTV.cy" status="timeout",Ada TV (720p)
 http://kuzeykibris.tv/m3u8/tv_ada.m3u8
 #EXTINF:-1 tvg-id="AlfaSport.cy" status="online",Alfa Sport (1080p) [Not 24/7]
 https://dev.aftermind.xyz/edge-hls/unitrust/alfasports/index.m3u8?token=8TXWzhY3h6jrzqEqu
@@ -17,7 +17,7 @@ http://kuzeykibris.tv/m3u8/tv_brt1.m3u8
 http://wms.brtk.net:1935/live/BRTHD/playlist.m3u8
 #EXTINF:-1 tvg-id="BRT1HD.cy" status="error",BRT 1 HD (576p) [Not 24/7]
 rtmp://wms.brtk.net:1935/live/BRTHD
-#EXTINF:-1 tvg-id="BRT2HD.cy" status="error",BRT 2 HD (406p) [Not 24/7]
+#EXTINF:-1 tvg-id="BRT2HD.cy" status="online",BRT 2 HD (406p) [Not 24/7]
 http://wms.brtk.net:1935/live/brt1/playlist.m3u8
 #EXTINF:-1 tvg-id="BRT3.cy" status="online",BRT 3 (406p) [Not 24/7]
 http://wms.brtk.net:1935/live/brt2/playlist.m3u8
@@ -53,16 +53,16 @@ http://live.mycamtv.com/white.m3u8
 https://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
 #EXTINF:-1 tvg-id="SigmaTV.cy" status="online",Sigma (576p) [Not 24/7]
 https://sl2.sigmatv.com/hls/live.m3u8
-#EXTINF:-1 tvg-id="TV2020.cy" status="error",TV 2020 (720p)
+#EXTINF:-1 tvg-id="TV2020.cy" status="timeout",TV 2020 (720p)
 http://kuzeykibris.tv/m3u8/tv_dialog.m3u8
-#EXTINF:-1 tvg-id="" status="online",Reload (804p)
-http://web.onair-radio.eu:1935/video/video/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Vouli TV (1080p) [Not 24/7]
 https://dev.aftermind.xyz/edge-hls/unitrust/voulitv/index.m3u8?token=8TXWzhY3h6jrzqEqu
 #EXTINF:-1 tvg-id="" status="online",Vouli TV (1080p)
 https://dev.aftermind.xyz/hls/unitrust/voulitv/index.m3u8?token=8TXWzhY3h6jrzqEqu
 #EXTINF:-1 tvg-id="" status="online",SAT-7 KIDS (1080p)
 https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="" status="online",Reload (804p)
+http://web.onair-radio.eu:1935/video/video/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",SAT-7 ARABIC (240p)
 https://svs.itworkscdn.net/sat7arabiclive/sat7arabic.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="" status="online",SAT-7 PARS (720p)
