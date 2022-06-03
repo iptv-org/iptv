@@ -54,10 +54,10 @@ https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv/playlist.m3u8
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/104.m3u8
 #EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (1080p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/ciftcitv/smil:ciftcitv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (720p) [Not 24/7]
-https://waw1.artiyerelmedya.net/ciftcitv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/ciftcitv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="CiftciTV.tr" status="timeout",Çiftçi TV (720p) [Not 24/7]
+https://waw1.artiyerelmedya.net/ciftcitv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="DehaTV.tr" status="online",Deha TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/dehatv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="DenizPostasiTV.tr" status="online",Deniz Postası TV (720p) [Not 24/7]
@@ -154,7 +154,7 @@ https://waw2.artiyerelmedya.net/kanal23/bant1/playlist.m3u8
 https://waw2.artiyerelmedya.net/kanal26/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal32.tr" status="online",Kanal 32 (480p) [Not 24/7]
 https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Kanal33.tr" status="blocked",Kanal 33 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal33.tr" status="online",Kanal 33 (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/kanal33/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal34.tr" status="online",Kanal 34 (720p) [Not 24/7]
 http://live.arkumedia.com:1935/kanal34tv/kanal34tv/playlist.m3u8
@@ -216,9 +216,9 @@ https://waw2.artiyerelmedya.net/mercantv/bant1/playlist.m3u8
 https://b01c02nl.mediatriple.net/videoonlylive/mtfgdbkwkjllolive/broadcast_5b1673b7c36b7.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MiskFM.tr" status="online",Misk FM (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCrvsAwtrxZ0q31yU9JEBdWA/live
-#EXTINF:-1 tvg-id="NaturalTV.tr" status="error",Natural TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NaturalTV.tr" status="online",Natural TV (720p) [Not 24/7]
 http://broadcasttr.com:1935/naturaltv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="NaturalTV.tr" status="error",Natural TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NaturalTV.tr" status="online",Natural TV (720p) [Not 24/7]
 https://broadcasttr.com:446/naturaltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="NTV.tr" status="error",NTV (480p) [Not 24/7]
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/128
@@ -234,13 +234,13 @@ http://yayin.netradyom.com:1935/live/on4/playlist.m3u8
 https://broadcasttr.com:446/oncurtv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="OnMedyaTV.tr" status="blocked",ON Medya Haber (720p) [Geo-blocked]
 http://live.arkumedia.com:1935/marmaratv/marmaratv/playlist.m3u8
+#EXTINF:-1 tvg-id="PowerTurkTV.tr" status="online",Power Turk (1080p) [Not 24/7]
+https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTurkTV.tr" status="online" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Power Turk (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://mn-nl.mncdn.com/blutv_powerturk/smil:powerturk_sd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTurkTV.tr" status="online",PowerTürk TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/powerturktv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="PowerTurkTV.tr" status="timeout",Power Turk (1080p) [Not 24/7]
-https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTV.tr" status="online",Power TV (1080p)
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RehberTV.tr" status="error",Rehber TV (720p) [Not 24/7]
@@ -275,7 +275,7 @@ https://tv.ensonhaber.com/tv/tr/tgrteu/index.m3u8
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe4598be8e5d.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ThaqalaynTV.tr" status="error",Thaqalayn TV (720p) [Not 24/7]
 https://live.thaqalayn.tv/hls/live.m3u8
-#EXTINF:-1 tvg-id="TonTV.tr" status="timeout",Ton TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TonTV.tr" status="online",Ton TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/tontv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="ToprakTV.tr" status="online",Toprak TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/topraktv/playlist.m3u8
@@ -345,7 +345,7 @@ https://broadcasttr.com:446/tv52/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="TV85.tr" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",TV 8.5 (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://mn-nl.mncdn.com/blutv_tv8_5/smil:tv8_5_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVDen.tr" status="online",TV Den (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVDen.tr" status="error",TV Den (576p) [Not 24/7]
 http://canli.tvden.com.tr/hls/live.m3u8
 #EXTINF:-1 tvg-id="TVEm.tr" status="online",TV Em (486p)
 http://cdn-tvem.yayin.com.tr/TVEM/TVEM/playlist.m3u8
@@ -375,6 +375,8 @@ http://yayin3.canlitv.com:1935/live/vuslattv/playlist.m3u8
 https://59cba4d34b678.streamlock.net/live/vuslattv/playlist.m3u8
 #EXTINF:-1 tvg-id="VuslatTV.tr" status="online",Vuslat TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/vuslattv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",tv100 (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
 #EXTINF:-1 tvg-id="" status="online",KANAL 58 (720p) [Not 24/7]
 https://broadcasttr.com:446/kanal58/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TRT Diyanet (1080p)
@@ -425,8 +427,6 @@ http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/107.m3u8
 http://176.10.117.18:8000/play/a004/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",CRI Türk Belgesel (480p)
 http://cri.aa.net.tr:1935/belgesel/belgesel/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",tv100 (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
 #EXTINF:-1 tvg-id="" status="error",tv100 Ekonomi (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=32enbX7XKnw
 #EXTINF:-1 tvg-id="" status="error",Genç TV (720p) [Not 24/7]
