@@ -13,7 +13,7 @@ http://inliveserver.com:1935/14510/14510/playlist.m3u8
 https://d30zjikdv9ntds.cloudfront.net/repretel/canal2/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4.cr" status="error",Canal 4 (360p) [Not 24/7]
 https://d30zjikdv9ntds.cloudfront.net/repretel/canal4/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal6.cr" status="online",Canal 6 (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal6.cr" status="error",Canal 6 (360p) [Not 24/7]
 https://d30zjikdv9ntds.cloudfront.net/repretel/canal6/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal8.cr" status="online",Canal 8 (720p)
 http://mdstrm.com/live-stream-playlist/5a7b1e63a8da282c34d65445.m3u8
@@ -45,12 +45,8 @@ https://59ef525c24caa.streamlock.net/nicoyatv/nicoyatv/playlist.m3u8
 http://163.178.170.127:1935/quinceucr/live.stream_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroTVPalmares.cr" status="timeout",Retro TV Palmares (360p) [Not 24/7]
 http://tvretropalmares.com:8090/hls/envivo.m3u8
-#EXTINF:-1 tvg-id="SanRafaelenLinea.cr" status="error",San Rafael en Linea (720p) [Geo-blocked]
-https://cp.sradiotv.com:1936/8064/8064/playlist.m3u8
 #EXTINF:-1 tvg-id="SMOTV.cr" status="timeout",SMO TV
 http://186.15.50.30:8080/hls/smotv.m3u8
-#EXTINF:-1 tvg-id="STVElCamalFamiliar.cr" status="online",STV El Camal Familiar (720p) [Not 24/7]
-http://tiquiciatv.com:1935/stv/web/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleredTelevision.cr" status="online",Telered Television (720p) [Not 24/7]
 http://k4.usastreams.com/ARBtv/teleplus/playlist.m3u8
 #EXTINF:-1 tvg-id="Telesistema.cr" status="online",Telesistema (486p)
@@ -71,13 +67,17 @@ http://tv.ticosmedia.com:1935/TVSUR/TVSUR/playlist.m3u8
 https://5bf8041cb3fed.streamlock.net/TVSURCANAL14/TVSURCANAL14/playlist.m3u8
 #EXTINF:-1 tvg-id="VideoTourChannel.cr" status="online",Video Tour Channel (480p) [Not 24/7]
 http://k4.usastreams.com/videotour/videotour/playlist.m3u8
-#EXTINF:-1 tvg-id="VMLatino.cr" status="error",VM Latino (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="VMLatino.cr" status="online",VM Latino (720p) [Not 24/7]
 https://59ef525c24caa.streamlock.net/vmtv/vmlatino/playlist.m3u8
-#EXTINF:-1 tvg-id="ZonaFilmsTV.cr" status="error",Zona Films TV (900p) [Not 24/7]
+#EXTINF:-1 tvg-id="ZonaFilmsTV.cr" status="online",Zona Films TV (900p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/zonafilmstv
+#EXTINF:-1 tvg-id="" status="online",STV El Camal Familiar (720p) [Not 24/7]
+http://tiquiciatv.com:1935/stv/web/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Telefides
 https://s2.cwebtv.net:4433/telefides/telefides/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Sarapiqui TV
 https://tiquiciatv.duckdns.org/hls/livestv.m3u8
+#EXTINF:-1 tvg-id="" status="error",San Rafael en Linea (720p) [Geo-blocked]
+https://cp.sradiotv.com:1936/8064/8064/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",CR-TV y Radio (360p)
 https://tv.portalexpress.es:3699/live/crtvyradio2021live.m3u8
