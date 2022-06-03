@@ -287,6 +287,22 @@ http://159.69.58.154/manoto_plus1/manoto_plus.m3u8
 http://159.69.58.154/manoto_plus2/manoto2.m3u8
 #EXTINF:-1 tvg-id="Manoto.uk" status="error",Manoto TV (1080p)
 https://d2rwmwucnr0d10.cloudfront.net/live.m3u8
+#EXTINF:-1 tvg-id="MTA1World.uk" status="online",MTA1 World (720p)
+https://chlivemta1.akamaized.net/hls/live/2008145/mta1/playlist.m3u8
+#EXTINF:-1 tvg-id="MTA2Europe.uk" status="online",MTA2 Europe (720p)
+https://chlivemta1.akamaized.net/hls/live/2008145/mta2/playlist.m3u8
+#EXTINF:-1 tvg-id="MTA3AlArabia.uk" status="online",MTA3 Al-Arabia (1080p)
+https://mta1-lh.akamaihd.net/i/Arabic_128@123036/master.m3u8
+#EXTINF:-1 tvg-id="MTA4Africa.uk" status="online",MTA4 Africa (1080p)
+https://chlivemta.akamaized.net/hls/live/2010555/mtaafrica1/playlist.m3u8
+#EXTINF:-1 tvg-id="MTA5Africa.uk" status="online",MTA5 Africa (1080p)
+https://chlivemta.akamaized.net/hls/live/2010555/mtaafrica2/playlist.m3u8
+#EXTINF:-1 tvg-id="MTA6Asia.uk" status="online",MTA6 Asia (1080p)
+https://livemtaasia.akamaized.net/hls/live/2039224/mta6asia/playlist.m3u8
+#EXTINF:-1 tvg-id="MTA7Asia.uk" status="online",MTA7 Asia (1080p)
+https://livemtaasia.akamaized.net/hls/live/2039224/mtaasia2/playlist.m3u8
+#EXTINF:-1 tvg-id="MTA8America.uk" status="online",MTA8 America (1080p)
+https://chlivemta.akamaized.net/hls/live/2016718/mta8/playlist.m3u8
 #EXTINF:-1 tvg-id="NoorTV.uk" status="error",Noor TV (480p) [Not 24/7]
 https://ls1.serverdump.com/stream3.m3u8
 #EXTINF:-1 tvg-id="S4C.uk" status="blocked",S4C (1080p) [Geo-blocked]
@@ -338,8 +354,12 @@ https://betamg-i.akamaihd.net/hls/live/513429/willhill/0_3838s0ja_1_1/chunklist.
 #EXTINF:-1 tvg-id="XpandedTV.uk" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://vod2t.xpanded.com/x3tv/index_wlan.m3u8
-#EXTINF:-1 tvg-id="" status="online",Alaraby 2 TV (1080p)
-https://alaraby.cdn.octivid.com/alaraby2n/smil:alaraby2n.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="XYMax.uk" status="online",XY Max
+http://95.87.227.29:8080/XYMAX_FOR_PLATFORM/index.m3u8
+#EXTINF:-1 tvg-id="XYMix.uk" status="online",XY Mix
+http://95.87.227.29:8080/XYMIX_FOR_PLATFORM/index.m3u8
+#EXTINF:-1 tvg-id="XYPlus.uk" status="online",XY Plus
+http://95.87.227.29:8080/XYPLUS_FOR_PLATFORM/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Channel S (US Eastern) (720p)
 https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0500/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",Channel S (US Pacific) (720p) [Not 24/7]
@@ -364,17 +384,19 @@ https://live.ishiacloud.com/haditv.co.uk/haditv5.m3u8
 https://live.ishiacloud.com/haditv.co.uk/haditv6.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hadi TV Turkish and Kurdish (720p)
 https://live.ishiacloud.com/haditv.co.uk/haditv7.m3u8
+#EXTINF:-1 tvg-id="" status="online",Hadi TV French (720p)
+https://live.ishiacloud.com/haditv.co.uk/haditv8.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://vod2t.xpanded.com/x3tv2/index_wlan.m3u8
 #EXTINF:-1 tvg-id="" status="online",Brit Asia Live (US Eastern) (360p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
+#EXTINF:-1 tvg-id="" status="online",Alaraby 2 TV (1080p)
+https://alaraby.cdn.octivid.com/alaraby2n/smil:alaraby2n.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Rugby Men's Sevens (288p)
 https://esmhls1-i.akamaihd.net/hls/live/510580/hls1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Rugby Women's Sevens (288p)
 https://esmhls2-i.akamaihd.net/hls/live/510581/hls2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Hadi TV French (720p)
-https://live.ishiacloud.com/haditv.co.uk/haditv8.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",BBC UHD Trial 1 (2160p) [Geo-blocked]
 https://a.files.bbci.co.uk/media/live/manifesto/audio_video/webcast/dash/uk/full/ak/uhd_stream_01.mpd
 #EXTINF:-1 tvg-id="" status="blocked",BBC UHD Trial 2 (2160p) [Geo-blocked]
@@ -389,19 +411,3 @@ https://a.files.bbci.co.uk/media/live/manifesto/audio_video/webcast/dash/uk/full
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_east_yorkshire/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
 #EXTINF:-1 tvg-id="" status="error",Health Media (720p) [Not 24/7]
 https://j78dpkrjlq5r-hls-live.5centscdn.com/HMN/271ddf829afeece44d8732757fba1a66.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="MTA1World.uk" status="online",MTA1 World (720p)
-https://chlivemta1.akamaized.net/hls/live/2008145/mta1/playlist.m3u8
-#EXTINF:-1 tvg-id="MTA2Europe.uk" status="online",MTA2 Europe (720p)
-https://chlivemta1.akamaized.net/hls/live/2008145/mta2/playlist.m3u8
-#EXTINF:-1 tvg-id="MTA3AlArabia.uk" status="online",MTA3 Al-Arabia (1080p)
-https://mta1-lh.akamaihd.net/i/Arabic_128@123036/master.m3u8
-#EXTINF:-1 tvg-id="MTA4Africa.uk" status="online",MTA4 Africa (1080p)
-https://chlivemta.akamaized.net/hls/live/2010555/mtaafrica1/playlist.m3u8
-#EXTINF:-1 tvg-id="MTA5Africa.uk" status="online",MTA5 Africa (1080p)
-https://chlivemta.akamaized.net/hls/live/2010555/mtaafrica2/playlist.m3u8
-#EXTINF:-1 tvg-id="MTA6Asia.uk" status="online",MTA6 Asia (1080p)
-https://livemtaasia.akamaized.net/hls/live/2039224/mta6asia/playlist.m3u8
-#EXTINF:-1 tvg-id="MTA7Asia.uk" status="online",MTA7 Asia (1080p)
-https://livemtaasia.akamaized.net/hls/live/2039224/mtaasia2/playlist.m3u8
-#EXTINF:-1 tvg-id="MTA8America.uk" status="online",MTA8 America (1080p)
-https://chlivemta.akamaized.net/hls/live/2016718/mta8/playlist.m3u8
