@@ -49,9 +49,9 @@ https://video.streams.ovh:1936/DiavataTV/DiavataTV/playlist.m3u8
 https://www.hellasnet.tv/rest.live.hn/diktyo1r/playlist.m3u8
 #EXTINF:-1 tvg-id="DipsoTV.gr" status="online",Dipso TV (720p) [Not 24/7]
 https://live.cast-control.eu/ekpdipso/ekpdipso/playlist.m3u8
-#EXTINF:-1 tvg-id="EgnatiaTileorasi.gr" status="error",Εγνατία Τηλεόραση (576p)
+#EXTINF:-1 tvg-id="EgnatiaTileorasi.gr" status="online",Εγνατία Τηλεόραση (576p)
 https://video.streams.ovh:1936/egnatiatv/egnatiatv/index.m3u8
-#EXTINF:-1 tvg-id="Ekklisia.gr" status="online",Εκκλησία (1080p)
+#EXTINF:-1 tvg-id="Ekklisia.gr" status="timeout",Εκκλησία (1080p)
 https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8
 #EXTINF:-1 tvg-id="EllasTV.gr" status="online",Ellas TV (1080p)
 http://ellastv.gotdns.com:88/freetv/promo/index.m3u8
@@ -65,15 +65,13 @@ http://ert-live-bcbs15228.siliconweb.com/media/ert_1/ert_1.m3u8
 http://ert-live-bcbs15228.siliconweb.com/media/ert_2/ert_2.m3u8
 #EXTINF:-1 tvg-id="ERT3.gr" status="blocked",ERT 3 (1080p) [Geo-blocked]
 http://ert-live-bcbs15228.siliconweb.com/media/ert_3/ert_3.m3u8
-#EXTINF:-1 tvg-id="ErtaLexTV.gr" status="error",Erta Lex TV
-https://vdo.alphaserver.gr:3203/stream/play.m3u8
 #EXTINF:-1 tvg-id="ERTNews.gr" status="online",ERT News (720p) [Geo-blocked]
 http://ert-live-bcbs15228.siliconweb.com/media/ert_news/ert_news.m3u8
 #EXTINF:-1 tvg-id="ERTSports2.gr" status="blocked",ERT Sports 2 (1080p) [Geo-blocked]
 http://ert-live-bcbs15228.siliconweb.com/media/ert_sports_2/ert_sports_2.m3u8
 #EXTINF:-1 tvg-id="ERTSports3.gr" status="blocked",ERT Sports 3 (1080p) [Geo-blocked]
 http://ert-live-bcbs15228.siliconweb.com/media/ert_sports_3/ert_sports_3.m3u8
-#EXTINF:-1 tvg-id="ERTSports.gr" status="blocked",ERT Sports (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ERTSportsHD.gr" status="blocked",ERT Sports (1080p) [Geo-blocked]
 http://ert-live-bcbs15228.siliconweb.com/media/ert_sports/ert_sports.m3u8
 #EXTINF:-1 tvg-id="ERTWorld.gr" status="online",ERT World (720p)
 http://ert-live-bcbs15228.siliconweb.com/media/ert_world/ert_world.m3u8
@@ -121,7 +119,7 @@ https://itv.streams.ovh/magictv/magictv/playlist.m3u8
 https://antennaamdnoenc.akamaized.net/maktv_akamai/abr/playlist.m3u8
 #EXTINF:-1 tvg-id="MaroussiotikaTV.gr" status="online",Maroussiotika TV (480p) [Not 24/7]
 http://maroussiotika.dynu.com:8000/greektv/FZlHCCdBHL1/359142
-#EXTINF:-1 tvg-id="MegaTV.gr" status="error",Mega TV
+#EXTINF:-1 tvg-id="MEGATVHD.gr" status="error",Mega TV
 https://streamcdnb7-c98db5952cb54b358365984178fb898a.msvdn.net/live/S86713049/gonOwuUacAxM/playlist.m3u8
 #EXTINF:-1 tvg-id="MesogeiosTV.gr" status="online",Mesogeios TV (432p)
 http://176.9.123.140:1935/mesogeiostv/stream/master.m3u8
@@ -225,5 +223,7 @@ http://176.9.123.140:1935/msg116s/msg116s/playlist.m3u8
 https://alphalive-i.akamaihd.net/hls/live/682300/live/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",ANT1 (1080p) [Geo-blocked]
 https://antennaamdnoenc.akamaized.net/ant1_akamai/abr/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Erta Lex TV
+https://vdo.alphaserver.gr:3203/stream/play.m3u8
 #EXTINF:-1 tvg-id="" status="error",Super Channel (300p)
 https://vdo.alphaserver.gr:3587/stream/play.m3u8
