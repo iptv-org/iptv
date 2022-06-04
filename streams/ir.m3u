@@ -29,7 +29,7 @@ http://cdn1.live.irib.ir:1935/epg-live/smil:fars/playlist.m3u8
 https://d2e40kvaojifd6.cloudfront.net/stream/gem_usa/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMArabia.ir" status="error",GEM Arabia (576p) [Not 24/7]
 http://216.66.42.47:7777/GemArabia_HD.m3u8
-#EXTINF:-1 tvg-id="GEMAZ.ir" status="error",GEM AZ (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="GEMAZ.ir" status="timeout",GEM AZ (576p) [Not 24/7]
 http://216.66.42.47:7777/GemAZ_HD.m3u8
 #EXTINF:-1 tvg-id="GEMBollywood.ir" status="error",GEM Bollywood (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gembollywood
@@ -49,7 +49,7 @@ http://65.21.196.79/gem_drama/master.m3u8
 https://stream-cdn.gemonline.tv/live/gemfilm/index.m3u8
 #EXTINF:-1 tvg-id="GEMFit.ir" status="error",GEM Fit (360p)
 http://65.21.196.79/30tv/master.m3u8
-#EXTINF:-1 tvg-id="GEMFood.ir" status="error",GEM Food (360p)
+#EXTINF:-1 tvg-id="GEMFood.ir",GEM Food (360p)
 http://65.21.196.79/gem_food/master.m3u8
 #EXTINF:-1 tvg-id="GEMJunior.ir" status="error",GEM Junior (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemjunior
@@ -151,7 +151,7 @@ http://65.21.196.79/gem_river/master.m3u8
 #EXTINF:-1 tvg-id="Rubix.ir" status="error",GEM Rubix (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=rubix
 https://stream-cdn.gemonline.tv/live/rubix/index.m3u8
-#EXTINF:-1 tvg-id="SahandTV.ir" status="timeout",SAHAND (240p)
+#EXTINF:-1 tvg-id="SahandTV.ir" status="online",SAHAND (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:sahand/playlist.m3u8
 #EXTINF:-1 tvg-id="SalamTV.ir" status="online",Salam TV (720p)
 https://iptv.salaamtv.org/salaam/playlist.m3u8

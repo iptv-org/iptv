@@ -7,7 +7,7 @@ https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
 https://cdn10.live-tv.od.ua:8083/7tvod/7tvod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="7kanal.ua" status="online",7 канал (720p)
 https://cdn10.live-tv.od.ua:8083/7tvod/7tvod/playlist.m3u8
-#EXTINF:-1 tvg-id="24Kanal.ua" status="error",24 Канал (1080p)
+#EXTINF:-1 tvg-id="24Kanal.ua" status="online",24 Канал (1080p)
 http://streamvideol1.luxnet.ua/news24/smil:news24.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="100News.ua" status="online",100% News (576p)
 http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
@@ -46,9 +46,9 @@ https://95-213-224-183.livesports24.online/uafootballua1.m3u8
 https://stream.uagit.tv/gittv.m3u8
 #EXTINF:-1 tvg-id="Glas.ua" status="online",Глас (576p)
 http://85.238.112.69:8811/hls_sec/239.0.4.18-.m3u8
-#EXTINF:-1 tvg-id="GlassRU.ua" status="online",Гласс (RU) (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="GlassRU.ua" status="error",Гласс (RU) (576p) [Not 24/7]
 https://glas.org.ua/hls/glassru.m3u8
-#EXTINF:-1 tvg-id="GlassUA.ua" status="online",Гласс (UA) (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="GlassUA.ua" status="error",Гласс (UA) (576p) [Not 24/7]
 https://glas.org.ua/hls/glassua.m3u8
 #EXTINF:-1 tvg-id="GTV.ua" status="online",GTV (720p)
 https://cdn1.live-tv.od.ua:8083/a1od/gtvod-abr/playlist.m3u8
@@ -70,7 +70,7 @@ http://109.68.40.67/img/inter_2/index.m3u8
 http://91.193.128.233:1935/live/irt.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="IzmailTV.ua" status="online",Измаил ТВ (576p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/izod/izod-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="IzmailTV.ua" status="error",Измаил ТВ (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="IzmailTV.ua" status="online",Измаил ТВ (576p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/izod/izod/playlist.m3u8
 #EXTINF:-1 tvg-id="K1.ua" status="online",К1 (576p)
 http://edge3.iptv.macc.com.ua/life/k1.m3u8
@@ -183,8 +183,6 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://hls-live-media.cdn01.net/default/stream_10429_1.m3u8
-#EXTINF:-1 tvg-id="" status="online",Перший Західний (Львов) (576p)
-http://hls.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_1.m3u8
 #EXTINF:-1 tvg-id="" status="online",Перший Західний (Львов) (576p)
@@ -210,8 +208,6 @@ https://cdn1.live-tv.od.ua:8083/1tvkr/1tvkr/playlist.m3u8
 https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (576p)
 http://91.194.79.46:8081/stream2/channel2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
-http://95.67.106.10/hls/nta_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",ПравдаТУТ (720p)
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Прямий (576p)
@@ -239,6 +235,8 @@ http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
 http://46.175.163.130/live_yatb/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
 http://95.67.106.10/hls/nta_ua_hi/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
+http://95.67.106.10/hls/nta_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",UkrLive (Перший незалежний) (1080p)
@@ -249,6 +247,8 @@ http://ftp.orbita.dn.ua/hls/orbita.m3u8
 http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="error",CNL Европа (216p)
 http://hls-live-media.cdn01.net/default/stream_10429_3.m3u8
+#EXTINF:-1 tvg-id="" status="error",Перший Західний (Львов) (576p)
+http://hls.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",CNL Европа (360p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="error",CNL Европа (216p)
