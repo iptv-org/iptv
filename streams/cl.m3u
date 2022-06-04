@@ -25,7 +25,7 @@ https://5eff35271151c.streamlock.net:1936/8144/8144/playlist.m3u8
 https://v2.tustreaming.cl/aysentv/playlist.m3u8
 #EXTINF:-1 tvg-id="BuinSomosTodos.cl" status="online",Buin Somos Todos (720p) [Not 24/7]
 https://bst.buin.cl/0.m3u8
-#EXTINF:-1 tvg-id="CampoAbiertoTV.cl" status="error",Campo Abierto TV (Huechuraba) (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="CampoAbiertoTV.cl" status="online",Campo Abierto TV (Huechuraba) (480p) [Not 24/7]
 http://v3.tustreaming.cl/campoabierto/playlist.m3u8
 #EXTINF:-1 tvg-id="CampusTVHD.cl" status="online",Campus TV (Talca) (720p) [Not 24/7]
 https://pantera1-100gb-cl-movistar.dps.live/campustv/campustv.smil/playlist.m3u8
@@ -34,9 +34,9 @@ https://unlimited1-us.dps.live/canal2/canal2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal2Quellon.cl" status="online",TV Quellón (1080p) [Not 24/7]
 https://pantera1-100gb-cl-movistar.dps.live/tvquellon/tvquellon.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9BioBioTelevision.cl" status="online",Canal 9 Bío Bío Televisión (1080p) [Not 24/7]
-https://unlimited1-us.dps.live/c9/c9.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal9BioBioTelevision.cl" status="online",Canal 9 Bío Bío Televisión (1080p) [Not 24/7]
 https://unlimited6-cl.dps.live/c9/c9.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal9BioBioTelevision.cl" status="timeout",Canal 9 Bío Bío Televisión (1080p) [Not 24/7]
+https://unlimited1-us.dps.live/c9/c9.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal13.cl" status="blocked",Canal 13 (720p) [Geo-blocked]
 http://canal13-m3u.chorroaeboy.repl.co
 #EXTINF:-1 tvg-id="Canal21.cl" status="timeout",Canal 21 (720p) [Not 24/7]
@@ -61,10 +61,10 @@ http://170.79.102.254:1935/pruebacamara/Survision_tv_alerce/playlist.m3u8
 https://paneltv.net:3978/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="CaracolaTV.cl" status="online",Caracola TV (Peñalolén) (720p) [Not 24/7]
 https://wifispeed.trapemn.tv:1936/comunales/caracola-tv/playlist.m3u8
-#EXTINF:-1 tvg-id="CarolinaTV.cl" status="online",Carolina TV (1080p)
-https://unlimited6-cl.dps.live/carolinatv/carolinatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CarolinaTV.cl" status="online",Carolina TV (1080p) [Not 24/7]
 https://unlimited1-us.dps.live/carolinatv/carolinatv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CarolinaTV.cl" status="online",Carolina TV (1080p)
+https://unlimited6-cl.dps.live/carolinatv/carolinatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CEACTV.cl" status="online",CEAC TV (Santiago) (480p)
 https://hd.chileservidores.cl:1936/ceactv/ceactv/playlist.m3u8
 #EXTINF:-1 tvg-id="ChileVision.cl" status="blocked",ChileVisión (720p) [Geo-blocked]
@@ -101,12 +101,12 @@ https://github.com/MachineSystems/archived_m3u8/raw/main/elpinguino_cl.m3u8
 https://5eff35271151c.streamlock.net:1936/8074/8074/playlist.m3u8
 #EXTINF:-1 tvg-id="EnerGeek.cl" status="error",EnerGeek (720p) [Not 24/7]
 https://5eff35271151c.streamlock.net:1936/8098/8098/playlist.m3u8
-#EXTINF:-1 tvg-id="EnfoqueDigitalTV.cl" status="online",Enfoque Digital
+#EXTINF:-1 tvg-id="EnfoqueDigitalTV.cl",Enfoque Digital
 https://tvdatta.com:3797/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="EstacionTV.cl" status="online",Estación TV (720p) [Not 24/7]
+http://unlimited1-us.dps.live/estaciontv/estaciontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="EstacionTV.cl" status="timeout",Estación TV (720p)
 http://unlimited1-cl.dps.live/estaciontv/estaciontv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="EstacionTV.cl" status="error",Estación TV (720p) [Not 24/7]
-http://unlimited1-us.dps.live/estaciontv/estaciontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="EstudioTV.cl" status="online",Estudio TV (La Ligua)
 https://mediacpstreamchile.com:1936/hugomendez/hugomendez/playlist.m3u8
 #EXTINF:-1 tvg-id="EvaRetro.cl" status="online",EvaRetro (Corporación Eva) (480p) [Not 24/7]
@@ -151,7 +151,7 @@ https://d2tr4gdfol9ja.cloudfront.net/lared/lared.smil/.m3u8
 https://unlimited1-cl-movistar.dps.live/lared/lared.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LatinosRadio.cl" status="online",Latinos Radio
 https://mediacpstreamchile.com:1936/latinosmedia-1/latinosmedia-1/playlist.m3u8
-#EXTINF:-1 tvg-id="LRPTelevision.cl" status="online",LRP Televisión (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LRPTelevision.cl" status="error",LRP Televisión (720p) [Not 24/7]
 https://v2.tustreaming.cl/lrp/index.m3u8
 #EXTINF:-1 tvg-id="LTV.cl" status="error",LTV (Renaico) (720p) [Not 24/7]
 https://medios.sirtel.cl/live/stream/index.m3u8
@@ -236,9 +236,9 @@ https://pantera1-100gb-cl-movistar.dps.live/smtv/smtv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SellodeRaza.cl" status="error",Sello de Raza (720p) [Not 24/7]
 https://v2.tustreaming.cl/mastermedia/playlist.m3u8
 #EXTINF:-1 tvg-id="SoloBailalo.cl" status="online",SoloBáilalo
-https://5ff3d9babae13.streamlock.net/8000/8000/playlist.m3u8
-#EXTINF:-1 tvg-id="SoloBailalo.cl" status="online",SoloBáilalo
 https://5ff3d9babae13.streamlock.net/8016/8016/playlist.m3u8
+#EXTINF:-1 tvg-id="SoloBailalo.cl" status="online",SoloBáilalo
+https://5ff3d9babae13.streamlock.net/8000/8000/playlist.m3u8
 #EXTINF:-1 tvg-id="SoloStandUp.cl" status="online",SoloStandUp (480p) [Not 24/7]
 https://paneltv.online:1936/8116/8116/playlist.m3u8
 #EXTINF:-1 tvg-id="StgoTV.cl" status="online",Stgo.TV (720p)
@@ -323,7 +323,7 @@ http://edge1.cl.grupoz.cl/uestv/live/playlist.m3u8
 https://tls.cdnz.cl/uestv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ULosLagosTV.cl" status="online",U Los Lagos TV (1080p) [Not 24/7]
 http://tv.ulagos.cl/web/live.m3u8
-#EXTINF:-1 tvg-id="UMAGTVTelevision.cl" status="timeout",UMAGTV Televisión (Punta Arenas) (720p)
+#EXTINF:-1 tvg-id="UMAGTV.cl" status="timeout",UMAGTV Televisión (Punta Arenas) (720p)
 http://edge1.cl.grupoz.cl/tser5/live/playlist.m3u8
 #EXTINF:-1 tvg-id="UnidadEvangelicaTV.cl" status="online",Unidad Evangelica TV (720p) [Not 24/7]
 https://v2.tustreaming.cl/unidadevangelica/index.m3u8
@@ -349,18 +349,22 @@ http://cdn.streamingmedia.cl:1935/live/vtvvina/playlist.m3u8
 https://mdstrm.com/live-stream-playlist/6046495ddf98b007fa2fe807.m3u8
 #EXTINF:-1 tvg-id="ZappingMusic.cl" status="error",Zapping (720p)
 https://zmlive.zappingtv.com/zm_free/zm.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ZizaTV.cl" status="error",Ziza TV (Chiguayante) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ZizaTV.cl" status="online",Ziza TV (Chiguayante) (720p) [Not 24/7]
 https://v2.tustreaming.cl/zizatv/index.m3u8
 #EXTINF:-1 tvg-id="ZonaLatina.cl" status="timeout",Zona Latina (480p) [Not 24/7]
 http://38.131.11.9:1080/play/a00x
 #EXTINF:-1 tvg-id="ZonaPlayTV.cl" status="online",Zona Play TV (ZPTV) (720p) [Not 24/7]
 https://srv3.zcast.com.br/juancarlos9451/juancarlos9451/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",CHV Noticias (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
 #EXTINF:-1 tvg-id="" status="online",Canal Diputados (720p) [Not 24/7]
 http://camara.03.cl.cdnz.cl/camara19/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Región Televisión Ñuble (Chillán) (720p) [Not 24/7]
 https://live.tvcontrolcp.com:1936/guzman/guzman/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal SCÑ (San Carlos Ñuble) (720p) [Not 24/7]
 https://live.tvcontrolcp.com:1936/sancarlostv/sancarlostv/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Estación TV (Chillán) (720p) [Not 24/7]
+https://pantera1-100gb-cl-movistar.dps.live/estaciontv/estaciontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Cloudserver CloudFM (720p)
 https://videostreaming.cloudserverlatam.com/CLOUDFM/CLOUDFM/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Bajo Cero TV (Corporación Eva) (656p)
@@ -373,8 +377,6 @@ http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/2.m3u8
 http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/3.m3u8
 #EXTINF:-1 tvg-id="" status="error",MIX 24/7 Retro (720p)
 http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/4.m3u8
-#EXTINF:-1 tvg-id="" status="error",MIX 24/7 Global Hits (720p)
-http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/5.m3u8
 #EXTINF:-1 tvg-id="" status="error",MIX 24/7 VdjPop (720p)
 http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/6.m3u8
 #EXTINF:-1 tvg-id="" status="error",MIX 24/7 Conciertos (720p)
@@ -383,9 +385,7 @@ http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/7.m3u8
 http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/25.m3u8
 #EXTINF:-1 tvg-id="" status="error",Camara de Diputados (DVR) (720p) [Not 24/7]
 http://camara.02.cl.cdnz.cl/cdndvr/ngrp:live_all/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",CHV Noticias (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
-#EXTINF:-1 tvg-id="" status="error",Estación TV (Chillán) (720p) [Not 24/7]
-https://pantera1-100gb-cl-movistar.dps.live/estaciontv/estaciontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Spectrum Channel LGBTQ+ (480p) [Not 24/7]
 https://vdohd.cl:1936/8078/8078/playlist.m3u8
+#EXTINF:-1 tvg-id="",MIX 24/7 Global Hits (720p)
+http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/5.m3u8
