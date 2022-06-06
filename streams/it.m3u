@@ -171,10 +171,10 @@ https://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/master.m3u8
 https://flash7.xdevel.com/radiolombardiatv/radiolombardiatv/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioMonteCarlo.it" status="error",Radio Montecarlo (576p)
 https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(bb)/index.m3u8
+#EXTINF:-1 tvg-id="RadionorbaTV.it" status="timeout",Radionorba TV (404p)
+http://flash5.streaming.xdevel.com/radionorbatv/smil:radionorbatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RadionorbaTV.it" status="error",Radionorba TV (404p)
 http://flash2.xdevel.com/norbatv/smil:norbatv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RadionorbaTV.it" status="error",Radionorba TV (404p)
-http://flash5.streaming.xdevel.com/radionorbatv/smil:radionorbatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioNumberOne.it" status="online",Radio Number One (720p) [Not 24/7]
 https://56b50ada2d659.streamlock.net/RN1TV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioPiterPanTV.it" status="online",Radio Piter Pan TV (720p) [Not 24/7]
@@ -358,18 +358,18 @@ https://59d7d6f47d7fc.streamlock.net/rs2/rs2/playlist.m3u8
 http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleVenezia.it" status="online",TeleVenezia (576p)
 https://59d8c0cee6f3d.streamlock.net/televenezia/televenezia/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleVideoAgrigento.it" status="online",TeleVideo Agrigento (480p)
+#EXTINF:-1 tvg-id="TeleVideoAgrigento.it" status="error",TeleVideo Agrigento (480p)
 https://59d7d6f47d7fc.streamlock.net/tva/tva/playlist.m3u8
 #EXTINF:-1 tvg-id="TevereTV.it" status="error",Tevere TV (576p) [Not 24/7]
 https://5926fc9c7c5b2.streamlock.net/9098/9098/playlist.m3u8
 #EXTINF:-1 tvg-id="TGCom24.it" status="blocked",TGCom 24 [Geo-blocked]
 https://live2-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(kf)/index.m3u8
-#EXTINF:-1 tvg-id="TGNorba24.it" status="error",TG Norba 24 (360p)
+#EXTINF:-1 tvg-id="TGNorba24.it" status="timeout",TG Norba 24 (360p)
 http://flash5.streaming.xdevel.com/tgnorba_24/smil:tgnorba_24.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TGNorba24.it" status="timeout",TG Norba 24 (360p)
+https://flash5.xdevel.com/tgnorba_24/smil:tgnorba_24.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TGNorba24.it" status="error",TG Norba 24 (360p)
 https://flash2.xdevel.com/tgnorba_24/tgnorba_24_source.stream/index.m3u8
-#EXTINF:-1 tvg-id="TGNorba24.it" status="error",TG Norba 24 (360p)
-https://flash5.xdevel.com/tgnorba_24/smil:tgnorba_24.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TLNTeleLazioNord.it" status="error",TLN Tele Lazio Nord (720p) [Not 24/7]
 http://tln.srfms.com:1935/TLN/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TopCrime.it" status="blocked",Top Crime [Geo-blocked]
@@ -456,6 +456,8 @@ http://ftp.tiscali.it/francescovernata/TVUNO/monoscopioTvUNOint-1.wmv
 https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Radio Radicale TV (240p) [Not 24/7]
 https://video-ar.radioradicale.it/diretta/padtv2/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",radionorba TV (404p)
+http://46.165.210.112/radionorbatv/norbatv_source.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Super TV Oristano (720p) [Not 24/7]
 http://193.70.81.40:1935/supertvoristano/supertvoristano/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Super J TV (720p)
@@ -464,8 +466,6 @@ https://54627d4fc5996.streamlock.net/SuperJtv/SuperJtv/playlist.m3u8
 https://wms60.tecnoxia.com/radiof/abr_radioftele/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Hilando Fino (1080p) [Not 24/7]
 http://4k-server-mia.2cdn.eu/HilandoFinoTV/ngrp:HilandoFinoTV_all/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",radionorba TV (404p)
-http://46.165.210.112/radionorbatv/norbatv_source.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",TeleBoario (720p) [Not 24/7]
 http://flash7.streaming.xdevel.com/teleboario/teleboario/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Halow Kids HD (480p)
@@ -479,9 +479,9 @@ http://wms.shared.streamshow.it/videobrescia/videobrescia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",DeeJay TV (360p)
 https://deejay_tv-lh.akamaihd.net/i/DeejayTv_1@129866/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",Radio 105 TV (576p)
-https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Radio 105 TV (576p)
 https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Radio 105 TV (576p)
+https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",R 101 Italia IT (576p)
 https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(er)/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Rai Sport+ [Geo-blocked]
