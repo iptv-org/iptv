@@ -9,7 +9,7 @@ http://14.199.164.20:4001/play/a0nc/index.m3u8
 http://14.199.164.20:4001/play/a0mx/index.m3u8
 #EXTINF:-1 tvg-id="9XM.in" status="online",9XM (480p)
 https://d2q8p4pe5spbak.cloudfront.net/bpk-tv/9XM/9XM.isml/index.m3u8
-#EXTINF:-1 tvg-id="AajTak.in" status="online",Aaj Tak (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="AajTak.in" status="blocked",Aaj Tak (360p) [Geo-blocked]
 https://lmil.live-s.cdn.bitgravity.com/cdn-live/_definst_/lmil/live/aajtak_app.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AathavanTV.in" status="online",Aathavan TV (720p) [Not 24/7]
 http://45.77.66.224:1935/athavantv/live/playlist.m3u8
@@ -43,21 +43,21 @@ https://live.hungama.com/linear/artist-aloud/playlist.m3u8
 http://ashrafichannel.livebox.co.in/ashrafivhannelhls/live.m3u8
 #EXTINF:-1 tvg-id="AsianetMiddleEast.in" status="online",Asianet Middle East (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0k6/index.m3u8
-#EXTINF:-1 tvg-id="AsianetNews.in" status="online",Asianet News (720p) [Not 24/7]
-https://vidcdn.vidgyor.com/asianet-origin/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-id="AsianetNews.in" status="online",Asianet News (576p)
 http://103.199.161.254/Content/asianetnews/Live/Channel(Asianetnews)/index.m3u8
 #EXTINF:-1 tvg-id="AsianetNews.in" status="online",Asianet News (480p)
 https://live.neestream.com/neestream_01/asianetnews/playlist.m3u8
 #EXTINF:-1 tvg-id="AsianetNews.in" status="online",Asianet News (480p)
 https://live.neestream.net/neestream_01/asianetnews/index.m3u8?token=693400
-#EXTINF:-1 tvg-id="AsianetNewsBangla.in" status="online",Asianet News Bangla (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="AsianetNews.in" status="error",Asianet News (720p) [Not 24/7]
+https://vidcdn.vidgyor.com/asianet-origin/liveabr/playlist.m3u8
+#EXTINF:-1 tvg-id="AsianetNewsBangla.in" status="error",Asianet News Bangla (360p) [Not 24/7]
 https://vidcdn.vidgyor.com/rplus-origin/rplusasianetlive/playlist.m3u8
 #EXTINF:-1 tvg-id="AsianetNewsKannada.in" status="online",Asianet News Kannada (360p) [Not 24/7]
 https://vidcdn.vidgyor.com/suvarna-origin/liveabr/playlist.m3u8
-#EXTINF:-1 tvg-id="AsianetNewsTamil.in" status="online",Asianet News Tamil (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="AsianetNewsTamil.in" status="error",Asianet News Tamil (360p) [Not 24/7]
 https://vidcdn.vidgyor.com/ptm-origin/aslive/playlist.m3u8
-#EXTINF:-1 tvg-id="AssamTalks.in" status="online",Assam Talks (240p) [Not 24/7]
+#EXTINF:-1 tvg-id="AssamTalks.in" status="error",Assam Talks (240p) [Not 24/7]
 http://vidnetcdn.vidgyor.com/assamtalks-origin/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-id="ATNBangla.in" status="timeout",ATN Bangla (1080p)
 http://103.81.104.118/hls/stream17.m3u8
@@ -132,7 +132,7 @@ http://xlbor3aadvaj-hls-live.wmncdn.net/disha/stream.stream/playlist.m3u8
 https://docubayvh.s.llnwi.net/526a07ab-6ae7-4b6c-84a1-159791416484_1000004372_HLS/manifest.m3u8
 #EXTINF:-1 tvg-id="DreamTV.in" status="timeout",Dream TV (720p) [Not 24/7]
 https://cloudflare-cdn301.ottpro.in/dream_media/reedeem/playlist.m3u8
-#EXTINF:-1 tvg-id="DreamzTV.in" status="error",Dreamz TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="DreamzTV.in" status="online",Dreamz TV (576p) [Not 24/7]
 http://198.144.149.82:8080/NOTV/DREAMHD/index.m3u8?token=GTR
 #EXTINF:-1 tvg-id="DumTVKannada.in" status="online",Dum TV Kannada (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0sq/index.m3u8
@@ -162,7 +162,7 @@ http://103.199.161.254/Content/flowers/Live/Channel(Flowers)/index.m3u8
 http://14.199.164.20:4001/play/a0qx/index.m3u8
 #EXTINF:-1 tvg-id="GabruuTV.in" status="timeout",Gabruu TV
 http://104.237.60.234/live/gabruutv.m3u8
-#EXTINF:-1 tvg-id="GDNSLudhiana.in" status="online",GDNS Ludhiana (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="GDNSLudhiana.in" status="error",GDNS Ludhiana (1080p) [Not 24/7]
 http://akalmultimedia.net:1935/gdnslive/gdns-live/chunklist.m3u8
 #EXTINF:-1 tvg-id="Gem.in" status="error",GEM (576p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h19/index.m3u8
@@ -258,9 +258,9 @@ http://103.199.161.254/Content/kappa/Live/Channel(Kappa)/index.m3u8
 http://103.199.161.254/Content/kasthuritv/Live/Channel(KasthuriTV)/index.m3u8
 #EXTINF:-1 tvg-id="KCLTV.in" status="online",KCL TV (720p) [Not 24/7]
 http://kcltv.livebox.co.in/kclhls/live.m3u8
-#EXTINF:-1 tvg-id="KCV.in" status="error",KCV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="KCV.in" status="online",KCV (576p) [Not 24/7]
 http://198.144.149.82:8080/NOTV/KCVTV/index.m3u8?token=GTR
-#EXTINF:-1 tvg-id="KCVMovies.in" status="error",KCV Movies (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="KCVMovies.in" status="online",KCV Movies (576p) [Not 24/7]
 http://198.144.149.82:8080/NOTV/KCVMOVIE/index.m3u8?token=GTR
 #EXTINF:-1 tvg-id="KenTV.in" status="online",Ken TV (360p)
 https://stream.ufworldind.in/kentvlive/smil:kentv.smil/playlist.m3u8
@@ -268,7 +268,7 @@ https://stream.ufworldind.in/kentvlive/smil:kentv.smil/playlist.m3u8
 http://14.199.164.20:4001/play/a0ni/index.m3u8
 #EXTINF:-1 tvg-id="KeralaVisionNews.in" status="online",Kerala Vision News (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCtSeMwydGw6mDSZaIUaJ5bw/live
-#EXTINF:-1 tvg-id="KhabrainAbhiTak.in" status="online",Khabrain Abhi Tak (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="KhabrainAbhiTak.in" status="error",Khabrain Abhi Tak (480p) [Not 24/7]
 https://vidcdn.vidgyor.com/kat-origin/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-id="LokSabhaTV.in" status="error",Lok Sabha TV (576p) [Not 24/7]
 https://nicls1-lh.akamaihd.net/i/lst_1@26969/master.m3u8
@@ -340,11 +340,11 @@ http://14.199.164.20:4001/play/a0mt/index.m3u8
 http://103.199.160.85/Content/musicindia/Live/Channel(MusicIndia)/index.m3u8
 #EXTINF:-1 tvg-id="Naaptol.in" status="online",Naaptol (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0n1/index.m3u8
-#EXTINF:-1 tvg-id="NamdhariTV.in" status="error",Namdhari (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="NamdhariTV.in" status="online",Namdhari (404p) [Not 24/7]
 https://namdhari.tv/live/sbs1.m3u8
 #EXTINF:-1 tvg-id="NazranaMusic.in" status="online",Nazrana (720p) [Not 24/7]
 https://live.hungama.com/linear/nazrana/playlist.m3u8
-#EXTINF:-1 tvg-id="NCV.in" status="online",NCV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NCV.in" status="error",NCV (720p) [Not 24/7]
 http://131.153.22.8:1935/NCV/ncvstream/playlist.m3u8
 #EXTINF:-1 tvg-id="NDTVIndia.in" status="online",NDTV India (480p) [Not 24/7]
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8
@@ -352,7 +352,7 @@ https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u
 https://ndtvprofitelemarchana.akamaized.net/hls/live/2003680-b/ndtvprofit/master.m3u8
 #EXTINF:-1 tvg-id="NDTVProfit.in" status="online",NDTV Profit (480p) [Not 24/7]
 https://ndtvprofitelemarchana.akamaized.net/hls/live/2003680/ndtvprofit/master.m3u8
-#EXTINF:-1 tvg-id="NDTVProfit.in" status="blocked",NDTV Profit [Geo-blocked]
+#EXTINF:-1 tvg-id="NDTVProfit.in" status="online",NDTV Profit [Geo-blocked]
 https://ndtv.live-s.cdn.bitgravity.com/cdn-live/_definst_/ndtv/live/ndtv_profit.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NeeCinema.in" status="online",Nee Cinema (480p)
 https://live.neestream.net/neestream_01/neecinema/index.m3u8?token=693400
@@ -400,7 +400,7 @@ https://news18urdu-lh.akamaihd.net/i/n18urdu_1@373059/index_4_av-p.m3u8?rebase=o
 https://news18up-lh.akamaihd.net/i/n18upuk_1@175735/index_4_av-p.m3u8?rebase=on&sd=10
 #EXTINF:-1 tvg-id="News24.in" status="online",News 24 (480p) [Not 24/7]
 https://vidcdn.vidgyor.com/news24-origin/liveabr/news24-origin/live1/playlist.m3u8
-#EXTINF:-1 tvg-id="News24.in" status="online",News 24 (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="News24.in" status="error",News 24 (360p) [Not 24/7]
 https://vidcdn.vidgyor.com/news24-origin/liveabr/news24-origin/live2/playlist.m3u8
 #EXTINF:-1 tvg-id="NewsJ.in" status="online",News J (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCsfh2Zb7-m4qzT8jLhK_Fzw/live
@@ -520,7 +520,7 @@ https://cloudflare-cdn301.ottpro.in/live/timetv/playlist.m3u8
 http://cloud.logicwebs.in:1935/timevision/timevision/playlist.m3u8
 #EXTINF:-1 tvg-id="Tunes6.in" status="error",Tunes 6 [Geo-blocked]
 https://m-c18-j2apps.s.llnwi.net/hls/3731.Tunes6.in.m3u8
-#EXTINF:-1 tvg-id="TV9Kannada.in" status="online",TV9 Kannada (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV9Kannada.in" status="error",TV9 Kannada (720p) [Not 24/7]
 https://vidcdn.vidgyor.com/tv9kannada-origin/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TV9News.in" status="online",TV9 News (720p) [Not 24/7]
 https://vidcdn.vidgyor.com/tv9telugu-origin/live/tv9telugu-origin/live1/playlist.m3u8
@@ -538,10 +538,10 @@ http://14.199.164.20:4001/play/a0nx/index.m3u8
 https://rtmp.smartstream.video/velichamtv/velichamtv/playlist.m3u8
 #EXTINF:-1 tvg-id="VismayaNews.in" status="error",Vismaya News (720p) [Not 24/7]
 http://live.singamcloud.in:1935/vismayanews/vismayanews/playlist.m3u8
-#EXTINF:-1 tvg-id="WION.in" status="online",Wion (576p) [Geo-blocked]
-http://210.210.155.35/uq2663/h/h91/index.m3u8
-#EXTINF:-1 tvg-id="WION.in" status="error",Wion (576p)
+#EXTINF:-1 tvg-id="WION.in" status="online",Wion (576p)
 http://210.210.155.37/uq2663/h/h91/index.m3u8
+#EXTINF:-1 tvg-id="WION.in" status="error",Wion (576p) [Geo-blocked]
+http://210.210.155.35/uq2663/h/h91/index.m3u8
 #EXTINF:-1 tvg-id="WowCinemaOne.in" status="online",Wow Cinema One (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0n3/index.m3u8
 #EXTINF:-1 tvg-id="Yolo.in" status="timeout",Yolo (410p) [Not 24/7]
@@ -584,8 +584,12 @@ https://live.wmncdn.net/desichannel/7e2dd0aed46b70a5c77f4affdb702e4b.sdp/playlis
 https://pubads.g.doubleclick.net/ssai/event/nRWQsGoJSzmcErJFgAy67g/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Dishum (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0pe/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",Relax TV (576p) [Not 24/7]
+http://198.144.149.82:8080/NOTV/RELAXTV/index.m3u8?token=GTR
 #EXTINF:-1 tvg-id="" status="online",Toonz Kids (Indonesian dub) (576p) [Geo-blocked]
 http://210.210.155.35/x6bnqe/s/s81/01.m3u8
+#EXTINF:-1 tvg-id="" status="online",Toonz Kids (Indonesian dub) (576p)
+http://210.210.155.37/x6bnqe/s/s81/01.m3u8
 #EXTINF:-1 tvg-id="" status="online",Star Cinema (576p)
 http://c0.cdn.trinity-tv.net/stream/nh9u54a7sfnc2hwzxr2zwykwkqm43bgyyzsm68ybbbnjei8kytwcgs3zm5gnw5c6efa5gr3fadzqe686w8gj2eaehrj89wvujvqza3kez78dtknwbbmnqf79yygmqqg7e9pnc3i3bpywjkiqrwke94yf.m3u8
 #EXTINF:-1 tvg-id="" status="online",Star Family (576p)
@@ -613,8 +617,6 @@ https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8
 http://192.99.2.28/mandra_hls/mandra.m3u8
 #EXTINF:-1 tvg-id="" status="online",Zainabia Channel
 https://zainabia.livebox.co.in/ZainabiaChannelhls/channel.m3u8
-#EXTINF:-1 tvg-id="" status="online",Toonz Kids (Indonesian dub) (360p) [Geo-blocked]
-http://210.210.155.35/x6bnqe/s/s81/02.m3u8
 #EXTINF:-1 tvg-id="" status="online",MH1 Music (360p) [Not 24/7]
 http://rtmp.smartstream.video:1935/mhonemusic/mhonemusic/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",MH1 Prime (360p) [Not 24/7]
@@ -638,10 +640,8 @@ http://14.199.164.20:4001/play/a0wh/index.m3u8
 http://14.199.164.20:4001/play/a0wj/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",B4U Music (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0wk/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Relax TV (576p) [Not 24/7]
-http://198.144.149.82:8080/NOTV/RELAXTV/index.m3u8?token=GTR
-#EXTINF:-1 tvg-id="" status="error",Toonz Kids (Indonesian dub) (576p)
-http://210.210.155.37/x6bnqe/s/s81/01.m3u8
+#EXTINF:-1 tvg-id="" status="error",Toonz Kids (Indonesian dub) (360p) [Geo-blocked]
+http://210.210.155.35/x6bnqe/s/s81/02.m3u8
 #EXTINF:-1 tvg-id="" status="error",Toonz Kids (Indonesian dub) (360p)
 http://210.210.155.37/x6bnqe/s/s81/02.m3u8
 #EXTINF:-1 tvg-id="" status="error",Life Punjabi (720p) [Not 24/7]
