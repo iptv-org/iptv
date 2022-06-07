@@ -5,7 +5,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
 #EXTINF:-1 tvg-id="Alsace20.fr" status="online",Alsace 20 (720p)
 http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AntenneReunion.fr" status="online",Antenne Réunion (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AntenneReunion.fr" status="timeout",Antenne Réunion (720p) [Not 24/7]
 https://live-antenne-reunion.zeop.tv/live/c3eds/antreunihd/hls_fta/antreunihd.m3u8?location=ZEOP01
 #EXTINF:-1 tvg-id="ARTEDeutsch.de" status="blocked",Arte Deutsch [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
@@ -116,7 +116,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/vid
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="error",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
-#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -164,10 +164,10 @@ http://51.210.199.59/hls/stream.m3u8
 http://51.210.199.17/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PublicSenat.fr" status="online",Public Sénat (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xkxbzc
-#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="online",Qwest TV Jazz & Beyond (576p) [Geo-blocked]
-http://210.210.155.35/uq2663/h/h94/01.m3u8
 #EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="online",Qwest TV Jazz & Beyond (576p)
 http://210.210.155.37/uq2663/h/h94/01.m3u8
+#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="error",Qwest TV Jazz & Beyond (576p) [Geo-blocked]
+http://210.210.155.35/uq2663/h/h94/01.m3u8
 #EXTINF:-1 tvg-id="RMCDecouverte.fr" status="error",RMC Découverte (720p)
 https://s6.tntendirect.com/rmcdecouverte/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TebeSud.fr" status="online",TébéSud (1080p) [Not 24/7]
@@ -184,17 +184,17 @@ https://shls-tiji-tv-prod-dub.shahid.net/out/v1/ee05878a88474f408ff04495d44cc249
 http://188.40.68.167/russia/tiji/playlist.m3u8
 #EXTINF:-1 tvg-id="TMC.fr" status="error",TMC (720p)
 https://s6.tntendirect.com/tmc/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="online",TV5 Monde Asie (576p) [Geo-blocked]
-http://210.210.155.35/dr9445/s/s24/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="online",TV5 Monde Asie (576p)
 http://210.210.155.37/dr9445/s/s24/index.m3u8
+#EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="error",TV5 Monde Asie (576p) [Geo-blocked]
+http://210.210.155.35/dr9445/s/s24/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/master.m3u8
-#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="online",TV5 Monde Style HD (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="error",TV5 Monde Style HD (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h01/index.m3u8
-#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="online",TV5 Monde Style HD (576p)
+#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="error",TV5 Monde Style HD (576p)
 http://210.210.155.37/dr9445/h/h01/index.m3u8
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="error",TV7 Bordeaux (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=vGrlJbbfsE4
