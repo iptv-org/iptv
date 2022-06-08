@@ -10,7 +10,7 @@ checker.check = async function (item, config) {
     _id: item._id,
     url: item.url,
     http: item.http,
-    error: !result.status.ok ? result.status.reason : null,
+    error: !result.status.ok ? { code: result.status.code, message: result.status.message } : null,
     streams: result.status.ok ? result.status.metadata.streams : [],
     requests: result.status.ok ? result.status.metadata.requests : []
   }
