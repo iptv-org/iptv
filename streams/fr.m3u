@@ -5,7 +5,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
 #EXTINF:-1 tvg-id="Alsace20.fr" status="online",Alsace 20 (720p)
 http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AntenneReunion.fr" status="timeout",Antenne Réunion (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AntenneReunion.fr" status="online",Antenne Réunion (720p) [Not 24/7]
 https://live-antenne-reunion.zeop.tv/live/c3eds/antreunihd/hls_fta/antreunihd.m3u8?location=ZEOP01
 #EXTINF:-1 tvg-id="ARTEDeutsch.de" status="blocked",Arte Deutsch [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
@@ -184,17 +184,17 @@ https://shls-tiji-tv-prod-dub.shahid.net/out/v1/ee05878a88474f408ff04495d44cc249
 http://188.40.68.167/russia/tiji/playlist.m3u8
 #EXTINF:-1 tvg-id="TMC.fr" status="error",TMC (720p)
 https://s6.tntendirect.com/tmc/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="online",TV5 Monde Asie (576p)
-http://210.210.155.37/dr9445/s/s24/index.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="error",TV5 Monde Asie (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="online",TV5 Monde Asie (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/s/s24/index.m3u8
+#EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="error",TV5 Monde Asie (576p)
+http://210.210.155.37/dr9445/s/s24/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/master.m3u8
-#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="error",TV5 Monde Style HD (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="online",TV5 Monde Style HD (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h01/index.m3u8
-#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="error",TV5 Monde Style HD (576p)
+#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="online",TV5 Monde Style HD (576p)
 http://210.210.155.37/dr9445/h/h01/index.m3u8
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="error",TV7 Bordeaux (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=vGrlJbbfsE4
@@ -212,8 +212,6 @@ https://54627d4fc5996.streamlock.net/tzik/tzik/chunklist.m3u8
 http://185.234.217.27:8002/play/a047/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Cnews (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x3b68jn
-#EXTINF:-1 tvg-id="" status="online",Euronews Albania (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
 #EXTINF:-1 tvg-id="" status="online",Euronews Hungary (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
 #EXTINF:-1 tvg-id="" status="online",Euronews по-русски (720p)
@@ -245,6 +243,8 @@ https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
 http://185.234.217.27:8002/play/a02f/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",CStar Hits France
 http://185.234.217.27:8002/play/a03u/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Euronews Albania (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
 #EXTINF:-1 tvg-id="" status="error",L'EQUIPE (360p)
 https://s6.tntendirect.com/lequipe21/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",viàMATÉLÉ (540p) [Not 24/7]
