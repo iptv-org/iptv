@@ -5,7 +5,7 @@ const options = program
   .requiredOption('-c, --cluster-id <cluster-id>', 'The ID of cluster to load', parser.parseNumber)
   .option('-t, --timeout <timeout>', 'Set timeout for each request', parser.parseNumber, 60000)
   .option('-d, --delay <delay>', 'Set delay for each request', parser.parseNumber, 0)
-  .option('--debug', 'Enable debug mode')
+  .option('--debug', 'Enable debug mode', false)
   .parse(process.argv)
   .opts()
 
@@ -48,7 +48,7 @@ async function main() {
     if (!result.error) {
       logger.info(message)
     } else {
-      logger.info(`${message} (${result.error})`)
+      logger.info(`${message} (${result.error.message})`)
     }
     const output = {
       _id: result._id,
