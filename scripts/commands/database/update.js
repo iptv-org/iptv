@@ -142,10 +142,12 @@ function parseMediaInfo(streams) {
 function parseStatus(error) {
   if (!error) return 'online'
 
-  switch (error) {
-    case 'Operation timed out':
+  switch (error.code) {
+    case 'HTTP_REQUEST_TIMEOUT':
+    case 'FFMPEG_PROCESS_TIMEOUT':
       return 'timeout'
-    case 'Server returned 403 Forbidden (access denied)':
+    case 'HTTP_FORBIDDEN':
+    case 'HTTP_UNAVAILABLE_FOR_LEGAL_REASONS':
       return 'blocked'
     default:
       return 'error'
