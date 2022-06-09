@@ -1,11 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="7ALimoges.fr" status="error",7ALimoges (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="7ALimoges.fr" status="online",7ALimoges (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCdFv_ZWQ3Xk_NfRiaK-ryGg/live
 #EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="online",Alpe d’Huez TV (720p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
 #EXTINF:-1 tvg-id="Alsace20.fr" status="online",Alsace 20 (720p)
 http://live.alsace20.fr/live/alsace20/ngrp:alsace20_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AntenneReunion.fr" status="online",Antenne Réunion (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AntenneReunion.fr" status="timeout",Antenne Réunion (720p) [Not 24/7]
 https://live-antenne-reunion.zeop.tv/live/c3eds/antreunihd/hls_fta/antreunihd.m3u8?location=ZEOP01
 #EXTINF:-1 tvg-id="ARTEDeutsch.de" status="blocked",Arte Deutsch [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
@@ -53,19 +53,19 @@ https://fash2043.cloudycdn.services/slive/ftv_ftv_gmt_-5_qko_43090_default_1225_
 https://fash1043.cloudycdn.services/slive/ftv_paris_adaptive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVParis.fr" status="error",Fashion TV Paris-Mumbai (1080p) [Not 24/7]
 https://fash1043.cloudycdn.services/slive/ftv_ftv_asia_gmt_vmf_43163_default_1298_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="FashionTVPG13.fr",Fashion TV PG13 (240p)
+#EXTINF:-1 tvg-id="FashionTVPG13.fr" status="online",Fashion TV PG13 (240p)
 https://fash1043.cloudycdn.services/slive/ftv_pg13_adaptive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVPG16.fr" status="online",Fashion TV PG16 (144p)
 http://fash1043.cloudycdn.services/slive/ftv_pg16_adaptive.smil/media.m3u8
-#EXTINF:-1 tvg-id="FashionTVRussia.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Fashion TV Russia (480p)
+#EXTINF:-1 tvg-id="FashionTVRussia.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Fashion TV Russia (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s30/index.m3u8
 #EXTINF:-1 tvg-id="FashionTVSingapore.fr" status="online",Fashion TV Singapore (240p)
 https://fash2043.cloudycdn.services/slive/ftv_ftv_asia_ada_xiv_42149_default_137_hls.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="FashionTVTokyo.fr" status="online",Fashion TV Tokyo (PG13) (1080p)
+https://fash1043.cloudycdn.services/slive/ftv_ftv_pg13_zw9_27065_ftv_pg13_sam_197_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVTokyo.fr" status="online",Fashion TV Tokyo (PG13) (240p)
 https://fash1043.cloudycdn.services/slive/ftv_ftv_pg13_zw9_27065_ftv_pg13_196_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="FashionTVTokyo.fr",Fashion TV Tokyo (PG13) (1080p)
-https://fash1043.cloudycdn.services/slive/ftv_ftv_pg13_zw9_27065_ftv_pg13_sam_197_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVUHD.fr" status="online",Fashion TV UHD (2160p)
 https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="France2.fr" status="error",France 2 (720p) [Not 24/7]
@@ -76,9 +76,9 @@ http://edge9.iptvnetwork.net/live/france3/playlist.m3u8
 http://edge9.iptvnetwork.net/live/france4/playlist.m3u8
 #EXTINF:-1 tvg-id="France5.fr" status="error",France 5 (720p) [Not 24/7]
 http://edge9.iptvnetwork.net/live/france5/playlist.m3u8
-#EXTINF:-1 tvg-id="France24Arabic.fr" status="error",France 24 Arabic (1080p)
+#EXTINF:-1 tvg-id="France24Arabic.fr" status="online",France 24 Arabic (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Arabic/live
-#EXTINF:-1 tvg-id="France24English.fr" status="error",France 24 English (1080p)
+#EXTINF:-1 tvg-id="France24English.fr" status="online",France 24 English (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24English/live
 #EXTINF:-1 tvg-id="France24Espanol.fr" status="online",France 24 Español (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Espanol/live
@@ -86,7 +86,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANC
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24/live
 #EXTINF:-1 tvg-id="Franceinfo.fr" status="error",Franceinfo (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/franceinfo/live
-#EXTINF:-1 tvg-id="FranceInter.fr" status="error",France Inter (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="FranceInter.fr" status="online",France Inter (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCJldRgT_D7Am-ErRHQZ90uw/live
 #EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie24 (1080p)
 https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8
@@ -116,7 +116,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/vid
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="error",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
-#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -128,11 +128,11 @@ http://ott-cdn.ucom.am/s35/index.m3u8
 https://edge.vedge.infomaniak.com/livecast/ik:nancy-webtv/manifest.m3u8
 #EXTINF:-1 tvg-id="NRJ12.fr" status="error",NRJ12 (720p)
 https://s6.tntendirect.com/nrj12/live/playlist.m3u8
-#EXTINF:-1 tvg-id="P2MTV.fr",P2M TV (268p) [Not 24/7]
+#EXTINF:-1 tvg-id="P2MTV.fr" status="online",P2M TV (268p) [Not 24/7]
 https://panel.streamparis.fr:3743/stream/play.m3u8
 #EXTINF:-1 tvg-id="PersianaBillboard.fr" status="error",Persiana Billboard (720p) [Not 24/7]
 http://51.210.199.10/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaCinema.fr",Persiana Cinema (720p)
+#EXTINF:-1 tvg-id="PersianaCinema.fr" status="online",Persiana Cinema (720p)
 http://51.210.199.15/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaClassic.fr" status="online",Persiana Classic (720p) [Not 24/7]
 http://51.210.199.26/hls/stream.m3u8
@@ -142,7 +142,7 @@ http://51.210.199.27/hls/stream.m3u8
 http://51.210.199.23/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaFamily.fr" status="online",Persiana Family (720p)
 http://51.210.199.19/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaFamilyPlus.fr",Persiana Family Plus (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PersianaFamilyPlus.fr" status="timeout",Persiana Family Plus (720p) [Not 24/7]
 http://51.210.199.13/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaGameTech.fr" status="online",Persiana Game & Tech (720p) [Not 24/7]
 http://51.210.199.25/hls/stream.m3u8
@@ -164,7 +164,7 @@ http://51.210.199.59/hls/stream.m3u8
 http://51.210.199.17/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PublicSenat.fr" status="online",Public Sénat (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xkxbzc
-#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="error",Qwest TV Jazz & Beyond (576p)
+#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="online",Qwest TV Jazz & Beyond (576p)
 http://210.210.155.37/uq2663/h/h94/01.m3u8
 #EXTINF:-1 tvg-id="RMCDecouverte.fr" status="online",RMC Découverte (720p)
 https://s2.tntendirect.com/rmcdecouverte/live/playlist.m3u8
@@ -182,10 +182,10 @@ https://shls-tiji-tv-prod-dub.shahid.net/out/v1/ee05878a88474f408ff04495d44cc249
 http://188.40.68.167/russia/tiji/playlist.m3u8
 #EXTINF:-1 tvg-id="TMC.fr" status="online",TMC (720p)
 https://s2.tntendirect.com/tmc/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="online",TV5 Monde Asie (576p) [Geo-blocked]
-http://210.210.155.35/dr9445/s/s24/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="online",TV5 Monde Asie (576p)
 http://210.210.155.37/dr9445/s/s24/index.m3u8
+#EXTINF:-1 tvg-id="TV5MondeAsie.fr" status="error",TV5 Monde Asie (576p) [Geo-blocked]
+http://210.210.155.35/dr9445/s/s24/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
