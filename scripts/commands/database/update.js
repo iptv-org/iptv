@@ -127,7 +127,7 @@ function parseMediaInfo(streams) {
   streams = streams.filter(s => s.codec_type === 'video')
   streams = streams.map(s => {
     s.bitrate = s.tags && s.tags.variant_bitrate ? parseInt(s.tags.variant_bitrate) : 0
-    s.frame_rate = parseFrameRate(s.r_frame_rate)
+    s.frame_rate = parseFrameRate(s.avg_frame_rate)
 
     return s
   })
@@ -136,8 +136,8 @@ function parseMediaInfo(streams) {
   return _.head(streams) || {}
 }
 
-function parseFrameRate(r_frame_rate = '0/0') {
-  const parts = r_frame_rate.split('/')
+function parseFrameRate(frame_rate = '0/0') {
+  const parts = frame_rate.split('/')
   const number = parseInt(parts[0]) / parseInt(parts[1])
 
   return Math.round(number * 100) / 100
