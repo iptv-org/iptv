@@ -140,7 +140,7 @@ function parseFrameRate(frame_rate = '0/0') {
   const parts = frame_rate.split('/')
   const number = parseInt(parts[0]) / parseInt(parts[1])
 
-  return Math.round(number * 100) / 100
+  return number > 0 ? Math.round(number * 100) / 100 : 0
 }
 
 function parseStatus(error) {
