@@ -137,9 +137,10 @@ function parseMediaInfo(streams) {
 }
 
 function parseFrameRate(r_frame_rate = '0/0') {
-  let parts = r_frame_rate.split('/')
+  const parts = r_frame_rate.split('/')
+  const number = parseInt(parts[0])
 
-  return parseInt(parts[0])
+  return number > 10000 ? number / 1000 : number
 }
 
 function parseStatus(error) {
