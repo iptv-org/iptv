@@ -37,7 +37,7 @@ https://cdnlive.shooowit.net/25televisiolive/smil:channel1.smil/master.m3u8
 https://5940924978228.streamlock.net/8157/8157/master.m3u8
 #EXTINF:-1 tvg-id="101TeleAntequera.es" status="online",101 Tele Antequera (1080p)
 https://limited38.todostreaming.es/live/101tv-AntequeraHD.m3u8
-#EXTINF:-1 tvg-id="101TVMalaga.es" status="online",101TV Malaga (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="101TVMalaga.es" status="error",101TV Malaga (1080p) [Not 24/7]
 https://limited38.todostreaming.es/live/101tv-web101tv.m3u8
 #EXTINF:-1 tvg-id="324.es" status="online",3/24 (1080p)
 https://directes-tv-int.ccma.cat/int/ngrp:324_web/master.m3u8
@@ -103,12 +103,12 @@ http://217.125.136.93:8080/canalsierradecadiz720.m3u8
 http://217.125.136.93:8080/canalsierradecadiz1080.m3u8
 #EXTINF:-1 tvg-id="CanalSuper3.es" status="error",Canal Super 3 (1080p) [Not 24/7]
 https://directes-tv-int.ccma.cat/int/ngrp:c33_web/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalSurAndalucia.es" status="online",Canal Sur Andalucía (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCqwjtgaJflHga2aPWphG5PQ/live
 #EXTINF:-1 tvg-id="CanalSurAndalucia.es" status="online",Canal Sur Andalucía (720p)
 https://cdnlive.codev8.net/rtvalive/smil:channel1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalSurAndalucia.es" status="online",Canal Sur Andalucía (720p)
 https://cdnlive.shooowit.net/rtvalive/smil:channel1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalSurAndalucia.es" status="error",Canal Sur Andalucía (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCqwjtgaJflHga2aPWphG5PQ/live
 #EXTINF:-1 tvg-id="CanalTaronja.es" status="blocked",Canal Taronja Osona i Moianés (480p) [Not 24/7]
 https://taronjavic.streaming-pro.com/hls/vic.m3u8
 #EXTINF:-1 tvg-id="CCMAExclusiu1.es" status="error",CCMA Exclusiu 1 (1080p) [Not 24/7]
@@ -353,7 +353,7 @@ http://154.62.74.11:1935/live/realmadridnntv/playlist.m3u8
 https://rtvc-live1-rm.flumotion.com/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVVida.es" status="online",RTV Vida (1080p)
 https://vidartv2.todostreaming.es/live/radiovida-emisiontvhd.m3u8
-#EXTINF:-1 tvg-id="SalTelevision.es" status="online",Sal Televisión (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SalTelevision.es" status="error",Sal Televisión (720p) [Not 24/7]
 https://www.tdtchannels.com/stream/saltv.m3u8
 #EXTINF:-1 tvg-id="SevillaFCTV.es" status="online",Sevilla FC TV (360p) [Not 24/7]
 https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0_ye0b8tc0/format/applehttp/protocol/https/uiConfId/30026292/a.m3u8
@@ -390,9 +390,9 @@ https://live-edge-bhs-1.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/play
 #EXTINF:-1 tvg-id="TuyaLaJandaTelevision.es" status="online",Tuya La Janda Televisión (1080p)
 http://185.210.20.13:8080/0.m3u8
 #EXTINF:-1 tvg-id="TV3CAT.es" status="online",TV3CAT (1080p)
-https://directes-tv-int.ccma.cat/int/ngrp:tv3_web/playlist_DVR.m3u8
-#EXTINF:-1 tvg-id="TV3CAT.es" status="online",TV3CAT (1080p)
 https://directes-tv-int.ccma.cat/int/ngrp:tvi_web/playlist_DVR.m3u8
+#EXTINF:-1 tvg-id="TV3CAT.es" status="online",TV3CAT (1080p)
+https://directes-tv-int.ccma.cat/int/ngrp:tv3_web/playlist_DVR.m3u8
 #EXTINF:-1 tvg-id="TV3Catalunya.es" status="online",TV3 Catalunya (1080p)
 https://directes-tv-int.ccma.cat/int/ngrp:tv3_web/playlist.m3u8
 #EXTINF:-1 tvg-id="TV4LaVall.es" status="online",Cuatro 4 TV Vall Uxa (1080p) [Not 24/7]
@@ -403,7 +403,7 @@ https://streaming01.gestec-video.com/hls/artequatreTVA.m3u8
 https://rtvc-live1.flumotion.com/playlist.m3u8
 #EXTINF:-1 tvg-id="TVEInternacionalAsiaOceania.es" status="online",TVE Internacional Asia-Oceania (576p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h158/index2.m3u8
-#EXTINF:-1 tvg-id="TVEInternacionalAsiaOceania.es" status="online",TVE Internacional Asia-Oceania (576p)
+#EXTINF:-1 tvg-id="TVEInternacionalAsiaOceania.es" status="error",TVE Internacional Asia-Oceania (576p)
 http://210.210.155.37/uq2663/h/h158/index2.m3u8
 #EXTINF:-1 tvg-id="tvG2.es" status="online",tvG2 (720p) [Not 24/7]
 https://events2-crtvg.flumotion.com/playlist.m3u8
