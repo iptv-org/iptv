@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1Plus1.ua" status="online",1+1 (1080p)
+#EXTINF:-1 tvg-id="1Plus1.ua" status="error",1+1 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCVEaAWKfv7fE1c-ZuBs7TKQ/live
 #EXTINF:-1 tvg-id="1Plus1Sport.ua" status="online",1+1 Спорт (720p) [Not 24/7]
 https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
@@ -86,7 +86,7 @@ http://live.m2.tv/hls2/stream.m3u8
 http://live.m2.tv/hls3/stream.m3u8
 #EXTINF:-1 tvg-id="MostVideoTV.ua" status="online",MostVideo.TV (720p) [Not 24/7]
 http://w4.mostvideo.tv/tv/ch1.m3u8
-#EXTINF:-1 tvg-id="Nadiya.ua" status="timeout",Надия/Новый канал (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Nadiya.ua" status="online",Надия/Новый канал (576p) [Not 24/7]
 http://nadiya.home-net.com.ua/mob/mystream.m3u8
 #EXTINF:-1 tvg-id="Nadiya.ua" status="error",Надія (720p) [Not 24/7]
 https://stream.hope.ua/hopeua/live_1/playlist.m3u8
@@ -195,8 +195,6 @@ http://194.50.51.34/playlist.m3u8
 http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
-#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
-https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
 http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
@@ -243,6 +241,8 @@ http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/playlist.m3u8
 http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",I-UA.tv (1080p)
+https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="error",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",UkrLive (Перший незалежний) (1080p)
