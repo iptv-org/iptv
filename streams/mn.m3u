@@ -1,5 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="MongolynMedee.mn" status="error",Монголын Мэдээ (576p) [Offline]
-http://103.14.38.107:1935/live/mn2.stream/chunklist.m3u8
-#EXTINF:-1 tvg-id="MUONT1.mn" status="error",МҮОНТ-1 (576p) [Offline]
-http://103.14.38.107:1935/live/mnb.stream/chunklist.m3u8
+#EXTINF:-1 tvg-id="MNBSport.mn" status="online",MNB Sport
+https://live.mnb.mn/live/mnb_sport.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="MongolynMedee.mn" status="online",Монголын Мэдээ (576p)
+http://103.14.38.107:1935/live/mn2.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="MUONT1.mn" status="online",МҮОНТ-1 (576p)
+http://103.14.38.107:1935/live/mnb.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TV5.mn" status="online",TV5
+http://d1qwew1jz60jqg.cloudfront.net/MYASIATV/TV5/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",MNB Гэр бүл
+https://live.mnb.mn/live/mnb_family.stream/playlist.m3u8

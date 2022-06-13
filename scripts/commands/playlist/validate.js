@@ -6,7 +6,7 @@ const _ = require('lodash')
 program.argument('[filepath]', 'Path to file to validate').parse(process.argv)
 
 async function main() {
-  const files = program.args.length ? program.args : await file.list('channels/*.m3u')
+  const files = program.args.length ? program.args : await file.list('streams/*.m3u')
 
   logger.info(`loading blocklist...`)
   await api.channels.load()
@@ -31,8 +31,8 @@ async function main() {
     const [__, country] = basename.match(/([a-z]{2})(|_.*)\.m3u/i) || [null, null]
 
     const fileLog = []
-    const items = await parser.parsePlaylist(filepath)
-    for (const item of items) {
+    const playlist = await parser.parsePlaylist(filepath)
+    for (const item of playlist.items) {
       if (item.tvg.id && !api.channels.find({ id: item.tvg.id })) {
         fileLog.push({
           type: 'warning',

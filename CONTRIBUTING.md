@@ -15,11 +15,11 @@ To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/
 
 ### Report a Broken Stream
 
-To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=broken+stream&template=-----broken-stream.yml&title=Replace%3A+) with a description of the channel. (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately)
+To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=🛠+broken+stream&template=-----broken-stream.yml&title=Broken%3A+) with a description of the channel. (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately)
 
 ### Content Removal Request
 
-If you find any content in the repository that you own and you would like us to remove, please create an [issue](https://github.com/iptv-org/iptv/issues/new?assignees=freearhey&labels=removal+request&template=--removal-request.yml&title=Remove%3A+) and provide all necessary information. If the request is granted, the specified content will be removed from the repository within one business day.
+If you find any content in the repository that you own and you would like us to remove, please create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=❌+removal+request&template=--removal-request.yml&title=Remove%3A+) and provide all necessary information. If the request is granted, the specified content will be removed from the repository within one business day.
 
 ## Pull Request Guidelines
 
@@ -82,6 +82,13 @@ Also, if necessary, you can specify custom HTTP User-Agent and Referrer via the 
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 http://example.com/stream.m3u8
 ```
+
+Each stream also have a `status` attribute which is updated daily by the [iptv-bot](https://github.com/apps/iptv-bot). The attribute can have one of the following values:
+
+- `online` - stream was successfully loaded
+- `blocked` - server returned HTTP code [403 Forbidden](https://en.wikipedia.org/wiki/HTTP_403)
+- `timeout` - request time exceeded 60 seconds
+- `error` - stream could not be loaded for some other reason
 
 ## Project Structure
 

@@ -1,31 +1,26 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Al Jazeera Arabic (480p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
-http://ott-cdn.ucom.am/s69/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Al Jazeera Arabic (1080p)
-https://live-hls-web-aja.getaj.net/AJA/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraBalkans.qa" status="online",Al Jazeera Balkans (1080p)
 https://live-hls-web-ajb.getaj.net/AJB/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraChannel.qa" status="online",Al Jazeera Arabic (1080p)
+https://live-hls-web-aja.getaj.net/AJA/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraChannel.qa" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Al Jazeera Arabic (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s69/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraDocumentary.qa" status="online",Al Jazeera Documentary (270p) [Geo-blocked]
 https://live-hls-web-ajd.getaj.net/AJD/index.m3u8
-#EXTINF:-1 tvg-id="AlJazeeraDocumentary.qa" status="error",Al Jazeera Documentary (576p) [Not 24/7]
-#EXTVLCOPT:http-referrer=http://azrotv.com/
-http://teledunet.com:8080/live/azrotv/azrotv2021/10040.m3u8
-#EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Al Jazeera English (480p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
-http://ott-cdn.ucom.am/s23/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" status="online",Al Jazeera English (1080p)
 https://live-hls-web-aje.getaj.net/AJE/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Al Jazeera English (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s23/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraMubasher.qa" status="online",Al Jazeera Mubasher (1080p)
 https://live-hls-web-ajm.getaj.net/AJM/index.m3u8
-#EXTINF:-1 tvg-id="AlKassFive.qa" status="online",Al Kass Five (304p)
-https://www.elahmad.com/tv/m3u8/online_live_2_tv.m3u8?id=alkass5
-#EXTINF:-1 tvg-id="AlRassoul.qa" status="error",Al Rassoul (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlRassoul.qa" status="timeout",Al Rassoul (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/AlRassoulChannel/live
-#EXTINF:-1 tvg-id="AlRayyan.qa" status="online",Al Rayyan (1080p)
-https://svs.itworkscdn.net/alrayyanlive/alrayyan.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AlRayyanAlQadeem.qa" status="online",Al Rayyan Al Qadeem (1080p)
+#EXTINF:-1 tvg-id="AlRayyanOldTV.qa" status="online",Al Rayyan Al Qadeem (1080p)
 https://svs.itworkscdn.net/alrayyanqadeemlive/alrayyanqadeem.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AlRayyanTV.qa" status="online",Al Rayyan (1080p)
+https://svs.itworkscdn.net/alrayyanlive/alrayyan.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="QatarTV2.qa" status="online",Qatar TV 2 (720p)
 https://qatartv.akamaized.net/hls/live/2026574/qtv2/master.m3u8
 #EXTINF:-1 tvg-id="QatarTV.qa" status="online",Qatar TV (360p)

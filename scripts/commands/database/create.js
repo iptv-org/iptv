@@ -33,8 +33,8 @@ async function findStreams() {
   const streams = []
   const files = await file.list(`${options.inputDir}/**/*.m3u`)
   for (const filepath of files) {
-    const items = await parser.parsePlaylist(filepath)
-    for (const item of items) {
+    const playlist = await parser.parsePlaylist(filepath)
+    for (const item of playlist.items) {
       item.filepath = filepath
 
       const stream = store.create()

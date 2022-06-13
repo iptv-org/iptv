@@ -3,14 +3,17 @@ on:
   workflow_dispatch:
   pull_request:
     types: [opened, synchronize, reopened, edited]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
-          fetch-depth: 0
-      - uses: tj-actions/changed-files@v12.2
+          fetch-depth: 2
+      - uses: tj-actions/changed-files@v22.2
         id: files
         with:
           files: streams/*.m3u

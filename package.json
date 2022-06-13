@@ -3,6 +3,7 @@
   "scripts": {
     "act:auto-update": "act workflow_dispatch -W .github/workflows/auto-update.yml --artifact-server-path=.artifacts",
     "act:check": "act pull_request -W .github/workflows/check.yml",
+    "api:load": "./scripts/commands/api/load.sh",
     "db:create": "node scripts/commands/database/create.js",
     "db:matrix": "node scripts/commands/database/matrix.js",
     "db:update": "node scripts/commands/database/update.js",
@@ -12,6 +13,7 @@
     "playlist:generate": "node scripts/commands/playlist/generate.js",
     "playlist:update": "node scripts/commands/playlist/update.js",
     "playlist:lint": "npx m3u-linter -c m3u-linter.json",
+    "playlist:cleaner": "node scripts/commands/playlist/cleaner.js",
     "readme:update": "node scripts/commands/readme/update.js",
     "test": "jest --runInBand"
   },
@@ -30,8 +32,8 @@
     "commander": "^8.3.0",
     "dayjs": "^1.10.7",
     "fs-extra": "^10.0.0",
-    "iptv-checker": "^0.22.0",
-    "iptv-playlist-parser": "^0.10.2",
+    "iptv-checker": "^0.24.5",
+    "iptv-playlist-parser": "^0.11.0",
     "jest": "^27.5.1",
     "jest-expect-message": "^1.0.2",
     "lodash": "^4.17.21",

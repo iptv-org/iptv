@@ -13,16 +13,7 @@ jobs:
         with:
           node-version: '14'
           cache: 'npm'
-      - name: Download data from API
-        run: |
-          mkdir -p scripts/data
-          curl -L -o scripts/data/blocklist.json https://iptv-org.github.io/api/blocklist.json
-          curl -L -o scripts/data/categories.json https://iptv-org.github.io/api/categories.json
-          curl -L -o scripts/data/channels.json https://iptv-org.github.io/api/channels.json
-          curl -L -o scripts/data/countries.json https://iptv-org.github.io/api/countries.json
-          curl -L -o scripts/data/guides.json https://iptv-org.github.io/api/guides.json
-          curl -L -o scripts/data/languages.json https://iptv-org.github.io/api/languages.json
-          curl -L -o scripts/data/regions.json https://iptv-org.github.io/api/regions.json
+      - run: npm run api:load
       - uses: actions/upload-artifact@v2
         with:
           name: data
@@ -115,11 +106,34 @@ jobs:
         if: ${{ !env.ACT }}
         run: |
           git add streams/*
-          git commit -m "[Bot] Update streams"
+          git commit -m "[Bot] Update /streams"
           git add README.md
           git commit -m "[Bot] Update README.md"
           git status
           git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          branch: gh-pages
+          folder: .gh-pages
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to GitHub Pages'
+          clean: false
+      - name: Deploy to iptv-org/api
+        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          repository-name: iptv-org/api
+          branch: gh-pages
+          folder: .api
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to iptv-org/api'
+          clean: false
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
@@ -132,27 +146,6 @@ jobs:
             This pull request is created by [auto-update][1] workflow.
 
             [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
-      - uses: JamesIves/github-pages-deploy-action@4.2.0
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          branch: gh-pages
-          folder: .gh-pages
-          token: ${{ steps.create-app-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to GitHub Pages'
-          clean: false
-      - uses: JamesIves/github-pages-deploy-action@4.2.0
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          repository-name: iptv-org/api
-          branch: gh-pages
-          folder: .api
-          token: ${{ steps.create-app-token.outputs.token }}
-          git-config-name: iptv-bot[bot]
-          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to iptv-org/api'
-          clean: false
       - uses: juliangruber/merge-pull-request-action@v1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:

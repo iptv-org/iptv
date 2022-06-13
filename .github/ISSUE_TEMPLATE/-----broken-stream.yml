@@ -1,7 +1,7 @@
 name: 🛠 Broken Stream
 description: Report a broken stream
-title: 'Replace: '
-labels: ['broken stream']
+title: 'Broken: '
+labels: ['🛠 broken stream']
 
 body:
   - type: markdown
@@ -21,35 +21,23 @@ body:
     attributes:
       label: What happened to the stream?
       options:
-        - It is disappeared from the playlist
-        - It is stuck at a single frame/the same segment
-        - It is buffering to unplayable point
+        - Not loading
+        - Constantly interrupts/lagging
+        - Stuck at a single frame
         - I see visual artifacts
+        - Shows looped video
+        - Shows the wrong channel
+        - Displays a message asking to renew subscription
         - Other
     validations:
       required: true
 
   - type: input
     attributes:
-      label: Playlist
-      description: What playlist was used to get the channel from?
-      placeholder: 'https://iptv-org.github.io/iptv/countries/au.m3u'
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: Broken Link
-      description: Please specify the broken link from a playlist if you can
-      placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
-
-  - type: input
-    attributes:
       label: Possible Replacement
-      description: If you know an alternate source or the way to fix current stream please let us know
       placeholder: 'ex. https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
 
-  - type: input
+  - type: textarea
     attributes:
       label: Notes
       placeholder: 'Anything else we should know?'
@@ -59,3 +47,4 @@ body:
       label: Please confirm the following
       options:
         - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#report-a-broken-stream)
+          required: true

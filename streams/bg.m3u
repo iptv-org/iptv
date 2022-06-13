@@ -1,55 +1,29 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="100AutoMotoTV.bg" status="online",100% Auto Moto TV (406p) [Not 24/7]
 http://100automoto.tv:1935/bgtv1/autotv/playlist.m3u8
-#EXTINF:-1 tvg-id="BalkanikaTV.bg" status="error",Balkanika TV (270p) [Offline]
+#EXTINF:-1 tvg-id="BalkanikaTV.bg" status="timeout",Balkanika TV (270p)
 rtsp://stream.teracomm.bg/balkanika
-#EXTINF:-1 tvg-id="BGMusic.bg" status="error",BG Music [Offline]
-https://cdn1.mobiletv.bg/T10/bgmusic/bgmusic_794613_850k.m3u8
-#EXTINF:-1 tvg-id="BNMusic.bg" status="error",BN Music [Offline]
-https://cdn1.mobiletv.bg/T5/bn_music/bn_music_794613_850k.m3u8
-#EXTINF:-1 tvg-id="BoxTV.bg" status="error",Box TV [Offline]
-https://cdn1.mobiletv.bg/T5/box_tv/box_tv_794613_850k.m3u8
-#EXTINF:-1 tvg-id="BTK.bg" status="online",BTK (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="BTK.bg" status="timeout",BTK (576p) [Not 24/7]
 http://hls.cdn.bg:2007/fls/vtv/playlist.m3u8
-#EXTINF:-1 tvg-id="BTVCinema.bg" status="error",BTV Cinema [Offline]
-https://cdn1.mobiletv.bg/T8/btv_cinema/btv_c_794613_850k.m3u8
-#EXTINF:-1 tvg-id="BTVComedy.bg" status="error",BTV Comedy [Offline]
-https://cdn1.mobiletv.bg/T5/btvcomedy/btvcomedy_794613_850k.m3u8
-#EXTINF:-1 tvg-id="BulgariaOnAir.bg" status="online",Bulgaria On Air (720p)
+#EXTINF:-1 tvg-id="BulgariaOnAir.bg" status="timeout",Bulgaria On Air (720p)
 http://edge1.cdn.bg:2006/fls/bonair.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Bulgaria On Air (720p)
-http://edge15.cdn.bg:2006/fls/bonair.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Bulgaria On Air (720p)
-http://hls.cdn.bg:2006/fls/bonair.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Bulgaria On Air (720p)
-http://ios.cdn.bg:2006/fls/bonair.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CityTV.bg" status="online",City TV (576p) [Not 24/7]
 https://tv.city.bg/play/tshls/citytv/index.m3u8
-#EXTINF:-1 tvg-id="Diema.bg" status="error",Diema [Offline]
-https://cdn1.mobiletv.bg/T13/diema/diema_794613_850k.m3u8
-#EXTINF:-1 tvg-id="DMSAT.bg" status="error",DM SAT [Offline]
-https://cdn1.mobiletv.bg/T5/dm_sat/dm_sat_794613_850k.m3u8
-#EXTINF:-1 tvg-id="DSTV.bg" status="error",DSTV (614p) [Not 24/7]
+#EXTINF:-1 tvg-id="DSTV.bg" status="online",DSTV (614p) [Not 24/7]
 http://46.249.95.140:8081/hls/data.m3u8
-#EXTINF:-1 tvg-id="" status="error",Ekids [Offline]
-https://cdn1.mobiletv.bg/T8/ekids/ekids_794613_850k.m3u8
 #EXTINF:-1 tvg-id="Evrokom.bg" status="online",Evrokom (360p)
 https://live.ecomservice.bg/hls/stream.m3u8
-#EXTINF:-1 tvg-id="FishingHuntingChannel.bg" status="error",Fishing & Hunting Channel [Offline]
-https://cdn1.mobiletv.bg/T5/fh/fh_794613_850k.m3u8
-#EXTINF:-1 tvg-id="HomeOneTV.bg" status="timeout",HomeOne TV (1080p) [Timeout]
-https://streamer104.neterra.tv/n1tv/n1tv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LightChannel.bg" status="online",Light Channel (480p) [Not 24/7]
 https://streamer1.streamhost.org/salive/GMIlcbgM/playlist.m3u8
-#EXTINF:-1 tvg-id="MMTV.bg" status="error",MM TV (480p) [Offline]
-https://streamer103.neterra.tv/mmtv/mmtv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Nostalgia.bg" status="error",Nostalgia [Offline]
-https://cdn1.mobiletv.bg/T10/kanal4/kanal4_794613_850k.m3u8
-#EXTINF:-1 tvg-id="Sportal.bg" status="blocked",Sportal.bg [Geo-blocked]
+#EXTINF:-1 tvg-id="SportalTV.bg" status="blocked",Sportal.bg [Geo-blocked]
 https://e113-ts.cdn.bg/sportal/fls/sportal_fullhd/chunklist.m3u8?at=c92098d9ab33bf471967c6b6195361e3
-#EXTINF:-1 tvg-id="ThisisBulgaria.bg" status="error",This is Bulgaria (1080p) [Offline]
-https://streamer103.neterra.tv/thisisbulgaria/community.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPlus.bg" status="timeout",TV+ [Timeout]
+#EXTINF:-1 tvg-id="TVPlus.bg" status="timeout",TV+
 http://141.136.14.18/kanal1/kanal1.m3u8
-#EXTINF:-1 tvg-id="WnessTV.bg" status="error",Wness TV (720p) [Offline]
-https://wness103.neterra.tv/wness/wness.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Bulgaria On Air (720p)
+http://edge15.cdn.bg:2006/fls/bonair.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Bulgaria On Air (720p)
+http://hls.cdn.bg:2006/fls/bonair.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Bulgaria On Air (720p)
+http://ios.cdn.bg:2006/fls/bonair.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",HomeOne TV (1080p)
+https://streamer104.neterra.tv/n1tv/n1tv.smil/playlist.m3u8

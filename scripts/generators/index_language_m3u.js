@@ -8,7 +8,7 @@ module.exports = async function (streams = []) {
 		if (!stream.languages.length) {
 			const item = _.cloneDeep(stream)
 			item.group_title = 'Undefined'
-			items.push(stream)
+			items.push(item)
 			return
 		}
 
