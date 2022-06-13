@@ -13,10 +13,10 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 2
-      - uses: tj-actions/changed-files@v12.2
+      - uses: tj-actions/changed-files@v22.2
         id: files
         with:
-          files: 'streams'
+          files: streams/*.m3u
       - uses: actions/setup-node@v2
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
