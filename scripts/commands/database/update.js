@@ -27,10 +27,11 @@ async function updateStreams(items = [], results = {}, origins = {}) {
       stream.set('status', { status })
 
       if (result.streams.length) {
-        const { width, height, bitrate } = parseMediaInfo(result.streams)
+        const { width, height, bitrate, frame_rate } = parseMediaInfo(result.streams)
         stream.set('width', { width })
         stream.set('height', { height })
         stream.set('bitrate', { bitrate })
+        stream.set('frame_rate', { frame_rate })
       }
 
       if (result.requests.length) {
@@ -124,19 +125,22 @@ function findOrigin(requests = [], origins = {}) {
 
 function parseMediaInfo(streams) {
   streams = streams.filter(s => s.codec_type === 'video')
-  streams = _.orderBy(
-    streams,
-    ['height', s => (s.tags && s.tags.variant_bitrate ? parseInt(s.tags.variant_bitrate) : 0)],
-    ['desc', 'desc']
-  )
+  streams = streams.map(s => {
+    s.bitrate = s.tags && s.tags.variant_bitrate ? parseInt(s.tags.variant_bitrate) : 0
+    s.frame_rate = parseFrameRate(s.avg_frame_rate)
 
-  const data = _.head(streams)
-  if (data) {
-    const bitrate = data.tags && data.tags.variant_bitrate ? parseInt(data.tags.variant_bitrate) : 0
-    return { width: data.width, height: data.height, bitrate }
-  }
+    return s
+  })
+  streams = _.orderBy(streams, ['height', 'bitrate'], ['desc', 'desc'])
 
-  return {}
+  return _.head(streams) || {}
+}
+
+function parseFrameRate(frame_rate = '0/0') {
+  const parts = frame_rate.split('/')
+  const number = parseInt(parts[0]) / parseInt(parts[1])
+
+  return number > 0 ? Math.round(number * 100) / 100 : 0
 }
 
 function parseStatus(error) {
