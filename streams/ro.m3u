@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="A7TV.ro" status="online",A7TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="A7TV.ro" status="error",A7TV (720p) [Not 24/7]
 https://play.streamkit.tv/content/channel/aseventv/live/aseventv.player.m3u8
 #EXTINF:-1 tvg-id="AgroTV.ro" status="online",AgroTV (404p) [Not 24/7]
 https://stream1.1616.ro:1945/agro/livestream/playlist.m3u8?wowzatokenhash=NqSD4qaHc94SbTW05NBB-lXC78ZiAOIbnbUBOHj1DAM=
@@ -65,7 +65,7 @@ https://rtmp.digitalbroadcast.ro/moozhits/moozhits.m3u8
 https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8
 #EXTINF:-1 tvg-id="MusicChannelRomania.ro" status="error",Music Channel Romania (576p)
 https://edge126.rcs-rds.ro/utvedge/musicchannelhq.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="NasulTV.ro" status="online",Naşul TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NasulTV.ro" status="error",Naşul TV (720p) [Not 24/7]
 https://5ab29cc78f681.streamlock.net/NasulTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="NovaTVBrasov.ro" status="timeout",Nova TV Brasov (576p) [Not 24/7]
 http://novapress.ro:1935/live/nova/playlist.m3u8
@@ -128,12 +128,12 @@ http://89.38.8.130:39419
 https://iptv-all.lanesh4d0w.repl.co/romania/utv
 #EXTINF:-1 tvg-id="VPTV.ro" status="error",VP TV (576p) [Not 24/7]
 http://89.38.8.130:39437
-#EXTINF:-1 tvg-id="" status="online",MEDIA REGIONAL (576p)
-http://83.103.150.198:8080
 #EXTINF:-1 tvg-id="" status="online",Profit.ro (404p)
 https://stream1.1616.ro:1945/profit/livestream/playlist.m3u8?wowzatokenhash=hOdIznDoakApEuQ8FaFI3yrJuBMZHqCB7B3cWTmRWsc=
 #EXTINF:-1 tvg-id="" status="online",Profit.ro (404p) [Not 24/7]
 https://stream1.profit.ro:1945/profit/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",MEDIA REGIONAL (576p)
+http://83.103.150.198:8080
 #EXTINF:-1 tvg-id="" status="error",SuperTV (1080p) [Not 24/7]
 http://live.supertv.ro:1935/live/smil:hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Antena Comedy (432p) [Not 24/7]
