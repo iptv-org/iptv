@@ -53,7 +53,7 @@ https://live.cast-control.eu/ekpdipso/ekpdipso/playlist.m3u8
 https://video.streams.ovh:1936/egnatiatv/egnatiatv/index.m3u8
 #EXTINF:-1 tvg-id="Ekklisia.gr" status="online",Εκκλησία (1080p)
 https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8
-#EXTINF:-1 tvg-id="EllasTV.gr" status="blocked",Ellas TV (1080p)
+#EXTINF:-1 tvg-id="EllasTV.gr" status="online",Ellas TV (1080p)
 http://ellastv.gotdns.com:88/freetv/promo/index.m3u8
 #EXTINF:-1 tvg-id="ENAChannel.gr" status="online",Ena Channel (576p) [Not 24/7]
 http://176.9.123.140:1935/1c/stream/master.m3u8
@@ -175,7 +175,7 @@ http://live.streams.ovh:1935/tvcreta/tvcreta/playlist.m3u8
 https://live.streams.ovh/tvcreta/tvcreta/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVFilopoli.gr" status="online",TV Filopoli (360p) [Not 24/7]
 http://live.streams.ovh:1935/tvfilopoli/tvfilopoli/playlist.m3u8
-#EXTINF:-1 tvg-id="TVNotos.gr" status="online",TV Notos (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVNotos.gr" status="error",TV Notos (720p) [Not 24/7]
 https://eco.streams.ovh/notos/notos/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRodopi.gr" status="error",TV Rodopi (720p)
 https://video.connect4.gr/live/tvrodopi/playlist.m3u8
@@ -193,8 +193,6 @@ http://167.86.89.20:5080/LiveApp/streams/064918158666216168224216.m3u8
 http://5db313b643fd8.streamlock.net:1935/ZerounoTV/ZerounoTV/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ΡΙΚ Sat (720p) [Not 24/7]
 http://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",ERT News 2 (720p) [Geo-blocked]
-https://ert-live-bcbs15228.siliconweb.com/media/ert_news_2/ert_news_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Skai (720p)
 https://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Skai (720p)
@@ -205,6 +203,8 @@ https://itv.streams.ovh/ALEERT/ALEERT/playlist.m3u8
 https://streamer-cache.grnet.gr/parliament/hls/webtv2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση (540p)
 https://streamer-cache.grnet.gr/parliament/hls/webtv.m3u8
+#EXTINF:-1 tvg-id="" status="online",ERT News 2 (720p) [Geo-blocked]
+https://ert-live-bcbs15228.siliconweb.com/media/ert_news_2/ert_news_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση (360p)
 https://streamer-cache.grnet.gr/parliament/parltv.sdp/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση 3 (540p)

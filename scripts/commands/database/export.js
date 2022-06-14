@@ -16,7 +16,8 @@ async function main() {
       status: stream.status,
       width: stream.width,
       height: stream.height,
-      bitrate: stream.bitrate
+      bitrate: stream.bitrate,
+      frame_rate: stream.frame_rate
     }
   })
 
