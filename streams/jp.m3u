@@ -19,7 +19,7 @@ http://cdn.us195.jpnettv.live:1935/jptv/bstbs_540/playlist.m3u8
 http://cgntv-glive.ofsdelivery.net/live/cgntv_jp/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelJapan.jp" status="online",Disney Channel Japan
 http://cdn.us195.jpnettv.live:1935/jptv/disney_channel/playlist.m3u8
-#EXTINF:-1 tvg-id="FujiTV.jp" status="timeout",Fuji TV (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="FujiTV.jp" status="online",Fuji TV (540p) [Not 24/7]
 https://fujitv2.mov3.co/hls/fujitv.m3u8
 #EXTINF:-1 tvg-id="GSTV.jp" status="timeout",GSTV (720p)
 https://gstv-tnz-gsmediastreaming.preview-jpea.channel.media.azure.net/dfd06b62-e9d1-4a7f-bcbb-89d2ecbc82ee/preview.ism/manifest(format=mpd-time-csf,audio-only=false)
@@ -87,13 +87,13 @@ http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_720/playlist.m3u8
 http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_540/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKChinese.jp" status="online",NHK Chinese Vision (720p)
 https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8
-#EXTINF:-1 tvg-id="NHKChinese.jp" status="online",NHK Chinese Vision (720p)
+#EXTINF:-1 tvg-id="NHKChinese.jp" status="timeout",NHK Chinese Vision (720p)
 https://nhkw-zh-hlscomp.akamaized.net/ixxemlzk1vqvy44o/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKEducationalTV.jp" status="online",NHK E
 https://cdn.us195.jpnettv.live/jptv/kanto_nhk_edu_540/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="online",NHK G Osaka
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_nhk_g_540/playlist.m3u8
-#EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="timeout",NHK General TV (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="online",NHK General TV (540p) [Not 24/7]
 https://nhk2.mov3.co/hls/nhk.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="online",NHK World Japan (1080p)
 https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index.m3u8
@@ -115,12 +115,12 @@ https://ntv2.mov3.co/hls/ntv.m3u8
 http://51.79.193.108:8080/hls/j00004/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="NipponTV.jp" status="error",Nippon TV (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00004/index.m3u8?type=jp
+#EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCuTAXTexrhetbOe3zgskJBQ/live
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
 https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
 https://n24-cdn-live.ntv.co.jp/ch02/index.m3u8
-#EXTINF:-1 tvg-id="NTVNews24.jp" status="timeout",NTV News24 (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCuTAXTexrhetbOe3zgskJBQ/live
 #EXTINF:-1 tvg-id="ShopChannel.jp" status="online",Shop Channel (1080p) [Not 24/7]
 https://stream3.shopch.jp/HLS/master.m3u8
 #EXTINF:-1 tvg-id="TBSNews.jp" status="online",TBS News
@@ -144,6 +144,10 @@ https://movie.mcas.jp/mcas/smil:mx2_prod.smil/master.m3u8
 https://liveanevia.mncnow.id/live/eds/WakuWakuJapan/sa_dash_vmx/WakuWakuJapan.mpd
 #EXTINF:-1 tvg-id="Weathernews.jp" status="online",Weather News (720p)
 https://movie.mcas.jp/mcas/smil:wn1.smil/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",NHK World Japan (YouTube) (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live
+#EXTINF:-1 tvg-id="" status="online",TBS (JNN) News Dig 24/7 Live (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=H3D90-436C4
 #EXTINF:-1 tvg-id="" status="online",BS TV Asahi
 http://cdn.us195.jpnettv.live:1935/jptv/bsasahi_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",BS Fuji TV
@@ -190,10 +194,6 @@ http://cdn.us195.jpnettv.live:1935/jptv/gekijjyou/playlist.m3u8
 http://cdn.us195.jpnettv.live:1935/jptv/jfox/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",NECO
 http://cdn.us195.jpnettv.live:1935/jptv/Neco/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NHK World Japan (YouTube) (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live
-#EXTINF:-1 tvg-id="" status="timeout",TBS (JNN) News Dig 24/7 Live (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=H3D90-436C4
 #EXTINF:-1 tvg-id="" status="error",GAORA (540p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00045/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="" status="error",GAORA (540p) [Not 24/7]
