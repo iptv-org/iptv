@@ -155,12 +155,12 @@ http://51.81.66.195:1935/krtv/tvn_540/playlist.m3u8
 https://tvn-seezn.pip.cjenm.com/tvn/_definst_/s5/playlist.m3u8?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjI4OTQ5OTUsInBhdGgiOiIvdHZuL19kZWZpbnN0Xy9zNSIsInVubyI6IjE2MjI4OTQ2OTU0MzQzNTU1NSIsImlhdCI6MTYyMjg5NDY5NX0.uTI9slMSRoAbTQ0zGWoEWepnugD9iC-LumyD4dUMJSE
 #EXTINF:-1 tvg-id="TVNAsia.hk" status="online",tvN (Indonesian Subtitle) (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h20/index.m3u8
-#EXTINF:-1 tvg-id="TVNAsia.hk" status="online",tvN (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="TVNAsia.hk" status="error",tvN (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h20/index.m3u8
-#EXTINF:-1 tvg-id="TVNMovies.hk" status="online",tvN Movies (Indonesian Subtitle) (576p) [Geo-blocked]
-http://210.210.155.35/dr9445/h/h21/index.m3u8
-#EXTINF:-1 tvg-id="TVNMovies.hk" status="error",tvN Movies (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="TVNMovies.hk" status="online",tvN Movies (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h21/index.m3u8
+#EXTINF:-1 tvg-id="TVNMovies.hk" status="error",tvN Movies (Indonesian Subtitle) (576p) [Geo-blocked]
+http://210.210.155.35/dr9445/h/h21/index.m3u8
 #EXTINF:-1 tvg-id="tvNShow.kr" status="online",tvN Show (576p) [Not 24/7]
 http://51.81.66.195:1935/krtv/xtm_540/playlist.m3u8
 #EXTINF:-1 tvg-id="TVWorkNet.kr" status="online",TVWorkNet (480p)
@@ -171,9 +171,9 @@ https://5c3639aa99149.streamlock.net/live_TV/TV/playlist.m3u8
 http://51.81.66.195:1935/krtv/newsy_540/playlist.m3u8
 #EXTINF:-1 tvg-id="YTN.kr" status="online",YTN (540p) [Not 24/7]
 http://51.81.66.195:1935/krtv/ytn_540/playlist.m3u8
-#EXTINF:-1 tvg-id="YTN.kr" status="error",YTN (1080p)
+#EXTINF:-1 tvg-id="YTN.kr" status="timeout",YTN (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w/live
-#EXTINF:-1 tvg-id="YTNDMB.kr" status="error",YTN DMB
+#EXTINF:-1 tvg-id="YTNDMB.kr" status="timeout",YTN DMB
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC38IlqMxZ_YtFg3eSGmmJnQ/live
 #EXTINF:-1 tvg-id="YTNScience.kr" status="online",YTN SCIENCE (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCZdBJIbJz0P9xyFipgOj1fA/live
@@ -195,7 +195,7 @@ https://amdlive-ch02-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/pl
 https://amdlive-ch03-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Aniplus (Indonesian Subs) (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h02/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",One (Indonesian Sub) (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="online",One (Indonesian Sub) (360p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h143/02.m3u8
 #EXTINF:-1 tvg-id="" status="error",가요TV (1080p) [Not 24/7]
 http://gayotv.net:1935/live/gayotv/playlist.m3u8
