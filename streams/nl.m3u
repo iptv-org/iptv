@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="BNRNieuwsradio.nl" status="blocked",BNR Nieuwsradio (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="BNRNieuwsradio.nl" status="online",BNR Nieuwsradio (720p) [Geo-blocked]
 https://bnr-cache-cdp.triple-it.nl/studio/index.m3u8
 #EXTINF:-1 tvg-id="BR6TV.nl" status="online",BR6 TV (720p)
 https://58c04fb1d143f.streamlock.net/slob/slob/playlist.m3u8
@@ -49,7 +49,7 @@ http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/thematv/politiek24
 https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/visualradio/index.m3u8
 #EXTINF:-1 tvg-id="OmroepBrabantTV.nl" status="online",Omroep Brabant (1080p)
 https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8
-#EXTINF:-1 tvg-id="OmroepCentraalTV.nl" status="online",Omroep Centraal TV (480p)
+#EXTINF:-1 tvg-id="OmroepCentraalTV.nl" status="error",Omroep Centraal TV (480p)
 https://ms7.mx-cd.net/tv/208-1258878/Omroep_Centraal_GB.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OmroepFlevolandTV.nl" status="online",Omroep Flevoland (720p) [Not 24/7]
 https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8
@@ -93,7 +93,7 @@ https://talparadiohls-i.akamaihd.net/hls/live/585615/VR-Veronica-1/playlist.m3u8
 https://ms7.mx-cd.net/tv/71-475821/Regio8TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Regio90TV.nl" status="error",Regio90 TV (480p)
 https://ms7.mx-cd.net/MC-Monitoring/260-2403096/90TV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RegioTVNieuws.nl" status="online",Regio TV Nieuws (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="RegioTVNieuws.nl",Regio TV Nieuws (1080p) [Not 24/7]
 http://highvolume04.streampartner.nl/regiomedia/regiomedia/playlist.m3u8
 #EXTINF:-1 tvg-id="RN7.nl" status="blocked",Radio RN7 (576p) [Geo-blocked]
 http://streaming.rn7.nl/rn7tv/live_576/playlist.m3u8
@@ -147,10 +147,10 @@ https://server-67.stream-server.nl:1936/Samen1TV/Samen1TV/playlist.m3u8
 http://93.190.140.42:8081/SilenceTV/live/playlist.m3u8
 #EXTINF:-1 tvg-id="SirisTV.nl" status="online",Siris TV (720p) [Not 24/7]
 https://videostream.siris.nl/hls/playoutweb/index.m3u8
-#EXTINF:-1 tvg-id="StreekTV.nl" status="online",Streek TV (720p) [Not 24/7]
-http://cdn22.streampartner.nl/streektv/streektv/playlist.m3u8
 #EXTINF:-1 tvg-id="StreekTV.nl" status="timeout",Streek TV (720p) [Not 24/7]
 https://58e4d59f4ba2c.streamlock.net/streektv/streektv/playlist.m3u8
+#EXTINF:-1 tvg-id="StreekTV.nl" status="error",Streek TV (720p) [Not 24/7]
+http://cdn22.streampartner.nl/streektv/streektv/playlist.m3u8
 #EXTINF:-1 tvg-id="TommyTeleshopping.nl" status="online",Tommy Teleshopping (480p)
 http://ms7.mx-cd.net/tv/71-1356094/Tommy_Teleshopping.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVEllef.nl" status="timeout",TV Ellef (540p) [Not 24/7]
