@@ -58,7 +58,7 @@ http://95.67.47.114/hls/hdfashion_ua.m3u8
 http://95.67.47.115/hls/hdfashion_ua.m3u8
 #EXTINF:-1 tvg-id="HersonPlyus.ua" status="blocked",Херсон Плюс (576p)
 http://46.175.163.130/ks_plus/index.m3u8
-#EXTINF:-1 tvg-id="IDFashion.ua" status="error",ID Fashion (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="IDFashion.ua" status="online",ID Fashion (1080p) [Not 24/7]
 https://idfashion.cdn-02.cosmonova.net.ua/hls/idfashion_ua.m3u8
 #EXTINF:-1 tvg-id="Inshiy.ua" status="error",Інший (720p)
 https://cdn1.live-tv.od.ua:8083/ktkod/ktkod/playlist.m3u8
@@ -156,7 +156,7 @@ https://tv7plus.com/hls/tv7.m3u8
 http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
 http://rtsp.cdn.ua/tva.ua_live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVDom.ua" status="error",ТВ Дом
+#EXTINF:-1 tvg-id="TVDom.ua" status="timeout",ТВ Дом
 http://46.149.48.21:1234
 #EXTINF:-1 tvg-id="UAOdesa.ua" status="online",UA: Одеса (384p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/odtrkod/odtrkod-abr/playlist.m3u8
@@ -185,8 +185,6 @@ http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_1.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCH9H_b9oJtSHBovh94yB5HA/live
 #EXTINF:-1 tvg-id="" status="online",4 канал (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
-#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
-http://95.67.106.10/hls/nta_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",НТК (1080p) [Not 24/7]
 https://stream.ntktv.ua/s/ntk/ntk.m3u8
 #EXTINF:-1 tvg-id="" status="online",Балта ТВ (768p)
@@ -197,8 +195,6 @@ http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
 https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
-#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
-http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",ПравдаТУТ (720p)
@@ -218,6 +214,8 @@ http://95.67.106.10/hls/nta_ua_low/index.m3u8
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Прямий (576p)
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_mid/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",34 канал (576p) [Not 24/7]
+http://streamvideol.luxnet.ua/34ua/34ua.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",IHTEP (576p)
 https://edge1.iptv.macc.com.ua/img/inter_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый Городской (Одесса) (504p)
@@ -237,9 +235,13 @@ http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_3.m3u8
 http://93.78.206.172:8080/stream3/stream.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
+http://95.67.106.10/hls/nta_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ОТВ (Днепр) (576p)
 http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",ЯТБ (576p)
+#EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
+http://95.67.106.10/hls/nta_ua_mid/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
@@ -253,8 +255,6 @@ http://hls.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Перший Західний (Львов) (576p)
 http://rtmp.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",34 канал (576p) [Not 24/7]
-http://streamvideol.luxnet.ua/34ua/34ua.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Трофей ТВ (720p)
 https://5db1ab4f970be.streamlock.net/live/smil:trofey.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Одесса (576p) [Geo-blocked]
