@@ -38,15 +38,15 @@ https://win2.yayin.com.tr/bodrumbeltv/bodrumbeltv/playlist.m3u8
 http://139.162.182.79/live/test/index.m3u8
 #EXTINF:-1 tvg-id="BRTV.tr" status="online",BRTV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/brtv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="BursaTV.tr" status="online",Bursa TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="BursaTV.tr" status="error",Bursa TV (720p) [Not 24/7]
 https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8
-#EXTINF:-1 tvg-id="BursaTV.tr" status="online",Bursa TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="BursaTV.tr" status="error",Bursa TV (720p) [Not 24/7]
 https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CanTV.tr" status="online",Can TV (720p)
 http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="CanTV.tr" status="error",Can TV (720p) [Not 24/7]
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/105.m3u8
-#EXTINF:-1 tvg-id="CayTV.tr" status="error",Cay TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CayTV.tr" status="online",Cay TV (720p) [Not 24/7]
 http://stream2.taksimbilisim.com:1935/caytv/bant1/CAYTV.m3u8
 #EXTINF:-1 tvg-id="CekmekoyTV.tr" status="online",Cekmeköy TV (1080p)
 https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv/playlist.m3u8
@@ -152,13 +152,13 @@ https://waw2.artiyerelmedya.net/kanal15/bant1/playlist.m3u8
 https://waw2.artiyerelmedya.net/kanal23/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal26.tr" status="online",Kanal 26 (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/kanal26/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Kanal32.tr" status="error",Kanal 32 (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal32.tr",Kanal 32 (480p) [Not 24/7]
 https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Kanal33.tr" status="online",Kanal 33 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal33.tr" status="error",Kanal 33 (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/kanal33/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal34.tr" status="timeout",Kanal 34 (720p) [Not 24/7]
 http://live.arkumedia.com:1935/kanal34tv/kanal34tv/playlist.m3u8
-#EXTINF:-1 tvg-id="Kanal34.tr" status="timeout",Kanal 34 (720p)
+#EXTINF:-1 tvg-id="Kanal34.tr" status="error",Kanal 34 (720p)
 https://5be5d840359c6.streamlock.net/kanal34tv/kanal34tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal38.tr" status="online",Kanal 38 (540p) [Not 24/7]
 http://yayin3.canlitv.com:1935/live/kanal38/playlist.m3u8
@@ -253,7 +253,7 @@ http://s01.vpis.io/sariyer/sariyer.m3u8
 https://b01c02nl.mediatriple.net/videoonlylive/mtisvwurbfcyslive/broadcast_58d915bd40efc.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShowTV.tr" status="online",Show TV (720p) [Not 24/7]
 https://tv.ensonhaber.com/tv/tr/showtv/index.m3u8
-#EXTINF:-1 tvg-id="Sinema1001.tr" status="timeout",Sinema 1001 (1080p)
+#EXTINF:-1 tvg-id="Sinema1001.tr" status="error",Sinema 1001 (1080p)
 http://4ce5e2d62ee2c10e43c709f9b87c44d5.streamhost.cc/m3u8/Turkish/8b8823ce5525d9b.m3u8
 #EXTINF:-1 tvg-id="SinopYildizTV.tr" status="online",Sinop Yildiz TV (360p)
 https://s01.vpis.io/sinopyildiz/sinopyildiz.m3u8
@@ -267,10 +267,10 @@ http://163.172.39.215:25461/line/C4@!a3a1@!w72A/69
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/69.m3u8
 #EXTINF:-1 tvg-id="SunRTV.tr" status="online",Sun RTV (720p) [Not 24/7]
 https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8
-#EXTINF:-1 tvg-id="TGRTBelgesel.tr" status="online",TGRT Belgesel TV (576p)
-https://tv.ensonhaber.com/tv/tr/tgrtbelgesel/index.m3u8
 #EXTINF:-1 tvg-id="TGRTBelgesel.tr" status="online",TGRT Belgesel TV (576p) [Not 24/7]
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TGRTBelgesel.tr" status="online",TGRT Belgesel TV (576p)
+https://tv.ensonhaber.com/tv/tr/tgrtbelgesel/index.m3u8
 #EXTINF:-1 tvg-id="TGRTEU.tr" status="online",TGRT EU (576p)
 https://tv.ensonhaber.com/tv/tr/tgrteu/index.m3u8
 #EXTINF:-1 tvg-id="TGRTHaber.tr" status="online",TGRT Haber (360p) [Not 24/7]
@@ -361,7 +361,7 @@ https://mn-nl.mncdn.com/blutv_ucankus/ucankus_sd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="UlkeTV.tr" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Ülke TV (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://mn-nl.mncdn.com/blutv_ulketv/smil:ulketv_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="UniversiteTV.tr" status="error",Üniversite TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="UniversiteTV.tr" status="timeout",Üniversite TV (720p) [Not 24/7]
 https://5be5d840359c6.streamlock.net/unitv/unitv/playlist.m3u8
 #EXTINF:-1 tvg-id="UUTV2.tr" status="online",ÜÜ TV Üsküdar Üniversitesi TV (1080p) [Not 24/7]
 http://uskudarunv.mediatriple.net/uskudarunv/uskudar2/playlist.m3u8
@@ -385,8 +385,8 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v
 https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Er TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/ertv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Haber61 TV (720p) [Not 24/7]
-https://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Torba TV (720p) [Not 24/7]
+https://59cba4d34b678.streamlock.net/canlitv/torbatv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",AA Live (720p) [Not 24/7]
 http://mtulqxgomrllive.mediatriple.net/mtulqxgomrllive/broadcast_59f9c0c785b88.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ALTAS TV (720p) [Not 24/7]
@@ -437,8 +437,6 @@ http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
 http://tt61.mine.nu/live/PetraTV/Fw99Gpq7Gq/6478.m3u8
 #EXTINF:-1 tvg-id="" status="error",MSBC Kanal 2000 (360p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/kanal-2000/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Torba TV (720p) [Not 24/7]
-https://59cba4d34b678.streamlock.net/canlitv/torbatv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Yeni Malatyaspor TV (720p) [Not 24/7]
 https://592f1881b3d5f.streamlock.net:1443/santraltv_925/santraltv_925/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Medya Haber TV (1080p)
@@ -465,5 +463,7 @@ https://mn-nl.mncdn.com/blutv_taytv/smil:taytv_sd.smil/playlist.m3u8
 https://mn-nl.mncdn.com/blutv_teve2/smil:teve2_sd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Ege TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/egetv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Haber61 TV (720p) [Not 24/7]
+https://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Marmara TV (480p) [Geo-blocked]
 https://yayin.marmaratv.com.tr/P324353563/marmaratv/playlist.m3u8
