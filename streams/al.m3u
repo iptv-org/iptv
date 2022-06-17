@@ -41,7 +41,7 @@ https://tvlive.rtsh.dev/live/rtsh_shkolle_ott/playlist.m3u8
 https://tvlive.rtsh.dev/live/rtsh_shqip_ott/playlist.m3u8
 #EXTINF:-1 tvg-id="RTSHSport.al" status="timeout",RTSH Sport (720p) [Not 24/7]
 https://tvlive.rtsh.dev/live/rtsh_sport_ott11/playlist.m3u8
-#EXTINF:-1 tvg-id="ScanTV.al" status="error",RTV SCAN (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ScanTV.al" status="online",RTV SCAN (480p) [Not 24/7]
 http://edge01eu.ekranet.com/scantv/index.m3u8
 #EXTINF:-1 tvg-id="SyriTV.al" status="online",Syri TV (720p) [Not 24/7]
 http://live.syri.tv:6969/live/syriblue/hd/23.ts
@@ -53,10 +53,12 @@ http://media.az-mediaserver.com:1935/7064/7064/playlist.m3u8
 https://5d00db0e0fcd5.streamlock.net/7064/7064/playlist.m3u8
 #EXTINF:-1 tvg-id="TVApollon.al" status="online",TV Apollon (720p)
 https://live.apollon.tv/Apollon-WEB/video.m3u8?token=tnt3u76re30d2
-#EXTINF:-1 tvg-id="TVOpoja.al" status="online",TV Opoja (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVOpoja.al" status="error",TV Opoja (720p) [Not 24/7]
 http://ip.opoja.tv:1935/tvopoja/tvopoja/playlist.m3u8
 #EXTINF:-1 tvg-id="ZjarrTV.al" status="online",Zjarr Televizion (360p) [Not 24/7]
 http://edge01eu.ekranet.com/zjarrtv/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",Tring Novelas
+http://95.107.132.106/out/u/858_5.m3u8
 #EXTINF:-1 tvg-id="" status="online",ATD (1080p)
 http://46.99.146.236/0.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tring Smile
@@ -73,12 +75,6 @@ http://199.127.60.117:8081/live/tringtring/playlist.m3u8
 http://monamour.agency/ntv/livestream/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tring Family
 http://95.107.132.105/out/u/673_3.m3u8
-#EXTINF:-1 tvg-id="" status="online",Tring Classic
-http://95.107.132.106/out/u/842_5.m3u8
-#EXTINF:-1 tvg-id="" status="online",Tring Collection
-http://95.107.132.106/out/u/847_5.m3u8
-#EXTINF:-1 tvg-id="" status="online",Tring Novelas
-http://95.107.132.106/out/u/858_5.m3u8
 #EXTINF:-1 tvg-id="" status="online",Klan
 http://199.127.60.117:8081/live/klan/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Klan Plus
@@ -95,5 +91,9 @@ http://95.107.132.105/out/u/609_3.m3u8
 http://ott.iptvshqipott.com:8080/live/shqiponja/tv/236.m3u8
 #EXTINF:-1 tvg-id="" status="error",Tring Jolly
 http://95.107.132.105/out/u/463_3.m3u8
+#EXTINF:-1 tvg-id="" status="error",Tring Classic
+http://95.107.132.106/out/u/842_5.m3u8
+#EXTINF:-1 tvg-id="" status="error",Tring Collection
+http://95.107.132.106/out/u/847_5.m3u8
 #EXTINF:-1 tvg-id="" status="error",Bang Bang
 http://199.127.60.117:8081/live/bangbang/playlist.m3u8
