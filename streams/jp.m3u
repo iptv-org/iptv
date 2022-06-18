@@ -3,7 +3,7 @@
 http://cdn.us195.jpnettv.live:1935/jptv/janimax_720/playlist.m3u8
 #EXTINF:-1 tvg-id="Animax.jp" status="error",Animax Japan
 http://cdn.us195.jpnettv.live:1935/jptv/janimax_540/playlist.m3u8
-#EXTINF:-1 tvg-id="AnimaxAsia.sg" status="online",Animax Asia (Indonesian Subs) (576p)
+#EXTINF:-1 tvg-id="AnimaxAsia.sg" status="error",Animax Asia (Indonesian Subs) (576p)
 http://210.210.155.37/dr9445/h/h144/index.m3u8
 #EXTINF:-1 tvg-id="ATX.jp" status="online",AT-X (720p) [Not 24/7]
 https://sub2.neetball.net/live/neet.m3u8
@@ -32,28 +32,28 @@ https://hiroshima-tv-live.hls.wselive.stream.ne.jp/hiroshima-tv-live/live/playli
 #EXTINF:-1 tvg-id="JOAXDTV.jp" status="error",TV Tokyo (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00012/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="JOCXDTV.jp" status="online",Kansai TV
-http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_720/playlist.m3u8
-#EXTINF:-1 tvg-id="JOCXDTV.jp" status="online",Kansai TV
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_540/playlist.m3u8
-#EXTINF:-1 tvg-id="JOIXDTV.jp" status="online",YTV
-http://cdn.us195.jpnettv.live:1935/jptv/kansi_yomiuri_720/playlist.m3u8
+#EXTINF:-1 tvg-id="JOCXDTV.jp" status="error",Kansai TV
+http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JOIXDTV.jp" status="online",YTV
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_yomiuri_540/playlist.m3u8
-#EXTINF:-1 tvg-id="JORXDTV.jp" status="online",MBS
-http://cdn.us195.jpnettv.live:1935/jptv/kansi_mbs_720/playlist.m3u8
+#EXTINF:-1 tvg-id="JOIXDTV.jp" status="error",YTV
+http://cdn.us195.jpnettv.live:1935/jptv/kansi_yomiuri_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JORXDTV.jp" status="online",MBS
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_mbs_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JORXDTV.jp" status="online",TBS (540p) [Not 24/7]
 https://tbs1.mov3.co/hls/tbs.m3u8
+#EXTINF:-1 tvg-id="JORXDTV.jp" status="error",MBS
+http://cdn.us195.jpnettv.live:1935/jptv/kansi_mbs_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JOTXDTV.jp" status="online",TV Osaka
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_osaka_540/playlist.m3u8
-#EXTINF:-1 tvg-id="JOTXDTV.jp" status="online",TV Osaka
-http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_osaka_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JOTXDTV.jp" status="error",TV Tokyo (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00012/index.m3u8?type=jp
+#EXTINF:-1 tvg-id="JOTXDTV.jp" status="error",TV Osaka
+http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_osaka_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JOUHDTV.jp" status="online",SUN TV
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_sun_tv_540/playlist.m3u8
-#EXTINF:-1 tvg-id="JOUHDTV.jp" status="online",SUN TV
+#EXTINF:-1 tvg-id="JOUHDTV.jp" status="error",SUN TV
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_sun_tv_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JSports1.jp" status="error",J Sports 1 (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00042/index.m3u8?type=jp
@@ -85,9 +85,9 @@ https://aka-amd-njpwworld-hls-enlive.akamaized.net/hls/video/njpw_en/njpw_en_cha
 http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_720/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKBS1.jp" status="error",NHK BS1
 http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_540/playlist.m3u8
-#EXTINF:-1 tvg-id="NHKChinese.jp" status="timeout",NHK Chinese Vision (720p)
+#EXTINF:-1 tvg-id="NHKChinese.jp" status="online",NHK Chinese Vision (720p)
 https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8
-#EXTINF:-1 tvg-id="NHKChinese.jp",NHK Chinese Vision (720p)
+#EXTINF:-1 tvg-id="NHKChinese.jp" status="online",NHK Chinese Vision (720p)
 https://nhkw-zh-hlscomp.akamaized.net/ixxemlzk1vqvy44o/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKEducationalTV.jp" status="online",NHK E
 https://cdn.us195.jpnettv.live/jptv/kanto_nhk_edu_540/playlist.m3u8
@@ -129,10 +129,10 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://movie.mcas.jp/mcas/mx1_2/master.m3u8
 #EXTINF:-1 tvg-id="TokyoMX1.jp" status="online",Tokyo MX1 (720p)
 https://movie.mcas.jp/mcas/mx_live_2/master.m3u8
-#EXTINF:-1 tvg-id="TokyoMX1.jp" status="online",Tokyo MX1
-http://cdn.us195.jpnettv.live:1935/jptv/kanto_tokyo_mx1_540/playlist.m3u8
 #EXTINF:-1 tvg-id="TokyoMX1.jp" status="online",Tokyo MX1 (360p)
 https://movie.mcas.jp/mcas/smil:mx1_prod.smil/master.m3u8
+#EXTINF:-1 tvg-id="TokyoMX1.jp" status="error",Tokyo MX1
+http://cdn.us195.jpnettv.live:1935/jptv/kanto_tokyo_mx1_540/playlist.m3u8
 #EXTINF:-1 tvg-id="TokyoMX1.jp" status="error",Tokyo MX1
 http://cdn.us195.jpnettv.live:1935/jptv/kanto_tokyo_mx1_720/playlist.m3u8
 #EXTINF:-1 tvg-id="TokyoMX2.jp" status="online",Tokyo MX2 (720p)
@@ -174,10 +174,6 @@ http://cdn.us195.jpnettv.live:1935/jptv/wowprime_720/playlist.m3u8
 http://movie.mcas.jp/mcas/wn1_2/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NHK华语视界 (360p)
 https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/zh/725580/livecom_zh.m3u8
-#EXTINF:-1 tvg-id="" status="online",ABC
-http://cdn.us195.jpnettv.live:1935/jptv/kansi_abc_asahi_720/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",NHK G Kansai
-http://cdn.us195.jpnettv.live:1935/jptv/kansi_nhk_g_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",NHK General Kanto
 http://cdn.us195.jpnettv.live:1935/jptv/kanto_nhk_g_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ABC
@@ -210,6 +206,10 @@ http://cdn.us195.jpnettv.live:1935/jptv/bspremium_540/playlist.m3u8
 http://cdn.us195.jpnettv.live:1935/jptv/cinefil_wowow_540/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Nihon Eiga TV
 http://cdn.us195.jpnettv.live:1935/jptv/igasennmonn_540/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",ABC
+http://cdn.us195.jpnettv.live:1935/jptv/kansi_abc_asahi_720/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",NHK G Kansai
+http://cdn.us195.jpnettv.live:1935/jptv/kansi_nhk_g_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Star Channel 1
 http://cdn.us195.jpnettv.live:1935/jptv/starch1_540/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Star Channel 2
