@@ -87,11 +87,11 @@ https://59d7d6f47d7fc.streamlock.net/icarotv/icarotv/playlist.m3u8
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ki)/index.m3u8
 #EXTINF:-1 tvg-id="Italia1.it" status="blocked",Italia 1 [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8
-#EXTINF:-1 tvg-id="Italia2.it" status="online",Italia 2 (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Italia2.it" status="blocked",Italia 2 (480p) [Geo-blocked]
 https://59d7d6f47d7fc.streamlock.net/italia2/italia2/playlist.m3u8
 #EXTINF:-1 tvg-id="Italia2.it" status="blocked",Italia 2 [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(i2)/index.m3u8
-#EXTINF:-1 tvg-id="Italia2TV.it" status="online",Italia 2 TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Italia2TV.it" status="blocked",Italia 2 TV (480p) [Geo-blocked]
 http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8
 #EXTINF:-1 tvg-id="Italia7.it" status="timeout",Italia 7 (576p)
 http://151.0.207.99:1935/italia7/italia7/playlist.m3u8
@@ -428,6 +428,8 @@ http://212.43.97.35:1935/winechannel/winechannel/playlist.m3u8
 https://yviistreamer.kernel.online/hls/yviitv.m3u8
 #EXTINF:-1 tvg-id="" status="online",Gold 78 (1080p)
 https://stream2.xdevel.com/video1s86-22/stream/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="" status="online",telePAVIA (720p)
+http://wms.shared.streamshow.it/telepavia/mp4:telepavia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tele Pavia (720p)
 http://wms.shared.streamshow.it/telepavia/telepavia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",telePAVIA (720p)
@@ -455,9 +457,9 @@ https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Radio Radicale TV (240p) [Not 24/7]
 https://video-ar.radioradicale.it/diretta/padtv2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
-https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
 https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
+https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",R 101 Italia IT (576p)
 https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(er)/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",radionorba TV (404p)
@@ -478,8 +480,6 @@ http://halowtv.online:8080/HalowTV/FSyzHfEhvb/139
 http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
 #EXTINF:-1 tvg-id="" status="error",Radio 24 (1080p) [Not 24/7]
 http://radio24-lh.akamaihd.net/i/radio24video_1@379914/master.m3u8
-#EXTINF:-1 tvg-id="" status="error",telePAVIA (720p)
-http://wms.shared.streamshow.it/telepavia/mp4:telepavia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Video Brescia TV (720p) [Not 24/7]
 http://wms.shared.streamshow.it/videobrescia/videobrescia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",DeeJay TV (360p)
