@@ -49,9 +49,9 @@ http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/thematv/politiek24
 https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/visualradio/index.m3u8
 #EXTINF:-1 tvg-id="OmroepBrabantTV.nl" status="online",Omroep Brabant (1080p)
 https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/tv/index.m3u8
-#EXTINF:-1 tvg-id="OmroepCentraalTV.nl" status="timeout",Omroep Centraal TV (480p)
+#EXTINF:-1 tvg-id="OmroepCentraalTV.nl" status="error",Omroep Centraal TV (480p)
 https://ms7.mx-cd.net/tv/208-1258878/Omroep_Centraal_GB.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="OmroepFlevolandTV.nl" status="online",Omroep Flevoland (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="OmroepFlevolandTV.nl" status="error",Omroep Flevoland (720p) [Not 24/7]
 https://d5ms27yy6exnf.cloudfront.net/live/omroepflevoland/tv/index.m3u8
 #EXTINF:-1 tvg-id="OmroepHulstTV.nl" status="error",Omroep Hulst TV (720p) [Not 24/7]
 https://stream.iconbroadcastgroup.com:1443/OH-Playout/smil:OH-Playout.smil/playlist.m3u8
@@ -132,9 +132,9 @@ https://ms7.mx-cd.net/dtv-10/105-475831/RTV_Slingeland.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVUtrecht.nl" status="online",RTV Utrecht (1080p)
 https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/rtvutrecht/index.m3u8
 #EXTINF:-1 tvg-id="RTVWesterwolde.nl" status="error",RTV Westerwolde (432p)
-http://59132e529e3d1.streamlock.net:1935/westerwolde/westerwolde/playlist.m3u8
-#EXTINF:-1 tvg-id="RTVWesterwolde.nl" status="error",RTV Westerwolde (432p)
 https://59132e529e3d1.streamlock.net/westerwolde/westerwolde/playlist.m3u8
+#EXTINF:-1 tvg-id="RTVWesterwolde.nl",RTV Westerwolde (432p)
+http://59132e529e3d1.streamlock.net:1935/westerwolde/westerwolde/playlist.m3u8
 #EXTINF:-1 tvg-id="Salto4.nl" status="online",Salto 4 (1080p)
 https://salto-streams.nl/hls/sotv2_high.m3u8
 #EXTINF:-1 tvg-id="SaltoADE.nl" status="online",Salto ADE (1080p)
