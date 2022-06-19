@@ -47,10 +47,10 @@ http://edge01eu.ekranet.com/scantv/index.m3u8
 http://live.syri.tv:6969/live/syriblue/hd/23.ts
 #EXTINF:-1 tvg-id="TopNews.al" status="online",Top News (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x6inuzo
-#EXTINF:-1 tvg-id="TV7Albania.al" status="online",TV 7 Albania (540p) [Not 24/7]
-http://media.az-mediaserver.com:1935/7064/7064/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Albania.al" status="online",7 HD (540p) [Not 24/7]
 https://5d00db0e0fcd5.streamlock.net/7064/7064/playlist.m3u8
+#EXTINF:-1 tvg-id="TV7Albania.al",TV 7 Albania (540p) [Not 24/7]
+http://media.az-mediaserver.com:1935/7064/7064/playlist.m3u8
 #EXTINF:-1 tvg-id="TVApollon.al" status="online",TV Apollon (720p)
 https://live.apollon.tv/Apollon-WEB/video.m3u8?token=tnt3u76re30d2
 #EXTINF:-1 tvg-id="TVOpoja.al" status="online",TV Opoja (720p) [Not 24/7]
@@ -67,6 +67,10 @@ http://95.107.132.105/out/u/573_1.m3u8
 http://95.107.132.105/out/u/683_1.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tring Super
 http://95.107.132.105/out/u/689_3.m3u8
+#EXTINF:-1 tvg-id="" status="online",Tring Tring
+http://199.127.60.117:8081/live/tringtring/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",NTV
+http://monamour.agency/ntv/livestream/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tring Family
 http://95.107.132.105/out/u/673_3.m3u8
 #EXTINF:-1 tvg-id="" status="online",Klan
@@ -79,8 +83,6 @@ http://199.127.60.117:8081/live/tring3plus/playlist.m3u8
 http://monamour.agency/johaniter007web/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tring Info
 http://95.107.132.106/out/u/419_1.m3u8
-#EXTINF:-1 tvg-id="" status="online",NTV
-http://monamour.agency/ntv/livestream/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tring International
 http://95.107.132.105/out/u/609_3.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Shqiponja (720p) [Not 24/7]
@@ -95,5 +97,3 @@ http://95.107.132.106/out/u/847_5.m3u8
 http://95.107.132.106/out/u/858_5.m3u8
 #EXTINF:-1 tvg-id="" status="error",Bang Bang
 http://199.127.60.117:8081/live/bangbang/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Tring Tring
-http://199.127.60.117:8081/live/tringtring/playlist.m3u8
