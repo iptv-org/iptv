@@ -19,15 +19,15 @@ https://raw.githubusercontent.com/MachineSystems/archived_m3u8/main/america_hls.
 http://186.0.233.76:1935/Argentinisima/smil:argentinisima.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="C5N.ar" status="online",Canal 5 Noticias (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/c5n/live
-#EXTINF:-1 tvg-id="Canal2HD.ar" status="online",Canal 2 Jujuy (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal2HD.ar",Canal 2 Jujuy (720p) [Not 24/7]
 http://api.new.livestream.com/accounts/679322/events/3782013/live.m3u8
 #EXTINF:-1 tvg-id="Canal3PinamarHD.ar" status="online",CN3 Pinamar (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/canal3/canal3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal3PinamarHD.ar" status="online",Canal 3 Pinamar (360p) [Not 24/7]
 http://www.intelintec.com.ar:9090/hls/canal3pinamar.m3u8
-#EXTINF:-1 tvg-id="Canal3Rosario.ar" status="error",Canal 3 Rosario (704p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Canal3Rosario.ar" status="online",Canal 3 Rosario (704p) [Geo-blocked]
 https://59d52c5a5ce5e.streamlock.net:4443/canal3rosario/ngrp:canal3rosario_all/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal4Balcarce.ar" status="timeout",Canal 4 Balcarce (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal4Balcarce.ar" status="error",Canal 4 Balcarce (480p) [Not 24/7]
 http://inliveserver.com:1935/8550/8550/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4Jujuy.ar" status="online",Canal 4 Jujuy (720p)
 http://190.52.32.13:1935/canal4/smil:manifest.smil/playlist.m3u8
@@ -64,12 +64,12 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canalccor
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g5.proy-hor.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8?sense=true
-#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
-https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="iPhone",Canal Luz (1080p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
+https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalProvincial.ar" status="error",Canal Provincial (San Miguel) (360p) [Not 24/7]
 http://www.trimi.com.ar/provincial/streaming/mystream.m3u8
 #EXTINF:-1 tvg-id="CanalTDC.ar" status="online",CANAL TDC (1080p) [Not 24/7]
@@ -134,7 +134,7 @@ http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
 https://wowza.telpin.com.ar:1935/telpintv/smil:ttv.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TelpinTVCanal2HD.ar" status="online",Telpin TV (1080p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/telpintv/ttv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="TierramiaTV.ar" status="online",Tierra Mía TV (720p)
+#EXTINF:-1 tvg-id="TierramiaTV.ar" status="error",Tierra Mía TV (720p)
 http://live-edge01.telecentro.net.ar/live/smil:trm.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Toonizaki.ar" status="error",Toonizaki (720p) [Not 24/7]
 https://live.admefy.com/live/default/great_salmon_9bd9d.m3u8
