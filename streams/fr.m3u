@@ -10,7 +10,7 @@ https://live-antenne-reunion.zeop.tv/live/c3eds/antreunihd/hls_fta/antreunihd.m3
 #EXTINF:-1 tvg-id="ARTEDeutsch.de" status="blocked",Arte Deutsch [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 #EXTINF:-1 tvg-id="BeurTV.fr" status="online",Beur TV [Geo-blocked]
-https://cdn02.hta.dz/abr_htatv/Beur_TV/htatv/Beur_TV_720p/chunks.m3u8
+https://cdn02.hta.dz/abr_htatv/Beur_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="BFMBusiness.fr" status="error",BFM Business (480p)
 https://bfmbusinesshds-lh.akamaihd.net/i/BFMBUSINESS_ESYTLS@664128/master.m3u8
 #EXTINF:-1 tvg-id="BFMGrandLille.fr" status="online",BFM Grand Lille (720p)
@@ -25,6 +25,8 @@ https://bfmparishdslive-lh.akamaihd.net/i/BFMPARIS_ESYTLS@429747/master.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xgz4t1
 #EXTINF:-1 tvg-id="BIPTV.fr" status="online",BIP TV (480p) [Not 24/7]
 http://biptv.tv/live/biptvstream_orig/index.m3u8
+#EXTINF:-1 tvg-id="C8.fr" status="online",C8
+https://s2.tntendirect.com/d8/live/playlist.m3u8
 #EXTINF:-1 tvg-id="CentralTV.fr" status="online",Central TV (614p) [Not 24/7]
 http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8
 #EXTINF:-1 tvg-id="Cherie25.fr" status="error",Chérie 25 (360p)
@@ -34,7 +36,7 @@ https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ElHeddafTV.fr" status="online",El Heddaf TV [Geo-blocked]
-https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/htatv/EL_HEDDAF_TV_720p/chunks.m3u8
+https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="EMCITV.fr" status="online",EMCI TV (1080p)
 https://emci-fr-hls.akamaized.net/hls/live/2007265/emcifrhls/index.m3u8
 #EXTINF:-1 tvg-id="EMCITV.fr" status="online",EMCI TV Montreal (1080p)
@@ -51,7 +53,7 @@ https://fash1043.cloudycdn.services/slive/ftv_midnite_secrets_adaptive.smil/play
 https://fash2043.cloudycdn.services/slive/ftv_ftv_gmt_-5_qko_43090_default_1225_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVParis.fr" status="online",Fashion TV Paris (144p)
 https://fash1043.cloudycdn.services/slive/ftv_paris_adaptive.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="FashionTVParis.fr" status="error",Fashion TV Paris-Mumbai (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="FashionTVParis.fr",Fashion TV Paris-Mumbai (1080p) [Not 24/7]
 https://fash1043.cloudycdn.services/slive/ftv_ftv_asia_gmt_vmf_43163_default_1298_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVPG13.fr" status="online",Fashion TV PG13 (240p)
 https://fash1043.cloudycdn.services/slive/ftv_pg13_adaptive.smil/playlist.m3u8
@@ -74,7 +76,7 @@ http://edge9.iptvnetwork.net/live/france2/playlist.m3u8
 http://edge9.iptvnetwork.net/live/france3/playlist.m3u8
 #EXTINF:-1 tvg-id="France4.fr" status="error",France 4 (720p) [Geo-blocked]
 http://edge9.iptvnetwork.net/live/france4/playlist.m3u8
-#EXTINF:-1 tvg-id="France5.fr" status="error",France 5 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="France5.fr",France 5 (720p) [Not 24/7]
 http://edge9.iptvnetwork.net/live/france5/playlist.m3u8
 #EXTINF:-1 tvg-id="France24Arabic.fr" status="online",France 24 Arabic (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Arabic/live
@@ -110,13 +112,13 @@ https://livehdkto-lh.akamaihd.net/i/LiveStream_1@178944/master.m3u8
 http://live.lachainenormande.fr/live/lcn/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="LCI.fr" status="error",LCI (720p) [Not 24/7]
 https://lci-hls-live-ssl.tf1.fr/lci/1/hls/live_2328.m3u8
-#EXTINF:-1 tvg-id="LCP.fr" status="error",LCP (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xji3qy
+#EXTINF:-1 tvg-id="LCP.fr" status="online",LCP (1080p) [Not 24/7]
+https://iptv.azlinux.fr/?url=https://dailymotion.com/video/xji3qy
 #EXTINF:-1 tvg-id="M6.fr" status="online",M6 (1080p)
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="error",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
-#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -134,7 +136,7 @@ https://panel.streamparis.fr:3743/stream/play.m3u8
 http://51.210.199.10/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaCinema.fr" status="online",Persiana Cinema (720p)
 http://51.210.199.15/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaClassic.fr" status="online",Persiana Classic (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PersianaClassic.fr" status="error",Persiana Classic (720p) [Not 24/7]
 http://51.210.199.26/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaComedy.fr" status="online",Persiana Comedy (720p)
 http://51.210.199.27/hls/stream.m3u8
@@ -212,8 +214,6 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/vid
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
 #EXTINF:-1 tvg-id="" status="online",Euronews Hungary (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
-#EXTINF:-1 tvg-id="" status="online",Euronews по-русски (720p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
 #EXTINF:-1 tvg-id="" status="online",Euronews en Español (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/euronewses/live
 #EXTINF:-1 tvg-id="" status="online",Euronews English (720p)
@@ -247,3 +247,5 @@ http://185.234.217.27:8002/play/a02f/index.m3u8
 https://streamer01.myvideoplace.tv/streamer02/hls/MATL_VLOC_PAD_100919_medium/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",TV5Monde Info (1080p)
 https://tv5infohls-i.akamaihd.net/hls/live/631613/tv5infohls/index.m3u8
+#EXTINF:-1 tvg-id="",Euronews по-русски (720p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
