@@ -3,7 +3,7 @@
 https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8
 #EXTINF:-1 tvg-id="123tv.de" status="online",1-2-3 TV (270p)
 http://123tv-mx1.flex-cdn.net/index.m3u8
-#EXTINF:-1 tvg-id="AlexBerlin.de" status="error",Alex Berlin (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlexBerlin.de" status="online",Alex Berlin (1080p) [Not 24/7]
 https://alex-stream.rosebud-media.de/live/alexlivetv40.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AnixeHDSerie.de" status="online",Anixe HD Serie (360p)
 https://ma.anixa.tv/clips/stream/anixehd/index.m3u8
@@ -319,7 +319,7 @@ https://jola.live:16200/tesastv.m3u8
 https://5889e7d0d6e28.streamlock.net/tide-live/smil:livestream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="tiviTURK.de" status="online",tiviTÜRK (720p) [Not 24/7]
 https://stream.tiviturk.de/live/tiviturk.m3u8
-#EXTINF:-1 tvg-id="TV38SudostNiedersachen.de" status="online",TV38 Südost-Niedersachen (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV38SudostNiedersachen.de" status="error",TV38 Südost-Niedersachen (480p) [Not 24/7]
 http://62.113.221.3/tv38-live/_definst_/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAHD.de" status="online",TVA (1080p) [Not 24/7]
 https://tvaktuellr.iptv-playoutcenter.de/tvaktuellr/tvaktuellr.stream_1/playlist.m3u8
@@ -385,10 +385,12 @@ https://tvoberfranken.iptv-playoutcenter.de/tvoberfranken/tvoberfranken.stream_1
 https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="" status="online",BR Fernsehen Süd (720p)
 https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",NDR Fernsehen (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_fs@430230/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",NDR Hamburg (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR International (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_int@430236/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Niedersachsen (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_nds@430233/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Schleswig-Holstein (720p) [Geo-blocked]
@@ -411,8 +413,6 @@ https://ndrevent-lh.akamaihd.net/i/ndrevent_1@409066/master.m3u8
 https://ndrevent-lh.akamaihd.net/i/ndrevent_2@429805/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Motorvision (576p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h09/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Motorvision (576p)
-http://210.210.155.37/uq2663/h/h09/index.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s26/index.m3u8
@@ -434,10 +434,8 @@ https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",NDR Schleswig-Holstein (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NDR Fernsehen (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_fs@430230/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NDR Hamburg (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",WDR Koeln (720p)
 https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",ÇİRA TV (480p) [Not 24/7]
@@ -454,6 +452,8 @@ http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/139.m3u8
 http://176.10.117.18:8000/play/a00f/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",ARTI TV (1080p) [Not 24/7]
 http://176.10.117.18:8000/play/a002/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Motorvision (576p)
+http://210.210.155.37/uq2663/h/h09/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",BR Fernsehen Süd (720p) [Geo-blocked]
 http://livestreams.br.de/i/bfssued_germany@119890/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",SÃ¼dtirol TV (720p)
