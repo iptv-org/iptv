@@ -22,9 +22,9 @@ https://e-e.cyou:8222/atticatv/atticatv/playlist.m3u8
 #EXTINF:-1 tvg-id="BananaTV.gr" status="error",Banana TV (360p)
 https://web.onair-radio.eu/bananachannel/bananachannel/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTV.gr" status="online",Baraza TV (1080p)
-https://eco.streams.ovh/BarazaTV/BarazarazaTV/BarazaTV/playlist.m3u8
-#EXTINF:-1 tvg-id="BarazaTV.gr" status="online",Baraza TV (1080p)
 https://eco.streams.ovh/BarazaTV/BarazaTV/playlist.m3u8
+#EXTINF:-1 tvg-id="BarazaTV.gr" status="online",Baraza TV (1080p)
+https://eco.streams.ovh/BarazaTV/BarazarazaTV/BarazaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTV.gr" status="timeout",Baraza TV (1080p) [Geo-blocked]
 https://panik.cast-control.eu:1936/Admin_1/Admin_1/playlist.m3u8
 #EXTINF:-1 tvg-id="BCI24News.gr" status="online",BCI 24 News (720p)
@@ -79,7 +79,7 @@ http://wpso.com:1936/hls/wzra.m3u8
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
-#EXTINF:-1 tvg-id="Galaxy.gr" status="blocked",Galaxy (432p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Galaxy.gr" status="online",Galaxy (432p) [Geo-blocked]
 https://channel.streams.ovh:1936/galaxygr-1/galaxygr-1/playlist.m3u8
 #EXTINF:-1 tvg-id="GreekCinema.gr" status="error",Greek Cinema (720p)
 https://vdo.alphaserver.gr:3613/stream/play.m3u8
@@ -155,7 +155,7 @@ http://web.onair-radio.eu:1935/Alpha-Host/Alpha-Host/playlist.m3u8
 https://www.hellasnet.tv/rest.live.hn/ws.plp/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioEpistrofi.gr" status="error",Radio Epistrofi (540p) [Geo-blocked]
 https://s1.cystream.net/live/epistrofi/playlist.m3u8
-#EXTINF:-1 tvg-id="SamiakiTV.gr",Samiaki TV (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="SamiakiTV.gr" status="online",Samiaki TV (540p) [Not 24/7]
 http://live.cast-control.eu:1935/samiaki/samiaki/playlist.m3u8
 #EXTINF:-1 tvg-id="SkaiBUP.gr" status="timeout",Skai BUP
 http://78.83.87.222:9999/play/a016/index.m3u8
@@ -167,7 +167,7 @@ https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8
 https://til.pp.ua:3424/live/superblive.m3u8
 #EXTINF:-1 tvg-id="Tilemousiki.gr" status="online",Tilemousiki (480p) [Not 24/7]
 http://wpso.com:1936/hls/music1.m3u8
-#EXTINF:-1 tvg-id="TV100.gr" status="online",TV 100 (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV100.gr" status="error",TV 100 (576p) [Not 24/7]
 https://live.fm100.gr/hls/tv100/index.m3u8
 #EXTINF:-1 tvg-id="TVCreta.gr" status="online",Creta (540p) [Not 24/7]
 http://live.streams.ovh:1935/tvcreta/tvcreta/playlist.m3u8
@@ -175,7 +175,7 @@ http://live.streams.ovh:1935/tvcreta/tvcreta/playlist.m3u8
 https://live.streams.ovh/tvcreta/tvcreta/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVFilopoli.gr" status="online",TV Filopoli (360p) [Not 24/7]
 http://live.streams.ovh:1935/tvfilopoli/tvfilopoli/playlist.m3u8
-#EXTINF:-1 tvg-id="TVNotos.gr" status="online",TV Notos (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVNotos.gr" status="error",TV Notos (720p) [Not 24/7]
 https://eco.streams.ovh/notos/notos/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRodopi.gr" status="error",TV Rodopi (720p)
 https://video.connect4.gr/live/tvrodopi/playlist.m3u8
@@ -191,6 +191,8 @@ https://zouglalive-lh.akamaihd.net/i/zouglalive_1@340792/master.m3u8
 http://167.86.89.20:5080/LiveApp/streams/064918158666216168224216.m3u8
 #EXTINF:-1 tvg-id="" status="online",Zerouno TV (720p)
 http://5db313b643fd8.streamlock.net:1935/ZerounoTV/ZerounoTV/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",ERT News 2 (720p) [Geo-blocked]
+https://ert-live-bcbs15228.siliconweb.com/media/ert_news_2/ert_news_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Skai (720p)
 https://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Skai (720p)
@@ -227,5 +229,3 @@ https://antennaamdnoenc.akamaized.net/ant1_akamai/abr/playlist.m3u8
 https://vdo.alphaserver.gr:3203/stream/play.m3u8
 #EXTINF:-1 tvg-id="" status="error",Super Channel (300p)
 https://vdo.alphaserver.gr:3587/stream/play.m3u8
-#EXTINF:-1 tvg-id="",ERT News 2 (720p) [Geo-blocked]
-https://ert-live-bcbs15228.siliconweb.com/media/ert_news_2/ert_news_2.m3u8
