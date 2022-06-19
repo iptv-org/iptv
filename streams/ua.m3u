@@ -58,7 +58,7 @@ http://95.67.47.114/hls/hdfashion_ua.m3u8
 http://95.67.47.115/hls/hdfashion_ua.m3u8
 #EXTINF:-1 tvg-id="HersonPlyus.ua" status="blocked",Херсон Плюс (576p)
 http://46.175.163.130/ks_plus/index.m3u8
-#EXTINF:-1 tvg-id="IDFashion.ua" status="error",ID Fashion (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="IDFashion.ua" status="online",ID Fashion (1080p) [Not 24/7]
 https://idfashion.cdn-02.cosmonova.net.ua/hls/idfashion_ua.m3u8
 #EXTINF:-1 tvg-id="Inshiy.ua" status="error",Інший (720p)
 https://cdn1.live-tv.od.ua:8083/ktkod/ktkod/playlist.m3u8
@@ -150,13 +150,13 @@ https://hls.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
 https://rtsp.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://rtsp.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
-#EXTINF:-1 tvg-id="TV7Plus.ua" status="timeout",TV7+ (Хмельницький) (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV7Plus.ua" status="error",TV7+ (Хмельницький) (576p) [Not 24/7]
 https://tv7plus.com/hls/tv7.m3u8
 #EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
 http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
 http://rtsp.cdn.ua/tva.ua_live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVDom.ua" status="error",ТВ Дом
+#EXTINF:-1 tvg-id="TVDom.ua" status="timeout",ТВ Дом
 http://46.149.48.21:1234
 #EXTINF:-1 tvg-id="UAOdesa.ua" status="online",UA: Одеса (384p) [Not 24/7]
 https://cdn10.live-tv.od.ua:8083/odtrkod/odtrkod-abr/playlist.m3u8
@@ -195,8 +195,6 @@ http://194.50.51.34/playlist.m3u8
 http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
-#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
-https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
 http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
@@ -241,7 +239,9 @@ http://93.78.206.172:8080/stream3/stream.m3u8
 http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ОТВ (Днепр) (576p)
 http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",ЯТБ (576p)
+#EXTINF:-1 tvg-id="" status="timeout",I-UA.tv (1080p)
+https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
+#EXTINF:-1 tvg-id="" status="error",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8

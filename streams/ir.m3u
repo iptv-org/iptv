@@ -60,7 +60,7 @@ https://stream-cdn.gemonline.tv/live/gemkids/index.m3u8
 #EXTINF:-1 tvg-id="GEMLatino.ir" status="error",GEM Latino (540p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gem_latino
 https://d2e40kvaojifd6.cloudfront.net/stream/gem_latino/playlist.m3u8
-#EXTINF:-1 tvg-id="GEMLife.ir" status="error",GEM Life (576p)
+#EXTINF:-1 tvg-id="GEMLife.ir",GEM Life (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gem_life
 https://stream-cdn.gemonline.tv/live/gemlife/index.m3u8
 #EXTINF:-1 tvg-id="GEMNature.ir" status="error",GEM Nature (360p)
@@ -99,7 +99,7 @@ http://159.69.58.154/itoon/master.m3u8
 http://cdn1.live.irib.ir:1935/epg-live/smil:jahanbin/playlist.m3u8
 #EXTINF:-1 tvg-id="KalemehTV.ir" status="online",Kalemeh TV (1080p) [Not 24/7]
 https://live.kalemehtv.tv/live/ngrp:kalemeh_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MarjaeyatTVPersian.ir" status="online",Marjaeyat (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MarjaeyatTVPersian.ir",Marjaeyat (1080p) [Not 24/7]
 https://livefa.marjaeyattv.com/mtv_fa/playlist.m3u8
 #EXTINF:-1 tvg-id="Maxx.ir" status="error",GEM Maxx (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=maxx
@@ -161,7 +161,7 @@ http://51.210.199.30/hls/stream.m3u8
 http://51.210.199.3/hls/stream.m3u8
 #EXTINF:-1 tvg-id="SL2.ir" status="online",SL 2 (720p)
 http://51.210.199.2/hls/stream.m3u8
-#EXTINF:-1 tvg-id="SNNTV.ir" status="online",SNN TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SNNTV.ir" status="error",SNN TV (720p) [Not 24/7]
 https://live.snn.ir/hls/snn/index.m3u8
 #EXTINF:-1 tvg-id="T2TV.ir" status="online",T2 TV (720p) [Not 24/7]
 http://208.113.204.104:8123/live/tapesh-live-stream/index.m3u8
@@ -179,8 +179,6 @@ https://hls.yourtime.live/hls/stream.m3u8
 http://cdn1.live.irib.ir:1935/channel-live/smil:varzesh/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",VARZESH (1080p)
 http://cdn1.live.irib.ir:1935/live-channels/smil:varzesh/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Persian Bazar (720p) [Not 24/7]
-https://stream.persiantv1.com/ptv1/playlist1/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",HodHod TV (720p)
 http://51.210.199.12/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="online",Diyar TV (720p) [Not 24/7]
@@ -211,14 +209,14 @@ https://live.presstv.ir/live/smil:live.smil/playlist.m3u8
 http://cdn1.live.irib.ir:1935/epg-live/smil:qazvin/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Al Kawthar TV (240p) [Not 24/7]
 http://178.252.143.156:1935/live/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",4U TV (720p) [Not 24/7]
+http://116.202.255.113:1935/4utv/livehd/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",4U TV (480p) [Not 24/7]
+http://116.202.255.113:1935/4utv/livesd/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Nour (720p) [Not 24/7]
 https://cdn.videoevent.live:19360/elfaro4/elfaro4.m3u8
 #EXTINF:-1 tvg-id="" status="error",Mono TV (720p)
 http://51.210.227.137/hls/stream.m3u8
-#EXTINF:-1 tvg-id="" status="error",4U TV (720p) [Not 24/7]
-http://116.202.255.113:1935/4utv/livehd/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",4U TV (480p) [Not 24/7]
-http://116.202.255.113:1935/4utv/livesd/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Ekran Movie (720p)
 http://159.69.58.154/ekran/ekrantv.m3u8
 #EXTINF:-1 tvg-id="" status="error",Film 1 (720p)
@@ -241,3 +239,5 @@ https://ir13.livekadeh.com/hls2/valiasr.m3u8
 https://live.livestreamtv.ca/canadastartv/smil:canadastartv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Radio Farda (576p) [Not 24/7]
 https://rfe-lh.akamaihd.net/i/rfe_tvmc1@383622/master.m3u8
+#EXTINF:-1 tvg-id="" status="error",Persian Bazar (720p) [Not 24/7]
+https://stream.persiantv1.com/ptv1/playlist1/index.m3u8
