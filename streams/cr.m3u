@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="88Stereo.cr" status="online",88 Stereo (720p) [Not 24/7]
 http://k3.usastreams.com/CableLatino/88stereo/playlist.m3u8
-#EXTINF:-1 tvg-id="AgrotendenciaTV.cr" status="timeout",AgrotendenciaTV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="AgrotendenciaTV.cr" status="online",AgrotendenciaTV (480p) [Not 24/7]
 https://inliveserver.com:1936/15506/15506/playlist.m3u8
 #EXTINF:-1 tvg-id="AnexionTV.cr" status="online",Anexión TV (720p) [Not 24/7]
 http://rtmp.info:8081/anexiontv/envivo/index.m3u8
@@ -27,7 +27,7 @@ https://rtmp.info/canal38/envivo/chunks.m3u8
 https://rtmp.info/canal38/envivo/playlist.m3u8
 #EXTINF:-1 tvg-id="ColosalTV.cr" status="online",Colosal TV (720p) [Not 24/7]
 http://tv.ticosmedia.com:1935/COLOSAL/COLOSAL/playlist.m3u8
-#EXTINF:-1 tvg-id="EJTV.cr" status="online",Enlace Juvenil (EJTV) (288p) [Not 24/7]
+#EXTINF:-1 tvg-id="EJTV.cr" status="error",Enlace Juvenil (EJTV) (288p) [Not 24/7]
 https://api.new.livestream.com/accounts/ejtvla/events/2294538/live.m3u8
 #EXTINF:-1 tvg-id="EnlaceTV.cr" status="online",EnlaceTV (720p) [Not 24/7]
 https://v4.tustreaming.cl/enlacebpbtv/index.m3u8
@@ -47,15 +47,15 @@ http://163.178.170.127:1935/quinceucr/live.stream_720p/playlist.m3u8
 http://tvretropalmares.com:8090/hls/envivo.m3u8
 #EXTINF:-1 tvg-id="SMOTV.cr" status="timeout",SMO TV
 http://186.15.50.30:8080/hls/smotv.m3u8
-#EXTINF:-1 tvg-id="TeleredTelevision.cr" status="online",Telered Television (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleredTelevision.cr" status="blocked",Telered Television (720p) [Not 24/7]
 http://k4.usastreams.com/ARBtv/teleplus/playlist.m3u8
 #EXTINF:-1 tvg-id="Telesistema.cr" status="online",Telesistema (486p)
 https://59ef525c24caa.streamlock.net/ARBtv/ARBtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleSURCostaRica.cr" status="online",TeleSUR Costa Rica (720p) [Not 24/7]
-http://k3.usastreams.com/telesur/telesur/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleSURCostaRica.cr" status="online",TeleSUR Costa Rica (720p) [Not 24/7]
 https://59ef525c24caa.streamlock.net/telesur/telesur/playlist.m3u8
-#EXTINF:-1 tvg-id="Teletica7.cr" status="online",Teletica 7 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleSURCostaRica.cr" status="error",TeleSUR Costa Rica (720p) [Not 24/7]
+http://k3.usastreams.com/telesur/telesur/playlist.m3u8
+#EXTINF:-1 tvg-id="Teletica7.cr" status="error",Teletica 7 (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x29e3wg
 #EXTINF:-1 tvg-id="TeleUno.cr" status="online",Tele Uno (720p) [Not 24/7]
 http://tv.teleunotv.cr:1935/TVUNO/TVUNO/playlist.m3u8
