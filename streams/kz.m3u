@@ -1,9 +1,11 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="AbaiTV.kz" status="online",Abai TV
+https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8
 #EXTINF:-1 tvg-id="AtamekenBusiness.kz" status="online",Atameken Business (1080p) [Not 24/7]
 http://live-atameken.cdnvideo.ru/atameken/atameken.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="AtamekenBusiness.kz" status="online",Atameken Business (576p) [Not 24/7]
 https://sc.id-tv.kz/Atameken.m3u8
-#EXTINF:-1 tvg-id="CaspianNews.kz" status="online",Caspian News (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="CaspianNews.kz" status="blocked",Caspian News (576p) [Not 24/7]
 https://sc.id-tv.kz/CaspianNews.m3u8
 #EXTINF:-1 tvg-id="DombyraTV.kz" status="error",Dombyra TV (576p) [Not 24/7]
 https://sc.id-tv.kz/Dombyra.m3u8
@@ -21,12 +23,16 @@ http://serv30.vintera.tv:8081/habar/habar24/playlist.m3u8
 https://live-24kz.cdnvideo.ru/24kz/24kz.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="KTK.kz" status="online",КТК (360p) [Not 24/7]
 http://89.218.30.37/ktklive/live.hq/playlist.m3u8
-#EXTINF:-1 tvg-id="KTK.kz" status="timeout",КТК (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="KTK.kz" status="blocked",КТК (576p) [Not 24/7]
 https://sc.id-tv.kz/KTK.m3u8
 #EXTINF:-1 tvg-id="MTRK.kz" status="online",МТРК (576p) [Not 24/7]
 https://tvcdn01.oktv.kz/tv/mtrk/playlist.m3u8
 #EXTINF:-1 tvg-id="Novoetelevidenie.kz" status="online",Новое телевидение (576p) [Not 24/7]
 http://serv25.vintera.tv:8081/novoetv/nov_tv/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Qazaqstan TV International
+https://qazaqstantv-stream.qazcdn.com/international/international/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Balapan TV
+https://balapantv-stream.qazcdn.com/balapantv/balapantv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Алматы (720p) [Not 24/7]
 http://live-almatytv.cdnvideo.ru/almatytv/almatytv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",31 канал (576p) [Not 24/7]
@@ -35,7 +41,9 @@ https://sc.id-tv.kz/31Kanal.m3u8
 https://sc.id-tv.kz/Almaty.m3u8
 #EXTINF:-1 tvg-id="" status="online",Астана (576p) [Not 24/7]
 https://sc.id-tv.kz/Astana.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",7 канал (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",Qazaqstan TV [Geo-blocked]
+https://qazaqstantv-stream.qazcdn.com/qazaqstantv/qazaqstantv/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",7 канал (576p) [Not 24/7]
 https://sc.id-tv.kz/7_kanal.m3u8
 #EXTINF:-1 tvg-id="" status="error",Asyl Arna (Асыл арна) (432p) [Not 24/7]
 https://sc.id-tv.kz/AsylArna.m3u8
