@@ -10,7 +10,7 @@ https://live2.alalam.ir/alalam.m3u8
 https://nl.livekadeh.com/hls2/alwilayah.tv.m3u8
 #EXTINF:-1 tvg-id="AlZahraTV.ir" status="online",Al Zahra TV (720p) [Not 24/7]
 https://live.al-zahratv.com/live/playlist2/index.m3u8
-#EXTINF:-1 tvg-id="AVAFamily.ir" status="online",AVA Family (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AVAFamily.ir" status="error",AVA Family (720p) [Not 24/7]
 http://51.210.199.5/hls/stream.m3u8
 #EXTINF:-1 tvg-id="AVASeries.ir" status="online",AVA Series (720p)
 http://51.210.199.4/hls/stream.m3u8
@@ -29,7 +29,7 @@ http://cdn1.live.irib.ir:1935/epg-live/smil:fars/playlist.m3u8
 https://d2e40kvaojifd6.cloudfront.net/stream/gem_usa/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMArabia.ir" status="error",GEM Arabia (576p) [Not 24/7]
 http://216.66.42.47:7777/GemArabia_HD.m3u8
-#EXTINF:-1 tvg-id="GEMAZ.ir" status="timeout",GEM AZ (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="GEMAZ.ir" status="error",GEM AZ (576p) [Not 24/7]
 http://216.66.42.47:7777/GemAZ_HD.m3u8
 #EXTINF:-1 tvg-id="GEMBollywood.ir" status="error",GEM Bollywood (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gembollywood
@@ -37,7 +37,7 @@ https://stream-cdn.gemonline.tv/live/gembollywood/index.m3u8
 #EXTINF:-1 tvg-id="GEMClassic.ir" status="error",GEM Classic (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemclassic
 https://stream-cdn.gemonline.tv/live/gemclassic/index.m3u8
-#EXTINF:-1 tvg-id="GEMComedy.ir" status="timeout",GEM Comedy (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="GEMComedy.ir" status="error",GEM Comedy (576p) [Not 24/7]
 http://216.66.42.47:7777/GemComedy_HD.m3u8
 #EXTINF:-1 tvg-id="GEMCrypto.ir" status="error",GEM Crypto (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gem_crypto
@@ -179,6 +179,8 @@ https://hls.yourtime.live/hls/stream.m3u8
 http://cdn1.live.irib.ir:1935/channel-live/smil:varzesh/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",VARZESH (1080p)
 http://cdn1.live.irib.ir:1935/live-channels/smil:varzesh/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Persian Bazar (720p) [Not 24/7]
+https://stream.persiantv1.com/ptv1/playlist1/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",HodHod TV (720p)
 http://51.210.199.12/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="online",Diyar TV (720p) [Not 24/7]
@@ -239,5 +241,3 @@ https://ir13.livekadeh.com/hls2/valiasr.m3u8
 https://live.livestreamtv.ca/canadastartv/smil:canadastartv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Radio Farda (576p) [Not 24/7]
 https://rfe-lh.akamaihd.net/i/rfe_tvmc1@383622/master.m3u8
-#EXTINF:-1 tvg-id="" status="error",Persian Bazar (720p) [Not 24/7]
-https://stream.persiantv1.com/ptv1/playlist1/index.m3u8
