@@ -29,7 +29,7 @@ http://cdn1.live.irib.ir:1935/epg-live/smil:fars/playlist.m3u8
 https://d2e40kvaojifd6.cloudfront.net/stream/gem_usa/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMArabia.ir" status="error",GEM Arabia (576p) [Not 24/7]
 http://216.66.42.47:7777/GemArabia_HD.m3u8
-#EXTINF:-1 tvg-id="GEMAZ.ir" status="error",GEM AZ (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="GEMAZ.ir" status="timeout",GEM AZ (576p) [Not 24/7]
 http://216.66.42.47:7777/GemAZ_HD.m3u8
 #EXTINF:-1 tvg-id="GEMBollywood.ir" status="error",GEM Bollywood (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gembollywood
@@ -155,7 +155,7 @@ https://stream-cdn.gemonline.tv/live/rubix/index.m3u8
 http://cdn1.live.irib.ir:1935/epg-live/smil:sahand/playlist.m3u8
 #EXTINF:-1 tvg-id="SalamTV.ir" status="online",Salam TV (720p)
 https://iptv.salaamtv.org/salaam/playlist.m3u8
-#EXTINF:-1 tvg-id="SepanjTV.ir" status="online",Sepanj TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SepanjTV.ir" status="error",Sepanj TV (720p) [Not 24/7]
 http://51.210.199.30/hls/stream.m3u8
 #EXTINF:-1 tvg-id="SL1.ir" status="online",SL 1 (720p)
 http://51.210.199.3/hls/stream.m3u8
@@ -209,7 +209,7 @@ https://live1.presstv.ir/live/hispan.m3u8
 https://live.presstv.ir/live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",QAZVIN (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:qazvin/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Al Kawthar TV (240p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="blocked",Al Kawthar TV (240p) [Not 24/7]
 http://178.252.143.156:1935/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",4U TV (720p) [Not 24/7]
 http://116.202.255.113:1935/4utv/livehd/playlist.m3u8
