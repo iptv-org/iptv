@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="7ALimoges.fr" status="online",7ALimoges (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="7ALimoges.fr" status="error",7ALimoges (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCdFv_ZWQ3Xk_NfRiaK-ryGg/live
 #EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="online",Alpe d’Huez TV (720p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
@@ -25,11 +25,13 @@ https://bfmparishdslive-lh.akamaihd.net/i/BFMPARIS_ESYTLS@429747/master.m3u8
 https://iptv.azlinux.fr/?url=https://www.bfmtv.com/en-direct/
 #EXTINF:-1 tvg-id="BIPTV.fr" status="online",BIP TV (480p) [Not 24/7]
 http://biptv.tv/live/biptvstream_orig/index.m3u8
+#EXTINF:-1 tvg-id="C8.fr" status="online",C8 (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/C8TV
 #EXTINF:-1 tvg-id="C8.fr" status="timeout",C8
 https://s2.tntendirect.com/d8/live/playlist.m3u8
 #EXTINF:-1 tvg-id="CentralTV.fr" status="online",Central TV (614p) [Not 24/7]
 http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8
-#EXTINF:-1 tvg-id="Cherie25.fr" status="online",Chérie 25 (360p)
+#EXTINF:-1 tvg-id="Cherie25.fr" status="timeout",Chérie 25 (360p)
 https://s2.tntendirect.com/cherie25/live/playlist.m3u8
 #EXTINF:-1 tvg-id="DBM.fr" status="online",DBM (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
@@ -70,13 +72,9 @@ https://fash1043.cloudycdn.services/slive/ftv_ftv_pg13_zw9_27065_ftv_pg13_sam_19
 https://fash1043.cloudycdn.services/slive/ftv_ftv_pg13_zw9_27065_ftv_pg13_196_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVUHD.fr" status="online",Fashion TV UHD (2160p)
 https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="France2.fr" status="online",France 2 (720p) [Not 24/7]
-https://s2.tntendirect.com/france2/live/playlist.m3u8
-#EXTINF:-1 tvg-id="France3.fr" status="online",France 3 (720p) [Not 24/7]
-https://s2.tntendirect.com/france2/live/playlist.m3u8
 #EXTINF:-1 tvg-id="France4.fr" status="error",France 4 (720p) [Geo-blocked]
 http://edge9.iptvnetwork.net/live/france4/playlist.m3u8
-#EXTINF:-1 tvg-id="France5.fr" status="online",France 5 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="France5.fr" status="timeout",France 5 (720p) [Not 24/7]
 https://s2.tntendirect.com/france2/live/playlist.m3u8
 #EXTINF:-1 tvg-id="France24Arabic.fr" status="online",France 24 Arabic (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Arabic/live
@@ -118,7 +116,7 @@ https://iptv.azlinux.fr/?url=https://dailymotion.com/video/xji3qy
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="error",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
-#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -128,7 +126,7 @@ http://tv.mondeduloisir.fr:1935/tixtv/smil:web.smil/playlist.m3u8
 http://ott-cdn.ucom.am/s35/index.m3u8
 #EXTINF:-1 tvg-id="NancyWebTV.fr" status="online",Nancy Web TV (394p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:nancy-webtv/manifest.m3u8
-#EXTINF:-1 tvg-id="NRJ12.fr" status="online",NRJ12 (720p)
+#EXTINF:-1 tvg-id="NRJ12.fr" status="timeout",NRJ12 (720p)
 https://s2.tntendirect.com/nrj12/live/playlist.m3u8
 #EXTINF:-1 tvg-id="P2MTV.fr" status="online",P2M TV (268p) [Not 24/7]
 https://panel.streamparis.fr:3743/stream/play.m3u8
@@ -170,7 +168,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/vid
 http://210.210.155.37/uq2663/h/h94/01.m3u8
 #EXTINF:-1 tvg-id="RMCDecouverte.fr" status="timeout",RMC Découverte (720p)
 https://s2.tntendirect.com/rmcdecouverte/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TebeSud.fr" status="online",TébéSud (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TebeSud.fr" status="error",TébéSud (1080p) [Not 24/7]
 https://edge-live-ger1.ovstream.com/hls/10/source.m3u8
 #EXTINF:-1 tvg-id="TF1.fr" status="timeout",TF1 (1080p)
 https://s2.tntendirect.com/tf1/live/playlist.m3u8
@@ -192,7 +190,7 @@ http://210.210.155.37/dr9445/s/s24/index.m3u8
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/master.m3u8
-#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="online",TV5 Monde Style HD (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="error",TV5 Monde Style HD (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h01/index.m3u8
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="online",TV7 Bordeaux (720p)
 http://live.digiteka.com/1/RVNZMmJtUURmd09I/U0dNU0tk/hls/live/playlist.m3u8
@@ -249,5 +247,3 @@ http://185.234.217.27:8002/play/a02f/index.m3u8
 https://streamer01.myvideoplace.tv/streamer02/hls/MATL_VLOC_PAD_100919_medium/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",TV5Monde Info (1080p)
 https://tv5infohls-i.akamaihd.net/hls/live/631613/tv5infohls/index.m3u8
-#EXTINF:-1 tvg-id="C8.fr" status="online",C8 (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/C8TV
