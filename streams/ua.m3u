@@ -21,7 +21,7 @@ http://stream.atr.ua/atr/live/index.m3u8
 https://rtmp.radiogroup.com.ua:8080/live/avto/index.m3u8
 #EXTINF:-1 tvg-id="BamBarBiaTV.ua" status="online",BamBarBia TV (1080p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/bbb/bbbtv-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="Cherniveckiypromin.ua" status="error",Чернівецький промінь (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Cherniveckiypromin.ua" status="online",Чернівецький промінь (720p) [Not 24/7]
 https://langate.tv/promin/live/index.m3u8
 #EXTINF:-1 tvg-id="ChPinfo.ua" status="error",ЧП.інфо (576p)
 http://109.68.40.67/life/magnolia.m3u8
@@ -86,7 +86,7 @@ http://live.m2.tv/hls2/stream.m3u8
 http://live.m2.tv/hls3/stream.m3u8
 #EXTINF:-1 tvg-id="MostVideoTV.ua" status="online",MostVideo.TV (720p) [Not 24/7]
 http://w4.mostvideo.tv/tv/ch1.m3u8
-#EXTINF:-1 tvg-id="Nadiya.ua" status="timeout",Надия/Новый канал (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Nadiya.ua" status="online",Надия/Новый канал (576p) [Not 24/7]
 http://nadiya.home-net.com.ua/mob/mystream.m3u8
 #EXTINF:-1 tvg-id="Nadiya.ua" status="error",Надія (720p) [Not 24/7]
 https://stream.hope.ua/hopeua/live_1/playlist.m3u8
@@ -189,6 +189,10 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://stream.ntktv.ua/s/ntk/ntk.m3u8
 #EXTINF:-1 tvg-id="" status="online",Балта ТВ (768p)
 http://194.50.51.34/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
+https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
+#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
+http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",ПравдаТУТ (720p)
@@ -223,22 +227,18 @@ http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
 http://hls-live-media.cdn01.net/default/stream_10429_3.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (216p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_3.m3u8
-#EXTINF:-1 tvg-id="" status="online",Micto (360p)
-http://93.78.206.172:8080/stream3/stream.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
-https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ОТВ (Днепр) (576p)
 http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Micto (360p)
+http://93.78.206.172:8080/stream3/stream.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
 http://95.67.106.10/hls/nta_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
 http://95.67.106.10/hls/nta_ua_low/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
-http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",UkrLive (Перший незалежний) (1080p)
