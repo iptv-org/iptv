@@ -25,7 +25,7 @@ https://mdstrm.com/live-stream-playlist/57d01d6c28b263eb73b59a5a.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/CanalCongresoColombia/live
 #EXTINF:-1 tvg-id="CanalDoce.co" status="online",Canal Doce
 https://api.new.livestream.com/accounts/27724665/events/8376416/live.m3u8
-#EXTINF:-1 tvg-id="CanalDos.co" status="online",Canal Dos (Yopal | Casanare) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CanalDos.co" status="timeout",Canal Dos (Yopal | Casanare) (720p) [Not 24/7]
 http://131.221.42.25:1935/streaming/canal2/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalInstitucional.co" status="online",Canal Institucional (1080p)
 https://streaming.rtvc.gov.co/TV_CanalInstitucional_live/smil:live.smil/playlist.m3u8
@@ -49,7 +49,7 @@ https://rtmp02.portalexpress.es/marinastereo/marinastereo/playlist.m3u8
 https://5b464b69d264e.streamlock.net/Channels_live/ngrp:MelodyChannel_all/playlist.m3u8
 #EXTINF:-1 tvg-id="MovieFe.co" status="online",MovieFe (360p) [Not 24/7]
 https://vcp.myplaytv.com/moviefe/ngrp:moviefe_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MundoMas.co" status="error",Mundo +
+#EXTINF:-1 tvg-id="MundoMas.co" status="online",Mundo +
 http://vcp1.myplaytv.com:1935/mundomas/mundomas/playlist.m3u8
 #EXTINF:-1 tvg-id="Noticiero90Minutos.co" status="online",Noticiero 90 Minutos (720p) [Not 24/7]
 https://live-edge-bhs-1.cdn.enetres.net/184784E1D210401F8041E3E1266822CC021/playlist.m3u8
@@ -66,7 +66,7 @@ https://play.amelbasoluciones.co:3971/live/tdicolombiatvlive.m3u8
 #EXTINF:-1 tvg-id="Teleantioquia2.co" status="error",Teleantioquia 2 (720p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive2.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Teleantioquia.co" status="error",Teleantioquia (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="Teleantioquia.co" status="online",Teleantioquia (360p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Telecafe.co" status="online",Telecafé
@@ -85,7 +85,7 @@ https://liveingesta118.cdnmedia.tv/telemedellintvlive/smil:dvrlive.smil/playlist
 https://5b464b69d264e.streamlock.net/Channels_live/ngrp:telemusica_all/playlist.m3u8
 #EXTINF:-1 tvg-id="Telepacifico.co" status="online",Telepacífico (Santiago de Cali | Valle del Cauca) (720p) [Not 24/7]
 https://stream.logicideas.media/telepacifico-live/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Telepetroleo.co" status="error",Telepetróleo (Barrancabermeja | Santander) (720p)
+#EXTINF:-1 tvg-id="Telepetroleo.co" status="online",Telepetróleo (Barrancabermeja | Santander) (720p)
 https://q-s-l4n3sh4d0w.onrender.com/iptv-query?streaming-ip=https://teveo.com.co/player/AcAAAgAIAAE7A1IAyADIUCAAAAAAAAAA.js
 #EXTINF:-1 tvg-id="Trece.co" status="online",Trece (1080p)
 https://stream.logicideas.media/canaltrece-live/smil:live.smil/playlist.m3u8
@@ -97,12 +97,8 @@ http://179.1.7.198:1935/live/TVAgroHD.stream/playlist.m3u8
 https://streamyes.alsolnet.com/tvgracia/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNGlobal.co" status="online",TVN Global (614p) [Not 24/7]
 https://stmv2.voxtvhd.com.br/tvnglobal/tvnglobal/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",CTV Barranquilla (Barranquilla | Atlántico) (1080p)
-https://59a564764e2b6.streamlock.net/ctvbarranquilla/ctv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal Zoom (Bogotà | Cundinamarca) (1080p)
 https://canalzoom.itex.com.co:3027/live/canalzoombr1live.m3u8
-#EXTINF:-1 tvg-id="" status="online",Canal NorteVision (Pasto | Nariño) (480p)
-https://eu1.servers10.com:8081/8092/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Multicanal Televisión (Santiago de Cali | Valle del Cauca) (720p)
 https://cloud2.streaminglivehd.com:1936/8010/8010/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Veo Television (Guadalajara de Buga | Valle del Cauca)
@@ -115,6 +111,8 @@ https://q-s-l4n3sh4d0w.onrender.com/iptv-query?streaming-ip=https://teveo.com.co
 https://servers.amelbasoluciones.co:19360/cnctulua/cnctulua.m3u8
 #EXTINF:-1 tvg-id="" status="online",EDVTV (Bogotà | Cundinamarca)
 https://tustreamingvideo.com:3376/multi_live/play.m3u8
+#EXTINF:-1 tvg-id="" status="online",Canal NorteVision (Pasto | Nariño) (480p)
+https://eu1.servers10.com:8081/8092/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Teleamiga (Bogotà | Cundinamarca) (480p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.instantvideocloud.net/
 https://liveingesta118.cdnmedia.tv/teleamigatvlive/smil:dvrlive.smil/playlist.m3u8
@@ -136,5 +134,7 @@ https://mdstrm.com/live-stream-playlist/57d2ebe8fd61d8f9327f8ad1.m3u8
 https://mdstrm.com/live-stream-playlist/58dc3d471cbe05ff3c8e463e.m3u8
 #EXTINF:-1 tvg-id="" status="error",Canal Acuario (Rionegro | Antioquia)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canalacuario
+#EXTINF:-1 tvg-id="" status="error",CTV Barranquilla (Barranquilla | Atlántico) (1080p)
+https://59a564764e2b6.streamlock.net/ctvbarranquilla/ctv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Alpavision Canal 2 (Neiva | Huila) (720p) [Not 24/7]
 https://stmv1.voxtvhd.com.br/alpavision/alpavision/playlist.m3u8
