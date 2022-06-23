@@ -3,7 +3,7 @@
 https://d2ve4fchffi4n1.cloudfront.net/out/v1/df356edd16f3434ab417f2c48cb1d516/index.m3u8
 #EXTINF:-1 tvg-id="CanalParlamento.pt" status="error",Canal Parlamento (432p) [Not 24/7]
 https://playout175.livextend.cloud/livenlin4/2liveartvpub/playlist.m3u8
-#EXTINF:-1 tvg-id="IgrejaOnline.pt" status="online",Igreja Online (574p) [Not 24/7]
+#EXTINF:-1 tvg-id="IgrejaOnline.pt" status="error",Igreja Online (574p) [Not 24/7]
 http://195.22.11.11:1935/igronline/igronline2/playlist.m3u8
 #EXTINF:-1 tvg-id="KuriakosCine.pt" status="error",Kuriakos Cine (1080p) [Not 24/7]
 http://c2.manasat.com:1935/kcine/kcine3/master.m3u8
@@ -13,7 +13,7 @@ http://c2.manasat.com:1935/kkids/kkids3/master.m3u8
 http://c2.manasat.com:1935/kmusic/kmusic3/master.m3u8
 #EXTINF:-1 tvg-id="KuriakosTV.pt" status="online",Kuriakos TV (1080p)
 http://195.22.11.11:1935/ktv/ktv1/master.m3u8
-#EXTINF:-1 tvg-id="KuriakosTV.pt" status="online",Kuriakos TV (576p)
+#EXTINF:-1 tvg-id="KuriakosTV.pt" status="error",Kuriakos TV (576p)
 http://195.22.11.11:1935/ktv/ktv2/playlist.m3u8
 #EXTINF:-1 tvg-id="PortoCanal.pt" status="online",Porto Canal (360p) [Not 24/7]
 https://streamer-a01.videos.sapo.pt/live/portocanal/playlist.m3u8
@@ -26,10 +26,10 @@ https://stmv1.srvsite.com/clubefmradio/clubefmradio/playlist.m3u8
 https://streaming-live.rtp.pt/liverepeater/rtpClean1HD.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTP1.pt" status="online",RTP1 (480p)
 http://162.212.178.69:41042/bysid/608
-#EXTINF:-1 tvg-id="RTP2.pt" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP2 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTP2.pt" status="error" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP2 (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/rtpClean2HD.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP2.pt" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP2 (504p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTP2.pt" status="error" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP2 (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtp2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTP3.pt" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP3 (720p) [Not 24/7]
@@ -52,7 +52,7 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtpafrica.smil/playlist.m3u8
 https://streaming-live.rtp.pt/liverepeater/smil:rtpi.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPInternacionalAsia.pt" status="online",RTP Internacional Asia (480p) [Geo-blocked]
 http://210.210.155.35/qwr9ew/s/s38/index.m3u8
-#EXTINF:-1 tvg-id="RTPInternacionalAsia.pt" status="error",RTP Internacional Asia (480p)
+#EXTINF:-1 tvg-id="RTPInternacionalAsia.pt" status="online",RTP Internacional Asia (480p)
 http://210.210.155.37/qwr9ew/s/s38/index.m3u8
 #EXTINF:-1 tvg-id="RTPMadeira.pt" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)",RTP Madeira (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
@@ -98,12 +98,10 @@ https://video-auth2.iol.pt/live_edge/tvi_abr/edge_servers/tvi-480p/chunks.m3u8
 https://video-auth2.iol.pt/live_tvi_direct/live_tvi_direct/edge_servers/tvireality-480p/chunks.m3u8
 #EXTINF:-1 tvg-id="TVManaCordoba.pt" status="error",TV Maná Córdoba (576p) [Not 24/7]
 http://csvl03.manasat.com:1935/tvar/tvmanaar2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",TV MANA-1 PORTUGAL (1080p) [Not 24/7]
-http://csvl04.manasat.com:1935/tvmana/tvmana3/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",TV Maná 2 (576p) [Not 24/7]
-http://195.22.11.11:1935/tvmana/tvmana2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",TV Maná 1 (320p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",TV Maná 1 (320p) [Not 24/7]
 http://195.22.11.11:1935/tvmana/tvmana1/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",TV Maná 2 (576p) [Not 24/7]
+http://195.22.11.11:1935/tvmana/tvmana2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",TV MANA (ENG) (484p)
 http://c2.manasat.com:1935/church-online/ingles3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",TV MANA (FR) (484p)
@@ -114,6 +112,8 @@ http://c2.manasat.com:1935/iglesia-online/espanhol3/playlist.m3u8
 http://c2.manasat.com:1935/tserkov-online/russo3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",TV MANA MAPUTO (576p) [Not 24/7]
 http://csvl03.manasat.com:1935/tvmz/tvmz3/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",TV MANA-1 PORTUGAL (1080p) [Not 24/7]
+http://csvl04.manasat.com:1935/tvmana/tvmana3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",STV Noticias (240p) [Not 24/7]
 http://dcunilive36-lh.akamaihd.net/i/dclive_1@668002/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",TV MANA MAPUTO (526p) [Not 24/7]
