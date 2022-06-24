@@ -32,9 +32,9 @@ https://hiroshima-tv-live.hls.wselive.stream.ne.jp/hiroshima-tv-live/live/playli
 #EXTINF:-1 tvg-id="JOAXDTV.jp" status="error",TV Tokyo (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00012/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="JOCXDTV.jp" status="online",Kansai TV
-http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_540/playlist.m3u8
-#EXTINF:-1 tvg-id="JOCXDTV.jp" status="error",Kansai TV
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_720/playlist.m3u8
+#EXTINF:-1 tvg-id="JOCXDTV.jp" status="online",Kansai TV
+http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JOIXDTV.jp" status="online",YTV
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_yomiuri_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JOIXDTV.jp" status="online",YTV
@@ -53,7 +53,7 @@ http://cdn.us195.jpnettv.live:1935/jptv/kansi_tv_osaka_720/playlist.m3u8
 http://51.79.193.108:8080/hls/j00012/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="JOUHDTV.jp" status="online",SUN TV
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_sun_tv_540/playlist.m3u8
-#EXTINF:-1 tvg-id="JOUHDTV.jp" status="error",SUN TV
+#EXTINF:-1 tvg-id="JOUHDTV.jp" status="online",SUN TV
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_sun_tv_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JSports1.jp" status="error",J Sports 1 (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00042/index.m3u8?type=jp
@@ -144,10 +144,10 @@ https://movie.mcas.jp/mcas/smil:mx2_prod.smil/master.m3u8
 https://liveanevia.mncnow.id/live/eds/WakuWakuJapan/sa_dash_vmx/WakuWakuJapan.mpd
 #EXTINF:-1 tvg-id="Weathernews.jp" status="online",Weather News (720p)
 https://movie.mcas.jp/mcas/smil:wn1.smil/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",NHK World Japan (YouTube) (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live
 #EXTINF:-1 tvg-id="" status="online",TBS (JNN) News Dig 24/7 Live (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=H3D90-436C4
+#EXTINF:-1 tvg-id="" status="online",NHK World Japan (YouTube) (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live
 #EXTINF:-1 tvg-id="" status="online",BS TV Asahi
 http://cdn.us195.jpnettv.live:1935/jptv/bsasahi_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",BS Fuji TV
@@ -176,6 +176,8 @@ http://movie.mcas.jp/mcas/wn1_2/master.m3u8
 https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/zh/725580/livecom_zh.m3u8
 #EXTINF:-1 tvg-id="" status="online",ABC
 http://cdn.us195.jpnettv.live:1935/jptv/kansi_abc_asahi_720/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",NHK G Kansai
+http://cdn.us195.jpnettv.live:1935/jptv/kansi_nhk_g_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",NHK General Kanto
 http://cdn.us195.jpnettv.live:1935/jptv/kanto_nhk_g_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ABC
@@ -208,8 +210,6 @@ http://cdn.us195.jpnettv.live:1935/jptv/bspremium_540/playlist.m3u8
 http://cdn.us195.jpnettv.live:1935/jptv/cinefil_wowow_540/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Nihon Eiga TV
 http://cdn.us195.jpnettv.live:1935/jptv/igasennmonn_540/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",NHK G Kansai
-http://cdn.us195.jpnettv.live:1935/jptv/kansi_nhk_g_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Star Channel 1
 http://cdn.us195.jpnettv.live:1935/jptv/starch1_540/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Star Channel 2
