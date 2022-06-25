@@ -23,10 +23,10 @@ https://d3nljkrx6mjqra.cloudfront.net/out/v1/1b9d9efd27814b3b8dc570113ae54409/in
 https://video.cdmx.gob.mx/livestream/stream.m3u8
 #EXTINF:-1 tvg-id="ConectaTV.mx" status="online",Conecta TV (720p)
 http://204.12.211.210:1935/conectatv/conectatv/playlist.m3u8
+#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipódromo de las Américas (480p) [Geo-blocked]
+http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipodromo de las Americas (360p) [Not 24/7]
 http://wms10.tecnoxia.com/soelvi/slv423/playlist.m3u8
-#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="blocked",Hipódromo de las Américas (480p) [Geo-blocked]
-http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="IcrtvColima.mx" status="error",Icrtv Colima (720p) [Not 24/7]
 https://5ca9af4645e15.streamlock.net/canal11/videocanal11/playlist.m3u8
 #EXTINF:-1 tvg-id="ImagenMulticast.mx" status="online",Imagen Multicast (480p) [Not 24/7]
@@ -99,13 +99,13 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC_mwCcsKDJLSWjply5s0h8w/live
 #EXTINF:-1 tvg-id="TelevisaMexicali.mx" status="timeout",Televisa Mexicali (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcmuFsMIIIHO3LBqeBVfm8Q/live
-#EXTINF:-1 tvg-id="TelevisaMonterrey.mx" status="error",Televisa Monterrey (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaMonterrey.mx" status="timeout",Televisa Monterrey (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGDJLLphnP0zQQaE3kgo5Wg/live
 #EXTINF:-1 tvg-id="TelevisaMorelos.mx" status="timeout",Televisa Morelos
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcC9ykApQrgl4UxbKg2U4zw/live
 #EXTINF:-1 tvg-id="TelevisaNewsMexico.mx" status="online",Televisa News Mexico (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCUsm-fannqOY02PNN67C0KA/live
-#EXTINF:-1 tvg-id="TelevisaNoreste.mx" status="timeout",Televisa Noreste (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaNoreste.mx" status="error",Televisa Noreste (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC752DYv5vPlTSMrvEjfZXcw/live
 #EXTINF:-1 tvg-id="TelevisaPiedrasNegras.mx" status="online",Televisa Piedras Negras (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCxK8C1E8UZ5RipNXIBYEvTA/live
@@ -165,8 +165,6 @@ http://217.182.77.27/live/alcarriatv-livestream.m3u8
 https://5ca3e84a76d30.streamlock.net/gpacifico3/smil:obregon.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TELE SISTEMA CANAL 9 (486p) [Geo-blocked]
 http://k4.usastreams.com/ARBtv/ARBtv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Tlaxcala Televisión (360p) [Not 24/7]
-https://vid.mega00.com:5443/LiveApp/streams/928111829917388844551988/928111829917388844551988.m3u8?token=null
 #EXTINF:-1 tvg-id="" status="blocked",Once Niñas Y Niños
 http://jjooliveclarovideo.akamaized.net/Content/hls/Live/Channel(tveducationch01)/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ForoTV (720p) [Geo-blocked]
@@ -193,3 +191,5 @@ https://ooyalahd2-f.akamaihd.net/i/UnoTV01_delivery@122640/master.m3u8
 https://ss2.domint.net:3224/emtv_str/energiamusical/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",CorTV (800p)
 https://stream.oursnetworktv.com/latin/encoder29/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Tlaxcala Televisión (360p) [Not 24/7]
+https://vid.mega00.com:5443/LiveApp/streams/928111829917388844551988/928111829917388844551988.m3u8?token=null
