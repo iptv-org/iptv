@@ -3,7 +3,7 @@
 http://cdn.us195.jpnettv.live:1935/jptv/janimax_540/playlist.m3u8
 #EXTINF:-1 tvg-id="Animax.jp" status="blocked",Animax Japan
 http://cdn.us195.jpnettv.live:1935/jptv/janimax_720/playlist.m3u8
-#EXTINF:-1 tvg-id="AnimaxAsia.sg" status="error",Animax Asia (Indonesian Subs) (576p)
+#EXTINF:-1 tvg-id="AnimaxAsia.sg" status="online",Animax Asia (Indonesian Subs) (576p)
 http://210.210.155.37/dr9445/h/h144/index.m3u8
 #EXTINF:-1 tvg-id="ATX.jp" status="online",AT-X (720p) [Not 24/7]
 https://sub2.neetball.net/live/neet.m3u8
@@ -83,7 +83,7 @@ http://cdn.us195.jpnettv.live:1935/jptv/National_geographic/playlist.m3u8
 https://aka-amd-njpwworld-hls-enlive.akamaized.net/hls/video/njpw_en/njpw_en_channel01_3/playlist_DVR.m3u8
 #EXTINF:-1 tvg-id="NHKBS1.jp" status="blocked",NHK BS1
 http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_540/playlist.m3u8
-#EXTINF:-1 tvg-id="NHKBS1.jp" status="timeout",NHK BS1
+#EXTINF:-1 tvg-id="NHKBS1.jp" status="blocked",NHK BS1
 http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_720/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKChinese.jp" status="online",NHK Chinese Vision (720p)
 https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8
@@ -109,18 +109,18 @@ https://nhkworld.webcdn.stream.ne.jp/www11/nhkworld-tv/sycc-live/zh/playlist.m3u
 https://b-nhkwlive-xjp.webcdn.stream.ne.jp/hls/live/2003458-b/nhkwlive-xjp-en/index.m3u8
 #EXTINF:-1 tvg-id="NHKWorldPremium.jp" status="error",NHK World Premium (720p) [Not 24/7]
 https://nhkwlive-pre-in.webcdn.stream.ne.jp/hls/live/nhkwlive-pre/index.m3u8
-#EXTINF:-1 tvg-id="NipponTV.jp" status="online",Nippon TV (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="NipponTV.jp" status="timeout",Nippon TV (540p) [Not 24/7]
 https://ntv2.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="NipponTV.jp" status="error",Nippon TV (720p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00004/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="NipponTV.jp" status="error",Nippon TV (720p) [Not 24/7]
 http://51.79.193.108:8080/hlsok/j00004/index.m3u8?type=jp
+#EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCuTAXTexrhetbOe3zgskJBQ/live
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
 https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
 https://n24-cdn-live.ntv.co.jp/ch02/index.m3u8
-#EXTINF:-1 tvg-id="NTVNews24.jp" status="error",NTV News24 (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCuTAXTexrhetbOe3zgskJBQ/live
 #EXTINF:-1 tvg-id="ShopChannel.jp" status="online",Shop Channel (1080p) [Not 24/7]
 https://stream3.shopch.jp/HLS/master.m3u8
 #EXTINF:-1 tvg-id="TBSNews.jp" status="online",TBS News
@@ -177,6 +177,8 @@ http://cdn.us195.jpnettv.live:1935/jptv/Fishing_broadcasting/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Family Gekijo
 http://cdn.us195.jpnettv.live:1935/jptv/gekijjyou/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Nihon Eiga TV
+http://cdn.us195.jpnettv.live:1935/jptv/igasennmonn_540/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Nihon Eiga TV
 http://cdn.us195.jpnettv.live:1935/jptv/igasennmonn_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",FOX Japan
 http://cdn.us195.jpnettv.live:1935/jptv/jfox/playlist.m3u8
@@ -198,6 +200,8 @@ http://cdn.us195.jpnettv.live:1935/jptv/starch1_540/playlist.m3u8
 http://cdn.us195.jpnettv.live:1935/jptv/starch1_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Star Channel 2
 http://cdn.us195.jpnettv.live:1935/jptv/starch2_540/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Star Channel 2
+http://cdn.us195.jpnettv.live:1935/jptv/starch2_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Star Channel 3
 http://cdn.us195.jpnettv.live:1935/jptv/starch3_540/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Star Channel 3
@@ -214,10 +218,6 @@ http://cdn.us195.jpnettv.live:1935/jptv/wowlive_720/playlist.m3u8
 http://cdn.us195.jpnettv.live:1935/jptv/wowprime_540/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",WOWOWプライム
 http://cdn.us195.jpnettv.live:1935/jptv/wowprime_720/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Nihon Eiga TV
-http://cdn.us195.jpnettv.live:1935/jptv/igasennmonn_540/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Star Channel 2
-http://cdn.us195.jpnettv.live:1935/jptv/starch2_720/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",GAORA (540p) [Not 24/7]
 http://51.79.193.108:8080/hls/j00045/index.m3u8?type=jp
 #EXTINF:-1 tvg-id="" status="error",GAORA (540p) [Not 24/7]
