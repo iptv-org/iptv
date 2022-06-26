@@ -145,7 +145,7 @@ https://salto-streams.nl/hls/sotv1_high.m3u8
 https://server-67.stream-server.nl:1936/Samen1TV/Samen1TV/playlist.m3u8
 #EXTINF:-1 tvg-id="SilenceTV.nl" status="timeout",Silence TV (720p) [Not 24/7]
 http://93.190.140.42:8081/SilenceTV/live/playlist.m3u8
-#EXTINF:-1 tvg-id="SirisTV.nl" status="error",Siris TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SirisTV.nl" status="online",Siris TV (720p) [Not 24/7]
 https://videostream.siris.nl/hls/playoutweb/index.m3u8
 #EXTINF:-1 tvg-id="StreekTV.nl" status="online",Streek TV (720p) [Not 24/7]
 http://cdn22.streampartner.nl/streektv/streektv/playlist.m3u8
@@ -175,8 +175,6 @@ https://streams.uitzending.tv/zo34/zo34/playlist.m3u8
 https://live.zuidwesttv.nl/live/zwtv.m3u8
 #EXTINF:-1 tvg-id="" status="online",rtvutrecht (1080p)
 http://media.rtvutrecht.nl/live/rtvutrecht/rtvutrecht/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Omroep West (1080p) [Not 24/7]
-https://d2dslh4sd7yvc1.cloudfront.net/live/omroepwest/ngrp:tv-feed_all/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Omroep Zeeland (1080p)
 https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",JENZ (1080p)
@@ -203,6 +201,8 @@ https://ms2.mx-cd.net/tv/163-669433/RTV_Arnhem.smil/playlist.m3u8
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",RN 7 TV (1080p) [Geo-blocked]
 https://streaming.rn7.nl/rn7live_abr/tv/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Omroep West (1080p) [Not 24/7]
+https://d2dslh4sd7yvc1.cloudfront.net/live/omroepwest/ngrp:tv-feed_all/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Omroep Gelderland (1080p)
 https://rrr.sz.xlcdn.com/?account=omroepgelderland&file=livetv&output=playlist.m3u8&protocol=http&service=wowza&type=live
 #EXTINF:-1 tvg-id="" status="error",JIN TV (720p) [Not 24/7]

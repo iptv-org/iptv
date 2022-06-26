@@ -220,10 +220,10 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276
 http://stream.tvtap.net:8081/live/it-rai5.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RaiGulp.it" status="online",Rai Gulp (576p)
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953
-#EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="online",RAI Italia Asia (576p)
-http://210.210.155.37/x6bnqe/s/s63/index2.m3u8
 #EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="error",RAI Italia Asia (576p) [Geo-blocked]
 http://210.210.155.35/x6bnqe/s/s63/index2.m3u8
+#EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="error",RAI Italia Asia (576p)
+http://210.210.155.37/x6bnqe/s/s63/index2.m3u8
 #EXTINF:-1 tvg-id="RaiMovie.it" status="online",Rai Movie (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002
 #EXTINF:-1 tvg-id="RaiNews24.it" status="online",Rai News 24 (720p)
@@ -284,7 +284,7 @@ https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:sisolocalcio.smil/playlist.m3
 https://stream1.aswifi.it/stereo5/live/index.m3u8
 #EXTINF:-1 tvg-id="Studio100Puglia.it" status="online",Studio 100 Puglia (480p)
 http://wms.shared.streamshow.it:1935/studio100ta/studio100ta/playlist.m3u8
-#EXTINF:-1 tvg-id="Super.it" status="online",Super (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="Super.it" status="error",Super (480p) [Not 24/7]
 https://viacomitalytest-lh.akamaihd.net/i/sbshdlive_1@357018/master.m3u8
 #EXTINF:-1 tvg-id="SuperJTVTeramo.it" status="online",Super J TV Teramo (720p) [Not 24/7]
 http://uk4.streamingpulse.com:1935/SuperJtv/SuperJtv/playlist.m3u8
@@ -340,7 +340,7 @@ https://59d8c0cee6f3d.streamlock.net/telenord/telenord/playlist.m3u8
 https://wms.shared.streamshow.it/telenord/telenord/playlist.m3u8
 #EXTINF:-1 tvg-id="TelePegasoCatania.it" status="online",Tele Pegaso Catania (404p) [Not 24/7]
 https://flash2.xdevel.com/telepegasocanale812/telepegasocanale812/playlist.m3u8
-#EXTINF:-1 tvg-id="TelePordenone.it" status="error",Tele Pordenone (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelePordenone.it" status="online",Tele Pordenone (576p) [Not 24/7]
 http://213.187.12.18/telepn/telepn.m3u8
 #EXTINF:-1 tvg-id="TeleQuattro.it" status="online",Tele Quattro (480p) [Not 24/7]
 http://wms.shared.streamshow.it/telequattro/telequattro/playlist.m3u8
@@ -418,7 +418,7 @@ https://d3b2epqdk0p7vd.cloudfront.net/out/v1/8a448b5e16384af4a3c8146a7b049c32/in
 https://5cbd3bc28341f.streamlock.net:444/videostar_live/videostar/playlist.m3u8
 #EXTINF:-1 tvg-id="VirginRadioTV.it" status="blocked",Virgin Radio TV (576p) [Not 24/7]
 https://live2-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ew)/index.m3u8
-#EXTINF:-1 tvg-id="VisualRadio.it" status="blocked",Visual Radio (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="VisualRadio.it" status="online",Visual Radio (576p) [Not 24/7]
 http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8
 #EXTINF:-1 tvg-id="Vuemme.it" status="online",Vuemme (480p)
 https://5db313b643fd8.streamlock.net/Vuemme/Vuemme/playlist.m3u8
@@ -446,8 +446,6 @@ http://wms.shared.streamshow.it/canale8/mp4:canale8/playlist.m3u8
 http://wms.shared.streamshow.it/tsn/tsn_mobile/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Juwelo Italia (480p)
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/7841/7841_264_live.m3u8
-#EXTINF:-1 tvg-id="" status="online",TV7 Azzurra (270p) [Not 24/7]
-http://217.61.26.46:8080/hls/azzurra.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV7 News (270p) [Not 24/7]
 http://217.61.26.46:8080/hls/news.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV UNO (240p)
@@ -457,9 +455,9 @@ https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Radio Radicale TV (240p) [Not 24/7]
 https://video-ar.radioradicale.it/diretta/padtv2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
-https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
 https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
+https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",R 101 Italia IT (576p)
 https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(er)/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",radionorba TV (404p)
@@ -472,6 +470,8 @@ https://54627d4fc5996.streamlock.net/SuperJtv/SuperJtv/playlist.m3u8
 https://wms60.tecnoxia.com/radiof/abr_radioftele/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Hilando Fino (1080p) [Not 24/7]
 http://4k-server-mia.2cdn.eu/HilandoFinoTV/ngrp:HilandoFinoTV_all/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",TV7 Azzurra (270p) [Not 24/7]
+http://217.61.26.46:8080/hls/azzurra.m3u8
 #EXTINF:-1 tvg-id="" status="error",TeleBoario (720p) [Not 24/7]
 http://flash7.streaming.xdevel.com/teleboario/teleboario/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Halow Kids HD (480p)
