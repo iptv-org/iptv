@@ -25,7 +25,7 @@ http://cm.hostlagarto.com:8081/Punaltv/punaltvHD.myStream/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/27456795/events/8268514/player
 #EXTINF:-1 tvg-id="DigitalVision63.do" status="online",Digital Vision (720p) [Not 24/7]
 https://ss3.domint.net:3120/dv6_str/digitalvision/playlist.m3u8
-#EXTINF:-1 tvg-id="FuegoTV.do" status="online",Fuego TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="FuegoTV.do" status="timeout",Fuego TV (720p) [Not 24/7]
 https://video.misistemareseller.com/Fuegotv/Fuegotv/playlist.m3u8
 #EXTINF:-1 tvg-id="GDMTV.do" status="online",GDMTV (720p) [Not 24/7]
 https://ss2.domint.net:3200/gdm_str/gdmtv/playlist.m3u8
@@ -49,7 +49,7 @@ http://stream3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 http://190.103.183.24:1935/live/MicroHD/playlist.m3u8
 #EXTINF:-1 tvg-id="MisionELTV.do" status="online",Mision ELTV (480p) [Not 24/7]
 https://5790d294af2dc.streamlock.net/8286/8286/playlist.m3u8
-#EXTINF:-1 tvg-id="ORBITTV.do" status="blocked",ORBIT TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ORBITTV.do" status="online",ORBIT TV (480p) [Geo-blocked]
 https://ss3.domint.net:3134/otv_str/orbittv/playlist.m3u8
 #EXTINF:-1 tvg-id="PH.do" status="online",PH (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/phtv/Phtv.myStream/playlist.m3u8
@@ -73,7 +73,7 @@ http://190.122.96.186:8888/http/005
 http://108.175.14.125:1935/tdn/tdn/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleBendicion.do" status="timeout",TeleBendicion (720p) [Not 24/7]
 http://ss8.domint.net:2124/tbt_str/telebendicion/playlist.m3u8
-#EXTINF:-1 tvg-id="Telecanal28.do" status="blocked",Telecanal 28 (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Telecanal28.do" status="online",Telecanal 28 (360p) [Geo-blocked]
 http://cm.hostlagarto.com:8081/Telecanal-28/telecanal.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCibaoHD.do" status="online",TeleCibao (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Telecibao/Telecibao/playlist.m3u8
@@ -111,8 +111,6 @@ https://ss6.domint.net:3012/tes_str/teleelsalvador/playlist.m3u8
 https://ss3.domint.net:3108/zol_str/vzol/playlist.m3u8
 #EXTINF:-1 tvg-id="ZTV.do" status="online",ZTV (720p) [Not 24/7]
 https://lb00zdigital.streamprolive.com/mnt/hls/live.m3u8
-#EXTINF:-1 tvg-id="" status="online",Hilando Fino (1080p) [Not 24/7]
-https://primary-out.iptv-global.net/HilandoFinoTV/ngrp:HilandoFinoTV_all/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV Éxitos (720p) [Not 24/7]
 https://vdo1.streamgato.us:3359/live/tvexitoslive.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ecovisión (480p) [Not 24/7]
@@ -139,3 +137,5 @@ https://cloudflare.streamgato.us:3901/live/radio105live.m3u8
 https://cm.hostlagarto.com:4445/Akitv/Akitv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Viva Canal 5 (720p) [Not 24/7]
 https://iptv-all.lanesh4d0w.repl.co/dominicanrepublic/viva-canal-5
+#EXTINF:-1 tvg-id="" status="error",Hilando Fino (1080p) [Not 24/7]
+https://primary-out.iptv-global.net/HilandoFinoTV/ngrp:HilandoFinoTV_all/playlist.m3u8
