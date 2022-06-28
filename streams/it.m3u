@@ -77,7 +77,7 @@ http://178.33.224.197:1935/euroindiemusic/euroindiemusic/playlist.m3u8
 https://5f22d76e220e1.streamlock.net/eurotv/eurotv/playlist.m3u8
 #EXTINF:-1 tvg-id="FMITALIA.it" status="error",FM ITALIA (404p) [Not 24/7]
 https://stream7.xdevel.com/video0s975817-411/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="GoldTVItaly.it",Gold TV Italia (576p)
+#EXTINF:-1 tvg-id="GoldTVItaly.it" status="timeout",Gold TV Italia (576p)
 http://151.0.207.99:1935/GoldTV/GOLD_17/playlist.m3u8
 #EXTINF:-1 tvg-id="HistoryLab.it" status="error",History Lab (270p) [Not 24/7]
 https://5929b138b139d.streamlock.net/HistoryLab/livestream/playlis.m3u8
@@ -97,7 +97,7 @@ http://wms.shared.streamshow.it/italia2/mp4:italia2/playlist.m3u8
 http://151.0.207.99:1935/italia7/italia7/playlist.m3u8
 #EXTINF:-1 tvg-id="IuniorTV.it" status="online",Iunior TV (720p) [Not 24/7]
 https://5f22d76e220e1.streamlock.net/iuniortv/iuniortv/playlist.m3u8
-#EXTINF:-1 tvg-id="KissKissNapoliTV.it",Kiss Kiss Napoli TV (720p)
+#EXTINF:-1 tvg-id="KissKissNapoliTV.it" status="online",Kiss Kiss Napoli TV (720p)
 https://58f12ffd2447a.streamlock.net/KKTVNapoli/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="KissKissTV.it" status="online",Kiss Kiss TV (1080p)
 https://58f12ffd2447a.streamlock.net/KKMulti/livestream/playlist.m3u8
@@ -161,9 +161,9 @@ https://56b50ada2d659.streamlock.net/RadioBirikinaTV/livestream/playlist.m3u8
 http://capital-live-tv-01-hls.akamai.media.kataweb.it/i/CapitalTv_1@183098/master.m3u8
 #EXTINF:-1 tvg-id="RadioIbizaTV.it" status="online",Radio Ibiza TV (720p) [Not 24/7]
 https://5929b138b139d.streamlock.net/RadioIbizaTV/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioIglesias.it" status="blocked",Radio Iglesias (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RadioIglesias.it" status="online",Radio Iglesias (576p) [Geo-blocked]
 http://wms.shared.streamshow.it/visualradio/mp4:visualradio/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="blocked",Radio Iglesias Sardegna (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="online",Radio Iglesias Sardegna (576p) [Geo-blocked]
 https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioItaliaTV.it" status="online",Radio Italia TV (480p)
 https://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/master.m3u8
@@ -220,9 +220,9 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276
 http://stream.tvtap.net:8081/live/it-rai5.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RaiGulp.it" status="online",Rai Gulp (576p)
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953
-#EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="error",RAI Italia Asia (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="online",RAI Italia Asia (576p) [Geo-blocked]
 http://210.210.155.35/x6bnqe/s/s63/index2.m3u8
-#EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="error",RAI Italia Asia (576p)
+#EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="online",RAI Italia Asia (576p)
 http://210.210.155.37/x6bnqe/s/s63/index2.m3u8
 #EXTINF:-1 tvg-id="RaiMovie.it" status="online",Rai Movie (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002
@@ -280,7 +280,7 @@ https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:sportitaliahd.smil/playlist.m
 https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:simotori.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SportitaliaSolocalcio.it" status="blocked",Sportitalia Solocalcio (720p) [Geo-blocked]
 https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:sisolocalcio.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Stereo5TV.it" status="error",Stereo 5 TV (720p)
+#EXTINF:-1 tvg-id="Stereo5TV.it" status="online",Stereo 5 TV (720p)
 https://stream1.aswifi.it/stereo5/live/index.m3u8
 #EXTINF:-1 tvg-id="Studio100Puglia.it" status="online",Studio 100 Puglia (480p)
 http://wms.shared.streamshow.it:1935/studio100ta/studio100ta/playlist.m3u8
@@ -300,7 +300,7 @@ http://uk4.streamingpulse.com:1935/TeleabruzzoTV/TeleabruzzoTV/playlist.m3u8
 http://5ce9406b73c33.streamlock.net/TeleArena/TeleArena.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Telebelluno.it" status="online",Telebelluno (720p)
 https://live.mariatvcdn.com/telebelluno/a3b80388da9801906adf885282e73bc3.sdp/mono.m3u8
-#EXTINF:-1 tvg-id="Telechiara.it",Telechiara (720p)
+#EXTINF:-1 tvg-id="Telechiara.it" status="online",Telechiara (720p)
 http://fms.tvavicenza.it:1935/telechiara/diretta/playlist.m3u8
 #EXTINF:-1 tvg-id="TelecolorLombardia.it" status="online",Telecolor Lombardia (1080p) [Not 24/7]
 https://1aadf145546f475282c5b4e658c0ac4b.msvdn.net/live/324149/hlbAWtl/playlist.m3u8
@@ -452,12 +452,10 @@ http://217.61.26.46:8080/hls/news.m3u8
 http://ftp.tiscali.it/francescovernata/TVUNO/monoscopioTvUNOint-1.wmv
 #EXTINF:-1 tvg-id="" status="online",Camera dei Deputati (via RR) (240p)
 https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Radio Radicale TV (240p) [Not 24/7]
-https://video-ar.radioradicale.it/diretta/padtv2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
-https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
 https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
+https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",R 101 Italia IT (576p)
 https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(er)/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",radionorba TV (404p)
@@ -482,6 +480,8 @@ http://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=4145
 http://radio24-lh.akamaihd.net/i/radio24video_1@379914/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",Video Brescia TV (720p) [Not 24/7]
 http://wms.shared.streamshow.it/videobrescia/videobrescia/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",DeeJay TV (360p)
+https://deejay_tv-lh.akamaihd.net/i/DeejayTv_1@129866/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",Rai Sport+ [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=358025
 #EXTINF:-1 tvg-id="" status="error",RTL 102.5 (432p)
@@ -492,5 +492,5 @@ https://rtl-video2-stream.thron.com/live-video/video2/ngrp:video2/playlist.m3u8
 https://rtl-video4-stream.thron.com/live-video/video4/ngrp:video4/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",TeleRent 7Gold (720p)
 https://stream2.xdevel.com/video0s86-21/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="",DeeJay TV (360p)
-https://deejay_tv-lh.akamaihd.net/i/DeejayTv_1@129866/master.m3u8
+#EXTINF:-1 tvg-id="" status="error",Radio Radicale TV (240p) [Not 24/7]
+https://video-ar.radioradicale.it/diretta/padtv2/playlist.m3u8
