@@ -23,13 +23,13 @@ https://d3nljkrx6mjqra.cloudfront.net/out/v1/1b9d9efd27814b3b8dc570113ae54409/in
 https://video.cdmx.gob.mx/livestream/stream.m3u8
 #EXTINF:-1 tvg-id="ConectaTV.mx" status="online",Conecta TV (720p)
 http://204.12.211.210:1935/conectatv/conectatv/playlist.m3u8
-#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipódromo de las Américas (480p) [Geo-blocked]
-http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipodromo de las Americas (360p) [Not 24/7]
 http://wms10.tecnoxia.com/soelvi/slv423/playlist.m3u8
+#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="blocked",Hipódromo de las Américas (480p) [Geo-blocked]
+http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="IcrtvColima.mx" status="error",Icrtv Colima (720p) [Not 24/7]
 https://5ca9af4645e15.streamlock.net/canal11/videocanal11/playlist.m3u8
-#EXTINF:-1 tvg-id="ImagenMulticast.mx" status="timeout",Imagen Multicast (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ImagenMulticast.mx" status="error",Imagen Multicast (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UClqo4ZAAZ01HQdCTlovCgkA/live
 #EXTINF:-1 tvg-id="ImagenRadio.mx" status="error",Imagen Radio (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCB0BUmdBOrH9mYU2ebs1eWA/live
@@ -59,7 +59,7 @@ https://dcunilive21-lh.akamaihd.net/i/dclive_1@59479/master.m3u8
 https://canal10.mediaflix.istream.mx/wza_live/live/movil/playlist.m3u8
 #EXTINF:-1 tvg-id="OnceMexico.mx" status="online",Once Mexico (720p)
 https://d24sa4vr9gvjv.cloudfront.net/index.m3u8
-#EXTINF:-1 tvg-id="QuieroTV.mx" status="timeout",Quiero TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="QuieroTV.mx" status="error",Quiero TV (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x8452uw
 #EXTINF:-1 tvg-id="RCGTV2.mx" status="online",RCG TV 2 (360p) [Not 24/7]
 http://wowzacontrol.com:1936/stream23/stream23/playlist.m3u8
@@ -89,7 +89,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCot4t8PVKz8TT5xVM8Eb00w/live
 #EXTINF:-1 tvg-id="TelevisaDelGolfo.mx" status="error",Televisa Del Golfo
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQ08tNTPiBn44c975S81ftg/live
-#EXTINF:-1 tvg-id="TelevisaEstado.mx" status="timeout",Televisa Estado (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaEstado.mx" status="error",Televisa Estado (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC9DH82HVSf4katwMeUpY80w
 #EXTINF:-1 tvg-id="TelevisaGuadalajara.mx" status="error",Televisa Guadalajara (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRujF_YxVVFmTRWURQH-Cww/live
@@ -103,7 +103,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGDJLLphnP0zQQaE3kgo5Wg/live
 #EXTINF:-1 tvg-id="TelevisaMorelos.mx" status="error",Televisa Morelos
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcC9ykApQrgl4UxbKg2U4zw/live
-#EXTINF:-1 tvg-id="TelevisaNewsMexico.mx" status="timeout",Televisa News Mexico (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaNewsMexico.mx" status="error",Televisa News Mexico (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCUsm-fannqOY02PNN67C0KA/live
 #EXTINF:-1 tvg-id="TelevisaNoreste.mx" status="error",Televisa Noreste (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC752DYv5vPlTSMrvEjfZXcw/live
@@ -127,7 +127,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQb3i7gu9J8A4zzQU7j6C1Q/live
 #EXTINF:-1 tvg-id="TransmediaTelevisionMorelia.mx" status="online",Transmedia Televisión Morelia (614p) [Not 24/7]
 http://streamingcws20.com:1935/tmtv/videotmtv/playlist.m3u8
-#EXTINF:-1 tvg-id="TransmediaTelevisionMorelia.mx" status="online",Transmedia Televisión Morelia (614p) [Not 24/7]
+#EXTINF:-1 tvg-id="TransmediaTelevisionMorelia.mx" status="error",Transmedia Televisión Morelia (614p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/tmtv/videotmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TVLobo.mx" status="online",TV Lobo (720p) [Not 24/7]
 http://streamingcws20.com:1935/lobodurango/videolobodurango/playlist.m3u8
@@ -137,7 +137,7 @@ https://5ca3e84a76d30.streamlock.net/gpacifico4/smil:mazatlan.smil/playlist.m3u8
 https://5ca3e84a76d30.streamlock.net/gpacifico2/mochis.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPObregon.mx" status="online",TVP Obregón (542p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico3/obregon.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="UDGTV.mx" status="timeout",UDG44 TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="UDGTV.mx" status="error",UDG44 TV (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x3m1xfy
 #EXTINF:-1 tvg-id="XEWHTDT.mx" status="online",Telemax (XEWH-TDT) (720p)
 http://s5.mexside.net:1935/telemax/telemax/playlist.m3u8
@@ -169,14 +169,14 @@ http://jjooliveclarovideo.akamaized.net/Content/hls/Live/Channel(tveducationch01
 https://live-streams-notusa.televisa.com/channel02-b/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Multipremier (480p)
 http://201.168.205.12:8000/play/a0cp/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Canal 22 (XEIMT-TDT) [Geo-blocked]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://conceptoweb-studio.com/radio/video/canal22/
 #EXTINF:-1 tvg-id="" status="error",Claro Sin Limites (480p)
 http://170.83.242.153:8000/play/a01k
 #EXTINF:-1 tvg-id="" status="error",Azcorazon (480p)
 http://181.115.72.65:8099/play/a016/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Azmundo (480p)
 http://181.115.72.65:8099/play/a025/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Canal 22 (XEIMT-TDT) [Geo-blocked]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://conceptoweb-studio.com/radio/video/canal22/
 #EXTINF:-1 tvg-id="" status="error",Telefórmula (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7u0spq
 #EXTINF:-1 tvg-id="" status="error",Imagen TV (720p) [Not 24/7]
