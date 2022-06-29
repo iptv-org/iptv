@@ -41,7 +41,7 @@ https://bcliveunivsecure-lh.akamaihd.net/i/VERTICAL_1@301860/master.m3u8
 https://5aafcc5de91f1.streamlock.net/atfal1.com/atfal2/playlist.m3u8
 #EXTINF:-1 tvg-id="AtfalWaMawaheb.sa" status="online",Atfal Wa Mawaheb (1080p)
 https://5d658d7e9f562.streamlock.net/atfal1.com/atfal2/playlist.m3u8
-#EXTINF:-1 tvg-id="Beity.sa" status="error",Beity
+#EXTINF:-1 tvg-id="Beity.sa" status="timeout",Beity
 http://82.212.74.2:8000/live/7312.m3u8
 #EXTINF:-1 tvg-id="ENTV.sa" status="timeout",EN TV
 http://82.212.74.100:8000/live/8130.m3u8
@@ -49,7 +49,7 @@ http://82.212.74.100:8000/live/8130.m3u8
 https://iqraac.cdn.mangomolo.com/iqraa/smil:iqraar2.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="IqraaArabic.sa" status="online",Iqraa (576p) [Not 24/7]
 https://iqraac.cdn.mangomolo.com/iqraa/smil:iqraar1.stream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="KaifTV.sa" status="online",Kaif TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="KaifTV.sa" status="error",Kaif TV (576p) [Not 24/7]
 http://82.212.74.2:8000/live/hls/7311.m3u8
 #EXTINF:-1 tvg-id="KSASports1.sa" status="online",KSA Sports 1 (1080p) [Not 24/7]
 https://edge.taghtia.com/sa/9.m3u8
@@ -95,14 +95,8 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-music
 https://shls-rotanaplus-prod-dub.shahid.net/out/v1/1fc6103458be480b96e6a574b00fe1c0/index.m3u8
 #EXTINF:-1 tvg-id="SBC.sa" status="online",SBC (1080p) [Not 24/7]
 https://edge.taghtia.com/sa/1.m3u8
-#EXTINF:-1 tvg-id="SSC1HD.sa" status="blocked",SSC1 HD (1080p)
+#EXTINF:-1 tvg-id="SSC1HD.sa" status="online",SSC1 HD (1080p)
 https://shls-mbc1ksa-prod-dub.shahid.net/out/v1/6ae0a2ebab224c72ab9c298afeec8d91/index.m3u8
-#EXTINF:-1 tvg-id="SSC2HD.sa" status="blocked",SSC2 HD (1080p)
-https://ssc-6-ak.akamaized.net/out/v1/efbe58d3435d4de1beb1d7e3b27d309f/index.m3u8
-#EXTINF:-1 tvg-id="SSC5HD.sa" status="blocked",SSC5 HD (1080p)
-https://shls-mbc1ksa-prod-dub.shahid.net/out/v1/38c9aca1b6bb4239bb7ca409548a2762/index.m3u8
-#EXTINF:-1 tvg-id="SSC7HD.sa" status="blocked",SSC7 HD (1080p)
-https://shls-mbcaction-prod-dub.shahid.net/out/v1/b3ece6f93df54fa39d0065fee8e5d40d/index.m3u8
 #EXTINF:-1 tvg-id="ThikrayatTV.sa" status="online",Thikrayat TV (1080p) [Not 24/7]
 https://edge.taghtia.com/sa/3.m3u8
 #EXTINF:-1 tvg-id="WesalTV.sa" status="timeout",Wesal TV [Not 24/7]
@@ -111,6 +105,12 @@ http://live.noorlive.com:1935/wesal/wesal1/playlist.m3u8
 https://d2x08mwxhmpplo.cloudfront.net/out/v1/587631773e55495a8aa3dd4050318f6e/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",SSC Action Waleed (1080p) [Not 24/7]
 https://shls-live-event2-prod-dub.shahid.net/out/v1/0456ede1a39145d98b3d8c8062ddc998/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",SSC5 HD (1080p)
+https://shls-mbc1ksa-prod-dub.shahid.net/out/v1/38c9aca1b6bb4239bb7ca409548a2762/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",SSC7 HD (1080p)
+https://shls-mbcaction-prod-dub.shahid.net/out/v1/b3ece6f93df54fa39d0065fee8e5d40d/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",SSC2 HD (1080p)
+https://ssc-6-ak.akamaized.net/out/v1/efbe58d3435d4de1beb1d7e3b27d309f/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Saudia Radio (720p)
 https://edge.taghtia.com/sa/11.m3u8
 #EXTINF:-1 tvg-id="" status="online",Al Riyadh Radio (720p)
