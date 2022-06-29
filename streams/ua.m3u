@@ -86,7 +86,7 @@ http://live.m2.tv/hls2/stream.m3u8
 http://live.m2.tv/hls3/stream.m3u8
 #EXTINF:-1 tvg-id="MostVideoTV.ua" status="online",MostVideo.TV (720p) [Not 24/7]
 http://w4.mostvideo.tv/tv/ch1.m3u8
-#EXTINF:-1 tvg-id="Nadiya.ua" status="online",Надия/Новый канал (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Nadiya.ua" status="timeout",Надия/Новый канал (576p) [Not 24/7]
 http://nadiya.home-net.com.ua/mob/mystream.m3u8
 #EXTINF:-1 tvg-id="Nadiya.ua" status="error",Надія (720p) [Not 24/7]
 https://stream.hope.ua/hopeua/live_1/playlist.m3u8
@@ -153,9 +153,9 @@ https://rtsp.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Plus.ua" status="error",TV7+ (Хмельницький) (576p) [Not 24/7]
 https://tv7plus.com/hls/tv7.m3u8
 #EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
-http://rtsp.cdn.ua/tva.ua_live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVA.ua" status="timeout",ТВА (Чернiвцi) (576p)
 http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
+http://rtsp.cdn.ua/tva.ua_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVDom.ua" status="timeout",ТВ Дом
 http://46.149.48.21:1234
 #EXTINF:-1 tvg-id="UAOdesa.ua" status="online",UA: Одеса (384p) [Not 24/7]
@@ -193,8 +193,6 @@ http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
 https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
-#EXTINF:-1 tvg-id="" status="online",4 канал (720p)
-http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",ПравдаТУТ (720p)
@@ -233,10 +231,8 @@ http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/playlist.m3u8
 http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Перший Західний (Львов) (576p)
-http://hls.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Перший Західний (Львов) (576p)
-http://rtmp.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",4 канал (720p)
+http://95.67.106.10/hls/nta_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Micto (360p)
 http://93.78.206.172:8080/stream3/stream.m3u8
 #EXTINF:-1 tvg-id="" status="error",ЧП Инфо (576p)
@@ -251,10 +247,14 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://ftp.orbita.dn.ua/hls/orbita.m3u8
 #EXTINF:-1 tvg-id="" status="error",CNL Европа (216p)
 http://hls-live-media.cdn01.net/default/stream_10429_3.m3u8
+#EXTINF:-1 tvg-id="" status="error",Перший Західний (Львов) (576p)
+http://hls.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",CNL Европа (216p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_3.m3u8
 #EXTINF:-1 tvg-id="" status="error",ПравдаТУТ (720p)
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_low/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Перший Західний (Львов) (576p)
+http://rtmp.cdn.ua/1zahid.com_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Трофей ТВ (720p)
 https://5db1ab4f970be.streamlock.net/live/smil:trofey.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Одесса (576p) [Geo-blocked]
