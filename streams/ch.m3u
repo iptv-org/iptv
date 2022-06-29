@@ -5,7 +5,7 @@ https://canalalphaju.vedge.infomaniak.com/livecast/ik:canalalphaju/playlist.m3u8
 https://edge.vedge.infomaniak.com/livecast/ik:canalalphaju/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalAlphaNeuchatel.ch" status="online",Canal Alpha Neuchatel (1080p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:canalalpha/playlist.m3u8
-#EXTINF:-1 tvg-id="Couleur3.ch" status="online",Couleur 3 (720p)
+#EXTINF:-1 tvg-id="Couleur3.ch" status="error",Couleur 3 (720p)
 https://rtsc3video-lh.akamaihd.net/i/rtsc3video_ww@513975/master.m3u8
 #EXTINF:-1 tvg-id="DieuTV.ch" status="online",Dieu TV (1080p)
 https://katapy.hs.llnwd.net/dieutvwza1/DIEUTVLIVE/smil:dieutv.smil/playlist.m3u8
@@ -17,7 +17,7 @@ https://edge.vedge.infomaniak.com/livecast/ik:livesd2/master.m3u8
 https://livehd.vedge.infomaniak.com/livecast/livehd/master.m3u8
 #EXTINF:-1 tvg-id="Kanal9.ch" status="online",Kanal 9 auf Deutsch (1080p)
 https://livesd2.vedge.infomaniak.com/livecast/ik:livesd2/master.m3u8
-#EXTINF:-1 tvg-id="Kanal9.ch" status="timeout",Kanal 9 en Français (1080p)
+#EXTINF:-1 tvg-id="Kanal9.ch" status="error",Kanal 9 en Français (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:livehd/master.m3u8
 #EXTINF:-1 tvg-id="LaTele.ch" status="online",La Télé (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:latele/playlist.m3u8
@@ -31,10 +31,10 @@ https://lfmhd.vedge.infomaniak.com/livecast/lfmhd/playlist.m3u8
 https://lfmmd.vedge.infomaniak.com/livecast/smil:lfmmd.smil/manifest.m3u8
 #EXTINF:-1 tvg-id="Meteonews.ch" status="online",Meteonews (1080p)
 https://streaming.meteonews.net/hls/stream.m3u8
-#EXTINF:-1 tvg-id="MyCinemaEurope.ch" status="online",My Cinema Europe (576p) [Geo-blocked]
-http://210.210.155.35/uq2663/h/h18/index.m3u8
 #EXTINF:-1 tvg-id="MyCinemaEurope.ch" status="online",My Cinema Europe (576p)
 http://210.210.155.37/uq2663/h/h18/index.m3u8
+#EXTINF:-1 tvg-id="MyCinemaEurope.ch" status="error",My Cinema Europe (576p) [Geo-blocked]
+http://210.210.155.35/uq2663/h/h18/index.m3u8
 #EXTINF:-1 tvg-id="OneTV.ch" status="online",One TV (720p)
 https://edge.vedge.infomaniak.com/livecast/ik:onefmmd/manifest.m3u8
 #EXTINF:-1 tvg-id="Radio3i.ch" status="online",Radio 3i (720p)
@@ -51,7 +51,7 @@ https://edge.vedge.infomaniak.com/livecast/ik:event/playlist.m3u8
 https://event.vedge.infomaniak.com/livecast/event.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RougeTV.ch" status="online",Rouge TV (720p)
 https://rougetv.vedge.infomaniak.com/livecast/rougetv/playlist.m3u8
-#EXTINF:-1 tvg-id="RoyalTV.ch" status="error",Royal TV (720p)
+#EXTINF:-1 tvg-id="RoyalTV.ch" status="timeout",Royal TV (720p)
 http://source2.primetime.ch:2981/play/royaltv/index.m3u8
 #EXTINF:-1 tvg-id="Schweiz5.ch" status="timeout",Schweiz 5 (1080p)
 https://stream.schweiz5.ch/schweiz52020/stream.m3u8
@@ -81,9 +81,9 @@ https://tvm3.vedge.infomaniak.com/livecast/tvm3/playlist.m3u8
 https://s3.welocal.world/tvo/media/447348/videos/hls.m3u8
 #EXTINF:-1 tvg-id="" status="online",LFM TV (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:lfmhd/manifest.m3u8
-#EXTINF:-1 tvg-id="" status="online",LFM TV (1080p)
-https://edge.vedge.infomaniak.com/livecast/ik:lfmmd/manifest.m3u8
 #EXTINF:-1 tvg-id="" status="online",TVO (CH) (720p)
 https://cdnapisec.kaltura.com/p/1719221/sp/171922100/playManifest/entryId/1_t5h46v64/format/applehttp/protocol/https/a.m3u8
 #EXTINF:-1 tvg-id="" status="online",Die Neue Zeit (576p)
 https://www.onairport.live/die-neue-zeit-tv-live/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",LFM TV (1080p)
+https://edge.vedge.infomaniak.com/livecast/ik:lfmmd/manifest.m3u8
