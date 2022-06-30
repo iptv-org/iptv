@@ -41,9 +41,9 @@ https://c.mjh.nz/abc2
 https://iptv-all.lanesh4d0w.repl.co/australia/acctv-adelaide
 #EXTINF:-1 tvg-id="ACCTV.au" status="error",ACCTV (Melbourne) (720p)
 https://iptv-all.lanesh4d0w.repl.co/australia/acctv-melbourne
-#EXTINF:-1 tvg-id="AlBaselFilm.au" status="online",Aflam Mohtrama (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlBaselFilm.au" status="error",Aflam Mohtrama (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/mim21889/live
-#EXTINF:-1 tvg-id="AusTamilTV.au" status="online",Aus Tamil (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AusTamilTV.au" status="error",Aus Tamil (720p) [Not 24/7]
 https://bk7l2pn7dx53-hls-live.5centscdn.com/austamil/fe01ce2a7fbac8fafaed7c982a04e229.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="AustraliaChannel.au" status="online",Australia Channel (720p)
 https://austchannel-live.akamaized.net/hls/live/2002729/austchannel-news/master.m3u8
@@ -61,7 +61,7 @@ https://app.m4stream.live/mfourmalayalamhls/live.m3u8
 https://i.mjh.nz/au/Sydney/tv.101204200421.m3u8
 #EXTINF:-1 tvg-id="NITV.au" status="blocked",NITV [Geo-blocked]
 https://i.mjh.nz/au/Sydney/tv.320203000305.m3u8
-#EXTINF:-1 tvg-id="OpenShop.au" status="blocked",Open Shop [Geo-blocked]
+#EXTINF:-1 tvg-id="OpenShop.au" status="error",Open Shop [Geo-blocked]
 https://i.mjh.nz/au/Sydney/tv.7openshop.m3u8
 #EXTINF:-1 tvg-id="OpenShop.au" status="error",Open Shop (720p)
 https://medialive.openshop.com.au/asn-live_1.m3u8
@@ -83,14 +83,14 @@ https://i.mjh.nz/au/Sydney/tv.320203000303.m3u8
 https://i.mjh.nz/au/Sydney/tv.320203000307.m3u8
 #EXTINF:-1 tvg-id="SevenNetwork.au" status="blocked",Seven [Geo-blocked]
 https://i.mjh.nz/au/Sydney/tv.101305020520.m3u8
-#EXTINF:-1 tvg-id="SkyRacing1.au" status="online",Sky Racing 1 (720p)
-https://skylivetab-i.akamaihd.net/hls/live/569779/tablive/sky1.m3u8
 #EXTINF:-1 tvg-id="SkyRacing1.au" status="error",Sky Racing 1 (270p) [Not 24/7]
 https://skylivesky-i.akamaihd.net/hls/live/569780/skylive/sky1.m3u8
-#EXTINF:-1 tvg-id="SkyRacing2.au" status="online",Sky Racing 2 (360p)
-https://skylivetab-i.akamaihd.net/hls/live/569779/tablive/sky2.m3u8
+#EXTINF:-1 tvg-id="SkyRacing1.au" status="error",Sky Racing 1 (720p)
+https://skylivetab-i.akamaihd.net/hls/live/569779/tablive/sky1.m3u8
 #EXTINF:-1 tvg-id="SkyRacing2.au" status="error",Sky Racing 2 (360p) [Not 24/7]
 https://skylivesky-i.akamaihd.net/hls/live/569780/skylive/sky2.m3u8
+#EXTINF:-1 tvg-id="SkyRacing2.au" status="error",Sky Racing 2 (360p)
+https://skylivetab-i.akamaihd.net/hls/live/569779/tablive/sky2.m3u8
 #EXTINF:-1 tvg-id="SnowyMountainsTelevision.au" status="error",Snowy Mountains Television (1080p) [Geo-blocked]
 https://dcunilive30-lh.akamaihd.net/i/dclive_1@535229/master.m3u8
 #EXTINF:-1 tvg-id="TravelFoodTV.au" status="timeout",Travel & Food TV (720p)
@@ -101,8 +101,6 @@ http://www.rtvcdn.com.au:8082/TV0002.m3u8
 https://c.mjh.nz/101002210224
 #EXTINF:-1 tvg-id="" status="online",ausbiz TV (720p) [Geo-blocked]
 https://d9quh89lh7dtw.cloudfront.net/public-output/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Sky Thoroughbred Central (720p)
-https://skylivetab-i.akamaihd.net/hls/live/569779/tablive/stcsd.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",7two [Geo-blocked]
 https://i.mjh.nz/au/Sydney/tv.101305020522.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",10 (720p) [Geo-blocked]
@@ -111,3 +109,5 @@ https://i.mjh.nz/au/Sydney/tv.101406020625.m3u8
 https://i.mjh.nz/au/Sydney/tv.101204200427.m3u8
 #EXTINF:-1 tvg-id="" status="error",Sky Thoroughbred Central (720p)
 https://skylivesky-i.akamaihd.net/hls/live/569780/skylive/stcsd.m3u8
+#EXTINF:-1 tvg-id="" status="error",Sky Thoroughbred Central (720p)
+https://skylivetab-i.akamaihd.net/hls/live/569779/tablive/stcsd.m3u8

@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Ame47.do" status="error",Amé 47 (720p)
 https://ss6.domint.net:3028/ame_str/amecanal47/playlist.m3u8
-#EXTINF:-1 tvg-id="AnimeZoneTV.do" status="error",Anime Zone TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="AnimeZoneTV.do" status="online",Anime Zone TV (480p) [Not 24/7]
 http://azxtv.com/hls/stream.m3u8
 #EXTINF:-1 tvg-id="Boreal.do" status="error",Boreal (720p)
 https://5b38ce71f1f00.streamlock.net/8180/8180/playlist.m3u8
@@ -19,7 +19,7 @@ https://live.teledom.info:3713/live/cinevisionlive.m3u8
 http://50.30.37.36:1935/live/smil:MyStream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ComunionTV.do" status="online",Comunion TV (720p) [Not 24/7]
 http://50.30.37.36:1935/live/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="DANTV.do" status="online",DAN TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="DANTV.do" status="error",DAN TV (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Punaltv/punaltvHD.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="Digital15.do" status="error",Digital 15 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/27456795/events/8268514/player
@@ -37,7 +37,7 @@ http://cm.hostlagarto.com:8081/hits360tv/hits360HD.myStream/playlist.m3u8
 http://cm.hostlagarto.com:8081/Hmtv/hmtv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="LAMIATV.do" status="timeout",LA MIA TV (720p) [Not 24/7]
 https://ss8.domint.net:3108/mia_str/lamiatv/playlist.m3u8
-#EXTINF:-1 tvg-id="LocomotionTV.do" status="error",Locomotion TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="LocomotionTV.do" status="online",Locomotion TV (480p) [Not 24/7]
 http://51.222.85.85:81/hls/loco/index.m3u8
 #EXTINF:-1 tvg-id="LocomotionTV.do" status="error",Locomotion TV (480p) [Not 24/7]
 http://locomotiontv.com/envivo/loco_ch/stream.m3u8
@@ -77,13 +77,13 @@ http://ss8.domint.net:2124/tbt_str/telebendicion/playlist.m3u8
 http://cm.hostlagarto.com:8081/Telecanal-28/telecanal.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCibaoHD.do" status="online",TeleCibao (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Telecibao/Telecibao/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleCibaoHD.do" status="blocked",TeleCibao (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleCibaoHD.do" status="online",TeleCibao (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/Telecibao/Telecibao/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleimpacto.do" status="online",Teleimpacto (720p) [Not 24/7]
 http://190.122.96.188:8888/http/013
 #EXTINF:-1 tvg-id="Telemicro.do" status="error",Telemicro (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/28126860/events/8825282/live.m3u8
-#EXTINF:-1 tvg-id="Telemilenio.do" status="online",Telemilenio (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Telemilenio.do" status="error",Telemilenio (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Telemilenio/Telemilenio.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="Telenord8.do" status="online",Telenord 8 (1080p) [Not 24/7]
 http://newyorkstream.ddns.net:1935/telenord8/telenord8/playlist.m3u8
@@ -99,7 +99,7 @@ http://server3.prostudionetwork.com:1945/teleunion/TU/playlist.m3u8
 http://ss6.domint.net:2060/tvm_str/montanatv/master.m3u8
 #EXTINF:-1 tvg-id="TVPlata.do" status="error",TV Plata (1080p) [Not 24/7]
 https://ss6.domint.net:3104/tvp_str/tvplata/playlist.m3u8
-#EXTINF:-1 tvg-id="TVS.do" status="error",TVS (540p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVS.do" status="blocked",TVS (540p) [Geo-blocked]
 http://cm.hostlagarto.com:8081/Tvstv/TvstvHD.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="Vallevision.do" status="online",Vallevision (720p) [Not 24/7]
 http://190.103.183.24:1935/Vallevision/ValleHD/playlist.m3u8
@@ -111,6 +111,8 @@ https://ss6.domint.net:3012/tes_str/teleelsalvador/playlist.m3u8
 https://ss3.domint.net:3108/zol_str/vzol/playlist.m3u8
 #EXTINF:-1 tvg-id="ZTV.do" status="online",ZTV (720p) [Not 24/7]
 https://lb00zdigital.streamprolive.com/mnt/hls/live.m3u8
+#EXTINF:-1 tvg-id="" status="online",AkíTV (720p) [Not 24/7]
+https://cm.hostlagarto.com:4445/Akitv/Akitv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV Éxitos (720p) [Not 24/7]
 https://vdo1.streamgato.us:3359/live/tvexitoslive.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ecovisión (480p) [Not 24/7]
@@ -133,8 +135,6 @@ https://cloudflare.streamgato.us:3352/live/ghtelevisionhdlive.m3u8
 https://cloudflare.streamgato.us:3549/live/canal56live.m3u8
 #EXTINF:-1 tvg-id="" status="error",Radio105 full (1080p) [Not 24/7]
 https://cloudflare.streamgato.us:3901/live/radio105live.m3u8
-#EXTINF:-1 tvg-id="" status="error",AkíTV (720p) [Not 24/7]
-https://cm.hostlagarto.com:4445/Akitv/Akitv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Viva Canal 5 (720p) [Not 24/7]
 https://iptv-all.lanesh4d0w.repl.co/dominicanrepublic/viva-canal-5
 #EXTINF:-1 tvg-id="" status="error",Hilando Fino (1080p) [Not 24/7]

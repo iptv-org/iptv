@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="3eeshAlAanTV.ae" status="online",Al Aan TV (720p)
+#EXTINF:-1 tvg-id="3eeshAlAanTV.ae" status="error",Al Aan TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://dai.ly/x74wje5
 #EXTINF:-1 tvg-id="AbuDhabiAloula.ae" status="online",Abu Dhabi Aloula (1080p)
 https://admdn2.cdn.mangomolo.com/adtv/smil:adtv.stream.smil/playlist.m3u8
@@ -13,9 +13,9 @@ https://admdn5.cdn.mangomolo.com/adsports2/smil:adsports2.stream.smil/playlist.m
 https://admdn3.cdn.mangomolo.com/adsports3/smil:adsports3.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AbuDhabiSports4.ae" status="blocked",Abu Dhabi Sports 4 (1080p) [Geo-blocked]
 https://admdn4ta.cdn.mgmlcdn.com/adsports4/smil:adsports4.stream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AjmanTV.ae" status="blocked",Ajman TV [Not 24/7]
+#EXTINF:-1 tvg-id="AjmanTV.ae" status="online",Ajman TV [Not 24/7]
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/d3e9fc3b874a46159ce3724d802e3f8d/playlist.m3u8
-#EXTINF:-1 tvg-id="AlAanTV.ae" status="online",Al Aan (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlAanTV.ae" status="error",Al Aan (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x74wje5
 #EXTINF:-1 tvg-id="Alarabiya.ae" status="online",Al Arabiya (1080p)
 https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8
@@ -42,9 +42,9 @@ https://shls-cartoon-net-prod-dub.shahid.net/out/v1/dc4aa87372374325a66be458f29e
 #EXTINF:-1 tvg-id="CitrussTV.ae" status="blocked",Citruss TV (720p) [Geo-blocked]
 https://citrusstv.akamaized.net/hls/live/687285/CTV/index.m3u8
 #EXTINF:-1 tvg-id="CNBCArabiya.ae" status="online",CNBC Arabia (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.cnbcarabia.com/Pages/live
-#EXTINF:-1 tvg-id="CNBCArabiya.ae" status="online",CNBC Arabia (1080p)
 https://hiplayer.hibridcdn.net/p/cnbcarabia-live.m3u8
+#EXTINF:-1 tvg-id="CNBCArabiya.ae" status="error",CNBC Arabia (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.cnbcarabia.com/Pages/live
 #EXTINF:-1 tvg-id="DubaiOne.ae" status="online",Dubai One (1080p)
 http://dminnvll.cdn.mangomolo.com/dubaione/smil:dubaione.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="DubaiRacing2.ae" status="online",Dubai Racing 2 (1080p)
@@ -61,10 +61,10 @@ https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd/smil:dubaisportshd.smil/index
 https://dmitwlvvll.cdn.mangomolo.com/dubaisportshd5/smil:dubaisportshd5.smil/index.m3u8
 #EXTINF:-1 tvg-id="DubaiTV.ae" status="online",Dubai TV (1080p)
 https://dmisxthvll.cdn.mgmlcdn.com/dubaitvht/smil:dubaitv.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="DubaiTVInternational.ae" status="online",Dubai TV International (576p)
+http://210.210.155.37/uq2663/h/h152/index2.m3u8
 #EXTINF:-1 tvg-id="DubaiTVInternational.ae" status="error",Dubai TV International (576p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h152/index2.m3u8
-#EXTINF:-1 tvg-id="DubaiTVInternational.ae" status="error",Dubai TV International (576p)
-http://210.210.155.37/uq2663/h/h152/index2.m3u8
 #EXTINF:-1 tvg-id="DubaiZaman.ae" status="online",Dubai Zaman (1080p) [Not 24/7]
 https://dmiffthvll.cdn.mangomolo.com/dubaizaman/smil:dubaizaman.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="HawasTV.ae" status="online",Hawas TV (480p)
@@ -73,9 +73,9 @@ https://jmc-live.ercdn.net/hawastvhd/hawastvhd.m3u8
 https://admdn5.cdn.mangomolo.com/majid/smil:majid.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MBC1.ae" status="blocked",MBC 1 KSA (1080p) [Geo-blocked]
 https://shls-mbc1ksa-prod-dub.shahid.net/out/v1/451b666db1fb41c7a4bbecf7b4865107/index.m3u8
-#EXTINF:-1 tvg-id="MBC1USA.ae" status="online",MBC 1 USA (1080p)
+#EXTINF:-1 tvg-id="MBC1USA.us" status="online",MBC 1 USA (1080p)
 https://shls-mbc1-usa-prod.shahid.net/out/v1/1b559e832c3f40f996c1984245b3b24b/index.m3u8
-#EXTINF:-1 tvg-id="MBC1USA.ae" status="online",MBC 1 North America (1080p)
+#EXTINF:-1 tvg-id="MBC1USA.us" status="online",MBC 1 North America (1080p)
 https://shls-mbc1na-prod-dub.shahid.net/out/v1/84ab37e99d6e4b16b33c6600f94f6ccb/index.m3u8
 #EXTINF:-1 tvg-id="MBC2.ae" status="error",MBC 2 (720p)
 http://multies.xyz:8000/live/22-5-MbC2-Mx-AcT/G8bwyFcnsM/106.m3u8
@@ -85,7 +85,7 @@ https://shls-mbc3-eur-prod-dub.shahid.net/out/v1/fce09dd6a967431a871efb3b8dec9f8
 https://shls-mbc3-prod-dub.shahid.net/out/v1/d5bbe570e1514d3d9a142657d33d85e6/index.m3u8
 #EXTINF:-1 tvg-id="MBC3.ae" status="blocked",MBC 3 KSA
 http://zinachannels.zinamedia.net/ar-s/mbc-3/index.m3u8
-#EXTINF:-1 tvg-id="MBC3USA.ae" status="online",MBC 3 USA (1080p)
+#EXTINF:-1 tvg-id="MBC3USA.us" status="online",MBC 3 USA (1080p)
 https://shls-mbc3-usa-prod.shahid.net/out/v1/f7584f50d13c4c01b0fac2be04c61c7e/index.m3u8
 #EXTINF:-1 tvg-id="MBC4.ae" status="blocked",MBC 4 (1080p) [Geo-blocked]
 https://shls-mbc4-prod-dub.shahid.net/out/v1/c08681f81775496ab4afa2bac7ae7638/index.m3u8
@@ -101,7 +101,7 @@ https://shls-mbcaction-prod-dub.shahid.net/out/v1/68dd761538e5460096c42422199d05
 https://shls-mbcbollywood-prod-dub.shahid.net/out/v1/a79c9d7ef2a64a54a64d5c4567b3462a/index.m3u8
 #EXTINF:-1 tvg-id="MBCDrama.ae" status="online",MBC Drama KSA (1080p)
 https://shls-mbcdramaksa-prod-dub.shahid.net/out/v1/ce0f0762d89e4394a856c5fd13e43645/index.m3u8
-#EXTINF:-1 tvg-id="MBCDramaUSA.ae" status="online",MBC Drama USA (1080p)
+#EXTINF:-1 tvg-id="MBCDramaUSA.us" status="online",MBC Drama USA (1080p)
 https://shls-mbc-drama-usa-prod.shahid.net/out/v1/efb67fc5c04a40778cd5c21e2e7ea884/index.m3u8
 #EXTINF:-1 tvg-id="MBCFM.ae" status="online",MBC FM (1080p)
 https://mbcfm-riyadh-prod-dub.shahid.net/out/v1/69c8a03f507e422f99cf5c07291c9e3a/index.m3u8
@@ -111,7 +111,7 @@ https://shls-iraq-prod-dub.shahid.net/out/v1/c9bf1e87ea66478bb20bc5c93c9d41ea/in
 https://shls-masr2-prod-dub.shahid.net/out/v1/f683685242b549f48ea8a5171e3e993a/index.m3u8
 #EXTINF:-1 tvg-id="MBCMasr.eg" status="online",MBC Masr 1 (1080p) [Geo-blocked]
 https://shls-masr-prod-dub.shahid.net/out/v1/b7093401da27496797a8949de23f4578/index.m3u8
-#EXTINF:-1 tvg-id="MBCMasrUSA.eg" status="online",MBC Masr 1 USA (1080p)
+#EXTINF:-1 tvg-id="MBCMasrUSA.us" status="online",MBC Masr 1 USA (1080p)
 https://shls-mbc-masr-usa-prod.shahid.net/out/v1/d4fded7d5df04b88b9ea1db61d00f095/index.m3u8
 #EXTINF:-1 tvg-id="MBCPersia.ae" status="online",MBC Persia (1080p)
 https://shls-mbcpersia-prod-dub.shahid.net/out/v1/bdc7cd0d990e4c54808632a52c396946/index.m3u8
@@ -127,7 +127,7 @@ http://82.114.67.178:8081/hls/PeaceTV.m3u8
 https://dmieigthvll.cdn.mgmlcdn.com/samadubaiht/smil:samadubai.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Sharjah2.ae" status="online",Sharjah 2 (1080p)
 https://svs.itworkscdn.net/smc2live/smc2tv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SharjahRadioQuran.ae" status="online",Sharjah Radio Quran (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="SharjahRadioQuran.ae" status="error",Sharjah Radio Quran (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtube.com/channel/UCn8lMRYDANs_1yAL3iuw7_g/live
 #EXTINF:-1 tvg-id="SharjahSports.ae" status="online",Sharjah Sports TV (1080p)
 https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8
