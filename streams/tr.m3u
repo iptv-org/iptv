@@ -28,10 +28,10 @@ https://tv.ensonhaber.com/tv/tr/benguturk/index.m3u8
 http://cdn-berattv.yayin.com.tr/berattv/berattv/playlist.m3u8
 #EXTINF:-1 tvg-id="BesiktasWebTV.tr" status="online",Beşiktaş Web TV (360p)
 https://s01.vpis.io/besiktas/besiktas.m3u8
+#EXTINF:-1 tvg-id="BeyazTV.tr" status="online",Beyaz TV (720p) [Not 24/7]
+https://tv.ensonhaber.com/tv/tr/beyaztv/index.m3u8
 #EXTINF:-1 tvg-id="BeyazTV.tr" status="error",Beyaz TV (480p) [Not 24/7]
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/87
-#EXTINF:-1 tvg-id="BeyazTV.tr" status="error",Beyaz TV (720p) [Not 24/7]
-https://tv.ensonhaber.com/tv/tr/beyaztv/index.m3u8
 #EXTINF:-1 tvg-id="BodrumBelediyesiWebTV.tr" status="online",Bodrum Belediyesi Web TV (720p)
 https://win2.yayin.com.tr/bodrumbeltv/bodrumbeltv/playlist.m3u8
 #EXTINF:-1 tvg-id="BricveSatrancTV.tr" status="online",Satranç TV (480p) [Not 24/7]
@@ -46,7 +46,7 @@ https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8
 http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="CanTV.tr" status="error",Can TV (720p) [Not 24/7]
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/105.m3u8
-#EXTINF:-1 tvg-id="CayTV.tr" status="online",Cay TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CayTV.tr" status="blocked",Cay TV (720p) [Not 24/7]
 http://stream2.taksimbilisim.com:1935/caytv/bant1/CAYTV.m3u8
 #EXTINF:-1 tvg-id="CekmekoyTV.tr" status="online",Cekmeköy TV (1080p)
 https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv/playlist.m3u8
@@ -122,12 +122,12 @@ https://mn-nl.mncdn.com/blutv_halktv/smil:halktv_sd.smil/playlist.m3u8
 https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p)
-http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
-#EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p) [Not 24/7]
-https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="error",İBB TV (720p)
 http://wowza.istweb.tv:1935/dp/istanbul2/playlist.m3u8
+#EXTINF:-1 tvg-id="IBBTV.tr" status="error",IBB TV (1080p)
+http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
+#EXTINF:-1 tvg-id="IBBTV.tr" status="error",IBB TV (1080p) [Not 24/7]
+https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="error",İBB TV [Not 24/7]
 rtmp://wowza.istweb.tv:1935/webtv/webtv_wowza1
 #EXTINF:-1 tvg-id="IcelTV.tr" status="online",Icel TV (720p) [Not 24/7]
@@ -142,7 +142,7 @@ https://waw2.artiyerelmedya.net/kanal3/bant1/playlist.m3u8
 https://live.kanal7.com/live/kanal7LiveDesktop/index.m3u8
 #EXTINF:-1 tvg-id="Kanal7.tr" status="online",Kanal 7 (576p) [Not 24/7]
 https://live.kanal7.com/live/kanal7LiveMobile/index.m3u8
-#EXTINF:-1 tvg-id="Kanal7Avrupa.tr" status="online",Kanal 7 Avrupa (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal7Avrupa.tr" status="error",Kanal 7 Avrupa (1080p) [Not 24/7]
 https://live.kanal7.com/live/kanal7AvrupaLive/index.m3u8
 #EXTINF:-1 tvg-id="Kanal12.tr" status="online",Kanal 12 (720p) [Not 24/7]
 https://waw1.artiyerelmedya.net/kanal12/bant1/playlist.m3u8
@@ -393,8 +393,6 @@ https://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
 http://mtulqxgomrllive.mediatriple.net/mtulqxgomrllive/broadcast_59f9c0c785b88.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ALTAS TV (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/altastv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Tarsus Güney TV (270p)
-http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Mercan TV (720p) [Not 24/7]
 http://yerelmedya.tv:1935/mercantv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ALTAŞ TV (720p) [Not 24/7]
@@ -435,6 +433,8 @@ http://kuzeykibris.tv/m3u8/tv_genc.m3u8
 http://kuzeykibris.tv/m3u8/tv_gunes.m3u8
 #EXTINF:-1 tvg-id="" status="error",Kanal T (720p) [Not 24/7]
 http://kuzeykibris.tv/m3u8/tv_kanalt.m3u8
+#EXTINF:-1 tvg-id="" status="error",Tarsus Güney TV (270p)
+http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Petra TV (1080p) [Not 24/7]
 http://tt61.mine.nu/live/PetraTV/Fw99Gpq7Gq/6478.m3u8
 #EXTINF:-1 tvg-id="" status="error",MSBC Kanal 2000 (360p) [Not 24/7]

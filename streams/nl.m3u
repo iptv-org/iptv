@@ -65,7 +65,7 @@ https://ms7.mx-cd.net/tv/153-840564/Omroep_Peel_en_Maas_TV.smil/playlist.m3u8
 https://ms2.mx-cd.net/tv/184-782326/Omroep_Tilburg_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OmroepTilburgTV.nl" status="online",Omroep Tilburg TV (480p)
 https://ms7.mx-cd.net/tv/184-782326/Omroep_Tilburg_TV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="OmropFryslanTV.nl" status="error",Omrop Fryslân (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="OmropFryslanTV.nl" status="online",Omrop Fryslân (1080p) [Not 24/7]
 https://d3pvma9xb2775h.cloudfront.net/live/omropfryslan/stream04/index.m3u8
 #EXTINF:-1 tvg-id="OpenRotterdam.nl" status="online",Open Rotterdam (480p) [Not 24/7]
 http://ms2.mx-cd.net/tv/141-573555/OPEN_Rotterdam.smil/playlist.m3u8
@@ -97,7 +97,7 @@ https://ms7.mx-cd.net/MC-Monitoring/260-2403096/90TV.smil/playlist.m3u8
 http://highvolume04.streampartner.nl/regiomedia/regiomedia/playlist.m3u8
 #EXTINF:-1 tvg-id="RN7.nl" status="blocked",Radio RN7 (576p) [Geo-blocked]
 http://streaming.rn7.nl/rn7tv/live_576/playlist.m3u8
-#EXTINF:-1 tvg-id="RTVAmstelveen.nl" status="online",RTV Amstelveen (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTVAmstelveen.nl" status="error",RTV Amstelveen (720p) [Not 24/7]
 https://live.rtva.nl/live/zender.m3u8
 #EXTINF:-1 tvg-id="RTVConnectTV.nl" status="online",RTV Connect TV (480p)
 https://ms7.mx-cd.net/tv/163-669433/RTV_Arnhem.smil/playlist.m3u8
@@ -185,8 +185,6 @@ https://ms7.mx-cd.net/tv/192-840604/Jenz_TV.smil/playlist.m3u8
 http://593aed234297b.streamlock.net:1935/rtvnof/rtvnof/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",JIN TV (720p)
 https://live.jintv.org:12443/medialive/jintv.m3u8
-#EXTINF:-1 tvg-id="" status="online",Radio VOS FM (720p) [Not 24/7]
-http://593aed234297b.streamlock.net:1935/henrymeeuws/henrymeeuws/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",RTV NOF 2 (720p) [Not 24/7]
 http://593aed234297b.streamlock.net:1935/rtvnof2/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",L1mburg (720p) [Not 24/7]
@@ -211,6 +209,8 @@ http://163.172.39.215:25461/line/C4@!a3a1@!w72A/27
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/27.m3u8
 #EXTINF:-1 tvg-id="" status="error",Radio NL (1080p) [Not 24/7]
 http://558bd16067b67.streamlock.net:1935/radionl/radionl/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Radio VOS FM (720p) [Not 24/7]
+http://593aed234297b.streamlock.net:1935/henrymeeuws/henrymeeuws/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Radio A1 (1080p) [Not 24/7]
 http://stream.a1mediagroep.eu/hls/a1studio.m3u8
 #EXTINF:-1 tvg-id="" status="error",Bazme Asheghan (720p)
