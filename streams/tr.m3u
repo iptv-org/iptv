@@ -16,7 +16,7 @@ https://akittv-live.ercdn.net/akittv/akittv.m3u8
 http://win4.yayin.com.tr/postatv/postatv/playlist.m3u8
 #EXTINF:-1 tvg-id="AlZahraTVTurkic.tr" status="online",Al-Zahra TV Turkic (720p) [Not 24/7]
 https://live.al-zahratv.com/live/playlist.m3u8
-#EXTINF:-1 tvg-id="ArasTV.tr" status="blocked",ARAS TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="ArasTV.tr" status="online",ARAS TV (576p) [Not 24/7]
 http://1.rtmp.org/tv217/yayin.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ASTV.tr" status="online",Bursa AS TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/astv/bant1/playlist.m3u8
@@ -218,9 +218,9 @@ https://waw2.artiyerelmedya.net/mercantv/bant1/playlist.m3u8
 https://b01c02nl.mediatriple.net/videoonlylive/mtfgdbkwkjllolive/broadcast_5b1673b7c36b7.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MiskFM.tr" status="error",Misk FM (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCrvsAwtrxZ0q31yU9JEBdWA/live
-#EXTINF:-1 tvg-id="NaturalTV.tr" status="error",Natural TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NaturalTV.tr" status="online",Natural TV (720p) [Not 24/7]
 http://broadcasttr.com:1935/naturaltv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="NaturalTV.tr" status="error",Natural TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NaturalTV.tr" status="online",Natural TV (720p) [Not 24/7]
 https://broadcasttr.com:446/naturaltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="NTV.tr" status="error",NTV (480p) [Not 24/7]
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/128
@@ -257,7 +257,7 @@ https://tv.ensonhaber.com/tv/tr/showtv/index.m3u8
 http://4ce5e2d62ee2c10e43c709f9b87c44d5.streamhost.cc/m3u8/Turkish/8b8823ce5525d9b.m3u8
 #EXTINF:-1 tvg-id="SinopYildizTV.tr" status="online",Sinop Yildiz TV (360p)
 https://s01.vpis.io/sinopyildiz/sinopyildiz.m3u8
-#EXTINF:-1 tvg-id="SportsTV.tr" status="error",Sports TV (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SportsTV.tr" status="online",Sports TV (720p) [Geo-blocked]
 https://live.sportstv.com.tr/hls/low/sportstv.m3u8
 #EXTINF:-1 tvg-id="StarTV.tr" status="online",Star TV (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=http://www.dailymotion.com/video/x729whv
@@ -347,7 +347,7 @@ https://broadcasttr.com:446/tv52/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="TV85.tr" status="error" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",TV 8.5 (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://mn-nl.mncdn.com/blutv_tv8_5/smil:tv8_5_sd.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVDen.tr" status="online",TV Den (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVDen.tr" status="error",TV Den (576p) [Not 24/7]
 http://canli.tvden.com.tr/hls/live.m3u8
 #EXTINF:-1 tvg-id="TVEm.tr" status="online",TV Em (486p)
 http://cdn-tvem.yayin.com.tr/TVEM/TVEM/playlist.m3u8
@@ -393,8 +393,6 @@ https://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
 http://mtulqxgomrllive.mediatriple.net/mtulqxgomrllive/broadcast_59f9c0c785b88.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ALTAS TV (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/altastv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Tarsus Güney TV (270p)
-http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Mercan TV (720p) [Not 24/7]
 http://yerelmedya.tv:1935/mercantv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ALTAŞ TV (720p) [Not 24/7]
@@ -435,6 +433,8 @@ http://kuzeykibris.tv/m3u8/tv_genc.m3u8
 http://kuzeykibris.tv/m3u8/tv_gunes.m3u8
 #EXTINF:-1 tvg-id="" status="error",Kanal T (720p) [Not 24/7]
 http://kuzeykibris.tv/m3u8/tv_kanalt.m3u8
+#EXTINF:-1 tvg-id="" status="error",Tarsus Güney TV (270p)
+http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Petra TV (1080p) [Not 24/7]
 http://tt61.mine.nu/live/PetraTV/Fw99Gpq7Gq/6478.m3u8
 #EXTINF:-1 tvg-id="" status="error",MSBC Kanal 2000 (360p) [Not 24/7]
