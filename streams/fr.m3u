@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="7ALimoges.fr" status="online",7ALimoges (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="7ALimoges.fr" status="error",7ALimoges (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCdFv_ZWQ3Xk_NfRiaK-ryGg/live
 #EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="online",Alpe d’Huez TV (720p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
@@ -96,9 +96,9 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANC
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Espanol/live
 #EXTINF:-1 tvg-id="France24French.fr" status="online",France 24 French (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24/live
-#EXTINF:-1 tvg-id="Franceinfo.fr" status="timeout",Franceinfo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Franceinfo.fr",Franceinfo (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/franceinfo/live
-#EXTINF:-1 tvg-id="FranceInter.fr" status="error",France Inter (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="FranceInter.fr" status="online",France Inter (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCJldRgT_D7Am-ErRHQZ90uw/live
 #EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie24 (1080p)
 https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8
@@ -130,7 +130,7 @@ https://iptv.azlinux.fr/?url=https://www.dailymotion.com/video/x2lefik
 https://s13.tntendirect.com/lequipe21/live/playlist.m3u8
 #EXTINF:-1 tvg-id="M6.fr" status="online",M6 (1080p)
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
-#EXTINF:-1 tvg-id="M6Music.fr" status="error",M6 Music (1080p)
+#EXTINF:-1 tvg-id="M6Music.fr" status="timeout",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
 #EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
@@ -224,10 +224,10 @@ https://54627d4fc5996.streamlock.net/tzik/tzik/chunklist.m3u8
 https://s13.tntendirect.com/w9/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Cnews (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x3b68jn
-#EXTINF:-1 tvg-id="" status="online",Euronews Albania (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
 #EXTINF:-1 tvg-id="" status="online",Euronews Hungary (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
+#EXTINF:-1 tvg-id="" status="online",Euronews по-русски (720p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
 #EXTINF:-1 tvg-id="" status="online",Euronews en Español (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/euronewses/live
 #EXTINF:-1 tvg-id="" status="online",Euronews English (720p)
@@ -244,17 +244,17 @@ http://entertainment.ashttp9.visionip.tv/live/visiontvuk-entertainment-edgytv-hs
 https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",viàOccitanie (540p) [Not 24/7]
 https://streamer01.myvideoplace.tv/streamer02/hls/MDS_VIA_PAD_301117.m3u8
-#EXTINF:-1 tvg-id="" status="online",Persiana Varzesh (720p) [Not 24/7]
-http://51.210.199.16/hls/stream.m3u8
-#EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
+#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s89/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Trace Latina
+#EXTINF:-1 tvg-id="" status="online",Persiana Varzesh (720p) [Not 24/7]
+http://51.210.199.16/hls/stream.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Trace Latina
 http://185.234.217.27:8002/play/a02f/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Dreamsee Télévision (1080p) [Not 24/7]
 http://cdnapi.kaltura.com/p/2748081/sp/274808100/playManifest/entryId/1_gxkyk6lt/format/applehttp/protocol/http/a/a.m3u8
-#EXTINF:-1 tvg-id="" status="error",Euronews по-русски (720p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
+#EXTINF:-1 tvg-id="" status="error",Euronews Albania (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
 #EXTINF:-1 tvg-id="" status="error",viàMATÉLÉ (540p) [Not 24/7]
 https://streamer01.myvideoplace.tv/streamer02/hls/MATL_VLOC_PAD_100919_medium/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",TV5Monde Info (1080p)
