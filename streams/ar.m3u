@@ -56,9 +56,9 @@ http://arcast.net:1935/mp/mp/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (720p)
 http://200.115.193.177/live/26hd-720/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (180p)
-http://live-edge01.telecentro.net.ar/live/smil:c26.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (180p)
 http://live-edge02.telecentro.net.ar/live/c26.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal26.ar" status="timeout",Canal 26 (180p)
+http://live-edge01.telecentro.net.ar/live/smil:c26.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalC.ar" status="error",Canal C (Córdoba | Provincia de Córdoba) (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canalccordoba
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
@@ -86,7 +86,7 @@ https://5fb24b460df87.streamlock.net/live-cont.ar/cinear/playlist.m3u8
 http://coninfo.net:1935/chacodxdtv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="CrossingCanalIPTV.ar" status="online",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
 https://vivo.solumedia.com:19360/crossing/crossing.m3u8
-#EXTINF:-1 tvg-id="DeporTV.ar" status="error",DeporTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="DeporTV.ar" status="timeout",DeporTV (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSmh3DFxBwFurMttT60PQ1g/live
 #EXTINF:-1 tvg-id="ElDoce.ar" status="online",El Doce TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?feature=emb_title&streaming-ip=https://www.youtube.com/watch?v=gBbMbqILzXU
@@ -112,7 +112,7 @@ http://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8
 https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NETTV.ar" status="online",Net TV (720p)
 https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Pakapaka.ar" status="online",Pakapaka (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Pakapaka.ar" status="error",Pakapaka (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCVVNYxncuD4EfHpKDlPIYcQ/live
 #EXTINF:-1 tvg-id="RadioTVNeuquen.ar" status="online",Radio TV Neuquen (720p) [Not 24/7]
 http://media.neuquen.gov.ar/rtn/television/playlist.m3u8
