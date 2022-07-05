@@ -13,7 +13,7 @@ https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
 #EXTINF:-1 tvg-id="BeurTV.fr" status="online",Beur TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/Beur_TV/playlist.m3u8
-#EXTINF:-1 tvg-id="BFMBusiness.fr" status="online",BFM Business (480p)
+#EXTINF:-1 tvg-id="BFMBusiness.fr" status="error",BFM Business (480p)
 https://iptv.azlinux.fr/?url=https://www.bfmtv.com/economie/en-direct/
 #EXTINF:-1 tvg-id="BFMGrandLille.fr" status="online",BFM Grand Lille (720p)
 https://live.creacast.com/grandlilletv/smil:grandlilletv.smil/playlist.m3u8
@@ -88,7 +88,7 @@ https://s13.tntendirect.com/france3/live/playlist.m3u8
 http://edge9.iptvnetwork.net/live/france4/playlist.m3u8
 #EXTINF:-1 tvg-id="France5.fr" status="online",France 5 (720p) [Not 24/7]
 https://s13.tntendirect.com/france5/live/playlist.m3u8
-#EXTINF:-1 tvg-id="France24Arabic.fr" status="online",France 24 Arabic (1080p)
+#EXTINF:-1 tvg-id="France24Arabic.fr" status="timeout",France 24 Arabic (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Arabic/live
 #EXTINF:-1 tvg-id="France24English.fr" status="online",France 24 English (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24English/live
@@ -110,7 +110,7 @@ https://edge.vedge.infomaniak.com/livecast/ik:generation-tv/manifest.m3u8
 https://d13anarbtxy8c5.cloudfront.net/6play/short/clr/gulli/sdindex.m3u8
 #EXTINF:-1 tvg-id="GulliBilArabi.fr" status="online",Gulli Bil Arabi (1080p)
 https://shls-gulli-bil-arabi-prod-dub.shahid.net/out/v1/5454d215afba410c90b233f400730958/index.m3u8
-#EXTINF:-1 tvg-id="GulliGirl.ru" status="blocked",Gulli Girl (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="GulliGirl.ru",Gulli Girl (576p) [Not 24/7]
 http://188.40.68.167/russia/gulli_girl/playlist.m3u8
 #EXTINF:-1 tvg-id="HolyGodTV.fr" status="error",HolyGod TV (720p)
 https://dcunilive47-lh.akamaihd.net/i/dclive_1@739146/master.m3u8
@@ -132,7 +132,7 @@ https://s13.tntendirect.com/lequipe21/live/playlist.m3u8
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="error",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
-#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -247,7 +247,7 @@ https://streamer01.myvideoplace.tv/streamer02/hls/MDS_VIA_PAD_301117.m3u8
 http://ott-cdn.ucom.am/s89/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Persiana Varzesh (720p) [Not 24/7]
 http://51.210.199.16/hls/stream.m3u8
-#EXTINF:-1 tvg-id="" status="error",Trace Latina
+#EXTINF:-1 tvg-id="" status="blocked",Trace Latina
 http://185.234.217.27:8002/play/a02f/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Dreamsee Télévision (1080p) [Not 24/7]
 http://cdnapi.kaltura.com/p/2748081/sp/274808100/playManifest/entryId/1_gxkyk6lt/format/applehttp/protocol/http/a/a.m3u8
