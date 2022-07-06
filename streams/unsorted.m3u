@@ -25,7 +25,7 @@ http://primeasia.dyndns.tv:8080/Live_web_250/tracks-v1a1/mono.m3u8
 https://rbmn-live.akamaized.net/hls/live/622817/BoRB-US/master_928.m3u8
 #EXTINF:-1 tvg-id="RedeTV.br" status="online",RedeTV! Tocantins (720p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/redetvro/_definst_/redetvro/playlist.m3u8
-#EXTINF:-1 tvg-id="RedTV.rs" status="online",Red TV (720p)
+#EXTINF:-1 tvg-id="RedTV.rs" status="error",Red TV (720p)
 https://live.rednet.rs/providus/redtv_multi_hq/index.m3u8
 #EXTINF:-1 tvg-id="RheinMainTV.de" status="online",RheinMain TV (720p) [Not 24/7]
 https://586fb512206e4.streamlock.net/rheinmaintv-live/_definst_/mp4:livestream/playlist.m3u8
@@ -61,8 +61,6 @@ http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-magdeburg_high/playli
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-merseburg_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",OK Wernigerode
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-wernigerode_high/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Ran1 Dessau-Roßlau (1080p)
-http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ran1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",KulturMD Magdeburg
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:kulturmd_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",MDF.1 Magdeburg
@@ -73,14 +71,10 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:ok-dessau_high
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:ok-salzwedel_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",PunktUm Hettstedt (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:punktum_high/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",RBW Bitterfeld-Wolfen (1080p)
-https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:rbw_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",RFH Harz (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:RFH_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Punkteins
 https://5852afe96c9bb.streamlock.net/easycast8-live/_definst_/mp4:livestreamhd4/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Seenluft24
-https://5856e1a25f71a.streamlock.net/easycast7-live/_definst_/mp4:livestreamhd20/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",teltOwkanal
 https://5856e1a25f71a.streamlock.net/easycast8-live/_definst_/mp4:livestreamhd8/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Lausitzwelle Fernsehen (1080p)
@@ -131,6 +125,8 @@ https://cdn2.zencast.tv:30443/orbe/orbe21smil/playlist.m3u8
 https://mirtv.club/live/mirtv/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV S1
 https://sradio.ipradio.rs/sradio/radiostv/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",MMA Junkie
+http://a.jsrdn.com/broadcast/80f6ba72c8/+0000/high/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",IDG (720p)
 http://a.jsrdn.com/broadcast/529a360c04/+0000/high/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",WATAN-E-MAA
@@ -219,18 +215,24 @@ https://mn-nl.mncdn.com/tvnet/tvnet/chunklist.m3u8
 https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/sat7turkpublish/sat7turk_720p/chunks_dvr.m3u8
 #EXTINF:-1 tvg-id="" status="online",Tempo TV
 https://waw2.artiyerelmedya.net/tempotv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",MMA Junkie
-http://a.jsrdn.com/broadcast/80f6ba72c8/+0000/high/c.m3u8
+#EXTINF:-1 tvg-id="" status="online",The Grapevine
+https://ov.ottera.tv/live/master.m3u8?channel=mcom_gv_us
+#EXTINF:-1 tvg-id="" status="online",The Archive (1080p)
+https://ov.ottera.tv/live/master.m3u8?channel=mcom_ta_us
+#EXTINF:-1 tvg-id="" status="online",Movie Kingdom TV
+https://a.jsrdn.com/broadcast/e9b4093a41/+0000/high/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",Messinia TV
 http://176.9.123.140:1935/messinia/messinia/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",STV (720p)
+http://89.201.163.244:8080/hls/hdmi.m3u8
 #EXTINF:-1 tvg-id="" status="online",ATN Europe
 https://d10rltuy0iweup.cloudfront.net/ATNINT/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",RTV Arberia Musik
 http://rtvarberia4.flashmediacast.com:1935/RtvArberia4/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",TV Birigui (640p)
+https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/_definst_/tvdigitalbirigui/chunklist_w763334596.m3u8
 #EXTINF:-1 tvg-id="" status="online",Filstalwelle Göppingen (576p)
 http://62.113.210.2/filstalwelle-live/_definst_/mp4:livestream/chunklist_w660034089.m3u8
-#EXTINF:-1 tvg-id="" status="online",Ahi TV Kirsehir (576p)
-http://yayin3.canlitv.com:1935/canlitv/ahitv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Studio 47
 https://5852afe96c9bb.streamlock.net/studio47-live/_definst_/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Radio Weser TV Bremen
@@ -243,38 +245,26 @@ https://netstreaming.eu:8080/hls/hd365.m3u8
 https://prd-hometv-live-open.spectar.tv/ERO_1_083/576p/chunklist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Rete 7 (576p)
 https://stream.ets-sistemi.it/live.rete7/rete7/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",The Grapevine
-https://ov.ottera.tv/live/master.m3u8?channel=mcom_gv_us
-#EXTINF:-1 tvg-id="" status="online",The Archive (1080p)
-https://ov.ottera.tv/live/master.m3u8?channel=mcom_ta_us
 #EXTINF:-1 tvg-id="" status="online",Folk TV
 http://584b0aa350b92.streamlock.net:1935/folk-tv/myStream.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Movie Kingdom TV
-https://a.jsrdn.com/broadcast/e9b4093a41/+0000/high/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",Carolina TV (480p)
 https://unlimited1-us.dps.live/carolinatv/carolinatv.smil/carolinatv/livestream2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV Pai Eterno
 https://59f1cbe63db89.streamlock.net:1443/teste01/_definst_/teste01/chunklist.m3u8
-#EXTINF:-1 tvg-id="" status="online",TV Birigui (640p)
-https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/_definst_/tvdigitalbirigui/chunklist_w763334596.m3u8
-#EXTINF:-1 tvg-id="" status="online",Start TV
-https://live.cast-control.eu/StartMedia/StartMedia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Glas Drine
 http://glasdrine.cutuk.net:8081/433ssdsw/GlasDrineSD/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Offener Kanal Fulda
 https://s.ok54.de/mok-fu/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",News 24 Albania
 http://tv.balkanweb.com:8081/news24/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Monarch TV (360p)
-https://a.jsrdn.com/broadcast/0c9a09c94c/+0000/low/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",Latvijas Radio 1
 http://5a44e5b800a41.streamlock.net:1935/liveVLR1/mp4:LR1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Latest TV [Not 24/7]
-https://5a0e89631aa14.streamlock.net/LatestTV/LatestTV/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",La Muscle TV (360p)
 https://streamcdn.lamuscle.com/lamtv-origin/smil:monsterworkout-tricepspt1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",KVF Faroe Island (360p)
 https://w2.kringvarp.fo/uttanlands/_definst_/smil:uttanlands.smil/chunklist_w587901821_b772000_slfao.m3u8
+#EXTINF:-1 tvg-id="" status="online",Monarch TV (360p)
+https://a.jsrdn.com/broadcast/0c9a09c94c/+0000/low/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV Destak (360p)
 https://59f2354c05961.streamlock.net:1443/pascoal/_definst_/pascoal/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ems TV Lingen (280p)
@@ -297,6 +287,10 @@ http://albmusic.dyndns.tv:1935/albuk/albmus.stream/playlist.m3u8
 http://cgntv-glive.ofsdelivery.net/live/_definst_/cgntv_jp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Canal Coín
 http://stream.fion.es:1936/Canal_Coin/canalcoin.stream/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Latest TV [Not 24/7]
+https://5a0e89631aa14.streamlock.net/LatestTV/LatestTV/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Start TV
+https://live.cast-control.eu/StartMedia/StartMedia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Funnybone (720p)
 https://simultv.s.llnwi.net/o054/FunnyBone/interlink.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",SimSi TV
@@ -309,6 +303,8 @@ https://www.urbanrevolution.es:444/live/5e6d8470a3832/index.m3u8
 rtsp://ebsonair.ebs.co.kr/ebsutablet500k/tablet500k
 #EXTINF:-1 tvg-id="" status="error",Korça + (1080p) [Not 24/7]
 http://32.shqiptv.org/korca/albplus/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Ran1 Dessau-Roßlau (1080p)
+http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ran1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",AdriaNet
 http://79.106.48.2:4578/live/adriamed/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",RTSH 3 (270p)
@@ -357,6 +353,8 @@ http://uk4.streamingpulse.com:1935/rtvilirida/rtvilirida/playlist.m3u8
 http://uk4.streamingpulse.com:1935/TVSHARRI/TVSHARRI/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",RTV USK
 http://wslb.dobratv.net:8877/uzivo/usk/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Ahi TV Kirsehir (576p)
+http://yayin3.canlitv.com:1935/canlitv/ahitv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Sylt1
 https://5aec29c5dd23b.streamlock.net:8443/sylt1/_definst_/sylt1_high1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Hrvatski Radio Karlovac
@@ -367,12 +365,16 @@ https://5b57bb229a2e6.streamlock.net/live/smil:banovina.smil/playlist.m3u8
 https://5b57bb229a2e6.streamlock.net/live/televizija/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Elbekanal Schönebeck (576p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:elbe_high/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",RBW Bitterfeld-Wolfen (1080p)
+https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:rbw_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Bitlis TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/bitlistv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Haldensleben TV (720p)
 https://578d8e1867e87.streamlock.net/medienasa-vod/_definst_/mp4:hdl_sendung_720p.mp4/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Muxx.tv (1080p)
 https://5856e1a25f71a.streamlock.net/easycast7-live/_definst_/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Seenluft24
+https://5856e1a25f71a.streamlock.net/easycast7-live/_definst_/mp4:livestreamhd20/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Friesischer Rundfunk Friedeburg
 https://583548fa0d82b.streamlock.net/friesischerRundfunk-live/_definst_/mp4:friesischerrundfunk/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Minhaj TV (720p)
@@ -401,5 +403,3 @@ https://tv.syri.net/syrilive/webtv/playlist.m3u8
 https://wowzaprod13-i.akamaihd.net/hls/live/254985/29c28f19/persisTarget_9375922947_TVWAIR_247_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Ava Entertainment (720p)
 https://wowzaprod219-i.akamaihd.net/hls/live/1003949/c9aa559e/c9aa559e_1_3310000/chunklist.m3u8
-#EXTINF:-1 tvg-id="",STV (720p)
-http://89.201.163.244:8080/hls/hdmi.m3u8
