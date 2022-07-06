@@ -77,7 +77,7 @@ https://stream-cdn.gemonline.tv/live/gemtravel/index.m3u8
 #EXTINF:-1 tvg-id="GEMTV.ir" status="error",GEM Tv (360p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemtv
 http://65.21.196.79/gem_tv/master.m3u8
-#EXTINF:-1 tvg-id="GolestanTV.ir" status="online",GOLESTAN (240p)
+#EXTINF:-1 tvg-id="GolestanTV.ir" status="error",GOLESTAN (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:golestan/playlist.m3u8
 #EXTINF:-1 tvg-id="HastiTVHD.ir" status="online",Hasti TV (1080p) [Not 24/7]
 https://live.hastitv.com/hls/livetv.m3u8
@@ -199,14 +199,14 @@ https://live.presstv.ir/ifilmlive/smil:ifilmar.smil/playlist.m3u8
 http://cdnlive.irib.ir/live-channels/smil:sahar3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Channel 1 (480p) [Not 24/7]
 https://2nbyjjx7y53k-hls-live.5centscdn.com/cls040317/0070c5b7ef083bdc8de09065c61a34d8.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",iFILM English (480p) [Geo-blocked]
+https://live1.presstv.ir/live/ifilmen.m3u8
 #EXTINF:-1 tvg-id="" status="online",HispanTV (480p)
 https://live1.presstv.ir/live/hispan.m3u8
 #EXTINF:-1 tvg-id="" status="online",HispanTV (480p)
 https://live.presstv.ir/live/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",iFILM English (480p) [Geo-blocked]
-https://live1.presstv.ir/live/ifilmen.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Al Kawthar TV (240p) [Not 24/7]
-http://178.252.143.156:1935/live/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",QAZVIN (240p)
+http://cdn1.live.irib.ir:1935/epg-live/smil:qazvin/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Mono TV (720p)
 http://51.210.227.137/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="error",4U TV (720p) [Not 24/7]
@@ -223,8 +223,8 @@ http://159.69.58.154/music1/music1_tv.m3u8
 http://159.69.58.154/t2_movies/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",SAHAR KURDI (576p) [Not 24/7]
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/56
-#EXTINF:-1 tvg-id="" status="error",QAZVIN (240p)
-http://cdn1.live.irib.ir:1935/epg-live/smil:qazvin/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Al Kawthar TV (240p) [Not 24/7]
+http://178.252.143.156:1935/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Parsiland (540p) [Not 24/7]
 http://vps.parsiland.net/hls/ParsiLand.m3u8
 #EXTINF:-1 tvg-id="" status="error",1TvPersian (720p) [Not 24/7]
