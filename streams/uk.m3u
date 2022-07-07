@@ -1,6 +1,12 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="4Music.uk" status="error",4Music (576p)
 http://csm-e.tm.yospace.com/csm/extlive/boxplus01,4music-desktop.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/4music/
+#EXTINF:-1 tvg-id="5Select.uk" status="blocked",5 Select (576p) [Geo-blocked]
+https://cdnuk001.broadcastcdn.net/KUK-FIVESELECT/index.m3u8
+#EXTINF:-1 tvg-id="5Star.uk" status="blocked",5 Star (576p) [Geo-blocked]
+https://cdnuk001.broadcastcdn.net/KUK-5STAR/index.m3u8
+#EXTINF:-1 tvg-id="5USA.uk" status="blocked",5 USA (576p) [Geo-blocked]
+https://cdnuk001.broadcastcdn.net/KUK-5USA/index.m3u8
 #EXTINF:-1 tvg-id="Afrobeats.uk" status="online",Afrobeats (1080p)
 https://stream.ecable.tv/afrobeats/index.m3u8
 #EXTINF:-1 tvg-id="AhlulbaytTV.uk" status="online",Ahlulbayt TV (1080p) [Not 24/7]
@@ -162,8 +168,14 @@ https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:cb
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:cbeebies_hd/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
 #EXTINF:-1 tvg-id="CBeebiesUK.uk" status="blocked",CBeebies HD (720p) [Geo-blocked]
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:cbeebies_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="Channel5.uk" status="error",Channel 5 (720p)
-https://uktv.vercel.app/five.m3u8
+#EXTINF:-1 tvg-id="CBSJusticeUK.uk" status="blocked",CBS Justice UK (576p) [Geo-blocked]
+https://cdnuk001.broadcastcdn.net/KUK-CBSJUSTICE/index.m3u8
+#EXTINF:-1 tvg-id="CBSRealityUK.uk" status="blocked",CBS Reality UK (576p) [Geo-blocked]
+https://cdnuk001.broadcastcdn.net/KUK-CBSREALITY/index.m3u8
+#EXTINF:-1 tvg-id="ChallengeUK.uk" status="blocked",Challenge UK (576p) [Geo-blocked]
+https://cdnuk001.broadcastcdn.net/KUK-CHALLENGE/index.m3u8
+#EXTINF:-1 tvg-id="Channel5.uk" status="blocked",Channel 5 (1080p) [Geo-blocked]
+https://cdnuk001.broadcastcdn.net/KUK-FIVE/index.m3u8
 #EXTINF:-1 tvg-id="ChannelS.uk" status="online",Channel S (720p) [Not 24/7]
 https://a.jsrdn.com/r-373576a3/publish/22679_24MrQma9TX/index.m3u8
 #EXTINF:-1 tvg-id="ChannelS.uk" status="online",Channel S (576p) [Not 24/7]
@@ -385,9 +397,3 @@ https://esmhls1-i.akamaihd.net/hls/live/510580/hls1/playlist.m3u8
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_east_yorkshire/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
 #EXTINF:-1 tvg-id="" status="error",Health Media (720p) [Not 24/7]
 https://j78dpkrjlq5r-hls-live.5centscdn.com/HMN/271ddf829afeece44d8732757fba1a66.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Channel 5 Select (720p)
-https://uktv.vercel.app/fiveselect.m3u8
-#EXTINF:-1 tvg-id="" status="error",Channel 5 Star (720p)
-https://uktv.vercel.app/fivestar.m3u8
-#EXTINF:-1 tvg-id="" status="error",Channel 5 USA (720p)
-https://uktv.vercel.app/fiveusa.m3u
