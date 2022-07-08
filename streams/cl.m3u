@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="24Horas.cl" status="timeout",24 Horas (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="24Horas.cl" status="online",24 Horas (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/24HORAS/live
 #EXTINF:-1 tvg-id="ADNTV.cl" status="online",ADN Radio (1080p)
 https://unlimited1-us.dps.live/adntv/adntv.smil/playlist.m3u8
@@ -69,7 +69,7 @@ https://unlimited6-cl.dps.live/carolinatv/carolinatv.smil/playlist.m3u8
 https://hd.chileservidores.cl:1936/ceactv/ceactv/playlist.m3u8
 #EXTINF:-1 tvg-id="ChileVision.cl" status="blocked",ChileVisión (720p) [Geo-blocked]
 http://chv-m3u.chorroaeboy.repl.co
-#EXTINF:-1 tvg-id="ChileVision.cl" status="timeout",ChileVisión (360p)
+#EXTINF:-1 tvg-id="ChileVision.cl" status="error",ChileVisión (360p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/chv_003cl
 #EXTINF:-1 tvg-id="ClickTVChile.cl" status="online",Click TV (Coronel) (720p)
 http://v2.tustreaming.cl/clicktv/playlist.m3u8
@@ -99,7 +99,7 @@ https://paneltv.online:1936/8154/8154/playlist.m3u8
 https://github.com/MachineSystems/archived_m3u8/raw/main/elpinguino_cl.m3u8
 #EXTINF:-1 tvg-id="EnerGeek2.cl" status="online",EnerGeek Señal 2 (720p) [Not 24/7]
 https://wifispeed.trapemn.tv:1936/infantil/energeek-2/playlist.m3u8
-#EXTINF:-1 tvg-id="EnerGeek.cl" status="online",EnerGeek (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="EnerGeek.cl" status="blocked",EnerGeek (720p) [Not 24/7]
 https://wifispeed.trapemn.tv:1936/infantil/energeek-1/playlist.m3u8
 #EXTINF:-1 tvg-id="EnfoqueDigitalTV.cl" status="error",Enfoque Digital
 https://tvdatta.com:3797/hybrid/play.m3u8
@@ -125,7 +125,7 @@ http://v3.tustreaming.cl/genialtv/playlist.m3u8
 https://5fa5de1a545ae.streamlock.net/Geovision/Geovision/playlist.m3u8
 #EXTINF:-1 tvg-id="Girovisual.cl" status="online",Girovisual
 https://unlimited1-cl-isp.dps.live/girovisual2/girovisual2.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="GraciaTV.cl" status="online",Gracia TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="GraciaTV.cl" status="error",Gracia TV (1080p) [Not 24/7]
 http://v3.tustreaming.cl/graciatv/index.m3u8
 #EXTINF:-1 tvg-id="HiperconectadosTV.cl" status="online",Hiperconectados Televisión (720p)
 https://mediacpstreamchile.com:1936/hiperconectados/hiperconectados/playlist.m3u8
@@ -149,19 +149,19 @@ https://5eff35271151c.streamlock.net:1936/8076/ngrp:8076/playlist.m3u8
 https://unlimited1-cl-movistar.dps.live/lared/lared.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LaRed.cl" status="error",La Red
 https://d2tr4gdfol9ja.cloudfront.net/lared/lared.smil/.m3u8
-#EXTINF:-1 tvg-id="LatinosRadio.cl" status="error",Latinos Radio
+#EXTINF:-1 tvg-id="LatinosRadio.cl" status="online",Latinos Radio
 https://mediacpstreamchile.com:1936/latinosmedia-1/latinosmedia-1/playlist.m3u8
 #EXTINF:-1 tvg-id="LRPTelevision.cl" status="online",LRP Televisión (720p) [Not 24/7]
 https://v2.tustreaming.cl/lrp/index.m3u8
 #EXTINF:-1 tvg-id="LTV.cl" status="error",LTV (Renaico) (720p) [Not 24/7]
 https://medios.sirtel.cl/live/stream/index.m3u8
-#EXTINF:-1 tvg-id="MaderoTV.cl" status="online",Madero TV
+#EXTINF:-1 tvg-id="MaderoTV.cl" status="error",Madero TV
 https://videostreaming.cloudserverlatam.com/8040/8040/playlist.m3u8
 #EXTINF:-1 tvg-id="MAXIMA.cl" status="online",MAXIMA (720p) [Not 24/7]
 https://server1.oklanet.cl:1936/maximavideo1/maximavideo1/playlist.m3u8
 #EXTINF:-1 tvg-id="Mega.cl" status="blocked",Mega [Geo-blocked]
 http://186.67.117.178:8081/play/a00x
-#EXTINF:-1 tvg-id="Meganoticias.cl" status="timeout",Meganoticias (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Meganoticias.cl" status="error",Meganoticias (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCkccyEbqhhM3uKOI6Shm-4Q/live
 #EXTINF:-1 tvg-id="MundodelaMusica.cl" status="online",Mundo de la Música (480p)
 https://videostreaming.cloudserverlatam.com/8078/8078/playlist.m3u8
@@ -259,10 +259,10 @@ https://unlimited6-cl.dps.live/teletrak/teletrak.smil/playlist.m3u8
 https://v2.tustreaming.cl/tendenciastv/index.m3u8
 #EXTINF:-1 tvg-id="Tevex.cl" status="online",Tevex (720p) [Not 24/7]
 https://v4.tustreaming.cl/tevexinter/index.m3u8
+#EXTINF:-1 tvg-id="ThemaTelevision.cl" status="timeout",Thema Televisión (La Serena) (720p) [Not 24/7]
+https://unlimited6-cl.dps.live/thema/thema.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ThemaTelevision.cl" status="error",Thema Televisión (La Serena) (720p) [Not 24/7]
 https://unlimited1-us.dps.live/thema/thema.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ThemaTelevision.cl" status="error",Thema Televisión (La Serena) (720p) [Not 24/7]
-https://unlimited6-cl.dps.live/thema/thema.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TNE.cl" status="online",TNE (720p) [Not 24/7]
 https://v2.tustreaming.cl/tnetv/index.m3u8
 #EXTINF:-1 tvg-id="TurfMovil.cl" status="online",Turf Móvil (720p)
@@ -303,7 +303,7 @@ https://unlimited1-us.dps.live/tvr/tvr.smil/playlist.m3u8
 https://unlimited1-cl.dps.live/tvr/tvr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSalud.cl" status="online",TV Salud (720p) [Not 24/7]
 https://srv3.zcast.com.br/mastermedia/mastermedia/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSenado.cl" status="online",TV Senado (360p)
+#EXTINF:-1 tvg-id="TVSenado.cl" status="timeout",TV Senado (360p)
 https://janus-tv-ply.senado.cl/playlist/playlist.m3u8
 #EXTINF:-1 tvg-id="TVVision.cl" status="error",TV Vision (1080p) [Not 24/7]
 https://cloudflare.streamgato.us:3750/live/tvvisionlive.m3u8
@@ -353,10 +353,8 @@ https://zmlive.zappingtv.com/zm_free/zm.smil/playlist.m3u8
 https://v2.tustreaming.cl/zizatv/index.m3u8
 #EXTINF:-1 tvg-id="ZonaLatina.cl" status="timeout",Zona Latina (480p) [Not 24/7]
 http://38.131.11.9:1080/play/a00x
-#EXTINF:-1 tvg-id="ZonaPlayTV.cl" status="online",Zona Play TV (ZPTV) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ZonaPlayTV.cl" status="error",Zona Play TV (ZPTV) (720p) [Not 24/7]
 https://srv3.zcast.com.br/juancarlos9451/juancarlos9451/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Kanade TV (720p)
-http://64.20.57.7:8080/hls/enfoque.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal Diputados (720p) [Not 24/7]
 http://camara.03.cl.cdnz.cl/camara19/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal SCÑ (San Carlos Ñuble) (720p) [Not 24/7]
@@ -367,6 +365,8 @@ https://live.tvcontrolcp.com:1936/guzman/guzman/playlist.m3u8
 https://videostreaming.cloudserverlatam.com/CLOUDFM/CLOUDFM/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Chavo TV (480p)
 https://videostreaming.cloudserverlatam.com/ElChavotv/ElChavotv/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Kanade TV (720p)
+http://64.20.57.7:8080/hls/enfoque.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Bajo Cero TV (Corporación Eva) (656p)
 https://stmv.panel.mivideo.pro/bajocerotv/bajocerotv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",MIX 24/7 Vdj Retro (720p)
