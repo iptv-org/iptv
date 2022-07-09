@@ -1,11 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AlJazeeraBalkans.qa" status="online",Al Jazeera Balkans (1080p)
 https://live-hls-web-ajb.getaj.net/AJB/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraChannel.qa" status="online",Al Jazeera Arabic (1080p)
+https://live-hls-web-aja.getaj.net/AJA/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraChannel.qa" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Al Jazeera Arabic (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s69/index.m3u8
-#EXTINF:-1 tvg-id="AlJazeeraChannel.qa" status="online",Al Jazeera Arabic (1080p)
-https://live-hls-web-aja.getaj.net/AJA/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraDocumentary.qa" status="online",Al Jazeera Documentary (270p) [Geo-blocked]
 https://live-hls-web-ajd.getaj.net/AJD/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraEnglish.qa" status="online",Al Jazeera English (1080p)
@@ -23,7 +23,7 @@ https://liveak.alkassdigital.net/livehttporigin/smil:YWxrYXNz1.smil/playlist.m3u
 https://liveak.alkassdigital.net/livehttporigin/smil:YWxrYXNz3.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AlkassTwo.qa" status="error",Al Kass Two
 https://liveak.alkassdigital.net/livehttporigin/smil:YWxrYXNz2.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AlRassoul.qa" status="error",Al Rassoul (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlRassoul.qa" status="timeout",Al Rassoul (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/AlRassoulChannel/live
 #EXTINF:-1 tvg-id="AlRayyanOldTV.qa" status="online",Al Rayyan Al Qadeem (1080p)
 https://svs.itworkscdn.net/alrayyanqadeemlive/alrayyanqadeem.smil/playlist.m3u8
