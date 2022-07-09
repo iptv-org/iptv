@@ -22,7 +22,7 @@ http://live.beitolabbas.tv/live/beitolabbastv.m3u8
 https://vid1.caltexmusic.com/hls/caltextv.m3u8
 #EXTINF:-1 tvg-id="EBC1TV.ir" status="online",EBC1 TV (720p) [Geo-blocked]
 https://vsn1-cdn-phx.icastcenter.com/EBC1/EBC1/playlist.m3u8
-#EXTINF:-1 tvg-id="FarsTV.ir" status="error",FARS (240p)
+#EXTINF:-1 tvg-id="FarsTV.ir" status="online",FARS (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:fars/playlist.m3u8
 #EXTINF:-1 tvg-id="GEMAcademy.ir" status="error",GEM Academy (540p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemusa
@@ -77,13 +77,13 @@ https://stream-cdn.gemonline.tv/live/gemtravel/index.m3u8
 #EXTINF:-1 tvg-id="GEMTV.ir" status="error",GEM Tv (360p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=gemtv
 http://65.21.196.79/gem_tv/master.m3u8
-#EXTINF:-1 tvg-id="GolestanTV.ir" status="timeout",GOLESTAN (240p)
+#EXTINF:-1 tvg-id="GolestanTV.ir" status="online",GOLESTAN (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:golestan/playlist.m3u8
 #EXTINF:-1 tvg-id="HastiTVHD.ir" status="online",Hasti TV (1080p) [Not 24/7]
 https://live.hastitv.com/hls/livetv.m3u8
 #EXTINF:-1 tvg-id="ICnet1.ca" status="online",Icnet TV (720p) [Not 24/7]
 http://51.210.199.7/hls/stream.m3u8
-#EXTINF:-1 tvg-id="iFilm2.ir" status="online",iFILM Persian 2 (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="iFilm2.ir" status="timeout",iFILM Persian 2 (480p) [Not 24/7]
 https://live1.presstv.ir/live/ifilm2.m3u8
 #EXTINF:-1 tvg-id="iFilmPersian.ir" status="online",iFILM (720p) [Not 24/7]
 https://live.presstv.ir/ifilmlive/smil:ifilmtv.smil/playlist.m3u8
@@ -201,8 +201,6 @@ http://vps.parsiland.net/hls/ParsiLand.m3u8
 http://cdnlive.irib.ir/live-channels/smil:sahar3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Channel 1 (480p) [Not 24/7]
 https://2nbyjjx7y53k-hls-live.5centscdn.com/cls040317/0070c5b7ef083bdc8de09065c61a34d8.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",iFILM English (480p) [Geo-blocked]
-https://live1.presstv.ir/live/ifilmen.m3u8
 #EXTINF:-1 tvg-id="" status="online",HispanTV (480p)
 https://live1.presstv.ir/live/hispan.m3u8
 #EXTINF:-1 tvg-id="" status="online",HispanTV (480p)
@@ -211,6 +209,8 @@ https://live.presstv.ir/live/smil:live.smil/playlist.m3u8
 http://cdn1.live.irib.ir:1935/epg-live/smil:qazvin/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Al Kawthar TV (240p) [Not 24/7]
 http://178.252.143.156:1935/live/myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",iFILM English (480p) [Geo-blocked]
+https://live1.presstv.ir/live/ifilmen.m3u8
 #EXTINF:-1 tvg-id="" status="error",Mono TV (720p)
 http://51.210.227.137/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="error",4U TV (720p) [Not 24/7]
