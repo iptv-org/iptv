@@ -11,7 +11,7 @@ https://live-antenne-reunion.zeop.tv/live/c3eds/antreunihd/hls_fta/antreunihd.m3
 https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 #EXTINF:-1 tvg-id="ARTEFrench.fr" status="blocked",ARTE Français (720p) [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
-#EXTINF:-1 tvg-id="BeurTV.fr" status="online",Beur TV [Geo-blocked]
+#EXTINF:-1 tvg-id="BeurTV.fr" status="error",Beur TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/Beur_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="BFMBusiness.fr" status="online",BFM Business (480p)
 https://iptv.azlinux.fr/?url=https://www.bfmtv.com/economie/en-direct/
@@ -35,7 +35,7 @@ https://s13.tntendirect.com/d8/live/playlist.m3u8
 http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8
 #EXTINF:-1 tvg-id="Cherie25.fr" status="online",Chérie 25 (360p)
 https://s13.tntendirect.com/cherie25/live/playlist.m3u8
-#EXTINF:-1 tvg-id="CNews.fr" status="timeout",CNews (1080p)
+#EXTINF:-1 tvg-id="CNews.fr" status="online",CNews (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CNEWS
 #EXTINF:-1 tvg-id="CStar.fr" status="online",CStar (360p)
 https://s13.tntendirect.com/d17/live/playlist.m3u8
@@ -45,7 +45,7 @@ https://iptv.azlinux.fr/?url=https://www.dailymotion.com/video/x5gv5v0
 https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
-#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="online",El Heddaf TV [Geo-blocked]
+#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="error",El Heddaf TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="EMCITV.fr" status="online",EMCI TV (1080p)
 https://emci-fr-hls.akamaized.net/hls/live/2007265/emcifrhls/index.m3u8
@@ -132,7 +132,7 @@ https://s13.tntendirect.com/lequipe21/live/playlist.m3u8
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="error",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
-#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -140,7 +140,7 @@ http://tv.mondeduloisir.fr:1935/tixtv/smil:web.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Mezzo.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Mezzo (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s35/index.m3u8
-#EXTINF:-1 tvg-id="NancyWebTV.fr" status="online",Nancy Web TV (394p) [Not 24/7]
+#EXTINF:-1 tvg-id="NancyWebTV.fr" status="error",Nancy Web TV (394p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:nancy-webtv/manifest.m3u8
 #EXTINF:-1 tvg-id="NRJ12.fr" status="online",NRJ12 (720p)
 https://s13.tntendirect.com/nrj12/live/playlist.m3u8
@@ -180,11 +180,11 @@ http://51.210.199.59/hls/stream.m3u8
 http://51.210.199.17/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PublicSenat.fr" status="online",Public Sénat (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xkxbzc
-#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="online",Qwest TV Jazz & Beyond (576p)
+#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="error",Qwest TV Jazz & Beyond (576p)
 http://210.210.155.37/uq2663/h/h94/01.m3u8
 #EXTINF:-1 tvg-id="RMCDecouverte.fr" status="online",RMC Découverte (720p)
 https://s13.tntendirect.com/rmcdecouverte/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TebeSud.fr" status="timeout",TébéSud (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TebeSud.fr" status="error",TébéSud (1080p) [Not 24/7]
 https://edge-live-ger1.ovstream.com/hls/10/source.m3u8
 #EXTINF:-1 tvg-id="TF1.fr" status="online",TF1 (1080p)
 https://s13.tntendirect.com/tf1/live/playlist.m3u8
@@ -200,7 +200,7 @@ http://188.40.68.167/russia/tiji/playlist.m3u8
 https://s13.tntendirect.com/tmc/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="online",TV5 Monde Asie (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/s/s24/index.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="online",TV5 Monde Asie (576p)
+#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="error",TV5 Monde Asie (576p)
 http://210.210.155.37/dr9445/s/s24/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
@@ -212,7 +212,7 @@ http://210.210.155.35/dr9445/h/h01/index.m3u8
 http://live.digiteka.com/1/RVNZMmJtUURmd09I/U0dNU0tk/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Colmar.fr" status="online",TV7 Colmar (576p)
 https://tv7.hdr-tv.com/live/tv7/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TV8MontBlanc.fr" status="online",TV8 Mont-Blanc (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV8MontBlanc.fr" status="timeout",TV8 Mont-Blanc (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x71o73v
 #EXTINF:-1 tvg-id="TV78.fr" status="online",TV78 (720p)
 https://streamtv.cdn.dvmr.fr/TV78/ngrp:tv78.stream_all/master.m3u8
@@ -242,19 +242,19 @@ http://entertainment.ashttp9.visionip.tv/live/visiontvuk-entertainment-edgytv-hs
 https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",viàOccitanie (540p) [Not 24/7]
 https://streamer01.myvideoplace.tv/streamer02/hls/MDS_VIA_PAD_301117.m3u8
-#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
-http://ott-cdn.ucom.am/s89/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Persiana Varzesh (720p) [Not 24/7]
 http://51.210.199.16/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Trace Latina
 http://185.234.217.27:8002/play/a02f/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Euronews по-русски (720p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
+#EXTINF:-1 tvg-id="" status="timeout",Euronews Albania (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
+#EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s89/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Dreamsee Télévision (1080p) [Not 24/7]
 http://cdnapi.kaltura.com/p/2748081/sp/274808100/playManifest/entryId/1_gxkyk6lt/format/applehttp/protocol/http/a/a.m3u8
-#EXTINF:-1 tvg-id="" status="error",Euronews Albania (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
+#EXTINF:-1 tvg-id="" status="error",Euronews по-русски (720p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
 #EXTINF:-1 tvg-id="" status="error",viàMATÉLÉ (540p) [Not 24/7]
 https://streamer01.myvideoplace.tv/streamer02/hls/MATL_VLOC_PAD_100919_medium/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",TV5Monde Info (1080p)
