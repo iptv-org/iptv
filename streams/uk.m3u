@@ -146,12 +146,12 @@ https://ve-uhd-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uhd_stream_
 #EXTINF:-1 tvg-id="BBCTwoWales.uk" status="blocked",BBC Two Wales (540p) [Geo-blocked]
 https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_two_wales_digital/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
 #EXTINF:-1 tvg-id="BBCWorldNewsEurope.uk" status="online",BBC World News (576p)
-http://gtv01.airlinktt.co/live/smil:BBC_WORLD.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BBCWorldNewsEurope.uk" status="online",BBC World News (576p)
 http://103.199.161.254/Content/bbcworld/Live/Channel(BBCworld)/index.m3u8
 #EXTINF:-1 tvg-id="BBCWorldNewsEurope.uk" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",BBC World News (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s24/index.m3u8
+#EXTINF:-1 tvg-id="BBCWorldNewsEurope.uk" status="online",BBC World News (576p)
+http://gtv01.airlinktt.co/live/smil:BBC_WORLD.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BlazeUK.uk" status="blocked",Blaze UK (720p) [Geo-blocked]
 https://uktv.vercel.app/blaze.m3u8
 #EXTINF:-1 tvg-id="BoxHits.uk" status="online",Box Hits (576p)
@@ -291,10 +291,10 @@ https://livemtaasia.akamaized.net/hls/live/2039224/mta6asia/playlist.m3u8
 https://livemtaasia.akamaized.net/hls/live/2039224/mtaasia2/playlist.m3u8
 #EXTINF:-1 tvg-id="MTA8America.uk" status="online",MTA8 America (1080p)
 https://chlivemta.akamaized.net/hls/live/2016718/mta8/playlist.m3u8
-#EXTINF:-1 tvg-id="NoorTV.uk" status="error",Noor TV (480p) [Not 24/7]
-https://live.smartmediahouse.tv:8443/hls/ch1.m3u8
-#EXTINF:-1 tvg-id="NoorTV.uk" status="error",Noor TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="NoorTV.uk" status="online",Noor TV (480p) [Not 24/7]
 http://45.76.186.114:8080/hls/noortv.m3u8
+#EXTINF:-1 tvg-id="NoorTV.uk" status="online",Noor TV (480p) [Not 24/7]
+https://live.smartmediahouse.tv:8443/hls/ch1.m3u8
 #EXTINF:-1 tvg-id="PBSAmerica.uk" status="online",PBS America (720p)
 https://uktv.vercel.app/pbsamerica.m3u8
 #EXTINF:-1 tvg-id="QuestHDUK.uk" status="error",Quest HD UK (1080p)
@@ -307,7 +307,7 @@ https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:s4cpbs/ip
 https://api.new.livestream.com/accounts/6986636/events/5362122/live.m3u8
 #EXTINF:-1 tvg-id="SheffieldLiveTV.uk" status="online",Sheffield Live TV (360p) [Not 24/7]
 http://tv.sheffieldlive.org/hls/main.m3u8
-#EXTINF:-1 tvg-id="SKITV.ch" status="error",Ski TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="SKITV.ch" status="online",Ski TV (1080p) [Not 24/7]
 https://d2xeo83q8fcni6.cloudfront.net/v1/master/9d062541f2ff39b5c0f48b743c6411d25f62fc25/SkiTV-Zee/193.m3u8
 #EXTINF:-1 tvg-id="SkyNewsExtra1.au" status="online",Sky News Extra 1 (540p)
 https://skynewsau-live.akamaized.net/hls/live/2002689/skynewsau-extra1/master.m3u8
@@ -372,6 +372,8 @@ https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
 https://esmhls3-i.akamaihd.net/hls/live/510582/hls3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hadi TV English and Urdu (720p)
 https://live.ishiacloud.com/haditv.co.uk/haditv1.m3u8
+#EXTINF:-1 tvg-id="" status="online",Hadi TV Indonesian and Thai (720p)
+https://live.ishiacloud.com/haditv.co.uk/haditv2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hadi TV Azeri and Russian (720p)
 https://live.ishiacloud.com/haditv.co.uk/haditv3.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hadi TV Farsi (720p)
@@ -387,8 +389,6 @@ https://live.ishiacloud.com/haditv.co.uk/haditv8.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://vod2t.xpanded.com/x3tv2/index_wlan.m3u8
-#EXTINF:-1 tvg-id="" status="online",Hadi TV Indonesian and Thai (720p)
-https://live.ishiacloud.com/haditv.co.uk/haditv2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Rugby Women's Sevens (288p)
 https://esmhls2-i.akamaihd.net/hls/live/510581/hls2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Rugby Men's Sevens (288p)
