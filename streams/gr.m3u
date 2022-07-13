@@ -15,7 +15,7 @@ https://vdo.alphaserver.gr:3989/stream/play.m3u8
 http://alphatvlive.siliconweb.com/1/Y2Rsd1lUcUVoajcv/UVdCN25h/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="APT.gr" status="online",APT (480p) [Not 24/7]
 http://tv3.streampulse.eu:1935/tilesport/movie2/playlist.m3u8
-#EXTINF:-1 tvg-id="ARTTV.gr" status="online",ART TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ARTTV.gr" status="error",ART TV (720p) [Not 24/7]
 http://176.9.123.140:1935/arttv/arttv/playlist.m3u8
 #EXTINF:-1 tvg-id="AtticaTV.gr" status="online",Attica TV (1080p) [Not 24/7]
 https://e-e.cyou:8222/atticatv/atticatv/playlist.m3u8
@@ -47,7 +47,7 @@ http://live.cretetv.gr:1935/cretetv/myStream/playlist.m3u8
 https://video.streams.ovh:1936/DiavataTV/DiavataTV/playlist.m3u8
 #EXTINF:-1 tvg-id="Diktyo1.gr" status="error",Diktyo1 (360p)
 https://www.hellasnet.tv/rest.live.hn/diktyo1r/playlist.m3u8
-#EXTINF:-1 tvg-id="DipsoTV.gr" status="online",Dipso TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="DipsoTV.gr" status="error",Dipso TV (720p) [Not 24/7]
 https://live.cast-control.eu/ekpdipso/ekpdipso/playlist.m3u8
 #EXTINF:-1 tvg-id="EgnatiaTileorasi.gr" status="online",Εγνατία Τηλεόραση (576p)
 https://video.streams.ovh:1936/egnatiatv/egnatiatv/index.m3u8
@@ -79,7 +79,7 @@ http://wpso.com:1936/hls/wzra.m3u8
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
-#EXTINF:-1 tvg-id="Galaxy.gr" status="blocked",Galaxy (432p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Galaxy.gr" status="online",Galaxy (432p) [Geo-blocked]
 https://channel.streams.ovh:1936/galaxygr-1/galaxygr-1/playlist.m3u8
 #EXTINF:-1 tvg-id="GreekCinema.gr" status="error",Greek Cinema (720p)
 https://vdo.alphaserver.gr:3613/stream/play.m3u8
@@ -131,10 +131,10 @@ https://vdo.alphaserver.gr:3305/stream/play.m3u8
 https://live.neatv.gr:8888/hls/neatv.m3u8
 #EXTINF:-1 tvg-id="NetmaxTV.gr" status="online",Netmax TV (720p) [Not 24/7]
 http://live.netmaxtv.com:8080/live/live/playlist.m3u8
-#EXTINF:-1 tvg-id="NG.gr" status="online",NG (614p)
-http://live.streams.ovh:1935/NGradio/NGradio/playlist.m3u8
 #EXTINF:-1 tvg-id="NG.gr" status="online",NG (720p)
 https://live.streams.ovh/NGradio/NGradio/playlist.m3u8
+#EXTINF:-1 tvg-id="NG.gr" status="online",NG (614p)
+http://live.streams.ovh:1935/NGradio/NGradio/playlist.m3u8
 #EXTINF:-1 tvg-id="NotioiTV.gr" status="error",Notioi TV (720p)
 https://live.streams.ovh/YourStreaming/YourStreaming/playlist.m3u8
 #EXTINF:-1 tvg-id="NRG91.gr" status="online",NRG 91 (720p) [Not 24/7]
@@ -143,7 +143,7 @@ http://tv.nrg91.gr:1935/onweb/live/master.m3u8
 https://5c389faa13be3.streamlock.net:9553/onweb/live/playlist.m3u8
 #EXTINF:-1 tvg-id="NSTV.gr" status="online",NS TV (480p) [Not 24/7]
 http://176.9.123.140:1935/nstv1/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="OpenTV.gr" status="online",Open TV
+#EXTINF:-1 tvg-id="OpenTV.gr" status="error",Open TV
 https://liveopencloud.siliconweb.com/1/ZlRza2R6L2tFRnFJ/eWVLSlQx/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="OpenTVBUP.gr" status="timeout",Open TV BUP
 http://78.83.87.222:9999/play/a013/index.m3u8
@@ -187,8 +187,6 @@ https://live.cast-control.eu/xalastratv/xalastratv/playlist.m3u8
 http://web.onair-radio.eu:1935/explorecy/explorecy/playlist.m3u8
 #EXTINF:-1 tvg-id="ZouglaTV.gr" status="error",Zougla TV (480p)
 https://zouglalive-lh.akamaihd.net/i/zouglalive_1@340792/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",Ηλέκτρα TV (1080p) [Not 24/7]
-http://167.86.89.20:5080/LiveApp/streams/064918158666216168224216.m3u8
 #EXTINF:-1 tvg-id="" status="online",Zerouno TV (720p)
 http://5db313b643fd8.streamlock.net:1935/ZerounoTV/ZerounoTV/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ΡΙΚ Sat (720p) [Not 24/7]
@@ -219,6 +217,8 @@ http://78.83.87.222:9999/play/a015/index.m3u8
 http://78.83.87.222:9999/play/a017/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Camera Smile (480p)
 https://nrpus.bozztv.com/36bay2/gusa-camerasmile/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Ηλέκτρα TV (1080p) [Not 24/7]
+http://167.86.89.20:5080/LiveApp/streams/064918158666216168224216.m3u8
 #EXTINF:-1 tvg-id="" status="error",Σύρος TV1 (720p) [Not 24/7]
 http://176.9.123.140:1935/msg116s/msg116s/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Alpha (720p)
