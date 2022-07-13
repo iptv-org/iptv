@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="7ALimoges.fr" status="online",7ALimoges (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="7ALimoges.fr" status="error",7ALimoges (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCdFv_ZWQ3Xk_NfRiaK-ryGg/live
 #EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="online",Alpe d’Huez TV (720p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
@@ -11,7 +11,7 @@ https://live-antenne-reunion.zeop.tv/live/c3eds/antreunihd/hls_fta/antreunihd.m3
 https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 #EXTINF:-1 tvg-id="ARTEFrench.fr" status="blocked",ARTE Français (720p) [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
-#EXTINF:-1 tvg-id="BeurTV.fr" status="error",Beur TV [Geo-blocked]
+#EXTINF:-1 tvg-id="BeurTV.fr" status="online",Beur TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/Beur_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="BFMBusiness.fr" status="online",BFM Business (480p)
 https://iptv.azlinux.fr/?url=https://www.bfmtv.com/economie/en-direct/
@@ -19,9 +19,9 @@ https://iptv.azlinux.fr/?url=https://www.bfmtv.com/economie/en-direct/
 https://live.creacast.com/grandlilletv/smil:grandlilletv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BFMGrandLittoral.fr" status="online",BFM Grand Littoral (720p)
 https://live.creacast.com/grandlittoral/smil:grandlittoral.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BFMLyon.fr" status="online",BFM Lyon (480p)
+#EXTINF:-1 tvg-id="BFMLyon.fr" status="error",BFM Lyon (480p)
 https://bfmlyon-lh.akamaihd.net/i/BFMLYON_ESYTLS@797041/master.m3u8
-#EXTINF:-1 tvg-id="BFMParis.fr" status="online",BFM Paris (480p)
+#EXTINF:-1 tvg-id="BFMParis.fr" status="error",BFM Paris (480p)
 https://bfmparishdslive-lh.akamaihd.net/i/BFMPARIS_ESYTLS@429747/master.m3u8
 #EXTINF:-1 tvg-id="BFMTV.fr" status="online",BFMTV (1080p) [Not 24/7]
 https://iptv.azlinux.fr/?url=https://www.bfmtv.com/en-direct/
@@ -37,15 +37,15 @@ http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8
 https://s13.tntendirect.com/cherie25/live/playlist.m3u8
 #EXTINF:-1 tvg-id="CNews.fr" status="online",CNews (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CNEWS
+#EXTINF:-1 tvg-id="CStar.fr" status="online",CStar (1080p)
+https://iptv.azlinux.fr/?url=https://www.dailymotion.com/video/x5gv5v0
 #EXTINF:-1 tvg-id="CStar.fr" status="online",CStar (360p)
 https://s13.tntendirect.com/d17/live/playlist.m3u8
-#EXTINF:-1 tvg-id="CStar.fr" status="error",CStar (1080p)
-https://iptv.azlinux.fr/?url=https://www.dailymotion.com/video/x5gv5v0
 #EXTINF:-1 tvg-id="DBM.fr" status="online",DBM (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
-#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="error",El Heddaf TV [Geo-blocked]
+#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="online",El Heddaf TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="EMCITV.fr" status="online",EMCI TV (1080p)
 https://emci-fr-hls.akamaized.net/hls/live/2007265/emcifrhls/index.m3u8
@@ -154,7 +154,7 @@ http://51.210.199.15/hls/stream.m3u8
 http://51.210.199.26/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaComedy.fr" status="online",Persiana Comedy (720p)
 http://51.210.199.27/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaDocumentary.fr" status="error",Persiana Documentary (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PersianaDocumentary.fr" status="online",Persiana Documentary (720p) [Not 24/7]
 http://51.210.199.23/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaFamily.fr" status="online",Persiana Family (720p)
 http://51.210.199.19/hls/stream.m3u8
@@ -178,13 +178,13 @@ http://51.210.199.21/hls/stream.m3u8
 http://51.210.199.59/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PokerTV.fr" status="error",Poker TV (720p) [Not 24/7]
 http://51.210.199.17/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PublicSenat.fr" status="online",Public Sénat (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="PublicSenat.fr" status="timeout",Public Sénat (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xkxbzc
-#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="error",Qwest TV Jazz & Beyond (576p)
+#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="online",Qwest TV Jazz & Beyond (576p)
 http://210.210.155.37/uq2663/h/h94/01.m3u8
 #EXTINF:-1 tvg-id="RMCDecouverte.fr" status="online",RMC Découverte (720p)
 https://s13.tntendirect.com/rmcdecouverte/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TebeSud.fr" status="error",TébéSud (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TebeSud.fr" status="timeout",TébéSud (1080p) [Not 24/7]
 https://edge-live-ger1.ovstream.com/hls/10/source.m3u8
 #EXTINF:-1 tvg-id="TF1.fr" status="online",TF1 (1080p)
 https://s13.tntendirect.com/tf1/live/playlist.m3u8
@@ -198,7 +198,7 @@ https://shls-tiji-tv-prod-dub.shahid.net/out/v1/ee05878a88474f408ff04495d44cc249
 http://188.40.68.167/russia/tiji/playlist.m3u8
 #EXTINF:-1 tvg-id="TMC.fr" status="online",TMC (720p)
 https://s13.tntendirect.com/tmc/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="error",TV5 Monde Asie (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="online",TV5 Monde Asie (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/s/s24/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="error",TV5 Monde Asie (576p)
 http://210.210.155.37/dr9445/s/s24/index.m3u8
@@ -206,7 +206,7 @@ http://210.210.155.37/dr9445/s/s24/index.m3u8
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/master.m3u8
-#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="online",TV5 Monde Style HD (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="error",TV5 Monde Style HD (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h01/index.m3u8
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="online",TV7 Bordeaux (720p)
 http://live.digiteka.com/1/RVNZMmJtUURmd09I/U0dNU0tk/hls/live/playlist.m3u8
@@ -222,12 +222,6 @@ https://streamtv.cdn.dvmr.fr/TVR/ngrp:tvr.stream_all/master.m3u8
 https://54627d4fc5996.streamlock.net/tzik/tzik/chunklist.m3u8
 #EXTINF:-1 tvg-id="W9.fr" status="online",W9 (1080p) [Not 24/7]
 https://s13.tntendirect.com/w9/live/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Cnews (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x3b68jn
-#EXTINF:-1 tvg-id="" status="online",Euronews Hungary (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
-#EXTINF:-1 tvg-id="" status="online",Euronews en Español (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/euronewses/live
 #EXTINF:-1 tvg-id="" status="online",Euronews English (720p)
 https://d1mpprlbe8tn2j.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/euronewsLive/87O7AhxRUdeeIVqf/ewnsabren_eng.m3u8
 #EXTINF:-1 tvg-id="" status="online",viàMoselleTV (720p) [Not 24/7]
@@ -249,8 +243,14 @@ http://ott-cdn.ucom.am/s89/index.m3u8
 http://51.210.199.16/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Trace Latina
 http://185.234.217.27:8002/play/a02f/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Cnews (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x3b68jn
+#EXTINF:-1 tvg-id="" status="timeout",Euronews en Español (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/euronewses/live
 #EXTINF:-1 tvg-id="" status="error",Dreamsee Télévision (1080p) [Not 24/7]
 http://cdnapi.kaltura.com/p/2748081/sp/274808100/playManifest/entryId/1_gxkyk6lt/format/applehttp/protocol/http/a/a.m3u8
+#EXTINF:-1 tvg-id="" status="error",Euronews Hungary (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
 #EXTINF:-1 tvg-id="" status="error",Euronews по-русски (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
 #EXTINF:-1 tvg-id="" status="error",Euronews Albania (1080p) [Not 24/7]
