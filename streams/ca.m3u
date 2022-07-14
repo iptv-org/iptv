@@ -87,7 +87,7 @@ http://cdn12.henico.net:8080/live/dncal/index.m3u8
 https://streamer12.vdn.dstreamone.net/saazoawaz/saazoawaz/playlist.m3u8
 #EXTINF:-1 tvg-id="ECanada.ca" status="error",E! Canada (720p)
 http://encodercdn1.frontline.ca/vantrix/ltv/Bell_E!HD_AtopItci_2015_01_12_HD/hls_hd.m3u8
-#EXTINF:-1 tvg-id="EETTV.ca" status="online",EET TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="EETTV.ca" status="error",EET TV (1080p) [Not 24/7]
 https://eu.streamjo.com/eetlive/eettv.m3u8
 #EXTINF:-1 tvg-id="FightNetwork.ca" status="online",Fight Network (1080p)
 https://d12a2vxqkkh1bo.cloudfront.net/hls/main.m3u8
@@ -97,9 +97,9 @@ http://cdn12.henico.net:8080/live/gsctv/index.m3u8
 http://encodercdn1.frontline.ca/encoder181/output/History_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="IciRDI.ca" status="online",ICI RDI (720p)
 https://rcavlive.akamaized.net/hls/live/704025/xcanrdi/master.m3u8
-#EXTINF:-1 tvg-id="IIPCTV.ca" status="online",IIPC TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="IIPCTV.ca" status="blocked",IIPC TV (480p) [Geo-blocked]
 https://uni10rtmp.tulix.tv/iipctv/iipctv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ITCTV.ca" status="online",ITC TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ITCTV.ca" status="blocked",ITC TV (480p) [Geo-blocked]
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/f05d55e42dc746c8bd36edafbace7cc1/playlist.m3u8
 #EXTINF:-1 tvg-id="Knowledge.ca" status="blocked",Knowledge (720p) [Geo-blocked]
 http://knstream1.azureedge.net/knlive/knlive_high.m3u8
@@ -126,9 +126,9 @@ http://stream.pardesitv.online/pardesi/index.m3u8
 #EXTINF:-1 tvg-id="ParnianTV.ca" status="online",Parnian TV (720p)
 https://live2.parnian.tv/hls/.m3u8
 #EXTINF:-1 tvg-id="PlymouthRockTV.ca" status="online",Plymouth Rock TV (1080p)
-https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtv/playlist.m3u8
-#EXTINF:-1 tvg-id="PlymouthRockTV.ca" status="online",Plymouth Rock TV (1080p)
 https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtvedge/playlist.m3u8
+#EXTINF:-1 tvg-id="PlymouthRockTV.ca" status="online",Plymouth Rock TV (1080p)
+https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtv/playlist.m3u8
 #EXTINF:-1 tvg-id="PrimeAsiaTV.ca" status="error",Prime Asia TV (720p)
 http://primeasia.dyndns.tv:8080/Live_web_250/index.m3u8
 #EXTINF:-1 tvg-id="PrimeCanadaTV.ca" status="online",Prime Canada TV (720p) [Not 24/7]
@@ -150,9 +150,9 @@ http://live.tamilvision.tv:8081/TVI/SD/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCulturelleMedias.ca" status="online",Télé Culturelle Médias (720p) [Not 24/7]
 https://5790d294af2dc.streamlock.net/8150/8150/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleMagQuebec.ca" status="online",Télé-Mag Québec (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/ctmq/live
-#EXTINF:-1 tvg-id="TeleMagQuebec.ca" status="error",Télé-Mag Québec (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCNKXYT-Nng5LBMUQrZJ9zWA/live
+#EXTINF:-1 tvg-id="TeleMagQuebec.ca" status="online",Télé-Mag Québec (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/ctmq/live
 #EXTINF:-1 tvg-id="TeletoonEnglish.ca" status="error",Teletoon (720p) [Not 24/7]
 http://s1.mysportz.tv:2082/teletoon/playlist.m3u8
 #EXTINF:-1 tvg-id="TheChannelTV.ca" status="online",The Channel TV (1080p) [Not 24/7]
@@ -183,12 +183,12 @@ http://dee7mwgg9dzvl.cloudfront.net/hls/uvagut/playlist.m3u8
 https://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="WCGtv.ca" status="error",WCGtv Brandon (720p) [Not 24/7]
 https://wowzastream.westmancom.com/wcgtvlive/highstream.sdp/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",Azstar TV (1080p) [Not 24/7]
-http://live.livestreamtv.ca/azstar/smil:azstar.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ontario Parliamentary Network (FR) (720p)
 http://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-fr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",QVTV (720p)
 https://qvmstream.tulix.tv/720p/720p/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Azstar TV (1080p) [Not 24/7]
+http://live.livestreamtv.ca/azstar/smil:azstar.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",CPMTV 24
 http://159.69.58.154/cpmtv/cpmtv.m3u8
 #EXTINF:-1 tvg-id="" status="error",CityTV Toronto CFTO-DT (720p)
