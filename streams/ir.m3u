@@ -124,9 +124,9 @@ http://51.210.199.38/hls/stream.m3u8
 https://d2e40kvaojifd6.cloudfront.net/stream/onyx/playlist.m3u8
 #EXTINF:-1 tvg-id="OXIRTV.ir" status="error",OXIR TV (720p)
 http://51.210.199.36/hls/stream.m3u8
-#EXTINF:-1 tvg-id="ParnianTV.ca" status="online",Parnian TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ParnianTV.ca" status="error",Parnian TV (1080p) [Not 24/7]
 https://live2.parnian.tv/hls/live/play.m3u8
-#EXTINF:-1 tvg-id="ParsTV.ir" status="error",Pars TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ParsTV.ir" status="online",Pars TV (720p) [Not 24/7]
 https://livestream.5centscdn.com/cls032817/18e2bf34e2035dbabf48ee2db66405ce.sdp/index.m3u8
 #EXTINF:-1 tvg-id="PayamJavanTV.ir" status="online",Payam Javan TV (720p) [Not 24/7]
 https://uni01rtmp.tulix.tv/kensecure/pjtv.stream/playlist.m3u8
@@ -151,7 +151,7 @@ http://65.21.196.79/gem_river/master.m3u8
 #EXTINF:-1 tvg-id="Rubix.ir" status="error",GEM Rubix (576p)
 #EXTVLCOPT:http-referrer=https://www.gemonline.tv/en-US/Live/Index?channelname=rubix
 https://stream-cdn.gemonline.tv/live/rubix/index.m3u8
-#EXTINF:-1 tvg-id="SahandTV.ir" status="online",SAHAND (240p)
+#EXTINF:-1 tvg-id="SahandTV.ir" status="error",SAHAND (240p)
 http://cdn1.live.irib.ir:1935/epg-live/smil:sahand/playlist.m3u8
 #EXTINF:-1 tvg-id="SalamTV.ir" status="error",Salam TV (720p)
 https://iptv.salaamtv.org/salaam/playlist.m3u8
@@ -161,7 +161,7 @@ http://51.210.199.30/hls/stream.m3u8
 http://51.210.199.3/hls/stream.m3u8
 #EXTINF:-1 tvg-id="SL2.ir" status="online",SL 2 (720p)
 http://51.210.199.2/hls/stream.m3u8
-#EXTINF:-1 tvg-id="SNNTV.ir" status="error",SNN TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SNNTV.ir" status="online",SNN TV (720p) [Not 24/7]
 https://live.snn.ir/hls/snn/index.m3u8
 #EXTINF:-1 tvg-id="T2TV.ir" status="timeout",T2 TV (720p) [Not 24/7]
 http://208.113.204.104:8123/live/tapesh-live-stream/index.m3u8
@@ -199,6 +199,8 @@ https://live.presstv.ir/ifilmlive/smil:ifilmar.smil/playlist.m3u8
 http://vps.parsiland.net/hls/ParsiLand.m3u8
 #EXTINF:-1 tvg-id="" status="online",Sahar (480p)
 http://cdnlive.irib.ir/live-channels/smil:sahar3/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Channel 1 (480p) [Not 24/7]
+https://2nbyjjx7y53k-hls-live.5centscdn.com/cls040317/0070c5b7ef083bdc8de09065c61a34d8.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",iFILM English (480p) [Geo-blocked]
 https://live1.presstv.ir/live/ifilmen.m3u8
 #EXTINF:-1 tvg-id="" status="online",HispanTV (480p)
@@ -227,8 +229,6 @@ http://159.69.58.154/t2_movies/master.m3u8
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/56
 #EXTINF:-1 tvg-id="" status="error",1TvPersian (720p) [Not 24/7]
 https://1-215-11778-1.b.cdn13.com/onetvpersia001.m3u8
-#EXTINF:-1 tvg-id="" status="error",Channel 1 (480p) [Not 24/7]
-https://2nbyjjx7y53k-hls-live.5centscdn.com/cls040317/0070c5b7ef083bdc8de09065c61a34d8.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Khatereh TV (368p) [Geo-blocked]
 https://5caf24a595d94.streamlock.net:1937/8130/8130/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Nour (720p) [Not 24/7]
