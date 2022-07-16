@@ -34,9 +34,9 @@ https://unlimited1-us.dps.live/canal2/canal2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal2Quellon.cl" status="error",TV Quellón (1080p) [Not 24/7]
 https://pantera1-100gb-cl-movistar.dps.live/tvquellon/tvquellon.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9BioBioTelevision.cl" status="online",Canal 9 Bío Bío Televisión (1080p) [Not 24/7]
-https://unlimited6-cl.dps.live/c9/c9.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal9BioBioTelevision.cl" status="online",Canal 9 Bío Bío Televisión (1080p) [Not 24/7]
 https://unlimited1-us.dps.live/c9/c9.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal9BioBioTelevision.cl" status="online",Canal 9 Bío Bío Televisión (1080p) [Not 24/7]
+https://unlimited6-cl.dps.live/c9/c9.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal13.cl" status="blocked",Canal 13 (720p) [Geo-blocked]
 http://canal13-m3u.chorroaeboy.repl.co
 #EXTINF:-1 tvg-id="Canal21.cl" status="timeout",Canal 21 (720p) [Not 24/7]
@@ -51,7 +51,7 @@ https://5eae379fb77bb.streamlock.net/eduardo555/eduardo555/playlist.m3u8
 https://593b04c4c5670.streamlock.net/8148/8148/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal74SanAntonio.cl" status="online",Canal 74 (San Antonio) (720p)
 https://stmv1.zcastbr.com/canal74hd/canal74hd/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalISBIglesiaSanBernardo.cl" status="online",Canal ISB (Iglesia San Bernardo) (720p)
+#EXTINF:-1 tvg-id="CanalISBIglesiaSanBernardo.cl" status="error",Canal ISB (Iglesia San Bernardo) (720p)
 https://unlimited1-us.dps.live/isb/isb.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalLatino.cl" status="online",Canal Latino (CL54) (360p)
 https://hd.chileservidores.cl:1936/latina/latina/playlist.m3u8
@@ -99,7 +99,7 @@ https://paneltv.online:1936/8154/8154/playlist.m3u8
 https://github.com/MachineSystems/archived_m3u8/raw/main/elpinguino_cl.m3u8
 #EXTINF:-1 tvg-id="EnerGeek2.cl" status="error",EnerGeek Señal 2 (720p) [Not 24/7]
 https://wifispeed.trapemn.tv:1936/infantil/energeek-2/playlist.m3u8
-#EXTINF:-1 tvg-id="EnerGeek.cl" status="online",EnerGeek (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="EnerGeek.cl" status="error",EnerGeek (720p) [Not 24/7]
 https://wifispeed.trapemn.tv:1936/infantil/energeek-1/playlist.m3u8
 #EXTINF:-1 tvg-id="EnfoqueDigitalTV.cl" status="error",Enfoque Digital
 https://tvdatta.com:3797/hybrid/play.m3u8
@@ -309,7 +309,7 @@ https://janus-tv-ply.senado.cl/playlist/playlist.m3u8
 https://cloudflare.streamgato.us:3750/live/tvvisionlive.m3u8
 #EXTINF:-1 tvg-id="UATV.cl" status="online",Universidad Autónoma Temuco (UATV) (1080p) [Not 24/7]
 https://unlimited1-us.dps.live/uatv/uatv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="UATV.cl" status="error",Universidad Autónoma Temuco (UATV) (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="UATV.cl" status="online",Universidad Autónoma Temuco (UATV) (1080p) [Not 24/7]
 https://unlimited6-cl.dps.live/uatv/uatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="UCV3TV.cl" status="online",UCV3 TV (720p)
 http://unlimited6-cl.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
@@ -355,6 +355,8 @@ https://v2.tustreaming.cl/zizatv/index.m3u8
 http://38.131.11.9:1080/play/a00x
 #EXTINF:-1 tvg-id="ZonaPlayTV.cl" status="error",Zona Play TV (ZPTV) (720p) [Not 24/7]
 https://srv3.zcast.com.br/juancarlos9451/juancarlos9451/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",CHV Noticias (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
 #EXTINF:-1 tvg-id="" status="online",Canal Diputados (720p) [Not 24/7]
 http://camara.03.cl.cdnz.cl/camara19/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal SCÑ (San Carlos Ñuble) (720p) [Not 24/7]
@@ -387,8 +389,6 @@ http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/7.m3u8
 http://159.69.56.148:25461/live/Mix24-7Gratis/78qy9/25.m3u8
 #EXTINF:-1 tvg-id="" status="error",Camara de Diputados (DVR) (720p) [Not 24/7]
 http://camara.02.cl.cdnz.cl/cdndvr/ngrp:live_all/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",CHV Noticias (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
 #EXTINF:-1 tvg-id="" status="error",Estación TV (Chillán) (720p) [Not 24/7]
 https://pantera1-100gb-cl-movistar.dps.live/estaciontv/estaciontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Spectrum Channel LGBTQ+ (480p) [Not 24/7]
