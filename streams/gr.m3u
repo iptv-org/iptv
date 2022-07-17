@@ -22,9 +22,9 @@ https://e-e.cyou:8222/atticatv/atticatv/playlist.m3u8
 #EXTINF:-1 tvg-id="BananaTV.gr" status="error",Banana TV (360p)
 https://web.onair-radio.eu/bananachannel/bananachannel/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTV.gr" status="online",Baraza TV (1080p)
-https://eco.streams.ovh/BarazaTV/BarazarazaTV/BarazaTV/playlist.m3u8
-#EXTINF:-1 tvg-id="BarazaTV.gr" status="online",Baraza TV (1080p)
 https://eco.streams.ovh/BarazaTV/BarazaTV/playlist.m3u8
+#EXTINF:-1 tvg-id="BarazaTV.gr" status="online",Baraza TV (1080p)
+https://eco.streams.ovh/BarazaTV/BarazarazaTV/BarazaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTV.gr" status="timeout",Baraza TV (1080p) [Geo-blocked]
 https://panik.cast-control.eu:1936/Admin_1/Admin_1/playlist.m3u8
 #EXTINF:-1 tvg-id="BCI24News.gr" status="online",BCI 24 News (720p)
@@ -79,7 +79,7 @@ http://wpso.com:1936/hls/wzra.m3u8
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
-#EXTINF:-1 tvg-id="Galaxy.gr" status="online",Galaxy (432p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Galaxy.gr" status="blocked",Galaxy (432p) [Geo-blocked]
 https://channel.streams.ovh:1936/galaxygr-1/galaxygr-1/playlist.m3u8
 #EXTINF:-1 tvg-id="GreekCinema.gr" status="error",Greek Cinema (720p)
 https://vdo.alphaserver.gr:3613/stream/play.m3u8
@@ -141,7 +141,7 @@ https://live.streams.ovh/YourStreaming/YourStreaming/playlist.m3u8
 http://tv.nrg91.gr:1935/onweb/live/master.m3u8
 #EXTINF:-1 tvg-id="NRGTV.gr" status="online",NRG TV (720p)
 https://5c389faa13be3.streamlock.net:9553/onweb/live/playlist.m3u8
-#EXTINF:-1 tvg-id="NSTV.gr" status="error",NS TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="NSTV.gr" status="online",NS TV (480p) [Not 24/7]
 http://176.9.123.140:1935/nstv1/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="OpenTV.gr" status="online",Open TV
 https://liveopencloud.siliconweb.com/1/ZlRza2R6L2tFRnFJ/eWVLSlQx/hls/live/playlist.m3u8
@@ -169,10 +169,10 @@ https://til.pp.ua:3424/live/superblive.m3u8
 http://wpso.com:1936/hls/music1.m3u8
 #EXTINF:-1 tvg-id="TV100.gr" status="online",TV 100 (576p) [Not 24/7]
 https://live.fm100.gr/hls/tv100/index.m3u8
-#EXTINF:-1 tvg-id="TVCreta.gr" status="online",TV Creta (540p) [Not 24/7]
-https://live.streams.ovh/tvcreta/tvcreta/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVCreta.gr" status="online",Creta (540p) [Not 24/7]
 http://live.streams.ovh:1935/tvcreta/tvcreta/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCreta.gr" status="online",TV Creta (540p) [Not 24/7]
+https://live.streams.ovh/tvcreta/tvcreta/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVFilopoli.gr" status="online",TV Filopoli (360p) [Not 24/7]
 http://live.streams.ovh:1935/tvfilopoli/tvfilopoli/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNotos.gr" status="error",TV Notos (720p) [Not 24/7]
