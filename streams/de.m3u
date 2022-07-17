@@ -106,9 +106,9 @@ https://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
 #EXTINF:-1 tvg-id="KulturMD.de" status="online",KulturMD (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/kulturmd_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KulturMD.de" status="online",KulturMD (1080p)
-http://62.113.210.250/medienasa-live/mp4:kulturmd_high/playlist.m3u8
-#EXTINF:-1 tvg-id="KulturMD.de" status="online",KulturMD (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:kulturmd_high/playlist.m3u8
+#EXTINF:-1 tvg-id="KulturMD.de" status="error",KulturMD (1080p)
+http://62.113.210.250/medienasa-live/mp4:kulturmd_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KWTVWildau.de" status="error",KW TV Wildau (720p) [Not 24/7]
 https://58af0c57eaf3e.streamlock.net/easycast11-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="Lausitzwelle.de" status="online",Lausitzwelle (Fernsehen) (1080p)
@@ -267,10 +267,10 @@ https://stream01.stream.welocal.world/stream/fhd-rfo_66876/ngrp:stream_all/playl
 https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
-#EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
-http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
 http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
+#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
+http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RONTV.de" status="error",RON TV (1080p)
 https://ron-i.akamaihd.net/hls/live/523496/ron/master.m3u8
 #EXTINF:-1 tvg-id="RTLWest.de" status="error",RTL West (540p)
@@ -381,14 +381,12 @@ https://www.oeins.de/live/studio.m3u8
 https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Fernsehen (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_fs@430230/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",NDR Hamburg (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR International (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_int@430236/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Niedersachsen (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_nds@430233/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",NDR Schleswig-Holstein (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_sh@430234/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Weltweiter (720p) [Geo-blocked]
 https://ndrfs-lh.akamaihd.net/i/ndrfs_ww@430235/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Antenne Vorarlberg (720p) [Not 24/7]
@@ -426,8 +424,10 @@ https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",NDR Schleswig-Holstein (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NDR Mecklenburg-Vorpommern (720p) [Geo-blocked]
-https://ndrfs-lh.akamaihd.net/i/ndrfs_mv@430232/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",NDR Hamburg (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_hh@430231/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",NDR Schleswig-Holstein (720p) [Geo-blocked]
+https://ndrfs-lh.akamaihd.net/i/ndrfs_sh@430234/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ADRIA Music (1080p)
 https://serve-first.folxplay.tv/folx/ch-1/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ZWEI2 Music (1080p)
