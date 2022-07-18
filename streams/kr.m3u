@@ -109,14 +109,11 @@ http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
 http://183.110.27.87/mtnlive/720/playlist.m3u8
 #EXTINF:-1 tvg-id="NBS.kr" status="online",NBS Korea Agricultural Broadcasting (720p)
 https://media.joycorp.co.kr:4443/live/ngrp:live_all/playlist.m3u8
-#EXTINF:-1,SBS (1080p)
-http://222.109.117.27:9981/stream/channelid/2096368258
+
 #EXTINF:-1 tvg-id="TBCTV.kr" status="online",TBC SBS (540p)
 http://221.157.125.239:1935/live/psike/playlist.m3u8
 #EXTINF:-1 tvg-id="TBSTV.kr" status="online",TBS Seoul (720p)
 https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
-#EXTINF:-1,SBS TJB (1080p)
-http://1.245.74.5:1935/live/tv/.m3u8
 #EXTINF:-1 tvg-id="TVNAsia.hk" status="online",tvN Asia (Indonesian Subtitle) (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="TVNAsia.hk" status="error",tvN Asia (Indonesian Subtitle) (576p)
@@ -127,8 +124,6 @@ http://210.210.155.35/dr9445/h/h21/index.m3u8
 http://210.210.155.37/dr9445/h/h21/index.m3u8
 #EXTINF:-1 tvg-id="TVWorkNet.kr" status="online",TVWorkNet (480p)
 http://live.worktv.or.kr:1935/live/wowtvlive1.sdp/playlist.m3u8
-#EXTINF:-1,SBS UBC (540p)
-http://59.23.231.102:1935/live/UBCstream/playlist.m3u8
 #EXTINF:-1 tvg-id="YeosuMBCTV.kr" status="online",MBC Yeosu (720p) [Not 24/7]
 https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="YTN.kr" status="timeout",YTN (1080p)
@@ -173,3 +168,9 @@ http://live.kytv.co.kr:8080/hls/stream.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/ALLTHEKPOP/live
 #EXTINF:-1 tvg-id="" status="error",가요TV (1080p) [Not 24/7]
 http://gayotv.net:1935/live/gayotv/playlist.m3u8
+#EXTINF:-1 tvg-id="",SBS (1080p)
+http://222.109.117.27:9981/stream/channelid/2096368258
+#EXTINF:-1 tvg-id="",SBS TJB (1080p)
+http://1.245.74.5:1935/live/tv/.m3u8
+#EXTINF:-1 tvg-id="",SBS UBC (540p)
+http://59.23.231.102:1935/live/UBCstream/playlist.m3u8
