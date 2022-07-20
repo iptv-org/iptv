@@ -141,18 +141,14 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/newsk
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/TheArteTV/live
 #EXTINF:-1 tvg-id="" status="online",JCN TV
 https://jcnonair-1108.acs.wecandeo.com/ms/3162/1108/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",SBS (1080p)
-http://222.109.117.27:9981/stream/channelid/2096368258
+#EXTINF:-1 tvg-id="" status="online",KBS News
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/newskbs/live
 #EXTINF:-1 tvg-id="" status="online",GoodTV (1080p)
 http://mobliestream.c3tv.com:1935/live/goodtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",SPOTV (1080p)
 https://bcovlive-a.akamaihd.net/99545824f51f4c1592b35314c6ece3b0/ap-northeast-1/6271486521001/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",경상MBC (MBC Gyeongnam) (1080p)
-https://624a79c87201d.streamlock.net/MBCTV/TV1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Korean Election TV
 http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",SBS TJB (1080p)
-http://1.245.74.5:1935/live/tv/.m3u8
 #EXTINF:-1 tvg-id="" status="online",Arirang Radio (720p)
 http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Arirang Radio (720p)
@@ -161,8 +157,6 @@ http://amdlive-ch02.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/pla
 http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Arirang Radio (720p)
 http://amdlive.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",MBC Mokpo (720p)
-http://vod.mpmbc.co.kr:1935/live/encoder-tv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Arirang Radio (720p)
 https://amdlive-ch01-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Arirang Radio (720p)
@@ -171,13 +165,21 @@ https://amdlive-ch02-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/pl
 https://amdlive-ch03-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Korean Song Channel
 http://live.kytv.co.kr:8080/hls/stream.m3u8
-#EXTINF:-1 tvg-id="" status="online",SBS UBC (540p)
-http://59.23.231.102:1935/live/UBCstream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",부산MBC (MBC Busan) (360p)
 http://stream.bsmbc.com/livetv/BusanMBC_TV_onairstream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",All The K-POP
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/ALLTHEKPOP/live
 #EXTINF:-1 tvg-id="" status="timeout",광주MBC (MBC Gwangju) (1080p) [Geo-blocked]
 https://media.kjmbc.co.kr/hls/live/stream/playlist.m3u8
+#EXTINF:-1 tvg-id="SBSTV.kr" status="online",SBS (1080p)	
+http://222.109.117.27:9981/stream/channelid/2096368258
+#EXTINF:-1 tvg-id="MBCGyeongnamChangwonTV.kr" status="online",경상MBC (MBC Gyeongnam Changwon) (1080p)	
+https://624a79c87201d.streamlock.net/MBCTV/TV1.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TJBTV.kr" status="online",SBS TJB (1080p)	
+http://1.245.74.5:1935/live/tv/.m3u8
+#EXTINF:-1 tvg-id="MokpoMBCTV.kr" status="online",목포 MBC Mokpo (720p)	
+http://vod.mpmbc.co.kr:1935/live/encoder-tv/playlist.m3u8
+#EXTINF:-1 tvg-id="UBCTV.kr" status="online",SBS UBC (540p)	
+http://59.23.231.102:1935/live/UBCstream/playlist.m3u8
 #EXTINF:-1 tvg-id="",가요TV (1080p) [Not 24/7]
 http://gayotv.net:1935/live/gayotv/playlist.m3u8
