@@ -155,7 +155,7 @@ https://apichvod19.seezntv.com/OTM/10650_H.m3u8?AdaptiveType=HLS&SessionID=3438d
 http://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-id="EBSPlus2.kr" status="online",EBS+ 2 (400p)
 http://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8
-#EXTINF:-1 tvg-id="EdailyTV.kr",Edaily TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="EdailyTV.kr" status="online",Edaily TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC8Sv6O3Ux8ePVqorx8aOBMg/live
 #EXTINF:-1 tvg-id="ETV.kr" status="online",NEC ETV 한국선거방송 (720p)
 http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index_1.m3u8
@@ -207,7 +207,7 @@ https://apichvod19.seezntv.com/OTM/10800_M.m3u8?AdaptiveType=HLS&SessionID=3438d
 https://apichvod19.seezntv.com/OTM/10800_H.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="JejuMBCTV.kr" status="error",제주 MBC (MBC Jeju) (352p) [Not 24/7]
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
-#EXTINF:-1 tvg-id="JIBSTV.kr" status="timeout",JIBS SBS (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JIBSTV.kr" status="online",JIBS SBS (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
 #EXTINF:-1 tvg-id="JTBC.kr" status="online",JTBC (404p) [Not 24/7]
 https://apichvod19.seezntv.com/OTM/10010_L.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
@@ -255,10 +255,10 @@ http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
 http://kbs-dokdo.gscdn.com/sec_kbshomepage_300/sec_kbshomepage_300.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (720p)
 https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/master.m3u8
+#EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (720p)
+https://wms4-kortv.akamaized.net/a_live/63719963/smil:20ch011.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (Vietnamese Subtitles) (720p)
 https://livecdn.fptplay.net/sdb/kbs_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="KBSWorld.kr" status="timeout",KBS World (720p)
-https://wms4-kortv.akamaized.net/a_live/63719963/smil:20ch011.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KCTV.kr" status="error",KCTV 광주 CH05 (720p) [Not 24/7]
 http://119.77.96.184:1935/chn05/chn05/playlist.m3u8
 #EXTINF:-1 tvg-id="KLeague1.kr" status="online",K League 1 (404p) [Not 24/7]
@@ -291,11 +291,11 @@ https://apichvod19.seezntv.com/OTM/10480_M.m3u8?AdaptiveType=HLS&SessionID=3438d
 https://apichvod19.seezntv.com/OTM/10480_H.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="KPlus.sg" status="online",K+ (Indonesian subtitle) (576p)
 http://210.210.155.37/uq2663/h/h08/index.m3u8
-#EXTINF:-1 tvg-id="KPlus.sg" status="error",K+ (Indonesian subtitle) (576p) [Geo-blocked]
-http://210.210.155.35/uq2663/h/h08/index.m3u8
 #EXTINF:-1 tvg-id="KShopping.kr" status="online",KShopping
 https://fhs8036.bd-61.ktcdn.co.kr/klive/smil:klive.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="MBCTV.kr" status="online",MBC (1080p)
+#EXTINF:-1 tvg-id="MBCGyeongnamChangwonTV.kr" status="online",경상MBC (MBC Gyeongnam Changwon) (1080p)
+https://624a79c87201d.streamlock.net/MBCTV/TV1.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="MBCTV.kr" status="error",MBC (1080p)
 http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
 #EXTINF:-1 tvg-id="MBN.kr" status="online",MBN (404p) [Not 24/7]
 https://apichvod19.seezntv.com/OTM/10020_L.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
@@ -531,14 +531,12 @@ https://apichvod19.seezntv.com/OTM/10300_H.m3u8?AdaptiveType=HLS&SessionID=3438d
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w/live
 #EXTINF:-1 tvg-id="YTNDMB.kr" status="timeout",YTN DMB
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC38IlqMxZ_YtFg3eSGmmJnQ/live
+#EXTINF:-1 tvg-id="YTNScience.kr" status="online",YTN SCIENCE (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCZdBJIbJz0P9xyFipgOj1fA/live
 #EXTINF:-1 tvg-id="YTNScience.kr" status="online",YTN SCIENCE (270p)
 http://slive.sciencetv.kr:1935/science/yslive_20140419_1/playlist.m3u8
-#EXTINF:-1 tvg-id="YTNScience.kr" status="error",YTN SCIENCE (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCZdBJIbJz0P9xyFipgOj1fA/live
 #EXTINF:-1 tvg-id="" status="online",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",KBS News
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/newskbs/live
 #EXTINF:-1 tvg-id="" status="online",arteTV
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/TheArteTV/live
 #EXTINF:-1 tvg-id="" status="online",JCN TV
