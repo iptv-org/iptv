@@ -143,13 +143,13 @@ https://cdn1.live-tv.od.ua:8083/krugod/krugod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKKrug.ua" status="online",ТРК Круг (576p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/krugod/krugod/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
-https://hls.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://hls.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://rtsp.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.ua" status="online",TV5 (Запорожье) (360p)
 https://rtsp.cdn.ua/tv5.zp.ua_live/tv5/playlist.m3u8
+#EXTINF:-1 tvg-id="TV5.ua" status="error",TV5 (Запорожье) (360p)
+https://hls.cdn.ua/tv5.zp.ua_live/mp4:tv5/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Plus.ua" status="error",TV7+ (Хмельницький) (576p) [Not 24/7]
 https://tv7plus.com/hls/tv7.m3u8
 #EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
@@ -181,8 +181,6 @@ https://cdn1.live-tv.od.ua:8083/zdorovood/zdorovo/playlist.m3u8
 http://hls-live-media.cdn01.net/default/stream_10429_1.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_1.m3u8
-#EXTINF:-1 tvg-id="" status="online",Телеканал Прямий (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCH9H_b9oJtSHBovh94yB5HA/live
 #EXTINF:-1 tvg-id="" status="online",4 канал (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQdSS9GSBbtSqW3oNB39KTw/live
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
@@ -195,6 +193,8 @@ http://194.50.51.34/playlist.m3u8
 http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",CNL Европа (360p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
+#EXTINF:-1 tvg-id="" status="online",Телеканал Прямий (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCH9H_b9oJtSHBovh94yB5HA/live
 #EXTINF:-1 tvg-id="" status="online",I-UA.tv (1080p)
 https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
 #EXTINF:-1 tvg-id="" status="online",4 канал (720p)
