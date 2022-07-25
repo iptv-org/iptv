@@ -22,8 +22,6 @@ class Playlist {
       if (options.public) {
         attrs = {
           'tvg-id': stream.get('tvg_id'),
-          'tvg-country': stream.get('tvg_country'),
-          'tvg-language': stream.get('tvg_language'),
           'tvg-logo': stream.get('tvg_logo'),
           'group-title': stream.get('group_title'),
           'user-agent': stream.get('user_agent') || undefined
