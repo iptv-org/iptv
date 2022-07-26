@@ -7,10 +7,10 @@ https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(lb)/
 http://wms.shared.streamshow.it/canale51/canale51/playlist.m3u8
 #EXTINF:-1 tvg-id="51RadioTV.it" status="online",51 Radio TV (480p) [Geo-blocked]
 https://59d7d6f47d7fc.streamlock.net/canale51/canale51/playlist.m3u8
-#EXTINF:-1 tvg-id="ABChannel.it" status="blocked",AB Channel (720p) [Not 24/7]
-https://tsw.streamingwebtv24.it:1936/abchanneltv/abchanneltv/playlist.m3u8
 #EXTINF:-1 tvg-id="ABChannel.it" status="error",AB Channel (768p)
 https://59ef7ad665d1d.streamlock.net:1443/abchannel/abchannel/playlist.m3u8
+#EXTINF:-1 tvg-id="ABChannel.it" status="error",AB Channel (720p) [Not 24/7]
+https://tsw.streamingwebtv24.it:1936/abchanneltv/abchanneltv/playlist.m3u8
 #EXTINF:-1 tvg-id="AlmaTV.it" status="timeout",Alma TV (576p)
 http://151.0.207.99:1935/AlmaTv/AlmaTv/playlist.m3u8
 #EXTINF:-1 tvg-id="AltoAdigeTV.it" status="online",Alto Adige TV (720p)
@@ -163,7 +163,7 @@ http://capital-live-tv-01-hls.akamai.media.kataweb.it/i/CapitalTv_1@183098/maste
 https://5929b138b139d.streamlock.net/RadioIbizaTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioIglesias.it" status="online",Radio Iglesias (576p) [Geo-blocked]
 http://wms.shared.streamshow.it/visualradio/mp4:visualradio/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="online",Radio Iglesias Sardegna (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="blocked",Radio Iglesias Sardegna (576p) [Geo-blocked]
 https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioItaliaTV.it" status="error",Radio Italia TV (480p)
 https://radioitaliatv-lh.akamaihd.net/i/radioitaliatv_1@329645/master.m3u8
@@ -316,7 +316,7 @@ https://streamtechglobal.akamaized.net/hls/live/2024685/telefriuli/Group01/playl
 https://5db313b643fd8.streamlock.net/Telegenova/Telegenova/playlist.m3u8
 #EXTINF:-1 tvg-id="Telegranda.it" status="online",Telegranda (720p) [Not 24/7]
 http://live.sloode.com:1935/telegranda_live/C2AD-0664-DC75-4744/playlist.m3u8
-#EXTINF:-1 tvg-id="TelelibertaHD.it" status="online",Teleliberta (486p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelelibertaHD.it" status="error",Teleliberta (486p) [Not 24/7]
 http://api.new.livestream.com/accounts/17114188/events/4902226/live.m3u8
 #EXTINF:-1 tvg-id="TeleLiguriaSud.it" status="online",Tele Liguria Sud (224p) [Not 24/7]
 https://live.teleliguriasud.it/hls/tls/index.m3u8
@@ -356,7 +356,7 @@ https://diretta.teleterni.it/live/stream_src.m3u8
 https://59d7d6f47d7fc.streamlock.net/rs2/rs2/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleTusciaSabina2000.it" status="online",TeleTusciaSabina 2000 (576p) [Not 24/7]
 http://ts2000tv.streaming.nextware.it:8081/ts2000tv/ts2000tv/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleVenezia.it" status="error",TeleVenezia (576p)
+#EXTINF:-1 tvg-id="TeleVenezia.it" status="online",TeleVenezia (576p)
 https://59d8c0cee6f3d.streamlock.net/televenezia/televenezia/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleVideoAgrigento.it" status="online",TeleVideo Agrigento (480p)
 https://59d7d6f47d7fc.streamlock.net/tva/tva/playlist.m3u8
@@ -420,7 +420,7 @@ https://5cbd3bc28341f.streamlock.net:444/videostar_live/videostar/playlist.m3u8
 https://live2-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ew)/index.m3u8
 #EXTINF:-1 tvg-id="VisualRadio.it" status="online",Visual Radio (576p) [Not 24/7]
 http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8
-#EXTINF:-1 tvg-id="Vuemme.it" status="online",Vuemme (480p)
+#EXTINF:-1 tvg-id="Vuemme.it" status="error",Vuemme (480p)
 https://5db313b643fd8.streamlock.net/Vuemme/Vuemme/playlist.m3u8
 #EXTINF:-1 tvg-id="WineChannel.it" status="error",Wine Channel (720p)
 http://212.43.97.35:1935/winechannel/winechannel/playlist.m3u8
@@ -452,10 +452,14 @@ http://217.61.26.46:8080/hls/azzurra.m3u8
 http://217.61.26.46:8080/hls/news.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV UNO (240p)
 http://ftp.tiscali.it/francescovernata/TVUNO/monoscopioTvUNOint-1.wmv
-#EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
-https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",Camera dei Deputati (via RR) (240p)
+https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Radio Radicale TV (240p) [Not 24/7]
+https://video-ar.radioradicale.it/diretta/padtv2/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
 https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Radio 105 TV (576p)
+https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(ec)/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",R 101 Italia IT (576p)
 https://live3-radio-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(er)/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",radionorba TV (404p)
@@ -490,7 +494,3 @@ https://rtl-video2-stream.thron.com/live-video/video2/ngrp:video2/playlist.m3u8
 https://rtl-video4-stream.thron.com/live-video/video4/ngrp:video4/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",TeleRent 7Gold (720p)
 https://stream2.xdevel.com/video0s86-21/stream/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="" status="error",Camera dei Deputati (via RR) (240p)
-https://video-ar.radioradicale.it/diretta/camera2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Radio Radicale TV (240p) [Not 24/7]
-https://video-ar.radioradicale.it/diretta/padtv2/playlist.m3u8
