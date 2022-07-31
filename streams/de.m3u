@@ -77,7 +77,7 @@ https://5acade5fc0c29.streamlock.net/kabeljournal/live2020.stream/playlist.m3u8
 http://5.135.92.131:1935/live/euroAl/playlist.m3u8
 #EXTINF:-1 tvg-id="Filstalwelle.de" status="online",Filstalwelle (576p)
 http://62.113.210.2/filstalwelle-live/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="FinestTV.de" status="online",Finest TV (288p) [Not 24/7]
+#EXTINF:-1 tvg-id="FinestTV.de" status="timeout",Finest TV (288p) [Not 24/7]
 http://media.finest.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="FOLXMusic.de" status="timeout",FOLX Music (1080p)
 https://serve-first.folxplay.tv/folx/ch-4/master.m3u8
@@ -267,10 +267,10 @@ https://stream01.stream.welocal.world/stream/fhd-rfo_66876/ngrp:stream_all/playl
 https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
+#EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
+http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
 http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
-#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
-http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RONTV.de" status="error",RON TV (1080p)
 https://ron-i.akamaihd.net/hls/live/523496/ron/master.m3u8
 #EXTINF:-1 tvg-id="RTLWest.de" status="error",RTL West (540p)
@@ -458,8 +458,6 @@ https://br_hdslive-f.akamaihd.net/i/bfssued_germany@119890/index_3776_av-p.m3u8
 https://brlive-lh.akamaihd.net/i/bfssued_germany@119890/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",RTL
 https://cdn1.mobiletv.bg/T5/rtl/rtl_794613_850k.m3u8
-#EXTINF:-1 tvg-id="" status="error",Earth TV (1080p)
-https://iptv-all.lanesh4d0w.repl.co/germany/earth-tv
 #EXTINF:-1 tvg-id="" status="error",Isar TV (1080p) [Not 24/7]
 https://isar-tv.iptv-playoutcenter.de/isar-tv/isar-tv.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",NDR Event 1 (720p)
@@ -470,3 +468,5 @@ https://ndrevent-lh.akamaihd.net/i/ndrevent_2@429805/master.m3u8
 https://stream05.stream.welocal.world/stream/rsc/ngrp:rsc.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",WDR Fernsehen (720p)
 https://wdr_fs-lh.akamaihd.net/i/wdrfs_weltweit@112033/master.m3u8
+#EXTINF:-1 tvg-id="",Earth TV (1080p)
+https://iptv-all.lanesh4d0w.repl.co/germany/earth-tv
