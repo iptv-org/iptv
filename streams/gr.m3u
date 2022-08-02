@@ -41,13 +41,13 @@ https://e-e.cyou:8222/channel9/channel9/playlist.m3u8
 https://vod.streams.ovh:3528/stream/play.m3u8
 #EXTINF:-1 tvg-id="CorfuTV.gr" status="online",Corfu TV (576p) [Not 24/7]
 https://itv.streams.ovh/corfuchannel/corfuchannel/playlist.m3u8
-#EXTINF:-1 tvg-id="CreteTV.gr" status="online",KPHTH TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CreteTV.gr" status="error",KPHTH TV (720p) [Not 24/7]
 http://live.cretetv.gr:1935/cretetv/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="DiavataTV.gr" status="online",Diavata TV (720p)
 https://video.streams.ovh:1936/DiavataTV/DiavataTV/playlist.m3u8
 #EXTINF:-1 tvg-id="Diktyo1.gr" status="error",Diktyo1 (360p)
 https://www.hellasnet.tv/rest.live.hn/diktyo1r/playlist.m3u8
-#EXTINF:-1 tvg-id="DipsoTV.gr" status="error",Dipso TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="DipsoTV.gr" status="online",Dipso TV (720p) [Not 24/7]
 https://live.cast-control.eu/ekpdipso/ekpdipso/playlist.m3u8
 #EXTINF:-1 tvg-id="EgnatiaTileorasi.gr" status="online",Εγνατία Τηλεόραση (576p)
 https://video.streams.ovh:1936/egnatiatv/egnatiatv/index.m3u8
@@ -75,7 +75,7 @@ https://ert-live-bcbs15228.siliconweb.com/media/ert_sports_ww/ert_sports3_ww.m3u
 https://ert-live-bcbs15228.siliconweb.com/media/ert_world/ert_world.m3u8
 #EXTINF:-1 tvg-id="ERTWorld.gr" status="online",ERT World (480p)
 http://wpso.com:1936/hls/wzra.m3u8
-#EXTINF:-1 tvg-id="FarosTV2.gr" status="blocked",Faros TV2 (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="FarosTV2.gr" status="error",Faros TV2 (480p) [Geo-blocked]
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
@@ -107,7 +107,7 @@ http://wpso.com:1936/hls/kidshd.m3u8
 http://flashcloud.mediacdn.com/live/kontratv/.m3u8
 #EXTINF:-1 tvg-id="KontraChannel.gr" status="online",Kontra Channel (1080p)
 http://kontralive.siliconweb.com/live/kontratv/playlist.m3u8
-#EXTINF:-1 tvg-id="KritiTV.gr" status="online",Κρήτη TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KritiTV.gr" status="error",Κρήτη TV (720p) [Not 24/7]
 http://live.cretetv.gr:1935/cretetv/myStream/f1tv.m3u8
 #EXTINF:-1 tvg-id="LiveTV.gr" status="error",Live TV (272p)
 https://vod.streams.ovh:3829/stream/play.m3u8
@@ -163,7 +163,7 @@ http://78.83.87.222:9999/play/a016/index.m3u8
 https://s1.cystream.net/live/smile/playlist.m3u8
 #EXTINF:-1 tvg-id="StarChannel.gr" status="online",Star (720p)
 https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8
-#EXTINF:-1 tvg-id="SuperB.gr" status="error",Super B (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="SuperB.gr" status="online",Super B (576p) [Not 24/7]
 https://til.pp.ua:3424/live/superblive.m3u8
 #EXTINF:-1 tvg-id="Tilemousiki.gr" status="online",Tilemousiki (480p) [Not 24/7]
 http://wpso.com:1936/hls/music1.m3u8
@@ -191,8 +191,6 @@ https://zouglalive-lh.akamaihd.net/i/zouglalive_1@340792/master.m3u8
 http://167.86.89.20:5080/LiveApp/streams/064918158666216168224216.m3u8
 #EXTINF:-1 tvg-id="" status="online",Zerouno TV (720p)
 http://5db313b643fd8.streamlock.net:1935/ZerounoTV/ZerounoTV/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",ΡΙΚ Sat (720p) [Not 24/7]
-http://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ERT News 2 (720p) [Geo-blocked]
 https://ert-live-bcbs15228.siliconweb.com/media/ert_news_2/ert_news_2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Skai (720p)
@@ -207,6 +205,8 @@ https://streamer-cache.grnet.gr/parliament/hls/webtv2.m3u8
 https://streamer-cache.grnet.gr/parliament/hls/webtv.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση (360p)
 https://streamer-cache.grnet.gr/parliament/parltv.sdp/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",ΡΙΚ Sat (720p) [Not 24/7]
+http://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Βουλή Τηλεόραση 3 (540p)
 https://streamer-cache.grnet.gr/parliament/hls/webtv3.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ERT Sports (1080p) [Geo-blocked]
