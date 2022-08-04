@@ -42,7 +42,7 @@ Yes, we only need the links to be publicly accessible like FTA packages (free-to
 ### Can I add a FTA channel that broadcasts PPV events or pay programming?
 Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
 
-### Why is recommended the "playlist.m3u" or "index.m3u" at the end of the url?
+### Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?
 These files use adaptive resolution, also the streams are permanent, that avoids dependence on tokens or temporal files.
 
 ### Why don't we accept XStreamCode in streams?
