@@ -3,9 +3,10 @@
 Basic:
 - [I have a cable service and I want those channels to be on this IPTV. Is that possible?](#I-have-a-cable-service-and-i-want-those-channels-to-be-on-this-iptv-is-that-possible)
 - [Is possible to view channels directly from the main website?](#Is-possible-to-view-channels-directly-from-the-main-website)
+- [Does the playlist have a channel guide?](#Does-the-playlist-have-a-channel-guide)
+- [Are you planning to include a VOD of TV shows broadcasted on this playlist?](#Are-you-planning-to-include-a-vod-of-tv-shows-broadcasted-on-this-playlist)
 - [Why don't we show NSFW channels in most playlists?](#Why-dont-we-show-nsfw-channels-in-most-playlists)
 - [Do I have to pay to use this list?](#Do-i-have-to-pay-to-use-this-list)
-- [Are you planning to include a VOD of TV shows broadcasted on this playlist?](#Are-you-planning-to-include-a-vod-of-tv-shows-broadcasted-on-this-playlist)
 
 Technical:
 - [Does the channel need to be FTA to be included in the playlists?](#Does-the-channel-need-to-be-FTA-to-be-included-in-the-playlists)
@@ -22,6 +23,9 @@ Technical:
 ## Basic
 ### I have a cable service and I want those channels to be on this IPTV. Is that possible?
 No. This playlist does not replace traditional cable, because this playlist can't include exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
+
+### Does the playlist have a channel guide?
+Yes. However, not all channels have their EPG available. See [EPG](https://github.com/iptv-org/epg) for more info.
 
 ### Is possible to view channels directly from the main website?
 No, to avoid possible abuse of the service.
