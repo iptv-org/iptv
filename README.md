@@ -2,7 +2,7 @@
 
 [![auto-update](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml/badge.svg)](https://github.com/iptv-org/iptv/actions/workflows/auto-update.yml)
 
-Collection of publicly available IPTV (Internet Protocol television) channels from all over the world.
+Collection of publicly available IPTV (Internet Protocol television) channels from all over the world. See [FAQ](https://github.com/iptv-org/iptv/blob/faq-patch/FAQ.md).
 
 ## Usage
 
