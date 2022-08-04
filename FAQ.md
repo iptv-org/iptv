@@ -43,7 +43,7 @@ Yes, we only need the links to be publicly accessible like FTA packages (free-to
 Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
 
 ### Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?
-These files are adjust to your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally this url.
+These files are adjust to your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally there urls.
 
 ### Why don't we accept XStreamCode in streams?
 XStreamCode contains code that could be malicious to users.
