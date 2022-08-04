@@ -49,13 +49,13 @@ https://video.misistemareseller.com/Fuegotv/Fuegotv/playlist.m3u8
 https://ss2.domint.net:3200/gdm_str/gdmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="GHTelevision.do" status="error",GH Television Canal 10 (1080p) [Not 24/7]
 https://cloudflare.streamgato.us:3352/live/ghtelevisionhdlive.m3u8
-#EXTINF:-1 tvg-id="HermanasMirabalTV.do" status="online",Hermanas Mirabal TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="HermanasMirabalTV.do" status="blocked",Hermanas Mirabal TV (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/Hmtv/hmtv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="HilandoFinoTV.do" status="error",Hilando Fino (1080p) [Not 24/7]
 https://primary-out.iptv-global.net/HilandoFinoTV/ngrp:HilandoFinoTV_all/playlist.m3u8
 #EXTINF:-1 tvg-id="Hits360TV.do" status="online",Hits 360 TV (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/hits360tv/hits360HD.myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="HM.do" status="online",HM (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="HM.do" status="blocked",HM (720p) [Geo-blocked]
 http://cm.hostlagarto.com:8081/Hmtv/hmtv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="ImagenUniversalTV.do" status="online",Imagen Universal TV
 https://imagenuniversaltv.net:3771/live/iutvlive.m3u8
@@ -69,7 +69,7 @@ https://streamlink-iptv.herokuapp.com/iptv-query?streaming-ip=https://www.twitch
 http://51.222.85.85:81/hls/loco/index.m3u8
 #EXTINF:-1 tvg-id="LocomotionTV.do" status="error",Locomotion TV (480p) [Not 24/7]
 http://locomotiontv.com/envivo/loco_ch/stream.m3u8
-#EXTINF:-1 tvg-id="LunaTVCanal53.do",Luna TV Canal 53
+#EXTINF:-1 tvg-id="LunaTVCanal53.do" status="online",Luna TV Canal 53
 https://ss2.domint.net:3228/luna_str/lunatv/playlist.m3u8
 #EXTINF:-1 tvg-id="LVM.do" status="online",LVM (720p)
 https://uni01rtmp.tulix.tv/playout2multi9/lavozdemaria.stream/playlist.m3u8
@@ -79,9 +79,9 @@ http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 http://stream3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 #EXTINF:-1 tvg-id="Microvision10.do" status="online",Microvision 10 (720p) [Not 24/7]
 http://190.103.183.24:1935/live/MicroHD/playlist.m3u8
-#EXTINF:-1 tvg-id="MisionELTV.do" status="online",Mision ELTV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="MisionELTV.do" status="error",Mision ELTV (480p) [Not 24/7]
 https://5790d294af2dc.streamlock.net/8286/8286/playlist.m3u8
-#EXTINF:-1 tvg-id="MorroTV.do" status="error",MorroTV
+#EXTINF:-1 tvg-id="MorroTV.do" status="online",MorroTV
 https://cloudflare.streamgato.us:3044/live/morrotvlive.m3u8
 #EXTINF:-1 tvg-id="Mun2TV.do" status="online",Mun2TV
 https://servers.amelbasoluciones.co:19360/mun2tv/mun2tv.m3u8
@@ -93,7 +93,7 @@ https://cm.hostlagarto.com:4445/Musavisionhd/Musavisionhd/playlist.m3u8
 https://streaming.ath.cx:1936/nexxotv/nexxotv/playlist.m3u8
 #EXTINF:-1 tvg-id="NitidaTV.do" status="online",Nítida TV
 https://live.teledomdr.com:3131/live/nitidatvlive.m3u8
-#EXTINF:-1 tvg-id="ORBITTV.do" status="blocked",ORBIT TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ORBITTV.do" status="online",ORBIT TV (480p) [Geo-blocked]
 https://ss3.domint.net:3134/otv_str/orbittv/playlist.m3u8
 #EXTINF:-1 tvg-id="PH.do" status="online",PH (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/phtv/Phtv.myStream/playlist.m3u8
@@ -157,7 +157,7 @@ http://newyorkstream.ddns.net:1935/telenord12/telenord12/playlist.m3u8
 https://vdo1.streamgato.us:3592/live/teleorientaldigitallive.m3u8
 #EXTINF:-1 tvg-id="Telesantodomingo.do" status="online",Telesantodomingo
 https://cdn5.streamgato.us:3315/live/telesantodomingolive.m3u8
-#EXTINF:-1 tvg-id="Telesistema.do" status="online",Telesistema 11
+#EXTINF:-1 tvg-id="Telesistema.do" status="timeout",Telesistema 11
 http://177.52.221.214:8000/play/a0fk/index.m3u8
 #EXTINF:-1 tvg-id="TelesurCanal10.do" status="error",Telesur Canal (360p) [Not 24/7]
 https://ss3.domint.net:3124/tls_str/telesur/playlist.m3u8
@@ -201,5 +201,5 @@ https://ss3.domint.net:3108/zol_str/vzol/playlist.m3u8
 https://lb00zdigital.streamprolive.com/mnt/hls/live.m3u8
 #EXTINF:-1 tvg-id="" status="error",Radio105 full (1080p) [Not 24/7]
 https://cloudflare.streamgato.us:3901/live/radio105live.m3u8
-#EXTINF:-1 tvg-id="",Viva Canal 5 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Viva Canal 5 (720p) [Not 24/7]
 https://iptv-all.lanesh4d0w.repl.co/dominicanrepublic/viva-canal-5
