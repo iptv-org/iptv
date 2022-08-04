@@ -52,7 +52,7 @@ No, to avoid possible abuse of the service.
 To avoid content that may be inappropriate for work or display to the entire audience. We suggest using the corresponding playlist.
 
 ## Do I have to pay to use this list?
-No. Also, the service is self-financed.
+No. Also, the maintenance of this service is self-financed.
 
 ## Are you planning to include a VOD of the programs broadcast on this playlist?
 No. This is not our purpose.
