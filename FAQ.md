@@ -8,16 +8,16 @@
 Yes, we only need the links to be publicly accessible like FTA packages, online services or official websites. We recommend tagging [Geo-blocked] if it is only accessible in a certain country.
 
 ## Can I add a FTA channel that broadcasts PPV events or pay programming?
-Perhaps. Consider that owners can ban the broadcast of PPV events, and even DCMA takedowns. Check if this channel is in the blocklist from the repository database.
+Perhaps. Consider that owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
 
 ## Why is recommended the "playlist.m3u" or "index.m3u" at the end of the url?
-These files use adaptive resolution, also the streams avoids dependence on tokens or temporal files.
+These files use adaptive resolution, also the streams are permanent, that avoids dependence on tokens or temporal files.
 
 ## Why don't we accept XStreamCode in streams?
 XStreamCode contains code that could be malicious to users.
 
 ## Is possible to add streams from Youtube, Dailymotion or Twitch?
-Yes. Due to technical limitations it is necessary to use a Streamlink server link to view the content. 
+Yes. Due to technical limitations is necessary add a Streamlink server link to view the content. 
 
 ## Is it possible to add audio-only streams, like FM radio?
 No. Exceptions are the visual radios, in which a video and audio are shown at the same time.
