@@ -17,7 +17,7 @@
 - [Are you planning to include a VOD of the programs broadcast on this playlist?](#Are-you-planning-to-include-a-vod-of-the-programs-broadcast-on-this-playlist)
 
 ## Does the channel need to be publicly accessible to be included in the playlists?
-Yes, we only need the links to be publicly accessible like FTA packages, online services or official websites. We recommend tagging [Geo-blocked] if it is only accessible in a certain country.
+Yes, we only need the links to be publicly accessible like FTA packages (free-to-air), online services or official websites. We recommend tagging [Geo-blocked] if it is only accessible in a certain country.
 
 ## Can I add a FTA channel that broadcasts PPV events or pay programming?
 Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
