@@ -2,6 +2,7 @@
 
 Basic:
 - [I have a cable service and I want those channels to be on this IPTV. Is that possible?](#I-have-a-cable-service-and-i-want-those-channels-to-be-on-this-iptv-is-that-possible)
+- [Is possible to view channels directly from the main website?](#Is-possible-to-view-channels-directly-from-the-main-website)
 - [Why don't we show NSFW channels in most playlists?](#Why-dont-we-show-nsfw-channels-in-most-playlists)
 - [Do I have to pay to use this list?](#Do-i-have-to-pay-to-use-this-list)
 - [Are you planning to include a VOD of TV shows broadcasted on this playlist?](#Are-you-planning-to-include-a-vod-of-tv-shows-broadcasted-on-this-playlist)
@@ -17,13 +18,12 @@ Technical:
 - [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
 - [Why some streams have empty id?](#Why-some-streams-have-empty-id)
 - [What is a "daily update" and why is benefit for this playlist?](#What-is-a-daily-update-and-why-is-benefit-for-this-playlist)
-- [Is possible to view channels directly from the main website?](#Is-possible-to-view-channels-directly-from-the-main-website)
 
 ## Basic
 ### I have a cable service and I want those channels to be on this IPTV. Is that possible?
 No. This playlist does not replace traditional cable, because this playlist can't include exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
 
-### Is possible to view channels directly from the site?
+### Is possible to view channels directly from the main website?
 No, to avoid possible abuse of the service.
 
 ### Why don't we show NSFW channels in most playlists?
@@ -65,6 +65,3 @@ Because the stream does not have enough information available. If you know, let 
 
 ### What is a "daily update" and why is benefit for this playlist?
 A "daily update" is maintenance to check the status of the playlist operation, as well as to hide streams from the playlist if they have access problems.
-
-### Is possible to view channels directly from the main website?
-No, to avoid possible abuse of the service.
