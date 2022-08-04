@@ -2,6 +2,7 @@
 
 - [Does the channel need to be FTA to be included in the playlists?](#Does-the-channel-need-to-be-FTA-to-be-included-in-the-playlists)
 - [Can I add a FTA channel that broadcasts PPV events or pay programming?](#Can-I-add-a-FTA-channel-that-broadcasts-PPV-events-or-pay-programming)
+- [I have a cable service and I want those channels to be on this IPTV. Is that possible?](#I-have-a-cable-service-and-i-want-those-channels-to-be-on-this-iptv-is-that-possible)
 - [Why is recommended the "playlist.m3u" or "index.m3u" at the end of the url?](#Why-is-recommended-the-playlistm3u-or-indexm3u-at-the-end-of-the-url)
 - [Why don't we accept XStreamCode in streams?](#Why-dont-we-accept-xstreamcode-in-streams)
 - [Is possible to add streams from Youtube, Dailymotion or Twitch?](#Is-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
