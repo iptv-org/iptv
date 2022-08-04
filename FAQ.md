@@ -22,7 +22,7 @@ Yes, we only need the links to be publicly accessible like FTA packages, online 
 Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
 
 ## I have a cable service and I want those channels to be on this IPTV. Is that possible?
-No. This playlist does not replace traditional cable, also there are exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
+No. This playlist does not replace traditional cable, also there are exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
 
 ## Why is recommended the "playlist.m3u" or "index.m3u" at the end of the url?
 These files use adaptive resolution, also the streams are permanent, that avoids dependence on tokens or temporal files.
