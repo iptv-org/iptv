@@ -10,7 +10,7 @@ Basic:
 Technical:
 - [Does the channel need to be FTA to be included in the playlists?](#Does-the-channel-need-to-be-FTA-to-be-included-in-the-playlists)
 - [Can I add a FTA channel that broadcasts PPV events or pay programming?](#Can-I-add-a-FTA-channel-that-broadcasts-PPV-events-or-pay-programming)
-- [Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?](#Why-is-recommended-the-playlistm3u-or-indexm3u-at-the-end-of-the-url)
+- [Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?](#Why-is-recommended-the-masterm3u8-playlistm3u8-or-indexm3u8-at-the-end-of-the-url)
 - [Why don't we accept XStreamCode in streams?](#Why-dont-we-accept-xstreamcode-in-streams)
 - [Is possible to add streams from Youtube, Dailymotion or Twitch?](#Is-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
@@ -43,7 +43,7 @@ Yes, we only need the links to be publicly accessible like FTA packages (free-to
 Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
 
 ### Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?
-These files use adaptive resolution, also the streams are permanent, that avoids dependence on tokens or temporal files.
+These files are adapted to the quality of your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally this url.
 
 ### Why don't we accept XStreamCode in streams?
 XStreamCode contains code that could be malicious to users.
