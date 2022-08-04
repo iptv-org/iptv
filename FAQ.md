@@ -21,7 +21,7 @@ Technical:
 
 ## Basic
 ### I have a cable service and I want those channels to be on this IPTV. Is that possible?
-No. This playlist does not replace traditional cable, also there are exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
+No. This playlist does not replace traditional cable, because this playlist can't include exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
 
 ### Is possible to view channels directly from the site?
 No, to avoid possible abuse of the service.
