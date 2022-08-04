@@ -7,7 +7,13 @@
 - [Is possible to add streams from Youtube, Dailymotion or Twitch?](#Is-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
 - [Why are there some ids with call sign (WATB-TV.us) and others with alphanumeric id (Mychannel.us)?](#Why-are-there-some-ids-with-call-sign-watb-tvus-and-others-with-alphanumeric-id-mychannelus)
-
+- [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
+- [Why some stream have empty id?](#Why-some-stream-have-empty-id)
+- [What is a "daily update" and why is benefit for this playlist?](#What-is-a-daily-update-and-why-is-benefit-for-this-playlist)
+- [Is possible to view channels directly from the site?](#Is-possible-to-view-channels-directly-from-the-site)
+- [Why don't we show NSFW channels in most playlists?](#Why-dont-we-show-nsfw-channels-in-most-playlists)
+- [Do I have to pay to use this list?](#Do-i-have-to-pay-to-use-this-list)
+- [Are you planning to include a VOD of the programs broadcast on this playlist?](#Are-you-planning-to-include-a-vod-of-the-programs-broadcast-on-this-playlist)
 
 ## Does the channel need to be publicly accessible to be included in the playlists?
 Yes, we only need the links to be publicly accessible like FTA packages, online services or official websites. We recommend tagging [Geo-blocked] if it is only accessible in a certain country.
