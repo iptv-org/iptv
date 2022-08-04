@@ -9,12 +9,12 @@
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
 - [Why are there some ids with call sign (WATB-TV.us) and others with alphanumeric id (Mychannel.us)?](#Why-are-there-some-ids-with-call-sign-watb-tvus-and-others-with-alphanumeric-id-mychannelus)
 - [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
-- [Why some stream have empty id?](#Why-some-stream-have-empty-id)
+- [Why some streams have empty id?](#Why-some-streams-have-empty-id)
 - [What is a "daily update" and why is benefit for this playlist?](#What-is-a-daily-update-and-why-is-benefit-for-this-playlist)
 - [Is possible to view channels directly from the site?](#Is-possible-to-view-channels-directly-from-the-site)
 - [Why don't we show NSFW channels in most playlists?](#Why-dont-we-show-nsfw-channels-in-most-playlists)
 - [Do I have to pay to use this list?](#Do-i-have-to-pay-to-use-this-list)
-- [Are you planning to include a VOD of the programs broadcast on this playlist?](#Are-you-planning-to-include-a-vod-of-the-programs-broadcast-on-this-playlist)
+- [Are you planning to include a VOD of TV shows broadcasted on this playlist?](#Are-you-planning-to-include-a-vod-of-tv-shows-broadcasted-on-this-playlist)
 
 ## Does the channel need to be publicly accessible to be included in the playlists?
 Yes, we only need the links to be publicly accessible like FTA packages (free-to-air), online services or official websites. We recommend tagging [Geo-blocked] if it is only accessible in a certain country.
@@ -43,7 +43,7 @@ It's to differentiate the origin of the broadcast from the content. Call signs u
 ## There are source for verify call sign and coverage area for some TV stations?
 There are websites to consult the location and characteristics of the station. For example, [FCCData](https://fccdata.org/) for US, Canada, Mexico UK, Austrailia and Japan.
 
-## Why some stream have empty id?
+## Why some streams have empty id?
 Because the stream does not have enough information available. If you know, let us know its official name, the language it broadcasts and the country where it originates.
 
 ## What is a "daily update" and why is benefit for this playlist?
@@ -58,5 +58,5 @@ To avoid content that may be inappropriate for work or display to the entire aud
 ## Do I have to pay to use this list?
 No. Also, the maintenance of this service is self-financed.
 
-## Are you planning to include a VOD of the programs broadcast on this playlist?
+## Are you planning to include a VOD of TV shows broadcasted on this playlist?
 No. This is not our purpose.
