@@ -39,7 +39,7 @@ https://nd106.republicaservers.com:4433/canal2misioness.mp4
 http://api.new.livestream.com/accounts/679322/events/3782013/live.m3u8
 #EXTINF:-1 tvg-id="Canal2Salta.ar" status="online",Canal 2 (Salta)
 https://vivo.solumedia.com:19360/tv2salta/tv2salta.m3u8
-#EXTINF:-1 tvg-id="Canal2Sanagasta.ar" status="error",Canal 2 (Sanagasta)
+#EXTINF:-1 tvg-id="Canal2Sanagasta.ar" status="online",Canal 2 (Sanagasta)
 https://stmvideo1.livecastv.com/canal2/canal2/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal3PinamarHD.ar" status="online",CN3 Pinamar (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/canal3/canal3.stream/playlist.m3u8
@@ -83,7 +83,7 @@ https://stream.arcast.live/ahora/ahora/playlist.m3u8
 https://panel.dattalive.com/8250/8250/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9RioCuarto.ar" status="online",Canal 9 Río Cuarto
 https://streamcasthd.com:1936/canal9riocuartotv/canal9riocuartotv/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal9Televida.ar" status="online",Canal 9 Televida (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal9Televida.ar" status="error",Canal 9 Televida (720p) [Not 24/7]
 https://5b3050bb1b2d8.streamlock.net/viviloendirecto2/canal9/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10MardelPlata.ar" status="error",Canal 10 Mar del Plata (720p) [Not 24/7]
 https://cdn2.zencast.tv:30443/live/canal10smil/playlist.m3u8
@@ -126,17 +126,17 @@ https://panel.dattalive.com/8138/8138/playlist.m3u8
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g5.proy-hor.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8?sense=true
-#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
-https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="iPhone",Canal Luz (1080p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
+https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalOrbe21.ar" status="online",Canal Orbe 21
 https://cdn2.zencast.tv:30443/orbe/orbe21smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalProvincial.ar" status="error",Canal Provincial (San Miguel) (360p) [Not 24/7]
 http://www.trimi.com.ar/provincial/streaming/mystream.m3u8
-#EXTINF:-1 tvg-id="CanalRural.ar" status="timeout",Canal Rural
+#EXTINF:-1 tvg-id="CanalRural.ar" status="online",Canal Rural
 https://cda2.alsolnet.com/elrural/live/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalTDC.ar" status="online",CANAL TDC (1080p) [Not 24/7]
 https://5e7cdf2370883.streamlock.net/tdconline/tdconline/playlist.m3u8
@@ -188,7 +188,7 @@ http://video.streamtvradio.com:8081/uv038/uv038/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/Rosario3
 #EXTINF:-1 tvg-id="Encuentro.ar" status="error",Encuentro (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC1zLDoKL-eKmd_K7qkUZ-ow/live
-#EXTINF:-1 tvg-id="EPSTV.ar" status="timeout",EPS TV
+#EXTINF:-1 tvg-id="EPSTV.ar" status="online",EPS TV
 https://ott.argentinatv.live/vivo/noticiaseps/playlist.m3u8
 #EXTINF:-1 tvg-id="FenixTV.ar" status="online",Fenix TV (Ciudad de La Rioja) (360p)
 https://stmv1.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
@@ -196,9 +196,9 @@ https://stmv1.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
 https://videohd.live:19360/8010/8010.m3u8
 #EXTINF:-1 tvg-id="InformacionPeriodistica.ar" status="online",Informacion Periodística (1080p)
 https://d1nmqgphjn0y4.cloudfront.net/live/ip/live.isml/5ee6e167-1167-4a85-9d8d-e08a3f55cff3.m3u8
-#EXTINF:-1 tvg-id="IngenioFM.ar" status="online",Ingenio FM
+#EXTINF:-1 tvg-id="IngenioFM.ar" status="error",Ingenio FM
 https://panel.dattalive.com/8064/8064/playlist.m3u8
-#EXTINF:-1 tvg-id="LaNacionPlus.ar" status="error",La Nacion +
+#EXTINF:-1 tvg-id="LaNacionPlus.ar" status="online",La Nacion +
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCba3hpU7EFBSk817y9qZkiA/live
 #EXTINF:-1 tvg-id="LaVozdeTucuman.ar" status="online",La Voz de Tucuman (480p)
 https://srv1.zcast.com.br/lavozdetucuman/lavozdetucuman/playlist.m3u8
@@ -210,7 +210,7 @@ http://209.126.108.55/app/stream/playlist.m3u8
 https://ltocatamarca.github.io/ltotv.m3u8
 #EXTINF:-1 tvg-id="MasFM.ar" status="error",Más FM
 https://streamlink-iptv.herokuapp.com/iptv-query?streaming-ip=https://www.twitch.tv/masfm959
-#EXTINF:-1 tvg-id="MetropolitanaFM.ar" status="error",Metropolitana FM
+#EXTINF:-1 tvg-id="MetropolitanaFM.ar" status="online",Metropolitana FM
 https://panel.dattalive.com/MetropolitanaFM/MetropolitanaFM/playlist.m3u8
 #EXTINF:-1 tvg-id="MetroTV.ar" status="online",Metro TV
 https://streamtv12.ddns.net:5443/LiveApp/streams/193945633734205616732920.m3u8
@@ -284,7 +284,7 @@ https://live.admefy.com/live/default/great_salmon_9bd9d.m3u8
 https://streamlink-iptv.herokuapp.com/iptv-query?streaming-ip=https://www.twitch.tv/tv40oficial
 #EXTINF:-1 tvg-id="TVManaArgentina.ar" status="timeout",TV Maná Argentina (576p) [Not 24/7]
 http://streamspub.manasat.com:1935/tvar/tvmanaar2/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPublica.ar" status="online",TV Pública (TVP) (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVPublica.ar" status="error",TV Pública (TVP) (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/TVPublicaArgentina/live
 #EXTINF:-1 tvg-id="TVSolidaria.ar" status="online",TV Solidaria
 https://canadaremar2.todostreaming.es/live/argentina-web.m3u8
