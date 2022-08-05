@@ -77,6 +77,10 @@ The API documentation can be found in the [iptv-org/api](https://github.com/iptv
 
 Links to other useful IPTV-related resources can be found in the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
 
+## FAQ
+
+Answers to the most popular questions you can find in the [FAQ.md](FAQ.md).
+
 ## Contribution
 
 Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sending an issue or making a pull request.
