@@ -52,7 +52,7 @@ Maybe. Consider if the country where it is broadcasted allows fair use. Owners c
 ### I wish created my channel and add it to this playlist. What should I do?
 We are a community initiative and you don't need to pay anything to stay on this playlist. Feel free to create a channel with few resources:
 * Camera with a tripod (recommended for your own studio).
-* A PC with Internet, video editor and recording and broadcasting app under RTMP support (like OBS).
+* A PC with Internet, video editor and recording/broadcasting app under RTMP support (like OBS).
 * And a live streaming service with multibitrate (if possible).
 After you have your m3u link, add your channel information from [Database](https://github.com/iptv-org/database).
 
