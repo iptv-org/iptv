@@ -50,7 +50,7 @@ Yes, we only need the links to be publicly accessible like FTA packages (free-to
 Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
 
 ### I wish created my channel and add it to this playlist. What should I do?
-We are a community initiative and you don't need to pay anything to stay on this playlist. Feel free to create a channel with few resources: Camera, a video editor, a recording and broadcasting app with RTMP support (like OBS) and a live streaming service with multibitrate. Then, add the channel information from database.
+We are a community initiative and you don't need to pay anything to stay on this playlist. Feel free to create a channel with few resources: Camera, a video editor, a recording and broadcasting app with RTMP support (like OBS) and a live streaming service with multibitrate. Then, add the channel information from [Database](https://github.com/iptv-org/database).
 
 ## Technical
 ### Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?
