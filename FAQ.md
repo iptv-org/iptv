@@ -8,9 +8,12 @@ Basic:
 - [Why don't we show NSFW channels in most playlists?](#Why-dont-we-show-nsfw-channels-in-most-playlists)
 - [Do I have to pay to use this list?](#Do-i-have-to-pay-to-use-this-list)
 
-Technical:
+Channels:
 - [Does the channel need to be FTA to be included in the playlists?](#Does-the-channel-need-to-be-FTA-to-be-included-in-the-playlists)
 - [Can I add a FTA channel that broadcasts PPV events or pay programming?](#Can-I-add-a-FTA-channel-that-broadcasts-PPV-events-or-pay-programming)
+- [I wish created my channel and add it to this playlist. What should I do?](#I-wish-created-my-channel-and-add-it-to-this-playlist-what-should-i-do)
+
+Technical:
 - [Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?](#Why-is-recommended-the-masterm3u8-playlistm3u8-or-indexm3u8-at-the-end-of-the-url)
 - [Why don't we accept XStreamCode in streams?](#Why-dont-we-accept-xstreamcode-in-streams)
 - [Is possible to add streams from Youtube, Dailymotion or Twitch?](#Is-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
@@ -39,13 +42,17 @@ No. Also, the maintenance of this service is self-financed.
 ### Are you planning to include a VOD of TV shows broadcasted on this playlist?
 No. This is not our purpose.
 
-## Technical
+## Channels
 ### Does the channel need to be publicly accessible to be included in the playlists?
 Yes, we only need the links to be publicly accessible like FTA packages (free-to-air), online services or official websites. We recommend tagging [Geo-blocked] if it is only accessible in one or few countries.
 
 ### Can I add a FTA channel that broadcasts PPV events or pay programming?
 Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
 
+### I wish created my channel and add it to this playlist. What should I do?
+We are a community initiative and you don't need to pay anything to stay on this playlist. Feel free to create a channel with few resources: Camera, a video editor, a recording and broadcasting app with RTMP support (like OBS) and a live streaming service with multibitrate. Then, add the channel information from database.
+
+## Technical
 ### Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?
 These files are useful to see perfectly the channel based in your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally their urls.
 
