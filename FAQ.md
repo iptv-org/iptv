@@ -25,7 +25,7 @@ Technical:
 No. This playlist does not replace traditional cable, because this playlist can't include exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
 
 ### Does the playlist have a channel guide?
-Yes. However, not all channels have their EPG available. See [EPG](https://github.com/iptv-org/epg) for more info.
+Yes. However, not all channels have their EPG available. See [EPG](https://github.com/iptv-org/epg) for more info. Please note that the guide is not perfect and some channels (like international channels) may interrupt programming without you knowing.
 
 ### Is possible to view channels directly from the main website?
 No, to avoid possible abuse of the service.
