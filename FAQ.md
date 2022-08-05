@@ -53,7 +53,7 @@ These files are useful to see perfectly the channel based in your network or scr
 XStreamCode contains code that could be malicious to users.
 
 ### Is possible to add streams from Youtube, Dailymotion or Twitch?
-Yes. Due to technical limitations is necessary add a Streamlink server link to view the content. 
+Yes. Due to technical limitations is necessary add a [Streamlink](https://streamlink.github.io/) server link to view the content.
 
 ### Is it possible to add audio-only streams, like FM radio?
 No. Exceptions are the visual radios, in which a video and audio are shown at the same time.
