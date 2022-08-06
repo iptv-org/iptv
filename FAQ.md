@@ -70,8 +70,10 @@ Yes. Due to technical limitations is necessary add a [Streamlink](https://stream
 ### Is it possible to add audio-only streams, like FM radio?
 No. Exceptions are the visual radios, in which a video and audio are shown at the same time.
 
-### Why are there some ids with call sign (WATB-TV.us) and others with alphanumeric id (Mychannel.us)?
-It's to differentiate the origin of the broadcast from the content. Call signs usually come from physical stations in the country of origin and their programming is subject to change.
+### Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?
+It's to differentiate the origin of the broadcast from the content. Call signs usually come from physical stations in the country of origin and their programming is subject to change. If the channel is not from a television station, the brand name will be used.
+
+An example of a call sign used as id is KJLA-DT1.us: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel, whose id is VisionLatina.us.
 
 ### There are source for verify call sign and coverage area for some TV stations?
 There are websites to consult the location and characteristics of the station. For example, [FCCData](https://fccdata.org/) for US, Canada, Mexico UK, Austrailia and Japan.
