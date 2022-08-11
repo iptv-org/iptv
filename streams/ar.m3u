@@ -73,13 +73,13 @@ https://stmvideo1.livecastv.com/canal6er/canal6er/playlist.m3u8
 https://59537faa0729a.streamlock.net/canal6mdp/canal6mdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal6Moreno.ar" status="online",Canal 6 (Moreno)
 https://stream.arcast.com.ar/canal6moreno/canal6moreno/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal6Posadas.ar" status="online",Canal 6 (Posadas)
+#EXTINF:-1 tvg-id="Canal6Posadas.ar" status="error",Canal 6 (Posadas)
 https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7Jujuy.ar" status="online",Canal 7 (Jujuy)
 https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7Salta.ar" status="error",Canal 7 Salta (404p) [Geo-blocked]
 https://589ff3c36f7e8.streamlock.net/crespo3/crespo3/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal9Litoral.ar" status="error",Canal 9 Litoral
+#EXTINF:-1 tvg-id="Canal9Litoral.ar" status="online",Canal 9 Litoral
 https://stream.arcast.live/ahora/ahora/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9Multivision.ar" status="online",CANAL.9 MULTIVISION (720p) [Not 24/7]
 https://panel.dattalive.com/8250/8250/playlist.m3u8
@@ -131,7 +131,7 @@ https://g5.proy-hor.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Pl
 #EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
 https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
-#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="iPhone",Canal Luz (1080p)
+#EXTINF:-1 tvg-id="CanalLuz.ar" status="error" user-agent="iPhone",Canal Luz (1080p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8
 #EXTINF:-1 tvg-id="CanalOrbe21.ar" status="online",Canal Orbe 21
@@ -222,16 +222,16 @@ https://streamtv12.ddns.net:5443/LiveApp/streams/193945633734205616732920.m3u8
 https://video.alfasocialmedia.com.ar:3396/live/milleniumtvlive.m3u8
 #EXTINF:-1 tvg-id="Mirador.ar" status="online",Mirador
 https://5fb24b460df87.streamlock.net/live-cont.ar/mirador/playlist.m3u8
-#EXTINF:-1 tvg-id="MultivisionFederal.ar" status="error",Multivisión Federal (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MultivisionFederal.ar" status="online",Multivisión Federal (720p) [Not 24/7]
 http://panel.dattalive.com:1935/8250/8250/playlist.m3u8
 #EXTINF:-1 tvg-id="MusicTop.ar" status="online",MusicTop (720p)
 http://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NeoTV.ar" status="error",Neo TV
 https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8
-#EXTINF:-1 tvg-id="NETTV.ar" status="online",Net TV (720p)
-https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NETTV.ar" status="online",Net TV (720p) [Not 24/7]
 https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="NETTV.ar" status="online",Net TV (720p)
+https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Pakapaka.ar" status="online",Pakapaka (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCVVNYxncuD4EfHpKDlPIYcQ/live
 #EXTINF:-1 tvg-id="PowerHD.ar" status="online",PowerHD
@@ -246,7 +246,7 @@ http://media.neuquen.gov.ar/rtn/television/playlist.m3u8
 https://vivo.solumedia.com:19360/retromagico/retromagico.m3u8
 #EXTINF:-1 tvg-id="RTN.ar" status="online",RTN (Neuquén) (720p) [Not 24/7]
 http://media.neuquen.gov.ar/rtn/television/media.m3u8
-#EXTINF:-1 tvg-id="SanPedroTV.ar" status="online",San Pedro TV
+#EXTINF:-1 tvg-id="SanPedroTV.ar" status="timeout",San Pedro TV
 https://iptv.ixfo.com.ar:30443/live/sanpedrotv/playlist.m3u8
 #EXTINF:-1 tvg-id="SenalUrbana.ar" status="online",Señal Urbana
 https://fullvideo.enlaweb.com.ar/video95/video95/playlist.m3u8
@@ -254,7 +254,7 @@ https://fullvideo.enlaweb.com.ar/video95/video95/playlist.m3u8
 https://api.new.livestream.com/accounts/20819504/events/8664197/live.m3u8
 #EXTINF:-1 tvg-id="TECTV.ar" status="online",TEC TV
 https://tv.initium.net.ar:3939/live/tectvmainlive.m3u8
-#EXTINF:-1 tvg-id="Telecreativa.ar" status="error",Telecreativa
+#EXTINF:-1 tvg-id="Telecreativa.ar" status="online",Telecreativa
 https://panel.dattalive.com/8012/8012/playlist.m3u8
 #EXTINF:-1 tvg-id="TelediarioTV.ar" status="online",Telediario TV
 https://mediacp.hostradios.com.ar:19360/telediario/telediario.m3u8
