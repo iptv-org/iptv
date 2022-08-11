@@ -62,7 +62,7 @@ After you have your m3u8 link, add your channel information onto the [Database](
 These files are useful to see perfectly the channel based in your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally their urls.
 
 ### Why don't we accept XStreamCode in streams?
-XStreamCode contains code that could be malicious to users.
+Xtream-Codes streams are, most of the times, pirated streams created by some people that can get satellite and/or PPV streams and that propose it to everyone for a fairer price. These types of servers are illegal and also highly unstable, since it depends either from the user who bought it and the server that hosts it.
 
 ### Is possible to add streams from Youtube, Dailymotion or Twitch?
 Yes. Due to technical limitations is necessary add a [Streamlink](https://streamlink.github.io/) server link to view the content.
