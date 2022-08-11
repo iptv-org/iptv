@@ -49,7 +49,7 @@ Yes, we only need the links to be publicly accessible like FTA packages (free-to
 ### Can I add a FTA channel that broadcasts PPV events or pay programming?
 Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
 
-### I wish created my channel and add it to this playlist. What should I do?
+### I've created my channel and I want to add it to this playlist. What should I do?
 We are a community initiative and you don't need to pay anything to stay on this playlist. Feel free to create a channel with few resources:
 * Camera with a tripod (recommended for your own studio).
 * A PC with Internet, video editor and recording/broadcasting app under RTMP protocol (e.g. OBS).
