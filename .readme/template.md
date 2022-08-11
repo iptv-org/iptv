@@ -79,7 +79,7 @@ Links to other useful IPTV-related resources can be found in the [iptv-org/aweso
 
 ## FAQ
 
-Answers to the most popular questions you can find in the [FAQ.md](FAQ.md).
+The answers to the most popular questions can be found in the [FAQ.md](FAQ.md) file.
 
 ## Contribution
 
