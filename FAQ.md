@@ -26,7 +26,7 @@ Technical:
 
 ## Basic
 ### What is IPTV?
-See [Internet Protocol television](https://en.wikipedia.org/wiki/Internet_Protocol_television) from Wikipedia article. This article is important, because many people do not understand how playlists work.
+See [Internet Protocol television](https://en.wikipedia.org/wiki/Internet_Protocol_television) from Wikipedia article. This article is important, because  newcomers do not understand how playlists work.
 
 ### I have a cable service and I want those channels to be on this IPTV. Is that possible?
 No. This playlist does not replace traditional cable, because this playlist can't include exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
