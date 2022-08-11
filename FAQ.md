@@ -11,7 +11,7 @@ Basic:
 Channels:
 - [Does the channel need to be FTA to be included in the playlists?](#Does-the-channel-need-to-be-FTA-to-be-included-in-the-playlists)
 - [Can I add a FTA channel that broadcasts PPV events or pay programming?](#Can-I-add-a-FTA-channel-that-broadcasts-PPV-events-or-pay-programming)
-- [I wish created my channel and add it to this playlist. What should I do?](#I-wish-created-my-channel-and-add-it-to-this-playlist-what-should-i-do)
+- [I've created my channel and I want to add it to this playlist. What should I do?](#Ive-created-my-channel-and-i-want-to-add-it-to-this-playlist-what-should-i-do)
 
 Technical:
 - [Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?](#Why-is-recommended-the-masterm3u8-playlistm3u8-or-indexm3u8-at-the-end-of-the-url)
