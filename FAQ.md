@@ -2,7 +2,7 @@
 
 Basic:
 - [I have a cable service and I want those channels to be on this IPTV. Is that possible?](#I-have-a-cable-service-and-i-want-those-channels-to-be-on-this-iptv-is-that-possible)
-- [Is possible to view channels directly from the main website?](#Is-possible-to-view-channels-directly-from-the-main-website)
+- [Is it possible to view channels directly from the main website?](#Is-it-possible-to-view-channels-directly-from-the-main-website)
 - [Does the playlist have a channel guide?](#Does-the-playlist-have-a-channel-guide)
 - [Are you planning to include a VOD of TV shows broadcasted on this playlist?](#Are-you-planning-to-include-a-vod-of-tv-shows-broadcasted-on-this-playlist)
 - [Why don't we show NSFW channels in most playlists?](#Why-dont-we-show-nsfw-channels-in-most-playlists)
