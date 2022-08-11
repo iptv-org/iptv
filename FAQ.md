@@ -55,7 +55,7 @@ We are a community initiative and you don't need to pay anything to stay on this
 * A PC with Internet, video editor and recording/broadcasting app under RTMP protocol (e.g. OBS).
 * And a live streaming service with multibitrate (if possible).
 
-After you have your m3u8 link, add your channel information from [Database](https://github.com/iptv-org/database).
+After you have your m3u8 link, add your channel information onto the [Database](https://github.com/iptv-org/database) repository, and submit an [issue](https://github.com/iptv-org/iptv/issues/new) to propose it to us.
 
 ## Technical
 ### Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?
