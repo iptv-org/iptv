@@ -16,7 +16,7 @@ Channels:
 Technical:
 - [Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?](#Why-is-recommended-the-masterm3u8-playlistm3u8-or-indexm3u8-at-the-end-of-the-url)
 - [Why don't we accept XStreamCode in streams?](#Why-dont-we-accept-xstreamcode-in-streams)
-- [Is possible to add streams from Youtube, Dailymotion or Twitch?](#Is-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
+- [Is it possible to add streams from Youtube, Dailymotion or Twitch?](#Is-it-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
 - [Why are there some ids with call sign (WATB-TV.us) and others with alphanumeric id (Mychannel.us)?](#Why-are-there-some-ids-with-call-sign-watb-tvus-and-others-with-alphanumeric-id-mychannelus)
 - [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
