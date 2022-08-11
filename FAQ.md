@@ -1,6 +1,7 @@
 # Frequently Asked Questions
 
 Basic:
+- [What is IPTV?](#What-is-iptv)
 - [I have a cable service and I want those channels to be on this IPTV. Is that possible?](#I-have-a-cable-service-and-i-want-those-channels-to-be-on-this-iptv-is-that-possible)
 - [Is it possible to view channels directly from the main website?](#Is-it-possible-to-view-channels-directly-from-the-main-website)
 - [Does the playlist have a channel guide?](#Does-the-playlist-have-a-channel-guide)
@@ -24,6 +25,9 @@ Technical:
 - [What is a "daily update" and why is benefit for this playlist?](#What-is-a-daily-update-and-why-is-benefit-for-this-playlist)
 
 ## Basic
+### What is IPTV?
+See [Internet Protocol television](https://en.wikipedia.org/wiki/Internet_Protocol_television) from Wikipedia article. This article is important, because many people do not understand how playlists work.
+
 ### I have a cable service and I want those channels to be on this IPTV. Is that possible?
 No. This playlist does not replace traditional cable, because this playlist can't include exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
 
