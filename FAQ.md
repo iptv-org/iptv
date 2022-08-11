@@ -14,7 +14,7 @@ Channels:
 - [I've created my channel and I want to add it to this playlist. What should I do?](#Ive-created-my-channel-and-i-want-to-add-it-to-this-playlist-what-should-i-do)
 
 Technical:
-- [Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?](#Why-is-recommended-the-masterm3u8-playlistm3u8-or-indexm3u8-at-the-end-of-the-url)
+- [Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?](#Why-am-i-asked-to-provide-an-adaptive-playlist-like-masterm3u8-playlistm3u8-or-indexm3u8)
 - [Why don't we accept XStreamCode in streams?](#Why-dont-we-accept-xstreamcode-in-streams)
 - [Is it possible to add streams from Youtube, Dailymotion or Twitch?](#Is-it-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
@@ -58,11 +58,13 @@ We are a community initiative and you don't need to pay anything to stay on this
 After you have your m3u8 link, add your channel information onto the [Database](https://github.com/iptv-org/database) repository, and submit an [issue](https://github.com/iptv-org/iptv/issues/new) to propose it to us.
 
 ## Technical
-### Why is recommended the "master.m3u8", "playlist.m3u8" or "index.m3u8" at the end of the url?
+### Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?
 These files are useful to see perfectly the channel based in your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally their urls.
 
 ### Why don't we accept XStreamCode in streams?
 Xtream-Codes streams are, most of the times, pirated streams created by some people that can get satellite and/or PPV streams and that propose it to everyone for a fairer price. These types of servers are illegal and also highly unstable, since it depends either from the user who bought it and the server that hosts it.
+
+In short, they are poor quality streams created by unauthorized people.
 
 ### Is possible to add streams from Youtube, Dailymotion or Twitch?
 Yes. Due to technical limitations is necessary add a [Streamlink](https://streamlink.github.io/) server link to view the content.
