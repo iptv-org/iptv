@@ -34,7 +34,7 @@ Yes. However, not all channels have their EPG available. See [EPG](https://githu
 No, to avoid possible abuse of the service.
 
 ### Why don't we show NSFW channels in most playlists?
-Because to avoid content that may be inappropriate for work or display to the entire audience. We suggest using the corresponding playlist.
+NSFW content are not suitable for the main public. To avoid issues with these kind of programmings, we've created a separate NSFW playlist available for everyone. If you want to see this type of channel, please use the NSFW playlist.
 
 ### Do I have to pay to use this list?
 No. Also, the maintenance of this service is self-financed.
