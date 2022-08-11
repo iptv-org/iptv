@@ -30,7 +30,7 @@ No. This playlist does not replace traditional cable, because this playlist can'
 ### Does the playlist have a channel guide?
 Yes. However, not all channels have their EPG available. See [EPG](https://github.com/iptv-org/epg) for more info. Please note that the guide is not perfect and some channels (like international feeds) may interrupt programming without you knowing.
 
-### Is possible to view channels directly from the main website?
+### Is it possible to view channels directly from the main website?
 No, to avoid possible abuse of the service.
 
 ### Why don't we show NSFW channels in most playlists?
