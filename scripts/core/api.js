@@ -29,6 +29,7 @@ class API {
 const api = {}
 
 api.channels = new API(`${DATA_DIR}/channels.json`)
+api.streams = new API(`${DATA_DIR}/streams.json`)
 api.countries = new API(`${DATA_DIR}/countries.json`)
 api.guides = new API(`${DATA_DIR}/guides.json`)
 api.categories = new API(`${DATA_DIR}/categories.json`)
