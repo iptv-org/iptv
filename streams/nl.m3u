@@ -119,7 +119,7 @@ https://media.rtvnoord.nl/live/rtvnoord/extra/index.m3u8
 https://593aed234297b.streamlock.net/rtvnof/rtvnof/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVNoordoostFriesland.nl" status="online",RTV Noordoost Friesland (720p) [Not 24/7]
 http://cdn15.streampartner.nl:1935/rtvnof2/live/playlist.m3u8
-#EXTINF:-1 tvg-id="RTVOost.nl",RTV Oost (720p)
+#EXTINF:-1 tvg-id="RTVOost.nl" status="error",RTV Oost (720p)
 https://mediacdn.rtvoost.nl/live/rtvoost/tv-oost/index.m3u8
 #EXTINF:-1 tvg-id="RTVPurmerend.nl" status="online",RTV Purmerend (720p)
 https://ms2.mx-cd.net/dtv-10/268-2641474/RTV_Purmerend_TV.smil/playlist.m3u8
@@ -147,10 +147,10 @@ https://server-67.stream-server.nl:1936/Samen1TV/Samen1TV/playlist.m3u8
 http://93.190.140.42:8081/SilenceTV/live/playlist.m3u8
 #EXTINF:-1 tvg-id="SirisTV.nl" status="timeout",Siris TV (720p) [Not 24/7]
 https://videostream.siris.nl/hls/playoutweb/index.m3u8
-#EXTINF:-1 tvg-id="StreekTV.nl" status="online",Streek TV (720p) [Not 24/7]
-http://cdn22.streampartner.nl/streektv/streektv/playlist.m3u8
 #EXTINF:-1 tvg-id="StreekTV.nl" status="timeout",Streek TV (720p) [Not 24/7]
 https://58e4d59f4ba2c.streamlock.net/streektv/streektv/playlist.m3u8
+#EXTINF:-1 tvg-id="StreekTV.nl" status="error",Streek TV (720p) [Not 24/7]
+http://cdn22.streampartner.nl/streektv/streektv/playlist.m3u8
 #EXTINF:-1 tvg-id="TommyTeleshopping.nl" status="online",Tommy Teleshopping (480p)
 http://ms7.mx-cd.net/tv/71-1356094/Tommy_Teleshopping.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVEllef.nl" status="timeout",TV Ellef (540p) [Not 24/7]
@@ -183,6 +183,8 @@ https://ms7.mx-cd.net/tv/192-840604/Jenz_TV.smil/playlist.m3u8
 http://593aed234297b.streamlock.net:1935/rtvnof/rtvnof/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",JIN TV (720p)
 https://live.jintv.org:12443/medialive/jintv.m3u8
+#EXTINF:-1 tvg-id="" status="online",Radio VOS FM (720p) [Not 24/7]
+http://593aed234297b.streamlock.net:1935/henrymeeuws/henrymeeuws/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",RTV NOF 2 (720p) [Not 24/7]
 http://593aed234297b.streamlock.net:1935/rtvnof2/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",L1mburg (720p) [Not 24/7]
@@ -197,8 +199,6 @@ https://web.omroepgelderland.nl/live/livetv.m3u8
 https://ms2.mx-cd.net/tv/163-669433/RTV_Arnhem.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",EDE TV (480p) [Not 24/7]
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Radio VOS FM (720p) [Not 24/7]
-http://593aed234297b.streamlock.net:1935/henrymeeuws/henrymeeuws/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",RN 7 TV (1080p) [Geo-blocked]
 https://streaming.rn7.nl/rn7live_abr/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Omroep West (1080p) [Not 24/7]
