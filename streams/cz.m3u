@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="CT1HD.cz" status="online",ČT1 (1080p)
 http://213.151.233.20:8000/dna-5100-tv-pc.m3u8
-#EXTINF:-1 tvg-id="CurrentTimeTV.cz" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Настоящее Время (480p)
+#EXTINF:-1 tvg-id="CurrentTimeTV.cz" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Настоящее Время (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s61/index.m3u8
 #EXTINF:-1 tvg-id="CurrentTimeTV.cz" status="error",Настоящее Время (720p) [Not 24/7]
@@ -38,14 +38,14 @@ rtmp://stream.polar.cz/polar/polarlive-2
 https://stream.polar.cz/prahatv/prahatvlive-1/playlist.m3u8
 #EXTINF:-1 tvg-id="PrahaTV.cz" status="error",Praha TV (1080p)
 rtmp://stream.polar.cz/prahatv/prahatvlive-1
+#EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",Retro Music TV (360p)
+http://89.185.253.55/retrotv/retrotvHQ1/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",Retro Music Television (360p)
 http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",RetroMusicTV (360p)
 http://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroMusicTV.cz" status="error",Retro Music Television (360p)
 rtmp://stream.mediawork.cz:1935/retrotv/retrotvHQ1
-#EXTINF:-1 tvg-id="RetroMusicTV.cz",Retro Music TV (360p)
-http://89.185.253.55/retrotv/retrotvHQ1/playlist.m3u8
 #EXTINF:-1 tvg-id="RTMPlus.cz" status="online",RTM plus (720p)
 http://www.rtmplus.cz/live/1-playlist.m3u8
 #EXTINF:-1 tvg-id="Slagr2.cz" status="online",Šlágr 2 (576p)
