@@ -26,7 +26,14 @@ Technical:
 
 ## Basic
 ### What is IPTV?
+In non-technical words, IPTV (Internet Protocol television) stations have web addresses that *are obtained from official sources or authorized services for easier access to the end user who has any media player that supports streaming*.
+
 See [Internet Protocol television](https://en.wikipedia.org/wiki/Internet_Protocol_television) from Wikipedia article. This article is important, because newcomers do not understand how playlists work.
+
+### Do I need a good Internet connection to watch an available stream?
+A lot of channels are ready for main public because of adaptive resolution. If you have a slow connection, play again at another time, becuase you may experience short stuttering and/or signal low.
+
+Some TV stations have a limit of simultaneous users, so if this stream does not display correctly, you will have to play at another time.
 
 ### I have a cable service and I want those channels to be on this IPTV. Is that possible?
 No. This playlist does not replace traditional cable, because this playlist can't include exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
@@ -63,11 +70,14 @@ We are a community initiative and you don't need to pay anything to stay on this
 
 After you have your m3u8 link, add your channel information onto the [Database](https://github.com/iptv-org/database) repository, and submit an [issue](https://github.com/iptv-org/iptv/issues/new) to propose it to us.
 
+### Is there any way to add my channel other than via git repository?
+No, there is no such option.
+
 ## Technical
 ### Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?
 These files are useful to see perfectly the channel based in your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally their urls.
 
-### Why don't we accept XStreamCode in streams?
+### Why don't we accept XStream-Codes in streams?
 Xtream-Codes streams are, most of the times, pirated streams created by some people that can get satellite and/or PPV streams and that propose it to everyone for a fairer price. These types of servers are illegal and also highly unstable, since it depends either from the user who bought it and the server that hosts it.
 
 In short, they are poor quality streams created by unauthorized people.
