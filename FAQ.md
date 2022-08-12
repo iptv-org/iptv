@@ -44,7 +44,8 @@ NSFW content are not suitable for the main public. To avoid issues with these ki
 No. Also, the maintenance of this service is self-financed.
 
 ### Are you planning to include a VOD of TV shows broadcasted on this playlist?
-No. This is not our purpose.
+> No. This is not our purpose.
+Based on #175, #3290, #7852
 
 ## Channels
 ### Does the channel need to be publicly accessible to be included in the playlists?
