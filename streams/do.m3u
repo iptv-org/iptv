@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AcentoTV.do" status="error",Acento TV
 https://acentotv01.streamprolive.com/hls/live.m3u8
-#EXTINF:-1 tvg-id="AkiTV.do" status="error",AkíTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AkiTV.do" status="online",AkíTV (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/Akitv/Akitv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="Ame47.do" status="error",Amé 47 (720p)
 https://ss6.domint.net:3028/ame_str/amecanal47/playlist.m3u8
@@ -11,7 +11,7 @@ http://azxtv.com/hls/stream.m3u8
 https://cdn4.hostlagarto.com:8081/static/bajotechotv/playlist.m3u8
 #EXTINF:-1 tvg-id="Bellavision.do" status="error",Bellavisión
 https://cdn4.hostlagarto.com:8081/static/Bellavision8hd/playlist.m3u8
-#EXTINF:-1 tvg-id="BonaoTV.do" status="error",Bonao TV
+#EXTINF:-1 tvg-id="BonaoTV.do" status="online",Bonao TV
 https://ss5.domint.net:3026/btv_str/bonao/playlist.m3u8
 #EXTINF:-1 tvg-id="Boreal.do" status="error",Boreal (720p)
 https://5b38ce71f1f00.streamlock.net/8180/8180/playlist.m3u8
@@ -101,9 +101,9 @@ http://51.222.85.85:81/hls/loco/index.m3u8
 http://locomotiontv.com/envivo/loco_ch/stream.m3u8
 #EXTINF:-1 tvg-id="LunaTVCanal53.do" status="online",Luna TV Canal 53
 https://ss2.domint.net:3228/luna_str/lunatv/playlist.m3u8
-#EXTINF:-1 tvg-id="Megavision.do" status="online",Megavisión
+#EXTINF:-1 tvg-id="Megavision.do" status="error",Megavisión
 http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
-#EXTINF:-1 tvg-id="MegavisionCanal43.do" status="online",Megavision Canal 43 (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="MegavisionCanal43.do" status="error",Megavision Canal 43 (480p) [Not 24/7]
 http://stream3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 #EXTINF:-1 tvg-id="Microvision10.do" status="online",Microvision 10 (720p) [Not 24/7]
 http://190.103.183.24:1935/live/MicroHD/playlist.m3u8
@@ -125,7 +125,7 @@ https://streaming.ath.cx:1936/nexxotv/nexxotv/playlist.m3u8
 https://live.teledomdr.com:3131/live/nitidatvlive.m3u8
 #EXTINF:-1 tvg-id="ORBITTV.do" status="online",ORBIT TV (480p) [Geo-blocked]
 https://ss3.domint.net:3134/otv_str/orbittv/playlist.m3u8
-#EXTINF:-1 tvg-id="PeraviaVision.do" status="online",Peravía Visión
+#EXTINF:-1 tvg-id="PeraviaVision.do" status="error",Peravía Visión
 https://ss5.domint.net:3048/pvv_str/peravia/playlist.m3u8
 #EXTINF:-1 tvg-id="PH.do" status="online",PH (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/phtv/Phtv.myStream/playlist.m3u8
@@ -141,11 +141,11 @@ https://ss2.domint.net:3202/rnn_str/canal27/playlist.m3u8
 http://tv.romanatv42.com/hls/live.m3u8
 #EXTINF:-1 tvg-id="SabanetaTV.do" status="error",Sabaneta TV
 https://ss9.domint.net:3044/spm_str/sabanetatv/playlist.m3u8
-#EXTINF:-1 tvg-id="SanIsidroTV.do" status="online",San Isidro TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="SanIsidroTV.do" status="error",San Isidro TV (360p) [Not 24/7]
 https://cdn4.hostlagarto.com:8081/static/sanisidrotv/playlist.m3u8
 #EXTINF:-1 tvg-id="SenalesTV.do" status="online",Señales TV
 https://live.teledom.info:4000/live/senalestvlive.m3u8
-#EXTINF:-1 tvg-id="SensacionTV.do" status="online",Sensación TV
+#EXTINF:-1 tvg-id="SensacionTV.do" status="error",Sensación TV
 https://ss5.domint.net:3002/stv_str/sensaciontv/playlist.m3u8
 #EXTINF:-1 tvg-id="SiTV.do" status="online",SiTV (720p)
 http://190.122.104.221/Player/sitv.m3u8
@@ -163,7 +163,7 @@ https://ss8.domint.net:3128/stv_str/tv55/master.m3u8
 http://108.175.14.125:1935/tdn/tdn/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleBendicion.do" status="timeout",TeleBendicion (720p) [Not 24/7]
 http://ss8.domint.net:2124/tbt_str/telebendicion/playlist.m3u8
-#EXTINF:-1 tvg-id="Telecanal28.do" status="blocked",Telecanal 28 (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Telecanal28.do" status="online",Telecanal 28 (360p) [Geo-blocked]
 http://cm.hostlagarto.com:8081/Telecanal-28/telecanal.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCibaoHD.do" status="online",TeleCibao (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Telecibao/Telecibao/playlist.m3u8
@@ -197,13 +197,13 @@ https://cdn5.streamgato.us:3315/live/telesantodomingolive.m3u8
 http://177.52.221.214:8000/play/a0fk/index.m3u8
 #EXTINF:-1 tvg-id="TelesurCanal10.do" status="online",Telesur Canal (360p) [Not 24/7]
 https://ss3.domint.net:3124/tls_str/telesur/playlist.m3u8
-#EXTINF:-1 tvg-id="Teletur.do" status="online",Teletur
+#EXTINF:-1 tvg-id="Teletur.do" status="error",Teletur
 https://cdn4.hostlagarto.com:8081/static/teletur/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleunion.do" status="online",Teleunion (480p) [Not 24/7]
 http://server3.prostudionetwork.com:1945/teleunion/TU/playlist.m3u8
 #EXTINF:-1 tvg-id="Telever.do" status="error",Telever Canal 12
 http://tengomusica.ddns.net:1935/telever/telever.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TitanicoTV.do" status="online",Titánico TV
+#EXTINF:-1 tvg-id="TitanicoTV.do" status="error",Titánico TV
 https://cdn2.streamgato.us/titanicotv/titanicotv/playlist.m3u8
 #EXTINF:-1 tvg-id="TNICanal51.do" status="online",TNI Canal51
 https://ss5.domint.net:3188/tni_str/tni51/playlist.m3u8
@@ -229,7 +229,7 @@ http://190.103.183.24:1935/Vallevision/ValleHD/playlist.m3u8
 https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8
 #EXTINF:-1 tvg-id="VegaTeve.do" status="error",Vega Teve (720p) [Not 24/7]
 https://ss6.domint.net:3012/tes_str/teleelsalvador/playlist.m3u8
-#EXTINF:-1 tvg-id="Yunavision.do" status="online",Yunavisión
+#EXTINF:-1 tvg-id="Yunavision.do" status="error",Yunavisión
 https://ss9.domint.net:3036/yv_str/yunavision/playlist.m3u8
 #EXTINF:-1 tvg-id="Zol106.do" status="online",Zol106 (720p) [Not 24/7]
 https://ss3.domint.net:3108/zol_str/vzol/playlist.m3u8
