@@ -33,7 +33,7 @@ See [Internet Protocol television](https://en.wikipedia.org/wiki/Internet_Protoc
 ### Do I need a good Internet connection to watch an available stream?
 A lot of channels are ready for main public because of adaptive resolution. If you have a slow connection, play again at another time, becuase you may experience short stuttering and/or signal low.
 
-Some TV stations have a limit of simultaneous users, so if this stream does not display correctly, you will have to play at another time.
+Some TV stations have a maximum of simultaneous users. So if this stream does not display correctly (becuase of bandwidth limit), you will have to play at another time.
 
 ### I have a cable service and I want those channels to be on this IPTV. Is that possible?
 No. This playlist does not replace traditional cable, because this playlist can't include exclusive channels that may not be available on free-to-air. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
