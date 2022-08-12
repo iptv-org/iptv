@@ -44,8 +44,9 @@ NSFW content are not suitable for the main public. To avoid issues with these ki
 No. Also, the maintenance of this service is self-financed.
 
 ### Are you planning to include a VOD of TV shows broadcasted on this playlist?
-> No. This is not our purpose.
-Based on #175, #3290, #7852
+No. This is not our purpose.
+
+Based on [#175](https://github.com/iptv-org/iptv/issues/175), [#3290](https://github.com/iptv-org/iptv/discussions/3290), [#7852](https://github.com/iptv-org/iptv/discussions/7852).
 
 ## Channels
 ### Does the channel need to be publicly accessible to be included in the playlists?
@@ -70,6 +71,8 @@ These files are useful to see perfectly the channel based in your network or scr
 Xtream-Codes streams are, most of the times, pirated streams created by some people that can get satellite and/or PPV streams and that propose it to everyone for a fairer price. These types of servers are illegal and also highly unstable, since it depends either from the user who bought it and the server that hosts it.
 
 In short, they are poor quality streams created by unauthorized people.
+
+Based on [#5401](https://github.com/iptv-org/iptv/pull/5401).
 
 ### Is possible to add streams from Youtube, Dailymotion or Twitch?
 Yes. Due to technical limitations is necessary add a [Streamlink](https://streamlink.github.io/) server link to view the content.
