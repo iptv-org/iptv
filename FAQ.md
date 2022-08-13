@@ -22,7 +22,7 @@ Technical:
 - [Why are there some ids with call sign (WATB-TV.us) and others with alphanumeric id (Mychannel.us)?](#Why-are-there-some-ids-with-call-sign-watb-tvus-and-others-with-alphanumeric-id-mychannelus)
 - [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
 - [Why some streams have empty id?](#Why-some-streams-have-empty-id)
-- [What is a "daily update" and why is benefit for this playlist?](#What-is-a-daily-update-and-why-is-benefit-for-this-playlist)
+- [What is a "daily update" and what are the benefits for this playlist?](#What-is-a-daily-update-and-what-are-the-benefits-for-this-playlist)
 
 ## Basic
 ### What is IPTV?
