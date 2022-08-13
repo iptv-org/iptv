@@ -20,6 +20,7 @@ Technical:
 - [Is it possible to add streams from Youtube, Dailymotion or Twitch?](#Is-it-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
 - [Why are there some ids with call sign (WATB-TV.us) and others with alphanumeric id (Mychannel.us)?](#Why-are-there-some-ids-with-call-sign-watb-tvus-and-others-with-alphanumeric-id-mychannelus)
+- [Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?](#Why-attributes-of-channels-of-this-playlist-like-tvg-country-tvg-language-tvg-logo-are-missing)
 - [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
 - [Why some streams have empty id?](#Why-some-streams-have-empty-id)
 - [What is a "daily update" and what are the benefits for this playlist?](#What-is-a-daily-update-and-what-are-the-benefits-for-this-playlist)
