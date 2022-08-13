@@ -31,10 +31,10 @@ http://204.12.211.210:1935/conectatv/conectatv/playlist.m3u8
 https://live-streams-notusa.televisa.com/channel02-b/index.m3u8
 #EXTINF:-1 tvg-id="GoldenPanregional.mx" status="error",Golden Latinoamérica (720p) [Not 24/7]
 https://cloud2.streaminglivehd.com:1936/8026/8026/playlist.m3u8
-#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipódromo de las Américas (480p) [Geo-blocked]
-http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="online",Hipodromo de las Americas (360p) [Not 24/7]
 http://wms10.tecnoxia.com/soelvi/slv423/playlist.m3u8
+#EXTINF:-1 tvg-id="HipodromodelasAmericas.mx" status="blocked",Hipódromo de las Américas (480p) [Geo-blocked]
+http://wms.tecnoxia.com:1935/8158/8158/playlist.m3u8
 #EXTINF:-1 tvg-id="IcrtvColima.mx" status="error",Icrtv Colima (720p) [Not 24/7]
 https://5ca9af4645e15.streamlock.net/canal11/videocanal11/playlist.m3u8
 #EXTINF:-1 tvg-id="ImagenMulticast.mx" status="online",Imagen Multicast (480p) [Not 24/7]
@@ -89,17 +89,17 @@ https://mdstrm.com/live-stream-playlist/61e1e088d04d7744686afc42.m3u8
 https://59d39900ebfb8.streamlock.net/8410/8410/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleritmo.mx" status="blocked",Teleritmo (720p) [Geo-blocked]
 http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8
-#EXTINF:-1 tvg-id="TelevisaAguascalientes.mx" status="timeout",Televisa Aguascalientes (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaAguascalientes.mx" status="error",Televisa Aguascalientes (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC5ZtV3bu3bjSuOLoA6oCFIg/live
 #EXTINF:-1 tvg-id="TelevisaChihuahua.mx" status="error",Televisa Chihuahua (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCjfxDe7In59Jbfw2HmIh_Vg/live
-#EXTINF:-1 tvg-id="TelevisaCiudadJuarez.mx" status="error",Televisa Ciudad Juarez (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaCiudadJuarez.mx" status="online",Televisa Ciudad Juarez (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCot4t8PVKz8TT5xVM8Eb00w/live
 #EXTINF:-1 tvg-id="TelevisaDelBajio.mx" status="error",Televisa Del Bajio
 http://viptv-query/?streaming-ip=https://www.youtube.com/channel/UC-uYy4_jIvDoJ4wigEv1S5A/live
 #EXTINF:-1 tvg-id="TelevisaDelGolfo.mx" status="timeout",Televisa Del Golfo
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCQ08tNTPiBn44c975S81ftg/live
-#EXTINF:-1 tvg-id="TelevisaEstado.mx" status="error",Televisa Estado (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaEstado.mx" status="online",Televisa Estado (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC9DH82HVSf4katwMeUpY80w
 #EXTINF:-1 tvg-id="TelevisaGuadalajara.mx" status="online",Televisa Guadalajara (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRujF_YxVVFmTRWURQH-Cww/live
@@ -111,9 +111,9 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcmuFsMIIIHO3LBqeBVfm8Q/live
 #EXTINF:-1 tvg-id="TelevisaMonterrey.mx" status="online",Televisa Monterrey (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGDJLLphnP0zQQaE3kgo5Wg/live
-#EXTINF:-1 tvg-id="TelevisaMorelos.mx" status="timeout",Televisa Morelos
+#EXTINF:-1 tvg-id="TelevisaMorelos.mx" status="error",Televisa Morelos
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcC9ykApQrgl4UxbKg2U4zw/live
-#EXTINF:-1 tvg-id="TelevisaNewsMexico.mx" status="online",Televisa News Mexico (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaNewsMexico.mx" status="error",Televisa News Mexico (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCUsm-fannqOY02PNN67C0KA/live
 #EXTINF:-1 tvg-id="TelevisaNoreste.mx" status="online",Televisa Noreste (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC752DYv5vPlTSMrvEjfZXcw/live
@@ -139,7 +139,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://streamingcws20.com:1935/tmtv/videotmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TransmediaTelevisionMorelia.mx" status="online",Transmedia Televisión Morelia (614p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/tmtv/videotmtv/playlist.m3u8
-#EXTINF:-1 tvg-id="TVLobo.mx" status="error",TV Lobo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVLobo.mx" status="online",TV Lobo (720p) [Not 24/7]
 http://streamingcws20.com:1935/lobodurango/videolobodurango/playlist.m3u8
 #EXTINF:-1 tvg-id="TVP.mx" status="online",TVP (720p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico4/smil:mazatlan.smil/playlist.m3u8
