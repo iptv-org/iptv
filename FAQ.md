@@ -93,10 +93,20 @@ No. Exceptions are the visual radios, in which a video and audio are shown at th
 ### Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?
 It's to differentiate the origin of the broadcast from the content. Call signs usually come from physical stations in the country of origin and their programming is subject to change. If the channel is not from a television station, the brand name will be used.
 
-An example of a call sign used as id is KJLA-DT1.us: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel, whose id is VisionLatina.us.
+An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel, whose id is `VisionLatina.us`.
 
 ### There are source for verify call sign and coverage area for some TV stations?
 There are websites to consult the location and characteristics of the station. For example, [FCCData](https://fccdata.org/) for US, Canada, Mexico UK, Austrailia and Japan.
+
+### Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?
+The reason is to reduce the workload when adding streams in the list. Since "tvg-id" links to [Database](https://github.com/iptv-org/database) repository, each channel has unique attributes like: image, name (in English and local speak), category and language.
+
+You can add multiple streams with a single id (in the "tvg-id" parameter), instead of adding information from scratch. For example:
+
+```
+#EXTINF:-1 tvg-id="CCTV3.cn" status="online",CCTV-3综艺 (1080p)
+```
+Based on [#6516](https://github.com/iptv-org/iptv/issues/6516).
 
 ### Why some streams have empty id?
 Because the stream does not have enough information available. If you know, let us know its official name, the language it broadcasts and the country where it originates.
