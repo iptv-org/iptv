@@ -102,4 +102,4 @@ There are websites to consult the location and characteristics of the station. F
 Because the stream does not have enough information available. If you know, let us know its official name, the language it broadcasts and the country where it originates.
 
 ### What is a "daily update" and why are the benefits for this playlist?
-A "daily update" is maintenance to check the status of the playlist operation, as well as to hide streams from the playlist if they have access problems.
+A "daily update" is a pull request made for maintenance purposes. It checks the status of the playlist operation, and reclassifies the streams internally. This will be useful on playlist recreation, as it's gonna hide streams from the playlist if they have access problems.
