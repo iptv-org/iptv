@@ -78,7 +78,7 @@ No, there is no such option.
 ### Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?
 These files are useful to see perfectly the channel based in your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally their urls.
 
-In "daily update", the stream with better resolution supported will be considered a "priority" over other streams of lower resolution.
+In the "daily update", the stream with the best supported resolution will be considered "priority" over other lower resolution streams of the same channel.
 
 Based on [#1916](https://github.com/iptv-org/iptv/issues/1916).
 
