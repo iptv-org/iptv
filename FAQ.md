@@ -78,6 +78,10 @@ No, there is no such option.
 ### Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?
 These files are useful to see perfectly the channel based in your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally their urls.
 
+In "daily update", the stream with better resolution supported will be considered a "priority" over other streams of lower resolution.
+
+Based on [#1916](https://github.com/iptv-org/iptv/issues/1916).
+
 ### Why don't we accept XStream-Codes in streams?
 Xtream-Codes streams are, most of the times, pirated streams created by some people that can get satellite and/or PPV streams and that propose it to everyone for a fairer price. These types of servers are illegal and also highly unstable, since it depends either from the user who bought it and the server that hosts it.
 
