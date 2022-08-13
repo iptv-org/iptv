@@ -101,5 +101,9 @@ There are websites to consult the location and characteristics of the station. F
 ### Why some streams have empty id?
 Because the stream does not have enough information available. If you know, let us know its official name, the language it broadcasts and the country where it originates.
 
+This also applies to the undefined.m3u file. The streams in this file are from channels whose country of origin is unknown.
+
+Based on [#2440](https://github.com/iptv-org/iptv/issues/2440).
+
 ### What is a "daily update" and why are the benefits for this playlist?
 A "daily update" is a pull request made for maintenance purposes. It checks the status of the playlist operation, and reclassifies the streams internally. This will be useful on playlist recreation, as it's gonna hide streams from the playlist if they have access problems.
