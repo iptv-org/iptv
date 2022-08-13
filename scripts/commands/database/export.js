@@ -13,7 +13,7 @@ async function main() {
   let streams = await db.streams.find({})
   streams = _.sortBy(streams, 'channel')
   streams = streams.map(stream => {
-    const data = {
+    let data = {
       channel: stream.channel,
       url: stream.url,
       http_referrer: stream.http_referrer,
@@ -29,6 +29,7 @@ async function main() {
     let updatedAt = now
     let found = api.streams.find({ url: stream.url })
     if (found) {
+      data = JSON.parse(JSON.stringify(data))
       normalized = _.omit(found, ['added_at', 'updated_at', 'checked_at'])
       if (_.isEqual(data, normalized)) {
         addedAt = found.added_at || now
