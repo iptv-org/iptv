@@ -100,14 +100,14 @@ An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikiped
 There are websites to consult the location and characteristics of the station. For example, [FCCData](https://fccdata.org/) for US, Canada, Mexico UK, Austrailia and Japan.
 
 ### Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?
-The reason is to reduce the workload when adding streams in the list. Since "tvg-id" links to [Database](https://github.com/iptv-org/database) repository, each channel has unique attributes like: image, name (in English and local speak), category and language.
+The reason is to reduce the workload when adding streams in the list. Since "tvg-id" links to [Database](https://github.com/iptv-org/database) repository, each channel has unique attributes like: image, name (in English and local speak), country (or countries) broadcasted, category and language.
 
 You can add multiple streams with a single id (in the "tvg-id" parameter), instead of adding information from scratch. For example:
 
 ```
 #EXTINF:-1 tvg-id="CCTV3.cn" status="online",CCTV-3综艺 (1080p)
 ```
-Based on [#6516](https://github.com/iptv-org/iptv/issues/6516).
+Based on [#2086](https://github.com/iptv-org/iptv/issues/2086) (countries) and [#6516](https://github.com/iptv-org/iptv/issues/6516) (use of Database).
 
 ### Why some streams have empty id?
 Because the stream does not have enough information available. If you know, let us know its official name, the language it broadcasts and the country where it originates.
