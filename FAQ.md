@@ -87,13 +87,13 @@ Based on [#1916](https://github.com/iptv-org/iptv/issues/1916).
 ### Why don't we accept Xtream-Codes servers inside our playlists?
 Xtream-Codes streams are, most of the times, pirated streams created by some people that can get satellite and/or PPV streams and that propose it to everyone for a fairer price. These types of servers are illegal and also highly unstable, since it depends either from the user who bought it or the server that hosts it.
 
+In short, they are poor quality streams created by unauthorized people.
+
 If you're unsure about if your link is from an Xtream-Codes server, you may:
 - Look at the structure of the URL. Most of them have this form : http(s)://*hostname*:25461/*username*/*password*/*channelID* (port is often 25461)
 - Remove the rest of the URL after the password mention and add either "panel_api.php?" or "player_api.php?" after the port. Replace the slashes between the username and password with "username=" and "password=". 
 
 If the link matches or answers after changing the URL, you're with an Xtream-Codes server.
-
-In short, they are poor quality streams created by unauthorized people.
 
 Based on [#5401](https://github.com/iptv-org/iptv/pull/5401).
 
