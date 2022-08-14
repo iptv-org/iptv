@@ -21,22 +21,34 @@ it('can create streams.json', () => {
   let output = content(`output/.api/streams.json`)
   let expected = content(`expected/.api/streams.json`)
 
-  const updatedUrl = 'https://master.starmena-cloud.com/hls/libyas.m3u8'
-  let outputData = output.find(i => i.url === updatedUrl)
-  let savedData = api.find(i => i.url === updatedUrl)
+  const samples = {
+    unchanged_online: 'https://master.starmena-cloud.com/hls/libyas.m3u8',
+    unchanged_error: 'https://iptv-all.lanesh4d0w.repl.co/andorra/atv',
+    updated_error: 'http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8',
+    added_online: 'https://master.starmena-cloud.com/hls/bbc.m3u8'
+  }
+
+  let outputData, savedData
+
+  outputData = output.find(i => i.url === samples['unchanged_online'])
+  savedData = api.find(i => i.url === samples['unchanged_online'])
   expect(outputData.added_at).toBe(savedData.added_at)
   expect(outputData.updated_at).toBe(savedData.updated_at)
   expect(dayjs().diff(outputData.checked_at, 'h')).toBe(0)
 
-  const sameUrl = 'http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8'
-  outputData = output.find(i => i.url === sameUrl)
-  savedData = api.find(i => i.url === sameUrl)
+  outputData = output.find(i => i.url === samples['unchanged_error'])
+  savedData = api.find(i => i.url === samples['unchanged_error'])
+  expect(outputData.added_at).toBe(savedData.added_at)
+  expect(outputData.updated_at).toBe(savedData.updated_at)
+  expect(dayjs().diff(outputData.checked_at, 'h')).toBe(0)
+
+  outputData = output.find(i => i.url === samples['updated_error'])
+  savedData = api.find(i => i.url === samples['unchanged_error'])
   expect(outputData.added_at).toBe(savedData.added_at)
   expect(dayjs().diff(outputData.updated_at, 'h')).toBe(0)
   expect(dayjs().diff(outputData.checked_at, 'h')).toBe(0)
 
-  const addedUrl = 'https://master.starmena-cloud.com/hls/bbc.m3u8'
-  outputData = output.find(i => i.url === addedUrl)
+  outputData = output.find(i => i.url === samples['added_online'])
   expect(dayjs().diff(outputData.added_at, 'h')).toBe(0)
   expect(dayjs().diff(outputData.updated_at, 'h')).toBe(0)
   expect(dayjs().diff(outputData.checked_at, 'h')).toBe(0)
