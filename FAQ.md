@@ -16,13 +16,13 @@ Channels:
 
 Technical:
 - [Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?](#Why-am-i-asked-to-provide-an-adaptive-playlist-like-masterm3u8-playlistm3u8-or-indexm3u8)
-- [Why don't we accept XStreamCode in streams?](#Why-dont-we-accept-xstreamcode-in-streams)
+- [Why don't we accept Xtream-Codes servers inside our playlists?](#Why-dont-we-accept-xstreamcodes-servers-inside-our-playlists)
 - [Is it possible to add streams from Youtube, Dailymotion or Twitch?](#Is-it-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
 - [Why are there some ids with call sign (WATB-TV.us) and others with alphanumeric id (Mychannel.us)?](#Why-are-there-some-ids-with-call-sign-watb-tvus-and-others-with-alphanumeric-id-mychannelus)
 - [Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?](#Why-attributes-of-channels-of-this-playlist-like-tvg-country-tvg-language-tvg-logo-are-missing)
 - [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
-- [Why some streams have empty id?](#Why-some-streams-have-empty-id)
+- [Why some streams have an empty id?](#Why-some-streams-have-an-empty-id)
 - [What is a "daily update" and what are the benefits for this playlist?](#What-is-a-daily-update-and-what-are-the-benefits-for-this-playlist)
 
 ## Basic
@@ -32,7 +32,7 @@ In non-technical words, IPTV (Internet Protocol television) stations have web ad
 See [Internet Protocol television](https://en.wikipedia.org/wiki/Internet_Protocol_television) from Wikipedia article. This article is important, because newcomers do not understand how playlists work.
 
 ### Do I need a good Internet connection to watch an available stream?
-A lot of channels are ready for main public because of adaptive resolution. If you have a slow connection, play again at another time, becuase you may experience short stuttering and/or signal low.
+A lot of channels are ready for main public because of adaptive resolution. If you have a slow connection, play again at another time, because you may experience short stuttering and/or signal loss.
 
 Some TV stations have a maximum of simultaneous users. So if this stream does not display correctly (becuase of bandwidth limit), you will have to play at another time.
 
@@ -58,12 +58,12 @@ Based on [#175](https://github.com/iptv-org/iptv/issues/175), [#3290](https://gi
 
 ## Channels
 ### Does the channel need to be publicly accessible to be included in the playlists?
-Yes, we only need the links to be publicly accessible like FTA packages (free-to-air), online services or official websites. We recommend tagging [Geo-blocked] if it is only accessible in one or few countries.
+Yes, we need the links to be publicly accessible like FTA packages (free-to-air), online services or official websites. We recommend tagging [Geo-blocked] if it is only accessible in one or few countries.
 
 Based on [#480](https://github.com/iptv-org/iptv/issues/480).
 
 ### Can I add a FTA channel that broadcasts PPV events or pay programming?
-Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even DCMA takedowns. Check the blocklist from the repository database for more info about specific events.
+Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even issue a DMCA takedown. Check the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for more info about specific events.
 
 ### I've created my channel and I want to add it to this playlist. What should I do?
 We are a community initiative and you don't need to pay anything to stay on this playlist. Feel free to create a channel with few resources:
@@ -73,29 +73,35 @@ We are a community initiative and you don't need to pay anything to stay on this
 
 After you have your m3u8 link, add your channel information onto the [Database](https://github.com/iptv-org/database) repository, and submit an [issue](https://github.com/iptv-org/iptv/issues/new) to propose it to us.
 
-### Is there any way to add my channel other than via git repository?
+### Is there any way to add my channel other than via this git repository?
 No, there is no such option.
 
 ## Technical
 ### Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?
-These files are useful to see perfectly the channel based in your network or screen (adaptive resolution). Also the streams are permanent, without token, that avoids edit temporally their urls.
+An adaptive playlist is a m3u8 file that contains certain informations: the bandwidth, the quality, the type of codec used to read the channel. The player then reads the channel playlist based on your bandwidth and screen (hence the name "adaptive"). This permits you to watch your channel on perfect conditions.
 
 In the "daily update", the stream with the best supported resolution will be considered "priority" over other lower resolution streams of the same channel.
 
 Based on [#1916](https://github.com/iptv-org/iptv/issues/1916).
 
-### Why don't we accept XStream-Codes in streams?
-Xtream-Codes streams are, most of the times, pirated streams created by some people that can get satellite and/or PPV streams and that propose it to everyone for a fairer price. These types of servers are illegal and also highly unstable, since it depends either from the user who bought it and the server that hosts it.
+### Why don't we accept Xtream-Codes servers inside our playlists?
+Xtream-Codes streams are, most of the times, pirated streams created by some people that can get satellite and/or PPV streams and that propose it to everyone for a fairer price. These types of servers are illegal and also highly unstable, since it depends either from the user who bought it or the server that hosts it.
+
+If you're unsure about if your link is from an Xtream-Codes server, you may:
+- Look at the structure of the URL. Most of them have this form : http(s)://*hostname*:25461/*username*/*password*/*channelID* (port is often 25461)
+- Remove the rest of the URL after the password mention and add either "panel_api.php?" or "player_api.php?" after the port. Replace the slashes between the username and password with "username=" and "password=". 
+
+If the link matches or answers after changing the URL, you're with an Xtream-Codes server.
 
 In short, they are poor quality streams created by unauthorized people.
 
 Based on [#5401](https://github.com/iptv-org/iptv/pull/5401).
 
-### Is possible to add streams from Youtube, Dailymotion or Twitch?
-Yes. Due to technical limitations is necessary add a [Streamlink](https://streamlink.github.io/) server link to view the content.
+### Is it possible to add streams from Youtube, Dailymotion or Twitch?
+Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content.
 
 ### Is it possible to add audio-only streams, like FM radio?
-No. Exceptions are the visual radios, in which a video and audio are shown at the same time.
+No. Exceptions are the visual radios, in which a video and audio are shown at the same time. A WIP repository made by one member of iptv-org, [LaneSh4d0w](https://github.com/LaneSh4d0w) aims to collect radio streams, on the [IPRD](https://github.com/LaneSh4d0w/IPRD) repository.
 
 ### Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?
 It's to differentiate the origin of the broadcast from the content. Call signs usually come from physical stations in the country of origin and their programming is subject to change. If the channel is not from a television station, the brand name will be used.
@@ -103,10 +109,10 @@ It's to differentiate the origin of the broadcast from the content. Call signs u
 An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel, whose id is `VisionLatina.us`.
 
 ### There are source for verify call sign and coverage area for some TV stations?
-There are websites to consult the location and characteristics of the station. For example, [FCCData](https://fccdata.org/) for US, Canada, Mexico UK, Austrailia and Japan.
+There are websites to consult the location and characteristics of the station. For example, [FCCData](https://fccdata.org/) for US, Canada, Mexico, UK, Australia and Japan.
 
 ### Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?
-The reason is to reduce the workload when adding streams in the list. Since "tvg-id" links to [Database](https://github.com/iptv-org/database) repository, each channel has unique attributes like: image, name (in English and local speak), country (or countries) broadcasted, category and language.
+The reason is to reduce the workload when adding streams in the list. Since "tvg-id" links to the [Database](https://github.com/iptv-org/database) repository, each channel has unique attributes like image, name (in English and local speak), country (or countries) broadcasted, category and language.
 
 You can add multiple streams with a single id (in the "tvg-id" parameter), instead of adding information from scratch. For example:
 
@@ -115,8 +121,8 @@ You can add multiple streams with a single id (in the "tvg-id" parameter), inste
 ```
 Based on [#2086](https://github.com/iptv-org/iptv/issues/2086) (countries) and [#6516](https://github.com/iptv-org/iptv/issues/6516) (use of Database).
 
-### Why some streams have empty id?
-Because the stream does not have enough information available. If you know, let us know its official name, the language it broadcasts and the country where it originates.
+### Why some streams have an empty id?
+Because the stream does not have enough information available. If you appear to know additional data on these, let us know its official name, the language it broadcasts and the country where it originates.
 
 This also applies to the undefined.m3u file. The streams in this file are from channels whose country of origin is unknown.
 
