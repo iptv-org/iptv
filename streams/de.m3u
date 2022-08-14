@@ -233,7 +233,7 @@ http://62.113.210.250/medienasa-live/punktum_high/master.m3u8
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3u
 #EXTINF:-1 tvg-id="PUNKTum.de" status="online",PUNKTum (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3u8
-#EXTINF:-1 tvg-id="Radio21TV.de" status="online",Radio 21 TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Radio21TV.de" status="blocked",Radio 21 TV (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/22300508/events/6675945/live.m3u8
 #EXTINF:-1 tvg-id="RadioWeserTVBremen.de" status="online",Radio Weser TV Bremen (576p)
 https://5857499ee635b.streamlock.net/radiowesertv-live/mp4:livestreamTV/playlist.m3u8
@@ -267,10 +267,10 @@ https://stream01.stream.welocal.world/stream/fhd-rfo_66876/ngrp:stream_all/playl
 https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
-#EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
-http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
 http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
+#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
+http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RONTV.de" status="error",RON TV (1080p)
 https://ron-i.akamaihd.net/hls/live/523496/ron/master.m3u8
 #EXTINF:-1 tvg-id="RTLWest.de" status="error",RTL West (540p)
@@ -353,6 +353,8 @@ https://sdn-global-live-http-cache.3qsdn.com/2980/amlst:5715-sbr/playlist.m3u8
 https://a.jsrdn.com/broadcast/ab14783a09/+0000/c.m3u8
 #EXTINF:-1 tvg-id="ZDF.de" status="blocked",ZDF [Geo-blocked]
 https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",oeins (Oldenburg) (1080p) [Not 24/7]
+https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="" status="online",PunktUM (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/punktum_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ran 1 (1080p)
@@ -375,8 +377,6 @@ https://mytvplus.iptv-playoutcenter.de/mytvplus/mytvplus.stream_1/playlist.m3u8
 https://s3.welocal.world/frankenfernsehen/media/191627/videos/hls.m3u8
 #EXTINF:-1 tvg-id="" status="online",TVO (1080p) [Not 24/7]
 https://tvoberfranken.iptv-playoutcenter.de/tvoberfranken/tvoberfranken.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",oeins (Oldenburg) (1080p) [Not 24/7]
-https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="" status="online",BR Fernsehen Süd (720p)
 https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Antenne Vorarlberg (720p) [Not 24/7]
