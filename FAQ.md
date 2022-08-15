@@ -13,6 +13,8 @@ Channels:
 - [Does the channel need to be FTA to be included in the playlists?](#Does-the-channel-need-to-be-FTA-to-be-included-in-the-playlists)
 - [Can I add a FTA channel that broadcasts PPV events or pay programming?](#Can-I-add-a-FTA-channel-that-broadcasts-PPV-events-or-pay-programming)
 - [I've created my channel and I want to add it to this playlist. What should I do?](#Ive-created-my-channel-and-i-want-to-add-it-to-this-playlist-what-should-i-do)
+- [Is it possible to limit the broadcasting of my channel to my country only?](#Is-it-possible-to-limit-the-broadcasting-of-my-channel-to-my-country-only)
+- [Is there any way to add my channel other than via this git repository?](#Is-there-any-way-to-add-my-channel-other-than-via-this-git-repository)
 
 Technical:
 - [Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?](#Why-am-i-asked-to-provide-an-adaptive-playlist-like-masterm3u8-playlistm3u8-or-indexm3u8)
@@ -76,6 +78,11 @@ We are a community initiative and you don't need to pay anything to stay on this
 * And a live streaming service with multibitrate (if possible).
 
 After you have your m3u8 link, add your channel information onto the [Database](https://github.com/iptv-org/database) repository, and submit an [issue](https://github.com/iptv-org/iptv/issues/new) to propose it to us.
+
+### Is it possible to limit the broadcasting of my channel to my country only?
+If you do not want the channel to be broadcast outside your country (for legal reasons), we recommend using the [Geo-blocked] tag for your stream.
+
+Based on [#480](https://github.com/iptv-org/iptv/issues/6534).
 
 ### Is there any way to add my channel other than via this git repository?
 No, there is no such option.
