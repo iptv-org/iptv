@@ -82,7 +82,7 @@ After you have your m3u8 link, add your channel information onto the [Database](
 ### Is it possible to limit the broadcasting of my channel to my country only?
 If you do not want the channel to be broadcast outside your country (for legal reasons), we recommend using the [Geo-blocked] tag for your stream.
 
-Based on [#480](https://github.com/iptv-org/iptv/issues/6534).
+Based on [#6534](https://github.com/iptv-org/iptv/issues/6534).
 
 ### Is there any way to add my channel other than via this git repository?
 No, there is no such option.
