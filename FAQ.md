@@ -48,6 +48,8 @@ No, to avoid possible abuse of the service.
 ### Why don't we show NSFW channels in most playlists?
 NSFW content are not suitable for the main public. To avoid issues with these kind of programmings, we've created a separate NSFW playlist available for everyone. If you want to see this type of channel, please use the NSFW playlist.
 
+Based on [#1799](https://github.com/iptv-org/iptv/pull/1799) and [#3031](https://github.com/iptv-org/iptv/pull/3031).
+
 ### Do I have to pay to use this list?
 No. Also, the maintenance of this service is self-financed.
 
@@ -63,7 +65,9 @@ Yes, we need the links to be publicly accessible like FTA packages (free-to-air)
 Based on [#480](https://github.com/iptv-org/iptv/issues/480).
 
 ### Can I add a FTA channel that broadcasts PPV events or pay programming?
-Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even issue a DMCA takedown. Check the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for more info about specific events.
+Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even issue a DMCA takedown. Check the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for more info about specific events, and own [counternotice](https://github.com/github/dmca/blob/3ce1c9402c6b7e46dcbbea6ff866d6a44e75c72a/2020/10/2020-10-08-dfl-counternotice.md) indicating that a DCMA takedown is invalid if only one FTA channel infringes copyright.
+
+Based on [#6350](https://github.com/iptv-org/iptv/issues/6350).
 
 ### I've created my channel and I want to add it to this playlist. What should I do?
 We are a community initiative and you don't need to pay anything to stay on this playlist. Feel free to create a channel with few resources:
@@ -90,8 +94,8 @@ Xtream-Codes streams are, most of the times, pirated streams created by some peo
 In short, they are poor quality streams created by unauthorized people.
 
 If you're unsure about if your link is from an Xtream-Codes server, you may:
-- Look at the structure of the URL. Most of them have this form : http(s)://*hostname*:25461/*username*/*password*/*channelID* (port is often 25461)
-- Remove the rest of the URL after the password mention and add either "panel_api.php?" or "player_api.php?" after the port. Replace the slashes between the username and password with "username=" and "password=". 
+* Look at the structure of the URL. Most of them have this form : http(s)://*hostname*:25461/*username*/*password*/*channelID* (port is often 25461)
+* Remove the rest of the URL after the password mention and add either "panel_api.php?" or "player_api.php?" after the port. Replace the slashes between the username and password with "username=" and "password=". 
 
 If the link matches or answers after changing the URL, you're with an Xtream-Codes server.
 
