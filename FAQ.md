@@ -67,7 +67,11 @@ Yes, we need the links to be publicly accessible like FTA packages (free-to-air)
 Based on [#480](https://github.com/iptv-org/iptv/issues/480).
 
 ### Can I add a FTA channel that broadcasts PPV events or pay programming?
-Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even issue a DMCA takedown. Check the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for more info about specific events, and own [counternotice](https://github.com/github/dmca/blob/3ce1c9402c6b7e46dcbbea6ff866d6a44e75c72a/2020/10/2020-10-08-dfl-counternotice.md) indicating that a DCMA takedown is invalid if only one FTA channel infringes copyright.
+Maybe. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even issue a DMCA takedown. Check the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for more info about specific events, and this [counternotice](https://github.com/github/dmca/blob/3ce1c9402c6b7e46dcbbea6ff866d6a44e75c72a/2020/10/2020-10-08-dfl-counternotice.md) indicating that a DMCA takedown is invalid if only one FTA channel infringes copyright.
+
+Please remember that by sharing a link to a FTA channel, you are **indexing** the link, not **restreaming** their content. This subtility makes most of the DMCA takedowns false and invalid under law. 
+A good example of this would be [Perfect 10 v. Google](https://www.eff.org/fr/cases/perfect-10-v-google). 
+Some [valid takedowns](https://github.com/iptv-org/iptv/issues/6486) do occur when a Pull Request is made to notify us that we should not index their channels.
 
 Based on [#6350](https://github.com/iptv-org/iptv/issues/6350).
 
