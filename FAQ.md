@@ -74,6 +74,11 @@ Yes, we need the links to be publicly accessible like FTA packages (free-to-air)
 
 Based on [#480](https://github.com/iptv-org/iptv/issues/480) and [#2732](https://github.com/iptv-org/iptv/issues/2732).
 
+### Can I add a FTA channel that broadcasts only in its origin country?
+Yes. Even if the channel does not want to be broadcasted worldwide for legal reasons, we recommend using the [Geo-blocked] tag for its stream.
+
+Based on  and [#2191](https://github.com/iptv-org/iptv/issues/2191).
+
 ### Can I add a FTA channel that broadcasts PPV events or pay programming?
 Maybe, this may change in future answers. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even issue a DMCA takedown. Check the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for more info about specific events, and this [counternotice](https://github.com/github/dmca/blob/3ce1c9402c6b7e46dcbbea6ff866d6a44e75c72a/2020/10/2020-10-08-dfl-counternotice.md) indicating that a DMCA takedown is invalid if only one FTA channel infringes copyright.
 
@@ -91,12 +96,7 @@ We are a community initiative and you don't need to pay anything to stay on this
 
 After you have your m3u8 link, add your channel information onto the [Database](https://github.com/iptv-org/database) repository, and submit an [issue](https://github.com/iptv-org/iptv/issues/new) to propose it to us.
 
-Note: There are cases of broadcasting a copy of third-party content (released previously in public) with the purpose of promoting, educating or commenting. This is known as fair use (also called "fair dealing" or "copyright exception") and should be important when broadcasting without problems on your TV channel.
-
-### Is it possible to add my channel to broadcast only in my country?
-Yes, if you do not want the channel to be broadcast outside your country (for legal reasons), we recommend using the [Geo-blocked] tag for your stream.
-
-Based on [#2732](https://github.com/iptv-org/iptv/issues/2732) and [#6534](https://github.com/iptv-org/iptv/issues/6534).
+Note: Please check the fair use (also called "fair dealing" or "copyright exception") situation in your country where it is broadcasted. This point should be important when broadcasting other contents without problems on your TV channel.
 
 ### Is there any way to add my channel other than via this git repository?
 No, there is no such option.
