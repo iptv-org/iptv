@@ -130,7 +130,7 @@ Based on [#4112](https://github.com/iptv-org/iptv/discussions/4412).
 ### Is it possible to add audio-only streams, like FM radio?
 No. Exceptions are the visual radios, in which a video and audio are shown at the same time. A WIP repository made by one member of iptv-org, [LaneSh4d0w](https://github.com/LaneSh4d0w) aims to collect radio streams, on the [IPRD](https://github.com/LaneSh4d0w/IPRD) repository.
 
-Based on [#5794](https://github.com/iptv-org/iptv/discussions/5794).
+Based on [#5794](https://github.com/iptv-org/iptv/discussions/5794), [#6044](https://github.com/iptv-org/iptv/discussions/6044) and [#6674](https://github.com/iptv-org/iptv/pull/6674) (visual radio example).
 
 ### Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?
 It's to differentiate the origin of the broadcast from the content. Call signs usually come from physical stations in the country of origin and their programming is subject to change. If the channel is not from a television station, the brand name will be used.
