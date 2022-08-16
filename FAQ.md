@@ -146,7 +146,7 @@ The reason is to reduce the workload when adding streams in the list. Since "tvg
 You can add multiple streams with a single id (in the "tvg-id" parameter), instead of adding information from scratch. For example:
 
 ```
-#EXTINF:-1 tvg-id="CCTV3.cn" status="online",CCTV-3综艺 (1080p)
+#EXTINF:-1 tvg-id="CCTV3.cn",CCTV-3综艺 (1080p)
 ```
 Based on [#2086](https://github.com/iptv-org/iptv/issues/2086) (countries) and [#6516](https://github.com/iptv-org/iptv/issues/6516) (use of Database).
 
