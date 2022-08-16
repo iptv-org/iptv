@@ -160,4 +160,4 @@ Based on [#2440](https://github.com/iptv-org/iptv/issues/2440).
 ### What is a "daily update" and why are the benefits for this playlist?
 A "daily update" is a pull request made for maintenance purposes. It checks the status of the playlist operation, and reclassifies the streams internally. This will be useful on playlist recreation, as it's gonna hide streams from the playlist if they have access problems.
 
-Based on [#3057](https://github.com/iptv-org/iptv/issues/3057) and [#6855](https://github.com/iptv-org/iptv/issues/6855).
+Based on [#6855](https://github.com/iptv-org/iptv/issues/6855).
