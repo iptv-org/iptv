@@ -120,7 +120,7 @@ If you're unsure about if your link is from an Xtream-Codes server, you may:
 
 If the link matches or answers after changing the URL, you're with an Xtream-Codes server.
 
-Based on [#5401](https://github.com/iptv-org/iptv/pull/5401).
+Based on [#5236](https://github.com/iptv-org/iptv/pull/5236) and [#5401](https://github.com/iptv-org/iptv/pull/5401).
 
 ### Is it possible to add streams from Youtube, Dailymotion or Twitch?
 Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content.
