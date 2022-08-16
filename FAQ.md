@@ -117,6 +117,8 @@ Based on [#5401](https://github.com/iptv-org/iptv/pull/5401).
 ### Is it possible to add streams from Youtube, Dailymotion or Twitch?
 Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content.
 
+Based on [#4112](https://github.com/iptv-org/iptv/discussions/4412).
+
 ### Is it possible to add audio-only streams, like FM radio?
 No. Exceptions are the visual radios, in which a video and audio are shown at the same time. A WIP repository made by one member of iptv-org, [LaneSh4d0w](https://github.com/LaneSh4d0w) aims to collect radio streams, on the [IPRD](https://github.com/LaneSh4d0w/IPRD) repository.
 
