@@ -135,6 +135,8 @@ It's to differentiate the origin of the broadcast from the content. Call signs u
 
 An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel, whose id is `VisionLatina.us`.
 
+Based on [#5818](https://github.com/iptv-org/iptv/discussions/5818).
+
 ### There are source for verify call sign and coverage area for some TV stations?
 There are websites to consult the location and characteristics of the station. For example, [FCCData](https://fccdata.org/) for US, Canada, Mexico, UK, Australia and Japan.
 
