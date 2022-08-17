@@ -61,7 +61,9 @@ NSFW content are not suitable for the main public. To avoid issues with these ki
 Based on [#1799](https://github.com/iptv-org/iptv/pull/1799) and [#3031](https://github.com/iptv-org/iptv/pull/3031).
 
 ### Do I have to pay to use this playlist?
-No. Also, the maintenance of this service is self-financed.
+No. Also, the maintenance of this service is self-financed. If a stranger asks to pay to access the playlist, we suggest not to follow it.
+
+Based on [#3865](https://github.com/iptv-org/iptv/discussions/3865).
 
 ### Are you planning to include a VOD of TV shows broadcasted on this playlist?
 No. This is not our purpose.
@@ -86,7 +88,7 @@ Please remember that by sharing a link to a FTA channel (or more), you are **ind
 A good example of this would be [Perfect 10 v. Google](https://www.eff.org/fr/cases/perfect-10-v-google). 
 Some [valid takedowns](https://github.com/iptv-org/iptv/issues/6486) do occur when a Pull Request is made to notify us that we should not index their channels.
 
-Based on [#6350](https://github.com/iptv-org/iptv/issues/6350).
+Based on [#7212](https://github.com/iptv-org/iptv/issues/7212).
 
 ### I've created my channel and I want to add it to this playlist. What should I do?
 We are a community initiative and you don't need to pay anything to stay on this playlist. Feel free to create a channel with few resources:
