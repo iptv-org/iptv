@@ -141,7 +141,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/JTBCGolfSports.m3u8
 https://61ff3340258d2.streamlock.net/jtv_live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="KBaduk.kr" status="online",K-Baduk (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/KBaduk.m3u8
-#EXTINF:-1 tvg-id="KBCTV.kr" status="online",KBC 광주방송 (SBS 光州) (1080p)
+#EXTINF:-1 tvg-id="KBCTV.kr" status="blocked",KBC 광주방송 (SBS 光州) (1080p)
 http://119.200.131.11:1935/KBCTV/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KBSLiveCamDokDo.kr" status="online",KBS LiveCam DokDo (540p)
 http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
@@ -161,10 +161,10 @@ https://allanf181.github.io/adaptive-streams/streams/kr/KLeague1.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/KLeague2.m3u8
 #EXTINF:-1 tvg-id="KLeague3.kr" status="online",K League 3 (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/KLeague3.m3u8
+#EXTINF:-1 tvg-id="KNNTV.kr" status="online",SBS KNN (1080p)
+http://220.95.92.160:9981/stream/channelid/1445999617
 #EXTINF:-1 tvg-id="KNNTV.kr" status="online",SBS KNN (450p) [Not 24/7]
 http://211.220.195.200:1935/live/mp4:KnnTV.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="KNNTV.kr" status="error",SBS KNN (1080p)
-http://220.95.92.160:9981/stream/channelid/1445999617
 #EXTINF:-1 tvg-id="KoreaEconomyTV.kr" status="online",Korea Economy TV (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/KoreaEconomyTV.m3u8
 #EXTINF:-1 tvg-id="KPlus.sg" status="online",K+ (Indonesian subtitle) (576p)
@@ -235,7 +235,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/SBSTV.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/ScreenGolfzon.m3u8
 #EXTINF:-1 tvg-id="SkySports.kr" status="online",skySports (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/SkySports.m3u8
-#EXTINF:-1 tvg-id="TBCTV.kr" status="online",TBC SBS (540p)
+#EXTINF:-1 tvg-id="TBCTV.kr" status="blocked",TBC SBS (540p)
 http://221.157.125.239:1935/live/psike/playlist.m3u8
 #EXTINF:-1 tvg-id="TBSTV.kr" status="online",TBS Seoul (720p)
 https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
@@ -259,10 +259,10 @@ http://210.210.155.37/dr9445/h/h20/index.m3u8
 http://210.210.155.35/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="tvNDrama.kr" status="online",tvN DRAMA (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvNDrama.m3u8
-#EXTINF:-1 tvg-id="TVNMovies.hk" status="online",tvN Movies (Indonesian Subtitle) (576p)
-http://210.210.155.37/dr9445/h/h21/index.m3u8
 #EXTINF:-1 tvg-id="TVNMovies.hk" status="error",tvN Movies (Indonesian Subtitle) (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h21/index.m3u8
+#EXTINF:-1 tvg-id="TVNMovies.hk" status="error",tvN Movies (Indonesian Subtitle) (576p)
+http://210.210.155.37/dr9445/h/h21/index.m3u8
 #EXTINF:-1 tvg-id="tvNShow.kr" status="online",tvN SHOW (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvNShow.m3u8
 #EXTINF:-1 tvg-id="tvNStory.kr" status="online",tvN STORY (1080p) [Not 24/7]
@@ -289,6 +289,8 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://slive.sciencetv.kr:1935/science/yslive_20140419_1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",KBS News
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/newskbs/live
 #EXTINF:-1 tvg-id="" status="online",arteTV
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/TheArteTV/live
 #EXTINF:-1 tvg-id="" status="online",JCN TV
