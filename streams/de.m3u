@@ -349,7 +349,7 @@ https://srunserding-lh.akamaihd.net/i/visualradio_ud@197013/master.m3u8
 https://live2weltcms-lh.akamaihd.net/i/Live2WeltCMS_1@444563/master.m3u8
 #EXTINF:-1 tvg-id="WesterwaldTV.de" status="error",Westerwald TV (404p)
 https://sdn-global-live-http-cache.3qsdn.com/2980/amlst:5715-sbr/playlist.m3u8
-#EXTINF:-1 tvg-id="WorldofFreesports.de" status="online",World of Freesports (720p)
+#EXTINF:-1 tvg-id="WorldofFreesports.de" status="timeout",World of Freesports (720p)
 https://a.jsrdn.com/broadcast/ab14783a09/+0000/c.m3u8
 #EXTINF:-1 tvg-id="ZDF.de" status="blocked",ZDF [Geo-blocked]
 https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
@@ -389,15 +389,15 @@ http://livestreams.br.de/i/bralpha_germany@119899/master.m3u8
 https://brlive-lh.akamaihd.net/i/bfsnord_germany@119898/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",ARD-alpha (720p) [Not 24/7]
 https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8
-#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
-http://ott-cdn.ucom.am/s26/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",KiKA [Geo-blocked]
 https://kikageohls.akamaized.net/hls/live/2022693/livetvkika_de/master.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ZDFneo [Geo-blocked]
 https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ZDFinfo [Geo-blocked]
 https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s26/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",hr-fernsehen (1080p)
 https://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",NDR Hamburg (720p)
