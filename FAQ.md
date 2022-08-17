@@ -96,7 +96,7 @@ We are a community initiative and you don't need to pay anything to stay on this
 * A PC with Internet, video editor and recording/broadcasting app under RTMP protocol (e.g. OBS).
 * And a live streaming service with multibitrate (if possible).
 
-After you have your m3u8 link, add your channel information onto the [Database](https://github.com/iptv-org/database) repository, and submit an [issue](https://github.com/iptv-org/iptv/issues/new) to propose it to us.
+After you have your m3u8 link, add your channel information onto the [Database](https://github.com/iptv-org/database) repository, and submit an [issue](https://github.com/iptv-org/iptv/issues/new/choose) to propose it to us.
 
 Note: Please check the fair use (also called "fair dealing" or "copyright exception") situation in your country where it is broadcasted. This point should be important when broadcasting other contents without problems on your TV channel.
 
