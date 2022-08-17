@@ -11,7 +11,7 @@ Basic:
 
 Channels:
 - [Does the channel need to be FTA to be included in the playlists?](#Does-the-channel-need-to-be-FTA-to-be-included-in-the-playlists)
-- [Can I add a FTA channel that is broadcasted in specific cities or countries?](#Can-i-add-a-fta-channel-that-is-broadcasted-in-specific-cities-or-countries]
+- [Can I add a FTA channel that is broadcasted in specific cities or countries?](#Can-i-add-a-fta-channel-that-is-broadcasted-in-specific-cities-or-countries)
 - [Can I add a FTA channel that broadcasts PPV events or pay programming?](#Can-I-add-a-FTA-channel-that-broadcasts-PPV-events-or-pay-programming)
 - [I've created my channel and I want to add it to this playlist. What should I do?](#Ive-created-my-channel-and-i-want-to-add-it-to-this-playlist-what-should-i-do)
 - [Is there any way to add my channel other than via this git repository?](#Is-there-any-way-to-add-my-channel-other-than-via-this-git-repository)
