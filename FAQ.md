@@ -11,7 +11,7 @@ Basic:
 
 Channels:
 - [Does the channel need to be FTA to be included in the playlists?](#Does-the-channel-need-to-be-FTA-to-be-included-in-the-playlists)
-- [Can I add a FTA channel that broadcasts only in its origin country?](#Can-i-add-a-fta-channel-that-broadcasts-only-in-its-origin-country)
+- [Can I add a FTA channel that is broadcasted in specific cities or countries?](#Can-i-add-a-fta-channel-that-is-broadcasted-in-specific-cities-or-countries
 - [Can I add a FTA channel that broadcasts PPV events or pay programming?](#Can-I-add-a-FTA-channel-that-broadcasts-PPV-events-or-pay-programming)
 - [I've created my channel and I want to add it to this playlist. What should I do?](#Ive-created-my-channel-and-i-want-to-add-it-to-this-playlist-what-should-i-do)
 - [Is there any way to add my channel other than via this git repository?](#Is-there-any-way-to-add-my-channel-other-than-via-this-git-repository)
@@ -72,14 +72,14 @@ Based on [#175](https://github.com/iptv-org/iptv/issues/175), [#3290](https://gi
 
 ## Channels
 ### Does the channel need to be publicly accessible to be included in the playlists?
-Yes, we need the links to be publicly accessible like FTA packages (free-to-air), online services or official websites. We recommend tagging [Geo-blocked] if it is only accessible in one or few countries.
+Yes, we need the links to be publicly accessible like FTA packages (free-to-air), online services or official websites. Even if the channel does not want to be broadcasted worldwide for legal reasons, we recommend using the [Geo-blocked] tag for its stream.
 
-Based on [#480](https://github.com/iptv-org/iptv/issues/480) and [#2732](https://github.com/iptv-org/iptv/issues/2732).
+Based on [#480](https://github.com/iptv-org/iptv/issues/480), [#2191](https://github.com/iptv-org/iptv/issues/2191) and [#2732](https://github.com/iptv-org/iptv/issues/2732).
 
-### Can I add a FTA channel that broadcasts only in its origin country?
-Yes. Even if the channel does not want to be broadcasted worldwide for legal reasons, we recommend using the [Geo-blocked] tag for its stream.
+### Can I add a FTA channel that is broadcasted in specific cities or countries?
+Yes. If the channel broadcasted in other cities or countries, please edit its entry onto the [Database](https://github.com/iptv-org/database) repository. It will be added to the corresponding playlists.
 
-Based on  and [#2191](https://github.com/iptv-org/iptv/issues/2191).
+Based on [#6415](https://github.com/iptv-org/iptv/issues/6415).
 
 ### Can I add a FTA channel that broadcasts PPV events or pay programming?
 Maybe, this may change in future answers. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even issue a DMCA takedown. Check the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for more info about specific events, and this [counternotice](https://github.com/github/dmca/blob/3ce1c9402c6b7e46dcbbea6ff866d6a44e75c72a/2020/10/2020-10-08-dfl-counternotice.md) indicating that a DMCA takedown is invalid if only one FTA channel infringes copyright.
