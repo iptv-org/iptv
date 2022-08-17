@@ -152,7 +152,7 @@ You can add multiple streams with a single id (in the "tvg-id" parameter), inste
 ```
 #EXTINF:-1 tvg-id="CCTV3.cn",CCTV-3综艺 (1080p)
 ```
-Based on [#2086](https://github.com/iptv-org/iptv/issues/2086) (countries) and [#6516](https://github.com/iptv-org/iptv/issues/6516) (use of Database).
+Based on [#2086](https://github.com/iptv-org/iptv/issues/2086) (countries), [#3490](https://github.com/iptv-org/iptv/discussions/3490) (duplicated tvg-id) and [#6516](https://github.com/iptv-org/iptv/issues/6516) (use of Database).
 
 ### Why some streams have an empty id?
 Because the stream does not have enough information available. If you appear to know additional data on these, let us know its official name, the language it broadcasts and the country where it originates.
