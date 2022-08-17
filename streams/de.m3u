@@ -71,7 +71,7 @@ https://5889e7d0d6e28.streamlock.net/ev1tv-live/mp4:livestream/playlist.m3u8
 https://5856e1a25f71a.streamlock.net/easycast9-live/mp4:livestreamhd5/playlist.m3u8
 #EXTINF:-1 tvg-id="ERF1.de" status="error",ERF 1
 http://14000-l.z.core.cdn.streamfarm.net/007erfiphonelive/smil:stream_live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ErzTVStollberg.de",Erz-TV Stollberg (576p)
+#EXTINF:-1 tvg-id="ErzTVStollberg.de" status="online",Erz-TV Stollberg (576p)
 https://5acade5fc0c29.streamlock.net/kabeljournal/live2020.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroAlTV.de" status="timeout",EuroAl TV (720p)
 http://5.135.92.131:1935/live/euroAl/playlist.m3u8
@@ -233,7 +233,7 @@ http://62.113.210.250/medienasa-live/punktum_high/master.m3u8
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3u
 #EXTINF:-1 tvg-id="PUNKTum.de" status="online",PUNKTum (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3u8
-#EXTINF:-1 tvg-id="Radio21TV.de" status="online",Radio 21 TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Radio21TV.de" status="blocked",Radio 21 TV (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/22300508/events/6675945/live.m3u8
 #EXTINF:-1 tvg-id="RadioWeserTVBremen.de" status="online",Radio Weser TV Bremen (576p)
 https://5857499ee635b.streamlock.net/radiowesertv-live/mp4:livestreamTV/playlist.m3u8
@@ -303,7 +303,7 @@ http://fs.live.sr.de/i/sr_universal02@107595/master.m3u8
 https://srlive24-lh.akamaihd.net/i/sr_universal02@107595/master.m3u8
 #EXTINF:-1 tvg-id="Studio47.de" status="online",Studio 47 (576p) [Not 24/7]
 https://5852afe96c9bb.streamlock.net/studio47-live/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="SWR3VisualRadio.de",SWR 3 Visual Radio (720p)
+#EXTINF:-1 tvg-id="SWR3VisualRadio.de" status="error",SWR 3 Visual Radio (720p)
 https://swrswr3vrhls-i.akamaihd.net/hls/live/780818/vrswr3/master.m3u8
 #EXTINF:-1 tvg-id="Sylt1.de" status="error",Sylt1 (404p)
 https://5aec29c5dd23b.streamlock.net:8443/sylt1/sylt1_high1.stream/playlist.m3u8
@@ -357,6 +357,8 @@ https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
 https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="" status="online",PunktUM (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/punktum_high/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Ran 1 (1080p)
+http://58bd5b7a98e04.streamlock.net/medienasa-live/ran1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",RFH TV (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/RFH_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",rheinmaintv (720p) [Not 24/7]
@@ -387,6 +389,10 @@ http://livestreams.br.de/i/bralpha_germany@119899/master.m3u8
 https://brlive-lh.akamaihd.net/i/bfsnord_germany@119898/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",ARD-alpha (720p) [Not 24/7]
 https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",Motorvision (576p) [Geo-blocked]
+http://210.210.155.35/uq2663/h/h09/index.m3u8
+#EXTINF:-1 tvg-id="" status="online",Motorvision (576p)
+http://210.210.155.37/uq2663/h/h09/index.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s26/index.m3u8
@@ -414,8 +420,6 @@ https://serve-first.folxplay.tv/folx/ch-2/master.m3u8
 https://serve-first.folxplay.tv/folx/ch-5/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",WDR Koeln (720p)
 https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8
-#EXTINF:-1 tvg-id="" status="error",Ran 1 (1080p)
-http://58bd5b7a98e04.streamlock.net/medienasa-live/ran1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",ÇİRA TV (480p) [Not 24/7]
 http://163.172.39.215:25461/line/C4@!a3a1@!w72A/25
 #EXTINF:-1 tvg-id="" status="error",ARTI TV (480p) [Not 24/7]
@@ -430,10 +434,6 @@ http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/139.m3u8
 http://176.10.117.18:8000/play/a00f/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",ARTI TV (1080p) [Not 24/7]
 http://176.10.117.18:8000/play/a002/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Motorvision (576p) [Geo-blocked]
-http://210.210.155.35/uq2663/h/h09/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Motorvision (576p)
-http://210.210.155.37/uq2663/h/h09/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",BR Fernsehen Süd (720p) [Geo-blocked]
 http://livestreams.br.de/i/bfssued_germany@119890/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",SÃ¼dtirol TV (720p)

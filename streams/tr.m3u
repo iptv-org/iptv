@@ -46,7 +46,7 @@ https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8
 http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="CanTV.tr" status="error",Can TV (720p) [Not 24/7]
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/105.m3u8
-#EXTINF:-1 tvg-id="CayTV.tr" status="online",Cay TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CayTV.tr" status="error",Cay TV (720p) [Not 24/7]
 http://stream2.taksimbilisim.com:1935/caytv/bant1/CAYTV.m3u8
 #EXTINF:-1 tvg-id="CekmekoyTV.tr" status="online",Cekmeköy TV (1080p)
 https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv/playlist.m3u8
@@ -81,7 +81,7 @@ https://5be5d840359c6.streamlock.net/egeaturktv/egeaturktv/playlist.m3u8
 https://5be5d840359c6.streamlock.net/elmas67tv/elmas67tv/chunklist.m3u8
 #EXTINF:-1 tvg-id="EmTV.tr" status="online",Em TV (486p)
 https://cdn.yayin.com.tr/TVEM/TVEM/playlist.m3u8
-#EXTINF:-1 tvg-id="ErtSahTV.tr" status="online",Ert Sah TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ErtSahTV.tr" status="error",Ert Sah TV (720p) [Not 24/7]
 http://win20.yayin.com.tr/ertsahtv/ertsahtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ErzurumWebTV.tr" status="online",Erzurum Web TV (720p)
 https://win29.yayin.com.tr/erzurumwebtv/erzurumwebtv/playlist.m3u8
@@ -91,7 +91,7 @@ https://broadcasttr.com:446/manisaetv/bant1/playlist.m3u8
 https://ssl4.radyotvonline.com/e90tv/e90tvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroGenc.tr" status="error",Euro Genc (1080p) [Not 24/7]
 https://dcunilive258-lh.akamaihd.net/i/dclive_1@126972/master.m3u8
-#EXTINF:-1 tvg-id="FenerbahceTV.tr" status="error",Fenerbahçe TV (FBTV) (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="FenerbahceTV.tr" status="online",Fenerbahçe TV (FBTV) (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x21oo10
 #EXTINF:-1 tvg-id="FinansTurkTV.tr" status="timeout",Finans Turk TV (720p)
 http://live.arkumedia.com:1935/finansturktv/finansturktv/playlist.m3u8
@@ -166,7 +166,7 @@ http://yayin3.canlitv.com:1935/live/kanal38/playlist.m3u8
 https://waw2.artiyerelmedya.net/kanal68/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalAvrupa.tr" status="online",Kanal Avrupa (1080p) [Not 24/7]
 http://51.15.2.151/hls/kanalavrupa.m3u8
-#EXTINF:-1 tvg-id="KanalB.tr" status="error",Kanal B (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="KanalB.tr" status="online",Kanal B (480p) [Not 24/7]
 http://212.174.58.161/hls-live/livepkgr/_definst_/liveevent/kanalb.m3u8
 #EXTINF:-1 tvg-id="KanalD.tr" status="error",Kanal D (480p) [Not 24/7]
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/66.m3u8
@@ -232,7 +232,7 @@ http://waw1.artiyerelmedya.net:1935/olayturk/bant1/playlist.m3u8
 https://waw2.artiyerelmedya.net/olayturk/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="On4TV.tr" status="error",On4 TV (1080p) [Not 24/7]
 http://yayin.netradyom.com:1935/live/on4/playlist.m3u8
-#EXTINF:-1 tvg-id="OncuTV.tr" status="online",Öncü TV (1024p) [Not 24/7]
+#EXTINF:-1 tvg-id="OncuTV.tr" status="error",Öncü TV (1024p) [Not 24/7]
 https://broadcasttr.com:446/oncurtv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="OnMedyaTV.tr" status="timeout",ON Medya Haber (720p) [Geo-blocked]
 http://live.arkumedia.com:1935/marmaratv/marmaratv/playlist.m3u8
@@ -379,6 +379,8 @@ https://59cba4d34b678.streamlock.net/live/vuslattv/playlist.m3u8
 https://waw2.artiyerelmedya.net/vuslattv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",KANAL 58 (720p) [Not 24/7]
 https://broadcasttr.com:446/kanal58/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",tv100 (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
 #EXTINF:-1 tvg-id="" status="online",TRT Diyanet (1080p)
 https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Er TV (720p) [Geo-blocked]
@@ -425,8 +427,6 @@ http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/107.m3u8
 http://176.10.117.18:8000/play/a004/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",CRI Türk Belgesel (480p)
 http://cri.aa.net.tr:1935/belgesel/belgesel/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",tv100 (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
 #EXTINF:-1 tvg-id="" status="error",tv100 Ekonomi (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=32enbX7XKnw
 #EXTINF:-1 tvg-id="" status="error",Genç TV (720p) [Not 24/7]
