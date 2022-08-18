@@ -53,7 +53,7 @@ Based on [#2438](https://github.com/iptv-org/iptv/issues/2438) and [#4537](https
 ### Is it possible to view channels directly from the main website?
 No, to avoid possible abuse of the service.
 
-Based on [https://github.com/iptv-org/iptv/issues/1002](https://github.com/iptv-org/iptv/issues/1002).
+Based on [#1002](https://github.com/iptv-org/iptv/issues/1002) and [#7509](https://github.com/iptv-org/iptv/discussions/7509).
 
 ### Why don't we show NSFW channels in most playlists?
 NSFW content are not suitable for the main public. To avoid issues with these kind of programmings, we've created a separate NSFW playlist available for everyone. If you want to see this type of channel, please use the NSFW playlist.
