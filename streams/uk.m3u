@@ -283,8 +283,10 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/Khoda
 https://csm-e-stv.tls1.yospace.com/csm/live/203444271.m3u8
 #EXTINF:-1 tvg-id="GarshomTV.uk" status="online",Garshom TV (360p) [Not 24/7]
 http://og2qd3aal7an-hls-live.5centscdn.com/garshomtv/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="GBNews.uk" status="error",GB News (1080p)
-https://live-gbnews.simplestreamcdn.com/gbnews/gbnews/bitrate1.isml/live.m3u8
+#EXTINF:-1 tvg-id="GBNews.uk" status="online",GB News (1080p)
+https://live-gbnews-ssai.simplestreamcdn.com/v1/master/82267e84b9e5053b3fd0ade12cb1a146df74169a/gbnews-live/live.m3u8
+#EXTINF:-1 tvg-id="GBNews.uk" status="online",GB News (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/GBNewsOnline/live
 #EXTINF:-1 tvg-id="GemsTV.uk" status="online",Gems TV (360p)
 http://57d6b85685bb8.streamlock.net:1935/abrgemporiaukgfx/livestream_360p/index.m3u8
 #EXTINF:-1 tvg-id="GodTVUK.uk" status="error",God TV US (720p)
@@ -377,6 +379,10 @@ http://45.76.186.114:8080/hls/noortv.m3u8
 https://live.smartmediahouse.tv:8443/hls/ch1.m3u8
 #EXTINF:-1 tvg-id="PBSAmerica.uk" status="error",PBS America (720p)
 https://uktv.vercel.app/pbsamerica.m3u8
+#EXTINF:-1 tvg-id="PopMax.uk" status="online",POP Max (576p)
+https://live-sonybebanjo.simplestreamcdn.com/live/popmax/bitrate1.isml/live.m3u8
+#EXTINF:-1 tvg-id="PopMax.uk" status="online",POP Max (576p)
+https://live-sonybebanjo.simplestreamcdn.com/live/popmax/bitrate1.isml/live.mpd
 #EXTINF:-1 tvg-id="QuestHDUK.uk" status="error",Quest HD UK (1080p)
 https://uktv.vercel.app/quest.mpd
 #EXTINF:-1 tvg-id="S4C.uk" status="blocked",S4C (1080p) [Geo-blocked]
