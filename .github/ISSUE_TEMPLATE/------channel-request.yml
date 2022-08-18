@@ -7,32 +7,20 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please fill out the issue template as much as you can so we could efficiently process your request
+        Please fill out the form as much as you can so we could efficiently process your request
 
   - type: input
     attributes:
-      label: Channel Name
-      description: Full name of the channel. It is recommended to use the name listed on [lyngsat](https://www.lyngsat.com/search.html) or [wikipedia](https://www.wikipedia.org/) if possible.
-      placeholder: 'BBC America East'
+      label: Channel ID
+      description: Unique channel ID from [iptv-org.github.io](https://iptv-org.github.io/).
+      placeholder: 'BBCAmericaEast.us'
     validations:
       required: true
 
   - type: input
     attributes:
-      label: Channel ID
-      description: Unique channel ID from iptv-org/database. A complete list of supported channels can be found on [iptv-org.github.io](https://iptv-org.github.io/).
-      placeholder: 'BBCAmericaEast.us'
-
-  - type: input
-    attributes:
-      label: Website
-      description: Where have you seen the broadcast of this channel?
-      placeholder: 'https://example.com/live-tv'
-
-  - type: input
-    attributes:
       label: Stream URL
-      description: Link to a stream in m3u8 format
+      description: Link to the stream (if you have one)
       placeholder: 'https://example.com/playlist.m3u8'
 
   - type: textarea
