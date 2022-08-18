@@ -68,7 +68,7 @@ Based on [#3865](https://github.com/iptv-org/iptv/discussions/3865).
 ### Are you planning to include a VOD of TV shows broadcasted on this playlist?
 No. This is not our purpose.
 
-Based on [#175](https://github.com/iptv-org/iptv/issues/175), [#3290](https://github.com/iptv-org/iptv/discussions/3290), [#7852](https://github.com/iptv-org/iptv/discussions/7852).
+Based on [#175](https://github.com/iptv-org/iptv/issues/175), [#3290](https://github.com/iptv-org/iptv/discussions/3290), [#5466](https://github.com/iptv-org/iptv/issues/5466) and [#7852](https://github.com/iptv-org/iptv/discussions/7852).
 
 ## Channels
 ### Does the channel need to be publicly accessible to be included in the playlists?
