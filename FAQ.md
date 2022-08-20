@@ -103,6 +103,8 @@ Note: Please check the fair use (also called "fair dealing" or "copyright except
 ### Is there any way to add my channel other than via this git repository?
 No, there is no such option.
 
+Based on [#2392](https://github.com/iptv-org/iptv/issues/2392).
+
 ## Technical
 ### Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?
 An adaptive playlist is a m3u8 file that contains certain informations: the bandwidth, the quality, the type of codec used to read the channel. The player then reads the channel playlist based on your bandwidth and screen (hence the name "adaptive"). This permits you to watch your channel on perfect conditions.
