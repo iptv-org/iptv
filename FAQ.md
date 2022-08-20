@@ -74,7 +74,7 @@ Based on [#175](https://github.com/iptv-org/iptv/issues/175), [#3290](https://gi
 ### Does the channel need to be publicly accessible to be included in the playlists?
 Yes, we need the links to be publicly accessible like FTA packages (free-to-air), online services or official websites. Even if the channel does not want to be broadcasted worldwide for legal reasons, we recommend using the [Geo-blocked] tag for its stream.
 
-Based on [#480](https://github.com/iptv-org/iptv/issues/480), [#2191](https://github.com/iptv-org/iptv/issues/2191) and [#2732](https://github.com/iptv-org/iptv/issues/2732).
+Based on [#480](https://github.com/iptv-org/iptv/issues/480), [#2191](https://github.com/iptv-org/iptv/issues/2191), [#2732](https://github.com/iptv-org/iptv/issues/2732) and [#6558](https://github.com/iptv-org/iptv/issues/6558) (example of Geo-blocked channel).
 
 ### Can I add a FTA channel that is broadcasted in specific cities or countries?
 Yes. If the channel broadcasted in other cities or countries, please edit its entry onto the [Database](https://github.com/iptv-org/database) repository. It will be added to the corresponding playlists.
