@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="DjakTV.rs" status="online",Djak TV (720p)
 https://srv1.adriatelekom.com/DjakTV/index.m3u8
-#EXTINF:-1 tvg-id="KurirTV.rs",Kurir TV (360p)
+#EXTINF:-1 tvg-id="KurirTV.rs" status="online",Kurir TV (360p)
 https://kurir-tv.haste-cdn.net/providus/live2805.m3u8
 #EXTINF:-1 tvg-id="MarsTV.rs" status="error",Marš TV (576p) [Not 24/7]
 http://cdn.dovecher.tv:8081/live/marsh/chunks.m3u8
@@ -63,7 +63,7 @@ http://109.105.201.198/PINKZABAVA/playlist.m3u8
 https://live.rednet.rs/providus/redtv_multi.m3u8
 #EXTINF:-1 tvg-id="RTV1.rs" status="online",RTV 1 (576p) [Not 24/7]
 mmsh://212.200.255.151/rtv1
-#EXTINF:-1 tvg-id="RTV1.rs",RTV 1 (576p)
+#EXTINF:-1 tvg-id="RTV1.rs" status="timeout",RTV 1 (576p)
 rtsp://212.200.255.151/rtv1
 #EXTINF:-1 tvg-id="RTV2.rs" status="online",RTV 2 (576p) [Not 24/7]
 mmsh://212.200.255.151/rtv2
@@ -77,9 +77,9 @@ https://rtvnp.rs/hls/rtvnp.m3u8
 https://srv1.adriatelekom.com/SuperSatTV/index.m3u8
 #EXTINF:-1 tvg-id="TVBelleAmie.rs" status="timeout",TV Belle Amie (540p) [Not 24/7]
 http://92.60.238.10:1935/live/belleamie/playlist.m3u8
-#EXTINF:-1 tvg-id="TVDugaPlus.rs" status="error",TV Duga Plus (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVDugaPlus.rs" status="online",TV Duga Plus (480p) [Not 24/7]
 http://109.92.29.10:1935/tvduga/tvduga/playlist.m3u8
-#EXTINF:-1 tvg-id="TVHram.rs" status="online",TV Hram (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVHram.rs" status="error",TV Hram (576p) [Not 24/7]
 https://vod1.laki.eu/live/hram/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",RTV AS (576p)
 https://srv1.adriatelekom.com/TVAS/index.m3u8
