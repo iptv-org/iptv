@@ -41,9 +41,9 @@ Some TV stations have a maximum of simultaneous users. So if this stream does no
 Based on [#6791](https://github.com/iptv-org/iptv/discussions/6791).
 
 ### I have a cable service and I want those channels to be on this IPTV. Is that possible?
-No. This playlist does not replace traditional cable, because this playlist can't include exclusive channels that may not be available on free-to-air. In other words, you will not have all the channels in the world. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
+No. This playlist does not replace traditional cable, a pay service, because this playlist can't include exclusive channels that may not be available on free-to-air. In other words, you will not have all the channels in the world. We recommend contacting your cable provider to offer legal alternatives to this service or visit the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository for find other providers.
 
-Based on [#7205](https://github.com/iptv-org/iptv/issues/7205) and [#7914](https://github.com/iptv-org/iptv/discussions/7914).
+Based on [#7205](https://github.com/iptv-org/iptv/issues/7205), [#7914](https://github.com/iptv-org/iptv/discussions/7914) and [#8102](https://github.com/iptv-org/iptv/discussions/8102).
 
 ### Does the playlist have a channel guide?
 Yes, because an id of each channel is used to link to program guide. However, not all channels have their EPG available. See [EPG](https://github.com/iptv-org/epg) for more info. Please note that the guide is not perfect and some channels (like international feeds) may interrupt programming without you knowing.
