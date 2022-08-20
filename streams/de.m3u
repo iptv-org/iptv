@@ -268,9 +268,9 @@ https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
 #EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
-http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
-#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
 http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
+#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
+http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RONTV.de" status="error",RON TV (1080p)
 https://ron-i.akamaihd.net/hls/live/523496/ron/master.m3u8
 #EXTINF:-1 tvg-id="RTLWest.de" status="error",RTL West (540p)
@@ -389,10 +389,12 @@ http://livestreams.br.de/i/bralpha_germany@119899/master.m3u8
 https://brlive-lh.akamaihd.net/i/bfsnord_germany@119898/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",ARD-alpha (720p) [Not 24/7]
 https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8
+#EXTINF:-1 tvg-id="" status="online",Motorvision (576p)
+http://210.210.155.37/uq2663/h/h09/index.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s26/index.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",KiKA [Geo-blocked]
+#EXTINF:-1 tvg-id="KIKA.de" status="blocked",KiKA [Geo-blocked]
 https://kikageohls.akamaized.net/hls/live/2022693/livetvkika_de/master.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ZDFneo [Geo-blocked]
 https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
@@ -432,8 +434,6 @@ http://176.10.117.18:8000/play/a00f/index.m3u8
 http://176.10.117.18:8000/play/a002/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Motorvision (576p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h09/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Motorvision (576p)
-http://210.210.155.37/uq2663/h/h09/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",BR Fernsehen Süd (720p) [Geo-blocked]
 http://livestreams.br.de/i/bfssued_germany@119890/master.m3u8
 #EXTINF:-1 tvg-id="" status="error",SÃ¼dtirol TV (720p)
