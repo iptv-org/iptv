@@ -136,12 +136,12 @@ https://iptv.azlinux.fr/?url=https://www.dailymotion.com/video/x2lefik
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="error",M6 Music (1080p)
 http://185.234.217.27:8002/play/a03d/index.m3u8
-#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
 http://tv.mondeduloisir.fr:1935/tixtv/smil:web.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Mezzo.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Mezzo (480p)
+#EXTINF:-1 tvg-id="Mezzo.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Mezzo (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s35/index.m3u8
 #EXTINF:-1 tvg-id="NancyWebTV.fr" status="online",Nancy Web TV (394p) [Not 24/7]
@@ -156,23 +156,23 @@ http://51.210.199.10/hls/stream.m3u8
 http://51.210.199.15/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaClassic.fr" status="error",Persiana Classic (720p) [Not 24/7]
 http://51.210.199.26/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaComedy.fr" status="online",Persiana Comedy (720p)
+#EXTINF:-1 tvg-id="PersianaComedy.fr" status="error",Persiana Comedy (720p)
 http://51.210.199.27/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaDocumentary.fr" status="online",Persiana Documentary (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PersianaDocumentary.fr" status="error",Persiana Documentary (720p) [Not 24/7]
 http://51.210.199.23/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaFamily.fr" status="online",Persiana Family (720p)
 http://51.210.199.19/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaFamilyPlus.fr" status="timeout",Persiana Family Plus (720p) [Not 24/7]
 http://51.210.199.13/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaGameTech.fr" status="online",Persiana Game & Tech (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PersianaGameTech.fr" status="error",Persiana Game & Tech (720p) [Not 24/7]
 http://51.210.199.25/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaIranian.fr" status="online",Persiana Iranian (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PersianaIranian.fr" status="error",Persiana Iranian (720p) [Not 24/7]
 http://51.210.199.22/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaJunior.fr" status="online",Persiana Junior (720p)
 http://51.210.199.18/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaKorea.fr" status="online",Persiana Korea (720p)
 http://51.210.199.14/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PersianaMusic.fr" status="online",Persiana Music (720p)
+#EXTINF:-1 tvg-id="PersianaMusic.fr" status="error",Persiana Music (720p)
 http://51.210.199.24/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaNostalgia.fr" status="online",Persiana Nostalgia (720p)
 http://51.210.199.20/hls/stream.m3u8
@@ -206,15 +206,15 @@ https://shls-tiji-tv-prod-dub.shahid.net/out/v1/ee05878a88474f408ff04495d44cc249
 http://188.40.68.167/russia/tiji/playlist.m3u8
 #EXTINF:-1 tvg-id="TMC.fr" status="online",TMC (720p)
 https://s13.tntendirect.com/tmc/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="online",TV5 Monde Asie (576p)
-http://210.210.155.37/dr9445/s/s24/index.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="error",TV5 Monde Asie (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="online",TV5 Monde Asie (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/s/s24/index.m3u8
+#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="error",TV5 Monde Asie (576p)
+http://210.210.155.37/dr9445/s/s24/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877-b/v3plusinfo247hls/master.m3u8
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="error",TV5 Monde Europe (1080p)
 http://v3plusinfo247hls-i.akamaihd.net/hls/live/218877/v3plusinfo247hls/master.m3u8
-#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="error",TV5 Monde Style HD (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="timeout",TV5 Monde Style HD (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h01/index.m3u8
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="online",TV7 Bordeaux (720p)
 http://live.digiteka.com/1/RVNZMmJtUURmd09I/U0dNU0tk/hls/live/playlist.m3u8
@@ -254,13 +254,13 @@ http://entertainment.ashttp9.visionip.tv/live/visiontvuk-entertainment-edgytv-hs
 https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",viàOccitanie (540p) [Not 24/7]
 https://streamer01.myvideoplace.tv/streamer02/hls/MDS_VIA_PAD_301117.m3u8
-#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
-http://ott-cdn.ucom.am/s89/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Persiana Varzesh (720p) [Not 24/7]
 http://51.210.199.16/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Trace Latina
 http://185.234.217.27:8002/play/a02f/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s89/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Dreamsee Télévision (1080p) [Not 24/7]
 http://cdnapi.kaltura.com/p/2748081/sp/274808100/playManifest/entryId/1_gxkyk6lt/format/applehttp/protocol/http/a/a.m3u8
 #EXTINF:-1 tvg-id="" status="error",viàMATÉLÉ (540p) [Not 24/7]
