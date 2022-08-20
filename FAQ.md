@@ -51,9 +51,9 @@ Yes, because an id of each channel is used to link to program guide because they
 Based on [#2438](https://github.com/iptv-org/iptv/issues/2438), [#4537](https://github.com/iptv-org/iptv/discussions/4537) and [#7043](https://github.com/iptv-org/iptv/discussions/7043).
 
 ### Is it possible to view channels directly from the main website?
-No, to avoid possible abuse of the service.
+No, you will only see information about active and inactive transmissions of channels.
 
-Based on [#1002](https://github.com/iptv-org/iptv/issues/1002) and [#7509](https://github.com/iptv-org/iptv/discussions/7509).
+Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://github.com/iptv-org/iptv/issues/7415), and [#7509](https://github.com/iptv-org/iptv/discussions/7509).
 
 ### Why don't we show NSFW channels in most playlists?
 NSFW content are not suitable for the main public. To avoid issues with these kind of programmings, we've created a separate NSFW playlist available for everyone. If you want to see this type of channel, please use the NSFW playlist.
@@ -127,7 +127,7 @@ Based on [#5236](https://github.com/iptv-org/iptv/pull/5236) and [#5401](https:/
 ### Is it possible to add streams from Youtube, Dailymotion or Twitch?
 Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content.
 
-Based on [#4112](https://github.com/iptv-org/iptv/discussions/4412).
+Based on [#4112](https://github.com/iptv-org/iptv/discussions/4412) and [#4456](https://github.com/iptv-org/iptv/discussions/4456).
 
 ### Is it possible to add audio-only streams, like FM radio?
 No. Exceptions are the visual radios, in which a video and audio are shown at the same time. A WIP repository made by one member of iptv-org, [LaneSh4d0w](https://github.com/LaneSh4d0w) aims to collect radio streams, on the [IPRD](https://github.com/LaneSh4d0w/IPRD) repository.
