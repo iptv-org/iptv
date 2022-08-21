@@ -63,6 +63,10 @@ class Database {
     return this.db.find(query)
   }
 
+  all() {
+    return this.find({})
+  }
+
   remove(query, options) {
     return this.db.remove(query, options)
   }
