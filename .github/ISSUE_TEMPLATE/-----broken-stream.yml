@@ -11,9 +11,9 @@ body:
 
   - type: input
     attributes:
-      label: Stream Title
-      description: Please use the exact title, as in how it appears in the playlist.
-      placeholder: 'BBC America East (720p) [Geo-blocked]'
+      label: Broken Link
+      description: Please specify the broken link from a playlist
+      placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
     validations:
       required: true
 
@@ -35,7 +35,7 @@ body:
   - type: input
     attributes:
       label: Possible Replacement
-      placeholder: 'ex. https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
+      placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
 
   - type: textarea
     attributes:
