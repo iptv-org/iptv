@@ -28,6 +28,7 @@ async function findStreams() {
   logger.info(`looking for streams...`)
 
   await api.channels.load()
+  await api.streams.load()
   await db.streams.load()
 
   const streams = []
@@ -39,6 +40,7 @@ async function findStreams() {
 
       const stream = store.create()
       const channel = await api.channels.find({ id: item.tvg.id })
+      const cached = (await api.streams.find({ url: item.url })) || {}
 
       stream.set('channel', { channel: channel ? channel.id : null })
       stream.set('title', { title: item.name })
@@ -46,6 +48,14 @@ async function findStreams() {
       stream.set('url', { url: item.url })
       stream.set('http_referrer', { http_referrer: item.http.referrer })
       stream.set('user_agent', { user_agent: item.http['user-agent'] })
+      stream.set('status', { status: cached.status })
+      stream.set('width', { width: cached.width })
+      stream.set('height', { height: cached.height })
+      stream.set('bitrate', { bitrate: cached.bitrate })
+      stream.set('frame_rate', { frame_rate: cached.frame_rate })
+      stream.set('added_at', { added_at: cached.added_at })
+      stream.set('updated_at', { updated_at: cached.updated_at })
+      stream.set('checked_at', { checked_at: cached.checked_at })
 
       streams.push(stream)
     }
