@@ -6,8 +6,6 @@ https://bl.uma.media/live/317805/HLS/4614144_3,2883584_2,1153024_1/1613019214/37
 #EXTINF:-1 tvg-id="5Kanal.ru" status="online" user-agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178",Пятый Канал (540p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178
 https://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8
-#EXTINF:-1 tvg-id="8KanalKrym.ru" status="error",8 канал Крым (576p)
-http://176.99.110.252/stream8/playlist.m3u8
 #EXTINF:-1 tvg-id="9Volna.ru" status="online",9 Волна (576p) [Geo-blocked]
 http://cdn-01.bonus-tv.ru:8080/9volna/playlist.m3u8
 #EXTINF:-1 tvg-id="9Volna.ru" status="blocked",9 Волна (720p) [Geo-blocked]
@@ -23,16 +21,14 @@ https://video1.in-news.ru/360/index.m3u8
 #EXTINF:-1 tvg-id="A1.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",A1 (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s45/index.m3u8
-#EXTINF:-1 tvg-id="A2.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",A2 (480p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
-http://ott-cdn.ucom.am/s33/index.m3u8
 #EXTINF:-1 tvg-id="A2.ru" status="online",A2 (576p) [Not 24/7]
 https://sc.id-tv.kz/A2.m3u8
+#EXTINF:-1 tvg-id="A2.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",A2 (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s33/index.m3u8
 #EXTINF:-1 tvg-id="Afontovo.ru" status="online",Афонтово (Красноярск) (1080p) [Geo-blocked]
 http://xstream.afontovo.ru/afontovo_ya.m3u8
-#EXTINF:-1 tvg-id="AkudjiTV.ru" status="error",Akudji TV (720p)
-https://hls.goodgame.ru/hls/5346.m3u8
-#EXTINF:-1 tvg-id="AmediaHit.ru" status="timeout",Amedia Hit (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="AmediaHit.ru" status="error",Amedia Hit (1080p) [Not 24/7]
 https://sc.id-tv.kz/amedia_hit_hd.m3u8
 #EXTINF:-1 tvg-id="AmediaPremium.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Amedia Premium (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
@@ -52,7 +48,7 @@ https://streaming.astrakhan.ru/astrakhan24/playlist.m3u8
 http://83.234.104.142/astrakhan24hd/playlist.m3u8
 #EXTINF:-1 tvg-id="Astrahan24.ru" status="blocked",Астрахань 24 (720p) [Geo-blocked]
 https://strm.yandex.ru/kal/astrahan24/astrahan240.m3u8
-#EXTINF:-1 tvg-id="AstrahanRuSport.ru" status="error",Астрахань.Ru Sport (720p)
+#EXTINF:-1 tvg-id="AstrahanRuSport.ru" status="online",Астрахань.Ru Sport (720p)
 https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
 #EXTINF:-1 tvg-id="AstrahanRuTV.ru" status="online",Астрахань.Ru TV (480p)
 https://streaming.astrakhan.ru/astrakhanrulivehd/playlist.m3u8
@@ -74,7 +70,7 @@ http://belnovosti.cdn.easyhoster.ru:8080/stream.m3u8
 http://live2.mediacdn.ru/sr1/tro/playlist.m3u8
 #EXTINF:-1 tvg-id="BigAsia.ru" status="blocked",Большая Азия (1080p) [Geo-blocked]
 https://strm.yandex.ru/kal/bigasia/bigasia0.m3u8
-#EXTINF:-1 tvg-id="Bober.ru" status="timeout",Бобер (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Bober.ru" status="online",Бобер (576p) [Not 24/7]
 https://sc.id-tv.kz/bober.m3u8
 #EXTINF:-1 tvg-id="BollywoodHDRussia.ru" status="online",Bollywood HD (1080p) [Not 24/7]
 https://sc.id-tv.kz/bollywood_hd.m3u8
@@ -109,11 +105,11 @@ http://ott-cdn.ucom.am/s88/index.m3u8
 http://50.7.92.90/Dom_kino/playlist.m3u8
 #EXTINF:-1 tvg-id="DomKinoPremium.ru" status="online",Дом Кино Премиум (1080p) [Not 24/7]
 https://sc.id-tv.kz/domkino_hd.m3u8
+#EXTINF:-1 tvg-id="Dorama.uk" status="online",Дорама (1080p) [Not 24/7]
+https://sc.id-tv.kz/dorama_hd.m3u8
 #EXTINF:-1 tvg-id="Dorama.uk" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Дорама (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s95/index.m3u8
-#EXTINF:-1 tvg-id="Dorama.uk" status="timeout",Дорама (1080p) [Not 24/7]
-https://sc.id-tv.kz/dorama_hd.m3u8
 #EXTINF:-1 tvg-id="Dozhd.ru" status="blocked",Дождь (1080p) [Geo-blocked]
 https://strm.yandex.ru/kal/tvrain/tvrain0.m3u8
 #EXTINF:-1 tvg-id="EhoTV.ru" status="online",Эхо TV (Рязань) (576p) [Not 24/7]
@@ -167,11 +163,9 @@ https://edge2.uk.kab.tv/live/tvrus-rus-medium/playlist.m3u8
 #EXTINF:-1 tvg-id="Karusel.ru" status="online" user-agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178",Карусель (540p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178
 https://zabava-htlive.cdn.ngenix.net/hls/CH_KARUSEL/variant.m3u8
-#EXTINF:-1 tvg-id="Karusel.ru" status="error",Карусель (576p)
-http://91.185.3.218:4000/play/604
 #EXTINF:-1 tvg-id="Kavkaz24.ru" status="blocked",Кавказ 24 (720p) [Geo-blocked]
 https://strm.yandex.ru/kal/kavkaz24_supres/kavkaz24_supres0.m3u8
-#EXTINF:-1 tvg-id="Kinohit.ru" status="timeout",Кинохит (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kinohit.ru" status="online",Кинохит (404p) [Not 24/7]
 https://sc.id-tv.kz/Kinohit_hd.m3u8
 #EXTINF:-1 tvg-id="Kinokomedija.ru" status="online",Кинокомедия (360p) [Not 24/7]
 https://sc.id-tv.kz/Kinokomediya_hd.m3u8
@@ -195,12 +189,8 @@ http://cdn-01.bonus-tv.ru/konnyimir/playlist.m3u8
 https://kprf-htlive.cdn.ngenix.net/live/stream_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KrikTV.ru" status="blocked",Крик-ТВ (576p) [Geo-blocked]
 https://strm.yandex.ru/kal/krik_tv/krik_tv0.m3u8
-#EXTINF:-1 tvg-id="KRTV.ru" status="error",Красногорск ТВ (480p) [Not 24/7]
-http://live-krtv.cdnvideo.ru/krtv/krtv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="Krym24.ru" status="error",Крым 24 (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="Krym24.ru" status="online",Крым 24 (540p) [Not 24/7]
 http://mr2live.1tvcrimea.ru:8080/24tvcrimea.m3u8
-#EXTINF:-1 tvg-id="Kuban24Orbita.ru" status="error",Кубань 24 Орбита (576p)
-https://stream.kuban24.tv:1500/hls/stream.m3u8
 #EXTINF:-1 tvg-id="KuraiTV.ru" status="online",Курай (576p)
 https://bsttv.bonus-tv.ru/cdn/kurai/playlist.m3u8
 #EXTINF:-1 tvg-id="Kuzbass1HD.ru" status="online",Кузбасс 1 (1080p) [Not 24/7]
@@ -216,16 +206,8 @@ http://46.46.143.222:1935/live/mp4:ldpr.stream_480p/playlist.m3u8
 https://rt-nw-spb-htlive.cdn.ngenix.net/hls/CH_R02_LENTVSD/variant.m3u8
 #EXTINF:-1 tvg-id="Leomax24.ru" status="online",Leomax 24 (1080p)
 https://tvshops.bonus-tv.ru/cdn/shop24/playlist.m3u8
-#EXTINF:-1 tvg-id="LeomaxPlus.ru" status="error",Leomax Plus (576p)
-https://tvshops.bonus-tv.ru/cdn/discount/playlist.m3u8
 #EXTINF:-1 tvg-id="Lipeckoevremya.ru" status="online",Липецкое время (576p) [Not 24/7]
 http://serv25.vintera.tv:8081/liptime/liptime/playlist.m3u8
-#EXTINF:-1 tvg-id="LitklubTVProza.ru" status="error",ЛитКлуб ТВ Проза (480p)
-http://hls-rossp.cdnvideo.ru/hls/5ace67f0dc96bf0a90d8a2b7/playlist.m3u8
-#EXTINF:-1 tvg-id="LitklubTVSlovo.ru" status="error",ЛитКлуб ТВ Слово (720p)
-http://hls-rossp.cdnvideo.ru/hls/5ace6814e563f22e4ddc1f44/playlist.m3u8
-#EXTINF:-1 tvg-id="LitklubTVStihi.ru" status="error",ЛитКлуб ТВ Стихи (360p)
-http://hls-rossp.cdnvideo.ru/hls/5aac88ffdc96bf05a7f78899/playlist.m3u8
 #EXTINF:-1 tvg-id="Luch.ru" status="online",Луч (Пуровск) (720p) [Not 24/7]
 https://live.trk-luch.ru/hls/live.m3u8
 #EXTINF:-1 tvg-id="LuxuryHD.ru" status="online",Luxury (1080p)
@@ -254,10 +236,10 @@ http://188.40.68.167/russia/mir24/playlist.m3u8
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="MirBelogoryaTV.ru" status="online",Мир Белогорья (720p) [Geo-blocked]
 http://live-mirbelogorya.cdnvideo.ru/mirbelogorya/mirbelogorya1.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="MirBelogoryaTV.ru" status="online",Мир Белагорья (720p) [Geo-blocked]
+http://mirbelogorya.ru:8080/mirbelogorya/index.m3u8
 #EXTINF:-1 tvg-id="MirBelogoryaTV.ru" status="online",Мир Белогорья (720p) [Geo-blocked]
 http://stream.tvbelgorod.ru:8080/mirbelogorya/index.m3u8
-#EXTINF:-1 tvg-id="MirBelogoryaTV.ru" status="timeout",Мир Белагорья (720p) [Geo-blocked]
-http://mirbelogorya.ru:8080/mirbelogorya/index.m3u8
 #EXTINF:-1 tvg-id="MirPlus2.ru" status="online",Мир +2 (540p) [Not 24/7]
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv2_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="MirPlus3.ru" status="online",Мir +3 (512p) [Not 24/7]
@@ -286,10 +268,6 @@ https://strm.yandex.ru/kal/msk24_supres/msk24_supres0.m3u8
 http://retc.educom.ru/mosobrtv/tv1/index.m3u8
 #EXTINF:-1 tvg-id="MOSOBRTV.ru" status="timeout",MOSOBR.TV (720p)
 http://retj.educom.ru/mosobrtv/tv1/index.m3u8
-#EXTINF:-1 tvg-id="MoyaPlaneta.ru" status="error",Моя планета (576p) [Not 24/7]
-http://cdnmg.secure.live.rtr-vesti.ru/live/smil:mplan.smil/master.m3u8
-#EXTINF:-1 tvg-id="MoyaPlaneta.ru" status="error",Моя Планета (576p)
-https://a3569456481-s26881.cdn.ngenix.net/live/smil:mplan.smil/index.m3u8
 #EXTINF:-1 tvg-id="MTV.ru" status="online",МТВ (Волгоград) (720p) [Not 24/7]
 http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVmix.ru" status="timeout",MTVmix (Уфа) (384p)
@@ -300,8 +278,6 @@ http://serv30.vintera.tv:8081/detskiy/multimania20/playlist.m3u8
 https://strm.yandex.ru/kal/rmbox/rmbox0.m3u8
 #EXTINF:-1 tvg-id="MuzhskoeKino.ru" status="online",Мужское кино (1080p) [Not 24/7]
 https://sc.id-tv.kz/Mujskoe_kino_hd.m3u8
-#EXTINF:-1 tvg-id="MuzikaPervogo.ru" status="error",Музыка Первого (576p)
-http://91.185.3.218:4000/play/608
 #EXTINF:-1 tvg-id="MuzSoyuz.ru" status="online",Муз союз (576p)
 http://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
 #EXTINF:-1 tvg-id="MuzTV.ru" status="blocked",Муз-ТВ (720p)
@@ -313,10 +289,6 @@ http://ott-cdn.ucom.am/s28/index.m3u8
 http://nano.teleservice.su:8080/hls/nano.m3u8
 #EXTINF:-1 tvg-id="NashaSibir.ru" status="timeout",Наша Сибирь / Кемерово (1080p) [Not 24/7]
 https://strm.yandex.ru/kal/sibir/sibir0.m3u8
-#EXTINF:-1 tvg-id="NashDom.ru" status="error",Наш дом [Not 24/7]
-http://85.234.33.60/stream/c11.m3u8
-#EXTINF:-1 tvg-id="NasheNovoeKino.ru" status="error",Наше Новое Кино [Not 24/7]
-https://s1.idata.uz/stch_temp6/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="Nauka.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Наука (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s98/index.m3u8
@@ -324,11 +296,7 @@ http://ott-cdn.ucom.am/s98/index.m3u8
 https://live-nikatv.cdnvideo.ru/nikatv/nikatv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="NizhniyNovgorod24.ru" status="online",Нижний Новгород 24 (720p) [Not 24/7]
 https://live-vestinn.cdnvideo.ru/vestinn/nn24-khl/playlist.m3u8
-#EXTINF:-1 tvg-id="NovoeRadio.ru" status="error",Новое радио (1080p)
-https://hls-video01.cdnvideo.ru/video01/smil:video01.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Novoetelevidenie.kz" status="error",Новое ТВ (404p) [Not 24/7]
-https://sc.id-tv.kz/New_Television.m3u8
-#EXTINF:-1 tvg-id="NovorossiyaTV.ru" status="timeout",Новороссия ТВ (720p)
+#EXTINF:-1 tvg-id="NovorossiyaTV.ru" status="online",Новороссия ТВ (720p)
 http://ott.inmart.tv:8081/19/index.m3u8
 #EXTINF:-1 tvg-id="Novyymir.ru" status="online",Новый мир (406p) [Not 24/7]
 http://stream.studio360.tv/nw/nw_576p/playlist.m3u8
@@ -346,8 +314,6 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_NTV/variant.m3u8
 http://ott-cdn.ucom.am/s17/index.m3u8
 #EXTINF:-1 tvg-id="NTV.ru" status="timeout",НТВ (576p)
 http://31.128.159.41:8080/ntv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="NTV.ru" status="error",НТВ (1080p)
-https://mob3-ntv.cdnvideo.ru/ntv3/smil:ntvair001_hd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NTVStyl.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",НТВ Стиль (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s77/index.m3u8
@@ -364,7 +330,7 @@ http://ott-cdn.ucom.am/s62/index.m3u8
 https://strm.yandex.ru/kal/ohotnik/ohotnik0.m3u8
 #EXTINF:-1 tvg-id="Olala.ru" status="timeout",O-la-la [Not 24/7]
 http://92.242.14.114:4022/udp/225.0.55.234:1234
-#EXTINF:-1 tvg-id="OplotTV.ru" status="timeout",Оплот ТВ (1080p)
+#EXTINF:-1 tvg-id="OplotTV.ru" status="online",Оплот ТВ (1080p)
 http://ott.inmart.tv:8081/54/index.m3u8
 #EXTINF:-1 tvg-id="Ostrosyuzhetnoye.ru" status="timeout",Остросюжетное (540p)
 http://185.97.150.19:8082/2235
@@ -372,17 +338,15 @@ http://185.97.150.19:8082/2235
 https://strm.yandex.ru/kal/otr/otr0.m3u8
 #EXTINF:-1 tvg-id="OTS.ru" status="blocked",ОТС (1080p) [Geo-blocked]
 https://strm.yandex.ru/kal/otstv/otstv0.m3u8
-#EXTINF:-1 tvg-id="OTV.ru" status="error",ОТВ (Одинцово) (576p)
-http://185.18.4.16/live/3m/playlist.m3u8
 #EXTINF:-1 tvg-id="Pervyykrymskiy.ru" status="online",Первый крымский (540p) [Not 24/7]
 http://mrlive.1tvcrimea.ru:8080/1tvcrimea.m3u8
 #EXTINF:-1 tvg-id="PervyyPskovskiy.ru" status="online",Первый Псковский (540p) [Not 24/7]
 http://194.190.78.91/pskov/rewind-10800.m3u8
-#EXTINF:-1 tvg-id="PervyyRespublikanskiy.ru" status="timeout",Первый республиканский (720p)
+#EXTINF:-1 tvg-id="PervyyRespublikanskiy.ru" status="online",Первый республиканский (720p)
 http://ott.inmart.tv:8081/18/index.m3u8
 #EXTINF:-1 tvg-id="PervyyTulskiy.ru" status="online",Первый Тульский (576p) [Not 24/7]
 http://5.164.24.83/tula/1tv_low/index.m3u8
-#EXTINF:-1 tvg-id="Pobeda.ru" status="timeout",Победа (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Pobeda.ru" status="online",Победа (576p) [Not 24/7]
 https://sc.id-tv.kz/Pobeda.m3u8
 #EXTINF:-1 tvg-id="Poehali.ru" status="online",Поехали! (576p) [Not 24/7]
 https://sc.id-tv.kz/poehali.m3u8
@@ -413,12 +377,8 @@ http://lova.me/hls/hithd.m3u8
 http://lova.me/hls/hit.m3u8
 #EXTINF:-1 tvg-id="RadioPilot.ru" status="online",Радио Пилот (720p) [Not 24/7]
 https://pilotfm.ru/cam/hls/pilothd.m3u8
-#EXTINF:-1 tvg-id="RadioRossii.ru" status="error",Радио России (Чувашия) (720p) [Not 24/7]
-https://chgtrk.ru/pl/stream/hls/RR.m3u8
 #EXTINF:-1 tvg-id="RadioShanson.ru" status="online",Радио Шансон (720p) [Not 24/7]
 http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live.m3u8
-#EXTINF:-1 tvg-id="RadostMoya.ru" status="error",Radost Moya (576p) [Geo-blocked]
-https://cdn-01.bonus-tv.ru/radostmoya_edge/index.m3u8
 #EXTINF:-1 tvg-id="RamenskoeTV.ru" status="timeout",Раменское ТВ (720p)
 https://rtv.facecast.io/rtv/0.m3u8
 #EXTINF:-1 tvg-id="Ratnik.ru" status="blocked",Ратник (1080p) [Geo-blocked]
@@ -445,7 +405,7 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV/variant.m3u8
 http://ad-hls-rentv.cdnvideo.ru/ren/smil:ren.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RENTVInternational.ru" status="online",РЕН ТВ International (576p) [Not 24/7]
 https://sc.id-tv.kz/RenTV.m3u8
-#EXTINF:-1 tvg-id="RodnoeKino.ru" status="online",Родное кино (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="RodnoeKino.ru" status="blocked",Родное кино (576p) [Not 24/7]
 https://sc.id-tv.kz/Rodnoe_kino.m3u8
 #EXTINF:-1 tvg-id="Rodnoykanal.ru" status="online",Родной канал (720p) [Not 24/7]
 https://n1.slavmir.tv/live/slavmir/playlist.m3u8
@@ -483,8 +443,6 @@ https://rt-glb.rttv.com/live/rtnews/playlist.m3u8
 https://rumble-foxo.cdn.rumble.cloud/live/hr6yv36f/slot-30/ngrp:srak-wx8r_all/playlist.m3u8
 #EXTINF:-1 tvg-id="RTNews.ru" status="timeout",RT News (1080p)
 https://strm.yandex.ru/kal/rt_hd/rt_hd0.m3u8
-#EXTINF:-1 tvg-id="RTNews.ru" status="error",RT News (1080p) [Geo-blocked]
-https://live-hr6yv36f.rmbl.ws/slot-30/ngrp:srak-wx8r_all/playlist.m3u8
 #EXTINF:-1 tvg-id="RTRPlaneta.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",РТР-Планета (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s15/index.m3u8
@@ -492,12 +450,10 @@ http://ott-cdn.ucom.am/s15/index.m3u8
 https://rt-uk.rttv.com/live/rtuk/playlist.m3u8
 #EXTINF:-1 tvg-id="Russia1HD.ru" status="timeout",Россия 1 HD (720p) [Not 24/7]
 https://a3569458063-s26881.cdn.ngenix.net/hls/russia_hd/playlist_4.m3u8
-#EXTINF:-1 tvg-id="Russia1HD.ru" status="error",Россия 1 HD (720p) [Not 24/7]
-http://cdnmg.secure.live.rtr-vesti.ru/hls/russia_hd/playlist.m3u8
-#EXTINF:-1 tvg-id="Russia1Kaluga.ru" status="error",Россия 1 (Калуга) (202p) [Not 24/7]
-http://cdnmg.secure.live.rtr-vesti.ru/vgtrkrtmp/smil:kaluga_r1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Russia1Plus6.ru" status="timeout",Россия 1 +6 (180p)
 https://gtrkchita.ru:8081/hls/r1-chita_180p.m3u8
+#EXTINF:-1 tvg-id="Russia24.ru" status="online",Россия 24 (576p) [Not 24/7]
+http://radio-live-mg.rtr-vesti.ru/hls/russia_24/playlist.m3u8
 #EXTINF:-1 tvg-id="Russia24.ru" status="online",Россия 24 (576p) [Not 24/7]
 http://uiptv.do.am/1ufc/000000006/playlist.m3u8
 #EXTINF:-1 tvg-id="Russia24.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Россия 24 (480p)
@@ -505,10 +461,6 @@ http://uiptv.do.am/1ufc/000000006/playlist.m3u8
 http://ott-cdn.ucom.am/s21/index.m3u8
 #EXTINF:-1 tvg-id="Russia24.ru" status="blocked",Россия 24 (720p) [Geo-blocked]
 https://strm.yandex.ru/kal/euronews_supres/euronews_supres0.m3u8
-#EXTINF:-1 tvg-id="Russia24.ru" status="error",Россия 24 (540p)
-http://evronovosti.mediacdn.ru/sr1/evronovosti/playlist.m3u8
-#EXTINF:-1 tvg-id="Russia24.ru" status="error",Россия 24 (576p) [Not 24/7]
-http://radio-live-mg.rtr-vesti.ru/hls/russia_24/playlist.m3u8
 #EXTINF:-1 tvg-id="Russia24Chita.ru" status="timeout",Россия 24 (Чита) (360p)
 https://gtrkchita.ru:8081/hls/r24-chita_360p.m3u8
 #EXTINF:-1 tvg-id="Russia24Chita.ru" status="timeout",Россия 24 (Чита) (576p)
@@ -554,8 +506,6 @@ https://live2.mediacdn.ru/sr1/sever-mobile/playlist.m3u8
 https://live2.mediacdn.ru/sr1/sever/playlist.m3u8
 #EXTINF:-1 tvg-id="Sever.ru" status="online",Север (Нарьян-Мар) (1080p)
 https://live.mediacdn.ru/sr1/sever/playlist.m3u8
-#EXTINF:-1 tvg-id="SGDF24RU.ru" status="error",SGDF24.RU (Свердлов) (720p) [Not 24/7]
-http://live.sgdf24.cdnvideo.ru/sgdf24/sgdf24.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Шансон ТВ (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s43/index.m3u8
@@ -571,8 +521,6 @@ http://stream0.tv41.ru/live.m3u8
 http://serv30.vintera.tv:8081/shoppinglive/shoppinglive_stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ShotTV.ru" status="timeout",Shot TV [Not 24/7]
 http://cdn.tvmatic.net/shot.m3u8
-#EXTINF:-1 tvg-id="Siesta.ru" status="error",Сиеста (720p) [Not 24/7]
-https://1hdru-hls-otcnet.cdnvideo.ru/siesta/index.m3u8
 #EXTINF:-1 tvg-id="SmaylikTV.ru" status="timeout",Смайлик ТВ (720p) [Not 24/7]
 http://62.32.67.187:1935/WEB_Smilik/ngrp:Smilik.stream-adaptive/playlist.m3u8
 #EXTINF:-1 tvg-id="SmaylikTV.ru" status="timeout",Смайлик ТВ (720p)
@@ -611,14 +559,10 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_SUPER/variant.m3u8
 https://video1.in-news.ru/c24/index.m3u8
 #EXTINF:-1 tvg-id="Tamyr.ru" status="online",Тамыр (576p)
 https://bsttv.bonus-tv.ru/cdn/tamyr/playlist.m3u8
-#EXTINF:-1 tvg-id="Tatarstan24.ru" status="online",Татарстан24 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Tatarstan24.ru" status="error",Татарстан24 (1080p) [Not 24/7]
 http://stream.efir24.tv:1935/live/efir24tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TBN.ru" status="timeout",ТБН (720p)
 http://62.32.67.187:1935/WEB_TBN/TBN.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="TDK.ru" status="error",ТДК (576p) [Not 24/7]
-https://sc.id-tv.kz/TDK-42.m3u8
-#EXTINF:-1 tvg-id="Telecafe.ru" status="error",Телекафе (576p)
-http://91.185.3.218:4000/play/605
 #EXTINF:-1 tvg-id="Telekanal86.ru" status="online",Телеканал 86 (Сургут) (1080p) [Not 24/7]
 https://sitv.ru/hls/s86.m3u8
 #EXTINF:-1 tvg-id="Teleputeshestviya.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Телепутешествия (480p)
@@ -631,7 +575,7 @@ https://sc.id-tv.kz/tnt4.m3u8
 #EXTINF:-1 tvg-id="TNT.ru" status="online" user-agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178",ТНТ (540p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178
 https://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/variant.m3u8
-#EXTINF:-1 tvg-id="TNTInternational.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",ТНТ International (480p)
+#EXTINF:-1 tvg-id="TNTInternational.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",ТНТ International (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s19/04.m3u8
 #EXTINF:-1 tvg-id="TNTMusic.ru" status="online",ТНТ Music (1080p)
@@ -647,8 +591,6 @@ http://91.234.108.26/hls-live/livepkgr/_definst_/liveevent1/vazlivestream1.m3u8
 http://ott-cdn.ucom.am/s90/index.m3u8
 #EXTINF:-1 tvg-id="TRK555.ru" status="online",TRK 555 (720p)
 http://trk555.tv:8888/live
-#EXTINF:-1 tvg-id="TRKNadym.ru" status="error",Вестник Надыма +2 (720p) [Not 24/7]
-http://live-trknadym.cdnvideo.ru/trknadym-pub/trknadym.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TV3.ru" status="online" user-agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178",ТВ-3 (540p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178
 https://zabava-htlive.cdn.ngenix.net/hls/CH_TV3/variant.m3u8
@@ -665,8 +607,6 @@ https://brics.bonus-tv.ru/cdn/brics/russian/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCentr.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",ТВ Центр (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s54/index.m3u8
-#EXTINF:-1 tvg-id="TVCentr.ru" status="error",ТВ Центр (432p)
-http://uiptv.do.am/1ufc/000000009/playlist.m3u8
 #EXTINF:-1 tvg-id="TVEkstra.ru" status="online",ТВ Экстра (720p)
 http://live-1.otcnet.ru/tvextra720b/index.m3u8
 #EXTINF:-1 tvg-id="TVGuberniya.ru" status="timeout",TV Губерния (Воронеж) (720p)
@@ -679,14 +619,10 @@ http://cdn-01.bonus-tv.ru:8080/tvm_edge/playlist.m3u8
 https://strm.yandex.ru/kal/tvm_supres/tvm_supres0.m3u8
 #EXTINF:-1 tvg-id="TVPRO.ru" status="online",TV PRO (600p) [Not 24/7]
 http://rtmp.tvpro-online.ru/hls/ch1.m3u8
-#EXTINF:-1 tvg-id="TVR24.ru" status="error",ТВР24 (Сергиев Посад) (1080p) [Not 24/7]
-https://live-tvr24.cdnvideo.ru/tvr24/tvr24.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVTUR.ru" status="blocked",ТВТУР (720p) [Geo-blocked]
 https://strm.yandex.ru/kal/tvtour/tvtour0.m3u8
 #EXTINF:-1 tvg-id="U.ru" status="blocked",Ю (576p) [Geo-blocked]
 https://strm.yandex.ru/kal/utv/utv0.m3u8
-#EXTINF:-1 tvg-id="UchalyTV.ru" status="error",Учалы ТВ (576p) [Not 24/7]
-http://live-uchalytv.cdnvideo.ru/uchalytv/uchalytv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="UniverTV.ru" status="online",Univer TV (1080p) [Not 24/7]
 https://cdn.universmotri.ru/live/smil:mbr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="UniverTV.ru" status="online",Univer TV (1080p)
@@ -705,16 +641,12 @@ http://cdn-01.bonus-tv.ru:8080/vmesterf/index.m3u8
 http://uiptv.do.am/1ufc/118056781/playlist.m3u8
 #EXTINF:-1 tvg-id="Volgograd1.ru" status="blocked",Волгоград 1 (1080p) [Geo-blocked]
 https://strm.yandex.ru/kal/volgograd1/volgograd10.m3u8
-#EXTINF:-1 tvg-id="Vremya.ru" status="error",Время (576p)
-http://91.185.3.218:4000/play/607
 #EXTINF:-1 tvg-id="WorldFashionChannelInternational.ru" status="online",World Fashion Channel International (1080p)
 https://wfcint.mediacdn.ru/cdn/wfcintweb/playlist.m3u8
 #EXTINF:-1 tvg-id="WorldFashionChannelRussia.ru" status="online",World Fashion Channel Russia (1080p)
 https://wfcrus.mediacdn.ru/cdn/wfcrusweb/playlist.m3u8
 #EXTINF:-1 tvg-id="Yugra.ru" status="online",Югра (576p)
 http://live.ugratv.cdnvideo.ru/ugratv/smil:ugrastream1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Yurgan.ru" status="error",Юрган (1080p)
-http://yurgan.bonus-tv.ru/cdn/yurgan/playlist.m3u8
 #EXTINF:-1 tvg-id="YuTV.ru" status="blocked",ЮТВ (Чебоксары) (432p) [Not 24/7]
 http://serv24.vintera.tv:8081/utv/Stream/playlist.m3u8
 #EXTINF:-1 tvg-id="YuvelirochkaTV.ru" status="online",Ювелирочка ТВ (576p)
@@ -739,6 +671,8 @@ http://ott-cdn.ucom.am/s85/index.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178",Культура (540p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178
 https://zabava-htlive.cdn.ngenix.net/hls/CH_RUSSIAK/variant.m3u8
+#EXTINF:-1 tvg-id="" status="online",Оплот 2 (1080p)
+http://ott.inmart.tv:8081/17/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ростов-папа (1080p)
 http://live-rostovpapa.cdnvideo.ru/rostovpapa/rostovpapa.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",ТКР (Рязань) (1080p) [Not 24/7]
@@ -773,12 +707,14 @@ https://sc.id-tv.kz/Khabar.m3u8
 http://stream.euroasia.lfstrm.tv/perviy_evrasia/1/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Первый канал Евразия (576p) [Not 24/7]
 https://sc.id-tv.kz/1KanalEvraziya.m3u8
+#EXTINF:-1 tvg-id="" status="online",Хабар 24 (576p) [Not 24/7]
+https://sc.id-tv.kz/Khabar_24.m3u8
 #EXTINF:-1 tvg-id="" status="online",Той Думан (576p) [Not 24/7]
 https://sc.id-tv.kz/ToiDuman.m3u8
-#EXTINF:-1 tvg-id="" status="online",Телплюс ТВ (Астрахань) (360p) [Not 24/7]
-http://streaming.astrakhan.ru/telplushd/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Туран ТВ (576p) [Not 24/7]
 https://sc.id-tv.kz/TuranTV.m3u8
+#EXTINF:-1 tvg-id="" status="online",Телплюс ТВ (Астрахань) (360p) [Not 24/7]
+http://streaming.astrakhan.ru/telplushd/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Такт/Рен ТВ (Курск) (294p) [Not 24/7]
 http://109.194.62.29:8080
 #EXTINF:-1 tvg-id="" status="blocked",Радио 10 (1024p) [Not 24/7]
@@ -797,21 +733,9 @@ http://193.107.128.8:8552/play/a007
 http://ad-hls-tvc.cdnvideo.ru/tvc-p222/smil:tvc.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ВТВ Плюс (Херсон) (576p)
 http://iptv.rubintele.com:8552/play/a007
-#EXTINF:-1 tvg-id="" status="timeout",Оплот 2 (1080p)
-http://ott.inmart.tv:8081/17/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Русский Экстрим
 http://vid.extremtv.ru/hls_get/cameraFeed.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Россия РТР
 https://a3569455801-s26881.cdn.ngenix.net/live/smil:rtrp.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Россия 1 +6 (360p)
 https://gtrkchita.ru:8081/hls/r1-chita_360p.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Хабар 24 (576p) [Not 24/7]
-https://sc.id-tv.kz/Khabar_24.m3u8
-#EXTINF:-1 tvg-id="" status="error",Первый канал (576p)
-http://91.185.3.218:4000/play/603
-#EXTINF:-1 tvg-id="" status="error",Россия К (576p) [Not 24/7]
-http://cdnmg.secure.live.rtr-vesti.ru/hls/russia_k/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Россия РТР (576p) [Not 24/7]
-http://cdnmg.secure.live.rtr-vesti.ru/live/smil:rtrp.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Телестанция МИР (Новосибирск) (720p) [Not 24/7]
-http://serv30.vintera.tv:8081/stanciya_mir/mir/playlist.m3u8
