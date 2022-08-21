@@ -4,15 +4,16 @@ const path = require('path')
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
+  fs.mkdirSync('tests/__data__/output/database')
   fs.copyFileSync(
     'tests/__data__/input/database/db_update.streams.db',
-    'tests/__data__/output/streams.db'
+    'tests/__data__/output/database/streams.db'
   )
 })
 
 it('can save results', () => {
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output LOGS_DIR=tests/__data__/input/logs/cluster/load npm run db:update',
+    'DB_DIR=tests/__data__/output/database LOGS_DIR=tests/__data__/input/logs/cluster/load npm run db:update',
     { encoding: 'utf8' }
   )
   expect(stdout).toEqual(`
@@ -31,7 +32,7 @@ removed 1 duplicates
 done
 `)
 
-  expect(content('tests/__data__/output/streams.db')).toEqual(
+  expect(content('tests/__data__/output/database/streams.db')).toEqual(
     content('tests/__data__/expected/database/db_update.streams.db')
   )
 })
