@@ -18,11 +18,14 @@ async function main() {
   const streams = await db.streams.all()
 
   let total = 0
+  logger.info('searching...')
   for (const stream of streams) {
     if (
       stream.status === 'error' &&
       date.utc().diff(stream.updated_at, 'day') >= options.threshold
     ) {
+      logger.info(stream.url)
+
       total += await db.streams.remove({ url: stream.url }, { multi: true })
     }
   }
