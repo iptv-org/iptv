@@ -228,9 +228,9 @@ https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
 #EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
-http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
-#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
 http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
+#EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
+http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RWEErfurt.de" status="online",RWE Erfurt (1080p)
 https://stream.keyweb.org:8085/hls/rwetv.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen1.de" status="online",Saarland Fernsehen 1 (1080p)
@@ -321,8 +321,6 @@ http://livestreams.br.de/i/bralpha_germany@119899/master.m3u8
 https://brlive-lh.akamaihd.net/i/bfsnord_germany@119898/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",ARD-alpha (720p) [Not 24/7]
 https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",Motorvision (576p)
-http://210.210.155.37/uq2663/h/h09/index.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s26/index.m3u8
@@ -352,3 +350,5 @@ https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8
 http://163.172.39.215:25461/live/line/C4@!a3a1@!w72A/25.m3u8
 #EXTINF:-1 tvg-id="" status="error",Motorvision (576p) [Geo-blocked]
 http://210.210.155.35/uq2663/h/h09/index.m3u8
+#EXTINF:-1 tvg-id="" status="error",Motorvision (576p)
+http://210.210.155.37/uq2663/h/h09/index.m3u8
