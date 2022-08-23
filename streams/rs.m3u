@@ -3,9 +3,7 @@
 https://srv1.adriatelekom.com/DjakTV/index.m3u8
 #EXTINF:-1 tvg-id="KurirTV.rs" status="online",Kurir TV (360p)
 https://kurir-tv.haste-cdn.net/providus/live2805.m3u8
-#EXTINF:-1 tvg-id="MarsTV.rs" status="error",Marš TV (576p) [Not 24/7]
-http://cdn.dovecher.tv:8081/live/marsh/chunks.m3u8
-#EXTINF:-1 tvg-id="MISTelevizija.rs" status="timeout",MIS Televizija (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MISTelevizija.rs" status="online",MIS Televizija (720p) [Not 24/7]
 https://5afd52b55ff79.streamlock.net/MISTV/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="MuzzikAMVA2020.rs" status="blocked",Muzzik AMVA 2020 (720p) [Geo-blocked]
 https://muzzik-live.morescreens.com/mts-8/playlist.m3u8
@@ -29,8 +27,6 @@ https://muzzik-live.morescreens.com/mts-a2/playlist.m3u8
 https://muzzik-live.morescreens.com/mts-6/playlist.m3u8
 #EXTINF:-1 tvg-id="MuzzikWorldwideSerbia.rs" status="blocked",Muzzik Worldwide Serbia (720p) [Geo-blocked]
 https://muzzik-live.morescreens.com/mts-5/playlist.m3u8
-#EXTINF:-1 tvg-id="PiKanal.rs" status="online",TV Pi Canal Pirot (576p) [Not 24/7]
-http://stream.pikanal.rs/pikanal/pgm.m3u8
 #EXTINF:-1 tvg-id="PinkExtra.rs" status="blocked",Pink Extra (576p)
 http://109.105.201.198/PINKEXTRA/playlist.m3u8
 #EXTINF:-1 tvg-id="PinkFamily.rs" status="blocked",Pink Family (576p)
@@ -47,8 +43,6 @@ http://109.105.201.198/PINKMOVIES/playlist.m3u8
 http://109.105.201.198/PINKROLL/playlist.m3u8
 #EXTINF:-1 tvg-id="PinkPedia.rs" status="blocked",Pink Pedia (576p)
 http://109.105.201.198/PINKPEDIA/playlist.m3u8
-#EXTINF:-1 tvg-id="PinkPremium.rs" status="error",Pink Premium (576p)
-http://109.105.201.198/PINKPREMIUM/playlist.m3u8
 #EXTINF:-1 tvg-id="PinkSciFiFantasy.rs" status="blocked",Pink Sci-Fi & Fantasy (576p)
 http://109.105.201.198/PINKSCIFI/playlist.m3u8
 #EXTINF:-1 tvg-id="PinkSerije.rs" status="blocked",Pink Serije (576p)
@@ -73,15 +67,23 @@ rtsp://212.200.255.151/rtv2
 http://167.172.39.13/hls/tvcityub.m3u8
 #EXTINF:-1 tvg-id="RTVNoviPazar.rs" status="online",RTV Novi Pazar (576p)
 https://rtvnp.rs/hls/rtvnp.m3u8
-#EXTINF:-1 tvg-id="SuperSatTVHD.rs" status="blocked",SuperSat TV HD (1080p) [Not 24/7]
-https://srv1.adriatelekom.com/SuperSatTV/index.m3u8
 #EXTINF:-1 tvg-id="TVBelleAmie.rs" status="timeout",TV Belle Amie (540p) [Not 24/7]
 http://92.60.238.10:1935/live/belleamie/playlist.m3u8
-#EXTINF:-1 tvg-id="TVDugaPlus.rs" status="online",TV Duga Plus (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVDugaPlus.rs" status="error",TV Duga Plus (480p) [Not 24/7]
 http://109.92.29.10:1935/tvduga/tvduga/playlist.m3u8
 #EXTINF:-1 tvg-id="TVHram.rs" status="online",TV Hram (576p) [Not 24/7]
 https://vod1.laki.eu/live/hram/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",RTV AS (576p)
 https://srv1.adriatelekom.com/TVAS/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Adria Music TV (1080p)
-https://srv1.adriatelekom.com/AdriaMusicTV/index.m3u8
+#EXTINF:-1 tvg-id="KurirTV.rs" status="online",Kurir TV (720p)
+http://51.15.154.138/providus/live2805_hq/index.m3u8
+#EXTINF:-1 tvg-id="RedTV.rs" status="online",Red TV (720p)
+https://live.rednet.rs/providus/redtv_multi_hq/index.m3u8
+#EXTINF:-1 tvg-id="SandzakTV.rs" status="online",Sandzak TV (576p)
+https://vod1.laki.eu/sandzak/video.m3u8
+#EXTINF:-1 tvg-id="TVPirot.rs" status="online",TV Pirot (240p) [Not 24/7]
+https://5bc45691ca49f.streamlock.net/tvpirot/uzivo/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Nisville TV RS (720p)
+http://92.60.237.32:1935/live/nisville/playlist.m3u8
+#EXTINF:-1 tvg-id="KlanKosova.rs" status="timeout",Klan Kosova
+http://93.157.62.180/KlanKosova/index.m3u8
