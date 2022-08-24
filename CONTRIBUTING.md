@@ -29,7 +29,7 @@ If you would like to replace a broken stream or add a new one, please do the fol
 
 - make sure that the link you want to add works by using a program like [VLC media player](https://www.videolan.org/vlc/index.html)
 - check if the channel is working outside your country by using a VPN or use a service like [streamtest.in](https://streamtest.in/)
-- find out from which country the channel is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/). If you are unable to determine which country the channel belongs to, add the channel onto the `channels/unsorted.m3u` playlist
+- find out from which country the channel is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
 - find the corresponding [ISO_3166-2 code](https://en.wikipedia.org/wiki/ISO_3166-2) for the country
 - open the `/streams` folder and find the file that has the same code in its name and open it
 - if broken, find the broken link in this file and replace it with working one
@@ -106,8 +106,6 @@ Each stream also have a `status` attribute which is updated daily by the [iptv-b
   - `template.md`: template for `README.md`.
 - `scripts/`: contains all the scripts used in GitHub workflows.
 - `streams/`: contains all streams broken down by the country from which they are broadcast.
-  - ...
-  - `unsorted.m3u`: playlist with channels not yet sorted.
 - `tests/`: contains tests to check the scripts.
 - `CONTRIBUTING.md`: file you are currently reading.
 - `README.md`: project description generated from the contents of the `.readme/` folder.
