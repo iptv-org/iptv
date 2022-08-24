@@ -90,7 +90,7 @@ jobs:
           path: scripts/logs
       - run: npm install
       - run: npm run db:update
-      # - run: npm run db:clear
+      - run: npm run db:clear
       - run: npm run db:export
       - uses: actions/upload-artifact@v2
         with:
