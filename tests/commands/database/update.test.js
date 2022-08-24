@@ -32,9 +32,20 @@ removed 1 duplicates
 done
 `)
 
-  expect(content('tests/__data__/output/database/streams.db')).toEqual(
-    content('tests/__data__/expected/database/db_update.streams.db')
-  )
+  let input = content('tests/__data__/input/database/db_update.streams.db')
+  let output = content('tests/__data__/output/database/streams.db')
+  let expected = content('tests/__data__/expected/database/db_update.streams.db')
+
+  let inputDate = input.find(i => i._id === '2ST8btby3mmsgPF0')['updated_at']
+  let outputDate = output.find(i => i._id === '2ST8btby3mmsgPF0')['updated_at']
+
+  expect(outputDate).not.toEqual(inputDate)
+
+  output = output.map(i => {
+    delete i['updated_at']
+    return i
+  })
+  expect(output).toEqual(expected)
 })
 
 function content(filepath) {
