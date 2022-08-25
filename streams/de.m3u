@@ -33,7 +33,7 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high/playlist.m3u8?ref=medienportal-sachsen-
 #EXTINF:-1 tvg-id="CroTVHD.de" status="timeout",CroTV HD (1080p)
 http://92.204.40.139:8081/crotv/televizijahrvatskedijaspore/playlist.m3u8
-#EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p)
+#EXTINF:-1 tvg-id="DasErste.de" status="online",Das Erste (720p)
 https://derste247liveint.akamaized.net/hls/live/662735/daserste_int/master.m3u8
 #EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p) [Geo-blocked]
 https://mcdn.daserste.de/daserste/de/master.m3u8
@@ -55,7 +55,7 @@ https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 #EXTINF:-1 tvg-id="emsTVLingen.de" status="online",ems TV Lingen (280p)
 https://5889e7d0d6e28.streamlock.net/ev1tv-live/_definst_/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="emsTVLingen.de" status="error",ems TV Lingen (280p)
+#EXTINF:-1 tvg-id="emsTVLingen.de" status="online",ems TV Lingen (280p)
 https://5889e7d0d6e28.streamlock.net/ev1tv-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ErzTVStollberg.de" status="online",Erz-TV Stollberg (576p)
 https://5acade5fc0c29.streamlock.net/kabeljournal/live2020.stream/playlist.m3u8
@@ -191,7 +191,7 @@ http://62.113.210.250/medienasa-live/ok-wernigerode_high/hasbahca.m3u8
 http://62.113.210.250/medienasa-live/ok-wernigerode_high/hasbahca.m3u8?bitrate=800
 #EXTINF:-1 tvg-id="OKWernigerode.de" status="online",OK Wernigerode
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-wernigerode_high/playlist.m3u8
-#EXTINF:-1 tvg-id="oldenburgeins.de" status="error",oldenburg eins (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="oldenburgeins.de" status="online",oldenburg eins (1080p) [Not 24/7]
 https://oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="One1MusicTV.de" status="timeout",ONE1 Music (1080p)
 https://serve-first.folxplay.tv/folx/ch-3/master.m3u8
@@ -254,9 +254,9 @@ https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
 #EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
-http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
-#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
 http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
+#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
+http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RWEErfurt.de" status="online",RWE Erfurt (1080p)
 https://stream.keyweb.org:8085/hls/rwetv.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen1.de" status="online",Saarland Fernsehen 1 (1080p)
@@ -293,8 +293,6 @@ https://live1.markenfunk.com/t1/live/playlist.m3u8
 https://5856e1a25f71a.streamlock.net/easycast8-live/_definst_/mp4:livestreamhd8/playlist.m3u8
 #EXTINF:-1 tvg-id="teltOwkanal.de" status="online",teltOwkanal (1080p)
 https://5856e1a25f71a.streamlock.net/easycast8-live/mp4:livestreamhd8/playlist.m3u8
-#EXTINF:-1 tvg-id="TesasTV.de" status="error",Tesas TV (720p) [Not 24/7]
-https://jola.live:16200/tesastv.m3u8
 #EXTINF:-1 tvg-id="TideTV.de" status="online",Tide TV (1080p)
 https://5889e7d0d6e28.streamlock.net/tide-live/_definst_/smil:livestream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TideTV.de" status="online",Tide TV (1080p) [Not 24/7]
