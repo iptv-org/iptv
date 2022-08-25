@@ -1138,8 +1138,10 @@ http://51.161.118.146:8080/ISG03_FOX_BOSTON_MA_WFXT/video.m3u8
 https://trn10.tulix.tv/WGCL-CBS/index.m3u8
 #EXTINF:-1 tvg-id="WGCLDT1.us" status="error",CBS Atlanta GA (WGCL-DT1) (720p)
 http://51.161.118.146:8080/ISG03_CBS_ATLANTA_GA_WGCL/tracks-v4a1/mono.m3u8
-#EXTINF:-1 tvg-id="WGNDT1.us" status="blocked",WGN Chicago IL (WGN-TV1) (720p)
-http://trn03.tulix.tv/teleup-mBm5MQ50rA/playlist.m3u8
+#EXTINF:-1 tvg-id="WGNDT1.us",WGN Chicago IL (WGN-TV1) (720p)
+#EXTVLCOPT:http-referrer=https://plus.teleup.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36 OPR/65.0.3467.48
+https://cdn1-8p.teleuptv.net/3773db6d-881b-4096-b9cc-b4fe99ab68ac/index.m3u8
 #EXTINF:-1 tvg-id="WhitePlainsCommunityMedia.us" status="online",White Plains Community Media (360p)
 https://stream.swagit.com/live-edge/whiteplainsny/smil:std-4x3-1-b/playlist.m3u8
 #EXTINF:-1 tvg-id="WISCDT2.us" status="online",My Madison TV (WISC-DT2) (720p)
@@ -1746,3 +1748,45 @@ https://d2dy6pkj44n6e7.cloudfront.net/v1/master/77872db67918a151b697b5fbc23151e5
 https://dai.google.com/linear/hls/event/RDmbn03GRCOLNG1eetEKhg/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",KRDO News Colorado Springs CO (720p)
 https://content.uplynk.com/channel/49fbfb5d15574052bb429eb8593e7662.m3u8
+#EXTINF:-1 tvg-id="COETVChannel19.us",COE-TV Channel 19
+https://vod.slocoe.org/live-4/live/CELL-296k-234p/CELL-296k-234p.m3u8
+#EXTINF:-1 tvg-id="AccessSacramentoChannel18.us",Access Sacramento Channel 18
+https://reflect-access-sacramento.cablecast.tv/live-8/live/live.m3u8
+#EXTINF:-1 tvg-id="AccessSacramentoChannel17.us",Access Sacramento Channel 17
+https://reflect-access-sacramento.cablecast.tv/live-7/live/live.m3u8
+#EXTINF:-1 tvg-id="OrangeTV3.us",Orange TV3
+https://cdn3.wowza.com/5/R09KQXpaMWlrRjly/cityoforange/G1025_004/playlist.m3u8
+#EXTINF:-1 tvg-id="NCMEducationalKidsChannel.us",NCM Educational & Kids Channel
+https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_005/playlist.m3u8
+#EXTINF:-1 tvg-id="NCMGovernmentPoliticsChannel.us",NCM Government & Politics
+https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_002/playlist.m3u8
+#EXTINF:-1 tvg-id="NCMMainChannel.us",NCM Main Channel
+https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_001/playlist.m3u8
+#EXTINF:-1 tvg-id="METV.us",METV (Merced Educational Television)
+https://mercedcouedu.secure.footprint.net/egress/bhandler/mercedcouedu/streamc/chunklist_b1192000.m3u8
+#EXTINF:-1 tvg-id="MarinTVEducationalChannel.us",Marin TV Education
+https://dacastmmd.mmdlive.lldns.net/dacastmmd/8e6d110b223b4aca9dd6f7c368baec07/playlist.m3u8
+#EXTINF:-1 tvg-id="MarinTVGovernmentChannel.us",Marin TV Government Channel
+https://dacastmmd.mmdlive.lldns.net/dacastmmd/ddf2a073e3da4acb9feb34bef6d58672/playlist.m3u8
+#EXTINF:-1 tvg-id="MarinTVCommunityChannel.us",Marin TV Community Channel
+https://dacastmmd.mmdlive.lldns.net/dacastmmd/ddf2a073e3da4acb9feb34bef6d58672/playlist.m3u8
+#EXTINF:-1 tvg-id="WKAQDT1.us",WKAQ-DT1 (Telemundo Puerto Rico)
+https://nbculocallive.akamaized.net/hls/live/2037499/puertorico/stream1/master.m3u8
+#EXTINF:-1 tvg-id="KOMODT1.us",ABC 4 KOMO (KOMO NEWS) (720p)
+https://content.uplynk.com/d7ae2696e3c54d25a099dc4c0600ee60.m3u8
+#EXTINF:-1 tvg-id="KernCountyTV.us",Kern County Television
+https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/kern/G0169_003/playlist.m3u8
+#EXTINF:-1 tvg-id="ContraCostaTV.us",Contra Costa College TV [Geo-blocked]
+https://reflect-contra-costa.cablecast.tv/live-7/live/WIFI-696k-360p/WIFI-696k-360p.m3u8
+#EXTINF:-1 tvg-id="Yuma77.us",Yuma77
+https://securestream6.champds.com/hlssstc/YumaCoAZLIVE/master.m3u8
+#EXTINF:-1 tvg-id="YumaChannel72.us",Yuma AZ CH 72
+https://yuma-az.secure.footprint.net/egress/bhandler/yumaaz/streama/playlist.m3u8
+#EXTINF:-1 tvg-id="YumaChannel73.us",Yuma AZ CH 73
+https://yuma-az.secure.footprint.net/egress/bhandler/yumaaz/streamb/playlist.m3u8
+#EXTINF:-1 tvg-id="UALRTV.us",UALR TV
+https://vblive-c.viebit.com/65ea794b-dd82-41ce-8e98-a9177289a063/chunklist.m3u8
+#EXTINF:-1 tvg-id="MCPSSTV.us",Mobile County Public Schools TV Network (MCPSS)
+https://5b200f5268ceb.streamlock.net/MCPSS/MCPSS247.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="KFSNDT1.us",KFSN News
+https://content.uplynk.com/channel/ext/96195dc445894d079a91958abba8d3af/kfsn_24x7_news.m3u8
