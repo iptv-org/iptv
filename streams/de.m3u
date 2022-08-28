@@ -151,10 +151,10 @@ http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-magdeburg_high/playli
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-magdeburg_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKMerseburgQuerfurt.de" status="online",OK Merseburg-Querfurt (1080p) [Not 24/7]
 http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-merseburg_high/playlist.m3u8
+#EXTINF:-1 tvg-id="OKMerseburgQuerfurt.de" status="online",OK Merseburg
+http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-merseburg_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKMerseburgQuerfurt.de" status="online",OK Merseburg-Querfurt (1080p) [Not 24/7]
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-merseburg_high/playlist.m3u8
-#EXTINF:-1 tvg-id="OKMerseburgQuerfurt.de" status="error",OK Merseburg
-http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-merseburg_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKRheinLokalWorms.de" status="online",OK RheinLokal (Worms) (720p) [Not 24/7]
 https://s.ok54.de/rheinlokal/rheinlOKal_stream/playlist.m3u8
 #EXTINF:-1 tvg-id="OKRheinMain.de" status="online",OK Rhein-Main (576p) [Not 24/7]
@@ -205,10 +205,10 @@ https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8
 https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk2.m3u8
 #EXTINF:-1 tvg-id="Phoenix.de" status="blocked",Phoenix [Geo-blocked]
 https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
-#EXTINF:-1 tvg-id="PunkteinsOberlausitz.de" status="online",Punkteins
-https://5852afe96c9bb.streamlock.net/easycast8-live/_definst_/mp4:livestreamhd4/playlist.m3u8
 #EXTINF:-1 tvg-id="PunkteinsOberlausitz.de" status="online",Punkteins (Oberlausitz) (1080p) [Not 24/7]
 https://5852afe96c9bb.streamlock.net/easycast8-live/mp4:livestreamhd4/playlist.m3u8
+#EXTINF:-1 tvg-id="PunkteinsOberlausitz.de" status="error",Punkteins
+https://5852afe96c9bb.streamlock.net/easycast8-live/_definst_/mp4:livestreamhd4/playlist.m3u8
 #EXTINF:-1 tvg-id="PUNKTum.de" status="online",Punktum S�dharz (1080p)
 http://62.113.210.250/medienasa-live/punktum_high/master.m3u8
 #EXTINF:-1 tvg-id="PUNKTum.de" status="online",PUNKTum Fernsehen (1080p)
@@ -256,9 +256,9 @@ https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
 #EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
-http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
-#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
 http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
+#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
+http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RWEErfurt.de" status="online",RWE Erfurt (1080p)
 https://stream.keyweb.org:8085/hls/rwetv.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen1.de" status="online",Saarland Fernsehen 1 (1080p)
@@ -295,9 +295,9 @@ https://live1.markenfunk.com/t1/live/playlist.m3u8
 https://5856e1a25f71a.streamlock.net/easycast8-live/_definst_/mp4:livestreamhd8/playlist.m3u8
 #EXTINF:-1 tvg-id="teltOwkanal.de" status="online",teltOwkanal (1080p)
 https://5856e1a25f71a.streamlock.net/easycast8-live/mp4:livestreamhd8/playlist.m3u8
-#EXTINF:-1 tvg-id="TideTV.de" status="online",Tide TV (1080p)
+#EXTINF:-1 tvg-id="TideTV.de" status="error",Tide TV (1080p)
 https://5889e7d0d6e28.streamlock.net/tide-live/_definst_/smil:livestream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TideTV.de" status="online",Tide TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TideTV.de" status="error",Tide TV (1080p) [Not 24/7]
 https://5889e7d0d6e28.streamlock.net/tide-live/smil:livestream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="tiviTURK.de" status="online",tiviTÜRK (720p) [Not 24/7]
 https://stream.tiviturk.de/live/tiviturk.m3u8
