@@ -7,7 +7,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/AnimaxKorea.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/Anione.m3u8
 #EXTINF:-1 tvg-id="Aniplus.kr" status="online",Aniplus (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/Aniplus.m3u8
-#EXTINF:-1 tvg-id="AniplusAsia.sg" status="online",Aniplus (Indonesian subtitle) (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="AniplusAsia.sg" status="error",Aniplus (Indonesian subtitle) (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h02/index.m3u8
 #EXTINF:-1 tvg-id="AniplusAsia.sg" status="error",Aniplus (Indonesian subtitle) (576p) [Geo-blocked]
 http://210.210.155.37/dr9445/h/h02/index.m3u8
@@ -61,7 +61,7 @@ http://211.33.246.4:32954/cj_live/myStream.sdp/playlist.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/ChunghwaTV.m3u8
 #EXTINF:-1 tvg-id="CinemaHeaven.kr" status="online",Cinema Heaven (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/CinemaHeaven.m3u8
-#EXTINF:-1 tvg-id="CJBTV.kr" status="online",CJB청주방송 (SBS Cheongju) (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="CJBTV.kr" status="blocked",CJB청주방송 (SBS Cheongju) (540p) [Not 24/7]
 http://1.222.207.80:1935/live/cjbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="CJOnStyle.kr" status="online",CJ OnStyle (540p)
 https://live-ch1.cjonstyle.net/cjmalllive/stream2/playlist.m3u8
@@ -125,7 +125,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/HoneyTV.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/IBSports.m3u8
 #EXTINF:-1 tvg-id="iHQDrama.kr" status="online",iHQ drama (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/iHQDrama.m3u8
-#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="online",제주 MBC (MBC Jeju) (352p) [Not 24/7]
+#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="error",제주 MBC (MBC Jeju) (352p) [Not 24/7]
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
 #EXTINF:-1 tvg-id="JIBSTV.kr" status="online",JIBS SBS (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
@@ -241,7 +241,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/SBSTV.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/ScreenGolfzon.m3u8
 #EXTINF:-1 tvg-id="SkySports.kr" status="online",skySports (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/SkySports.m3u8
-#EXTINF:-1 tvg-id="TBCTV.kr" status="online",TBC SBS (540p)
+#EXTINF:-1 tvg-id="TBCTV.kr" status="blocked",TBC SBS (540p)
 http://221.157.125.239:1935/live/psike/playlist.m3u8
 #EXTINF:-1 tvg-id="TBSTV.kr" status="online",TBS Seoul (720p)
 https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
@@ -259,7 +259,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/Tooniverse.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/TVChosun.m3u8
 #EXTINF:-1 tvg-id="tvN.kr" status="online",tvN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvN.m3u8
-#EXTINF:-1 tvg-id="TVNAsia.hk" status="error",tvN Asia (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="TVNAsia.hk" status="online",tvN Asia (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="tvNDrama.kr" status="online",tvN DRAMA (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvNDrama.m3u8
@@ -295,6 +295,8 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://slive.sciencetv.kr:1935/science/yslive_20140419_1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",KBS News
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/newskbs/live
 #EXTINF:-1 tvg-id="" status="online",arteTV
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/TheArteTV/live
 #EXTINF:-1 tvg-id="" status="online",JCN TV
@@ -319,9 +321,7 @@ https://amdlive-ch01-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/pl
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Arirang Radio (720p)
 https://amdlive-ch03-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Korean Song Channel
+http://live.kytv.co.kr:8080/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",All The K-POP
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/ALLTHEKPOP/live
-#EXTINF:-1 tvg-id="" status="timeout",Korean Song Channel
-http://live.kytv.co.kr:8080/hls/stream.m3u8
-#EXTINF:-1 tvg-id="" status="error",KBS News
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/newskbs/live
