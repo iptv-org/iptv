@@ -50,7 +50,7 @@ Yes, because an id of each channel is used to link to program guide because they
 
 Note: For storage space reasons, the programming guide is only available in gz compressed format. See [discussion](https://github.com/iptv-org/iptv/discussions/8255).
 
-Based on [#2438](https://github.com/iptv-org/iptv/issues/2438), [#4537](https://github.com/iptv-org/iptv/discussions/4537) and [#7043](https://github.com/iptv-org/iptv/discussions/7043).
+Based on [#1797](https://github.com/iptv-org/iptv/issues/1797), [#2438](https://github.com/iptv-org/iptv/issues/2438), [#4537](https://github.com/iptv-org/iptv/discussions/4537) and [#7043](https://github.com/iptv-org/iptv/discussions/7043).
 
 ### Is it possible to view channels directly from the main website?
 No, you will only see information about active and inactive transmissions of channels.
