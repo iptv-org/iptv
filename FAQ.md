@@ -135,7 +135,7 @@ If the link matches or answers after changing the URL, you're with an Xtream-Cod
 Based on [#5236](https://github.com/iptv-org/iptv/pull/5236), [#5401](https://github.com/iptv-org/iptv/pull/5401) and [#7576](https://github.com/iptv-org/iptv/discussions/7576) (about username and password of Xtream-Codes server).
 
 ### Is it possible to add streams from Youtube, Dailymotion or Twitch?
-Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content. This does not work with all streams. This does not work with all streams, so it will give an "error" status if this stream is not freely accessible.
+Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content. This does not work with all streams, so it will give an "error" status if this stream is not freely accessible.
 
 Based on [#3017](https://github.com/iptv-org/iptv/discussions/3017) (about geoblocked channel), [#4112](https://github.com/iptv-org/iptv/discussions/4412) and [#4456](https://github.com/iptv-org/iptv/discussions/4456).
 
