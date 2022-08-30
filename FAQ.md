@@ -104,7 +104,7 @@ After you have your m3u8 link, add your channel information onto the [Database](
 
 Note: Please check the fair use (also called "fair dealing" or "copyright exception") situation in your country where it is broadcasted. This point should be important when broadcasting other contents without problems on your TV channel.
 
-Based on [#6654](https://github.com/iptv-org/iptv/discussions/6654) (basic information).
+Based on [#650](https://github.com/iptv-org/iptv/issues/650) and [#6654](https://github.com/iptv-org/iptv/discussions/6654) (basic information).
 
 ### Is there any way to add my channel other than via this git repository?
 No, there is no such option.
