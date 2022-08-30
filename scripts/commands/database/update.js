@@ -1,5 +1,8 @@
 const { db, store, parser, file, logger } = require('../../core')
 const _ = require('lodash')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+dayjs.extend(utc)
 
 const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/cluster/load'
 
@@ -19,6 +22,7 @@ async function updateStreams(items = [], results = {}, origins = {}) {
   let buffer = {}
   let updated = 0
   let removed = 0
+  const now = dayjs.utc().format()
   for (const item of items) {
     const stream = store.create(item)
     const result = results[item._id]
@@ -46,6 +50,7 @@ async function updateStreams(items = [], results = {}, origins = {}) {
       await db.streams.remove({ _id: stream.get('_id') })
       removed++
     } else if (stream.changed) {
+      stream.set('updated_at', { updated_at: now })
       await db.streams.update({ _id: stream.get('_id') }, stream.data())
       buffer[stream.get('url')] = true
       updated++
