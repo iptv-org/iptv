@@ -117,7 +117,9 @@ An adaptive playlist is a m3u8 file that contains certain informations: the band
 
 In the "daily update", the stream with the best supported resolution will be considered "priority" over other lower resolution streams of the same channel.
 
-Based on [#1916](https://github.com/iptv-org/iptv/issues/1916).
+In addition, we do not recommend using "chunks.m3u8" for consistency reasons.
+
+Based on [#1916](https://github.com/iptv-org/iptv/issues/1916) and [#5952](https://github.com/iptv-org/iptv/discussions/5952).
 
 ### Why don't we accept Xtream-Codes servers inside our playlists?
 Xtream-Codes streams are, most of the times, pirated streams created by some people that can get satellite and/or PPV streams and that propose it to everyone for a fairer price. These types of servers are illegal and also highly unstable, since it depends either from the user who bought it or the server that hosts it.
