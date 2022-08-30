@@ -4,6 +4,7 @@
     "act:auto-update": "act workflow_dispatch -W .github/workflows/auto-update.yml --artifact-server-path=.artifacts",
     "act:check": "act pull_request -W .github/workflows/check.yml",
     "api:load": "./scripts/commands/api/load.sh",
+    "db:clear": "node scripts/commands/database/clear.js",
     "db:create": "node scripts/commands/database/create.js",
     "db:matrix": "node scripts/commands/database/matrix.js",
     "db:update": "node scripts/commands/database/update.js",
@@ -13,7 +14,6 @@
     "playlist:generate": "node scripts/commands/playlist/generate.js",
     "playlist:update": "node scripts/commands/playlist/update.js",
     "playlist:lint": "npx m3u-linter -c m3u-linter.json",
-    "playlist:cleaner": "node scripts/commands/playlist/cleaner.js",
     "readme:update": "node scripts/commands/readme/update.js",
     "test": "jest --runInBand"
   },

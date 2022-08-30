@@ -4,9 +4,10 @@ const { execSync } = require('child_process')
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
+  fs.mkdirSync('tests/__data__/output/database')
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database npm run db:create -- --input-dir=tests/__data__/input/streams --max-clusters=1',
+    'DB_DIR=tests/__data__/output/database DATA_DIR=tests/__data__/input/data npm run db:create -- --input-dir=tests/__data__/input/streams --max-clusters=1',
     { encoding: 'utf8' }
   )
 })
@@ -24,14 +25,7 @@ it('can create database', () => {
     return i
   })
 
-  expect(output).toEqual(
-    expect.arrayContaining([
-      expect.objectContaining(expected[0]),
-      expect.objectContaining(expected[1]),
-      expect.objectContaining(expected[2]),
-      expect.objectContaining(expected[3])
-    ])
-  )
+  expect(output).toMatchObject(expect.arrayContaining(expected))
 })
 
 function content(filepath) {
