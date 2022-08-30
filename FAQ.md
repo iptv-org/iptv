@@ -65,7 +65,7 @@ Based on [#1416](https://github.com/iptv-org/iptv/pull/1416) (output of NSFW in 
 ### Do I have to pay to use this playlist?
 No. Also, the maintenance of this service is self-financed. If a stranger asks to pay to access the playlist, we suggest not to follow it.
 
-Based on [#3865](https://github.com/iptv-org/iptv/discussions/3865).
+Based on [#81](https://github.com/iptv-org/iptv/issues/81) and [#3865](https://github.com/iptv-org/iptv/discussions/3865).
 
 ### Are you planning to include a VOD of TV shows broadcasted on this playlist?
 No. This is not our purpose.
