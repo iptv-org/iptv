@@ -81,7 +81,9 @@ Based on [#480](https://github.com/iptv-org/iptv/issues/480), [#2191](https://gi
 ### Can I add a FTA channel that is broadcasted in specific cities or countries?
 Yes. If the channel broadcasted in other cities or countries, please edit its entry onto the [Database](https://github.com/iptv-org/database) repository. It will be added to the corresponding playlists.
 
-Based on [#6415](https://github.com/iptv-org/iptv/issues/6415).
+When setting the city where the channel is broadcasted, set its timezone is not necessary because it is not relevant.
+
+Based on [#5802](https://github.com/iptv-org/iptv/discussions/5802) and [#6415](https://github.com/iptv-org/iptv/issues/6415).
 
 ### Can I add a FTA channel that broadcasts PPV events or pay programming?
 Maybe, this may change in future answers. Consider if the country where it is broadcasted allows fair use. Owners can ban the broadcast of PPV events, and even issue a DMCA takedown. Check the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for more info about specific events, and this [counternotice](https://github.com/github/dmca/blob/3ce1c9402c6b7e46dcbbea6ff866d6a44e75c72a/2020/10/2020-10-08-dfl-counternotice.md) indicating that a DMCA takedown is invalid if only one FTA channel infringes copyright.
