@@ -129,9 +129,9 @@ If the link matches or answers after changing the URL, you're with an Xtream-Cod
 Based on [#5236](https://github.com/iptv-org/iptv/pull/5236) and [#5401](https://github.com/iptv-org/iptv/pull/5401).
 
 ### Is it possible to add streams from Youtube, Dailymotion or Twitch?
-Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content.
+Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content. This does not work with all streams. This does not work with all streams, so it will give an "error" status if this stream is not freely accessible.
 
-Based on [#4112](https://github.com/iptv-org/iptv/discussions/4412) and [#4456](https://github.com/iptv-org/iptv/discussions/4456).
+Based on [#3017](https://github.com/iptv-org/iptv/discussions/3017) (about geoblocked channel), [#4112](https://github.com/iptv-org/iptv/discussions/4412) and [#4456](https://github.com/iptv-org/iptv/discussions/4456).
 
 ### Is it possible to add audio-only streams, like FM radio?
 No. Exceptions are the visual radios, in which a video and audio are shown at the same time. A WIP repository made by one member of iptv-org, [LaneSh4d0w](https://github.com/LaneSh4d0w) aims to collect radio streams, on the [IPRD](https://github.com/LaneSh4d0w/IPRD) repository.
