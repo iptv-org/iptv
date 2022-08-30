@@ -48,6 +48,8 @@ Based on [#7205](https://github.com/iptv-org/iptv/issues/7205), [#7914](https://
 ### Does the playlist have a channel guide?
 Yes, because an id of each channel is used to link to program guide because they are obtained from third party websites. However, not all channels have their EPG available. See [EPG](https://github.com/iptv-org/epg) for more info. Please note that the guide is not perfect and some channels (like international feeds) may interrupt programming without you knowing.
 
+Note: For storage space reasons, the programming guide is only available in gz compressed format. See [discussion](https://github.com/iptv-org/iptv/discussions/8255).
+
 Based on [#2438](https://github.com/iptv-org/iptv/issues/2438), [#4537](https://github.com/iptv-org/iptv/discussions/4537) and [#7043](https://github.com/iptv-org/iptv/discussions/7043).
 
 ### Is it possible to view channels directly from the main website?
