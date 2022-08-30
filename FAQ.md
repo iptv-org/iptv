@@ -92,7 +92,7 @@ Please remember that by sharing a link to a FTA channel (or more), you are **ind
 A good example of this would be [Perfect 10 v. Google](https://www.eff.org/fr/cases/perfect-10-v-google). 
 Some [valid takedowns](https://github.com/iptv-org/iptv/issues/6486) do occur when a Pull Request is made to notify us that we should not index their channels.
 
-Based on [#7212](https://github.com/iptv-org/iptv/issues/7212).
+Based on [#440](https://github.com/iptv-org/iptv/issues/440) and [#7212](https://github.com/iptv-org/iptv/issues/7212).
 
 ### I've created my channel and I want to add it to this playlist. What should I do?
 We are a community initiative and you don't need to pay anything to stay on this playlist. Feel free to create a channel with few resources:
