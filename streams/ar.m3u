@@ -23,7 +23,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://raw.githubusercontent.com/MachineSystems/archived_m3u8/main/america_hls.m3u8
 #EXTINF:-1 tvg-id="Antena91.ar" status="online",Antena 91
 https://tuvideoonline.com.ar:3393/live/antena91live.m3u8
-#EXTINF:-1 tvg-id="ArgentinisimaSatelital.ar" status="error",Argentinísima Satelital (720p)
+#EXTINF:-1 tvg-id="ArgentinisimaSatelital.ar" status="timeout",Argentinísima Satelital (720p)
 http://186.0.233.76:1935/Argentinisima/smil:argentinisima.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AZMTV.ar" status="online",AZM TV
 https://live.canalnueve.tv/canal.m3u8
@@ -39,7 +39,7 @@ https://59d52c5a5ce5e.streamlock.net:4443/cadena103/cadena103/playlist.m3u8
 http://api.new.livestream.com/accounts/679322/events/3782013/live.m3u8
 #EXTINF:-1 tvg-id="Canal2Salta.ar" status="online",Canal 2 (Salta)
 https://vivo.solumedia.com:19360/tv2salta/tv2salta.m3u8
-#EXTINF:-1 tvg-id="Canal2Sanagasta.ar" status="online",Canal 2 (Sanagasta)
+#EXTINF:-1 tvg-id="Canal2Sanagasta.ar" status="error",Canal 2 (Sanagasta)
 https://stmvideo1.livecastv.com/canal2/canal2/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal3PinamarHD.ar" status="online",CN3 Pinamar (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/canal3/canal3.stream/playlist.m3u8
@@ -79,10 +79,10 @@ https://streamcasthd.com:1936/canal9riocuartotv/canal9riocuartotv/playlist.m3u8
 https://5b3050bb1b2d8.streamlock.net/viviloendirecto2/canal9/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10Nortevision.ar" status="online",Canal10 Nortevision
 https://vivo.solumedia.com:19360/nortevision/nortevision.m3u8
-#EXTINF:-1 tvg-id="Canal10RioNegro.ar" status="online",Canal 10 Rio Negro (720p) [Not 24/7]
-http://panel.dattalive.com:1935/8204/8204/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10RioNegro.ar" status="online",Canal 10 Rio Negro
 https://panel.dattalive.com/8204/8204/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal10RioNegro.ar" status="online",Canal 10 Rio Negro (720p) [Not 24/7]
+http://panel.dattalive.com:1935/8204/8204/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal11LaRioja.ar" status="online",Canal 11 La Rioja (Fénix Multiplataforma) (360p)
 http://stmv4.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal12Web.ar" status="online",Canal 12 Puerto Madryn (720p) [Not 24/7]
@@ -188,7 +188,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://srv1.zcast.com.br/lavozdetucuman/lavozdetucuman/playlist.m3u8
 #EXTINF:-1 tvg-id="LitusTV.ar" status="online",Litus TV
 https://stream.arcast.com.ar/litustv/ngrp:litustv_all/playlist.m3u8
-#EXTINF:-1 tvg-id="LTOTelevision.ar" status="error",LTO Televisión [Not 24/7]
+#EXTINF:-1 tvg-id="LTOTelevision.ar" status="online",LTO Televisión [Not 24/7]
 https://ltocatamarca.github.io/ltotv.m3u8
 #EXTINF:-1 tvg-id="MetropolitanaFM.ar" status="online",Metropolitana FM
 https://panel.dattalive.com/MetropolitanaFM/MetropolitanaFM/playlist.m3u8
