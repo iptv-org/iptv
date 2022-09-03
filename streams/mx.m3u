@@ -39,7 +39,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://5fa5de1a545ae.streamlock.net/sisjalisciense/sisjalisciense/playlist.m3u8
 #EXTINF:-1 tvg-id="MariaVision.mx" status="online",María Visión Mexico (360p) [Not 24/7]
 https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:Mariavision/master.m3u8
-#EXTINF:-1 tvg-id="MexicoTravelChannel.mx" status="error",México Travel Channel (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="MexicoTravelChannel.mx" status="online",México Travel Channel (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7v76vf
 #EXTINF:-1 tvg-id="MexiquenseTV.mx" status="error",Mexiquense TV (720p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/mexiquense/videomexiquense/playlist.m3u8
@@ -59,11 +59,11 @@ https://canal10.mediaflix.istream.mx/wza_live/live/movil/playlist.m3u8
 https://d24sa4vr9gvjv.cloudfront.net/index.m3u8
 #EXTINF:-1 tvg-id="QuieroTV.mx" status="online",Quiero TV (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x8452uw
-#EXTINF:-1 tvg-id="RCGTV2.mx" status="timeout",RCG TV 2 (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="RCGTV2.mx" status="error",RCG TV 2 (360p) [Not 24/7]
 http://wowzacontrol.com:1936/stream23/stream23/playlist.m3u8
-#EXTINF:-1 tvg-id="RCGTV2.mx" status="timeout",RCG TV 2 (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="RCGTV2.mx" status="error",RCG TV 2 (360p) [Not 24/7]
 https://5caf24a595d94.streamlock.net:1937/stream23/stream23/playlist.m3u8
-#EXTINF:-1 tvg-id="RCGTV3.mx" status="timeout",RCG TV 3 (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="RCGTV3.mx" status="error",RCG TV 3 (360p) [Not 24/7]
 http://wowzacontrol.com:1936/stream56/stream56/playlist.m3u8
 #EXTINF:-1 tvg-id="RCGTV3.mx" status="error",RCG TV 3 (360p) [Not 24/7]
 https://5caf24a595d94.streamlock.net:1937/stream56/stream56/playlist.m3u8
@@ -91,7 +91,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC_mwCcsKDJLSWjply5s0h8w/live
 #EXTINF:-1 tvg-id="TelevisaMexicali.mx" status="timeout",Televisa Mexicali (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcmuFsMIIIHO3LBqeBVfm8Q/live
-#EXTINF:-1 tvg-id="TelevisaMonterrey.mx" status="online",Televisa Monterrey (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaMonterrey.mx" status="error",Televisa Monterrey (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCGDJLLphnP0zQQaE3kgo5Wg/live
 #EXTINF:-1 tvg-id="TelevisaMorelos.mx" status="timeout",Televisa Morelos
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcC9ykApQrgl4UxbKg2U4zw/live
@@ -141,8 +141,6 @@ https://edge.canaldelcongreso.gob.mx/live_hd1/smil:canal-hd1.smil/playlist.m3u8
 https://5ca3e84a76d30.streamlock.net/gpacifico1/smil:gpculiacan.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TV Unam (720p)
 https://5ca3e84a76d30.streamlock.net/tvunam/videotvunam/playlist.m3u8?DVR=
-#EXTINF:-1 tvg-id="" status="online",TELE SISTEMA CANAL 9 (486p) [Geo-blocked]
-http://k4.usastreams.com/ARBtv/ARBtv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal del Congreso 45.2
 https://edge.canaldelcongreso.gob.mx/live_sd2/smil:canal-sd2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Lo Mejor De La Liga MX
@@ -161,6 +159,8 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://conceptoweb-studio.com/
 http://jjooliveclarovideo.akamaized.net/Content/hls/Live/Channel(tveducationch01)/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Multimedios Saltillo [Geo-blocked]
 http://mdstrm.com/live-stream-playlist/5d5d51a4e9a40e25f4a0332c.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",TELE SISTEMA CANAL 9 (486p) [Geo-blocked]
+http://k4.usastreams.com/ARBtv/ARBtv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Multipremier (480p)
 http://201.168.205.12:8000/play/a0cp/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Imagen TV (720p) [Not 24/7]
