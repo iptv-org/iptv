@@ -35,13 +35,13 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CNE
 https://s13.tntendirect.com/d17/live/playlist.m3u8
 #EXTINF:-1 tvg-id="DBM.fr" status="online",DBM (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
-#EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
+#EXTINF:-1 tvg-id="DBMTV.fr" status="error",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
-#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="online",El Heddaf TV [Geo-blocked]
+#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="error",El Heddaf TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/playlist.m3u8
-#EXTINF:-1 tvg-id="EMCITV.fr" status="online",EMCI TV (1080p)
+#EXTINF:-1 tvg-id="EMCITV.fr" status="error",EMCI TV (1080p)
 https://emci-fr-hls.akamaized.net/hls/live/2007265/emcifrhls/index.m3u8
-#EXTINF:-1 tvg-id="EMCITV.fr" status="online",EMCI TV Montreal (1080p)
+#EXTINF:-1 tvg-id="EMCITV.fr" status="error",EMCI TV Montreal (1080p)
 https://emci-td-hls.akamaized.net/hls/live/2007264/emcitdhls/index.m3u8
 #EXTINF:-1 tvg-id="FashionTVCzechSlovak.fr" status="online",FashionTV Czech&Slovak (450p) [Not 24/7]
 http://lb.streaming.sk/fashiontv/stream/playlist.m3u8
@@ -49,7 +49,7 @@ http://lb.streaming.sk/fashiontv/stream/playlist.m3u8
 https://fash1043.cloudycdn.services/slive/ftv_ftv_midnite_k1y_27049_midnite_secr_108_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVMidnightSecrets.fr" status="online",Fashion TV Midnight Secrets (1080p)
 https://fash1043.cloudycdn.services/slive/ftv_midnite_secrets_adaptive.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="FashionTVNewYork.fr" status="error",Fashion TV New York (PG13) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="FashionTVNewYork.fr" status="online",Fashion TV New York (PG13) (720p) [Not 24/7]
 https://fash2043.cloudycdn.services/slive/ftv_ftv_gmt_-5_qko_43090_default_1225_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVParis.fr" status="online",Fashion TV Paris (144p)
 https://fash1043.cloudycdn.services/slive/ftv_paris_adaptive.smil/playlist.m3u8
@@ -142,7 +142,7 @@ http://51.210.199.21/hls/stream.m3u8
 http://51.210.199.59/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PublicSenat.fr" status="timeout",Public Sénat (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xkxbzc
-#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="online",Qwest TV Jazz & Beyond (576p)
+#EXTINF:-1 tvg-id="QwestTVJazzBeyond.fr" status="error",Qwest TV Jazz & Beyond (576p)
 http://210.210.155.37/uq2663/h/h94/01.m3u8
 #EXTINF:-1 tvg-id="RMCDecouverte.fr" status="online",RMC Découverte (720p)
 https://s13.tntendirect.com/rmcdecouverte/live/playlist.m3u8
@@ -162,9 +162,9 @@ https://shls-tiji-tv-prod-dub.shahid.net/out/v1/ee05878a88474f408ff04495d44cc249
 http://188.40.68.167/russia/tiji/playlist.m3u8
 #EXTINF:-1 tvg-id="TMC.fr" status="online",TMC (720p)
 https://s13.tntendirect.com/tmc/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="error",TV5 Monde Asie (576p)
+#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="timeout",TV5 Monde Asie (576p)
 http://210.210.155.37/dr9445/s/s24/index.m3u8
-#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="timeout",TV5 Monde Style HD (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TV5MondeStyleHD.fr" status="error",TV5 Monde Style HD (576p) [Geo-blocked]
 http://210.210.155.35/dr9445/h/h01/index.m3u8
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="online",TV7 Bordeaux (720p)
 http://live.digiteka.com/1/RVNZMmJtUURmd09I/U0dNU0tk/hls/live/playlist.m3u8
@@ -216,7 +216,7 @@ https://streamer01.myvideoplace.tv/streamer02/hls/MDS_VIA_PAD_301117.m3u8
 http://51.210.199.16/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="online",Francophonie (360p)
 http://mv2.tvfrancophonie.org/live/Stream1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Trace Latina
+#EXTINF:-1 tvg-id="" status="timeout",Trace Latina
 http://185.234.217.27:8002/play/a02f/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
