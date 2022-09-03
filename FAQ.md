@@ -112,7 +112,7 @@ After you have your m3u8 link, add your channel information onto the [Database](
 
 Note: Because this is an community repository, we need some approvals from the administrators to continue. See [discussion](https://github.com/iptv-org/iptv/discussions/8412).
 
-Note 2: If your television station broadcasts from other television stations, please read the **Can I safely add an FTA channel that broadcasts PPV events or pay programming?** section.
+Note 2: If your television station broadcasts from other television stations, please read the *[Can I safely add an FTA channel that broadcasts PPV events or pay programming?](#Can-i-safely-add-an-fta-channel-that-broadcasts-ppv-events-or-pay-programming)* section.
 
 Based on [#650](https://github.com/iptv-org/iptv/issues/650) and [#6654](https://github.com/iptv-org/iptv/discussions/6654) (basic information).
 
