@@ -110,7 +110,9 @@ We are a community initiative and you don't need to pay anything to stay on this
 
 After you have your m3u8 link, add your channel information onto the [Database](https://github.com/iptv-org/database) repository, and submit an [issue](https://github.com/iptv-org/iptv/issues/new/choose) to propose it to us.
 
-Note: Please check the fair use (also called "fair dealing" or "copyright exception") situation in your country where it is broadcasted. This point should be important when broadcasting other contents without problems on your TV channel.
+Note: Because this is an community repository, we need some approvals from the administrators to continue. See [discussion](https://github.com/iptv-org/iptv/discussions/8412).
+
+Note 2: If your television station broadcasts from other television stations, please read the **Can I safely add an FTA channel that broadcasts PPV events or pay programming?** section.
 
 Based on [#650](https://github.com/iptv-org/iptv/issues/650) and [#6654](https://github.com/iptv-org/iptv/discussions/6654) (basic information).
 
