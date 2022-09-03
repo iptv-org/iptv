@@ -41,8 +41,6 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts
 https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Ecovision.do" status="online",Ecovisión (480p) [Not 24/7]
 https://vdo1.streamgato.us:3014/live/ecovisionlive.m3u8
-#EXTINF:-1 tvg-id="Entelevision.do" status="online",Entelevisión
-https://video.misistemareseller.com/entelevision/entelevision/playlist.m3u8
 #EXTINF:-1 tvg-id="Farovision.do" status="online",Farovisión
 https://5790d294af2dc.streamlock.net/8128/8128/playlist.m3u8
 #EXTINF:-1 tvg-id="FuegoTV.do" status="online",Fuego TV (720p) [Not 24/7]
@@ -69,10 +67,6 @@ https://ss8.domint.net:3108/mia_str/lamiatv/playlist.m3u8
 https://uni01rtmp.tulix.tv/playout2multi9/lavozdemaria.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="LunaTVCanal53.do" status="online",Luna TV Canal 53
 https://ss2.domint.net:3228/luna_str/lunatv/playlist.m3u8
-#EXTINF:-1 tvg-id="Megavision.do" status="online",Megavisión
-http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
-#EXTINF:-1 tvg-id="MegavisionCanal43.do" status="online",Megavision Canal 43 (480p) [Not 24/7]
-http://stream3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 #EXTINF:-1 tvg-id="Microvision10.do" status="online",Microvision 10 (720p) [Not 24/7]
 http://190.103.183.24:1935/live/MicroHD/playlist.m3u8
 #EXTINF:-1 tvg-id="MisionELTV.do" status="online",Mision ELTV (480p) [Not 24/7]
@@ -93,10 +87,6 @@ https://live.teledomdr.com:3131/live/nitidatvlive.m3u8
 https://ss3.domint.net:3134/otv_str/orbittv/playlist.m3u8
 #EXTINF:-1 tvg-id="PeraviaVision.do" status="online",Peravía Visión
 https://ss5.domint.net:3048/pvv_str/peravia/playlist.m3u8
-#EXTINF:-1 tvg-id="PH.do" status="online",PH (720p) [Not 24/7]
-https://cm.hostlagarto.com:4445/phtv/Phtv.myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="PHTVCanal34.do" status="online",PHTV Canal 34 (720p) [Not 24/7]
-https://cm.hostlagarto.com:4445/phtv/Phtv.myStream/chunks.m3u8
 #EXTINF:-1 tvg-id="PuntaCanaTV.do" status="online",Punta Cana TV (720p) [Not 24/7]
 https://cdn4.hostlagarto.com:8081/static/puntacanatv/playlist.m3u8
 #EXTINF:-1 tvg-id="ReadyTVCanal6.do" status="online",Ready TV Canal 6 (720p) [Not 24/7]
@@ -125,7 +115,7 @@ https://ss8.domint.net:3128/stv_str/tv55/master.m3u8
 http://108.175.14.125:1935/tdn/tdn/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleBendicion.do" status="timeout",TeleBendicion (720p) [Not 24/7]
 http://ss8.domint.net:2124/tbt_str/telebendicion/playlist.m3u8
-#EXTINF:-1 tvg-id="Telecanal28.do" status="blocked",Telecanal 28 (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Telecanal28.do" status="error",Telecanal 28 (360p) [Geo-blocked]
 http://cm.hostlagarto.com:8081/Telecanal-28/telecanal.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCibaoHD.do" status="online",TeleCibao (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Telecibao/Telecibao/playlist.m3u8
@@ -151,7 +141,7 @@ http://newyorkstream.ddns.net:1935/telenord10/telenord10/playlist.m3u8
 http://newyorkstream.ddns.net:1935/telenord12/telenord12/playlist.m3u8
 #EXTINF:-1 tvg-id="Telesantodomingo.do" status="online",Telesantodomingo
 https://cdn5.streamgato.us:3315/live/telesantodomingolive.m3u8
-#EXTINF:-1 tvg-id="TelesurCanal10.do" status="error",Telesur Canal (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelesurCanal10.do" status="online",Telesur Canal (360p) [Not 24/7]
 https://ss3.domint.net:3124/tls_str/telesur/playlist.m3u8
 #EXTINF:-1 tvg-id="Teletur.do" status="error",Teletur
 https://cdn4.hostlagarto.com:8081/static/teletur/playlist.m3u8
@@ -183,3 +173,13 @@ https://ss9.domint.net:3036/yv_str/yunavision/playlist.m3u8
 https://ss3.domint.net:3108/zol_str/vzol/playlist.m3u8
 #EXTINF:-1 tvg-id="ZTV.do" status="online",ZTV (720p) [Not 24/7]
 https://lb00zdigital.streamprolive.com/mnt/hls/live.m3u8
+#EXTINF:-1 tvg-id="" status="online",Entelevisión
+https://video.misistemareseller.com/entelevision/entelevision/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",PHTV Canal 34 (720p) [Not 24/7]
+https://cm.hostlagarto.com:4445/phtv/Phtv.myStream/chunks.m3u8
+#EXTINF:-1 tvg-id="" status="online",PH (720p) [Not 24/7]
+https://cm.hostlagarto.com:4445/phtv/Phtv.myStream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Megavisión
+http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Megavision Canal 43 (480p) [Not 24/7]
+http://stream3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
