@@ -12,14 +12,14 @@ http://akaal.zecast.net/akaal-live/smil:akaaltv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Alaraby2TV.uk" status="online",Alaraby 2 TV (1080p)
 https://alaraby.cdn.octivid.com/alaraby2n/smil:alaraby2n.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AlarabyTV.uk" status="online",Alaraby TV (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlarabyTv_News/live
-#EXTINF:-1 tvg-id="AlarabyTV.uk" status="online",Alaraby TV (1080p)
 https://alaraby.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AlarabyTV.uk" status="timeout",Alaraby TV (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlarabyTv_News/live
 #EXTINF:-1 tvg-id="AlHiwarTV.uk" status="online",Alhiwar TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/alhiwarchannels/live
 #EXTINF:-1 tvg-id="AlHiwarTV.uk" status="online",Alhiwar TV (1080p) [Not 24/7]
 https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AlMagharibia.uk" status="online",Al Magharibia (1080p)
+#EXTINF:-1 tvg-id="AlMagharibia.uk" status="timeout",Al Magharibia (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlmagharibiaTv/live
 #EXTINF:-1 tvg-id="AnandTV.uk" status="blocked",Anand TV (720p) [Not 24/7]
 https://live-anandtv.anandmedia.net/anandtvapp/anandtv/index.m3u8
@@ -32,7 +32,7 @@ https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bb
 #EXTINF:-1 tvg-id="BBCAlba.uk" status="blocked",BBC Alba (540p) [Geo-blocked]
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_alba/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2_http.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
@@ -42,7 +42,7 @@ https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_ar
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2_http.mpd
+https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (540p)
@@ -253,7 +253,7 @@ https://ap02.iqplay.tv:8082/iqb8002/3m9n/playlist.m3u8
 #EXTINF:-1 tvg-id="EnglishClubTV.uk" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",English Club TV (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s37/index.m3u8
-#EXTINF:-1 tvg-id="FadakTV.uk" status="online",Fadak TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="FadakTV.uk" status="timeout",Fadak TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/KhodamAlMahdi2/live
 #EXTINF:-1 tvg-id="FreeSports.uk" status="online",FreeSports (1080p) [Not 24/7]
 https://d3cq7cdp2cfi92.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-2ff27mp9b8422-prod/hls-harvester2-1293-prod/us-east-1/cc-2ff27mp9b8422/master.m3u8
@@ -269,7 +269,7 @@ http://57d6b85685bb8.streamlock.net:1935/abrgemporiaukgfx/livestream_360p/index.
 https://halaldn.cdn.mangomolo.com/halavd/smil:halavd.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="HorseCountryTV.uk" status="online",Horse & Country TV (1080p)
 https://hnc-free-viewlift.amagi.tv/HNC_AUSTRALIA.m3u8
-#EXTINF:-1 tvg-id="IdealWorld.uk" status="online",Ideal World TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="IdealWorld.uk" status="timeout",Ideal World TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/IdealworldTvShopping/live
 #EXTINF:-1 tvg-id="IonTV.uk" status="online",iON TV (576p)
 https://ap02.iqplay.tv:8082/iqb8002/i09/playlist.m3u8
@@ -408,8 +408,12 @@ https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
 https://a.jsrdn.com/broadcast/22680_3BR3zocwi9/-0500/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",Brit Asia Live (US Eastern) (360p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
+#EXTINF:-1 tvg-id="" status="online",Brit Asia Live (US Pacific) (720p) [Not 24/7]
+https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hadi TV English and Urdu (720p)
 https://live.ishiacloud.com/haditv.co.uk/haditv1.m3u8
+#EXTINF:-1 tvg-id="" status="online",Hadi TV Indonesian and Thai (720p)
+https://live.ishiacloud.com/haditv.co.uk/haditv2.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hadi TV Azeri and Russian (720p)
 https://live.ishiacloud.com/haditv.co.uk/haditv3.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hadi TV Farsi (720p)
@@ -427,7 +431,3 @@ https://live.ishiacloud.com/haditv.co.uk/haditv8.m3u8
 https://vod2t.xpanded.com/x3tv2/index_wlan.m3u8
 #EXTINF:-1 tvg-id="" status="online",Latest TV [Not 24/7]
 https://5a0e89631aa14.streamlock.net/LatestTV/LatestTV/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Brit Asia Live (US Pacific) (720p) [Not 24/7]
-https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
-#EXTINF:-1 tvg-id="" status="online",Hadi TV Indonesian and Thai (720p)
-https://live.ishiacloud.com/haditv.co.uk/haditv2.m3u8
