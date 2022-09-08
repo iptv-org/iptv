@@ -49,11 +49,13 @@ async function updateStreams(items = [], results = {}, origins = {}) {
     if (buffer[stream.get('url')]) {
       await db.streams.remove({ _id: stream.get('_id') })
       removed++
-    } else if (stream.changed) {
-      stream.set('updated_at', { updated_at: now })
-      await db.streams.update({ _id: stream.get('_id') }, stream.data())
+    } else {
       buffer[stream.get('url')] = true
-      updated++
+      if (stream.changed) {
+        stream.set('updated_at', { updated_at: now })
+        await db.streams.update({ _id: stream.get('_id') }, stream.data())
+        updated++
+      }
     }
   }
 

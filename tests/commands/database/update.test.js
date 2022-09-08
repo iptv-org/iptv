@@ -21,14 +21,14 @@ it('can save results', () => {
 > node scripts/commands/database/update.js
 
 loading streams...
-found 8 streams
+found 10 streams
 loading check results...
 found 6 results
 loading origins...
 found 2 origins
 updating streams...
 updated 6 streams
-removed 1 duplicates
+removed 2 duplicates
 done
 `)
 
