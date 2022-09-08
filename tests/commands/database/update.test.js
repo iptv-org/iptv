@@ -28,7 +28,6 @@ loading origins...
 found 2 origins
 updating streams...
 updated 6 streams
-removed 2 duplicates
 done
 `)
 
