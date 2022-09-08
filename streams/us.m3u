@@ -214,10 +214,13 @@ https://vblive-c.viebit.com/5f0d9ca5-4e85-4c01-a426-9ec8d44c2c9c/chunklist.m3u8
 https://d2up1hmow19bcd.cloudfront.net/livecf/liveracing/playlist.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkAsia.sg" status="timeout",Cartoon Network Asia (720p)
 http://198.16.106.62:8278/streams/d/Cn/playlist.m3u8
-#EXTINF:-1 tvg-id="CartoonNetworkEast.us" status="online",Cartoon Network East TVE Feed (720p) [Geo-Blocked] [Not 24/7]
+#EXTINF:-1 tvg-id="CartoonNetworkEast.us" status="blocked",Cartoon Network East TVE Feed (720p) [Geo-Blocked] [Not 24/7]
 https://tve-live-lln.warnermediacdn.com/hls/live/2023167/tooneast/slate/VIDEO_0_3564000.m3u8
-#EXTINF:-1 tvg-id="CartoonNetworkEast.us" status="online",Cartoon Network East TVE Feed (480p) [Geo-Blocked] [Not 24/7]
+#EXTINF:-1 tvg-id="CartoonNetworkEast.us" status="blocked",Cartoon Network East TVE Feed (480p) [Geo-Blocked] [Not 24/7]
 https://tve-live-lln.warnermediacdn.com/hls/live/2023167/tooneast/slate/VIDEO_2_1964000.m3u8
+#EXTINF:-1 tvg-id="CartoonNetworkEast.us" status="online",Cartoon Network East (720p)
+#EXTVLCOPT:http-referrer=http://tv247.us/
+http://live.tv247.club/tv247/cn.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkWest.us" status="online",Cartoon Network West TVE Feed (720p) [Geo-Blocked]
 https://tve-live-lln.warnermediacdn.com/hls/live/2023180/toonwest/slate/VIDEO_0_3564000.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkWest.us" status="online",Cartoon Network West TVE Feed (480p) [Geo-Blocked]
