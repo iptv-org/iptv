@@ -39,7 +39,7 @@ https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n644
 https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/protocol/https/uiConfId/42816492/a.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
 #EXTINF:-1 tvg-id="CadenaElite.es" status="online",Cadena Elite (720p) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8004/index.m3u8
-#EXTINF:-1 tvg-id="Canal4ManchaCentro.es" status="online",Canal 4 Mancha Centro (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal4ManchaCentro.es" status="error",Canal 4 Mancha Centro (720p) [Not 24/7]
 https://5924d3ad0efcf.streamlock.net/canal4/canal4live/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10Emporda.es" status="online",Canal 10 Empordà (360p) [Not 24/7]
 http://ventdelnord.tv:8080/escala/directe.m3u8
@@ -78,9 +78,9 @@ https://cdnlive.shooowit.net/rtvalive/smil:channel1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalTaronja.es" status="blocked",Canal Taronja Osona i Moianés (480p) [Not 24/7]
 https://taronjavic.streaming-pro.com/hls/vic.m3u8
 #EXTINF:-1 tvg-id="ClanTVE.es" status="timeout",Clan TVE (1080p) [Geo-blocked]
-https://rtvelivestreamv3.akamaized.net/rtvesec/clan_bkp_dvr.m3u8
-#EXTINF:-1 tvg-id="ClanTVE.es" status="timeout",Clan TVE (1080p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/5466990.m3u8
+#EXTINF:-1 tvg-id="ClanTVE.es" status="error",Clan TVE (1080p) [Geo-blocked]
+https://rtvelivestreamv3.akamaized.net/rtvesec/clan_bkp_dvr.m3u8
 #EXTINF:-1 tvg-id="CMMTV.es" status="online",CMM TV (360p) [Not 24/7]
 http://cdnapi.kaltura.com/p/2288691/sp/39582391/playManifest/entryId/0_xs45iy5i/format/applehttp/.m3u8
 #EXTINF:-1 tvg-id="Condavision.es" status="timeout",Condavisión (720p) [Not 24/7]
@@ -189,7 +189,7 @@ https://streamer1.streamhost.org/salive/logosH/master.m3u8
 https://limited2.todostreaming.es/live/m95-livestream.m3u8
 #EXTINF:-1 tvg-id="MaestratTV.es" status="online",Maestrat TV (1080p) [Not 24/7]
 https://stream.maestrat.tv/hls/stream.m3u8
-#EXTINF:-1 tvg-id="MirameTV.es" status="online",Mírame TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="MirameTV.es" status="error",Mírame TV (360p) [Not 24/7]
 https://bit.controlstreams.com:5443/LiveApp/streams/mirametv.m3u8
 #EXTINF:-1 tvg-id="NavarraTV.es" status="error",Navarra TV (576p) [Not 24/7]
 https://pc-sumandocomunicacion-hls.flumotion.com/playlist.m3u8
@@ -291,6 +291,8 @@ http://78.41.83.88:8880/hls/unesd.m3u8
 http://ventdelnord.tv:8080/hls/directe.m3u8
 #EXTINF:-1 tvg-id="Vision6TV.es" status="online",Visión 6 TV (720p) [Not 24/7]
 https://secure3.todostreaming.es/live/visionseis-livestream.m3u8
+#EXTINF:-1 tvg-id="" status="online",Zafra TV (720p) [Not 24/7]
+https://cloud.streamingconnect.tv:455/radiotvzafra/radiotvzafra.m3u8
 #EXTINF:-1 tvg-id="" status="online",A3Series Internacional
 https://mdstrm.com/live-stream-playlist/5cae562e0ca2f30815231c0f.m3u8?access_token=DST4b676d7da5a2a92ee15f8efcbcd00606
 #EXTINF:-1 tvg-id="" status="online",A3Cine (1080p)
@@ -301,8 +303,6 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://ventdelnord.tv:8080/mola/directe.m3u8
 #EXTINF:-1 tvg-id="" status="online",LA7 (720p)
 https://cdnlive.shooowit.net/la7live/smil:channel1.smil/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",Zafra TV (720p) [Not 24/7]
-https://cloud.streamingconnect.tv:455/radiotvzafra/radiotvzafra.m3u8
 #EXTINF:-1 tvg-id="" status="online",CostadelSol TV
 https://limited11.todostreaming.es/live/benalmadena-livestream.m3u8
 #EXTINF:-1 tvg-id="" status="online",Aragón Radio (Zaragoza) [Not 24/7]
