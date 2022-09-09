@@ -19,7 +19,7 @@ https://alaraby.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/alhiwarchannels/live
 #EXTINF:-1 tvg-id="AlHiwarTV.uk" status="online",Alhiwar TV (1080p) [Not 24/7]
 https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AlMagharibia.uk" status="error",Al Magharibia (1080p)
+#EXTINF:-1 tvg-id="AlMagharibia.uk" status="online",Al Magharibia (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlmagharibiaTv/live
 #EXTINF:-1 tvg-id="AnandTV.uk" status="blocked",Anand TV (720p) [Not 24/7]
 https://live-anandtv.anandmedia.net/anandtvapp/anandtv/index.m3u8
@@ -218,10 +218,10 @@ https://ve-uhd-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uhd_stream_
 #EXTINF:-1 tvg-id="BBCWorldNewsEurope.uk" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",BBC World News (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s24/index.m3u8
-#EXTINF:-1 tvg-id="BoxHits.uk" status="online",Box Hits (576p)
-https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,boxhits-alldev.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/boxhits/
 #EXTINF:-1 tvg-id="BoxHits.uk" status="timeout",Box Hits (576p) [Geo-blocked]
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,boxhits-alldev.m3u8?yo.up=https://boxtv.secure.footprint.net/boxhits/
+#EXTINF:-1 tvg-id="BoxHits.uk" status="error",Box Hits (576p)
+https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,boxhits-alldev.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/boxhits/
 #EXTINF:-1 tvg-id="BritishMuslimTV.uk" status="online",British Muslim TV (576p) [Not 24/7]
 https://api.visionip.tv/live/ASHTTP/visiontvuk-international-britishmuslimtv-hsslive-25f-16x9-MB/playlist.m3u8
 #EXTINF:-1 tvg-id="CBBC.uk" status="blocked",CBBC HD (720p) [Geo-blocked]
@@ -287,10 +287,10 @@ https://live.playstop.me/1816184091/index.m3u8
 https://live.playstop.me/LS-63503-4/index.m3u8
 #EXTINF:-1 tvg-id="IslamChannel.uk" status="online",Islam Channel (576p) [Not 24/7]
 https://live.islamchannel.tv/islamtv_english/live.m3u8
-#EXTINF:-1 tvg-id="ITV2.uk" status="blocked",ITV2 (432p) [Geo-blocked]
-http://31.220.41.88:8081/live/itv2.stream/chunks.m3u8
 #EXTINF:-1 tvg-id="ITV2.uk" status="timeout",ITV2 (576p) [Not 24/7]
 http://93.190.139.35:8278/streams/d/itv2_antik/playlist.m3u8
+#EXTINF:-1 tvg-id="ITV2.uk" status="error",ITV2 (432p) [Geo-blocked]
+http://31.220.41.88:8081/live/itv2.stream/chunks.m3u8
 #EXTINF:-1 tvg-id="ITV3.uk" status="blocked",ITV3 (432p) [Geo-blocked]
 http://31.220.41.88:8081/live/itv3.stream/chunks.m3u8
 #EXTINF:-1 tvg-id="ITV4.uk" status="blocked",ITV4 (302p) [Geo-blocked]
@@ -337,7 +337,7 @@ https://livemtaasia.akamaized.net/hls/live/2039224/mtaasia2/playlist.m3u8
 https://chlivemta.akamaized.net/hls/live/2016718/mta8/playlist.m3u8
 #EXTINF:-1 tvg-id="NoorTV.uk" status="online",Noor TV (480p) [Not 24/7]
 http://45.76.186.114:8080/hls/noortv.m3u8
-#EXTINF:-1 tvg-id="NoorTV.uk" status="error",Noor TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="NoorTV.uk" status="online",Noor TV (480p) [Not 24/7]
 https://live.smartmediahouse.tv:8443/hls/ch1.m3u8
 #EXTINF:-1 tvg-id="PopMax.uk" status="online",POP Max (576p)
 https://live-sonybebanjo.simplestreamcdn.com/live/popmax/bitrate1.isml/live.mpd
@@ -365,8 +365,6 @@ https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3
 http://sports.ashttp9.visionip.tv/live/visiontvuk-sports-sportstonightlive-hsslive-25f-4x3-SD/chunklist.m3u8
 #EXTINF:-1 tvg-id="SportyStuffTV.uk" status="online",Sporty Stuff TV (720p)
 https://ayozat-live.secure2.footprint.net/egress/bhandler/ayozat/sportystufftv/playlist.m3u8
-#EXTINF:-1 tvg-id="SpotlightTV.uk" status="error",Spotlight TV (576p)
-https://securecontributions.sechls01.visionip.tv/live/securecontributions-securecontributions-spotlighttv-hsslive-25f-SD/chunklist.m3u8
 #EXTINF:-1 tvg-id="STV.uk" status="timeout",STV (1080p) [Geo-blocked]
 https://csm-e-stv.tls1.yospace.com/csm/live/139900483.m3u8
 #EXTINF:-1 tvg-id="STVPlus1.uk" status="timeout",STV+1 (1080p) [Geo-blocked]
@@ -404,12 +402,8 @@ https://1247634592.rsc.cdn77.org/1247634592/tracks-v1a1/mono.m3u8
 https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0500/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",Channel S (US Pacific) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
-#EXTINF:-1 tvg-id="" status="online",Channel S (US Pacific) (720p) [Not 24/7]
-https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",n TV (US Eastern) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22680_3BR3zocwi9/-0500/c.m3u8
-#EXTINF:-1 tvg-id="" status="online",Brit Asia Live (US Eastern) (360p) [Not 24/7]
-https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",Brit Asia Live (US Pacific) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
 #EXTINF:-1 tvg-id="" status="online",Hadi TV English and Urdu (720p)
@@ -431,5 +425,7 @@ https://live.ishiacloud.com/haditv.co.uk/haditv8.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://vod2t.xpanded.com/x3tv2/index_wlan.m3u8
-#EXTINF:-1 tvg-id="" status="online",Latest TV [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",Brit Asia Live (US Eastern) (360p) [Not 24/7]
+https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Latest TV [Not 24/7]
 https://5a0e89631aa14.streamlock.net/LatestTV/LatestTV/playlist.m3u8
