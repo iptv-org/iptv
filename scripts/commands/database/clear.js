@@ -17,22 +17,31 @@ async function main() {
 
   const streams = await db.streams.all()
 
-  let total = 0
+  let buffer = {}
+  let removed = 0
   logger.info('searching...')
   for (const stream of streams) {
     if (
       stream.status === 'error' &&
       date.utc().diff(stream.updated_at, 'day') >= options.threshold
     ) {
-      logger.info(stream.url)
+      logger.info(`${stream.url} (offline)`)
+      removed += await db.streams.remove({ url: stream.url }, { multi: true })
+    }
 
-      total += await db.streams.remove({ url: stream.url }, { multi: true })
+    const key = stream.url.toLowerCase()
+    if (buffer[key]) {
+      logger.info(`${stream.url} (duplicate)`)
+      await db.streams.remove({ _id: stream._id })
+      removed++
+    } else {
+      buffer[key] = true
     }
   }
 
   await db.streams.compact()
 
-  logger.info(`removed ${total} streams`)
+  logger.info(`removed ${removed} streams`)
 }
 
 main()
