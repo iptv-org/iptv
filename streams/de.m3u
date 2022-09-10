@@ -46,9 +46,9 @@ http://tv.artcom-venture.de:1322/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DeutschesMusikFernsehen.de" status="timeout",Deutsches Musik Fernsehen (720p) [Not 24/7]
 https://tv.artcom-venture.de/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/dwarabic/live
-#EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
 https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
+#EXTINF:-1 tvg-id="DWArabic.de" status="error",DW Arabic (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/dwarabic/live
 #EXTINF:-1 tvg-id="DWDeutsch.de" status="blocked",DW Deutsch (1080p) [Geo-blocked]
 https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutschPlus.de" status="blocked",DW Deutsch+ (1080p) [Geo-blocked]
@@ -93,7 +93,7 @@ http://58bd5b7a98e04.streamlock.net/medienasa-live/kulturmd_high/playlist.m3u8
 http://62.113.210.250/medienasa-live/mp4:kulturmd_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KulturMD.de" status="online",KulturMD (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:kulturmd_high/playlist.m3u8
-#EXTINF:-1 tvg-id="KWTVWildau.de" status="online",KW TV Wildau (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KWTVWildau.de" status="error",KW TV Wildau (720p) [Not 24/7]
 https://58af0c57eaf3e.streamlock.net/easycast11-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="Lausitzwelle.de" status="online",Lausitzwelle (Fernsehen) (1080p)
 https://5856e1a25f71a.streamlock.net/easycast9-live/mp4:livestreamhd10/playlist.m3u8
@@ -201,7 +201,7 @@ http://62.113.210.250/medienasa-live/ok-wernigerode_high/chunklist_w937425968.m3
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-wernigerode_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKWernigerode.de" status="online",OK Wernigerode (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-wernigerode_high/playlist.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",OK Wernigerode (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",OK Wernigerode (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-wernigerode_high/playlist.m3u8
 #EXTINF:-1 tvg-id="oldenburgeins.de" status="online",oldenburg eins (1080p) [Not 24/7]
 https://oeins.de/live/studio.m3u8
@@ -225,7 +225,7 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3u
 #EXTINF:-1 tvg-id="PUNKTum.de" status="online",Punktum S�dharz (1080p)
 http://62.113.210.250/medienasa-live/punktum_high/master.m3u8
-#EXTINF:-1 tvg-id="Radio21TV.de" status="online",Radio 21 TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Radio21TV.de" status="blocked",Radio 21 TV (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/22300508/events/6675945/live.m3u8
 #EXTINF:-1 tvg-id="RadioWeserTVBremen.de" status="online",Radio Weser TV Bremen
 https://5857499ee635b.streamlock.net/radiowesertv-live/_definst_/mp4:livestreamTV/playlist.m3u8
