@@ -4,24 +4,56 @@
 
 Collection of publicly available IPTV (Internet Protocol television) channels from all over the world.
 
-## Usage
+## Table of contents
+
+- 🚀 [How to use?](#how-to-use)
+- 📺 [Playlists](#playlists)
+- 🗓 [EPG](#epg)
+- 🗄 [Database](#database)
+- 👨‍💻 [API](#api)
+- 📚 [Resources](#resources)
+- 💬 [Discussions](#discussions)
+- 🛠 [Contribution](#contribution)
+- ⚖ [Legal](#legal)
+- © [License](#license)
+
+## How to use?
+
+Simply insert one of the links below into [any video player](https://github.com/iptv-org/awesome-iptv#apps) that supports live streaming and press _Open_.
 
 ![VLC Network Panel](https://github.com/iptv-org/iptv/raw/master/.readme/preview.png)
 
-To watch IPTV, simply insert one of the links below into any player that supports M3U playlists:
+## Playlists
 
-- `https://iptv-org.github.io/iptv/index.m3u`
-- `https://iptv-org.github.io/iptv/index.nsfw.m3u` (includes adult channels)
-- `https://iptv-org.github.io/iptv/index.category.m3u` (grouped by category)
-- `https://iptv-org.github.io/iptv/index.country.m3u` (grouped by country)
-- `https://iptv-org.github.io/iptv/index.language.m3u` (grouped by language)
-- `https://iptv-org.github.io/iptv/index.region.m3u` (grouped by region)
+There are several versions of playlists that differ in the way they are grouped.
 
-### Playlists by category
+### Main playlist
+
+Playlist includes all known channels except adult channels.
+
+```
+https://iptv-org.github.io/iptv/index.m3u
+```
+
+And here is the full version:
+
+```
+https://iptv-org.github.io/iptv/index.nsfw.m3u
+```
+
+### Grouped by category
 
 <details>
 <summary>Expand</summary>
 <br>
+
+Playlist in which each channel has its _category_ as a group title:
+
+```
+https://iptv-org.github.io/iptv/index.category.m3u
+```
+
+Same thing, but split up into separate files:
 
 <!-- prettier-ignore -->
 <table>
@@ -63,11 +95,19 @@ To watch IPTV, simply insert one of the links below into any player that support
 
 </details>
 
-### Playlists by language
+### Grouped by language
 
 <details>
 <summary>Expand</summary>
 <br>
+
+Playlist in which each channel has its _language_ as a group title:
+
+```
+https://iptv-org.github.io/iptv/index.language.m3u
+```
+
+Same thing, but split up into separate files:
 
 <!-- prettier-ignore -->
 <table>
@@ -85,11 +125,19 @@ To watch IPTV, simply insert one of the links below into any player that support
 
 </details>
 
-### Playlists by country
+### Grouped by country
 
 <details>
 <summary>Expand</summary>
 <br>
+
+Playlist in which each channel has its _country_ as a group title:
+
+```
+https://iptv-org.github.io/iptv/index.country.m3u
+```
+
+Same thing, but split up into separate files:
 
 <!-- prettier-ignore -->
 <table>
@@ -353,11 +401,19 @@ To watch IPTV, simply insert one of the links below into any player that support
 
 </details>
 
-### Playlists by region
+### Grouped by region
 
 <details>
 <summary>Expand</summary>
 <br>
+
+Playlist in which each channel has its _region_ as a group title:
+
+```
+https://iptv-org.github.io/iptv/index.region.m3u
+```
+
+Same thing, but split up into separate files:
 
 <!-- prettier-ignore -->
 <table>
@@ -411,9 +467,23 @@ The API documentation can be found in the [iptv-org/api](https://github.com/iptv
 
 Links to other useful IPTV-related resources can be found in the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
 
+## Discussions
+
+If you have a question or an idea, you can post it in the [Discussions](https://github.com/iptv-org/iptv/discussions) tab.
+
 ## Contribution
 
 Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sending an issue or making a pull request.
+
+And thank you to everyone who has already contributed!
+
+### Backers
+
+<a href="https://opencollective.com/iptv-org"><img src="https://opencollective.com/iptv-org/backers.svg?width=890" /></a>
+
+### Contributors
+
+<a href="https://github.com/iptv-org/iptv/graphs/contributors"><img src="https://opencollective.com/iptv-org/contributors.svg?width=890" /></a>
 
 ## Legal
 
