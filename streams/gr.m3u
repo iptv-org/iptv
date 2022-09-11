@@ -61,10 +61,10 @@ https://ert-live-bcbs15228.siliconweb.com/media/ert_news/ert_news.m3u8
 https://ert-live-bcbs15228.siliconweb.com/media/ert_sports_ww/ert_sports2_ww.m3u8
 #EXTINF:-1 tvg-id="ERTSports3.gr" status="online",ERT Sports 3 (1080p) [Geo-blocked]
 https://ert-live-bcbs15228.siliconweb.com/media/ert_sports_ww/ert_sports3_ww.m3u8
-#EXTINF:-1 tvg-id="ERTWorld.gr" status="online",ERT World (480p)
-http://wpso.com:1936/hls/wzra.m3u8
 #EXTINF:-1 tvg-id="ERTWorld.gr" status="online",ERT World (720p)
 https://ert-live-bcbs15228.siliconweb.com/media/ert_world/ert_world.m3u8
+#EXTINF:-1 tvg-id="ERTWorld.gr" status="online",ERT World (480p)
+http://wpso.com:1936/hls/wzra.m3u8
 #EXTINF:-1 tvg-id="FarosTV2.gr" status="blocked",Faros TV2 (480p) [Geo-blocked]
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
@@ -81,10 +81,10 @@ http://web.onair-radio.eu:1935/groovytv/groovytv/playlist.m3u8
 https://l5.cloudskep.com/hellenictv/htv/playlist.m3u8
 #EXTINF:-1 tvg-id="HighTV.gr" status="online",High TV (200p) [Not 24/7]
 http://live.streams.ovh:1935/hightv/hightv/playlist.m3u8
-#EXTINF:-1 tvg-id="IonianTVHD.gr" status="online",Ionian Channel (720p) [Not 24/7]
-https://stream.ioniantv.gr/ionian/live_abr/playlist.m3u8
 #EXTINF:-1 tvg-id="IonianTVHD.gr" status="online",Ionian Channel (1080p) [Not 24/7]
 http://stream.ioniantv.gr:8081/ionian/live/playlist.m3u8
+#EXTINF:-1 tvg-id="IonianTVHD.gr" status="online",Ionian Channel (720p) [Not 24/7]
+https://stream.ioniantv.gr/ionian/live_abr/playlist.m3u8
 #EXTINF:-1 tvg-id="IridaTV.gr" status="online",Irida TV (226p) [Not 24/7]
 https://www.hellasnet.tv/rest.live.hn/ws.iri/playlist.m3u8
 #EXTINF:-1 tvg-id="KidsTV.gr" status="online",Kids TV (480p)
@@ -145,7 +145,7 @@ https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8
 https://til.pp.ua:3424/live/superblive.m3u8
 #EXTINF:-1 tvg-id="Tilemousiki.gr" status="online",Tilemousiki (480p) [Not 24/7]
 http://wpso.com:1936/hls/music1.m3u8
-#EXTINF:-1 tvg-id="TV100.gr" status="error",TV 100 (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV100.gr" status="online",TV 100 (576p) [Not 24/7]
 https://live.fm100.gr/hls/tv100/index.m3u8
 #EXTINF:-1 tvg-id="TVCreta.gr" status="online",Creta (540p) [Not 24/7]
 http://live.streams.ovh:1935/tvcreta/tvcreta/playlist.m3u8
@@ -157,14 +157,24 @@ http://live.streams.ovh:1935/tvfilopoli/tvfilopoli/playlist.m3u8
 http://web.onair-radio.eu:1935/explorecy/explorecy/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Alert (576p) [Not 24/7]
 https://itv.streams.ovh/ALEERT/ALEERT/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Alpha BUP
+http://78.83.87.222:9999/play/a011/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Camera Smile (480p)
+https://nrpus.bozztv.com/36bay2/gusa-camerasmile/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",ERT News 2 (720p) [Geo-blocked]
 https://ert-live-bcbs15228.siliconweb.com/media/ert_news_2/ert_news_2.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",ERT Sports (1080p) [Geo-blocked]
+https://ertsports-live.ert.insyscd.net/out/v1/db0b54e8d25a47dcb336cf114c4d1860/ertsports-live.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",M.TV
+http://78.83.87.222:9999/play/a015/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Messinia TV
 http://176.9.123.140:1935/messinia/messinia/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Skai (720p)
 https://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Skai (720p)
 https://skai-live.siliconweb.com/media/cambria4/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Star BUP
+http://78.83.87.222:9999/play/a017/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Start TV
 https://live.cast-control.eu/StartMedia/StartMedia/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Zerouno TV (720p)
@@ -179,17 +189,7 @@ https://streamer-cache.grnet.gr/parliament/parltv.sdp/master.m3u8
 https://streamer-cache.grnet.gr/parliament/hls/webtv.m3u8
 #EXTINF:-1 tvg-id="" status="online",Εκκλησία (1080p)
 https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",ΡΙΚ Sat (720p) [Not 24/7]
-http://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",ERT Sports (1080p) [Geo-blocked]
-https://ertsports-live.ert.insyscd.net/out/v1/db0b54e8d25a47dcb336cf114c4d1860/ertsports-live.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Alpha BUP
-http://78.83.87.222:9999/play/a011/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Camera Smile (480p)
-https://nrpus.bozztv.com/36bay2/gusa-camerasmile/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",M.TV
-http://78.83.87.222:9999/play/a015/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Star BUP
-http://78.83.87.222:9999/play/a017/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Ηλέκτρα TV (1080p) [Not 24/7]
 http://167.86.89.20:5080/LiveApp/streams/064918158666216168224216.m3u8
+#EXTINF:-1 tvg-id="" status="online",ΡΙΚ Sat (720p) [Not 24/7]
+http://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
