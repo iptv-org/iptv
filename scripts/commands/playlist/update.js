@@ -11,8 +11,8 @@ async function main() {
     streams,
     [
       'channel',
-      s => levels[s.status] || levels['default'],
       s => (s.channel ? '' : s.title),
+      s => levels[s.status] || levels['default'],
       'height',
       'frame_rate',
       'url'
