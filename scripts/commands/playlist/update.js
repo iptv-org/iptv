@@ -9,8 +9,15 @@ async function main() {
   const levels = { online: 1, blocked: 2, timeout: 3, error: 4, default: 5 }
   streams = orderBy(
     streams,
-    ['channel', s => levels[s.status] || levels['default'], 'height', 'frame_rate', 'url'],
-    ['asc', 'asc', 'desc', 'desc', 'asc']
+    [
+      'channel',
+      s => (s.channel ? '' : s.title),
+      s => levels[s.status] || levels['default'],
+      'height',
+      'frame_rate',
+      'url'
+    ],
+    ['asc', 'asc', 'asc', 'desc', 'desc', 'asc']
   )
 
   const files = _.groupBy(streams, 'filepath')
