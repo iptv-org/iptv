@@ -1,12 +1,12 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="France24Arabic.fr" status="online",France 24 Arabic (360p)
-http://81.94.196.205/tsstreamer/France24Arabic_SD.ts
 #EXTINF:-1 tvg-id="France24Arabic.fr" status="online",France 24 Arabic (720p)
 http://81.94.196.205/tsstreamer/France24Arabic_HD.ts
-#EXTINF:-1 tvg-id="France24French.fr" status="online",France 24 French (360p)
-http://81.94.196.204/tsstreamer/France24_SD.ts
+#EXTINF:-1 tvg-id="France24Arabic.fr" status="online",France 24 Arabic (360p)
+http://81.94.196.205/tsstreamer/France24Arabic_SD.ts
 #EXTINF:-1 tvg-id="France24French.fr" status="online",France 24 French (720p)
 http://81.94.196.204/tsstreamer/France24_HD.ts
+#EXTINF:-1 tvg-id="France24French.fr" status="online",France 24 French (360p)
+http://81.94.196.204/tsstreamer/France24_SD.ts
 #EXTINF:-1 tvg-id="RotanaCinemaKSA.sa" status="online",Rotana Cinema KSA (360p)
 http://88.150.241.11/tsstreamer/RotCinemaLDAI_SD.ts
 #EXTINF:-1 tvg-id="RotanaClassic.sa" status="timeout",Rotana Classic (360p)
@@ -15,8 +15,6 @@ http://78.129.218.6/tsstreamer/RotClassicLDAI_SD.ts
 http://95.154.197.48/tsstreamer/AfricanewsLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",Africanews
 http://109.169.55.98/tsstreamer/AfricanewsLDAI_SD.ts
-#EXTINF:-1 tvg-id="" status="online",AutoAllstars
-http://78.129.253.189/tsstreamer/AutoAllstarsLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",AutoAllstars
 http://109.200.6.10/tsstreamer/AutoAllstarsLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",AWE
@@ -27,8 +25,6 @@ http://212.38.189.94/tsstreamer/AWELDAI_SD.ts
 http://176.227.202.68/tsstreamer/BalleBalleLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",BilliardTV
 http://31.3.227.66/tsstreamer/BilliardTVLDAI_SD.ts
-#EXTINF:-1 tvg-id="" status="online",BilliardTV
-http://88.150.241.11/tsstreamer/BilliardTVLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",Bloomberg
 http://176.227.202.68/tsstreamer/BloombergLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",BloombergQt
@@ -102,8 +98,6 @@ http://212.84.160.41/tsstreamer/OANLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",Qello
 http://109.200.6.10/tsstreamer/QelloLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",SacredSites
-http://95.154.230.50/tsstreamer/SacredSitesLDAI_SD.ts
-#EXTINF:-1 tvg-id="" status="online",SacredSites
 http://212.84.160.41/tsstreamer/SacredSitesLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",TimesNavbharat
 http://78.129.150.52/tsstreamer/TimesNavbharatLDAI_SD.ts
@@ -133,9 +127,15 @@ http://109.200.6.10/tsstreamer/WBCLDAI_SD.ts
 http://78.129.193.17/tsstreamer/ZoomLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="online",Zoom
 http://95.154.194.78/tsstreamer/ZoomLDAI_SD.ts
+#EXTINF:-1 tvg-id="" status="timeout",AutoAllstars
+http://78.129.253.189/tsstreamer/AutoAllstarsLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="timeout",BalleBalle
 http://78.129.218.6/tsstreamer/BalleBalleLDAI_SD.ts
+#EXTINF:-1 tvg-id="" status="timeout",BilliardTV
+http://88.150.241.11/tsstreamer/BilliardTVLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="timeout",Bloomberg
 http://78.129.218.6/tsstreamer/BloombergLDAI_SD.ts
 #EXTINF:-1 tvg-id="" status="timeout",BloombergQt
 http://78.129.218.6/tsstreamer/BloombergQtLDAI_SD.ts
+#EXTINF:-1 tvg-id="" status="timeout",SacredSites
+http://95.154.230.50/tsstreamer/SacredSitesLDAI_SD.ts
