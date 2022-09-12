@@ -185,6 +185,7 @@ Same thing, but split up into separate files:
     <tr><td>🇰🇭 Cambodia</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/kh.m3u</code></td></tr>
     <tr><td>🇨🇲 Cameroon</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cm.m3u</code></td></tr>
     <tr><td>🇨🇦 Canada</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ca.m3u</code></td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ontario</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ca-on.m3u</code></td></tr>
     <tr><td>🇨🇻 Cape Verde</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cv.m3u</code></td></tr>
     <tr><td>🇰🇾 Cayman Islands</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ky.m3u</code></td></tr>
     <tr><td>🇨🇫 Central African Republic</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cf.m3u</code></td></tr>
@@ -395,7 +396,6 @@ Same thing, but split up into separate files:
     <tr><td>🇿🇲 Zambia</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/zm.m3u</code></td></tr>
     <tr><td>🇿🇼 Zimbabwe</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/zw.m3u</code></td></tr>
     <tr><td>🇦🇽 Åland</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ax.m3u</code></td></tr>
-    <tr><td>Undefined</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
@@ -445,7 +445,6 @@ Same thing, but split up into separate files:
     <tr><td align="left">Sub-Saharan Africa</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/ssa.m3u</code></td></tr>
     <tr><td align="left">West Africa</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/wafr.m3u</code></td></tr>
     <tr><td align="left">Worldwide</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/int.m3u</code></td></tr>
-    <tr><td align="left">Undefined</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
