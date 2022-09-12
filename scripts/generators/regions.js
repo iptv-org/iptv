@@ -12,6 +12,8 @@ module.exports = async function (streams = []) {
 
 	const output = []
 	for (const region of regions) {
+		if (region.code === 'INT') continue
+
 		const regionCountries = region.countries
 		let areaCodes = regionCountries.map(code => `c/${code}`)
 
