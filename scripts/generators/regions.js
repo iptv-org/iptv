@@ -27,8 +27,5 @@ module.exports = async function (streams = []) {
 		output.push({ filepath: `regions/${region.code.toLowerCase()}.m3u`, items })
 	}
 
-	let items = _.filter(streams, stream => !stream.broadcast_area.length)
-	output.push({ filepath: 'regions/undefined.m3u', items })
-
 	return output
 }
