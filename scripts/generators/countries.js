@@ -40,8 +40,5 @@ module.exports = async function (streams = []) {
 		}
 	}
 
-	let items = _.filter(streams, stream => !stream.broadcast_area.length)
-	output.push({ filepath: 'countries/undefined.m3u', items })
-
 	return output
 }
