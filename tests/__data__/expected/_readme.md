@@ -185,7 +185,7 @@ Same thing, but split up into separate files:
     <tr><td>🇰🇭 Cambodia</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/kh.m3u</code></td></tr>
     <tr><td>🇨🇲 Cameroon</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cm.m3u</code></td></tr>
     <tr><td>🇨🇦 Canada</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ca.m3u</code></td></tr>
-    <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ontario</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ca-on.m3u</code></td></tr>
+    <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ontario</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ca-on.m3u</code></td></tr>
     <tr><td>🇨🇻 Cape Verde</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cv.m3u</code></td></tr>
     <tr><td>🇰🇾 Cayman Islands</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ky.m3u</code></td></tr>
     <tr><td>🇨🇫 Central African Republic</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cf.m3u</code></td></tr>
