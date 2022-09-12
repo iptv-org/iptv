@@ -34,9 +34,9 @@ jobs:
     continue-on-error: true
     strategy:
       fail-fast: false
-      # matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
-      matrix:
-        cluster_id: [1]
+      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      # matrix:
+      #   cluster_id: [1]
     steps:
       - uses: actions/checkout@v2
       - uses: FedericoCarboni/setup-ffmpeg@v1
