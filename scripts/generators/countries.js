@@ -33,7 +33,7 @@ module.exports = async function (streams = []) {
 
 			if (subdivisionItems.length) {
 				output.push({
-					filepath: `countries/${subdivision.code.toLowerCase()}.m3u`,
+					filepath: `subdivisions/${subdivision.code.toLowerCase()}.m3u`,
 					items: subdivisionItems
 				})
 			}
