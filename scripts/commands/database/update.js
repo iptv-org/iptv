@@ -149,6 +149,7 @@ function parseStatus(error) {
     case 'FFMPEG_PROCESS_TIMEOUT':
       return 'timeout'
     case 'HTTP_FORBIDDEN':
+    case 'HTTP_UNAUTHORIZED':
     case 'HTTP_UNAVAILABLE_FOR_LEGAL_REASONS':
       return 'blocked'
     default:
