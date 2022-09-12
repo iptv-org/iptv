@@ -16,10 +16,8 @@ module.exports = async function (streams = []) {
 		let countryRegionCodes = _.filter(regions, { countries: [country.code] }).map(
 			r => `r/${r.code}`
 		)
-		const countrySubdivisionCodes = _.filter(subdivisions, { country: country.code}).map(
-			r => `s/${r.code}`
-		)
-		const countryAreaCodes = countryRegionCodes.concat(countrySubdivisionCodes)
+		const countrySubdivisions = _.filter(subdivisions, { country: country.code })
+		const countryAreaCodes = countryRegionCodes.concat(countrySubdivisions.map(s => `s/${s.code}`))
 		countryAreaCodes.push(`c/${country.code}`)
 
 		let items = _.filter(streams, stream => {
@@ -27,6 +25,19 @@ module.exports = async function (streams = []) {
 		})
 
 		output.push({ filepath: `countries/${country.code.toLowerCase()}.m3u`, items })
+
+		for (let subdivision of countrySubdivisions) {
+			let subdivisionItems = _.filter(streams, stream => {
+				return stream.broadcast_area.includes(`s/${subdivision.code}`)
+			})
+
+			if (subdivisionItems.length) {
+				output.push({
+					filepath: `countries/${subdivision.code.toLowerCase()}.m3u`,
+					items: subdivisionItems
+				})
+			}
+		}
 	}
 
 	let items = _.filter(streams, stream => !stream.broadcast_area.length)
