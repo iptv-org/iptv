@@ -19,9 +19,7 @@ main()
 async function updateStreams(items = [], results = {}, origins = {}) {
   logger.info('updating streams...')
 
-  let buffer = {}
   let updated = 0
-  let removed = 0
   const now = dayjs.utc().format()
   for (const item of items) {
     const stream = store.create(item)
@@ -46,13 +44,9 @@ async function updateStreams(items = [], results = {}, origins = {}) {
       }
     }
 
-    if (buffer[stream.get('url')]) {
-      await db.streams.remove({ _id: stream.get('_id') })
-      removed++
-    } else if (stream.changed) {
+    if (stream.changed) {
       stream.set('updated_at', { updated_at: now })
       await db.streams.update({ _id: stream.get('_id') }, stream.data())
-      buffer[stream.get('url')] = true
       updated++
     }
   }
@@ -60,7 +54,6 @@ async function updateStreams(items = [], results = {}, origins = {}) {
   db.streams.compact()
 
   logger.info(`updated ${updated} streams`)
-  logger.info(`removed ${removed} duplicates`)
   logger.info('done')
 }
 
@@ -156,6 +149,7 @@ function parseStatus(error) {
     case 'FFMPEG_PROCESS_TIMEOUT':
       return 'timeout'
     case 'HTTP_FORBIDDEN':
+    case 'HTTP_UNAUTHORIZED':
     case 'HTTP_UNAVAILABLE_FOR_LEGAL_REASONS':
       return 'blocked'
     default:
