@@ -12,6 +12,8 @@ module.exports = async function (streams = []) {
 
 	const output = []
 	for (const region of regions) {
+		if (region.code === 'INT') continue
+
 		const regionCountries = region.countries
 		let areaCodes = regionCountries.map(code => `c/${code}`)
 
@@ -26,9 +28,6 @@ module.exports = async function (streams = []) {
 		let items = _.filter(streams, stream => _.intersection(stream.broadcast_area, areaCodes).length)
 		output.push({ filepath: `regions/${region.code.toLowerCase()}.m3u`, items })
 	}
-
-	let items = _.filter(streams, stream => !stream.broadcast_area.length)
-	output.push({ filepath: 'regions/undefined.m3u', items })
 
 	return output
 }
