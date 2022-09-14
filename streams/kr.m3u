@@ -8,9 +8,9 @@ https://allanf181.github.io/adaptive-streams/streams/kr/Anione.m3u8
 #EXTINF:-1 tvg-id="Aniplus.kr" status="online",Aniplus (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/Aniplus.m3u8
 #EXTINF:-1 tvg-id="AniplusAsia.sg" status="online",Aniplus (Indonesian subtitle) (576p) [Geo-blocked]
-http://210.210.155.35/dr9445/h/h02/index.m3u8
-#EXTINF:-1 tvg-id="AniplusAsia.sg" status="online",Aniplus (Indonesian subtitle) (576p) [Geo-blocked]
 http://210.210.155.37/dr9445/h/h02/index.m3u8
+#EXTINF:-1 tvg-id="AniplusAsia.sg" status="error",Aniplus (Indonesian subtitle) (576p) [Geo-blocked]
+http://210.210.155.35/dr9445/h/h02/index.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
 http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
@@ -20,11 +20,11 @@ http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/pla
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
 http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
 https://amdlive-ch03-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ArirangTV.kr" status="error",Arirang (720p)
-https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AsiaN.kr" status="online",AsiaN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/AsiaN.m3u8
 #EXTINF:-1 tvg-id="BadukTV.kr" status="online",Baduk TV (1080p) [Not 24/7]
@@ -95,16 +95,16 @@ rtsp://ebsonair.ebs.co.kr/ebsutablet500k/tablet500k
 http://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-id="EBSPlus2.kr" status="online",EBS+ 2 (400p)
 http://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8
-#EXTINF:-1 tvg-id="EdailyTV.kr" status="online",Edaily TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="EdailyTV.kr" status="timeout",Edaily TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC8Sv6O3Ux8ePVqorx8aOBMg/live
 #EXTINF:-1 tvg-id="ETV.kr" status="online",NEC ETV 한국선거방송 (720p)
 http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index_1.m3u8
 #EXTINF:-1 tvg-id="FTV.kr" status="online",FTV (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/FTV.m3u8
-#EXTINF:-1 tvg-id="GCN.kr" status="online",GCN24 Korean (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCqGxkgVnPc7arUR7MdCi99g/live
 #EXTINF:-1 tvg-id="GCN.kr" status="online",GCN24 Korean (480p) [Not 24/7]
 http://liveko24-manminglobal3.ktcdn.co.kr/liveko24/gcnko_high/playlist.m3u8
+#EXTINF:-1 tvg-id="GCN.kr" status="timeout",GCN24 Korean (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCqGxkgVnPc7arUR7MdCi99g/live
 #EXTINF:-1 tvg-id="GolfPBA.kr" status="online",Golf & PBA (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/GolfPBA.m3u8
 #EXTINF:-1 tvg-id="GSMyShop.kr" status="online",GS My Shop (1080p)
@@ -123,7 +123,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/HoneyTV.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/IBSports.m3u8
 #EXTINF:-1 tvg-id="iHQDrama.kr" status="online",iHQ drama (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/iHQDrama.m3u8
-#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="online",MBC Jeju (제주 MBC) (352p) [Not 24/7]
+#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="error",MBC Jeju (제주 MBC) (352p) [Not 24/7]
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
 #EXTINF:-1 tvg-id="JIBSTV.kr" status="online",SBS JIBS (JIBS SBS) (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
@@ -135,13 +135,13 @@ https://allanf181.github.io/adaptive-streams/streams/kr/JTBC4.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/JTBC.m3u8
 #EXTINF:-1 tvg-id="JTBCGolf.kr" status="online",JTBC Golf (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/JTBCGolf.m3u8
-#EXTINF:-1 tvg-id="JTBCGolfSports.kr" status="online",JTBC Golf & Sports (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="JTBCGolfSports.kr" status="timeout",JTBC Golf & Sports (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/JTBCGolfSports.m3u8
 #EXTINF:-1 tvg-id="JTV.kr" status="online",SBS JTV (JTV전주방송) (406p) [Not 24/7]
 https://61ff3340258d2.streamlock.net/jtv_live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="KBaduk.kr" status="online",K-Baduk (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/KBaduk.m3u8
-#EXTINF:-1 tvg-id="KBCTV.kr" status="online",SBS KBC (KBC 광주방송) (1080p)
+#EXTINF:-1 tvg-id="KBCTV.kr" status="blocked",SBS KBC (KBC 광주방송) (1080p)
 http://119.200.131.11:1935/KBCTV/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KBS1TV.kr" status="online",KBS1 (720p)
 http://ye23.vip/z7z8/2021/kbs2020.php?id=1
@@ -183,7 +183,7 @@ http://210.210.155.37/uq2663/h/h08/index.m3u8
 https://fhs8036.bd-61.ktcdn.co.kr/klive/smil:klive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MBCGyeongnamChangwonTV.kr" status="online",MBC Gyeongnam (경상 MBC) (1080p)
 https://624a79c87201d.streamlock.net/MBCTV/TV1.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="MBCTV.kr" status="online",MBC (1080p)
+#EXTINF:-1 tvg-id="MBCTV.kr" status="error",MBC (1080p)
 http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
 #EXTINF:-1 tvg-id="MBN.kr" status="online",MBN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/MBN.m3u8
@@ -241,19 +241,19 @@ https://allanf181.github.io/adaptive-streams/streams/kr/SBSTV.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/ScreenGolfzon.m3u8
 #EXTINF:-1 tvg-id="SkySports.kr" status="online",skySports (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/SkySports.m3u8
-#EXTINF:-1 tvg-id="SPOTV2.kr" status="online",SPOTV2 (1080p)
-https://apichvod19.seezntv.com/OTM/11990_H.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
+#EXTINF:-1 tvg-id="SPOTV2.kr" status="online",SPOTV2 (720p)
+https://apichvod19.seezntv.com/OTM/11990_M.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="SPOTV2.kr" status="online",SPOTV2 (404p)
 https://apichvod19.seezntv.com/OTM/11990_L.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
-#EXTINF:-1 tvg-id="SPOTV2.kr" status="error",SPOTV2 (720p)
-https://apichvod19.seezntv.com/OTM/11990_M.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
+#EXTINF:-1 tvg-id="SPOTV2.kr" status="error",SPOTV2 (1080p)
+https://apichvod19.seezntv.com/OTM/11990_H.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="SPOTV.kr" status="online",SPOTV1 (1080p)
 https://apichvod19.seezntv.com/OTM/10070_H.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="SPOTV.kr" status="online",SPOTV1 (720p)
 https://apichvod19.seezntv.com/OTM/10070_M.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="SPOTV.kr" status="online",SPOTV1 (404p)
 https://apichvod19.seezntv.com/OTM/10070_L.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
-#EXTINF:-1 tvg-id="TBCTV.kr" status="online",SBS TBC (TBC 대구방송) (540p)
+#EXTINF:-1 tvg-id="TBCTV.kr" status="error",SBS TBC (TBC 대구방송) (540p)
 http://221.157.125.239:1935/live/psike/playlist.m3u8
 #EXTINF:-1 tvg-id="TBSTV.kr" status="online",TBS Seoul (720p)
 https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
@@ -293,10 +293,10 @@ https://allanf181.github.io/adaptive-streams/streams/kr/Viki.m3u8
 https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="YonhapNewsTV.kr" status="online",Yonhap News TV (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/YonhapNewsTV.m3u8
-#EXTINF:-1 tvg-id="YTN.kr" status="online",YTN (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w/live
 #EXTINF:-1 tvg-id="YTN.kr" status="online",YTN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/YTN.m3u8
+#EXTINF:-1 tvg-id="YTN.kr" status="timeout",YTN (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w/live
 #EXTINF:-1 tvg-id="YTNDMB.kr" status="timeout",YTN DMB
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC38IlqMxZ_YtFg3eSGmmJnQ/live
 #EXTINF:-1 tvg-id="YTNScience.kr" status="online",YTN SCIENCE (720p) [Not 24/7]
@@ -315,13 +315,13 @@ http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/pla
 http://amdlive.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Arirang Radio (720p)
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",arteTV
+#EXTINF:-1 tvg-id="" status="timeout",arteTV
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/TheArteTV/live
 #EXTINF:-1 tvg-id="" status="online",GoodTV (1080p)
 http://mobliestream.c3tv.com:1935/live/goodtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",JCN TV
 https://jcnonair-1108.acs.wecandeo.com/ms/3162/1108/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",KBS News
+#EXTINF:-1 tvg-id="" status="error",KBS News
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/newskbs/live
 #EXTINF:-1 tvg-id="" status="online",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
