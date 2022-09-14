@@ -47,15 +47,27 @@ async function createCountryTable() {
   logger.info('creating country table...')
   const rows = []
   await api.countries.load()
+  await api.subdivisions.load()
   const items = await parser.parseLogs(`${LOGS_DIR}/countries.log`)
   for (const item of items) {
     const code = file.getFilename(item.filepath)
     const country = await api.countries.find({ code: code.toUpperCase() })
-    rows.push({
-      name: country ? `${country.flag} ${country.name}` : 'Undefined',
-      channels: item.count,
-      playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
-    })
+    if (country) {
+      rows.push({
+        name: `${country.flag} ${country.name}`,
+        channels: item.count,
+        playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
+      })
+    } else {
+      const subdivision = await api.subdivisions.find({ code: code.toUpperCase() })
+      if (subdivision) {
+        rows.push({
+          name: `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${subdivision.name}`,
+          channels: item.count,
+          playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
+        })
+      }
+    }
   }
 
   const table = createTable(rows, [
@@ -99,11 +111,13 @@ async function createRegionTable() {
   for (const item of items) {
     const code = file.getFilename(item.filepath)
     const region = await api.regions.find({ code: code.toUpperCase() })
-    rows.push({
-      name: region ? region.name : 'Undefined',
-      channels: item.count,
-      playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
-    })
+    if (region) {
+      rows.push({
+        name: region.name,
+        channels: item.count,
+        playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
+      })
+    }
   }
 
   const table = createTable(rows, [
