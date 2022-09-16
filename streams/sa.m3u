@@ -67,7 +67,7 @@ https://jmc-live.ercdn.net/iqraa/iqraa.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/jeddahradio
 #EXTINF:-1 tvg-id="JeddahRadio.sa" status="online",Jeddah Radio (720p)
 https://edge.taghtia.com/sa/15.m3u8
-#EXTINF:-1 tvg-id="KaifTV.sa" status="error",Kaif TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="KaifTV.sa" status="online",Kaif TV (576p) [Not 24/7]
 http://82.212.74.2:8000/live/hls/7311.m3u8
 #EXTINF:-1 tvg-id="KSASports1.sa" status="online",KSA Sports 1 (1080p) [Not 24/7]
 https://edge.taghtia.com/sa/9.m3u8
@@ -92,11 +92,11 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/qura
 #EXTINF:-1 tvg-id="QuranRadio.sa" status="online",Quran Radio (720p)
 https://edge.taghtia.com/sa/13.m3u8
 #EXTINF:-1 tvg-id="RotanaCinemaEgypt.eg" status="online",Rotana Cinema (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-cinema-egypt
-#EXTINF:-1 tvg-id="RotanaCinemaEgypt.eg" status="online",Rotana Cinema (1080p)
 https://rotanastudios-rotanacinema-1-eu.xiaomi.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RotanaCinemaEgypt.eg" status="online",Rotana Cinema (1080p)
 https://shls-rotanacinema-egy-prod-dub.shahid.net/out/v1/c39c0ecbcbdb46e890e91106776397a8/index.m3u8
+#EXTINF:-1 tvg-id="RotanaCinemaEgypt.eg" status="timeout",Rotana Cinema (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-cinema-egypt
 #EXTINF:-1 tvg-id="RotanaCinemaKSA.sa" status="online",Rotana Cinema KSA (1080p)
 https://shls-rotanacinema-ksa-prod-dub.shahid.net/out/v1/6cee1c57ea7841e697eb15cefc98e0a6/index.m3u8
 #EXTINF:-1 tvg-id="RotanaClassic.sa" status="online",Rotana Classic (1080p)
@@ -109,7 +109,7 @@ https://rotanastudios-rotanacomedy-1-eu.xiaomi.wurl.tv/playlist.m3u8
 https://rotanastudios-rotanadrama-1-eu.xiaomi.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RotanaKhalijia.sa" status="online",Rotana Khalijia (1080p)
 https://shls-rotanakhalijia-prod-dub.shahid.net/out/v1/a639fd49db684f1b8c063d398101a888/index.m3u8
-#EXTINF:-1 tvg-id="RotanaKhalijia.sa" status="timeout",Rotana Khalijia (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RotanaKhalijia.sa" status="error",Rotana Khalijia (1080p) [Geo-blocked]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live
 #EXTINF:-1 tvg-id="RotanaKids.sa" status="online",Rotana Kids (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-kids
@@ -129,7 +129,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/sbc-
 https://edge.taghtia.com/sa/1.m3u8
 #EXTINF:-1 tvg-id="SSC1HD.sa" status="online",SSC1 HD (1080p)
 https://shls-mbc1ksa-prod-dub.shahid.net/out/v1/6ae0a2ebab224c72ab9c298afeec8d91/index.m3u8
-#EXTINF:-1 tvg-id="SSC2.sa" status="online",SSC2 HD (1080p)
+#EXTINF:-1 tvg-id="SSC2.sa" status="timeout",SSC2 HD (1080p)
 https://ssc-6-ak.akamaized.net/out/v1/efbe58d3435d4de1beb1d7e3b27d309f/index.m3u8
 #EXTINF:-1 tvg-id="SSC5.sa" status="online",SSC5 HD (1080p)
 https://shls-mbc1ksa-prod-dub.shahid.net/out/v1/38c9aca1b6bb4239bb7ca409548a2762/index.m3u8
