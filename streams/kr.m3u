@@ -55,7 +55,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/ChannelOllehTV.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/ChannelSeezn.m3u8
 #EXTINF:-1 tvg-id="ChuncheonMBCTV.kr" status="online",MBC Chuncheon (춘천 MBC) (480p)
 https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="ChungbukMBCTV.kr" status="online",MBC Chungbuk (MBC 충북) (720p)
+#EXTINF:-1 tvg-id="ChungbukMBCTV.kr" status="blocked",MBC Chungbuk (MBC 충북) (720p)
 http://211.33.246.4:32954/cj_live/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="ChunghwaTV.kr" status="online",Chunghwa TV (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/ChunghwaTV.m3u8
@@ -123,7 +123,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/HoneyTV.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/IBSports.m3u8
 #EXTINF:-1 tvg-id="iHQDrama.kr" status="online",iHQ drama (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/iHQDrama.m3u8
-#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="online",MBC Jeju (제주 MBC) (352p) [Not 24/7]
+#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="error",MBC Jeju (제주 MBC) (352p) [Not 24/7]
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
 #EXTINF:-1 tvg-id="JIBSTV.kr" status="online",SBS JIBS (JIBS SBS) (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
@@ -189,7 +189,7 @@ http://210.210.155.37/uq2663/h/h08/index.m3u8
 https://fhs8036.bd-61.ktcdn.co.kr/klive/smil:klive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MBCGyeongnamChangwonTV.kr" status="online",MBC Gyeongnam (경상 MBC) (1080p)
 https://624a79c87201d.streamlock.net/MBCTV/TV1.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="MBCTV.kr" status="online",MBC (1080p)
+#EXTINF:-1 tvg-id="MBCTV.kr" status="error",MBC (1080p)
 http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
 #EXTINF:-1 tvg-id="MBN.kr" status="online",MBN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/MBN.m3u8
@@ -277,7 +277,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/Tooniverse.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/TVChosun.m3u8
 #EXTINF:-1 tvg-id="tvN.kr" status="online",tvN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvN.m3u8
-#EXTINF:-1 tvg-id="TVNAsia.hk" status="error",tvN Asia (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="TVNAsia.hk" status="online",tvN Asia (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="tvNDrama.kr" status="online",tvN DRAMA (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvNDrama.m3u8
@@ -291,7 +291,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/tvNStory.m3u8
 http://live.worktv.or.kr:1935/live/wowtvlive1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="UBCTV.kr" status="online",SBS UBC (UBC 울산방송) (540p)
 http://59.23.231.102:1935/live/UBCstream/playlist.m3u8
-#EXTINF:-1 tvg-id="UlsanMBCTV.kr" status="online",MBC Ulsan (울산 MBC) (540p)
+#EXTINF:-1 tvg-id="UlsanMBCTV.kr" status="blocked",MBC Ulsan (울산 MBC) (540p)
 https://5ddfd163bd00d.streamlock.net/nHDTV/nHDTV/playlist.m3u8
 #EXTINF:-1 tvg-id="Viki.kr" status="online",Viki (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/Viki.m3u8
@@ -299,10 +299,10 @@ https://allanf181.github.io/adaptive-streams/streams/kr/Viki.m3u8
 https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="YonhapNewsTV.kr" status="online",Yonhap News TV (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/YonhapNewsTV.m3u8
-#EXTINF:-1 tvg-id="YTN.kr" status="online",YTN (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w/live
 #EXTINF:-1 tvg-id="YTN.kr" status="online",YTN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/YTN.m3u8
+#EXTINF:-1 tvg-id="YTN.kr" status="timeout",YTN (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w/live
 #EXTINF:-1 tvg-id="YTNDMB.kr" status="timeout",YTN DMB
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC38IlqMxZ_YtFg3eSGmmJnQ/live
 #EXTINF:-1 tvg-id="YTNScience.kr" status="online",YTN SCIENCE (720p) [Not 24/7]
