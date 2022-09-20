@@ -95,7 +95,7 @@ rtsp://ebsonair.ebs.co.kr/ebsutablet500k/tablet500k
 http://ebsonair.ebs.co.kr/plus1familypc/familypc1m/playlist.m3u8
 #EXTINF:-1 tvg-id="EBSPlus2.kr" status="online",EBS+ 2 (400p)
 http://ebsonair.ebs.co.kr/plus2familypc/familypc1m/playlist.m3u8
-#EXTINF:-1 tvg-id="EdailyTV.kr" status="timeout",Edaily TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="EdailyTV.kr" status="online",Edaily TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC8Sv6O3Ux8ePVqorx8aOBMg/live
 #EXTINF:-1 tvg-id="ETV.kr" status="online",NEC ETV 한국선거방송 (720p)
 http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index_1.m3u8
@@ -125,7 +125,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/IBSports.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/iHQDrama.m3u8
 #EXTINF:-1 tvg-id="JejuMBCTV.kr" status="online",MBC Jeju (제주 MBC) (352p) [Not 24/7]
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
-#EXTINF:-1 tvg-id="JIBSTV.kr" status="online",SBS JIBS (JIBS SBS) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JIBSTV.kr" status="timeout",SBS JIBS (JIBS SBS) (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
 #EXTINF:-1 tvg-id="JTBC2.kr" status="online",JTBC2 (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/JTBC2.m3u8
@@ -188,7 +188,7 @@ http://210.210.155.37/uq2663/h/h08/index.m3u8
 https://fhs8036.bd-61.ktcdn.co.kr/klive/smil:klive.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MBCGyeongnamChangwonTV.kr" status="online",MBC Gyeongnam (경상 MBC) (1080p) [Not 24/7]
 https://624a79c87201d.streamlock.net/MBCTV/TV1.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="MBCTV.kr" status="online",MBC (1080p)
+#EXTINF:-1 tvg-id="MBCTV.kr" status="error",MBC (1080p)
 http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
 #EXTINF:-1 tvg-id="MBN.kr" status="online",MBN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/MBN.m3u8
@@ -276,11 +276,11 @@ https://allanf181.github.io/adaptive-streams/streams/kr/Tooniverse.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/TVChosun.m3u8
 #EXTINF:-1 tvg-id="tvN.kr" status="online",tvN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvN.m3u8
-#EXTINF:-1 tvg-id="TVNAsia.hk" status="online",tvN Asia (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="TVNAsia.hk" status="error",tvN Asia (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="tvNDrama.kr" status="online",tvN DRAMA (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvNDrama.m3u8
-#EXTINF:-1 tvg-id="TVNMovies.hk" status="error",tvN Movies (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="TVNMovies.hk" status="online",tvN Movies (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h21/index.m3u8
 #EXTINF:-1 tvg-id="tvNShow.kr" status="online",tvN SHOW (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvNShow.m3u8
@@ -300,7 +300,7 @@ https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/YonhapNewsTV.m3u8
 #EXTINF:-1 tvg-id="YTN.kr" status="online",YTN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/YTN.m3u8
-#EXTINF:-1 tvg-id="YTN.kr" status="online",YTN (1080p)
+#EXTINF:-1 tvg-id="YTN.kr" status="timeout",YTN (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChlgI3UHCOnwUGzWzbJ3H5w/live
 #EXTINF:-1 tvg-id="YTNDMB.kr" status="timeout",YTN DMB
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC38IlqMxZ_YtFg3eSGmmJnQ/live
@@ -328,7 +328,7 @@ http://mobliestream.c3tv.com:1935/live/goodtv.sdp/playlist.m3u8
 https://jcnonair-1108.acs.wecandeo.com/ms/3162/1108/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",KBS News
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/newskbs/live
-#EXTINF:-1 tvg-id="" status="online",Korea TV
+#EXTINF:-1 tvg-id="" status="error",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Korean Election TV
 http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index.m3u8
