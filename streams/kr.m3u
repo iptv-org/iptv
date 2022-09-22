@@ -161,10 +161,10 @@ http://ye23.vip/z7z8/2021/kbs2020.php?id=4
 http://ye23.vip/z7z8/2021/kbs2020.php?id=8
 #EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (720p)
 https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/master.m3u8
-#EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (Vietnamese Subtitles) (720p)
-https://livecdn.fptplay.net/sdb/kbs_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (720p)
 https://wms4-kortv.akamaized.net/a_live/63719963/smil:20ch011.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (Vietnamese Subtitles) (720p)
+https://livecdn.fptplay.net/sdb/kbs_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KCTV.kr" status="online",KCTV 광주 CH05 (720p) [Not 24/7]
 http://119.77.96.184:1935/chn05/chn05/playlist.m3u8
 #EXTINF:-1 tvg-id="KLeague1.kr" status="online",K League 1 (1080p) [Not 24/7]
@@ -173,10 +173,10 @@ https://allanf181.github.io/adaptive-streams/streams/kr/KLeague1.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/KLeague2.m3u8
 #EXTINF:-1 tvg-id="KLeague3.kr" status="online",K League 3 (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/KLeague3.m3u8
+#EXTINF:-1 tvg-id="KNNTV.kr" status="online",SBS KNN (KNN 부산경남대표방송) (1080p)
+http://220.95.92.160:9981/stream/channelid/1445999617
 #EXTINF:-1 tvg-id="KNNTV.kr" status="online",SBS KNN (KNN 부산경남대표방송) (450p) [Not 24/7]
 http://211.220.195.200:1935/live/mp4:KnnTV.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="KNNTV.kr" status="error",SBS KNN (KNN 부산경남대표방송) (1080p)
-http://220.95.92.160:9981/stream/channelid/1445999617
 #EXTINF:-1 tvg-id="KoreaEconomyTV.kr" status="online",Korea Economy TV (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/KoreaEconomyTV.m3u8
 #EXTINF:-1 tvg-id="KShopping.kr" status="online",KShopping
@@ -243,17 +243,17 @@ https://allanf181.github.io/adaptive-streams/streams/kr/ScreenGolfzon.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/SkySports.m3u8
 #EXTINF:-1 tvg-id="SPOTV2.kr" status="online",SPOTV2 (1080p)
 https://apichvod19.seezntv.com/OTM/11990_H.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
-#EXTINF:-1 tvg-id="SPOTV2.kr" status="online",SPOTV2 (720p)
-https://apichvod19.seezntv.com/OTM/11990_M.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="SPOTV2.kr" status="online",SPOTV2 (404p)
 https://apichvod19.seezntv.com/OTM/11990_L.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
+#EXTINF:-1 tvg-id="SPOTV2.kr" status="error",SPOTV2 (720p)
+https://apichvod19.seezntv.com/OTM/11990_M.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="SPOTV.kr" status="online",SPOTV1 (1080p)
 https://apichvod19.seezntv.com/OTM/10070_H.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="SPOTV.kr" status="online",SPOTV1 (720p)
 https://apichvod19.seezntv.com/OTM/10070_M.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
 #EXTINF:-1 tvg-id="SPOTV.kr" status="online",SPOTV1 (404p)
 https://apichvod19.seezntv.com/OTM/10070_L.m3u8?AdaptiveType=HLS&SessionID=3438d7e9-3e70-43b1-9fe6-b8290cd25403
-#EXTINF:-1 tvg-id="TBCTV.kr" status="blocked",SBS TBC (TBC 대구방송) (540p)
+#EXTINF:-1 tvg-id="TBCTV.kr" status="online",SBS TBC (TBC 대구방송) (540p)
 http://221.157.125.239:1935/live/psike/playlist.m3u8
 #EXTINF:-1 tvg-id="TBSTV.kr" status="online",TBS Seoul (720p)
 https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
@@ -271,11 +271,11 @@ https://allanf181.github.io/adaptive-streams/streams/kr/Tooniverse.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/TVChosun.m3u8
 #EXTINF:-1 tvg-id="tvN.kr" status="online",tvN (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvN.m3u8
-#EXTINF:-1 tvg-id="TVNAsia.hk" status="online",tvN Asia (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="TVNAsia.hk" status="error",tvN Asia (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="tvNDrama.kr" status="online",tvN DRAMA (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvNDrama.m3u8
-#EXTINF:-1 tvg-id="TVNMovies.hk" status="online",tvN Movies (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="TVNMovies.hk" status="error",tvN Movies (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h21/index.m3u8
 #EXTINF:-1 tvg-id="tvNShow.kr" status="online",tvN SHOW (1080p) [Not 24/7]
 https://allanf181.github.io/adaptive-streams/streams/kr/tvNShow.m3u8
@@ -283,7 +283,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/tvNShow.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/tvNStory.m3u8
 #EXTINF:-1 tvg-id="TVWorkNet.kr" status="online",TVWorkNet (480p)
 http://live.worktv.or.kr:1935/live/wowtvlive1.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="UBCTV.kr" status="online",SBS UBC (UBC 울산방송) (540p)
+#EXTINF:-1 tvg-id="UBCTV.kr" status="timeout",SBS UBC (UBC 울산방송) (540p)
 http://59.23.231.102:1935/live/UBCstream/playlist.m3u8
 #EXTINF:-1 tvg-id="UlsanMBCTV.kr" status="online",MBC Ulsan (울산 MBC) (540p)
 https://5ddfd163bd00d.streamlock.net/nHDTV/nHDTV/playlist.m3u8
