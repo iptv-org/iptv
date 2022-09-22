@@ -127,7 +127,7 @@ An adaptive playlist is a m3u8 file that contains certain informations: the band
 
 In the "daily update", the stream with the best supported resolution will be considered "priority" over other lower resolution streams of the same channel.
 
-In addition, we do not recommend using "chunks.m3u8" for consistency reasons.
+Note: We do not accept the use of tokens, because they only work for a short time, which will end up in permanent offline (see [discussion](https://github.com/iptv-org/iptv/discussions/8838)). We also do not recommend using "chunks.m3u8", a other file type, for consistency reasons.
 
 Based on [#1916](https://github.com/iptv-org/iptv/issues/1916) and [#5952](https://github.com/iptv-org/iptv/discussions/5952).
 
