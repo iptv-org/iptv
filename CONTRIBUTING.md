@@ -11,7 +11,7 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ### Request a Channel
 
-To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=channel+request&template=------channel-request.yml&title=Add%3A+) and complete all details requested. Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do. (**IMPORTANT:** the issue should contain a request for only one channel, otherwise it will be closed immediately)
+To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=channel+request&template=------channel-request.yml&title=Add%3A+) and complete all details requested. Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do. (**IMPORTANT:** an issue without a valid channel ID or containing a request for more than one channel will be closed immediately)
 
 ### Report a Broken Stream
 
