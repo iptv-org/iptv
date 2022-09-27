@@ -33,10 +33,10 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high/playlist.m3u8?ref=medienportal-sachsen-
 #EXTINF:-1 tvg-id="CroTVHD.de" status="timeout",CroTV HD (1080p)
 http://92.204.40.139:8081/crotv/televizijahrvatskedijaspore/playlist.m3u8
-#EXTINF:-1 tvg-id="DasErste.de" status="online",Das Erste (720p) [Geo-blocked]
-https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p)
 https://derste247liveint.akamaized.net/hls/live/662735/daserste_int/master.m3u8
+#EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p) [Geo-blocked]
+https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-id="DaVinci.de" status="timeout",Da Vinci
 http://sc.id-tv.kz/DaVinci_38_39.m3u8
 #EXTINF:-1 tvg-id="DeluxeLoungeHD.de" status="online",Deluxe Lounge HD
@@ -105,7 +105,7 @@ http://58bd5b7a98e04.streamlock.net/medienasa-live/mdf1_high/playlist.m3u8
 http://62.113.210.250/medienasa-live/mdf1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="MDF1.de" status="online",MDF.1 (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:mdf1_high/playlist.m3u8
-#EXTINF:-1 tvg-id="MotorvisionTV.de" status="online",Motorvision TV (720p)
+#EXTINF:-1 tvg-id="MotorvisionTV.de" status="error",Motorvision TV (720p)
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
 #EXTINF:-1 tvg-id="MunchenTV.de" status="online",München TV (1080p) [Not 24/7]
 https://muenchentv.iptv-playoutcenter.de/muenchentv/muenchentv.stream_1/playlist.m3u8
@@ -265,10 +265,10 @@ https://586fb512206e4.streamlock.net/rheinmaintv-live/_definst_/mp4:livestream/p
 https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
 https://stream.rockantenne.de/rockantenne/stream/mp3
-#EXTINF:-1 tvg-id="RocklandTV.de" status="online",Rockland TV (720p) [Not 24/7]
-http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
 http://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
+#EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7]
+http://player-api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
 #EXTINF:-1 tvg-id="RWEErfurt.de" status="online",RWE Erfurt (1080p)
 https://stream.keyweb.org:8085/hls/rwetv.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen1.de" status="online",Saarland Fernsehen 1 (1080p)
@@ -295,7 +295,7 @@ https://www.onairport.live/sophiatv-it-live/livestream_low/playlist.m3u8
 https://www.onairport.live/sophiatv/smil:sophia-tv-en.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Studio47.de" status="online",Studio 47
 https://5852afe96c9bb.streamlock.net/studio47-live/_definst_/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="Studio47.de" status="online",Studio 47 (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Studio47.de" status="error",Studio 47 (576p) [Not 24/7]
 https://5852afe96c9bb.streamlock.net/studio47-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="SWR3VisualRadio.de" status="online",SWR 3 Visual Radio (720p)
 https://swrswr3vr-hls.akamaized.net/hls/live/2018683/swr3vr/master.m3u8
