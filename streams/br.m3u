@@ -1,9 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="1001Noites.br" status="online",1001 Noites (720p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="error",AgroBrasil TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="online",AgroBrasil TV (720p) [Not 24/7]
 http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8
-#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="error",AgroBrasil TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AgroBrasilTV.br" status="online",AgroBrasil TV (720p) [Not 24/7]
 https://server.flixtv.com.br/agrobrasiltv/agrobrasiltv/playlist.m3u8
 #EXTINF:-1 tvg-id="AgroMais.br" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Agromais (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
@@ -52,7 +52,7 @@ https://stmv.video.expressolider.com.br/ghostv/ghostv/playlist.m3u8
 https://stmv1.srvif.com/gospelf/gospelf/playlist.m3u8
 #EXTINF:-1 tvg-id="IMPDTV.br" status="online",IMPD TV (720p)
 https://58a4464faef53.streamlock.net/impd/ngrp:impd_all/playlist.m3u8
-#EXTINF:-1 tvg-id="ISTVHD.br" status="online",ISTV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ISTVHD.br" status="error",ISTV (1080p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-9883/LVW9883_lFcfKysrHF/chunklist.m3u8
 #EXTINF:-1 tvg-id="JovemPanNews.br" status="online",Jovem Pan News (1080p) [Not 24/7]
 https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/index.m3u8
@@ -72,7 +72,7 @@ http://stream.novotempo.com:1935/tv/smil:tvnovotempo.smil/playlist.m3u8
 http://stream.novotempo.com:1935/tv/tvnovotempo.smil/live.m3u8
 #EXTINF:-1 tvg-id="NuevoTiempo.br" status="online",Nuevo Tiempo (720p) [Not 24/7]
 https://stream.live.novotempo.com/tv/smil:tvnuevotiempo.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="PUCTVGoias.br" status="error",PUC TV Goiás (326p) [Not 24/7]
+#EXTINF:-1 tvg-id="PUCTVGoias.br" status="online",PUC TV Goiás (326p) [Not 24/7]
 http://flash.softhost.com.br:1935/pucgoias/aovivo/live.m3u8
 #EXTINF:-1 tvg-id="RecordNews.br" status="blocked",Record News (720p) [Geo-blocked]
 https://playplusnews-lh.akamaihd.net/i/pp_nws@377849/master.m3u8
@@ -128,7 +128,7 @@ http://flash1.crossdigital.com.br/2063/2063/playlist.m3u8
 http://evpp.mm.uol.com.br:1935/band_live/terraviva/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAberta.br" status="online",TV Aberta (1080p) [Not 24/7]
 https://cdn-canalpaulo.ciclano.io:1443/canalpaulo/canalpaulo/playlist.m3u8
-#EXTINF:-1 tvg-id="TVALMG.br" status="online",TV ALMG (720p)
+#EXTINF:-1 tvg-id="TVALMG.br" status="timeout",TV ALMG (720p)
 https://streaming.almg.gov.br/live/tvalmg.m3u8
 #EXTINF:-1 tvg-id="TVAparecida.br" status="online",TV Aparecida (1080p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
@@ -222,7 +222,7 @@ http://rtmp.cdn.upx.net.br/00084/myStream.sdp/playlist.m3u8
 https://rtmp.info/tvsantacruz/envivo/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSolComunidade.br" status="online",TV Sol Comunidade (480p) [Not 24/7]
 http://streaming03.zas.media:1935/tvsol/tvsol/playlist.m3u8
-#EXTINF:-1 tvg-id="TVThathi.br" status="error",TV Thathi (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVThathi.br" status="online",TV Thathi (720p) [Not 24/7]
 https://cdn-grupo-10049.ciclano.io:1443/grupo-10049/grupo-10049/playlist.m3u8
 #EXTINF:-1 tvg-id="TVUFG.br" status="online",TV UFG (720p) [Not 24/7]
 http://flash.softhost.com.br:1935/ufg/tvufgweb/playlist.m3u8
@@ -230,20 +230,20 @@ http://flash.softhost.com.br:1935/ufg/tvufgweb/playlist.m3u8
 https://596639ebdd89b.streamlock.net/tvuniao/tvuniao/playlist.m3u8
 #EXTINF:-1 tvg-id="TVUniSantos.br" status="online",TV UniSantos (240p) [Not 24/7]
 http://live.cdn.upx.com/7550/myStream.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TVVerdesCampos.br" status="timeout",TV Verdes Campos (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVVerdesCampos.br" status="online",TV Verdes Campos (360p) [Not 24/7]
 https://596639ebdd89b.streamlock.net/8124/8124/playlist.m3u8
 #EXTINF:-1 tvg-id="UniTVPortoAlegre.br" status="online",UniTV Porto Alegre (480p)
 http://unitvaovivo.ufrgs.br:8080/live.ogg
 #EXTINF:-1 tvg-id="" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Bandnews (720p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://evpp.mm.uol.com.br/geob_band/bandnewstv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",BM&C [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",BM&C [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoja0MNI4SIvXqJR3szbSfw/live
 #EXTINF:-1 tvg-id="" status="online",Cartoonito (Spanish)
 https://playout.cdn.cartoonnetwork.com.br/playout_04/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",CBTV Now (1080p)
 https://oj7lng29dg82-hls-live.5centscdn.com/lives/f7b44cfafd5c52223d5498196c8a2e7b.sdp/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Mundo TV
+#EXTINF:-1 tvg-id="" status="online",Mundo TV
 https://59f1cbe63db89.streamlock.net:1443/mundotv/mundotv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Record TV Goias (720p) [Geo-blocked]
 https://playplusgoya-lh.akamaihd.net/i/pp_gna@377833/index_720_av-p.m3u8
