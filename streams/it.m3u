@@ -23,7 +23,7 @@ http://149.62.177.157:8000/play/a010
 https://5f22d76e220e1.streamlock.net/BOMCHANNEL/BOMCHANNEL/playlist.m3u8
 #EXTINF:-1 tvg-id="CafeTV24.it" status="online",CafeTV24 (720p)
 https://srvx1.selftv.video/cafe/live/playlist.m3u8
-#EXTINF:-1 tvg-id="Canale2Altamura.it" status="error",Canale 2 Altamura (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canale2Altamura.it" status="online",Canale 2 Altamura (576p) [Not 24/7]
 https://59d7d6f47d7fc.streamlock.net/canale2/canale2/playlist.m3u8
 #EXTINF:-1 tvg-id="Canale5.it" status="blocked",Canale 5 [Geo-blocked]
 https://live3-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(C5)/index.m3u8
@@ -103,7 +103,7 @@ http://streaming.bitonlive.net:8080/hls/ottofm2/index.m3u8
 https://5db313b643fd8.streamlock.net/Paroledivita/Paroledivita/playlist.m3u8
 #EXTINF:-1 tvg-id="PinkOTV.it" status="online",Pink'O TV (720p)
 http://w4.12all.tv:4000/play/pinkotv/index.m3u8
-#EXTINF:-1 tvg-id="Primocanale.it" status="timeout",Primocanale (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Primocanale.it" status="online",Primocanale (1080p) [Not 24/7]
 https://msh0203.stream.seeweb.it/live/flv:stream2.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Radio51TV.it" status="online",Radio 51 TV (480p) [Geo-blocked]
 http://178.32.140.155/canale51/canale51/playlist.m3u8
@@ -129,11 +129,11 @@ https://stream2.xdevel.com/video1s3-7/stream/playlist.m3u8
 https://unlimited1-cl.dps.live/radioztv/radioztv.smil/radioztv/livestream2/chunks.m3u8
 #EXTINF:-1 tvg-id="Rai1.it" status="online",Rai 1 (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
-#EXTINF:-1 tvg-id="Rai1.it" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Rai 1 (480p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
-http://ott-cdn.ucom.am/s29/04.m3u8
 #EXTINF:-1 tvg-id="Rai1.it" status="blocked",Rai 1 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/it-rai1.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Rai1.it" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Rai 1 (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s29/04.m3u8
 #EXTINF:-1 tvg-id="Rai2.it" status="online",Rai 2 (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718
 #EXTINF:-1 tvg-id="Rai2.it" status="blocked",Rai 2 (302p) [Geo-blocked]
@@ -158,7 +158,7 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276
 http://stream.tvtap.net:8081/live/it-rai5.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RaiGulp.it" status="online",Rai Gulp (576p)
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953
-#EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="error",RAI Italia Asia (576p)
+#EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="online",RAI Italia Asia (576p)
 http://210.210.155.37/x6bnqe/s/s63/index2.m3u8
 #EXTINF:-1 tvg-id="RaiMovie.it" status="online",Rai Movie (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002
@@ -286,7 +286,7 @@ https://59d7d6f47d7fc.streamlock.net/tvqui/tvqui/playlist.m3u8
 http://wms.shared.streamshow.it:1935/tvrs/tvrs/live.m3u8
 #EXTINF:-1 tvg-id="TVSeiHD.it" status="online",TV Sei (576p) [Not 24/7]
 http://185.202.128.1:1935/Tv6Stream/tv6TV.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="UmbriaTV.it" status="online",Umbria TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="UmbriaTV.it" status="error",Umbria TV (576p) [Not 24/7]
 https://umbriatv.stream.rubidia.it:8083/live/umbriatv/playlist.m3u8
 #EXTINF:-1 tvg-id="VeraTV.it" status="online",Vera TV (1080p) [Not 24/7]
 http://wms.shared.streamshow.it/veratv/mp4:veratv/playlist.m3u8
@@ -298,7 +298,7 @@ http://livestreaming.videolina.it/live/Videolina/playlist.m3u8
 https://d3b2epqdk0p7vd.cloudfront.net/out/v1/8a448b5e16384af4a3c8146a7b049c32/index.m3u8
 #EXTINF:-1 tvg-id="VirginRadioTV.it" status="blocked",Virgin Radio TV (576p) [Not 24/7]
 https://live2-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ew)/index.m3u8
-#EXTINF:-1 tvg-id="VisualRadio.it" status="blocked",Visual Radio (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="VisualRadio.it" status="online",Visual Radio (576p) [Not 24/7]
 http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8
 #EXTINF:-1 tvg-id="Vuemme.it" status="online",Vuemme (480p)
 https://5db313b643fd8.streamlock.net/Vuemme/Vuemme/playlist.m3u8
