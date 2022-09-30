@@ -113,7 +113,7 @@ https://media.kjmbc.co.kr/hls/live/stream/playlist.m3u8
 https://kr-streams.onrender.com/scraper?channel=271
 #EXTINF:-1 tvg-id="iHQDrama.kr" status="",iHQ drama (1080p)
 https://kr-streams.onrender.com/scraper?channel=457
-#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="online",MBC Jeju (제주 MBC) (352p) [Not 24/7]
+#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="error",MBC Jeju (제주 MBC) (352p) [Not 24/7]
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
 #EXTINF:-1 tvg-id="JIBSTV.kr" status="timeout",SBS JIBS (JIBS SBS) (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
@@ -129,7 +129,7 @@ http://jtbc3sports.flive.skcdn.com/jtbc3sports1/_definst_/A7E4AF6A622B88CF736285
 https://61ff3340258d2.streamlock.net/jtv_live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="KBaduk.kr" status="",K-Baduk (1080p)
 https://kr-streams.onrender.com/scraper?channel=238
-#EXTINF:-1 tvg-id="KBCTV.kr" status="online",SBS KBC (KBC 광주방송) (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="KBCTV.kr" status="blocked",SBS KBC (KBC 광주방송) (1080p) [Not 24/7]
 http://119.200.131.11:1935/KBCTV/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KBS1TV.kr" status="online",KBS1 (720p)
 http://ye23.vip/z7z8/2021/kbs2020.php?id=1
@@ -153,10 +153,10 @@ http://ye23.vip/z7z8/2021/kbs2020.php?id=4
 http://ye23.vip/z7z8/2021/kbs2020.php?id=8
 #EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (720p)
 https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/master.m3u8
-#EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (720p)
-https://wms4-kortv.akamaized.net/a_live/63719963/smil:20ch011.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (Vietnamese Subtitles) (720p)
 https://livecdn.fptplay.net/sdb/kbs_hls.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (720p)
+https://wms4-kortv.akamaized.net/a_live/63719963/smil:20ch011.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KCTV.kr" status="online",KCTV 광주 CH05 (720p) [Not 24/7]
 http://119.77.96.184:1935/chn05/chn05/playlist.m3u8
 #EXTINF:-1 tvg-id="KNNTV.kr" status="online",SBS KNN (KNN 부산경남대표방송) (450p) [Not 24/7]
@@ -225,6 +225,8 @@ https://kr-streams.onrender.com/scraper?channel=280
 http://210.210.155.37/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="tvNDrama.kr" status="",tvN DRAMA (1080p)
 https://kr-streams.onrender.com/scraper?channel=282
+#EXTINF:-1 tvg-id="TVNAsia.hk" status="error",tvN Asia (Indonesian Subtitle) (576p)
+http://210.210.155.37/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="TVNMovies.hk" status="online",tvN Movies (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h21/index.m3u8
 #EXTINF:-1 tvg-id="tvNShow.kr" status="",tvN SHOW (1080p)
