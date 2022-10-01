@@ -151,8 +151,6 @@ https://str.intercomarcal.com/hls/tvisd.m3u8
 https://str.intercomarcal.com/hls/tvixa.m3u8
 #EXTINF:-1 tvg-id="Islatel.es" status="online",Islatel (404p) [Not 24/7]
 https://zone.controlstreams.com:5443/LiveApp/streams/islatel.m3u8
-#EXTINF:-1 tvg-id="La1.es" status="blocked",La 1 (720p) [Geo-blocked]
-https://hlsliveamdgl7-lh.akamaihd.net/i/hlsdvrlive_1@583042/master.m3u8
 #EXTINF:-1 tvg-id="La1.es" status="timeout",La 1 (720p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/1688877.m3u8
 #EXTINF:-1 tvg-id="La2.es" status="timeout",La 2 (1080p)
@@ -307,7 +305,7 @@ https://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@125702/master.m3u8
 https://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@125703/master.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",+tdp [Geo-blocked]
 https://hlsliveamdgl1-lh.akamaihd.net/i/hlslive_1@143656/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",A3Cine (1080p)
+#EXTINF:-1 tvg-id="Atrescine.es" status="online",A3Cine (1080p)
 https://live.atresmediainternacional.com/ATRESMEDIA/a3cine-index.m3u8
 #EXTINF:-1 tvg-id="" status="online",A3Series Internacional
 https://mdstrm.com/live-stream-playlist/5cae562e0ca2f30815231c0f.m3u8?access_token=DST4b676d7da5a2a92ee15f8efcbcd00606
@@ -339,3 +337,13 @@ http://91.126.141.201:1935/live/smil:ten.smil/playlist.m3u8
 https://www.urbanrevolution.es:444/live/5e6d8470a3832/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Zafra TV (720p) [Not 24/7]
 https://cloud.streamingconnect.tv:455/radiotvzafra/radiotvzafra.m3u8
+#EXTINF:-1 tvg-id="Canal24Horas.es" status="",Canal 24 Horas (720p)
+https://rtvelivestream.akamaized.net/segments/24h/24h_main.m3u8
+#EXTINF:-1 tvg-id="La1.es" status="",La 1 (720p) [Geo-blocked]
+https://rtvelivestream.akamaized.net/segments/la1/la1_main.m3u8
+#EXTINF:-1 tvg-id="La2.es" status="",La 2 (1080p)
+https://rtvelivestream.akamaized.net/segments/la2/la2_main.m3u8
+#EXTINF:-1 tvg-id="Teledeporte.es" status="",Teledeporte TDP (1080p)
+https://rtvelivestream.akamaized.net/segments/tdp/tdp_main.m3u8
+#EXTINF:-1 tvg-id="ClanTVE.es" status="",Clan TVE (1080p) [Geo-blocked]
+https://rtvelivestream.akamaized.net/segments/clan/clan_main.m3u8
