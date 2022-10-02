@@ -61,7 +61,9 @@ Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://
 ### Why don't we show NSFW channels in most playlists?
 NSFW content are not suitable for the main public. To avoid issues with these kind of programmings, we've created a separate NSFW playlist available for everyone. If you want to see this type of channel, please use the NSFW playlist.
 
-Based on [#1416](https://github.com/iptv-org/iptv/pull/1416) (output of NSFW in general playlist), [#2126](https://github.com/iptv-org/iptv/issues/2126) (output of NSFW, again), [#2234](https://github.com/iptv-org/iptv/issues/2234) (request of hide NSFW channels), [#4768](https://github.com/iptv-org/iptv/pull/4768) (separate some channels from others) and [#7245](https://github.com/iptv-org/iptv/pull/7245) (other issue).
+If NSFW channels is displayed by mistake, we suggest that you report via issue or edit their entries from [Database](https://github.com/iptv-org/database) repository.
+
+Based on [#1416](https://github.com/iptv-org/iptv/pull/1416), [#2126](https://github.com/iptv-org/iptv/issues/2126), [#9104](https://github.com/iptv-org/iptv/issues/9104), [#2234](https://github.com/iptv-org/iptv/issues/2234) and [#7245](https://github.com/iptv-org/iptv/pull/7245 (requests of hide NSFW channels in general playlist).
 
 ### Do I have to pay to use this playlist?
 No. Also, the maintenance of this service is self-financed. If a stranger asks to pay to access the playlist, we suggest not to follow it.
