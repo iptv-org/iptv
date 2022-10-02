@@ -63,7 +63,7 @@ NSFW content are not suitable for the main public. To avoid issues with these ki
 
 If NSFW channels is displayed by mistake, we suggest that you report via issue or edit their entries from [Database](https://github.com/iptv-org/database) repository.
 
-Based on [#1416](https://github.com/iptv-org/iptv/pull/1416), [#2126](https://github.com/iptv-org/iptv/issues/2126), [#9104](https://github.com/iptv-org/iptv/issues/9104), [#2234](https://github.com/iptv-org/iptv/issues/2234) and [#7245](https://github.com/iptv-org/iptv/pull/7245 (requests of hide NSFW channels in general playlist).
+Based on [#1416](https://github.com/iptv-org/iptv/pull/1416), [#2126](https://github.com/iptv-org/iptv/issues/2126), [#9104](https://github.com/iptv-org/iptv/issues/9104), [#2234](https://github.com/iptv-org/iptv/issues/2234) and [#7245](https://github.com/iptv-org/iptv/pull/7245) (requests of hide NSFW channels in general playlist).
 
 ### Do I have to pay to use this playlist?
 No. Also, the maintenance of this service is self-financed. If a stranger asks to pay to access the playlist, we suggest not to follow it.
