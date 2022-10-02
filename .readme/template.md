@@ -13,6 +13,7 @@ Collection of publicly available IPTV (Internet Protocol television) channels fr
 - 👨‍💻 [API](#api)
 - 📚 [Resources](#resources)
 - 💬 [Discussions](#discussions)
+- ❓ [FAQ](#faq)
 - 🛠 [Contribution](#contribution)
 - ⚖ [Legal](#legal)
 - © [License](#license)
@@ -136,6 +137,10 @@ Links to other useful IPTV-related resources can be found in the [iptv-org/aweso
 ## Discussions
 
 If you have a question or an idea, you can post it in the [Discussions](https://github.com/iptv-org/iptv/discussions) tab.
+
+## FAQ
+
+The answers to the most popular questions can be found in the [FAQ.md](FAQ.md) file.
 
 ## Contribution
 
