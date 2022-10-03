@@ -7,7 +7,7 @@ Basic:
 - [Does the playlist have a channel guide?](#Does-the-playlist-have-a-channel-guide)
 - [Is it possible to view channels directly from the main website?](#Is-it-possible-to-view-channels-directly-from-the-main-website)
 - [Why don't we show NSFW channels in most playlists?](#Why-dont-we-show-nsfw-channels-in-most-playlists)
-- [Do I have to pay to use this list?](#Do-i-have-to-pay-to-use-this-list)
+- [Do I have to pay to use this playlist?](#Do-i-have-to-pay-to-use-this-playlist)
 - [Are you planning to include a VOD of TV shows broadcasted on this playlist?](#Are-you-planning-to-include-a-vod-of-tv-shows-broadcasted-on-this-playlist)
 
 Channels:
