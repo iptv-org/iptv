@@ -20,7 +20,7 @@ Channels:
 
 Technical:
 - [Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?](#Why-am-i-asked-to-provide-an-adaptive-playlist-like-masterm3u8-playlistm3u8-or-indexm3u8)
-- [Why don't we accept Xtream-Codes servers inside our playlists?](#Why-dont-we-accept-xstreamcodes-servers-inside-our-playlists)
+- [Why don't we accept Xtream-Codes servers inside our playlists?](#Why-dont-we-accept-xtream-codes-servers-inside-our-playlists)
 - [Is it possible to add streams from Youtube, Dailymotion or Twitch?](#Is-it-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
 - [Why are there some ids with call sign (WATB-TV.us) and others with alphanumeric id (Mychannel.us)?](#Why-are-there-some-ids-with-call-sign-watb-tvus-and-others-with-alphanumeric-id-mychannelus)
