@@ -2,15 +2,16 @@
 
 Basic:
 - [What is IPTV?](#What-is-iptv)
+- [Do I need a good Internet connection to watch an available stream?](#Do-i-need-a-good-internet-connection-to-watch-an-available-stream)
 - [I have a cable service and I want those channels to be on this IPTV. Is that possible?](#I-have-a-cable-service-and-i-want-those-channels-to-be-on-this-iptv-is-that-possible)
-- [Is it possible to view channels directly from the main website?](#Is-it-possible-to-view-channels-directly-from-the-main-website)
 - [Does the playlist have a channel guide?](#Does-the-playlist-have-a-channel-guide)
-- [Are you planning to include a VOD of TV shows broadcasted on this playlist?](#Are-you-planning-to-include-a-vod-of-tv-shows-broadcasted-on-this-playlist)
+- [Is it possible to view channels directly from the main website?](#Is-it-possible-to-view-channels-directly-from-the-main-website)
 - [Why don't we show NSFW channels in most playlists?](#Why-dont-we-show-nsfw-channels-in-most-playlists)
 - [Do I have to pay to use this list?](#Do-i-have-to-pay-to-use-this-list)
+- [Are you planning to include a VOD of TV shows broadcasted on this playlist?](#Are-you-planning-to-include-a-vod-of-tv-shows-broadcasted-on-this-playlist)
 
 Channels:
-- [Does the channel need to be FTA to be included in the playlists?](#Does-the-channel-need-to-be-FTA-to-be-included-in-the-playlists)
+- [Does the channel need to be publicly accessible to be included in the playlists?](#Does-the-channel-need-to-be-publicly-accessible-to-be-included-in-the-playlists)
 - [Can I even add channels that can only be accessed in their country of origin?](#Can-i-even-add-channels-that-can-only-be-accessed-in-their-country-of-origin)
 - [Can I set a FTA channel that is broadcasted in specific cities or countries?](#Can-i-set-a-fta-channel-that-is-broadcasted-in-specific-cities-or-countries)
 - [Can I safely add an FTA channel that broadcasts PPV events or pay programming?](#Can-i-safely-add-an-fta-channel-that-broadcasts-ppv-events-or-pay-programming)
@@ -26,7 +27,7 @@ Technical:
 - [Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?](#Why-attributes-of-channels-of-this-playlist-like-tvg-country-tvg-language-tvg-logo-are-missing)
 - [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
 - [Why some streams have an empty id?](#Why-some-streams-have-an-empty-id)
-- [What is a "daily update" and what are the benefits for this playlist?](#What-is-a-daily-update-and-what-are-the-benefits-for-this-playlist)
+- [What is a "daily update" and why is useful for this playlist?](#What-is-a-daily-update-and-why-is-useful-for-this-playlist)
 
 ## Basic
 ### What is IPTV?
@@ -183,7 +184,7 @@ This also applies to the undefined.m3u file. The streams in this file are from c
 
 Based on [#2440](https://github.com/iptv-org/iptv/issues/2440).
 
-### What is a "daily update" and why are the benefits for this playlist?
+### What is a "daily update" and why is useful for this playlist?
 A "daily update" is a pull request made for maintenance purposes. It checks the status of the playlist operation, and reclassifies the streams internally. This will be useful on playlist recreation, as it's gonna hide streams from the playlist if they have access problems.
 
 Initially, a version release was indicated in the daily updates, but it was not useful.
