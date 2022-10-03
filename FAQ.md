@@ -23,7 +23,7 @@ Technical:
 - [Why don't we accept Xtream-Codes servers inside our playlists?](#Why-dont-we-accept-xtream-codes-servers-inside-our-playlists)
 - [Is it possible to add streams from Youtube, Dailymotion or Twitch?](#Is-it-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
-- [Why are there some ids with call sign (WATB-TV.us) and others with alphanumeric id (Mychannel.us)?](#Why-are-there-some-ids-with-call-sign-watb-tvus-and-others-with-alphanumeric-id-mychannelus)
+- [Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?](#Why-are-there-some-call-sign-kjla-dt1us-as-ids-and-alphanumeric-names-as-ids-mychannelus)
 - [Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?](#Why-attributes-of-channels-of-this-playlist-like-tvg-country-tvg-language-tvg-logo-are-missing)
 - [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
 - [Why some streams have an empty id?](#Why-some-streams-have-an-empty-id)
