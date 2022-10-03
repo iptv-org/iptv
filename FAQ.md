@@ -24,8 +24,8 @@ Technical:
 - [Is it possible to add streams from Youtube, Dailymotion or Twitch?](#Is-it-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
 - [Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?](#Why-are-there-some-call-sign-kjla-dt1us-as-ids-and-alphanumeric-names-as-ids-mychannelus)
-- [Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?](#Why-attributes-of-channels-of-this-playlist-like-tvg-country-tvg-language-tvg-logo-are-missing)
 - [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
+- [Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?](#Why-attributes-of-channels-of-this-playlist-like-tvg-country-tvg-language-tvg-logo-are-missing)
 - [Why some streams have an empty id?](#Why-some-streams-have-an-empty-id)
 - [What is a "daily update" and why is useful for this playlist?](#What-is-a-daily-update-and-why-is-useful-for-this-playlist)
 
