@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="24Horas.cl" status="timeout",24 Horas (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="24Horas.cl" status="online",24 Horas (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/24HORAS/live
 #EXTINF:-1 tvg-id="ADNTV.cl" status="online",ADN Radio (1080p)
 https://unlimited1-us.dps.live/adntv/adntv.smil/playlist.m3u8
@@ -13,7 +13,7 @@ https://593b04c4c5670.streamlock.net/8192/8192/playlist.m3u8
 https://srv2.zcast.com.br/carlos2469/carlos2469/playlist.m3u8
 #EXTINF:-1 tvg-id="AntofagastaTV.cl" status="online",Antofagasta TV (ATV) (1080p)
 https://unlimited6-cl.dps.live/atv/atv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AricaTV.cl" status="online",Arica TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="AricaTV.cl" status="error",Arica TV (480p) [Not 24/7]
 https://5eff35271151c.streamlock.net:1936/8002/8002/playlist.m3u8
 #EXTINF:-1 tvg-id="AtacamaTV.cl" status="online",Atacama TV (Copiapó) (720p) [Not 24/7]
 https://v2.tustreaming.cl/atacamatv/index.m3u8
@@ -127,7 +127,7 @@ https://unlimited1-us.dps.live/itv/itv.smil/playlist.m3u8
 https://unlimited1-cl.dps.live/itv/itv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanade.cl" status="timeout",Kanade TV (720p)
 http://64.20.57.7:8080/hls/enfoque.m3u8
-#EXTINF:-1 tvg-id="LaGranjaTV.cl" status="online",La Granja TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LaGranjaTV.cl" status="blocked",La Granja TV (720p) [Not 24/7]
 https://5eae379fb77bb.streamlock.net/8126/8126/playlist.m3u8
 #EXTINF:-1 tvg-id="LaRed.cl" status="timeout",La Red (720p) [Not 24/7]
 https://unlimited1-cl-movistar.dps.live/lared/lared.smil/playlist.m3u8
@@ -223,7 +223,7 @@ https://inliveserver.com:1936/11516/11516/playlist.m3u8
 https://unlimited1-cl-isp.dps.live/tctc/tctc.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TeletrakTV.cl" status="online",Teletrak (720p)
 https://unlimited6-cl.dps.live/sportinghd/sportinghd.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TendenciasPrime.cl" status="error",Tendencias Prime (T31 | Ñuñoa) (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TendenciasPrime.cl" status="online",Tendencias Prime (T31 | Ñuñoa) (1080p) [Not 24/7]
 https://v2.tustreaming.cl/tendenciastv/index.m3u8
 #EXTINF:-1 tvg-id="Tevex.cl" status="online",Tevex (720p) [Not 24/7]
 https://v4.tustreaming.cl/tevexinter/index.m3u8
@@ -231,7 +231,7 @@ https://v4.tustreaming.cl/tevexinter/index.m3u8
 https://unlimited1-us.dps.live/thema/thema.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ThemaTelevision.cl" status="online",Thema Televisión (La Serena) (720p) [Not 24/7]
 https://unlimited6-cl.dps.live/thema/thema.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TNE.cl" status="error",TNE (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TNE.cl" status="online",TNE (720p) [Not 24/7]
 https://v2.tustreaming.cl/tnetv/index.m3u8
 #EXTINF:-1 tvg-id="TurfMovil.cl" status="online",Turf Móvil (720p)
 https://janus.tvturf.cl/playlist/stream.m3u8
@@ -251,8 +251,6 @@ https://pantera1-100gb-cl-movistar.dps.live/tvo/tvo.smil/playlist.m3u8
 https://unlimited2-cl-movistar.dps.live/tvo/tvo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVOTocopilla.cl" status="online",TVO Tocopilla (360p) [Not 24/7]
 http://srv3.zcast.com.br/cristian5592/cristian5592/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPlus.cl" status="error",MÁS+.TV Chile (720p) [Not 24/7]
-https://593b04c4c5670.streamlock.net/8008/8008/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPop.cl" status="online",TV Pop (720p)
 https://v4.tustreaming.cl/poptv/playlist.m3u8
 #EXTINF:-1 tvg-id="TVR.cl" status="online",TVR (1080p) [Not 24/7]
@@ -283,7 +281,7 @@ http://tv.ulagos.cl/web/live.m3u8
 http://edge1.cl.grupoz.cl/tser5/live/playlist.m3u8
 #EXTINF:-1 tvg-id="VClassicTV.cl" status="online",V Classic TV
 https://5eaccbab48461.streamlock.net:1936/8112/8112/playlist.m3u8
-#EXTINF:-1 tvg-id="VCOnline.cl" status="blocked",VC Online (720p)
+#EXTINF:-1 tvg-id="VCOnline.cl" status="online",VC Online (720p)
 https://593b04c4c5670.streamlock.net/8068/8068/playlist.m3u8
 #EXTINF:-1 tvg-id="VidaTV.cl" status="timeout",Vida TV (1080p)
 http://45.161.188.242:88/vidatv/index.m3u8
@@ -305,7 +303,7 @@ https://v2.tustreaming.cl/zizatv/index.m3u8
 http://38.131.11.9:1080/play/a00x
 #EXTINF:-1 tvg-id="" status="error",Chavo TV (480p)
 https://videostreaming.cloudserverlatam.com/ElChavotv/ElChavotv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",CHV Noticias (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",CHV Noticias (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
 #EXTINF:-1 tvg-id="" status="online",PlanetaTV 90s (720p)
 https://mediacpstreamchile.com:1936/8102/8102/playlist.m3u8
