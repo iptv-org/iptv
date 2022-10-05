@@ -71,15 +71,24 @@ https://video-auth2.iol.pt/live_edge/tvi_abr/edge_servers/tvi-480p/chunks.m3u8
 https://video-auth2.iol.pt/live_tvi_direct/live_tvi_direct/edge_servers/tvireality-480p/chunks.m3u8
 #EXTINF:-1 tvg-id="TVManaCordoba.pt" status="timeout",TV Maná Córdoba (576p) [Not 24/7]
 http://csvl03.manasat.com:1935/tvar/tvmanaar2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",TV MANA (ENG) (484p)
-http://c2.manasat.com:1935/church-online/ingles3/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",TV MANA (ESP) (488p)
-http://c2.manasat.com:1935/iglesia-online/espanhol3/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",TV MANA (FR) (484p)
-http://c2.manasat.com:1935/eglise-online/frances3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",TV MANA (RU) (486p)
 http://c2.manasat.com:1935/tserkov-online/russo3/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",TV MANA MAPUTO (526p) [Not 24/7]
-http://streamspub.manasat.com:1935/tvmz/tvmz2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",TV MANA MAPUTO (576p) [Not 24/7]
-http://csvl03.manasat.com:1935/tvmz/tvmz3/playlist.m3u8
+#EXTINF:-1 tvg-id="RTPMemoria.pt" status="",RTP Memória (504p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
+https://streaming-live.rtp.pt/liverepeater/smil:rtpmem.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMana1.pt" status="",TV Maná 1 (1080p)
+https://w1.manasat.com/tvmana-1/smil:tvmana-1.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMana2.pt" status="",TV Maná 2 (1080p)
+https://w1.manasat.com/tvmana-2/smil:tvmana-2.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaBrazil.pt" status="",TV Maná Brazil (1080p)
+https://w1.manasat.com/tvmana-brasil/smil:tvmana-brasil.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaEnglish.pt" status="",TV Maná English (1080p)
+https://w1.manasat.com/tvmana-english/smil:tvmana-english.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaSpanish.pt" status="",TV Maná Español (1080p)
+https://w1.manasat.com/tvmana-espanol/smil:tvmana-espanol.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaFrancais.pt" status="",TV Maná Français (484p)
+https://w2.manasat.com/eglise-online/smil:eglise-online.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TVManaMozambique.pt" status="",TV Maná Mozambique (1080p)
+https://w2.manasat.com/tvmana-mz/smil:tvmana-mz.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MTVPortugal.pt" status="",MTV Portugal (576p)
+http://176.79.76.155:8000/play/a01x/index.m3u8
