@@ -34,7 +34,7 @@ If you would like to replace a broken stream or add a new one, please do the fol
 - open the `/streams` folder and find the file that has the same code in its name and open it
 - if broken, find the broken link in this file and replace it with working one
 - if new, at the very end of this file add a link to the channel with a description
-- if the broadcast is not available outside of a certain country, add the label `[Geo-blocked]` to the end of the channel name and list these countries in the `tvg-country` attribute
+- if the broadcast is not available outside of a certain country, add the label `[Geo-blocked]` to the end of the channel name
 - if the broadcast is not available 24 hours a day, add the label `[Not 24/7]`
 - commit all changes and send a pull request
 
