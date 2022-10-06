@@ -29,8 +29,6 @@ https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8
 https://live.atresmediainternacional.com/ATRESMEDIA/a3cine-index.m3u8
 #EXTINF:-1 tvg-id="BailenTV.es" status="online",Bailén TV (720p) [Not 24/7]
 http://cpd.bailen.tv:8080/Playlist_CANAL_24H/playlist.m3u8
-#EXTINF:-1 tvg-id="BarcaTV.es" status="timeout",Barça TV
-http://5.255.90.184:2002/play/a01z
 #EXTINF:-1 tvg-id="Beteve.es" status="online",betevé (1080p)
 https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
 #EXTINF:-1 tvg-id="Beteve.es" status="online",Beteve
@@ -325,13 +323,13 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 http://stream.fion.es:1936/Canal_Coin/canalcoin.stream/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",CostadelSol TV
 https://limited11.todostreaming.es/live/benalmadena-livestream.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",La 1 Canarias (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="La1Canarias.es" status="blocked",La 1 Canarias (576p) [Geo-blocked]
 https://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@134665/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",La 1 Canarias (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="La1Canarias.es" status="timeout",La 1 Canarias (576p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/5190066.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",La 1 Catalunya (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="La1Catalunya.es" status="timeout",La 1 Catalunya (576p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/3293681.m3u8
-#EXTINF:-1 tvg-id="" status="online",LA7 (720p)
+#EXTINF:-1 tvg-id="La7.es" status="online",LA7 (720p)
 https://cdnlive.shooowit.net/la7live/smil:channel1.smil/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Mola TV (720p)
 http://ventdelnord.tv:8080/mola/directe.m3u8
@@ -343,5 +341,7 @@ http://149.12.64.81:8080/hls/tarotvision.m3u8
 http://91.126.141.201:1935/live/smil:ten.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Urban Revolution
 https://www.urbanrevolution.es:444/live/5e6d8470a3832/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Zafra TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ZafraTV.es" status="online",Zafra TV (720p) [Not 24/7]
 https://cloud.streamingconnect.tv:455/radiotvzafra/radiotvzafra.m3u8
+#EXTINF:-1 tvg-id="BarcaTV.es" status="",Barça TV (576p)
+http://93.152.174.144:4000/play/barcatv/index.m3u8
