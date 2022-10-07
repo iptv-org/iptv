@@ -29,12 +29,12 @@ http://hls-m007.live-lv3.canalplus-cdn.net/live/disk/canalplusclair-hd/hls-ios-f
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x5gv6be
 #EXTINF:-1 tvg-id="CentralTV.fr" status="online",Central TV (614p) [Not 24/7]
 http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8
-#EXTINF:-1 tvg-id="Cherie25.fr" status="error",Chérie 25 (360p)
+#EXTINF:-1 tvg-id="Cherie25.fr" status="blocked",Chérie 25 (360p)
 https://s13.tntendirect.com/cherie25/live/playlist.m3u8
-#EXTINF:-1 tvg-id="CNews.fr" status="online",Cnews (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x3b68jn
 #EXTINF:-1 tvg-id="CNews.fr" status="online",CNews (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CNEWS
+#EXTINF:-1 tvg-id="CNews.fr" status="online",Cnews (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x3b68jn
 #EXTINF:-1 tvg-id="CStar.fr" status="error",CStar (360p)
 https://s13.tntendirect.com/d17/live/playlist.m3u8
 #EXTINF:-1 tvg-id="DBM.fr" status="online",DBM (1080p)
@@ -56,7 +56,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 #EXTINF:-1 tvg-id="EuronewsRussian.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Euronews по-русски (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s89/index.m3u8
-#EXTINF:-1 tvg-id="EuronewsSpanish.fr" status="error",Euronews en Español (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="EuronewsSpanish.fr" status="online",Euronews en Español (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/euronewses/live
 #EXTINF:-1 tvg-id="FashionTVCzechSlovak.fr" status="online",FashionTV Czech&Slovak (450p) [Not 24/7]
 http://lb.streaming.sk/fashiontv/stream/playlist.m3u8
@@ -83,17 +83,17 @@ https://fash1043.cloudycdn.services/slive/ftv_ftv_pg13_zw9_27065_ftv_pg13_sam_19
 https://fash1043.cloudycdn.services/slive/ftv_ftv_pg13_zw9_27065_ftv_pg13_196_hls.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVUHD.fr" status="online",Fashion TV UHD (2160p)
 https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_hls.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="France2.fr" status="error",France 2 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="France2.fr" status="blocked",France 2 (720p) [Not 24/7]
 https://s13.tntendirect.com/france2/live/playlist.m3u8
 #EXTINF:-1 tvg-id="France3ParisIledeFrance.fr" status="error",France 3 Paris Ile-de-France (720p) [Not 24/7]
 https://s13.tntendirect.com/france3/live/playlist.m3u8
-#EXTINF:-1 tvg-id="France5.fr" status="error",France 5 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="France5.fr" status="blocked",France 5 (720p) [Not 24/7]
 https://s13.tntendirect.com/france5/live/playlist.m3u8
 #EXTINF:-1 tvg-id="France24Arabic.fr" status="online",France 24 Arabic (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Arabic/live
 #EXTINF:-1 tvg-id="France24English.fr" status="online",France 24 English (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24English/live
-#EXTINF:-1 tvg-id="France24Espanol.fr" status="timeout",France 24 Español (1080p)
+#EXTINF:-1 tvg-id="France24Espanol.fr" status="online",France 24 Español (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Espanol/live
 #EXTINF:-1 tvg-id="France24French.fr" status="online",France 24 French (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24/live
@@ -113,13 +113,13 @@ https://shls-gulli-bil-arabi-prod-dub.shahid.net/out/v1/5454d215afba410c90b233f4
 http://188.40.68.167/russia/gulli_girl/playlist.m3u8
 #EXTINF:-1 tvg-id="KTO.fr" status="online",KTO (404p) [Not 24/7]
 https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
-#EXTINF:-1 tvg-id="LEquipe.fr" status="error",L'EQUIPE (360p)
+#EXTINF:-1 tvg-id="LEquipe.fr" status="blocked",L'EQUIPE (360p)
 https://s13.tntendirect.com/lequipe21/live/playlist.m3u8
 #EXTINF:-1 tvg-id="M6.fr" status="online",M6 (1080p)
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="online",M6 Music (720p)
 http://190.2.155.162:8080/m6music/mpegts
-#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -137,7 +137,7 @@ http://190.2.155.162:8080/mtvhit/mpegts
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-en-plex/playlist.m3u8
 #EXTINF:-1 tvg-id="NancyWebTV.fr" status="online",Nancy Web TV (394p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:nancy-webtv/manifest.m3u8
-#EXTINF:-1 tvg-id="NRJ12.fr" status="error",NRJ12 (720p)
+#EXTINF:-1 tvg-id="NRJ12.fr" status="blocked",NRJ12 (720p)
 https://s13.tntendirect.com/nrj12/live/playlist.m3u8
 #EXTINF:-1 tvg-id="PersianaCinema.fr" status="online",Persiana Cinema (720p)
 http://51.210.199.15/hls/stream.m3u8
@@ -213,7 +213,7 @@ https://letrot-racingtrot-p32-cdn.hexaglobe.net/6589e3acb09cfb92f867060d58a30b2a
 http://entertainment.ashttp9.visionip.tv/live/visiontvuk-entertainment-edgytv-hsslive-25f-16x9-SD/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Fun Radio (720p)
 https://livevideo.infomaniak.com/streaming/livecast/funradiovisionhd/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Persiana Varzesh (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",Persiana Varzesh (720p) [Not 24/7]
 http://51.210.199.16/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="online",Sqool TV
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCaEqMbRYYOmI3WrALMhxuIg/live
