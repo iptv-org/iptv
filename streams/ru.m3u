@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1HDMusicTelevision.ru" status="online",1HD Music Television (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="1HDMusicTelevision.ru" status="error",1HD Music Television (404p) [Not 24/7]
 https://sc.id-tv.kz/1hd.m3u8
 #EXTINF:-1 tvg-id="2x2.ru" status="online",2x2 (720p) [Not 24/7]
 https://bl.uma.media/live/317805/HLS/4614144_3,2883584_2,1153024_1/1613019214/3754dbee773afc02014172ca26d3bb79/playlist.m3u8
@@ -76,7 +76,7 @@ http://live2.mediacdn.ru/sr1/tro/playlist.m3u8
 https://strm.yandex.ru/kal/bigasia/bigasia0.m3u8
 #EXTINF:-1 tvg-id="Bober.ru" status="online",Бобер (576p) [Not 24/7]
 https://sc.id-tv.kz/bober.m3u8
-#EXTINF:-1 tvg-id="BollywoodHDRussia.ru" status="timeout",Bollywood HD (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="BollywoodHDRussia.ru" status="online",Bollywood HD (1080p) [Not 24/7]
 https://sc.id-tv.kz/bollywood_hd.m3u8
 #EXTINF:-1 tvg-id="BridgeTV.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Bridge TV (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
@@ -119,11 +119,11 @@ http://ott-cdn.ucom.am/s88/index.m3u8
 http://50.7.92.90/Dom_kino/playlist.m3u8
 #EXTINF:-1 tvg-id="DomKinoPremium.ru" status="online",Дом Кино Премиум (1080p) [Not 24/7]
 https://sc.id-tv.kz/domkino_hd.m3u8
+#EXTINF:-1 tvg-id="Dorama.uk" status="online",Дорама (1080p) [Not 24/7]
+https://sc.id-tv.kz/dorama_hd.m3u8
 #EXTINF:-1 tvg-id="Dorama.uk" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Дорама (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s95/index.m3u8
-#EXTINF:-1 tvg-id="Dorama.uk" status="timeout",Дорама (1080p) [Not 24/7]
-https://sc.id-tv.kz/dorama_hd.m3u8
 #EXTINF:-1 tvg-id="Dozhd.ru" status="blocked",Дождь (1080p) [Geo-blocked]
 https://strm.yandex.ru/kal/tvrain/tvrain0.m3u8
 #EXTINF:-1 tvg-id="EhoTV.ru" status="online",Эхо TV (Рязань) (576p) [Not 24/7]
@@ -181,7 +181,7 @@ https://strm.yandex.ru/kal/kavkaz24_supres/kavkaz24_supres0.m3u8
 https://sc.id-tv.kz/Khabar_24.m3u8
 #EXTINF:-1 tvg-id="Khabar.kz" status="online",Хабар (576p) [Not 24/7]
 https://sc.id-tv.kz/Khabar.m3u8
-#EXTINF:-1 tvg-id="Kinohit.ru" status="timeout",Кинохит (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kinohit.ru" status="online",Кинохит (404p) [Not 24/7]
 https://sc.id-tv.kz/Kinohit_hd.m3u8
 #EXTINF:-1 tvg-id="Kinokomedija.ru" status="online",Кинокомедия (360p) [Not 24/7]
 https://sc.id-tv.kz/Kinokomediya_hd.m3u8
@@ -303,7 +303,7 @@ http://ott-cdn.ucom.am/s28/index.m3u8
 http://nano.teleservice.su:8080/hls/nano.m3u8
 #EXTINF:-1 tvg-id="NashaSibir.ru" status="timeout",Наша Сибирь / Кемерово (1080p) [Not 24/7]
 https://strm.yandex.ru/kal/sibir/sibir0.m3u8
-#EXTINF:-1 tvg-id="Nauka.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Наука (480p)
+#EXTINF:-1 tvg-id="Nauka.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Наука (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s98/index.m3u8
 #EXTINF:-1 tvg-id="NikaTV.ru" status="online",Ника ТВ (576p) [Not 24/7]
@@ -517,7 +517,7 @@ https://bsttv.bonus-tv.ru/cdn/salyam/playlist.m3u8
 http://45.67.57.9:8080/new/new/playlist.m3u8
 #EXTINF:-1 tvg-id="Sarafan.ru" status="online",Сарафан (576p) [Not 24/7]
 http://195.26.83.96:7024/play/82
-#EXTINF:-1 tvg-id="Saratov24.ru" status="online",Саратов 24 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Saratov24.ru" status="error",Саратов 24 (1080p) [Not 24/7]
 https://saratov24.tv/online/playlist.php
 #EXTINF:-1 tvg-id="SelengaTV.ru" status="online",Селенга ТВ (576p)
 http://90.188.37.86/live/playlist.m3u8
@@ -527,15 +527,15 @@ https://live2.mediacdn.ru/sr1/sever-mobile/playlist.m3u8
 https://live2.mediacdn.ru/sr1/sever/playlist.m3u8
 #EXTINF:-1 tvg-id="Sever.ru" status="online",Север (Нарьян-Мар) (1080p)
 https://live.mediacdn.ru/sr1/sever/playlist.m3u8
+#EXTINF:-1 tvg-id="ShansonTV.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Шансон ТВ (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s43/index.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (512p) [Geo-blocked]
 http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (576p) [Geo-blocked]
 http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (576p) [Geo-blocked]
 http://uiptv.do.am/1ufc/602079679/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Шансон ТВ (480p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
-http://ott-cdn.ucom.am/s43/index.m3u8
 #EXTINF:-1 tvg-id="ShchyolkovskoeTV.ru" status="online",Щёлковское ТВ (576p) [Not 24/7]
 http://stream0.tv41.ru/live.m3u8
 #EXTINF:-1 tvg-id="Shokiruyuschee.ru" status="timeout",Шокирующее (540p)
