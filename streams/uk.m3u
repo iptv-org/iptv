@@ -36,8 +36,6 @@ https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_alba/m
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2_http.mpd
-#EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2_cloudfrontms_live.mpd
@@ -45,6 +43,8 @@ https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_ar
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2_http.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/t=3840/v=pv14/b=5070016/main.m3u8
+#EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
+https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2_http.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (540p)
@@ -122,8 +122,6 @@ https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_parli
 #EXTINF:-1 tvg-id="BBCParliament.uk" status="blocked",BBC Parliament (540p) [Geo-blocked]
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_parliament/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_dash_live.mpd
-#EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
 https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_dash_live_http.mpd
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_cloudfrontms_live.mpd
@@ -131,6 +129,8 @@ https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_pe
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_cloudfrontms_live_http.mpd
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/t=3840/v=pv14/b=5070016/main.m3u8
+#EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
+https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_dash_live.mpd
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (540p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_hls_live.m3u8
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (540p)
@@ -219,7 +219,7 @@ https://ve-uhd-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uhd_stream_
 https://ve-uhd-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uhd_stream_04/iptv_uhd_v1.mpd
 #EXTINF:-1 tvg-id="BBCUHD5.uk" status="blocked",BBC UHD 5 (2160p) [Geo-blocked] [Not 24/7]
 https://ve-uhd-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uhd_stream_05/iptv_uhd_v1.mpd
-#EXTINF:-1 tvg-id="BBCWorldNewsEurope.uk" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",BBC World News (480p)
+#EXTINF:-1 tvg-id="BBCWorldNewsEurope.uk" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",BBC World News (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s24/index.m3u8
 #EXTINF:-1 tvg-id="BoxHits.uk" status="online",Box Hits (576p)
@@ -263,7 +263,7 @@ http://ott-cdn.ucom.am/s37/index.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/KhodamAlMahdi2/live
 #EXTINF:-1 tvg-id="FreeSports.uk" status="online",FreeSports (1080p) [Not 24/7]
 https://d3cq7cdp2cfi92.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-2ff27mp9b8422-prod/hls-harvester2-1293-prod/us-east-1/cc-2ff27mp9b8422/master.m3u8
-#EXTINF:-1 tvg-id="GarshomTV.uk" status="online",Garshom TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="GarshomTV.uk" status="error",Garshom TV (360p) [Not 24/7]
 http://og2qd3aal7an-hls-live.5centscdn.com/garshomtv/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="GBNews.uk" status="online",GB News (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/GBNewsOnline/live
@@ -309,7 +309,7 @@ https://lo2-1.gemporia.com/abrjewellerymaker/smil:livestream.smil/playlist.m3u8
 http://188.40.68.167/russia/jimjam/playlist.m3u8
 #EXTINF:-1 tvg-id="KalemehTV.uk" status="online",Kalemeh TV (576p) [Not 24/7]
 http://51.210.199.37/hls/stream.m3u8
-#EXTINF:-1 tvg-id="KanshiTV.uk" status="error",Kanshi TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KanshiTV.uk" status="online",Kanshi TV (720p) [Not 24/7]
 https://live.kanshitv.co.uk/mobile/kanshitvkey.m3u8
 #EXTINF:-1 tvg-id="Kerrang.uk" status="online",Kerrang (576p) [Geo-blocked]
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,kerrang-alldev.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/kerrang/
@@ -345,7 +345,7 @@ https://livemtaasia.akamaized.net/hls/live/2039224/mtaasia2/playlist.m3u8
 https://chlivemta.akamaized.net/hls/live/2016718/mta8/playlist.m3u8
 #EXTINF:-1 tvg-id="NoorTV.uk" status="online",Noor TV (480p) [Not 24/7]
 http://45.76.186.114:8080/hls/noortv.m3u8
-#EXTINF:-1 tvg-id="NoorTV.uk" status="online",Noor TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="NoorTV.uk" status="error",Noor TV (480p) [Not 24/7]
 https://live.smartmediahouse.tv:8443/hls/ch1.m3u8
 #EXTINF:-1 tvg-id="PopMax.uk" status="online",POP Max (576p)
 https://live-sonybebanjo.simplestreamcdn.com/live/popmax/bitrate1.isml/live.mpd
@@ -392,9 +392,9 @@ https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,thebox-alldev.m3u8?
 #EXTINF:-1 tvg-id="TJC.uk" status="online",TJC (1080p)
 https://cdn-shop-lc-01.akamaized.net/Content/HLS_HLS/Live/channel(TJCOTT)/index.m3u8
 #EXTINF:-1 tvg-id="V2BEAT.uk" status="online",V2BEAT (720p) [Not 24/7]
-https://abr.de1se01.v2beat.live/playlist.m3u8
-#EXTINF:-1 tvg-id="V2BEAT.uk" status="online",V2BEAT (720p) [Not 24/7]
 https://de1se01.v2beat.live/playlist.m3u8
+#EXTINF:-1 tvg-id="V2BEAT.uk" status="error",V2BEAT (720p) [Not 24/7]
+https://abr.de1se01.v2beat.live/playlist.m3u8
 #EXTINF:-1 tvg-id="XpandedTV.uk" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://vod2t.xpanded.com/x3tv/index_wlan.m3u8
