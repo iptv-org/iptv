@@ -41,15 +41,15 @@ https://s13.tntendirect.com/d17/live/playlist.m3u8
 https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
-#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="online",El Heddaf TV [Geo-blocked]
+#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="error",El Heddaf TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="Equidia.fr" status="blocked",Equidia
 https://equidia-live2-b29-cdn.hexaglobe.net/1f994c5832c0648f9f44d0771fc8835a/63270a1e/equidia/equidia-website-web-1/eqdlivepri_fre.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="EuronewsAlbania.al" status="online",Euronews Albania (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="EuronewsAlbania.al" status="error",Euronews Albania (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
 #EXTINF:-1 tvg-id="EuronewsEnglish.fr" status="online",Euronews English (720p)
 https://d1mpprlbe8tn2j.cloudfront.net/v1/master/7b67fbda7ab859400a821e9aa0deda20ab7ca3d2/euronewsLive/87O7AhxRUdeeIVqf/ewnsabren_eng.m3u8
-#EXTINF:-1 tvg-id="EuronewsHungarian.fr" status="timeout",Euronews Hungary (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="EuronewsHungarian.fr" status="online",Euronews Hungary (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/euronewsHungarian/live
 #EXTINF:-1 tvg-id="EuronewsRussian.fr" status="online",Euronews по-русски (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFzJjgVicCtFxJ5B0P_ei8A/live
@@ -177,13 +177,9 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/TEL
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7wrxqb
 #EXTINF:-1 tvg-id="TF1SeriesFilms.fr" status="online",TF1 Séries Films (360p)
 http://gratuittv.free.fr/Files/tfsf/live/playlist.m3u8
-#EXTINF:-1 tvg-id="Tiji.fr" status="blocked",Tiji (1080p)
-https://shls-tiji-tv-prod-dub.shahid.net/out/v1/ee05878a88474f408ff04495d44cc249/index.m3u8
-#EXTINF:-1 tvg-id="TijiRussia.ru" status="blocked",Tiji Russia (576p) [Not 24/7]
-http://188.40.68.167/russia/tiji/playlist.m3u8
 #EXTINF:-1 tvg-id="TraceLatina.uk" status="blocked",Trace Latina
 http://185.234.217.27:8002/play/a02f/index.m3u8
-#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="timeout",TV5 Monde Asie (576p)
+#EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="error",TV5 Monde Asie (576p)
 http://210.210.155.37/dr9445/s/s24/index.m3u8
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="online",TV7 Bordeaux (720p)
 http://live.digiteka.com/1/RVNZMmJtUURmd09I/U0dNU0tk/hls/live/playlist.m3u8
@@ -215,6 +211,10 @@ https://livevideo.infomaniak.com/streaming/livecast/funradiovisionhd/playlist.m3
 http://51.210.199.16/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="online",Sqool TV
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCaEqMbRYYOmI3WrALMhxuIg/live
+#EXTINF:-1 tvg-id="" status="blocked",Tiji (1080p)
+https://shls-tiji-tv-prod-dub.shahid.net/out/v1/ee05878a88474f408ff04495d44cc249/index.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Tiji Russia (576p) [Not 24/7]
+http://188.40.68.167/russia/tiji/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Wéo (Hauts-de-France) (480p) [Not 24/7]
 https://live.digiteka.com/1/WGQ1NnhEN0lzM0NU/dk1EOHhw/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Wéo (Picardie) (480p) [Not 24/7]
