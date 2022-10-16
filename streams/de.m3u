@@ -69,8 +69,6 @@ http://5.135.92.131:1935/live/euroAl/playlist.m3u8
 http://62.113.210.2/filstalwelle-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="FinestTV.de" status="online",Finest TV (288p) [Not 24/7]
 http://media.finest.tv/hls/live.m3u8
-#EXTINF:-1 tvg-id="FOLXMusic.de" status="timeout",FOLX Music (1080p)
-https://serve-first.folxplay.tv/folx/ch-4/master.m3u8
 #EXTINF:-1 tvg-id="FrankenFernsehen.de" status="online",Franken Fernsehen (Nürnberg) (1080p) [Not 24/7]
 https://frankentv.iptv-playoutcenter.de/frankentv/frankentv.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="HauptstadtTV.de" status="online",Hauptstadt.TV (Potsdam) (720p) [Not 24/7]
@@ -205,10 +203,6 @@ http://62.113.210.250/medienasa-live/ok-wernigerode_high/hasbahca.m3u8?bitrate=8
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-wernigerode_high/playlist.m3u8
 #EXTINF:-1 tvg-id="oldenburgeins.de" status="online",oldenburg eins (1080p) [Not 24/7]
 https://oeins.de/live/studio.m3u8
-#EXTINF:-1 tvg-id="One1MusicTV.de" status="timeout",ONE1 Music (1080p)
-https://serve-first.folxplay.tv/folx/ch-3/master.m3u8
-#EXTINF:-1 tvg-id="ONE1Slovenia.si" status="timeout",ONE1 Slovenija (1080p)
-https://serve-first.folxplay.tv/folx/ch-6/master.m3u8
 #EXTINF:-1 tvg-id="Parlamentsfernsehen1.de" status="online",Parlamentsfernsehen 1 (1080p)
 https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8
 #EXTINF:-1 tvg-id="Parlamentsfernsehen2.de" status="online",Parlamentsfernsehen 2 (270p)
@@ -295,7 +289,7 @@ https://5852afe96c9bb.streamlock.net/studio47-live/_definst_/mp4:livestream/play
 https://5852afe96c9bb.streamlock.net/studio47-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="SWR3VisualRadio.de" status="online",SWR 3 Visual Radio (720p)
 https://swrswr3vr-hls.akamaized.net/hls/live/2018683/swr3vr/master.m3u8
-#EXTINF:-1 tvg-id="tagesschau24.de" status="timeout",Tagesschau 24 (720p)
+#EXTINF:-1 tvg-id="tagesschau24.de" status="online",Tagesschau 24 (720p)
 https://tagesschau.akamaized.net/hls/live/2020115/tagesschau/tagesschau_1/master.m3u8
 #EXTINF:-1 tvg-id="TeinsTV.de" status="online",Teins TV (1080p) [Not 24/7]
 https://live1.markenfunk.com/t1/live/playlist.m3u8
@@ -307,7 +301,7 @@ https://5856e1a25f71a.streamlock.net/easycast8-live/mp4:livestreamhd8/playlist.m
 https://5889e7d0d6e28.streamlock.net/tide-live/_definst_/smil:livestream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TideTV.de" status="online",Tide TV (1080p) [Not 24/7]
 https://5889e7d0d6e28.streamlock.net/tide-live/smil:livestream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="tiviTURK.de" status="error",tiviTÜRK (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="tiviTURK.de" status="online",tiviTÜRK (720p) [Not 24/7]
 https://stream.tiviturk.de/live/tiviturk.m3u8
 #EXTINF:-1 tvg-id="TV38SudostNiedersachen.de" status="online",TV38 Südost-Niedersachen (480p) [Not 24/7]
 http://62.113.221.3/tv38-live/_definst_/mp4:livestream/playlist.m3u8
@@ -342,6 +336,8 @@ https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8
 http://ott-cdn.ucom.am/s26/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Filstalwelle Göppingen (576p)
 http://62.113.210.2/filstalwelle-live/_definst_/mp4:livestream/chunklist_w660034089.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",FOLX Music (1080p)
+https://serve-first.folxplay.tv/folx/ch-4/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",FOLX Slovenija (1080p)
 https://serve-first.folxplay.tv/folx/ch-5/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Franken Fernsehen (1080p)
@@ -372,6 +368,10 @@ https://fms.nrwision.de/live/livestreamHD.stream_source/playlist.m3u8
 https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="" status="online",Offener Kanal Fulda
 https://s.ok54.de/mok-fu/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",ONE1 Music (1080p)
+https://serve-first.folxplay.tv/folx/ch-3/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",ONE1 Slovenija (1080p)
+https://serve-first.folxplay.tv/folx/ch-6/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",PunktUM (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/punktum_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",PunktUm Hettstedt (1080p)
