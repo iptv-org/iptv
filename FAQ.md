@@ -111,12 +111,12 @@ We are a community initiative and you don't need to pay anything to stay on this
 * A PC with Internet, video editor and recording/broadcasting app under RTMP protocol (e.g. OBS).
 * And a live streaming service with multibitrate (if possible).
 
-After you have your m3u8 link, add your channel information creating or editing the id onto the [Database](https://github.com/iptv-org/database) repository. Then, submit an [issue](https://github.com/iptv-org/iptv/issues/new/choose) to propose it to us.
+After you have your m3u8 link, add your channel information creating or editing the id (identifier) onto the [Database](https://github.com/iptv-org/database) repository. Then, submit an [issue](https://github.com/iptv-org/iptv/issues/new/choose) to propose it to us.
 
-Notes: 
+Notes:
 * Because this is an community repository, we need some approvals from the administrators to continue. See [discussion](https://github.com/iptv-org/iptv/discussions/8412).
 * If your television station broadcasts from other television stations, please read the *[Can I safely add an FTA channel that broadcasts PPV events or pay programming?](#Can-i-safely-add-an-fta-channel-that-broadcasts-ppv-events-or-pay-programming)* section.
-* You can only use the same id if you propose a mirror stream. Please do not set the same id for two different channels. See [issue](https://github.com/iptv-org/iptv/discussions/8412).
+* The same id can only be used if a mirror flow is also proposed. Please do not set the same id for two different channels. See [issue](https://github.com/iptv-org/iptv/discussions/8412).
 
 Based on [#650](https://github.com/iptv-org/iptv/issues/650) and [#6654](https://github.com/iptv-org/iptv/discussions/6654) (basic information).
 
