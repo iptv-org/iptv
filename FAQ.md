@@ -116,7 +116,7 @@ After you have your m3u8 link, add your channel information by creating or editi
 Notes:
 * Because this is an community repository, we need the approval from two maintainers to accept your new additions. See [discussion](https://github.com/iptv-org/iptv/discussions/8412) for further explanations.
 * If your television station broadcasts from other television stations, please read the *[Can I safely add an FTA channel that broadcasts PPV events or pay programming?](#Can-i-safely-add-an-fta-channel-that-broadcasts-ppv-events-or-pay-programming)* section.
-* The same id can only be used if a mirror stream is also proposed. Please do not set the same id for two different channels. See [issue](https://github.com/iptv-org/iptv/discussions/8412).
+* The same id can only be used if a mirror stream is also proposed. Please do not set the same id for two different channels. See [PR](https://github.com/iptv-org/iptv/pull/9572).
 
 Based on [#650](https://github.com/iptv-org/iptv/issues/650) and [#6654](https://github.com/iptv-org/iptv/discussions/6654) (basic information).
 
