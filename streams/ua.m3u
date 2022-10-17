@@ -40,7 +40,7 @@ http://pershij-dlovij.cdn-02.cosmonova.net.ua/hls/pershij-dlovij_ua_mid/index.m3
 https://stream.uagit.tv/gittv.m3u8
 #EXTINF:-1 tvg-id="Glas.ua" status="online",Глас (576p)
 http://85.238.112.69:8811/hls_sec/239.0.4.18-.m3u8
-#EXTINF:-1 tvg-id="HersonPlyus.ua" status="timeout",Херсон Плюс (576p)
+#EXTINF:-1 tvg-id="HersonPlyus.ua" status="blocked",Херсон Плюс (576p)
 http://46.175.163.130/ks_plus/index.m3u8
 #EXTINF:-1 tvg-id="Inter.ua" status="timeout",IHTEP (576p)
 https://edge1.iptv.macc.com.ua/img/inter_3/index.m3u8
@@ -129,9 +129,9 @@ https://cdn1.live-tv.od.ua:8083/krugod/krugod-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKKrug.ua" status="error",ТРК Круг (576p) [Not 24/7]
 https://cdn1.live-tv.od.ua:8083/krugod/krugod/playlist.m3u8
 #EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
-http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
 http://rtsp.cdn.ua/tva.ua_live/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVA.ua" status="error",ТВА (Чернiвцi) (576p)
+http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVDom.ua" status="timeout",ТВ Дом
 http://46.149.48.21:1234
 #EXTINF:-1 tvg-id="UAOdesa.ua" status="error",UA: Одеса (384p) [Not 24/7]
