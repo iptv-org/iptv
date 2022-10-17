@@ -111,7 +111,7 @@ We are a community initiative and you don't need to pay anything to stay on this
 * A PC with Internet, video editor and recording/broadcasting app under RTMP protocol (e.g. OBS).
 * And a live streaming service with multibitrate (if possible).
 
-After you have your m3u8 link, add your channel information creating or editing the id (identifier) onto the [Database](https://github.com/iptv-org/database) repository. Then, submit an [issue](https://github.com/iptv-org/iptv/issues/new/choose) to propose it to us.
+After you have your m3u8 link, add your channel information by creating or editing the id (identifier) onto the [Database](https://github.com/iptv-org/database) repository. Then, submit an [issue](https://github.com/iptv-org/iptv/issues/new/choose) to propose it to us.
 
 Notes:
 * Because this is an community repository, we need some approvals from the administrators to continue. See [discussion](https://github.com/iptv-org/iptv/discussions/8412).
