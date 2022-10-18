@@ -167,7 +167,7 @@ An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikiped
 #EXTINF:-1 tvg-id="KJLA-DT1.us",Visión Latina Los Angeles (KJLA-DT1)
 ```
 
-If the channel has a another stream and this is broadcasting as an international feed or under an online website, consider using the alphanumeric name instead, whose id is `VisionLatina.us`.
+If the channel has a another stream and this is broadcasting as an international feed or under an online website without georestriction, consider using the alphanumeric name instead, whose id is `VisionLatina.us`.
 
 ```
 #EXTINF:-1 tvg-id="VisionLatina.us",Visión Latina
