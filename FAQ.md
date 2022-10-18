@@ -159,14 +159,16 @@ No. Exceptions are the visual radios, in which a video and audio are shown at th
 Based on [#1196](https://github.com/iptv-org/iptv/pull/1196) (first pull request about this) [#2758](https://github.com/iptv-org/iptv/pull/2758) (visual radio example), [#5794](https://github.com/iptv-org/iptv/discussions/5794), [#6044](https://github.com/iptv-org/iptv/discussions/6044) and [#8788](https://github.com/iptv-org/iptv/discussions/8788).
 
 ### Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?
-It's to differentiate the origin of the broadcast from the content. Call signs usually come from physical stations in the country of origin and their programming is subject to change. If the channel is not from a television station, the brand name will be used.
+It's to differentiate the origin of the broadcast from the content. Call signs (or call letters in some countries) usually come from physical stations in the country of origin and their programming is subject to change. If the channel is not from a television station, the brand name will be used. This type of ids is widely used in the United States, where it has [its article in Wikipedia](https://en.wikipedia.org/wiki/Call_signs_in_the_United_States) explained in more detail.
 
 An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel, whose id is `VisionLatina.us`.
 
 Based on [#5818](https://github.com/iptv-org/iptv/discussions/5818).
 
 ### There are source for verify call sign and coverage area for some TV stations?
-There are websites to consult the location and characteristics of the station. For example, [FCCData](https://fccdata.org/) for US, Canada, Mexico, UK, Australia and Japan.
+There are websites to consult the location and characteristics of the station. FCC has [complete official information](https://www.fcc.gov/media/television/tv-service-contour-data-points) about call letters in the United States. You can also consult other websites such as [FCCData](https://fccdata.org/) for US, Canada, Mexico, UK, Australia and Japan.
+
+Based on [#9312](https://github.com/iptv-org/iptv/discussions/9312).
 
 ### Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?
 The reason is to reduce the workload when adding streams in the list. Since "tvg-id" links to the [Database](https://github.com/iptv-org/database) repository, each channel has unique attributes like image, name (in English and local speak), country (or countries) broadcasted, category and language.
