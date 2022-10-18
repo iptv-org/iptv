@@ -161,7 +161,17 @@ Based on [#1196](https://github.com/iptv-org/iptv/pull/1196) (first pull request
 ### Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?
 It's to differentiate the origin of the broadcast from the content. Call signs (or call letters in some countries) usually come from physical stations in the country of origin and their programming is subject to change. This type of ids is widely used in the United States, where it has [its article in Wikipedia](https://en.wikipedia.org/wiki/Call_signs_in_the_United_States) explained in more detail. However, if the channel does not officially carry the identification of the local television station, the brand name will be used as id.
 
-An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel, whose id is `VisionLatina.us`.
+An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel.
+
+```
+#EXTINF:-1 tvg-id="KJLA-DT1.us",Visión Latina Los Angeles (KJLA-DT1)
+```
+
+If the channel has a another stream and this is broadcasting as an international feed or under an online website, consider using the alphanumeric name instead, whose id is `VisionLatina.us`.
+
+```
+#EXTINF:-1 tvg-id="VisionLatina.us",Visión Latina
+```
 
 Based on [#5818](https://github.com/iptv-org/iptv/discussions/5818).
 
