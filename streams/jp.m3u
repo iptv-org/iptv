@@ -14,6 +14,8 @@ https://sub2.neetball.net/live/neet.m3u8
 #EXTINF:-1 tvg-id="BS12.jp" status="online",BS 12 (480p)
 http://redlabmcdn.s.llnwi.net/nv02/bs08hd/index.m3u8
 #EXTINF:-1 tvg-id="BSAsahi.jp" status="online",BS Asahi (720p)
+http://cdn.us195.jpnettv.live:1935/jptv/bsasahi_720/playlist.m3u8
+#EXTINF:-1 tvg-id="BSAsahi.jp" status="online",BS Asahi (720p)
 http://cdnv148.cloudrsst.com:1935/jptv/bsasahi_720/playlist.m3u8
 #EXTINF:-1 tvg-id="BSAsahi.jp" status="online",BS Asahi (540p)
 http://cdn.us195.jpnettv.live:1935/jptv/bsasahi_540/playlist.m3u8
@@ -23,8 +25,6 @@ http://cdnv148.cloudrsst.com:1935/jptv/bsasahi_540/playlist.m3u8
 https://cdn.us195.jpnettv.live/jptv/bsasahi_540/playlist.m3u8
 #EXTINF:-1 tvg-id="BSAsahi.jp" status="online",BS Asahi (480p)
 http://redlabmcdn.s.llnwi.net/nv02/bs04hd/index.m3u8
-#EXTINF:-1 tvg-id="BSAsahi.jp" status="error",BS Asahi (720p)
-http://cdn.us195.jpnettv.live:1935/jptv/bsasahi_720/playlist.m3u8
 #EXTINF:-1 tvg-id="BSFuji.jp" status="online",BS Fuji TV (720p)
 http://cdn.us195.jpnettv.live:1935/jptv/bsfuji_720/playlist.m3u8
 #EXTINF:-1 tvg-id="BSFuji.jp" status="online",BS Fuji TV (720p)
@@ -109,18 +109,18 @@ https://cdn.us195.jpnettv.live/jptv/kanto_nhk_edu_540/playlist.m3u8
 https://cdnv148.cloudrsst.com/jptv/kanto_nhk_edu_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JOAKDTV.jp" status="online",NHK G (JOAK-DTV) (720p)
 https://cdn.us195.jpnettv.live/jptv/kanto_nhk_g_720/playlist.m3u8
+#EXTINF:-1 tvg-id="JOAKDTV.jp" status="online",Kansai TV (関西 テレビ) (JODX-DTV) (720p)
+https://cdnv148.cloudrsst.com/jptv/kansi_tv_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JOAKDTV.jp" status="online",NHK G (JOAK-DTV) (720p)
 https://cdnv148.cloudrsst.com/jptv/kanto_nhk_g_720/playlist.m3u8
+#EXTINF:-1 tvg-id="JOAKDTV.jp" status="online",Kansai TV (関西 テレビ) (JODX-DTV) (540p)
+https://cdn.us195.jpnettv.live/jptv/kansi_tv_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JOAKDTV.jp" status="online",NHK G (JOAK-DTV) (540p)
 https://cdn.us195.jpnettv.live/jptv/kanto_nhk_g_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JOAKDTV.jp" status="online",Kansai TV (関西 テレビ) (JODX-DTV) (540p)
 https://cdnv148.cloudrsst.com/jptv/kansi_tv_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JOAKDTV.jp" status="online",NHK G (JOAK-DTV) (540p)
 https://cdnv148.cloudrsst.com/jptv/kanto_nhk_g_540/playlist.m3u8
-#EXTINF:-1 tvg-id="JOAKDTV.jp" status="error",Kansai TV (関西 テレビ) (JODX-DTV) (720p)
-https://cdnv148.cloudrsst.com/jptv/kansi_tv_720/playlist.m3u8
-#EXTINF:-1 tvg-id="JOAKDTV.jp" status="error",Kansai TV (関西 テレビ) (JODX-DTV) (540p)
-https://cdn.us195.jpnettv.live/jptv/kansi_tv_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JOAXDTV.jp" status="online",Nippon TV (JOAXD-TV) (720p)
 https://cdn.us195.jpnettv.live/jptv/kanto_nippon_720/playlist.m3u8
 #EXTINF:-1 tvg-id="JOAXDTV.jp" status="online",Nippon TV (JOAXD-TV) (720p)
@@ -136,9 +136,9 @@ https://cdnv148.cloudrsst.com/jptv/kansi_abc_asahi_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JOCXDTV.jp" status="online",Fuji TV (480p)
 http://redlabmcdn.s.llnwi.net/nv02/ryowa7hd/index.m3u8
 #EXTINF:-1 tvg-id="JOIXDTV.jp" status="online",YTV Yomiuri TV (540p)
-https://cdnv148.cloudrsst.com/jptv/kansi_yomiuri_540/playlist.m3u8
-#EXTINF:-1 tvg-id="JOIXDTV.jp" status="error",YTV Yomiuri TV (540p)
 https://cdn.us195.jpnettv.live/jptv/kansi_yomiuri_540/playlist.m3u8
+#EXTINF:-1 tvg-id="JOIXDTV.jp" status="online",YTV Yomiuri TV (540p)
+https://cdnv148.cloudrsst.com/jptv/kansi_yomiuri_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JOMXDTV.jp" status="online",Tokyo MX 1 (540p)
 https://cdn.us195.jpnettv.live/jptv/kanto_tokyo_mx1_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JOMXDTV.jp" status="online",Tokyo MX 1 (540p)
@@ -155,9 +155,9 @@ https://tbs2.mov3.co/hls/tbs.m3u8
 http://redlabmcdn.s.llnwi.net/nv02/ryowa5hd/index.m3u8
 #EXTINF:-1 tvg-id="JOTXDTV.jp" status="online",TV Tokyo (480p)
 http://redlabmcdn.s.llnwi.net/nv02/ryowa6hd/index.m3u8
-#EXTINF:-1 tvg-id="JOUHDTV.jp" status="error",Sun TV (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="JOUHDTV.jp" status="online",Sun TV (540p) [Not 24/7]
 https://cdn.us195.jpnettv.live/jptv/kansi_sun_tv_540/playlist.m3u8
-#EXTINF:-1 tvg-id="JOUHDTV.jp" status="error",Sun TV (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="JOUHDTV.jp" status="online",Sun TV (540p) [Not 24/7]
 https://cdnv148.cloudrsst.com/jptv/kansi_sun_tv_540/playlist.m3u8
 #EXTINF:-1 tvg-id="JSports1.jp" status="online",J Sports 1 (480p) [Not 24/7]
 http://redlabmcdn.s.llnwi.net/nv02/bs15hd/index.m3u8
@@ -188,6 +188,8 @@ http://cdnv148.cloudrsst.com:1935/jptv/mtv/playlist.m3u8
 #EXTINF:-1 tvg-id="NewJapanProWrestlingWorld.jp" status="online",New Japan Pro Wrestling World (540p)
 https://aka-amd-njpwworld-hls-enlive.akamaized.net/hls/video/njpw_en/njpw_en_channel01_3/playlist_DVR.m3u8
 #EXTINF:-1 tvg-id="NHKBS1.jp" status="online",NHK BS1 (720p)
+http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_720/playlist.m3u8
+#EXTINF:-1 tvg-id="NHKBS1.jp" status="online",NHK BS1 (720p)
 http://cdnv148.cloudrsst.com:1935/jptv/nhkbs1_720/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKBS1.jp" status="online",NHK BS1 (540p)
 http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_540/playlist.m3u8
@@ -199,8 +201,6 @@ https://cdn.us195.jpnettv.live/jptv/nhkbs1_540/playlist.m3u8
 https://cdnv148.cloudrsst.com/jptv/nhkbs1_540/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKBS1.jp" status="online",NHK BS1 (480p)
 http://redlabmcdn.s.llnwi.net/nv02/bs01hd/index.m3u8
-#EXTINF:-1 tvg-id="NHKBS1.jp" status="timeout",NHK BS1 (720p)
-http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_720/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKBSPremium.jp" status="online",NHK BSP (720p)
 http://cdn.us195.jpnettv.live:1935/jptv/bspremium_720/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKBSPremium.jp" status="online",NHK BSP (720p)
