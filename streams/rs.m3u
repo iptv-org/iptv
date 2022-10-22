@@ -65,14 +65,14 @@ http://109.105.201.198/PINKZABAVA/playlist.m3u8
 https://live.rednet.rs/providus/redtv_multi.m3u8
 #EXTINF:-1 tvg-id="RedTV.rs" status="online",Red TV (720p)
 https://live.rednet.rs/providus/redtv_multi_hq/index.m3u8
-#EXTINF:-1 tvg-id="RTV1.rs" status="error",RTV 1 (576p)
-rtsp://212.200.255.151/rtv1
-#EXTINF:-1 tvg-id="RTV1.rs" status="error",RTV 1 (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTV1.rs" status="online",RTV 1 (576p) [Not 24/7]
 mmsh://212.200.255.151/rtv1
-#EXTINF:-1 tvg-id="RTV2.rs" status="error",RTV 2 (576p) [Not 24/7]
-rtsp://212.200.255.151/rtv2
-#EXTINF:-1 tvg-id="RTV2.rs" status="error",RTV 2 (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTV1.rs" status="timeout",RTV 1 (576p)
+rtsp://212.200.255.151/rtv1
+#EXTINF:-1 tvg-id="RTV2.rs" status="online",RTV 2 (576p) [Not 24/7]
 mmsh://212.200.255.151/rtv2
+#EXTINF:-1 tvg-id="RTV2.rs" status="timeout",RTV 2 (576p) [Not 24/7]
+rtsp://212.200.255.151/rtv2
 #EXTINF:-1 tvg-id="RTVCityUb.rs" status="timeout",RTV City Ub (576p) [Not 24/7]
 http://167.172.39.13/hls/tvcityub.m3u8
 #EXTINF:-1 tvg-id="RTVNoviPazar.rs" status="online",RTV Novi Pazar (576p)
