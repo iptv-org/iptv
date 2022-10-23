@@ -117,6 +117,7 @@ Notes:
 * Because this is an community repository, we need the approval from two maintainers to accept your new additions. See [discussion](https://github.com/iptv-org/iptv/discussions/8412) for further explanations.
 * If your television station broadcasts from other television stations, please read the *[Can I safely add an FTA channel that broadcasts PPV events or pay programming?](#Can-i-safely-add-an-fta-channel-that-broadcasts-ppv-events-or-pay-programming)* section.
 * The same id can only be used if a mirror stream is also proposed. Please do not set the same id for two different channels. See [PR](https://github.com/iptv-org/iptv/pull/9572).
+* If for some reason you need to edit the name of your channel, the id from the Database will be changed. We suggest that you update the new id from the playlist as soon as possible because the streams of your channel with modified name will not be automatically linked. See [PR](https://github.com/iptv-org/iptv/pull/9632).
 
 Based on [#650](https://github.com/iptv-org/iptv/issues/650) and [#6654](https://github.com/iptv-org/iptv/discussions/6654) (basic information).
 
@@ -159,14 +160,26 @@ No. Exceptions are the visual radios, in which a video and audio are shown at th
 Based on [#1196](https://github.com/iptv-org/iptv/pull/1196) (first pull request about this) [#2758](https://github.com/iptv-org/iptv/pull/2758) (visual radio example), [#5794](https://github.com/iptv-org/iptv/discussions/5794), [#6044](https://github.com/iptv-org/iptv/discussions/6044) and [#8788](https://github.com/iptv-org/iptv/discussions/8788).
 
 ### Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?
-It's to differentiate the origin of the broadcast from the content. Call signs usually come from physical stations in the country of origin and their programming is subject to change. If the channel is not from a television station, the brand name will be used.
+It's to differentiate the origin of the broadcast from the content. Call signs (or call letters in some countries) usually come from physical stations in the country of origin and their programming is subject to change. This type of ids is widely used in the United States, and [this article from Wikipedia](https://en.wikipedia.org/wiki/Call_signs_in_the_United_States) explains in more detail. However, if the channel does not officially carry the identification of the local television station, the brand name will be used as id.
 
-An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel, whose id is `VisionLatina.us`.
+An example of a call sign used as id is `KJLA-DT1.us`: [KJLA](https://en.wikipedia.org/wiki/KJLA) is a digital television station, DT is a suffix, 1 is a subchannel number and ".us" is the country code (United States). This station broadcasts the Visión Latina channel.
+
+```
+#EXTINF:-1 tvg-id="KJLA-DT1.us",Visión Latina Los Angeles (KJLA-DT1)
+```
+
+If the channel has a another stream and this is broadcasting as an international feed or under an online website without georestriction, consider using the alphanumeric name instead, whose id is `VisionLatina.us`.
+
+```
+#EXTINF:-1 tvg-id="VisionLatina.us",Visión Latina
+```
 
 Based on [#5818](https://github.com/iptv-org/iptv/discussions/5818).
 
 ### There are source for verify call sign and coverage area for some TV stations?
-There are websites to consult the location and characteristics of the station. For example, [FCCData](https://fccdata.org/) for US, Canada, Mexico, UK, Australia and Japan.
+There are websites to consult the location and characteristics of the station. FCC has [complete official information](https://www.fcc.gov/media/television/tv-service-contour-data-points) about call letters in the United States. You can also consult other websites such as [FCCData](https://fccdata.org/) for US, Canada, Mexico, UK, Australia and Japan.
+
+Based on [#9312](https://github.com/iptv-org/iptv/discussions/9312).
 
 ### Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?
 The reason is to reduce the workload when adding streams in the list. Since "tvg-id" links to the [Database](https://github.com/iptv-org/database) repository, each channel has unique attributes like image, name (in English and local speak), country (or countries) broadcasted, category and language.
