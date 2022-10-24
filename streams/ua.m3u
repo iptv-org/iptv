@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1Plus1.ua" status="timeout",1+1 (1080p)
+#EXTINF:-1 tvg-id="1Plus1.ua" status="online",1+1 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCVEaAWKfv7fE1c-ZuBs7TKQ/live
 #EXTINF:-1 tvg-id="1Plus1Sport.ua" status="online",1+1 Спорт (720p) [Not 24/7]
 https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
@@ -12,13 +12,13 @@ http://stream.atr.ua/atr/live/index.m3u8
 #EXTINF:-1 tvg-id="ChPinfo.ua" status="timeout",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
 #EXTINF:-1 tvg-id="CNLEurope.kz" status="online",CNL Европа (360p)
-http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_1.m3u8
+http://hls-live-media.cdn01.net/default/stream_10429_1.m3u8
 #EXTINF:-1 tvg-id="CNLEurope.kz" status="online",CNL Европа (360p)
 http://hls-live-media.cdn01.net/default/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="CNLEurope.kz" status="online",CNL Европа (360p)
 http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_2.m3u8
 #EXTINF:-1 tvg-id="CNLEurope.kz" status="error",CNL Европа (360p)
-http://hls-live-media.cdn01.net/default/stream_10429_1.m3u8
+http://live-mobile.cdn01.net/hls-live/202E1F/default/mobile/stream_10429_1.m3u8
 #EXTINF:-1 tvg-id="DonbassOnline.ua" status="timeout",Донбас Online (1080p) [Not 24/7]
 http://176.110.1.30:1935/live/donbasonline/playlist.m3u8
 #EXTINF:-1 tvg-id="FirstBusiness.ua" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Первый Деловой (720p) [Not 24/7]
@@ -48,7 +48,7 @@ https://edge2.iptv.macc.com.ua/life/k1_2/index.m3u8
 http://kiev1-cdn.lanet.tv/live/1008.m3u8
 #EXTINF:-1 tvg-id="M2.ua" status="online",M2 (540p)
 http://live.m2.tv/hls3/stream.m3u8
-#EXTINF:-1 tvg-id="MistoPlus.ua" status="timeout",Micto (360p)
+#EXTINF:-1 tvg-id="MistoPlus.ua" status="online",Micto (360p)
 http://93.78.206.172:8080/stream3/stream.m3u8
 #EXTINF:-1 tvg-id="MostVideoTV.ua" status="online",MostVideo.TV (720p) [Not 24/7]
 http://w4.mostvideo.tv/tv/ch1.m3u8
@@ -73,6 +73,8 @@ http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua.m3u8
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="PravdaTUT.ua" status="online",ПравдаТУТ (720p)
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/index.m3u8
+#EXTINF:-1 tvg-id="Pryamyy.ua" status="online",Телеканал Прямий (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCH9H_b9oJtSHBovh94yB5HA/live
 #EXTINF:-1 tvg-id="Pryamyy.ua" status="online",Прямий (576p)
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="Pryamyy.ua" status="online",Прямий (576p)
@@ -80,8 +82,6 @@ http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="Pryamyy.ua" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Прямий (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
-#EXTINF:-1 tvg-id="Pryamyy.ua" status="timeout",Телеканал Прямий (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCH9H_b9oJtSHBovh94yB5HA/live
 #EXTINF:-1 tvg-id="Renome.ua" status="online",Renome (576p)
 http://85.238.112.40:8810/hls_sec/online/list-renome.m3u8
 #EXTINF:-1 tvg-id="Skrypinua.ua" status="online",Skrypin.ua (1080p) [Not 24/7]
