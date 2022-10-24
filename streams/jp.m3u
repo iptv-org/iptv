@@ -78,22 +78,22 @@ http://cgntv-glive.ofsdelivery.net/live/_definst_/cgntv_jp/playlist.m3u8
 #EXTINF:-1 tvg-id="CGNTVJapan.jp" status="timeout",CGNTV Japan (720p)
 http://cgntv-glive.ofsdelivery.net/live/cgntv_jp/playlist.m3u8
 #EXTINF:-1 tvg-id="ChannelNeco.jp" status="online",Neco (540p)
-https://cdn.us195.jpnettv.live/jptv/Neco/playlist.m3u8
-#EXTINF:-1 tvg-id="ChannelNeco.jp" status="online",Neco (540p)
 https://cdnv148.cloudrsst.com/jptv/Neco/playlist.m3u8
+#EXTINF:-1 tvg-id="ChannelNeco.jp" status="error",Neco (540p)
+https://cdn.us195.jpnettv.live/jptv/Neco/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelJapan.jp" status="online",Disney Channel Japan (540p) [Not 24/7]
 https://cdn.us195.jpnettv.live/jptv/disney_channel/playlist.m3u8
-#EXTINF:-1 tvg-id="DisneyChannelJapan.jp" status="online",Disney Channel Japan (540p) [Not 24/7]
-https://cdnv148.cloudrsst.com/jptv/disney_channel/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyChannelJapan.jp" status="online",Disney Channel Japan (480p) [Not 24/7]
 http://redlabmcdn.s.llnwi.net/nv02/bs13hd/index.m3u8
+#EXTINF:-1 tvg-id="DisneyChannelJapan.jp" status="error",Disney Channel Japan (540p) [Not 24/7]
+https://cdnv148.cloudrsst.com/jptv/disney_channel/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyJuniorJapan.jp" status="online",Disney Junior Japan (540p) [Not 24/7]
 https://cdn.us195.jpnettv.live/jptv/disney_junior/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyJuniorJapan.jp" status="online",Disney Junior Japan (540p) [Not 24/7]
 https://cdnv148.cloudrsst.com/jptv/disney_junior/playlist.m3u8
 #EXTINF:-1 tvg-id="EiseiGekijo.jp" status="online",Eisei Gekijo (540p) [Not 24/7]
 https://cdnv148.cloudrsst.com/jptv/gekijjyou/playlist.m3u8
-#EXTINF:-1 tvg-id="FamilyGekijyo.jp" status="online",Family Gekijo (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="FamilyGekijyo.jp" status="error",Family Gekijo (540p) [Not 24/7]
 https://cdn.us195.jpnettv.live/jptv/gekijjyou/playlist.m3u8
 #EXTINF:-1 tvg-id="FujiTV.jp" status="online",Fuji TV (540p) [Not 24/7]
 https://fujitv2.mov3.co/hls/fujitv.m3u8
@@ -183,7 +183,7 @@ https://cdn.us195.jpnettv.live/jptv/jkids_540/playlist.m3u8
 https://cdnv148.cloudrsst.com/jptv/jkids_540/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVJapan.jp" status="online",MTV Japan (540p) [Not 24/7]
 http://cdn.us195.jpnettv.live:1935/jptv/mtv/playlist.m3u8
-#EXTINF:-1 tvg-id="MTVJapan.jp" status="online",MTV Japan (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="MTVJapan.jp" status="error",MTV Japan (540p) [Not 24/7]
 http://cdnv148.cloudrsst.com:1935/jptv/mtv/playlist.m3u8
 #EXTINF:-1 tvg-id="NewJapanProWrestlingWorld.jp" status="online",New Japan Pro Wrestling World (540p)
 https://aka-amd-njpwworld-hls-enlive.akamaized.net/hls/video/njpw_en/njpw_en_channel01_3/playlist_DVR.m3u8
@@ -221,12 +221,12 @@ http://redlabmcdn.s.llnwi.net/nv02/ryowa1hd/index.m3u8
 https://nhk2.mov3.co/hls/nhk.m3u8
 #EXTINF:-1 tvg-id="NHKGeneralTV.jp" status="online",NHK G (480p) [Not 24/7]
 http://redlabmcdn.s.llnwi.net/nv02/ryowa2hd/index.m3u8
+#EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="online",NHK World Japan (YouTube) (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="online",NHK World Japan (1080p)
 https://nhkwlive-ojp.akamaized.net/hls/live/2003459/nhkwlive-ojp-en/index.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="online",NHK World Japan (720p)
 https://nhkwlive-xjp.akamaized.net/hls/live/2003458/nhkwlive-xjp-en/index.m3u8
-#EXTINF:-1 tvg-id="NHKWorldJapan.jp" status="timeout",NHK World Japan (YouTube) (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSPEjw8F2nQDtmUKPFNF7_A/live
 #EXTINF:-1 tvg-id="NihonEigaSenmonChannel.jp" status="online",Nihon Eiga Senmon (720p)
 https://cdn.us195.jpnettv.live/jptv/igasennmonn_720/playlist.m3u8
 #EXTINF:-1 tvg-id="NihonEigaSenmonChannel.jp" status="online",Nihon Eiga Senmon (720p)
@@ -251,7 +251,7 @@ https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8
 https://n24-cdn-live.ntv.co.jp/ch02/index.m3u8
 #EXTINF:-1 tvg-id="ShopChannel.jp" status="online",Shop Channel (1080p) [Not 24/7]
 https://stream3.shopch.jp/HLS/master.m3u8
-#EXTINF:-1 tvg-id="SkyA.jp" status="error",Sky A (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="SkyA.jp" status="online",Sky A (540p) [Not 24/7]
 https://cdnv148.cloudrsst.com/jptv/Sky_A_540/playlist.m3u8
 #EXTINF:-1 tvg-id="Star1.jp" status="online",Star 1 (720p) [Not 24/7]
 https://cdn.us195.jpnettv.live/jptv/starch1_720/playlist.m3u8
@@ -281,7 +281,7 @@ https://cdnv148.cloudrsst.com/jptv/starch3_720/playlist.m3u8
 https://cdn.us195.jpnettv.live/jptv/starch3_540/playlist.m3u8
 #EXTINF:-1 tvg-id="Star3.jp" status="online",Star 3 (540p) [Not 24/7]
 https://cdnv148.cloudrsst.com/jptv/starch3_540/playlist.m3u8
-#EXTINF:-1 tvg-id="TBSNews.jp" status="timeout",TBS News
+#EXTINF:-1 tvg-id="TBSNews.jp" status="online",TBS News
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC6AG81pAkf6Lbi_1VC5NmPA/live
 #EXTINF:-1 tvg-id="ToeiChannel.jp" status="online",Toei Channel (540p) [Not 24/7]
 https://cdnv148.cloudrsst.com/jptv/toa_540/playlist.m3u8
