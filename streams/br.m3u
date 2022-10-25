@@ -12,7 +12,7 @@ https://evpp.mm.uol.com.br/geob_band/agromais/playlist.m3u8
 https://5cf4a2c2512a2.streamlock.net/dgrau/dgrau/playlist.m3u8
 #EXTINF:-1 tvg-id="AnimeTV.br" status="online",Anime TV (360p) [Not 24/7]
 https://stmv1.srvif.com/animetv/animetv/playlist.m3u8
-#EXTINF:-1 tvg-id="AratuOn.br" status="online",Aratu On (720p)
+#EXTINF:-1 tvg-id="AratuOn.br" status="error",Aratu On (720p)
 https://cdn.jmvstream.com/w/LVW-8379/LVW8379_rIq6ZYiIiA/playlist.m3u8
 #EXTINF:-1 tvg-id="Band.br" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Band (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
@@ -72,7 +72,7 @@ https://cdn.jmvstream.com/w/LVW-9883/LVW9883_lFcfKysrHF/chunklist.m3u8
 https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/index.m3u8
 #EXTINF:-1 tvg-id="KpopTVPlay.br" status="online",KpopTV Play (720p) [Not 24/7]
 https://srv1.zcast.com.br/kpoptv/kpoptv/playlist.m3u8
-#EXTINF:-1 tvg-id="MedalhaoPersa.br" status="error",Medalhão Persa (720p)
+#EXTINF:-1 tvg-id="MedalhaoPersa.br" status="timeout",Medalhão Persa (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCXzXFFbjUBIXKM7ONsIQAbw/live
 #EXTINF:-1 tvg-id="MKKWebTV.br" status="online",MKK Web TV (720p) [Not 24/7]
 https://video01.logicahost.com.br/mkkwebtv/mkkwebtv/playlist.m3u8
@@ -126,10 +126,10 @@ https://dd8umsy8yf96u.cloudfront.net/live/cnt-riobranco_360p614k/index.m3u8
 https://dd8umsy8yf96u.cloudfront.net/live/cnt-rio_360p614k/index.m3u8
 #EXTINF:-1 tvg-id="RedeCNTSalvador.br" status="online",Rede CNT Salvador (360p)
 https://dd8umsy8yf96u.cloudfront.net/live/cnt-salvador_360p614k/index.m3u8
-#EXTINF:-1 tvg-id="RedeCNTSaoPaulo.br" status="online",Rede CNT (São Paulo) (360p) [Not 24/7]
-https://dd8umsy8yf96u.cloudfront.net/live/cnt-americana.m3u8
 #EXTINF:-1 tvg-id="RedeCNTSaoPaulo.br" status="online",Rede CNT Sao Paulo (360p)
 https://dd8umsy8yf96u.cloudfront.net/live/cnt-americana_360p614k/index.m3u8
+#EXTINF:-1 tvg-id="RedeCNTSaoPaulo.br" status="error",Rede CNT (São Paulo) (360p) [Not 24/7]
+https://dd8umsy8yf96u.cloudfront.net/live/cnt-americana.m3u8
 #EXTINF:-1 tvg-id="RedeFamilia.br" status="online",Rede Família (720p) [Not 24/7]
 https://5a1c76baf08c0.streamlock.net/familia/smil:familia.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeGospel.br" status="online",Rede Gospel (720p) [Not 24/7]
@@ -170,9 +170,9 @@ https://slbps-ml-sambatech.akamaized.net/samba-live/2472/7424/8a00fe7cc36ac263b2
 http://painelvj.com.br/tvaguaboa2/tvaguaboa2.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TerraViva.br" status="online",Terra Viva (720p) [Not 24/7]
 http://evpp.mm.uol.com.br:1935/band_live/terraviva/playlist.m3u8
-#EXTINF:-1 tvg-id="TVAberta.br" status="error",TV Aberta (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVAberta.br" status="online",TV Aberta (1080p) [Not 24/7]
 https://cdn-canalpaulo.ciclano.io:1443/canalpaulo/canalpaulo/playlist.m3u8
-#EXTINF:-1 tvg-id="TVALMG.br" status="timeout",TV ALMG (720p)
+#EXTINF:-1 tvg-id="TVALMG.br" status="online",TV ALMG (720p)
 https://streaming.almg.gov.br/live/tvalmg.m3u8
 #EXTINF:-1 tvg-id="TVAlternativa.br" status="online",TV Alternativa
 https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8
@@ -189,9 +189,9 @@ https://59e4b6c1beddc.streamlock.net/ronaldoalepi/ronaldoalepi/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (640p)
 https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/_definst_/tvdigitalbirigui/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
-http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8
-#EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
 https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/tvdigitalbirigui/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBirigui.br" status="online",TV Birigui (320p)
+http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8
 #EXTINF:-1 tvg-id="TVBNO.br" status="online",TV BNO (270p) [Not 24/7]
 http://tv02.logicahost.com.br:1935/bonner/bonner/live.m3u8
 #EXTINF:-1 tvg-id="TVBrasilCentral.br" status="error",TBC TV Brasil Central (1080p)
@@ -272,10 +272,10 @@ https://srv1.zcast.com.br/tvmon/tvmon/playlist.m3u8
 http://painelvj.com.br:1935/tvnbrasil/tvnbrasil.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNBrasil.br" status="online",TVN Brasil (720p) [Not 24/7]
 http://wz3.dnip.com.br/tvnbrasil/tvnbrasil.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPaiEterno.br" status="online",TV Pai Eterno
+https://59f1cbe63db89.streamlock.net:1443/teste01/_definst_/teste01/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVPaiEterno.br" status="online",TV Pai Eterno (480p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/teste01/teste01/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPaiEterno.br" status="error",TV Pai Eterno
-https://59f1cbe63db89.streamlock.net:1443/teste01/_definst_/teste01/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVPampa.br" status="online",Rede TV! Pampa (720p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/tvpampa/tvpampa/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPantanalMS.br" status="blocked",TV Pantanal MS (720p) [Not 24/7]
@@ -288,7 +288,7 @@ http://rtmp.cdn.upx.net.br/00084/myStream.sdp/playlist.m3u8
 https://rtmp.info/tvsantacruz/envivo/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSolComunidade.br" status="error",TV Sol Comunidade (480p) [Not 24/7]
 http://streaming03.zas.media:1935/tvsol/tvsol/playlist.m3u8
-#EXTINF:-1 tvg-id="TVThathi.br" status="error",TV Thathi (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVThathi.br" status="online",TV Thathi (720p) [Not 24/7]
 https://cdn-grupo-10049.ciclano.io:1443/grupo-10049/grupo-10049/playlist.m3u8
 #EXTINF:-1 tvg-id="TVUFG.br" status="online",TV UFG (720p) [Not 24/7]
 http://flash.softhost.com.br:1935/ufg/tvufgweb/playlist.m3u8
@@ -303,7 +303,7 @@ http://unitvaovivo.ufrgs.br:8080/live.ogg
 #EXTINF:-1 tvg-id="" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Bandnews (720p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://evpp.mm.uol.com.br/geob_band/bandnewstv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",BM&C [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",BM&C [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoja0MNI4SIvXqJR3szbSfw/live
 #EXTINF:-1 tvg-id="" status="online",CBTV Now (1080p)
 https://oj7lng29dg82-hls-live.5centscdn.com/lives/f7b44cfafd5c52223d5498196c8a2e7b.sdp/index.m3u8
