@@ -46,9 +46,9 @@ http://tv.artcom-venture.de:1322/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DeutschesMusikFernsehen.de" status="timeout",Deutsches Musik Fernsehen (720p) [Not 24/7]
 https://tv.artcom-venture.de/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/dwarabic/live
-#EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
 https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
+#EXTINF:-1 tvg-id="DWArabic.de" status="error",DW Arabic (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/dwarabic/live
 #EXTINF:-1 tvg-id="DWDeutsch.de" status="blocked",DW Deutsch (1080p) [Geo-blocked]
 https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutschPlus.de" status="blocked",DW Deutsch+ (1080p) [Geo-blocked]
@@ -71,7 +71,7 @@ http://62.113.210.2/filstalwelle-live/mp4:livestream/playlist.m3u8
 http://media.finest.tv/hls/live.m3u8
 #EXTINF:-1 tvg-id="FrankenFernsehen.de" status="online",Franken Fernsehen (Nürnberg) (1080p) [Not 24/7]
 https://frankentv.iptv-playoutcenter.de/frankentv/frankentv.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="HauptstadtTV.de" status="error",Hauptstadt.TV (Potsdam) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="HauptstadtTV.de" status="online",Hauptstadt.TV (Potsdam) (720p) [Not 24/7]
 https://live2.telvi.de/hls/hauptstadttv_hd720.m3u8
 #EXTINF:-1 tvg-id="HealthTV.de" status="online",Health TV (720p)
 http://62.67.13.53:1935/HealthTV/ghtv_live_master.stream/playlist.m3u8
@@ -145,7 +145,7 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-dessau_high/playlist.
 https://s.ok54.de/mok-gi/mok-gi/playlist.m3u8
 #EXTINF:-1 tvg-id="OKKaiserslautern.de" status="online",OK Kaiserslautern (720p) [Not 24/7]
 https://s.ok54.de/abr_okkl/webstream/playlist.m3u8
-#EXTINF:-1 tvg-id="OKKassel.de" status="error",OK Kassel (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="OKKassel.de" status="online",OK Kassel (720p) [Not 24/7]
 https://s.ok54.de/mok-ks/kassel/playlist.m3u8
 #EXTINF:-1 tvg-id="OKLudwigshafen.de" status="online",OK Ludwigshafen (720p) [Not 24/7]
 https://s.ok54.de/oklu/livestream/playlist.m3u8
@@ -175,12 +175,12 @@ http://62.113.210.250/medienasa-live/ok-salzwedel_high/playlist.m3u8
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:ok-salzwedel_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKSalzwedel.de" status="online",OK Salzwedel (1080p) [Not 24/7]
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-salzwedel_high/playlist.m3u8
-#EXTINF:-1 tvg-id="OKStendal.de" status="online",OK Stendal (1080p) [Not 24/7]
-http://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-stendal_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKStendal.de" status="online",OK Stendal (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-stendal_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKStendal.de" status="online",OK Stendal (1080p)
 http://62.113.210.250/medienasa-live/ok-stendal_high/playlist.m3u8
+#EXTINF:-1 tvg-id="OKStendal.de" status="error",OK Stendal (1080p) [Not 24/7]
+http://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-stendal_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKSuedwestpfalz.de" status="online",OK Suedwestpfalz (720p) [Not 24/7]
 https://s.ok54.de/okswp/test/playlist.m3u8
 #EXTINF:-1 tvg-id="OKTrier.de" status="online",OK Trier (720p)
