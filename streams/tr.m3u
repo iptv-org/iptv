@@ -46,10 +46,10 @@ https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8
 http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="CayTV.tr" status="online",Cay TV (720p) [Not 24/7]
 http://stream2.taksimbilisim.com:1935/caytv/bant1/CAYTV.m3u8
-#EXTINF:-1 tvg-id="CekmekoyTV.tr" status="online",Cekmeköy TV
-https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv_1080p/playlist.m3u8
 #EXTINF:-1 tvg-id="CekmekoyTV.tr" status="online",Cekmeköy TV (1080p)
 https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv/playlist.m3u8
+#EXTINF:-1 tvg-id="CekmekoyTV.tr" status="online",Cekmeköy TV
+https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv_1080p/playlist.m3u8
 #EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (1080p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/ciftcitv/smil:ciftcitv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (720p) [Not 24/7]
@@ -84,11 +84,9 @@ https://cdn.yayin.com.tr/TVEM/TVEM/playlist.m3u8
 http://win20.yayin.com.tr/ertsahtv/ertsahtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ERTV.tr" status="online",Er TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/ertv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="ErzurumWebTV.tr" status="error",Erzurum Web TV (720p)
-https://win29.yayin.com.tr/erzurumwebtv/erzurumwebtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ETVManisa.tr" status="online",ETV Manisa (1080p) [Not 24/7]
 https://broadcasttr.com:446/manisaetv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="FenerbahceTV.tr" status="timeout",Fenerbahçe TV (FBTV) (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="FenerbahceTV.tr" status="blocked",Fenerbahçe TV (FBTV) (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x21oo10
 #EXTINF:-1 tvg-id="FinansTurkTV.tr" status="timeout",Finans Turk TV (720p)
 http://live.arkumedia.com:1935/finansturktv/finansturktv/playlist.m3u8
@@ -121,9 +119,9 @@ https://halktv-live.ercdn.net/halktv/halktv.m3u8
 https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p)
+#EXTINF:-1 tvg-id="IBBTV.tr" status="error",IBB TV (1080p)
 http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
-#EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="IBBTV.tr" status="error",IBB TV (1080p) [Not 24/7]
 https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IcelTV.tr" status="online",Icel TV (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/iceltv/bant1/playlist.m3u8
@@ -195,7 +193,7 @@ https://waw2.artiyerelmedya.net/mavikaradeniz/bant1/playlist.m3u8
 http://yerelmedya.tv:1935/mercantv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="MercanTV.tr" status="online",Mercan TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/mercantv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="MiskFM.tr" status="timeout",Misk FM (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MiskFM.tr" status="online",Misk FM (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCrvsAwtrxZ0q31yU9JEBdWA/live
 #EXTINF:-1 tvg-id="NaturalTV.tr" status="online",Natural TV (720p) [Not 24/7]
 http://broadcasttr.com:1935/naturaltv/bant1/playlist.m3u8
@@ -234,16 +232,16 @@ https://tv.ensonhaber.com/tv/tr/showtv/index.m3u8
 https://s01.vpis.io/sinopyildiz/sinopyildiz.m3u8
 #EXTINF:-1 tvg-id="SportsTV.tr" status="online",Sports TV (720p) [Geo-blocked]
 https://live.sportstv.com.tr/hls/low/sportstv.m3u8
-#EXTINF:-1 tvg-id="StarTV.tr" status="timeout",Star TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="StarTV.tr" status="blocked",Star TV (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=http://www.dailymotion.com/video/x729whv
 #EXTINF:-1 tvg-id="SunRTV.tr" status="online",Sun RTV (720p) [Not 24/7]
 https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="TempoTV.tr" status="online",Tempo TV
 https://waw2.artiyerelmedya.net/tempotv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TGRTBelgesel.tr" status="online",TGRT Belgesel TV (576p) [Not 24/7]
-https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TGRTBelgesel.tr" status="online",TGRT Belgesel TV (576p)
 https://tv.ensonhaber.com/tv/tr/tgrtbelgesel/index.m3u8
+#EXTINF:-1 tvg-id="TGRTBelgesel.tr" status="online",TGRT Belgesel TV (576p) [Not 24/7]
+https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TGRTEU.tr" status="online",TGRT EU (576p)
 https://tv.ensonhaber.com/tv/tr/tgrteu/index.m3u8
 #EXTINF:-1 tvg-id="TGRTHaber.tr" status="online",TGRT Haber (360p) [Not 24/7]
@@ -254,11 +252,11 @@ https://waw2.artiyerelmedya.net/tontv/bant1/chunks.m3u8
 https://59cba4d34b678.streamlock.net/canlitv/topraktv/playlist.m3u8
 #EXTINF:-1 tvg-id="TRT1.tr" status="online",TRT 1 (720p) [Geo-blocked]
 https://tv-trt1.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="TRT2.tr" status="blocked",TRT 2 [Geo-blocked]
+#EXTINF:-1 tvg-id="TRT2.tr" status="online",TRT 2 [Geo-blocked]
 https://tv-trt2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTArabi.tr" status="online",TRT Arabi (720p) [Not 24/7]
 https://tv-trtarabi.live.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="TRTArabi.tr" status="timeout",TRT Arabi (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TRTArabi.tr" status="online",TRT Arabi (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/trtalarabiya/live
 #EXTINF:-1 tvg-id="TRTAvaz.tr" status="online",TRT Avaz (720p)
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
@@ -302,7 +300,7 @@ https://waw2.artiyerelmedya.net/tv41/bant1/chunks.m3u8
 http://stream.taksimbilisim.com:1935/tv52/smil:tv52.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TV52.tr" status="online",TV 52 (720p) [Not 24/7]
 https://broadcasttr.com:446/tv52/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TV100.tr" status="timeout",tv100 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV100.tr" status="error",tv100 (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
 #EXTINF:-1 tvg-id="TVDen.tr" status="online",TV Den (576p) [Not 24/7]
 http://canli.tvden.com.tr/hls/live.m3u8
