@@ -13,9 +13,11 @@ http://uc6.i-cable.com/live_freedirect/opentvhd002_h.live/playlist.m3u8
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 #EXTINF:-1 tvg-id="HKSTV.hk" status="blocked",HKSTV (香港衛視) (720p) [Not 24/7]
 https://al-pull2.hkatv.vip/live/hktv20210929.m3u8
-#EXTINF:-1 tvg-id="HongKongOpenTV.hk" status="online",香港开电视 / HKSTV-HKS (720p)
+#EXTINF:-1 tvg-id="HKSTV.hk" status="timeout",香港衛視 (576p) [Not 24/7]
+http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+#EXTINF:-1 tvg-id="HOYTV.hk" status="online",HOY TV (720p)
 http://media.fantv.hk/m3u8/archive/channel2.m3u8
-#EXTINF:-1 tvg-id="HongKongOpenTV.hk" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",HKSTV (香港开电视) (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="HOYTV.hk" status="error" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",HOY TV (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/77/index.m3u8
 #EXTINF:-1 tvg-id="ICableNewsChannel.hk" status="online",有線新聞台 i-Cable 24-hour News Channel (720p)
@@ -102,3 +104,15 @@ https://cdn.hklive.tv/xxxx/99/index.m3u8
 https://cdn.hklive.tv/xxxx/96/index.m3u8
 #EXTINF:-1 tvg-id="ViuTVsix.hk" status="timeout",ViuTVsix
 http://61.238.6.49:8000/bysid/96
+#EXTINF:-1 tvg-id="MiaoMi.hk" status="",Miao Mi (1080p)
+https://allanf181.github.io/adaptive-streams/streams/hk/MiaoMi.m3u8
+#EXTINF:-1 tvg-id="HOYTV.hk" status="",HOY TV (480p)
+http://uc6.i-cable.com/live_freedirect/opentvhd001.live/playlist.m3u8
+#EXTINF:-1 tvg-id="HOYTV.hk" status="",HOY TV (720p)
+http://uc6.i-cable.com/live_freedirect/opentvhd001_h.live/playlist.m3u8
+#EXTINF:-1 tvg-id="HOYTV.hk" status="",HOY TV (1080p) [Geo-blocked]
+https://d3lbtdzocyu3ke.cloudfront.net/out/v1/214e9e20c822494ea5bc1f1428833428/index.m3u8
+#EXTINF:-1 tvg-id="SPOTV.hk" status="",SPOTV (1080p)
+https://bcovlive-a.akamaihd.net/99545824f51f4c1592b35314c6ece3b0/ap-northeast-1/6271486521001/playlist.m3u8
+#EXTINF:-1 tvg-id="SPOTV2.hk" status="",SPOTV2 (1080p)
+https://bcovlive-a.akamaihd.net/48eee16919834d3b97df1082a649bcfa/ap-northeast-1/6271486521001/playlist.m3u8
