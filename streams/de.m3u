@@ -46,9 +46,9 @@ http://tv.artcom-venture.de:1322/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DeutschesMusikFernsehen.de" status="timeout",Deutsches Musik Fernsehen (720p) [Not 24/7]
 https://tv.artcom-venture.de/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
-https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
-#EXTINF:-1 tvg-id="DWArabic.de" status="error",DW Arabic (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/dwarabic/live
+#EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
+https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutsch.de" status="blocked",DW Deutsch (1080p) [Geo-blocked]
 https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutschPlus.de" status="blocked",DW Deutsch+ (1080p) [Geo-blocked]
@@ -77,7 +77,7 @@ https://live2.telvi.de/hls/hauptstadttv_hd720.m3u8
 http://62.67.13.53:1935/HealthTV/ghtv_live_master.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="HSE24Extra.de" status="online",HSE24 Extra (1080p)
 https://hse24extra.akamaized.net/hls/live/2006596/hse24extra/playlist.m3u8
-#EXTINF:-1 tvg-id="HSE24Trend.de" status="online",HSE24 Trend (576p)
+#EXTINF:-1 tvg-id="HSE24Trend.de" status="timeout",HSE24 Trend (576p)
 https://hse24trend.akamaized.net/hls/live/2006597/hse24trend/playlist.m3u8
 #EXTINF:-1 tvg-id="HSE.de" status="online",HSE (1080p)
 https://hse24.akamaized.net/hls/live/2006663/hse24/playlist.m3u8
@@ -189,17 +189,17 @@ https://s.ok54.de/ott/webstream/playlist.m3u8
 https://s.ok54.de/oktvmainz/webstream/playlist.m3u8
 #EXTINF:-1 tvg-id="OKWeinstrasseNeustadt.de" status="online",OK Weinstraße (Neustadt) (432p)
 https://s.ok54.de/okweinstrasse/okweinstrasse/playlist.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",OK Wernigerode (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",OK Wernigerode (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-wernigerode_high/playlist.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",OK Wernigerode (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",OK Wernigerode (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-wernigerode_high/playlist.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",Campus-TV-Magdeburg+ (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",Campus-TV-Magdeburg+ (1080p)
 http://62.113.210.250/medienasa-live/ok-wernigerode_high/chunklist_w937425968.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",Campus TV Magdeburg (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",Campus TV Magdeburg (1080p)
 http://62.113.210.250/medienasa-live/ok-wernigerode_high/hasbahca.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",Campus TV Magdeburg (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",Campus TV Magdeburg (1080p)
 http://62.113.210.250/medienasa-live/ok-wernigerode_high/hasbahca.m3u8?bitrate=800
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",OK Wernigerode
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",OK Wernigerode
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-wernigerode_high/playlist.m3u8
 #EXTINF:-1 tvg-id="oldenburgeins.de" status="online",oldenburg eins (1080p) [Not 24/7]
 https://oeins.de/live/studio.m3u8
