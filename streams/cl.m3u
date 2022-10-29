@@ -209,7 +209,7 @@ https://paneltv.online:1936/8116/8116/playlist.m3u8
 https://panel.miplay.cl:8081/spectrumchannel/index.m3u8
 #EXTINF:-1 tvg-id="StgoTV.cl" status="online",Stgo.TV (720p)
 https://stv.janus.cl/playlist/stream.m3u8
-#EXTINF:-1 tvg-id="T13.cl" status="online",T13 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="T13.cl" status="timeout",T13 (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCsRnhjcUCR78Q3Ud6OXCTNg/live
 #EXTINF:-1 tvg-id="Tele2WebRetiro.cl" status="blocked",Tele 2 Web (Retiro) (720p) [Not 24/7]
 https://inliveserver.com:1936/11516/11516/playlist.m3u8
@@ -256,9 +256,9 @@ https://srv3.zcast.com.br/mastermedia/mastermedia/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSenado.cl" status="online",TV Senado (360p)
 https://janus-tv-ply.senado.cl/playlist/playlist.m3u8
 #EXTINF:-1 tvg-id="UATV.cl" status="online",Universidad Autónoma Temuco (UATV) (1080p) [Not 24/7]
-https://unlimited1-us.dps.live/uatv/uatv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="UATV.cl" status="online",Universidad Autónoma Temuco (UATV) (1080p) [Not 24/7]
 https://unlimited6-cl.dps.live/uatv/uatv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="UATV.cl" status="error",Universidad Autónoma Temuco (UATV) (1080p) [Not 24/7]
+https://unlimited1-us.dps.live/uatv/uatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="UCV3TV.cl" status="online",UCV3 TV (720p)
 http://unlimited6-cl.dps.live/ucvtv2/ucvtv2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="UCV3TV.cl" status="timeout",UCV3 TV (720p)
@@ -269,7 +269,7 @@ http://cl.origin.grupoz.cl/uestv/live/playlist.m3u8
 http://edge1.cl.grupoz.cl/uestv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="UESTV.cl" status="timeout",UESTV (720p)
 https://tls.cdnz.cl/uestv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="ULosLagosTV.cl" status="online",U Los Lagos TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ULosLagosTV.cl" status="error",U Los Lagos TV (1080p) [Not 24/7]
 http://tv.ulagos.cl/web/live.m3u8
 #EXTINF:-1 tvg-id="UMAGTV.cl" status="timeout",UMAGTV Televisión (Punta Arenas) (720p)
 http://edge1.cl.grupoz.cl/tser5/live/playlist.m3u8
