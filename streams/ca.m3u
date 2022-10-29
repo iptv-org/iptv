@@ -73,7 +73,7 @@ https://tvalive.akamaized.net/hls/live/2014213/tvan01/tvan01.m3u8
 https://temp6.isilive.ca/live/nunavut/live-flo/index.m3u8
 #EXTINF:-1 tvg-id="MontrealGreekTV.ca" status="online",Montreal Greek TV (480p)
 http://live.greektv.ca/hls1/greektv.m3u8
-#EXTINF:-1 tvg-id="NACTV.ca" status="online",NACTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NACTV.ca" status="timeout",NACTV (720p) [Not 24/7]
 http://stream.pivotalelements.com/nactv/stream.m3u8
 #EXTINF:-1 tvg-id="NETVToronto.ca" status="online",NETV Toronto (720p) [Not 24/7]
 https://live.streams.ovh/NetvToronto/NetvToronto/playlist.m3u8
@@ -115,13 +115,13 @@ http://cdn11.live247stream.com/tag/tv/playlist.m3u8
 http://live.tamilvision.tv:8081/TVI/HD/playlist.m3u8
 #EXTINF:-1 tvg-id="TamilVisionTV.ca" status="online",Tamil Vision TV (720p)
 http://live.tamilvision.tv:8081/TVI/SD/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleCulturelleMedias.ca" status="blocked",Télé Culturelle Médias (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleCulturelleMedias.ca" status="error",Télé Culturelle Médias (720p) [Not 24/7]
 https://5790d294af2dc.streamlock.net/8150/8150/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleMagQuebec.ca" status="online",Télé-Mag Québec (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCNKXYT-Nng5LBMUQrZJ9zWA/live
 #EXTINF:-1 tvg-id="TeleMagQuebec.ca" status="online",Télé-Mag Québec (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/ctmq/live
-#EXTINF:-1 tvg-id="TheChannelTV.ca" status="error",The Channel TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TheChannelTV.ca" status="online",The Channel TV (1080p) [Not 24/7]
 https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/thechanneltv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Toronto360TV.ca" status="online",Toronto 360 TV (720p) [Not 24/7]
 http://toronto3.live247stream.com/toronto360/tv/playlist.m3u8
@@ -131,9 +131,11 @@ https://tscamd.akamaized.net/hls/live/503340/TSCLive/master.m3u8
 http://rtmp.smartstream.video:1935/capco/tv29/playlist.m3u8
 #EXTINF:-1 tvg-id="UvagutTV.ca" status="online",Uvagut TV (1080p)
 http://dee7mwgg9dzvl.cloudfront.net/hls/uvagut/playlist.m3u8
-#EXTINF:-1 tvg-id="VBS.ca" status="online",VBS (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="VBS.ca" status="error",VBS (480p) [Not 24/7]
 https://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="WCGtv.ca" status="online",WCGtv Public (720p)
 https://wowzastream.westmancom.com/wcgtvlive/wcgtvPSA.stream/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",WATAN-E-MAA
 https://5caf24a595d94.streamlock.net:1937/8132/8132/playlist.m3u8
+#EXTINF:-1 tvg-id="LegislativeAssemblyofBritishColumbia.ca" status="",Legislative Assembly of British Columbia (540p)
+https://hbsprim-1be2a.kxcdn.com/legbcca-prim-chamber-httpo/ChamberP.smil/playlist.m3u8
