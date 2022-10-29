@@ -33,10 +33,10 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high/playlist.m3u8?ref=medienportal-sachsen-
 #EXTINF:-1 tvg-id="CroTVHD.de" status="timeout",CroTV HD (1080p)
 http://92.204.40.139:8081/crotv/televizijahrvatskedijaspore/playlist.m3u8
+#EXTINF:-1 tvg-id="DasErste.de" status="online",Das Erste (720p) [Geo-blocked]
+https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p)
 https://derste247liveint.akamaized.net/hls/live/662735/daserste_int/master.m3u8
-#EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p) [Geo-blocked]
-https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-id="DaVinci.de" status="timeout",Da Vinci
 http://sc.id-tv.kz/DaVinci_38_39.m3u8
 #EXTINF:-1 tvg-id="DeluxeLoungeHD.de" status="online",Deluxe Lounge HD
@@ -46,9 +46,9 @@ http://tv.artcom-venture.de:1322/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DeutschesMusikFernsehen.de" status="timeout",Deutsches Musik Fernsehen (720p) [Not 24/7]
 https://tv.artcom-venture.de/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/dwarabic/live
-#EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
 https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
+#EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/dwarabic/live
 #EXTINF:-1 tvg-id="DWDeutsch.de" status="blocked",DW Deutsch (1080p) [Geo-blocked]
 https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutschPlus.de" status="blocked",DW Deutsch+ (1080p) [Geo-blocked]
@@ -69,8 +69,6 @@ http://5.135.92.131:1935/live/euroAl/playlist.m3u8
 http://62.113.210.2/filstalwelle-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="FinestTV.de" status="online",Finest TV (288p) [Not 24/7]
 http://media.finest.tv/hls/live.m3u8
-#EXTINF:-1 tvg-id="FOLXMusic.de" status="timeout",FOLX Music (1080p)
-https://serve-first.folxplay.tv/folx/ch-4/master.m3u8
 #EXTINF:-1 tvg-id="FrankenFernsehen.de" status="online",Franken Fernsehen (Nürnberg) (1080p) [Not 24/7]
 https://frankentv.iptv-playoutcenter.de/frankentv/frankentv.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="HauptstadtTV.de" status="online",Hauptstadt.TV (Potsdam) (720p) [Not 24/7]
@@ -152,13 +150,13 @@ https://s.ok54.de/mok-ks/kassel/playlist.m3u8
 #EXTINF:-1 tvg-id="OKLudwigshafen.de" status="online",OK Ludwigshafen (720p) [Not 24/7]
 https://s.ok54.de/oklu/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="OKMagdeburg.de" status="online",OK Magdeburg (1080p)
-http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-magdeburg_high/playlist.m3u8
-#EXTINF:-1 tvg-id="OKMagdeburg.de" status="online",OK Magdeburg (1080p)
 http://62.113.210.250/medienasa-live/ok-magdeburg_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKMagdeburg.de" status="online",OK Magdeburg (1080p)
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-magdeburg_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKMagdeburg.de" status="online",OK Magdeburg (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-magdeburg_high/playlist.m3u8
+#EXTINF:-1 tvg-id="OKMagdeburg.de" status="error",OK Magdeburg (1080p)
+http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-magdeburg_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKMerseburgQuerfurt.de" status="online",OK Merseburg-Querfurt (1080p) [Not 24/7]
 http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-merseburg_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKMerseburgQuerfurt.de" status="online",OK Merseburg
@@ -191,24 +189,20 @@ https://s.ok54.de/ott/webstream/playlist.m3u8
 https://s.ok54.de/oktvmainz/webstream/playlist.m3u8
 #EXTINF:-1 tvg-id="OKWeinstrasseNeustadt.de" status="online",OK Weinstraße (Neustadt) (432p)
 https://s.ok54.de/okweinstrasse/okweinstrasse/playlist.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",OK Wernigerode (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",OK Wernigerode (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-wernigerode_high/playlist.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",OK Wernigerode (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",OK Wernigerode (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-wernigerode_high/playlist.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",Campus-TV-Magdeburg+ (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",Campus-TV-Magdeburg+ (1080p)
 http://62.113.210.250/medienasa-live/ok-wernigerode_high/chunklist_w937425968.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",Campus TV Magdeburg (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",Campus TV Magdeburg (1080p)
 http://62.113.210.250/medienasa-live/ok-wernigerode_high/hasbahca.m3u8
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",Campus TV Magdeburg (1080p)
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",Campus TV Magdeburg (1080p)
 http://62.113.210.250/medienasa-live/ok-wernigerode_high/hasbahca.m3u8?bitrate=800
-#EXTINF:-1 tvg-id="OKWernigerode.de" status="online",OK Wernigerode
+#EXTINF:-1 tvg-id="OKWernigerode.de" status="error",OK Wernigerode
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ok-wernigerode_high/playlist.m3u8
 #EXTINF:-1 tvg-id="oldenburgeins.de" status="online",oldenburg eins (1080p) [Not 24/7]
 https://oeins.de/live/studio.m3u8
-#EXTINF:-1 tvg-id="One1MusicTV.de" status="timeout",ONE1 Music (1080p)
-https://serve-first.folxplay.tv/folx/ch-3/master.m3u8
-#EXTINF:-1 tvg-id="ONE1Slovenia.si" status="timeout",ONE1 Slovenija (1080p)
-https://serve-first.folxplay.tv/folx/ch-6/master.m3u8
 #EXTINF:-1 tvg-id="Parlamentsfernsehen1.de" status="online",Parlamentsfernsehen 1 (1080p)
 https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8
 #EXTINF:-1 tvg-id="Parlamentsfernsehen2.de" status="online",Parlamentsfernsehen 2 (270p)
@@ -267,8 +261,6 @@ https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 https://stream.rockantenne.de/rockantenne/stream/mp3
 #EXTINF:-1 tvg-id="RocklandTV.de" status="blocked",Rockland TV (720p) [Not 24/7] [Geo-blocked]
 https://api.new.livestream.com/accounts/22300522/events/6680139/live.m3u8
-#EXTINF:-1 tvg-id="RWEErfurt.de" status="error",RWE Erfurt (1080p)
-https://stream.keyweb.org:8085/hls/rwetv.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen1.de" status="online",Saarland Fernsehen 1 (1080p)
 https://saarland1.iptv-playoutcenter.de/saarland1/saarland1.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen2.de" status="online",Saarland Fernsehen 2 (720p) [Not 24/7]
@@ -315,7 +307,7 @@ https://stream.tiviturk.de/live/tiviturk.m3u8
 http://62.113.221.3/tv38-live/_definst_/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAHD.de" status="online",TVA (1080p) [Not 24/7]
 https://tvaktuellr.iptv-playoutcenter.de/tvaktuellr/tvaktuellr.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="TVBayernLive.de" status="online",TV Bayern Live (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVBayernLive.de" status="error",TV Bayern Live (1080p) [Not 24/7]
 https://s3.welocal.world/tvbayernlive/media/134371/videos/hls.m3u8
 #EXTINF:-1 tvg-id="TVMainfranken.de" status="online",TV Mainfranken (1080p) [Not 24/7]
 https://tvtouringw.iptv-playoutcenter.de/tvtouringw/tvtouringw.stream_1/playlist.m3u8
@@ -344,9 +336,11 @@ https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8
 http://ott-cdn.ucom.am/s26/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Filstalwelle Göppingen (576p)
 http://62.113.210.2/filstalwelle-live/_definst_/mp4:livestream/chunklist_w660034089.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",FOLX Music (1080p)
+https://serve-first.folxplay.tv/folx/ch-4/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",FOLX Slovenija (1080p)
 https://serve-first.folxplay.tv/folx/ch-5/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",Franken Fernsehen (1080p)
+#EXTINF:-1 tvg-id="" status="error",Franken Fernsehen (1080p)
 https://s3.welocal.world/frankenfernsehen/media/191627/videos/hls.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",hr-fernsehen (1080p)
 https://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8
@@ -362,7 +356,7 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:mdf1_high/play
 https://mytvplus.iptv-playoutcenter.de/mytvplus/mytvplus.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Hamburg (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_hh/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",NDR Mecklenburg-Vorpommern (720p)
+#EXTINF:-1 tvg-id="" status="online",NDR Mecklenburg-Vorpommern (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",NDR Niedersachsen (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
@@ -374,6 +368,10 @@ https://fms.nrwision.de/live/livestreamHD.stream_source/playlist.m3u8
 https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="" status="online",Offener Kanal Fulda
 https://s.ok54.de/mok-fu/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",ONE1 Music (1080p)
+https://serve-first.folxplay.tv/folx/ch-3/master.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",ONE1 Slovenija (1080p)
+https://serve-first.folxplay.tv/folx/ch-6/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",PunktUM (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/punktum_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",PunktUm Hettstedt (1080p)
