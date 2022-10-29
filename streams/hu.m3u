@@ -31,8 +31,6 @@ https://stream.streaming4u.hu/KomlosTV/tracks-v1a1/mono.m3u8
 https://streaming.mytvback.com/stream/2WVTzaaqRtQ3cZ02Qd7rPA/1617462690/channel043/stream-br572000.m3u8
 #EXTINF:-1 tvg-id="Loversenykozvetites.hu" status="timeout",Lóverseny közvetítés (420p)
 http://87.229.103.60:1935/liverelay/loverseny2.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="M3.hu" status="blocked",M3 [Geo-blocked]
-https://stream9.nava.hu/m3_live_bdrm/_definst_/smil:m3_1080p_loop_nodrm.smil/chunklist_w72397576_b881072_slhun.m3u8?lb=b4bp7xeKAKovH1uDWU5XusWC/SZexs+JNLmxYvSb34kGup6SGRTTm5UkNNjfC62mmvYbuEqrt04E++Exer5ZNS/WN6JyMpY6GiuOU2osRulnM+gNsTWVD8z+LJt4imqAka++&platform=web_embed&sessid=Z4gLTQezzXGgWvNkiypb5PkmR64U1aoH3lFII14l3Mp2dZ5OtLoKQQY7XOn943ns&type=m3u8
 #EXTINF:-1 tvg-id="MUSICPlus.hu" status="online",MUSIC + (720p) [Not 24/7]
 http://s02.diazol.hu:10192/stream.m3u8
 #EXTINF:-1 tvg-id="OzdiVarosiTV.hu" status="online",Ózdi Városi TV (720p) [Not 24/7]
@@ -77,5 +75,13 @@ https://streaming.mytvback.com:443/stream/glkVRNvh_A6a2yUWuOYDBQ/1665263514/chan
 https://fixhd.tv:8082/fix/1080i/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Classics TV (720p) [Not 24/7]
 https://s03.diazol.hu:7152/live.m3u8
-#EXTINF:-1 tvg-id="" status="online",Duna World (720p) [Not 24/7]
-https://streaming.mytvback.com:443/stream/gKpOU9PeGhb2OAtjZnDu-A/1665444879/channel004/stream.m3u8
+#EXTINF:-1 tvg-id="DunaWorld.hu" status="",Duna World (480p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://mediaklikk.hu/duna-world-elo/
+#EXTINF:-1 tvg-id="Duna.hu" status="",Duna (480p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://mediaklikk.hu/duna-elo/
+#EXTINF:-1 tvg-id="M1.hu" status="",M1 (480p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://hirado.hu/elo/m1/
+#EXTINF:-1 tvg-id="M2.hu" status="",M2 (480p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://mediaklikk.hu/m2-elo/
+#EXTINF:-1 tvg-id="M5.hu" status="",M5 (480p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://mediaklikk.hu/m5-elo/
