@@ -115,10 +115,10 @@ https://tv.ensonhaber.com/tv/tr/haberturk/index.m3u8
 #EXTINF:-1 tvg-id="HalkTV.tr" status="online" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Halk TV (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://halktv-live.ercdn.net/halktv/halktv.m3u8
-#EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Not 24/7]
-https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Not 24/7]
+https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p)
 http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p) [Not 24/7]
@@ -193,7 +193,7 @@ https://waw2.artiyerelmedya.net/mavikaradeniz/bant1/playlist.m3u8
 http://yerelmedya.tv:1935/mercantv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="MercanTV.tr" status="online",Mercan TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/mercantv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="MiskFM.tr" status="timeout",Misk FM (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MiskFM.tr" status="online",Misk FM (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCrvsAwtrxZ0q31yU9JEBdWA/live
 #EXTINF:-1 tvg-id="NaturalTV.tr" status="online",Natural TV (720p) [Not 24/7]
 http://broadcasttr.com:1935/naturaltv/bant1/playlist.m3u8
@@ -300,9 +300,9 @@ https://waw2.artiyerelmedya.net/tv41/bant1/chunks.m3u8
 http://stream.taksimbilisim.com:1935/tv52/smil:tv52.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TV52.tr" status="online",TV 52 (720p) [Not 24/7]
 https://broadcasttr.com:446/tv52/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TV100.tr" status="timeout",tv100 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV100.tr" status="online",tv100 (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
-#EXTINF:-1 tvg-id="TVDen.tr" status="online",TV Den (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVDen.tr" status="error",TV Den (576p) [Not 24/7]
 http://canli.tvden.com.tr/hls/live.m3u8
 #EXTINF:-1 tvg-id="TVEm.tr" status="online",TV Em (486p)
 http://cdn-tvem.yayin.com.tr/TVEM/TVEM/playlist.m3u8
@@ -334,7 +334,7 @@ https://turkmedya-live.ercdn.net/tv360/tv360.m3u8
 http://yayin3.canlitv.com:1935/canlitv/ahitv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Daawah TV
 http://51.15.246.58:8081/daawahtv/daawahtv2/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",KANAL 58 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",KANAL 58 (720p) [Not 24/7]
 https://broadcasttr.com:446/kanal58/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Milyon TV (720p)
 https://sosyoapp-live.cdnnew.com/sosyo/buraya-bir-isim-verin.m3u8
