@@ -46,10 +46,10 @@ https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8
 http://canbroadcast.com:7000/canlican/tv.m3u8
 #EXTINF:-1 tvg-id="CayTV.tr" status="online",Cay TV (720p) [Not 24/7]
 http://stream2.taksimbilisim.com:1935/caytv/bant1/CAYTV.m3u8
-#EXTINF:-1 tvg-id="CekmekoyTV.tr" status="online",Cekmeköy TV
-https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv_1080p/playlist.m3u8
 #EXTINF:-1 tvg-id="CekmekoyTV.tr" status="online",Cekmeköy TV (1080p)
 https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv/playlist.m3u8
+#EXTINF:-1 tvg-id="CekmekoyTV.tr" status="online",Cekmeköy TV
+https://cdn-cekmekoybeltv.yayin.com.tr/cekmekoybeltv/cekmekoybeltv_1080p/playlist.m3u8
 #EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (1080p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/ciftcitv/smil:ciftcitv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CiftciTV.tr" status="online",Çiftçi TV (720p) [Not 24/7]
@@ -193,7 +193,7 @@ https://waw2.artiyerelmedya.net/mavikaradeniz/bant1/playlist.m3u8
 http://yerelmedya.tv:1935/mercantv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="MercanTV.tr" status="online",Mercan TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/mercantv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="MiskFM.tr" status="online",Misk FM (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MiskFM.tr" status="error",Misk FM (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCrvsAwtrxZ0q31yU9JEBdWA/live
 #EXTINF:-1 tvg-id="NaturalTV.tr" status="online",Natural TV (720p) [Not 24/7]
 http://broadcasttr.com:1935/naturaltv/bant1/playlist.m3u8
@@ -203,7 +203,7 @@ https://broadcasttr.com:446/naturaltv/bant1/playlist.m3u8
 http://46.4.193.238:8484/hls/ntvspor/playlist.m3u8
 #EXTINF:-1 tvg-id="OlayTurkTV.tr" status="online",OlayTürk Kayseri (720p) [Geo-blocked]
 http://waw1.artiyerelmedya.net:1935/olayturk/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="OlayTurkTV.tr" status="online",Olay Türk TV (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="OlayTurkTV.tr" status="error",Olay Türk TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/olayturk/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="OncuTV.tr" status="online",Öncü TV (1024p) [Not 24/7]
 https://broadcasttr.com:446/oncurtv/bant1/playlist.m3u8
@@ -211,11 +211,11 @@ https://broadcasttr.com:446/oncurtv/bant1/playlist.m3u8
 http://live.arkumedia.com:1935/marmaratv/marmaratv/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTurkTV.tr" status="online",Power Turk (1080p) [Not 24/7]
 https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="PowerTurkTV.tr" status="online",PowerTürk TV (720p) [Geo-blocked]
-https://waw2.artiyerelmedya.net/powerturktv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTurkTV.tr" status="online" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Power Turk (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://mn-nl.mncdn.com/blutv_powerturk/smil:powerturk_sd.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="PowerTurkTV.tr" status="online",PowerTürk TV (720p) [Geo-blocked]
+https://waw2.artiyerelmedya.net/powerturktv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTV.tr" status="online",Power TV (1080p)
 https://livetv.powerapp.com.tr/powerTV/powerhd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SariyerTV.tr" status="online",Sarıyer TV (360p)
@@ -244,9 +244,9 @@ https://tv.ensonhaber.com/tv/tr/tgrtbelgesel/index.m3u8
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TGRTEU.tr" status="online",TGRT EU (576p)
 https://tv.ensonhaber.com/tv/tr/tgrteu/index.m3u8
-#EXTINF:-1 tvg-id="TGRTHaber.tr" status="online",TGRT Haber (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="TGRTHaber.tr" status="timeout",TGRT Haber (360p) [Not 24/7]
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe4598be8e5d.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TonTV.tr" status="online",Ton TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TonTV.tr" status="error",Ton TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/tontv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="ToprakTV.tr" status="online",Toprak TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/topraktv/playlist.m3u8
