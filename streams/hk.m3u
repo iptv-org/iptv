@@ -35,25 +35,25 @@ http://210.210.155.37/dr9445/h/h07/index.m3u8
 https://allanf181.github.io/adaptive-streams/streams/hk/MiaoMi.m3u8
 #EXTINF:-1 tvg-id="MiaoMi.hk" status="error",Miao Mi (1080p) [Not 24/7]
 https://kr-streams.onrender.com/scraper?channel=521
-#EXTINF:-1 tvg-id="PhoenixChineseChannel.hk" status="online",Phoenix Chinese Channel (鳳凰衛視中文) (576p)
-http://210.210.155.37/uq2663/h/h157/index2.m3u8
 #EXTINF:-1 tvg-id="PhoenixChineseChannel.hk" status="online",Phoenix Chinese Channel (鳳凰衛視中文) (1080p)
 https://playtv-live.ifeng.com/live/06OLEGEGM4G_tv1.m3u8
 #EXTINF:-1 tvg-id="PhoenixChineseChannel.hk" status="timeout",鳳凰衛視中文台
 http://221.179.217.70/PLTV/88888888/224/3221225942/1.m3u8
+#EXTINF:-1 tvg-id="PhoenixChineseChannel.hk" status="error",Phoenix Chinese Channel (鳳凰衛視中文) (576p)
+http://210.210.155.37/uq2663/h/h157/index2.m3u8
 #EXTINF:-1 tvg-id="PhoenixInfoNewsChannel.hk" status="online",Phoenix InfoNews Channel (鳳凰衛視資訊) (1080p)
 https://playtv-live.ifeng.com/live/06OLEEWQKN4_tv1.m3u8
 #EXTINF:-1 tvg-id="PhoenixInfoNewsChannel.hk" status="online",Phoenix InfoNews Channel (鳳凰衛視資訊) (576p)
 http://210.210.155.37/qwr9ew/s/s21/index.m3u8
 #EXTINF:-1 tvg-id="PhoenixInfoNewsChannel.hk" status="timeout",鳳凰衛視資訊台HD (720p) [Not 24/7]
 http://117.169.120.138:8080/live/fhzixun/.m3u8
+#EXTINF:-1 tvg-id="RTHKTV31.hk" status="online",RTHK (港台電視31) (360p) [Geo-blocked]
+https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/master.m3u8
+#EXTINF:-1 tvg-id="RTHKTV31.hk" status="online",RTHK (港台電視31) (1080p)
+https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
 #EXTINF:-1 tvg-id="RTHKTV31.hk" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",RTHK (港台電視31) (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/31/index.m3u8
-#EXTINF:-1 tvg-id="RTHKTV31.hk" status="blocked",RTHK (港台電視31) (360p) [Geo-blocked]
-https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV31.hk" status="blocked",RTHK (港台電視31) (1080p)
-https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
 #EXTINF:-1 tvg-id="RTHKTV32.hk" status="online",RTHK (港台電視32) (360p) [Not 24/7]
 https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/master.m3u8
 #EXTINF:-1 tvg-id="RTHKTV32.hk" status="online",RTHK (港台電視32) (1080p)
@@ -79,8 +79,6 @@ https://j3.lhlh.app/mv.m3u8
 #EXTINF:-1 tvg-id="TVBJ2.hk" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",TVB J2 (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/82/index.m3u8
-#EXTINF:-1 tvg-id="TVBJade.hk" status="online",TVB Jade (翡翠台) (Cantonese Subtitles) (720p)
-http://23.237.10.66:16106
 #EXTINF:-1 tvg-id="TVBJade.hk" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",TVB Jade (翡翠台) (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/81/index.m3u8
@@ -88,6 +86,8 @@ https://cdn.hklive.tv/xxxx/81/index.m3u8
 http://116.199.5.51:8114/00000000/hls/index.m3u8?Fsv_chan_hls_se_idx=188&Fsv_ctype=LIVES&Fsv_otype=1&FvSeid=1&Pcontent_id=.m3u8&Provider_id=
 #EXTINF:-1 tvg-id="TVBJade.hk" status="timeout",TVB翡翠台 (JADE) (576p)
 http://116.199.5.52:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=188&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
+#EXTINF:-1 tvg-id="TVBJade.hk" status="error",TVB Jade (翡翠台) (Cantonese Subtitles) (720p)
+http://23.237.10.66:16106
 #EXTINF:-1 tvg-id="TVBNewsChannel.hk" status="online",TVB News Channel (720p)
 http://9.zhxinda.xyz/newss.php?id=1
 #EXTINF:-1 tvg-id="TVBNewsChannel.hk" status="online",TVB News Channel (720p)
@@ -104,8 +104,6 @@ http://116.199.5.51:8114/00000000/hls/index.m3u8?Fsv_chan_hls_se_idx=12&Fsv_ctyp
 http://116.199.5.51:8114/hls/Fsv_chan_hls_se_idx=12?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=12&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_rate_id=2&FvSeid=1&Pcontent_id=8114.m3u8&Provider_id=0
 #EXTINF:-1 tvg-id="TVBPearl.hk" status="timeout",TVB明珠台 (PEARL)
 http://116.199.5.52:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=12&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
-#EXTINF:-1 tvg-id="TVBXingHe.hk" status="error",TVB Xing He 星河 (720p)
-http://206.221.176.47:64020
 #EXTINF:-1 tvg-id="ViuTV.hk" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",ViuTV (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/99/index.m3u8
