@@ -21,8 +21,6 @@ http://59132e529e3d1.streamlock.net/Groningen1/Groningen1/playlist.m3u8
 https://ms2.mx-cd.net/dtv-09/236-2051366/Ideaal_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="JenzTV.nl" status="error",JenZ (1080p)
 https://ms2.mx-cd.net/tv/192-840604/Jenz_TV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="JinTV.nl" status="error",JIN TV (720p)
-https://live.jintv.org:12443/medialive/jintv.m3u8
 #EXTINF:-1 tvg-id="LansingerlandTV.nl" status="online",Lansingerland TV (1080p)
 https://streaming-outbound-video-02.rtvlansingerland.nl/hls/livetv/index.m3u8
 #EXTINF:-1 tvg-id="LOETV.nl" status="online",LOE TV (720p)
@@ -63,7 +61,7 @@ http://ms7.mx-cd.net/tv/200-1006554/ORTS_TV.smil/playlist.m3u8
 http://rrr.sz.xlcdn.com/?account=ndc_mediagroep&file=NDC2&output=playlist.m3u8&service=wowza&type=live
 #EXTINF:-1 tvg-id="PodiumTV3.nl" status="online",Podium.TV 3 (1080p) [Not 24/7]
 http://rrr.sz.xlcdn.com/?account=ndc_mediagroep&file=NDC3&output=playlist.m3u8&service=wowza&type=live
-#EXTINF:-1 tvg-id="PodiumTV.nl" status="online",Podium.TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="PodiumTV.nl" status="error",Podium.TV (1080p) [Not 24/7]
 http://rrr.sz.xlcdn.com/?account=ndc_mediagroep&file=NDC1&output=playlist.m3u8&service=wowza&type=live
 #EXTINF:-1 tvg-id="Qmusic.nl" status="online",Qmusic (720p)
 https://dpp-qmusicnl-live.akamaized.net/streamx/QmusicNL.m3u8
@@ -101,10 +99,10 @@ http://stream.rtvmaastricht.nl:8081/rtvm_live/tv/playlist.m3u8
 https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8
 #EXTINF:-1 tvg-id="RTVNoordExtra.nl" status="online",RTV Noord Extra (1080p) [Not 24/7]
 https://media.rtvnoord.nl/live/rtvnoord/extra/index.m3u8
+#EXTINF:-1 tvg-id="RTVNoordoostFriesland.nl" status="online",RTV Noordoost Friesland (Achtkarspelen / Tytsjerksteradiel) [Not 24/7]
+https://5ebd833552d56.streamlock.net/rtvnof3/rtvnof3/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVNoordoostFriesland.nl" status="online",RTV Noordoost Friesland (720p) [Not 24/7]
 https://593aed234297b.streamlock.net/rtvnof2/live/playlist.m3u8
-#EXTINF:-1 tvg-id="RTVNoordoostFriesland.nl" status="error",RTV Noordoost Friesland (Achtkarspelen / Tytsjerksteradiel) [Not 24/7]
-https://5ebd833552d56.streamlock.net/rtvnof3/rtvnof3/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVOost.nl" status="online",RTV Oost (720p)
 https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8
 #EXTINF:-1 tvg-id="RTVPurmerend.nl" status="online",RTV Purmerend (720p)
@@ -167,7 +165,7 @@ https://web.omroepgelderland.nl/live/livetv.m3u8
 https://www.a1mediagroep.nl/hls/a1tv.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Radio NL (1080p) [Not 24/7]
 https://61ae39677a1ab.streamlock.net/radionl/radionl_1080p/playlist.m3u8?ref=Hoofdwebsite&token_endtime=1661322499&token_hash=yPCofcNBmbfuVCU4UqsLrQ6GgnKJGC5gQ0tn5_F9FSE=&token_starttime=0
-#EXTINF:-1 tvg-id="" status="error",RTV Arnhem (480p)
+#EXTINF:-1 tvg-id="RTVArnhemTV.nl" status="error",RTV Arnhem (480p)
 https://ms2.mx-cd.net/tv/163-669433/RTV_Arnhem.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Zed TV
 http://190.2.148.141:8080/bar7657/index.m3u8
