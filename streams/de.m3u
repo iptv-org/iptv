@@ -3,10 +3,16 @@
 https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8
 #EXTINF:-1 tvg-id="123tv.de" status="online",1-2-3 TV (270p)
 http://123tv-mx1.flex-cdn.net/index.m3u8
+#EXTINF:-1 tvg-id="AdriaMusicTelevision.de" status="timeout",ADRIA Music (1080p)
+https://serve-first.folxplay.tv/folx/ch-1/master.m3u8
 #EXTINF:-1 tvg-id="AlexBerlin.de" status="online",Alex Berlin (1080p) [Not 24/7]
 https://alex-stream.rosebud-media.de/live/alexlivetv40.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AnixeHDSerie.de" status="online",Anixe HD Serie (360p)
 https://ma.anixa.tv/clips/stream/anixehd/index.m3u8
+#EXTINF:-1 tvg-id="ARDalpha.de" status="online",ARD-alpha (720p)
+http://livestreams.br.de/i/bralpha_germany@119899/master.m3u8
+#EXTINF:-1 tvg-id="ARDalpha.de" status="online",ARD-alpha (720p) [Not 24/7]
+https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8
 #EXTINF:-1 tvg-id="atv.de" status="online",a.tv (1080p) [Not 24/7]
 https://augsburgtv.iptv-playoutcenter.de/augsburgtv/augsburgtv.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="Babestation24.de" status="online",Babestation24 (720p)
@@ -31,12 +37,16 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/BLKonline_high/pla
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high/playlist.m3u8
 #EXTINF:-1 tvg-id="BLKRegionalTV.de" status="online",BLK TV Hohenmölsen (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high/playlist.m3u8?ref=medienportal-sachsen-
+#EXTINF:-1 tvg-id="BRFernsehenNord.de" status="online",BR Fernsehen Nord (720p) [Geo-blocked]
+http://livestreams.br.de/i/bfsnord_germany@119898/master.m3u8
+#EXTINF:-1 tvg-id="BRFernsehenNord.de" status="online",BR Fernsehen Nord (720p) [Geo-blocked]
+https://brlive-lh.akamaihd.net/i/bfsnord_germany@119898/master.m3u8
 #EXTINF:-1 tvg-id="CroTVHD.de" status="timeout",CroTV HD (1080p)
 http://92.204.40.139:8081/crotv/televizijahrvatskedijaspore/playlist.m3u8
-#EXTINF:-1 tvg-id="DasErste.de" status="online",Das Erste (720p) [Geo-blocked]
-https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p)
 https://derste247liveint.akamaized.net/hls/live/662735/daserste_int/master.m3u8
+#EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p) [Geo-blocked]
+https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-id="DaVinci.de" status="timeout",Da Vinci
 http://sc.id-tv.kz/DaVinci_38_39.m3u8
 #EXTINF:-1 tvg-id="DeluxeLoungeHD.de" status="online",Deluxe Lounge HD
@@ -65,16 +75,24 @@ https://5889e7d0d6e28.streamlock.net/ev1tv-live/mp4:livestream/playlist.m3u8
 https://5acade5fc0c29.streamlock.net/kabeljournal/live2020.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroAlTV.de" status="timeout",EuroAl TV (720p)
 http://5.135.92.131:1935/live/euroAl/playlist.m3u8
-#EXTINF:-1 tvg-id="Filstalwelle.de" status="online",Filstalwelle (576p)
+#EXTINF:-1 tvg-id="Filstalwelle.de" status="online",Filstalwelle Göppingen (576p)
+http://62.113.210.2/filstalwelle-live/_definst_/mp4:livestream/chunklist_w660034089.m3u8
+#EXTINF:-1 tvg-id="Filstalwelle.de" status="error",Filstalwelle (576p)
 http://62.113.210.2/filstalwelle-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="FinestTV.de" status="online",Finest TV (288p) [Not 24/7]
 http://media.finest.tv/hls/live.m3u8
+#EXTINF:-1 tvg-id="FolxSlovenija.si" status="timeout",FOLX Slovenija (1080p)
+https://serve-first.folxplay.tv/folx/ch-5/master.m3u8
 #EXTINF:-1 tvg-id="FrankenFernsehen.de" status="online",Franken Fernsehen (Nürnberg) (1080p) [Not 24/7]
 https://frankentv.iptv-playoutcenter.de/frankentv/frankentv.stream_1/playlist.m3u8
+#EXTINF:-1 tvg-id="FrankenFernsehen.de" status="error",Franken Fernsehen (1080p)
+https://s3.welocal.world/frankenfernsehen/media/191627/videos/hls.m3u8
 #EXTINF:-1 tvg-id="HauptstadtTV.de" status="online",Hauptstadt.TV (Potsdam) (720p) [Not 24/7]
 https://live2.telvi.de/hls/hauptstadttv_hd720.m3u8
 #EXTINF:-1 tvg-id="HealthTV.de" status="online",Health TV (720p)
 http://62.67.13.53:1935/HealthTV/ghtv_live_master.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="HRFernsehen.de" status="timeout",hr-fernsehen (1080p)
+https://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8
 #EXTINF:-1 tvg-id="HSE24Extra.de" status="online",HSE24 Extra (1080p)
 https://hse24extra.akamaized.net/hls/live/2006596/hse24extra/playlist.m3u8
 #EXTINF:-1 tvg-id="HSE24Trend.de" status="online",HSE24 Trend (576p)
@@ -89,10 +107,14 @@ https://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
 http://58bd5b7a98e04.streamlock.net/medienasa-live/kulturmd_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KulturMD.de" status="online",KulturMD (1080p)
 http://62.113.210.250/medienasa-live/mp4:kulturmd_high/playlist.m3u8
+#EXTINF:-1 tvg-id="KulturMD.de" status="online",KulturMD Magdeburg
+https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:kulturmd_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KulturMD.de" status="online",KulturMD (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:kulturmd_high/playlist.m3u8
 #EXTINF:-1 tvg-id="KWTVWildau.de" status="online",KW TV Wildau (720p) [Not 24/7]
 https://58af0c57eaf3e.streamlock.net/easycast11-live/mp4:livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="Lausitzwelle.de" status="online",Lausitzwelle Fernsehen (1080p)
+https://5856e1a25f71a.streamlock.net/easycast9-live/_definst_/mp4:livestreamhd10/playlist.m3u8
 #EXTINF:-1 tvg-id="Lausitzwelle.de" status="online",Lausitzwelle (Fernsehen) (1080p)
 https://5856e1a25f71a.streamlock.net/easycast9-live/mp4:livestreamhd10/playlist.m3u8
 #EXTINF:-1 tvg-id="LightChannel.de" status="online",Light Channel (576p) [Not 24/7]
@@ -101,6 +123,8 @@ http://streamer1.streamhost.org:1935/salive/lctvde/playlist.m3u8
 http://58bd5b7a98e04.streamlock.net/medienasa-live/mdf1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="MDF1.de" status="online",MDF.1 (1080p)
 http://62.113.210.250/medienasa-live/mdf1_high/playlist.m3u8
+#EXTINF:-1 tvg-id="MDF1.de" status="online",MDF.1 Magdeburg
+https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:mdf1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="MDF1.de" status="online",MDF.1 (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:mdf1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="MotorvisionTV.de" status="online",Motorvision TV (720p)
@@ -109,6 +133,14 @@ https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
 https://muenchentv.iptv-playoutcenter.de/muenchentv/muenchentv.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="naheTV.de" status="online",naheTV (720p)
 https://s.ok54.de/nahetv/webstream/playlist.m3u8
+#EXTINF:-1 tvg-id="NDRFernsehenHamburg.de" status="online",NDR Hamburg (720p)
+https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_hh/master.m3u8
+#EXTINF:-1 tvg-id="NDRFernsehenMecklenburgVorpommern.de" status="online",NDR Mecklenburg-Vorpommern (720p)
+https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
+#EXTINF:-1 tvg-id="NDRFernsehenNiedersachsen.de" status="online",NDR Niedersachsen (720p)
+https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
+#EXTINF:-1 tvg-id="NDRFernsehenSchleswigHolstein.de" status="online",NDR Schleswig-Holstein (720p)
+https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
 #EXTINF:-1 tvg-id="NiederbayernTV.de" status="online",Niederbayern TV (720p)
 https://stream03.welocal.stream/stream/sat-nby/ngrp:sat-nby.stream_all/index.m3u8
 #EXTINF:-1 tvg-id="NiederbayernTVDeggendorfStraubing.de" status="online",Niederbayern TV Deggendorf & Straubing (1080p)
@@ -123,6 +155,8 @@ https://hls1.wtnet.de/noa4hh/apple/wifi6500.m3u8
 https://hls1.wtnet.de/noa4/apple/wifi6500.m3u8
 #EXTINF:-1 tvg-id="NRWision.de" status="online",NRWision (1080p)
 https://fms.nrwision.de/live/livestreamHD.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="NRWision.de" status="online",NRWISION (1080p)
+https://fms.nrwision.de/live/livestreamHD.stream_source/playlist.m3u8
 #EXTINF:-1 tvg-id="NRWision.de" status="online",NRWision (720p)
 https://fms.nrwision.de/live/livestreamHD.stream_1080p/playlist.m3u8
 #EXTINF:-1 tvg-id="NRWision.de" status="online",NRWision (360p)
@@ -131,6 +165,8 @@ https://fms.nrwision.de/live/livestreamHD.stream_360p/playlist.m3u8
 http://5856e1a25f71a.streamlock.net:1935/easycast8-live/mp4:livestreamhd4/playlist.m3u8
 #EXTINF:-1 tvg-id="OberpfalzTVHD.de" status="online",Oberpfalz TV (1080p)
 https://oberpfalztv.iptv-playoutcenter.de/oberpfalztv/oberpfalztv.stream_1/playlist.m3u8
+#EXTINF:-1 tvg-id="Oeins.de" status="online",oeins (Oldenburg) (1080p) [Not 24/7]
+https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="OFTVOffenbach.de" status="online",OF-TV Offenbach (720p)
 https://5864df9ceac85.streamlock.net/germanpictures-live/_definst_/mp4:streamschedule/playlist.m3u8
 #EXTINF:-1 tvg-id="OFTVOffenbach.de" status="online",OF-TV Offenbach (720p)
@@ -141,7 +177,7 @@ http://58bd5b7a98e04.streamlock.net/medienasa-live/ok-dessau_high/playlist.m3u8
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:ok-dessau_high/playlist.m3u8
 #EXTINF:-1 tvg-id="OKDessau.de" status="online",OK Dessau (1080p) [Not 24/7]
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ok-dessau_high/playlist.m3u8
-#EXTINF:-1 tvg-id="OKGiessen.de" status="error",OK Gießen (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="OKGiessen.de" status="online",OK Gießen (360p) [Not 24/7]
 https://s.ok54.de/mok-gi/mok-gi/playlist.m3u8
 #EXTINF:-1 tvg-id="OKKaiserslautern.de" status="online",OK Kaiserslautern (720p) [Not 24/7]
 https://s.ok54.de/abr_okkl/webstream/playlist.m3u8
@@ -213,18 +249,22 @@ https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
 https://5852afe96c9bb.streamlock.net/easycast8-live/_definst_/mp4:livestreamhd4/playlist.m3u8
 #EXTINF:-1 tvg-id="PunkteinsOberlausitz.de" status="online",Punkteins (Oberlausitz) (1080p) [Not 24/7]
 https://5852afe96c9bb.streamlock.net/easycast8-live/mp4:livestreamhd4/playlist.m3u8
+#EXTINF:-1 tvg-id="PUNKTum.de" status="online",PunktUM (1080p)
+http://58bd5b7a98e04.streamlock.net/medienasa-live/punktum_high/playlist.m3u8
 #EXTINF:-1 tvg-id="PUNKTum.de" status="online",Punktum S�dharz (1080p)
 http://62.113.210.250/medienasa-live/punktum_high/master.m3u8
 #EXTINF:-1 tvg-id="PUNKTum.de" status="online",PUNKTum Fernsehen (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3u
 #EXTINF:-1 tvg-id="PUNKTum.de" status="online",PUNKTum (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:punktum_high/playlist.m3u8
-#EXTINF:-1 tvg-id="Radio21TV.de" status="online",Radio 21 TV (720p) [Not 24/7] [Geo-blocked]
+#EXTINF:-1 tvg-id="Radio21TV.de" status="blocked",Radio 21 TV (720p) [Not 24/7] [Geo-blocked]
 https://api.new.livestream.com/accounts/22300508/events/6675945/live.m3u8
 #EXTINF:-1 tvg-id="RadioWeserTVBremen.de" status="online",Radio Weser TV Bremen
 https://5857499ee635b.streamlock.net/radiowesertv-live/_definst_/mp4:livestreamTV/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioWeserTVBremen.de" status="online",Radio Weser TV Bremen (576p)
 https://5857499ee635b.streamlock.net/radiowesertv-live/mp4:livestreamTV/playlist.m3u8
+#EXTINF:-1 tvg-id="RAN1.de" status="online",Ran 1 (1080p)
+http://58bd5b7a98e04.streamlock.net/medienasa-live/ran1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RAN1.de" status="online",RAN1 (1080p)
 http://62.113.210.250/medienasa-live/mp4:ran1_high/master.m3u8
 #EXTINF:-1 tvg-id="RAN1.de" status="online",RAN1 (1080p)
@@ -237,12 +277,16 @@ http://62.113.210.250:1935/medienasa-live/ran1_high/playlist.m3u8
 http://58bd5b7a98e04.streamlock.net/medienasa-live/rbw_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RBW.de" status="online",RBW (1080p)
 http://62.113.210.250/medienasa-live/rbw_high/master.m3u8
+#EXTINF:-1 tvg-id="RBW.de" status="online",RBW Bitterfeld-Wolfen (1080p)
+https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:rbw_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RBW.de" status="online",RBW (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:rbw_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RegioTVBodensee.de" status="online",Regio TV Bodensee (1080p)
 https://regiotv-b.iptv-playoutcenter.de/regiotv-b/regiotv-b.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RegioTVStuttgart.de" status="online",Regio TV Stuttgart (1080p)
 https://regiotv-s.iptv-playoutcenter.de/regiotv-s/regiotv-s.stream_1/playlist.m3u8
+#EXTINF:-1 tvg-id="RFH.de" status="online",RFH TV (1080p)
+http://58bd5b7a98e04.streamlock.net/medienasa-live/RFH_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RFH.de" status="online",RFH (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:RFH_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RFHHarz.de" status="online",RFH Harz (1080p)
@@ -255,6 +299,12 @@ https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:RFH_high/playlist.m3u8?r
 https://stream01.stream.welocal.world/stream/fhd-rfo_66876/ngrp:stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="RheinMainTV.de" status="online",RheinMain TV (720p) [Not 24/7]
 https://586fb512206e4.streamlock.net/rheinmaintv-live/_definst_/mp4:livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="RheinMainTV.de" status="online",rheinmaintv (720p) [Not 24/7]
+https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/chunklist.m3u8
+#EXTINF:-1 tvg-id="RheinMainTV.de" status="online",rheinmaintv (720p) [Not 24/7]
+https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="RheinMainTV.de" status="online",rheinmaintv (720p) [Not 24/7]
+https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/playlist.m3u8?=&ref=www.rheinmaintv.de&seid=598541
 #EXTINF:-1 tvg-id="RNF.de" status="online",RNF (1080p)
 https://rnf.iptv-playoutcenter.de/rnf/rnf.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="RockAntenne.de" status="online",Rock Antenne [Not 24/7]
@@ -311,94 +361,44 @@ https://tvaktuellr.iptv-playoutcenter.de/tvaktuellr/tvaktuellr.stream_1/playlist
 https://s3.welocal.world/tvbayernlive/media/134371/videos/hls.m3u8
 #EXTINF:-1 tvg-id="TVMainfranken.de" status="online",TV Mainfranken (1080p) [Not 24/7]
 https://tvtouringw.iptv-playoutcenter.de/tvtouringw/tvtouringw.stream_1/playlist.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenKoln.de" status="timeout",WDR Koeln (720p)
+https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8
 #EXTINF:-1 tvg-id="Welt.de" status="blocked",WELT [Geo-blocked]
 https://live2weltcms-lh.akamaihd.net/i/Live2WeltCMS_1@444563/master.m3u8
 #EXTINF:-1 tvg-id="WorldofFreesports.de" status="timeout",World of Freesports (720p)
 https://a.jsrdn.com/broadcast/ab14783a09/+0000/c.m3u8
 #EXTINF:-1 tvg-id="ZDF.de" status="blocked",ZDF [Geo-blocked]
 https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
-#EXTINF:-1 tvg-id="AdriaMusicTelevision.de" status="timeout",ADRIA Music (1080p)
-https://serve-first.folxplay.tv/folx/ch-1/master.m3u8
+#EXTINF:-1 tvg-id="ZDFinfo.de" status="blocked",ZDFinfo [Geo-blocked]
+https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
+#EXTINF:-1 tvg-id="ZDFneo.de" status="blocked",ZDFneo [Geo-blocked]
+https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Antenne Vorarlberg (720p) [Not 24/7]
 http://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="ARDalpha.de" status="online",ARD-alpha (720p)
-http://livestreams.br.de/i/bralpha_germany@119899/master.m3u8
-#EXTINF:-1 tvg-id="ARDalpha.de" status="online",ARD-alpha (720p) [Not 24/7]
-https://brlive-lh.akamaihd.net/i/bralpha_germany@119899/master.m3u8
-#EXTINF:-1 tvg-id="BRFernsehenNord.de" status="online",BR Fernsehen Nord (720p) [Geo-blocked]
-http://livestreams.br.de/i/bfsnord_germany@119898/master.m3u8
-#EXTINF:-1 tvg-id="BRFernsehenNord.de" status="online",BR Fernsehen Nord (720p) [Geo-blocked]
-https://brlive-lh.akamaihd.net/i/bfsnord_germany@119898/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",BR Fernsehen Süd (720p)
 https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8
-#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
+#EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s26/index.m3u8
-#EXTINF:-1 tvg-id="Filstalwelle.de" status="online",Filstalwelle Göppingen (576p)
-http://62.113.210.2/filstalwelle-live/_definst_/mp4:livestream/chunklist_w660034089.m3u8
-#EXTINF:-1 tvg-id="FloxMusicTelevision.de" status="timeout",FOLX Music (1080p)
+#EXTINF:-1 tvg-id="" status="timeout",FOLX Music (1080p)
 https://serve-first.folxplay.tv/folx/ch-4/master.m3u8
-#EXTINF:-1 tvg-id="FolxSlovenija.si" status="timeout",FOLX Slovenija (1080p)
-https://serve-first.folxplay.tv/folx/ch-5/master.m3u8
-#EXTINF:-1 tvg-id="FrankenFernsehen.de" status="error",Franken Fernsehen (1080p)
-https://s3.welocal.world/frankenfernsehen/media/191627/videos/hls.m3u8
-#EXTINF:-1 tvg-id="HRFernsehen.de" status="timeout",hr-fernsehen (1080p)
-https://hrhls.akamaized.net/hls/live/2024525/hrhls/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Isar TV (1080p) [Not 24/7]
 https://isar-tv.iptv-playoutcenter.de/isar-tv/isar-tv.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="KulturMD.de" status="online",KulturMD Magdeburg
-https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:kulturmd_high/playlist.m3u8
-#EXTINF:-1 tvg-id="Lausitzwelle.de" status="online",Lausitzwelle Fernsehen (1080p)
-https://5856e1a25f71a.streamlock.net/easycast9-live/_definst_/mp4:livestreamhd10/playlist.m3u8
-#EXTINF:-1 tvg-id="MDF1.de" status="online",MDF.1 Magdeburg
-https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:mdf1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",MyTVplus (Dresden) (576p)
 https://mytvplus.iptv-playoutcenter.de/mytvplus/mytvplus.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="NDRFernsehenHamburg.de" status="online",NDR Hamburg (720p)
-https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_hh/master.m3u8
-#EXTINF:-1 tvg-id="NDRFernsehenMecklenburgVorpommern.de" status="online",NDR Mecklenburg-Vorpommern (720p)
-https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
-#EXTINF:-1 tvg-id="NDRFernsehenNiedersachsen.de" status="online",NDR Niedersachsen (720p)
-https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
-#EXTINF:-1 tvg-id="NDRFernsehenSchleswigHolstein.de" status="online",NDR Schleswig-Holstein (720p)
-https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
-#EXTINF:-1 tvg-id="NRWision.de" status="online",NRWISION (1080p)
-https://fms.nrwision.de/live/livestreamHD.stream_source/playlist.m3u8
-#EXTINF:-1 tvg-id="Oeins.de" status="online",oeins (Oldenburg) (1080p) [Not 24/7]
-https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="" status="online",Offener Kanal Fulda
 https://s.ok54.de/mok-fu/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ONE1 Music (1080p)
 https://serve-first.folxplay.tv/folx/ch-3/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ONE1 Slovenija (1080p)
 https://serve-first.folxplay.tv/folx/ch-6/master.m3u8
-#EXTINF:-1 tvg-id="PUNKTum.de" status="online",PunktUM (1080p)
-http://58bd5b7a98e04.streamlock.net/medienasa-live/punktum_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",PunktUm Hettstedt (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:punktum_high/playlist.m3u8
-#EXTINF:-1 tvg-id="RAN1.de" status="online",Ran 1 (1080p)
-http://58bd5b7a98e04.streamlock.net/medienasa-live/ran1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ran1 Dessau-Roßlau (1080p)
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ran1_high/playlist.m3u8
-#EXTINF:-1 tvg-id="RBW.de" status="online",RBW Bitterfeld-Wolfen (1080p)
-https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:rbw_high/playlist.m3u8
-#EXTINF:-1 tvg-id="RFH.de" status="online",RFH TV (1080p)
-http://58bd5b7a98e04.streamlock.net/medienasa-live/RFH_high/playlist.m3u8
-#EXTINF:-1 tvg-id="RheinMainTV.de" status="online",rheinmaintv (720p) [Not 24/7]
-https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/chunklist.m3u8
-#EXTINF:-1 tvg-id="RheinMainTV.de" status="online",rheinmaintv (720p) [Not 24/7]
-https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="RheinMainTV.de" status="online",rheinmaintv (720p) [Not 24/7]
-https://586fb512206e4.streamlock.net/rheinmaintv-live/mp4:livestream/playlist.m3u8?=&ref=www.rheinmaintv.de&seid=598541
 #EXTINF:-1 tvg-id="" status="online",TVO (1080p) [Not 24/7]
 https://tvoberfranken.iptv-playoutcenter.de/tvoberfranken/tvoberfranken.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="WDRFernsehenKoln.de" status="timeout",WDR Koeln (720p)
-https://wdrfsww247.akamaized.net/hls/live/2009628/wdr_msl4_fs247ww/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",WTV Wettin
 http://62.113.210.250:1935/medienasa-live/ok-wettin_high/playlist.m3u8
-#EXTINF:-1 tvg-id="ZDFinfo.de" status="blocked",ZDFinfo [Geo-blocked]
-https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
-#EXTINF:-1 tvg-id="ZDFneo.de" status="blocked",ZDFneo [Geo-blocked]
-https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ZWEI2 Music (1080p)
 https://serve-first.folxplay.tv/folx/ch-2/master.m3u8
