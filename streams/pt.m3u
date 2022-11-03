@@ -56,22 +56,12 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtpmem.smil/playlist.m3u8
 http://93.152.174.144:4000/play/sic/index.m3u8
 #EXTINF:-1 tvg-id="SIC.pt" status="online",SIC (1080p)
 https://d1zx6l1dn8vaj5.cloudfront.net/out/v1/b89cc37caa6d418eb423cf092a2ef970/index.m3u8
+#EXTINF:-1 tvg-id="SIC.pt" status="blocked",SIC (1080p) [Geo-blocked]
+https://sic.live.impresa.pt/sic.m3u8
 #EXTINF:-1 tvg-id="SICNoticias.pt" status="blocked",SIC Noticias [Geo-blocked]
-http://live.impresa.pt/live/sicnot/sicnot.m3u8
+https://sicnot.live.impresa.pt/sicnot.m3u8
 #EXTINF:-1 tvg-id="SobrenaturalTV.pt" status="online",Sobrenatural TV (1080p)
 http://213.13.26.11:1935/live/sobrenaturaltv/livestream.m3u8
-#EXTINF:-1 tvg-id="SportTV1.pt" status="blocked" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36",Sport TV 1 (720p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36
-https://smart-tv.livedoomovie.com:4431/02_SPORTTV_1_720p/chunklist.m3u8
-#EXTINF:-1 tvg-id="SportTV2.pt" status="blocked" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36",Sport TV 2 (720p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36
-https://smart-tv.livedoomovie.com:4431/02_SPORTTV_2_720p/chunklist.m3u8
-#EXTINF:-1 tvg-id="SportTV3.pt" status="blocked" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36",Sport TV 3 (720p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36
-https://smart-tv.livedoomovie.com:4431/02_SPORTTV_3_720p/chunklist.m3u8
-#EXTINF:-1 tvg-id="SportTV4.pt" status="blocked" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36",Sport TV 4 (576p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/96.0.3809.25 Safari/537.36
-https://smart-tv.livedoomovie.com:4431/02_SPORTTV_4_720p/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVI.pt" status="online",TVI (480p)
 https://video-auth2.iol.pt/live_edge/tvi_abr/edge_servers/tvi-480p/chunks.m3u8
 #EXTINF:-1 tvg-id="TVIReality.pt" status="online",TVI Reality (480p)
