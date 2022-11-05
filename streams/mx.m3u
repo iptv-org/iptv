@@ -1,8 +1,8 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="ADN40.mx" status="online",ADN 40 (720p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7k--FhnJzhPTrbtldMSoQQ/live
 #EXTINF:-1 tvg-id="ADN40.mx" status="online",ADN 40 (480p)
 https://mdstrm.com/live-stream-playlist/60b578b060947317de7b57ac.m3u8
+#EXTINF:-1 tvg-id="ADN40.mx" status="online",ADN 40 (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7k--FhnJzhPTrbtldMSoQQ/live
 #EXTINF:-1 tvg-id="AMXNoticias.mx" status="online",AMX Noticias (720p) [Not 24/7]
 https://5e50264bd6766.streamlock.net/mexiquense2/videomexiquense2/playlist.m3u8
 #EXTINF:-1 tvg-id="APlus.mx" status="blocked",A Más (480p) [Geo-blocked]
@@ -81,7 +81,7 @@ http://wowzacontrol.com:1936/stream56/stream56/playlist.m3u8
 https://video1.getstreamhosting.com:1936/8172/8172/playlist.m3u8
 #EXTINF:-1 tvg-id="RTQQueretaro.mx" status="online",RTQ Queretaro (360p) [Not 24/7]
 http://wms.tecnoxia.com:1935/rytqrolive/rytqrolive/master.m3u8
-#EXTINF:-1 tvg-id="TeleFormula.mx" status="blocked",TeleFórmula
+#EXTINF:-1 tvg-id="TeleFormula.mx" status="error",TeleFórmula
 https://mdstrm.com/live-stream-playlist/61e1e088d04d7744686afc42.m3u8
 #EXTINF:-1 tvg-id="Teleritmo.mx" status="blocked",Teleritmo (720p) [Geo-blocked]
 http://mdstrm.com/live-stream-playlist/57b4dc126338448314449d0c.m3u8
@@ -117,9 +117,9 @@ http://189.240.210.28:1935/envivo/puecom/playlist.m3u8
 http://189.240.210.28:1935/live/setpuebla/playlist.m3u8
 #EXTINF:-1 tvg-id="TelevisaPuebla.mx" status="timeout",Televisa Puebla
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC-HNztluSQSffhIWJTL-LUw/live
-#EXTINF:-1 tvg-id="TelevisaQueretaro.mx" status="error",Televisa Queretaro
+#EXTINF:-1 tvg-id="TelevisaQueretaro.mx" status="timeout",Televisa Queretaro
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC9QNz6VS3gGz55dzxAQtgtA/live
-#EXTINF:-1 tvg-id="TelevisaSanLuisPotosi.mx" status="online",Televisa San Luis Potosí (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisaSanLuisPotosi.mx" status="error",Televisa San Luis Potosí (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCaRuyaHshLdq462E9_pLzdA/live
 #EXTINF:-1 tvg-id="TelevisaSinaloa.mx" status="timeout",Televisa Sinaloa
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCtm1LvYEIQ_NrfOUVJ08YhQ/live
@@ -173,5 +173,5 @@ https://linear-193.frequency.stream/193/hls/master/playlist.m3u8
 http://mdstrm.com/live-stream-playlist/5d5d51a4e9a40e25f4a0332c.m3u8
 #EXTINF:-1 tvg-id="" status="online",POP TV (542p) [Not 24/7]
 https://5ca3e84a76d30.streamlock.net/gpacifico3/smil:obregon.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",TELE SISTEMA CANAL 9 (486p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="blocked",TELE SISTEMA CANAL 9 (486p) [Geo-blocked]
 http://k4.usastreams.com/ARBtv/ARBtv/playlist.m3u8
