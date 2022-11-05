@@ -31,19 +31,19 @@ https://bibeltv02.iptv-playoutcenter.de/bibeltv02/bibeltv02.stream_1/playlist.m3
 http://bibeltv03.iptv-playoutcenter.de/bibeltv03/bibeltv03.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="BLKRegionalTV.de" status="online",BLK TV Hohenmölsen (1080p) [Not 24/7]
 http://62.113.210.250/medienasa-live/BLKonline_high/playlist.m3u8
+#EXTINF:-1 tvg-id="BLKRegionalTV.de" status="online",BLK TV (1080p) [Not 24/7]
+https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/BLKonline_high/playlist.m3u8
 #EXTINF:-1 tvg-id="BLKRegionalTV.de" status="online",BLK Regional TV (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high/playlist.m3u8
 #EXTINF:-1 tvg-id="BLKRegionalTV.de" status="online",BLK TV Hohenmölsen (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:BLKonline_high/playlist.m3u8?ref=medienportal-sachsen-
-#EXTINF:-1 tvg-id="BLKRegionalTV.de" status="error",BLK TV (1080p) [Not 24/7]
-https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/BLKonline_high/playlist.m3u8
 #EXTINF:-1 tvg-id="BRFernsehenNord.de" status="online",BR Fernsehen Nord (720p) [Geo-blocked]
 http://livestreams.br.de/i/bfsnord_germany@119898/master.m3u8
 #EXTINF:-1 tvg-id="BRFernsehenNord.de" status="online",BR Fernsehen Nord (720p) [Geo-blocked]
 https://brlive-lh.akamaihd.net/i/bfsnord_germany@119898/master.m3u8
-#EXTINF:-1 tvg-id="CroTVHD.de" status="timeout",CroTV HD (1080p)
+#EXTINF:-1 tvg-id="CroTVHD.de" status="error",CroTV HD (1080p)
 http://92.204.40.139:8081/crotv/televizijahrvatskedijaspore/playlist.m3u8
-#EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="DasErste.de" status="online",Das Erste (720p) [Geo-blocked]
 https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p)
 https://derste247liveint.akamaized.net/hls/live/662735/daserste_int/master.m3u8
@@ -68,9 +68,9 @@ https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 #EXTINF:-1 tvg-id="DWEspanol.de" status="online",DW Español (1080p)
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 #EXTINF:-1 tvg-id="emsTVLingen.de" status="online",ems TV Lingen (280p)
-https://5889e7d0d6e28.streamlock.net/ev1tv-live/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="emsTVLingen.de" status="error",ems TV Lingen (280p)
 https://5889e7d0d6e28.streamlock.net/ev1tv-live/_definst_/mp4:livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="emsTVLingen.de" status="online",ems TV Lingen (280p)
+https://5889e7d0d6e28.streamlock.net/ev1tv-live/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ErzTVStollberg.de" status="online",Erz-TV Stollberg (576p)
 https://5acade5fc0c29.streamlock.net/kabeljournal/live2020.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroAlTV.de" status="timeout",EuroAl TV (720p)
@@ -149,10 +149,6 @@ https://stream03.welocal.stream/stream/fhd-nbydeggendorf_99148/ngrp:stream_all/i
 https://stream03.welocal.stream/stream/fhd-nbylandshut_75262/ngrp:stream_all/index.m3u8
 #EXTINF:-1 tvg-id="NiederbayernTVPassau.de" status="online",Niederbayern TV Passau (1080p)
 https://stream03.welocal.stream/stream/fhd-nbypassau_49171/ngrp:stream_all/index.m3u8
-#EXTINF:-1 tvg-id="Noa4HamburgHD.de" status="online",Noa 4 Hamburg (1080p)
-https://hls1.wtnet.de/noa4hh/apple/wifi6500.m3u8
-#EXTINF:-1 tvg-id="Noa4NorderstedtHD.de" status="online",Noa 4 Norderstedt (1080p)
-https://hls1.wtnet.de/noa4/apple/wifi6500.m3u8
 #EXTINF:-1 tvg-id="NRWision.de" status="online",NRWision (1080p)
 https://fms.nrwision.de/live/livestreamHD.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NRWision.de" status="online",NRWISION (1080p)
@@ -163,8 +159,6 @@ https://fms.nrwision.de/live/livestreamHD.stream_1080p/playlist.m3u8
 https://fms.nrwision.de/live/livestreamHD.stream_360p/playlist.m3u8
 #EXTINF:-1 tvg-id="OberlausitzTV.de" status="online",Oberlausitz TV (1080p) [Not 24/7]
 http://5856e1a25f71a.streamlock.net:1935/easycast8-live/mp4:livestreamhd4/playlist.m3u8
-#EXTINF:-1 tvg-id="OberpfalzTVHD.de" status="online",Oberpfalz TV (1080p)
-https://oberpfalztv.iptv-playoutcenter.de/oberpfalztv/oberpfalztv.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="Oeins.de" status="online",oeins (Oldenburg) (1080p) [Not 24/7]
 https://www.oeins.de/live/studio.m3u8
 #EXTINF:-1 tvg-id="OFTVOffenbach.de" status="online",OF-TV Offenbach (720p)
@@ -269,10 +263,6 @@ http://58bd5b7a98e04.streamlock.net/medienasa-live/ran1_high/playlist.m3u8
 http://62.113.210.250/medienasa-live/mp4:ran1_high/master.m3u8
 #EXTINF:-1 tvg-id="RAN1.de" status="online",RAN1 (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:ran1_high/playlist.m3u8
-#EXTINF:-1 tvg-id="RAN1Regionalfernsehen.de" status="online",RAN1 Regionalfernsehen (1080p)
-http://62.113.210.250:1935/medienasa-live/mp4:ran1_high/playlist.m3u8
-#EXTINF:-1 tvg-id="RAN1Regionalfernsehen.de" status="online",RAN1 Regionalfernsehen (1080p)
-http://62.113.210.250:1935/medienasa-live/ran1_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RBW.de" status="online",RBW (1080p)
 http://58bd5b7a98e04.streamlock.net/medienasa-live/rbw_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RBW.de" status="online",RBW (1080p)
@@ -290,11 +280,11 @@ http://58bd5b7a98e04.streamlock.net/medienasa-live/RFH_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RFH.de" status="online",RFH (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:RFH_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RFHHarz.de" status="online",RFH Harz (1080p)
+http://62.113.210.250/medienasa-live/RFH_high/master.m3u8
+#EXTINF:-1 tvg-id="RFHHarz.de" status="online",RFH Harz (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:RFH_high/playlist.m3u8
 #EXTINF:-1 tvg-id="RFHHarz.de" status="online",RFH Harz (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/mp4:RFH_high/playlist.m3u8?ref=medienportal-sachsen-anhalt.de&seid=528347
-#EXTINF:-1 tvg-id="RFHHarz.de" status="error",RFH Harz (1080p)
-http://62.113.210.250/medienasa-live/RFH_high/master.m3u8
 #EXTINF:-1 tvg-id="RFORosenheim.de" status="online",RFO Rosenheim (1080p)
 https://stream01.stream.welocal.world/stream/fhd-rfo_66876/ngrp:stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="RheinMainTV.de" status="online",RheinMain TV (720p) [Not 24/7]
@@ -355,8 +345,6 @@ https://5889e7d0d6e28.streamlock.net/tide-live/smil:livestream.smil/playlist.m3u
 https://stream.tiviturk.de/live/tiviturk.m3u8
 #EXTINF:-1 tvg-id="TV38SudostNiedersachen.de" status="online",TV38 Südost-Niedersachen (480p) [Not 24/7]
 http://62.113.221.3/tv38-live/_definst_/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVAHD.de" status="online",TVA (1080p) [Not 24/7]
-https://tvaktuellr.iptv-playoutcenter.de/tvaktuellr/tvaktuellr.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMainfranken.de" status="online",TV Mainfranken (1080p) [Not 24/7]
 https://tvtouringw.iptv-playoutcenter.de/tvtouringw/tvtouringw.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="WDRFernsehenKoln.de" status="timeout",WDR Koeln (720p)
@@ -384,6 +372,12 @@ https://serve-first.folxplay.tv/folx/ch-4/master.m3u8
 https://isar-tv.iptv-playoutcenter.de/isar-tv/isar-tv.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",MyTVplus (Dresden) (576p)
 https://mytvplus.iptv-playoutcenter.de/mytvplus/mytvplus.stream_1/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",Noa 4 Hamburg (1080p)
+https://hls1.wtnet.de/noa4hh/apple/wifi6500.m3u8
+#EXTINF:-1 tvg-id="" status="online",Noa 4 Norderstedt (1080p)
+https://hls1.wtnet.de/noa4/apple/wifi6500.m3u8
+#EXTINF:-1 tvg-id="" status="online",Oberpfalz TV (1080p)
+https://oberpfalztv.iptv-playoutcenter.de/oberpfalztv/oberpfalztv.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Offener Kanal Fulda
 https://s.ok54.de/mok-fu/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ONE1 Music (1080p)
@@ -394,6 +388,12 @@ https://serve-first.folxplay.tv/folx/ch-6/master.m3u8
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:punktum_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ran1 Dessau-Roßlau (1080p)
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ran1_high/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",RAN1 Regionalfernsehen (1080p)
+http://62.113.210.250:1935/medienasa-live/mp4:ran1_high/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",RAN1 Regionalfernsehen (1080p)
+http://62.113.210.250:1935/medienasa-live/ran1_high/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",TVA (1080p) [Not 24/7]
+https://tvaktuellr.iptv-playoutcenter.de/tvaktuellr/tvaktuellr.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",TVO (1080p) [Not 24/7]
 https://tvoberfranken.iptv-playoutcenter.de/tvoberfranken/tvoberfranken.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",WTV Wettin
