@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ABCNews.al" status="online",ABC News (720p) [Not 24/7]
 https://tv2.abcnews.al/live/abcnews/playlist.m3u8
-#EXTINF:-1 tvg-id="AlbMusik.al" status="error",AlbMusik (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlbMusik.al" status="online",AlbMusik (720p) [Not 24/7]
 http://albmusic.dyndns.tv:1935/albuk/albmus.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="AlbUKTV.uk" status="online",AlbUK TV (1080p) [Not 24/7]
 http://albuk.dyndns.tv:1935/albuk/albuk.stream/playlist.m3u8
@@ -17,10 +17,6 @@ http://tv.balkanweb.com:8081/news24/livestream/playlist.m3u8
 http://93.157.62.180/OraNews/index.m3u8
 #EXTINF:-1 tvg-id="ReportTV.al" status="online",Report TV
 https://deb10stream.duckdns.org/hls/stream.m3u8
-#EXTINF:-1 tvg-id="RTSH1HD.al" status="timeout",RTSH 1 (1080p) [Not 24/7]
-https://tvlive.rtsh.dev/live/rtsh_11mob1/playlist.m3u8
-#EXTINF:-1 tvg-id="RTSH2HD.al" status="timeout",RTSH 2 (406p) [Not 24/7]
-https://tvlive.rtsh.dev/live/rtsh_2ott/playlist.m3u8
 #EXTINF:-1 tvg-id="RTSH3.al" status="timeout",RTSH 3 (406p)
 https://tvlive.rtsh.dev/live/rtsh3ott/playlist.m3u8
 #EXTINF:-1 tvg-id="RTSH24.al" status="timeout",RTSH 24 (406p) [Not 24/7]
@@ -55,9 +51,9 @@ http://live.syri.tv:6969/live/syriblue/hd/23.ts
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x6inuzo
 #EXTINF:-1 tvg-id="TopNews.al" status="timeout",Top News
 http://93.157.62.180/TopNews/index.m3u8
-#EXTINF:-1 tvg-id="TV7Albania.al" status="online",TV 7 Albania (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV7Albania.al" status="error",TV 7 Albania (540p) [Not 24/7]
 http://media.az-mediaserver.com:1935/7064/7064/playlist.m3u8
-#EXTINF:-1 tvg-id="TV7Albania.al" status="online",7 HD (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="TV7Albania.al" status="error",7 HD (540p) [Not 24/7]
 https://5d00db0e0fcd5.streamlock.net/7064/7064/playlist.m3u8
 #EXTINF:-1 tvg-id="TVApollon.al" status="online",TV Apollon (720p)
 https://live.apollon.tv/Apollon-WEB/video.m3u8?token=tnt3u76re30d2
@@ -69,11 +65,15 @@ http://live.albavision.net:1123/live/albdreams.m3u8
 https://albportal.net/albkanalemusic.m3u8
 #EXTINF:-1 tvg-id="" status="online",ATD (1080p)
 http://46.99.146.236/0.m3u8
-#EXTINF:-1 tvg-id="" status="online",Korça + (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Korça + (1080p) [Not 24/7]
 http://32.shqiptv.org/korca/albplus/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",RTSH 1 (1080p) [Not 24/7]
+https://tvlive.rtsh.dev/live/rtsh_11mob1/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",RTSH 2 (406p) [Not 24/7]
+https://tvlive.rtsh.dev/live/rtsh_2ott/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",RTV Arberia Musik
 http://rtvarberia4.flashmediacast.com:1935/RtvArberia4/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Shqiponja (720p) [Not 24/7]
 http://ott.iptvshqipott.com:8080/live/shqiponja/tv/236.m3u8
-#EXTINF:-1 tvg-id="" status="error",TopEstrada TV
+#EXTINF:-1 tvg-id="" status="online",TopEstrada TV
 http://live.topestrada.com/live/topestrada/playlist.m3u8
