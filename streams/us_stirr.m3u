@@ -57,7 +57,7 @@ https://dai.google.com/linear/hls/event/3w3PsYzZQzS8lyRfi7e4mQ/master.m3u8
 https://dai.google.com/linear/hls/event/xC8SDBfbTKCTCa20kFJQXQ/master.m3u8
 #EXTINF:-1 tvg-id="MagellanTV.us" status="online",Magellan TV (720p)
 https://dai.google.com/linear/hls/event/5xreV3X4T9WxeIbrwOmdMA/master.m3u8
-#EXTINF:-1 tvg-id="Mobcrush.us" status="online",Mobcrush (720p)
+#EXTINF:-1 tvg-id="Mobcrush.us" status="timeout",Mobcrush (720p)
 https://dai.google.com/linear/hls/event/LGDVXxxyT8SxrL4-ZodxKw/master.m3u8
 #EXTINF:-1 tvg-id="NASATV.us" status="online",NASA TV (720p)
 https://uplynkcontent.sinclairstoryline.com/channel/ddd76fdc1c0a456ba537e4f48e827d3e.m3u8
@@ -135,7 +135,7 @@ https://dai.google.com/linear/hls/event/ZaLvGYKiTfuSYgJuBZD67Q/master.m3u8
 https://dai.google.com/linear/hls/event/btXotLiMRvmsa5J5AetBGQ/master.m3u8
 #EXTINF:-1 tvg-id="STIRRCityColumbia.us" status="online",STIRR City Columbia (720p) [Not 24/7]
 https://dai.google.com/linear/hls/event/nkNBP1eHT_GQwS7oYq23zw/master.m3u8
-#EXTINF:-1 tvg-id="STIRRCityColumbus1.us" status="error",STIRR City Columbus #1 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="STIRRCityColumbus1.us" status="online",STIRR City Columbus #1 (720p) [Not 24/7]
 https://dai.google.com/linear/hls/event/wV5ExXM9RxabBzbWnVv9RA/master.m3u8
 #EXTINF:-1 tvg-id="STIRRCityColumbus2.us" status="online",STIRR City Columbus #2 (720p)
 https://dai.google.com/linear/hls/event/QLfrYVtERpCnzM7qE_PkUw/master.m3u8
@@ -259,10 +259,10 @@ https://dai.google.com/linear/hls/event/dKG_ZFd_S82FPgNxHmhdJw/master.m3u8
 https://dai.google.com/linear/hls/event/r9VoxPU7TYmpydEn2ZR0jA/master.m3u8
 #EXTINF:-1 tvg-id="STIRRWesterns.us" status="online",STIRR Westerns (360p)
 https://dai.google.com/linear/hls/event/YF2jfXh_QROPxoHEwp1Abw/master.m3u8
-#EXTINF:-1 tvg-id="TennisChannel.us" status="online",Tennis Channel (720p) [Geo-blocked]
-https://playoutengine.sinclairstoryline.com/playout/9f87522c-5a0e-4ff4-b82c-d5564216132f/g.m3u8
 #EXTINF:-1 tvg-id="TennisChannel.us" status="online",Tennis Channel (504p) [Geo-blocked]
 https://playoutengine.sinclairstoryline.com/playout/9f87522c-5a0e-4ff4-b82c-d5564216132f/f.m3u8
+#EXTINF:-1 tvg-id="TennisChannel.us" status="blocked",Tennis Channel (720p) [Geo-blocked]
+https://playoutengine.sinclairstoryline.com/playout/9f87522c-5a0e-4ff4-b82c-d5564216132f/g.m3u8
 #EXTINF:-1 tvg-id="TheAsylum.us" status="timeout",The Asylum (1080p)
 http://asylum-stirr.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TheCountryNetwork.us" status="online",The Country Network (1080p)
@@ -281,7 +281,7 @@ https://dai.google.com/linear/hls/event/gJJhuFTCRo-HAHYsffb3Xg/master.m3u8
 https://dai.google.com/linear/hls/event/im0MqOKRTHy9nVa1sirQSg/master.m3u8
 #EXTINF:-1 tvg-id="WeatherSpy.us" status="online",WeatherSpy (720p)
 https://dai.google.com/linear/hls/event/vZB78SsNSXWOR63VJrNC2Q/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",beIN Sports Xtra (1080p)
+#EXTINF:-1 tvg-id="" status="timeout",beIN Sports Xtra (1080p)
 https://dai.google.com/linear/hls/event/3e-9BOvHQrCI9hboMYjb6w/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",CBSN (720p)
 https://dai.google.com/linear/hls/event/Sid4xiTQTkCT1SLu6rjUSQ/master.m3u8
@@ -380,9 +380,9 @@ https://dai.google.com/linear/hls/event/_PDxBUttQYqkxPnmh3VOZA/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",STIRR Space:1999 (768p)
 https://dai.google.com/linear/hls/event/NeKNJHuzSeCiN_7Fcuo83Q/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",STIRR Stadium (720p)
-https://dai.google.com/linear/hls/event/0jRU1DBXSW6a_TFheLfAUQ/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",STIRR Stadium (720p)
 http://stadium.sinclair.wurl.com/manifest/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="online",STIRR Stadium (720p)
+https://dai.google.com/linear/hls/event/0jRU1DBXSW6a_TFheLfAUQ/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",STIRR Stingray Pop Adult (1080p)
 https://ott-linear-channels.stingray.com/hls/stirr/104.m3u8
 #EXTINF:-1 tvg-id="" status="online",STIRR Stingray Rock Alternative (1080p)
