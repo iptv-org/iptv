@@ -43,7 +43,7 @@ http://livestreams.br.de/i/bfsnord_germany@119898/master.m3u8
 https://brlive-lh.akamaihd.net/i/bfsnord_germany@119898/master.m3u8
 #EXTINF:-1 tvg-id="CroTVHD.de" status="error",CroTV HD (1080p)
 http://92.204.40.139:8081/crotv/televizijahrvatskedijaspore/playlist.m3u8
-#EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="DasErste.de" status="online",Das Erste (720p) [Geo-blocked]
 https://mcdn.daserste.de/daserste/de/master.m3u8
 #EXTINF:-1 tvg-id="DasErste.de" status="timeout",Das Erste (720p)
 https://derste247liveint.akamaized.net/hls/live/662735/daserste_int/master.m3u8
@@ -56,9 +56,9 @@ http://tv.artcom-venture.de:1322/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DeutschesMusikFernsehen.de" status="timeout",Deutsches Musik Fernsehen (720p) [Not 24/7]
 https://tv.artcom-venture.de/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
-https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
-#EXTINF:-1 tvg-id="DWArabic.de" status="error",DW Arabic (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/dwarabic/live
+#EXTINF:-1 tvg-id="DWArabic.de" status="online",DW Arabic (1080p)
+https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutsch.de" status="blocked",DW Deutsch (1080p) [Geo-blocked]
 https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutschPlus.de" status="blocked",DW Deutsch+ (1080p) [Geo-blocked]
@@ -68,9 +68,9 @@ https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8
 #EXTINF:-1 tvg-id="DWEspanol.de" status="online",DW Español (1080p)
 https://dwamdstream104.akamaized.net/hls/live/2015530/dwstream104/index.m3u8
 #EXTINF:-1 tvg-id="emsTVLingen.de" status="online",ems TV Lingen (280p)
-https://5889e7d0d6e28.streamlock.net/ev1tv-live/_definst_/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="emsTVLingen.de" status="online",ems TV Lingen (280p)
 https://5889e7d0d6e28.streamlock.net/ev1tv-live/mp4:livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="emsTVLingen.de" status="error",ems TV Lingen (280p)
+https://5889e7d0d6e28.streamlock.net/ev1tv-live/_definst_/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ErzTVStollberg.de" status="online",Erz-TV Stollberg (576p)
 https://5acade5fc0c29.streamlock.net/kabeljournal/live2020.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="EuroAlTV.de" status="timeout",EuroAl TV (720p)
