@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="4E.gr" status="online",4E (720p)
 http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="34100TV.gr" status="online",34100 TV (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="34100TV.gr" status="blocked",34100 TV (720p) [Geo-blocked]
 https://s1.cystream.net/live/34100/playlist.m3u8
 #EXTINF:-1 tvg-id="AcheloosTV.gr" status="online",Acheloos TV (576p) [Not 24/7]
 http://srv.viiideo.gr:1935/axeloos/live/playlist.m3u8
@@ -21,7 +21,7 @@ https://eco.streams.ovh/BarazaTV/BarazaTV/playlist.m3u8
 https://panik.cast-control.eu:1936/Admin_1/Admin_1/playlist.m3u8
 #EXTINF:-1 tvg-id="BCI24News.gr" status="online",BCI 24 News (720p)
 https://live.streams.ovh/netmedia/netmedia/playlist.m3u8
-#EXTINF:-1 tvg-id="BestTV.gr" status="online",Best TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="BestTV.gr" status="error",Best TV (720p) [Not 24/7]
 https://stream.net7.gr/hls/best/index.m3u8
 #EXTINF:-1 tvg-id="CanaliTV.gr" status="online",Canali TV (720p) [Geo-blocked]
 http://live.streams.ovh:1935/cannali/cannali/playlist.m3u8
@@ -59,7 +59,7 @@ https://ert-live-bcbs15228.siliconweb.com/media/ert_world/ert_world.m3u8
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
-#EXTINF:-1 tvg-id="Galaxy.gr" status="online",Galaxy (432p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Galaxy.gr" status="blocked",Galaxy (432p) [Geo-blocked]
 https://channel.streams.ovh:1936/galaxygr-1/galaxygr-1/playlist.m3u8
 #EXTINF:-1 tvg-id="GreekTVLondon.gr" status="online",Greek TV London (720p) [Not 24/7]
 https://vdo3.alphaserver.gr:3466/stream/play.m3u8
@@ -125,11 +125,11 @@ http://78.83.87.222:9999/play/a016/index.m3u8
 https://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="SkaiTV.gr" status="online",Skai (720p)
 https://skai-live.siliconweb.com/media/cambria4/index.m3u8
-#EXTINF:-1 tvg-id="SmileTV.gr" status="online",Smile TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SmileTV.gr" status="blocked",Smile TV (360p) [Geo-blocked]
 https://s1.cystream.net/live/smile/playlist.m3u8
 #EXTINF:-1 tvg-id="StarChannel.gr" status="online",Star (720p)
 https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8
-#EXTINF:-1 tvg-id="Tilemousiki.gr" status="error",Tilemousiki (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="Tilemousiki.gr" status="online",Tilemousiki (480p) [Not 24/7]
 http://wpso.com:1936/hls/music1.m3u8
 #EXTINF:-1 tvg-id="TV100.gr" status="online",TV 100 (576p) [Not 24/7]
 https://live.fm100.gr/hls/tv100/index.m3u8
