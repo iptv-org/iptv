@@ -43,7 +43,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://59d52c5a5ce5e.streamlock.net:4443/cadena103/cadena103/playlist.m3u8
 #EXTINF:-1 tvg-id="CadenaVivo.ar" status="online",Cadena VIVO (720p)
 https://videostream.shockmedia.com.ar:19360/tvnoficial/tvnoficial.m3u8
-#EXTINF:-1 tvg-id="CalchaquiTV.ar" status="error",Calchaquí TV (480p)
+#EXTINF:-1 tvg-id="CalchaquiTV.ar" status="online",Calchaquí TV (480p)
 https://video.streamtvradio.com:8443/uv068/uv068/chunks.m3u8
 #EXTINF:-1 tvg-id="Canal2Perico.ar" status="online",Canal 2 Perico (480p)
 https://streamcasthd.com:1936/tecnovisioncanal2tv/tecnovisioncanal2tv/playlist.m3u8
@@ -71,7 +71,7 @@ https://iptv.ixfo.com.ar:30443/live/C4POS/playlist.m3u8
 http://streamlov.alsolnet.com/canal4sanjuan/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal5PicoTruncado.ar" status="online",Canal 5 (Pico Truncado)
 https://stream.arcast.com.ar/canal5picotruncado/canal5picotruncado/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal5SantaFe.ar" status="online",C5 Santa Fé (240p)
+#EXTINF:-1 tvg-id="Canal5SantaFe.ar" status="error",C5 Santa Fé (240p)
 https://stream.arcast.com.ar/c5sf/c5sf/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal5Tucuman.ar" status="online",Canal 5 (Tucumán) [Not 24/7]
 https://videohd.live:19360/8090/8090.m3u8
@@ -91,7 +91,7 @@ https://panel.dattalive.com/8074/8074/playlist.m3u8
 https://stream.arcast.com.ar/c8mdp/ngrp:c8mdp_all/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9Chabas.ar" status="online",Canal 9 Chabás (576p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canal9chabas
-#EXTINF:-1 tvg-id="Canal9LaRioja.ar" status="error",Canal 9 La Rioja (720p)
+#EXTINF:-1 tvg-id="Canal9LaRioja.ar" status="online",Canal 9 La Rioja (720p)
 https://inliveserver.com:1936/17012/17012/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9Litoral.ar" status="online",Canal 9 Litoral
 https://stream.arcast.live/ahora/ahora/playlist.m3u8
@@ -115,7 +115,7 @@ https://streamcasthd.com:1936/tvdiez/tvdiez/playlist.m3u8
 http://panel.dattalive.com:1935/8204/8204/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10TVRioNegro.ar" status="online",Canal 10 Rio Negro
 https://panel.dattalive.com/8204/8204/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal11delaCosta.ar" status="error",Canal 11 de la Costa (720p)
+#EXTINF:-1 tvg-id="Canal11delaCosta.ar" status="online",Canal 11 de la Costa (720p)
 https://vivo.solumedia.com:19360/dadaproductora/dadaproductora.m3u8
 #EXTINF:-1 tvg-id="Canal11LaRioja.ar" status="online",Canal 11 La Rioja (Fénix Multiplataforma) (360p)
 http://stmv4.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
@@ -164,12 +164,12 @@ https://panel.dattalive.com/8138/8138/playlist.m3u8
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g5.proy-hor.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8?sense=true
-#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
-https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="iPhone",Canal Luz (1080p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
+https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalOrbe21.ar" status="online",Canal Orbe 21
 https://cdn2.zencast.tv:30443/orbe/orbe21smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalProvincial.ar" status="online",Canal Provincial (360p)
@@ -180,13 +180,13 @@ https://cda2.alsolnet.com/elrural/live/playlist.m3u8
 https://streaming.telered.com.ar/santa-maria/streaming/mystream.m3u8
 #EXTINF:-1 tvg-id="CanalTDC.ar" status="online",CANAL TDC (1080p) [Not 24/7]
 https://5e7cdf2370883.streamlock.net/tdconline/tdconline/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalU.ar" status="error",Canal U
+#EXTINF:-1 tvg-id="CanalU.ar" status="online",Canal U
 https://stream.arcast.live/canalu/canalu/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalXFN.ar" status="online",Canal XFN
 https://streamconex.com:1936/canalxfn/canalxfn/playlist.m3u8
 #EXTINF:-1 tvg-id="CatamarcaTV.ar" status="online",Catamarca TV [Not 24/7]
 https://stream.arcast.com.ar/canal7catamarca/ngrp:canal7catamarca_all/playlist.m3u8
-#EXTINF:-1 tvg-id="CeltaTV.ar" status="error",Celta TV
+#EXTINF:-1 tvg-id="CeltaTV.ar" status="online",Celta TV
 https://vivo.solumedia.com:19360/celta/celta.m3u8
 #EXTINF:-1 tvg-id="ChacoTV.ar" status="online",Chaco TV (720p) [Not 24/7]
 https://5b7ecefab6325.streamlock.net/Streamtv/chacotv/playlist.m3u8
@@ -278,11 +278,9 @@ https://video.streamtvradio.com:8443/uv027/uv027/playlist.m3u8
 https://live2.tensila.com/1-1-1.power-tv/hls/master.m3u8
 #EXTINF:-1 tvg-id="PowerHD.ar" status="online",Power TV (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/live-powerTV/power.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="QuatroTV.ar" status="error",Quatro TV
-https://stream.arcast.live/quatro/quatro/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioTVNeuquen.ar" status="online",Radio TV Neuquen (720p) [Not 24/7]
 http://media.neuquen.gov.ar/rtn/television/playlist.m3u8
-#EXTINF:-1 tvg-id="RBDRadioMultimedia.ar" status="error",RBD Radio TV (480p)
+#EXTINF:-1 tvg-id="RBDRadioMultimedia.ar" status="online",RBD Radio TV (480p)
 https://59537faa0729a.streamlock.net/rbdvideo/rbdvideo/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroMagico.ar" status="online",RetroMágico
 https://vivo.solumedia.com:19360/retromagico/retromagico.m3u8
