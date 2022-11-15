@@ -27,9 +27,9 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://raw.githubusercontent.com/MachineSystems/archived_m3u8/main/america_hls.m3u8
 #EXTINF:-1 tvg-id="Antena91.ar" status="online",Antena 91
 https://tuvideoonline.com.ar:3393/live/antena91live.m3u8
-#EXTINF:-1 tvg-id="AZMTV.ar" status="error",AZM TV
+#EXTINF:-1 tvg-id="AZMTV.ar" status="online",AZM TV
 https://live.canalnueve.tv/canal.m3u8
-#EXTINF:-1 tvg-id="BayresTV.ar" status="online",Bayres TV
+#EXTINF:-1 tvg-id="BayresTV.ar" status="timeout",Bayres TV
 https://streaming02.gbasat.com.ar:19360/bayrestv/bayrestv.m3u8
 #EXTINF:-1 tvg-id="BeatsRadio.ar" status="online",Beats Radio
 https://59537faa0729a.streamlock.net/beatsradio/beatsradio/playlist.m3u8
@@ -37,13 +37,13 @@ https://59537faa0729a.streamlock.net/beatsradio/beatsradio/playlist.m3u8
 https://vivo.solumedia.com:19360/bvconline/bvconline.m3u8
 #EXTINF:-1 tvg-id="C5N.ar" status="online",C5N (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/c5n/live
-#EXTINF:-1 tvg-id="C5N.ar" status="error",C5N Canal 5 Noticias (1080p)
+#EXTINF:-1 tvg-id="C5N.ar" status="online",C5N Canal 5 Noticias (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFgk2Q2mVO1BklRQhSv6p0w/live
 #EXTINF:-1 tvg-id="Cadena103.ar" status="online",Cadena 103
 https://59d52c5a5ce5e.streamlock.net:4443/cadena103/cadena103/playlist.m3u8
 #EXTINF:-1 tvg-id="CadenaVivo.ar" status="online",Cadena VIVO (720p)
 https://videostream.shockmedia.com.ar:19360/tvnoficial/tvnoficial.m3u8
-#EXTINF:-1 tvg-id="CalchaquiTV.ar" status="error",Calchaquí TV (480p)
+#EXTINF:-1 tvg-id="CalchaquiTV.ar" status="online",Calchaquí TV (480p)
 https://video.streamtvradio.com:8443/uv068/uv068/chunks.m3u8
 #EXTINF:-1 tvg-id="Canal2Perico.ar" status="online",Canal 2 Perico (480p)
 https://streamcasthd.com:1936/tecnovisioncanal2tv/tecnovisioncanal2tv/playlist.m3u8
@@ -51,7 +51,7 @@ https://streamcasthd.com:1936/tecnovisioncanal2tv/tecnovisioncanal2tv/playlist.m
 https://vivo.solumedia.com:19360/tv2salta/tv2salta.m3u8
 #EXTINF:-1 tvg-id="Canal2Sanagasta.ar" status="online",Canal 2 (Sanagasta)
 https://stmvideo1.livecastv.com/canal2/canal2/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal3Formosa.ar" status="online",Canal 3 Formosa (720p)
+#EXTINF:-1 tvg-id="Canal3Formosa.ar" status="error",Canal 3 Formosa (720p)
 https://stmvideo2.livecastv.com/agenfor/agenfor/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal3LasHeras.ar" status="online",Canal 3 Las Heras (720p)
 https://stream.arcast.com.ar/canal3/canal3/playlist.m3u8
@@ -69,7 +69,7 @@ https://5cd577a3dd8ec.streamlock.net/canal4/smil:manifest.smil/playlist.m3u8
 https://iptv.ixfo.com.ar:30443/live/C4POS/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4SanJuan.ar" status="online",Canal 4 (San Juan)
 http://streamlov.alsolnet.com/canal4sanjuan/live/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal5PicoTruncado.ar" status="online",Canal 5 (Pico Truncado)
+#EXTINF:-1 tvg-id="Canal5PicoTruncado.ar" status="error",Canal 5 (Pico Truncado)
 https://stream.arcast.com.ar/canal5picotruncado/canal5picotruncado/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal5SantaFe.ar" status="error",C5 Santa Fé (240p)
 https://stream.arcast.com.ar/c5sf/c5sf/playlist.m3u8
@@ -115,7 +115,7 @@ https://streamcasthd.com:1936/tvdiez/tvdiez/playlist.m3u8
 http://panel.dattalive.com:1935/8204/8204/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10TVRioNegro.ar" status="online",Canal 10 Rio Negro
 https://panel.dattalive.com/8204/8204/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal11delaCosta.ar" status="error",Canal 11 de la Costa (720p)
+#EXTINF:-1 tvg-id="Canal11delaCosta.ar" status="online",Canal 11 de la Costa (720p)
 https://vivo.solumedia.com:19360/dadaproductora/dadaproductora.m3u8
 #EXTINF:-1 tvg-id="Canal11LaRioja.ar" status="online",Canal 11 La Rioja (Fénix Multiplataforma) (360p)
 http://stmv4.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
@@ -123,26 +123,26 @@ http://stmv4.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
 https://f6z5x8d4.stackpathcdn.com/stream.m3u8
 #EXTINF:-1 tvg-id="Canal12Web.ar" status="online",Canal 12 Puerto Madryn (720p) [Not 24/7]
 https://5f700d5b2c46f.streamlock.net/madryntv/madryntv/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal13Jujuy.ar" status="online",Canal13 Jujuy TV (720p)
+#EXTINF:-1 tvg-id="Canal13Jujuy.ar" status="error",Canal13 Jujuy TV (720p)
 https://genexservicios.com:19360/canal13jujuy/canal13jujuy.m3u8
 #EXTINF:-1 tvg-id="Canal13LaRioja.ar" status="online",Canal 13 La Rioja (480p)
 http://arcast.net:1935/mp/mp/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal13SanLuis.ar" status="online",Canal 13 San Luis
 https://stream.arcast.live/sanluistv/ngrp:sanluistv_all/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal20VillaMaria.ar" status="online",C20 Canal 20 Villa María (720p)
+#EXTINF:-1 tvg-id="Canal20VillaMaria.ar" status="error",C20 Canal 20 Villa María (720p)
 https://cronos.aldeaglobal.net.ar/hls/canal20.m3u8
 #EXTINF:-1 tvg-id="Canal21TV.ar" status="online",Canal 21 TV
 https://iptv.ixfo.com.ar:30443/c21tv/hd/c21tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal22.ar" status="online",Canal 22
 https://5f700d5b2c46f.streamlock.net/canal22/canal22/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (720p)
+http://200.115.193.177/live/26hd-720/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (180p)
 http://live-edge01.telecentro.net.ar/live/smil:c26.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (180p)
 http://live-edge02.telecentro.net.ar/live/c26.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.ar" status="online",Canal 26 (720p)
 https://live-edge01.telecentro.net.ar/live/smil:c26.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal26.ar" status="error",Canal 26 (720p)
-http://200.115.193.177/live/26hd-720/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal34SanJuan.ar" status="online",Canal 34 San Juan (720p)
 http://streamyes.alsolnet.com/canal34hd/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal50Morteros.ar" status="online",Canal 50 (Morteros)
@@ -151,14 +151,12 @@ https://coopmorteros.online/canal50/vivo.m3u8
 https://streamconex.com:1936/mardelplata/mardelplata/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal79SanJuan.ar" status="online",Canal 79 (San Juan)
 https://streamconex.com:1936/sanjuan/sanjuan/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal79SantaClaradelMar.ar" status="error",Canal 79 (Santa Clara del Mar)
+#EXTINF:-1 tvg-id="Canal79SantaClaradelMar.ar" status="online",Canal 79 (Santa Clara del Mar)
 https://streamconex.com:1936/santaclara/santaclara/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal907FM.ar" status="online",Canal 907 FM
 https://panel.dattalive.com/canal907/canal907/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalAntigua.gt" status="online",Canal Antigua (1080p)
 https://streannlivefeedlatino.cachefly.net/feedlatino1/feedlatino1/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalBlu.ar" status="error",Canal Blu (720p)
-https://59537faa0729a.streamlock.net/radioblu/radioblu/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalCoop.ar" status="online",Canal Coop
 https://panel.dattalive.com/8138/8138/playlist.m3u8
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
@@ -192,7 +190,7 @@ https://vivo.solumedia.com:19360/celta/celta.m3u8
 https://5b7ecefab6325.streamlock.net/Streamtv/chacotv/playlist.m3u8
 #EXTINF:-1 tvg-id="ChacraTV.ar" status="online",Chacra TV (480p) [Not 24/7]
 https://s8.stweb.tv/chacra/live/playlist.m3u8
-#EXTINF:-1 tvg-id="ChilecitoTV.ar" status="online",Chilecito TV
+#EXTINF:-1 tvg-id="ChilecitoTV.ar" status="error",Chilecito TV
 https://vivo.solumedia.com:19360/grupoemail/grupoemail.m3u8
 #EXTINF:-1 tvg-id="CincoTV.ar" status="online",Cinco TV (480p) [Not 24/7]
 https://59537faa0729a.streamlock.net/cincotv/cincotv/playlist.m3u8
@@ -206,21 +204,21 @@ https://videostream.shockmedia.com.ar:1936/cl3cable/cl3cable/playlist.m3u8
 https://mediacp.hostradios.com.ar:19360/canal7/canal7.m3u8
 #EXTINF:-1 tvg-id="CosmosTV.ar" status="online",Cosmos TV
 https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8
-#EXTINF:-1 tvg-id="CPEtv.ar" status="error",CPEtv
+#EXTINF:-1 tvg-id="CPEtv.ar" status="online",CPEtv
 https://stream.arcast.live/cpe/ngrp:cpe_all/playlist.m3u8
 #EXTINF:-1 tvg-id="CrossingCanalIPTV.ar" status="online",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
 https://vivo.solumedia.com:19360/crossing/crossing.m3u8
 #EXTINF:-1 tvg-id="CVisionTV.ar" status="online",CVisión TV (720p)
 https://stream.cvisiontv.com/cvision_stream.m3u8
-#EXTINF:-1 tvg-id="DeporTV.ar" status="error",DeporTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="DeporTV.ar" status="online",DeporTV (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSmh3DFxBwFurMttT60PQ1g/live
-#EXTINF:-1 tvg-id="DiputadosTV.ar" status="error",Diputados TV (1080p)
+#EXTINF:-1 tvg-id="DiputadosTV.ar" status="online",Diputados TV (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC1h8_HKc5wScqeRw1HV6a6w/live
 #EXTINF:-1 tvg-id="DirecTVSportsArgentina.ar" status="online",DirecTV Sports (480p)
 http://190.210.221.119/Processor3_9_chunklist_b1300000.m3u8
 #EXTINF:-1 tvg-id="ElGarageTV.ar" status="online",El Garage TV (480p) [Not 24/7]
 http://186.0.233.76:1935/Garage/smil:garage.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ElNueve.ar" status="error",El Nueve (1080p)
+#EXTINF:-1 tvg-id="ElNueve.ar" status="online",El Nueve (1080p)
 https://octubre-live.cdn.vustreams.com/live/channel09/live.isml/live.m3u8
 #EXTINF:-1 tvg-id="ElPalomar.ar" status="online",El Palomar
 http://video.streamtvradio.com:8081/uv038/uv038/playlist.m3u8
@@ -232,11 +230,11 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/Ros
 https://live.enhdtv.com:19360/tvplaydigital2/tvplaydigital2.m3u8
 #EXTINF:-1 tvg-id="FenixTV.ar" status="online",Fenix TV (Ciudad de La Rioja) (360p)
 https://stmv1.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
-#EXTINF:-1 tvg-id="GenTV.ar" status="online",GenTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="GenTV.ar" status="error",GenTV (720p) [Not 24/7]
 https://inliveserver.com:1936/14056/14056/playlist.m3u8
 #EXTINF:-1 tvg-id="InformacionPeriodistica.ar" status="online",Informacion Periodística (1080p)
 https://d1nmqgphjn0y4.cloudfront.net/live/ip/live.isml/5ee6e167-1167-4a85-9d8d-e08a3f55cff3.m3u8
-#EXTINF:-1 tvg-id="IngenioFM.ar" status="error",Ingenio FM
+#EXTINF:-1 tvg-id="IngenioFM.ar" status="online",Ingenio FM
 https://panel.dattalive.com/8064/8064/playlist.m3u8
 #EXTINF:-1 tvg-id="IPNoticias.ar" status="online",Información Periodística (1080p)
 https://octubre-live.cdn.vustreams.com/live/ip/live.isml/5ee6e167-1167-4a85-9d8d-e08a3f55cff3.m3u8
@@ -246,7 +244,7 @@ https://vivo.solumedia.com:19360/lapacho/lapacho.m3u8
 https://srv1.zcast.com.br/lavozdetucuman/lavozdetucuman/playlist.m3u8
 #EXTINF:-1 tvg-id="LitusTV.ar" status="online",Litus TV
 https://stream.arcast.com.ar/litustv/ngrp:litustv_all/playlist.m3u8
-#EXTINF:-1 tvg-id="LTOTelevision.ar" status="online",LTO Televisión [Not 24/7]
+#EXTINF:-1 tvg-id="LTOTelevision.ar" status="blocked",LTO Televisión [Not 24/7]
 https://ltocatamarca.github.io/ltotv.m3u8
 #EXTINF:-1 tvg-id="MasFM.ar" status="online",Más FM 95.9 (720p)
 https://vivo.solumedia.com:19360/masfm/masfm.m3u8
@@ -278,8 +276,6 @@ https://video.streamtvradio.com:8443/uv027/uv027/playlist.m3u8
 https://live2.tensila.com/1-1-1.power-tv/hls/master.m3u8
 #EXTINF:-1 tvg-id="PowerHD.ar" status="online",Power TV (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/live-powerTV/power.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="QuatroTV.ar" status="error",Quatro TV
-https://stream.arcast.live/quatro/quatro/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioTVNeuquen.ar" status="online",Radio TV Neuquen (720p) [Not 24/7]
 http://media.neuquen.gov.ar/rtn/television/playlist.m3u8
 #EXTINF:-1 tvg-id="RBDRadioMultimedia.ar" status="online",RBD Radio TV (480p)
@@ -292,8 +288,6 @@ http://media.neuquen.gov.ar/rtn/television/media.m3u8
 https://srv2.zcast.com.br/sptv2/sptv2/playlist.m3u8
 #EXTINF:-1 tvg-id="SantaFeCanal.ar" status="online",Santa Fe Canal (720p)
 https://api.new.livestream.com/accounts/22636012/events/8242619/live.m3u8
-#EXTINF:-1 tvg-id="SenateTV.ar" status="error",Senado TV (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCStm2uvQKowSXrnCzTWAn6Q/live
 #EXTINF:-1 tvg-id="SenillosaTV.ar" status="online",Senillosa TV (360p)
 https://stmv1.srvstm.com/senillosa/senillosa/playlist.m3u8
 #EXTINF:-1 tvg-id="SicardiTV.ar" status="online",Sicardi TV (720p)
@@ -312,7 +306,7 @@ https://mediacp.hostradios.com.ar:19360/telediario/telediario.m3u8
 https://videohd.live:19360/8020/8020.m3u8
 #EXTINF:-1 tvg-id="Telefe.ar" status="online",Telefe (720p)
 https://is-tucuman.cdn.rcs.net.ar/mnp/telefe_hls/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleJunin.ar" status="error",TeleJunín (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleJunin.ar" status="online",TeleJunín (576p) [Not 24/7]
 https://videostream.shockmedia.com.ar:1936/telejunin/telejunin/playlist.m3u8
 #EXTINF:-1 tvg-id="Telemax.ar" status="online",Telemax (720p)
 http://live-edge01.telecentro.net.ar/live/smil:tlx.smil/master.m3u8
@@ -324,13 +318,13 @@ https://617c5175c970b.streamlock.net:4444/previsoratv/live/playlist.m3u8
 http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Telesol.ar" status="online",Telesol (TLS) (432p) [Not 24/7]
 https://cnnsanjuan.com:9999/live/telesol/playlist.m3u8
-#EXTINF:-1 tvg-id="TelpinTVCanal2HD.ar" status="online",Telpin TV (1080p) [Not 24/7]
-https://wowza.telpin.com.ar:1935/telpintv/ttv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TelpinTVCanal2HD.ar" status="online",Telpin Canal 2 (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/telpintv/smil:ttv.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TelpinTVCanal2HD.ar" status="online",Telpin TV (1080p) [Not 24/7]
+https://wowza.telpin.com.ar:1935/telpintv/ttv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TierraMiaTV.ar" status="online",Tierra Mía TV (720p)
 http://live-edge01.telecentro.net.ar/live/smil:trm.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TN.ar" status="error",TN Todo Noticias (1080p)
+#EXTINF:-1 tvg-id="TN.ar" status="online",TN Todo Noticias (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/live
 #EXTINF:-1 tvg-id="TVManaArgentina.ar" status="timeout",TV Maná Argentina (576p) [Not 24/7]
 http://streamspub.manasat.com:1935/tvar/tvmanaar2/playlist.m3u8
