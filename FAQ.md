@@ -55,7 +55,7 @@ Note: For storage space reasons, the programming guide is only available in gz c
 Based on [#1797](https://github.com/iptv-org/iptv/issues/1797), [#2438](https://github.com/iptv-org/iptv/issues/2438), [#4537](https://github.com/iptv-org/iptv/discussions/4537) and [#7043](https://github.com/iptv-org/iptv/discussions/7043).
 
 ### Is it possible to view channels directly from the main website?
-No. In own website you will only see an extensive list of channels and their respective information, like a global database. However, you will be able to search and review the channels you want, and if your favorite channel is legally available as a stream in the IPTV playlist.
+No. In own website you will only see an extensive list of channels and their respective information, like a global database. However, you will be able to search and review the channels you want, and if your favorite channel is legally available as an indexed stream in the IPTV playlist.
 
 Note: You can consult the information of the channels by country, write in the search box as `country:UK` (for UK, per example).
 
