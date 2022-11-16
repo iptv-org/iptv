@@ -57,7 +57,7 @@ Based on [#1797](https://github.com/iptv-org/iptv/issues/1797), [#2438](https://
 ### Is it possible to view channels directly from the main website?
 No. In own website you will only see an extensive list of channels and their respective information, like a global database. However, you will be able to search and review the channels you want, and if your favorite channel is legally available as a stream in the IPTV playlist.
 
-Note: You can consult the information of the channels by country, write in the search engine as `country:UK` (for UK, per example).
+Note: You can consult the information of the channels by country, write in the search box as `country:UK` (for UK, per example).
 
 Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://github.com/iptv-org/iptv/issues/7415), [#7509](https://github.com/iptv-org/iptv/discussions/7509) and [#10242](https://github.com/iptv-org/iptv/discussions/10242).
 
