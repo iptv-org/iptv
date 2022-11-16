@@ -55,9 +55,11 @@ Note: For storage space reasons, the programming guide is only available in gz c
 Based on [#1797](https://github.com/iptv-org/iptv/issues/1797), [#2438](https://github.com/iptv-org/iptv/issues/2438), [#4537](https://github.com/iptv-org/iptv/discussions/4537) and [#7043](https://github.com/iptv-org/iptv/discussions/7043).
 
 ### Is it possible to view channels directly from the main website?
-No, you will only see information about active and inactive transmissions of channels.
+No. In own website you will only see an extensive list of channels and their respective information, like a global database. However, you will be able to search and review the channels you want, and if your favorite channel is legally available as a stream in the IPTV playlist.
 
-Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://github.com/iptv-org/iptv/issues/7415), and [#7509](https://github.com/iptv-org/iptv/discussions/7509).
+Note: You can consult the information of the channels by country, write in the search engine as `country:UK` (for UK, per example).
+
+Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://github.com/iptv-org/iptv/issues/7415), [#7509](https://github.com/iptv-org/iptv/discussions/7509) and [#10242](https://github.com/iptv-org/iptv/discussions/10242).
 
 ### Why don't we show NSFW channels in most playlists?
 NSFW content are not suitable for the main public. To avoid issues with these kind of programmings, we've created a separate NSFW playlist available for everyone. If you want to see this type of channel, please use the NSFW playlist.
