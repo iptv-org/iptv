@@ -22,7 +22,7 @@ https://broadcasttr.com:446/altastv/bant1/index.m3u8
 https://live.al-zahratv.com/live/playlist.m3u8
 #EXTINF:-1 tvg-id="AnadoluAgency.tr" status="online",AA Live (720p) [Not 24/7]
 http://mtulqxgomrllive.mediatriple.net/mtulqxgomrllive/broadcast_59f9c0c785b88.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ArasTV.tr" status="blocked",ARAS TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="ArasTV.tr" status="online",ARAS TV (576p) [Not 24/7]
 http://1.rtmp.org/tv217/yayin.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ASTV.tr" status="online",Bursa AS TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/astv/bant1/playlist.m3u8
@@ -101,11 +101,11 @@ https://waw2.artiyerelmedya.net/grt/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="GSTV.tr" status="blocked",GSTV [Geo-blocked]
 https://owifavo5.rocketcdn.com/gstv/gstv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="online",Guney TV Tarsus (270p)
-http://stream2.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="online",Tarsus Güney TV (270p)
-http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="online",Guney TV Tarsus (270p)
 https://waw1.artiyerelmedya.net/guneytv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="error",Guney TV Tarsus (270p)
+http://stream2.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="error",Tarsus Güney TV (270p)
+http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Haber61TV.tr" status="online",Haber61 TV (720p) [Not 24/7]
 https://cdn-haber61tv.yayin.com.tr/haber61tv/smil:haber61tv.smil/index.m3u8
 #EXTINF:-1 tvg-id="Haber61TV.tr" status="online",Haber61 TV (720p) [Not 24/7]
@@ -197,17 +197,17 @@ http://yerelmedya.tv:1935/mercantv/bant1/playlist.m3u8
 https://waw2.artiyerelmedya.net/mercantv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="MiskFM.tr" status="online",Misk FM (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCrvsAwtrxZ0q31yU9JEBdWA/live
-#EXTINF:-1 tvg-id="NaturalTV.tr" status="online",Natural TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NaturalTV.tr" status="error",Natural TV (720p) [Not 24/7]
 http://broadcasttr.com:1935/naturaltv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="NaturalTV.tr" status="online",Natural TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NaturalTV.tr" status="error",Natural TV (720p) [Not 24/7]
 https://broadcasttr.com:446/naturaltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="NTVSpor.tr" status="timeout",NTV Spor
 http://46.4.193.238:8484/hls/ntvspor/playlist.m3u8
-#EXTINF:-1 tvg-id="OlayTurkTV.tr" status="online",OlayTürk Kayseri (720p) [Geo-blocked]
-http://waw1.artiyerelmedya.net:1935/olayturk/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="OlayTurkTV.tr" status="online",Olay Türk TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/olayturk/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="OncuTV.tr" status="error",Öncü TV (1024p) [Not 24/7]
+#EXTINF:-1 tvg-id="OlayTurkTV.tr" status="error",OlayTürk Kayseri (720p) [Geo-blocked]
+http://waw1.artiyerelmedya.net:1935/olayturk/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="OncuTV.tr" status="online",Öncü TV (1024p) [Not 24/7]
 https://broadcasttr.com:446/oncurtv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="OnMedyaTV.tr" status="timeout",ON Medya Haber (720p) [Geo-blocked]
 http://live.arkumedia.com:1935/marmaratv/marmaratv/playlist.m3u8
@@ -240,10 +240,10 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=http://www.dailymotion.com/vide
 https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="TempoTV.tr" status="online",Tempo TV
 https://waw2.artiyerelmedya.net/tempotv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TGRTBelgesel.tr" status="online",TGRT Belgesel TV (576p) [Not 24/7]
-https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TGRTBelgesel.tr" status="online",TGRT Belgesel TV (576p)
 https://tv.ensonhaber.com/tv/tr/tgrtbelgesel/index.m3u8
+#EXTINF:-1 tvg-id="TGRTBelgesel.tr" status="online",TGRT Belgesel TV (576p) [Not 24/7]
+https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe462afc6a0e.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TGRTEU.tr" status="online",TGRT EU (576p)
 https://tv.ensonhaber.com/tv/tr/tgrteu/index.m3u8
 #EXTINF:-1 tvg-id="TGRTHaber.tr" status="online",TGRT Haber (360p) [Not 24/7]
@@ -304,7 +304,7 @@ http://stream.taksimbilisim.com:1935/tv52/smil:tv52.smil/playlist.m3u8
 https://broadcasttr.com:446/tv52/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="TV100.tr" status="online",tv100 (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
-#EXTINF:-1 tvg-id="TVDen.tr" status="online",TV Den (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVDen.tr" status="error",TV Den (576p) [Not 24/7]
 http://canli.tvden.com.tr/hls/live.m3u8
 #EXTINF:-1 tvg-id="TVEm.tr" status="online",TV Em (486p)
 http://cdn-tvem.yayin.com.tr/TVEM/TVEM/playlist.m3u8
