@@ -154,7 +154,7 @@ Based on [#5236](https://github.com/iptv-org/iptv/pull/5236), [#5401](https://gi
 ### Is it possible to add streams from Youtube, Dailymotion or Twitch?
 Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content. This does not work with all streams, so it will give an "error" status if this stream is not freely accessible.
 
-The scheme for adding a YouTube stream is like this:
+As an example, here's the scheme for adding a YouTube stream:
 
 ```
 http://streamlink.example.org/iptv-query?streaming-ip=https://www.youtube.com/c/MyChannel/live
