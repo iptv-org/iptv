@@ -55,9 +55,11 @@ Note: For storage space reasons, the programming guide is only available in gz c
 Based on [#1797](https://github.com/iptv-org/iptv/issues/1797), [#2438](https://github.com/iptv-org/iptv/issues/2438), [#4537](https://github.com/iptv-org/iptv/discussions/4537) and [#7043](https://github.com/iptv-org/iptv/discussions/7043).
 
 ### Is it possible to view channels directly from the main website?
-No, you will only see information about active and inactive transmissions of channels.
+No. In our website, you will see an extensive list of channels and their respective information, like a global database. In this case, you will only be able to search and review the channels you want. If your favorite channel is legally available as an indexed stream in the IPTV playlist, there's a "Streams" option that will be available on the right side of the channel, so that you can have the link to watch it. Else, you can make an issue to ask for it. Please respect the [contribution guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md) before doing so.
 
-Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://github.com/iptv-org/iptv/issues/7415), and [#7509](https://github.com/iptv-org/iptv/discussions/7509).
+Note: You can consult the information of the channels by country, write in the search box as `country:UK` (for UK, per example).
+
+Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://github.com/iptv-org/iptv/issues/7415), [#7509](https://github.com/iptv-org/iptv/discussions/7509) and [#10242](https://github.com/iptv-org/iptv/discussions/10242).
 
 ### Why don't we show NSFW channels in most playlists?
 NSFW content are not suitable for the main public. To avoid issues with these kind of programmings, we've created a separate NSFW playlist available for everyone. If you want to see this type of channel, please use the NSFW playlist.
@@ -152,7 +154,13 @@ Based on [#5236](https://github.com/iptv-org/iptv/pull/5236), [#5401](https://gi
 ### Is it possible to add streams from Youtube, Dailymotion or Twitch?
 Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content. This does not work with all streams, so it will give an "error" status if this stream is not freely accessible.
 
-Based on [#3017](https://github.com/iptv-org/iptv/discussions/3017) (about geo-blocked channel), [#4112](https://github.com/iptv-org/iptv/discussions/4412) and [#4456](https://github.com/iptv-org/iptv/discussions/4456).
+As an example, here's the scheme for adding a YouTube stream:
+
+```
+http://streamlink.example.org/iptv-query?streaming-ip=https://www.youtube.com/c/MyChannel/live
+```
+
+Based on [#3017](https://github.com/iptv-org/iptv/discussions/3017) (about geo-blocked channel), [#4112](https://github.com/iptv-org/iptv/discussions/4412), [#4456](https://github.com/iptv-org/iptv/discussions/4456) and [#10246](https://github.com/iptv-org/iptv/discussions/10246).
 
 ### Is it possible to add audio-only streams, like FM radio?
 No. Exceptions are the visual radios, in which a video and audio are shown at the same time. A WIP repository made by one member of iptv-org, [LaneSh4d0w](https://github.com/LaneSh4d0w) aims to collect radio streams, on the [IPRD](https://github.com/LaneSh4d0w/IPRD) repository.
