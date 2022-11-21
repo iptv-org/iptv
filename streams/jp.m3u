@@ -165,14 +165,14 @@ http://cdn.us195.jpnettv.live:1935/jptv/nhkbs1_540/playlist.m3u8
 https://cdn.us195.jpnettv.live/jptv/nhkbs1_540/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKBSPremium.jp" status="online",NHK BSP (720p)
 http://cdnv148.cloudrsst.com:1935/jptv/bspremium_720/playlist.m3u8
-#EXTINF:-1 tvg-id="NHKBSPremium.jp" status="online",NHK BSP (540p)
-http://cdnv148.cloudrsst.com:1935/jptv/bspremium_540/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKBSPremium.jp" status="online",NHK BSP (480p)
 http://redlabmcdn.s.llnwi.net/nv02/bs02hd/index.m3u8
 #EXTINF:-1 tvg-id="NHKBSPremium.jp" status="blocked",NHK BSP (720p)
 http://cdn.us195.jpnettv.live:1935/jptv/bspremium_720/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKBSPremium.jp" status="blocked",NHK BSP (540p)
 http://cdn.us195.jpnettv.live:1935/jptv/bspremium_540/playlist.m3u8
+#EXTINF:-1 tvg-id="NHKBSPremium.jp" status="error",NHK BSP (540p)
+http://cdnv148.cloudrsst.com:1935/jptv/bspremium_540/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKChinese.jp" status="blocked",NHK Chinese Vision (720p)
 https://nhkw-zh-hlscomp.akamaized.net/8thz5iufork8wjip/playlist.m3u8
 #EXTINF:-1 tvg-id="NHKChinese.jp" status="blocked",NHK Chinese Vision (720p)
@@ -203,12 +203,12 @@ https://ntv3.mov3.co/hls/ntv.m3u8
 https://cdnv148.cloudrsst.com/jptv/japan_tv_G_540/playlist.m3u8
 #EXTINF:-1 tvg-id="NitteleGPlus.jp" status="blocked",Nittele G+ Sports & News (540p)
 https://cdn.us195.jpnettv.live/jptv/japan_tv_G_540/playlist.m3u8
-#EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCuTAXTexrhetbOe3zgskJBQ/live
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
 https://n24-cdn-live.ntv.co.jp/ch01/index.m3u8
 #EXTINF:-1 tvg-id="NTVNews24.jp" status="online",NTV News24 (480p)
 https://n24-cdn-live.ntv.co.jp/ch02/index.m3u8
+#EXTINF:-1 tvg-id="NTVNews24.jp" status="timeout",NTV News24 (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCuTAXTexrhetbOe3zgskJBQ/live
 #EXTINF:-1 tvg-id="ShopChannel.jp" status="online",Shop Channel (1080p) [Not 24/7]
 https://stream3.shopch.jp/HLS/master.m3u8
 #EXTINF:-1 tvg-id="SkyA.jp" status="online",Sky A (540p) [Not 24/7]
