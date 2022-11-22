@@ -28,9 +28,9 @@ http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
 https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
-https://amdlive-ch03-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ArirangTV.kr" status="error",Arirang (720p)
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
+https://amdlive-ch03-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AsiaN.kr" status="error",AsiaN (1080p)
 https://allanf181.github.io/adaptive-streams/streams/kr/AsiaN.m3u8
 #EXTINF:-1 tvg-id="AsiaN.kr" status="error",AsiaN (1080p)
@@ -43,11 +43,11 @@ https://allanf181.github.io/adaptive-streams/streams/kr/BadukTV.m3u8
 https://kr-streams.onrender.com/scraper?channel=289
 #EXTINF:-1 tvg-id="BBSTV.kr" status="online",BBS Buddhist Broadcasting (1080p)
 http://bbstv.clouducs.com:1935/bbstv-live/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="BilliardsTV.kr" status="online",Billiards TV (540p)
+http://mytv.dothome.co.kr/ch/catv/252.php
 #EXTINF:-1 tvg-id="BilliardsTV.kr" status="error",Billiards TV (1080p)
 https://kr-streams.onrender.com/scraper?channel=236
-#EXTINF:-1 tvg-id="BilliardsTV.kr" status="error",Billiards TV (540p)
-http://mytv.dothome.co.kr/ch/catv/252.php
-#EXTINF:-1 tvg-id="BravoKids.kr" status="error",Bravo Kids (1080p)
+#EXTINF:-1 tvg-id="BravoKids.kr" status="timeout",Bravo Kids (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCu6mog947IWOXL23AzKlImw/live
 #EXTINF:-1 tvg-id="BTNTV.kr" status="online",BTN TV (1080p)
 http://btn.nowcdn.co.kr/btn/btnlive2m/playlist.m3u8
@@ -83,7 +83,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/ChannelSeezn.m3u8
 https://kr-streams.onrender.com/scraper?channel=470
 #EXTINF:-1 tvg-id="ChuncheonMBCTV.kr" status="online",MBC Chuncheon (춘천 MBC) (480p) [Not 24/7]
 https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="ChungbukMBCTV.kr" status="blocked",MBC Chungbuk (MBC 충북) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ChungbukMBCTV.kr" status="online",MBC Chungbuk (MBC 충북) (720p) [Not 24/7]
 http://211.33.246.4:32954/cj_live/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="ChunghwaTV.kr" status="online",Chunghwa TV (540p)
 http://mytv.dothome.co.kr/ch/catv/228.php
@@ -93,7 +93,7 @@ https://kr-streams.onrender.com/scraper?channel=287
 http://mytv.dothome.co.kr/ch/catv/231.php
 #EXTINF:-1 tvg-id="CinemaHeaven.kr" status="error",Cinema Heaven (1080p)
 https://kr-streams.onrender.com/scraper?channel=821
-#EXTINF:-1 tvg-id="CJBTV.kr" status="blocked",SBS CJB (CJB청주방송) (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="CJBTV.kr" status="online",SBS CJB (CJB청주방송) (540p) [Not 24/7]
 http://1.222.207.80:1935/live/cjbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="CJOnStyle.kr" status="online",CJ OnStyle (540p)
 https://live-ch1.cjonstyle.net/cjmalllive/stream2/playlist.m3u8
@@ -139,10 +139,10 @@ http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index_1.m3u8
 http://mytv.dothome.co.kr/ch/catv/250.php
 #EXTINF:-1 tvg-id="FTV.kr" status="error",FTV (1080p)
 https://kr-streams.onrender.com/scraper?channel=239
-#EXTINF:-1 tvg-id="GCN.kr" status="online",GCN24 Korean (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCqGxkgVnPc7arUR7MdCi99g/live
 #EXTINF:-1 tvg-id="GCN.kr" status="online",GCN24 Korean (480p) [Not 24/7]
 http://liveko24-manminglobal3.ktcdn.co.kr/liveko24/gcnko_high/playlist.m3u8
+#EXTINF:-1 tvg-id="GCN.kr" status="timeout",GCN24 Korean (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCqGxkgVnPc7arUR7MdCi99g/live
 #EXTINF:-1 tvg-id="GolfPBA.kr" status="blocked",Golf & PBA (540p)
 http://mytv.dothome.co.kr/ch/catv/25.php
 #EXTINF:-1 tvg-id="GolfPBA.kr" status="error",Golf & PBA (1080p)
@@ -177,25 +177,25 @@ http://mytv.dothome.co.kr/ch/catv/256.php
 https://kr-streams.onrender.com/scraper?channel=818
 #EXTINF:-1 tvg-id="JejuMBCTV.kr" status="online",MBC Jeju (제주 MBC) (352p) [Not 24/7]
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
-#EXTINF:-1 tvg-id="JIBSTV.kr" status="timeout",SBS JIBS (JIBS SBS) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JIBSTV.kr" status="online",SBS JIBS (JIBS SBS) (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
 #EXTINF:-1 tvg-id="JTBC2.kr" status="online",JTBC2 (540p)
 http://mytv.dothome.co.kr/ch/catv/282.php
 #EXTINF:-1 tvg-id="JTBC2.kr" status="error",JTBC2 (1080p)
 https://kr-streams.onrender.com/scraper?channel=455
-#EXTINF:-1 tvg-id="JTBC4.kr" status="online",JTBC4 (1080p)
-http://mytv.dothome.co.kr/ch/catv/283.php
 #EXTINF:-1 tvg-id="JTBC4.kr" status="error",JTBC4 (1080p)
 https://kr-streams.onrender.com/scraper?channel=523
+#EXTINF:-1 tvg-id="JTBC4.kr" status="error",JTBC4 (1080p)
+http://mytv.dothome.co.kr/ch/catv/283.php
 #EXTINF:-1 tvg-id="JTBC.kr" status="online",JTBC (540p)
 http://mytv.dothome.co.kr/ch/catv/211.php
 #EXTINF:-1 tvg-id="JTBC.kr" status="error",JTBC (1080p) [Not 24/7]
 https://kr-streams.onrender.com/scraper?channel=273
-#EXTINF:-1 tvg-id="JTBCGolf.kr" status="online",JTBC Golf (540p)
-http://mytv.dothome.co.kr/ch/catv/248.php
 #EXTINF:-1 tvg-id="JTBCGolf.kr" status="error",JTBC Golf (1080p)
 https://kr-streams.onrender.com/scraper?channel=299
-#EXTINF:-1 tvg-id="JTBCGolfSports.kr" status="online",JTBC Golf & Sports (1080p)
+#EXTINF:-1 tvg-id="JTBCGolf.kr" status="error",JTBC Golf (540p)
+http://mytv.dothome.co.kr/ch/catv/248.php
+#EXTINF:-1 tvg-id="JTBCGolfSports.kr" status="error",JTBC Golf & Sports (1080p)
 http://mytv.dothome.co.kr/ch/catv/249.php
 #EXTINF:-1 tvg-id="JTV.kr" status="online",SBS JTV (JTV전주방송) (406p) [Not 24/7]
 https://61ff3340258d2.streamlock.net/jtv_live/myStream/playlist.m3u8
@@ -239,10 +239,10 @@ https://allanf181.github.io/adaptive-streams/streams/kr/KLeague1.m3u8
 https://allanf181.github.io/adaptive-streams/streams/kr/KLeague2.m3u8
 #EXTINF:-1 tvg-id="KLeague3.kr" status="error",K League 3 (1080p)
 https://allanf181.github.io/adaptive-streams/streams/kr/KLeague3.m3u8
+#EXTINF:-1 tvg-id="KNNTV.kr" status="online",SBS KNN (KNN 부산경남대표방송) (1080p)
+http://220.95.92.160:9981/stream/channelid/1445999617
 #EXTINF:-1 tvg-id="KNNTV.kr" status="online",SBS KNN (KNN 부산경남대표방송) (450p) [Not 24/7]
 http://211.220.195.200:1935/live/mp4:KnnTV.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="KNNTV.kr" status="error",SBS KNN (KNN 부산경남대표방송) (1080p)
-http://220.95.92.160:9981/stream/channelid/1445999617
 #EXTINF:-1 tvg-id="KoreaEconomyTV.kr" status="error",Korea Economy TV (1080p)
 https://allanf181.github.io/adaptive-streams/streams/kr/KoreaEconomyTV.m3u8
 #EXTINF:-1 tvg-id="KoreaEconomyTV.kr" status="error",Korea Economy TV (1080p)
@@ -261,7 +261,7 @@ http://mytv.dothome.co.kr/ch/catv/26.php
 https://624a79c87201d.streamlock.net/MBCTV/TV1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="MBCNet.kr" status="blocked",MBC Net (480p) [Geo-blocked]
 http://mytv.dothome.co.kr/ch/catv/28.php
-#EXTINF:-1 tvg-id="MBCTV.kr" status="online",MBC (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MBCTV.kr" status="error",MBC (1080p) [Not 24/7]
 http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
 #EXTINF:-1 tvg-id="MBN.kr" status="error",MBN (1080p)
 https://allanf181.github.io/adaptive-streams/streams/kr/MBN.m3u8
@@ -343,7 +343,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/ProfessionalBaseball4.m3
 https://allanf181.github.io/adaptive-streams/streams/kr/ProfessionalBaseball5.m3u8
 #EXTINF:-1 tvg-id="PublicHomeShopping.kr" status="error",Public Home Shopping (1080p)
 https://kr-streams.onrender.com/scraper?channel=921
-#EXTINF:-1 tvg-id="SBSFL.kr" status="error",SBS F!L (540p)
+#EXTINF:-1 tvg-id="SBSFL.kr" status="online",SBS F!L (540p)
 http://mytv.dothome.co.kr/ch/catv/284.php
 #EXTINF:-1 tvg-id="SBSGolf.kr" status="error",SBS Golf (1080p)
 https://allanf181.github.io/adaptive-streams/streams/kr/SBSGolf.m3u8
@@ -355,7 +355,7 @@ https://allanf181.github.io/adaptive-streams/streams/kr/SBSTV.m3u8
 https://nv-streams.onrender.com/scraper?channel=3077128
 #EXTINF:-1 tvg-id="ScreenGolfzon.kr" status="error",Screen Golfzon (1080p)
 https://allanf181.github.io/adaptive-streams/streams/kr/ScreenGolfzon.m3u8
-#EXTINF:-1 tvg-id="SEN.kr" status="online",SEN Seoul Economy TV (1080p)
+#EXTINF:-1 tvg-id="SEN.kr" status="timeout",SEN Seoul Economy TV (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC3p-0EWA8OXko2EUDUXAy5w/live
 #EXTINF:-1 tvg-id="ShinsegaeTVShopping.kr" status="online",Shinsegae Shopping TV (720p)
 https://liveout.catenoid.net/live-02-shinsegaetvshopping/shinsegaetvshopping_720p/playlist.m3u8
@@ -399,10 +399,10 @@ http://onair.cdn.tvchosun.com/origin1/_definst_/tvchosun_s1/playlist.m3u8
 http://mytv.dothome.co.kr/ch/catv/221.php
 #EXTINF:-1 tvg-id="tvN.kr" status="error",tvN (1080p)
 https://kr-streams.onrender.com/scraper?channel=280
+#EXTINF:-1 tvg-id="tvNDrama.kr" status="online",tvN DRAMA (540p)
+http://mytv.dothome.co.kr/ch/catv/226.php
 #EXTINF:-1 tvg-id="tvNDrama.kr" status="error",tvN DRAMA (1080p)
 https://kr-streams.onrender.com/scraper?channel=282
-#EXTINF:-1 tvg-id="tvNDrama.kr" status="error",tvN DRAMA (540p)
-http://mytv.dothome.co.kr/ch/catv/226.php
 #EXTINF:-1 tvg-id="tvNShow.kr" status="online",tvN SHOW (540p)
 http://mytv.dothome.co.kr/ch/catv/222.php
 #EXTINF:-1 tvg-id="tvNShow.kr" status="error",tvN SHOW (1080p)
@@ -457,7 +457,7 @@ https://amdlive-ch02-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/pl
 http://mobliestream.c3tv.com:1935/live/goodtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",JCN TV
 https://jcnonair-1108.acs.wecandeo.com/ms/3162/1108/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",KBS News
+#EXTINF:-1 tvg-id="" status="timeout",KBS News
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcQTRi69dsVYHN3exePtZ1A/live
 #EXTINF:-1 tvg-id="" status="online",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
@@ -467,7 +467,7 @@ http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index.m3u8
 http://live.kytv.co.kr:8080/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="error",KT Alpha Shopping (1080p)
 https://kr-streams.onrender.com/scraper?channel=438
-#EXTINF:-1 tvg-id="" status="error",tvN Asia (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="" status="online",tvN Asia (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",tvN Movies (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h21/index.m3u8
