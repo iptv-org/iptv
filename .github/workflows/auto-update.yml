@@ -114,7 +114,7 @@ jobs:
           git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT && github.ref == 'sasegcom/iptv/streams' }}
         with:
           branch: gh-pages
           folder: .gh-pages
@@ -125,7 +125,7 @@ jobs:
           clean: false
       - name: Deploy to sasegcom/api
         uses: JamesIves/github-pages-deploy-action@v4.2.5
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT && github.ref == 'sasegcom/iptv/streams' }}
         with:
           repository-name: sasegcom/api
           branch: gh-pages
@@ -136,7 +136,7 @@ jobs:
           commit-message: '[Bot] Deploy to sasegcom/api'
           clean: false
       - uses: repo-sync/pull-request@v2
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT && github.ref == 'sasegcom/iptv/streams' }}
         id: pull-request
         with:
           github_token: ${{ steps.create-app-token.outputs.token }}
@@ -148,7 +148,7 @@ jobs:
 
             [1]: https://github.com/sasegcom/iptv/actions/runs/${{ github.run_id }}
       - uses: juliangruber/merge-pull-request-action@v1
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        if: ${{ !env.ACT && github.ref == 'sasegcom/iptv/streams' }}
         with:
           github-token: ${{ secrets.PAT }}
           number: ${{ steps.pull-request.outputs.pr_number }}
