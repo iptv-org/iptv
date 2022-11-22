@@ -123,17 +123,17 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to GitHub Pages'
           clean: false
-      - name: Deploy to iptv-org/api
+      - name: Deploy to sasegcom/api
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
-          repository-name: iptv-org/api
+          repository-name: sasegcom/api
           branch: gh-pages
           folder: .api
           token: ${{ steps.create-app-token.outputs.token }}
           git-config-name: iptv-bot[bot]
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit-message: '[Bot] Deploy to iptv-org/api'
+          commit-message: '[Bot] Deploy to sasegcom/api'
           clean: false
       - uses: repo-sync/pull-request@v2
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
@@ -146,7 +146,7 @@ jobs:
           pr_body: |
             This pull request is created by [auto-update][1] workflow.
 
-            [1]: https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}
+            [1]: https://github.com/sasegcom/iptv/actions/runs/${{ github.run_id }}
       - uses: juliangruber/merge-pull-request-action@v1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
