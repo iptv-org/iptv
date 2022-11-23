@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="7ALimoges.fr" status="online",7ALimoges (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCdFv_ZWQ3Xk_NfRiaK-ryGg/live
-#EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="error",Alpe d’Huez TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="online",Alpe d’Huez TV (720p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
 #EXTINF:-1 tvg-id="AntenneReunion.fr" status="online",Antenne Réunion (720p) [Not 24/7]
 https://live-antenne-reunion.zeop.tv/live/c3eds/antreunihd/hls_fta/antreunihd.m3u8?location=ZEOP01
@@ -25,7 +25,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CNE
 https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
-#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="online",El Heddaf TV [Geo-blocked]
+#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="error",El Heddaf TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="EuronewsAlbania.al" status="online",Euronews Albania (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
@@ -91,7 +91,7 @@ https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="online",M6 Music (720p)
 http://190.2.155.162:8080/m6music/mpegts
-#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
