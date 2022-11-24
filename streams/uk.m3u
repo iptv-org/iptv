@@ -90,13 +90,13 @@ https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_parlia
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
 https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_dash_live.mpd
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_dash_live_http.mpd
-#EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_cloudfrontms_live.mpd
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_cloudfrontms_live_http.mpd
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/t=3840/v=pv14/b=5070016/main.m3u8
+#EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (720p)
+https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_dash_live_http.mpd
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (540p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_hls_live.m3u8
 #EXTINF:-1 tvg-id="BBCPersian.uk" status="online",BBC Persian (540p)
@@ -198,7 +198,7 @@ https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
 https://a.jsrdn.com/r-373576a3/publish/22679_24MrQma9TX/index.m3u8
 #EXTINF:-1 tvg-id="ChannelS.uk" status="online",Channel S (576p) [Not 24/7]
 https://ap02.iqplay.tv:8082/iqb8002/ch4n3ls/playlist.m3u8
-#EXTINF:-1 tvg-id="ChelseaTV.uk" status="online",Chelsea TV (576p)
+#EXTINF:-1 tvg-id="ChelseaTV.uk" status="timeout",Chelsea TV (576p)
 http://c0.cdn.trinity-tv.net/stream/hujuv8xpr4gdugis2szd4rqrvpzip8iuwn2jwpt68wmvpmdz79qime8idwrxga95rnghp64hfimevyvrp6n7p3c52yg3rfsuhxe9u9az35ti8te625sxerfwaxr2cbefyau4tmfa4nwqvca6ckmtwv2=.m3u8
 #EXTINF:-1 tvg-id="Cruise1stTV.uk" status="blocked",Cruise1st TV (396p) [Geo-blocked]
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/cruise_tv/hls_video/index.m3u8
@@ -343,11 +343,11 @@ https://vod2t.xpanded.com/x3tv/index_wlan.m3u8
 #EXTINF:-1 tvg-id="XpandedTV.uk" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV (1280p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://vod2t.xpanded.com/x3tvhq/index_wlan.m3u8
-#EXTINF:-1 tvg-id="XYMax.uk" status="blocked",XY Max
+#EXTINF:-1 tvg-id="XYMax.uk" status="timeout",XY Max
 http://95.87.227.29:8080/XYMAX_FOR_PLATFORM/index.m3u8
-#EXTINF:-1 tvg-id="XYMix.uk" status="blocked",XY Mix
+#EXTINF:-1 tvg-id="XYMix.uk" status="timeout",XY Mix
 http://95.87.227.29:8080/XYMIX_FOR_PLATFORM/index.m3u8
-#EXTINF:-1 tvg-id="XYPlus.uk" status="blocked",XY Plus
+#EXTINF:-1 tvg-id="XYPlus.uk" status="timeout",XY Plus
 http://95.87.227.29:8080/XYPLUS_FOR_PLATFORM/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Afrobeats (1080p)
 https://stream.ecable.tv/afrobeats/index.m3u8
@@ -385,7 +385,7 @@ https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_wa
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_scotland_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="" status="blocked",BBC Scotland HD (720p) [Geo-blocked]
 https://vs-hls-pushb-uk-live.akamaized.net/content/x=3/v=pv14/b=5070016/t=3840/i=urn:bbc:pips:service:bbc_scotland_hd/main.m3u8
-#EXTINF:-1 tvg-id="" status="error",BBC Two HD (720p)
+#EXTINF:-1 tvg-id="" status="online",BBC Two HD (720p)
 http://w4.12all.tv:4000/play/bbc2/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",BBC Two HD (720p) [Geo-blocked]
 https://vs-cmaf-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_two_hd/iptv_hd_abr_v1.mpd
