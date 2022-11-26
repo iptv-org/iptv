@@ -30,7 +30,7 @@ http://pershij-dlovij.cdn-02.cosmonova.net.ua/hls/pershij-dlovij_ua_hi/index.m3u
 http://pershij-dlovij.cdn-02.cosmonova.net.ua/hls/pershij-dlovij_ua_mid/index.m3u8
 #EXTINF:-1 tvg-id="GIT.ua" status="online",GIT (720p)
 https://stream.uagit.tv/gittv.m3u8
-#EXTINF:-1 tvg-id="Glas.ua" status="online",Глас (576p)
+#EXTINF:-1 tvg-id="Glas.ua" status="error",Глас (576p)
 http://85.238.112.69:8811/hls_sec/239.0.4.18-.m3u8
 #EXTINF:-1 tvg-id="HersonPlyus.ua" status="timeout",Херсон Плюс (576p)
 http://46.175.163.130/ks_plus/index.m3u8
@@ -54,7 +54,7 @@ http://93.78.206.172:8080/stream3/stream.m3u8
 http://w4.mostvideo.tv/tv/ch1.m3u8
 #EXTINF:-1 tvg-id="Nadiya.ua" status="online",Надия/Новый канал (576p) [Not 24/7]
 http://nadiya.home-net.com.ua/mob/mystream.m3u8
-#EXTINF:-1 tvg-id="NLOTV.ua" status="blocked",НЛО ТВ (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NLOTV.ua" status="error",НЛО ТВ (576p) [Geo-blocked]
 https://xx001.vivat.live/t-0301.0f6f.d/sd/00047/2m/index.m3u8
 #EXTINF:-1 tvg-id="NTN.ua" status="timeout",НТН (576p)
 https://edge2.iptv.macc.com.ua/img/ntn_3/index.m3u8
@@ -79,11 +79,6 @@ http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCH9H_b9oJtSHBovh94yB5HA/live
 #EXTINF:-1 tvg-id="Pryamyy.ua" status="online",Прямий (576p)
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
-#EXTINF:-1 tvg-id="Pryamyy.ua" status="online",Прямий (576p)
-http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_mid/index.m3u8
-#EXTINF:-1 tvg-id="Pryamyy.ua" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Прямий (576p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
-http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_low/index.m3u8
 #EXTINF:-1 tvg-id="Renome.ua" status="online",Renome (576p)
 http://85.238.112.40:8810/hls_sec/online/list-renome.m3u8
 #EXTINF:-1 tvg-id="Skrypinua.ua" status="online",Skrypin.ua (1080p) [Not 24/7]
@@ -96,9 +91,9 @@ http://80.91.177.102:1935/live/live1/playlist.m3u8
 http://tv.tv-project.com:1935/live/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKAleks.ua" status="online",ТРК Алекс (576p)
 http://46.46.112.223/live/livestream1.m3u8
-#EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
+#EXTINF:-1 tvg-id="TVA.ua" status="error",ТВА (Чернiвцi) (576p)
 http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVA.ua" status="online",ТВА (Чернiвцi) (576p)
+#EXTINF:-1 tvg-id="TVA.ua" status="error",ТВА (Чернiвцi) (576p)
 http://rtsp.cdn.ua/tva.ua_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVDom.ua" status="timeout",ТВ Дом
 http://46.149.48.21:1234
@@ -114,9 +109,9 @@ http://194.50.51.34/playlist.m3u8
 https://stream.ntktv.ua/s/ntk/ntk.m3u8
 #EXTINF:-1 tvg-id="" status="online",Орбіта ТВ (360p) [Not 24/7]
 http://ftp.orbita.dn.ua/hls/orbita.m3u8
-#EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Репортер (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Репортер (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/31chod/31chod/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ЯТБ (576p)
 http://46.175.163.130/live_yatb/playlist.m3u8
