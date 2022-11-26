@@ -17,10 +17,10 @@ http://93.157.62.180/OraNews/index.m3u8
 https://deb10stream.duckdns.org/hls/stream.m3u8
 #EXTINF:-1 tvg-id="SyriTV.al" status="online",Syri TV (720p) [Not 24/7]
 http://live.syri.tv:6969/live/syriblue/hd/23.ts
-#EXTINF:-1 tvg-id="TopNews.al" status="online",Top News (720p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x6inuzo
 #EXTINF:-1 tvg-id="TopNews.al" status="timeout",Top News
 http://93.157.62.180/TopNews/index.m3u8
+#EXTINF:-1 tvg-id="TopNews.al" status="error",Top News (720p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x6inuzo
 #EXTINF:-1 tvg-id="TV7Albania.al" status="online",TV 7 Albania (540p) [Not 24/7]
 http://media.az-mediaserver.com:1935/7064/7064/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Albania.al" status="online",7 HD (540p) [Not 24/7]
@@ -41,7 +41,7 @@ http://46.99.146.236/0.m3u8
 http://32.shqiptv.org/korca/albplus/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",RTV Arberia Musik
 http://rtvarberia4.flashmediacast.com:1935/RtvArberia4/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Shqiponja (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Shqiponja (720p) [Not 24/7]
 http://ott.iptvshqipott.com:8080/live/shqiponja/tv/236.m3u8
 #EXTINF:-1 tvg-id="" status="online",TopEstrada TV
 http://live.topestrada.com/live/topestrada/playlist.m3u8
