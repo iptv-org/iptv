@@ -18,7 +18,7 @@ https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_alba/m
 #EXTINF:-1 tvg-id="BBCAlba.uk" status="blocked",BBC Alba (540p) [Geo-blocked]
 https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_alba/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2_http.mpd
+https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
@@ -28,7 +28,7 @@ https://vs-cmaf-pushb-ww.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_ar
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2_http.mpd
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (720p)
 https://vs-hls-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8
 #EXTINF:-1 tvg-id="BBCArabic.uk" status="online",BBC Arabic (540p)
@@ -180,10 +180,10 @@ http://ott-cdn.ucom.am/s24/index.m3u8
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,boxhits-alldev.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/boxhits/
 #EXTINF:-1 tvg-id="BoxHits.uk" status="timeout",Box Hits (576p) [Geo-blocked]
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,boxhits-alldev.m3u8?yo.up=https://boxtv.secure.footprint.net/boxhits/
-#EXTINF:-1 tvg-id="BritAsiaTV.uk" status="online",Brit Asia Live (US Eastern) (360p) [Not 24/7]
-https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
 #EXTINF:-1 tvg-id="BritAsiaTV.uk" status="online",Brit Asia Live (US Pacific) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
+#EXTINF:-1 tvg-id="BritAsiaTV.uk" status="online",Brit Asia Live (US Eastern) (360p) [Not 24/7]
+https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
 #EXTINF:-1 tvg-id="BritishMuslimTV.uk" status="online",British Muslim TV (576p) [Not 24/7]
 https://api.visionip.tv/live/ASHTTP/visiontvuk-international-britishmuslimtv-hsslive-25f-16x9-MB/playlist.m3u8
 #EXTINF:-1 tvg-id="CBBC.uk" status="blocked",CBBC (540p) [Geo-blocked]
@@ -204,7 +204,7 @@ https://ap02.iqplay.tv:8082/iqb8002/ch4n3ls/playlist.m3u8
 http://c0.cdn.trinity-tv.net/stream/hujuv8xpr4gdugis2szd4rqrvpzip8iuwn2jwpt68wmvpmdz79qime8idwrxga95rnghp64hfimevyvrp6n7p3c52yg3rfsuhxe9u9az35ti8te625sxerfwaxr2cbefyau4tmfa4nwqvca6ckmtwv2=.m3u8
 #EXTINF:-1 tvg-id="Cruise1stTV.uk" status="blocked",Cruise1st TV (396p) [Geo-blocked]
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/cruise_tv/hls_video/index.m3u8
-#EXTINF:-1 tvg-id="Davejavu.uk" status="blocked",Dave ju vu (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Davejavu.uk" status="online",Dave ju vu (576p) [Geo-blocked]
 https://cdnuk001.broadcastcdn.net/KUK-DAVEJAVU/index.m3u8
 #EXTINF:-1 tvg-id="DeenTV.uk" status="online",Deen TV (576p) [Not 24/7]
 https://ap02.iqplay.tv:8082/iqb8002/d33ntv/playlist.m3u8
@@ -251,7 +251,7 @@ https://cdnuk001.broadcastcdn.net/KUK-ITV2/playlist.m3u8
 http://93.190.139.35:8278/streams/d/itv2_antik/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV3.uk" status="online",ITV3 (720p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV3/playlist.m3u8
-#EXTINF:-1 tvg-id="ITV4.uk" status="online",ITV4 (576p)
+#EXTINF:-1 tvg-id="ITV4.uk" status="blocked",ITV4 (576p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV4/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV.uk" status="online",ITV1 (1080p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV-107/playlist.m3u8
@@ -357,9 +357,9 @@ https://vod2t.xpanded.com/x3tv/index_wlan.m3u8
 #EXTINF:-1 tvg-id="XpandedTV.uk" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV (1280p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://vod2t.xpanded.com/x3tvhq/index_wlan.m3u8
-#EXTINF:-1 tvg-id="XYMax.uk" status="blocked",XY Max
+#EXTINF:-1 tvg-id="XYMax.uk" status="error",XY Max
 http://95.87.227.29:8080/XYMAX_FOR_PLATFORM/index.m3u8
-#EXTINF:-1 tvg-id="XYMix.uk" status="blocked",XY Mix
+#EXTINF:-1 tvg-id="XYMix.uk" status="error",XY Mix
 http://95.87.227.29:8080/XYMIX_FOR_PLATFORM/index.m3u8
 #EXTINF:-1 tvg-id="XYPlus.uk" status="blocked",XY Plus
 http://95.87.227.29:8080/XYPLUS_FOR_PLATFORM/index.m3u8
