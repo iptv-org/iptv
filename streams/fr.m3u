@@ -25,7 +25,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CNE
 https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
-#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="online",El Heddaf TV [Geo-blocked]
+#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="error",El Heddaf TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="EuronewsAlbania.al" status="online",Euronews Albania (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
@@ -91,7 +91,7 @@ https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
 https://shls-m6-france-prod-dub.shahid.net/out/v1/c8a9f6e000cd4ebaa4d2fc7d18c15988/index.m3u8
 #EXTINF:-1 tvg-id="M6Music.fr" status="online",M6 Music (720p)
 http://190.2.155.162:8080/m6music/mpegts
-#EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
+#EXTINF:-1 tvg-id="MCMTop.fr" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
 #EXTINF:-1 tvg-id="MDL.fr" status="online",MDL (720p)
@@ -103,7 +103,7 @@ http://ott-cdn.ucom.am/s35/index.m3u8
 https://live.creacast.com/mirabelletv/smil:mirabelletv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVFrance.fr" status="timeout",MTV France (720p) [Not 24/7]
 http://190.2.155.162:8080/mtvfrance/mpegts
-#EXTINF:-1 tvg-id="MTVHitsFrance.fr" status="timeout",MTV Hits France (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MTVHitsFrance.fr" status="online",MTV Hits France (720p) [Not 24/7]
 http://190.2.155.162:8080/mtvhit/mpegts
 #EXTINF:-1 tvg-id="MyZenTV.fr" status="online",MyZen TV (1080p)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-en-plex/playlist.m3u8
@@ -135,19 +135,19 @@ http://51.210.199.20/hls/stream.m3u8
 http://51.210.199.21/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PersianaSonnati.fr" status="timeout",Persiana Sonati (576p) [Not 24/7]
 http://51.210.199.59/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PublicSenat.fr" status="error",Public Sénat (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="PublicSenat.fr" status="blocked",Public Sénat (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xkxbzc
 #EXTINF:-1 tvg-id="TeleGrenoble.fr" status="error",Tele Grenoble
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x128fjo
 #EXTINF:-1 tvg-id="Telenantes.fr" status="error",Télénantes (480p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/TELENANTES
-#EXTINF:-1 tvg-id="Telesud.fr" status="online",TeleSud
+#EXTINF:-1 tvg-id="Telesud.fr" status="blocked",TeleSud
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7wrxqb
 #EXTINF:-1 tvg-id="TF1SeriesFilms.fr" status="online",TF1 Séries Films (360p)
 http://gratuittv.free.fr/Files/tfsf/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TiJi.fr" status="blocked",Tiji (1080p)
 https://shls-tiji-tv-prod-dub.shahid.net/out/v1/ee05878a88474f408ff04495d44cc249/index.m3u8
-#EXTINF:-1 tvg-id="TraceLatina.uk" status="timeout",Trace Latina
+#EXTINF:-1 tvg-id="TraceLatina.uk" status="blocked",Trace Latina
 http://185.234.217.27:8002/play/a02f/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeAsia.fr" status="error",TV5 Monde Asie (576p)
 http://210.210.155.37/dr9445/s/s24/index.m3u8
@@ -179,7 +179,7 @@ https://live.digiteka.com/1/Zks2L0VsM2V0T242/QTBqcFly/hls/live/playlist.m3u8
 https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ARTE Français (720p) [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Fashion TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",Fashion TV (576p) [Not 24/7]
 http://entertainment.ashttp9.visionip.tv/live/visiontvuk-entertainment-edgytv-hsslive-25f-16x9-SD/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Fun Radio (720p)
 https://livevideo.infomaniak.com/streaming/livecast/funradiovisionhd/playlist.m3u8

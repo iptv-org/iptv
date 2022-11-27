@@ -225,7 +225,7 @@ https://tv.ensonhaber.com/tv/tr/bloomberght/index.m3u8
 https://bloomberg.com/media-manifest/streams/qt.m3u8
 #EXTINF:-1 tvg-id="BloombergTV.us" status="online",Bloomberg TV US (720p)
 https://bloomberg.com/media-manifest/streams/us.m3u8
-#EXTINF:-1 tvg-id="BloombergTVAsia.hk" status="error",Bloomberg TV Asia (576p)
+#EXTINF:-1 tvg-id="BloombergTVAsia.hk" status="online",Bloomberg TV Asia (576p)
 http://210.210.155.37/dr9445/h/h03/index.m3u8
 #EXTINF:-1 tvg-id="BloombergTVAustralia.au" status="online",Bloomberg TV Australia (270p)
 https://bloomberg.com/media-manifest/streams/aus.m3u8
@@ -596,10 +596,10 @@ https://streams.helnix.com/autoHLS/02d8dab006ef9ffd/02d8dab006ef9ffd.m3u8
 https://biblescreen.faithlifecdn.com/biblescreen/bibleScreen/playlist.m3u8
 #EXTINF:-1 tvg-id="FaithlifeTV.us" status="online",Faithlife TV (720p)
 https://biblescreen.faithlifecdn.com/biblescreen/faithlifetv/playlist.m3u8
-#EXTINF:-1 tvg-id="FCPublicMedia.us" status="online",FC Public Media (Fort Collins CO) (1080p)
-https://reflect-fcpublicmedia.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-id="FCPublicMedia.us" status="online",Fort Collins Cable TV (FCTV) (Fort Collins CO) (1080p)
 https://reflect-vod-fcgov.cablecast.tv/live-9/live/live.m3u8
+#EXTINF:-1 tvg-id="FCPublicMedia.us" status="blocked",FC Public Media (Fort Collins CO) (1080p)
+https://reflect-fcpublicmedia.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-id="FCTVEducationChannel14.us" status="online",Falmouth Community Television Education Channel 14 (Falmouth MA) (720p)
 https://reflect-falmouth.cablecast.tv/live-18/live/live.m3u8
 #EXTINF:-1 tvg-id="FCTVGovernmentChannel15.us" status="online",Falmouth Community Television Government Channel 15 (Falmouth MA) (720p)
@@ -994,7 +994,7 @@ http://edu.leominster.tv/Edu/smil:Edu.smil/playlist.m3u8
 http://gov.leominster.tv/Gov/smil:Gov.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LeominsterTVPublic.us" status="online",Leominster TV Public (720p) [Not 24/7]
 http://gov.leominster.tv/Pub/smil:Pub.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="LifevisionTV.us" status="error",LifevisionTV (406p) [Not 24/7]
+#EXTINF:-1 tvg-id="LifevisionTV.us" status="online",LifevisionTV (406p) [Not 24/7]
 https://uni5rtmp.tulix.tv/lifevision/lifevision.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Littleton8TV.us" status="online",Littleton 8 TV (Littleton CO) (1080p)
 https://ch8.littletongov.org/live-2/live/live.m3u8
@@ -1142,10 +1142,10 @@ https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeF
 https://6096a9cf11ae5.streamlock.net:1943/live/missiontv/playlist.m3u8
 #EXTINF:-1 tvg-id="MissionTV.us" status="online",Mission TV (720p) [Not 24/7]
 http://stream.missiontv.com:1935/live/missiontv_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="MMAJunkie.us" status="online",MMA Junkie (720p)
-https://a.jsrdn.com/broadcast/80f6ba72c8/+0000/c.m3u8
 #EXTINF:-1 tvg-id="MMAJunkie.us" status="online",MMA Junkie
 http://a.jsrdn.com/broadcast/80f6ba72c8/+0000/high/c.m3u8
+#EXTINF:-1 tvg-id="MMAJunkie.us" status="online",MMA Junkie (720p)
+https://a.jsrdn.com/broadcast/80f6ba72c8/+0000/c.m3u8
 #EXTINF:-1 tvg-id="MohabatTV.us" status="online",Mohabat TV (540p)
 http://media.mohabat.tv:1935/live_transcoder/ngrp:mohabat.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="MonarchChannel.us" status="online",Monarch Channel (720p)
@@ -1158,10 +1158,10 @@ https://castus-vod-dev.s3.amazonaws.com/vod_clients/monroe/live/ch1/video.m3u8
 https://agp-nimble.streamguys1.com/MBCh20/MBCh20/playlist.m3u8
 #EXTINF:-1 tvg-id="Movee4U.us" status="error",Movee 4U (480p)
 https://rebroadcast.mytvtogo.net/mytvtogo/movee4u/playlist.m3u8
-#EXTINF:-1 tvg-id="MovieKingdom.us" status="online",Movie Kingdom TV
-https://a.jsrdn.com/broadcast/e9b4093a41/+0000/high/c.m3u8
 #EXTINF:-1 tvg-id="MovieKingdom.us" status="online",Movie Kingdom (720p)
 https://a.jsrdn.com/broadcast/e9b4093a41/+0000/c.m3u8
+#EXTINF:-1 tvg-id="MovieKingdom.us" status="online",Movie Kingdom TV
+https://a.jsrdn.com/broadcast/e9b4093a41/+0000/high/c.m3u8
 #EXTINF:-1 tvg-id="MPTV.us" status="online",Moorpark Government Channel (360p)
 https://cdn3.wowza.com/5/cXdyRHF0Z3kxN0k2/moorpark/G0086_003/playlist.m3u8
 #EXTINF:-1 tvg-id="MSTV.us" status="online",Manatee Schools Television MSTV (Manatee County FL) (1080p)
@@ -1467,7 +1467,7 @@ https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/stpete/G0187_002/playlist.m3u8
 https://16live00.akamaized.net/START_TV/index.m3u8
 #EXTINF:-1 tvg-id="STNChannel2.us" status="error",University of Hartford Student Television Network Channel 2 (STN2) (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCy_G4ljF7HkUtSx_YMnf_Wg/live
-#EXTINF:-1 tvg-id="StockChartsTV.us" status="error",StockCharts TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="StockChartsTV.us" status="online",StockCharts TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/19628359/events/7940975/player
 #EXTINF:-1 tvg-id="StocktonGovTV.us" status="online",Stockton GovTV (Stockton CA) (720p)
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/stockton/G0044_008/playlist.m3u8
@@ -1487,7 +1487,7 @@ https://lompoccmttv.secure.footprint.net/egress/bhandler/lompoccmttv/streamb/pla
 https://lompoccmttv.secure.footprint.net/egress/bhandler/lompoccmttv/streamc/playlist.m3u8
 #EXTINF:-1 tvg-id="TasteItTV.us" status="blocked",Taste It TV (720p)
 https://stitcheraws.unreel.me/wse-node02.powr.com/live/5af61f59d5eeee7af3d1db8f/playlist.m3u8
-#EXTINF:-1 tvg-id="Tastemade.us" status="online",Tastemade (1080p)
+#EXTINF:-1 tvg-id="Tastemade.us" status="timeout",Tastemade (1080p)
 https://tastemadessai.akamaized.net/amagi_hls_data_tastemade-tastemade/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="TastemadeAustralia.us" status="online",Tastemade Australia (1080p)
 https://tastemadeintaus-smindia.amagi.tv/playlist.m3u8
@@ -1773,7 +1773,7 @@ https://5e6cea03e25b6.streamlock.net/live/WFSU-PBS.stream/playlist.m3u8
 https://cdnapisec.kaltura.com/p/2593311/sp/259331100/playManifest/entryId/1_ta2cmesd/format/applehttp/protocol/https/a.m3u8
 #EXTINF:-1 tvg-id="WFSUDT3.us" status="blocked",PBS Create Tallahassee FL (WFSU-TV3) (480p)
 https://5e6cea03e25b6.streamlock.net/live/CREATE.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="WFTVDT1.us" status="online",ABC 9 Orlando FL (WFTV) (720p)
+#EXTINF:-1 tvg-id="WFTVDT1.us" status="error",ABC 9 Orlando FL (WFTV) (720p)
 https://d3qm7vzp07vxse.cloudfront.net/v1/master/77872db67918a151b697b5fbc23151e5765767dc/cmg_PROD_cmg-tv-10070_fe1f5f6c-cd0b-4993-a4a4-6db66be4f313_LE/in/cmg-wftvtv-hls-v3/live.m3u8
 #EXTINF:-1 tvg-id="WFTXDT1.us" status="online",WFTX News Fort Myers FL (720p)
 https://content.uplynk.com/channel/8975f81e6efd4e609873c3e8e25c7756.m3u8
@@ -1831,7 +1831,7 @@ http://wlngstudiowebcam.srfms.com:1935/wlngstudiowebcam/livestream/playlist.m3u8
 https://content.uplynk.com/channel/ext/aac37e2c66614e699fb189ab391084ff/wls_24x7_news.m3u8
 #EXTINF:-1 tvg-id="WLTXDT1.us" status="online",CBS 19 Columbia SC (WLTX) (1080p)
 https://livevideo01.wltx.com/hls/live/2017152/newscasts/live.m3u8
-#EXTINF:-1 tvg-id="WLVTDT1.us" status="error",PBS 39 Allentown PA (WLVT) (720p)
+#EXTINF:-1 tvg-id="WLVTDT1.us" status="online",PBS 39 Allentown PA (WLVT) (720p)
 https://forerunnerrtmp.livestreamingcdn.com/output18/output18.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="WLWTDT2.us" status="blocked",MeTV (WLWT-DT2) Cincinnati OH (480p)
 https://16live00.akamaized.net/ME_TV_EAST/index.m3u8
@@ -1867,7 +1867,7 @@ https://16live00.akamaized.net/ABC_EAST/index.m3u8
 https://livevideo01.fox43.com/hls/live/2011656/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="WPPTDT1.us" status="online",PBS 39 Extra Philadelphia (480p)
 https://forerunnerrtmp.livestreamingcdn.com/output18-2/output18-2.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="WPSTV.us" status="online",WPS TV (360p)
+#EXTINF:-1 tvg-id="WPSTV.us" status="error",WPS TV (360p)
 https://2-fss-2.streamhoster.com/pl_120/amlst:203530-1426406/playlist.m3u8
 #EXTINF:-1 tvg-id="WPSUDT1.us" status="blocked",PBS (WPSU-DT1) Altoona PA (720p)
 http://trn03.tulix.tv/lnABbIUBrO/playlist.m3u8
@@ -2068,11 +2068,11 @@ https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c7e2783932c8368bdbfd8a5/
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/29565692/events/9276365/
 #EXTINF:-1 tvg-id="" status="online",The Grapevine
 https://ov.ottera.tv/live/master.m3u8?channel=mcom_gv_us
-#EXTINF:-1 tvg-id="" status="timeout",Toonami Aftermath East (480p)
+#EXTINF:-1 tvg-id="" status="online",Toonami Aftermath East (480p)
 http://api.toonamiaftermath.com:3000/est/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Toonami Aftermath Movies (540p)
 http://api.toonamiaftermath.com:3000/movies/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Toonami Aftermath Radio (480p)
+#EXTINF:-1 tvg-id="" status="error",Toonami Aftermath Radio (480p)
 http://api.toonamiaftermath.com:3000/radio/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36",TPT Now KTCA-DT5 (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
