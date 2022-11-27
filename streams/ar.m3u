@@ -41,7 +41,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/c5n/l
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCFgk2Q2mVO1BklRQhSv6p0w/live
 #EXTINF:-1 tvg-id="Cadena103.ar" status="online",Cadena 103
 https://59d52c5a5ce5e.streamlock.net:4443/cadena103/cadena103/playlist.m3u8
-#EXTINF:-1 tvg-id="CadenaVivo.ar" status="online",Cadena VIVO (720p)
+#EXTINF:-1 tvg-id="CadenaVivo.ar" status="error",Cadena VIVO (720p)
 https://videostream.shockmedia.com.ar:19360/tvnoficial/tvnoficial.m3u8
 #EXTINF:-1 tvg-id="CalchaquiTV.ar" status="online",Calchaquí TV (480p)
 https://video.streamtvradio.com:8443/uv068/uv068/chunks.m3u8
@@ -65,7 +65,7 @@ https://stream.arcast.com.ar/canal4esquel/canal4esquel/playlist.m3u8
 http://190.52.32.13:1935/canal4/smil:manifest.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4Jujuy.ar" status="online",Canal 4 Jujuy (720p)
 https://5cd577a3dd8ec.streamlock.net/canal4/smil:manifest.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal4Posadas.ar" status="online",Canal 4 Posadas (576p)
+#EXTINF:-1 tvg-id="Canal4Posadas.ar" status="error",Canal 4 Posadas (576p)
 https://iptv.ixfo.com.ar:30443/live/C4POS/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4SanJuan.ar" status="online",Canal 4 (San Juan)
 http://streamlov.alsolnet.com/canal4sanjuan/live/playlist.m3u8
@@ -81,7 +81,7 @@ https://stmvideo1.livecastv.com/canal6er/canal6er/playlist.m3u8
 https://59537faa0729a.streamlock.net/canal6mdp/canal6mdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal6Moreno.ar" status="online",Canal 6 (Moreno)
 https://stream.arcast.com.ar/canal6moreno/canal6moreno/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal6Posadas.ar" status="online",Canal 6 (Posadas)
+#EXTINF:-1 tvg-id="Canal6Posadas.ar" status="error",Canal 6 (Posadas)
 https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7Jujuy.ar" status="online",Canal 7 (Jujuy)
 https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8
@@ -232,12 +232,8 @@ https://live.enhdtv.com:19360/tvplaydigital2/tvplaydigital2.m3u8
 https://stmv1.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
 #EXTINF:-1 tvg-id="GenTV.ar" status="online",GenTV (720p) [Not 24/7]
 https://inliveserver.com:1936/14056/14056/playlist.m3u8
-#EXTINF:-1 tvg-id="InformacionPeriodistica.ar" status="error",Informacion Periodística (1080p)
-https://d1nmqgphjn0y4.cloudfront.net/live/ip/live.isml/5ee6e167-1167-4a85-9d8d-e08a3f55cff3.m3u8
 #EXTINF:-1 tvg-id="IngenioFM.ar" status="online",Ingenio FM
 https://panel.dattalive.com/8064/8064/playlist.m3u8
-#EXTINF:-1 tvg-id="IPNoticias.ar" status="error",Información Periodística (1080p)
-https://octubre-live.cdn.vustreams.com/live/ip/live.isml/5ee6e167-1167-4a85-9d8d-e08a3f55cff3.m3u8
 #EXTINF:-1 tvg-id="LapachoTVCanal11.ar" status="online",Lapacho TV (720p)
 https://vivo.solumedia.com:19360/lapacho/lapacho.m3u8
 #EXTINF:-1 tvg-id="LaVozdeTucuman.ar" status="online",La Voz de Tucuman (480p)
@@ -264,10 +260,10 @@ http://panel.dattalive.com:1935/8250/8250/playlist.m3u8
 http://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NeoTV.ar" status="online",Neo TV
 https://videostream.shockmedia.com.ar:19360/neotvdigital/neotvdigital.m3u8
-#EXTINF:-1 tvg-id="NETTV.ar" status="online",NET TV (720p)
-https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NETTV.ar" status="online",Net TV (720p)
 https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="NETTV.ar" status="online",NET TV (720p)
+https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NGFederal.ar" status="online",NG Federal (720p)
 http://www.coninfo.net:1935/tvlink/live/playlist.m3u8
 #EXTINF:-1 tvg-id="NorteTV.ar" status="online",Norte TV Canal 7 (360p)
@@ -348,7 +344,7 @@ https://cdnhd.iblups.com/hls/DD3nXkAkWk.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCvCTWHCbBC0b9UIeLeNs8ug/live
 #EXTINF:-1 tvg-id="VTV.ar" status="online",VerTV (VTV) (720p) [Not 24/7]
 https://5f700d5b2c46f.streamlock.net/vertv/vertv/playlist.m3u8
-#EXTINF:-1 tvg-id="XamaTV.ar" status="timeout",Xama TV (720p)
+#EXTINF:-1 tvg-id="XamaTV.ar" status="error",Xama TV (720p)
 https://srs.unsj.edu.ar/live/xama.flv
 #EXTINF:-1 tvg-id="ZondaTV.ar" status="blocked",Zonda TV
 https://cnnsanjuan.com:9999/zonda/zonda/playlist.m3u8
