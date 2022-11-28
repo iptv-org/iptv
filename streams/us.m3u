@@ -758,7 +758,7 @@ http://a.jsrdn.com/broadcast/529a360c04/+0000/high/c.m3u8
 https://a.jsrdn.com/broadcast/529a360c04/+0000/c.m3u8
 #EXTINF:-1 tvg-id="IFCEast.us" status="online",IFC East (720p)
 https://bcovlive-a.akamaihd.net/045bd3b615254da880c3db79b2e42fd0/us-east-1/6240731308001/playlist.m3u8
-#EXTINF:-1 tvg-id="IndTVUSA.us" status="online",Ind TV USA (720p)
+#EXTINF:-1 tvg-id="IndTVUSA.us" status="timeout",Ind TV USA (720p)
 https://indtv.secure.footprint.net/egress/bhandler/indtv/streama/playlist.m3u8
 #EXTINF:-1 tvg-id="InfoWars.us" status="online",InfoWars (720p)
 http://wpc.9ec1.edgecastcdn.net/249EC1/infowarshd-edgecast/hd720.m3u8
@@ -1967,11 +1967,11 @@ https://yuma-az.secure.footprint.net/egress/bhandler/yumaaz/streamb/playlist.m3u
 https://content.uplynk.com/channel/3324f2467c414329b3b0cc5cd987b6be.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Actionable (720p)
 https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c7e25a1932c8368bdbfd87d/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",AXN Latinoamérica (576p)
+#EXTINF:-1 tvg-id="AXNCentralAmerica.us" status="timeout",AXN Latinoamérica (576p)
 http://209.91.213.10:8088/play/a011
-#EXTINF:-1 tvg-id="" status="online",AXS TV NOW
+#EXTINF:-1 tvg-id="AXSTVNOW.us" status="online",AXS TV NOW
 https://dikcfc9915kp8.cloudfront.net/hls/1080p/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",AXS TV Now (1080p)
+#EXTINF:-1 tvg-id="AXSTVNOW.us" status="online",AXS TV Now (1080p)
 https://dikcfc9915kp8.cloudfront.net/hls/main.m3u8
 #EXTINF:-1 tvg-id="" status="online",Bloomberg TV Asia (720p)
 https://bloomberg.com/media-manifest/streams/asia.m3u8
@@ -1979,7 +1979,7 @@ https://bloomberg.com/media-manifest/streams/asia.m3u8
 https://bloomberg.com/media-manifest/streams/asia-event.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Brazzers Latinoamérica [Geo-blocked]
 http://45.5.8.78:8000/play/a029
-#EXTINF:-1 tvg-id="" status="timeout",Cartoon Network Latin America
+#EXTINF:-1 tvg-id="CartoonitoLatinAmerica.us" status="timeout",Cartoon Network Latin America
 http://209.91.213.10:8088/play/a00k
 #EXTINF:-1 tvg-id="" status="online",Channel 11
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/scottsdale/G0040_007/chunklist.m3u8
@@ -1995,11 +1995,11 @@ http://198.16.106.62:8278/streams/d/Disneyjr/playlist.m3u8
 http://209.91.213.10:8088/play/a00n
 #EXTINF:-1 tvg-id="" status="timeout",DryBar Comedy (720p)
 https://a.jsrdn.com/broadcast/e29bdbbbf3/+0000/c.m3u8
-#EXTINF:-1 tvg-id="" status="online",El Conflecto (480p)
+#EXTINF:-1 tvg-id="ElConflictoTV.us" status="online",El Conflicto (480p)
 https://content.uplynk.com/channel/c56a6c94a53843c79d3eca411d39f96f.m3u8
 #EXTINF:-1 tvg-id="" status="online",ESR 24x7 eSports Network (1080p)
 https://eyeonesports.com/ES2RA-628g.m3u8
-#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",ESTV
+#EXTINF:-1 tvg-id="ESTV.us" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",ESTV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=461
 #EXTINF:-1 tvg-id="" status="online",External Ottera (720p)
@@ -2010,7 +2010,7 @@ http://ott-cdn.ucom.am/s79/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",FightBox HD (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s86/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Fox HD Russia
+#EXTINF:-1 tvg-id="FoxRussia.ru" status="online",Fox HD Russia
 https://sc.id-tv.kz/FOX_HD.m3u8
 #EXTINF:-1 tvg-id="" status="online",Fútbol [Geo-blocked]
 https://unidfp-nlds153.global.ssl.fastly.net/nlds/univisionnow/futbol/as/live/futbol_hd_pc.m3u8?t1=
@@ -2018,25 +2018,27 @@ https://unidfp-nlds153.global.ssl.fastly.net/nlds/univisionnow/futbol/as/live/fu
 http://209.91.213.10:8088/play/a01z
 #EXTINF:-1 tvg-id="" status="online",Grit Xtra
 https://scripps-gritxtra-1-us.vizio.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Impact Wrestling (1080p)
+#EXTINF:-1 tvg-id="GustoTV.us" status="online",Gusto TV (1080p)
+https://d3cajslujfq92p.cloudfront.net/playlist.m3u8
+#EXTINF:-1 tvg-id="IMPACTWrestling.us" status="online",IMPACT Wrestling (1080p)
 https://d2tuwvs0ja335j.cloudfront.net/hls/1080p/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",IMPACT! Wrestling (1080p)
+#EXTINF:-1 tvg-id="IMPACTWrestling.us" status="online",IMPACT Wrestling (1080p)
 https://d2p372oxiwmcn1.cloudfront.net/hls/main.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",MTV Hits Latinoamérica (576p)
 http://209.91.213.10:8088/play/a00z
 #EXTINF:-1 tvg-id="" status="timeout",MTV Latinoamérica (1080p)
 http://209.91.213.10:8088/play/a01a
-#EXTINF:-1 tvg-id="" status="timeout",National Geographic España
+#EXTINF:-1 tvg-id="NationalGeographicSpain.es" status="timeout",National Geographic España
 http://5.255.90.184:2001/play/a04i
-#EXTINF:-1 tvg-id="" status="online",NBC News Now (1080p)
+#EXTINF:-1 tvg-id="NBCNewsNOW.us" status="online",NBC News Now (1080p)
 http://nbcnews2.akamaized.net/hls/live/723426-b/NBCNewsPlaymaker24x7Linear99a3a827-ua/master.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",NESN National (1080p)
+#EXTINF:-1 tvg-id="NESN.us" status="timeout",NESN National (1080p)
 https://bcovlive-a.akamaihd.net/bea11a7dfef34b08be06aaca4a72bcdf/us-east-1/6141518204001/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",News4JAX+
 https://dai.google.com/linear/hls/event/RDmbn03GRCOLNG1eetEKhg/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Nick Jr Latinoamérica (480p)
+#EXTINF:-1 tvg-id="NickJrenEspanol.us" status="timeout",Nick Jr Latinoamérica (480p)
 http://201.168.205.12:8000/play/a0ck/index.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Nickelodeon Deutschland [Geo-blocked]
+#EXTINF:-1 tvg-id="NickGermany.de" status="blocked",Nickelodeon Deutschland [Geo-blocked]
 https://unilivemtveu-lh.akamaihd.net/i/nickde_1@448749/master.m3u8
 #EXTINF:-1 tvg-id="" status="online",Novelas [Geo-blocked]
 https://unidfp-nlds166.global.ssl.fastly.net/nlds/univisionnow/novelas2plist/as/live/novelas2plist_hd_pc.m3u8?t1=
@@ -2054,15 +2056,13 @@ https://stream.rjtv.stream/live/smil:rjtv.smil/playlist.m3u8
 https://stream.rjtv.tv/live/smil:rjtv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Radio Ritmo (1080p) [Not 24/7]
 https://59514edd5dd8e.streamlock.net/lax/lax/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Retro TV (720p)
+#EXTINF:-1 tvg-id="RetroTVEast.us" status="online",Retro TV (720p)
 https://bcovlive-a.akamaihd.net/5e531be3ed6c41229b2af2d9bffba88d/us-east-1/6183977686001/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Rev'n (720p)
-https://bcovlive-a.akamaihd.net/a71236fdda1747999843bd3d55bdd6fa/us-east-1/6183977686001/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Scream Factory TV (720p)
+#EXTINF:-1 tvg-id="ScreamFactoryTV.us" status="online",Scream Factory TV (720p)
 https://shoutfactory-screamfactorytv-1-us.ono.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Slimo (540p)
 https://stitcheraws.unreel.me/wse-node02.powr.com/live/5c7e2783932c8368bdbfd8a5/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",TCT HD Tri-State Christian Television (1080p)
+#EXTINF:-1 tvg-id="WTCTDT1.us" status="timeout",TCT HD Tri-State Christian Television (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/29565692/events/9276365/
 #EXTINF:-1 tvg-id="" status="online",The Grapevine
 https://ov.ottera.tv/live/master.m3u8?channel=mcom_gv_us
@@ -2072,18 +2072,176 @@ http://api.toonamiaftermath.com:3000/est/playlist.m3u8
 http://api.toonamiaftermath.com:3000/movies/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Toonami Aftermath Radio (480p)
 http://api.toonamiaftermath.com:3000/radio/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36",TPT Now KTCA-DT5 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KTCADT5.us" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36",TPT Now (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
 https://api.new.livestream.com/accounts/12638076/events/8488790/live.m3u8
-#EXTINF:-1 tvg-id="" status="online",TUDN [Geo-blocked]
+#EXTINF:-1 tvg-id="TUDN.us" status="online",TUDN [Geo-blocked]
 https://unidfp-nlds141.global.ssl.fastly.net/nlds/univisionnow/udn2/as/live/udn2_hd_pc.m3u8?t1=
-#EXTINF:-1 tvg-id="" status="online",Vice East
+#EXTINF:-1 tvg-id="VICETV.us" status="online",VICE TV East
 https://d2do1g43aq7264.cloudfront.net/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Village of Hastings-On-Hudson NY (WHOH-TV) (360p)
+#EXTINF:-1 tvg-id="WHOHTV.us" status="online",Village of Hastings-On-Hudson NY (360p)
 http://stream.swagit.com/live-edge/hastingsonhudsonny/smil:std-4x3-1-a/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Watch It Kid (486p)
+#EXTINF:-1 tvg-id="WatchitKID.us" status="online",Watch It Kid (486p)
 https://content.uplynk.com/channel/ce3b524c342247549e996e7d3a977157.m3u8
-#EXTINF:-1 tvg-id="" status="online",Watch It Scream! (720p)
+#EXTINF:-1 tvg-id="WatchitScream.us" status="online",Watch It Scream! (720p)
 https://content.uplynk.com/channel/29aff31fecb848ab9044369db2d61642.m3u8
 #EXTINF:-1 tvg-id="" status="online",WDAY-X Automatic Weather Fargo ND (720p)
 https://player-api.new.livestream.com/accounts/27442514/events/8331542/live.m3u8
+#EXTINF:-1 tvg-id="SpaceChannel.us" status="online",Space Channel
+https://stream.ads.ottera.tv/cl/7e63f563-4bd5-470b-91b8-852571c1c138/1920x1080_4214276_5_f.m3u8
+#EXTINF:-1 tvg-id="W14DKD7.us" status="online",Heartland
+https://2-fss-2.streamhoster.com/pl_118/amlst:204972-3078008/playlist.m3u8
+#EXTINF:-1 tvg-id="W14DKD5.us" status="online",OAN Plus
+https://2-fss-2.streamhoster.com/pl_118/204972-2205186-1/playlist.m3u8
+#EXTINF:-1 tvg-id="W14DKD4.us" status="online",WX Channel
+https://2-fss-2.streamhoster.com/pl_118/204972-1954030-1/playlist.m3u8
+#EXTINF:-1 tvg-id="W14DKD3.us" status="online",Retro TV
+https://2-fss-2.streamhoster.com/pl_118/204972-1954132-1/playlist.m3u8
+#EXTINF:-1 tvg-id="W14DKD2.us" status="online",NewsNet
+https://2-fss-2.streamhoster.com/pl_118/204972-1954106-1/playlist.m3u8
+#EXTINF:-1 tvg-id="W14DKD1.us" status="online",TV Delmarva
+https://2-fss-2.streamhoster.com/pl_118/amlst:204972-1949480/playlist.m3u8
+#EXTINF:-1 tvg-id="KRONDT1.us" status="online",KRON-TV
+https://difwk89tryvik.cloudfront.net/v1/master/dfe581e0a446a1e548014078b2d81b62b917979d/KRON_AD_CAMPAIGN/index.m3u8
+#EXTINF:-1 tvg-id="W14DKD1.us" status="online",TV Delmarva
+https://2-fss-2.streamhoster.com/pl_118/amlst:204972-1949480/playlist.m3u8
+#EXTINF:-1 tvg-id="K34QBD1.us" status="online",TV 8 Vail
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/30706455/events/9730016
+#EXTINF:-1 tvg-id="DunyaNewsUSA.us" status="online",Dunya News USA
+https://intl.dunyanews.tv/livehd/ngrp:dunyalivehd_2_all/playlist.m3u8
+#EXTINF:-1 tvg-id="FashionFinds.us" status="online",Fashion Finds - Style Channel
+https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc5us/high.m3u8
+#EXTINF:-1 tvg-id="IntheKitchen.us" status="online",In the Kitchen
+https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc4us/high.m3u8
+#EXTINF:-1 tvg-id="HSN2.us" status="online",HSN2
+https://youtu.be/q-BvtDrTnxc
+#EXTINF:-1 tvg-id="MadeInHollywood.us" status="online",Made In Hollywood
+https://connection3-ent-us.redbox.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="TBNPacific.us" status="online",TBN Pacific
+https://broadcast.tbnpacific.org.au:4430/TBNPacificTV/live/playlist.m3u8
+#EXTINF:-1 tvg-id="TelekanalNadezhda.us" status="online",Telekanal Nadezhda
+https://live-tvhope.cdnvideo.ru/tvhope-pull/tvhope_1/playlist.m3u8
+#EXTINF:-1 tvg-id="ShepherdsChannel.us" status="online",Shepherd's Chapel
+https://youtu.be/9LLRcg1J9FQ
+#EXTINF:-1 tvg-id="ShopHQHealth.us" status="online",ShopHQ Health
+https://youtu.be/fIS9B_WRJYc
+#EXTINF:-1 tvg-id="ShopBulldogTV.us" status="online",Shop Bulldog TV
+https://youtu.be/Q6Oq5Dkn4zA
+#EXTINF:-1 tvg-id="ScientologyNetwork.us" status="online",Scientology Network
+https://stream6.scientology.org/master.m3u8
+#EXTINF:-1 tvg-id="SalaamTV.us" status="online",Salaam TV
+https://iptv.salaamtv.org/salaam/playlist2/index.m3u8
+#EXTINF:-1 tvg-id="MiramarTV.us" status="online",Miramar TV
+https://youtu.be/nqL1znB-odA?list=PL01AA1154DBC1BA87
+#EXTINF:-1 tvg-id="WHPSCD2.us" status="online",WHPS Detroit
+https://hls-live-media.cdn01.net/default/stream_46366.m3u8?source=othersites
+#EXTINF:-1 tvg-id="USWeeklyTV.us" status="online",US Weekly TV
+https://a360-usweeklytv-1-us.plex.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AllWeddingsWEtv.us" status="online",All Weddings WE tv
+https://amc-allweddings-1-us.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AMCAbsoluteReality.us" status="online",AMC Absolute Reality
+https://amc-absolutereality-1-us.plex.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="AfroLandTV.us" status="online",AfroLandTV
+https://stream.ads.ottera.tv/cl/b53ec20e-1cd8-4efc-94e5-8c776a3abbd4/1280x720_3071200_1_f.m3u8
+#EXTINF:-1 tvg-id="WLMB.us" status="online",WLMB
+https://hls-live-media.cdn01.net/default/stream_10327.m3u8?source=othersites
+#EXTINF:-1 tvg-id="ALTRDTV.us" status="online",ALTRD.TV
+https://stream.ads.ottera.tv/cl/99924be7-2c90-495f-8102-84ebe5a25be9/1280x720_2300000_0_f.m3u8
+#EXTINF:-1 tvg-id="AmazingFactsTV.us" status="online",Amazing Facts TV
+https://youtu.be/yWrh9nlXzb8
+#EXTINF:-1 tvg-id="Backstage.us" status="online",Backstage
+https://cdn-uw2-prod.tsv2.amagi.tv/linear/fuseAAAAA-fusexl/d2afa1a2-5e0a-452b-b77c-a74a16a18a07/0.m3u8
+#EXTINF:-1 tvg-id="BraziTV.us" status="online",Brazi TV
+https://oj7lng29dg82-hls-live.5centscdn.com/lives/f7b44cfafd5c52223d5498196c8a2e7b.sdp/chunks.m3u8
+#EXTINF:-1 tvg-id="Canal6USA.us" status="online",Canal 6 USA
+https://mdstrm.com/live-stream-playlist/57b4dbf5dbbfc8f16bb63ce1.m3u8?uid=wf0uuYZC43Yd5HyuexzCh9GCP4SeWhzK&sid=dnoVW4JS35683NVSDjuuYQspsNxUZwKd&pid=jtu2xjj5zfsG0IppRYRvvDXcJ699aZHk&an=screen&at=web-app&av=v5.2.294&ref=https%3A%2F%2Fwww.multimedios.com%2F&res=807x404&without_cookies=false&listenerid=&dnt=true&adInsertionSessionId=0a386939-49aa-4692-b0b9-9973c697b568
+#EXTINF:-1 tvg-id="CartoonitoLatinAmerica.us" status="online",Cartoonito Latin America
+https://playout.cdn.cartoonnetwork.com.br/playout_04/playlist-720p.m3u8
+#EXTINF:-1 tvg-id="CatholicTV.us" status="online",Catholic TV
+https://catholictvhd-lh.akamaized.net/hls/live/2043390/CTVLiveHD/master_1.m3u8
+#EXTINF:-1 tvg-id="ChannelOne.us" status="online",Channel One
+http://51.210.227.140/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ClassicTV4U.us" status="online",Classic TV 4U
+https://d3eiw4sn5zwb0h.cloudfront.net/v1/manifest/9d062541f2ff39b5c0f48b743c6411d25f62fc25/ClassicTV4U-MyTVGO/836e5d1b-77b4-4c17-a1cc-3502da937866/2.m3u8
+#EXTINF:-1 tvg-id="CornerstoneTV.us" status="online",Cornerstone TV
+https://2-fss-1.themediacdn.com/pl_122/206280-3059514-1/playlist.m3u8
+#EXTINF:-1 tvg-id="DanceStarTV.us" status="online",DanceStar TV
+https://vcndstv.teleosmedia.com/stream/dstv/dstv/seglist_360p.m3u8
+#EXTINF:-1 tvg-id="FlouCine.us" status="online",Flou Cine
+https://amg01768-flou-flou-canelatv-yri41.amagi.tv/playlist/amg01768-flou-flou-canelatv/cb573e1a6570668b84cb3962cef84482bb7b3dcb0e6c886470af4a9765d97800dbe8ae84ae5b910c4c9e1fc061017d360439cd1dd56c49c1da71b813727616749886b262c9ee475ae98710282ab27a1e50fe0f05a67c1177dfe60247d46de7375551ac5d37026a8eef0cfb6b5490805e967e28def9c0333f7f52429b5f5de1a25ef6f7b254178a66818b2519c16c5bb4dd0289853e88bae55b9478bc42a640ddd0d2b8e921828c92599406e627475c276b90837cacc059c498f0293dcc267d14180db1a2caa7166ad043110cadfdc8e731aa15cdde21d53260ef04c235ee418b6fb947a3e458a9aebee04a4430a3cc4f1342ca86f7d8ab6f10d70bfaa6fa9360758df32b6846ce68aa70416898e9df0497864697f37183f13b1b2fd7860b989cbc86e3b1c35e8a6098c1f89133474f714150805bae9578962ad476ad94644b2c4c40bed452c096cb61336d41958550c06178d3badad9ac6457cd640b48d763d6551669c2201e1f8f4ca8c04606f9270e967b39fe4e3c8347c3af25f1b3d3976051d18f951aaf3581df6dd3f211e774335b70d0984d0f1f0e17beef621e7e78d355dbd1dfef7305059e87a790c35c35493a165c0987e3a97f8f9a9a52777bc057352e671903933bd868d2053b6a44a11dd2a20c78841237779dcd4c5c5e7fd8ccb4978ed5cf7bb97eddc8e838283e2b07d751002834aedce758f92b05797f53840a7631d26d374ce581f6f689856dc79a6daf3c386c09abf113524747605c1a89997ed65dfbe17bd3ff9b45c2a2d7462ff43da7125e9fc0cc53ebf98ed54a3085b85b6b18fdae2fd1673dd44d9b649fc56796b3540819304106d6981bfb5aafd699c238c05dc725027af936b28fdcbfd7722484fb2b63697d3f7d6a41493c1eb1ccd46719098ad643b744e8a60fc6283c323b549085044e949a1476fd654c84c4cabae312619e72b00cd7548b0620a7590c2ae0be4080e19cd28a4aebc962a3db8543a9b580c1eddbcf3477086d4ae8a9b280e3ba549cbc02f5a80f7ee09b84f0dd66d5078aa22317d45c86138eb1db21a0849cecf2785d3b3034d798dfa851b3d97b76deb82917643ebcf3b59ca987e04834d8a032c188027ca73d7f12fda4e90bc63fb7dcc94b8db74456cf7d3ecde1b073529864ef173b73f5c2967d7be1f74fc21dd5c5ac4f7b850648b01c1e79fa28a1c7ad7f35b0ec414e01a44b2089748fc7960e0923fec237757b4d2a1c1bd4465334ab6f3af754e29697db0217870f8e0028ac39fe9225c08c38aea294bdfe9f7d0fc0da030cfb03eb0ac352e8d09dfd3eab4b21e728a6136ca2d0cbed8a8be3b2dcd40a55089434e96fa212cbdfa7dc0f60601b8e7d5a1b229e4a92a1166624f2f0f710ffe7d35bfd845bfa/71/1920x1080_5058864/index.m3u8
+#EXTINF:-1 tvg-id="GAGOTV.us" status="online",GAGO TV
+https://cdn20.fntvchannel.com/v1/manifest/02eeb1726c343dc9c30c32e93dee82013e157021/GAGO-Channel-Plex/3603db46-b07e-469a-9acf-5cfc8116c94a/4.m3u8
+#EXTINF:-1 tvg-id="HBCUGOSports.us" status="online",HBCU-GO Sports
+https://6788041e31d84d16a8543d7183a2dd42.mediatailor.us-east-1.amazonaws.com/v1/manifest/385c85a93929f94966d0fb186fc33b431e6f1eb9/OneStudio_HBCUgo_Prod/4641ca4e-0860-400c-a3bd-675c85c25da6/4.m3u8
+#EXTINF:-1 tvg-id="IGN1.us" status="online",IGN1
+https://ign-plex.amagi.tv/amRdirect/app_store_url=https%3A%2F%2Fapp.plex.tv&ua=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A102.0)%20Gecko%2F20100101%20Firefox%2F102.0&w=&gdpr=0&gdpr_consent=0&brand_name=&X-Plex-Token=Rzw5KeGxwxjAXVfenc58&device_id_type=&coppa=0&partner_id=radicalhistoryoftmnt&us_privacy=1---&device_type=desktop&dnt=1&channelId=5eea605474085f0040ddc77c&did=&ifa_type=&app_name=plex&ip=2001%3A1970%3A5823%3Abc00%3A8598%3A548%3Ac186%3Acf88&device_model=&h=&url=app.plex.tv&app_bundle=com.plexapp.desktop&uid=1gis2mn8c-jnk7-geo-1lqu-g023v80kwmk/hls/amagi_hls_data_ignAAAAAA-ign-plexA/CDN/1920x1080_5055600/index.m3u8
+#EXTINF:-1 tvg-id="ImpactTVNetwork.us" status="online",Impact TV Network
+https://glorystartv.live/Impact/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="InspirationTV.us" status="online",Inspiration TV
+https://inspministryf-a.akamaihd.net/file/INSP_Ministry_Inc/247/395/playlist.m3u8
+#EXTINF:-1 tvg-id="IranTVNetwork.us" status="online",Iran TV Network
+https://livestream.5centscdn.com/itnapp/4e0ea63032b868402b61d3a35e7ca168.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="ISN.us" status="online",ISN
+https://isntv.mmdlive.lldns.net/isntv/f79b65204e7141c6a5cc74e63cf0dae5/playlist.m3u8
+#EXTINF:-1 tvg-id="KidsPangTV.us" status="online",Kids Pang TV
+https://494e639cacb24ad484819d7154a3f100.mediatailor.us-east-1.amazonaws.com/v1/manifest/04fd913bb278d8775298c26fdca9d9841f37601f/Plex_KidsPangTV/3f9fec5b-f4a0-4951-ac70-efffb9d8444e/5.m3u8
+#EXTINF:-1 tvg-id="LaBocinaLatina.us" status="online",La Bocina Latina
+https://stream.ads.ottera.tv/cl/01fbb3df-d267-48d6-895b-de2c31b62f69/1280x720_2300000_0_f.m3u8
+#EXTINF:-1 tvg-id="LaCorriente.us" status="online",La Corriente
+https://stream.ads.ottera.tv/cl/7696bdd3-cbfb-4103-aaa5-d27768b9f27c/1280x720_2300000_0_f.m3u8
+#EXTINF:-1 tvg-id="LaMegaMundial.us" status="online",La Mega Mundial
+https://server40.servistreaming.com:3477/hybrid/play.m3u8
+#EXTINF:-1 tvg-id="LSN.us" status="online",LSN
+https://1840769862.rsc.cdn77.org/FTF/LSN_SCTE_v5.m3u8
+#EXTINF:-1 tvg-id="MoreU.us" status="online",More U
+https://133a0f79750743b7bd41950eaec76dc1.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Plex_MoreU/e469a6e6-6a64-4bb7-a684-c7cd3b5d17de/5.m3u8
+#EXTINF:-1 tvg-id="MysteryAlley.us" status="online",Mystery Alley
+https://linear-293.frequency.stream/dist/studio/293/hls/master/playlist_1024x576.m3u8
+#EXTINF:-1 tvg-id="NacionTVInternacional.us" status="online",Nacion TV Internacional
+https://pop-hls.iptv-global.net/loadbalancer/naciontvint.m3u8
+#EXTINF:-1 tvg-id="NEWKMOVIES.us" status="online",NEW K.MOVIES
+https://7732c5436342497882363a8cd14ceff4.mediatailor.us-east-1.amazonaws.com/v1/manifest/04fd913bb278d8775298c26fdca9d9841f37601f/Plex_NewMovies/39cadfcf-4ad5-4215-b403-284735c3cb52/0.m3u8
+#EXTINF:-1 tvg-id="NEWKPOP.us" status="online",NEW K-POP
+https://2d2cb770b80a4e19bded6a526e1e9c9f.mediatailor.us-east-1.amazonaws.com/v1/manifest/04fd913bb278d8775298c26fdca9d9841f37601f/Plex_NewKID/72e5c61a-d167-4026-b05f-6999a76332f2/5.m3u8
+#EXTINF:-1 tvg-id="NTDTVWest.us" status="online",NTD TV West
+https://ntd02.akamaized.net/NTD-West/tracks-v2a1/mono.m3u8
+#EXTINF:-1 tvg-id="CBNFamily.us" status="online",CBN Family
+https://bcovlive-a.akamaihd.net/r602a47f47fee47bb83239eb1b1e1ac83/us-east-1/734546207001/playlist.m3u8
+#EXTINF:-1 tvg-id="OANPlus.us" status="online",OAN Plus
+https://cdn.herringnetwork.com/80A4DFF/oane_oregon_mt/v1/manifest/a00d26ef3921d96b2d27e2510a66b2a88504e065/OAN_Encore_Standalone/2fb32a3b-acb8-4e96-bbe1-189a57268e22/1.m3u8
+#EXTINF:-1 tvg-id="OCNTV.us" status="online",OCN TV
+https://5d658d7e9f562.streamlock.net/ocnbroadcasting.com/ocnbroadcasting2/playlist.m3u8
+#EXTINF:-1 tvg-id="Pac12Networks.us" status="online",Pac-12 Networks
+https://pac12-ono.amagi.tv/playlist/pac12-ono-pac12-hls/cb7c3e1e7b736f8f93cd3f6cd5f942a3d1543181573adc3066a25e9271c9150a84b4f7c9be1de7607eff62812b53310d0c78ce07de6c19a08724fc0e733f070afe88b37bc7991919d581512c2eb86a5657fa05059263592389bb5458cc7d927c0618e7463c0663dded58ad7742b3d948de2976c3b2dc613b635a4d8b595eeda359a0ade740438d3aa6ac1d49c07b58b6d4419ac914eed6d25397428222f6159b98f4b1e941d6c58f23a855f13d0d2a6417ddd42ac2cf5cb58aca246f99777f0b4f04e3a7dea64a68df0a1758ada89bbc31ab4a9fd97ddb3e5dd3019c5cca338b62ae7bf58b1ef1fbed8614136af5960b2c21f4e6f48bab3637e937aca6bbdf222ecea7127e14cb6880237369c5a59911d0e238b7910adfe5037539c4820b988ebb879df5e7098c24c996a6a733475a740b108d62a49b7ecf16ca7daaf117244f4650a28a6ac88fcf5b6a3725ed815ac75d1daecd888adb5c498c0a5f0ebb31df5a063c9d793a79e37ab4cb6d698d6b52816164b60c31d515acbb78a1fe8ab55e61f6b4af43fb7ca1a518ddf070de07490c53e6a27b091f7c5cf3bf3432077cc17af4c1c5e545ed618686a5416bce5a7d5b34734eedc1e67e9a8ac15b657ca37d0710b9948af47ebb47d0125d086ee813d6be0077847c52450b72ab3f2800a6cda58495d4c556ba6ad4c7bf4b47acc1f0df41670940a9d1a257e93959777517e5650768e42f080782f0b8d6fc439c94d5428a41337cafb9cae372a9181c42079e8261d45fada712ab94c448c3d57d732fb511ac1b1992dcdd23ada3d187073899a4531670849309f1337c97598470c8e579d6e6015d5c24161c99ce46e905e88fc8897bd36c8a4a0075e537e9ccb2e3863706b6d16c3a210c5318671d277c5ef68aa7116a11dbb529e252f1f815f812265411739ed35010d6923276fb18717aacacc78ad7bb2519d86bf27ad1204ee6600420e5c32ff9c1d5d7ff9464400fc9b4cf3edbdbe88baf87997107727de1d66715ede620fecddf14ce64/137/768x432_1478400/index.m3u8
+#EXTINF:-1 tvg-id="PartyPokerTV.us" status="online",Party Poker TV
+https://cdn19.fntvchannel.com/v1/manifest/02eeb1726c343dc9c30c32e93dee82013e157021/PartyPoker-Plex/08c1bed6-9780-438e-8403-1e42682aeb10/0.m3u8
+#EXTINF:-1 tvg-id="Pattrn.us" status="online",Pattrn
+https://121a1e2312234986a101ccb682512ecf.mediatailor.us-east-1.amazonaws.com/v1/manifest/385c85a93929f94966d0fb186fc33b431e6f1eb9/PATTRN_COM/95f7f320-306d-4cdc-95d0-6de40de1b8f9/2.m3u8
+#EXTINF:-1 tvg-id="PayameArameshTV.us" status="online",Payame Aramesh TV
+https://hls.keshishhamid.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PBCTapesh.us" status="online",PBC Tapesh
+http://iptv.tapesh.tv/tapeshiran/playlist1/index.m3u8
+#EXTINF:-1 tvg-id="ProWrestlingTV.us" status="online",Pro Wrestling TV
+https://stream.ads.ottera.tv/cl/c1362dc9-e19d-45fd-9705-2e604b3be3bc/1280x720_2300000_0_f.m3u8
+#EXTINF:-1 tvg-id="PWKids.us" status="online",PW Kids
+https://72c5b87587c545558c3170ab55de2915.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Plex_Tankee/1bb69cef-0cca-43fb-919b-8d2575bd1a8f/0.m3u8
+#EXTINF:-1 tvg-id="QuahzTV.us" status="online",QuaHZTV
+https://quahztv.secure.footprint.net/egress/bhandler/quahztv/streama/playlist.m3u8
+#EXTINF:-1 tvg-id="QuahzMusicChannel.us" status="online",QuaHZ Music Channel
+https://quahztv.secure.footprint.net/egress/bhandler/quahztv/streamb/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioyTelevisionMarti.us" status="online",Radio y Television Marti
+https://av.martinoticias.com/flash/Videoroot/Pangeavideo/2022/11/0/01/01e60000-0aff-0242-9ba3-08dac8e19d41_master.m3u8
+#EXTINF:-1 tvg-id="RealAmericasVoice.us" status="online",Real America's Voice
+https://content-ause1.uplynk.com/channel/c60462c9f81949369aeaffbfb8e9f7d6/e.m3u8?tc=1&exp=1669634172&rn=966009305&ct=c&cid=c60462c9f81949369aeaffbfb8e9f7d6&ad.format=vast&livestream=1&ad.platform=web&ad=wn_publica&ad._debug=testing&ad.player_width=1280&ad.player_height=720&ad.did=a461e3e9-184c-5dd4-a805-cc371f711c50&ad.vip=24.235.164.94&ad.ip=24.235.164.94&ad.content_channel=Real+Americas+Voice&ad.content_network=Real+Americas+Voice&ad.genre_id=News&ad.content_dist_name=Real+Americas+Voice&ad.site_id=6283&ad.site_page=americasvoicenews.com&sig=faba9a787756c64dd26f8e03be5b7f4579baa91a3a815ac2dd1f7a546369b160&pbs=fbfa14623b68449facd4ba51cce6577f
+#EXTINF:-1 tvg-id="RealLife.us" status="online",Real Life
+https://lds-realfamilies-plex.amagi.tv/amRdirect/app_store_url=https%3A%2F%2Fapp.plex.tv&ua=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A102.0)%20Gecko%2F20100101%20Firefox%2F102.0&w=&gdpr=0&gdpr_consent=0&brand_name=&X-Plex-Token=TGAGDJpg4wNMdrSyRjph&device_id_type=&coppa=0&partner_id=BAIWHAS002EP002&us_privacy=1---&device_type=desktop&dnt=1&channelId=5fd9089d102006002d33c0fc&did=&ifa_type=&app_name=plex&ip=2001%3A1970%3A5823%3Abc00%3A8598%3A548%3Ac186%3Acf88&device_model=&h=&url=app.plex.tv&app_bundle=com.plexapp.desktop&uid=1giuru97m-utvg-ep8-yh10-o78p8ir5si/hls/amagi_hls_data_ldsAAAAAA-realfamiliesplex/CDN/playlist.m3u8
+#EXTINF:-1 tvg-id="RetroCrush.us" status="online",RetroCrush
+https://192e29da899c428bbeb322147e6caba2.mediatailor.us-east-1.amazonaws.com/v1/manifest/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/ONO_RetroCrush/ecd89a14-4049-4b00-9629-bf0590d54bb8/3.m3u8
+#EXTINF:-1 tvg-id="RetroTVEast" status="online",Retro TV East
+https://bcovlive-a.akamaihd.net/5e531be3ed6c41229b2af2d9bffba88d/us-east-1/6183977686001/playlist.m3u8
+#EXTINF:-1 tvg-id="REVNEastern.us" status="online",REV'N Eastern
+https://bcovlive-a.akamaihd.net/a71236fdda1747999843bd3d55bdd6fa/us-east-1/6183977686001/playlist.m3u8
+#EXTINF:-1 tvg-id="RJTV.us" status="online",Radio Javan TV
+https://stream.rjtv.stream/live/smil:rjtv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTRPlanetaUSA.us" status="online",RTR-Planeta USA
+https://vgtrksmotrim.cdnvideo.ru/live/smil:rtrp.smil/playlist.m3u8?md5=GE6WNCrt72KLfUv-se4Dww&e=1669636980&hls_proxy_host=70b013ca21e8364cd537747cf862272b
