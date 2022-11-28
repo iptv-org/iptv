@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="7NN.es" status="online",7 Noticias (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/7nntv
-#EXTINF:-1 tvg-id="7NN.es" status="online",7 Noticias (1080p)
 https://amg01573-7nn-7nnono-ono-pcdj3.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="7NN.es" status="online",7 Noticias (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/7nntv
 #EXTINF:-1 tvg-id="7TelevisionRegiondeMurcia.es" status="error",7 Televisión Región de Murcia (1080p)
 https://rtv-murcia-live.globalmest.com/stream/abr/first.m3u8
 #EXTINF:-1 tvg-id="9laLomaTV.es" status="blocked",9 la Loma TV [Geo-blocked]
@@ -143,7 +143,7 @@ https://zone.controlstreams.com:5443/LiveApp/streams/islatel.m3u8
 https://ztnr.rtve.es/ztnr/1688877.m3u8
 #EXTINF:-1 tvg-id="La1Canarias.es" status="blocked",La 1 Canarias (576p) [Geo-blocked]
 https://hlsliveamdgl7-lh.akamaihd.net/i/hlslive_1@134665/master.m3u8
-#EXTINF:-1 tvg-id="La1Canarias.es" status="blocked",La 1 Canarias (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="La1Canarias.es" status="timeout",La 1 Canarias (576p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/5190066.m3u8
 #EXTINF:-1 tvg-id="La1Catalunya.es" status="timeout",La 1 Catalunya (576p) [Geo-blocked]
 https://ztnr.rtve.es/ztnr/3293681.m3u8
@@ -177,9 +177,9 @@ https://cdnlive.shooowit.net/la8zamoralive/smil:streamswitchingchannel.smil/play
 https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/laotra_1/index.m3u8
 #EXTINF:-1 tvg-id="LaUrbanTV.es" status="online",La Urban TV (1080p) [Not 24/7]
 https://urbanrevolution.es:8443/live/TV/playlist.m3u8
-#EXTINF:-1 tvg-id="LevanteTV.es" status="online",Levante TV (320p) [Not 24/7]
+#EXTINF:-1 tvg-id="LevanteTV.es" status="error",Levante TV (320p) [Not 24/7]
 https://play.cdn.enetres.net/C2F6CBB67E5B4D08A16CE5FE67ABCEC9023/029/playlist.m3u8
-#EXTINF:-1 tvg-id="LleidaTelevisio.es" status="error",Lleida Televisio (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LleidaTelevisio.es" status="blocked",Lleida Televisio (720p) [Not 24/7]
 https://cdn01.yowi.tv/lleida/playlist.m3u8
 #EXTINF:-1 tvg-id="LogosTV.es" status="online",Logos TV (1080p) [Not 24/7]
 http://streamer1.streamhost.org/salive/logosH/playlist.m3u8
@@ -281,7 +281,7 @@ http://78.41.83.88:8880/hls/unesd.m3u8
 http://ventdelnord.tv:8080/hls/directe.m3u8
 #EXTINF:-1 tvg-id="Vision6TV.es" status="online",Visión 6 TV (720p) [Not 24/7]
 https://secure3.todostreaming.es/live/visionseis-livestream.m3u8
-#EXTINF:-1 tvg-id="ZafraTV.es" status="error",Zafra TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ZafraTV.es" status="online",Zafra TV (720p) [Not 24/7]
 https://cloud.streamingconnect.tv:455/radiotvzafra/radiotvzafra.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",+tdp [Geo-blocked]
 https://hlsliveamdgl1-lh.akamaihd.net/i/hlsdvrlive_1@39732/master.m3u8
