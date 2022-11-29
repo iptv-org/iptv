@@ -11,12 +11,12 @@ https://live.creacast.com/grandlilletv/smil:grandlilletv.smil/playlist.m3u8
 https://live.creacast.com/grandlittoral/smil:grandlittoral.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BIPTV.fr" status="online",BIP TV (480p) [Not 24/7]
 http://biptv.tv/live/biptvstream_orig/index.m3u8
-#EXTINF:-1 tvg-id="C8.fr" status="online",C8 (1080p)
+#EXTINF:-1 tvg-id="C8.fr" status="blocked",C8 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/C8TV
+#EXTINF:-1 tvg-id="CanalPlusFrance.fr" status="online",Canal+ France
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CANALPLUS
 #EXTINF:-1 tvg-id="CanalPlusFrance.fr" status="blocked",Canal+ France [Geo-blocked]
 http://hls-m007.live-lv3.canalplus-cdn.net/live/disk/canalplusclair-hd/hls-ios-fhd-clair/canalplusclair-hd.m3u8
-#EXTINF:-1 tvg-id="CanalPlusFrance.fr" status="blocked",Canal+ France
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CANALPLUS
 #EXTINF:-1 tvg-id="CentralTV.fr" status="online",Central TV (614p) [Not 24/7]
 http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8
 #EXTINF:-1 tvg-id="CNews.fr" status="blocked",CNews (1080p)
@@ -25,7 +25,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CNE
 https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
-#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="error",El Heddaf TV [Geo-blocked]
+#EXTINF:-1 tvg-id="ElHeddafTV.fr" status="online",El Heddaf TV [Geo-blocked]
 https://cdn02.hta.dz/abr_htatv/EL_HEDDAF_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="EuronewsAlbania.al" status="online",Euronews Albania (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UChR-A__NS_C5kHDWj3PeAhw/live
@@ -139,7 +139,7 @@ http://51.210.199.59/hls/stream.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xkxbzc
 #EXTINF:-1 tvg-id="TeleGrenoble.fr" status="error",Tele Grenoble
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x128fjo
-#EXTINF:-1 tvg-id="Telesud.fr" status="online",TeleSud
+#EXTINF:-1 tvg-id="Telesud.fr" status="blocked",TeleSud
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7wrxqb
 #EXTINF:-1 tvg-id="TF1SeriesFilms.fr" status="online",TF1 Séries Films (360p)
 http://gratuittv.free.fr/Files/tfsf/live/playlist.m3u8
