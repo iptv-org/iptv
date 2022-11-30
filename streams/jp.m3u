@@ -49,6 +49,8 @@ http://cdn.us195.jpnettv.live:1935/jptv/bsnihontv_540/playlist.m3u8
 http://cdnv148.cloudrsst.com:1935/jptv/bsnihontv_540/playlist.m3u8
 #EXTINF:-1 tvg-id="BSNipponTV.jp" status="blocked",BS Nippon TV (540p)
 https://cdn.us195.jpnettv.live/jptv/bsnihontv_540/playlist.m3u8
+#EXTINF:-1 tvg-id="BSTBS.jp" status="online",BS TBS (480p)
+http://redlabmcdn.s.llnwi.net/nv02/bs05hd/index.m3u8
 #EXTINF:-1 tvg-id="BSTBS.jp" status="blocked",BS TBS (720p)
 http://cdn.us195.jpnettv.live:1935/jptv/bstbs_720/playlist.m3u8
 #EXTINF:-1 tvg-id="BSTBS.jp" status="blocked",BS TBS (720p)
@@ -59,8 +61,6 @@ http://cdn.us195.jpnettv.live:1935/jptv/bstbs_540/playlist.m3u8
 http://cdnv148.cloudrsst.com:1935/jptv/bstbs_540/playlist.m3u8
 #EXTINF:-1 tvg-id="BSTBS.jp" status="blocked",BS TBS (540p)
 https://cdn.us195.jpnettv.live/jptv/bstbs_540/playlist.m3u8
-#EXTINF:-1 tvg-id="BSTBS.jp" status="blocked",BS TBS (480p)
-http://redlabmcdn.s.llnwi.net/nv02/bs05hd/index.m3u8
 #EXTINF:-1 tvg-id="BSTVTokyo.jp" status="online",BS TV Tokyo (480p) [Not 24/7]
 http://redlabmcdn.s.llnwi.net/nv02/bs06hd/index.m3u8
 #EXTINF:-1 tvg-id="BSTVTokyo.jp" status="blocked",BS TV Tokyo (720p) [Not 24/7]
@@ -95,7 +95,7 @@ https://cdnv148.cloudrsst.com/jptv/disney_junior/playlist.m3u8
 https://cdnv148.cloudrsst.com/jptv/gekijjyou/playlist.m3u8
 #EXTINF:-1 tvg-id="FamilyGekijyo.jp" status="blocked",Family Gekijo (540p) [Not 24/7]
 https://cdn.us195.jpnettv.live/jptv/gekijjyou/playlist.m3u8
-#EXTINF:-1 tvg-id="GSTV.jp" status="online",GSTV (720p)
+#EXTINF:-1 tvg-id="GSTV.jp" status="error",GSTV (720p)
 https://gstv-tnz-gsmediastreaming.preview-jpea.channel.media.azure.net/dfd06b62-e9d1-4a7f-bcbb-89d2ecbc82ee/preview.ism/manifest(format=mpd-time-csf,audio-only=false)
 #EXTINF:-1 tvg-id="GunmaTV.jp" status="online",Gunma TV (720p)
 https://movie.mcas.jp/switcher/smil:mcas8.smil/master.m3u8
