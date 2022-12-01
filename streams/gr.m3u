@@ -14,9 +14,9 @@ http://alphatvlive.siliconweb.com/1/Y2Rsd1lUcUVoajcv/UVdCN25h/hls/live/playlist.
 #EXTINF:-1 tvg-id="APT.gr" status="online",APT (480p) [Not 24/7]
 http://tv3.streampulse.eu:1935/tilesport/movie2/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTV.gr" status="online",Baraza TV (1080p)
-https://eco.streams.ovh/BarazaTV/BarazaTV/playlist.m3u8
-#EXTINF:-1 tvg-id="BarazaTV.gr" status="online",Baraza TV (1080p)
 https://eco.streams.ovh/BarazaTV/BarazarazaTV/BarazaTV/playlist.m3u8
+#EXTINF:-1 tvg-id="BarazaTV.gr" status="online",Baraza TV (1080p)
+https://eco.streams.ovh/BarazaTV/BarazaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTV.gr" status="timeout",Baraza TV (1080p) [Geo-blocked]
 https://panik.cast-control.eu:1936/Admin_1/Admin_1/playlist.m3u8
 #EXTINF:-1 tvg-id="BCI24News.gr" status="online",BCI 24 News (720p)
@@ -51,13 +51,13 @@ https://ert-live-bcbs15228.siliconweb.com/media/ert_3/ert_3.m3u8
 https://ert-live-bcbs15228.siliconweb.com/media/ert_news/ert_news.m3u8
 #EXTINF:-1 tvg-id="ERTSports2.gr" status="timeout",ERT Sports 2 (1080p) [Geo-blocked]
 https://ert-live-bcbs15228.siliconweb.com/media/ert_sports_ww/ert_sports2_ww.m3u8
-#EXTINF:-1 tvg-id="ERTWorld.gr" status="error",ERT World (720p)
+#EXTINF:-1 tvg-id="ERTWorld.gr" status="timeout",ERT World (720p)
 https://ert-live-bcbs15228.siliconweb.com/media/ert_world/ert_world.m3u8
 #EXTINF:-1 tvg-id="ERTWorld.gr" status="error",ERT World (480p)
 http://wpso.com:1936/hls/wzra.m3u8
 #EXTINF:-1 tvg-id="FarosTV2.gr" status="blocked",Faros TV2 (480p) [Geo-blocked]
 https://s1.cystream.net/live/faros2/playlist.m3u8
-#EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
+#EXTINF:-1 tvg-id="FarosTV.gr" status="online",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
 #EXTINF:-1 tvg-id="Galaxy.gr" status="online",Galaxy (432p) [Geo-blocked]
 https://channel.streams.ovh:1936/galaxygr-1/galaxygr-1/playlist.m3u8
@@ -125,7 +125,7 @@ http://78.83.87.222:9999/play/a016/index.m3u8
 https://skai-live-back.siliconweb.com/media/cambria4/index.m3u8
 #EXTINF:-1 tvg-id="SkaiTV.gr" status="online",Skai (720p)
 https://skai-live.siliconweb.com/media/cambria4/index.m3u8
-#EXTINF:-1 tvg-id="SmileTV.gr" status="online",Smile TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SmileTV.gr" status="blocked",Smile TV (360p) [Geo-blocked]
 https://s1.cystream.net/live/smile/playlist.m3u8
 #EXTINF:-1 tvg-id="StarChannel.gr" status="online",Star (720p)
 https://livestar.siliconweb.com/media/star1/star1mediumhd.m3u8
@@ -153,7 +153,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/centertv
 https://ert-live-bcbs15228.siliconweb.com/media/ert_news_2/ert_news_2.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ERT Sports (1080p) [Geo-blocked]
 https://ertsports-live.ert.insyscd.net/out/v1/db0b54e8d25a47dcb336cf114c4d1860/ertsports-live.m3u8
-#EXTINF:-1 tvg-id="" status="online",Euro TV (720p)
+#EXTINF:-1 tvg-id="" status="error",Euro TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/eurochannel
 #EXTINF:-1 tvg-id="" status="online",Flash TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/flashtvgr
@@ -163,7 +163,7 @@ https://stream.ioniantv.gr/ionian/live_abr/playlist.m3u8
 http://stream.ioniantv.gr:8081/ionian/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",M.TV
 http://78.83.87.222:9999/play/a015/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Mega TV
+#EXTINF:-1 tvg-id="" status="blocked",Mega TV
 https://streamcdnb7-c98db5952cb54b358365984178fb898a.msvdn.net/live/S86713049/gonOwuUacAxM/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Star BUP
 http://78.83.87.222:9999/play/a017/index.m3u8
