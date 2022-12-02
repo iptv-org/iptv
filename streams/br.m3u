@@ -28,13 +28,13 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://stream01.msolutionbrasil.com.br/hls/canal25/live.m3u8
 #EXTINF:-1 tvg-id="CanaldoCriador.br" status="online",Canal do Criador (1080p)
 https://607d2a1a47b1f.streamlock.net/crur/smil:canaldocriador.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalMetropolitanodeNoticias.br" status="online",Canal Metropolitano de Noticia (720p)
+#EXTINF:-1 tvg-id="CanalMetropolitanodeNoticias.br" status="error",Canal Metropolitano de Noticia (720p)
 https://video01.logicahost.com.br/redebemtv/redebemtv/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalRural.br" status="online",Canal Rural (1080p)
 https://607d2a1a47b1f.streamlock.net/crur/smil:canalrural.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalSaude.br" status="online",Canal Saúde (360p) [Not 24/7]
 https://arkyvbre1g.zoeweb.tv/fiocruz/fiocruz/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalTVRio.br" status="online",Canal TV Rio (720p)
+#EXTINF:-1 tvg-id="CanalTVRio.br" status="error",Canal TV Rio (720p)
 https://video01.logicahost.com.br/canaltvrio/canaltvrio/playlist.m3u8
 #EXTINF:-1 tvg-id="CartoonitoBrazil.br" status="online",Cartoonito (Portuguese)
 https://playout.cdn.cartoonnetwork.com.br/playout_03/playlist.m3u8
@@ -126,10 +126,10 @@ https://dd8umsy8yf96u.cloudfront.net/live/cnt-riobranco_360p614k/index.m3u8
 https://dd8umsy8yf96u.cloudfront.net/live/cnt-rio_360p614k/index.m3u8
 #EXTINF:-1 tvg-id="RedeCNTSalvador.br" status="online",Rede CNT Salvador (360p)
 https://dd8umsy8yf96u.cloudfront.net/live/cnt-salvador_360p614k/index.m3u8
-#EXTINF:-1 tvg-id="RedeCNTSaoPaulo.br" status="online",Rede CNT (São Paulo) (360p) [Not 24/7]
-https://dd8umsy8yf96u.cloudfront.net/live/cnt-americana.m3u8
 #EXTINF:-1 tvg-id="RedeCNTSaoPaulo.br" status="online",Rede CNT Sao Paulo (360p)
 https://dd8umsy8yf96u.cloudfront.net/live/cnt-americana_360p614k/index.m3u8
+#EXTINF:-1 tvg-id="RedeCNTSaoPaulo.br" status="online",Rede CNT (São Paulo) (360p) [Not 24/7]
+https://dd8umsy8yf96u.cloudfront.net/live/cnt-americana.m3u8
 #EXTINF:-1 tvg-id="RedeFamilia.br" status="online",Rede Família (720p) [Not 24/7]
 https://5a1c76baf08c0.streamlock.net/familia/smil:familia.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeGospel.br" status="online",Rede Gospel (720p) [Not 24/7]
@@ -168,7 +168,7 @@ http://painelvj.com.br/tvaguaboa2/tvaguaboa2.sdp/playlist.m3u8
 http://evpp.mm.uol.com.br:1935/band_live/terraviva/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAberta.br" status="online",TV Aberta (1080p) [Not 24/7]
 https://cdn-canalpaulo.ciclano.io:1443/canalpaulo/canalpaulo/playlist.m3u8
-#EXTINF:-1 tvg-id="TVALMG.br" status="timeout",TV ALMG (720p)
+#EXTINF:-1 tvg-id="TVALMG.br" status="online",TV ALMG (720p)
 https://streaming.almg.gov.br/live/tvalmg.m3u8
 #EXTINF:-1 tvg-id="TVAlternativa.br" status="online",TV Alternativa
 https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8
@@ -276,9 +276,9 @@ http://200.189.113.201/hls/tve.m3u8
 http://rtmp.cdn.upx.net.br/00084/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSantaCruz.br" status="online",TV Santa Cruz (720p) [Not 24/7]
 https://rtmp.info/tvsantacruz/envivo/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSolComunidade.br" status="timeout",TV Sol Comunidade (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVSolComunidade.br" status="error",TV Sol Comunidade (480p) [Not 24/7]
 http://streaming03.zas.media:1935/tvsol/tvsol/playlist.m3u8
-#EXTINF:-1 tvg-id="TVThathi.br" status="online",TV Thathi (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVThathi.br" status="timeout",TV Thathi (720p) [Not 24/7]
 https://cdn-grupo-10049.ciclano.io:1443/grupo-10049/grupo-10049/playlist.m3u8
 #EXTINF:-1 tvg-id="TVUFG.br" status="online",TV UFG (720p) [Not 24/7]
 http://flash.softhost.com.br:1935/ufg/tvufgweb/playlist.m3u8
@@ -293,7 +293,7 @@ http://unitvaovivo.ufrgs.br:8080/live.ogg
 #EXTINF:-1 tvg-id="BandNews.br" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Bandnews (720p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://evpp.mm.uol.com.br/geob_band/bandnewstv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",BM&C [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",BM&C [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoja0MNI4SIvXqJR3szbSfw/live
 #EXTINF:-1 tvg-id="" status="online",CBTV Now (1080p)
 https://oj7lng29dg82-hls-live.5centscdn.com/lives/f7b44cfafd5c52223d5498196c8a2e7b.sdp/index.m3u8
