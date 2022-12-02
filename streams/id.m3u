@@ -6,7 +6,7 @@ https://v2.siar.us/aditv/livestream/chunks.m3u8
 https://h1.intechmedia.net/intech/ch4.m3u8
 #EXTINF:-1 tvg-id="Ainos.id" status="online",Ainos (576i)
 https://alfa.kugo.id/playout/ainos.stream/chunklist.m3u8
-#EXTINF:-1 tvg-id="AlBahjahTV.id" status="error" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Al-Bahjah TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="AlBahjahTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Al-Bahjah TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch64.m3u8
 #EXTINF:-1 tvg-id="AlImanTV.id" status="timeout",Al-Iman TV (720p) [Geo-blocked]
@@ -30,12 +30,12 @@ https://b1news.beritasatumedia.com/Beritasatu/B1News_manifest.m3u8
 https://b1english.beritasatumedia.com/Beritasatu/B1English_manifest.m3u8
 #EXTINF:-1 tvg-id="BeritaSatuWorld.id" status="online",BeritaSatu World (720p) [Not 24/7]
 https://b1world.beritasatumedia.com/Beritasatu/B1World_manifest.m3u8
-#EXTINF:-1 tvg-id="BETV.id" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",BETV (360p) [Not 24/7] [Geo-blocked]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
-https://h1.intechmedia.net/intech/ch58.m3u8
 #EXTINF:-1 tvg-id="BETV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",BETV (360p) [Not 24/7] [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch30.m3u8
+#EXTINF:-1 tvg-id="BETV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",BETV (360p) [Not 24/7] [Geo-blocked]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
+https://h1.intechmedia.net/intech/ch58.m3u8
 #EXTINF:-1 tvg-id="BinBazTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Bin Baz TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch22.m3u8
@@ -45,11 +45,11 @@ http://livestream.biznetvideo.net/biznet_adventure/smil:adventure.smil/playlist.
 http://livestream.biznetvideo.net/biznet_kids/smil:kids.smil/playlist.m3u8?bizkeyliveCustomParameter=myParameter&bizkeyliveendtime=0&bizkeylivehash=qAri1M2xu_MAlnHwVRtOs24lR8Y_HSDijN2CRNghifUllhYqQSDlkd0qE8CkZwxC&bizkeylivestarttime=0
 #EXTINF:-1 tvg-id="BiznetLifestyle.id" status="online",Biznet Lifestyle (720p)
 http://livestream.biznetvideo.net/biznet_lifestyle/smil:lifestyle.smil/playlist.m3u8?bizkeyliveCustomParameter=myParameter&bizkeyliveendtime=0&bizkeylivehash=jgDKPclcGdZfvrIDxfMdpT7v_srMWCbubntGo9cCYWpcBBQalMlLQxHswm43PbVR&bizkeylivestarttime=0
-#EXTINF:-1 tvg-id="BMSTV.id" status="error",Bayunmas TV (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="BMSTV.id" status="online",Bayunmas TV (720p) [Geo-blocked]
 https://v2.siar.us/bmstv/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="BRTV.id" status="online",BRTV (1080p) [Not 24/7]
 https://e1.siar.us/badartv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="BungoTV.id" status="online",Bungo TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="BungoTV.id" status="error",Bungo TV (480p) [Not 24/7]
 https://5bf7b725107e5.streamlock.net/bungotv/bungotv/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel4U.id" status="blocked",Channel 4U (720p) [Geo-blocked]
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(81b456ab-b398-4d35-ae05-9be0a173ad71)/index.m3u8
@@ -64,11 +64,11 @@ https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(d2f582be-366c-4c
 #EXTINF:-1 tvg-id="DMTVMalang.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",DMTV Malang (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch51.m3u8
-#EXTINF:-1 tvg-id="DutaTV.id" status="error",Duta TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="DutaTV.id" status="online",Duta TV (360p) [Not 24/7]
 https://dutatv.siar.us/dutatv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ElshintaTV.id" status="error",Elshinta TV (480p) [Not 24/7] [Geo-blocked]
 http://210.210.155.37/qwr9ew/s/s10/index.m3u8
-#EXTINF:-1 tvg-id="FajarTV.id" status="error",Fajar TV (240p) [Not 24/7]
+#EXTINF:-1 tvg-id="FajarTV.id" status="online",Fajar TV (240p) [Not 24/7]
 http://122.248.43.138:1935/ch27/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="GarudaTV.id" status="online",Garuda TV (720p) [Not 24/7]
 https://ms.digdaya.tv/live/digdayatv/live.m3u8
@@ -76,7 +76,7 @@ https://ms.digdaya.tv/live/digdayatv/live.m3u8
 https://wowza.convergen.co/gprtv/myLive/playlist.m3u8
 #EXTINF:-1 tvg-id="GPRTV.id" status="online",GPR TV (720p)
 https://alfa.kugo.id/gprtv/rtmp.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="HijrahTV.id" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Hijrah TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="HijrahTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Hijrah TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch8.m3u8
 #EXTINF:-1 tvg-id="HopeChannelIndonesia.id" status="online",Hope Channel Indonesia [Not 24/7]
@@ -100,18 +100,18 @@ https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(7a73ed02-e0de-4d
 http://122.248.43.138:1935/ch23/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="JawaPosTV.id" status="online",Jawa Pos TV (480p) [Not 24/7]
 https://v2.siar.us/jawapostv/live/chunks.m3u8
-#EXTINF:-1 tvg-id="JayaTVJayapura.id" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Jaya TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="JayaTVJayapura.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Jaya TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch29.m3u8
-#EXTINF:-1 tvg-id="JayaTVJayapura.id" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Jaya TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="JayaTVJayapura.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Jaya TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch52.m3u8
 #EXTINF:-1 tvg-id="JogjaIstimewaTV.id" status="online",Jogja Istimewa TV (720p)
 http://103.255.15.222:1935/tv/jitv_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="JogjaIstimewaTV.id" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Jogja Istimewa TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="JogjaIstimewaTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Jogja Istimewa TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch65.m3u8
-#EXTINF:-1 tvg-id="JogjaTV.id" status="error",Jogja TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JogjaTV.id" status="online",Jogja TV (720p) [Not 24/7]
 https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8
 #EXTINF:-1 tvg-id="JPMTV.id" status="online",JPM TV (720p) [Not 24/7]
 http://122.248.43.138:1935/ch6/myStream/playlist.m3u8
@@ -156,31 +156,31 @@ https://5bf7b725107e5.streamlock.net/mqtv/mqtv/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://m.youtube.com/c/OfficialMTATV/live
 #EXTINF:-1 tvg-id="MTATV.id" status="blocked",mta tv (720p) [Geo-blocked]
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(b3673fde-4acd-4f1d-95a5-a204d62545ac)/index.m3u8
-#EXTINF:-1 tvg-id="MuadzTV.id" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Muadz (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="MuadzTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Muadz (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch5.m3u8
-#EXTINF:-1 tvg-id="MyCinema.id" status="online",My Cinema (1080p)
+#EXTINF:-1 tvg-id="MyCinema.id" status="error",My Cinema (1080p)
 http://210.210.155.37/uq2663/h/h192/index.m3u8
 #EXTINF:-1 tvg-id="MyCinemaAsia.id" status="online",My Cinema Asia (1080p) [Geo-blocked]
 http://210.210.155.37/uq2663/h/h193/index.m3u8
 #EXTINF:-1 tvg-id="MyFamily.id" status="online",My Family Channel (1080p) [Geo-blocked]
 http://210.210.155.37/uq2663/h/h194/index.m3u8
-#EXTINF:-1 tvg-id="MyKidz.id" status="error",My Kidz (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="MyKidz.id" status="online",My Kidz (1080p) [Geo-blocked]
 http://210.210.155.37/uq2663/h/h191/index.m3u8
 #EXTINF:-1 tvg-id="NabawiTV.id" status="online",Nabawi TV (576p)
 https://alfa.kugo.id/nabawitv/nabawitv/playlist.m3u8
 #EXTINF:-1 tvg-id="NET.id" status="online",NET. [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtube.com/user/NetInsights/live
-#EXTINF:-1 tvg-id="NET.id" status="error",NET. (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NET.id" status="online",NET. (480p) [Geo-blocked]
 http://210.210.155.37/qwr9ew/s/s08/index.m3u8
 #EXTINF:-1 tvg-id="NiagaTV.id" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Niaga TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch10.m3u8
 #EXTINF:-1 tvg-id="NusantaraTV.id" status="online",Nusantara TV (720p)
 https://nusantaratv.siar.us/nusantaratv/live/chunks.m3u8
-#EXTINF:-1 tvg-id="OChannel.id" status="online",Moji (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="OChannel.id" status="error",Moji (480p) [Geo-blocked]
 http://210.210.155.37/qwr9ew/s/s41/index.m3u8
-#EXTINF:-1 tvg-id="OneTVAsia.sg" status="error",One TV Asia (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="OneTVAsia.sg" status="timeout",One TV Asia (576p) [Geo-blocked]
 http://210.210.155.37/uq2663/h/h143/index.m3u8
 #EXTINF:-1 tvg-id="PadangTV.id" status="online",Padang TV (720p) [Not 24/7]
 http://122.248.43.138:1935/ch16/myStream/playlist.m3u8
@@ -196,15 +196,15 @@ https://v3.siar.us/pontianaktelevisi/live/playlist.m3u8
 https://alfa.kugo.id/playout/pop.stream/chunklist.m3u8
 #EXTINF:-1 tvg-id="PujaTVAceh.id" status="online",Puja TV Aceh (1080p) [Not 24/7]
 https://v6.siar.us/pujatv/live/chunks.m3u8
-#EXTINF:-1 tvg-id="RadarLampungTV.id" status="error",Radar TV Lampung (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadarLampungTV.id" status="online",Radar TV Lampung (480p) [Not 24/7]
 http://122.248.43.138:1935/ch17/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioKitaTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",RadioKita TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch16.m3u8
+#EXTINF:-1 tvg-id="RajawaliTV.id" status="online",RTV (576p) [Geo-blocked]
+http://210.210.155.37/dr9445/h/h10/index.m3u8
 #EXTINF:-1 tvg-id="RajawaliTV.id" status="blocked",RTV (480p) [Geo-blocked]
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(41869351-4a9c-4e57-b54b-8cf5dfc919e1)/index.m3u8
-#EXTINF:-1 tvg-id="RajawaliTV.id" status="error",RTV (576p) [Geo-blocked]
-http://210.210.155.37/dr9445/h/h10/index.m3u8
 #EXTINF:-1 tvg-id="RasyaadTV.id" status="online",Rasyaad TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://m.youtube.com/c/RasyaadTvLiveStreaming/live
 #EXTINF:-1 tvg-id="RasyaadTV.id" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Rasyaad TV (360p) [Geo-blocked]
@@ -228,12 +228,12 @@ https://tv.rodja.live/live/ngrp:rodja_all/playlist.m3u8
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(2b945e2e-4297-4be9-9a45-aa023c890e13)/index.m3u8
 #EXTINF:-1 tvg-id="SaktiTV.id" status="online",Sakti TV (480p) [Not 24/7]
 https://v2.siar.us/saktitv/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="SalamTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Salam TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SalamTV.id" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Salam TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch12.m3u8
 #EXTINF:-1 tvg-id="SangajiTV.id" status="online",Sangaji TV (720p) [Not 24/7]
 https://cdn.gunadarma.ac.id/streams/sangajitv/ingestsangajitv.m3u8
-#EXTINF:-1 tvg-id="SCTV.id" status="error",SCTV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SCTV.id" status="online",SCTV (480p) [Geo-blocked]
 http://210.210.155.37/qwr9ew/s/s03/index.m3u8
 #EXTINF:-1 tvg-id="SEAToday.id" status="blocked",Sea Today (720p) [Geo-blocked]
 https://cdn-telkomsel-01.akamaized.net/Content/DASH/Live/channel(9ce3f094-4044-467e-84b7-b684a49571d5)/manifest.mpd
@@ -243,9 +243,9 @@ http://116.254.112.74/hls/cakralive.m3u8
 http://122.248.43.138:1935/ch4/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="SMTV.id" status="online",SMTV (720p) [Not 24/7]
 http://122.248.43.138:1935/ch25/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="SriwijayaTV.id" status="error",Sriwijaya TV [Not 24/7]
+#EXTINF:-1 tvg-id="SriwijayaTV.id" status="online",Sriwijaya TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/sriwijayatvonline
-#EXTINF:-1 tvg-id="SultraTV.id" status="error",Sultra TV (720p) offline
+#EXTINF:-1 tvg-id="SultraTV.id" status="online",Sultra TV (720p) offline
 http://122.248.43.138:1935/ch20/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="SunnahJalanPastiTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Sunnah Jalan Pasti TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
@@ -306,11 +306,11 @@ http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIJatengsemarang)/index.m3u8
 #EXTINF:-1 tvg-id="TVRICentralJava.id" status="online",TVRI Jawa Tengah (720p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIJATENGSEMARANG)/index.m3u8
 #EXTINF:-1 tvg-id="TVRICentralKalimantan.id" status="online",TVRI Kalimantan Tengah (480p)
+http://118.97.50.107/Content/HLS/Live/Channel(TVRIKALTENG)/index.m3u8
+#EXTINF:-1 tvg-id="TVRICentralKalimantan.id" status="online",TVRI Kalimantan Tengah (480p)
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIKalteng)/index.m3u8
 #EXTINF:-1 tvg-id="TVRICentralKalimantan.id" status="online",TVRI Kalimantan Tengah (480p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIKALTENG)/index.m3u8
-#EXTINF:-1 tvg-id="TVRICentralKalimantan.id" status="online",TVRI Kalimantan Tengah (480p)
-http://118.97.50.107/Content/HLS/Live/Channel(TVRIKALTENG)/index.m3u8
 #EXTINF:-1 tvg-id="TVRICentralSulawesi.id" status="online",TVRI Sulawesi Tengah (720p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRISULTENGPALU)/index.m3u8
 #EXTINF:-1 tvg-id="TVRICentralSulawesi.id" status="online",TVRI Sulawesi Tengah (720p)
@@ -337,10 +337,10 @@ http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIKALTIMSAM
 http://118.97.50.107/Content/HLS/Live/Channel(TVRINTTKUPANG)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIEastNusaTenggara.id" status="online",TVRI Nusa Tenggara Timur (480p)
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRINttkupang)/index.m3u8
+#EXTINF:-1 tvg-id="TVRIEastNusaTenggara.id" status="online",TVRI Nusa Tenggara Timur (480p)
+http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRINTTKUPANG)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIEastNusaTenggara.id" status="online",TVRI Nusa Tenggara Timur (576p)
 https://alfa.kugo.id/tvrintt/rtmp.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRIEastNusaTenggara.id" status="timeout",TVRI Nusa Tenggara Timur (480p)
-http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRINTTKUPANG)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIGorontalo.id" status="online",TVRI Gorontalo (480p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIGORONTALO)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIGorontalo.id" status="online",TVRI Gorontalo (480p)
@@ -360,9 +360,9 @@ http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRILampung)/index.m3u8
 #EXTINF:-1 tvg-id="TVRILampung.id" status="online",TVRI Lampung (720p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRILAMPUNG)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIMaluku.id" status="online",TVRI Maluku (480p)
-http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIMalukuambon)/index.m3u8
-#EXTINF:-1 tvg-id="TVRIMaluku.id" status="online",TVRI Maluku (480p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIMALUKUAMBON)/index.m3u8
+#EXTINF:-1 tvg-id="TVRIMaluku.id" status="online",TVRI Maluku (480p)
+http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIMalukuambon)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIMaluku.id" status="online",TVRI Maluku (480p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIMALUKUAMBON)/index.m3u8
 #EXTINF:-1 tvg-id="TVRINasional.id" status="online",TVRI Nasional (720p)
@@ -452,42 +452,42 @@ http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIYogyakarta)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIYogyakarta.id" status="online",TVRI Yogyakarta (720p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIYOGYAKARTA)/index.m3u8
 #EXTINF:-1 tvg-id="TVRParlemen.id" status="online",TVR Parlemen (720p) [Not 24/7]
-http://103.18.181.69:1935/golive/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemen.id" status="error",TVR Parlemen (720p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="TVRParlemen.id" status="error",TVR Parlemen (720p) [Not 24/7]
+http://103.18.181.69:1935/golive/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiI.id" status="online",TVR Parlemen Komisi I (480p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream1/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiI.id" status="error",TVR Parlemen Komisi I (480p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream1/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiII.id" status="online",TVR Parlemen Komisi II (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiII.id" status="error",TVR Parlemen Komisi II (720p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream2/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiII.id" status="online",TVR Parlemen Komisi II (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiII.id" status="error",TVR Parlemen Komisi II (720p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream2/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiIII.id" status="online",TVR Parlemen Komisi III (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiIII.id" status="error",TVR Parlemen Komisi III (480p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream3/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiIII.id" status="online",TVR Parlemen Komisi III (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiIII.id" status="error",TVR Parlemen Komisi III (480p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream3/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiIV.id" status="online",TVR Parlemen Komisi IV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiIV.id" status="error",TVR Parlemen Komisi IV (480p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream4/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiIV.id" status="online",TVR Parlemen Komisi IV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiIV.id" status="error",TVR Parlemen Komisi IV (480p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream4/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiIX.id" status="online",TVR Parlemen Komisi IX (480p) [Not 24/7]
-https://ssv1.dpr.go.id/golive/livestream9/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiIX.id" status="error",TVR Parlemen Komisi IX (480p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream9/playlist.m3u8
+#EXTINF:-1 tvg-id="TVRParlemenKomisiIX.id" status="online",TVR Parlemen Komisi IX (480p) [Not 24/7]
+https://ssv1.dpr.go.id/golive/livestream9/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiV.id" status="online",TVR Parlemen Komisi V (720p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream5/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiV.id" status="online",TVR Parlemen Komisi V (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiV.id" status="error",TVR Parlemen Komisi V (720p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream5/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiVI.id" status="online",TVR Parlemen Komisi VI [Not 24/7]
-https://ssv1.dpr.go.id/golive/livestream6/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiVI.id" status="error",TVR Parlemen Komisi VI [Not 24/7]
 http://103.18.181.69:1935/golive/livestream6/playlist.m3u8
+#EXTINF:-1 tvg-id="TVRParlemenKomisiVI.id" status="error",TVR Parlemen Komisi VI [Not 24/7]
+https://ssv1.dpr.go.id/golive/livestream6/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiVII.id" status="online",TVR Parlemen Komisi VII (480p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream7/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiVII.id" status="error",TVR Parlemen Komisi VII (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiVII.id" status="online",TVR Parlemen Komisi VII (480p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream7/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiVIII.id" status="online",TVR Parlemen Komisi VIII [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiVIII.id" status="error",TVR Parlemen Komisi VIII [Not 24/7]
 http://103.18.181.69:1935/golive/livestream8/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiVIII.id" status="error",TVR Parlemen Komisi VIII [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream8/playlist.m3u8
@@ -495,13 +495,13 @@ https://ssv1.dpr.go.id/golive/livestream8/playlist.m3u8
 http://103.18.181.69:1935/golive/livestream10/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiX.id" status="online",TVR Parlemen Komisi X (720p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream10/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemenKomisiXI.id" status="online",TVR Parlemen Komisi XI (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemenKomisiXI.id" status="error",TVR Parlemen Komisi XI (720p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream11/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRParlemenKomisiXI.id" status="error",TVR Parlemen Komisi XI (720p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream11/playlist.m3u8
 #EXTINF:-1 tvg-id="TVTabalong.id" status="online",TV Tabalong (720p) [Not 24/7]
 https://5bf7b725107e5.streamlock.net/tvtabalong/tvtabalong/playlist.m3u8
-#EXTINF:-1 tvg-id="UChannel.id" status="error",U Channel (576p) [Not 24/7] [Geo-blocked]
+#EXTINF:-1 tvg-id="UChannel.id" status="online",U Channel (576p) [Not 24/7] [Geo-blocked]
 http://210.210.155.37/x6bnqe/s/s73/index2.m3u8
 #EXTINF:-1 tvg-id="UFA24.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",UFA 24 (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
@@ -522,15 +522,15 @@ https://wowza.convergen.co/atvli/atvli.stream/playlist.m3u8
 http://210.210.155.37/x6bnqe/s/s38/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Dens Knowledge and Learning (576p) [Geo-blocked]
 http://210.210.155.37/x6bnqe/s/s36/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Dens Life Style (576p) [Geo-blocked]
-http://210.210.155.37/x6bnqe/s/s65/index2.m3u8
 #EXTINF:-1 tvg-id="" status="error",Dens Life Style (576p) [Geo-blocked]
 http://210.210.155.35/x6bnqe/s/s65/index2.m3u8
-#EXTINF:-1 tvg-id="" status="error",Dens Play (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="error",Dens Life Style (576p) [Geo-blocked]
+http://210.210.155.37/x6bnqe/s/s65/index2.m3u8
+#EXTINF:-1 tvg-id="" status="online",Dens Play (720p) [Geo-blocked]
 http://210.210.155.37/x6bnqe/s/s101/live.m3u8
 #EXTINF:-1 tvg-id="" status="online",Dens ShowBiz (576p) [Geo-blocked]
 http://210.210.155.37/x6bnqe/s/s35/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",dTVi (720p)
+#EXTINF:-1 tvg-id="" status="timeout",dTVi (720p)
 https://alfa.kugo.id/dtvi/rtmp.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ficom Channel (720p)
 https://v3.siar.us/ficomchannel/live/playlist.m3u8
@@ -542,7 +542,7 @@ https://alfa.kugo.id/playout/kugo1.stream/playlist.m3u8
 https://alfa.kugo.id/playout/KugoStar.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Pal TV (720p) [Not 24/7]
 http://122.248.43.138:1935/ch7/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online" user-agent="Mozilla/5.0 (X11; Linux x86_64)",RB TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",RB TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch59.m3u8
 #EXTINF:-1 tvg-id="" status="online",The Indonesia Channel
