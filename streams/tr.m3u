@@ -22,7 +22,7 @@ https://broadcasttr.com:446/altastv/bant1/index.m3u8
 https://live.al-zahratv.com/live/playlist.m3u8
 #EXTINF:-1 tvg-id="AnadoluAgency.tr" status="online",AA Live (720p) [Not 24/7]
 http://mtulqxgomrllive.mediatriple.net/mtulqxgomrllive/broadcast_59f9c0c785b88.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ArasTV.tr" status="error",ARAS TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="ArasTV.tr" status="online",ARAS TV (576p) [Not 24/7]
 http://1.rtmp.org/tv217/yayin.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="ASTV.tr" status="online",Bursa AS TV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/astv/bant1/playlist.m3u8
@@ -74,7 +74,7 @@ https://603c568fccdf5.streamlock.net/live/dhaweb1_C5efC/playlist.m3u8
 https://waw2.artiyerelmedya.net/dimtv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="DiyanetTV.tr" status="online",Diyanet TV (720p)
 https://eustr73.mediatriple.net/videoonlylive/mtikoimxnztxlive/broadcast_5e3bf95a47e07.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="DRTTV.tr" status="online",DRT TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="DRTTV.tr" status="error",DRT TV (720p) [Not 24/7]
 https://broadcasttr.com:446/drt/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="EgeTurkTV.tr" status="timeout",Ege Türk TV (480p)
 https://5be5d840359c6.streamlock.net/egeaturktv/egeaturktv/playlist.m3u8
@@ -115,17 +115,17 @@ https://tv.ensonhaber.com/tv/tr/haberturk/index.m3u8
 #EXTINF:-1 tvg-id="HalkTV.tr" status="online" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Halk TV (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://halktv-live.ercdn.net/halktv/halktv.m3u8
-#EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Not 24/7]
-https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="HunatTV.tr" status="error",Hunat TV (480p) [Not 24/7]
+https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p)
 http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p) [Not 24/7]
 https://npserver1.ibb.gov.tr/webtv/webtv_wowza1/playlist.m3u8
-#EXTINF:-1 tvg-id="IcelTV.tr" status="error",Icel TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="IcelTV.tr" status="online",Icel TV (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/iceltv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="IcelTV.tr" status="error",Icel TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="IcelTV.tr" status="online",Icel TV (720p) [Not 24/7]
 https://broadcasttr.com:446/iceltv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal3.tr" status="online",Kanal 3 (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/kanal3/bant1/playlist.m3u8
@@ -232,7 +232,7 @@ https://tv.ensonhaber.com/tv/tr/showtv/index.m3u8
 https://s01.vpis.io/sinopyildiz/sinopyildiz.m3u8
 #EXTINF:-1 tvg-id="SportsTV.tr" status="online",Sports TV (720p) [Geo-blocked]
 https://live.sportstv.com.tr/hls/low/sportstv.m3u8
-#EXTINF:-1 tvg-id="StarTV.tr" status="blocked",Star TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="StarTV.tr" status="online",Star TV (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=http://www.dailymotion.com/video/x729whv
 #EXTINF:-1 tvg-id="SunRTV.tr" status="online",Sun RTV (720p) [Not 24/7]
 https://tr.socialsmart.tv/suntv/bant1/chunks.m3u8
@@ -340,5 +340,5 @@ https://s01.vpis.io/ogun/ogun.m3u8
 http://145.239.37.125:20458/sabantv3/sabantv3/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Torba TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/torbatv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Yol TV (720p)
+#EXTINF:-1 tvg-id="" status="online",Yol TV (720p)
 https://stream.yol.tv:9443/medialive/yol.m3u8
