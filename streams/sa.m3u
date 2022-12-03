@@ -11,16 +11,16 @@ https://edge.taghtia.com/sa/4.m3u8
 http://82.212.74.3:8000/live/7513.m3u8
 #EXTINF:-1 tvg-id="AlMajdHolyQuran.sa" status="online",Al-Majd Holy Quran (576p)
 https://streann-msl4.akamaized.net/hls/live/2043201/quranhls2/master.m3u8
-#EXTINF:-1 tvg-id="AlMajdScientific.sa" status="online",Al-Majd Scientific (576p)
+#EXTINF:-1 tvg-id="AlMajdScientific.sa" status="error",Al-Majd Scientific (576p)
 https://streann-msl4.akamaized.net/hls/live/2043217/sciencehls/master.m3u8
 #EXTINF:-1 tvg-id="AlQuranAlKareemTV.sa" status="online",Al Quran Al Kareem TV (Mecca) (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/qurantvsa
 #EXTINF:-1 tvg-id="AlQuranAlKareemTV.sa" status="online",Al Quran Al Kareem TV (Mecca) (1080p) [Not 24/7]
 https://edge.taghtia.com/sa/7.m3u8
+#EXTINF:-1 tvg-id="AlQuranAlKareemTV.sa" status="online",Al Quran Al Kareem TV (Mecca) (720p) [Not 24/7]
+http://m.live.net.sa:1935/live/quran/playlist.m3u8
 #EXTINF:-1 tvg-id="AlQuranAlKareemTV.sa" status="timeout",Al Quran Al Kareem TV (Mecca) (720p)
 http://5b18be6964c2f.streamlock.net:1935/live/_definst_/quran/playlist.m3u8
-#EXTINF:-1 tvg-id="AlQuranAlKareemTV.sa" status="error",Al Quran Al Kareem TV (Mecca) (720p) [Not 24/7]
-http://m.live.net.sa:1935/live/quran/playlist.m3u8
 #EXTINF:-1 tvg-id="AlresalahTV.sa" status="online",Al-Resalah (1080p) [Geo-blocked]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-elressalah
 #EXTINF:-1 tvg-id="AlRiyadhRadio.sa" status="online",Al Riyadh Radio (720p)
@@ -35,10 +35,10 @@ https://edge.taghtia.com/sa/2.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/sunnatvsa
 #EXTINF:-1 tvg-id="AlSunnahAlNabawiyahTV.sa" status="online",Al Sunnah Al Nabawiyah TV (Medina) (1080p) [Not 24/7]
 https://edge.taghtia.com/sa/6.m3u8
+#EXTINF:-1 tvg-id="AlSunnahAlNabawiyahTV.sa" status="online",Al Sunnah Al Nabawiyah TV (Medina) (720p) [Not 24/7]
+http://m.live.net.sa:1935/live/sunnah/playlist.m3u8
 #EXTINF:-1 tvg-id="AlSunnahAlNabawiyahTV.sa" status="timeout",Al Sunnah Al Nabawiyah TV (Medina) (720p)
 http://5b18be6964c2f.streamlock.net:1935/live/_definst_/sunnah/playlist.m3u8
-#EXTINF:-1 tvg-id="AlSunnahAlNabawiyahTV.sa" status="error",Al Sunnah Al Nabawiyah TV (Medina) (720p) [Not 24/7]
-http://m.live.net.sa:1935/live/sunnah/playlist.m3u8
 #EXTINF:-1 tvg-id="Asharq.sa" status="online",Asharq (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AsharqNews/live
 #EXTINF:-1 tvg-id="Asharq.sa" status="online",Asharq (1080p)
@@ -53,11 +53,11 @@ https://bcovlive-a.akamaihd.net/ed81ac1118414d4fa893d3a83ccec9be/eu-central-1/62
 https://5aafcc5de91f1.streamlock.net/atfal1.com/atfal2/playlist.m3u8
 #EXTINF:-1 tvg-id="AtfalWaMawaheb.sa" status="online",Atfal Wa Mawaheb (1080p)
 https://5d658d7e9f562.streamlock.net/atfal1.com/atfal2/playlist.m3u8
+#EXTINF:-1 tvg-id="Ayaat.sa" status="online",Ayaat (720p)
+https://stream.holol.com/live/ayat/playlist.m3u8
 #EXTINF:-1 tvg-id="Ayaat.sa" status="error",Ayaat (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/ayaat_Group/live
-#EXTINF:-1 tvg-id="Ayaat.sa" status="error",Ayaat (720p)
-https://stream.holol.com/live/ayat/playlist.m3u8
-#EXTINF:-1 tvg-id="Beity.sa" status="timeout",Beity
+#EXTINF:-1 tvg-id="Beity.sa" status="error",Beity
 http://82.212.74.2:8000/live/7312.m3u8
 #EXTINF:-1 tvg-id="ENTV.sa" status="timeout",EN TV
 http://82.212.74.100:8000/live/8130.m3u8
@@ -124,9 +124,9 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-clip
 #EXTINF:-1 tvg-id="RotanaComedy.sa" status="online",Rotana Comedy (1080p) [Geo-blocked]
 https://rotanastudios-rotanacomedy-1-eu.xiaomi.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RotanaDrama.sa" status="online",Rotana Drama (1080p) [Geo-blocked]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-drama
-#EXTINF:-1 tvg-id="RotanaDrama.sa" status="online",Rotana Drama (1080p) [Geo-blocked]
 https://rotanastudios-rotanadrama-1-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RotanaDrama.sa" status="error",Rotana Drama (1080p) [Geo-blocked]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-drama
 #EXTINF:-1 tvg-id="RotanaKhalijia.sa" status="online",Rotana Khalijia (1080p) [Geo-blocked]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live
 #EXTINF:-1 tvg-id="RotanaKhalijia.sa" status="online",Rotana Khalijia (1080p)
@@ -135,10 +135,10 @@ https://shls-rotanakhalijia-prod-dub.shahid.net/out/v1/a639fd49db684f1b8c063d398
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-kids
 #EXTINF:-1 tvg-id="RotanaKids.sa" status="online",Rotana Kids (1080p)
 https://shls-rotanakids-prod-dub.shahid.net/out/v1/df6e0eb3cdc4410b98209aafc8677cef/index.m3u8
-#EXTINF:-1 tvg-id="RotanaMusic.sa" status="online",Rotana Music (1080p) [Geo-blocked]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-music
 #EXTINF:-1 tvg-id="RotanaMusic.sa" status="online",Rotana Music (1080p)
 https://rotanastudios-rotanamusic-1-eu.xiaomi.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RotanaMusic.sa" status="error",Rotana Music (1080p) [Geo-blocked]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-music
 #EXTINF:-1 tvg-id="RotanaPlusHD.sa" status="online",Rotana+ (1080p)
 https://shls-rotanaplus-prod-dub.shahid.net/out/v1/1fc6103458be480b96e6a574b00fe1c0/index.m3u8
 #EXTINF:-1 tvg-id="SaudiaRadio.sa" status="online",Saudia Radio (720p)
