@@ -1,12 +1,12 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ATB.bo" status="online",ATB La Paz
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x84eirw
-#EXTINF:-1 tvg-id="ATB.bo" status="online",ATB Santa Cruz
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x84t82c
 #EXTINF:-1 tvg-id="ATB.bo" status="online",ATB Cochabamba
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x89sfvo
 #EXTINF:-1 tvg-id="ATB.bo" status="online",ATB (614p) [Not 24/7]
 http://186.121.206.197/live/daniel/index.m3u8
+#EXTINF:-1 tvg-id="ATB.bo" status="error",ATB Santa Cruz
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x84t82c
 #EXTINF:-1 tvg-id="BoliviaTV72.bo" status="online",Bolivia TV 7.2 (480p)
 https://video1.getstreamhosting.com:1936/8224/8224/playlist.m3u8
 #EXTINF:-1 tvg-id="BoliviaTV72Deportes.bo" status="online",Bolivia TV 7.2 Deportes (720p)
@@ -21,8 +21,6 @@ https://streannlivecontactobolivia.cachefly.net/contactobolivia1/contactobolivia
 https://tv.portalexpress.es:3044/live/dtplaylive.m3u8
 #EXTINF:-1 tvg-id="MarivisionTV.bo" status="online",Marivisión TV
 https://stmv.panel.grupolimalive.com/marvision/marvision/playlist.m3u8
-#EXTINF:-1 tvg-id="MegaTV.bo" status="error",MegaTV (720p) [Not 24/7]
-https://solo.disfrutaenlared.com:1936/tvcbba/tvcbba/playlist.m3u8
 #EXTINF:-1 tvg-id="MegaTVYacuiba.bo" status="online",MegaTV (Yacuiba) (720p) [Not 24/7]
 https://stmv.panel.grupolimalive.com/mega/mega/playlist.m3u8
 #EXTINF:-1 tvg-id="PAT.bo" status="online",PAT (720p)
@@ -31,9 +29,9 @@ https://master.tucableip.com/pat/playlist.m3u8
 http://streamer1.streamhost.org:1935/salive/GMIredadvenirm/playlist.m3u8
 #EXTINF:-1 tvg-id="RenuevaDigital.bo" status="blocked",Renueva Digital (720p)
 https://inliveserver.com:1936/8158/8158/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP.bo" status="online",RTP (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTP.bo" status="error",RTP (720p) [Not 24/7]
 http://136.243.3.70:1935/RtpBolivia/RtpBolivia/playlist.m3u8
-#EXTINF:-1 tvg-id="RTP.bo" status="online",RTP (614p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTP.bo" status="error",RTP (614p) [Not 24/7]
 http://www.channel.tevemi.com:1935/Atb/Atb/playlist.m3u8
 #EXTINF:-1 tvg-id="SEOTV.bo" status="online",SEO TV (1080p)
 https://live.seo.tv.bo/live/1SEO.m3u8
@@ -41,15 +39,15 @@ https://live.seo.tv.bo/live/1SEO.m3u8
 https://live.seo.tv.bo/live/2SEO.m3u8
 #EXTINF:-1 tvg-id="SEOTVNovelas.bo" status="online",SEO TV Novelas (1080p)
 https://live.seo.tv.bo/live/3SEO.m3u8
-#EXTINF:-1 tvg-id="TVU.bo" status="online",TVU (276p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVU.bo" status="error",TVU (276p) [Not 24/7]
 http://136.243.3.70:1935/TvUniversitaria/TvUniversitaria/playlist.m3u8
-#EXTINF:-1 tvg-id="TVUniversitaria.bo" status="online",TV Universitaria (276p)
+#EXTINF:-1 tvg-id="TVUniversitaria.bo" status="error",TV Universitaria (276p)
 https://614013e273786.streamlock.net/TvUniversitaria/TvUniversitaria/playlist.m3u8
 #EXTINF:-1 tvg-id="TVUSucre.bo" status="online",TVU Sucre
 https://solo.disfrutaenlared.com:1936/tuch/ngrp:tuch_all/playlist.m3u8
 #EXTINF:-1 tvg-id="UnitelSantaCruz.bo" status="error",Unitel Santa Cruz [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7vsezg
-#EXTINF:-1 tvg-id="XTOTV.bo" status="online",XTOTV (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="XTOTV.bo" status="error",XTOTV (404p) [Not 24/7]
 http://www.channel.tevemi.com:1935/XtoTv/XtoTv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Red Uno HD (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x825whp
