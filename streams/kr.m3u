@@ -17,7 +17,7 @@ https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/pl
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="online",Arirang (720p)
 https://amdlive-ch03-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BadukTV.kr" status="online",Baduk TV (540p)
+#EXTINF:-1 tvg-id="BadukTV.kr" status="error",Baduk TV (540p)
 http://mytv.dothome.co.kr/ch/catv/251.php
 #EXTINF:-1 tvg-id="BBSTV.kr" status="online",BBS Buddhist Broadcasting (1080p)
 http://bbstv.clouducs.com:1935/bbstv-live/livestream/playlist.m3u8
@@ -49,7 +49,7 @@ http://211.33.246.4:32954/cj_live/myStream.sdp/playlist.m3u8
 http://mytv.dothome.co.kr/ch/catv/228.php
 #EXTINF:-1 tvg-id="CinemaHeaven.kr" status="online",Cinema Heaven (540p)
 http://mytv.dothome.co.kr/ch/catv/231.php
-#EXTINF:-1 tvg-id="CJBTV.kr" status="online",SBS CJB (CJB청주방송) (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="CJBTV.kr" status="blocked",SBS CJB (CJB청주방송) (540p) [Not 24/7]
 http://1.222.207.80:1935/live/cjbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="CJOnStyle.kr" status="online",CJ OnStyle (540p)
 https://live-ch1.cjonstyle.net/cjmalllive/stream2/playlist.m3u8
@@ -133,15 +133,15 @@ http://mytv.dothome.co.kr/ch/catv/249.php
 https://61ff3340258d2.streamlock.net/jtv_live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="KBCTV.kr" status="online",SBS KBC (KBC 광주방송) (1080p) [Not 24/7]
 http://119.200.131.11:1935/KBCTV/tv/playlist.m3u8
-#EXTINF:-1 tvg-id="KBS1TV.kr" status="timeout",KBS1 (720p)
+#EXTINF:-1 tvg-id="KBS1TV.kr" status="blocked",KBS1 (720p)
 http://ye23.vip/z7z8/2021/kbs2020.php?id=1
 #EXTINF:-1 tvg-id="KBS2TV.kr" status="blocked",KBS2 (720p) [Not 24/7]
 http://ye23.vip/z7z8/2021/kbs2020.php?id=2
-#EXTINF:-1 tvg-id="KBSDrama.kr" status="online",KBS Drama (480p)
+#EXTINF:-1 tvg-id="KBSDrama.kr" status="timeout",KBS Drama (480p)
 http://ye23.vip/z7z8/2021/kbs2020.php?id=5
-#EXTINF:-1 tvg-id="KBSJoy.kr" status="timeout",KBS Joy (480p)
+#EXTINF:-1 tvg-id="KBSJoy.kr" status="online",KBS Joy (480p)
 http://ye23.vip/z7z8/2021/kbs2020.php?id=6
-#EXTINF:-1 tvg-id="KBSKids.kr" status="online",KBS Kids (480p)
+#EXTINF:-1 tvg-id="KBSKids.kr" status="timeout",KBS Kids (480p)
 http://ye23.vip/z7z8/2021/kbs2020.php?id=9
 #EXTINF:-1 tvg-id="KBSKorea.kr" status="timeout",KBS Korea (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC5BMQOsAB8hKUyHu9KI6yig/live
@@ -151,7 +151,7 @@ http://ye23.vip/z7z8/2021/kbs2020.php?id=7
 http://kbs-dokdo.gscdn.com/dokdo_300/dokdo_300.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="KBSNewsD.kr" status="blocked",KBS News D (720p)
 http://ye23.vip/z7z8/2021/kbs2020.php?id=4
-#EXTINF:-1 tvg-id="KBSStory.kr" status="timeout",KBS Story (480p)
+#EXTINF:-1 tvg-id="KBSStory.kr" status="online",KBS Story (480p)
 http://ye23.vip/z7z8/2021/kbs2020.php?id=8
 #EXTINF:-1 tvg-id="KBSWorld.kr" status="online",KBS World (720p)
 https://kbsworld-ott.akamaized.net/hls/live/2002341/kbsworld/master.m3u8
@@ -177,7 +177,7 @@ http://mytv.dothome.co.kr/ch/catv/26.php
 https://624a79c87201d.streamlock.net/MBCTV/TV1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="MBCNet.kr" status="blocked",MBC Net (480p) [Geo-blocked]
 http://mytv.dothome.co.kr/ch/catv/28.php
-#EXTINF:-1 tvg-id="MBCTV.kr" status="online",MBC (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MBCTV.kr" status="error",MBC (1080p) [Not 24/7]
 http://123.254.72.24:1935/tvlive/livestream2/playlist.m3u8
 #EXTINF:-1 tvg-id="Mnet.kr" status="online",Mnet (540p)
 http://mytv.dothome.co.kr/ch/catv/224.php
@@ -269,11 +269,11 @@ http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/pla
 http://amdlive.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Arirang Radio (720p)
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",GoodTV (1080p)
+#EXTINF:-1 tvg-id="" status="error",GoodTV (1080p)
 http://mobliestream.c3tv.com:1935/live/goodtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",JCN TV
 https://jcnonair-1108.acs.wecandeo.com/ms/3162/1108/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",KBS News
+#EXTINF:-1 tvg-id="" status="error",KBS News
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCcQTRi69dsVYHN3exePtZ1A/live
 #EXTINF:-1 tvg-id="" status="online",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
@@ -281,7 +281,7 @@ https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
 http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Korean Song Channel
 http://live.kytv.co.kr:8080/hls/stream.m3u8
-#EXTINF:-1 tvg-id="" status="error",tvN Asia (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="" status="online",tvN Asia (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h20/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",tvN Movies (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h21/index.m3u8
