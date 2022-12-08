@@ -115,10 +115,10 @@ https://tv.ensonhaber.com/tv/tr/haberturk/index.m3u8
 #EXTINF:-1 tvg-id="HalkTV.tr" status="online" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Halk TV (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://halktv-live.ercdn.net/halktv/halktv.m3u8
-#EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Geo-blocked]
-https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
+#EXTINF:-1 tvg-id="HunatTV.tr" status="online",Hunat TV (480p) [Geo-blocked]
+https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p)
 http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="online",IBB TV (1080p) [Not 24/7]
@@ -147,9 +147,9 @@ https://waw2.artiyerelmedya.net/kanal23/bant1/playlist.m3u8
 https://waw2.artiyerelmedya.net/kanal26/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal32.tr" status="online",Kanal 32 (480p) [Not 24/7]
 https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Kanal33.tr" status="blocked",Kanal 33 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal33.tr" status="online",Kanal 33 (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/kanal33/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Kanal33.tr" status="blocked",Kanal 33 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal33.tr" status="online",Kanal 33 (720p) [Not 24/7]
 https://broadcasttr.com:446/kanal33/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal34.tr" status="timeout",Kanal 34 (720p) [Not 24/7]
 http://live.arkumedia.com:1935/kanal34tv/kanal34tv/playlist.m3u8
@@ -302,7 +302,7 @@ http://stream.taksimbilisim.com:1935/tv52/smil:tv52.smil/playlist.m3u8
 https://broadcasttr.com:446/tv52/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="TV100.tr" status="online",tv100 (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/watch?v=8jEXHzMTR7s
-#EXTINF:-1 tvg-id="TVDen.tr" status="online",TV Den (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVDen.tr" status="error",TV Den (576p) [Not 24/7]
 http://canli.tvden.com.tr/hls/live.m3u8
 #EXTINF:-1 tvg-id="TVEm.tr" status="online",TV Em (486p)
 http://cdn-tvem.yayin.com.tr/TVEM/TVEM/playlist.m3u8
