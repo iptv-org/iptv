@@ -7,7 +7,7 @@ https://svs.itworkscdn.net/alimanlive/imantv.smil/playlist.m3u8
 http://185.105.4.151:8080/_defapp_/ittihad/index.m3u8
 #EXTINF:-1 tvg-id="AlIttihad.lb" status="timeout",Al Ittihad (552p) [Not 24/7]
 https://live.alittihad.tv:444/ittihad/index.m3u8
-#EXTINF:-1 tvg-id="AlJadeed.lb" status="online",Al Jadeed (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlJadeed.lb" status="timeout",Al Jadeed (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/aljadeedtv
 #EXTINF:-1 tvg-id="AlManar.lb" status="timeout",Al Manar (576p) [Not 24/7]
 https://manar.live/iptv/playlist.m3u8
@@ -19,10 +19,8 @@ https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
 http://istream.binarywaves.com:8081/hls/arabica/playlist.m3u8
 #EXTINF:-1 tvg-id="CharityTV.lb" status="online",CharityTV (1080p) [Not 24/7]
 http://185.105.4.236:1935/live/ngrp:livestream_all/live.m3u8
-#EXTINF:-1 tvg-id="MTVLebanon.lb" status="online",MTV Lebanon (1080p)
+#EXTINF:-1 tvg-id="MTVLebanon.lb" status="timeout",MTV Lebanon (1080p)
 https://live.3cd.io/v1/broadcast/mtv/playlist.m3u8
-#EXTINF:-1 tvg-id="OneTVLebanon.lb" status="online",One TV Lebanon (1080p)
-https://live.3cd.io/v1/broadcast/one/playlist.m3u8
 #EXTINF:-1 tvg-id="NabaaTV.lb" status="online",Nabaa TV (720p) [Not 24/7]
 http://31.14.40.237:1935/live/Nabaa/playlist.m3u8
 #EXTINF:-1 tvg-id="NabaaTV.lb" status="timeout",Nabaa TV (720p) [Not 24/7]
@@ -35,6 +33,8 @@ https://svs.itworkscdn.net/nour8satlive/livestream/playlist.m3u8
 https://svs.itworkscdn.net/nour9satlive/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="Noursat.lb" status="timeout",NourSAT (576p)
 https://svs.itworkscdn.net/nour4satlive/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="OneTVLebanon.lb" status="timeout",One TV Lebanon (1080p)
+https://live.3cd.io/v1/broadcast/one/playlist.m3u8
 #EXTINF:-1 tvg-id="OTV.lb" status="online",OTV (720p) [Not 24/7]
 http://62.182.82.104/OTV/index.m3u8?token=test
 #EXTINF:-1 tvg-id="TahaTV.lb" status="timeout",Taha TV (360p) [Not 24/7]
@@ -42,7 +42,5 @@ https://media2.livaat.com/TAHA-TV/index.m3u8
 #EXTINF:-1 tvg-id="TeleLiban.lb" status="blocked",Tele Liban (720p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://www.teleliban.com.lb/live
 https://cdn.catiacast.video/abr/ed8f807e2548db4507d2a6f4ba0c4a06/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSeventeen.lb" status="error",TV Seventeen (720p)
-https://cdn.tvseventeen.com/test_tv_seventeen/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Al Wifak (480p)
 http://alwifaklive.info:1935/live/myStream/playlist.m3u8
