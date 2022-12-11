@@ -87,7 +87,7 @@ http://ott-cdn.ucom.am/s14/04.m3u8
 #EXTINF:-1 tvg-id="Che.ru" status="timeout" user-agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178",Че! (540p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178
 https://zabava-htlive.cdn.ngenix.net/hls/CH_PERETZ/variant.m3u8
-#EXTINF:-1 tvg-id="Cinema.ru" status="error",Cinema (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Cinema.ru" status="timeout",Cinema (576p) [Not 24/7]
 https://sc.id-tv.kz/Cinema.m3u8
 #EXTINF:-1 tvg-id="CTC.ru" status="timeout" user-agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178",СТС (540p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178
@@ -162,7 +162,7 @@ https://edge2.uk.kab.tv/live/tvrus-rus-medium/playlist.m3u8
 https://zabava-htlive.cdn.ngenix.net/hls/CH_KARUSEL/variant.m3u8
 #EXTINF:-1 tvg-id="Kavkaz24.ru" status="blocked",Кавказ 24 (720p) [Geo-blocked]
 https://strm.yandex.ru/kal/kavkaz24_supres/kavkaz24_supres0.m3u8
-#EXTINF:-1 tvg-id="Khabar24.kz" status="error",Хабар 24 (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Khabar24.kz" status="timeout",Хабар 24 (576p) [Not 24/7]
 https://sc.id-tv.kz/Khabar_24.m3u8
 #EXTINF:-1 tvg-id="Kinohit.ru" status="timeout",Кинохит (404p) [Not 24/7]
 https://sc.id-tv.kz/Kinohit_hd.m3u8
@@ -329,7 +329,7 @@ http://ott.inmart.tv:8081/18/index.m3u8
 http://5.164.24.83/tula/1tv_low/index.m3u8
 #EXTINF:-1 tvg-id="Pobeda.ru" status="timeout",Победа (576p) [Not 24/7]
 https://sc.id-tv.kz/Pobeda.m3u8
-#EXTINF:-1 tvg-id="Poehali.ru" status="error",Поехали! (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="Poehali.ru" status="timeout",Поехали! (576p) [Not 24/7]
 https://sc.id-tv.kz/poehali.m3u8
 #EXTINF:-1 tvg-id="Prima.ru" status="timeout" user-agent="Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178",Прима (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux aarch64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.84 Safari/537.36 CrKey/1.21a.76178
@@ -474,10 +474,10 @@ https://live2.mediacdn.ru/sr1/sever-mobile/playlist.m3u8
 https://live2.mediacdn.ru/sr1/sever/playlist.m3u8
 #EXTINF:-1 tvg-id="Sever.ru" status="timeout",Север (Нарьян-Мар) (1080p)
 https://live.mediacdn.ru/sr1/sever/playlist.m3u8
+#EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (576p) [Geo-blocked]
+http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (512p) [Geo-blocked]
 http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout",Шансон ТВ (576p) [Geo-blocked]
-http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout",Шансон ТВ (576p) [Geo-blocked]
 http://uiptv.do.am/1ufc/602079679/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Шансон ТВ (480p)
