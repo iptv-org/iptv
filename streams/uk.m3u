@@ -192,7 +192,7 @@ https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:cbbc_hd/mo
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:cbbc_hd/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="CBBC.uk" status="blocked",CBBC HD (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:cbbc_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="Channel4.uk" status="timeout",Channel 4 (1080p)
+#EXTINF:-1 tvg-id="Channel4.uk" status="blocked",Channel 4 (1080p)
 https://cdnuk001.broadcastcdn.net/KUK-CHANNEL4/playlist.m3u8
 #EXTINF:-1 tvg-id="ChannelS.uk" status="timeout",Channel S (US Pacific) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
@@ -245,15 +245,15 @@ https://live.playstop.me/1816184091/index.m3u8
 https://live.playstop.me/LS-63503-4/index.m3u8
 #EXTINF:-1 tvg-id="IslamChannel.uk" status="timeout",Islam Channel (576p) [Not 24/7]
 https://live.islamchannel.tv/islamtv_english/live.m3u8
-#EXTINF:-1 tvg-id="ITV2.uk" status="blocked",ITV2 (1080p)
-https://cdnuk001.broadcastcdn.net/KUK-ITV2/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV2.uk" status="timeout",ITV2 (576p) [Not 24/7]
 http://93.190.139.35:8278/streams/d/itv2_antik/playlist.m3u8
+#EXTINF:-1 tvg-id="ITV2.uk" status="timeout",ITV2 (1080p)
+https://cdnuk001.broadcastcdn.net/KUK-ITV2/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV3.uk" status="timeout",ITV3 (720p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV3/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV4.uk" status="timeout",ITV4 (576p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV4/playlist.m3u8
-#EXTINF:-1 tvg-id="ITVBe.uk" status="blocked",ITVBe (576p)
+#EXTINF:-1 tvg-id="ITVBe.uk" status="timeout",ITVBe (576p)
 https://cdnuk001.broadcastcdn.net/KUK-ITVBE/playlist.m3u8
 #EXTINF:-1 tvg-id="JewelleryMaker.uk" status="timeout",Jewelery Maker (1080p)
 https://lo2-1.gemporia.com/abrjewellerymaker/smil:livestream.smil/playlist.m3u8
