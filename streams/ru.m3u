@@ -396,7 +396,7 @@ https://rt-rtd.rttv.com/live/rtdoc/playlist.m3u8
 #EXTINF:-1 tvg-id="RTDoc.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",RT Documentary Russian (480p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s93/index.m3u8
-#EXTINF:-1 tvg-id="RTenEspanol.ru" status="timeout",RT en Español (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RTenEspanol.ru" status="blocked",RT en Español (1080p) [Geo-blocked]
 https://rt-esp.rttv.com/live/rtesp/playlist.m3u8
 #EXTINF:-1 tvg-id="RTFrance.fr" status="timeout",RT France (1080p) [Geo-blocked]
 https://rt-fra.rttv.com/live/rtfrance/playlist.m3u8
@@ -474,10 +474,10 @@ https://live2.mediacdn.ru/sr1/sever-mobile/playlist.m3u8
 https://live2.mediacdn.ru/sr1/sever/playlist.m3u8
 #EXTINF:-1 tvg-id="Sever.ru" status="timeout",Север (Нарьян-Мар) (1080p)
 https://live.mediacdn.ru/sr1/sever/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (576p) [Geo-blocked]
-http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (512p) [Geo-blocked]
 http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout",Шансон ТВ (576p) [Geo-blocked]
+http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout",Шансон ТВ (576p) [Geo-blocked]
 http://uiptv.do.am/1ufc/602079679/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Шансон ТВ (480p)
