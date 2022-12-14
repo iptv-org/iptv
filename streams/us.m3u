@@ -309,7 +309,7 @@ https://www.cbsnews.com/common/video/cbsn-ny-prod.m3u8
 https://cbsn-pit.cbsnstream.cbsnews.com/out/v1/6966dabf8150405ab26f854e3cd6a2b8/master.m3u8
 #EXTINF:-1 tvg-id="CBSNewsSacramento.us" status="timeout",CBS News Sacramento (720p)
 https://cbsnews.akamaized.net/hls/live/2020607/cbsnsac_2/master.m3u8
-#EXTINF:-1 tvg-id="CCPSEducationChannel.us" status="timeout",Collier County Public Schools CCPS Education Channel (Naples FL) (480p)
+#EXTINF:-1 tvg-id="CCPSEducationChannel.us" status="error",Collier County Public Schools CCPS Education Channel (Naples FL) (480p)
 https://watch.collierschools.com/EducationChannel/educhannel.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CCTV.us" status="timeout",Charlotte County CC-TV (Charlotte County FA) (720p)
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/charlotte/G0055_002/playlist.m3u8
@@ -373,7 +373,7 @@ https://edge-f.swagit.com/live/chinohillsca/smil:std-4x3-1-a/playlist.m3u8
 https://s3-us-west-2.amazonaws.com/lakewood.castus-vod/live/ch1/video.m3u8
 #EXTINF:-1 tvg-id="CityTVLawndale.us" status="online",Lawndale City TV (720p)
 http://67.53.122.248/live-4/live/live.m3u8
-#EXTINF:-1 tvg-id="CityTVPinellasPark.us" status="timeout",Pinellas Park City TV (720p) (Pinellas Park FL) [Geo-blocked]
+#EXTINF:-1 tvg-id="CityTVPinellasPark.us" status="error",Pinellas Park City TV (720p) (Pinellas Park FL) [Geo-blocked]
 https://reflect-pinellas-park-fl.cablecast.tv/live-6/live/live.m3u8
 #EXTINF:-1 tvg-id="CityTVSanDiego.us" status="timeout",CityTV San Diego (360p)
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/sandiego/G1826_005/playlist.m3u8
@@ -468,7 +468,7 @@ https://5e6cea03e25b6.streamlock.net/live/QVC.stream/playlist.m3u8
 http://184.177.41.241/live-10/live/live.m3u8
 #EXTINF:-1 tvg-id="CreaTVChannel15.us" status="timeout",CreaTV Community Channel 15 (San Jose CA) (720p)
 https://reflect-creatv.cablecast.tv/live-13/live/live.m3u8
-#EXTINF:-1 tvg-id="CreaTVChannel27.us" status="timeout",CreaTV Bay Voice TV Channel 27 (San Jose CA) (720p)
+#EXTINF:-1 tvg-id="CreaTVChannel27.us" status="blocked",CreaTV Bay Voice TV Channel 27 (San Jose CA) (720p)
 https://reflect-creatv.cablecast.tv/live-19/live/live.m3u8
 #EXTINF:-1 tvg-id="CreaTVChannel28.us" status="timeout",CreaTV Classrooms Channel 28 (San Jose CA) (720p)
 https://reflect-creatv.cablecast.tv/live-14/live/live.m3u8
@@ -1390,7 +1390,7 @@ https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/riversideca/G0879_001/playlist.m3u8
 https://securestream3.champds.com/hlssstc/RockyHillCTLIVE/RockyHillCTLIVE.m3u8
 #EXTINF:-1 tvg-id="RoosterTeethTV.us" status="timeout",Rooster Teeth TV (1080p)
 https://d2klx6wjx7p5vm.cloudfront.net/Rooster-teeth/ngrp:Rooster-teeth_all/playlist.m3u8
-#EXTINF:-1 tvg-id="SafeTV.us" status="timeout",SafeTV (1080p)
+#EXTINF:-1 tvg-id="SafeTV.us" status="error",SafeTV (1080p)
 http://18.191.91.130:1935/live/safetv/playlist.m3u8
 #EXTINF:-1 tvg-id="SCCurrents.us" status="timeout",SC Currents
 https://tvsantacruz.secure.footprint.net/egress/bhandler/tvsantacruz/streamc/playlist.m3u8
@@ -1451,7 +1451,7 @@ https://cdnlive.myspirit.tv/LS-ATL-43240-2/index.m3u8
 https://playout4multirtmp.tulix.tv/live6/Stream1/playlist.m3u8
 #EXTINF:-1 tvg-id="Sportskool.us" status="timeout",Sportskool TV (720p)
 https://a.jsrdn.com/broadcast/fabeab4b08/+0000/c.m3u8
-#EXTINF:-1 tvg-id="SpringsTV.us" status="timeout",SpringsTV (Colorado Springs CO) (720p)
+#EXTINF:-1 tvg-id="SpringsTV.us" status="error",SpringsTV (Colorado Springs CO) (720p)
 https://cdn3.wowza.com/5/cFh0V0QwUVc4SDl2/coloradosprings/G1424_002/playlist.m3u8
 #EXTINF:-1 tvg-id="SPTV.us" status="timeout",St. Pete TV (SPTV) (St Petersburg FL) (360p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/stpete/G0187_002/playlist.m3u8
@@ -1569,8 +1569,6 @@ https://tve-live-lln.warnermediacdn.com/hls/live/2023170/tntwest/slate/VIDEO_0_3
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=37
 #EXTINF:-1 tvg-id="TopStoriesbyNewsy.us" status="timeout",Top Stories by Newsy (720p)
 https://content.uplynk.com/channel/33c48f602cfd4474b957eb4ad999caf8.m3u8
-#EXTINF:-1 tvg-id="TrinityChannel.us" status="error",Trinity Channel (480p) [Not 24/7]
-http://rtmp1.abnsat.com/hls/trinity.m3u8
 #EXTINF:-1 tvg-id="TropicalMoonEventosTV.us" status="timeout",Tropical Moon Eventos TV [Not 24/7]
 https://srv.panelcast.net/eventostv/eventostv/playlist.m3u8
 #EXTINF:-1 tvg-id="TropicalMoonSalsaTV.us" status="error",Tropical Moon Salsa TV
@@ -1641,7 +1639,7 @@ https://rpn1.bozztv.com/36bay2/gusa-tvsrarecollectibles/index.m3u8
 https://rpn1.bozztv.com/36bay2/gusa-tvsselect/index.m3u8
 #EXTINF:-1 tvg-id="TVSSiloDiscountNetwork.us" status="timeout",TVS Silo Discount Network (484p) [Not 24/7]
 https://rpn1.bozztv.com/36bay2/gusa-tvssilodiscount/index.m3u8
-#EXTINF:-1 tvg-id="TVSSports.us" status="error",TVS Sports (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVSSports.us" status="timeout",TVS Sports (720p) [Not 24/7]
 https://rpn1.bozztv.com/36bay2/gusa-tvssports/index.m3u8
 #EXTINF:-1 tvg-id="TVSSportsBureau.us" status="timeout",TVS Sports Bureau (720p)
 https://rpn1.bozztv.com/36bay2/gusa-tvssportsbureau/index.m3u8
