@@ -17,7 +17,7 @@ https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/pl
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="timeout",Arirang (720p)
 https://amdlive-ch03-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BadukTV.kr" status="timeout",Baduk TV (540p)
+#EXTINF:-1 tvg-id="BadukTV.kr" status="error",Baduk TV (540p)
 http://mytv.dothome.co.kr/ch/catv/251.php
 #EXTINF:-1 tvg-id="BBSTV.kr" status="timeout",BBS Buddhist Broadcasting (1080p)
 http://bbstv.clouducs.com:1935/bbstv-live/livestream/playlist.m3u8
@@ -43,7 +43,7 @@ http://mytv.dothome.co.kr/ch/catv/229.php
 http://mytv.dothome.co.kr/ch/catv/255.php
 #EXTINF:-1 tvg-id="ChuncheonMBCTV.kr" status="timeout",MBC Chuncheon (춘천 MBC) (480p) [Not 24/7]
 https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="ChungbukMBCTV.kr" status="blocked",MBC Chungbuk (MBC 충북) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ChungbukMBCTV.kr" status="online",MBC Chungbuk (MBC 충북) (720p) [Not 24/7]
 http://211.33.246.4:32954/cj_live/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="ChunghwaTV.kr" status="timeout",Chunghwa TV (540p)
 http://mytv.dothome.co.kr/ch/catv/228.php
@@ -115,7 +115,7 @@ https://dtvstreaming.hyundaihmall.com/newcjp3/_definst_/newcjpstream.smil/playli
 http://mytv.dothome.co.kr/ch/catv/253.php
 #EXTINF:-1 tvg-id="iHQDrama.kr" status="timeout",iHQ drama (540p)
 http://mytv.dothome.co.kr/ch/catv/256.php
-#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="error",MBC Jeju (제주 MBC) (352p) [Not 24/7]
+#EXTINF:-1 tvg-id="JejuMBCTV.kr" status="timeout",MBC Jeju (제주 MBC) (352p) [Not 24/7]
 https://wowza.jejumbc.com/live/tv_jejumbc/playlist.m3u8
 #EXTINF:-1 tvg-id="JIBSTV.kr" status="online",SBS JIBS (JIBS SBS) (720p) [Not 24/7]
 http://123.140.197.22/stream/1/play.m3u8
@@ -125,7 +125,7 @@ http://mytv.dothome.co.kr/ch/catv/282.php
 http://mytv.dothome.co.kr/ch/catv/283.php
 #EXTINF:-1 tvg-id="JTBC.kr" status="timeout",JTBC (540p)
 http://mytv.dothome.co.kr/ch/catv/211.php
-#EXTINF:-1 tvg-id="JTBCGolf.kr" status="timeout",JTBC Golf (540p)
+#EXTINF:-1 tvg-id="JTBCGolf.kr" status="error",JTBC Golf (540p)
 http://mytv.dothome.co.kr/ch/catv/248.php
 #EXTINF:-1 tvg-id="JTBCGolfSports.kr" status="timeout",JTBC Golf & Sports (1080p)
 http://mytv.dothome.co.kr/ch/catv/249.php
@@ -283,7 +283,7 @@ http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index.m3u8
 http://live.kytv.co.kr:8080/hls/stream.m3u8
 #EXTINF:-1 tvg-id="" status="online",tvN Asia (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h20/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",tvN Movies (Indonesian Subtitle) (576p)
+#EXTINF:-1 tvg-id="" status="error",tvN Movies (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h21/index.m3u8
 #EXTINF:-1 tvg-id="MBN.kr" status="online",MBN
 https://www.mbn.co.kr/player/mbnStreamAuth_new_live.mbn?vod_url=https://hls-live.mbn.co.kr/mbn-on-air/1000k/playlist.m3u8
