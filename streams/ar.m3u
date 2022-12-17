@@ -61,7 +61,7 @@ https://5cd577a3dd8ec.streamlock.net/canal4/smil:manifest.smil/playlist.m3u8
 https://iptv.ixfo.com.ar:30443/live/C4POS/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4SanJuan.ar" status="timeout",Canal 4 (San Juan)
 http://streamlov.alsolnet.com/canal4sanjuan/live/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal5PicoTruncado.ar" status="error",Canal 5 (Pico Truncado)
+#EXTINF:-1 tvg-id="Canal5PicoTruncado.ar" status="timeout",Canal 5 (Pico Truncado)
 https://stream.arcast.com.ar/canal5picotruncado/canal5picotruncado/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal5SantaFe.ar" status="error",C5 Santa Fé (240p)
 https://stream.arcast.com.ar/c5sf/c5sf/playlist.m3u8
@@ -99,11 +99,11 @@ https://stmv1.srvstm.com/tv10/tv10/playlist.m3u8
 https://vivo.solumedia.com:19360/nortevision/nortevision.m3u8
 #EXTINF:-1 tvg-id="Canal10Salta.ar" status="timeout",Canal 10 Televisión Salteña (720p)
 https://restreamer.el10tv.com/memfs/725003c4-79c2-4565-8311-f429db4f7777.m3u8
-#EXTINF:-1 tvg-id="Canal10SanRafael.ar" status="error",Canal 10 San Rafael (480p)
+#EXTINF:-1 tvg-id="Canal10SanRafael.ar" status="timeout",Canal 10 San Rafael (480p)
 https://streamcasthd.com:1936/tvdiez/tvdiez/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal10TVRioNegro.ar" status="timeout",Canal 10 Rio Negro
+#EXTINF:-1 tvg-id="Canal10TVRioNegro.ar" status="error",Canal 10 Rio Negro
 https://panel.dattalive.com/8204/8204/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal10TVRioNegro.ar" status="timeout",Canal 10 Rio Negro (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal10TVRioNegro.ar" status="error",Canal 10 Rio Negro (720p) [Not 24/7]
 http://panel.dattalive.com:1935/8204/8204/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal11delaCosta.ar" status="timeout",Canal 11 de la Costa (720p)
 https://vivo.solumedia.com:19360/dadaproductora/dadaproductora.m3u8
@@ -147,9 +147,6 @@ https://panel.dattalive.com/canal907/canal907/playlist.m3u8
 https://streannlivefeedlatino.cachefly.net/feedlatino1/feedlatino1/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalCoop.ar" status="error",Canal Coop
 https://panel.dattalive.com/8138/8138/playlist.m3u8
-#EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="error" user-agent="iPhone",Canal de la Ciudad (720p)
-#EXTVLCOPT:http-user-agent=iPhone
-https://g5.proy-hor.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalLuz.ar" status="timeout" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
 https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
@@ -170,7 +167,7 @@ https://5e7cdf2370883.streamlock.net/tdconline/tdconline/playlist.m3u8
 https://stream.arcast.live/canalu/canalu/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalXFN.ar" status="timeout",Canal XFN
 https://streamconex.com:1936/canalxfn/canalxfn/playlist.m3u8
-#EXTINF:-1 tvg-id="CatamarcaTV.ar" status="timeout",Catamarca TV [Not 24/7]
+#EXTINF:-1 tvg-id="CatamarcaTV.ar" status="error",Catamarca TV [Not 24/7]
 https://stream.arcast.com.ar/canal7catamarca/ngrp:canal7catamarca_all/playlist.m3u8
 #EXTINF:-1 tvg-id="CeltaTV.ar" status="timeout",Celta TV
 https://vivo.solumedia.com:19360/celta/celta.m3u8
@@ -192,7 +189,7 @@ https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8
 https://stream.arcast.live/cpe/ngrp:cpe_all/playlist.m3u8
 #EXTINF:-1 tvg-id="CrossingCanalIPTV.ar" status="timeout",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
 https://vivo.solumedia.com:19360/crossing/crossing.m3u8
-#EXTINF:-1 tvg-id="CVisionTV.ar" status="timeout",CVisión TV (720p)
+#EXTINF:-1 tvg-id="CVisionTV.ar" status="error",CVisión TV (720p)
 https://stream.cvisiontv.com/cvision_stream.m3u8
 #EXTINF:-1 tvg-id="DeporTV.ar" status="timeout",DeporTV (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCSmh3DFxBwFurMttT60PQ1g/live
@@ -302,13 +299,11 @@ http://live-edge01.telecentro.net.ar/live/smil:trm.smil/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw/live
 #EXTINF:-1 tvg-id="TVManaArgentina.ar" status="timeout",TV Maná Argentina (576p) [Not 24/7]
 http://streamspub.manasat.com:1935/tvar/tvmanaar2/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMAXCBA.ar" status="error",TV MAXCBA (720p)
-https://panel.dattalive.com/8106/8106/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPublica.ar" status="timeout",TV Pública (TVP) (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCs231K71Bnu5295_x0MB5Pg/live
 #EXTINF:-1 tvg-id="TVSolidaria.ar" status="timeout",TV Solidaria
 https://canadaremar2.todostreaming.es/live/argentina-web.m3u8
-#EXTINF:-1 tvg-id="TVUniversidad.ar" status="timeout",TVU Universidad Nacional de La Plata (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVUniversidad.ar" status="error",TVU Universidad Nacional de La Plata (720p) [Not 24/7]
 https://stratus.stream.cespi.unlp.edu.ar/hls/tvunlp.m3u8
 #EXTINF:-1 tvg-id="UNAMTransmedia.ar" status="online",UNAM Transmedia
 http://192.100.186.53:8090/hls/live.stream.m3u8

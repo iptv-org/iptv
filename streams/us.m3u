@@ -127,7 +127,7 @@ https://stream.al-mahdi.tv/hls/1234.m3u8
 https://bcovlive-a.akamaihd.net/b3ed62003de946c896f4f541b908376e/us-east-1/6240731308001/playlist.m3u8
 #EXTINF:-1 tvg-id="AMCLatinAmerica.us" status="timeout",AMC Latin America
 http://209.91.213.10:8088/play/a013
-#EXTINF:-1 tvg-id="AMCPlus.us" status="timeout",AMC+ (720p)
+#EXTINF:-1 tvg-id="AMCPlus.us" status="blocked",AMC+ (720p)
 https://bcovlive-a.akamaihd.net/bdbdca51c15243fbaca92fd54c42d45a/us-east-1/6245817279001/playlist.m3u8
 #EXTINF:-1 tvg-id="AmericanHorrors.us" status="online",American Horrors (480p)
 http://170.178.189.66:1935/live/Stream1/playlist.m3u8
@@ -237,8 +237,6 @@ https://bloomberg.com/media-manifest/streams/us-event.m3u8
 https://bloomberg.com/media-manifest/streams/phoenix-us.m3u8
 #EXTINF:-1 tvg-id="BloombergTVPoliticsLiveEvent.us" status="timeout",Bloomberg TV US Politics Live Event (720p)
 https://bloomberg.com/media-manifest/streams/politics.m3u8
-#EXTINF:-1 tvg-id="BluegrassMusic4U.us" status="error",Bluegrass Music 4U (480p)
-https://rebroadcast.mytvtogo.net/mytvtogo/blugrassmusic/playlist.m3u8
 #EXTINF:-1 tvg-id="BoomerangEMEA.us" status="timeout",Boomerang Slovenia
 http://194.163.179.246/slovenci/djeciji/boomerang.m3u8
 #EXTINF:-1 tvg-id="BoomerangLatinAmerica.us" status="blocked",Boomerang Latinoamérica [Geo-blocked]
@@ -468,7 +466,7 @@ https://5e6cea03e25b6.streamlock.net/live/QVC.stream/playlist.m3u8
 http://184.177.41.241/live-10/live/live.m3u8
 #EXTINF:-1 tvg-id="CreaTVChannel15.us" status="timeout",CreaTV Community Channel 15 (San Jose CA) (720p)
 https://reflect-creatv.cablecast.tv/live-13/live/live.m3u8
-#EXTINF:-1 tvg-id="CreaTVChannel27.us" status="timeout",CreaTV Bay Voice TV Channel 27 (San Jose CA) (720p)
+#EXTINF:-1 tvg-id="CreaTVChannel27.us" status="blocked",CreaTV Bay Voice TV Channel 27 (San Jose CA) (720p)
 https://reflect-creatv.cablecast.tv/live-19/live/live.m3u8
 #EXTINF:-1 tvg-id="CreaTVChannel28.us" status="timeout",CreaTV Classrooms Channel 28 (San Jose CA) (720p)
 https://reflect-creatv.cablecast.tv/live-14/live/live.m3u8
@@ -882,10 +880,10 @@ https://content.uplynk.com/channel/64ca339f04964a5e961c3207a7771bf1.m3u8
 https://content.uplynk.com/4a09fbea28ef4f32bce095e9eae04bd8.m3u8
 #EXTINF:-1 tvg-id="KMTVDT1.us" status="timeout",CBS 3 Omaha NE (KMTV-TV) (720p)
 https://content.uplynk.com/channel/328d1434fb51476cb6567c74d5b2cc70.m3u8
+#EXTINF:-1 tvg-id="KNETCD1.us" status="timeout",EMT Media TV Los Angeles CA
+https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNETCD1.us" status="timeout",EMT Media TV Los Angeles CA [Geo-blocked]
 https://mediaplatform.streamingmediahosting.com/p/14135/sp/1413500/playManifest/entryId/0_lkq7fay8/format/applehttp/protocol/https/uiConfId/6710347/a.m3u8
-#EXTINF:-1 tvg-id="KNETCD1.us" status="error",EMT Media TV Los Angeles CA
-https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="timeout",NOTV (720p)
 http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="timeout",NOTV (720p)
@@ -1390,7 +1388,7 @@ https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/riversideca/G0879_001/playlist.m3u8
 https://securestream3.champds.com/hlssstc/RockyHillCTLIVE/RockyHillCTLIVE.m3u8
 #EXTINF:-1 tvg-id="RoosterTeethTV.us" status="timeout",Rooster Teeth TV (1080p)
 https://d2klx6wjx7p5vm.cloudfront.net/Rooster-teeth/ngrp:Rooster-teeth_all/playlist.m3u8
-#EXTINF:-1 tvg-id="SafeTV.us" status="timeout",SafeTV (1080p)
+#EXTINF:-1 tvg-id="SafeTV.us" status="error",SafeTV (1080p)
 http://18.191.91.130:1935/live/safetv/playlist.m3u8
 #EXTINF:-1 tvg-id="SCCurrents.us" status="timeout",SC Currents
 https://tvsantacruz.secure.footprint.net/egress/bhandler/tvsantacruz/streamc/playlist.m3u8
@@ -1487,7 +1485,7 @@ https://tastemadeintaus-smindia.amagi.tv/playlist.m3u8
 https://tastemadees16intl-brightcove.amagi.tv/hls/amagi_hls_data_tastemade-tastemade-es16intl-brightcove/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="TBD.us" status="timeout",TBD. (720p)
 https://content.uplynk.com/channel/1831163f97674328ad9f4b4814ed39c5.m3u8
-#EXTINF:-1 tvg-id="TBNAsia.us" status="error",TBN Asia (360p)
+#EXTINF:-1 tvg-id="TBNAsia.us" status="online",TBN Asia (360p)
 http://210.210.155.37/qwr9ew/s/s39/index.m3u8
 #EXTINF:-1 tvg-id="TBNEast.us" status="blocked",TBN US (1080p) [Not 24/7]
 https://api.new.livestream.com/accounts/27460990/events/8266920/live.m3u8
