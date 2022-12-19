@@ -35,7 +35,7 @@ https://tls.cdnz.cl/canal21tv/live/playlist.m3u8
 https://5eae379fb77bb.streamlock.net/eduardo555/eduardo555/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal57Melipilla.cl" status="timeout",Canal 57 Melipilla (720p)
 https://593b04c4c5670.streamlock.net/8148/8148/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal74SanAntonio.cl" status="timeout",Canal 74 (San Antonio) (720p)
+#EXTINF:-1 tvg-id="Canal74SanAntonio.cl" status="error",Canal 74 (San Antonio) (720p)
 https://stmv1.zcastbr.com/canal74hd/canal74hd/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalISB.cl" status="timeout",Canal ISB (Iglesia San Bernardo) (720p)
 https://unlimited1-us.dps.live/isb/isb.smil/playlist.m3u8
@@ -67,11 +67,9 @@ https://stream.wifispeed.cl:3852/live/energeeklive.m3u8
 https://wifispeed.trapemn.tv:1936/infantil/energeek-tres/playlist.m3u8
 #EXTINF:-1 tvg-id="EnerGeekFanpop.cl" status="timeout",EnerGeek Fanpop (720p) [Not 24/7]
 https://wifispeed.trapemn.tv:1936/infantil/energeek-2/playlist.m3u8
-#EXTINF:-1 tvg-id="EnerGeekRadio.cl" status="error",EnerGeek Radio (720p) [Not 24/7]
-https://stream.wifiexpert.cl/energeek/radio/playlist.m3u8
-#EXTINF:-1 tvg-id="EnerGeekRetro.cl" status="timeout",EnerGeek Retro (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="EnerGeekRetro.cl" status="error",EnerGeek Retro (720p) [Not 24/7]
 https://stream.wifispeed.cl:3103/live/energeek1live.m3u8
-#EXTINF:-1 tvg-id="EnerGeekRetro.cl" status="timeout",EnerGeek Retro (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="EnerGeekRetro.cl" status="error",EnerGeek Retro (720p) [Not 24/7]
 https://wifispeed.trapemn.tv:1936/infantil/energeek-1/playlist.m3u8
 #EXTINF:-1 tvg-id="EstacionTV.cl" status="timeout",Estación TV (720p)
 http://unlimited1-cl.dps.live/estaciontv/estaciontv.smil/playlist.m3u8
@@ -105,8 +103,6 @@ https://d2ab26kihxq8p0.cloudfront.net/hls/live.m3u8
 https://unlimited1-cl-isp.dps.live/lared/lared.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LatinosRadio.cl" status="online",Latinos Radio
 https://mediacpstreamchile.com:1936/latinosmedia-1/latinosmedia-1/playlist.m3u8
-#EXTINF:-1 tvg-id="MasTV.cl" status="timeout",Más TV
-https://paneltv.online:1936/8118/8118/playlist.m3u8
 #EXTINF:-1 tvg-id="MAXIMA.cl" status="timeout",MAXIMA (720p) [Not 24/7]
 https://server1.oklanet.cl:1936/maximavideo1/maximavideo1/playlist.m3u8
 #EXTINF:-1 tvg-id="Meganoticias.cl" status="timeout",Meganoticias (720p) [Not 24/7]
@@ -199,7 +195,7 @@ https://unlimited1-us.dps.live/tv5/tv5.smil/playlist.m3u8
 https://unlimited6-cl.dps.live/tv5/tv5.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TV8Concepcion.cl" status="timeout",TV8 (Concepción) (514p) [Geo-blocked]
 https://593b04c4c5670.streamlock.net/8014/8014/playlist.m3u8
-#EXTINF:-1 tvg-id="TVinet.cl" status="error",T-Vinet
+#EXTINF:-1 tvg-id="TVinet.cl" status="timeout",T-Vinet
 https://unlimited1-us.dps.live/inet2/inet2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVOSanVicente.cl" status="timeout",TVO San Vicente (720p) [Not 24/7]
 https://5e3483cba9114.streamlock.net/8014/8014/playlist.m3u8
@@ -251,12 +247,14 @@ https://mediacpstreamchile.com:1936/8028/8028/playlist.m3u8
 https://v2.tustreaming.cl/zizatv/index.m3u8
 #EXTINF:-1 tvg-id="ZonaLatina.cl" status="timeout",Zona Latina (480p) [Not 24/7]
 http://38.131.11.9:1080/play/a00x
-#EXTINF:-1 tvg-id="" status="error",Campus TV (Talca) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="timeout",Campus TV (Talca) (720p) [Not 24/7]
 https://pantera1-100gb-cl-movistar.dps.live/campustv/campustv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Canal 2 (San Antonio) (720p) [Not 24/7]
 https://unlimited1-us.dps.live/canal2/canal2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",CHV Noticias (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCRsUoZYC1ULUspipMRnMhwg/live
+#EXTINF:-1 tvg-id="" status="timeout",Más TV
+https://paneltv.online:1936/8118/8118/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",PlanetaTV 90s (720p)
 https://mediacpstreamchile.com:1936/8102/8102/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Región Televisión Ñuble (Chillán) (720p) [Not 24/7]
