@@ -1,13 +1,13 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="ATG.se" status="timeout",ATG (432p)
+#EXTINF:-1 tvg-id="ATG.se" status="online",ATG (432p)
 https://httpcache0-00688-cacheliveedge0.dna.qbrick.com/00688-cacheliveedge0/out/u/atg_sdi_1_free.m3u8
-#EXTINF:-1 tvg-id="AzerbaijanNewsTV.se" status="timeout",Azerbaijan News TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AzerbaijanNewsTV.se" status="online",Azerbaijan News TV (720p) [Not 24/7]
 https://edge1.socialsmart.tv/aznews/smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Kanal10Asia.se" status="timeout",Kanal 10 Asia (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal10Asia.se" status="online",Kanal 10 Asia (540p) [Not 24/7]
 https://cdn-kanal10.crossnet.net/kanal10/ngrp:kanal10asia_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MiracleChannel.se" status="timeout",Miracle Channel (576p)
+#EXTINF:-1 tvg-id="MiracleChannel.se" status="online",Miracle Channel (576p)
 https://miracle.stream.boxigy.com/hls/miracle1.m3u8
-#EXTINF:-1 tvg-id="OppnaKanalen.se" status="timeout",Oppna Kanalen (540p)
+#EXTINF:-1 tvg-id="OppnaKanalen.se" status="online",Oppna Kanalen (540p)
 https://edg03-prd-se-ixn.solidtango.com/edge/451iw2h/playlist.m3u8
 #EXTINF:-1 tvg-id="SVT1.se" status="blocked",SVT1 [Geo-blocked]
 https://svt1-c.akamaized.net/se/svt1/master.m3u8
@@ -15,15 +15,29 @@ https://svt1-c.akamaized.net/se/svt1/master.m3u8
 https://svt2-c.akamaized.net/se/svt2/master.m3u8
 #EXTINF:-1 tvg-id="SVT24.se" status="blocked",SVT24 [Geo-blocked]
 https://svtb-c.akamaized.net/se/svtb/master.m3u8
-#EXTINF:-1 tvg-id="TV4.se" status="timeout",TV4 (720p)
+#EXTINF:-1 tvg-id="TV4.se" status="online",TV4 (720p)
 https://csm-e-tv4se-eb.tls1.yospace.com/csm/live/142791716.m3u8
-#EXTINF:-1 tvg-id="VastmanlandsTV.se" status="timeout",Västmanlands TV (720p)
+#EXTINF:-1 tvg-id="VastmanlandsTV.se" status="online",Västmanlands TV (720p)
 https://edg01-prd-se-dcs.solidtango.com/edge/lo9yf4l5/playlist.m3u8
 #EXTINF:-1 tvg-id="VIPComedy.ru" status="blocked",ViP Comedy Russia (720p) [Not 24/7]
 http://188.40.68.167/russia/vip_comedy/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",SVT Kunskapskanalen [Geo-blocked]
+#EXTINF:-1 tvg-id="Kunskapskanalen.se" status="blocked",SVT Kunskapskanalen [Geo-blocked]
 https://svtk-c.akamaized.net/se/svtk/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",TV4Nyheterna (720p)
+#EXTINF:-1 tvg-id="" status="online",TV4Nyheterna (720p)
 https://csm-e-tv4se-eb.tls1.yospace.com/csm/live/142791350.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",TV4 Svensk Politik (720p)
+#EXTINF:-1 tvg-id="" status="online",TV4 Svensk Politik (720p)
 https://csm-e-tv4se-eb.tls1.yospace.com/csm/live/142791553.m3u8
+#EXTINF:-1 tvg-id="ExpressenTV.se" status="online",Expressen TV
+https://cdn0-03837-liveedge0.dna.ip-only.net/03837-liveedge0/smil:03837-tx2/playlist.m3u8
+#EXTINF:-1 tvg-id="DiTV.se" status="online",Di TV
+https://cdn0-03837-liveedge0.dna.ip-only.net/03837-liveedge0/smil:03837-tx4/playlist.m3u8
+#EXTINF:-1 tvg-id="Kanal10.se" status="online",Kanal 10
+https://ngx.cr1.crossnet.xlcdn.com/session/2ae83be1288572559c0063f56d95ca67/sz/cn_kanal10media/wowza4/live/live_transcoded.smil/playlist.m3u8?token=gYmxajVjjbSJYt4krRqe8w&time=1671529853
+#EXTINF:-1 tvg-id="MissionAsia.se" status="online",Mission Asia
+https://livecdn.live247stream.com/missionasia/tv/playlist.m3u8
+#EXTINF:-1 tvg-id="SuryoyoSat.se" status="online",Suryoyo Sat
+https://player-api.new.livestream.com/accounts/10187302/events/6785118/broadcasts/234235435.secure.m3u8?dw=14400&hdnea=st%3D1671530073~exp%3D1671531873~acl%3D%2Fi%2F10187302_6785118_lsileg4kk1ta08ofoh1_1%40198587%2F%2A~hmac%3D26f49881a40d8399932652116fe6fc62bc0ffeb14874e38d54cec6014c306cb1&token=63a18785_6433a8ef8cb3c8fc444a63162939bf7e2543f8d6
+#EXTINF:-1 tvg-id="TVMalmo.se" status="online",TV Malmo
+https://edg01-prd-de-ixn.solidtango.com/edge/_8ynhbua3_/8ynhbua3/manifest.mpd
+#EXTINF:-1 tvg-id="KanalJadid.se" status="online",Kanal Jadid
+http://51.210.227.136/hls/stream.m3u8
