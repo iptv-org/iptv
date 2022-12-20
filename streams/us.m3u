@@ -341,7 +341,7 @@ https://vse2-na-us-ne24.secdn.net/logos-channel/live/christmas/playlist.m3u8
 http://31.220.41.88:8081/live/us-cinemax.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CinePride.us" status="timeout",CinePride (720p)
 https://content.uplynk.com/channel/e54d7e92a0154d67ae0770c9d4210e77.m3u8
-#EXTINF:-1 tvg-id="CitiCABLE.us" status="timeout",Torrance CitiCABLE (Torrance CA) (360p)
+#EXTINF:-1 tvg-id="CitiCABLE.us" status="error",Torrance CitiCABLE (Torrance CA) (360p)
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/torrance/G0057_005/playlist.m3u8
 #EXTINF:-1 tvg-id="CityofFairfieldChannel26.us" status="timeout",Fairfield Government Access Channel 26 (Fairfield CA) (720p) [Geo-blocked]
 https://reflect-fairfield-ca.cablecast.tv/live-8/live/live.m3u8
@@ -586,8 +586,6 @@ https://streams.helnix.com/autoHLS/900735315c2bc38b/900735315c2bc38b.m3u8
 https://streams.helnix.com/autoHLS/02d8dab006ef9ffd/02d8dab006ef9ffd.m3u8
 #EXTINF:-1 tvg-id="FaithlifeBibleScreen.us" status="timeout",Faithlife TV Bible Screen (720p)
 https://biblescreen.faithlifecdn.com/biblescreen/bibleScreen/playlist.m3u8
-#EXTINF:-1 tvg-id="FaithlifeTV.us" status="error",Faithlife TV (720p)
-https://biblescreen.faithlifecdn.com/biblescreen/faithlifetv/playlist.m3u8
 #EXTINF:-1 tvg-id="FCPublicMedia.us" status="timeout",FC Public Media (Fort Collins CO) (1080p)
 https://reflect-fcpublicmedia.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-id="FCPublicMedia.us" status="timeout",Fort Collins Cable TV (FCTV) (Fort Collins CO) (1080p)
@@ -826,9 +824,9 @@ https://cdn.igocast.com/channel9_hls/channel9_master.m3u8
 https://cdn.igocast.com/channel10_hls/channel10_master.m3u8
 #EXTINF:-1 tvg-id="KCKSLD12.us" status="timeout",Jewelry TV (KCKS-LD12) (480p)
 https://cdn.igocast.com/channel12_hls/channel12_master.m3u8
-#EXTINF:-1 tvg-id="KCTSDT3.us" status="timeout",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT3.us" status="error",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8865717/
-#EXTINF:-1 tvg-id="KCTSDT4.us" status="error",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT4.us" status="timeout",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8904290/
 #EXTINF:-1 tvg-id="KCWXDT1.us" status="online",myTV San Antonio TX (KCWX-TV) (720p) [Not 24/7]
 http://65.36.6.216:1935/live/kcwx.smil/playlist.m3u8
@@ -1158,7 +1156,7 @@ https://reflect-mcsb-vod.cablecast.tv/live-16/live/live.m3u8
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/3659c04b92f04b808b0bc36d1d23aeb7/index.m3u8
 #EXTINF:-1 tvg-id="MyEncinitasTV.us" status="timeout",MyEncinitasTV (Encinitas CA) (360p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/encinitas/G0322_002/playlist.m3u8
-#EXTINF:-1 tvg-id="MYTV26.us" status="error",Mytv 26 (720p)
+#EXTINF:-1 tvg-id="MYTV26.us" status="timeout",Mytv 26 (720p)
 http://free.fullspeed.tv/iptv-query?provider=universe&streaming-ip=https://playback.dacast.com/content/access?contentId=76866b55f0d895d60850f58d2db81833-live-320c44899312d6399e01ae8f89764d41
 #EXTINF:-1 tvg-id="NapaValleyChannel27.us" status="timeout",Napa Valley TV Education Access Channel 27 (480p)
 https://cdn3.wowza.com/5/WDIrTW5sM1JEY1NN/napatv/G0360_003/playlist.m3u8
@@ -1570,9 +1568,9 @@ https://srv.panelcast.net/musictv/musictv/playlist.m3u8
 #EXTINF:-1 tvg-id="TropicalMoonSomosCulturaTV.us" status="timeout",Tropical Moon Somos Cultura TV
 https://srv.panelcast.net/somosculturatv/somosculturatv/playlist.m3u8
 #EXTINF:-1 tvg-id="TropicalMoonUrbanTV.us" status="timeout",Tropical Moon Urban TV
-https://srv.panelcast.net/urbantvnetott/urbantvnetott/playlist.m3u8
-#EXTINF:-1 tvg-id="TropicalMoonUrbanTV.us" status="timeout",Tropical Moon Urban TV
 https://srv.panelcast.net/urbantv/urbantv/playlist.m3u8
+#EXTINF:-1 tvg-id="TropicalMoonUrbanTV.us" status="error",Tropical Moon Urban TV
+https://srv.panelcast.net/urbantvnetott/urbantvnetott/playlist.m3u8
 #EXTINF:-1 tvg-id="truTVEast.us" status="timeout",truTV East (720p) [Geo-blocked]
 https://tve-live-lln.warnermediacdn.com/hls/live/2023176/trueast/slate/VIDEO_0_3564000.m3u8
 #EXTINF:-1 tvg-id="truTVLatinAmerica.us" status="timeout",truTV América Latina
@@ -1689,7 +1687,7 @@ https://stream.rcncdn.com/live/vsinproxy.m3u8
 https://content.uplynk.com/channel/ext/72750b711f704e4a94b5cfe6dc99f5e1/wabc_24x7_news.m3u8
 #EXTINF:-1 tvg-id="WACXDT1.us" status="timeout",SuperChannel Orlando (WACX-DT1) (720p)
 https://6305c8676ce84.streamlock.net/live/live/playlist.m3u8
-#EXTINF:-1 tvg-id="WACXDT5.us" status="timeout",Vida Visión Network (720p)
+#EXTINF:-1 tvg-id="WACXDT5.us" status="error",Vida Visión Network (720p)
 https://f-tx-edge-87.christianworldmedia.com/radiovidavision/mp4:radiovidavision/playlist.m3u8
 #EXTINF:-1 tvg-id="WAGADT1.us" status="blocked",FOX Atlanta-GA (WAGA-DT1) (720p)
 https://trn10.tulix.tv/WAGA-FOX/index.m3u8
