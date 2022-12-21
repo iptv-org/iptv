@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="BajoTechoTV.do" status="timeout",Bajo Techo TV
 https://cdn4.hostlagarto.com:8081/static/bajotechotv/playlist.m3u8
-#EXTINF:-1 tvg-id="BonaoTV.do" status="timeout",Bonao TV
+#EXTINF:-1 tvg-id="BonaoTV.do" status="error",Bonao TV
 https://ss5.domint.net:3026/btv_str/bonao/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal4RD.do" status="timeout",Canal 4 RD
 https://protvradiostream.com:1936/canal4rd-1/ngrp:canal4rd-1_all/playlist.m3u8
@@ -69,9 +69,9 @@ https://cloudflare.streamgato.us:3044/live/morrotvlive.m3u8
 https://cm.hostlagarto.com:4445/Musavisionhd/Musavisionhd/playlist.m3u8
 #EXTINF:-1 tvg-id="NaranjaTV.do" status="timeout",Naranja TV
 https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8
-#EXTINF:-1 tvg-id="NitidaTV.do" status="timeout",Nítida TV
+#EXTINF:-1 tvg-id="NitidaTV.do" status="error",Nítida TV
 https://live.teledomdr.com:3131/live/nitidatvlive.m3u8
-#EXTINF:-1 tvg-id="ORBITTV.do" status="timeout",ORBIT TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ORBITTV.do" status="blocked",ORBIT TV (480p) [Geo-blocked]
 https://ss3.domint.net:3134/otv_str/orbittv/playlist.m3u8
 #EXTINF:-1 tvg-id="PeraviaVision.do" status="timeout",Peravía Visión
 https://ss5.domint.net:3048/pvv_str/peravia/playlist.m3u8
@@ -117,7 +117,7 @@ https://vdo1.streamgato.us:3578/live/telecontactohdlive.m3u8
 http://ss8.domint.net:2118/tf_str/futu/master.m3u8
 #EXTINF:-1 tvg-id="Telefuturo.do" status="timeout",Telefuturo
 https://ss9.domint.net:3054/tf_str/telefuturo/playlist.m3u8
-#EXTINF:-1 tvg-id="Teleimpacto.do" status="timeout",Teleimpacto (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Teleimpacto.do" status="online",Teleimpacto (720p) [Not 24/7]
 http://190.122.96.188:8888/http/013
 #EXTINF:-1 tvg-id="Telemax.do" status="timeout",Telemax
 https://cdn2.streamgato.us/telemax/telemax/playlist.m3u8
