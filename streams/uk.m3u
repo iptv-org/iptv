@@ -47,7 +47,7 @@ https://vs-cmaf-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_c
 https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/mobile_wifi_main_sd_abr_v2.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk" status="blocked",BBC News HD (720p) [Geo-blocked]
 https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="BBCNews.uk" status="blocked",BBC News HD (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="BBCNews.uk" status="timeout",BBC News HD (720p) [Geo-blocked]
 https://cdnuk001.broadcastcdn.net/KUK-BBCNEWSHD/index.m3u8
 #EXTINF:-1 tvg-id="BBCOneCambridgeshire.uk" status="blocked",BBC One Cambridge (540p) [Geo-blocked]
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_cambridge/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
@@ -192,7 +192,7 @@ https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:cbbc_hd/mo
 https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:cbbc_hd/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="CBBC.uk" status="blocked",CBBC HD (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:cbbc_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="Channel4.uk" status="timeout",Channel 4 (1080p)
+#EXTINF:-1 tvg-id="Channel4.uk" status="blocked",Channel 4 (1080p)
 https://cdnuk001.broadcastcdn.net/KUK-CHANNEL4/playlist.m3u8
 #EXTINF:-1 tvg-id="ChannelS.uk" status="timeout",Channel S (US Pacific) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
@@ -329,7 +329,7 @@ https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00738-newsuk-talkradiotv-ono/playli
 https://newsuk-talkradiotv-brightcove.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TalkTV.uk" status="error",TalkTV (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/talktv/live
-#EXTINF:-1 tvg-id="TBNUK.uk" status="error",TBN UK (720p)
+#EXTINF:-1 tvg-id="TBNUK.uk" status="timeout",TBN UK (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28567990/events/8919546
 #EXTINF:-1 tvg-id="TheBoxUK.uk" status="timeout",The Box UK (576p) [Geo-blocked]
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,thebox-alldev.m3u8?yo.up=https://boxtv.secure.footprint.net/thebox/
@@ -429,9 +429,9 @@ https://live.ishiacloud.com/haditv.co.uk/haditv2.m3u8
 https://live.ishiacloud.com/haditv.co.uk/haditv6.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Hadi TV Turkish and Kurdish (720p)
 https://live.ishiacloud.com/haditv.co.uk/haditv7.m3u8
-#EXTINF:-1 tvg-id="" status="error",Hype Tv
+#EXTINF:-1 tvg-id="" status="timeout",Hype Tv
 http://35.189.69.44/tmp_hls/desibox/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Ideal World TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="timeout",Ideal World TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/IdealworldTvShopping/live
 #EXTINF:-1 tvg-id="" status="timeout",ITV1 (1080p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV-107/playlist.m3u8
