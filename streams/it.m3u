@@ -61,7 +61,7 @@ http://178.33.224.197:1935/euroindiemusic/euroindiemusic/playlist.m3u8
 https://5f22d76e220e1.streamlock.net/eurotv/eurotv/playlist.m3u8
 #EXTINF:-1 tvg-id="GoldTV.it" status="timeout",Gold TV (576p)
 https://streaming.softwarecreation.it/GoldTv/GoldTv/playlist.m3u8
-#EXTINF:-1 tvg-id="GoldTVSat.it" status="timeout",Gold TV Sat (576p)
+#EXTINF:-1 tvg-id="GoldTVSat.it" status="error",Gold TV Sat (576p)
 https://streaming.softwarecreation.it/GoldTvSat/GoldTvSat/playlist.m3u8
 #EXTINF:-1 tvg-id="GOTVCanale163.it" status="timeout",GO-TV CHANNEL (720p)
 https://5f22d76e220e1.streamlock.net/reklamatv/reklamatv/playlist.m3u8
@@ -170,10 +170,10 @@ http://stream.tvtap.net:8081/live/it-rai4.stream/playlist.m3u8
 http://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=746966
 #EXTINF:-1 tvg-id="Rai4.it" status="timeout",Rai 4 (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966
+#EXTINF:-1 tvg-id="Rai5.it" status="blocked",Rai 5 (302p) [Geo-blocked]
+http://stream.tvtap.net:8081/live/it-rai5.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai5.it" status="timeout",Rai 5 (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276
-#EXTINF:-1 tvg-id="Rai5.it" status="error",Rai 5 (302p) [Geo-blocked]
-http://stream.tvtap.net:8081/live/it-rai5.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RaiGulp.it" status="timeout",Rai Gulp (576p)
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953
 #EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="online",RAI Italia Asia (576p)
@@ -318,7 +318,7 @@ http://livestreaming.videolina.it/live/Videolina/playlist.m3u8
 https://d3b2epqdk0p7vd.cloudfront.net/out/v1/8a448b5e16384af4a3c8146a7b049c32/index.m3u8
 #EXTINF:-1 tvg-id="VirginRadioTV.it" status="blocked",Virgin Radio TV (576p) [Not 24/7]
 https://live2-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ew)/index.m3u8
-#EXTINF:-1 tvg-id="VisualRadio.it" status="timeout",Visual Radio (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="VisualRadio.it" status="blocked",Visual Radio (576p) [Not 24/7]
 http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8
 #EXTINF:-1 tvg-id="Vuemme.it" status="timeout",Vuemme (480p)
 https://5db313b643fd8.streamlock.net/Vuemme/Vuemme/playlist.m3u8
