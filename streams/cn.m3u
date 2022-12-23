@@ -303,8 +303,6 @@ http://ott.js.chinamobile.com/PLTV/3/224/3221227204/index.m3u8
 http://183.207.248.71/cntv/live1/cctv-8/cctv-8
 #EXTINF:-1 tvg-id="CCTV8.cn" status="timeout",CCTV-8电视剧 (1080p) [Not 24/7]
 http://183.207.248.71/cntv/live1/HD-2500k-1080P-cctv8/HD-2500k-1080P-cctv8
-#EXTINF:-1 tvg-id="CCTV8.cn" status="error",CCTV-8电视剧 (1080p)
-http://183.207.248.12/PLTV/3/224/3221227204/index.m3u8
 #EXTINF:-1 tvg-id="CCTV9.cn" status="online",CCTV-9纪录 (1080p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225646/index.m3u8
 #EXTINF:-1 tvg-id="CCTV9.cn" status="online",CCTV-9纪录 (1080p)
@@ -356,6 +354,8 @@ http://223.110.245.153/ott.js.chinamobile.com/PLTV/3/224/3221227384/index.m3u8
 #EXTINF:-1 tvg-id="CCTV11.cn" status="timeout",CCTV-11戏曲 (1080p)
 http://223.110.245.169/PLTV/4/224/3221227384/index.m3u8
 #EXTINF:-1 tvg-id="CCTV12.cn" status="online",CCTV-12社会与法制 (1080p)
+http://39.134.115.163:8080/PLTV/88888910/224/3221225637/index.m3u8
+#EXTINF:-1 tvg-id="CCTV12.cn" status="online",CCTV-12社会与法制 (1080p)
 http://39.135.138.59:18890/PLTV/88888910/224/3221225629/index.m3u8
 #EXTINF:-1 tvg-id="CCTV12.cn" status="timeout",CCTV-12社会与法制 (540p)
 http://112.25.48.68/live/program/live/cctv12/1300000/mnf.m3u8
@@ -377,8 +377,6 @@ http://223.110.245.163/ott.js.chinamobile.com/PLTV/3/224/3221225556/index.m3u8
 http://223.110.245.170/PLTV/3/224/3221225556/index.m3u8
 #EXTINF:-1 tvg-id="CCTV12.cn" status="timeout",CCTV-12社会与法制 (1080p)
 http://223.110.245.172/PLTV/3/224/3221225556/index.m3u8
-#EXTINF:-1 tvg-id="CCTV12.cn" status="timeout",CCTV-12社会与法制 (1080p)
-http://39.134.115.163:8080/PLTV/88888910/224/3221225637/index.m3u8
 #EXTINF:-1 tvg-id="CCTV13.cn" status="online",CCTV-13新闻 (1080p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225638/index.m3u8
 #EXTINF:-1 tvg-id="CCTV13.cn" status="online",CCTV-13新闻 (720p)
@@ -1357,7 +1355,7 @@ http://m3u8.channellive.dzxw.net/cms/videos/nmip-media/channellive/channel35/pla
 http://flv.drs.tv.yatv.tv:8080/channellive/gonggong.flv
 #EXTINF:-1 tvg-id="" status="timeout",四川 Ⅰ 雅安综合 (720p)
 http://flv.drs.tv.yatv.tv:8080/channellive/xinwen.flv
-#EXTINF:-1 tvg-id="" status="timeout",四川公共 (720p)
+#EXTINF:-1 tvg-id="" status="blocked",四川公共 (720p)
 http://scgctvshow.sctv.com/hdlive/sctv9/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",四平新闻综合 [Geo-blocked]
 http://stream2.jlntv.cn/sptv/sd/live.m3u8
@@ -1509,8 +1507,6 @@ http://183.207.249.15/PLTV/3/224/3221225951/index.m3u8
 http://183.207.248.11/PLTV/3/224/3221225951/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",徐州新聞綜合 (1080p)
 http://223.110.245.165/ott.js.chinamobile.com/PLTV/3/224/3221225945/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",徐州新聞綜合 (1080p)
-http://183.207.248.11/PLTV/3/224/3221225945/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",徐州贾汪旅游 (576p)
 http://223.110.245.147/ott.js.chinamobile.com/PLTV/3/224/3221227389/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",忍者神龟 (480p)
@@ -1559,9 +1555,9 @@ http://183.207.249.15/PLTV/3/224/3221225523/index.m3u8
 http://223.110.243.136/PLTV/3/224/3221225523/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",新疆少儿 (720p) [Geo-blocked]
 http://livehyw5.chinamcache.com/hyw/zb12.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",新疆汉语信息服务 (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="blocked",新疆汉语信息服务 (720p) [Geo-blocked]
 http://livehyw5.chinamcache.com/hyw/zb11.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",新疆汉语综艺 (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="blocked",新疆汉语综艺 (720p) [Geo-blocked]
 http://livehyw5.chinamcache.com/hyw/zb04.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",新郑综合 (1080p) [Not 24/7]
 http://live.dxhmt.cn:9081/tv/10184-1.m3u8
