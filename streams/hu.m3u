@@ -1,10 +1,10 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="ApostolTV.hu" status="timeout",Apostol TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="ApostolTV.hu" status="error",Apostol TV (576p) [Not 24/7]
 https://live.apostoltv.hu/online/smil:gazdagret.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ATV.hu" status="timeout",ATV (360p) [Not 24/7]
-https://stream.atv.hu/atvlive/atvstream_2_aac/playlist.m3u8
 #EXTINF:-1 tvg-id="ATV.hu" status="timeout",ATV (160p)
 http://streamservers.atv.hu/atvlive/atvstream_1_aac/playlist.m3u8
+#EXTINF:-1 tvg-id="ATV.hu" status="error",ATV (360p) [Not 24/7]
+https://stream.atv.hu/atvlive/atvstream_2_aac/playlist.m3u8
 #EXTINF:-1 tvg-id="DTV.hu" status="timeout",DTV (720p) [Not 24/7]
 http://cloudfront44.lexanetwork.com:1732/hlsrelay003/hls/livestream.sdp.m3u8
 #EXTINF:-1 tvg-id="HalomTV.hu" status="timeout",Halom TV (540p)
@@ -33,8 +33,6 @@ http://www.1music.hu/1music.m3u8
 https://stream.y5.hu/stream/stream_bonum/stream.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Budakalasz (1080p) [Not 24/7]
 https://stream.streaming4u.hu/TVBudakalasz/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="" status="error",Classics TV (720p) [Not 24/7]
-https://s03.diazol.hu:7152/live.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Fix TV (720p) [Not 24/7]
 https://fixhd.tv:8082/fix/1080i/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",H!T Music Channel (480p)
