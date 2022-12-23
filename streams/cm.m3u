@@ -1,11 +1,19 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="MyTVChannel.cm" status="timeout",My TV Channel (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MyTVChannel.cm" status="online",My TV Channel (720p)
 http://connectiktv.ddns.net:5000/mytvchannel/@mytvchannel/playlist.m3u8
-#EXTINF:-1 tvg-id="PlayTV.cm" status="timeout",Play TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PlayTV.cm" status="online",Play TV (720p)
 http://connectiktv.ddns.net:5000/playtv/@playtv/playlist.m3u8
-#EXTINF:-1 tvg-id="Vision4.cm" status="timeout",Vision 4 (360p)
+#EXTINF:-1 tvg-id="Vision4.cm" status="online",Vision 4 (360p)
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/vision4/hls_video/index.m3u8
 #EXTINF:-1 tvg-id="CRTV.cm" status="online",CRTV
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://dailymotion.com/video/x7o9p4a
 #EXTINF:-1 tvg-id="AfriqueMedia.cm" status="online",Afrique Media
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x5dk3kj
+#EXTINF:-1 tvg-id="ACNTV.cm" status="online",ACN TV
+https://www.live.quantizedcreativity.com:5443/LiveApp/streams/ambazonia_is_independent_from_lrc.m3u8
+#EXTINF:-1 tvg-id="CRTV.cm" status="online",CRTV
+https://www.dailymotion.com/cdn/live/video/x7o9p4a.m3u8?sec=mTBVC3xj06fDupMnBF80oa1R_Yld6XypjkeDmKaPcBjW7nUFyNsQB6m5OvlHX9WUIveV9hA0h7JcbZKN1iQo3w&dmTs=739971&dmV1st=676A7E270FF4947A368E3958495F3CCD
+#EXTINF:-1 tvg-id="Vision4RCA.cm" status="online",Vision 4 RCA
+https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/vision4/hls_video/index.m3u8
+#EXTINF:-1 tvg-id="CRTVNews.cm" status="online",CRTV News
+https://www.dailymotion.com/cdn/live/video/x8csy6e.m3u8?sec=0dG-qrryJPCLgYiMLbBkex0JYDn5D0QpvAOeS81_t5Lk_NwlAvKdQnv-hi2n2D3CD007pNgn9ThQz27Itcn3_Q&dmTs=972020&dmV1st=736543DB01C5583DE773C6D23A296296
