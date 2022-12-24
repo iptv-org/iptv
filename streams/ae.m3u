@@ -9,28 +9,28 @@ https://admdn3.cdn.mangomolo.com/emarat/smil:emarat.stream.smil/playlist.m3u8
 https://admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AbuDhabiSports2.ae" status="timeout",Abu Dhabi Sports 2 (1080p)
 https://admdn5.cdn.mangomolo.com/adsports2/smil:adsports2.stream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AjmanTV.ae" status="timeout",Ajman TV [Not 24/7]
+#EXTINF:-1 tvg-id="AjmanTV.ae" status="blocked",Ajman TV [Not 24/7]
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/d3e9fc3b874a46159ce3724d802e3f8d/playlist.m3u8
 #EXTINF:-1 tvg-id="AlAanTV.ae" status="error",Al Aan TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x74wje5
+#EXTINF:-1 tvg-id="Alarabiya.ae" status="timeout",Al Arabiya (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlArabiya/live
 #EXTINF:-1 tvg-id="Alarabiya.ae" status="timeout",Al Arabiya (1080p)
 https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Alarabiya.ae" status="timeout",Al Arabiya (1080p)
 https://mn-nl.mncdn.com/alarabiya_live_channel/out/v1/f5f319206ed740f9a831f2097c2ead23/index.m3u8
 #EXTINF:-1 tvg-id="Alarabiya.ae" status="timeout",Al Arabiya (1080p)
 https://shls-alarabiya-prod-dub.shahid.net/out/v1/f5f319206ed740f9a831f2097c2ead23/index.m3u8
-#EXTINF:-1 tvg-id="Alarabiya.ae" status="error",Al Arabiya (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlArabiya/live
 #EXTINF:-1 tvg-id="AlDafrahTV.ae" status="timeout",Al Dafrah TV (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/aldafrahtv
+#EXTINF:-1 tvg-id="AlHadath.ae" status="timeout",Al Hadath TV (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlHadath/live
 #EXTINF:-1 tvg-id="AlHadath.ae" status="timeout",Al Arabiya Al Hadath (1080p) [Not 24/7]
 https://av.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AlHadath.ae" status="timeout",Al Hadath TV (1080p) [Not 24/7]
 https://live.alarabiya.net/alarabiapublish/alhadath.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AlHadath.ae" status="timeout",Al Hadath TV (1080p)
 https://shls-hadath-prod-dub.shahid.net/out/v1/0e1a306399c346faac4226aa0858f99b/index.m3u8
-#EXTINF:-1 tvg-id="AlHadath.ae" status="error",Al Hadath TV (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlHadath/live
 #EXTINF:-1 tvg-id="AlQamarTV.ae" status="timeout",Al Qamar TV (360p)
 https://cdn5.iqsat.net/iq/8c17d37e0f5c88b1e9c7e1f8f82bc980.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="AlSharqiyaMinKabla.ae" status="timeout",Al Sharqiya Min Kabla (1080p)
@@ -46,9 +46,9 @@ https://shls-cartoon-net-prod-dub.shahid.net/out/v1/dc4aa87372374325a66be458f29e
 #EXTINF:-1 tvg-id="CitrussTV.ae" status="blocked",Citruss TV (720p) [Geo-blocked]
 https://d7km4gkevcbok.cloudfront.net/live/watch_720p30.m3u8
 #EXTINF:-1 tvg-id="CNBCArabiya.ae" status="timeout",CNBC Arabia (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CNBCArabia
-#EXTINF:-1 tvg-id="CNBCArabiya.ae" status="error",CNBC Arabia (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/cnbcarabiaTV/live
+#EXTINF:-1 tvg-id="CNBCArabiya.ae" status="timeout",CNBC Arabia (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/CNBCArabia
 #EXTINF:-1 tvg-id="DubaiOne.ae" status="timeout",Dubai One (1080p)
 http://dminnvll.cdn.mangomolo.com/dubaione/smil:dubaione.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="DubaiRacing2.ae" status="timeout",Dubai Racing 2 (1080p)
@@ -133,7 +133,7 @@ https://dmieigthvll.cdn.mgmlcdn.com/samadubaiht/smil:samadubai.stream.smil/playl
 https://weyyak-live.akamaized.net/weyyak_sama_dubai/index.m3u8
 #EXTINF:-1 tvg-id="Sharjah2.ae" status="timeout",Sharjah 2 (1080p)
 https://svs.itworkscdn.net/smc2live/smc2tv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SharjahRadioQuran.ae" status="error",Sharjah Radio Quran (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="SharjahRadioQuran.ae" status="timeout",Sharjah Radio Quran (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtube.com/channel/UCn8lMRYDANs_1yAL3iuw7_g/live
 #EXTINF:-1 tvg-id="SharjahSports.ae" status="timeout",Sharjah Sports TV (1080p)
 https://svs.itworkscdn.net/smc4sportslive/smc4.smil/playlist.m3u8
@@ -155,13 +155,13 @@ https://weyyak-live.akamaized.net/weyyak_drama/index.m3u8
 https://weyyak-live.akamaized.net/weyyak_mix/index.m3u8
 #EXTINF:-1 tvg-id="WeyyakNawaem.ae" status="timeout",Weyyak Nawaem (720p)
 https://weyyak-live.akamaized.net/weyyak_nawaem/index.m3u8
-#EXTINF:-1 tvg-id="WeyyakSmashi.ae" status="timeout",Weyyak Smashi (720p)
+#EXTINF:-1 tvg-id="WeyyakSmashi.ae" status="error",Weyyak Smashi (720p)
 https://weyyak-live.akamaized.net/weyyak_smashi_tv/index.m3u8
 #EXTINF:-1 tvg-id="Yas.ae" status="timeout",Yas (1080p)
 https://admdn1.cdn.mangomolo.com/yastv/smil:yastv.stream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ZeeAflam.in" status="error",Zee Aflam (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ZeeAflam.in" status="timeout",Zee Aflam (720p) [Not 24/7]
 https://weyyak-live.akamaized.net/weyyak_zee_aflam/index.m3u8
-#EXTINF:-1 tvg-id="ZeeAlwan.in" status="error",Zee Alwan (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ZeeAlwan.in" status="timeout",Zee Alwan (720p) [Not 24/7]
 https://weyyak-live.akamaized.net/weyyak_zee_alwan/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Takhayl (1080p)
 https://b832176c1c21d511e9ec3dc1df5d4cad.4gfbw5.channel-assembly.mediatailor.eu-west-1.amazonaws.com/v1/channel/shahid-media-prod-channel-assembly-1/index.m3u8
