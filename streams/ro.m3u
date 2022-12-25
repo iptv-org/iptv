@@ -14,7 +14,7 @@ https://stream1.antenaplay.ro/dfs/farasecrete5/playlist.m3u8
 #EXTINF:-1 tvg-id="AtomicTV.ro" status="timeout",Atomic TV (360p)
 https://atomic.streamnet.ro/atomictv.m3u8
 #EXTINF:-1 tvg-id="B1.ro" status="timeout",B1 (272p) [Not 24/7]
-https://stream.adunity.com/b1/b1.m3u8
+https://www.hlsrundle-stream-iptv.gq/api/hls/b1.m3u8
 #EXTINF:-1 tvg-id="BucovinaTV.ro" status="online",Bucovina TV (480p)
 http://46.4.14.12:9999/btvsvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="CorneaTV.ro" status="timeout",Cornea TV (720p) [Not 24/7]
@@ -33,9 +33,8 @@ https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8
 #EXTINF:-1 tvg-id="MoozHits.ro" status="timeout",MoozHits (576p)
 #EXTVLCOPT:http-referrer=https://mooz.tv/
 https://rtmp.digitalbroadcast.ro/moozhits/moozhits.m3u8
-#EXTINF:-1 tvg-id="MoozRo.ro" status="timeout",MoozRo (576p)
-#EXTVLCOPT:http-referrer=https://mooz.tv/
-https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8
+#EXTINF:-1 tvg-id="MoozRo.ro" status="online",MoozRo (576p)
+https://www.hlsrundle-stream-iptv.gq/api/hls/moozro.m3u8
 #EXTINF:-1 tvg-id="NasulTV.ro" status="timeout",Naşul TV (720p) [Not 24/7]
 https://5ab29cc78f681.streamlock.net/NasulTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="NovaTVBrasov.ro" status="timeout",Nova TV Brasov (576p) [Not 24/7]
@@ -52,8 +51,8 @@ https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?of
 https://live.realitatea.net/livertmp/plus/playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaTV.ro" status="timeout",Realitatea Plus (720p)
 https://edge.realitatea.net/realitatea/plus_fq/playlist.m3u8
-#EXTINF:-1 tvg-id="SperantaTV.ro" status="timeout",Speranta TV (720p) [Not 24/7]
-http://play.streamkit.tv/content/channel/sperantatv/live/sperantatv.player.m3u8
+#EXTINF:-1 tvg-id="SperantaTV.ro" status="online",Speranta TV (720p)
+https://www.hlsrundle-stream-iptv.gq/api/hls/sperantatv.m3u8
 #EXTINF:-1 tvg-id="TVPlusSuceava.ro" status="online",TVPlus Suceava (576p)
 http://85.186.146.34:8080
 #EXTINF:-1 tvg-id="TVSat.ro" status="online",TVSat (576p) [Not 24/7]
@@ -67,12 +66,12 @@ http://83.103.150.198:8080
 #EXTINF:-1 tvg-id="ColumnaTV.ro" status="online",Columna TV
 http://142.132.136.139:1935/columnatv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Digi24.ro" status="online",Digi 24
-https://dai.google.com/linear/hls/pa/event/OQfdjUhHSDSlb1fJVzehsQ/stream/ef5d59b9-148e-4909-a937-5e9cff10f03d:TUL/master.m3u8
+https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
 #EXTINF:-1 tvg-id="EuronewsRomania.ro" status="online",Euronews Romania
 https://youtu.be/tdwXKd9Gqb8
 #EXTINF:-1 tvg-id="IneditTV.ro" status="online",Inedit TV
 http://edge8.imcr.ro:1359/live/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="KanalDRomania.ro" status="online",Kanal D Romania
+#EXTINF:-1 tvg-id="KanalDRomania.ro" status="timout",Kanal D Romania
 https://stream1.kanald.ro/iphone/knd-live_low/index.m3u8
 #EXTINF:-1 tvg-id="KissTV.ro" status="online",Kiss TV
 https://tv.broadcasting.ro/memfs/a629c031-2170-4ee9-a36d-87a891aa3131_output_0.m3u8?session=N7g8y8vTdz4KRyoyZr9PPo
@@ -91,10 +90,18 @@ https://tv.broadcasting.ro/memfs/85c83a80-4f71-4f2d-a8d6-43f676896bcb_output_0.m
 #EXTINF:-1 tvg-id="Telestar1.ro" status="online",Telestar1
 http://89.47.97.15/telestar/telestar.m3u8
 #EXTINF:-1 tvg-id="TrinitasTV.ro" status="online",Trinitas TV
-https://youtu.be/NbnYVI_Fog4
+https://www.hlsrundle-stream-iptv.gq/api/hls/trinitastv.m3u8
 #EXTINF:-1 tvg-id="TVRInternational.ro" status="online",TVR International
 https://mn-nl.mncdn.com/tvri_test/smil:tvri_test.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AlephBusiness.ro" status="online",Aleph Business
 https://stream-aleph.m.ro/Aleph/ngrp:Alephbiz.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="SmartTV.ro" status="online",Smart TV
 https://stream-aleph.m.ro/Aleph/ngrp:Smartv.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="EuronewsRomania.ro" status="online",Euronews Romania
+https://www.hlsrundle-stream-iptv.gq/api/hls/euronews.m3u8
+#EXTINF:-1 tvg-id="ZUTV.ro" status="online",Zu TV
+https://www.hlsrundle-stream-iptv.gq/api/hls/zutv.m3u8
+#EXTINF:-1 tvg-id="Antena1.ro" status="online",Antena 1
+https://www.hlsrundle-stream-iptv.gq/api/hls/antena1.m3u8
+#EXTINF:-1 tvg-id="ProTV.ro" status="online",Pro TV
+https://www.hlsrundle-stream-iptv.gq/api/hls/protv.m3u8
