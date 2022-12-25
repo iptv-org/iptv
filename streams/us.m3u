@@ -41,7 +41,7 @@ https://tve-live-lln.warnermediacdn.com/hls/live/2023185/aswest/noslate/VIDEO_1_
 https://tve-live-lln.warnermediacdn.com/hls/live/2023185/aswest/noslate/VIDEO_3_1928000.m3u8
 #EXTINF:-1 tvg-id="AdventureSportsTV.us" status="timeout",Adventure Sports TV (360p) [Not 24/7]
 https://gizmeon.s.llnwi.net/channellivev3/live/master.m3u8?channel=275
-#EXTINF:-1 tvg-id="AghapyKids.us" status="error",Aghapy Kids (1080p)
+#EXTINF:-1 tvg-id="AghapyKids.us" status="timeout",Aghapy Kids (1080p)
 https://5b622f07944df.streamlock.net/aghapykids.tv/aghapykids2/playlist.m3u8
 #EXTINF:-1 tvg-id="Akaku53.us" status="timeout",Akaku 53 (Hawaii) (1080p)
 https://castus-vod-dev.s3.amazonaws.com/vod_clients/akaku/live/ch1/video.m3u8
@@ -99,7 +99,7 @@ http://209.91.213.10:8088/play/a013
 https://bcovlive-a.akamaihd.net/bdbdca51c15243fbaca92fd54c42d45a/us-east-1/6245817279001/playlist.m3u8
 #EXTINF:-1 tvg-id="AmericanHorrors.us" status="online",American Horrors (480p)
 http://170.178.189.66:1935/live/Stream1/playlist.m3u8
-#EXTINF:-1 tvg-id="AmericasAuctionChannel.us" status="timeout",AACTV America's Auction Channel (1080p)
+#EXTINF:-1 tvg-id="AmericasAuctionChannel.us" status="error",AACTV America's Auction Channel (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AACTelevision/live
 #EXTINF:-1 tvg-id="AmericasVoice.us" status="timeout",America's Voice (720p)
 https://content.uplynk.com/channel/26bd482ffe364a1282bc3df28bd3c21f.m3u8
@@ -199,7 +199,7 @@ https://bspoketv.s.llnwi.net/streams/322/master.m3u8
 https://content.uplynk.com/channel/7ad2b600b40b4a89933ab6981757f8b3.m3u8
 #EXTINF:-1 tvg-id="Buzzr.us" status="online",Buzzr (1080p)
 https://buzzrota-web.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="CableHits.us" status="timeout",Cable Hits (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CableHits.us" status="error",Cable Hits (720p) [Not 24/7]
 https://bk7l2w4nlx53-hls-live.5centscdn.com/AETV/514c04b31b5f01cf00dd4965e197fdda.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="CaliforniaMusicChannel.us" status="timeout",CMC (California Music Channel)
 https://cmc-ono.amagi.tv/playlist.m3u8
@@ -274,7 +274,7 @@ https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_3_
 https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_4_1064000.m3u8
 #EXTINF:-1 tvg-id="CNN.us" status="error",CNN USA (360p)
 http://stream.tvtap.live:8081/live/us-cnn.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="CNNBrasil.br" status="timeout",CNN Brasil (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="CNNBrasil.br" status="error",CNN Brasil (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCvdwhh_fDyWccR42-rReZLw/live
 #EXTINF:-1 tvg-id="CNNChile.cl" status="timeout",CNN Chile (720p)
 https://unlimited1-cl-movistar.dps.live/cnn/cnn.smil/playlist.m3u8
@@ -809,6 +809,8 @@ https://cdn.tcncountry.net/scte35_aws/index.m3u8
 https://endpnt.com/hls/tcn4k/playlist.m3u8
 #EXTINF:-1 tvg-id="TheCountryNetwork.us" status="timeout",The Country Network (1080p)
 https://cdn.tcncountry.net/scte35_aws/index.m3u8
+#EXTINF:-1 tvg-id="TheCountryNetwork.us" status="error",The Country Network (2160p)
+https://endpnt.com/hls/tcn4k/playlist.m3u8
 #EXTINF:-1 tvg-id="TheFirstTV.us" status="timeout",The First (1080p)
 https://thefirst-distroscale.amagi.tv/index.m3u8
 #EXTINF:-1 tvg-id="TheLoveDestination.us" status="timeout",The Love Destination (1080p)
@@ -1028,6 +1030,8 @@ https://scripps-gritxtra-1-us.vizio.wurl.tv/playlist.m3u8
 https://d2tuwvs0ja335j.cloudfront.net/hls/1080p/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",IMPACT! Wrestling (1080p)
 https://d2p372oxiwmcn1.cloudfront.net/hls/main.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",MCN6 (1080p) [Not 24/7]
+https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_MAIN.smil/Playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",MTV Hits Latinoamérica (576p)
 http://209.91.213.10:8088/play/a00z
 #EXTINF:-1 tvg-id="" status="timeout",MTV Latinoamérica (1080p)
