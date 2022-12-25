@@ -15,7 +15,7 @@ http://210.210.155.37/qwr9ew/s/s07/index1.m3u8
 https://h1.intechmedia.net/intech/ch2.m3u8
 #EXTINF:-1 tvg-id="BaliTV.id" status="blocked",Bali TV (720p) [Geo-blocked]
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(8e867ae0-b2c0-4968-9f60-a11aee8c0987)/index.m3u8
-#EXTINF:-1 tvg-id="BatamTV.id" status="error",Batam TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="BatamTV.id" status="online",Batam TV (720p) [Not 24/7]
 http://122.248.43.138:1935/ch5/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="BatuTV.id" status="online",Batu TV (576p) [Not 24/7]
 http://117.103.69.219:8080/live/streaming/index.m3u8
@@ -76,7 +76,7 @@ https://alfa.kugo.id/gprtv/rtmp.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="HijrahTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Hijrah TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch8.m3u8
-#EXTINF:-1 tvg-id="HopeChannelIndonesia.id" status="timeout",Hope Channel Indonesia [Not 24/7]
+#EXTINF:-1 tvg-id="HopeChannelIndonesia.id" status="error",Hope Channel Indonesia [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://m.youtube.com/c/HopeChannelIndonesia/live
 #EXTINF:-1 tvg-id="HumaBetangTV.id" status="timeout",Huma Betang TV (720p) [Not 24/7]
 https://v3.siar.us/humabetangtv/live/playlist.m3u8
@@ -139,10 +139,10 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://m.youtube.com/c/MediaSu
 https://h1.intechmedia.net/intech/ch23.m3u8
 #EXTINF:-1 tvg-id="MetroGlobeNetwork.id" status="timeout",Metro Globe Network (1080p) [Not 24/7]
 https://edge.medcom.id/live-edge/smil:mgnch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="MetroTV.id" status="timeout",Metro TV (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://m.youtube.com/c/MetrotvnewsOfficial/live
 #EXTINF:-1 tvg-id="MetroTV.id" status="timeout",Metro TV (480p) [Not 24/7]
 http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MetroTV.id" status="error",Metro TV (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://m.youtube.com/c/MetrotvnewsOfficial/live
 #EXTINF:-1 tvg-id="MGITV.id" status="timeout",MGI TV (720p) [Geo-blocked]
 https://tv.rodja.live/tasik/ngrp:mgitv_all/playlist.m3u8
 #EXTINF:-1 tvg-id="MGSTV.id" status="timeout",MGS TV (720p) [Not 24/7]
@@ -168,7 +168,7 @@ http://210.210.155.37/uq2663/h/h191/index.m3u8
 https://alfa.kugo.id/nabawitv/nabawitv/playlist.m3u8
 #EXTINF:-1 tvg-id="NET.id" status="online",NET. (480p) [Geo-blocked]
 http://210.210.155.37/qwr9ew/s/s08/index.m3u8
-#EXTINF:-1 tvg-id="NET.id" status="timeout",NET. [Not 24/7]
+#EXTINF:-1 tvg-id="NET.id" status="error",NET. [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtube.com/user/NetInsights/live
 #EXTINF:-1 tvg-id="NiagaTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Niaga TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
@@ -183,7 +183,7 @@ http://210.210.155.37/uq2663/h/h143/index.m3u8
 http://122.248.43.138:1935/ch16/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="PalembangTV.id" status="timeout",Pal TV (720p) [Not 24/7]
 https://v3.siar.us/paltv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="PijarTV.id" status="timeout",Pijar TV [Not 24/7]
+#EXTINF:-1 tvg-id="PijarTV.id" status="error",Pijar TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/pijartv
 #EXTINF:-1 tvg-id="PONTV.id" status="online",Pon TV (360p) [Not 24/7]
 http://122.248.43.138:1935/ch15/myStream/playlist.m3u8
@@ -193,7 +193,7 @@ https://v3.siar.us/pontianaktelevisi/live/playlist.m3u8
 https://alfa.kugo.id/playout/pop.stream/chunklist.m3u8
 #EXTINF:-1 tvg-id="PujaTVAceh.id" status="timeout",Puja TV Aceh (1080p) [Not 24/7]
 https://v6.siar.us/pujatv/live/chunks.m3u8
-#EXTINF:-1 tvg-id="RadarLampungTV.id" status="error",Radar TV Lampung (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadarLampungTV.id" status="online",Radar TV Lampung (480p) [Not 24/7]
 http://122.248.43.138:1935/ch17/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioKitaTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",RadioKita TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
@@ -204,7 +204,7 @@ http://210.210.155.37/dr9445/h/h10/index.m3u8
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(41869351-4a9c-4e57-b54b-8cf5dfc919e1)/index.m3u8
 #EXTINF:-1 tvg-id="RasyaadTV.id" status="timeout",Rasyaad TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://m.youtube.com/c/RasyaadTvLiveStreaming/live
-#EXTINF:-1 tvg-id="RasyaadTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Rasyaad TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RasyaadTV.id" status="error" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Rasyaad TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch6.m3u8
 #EXTINF:-1 tvg-id="RCTV.id" status="online",RCTV (720p) [Not 24/7]
@@ -266,7 +266,7 @@ http://118.98.229.118:1935/live/tve.stream/playlist.m3u8
 https://tvmu.siar.us/tvmu/live/playlist.m3u8
 #EXTINF:-1 tvg-id="tvOne.id" status="online",tvOne (480p) [Geo-blocked]
 http://210.210.155.37/qwr9ew/s/s105/01.m3u8
-#EXTINF:-1 tvg-id="tvOne.id" status="timeout",tvOne
+#EXTINF:-1 tvg-id="tvOne.id" status="error",tvOne
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtube.com/c/tvOneNews/live
 #EXTINF:-1 tvg-id="TVRIAceh.id" status="online",TVRI Aceh (720p) [Not 24/7]
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIACEH)/index.m3u8
@@ -531,7 +531,7 @@ https://bintangtv.siar.us/bintangtv/live/playlist.m3u8
 https://alfa.kugo.id/playout/kugo1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",kugo Star (576i)
 https://alfa.kugo.id/playout/KugoStar.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="error",Pal TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",Pal TV (720p) [Not 24/7]
 http://122.248.43.138:1935/ch7/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",RB TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
