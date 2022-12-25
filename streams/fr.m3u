@@ -11,7 +11,7 @@ https://live.creacast.com/grandlilletv/smil:grandlilletv.smil/playlist.m3u8
 https://live.creacast.com/grandlittoral/smil:grandlittoral.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BIPTV.fr" status="timeout",BIP TV (480p) [Not 24/7]
 http://biptv.tv/live/biptvstream_orig/index.m3u8
-#EXTINF:-1 tvg-id="C8.fr" status="error",C8 (1080p)
+#EXTINF:-1 tvg-id="C8.fr" status="timeout",C8 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/C8TV
 #EXTINF:-1 tvg-id="CanalPlusFrance.fr" status="blocked",Canal+ France [Geo-blocked]
 http://hls-m007.live-lv3.canalplus-cdn.net/live/disk/canalplusclair-hd/hls-ios-fhd-clair/canalplusclair-hd.m3u8
@@ -69,7 +69,7 @@ https://fash2043.cloudycdn.services/slive/ftv_ftv_4k_hevc_73d_42080_default_466_
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Arabic/live
 #EXTINF:-1 tvg-id="France24English.fr" status="timeout",France 24 English (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24English/live
-#EXTINF:-1 tvg-id="France24Espanol.fr" status="timeout",France 24 Español (1080p)
+#EXTINF:-1 tvg-id="France24Espanol.fr" status="error",France 24 Español (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24Espanol/live
 #EXTINF:-1 tvg-id="France24French.fr" status="timeout",France 24 French (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/FRANCE24/live
@@ -143,7 +143,7 @@ https://sp1564435593.mytvchain.info/live/sp1564435593/index.m3u8
 https://sp1564435593.mytvchain.info/live/sp1564435593_360/index.m3u8
 #EXTINF:-1 tvg-id="SportenFrance.fr" status="timeout",Sport En France (720p)
 https://sp1564435593.mytvchain.info/live/sp1564435593_720/index.m3u8
-#EXTINF:-1 tvg-id="Telesud.fr" status="error",TeleSud
+#EXTINF:-1 tvg-id="Telesud.fr" status="timeout",TeleSud
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7wrxqb
 #EXTINF:-1 tvg-id="TF1SeriesFilms.fr" status="timeout",TF1 Séries Films (360p)
 http://gratuittv.free.fr/Files/tfsf/live/playlist.m3u8
@@ -175,8 +175,6 @@ https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8
 https://live.digiteka.com/1/WGQ1NnhEN0lzM0NU/dk1EOHhw/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Weo.fr" status="timeout",Wéo (Picardie) (480p) [Not 24/7]
 https://live.digiteka.com/1/Zks2L0VsM2V0T242/QTBqcFly/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Arte Deutsch [Geo-blocked]
-https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ARTE Français (720p) [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Fashion TV (576p) [Not 24/7]
