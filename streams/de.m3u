@@ -403,11 +403,11 @@ https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
 https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
 #EXTINF:-1 tvg-id="ZweiMusicTelevision.de" status="timeout",ZWEI2 Music (1080p)
 https://serve-first.folxplay.tv/folx/ch-2/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Antenne Vorarlberg (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AntenneVorarlberg.at" status="timeout",Antenne Vorarlberg (720p) [Not 24/7]
 http://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="BRFernsehenSud.de" status="timeout",BR Fernsehen Süd (720p)
 https://brcdn.vo.llnwd.net/br/fs/bfs_sued/hls/de/master.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",ARTE [Geo-blocked]
+#EXTINF:-1 tvg-id="ARTEGermany.de" status="blocked",ARTE [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutsch.de" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
@@ -428,7 +428,7 @@ https://s.ok54.de/mok-fu/livestream/playlist.m3u8
 https://serve-first.folxplay.tv/folx/ch-3/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ONE1 Slovenija (1080p)
 https://serve-first.folxplay.tv/folx/ch-6/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",PunktUm Hettstedt (1080p)
+#EXTINF:-1 tvg-id="PUNKTum.de" status="timeout",PunktUm Hettstedt (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:punktum_high/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Ran1 Dessau-Roßlau (1080p)
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ran1_high/playlist.m3u8
@@ -596,3 +596,7 @@ https://s6.hopslan.com/tele5c/playlist.m3u8
 https://stream4.sehradar.de/jenatv/ngrp:livestream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="RennsteigTV.de" status="online",Rennsteig TV
 http://wowza.telvi.de/rennsteigtv/stream_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="SachsenFernsehenVogtland.de" status="online",Sachsen Fernsehen Vogtland
+http://vogtland.iptv-playoutcenter.de/vogtland/vogtlandfernsehen.stream_1/playlist.m3u8
+#EXTINF:-1 tvg-id="WWTV.de" status="online",WW TV
+https://live2.telvi.de/hls/wwtv_hd720.m3u8
