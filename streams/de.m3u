@@ -265,8 +265,8 @@ https://mcdn.one.ard.de/ardone/hls/master.m3u8
 https://serve-first.folxplay.tv/folx/ch-3/master.m3u8
 #EXTINF:-1 tvg-id="Parlamentsfernsehen1.de" status="timeout",Parlamentsfernsehen 1 (1080p)
 https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk1.m3u8
-#EXTINF:-1 tvg-id="Parlamentsfernsehen2.de" status="timeout",Parlamentsfernsehen 2 (270p)
-https://cldf-hlsgw.r53.cdn.tv1.eu/1000153copo/hk2.m3u8
+#EXTINF:-1 tvg-id="Parlamentsfernsehen2.de" status="timeout",Parlamentsfernsehen 2 (1080p)
+https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk2/_definst_/live/video/hk2_de.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Phoenix.de" status="blocked",Phoenix [Geo-blocked]
 https://zdf-hls-19.akamaized.net/hls/live/2016502/de/high/master.m3u8
 #EXTINF:-1 tvg-id="PunkteinsOberlausitz.de" status="timeout",Punkteins
@@ -405,7 +405,7 @@ https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
 https://serve-first.folxplay.tv/folx/ch-2/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Antenne Vorarlberg (720p) [Not 24/7]
 http://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",ARTE [Geo-blocked]
+#EXTINF:-1 tvg-id="ARTEGermany.de" status="blocked",ARTE [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2030993/artelive_de/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",DW (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
@@ -418,11 +418,109 @@ https://mytvplus.iptv-playoutcenter.de/mytvplus/mytvplus.stream_1/playlist.m3u8
 https://serve-first.folxplay.tv/folx/ch-6/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",PunktUm Hettstedt (1080p)
 https://58bd5b7a98e04.streamlock.net/medienasa-live/_definst_/mp4:punktum_high/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Ran1 Dessau-Roßlau (1080p)
+#EXTINF:-1 tvg-id="RAN1.de" status="online",RAN1 Dessau-Roßlau (1080p)
 http://62.113.210.250:1935/medienasa-live/_definst_/mp4:ran1_high/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",RAN1 Regionalfernsehen (1080p)
+#EXTINF:-1 tvg-id="RAN1.de" status="online",RAN1 Regionalfernsehen (1080p)
 http://62.113.210.250:1935/medienasa-live/mp4:ran1_high/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",RAN1 Regionalfernsehen (1080p)
+#EXTINF:-1 tvg-id="RAN1.de" status="online",RAN1 Regionalfernsehen (1080p)
 http://62.113.210.250:1935/medienasa-live/ran1_high/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",WTV Wettin
+#EXTINF:-1 tvg-id="" status="online",WTV Wettin 
 http://62.113.210.250:1935/medienasa-live/ok-wettin_high/playlist.m3u8
+#EXTINF:-1 tvg-id="Hamburg1.de",Hamburg 1 (720p)
+https://hamburg1-jw.cdn.vustreams.com/live/09120205-afa3-4048-a965-318eb0cacffc/live.isml/.m3u8
+#EXTINF:-1 tvg-id="LTV.de",L-TV
+https://live2.telvi.de/hls/l-tv_s1.m3u8
+#EXTINF:-1 tvg-id="OKTVLudwigshafen.de",OK-TV Ludwigshafen (720p)
+https://s.ok54.de/oklu/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="OK4.de",OK4 (720p)
+https://s.ok54.de/abr_ok4/live/playlist.m3u8
+#EXTINF:-1 tvg-id="OK54.de",OK54 (720p)
+https://s.ok54.de/ott/webstream/tv/webstream_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="RennsteigTV.de",Rennsteig TV (720p)
+http://wowza.telvi.de/rennsteigtv/stream_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMittelrhein.de",TV Mittelrhein (720p)
+https://live2.telvi.de/hls/tvm_hd720.m3u8
+#EXTINF:-1 tvg-id="TVIngolstadt.de",TV Ingolstadt (1080p)
+https://stream01.welocal.stream/stream/fhd-tvingolstadt_44349/ngrp:stream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="SachsenFernsehenVogtland.de",Sachsen Fernsehen Vogtland
+http://vogtland.iptv-playoutcenter.de/vogtland/vogtlandfernsehen.stream_1/playlist.m3u8
+#EXTINF:-1 tvg-id="WWTV.de",WW TV (720p)
+https://live2.telvi.de/hls/wwtv_hd720.m3u8
+#EXTINF:-1 tvg-id="VolksmusikTV.de",Volksmusik TV (1080p)
+https://vmtv.iptv-playoutcenter.de/vmtv/vmtv1/playlist.m3u8
+#EXTINF:-1 tvg-id="WeltderWunderTV.de",Welt der Wunder TV (576p)
+https://wdw.iptv-playoutcenter.de/wdw/wdw1/playlist.m3u8
+#EXTINF:-1 tvg-id="DASDING908.de",DASDING 90.8 (720p)
+https://swrdasdingvr-hls.akamaized.net/hls/live/2018681/dasdingvr/master.m3u8
+#EXTINF:-1 tvg-id="EWTNGermany.de",EWTN Germany (720p)
+https://cdn3.wowza.com/1/ZUkxSDBrZHlMbjVn/ZkhNRFNZ/hls/live/playlist.m3u8
+#EXTINF:-1 tvg-id="MoreThanSportsTV.de",More Than Sports TV (1080p)
+https://mts1.iptv-playoutcenter.de/mts/mts-web/playlist.m3u8
+#EXTINF:-1 tvg-id="QVCGermany.de",QVC Germany 
+https://d2mn03dhv5o3g8.cloudfront.net/live/qvcde_main_clean/bitrate1.isml/3/prog_index.m3u8
+#EXTINF:-1 tvg-id="QVC2Germany.de",QVC Plus
+https://d2mn03dhv5o3g8.cloudfront.net/live/qvcde_plus_clean/bitrate1.isml/3/prog_index.m3u8
+#EXTINF:-1 tvg-id="QVCStyleGermany.de",QVC Beauty
+http://live.qvcde.simplestreamcdn.com/live/qvcde_beauty_clean/bitrate1.isml/live.m3u8
+#EXTINF:-1 tvg-id="MDRFernsehenSachsen.de",MDR Fernsehen Sachsen [Geo-blocked] 
+https://mdrtvsnhls.akamaized.net/hls/live/2016928/mdrtvsn/index.m3u8
+#EXTINF:-1 tvg-id="MDRFernsehenSachsenAnhalt.de",MDR Fernsehen Sachsen-Anhalt [Geo-blocked] 
+https://mdrtvsahls.akamaized.net/hls/live/2016879/mdrtvsa/index.m3u8
+#EXTINF:-1 tvg-id="MDRFernsehenThuringen.de",MDR Fernsehen Thüringen [Geo-blocked] 
+https://mdrtvthhls.akamaized.net/hls/live/2016880/mdrtvth/index.m3u8
+#EXTINF:-1 tvg-id="RocklandTV.de",Rockland TV [Geo-blocked] 
+https://live.creacast.com/rockland-radio/smil:rockland-radio.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SRFernsehen.de",SR Fernsehen (720p)
+https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
+#EXTINF:-1 tvg-id="SWRFernsehenRheinlandPfalz.de",SWR Fernsehen Rheinland-Pfalz [Geo-blocked] 
+https://swrrpd-hls.akamaized.net/hls/live/2018676/swrrpd/master.m3u8
+#EXTINF:-1 tvg-id="RBBBrandenburg.de",RBB Brandenburg [Geo-blocked] 
+https://rbb-hls-brandenburg.akamaized.net/hls/live/2017825/rbb_brandenburg/master.m3u8
+#EXTINF:-1 tvg-id="",SRF (720p)
+https://58de7a369a9c4.streamlock.net/srf/stream_720p/playlist.m3u8
+#EXTINF:-1 tvg-id="SonnenklarTV.de",Sonnenklar TV
+http://edge0751-05mx1.flex-cdn.net/5aa69cf649ebd706ca08b8ea98d4cca5d82b05282f9c764bc4e0/index.m3u8
+#EXTINF:-1 tvg-id="SchlagerDeluxe.de",Schlager Deluxe (1080p)
+https://sdn-global-live-streaming-packager-cache.3qsdn.com/26658/26658_264_live.m3u8
+#EXTINF:-1 tvg-id="",H1 Fernsehen (1080p)
+https://5857499ee635b.streamlock.net/heinstv-live/_definst_/smil:livestream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="",Magenta Musik 360 (1080p)
+https://streaming.magenta-musik-360.de/csm/573870/magentamusik1/index.m3u8
+#EXTINF:-1 tvg-id="",Magenta Musik 360 2 (1080p)
+https://streaming.magenta-musik-360.de/csm/573871/magentamusik2/index.m3u8
+#EXTINF:-1 tvg-id="",Parlamentsfernsehen 3 (1080p)
+https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk3/_definst_/live/video/hk3_de.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="",Parlamentsfernsehen 4 (1080p)
+https://bttv-live-z.r53.cdn.tv1.eu/13014bundestag-hk4/_definst_/live/video/hk4_de.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioBremenFernsehen.de",Radio Bremen Fernsehen [Geo-blocked] 
+https://rbhlslive.akamaized.net/hls/live/2020435/rbfs/master.m3u8
+#EXTINF:-1 tvg-id="Unserding.de",Unserding [Geo-blocked] 
+https://srunserding-lh.akamaihd.net/i/visualradio_ud@197013/master.m3u8
+#EXTINF:-1 tvg-id="",Wir24 TV [Geo-blocked] 
+https://edge14.vedge.infomaniak.com/livecast/ik:wir24tv_hms/manifest.m3u8
+#EXTINF:-1 tvg-id="ARDEvent1.de",ARD Event 1 [Geo-blocked] 
+http://wdrardevent1-lh.akamaihd.net/i/ardevent1_weltweit@566648/master.m3u8
+#EXTINF:-1 tvg-id="",ARTE Event 1 [Geo-blocked] 
+https://arteconcerthls.akamaized.net/hls/live/2025494/channel01/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenAachen.de",WDR Fernsehen Aachen [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2018019-b/wdrlz_aachen/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenBonn.de",WDR Fernsehen Bonn [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2018021-b/wdrlz_bonn/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenWuppertal.de",WDR Fernsehen Wuppertal [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2018028-b/wdrlz_wuppertal/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenDortmund.de",WDR Fernsehen Dortmund [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2018022-b/wdrlz_dortmund/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenDusseldorf.de",WDR Fernsehen Düsseldorf [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2018023-b/wdrlz_duesseldorf/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenDuisburg.de",WDR Fernsehen Duisburg [Geo-blocked]
+https://wdrlokalzeit.akamaized.net/hls/live/2018024-b/wdrlz_duisburg/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenKoln.de",WDR Fernsehen Koln [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2023550-b/wdrlz_koeln/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenMunster.de",WDR Fernsehen Münster [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2018025-b/wdrlz_muensterland/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenBielefeld.de",WDR Fernsehen Bielefeld [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2018026-b/wdrlz_bielefeld/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenSiegen.de",WDR Fernsehen Siegen [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2018020-b/wdrlz_siegen/master.m3u8
+#EXTINF:-1 tvg-id="WDRFernsehenEssen.de",WDR Fernsehen Essen [Geo-blocked] 
+https://wdrlokalzeit.akamaized.net/hls/live/2018027-b/wdrlz_essen/master.m3u8
