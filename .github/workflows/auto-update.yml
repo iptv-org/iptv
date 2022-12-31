@@ -135,7 +135,7 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to iptv-org/api'
           clean: false
-      - uses: repo-sync/pull-request@v2
+      - uses: repo-sync/pull-request@v2.9
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         id: pull-request
         with:

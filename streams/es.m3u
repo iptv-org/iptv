@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="7NN.es" status="timeout",7 Noticias (1080p)
-https://amg01573-7nn-7nnono-ono-pcdj3.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="7NN.es" status="error",7 Noticias (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/7nntv
+#EXTINF:-1 tvg-id="7NN.es" status="timeout",7 Noticias (1080p)
+https://amg01573-7nn-7nnono-ono-pcdj3.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="9laLomaTV.es" status="blocked",9 la Loma TV [Geo-blocked]
 https://9laloma.tv/live.m3u8
 #EXTINF:-1 tvg-id="25TV.es" status="timeout",25 TV (480p) [Not 24/7]
@@ -17,7 +17,7 @@ https://limited38.todostreaming.es/live/101tv-web101tv.m3u8
 https://directes-tv-int.ccma.cat/live-origin/canal324-hls/master.m3u8
 #EXTINF:-1 tvg-id="ActivaTV.es" status="timeout",Activa TV (720p)
 https://streamtv.mediasector.es/hls/activatv/index.m3u8
-#EXTINF:-1 tvg-id="AlacantiTV.es" status="error",Alacantí TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlacantiTV.es" status="timeout",Alacantí TV (576p) [Not 24/7]
 https://streaming01.gestec-video.com/hls/artequatreAlacanti.m3u8
 #EXTINF:-1 tvg-id="AlcarriaTV.es" status="timeout",Alcarria TV (576p) [Not 24/7]
 http://cls.alcarria.tv/alcarriatv/livestream/playlist.m3u8
@@ -77,8 +77,6 @@ http://217.125.136.93:8080/canalsierradecadiz1080.m3u8
 http://217.125.136.93:8080/canalsierradecadiz720.m3u8
 #EXTINF:-1 tvg-id="CanalSierradeCadiz.es" status="online",Canal Sierra de Cádiz (576p)
 http://217.125.136.93:8080/canalsierradecadiz576.m3u8
-#EXTINF:-1 tvg-id="CanalSuper3.es" status="blocked",Canal Super 3 [Geo-blocked]
-https://directes-tv-es.ccma.cat/live-origin/super3-hls/master.m3u8
 #EXTINF:-1 tvg-id="CanalSurAndalucia.es" status="timeout",Canal Sur Andalucía (720p)
 https://cdnlive.codev8.net/rtvalive/smil:channel1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalSurAndalucia.es" status="timeout",Canal Sur Andalucía (720p)
@@ -203,7 +201,7 @@ https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid
 https://urbanrevolution.es:8443/live/TV/playlist.m3u8
 #EXTINF:-1 tvg-id="LevanteTV.es" status="timeout",Levante TV (320p) [Not 24/7]
 https://play.cdn.enetres.net/C2F6CBB67E5B4D08A16CE5FE67ABCEC9023/029/playlist.m3u8
-#EXTINF:-1 tvg-id="LleidaTelevisio.es" status="blocked",Lleida Televisio (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LleidaTelevisio.es" status="timeout",Lleida Televisio (720p) [Not 24/7]
 https://cdn01.yowi.tv/lleida/playlist.m3u8
 #EXTINF:-1 tvg-id="LogosTV.es" status="timeout",Logos TV (1080p) [Not 24/7]
 http://streamer1.streamhost.org/salive/logosH/playlist.m3u8
@@ -253,7 +251,7 @@ https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8
 https://www.onairport.live/sophiatv-es-live/livestream/master.m3u8
 #EXTINF:-1 tvg-id="SophiaTV.es" status="timeout",Sophia TV (720p)
 https://www.onairport.live/sophiatv-es-live/livestream_high/master.m3u8
-#EXTINF:-1 tvg-id="Tac12.es" status="timeout",Tac12 (720p)
+#EXTINF:-1 tvg-id="Tac12.es" status="blocked",Tac12 (720p)
 https://ingest1-video.streaming-pro.com/nimble/tac12/playlist.m3u8
 #EXTINF:-1 tvg-id="Taroteame.es" status="timeout",Tarotéame (576p)
 https://5d2733224ac48.streamlock.net/taroteame/tarot_web/playlist.m3u8
@@ -273,7 +271,7 @@ https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid
 http://37.187.7.106/teleribera/live.m3u8
 #EXTINF:-1 tvg-id="TeleSafor.es" status="timeout",Tele Safor (576p) [Not 24/7]
 https://video.telesafor.com/hls/video.m3u8
-#EXTINF:-1 tvg-id="TeleToledo.es" status="timeout",TeleToledo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleToledo.es" status="error",TeleToledo (720p) [Not 24/7]
 https://cloud.streamingconnect.tv:455/teletoledo/teletoledo.m3u8
 #EXTINF:-1 tvg-id="TeleVigo.es" status="timeout",TeleVigo (1080p) [Not 24/7]
 https://cloud.streamingconnect.tv:455/televigo/televigo.m3u8
@@ -327,7 +325,7 @@ https://hellin-hls-live.flumotion.com/playlist.m3u8
 http://teledifusion.tv/cordoba/cordobalive/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMCordoba.es" status="timeout",TVM Córdoba (414p) [Not 24/7]
 https://5924d3ad0efcf.streamlock.net/cordoba/cordobalive/playlist.m3u8
-#EXTINF:-1 tvg-id="TVVegaBaja.es" status="online",TV Vega Baja (576p)
+#EXTINF:-1 tvg-id="TVVegaBaja.es" status="timeout",TV Vega Baja (576p)
 http://185.29.68.24/tvb.m3u8
 #EXTINF:-1 tvg-id="UneVinalopo.es" status="timeout",Une Vinalopó (576p) [Not 24/7]
 http://78.41.83.88:8880/hls/unesd.m3u8
@@ -347,6 +345,8 @@ https://cartv.streaming.aranova.es/hls/live/aragonradio_aragonradio1.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC7QZIf0dta-XPXsp9Hv4dTw/live
 #EXTINF:-1 tvg-id="" status="timeout",Canal Coín
 http://stream.fion.es:1936/Canal_Coin/canalcoin.stream/master.m3u8
+#EXTINF:-1 tvg-id="" status="blocked",Canal Super 3 [Geo-blocked]
+https://directes-tv-es.ccma.cat/live-origin/super3-hls/master.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",CostadelSol TV
 https://limited11.todostreaming.es/live/benalmadena-livestream.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Mola TV (720p)

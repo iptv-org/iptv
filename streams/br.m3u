@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1001Noites.br" status="timeout",1001 Noites (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="1001Noites.br" status="error",1001 Noites (720p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-8155/ngrp:LVW8155_41E1ciuCvO_all/playlist.m3u8
 #EXTINF:-1 tvg-id="AgroBrasilTV.br" status="online",AgroBrasil TV (720p) [Not 24/7]
 http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8
@@ -12,6 +12,8 @@ https://evpp.mm.uol.com.br/geob_band/agromais/playlist.m3u8
 https://5cf4a2c2512a2.streamlock.net/dgrau/dgrau/playlist.m3u8
 #EXTINF:-1 tvg-id="AnimeTV.br" status="timeout",Anime TV (360p) [Not 24/7]
 https://stmv1.srvif.com/animetv/animetv/playlist.m3u8
+#EXTINF:-1 tvg-id="ArarunaTV.br" status="timeout",Araruna TV (360p)
+https://video01.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
 #EXTINF:-1 tvg-id="AratuOn.br" status="timeout",Aratu On (720p)
 https://cdn.jmvstream.com/w/LVW-8379/LVW8379_rIq6ZYiIiA/playlist.m3u8
 #EXTINF:-1 tvg-id="Band.br" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Band (1080p) [Geo-blocked]
@@ -20,10 +22,14 @@ https://evpp.mm.uol.com.br/geob_band/app/playlist.m3u8
 #EXTINF:-1 tvg-id="Band.br" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Band (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://evpp.mm.uol.com.br/geob_band/band/playlist.m3u8
+#EXTINF:-1 tvg-id="BMCNews.br" status="error",BM&C [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoja0MNI4SIvXqJR3szbSfw/live
 #EXTINF:-1 tvg-id="BoasNovas.br" status="timeout",Boas Novas (720p)
 https://cdn.jmvstream.com/w/LVW-9375/LVW9375_6i0wPBCHYc/playlist.m3u8
-#EXTINF:-1 tvg-id="BoaVontadeTV.br" status="timeout",Boa Vontade TV (1080p)
+#EXTINF:-1 tvg-id="BoaVontadeTV.br" status="error",Boa Vontade TV (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCedt33latJW7StRfdF4-1FQ/live
+#EXTINF:-1 tvg-id="CaboFrioTV.br" status="timeout",Cabo Frio TV (720p)
+https://59f2354c05961.streamlock.net:1443/ararutv/_definst_/ararutv/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal25Jundiai.br" status="timeout",Canal 25 Jundiaí (404p) [Not 24/7]
 https://stream01.msolutionbrasil.com.br/hls/canal25/live.m3u8
 #EXTINF:-1 tvg-id="CanaldoCriador.br" status="timeout",Canal do Criador (1080p)
@@ -58,14 +64,18 @@ https://596639ebdd89b.streamlock.net/8032/8032/playlist.m3u8
 http://str.portalcultura.com.br/funtelpa/tv_funtelpa/live.m3u8
 #EXTINF:-1 tvg-id="FonteTV.br" status="timeout",Fonte TV (1080p) [Not 24/7]
 http://flash.softhost.com.br:1935/fonte/fontetv/live.m3u8
-#EXTINF:-1 tvg-id="Futura.br" status="error",Futura (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="Futura.br" status="timeout",Futura (540p) [Not 24/7]
 https://tv.unisc.br/hls/test.m3u8
 #EXTINF:-1 tvg-id="GhostTV.br" status="timeout",Ghost TV (712p) [Not 24/7]
 https://stmv.video.expressolider.com.br/ghostv/ghostv/playlist.m3u8
+#EXTINF:-1 tvg-id="GospelCartoon.br" status="timeout",Gospel Cartoon (360p)
+https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8
 #EXTINF:-1 tvg-id="GospelMovieTV.br" status="timeout",Gospel Movie TV (360p)
 https://stmv1.srvif.com/gospelf/gospelf/playlist.m3u8
 #EXTINF:-1 tvg-id="IMPDTV.br" status="timeout",IMPD TV (720p)
 https://58a4464faef53.streamlock.net/impd/ngrp:impd_all/playlist.m3u8
+#EXTINF:-1 tvg-id="ISTV.br" status="timeout",ISTV (1080p) [Not 24/7]
+https://cdn.jmvstream.com/w/LVW-9883/LVW9883_lFcfKysrHF/chunklist.m3u8
 #EXTINF:-1 tvg-id="JovemPanNews.br" status="timeout",Jovem Pan News (JP News) (1080p) [Not 24/7]
 https://d6yfbj4xxtrod.cloudfront.net/out/v1/7836eb391ec24452b149f3dc6df15bbd/index.m3u8
 #EXTINF:-1 tvg-id="KpopTVPlay.br" status="timeout",KpopTV Play (720p) [Not 24/7]
@@ -78,14 +88,20 @@ https://video01.logicahost.com.br/mkkwebtv/mkkwebtv/playlist.m3u8
 http://wz3.dnip.com.br:1935/novaeratv/novaeratv.sdp/live.m3u8
 #EXTINF:-1 tvg-id="NovoTempo.br" status="timeout",Novo Tempo (720p)
 https://stream.live.novotempo.com/tv/smil:tvnovotempo.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="NTV.br" status="timeout",Nossa TV (720p)
+https://59f1cbe63db89.streamlock.net:1443/ntvnet/_definst_/ntvnet/playlist.m3u8
 #EXTINF:-1 tvg-id="NuevoTiempo.br" status="timeout",Nuevo Tiempo (720p) [Not 24/7]
 https://stream.live.novotempo.com/tv/smil:tvnuevotiempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PeruChannel.br" status="timeout",Perú Channel
 https://stmv3.duvoxtv.com.br/novelapl/novelapl/playlist.m3u8
-#EXTINF:-1 tvg-id="PUCTVGoias.br" status="timeout",PUC TV Goiás (326p) [Not 24/7]
+#EXTINF:-1 tvg-id="PortalCultura.br" status="timeout",Portal Cultura (720p)
+http://www.portalcultura.com.br/playerhtml/funtelpa/tv_funtelpa/playlist.m3u8
+#EXTINF:-1 tvg-id="PUCTVGoias.br" status="error",PUC TV Goiás (326p) [Not 24/7]
 http://flash.softhost.com.br:1935/pucgoias/aovivo/live.m3u8
 #EXTINF:-1 tvg-id="RBATV.br" status="timeout",RBATV (720p)
 https://5cf4a2c2512a2.streamlock.net/rbatv/rbatv/playlist.m3u8
+#EXTINF:-1 tvg-id="RDCTV.br" status="timeout",RDC TV (720p)
+https://596639ebdd89b.streamlock.net/datavideo01/datavideo01/playlist.m3u8
 #EXTINF:-1 tvg-id="RecordNews.br" status="blocked",Record News (720p) [Geo-blocked]
 https://playplusnews-lh.akamaihd.net/i/pp_nws@377849/master.m3u8
 #EXTINF:-1 tvg-id="RecordTVBelem.br" status="blocked",Record TV Belem (720p) [Geo-blocked]
@@ -114,7 +130,7 @@ http://rbc.directradios.com:1935/rbc/rbc/live.m3u8
 https://d1s664t39qub1o.cloudfront.net/live/cnt-cuiaba_360p614k/index.m3u8
 #EXTINF:-1 tvg-id="RedeCNTCuritiba.br" status="timeout",Rede CNT (Curitiba) (180p) [Not 24/7]
 https://dd8umsy8yf96u.cloudfront.net/live/cnt-curitiba.m3u8
-#EXTINF:-1 tvg-id="RedeCNTLondrina.br" status="error",Rede CNT Londrina (360p)
+#EXTINF:-1 tvg-id="RedeCNTLondrina.br" status="timeout",Rede CNT Londrina (360p)
 https://d1s664t39qub1o.cloudfront.net/live/cnt-londrina_360p614k/index.m3u8
 #EXTINF:-1 tvg-id="RedeCNTPortoAlegre.br" status="timeout",Rede CNT Porto Alegre (360p)
 https://d1s664t39qub1o.cloudfront.net/live/cnt-caxias_360p614k/index.m3u8
@@ -138,11 +154,17 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel
 https://cdn-cdn-iguacu.ciclano.io:1443/cdn-iguacu/cdn-iguacu/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeMinas.br" status="timeout",Rede Minas (1080p) [Not 24/7]
 https://v4-slbps-sambavideos.akamaized.net/live/3282,8114,ec4b5a296d97fa99bf990662f5b4f8e1;base64np;Mc8VDxqNjXKCAf8!/amlst:Mc_tFgfGiHOdQXPB/chunklist_.m3u8
+#EXTINF:-1 tvg-id="RedeMundoTV.br" status="timeout",Rede Mundo TV (720p)
+https://video01.logicahost.com.br/mundotvbrasil/mundotvbrasil/playlist.m3u8
+#EXTINF:-1 tvg-id="RedeNGT.br" status="timeout",Rede NGT
+https://acesso.ecast.site:3922/live/redengtlive.m3u8
+#EXTINF:-1 tvg-id="RedePremiumTV.br" status="timeout",Rede Premium TV (1080p)
+https://5c483b9d1019c.streamlock.net/8066/8066/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeRC.br" status="timeout",Rede RC (720p) [Not 24/7]
 http://tv02.logicahost.com.br:1935/rederc/rederc/live.m3u8
 #EXTINF:-1 tvg-id="RedeSeculo21.br" status="timeout",Rede Século 21 (1080p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-10024/ngrp:LVW10024_H3QLdAY6kx_all/playlist.m3u8
-#EXTINF:-1 tvg-id="RedeSuper.br" status="error",Rede Super (432p)
+#EXTINF:-1 tvg-id="RedeSuper.br" status="timeout",Rede Super (432p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/10205943
 #EXTINF:-1 tvg-id="RedeTV.br" status="timeout",Rede TV! SP (720p) [Not 24/7]
 https://hls.brasilstream.com.br/live/redetv/redetv/playlist.m3u8
@@ -152,18 +174,30 @@ https://59f1cbe63db89.streamlock.net:1443/redetvro/_definst_/redetvro/playlist.m
 https://hls.brasilstream.com.br/live/redetves/redetves/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeTVTocantins.br" status="timeout",RedeTV! Tocantins (720p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/redetvro/redetvro/playlist.m3u8
+#EXTINF:-1 tvg-id="RedeUTV.br" status="timeout",Rede UTV
+https://srv4.zcast.com.br/redetvoficial/redetvoficial/playlist.m3u8
 #EXTINF:-1 tvg-id="RedeVida.br" status="timeout",Rede Vida (720p) [Not 24/7]
 https://cvd1.cds.ebtcvd.net/live-redevida/smil:redevida.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroCartoon.br" status="timeout",Retrô Cartoon (480p) [Not 24/7]
 https://stmv1.srvif.com/retrotv/retrotv/playlist.m3u8
 #EXTINF:-1 tvg-id="SantaCeciliaTV.br" status="timeout",Santa Cecilia TV (288p) [Not 24/7]
 http://flash1.crossdigital.com.br/2063/2063/playlist.m3u8
+#EXTINF:-1 tvg-id="SBTInterior.br" status="timeout",SBT Interior (720p)
+https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
 #EXTINF:-1 tvg-id="SESCTV.br" status="timeout",SESC TV (1080p)
 https://slbps-ml-sambatech.akamaized.net/samba-live/2472/7424/8a00fe7cc36ac263b2c3e9324497d5ff/video/621b6f2c-2dc6-41f1-9302-f9583c96ee31_index.m3u8
+#EXTINF:-1 tvg-id="Shoptime.br" status="error",Shoptime [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/@shoptime/live
+#EXTINF:-1 tvg-id="SICTV.br" status="timeout",SIC TV
+https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8
+#EXTINF:-1 tvg-id="STZTV.br" status="timeout",STZ TV (720p)
+https://cdn.jmvstream.com/w/AVJ-11063/playlist/playlist.m3u8
 #EXTINF:-1 tvg-id="TelecineAction.br" status="timeout",TELE CINE ACTION (720p)
 http://painelvj.com.br/tvaguaboa2/tvaguaboa2.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TerraViva.br" status="timeout",Terra Viva (720p) [Not 24/7]
 http://evpp.mm.uol.com.br:1935/band_live/terraviva/playlist.m3u8
+#EXTINF:-1 tvg-id="TVA7Plus.br" status="error",TV A7 Plus (1080p)
+https://srv3.zcast.com.br/wellington7720/wellington7720/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAberta.br" status="timeout",TV Aberta (1080p) [Not 24/7]
 https://cdn-canalpaulo.ciclano.io:1443/canalpaulo/canalpaulo/playlist.m3u8
 #EXTINF:-1 tvg-id="TVALMG.br" status="timeout",TV ALMG (720p)
@@ -172,18 +206,28 @@ https://streaming.almg.gov.br/live/tvalmg.m3u8
 https://stmv5.samcast.com.br/wagner7919/wagner7919/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAparecida.br" status="timeout",TV Aparecida (1080p) [Not 24/7]
 https://cdn.jmvstream.com/w/LVW-9716/LVW9716_HbtQtezcaw/playlist.m3u8
+#EXTINF:-1 tvg-id="TVAracati.br" status="timeout",TV Aracati (360p)
+https://livefocamundo.com:8081/tvaracati/index.m3u8
+#EXTINF:-1 tvg-id="TVArapuan.br" status="timeout",TV Arapuan (720p)
+https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAssembleiaCeara.br" status="timeout",TV Assembléia Ceará (720p)
 https://jjn5dkk9bd.zoeweb.tv/z404-live/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVAssembleiaMatoGrosso.br" status="timeout",Assembleia Legislativa do Estado de Mato Grosso (720p)
 https://streaming.al.mt.gov.br/test/index.m3u8
 #EXTINF:-1 tvg-id="TVAssembleiaPiaui.br" status="timeout",Assembleia Legislativa do Piauí (432p)
 https://59e4b6c1beddc.streamlock.net/ronaldoalepi/ronaldoalepi/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBEJoinville.br" status="timeout",TVBE Joinville (720p)
+https://5c483b9d1019c.streamlock.net/8022/8022/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBirigui.br" status="timeout",TV Birigui (320p)
 http://tv02.logicahost.com.br:1935/tvdigitalbirigui/tvdigitalbirigui/live.m3u8
 #EXTINF:-1 tvg-id="TVBirigui.br" status="timeout",TV Birigui (640p)
 https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/_definst_/tvdigitalbirigui/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBirigui.br" status="timeout",TV Birigui (320p)
 https://59f2354c05961.streamlock.net:1443/tvdigitalbirigui/tvdigitalbirigui/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBrasilOeste.br" status="timeout",TV Brasil Oeste (720p)
+https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBrusque.br" status="timeout",TV Brusque (720p)
+https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCamara2.br" status="timeout",TV Câmara 2 (1080p) [Not 24/7]
 https://stream3.camara.gov.br/tv2/manifest.m3u8
 #EXTINF:-1 tvg-id="TVCamara.br" status="timeout",TV Câmara (1080p)
@@ -192,14 +236,22 @@ https://stream3.camara.gov.br/tv1/manifest.m3u8
 https://cdn.jmvstream.com/w/LVW-8711/ngrp:LVW8711_tG0F3TEBDL_all/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCancaoNovaRede.br" status="error",Canção Nova TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCVrKQMmA2ew9LFzeIDaOFgw/live
+#EXTINF:-1 tvg-id="TVCaravelas.br" status="timeout",TV Caravelas (720p)
+https://59f1cbe63db89.streamlock.net:1443/tvcaravelas/_definst_/tvcaravelas/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCidadaAlagoas.br" status="timeout",TV Cidadã Alagoas (540p)
+https://livefocamundo.com:8081/tvcidada/index.m3u8
 #EXTINF:-1 tvg-id="TVCidadeCanal9.br" status="timeout",TV Cidade Canal 9 (720p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/tvcidade/tvcidade/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCidadedePetropolis.br" status="timeout",TV Cidade de Petrópolis (1080p) [Not 24/7]
 https://video01.kshost.com.br:4443/inside2133/inside2133/playlist.m3u8
+#EXTINF:-1 tvg-id="TVCidadeVerde.br" status="timeout",TV Cidade Verde (720p)
+https://stmv1.transmissaodigital.com/cidadeverdenovo/cidadeverdenovo/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCinec.br" status="timeout",TV Cinec (240p) [Not 24/7]
 http://tv01.logicahost.com.br:1935/tvcinec/tvcinec/live.m3u8
 #EXTINF:-1 tvg-id="TVCulturaNacional.br" status="timeout",Cultura PR Catve (720p)
 http://wowza4.catve.com.br:1935/live/livestream/media.m3u8
+#EXTINF:-1 tvg-id="TVCuruca.br" status="timeout",TV Curuça (360p)
+https://stmv1.srvif.com/tvcurucasp/tvcurucasp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVDestak.br" status="timeout",TV Destak (320p)
 https://59f2354c05961.streamlock.net:1443/pascoal/pascoal/playlist.m3u8
 #EXTINF:-1 tvg-id="TVDestak.br" status="timeout",TV Destak (360p)
@@ -208,12 +260,18 @@ http://tv02.logicahost.com.br:1935/pascoal/pascoal/live.m3u8
 https://59f2354c05961.streamlock.net:1443/pascoal/_definst_/pascoal/playlist.m3u8
 #EXTINF:-1 tvg-id="TVDiariodoSertao.br" status="timeout",TV Diário do Sertão (720p)
 http://painelvj.com.br:1935/pdsertaotv/pdsertaotv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVDifusoraSaoLuis.br" status="timeout",TV Difusora São Luis
+https://stream.amsolution.net.br:8443/live/60ce4ae4b9d4c/index.m3u8
 #EXTINF:-1 tvg-id="TVDiversa.br" status="timeout",TV Diversa (1080p)
 https://tvdiversa.brasilstream.com.br/hls/tvdiversa/index.m3u8
 #EXTINF:-1 tvg-id="TVEBahia.br" status="timeout",TVE Bahia (720p) [Not 24/7]
 http://stream2.ba.gov.br/hls-live/livepkgr/_definst_/irdeb/pgm-1.m3u8
+#EXTINF:-1 tvg-id="TVEBahia.br" status="timeout",TVE RS (1080p) [Not 24/7]
+http://selpro1348.procergs.com.br:1935/tve/stve/playlist.m3u8
 #EXTINF:-1 tvg-id="TVEBahia.br" status="timeout",TVE RS (1080p)
 http://streaming.procergs.com.br:1935/tve/stve/playlist.m3u8
+#EXTINF:-1 tvg-id="TVERS.br" status="timeout",TVE RS
+https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8
 #EXTINF:-1 tvg-id="TVEvangelizar.br" status="timeout",TV Evangelizar (480p)
 https://5f593df7851db.streamlock.net/evangelizar/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TVFuturo.br" status="timeout",TV Futuro (1080p)
@@ -224,10 +282,14 @@ https://cdn.jmvstream.com/w/LVW-8538/LVW8538_KBtZ9UMIZn/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/tvgazeta
 #EXTINF:-1 tvg-id="TVGideoes.br" status="timeout",TV Gideoes (1080p) [Not 24/7]
 https://streaming01.zas.media/gideoes/programacao/playlist.m3u8
+#EXTINF:-1 tvg-id="TVGrandeNatal.br" status="timeout",TV Grande Natal
+http://tvgrandenatalhd.duckdns.org:8080/hls/live.m3u8
 #EXTINF:-1 tvg-id="TVGuara.br" status="timeout",TV Guará (720p) [Not 24/7]
 https://video02.logicahost.com.br/tvguara23/tvguara23/playlist.m3u8
 #EXTINF:-1 tvg-id="TVideoNews.br" status="timeout",TVídeoNews (720p) [Not 24/7]
 https://59f2354c05961.streamlock.net:1443/tvideonews/_definst_/tvideonews/chunklist.m3u8
+#EXTINF:-1 tvg-id="TVJapi.br" status="timeout",TV Japi
+https://srv2.zcast.com.br/tvjapi/tvjapi/playlist.m3u8
 #EXTINF:-1 tvg-id="TVJornalCaruaru.br" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",SBT TV Jornal Caruaru (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://evpp.mm.uol.com.br/ne10/ne10-tvjornal-caruaru-video-web.sdp/playlist.m3u8
@@ -236,6 +298,16 @@ https://evpp.mm.uol.com.br/ne10/ne10-tvjornal-caruaru-video-web.sdp/playlist.m3u
 https://evpp.mm.uol.com.br/ne10/ne10.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVJustica.br" status="error",TV Justiça (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC0qlZ5jxxueKNzUERcrllNw/live
+#EXTINF:-1 tvg-id="TVLaVerdad.br" status="error",TV La Verdad [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/tvlaverdadoficial/live
+#EXTINF:-1 tvg-id="TVMaceio.br" status="timeout",TV Maceió (360p)
+https://srv5.zcast.com.br/paulo4100/paulo4100/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMackenzie.br" status="timeout",TV Mackenzie (480p)
+https://player.internetaovivo.com:8443/live_tvmackenzieabr/tvmackenzieabr/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMar.br" status="timeout",TV Mar
+https://virtues.es:1936/tvmar/tvmar/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMarajoara.br" status="timeout",TV Marajoara (720p)
+https://video01.kshost.com.br:4443/tv31966/tv31966/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMaticComedy.br" status="timeout",TVMatic Comedy (720p)
 http://cdn.tvmatic.net/comedy.m3u8
 #EXTINF:-1 tvg-id="TVMaticCrafts.br" status="timeout",TVMatic Crafts (720p)
@@ -252,184 +324,78 @@ http://cdn.tvmatic.net/tiktok.m3u8
 https://59f1cbe63db89.streamlock.net:1443/tvmax/tvmax/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMetropole.br" status="timeout",TV Metropole (720p) [Not 24/7]
 https://cdn-fundacao-2110.ciclano.io:1443/fundacao-2110/fundacao-2110/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMetropolitanaRio.br" status="timeout",TV Metropolitana Rio (360p)
+https://stmv1.srvstm.com/luis5346/luis5346/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMilagro.br" status="error",TV Milagro [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCi5T3ImS-P9fINN169sUdfQ/live
 #EXTINF:-1 tvg-id="TVMon.br" status="timeout",TV Mon (720p)
 https://srv1.zcast.com.br/tvmon/tvmon/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMundoMaior.br" status="error",TV Mundo Maior [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC5-IOBnk-mFdQgKS-niajYg/live
+#EXTINF:-1 tvg-id="TVNatal.br" status="timeout",TV Natal (720p)
+https://stmv1.srvstm.com/antonioflavio9545/antonioflavio9545/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNBrasil.br" status="timeout",TVN Brasil (720p) [Not 24/7]
 http://painelvj.com.br:1935/tvnbrasil/tvnbrasil.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVNBrasil.br" status="timeout",TVN Brasil (720p) [Not 24/7]
 http://wz3.dnip.com.br/tvnbrasil/tvnbrasil.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPadreCicero.br" status="timeout",TV Padre Cicero
+https://video01.logicahost.com.br/tvpadrecicero/tvpadrecicero/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPaiEterno.br" status="timeout",TV Pai Eterno
 https://59f1cbe63db89.streamlock.net:1443/teste01/_definst_/teste01/chunklist.m3u8
 #EXTINF:-1 tvg-id="TVPaiEterno.br" status="timeout",TV Pai Eterno (480p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/teste01/teste01/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPampa.br" status="timeout",Rede TV! Pampa (720p) [Not 24/7]
 https://59f1cbe63db89.streamlock.net:1443/tvpampa/tvpampa/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPampaNorte.br" status="timeout",TV Pampa Norte (720p)
+https://59f1cbe63db89.streamlock.net:1443/tvpampa/_definst_/tvpampa/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPantanalMS.br" status="blocked",TV Pantanal MS (720p) [Not 24/7]
 https://5e837408ea907.streamlock.net:1936/tvpantanalms/tvpantanalms/playlist.m3u8
 #EXTINF:-1 tvg-id="TVParanaTurismo.br" status="online",TV Paraná Turismo (720p) [Not 24/7]
 http://200.189.113.201/hls/tve.m3u8
 #EXTINF:-1 tvg-id="TVPocos.br" status="timeout",TV Poços (192p) [Not 24/7]
 http://rtmp.cdn.upx.net.br/00084/myStream.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVRioPreto.br" status="timeout",TV Rio Preto
+https://video02.logicahost.com.br/tvriopreto/tvriopreto/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSantaCruz.br" status="timeout",TV Santa Cruz (720p) [Not 24/7]
 https://rtmp.info/tvsantacruz/envivo/playlist.m3u8
+#EXTINF:-1 tvg-id="TVSimCachoeiro.br" status="timeout",TV Sim Cachoeiro (720p)
+https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8
+#EXTINF:-1 tvg-id="TVSimColatina.br" status="timeout",TV Sim Colatina (720p)
+https://5cf4a2c2512a2.streamlock.net/8132/8132/playlist.m3u8
+#EXTINF:-1 tvg-id="TVSimSaoMateus.br" status="timeout",TV Sim São Mateus (720p)
+https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSolComunidade.br" status="timeout",TV Sol Comunidade (480p) [Not 24/7]
 http://streaming03.zas.media:1935/tvsol/tvsol/playlist.m3u8
+#EXTINF:-1 tvg-id="TVSulBahia.br" status="timeout",TV Sul Bahia
+http://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVTerceiroAnjo.br" status="timeout",TV Terceiro Anjo (360p)
+https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8
 #EXTINF:-1 tvg-id="TVThathi.br" status="timeout",TV Thathi (720p) [Not 24/7]
 https://cdn-grupo-10049.ciclano.io:1443/grupo-10049/grupo-10049/playlist.m3u8
+#EXTINF:-1 tvg-id="TVTropical.br" status="timeout",TV Tropical (480p)
+https://59f2354c05961.streamlock.net:1443/portaldatropical/_definst_/portaldatropical/playlist.m3u8
 #EXTINF:-1 tvg-id="TVUFG.br" status="timeout",TV UFG (720p) [Not 24/7]
 http://flash.softhost.com.br:1935/ufg/tvufgweb/playlist.m3u8
-#EXTINF:-1 tvg-id="TVVerdesCampos.br" status="timeout",TV Verdes Campos (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVUniaoFortaleza.br" status="timeout",TV União Fortaleza (1080p)
+https://stmv1.srvif.com/tvu/tvu/playlist.m3u8
+#EXTINF:-1 tvg-id="TVUniversal.br" status="timeout",TV Universal (480p)
+https://644398c.ha.azioncdn.net/primary/tvuniversal_480p.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVVerdesCamposSat.br" status="timeout",TV Verdes Campos Sat
 https://596639ebdd89b.streamlock.net/8124/8124/playlist.m3u8
+#EXTINF:-1 tvg-id="TVVicosa.br" status="timeout",TV Viçosa
+http://wz4.dnip.com.br/fratevitv/fratevitv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="TVVilaReal.br" status="timeout",TV Vila Real
+https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/playlist.m3u8
 #EXTINF:-1 tvg-id="UniTVPortoAlegre.br" status="timeout",UniTV Porto Alegre (480p)
 http://unitvaovivo.ufrgs.br:8080/live.ogg
 #EXTINF:-1 tvg-id="BandNews.br" status="blocked" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",Bandnews (720p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://evpp.mm.uol.com.br/geob_band/bandnewstv/playlist.m3u8
-#EXTINF:-1 tvg-id="BMCNews.br" status="timeout",BM&C [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCoja0MNI4SIvXqJR3szbSfw/live
 #EXTINF:-1 tvg-id="" status="timeout",CBTV Now (1080p)
 https://oj7lng29dg82-hls-live.5centscdn.com/lives/f7b44cfafd5c52223d5498196c8a2e7b.sdp/index.m3u8
-#EXTINF:-1 tvg-id="ISTV.br" status="online",ISTV (1080p)
-https://cdn.jmvstream.com/w/LVW-9883/LVW9883_lFcfKysrHF/chunklist.m3u8
-#EXTINF:-1 tvg-id="PortalCultura.br" status="online",Portal Cultura (720p)
-http://www.portalcultura.com.br/playerhtml/funtelpa/tv_funtelpa/playlist.m3u8
-#EXTINF:-1 tvg-id="TVBrusque.br" status="online",TV Brusque (720p)
-https://5ad482a77183d.streamlock.net/rodrigotvbrusque.com.br/5d880199c902eb4a1e8df00d/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMarajoara.br" status="online",TV Marajoara (720p)
-https://video01.kshost.com.br:4443/tv31966/tv31966/playlist.m3u8
-#EXTINF:-1 tvg-id="TVPadreCicero.br" status="online",TV Padre Cicero
-https://video01.logicahost.com.br/tvpadrecicero/tvpadrecicero/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRioPreto.br" status="online",TV Rio Preto
-https://video02.logicahost.com.br/tvriopreto/tvriopreto/playlist.m3u8
-#EXTINF:-1 tvg-id="TVVerdade.br" status="online",TV Verdade
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtu.be/2SuvizXQ4Ks
-#EXTINF:-1 tvg-id="TVDiario.br" status="online",TV Diario
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/TVDiario
-#EXTINF:-1 tvg-id="TVVerdesCamposSat.br" status="online",TV Verdes Campos Sat
-https://596639ebdd89b.streamlock.net/8124/8124/playlist.m3u8
-#EXTINF:-1 tvg-id="UNBTV.br" status="online",UNBTV
-https://edge-mg-01.eduplay.rnp.br/media/ocp(r(JCm1RA)t(FxuDH3Plxl0)p(d(wb4)k(tTc)m(7d-ulIufp-kjF-dK6E3_vw)n(a(uM-nEa2uKpvmQsE19bx_-oBIuLRaNu4U51kd)s(zX0)'a(gg9B3uRMJe0wWRhGsduFkPGL)s(Lrw)))s(t(arw)b(uf-U6pitWb2ALvWsMvAiwb_qN8O50jTbUkw45Cv7wPXyUWkgiJ-mRQPdp95dLq5aEUpjPcQdvPBjj7YYvVc-4G-jPVuzQoZnXtwvDY7a3I8yEH-2hLU4lixBNQtQxgQRsc0m8xiDEMFK5Z7waO8RBtE_VjGxiWYlz3upMhIbipsn)'t(qwA)b(aEB-WqgGvuz_J8jmYq-NFdgVKOeR00cKZuI)))/360_index.m3u8
-#EXTINF:-1 tvg-id="TVWalterAbrahao.br" status="online",TV Walter Abrahao
-https://cast.ebosystems.com.br:19360/nanix5/nanix5.m3u8
-#EXTINF:-1 tvg-id="TVVilaReal.br" status="online",TV Vila Real
-https://5a2b083e9f360.streamlock.net/tvmt/tvmt.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TVUniversal.br" status="online",TV Universal
-https://644398c.ha.azioncdn.net/primary/tvuniversal_480p.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TVUFOP.br" status="online",TV UFOP
-https://maestro-prd-nh.eduplay.rnp.br/route/CFwapWdcMzXY/index.m3u8?s=aHR0cHM6Ly9tZWRpYS1wcmQtbmguZWR1cGxheS5ybnAuYnIvbWVkaWEvQ0Z3YXBXZGNNelhZL2luZGV4Lm0zdTg_eD0xJm09MVEzeHFLTW9YUE9wRXdzQWhoRWtDQQ&x=1&p=0&m=-vU7Au4NkLFrLeA0hdgsFA
-#EXTINF:-1 tvg-id="TVTropical.br" status="online",TV Tropical
-https://59f2354c05961.streamlock.net:1443/portaldatropical/_definst_/portaldatropical/playlist.m3u8
-#EXTINF:-1 tvg-id="TVTercerioAnjo.br" status="online",TV Terceiro Anjo
-https://streamer1.streamhost.org/salive/GMI3anjoh/playlist.m3u8
-#EXTINF:-1 tvg-id="TVT.br" status="online",TVT
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://dai.ly/x6ph7x7
-#EXTINF:-1 tvg-id="TVSenado.br" status="online",TV Senado
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtu.be/T5ggX97ZeAI
-#EXTINF:-1 tvg-id="TVProfissao.br" status="online",TV Profissao
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtu.be/kYvR9rnBhh8
-#EXTINF:-1 tvg-id="TVPampaNorte.br" status="online",TV Pampa Norte
-https://59f1cbe63db89.streamlock.net:1443/tvpampa/_definst_/tvpampa/playlist.m3u8
-#EXTINF:-1 tvg-id="TVNovoTempoBrasil.br" status="online",TV Novo Tempo Brasil
-https://stream.live.novotempo.com/tv/smil:tvnovotempo.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMundoMaior.br" status="online",TV Mundo Maior
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UC5-IOBnk-mFdQgKS-niajYg/live
-#EXTINF:-1 tvg-id="TVMilagro.br" status="online",TV Milagro
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/channel/UCi5T3ImS-P9fINN169sUdfQ/live
-#EXTINF:-1 tvg-id="TVMetropolitanaRio.br" status="online",TV Metropolitana Rio
-https://stmv1.srvstm.com/luis5346/luis5346/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMaisFamilia.br" status="online",TV Mais Familia
-https://video01.logicahost.com.br/redefamiliaa/redefamiliaa/playlist.m3u8
-#EXTINF:-1 tvg-id="TVLaVerad.br" status="online",TV La Verdad
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/tvlaverdadoficial/live
-#EXTINF:-1 tvg-id="CanalEducacao.br" status="online",Canal Educacao Brasilia
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x8abdvf
-#EXTINF:-1 tvg-id="Canal38.br" status="online",Canal 38
-https://cdn.jmvstream.com/w/LVW-8503/LVW8503_d0V5oduFlK/playlist.m3u8
-#EXTINF:-1 tvg-id="TVCancaoNova.br" status="online",TV Cancao Nova
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/user/tvcancaonova/live
-#EXTINF:-1 tvg-id="TVAssembleiaParana.br" status="online",TV Assembleia Parana
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtu.be/Lx-y1EospWI
-#EXTINF:-1 tvg-id="TVALERJ.br" status="online",TV ALERJ
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://youtu.be/eE38BTgKqto
-#EXTINF:-1 tvg-id="TVAL.br" status="online",TVAL
-https://youtu.be/o2yazzK1JzY?list=PLNmz4ds5UGCwqj2NWlZQC9cRcGi_BGQOY
-#EXTINF:-1 tvg-id="RecordNews.br" status="online",Record News (360p)
-https://5cf4a2c2512a2.streamlock.net/8016/8016/playlist.m3u8
-#EXTINF:-1 tvg-id="CNNBrasil.br" status="online",CNN Brasil
-http://170.82.200.38:8080/cnn_brasil/playlist.m3u8
-#EXTINF:-1 tvg-id="RecordTV.br" status="online",RecordTV
-https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8
-#EXTINF:-1 tvg-id="GospelCartoon.br" status="online",Gospel Cartoon
-https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8
-#EXTINF:-1 tvg-id="TVDifusoraSaoLuis.br" status="online",TV Difusora Sao Luis
-https://stream.amsolution.net.br:8443/live/60ce4ae4b9d4c/index.m3u8
-#EXTINF:-1 tvg-id="TVSulBahia.br" status="online",TV Sul Bahia
-http://live.cdn.upx.com/00046/myStream.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TVUniversal.br" status="online",TV Universal
-https://644398c.ha.azioncdn.net/primary/tvuniversal_480p.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMackenzie.br" status="online",TV Mackenzie
-https://player.internetaovivo.com:8443/live_tvmackenzieabr/tvmackenzieabr/playlist.m3u8
-#EXTINF:-1 tvg-id="RedeNGT.br" status="online",Rede NGT
-https://acesso.ecast.site:3922/live/redengtlive.m3u8
-#EXTINF:-1 tvg-id="TVCidadaAlagoas.br" status="online",TV Cidada Alagoas
-https://livefocamundo.com:8081/tvcidada/index.m3u8
-#EXTINF:-1 tvg-id="TVBrasilOeste.br" status="online",TV Brasil Oeste
-https://5ad482a77183d.streamlock.net/operacaotbomt.com/operacaotbomt.com/playlist.m3u8
-#EXTINF:-1 tvg-id="TVArapuan.br" status="online",TV Arapuan
-https://5b7f3c45ab7c2.streamlock.net/arapuan/ngrp:arapuan_all/playlist.m3u8
-#EXTINF:-1 tvg-id="TVERS.br" status="online",TVE RS
-https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8
-#EXTINF:-1 tvg-id="SBTInterior.br" status="online",SBT Interior
-https://cdn.jmvstream.com/w/LVW-10801/LVW10801_Xvg4R0u57n/playlist.m3u8
-#EXTINF:-1 tvg-id="RedeUTV.br" status="online",Rede UTV
-https://srv4.zcast.com.br/redetvoficial/redetvoficial/playlist.m3u8
-#EXTINF:-1 tvg-id="TVJapi.br" status="online",TV Japi
-https://srv2.zcast.com.br/tvjapi/tvjapi/playlist.m3u8
-#EXTINF:-1 tvg-id="STZTV.br" status="online",STZ TV
-https://cdn.jmvstream.com/w/AVJ-11063/playlist/playlist.m3u8
-#EXTINF:-1 tvg-id="TVCaravelas.br" status="online",TV Caravelas
-https://59f1cbe63db89.streamlock.net:1443/tvcaravelas/_definst_/tvcaravelas/playlist.m3u8
-#EXTINF:-1 tvg-id="CaboFrioTV.br" status="online",Cabo Frio TV
-https://59f2354c05961.streamlock.net:1443/ararutv/_definst_/ararutv/playlist.m3u8
-#EXTINF:-1 tvg-id="TVBEJoinville.br" status="online",TVBE Joinville
-https://5c483b9d1019c.streamlock.net/8022/8022/playlist.m3u8
-#EXTINF:-1 tvg-id="RDCTV.br" status="online",RDC TV
-https://596639ebdd89b.streamlock.net/datavideo01/datavideo01/playlist.m3u8
-#EXTINF:-1 tvg-id="BMCNews.br" status="online",BM&C News
-https://www.dailymotion.com/cdn/live/video/x8aliiu.m3u8?sec=oS9IcLSxJiTWCE2LOlWggHr7NAvygzfD_IekHdBgqmDeeRodJ-VD_krkTvzH3k6lbNZiF3rt5-l9hEEbOYDABg&dmTs=205252&dmV1st=BCE0A1754814CCA9825B7F012423BF62
-#EXTINF:-1 tvg-id="ArarunaTV.br" status="online",Araruna TV
-https://video01.logicahost.com.br/ararunatv/ararunatv/playlist.m3u8
-#EXTINF:-1 tvg-id="KuriakosKids.br" status="online",Kuriakos Kids
+#EXTINF:-1 tvg-id="" status="timeout",Kuriakos Kids (1080p)
 https://w2.manasat.com/kkids/smil:kkids.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="NossaTVPatosdeMinas.br" status="online",Nossa TV Patos de Minas
-https://59f1cbe63db89.streamlock.net:1443/ntvnet/_definst_/ntvnet/playlist.m3u8
-#EXTINF:-1 tvg-id="RedeMundo.br" status="online",Rede Mundo
-https://video01.logicahost.com.br/mundotvbrasil/mundotvbrasil/playlist.m3u8
-#EXTINF:-1 tvg-id="RedePremium.br" status="online",Rede Premium
-https://5c483b9d1019c.streamlock.net/8066/8066/playlist.m3u8
-#EXTINF:-1 tvg-id="TVAPlateia.br" status="online",TV A Plateia
-https://video01.kshost.com.br:4443/kamal3366/kamal3366/playlist.m3u8
-#EXTINF:-1 tvg-id="TVArcati.br" status="online",TV Arcati
-https://livefocamundo.com:8081/tvaracati/index.m3u8
-#EXTINF:-1 tvg-id="TVCuruca.br" status="online",TV Curuca
-https://stmv1.srvif.com/tvcurucasp/tvcurucasp/playlist.m3u8
-#EXTINF:-1 tvg-id="TVGrandeNatal.br" status="online",TV Grande Natal
-http://tvgrandenatalhd.duckdns.org:8080/hls/live.m3u8
-#EXTINF:-1 tvg-id="TVMais.br" status="online",TV Mais
+#EXTINF:-1 tvg-id="" status="timeout",NDTV Criciuma
+https://caikron.com.br:19360/criciuma/criciuma.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",TV Mais (720p)
 https://srv5.zcast.com.br/tvmaisbrasil/tvmaisbrasil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMar.br" status="online",TV Mar
-https://virtues.es:1936/tvmar/tvmar/playlist.m3u8
-#EXTINF:-1 tvg-id="TVNatal.br" status="online",TV Natal
-https://stmv1.srvstm.com/antonioflavio9545/antonioflavio9545/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSIMCachoeiro.br" status="online",TV SIM Cachoeiro
-https://5cf4a2c2512a2.streamlock.net/8104/8104/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSIMColatina.br" status="online",TV SIM Colatina
-https://5cf4a2c2512a2.streamlock.net/8132/8132/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSIMSaoMateus.br" status="online",TV SIM Sao Mateus
-https://5cf4a2c2512a2.streamlock.net/8236/8236/playlist.m3u8
-#EXTINF:-1 tvg-id="TVMaceio.br" status="online",TV Maceio
-https://srv5.zcast.com.br/paulo4100/paulo4100/playlist.m3u8
-#EXTINF:-1 tvg-id="Shoptime.br" status="online",Shoptime
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/@shoptime/live
-#EXTINF:-1 tvg-id="SICTV.br" status="online",SIC TV
-https://parecisfmlive.brasilstream.com.br/hls/parecisfmlive/index.m3u8

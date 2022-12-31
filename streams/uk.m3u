@@ -6,30 +6,24 @@ http://109.123.126.14:1935/live/livestream1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="AhlulbaytTV.uk" status="timeout",Ahlulbayt TV (1080p) [Not 24/7]
 https://5f3e23ac71915.streamlock.net:4434/live/livestream1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="AlHiwarTV.uk" status="timeout",Alhiwar TV (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/alhiwarchannels/live
-#EXTINF:-1 tvg-id="AlHiwarTV.uk" status="timeout",Alhiwar TV (1080p) [Not 24/7]
 https://mn-nl.mncdn.com/alhiwar_live/smil:alhiwar.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AlHiwarTV.uk" status="error",Alhiwar TV (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/alhiwarchannels/live
 #EXTINF:-1 tvg-id="AnandTV.uk" status="blocked",Anand TV (720p) [Not 24/7]
 https://live-anandtv.anandmedia.net/anandtvapp/anandtv/index.m3u8
 #EXTINF:-1 tvg-id="AriseNews.uk" status="timeout",Arise News (576p)
 https://news.ashttp9.visionip.tv/live/visiontvuk-news-arise-tv-hsslive-25f-16x9-SD/playlist.m3u8
-#EXTINF:-1 tvg-id="BoxHits.uk" status="online",Box Hits (576p)
-https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,boxhits-alldev.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/boxhits/
 #EXTINF:-1 tvg-id="BoxHits.uk" status="timeout",Box Hits (576p) [Geo-blocked]
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,boxhits-alldev.m3u8?yo.up=https://boxtv.secure.footprint.net/boxhits/
+#EXTINF:-1 tvg-id="BoxHits.uk" status="timeout",Box Hits (576p)
+https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,boxhits-alldev.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/boxhits/
 #EXTINF:-1 tvg-id="BritAsiaTV.uk" status="timeout",Brit Asia Live (US Eastern) (360p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
 #EXTINF:-1 tvg-id="BritAsiaTV.uk" status="timeout",Brit Asia Live (US Pacific) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
 #EXTINF:-1 tvg-id="BritishMuslimTV.uk" status="timeout",British Muslim TV (576p) [Not 24/7]
 https://api.visionip.tv/live/ASHTTP/visiontvuk-international-britishmuslimtv-hsslive-25f-16x9-MB/playlist.m3u8
-#EXTINF:-1 tvg-id="ChannelS.uk" status="online",Channel S (US Pacific) (720p) [Not 24/7]
-https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
-#EXTINF:-1 tvg-id="ChannelS.uk" status="online",Channel S (720p) [Not 24/7]
-https://a.jsrdn.com/r-373576a3/publish/22679_24MrQma9TX/index.m3u8
-#EXTINF:-1 tvg-id="ChannelS.uk" status="online",Channel S (576p) [Not 24/7]
-https://ap02.iqplay.tv:8082/iqb8002/ch4n3ls/playlist.m3u8
-#EXTINF:-1 tvg-id="Channel4.uk" status="blocked",Channel 4 (1080p)
+#EXTINF:-1 tvg-id="Channel4.uk" status="timeout",Channel 4 (1080p)
 https://cdnuk001.broadcastcdn.net/KUK-CHANNEL4/playlist.m3u8
 #EXTINF:-1 tvg-id="ChannelS.uk" status="timeout",Channel S (US Pacific) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
@@ -41,7 +35,7 @@ https://ap02.iqplay.tv:8082/iqb8002/ch4n3ls/playlist.m3u8
 http://c0.cdn.trinity-tv.net/stream/hujuv8xpr4gdugis2szd4rqrvpzip8iuwn2jwpt68wmvpmdz79qime8idwrxga95rnghp64hfimevyvrp6n7p3c52yg3rfsuhxe9u9az35ti8te625sxerfwaxr2cbefyau4tmfa4nwqvca6ckmtwv2=.m3u8
 #EXTINF:-1 tvg-id="Cruise1stTV.uk" status="blocked",Cruise1st TV (396p) [Geo-blocked]
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/cruise_tv/hls_video/index.m3u8
-#EXTINF:-1 tvg-id="Davejavu.uk" status="online",Dave ja vu (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Davejavu.uk" status="blocked",Dave ja vu (576p) [Geo-blocked]
 https://cdnuk001.broadcastcdn.net/KUK-DAVEJAVU/index.m3u8
 #EXTINF:-1 tvg-id="DeenTV.uk" status="timeout",Deen TV (576p) [Not 24/7]
 https://ap02.iqplay.tv:8082/iqb8002/d33ntv/playlist.m3u8
@@ -50,7 +44,7 @@ https://ap02.iqplay.tv:8082/iqb8002/3m9n/playlist.m3u8
 #EXTINF:-1 tvg-id="EnglishClubTV.uk" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",English Club TV (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s37/index.m3u8
-#EXTINF:-1 tvg-id="FadakTV.uk" status="timeout",Fadak TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="FadakTV.uk" status="error",Fadak TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/KhodamAlMahdi2/live
 #EXTINF:-1 tvg-id="FreeSports.uk" status="timeout",FreeSports (1080p) [Not 24/7]
 https://d3cq7cdp2cfi92.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-2ff27mp9b8422-prod/hls-harvester2-1293-prod/us-east-1/cc-2ff27mp9b8422/master.m3u8
@@ -80,11 +74,11 @@ https://live.playstop.me/1816184091/index.m3u8
 https://live.playstop.me/LS-63503-4/index.m3u8
 #EXTINF:-1 tvg-id="IslamChannel.uk" status="timeout",Islam Channel (576p) [Not 24/7]
 https://live.islamchannel.tv/islamtv_english/live.m3u8
-#EXTINF:-1 tvg-id="ITV2.uk" status="blocked",ITV2 (1080p)
-https://cdnuk001.broadcastcdn.net/KUK-ITV2/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV2.uk" status="timeout",ITV2 (576p) [Not 24/7]
 http://93.190.139.35:8278/streams/d/itv2_antik/playlist.m3u8
-#EXTINF:-1 tvg-id="ITV3.uk" status="timeout",ITV3 (720p)
+#EXTINF:-1 tvg-id="ITV2.uk" status="timeout",ITV2 (1080p)
+https://cdnuk001.broadcastcdn.net/KUK-ITV2/playlist.m3u8
+#EXTINF:-1 tvg-id="ITV3.uk" status="blocked",ITV3 (720p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV3/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV4.uk" status="timeout",ITV4 (576p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV4/playlist.m3u8
@@ -166,7 +160,7 @@ https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00738-newsuk-talkradiotv-ono/playli
 https://newsuk-talkradiotv-brightcove.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TalkTV.uk" status="error",TalkTV (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/talktv/live
-#EXTINF:-1 tvg-id="TBNUK.uk" status="error",TBN UK (720p)
+#EXTINF:-1 tvg-id="TBNUK.uk" status="timeout",TBN UK (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28567990/events/8919546
 #EXTINF:-1 tvg-id="TheBoxUK.uk" status="timeout",The Box UK (576p) [Geo-blocked]
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,thebox-alldev.m3u8?yo.up=https://boxtv.secure.footprint.net/thebox/
@@ -184,16 +178,10 @@ https://vod2t.xpanded.com/x3tv2/index_wlan.m3u8
 #EXTINF:-1 tvg-id="XpandedTV.uk" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV Studio Cam
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://vod2t.xpanded.com/x3tv2hq/index_wlan.m3u8
-#EXTINF:-1 tvg-id="XpandedTV.uk" status="online" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV (1280p)
+#EXTINF:-1 tvg-id="XpandedTV.uk" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",Xpanded TV (1280p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 https://vod2t.xpanded.com/x3tvhq/index_wlan.m3u8
-#EXTINF:-1 tvg-id="XYMax.uk" status="blocked",XY Max
-http://95.87.227.29:8080/XYMAX_FOR_PLATFORM/index.m3u8
-#EXTINF:-1 tvg-id="XYMix.uk" status="blocked",XY Mix
-http://95.87.227.29:8080/XYMIX_FOR_PLATFORM/index.m3u8
-#EXTINF:-1 tvg-id="XYPlus.uk" status="blocked",XY Plus
-http://95.87.227.29:8080/XYPLUS_FOR_PLATFORM/index.m3u8
-#EXTINF:-1 tvg-id="AfrobeatTVEntertainment.uk" status="timeout",Afrobeats (1080p)
+#EXTINF:-1 tvg-id="" status="timeout",Afrobeats (1080p)
 https://stream.ecable.tv/afrobeats/index.m3u8
 #EXTINF:-1 tvg-id="AkaalChannel.uk" status="timeout",Akaal TV (360p) [Not 24/7]
 http://akaal.zecast.net/akaal-live/smil:akaaltv.smil/playlist.m3u8
@@ -203,47 +191,11 @@ https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/akaal_tv/hls1_smart_akaa
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlmagharibiaTv/live
 #EXTINF:-1 tvg-id="AlArabyTV2.uk" status="timeout",Alaraby 2 TV (1080p)
 https://alaraby.cdn.octivid.com/alaraby2n/smil:alaraby2n.stream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AlArabyTV.uk" status="timeout",Alaraby TV (1080p)
+#EXTINF:-1 tvg-id="" status="timeout",Alaraby TV (1080p)
 https://alaraby.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AlArbayTV.uk" status="error",Alaraby TV (1080p)
+#EXTINF:-1 tvg-id="" status="error",Alaraby TV (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/AlarabyTv_News/live
-#EXTINF:-1 tvg-id="BBCFour.uk" status="blocked",BBC Four HD (720p) [Geo-blocked]
-https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_four_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="BBCFour.uk" status="blocked",BBC Four HD (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:bbc_four_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="BBCOneChannelIslands.uk" status="blocked",BBC One Channel Islands (540p) [Geo-blocked]
-https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_channel_islands/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",BBC One HD (540p)
-http://w4.12all.tv:4000/play/bbc1/index.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",BBC One HD (720p) [Geo-blocked]
-https://vs-cmaf-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="" status="blocked",BBC One HD (720p) [Geo-blocked]
-https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="BBCOneNorthernIreland.uk" status="blocked",BBC One Northern Ireland HD (720p) [Geo-blocked]
-https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_northern_ireland_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="BBCOneScotland.uk" status="blocked",BBC One Scotland HD (720p) [Geo-blocked]
-https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_scotland_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="BBCOneWales.uk" status="blocked",BBC One Wales HD (720p) [Geo-blocked]
-https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_wales_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="BBCScotland.uk" status="blocked",BBC Scotland HD (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_scotland_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="BBCScotland.uk" status="blocked",BBC Scotland HD (720p) [Geo-blocked]
-https://vs-hls-pushb-uk-live.akamaized.net/content/x=3/v=pv14/b=5070016/t=3840/i=urn:bbc:pips:service:bbc_scotland_hd/main.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",BBC Two HD (720p)
-http://w4.12all.tv:4000/play/bbc2/index.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",BBC Two HD (720p) [Geo-blocked]
-https://vs-cmaf-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_two_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="" status="blocked",BBC Two HD (720p) [Geo-blocked]
-https://vs-hls-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_two_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="BBCTwoNorthernIreland.uk" status="blocked",BBC Two Northern Ireland HD (720p) [Geo-blocked]
-https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_two_northern_ireland_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="Cbeebies.uk" status="blocked",CBeebies (540p) [Geo-blocked]
-https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:cbeebies_hd/mobile_wifi_main_sd_abr_v2_akamai_hls_live_http.m3u8
-#EXTINF:-1 tvg-id="CBeebies.uk" status="blocked",CBeebies HD (720p) [Geo-blocked]
-https://vs-hls-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:cbeebies_hd/t=3840/v=pv14/b=5070016/main.m3u8
-#EXTINF:-1 tvg-id="CBeebies.uk" status="blocked",CBeebies HD (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:cbeebies_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="ChannelS.uk" status="timeout",Channel S (US Eastern) (720p)
+#EXTINF:-1 tvg-id="" status="timeout",Channel S (US Eastern) (720p)
 https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0500/c.m3u8
 #EXTINF:-1 tvg-id="CreateandCraft.uk" status="timeout",Create and Craft (720p)
 https://live-hochanda.simplestreamcdn.com/hochanda/live.m3u8
@@ -263,8 +215,6 @@ https://live.ishiacloud.com/haditv.co.uk/haditv2.m3u8
 https://live.ishiacloud.com/haditv.co.uk/haditv6.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Hadi TV Turkish and Kurdish (720p)
 https://live.ishiacloud.com/haditv.co.uk/haditv7.m3u8
-#EXTINF:-1 tvg-id="" status="error",Hype Tv
-http://35.189.69.44/tmp_hls/desibox/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",Ideal World TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/c/IdealworldTvShopping/live
 #EXTINF:-1 tvg-id="" status="timeout",ITV1 (1080p)
