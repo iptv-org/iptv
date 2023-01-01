@@ -41,7 +41,7 @@ https://tve-live-lln.warnermediacdn.com/hls/live/2023185/aswest/noslate/VIDEO_1_
 https://tve-live-lln.warnermediacdn.com/hls/live/2023185/aswest/noslate/VIDEO_3_1928000.m3u8
 #EXTINF:-1 tvg-id="AdventureSportsTV.us" status="timeout",Adventure Sports TV (360p) [Not 24/7]
 https://gizmeon.s.llnwi.net/channellivev3/live/master.m3u8?channel=275
-#EXTINF:-1 tvg-id="AghapyKids.us" status="timeout",Aghapy Kids (1080p)
+#EXTINF:-1 tvg-id="AghapyKids.us" status="error",Aghapy Kids (1080p)
 https://5b622f07944df.streamlock.net/aghapykids.tv/aghapykids2/playlist.m3u8
 #EXTINF:-1 tvg-id="Akaku53.us" status="timeout",Akaku 53 (Hawaii) (1080p)
 https://castus-vod-dev.s3.amazonaws.com/vod_clients/akaku/live/ch1/video.m3u8
@@ -741,7 +741,7 @@ https://playout4multirtmp.tulix.tv/live6/Stream1/playlist.m3u8
 https://a.jsrdn.com/broadcast/fabeab4b08/+0000/c.m3u8
 #EXTINF:-1 tvg-id="StartTV.us" status="blocked",Start TV
 https://16live00.akamaized.net/START_TV/index.m3u8
-#EXTINF:-1 tvg-id="StockChartsTV.us" status="timeout",StockCharts TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="StockChartsTV.us" status="error",StockCharts TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/19628359/events/7940975/player
 #EXTINF:-1 tvg-id="StocktonGovTV.us" status="timeout",Stockton GovTV (Stockton CA) (720p)
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/stockton/G0044_008/playlist.m3u8
@@ -797,8 +797,6 @@ https://d46c0ebf9ef94053848fdd7b1f2f6b90.mediatailor.eu-central-1.amazonaws.com/
 https://cdn3.wowza.com/5/djRwZmQvTEJidmZD/burbank/G0240_009/playlist.m3u8
 #EXTINF:-1 tvg-id="TheCountryNetwork.us" status="timeout",The Country Network (1080p)
 https://cdn.tcncountry.net/scte35_aws/index.m3u8
-#EXTINF:-1 tvg-id="TheCountryNetwork.us" status="error",The Country Network (2160p)
-https://endpnt.com/hls/tcn4k/playlist.m3u8
 #EXTINF:-1 tvg-id="TheFirstTV.us" status="timeout",The First (1080p)
 https://thefirst-distroscale.amagi.tv/index.m3u8
 #EXTINF:-1 tvg-id="TheLoveDestination.us" status="timeout",The Love Destination (1080p)
@@ -1000,7 +998,7 @@ http://ott-cdn.ucom.am/s79/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",FightBox HD (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s86/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Fox HD Russia
+#EXTINF:-1 tvg-id="" status="timeout",Fox HD Russia
 https://sc.id-tv.kz/FOX_HD.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Fútbol [Geo-blocked]
 https://unidfp-nlds153.global.ssl.fastly.net/nlds/univisionnow/futbol/as/live/futbol_hd_pc.m3u8?t1=
