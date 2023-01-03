@@ -1,36 +1,44 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="CurrentTimeTV.cz" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Настоящее Время (480p)
+#EXTINF:-1 tvg-id="CurrentTimeTV.cz" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Настоящее Время (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s61/index.m3u8
-#EXTINF:-1 tvg-id="ElektrikaTV.cz" status="online",Elektrika TV (360p)
+#EXTINF:-1 tvg-id="ElektrikaTV.cz" status="timeout",Elektrika TV (360p)
 http://rtmp.elektrika.cz/live/myStream.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="Ocko.cz" status="online",Óčko (540p)
-https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Ocko.cz" status="online",Óčko (540p)
+#EXTINF:-1 tvg-id="Ocko.cz" status="timeout",Óčko (540p)
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko/playlist.m3u8
-#EXTINF:-1 tvg-id="OckoExpres.cz" status="online",Óčko Expres (540p)
+#EXTINF:-1 tvg-id="Ocko.cz" status="timeout",Óčko (540p)
+https://ocko-live-dash.ssl.cdn.cra.cz/cra_live2/ocko.stream.1.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="OckoExpres.cz" status="timeout",Óčko Expres (540p)
 https://ocko-live.ssl.cdn.cra.cz/channels/ocko_expres/playlist.m3u8
-#EXTINF:-1 tvg-id="OckoGold.cz" status="online",Óčko Gold (540p)
-https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8
 #EXTINF:-1 tvg-id="OckoGold.cz" status="blocked",Óčko Gold (540p) [Geo-blocked]
 https://ocko-live.ssl.cdn.cra.cz/cra_live2/ocko_gold.stream.1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="PolarTV.cz" status="online",Polar TV (1080p)
+#EXTINF:-1 tvg-id="OckoGold.cz" status="timeout",Óčko Gold (540p)
+https://ocko-live.ssl.cdn.cra.cz/channels/ocko_gold/playlist.m3u8
+#EXTINF:-1 tvg-id="PolarTV.cz" status="timeout",Polar TV (1080p)
 https://stream.polar.cz/polar/polarlive-1/playlist.m3u8
-#EXTINF:-1 tvg-id="PrahaTV.cz" status="online",Praha TV (1080p)
+#EXTINF:-1 tvg-id="PrahaTV.cz" status="timeout",Praha TV (1080p)
 https://stream.polar.cz/prahatv/prahatvlive-1/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",Retro Music TV (360p)
 http://89.185.253.55/retrotv/retrotvHQ1/playlist.m3u8
-#EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",Retro Music Television (360p)
+#EXTINF:-1 tvg-id="RetroMusicTV.cz" status="timeout",Retro Music Television (360p)
 http://stream.mediawork.cz/retrotv/retrotvHQ1/playlist.m3u8
-#EXTINF:-1 tvg-id="RetroMusicTV.cz" status="online",RetroMusicTV (360p)
+#EXTINF:-1 tvg-id="RetroMusicTV.cz" status="timeout",RetroMusicTV (360p)
 http://stream.mediawork.cz/retrotv/smil:retrotv2.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTMPlus.cz" status="online",RTM plus (720p)
+#EXTINF:-1 tvg-id="RTMPlus.cz" status="timeout",RTM plus (720p)
 http://www.rtmplus.cz/live/1-playlist.m3u8
-#EXTINF:-1 tvg-id="TVNatura.cz" status="online",TV Natura (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVNatura.cz" status="timeout",TV Natura (360p) [Not 24/7]
 https://media1.tvnatura.cz/live_out/1/live.m3u8
-#EXTINF:-1 tvg-id="VychodoceskaTV.cz" status="online",Východočeská TV (576p)
+#EXTINF:-1 tvg-id="VychodoceskaTV.cz" status="timeout",Východočeská TV (576p)
 https://stream.polar.cz/vctv/vctvlive-1/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Šlágr 2 (576p)
+#EXTINF:-1 tvg-id="" status="timeout",Polar 2 TV (1080p)
+http://stream.polar.cz:1935/polar2/polarlive2-1/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Šlágr 2 (576p)
 http://92.62.234.233/slagr2.m3u
-#EXTINF:-1 tvg-id="" status="online",Šlágr TV (576p)
+#EXTINF:-1 tvg-id="" status="timeout",Šlágr TV (576p)
 https://stream-6.mazana.tv/slagr.m3u
+#EXTINF:-1 tvg-id="" status="timeout",TV NOE
+https://n105.quickmedia.tv/noe-abr/noe-abr/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",TV NOE+
+https://n105.quickmedia.tv/noe-2-abr/noe-2-abr/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",ÚTV
+http://vysilani.zaktv.cz/broadcast/hls/utv/index.m3u8
