@@ -169,11 +169,11 @@ https://streams.helnix.com/autoHLS/02d8dab006ef9ffd/02d8dab006ef9ffd.m3u8
 https://reflect-fcpublicmedia.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-id="FCPublicMedia.us" status="timeout",Fort Collins Cable TV (FCTV) (Fort Collins CO) (1080p)
 https://reflect-vod-fcgov.cablecast.tv/live-9/live/live.m3u8
-#EXTINF:-1 tvg-id="FernandinaBeachChannel.us" status="timeout",Fernandina Beach City Meeting (Fernandina Beach FL) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="FernandinaBeachChannel.us" status="error",Fernandina Beach City Meeting (Fernandina Beach FL) (720p) [Not 24/7]
 https://edge-f.swagit.com/live/fernandinabeachfl/live-1-a/playlist.m3u8
 #EXTINF:-1 tvg-id="FLTV.us" status="timeout",Fort Lauderdale FLTV (Fort Lauderdale FL) (720p)
 https://cdn3.wowza.com/5/cFh0V0QwUVc4SDl2/fortlauderdale/G1118_002/playlist.m3u8
-#EXTINF:-1 tvg-id="FPTV.us",Fayetteville Public Television (FPTV) (Fayetteville AR) (1080p)
+#EXTINF:-1 tvg-id="FPTV.us" status="timeout",Fayetteville Public Television (FPTV) (Fayetteville AR) (1080p)
 https://hls.youtb.workers.dev/channel/UCT3Dk_ZPcoR7CeHM_Wwb3QA.m3u8
 #EXTINF:-1 tvg-id="FVTV.us" status="timeout",Fountain Valley TV Channel 3 (360p)
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/fountainvalley/G0806_001/playlist.m3u8
@@ -305,7 +305,7 @@ https://fuel-streaming-prod01.fuelmedia.io/v1/sem/c4067ddc-0e67-4928-b7ec-624481
 https://59d39900ebfb8.streamlock.net/8478/8478/playlist.m3u8
 #EXTINF:-1 tvg-id="KLCSDT3.us" status="timeout",PBS 58 Create (KLCS-DT3) (Los Angeles CA) (720p) [Geo-blocked]
 https://d1mxoeplf1ak5a.cloudfront.net/index.m3u8
-#EXTINF:-1 tvg-id="KLNMLD1.us" status="error",KLNM (KLNM-LD1) (720p)
+#EXTINF:-1 tvg-id="KLNMLD1.us" status="timeout",KLNM (KLNM-LD1) (720p)
 https://broadcast.mytvtogo.net/klmntv/klmntv/playlist.m3u8
 #EXTINF:-1 tvg-id="KMGHDT1.us" status="timeout",ABC 7 Denver CO (KMGH) (720p)
 https://content.uplynk.com/channel/64ca339f04964a5e961c3207a7771bf1.m3u8
@@ -483,11 +483,11 @@ https://cdn3.wowza.com/5/WDIrTW5sM1JEY1NN/napatv/G0360_004/playlist.m3u8
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/newportbeach/G0064_003/playlist.m3u8
 #EXTINF:-1 tvg-id="NCCTV.us" status="timeout",NCCTV (New Castle County DE) (1080p)
 https://newcastlecoutv.secure.footprint.net/egress/bhandler/newcastlecou/streama/playlist.m3u8
-#EXTINF:-1 tvg-id="NCMEducationalKidsChannel.us" status="timeout",NCM Educational & Kids Channel
+#EXTINF:-1 tvg-id="NCMEducationalKidsChannel.us" status="error",NCM Educational & Kids Channel
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_005/playlist.m3u8
-#EXTINF:-1 tvg-id="NCMGovernmentPoliticsChannel.us" status="timeout",NCM Government & Politics
+#EXTINF:-1 tvg-id="NCMGovernmentPoliticsChannel.us" status="error",NCM Government & Politics
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_002/playlist.m3u8
-#EXTINF:-1 tvg-id="NCMMainChannel.us" status="timeout",NCM Main Channel
+#EXTINF:-1 tvg-id="NCMMainChannel.us" status="error",NCM Main Channel
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_001/playlist.m3u8
 #EXTINF:-1 tvg-id="NCTV79.us" status="timeout",New Canaan Television 79 (NCTV79) (New Canaan CT) (1080p)
 https://nctv79.secure.footprint.net/egress/bhandler/nctv79/streama/manifest.m3u8
@@ -631,9 +631,7 @@ https://6305c8676ce84.streamlock.net/live/live/playlist.m3u8
 https://f-tx-edge-87.christianworldmedia.com/radiovidavision/mp4:radiovidavision/playlist.m3u8
 #EXTINF:-1 tvg-id="WAGADT1.us" status="blocked",FOX Atlanta-GA (WAGA-DT1) (720p)
 https://trn10.tulix.tv/WAGA-FOX/index.m3u8
-#EXTINF:-1 tvg-id="WAOEDT3.us" status="error",VPOD-TV 59.3 Chicago IL (WAOE) (1080p)
-https://81988.global.ssl.fastly.net/6054f2db9a679c037cbbb2b2/live_7749cbc088e711eb99623595db260c33/index.m3u8
-#EXTINF:-1 tvg-id="WATCDT1.us" status="timeout",Atlanta's 57 WATC 57.1 (720p)
+#EXTINF:-1 tvg-id="WATCDT1.us" status="error",Atlanta's 57 WATC 57.1 (720p)
 https://uni01rtmp.tulix.tv/watc57/watc57/playlist.m3u8
 #EXTINF:-1 tvg-id="WATCDT2.us" status="timeout",Atlanta's 57 WATC TOO 57.2 (720p)
 https://uni01rtmp.tulix.tv/watc57-2/watc57-2/playlist.m3u8
