@@ -12,11 +12,11 @@ http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/pla
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="timeout",Arirang (720p)
 http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="timeout",Arirang (720p)
-https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ArirangTV.kr" status="timeout",Arirang (720p)
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="timeout",Arirang (720p)
 https://amdlive-ch03-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ArirangTV.kr" status="error",Arirang (720p)
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BadukTV.kr" status="error",Baduk TV (540p)
 http://mytv.dothome.co.kr/ch/catv/251.php
 #EXTINF:-1 tvg-id="BBSTV.kr" status="timeout",BBS Buddhist Broadcasting (1080p)
@@ -245,7 +245,7 @@ https://liveout.catenoid.net/live-05-wshopping/wshopping_1500k/playlist.m3u8
 https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="YonhapNewsTV.kr" status="error",Yonhap News TV (540p)
 http://mytv.dothome.co.kr/ch/catv/216.php
-#EXTINF:-1 tvg-id="YTN.kr",YTN (1080p)
+#EXTINF:-1 tvg-id="YTN.kr" status="timeout",YTN (1080p)
 https://hls.youtb.workers.dev/channel/UChlgI3UHCOnwUGzWzbJ3H5w.m3u8
 #EXTINF:-1 tvg-id="YTNDMB.kr" status="error",YTN DMB
 https://hls.youtb.workers.dev/channel/UC38IlqMxZ_YtFg3eSGmmJnQ.m3u8
@@ -265,7 +265,7 @@ https://amdlive-ch02-ctnd-com.akamaized.net/arirang_3ch/smil:arirang_3ch.smil/pl
 http://mobliestream.c3tv.com:1935/live/goodtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",JCN TV
 https://jcnonair-1108.acs.wecandeo.com/ms/3162/1108/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Korea TV
+#EXTINF:-1 tvg-id="" status="timeout",Korea TV
 https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Korean Election TV
 http://necgokr2-724.acs.wecandeo.com/ms/2528/724/index.m3u8
