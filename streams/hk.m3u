@@ -5,6 +5,8 @@ http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8
 http://210.210.155.37/dr9445/h/h14/index.m3u8
 #EXTINF:-1 tvg-id="CreationTV.hk" status="blocked",Creation TV (720p) [Not 24/7]
 http://al-pull2.hkatv.vip/live/CTV.m3u8
+#EXTINF:-1 tvg-id="HKIBC.hk" status="timeout",HKIBC (720p)
+https://live.astradamy.com/hk76/index.m3u8
 #EXTINF:-1 tvg-id="HKIBC.hk" status="timeout",HKIBC
 http://uc6.i-cable.com/live_freedirect/opentvhd002_h.live/playlist.m3u8
 #EXTINF:-1 tvg-id="HKSTV.hk" status="blocked",HKSTV (香港衛視) (720p) [Not 24/7]
@@ -32,9 +34,9 @@ http://210.210.155.37/qwr9ew/s/s21/index.m3u8
 http://117.169.120.138:8080/live/fhzixun/.m3u8
 #EXTINF:-1 tvg-id="PhoenixInfoNewsChannel.hk" status="timeout",Phoenix InfoNews Channel (鳳凰衛視資訊) (1080p)
 https://playtv-live.ifeng.com/live/06OLEEWQKN4_tv1.m3u8
-#EXTINF:-1 tvg-id="RTHKTV31.hk" status="timeout",RTHK (港台電視31) (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RTHKTV31.hk" status="blocked",RTHK (港台電視31) (360p) [Geo-blocked]
 https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/master.m3u8
-#EXTINF:-1 tvg-id="RTHKTV31.hk" status="timeout",RTHK (港台電視31) (1080p)
+#EXTINF:-1 tvg-id="RTHKTV31.hk" status="blocked",RTHK (港台電視31) (1080p)
 https://rthktv31-live.akamaized.net/hls/live/2036818/RTHKTV31/master.m3u8
 #EXTINF:-1 tvg-id="RTHKTV31.hk" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",RTHK (港台電視31) (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
@@ -46,6 +48,8 @@ https://rthktv32-live.akamaized.net/hls/live/2036819/RTHKTV32/master.m3u8
 #EXTINF:-1 tvg-id="RTHKTV32.hk" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",RTHK (港台電視32) (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/32/index.m3u8
+#EXTINF:-1 tvg-id="StarChineseChannel.hk" status="online",Star Chinese Channel HD (卫视中文台) (720p)
+http://50.7.220.74:8278/weishichinese_twn/playlist.m3u8?ct=19226&tid=MA8A7894022878940228&tsum=c0323ce59263e0096d4181626874e17c
 #EXTINF:-1 tvg-id="Thrill.hk" status="online",Thrill (576p)
 http://210.210.155.37/qwr9ew/s/s34/index.m3u8
 #EXTINF:-1 tvg-id="TVBNewsChannel.hk" status="timeout",TVB News Channel (720p)
@@ -55,11 +59,15 @@ https://tvp22.sky4k.top/index1.php
 https://cdn.hklive.tv/xxxx/83/index.m3u8
 #EXTINF:-1 tvg-id="TVBNewsChannel.hk" status="error",TVB News Channel (720p)
 http://9.zhxinda.xyz/newss.php?id=1
+#EXTINF:-1 tvg-id="ViuTV.hk" status="timeout",ViuTV (720p)
+https://live.astradamy.com/viutv/index.m3u8
 #EXTINF:-1 tvg-id="ViuTV.hk" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",ViuTV (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/99/index.m3u8
 #EXTINF:-1 tvg-id="ViuTVsix.hk" status="timeout",ViuTVsix
 http://61.238.6.49:8000/bysid/96
+#EXTINF:-1 tvg-id="ViuTVsix.hk" status="timeout",ViuTVsix (720p)
+https://live.astradamy.com/viutv6/index.m3u8
 #EXTINF:-1 tvg-id="ViuTVsix.hk" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",ViuTVsix (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/96/index.m3u8
@@ -72,10 +80,14 @@ https://hoytv-live-stream.hoy.tv/ch78/index-fhd.m3u8
 https://cdn.hklive.tv/xxxx/78/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Kix (Indonesian Subtitle) (576p)
 http://210.210.155.37/dr9445/h/h07/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",RTHK (港台電視33) (720p)
+https://live.astradamy.com/hk33/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",SPOTV2 (1080p)
 https://bcovlive-a.akamaihd.net/48eee16919834d3b97df1082a649bcfa/ap-northeast-1/6271486521001/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",SPOTV (1080p)
 https://bcovlive-a.akamaihd.net/99545824f51f4c1592b35314c6ece3b0/ap-northeast-1/6271486521001/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="error",Star Chinese Movies (720p)
+http://23.237.10.66:16010
 #EXTINF:-1 tvg-id="" status="timeout",TVB Finance and Sport Channel (720p)
 https://tvp22.sky4k.top/index2.php
 #EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",TVB Finance and Sport Channel (720p)
@@ -85,14 +97,20 @@ https://cdn.hklive.tv/xxxx/85/index.m3u8
 http://9.zhxinda.xyz/newss.php?id=2
 #EXTINF:-1 tvg-id="" status="timeout",TVB J2
 https://j3.lhlh.app/mv.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",TVB J2 (720p)
+https://live.astradamy.com/tvbj2/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",TVB J2 (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/82/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",TVB Jade (翡翠台) (720p)
+https://live.astradamy.com/tvbfc/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",TVB Jade (翡翠台) (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/81/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",TVB Jade (翡翠台) (Cantonese Subtitles) (720p)
 http://23.237.10.66:16106
+#EXTINF:-1 tvg-id="" status="timeout",TVB Pearl (珍珠台) (720p)
+https://live.astradamy.com/tvbpearl/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246",TVB Pearl (珍珠台) (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246
 https://cdn.hklive.tv/xxxx/84/index.m3u8
@@ -108,25 +126,3 @@ http://116.199.5.51:8114/00000000/hls/index.m3u8?Fsv_chan_hls_se_idx=188&Fsv_cty
 http://116.199.5.52:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=188&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
 #EXTINF:-1 tvg-id="" status="timeout",有線新聞台 i-Cable 24-hour News Channel (720p)
 https://uc6.i-cable.com/live_freedirect/freehd209_h.live/playlist.m3u8
-#EXTINF:-1 tvg-id="StarChineseMoviesSouthEastAsia.hk" status="",Star Chinese Movies (720p)
-http://23.237.10.66:16010
-#EXTINF:-1 tvg-id="" status="",RTHK (港台電視33) (720p)
-https://live.astradamy.com/hk33/index.m3u8
-#EXTINF:-1 tvg-id="HKIBC.hk" status="",HKIBC (720p)
-https://live.astradamy.com/hk76/index.m3u8
-#EXTINF:-1 tvg-id="ViuTV.hk" status="",ViuTV (720p)
-https://live.astradamy.com/viutv/index.m3u8
-#EXTINF:-1 tvg-id="ViuTVsix.hk" status="",ViuTVsix (720p)
-https://live.astradamy.com/viutv6/index.m3u8
-#EXTINF:-1 tvg-id="TVBJade.hk" status="",TVB Jade (翡翠台) (720p)
-https://live.astradamy.com/tvbfc/index.m3u8
-#EXTINF:-1 tvg-id="TVBJ2.hk" status="",TVB J2 (720p)
-https://live.astradamy.com/tvbj2/index.m3u8
-#EXTINF:-1 tvg-id="TVBPearl.hk" status="",TVB Pearl (珍珠台) (720p)
-https://live.astradamy.com/tvbpearl/index.m3u8
-#EXTINF:-1 tvg-id="StarChineseChannel.hk" status="",Star Chinese Channel HD (卫视中文台) (720p)
-http://50.7.220.74:8278/weishichinese_twn/playlist.m3u8?ct=19226&tid=MA8A7894022878940228&tsum=c0323ce59263e0096d4181626874e17c
-#EXTINF:-1 tvg-id="" status="",Star Chinese Movies HD (星卫HD电影台) (720p)
-http://50.7.220.74:8278/xingwei_movie/playlist.m3u8?ct=17874&tid=ma80888ed462f18082236&tsum=2824e7b9d4ec19ce7b4f8f69d23d7ceb
-#EXTINF:-1 tvg-id="MATVFilm.hk" status="",Mei Ah Movie Channel (720p)
-http://50.7.220.74:8278/meiyamovie_twn/playlist.m3u8?ct=19226&tid=MFEF1001328410013284&tsum=9839709ca0f37641c5d1ba962c3bc739
