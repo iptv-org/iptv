@@ -13,8 +13,6 @@ https://reflect-tuolumne.cablecast.tv/live-3/live/live.m3u8
 https://ampmedia.secure.footprint.net/egress/bhandler/ampmedia/streama/manifest.m3u8
 #EXTINF:-1 tvg-id="AMP2.us" status="timeout",Access Media Productions Community (AMP) 2 (Monterey CA) (720p)
 https://ampmedia.secure.footprint.net/egress/bhandler/ampmedia/streamb/manifest.m3u8
-#EXTINF:-1 tvg-id="Arroyo.us" status="error",Pasadena Community Public Channel (Arroyo) (Pasadena CA) (720p)
-https://pasadenamed.secure.footprint.net/egress/bhandler/pasadenamed/streamb/playlist.m3u8
 #EXTINF:-1 tvg-id="ArroyoGrandeChannel20.us" status="timeout",Arroyo Grande Gov't Access TV Channel 20 (432p)
 https://agp-nimble.streamguys1.com/AGCC/AGCC/playlist.m3u8
 #EXTINF:-1 tvg-id="AuroraTV.us" status="timeout",AuroraTV (Aurora CO) (720p)
@@ -103,7 +101,7 @@ https://vod.slocoe.org/live-3/live/live.m3u8
 https://vod.slocoe.org/live-4/live/live.m3u8
 #EXTINF:-1 tvg-id="CollierTV.us" status="timeout",Collier Television CTV (Naples FL) (720p)
 https://reflect-collier-countyboc.cablecast.tv/live-4/live/live.m3u8
-#EXTINF:-1 tvg-id="Community12TV.us" status="timeout",Gainesville Community 12TV (Gainesville FL) (720p)
+#EXTINF:-1 tvg-id="Community12TV.us" status="error",Gainesville Community 12TV (Gainesville FL) (720p)
 https://lin10.isilive.ca/live/gainesville/live/index.m3u8
 #EXTINF:-1 tvg-id="CommunityTVChannel189.us" status="timeout",Traverse Area Community Media CommunityTV Channel 189 (Traverse City MI) (1080p) [Geo-blocked]
 https://reflect-tacm.cablecast.tv/live-3/live/live.m3u8
@@ -169,13 +167,13 @@ https://streams.helnix.com/autoHLS/02d8dab006ef9ffd/02d8dab006ef9ffd.m3u8
 https://reflect-fcpublicmedia.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-id="FCPublicMedia.us" status="timeout",Fort Collins Cable TV (FCTV) (Fort Collins CO) (1080p)
 https://reflect-vod-fcgov.cablecast.tv/live-9/live/live.m3u8
-#EXTINF:-1 tvg-id="FernandinaBeachChannel.us" status="error",Fernandina Beach City Meeting (Fernandina Beach FL) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="FernandinaBeachChannel.us" status="timeout",Fernandina Beach City Meeting (Fernandina Beach FL) (720p) [Not 24/7]
 https://edge-f.swagit.com/live/fernandinabeachfl/live-1-a/playlist.m3u8
 #EXTINF:-1 tvg-id="FLTV.us" status="timeout",Fort Lauderdale FLTV (Fort Lauderdale FL) (720p)
 https://cdn3.wowza.com/5/cFh0V0QwUVc4SDl2/fortlauderdale/G1118_002/playlist.m3u8
 #EXTINF:-1 tvg-id="FPTV.us" status="timeout",Fayetteville Public Television (FPTV) (Fayetteville AR) (1080p)
 https://hls.youtb.workers.dev/channel/UCT3Dk_ZPcoR7CeHM_Wwb3QA.m3u8
-#EXTINF:-1 tvg-id="FVTV.us" status="timeout",Fountain Valley TV Channel 3 (360p)
+#EXTINF:-1 tvg-id="FVTV.us" status="error",Fountain Valley TV Channel 3 (360p)
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/fountainvalley/G0806_001/playlist.m3u8
 #EXTINF:-1 tvg-id="G10TV.us" status="timeout",Jacksonville Onslow Government Television (G10TV) (Jacksonville NC) (1080p)
 http://jacksonville.cablecast.tv/live-6/live/live.m3u8
@@ -263,9 +261,9 @@ https://cdn.igocast.com/channel9_hls/channel9_master.m3u8
 https://cdn.igocast.com/channel10_hls/channel10_master.m3u8
 #EXTINF:-1 tvg-id="KCKSLD12.us" status="timeout",Jewelry TV (KCKS-LD12) (480p)
 https://cdn.igocast.com/channel12_hls/channel12_master.m3u8
-#EXTINF:-1 tvg-id="KCTSDT3.us" status="timeout",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT3.us" status="error",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8865717/
-#EXTINF:-1 tvg-id="KCTSDT4.us" status="timeout",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT4.us" status="error",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8904290/
 #EXTINF:-1 tvg-id="KCWXDT1.us" status="online",myTV San Antonio TX (KCWX-TV) (720p) [Not 24/7]
 http://65.36.6.216:1935/live/kcwx.smil/playlist.m3u8
@@ -331,8 +329,6 @@ https://securestream6.champds.com/hlssstc/KOCTCALIVE/KOCTCALIVE.m3u8
 https://securestream6.champds.com/hlssstc/KOCTCALIVE2/KOCTCALIVE2.m3u8
 #EXTINF:-1 tvg-id="KOMODT1.us" status="timeout",ABC 4 Seattle WA (KOMO-TV) (720p)
 https://content.uplynk.com/2c88dfe19e1447e6a6aa27e8e143a140.m3u8
-#EXTINF:-1 tvg-id="KPAS.us" status="error",Pasadena Government Channel (KPAS) (Pasadena CA) (720p)
-https://pasadenamed.secure.footprint.net/egress/bhandler/pasadenamed/streama/playlist.m3u8
 #EXTINF:-1 tvg-id="KPCBDT1.us" status="timeout",God's Learning Channel (480p)
 https://2-fss-1.streamhoster.com/pl_122/200562-1176456-1/playlist.m3u8
 #EXTINF:-1 tvg-id="KPNXDT1.us" status="timeout",NBC 12 Phoenix AZ (KPNX) (1080p)
@@ -439,7 +435,7 @@ https://dacastmmd.mmdlive.lldns.net/dacastmmd/ddf2a073e3da4acb9feb34bef6d58672/p
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/martin/G0074_002/playlist.m3u8
 #EXTINF:-1 tvg-id="MBTV.us" status="timeout",Miami Beach Tv (MBTV) (Miami Beach FL) (720p)
 https://edge-f.swagit.com/live/miamibeachfl/smil:hd-16x9-1-a/playlist.m3u8
-#EXTINF:-1 tvg-id="MCAETTV.us" status="timeout",MCAET TV (720p)
+#EXTINF:-1 tvg-id="MCAETTV.us" status="error",MCAET TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/mcaettv
 #EXTINF:-1 tvg-id="MCN6ArtsChannel.us" status="timeout",MCN6 Arts Channel (1080p) [Not 24/7]
 https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_COMEDY.smil/Playlist.m3u8
@@ -483,7 +479,7 @@ https://cdn3.wowza.com/5/WDIrTW5sM1JEY1NN/napatv/G0360_004/playlist.m3u8
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/newportbeach/G0064_003/playlist.m3u8
 #EXTINF:-1 tvg-id="NCCTV.us" status="timeout",NCCTV (New Castle County DE) (1080p)
 https://newcastlecoutv.secure.footprint.net/egress/bhandler/newcastlecou/streama/playlist.m3u8
-#EXTINF:-1 tvg-id="NCMEducationalKidsChannel.us" status="error",NCM Educational & Kids Channel
+#EXTINF:-1 tvg-id="NCMEducationalKidsChannel.us" status="timeout",NCM Educational & Kids Channel
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_005/playlist.m3u8
 #EXTINF:-1 tvg-id="NCMGovernmentPoliticsChannel.us" status="error",NCM Government & Politics
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_002/playlist.m3u8
@@ -523,8 +519,6 @@ https://live.feed.thepalmbeaches.tv/index.m3u8
 https://cpcdn.azureedge.net/PASCOCOFLLIVE1/PASCOCOFLLIVE1/playlist.m3u8
 #EXTINF:-1 tvg-id="PBCTVChannel20.us" status="timeout",Palm Beach County TV Channel 20 (Palm Beach County FL) (720p)
 https://pbcmedia.pbcgov.org:1936/live/mp4live.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="PCCtv.us" status="error",Pasadena City College Education Channel (PCCtv) (Pasadena CA) (720p)
-https://pasadenamed.secure.footprint.net/egress/bhandler/pasadenamed/streamc/playlist.m3u8
 #EXTINF:-1 tvg-id="PCTChannel26.us" status="timeout",Pacific Coast TV MWSD Channel 26 (720p)
 https://pacifica-ca.secure.footprint.net/egress/bhandler/pacificaca/streamb/manifest.m3u8
 #EXTINF:-1 tvg-id="PCTChannel27.us" status="timeout",Pacific Coast TV HMB Coastside Channel 27 (720p)
@@ -627,11 +621,11 @@ https://reflect-vsctv.cablecast.tv/live-3/live/live.m3u8
 https://content.uplynk.com/channel/ext/72750b711f704e4a94b5cfe6dc99f5e1/wabc_24x7_news.m3u8
 #EXTINF:-1 tvg-id="WACXDT1.us" status="timeout",SuperChannel Orlando (WACX-DT1) (720p)
 https://6305c8676ce84.streamlock.net/live/live/playlist.m3u8
-#EXTINF:-1 tvg-id="WACXDT5.us" status="timeout",Vida Visión Network (720p)
+#EXTINF:-1 tvg-id="WACXDT5.us" status="error",Vida Visión Network (720p)
 https://f-tx-edge-87.christianworldmedia.com/radiovidavision/mp4:radiovidavision/playlist.m3u8
 #EXTINF:-1 tvg-id="WAGADT1.us" status="blocked",FOX Atlanta-GA (WAGA-DT1) (720p)
 https://trn10.tulix.tv/WAGA-FOX/index.m3u8
-#EXTINF:-1 tvg-id="WATCDT1.us" status="error",Atlanta's 57 WATC 57.1 (720p)
+#EXTINF:-1 tvg-id="WATCDT1.us" status="timeout",Atlanta's 57 WATC 57.1 (720p)
 https://uni01rtmp.tulix.tv/watc57/watc57/playlist.m3u8
 #EXTINF:-1 tvg-id="WATCDT2.us" status="timeout",Atlanta's 57 WATC TOO 57.2 (720p)
 https://uni01rtmp.tulix.tv/watc57-2/watc57-2/playlist.m3u8

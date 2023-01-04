@@ -12,11 +12,11 @@ http://amdlive-ch03.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/pla
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="timeout",Arirang (720p)
 http://amdlive.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="timeout",Arirang (720p)
-https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ArirangTV.kr" status="timeout",Arirang (720p)
 https://amdlive-ch02-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" status="timeout",Arirang (720p)
 https://amdlive-ch03-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ArirangTV.kr" status="error",Arirang (720p)
+https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BadukTV.kr" status="error",Baduk TV (540p)
 http://mytv.dothome.co.kr/ch/catv/251.php
 #EXTINF:-1 tvg-id="BBSTV.kr" status="timeout",BBS Buddhist Broadcasting (1080p)
@@ -43,7 +43,7 @@ http://mytv.dothome.co.kr/ch/catv/229.php
 http://mytv.dothome.co.kr/ch/catv/255.php
 #EXTINF:-1 tvg-id="ChuncheonMBCTV.kr" status="timeout",MBC Chuncheon (춘천 MBC) (480p) [Not 24/7]
 https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="ChungbukMBCTV.kr" status="online",MBC Chungbuk (MBC 충북) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ChungbukMBCTV.kr" status="blocked",MBC Chungbuk (MBC 충북) (720p) [Not 24/7]
 http://211.33.246.4:32954/cj_live/myStream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="ChunghwaTV.kr" status="error",Chunghwa TV (540p)
 http://mytv.dothome.co.kr/ch/catv/228.php
@@ -245,7 +245,7 @@ https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
 http://mytv.dothome.co.kr/ch/catv/216.php
 #EXTINF:-1 tvg-id="YTN.kr" status="timeout",YTN (1080p)
 https://hls.youtb.workers.dev/channel/UChlgI3UHCOnwUGzWzbJ3H5w.m3u8
-#EXTINF:-1 tvg-id="YTNDMB.kr" status="timeout",YTN DMB
+#EXTINF:-1 tvg-id="YTNDMB.kr" status="error",YTN DMB
 https://hls.youtb.workers.dev/channel/UC38IlqMxZ_YtFg3eSGmmJnQ.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",All The K-POP
 https://hls.youtb.workers.dev/channel/UCPde4guD9yFBRzkxk2PatoA.m3u8
