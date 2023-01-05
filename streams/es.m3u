@@ -85,10 +85,10 @@ https://congresodirecto.akamaized.net/hls/live/2037973/canalparlamento/master.m3
 https://elastic10.todostreaming.es/live/sanroque-livestream.m3u8
 #EXTINF:-1 tvg-id="CanalSierradeCadiz.es" status="online",Canal Sierra de Cádiz (1080p)
 http://217.125.136.93:8080/canalsierradecadiz1080.m3u8
-#EXTINF:-1 tvg-id="CanalSierradeCadiz.es" status="online",Canal Sierra de Cádiz (720p)
-http://217.125.136.93:8080/canalsierradecadiz720.m3u8
 #EXTINF:-1 tvg-id="CanalSierradeCadiz.es" status="online",Canal Sierra de Cádiz (576p)
 http://217.125.136.93:8080/canalsierradecadiz576.m3u8
+#EXTINF:-1 tvg-id="CanalSierradeCadiz.es" status="blocked",Canal Sierra de Cádiz (720p)
+http://217.125.136.93:8080/canalsierradecadiz720.m3u8
 #EXTINF:-1 tvg-id="CanalSurAndalucia.es" status="timeout",Canal Sur Andalucía (720p)
 https://cdnlive.codev8.net/rtvalive/smil:channel1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalSurAndalucia.es" status="timeout",Canal Sur Andalucía (720p)
@@ -131,7 +131,7 @@ https://streaming012.gestec-video.com/hls/eltoro_bal.m3u8
 https://streaming011.gestec-video.com/hls/eltoro_bal.m3u8
 #EXTINF:-1 tvg-id="Esport3.es" status="blocked",Esport3 [Geo-blocked]
 https://directes-tv-es.ccma.cat/live-origin/esport3-hls/master.m3u8
-#EXTINF:-1 tvg-id="EsteponaTelevision.es" status="timeout",Estepona Televisión (720p)
+#EXTINF:-1 tvg-id="EsteponaTelevision.es" status="error",Estepona Televisión (720p)
 https://cloudvideo.servers10.com:8081/8022/index.m3u8
 #EXTINF:-1 tvg-id="ETB1.es" status="timeout",ETB 1 (720p)
 https://multimedia.eitb.eus/live-content/etb1hd-hls/master.m3u8
@@ -149,7 +149,7 @@ https://cdn02.fibracat.cat/fibracattv/index.m3u8
 http://109.232.71.249/fibwiLIVE_movil/index.m3u8
 #EXTINF:-1 tvg-id="FionTV.es" status="timeout",Fion TV (720p)
 http://stream.fion.es:1936/live/smil:fion.smil/master.m3u8
-#EXTINF:-1 tvg-id="FuengirolaTV.es" status="error",Fuengirola TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="FuengirolaTV.es" status="timeout",Fuengirola TV (360p) [Not 24/7]
 https://secure.todostreaming.es/live/nerja-livestream.m3u8
 #EXTINF:-1 tvg-id="GaliciaTVAmerica.es" status="timeout",Galicia TV América (720p)
 http://america-crtvg.flumotion.com/playlist.m3u8
@@ -235,7 +235,7 @@ https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid
 https://urbanrevolution.es:8443/live/TV/playlist.m3u8
 #EXTINF:-1 tvg-id="LevanteTV.es" status="timeout",Levante TV (720p) [Not 24/7]
 https://play.cdn.enetres.net/C2F6CBB67E5B4D08A16CE5FE67ABCEC9023/029/playlist.m3u8
-#EXTINF:-1 tvg-id="LleidaTelevisio.es" status="blocked",Lleida Televisio (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="LleidaTelevisio.es" status="timeout",Lleida Televisio (720p) [Not 24/7]
 https://cdn01.yowi.tv/lleida/playlist.m3u8
 #EXTINF:-1 tvg-id="LogosTV.es" status="timeout",Logos TV (1080p) [Not 24/7]
 http://streamer1.streamhost.org/salive/logosH/playlist.m3u8
@@ -263,7 +263,7 @@ https://adc-hls.flumotion.com/playlist.m3u8
 https://ondacadiztv.es:30443/octv/24h/playlist.m3u8
 #EXTINF:-1 tvg-id="OndaMadrid.es" status="timeout",Onda Madrid (360p)
 https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/ondamadrid_1/index.m3u8
-#EXTINF:-1 tvg-id="OndaMadrid.es" status="timeout",Onda Madrid (720p)
+#EXTINF:-1 tvg-id="OndaMadrid.es" status="error",Onda Madrid (720p)
 https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid/tvradio_1/index.m3u8
 #EXTINF:-1 tvg-id="Pequeradio.es" status="timeout",Pequeradio (720p) [Not 24/7]
 https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
