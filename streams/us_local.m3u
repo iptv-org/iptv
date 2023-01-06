@@ -233,7 +233,7 @@ https://live-k2302-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
 https://edge1.lifestreamcdn.com/live/geb/playlist.m3u8
 #EXTINF:-1 tvg-id="KBRI8.us" status="timeout",KBRI Brighton Channel 8 (Brighton CO) (720p)
 https://cdn3.wowza.com/5/R09KQXpaMWlrRjly/brightonco/G0883_001/playlist.m3u8
-#EXTINF:-1 tvg-id="KBSVDT1.us" status="error",AssyriaSat (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KBSVDT1.us" status="online",AssyriaSat (720p) [Not 24/7]
 http://66.242.170.53/hls/live/temp/index.m3u8
 #EXTINF:-1 tvg-id="KCAT.us" status="timeout",KCAT Public Media TV (1080p)
 https://reflect-kcat-live.cablecast.tv/live-2/live/live.m3u8
@@ -301,7 +301,7 @@ https://fuel-streaming-prod01.fuelmedia.io/v1/sem/c4067ddc-0e67-4928-b7ec-624481
 https://59d39900ebfb8.streamlock.net/8478/8478/playlist.m3u8
 #EXTINF:-1 tvg-id="KLCSDT3.us" status="timeout",PBS 58 Create (KLCS-DT3) (Los Angeles CA) (720p) [Geo-blocked]
 https://d1mxoeplf1ak5a.cloudfront.net/index.m3u8
-#EXTINF:-1 tvg-id="KLNMLD1.us" status="timeout",KLNM (KLNM-LD1) (720p)
+#EXTINF:-1 tvg-id="KLNMLD1.us" status="error",KLNM (KLNM-LD1) (720p)
 https://broadcast.mytvtogo.net/klmntv/klmntv/playlist.m3u8
 #EXTINF:-1 tvg-id="KMGHDT1.us" status="timeout",ABC 7 Denver CO (KMGH) (720p)
 https://content.uplynk.com/channel/64ca339f04964a5e961c3207a7771bf1.m3u8
@@ -309,10 +309,10 @@ https://content.uplynk.com/channel/64ca339f04964a5e961c3207a7771bf1.m3u8
 https://content.uplynk.com/4a09fbea28ef4f32bce095e9eae04bd8.m3u8
 #EXTINF:-1 tvg-id="KMTVDT1.us" status="timeout",CBS 3 Omaha NE (KMTV-TV) (720p)
 https://content.uplynk.com/channel/328d1434fb51476cb6567c74d5b2cc70.m3u8
-#EXTINF:-1 tvg-id="KNETCD1.us" status="timeout",EMT Media TV Los Angeles CA
-https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNETCD1.us" status="timeout",EMT Media TV Los Angeles CA [Geo-blocked]
 https://mediaplatform.streamingmediahosting.com/p/14135/sp/1413500/playManifest/entryId/0_lkq7fay8/format/applehttp/protocol/https/uiConfId/6710347/a.m3u8
+#EXTINF:-1 tvg-id="KNETCD1.us" status="error",EMT Media TV Los Angeles CA
+https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="timeout",NOTV (720p)
 http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="timeout",NOTV (720p)
@@ -513,7 +513,7 @@ https://otv3.ocfl.net/OrangeTV/smil:OrangeTV.smil/playlist.m3u8
 https://reflect-padnet-live.cablecast.tv/live/live.m3u8
 #EXTINF:-1 tvg-id="PalmBeachesTV.us" status="timeout",Palm Beaches TV (720p)
 https://live.feed.thepalmbeaches.tv/index.m3u8
-#EXTINF:-1 tvg-id="PascoTV.us" status="error",Pasco TV (Pasco County FL) (480p)
+#EXTINF:-1 tvg-id="PascoTV.us" status="timeout",Pasco TV (Pasco County FL) (480p)
 https://cpcdn.azureedge.net/PASCOCOFLLIVE1/PASCOCOFLLIVE1/playlist.m3u8
 #EXTINF:-1 tvg-id="PBCTVChannel20.us" status="timeout",Palm Beach County TV Channel 20 (Palm Beach County FL) (720p)
 https://pbcmedia.pbcgov.org:1936/live/mp4live.sdp/playlist.m3u8
@@ -753,8 +753,6 @@ https://ad-playlistserver.aws.syncbak.com/playlist/899088/master.m3u8?access_tok
 https://livevideo01.wnep.com/hls/live/2011655/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="WOIDT1.us" status="timeout",ABC 5 Des Moines IA (WOI) (1080p)
 https://livevideo01.weareiowa.com/hls/live/2011593/newscasts/live.m3u8
-#EXTINF:-1 tvg-id="WorldChannel.us" status="error",PBS World Channel (480p)
-https://cs.ebmcdn.net/eastbay-live-hs-1/apt/mp4:apt-world/playlist.m3u8
 #EXTINF:-1 tvg-id="WorldHarvestTV.us" status="timeout",World Harvest TV (360p)
 https://597865f6e4114.streamlock.net/live/leseaorigin.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="WOSUDT3.us" status="timeout",The Ohio Channel (720p)
