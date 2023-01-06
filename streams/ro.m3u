@@ -21,8 +21,8 @@ https://www.hlsrundle-stream-iptv.gq/api/hls/b1.m3u8
 http://46.4.14.12:9999/btvsvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="CorneaTV.ro" status="timeout",Cornea TV (720p) [Not 24/7]
 http://89.149.30.158:1935/CorneaTV/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="CredoTV.ro" status="timeout",Credo TV (720p) [Not 24/7]
-http://cdn.credonet.tv:1935/ctv/smil:livecredo.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CredoTV.ro" status="online",Credo TV (720p)
+https://5bb3298db4821.streamlock.net/ctv/smil:livecredo.smil/chunklist_b1128000.m3u8
 #EXTINF:-1 tvg-id="Digi24.ro" status="timeout",Digi 24
 https://edge-ar.rcs-rds.ro/digi24ar/hd.m3u8
 #EXTINF:-1 tvg-id="EstTVNeamt.ro" status="online",Est TV (Neamt) (576p) [Not 24/7]
@@ -95,3 +95,9 @@ https://netstreaming.eu:8080/hls/hd365.m3u8
 http://83.103.150.198:8080
 #EXTINF:-1 tvg-id="" status="timeout",Pro TV News (1080p)
 https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0
+#EXTINF:-1 tvg-id="" status="timeout",Pro TV News (1080p)
+https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0
+#EXTINF:-1 tvg-id="KissTV.ro" status="online",KissTV
+https://tv.broadcasting.ro/memfs/a629c031-2170-4ee9-a36d-87a891aa3131.m3u8
+#EXTINF:-1 tvg-id="FilmBoxPremiumRomania.ro" status="online",FilmBox Premium Romania
+http://94.230.240.17:8080/film_box/index.m3u8
