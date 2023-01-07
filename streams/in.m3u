@@ -37,7 +37,7 @@ https://vidcdn.vidgyor.com/suvarna-origin/liveabr/playlist.m3u8
 https://vidcdn.vidgyor.com/ptm-origin/aslive/playlist.m3u8
 #EXTINF:-1 tvg-id="ATNBangla.in" status="timeout",ATN Bangla (1080p)
 http://103.81.104.118/hls/stream17.m3u8
-#EXTINF:-1 tvg-id="AyushTV.in" status="timeout",Ayush TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="AyushTV.in" status="error",Ayush TV (360p) [Not 24/7]
 https://95eryw39dwn4-hls-live.wmncdn.net/Ayushu/271ddf829afeece44d8732757fba1a66.sdp/index.m3u8
 #EXTINF:-1 tvg-id="B4UKadak.in" status="online",B4U Kadak (576p) [Not 24/7]
 http://103.199.160.85/Content/moviehouse/Live/Channel(MovieHouse)/index.m3u8
@@ -53,11 +53,11 @@ https://cnbcbazar-lh.akamaihd.net/i/cnbcbajar_1@178933/index_5_av-p.m3u8
 http://103.199.161.254/Content/ddmalayalam/Live/Channel(DDMalayalam)/index.m3u8
 #EXTINF:-1 tvg-id="DDNational.in" status="online",DD National (576p)
 http://103.199.161.254/Content/ddnational/Live/Channel(DDNational)/index.m3u8
-#EXTINF:-1 tvg-id="DDNews.in" status="timeout",DD News (1080p) [Not 24/7]
-https://hls.youtb.workers.dev/channel/UCKwucPzHZ7zCUIf7If-Wo1g.m3u8
 #EXTINF:-1 tvg-id="DDNews.in" status="timeout",DD News (576p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://webcast.gov.in/
 https://playhls.media.nic.in/hls/live/ddnews/ddnews.m3u8
+#EXTINF:-1 tvg-id="DDNews.in" status="error",DD News (1080p) [Not 24/7]
+https://hls.youtb.workers.dev/channel/UCKwucPzHZ7zCUIf7If-Wo1g.m3u8
 #EXTINF:-1 tvg-id="DDSports.in" status="online",DD Sports (576p)
 http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8
 #EXTINF:-1 tvg-id="Dhamaal.in" status="timeout",Dhamaal (1080p) [Not 24/7]
@@ -188,11 +188,11 @@ https://ndtv.live-s.cdn.bitgravity.com/cdn-live/_definst_/ndtv/live/ndtv_profit.
 https://ndtvprofitelemarchana.akamaized.net/hls/live/2003680-b/ndtvprofit/master.m3u8
 #EXTINF:-1 tvg-id="NDTVProfit.in" status="timeout",NDTV Profit (480p) [Not 24/7]
 https://ndtvprofitelemarchana.akamaized.net/hls/live/2003680/ndtvprofit/master.m3u8
-#EXTINF:-1 tvg-id="News7Tamil.in" status="timeout",News 7 Tamil (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="News7Tamil.in" status="error",News 7 Tamil (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UC2f4w_ppqHplvjiNaoTAK9w.m3u8
 #EXTINF:-1 tvg-id="News18TamilNadu.in" status="timeout",News 18 Tamil (720p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCat88i6_rELqI_prwvjspRA.m3u8
-#EXTINF:-1 tvg-id="NewsJ.in" status="timeout",News J (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="NewsJ.in" status="error",News J (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCsfh2Zb7-m4qzT8jLhK_Fzw.m3u8
 #EXTINF:-1 tvg-id="NextTVMalabar.in" status="error",Next TV Malabar (720p) [Not 24/7]
 https://6zklxbgpdw9b-hls-live.5centscdn.com/next/c9a1fdac6e082dd89e7173244f34d7b3.sdp/playlist.m3u8
@@ -234,7 +234,7 @@ https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
 http://media.7starcloud.com:1935/live/sanatv2/playlist.m3u8
 #EXTINF:-1 tvg-id="SanaTV.in" status="timeout",Sana TV (576p) [Not 24/7]
 http://hdserver.7starcloud.com:1935/sanatv/sanatv/playlist.m3u8
-#EXTINF:-1 tvg-id="SathiyamTV.in" status="timeout",Sathiyam TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="SathiyamTV.in" status="error",Sathiyam TV (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UC2ziCMHFPWkFHjocUMXT__Q.m3u8
 #EXTINF:-1 tvg-id="ShalomTVIndia.in" status="timeout",Shalom TV (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/25038049/events/7483919/live.m3u8
@@ -291,7 +291,7 @@ http://cdn2.live247stream.com/desiplus/tv/playlist.m3u8
 http://163.47.214.155:1935/fwnews/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Filmeraa (720p)
 https://a.jsrdn.com/broadcast/7ef91d3d7a/+0000/c.m3u8
-#EXTINF:-1 tvg-id="" status="error",Indywood TV
+#EXTINF:-1 tvg-id="" status="timeout",Indywood TV
 https://43wrzjnpqoxe-hls-live.wmncdn.net/indywood/indywoodtv/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Keralabhumi
 http://103.153.92.157:11037/hls/kbh.m3u8
