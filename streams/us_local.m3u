@@ -1,11 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AccessHumboldt.us" status="timeout",Access Humboldt (1080p)
+#EXTINF:-1 tvg-id="AccessHumboldt.us" status="blocked",Access Humboldt (1080p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/66dfbe35ca1a418c87e3cf18ca46bd57/index.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel17.us" status="timeout",Access Sacramento Channel 17
 https://reflect-access-sacramento.cablecast.tv/live-7/live/live.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel18.us" status="timeout",Access Sacramento Channel 18
 https://reflect-access-sacramento.cablecast.tv/live-8/live/live.m3u8
-#EXTINF:-1 tvg-id="AccessSarasota.us" status="timeout",Access Sarasota (Sarasota County FL) (1080p)
+#EXTINF:-1 tvg-id="AccessSarasota.us" status="error",Access Sarasota (Sarasota County FL) (1080p)
 https://hls.youtb.workers.dev/channel/UCqHDwKPPOhzLmtb4TvwIZZQ.m3u8
 #EXTINF:-1 tvg-id="AccessTuolumne.us" status="timeout",Access Tuolumne (Tuolumne County CA) (720p)
 https://reflect-tuolumne.cablecast.tv/live-3/live/live.m3u8
@@ -17,7 +17,7 @@ https://ampmedia.secure.footprint.net/egress/bhandler/ampmedia/streamb/manifest.
 https://agp-nimble.streamguys1.com/AGCC/AGCC/playlist.m3u8
 #EXTINF:-1 tvg-id="AuroraTV.us" status="timeout",AuroraTV (Aurora CO) (720p)
 https://reflect-aurora.cablecast.tv/live-8/live/live.m3u8
-#EXTINF:-1 tvg-id="BHTV10.us" status="error",Beverly Hills Television 10 (720p)
+#EXTINF:-1 tvg-id="BHTV10.us" status="timeout",Beverly Hills Television 10 (720p)
 https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/beverlyhills/G0072_006/playlist.m3u8
 #EXTINF:-1 tvg-id="BHTV35.us" status="timeout",Beverly Hills Television 35 (720p)
 https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/beverlyhills/G0072_007/playlist.m3u8
@@ -423,7 +423,7 @@ https://dacastmmd.mmdlive.lldns.net/dacastmmd/ddf2a073e3da4acb9feb34bef6d58672/p
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/martin/G0074_002/playlist.m3u8
 #EXTINF:-1 tvg-id="MBTV.us" status="timeout",Miami Beach Tv (MBTV) (Miami Beach FL) (720p)
 https://edge-f.swagit.com/live/miamibeachfl/smil:hd-16x9-1-a/playlist.m3u8
-#EXTINF:-1 tvg-id="MCAETTV.us" status="timeout",MCAET TV (720p)
+#EXTINF:-1 tvg-id="MCAETTV.us" status="error",MCAET TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/mcaettv
 #EXTINF:-1 tvg-id="MCN6ArtsChannel.us" status="timeout",MCN6 Arts Channel (1080p) [Not 24/7]
 https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_COMEDY.smil/Playlist.m3u8
@@ -479,7 +479,7 @@ https://nctv79.secure.footprint.net/egress/bhandler/nctv79/streama/manifest.m3u8
 https://s3-us-west-2.amazonaws.com/newington.castus-vod/live/ch1/video.m3u8
 #EXTINF:-1 tvg-id="NCTVChannel16.us" status="timeout",Newington Community Television Channel 16 (Newington CT) (720p)
 https://s3-us-west-2.amazonaws.com/newington.castus-vod/live/ch2/video.m3u8
-#EXTINF:-1 tvg-id="NMBTV.us" status="timeout",North Miami Beach TV (NMBTV) (North Miami Beach FL) (720p)
+#EXTINF:-1 tvg-id="NMBTV.us" status="error",North Miami Beach TV (NMBTV) (North Miami Beach FL) (720p)
 https://cdn3.wowza.com/5/cXdyRHF0Z3kxN0k2/citynmb/G2044_002/playlist.m3u8
 #EXTINF:-1 tvg-id="Olelo49.us" status="timeout",Olelo Community Media Channel 49 (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/olelo/G0125_009/playlist.m3u8
@@ -649,7 +649,7 @@ https://5e6cea03e25b6.streamlock.net/live/WCTVDT.stream/playlist.m3u8
 https://5e6cea03e25b6.streamlock.net/live/WCTVDT2.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="WCWNDT1.us" status="blocked",The CW (WCWN-DT1) Albamy NY (1080p)
 https://16live00.akamaized.net/CW/index.m3u8
-#EXTINF:-1 tvg-id="WDAYDT1.us" status="error",WDAY News Fargo ND (720p)
+#EXTINF:-1 tvg-id="WDAYDT1.us" status="timeout",WDAY News Fargo ND (720p)
 https://player-api.new.livestream.com/accounts/27442514/events/8305246/live.m3u8
 #EXTINF:-1 tvg-id="WDEFDT1.us" status="timeout",WDEF-TV News Chattanooga TN (720p)
 http://dai.google.com/linear/hls/event/iVH_b5kWTteyRCy-YCoHOw/master.m3u8
