@@ -1,11 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AccessHumboldt.us" status="timeout",Access Humboldt (1080p)
+#EXTINF:-1 tvg-id="AccessHumboldt.us" status="blocked",Access Humboldt (1080p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/66dfbe35ca1a418c87e3cf18ca46bd57/index.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel17.us" status="timeout",Access Sacramento Channel 17
 https://reflect-access-sacramento.cablecast.tv/live-7/live/live.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel18.us" status="timeout",Access Sacramento Channel 18
 https://reflect-access-sacramento.cablecast.tv/live-8/live/live.m3u8
-#EXTINF:-1 tvg-id="AccessSarasota.us" status="timeout",Access Sarasota (Sarasota County FL) (1080p)
+#EXTINF:-1 tvg-id="AccessSarasota.us" status="error",Access Sarasota (Sarasota County FL) (1080p)
 https://hls.youtb.workers.dev/channel/UCqHDwKPPOhzLmtb4TvwIZZQ.m3u8
 #EXTINF:-1 tvg-id="AccessTuolumne.us" status="timeout",Access Tuolumne (Tuolumne County CA) (720p)
 https://reflect-tuolumne.cablecast.tv/live-3/live/live.m3u8
@@ -17,7 +17,7 @@ https://ampmedia.secure.footprint.net/egress/bhandler/ampmedia/streamb/manifest.
 https://agp-nimble.streamguys1.com/AGCC/AGCC/playlist.m3u8
 #EXTINF:-1 tvg-id="AuroraTV.us" status="timeout",AuroraTV (Aurora CO) (720p)
 https://reflect-aurora.cablecast.tv/live-8/live/live.m3u8
-#EXTINF:-1 tvg-id="BHTV10.us" status="error",Beverly Hills Television 10 (720p)
+#EXTINF:-1 tvg-id="BHTV10.us" status="timeout",Beverly Hills Television 10 (720p)
 https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/beverlyhills/G0072_006/playlist.m3u8
 #EXTINF:-1 tvg-id="BHTV35.us" status="timeout",Beverly Hills Television 35 (720p)
 https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/beverlyhills/G0072_007/playlist.m3u8
@@ -225,7 +225,7 @@ https://live-k2302-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
 https://edge1.lifestreamcdn.com/live/geb/playlist.m3u8
 #EXTINF:-1 tvg-id="KBRI8.us" status="timeout",KBRI Brighton Channel 8 (Brighton CO) (720p)
 https://cdn3.wowza.com/5/R09KQXpaMWlrRjly/brightonco/G0883_001/playlist.m3u8
-#EXTINF:-1 tvg-id="KBSVDT1.us" status="online",AssyriaSat (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KBSVDT1.us" status="error",AssyriaSat (720p) [Not 24/7]
 http://66.242.170.53/hls/live/temp/index.m3u8
 #EXTINF:-1 tvg-id="KCAT.us" status="timeout",KCAT Public Media TV (1080p)
 https://reflect-kcat-live.cablecast.tv/live-2/live/live.m3u8
@@ -433,8 +433,6 @@ https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_MUSIC.smil/Playlist.m3u8
 https://5b200f5268ceb.streamlock.net/MCPSS/MCPSS247.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MCTV.us" status="timeout",Millbrae Community Television (720p)
 https://603591da64140.streamlock.net/live/mp4:MCTVtest_aac/playlist.m3u8
-#EXTINF:-1 tvg-id="MercedEducationalTV.us" status="error",METV (Merced Educational Television)
-https://mercedcouedu.secure.footprint.net/egress/bhandler/mercedcouedu/streamc/chunklist_b1192000.m3u8
 #EXTINF:-1 tvg-id="MidpenMediaCenterChannel26.us" status="timeout",Midpen Media Center Government etc Channel 26 (720p)
 https://5c2974786200d.streamlock.net/live-chan26/ngrp:ch26_all/playlist.m3u8
 #EXTINF:-1 tvg-id="MidpenMediaCenterChannel28.us" status="timeout",Midpen Media Center Youth Education and Sports Channel 28 (720p)
@@ -569,7 +567,7 @@ https://santamariactv.secure.footprint.net/egress/bhandler/santamariactv/streamc
 https://santamariactv.secure.footprint.net/egress/bhandler/santamariactv/streamb/manifest.m3u8
 #EXTINF:-1 tvg-id="SoundViewCommunityMedia.us" status="timeout",Sound View Community Media (480p)
 https://soundviewcmt.secure.footprint.net/egress/bhandler/soundviewcmt/streama/manifest.m3u8
-#EXTINF:-1 tvg-id="SPTV.us" status="timeout",St. Pete TV (SPTV) (St Petersburg FL) (360p)
+#EXTINF:-1 tvg-id="SPTV.us" status="error",St. Pete TV (SPTV) (St Petersburg FL) (360p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/stpete/G0187_002/playlist.m3u8
 #EXTINF:-1 tvg-id="STNChannel2.us" status="error",University of Hartford Student Television Network Channel 2 (STN2) (1080p)
 https://hls.youtb.workers.dev/channel/UCy_G4ljF7HkUtSx_YMnf_Wg.m3u8
@@ -609,7 +607,7 @@ https://reflect-vsctv.cablecast.tv/live-3/live/live.m3u8
 https://content.uplynk.com/channel/ext/72750b711f704e4a94b5cfe6dc99f5e1/wabc_24x7_news.m3u8
 #EXTINF:-1 tvg-id="WACXDT1.us" status="timeout",SuperChannel Orlando (WACX-DT1) (720p)
 https://6305c8676ce84.streamlock.net/live/live/playlist.m3u8
-#EXTINF:-1 tvg-id="WACXDT5.us" status="timeout",Vida Visión Network (720p)
+#EXTINF:-1 tvg-id="WACXDT5.us" status="error",Vida Visión Network (720p)
 https://f-tx-edge-87.christianworldmedia.com/radiovidavision/mp4:radiovidavision/playlist.m3u8
 #EXTINF:-1 tvg-id="WAGADT1.us" status="blocked",FOX Atlanta-GA (WAGA-DT1) (720p)
 https://trn10.tulix.tv/WAGA-FOX/index.m3u8
@@ -649,7 +647,7 @@ https://5e6cea03e25b6.streamlock.net/live/WCTVDT.stream/playlist.m3u8
 https://5e6cea03e25b6.streamlock.net/live/WCTVDT2.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="WCWNDT1.us" status="blocked",The CW (WCWN-DT1) Albamy NY (1080p)
 https://16live00.akamaized.net/CW/index.m3u8
-#EXTINF:-1 tvg-id="WDAYDT1.us" status="error",WDAY News Fargo ND (720p)
+#EXTINF:-1 tvg-id="WDAYDT1.us" status="timeout",WDAY News Fargo ND (720p)
 https://player-api.new.livestream.com/accounts/27442514/events/8305246/live.m3u8
 #EXTINF:-1 tvg-id="WDEFDT1.us" status="timeout",WDEF-TV News Chattanooga TN (720p)
 http://dai.google.com/linear/hls/event/iVH_b5kWTteyRCy-YCoHOw/master.m3u8
