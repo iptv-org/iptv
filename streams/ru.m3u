@@ -319,9 +319,9 @@ http://185.97.150.19:8082/2235
 https://strm.yandex.ru/kal/otr/otr0.m3u8
 #EXTINF:-1 tvg-id="OTS.ru" status="blocked",ОТС (1080p) [Geo-blocked]
 https://strm.yandex.ru/kal/otstv/otstv0.m3u8
-#EXTINF:-1 tvg-id="PerviyKrymskiy.ru" status="timeout",Первый крымский (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="PerviyKrymskiy.ru" status="error",Первый крымский (540p) [Not 24/7]
 http://mrlive.1tvcrimea.ru:8080/1tvcrimea.m3u8
-#EXTINF:-1 tvg-id="PervyyPskovskiy.ru" status="online",Первый Псковский (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="PervyyPskovskiy.ru" status="error",Первый Псковский (540p) [Not 24/7]
 http://194.190.78.91/pskov/rewind-10800.m3u8
 #EXTINF:-1 tvg-id="PervyyRespublikanskiy.ru" status="timeout",Первый республиканский (720p)
 http://ott.inmart.tv:8081/18/index.m3u8
@@ -474,10 +474,10 @@ https://live2.mediacdn.ru/sr1/sever-mobile/playlist.m3u8
 https://live2.mediacdn.ru/sr1/sever/playlist.m3u8
 #EXTINF:-1 tvg-id="Sever.ru" status="timeout",Север (Нарьян-Мар) (1080p)
 https://live.mediacdn.ru/sr1/sever/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (576p) [Geo-blocked]
-http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout",Шансон ТВ (512p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (512p) [Geo-blocked]
 http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout",Шансон ТВ (576p) [Geo-blocked]
+http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout",Шансон ТВ (576p) [Geo-blocked]
 http://uiptv.do.am/1ufc/602079679/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Шансон ТВ (480p)
