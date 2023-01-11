@@ -24,11 +24,11 @@ http://m.live.net.sa:1935/live/quran/playlist.m3u8
 #EXTINF:-1 tvg-id="AlresalahTV.sa" status="timeout",Al-Resalah (1080p) [Geo-blocked]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-elressalah
 #EXTINF:-1 tvg-id="AlSaudiya.sa" status="timeout",Al Saudiya (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/saudiatv
+#EXTINF:-1 tvg-id="AlSaudiya.sa" status="timeout",Al Saudiya (1080p) [Not 24/7]
 https://edge.taghtia.com/sa/2.m3u8
 #EXTINF:-1 tvg-id="AlSaudiya.sa" status="error",Al Saudiya (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UC2mWeEHv9IY6i74okFMkGPw.m3u8
-#EXTINF:-1 tvg-id="AlSaudiya.sa" status="error",Al Saudiya (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/saudiatv
 #EXTINF:-1 tvg-id="AlSunnahAlNabawiyahTV.sa" status="timeout",Al Sunnah Al Nabawiyah TV (Medina) (720p)
 http://5b18be6964c2f.streamlock.net:1935/live/_definst_/sunnah/playlist.m3u8
 #EXTINF:-1 tvg-id="AlSunnahAlNabawiyahTV.sa" status="timeout",Al Sunnah Al Nabawiyah TV (Medina) (1080p) [Not 24/7]
@@ -38,13 +38,13 @@ https://edge.taghtia.com/sa/6.m3u8
 #EXTINF:-1 tvg-id="AlSunnahAlNabawiyahTV.sa" status="timeout",Al Sunnah Al Nabawiyah TV (Medina) (720p) [Not 24/7]
 http://m.live.net.sa:1935/live/sunnah/playlist.m3u8
 #EXTINF:-1 tvg-id="AsharqNews.sa" status="timeout",Asharq News (1080p)
+https://hls.youtb.workers.dev/channel/UCRJUVYt9gjg8MnlGacySUdg.m3u8
+#EXTINF:-1 tvg-id="AsharqNews.sa" status="timeout",Asharq News (1080p)
 https://bcovlive-a.akamaihd.net/0b75ef0a49e24704a4ca023d3a82c2df/ap-south-1/6203311941001/playlist.m3u8
 #EXTINF:-1 tvg-id="AsharqNews.sa" status="timeout",Asharq News (1080p)
 https://shls-asharq-prod-dub.shahid.net/out/v1/3b6b4902cf8747a28619411239584002/index.m3u8
 #EXTINF:-1 tvg-id="AsharqNews.sa" status="timeout",Asharq News (1080p)
 https://svs.itworkscdn.net/bloomberarlive/bloomberg.smil/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="AsharqNews.sa" status="error",Asharq News (1080p)
-https://hls.youtb.workers.dev/channel/UCRJUVYt9gjg8MnlGacySUdg.m3u8
 #EXTINF:-1 tvg-id="AsharqNewsPortrait.sa" status="timeout",Asharq News Portrait (1280p)
 https://bcovlive-a.akamaihd.net/ed81ac1118414d4fa893d3a83ccec9be/eu-central-1/6203311941001/playlist.m3u8
 #EXTINF:-1 tvg-id="AtfalMawahebTV.sa" status="timeout",Atfal & Mawaheb TV (1080p)
@@ -82,9 +82,9 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/ksa-
 #EXTINF:-1 tvg-id="KSASports3.sa" status="timeout",KSA Sports 3 (1080p) [Not 24/7]
 https://edge.taghtia.com/sa/16.m3u8
 #EXTINF:-1 tvg-id="KSASports4.sa" status="timeout",KSA Sports 4 (1080p) [Not 24/7]
-https://edge.taghtia.com/sa/17.m3u8
-#EXTINF:-1 tvg-id="KSASports4.sa" status="error",KSA Sports 4 (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/ksa-sports4
+#EXTINF:-1 tvg-id="KSASports4.sa" status="timeout",KSA Sports 4 (1080p) [Not 24/7]
+https://edge.taghtia.com/sa/17.m3u8
 #EXTINF:-1 tvg-id="LBC.sa" status="timeout",LBC (1080p) [Geo-blocked]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://rotana.net/live-lbc
 #EXTINF:-1 tvg-id="LBC.sa" status="timeout",LBC (1080p) [Geo-blocked]
@@ -140,21 +140,21 @@ https://rotanastudios-rotanamusic-1-eu.xiaomi.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RotanaPlusHD.sa" status="timeout",Rotana+ (1080p)
 https://shls-rotanaplus-prod-dub.shahid.net/out/v1/1fc6103458be480b96e6a574b00fe1c0/index.m3u8
 #EXTINF:-1 tvg-id="SaudiaRadio.sa" status="timeout",Saudia Radio (720p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/saudiaradio
-#EXTINF:-1 tvg-id="SaudiaRadio.sa" status="timeout",Saudia Radio (720p)
 https://edge.taghtia.com/sa/11.m3u8
+#EXTINF:-1 tvg-id="SaudiaRadio.sa" status="error",Saudia Radio (720p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/saudiaradio
+#EXTINF:-1 tvg-id="SBC.sa" status="timeout",SBC (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/sbc-channel
 #EXTINF:-1 tvg-id="SBC.sa" status="timeout",SBC (1080p) [Not 24/7]
 https://edge.taghtia.com/sa/1.m3u8
-#EXTINF:-1 tvg-id="SBC.sa" status="error",SBC (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/sbc-channel
 #EXTINF:-1 tvg-id="SSCActionWaleed.sa" status="timeout",SSC Action Waleed (1080p) [Not 24/7]
 https://shls-live-event2-prod-dub.shahid.net/out/v1/0456ede1a39145d98b3d8c8062ddc998/index.m3u8
 #EXTINF:-1 tvg-id="SSCActionWaleedExtra.sa" status="timeout",SSC Action Waleed Extra (1080p) [Not 24/7]
 https://d2x08mwxhmpplo.cloudfront.net/out/v1/587631773e55495a8aa3dd4050318f6e/index.m3u8
 #EXTINF:-1 tvg-id="ThikrayatTV.sa" status="timeout",Thikrayat TV (1080p) [Not 24/7]
-https://edge.taghtia.com/sa/3.m3u8
-#EXTINF:-1 tvg-id="ThikrayatTV.sa" status="error",Thikrayat TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.aloula.sa/live/thikrayat-tv
+#EXTINF:-1 tvg-id="ThikrayatTV.sa" status="timeout",Thikrayat TV (1080p) [Not 24/7]
+https://edge.taghtia.com/sa/3.m3u8
 #EXTINF:-1 tvg-id="ZadTV.sa" status="error",ZAD TV (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCOll3M-P7oKs5cSrQ9ytt6g.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Al Riyadh Radio (720p)
