@@ -108,7 +108,7 @@ http://103.255.15.222:1935/tv/jitv_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="JogjaIstimewaTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Jogja Istimewa TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch65.m3u8
-#EXTINF:-1 tvg-id="JogjaTV.id" status="error",Jogja TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JogjaTV.id" status="timeout",Jogja TV (720p) [Not 24/7]
 https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8
 #EXTINF:-1 tvg-id="JPMTV.id" status="online",JPM TV (720p) [Not 24/7]
 http://122.248.43.138:1935/ch6/myStream/playlist.m3u8
@@ -116,7 +116,7 @@ http://122.248.43.138:1935/ch6/myStream/playlist.m3u8
 http://122.248.43.138:1935/ch2/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="JTV.id" status="blocked",JTV (1080p) [Geo-blocked]
 https://cdn02.mola.tv/Content/HLS/Live/channel(f2cd666d-f350-1140-7ce5-3d7f39f84727)/index.m3u8
-#EXTINF:-1 tvg-id="KawanuaTV.id" status="error",Kawanua TV (720p)
+#EXTINF:-1 tvg-id="KawanuaTV.id" status="online",Kawanua TV (720p)
 http://122.248.43.138:1935/ch18/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="KompasTV.id" status="blocked",Kompas TV (720p)
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(dc9040ad-a4e1-4d08-883c-a65542b69602)/index.m3u8
@@ -130,17 +130,17 @@ https://alfa.kugo.id/playout/maleo.stream/chunklist.m3u8
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(a255dd49-dc2a-464b-8623-6ef4556dff11)/index.m3u8
 #EXTINF:-1 tvg-id="MCC.id" status="blocked",MCC (720p)
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(9430f215-8ccb-4322-affd-6dbc97e259bd)/index.m3u8
-#EXTINF:-1 tvg-id="MediaSunnahAceh.id" status="timeout",Media Sunnah Aceh [Not 24/7]
-https://hls.youtb.workers.dev/channel/UCem4zrffr93cp-o8cOPDhdQ.m3u8
 #EXTINF:-1 tvg-id="MediaSunnahAceh.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Media Sunnah Aceh [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch23.m3u8
+#EXTINF:-1 tvg-id="MediaSunnahAceh.id" status="error",Media Sunnah Aceh [Not 24/7]
+https://hls.youtb.workers.dev/channel/UCem4zrffr93cp-o8cOPDhdQ.m3u8
 #EXTINF:-1 tvg-id="MetroGlobeNetwork.id" status="timeout",Metro Globe Network (1080p) [Not 24/7]
 https://edge.medcom.id/live-edge/smil:mgnch.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="MetroTV.id" status="timeout",Metro TV (1080p) [Not 24/7]
-https://hls.youtb.workers.dev/channel/UCzl0OrB3-ehunyotIQvK77A.m3u8
 #EXTINF:-1 tvg-id="MetroTV.id" status="timeout",Metro TV (480p) [Not 24/7]
 http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MetroTV.id" status="error",Metro TV (1080p) [Not 24/7]
+https://hls.youtb.workers.dev/channel/UCzl0OrB3-ehunyotIQvK77A.m3u8
 #EXTINF:-1 tvg-id="MGITV.id" status="timeout",MGI TV (720p) [Geo-blocked]
 https://tv.rodja.live/tasik/ngrp:mgitv_all/playlist.m3u8
 #EXTINF:-1 tvg-id="MGSTV.id" status="timeout",MGS TV (720p) [Not 24/7]
@@ -187,7 +187,7 @@ http://122.248.43.138:1935/ch15/myStream/playlist.m3u8
 https://v3.siar.us/pontianaktelevisi/live/playlist.m3u8
 #EXTINF:-1 tvg-id="PopMusik.id" status="timeout",POP musik (576i)
 https://alfa.kugo.id/playout/pop.stream/chunklist.m3u8
-#EXTINF:-1 tvg-id="PujaTVAceh.id" status="error",Puja TV Aceh (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="PujaTVAceh.id" status="timeout",Puja TV Aceh (1080p) [Not 24/7]
 https://v6.siar.us/pujatv/live/chunks.m3u8
 #EXTINF:-1 tvg-id="RadarLampungTV.id" status="online",Radar TV Lampung (480p) [Not 24/7]
 http://122.248.43.138:1935/ch17/myStream/playlist.m3u8
@@ -198,11 +198,11 @@ https://h1.intechmedia.net/intech/ch16.m3u8
 http://210.210.155.37/dr9445/h/h10/index.m3u8
 #EXTINF:-1 tvg-id="RajawaliTV.id" status="blocked",RTV (480p) [Geo-blocked]
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(41869351-4a9c-4e57-b54b-8cf5dfc919e1)/index.m3u8
-#EXTINF:-1 tvg-id="RasyaadTV.id" status="timeout",Rasyaad TV [Not 24/7]
-https://hls.youtb.workers.dev/channel/UCotIkyDFzztbSm21GNGsK9w.m3u8
 #EXTINF:-1 tvg-id="RasyaadTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Rasyaad TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch6.m3u8
+#EXTINF:-1 tvg-id="RasyaadTV.id" status="error",Rasyaad TV [Not 24/7]
+https://hls.youtb.workers.dev/channel/UCotIkyDFzztbSm21GNGsK9w.m3u8
 #EXTINF:-1 tvg-id="RCTV.id" status="online",RCTV (720p) [Not 24/7]
 http://122.248.43.138:1935/ch9/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="RCTV.id" status="timeout",RCTV (576p) [Not 24/7]
@@ -236,7 +236,7 @@ http://122.248.43.138:1935/ch25/myStream/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/sriwijayatvonline
 #EXTINF:-1 tvg-id="SultraTV.id" status="error",Sultra TV (720p) offline
 http://122.248.43.138:1935/ch20/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="SunnahJalanPastiTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Sunnah Jalan Pasti TV (360p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SunnahJalanPastiTV.id" status="error" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Sunnah Jalan Pasti TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch17.m3u8
 #EXTINF:-1 tvg-id="SurauTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Surau TV (360p) [Geo-blocked]
@@ -356,7 +356,7 @@ http://118.97.50.107/Content/HLS/Live/Channel(TVRINASIONAL)/index.m3u8
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRINasional)/index.m3u8
 #EXTINF:-1 tvg-id="TVRINasional.id" status="timeout",TVRI Nasional (720p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRINASIONAL)/index.m3u8
-#EXTINF:-1 tvg-id="TVRIPapua.id" status="timeout",TVRI Papua (480p)
+#EXTINF:-1 tvg-id="TVRIPapua.id" status="online",TVRI Papua (480p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRIPAPUA)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIPapua.id" status="timeout",TVRI Papua (480p)
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIPapua)/index.m3u8
@@ -368,7 +368,7 @@ http://118.97.50.107/Content/HLS/Live/Channel(TVRIriau)/index.m3u8
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIriau)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIRiau.id" status="timeout",TVRI Riau (720p) [Not 24/7]
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIriau)/index.m3u8
-#EXTINF:-1 tvg-id="TVRISoutheastSulawesi.id" status="timeout",TVRI Sulawesi Tenggara (480p)
+#EXTINF:-1 tvg-id="TVRISoutheastSulawesi.id" status="online",TVRI Sulawesi Tenggara (480p)
 http://118.97.50.107/Content/HLS/Live/Channel(TVRISULTRA)/index.m3u8
 #EXTINF:-1 tvg-id="TVRISoutheastSulawesi.id" status="timeout",TVRI Sulawesi Tenggara (480p)
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRISultra)/index.m3u8
