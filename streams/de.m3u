@@ -62,9 +62,9 @@ http://tv.artcom-venture.de:1322/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DeutschesMusikFernsehen.de" status="timeout",Deutsches Musik Fernsehen (720p) [Not 24/7]
 https://tv.artcom-venture.de/dmf/tv.m3u8
 #EXTINF:-1 tvg-id="DWArabic.de" status="timeout",DW Arabic (1080p)
-https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
-#EXTINF:-1 tvg-id="DWArabic.de" status="error",DW Arabic (1080p)
 https://hls.youtb.workers.dev/channel/UC30ditU5JI16o5NbFsHde_Q.m3u8
+#EXTINF:-1 tvg-id="DWArabic.de" status="timeout",DW Arabic (1080p)
+https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutsch.de" status="blocked",DW Deutsch (1080p) [Geo-blocked]
 https://dwamdstream106.akamaized.net/hls/live/2017965/dwstream106/index.m3u8
 #EXTINF:-1 tvg-id="DWDeutschPlus.de" status="blocked",DW Deutsch+ (1080p) [Geo-blocked]
@@ -343,7 +343,7 @@ https://dresden.iptv-playoutcenter.de/dresden/dresdenfernsehen.stream_1/playlist
 https://leipzig.iptv-playoutcenter.de/leipzig/leipzigfernsehen.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="SachsenFernsehenVogtland.de" status="timeout",Sachsen Fernsehen Vogtland
 http://vogtland.iptv-playoutcenter.de/vogtland/vogtlandfernsehen.stream_1/playlist.m3u8
-#EXTINF:-1 tvg-id="SchlagerDeluxe.de" status="error",Schlager Deluxe (1080p)
+#EXTINF:-1 tvg-id="SchlagerDeluxe.de" status="timeout",Schlager Deluxe (1080p)
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/26658/26658_264_live.m3u8
 #EXTINF:-1 tvg-id="Seenluft24.de" status="timeout",Seenluft24
 https://5856e1a25f71a.streamlock.net/easycast7-live/_definst_/mp4:livestreamhd20/playlist.m3u8
@@ -443,7 +443,7 @@ https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
 https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
 #EXTINF:-1 tvg-id="ZweiMusicTelevision.de" status="timeout",ZWEI2 Music (1080p)
 https://serve-first.folxplay.tv/folx/ch-2/master.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Antenne Vorarlberg (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Antenne Vorarlberg (720p) [Not 24/7]
 http://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",ARTE Event 1 [Geo-blocked]
 https://arteconcerthls.akamaized.net/hls/live/2025494/channel01/master.m3u8
