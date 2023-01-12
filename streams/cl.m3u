@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="13C.cl" status="timeout",13C (720p)
 https://unlimited2-cl-isp.dps.live/13cultura/13cultura.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="24Horas.cl" status="timeout",24 Horas (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="24Horas.cl" status="error",24 Horas (720p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCTXNz3gjAypWp3EhlIATEJQ.m3u8
 #EXTINF:-1 tvg-id="ADNTV.cl" status="timeout",ADN Radio (1080p)
 https://unlimited1-us.dps.live/adntv/adntv.smil/playlist.m3u8
@@ -27,7 +27,7 @@ http://v1.tustreaming.cl/aysentv/index.m3u8
 https://bst.buin.cl/0.m3u8
 #EXTINF:-1 tvg-id="CampoAbiertoTV.cl" status="timeout",Campo Abierto TV
 https://v1.tustreaming.cl:19360/campoabierto/campoabierto.m3u8
-#EXTINF:-1 tvg-id="CampusTV.cl" status="error",Campus TV (Talca) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CampusTV.cl" status="timeout",Campus TV (Talca) (720p) [Not 24/7]
 https://pantera1-100gb-cl-movistar.dps.live/campustv/campustv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal2Quellon.cl" status="timeout",TV Quellón (1080p) [Not 24/7]
 https://pantera1-100gb-cl-movistar.dps.live/tvquellon/tvquellon.smil/playlist.m3u8
@@ -83,10 +83,10 @@ https://stream.wifispeed.cl:3852/live/energeeklive.m3u8
 https://wifispeed.trapemn.tv:1936/infantil/energeek-tres/playlist.m3u8
 #EXTINF:-1 tvg-id="EnerGeekFanpop.cl" status="timeout",EnerGeek Fanpop (720p) [Not 24/7]
 https://wifispeed.trapemn.tv:1936/infantil/energeek-2/playlist.m3u8
-#EXTINF:-1 tvg-id="EnerGeekRetro.cl" status="blocked",EnerGeek Retro (720p) [Not 24/7]
-https://wifispeed.trapemn.tv:1936/infantil/energeek-1/playlist.m3u8
 #EXTINF:-1 tvg-id="EnerGeekRetro.cl" status="timeout",EnerGeek Retro (720p) [Not 24/7]
 https://stream.wifispeed.cl:3103/live/energeek1live.m3u8
+#EXTINF:-1 tvg-id="EnerGeekRetro.cl" status="timeout",EnerGeek Retro (720p) [Not 24/7]
+https://wifispeed.trapemn.tv:1936/infantil/energeek-1/playlist.m3u8
 #EXTINF:-1 tvg-id="EnfoqueDigitalTV.cl" status="timeout",Enfoque Digital TV
 https://5eaccbab48461.streamlock.net:1936/8074/8074/playlist.m3u8
 #EXTINF:-1 tvg-id="EstacionTV.cl" status="timeout",Estación TV (720p)
@@ -203,7 +203,7 @@ https://paneltv.online:1936/8116/8116/playlist.m3u8
 https://panel.miplay.cl:8081/spectrumchannel/index.m3u8
 #EXTINF:-1 tvg-id="StgoTV.cl" status="timeout",Stgo.TV (720p)
 https://stv.janus.cl/playlist/stream.m3u8
-#EXTINF:-1 tvg-id="T13.cl" status="timeout",T13 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="T13.cl" status="error",T13 (720p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCsRnhjcUCR78Q3Ud6OXCTNg.m3u8
 #EXTINF:-1 tvg-id="Tele2WebRetiro.cl" status="blocked",Tele 2 Web (Retiro) (720p) [Not 24/7]
 https://inliveserver.com:1936/11516/11516/playlist.m3u8
@@ -221,7 +221,7 @@ https://v4.tustreaming.cl/tevexinter/index.m3u8
 https://unlimited1-us.dps.live/thema/thema.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ThemaTelevision.cl" status="timeout",Thema Televisión (La Serena) (720p) [Not 24/7]
 https://unlimited6-cl.dps.live/thema/thema.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TNE.cl" status="error",TNE (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TNE.cl" status="timeout",TNE (720p) [Not 24/7]
 https://v2.tustreaming.cl/tnetv/index.m3u8
 #EXTINF:-1 tvg-id="TurfMovil.cl" status="timeout",Turf Móvil (720p)
 https://janus.tvturf.cl/playlist/stream.m3u8
