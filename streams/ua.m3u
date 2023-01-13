@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="1Plus1.ua" status="timeout",1+1 (1080p)
+#EXTINF:-1 tvg-id="1Plus1.ua" status="error",1+1 (1080p)
 https://hls.youtb.workers.dev/channel/UCVEaAWKfv7fE1c-ZuBs7TKQ.m3u8
 #EXTINF:-1 tvg-id="1Plus1Sport.ua" status="timeout",1+1 Спорт (720p) [Not 24/7]
 https://live-k2301-kbp.1plus1.video/sport/smil:sport.smil/playlist.m3u8
@@ -63,10 +63,10 @@ http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua.m3u8
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="PravdaTUT.ua" status="timeout",ПравдаТУТ (720p)
 http://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua_mid/index.m3u8
-#EXTINF:-1 tvg-id="Pryamyy.ua" status="timeout",Телеканал Прямий (1080p) [Not 24/7]
-https://hls.youtb.workers.dev/channel/UCH9H_b9oJtSHBovh94yB5HA.m3u8
 #EXTINF:-1 tvg-id="Pryamyy.ua" status="timeout",Прямий (576p)
 http://prm.cdn-02.cosmonova.net.ua/hls/prm_ua_hi/index.m3u8
+#EXTINF:-1 tvg-id="Pryamyy.ua" status="error",Телеканал Прямий (1080p) [Not 24/7]
+https://hls.youtb.workers.dev/channel/UCH9H_b9oJtSHBovh94yB5HA.m3u8
 #EXTINF:-1 tvg-id="Renome.ua" status="timeout",Renome (576p)
 http://85.238.112.40:8810/hls_sec/online/list-renome.m3u8
 #EXTINF:-1 tvg-id="Skrypinua.ua" status="timeout",Skrypin.ua (1080p) [Not 24/7]
@@ -79,9 +79,9 @@ http://80.91.177.102:1935/live/live1/playlist.m3u8
 http://tv.tv-project.com:1935/live/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKAleks.ua" status="online",ТРК Алекс (576p)
 http://46.46.112.223/live/livestream1.m3u8
-#EXTINF:-1 tvg-id="TVA.ua" status="timeout",ТВА (Чернiвцi) (576p)
+#EXTINF:-1 tvg-id="TVA.ua" status="error",ТВА (Чернiвцi) (576p)
 http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVA.ua" status="timeout",ТВА (Чернiвцi) (576p)
+#EXTINF:-1 tvg-id="TVA.ua" status="error",ТВА (Чернiвцi) (576p)
 http://rtsp.cdn.ua/tva.ua_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVDom.ua" status="timeout",ТВ Дом
 http://46.149.48.21:1234
@@ -91,7 +91,7 @@ https://freedom.cdn-01.cosmonova.net.ua/mobile-app/main/freedom/master.m3u8
 https://stream.ztv.zp.ua/hls/live.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",I-UA.tv (1080p)
 https://kie2.cdn.i-ua.tv/hlsme/iuatv.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Балта ТВ (768p)
+#EXTINF:-1 tvg-id="" status="online",Балта ТВ (768p)
 http://194.50.51.34/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",НТК (1080p) [Not 24/7]
 https://stream.ntktv.ua/s/ntk/ntk.m3u8
