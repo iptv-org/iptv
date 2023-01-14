@@ -7,7 +7,7 @@ https://dacastmmd.mmdlive.lldns.net/dacastmmd/66dfbe35ca1a418c87e3cf18ca46bd57/i
 https://reflect-access-sacramento.cablecast.tv/live-7/live/live.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel18.us" status="online",Access Sacramento Channel 18
 https://reflect-access-sacramento.cablecast.tv/live-8/live/live.m3u8
-#EXTINF:-1 tvg-id="AccessSarasota.us" status="error",Access Sarasota (1080p)
+#EXTINF:-1 tvg-id="AccessSarasota.us" status="timeout",Access Sarasota (Sarasota County FL) (1080p)
 https://hls.youtb.workers.dev/channel/UCqHDwKPPOhzLmtb4TvwIZZQ.m3u8
 #EXTINF:-1 tvg-id="AccessTuolumne.us" status="online",Access Tuolumne (720p)
 https://reflect-tuolumne.cablecast.tv/live-3/live/live.m3u8
@@ -123,7 +123,7 @@ https://cdn-unified-hls.streamspot.com/ingest1/89cbf0c54c/playlist.m3u8?origin=1
 http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCjTkV9P9szNXPht8tJKl0aw/live
 #EXTINF:-1 tvg-id="CMAC1.us" status="timeout",Fresno CMAC 1 Public Channel (720p)
 https://reflect-vod-cmac.cablecast.tv/live-11/live/live.m3u8
-#EXTINF:-1 tvg-id="CMAC2.us" status="timeout",Fresno CMAC 2 Education Channel (720p)
+#EXTINF:-1 tvg-id="CMAC2.us" status="error",Fresno CMAC 2 Education Channel (720p)
 https://reflect-vod-cmac.cablecast.tv/live-12/live/live.m3u8
 #EXTINF:-1 tvg-id="CMAC3.us" status="timeout",Fresno CMAC 3 Government Channel (720p)
 https://reflect-vod-cmac.cablecast.tv/live-13/live/live.m3u8
@@ -174,12 +174,12 @@ http://173.166.17.35/live-7/live/WIFI-1096k-360p/WIFI-1096k-360p.m3u8
 #EXTINF:-1 tvg-id="CupertinoCityChannel.us" status="online",Cupertino City Channel (720p)
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/cupertino/G0067_003/playlist.m3u8
 #EXTINF:-1 tvg-id="CURRENTTVGovernment.us" status="online",CURRENTTV-Government
-https://reflect-govedtv.cablecast.tv/live-8/live/CELL-496k-270p/CELL-496k-270p.m3u8
+https://reflect-govedtv.cablecast.tv/live-8/live/live.m3u8
 #EXTINF:-1 tvg-id="CURRENTTVEducation.us" status="online",CURRENTTV-Education
-https://reflect-govedtv.cablecast.tv/live-9/live/CELL-496k-270p/CELL-496k-270p.m3u8
-#EXTINF:-1 tvg-id="CutleryCornerNetwork.us" status="online",Cutlery Corner Network CCN (720p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.youtube.com/UCj3dt20MAZcvDN8GKeT2FBg/live
-#EXTINF:-1 tvg-id="CVCEducation.us" status="online",Bolton Community Voice Channel Education (480p)
+https://reflect-govedtv.cablecast.tv/live-9/live/live.m3u8
+#EXTINF:-1 tvg-id="CutleryCornerNetwork.us" status="timeout",Cutlery Corner Network CCN (720p)
+https://hls.youtb.workers.dev/channel/UCj3dt20MAZcvDN8GKeT2FBg.m3u8
+#EXTINF:-1 tvg-id="CVCEducation.us" status="timeout",Bolton Community Voice Channel (CVC) Education (Bolton CT) (480p)
 https://s3-us-west-2.amazonaws.com/bolton.castus-vod/live/ch2/video.m3u8
 #EXTINF:-1 tvg-id="CVCGovernment.us" status="online",Bolton Community Voice Channel Government (480p)
 https://s3-us-west-2.amazonaws.com/bolton.castus-vod/live/ch3/video.m3u8
@@ -240,8 +240,8 @@ https://edge-f.swagit.com/live/fernandinabeachfl/live-1-a/playlist.m3u8
 #EXTINF:-1 tvg-id="FLTV.us" status="online",FLTV (720p)
 https://cdn3.wowza.com/5/cFh0V0QwUVc4SDl2/fortlauderdale/G1118_002/playlist.m3u8
 #EXTINF:-1 tvg-id="FLTVWebChannel1.us" status="online",FLTV Web Channel 1
-https://reflect-fingerlakestv.cablecast.tv/live-1/live/WIFI-2096k-720p/WIFI-2096k-720p.m3u8
-#EXTINF:-1 tvg-id="FPTV.us" status="error",Fayetteville Public Television (1080p)
+https://reflect-fingerlakestv.cablecast.tv/live-1/live/live.m3u8
+#EXTINF:-1 tvg-id="FPTV.us" status="timeout",Fayetteville Public Television (FPTV) (Fayetteville AR) (1080p)
 https://hls.youtb.workers.dev/channel/UCT3Dk_ZPcoR7CeHM_Wwb3QA.m3u8
 #EXTINF:-1 tvg-id="G10TV.us" status="online",Jacksonville Onslow Government Television (1080p)
 http://jacksonville.cablecast.tv/live-6/live/live.m3u8
@@ -369,7 +369,7 @@ https://cdn.igocast.com/channel12_hls/channel12_master.m3u8
 https://d1iiqllagryue9.cloudfront.net/kclv/live.m3u8
 #EXTINF:-1 tvg-id="KCTSDT3.us" status="online",PBS KCTS 9 Create (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8865717/
-#EXTINF:-1 tvg-id="KCTSDT4.us" status="online",PBS KCTS 9 World (720p)
+#EXTINF:-1 tvg-id="KCTSDT4.us" status="timeout",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8904290/
 #EXTINF:-1 tvg-id="KCWXDT1.us" status="online",myTV San Antonio (720p)
 http://65.36.6.216:1935/live/kcwx.smil/playlist.m3u8
@@ -1017,7 +1017,7 @@ https://2-fss-2.streamhoster.com/pl_132/amlst:200914-1315486/playlist.m3u8
 https://livevideo01.wkyc.com/hls/live/2015504/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="WLBZDT1.us" status="timeout",NBC 207 Bangor Portland ME (WLBZ) (1080p)
 https://livevideo01.newscentermaine.com/hls/live/2014540/newscasts/live/wcsh.m3u8
-#EXTINF:-1 tvg-id="WLCT96.us" status="timeout",Wolcott Governmental TV (720p) (Wolcott CT)
+#EXTINF:-1 tvg-id="WLCT96.us" status="error",Wolcott Governmental TV (720p) (Wolcott CT)
 https://5a5c57d042315.streamlock.net/live11704001/ngrp:government_all/playlist.m3u8
 #EXTINF:-1 tvg-id="WLIIDT1.us" status="timeout",TeleOnce (WLII-DT) (1080p)
 https://univision-live.cdn.vustreams.com/live/ce88b839-6376-4494-a2ee-83d66bc7cfc1/live.isml/ce88b839-6376-4494-a2ee-83d66bc7cfc1.m3u8

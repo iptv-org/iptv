@@ -40,9 +40,9 @@ https://tv.ensonhaber.com/tv/tr/beyaztv/index.m3u8
 http://139.162.182.79/live/test/index.m3u8
 #EXTINF:-1 tvg-id="BRTV.tr" status="timeout",BRTV (720p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/brtv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="BursaTV.tr" status="timeout",Bursa TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="BursaTV.tr" status="error",Bursa TV (720p) [Not 24/7]
 https://cdn-bursatv.yayin.com.tr/bursatv/bursatv/playlist.m3u8
-#EXTINF:-1 tvg-id="BursaTV.tr" status="timeout",Bursa TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="BursaTV.tr" status="error",Bursa TV (720p) [Not 24/7]
 https://win1.yayin.com.tr/bursatv/bursatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CanTV.tr" status="timeout",Can TV (720p)
 http://canbroadcast.com:7000/canlican/tv.m3u8
@@ -110,10 +110,10 @@ https://win8.yayin.com.tr/haber61tv/smil:haber61tv.smil/playlist.m3u8
 https://tv.ensonhaber.com/tv/tr/haberglobal/index.m3u8
 #EXTINF:-1 tvg-id="Haberturk.tr" status="timeout",Habertürk TV (720p) [Not 24/7]
 https://tv.ensonhaber.com/tv/tr/haberturk/index.m3u8
+#EXTINF:-1 tvg-id="HunatTV.tr" status="timeout",Hunat TV (480p) [Not 24/7]
+https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="HunatTV.tr" status="timeout",Hunat TV (480p) [Geo-blocked]
 https://waw2.artiyerelmedya.net/hunattv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="HunatTV.tr" status="error",Hunat TV (480p) [Not 24/7]
-https://59cba4d34b678.streamlock.net/canlitv/hunattv/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="timeout",IBB TV (1080p)
 http://wowza.istweb.tv:1935/webtv/webtv_wowza1/playlist.m3u8
 #EXTINF:-1 tvg-id="IBBTV.tr" status="timeout",IBB TV (1080p) [Not 24/7]
@@ -156,7 +156,7 @@ http://51.15.2.151/hls/kanalavrupa.m3u8
 http://212.174.58.161/hls-live/livepkgr/_definst_/liveevent/kanalb.m3u8
 #EXTINF:-1 tvg-id="KanalFirat.tr" status="timeout",Kanal Firat (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/kanalfirat/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="KanalUrfa.tr" status="error",Kanal Urfa (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="KanalUrfa.tr" status="timeout",Kanal Urfa (576p) [Not 24/7]
 https://broadcasttr.com:446/kanalurfa/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalV.tr" status="timeout",Kanal V (720p) [Not 24/7]
 http://yerelmedya.tv:1935/kanalv/bant1/playlist.m3u8
@@ -176,7 +176,7 @@ http://lalegultv.netmedya.net/lalegul-tv/lalegultv.stream/playlist.m3u8
 https://waw2.artiyerelmedya.net/lifetv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="LineTV.tr" status="timeout",Line TV (404p) [Not 24/7]
 https://broadcasttr.com:446/linetv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="MaviKaradenizTV.tr" status="blocked",MaviKaradeniz (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="MaviKaradenizTV.tr" status="timeout",MaviKaradeniz (720p) [Geo-blocked]
 http://yerelmedya.tv:1935/mavikaradeniz/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="MaviKaradenizTV.tr" status="timeout",MaviKaradeniz (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/mavikaradeniz/bant1/playlist.m3u8
@@ -245,9 +245,9 @@ https://tv-trt1.medya.trt.com.tr/master.m3u8
 https://tv-trt2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTArabi.tr" status="timeout",TRT Arabi (720p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UC5GvVahlgulCyo4cshSmbcg.m3u8
-#EXTINF:-1 tvg-id="TRTArabi.tr" status="online",TRT Arabi (720p)
+#EXTINF:-1 tvg-id="TRTArabi.tr" status="timeout",TRT Arabi (720p) [Not 24/7]
 https://tv-trtarabi.live.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="TRTAvaz.tr" status="online",TRT Avaz (720p)
+#EXTINF:-1 tvg-id="TRTAvaz.tr" status="timeout",TRT Avaz (720p)
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTBelgesel.tr" status="timeout",TRT Belgesel (720p)
 https://tv-trtbelgesel.medya.trt.com.tr/master.m3u8
