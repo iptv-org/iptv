@@ -33,7 +33,7 @@ https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
 #EXTINF:-1 tvg-id="BritishMuslimTV.uk" status="timeout",British Muslim TV (576p) [Not 24/7]
 https://api.visionip.tv/live/ASHTTP/visiontvuk-international-britishmuslimtv-hsslive-25f-16x9-MB/playlist.m3u8
-#EXTINF:-1 tvg-id="Channel4.uk" status="timeout",Channel 4 (1080p)
+#EXTINF:-1 tvg-id="Channel4.uk" status="blocked",Channel 4 (1080p)
 https://cdnuk001.broadcastcdn.net/KUK-CHANNEL4/playlist.m3u8
 #EXTINF:-1 tvg-id="ChannelS.uk" status="timeout",Channel S (US Pacific) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
@@ -61,9 +61,9 @@ https://d3cq7cdp2cfi92.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 #EXTINF:-1 tvg-id="GarshomTV.uk" status="timeout",Garshom TV (360p) [Not 24/7]
 http://og2qd3aal7an-hls-live.5centscdn.com/garshomtv/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="GBNews.uk" status="timeout",GB News (1080p)
-https://hls.youtb.workers.dev/channel/UC0vn8ISa4LKMunLbzaXLnOQ.m3u8
-#EXTINF:-1 tvg-id="GBNews.uk" status="timeout",GB News (1080p)
 https://live-gbnews-ssai.simplestreamcdn.com/v1/master/82267e84b9e5053b3fd0ade12cb1a146df74169a/gbnews-live/live.m3u8
+#EXTINF:-1 tvg-id="GBNews.uk" status="error",GB News (1080p)
+https://hls.youtb.workers.dev/channel/UC0vn8ISa4LKMunLbzaXLnOQ.m3u8
 #EXTINF:-1 tvg-id="GemsTV.uk" status="timeout",Gems TV (360p)
 http://57d6b85685bb8.streamlock.net:1935/abrgemporiaukgfx/livestream_360p/index.m3u8
 #EXTINF:-1 tvg-id="HadiTV1.iq" status="timeout",Hadi TV English and Urdu (720p)
