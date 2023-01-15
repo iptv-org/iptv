@@ -27,7 +27,7 @@ http://live.streams.ovh:1935/cannali/cannali/playlist.m3u8
 https://vod.streams.ovh:3528/stream/play.m3u8
 #EXTINF:-1 tvg-id="CorfuTV.gr" status="timeout",Corfu TV (576p) [Not 24/7]
 https://itv.streams.ovh/corfuchannel/corfuchannel/playlist.m3u8
-#EXTINF:-1 tvg-id="CreteTV.gr" status="timeout",KPHTH TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CreteTV.gr" status="error",KPHTH TV (720p) [Not 24/7]
 http://live.cretetv.gr:1935/cretetv/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="DiavataTV.gr" status="timeout",Diavata TV (720p)
 https://video.streams.ovh:1936/DiavataTV/DiavataTV/playlist.m3u8
@@ -53,11 +53,11 @@ https://ert-live-bcbs15228.siliconweb.com/media/ert_sports_ww/ert_sports2_ww.m3u
 https://ert-live-bcbs15228.siliconweb.com/media/ert_world/ert_world.m3u8
 #EXTINF:-1 tvg-id="ERTWorld.gr" status="timeout",ERT World (480p)
 http://wpso.com:1936/hls/wzra.m3u8
-#EXTINF:-1 tvg-id="FarosTV2.gr" status="error",Faros TV2 (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="FarosTV2.gr" status="blocked",Faros TV2 (480p) [Geo-blocked]
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
-#EXTINF:-1 tvg-id="Galaxy.gr" status="timeout",Galaxy (432p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Galaxy.gr" status="error",Galaxy (432p) [Geo-blocked]
 https://channel.streams.ovh:1936/galaxygr-1/galaxygr-1/playlist.m3u8
 #EXTINF:-1 tvg-id="GreekTVLondon.gr" status="timeout",Greek TV London (720p) [Not 24/7]
 https://vdo3.alphaserver.gr:3466/live/greektvlondonlive.m3u8
@@ -79,7 +79,7 @@ https://www.hellasnet.tv/rest.live.hn/ws.iri/playlist.m3u8
 http://kontralive.siliconweb.com/live/kontratv/playlist.m3u8
 #EXTINF:-1 tvg-id="KontraChannel.gr" status="error",Kontra Channel (1080p)
 http://flashcloud.mediacdn.com/live/kontratv/.m3u8
-#EXTINF:-1 tvg-id="KritiTV.gr" status="timeout",Κρήτη TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KritiTV.gr" status="error",Κρήτη TV (720p) [Not 24/7]
 http://live.cretetv.gr:1935/cretetv/myStream/f1tv.m3u8
 #EXTINF:-1 tvg-id="MagicTV.gr" status="timeout",Magic TV (480p)
 https://itv.streams.ovh/magictv/magictv/playlist.m3u8
@@ -151,7 +151,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/centertv
 https://ert-live-bcbs15228.siliconweb.com/media/ert_news_2/ert_news_2.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",ERT Sports (1080p) [Geo-blocked]
 https://ertsports-live.ert.insyscd.net/out/v1/db0b54e8d25a47dcb336cf114c4d1860/ertsports-live.m3u8
-#EXTINF:-1 tvg-id="" status="error",Euro TV (720p)
+#EXTINF:-1 tvg-id="" status="timeout",Euro TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/eurochannel
 #EXTINF:-1 tvg-id="" status="timeout",Flash TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/flashtvgr
