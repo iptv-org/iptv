@@ -319,14 +319,14 @@ http://125.210.152.18:9090/live/JXWSHD_H265.m3u8
 http://183.207.248.71/cntv/live1/jiangxistv/jiangxistv
 #EXTINF:-1 tvg-id="JiangxiTV.cn" status="timeout",江西卫视 (576p)
 http://183.207.248.71/gitv/live1/JXWS/JXWS
-#EXTINF:-1 tvg-id="JiangxiTV.cn" status="timeout",江西卫视 (1080p)
-http://183.207.249.11/PLTV/3/224/3221225536/index.m3u8
 #EXTINF:-1 tvg-id="JiangxiTV.cn" status="timeout",江西卫视 (576p)
 http://183.207.249.15/PLTV/4/224/3221225798/index.m3u8
 #EXTINF:-1 tvg-id="JiangxiTV.cn" status="timeout",江西卫视 (1080p)
 http://223.110.245.170/PLTV/3/224/3221225536/index.m3u8
 #EXTINF:-1 tvg-id="JiangxiTV.cn" status="timeout",江西卫视 (1080p)
 http://223.110.254.199:6610/cntv/live1/jiangxistv/jiangxistv/1.m3u8
+#EXTINF:-1 tvg-id="JiangxiTV.cn" status="error",江西卫视 (1080p)
+http://183.207.249.11/PLTV/3/224/3221225536/index.m3u8
 #EXTINF:-1 tvg-id="JiuquanTVNewsComprehensiveChannel.cn" status="timeout",酒泉新闻综合 (576p)
 http://117.156.28.119/270000001111/1110000001/index.m3u8
 #EXTINF:-1 tvg-id="LiaoningTV.cn" status="online",辽宁卫视 (1080p)
@@ -861,7 +861,7 @@ http://183.207.248.71/gitv/live1/G_NJJK/G_NJJK
 http://223.110.245.155/ott.js.chinamobile.com/PLTV/3/224/3221227194/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",南京教科 (720p) [Not 24/7]
 http://live.nbs.cn/channels/njtv/jkpd/m3u8:500k/live.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",南京新闻综合 (720p)
+#EXTINF:-1 tvg-id="" status="error",南京新闻综合 (720p)
 http://live.nbs.cn/channels/njtv/xwzh/m3u8:500k/live.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",南京生活 (720p)
 http://live.nbs.cn/channels/njtv/shpd/m3u8:500k/live.m3u8
@@ -935,7 +935,7 @@ http://scgctvshow.sctv.com/hdlive/sctv5/index.m3u8
 http://scgctvshow.sctv.com/hdlive/sctv4/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",四川 Ⅰ 巴中综合台 (1080p) [Not 24/7]
 http://30814.hlsplay.aodianyun.com/lms_30814/tv_channel_246.flv
-#EXTINF:-1 tvg-id="" status="timeout",四川 Ⅰ 星空购物台 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="blocked",四川 Ⅰ 星空购物台 (720p) [Not 24/7]
 http://scgctvshow.sctv.com/hdlive/sctv6/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",四川 Ⅰ 达州公共台 (720p) [Not 24/7]
 http://m3u8.channellive.dzxw.net/cms/videos/nmip-media/channellive/channel36/playlist.m3u8
@@ -1139,13 +1139,13 @@ http://183.207.248.71/gitv/live1/G_XINJIANG/G_XINJIANG
 http://183.207.249.15/PLTV/3/224/3221225523/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",新疆卫视 (576p)
 http://223.110.243.136/PLTV/3/224/3221225523/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",新疆少儿 (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="blocked",新疆少儿 (720p) [Geo-blocked]
 http://livehyw5.chinamcache.com/hyw/zb12.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",新疆汉语信息服务 (720p) [Geo-blocked]
 http://livehyw5.chinamcache.com/hyw/zb11.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",新疆汉语综艺 (720p) [Geo-blocked]
 http://livehyw5.chinamcache.com/hyw/zb04.m3u8
-#EXTINF:-1 tvg-id="" status="error",新郑综合 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="timeout",新郑综合 (1080p) [Not 24/7]
 http://live.dxhmt.cn:9081/tv/10184-1.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",旺苍新闻 (528p) [Not 24/7]
 http://3g.dzsm.com/streamer/gycttv.m3u8
