@@ -33,7 +33,7 @@ https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0500/c.m3u8
 https://a.jsrdn.com/broadcast/22693_4rGhgrBU/-0800/c.m3u8
 #EXTINF:-1 tvg-id="BritishMuslimTV.uk" status="timeout",British Muslim TV (576p) [Not 24/7]
 https://api.visionip.tv/live/ASHTTP/visiontvuk-international-britishmuslimtv-hsslive-25f-16x9-MB/playlist.m3u8
-#EXTINF:-1 tvg-id="Channel4.uk" status="blocked",Channel 4 (1080p)
+#EXTINF:-1 tvg-id="Channel4.uk" status="timeout",Channel 4 (1080p)
 https://cdnuk001.broadcastcdn.net/KUK-CHANNEL4/playlist.m3u8
 #EXTINF:-1 tvg-id="ChannelS.uk" status="timeout",Channel S (US Pacific) (720p) [Not 24/7]
 https://a.jsrdn.com/broadcast/22679_24MrQma9TX/-0800/c.m3u8
@@ -45,7 +45,7 @@ https://ap02.iqplay.tv:8082/iqb8002/ch4n3ls/playlist.m3u8
 http://c0.cdn.trinity-tv.net/stream/hujuv8xpr4gdugis2szd4rqrvpzip8iuwn2jwpt68wmvpmdz79qime8idwrxga95rnghp64hfimevyvrp6n7p3c52yg3rfsuhxe9u9az35ti8te625sxerfwaxr2cbefyau4tmfa4nwqvca6ckmtwv2=.m3u8
 #EXTINF:-1 tvg-id="Cruise1stTV.uk" status="blocked",Cruise1st TV (396p) [Geo-blocked]
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/cruise_tv/hls_video/index.m3u8
-#EXTINF:-1 tvg-id="Davejavu.uk" status="timeout",Dave ja vu (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Davejavu.uk" status="blocked",Dave ja vu (576p) [Geo-blocked]
 https://cdnuk001.broadcastcdn.net/KUK-DAVEJAVU/index.m3u8
 #EXTINF:-1 tvg-id="DeenTV.uk" status="timeout",Deen TV (576p) [Not 24/7]
 https://ap02.iqplay.tv:8082/iqb8002/d33ntv/playlist.m3u8
@@ -94,15 +94,15 @@ https://live.playstop.me/1816184091/index.m3u8
 https://live.playstop.me/LS-63503-4/index.m3u8
 #EXTINF:-1 tvg-id="IslamChannel.uk" status="timeout",Islam Channel (576p) [Not 24/7]
 https://live.islamchannel.tv/islamtv_english/live.m3u8
-#EXTINF:-1 tvg-id="ITV1.uk" status="error",ITV1 (1080p)
+#EXTINF:-1 tvg-id="ITV1.uk" status="blocked",ITV1 (1080p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV-107/playlist.m3u8
-#EXTINF:-1 tvg-id="ITV2.uk" status="blocked",ITV2 (1080p)
-https://cdnuk001.broadcastcdn.net/KUK-ITV2/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV2.uk" status="timeout",ITV2 (576p) [Not 24/7]
 http://93.190.139.35:8278/streams/d/itv2_antik/playlist.m3u8
+#EXTINF:-1 tvg-id="ITV2.uk" status="timeout",ITV2 (1080p)
+https://cdnuk001.broadcastcdn.net/KUK-ITV2/playlist.m3u8
 #EXTINF:-1 tvg-id="ITV3.uk" status="timeout",ITV3 (720p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV3/playlist.m3u8
-#EXTINF:-1 tvg-id="ITV4.uk" status="timeout",ITV4 (576p)
+#EXTINF:-1 tvg-id="ITV4.uk" status="blocked",ITV4 (576p)
 https://cdnuk001.broadcastcdn.net/KUK-ITV4/playlist.m3u8
 #EXTINF:-1 tvg-id="ITVBe.uk" status="timeout",ITVBe (576p)
 https://cdnuk001.broadcastcdn.net/KUK-ITVBE/playlist.m3u8
@@ -110,7 +110,7 @@ https://cdnuk001.broadcastcdn.net/KUK-ITVBE/playlist.m3u8
 https://lo2-1.gemporia.com/abrjewellerymaker/smil:livestream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KalemehTV.uk" status="online",Kalemeh TV (576p) [Not 24/7]
 http://51.210.199.37/hls/stream.m3u8
-#EXTINF:-1 tvg-id="KanshiTV.uk" status="error",Kanshi TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KanshiTV.uk" status="timeout",Kanshi TV (720p) [Not 24/7]
 https://live.kanshitv.co.uk/mobile/kanshitvkey.m3u8
 #EXTINF:-1 tvg-id="Kerrang.uk" status="timeout",Kerrang (576p) [Geo-blocked]
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,kerrang-alldev.m3u8?yo.up=http://boxtv-origin-elb.cds1.yospace.com/uploads/kerrang/
@@ -184,7 +184,7 @@ https://hls.youtb.workers.dev/channel/UCm0yTweyAa0PwEIp0l3N_gA.m3u8
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg00738-newsuk-talkradiotv-ono/playlist.m3u8
 #EXTINF:-1 tvg-id="TalkTV.uk" status="timeout",TalkTV (1080p)
 https://newsuk-talkradiotv-brightcove.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="TBNUK.uk" status="error",TBN UK (720p)
+#EXTINF:-1 tvg-id="TBNUK.uk" status="timeout",TBN UK (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28567990/events/8919546
 #EXTINF:-1 tvg-id="TheBoxUK.uk" status="timeout",The Box UK (576p) [Geo-blocked]
 https://csm-e-boxplus.tls1.yospace.com/csm/extlive/boxplus01,thebox-alldev.m3u8?yo.up=https://boxtv.secure.footprint.net/thebox/
