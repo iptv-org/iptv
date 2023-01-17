@@ -5,7 +5,7 @@ https://asomatv.duckdns.org/livestream/stream.m3u8
 https://ecotel.streamseguro.com/hls/ecoteltv.m3u8
 #EXTINF:-1 tvg-id="EcuadorTV.ec" status="timeout",Ecuador TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://vimeo.com/783833058
-#EXTINF:-1 tvg-id="Ecuavisa.ec" status="timeout",Ecuavisa [Geo-blocked]
+#EXTINF:-1 tvg-id="Ecuavisa.ec" status="blocked",Ecuavisa [Geo-blocked]
 https://mdstrm.com/live-stream-playlist/603ea23f928cc5255563012c.m3u8
 #EXTINF:-1 tvg-id="EducaTV.ec" status="timeout",EducaTV (1080p) [Not 24/7]
 https://cloud7.streamingcnt.net/cnt/educa/playlist.m3u8
@@ -21,7 +21,7 @@ https://stmv.streamingvip.click/hechosecuador/hechosecuador/playlist.m3u8
 https://stmv1.voxhdnet.com/diego7128/diego7128/playlist.m3u8
 #EXTINF:-1 tvg-id="MulticanalCatamayo.ec" status="timeout",Multicanal Catamayo (720p) [Not 24/7]
 https://multicanal.streamseguro.com/hls/streaming.m3u8
-#EXTINF:-1 tvg-id="Nortvision.ec" status="error",Nortvisión
+#EXTINF:-1 tvg-id="Nortvision.ec" status="timeout",Nortvisión
 https://plataformavideo.com:19360/nortvision/nortvision.m3u8
 #EXTINF:-1 tvg-id="PuruwaTV.ec" status="timeout",Puruwa TV (720p)
 https://mediacp.us:8081/8054/index.m3u8
@@ -39,11 +39,15 @@ https://d6op0qag07k4o.cloudfront.net/hls/tvc.m3u8
 http://181.198.32.153:8080/hls/stream.m3u8
 #EXTINF:-1 tvg-id="UCSGTV.ec" status="timeout",UCSG TV
 https://www.ecuastream.net/pls/ucsghd.m3u8
-#EXTINF:-1 tvg-id="UnsionTV.ec" status="error",Unsión TV [Not 24/7]
+#EXTINF:-1 tvg-id="UnsionTV.ec" status="timeout",Unsión TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://vimeo.com/783732110
-#EXTINF:-1 tvg-id="VitoTVO.ec" status="timeout",VitoTVO
+#EXTINF:-1 tvg-id="VitoTVO.ec" status="error",VitoTVO
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/8069167/events/10722332/player
 #EXTINF:-1 tvg-id="WuanPlus.ec" status="timeout",Wuan+
 https://streamingwowza.com:19360/wuanplus/wuanplus.m3u8
-#EXTINF:-1 tvg-id="ZaracayTV.ec" status="error",Zaracay TV
+#EXTINF:-1 tvg-id="ZaracayTV.ec" status="timeout",Zaracay TV
 https://streamingwowza.com:19360/zaracaytv/zaracaytv.m3u8
+#EXTINF:-1 tvg-id="AcademiaTV.ec",AcademiaTV [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/30417243/events/9529139/player
+#EXTINF:-1 tvg-id="OromarTV.ec",Oromar TV (1080p) 
+https://stream.oromartv.com:8082/hls/oromartv.m3u8
