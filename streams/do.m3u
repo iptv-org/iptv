@@ -13,7 +13,7 @@ https://d3qhvst5vzq4y9.cloudfront.net/hls/canal21.m3u8
 https://cdn4.hostlagarto.com:8081/static/bajotechotv/playlist.m3u8
 #EXTINF:-1 tvg-id="Bellavision.do" status="timeout",Bellavisión (1080p)
 https://cdn4.hostlagarto.com:8081/static/Bellavision8hd/playlist.m3u8
-#EXTINF:-1 tvg-id="BonaoTV.do" status="timeout",Bonao TV
+#EXTINF:-1 tvg-id="BonaoTV.do" status="error",Bonao TV
 https://ss5.domint.net:3026/btv_str/bonao/playlist.m3u8
 #EXTINF:-1 tvg-id="Boreal.do" status="timeout",Boreal
 https://cdn.borealtelevision.com:3712/live/borealtelevisionhdlive.m3u8
@@ -73,7 +73,7 @@ https://vdo1.streamgato.us:3839/live/galaxiatvlive.m3u8
 https://ss2.domint.net:3200/gdm_str/gdmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="GHTelevision.do" status="timeout",GH Television
 https://tv.ghtelevision.com:3018/live/ghtelevisionlive.m3u8
-#EXTINF:-1 tvg-id="GuacaraTV.do" status="timeout",Guacara TV
+#EXTINF:-1 tvg-id="GuacaraTV.do" status="error",Guacara TV
 https://cloudflare.streamgato.us:3180/live/guacaratvlive.m3u8
 #EXTINF:-1 tvg-id="GuaymateTV.do" status="timeout",Guaymate TV (360p)
 https://5790d294af2dc.streamlock.net/8100/8100/playlist.m3u8
@@ -93,7 +93,7 @@ https://cdn4.hostlagarto.com:8081/static/lacaletatv/playlist.m3u8
 https://ss8.domint.net:3108/mia_str/lamiatv/playlist.m3u8
 #EXTINF:-1 tvg-id="LaVozdeMaria.do" status="timeout",La Voz de María (720p)
 https://uni01rtmp.tulix.tv/playout2multi9/lavozdemaria.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="LinierosTV.do" status="timeout",Linieros TV [Not 24/7]
+#EXTINF:-1 tvg-id="LinierosTV.do" status="error",Linieros TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://twitch.tv/linierostv
 #EXTINF:-1 tvg-id="LocomotionTV.do" status="online",Locomotion TV
 http://51.222.85.85:81/hls/loco/index.m3u8
@@ -197,9 +197,9 @@ http://newyorkstream.ddns.net:1935/telenord12/telenord12/playlist.m3u8
 https://vdo1.streamgato.us:3592/live/teleorientaldigitallive.m3u8
 #EXTINF:-1 tvg-id="TeleRadioNorte.do" status="error",TeleRadioNorte
 https://cdn4.hostlagarto.com:8081/static/teleradionortetv/playlist.m3u8
-#EXTINF:-1 tvg-id="Telesantodomingo.do" status="timeout",Telesantodomingo
+#EXTINF:-1 tvg-id="Telesantodomingo.do" status="error",Telesantodomingo
 https://cdn5.streamgato.us:3315/live/telesantodomingolive.m3u8
-#EXTINF:-1 tvg-id="Telesistema.do",Telesistema (480p)
+#EXTINF:-1 tvg-id="Telesistema.do" status="online",Telesistema (480p)
 http://51.81.93.239:8084/hls/tsistemas.m3u8
 #EXTINF:-1 tvg-id="TelesurCanal10.do" status="error",Telesur Canal (360p) [Not 24/7]
 https://ss3.domint.net:3124/tls_str/telesur/playlist.m3u8
