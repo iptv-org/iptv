@@ -7,10 +7,14 @@ https://stream-aleph.m.ro/Aleph/ngrp:Alephnewsmain.stream_all/playlist.m3u8
 http://s5.alfaomega.tv:1935/alfaomega/alfaomega1.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="AlfaOmegaTV.ro" status="timeout",Alfa Omega TV (540p) [Not 24/7]
 http://s5.alfaomega.tv:1935/alfaomega/smil:alfaomegatv/playlist.m3u8
-#EXTINF:-1 tvg-id="Antena1.ro" status="error",Antena 1
-https://www.hlsrundle-stream-iptv.gq/api/hls/antena1.m3u8
+#EXTINF:-1 tvg-id="Antena1.ro" status="timeout",Antena 1
+https://rundle.deta.dev/hls/LIVE$Antena1/6.m3u8/Level(19012010)?end=END&start=LIVE
+#EXTINF:-1 tvg-id="AntenaInternational.ro" status="timeout",Antena International
+https://rundle.deta.dev/hls/LIVE$AntenaInternational/6.m3u8/Level(19012010)?end=END&start=LIVE
 #EXTINF:-1 tvg-id="AntenaSport.ro" status="timeout",AntenaSport (720p) [Not 24/7]
 https://stream1.antenaplay.ro/dfs/farasecrete5/playlist.m3u8
+#EXTINF:-1 tvg-id="AntenaStars.ro" status="timeout",Antena Stars
+https://rundle.deta.dev/hls/LIVE$AntenaStars/6.m3u8/Level(19012010)?end=END&start=LIVE
 #EXTINF:-1 tvg-id="AtomicTV.ro" status="timeout",Atomic TV (360p)
 https://atomic.streamnet.ro/atomictv.m3u8
 #EXTINF:-1 tvg-id="BucovinaTV.ro" status="online",Bucovina TV (480p)
@@ -21,10 +25,10 @@ http://89.149.30.158:1935/CorneaTV/myStream/playlist.m3u8
 http://cdn.credonet.tv:1935/ctv/smil:livecredo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Digi24.ro" status="timeout",Digi 24
 https://edge-ar.rcs-rds.ro/digi24ar/hd.m3u8
-#EXTINF:-1 tvg-id="EstTVNeamt.ro" status="online",Est TV (Neamt) (576p) [Not 24/7]
-http://89.38.8.130:39435
-#EXTINF:-1 tvg-id="EuronewsRomania.ro" status="error",Euronews Romania
-https://www.hlsrundle-stream-iptv.gq/api/hls/euronews.m3u8
+#EXTINF:-1 tvg-id="EuronewsRomania.ro" status="timeout",Euronews Romania (1080p)
+https://hls.youtb.workers.dev/channel/UCbATDExtWstHnwWELZnXNZA.m3u8
+#EXTINF:-1 tvg-id="HappyChannel.ro" status="timeout",Happy Channel
+https://rundle.deta.dev/hls/LIVE$HappyChannel/6.m3u8/Level(19012010)?end=END&start=LIVE
 #EXTINF:-1 tvg-id="IntermediaTV.ro" status="online",Intermedia TV (576p)
 http://46.4.14.12:9999/intermedia1/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalDRomania.ro" status="timeout",Kanal D Romania (360p)
@@ -81,11 +85,19 @@ https://mn-nl.mncdn.com/tvrtimisoara_new/smil:tvrtimisoara_new.smil/index.m3u8
 http://89.38.8.130:39443
 #EXTINF:-1 tvg-id="TVSE.ro" status="online",TV SE (576p) [Not 24/7]
 http://89.38.8.130:39419
-#EXTINF:-1 tvg-id="ZUTV.ro" status="error",ZU TV
-https://www.hlsrundle-stream-iptv.gq/api/hls/zutv.m3u8
+#EXTINF:-1 tvg-id="ZUTV.ro" status="timeout",ZU TV
+https://rundle.deta.dev/hls/LIVE$ZuTelevision/6.m3u8/Level(19012010)?end=END&start=LIVE
+#EXTINF:-1 tvg-id="" status="timeout",Atomic Academy TV (480p)
+https://atomic.streamnet.ro/academia.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",HD 365
 https://netstreaming.eu:8080/hls/hd365.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Info TV România (1080p)
+https://vmi347009.contaboserver.net/live/stream/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",Kapital TV (576p)
+https://testcam.go.ro:8080/hls/livestream.m3u8
 #EXTINF:-1 tvg-id="" status="online",MEDIA REGIONAL (576p)
 http://83.103.150.198:8080
 #EXTINF:-1 tvg-id="" status="timeout",Pro TV News (1080p)
 https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0
+#EXTINF:-1 tvg-id="" status="timeout",Realitatea Sportivă (720p)
+https://streamx.realitatea.net/realitatea/sportiva_md/playlist.m3u8
