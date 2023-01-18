@@ -17,7 +17,7 @@ https://ampmedia.secure.footprint.net/egress/bhandler/ampmedia/streamb/manifest.
 https://agp-nimble.streamguys1.com/AGCC/AGCC/playlist.m3u8
 #EXTINF:-1 tvg-id="AuroraTV.us" status="timeout",AuroraTV (Aurora CO) (720p)
 https://reflect-aurora.cablecast.tv/live-8/live/live.m3u8
-#EXTINF:-1 tvg-id="BHTV10.us" status="timeout",Beverly Hills Television 10 (720p)
+#EXTINF:-1 tvg-id="BHTV10.us" status="error",Beverly Hills Television 10 (720p)
 https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/beverlyhills/G0072_006/playlist.m3u8
 #EXTINF:-1 tvg-id="BHTV35.us" status="timeout",Beverly Hills Television 35 (720p)
 https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/beverlyhills/G0072_007/playlist.m3u8
@@ -245,9 +245,9 @@ https://cdn.igocast.com/channel9_hls/channel9_master.m3u8
 https://cdn.igocast.com/channel10_hls/channel10_master.m3u8
 #EXTINF:-1 tvg-id="KCKSLD12.us" status="timeout",Jewelry TV (KCKS-LD12) (480p)
 https://cdn.igocast.com/channel12_hls/channel12_master.m3u8
-#EXTINF:-1 tvg-id="KCTSDT3.us" status="timeout",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT3.us" status="error",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8865717/
-#EXTINF:-1 tvg-id="KCTSDT4.us" status="timeout",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT4.us" status="error",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8904290/
 #EXTINF:-1 tvg-id="KCWXDT1.us" status="online",myTV San Antonio TX (KCWX-TV) (720p) [Not 24/7]
 http://65.36.6.216:1935/live/kcwx.smil/playlist.m3u8
@@ -403,8 +403,6 @@ https://ch8reflector.longmontpublicmedia.org/hls/14/ch14.m3u8
 https://ch8reflector.longmontpublicmedia.org/hls/16/ch16.m3u8
 #EXTINF:-1 tvg-id="LongmontPublicMediaChannel8880.us" status="timeout",Longmont Public Media Channel (Channel 8/880) (Longmont CO) (720p)
 https://ch8reflector.longmontpublicmedia.org/hls/ch8.m3u8
-#EXTINF:-1 tvg-id="LTV.us" status="error",Largo LTV (Largo FL) (540p)
-https://securestream3.champds.com/hlssstc/LargoFLLIVE/LargoFLLIVE.m3u8
 #EXTINF:-1 tvg-id="MarinTVCommunityChannel.us" status="timeout",Marin TV Community Channel (San Rafael CA) (1080p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/8e6d110b223b4aca9dd6f7c368baec07/playlist.m3u8
 #EXTINF:-1 tvg-id="MarinTVEducationalChannel.us" status="timeout",Marin TV Educational Channel (San Rafael CA) (1080p)
@@ -415,7 +413,7 @@ https://dacastmmd.mmdlive.lldns.net/dacastmmd/ddf2a073e3da4acb9feb34bef6d58672/p
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/martin/G0074_002/playlist.m3u8
 #EXTINF:-1 tvg-id="MBTV.us" status="timeout",Miami Beach Tv (MBTV) (Miami Beach FL) (720p)
 https://edge-f.swagit.com/live/miamibeachfl/smil:hd-16x9-1-a/playlist.m3u8
-#EXTINF:-1 tvg-id="MCAETTV.us" status="error",MCAET TV (720p)
+#EXTINF:-1 tvg-id="MCAETTV.us" status="timeout",MCAET TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/mcaettv
 #EXTINF:-1 tvg-id="MCN6ArtsChannel.us" status="timeout",MCN6 Arts Channel (1080p) [Not 24/7]
 https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_COMEDY.smil/Playlist.m3u8
@@ -525,8 +523,6 @@ https://riflecmttv.secure.footprint.net/egress/bhandler/riflecmttv/streamb/manif
 https://cs.ebmcdn.net/eastbay-live-hs-1/fcps/mp4:fcps/playlist.m3u8
 #EXTINF:-1 tvg-id="RiversideTV.us" status="timeout",RiversideTV (Riverside CA) (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/riversideca/G0879_001/playlist.m3u8
-#EXTINF:-1 tvg-id="RockyHillChannel16.us" status="error",Rocky Hill Government Access Channel 16 (Rocky Hill CT) (540p)
-https://securestream3.champds.com/hlssstc/RockyHillCTLIVE/RockyHillCTLIVE.m3u8
 #EXTINF:-1 tvg-id="SCCurrents.us" status="timeout",SC Currents
 https://tvsantacruz.secure.footprint.net/egress/bhandler/tvsantacruz/streamc/playlist.m3u8
 #EXTINF:-1 tvg-id="SCVTV.us" status="timeout",SCVTV (Santa Clarita CA) (1080p)
@@ -585,7 +581,7 @@ https://templeuni.secure.footprint.net/egress/bhandler/templeuni/streama/manifes
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/bullheadcity/G0860_001/playlist.m3u8
 #EXTINF:-1 tvg-id="UALRTV.us" status="timeout",UALR TV
 https://vblive-c.viebit.com/65ea794b-dd82-41ce-8e98-a9177289a063/chunklist.m3u8
-#EXTINF:-1 tvg-id="UCTV.us" status="error",UCTV University of California (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="UCTV.us" status="timeout",UCTV University of California (720p) [Not 24/7]
 https://59e8e1c60a2b2.streamlock.net/509/509.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="VCAT.us" status="timeout",Vallejo Community Access Television (V-CAT) (Vallejo CA) (480p)
 https://vallejo.cablecast.tv/live-3/live/live.m3u8
@@ -687,7 +683,7 @@ https://edge-f.swagit.com/live/wilmingtonde/smil:std-4x3-1-a/playlist.m3u8
 http://trn03.tulix.tv/teleup-nbc-wgal-new1/playlist.m3u8
 #EXTINF:-1 tvg-id="WJACDT4.us" status="blocked",The CW Altoona PA (WJAC4) (720p)
 http://trn03.tulix.tv/teleup-cw-whp/playlist.m3u8
-#EXTINF:-1 tvg-id="WJANCD1.us" status="timeout",América TeVé (WJAN-CD1) (720p)
+#EXTINF:-1 tvg-id="WJANCD1.us" status="error",América TeVé (WJAN-CD1) (720p)
 https://uni01rtmp.tulix.tv/americateve1/americateve1/playlist.m3u8
 #EXTINF:-1 tvg-id="WJLADT1.us" status="timeout",ABC 7 Washington DC (WJLA) (720p)
 https://content.uplynk.com/40cec2bf074c40f08932da03ab4510be.m3u8
@@ -753,8 +749,6 @@ https://forerunnerrtmp.livestreamingcdn.com/output18-2/output18-2.stream/playlis
 https://2-fss-2.streamhoster.com/pl_120/amlst:203530-1426406/playlist.m3u8
 #EXTINF:-1 tvg-id="WPSUDT1.us" status="blocked",PBS (WPSU-DT1) Altoona PA (720p)
 http://trn03.tulix.tv/lnABbIUBrO/playlist.m3u8
-#EXTINF:-1 tvg-id="WPTV.us" status="error",WPTV (540p) (Westport CT)
-https://securestream3.champds.com/hlssstc/WestportCTLIVE/WestportCTLIVE.m3u8
 #EXTINF:-1 tvg-id="WPTVDT1.us" status="timeout",WPTV News West Palm Beach FL (720p)
 https://content.uplynk.com/channel/b02350ef854c4eef8358eead1f59a5cc.m3u8
 #EXTINF:-1 tvg-id="WPVIDT1.us" status="timeout",WPVI-TV News (720p)
