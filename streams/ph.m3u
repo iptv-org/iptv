@@ -1,11 +1,11 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="CCTN47.ph" status="online",CCTN 47 (1080p) [Not 24/7]
 http://122.55.252.134:8443/live/bba5b536faeacb9b56a3239f1ee8e3b3/1.m3u8
-#EXTINF:-1 tvg-id="CNNPhilippines.ph" status="timeout",CNN Philippines
+#EXTINF:-1 tvg-id="CNNPhilippines.ph" status="online",CNN Philippines
 https://streaming.cnnphilippines.com/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="DepEdTV.ph" status="blocked",DepEd TV (480p) [Geo-blocked]
 https://d3cbe0gidjd4k2.cloudfront.net/channel_7/channel7/playlist.m3u8
-#EXTINF:-1 tvg-id="INCTV.ph" status="timeout",INC TV (1080p)
+#EXTINF:-1 tvg-id="INCTV.ph" status="online",INC TV (1080p)
 https://cocphil.akamaized.net/hls/live/2042846/inctv/playlist.m3u8
 #EXTINF:-1 tvg-id="Net25.ph" status="error",NET 25 (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UC5IF8NlxMW1GkEUUqWJJBIw.m3u8
@@ -13,9 +13,27 @@ https://hls.youtb.workers.dev/channel/UC5IF8NlxMW1GkEUUqWJJBIw.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/peptv3
 #EXTINF:-1 tvg-id="PTV4.ph" status="timeout",PTV 4 (480p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCJCUbMaY593_4SN1QPG7NFQ.m3u8
-#EXTINF:-1 tvg-id="SMNI.ph" status="timeout",SMNI (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SMNI.ph" status="online",SMNI (720p)
 https://api.new.livestream.com/accounts/19079954/events/7831871/live.m3u8
 #EXTINF:-1 tvg-id="TeleRadyo.ph" status="blocked",TeleRadyo
 https://abscbn-ono.akamaized.net/midroll/amagi_hls_data_abscbnAAA-abscbn-teleradyo-oando/CDN/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Super Radyo DZBB (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",Super Radyo DZBB (720p) [Not 24/7]
 http://stream.gmanews.tv/ioslive/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="AngDatingDaan.ph" status="timeout",Ang Dating Daan
+http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCFRj7FPKTthzA_gfE2PsGJQ/live
+#EXTINF:-1 tvg-id="CLTV36.ph" status="online",CLTV 36
+https://live.cltv36.tv:5443/LiveApp/streams/live_adaptive.m3u8?token=undefined&subscriberId=undefined&subscriberCode=undefined
+#EXTINF:-1 tvg-id="DZRHNewsTV.ph" status="timeout",DZRH News TV
+http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCcTiBX8js_djhSSlmJRI99A/live
+#EXTINF:-1 tvg-id="INCRadioDZEM954.ph" status="online",INC Radio DZEM 954
+https://cocphil.akamaized.net/hls/live/2042846/incradio/playlist.m3u8
+#EXTINF:-1 tvg-id="INCTV.ph" status="online",INC TV
+https://cocphil.akamaized.net/hls/live/2042846/inctv/playlist.m3u8
+#EXTINF:-1 tvg-id="KapamilyaChannel.ph" status="online",Kapamilya Channel
+http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCstEtN0pgOmCf02EdXsGChw/live
+#EXTINF:-1 tvg-id="MyxPhilippines.ph" status="online",Myx Philippines
+https://cdn.jwplayer.com/manifests/0tEfl6ab.m3u8
+#EXTINF:-1 tvg-id="PTV.ph" status="online",PTV
+https://www.dailymotion.com/cdn/live/video/x5cr6b9.m3u8?sec=hHJINfz1SJ8zOGt_tui6Rc7ylMNko4cVs9EFqO_7JCYyZpYVCIcfqMWRmtjMXaWAHXrFzSaTs4eAjWGVuteMlA&dmTs=367390&dmV1st=22B384E72D08664BF1A479784516465D
+#EXTINF:-1 tvg-id="UNTV.ph" status="online",UNTV
+https://untv.mmdlive.lldns.net/untv/0251dac212a94932ae3563150cbb3788/untvweb.m3u8
