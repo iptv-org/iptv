@@ -7,50 +7,50 @@ jobs:
   setup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
-          node-version: '14'
+          node-version: 16
           cache: 'npm'
       - run: npm run api:load
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: data
           path: scripts/data
       - run: npm install
       - run: npm run db:create
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: database
           path: scripts/database
-      - run: npm run db:matrix
+      - run: npm run db:matrix >> $GITHUB_OUTPUT
         id: create-matrix
     outputs:
-      matrix: ${{ steps.create-matrix.outputs.matrix }}
+      matrix: ${{ steps.create-matrix.outputs.MATRIX }}
   load:
     runs-on: ubuntu-latest
     needs: setup
     continue-on-error: true
     strategy:
       fail-fast: false
-      matrix: ${{ fromJson(needs.setup.outputs.matrix) }}
+      matrix: ${{ fromJson(needs.setup.outputs.MATRIX) }}
       # matrix:
       #   cluster_id: [1]
     steps:
-      - uses: actions/checkout@v2
-      - uses: FedericoCarboni/setup-ffmpeg@v1
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: FedericoCarboni/setup-ffmpeg@v2
+      - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
-          node-version: '14'
-      - uses: actions/download-artifact@v2
+          node-version: 16
+      - uses: actions/download-artifact@v3
         with:
           name: database
           path: scripts/database
       - run: npm install
       - run: npm run cluster:load -- --cluster-id=${{ matrix.cluster_id }}
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: logs
           path: scripts/logs
@@ -58,33 +58,33 @@ jobs:
     runs-on: ubuntu-latest
     needs: load
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - run: echo "::set-output name=branch_name::$(date +'bot/auto-update-%s')"
+      - run: echo "BRANCH_NAME=$(date +'bot/auto-update-%s')" >> $GITHUB_OUTPUT
         id: create-branch-name
       - run: git config user.name 'iptv-bot[bot]'
       - run: git config user.email '84861620+iptv-bot[bot]@users.noreply.github.com'
-      - run: git checkout -b ${{ steps.create-branch-name.outputs.branch_name }}
+      - run: git checkout -b ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
-          node-version: '14'
-      - uses: actions/download-artifact@v2
+          node-version: 16
+      - uses: actions/download-artifact@v3
         with:
           name: data
           path: scripts/data
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: database
           path: scripts/database
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v3
         with:
           name: logs
           path: scripts/logs
@@ -92,13 +92,13 @@ jobs:
       - run: npm run db:update
       - run: npm run db:clear
       - run: npm run db:export
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: api
           path: .api
       - run: npm run playlist:update
       - run: npm run playlist:generate
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v3
         with:
           name: logs
           path: scripts/logs
@@ -111,7 +111,7 @@ jobs:
           git add README.md
           git commit -m "[Bot] Update README.md"
           git status
-          git push -u origin ${{ steps.create-branch-name.outputs.branch_name }}
+          git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
       - name: Deploy to gh-pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
@@ -141,7 +141,7 @@ jobs:
         id: pull-request
         with:
           github_token: ${{ steps.create-app-token.outputs.token }}
-          source_branch: ${{ steps.create-branch-name.outputs.branch_name }}
+          source_branch: ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
           destination_branch: 'master'
           pr_title: '[Bot] Daily update'
           pr_body: |
