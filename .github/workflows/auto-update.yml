@@ -24,7 +24,7 @@ jobs:
         with:
           name: database
           path: scripts/database
-      - run: npm run db:matrix >> $GITHUB_OUTPUT
+      - run: npm run db:matrix --silent >> $GITHUB_OUTPUT
         id: create-matrix
     outputs:
       matrix: ${{ steps.create-matrix.outputs.MATRIX }}
