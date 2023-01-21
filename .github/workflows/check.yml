@@ -10,17 +10,17 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 2
       - uses: tj-actions/changed-files@v22.2
         id: files
         with:
           files: streams/*.m3u
-      - uses: actions/setup-node@v2
+      - uses: actions/setup-node@v3
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
-          node-version: '14'
+          node-version: 16
           cache: 'npm'
       - name: download data from api
         if: steps.files.outputs.any_changed == 'true'
