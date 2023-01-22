@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 2
-      - uses: tj-actions/changed-files@v22.2
+      - uses: tj-actions/changed-files@v35
         id: files
         with:
           files: streams/*.m3u
