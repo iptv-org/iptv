@@ -16,6 +16,6 @@ it('can create valid matrix', () => {
     encoding: 'utf8'
   })
   expect(result).toBe(
-    '\n> db:matrix\n> node scripts/commands/database/matrix.js\n\n::set-output name=matrix::{"cluster_id":[1,3]}\n'
+    '\n> db:matrix\n> node scripts/commands/database/matrix.js\n\nMATRIX={"cluster_id":[1,3]}\n'
   )
 })
