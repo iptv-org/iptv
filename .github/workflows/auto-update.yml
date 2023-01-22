@@ -113,7 +113,7 @@ jobs:
           git status
           git push -u origin ${{ steps.create-branch-name.outputs.BRANCH_NAME }}
       - name: Deploy to gh-pages
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           branch: gh-pages
@@ -125,7 +125,7 @@ jobs:
           single-commit: true
           clean: true
       - name: Deploy to iptv-org/api
-        uses: JamesIves/github-pages-deploy-action@v4.2.5
+        uses: JamesIves/github-pages-deploy-action@v4.4.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           repository-name: iptv-org/api
