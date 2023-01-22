@@ -13,7 +13,7 @@ https://d3qhvst5vzq4y9.cloudfront.net/hls/canal21.m3u8
 https://cdn4.hostlagarto.com:8081/static/bajotechotv/playlist.m3u8
 #EXTINF:-1 tvg-id="Bellavision.do" status="timeout",Bellavisión (1080p)
 https://cdn4.hostlagarto.com:8081/static/Bellavision8hd/playlist.m3u8
-#EXTINF:-1 tvg-id="BonaoTV.do" status="timeout",Bonao TV
+#EXTINF:-1 tvg-id="BonaoTV.do" status="error",Bonao TV
 https://ss5.domint.net:3026/btv_str/bonao/playlist.m3u8
 #EXTINF:-1 tvg-id="Boreal.do" status="timeout",Boreal
 https://cdn.borealtelevision.com:3712/live/borealtelevisionhdlive.m3u8
@@ -51,9 +51,9 @@ https://ss9.domint.net:3026/ctv8_str/contanzatv/playlist.m3u8
 https://cdn4.hostlagarto.com:8081/static/cotubanamatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CromTV.do" status="timeout",CromTV
 https://cdn4.hostlagarto.com:8081/static/cromtv/playlist.m3u8
-#EXTINF:-1 tvg-id="DANTV.do" status="blocked",DAN TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="DANTV.do" status="timeout",DAN TV (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Punaltv/punaltvHD.myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="Digital15.do" status="error",Digital 15 (1080p)
+#EXTINF:-1 tvg-id="Digital15.do" status="timeout",Digital 15 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/27456795/events/10633798/player
 #EXTINF:-1 tvg-id="Digital809TV.do" status="timeout",Digital809 TV
 https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
@@ -73,7 +73,7 @@ https://vdo1.streamgato.us:3839/live/galaxiatvlive.m3u8
 https://ss2.domint.net:3200/gdm_str/gdmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="GHTelevision.do" status="timeout",GH Television
 https://tv.ghtelevision.com:3018/live/ghtelevisionlive.m3u8
-#EXTINF:-1 tvg-id="GuacaraTV.do" status="timeout",Guacara TV
+#EXTINF:-1 tvg-id="GuacaraTV.do" status="error",Guacara TV
 https://cloudflare.streamgato.us:3180/live/guacaratvlive.m3u8
 #EXTINF:-1 tvg-id="GuaymateTV.do" status="timeout",Guaymate TV (360p)
 https://5790d294af2dc.streamlock.net/8100/8100/playlist.m3u8
@@ -83,7 +83,7 @@ https://cm.hostlagarto.com:4445/Hmtv/hmtv.myStream/playlist.m3u8
 https://pop-hls.iptv-global.net/loadbalancer/hilandofino.m3u8
 #EXTINF:-1 tvg-id="Hits360TV.do" status="timeout",Hits 360 TV (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/hits360tv/hits360HD.myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="HM.do" status="blocked",HM (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="HM.do" status="timeout",HM (720p) [Geo-blocked]
 http://cm.hostlagarto.com:8081/Hmtv/hmtv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="ImagenUniversalTV.do" status="timeout",Imagen Universal TV
 https://imagenuniversaltv.net:3771/live/iutvlive.m3u8
@@ -111,7 +111,7 @@ http://190.103.183.24:1935/live/MicroHD/playlist.m3u8
 https://ss2.domint.net:3204/mitv_str/mitv/playlist.m3u8
 #EXTINF:-1 tvg-id="MorroTV.do" status="timeout",MorroTV
 https://cloudflare.streamgato.us:3044/live/morrotvlive.m3u8
-#EXTINF:-1 tvg-id="Mun2TV.do" status="error",Mun2TV (720p)
+#EXTINF:-1 tvg-id="Mun2TV.do" status="timeout",Mun2TV (720p)
 https://play.amelbasoluciones.co:3309/live/mun2tvlive.m3u8
 #EXTINF:-1 tvg-id="NaranjaTV.do" status="timeout",Naranja TV
 https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8
@@ -167,12 +167,12 @@ https://cdn4.hostlagarto.com:8081/static/telecanal12/playlist.m3u8
 http://cm.hostlagarto.com:8081/Telecanal-28/telecanal.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCaribe.do" status="timeout",Tele Caribe (1080p)
 https://cloudflare.streamgato.us:3413/live/telecaribehdlive.m3u8
-#EXTINF:-1 tvg-id="Telecentro.do" status="error",Telecentro [Not 24/7]
+#EXTINF:-1 tvg-id="Telecentro.do" status="timeout",Telecentro [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/27456795/events/10501048/live
-#EXTINF:-1 tvg-id="TeleCibaoHD.do" status="blocked",TeleCibao (720p) [Not 24/7]
-https://cm.hostlagarto.com:4445/Telecibao/Telecibao/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCibaoHD.do" status="timeout",TeleCibao (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Telecibao/Telecibao/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleCibaoHD.do" status="timeout",TeleCibao (720p) [Not 24/7]
+https://cm.hostlagarto.com:4445/Telecibao/Telecibao/playlist.m3u8
 #EXTINF:-1 tvg-id="Telecontacto.do" status="timeout",Telecontacto
 https://vdo1.streamgato.us:3578/live/telecontactohdlive.m3u8
 #EXTINF:-1 tvg-id="Telefuturo.do" status="timeout",Telefuturo Canal 23 (720p) [Not 24/7]
