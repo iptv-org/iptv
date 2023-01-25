@@ -139,8 +139,6 @@ https://5ce9406b73c33.streamlock.net/RSD/ngrp:livestream_all/playlist.m3u8
 https://stream2.xdevel.com/video1s3-7/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioZetaTV.it" status="timeout",RadioZeta (480p)
 https://unlimited1-cl.dps.live/radioztv/radioztv.smil/radioztv/livestream2/chunks.m3u8
-#EXTINF:-1 tvg-id="Rai1.it" status="blocked",Rai 1 (302p) [Geo-blocked]
-http://stream.tvtap.net:8081/live/it-rai1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai1.it" status="timeout",Rai 1 (Geo) (576p)
 http://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=2606803
 #EXTINF:-1 tvg-id="Rai1.it" status="timeout",Rai 1 (576p) [Geo-blocked]
@@ -148,18 +146,20 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
 #EXTINF:-1 tvg-id="Rai1.it" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Rai 1 (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s29/04.m3u8
-#EXTINF:-1 tvg-id="Rai2.it" status="blocked",Rai 2 (302p) [Geo-blocked]
-http://stream.tvtap.net:8081/live/it-rai2.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Rai1.it" status="error",Rai 1 (302p) [Geo-blocked]
+http://stream.tvtap.net:8081/live/it-rai1.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai2.it" status="timeout",Rai 2 (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718
-#EXTINF:-1 tvg-id="Rai3.it" status="blocked",Rai 3 (432p) [Geo-blocked]
-http://stream.tvtap.net:8081/live/it-rai3.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Rai2.it" status="error",Rai 2 (302p) [Geo-blocked]
+http://stream.tvtap.net:8081/live/it-rai2.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai3.it" status="timeout",Rai 3 (720p) [Not 24/7]
 http://wzstreaming.rai.it/TVlive/liveStream/chunklist_w823540263.m3u8
 #EXTINF:-1 tvg-id="Rai3.it" status="timeout",Rai 3 (720p) [Not 24/7]
 http://wzstreaming.rai.it/TVlive/liveStream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai3.it" status="timeout",Rai 3 (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709
+#EXTINF:-1 tvg-id="Rai3.it" status="error",Rai 3 (432p) [Geo-blocked]
+http://stream.tvtap.net:8081/live/it-rai3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai4.it" status="blocked",Rai 4 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/it-rai4.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai4.it" status="timeout",Rai 4 (576p)
@@ -226,7 +226,7 @@ https://di-yx2saj20.vo.lswcdn.net/sportitalia/smil:sisolocalcio.smil/playlist.m3
 https://stream1.aswifi.it/stereo5/live/index.m3u8
 #EXTINF:-1 tvg-id="SuperJTVTeramo.it" status="timeout",Super J TV (720p)
 https://54627d4fc5996.streamlock.net/SuperJtv/SuperJtv/playlist.m3u8
-#EXTINF:-1 tvg-id="SuperJTVTeramo.it" status="error",Super J TV Teramo (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SuperJTVTeramo.it" status="timeout",Super J TV Teramo (720p) [Not 24/7]
 http://uk4.streamingpulse.com:1935/SuperJtv/SuperJtv/playlist.m3u8
 #EXTINF:-1 tvg-id="SuperSix.it" status="timeout",SuperSix Lombardia (720p)
 https://5db313b643fd8.streamlock.net/SUPERSIXLombardia/SUPERSIXLombardia/playlist.m3u8
@@ -312,7 +312,7 @@ http://wms.shared.streamshow.it/veratv/veratv/playlist.m3u8
 http://livestreaming.videolina.it/live/Videolina/playlist.m3u8
 #EXTINF:-1 tvg-id="VideoRola.it" status="blocked",Video Rola (1080p)
 https://d3b2epqdk0p7vd.cloudfront.net/out/v1/8a448b5e16384af4a3c8146a7b049c32/index.m3u8
-#EXTINF:-1 tvg-id="VirginRadioTV.it" status="blocked",Virgin Radio TV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="VirginRadioTV.it" status="error",Virgin Radio TV (576p) [Not 24/7]
 https://live2-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(ew)/index.m3u8
 #EXTINF:-1 tvg-id="VisualRadio.it" status="timeout",Visual Radio (576p) [Not 24/7]
 http://wms.shared.streamshow.it:1935/visualradio/visualradio/live.m3u8
