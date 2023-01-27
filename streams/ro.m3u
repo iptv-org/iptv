@@ -19,6 +19,8 @@ https://rundle.deta.dev/hls/LIVE$AntenaStars/6.m3u8/Level(19012010)?end=END&star
 https://atomic.streamnet.ro/atomictv.m3u8
 #EXTINF:-1 tvg-id="BucovinaTV.ro" status="online",Bucovina TV (480p)
 http://46.4.14.12:9999/btvsvlive/playlist.m3u8
+#EXTINF:-1 tvg-id="Cinemaraton.ro" status="online",Cinemaraton
+https://rundle.deta.dev/hls/LIVE$CineMaraton/6.m3u8/Level(19012010)?start=LIVE&end=END
 #EXTINF:-1 tvg-id="CorneaTV.ro" status="timeout",Cornea TV (720p) [Not 24/7]
 http://89.149.30.158:1935/CorneaTV/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="CredoTV.ro" status="timeout",Credo TV (720p) [Not 24/7]
@@ -35,16 +37,19 @@ http://46.4.14.12:9999/intermedia1/playlist.m3u8
 https://stream1.kanald.ro/iphone/knd-live.m3u8
 #EXTINF:-1 tvg-id="LightChannel.ro" status="timeout",Light Channel (480p) [Not 24/7]
 http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
-#EXTINF:-1 tvg-id="MoozDance.ro" status="timeout",MoozDance (576p)
-#EXTVLCOPT:http-referrer=https://mooz.tv/
+#EXTINF:-1 tvg-id="MoozDance.ro" status="",MoozDance (576p)
+#EXTVLCOPT:http-referrer=https://mooz.tv/live-ro/#MoozDance
 https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8
-#EXTINF:-1 tvg-id="MoozHits.ro" status="timeout",MoozHits (576p)
-#EXTVLCOPT:http-referrer=https://mooz.tv/
+#EXTINF:-1 tvg-id="MoozDance.ro" status="",MoozDance (576p)
+https://rundle.deta.dev/hls/LIVE$MoozDance/6.m3u8/Level(19012010)?start=LIVE&end=END
+#EXTINF:-1 tvg-id="MoozHits.ro" status="",MoozHits (576p)
+#EXTVLCOPT:http-referrer=https://mooz.tv/live-ro/#MoozHits
 https://rtmp.digitalbroadcast.ro/moozhits/moozhits.m3u8
-#EXTINF:-1 tvg-id="MoozRo.ro" status="blocked",MoozRo (576p)
+#EXTINF:-1 tvg-id="MoozRo.ro" status="",MoozRo (576p)
+#EXTVLCOPT:http-referrer=https://mooz.tv/live-ro/#MoozRo
 https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8
-#EXTINF:-1 tvg-id="MoozRo.ro" status="error",MoozRo (576p)
-https://www.hlsrundle-stream-iptv.gq/api/hls/moozro.m3u8
+#EXTINF:-1 tvg-id="MoozRo.ro" status="",MoozRo (576p)
+https://rundle.deta.dev/hls/LIVE$MoozRo/6.m3u8/Level(19012010)?start=LIVE&end=END
 #EXTINF:-1 tvg-id="NasulTV.ro" status="timeout",Naşul TV (720p) [Not 24/7]
 https://5ab29cc78f681.streamlock.net/NasulTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="NovaTVBrasov.ro" status="timeout",Nova TV Brasov (576p) [Not 24/7]
@@ -55,14 +60,18 @@ https://stream1.1616.ro:1945/prima/livestream/playlist.m3u8
 https://stream1.1616.ro:1945/profit/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ProfitTV.ro" status="timeout",Profit.ro (404p) [Not 24/7]
 https://stream1.profit.ro:1945/profit/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="ProTV.ro" status="error",Pro TV (1080p)
-https://www.hlsrundle-stream-iptv.gq/api/hls/protv.m3u8
+#EXTINF:-1 tvg-id="ProTV.ro" status="online",Pro TV (1080p)
+https://rundle.deta.dev/hls/LIVE$PROTV.ro/6.m3u8/Level(19012010)?start=LIVE&end=END
 #EXTINF:-1 tvg-id="RapsodiaTV.ro" status="online",Rapsodia TV
 http://92.86.248.141:8080/ram/playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaTV.ro" status="timeout",Realitatea FM (Studio) (576p) [Not 24/7]
 https://live.realitatea.net/livertmp/plus/playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaTV.ro" status="timeout",Realitatea Plus (720p)
 https://edge.realitatea.net/realitatea/plus_fq/playlist.m3u8
+#EXTINF:-1 tvg-id="RealitateaStar.ro" status="timeout",Realitatea Star (720p)
+https://streamx.realitatea.net/realitatea/star_md/playlist.m3u8
+#EXTINF:-1 tvg-id="RealitateaSportiva.ro" status="timeout",Realitatea Sportivă (720p)
+https://streamx.realitatea.net/realitatea/sportiva_md/playlist.m3u8
 #EXTINF:-1 tvg-id="RomaniaTV.ro" status="blocked",Romania TV (576p)
 https://livestream.romaniatv.net/clients/romaniatv/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPlusSuceava.ro" status="online",TVPlus Suceava (576p)
@@ -99,5 +108,4 @@ https://testcam.go.ro:8080/hls/livestream.m3u8
 http://83.103.150.198:8080
 #EXTINF:-1 tvg-id="" status="timeout",Pro TV News (1080p)
 https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0
-#EXTINF:-1 tvg-id="" status="timeout",Realitatea Sportivă (720p)
-https://streamx.realitatea.net/realitatea/sportiva_md/playlist.m3u8
+
