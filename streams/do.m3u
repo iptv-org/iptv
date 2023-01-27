@@ -53,7 +53,7 @@ https://cdn4.hostlagarto.com:8081/static/cotubanamatv/playlist.m3u8
 https://cdn4.hostlagarto.com:8081/static/cromtv/playlist.m3u8
 #EXTINF:-1 tvg-id="DANTV.do" status="timeout",DAN TV (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Punaltv/punaltvHD.myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="Digital15.do" status="timeout",Digital 15 (1080p)
+#EXTINF:-1 tvg-id="Digital15.do" status="error",Digital 15 (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/27456795/events/10633798/player
 #EXTINF:-1 tvg-id="Digital809TV.do" status="timeout",Digital809 TV
 https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
@@ -95,15 +95,15 @@ https://ss8.domint.net:3108/mia_str/lamiatv/playlist.m3u8
 https://uni01rtmp.tulix.tv/playout2multi9/lavozdemaria.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="LinierosTV.do" status="timeout",Linieros TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://twitch.tv/linierostv
-#EXTINF:-1 tvg-id="LocomotionTV.do" status="online",Locomotion TV
+#EXTINF:-1 tvg-id="LocomotionTV.do" status="error",Locomotion TV
 http://51.222.85.85:81/hls/loco/index.m3u8
 #EXTINF:-1 tvg-id="LunaTVCanal53.do" status="timeout",Luna TV Canal 53
 https://ss2.domint.net:3228/luna_str/lunatv/playlist.m3u8
 #EXTINF:-1 tvg-id="MakaoTV.do" status="timeout",Makao TV
 https://live.obslivestream.com/makaomux/tracks-v2a1/playlist.m3u8
-#EXTINF:-1 tvg-id="MegaVisionTV.do" status="error",Megavisión
+#EXTINF:-1 tvg-id="MegaVisionTV.do" status="timeout",Megavisión
 http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
-#EXTINF:-1 tvg-id="MegaVisionTV.do" status="error",Megavision Canal 43 (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="MegaVisionTV.do" status="timeout",Megavision Canal 43 (480p) [Not 24/7]
 http://stream3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 #EXTINF:-1 tvg-id="Microvision10.do" status="online",Microvision 10 (720p) [Not 24/7]
 http://190.103.183.24:1935/live/MicroHD/playlist.m3u8
@@ -113,13 +113,13 @@ https://ss2.domint.net:3204/mitv_str/mitv/playlist.m3u8
 https://cloudflare.streamgato.us:3044/live/morrotvlive.m3u8
 #EXTINF:-1 tvg-id="Mun2TV.do" status="error",Mun2TV (720p)
 https://play.amelbasoluciones.co:3309/live/mun2tvlive.m3u8
-#EXTINF:-1 tvg-id="NaranjaTV.do" status="error",Naranja TV
+#EXTINF:-1 tvg-id="NaranjaTV.do" status="timeout",Naranja TV
 https://cdn.streamingcpanel.com:3526/live/teleraiceslive.m3u8
 #EXTINF:-1 tvg-id="NexxoTV.do" status="timeout",Nexxo TV [Not 24/7]
 https://cdn3.streamgato.us:3938/live/nexxotvlive.m3u8
 #EXTINF:-1 tvg-id="NitidaTV.do" status="timeout",Nítida TV
 https://live.teledomdr.com:3131/live/nitidatvlive.m3u8
-#EXTINF:-1 tvg-id="ORBITTV.do" status="timeout",ORBIT TV (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="ORBITTV.do" status="blocked",ORBIT TV (480p) [Geo-blocked]
 https://ss3.domint.net:3134/otv_str/orbittv/playlist.m3u8
 #EXTINF:-1 tvg-id="PeraviaVision.do" status="timeout",Peravía Visión
 https://ss5.domint.net:3048/pvv_str/peravia/playlist.m3u8
@@ -169,9 +169,9 @@ http://cm.hostlagarto.com:8081/Telecanal-28/telecanal.myStream/playlist.m3u8
 https://cloudflare.streamgato.us:3413/live/telecaribehdlive.m3u8
 #EXTINF:-1 tvg-id="Telecentro.do" status="timeout",Telecentro [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/27456795/events/10501048/live
-#EXTINF:-1 tvg-id="TeleCibaoHD.do" status="timeout",TeleCibao (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleCibaoHD.do" status="blocked",TeleCibao (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Telecibao/Telecibao/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleCibaoHD.do" status="timeout",TeleCibao (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleCibaoHD.do" status="blocked",TeleCibao (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/Telecibao/Telecibao/playlist.m3u8
 #EXTINF:-1 tvg-id="Telecontacto.do" status="timeout",Telecontacto
 https://vdo1.streamgato.us:3578/live/telecontactohdlive.m3u8
@@ -205,11 +205,11 @@ https://cdn4.hostlagarto.com:8081/static/teletur/playlist.m3u8
 http://server3.prostudionetwork.com:1945/teleunion/TU/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleuniverso.do" status="timeout",Teleuniverso
 https://teleuniversotv.streamgato.us:3110/live/teleuniversotvlive.m3u8
-#EXTINF:-1 tvg-id="Telever.do" status="error",Telever (1080p)
+#EXTINF:-1 tvg-id="Telever.do" status="timeout",Telever (1080p)
 https://megastreamm.com:3484/live/televerlive.m3u8
 #EXTINF:-1 tvg-id="Televida.do" status="timeout",Televida [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/televidaenvivo
-#EXTINF:-1 tvg-id="TelevisionA1.do" status="timeout",Televisión A1 [Not 24/7]
+#EXTINF:-1 tvg-id="TelevisionA1.do" status="error",Televisión A1 [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/1a1_live
 #EXTINF:-1 tvg-id="TelevisiondelEste.do" status="timeout",Televisión del Este (720p)
 http://cm.hostlagarto.com:8081/ESTV/estv.myStream/playlist.m3u8?fluxustv.m3u8=
@@ -239,15 +239,15 @@ https://ss9.domint.net:3032/tvp_str/tvp2111/playlist.m3u8
 http://cm.hostlagarto.com:8081/Tvstv/TvstvHD.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="UrbancristTV.do" status="timeout",Urbancrist TV (720p)
 https://5790d294af2dc.streamlock.net/8160/8160/playlist.m3u8
-#EXTINF:-1 tvg-id="Vallevision.do" status="online",Vallevision (720p) [Not 24/7]
-http://190.103.183.24:1935/Vallevision/ValleHD/playlist.m3u8
 #EXTINF:-1 tvg-id="Vallevision.do" status="timeout",Vallevision Canal 10 (720p) [Not 24/7]
 https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8
+#EXTINF:-1 tvg-id="Vallevision.do" status="error",Vallevision (720p) [Not 24/7]
+http://190.103.183.24:1935/Vallevision/ValleHD/playlist.m3u8
 #EXTINF:-1 tvg-id="VegavisionCanal18.do" status="timeout",Vegavisión Canal 18 (720p)
 https://cdn4.hostlagarto.com:8081/static/canal18hd/playlist.m3u8
 #EXTINF:-1 tvg-id="Yunavision.do" status="timeout",Yunavisión
 https://ss9.domint.net:3036/yv_str/yunavision/playlist.m3u8
-#EXTINF:-1 tvg-id="Zol106.do" status="timeout",Zol106 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Zol106.do" status="error",Zol106 (720p) [Not 24/7]
 https://ss3.domint.net:3108/zol_str/vzol/playlist.m3u8
 #EXTINF:-1 tvg-id="ZTV.do" status="timeout",ZTV (720p) [Not 24/7]
 https://lb00zdigital.streamprolive.com/mnt/hls/live.m3u8
