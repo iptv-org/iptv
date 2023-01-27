@@ -90,18 +90,18 @@ https://broadcasttr.com:446/manisaetv/bant1/playlist.m3u8
 http://live.arkumedia.com:1935/finansturktv/finansturktv/playlist.m3u8
 #EXTINF:-1 tvg-id="FoxTurkey.tr" status="timeout",Fox Türkiye (720p)
 https://foxtv.blutv.com/blutv_foxtv_live/live.m3u8
-#EXTINF:-1 tvg-id="GRT.tr" status="timeout",GRT Gaziantep (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="GRT.tr" status="blocked",GRT Gaziantep (720p) [Geo-blocked]
 http://yerelmedya.tv:1935/grt/_definst_/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="GRT.tr" status="timeout",GRT (720p)
 https://waw2.artiyerelmedya.net/grt/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="GSTV.tr" status="blocked",GSTV [Geo-blocked]
 https://owifavo5.rocketcdn.com/gstv/gstv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="timeout",Guney TV Tarsus (270p)
-http://stream2.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="timeout",Tarsus Güney TV (270p)
-http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="timeout",Guney TV Tarsus (270p)
 https://waw1.artiyerelmedya.net/guneytv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="error",Guney TV Tarsus (270p)
+http://stream2.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
+#EXTINF:-1 tvg-id="GuneyTVTarsus.tr" status="error",Tarsus Güney TV (270p)
+http://stream.taksimbilisim.com:1935/tarsusguneytv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Haber61TV.tr" status="timeout",Haber61 TV (720p) [Not 24/7]
 https://cdn-haber61tv.yayin.com.tr/haber61tv/smil:haber61tv.smil/index.m3u8
 #EXTINF:-1 tvg-id="Haber61TV.tr" status="timeout",Haber61 TV (720p) [Not 24/7]
@@ -138,9 +138,9 @@ https://waw2.artiyerelmedya.net/kanal23/bant1/playlist.m3u8
 https://waw2.artiyerelmedya.net/kanal26/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal32.tr" status="timeout",Kanal 32 (480p) [Not 24/7]
 https://edge1.socialsmart.tv/kanal32/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Kanal33.tr" status="timeout",Kanal 33 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal33.tr" status="error",Kanal 33 (720p) [Not 24/7]
 http://stream.taksimbilisim.com:1935/kanal33/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="Kanal33.tr" status="timeout",Kanal 33 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kanal33.tr" status="error",Kanal 33 (720p) [Not 24/7]
 https://broadcasttr.com:446/kanal33/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal34.tr" status="timeout",Kanal 34 (720p) [Not 24/7]
 http://live.arkumedia.com:1935/kanal34tv/kanal34tv/playlist.m3u8
@@ -235,7 +235,7 @@ https://tv.ensonhaber.com/tv/tr/tgrtbelgesel/index.m3u8
 https://tv.ensonhaber.com/tv/tr/tgrteu/index.m3u8
 #EXTINF:-1 tvg-id="TGRTHaber.tr" status="timeout",TGRT Haber (360p) [Not 24/7]
 https://b01c02nl.mediatriple.net/videoonlylive/mtsxxkzwwuqtglive/broadcast_5fe4598be8e5d.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TonTV.tr" status="error",Ton TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TonTV.tr" status="timeout",Ton TV (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/tontv/bant1/chunks.m3u8
 #EXTINF:-1 tvg-id="ToprakTV.tr" status="timeout",Toprak TV (720p) [Not 24/7]
 https://59cba4d34b678.streamlock.net/canlitv/topraktv/playlist.m3u8
