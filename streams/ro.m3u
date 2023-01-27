@@ -25,7 +25,7 @@ http://89.149.30.158:1935/CorneaTV/myStream/playlist.m3u8
 http://cdn.credonet.tv:1935/ctv/smil:livecredo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Digi24.ro" status="timeout",Digi 24
 https://edge-ar.rcs-rds.ro/digi24ar/hd.m3u8
-#EXTINF:-1 tvg-id="EuronewsRomania.ro" status="timeout",Euronews Romania (1080p)
+#EXTINF:-1 tvg-id="EuronewsRomania.ro" status="error",Euronews Romania (1080p)
 https://hls.youtb.workers.dev/channel/UCbATDExtWstHnwWELZnXNZA.m3u8
 #EXTINF:-1 tvg-id="HappyChannel.ro" status="timeout",Happy Channel
 https://rundle.deta.dev/hls/LIVE$HappyChannel/6.m3u8/Level(19012010)?end=END&start=LIVE
@@ -33,7 +33,7 @@ https://rundle.deta.dev/hls/LIVE$HappyChannel/6.m3u8/Level(19012010)?end=END&sta
 http://46.4.14.12:9999/intermedia1/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalDRomania.ro" status="timeout",Kanal D Romania (360p)
 https://stream1.kanald.ro/iphone/knd-live.m3u8
-#EXTINF:-1 tvg-id="LightChannel.ro" status="timeout",Light Channel (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="LightChannel.ro" status="error",Light Channel (480p) [Not 24/7]
 http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
 #EXTINF:-1 tvg-id="MoozDance.ro" status="timeout",MoozDance (576p)
 #EXTVLCOPT:http-referrer=https://mooz.tv/
@@ -43,8 +43,6 @@ https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8
 https://rtmp.digitalbroadcast.ro/moozhits/moozhits.m3u8
 #EXTINF:-1 tvg-id="MoozRo.ro" status="blocked",MoozRo (576p)
 https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8
-#EXTINF:-1 tvg-id="MoozRo.ro" status="error",MoozRo (576p)
-https://www.hlsrundle-stream-iptv.gq/api/hls/moozro.m3u8
 #EXTINF:-1 tvg-id="NasulTV.ro" status="timeout",Naşul TV (720p) [Not 24/7]
 https://5ab29cc78f681.streamlock.net/NasulTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="NovaTVBrasov.ro" status="timeout",Nova TV Brasov (576p) [Not 24/7]
@@ -55,8 +53,6 @@ https://stream1.1616.ro:1945/prima/livestream/playlist.m3u8
 https://stream1.1616.ro:1945/profit/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ProfitTV.ro" status="timeout",Profit.ro (404p) [Not 24/7]
 https://stream1.profit.ro:1945/profit/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="ProTV.ro" status="error",Pro TV (1080p)
-https://www.hlsrundle-stream-iptv.gq/api/hls/protv.m3u8
 #EXTINF:-1 tvg-id="RapsodiaTV.ro" status="online",Rapsodia TV
 http://92.86.248.141:8080/ram/playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaTV.ro" status="timeout",Realitatea FM (Studio) (576p) [Not 24/7]
