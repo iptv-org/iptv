@@ -1,11 +1,11 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AccessHumboldt.us" status="timeout",Access Humboldt (1080p)
+#EXTINF:-1 tvg-id="AccessHumboldt.us" status="blocked",Access Humboldt (1080p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/66dfbe35ca1a418c87e3cf18ca46bd57/index.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel17.us" status="timeout",Access Sacramento Channel 17
 https://reflect-access-sacramento.cablecast.tv/live-7/live/live.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel18.us" status="timeout",Access Sacramento Channel 18
 https://reflect-access-sacramento.cablecast.tv/live-8/live/live.m3u8
-#EXTINF:-1 tvg-id="AccessSarasota.us" status="timeout",Access Sarasota (Sarasota County FL) (1080p)
+#EXTINF:-1 tvg-id="AccessSarasota.us" status="error",Access Sarasota (Sarasota County FL) (1080p)
 https://hls.youtb.workers.dev/channel/UCqHDwKPPOhzLmtb4TvwIZZQ.m3u8
 #EXTINF:-1 tvg-id="AccessTuolumne.us" status="timeout",Access Tuolumne (Tuolumne County CA) (720p)
 https://reflect-tuolumne.cablecast.tv/live-3/live/live.m3u8
@@ -61,7 +61,7 @@ https://reflect-cityofloveland-co.cablecast.tv/live-3/live/live.m3u8
 https://cdn3.wowza.com/5/M0lyamVmM2JWcjhQ/pompano/G0765_005/playlist.m3u8
 #EXTINF:-1 tvg-id="CityofTracyChannel26.us" status="timeout",Tracy Education and Governmental Access Channel (Tracy CA) (720p)
 https://cdn3.wowza.com/5/M0lyamVmM2JWcjhQ/tracy-ca/G0950_002/playlist.m3u8
-#EXTINF:-1 tvg-id="CityofVacavilleChannel26.us" status="error",Vacaville Channel 26 (Vacaville CA) (720p)
+#EXTINF:-1 tvg-id="CityofVacavilleChannel26.us" status="timeout",Vacaville Channel 26 (Vacaville CA) (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/vacaville/G0228_002/playlist.m3u8
 #EXTINF:-1 tvg-id="CityTV20SantaMonica.us" status="timeout",Santa Monica City TV 20 (Santa Monica CA) (360p) [Not 24/7]
 http://cdn3.wowza.com/5/bGZUOHp2TnhudnM2/santamonica/G0039_002/playlist.m3u8
@@ -179,8 +179,6 @@ https://reflect-gtv6-glendale.cablecast.tv/live-2/live/live.m3u8
 https://lin12.isilive.ca/live/greensboro/GTN/index.m3u8
 #EXTINF:-1 tvg-id="GTV.us" status="timeout",St. Johns County Government GTV (St. Johns County FL) (720p)
 https://edge-f.swagit.com/live/stjohnscountyfl/live-1-a/playlist.m3u8
-#EXTINF:-1 tvg-id="GVTV881.us" status="error",GVTV 881 (Greenwood Village CO) (1080p)
-https://reflect-greenwood.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-id="HBTV.us" status="timeout",Huntington Beach TV Channel 3 (720p)
 https://cdn3.wowza.com/5/M0lyamVmM2JWcjhQ/huntingtonbeach/G0088_005/playlist.m3u8
 #EXTINF:-1 tvg-id="HillsboroughTV.us" status="timeout",Hillsborough County TV HTV (Hillsborough County FL) (360p)
@@ -243,9 +241,9 @@ https://cdn.igocast.com/channel9_hls/channel9_master.m3u8
 https://cdn.igocast.com/channel10_hls/channel10_master.m3u8
 #EXTINF:-1 tvg-id="KCKSLD12.us" status="timeout",Jewelry TV (KCKS-LD12) (480p)
 https://cdn.igocast.com/channel12_hls/channel12_master.m3u8
-#EXTINF:-1 tvg-id="KCTSDT3.us" status="timeout",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT3.us" status="error",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8865717/
-#EXTINF:-1 tvg-id="KCTSDT4.us" status="timeout",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT4.us" status="error",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8904290/
 #EXTINF:-1 tvg-id="KCWXDT1.us" status="online",myTV San Antonio TX (KCWX-TV) (720p) [Not 24/7]
 http://65.36.6.216:1935/live/kcwx.smil/playlist.m3u8
@@ -291,10 +289,10 @@ https://content.uplynk.com/channel/64ca339f04964a5e961c3207a7771bf1.m3u8
 https://content.uplynk.com/4a09fbea28ef4f32bce095e9eae04bd8.m3u8
 #EXTINF:-1 tvg-id="KMTVDT1.us" status="timeout",CBS 3 Omaha NE (KMTV-TV) (720p)
 https://content.uplynk.com/channel/328d1434fb51476cb6567c74d5b2cc70.m3u8
+#EXTINF:-1 tvg-id="KNETCD1.us" status="timeout",EMT Media TV Los Angeles CA
+https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNETCD1.us" status="timeout",EMT Media TV Los Angeles CA [Geo-blocked]
 https://mediaplatform.streamingmediahosting.com/p/14135/sp/1413500/playManifest/entryId/0_lkq7fay8/format/applehttp/protocol/https/uiConfId/6710347/a.m3u8
-#EXTINF:-1 tvg-id="KNETCD1.us" status="error",EMT Media TV Los Angeles CA
-https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="timeout",NOTV (720p)
 http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="timeout",NOTV (720p)
@@ -411,7 +409,7 @@ https://dacastmmd.mmdlive.lldns.net/dacastmmd/ddf2a073e3da4acb9feb34bef6d58672/p
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/martin/G0074_002/playlist.m3u8
 #EXTINF:-1 tvg-id="MBTV.us" status="timeout",Miami Beach Tv (MBTV) (Miami Beach FL) (720p)
 https://edge-f.swagit.com/live/miamibeachfl/smil:hd-16x9-1-a/playlist.m3u8
-#EXTINF:-1 tvg-id="MCAETTV.us" status="error",MCAET TV (720p)
+#EXTINF:-1 tvg-id="MCAETTV.us" status="timeout",MCAET TV (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/mcaettv
 #EXTINF:-1 tvg-id="MCN6ArtsChannel.us" status="timeout",MCN6 Arts Channel (1080p) [Not 24/7]
 https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_COMEDY.smil/Playlist.m3u8
@@ -473,7 +471,7 @@ https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/olelo/G0125_009/playlist.m3u8
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/olelo/G0125_011/playlist.m3u8
 #EXTINF:-1 tvg-id="Olelo54.us" status="timeout",Olelo Community Media Channel 54 (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/olelo/G0125_012/playlist.m3u8
-#EXTINF:-1 tvg-id="Olelo55.us" status="timeout",Olelo Community Media Channel 55 (720p)
+#EXTINF:-1 tvg-id="Olelo55.us" status="error",Olelo Community Media Channel 55 (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/olelo/G0125_013/playlist.m3u8
 #EXTINF:-1 tvg-id="OntarioPublicAccessChannel.us" status="timeout",Ontario Public Access Channel (360p)
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/ontarioca/G2446_002/playlist.m3u8
