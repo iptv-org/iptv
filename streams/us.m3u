@@ -99,7 +99,7 @@ http://209.91.213.10:8088/play/a013
 https://bcovlive-a.akamaihd.net/bdbdca51c15243fbaca92fd54c42d45a/us-east-1/6245817279001/playlist.m3u8
 #EXTINF:-1 tvg-id="AmericanHorrors.us" status="online",American Horrors (480p)
 http://170.178.189.66:1935/live/Stream1/playlist.m3u8
-#EXTINF:-1 tvg-id="AmericasAuctionChannel.us" status="timeout",AACTV America's Auction Channel (1080p)
+#EXTINF:-1 tvg-id="AmericasAuctionChannel.us" status="error",AACTV America's Auction Channel (1080p)
 https://hls.youtb.workers.dev/channel/UCMeyWH1vyb1TT6Vimp4MqLA.m3u8
 #EXTINF:-1 tvg-id="AmericasVoice.us" status="timeout",America's Voice (720p)
 https://content.uplynk.com/channel/26bd482ffe364a1282bc3df28bd3c21f.m3u8
@@ -270,7 +270,7 @@ https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_2_
 https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_3_1464000.m3u8
 #EXTINF:-1 tvg-id="CNN.us" status="timeout",CNN USA (360p)
 https://tve-live-lln.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_4_1064000.m3u8
-#EXTINF:-1 tvg-id="CNNBrasil.br" status="timeout",CNN Brasil (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="CNNBrasil.br" status="error",CNN Brasil (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCvdwhh_fDyWccR42-rReZLw.m3u8
 #EXTINF:-1 tvg-id="CNNChile.cl" status="timeout",CNN Chile (720p)
 https://unlimited1-cl-movistar.dps.live/cnn/cnn.smil/playlist.m3u8
@@ -462,7 +462,7 @@ https://1111296894.rsc.cdn77.org/LS-ATL-56868-1/mono.m3u8
 https://a.jsrdn.com/broadcast/529a360c04/+0000/c.m3u8
 #EXTINF:-1 tvg-id="IFCEast.us" status="timeout",IFC East (720p)
 https://bcovlive-a.akamaihd.net/045bd3b615254da880c3db79b2e42fd0/us-east-1/6240731308001/playlist.m3u8
-#EXTINF:-1 tvg-id="IndTVUSA.us" status="timeout",Ind TV USA (720p)
+#EXTINF:-1 tvg-id="IndTVUSA.us" status="error",Ind TV USA (720p)
 https://indtv.secure.footprint.net/egress/bhandler/indtv/streama/playlist.m3u8
 #EXTINF:-1 tvg-id="InfoWars.us" status="timeout",InfoWars (720p)
 http://wpc.9ec1.edgecastcdn.net/249EC1/infowarshd-edgecast/hd720.m3u8
@@ -488,6 +488,8 @@ https://cdn3.wowza.com/1/R3ZYNjNvdGVoaDFZ/Q3pENnlF/hls/live/playlist.m3u8
 https://jlt2104.cdn.nextologies.com/ebaed9568f2b8e61/ffaaf4b7e1d0e7a8/ea5f88d4e7c252b2/056b5eafae61b1e6/playlist.m3u8
 #EXTINF:-1 tvg-id="JohnnyCarsonTV.us" status="timeout",Johnny Carson TV (432p)
 https://johnnycarson-zype.amagi.tv/playlistR432p.m3u8
+#EXTINF:-1 tvg-id="Journy.us" status="timeout",Journy (720p)
+https://linear-291.frequency.stream/dist/ovationtv/291/hls/master/playlist.m3u8?ads.did=REPLACE&ads.ifa=REPLACE&ads.us_privacy=REPLACE
 #EXTINF:-1 tvg-id="JuventudRenovadaenelEspirituSanto.us" status="timeout",Juventud Renovada en el Espiritu Santo (720p) [Not 24/7]
 http://teleredmcp.com:1935/jrestv/jrestv/playlist.m3u8
 #EXTINF:-1 tvg-id="LaoThaiTV.us" status="timeout",Lao-Thai TV (720p)
@@ -540,7 +542,7 @@ https://feed.play.mv/live/10005200/niZoVrR2vD/master.m3u8
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/1c94dc9f1c08487a97995571800b9667/index.m3u8
 #EXTINF:-1 tvg-id="MiamiTV.us" status="timeout",Miami TV (720p)
 https://59ec5453559f0.streamlock.net/miamitv/smil:miamitv/playlist.m3u8
-#EXTINF:-1 tvg-id="MiamiTVLatino.us" status="timeout",Miami TV Latino (1080p)
+#EXTINF:-1 tvg-id="MiamiTVLatino.us" status="error",Miami TV Latino (1080p)
 https://5ee7c2b857b7f.streamlock.net/latino/latino/playlist.m3u8
 #EXTINF:-1 tvg-id="MiamiTVMexico.us" status="timeout",Miami TV México (720p) [Not 24/7]
 https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexicoROKU/playlist.m3u8
@@ -558,7 +560,7 @@ http://media.mohabat.tv:1935/live_transcoder/ngrp:mohabat.stream_all/playlist.m3
 https://a.jsrdn.com/broadcast/0c9a09c94c/+0000/c.m3u8
 #EXTINF:-1 tvg-id="MovieKingdom.us" status="timeout",Movie Kingdom (720p)
 https://a.jsrdn.com/broadcast/e9b4093a41/+0000/c.m3u8
-#EXTINF:-1 tvg-id="NASATV.us" status="timeout",NASA TV (720p)
+#EXTINF:-1 tvg-id="NASATV.us" status="blocked",NASA TV (720p)
 http://iphone-streaming.ustream.tv/uhls/6540154/streams/live/iphone/playlist.m3u8
 #EXTINF:-1 tvg-id="NASATV.us" status="timeout",NASA TV (720p) [Not 24/7]
 https://hls.ums.ustream.tv/playlist/directhls/channel/6540154/playlist.m3u8?sgn=31d0dfb847c358d4cedcd2256dc4e1c42a7f13a7
@@ -588,7 +590,7 @@ https://d3ra88okaj5j4j.cloudfront.net/out/v1/e3e6e29095844c4ba7d887f01e44a5ef/in
 https://content.uplynk.com/channel/1f93c13275024afb9e0ead299624073d.m3u8
 #EXTINF:-1 tvg-id="Newsy.us" status="timeout",Newsy (720p)
 https://content.uplynk.com/channel/4bb4901b934c4e029fd4c1abfc766c37.m3u8
-#EXTINF:-1 tvg-id="NewsyTopStories.us" status="timeout",Newsy Top Stories (720p)
+#EXTINF:-1 tvg-id="NewsyTopStories.us" status="error",Newsy Top Stories (720p)
 https://content.uplynk.com/channel/387c33ce09da4de699668c0c7d1244a8.m3u8
 #EXTINF:-1 tvg-id="NickelodeonAustralia.au" status="timeout",Nickelodeon Australia (576p)
 http://c0.cdn.trinity-tv.net/stream/7tsewn83ddjifz69us9je7eftbm5nuausb4dsvz9g5aydin9672n734qbb9jgcfpiqtpwudvs9dpi2udjc3eh4h462eie5azjmfbfgfjeqfuhjmmgx9zuj736ijg7nffhf8rviq5svkgxbp639y9nfgc.m3u8
@@ -729,7 +731,7 @@ https://playout4multirtmp.tulix.tv/live6/Stream1/playlist.m3u8
 https://a.jsrdn.com/broadcast/fabeab4b08/+0000/c.m3u8
 #EXTINF:-1 tvg-id="StartTV.us" status="blocked",Start TV
 https://16live00.akamaized.net/START_TV/index.m3u8
-#EXTINF:-1 tvg-id="StockChartsTV.us" status="error",StockCharts TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="StockChartsTV.us" status="timeout",StockCharts TV (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/19628359/events/7940975/player
 #EXTINF:-1 tvg-id="StocktonGovTV.us" status="timeout",Stockton GovTV (Stockton CA) (720p)
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/stockton/G0044_008/playlist.m3u8
