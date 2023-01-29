@@ -17,7 +17,7 @@ https://d3bgcstab9qhdz.cloudfront.net/hls/canal6.m3u8
 http://mdstrm.com/live-stream-playlist/5a7b1e63a8da282c34d65445.m3u8
 #EXTINF:-1 tvg-id="Canal11.cr" status="timeout",Canal 11
 https://d3bgcstab9qhdz.cloudfront.net/hls/canal11.m3u8
-#EXTINF:-1 tvg-id="Canal13Sinart.cr" status="timeout",Canal 13 Sinart (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal13Sinart.cr" status="error",Canal 13 Sinart (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x7vh8g3
 #EXTINF:-1 tvg-id="Canal38.cr" status="timeout",Canal 38 (720p) [Not 24/7]
 https://rtmp.info/canal38/envivo/chunks.m3u8
@@ -25,33 +25,43 @@ https://rtmp.info/canal38/envivo/chunks.m3u8
 https://rtmp.info/canal38/envivo/playlist.m3u8
 #EXTINF:-1 tvg-id="ColosalTV.cr" status="timeout",Colosal TV (720p) [Not 24/7]
 http://tv.ticosmedia.com:1935/COLOSAL/COLOSAL/playlist.m3u8
+#EXTINF:-1 tvg-id="Enlace.cr" status="timeout",Enlace (720p)
+https://11554-1.b.cdn13.com/EnlaceTV/smil:enlace-hd.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="EnlaceJuvenil.cr" status="timeout",Enlace Juvenil (720p)
+https://11554-1.b.cdn13.com/EJTV/smil:ejtv-hd.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ExtraTV42.cr" status="error",Extra TV 42 [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/extratv42
 #EXTINF:-1 tvg-id="ExtremaTV.cr" status="timeout",Extrema TV (720p)
 https://www.livestreamcdn.net:444/ExtremaTV/ExtremaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="GuatusoTV.cr" status="timeout",Guatuso TV (720p)
 https://5cf4a2c2512a2.streamlock.net/8162/8162/master.m3u8
-#EXTINF:-1 tvg-id="HBTVTicaVision.cr" status="timeout",HBTV TicaVisión (1080p)
+#EXTINF:-1 tvg-id="HBTVTicaVision.cr" status="blocked",HBTV TicaVisión (1080p)
 https://62fc643fbf1aa.streamlock.net/HBTV/HBTV/playlist.m3u8
 #EXTINF:-1 tvg-id="IQChannel.cr" status="timeout",IQ Channel (720p)
 https://rtmp.info/iqtv/envivo/playlist.m3u8
 #EXTINF:-1 tvg-id="LosSantosTV.cr" status="timeout",Los Santos TV
 https://lstv.duckdns.org:449/hls/lstv.m3u8
-#EXTINF:-1 tvg-id="LuzNacienteTV.cr" status="timeout",Luz Naciente TV
+#EXTINF:-1 tvg-id="LuzNacienteTV.cr" status="error",Luz Naciente TV
 https://vdo.luznacientetv.com:3555/live/luznacientetvlive.m3u8
+#EXTINF:-1 tvg-id="MoraTV.cr" status="timeout",MoraTV (804p)
+https://stmv1.zcasthn.com.br/moratv1/moratv1/playlist.m3u8
 #EXTINF:-1 tvg-id="MZSports.cr" status="timeout",MZ Sports (720p)
 https://cloudvideo.servers10.com:8081/8248/index.m3u8
 #EXTINF:-1 tvg-id="NicoyaTV.cr" status="timeout",NicoyaTV (720p) [Not 24/7]
 https://59ef525c24caa.streamlock.net/nicoyatv/nicoyatv/playlist.m3u8
 #EXTINF:-1 tvg-id="OldiesHits.cr" status="timeout",Oldies Hits (360p)
 https://video01.logicahost.com.br/oldieshits/oldieshits/playlist.m3u8
+#EXTINF:-1 tvg-id="RTTV.cr" status="timeout",RTTV (720p)
+https://cloudvideo.servers10.com:19360/8212/8212.m3u8
 #EXTINF:-1 tvg-id="SanVitoTelevision.cr" status="timeout",San Vito Televisión (720p)
 https://stmv.streamingvip.click/sanvitotv/sanvitotv/playlist.m3u8
 #EXTINF:-1 tvg-id="SarapiquiTV.cr" status="timeout",Sarapiqui TV
 https://lstv.duckdns.org:449/hls/stv.m3u8
 #EXTINF:-1 tvg-id="SMOTV.cr" status="timeout",SMO TV
 http://186.15.50.30:8080/hls/smotv.m3u8
-#EXTINF:-1 tvg-id="TeleredTelevision.cr" status="blocked",Telered Television (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleredTelevision.cr" status="error",Telered Television (720p) [Not 24/7]
 http://k4.usastreams.com/ARBtv/teleplus/playlist.m3u8
-#EXTINF:-1 tvg-id="Telesistema.cr" status="blocked",Telesistema (486p)
+#EXTINF:-1 tvg-id="Telesistema.cr" status="timeout",Telesistema (486p)
 https://59ef525c24caa.streamlock.net/ARBtv/ARBtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleSURCostaRica.cr" status="timeout",TeleSUR Costa Rica (720p) [Not 24/7]
 http://k3.usastreams.com/telesur/telesur/playlist.m3u8
@@ -67,7 +77,7 @@ https://593b04c4c5670.streamlock.net/portalfoxmix/portalfoxmix/.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://dailymotion.com/sinart
 #EXTINF:-1 tvg-id="TVN14.cr" status="timeout",Canal 14 San Carlos (720p)
 http://tvn.obix.tv:1935/TVN/CH14.stream_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSurCanal9.cr" status="timeout",TV Sur Canal 9 (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVSurCanal9.cr" status="error",TV Sur Canal 9 (480p) [Not 24/7]
 http://tv.ticosmedia.com:1935/TVSUR/TVSUR/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSurCanal14.cr" status="timeout",TV Sur Canal 14 (720p)
 https://5bf8041cb3fed.streamlock.net/TVSURCANAL14/TVSURCANAL14/playlist.m3u8
@@ -77,6 +87,8 @@ http://k4.usastreams.com/videotour/videotour/playlist.m3u8
 https://59ef525c24caa.streamlock.net/vmtv/vmlatino/playlist.m3u8
 #EXTINF:-1 tvg-id="VoiceOverRadioTV.cr" status="timeout",VoiceOver Radio TV
 https://cloudvideo.servers10.com:8081/8198/index.m3u8
+#EXTINF:-1 tvg-id="ZonaFilmsTV.cr" status="error",Zona Films TV [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/zonafilmstv
 #EXTINF:-1 tvg-id="" status="timeout",STV El Canal Familiar (720p) [Not 24/7]
 http://tiquiciatv.com:1935/stv/web/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Telefides
