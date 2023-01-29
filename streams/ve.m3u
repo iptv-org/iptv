@@ -3,7 +3,7 @@
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x89ysyb
 #EXTINF:-1 tvg-id="AnzoateguiTV.ve" status="error",Anzoátegui TV
 https://vcp2.myplaytv.com/anzoateguitv/anzoateguitv/playlist.m3u8
-#EXTINF:-1 tvg-id="AvilaTV.ve" status="timeout",Avila TV (Caracas) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="AvilaTV.ve" status="error",Avila TV (Caracas) (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x89yp9i
 #EXTINF:-1 tvg-id="CanalI.ve" status="timeout",Canal i (720p) [Not 24/7]
 https://vcp.myplaytv.com/canali/canali/playlist.m3u8
@@ -17,7 +17,7 @@ https://vcp.myplaytv.com/coll/coll/playlist.m3u8
 http://vcpar.myplaytv.com/esportsmax/live/playlist.m3u8
 #EXTINF:-1 tvg-id="FiestaMax.ve" status="timeout",Fiesta Max (720p)
 http://vcpar.myplaytv.com/fiestamax/live/playlist.m3u8
-#EXTINF:-1 tvg-id="Globovision.ve" status="timeout",Globovision (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Globovision.ve" status="error",Globovision (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCfJtBtmhnIyfUB6RqXeImMw.m3u8
 #EXTINF:-1 tvg-id="HumorMax.ve" status="timeout",Humor Max (720p)
 http://vcpar.myplaytv.com/humormax/live/playlist.m3u8
@@ -31,9 +31,9 @@ https://vcp.myplaytv.com/oxigenotv/oxigenotv/playlist.m3u8
 https://vcp.myplaytv.com/panavision/panavision/playlist.m3u8
 #EXTINF:-1 tvg-id="PromarTV.ve" status="error",PromarTV (Yaracuy) (1080p) [Not 24/7]
 http://vcp1.myplaytv.com:1935/promar/promar/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioCaracasRadio.ve" status="timeout",Radio Caracas Radio 750 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioCaracasRadio.ve" status="error",Radio Caracas Radio 750 (720p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UC5AA3XP4_pXIELctSsH_L7w.m3u8
-#EXTINF:-1 tvg-id="TeleAragua.ve" status="error",TeleAragua (480p)
+#EXTINF:-1 tvg-id="TeleAragua.ve" status="online",TeleAragua (480p)
 http://45.173.198.59:8080/hls/nginx3.m3u8?tla=
 #EXTINF:-1 tvg-id="Telesur.ve" status="timeout",teleSUR (1080p)
 https://github.com/LaneSh4d0w/IPTV_Exception/raw/master/channels/ve/telesur.m3u8
@@ -47,7 +47,7 @@ https://cloud.streamingconnect.tv/hls/tvo/tvo.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/embed/video/x89ys61
 #EXTINF:-1 tvg-id="TVFamilia.ve" status="timeout",TV Familia (720p)
 https://cloudusa.streamingconnect.com/tvfamiliatvbox/tvfamiliaweb.m3u8
-#EXTINF:-1 tvg-id="TVFANB.ve" status="error",TV Fanb (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVFANB.ve" status="timeout",TV Fanb (720p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x89yplk
 #EXTINF:-1 tvg-id="TVS.ve" status="timeout",TVS (720p)
 https://vcp3.myplaytv.com/tvs/tvs/playlist.m3u8
@@ -65,7 +65,7 @@ http://190.122.96.187:8888/http/006
 https://ott3.streann.com/loadbalancer/services/public/channels/5d23d5882cdce61dae029fd8/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",BitRadio
 https://vcp.myplaytv.com/petrotv/petrotv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Conciencia TV
+#EXTINF:-1 tvg-id="" status="error",Conciencia TV
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x89zzdj
 #EXTINF:-1 tvg-id="" status="timeout",TNO Radio
 https://stmv1.srvstm.com/tnovideo1/tnovideo1/playlist.m3u8
