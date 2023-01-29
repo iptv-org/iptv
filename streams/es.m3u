@@ -3,7 +3,7 @@
 https://dxf45ob769xpw.cloudfront.net/out/v1/90ce358337e14be3bb82b6566b50a8b1/index.m3u8
 #EXTINF:-1 tvg-id="7NN.es" status="timeout",7NN Noticias (1080p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/7nntv
-#EXTINF:-1 tvg-id="7TelevisionRegiondeMurcia.es" status="timeout",7 Televisión Región de Murcia (1080p)
+#EXTINF:-1 tvg-id="7TelevisionRegiondeMurcia.es" status="error",7 Televisión Región de Murcia (1080p)
 https://hls.youtb.workers.dev/channel/UCXi-7dpQ1mnf8kxIVCe9mCA.m3u8
 #EXTINF:-1 tvg-id="8LaMarinaTV.es" status="timeout",8 La Marina TV (576p)
 https://streaming005.gestec-video.com/hls/canal24.m3u8
@@ -57,7 +57,7 @@ https://directes-tv-int.ccma.cat/live-origin/bondia-hls/master.m3u8
 https://www.burrianateve.com/hls/btv.m3u8
 #EXTINF:-1 tvg-id="CadenaElite.es" status="timeout",Cadena Elite (720p) [Not 24/7]
 https://cloudvideo.servers10.com:8081/8004/index.m3u8
-#EXTINF:-1 tvg-id="Canal1MarMenorTorrePacheco.es" status="error",Canal 1 Mar Menor-Torre Pacheco (1080p)
+#EXTINF:-1 tvg-id="Canal1MarMenorTorrePacheco.es" status="timeout",Canal 1 Mar Menor-Torre Pacheco (1080p)
 https://directo.tuwebtv.es/canal1.m3u8
 #EXTINF:-1 tvg-id="Canal3TVBiar.es" status="timeout",Canal 3 Biar (480p)
 http://217.76.154.142:8080/hls/canal3.m3u8
@@ -71,7 +71,7 @@ https://5924d3ad0efcf.streamlock.net/canal4/canal4live/playlist.m3u8
 https://5940924978228.streamlock.net/Directo4/Directo4/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7TeleValencia.es" status="timeout",7 TeleValencia (576p)
 https://live-edge-ams-1.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/live-500/index.m3u8
-#EXTINF:-1 tvg-id="Canal9.es" status="timeout",Canal 9 Soria [Not 24/7]
+#EXTINF:-1 tvg-id="Canal9.es" status="error",Canal 9 Soria [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://twitch.tv/canal9_soria
 #EXTINF:-1 tvg-id="Canal10Emporda.es" status="timeout",Canal 10 Empordà (360p) [Not 24/7]
 http://ventdelnord.tv:8080/escala/directe.m3u8
@@ -87,7 +87,7 @@ https://common01.todostreaming.es/live/tvbarbastro-livestream.m3u8
 https://5ab29cc78f681.streamlock.net/canal33tvmadridgmailcom/livestream/master.m3u8
 #EXTINF:-1 tvg-id="Canal45.es" status="timeout",Canal 45
 https://live.yowi.tv/58b79e6a71f5459d5fc9/master.m3u8
-#EXTINF:-1 tvg-id="Canal54.es" status="timeout",Canal 54 Burgos [Not 24/7]
+#EXTINF:-1 tvg-id="Canal54.es" status="error",Canal 54 Burgos [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://twitch.tv/canal54tvburgos
 #EXTINF:-1 tvg-id="Canal56.es" status="timeout",Canal 56 (576p) [Not 24/7]
 https://videos.canal56.com/directe/stream/index.m3u8
@@ -165,10 +165,10 @@ https://directes-tv-es.ccma.cat/live-origin/c33-super3-hls/master.m3u8
 https://elche7tv.gestec-video.com/hls/canal2.m3u8
 #EXTINF:-1 tvg-id="ElConfidencialTV.es" status="timeout",El Confidencial TV (1080p)
 https://daqnsnf5phf17.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-sde7fypd1420w-prod/fast-channel-elconfidencial/fast-channel-elconfidencial.m3u8
-#EXTINF:-1 tvg-id="ElFuturoentumano.es" status="timeout",El Futuro en tu mano (720p) [Not 24/7]
-https://hls.youtb.workers.dev/channel/UCZSw3jfFZo_8I9BHSMlT2Fg.m3u8
 #EXTINF:-1 tvg-id="ElFuturoentumano.es" status="timeout",El Futuro en tu mano (720p)
 https://limited24.todostreaming.es/live/renjillo-livestream.m3u8
+#EXTINF:-1 tvg-id="ElFuturoentumano.es" status="error",El Futuro en tu mano (720p) [Not 24/7]
+https://hls.youtb.workers.dev/channel/UCZSw3jfFZo_8I9BHSMlT2Fg.m3u8
 #EXTINF:-1 tvg-id="ElPaisTV.es" status="timeout",EL PAÍS TV (1080p)
 https://d2xqbi89ghm9hh.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-79fx3huimw4xc-ssai-prd/fast-channel-el-pais.m3u8
 #EXTINF:-1 tvg-id="ElToroTV.es" status="timeout",El Toro TV (720p)
@@ -186,9 +186,9 @@ https://multimedia.eitb.eus/live-content/etb1hd-hls/master.m3u8
 #EXTINF:-1 tvg-id="ETB2.es" status="timeout",ETB 2 (720p)
 https://multimedia.eitb.eus/live-content/etb2hd-hls/master.m3u8
 #EXTINF:-1 tvg-id="ETBBasque.es" status="timeout",ETB Basque (480p)
-https://hls.youtb.workers.dev/channel/UCOHCRQDAr9HC5d59XvziJFQ.m3u8
-#EXTINF:-1 tvg-id="ETBBasque.es" status="timeout",ETB Basque (480p)
 https://multimedia.eitb.eus/live-content/eitbbasque-hls/master.m3u8
+#EXTINF:-1 tvg-id="ETBBasque.es" status="error",ETB Basque (480p)
+https://hls.youtb.workers.dev/channel/UCOHCRQDAr9HC5d59XvziJFQ.m3u8
 #EXTINF:-1 tvg-id="EurolatinaTV.es" status="timeout",Eurolatina TV (720p)
 https://media2.streambrothers.com:1936/8150/8150/playlist.m3u8
 #EXTINF:-1 tvg-id="FactoriadeFiccion.es" status="timeout",Factoría de Ficción (720p)
@@ -213,7 +213,7 @@ https://5940924978228.streamlock.net/8155/8155/playlist.m3u8
 https://cloud.streamingconnect.tv/hls/guadatv/guadatv.m3u8
 #EXTINF:-1 tvg-id="HamaikaTelebista.es" status="timeout",Hamaika Telebista (1080p)
 https://cdn3.wowza.com/1/RERMR282dnU5eE5Z/OHY0dVFs/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="HermesTVVigo.es" status="timeout",Hermes TV (720p)
+#EXTINF:-1 tvg-id="HermesTVVigo.es" status="error",Hermes TV (720p)
 https://hls.youtb.workers.dev/channel/UCv_HqaMNADVSi7A3jLrVPsA.m3u8
 #EXTINF:-1 tvg-id="HQMHits.es" status="timeout",HQM Hits (1080p)
 https://livelist01.yowi.tv/lista/5e2db2017a8fd03f73b40ede363d1a586db4e9a6/master.m3u8
@@ -223,7 +223,7 @@ https://livelist01.yowi.tv/lista/eb2fa68a058a701fa5bd2c80f6c8a6075896f71d/master
 https://5d8d85cf2c308.streamlock.net:1936/huelvatv/htvdirecto/playlist.m3u8
 #EXTINF:-1 tvg-id="HuescaTV.es" status="timeout",Huesca TV (240p) [Not 24/7]
 https://streaming2.radiohuesca.com/hls-live/livepkgr/_definst_/huescatv/huescatv.m3u8
-#EXTINF:-1 tvg-id="IB3.es" status="timeout",IB3 (720p)
+#EXTINF:-1 tvg-id="IB3.es" status="error",IB3 (720p)
 https://hls.youtb.workers.dev/channel/UCff_CBVJDTHP4wOHPjP5BMg.m3u8
 #EXTINF:-1 tvg-id="IberoamericaTV.es" status="timeout",IberoAmerica TV (1080p)
 https://limited39.todostreaming.es/live/salome-livestream.m3u8
@@ -293,13 +293,13 @@ https://www.urbanrevolution.es:444/live/5e6d8470a3832/index.m3u8
 https://urbanrevolution.es:8443/live/TV/playlist.m3u8
 #EXTINF:-1 tvg-id="LevanteTV.es" status="timeout",Levante TV (720p) [Not 24/7]
 https://play.cdn.enetres.net/C2F6CBB67E5B4D08A16CE5FE67ABCEC9023/029/playlist.m3u8
-#EXTINF:-1 tvg-id="LibertadDigitalTV.es" status="timeout",Libertad Digital TV [Not 24/7]
+#EXTINF:-1 tvg-id="LibertadDigitalTV.es" status="error",Libertad Digital TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/libertaddigitaltv
 #EXTINF:-1 tvg-id="LleidaTelevisio.es" status="blocked",Lleida Televisio (720p) [Not 24/7]
 https://cdn01.yowi.tv/lleida/playlist.m3u8
-#EXTINF:-1 tvg-id="LogosTV.es" status="error",Logos TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="LogosTV.es" status="timeout",Logos TV (1080p) [Not 24/7]
 http://streamer1.streamhost.org/salive/logosH/playlist.m3u8
-#EXTINF:-1 tvg-id="LogosTV.es" status="error",Logos TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="LogosTV.es" status="timeout",Logos TV (1080p) [Not 24/7]
 https://streamer1.streamhost.org/salive/logosH/master.m3u8
 #EXTINF:-1 tvg-id="M95TelevisionMarbella.es" status="timeout",M95 Televisión Marbella (576p) [Not 24/7]
 https://limited2.todostreaming.es/live/m95-livestream.m3u8
@@ -311,7 +311,7 @@ https://streaming004.gestec-video.com/hls/MIJAS.m3u8
 https://bit.controlstreams.com:5443/LiveApp/streams/mirametv.m3u8
 #EXTINF:-1 tvg-id="MolahitsTV.es" status="timeout",Molahits TV (720p)
 http://ventdelnord.tv:8080/mola/directe.m3u8
-#EXTINF:-1 tvg-id="NavarraTV.es" status="error",Navarra TV [Not 24/7]
+#EXTINF:-1 tvg-id="NavarraTV.es" status="timeout",Navarra TV [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/NavarraTelevision
 #EXTINF:-1 tvg-id="NegociosTV.es" status="timeout",Negocios TV
 https://streaming013.gestec-video.com/hls/negociostv.m3u8
@@ -365,7 +365,7 @@ https://streamer.zapitv.com/ptv-linarez/index.m3u8
 https://streamer.zapitv.com/PTV_sevilla/index.m3u8
 #EXTINF:-1 tvg-id="Punt3.es" status="timeout",Punt 3 Vall Uixó (1080p)
 https://bit.controlstreams.com:5443/LiveApp/streams/punt3.m3u8
-#EXTINF:-1 tvg-id="RadioBocairentTV.es" status="timeout",Ràdio Bocairent TV (1080p)
+#EXTINF:-1 tvg-id="RadioBocairentTV.es" status="online",Ràdio Bocairent TV (1080p)
 http://185.81.77.4/BocairentTV/index.m3u8
 #EXTINF:-1 tvg-id="RadioTelevisionMelilla.es" status="timeout",Radio Televisión Melilla (720p) [Not 24/7]
 https://tvmelilla-hls-rm-lw.flumotion.com/playlist.m3u8
@@ -429,7 +429,7 @@ https://telemadridhls2-live-hls.secure2.footprint.net/egress/chandler/telemadrid
 https://5940924978228.streamlock.net/8431/8431/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleonuba.es" status="timeout",Teleonuba (1080p)
 https://5d8d85cf2c308.streamlock.net:1936/Teleonuba/endirecto/playlist.m3u8
-#EXTINF:-1 tvg-id="Telequivir.es" status="error",Telequivir [Not 24/7]
+#EXTINF:-1 tvg-id="Telequivir.es" status="timeout",Telequivir [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://twitch.tv/telequivir
 #EXTINF:-1 tvg-id="TeleRibera.es" status="online",TeleRibera (720p) [Not 24/7]
 http://37.187.7.106/teleribera/live.m3u8
@@ -507,7 +507,7 @@ https://hellin-hls-live.flumotion.com/playlist.m3u8
 http://teledifusion.tv/cordoba/cordobalive/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMCordoba.es" status="timeout",TVM Córdoba (414p) [Not 24/7]
 https://5924d3ad0efcf.streamlock.net/cordoba/cordobalive/playlist.m3u8
-#EXTINF:-1 tvg-id="TVSantCugat.es" status="timeout",Televisió Sant Cugat (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVSantCugat.es" status="error",Televisió Sant Cugat (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCoFs7RGrmWQkqU5KNNGvCjA.m3u8
 #EXTINF:-1 tvg-id="TVVegaBaja.es" status="timeout",TV Vega Baja (720p)
 https://streaming.tvt.es:8080/hls/tvb_interno/live.m3u8
