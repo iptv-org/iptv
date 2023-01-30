@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AccessHumboldt.us" status="blocked",Access Humboldt (1080p)
+#EXTINF:-1 tvg-id="AccessHumboldt.us" status="timeout",Access Humboldt (1080p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/66dfbe35ca1a418c87e3cf18ca46bd57/index.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel17.us" status="timeout",Access Sacramento Channel 17
 https://reflect-access-sacramento.cablecast.tv/live-7/live/live.m3u8
@@ -47,7 +47,7 @@ http://cdn3.wowza.com/5/djRwZmQvTEJidmZD/cityftmyers/G2083_002/playlist.m3u8
 https://cdn3.wowza.com/5/djRwZmQvTEJidmZD/cityftmyers/G2083_002/playlist.m3u8
 #EXTINF:-1 tvg-id="CGTV.us" status="timeout",Champaign Government Television (CGTV) (Champaign IL) (720p)
 https://reflect-champaign.cablecast.tv/live-7/live/live.m3u8
-#EXTINF:-1 tvg-id="CitiCABLE.us" status="timeout",Torrance CitiCABLE (Torrance CA) (360p)
+#EXTINF:-1 tvg-id="CitiCABLE.us" status="error",Torrance CitiCABLE (Torrance CA) (360p)
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/torrance/G0057_005/playlist.m3u8
 #EXTINF:-1 tvg-id="CityofFairfieldChannel26.us" status="timeout",Fairfield Government Access Channel 26 (Fairfield CA) (720p) [Geo-blocked]
 https://reflect-fairfield-ca.cablecast.tv/live-8/live/live.m3u8
@@ -97,7 +97,7 @@ https://vod.slocoe.org/live-3/live/live.m3u8
 https://vod.slocoe.org/live-4/live/live.m3u8
 #EXTINF:-1 tvg-id="CollierTV.us" status="timeout",Collier Television CTV (Naples FL) (720p)
 https://reflect-collier-countyboc.cablecast.tv/live-4/live/live.m3u8
-#EXTINF:-1 tvg-id="Community12TV.us" status="error",Gainesville Community 12TV (Gainesville FL) (720p)
+#EXTINF:-1 tvg-id="Community12TV.us" status="timeout",Gainesville Community 12TV (Gainesville FL) (720p)
 https://lin10.isilive.ca/live/gainesville/live/index.m3u8
 #EXTINF:-1 tvg-id="CommunityTVChannel189.us" status="timeout",Traverse Area Community Media CommunityTV Channel 189 (Traverse City MI) (1080p) [Geo-blocked]
 https://reflect-tacm.cablecast.tv/live-3/live/live.m3u8
@@ -243,7 +243,7 @@ https://cdn.igocast.com/channel10_hls/channel10_master.m3u8
 https://cdn.igocast.com/channel12_hls/channel12_master.m3u8
 #EXTINF:-1 tvg-id="KCTSDT3.us" status="error",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8865717/
-#EXTINF:-1 tvg-id="KCTSDT4.us" status="error",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT4.us" status="timeout",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8904290/
 #EXTINF:-1 tvg-id="KCWXDT1.us" status="online",myTV San Antonio TX (KCWX-TV) (720p) [Not 24/7]
 http://65.36.6.216:1935/live/kcwx.smil/playlist.m3u8
@@ -471,7 +471,7 @@ https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/olelo/G0125_009/playlist.m3u8
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/olelo/G0125_011/playlist.m3u8
 #EXTINF:-1 tvg-id="Olelo54.us" status="timeout",Olelo Community Media Channel 54 (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/olelo/G0125_012/playlist.m3u8
-#EXTINF:-1 tvg-id="Olelo55.us" status="error",Olelo Community Media Channel 55 (720p)
+#EXTINF:-1 tvg-id="Olelo55.us" status="timeout",Olelo Community Media Channel 55 (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/olelo/G0125_013/playlist.m3u8
 #EXTINF:-1 tvg-id="OntarioPublicAccessChannel.us" status="timeout",Ontario Public Access Channel (360p)
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/ontarioca/G2446_002/playlist.m3u8
@@ -725,7 +725,7 @@ https://livevideo01.wnep.com/hls/live/2011655/newscasts/live.m3u8
 https://livevideo01.weareiowa.com/hls/live/2011593/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="WorldHarvestTV.us" status="timeout",World Harvest TV (360p)
 https://597865f6e4114.streamlock.net/live/leseaorigin.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="WOSUDT3.us" status="timeout",The Ohio Channel (720p)
+#EXTINF:-1 tvg-id="WOSUDT3.us" status="error",The Ohio Channel (720p)
 https://5ebe6889de541.streamlock.net/live/stream_10/playlist.m3u8
 #EXTINF:-1 tvg-id="WPAATV.us" status="timeout",WPAA TV (1080p)
 https://streams.helnix.com/autoHLS/ce3a40274f01c8fc/ce3a40274f01c8fc.m3u8
@@ -827,3 +827,7 @@ https://yuma-az.secure.footprint.net/egress/bhandler/yumaaz/streamb/playlist.m3u
 http://156.142.85.152/live/live.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Channel 11
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/scottsdale/G0040_007/chunklist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",KRCA-TV Estrella Los Angeles (720p)
+https://content.uplynk.com/channel/81bcd5789d8d48ae8b6b0a559db1c7d6.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",KVEA-TV Telemundo Los Angeles (720p)
+https://content.uplynk.com/channel/c1698e3bc70e429a887301d8831400f8.m3u8
