@@ -90,7 +90,7 @@ https://broadcasttr.com:446/manisaetv/bant1/playlist.m3u8
 http://live.arkumedia.com:1935/finansturktv/finansturktv/playlist.m3u8
 #EXTINF:-1 tvg-id="FoxTurkey.tr" status="timeout",Fox Türkiye (720p)
 https://foxtv.blutv.com/blutv_foxtv_live/live.m3u8
-#EXTINF:-1 tvg-id="GRT.tr" status="timeout",GRT Gaziantep (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="GRT.tr" status="blocked",GRT Gaziantep (720p) [Geo-blocked]
 http://yerelmedya.tv:1935/grt/_definst_/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="GRT.tr" status="timeout",GRT (720p)
 https://waw2.artiyerelmedya.net/grt/bant1/chunks.m3u8
@@ -156,7 +156,7 @@ http://51.15.2.151/hls/kanalavrupa.m3u8
 http://212.174.58.161/hls-live/livepkgr/_definst_/liveevent/kanalb.m3u8
 #EXTINF:-1 tvg-id="KanalFirat.tr" status="timeout",Kanal Firat (720p) [Not 24/7]
 https://waw2.artiyerelmedya.net/kanalfirat/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="KanalUrfa.tr" status="timeout",Kanal Urfa (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="KanalUrfa.tr" status="blocked",Kanal Urfa (576p) [Not 24/7]
 https://broadcasttr.com:446/kanalurfa/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalV.tr" status="timeout",Kanal V (720p) [Not 24/7]
 http://yerelmedya.tv:1935/kanalv/bant1/playlist.m3u8
@@ -244,9 +244,9 @@ https://tv-trt1.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRT2.tr" status="timeout",TRT 2 [Geo-blocked]
 https://tv-trt2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTArabi.tr" status="timeout",TRT Arabi (720p) [Not 24/7]
-https://tv-trtarabi.live.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="TRTArabi.tr" status="error",TRT Arabi (720p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UC5GvVahlgulCyo4cshSmbcg.m3u8
+#EXTINF:-1 tvg-id="TRTArabi.tr" status="timeout",TRT Arabi (720p) [Not 24/7]
+https://tv-trtarabi.live.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTAvaz.tr" status="timeout",TRT Avaz (720p)
 https://tv-trtavaz.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTBelgesel.tr" status="timeout",TRT Belgesel (720p)
@@ -321,7 +321,7 @@ https://59cba4d34b678.streamlock.net/live/vuslattv/playlist.m3u8
 https://waw2.artiyerelmedya.net/vuslattv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Ahi TV Kirsehir (576p)
 http://yayin3.canlitv.com:1935/canlitv/ahitv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",KANAL 58 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",KANAL 58 (720p) [Not 24/7]
 https://broadcasttr.com:446/kanal58/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Milyon TV (720p)
 https://sosyoapp-live.cdnnew.com/sosyo/buraya-bir-isim-verin.m3u8
