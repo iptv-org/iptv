@@ -99,7 +99,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://twitch.tv/linierostv
 http://51.222.85.85:81/hls/loco/index.m3u8
 #EXTINF:-1 tvg-id="LunaTVCanal53.do" status="timeout",Luna TV Canal 53
 https://ss2.domint.net:3228/luna_str/lunatv/playlist.m3u8
-#EXTINF:-1 tvg-id="MakaoTV.do" status="timeout",Makao TV
+#EXTINF:-1 tvg-id="MakaoTV.do" status="error",Makao TV
 https://live.obslivestream.com/makaomux/tracks-v2a1/playlist.m3u8
 #EXTINF:-1 tvg-id="MegaVisionTV.do" status="timeout",Megavisión
 http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
@@ -135,7 +135,7 @@ http://190.103.183.24:1935/ReadyTV/ReadyHD/playlist.m3u8
 https://ss2.domint.net:3202/rnn_str/canal27/playlist.m3u8
 #EXTINF:-1 tvg-id="RomanaTVCanal42.do" status="timeout",Romana TV Canal 42
 https://videoserver.tmcreativos.com:19360/cvmhbyrcat/cvmhbyrcat.m3u8
-#EXTINF:-1 tvg-id="SanIsidroTV.do" status="error",San Isidro TV (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="SanIsidroTV.do" status="timeout",San Isidro TV (360p) [Not 24/7]
 https://cdn4.hostlagarto.com:8081/static/sanisidrotv/playlist.m3u8
 #EXTINF:-1 tvg-id="SenalesTV.do" status="timeout",Señales TV (480p)
 https://live.teledom.info:4000/live/senalestvlive.m3u8
@@ -155,7 +155,7 @@ http://ss8.domint.net:2128/stv_str/tv55/playlist.m3u8
 https://ss8.domint.net:3128/stv_str/tv55/master.m3u8
 #EXTINF:-1 tvg-id="TDNMedios.do" status="timeout",TDN Medios (480p) [Not 24/7]
 http://108.175.14.125:1935/tdn/tdn/playlist.m3u8
-#EXTINF:-1 tvg-id="Telealtura.do" status="timeout",Telealtura (720p)
+#EXTINF:-1 tvg-id="Telealtura.do" status="blocked",Telealtura (720p)
 https://pacific.direcnode.com:3250/live/telealturalive.m3u8
 #EXTINF:-1 tvg-id="TeleAntillas.do" status="error",Tele Antillas (480p)
 https://tunzilla.com/http://51.81.106.157:8084/hls/tantillas.m3u8
@@ -249,5 +249,5 @@ https://cdn4.hostlagarto.com:8081/static/canal18hd/playlist.m3u8
 https://ss9.domint.net:3036/yv_str/yunavision/playlist.m3u8
 #EXTINF:-1 tvg-id="Zol106.do" status="timeout",Zol106 (720p) [Not 24/7]
 https://ss3.domint.net:3108/zol_str/vzol/playlist.m3u8
-#EXTINF:-1 tvg-id="ZTV.do" status="error",ZTV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ZTV.do" status="timeout",ZTV (720p) [Not 24/7]
 https://lb00zdigital.streamprolive.com/mnt/hls/live.m3u8
