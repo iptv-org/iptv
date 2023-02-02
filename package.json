@@ -3,6 +3,7 @@
   "scripts": {
     "act:auto-update": "act workflow_dispatch -W .github/workflows/auto-update.yml --artifact-server-path=.artifacts",
     "act:check": "act pull_request -W .github/workflows/check.yml",
+    "act:test": "act workflow_dispatch -W .github/workflows/test.yml",
     "api:load": "./scripts/commands/api/load.sh",
     "db:clear": "node scripts/commands/database/clear.js",
     "db:create": "node scripts/commands/database/create.js",
