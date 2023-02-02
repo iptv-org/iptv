@@ -3,43 +3,55 @@
 http://113.163.94.245/hls-live/livepkgr/_definst_/liveevent/thbt.m3u8
 #EXTINF:-1 tvg-id="BRT.vn" status="online",BRT (360p)
 http://113.163.216.23:1935/live/tv2.stream_480p/playlist.m3u8
-#EXTINF:-1 tvg-id="CaMauTV.vn" status="online",Cà Mau TV (720p)
+#EXTINF:-1 tvg-id="CaMauTV.vn" status="timeout",Cà Mau TV (720p) [Geo-blocked]
 http://tv.ctvcamau.vn/live/tv/tv.m3u8
-#EXTINF:-1 tvg-id="DaNangTV1.vn" status="online",Da Nang TV1 (1080p)
+#EXTINF:-1 tvg-id="DaNangTV1.vn" status="timeout",Da Nang TV1 (1080p) [Not 24/7]
 http://drtdnglive.e49a7c38.cdnviet.com/livedrt1/chunklist.m3u8
-#EXTINF:-1 tvg-id="DaNangTV2.vn" status="online",Da Nang TV2 (1080p)
+#EXTINF:-1 tvg-id="DaNangTV2.vn" status="timeout",Da Nang TV2 (1080p) [Not 24/7]
 http://drtdnglive.e49a7c38.cdnviet.com/livestream/chunklist.m3u8
-#EXTINF:-1 tvg-id="DhammasaphaTV.vn" status="online",Dhammasapha TV (1080p)
+#EXTINF:-1 tvg-id="DhammasaphaTV.vn" status="timeout",Dhammasapha TV (1080p)
 https://livefta.malimarcdn.com/ftaedge00/dhammasapha.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="DongNaiTV1.vn" status="online",Đồng Nai 1 (360p)
+#EXTINF:-1 tvg-id="DongNaiTV1.vn" status="online",Đồng Nai 1 (360p) [Not 24/7]
 http://118.107.85.4:1935/live/smil:DNTV1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="DongNaiTV2.vn" status="online",Đồng Nai 2 (576p)
+#EXTINF:-1 tvg-id="DongNaiTV2.vn" status="online",Đồng Nai 2 (576p) [Not 24/7]
 http://118.107.85.4:1935/live/smil:DNTV2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="GiaLaiTV.vn" status="online",Gia Lai TV (486p)
 http://113.161.25.3:8134/hls/gialaitv/gialaitv.m3u8
-#EXTINF:-1 tvg-id="HBTV.vn" status="online",HBTV (406p)
+#EXTINF:-1 tvg-id="HBTV.vn" status="timeout",HBTV (406p) [Not 24/7]
 http://hoabinhtvlive.746b3ddb.cdnviet.com/hoabinhtv/playlist.m3u8
-#EXTINF:-1 tvg-id="KienGiangTV1.vn" status="online",KienGiangTV1 (1080p)
+#EXTINF:-1 tvg-id="KienGiangTV1.vn" status="timeout",KienGiangTV1 (1080p) [Geo-blocked]
 http://tv.kgtv.vn/live/kgtv1/kgtv1.m3u8
-#EXTINF:-1 tvg-id="KienGiangTV.vn" status="online",KienGiangTV (1080p)
+#EXTINF:-1 tvg-id="KienGiangTV.vn" status="error",KienGiangTV (1080p) [Geo-blocked]
 http://tv.kgtv.vn/live/kgtv/kgtv.m3u8
 #EXTINF:-1 tvg-id="LA34LongAnTV.vn" status="timeout",LA34 Long An (720p)
 http://113.161.229.13/hls-live/livepkgr/_definst_/liveevent/tv.m3u8
-#EXTINF:-1 tvg-id="LaoSVTV.vn" status="online",Lao SV TV (480p)
+#EXTINF:-1 tvg-id="LaoChampaTV1.la" status="timeout",Lao Champa TV 1 (720p)
+https://livefta.malimarcdn.com/ftaedge00/laochampa1.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="LaoHeritageOrganization.la" status="timeout",Lao Heritage Foundation TV (720p) [Not 24/7]
+https://livefta.malimarcdn.com/ftaedge00/laoheritagetv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="LaoNetTV.la" status="timeout",Lao Net TV (720p)
+https://livefta.malimarcdn.com/ftaedge00/laonet.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="LaoSVTV.vn" status="timeout",Lao SV TV (480p)
 https://livefta.malimarcdn.com/ftaedge00/laosvtv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="OyLaoTV.vn" status="online",Oy Lao TV (720p)
+#EXTINF:-1 tvg-id="NingTV.la" status="timeout",Ning TV (720p)
+https://livefta.malimarcdn.com/ftaedge00/ningtv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="OyLaoTV.vn" status="timeout",Oy Lao TV (720p) [Not 24/7]
 https://livefta.malimarcdn.com/ftaedge00/oylaotv.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="PNTV.us" status="timeout",PNTV (720p)
+https://livefta.malimarcdn.com/ftaedge00/pntv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="QRT.vn" status="online",QRT (404p) [Not 24/7]
 http://113.161.6.157:8081/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8
 #EXTINF:-1 tvg-id="QuocHoiTV.vn" status="online",Quốc Hội (720p)
 http://113.164.225.140:1935/live/quochoitvlive.stream_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="TeaTV.vn" status="online",Tea TV (720p)
+#EXTINF:-1 tvg-id="SupremeMasterTV.tw" status="timeout",Supreme Master TV (720p)
+https://lbs-us1.suprememastertv.com/720p.m3u8
+#EXTINF:-1 tvg-id="TeaTV.vn" status="timeout",Tea TV (720p)
 https://livefta.malimarcdn.com/ftaedge00/teatv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TeaTVKhmer.vn" status="online",Tea TV 2 (720p)
+#EXTINF:-1 tvg-id="TeaTVKhmer.vn" status="timeout",Tea TV 2 (720p)
 https://livefta.malimarcdn.com/ftaedge00/teatv2.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TienGiangTV.vn" status="online",Tien Giang (720p)
+#EXTINF:-1 tvg-id="TienGiangTV.vn" status="timeout",Tien Giang (720p)
 http://thtg.vn:8001/thtg.m3u8
-#EXTINF:-1 tvg-id="UniquelyThai.vn" status="online",Uniquely Thai (720p)
+#EXTINF:-1 tvg-id="UniquelyThai.vn" status="timeout",Uniquely Thai (720p)
 https://livefta.malimarcdn.com/ftaedge00/uniquely.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="VITV.vn" status="online",VITV (180p)
 http://210.86.230.202:8134/hls-live/livepkgr/_definst_/liveevent/livestream.m3u8
@@ -63,125 +75,5 @@ https://vips-livecdn.fptplay.net/hda3/vtv7hd_vhls.smil/chunklist_b5000000.m3u8
 https://vips-livecdn.fptplay.net/hda2/vtv8hd_vhls.smil/chunklist_b5000000.m3u8
 #EXTINF:-1 tvg-id="VTV9.vn" status="blocked",VTV9 (1080p) [Geo-blocked]
 https://vips-livecdn.fptplay.net/hda2/vtv9_vhls.smil/chunklist_b5000000.m3u8
-#EXTINF:-1 tvg-id="" status="online",Look Thoong TV (720p)
+#EXTINF:-1 tvg-id="" status="timeout",Look Thoong TV (720p) [Not 24/7]
 https://livefta.malimarcdn.com/ftaedge00/lookthoongtv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="VTV4.vn" status="online",VTV4
-https://nvzoftzsvflivcf.vcdn.com.vn/vtv4/vtv4@mid.m3u8
-#EXTINF:-1 tvg-id="AnNinhTV.vn" status="online",An Ninh TV
-https://live.antv.gov.vn/antv/playlist.m3u8
-#EXTINF:-1 tvg-id="BacGiangTV.vn" status="online",Bac Giang TV
-https://live.bacgiangtv.vn/bgtvlive/tv1live.m3u8
-#EXTINF:-1 tvg-id="BacKanTV.vn" status="online",Bac Kan TV
-http://123.31.36.68/live.m3u8?c=vstv360&q=high&type=tv&token=LX-ibJYRUq9pflRtYAxfYQ&time=1586395820&gcId=1532&userId=&deviceId=&deviceType=&location=NA&requestTime=1586309420781&pkg=pkg11.hni
-#EXTINF:-1 tvg-id="BacNinhTV.vn" status="online",Bac Ninh TV
-https://stream.thingnet.vn/live/smil:BTV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BaRiaVungTauTV.vn" status="online",Ba Ria Vung Tau TV
-https://brt051220.cdn.vnns.io/-eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2NzQyODk1MjQsInVyaSI6Ii9CUlQifQ.QzY1KbMwzmtoUAv1CXJuT6zUOvidGbPu4feX6m3pvlM-/BRT/playlist.m3u8
-#EXTINF:-1 tvg-id="BinhDuongTV1.vn" status="online",Binh Duong TV 1
-https://btv1011220.cdn.vnns.io/db93c2e6e58e6409ef1b97a6c6442af51674280461/btv1.480p.tms/playlist.m3u8
-#EXTINF:-1 tvg-id="BinhPhuocTV1.vn" status="online",Binh Phuoc TV 1
-https://lms-public-ingest.swiftfederation.com/bptvlive/tv1live.m3u8
-#EXTINF:-1 tvg-id="BinhPhuocTV2.vn" status="online",Binh Phuoc TV 2
-https://lms-public-ingest.swiftfederation.com/bptvlive/tv2live.m3u8
-#EXTINF:-1 tvg-id="CanThoTV.vn" status="online",Can Tho TV
-https://tv.tchgroup.vn/live/tv_web/playlist.m3u8
-#EXTINF:-1 tvg-id="CaoBangTV.vn" status="online",Cao Bang TV
-http://118.107.85.4:1935/live/smil:CRTV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="DakLakTV.vn" status="online",Dak Lak TV
-https://live.drt.vn/drtlive/tv1live-transmux.m3u8
-#EXTINF:-1 tvg-id="DakNongTV.vn" status="online",Dak Nong TV
-https://16371213858134.vnns.net/daknong_abr/playlist.m3u8
-#EXTINF:-1 tvg-id="DienBienTV.vn" status="online",Dien Bien TV
-https://truyenhinh.vnptvas.vn/live.m3u8?c=vstv362&q=high&type=tv&token=LX-ibJYRUq9pflRtYAxfYQ&time=1586395820&gcId=1532&userId=&deviceId=&deviceType=&location=NA&requestTime=1586309420781&pkg=pkg11.hni
-#EXTINF:-1 tvg-id="GSShop.vn" status="online",GS Shop
-https://5bf6ea205fe60.streamlock.net/dn/_definst_/htvmuasam.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="HaGiangTV.vn" status="online",Ha Giang TV
-http://123.31.36.68/live.m3u8?c=vstv365&q=high&type=tv&token=LX-ibJYRUq9pflRtYAxfYQ&time=1586395820&gcId=1532&userId=&deviceId=&deviceType=&location=NA&requestTime=1586309420781&pkg=pkg11.hni
-#EXTINF:-1 tvg-id="HaiPhongTV.vn" status="online",Hai Phong TV
-https://live.thhp.vn/thp/index.m3u8
-#EXTINF:-1 tvg-id="HaTinhTV.vn" status="online",Ha Tinh TV
-https://wse.hatinhtv.net/live/httv1/playlist.m3u8
-#EXTINF:-1 tvg-id="HanoiTV1.vn" status="online",HanoiTV1
-https://1028513096.vnns.net/tv1-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="HanoiTV2.vn" status="online",HanoiTV2
-https://1028513096.vnns.net/tv2-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="HaNamTV.vn" status="online",Ha Nam TV
-https://live.hanamtv.vn/thhnlive/tv1live.m3u8
-#EXTINF:-1 tvg-id="HoaBinhTV.vn" status="online",Hoa Binh TV
-https://hbtvlive.3ssoft.vn/hoabinhtv/playlist.m3u8
-#EXTINF:-1 tvg-id="HauGiangTV.vn" status="online",Hau Giang TV
-https://60acee235f4d5.streamlock.net/HGTV/d1/playlist.m3u8
-#EXTINF:-1 tvg-id="HungYenTV.vn" status="online",Hung Yen TV
-https://live.hungyentv.vn/hytvlive/tv1live.m3u8
-#EXTINF:-1 tvg-id="KhanhHoaTV.vn" status="online",Khanh Hoa TV
-http://210.245.20.94/ktv.m3u8
-#EXTINF:-1 tvg-id="KonTum.vn" status="online",Kon Tum TV
-https://tv.kontumtv.vn/live/kontumtv/kontumtv.m3u8
-#EXTINF:-1 tvg-id="LaiChauTV.vn" status="online",Lai Chau TV
-http://123.31.36.68/live.m3u8?c=vstv361&q=high&type=tv&token=1111&time=1586395820&gcId=1532&userId=&deviceId=&deviceType=&location=NA&requestTime=1586309420781&pkg=pkg11.hni
-#EXTINF:-1 tvg-id="LamDongTV.vn" status="online",Lam Dong TV
-http://118.107.85.5:1935/live/smil:LTV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="LangSonTV.vn" status="online",Lang Son TV
-http://live.langsontv.vn/lstvlive/tv1live.m3u8
-#EXTINF:-1 tvg-id="LaoCaiTV.vn" status="online",Lao Cai TV
-https://cdn.3ssoft.vn/livetv/laocaitv/laocaitv/index.m3u8
-#EXTINF:-1 tvg-id="LongAn34TV.vn" status="online",Long An 34 TV
-https://live.la34.com.vn/la34/tvlive-transmux.m3u8
-#EXTINF:-1 tvg-id="NhanDanTV.vn" status="online",Nhan Dan TV
-https://video.nhandan.thienvietjsc.net/live/nhandan720/playlist.m3u8
-#EXTINF:-1 tvg-id="NinhBinhTV.vn" status="online",Ninh Binh TV
-https://lms-public-ingest.swiftfederation.com/nbtvlive/tv1live.m3u8
-#EXTINF:-1 tvg-id="NinhThuanTV.vn" status="online",Ninh Thuan TV
-https://60acee235f4d5.streamlock.net/live/mystream/playlist.m3u8
-#EXTINF:-1 tvg-id="PhuThoTV.vn" status="online",Phu Tho TV
-https://cdn.3ssoft.vn/live/phuthotv/phuthotv/index.m3u8?t=XQW_hIjJYNcj5fb7SFkNTw&e=1674317050
-#EXTINF:-1 tvg-id="PhuYenTV.vn" status="online",Phu Yen TV
-http://113.161.4.48:8080/phuyen/tv/index.m3u8
-#EXTINF:-1 tvg-id="QPVN.vn" status="online",QPVN
-http://27.76.137.122:1935/standard/smil:standard.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="QuangNgaiTV.vn" status="online",Quang Ngai TV
-http://118.107.85.5:1935/live/smil:PTQ.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="QuocHoiTV.vn" status="online",Quoc Hoi TV
-https://media.quochoitv.vn/live/qhtv_720p/index.m3u8
-#EXTINF:-1 tvg-id="SonLaTV.vn" status="online",Son La TV
-https://live.sonlatv.vn/sltvlive/tv1live-transmux.m3u8
-#EXTINF:-1 tvg-id="ThaiNguyenTV2.vn" status="online",Thai Nguyen TV 2
-https://streaming.thainguyentv.vn/hls/livestream.m3u8
-#EXTINF:-1 tvg-id="ThanhHoaTV.vn" status="online",Thanh Hoa TV
-https://s3-vnpthcm-cdn.sohatv.vn/live/Y5Kan2X7I7GHo4VN/thth/eVc6tyHuFZLQYgmX/337a54767a7233703637564336316a6d3675ec62a9d7de0e1d2a1dd0aa220171918efd0161822deddb14d11ed9fff1867496c6f282fe80cad14d1b05eab5cebf03e04c917b9a0d196918808fcad073fec7c663ecf7d9d110be1b27a605298af4868012428fa6b45b11df3f9784253f2f31dc8aa15aa4823c2717d449e07f8d83f70ae5515bcfb6bc5231e0b43f40d887ef03ffeb5a1ea2b39f216d9fa5c0f419c20550514472dad8fbb1c43533ceb4d9/720.m3u8
-#EXTINF:-1 tvg-id="ThuaThienHueTV.vn" status="online",Thua Thien Hue TV
-https://live.trt.com.vn/TRT-Online/playlist.m3u8
-#EXTINF:-1 tvg-id="TraVinhTV.vn" status="online",Tra Vinh TV
-https://60acee235f4d5.streamlock.net/THTV/travinhtv/playlist.m3u8
-#EXTINF:-1 tvg-id="TraVinhTV2.vn" status="online",Tra Vinh TV 2
-https://618b88f69e53b.streamlock.net/THTV2/travinhtv2/playlist.m3u8
-#EXTINF:-1 tvg-id="TuyenQuangTV.vn" status="online",Tuyen Quang TV
-http://27.72.164.157:8080/hls/ttv.m3u8?c=vstv221&q=high&type=tv&token=bbsNExV3xoCm1oqQk84zUg&time=1543462733&gcId=1532&userId=&deviceId=&deviceType=&location=NA&requestTime=1543376333759&pkg=pkg11
-#EXTINF:-1 tvg-id="TuyenQuangTV.vn" status="online",Tuyen Quang TV
-http://27.72.164.157:8080/hls/ttv.m3u8?c=vstv221&q=high&type=tv&token=bbsNExV3xoCm1oqQk84zUg&time=1543462733&gcId=1532&userId=&deviceId=&deviceType=&location=NA&requestTime=1543376333759&pkg=pkg11
-#EXTINF:-1 tvg-id="VinhLongTV1.vn" status="online",Vinh Long TV 1
-https://live3.thvli.vn/pq3yJHKBujOT_d885r_-4A/1674298090/thvli/thvl1-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="VinhLongTV2.vn" status="online",Vinh Long TV 2
-https://live3.thvli.vn/C9S5psvIMOBrdJITbBGNXw/1674298214/thvli/thvl2-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="VinhLongTV3.vn" status="online",Vinh Long TV 3
-https://live3.thvli.vn/wc9Gnwm49_w4UENSLkR0tA/1674298285/thvli/thvl3-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="VinhLongTV4.vn" status="online",Vinh Long TV 4
-https://live3.thvli.vn/ts_QNcBiXXIrteNrPiLdhg/1674298366/thvli/thvl4-abr/playlist.m3u8
-#EXTINF:-1 tvg-id="VinhPhucTV.vn" status="online",Vinh Phuc TV
-http://vinhphuctv.vn:8090/vinhphuclive/web.stream_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="VTC7.vn" status="online",VTC7
-https://1117979683.vnns.net/sdb/todaytv_hls.smil/chunklist_b2500000.m3u8
-#EXTINF:-1 tvg-id="VTC10.vn" status="online",VTC10
-https://1117979683.vnns.net/sdb/vtc10_hls.smil/chunklist_b2500000.m3u8
-#EXTINF:-1 tvg-id="VTC11.vn" status="online",VTC11
-https://1117979683.vnns.net/sdb/vtc11_hls.smil/chunklist_b2500000.m3u8
-#EXTINF:-1 tvg-id="VTC12.vn" status="online",VTC12
-https://1117979683.vnns.net/sdb/vtc12_hls.smil/chunklist_b2500000.m3u8
-#EXTINF:-1 tvg-id="VTC13.vn" status="online",VTC13
-https://1117979683.vnns.net/hda1/vtc13_vhls.smil/chunklist_b2500000.m3u8
-#EXTINF:-1 tvg-id="VTC14.vn" status="online",VTC14
-https://1117979683.vnns.net/hda1/vtc14_vhls.smil/chunklist_b2500000.m3u8
-#EXTINF:-1 tvg-id="VTC16.vn" status="online",VTC16
-https://1117979683.vnns.net/sdb/vtc16_hls.smil/chunklist_b2500000.m3u8
-#EXTINF:-1 tvg-id="YenBaiTV.vn" status="online",Yen Bai TV
-https://yenbaitv.org.vn/hls/livestream.m3u8

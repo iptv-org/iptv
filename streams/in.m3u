@@ -11,19 +11,19 @@ https://lmil.live-s.cdn.bitgravity.com/cdn-live/_definst_/lmil/live/aajtak_app.s
 http://45.77.66.224:1935/athavantv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ABPNews.in" status="timeout",ABP News (720p)
 https://abplivetv.akamaized.net/hls/live/2043010/hindi/master.m3u8
-#EXTINF:-1 tvg-id="AkaramKidz.in" status="timeout",Akaram Kidz (460p)
+#EXTINF:-1 tvg-id="AkaramKidz.in" status="timeout",Akaram Kidz (460p) [Not 24/7]
 http://akaram.zecast.net/akaram-live/akaramkidz/index.m3u8
 #EXTINF:-1 tvg-id="AKDCalcuttaNews.in" status="blocked",AKD Calcutta News (540p) [Geo-blocked]
 https://d39iawgzv3h0yo.cloudfront.net/out/v1/1ef4344a3b4a41908915d58ac7bd5e23/index.m3u8
 #EXTINF:-1 tvg-id="AmritaTV.in" status="online",Amrita TV (576p)
 http://103.199.161.254/Content/amrita/Live/Channel(Amrita)/index.m3u8
-#EXTINF:-1 tvg-id="AnjanTV.in" status="timeout",Anjan (720p)
+#EXTINF:-1 tvg-id="AnjanTV.in" status="timeout",Anjan (720p) [Not 24/7]
 https://f3.vstream.online:7443/bstb/ngrp:anjan_hdall/playlist.m3u8
-#EXTINF:-1 tvg-id="ApnaPunjabTV.in" status="timeout",Apna Punjab (720p)
+#EXTINF:-1 tvg-id="ApnaPunjabTV.in" status="error",Apna Punjab (720p)
 http://cdn5.live247stream.com/apnapunjab/tv/playlist.m3u8
-#EXTINF:-1 tvg-id="ArtistAloud.in" status="timeout",Artist Aloud (1080p)
+#EXTINF:-1 tvg-id="ArtistAloud.in" status="timeout",Artist Aloud (1080p) [Not 24/7]
 https://live.hungama.com/linear/artist-aloud/playlist.m3u8
-#EXTINF:-1 tvg-id="AshrafiChannel.in" status="timeout",Ashrafi Channel (484p)
+#EXTINF:-1 tvg-id="AshrafiChannel.in" status="timeout",Ashrafi Channel (484p) [Not 24/7]
 http://ashrafichannel.livebox.co.in/ashrafivhannelhls/live.m3u8
 #EXTINF:-1 tvg-id="AsianetMiddleEast.in" status="timeout",Asianet Middle East (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0k6/index.m3u8
@@ -51,11 +51,11 @@ http://cdn19.live247stream.com/channely/tv/playlist.m3u8
 https://cnbcbazar-lh.akamaihd.net/i/cnbcbajar_1@178933/index_5_av-p.m3u8
 #EXTINF:-1 tvg-id="DDNational.in" status="online",DD National (576p)
 http://103.199.161.254/Content/ddnational/Live/Channel(DDNational)/index.m3u8
-#EXTINF:-1 tvg-id="DDNews.in" status="timeout",DD News (1080p) [Not 24/7]
-https://hls.youtb.workers.dev/channel/UCKwucPzHZ7zCUIf7If-Wo1g.m3u8
 #EXTINF:-1 tvg-id="DDNews.in" status="timeout",DD News (576p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://webcast.gov.in/
 https://playhls.media.nic.in/hls/live/ddnews/ddnews.m3u8
+#EXTINF:-1 tvg-id="DDNews.in" status="error",DD News (1080p) [Not 24/7]
+https://hls.youtb.workers.dev/channel/UCKwucPzHZ7zCUIf7If-Wo1g.m3u8
 #EXTINF:-1 tvg-id="DDSports.in" status="online",DD Sports (576p)
 http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8
 #EXTINF:-1 tvg-id="Dhamaal.in" status="timeout",Dhamaal (1080p) [Not 24/7]
@@ -102,7 +102,7 @@ https://vidcdn.vidgyor.com/janamtv-origin/liveabr/playlist.m3u8
 http://14.199.164.20:4001/play/a0ja/index.m3u8
 #EXTINF:-1 tvg-id="JantaTV.in" status="timeout",Janta TV (360p) [Not 24/7]
 https://live.wmncdn.net/jantatv/live.stream/index.m3u8
-#EXTINF:-1 tvg-id="JanTV.in" status="timeout",Jan TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="JanTV.in" status="error",Jan TV (720p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCjmnq35TvJ1J8JZS49OPg-Q.m3u8
 #EXTINF:-1 tvg-id="JeevanTV.in" status="online",Jeevan TV (576p)
 http://103.199.161.254/Content/jeevan/Live/Channel(Jeevan)/index.m3u8
@@ -110,7 +110,7 @@ http://103.199.161.254/Content/jeevan/Live/Channel(Jeevan)/index.m3u8
 https://cdn.smartstream.video/smartstream-us/jonakk/jonakk/playlist.m3u8
 #EXTINF:-1 tvg-id="KadakHits.in" status="timeout",Kadak Hits (1080p) [Not 24/7]
 https://live.hungama.com/linear/kadak-hits/playlist.m3u8
-#EXTINF:-1 tvg-id="KairaliNews.in" status="timeout",Kairali News (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KairaliNews.in" status="error",Kairali News (720p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCkCWitaToNG1_lR-Si1oMrg.m3u8
 #EXTINF:-1 tvg-id="KairaliTV.in" status="online",Kairali TV (480p)
 http://103.199.161.254/Content/kairali/Live/Channel(Kairali)/index.m3u8
@@ -140,7 +140,7 @@ https://vidcdn.vidgyor.com/kat-origin/liveabr/playlist.m3u8
 https://932y4x26ljv8-hls-live.5centscdn.com/victers/tv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="MahaMovie.in" status="timeout",Maha Movie (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0q7/index.m3u8
-#EXTINF:-1 tvg-id="MalabarNews.in" status="error",Malabar News (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MalabarNews.in" status="timeout",Malabar News (720p) [Not 24/7]
 http://cloud.logicwebs.in:1935/live/malabarnews/playlist.m3u8
 #EXTINF:-1 tvg-id="MalabarVision.in" status="timeout",Malabar Vision (720p)
 http://cdn1.logicwebs.in:1935/malabar/malabar/playlist.m3u8
@@ -150,7 +150,7 @@ http://103.78.18.137:1935/live/mlpchannel/chunklist.m3u8
 http://103.199.161.254/Content/manoramanews/Live/Channel(ManoramaNews)/index.m3u8
 #EXTINF:-1 tvg-id="MathrubhumiNews.in" status="online",Mathrubhumi News (576p) [Not 24/7]
 http://103.199.161.254/Content/mathrubhuminews/Live/Channel(Mathrubhuminews)/index.m3u8
-#EXTINF:-1 tvg-id="MathrubhumiNews.in" status="timeout",Mathrubhumi News (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MathrubhumiNews.in" status="error",Mathrubhumi News (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCwXrBBZnIh2ER4lal6WbAHw.m3u8
 #EXTINF:-1 tvg-id="MazhavilManorama.in" status="timeout",Mazhavil Manorama (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0kd/index.m3u8
@@ -172,32 +172,32 @@ http://103.199.160.85/Content/musicindia/Live/Channel(MusicIndia)/index.m3u8
 https://namdhari.tv/live/sbs1.m3u8
 #EXTINF:-1 tvg-id="NazranaMusic.in" status="timeout",Nazrana (720p) [Not 24/7]
 https://live.hungama.com/linear/nazrana/playlist.m3u8
-#EXTINF:-1 tvg-id="NCV.in" status="online",NCV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NCV.in" status="error",NCV (720p) [Not 24/7]
 http://131.153.22.8:1935/NCV/ncvstream/playlist.m3u8
 #EXTINF:-1 tvg-id="NDTV24x7.in" status="timeout",NDTV 24X7 (480p) [Not 24/7]
 https://ndtv24x7elemarchana.akamaized.net/hls/live/2003678/ndtv24x7/master.m3u8
 #EXTINF:-1 tvg-id="NDTVIndia.in" status="timeout",NDTV India (480p) [Not 24/7]
 https://ndtvindiaelemarchana.akamaized.net/hls/live/2003679/ndtvindia/master.m3u8
+#EXTINF:-1 tvg-id="NDTVProfit.in" status="blocked",NDTV Profit [Geo-blocked]
+https://ndtv.live-s.cdn.bitgravity.com/cdn-live/_definst_/ndtv/live/ndtv_profit.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NDTVProfit.in" status="timeout",NDTV Profit (480p)
 https://ndtvprofitelemarchana.akamaized.net/hls/live/2003680-b/ndtvprofit/master.m3u8
 #EXTINF:-1 tvg-id="NDTVProfit.in" status="timeout",NDTV Profit (480p) [Not 24/7]
 https://ndtvprofitelemarchana.akamaized.net/hls/live/2003680/ndtvprofit/master.m3u8
-#EXTINF:-1 tvg-id="NDTVProfit.in" status="timeout",NDTV Profit [Geo-blocked]
-https://ndtv.live-s.cdn.bitgravity.com/cdn-live/_definst_/ndtv/live/ndtv_profit.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="News7Tamil.in" status="error",News 7 Tamil (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UC2f4w_ppqHplvjiNaoTAK9w.m3u8
-#EXTINF:-1 tvg-id="News18TamilNadu.in" status="timeout",News 18 Tamil (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="News18TamilNadu.in" status="error",News 18 Tamil (720p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCat88i6_rELqI_prwvjspRA.m3u8
-#EXTINF:-1 tvg-id="NewsJ.in" status="timeout",News J (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="NewsJ.in" status="error",News J (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCsfh2Zb7-m4qzT8jLhK_Fzw.m3u8
 #EXTINF:-1 tvg-id="OneTV.in" status="online",One TV (720p)
 http://137.59.86.218:1935/live/onetv/playlist.m3u8
 #EXTINF:-1 tvg-id="PolimerNews.in" status="blocked",Polimer News (720p) [Geo-blocked]
 https://versewsa.pc.cdn.bitgravity.com/versewsa/live/polimernews.smil/chunklist_b1800000.m3u8
-#EXTINF:-1 tvg-id="PolimerNews.in" status="timeout",Polimer News (1080p) [Not 24/7]
-https://hls.youtb.workers.dev/channel/UC8Z-VjXBtDJTvq6aqkIskPg.m3u8
 #EXTINF:-1 tvg-id="PolimerNews.in" status="timeout",Polimer News (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0lg/index.m3u8
+#EXTINF:-1 tvg-id="PolimerNews.in" status="error",Polimer News (1080p) [Not 24/7]
+https://hls.youtb.workers.dev/channel/UC8Z-VjXBtDJTvq6aqkIskPg.m3u8
 #EXTINF:-1 tvg-id="PopPataka.in" status="timeout",Pop Pataka (480p) [Not 24/7]
 https://live.hungama.com/linear/pop-pataka/playlist.m3u8
 #EXTINF:-1 tvg-id="PrameyaNews7.in" status="timeout",Pramaya News7 (576p) [Not 24/7]
@@ -224,15 +224,15 @@ https://republic.pc.cdn.bitgravity.com/live/bharat_hls/master.m3u8
 https://weblive.republicworld.com/liveorigin/republictv/playlist.m3u8
 #EXTINF:-1 tvg-id="SafariTV.in" status="timeout",Safari TV (480p) [Not 24/7]
 https://j78dp346yq5r-hls-live.5centscdn.com/safari/live.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="SanaPlus.in" status="error",Sana Plus (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SanaPlus.in" status="timeout",Sana Plus (720p) [Not 24/7]
 http://media.7starcloud.com:1935/live/sanatv2/playlist.m3u8
 #EXTINF:-1 tvg-id="SanaTV.in" status="timeout",Sana TV (576p) [Not 24/7]
 http://hdserver.7starcloud.com:1935/sanatv/sanatv/playlist.m3u8
-#EXTINF:-1 tvg-id="SathiyamTV.in" status="timeout",Sathiyam TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="SathiyamTV.in" status="error",Sathiyam TV (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UC2ziCMHFPWkFHjocUMXT__Q.m3u8
 #EXTINF:-1 tvg-id="ShalomTVIndia.in" status="timeout",Shalom TV (720p) [Not 24/7]
 https://api.new.livestream.com/accounts/25038049/events/7483919/live.m3u8
-#EXTINF:-1 tvg-id="ShekinahTV.in" status="timeout",Shekinah TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="ShekinahTV.in" status="error",Shekinah TV (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCHtYUfPnQci6GoUpPlWfrOg.m3u8
 #EXTINF:-1 tvg-id="Shubhsandesh.in" status="timeout",Shubhsandesh (720p) [Not 24/7]
 https://6284rn2xr7xv-hls-live.wmncdn.net/shubhsandeshtv1/live123.stream/index.m3u8
@@ -255,7 +255,7 @@ https://timesnow-lh.akamaihd.net/i/TNHD_1@129288/master.m3u8
 https://pubads.g.doubleclick.net/ssai/event/1mR1QUQ3Tg-VuKfiyjwNuA/master.m3u8
 #EXTINF:-1 tvg-id="TimesNowNavbharat.in" status="timeout",Times Now Navbharat [Geo-blocked]
 https://pubads.g.doubleclick.net/ssai/event/nRWQsGoJSzmcErJFgAy67g/master.m3u8
-#EXTINF:-1 tvg-id="TimeVisionNews.in" status="timeout",Time Vision News (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TimeVisionNews.in" status="error",Time Vision News (720p) [Not 24/7]
 http://cloud.logicwebs.in:1935/timevision/timevision/playlist.m3u8
 #EXTINF:-1 tvg-id="TV9Kannada.in" status="timeout",TV9 Kannada (720p) [Not 24/7]
 https://vidcdn.vidgyor.com/tv9kannada-origin/live/playlist.m3u8
@@ -275,11 +275,11 @@ https://d1vd9xhq6jlm48.cloudfront.net/out/v1/71fcc57c8fe74c5b938451bc2435a93e/in
 http://103.81.104.118/hls/stream8.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",A NEWS Maffia Tv Desi Musix
 http://newsmaffia.casacam.net:1935/newsmaffia/newsmaffia/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Desi Beats HD (720p)
+#EXTINF:-1 tvg-id="" status="error",Desi Beats HD (720p)
 http://cdn7.live247stream.com/desibeats/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Desi Channel (720p)
 https://live.wmncdn.net/desichannel/7e2dd0aed46b70a5c77f4affdb702e4b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",Desi Plus (720p)
+#EXTINF:-1 tvg-id="" status="error",Desi Plus (720p)
 http://cdn2.live247stream.com/desiplus/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",FASTWAY NEWS (720p) [Not 24/7]
 http://163.47.214.155:1935/fwnews/live/playlist.m3u8
@@ -299,13 +299,13 @@ https://gvjyg2n9doem-hls-live.5centscdn.com/navmediastream/d0dbe915091d400bd8ee7
 http://cdn12.henico.net:8080/live/sadatv/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",Sardari TV (1080p) [Not 24/7]
 http://158.69.124.9:1935/sardaritv/sardaritv/playlist.m3u8
-#EXTINF:-1 tvg-id="SonyBBCEarth.in" status="timeout",Sony BBC Earth HD (1080p)
+#EXTINF:-1 tvg-id="" status="timeout",Sony BBC Earth HD (1080p)
 http://103.81.104.118/hls/stream5.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Star Cinema (576p)
 http://c0.cdn.trinity-tv.net/stream/nh9u54a7sfnc2hwzxr2zwykwkqm43bgyyzsm68ybbbnjei8kytwcgs3zm5gnw5c6efa5gr3fadzqe686w8gj2eaehrj89wvujvqza3kez78dtknwbbmnqf79yygmqqg7e9pnc3i3bpywjkiqrwke94yf.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Star Family (576p)
 http://c0.cdn.trinity-tv.net/stream/zfmjgma9zn46fa797ez9fgkw7msh9mj4tppspg23gey6mmx5fqiy7ky3jqx4uhgsfsrd8r76si8ykb2anw9442g4qkq5fzpdvwdqf5te24ixu9zrx3aesm9fzt59q5y2s8qwgbqhvf6d3z5bjy3qb2t4.m3u8
-#EXTINF:-1 tvg-id="StarGold.in" status="timeout" user-agent="stream",Star Gold HD (1080p)
+#EXTINF:-1 tvg-id="" status="timeout" user-agent="stream",Star Gold HD (1080p)
 #EXTVLCOPT:http-user-agent=stream
 http://103.81.104.118/hls/stream19.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Suriyan TV
@@ -319,347 +319,7 @@ http://95.216.167.183:5080/LiveApp/streams/443106610169904881506470.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Vyas NIC (480p)
 #EXTVLCOPT:http-referrer=https://webcast.gov.in/
 https://hls.media.nic.in/hls/live/vyas/vyas.m3u8
-#EXTINF:-1 tvg-id="" status="online",Xplore Channel (720p)
+#EXTINF:-1 tvg-id="" status="error",Xplore Channel (720p)
 http://cdn18.live247stream.com/ndachannel/tv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Zainabia Channel
+#EXTINF:-1 tvg-id="" status="timeout",Zainabia Channel
 https://zainabia.livebox.co.in/ZainabiaChannelhls/channel.m3u8
-#EXTINF:-1 tvg-id="1YesNews.in" status="online",1 Yes News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UC3mHciwDcBC8XucNnRt9C6A/live
-#EXTINF:-1 tvg-id="24News.in" status="online",24 News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCup3etEdjyF1L3sRbU-rKLw/live
-#EXTINF:-1 tvg-id="4TVNews.in" status="online",4TV News
-https://4tvstream.in/4tv/4tv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="9XJhakaas.in" status="error",9X Jhakaas [Geo-blocked]
-https://yuppindottclorigin.akamaized.net/270422/smil:9xjhakaas.smil/playlist.m3u8?dw=60&hdnts=st=1673263784~exp=1673278184~acl=!*/270422/smil:9xjhakaas.smil/*!/payload/9xm_5_21691719_NA_IN_NA_9xm_1037/*~hmac=65d79735241bc6a4ac2d5565446c29c86e993383f5763ca977747499a6bae09d&ud=1037_9xm_21691719_live_-1_-1&b=100-2500
-#EXTINF:-1 tvg-id="9XTashan.in" status="error",9X Tashan [Geo-blocked]
-https://yuppindottclorigin.akamaized.net/270422/smil:9xtashan.smil/playlist.m3u8?dw=60&hdnts=st=1673263882~exp=1673278282~acl=!*/270422/smil:9xtashan.smil/*!/payload/9xm_5_21691719_NA_IN_NA_9xm_1037/*~hmac=4897a2c46eee059897553c686948f5625b85354b221e8e41b95159bf39791faf&ud=1037_9xm_21691719_live_-1_-1&b=100-2500
-#EXTINF:-1 tvg-id="99TV.in" status="online",99TV 
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCl5YgCiwSRVOiC2Nd1P9v1A/live
-#EXTINF:-1 tvg-id="6TVTelugu.in" status="online",6 TV Telugu 
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCYgQ_QOT21HE1nI4a1KyM-A/live
-#EXTINF:-1 tvg-id="FirstIndiaNews.in" status="online",First India News 
-https://xlbor37ydvaj-hls-live.wmncdn.net/firstindianewstv1/live.stream/chunks.m3u8
-#EXTINF:-1 tvg-id="AadinathTV.in" status="online",Aadinath TV 
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCY8r_lukdRi5cK5wjK_O3qw/live
-#EXTINF:-1 tvg-id="ABNAndhraJyoti.in" status="online",ABN Andhra Jyoti 
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/cdn/live/video/x8cfur4
-#EXTINF:-1 tvg-id="ABPAnanda.in" status="online",ABP Ananda 
-https://abplivetv.akamaized.net/hls/live/2043012/ananda/master_720p.m3u8
-#EXTINF:-1 tvg-id="ABPAsmita.in" status="online",ABP Asmita 
-https://d15zw4ny9nux40.cloudfront.net/out/v1/b2480519a89247d1855be3af8c2d3217/index_11.m3u8
-#EXTINF:-1 tvg-id="ABPGanga.in" status="online",ABP Ganga 
-https://abplivetv.akamaized.net/hls/live/2043013/ganga/master.m3u8
-#EXTINF:-1 tvg-id="ABPMajha.in" status="online",ABP Majha 
-https://abplivetv.akamaized.net/hls/live/2043011/manjha/master.m3u8
-#EXTINF:-1 tvg-id="ABPSanjha.in" status="online",ABP Sanjha 
-https://d316coox0if60r.cloudfront.net/out/v1/7723f2221c3449c3910aaa8f91592bf0/index_6.m3u8
-#EXTINF:-1 tvg-id="AgamvaniChannel.in" status="online",Agamvani Channel 
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UClOK2dPmq8k8Xwii_4TjRnQ/live
-#EXTINF:-1 tvg-id="AngelTVAfrica.in" status="online",Angel TV Africa 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelafrica_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVAmerica.in" status="online",Angel TV America 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelamerica_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVArabia.in" status="online",Angel TV Arabia 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelarabia_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVAustralia.in" status="online",Angel TV Australia 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelaustralia_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVChinese.in" status="online",Angel TV Chinese 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelchinese_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVEspanol.in" status="online",Angel TV Espanol 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelspanish_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVEurope.in" status="online",Angel TV Europe 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angeleurope_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVFarEast.in" status="online",Angel TV Far East 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelfareast_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVIndia.in" status="online",Angel TV India 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelindia_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVPortgues.in" status="online",Angel TV Portugues 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelportuguese_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVHebrew.in" status="online",Angel TV Hebrew 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelhebrew_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AngelTVRussian.in" status="online",Angel TV Russian 
-https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelrussia_all/playlist.m3u8
-#EXTINF:-1 tvg-id="APN.in" status="online",APN 
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCfOHfcNn2NCaof9Wif2JgVQ/live
-#EXTINF:-1 tvg-id="AradanaTV.in" status="online",Aradana TV 
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCMnz0yLX3afzFc8y822YO5g/live
-#EXTINF:-1 tvg-id="ArgusNews.in" status="online",Argus News 
-https://live.argusnews.in/hls/argustv.m3u8
-#EXTINF:-1 tvg-id="ArihantTV.in" status="online",Arihant TV 
-https://aasthaott.akamaized.net/170822/smil:arihant.smil/playlist.m3u8?hdnts=st=1673344447~exp=1673366047~acl=!*/170822/smil:arihant.smil/*!/payload/yupptvott_5_-1_05af38a1-efbf-6434-abb3-898c80dcb262_CA_24.235.164.94_aastha_3_channel_3_-1/*~data=yupptvott_5_-1_05af38a1-efbf-6434-abb3-898c80dcb262_CA_24.235.164.94_aastha_3_channel_3_-1~hmac=a43dfc453af6374f1a379de0e19720ee7c7dcdb9368ac9f0c80b9e652dbec218
-#EXTINF:-1 tvg-id="AwakeningTV.in" status="online",Awakening TV 
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCQ8kxAu_on_YzVPMjB03rqA/live
-#EXTINF:-1 tvg-id="BalleBalle.in" status="online",Balle Balle 
-https://mcncdndigital.com/balleballetv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="BansalNews.in" status="online",Bansal News 
-https://8yzmq2gbdvax-hls-live.wmncdn.net/bansalnewstv1/live1.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="BhakthiTV.in" status="online",Bhakthi TV 
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCSzOZ97LOpU-_AVlGfmD4rQ/live
-#EXTINF:-1 tvg-id="Bharat24.in" status="online",Bharat 24 
-https://legitpro.co.in/bharat24live/bharat24live/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="BharatSamacher.in" status="online",Bharat Samachar 
-https://idvd.multitvsolution.com/idvo/bharatsamachar.m3u8
-#EXTINF:-1 tvg-id="BtvNews.in" status="online",Btv News 
-https://vidcdn.vidgyor.com/btv-origin/liveabr/playlist.m3u8
-#EXTINF:-1 tvg-id="CalvaryTV.in" status="timeout",Calvary TV [Geo-blocked] 
-https://player.mslivestream.net/mslive/71e7f7cc7dc7c51206b7b3bbb51e3052.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="CaptainNews.in" status="online",Captain News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCno6OgN7-NDmRTNBgqWevlw/live
-#EXTINF:-1 tvg-id="ChannelDivya.in" status="online",Channel Divya
-https://mcncdndigital.com/divyatv/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="ChannelWIN.in" status="online",Channel WIN
-https://streamer.winfoundation.in:8081/live/winstream/playlist.m3u8
-#EXTINF:-1 tvg-id="ChardiklaTimeTV.in" status="online",Chardikla Time TV
-https://webrtc.lapunjabiradio.com:5443/LiveApp/streams/chardiklatimetvindia_abr.m3u8
-#EXTINF:-1 tvg-id="ChardiklaTimeTVNorthAmerica.in" status="online",Chardikla Time TV North America
-https://webrtc.lapunjabiradio.com:5443/LiveApp/streams/chardiklanorthamerica_abr.m3u8
-#EXTINF:-1 tvg-id="CNBCAwaaz.in" status="online",CNBC Awaaz
-https://n18syndication.akamaized.net/bpk-tv/CNBC_Awaaz_NW18_MOB/output01/CNBC_Awaaz_NW18_MOB-audio_97234_eng=97200-video=1290000.m3u8
-#EXTINF:-1 tvg-id="CNBCTV18.in" status="online",CNBC TV18
-https://nw18live.akamaized.net/hls/live/2094411/cnbctv18intl/master.m3u8?hdnts=exp=1673520756~acl=/*~hmac=8b26e782433da10dbbbd37637dfbbd86c5a3c16c5a750f282d54ef11ece86c16
-#EXTINF:-1 tvg-id="DDIndia.in" status="online",DD India
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCGDQNvybfDDeGTf4GtigXaw/live
-#EXTINF:-1 tvg-id="DDUrdu.in" status="online",DD Urdu
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCu9Fj9QRAg26ZY9DhF8HSrQ/live
-#EXTINF:-1 tvg-id="DheeranTV.in" status="online",Dheeran TV 
-https://5c75277727cd1.streamlock.net/dheerantv/dheerantv/playlist.m3u8
-#EXTINF:-1 tvg-id="DY365.in" status="online",DY 365 
-https://cdn.smartstream.video/smartstream-us/dy365/dy365/playlist.m3u8
-#EXTINF:-1 tvg-id="FatehTV.in" status="online",Fateh TV 
-https://rtmp.smartstream.video/fatehtv/fatehtv/playlist.m3u8
-#EXTINF:-1 tvg-id="Filamchi.in" status="online",Filamchi 
-https://epiconvh.s.llnwi.net/filamchi/master.m3u8
-#EXTINF:-1 tvg-id="FMNews.in" status="online",FM News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCwGojq7oNNrMNaAMtyBhK0Q/live
-#EXTINF:-1 tvg-id="GaundaPunjabTV.in" status="online",Gaunda Punjab TV
-http://cdn6.live247stream.com/gaundapunjab/tv/playlist.m3u8
-#EXTINF:-1 tvg-id="GoodnessTV.in" status="online",Goodness TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCEp6wI1bKW2BiZoPl2lRUow/live
-#EXTINF:-1 tvg-id="GoodNewsTV.in" status="online",GoodNews TV
-https://bpgdlwwar3ze-hls-live.wmncdn.net/goodnews/live.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="GraceTV.in" status="online",Grace TV
-https://hls-live-web-media.cdn01.net/default/stream_30448.m3u8?EG2bEuVlHaYOnWC_gpw6r8RWd3cbC9OKpTipxKcQBdk4pMRS9tX9AJsxpHhy9LLLOfy3bAS1MKjRxyVkvP8dMv-E7TItFMfJ0sVywpnP4s6l5KhpadFOTZMurYis_3kMCK00ylX-CdRLqPywyoISVFH1J9GfZSIxFxQ7D0HsZMJcDrmnHlTDIn-qIM0bayZBq_BOtM4WaZRr8t2CqnVaaZOhbN9qylY6I_xLCMZwiXEcogBecMC87W6mnRiYMReQ6NNHfgXc9_wRMukstPZx&channel_id=30448&source=othersites&device_id=222690814-0888f2dbdff97923c3f5db94c62266ac&lcp=2&client_id=950794673008128975&play_id=1673364127140233
-#EXTINF:-1 tvg-id="Gyandarshan.in" status="online",Gyandarshan
-http://14.139.40.249:1935/GD1/gd/playlist.m3u8
-#EXTINF:-1 tvg-id="GNT.in" status="online",GNT
-https://feeds.intoday.in/gnt/api/master.m3u8
-#EXTINF:-1 tvg-id="Gyandhara.in" status="timeout",Gyandhara [Geo-blocked]
-http://stream.ignouonline.ac.in:1935/Gyan/Gyandhara/playlist.m3u8
-#EXTINF:-1 tvg-id="HareKrsnaTV.in" status="online",Hare Krsna TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCZ8S3qwowiFztAQBRTawWfA/live
-#EXTINF:-1 tvg-id="HindiKhabar.in" status="timeout",Hindi Khabar [Geo-blocked]
-https://phando014.s.llnwi.net/hls/modn/list/8001/playlist.m3u8
-#EXTINF:-1 tvg-id="HMTV.in" status="online",HMTV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCNZOrs1QBt8cJnv9ud96qRA/live
-#EXTINF:-1 tvg-id="HyderTV.in" status="online",Hyder TV
-https://cdn.live247stream.com/hyder/tv/playlist.m3u8
-#EXTINF:-1 tvg-id="HarvestTV247.in" status="online",Harvest TV 24x7
-https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvesttvlive1/bbb19eae240ec100af921d511efc86a0.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="HarvestTVKeralam.in" status="online",Harvest TV Keralam
-https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvestenglish/d1796a22d24e8696c7d5d0b5c349fdd2.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="HarKhabar.in" status="online",Har Khabar
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCkfMPrLxnaGaKon4ccRJ9Tg/live
-#EXTINF:-1 tvg-id="IBC24.in" status="online",IBC 24
-https://livetv.ibc24.in/livestream.m3u8
-#EXTINF:-1 tvg-id="Ind24.in" status="online",Ind 24
-https://gmkd5nkednxo-hls-live.wmncdn.net/ind24tv/live.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="IndiaTodayInternational.in" status="online",India Today International
-https://feeds.intoday.in/hltapps/api/master.m3u8
-#EXTINF:-1 tvg-id="IndiaTV.in" status="online",India TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCttspZesZIDEwwpVIgoZtWQ/live
-#EXTINF:-1 tvg-id="IPlusTV.in" status="online",IPlus TV
-https://5c75277727cd1.streamlock.net/iplustv/iplustv/playlist.m3u8
-#EXTINF:-1 tvg-id="IshwarBhaktiTV.in" status="online",Ishwar Bhakti TV
-https://6n3yow8pl9ok-hls-live.5centscdn.com/ishwartvlive/tv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="INH24x7.in" status="online",INH 24x7
-https://7epd6o8edk9b-hls-live.wmncdn.net/inh24/live.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="JayaPlus.in" status="online",Jaya Plus
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCOP4Gbw-T1ofcW8vyL89ZDw/live
-#EXTINF:-1 tvg-id="JK24x7News.in" status="online",JK 24x7 News
-https://livestream.jktvonline.com/hls/jk.m3u8
-#EXTINF:-1 tvg-id="JayaPlus.in" status="online",Jaya Plus
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCOP4Gbw-T1ofcW8vyL89ZDw/live
-#EXTINF:-1 tvg-id="JinvaniChannel.in" status="online",Jinvani Channel
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCDNNWj0oAFXngcwHAwnwP4w/live
-#EXTINF:-1 tvg-id="KashishNews.in" status="online",Kashish News
-https://kashishnews.livebox.co.in/kashishnewshls/live.m3u8
-#EXTINF:-1 tvg-id="KCLTV.in" status="online",KCL TV
-http://kcltv.livebox.co.in/kclhls/live.m3u8
-#EXTINF:-1 tvg-id="KhabarFast.in" status="online",Khabar Fast
-https://live.gbtechnology.in/khabarfast/khabarfast/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="KNewsIndia.in" status="online",K News India
-https://knews.livebox.co.in/youtubehls/live.m3u8
-#EXTINF:-1 tvg-id="KolkataTV.in" status="timeout",Kolkata TV [Geo-blocked]
-https://onair.kolkatatv.org/hls/goktvlive.m3u8
-#EXTINF:-1 tvg-id="LivingIndiaNews.in" status="online",Living India News
-https://livelegitpro.in/hls14/livingindia/index.m3u8
-#EXTINF:-1 tvg-id="LokSabhaTV.in" status="online",Lok Sabha TV
-https://playhls.media.nic.in/live/lstv-360p/index.m3u8
-#EXTINF:-1 tvg-id="LokshahiNews.in" status="online",Lokshahi News
-https://see.lokshahi.live/live/index.m3u8
-#EXTINF:-1 tvg-id="LoveWorldIndia.in" status="online",LoveWorld India
-https://transcoding29.livebox.co.in/loveworldhls/loveworld.m3u8
-#EXTINF:-1 tvg-id="MadhaTV.in" status="online",Madha TV
-https://60e68b19dd194.streamlock.net:55/madhatv/madhatv.stream_HDp/playlist.m3u8
-#EXTINF:-1 tvg-id="MahaaNews.in" status="online",Mahaa News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCDKjhgRoPF1CQk7HluMz23A/live
-#EXTINF:-1 tvg-id="Mh1Music.in" status="online",Mh 1 Music
-https://mhonepunjabi.in/hls/0/stream.m3u8
-#EXTINF:-1 tvg-id="Mh1News.in" status="online",Mh 1 News
-https://mhonenews.in/hls/0/stream.m3u8
-#EXTINF:-1 tvg-id="MHOneShraddha.in" status="online",MH One Shraddha
-https://mhoneshaddha.com/hls/0/stream.m3u8
-#EXTINF:-1 tvg-id="MKNMarathi.in" status="online",MKN Marathi
-https://mhoneshaddha.com/hls/0/stream.m3u8
-#EXTINF:-1 tvg-id="NandighoshaTV.in" status="online",Nandighosha TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCCTrqrHKqdS915K-TpMG6pg/live
-#EXTINF:-1 tvg-id="NDTVProfit.in" status="online",NDTV Profit
-https://ndtvprofitelemarchana.akamaized.net/hls/live/2003680/ndtvprofit/ndtvprofitmaster.m3u8
-#EXTINF:-1 tvg-id="News11.in" status="online",News 11
-https://nw18live.cdn.jio.com/bpk-tv/News18_India_NW18_MOB/output01/index.m3u8?__hdnea__=st=1673437433~exp=1673523833~acl=/*~hmac=7abd79ef862e873055994516c69283dfb0e723d95b1de95662c9f3c8b5e7ef2e
-#EXTINF:-1 tvg-id="News1India.in" status="online",News 1 India
-https://932y4563djv8-hls-live.qezycdn.com/newsfirst/cb582cc2f3b08e0bbd1c9f3d23541e26.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="News24.in" status="online",News 24
-https://vidcdn.vidgyor.com/news24-origin/liveabr/playlist.m3u8
-#EXTINF:-1 tvg-id="NewsBartaman24x7.in" status="online",News Bartaman 24x7
-https://newsbartaman24x7.livebox.co.in/newsbartamanhls/live.m3u8
-#EXTINF:-1 tvg-id="NewsNation.in" status="online",News Nation
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/cdn/live/video/x7t0g3i
-#EXTINF:-1 tvg-id="NewsStateMPCHG.in" status="online",News State MP & CHG
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/cdn/live/video/x7t5ss4
-#EXTINF:-1 tvg-id="NewsStateUPUK.in" status="online",News State UP & UK
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/cdn/live/video/x7t5r1g
-#EXTINF:-1 tvg-id="NKTV24x7.in" status="online",NK TV 24x7
-https://rtmp.smartstream.video/nktvlive/nktvlive/playlist.m3u8
-#EXTINF:-1 tvg-id="NortheastLive.in" status="online",Northeast Live
-https://5b48d7e1b4bce.streamlock.net/myapp/mbrstream/playlist.m3u8
-#EXTINF:-1 tvg-id="NTVTelugu.in" status="online",NTV Telugu
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCumtYpCY26F6Jr3satUgMvA/live
-#EXTINF:-1 tvg-id="OdishaTV.in" status="online",Odisha TV
-https://otvvid-live.pc.cdn.bitgravity.com/otv-origin/live/playlist.m3u8
-#EXTINF:-1 tvg-id="ParasGold.in" status="online",Paras Gold
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UC6E1pvhGa55AaZ-svF70ViA/live
-#EXTINF:-1 tvg-id="PeppersTV.in" status="online",Peppers TV
-https://932y483pdjv8-hls-live.5centscdn.com/stream/7d4b04111e8149cf73a54550b7eb4946.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="Pitaara.in" status="online",Pitaara
-https://ott.livelegitpro.in/pitaratv/pitaratv/index.fmp4.m3u8
-#EXTINF:-1 tvg-id="PowervisionTV.in" status="online",Powervision TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCzxfpzSF7mz8j7bNIXyZWmA/live
-#EXTINF:-1 tvg-id="PragNews.in" status="online",Prag News
-http://free.fullspeed.tv/query?url=https://www.twitch.tv/pragnews
-#EXTINF:-1 tvg-id="PrathamKhabar24x7.in" status="online",Pratham Khabar 24x7
-https://livelegitpro.in/hls2/newstime/index.m3u8
-#EXTINF:-1 tvg-id="PrimeNews.in" status="online",Prime News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCnH1cUnkvs2c8wcHl5voamA/live
-#EXTINF:-1 tvg-id="PublicTV.in" status="online",Public TV
-https://livestream.knowtable.xyz:5443/show/streams/Publictv_adaptive.m3u8
-#EXTINF:-1 tvg-id="PuthiyaThalaimurai.in" status="online",Puthiya Thalaimurai
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCmyKnNRH0wH-r8I-ceP-dsg/live
-#EXTINF:-1 tvg-id="RaftaarMedia.in" status="online",Raftaar Media
-https://6n3yorwpy9ok-hls-live.5centscdn.com/raftaarmedia/243bd1ce0387f18005abfc43b001646a.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="RakshanaTV.in" status="online",Rakshana TV
-https://6n3yopznd9ok-hls-live.5centscdn.com/RAKSHANA/271ddf829afeece44d8732757fba1a66.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="RepublicBangla.in" status="online",Republic Bangla
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCajVjEHDoVn_AHsunUZz_EQ/live
-#EXTINF:-1 tvg-id="RPlus.in" status="online",R Plus
-https://thelegitpro.in/pntv/rplusnews24x7/index.fmp4.m3u8
-#EXTINF:-1 tvg-id="SansadTV.in" status="online",Sansad TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCISgnSNwqQ2i8lhCun3KtQg/live
-#EXTINF:-1 tvg-id="SaamTV.in" status="online",Saam TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UC6cxTsUnfSZrj96KNHhRTHQ/live
-#EXTINF:-1 tvg-id="Sadhna.in" status="online",Sadhna
-https://6n3yow8pl9ok-hls-live.5centscdn.com/devamlive/tv.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="SadhnaPlusNews.in" status="online",Sadhna Plus News
-https://6n3yow8pl9ok-hls-live.5centscdn.com/sadhananewstv/live.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="SakshiTV.in" status="online",Sakshi TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCQ_FATLW83q-4xJ2fsi8qAw/live
-#EXTINF:-1 tvg-id="SandeshNews.in" status="online",Sandesh News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCiAH2s_M6nPfGZk-PpfyPkg/live
-#EXTINF:-1 tvg-id="Sanskar.in" status="online",Sanskar TV
-https://d26idhjf0y1p2g.cloudfront.net/out/v1/cd66dd25b9774cb29943bab54bbf3e2f/index.m3u8
-#EXTINF:-1 tvg-id="SarvDharamSangam.in" status="online",Sarv Dharam Sangam
-https://95eryw7zdwn4-hls-live.wmncdn.net/sarvdharamsangam/tv.stream/index.m3u8
-#EXTINF:-1 tvg-id="SatsangTV.in" status="online",Satsang TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCJeQx6mAyNdPUc9sJA866Xw/live
-#EXTINF:-1 tvg-id="ShubhCinema.in" status="online",Shubh Cinema
-https://d393sxaxig6bax.cloudfront.net/out/v1/589cf2cf44bf42bb941e817a2240d62e/index.m3u8
-#EXTINF:-1 tvg-id="STVHaryanaNews.in" status="online",STV Haryana News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UC6Hd69A3RKgu6Dj52H53ZDw/live
-#EXTINF:-1 tvg-id="SubhartiTV.in" status="online",Subharti TV
-https://fourthvision.livebox.co.in/SubhartiMediahls/Subharti.m3u8
-#EXTINF:-1 tvg-id="SubhavaarthaTV.in" status="online",Subhavaartha TV
-https://2mk9qae4rwyb-hls-live.wmncdn.net/shubhavartha/live.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="SudarshanNews.in" status="online",Sudarshan News
-https://ott.livelegitpro.in/pusa/sudarshantv/index.fmp4.m3u8
-#EXTINF:-1 tvg-id="SunNews.in" status="online",Sun News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCYlh4lH762HvHt6mmiecyWQ/live
-#EXTINF:-1 tvg-id="SuvarnaNews.in" status="online",Suvarna News
-https://vidcdn.vidgyor.com/suvarna-origin/liveabr/playlist.m3u8
-#EXTINF:-1 tvg-id="SVBC.in" status="online",SVBC
-http://player.mslivestream.net/telugu/5d076e5c3d34cb8bb08e54a4bb7e223e.sdp/index.m3u8
-#EXTINF:-1 tvg-id="SVBC3.in" status="online",SVBC 3
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCGa1p3XE8IRtpkPXOe0nFdw/live
-#EXTINF:-1 tvg-id="TaazaTV.in" status="online",Taaza TV
-https://stream.playbox.co.in:19360/taaza/taaza.m3u8
-#EXTINF:-1 tvg-id="ThanthiTV.in" status="online",Thanthi TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UC-JFyL0zDFOsPMpuWu39rPA/live
-#EXTINF:-1 tvg-id="TNews.in" status="online",T News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCu6edg8_eu3-A8ylgaWereA/live
-#EXTINF:-1 tvg-id="TotalTVHaryana.in" status="online",Total TV Haryana
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCx0k4v6bbID9NkTDVy8cKdw/live
-#EXTINF:-1 tvg-id="TribeTV.in" status="online",Tribe TV
-https://server.livelegitpro.in:9899/tribetv/tribetv/index.m3u8
-#EXTINF:-1 tvg-id="TSatNipuna.in" status="online",T-Sat Nipuna
-https://tsatliv.akamaized.net/tsatdvr/smil:tsatnipuna.smil/playlist.m3u8?DVR&hdnts=st=1673534985~exp=1673556585~acl=!*/tsatdvr/smil:tsatnipuna.smil/*!/payload/yupptvott_5_-1_347f6608-b4d9-f49e-a583-d0083c1f777b_CA_24.235.164.94_tsat_2_channel_1_-1/*~data=yupptvott_5_-1_347f6608-b4d9-f49e-a583-d0083c1f777b_CA_24.235.164.94_tsat_2_channel_1_-1~hmac=375acaa5e87a193267a376f37ace86f4682e190d895eee066f82bbe6544dd00d
-#EXTINF:-1 tvg-id="TSatVidya.in" status="online",T-Sat Vidya
-https://tsatliv.akamaized.net/tsatdvr/smil:tsatvidyadvr.smil/playlist.m3u8?DVR&hdnts=st=1673535149~exp=1673556749~acl=!*/tsatdvr/smil:tsatvidyadvr.smil/*!/payload/yupptvott_5_-1_347f6608-b4d9-f49e-a583-d0083c1f777b_CA_24.235.164.94_tsat_2_channel_2_-1/*~data=yupptvott_5_-1_347f6608-b4d9-f49e-a583-d0083c1f777b_CA_24.235.164.94_tsat_2_channel_2_-1~hmac=8252502c305dffee842ab11e36c1f7bc31de491445916958b05b92b19d74f0ca
-#EXTINF:-1 tvg-id="TV100.in" status="online",TV 100
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCAFuowub4VhjQLf3UwGS_HA/live
-#EXTINF:-1 tvg-id="TV9Bangla.in" status="online",TV 9 Bangla
-https://vidcdn.vidgyor.com/tv9bangla-origin/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV9Bharatvarsh.in" status="online",TV 9 Bharatvarsh
-https://vidcdn.vidgyor.com/tv9bharatvarsh-origin/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV9Gujarati.in" status="online",TV 9 Gujarati
-https://vidcdn.vidgyor.com/tv9gujarati-origin/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV9Kannada.in" status="online",TV 9 Kannada
-https://vidcdn.vidgyor.com/tv9kannada-origin/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV9Marathi.in" status="online",TV 9 Marathi
-https://vidcdn.vidgyor.com/tv9marathi-origin/live/playlist.m3u8
-#EXTINF:-1 tvg-id="TV9Telugu.in" status="online",TV 9 Telugu
-https://vidcdn.vidgyor.com/tv9telugu-origin/live/playlist.m3u8
-#EXTINF:-1 tvg-id="V6News.in" status="online",V6 News
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCDCMjD1XIAsCZsYHNMGVcog/live
-#EXTINF:-1 tvg-id="VaanavilTV.in" status="error",Vaanavil TV [Geo-blocked]
-https://6n3yope4d9ok-hls-live.5centscdn.com/vaanavil/TV.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="VanithaTV.in" status="online",Vanitha TV
-http://free.fullspeed.tv/query?url=https://www.youtube.com/channel/UCTcH-GOkexQHWKBWSfOjhPQ/live
-#EXTINF:-1 tvg-id="VasanthTV.in" status="online",Vasanth TV
-https://vasanth.pc.cdn.bitgravity.com/vasanth/secure/live/feed01/chunklist.m3u8?e=0&h=54e44f64b2e6d5122acdf77d01ab7f9f
-#EXTINF:-1 tvg-id="VTVNews.in" status="online",VTV News
-https://5b48d7e1b4bce.streamlock.net/myapp/vtvlive/playlist.m3u8
-#EXTINF:-1 tvg-id="Zee24Kalak.in" status="online",Zee 24 Kalak
-https://d110d403hnzsgm.cloudfront.net/out/v1/09d1f4b09437451b9fbeb39a45ff498e/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDM5MTV9.oJFhpfqkfWTp783J_Vab2IX0Ow1XeURhVHzWCZvn8F4
-#EXTINF:-1 tvg-id="Zee24Taas.in" status="online",Zee 24 Taas
-https://d3vy3je10jkn7h.cloudfront.net/out/v1/f610383ba97c47e3b04d2e1593ff8549/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDQwMjR9.ldp2HEvHbwUGDFyPPa-EMpL4EGtspqxPGUfujwRMPGg
-#EXTINF:-1 tvg-id="Zee24Ghanta.in" status="online",Zee 24 Ghanta
-https://d3dyw3d1wswml0.cloudfront.net/out/v1/c549619d46ce42b28649a25c12f3ee4b/index_10.m3u8
-#EXTINF:-1 tvg-id="ZeeBiharJharkhand.in" status="online",Zee Bihar Jharkhand
-https://d3dxf2v5wg5rcy.cloudfront.net/out/v1/349f643193e347609b16671d8e0bfb4a/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDQyOTB9.bTXrFBmgG1cB08ToqTW36DItFF2B5TX_IUw_wv8IoAw
-#EXTINF:-1 tvg-id="ZeeBusiness.in" status="online",Zee Business
-https://d8gy12azhr71i.cloudfront.net/out/v1/45be109c5b4f44319e882da947377364/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDQ0MzZ9.6Wpzn1xf_DY4qSqCagk8bVejRgLft2HTF9LocCUXLds
-#EXTINF:-1 tvg-id="ZeeDelhiNCRHaryana.in" status="online",Zee Delhi NCR Haryana
-https://z5ak-live.zee5.com/out/v1/8eb7c7f053e34a1ea0f6ec22ec99556d/index.m3u8?hdnts=st=1673539445~exp=1673542445~acl=/out/v1/8eb7c7f053e34a1ea0f6ec22ec99556d/index.m3u8*~hmac=10c72731b700eb968f3b045899d7d13972789731bf42f1145b6d562fa50b7cd1
-#EXTINF:-1 tvg-id="ZeeHindustan.in" status="online",Zee Hindustan
-https://d336l5u76wvq7j.cloudfront.net/out/v1/5990b42d2b7b40bc8e581e90afe6ef94/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDQ2NTh9.cxxdxHAm3kv8SIz5BlK9Mx1MN91UngvEnwRgJO2gf6Q
-#EXTINF:-1 tvg-id="ZeeMadhyaPradeshChhattisgarh.in" status="online",Zee Madhya Pradesh Chhattisgarh
-https://dg2v5dko941am.cloudfront.net/out/v1/176d62f6612f47a4b94e78c5bc1bcee6/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDQ4MDB9.M2iFxs2hgM7GoF7Ir7ALFKAr7sIIBb_I6JhcpdSouZE
-#EXTINF:-1 tvg-id="ZeeNews.in" status="online",Zee News
-https://d233nwklwv8p4.cloudfront.net/out/v1/860cb318d23a4c64b58c9d625281170c/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDQ5NzR9.hJSzIDR0jhWyPTujSiIuieH_xjaLjVIezhpNPdLApDo
-#EXTINF:-1 tvg-id="ZeePunjabHaryanaHimachal.in" status="online",Zee Punjab Haryana Himachal 
-https://d2o99h9y4u86gh.cloudfront.net/out/v1/9effd792d5d24c46b8694ea441af3fe1/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDUxMTN9.hLBAdbsVguCcTTm0ls0TpyP5iP4x2jOb0Hr69B8Vxvs
-#EXTINF:-1 tvg-id="ZeeRajasthan.in" status="online",Zee Rajasthan 
-https://d3596fuob34tr0.cloudfront.net/out/v1/dc9cd568b52340d9a694877ad4b103a8/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDUyMTJ9.d8ETeJhDLL2M1g2Q9YoPgZTyo4aU4ZU8iMO-v2ygzxQ
-#EXTINF:-1 tvg-id="ZeeSalaam.in" status="online",Zee Salaam 
-https://z5ak-live.zee5.com/out/v1/1e2f27f6316f479d8ff83752091d7ab4/index.m3u8?hdnts=st=1673540202~exp=1673543202~acl=/out/v1/1e2f27f6316f479d8ff83752091d7ab4/index.m3u8*~hmac=739c005fd9447f9adddddaa6f1f3360eaec9c13800dff373cf03c9c676985fa7
-#EXTINF:-1 tvg-id="ZeeUttarPradeshUttarakhand.in" status="online",Zee Uttar Pradesh/Uttarakhand 
-https://derxvsp9jqjuq.cloudfront.net/out/v1/268b5323e33b4d6d833cfd1f59366329/index.m3u8?akes=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NzM1NDU0OTF9.kkAsDY--P9q-S7N210gkLsdGU5mEnefehfDLyLMV-Sc
