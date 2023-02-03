@@ -145,8 +145,9 @@ function parseStatus(error) {
   if (!error) return 'online'
 
   switch (error.code) {
+    case 'FFMPEG_UNDEFINED':
+      return null
     case 'HTTP_REQUEST_TIMEOUT':
-    case 'FFMPEG_PROCESS_TIMEOUT':
       return 'timeout'
     case 'HTTP_FORBIDDEN':
     case 'HTTP_UNAUTHORIZED':
