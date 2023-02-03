@@ -26,7 +26,9 @@ async function updateStreams(items = [], results = {}, origins = {}) {
     const result = results[item._id]
     if (result) {
       const status = parseStatus(result.error)
-      stream.set('status', { status })
+      if (status) {
+        stream.set('status', { status })
+      }
 
       if (result.streams.length) {
         const { width, height, bitrate, frame_rate } = parseMediaInfo(result.streams)
