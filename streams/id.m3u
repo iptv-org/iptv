@@ -19,7 +19,7 @@ https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(8e867ae0-b2c0-49
 http://122.248.43.138:1935/ch5/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="BatuTV.id" status="online",Batu TV (576p) [Not 24/7]
 http://117.103.69.219:8080/live/streaming/index.m3u8
-#EXTINF:-1 tvg-id="BayuTVNganjuk.id" status="error",Bayu TV Nganjuk (720p)
+#EXTINF:-1 tvg-id="BayuTVNganjuk.id" status="timeout",Bayu TV Nganjuk (720p)
 https://5bf7b725107e5.streamlock.net/bayutvpersada/bayutvpersada/playlist.m3u8
 #EXTINF:-1 tvg-id="BeritaSatu.id" status="timeout",BeritaSatu (720p)
 https://b1news.beritasatumedia.com/Beritasatu/B1News_manifest.m3u8
@@ -137,7 +137,7 @@ http://edge.metrotvnews.com:1935/live-edge/smil:metro.smil/playlist.m3u8
 https://hls.youtb.workers.dev/channel/UCzl0OrB3-ehunyotIQvK77A.m3u8
 #EXTINF:-1 tvg-id="MGITV.id" status="timeout",MGI TV (720p) [Geo-blocked]
 https://tv.rodja.live/tasik/ngrp:mgitv_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MGSTV.id" status="error",MGS TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="MGSTV.id" status="timeout",MGS TV (720p) [Not 24/7]
 https://cdn.gunadarma.ac.id/streams/mgstv/ingestmgstv.m3u8
 #EXTINF:-1 tvg-id="MQTV.id" status="timeout",MQTV (720p) [Not 24/7]
 https://5bf7b725107e5.streamlock.net/mqtv/mqtv/playlist.m3u8
@@ -212,7 +212,7 @@ https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(2b945e2e-4297-4b
 #EXTINF:-1 tvg-id="SalamTV.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",Salam TV (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch12.m3u8
-#EXTINF:-1 tvg-id="SangajiTV.id" status="error",Sangaji TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SangajiTV.id" status="timeout",Sangaji TV (720p) [Not 24/7]
 https://cdn.gunadarma.ac.id/streams/sangajitv/ingestsangajitv.m3u8
 #EXTINF:-1 tvg-id="SCTV.id" status="online",SCTV (480p) [Geo-blocked]
 http://210.210.155.37/qwr9ew/s/s03/index.m3u8
@@ -426,9 +426,9 @@ http://118.97.50.107/Content/HLS/Live/Channel(TVRIYOGYAKARTA)/index.m3u8
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRIYogyakarta)/index.m3u8
 #EXTINF:-1 tvg-id="TVRIYogyakarta.id" status="timeout",TVRI Yogyakarta (720p)
 http://wpc.d1627.nucdn.net/80D1627/o-tvri/Content/HLS/Live/Channel(TVRIYOGYAKARTA)/index.m3u8
-#EXTINF:-1 tvg-id="TVRParlemen.id" status="online",TVR Parlemen (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemen.id" status="error",TVR Parlemen (720p) [Not 24/7]
 http://103.18.181.69:1935/golive/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRParlemen.id" status="timeout",TVR Parlemen (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVRParlemen.id" status="error",TVR Parlemen (720p) [Not 24/7]
 https://ssv1.dpr.go.id/golive/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVTabalong.id" status="timeout",TV Tabalong (720p) [Not 24/7]
 https://5bf7b725107e5.streamlock.net/tvtabalong/tvtabalong/playlist.m3u8
@@ -437,7 +437,7 @@ http://210.210.155.37/x6bnqe/s/s73/index2.m3u8
 #EXTINF:-1 tvg-id="UFA24.id" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64)",UFA 24 (360p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64)
 https://h1.intechmedia.net/intech/ch27.m3u8
-#EXTINF:-1 tvg-id="UGTV.id" status="error",UGTV (720p)
+#EXTINF:-1 tvg-id="UGTV.id" status="timeout",UGTV (720p)
 https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8
 #EXTINF:-1 tvg-id="UseePhoto.id" status="blocked",Usee Photo (480p)
 https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(f1b6e507-d639-4d66-858a-e457d55ddbb2)/index.m3u8
