@@ -41,10 +41,10 @@ https://live.mediacdn.ru/sr1/arhis24/playlist.m3u8
 http://ott-cdn.ucom.am/s68/index.m3u8
 #EXTINF:-1 tvg-id="Astrahan24.ru" status="blocked",Астрахань 24 (720p) [Not 24/7]
 http://83.234.104.142/astrakhan24hd/playlist.m3u8
+#EXTINF:-1 tvg-id="Astrahan24.ru" status="blocked",Астрахань 24 (720p) [Geo-blocked]
+https://strm.yandex.ru/kal/astrahan24/astrahan240.m3u8
 #EXTINF:-1 tvg-id="Astrahan24.ru" status="timeout",Астрахань 24 (720p)
 https://streaming.astrakhan.ru/astrakhan24/playlist.m3u8
-#EXTINF:-1 tvg-id="Astrahan24.ru" status="error",Астрахань 24 (720p) [Geo-blocked]
-https://strm.yandex.ru/kal/astrahan24/astrahan240.m3u8
 #EXTINF:-1 tvg-id="AstrahanRuSport.ru" status="timeout",Астрахань.Ru Sport (720p)
 https://streaming.astrakhan.ru/astrakhanrusporthd/playlist.m3u8
 #EXTINF:-1 tvg-id="AstrahanRuTV.ru" status="timeout",Астрахань.Ru TV (480p)
@@ -164,11 +164,11 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_KARUSEL/variant.m3u8
 https://strm.yandex.ru/kal/kavkaz24_supres/kavkaz24_supres0.m3u8
 #EXTINF:-1 tvg-id="Khabar24.kz" status="timeout",Хабар 24 (576p) [Not 24/7]
 https://sc.id-tv.kz/Khabar_24.m3u8
-#EXTINF:-1 tvg-id="Kinohit.ru" status="error",Кинохит (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kinohit.ru" status="timeout",Кинохит (404p) [Not 24/7]
 https://sc.id-tv.kz/Kinohit_hd.m3u8
 #EXTINF:-1 tvg-id="Kinokomedija.ru" status="timeout",Кинокомедия (360p) [Not 24/7]
 https://sc.id-tv.kz/Kinokomediya_hd.m3u8
-#EXTINF:-1 tvg-id="Kinomiks.ru" status="error",Киномикс (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Kinomiks.ru" status="timeout",Киномикс (1080p) [Not 24/7]
 https://sc.id-tv.kz/Kinomix_hd.m3u8
 #EXTINF:-1 tvg-id="Kinopremyera.ru" status="timeout",Кинопремьера (1080p) [Not 24/7]
 https://sc.id-tv.kz/Kinopremiera_hd.m3u8
@@ -268,7 +268,7 @@ https://strm.yandex.ru/kal/muztv_supres/muztv_supres0.m3u8
 http://ott-cdn.ucom.am/s28/index.m3u8
 #EXTINF:-1 tvg-id="NanoTV.ru" status="timeout",Нано (540p)
 http://nano.teleservice.su:8080/hls/nano.m3u8
-#EXTINF:-1 tvg-id="NashaSibir.ru" status="error",Наша Сибирь / Кемерово (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="NashaSibir.ru" status="timeout",Наша Сибирь / Кемерово (1080p) [Not 24/7]
 https://strm.yandex.ru/kal/sibir/sibir0.m3u8
 #EXTINF:-1 tvg-id="Nauka.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Наука (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
@@ -321,7 +321,7 @@ https://strm.yandex.ru/kal/otr/otr0.m3u8
 https://strm.yandex.ru/kal/otstv/otstv0.m3u8
 #EXTINF:-1 tvg-id="PerviyKrymskiy.ru" status="timeout",Первый крымский (540p) [Not 24/7]
 http://mrlive.1tvcrimea.ru:8080/1tvcrimea.m3u8
-#EXTINF:-1 tvg-id="PervyyPskovskiy.ru" status="error",Первый Псковский (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="PervyyPskovskiy.ru" status="online",Первый Псковский (540p) [Not 24/7]
 http://194.190.78.91/pskov/rewind-10800.m3u8
 #EXTINF:-1 tvg-id="PervyyRespublikanskiy.ru" status="error",Первый республиканский (720p)
 http://ott.inmart.tv:8081/18/index.m3u8
@@ -460,7 +460,7 @@ https://bsttv.bonus-tv.ru/cdn/salyam/playlist.m3u8
 http://45.67.57.9:8080/new/new/playlist.m3u8
 #EXTINF:-1 tvg-id="Sarafan.ru" status="online",Сарафан (576p) [Not 24/7]
 http://195.26.83.96:7024/play/82
-#EXTINF:-1 tvg-id="Saratov24.ru" status="timeout",Саратов 24 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Saratov24.ru" status="error",Саратов 24 (1080p) [Not 24/7]
 https://saratov24.tv/online/playlist.php
 #EXTINF:-1 tvg-id="SelengaTV.ru" status="online",Селенга ТВ (576p)
 http://90.188.37.86/live/playlist.m3u8
@@ -470,10 +470,10 @@ https://live2.mediacdn.ru/sr1/sever-mobile/playlist.m3u8
 https://live2.mediacdn.ru/sr1/sever/playlist.m3u8
 #EXTINF:-1 tvg-id="Sever.ru" status="timeout",Север (Нарьян-Мар) (1080p)
 https://live.mediacdn.ru/sr1/sever/playlist.m3u8
+#EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (576p) [Geo-blocked]
+http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (512p) [Geo-blocked]
 http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout",Шансон ТВ (576p) [Geo-blocked]
-http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout",Шансон ТВ (576p) [Geo-blocked]
 http://uiptv.do.am/1ufc/602079679/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Шансон ТВ (480p)
@@ -619,7 +619,7 @@ http://ott-cdn.ucom.am/s85/index.m3u8
 http://sochinskayatrk.ru/hdtv/hls/43Channel_hd/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Backus TV (720p) [Not 24/7]
 http://stream.backustv.ru/live/btv/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",Bollywood HD (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="timeout",Bollywood HD (1080p) [Not 24/7]
 https://sc.id-tv.kz/bollywood_hd.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",HD life (1080p) [Not 24/7]
 http://37.193.6.155:34040/udp/239.1.9.2:1234
