@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AccessHumboldt.us" status="timeout",Access Humboldt (1080p)
+#EXTINF:-1 tvg-id="AccessHumboldt.us" status="blocked",Access Humboldt (1080p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/66dfbe35ca1a418c87e3cf18ca46bd57/index.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel17.us" status="timeout",Access Sacramento Channel 17
 https://reflect-access-sacramento.cablecast.tv/live-7/live/live.m3u8
@@ -97,7 +97,7 @@ https://vod.slocoe.org/live-3/live/live.m3u8
 https://vod.slocoe.org/live-4/live/live.m3u8
 #EXTINF:-1 tvg-id="CollierTV.us" status="timeout",Collier Television CTV (Naples FL) (720p)
 https://reflect-collier-countyboc.cablecast.tv/live-4/live/live.m3u8
-#EXTINF:-1 tvg-id="Community12TV.us" status="timeout",Gainesville Community 12TV (Gainesville FL) (720p)
+#EXTINF:-1 tvg-id="Community12TV.us" status="error",Gainesville Community 12TV (Gainesville FL) (720p)
 https://lin10.isilive.ca/live/gainesville/live/index.m3u8
 #EXTINF:-1 tvg-id="CommunityTVChannel189.us" status="timeout",Traverse Area Community Media CommunityTV Channel 189 (Traverse City MI) (1080p) [Geo-blocked]
 https://reflect-tacm.cablecast.tv/live-3/live/live.m3u8
@@ -147,8 +147,6 @@ https://api.new.livestream.com/accounts/27146356/events/8209491/live.m3u8
 https://video.oct.dc.gov/out/u/DCN.m3u8
 #EXTINF:-1 tvg-id="DKN.us" status="timeout",DC.gov DKN (Washington DC) (1080p)
 https://video.oct.dc.gov/out/u/DKN.m3u8
-#EXTINF:-1 tvg-id="DoverTV.us" status="error",Dover TV (Dover DE) (480p)
-https://dover-de.secure.footprint.net/egress/bhandler/doverde/streama/playlist.m3u8
 #EXTINF:-1 tvg-id="EscambiaCountyTV.us" status="timeout",Escambia County TV ECTV (Escambia County FL) (720p)
 https://cpcdn.azureedge.net/ESCAMBIACOFLLIVE1/ESCAMBIACOFLLIVE1/playlist.m3u8
 #EXTINF:-1 tvg-id="FairTVEducationChannel.us" status="timeout",Fairfield FairTV Education Channel (Fairfield CT) (1080p)
@@ -159,7 +157,7 @@ https://streams.helnix.com/autoHLS/02d8dab006ef9ffd/02d8dab006ef9ffd.m3u8
 https://reflect-fcpublicmedia.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-id="FCPublicMedia.us" status="timeout",Fort Collins Cable TV (FCTV) (Fort Collins CO) (1080p)
 https://reflect-vod-fcgov.cablecast.tv/live-9/live/live.m3u8
-#EXTINF:-1 tvg-id="FernandinaBeachChannel.us" status="error",Fernandina Beach City Meeting (Fernandina Beach FL) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="FernandinaBeachChannel.us" status="timeout",Fernandina Beach City Meeting (Fernandina Beach FL) (720p) [Not 24/7]
 https://edge-f.swagit.com/live/fernandinabeachfl/live-1-a/playlist.m3u8
 #EXTINF:-1 tvg-id="FLTV.us" status="timeout",Fort Lauderdale FLTV (Fort Lauderdale FL) (720p)
 https://cdn3.wowza.com/5/cFh0V0QwUVc4SDl2/fortlauderdale/G1118_002/playlist.m3u8
@@ -199,7 +197,7 @@ https://1189614805.rsc.cdn77.org/hls/bmt.m3u8
 https://content.uplynk.com/channel/ext/2118d9222a87420ab69223af9cfa0a0f/kabc_24x7_news.m3u8
 #EXTINF:-1 tvg-id="KAGSLD1.us" status="timeout",NBC 6 College Station TX (KAGS) (1080p)
 https://livevideo01.kagstv.com/hls/live/2016283/newscasts/live.m3u8
-#EXTINF:-1 tvg-id="KALB.us" status="timeout",KALB Live Channel 33 (Albany CA) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="KALB.us" status="error",KALB Live Channel 33 (Albany CA) (720p) [Not 24/7]
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/albanyca/G0327_002/playlist.m3u8
 #EXTINF:-1 tvg-id="KALOTV.us" status="timeout",KALO TV (432p)
 https://10380e91fda5e303.mediapackage.us-west-2.amazonaws.com/out/v1/e8a622ce6ed34d07b468dd6ea2f94ee8/index.m3u8
@@ -289,10 +287,10 @@ https://content.uplynk.com/channel/64ca339f04964a5e961c3207a7771bf1.m3u8
 https://content.uplynk.com/4a09fbea28ef4f32bce095e9eae04bd8.m3u8
 #EXTINF:-1 tvg-id="KMTVDT1.us" status="timeout",CBS 3 Omaha NE (KMTV-TV) (720p)
 https://content.uplynk.com/channel/328d1434fb51476cb6567c74d5b2cc70.m3u8
+#EXTINF:-1 tvg-id="KNETCD1.us" status="timeout",EMT Media TV Los Angeles CA
+https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNETCD1.us" status="timeout",EMT Media TV Los Angeles CA [Geo-blocked]
 https://mediaplatform.streamingmediahosting.com/p/14135/sp/1413500/playManifest/entryId/0_lkq7fay8/format/applehttp/protocol/https/uiConfId/6710347/a.m3u8
-#EXTINF:-1 tvg-id="KNETCD1.us" status="error",EMT Media TV Los Angeles CA
-https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="timeout",NOTV (720p)
 http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="timeout",NOTV (720p)
@@ -333,7 +331,7 @@ https://content.uplynk.com/channel/50d0fa1b042945a3a4f550f9b8412c83.m3u8
 https://livevideo01.thv11.com/hls/live/2017154/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="KTLADT1.us" status="blocked",The CW Los Angeles CA (KTLA-DT1) (720p) [Not 24/7]
 http://trn03.tulix.tv/teleup-N8qwnqgUq2/playlist.m3u8
-#EXTINF:-1 tvg-id="KTLADT1.us" status="timeout",KTLA 5 Los Angeles CA (144p)
+#EXTINF:-1 tvg-id="KTLADT1.us" status="error",KTLA 5 Los Angeles CA (144p)
 https://content.uplynk.com/channel/6cbf2d32a5384dc1b787539b1102433c.m3u8
 #EXTINF:-1 tvg-id="KTNVDT1.us" status="timeout",ABC 13 Las Vegas NV (KTNV) (720p)
 https://content.uplynk.com/channel/39919d3f7a074eefa8bf579214e952f9.m3u8
@@ -419,15 +417,15 @@ https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_MUSIC.smil/Playlist.m3u8
 https://5b200f5268ceb.streamlock.net/MCPSS/MCPSS247.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MCTV.us" status="timeout",Millbrae Community Television (720p)
 https://603591da64140.streamlock.net/live/mp4:MCTVtest_aac/playlist.m3u8
-#EXTINF:-1 tvg-id="MidpenMediaCenterChannel26.us" status="error",Midpen Media Center Government etc Channel 26 (720p)
+#EXTINF:-1 tvg-id="MidpenMediaCenterChannel26.us" status="timeout",Midpen Media Center Government etc Channel 26 (720p)
 https://5c2974786200d.streamlock.net/live-chan26/ngrp:ch26_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MidpenMediaCenterChannel28.us" status="error",Midpen Media Center Youth Education and Sports Channel 28 (720p)
+#EXTINF:-1 tvg-id="MidpenMediaCenterChannel28.us" status="timeout",Midpen Media Center Youth Education and Sports Channel 28 (720p)
 https://5c2974786200d.streamlock.net/live-chan28/ngrp:ch28_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MidpenMediaCenterChannel29.us" status="error",Midpen Media Center Government etc Channel 29 (720p)
+#EXTINF:-1 tvg-id="MidpenMediaCenterChannel29.us" status="timeout",Midpen Media Center Government etc Channel 29 (720p)
 https://5c2974786200d.streamlock.net/live-chan29/ngrp:ch29_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MidpenMediaCenterChannel30.us" status="error",Midpen Media Center Arts Issues and Lifestyles Channel 30 (720p)
+#EXTINF:-1 tvg-id="MidpenMediaCenterChannel30.us" status="timeout",Midpen Media Center Arts Issues and Lifestyles Channel 30 (720p)
 https://5c2974786200d.streamlock.net/live-chan30/ngrp:ch30_all/playlist.m3u8
-#EXTINF:-1 tvg-id="MidpenMediaCenterChannel75.us" status="error",Midpen Media Center Diversity and Culture Channel 75 (720p)
+#EXTINF:-1 tvg-id="MidpenMediaCenterChannel75.us" status="timeout",Midpen Media Center Diversity and Culture Channel 75 (720p)
 https://5c2974786200d.streamlock.net/live-chan75/ngrp:ch75_all/playlist.m3u8
 #EXTINF:-1 tvg-id="MonroeCountyTV.us" status="timeout",Monroe County Television MCTV (Monroe County FL) (1080p)
 https://castus-vod-dev.s3.amazonaws.com/vod_clients/monroe/live/ch1/video.m3u8
@@ -449,8 +447,6 @@ https://cdn3.wowza.com/5/WDIrTW5sM1JEY1NN/napatv/G0360_003/playlist.m3u8
 https://cdn3.wowza.com/5/WDIrTW5sM1JEY1NN/napatv/G0360_004/playlist.m3u8
 #EXTINF:-1 tvg-id="NBTV.us" status="timeout",Newport Beach Television (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/newportbeach/G0064_003/playlist.m3u8
-#EXTINF:-1 tvg-id="NCCTV.us" status="error",NCCTV (New Castle County DE) (1080p)
-https://newcastlecoutv.secure.footprint.net/egress/bhandler/newcastlecou/streama/playlist.m3u8
 #EXTINF:-1 tvg-id="NCMEducationalKidsChannel.us" status="timeout",NCM Educational & Kids Channel
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_005/playlist.m3u8
 #EXTINF:-1 tvg-id="NCMGovernmentPoliticsChannel.us" status="timeout",NCM Government & Politics
@@ -489,7 +485,7 @@ https://reflect-padnet-live.cablecast.tv/live/live.m3u8
 https://live.feed.thepalmbeaches.tv/index.m3u8
 #EXTINF:-1 tvg-id="PascoTV.us" status="timeout",Pasco TV (Pasco County FL) (480p)
 https://cpcdn.azureedge.net/PASCOCOFLLIVE1/PASCOCOFLLIVE1/playlist.m3u8
-#EXTINF:-1 tvg-id="PBCTVChannel20.us" status="error",Palm Beach County TV Channel 20 (Palm Beach County FL) (720p)
+#EXTINF:-1 tvg-id="PBCTVChannel20.us" status="timeout",Palm Beach County TV Channel 20 (Palm Beach County FL) (720p)
 https://pbcmedia.pbcgov.org:1936/live/mp4live.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="PCTChannel26.us" status="timeout",Pacific Coast TV MWSD Channel 26 (720p)
 https://pacifica-ca.secure.footprint.net/egress/bhandler/pacificaca/streamb/manifest.m3u8
@@ -517,7 +513,7 @@ https://vod.cityofrc.us/live-6/live/live.m3u8
 https://riflecmttv.secure.footprint.net/egress/bhandler/riflecmttv/streamb/manifest.m3u8
 #EXTINF:-1 tvg-id="RedApple21.us" status="timeout",Red Apple 21 (Fairfax County Public Schools) (480p) [Not 24/7]
 https://cs.ebmcdn.net/eastbay-live-hs-1/fcps/mp4:fcps/playlist.m3u8
-#EXTINF:-1 tvg-id="RiversideTV.us" status="error",RiversideTV (Riverside CA) (720p)
+#EXTINF:-1 tvg-id="RiversideTV.us" status="timeout",RiversideTV (Riverside CA) (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/riversideca/G0879_001/playlist.m3u8
 #EXTINF:-1 tvg-id="SCCurrents.us" status="timeout",SC Currents
 https://tvsantacruz.secure.footprint.net/egress/bhandler/tvsantacruz/streamc/playlist.m3u8
