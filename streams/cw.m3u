@@ -1,15 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="BonceTV.cw" status="error",Bonce TV (480p) [Not 24/7]
 https://seswa.bonce.tv/hls/bonceswa.m3u8
-#EXTINF:-1 tvg-id="NosPais.cw" status="timeout",Nos Païs (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="NosPais.cw" status="online",Nos Païs (720p) [Not 24/7]
 http://highvolume04.streampartner.nl/nos_pais_24_7/nos_pais_24_7/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCuracao.cw" status="blocked",TeleCuraçao (720p)
 https://streannlivecariflix.cachefly.net/cariflix1/cariflix1/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleCuracao.cw" status="error",TeleCuraçao (720p)
-http://ott.streann.com:8080/loadbalancer/services/public/channels/5ed71e232cdc24a3d08cd6de/playlist.m3u8
-#EXTINF:-1 tvg-id="TVDirect13.cw" status="timeout",TV Direct 13 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVDirect13.cw" status="online",TV Direct 13 (720p) [Not 24/7]
 https://edge1.tvdirect13.com/live/smil:mystream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Intermediate League Curacao
 https://streannlivecariflix.cachefly.net/cariflix12/cariflix12/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",VAM Vid's & More
+#EXTINF:-1 tvg-id="" status="online",VAM Vid's & More
 https://cur.watch/api/get_stream/vam/streann/playlist.m3u8
