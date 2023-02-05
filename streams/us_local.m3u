@@ -239,7 +239,7 @@ https://cdn.igocast.com/channel9_hls/channel9_master.m3u8
 https://cdn.igocast.com/channel10_hls/channel10_master.m3u8
 #EXTINF:-1 tvg-id="KCKSLD12.us" status="online",Jewelry TV (KCKS-LD12) (480p)
 https://cdn.igocast.com/channel12_hls/channel12_master.m3u8
-#EXTINF:-1 tvg-id="KCTSDT3.us" status="timeout",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
+#EXTINF:-1 tvg-id="KCTSDT3.us" status="error",PBS KCTS 9 Create (KCTS-DT3) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8865717/
 #EXTINF:-1 tvg-id="KCTSDT4.us" status="timeout",PBS KCTS 9 World (KCTS-DT4) (Seattle WA) (720p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://api.new.livestream.com/accounts/28355708/events/8904290/
@@ -287,9 +287,9 @@ https://content.uplynk.com/channel/64ca339f04964a5e961c3207a7771bf1.m3u8
 https://content.uplynk.com/4a09fbea28ef4f32bce095e9eae04bd8.m3u8
 #EXTINF:-1 tvg-id="KMTVDT1.us" status="online",CBS 3 Omaha NE (KMTV-TV) (720p)
 https://content.uplynk.com/channel/328d1434fb51476cb6567c74d5b2cc70.m3u8
-#EXTINF:-1 tvg-id="KNETCD1.us" status="online",EMT Media TV Los Angeles CA
+#EXTINF:-1 tvg-id="KNETCD1.us" status="error",EMT Media TV Los Angeles CA
 https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
-#EXTINF:-1 tvg-id="KNETCD1.us" status="online",EMT Media TV Los Angeles CA [Geo-blocked]
+#EXTINF:-1 tvg-id="KNETCD1.us" status="error",EMT Media TV Los Angeles CA [Geo-blocked]
 https://mediaplatform.streamingmediahosting.com/p/14135/sp/1413500/playManifest/entryId/0_lkq7fay8/format/applehttp/protocol/https/uiConfId/6710347/a.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="online",NOTV (720p)
 http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
@@ -485,7 +485,7 @@ https://reflect-padnet-live.cablecast.tv/live/live.m3u8
 https://live.feed.thepalmbeaches.tv/index.m3u8
 #EXTINF:-1 tvg-id="PascoTV.us" status="online",Pasco TV (Pasco County FL) (480p)
 https://cpcdn.azureedge.net/PASCOCOFLLIVE1/PASCOCOFLLIVE1/playlist.m3u8
-#EXTINF:-1 tvg-id="PBCTVChannel20.us" status="error",Palm Beach County TV Channel 20 (Palm Beach County FL) (720p)
+#EXTINF:-1 tvg-id="PBCTVChannel20.us" status="online",Palm Beach County TV Channel 20 (Palm Beach County FL) (720p)
 https://pbcmedia.pbcgov.org:1936/live/mp4live.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="PCTChannel26.us" status="online",Pacific Coast TV MWSD Channel 26 (720p)
 https://pacifica-ca.secure.footprint.net/egress/bhandler/pacificaca/streamb/manifest.m3u8
@@ -693,7 +693,7 @@ https://2-fss-2.streamhoster.com/pl_132/amlst:200914-1315486/playlist.m3u8
 https://livevideo01.wkyc.com/hls/live/2015504/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="WLBZDT1.us" status="error",NBC 207 Bangor Portland ME (WLBZ) (1080p)
 https://livevideo01.newscentermaine.com/hls/live/2014540/newscasts/live/wcsh.m3u8
-#EXTINF:-1 tvg-id="WLCT96.us" status="error",Wolcott Governmental TV (720p) (Wolcott CT)
+#EXTINF:-1 tvg-id="WLCT96.us" status="online",Wolcott Governmental TV (720p) (Wolcott CT)
 https://5a5c57d042315.streamlock.net/live11704001/ngrp:government_all/playlist.m3u8
 #EXTINF:-1 tvg-id="WLIIDT1.us" status="online",TeleOnce (WLII-DT) (1080p)
 https://univision-live.cdn.vustreams.com/live/ce88b839-6376-4494-a2ee-83d66bc7cfc1/live.isml/ce88b839-6376-4494-a2ee-83d66bc7cfc1.m3u8
@@ -749,10 +749,10 @@ https://content.uplynk.com/channel/ext/10b98e7c615f43a98b180d51797e74aa/wpvi_24x
 https://livevideo01.wqad.com/hls/live/2011657/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="WRGBDT1.us" status="online",CBS 6 Albany NY (WRGB) (720p)
 https://content.uplynk.com/channel/bba3e7da884a49bba96341ecf5128f0f.m3u8
-#EXTINF:-1 tvg-id="WSBDT1.us" status="online",ABC 2 Atlanta GA (WSB-TV) (720p)
-https://d2rwx6gwduugne.cloudfront.net/v1/master/77872db67918a151b697b5fbc23151e5765767dc/cmg_PROD_cmg-tv-10010_183ec1c7-4183-4661-803b-3ed282ffb625_LE/in/cmg-wsbtvnow-hls-v3/live.m3u8
 #EXTINF:-1 tvg-id="WSBDT1.us" status="blocked",ABC Atlanta-GA (WSB-DT1) (720p)
 https://trn10.tulix.tv/WSB-ABC/index.m3u8
+#EXTINF:-1 tvg-id="WSBDT1.us" status="error",ABC 2 Atlanta GA (WSB-TV) (720p)
+https://d2rwx6gwduugne.cloudfront.net/v1/master/77872db67918a151b697b5fbc23151e5765767dc/cmg_PROD_cmg-tv-10010_183ec1c7-4183-4661-803b-3ed282ffb625_LE/in/cmg-wsbtvnow-hls-v3/live.m3u8
 #EXTINF:-1 tvg-id="WSBSDT1.us" status="online",Mega TV (WSBS-TV) (1080p)
 https://livestream.lamusica.com/megatvP320/ngrp:megatvP320_all/playlist.m3u8
 #EXTINF:-1 tvg-id="WTAJDT1.us" status="blocked",CBS Altoona PA (WTAJ1) (720p)
