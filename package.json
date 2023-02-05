@@ -3,6 +3,7 @@
   "scripts": {
     "act:auto-update": "act workflow_dispatch -W .github/workflows/auto-update.yml --artifact-server-path=.artifacts",
     "act:check": "act pull_request -W .github/workflows/check.yml",
+    "act:test": "act workflow_dispatch -W .github/workflows/test.yml",
     "api:load": "./scripts/commands/api/load.sh",
     "db:clear": "node scripts/commands/database/clear.js",
     "db:create": "node scripts/commands/database/create.js",
@@ -32,7 +33,7 @@
     "commander": "^8.3.0",
     "dayjs": "^1.10.7",
     "fs-extra": "^10.0.0",
-    "iptv-checker": "^0.24.5",
+    "iptv-checker": "^0.26.0",
     "iptv-playlist-parser": "^0.12.1",
     "jest": "^27.5.1",
     "jest-expect-message": "^1.0.2",
