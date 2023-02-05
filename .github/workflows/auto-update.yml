@@ -39,7 +39,14 @@ jobs:
       #   cluster_id: [1]
     steps:
       - uses: actions/checkout@v3
-      - uses: FedericoCarboni/setup-ffmpeg@v2
+      - name: Install ffmpeg
+        run: |
+          sudo rm -rf /var/lib/apt/lists/*
+          sudo apt-get clean
+          sudo apt-get update -y
+          sudo apt-get install -y ffmpeg
+          ffmpeg -version
+          ffprobe -version
       - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
