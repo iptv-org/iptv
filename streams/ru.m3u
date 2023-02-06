@@ -257,7 +257,7 @@ http://81.30.182.82:18092/hls/live.m3u8
 http://serv30.vintera.tv:8081/detskiy/multimania20/playlist.m3u8
 #EXTINF:-1 tvg-id="MusicBoxRussia.ru" status="blocked",Music Box Russia (1080p)
 https://strm.yandex.ru/kal/rmbox/rmbox0.m3u8
-#EXTINF:-1 tvg-id="MuzhskoeKino.ru" status="online",Мужское кино (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="MuzhskoeKino.ru" status="error",Мужское кино (1080p) [Not 24/7]
 https://sc.id-tv.kz/Mujskoe_kino_hd.m3u8
 #EXTINF:-1 tvg-id="MuzSoyuz.ru" status="online",Муз союз (576p)
 http://hls-tvsoyuz.cdnvideo.ru/tvsoyuz2/muzsoyuz.6fw0-58xp-acts-esy0/playlist.m3u8
@@ -470,6 +470,8 @@ https://live2.mediacdn.ru/sr1/sever-mobile/playlist.m3u8
 https://live2.mediacdn.ru/sr1/sever/playlist.m3u8
 #EXTINF:-1 tvg-id="Sever.ru" status="online",Север (Нарьян-Мар) (1080p)
 https://live.mediacdn.ru/sr1/sever/playlist.m3u8
+#EXTINF:-1 tvg-id="ShansonTV.ru" status="online",Шансон ТВ (576p) [Geo-blocked]
+http://uiptv.do.am/1ufc/602079679/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Шансон ТВ (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s43/index.m3u8
@@ -477,8 +479,6 @@ http://ott-cdn.ucom.am/s43/index.m3u8
 http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (512p) [Geo-blocked]
 http://hls.shansontv.cdnvideo.ru/shansontv/shansontv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru" status="blocked",Шансон ТВ (576p) [Geo-blocked]
-http://uiptv.do.am/1ufc/602079679/playlist.m3u8
 #EXTINF:-1 tvg-id="ShchyolkovskoeTV.ru" status="online",Щёлковское ТВ (576p) [Not 24/7]
 http://stream0.tv41.ru/live.m3u8
 #EXTINF:-1 tvg-id="Shokiruyuschee.ru" status="timeout",Шокирующее (540p)
@@ -533,10 +533,10 @@ https://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/variant.m3u8
 #EXTINF:-1 tvg-id="TNTInternational.ru" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",ТНТ International (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s19/04.m3u8
-#EXTINF:-1 tvg-id="TNTMusic.ru" status="blocked",ТНТ Music (1080p) [Geo-blocked]
-http://strm.yandex.ru/kal/tntmusic/tntmusic0.m3u8
 #EXTINF:-1 tvg-id="TNTMusic.ru" status="blocked",ТНТ Music (1080p)
 http://83.222.205.65:8080/tntmusic/index.m3u8
+#EXTINF:-1 tvg-id="TNTMusic.ru" status="error",ТНТ Music (1080p) [Geo-blocked]
+http://strm.yandex.ru/kal/tntmusic/tntmusic0.m3u8
 #EXTINF:-1 tvg-id="ToiDuman.kz" status="online",Той Думан (576p) [Not 24/7]
 https://sc.id-tv.kz/ToiDuman.m3u8
 #EXTINF:-1 tvg-id="Tonus.ru" status="timeout" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Тонус (480p)
@@ -646,11 +646,11 @@ https://strm.yandex.ru/kal/tvrain/tvrain0.m3u8
 http://infochhdcdn.trkeurasia.ru/orsk-infochhd/infochhd/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Евразия (Орск) (720p)
 https://infochh.trkeurasia.ru/hlsinfoch/infochhd.m3u8
-#EXTINF:-1 tvg-id="" status="online",К16 (Саров) (406p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",К16 (Саров) (406p) [Not 24/7]
 http://serv25.vintera.tv:8081/test/k16/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Классика Кино (720p) [Geo-blocked]
 https://strm.yandex.ru/kal/kinoclassic/kinoclassic0.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",Крым 24 (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="timeout",Крым 24 (540p) [Not 24/7]
 http://mr2live.1tvcrimea.ru:8080/24tvcrimea.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Кузбасс 1 (1080p) [Not 24/7]
 https://www.10kanal.ru:1443/10kanal/k24/playlist.m3u8
@@ -688,5 +688,5 @@ http://sochinskayatrk.ru/hdtv/hls/strc_hd/playlist.m3u8
 https://sitv.ru/hls/s86.m3u8
 #EXTINF:-1 tvg-id="" status="online",Эхо TV (Рязань) (576p) [Not 24/7]
 https://live-echotv.cdnvideo.ru/echotv/echotv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Югра (576p)
+#EXTINF:-1 tvg-id="" status="error",Югра (576p)
 http://live.ugratv.cdnvideo.ru/ugratv/smil:ugrastream1.smil/playlist.m3u8
