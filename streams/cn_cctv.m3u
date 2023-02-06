@@ -217,6 +217,8 @@ http://39.134.115.163:8080/PLTV/88888910/224/3221225635/index.m3u8
 http://39.135.138.59:18890/PLTV/88888910/224/3221225635/index.m3u8
 #EXTINF:-1 tvg-id="CCTV8.cn" status="online",CCTV-8电视剧 (1080p)
 http://117.169.120.140:8080/live/cctv-8/.m3u8
+#EXTINF:-1 tvg-id="CCTV8.cn" status="online",CCTV-8电视剧 (1080p)
+http://183.207.248.35/PLTV/3/224/3221227205/index.m3u8
 #EXTINF:-1 tvg-id="CCTV8.cn" status="timeout",CCTV-8电视剧 (1080p)
 http://39.134.39.39/PLTV/88888888/224/3221226257/index.m3u8
 #EXTINF:-1 tvg-id="CCTV8.cn" status="timeout",CCTV-8电视剧 (1080p) [Not 24/7]
@@ -239,8 +241,6 @@ http://223.110.245.170/PLTV/3/224/3221227205/index.m3u8
 http://223.110.245.172/PLTV/4/224/3221227304/index.m3u8
 #EXTINF:-1 tvg-id="CCTV8.cn" status="timeout",CCTV-8电视剧 (1080p)
 http://ott.js.chinamobile.com/PLTV/3/224/3221227204/index.m3u8
-#EXTINF:-1 tvg-id="CCTV8.cn" status="timeout",CCTV-8电视剧 (1080p)
-http://183.207.248.35/PLTV/3/224/3221227205/index.m3u8
 #EXTINF:-1 tvg-id="CCTV8.cn" status="timeout",CCTV-8电视剧 (1080p)
 http://183.207.248.71/cntv/live1/cctv-8/cctv-8
 #EXTINF:-1 tvg-id="CCTV8.cn" status="timeout",CCTV-8电视剧 (1080p) [Not 24/7]
@@ -325,6 +325,8 @@ http://39.134.115.163:8080/PLTV/88888910/224/3221225638/index.m3u8
 http://39.135.138.59:18890/PLTV/88888910/224/3221225638/index.m3u8
 #EXTINF:-1 tvg-id="CCTV13.cn" status="online",CCTV-13新闻 (720p)
 http://117.169.120.140:8080/live/cctv-13/.m3u8
+#EXTINF:-1 tvg-id="CCTV13.cn" status="online",CCTV-13新闻 (576p)
+http://stream4.jlntv.cn/cctv13/sd/live.m3u8
 #EXTINF:-1 tvg-id="CCTV13.cn" status="timeout",CCTV-13新闻 (540p)
 http://112.25.48.68/live/program/live/cctvxw/1300000/mnf.m3u8
 #EXTINF:-1 tvg-id="CCTV13.cn" status="timeout",CCTV-13新闻 (576p) [Not 24/7]
@@ -341,17 +343,15 @@ http://183.207.249.14/PLTV/3/224/3221225560/index.m3u8
 http://183.207.249.36/PLTV/4/224/3221227387/index.m3u8
 #EXTINF:-1 tvg-id="CCTV13.cn" status="timeout",CCTV-13新闻 (1080p) [Not 24/7]
 http://223.110.245.170/PLTV/3/224/3221225560/index.m3u8
-#EXTINF:-1 tvg-id="CCTV13.cn" status="timeout",CCTV-13新闻 (576p)
-http://stream4.jlntv.cn/cctv13/sd/live.m3u8
 #EXTINF:-1 tvg-id="CCTV15.cn" status="timeout",CCTV-15音乐 (720p)
 http://116.199.5.52:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=54&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
 #EXTINF:-1 tvg-id="CCTV17.cn" status="online",CCTV-17农业农村 (1080p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225908/index.m3u8
 #EXTINF:-1 tvg-id="CCTV17.cn" status="online",CCTV-17农业农村 (1080p)
 http://39.135.138.59:18890/PLTV/88888910/224/3221225907/index.m3u8
-#EXTINF:-1 tvg-id="CCTVPlus1.cn" status="timeout",CCTV+ 1 (600p) [Not 24/7]
+#EXTINF:-1 tvg-id="CCTVPlus1.cn" status="online",CCTV+ 1 (600p) [Not 24/7]
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CCTVPlus2.cn" status="timeout",CCTV+ 2 (600p) [Not 24/7]
+#EXTINF:-1 tvg-id="CCTVPlus2.cn" status="online",CCTV+ 2 (600p) [Not 24/7]
 https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CCTVWomensFashion.cn" status="timeout",CCTV-女性时尚 (576p)
 http://223.110.245.153/ott.js.chinamobile.com/PLTV/3/224/3221227026/index.m3u8
