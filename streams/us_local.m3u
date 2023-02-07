@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AccessHumboldt.us" status="online",Access Humboldt (1080p)
+#EXTINF:-1 tvg-id="AccessHumboldt.us" status="blocked",Access Humboldt (1080p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/66dfbe35ca1a418c87e3cf18ca46bd57/index.m3u8
 #EXTINF:-1 tvg-id="AccessSacramentoChannel17.us" status="online",Access Sacramento Channel 17
 https://reflect-access-sacramento.cablecast.tv/live-7/live/live.m3u8
@@ -71,7 +71,7 @@ https://reflect-cityofloveland-co.cablecast.tv/live-3/live/live.m3u8
 https://cdn3.wowza.com/5/M0lyamVmM2JWcjhQ/pompano/G0765_005/playlist.m3u8
 #EXTINF:-1 tvg-id="CityofTracyChannel26.us" status="online",Tracy Education and Governmental Access Channel (Tracy CA) (720p)
 https://cdn3.wowza.com/5/M0lyamVmM2JWcjhQ/tracy-ca/G0950_002/playlist.m3u8
-#EXTINF:-1 tvg-id="CityofVacavilleChannel26.us" status="online",Vacaville Channel 26 (Vacaville CA) (720p)
+#EXTINF:-1 tvg-id="CityofVacavilleChannel26.us" status="error",Vacaville Channel 26 (Vacaville CA) (720p)
 https://cdn3.wowza.com/5/RXJNMFI3VlVkOEFP/vacaville/G0228_002/playlist.m3u8
 #EXTINF:-1 tvg-id="CityTV20SantaMonica.us" status="online",Santa Monica City TV 20 (Santa Monica CA) (360p) [Not 24/7]
 http://cdn3.wowza.com/5/bGZUOHp2TnhudnM2/santamonica/G0039_002/playlist.m3u8
@@ -187,7 +187,7 @@ https://cdn3.wowza.com/5/V2Y2VmhqMEFDTUkx/fortworthgov/G0551_002/chunklist.m3u8
 https://hls.youtb.workers.dev/channel/UCT3Dk_ZPcoR7CeHM_Wwb3QA.m3u8
 #EXTINF:-1 tvg-id="G10TV.us" status="online",Jacksonville Onslow Government Television (G10TV) (Jacksonville NC) (1080p)
 http://jacksonville.cablecast.tv/live-6/live/live.m3u8
-#EXTINF:-1 tvg-id="GalvestonCountyTV.us" status="error",Galveston County TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="GalvestonCountyTV.us" status="online",Galveston County TV (720p) [Not 24/7]
 https://stream.swagit.com/live-edge/galvestontx/smil:hd-16x9-1-b/playlist.m3u8
 #EXTINF:-1 tvg-id="GCOtv.us" status="online",Golden Community Television (GCO.tv) (Golden CO) (1080p)
 https://reflect-golden-co.cablecast.tv/live-3/live/live.m3u8
@@ -317,10 +317,10 @@ https://content.uplynk.com/channel/64ca339f04964a5e961c3207a7771bf1.m3u8
 https://content.uplynk.com/4a09fbea28ef4f32bce095e9eae04bd8.m3u8
 #EXTINF:-1 tvg-id="KMTVDT1.us" status="online",CBS 3 Omaha NE (KMTV-TV) (720p)
 https://content.uplynk.com/channel/328d1434fb51476cb6567c74d5b2cc70.m3u8
+#EXTINF:-1 tvg-id="KNETCD1.us" status="online",EMT Media TV Los Angeles CA
+https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNETCD1.us" status="online",EMT Media TV Los Angeles CA [Geo-blocked]
 https://mediaplatform.streamingmediahosting.com/p/14135/sp/1413500/playManifest/entryId/0_lkq7fay8/format/applehttp/protocol/https/uiConfId/6710347/a.m3u8
-#EXTINF:-1 tvg-id="KNETCD1.us" status="error",EMT Media TV Los Angeles CA
-https://hwlive.streamingmediahosting.com/14135-live/0_lkq7fay8/index.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="online",NOTV (720p)
 http://media4.tripsmarter.com:1935/LiveTV/NOTVHD/playlist.m3u8
 #EXTINF:-1 tvg-id="KNOVCD1.us" status="online",NOTV (720p)
@@ -515,7 +515,7 @@ https://reflect-padnet-live.cablecast.tv/live/live.m3u8
 https://live.feed.thepalmbeaches.tv/index.m3u8
 #EXTINF:-1 tvg-id="PascoTV.us" status="online",Pasco TV (Pasco County FL) (480p)
 https://cpcdn.azureedge.net/PASCOCOFLLIVE1/PASCOCOFLLIVE1/playlist.m3u8
-#EXTINF:-1 tvg-id="PBCTVChannel20.us" status="error",Palm Beach County TV Channel 20 (Palm Beach County FL) (720p)
+#EXTINF:-1 tvg-id="PBCTVChannel20.us" status="online",Palm Beach County TV Channel 20 (Palm Beach County FL) (720p)
 https://pbcmedia.pbcgov.org:1936/live/mp4live.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="PCTChannel26.us" status="online",Pacific Coast TV MWSD Channel 26 (720p)
 https://pacifica-ca.secure.footprint.net/egress/bhandler/pacificaca/streamb/manifest.m3u8
@@ -535,7 +535,7 @@ https://live.pomonaca.gov/live-3/live/live.m3u8
 https://edge-f.swagit.com/live/palmspringsca/live-1-a/playlist.m3u8
 #EXTINF:-1 tvg-id="PSDTV.us" status="online",Poudre School District TV (PSD TV) (Fort Collins CO) (720p)
 https://reflect-broadcast-psdschools.cablecast.tv/live-6/live/live.m3u8
-#EXTINF:-1 tvg-id="PSLTV.us" status="online",Port St Lucie PSL TV (Port St Lucie FL) (360p)
+#EXTINF:-1 tvg-id="PSLTV.us" status="error",Port St Lucie PSL TV (Port St Lucie FL) (360p)
 https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/psl/G0262_003/playlist.m3u8
 #EXTINF:-1 tvg-id="RCTV3.us" status="online",Rancho Cucamonga RCTV3 (Rancho Cucamonga CA) (480p)
 https://vod.cityofrc.us/live-6/live/live.m3u8
@@ -701,11 +701,11 @@ https://livevideo01.wfaa.com/hls/live/2014541/newscasts/live.m3u8
 https://livevideo01.wfmynews2.com/hls/live/2016285/newscasts/live.m3u8
 #EXTINF:-1 tvg-id="WFSUDT1.us" status="blocked",PBS Tallahassee (720p)
 https://5e6cea03e25b6.streamlock.net/live/WFSU-PBS.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="WFSUDT2.us" status="error",The Florida Channel (480p)
+#EXTINF:-1 tvg-id="WFSUDT2.us" status="online",The Florida Channel (480p)
 https://cdnapisec.kaltura.com/p/2593311/sp/259331100/playManifest/entryId/1_ta2cmesd/format/applehttp/protocol/https/a.m3u8
 #EXTINF:-1 tvg-id="WFSUDT3.us" status="blocked",PBS Create Tallahassee FL (WFSU-TV3) (480p)
 https://5e6cea03e25b6.streamlock.net/live/CREATE.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="WFTVDT1.us" status="online",ABC 9 Orlando FL (WFTV) (720p)
+#EXTINF:-1 tvg-id="WFTVDT1.us" status="error",ABC 9 Orlando FL (WFTV) (720p)
 https://d3qm7vzp07vxse.cloudfront.net/v1/master/77872db67918a151b697b5fbc23151e5765767dc/cmg_PROD_cmg-tv-10070_fe1f5f6c-cd0b-4993-a4a4-6db66be4f313_LE/in/cmg-wftvtv-hls-v3/live.m3u8
 #EXTINF:-1 tvg-id="WFTXDT1.us" status="online",WFTX News Fort Myers FL (720p)
 https://content.uplynk.com/channel/8975f81e6efd4e609873c3e8e25c7756.m3u8

@@ -3,10 +3,10 @@
 http://158.69.124.9:1935/5aabtv/5aabtv/playlist.m3u8
 #EXTINF:-1 tvg-id="AmazingDiscoveriesTV.ca" status="online",Amazing Discoveries TV (720p)
 https://uni01rtmp.tulix.tv/amazingdtv/amazingdtv/playlist.m3u8
-#EXTINF:-1 tvg-id="AzStarTV.ca" status="online",Az Star TV (240p)
-https://live.livestreamtv.ca/azstar/ngrp:azstar/playlist.m3u8
 #EXTINF:-1 tvg-id="AzStarTV.ca" status="online",Az Star TV (1080p)
 http://live.azstartv.com/azstar/smil:azstar.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AzStarTV.ca" status="online",Az Star TV (240p)
+https://live.livestreamtv.ca/azstar/ngrp:azstar/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCTorontoGaundaPunjab.ca" status="online",BBC Toronto Gaunda Punjab (720p) [Not 24/7]
 http://start.agmediachandigarh.com/gaundapunjab/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="BelmediaTV.ca" status="error",Belmedia TV (1080p)
@@ -23,7 +23,7 @@ https://cdn.appv.jagobd.com:444/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeF
 https://rcavlive.akamaized.net/hls/live/696615/xcancbft/master.m3u8
 #EXTINF:-1 tvg-id="CBFTDT.ca" status="blocked",Ici Radio-Canada Télé (1080p) [Geo-blocked]
 https://rcavlive-dai.akamaized.net/hls/live/696614/cancbftprem/master.m3u8
-#EXTINF:-1 tvg-id="CFHDDT.ca" status="error",ICI Montreal (720p)
+#EXTINF:-1 tvg-id="CFHDDT.ca" status="online",ICI Montreal (720p)
 https://amdici.akamaized.net/hls/live/873426/ICI-Live-Stream/master.m3u8
 #EXTINF:-1 tvg-id="CFTMDT.ca" status="blocked",TVA [Geo-blocked]
 https://tvalive-nondai.akamaized.net/Content/HLS/Live/channel(a7315e07-037c-12a8-bdc8-da7bd513da9d)/index.m3u8
@@ -57,8 +57,6 @@ https://60ba7ef02e687.streamlock.net/ICNET2/ngrp:icnet_all/playlist.m3u8
 https://uni10rtmp.tulix.tv/iipctv/iipctv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LCN.ca" status="blocked",LCN [Geo-blocked]
 https://tvalive.akamaized.net/hls/live/2014213/tvan01/tvan01.m3u8
-#EXTINF:-1 tvg-id="LegislativeAssemblyTVNunavut.ca" status="error",Nunavut Legislative Assembly
-https://temp6.isilive.ca/live/nunavut/live-flo/index.m3u8
 #EXTINF:-1 tvg-id="MontrealGreekTV.ca" status="online",Montreal Greek TV (480p)
 http://live.greektv.ca/hls1/greektv.m3u8
 #EXTINF:-1 tvg-id="NACTV.ca" status="online",NACTV (720p) [Not 24/7]
@@ -80,17 +78,15 @@ http://stream.pardesitv.online/pardesi/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ParnianTV.ca" status="online",Parnian TV (720p)
 https://live2.parnian.tv/hls/.m3u8
 #EXTINF:-1 tvg-id="PlymouthRockTV.ca" status="online",Plymouth Rock TV (1080p)
-https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtv/playlist.m3u8
-#EXTINF:-1 tvg-id="PlymouthRockTV.ca" status="online",Plymouth Rock TV (1080p)
 https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtvedge/playlist.m3u8
+#EXTINF:-1 tvg-id="PlymouthRockTV.ca" status="online",Plymouth Rock TV (1080p)
+https://vse2-eu-all59.secdn.net/barakyah-channel/live/plymouthtv/playlist.m3u8
 #EXTINF:-1 tvg-id="PrimeCanadaTV.ca" status="online",Prime Canada TV (720p) [Not 24/7]
 http://cdn27.live247stream.com/primecanada/247/primecanada/stream1/playlist.m3u8
 #EXTINF:-1 tvg-id="QuoVadisTV.ca" status="online",Quo Vadis Ministry TV (720p)
 https://qvmstream.tulix.tv/720p/720p/playlist.m3u8
 #EXTINF:-1 tvg-id="RamgarhiABC.ca" status="error",Gurdwara Sahib Brookside (720p)
 https://443-1.autopo.st/100/weblive/bcgurduwarabrookside/playlist.m3u8
-#EXTINF:-1 tvg-id="SanjhaPunjab.ca" status="error",Sanjha Punjab (720p)
-http://toronto3.live247stream.com:8081/sanjhapunjab/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SikhSpiritualCentreRexdale.ca" status="online",Sikh Spiritual Centre Rexdale (720p)
 https://cdn12.henico.net:8443/live/ssct/index.m3u8
 #EXTINF:-1 tvg-id="TAGTV.ca" status="online",TAG TV (1080p) [Not 24/7]
@@ -101,8 +97,6 @@ http://live.tamilvision.tv:8081/TVI/HD/playlist.m3u8
 http://live.tamilvision.tv:8081/TVI/SD/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleMagQuebec.ca" status="error",Télé-Mag Québec (1080p) [Not 24/7]
 https://hls.youtb.workers.dev/channel/UCNKXYT-Nng5LBMUQrZJ9zWA.m3u8
-#EXTINF:-1 tvg-id="Toronto360TV.ca" status="error",Toronto 360 TV (720p) [Not 24/7]
-http://toronto3.live247stream.com/toronto360/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TSC.ca" status="online",Today's Shopping Choice (TSC) (720p)
 https://tscamd.akamaized.net/hls/live/503340/TSCLive/master.m3u8
 #EXTINF:-1 tvg-id="TV16Toronto.ca" status="online",TV 16 Toronto (720p) [Not 24/7]
@@ -115,7 +109,7 @@ https://uni6rtmp.tulix.tv/vbstv/vbsabr.smil/playlist.m3u8
 https://wowzastream.westmancom.com/wcgtvlive/wcgtvPSA.stream/master.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",Knowledge (720p) [Geo-blocked]
 http://knstream1.azureedge.net/knlive/knlive_high.m3u8
-#EXTINF:-1 tvg-id="" status="online",WATAN-E-MAA
+#EXTINF:-1 tvg-id="" status="error",WATAN-E-MAA
 https://5caf24a595d94.streamlock.net:1937/8132/8132/playlist.m3u8
 #EXTINF:-1 tvg-id="CKNOFM.ca" status="online",CKNO-FM
 https://videostream.jpbgdigital.com/NOWTV.m3u8
