@@ -26,7 +26,9 @@ async function updateStreams(items = [], results = {}, origins = {}) {
     const result = results[item._id]
     if (result) {
       const status = parseStatus(result.error)
-      stream.set('status', { status })
+      if (status) {
+        stream.set('status', { status })
+      }
 
       if (result.streams.length) {
         const { width, height, bitrate, frame_rate } = parseMediaInfo(result.streams)
@@ -145,8 +147,9 @@ function parseStatus(error) {
   if (!error) return 'online'
 
   switch (error.code) {
+    case 'FFMPEG_UNDEFINED':
+      return null
     case 'HTTP_REQUEST_TIMEOUT':
-    case 'FFMPEG_PROCESS_TIMEOUT':
       return 'timeout'
     case 'HTTP_FORBIDDEN':
     case 'HTTP_UNAUTHORIZED':
