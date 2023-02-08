@@ -32,7 +32,7 @@ https://live.canalnueve.tv/canal.m3u8
 #EXTINF:-1 tvg-id="BayresTV.ar" status="online",Bayres TV
 https://streaming02.gbasat.com.ar:19360/bayrestv/bayrestv.m3u8
 #EXTINF:-1 tvg-id="BeatsRadio.ar" status="online",Beats Radio (480p)
-https://videostream.shockmedia.com.ar:19360/cincotv/cincotv.m3u8
+https://videostream.shockmedia.com.ar:19360/beatsradio/beatsradio.m3u8
 #EXTINF:-1 tvg-id="BVC.ar" status="online",BVC (720p)
 https://vivo.solumedia.com:19360/bvconline/bvconline.m3u8
 #EXTINF:-1 tvg-id="Cadena103TV.ar" status="online",Cadena 103
@@ -147,11 +147,11 @@ http://streamyes.alsolnet.com/canal34hd/live/playlist.m3u8
 https://canalsj.kozow.com/canal40/index.m3u8
 #EXTINF:-1 tvg-id="Canal50Morteros.ar" status="online",Canal 50 (Morteros)
 https://coopmorteros.online/canal50/vivo.m3u8
-#EXTINF:-1 tvg-id="Canal79MardelPlata.ar" status="online",Canal 79 (Mar del Plata)
+#EXTINF:-1 tvg-id="Canal79MardelPlata.ar" status="online",Canal 79 Mar del Plata (240p)
 https://streamconex.com:1936/mardelplata/mardelplata/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal79SanJuan.ar" status="online",Canal 79 (San Juan)
+#EXTINF:-1 tvg-id="Canal79SanJuan.ar" status="error",Canal 79 San Juan (240p)
 https://streamconex.com:1936/sanjuan/sanjuan/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal79SantaClaradelMar.ar" status="online",Canal 79 (Santa Clara del Mar)
+#EXTINF:-1 tvg-id="Canal79SantaClaradelMar.ar" status="online",Canal 79 Santa Clara del Mar (240p)
 https://streamconex.com:1936/santaclara/santaclara/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal907FM.ar" status="online",Canal 907 FM
 https://panel.dattalive.com/canal907/canal907/playlist.m3u8
@@ -373,7 +373,7 @@ https://cnnsanjuan.com:9999/zonda/zonda/playlist.m3u8
 https://stmv1.cnarlatam.com/astronet/astronet/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Aventuras TV (360p)
 https://stmv1.cnarlatam.com/mundotv/mundotv/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Señal Urbana
+#EXTINF:-1 tvg-id="SenalUrbana.ar" status="online",Señal Urbana
 https://videosenlared.fullstreaming.ar:3560/live/senialurbanalive.m3u8
 #EXTINF:-1 tvg-id="" status="online",Te Lo Cuento (360p)
 https://stmv1.cnarlatam.com/telocuento/telocuento/playlist.m3u8
@@ -381,3 +381,48 @@ https://stmv1.cnarlatam.com/telocuento/telocuento/playlist.m3u8
 https://stmv1.cnarlatam.com/techscience365/techscience365/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Xtrema Animal (360p)
 https://stmv1.cnarlatam.com/xtremaanimal/xtremaanimal/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal10deJunin.ar" user-agent="iPhone",Canal 10 de Junín (720p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=iPhone
+https://g4.mc-slo.transport.edge-access.net/a10/ngrp:canal10junin-100056_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CanaldelaCiudad.ar" user-agent="iPhone",Canal de la Ciudad (720p)
+#EXTVLCOPT:http-user-agent=iPhone
+https://g2.vxral-slo.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CanalTresLaPampa.ar",Canal 3 La Pampa (1080p)
+https://stream.arcast.com.ar/c3lapampa/ngrp:c3lapampa_all/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal6MardePlata.ar",Canal 6 Mar del Plata (480p)
+https://panel.dattalive.com/8166/8166/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal7TV.ar",Canal 7 TV (720p)
+https://stream.arcast.com.ar/envivo/castv/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalBlu.ar",Canal Blu (720p)
+https://vivo.solumedia.com:19360/canalblu/canalblu.m3u8
+#EXTINF:-1 tvg-id="ViajarTV.ar",Viajar TV (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://player.vimeo.com/video/677236166
+#EXTINF:-1 tvg-id="CMElCanaldelaMusica.ar" user-agent="iPhone",CM El Canal de la Música (720p)
+#EXTVLCOPT:http-user-agent=iPhone
+http://g5.vxral-slo.transport.edge-access.net/a09/ngrp:CM_CanaldelaMusica-100044_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CronicaTV.ar" user-agent="iPhone",Crónica TV (720p)
+#EXTVLCOPT:http-user-agent=iPhone
+https://g1.mc-hor.transport.edge-access.net/a10/ngrp:cronicatv_video1-100044_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="DoceMisiones.ar" user-agent="iPhone",Canal 12 Misiones (720p)
+#EXTVLCOPT:http-user-agent=iPhone
+https://g4.vxral-slo.transport.edge-access.net/a05/ngrp:c12_live01-100129_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="UTNTV.ar",UTN TV (480p)
+https://stream.arcast.com.ar/utntv/utntv/playlist.m3u8
+#EXTINF:-1 tvg-id="CincoTV.ar",Cinco TV (480p)
+https://videostream.shockmedia.com.ar:19360/cincotv/cincotv.m3u8
+#EXTINF:-1 tvg-id="ArgentinisimaSatelital.ar",Argentinísima Satelital (540p)
+https://stream1.sersat.com/hls/argentinisima.m3u8
+#EXTINF:-1 tvg-id="",Canal 79 Villa Maza (240p)
+https://streamconex.com:1936/villamaza/villamaza/playlist.m3u8
+#EXTINF:-1 tvg-id="",Canal 79 La Costa (240p)
+https://streamconex.com:1936/lacosta/lacosta/playlist.m3u8
+#EXTINF:-1 tvg-id="",Canal 79 Puan (240p)
+https://streamconex.com:1936/puan/puan/playlist.m3u8
+#EXTINF:-1 tvg-id="CanalC.ar",Canal C [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/ccanal
+#EXTINF:-1 tvg-id="CordobaTV.ar",Córdoba TV [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/cordobatv
+#EXTINF:-1 tvg-id="",Canal Showsport [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canalshowsport
+#EXTINF:-1 tvg-id="LapachoTVCanal11.ar",Lapacho TV Canal 11 (720p)
+https://vivo.solumedia.com:19360/lapacho/lapacho.m3u8
