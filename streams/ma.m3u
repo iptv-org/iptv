@@ -1,21 +1,21 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2MInternational.ma" status="online",2M Monde (360p)
+#EXTINF:-1 tvg-id="2M.ma" status="online",2M Monde (360p)
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8
-#EXTINF:-1 tvg-id="AlAoulaEurope.ma" status="online",Al Aoula International (360p)
+#EXTINF:-1 tvg-id="AlAoulaEurope.ma" status="blocked",Al Aoula International (360p)
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8
-#EXTINF:-1 tvg-id="AlAoulaLaayoune.ma" status="timeout",Al Aoula Laayoune (360p)
+#EXTINF:-1 tvg-id="AlAoulaLaayoune.ma" status="blocked",Al Aoula Laayoune (360p)
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_laayoune/hls_snrt/al_aoula_laayoune.m3u8
-#EXTINF:-1 tvg-id="AlMaghribia.ma" status="online",Al Maghribia (360p)
+#EXTINF:-1 tvg-id="AlMaghribia.ma" status="blocked",Al Maghribia (360p)
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_maghribia_snrt/hls_snrt/al_maghribia_snrt.m3u8
-#EXTINF:-1 tvg-id="Arrabiaa.ma" status="online",Arrabiaa (360p)
+#EXTINF:-1 tvg-id="Arrabiaa.ma" status="blocked",Arrabiaa (360p)
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arrabiaa/hls_snrt/arrabiaa.m3u8
-#EXTINF:-1 tvg-id="Arryadia.mr" status="online",Arryadia (360p)
+#EXTINF:-1 tvg-id="Arriadia.mr" status="blocked",Arriadia (360p)
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arriadia/hls_snrt/arriadia.m3u8
-#EXTINF:-1 tvg-id="Assadissa.ma" status="online",Assadissa (360p)
+#EXTINF:-1 tvg-id="Assadissa.ma" status="blocked",Assadissa (360p)
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/assadissa/hls_snrt/assadissa.m3u8
-#EXTINF:-1 tvg-id="M24TV.ma" status="online",M24 TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="M24TV.ma" status="timeout",M24 TV (720p) [Not 24/7]
 http://79.137.106.241/live/smil:OutStream1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="M24TV.ma" status="online",M24 TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="M24TV.ma" status="error",M24 TV (720p) [Not 24/7]
 https://www.m24tv.ma/live/smil:OutStream1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Medi1TVAfrique.ma" status="online",Medi 1 TV Afrique (1080p) [Not 24/7]
 http://streaming2.medi1tv.com/live/smil:medi1fr.smil/playlist.m3u8
@@ -23,15 +23,9 @@ http://streaming2.medi1tv.com/live/smil:medi1fr.smil/playlist.m3u8
 http://5f72f3a9b06b7.streamlock.net/live/smil:medi1ar.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Medi1TVMaghreb.ma" status="online",Medi 1 TV Maghreb (1080p) [Not 24/7]
 http://streaming1.medi1tv.com/live/smil:medi1tv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Tamazight.ma" status="online",Tamazight (360p)
+#EXTINF:-1 tvg-id="Tamazight.ma" status="blocked",Tamazight (360p)
 https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/tamazight_tv8_snrt/hls_snrt/tamazight_tv8_snrt.m3u8
 #EXTINF:-1 tvg-id="TeleMaroc.ma" status="online",Télé Maroc (1080p)
 https://api.new.livestream.com/accounts/27130247/events/8196478/live.m3u8
-#EXTINF:-1 tvg-id="M24TV.ma" status="timeout",M24 TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Maghreb Arabe Press (720p) [Not 24/7]
 https://www.maptvnews.ma/live/smil:OutStream1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AlAoula.ma" status="online",Al Aoula
-https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8
-#EXTINF:-1 tvg-id="Athaqafia.ma" status="online",Athaqafia
-https://cdnamd-hls-globecast.akamaized.net/live/ramdisk/arrabiaa/hls_snrt/index.m3u8
-#EXTINF:-1 tvg-id="ElMedina.ma" status="online",El Medina
-https://usher.ttvnw.net/api/channel/hls/elmedina_network.m3u8?acmb=e30%3D&allow_source=true&fast_bread=true&p=5672409&play_session_id=fe7511b875d47370c99cdc55d7df2825&player_backend=mediaplayer&playlist_include_framerate=true&reassignments_supported=true&sig=378ff82a0db554adc947405a75c44ecfa379290e&supported_codecs=avc1&token=%7B%22adblock%22%3Afalse%2C%22authorization%22%3A%7B%22forbidden%22%3Afalse%2C%22reason%22%3A%22%22%7D%2C%22blackout_enabled%22%3Afalse%2C%22channel%22%3A%22elmedina_network%22%2C%22channel_id%22%3A773381474%2C%22chansub%22%3A%7B%22restricted_bitrates%22%3A%5B%5D%2C%22view_until%22%3A1924905600%7D%2C%22ci_gb%22%3Afalse%2C%22geoblock_reason%22%3A%22%22%2C%22device_id%22%3A%2212b018330e1a2ada%22%2C%22expires%22%3A1672269942%2C%22extended_history_allowed%22%3Afalse%2C%22game%22%3A%22%22%2C%22hide_ads%22%3Afalse%2C%22https_required%22%3Atrue%2C%22mature%22%3Afalse%2C%22partner%22%3Afalse%2C%22platform%22%3A%22web%22%2C%22player_type%22%3A%22embed%22%2C%22private%22%3A%7B%22allowed_to_view%22%3Atrue%7D%2C%22privileged%22%3Afalse%2C%22role%22%3A%22%22%2C%22server_ads%22%3Atrue%2C%22show_ads%22%3Atrue%2C%22subscriber%22%3Afalse%2C%22turbo%22%3Afalse%2C%22user_id%22%3Anull%2C%22user_ip%22%3A%2224.235.164.94%22%2C%22version%22%3A2%7D&cdm=wv&player_version=1.16.0
