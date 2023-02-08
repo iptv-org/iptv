@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="4E.gr" status="online",4E (720p)
 http://eu2.tv4e.gr:554/live/smil:myStream.sdp.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="34100TV.gr" status="online",34100 TV (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="34100TV.gr" status="blocked",34100 TV (720p) [Geo-blocked]
 https://s1.cystream.net/live/34100/playlist.m3u8
 #EXTINF:-1 tvg-id="AcheloosTV.gr" status="online",Acheloos TV (576p) [Not 24/7]
 http://srv.viiideo.gr:1935/axeloos/live/playlist.m3u8
@@ -51,9 +51,9 @@ https://ert-live-bcbs15228.siliconweb.com/media/ert_news/ert_news.m3u8
 https://ert-live-bcbs15228.siliconweb.com/media/ert_sports_ww/ert_sports2_ww.m3u8
 #EXTINF:-1 tvg-id="ERTWorld.gr" status="online",ERT World (480p)
 http://wpso.com:1936/hls/wzra.m3u8
-#EXTINF:-1 tvg-id="ERTWorld.gr" status="timeout",ERT World (720p)
+#EXTINF:-1 tvg-id="ERTWorld.gr" status="error",ERT World (720p)
 https://ert-live-bcbs15228.siliconweb.com/media/ert_world/ert_world.m3u8
-#EXTINF:-1 tvg-id="FarosTV2.gr" status="online",Faros TV2 (480p) [Geo-blocked]
+#EXTINF:-1 tvg-id="FarosTV2.gr" status="blocked",Faros TV2 (480p) [Geo-blocked]
 https://s1.cystream.net/live/faros2/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr" status="blocked",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
@@ -93,10 +93,10 @@ https://live.neatv.gr:8888/hls/neatv.m3u8
 https://live.neatv.gr:8888/hls/neatv_high/index.m3u8
 #EXTINF:-1 tvg-id="NetmaxTV.gr" status="online",Netmax TV (720p) [Not 24/7]
 http://live.netmaxtv.com:8080/live/live/playlist.m3u8
-#EXTINF:-1 tvg-id="NG.gr" status="online",NG (614p)
-http://live.streams.ovh:1935/NGradio/NGradio/playlist.m3u8
 #EXTINF:-1 tvg-id="NG.gr" status="online",NG (720p)
 https://live.streams.ovh/NGradio/NGradio/playlist.m3u8
+#EXTINF:-1 tvg-id="NG.gr" status="online",NG (614p)
+http://live.streams.ovh:1935/NGradio/NGradio/playlist.m3u8
 #EXTINF:-1 tvg-id="NRG91.gr" status="online",NRG 91 (720p) [Not 24/7]
 http://tv.nrg91.gr:1935/onweb/live/master.m3u8
 #EXTINF:-1 tvg-id="NRGTV.gr" status="online",NRG TV (720p)
