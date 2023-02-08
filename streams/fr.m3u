@@ -1,16 +1,31 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="7ALimoges.fr" status="error",7ALimoges (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="7ALimoges.fr" status="online",7ALimoges (1080p) [Not 24/7]
 https://ythls.onrender.com/channel/UCdFv_ZWQ3Xk_NfRiaK-ryGg.m3u8
+#EXTINF:-1 tvg-id="A12TV.fr" status="online",A12 TV (720p)
+https://video1.getstreamhosting.com:1936/8420/8420/playlist.m3u8
+#EXTINF:-1 tvg-id="Africa24.fr" status="online",Africa 24 (540p)
+https://edge12.vedge.infomaniak.com/livecast/ik:africa24/manifest.m3u8
 #EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="online",Alpe d’Huez TV (720p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8
 #EXTINF:-1 tvg-id="AntenneReunion.fr" status="online",Antenne Réunion (720p) [Not 24/7]
 https://live-antenne-reunion.zeop.tv/live/c3eds/antreunihd/hls_fta/antreunihd.m3u8?location=ZEOP01
+#EXTINF:-1 tvg-id="AssembleeNationale.fr" status="error",Assemblée Nationale (1080p) [Not 24/7]
+http://anorigin.vodalys.com/live/live36/index36_12856975.m3u8?DVR=
+#EXTINF:-1 tvg-id="BFMAlsace.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Alsace (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_ALSACE/index.m3u8?end=END&start=LIVE
 #EXTINF:-1 tvg-id="BFMBusiness.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Business (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_BUSINESS/index.m3u8?end=END&start=LIVE
+#EXTINF:-1 tvg-id="BFMCotedAzur.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Nice Côte d'Azur (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_NICECOTEDAZUR/index.m3u8?end=END&start=LIVE
 #EXTINF:-1 tvg-id="BFMDICIAlpesduSud.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM DICI Alpes du Sud (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_DICI_ALPESDUSUD/index.m3u8?end=END&start=LIVE
+#EXTINF:-1 tvg-id="BFMDICIAlpesduSud.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM DICI Haute-Provence (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_DICI_HAUTEPROVENCE/index.m3u8?end=END&start=LIVE
 #EXTINF:-1 tvg-id="BFMGrandLille.fr" status="online",BFM Grand Lille (720p)
 https://live.creacast.com/grandlilletv/smil:grandlilletv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BFMGrandLille.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Grand Lille (1080p)
@@ -27,25 +42,67 @@ https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_LYON/index.m3u8?end=END&start=LI
 #EXTINF:-1 tvg-id="BFMMarseille.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Marseille (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_MARSEILLEPROV/index.m3u8?end=END&start=LIVE
+#EXTINF:-1 tvg-id="BFMNormandie.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Normandie (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_NORMANDIE/index.m3u8?end=END&start=LIVE
 #EXTINF:-1 tvg-id="BFMParis.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Paris Île-de-France (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_PARIS/index.m3u8?end=END&start=LIVE
+#EXTINF:-1 tvg-id="BFMTechCo.fr" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Tech & Co (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TECHANDCO/index.m3u8?end=END&start=LIVE
+#EXTINF:-1 tvg-id="BFMTV.fr" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM TV (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TV/index.m3u8?end=END&start=LIVE
+#EXTINF:-1 tvg-id="BFMVar.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Toulon Var (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
+https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TOULONVAR/index.m3u8?end=END&start=LIVE
 #EXTINF:-1 tvg-id="BIPTV.fr" status="online",BIP TV (480p) [Not 24/7]
 http://biptv.tv/live/biptvstream_orig/index.m3u8
+#EXTINF:-1 tvg-id="BSmartTV.fr",B Smart TV (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/bsmart
+#EXTINF:-1 tvg-id="Canal32.fr" status="online",Canal 32 (480p)
+https://edge13.vedge.infomaniak.com/livecast/ik:canal32/manifest.m3u8
 #EXTINF:-1 tvg-id="CentralTV.fr" status="online",Central TV (614p) [Not 24/7]
 http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8
+#EXTINF:-1 tvg-id="Cherie25.fr" status="online",Chérie 25 (1080p)
+https://cherie25.nrjaudio.fm/hls/live/2038375/c25/FHD.m3u8
+#EXTINF:-1 tvg-id="D5Music.fr",D5Music (480p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/D5Music
+#EXTINF:-1 tvg-id="D5tv.fr" status="online",D5tv (1080p)
+http://live.creacast.com/d5tv/smil:d5tv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="D5tv.fr",D5tv (480p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/D5tv
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
+#EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM (1080p)
+https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
+#EXTINF:-1 tvg-id="EreTV.fr" status="online",Ère TV (1080p)
+https://mn-nl.mncdn.com/awraastv/awraastv_hd.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ESAWebTV.fr",ESA Web TV (1080p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/362/events/6350312/player
+#EXTINF:-1 tvg-id="Europe1.fr",Europe 1 (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/Europe1fr
 #EXTINF:-1 tvg-id="FashionTVCzechSlovak.fr" status="online",FashionTV Czech&Slovak (450p) [Not 24/7]
 http://lb.streaming.sk/fashiontv/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie (360p)
-http://mv2.tvfrancophonie.org/live/Stream1/playlist.m3u8
+#EXTINF:-1 tvg-id="FranceInter.fr",France Inter (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/franceinter
 #EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie24 (1080p)
 https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie (360p)
+http://mv2.tvfrancophonie.org/live/Stream1/playlist.m3u8
 #EXTINF:-1 tvg-id="GenerationsTV.fr" status="online",Generations TV (576p)
 https://edge.vedge.infomaniak.com/livecast/ik:generation-tv/manifest.m3u8
+#EXTINF:-1 tvg-id="HolyGodTV.fr" status="online",HolyGod TV (720p)
+https://128989.gvideo.io/streams/128989_522806/playlist.m3u8
+#EXTINF:-1 tvg-id="ILTV.fr" status="online",ILTV (720p)
+http://live.creacast.com/iltv/smil:iltv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KTO.fr" status="online",KTO (404p) [Not 24/7]
 https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
+#EXTINF:-1 tvg-id="LMTVSarthe.fr",LM TV Sarthe (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/lmtvsarthe
+#EXTINF:-1 tvg-id="MaisonTravauxTV.fr",Maison & Travaux TV (480p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/maison-travaux-tv
 #EXTINF:-1 tvg-id="MCMTop.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",MCM Top (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s49/index.m3u8
@@ -54,6 +111,8 @@ http://tv.mondeduloisir.fr:1935/tixtv/smil:web.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Mezzo.fr" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Mezzo (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s35/index.m3u8
+#EXTINF:-1 tvg-id="MGGTV.fr",MGG TV (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/mgg_fr
 #EXTINF:-1 tvg-id="MoselleTV.fr" status="online",viàMoselleTV (720p) [Not 24/7]
 https://live.creacast.com/mirabelletv/smil:mirabelletv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVFrance.fr" status="blocked",MTV France (720p) [Not 24/7]
@@ -62,8 +121,14 @@ http://190.2.155.162:8080/mtvfrance/mpegts
 http://190.2.155.162:8080/mtvhit/mpegts
 #EXTINF:-1 tvg-id="MyZenTV.fr" status="online",MyZen TV (1080p)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-en-plex/playlist.m3u8
-#EXTINF:-1 tvg-id="NancyWebTV.fr" status="error",Nancy Web TV (394p) [Not 24/7]
+#EXTINF:-1 tvg-id="NancyWebTV.fr" status="online",Nancy Web TV (394p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:nancy-webtv/manifest.m3u8
+#EXTINF:-1 tvg-id="NLMTV.fr" status="online",NLM TV (720p)
+https://ktismaservers.in:3394/stream/play.m3u8
+#EXTINF:-1 tvg-id="NRJ12.fr" status="online",NRJ 12 (1080p)
+https://nrj12.nrjaudio.fm/hls/live/2038374/nrj_12/FHD.m3u8
+#EXTINF:-1 tvg-id="PlayloudTV.fr" status="error",Playloud TV (720p) [Not 2477]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/playloudlive
 #EXTINF:-1 tvg-id="PublicSenat.fr" status="error",Public Sénat (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/publicsenat
 #EXTINF:-1 tvg-id="SportenFrance.fr" status="online",Sport En France (1080p)
@@ -72,7 +137,15 @@ https://sp1564435593.mytvchain.info/live/sp1564435593/index.m3u8
 https://sp1564435593.mytvchain.info/live/sp1564435593_720/index.m3u8
 #EXTINF:-1 tvg-id="SportenFrance.fr" status="online",Sport En France (360p)
 https://sp1564435593.mytvchain.info/live/sp1564435593_360/index.m3u8
-#EXTINF:-1 tvg-id="Telesud.fr" status="error",TeleSud (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="TebeoTV.fr" status="online",Tébéo TV (1080p)
+https://start-1.direct.live/hls/tebeo.m3u8
+#EXTINF:-1 tvg-id="TebeSud.fr" status="online",TébéSud (1080p)
+https://start-2.direct.live/hls/tebesud.m3u8
+#EXTINF:-1 tvg-id="TeleGrenoble.fr",TéléGrenoble (1080p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/telegrenoble
+#EXTINF:-1 tvg-id="Telenantes.fr",Télénantes (480p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/TELENANTES
+#EXTINF:-1 tvg-id="Telesud.fr",TeleSud (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/telesud
 #EXTINF:-1 tvg-id="TF1.fr" status="online",TF1 (1080p)
 https://tf1-hls-live-cdn1.tf1.fr/out/v1/c2e382be3aa2486e8753747e7bb6157e/index.m3u8
@@ -80,22 +153,46 @@ https://tf1-hls-live-cdn1.tf1.fr/out/v1/c2e382be3aa2486e8753747e7bb6157e/index.m
 https://tsf-hls-live-cdn1.tf1.fr/out/v1/0326aeefae1a405c9a9732d6f80a66df/index.m3u8
 #EXTINF:-1 tvg-id="TFX.fr" status="online",TFX (1080p)
 https://tfx-hls-live-cdn1.tf1.fr/out/v1/818e38d791854222b71a950791fb7002/index.m3u8
+#EXTINF:-1 tvg-id="TL7.fr",Télévision Loire 7 (480p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/tl7loire
 #EXTINF:-1 tvg-id="TMC.fr" status="online",TMC (1080p)
 https://tmc-hls-live-cdn1.tf1.fr/out/v1/982927d0b5d24bd58ac42184b10c63d7/index.m3u8
+#EXTINF:-1 tvg-id="TraceLatina.fr" status="blocked",Trace Latina
+http://185.234.217.27:8002/play/a02f/index.m3u8
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" status="blocked",TV5Monde Europe (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
+#EXTINF:-1 tvg-id="TV5MondeFranceBelgiumSwitzerland.fr" status="blocked",TV5Monde France Belgique Suisse Monaco (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(fbs)/variant.m3u8
 #EXTINF:-1 tvg-id="TV5MondeInfo.fr" status="blocked",TV5Monde Info (1080p) [Geo-blocked]
 https://ott.tv5monde.com/Content/HLS/Live/channel(info)/variant.m3u8
+#EXTINF:-1 tvg-id="TV5MondeMaghrebOrient.fr" status="blocked",TV5Monde Maghreb-Orient (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(orient)/variant.m3u8
+#EXTINF:-1 tvg-id="TV5MondePacific.fr" status="blocked",TV5Monde Pacifique (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(pacifique)/variant.m3u8
+#EXTINF:-1 tvg-id="TV5MondeStyle.fr" status="blocked",TV5Monde Style (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(style1)/variant.m3u8
 #EXTINF:-1 tvg-id="TV7Bordeaux.fr" status="online",TV7 Bordeaux (720p)
 http://live.digiteka.com/1/RVNZMmJtUURmd09I/U0dNU0tk/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Colmar.fr" status="online",TV7 Colmar (576p)
 https://tv7.hdr-tv.com/live/tv7/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="TV8MontBlanc.fr",TV8 Mont-Blanc (480p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/tv8montblanc
 #EXTINF:-1 tvg-id="TV78.fr" status="online",TV78 (720p)
 https://streamtv.cdn.dvmr.fr/TV78/ngrp:tv78.stream_all/master.m3u8
 #EXTINF:-1 tvg-id="TVPitchoun.fr" status="online",TV Pitchoun (1080p)
 https://live.tvradio-pitchoun.fr/hls/live.m3u8
 #EXTINF:-1 tvg-id="TVR.fr" status="online",TVR (Bretagne) (720p)
 https://streamtv.cdn.dvmr.fr/TVR/ngrp:tvr.stream_all/master.m3u8
+#EXTINF:-1 tvg-id="TVTours.fr",TV Tours (480p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/tvtours
+#EXTINF:-1 tvg-id="TVVendee.fr",TV Vendée (480p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/TVVendee
 #EXTINF:-1 tvg-id="TZiK.fr" status="timeout",TZiK [Not 24/7]
 https://54627d4fc5996.streamlock.net/tzik/tzik/chunklist.m3u8
+#EXTINF:-1 tvg-id="UbiznewsTV.fr",Ubiznews TV (480p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/UBIZNEWSTV
+#EXTINF:-1 tvg-id="ViaMatele.fr" status="online",ViàMatélé (1080p)
+https://5dd226f8f01e8.streamlock.net/via-matele-live/matelelive_1080/playlist.m3u8
 #EXTINF:-1 tvg-id="ViaOccitanie.fr" status="online",viàOccitanie (540p) [Not 24/7]
 https://streamer01.myvideoplace.tv/streamer02/hls/MDS_VIA_PAD_301117.m3u8
 #EXTINF:-1 tvg-id="VosgesTV.fr" status="online",Vosges Télévision (576p) [Not 24/7]
@@ -104,110 +201,11 @@ https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8
 https://live.digiteka.com/1/WGQ1NnhEN0lzM0NU/dk1EOHhw/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Weo.fr" status="online",Wéo (Picardie) (480p) [Not 24/7]
 https://live.digiteka.com/1/Zks2L0VsM2V0T242/QTBqcFly/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="BFMAlsace.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Alsace (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_ALSACE/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMDICIAlpesduSud.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM DICI Haute-Provence (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_DICI_HAUTEPROVENCE/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMCotedAzur.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Nice Côte d'Azur (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_NICECOTEDAZUR/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMNormandie.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Normandie (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_NORMANDIE/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMVar.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Toulon Var (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TOULONVAR/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="DBMTV.fr" status="error",DBM (1080p)
-https://edge.vedge.infomaniak.com/livecast/ik:dbmtv/manifest.m3u8
-#EXTINF:-1 tvg-id="" status="online",Fun Radio (720p)
-https://livevideo.infomaniak.com/streaming/livecast/funradiovisionhd/playlist.m3u8
-#EXTINF:-1 tvg-id="TraceLatina.fr" status="blocked",Trace Latina
-http://185.234.217.27:8002/play/a02f/index.m3u8
-#EXTINF:-1 tvg-id="A12TV.fr",A12 TV (720p)
-https://video1.getstreamhosting.com:1936/8420/8420/playlist.m3u8
-#EXTINF:-1 tvg-id="Africa24.fr",Africa 24 (540p)
-https://edge12.vedge.infomaniak.com/livecast/ik:africa24/manifest.m3u8
-#EXTINF:-1 tvg-id="BSmartTV.fr",B Smart TV (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/bsmart
-#EXTINF:-1 tvg-id="D5tv.fr",D5tv (1080p)
-http://live.creacast.com/d5tv/smil:d5tv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="D5tv.fr",D5tv (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/D5tv
-#EXTINF:-1 tvg-id="DieuTV.fr",Dieu TV (1080p)
-https://katapy.hs.llnwd.net/dieutvwza1/DIEUTVLIVE/smil:dieutv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Telenantes.fr",Télénantes (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/TELENANTES
-#EXTINF:-1 tvg-id="TebeSud.fr",TébéSud (1080p)
-https://start-2.direct.live/hls/tebesud.m3u8
-#EXTINF:-1 tvg-id="TeleGrenoble.fr",TéléGrenoble (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/telegrenoble
-#EXTINF:-1 tvg-id="TVTours.fr",TV Tours (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/tvtours
-#EXTINF:-1 tvg-id="UbiznewsTV.fr",Ubiznews TV (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/UBIZNEWSTV
-#EXTINF:-1 tvg-id="HolyGodTV.fr",HolyGod TV (720p)
-https://128989.gvideo.io/streams/128989_522806/playlist.m3u8
-#EXTINF:-1 tvg-id="LMTVSarthe.fr",LM TV Sarthe (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/lmtvsarthe
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr",TV5Monde Europe (1080p) [Geo-blocked] 
-https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
-#EXTINF:-1 tvg-id="TV5MondePacific.fr",TV5Monde Pacifique (1080p) [Geo-blocked] 
-https://ott.tv5monde.com/Content/HLS/Live/channel(pacifique)/variant.m3u8
-#EXTINF:-1 tvg-id="TV5MondeStyle.fr",TV5Monde Style (1080p) [Geo-blocked] 
-https://ott.tv5monde.com/Content/HLS/Live/channel(style1)/variant.m3u8
-#EXTINF:-1 tvg-id="TV5MondeMaghrebOrient.fr",TV5Monde Maghreb-Orient (1080p) [Geo-blocked] 
-https://ott.tv5monde.com/Content/HLS/Live/channel(orient)/variant.m3u8
-#EXTINF:-1 tvg-id="TV5MondeFranceBelgiumSwitzerland.fr",TV5Monde France Belgique Suisse Monaco (1080p) [Geo-blocked] 
-https://ott.tv5monde.com/Content/HLS/Live/channel(fbs)/variant.m3u8
-#EXTINF:-1 tvg-id="FranceInter.fr",France Inter (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/franceinter
-#EXTINF:-1 tvg-id="MaisonTravauxTV.fr",Maison & Travaux TV (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/maison-travaux-tv
-#EXTINF:-1 tvg-id="NRJ12.fr",NRJ 12 (1080p)
-https://nrj12.nrjaudio.fm/hls/live/2038374/nrj_12/FHD.m3u8
-#EXTINF:-1 tvg-id="TVVendee.fr",TV Vendée (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/TVVendee
-#EXTINF:-1 tvg-id="PlayloudTV.fr",Playloud TV (720p) [Not 2477]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/playloudlive
-#EXTINF:-1 tvg-id="D5Music.fr",D5Music (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/D5Music
-#EXTINF:-1 tvg-id="ESAWebTV.fr",ESA Web TV (1080p)
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/362/events/6350312/player
-#EXTINF:-1 tvg-id="TL7.fr",Télévision Loire 7 (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/tl7loire
-#EXTINF:-1 tvg-id="TebeoTV.fr",Tébéo TV (1080p)
-https://start-1.direct.live/hls/tebeo.m3u8
-#EXTINF:-1 tvg-id="Canal32.fr",Canal 32 (480p)
-https://edge13.vedge.infomaniak.com/livecast/ik:canal32/manifest.m3u8
-#EXTINF:-1 tvg-id="Europe1.fr",Europe 1 (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/Europe1fr
-#EXTINF:-1 tvg-id="AssembleeNationale.fr",Assemblée Nationale (1080p) [Not 24/7]
-http://anorigin.vodalys.com/live/live36/index36_12856975.m3u8?DVR
-#EXTINF:-1 tvg-id="BFMTechCo.fr" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Tech & Co (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TECHANDCO/index.m3u8?start=LIVE&end=END
-#EXTINF:-1 tvg-id="BFMTV.fr" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM TV (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TV/index.m3u8?start=LIVE&end=END
-#EXTINF:-1 tvg-id="MGGTV.fr",MGG TV (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/mgg_fr
-#EXTINF:-1 tvg-id="NLMTV.fr",NLM TV (720p)
-https://ktismaservers.in:3394/stream/play.m3u8
-#EXTINF:-1 tvg-id="ILTV.fr",ILTV (720p)
-http://live.creacast.com/iltv/smil:iltv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="",CStar (480p) [Not 24/7] [Geo-blocked]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x5gv5v0
+#EXTINF:-1 tvg-id="" status="online",Fun Radio (720p)
+https://livevideo.infomaniak.com/streaming/livecast/funradiovisionhd/playlist.m3u8
 #EXTINF:-1 tvg-id="",LCP (480p) [Not 24/7] [Geo-blocked]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xji3qy 
-#EXTINF:-1 tvg-id="TV8MontBlanc.fr",TV8 Mont-Blanc (480p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/tv8montblanc
-#EXTINF:-1 tvg-id="",TV3V (720p)
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/xji3qy
+#EXTINF:-1 tvg-id="" status="online",TV3V (720p)
 https://tv3v.hdr-tv.com/live/tv3v/livestream/master.m3u8
-#EXTINF:-1 tvg-id="ViaMatele.fr",ViàMatélé (1080p)
-https://5dd226f8f01e8.streamlock.net/via-matele-live/matelelive_1080/playlist.m3u8
-#EXTINF:-1 tvg-id="Cherie25.fr",Chérie 25 (1080p)
-https://cherie25.nrjaudio.fm/hls/live/2038375/c25/FHD.m3u8
-#EXTINF:-1 tvg-id="EreTV.fr",Ère TV (1080p)
-https://mn-nl.mncdn.com/awraastv/awraastv_hd.smil/playlist.m3u8
