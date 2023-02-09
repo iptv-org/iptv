@@ -26,16 +26,16 @@ https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_DICI_ALPESDUSUD/index.m3u8?end=E
 #EXTINF:-1 tvg-id="BFMDICIAlpesduSud.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM DICI Haute-Provence (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_DICI_HAUTEPROVENCE/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMGrandLille.fr" status="online",BFM Grand Lille (720p)
-https://live.creacast.com/grandlilletv/smil:grandlilletv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BFMGrandLille.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Grand Lille (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFMGRANDLILLE/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMGrandLittoral.fr" status="online",BFM Grand Littoral (720p)
-https://live.creacast.com/grandlittoral/smil:grandlittoral.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="BFMGrandLille.fr" status="timeout",BFM Grand Lille (720p)
+https://live.creacast.com/grandlilletv/smil:grandlilletv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BFMGrandLittoral.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Grand Littoral (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFMGRANDLITTORAL/index.m3u8?end=END&start=LIVE
+#EXTINF:-1 tvg-id="BFMGrandLittoral.fr" status="timeout",BFM Grand Littoral (720p)
+https://live.creacast.com/grandlittoral/smil:grandlittoral.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BFMLyon.fr" status="timeout" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Lyon (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_LYON/index.m3u8?end=END&start=LIVE
@@ -71,7 +71,7 @@ https://cherie25.nrjaudio.fm/hls/live/2038375/c25/FHD.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/D5Music
 #EXTINF:-1 tvg-id="D5tv.fr" status="online",D5tv (1080p)
 http://live.creacast.com/d5tv/smil:d5tv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="D5tv.fr",D5tv (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="D5tv.fr" status="error",D5tv (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/D5tv
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
