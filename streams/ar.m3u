@@ -13,7 +13,7 @@ https://panel.dattalive.com/6605140/6605140/playlist.m3u8
 https://panel.dattalive.com/6605140/smil:6605140.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="A24.ar" status="online",A24 (1080p)
 https://ythls.onrender.com/channel/UCR9120YBAqMfntqgRTKmkjQ.m3u8
-#EXTINF:-1 tvg-id="A24.ar" status="error" user-agent="iPhone",A24 (720p)
+#EXTINF:-1 tvg-id="A24.ar" status="online" user-agent="iPhone",A24 (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g1.vxral-hor.transport.edge-access.net/a15/ngrp:a24-100056_all/a24-100056.m3u8
 #EXTINF:-1 tvg-id="AiredeSantaFe.ar" status="online",Aire de Santa Fe
@@ -87,7 +87,7 @@ https://stream.arcast.com.ar/canal6moreno/canal6moreno/playlist.m3u8
 https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7Jujuy.ar" status="online",Canal 7 (Jujuy)
 https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal7Salta.ar" status="blocked",Canal 7 Salta (720p)
+#EXTINF:-1 tvg-id="Canal7Salta.ar" status="error",Canal 7 Salta (720p)
 https://panel.dattalive.com/8074/8074/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7TV.ar" status="online",Canal 7 TV (720p)
 https://stream.arcast.com.ar/envivo/castv/playlist.m3u8
@@ -95,7 +95,7 @@ https://stream.arcast.com.ar/envivo/castv/playlist.m3u8
 https://stream.arcast.com.ar/c8mdp/ngrp:c8mdp_all/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9Chabas.ar" status="error",Canal 9 Chabás (576p)
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canal9chabas
-#EXTINF:-1 tvg-id="Canal9LaRioja.ar" status="online",Canal 9 La Rioja (720p)
+#EXTINF:-1 tvg-id="Canal9LaRioja.ar" status="error",Canal 9 La Rioja (720p)
 https://inliveserver.com:1936/17012/17012/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9Litoral.ar" status="online",Canal 9 Litoral
 https://stream.arcast.live/ahora/ahora/playlist.m3u8
@@ -164,7 +164,7 @@ https://streamconex.com:1936/sanjuan/sanjuan/playlist.m3u8
 https://streamconex.com:1936/santaclara/santaclara/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal907FM.ar" status="online",Canal 907 FM
 https://panel.dattalive.com/canal907/canal907/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalBlu.ar" status="online",Canal Blu (720p)
+#EXTINF:-1 tvg-id="CanalBlu.ar" status="error",Canal Blu (720p)
 https://vivo.solumedia.com:19360/canalblu/canalblu.m3u8
 #EXTINF:-1 tvg-id="CanalC.ar" status="error",Canal C [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/ccanal
@@ -173,12 +173,12 @@ https://panel.dattalive.com/8138/8138/playlist.m3u8
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8
-#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
-https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="iPhone",Canal Luz (1080p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
+https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalOrbe21.ar" status="online",Canal Orbe 21
 https://cdn2.zencast.tv:30443/orbe/orbe21smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalProvincial.ar" status="online",Canal Provincial (360p)
@@ -290,7 +290,7 @@ https://streamtv12.ddns.net:5443/LiveApp/streams/193945633734205616732920.m3u8
 https://video.alfasocialmedia.com.ar:3396/live/milleniumtvlive.m3u8
 #EXTINF:-1 tvg-id="Mirador.ar" status="online",Mirador
 https://5fb24b460df87.streamlock.net/live-cont.ar/mirador/playlist.m3u8
-#EXTINF:-1 tvg-id="MisionesCuatro.ar" status="online",Misiones Cuatro (480p)
+#EXTINF:-1 tvg-id="MisionesCuatro.ar" status="blocked",Misiones Cuatro (480p)
 https://streamlov.alsolnet.com/misionescuatro/live/playlist.m3u8
 #EXTINF:-1 tvg-id="MultivisionFederal.ar" status="online",Multivisión Federal (720p) [Not 24/7]
 http://panel.dattalive.com:1935/8250/8250/playlist.m3u8
@@ -306,7 +306,7 @@ https://unlimited1-us.dps.live/nettv/nettv.smil/playlist.m3u8
 https://unlimited6-cl.dps.live/nettv/nettv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NGFederal.ar" status="online",NG Federal (720p)
 http://www.coninfo.net:1935/tvlink/live/playlist.m3u8
-#EXTINF:-1 tvg-id="NorteTV.ar" status="online",Norte TV Canal 7 (360p)
+#EXTINF:-1 tvg-id="NorteTV.ar" status="error",Norte TV Canal 7 (360p)
 https://video.streamtvradio.com:8443/uv027/uv027/playlist.m3u8
 #EXTINF:-1 tvg-id="Pakapaka.ar" status="online",Pakapaka (720p)
 https://5fb24b460df87.streamlock.net/live-cont.ar/pakapaka/playlist.m3u8
@@ -316,9 +316,9 @@ https://video.streamtvradio.com:8443/uv096/uv096/playlist.m3u8
 https://live2.tensila.com/1-1-1.power-tv/hls/master.m3u8
 #EXTINF:-1 tvg-id="PowerHD.ar" status="online",Power TV (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/live-powerTV/power.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioFMTrujui.ar" status="online",Radio FM Trujui (720p)
+#EXTINF:-1 tvg-id="RadioFMTrujui.ar" status="error",Radio FM Trujui (720p)
 https://inliveserver.com:1936/14102/14102/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioTVNeuquen.ar" status="timeout",Radio TV Neuquen (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RadioTVNeuquen.ar" status="online",Radio TV Neuquen (720p) [Not 24/7]
 http://media.neuquen.gov.ar/rtn/television/playlist.m3u8
 #EXTINF:-1 tvg-id="RedVisionRadio.ar" status="error",Red Vision Radio [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://twitch.tv/redvisionradiotv
@@ -366,7 +366,7 @@ https://617c5175c970b.streamlock.net:4444/previsoratv/live/playlist.m3u8
 http://www.coninfo.net:1935/previsoratv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="Telesol.ar" status="blocked",Telesol (TLS) (432p) [Not 24/7] [Geo-blocked]
 https://cnnsanjuan.com:9999/live/telesol/playlist.m3u8
-#EXTINF:-1 tvg-id="TelevideoRegional.ar" status="online",Televideo Regional (480p)
+#EXTINF:-1 tvg-id="TelevideoRegional.ar" status="error",Televideo Regional (480p)
 https://inliveserver.com:1936/8050_1/8050_1/playlist.m3u8
 #EXTINF:-1 tvg-id="TelpinTVCanal2HD.ar" status="online",Telpin TV (1080p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/telpintv/ttv.stream/playlist.m3u8
@@ -414,7 +414,7 @@ https://stmv1.cnarlatam.com/astronet/astronet/playlist.m3u8
 https://stmv1.cnarlatam.com/mundotv/mundotv/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Canal 79 La Costa (240p)
 https://streamconex.com:1936/lacosta/lacosta/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Canal 79 Puan (240p)
+#EXTINF:-1 tvg-id="" status="error",Canal 79 Puan (240p)
 https://streamconex.com:1936/puan/puan/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="error",Canal 79 Villa Maza (240p)
 https://streamconex.com:1936/villamaza/villamaza/playlist.m3u8
