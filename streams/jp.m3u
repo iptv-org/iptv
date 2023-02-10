@@ -13,8 +13,6 @@ https://cdnv148.cloudrsst.com/jptv/janimax_540/playlist.m3u8
 https://sub.neetball.net/live/neet.m3u8
 #EXTINF:-1 tvg-id="BS12.jp" status="online",BS 12 (480p)
 http://redlabmcdn.s.llnwi.net/nv02/bs08hd/index.m3u8
-#EXTINF:-1 tvg-id="BSAsahi.jp" status="online",BS Asahi (480p)
-http://redlabmcdn.s.llnwi.net/nv02/bs04hd/index.m3u8
 #EXTINF:-1 tvg-id="BSAsahi.jp" status="blocked",BS Asahi (720p)
 http://cdn.us195.jpnettv.live:1935/jptv/bsasahi_720/playlist.m3u8
 #EXTINF:-1 tvg-id="BSAsahi.jp" status="blocked",BS Asahi (720p)
@@ -25,6 +23,8 @@ http://cdn.us195.jpnettv.live:1935/jptv/bsasahi_540/playlist.m3u8
 http://cdnv148.cloudrsst.com:1935/jptv/bsasahi_540/playlist.m3u8
 #EXTINF:-1 tvg-id="BSAsahi.jp" status="blocked",BS Asahi (540p)
 https://cdn.us195.jpnettv.live/jptv/bsasahi_540/playlist.m3u8
+#EXTINF:-1 tvg-id="BSAsahi.jp" status="blocked",BS Asahi (480p)
+http://redlabmcdn.s.llnwi.net/nv02/bs04hd/index.m3u8
 #EXTINF:-1 tvg-id="BSFuji.jp" status="online",BS Fuji TV (480p)
 http://redlabmcdn.s.llnwi.net/nv02/bs07hd/index.m3u8
 #EXTINF:-1 tvg-id="BSFuji.jp" status="blocked",BS Fuji TV (720p)
@@ -117,7 +117,7 @@ http://redlabmcdn.s.llnwi.net/nv02/ryowa6hd/index.m3u8
 http://redlabmcdn.s.llnwi.net/nv02/bs15hd/index.m3u8
 #EXTINF:-1 tvg-id="JSports2.jp" status="online",J Sports 2 (480p) [Not 24/7]
 http://redlabmcdn.s.llnwi.net/nv02/bs11hd/index.m3u8
-#EXTINF:-1 tvg-id="JSports3.jp" status="online",J Sports 3 (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="JSports3.jp" status="blocked",J Sports 3 (480p) [Not 24/7]
 http://redlabmcdn.s.llnwi.net/nv02/bs12hd/index.m3u8
 #EXTINF:-1 tvg-id="JSports4.jp" status="blocked",J Sports 4 (720p) [Not 24/7]
 http://cdnv148.cloudrsst.com:1935/jptv/jsports1_720/playlist.m3u8
@@ -187,10 +187,10 @@ https://cdnv148.cloudrsst.com/jptv/igasennmonn_720/playlist.m3u8
 https://cdn.us195.jpnettv.live/jptv/igasennmonn_540/playlist.m3u8
 #EXTINF:-1 tvg-id="NihonEigaSenmonChannel.jp" status="blocked",Nihon Eiga Senmon (540p)
 https://cdnv148.cloudrsst.com/jptv/igasennmonn_540/playlist.m3u8
-#EXTINF:-1 tvg-id="NipponTV.jp" status="online",Nippon TV (540p) [Not 24/7]
-https://ntv3.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="NipponTV.jp" status="online",Nippon TV (480p) [Not 24/7]
 http://redlabmcdn.s.llnwi.net/nv02/ryowa3hd/index.m3u8
+#EXTINF:-1 tvg-id="NipponTV.jp" status="error",Nippon TV (540p) [Not 24/7]
+https://ntv3.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="NitteleGPlus.jp" status="blocked",Nittele G+ Sports & News (540p)
 https://cdn.us195.jpnettv.live/jptv/japan_tv_G_540/playlist.m3u8
 #EXTINF:-1 tvg-id="NitteleGPlus.jp" status="blocked",Nittele G+ Sports & News (540p)
@@ -241,10 +241,10 @@ https://cdnv148.cloudrsst.com/jptv/toa_540/playlist.m3u8
 https://movie.mcas.jp/mcas/mx1_2/master.m3u8
 #EXTINF:-1 tvg-id="TokyoMX1.jp" status="online",Tokyo MX1 (720p)
 https://movie.mcas.jp/mcas/mx_live_2/master.m3u8
+#EXTINF:-1 tvg-id="TokyoMX1.jp" status="online",Tokyo MX1
+https://neetball.net/live/test2.m3u8
 #EXTINF:-1 tvg-id="TokyoMX1.jp" status="online",Tokyo MX1 (360p)
 https://movie.mcas.jp/mcas/smil:mx1_prod.smil/master.m3u8
-#EXTINF:-1 tvg-id="TokyoMX1.jp" status="error",Tokyo MX1
-https://neetball.net/live/test2.m3u8
 #EXTINF:-1 tvg-id="TokyoMX2.jp" status="online",Tokyo MX2 (720p)
 https://movie.mcas.jp/mcas/mx2_2/master.m3u8
 #EXTINF:-1 tvg-id="TokyoMX2.jp" status="online",Tokyo MX2 (360p)
