@@ -15,7 +15,7 @@ https://video.uitzending.tv:19360/gigantfm/gigantfm.m3u8
 http://593aed234297b.streamlock.net:1935/gotvsjoerd/gotvsjoerd/playlist.m3u8
 #EXTINF:-1 tvg-id="Groningen1.nl" status="online",Groningen1 (1080p) [Not 24/7]
 http://59132e529e3d1.streamlock.net/Groningen1/Groningen1/playlist.m3u8
-#EXTINF:-1 tvg-id="IdeaalTV.nl" status="online",Ideaal TV (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="IdeaalTV.nl" status="timeout",Ideaal TV (480p) [Not 24/7]
 https://ms2.mx-cd.net/dtv-09/236-2051366/Ideaal_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="LansingerlandTV.nl" status="error",Lansingerland TV (1080p)
 https://streaming-outbound-video-02.rtvlansingerland.nl/hls/livetv/index.m3u8
@@ -25,7 +25,7 @@ https://58c04fb1d143f.streamlock.net/loemedia/loemedia/playlist.m3u8
 https://streamingserver02.omroepnuenen.nl/lon/lonweb_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="MeerTV.nl" status="online",Meer TV (720p) [Not 24/7]
 https://593aed234297b.streamlock.net/meervandaag/meervandaag/playlist.m3u8
-#EXTINF:-1 tvg-id="ML5TV.nl" status="online",ML5 TV (480p)
+#EXTINF:-1 tvg-id="ML5TV.nl" status="timeout",ML5 TV (480p)
 https://ms2.mx-cd.net/dtv-02/204-1147034/3ML_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OmroepBrabantRadio.nl" status="online",Omroep Brabant Radio (1080p)
 https://d3slqp9xhts6qb.cloudfront.net/live/omroepbrabant/visualradio/index.m3u8
@@ -60,9 +60,9 @@ https://streaming.rn7.nl/rn7live_abr/visualradio/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVAmstelveen.nl" status="online",RTV Amstelveen (720p) [Not 24/7]
 https://live.rtva.nl/live/zender.m3u8
 #EXTINF:-1 tvg-id="RTVDordrecht.nl" status="online",RTV Dordrecht (480p)
-https://ms2.mx-cd.net/dtv-02/107-475823/RTV_Dordrecht.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTVDordrecht.nl" status="online",RTV Dordrecht (480p)
 https://ms7.mx-cd.net/dtv-02/107-475823/RTV_Dordrecht.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="RTVDordrecht.nl" status="timeout",RTV Dordrecht (480p)
+https://ms2.mx-cd.net/dtv-02/107-475823/RTV_Dordrecht.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVDrenthe.nl" status="online",RTV Drenthe (1080p)
 https://cdn.rtvdrenthe.nl/live/rtvdrenthe/tv/index.m3u8
 #EXTINF:-1 tvg-id="RTVGO.nl" status="online",RTV GO! (1080p) [Not 24/7]
@@ -73,13 +73,13 @@ http://stream.rtvmaastricht.nl:8081/rtvm_live/tv/playlist.m3u8
 https://media.rtvnoord.nl/live/rtvnoord/tv/index.m3u8
 #EXTINF:-1 tvg-id="RTVNoordExtra.nl" status="online",RTV Noord Extra (1080p) [Not 24/7]
 https://media.rtvnoord.nl/live/rtvnoord/extra/index.m3u8
-#EXTINF:-1 tvg-id="RTVNoordoostFriesland.nl" status="online",RTV Noordoost Friesland (Achtkarspelen / Tytsjerksteradiel) [Not 24/7]
-https://5ebd833552d56.streamlock.net/rtvnof3/rtvnof3/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVNoordoostFriesland.nl" status="online",RTV Noordoost Friesland (720p) [Not 24/7]
 https://593aed234297b.streamlock.net/rtvnof2/live/playlist.m3u8
+#EXTINF:-1 tvg-id="RTVNoordoostFriesland.nl" status="online",RTV Noordoost Friesland (Achtkarspelen / Tytsjerksteradiel) [Not 24/7]
+https://5ebd833552d56.streamlock.net/rtvnof3/rtvnof3/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVOost.nl" status="online",RTV Oost (720p)
 https://d34cg2bnc08ruf.cloudfront.net/live/rtvoost/tv/index.m3u8
-#EXTINF:-1 tvg-id="RTVPurmerend.nl" status="online",RTV Purmerend (720p)
+#EXTINF:-1 tvg-id="RTVPurmerend.nl" status="timeout",RTV Purmerend (720p)
 https://ms2.mx-cd.net/dtv-10/268-2641474/RTV_Purmerend_TV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVRijnmond.nl" status="online",RTV Rijnmond (1080p)
 https://dcur8bjarl5c2.cloudfront.net/live/rijnmond/tv/index.m3u8
@@ -111,14 +111,14 @@ https://61ae39677a1ab.streamlock.net/tvellef/tvellef/playlist.m3u8
 https://livestream.tvvalkenburg.tv/hls/tv-valkenburg/tv-valkenburg.m3u8
 #EXTINF:-1 tvg-id="UStad.nl" status="online",UStad (1080p)
 https://d18rwjdhpr8dcw.cloudfront.net/live/rtvutrecht/ustad/index.m3u8
-#EXTINF:-1 tvg-id="VechtdalTV.nl" status="online",Vechtdal TV (480p)
+#EXTINF:-1 tvg-id="VechtdalTV.nl" status="timeout",Vechtdal TV (480p)
 https://ms2.mx-cd.net/tv/81-334271/VechtdalTV.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="WOS.nl" status="online",WOS TV (1080p)
-https://ms2.mx-cd.net/dtv-11/99-660295/WOS.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="WOS.nl" status="online",WOS TV (1080p)
 https://ms7.mx-cd.net/dtv-11/99-660295/WOS.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="WOS.nl" status="online",WOS TV (1080p)
 https://ms7.mx-cd.net/tv/99-660295/WOS.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="WOS.nl" status="timeout",WOS TV (1080p)
+https://ms2.mx-cd.net/dtv-11/99-660295/WOS.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="XON.nl" status="online",XON (480p) [Not 24/7]
 https://ms7.mx-cd.net/tv/113-474263/EdeTV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ZO34.nl" status="online",ZO!34 (720p)
@@ -161,6 +161,8 @@ https://61ae39677a1ab.streamlock.net/radionl/radionl_1080p/playlist.m3u8?ref=Hoo
 https://ms2.mx-cd.net/tv/226-1855782/XITE_NL.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="XITE.nl" status="online",XITE (720p) [Not 24/7]
 https://ms7.mx-cd.net/tv/226-1855782/XITE_NL.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",XITE (720p) [Not 24/7]
+https://ms2.mx-cd.net/tv/226-1855782/XITE_NL.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",Zed TV
 http://190.2.148.141:8080/bar7657/index.m3u8
 #EXTINF:-1 tvg-id="AltenaTV.nl",Altena TV (720p)
