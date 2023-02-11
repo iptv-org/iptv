@@ -1,12 +1,12 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Channel9.il" status="timeout",Channel 9 (540p) [Not 24/7]
 http://50.7.231.221:8081/185/index.m3u8?wmsAuthSign=okad
-#EXTINF:-1 tvg-id="HalaTV.il" status="online",Hala TV (1080p) [Not 24/7]
-https://live2.panet.co.il/edge_abr/halaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="HalaTV.il" status="online",Hala TV (576p) [Not 24/7]
 https://gstream4.panet.co.il/edge/halaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="HalaTV.il" status="online",Hala TV (1080p) [Not 24/7]
 https://live1.panet.co.il/edge_abr/halaTV/playlist.m3u8
+#EXTINF:-1 tvg-id="HalaTV.il" status="online",Hala TV (1080p) [Not 24/7]
+https://live2.panet.co.il/edge_abr/halaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="Hidabroot.il" status="error",Hidabroot (576p)
 https://stream5.shidur.net/htvlive2/smil:live2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Hidabroot.il" status="error",Hidabroot (576p) [Not 24/7]
@@ -29,7 +29,7 @@ https://kan23.media.kan.org.il/hls/live/2024691/2024691/master.m3u8
 https://dvr.ch20-cdnwiz.com/hls/live.m3u8
 #EXTINF:-1 tvg-id="TheShoppingChannel.il" status="online",ch 21 ערוץ הקניות (360p)
 https://shoppingil-rewriter.vidnt.com/index.m3u8
-#EXTINF:-1 tvg-id="" status="online",Musayof (Israel) (240p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",Musayof (Israel) (240p) [Not 24/7]
 http://wowza.media-line.co.il/Musayof-Live/livestream.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="online",Reshet 13 (720p)
 https://d18b0e6mopany4.cloudfront.net/out/v1/08bc71cf0a0f4712b6b03c732b0e6d25/index.m3u8
