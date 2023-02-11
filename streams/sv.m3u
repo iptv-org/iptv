@@ -1,5 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AgapeTV.sv" status="error",Ágape TV Canal 8
+#EXTINF:-1 tvg-id="AgapeTV.sv" status="error",Ágape TV Canal 8 [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://twitch.tv/agapetv8
 #EXTINF:-1 tvg-id="Canal10.sv" status="blocked",Canal 10 (720p)
 http://streamingcws20.com:1935/tves/tves.smil/playlist.m3u8
@@ -25,9 +25,17 @@ https://5fc584f3f19c9.streamlock.net/tvo/smil:tvo.smil/playlist.m3u8
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/canaltvx
 #EXTINF:-1 tvg-id="WOWTV.sv" status="online",WOW TV (576p) [Not 24/7]
 https://cdn.elsalvadordigital.com:1936/wowtv/smil:wowtv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="online",Megavisión Canal 19 (720p)
+#EXTINF:-1 tvg-id="MegavisionCanal19.sv" status="online",Megavisión Canal 19 (720p)
 https://mgv-channel19.akamaized.net/hls/live/2093190/MGV_CHANNEL19/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",Megavisión Canal 21 (720p)
+#EXTINF:-1 tvg-id="MegavisionCanal21.sv" status="online",Megavisión Canal 21 (720p)
 https://mgv-channel21.akamaized.net/hls/live/2093191/MGV_CHANNEL21/master.m3u8
-#EXTINF:-1 tvg-id="" status="online",Taber TV
+#EXTINF:-1 tvg-id="" status="online",Taber TV (1080p)
 https://5ca9af4645e15.streamlock.net/tabertv/smil:tabertv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="",El Camino TV (480p)
+https://5d32e2b9b7eed.streamlock.net:4443/ectv/ectv/playlist.m3u8
+#EXTINF:-1 tvg-id="",Sol TV Morazán (1080p)
+http://rtmp.info:1935/soltv/envivo/playlist.m3u8
+#EXTINF:-1 tvg-id="TVMElSalvador.sv",TVM El Salvador (720p) [Not 24/7]
+http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/tvmelsalvador
+#EXTINF:-1 tvg-id="",Canal TRV (480p)
+https://stream.oursnetworktv.com/latin/encoder44/playlist.m3u8
