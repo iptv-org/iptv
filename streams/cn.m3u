@@ -181,7 +181,7 @@ http://livelyws.chinamcache.com/lyws/zb01.m3u8?auth_key=1593241343-0-0-90b80e744
 http://112.25.48.68/live/program/live/lyws/1300000/mnf.m3u8
 #EXTINF:-1 tvg-id="HainanSatelliteTV.cn" status="timeout",海南卫视 (1080p)
 http://116.199.5.51:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=114&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
-#EXTINF:-1 tvg-id="HainanSatelliteTV.cn" status="error",海南卫视 (576p)
+#EXTINF:-1 tvg-id="HainanSatelliteTV.cn" status="timeout",海南卫视 (576p)
 http://183.207.248.11/PLTV/4/224/3221225810/index.m3u8
 #EXTINF:-1 tvg-id="HebeiTV.cn" status="online",河北卫视 (576p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225732/index.m3u8
@@ -789,11 +789,11 @@ http://125.210.152.18:9090/live/FHZX_1200.m3u8
 http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221226923/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",凤凰香港 (720p)
 http://223.110.245.136/PLTV/3/224/3221226975/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",利川公共 (180p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",利川公共 (180p) [Not 24/7]
 http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w1847269952_b204800.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",利川公共 (576p) [Geo-blocked]
 http://lichuan.live.tempsource.cjyun.org/videotmp/s10093-lcgg.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",利川新闻综合 (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="online",利川新闻综合 (480p) [Not 24/7]
 http://uni6rtmp.tulix.tv:1935/vbstv/vbsabr.smil/chunklist_w439903609_b1228800.m3u8
 #EXTINF:-1 tvg-id="" status="online",前郭综合 [Geo-blocked]
 http://stream2.jlntv.cn/qg/sd/live.m3u8
@@ -911,19 +911,19 @@ http://mobile.ccdntech.com/transcoder/_definst_/vod164_Live/live/playlist.m3u8
 http://223.110.245.139/PLTV/4/224/3221227009/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",嘉佳卡通 (广东) (540p) [Not 24/7]
 http://112.25.48.68/live/program/live/jjkt/1300000/mnf.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",四川 Ⅰ 四川影视台 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="timeout",四川 Ⅰ 四川影视台 (720p) [Not 24/7]
 http://scgctvshow.sctv.com/hdlive/sctv5/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",四川 Ⅰ 四川新闻台 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="blocked",四川 Ⅰ 四川新闻台 (720p) [Not 24/7]
 http://scgctvshow.sctv.com/hdlive/sctv4/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",四川 Ⅰ 巴中综合台 (1080p) [Not 24/7]
 http://30814.hlsplay.aodianyun.com/lms_30814/tv_channel_246.flv
-#EXTINF:-1 tvg-id="" status="timeout",四川 Ⅰ 星空购物台 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="blocked",四川 Ⅰ 星空购物台 (720p) [Not 24/7]
 http://scgctvshow.sctv.com/hdlive/sctv6/index.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",四川 Ⅰ 达州公共台 (720p) [Not 24/7]
 http://m3u8.channellive.dzxw.net/cms/videos/nmip-media/channellive/channel36/playlist.m3u8
 #EXTINF:-1 tvg-id="" status="blocked",四川 Ⅰ 达州综合台 (720p) [Not 24/7]
 http://m3u8.channellive.dzxw.net/cms/videos/nmip-media/channellive/channel35/playlist.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",四川公共 (720p)
+#EXTINF:-1 tvg-id="" status="blocked",四川公共 (720p)
 http://scgctvshow.sctv.com/hdlive/sctv9/index.m3u8
 #EXTINF:-1 tvg-id="" status="online",四平新闻综合 [Geo-blocked]
 http://stream2.jlntv.cn/sptv/sd/live.m3u8
@@ -953,10 +953,10 @@ http://116.199.5.51:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_Shif
 http://116.199.5.52:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=120&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
 #EXTINF:-1 tvg-id="" status="timeout",宁夏卫视 (576p)
 http://223.110.245.151/ott.js.chinamobile.com/PLTV/3/224/3221225842/index.m3u8
+#EXTINF:-1 tvg-id="" status="timeout",宁夏卫视 (576p)
+http://183.207.248.11/PLTV/4/224/3221225842/index.m3u8
 #EXTINF:-1 tvg-id="" status="error",宁夏卫视 (576p)
 http://117.169.120.140:8080/live/ningxiastv/.m3u8
-#EXTINF:-1 tvg-id="" status="error",宁夏卫视 (576p)
-http://183.207.248.11/PLTV/4/224/3221225842/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",宁夏卫视 (576p) [Not 24/7]
 http://183.207.248.71/gitv/live1/G_NINGXIA/G_NINGXIA
 #EXTINF:-1 tvg-id="" status="blocked",安徽 Ⅰ 淮北公共 (720p)
@@ -1017,7 +1017,7 @@ http://l.cztvcloud.com/channels/lantian/SXshengzhou1/720p.m3u8
 http://116.199.5.51:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=44&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
 #EXTINF:-1 tvg-id="" status="blocked",巴中公共 (1080p) [Not 24/7]
 http://30814.hlsplay.aodianyun.com/lms_30814/tv_channel_247.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",巴中综合 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="blocked",巴中综合 (1080p) [Not 24/7]
 http://30814.hlsplay.aodianyun.com/lms_30814/tv_channel_246.m3u8
 #EXTINF:-1 tvg-id="" status="online",平乡电视台 (576p)
 http://hbpx.chinashadt.com:2036/live/px1.stream/playlist.m3u8
@@ -1065,7 +1065,7 @@ http://guangshui.live.tempsource.cjyun.org/videotmp/s10146-GSXW.m3u8
 http://116.199.5.52:8114/00000000/index.m3u8?Fsv_CMSID=&Fsv_SV_PARAM1=0&Fsv_ShiftEnable=0&Fsv_ShiftTsp=0&Fsv_chan_hls_se_idx=11&Fsv_cid=0&Fsv_ctype=LIVES&Fsv_ctype=LIVES&Fsv_filetype=1&Fsv_otype=1&Fsv_otype=1&Fsv_rate_id=0&FvSeid=5abd1660af1babb4&Pcontent_id=&Provider_id=
 #EXTINF:-1 tvg-id="" status="online",延边新闻综合 [Geo-blocked]
 http://stream2.jlntv.cn/jlyb/sd/live.m3u8
-#EXTINF:-1 tvg-id="" status="online",建安电视台 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="" status="error",建安电视台 (1080p) [Not 24/7]
 http://live.dxhmt.cn:9081/tv/11003-1.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",弈坛春秋 (576p)
 http://223.110.245.139/PLTV/4/224/3221227031/index.m3u8
@@ -1081,7 +1081,7 @@ http://183.207.249.7/PLTV/3/224/3221225949/index.m3u8
 http://223.110.245.151/ott.js.chinamobile.com/PLTV/3/224/3221225949/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",徐州-4 (1080p)
 http://183.207.249.15/PLTV/3/224/3221225951/index.m3u8
-#EXTINF:-1 tvg-id="" status="error",徐州公共頻道 (1080p)
+#EXTINF:-1 tvg-id="" status="timeout",徐州公共頻道 (1080p)
 http://183.207.248.11/PLTV/3/224/3221225951/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",徐州新聞綜合 (1080p)
 http://223.110.245.165/ott.js.chinamobile.com/PLTV/3/224/3221225945/index.m3u8
@@ -1129,9 +1129,9 @@ http://183.207.248.71/gitv/live1/G_XINJIANG/G_XINJIANG
 http://183.207.249.15/PLTV/3/224/3221225523/index.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",新疆卫视 (576p)
 http://223.110.243.136/PLTV/3/224/3221225523/index.m3u8
-#EXTINF:-1 tvg-id="" status="timeout",新疆少儿 (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="blocked",新疆少儿 (720p) [Geo-blocked]
 http://livehyw5.chinamcache.com/hyw/zb12.m3u8
-#EXTINF:-1 tvg-id="" status="blocked",新疆汉语信息服务 (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="" status="timeout",新疆汉语信息服务 (720p) [Geo-blocked]
 http://livehyw5.chinamcache.com/hyw/zb11.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",新疆汉语综艺 (720p) [Geo-blocked]
 http://livehyw5.chinamcache.com/hyw/zb04.m3u8
@@ -1289,7 +1289,7 @@ http://hw-m-l.cztv.com/channels/lantian/channel002/1080p.m3u8
 http://hw-m-l.cztv.com/channels/lantian/channel02/1080p.m3u8
 #EXTINF:-1 tvg-id="" status="timeout",海南州藏語頻道 (480p)
 http://live.hnzzzzzdst.com/channel1/sd/live.m3u8
-#EXTINF:-1 tvg-id="" status="error",海盐新闻 (720p)
+#EXTINF:-1 tvg-id="" status="online",海盐新闻 (720p)
 http://haiyan.liveyun.hoge.cn/xwpd/sd/live.m3u8
 #EXTINF:-1 tvg-id="" status="online",海西州综合 (576p)
 http://stream.haixitv.cn/1/sd/live.m3u8

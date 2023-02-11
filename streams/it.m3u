@@ -15,7 +15,7 @@ https://59d8c0cee6f3d.streamlock.net/antennatreveneto/antennatreveneto.stream/pl
 https://59d7d6f47d7fc.streamlock.net/auroraarte/auroraarte/playlist.m3u8
 #EXTINF:-1 tvg-id="Bike.it" status="timeout",Bike (720p)
 http://backup.superstreaming.inaria.me/BikeSmartMobilityDTT/playlist.m3u8
-#EXTINF:-1 tvg-id="BomChannel.it" status="online",Bom Channel
+#EXTINF:-1 tvg-id="BomChannel.it" status="error",Bom Channel
 https://5f22d76e220e1.streamlock.net/BOMCHANNEL/BOMCHANNEL/playlist.m3u8
 #EXTINF:-1 tvg-id="CafeTV24.it" status="online",CafeTV24 (720p)
 https://srvx1.selftv.video/cafe/live/playlist.m3u8
@@ -33,8 +33,6 @@ http://wms.shared.streamshow.it/canale7/mp4:canale7/playlist.m3u8
 http://wms.shared.streamshow.it/canale8/canale8/playlist.m3u8
 #EXTINF:-1 tvg-id="Canale8.it" status="online",CANALE 8 (480p)
 http://wms.shared.streamshow.it/canale8/mp4:canale8/playlist.m3u8
-#EXTINF:-1 tvg-id="Canale21.it" status="error",Canale 21 (480p) [Not 24/7]
-https://stream.mariatvcdn.com/canaleventuno/f5d2060b3682e0dfffd5b2f18e935ad3.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="CanaleDieci.it" status="online",Canale 10 (540p) [Not 24/7]
 http://37.187.142.147:1935/ch10live/high.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Cine34.it" status="blocked",Cine 34 [Geo-blocked]
@@ -121,7 +119,7 @@ https://56b50ada2d659.streamlock.net/RadioBirikinaTV/livestream/playlist.m3u8
 https://5929b138b139d.streamlock.net/RadioIbizaTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioIglesias.it" status="blocked",Radio Iglesias (576p) [Geo-blocked]
 http://wms.shared.streamshow.it/visualradio/mp4:visualradio/playlist.m3u8
-#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="online",Radio Iglesias Sardegna (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RadioIglesiasSardegna.it" status="blocked",Radio Iglesias Sardegna (576p) [Geo-blocked]
 https://59d7d6f47d7fc.streamlock.net/visualradio/visualradio/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioMonteCarloTV.it" status="blocked",Radio Montecarlo (576p)
 https://live3-radio-mediaset-it.akamaized.net/Content/hls_h0_clr_vos/live/channel(bb)/index.m3u8
@@ -139,17 +137,17 @@ https://stream2.xdevel.com/video1s3-7/stream/playlist.m3u8
 https://unlimited1-cl.dps.live/radioztv/radioztv.smil/radioztv/livestream2/chunks.m3u8
 #EXTINF:-1 tvg-id="Rai1.it" status="online",Rai 1 (Geo) (576p)
 http://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=2606803
-#EXTINF:-1 tvg-id="Rai1.it" status="online",Rai 1 (576p) [Geo-blocked]
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
 #EXTINF:-1 tvg-id="Rai1.it" status="online" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",Rai 1 (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s29/04.m3u8
 #EXTINF:-1 tvg-id="Rai1.it" status="blocked",Rai 1 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/it-rai1.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Rai2.it" status="online",Rai 2 (576p) [Geo-blocked]
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718
+#EXTINF:-1 tvg-id="Rai1.it" status="error",Rai 1 (576p) [Geo-blocked]
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
 #EXTINF:-1 tvg-id="Rai2.it" status="blocked",Rai 2 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/it-rai2.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Rai2.it" status="error",Rai 2 (576p) [Geo-blocked]
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718
 #EXTINF:-1 tvg-id="Rai3.it" status="online",Rai 3 (720p) [Not 24/7]
 http://wzstreaming.rai.it/TVlive/liveStream/chunklist_w823540263.m3u8
 #EXTINF:-1 tvg-id="Rai3.it" status="online",Rai 3 (720p) [Not 24/7]
@@ -160,14 +158,14 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709
 http://stream.tvtap.net:8081/live/it-rai3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai4.it" status="online",Rai 4 (576p)
 http://mediapolisevent.rai.it/relinker/relinkerServlet.htm?cont=746966
+#EXTINF:-1 tvg-id="Rai4.it" status="online",Rai 4 (576p) [Geo-blocked]
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966
 #EXTINF:-1 tvg-id="Rai4.it" status="blocked",Rai 4 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/it-rai4.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Rai4.it" status="error",Rai 4 (576p) [Geo-blocked]
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966
+#EXTINF:-1 tvg-id="Rai5.it" status="online",Rai 5 (576p) [Geo-blocked]
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276
 #EXTINF:-1 tvg-id="Rai5.it" status="blocked",Rai 5 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/it-rai5.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="Rai5.it" status="error",Rai 5 (576p) [Geo-blocked]
-https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276
 #EXTINF:-1 tvg-id="RaiGulp.it" status="online",Rai Gulp (576p)
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746953
 #EXTINF:-1 tvg-id="RaiItaliaAsia.it" status="online",RAI Italia Asia (576p)
@@ -180,7 +178,7 @@ https://rainews1-live.akamaized.net/hls/live/598326/rainews1/rainews1/playlist.m
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992
 #EXTINF:-1 tvg-id="RaiScuola.it" status="online",Rai Scuola (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747011
-#EXTINF:-1 tvg-id="RaiStoria.it" status="online",Rai Storia (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RaiStoria.it" status="error",Rai Storia (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990
 #EXTINF:-1 tvg-id="RaiYoyo.it" status="online",Rai YoYo (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899
@@ -288,8 +286,6 @@ https://5e73cf528f404.streamlock.net/TrentinoTV/livestream/playlist.m3u8
 https://59d8c0cee6f3d.streamlock.net/tsn/tsn_mobile/playlist.m3u8
 #EXTINF:-1 tvg-id="TV7Benevento.it" status="online",TV7 Benevento (288p) [Not 24/7]
 http://streaming.senecadot.com/live/flv:tv7.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TV7Triveneta.it" status="error",TV7 Triveneta (270p) [Not 24/7]
-http://217.61.26.46:8080/hls/triveneta.m3u8
 #EXTINF:-1 tvg-id="TV2000.va" status="error",TV 2000 (360p) [Not 24/7]
 http://cld04wz.tv2000.it/tv2000_main.m3u8
 #EXTINF:-1 tvg-id="TVAVicenza.it" status="online",TVA (Vicenza) (720p)
@@ -304,7 +300,7 @@ http://wms.shared.streamshow.it:1935/tvrs/tvrs/live.m3u8
 https://umbriatv.stream.rubidia.it:8083/live/umbriatv/playlist.m3u8
 #EXTINF:-1 tvg-id="VeraTV.it" status="online",Vera TV (1080p) [Not 24/7]
 http://wms.shared.streamshow.it/veratv/mp4:veratv/playlist.m3u8
-#EXTINF:-1 tvg-id="VeraTV.it" status="online",Vera TV (Marche) (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="VeraTV.it" status="error",Vera TV (Marche) (1080p) [Not 24/7]
 http://wms.shared.streamshow.it/veratv/veratv/playlist.m3u8
 #EXTINF:-1 tvg-id="VideolinaSardegna.it" status="online",Videolina (Sardegna) (404p) [Not 24/7]
 http://livestreaming.videolina.it/live/Videolina/playlist.m3u8
