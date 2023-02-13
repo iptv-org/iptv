@@ -57,7 +57,7 @@ https://stmvideo1.livecastv.com/canal2/canal2/playlist.m3u8
 https://stmvideo2.livecastv.com/agenfor/agenfor/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal3LasHeras.ar" status="online",Canal 3 Las Heras (720p)
 https://stream.arcast.com.ar/canal3/canal3/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal3Pinamar.ar" status="online",CN3 Pinamar (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal3Pinamar.ar" status="error",CN3 Pinamar (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/canal3/canal3.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal3Rosario.ar" status="online",Canal 3 Rosario (704p) [Geo-blocked]
 https://59d52c5a5ce5e.streamlock.net:4443/canal3rosario/ngrp:canal3rosario_all/playlist.m3u8
@@ -160,7 +160,7 @@ https://coopmorteros.online/canal50/vivo.m3u8
 https://streamconex.com:1936/mardelplata/mardelplata/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal79SanJuan.ar" status="online",Canal 79 San Juan (240p)
 https://streamconex.com:1936/sanjuan/sanjuan/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal79SantaClaradelMar.ar" status="online",Canal 79 Santa Clara del Mar (240p)
+#EXTINF:-1 tvg-id="Canal79SantaClaradelMar.ar" status="error",Canal 79 Santa Clara del Mar (240p)
 https://streamconex.com:1936/santaclara/santaclara/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal907FM.ar" status="online",Canal 907 FM
 https://panel.dattalive.com/canal907/canal907/playlist.m3u8
@@ -173,12 +173,12 @@ https://panel.dattalive.com/8138/8138/playlist.m3u8
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar" status="online" user-agent="iPhone",Canal de la Ciudad (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8
-#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
-https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="iPhone",Canal Luz (1080p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CanalLuz.ar" status="online" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",canalLUZ (1080p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
+https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalOrbe21.ar" status="online",Canal Orbe 21
 https://cdn2.zencast.tv:30443/orbe/orbe21smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalProvincial.ar" status="online",Canal Provincial (360p)
@@ -231,7 +231,7 @@ https://stream.arcast.live/cpe/ngrp:cpe_all/playlist.m3u8
 #EXTINF:-1 tvg-id="CronicaTV.ar" status="online" user-agent="iPhone",Crónica TV (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g1.mc-hor.transport.edge-access.net/a10/ngrp:cronicatv_video1-100044_all/Playlist.m3u8
-#EXTINF:-1 tvg-id="CrossingCanalIPTV.ar" status="online",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="CrossingCanalIPTV.ar" status="error",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
 https://vivo.solumedia.com:19360/crossing/crossing.m3u8
 #EXTINF:-1 tvg-id="CVisionTV.ar" status="online",CVisión TV (720p)
 https://stream.cvisiontv.com/cvision_stream.m3u8
@@ -320,15 +320,15 @@ https://inliveserver.com:1936/14102/14102/playlist.m3u8
 http://media.neuquen.gov.ar/rtn/television/playlist.m3u8
 #EXTINF:-1 tvg-id="RedVisionRadio.ar" status="error",Red Vision Radio [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://twitch.tv/redvisionradiotv
-#EXTINF:-1 tvg-id="RetroMagico.ar" status="online",RetroMágico
+#EXTINF:-1 tvg-id="RetroMagico.ar" status="error",RetroMágico
 https://vivo.solumedia.com:19360/retromagico/retromagico.m3u8
-#EXTINF:-1 tvg-id="RTN.ar" status="error",RTN (Neuquén) (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTN.ar" status="timeout",RTN (Neuquén) (720p) [Not 24/7]
 http://media.neuquen.gov.ar/rtn/television/media.m3u8
 #EXTINF:-1 tvg-id="SanPedroTV.ar" status="error",San Pedro TV (480p) [Not 24/7]
 https://srv2.zcast.com.br/sptv2/sptv2/playlist.m3u8
-#EXTINF:-1 tvg-id="SantaFeCanal.ar" status="error",Santa Fe Canal (720p)
+#EXTINF:-1 tvg-id="SantaFeCanal.ar" status="online",Santa Fe Canal (720p)
 https://api.new.livestream.com/accounts/22636012/events/8242619/live.m3u8
-#EXTINF:-1 tvg-id="SenalUrbana.ar" status="error",Señal Urbana
+#EXTINF:-1 tvg-id="SenalUrbana.ar" status="online",Señal Urbana
 https://videosenlared.fullstreaming.ar:3560/live/senialurbanalive.m3u8
 #EXTINF:-1 tvg-id="SenillosaTV.ar" status="online",Senillosa TV (360p)
 https://stmv1.srvstm.com/senillosa/senillosa/playlist.m3u8
@@ -372,7 +372,7 @@ https://wowza.telpin.com.ar:1935/telpintv/ttv.stream/playlist.m3u8
 https://wowza.telpin.com.ar:1935/telpintv/smil:ttv.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TierraMiaTV.ar" status="online",Tierra Mía TV (720p)
 http://live-edge01.telecentro.net.ar/live/smil:trm.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TIVTelevision.ar" status="error",TIV Televisión (480p)
+#EXTINF:-1 tvg-id="TIVTelevision.ar" status="online",TIV Televisión (480p)
 https://inliveserver.com:1936/14044/14044/playlist.m3u8
 #EXTINF:-1 tvg-id="TVManaArgentina.ar" status="timeout",TV Maná Argentina (576p) [Not 24/7]
 http://streamspub.manasat.com:1935/tvar/tvmanaar2/playlist.m3u8
