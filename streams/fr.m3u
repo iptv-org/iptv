@@ -69,10 +69,10 @@ http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8
 https://cherie25.nrjaudio.fm/hls/live/2038375/c25/FHD.m3u8
 #EXTINF:-1 tvg-id="D5Music.fr" status="error",D5Music (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/D5Music
-#EXTINF:-1 tvg-id="D5tv.fr" status="online",D5tv (1080p)
-http://live.creacast.com/d5tv/smil:d5tv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="D5tv.fr" status="error",D5tv (480p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/D5tv
+#EXTINF:-1 tvg-id="D5tv.fr" status="error",D5tv (1080p)
+http://live.creacast.com/d5tv/smil:d5tv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM TV (1080p)
 http://dbmtv.vedge.infomaniak.com/livecast/dbmtv/playlist.m3u8
 #EXTINF:-1 tvg-id="DBMTV.fr" status="online",DBM (1080p)
@@ -87,17 +87,17 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/Eur
 http://lb.streaming.sk/fashiontv/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="FranceInter.fr" status="error",France Inter (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/franceinter
-#EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie24 (1080p)
-https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie (360p)
 http://mv2.tvfrancophonie.org/live/Stream1/playlist.m3u8
+#EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie24 (1080p)
+https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="GenerationsTV.fr" status="online",Generations TV (576p)
 https://edge.vedge.infomaniak.com/livecast/ik:generation-tv/manifest.m3u8
 #EXTINF:-1 tvg-id="HolyGodTV.fr" status="online",HolyGod TV (720p)
 https://128989.gvideo.io/streams/128989_522806/playlist.m3u8
 #EXTINF:-1 tvg-id="ILTV.fr" status="online",ILTV (720p)
 http://live.creacast.com/iltv/smil:iltv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="KTO.fr" status="online",KTO (404p) [Not 24/7]
+#EXTINF:-1 tvg-id="KTO.fr" status="error",KTO (404p) [Not 24/7]
 https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
 #EXTINF:-1 tvg-id="LMTVSarthe.fr" status="error",LM TV Sarthe (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/lmtvsarthe
@@ -121,7 +121,7 @@ http://190.2.155.162:8080/mtvfrance/mpegts
 http://190.2.155.162:8080/mtvhit/mpegts
 #EXTINF:-1 tvg-id="MyZenTV.fr" status="online",MyZen TV (1080p)
 https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-en-plex/playlist.m3u8
-#EXTINF:-1 tvg-id="NancyWebTV.fr" status="online",Nancy Web TV (394p) [Not 24/7]
+#EXTINF:-1 tvg-id="NancyWebTV.fr" status="error",Nancy Web TV (394p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:nancy-webtv/manifest.m3u8
 #EXTINF:-1 tvg-id="NLMTV.fr" status="online",NLM TV (720p)
 https://ktismaservers.in:3394/stream/play.m3u8
@@ -137,7 +137,7 @@ https://sp1564435593.mytvchain.info/live/sp1564435593/index.m3u8
 https://sp1564435593.mytvchain.info/live/sp1564435593_720/index.m3u8
 #EXTINF:-1 tvg-id="SportenFrance.fr" status="online",Sport En France (360p)
 https://sp1564435593.mytvchain.info/live/sp1564435593_360/index.m3u8
-#EXTINF:-1 tvg-id="TebeoTV.fr" status="error",Tébéo TV (1080p)
+#EXTINF:-1 tvg-id="TebeoTV.fr" status="online",Tébéo TV (1080p)
 https://start-1.direct.live/hls/tebeo.m3u8
 #EXTINF:-1 tvg-id="TebeSud.fr" status="online",TébéSud (1080p)
 https://start-2.direct.live/hls/tebesud.m3u8
