@@ -1,6 +1,4 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="AcentoTV.do" status="error",Acento TV [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/video/x8dxadh
 #EXTINF:-1 tvg-id="Ame47.do" status="online",Amé 47 (720p)
 https://ss9.domint.net:3040/ame_str/amecanal47/playlist.m3u8
 #EXTINF:-1 tvg-id="AnimeZoneTV.do" status="online",Anime Zone TV
@@ -33,7 +31,7 @@ https://ss5.domint.net:3174/car_str/carivision/playlist.m3u8
 https://ss3.domint.net:3144/ctv_str/cascaratv/playlist.m3u8
 #EXTINF:-1 tvg-id="CDN.do" status="online",CDN (720p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/5f85ae10c62d4be3a5edbf483cb04f25/playlist.m3u8
-#EXTINF:-1 tvg-id="CDNDeportes.do" status="timeout",CDN Deportes [Not 24/7]
+#EXTINF:-1 tvg-id="CDNDeportes.do" status="error",CDN Deportes [Not 24/7]
 http://free.fullspeed.tv/iptv-query?provider=universe&streaming-ip=https://playback.dacast.com/content/access?contentId=2c659e044a58572e056cceed234a70cb-live-f56d3109-2db5-9cea-8919-d572074daf59
 #EXTINF:-1 tvg-id="ChinolaTV.do" status="online",Chinola TV (480p)
 https://cdn3.streamgato.us:3434/live/chinolatvlive.m3u8?DVR=
@@ -43,8 +41,6 @@ https://streaming.servervideo.net:1936/cielotv/cielotv/playlist.m3u8
 https://live.teledom.info:3713/live/cinevisionlive.m3u8
 #EXTINF:-1 tvg-id="CitricoTV.do" status="online",Cítrico TV (240p)
 https://cdn4.hostlagarto.com:8081/static/citricotv/playlist.m3u8
-#EXTINF:-1 tvg-id="ColorVision.do" status="error",Color Visión [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/colorvision9
 #EXTINF:-1 tvg-id="ConstanzaTV.do" status="online",ConstanzaTV
 https://ss9.domint.net:3026/ctv8_str/contanzatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CotubanamaTV.do" status="error",Cotubanama TV
@@ -59,7 +55,7 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts
 https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
 #EXTINF:-1 tvg-id="DigitalVision63.do" status="online",Digital Visión 63 (720p)
 https://ss3.domint.net:3120/dv6_str/digitalvision/playlist.m3u8
-#EXTINF:-1 tvg-id="Ecovision.do" status="online",Ecovisión (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="Ecovision.do" status="error",Ecovisión (480p) [Not 24/7]
 https://vdo1.streamgato.us:3014/live/ecovisionlive.m3u8
 #EXTINF:-1 tvg-id="entelevision.do" status="online",Entelevisión
 https://video.misistemareseller.com/entelevision/entelevision/playlist.m3u8
@@ -77,13 +73,13 @@ https://tv.ghtelevision.com:3018/live/ghtelevisionlive.m3u8
 https://cloudflare.streamgato.us:3180/live/guacaratvlive.m3u8
 #EXTINF:-1 tvg-id="GuaymateTV.do" status="online",Guaymate TV (360p)
 https://5790d294af2dc.streamlock.net/8100/8100/playlist.m3u8
-#EXTINF:-1 tvg-id="HermanasMirabalTV.do" status="blocked",Hermanas Mirabal TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="HermanasMirabalTV.do" status="online",Hermanas Mirabal TV (720p) [Not 24/7]
 https://cm.hostlagarto.com:4445/Hmtv/hmtv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="HilandoFinoTV.do" status="online",Hilando Fino TV
 https://pop-hls.iptv-global.net/loadbalancer/hilandofino.m3u8
 #EXTINF:-1 tvg-id="Hits360TV.do" status="online",Hits 360 TV (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/hits360tv/hits360HD.myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="HM.do" status="online",HM (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="HM.do" status="blocked",HM (720p) [Geo-blocked]
 http://cm.hostlagarto.com:8081/Hmtv/hmtv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="ImagenUniversalTV.do" status="online",Imagen Universal TV
 https://imagenuniversaltv.net:3771/live/iutvlive.m3u8
@@ -103,7 +99,7 @@ https://live.obslivestream.com/makaomux/tracks-v2a1/playlist.m3u8
 http://server3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
 #EXTINF:-1 tvg-id="MegaVisionTV.do" status="online",Megavision Canal 43 (480p) [Not 24/7]
 http://stream3.prostudionetwork.com:1943/megavision/MV/playlist.m3u8
-#EXTINF:-1 tvg-id="Microvision10.do" status="online",Microvision 10 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Microvision10.do" status="timeout",Microvision 10 (720p) [Not 24/7]
 http://190.103.183.24:1935/live/MicroHD/playlist.m3u8
 #EXTINF:-1 tvg-id="MiTV.do" status="online",MiTV
 https://ss2.domint.net:3204/mitv_str/mitv/playlist.m3u8
@@ -127,7 +123,7 @@ https://cm.hostlagarto.com:4445/phtv/Phtv.myStream/chunks.m3u8
 https://cm.hostlagarto.com:4445/phtv/Phtv.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="PuntaCanaTV.do" status="online",Punta Cana TV (720p) [Not 24/7]
 https://cdn4.hostlagarto.com:8081/static/puntacanatv/playlist.m3u8
-#EXTINF:-1 tvg-id="ReadyTVCanal6.do" status="online",Ready TV Canal 6 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ReadyTVCanal6.do" status="timeout",Ready TV Canal 6 (720p) [Not 24/7]
 http://190.103.183.24:1935/ReadyTV/ReadyHD/playlist.m3u8
 #EXTINF:-1 tvg-id="RNN.do" status="online",RNN (720p) [Not 24/7]
 https://ss2.domint.net:3202/rnn_str/canal27/playlist.m3u8
@@ -141,7 +137,7 @@ https://live.teledom.info:4000/live/senalestvlive.m3u8
 https://ss5.domint.net:3002/stv_str/sensaciontv/playlist.m3u8
 #EXTINF:-1 tvg-id="SiTV.do" status="online",SiTV (720p)
 http://190.122.104.221/Player/sitv.m3u8
-#EXTINF:-1 tvg-id="SportVision.do" status="online",Sport Visión
+#EXTINF:-1 tvg-id="SportVision.do" status="error",Sport Visión
 https://5fa5de1a545ae.streamlock.net/sportvision35tv/sportvision35tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SuMundoTV.do" status="online",Su Mundo TV
 https://175036.global.ssl.fastly.net/6217e980d5bee0e090792fdf/live_75f5635097ba11ecb9f1255c8fe65a34/index.m3u8
@@ -165,7 +161,7 @@ https://cdn4.hostlagarto.com:8081/static/telecanal12/playlist.m3u8
 http://cm.hostlagarto.com:8081/Telecanal-28/telecanal.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleCaribe.do" status="online",Tele Caribe (1080p)
 https://cloudflare.streamgato.us:3413/live/telecaribehdlive.m3u8
-#EXTINF:-1 tvg-id="Telecentro.do" status="timeout",Telecentro [Not 24/7]
+#EXTINF:-1 tvg-id="Telecentro.do" status="error",Telecentro [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/27456795/events/10501048/live
 #EXTINF:-1 tvg-id="TeleCibaoHD.do" status="online",TeleCibao (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Telecibao/Telecibao/playlist.m3u8
@@ -177,15 +173,15 @@ https://vdo1.streamgato.us:3578/live/telecontactohdlive.m3u8
 https://ss9.domint.net:3054/tf_str/telefuturo/playlist.m3u8
 #EXTINF:-1 tvg-id="Telefuturo.do" status="timeout",Telefuturo Canal 23 (720p) [Not 24/7]
 http://ss8.domint.net:2118/tf_str/futu/master.m3u8
-#EXTINF:-1 tvg-id="Teleimpacto.do" status="timeout",Teleimpacto (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Teleimpacto.do" status="online",Teleimpacto (720p) [Not 24/7]
 http://190.122.96.188:8888/http/013
-#EXTINF:-1 tvg-id="Telemicro.do" status="timeout",Telemicro [Not 24/7]
+#EXTINF:-1 tvg-id="Telemicro.do" status="error",Telemicro [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts/27456795/events/10633780/player
 #EXTINF:-1 tvg-id="Telemilenio.do" status="online",Telemilenio (720p) [Not 24/7]
 http://cm.hostlagarto.com:8081/Telemilenio/Telemilenio.myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="Telenord8.do" status="online",Telenord 8 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Telenord8.do" status="error",Telenord 8 (1080p) [Not 24/7]
 http://newyorkstream.ddns.net:1935/telenord8/telenord8/playlist.m3u8
-#EXTINF:-1 tvg-id="Telenord10.do" status="online",Telenord Canal 10 (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="Telenord10.do" status="error",Telenord Canal 10 (1080p) [Not 24/7]
 http://newyorkstream.ddns.net:1935/telenord10/telenord10/playlist.m3u8
 #EXTINF:-1 tvg-id="Telenord12.do" status="online",Telenord 12 (720p) [Not 24/7]
 http://newyorkstream.ddns.net:1935/telenord12/telenord12/playlist.m3u8
@@ -203,12 +199,10 @@ https://cdn4.hostlagarto.com:8081/static/teletur/playlist.m3u8
 http://server3.prostudionetwork.com:1945/teleunion/TU/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleuniverso.do" status="online",Teleuniverso
 https://teleuniversotv.streamgato.us:3110/live/teleuniversotvlive.m3u8
-#EXTINF:-1 tvg-id="Telever.do" status="online",Telever (1080p)
+#EXTINF:-1 tvg-id="Telever.do" status="error",Telever (1080p)
 https://megastreamm.com:3484/live/televerlive.m3u8
 #EXTINF:-1 tvg-id="Televida.do" status="error",Televida [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/televidaenvivo
-#EXTINF:-1 tvg-id="TelevisionA1.do" status="error",Televisión A1 [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/1a1_live
 #EXTINF:-1 tvg-id="TelevisiondelEste.do" status="online",Televisión del Este (720p)
 http://cm.hostlagarto.com:8081/ESTV/estv.myStream/playlist.m3u8?fluxustv.m3u8=
 #EXTINF:-1 tvg-id="TNICanal51.do" status="online",TNI Canal51 (720p) [Not 24/7]
@@ -223,7 +217,7 @@ https://cloudflare.streamgato.us:3125/live/megacinetvlive.m3u8
 https://cloud2.streaminglivehd.com:1936/8024/8024/playlist.m3u8
 #EXTINF:-1 tvg-id="TVDaja.do" status="online",TV Daja
 https://cm.hostlagarto.com:4445/Dajatv/Dajatv.myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="TVExitos.do" status="error",TV Éxitos (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TVExitos.do" status="online",TV Éxitos (720p) [Not 24/7]
 https://vdo1.streamgato.us:3359/live/tvexitoslive.m3u8
 #EXTINF:-1 tvg-id="TVHigueyDigital.do" status="online",TV Higuey Digital
 https://vdo1.streamgato.us:3046/live/tvhigueycanal12live.m3u8
@@ -237,10 +231,10 @@ https://ss9.domint.net:3032/tvp_str/tvp2111/playlist.m3u8
 http://cm.hostlagarto.com:8081/Tvstv/TvstvHD.myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="UrbancristTV.do" status="online",Urbancrist TV (720p)
 https://5790d294af2dc.streamlock.net/8160/8160/playlist.m3u8
-#EXTINF:-1 tvg-id="Vallevision.do" status="error",Vallevision (720p) [Not 24/7]
-http://190.103.183.24:1935/Vallevision/ValleHD/playlist.m3u8
-#EXTINF:-1 tvg-id="Vallevision.do" status="error",Vallevision Canal 10 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Vallevision.do" status="online",Vallevision Canal 10 (720p) [Not 24/7]
 https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8
+#EXTINF:-1 tvg-id="Vallevision.do" status="timeout",Vallevision (720p) [Not 24/7]
+http://190.103.183.24:1935/Vallevision/ValleHD/playlist.m3u8
 #EXTINF:-1 tvg-id="VegavisionCanal18.do" status="online",Vegavisión Canal 18 (720p)
 https://cdn4.hostlagarto.com:8081/static/canal18hd/playlist.m3u8
 #EXTINF:-1 tvg-id="Yunavision.do" status="online",Yunavisión
