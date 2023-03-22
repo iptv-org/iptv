@@ -17,6 +17,7 @@ Channels:
 - [Can I safely add an FTA channel that broadcasts PPV events or pay programming?](#Can-i-safely-add-an-fta-channel-that-broadcasts-ppv-events-or-pay-programming)
 - [I've created my channel and I want to add it to this playlist. What should I do?](#Ive-created-my-channel-and-i-want-to-add-it-to-this-playlist-what-should-i-do)
 - [Is there any way to add my channel other than via this git repository?](#Is-there-any-way-to-add-my-channel-other-than-via-this-git-repository)
+- [I've seen this channel on the website/the EPG, though it is not seen in the playlists, why ?](#Ive-seen-this-channel-on-the-website-the-epg-though-it-is-not-seen-in-the-playlists-why)
 
 Technical:
 - [Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?](#Why-am-i-asked-to-provide-an-adaptive-playlist-like-masterm3u8-playlistm3u8-or-indexm3u8)
@@ -24,7 +25,7 @@ Technical:
 - [Is it possible to add streams from Youtube, Dailymotion or Twitch?](#Is-it-possible-to-add-streams-from-youtube-dailymotion-or-twitch)
 - [Is it possible to add audio-only streams, like FM radio?](#Is-it-possible-to-add-audio-only-streams-like-fm-radio)
 - [Why are there some call sign (KJLA-DT1.us) as ids and alphanumeric names as ids (Mychannel.us)?](#Why-are-there-some-call-sign-kjla-dt1us-as-ids-and-alphanumeric-names-as-ids-mychannelus)
-- [There are source for verify call sign and coverage area for some TV stations?](#There-are-source-for-verify-call-sign-and-coverage-area-for-some-tv-stations)
+- [Are there sources to verify the call sign and coverage area for the TV stations?](#Are-there-sources-to-verify-the-call-sign-and-coverage-area-for-the-tv-stations)
 - [Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?](#Why-attributes-of-channels-of-this-playlist-like-tvg-country-tvg-language-tvg-logo-are-missing)
 - [Why some streams have an empty id?](#Why-some-streams-have-an-empty-id)
 - [What is a "daily update" and why is useful for this playlist?](#What-is-a-daily-update-and-why-is-useful-for-this-playlist)
@@ -128,6 +129,13 @@ No, there is no such option.
 
 Based on [#2392](https://github.com/iptv-org/iptv/issues/2392).
 
+### I've seen this channel on the website/the EPG, though it is not seen in the playlists, why ?
+The website is a database of channels that are available worldwide, and the EPG repo scrapes the guides for various channels available on different websites.
+
+Both these different scopes do not represent a list of streams that are available in the playlists, as they're entirely different repositories and purposes.
+
+Based on [#7212](https://github.com/iptv-org/iptv/discussions/7212) and [#11839](https://github.com/iptv-org/iptv/discussions/11839)
+
 ## Technical
 ### Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?
 An adaptive playlist is a m3u8 file that contains certain informations: the bandwidth, the quality, the type of codec used to read the channel. The player then reads the channel playlist based on your bandwidth and screen (hence the name "adaptive"). This permits you to watch your channel on perfect conditions.
@@ -154,16 +162,23 @@ Based on [#5236](https://github.com/iptv-org/iptv/pull/5236), [#5401](https://gi
 ### Is it possible to add streams from Youtube, Dailymotion or Twitch?
 Yes. Due to technical limitations, it is necessary to add a [Streamlink](https://streamlink.github.io/) server link to view the content. This does not work with all streams, so it will give an "error" status if this stream is not freely accessible.
 
-As an example, here's the scheme for adding a YouTube stream:
+You can create your own local Streamlink server by using [query-streamlink](https://github.com/BellezaEmporium/query-streamlink) or [liveproxy](https://github.com/back-to/liveproxy)
+
+As an example, here's the scheme for adding a YouTube stream with query-streamlink:
 
 ```
 http://streamlink.example.org/iptv-query?streaming-ip=https://www.youtube.com/c/MyChannel/live
 ```
 
+And the same example, but with liveproxy
+```
+http://streamlink.example.org/cmd/streamlink https://www.youtube.com/c/MyChannel/live best
+```
+
 Based on [#3017](https://github.com/iptv-org/iptv/discussions/3017) (about geo-blocked channel), [#4112](https://github.com/iptv-org/iptv/discussions/4412), [#4456](https://github.com/iptv-org/iptv/discussions/4456) and [#10246](https://github.com/iptv-org/iptv/discussions/10246).
 
 ### Is it possible to add audio-only streams, like FM radio?
-No. Exceptions are the visual radios, in which a video and audio are shown at the same time. A WIP repository made by one member of iptv-org, [LaneSh4d0w](https://github.com/LaneSh4d0w) aims to collect radio streams, on the [IPRD](https://github.com/LaneSh4d0w/IPRD) repository.
+No. Exceptions are the visual radios, in which a video and audio are shown at the same time. A WIP repository made by one member of iptv-org, [BellezaEmporium](https://github.com/BellezaEmporium) aims to collect radio streams, on the [IPRD](https://github.com/BellezaEmporium/IPRD) repository.
 
 Based on [#1196](https://github.com/iptv-org/iptv/pull/1196) (first pull request about this) [#2758](https://github.com/iptv-org/iptv/pull/2758) (visual radio example), [#5794](https://github.com/iptv-org/iptv/discussions/5794), [#6044](https://github.com/iptv-org/iptv/discussions/6044) and [#8788](https://github.com/iptv-org/iptv/discussions/8788).
 
@@ -184,7 +199,7 @@ If the channel has a another stream and this is broadcasting as an international
 
 Based on [#5818](https://github.com/iptv-org/iptv/discussions/5818).
 
-### There are source for verify call sign and coverage area for some TV stations?
+### Are there sources to verify the call sign and coverage area for the TV stations ?
 There are websites to consult the location and characteristics of the station. FCC has [complete official information](https://www.fcc.gov/media/television/tv-service-contour-data-points) about call letters in the United States. You can also consult other websites such as [FCCData](https://fccdata.org/) for US, Canada, Mexico, UK, Australia and Japan.
 
 Based on [#9312](https://github.com/iptv-org/iptv/discussions/9312).
