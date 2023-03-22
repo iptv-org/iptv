@@ -132,7 +132,7 @@ Based on [#2392](https://github.com/iptv-org/iptv/issues/2392).
 ### I've seen this channel on the website/the EPG, though it is not seen in the playlists, why ?
 The website is a database of channels that are available worldwide, and the EPG repo scrapes the guides for various channels available on different websites.
 
-Both these different scopes do not represent a list of streams that are available in the playlists, as they're entirely different repositories and purposes.
+Both these different scopes do **not** represent a list of streams that are available in the playlists, as they're entirely different repositories and serve different purposes.
 
 Based on [#7212](https://github.com/iptv-org/iptv/discussions/7212) and [#11839](https://github.com/iptv-org/iptv/discussions/11839)
 
