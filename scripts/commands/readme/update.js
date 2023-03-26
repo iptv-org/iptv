@@ -58,6 +58,12 @@ async function createCountryTable() {
         channels: item.count,
         playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
       })
+    } else if (code === 'int') {
+      rows.push({
+        name: `🌍 International`,
+        channels: item.count,
+        playlist: `<code>https://iptv-org.github.io/iptv/${item.filepath}</code>`
+      })
     } else {
       const subdivision = await api.subdivisions.find({ code: code.toUpperCase() })
       if (subdivision) {

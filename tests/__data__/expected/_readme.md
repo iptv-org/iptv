@@ -13,6 +13,7 @@ Collection of publicly available IPTV (Internet Protocol television) channels fr
 - 👨‍💻 [API](#api)
 - 📚 [Resources](#resources)
 - 💬 [Discussions](#discussions)
+- ❓ [FAQ](#faq)
 - 🛠 [Contribution](#contribution)
 - ⚖ [Legal](#legal)
 - © [License](#license)
@@ -396,6 +397,7 @@ Same thing, but split up into separate files:
     <tr><td>🇿🇲 Zambia</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/zm.m3u</code></td></tr>
     <tr><td>🇿🇼 Zimbabwe</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/zw.m3u</code></td></tr>
     <tr><td>🇦🇽 Åland</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ax.m3u</code></td></tr>
+    <tr><td>🌍 International</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/int.m3u</code></td></tr>
   </tbody>
 </table>
 
@@ -471,6 +473,10 @@ Links to other useful IPTV-related resources can be found in the [iptv-org/aweso
 ## Discussions
 
 If you have a question or an idea, you can post it in the [Discussions](https://github.com/iptv-org/iptv/discussions) tab.
+
+## FAQ
+
+The answers to the most popular questions can be found in the [FAQ.md](FAQ.md) file.
 
 ## Contribution
 

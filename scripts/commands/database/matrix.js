@@ -9,7 +9,7 @@ async function main() {
   }, [])
 
   const matrix = { cluster_id }
-  const output = `::set-output name=matrix::${JSON.stringify(matrix)}`
+  const output = `MATRIX=${JSON.stringify(matrix)}`
   logger.info(output)
 }
 
