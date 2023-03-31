@@ -129,7 +129,7 @@ The website is a database of channels that are available worldwide, and the EPG 
 
 Both these different scopes do not represent a list of streams that are available in the playlists, as they're entirely different repositories and serve different purposes. 
 
-How to check if the playlist stream is available on the web: In our website, you will see an extensive list of channels and their respective information, when you can also search their name or filter by type (like `country:UK` for UK channels). On the right side of the channel, there's a "Streams" option if the link is indexed in our database but you can not play. If you want add the missing stream, please respect the [contribution guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md) before doing so. 
+How to check if the playlist stream is available on the web: In our website, you will see an extensive list of channels and their respective information, when you can also search their name or filter by type (like `country:UK` for UK channels). On the right side of the channel, when the link is indexed in our database, there's a "Streams" option (but you can not play it). If you want add the missing stream, please respect the [contribution guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md) before doing so. 
 
 Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://github.com/iptv-org/iptv/issues/7415), [#7509](https://github.com/iptv-org/iptv/discussions/7509), [#10242](https://github.com/iptv-org/iptv/discussions/10242) and [#11927](https://github.com/iptv-org/iptv/discussions/11927).
 
