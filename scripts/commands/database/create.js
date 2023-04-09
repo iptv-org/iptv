@@ -48,7 +48,7 @@ async function findStreams() {
       stream.set('url', { url: item.url })
       stream.set('http_referrer', { http_referrer: item.http.referrer })
       stream.set('user_agent', { user_agent: item.http['user-agent'] })
-      stream.set('status', { status: cached.status })
+      stream.set('status', { status: cached.status || 'online' })
       stream.set('width', { width: cached.width })
       stream.set('height', { height: cached.height })
       stream.set('bitrate', { bitrate: cached.bitrate })

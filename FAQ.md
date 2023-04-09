@@ -5,7 +5,6 @@ Basic:
 - [Do I need a good Internet connection to watch an available stream?](#Do-i-need-a-good-internet-connection-to-watch-an-available-stream)
 - [I have a cable service and I want those channels to be on this IPTV. Is that possible?](#I-have-a-cable-service-and-i-want-those-channels-to-be-on-this-iptv-is-that-possible)
 - [Does the playlist have a channel guide?](#Does-the-playlist-have-a-channel-guide)
-- [Is it possible to view channels directly from the main website?](#Is-it-possible-to-view-channels-directly-from-the-main-website)
 - [Why don't we show NSFW channels in most playlists?](#Why-dont-we-show-nsfw-channels-in-most-playlists)
 - [Do I have to pay to use this playlist?](#Do-i-have-to-pay-to-use-this-playlist)
 - [Are you planning to include a VOD of TV shows broadcasted on this playlist?](#Are-you-planning-to-include-a-vod-of-tv-shows-broadcasted-on-this-playlist)
@@ -17,6 +16,9 @@ Channels:
 - [Can I safely add an FTA channel that broadcasts PPV events or pay programming?](#Can-i-safely-add-an-fta-channel-that-broadcasts-ppv-events-or-pay-programming)
 - [I've created my channel and I want to add it to this playlist. What should I do?](#Ive-created-my-channel-and-i-want-to-add-it-to-this-playlist-what-should-i-do)
 - [Is there any way to add my channel other than via this git repository?](#Is-there-any-way-to-add-my-channel-other-than-via-this-git-repository)
+
+Website:
+- [I've seen this channel on the website/the EPG, though it is not seen in the playlists, why?](#Ive-seen-this-channel-on-the-websitethe-epg-though-it-is-not-seen-in-the-playlists-why)
 
 Technical:
 - [Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?](#Why-am-i-asked-to-provide-an-adaptive-playlist-like-masterm3u8-playlistm3u8-or-indexm3u8)
@@ -53,13 +55,6 @@ Yes, because an id of each channel is used to link to program guide because they
 Note: For storage space reasons, the programming guide is only available in gz compressed format. See [discussion](https://github.com/iptv-org/iptv/discussions/8255).
 
 Based on [#1797](https://github.com/iptv-org/iptv/issues/1797), [#2438](https://github.com/iptv-org/iptv/issues/2438), [#4537](https://github.com/iptv-org/iptv/discussions/4537) and [#7043](https://github.com/iptv-org/iptv/discussions/7043).
-
-### Is it possible to view channels directly from the main website?
-No. In our website, you will see an extensive list of channels and their respective information, like a global database. In this case, you will only be able to search and review the channels you want. If your favorite channel is legally available as an indexed stream in the IPTV playlist, there's a "Streams" option that will be available on the right side of the channel, so that you can have the link to watch it. Else, you can make an issue to ask for it. Please respect the [contribution guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md) before doing so.
-
-Note: You can consult the information of the channels by country, write in the search box as `country:UK` (for UK, per example).
-
-Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://github.com/iptv-org/iptv/issues/7415), [#7509](https://github.com/iptv-org/iptv/discussions/7509) and [#10242](https://github.com/iptv-org/iptv/discussions/10242).
 
 ### Why don't we show NSFW channels in most playlists?
 NSFW content are not suitable for the main public. To avoid issues with these kind of programmings, we've created a separate NSFW playlist available for everyone. If you want to see this type of channel, please use the NSFW playlist.
@@ -127,6 +122,16 @@ Based on [#650](https://github.com/iptv-org/iptv/issues/650) and [#6654](https:/
 No, there is no such option.
 
 Based on [#2392](https://github.com/iptv-org/iptv/issues/2392).
+
+## Website
+### I've seen this channel on the website/the EPG, though it is not seen in the playlists, why?
+The website is a database of channels that are available worldwide, and the EPG repo scrapes the guides for various channels available on different websites.
+
+Both these different scopes do not represent a list of streams that are available in the playlists, as they're entirely different repositories and serve different purposes. 
+
+How to check if the playlist stream is available on the web: In our website, you will see an extensive list of channels and their respective information, when you can also search their name or filter by type (like `country:UK` for UK channels). On the right side of the channel, when the link is indexed in our database, there's a "Streams" option (but you can not play it). If you want add the missing stream, please respect the [contribution guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md) before doing so. 
+
+Based on [#1002](https://github.com/iptv-org/iptv/issues/1002), [#7415](https://github.com/iptv-org/iptv/issues/7415), [#7509](https://github.com/iptv-org/iptv/discussions/7509), [#10242](https://github.com/iptv-org/iptv/discussions/10242) and [#11927](https://github.com/iptv-org/iptv/discussions/11927).
 
 ## Technical
 ### Why am I asked to provide an adaptive playlist like "master.m3u8", "playlist.m3u8" or "index.m3u8"?
