@@ -3,6 +3,8 @@
 https://ythls.onrender.com/channel/UCdFv_ZWQ3Xk_NfRiaK-ryGg.m3u8
 #EXTINF:-1 tvg-id="A12TV.fr" status="online",A12 TV (720p)
 https://video1.getstreamhosting.com:1936/8420/8420/playlist.m3u8
+#EXTINF:-1 tvg-id="ADNTVPlus.fr",ADN TV+ (1080p) [Geo-Blocked]
+https://samsunguk-adn-samsung-fre-qfrlc.amagi.tv/playlist/samsunguk-adn-samsung-fre/playlist.m3u8
 #EXTINF:-1 tvg-id="Africa24.fr" status="online",Africa 24 (540p)
 https://edge12.vedge.infomaniak.com/livecast/ik:africa24/manifest.m3u8
 #EXTINF:-1 tvg-id="AlpedHuezTV.fr" status="online",Alpe d’Huez TV (720p) [Not 24/7]
@@ -85,8 +87,10 @@ http://free.fullspeed.tv/iptv-query?streaming-ip=https://livestream.com/accounts
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/Europe1fr
 #EXTINF:-1 tvg-id="FashionTVCzechSlovak.fr" status="online",FashionTV Czech&Slovak (450p) [Not 24/7]
 http://lb.streaming.sk/fashiontv/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="FranceInter.fr" status="error",France Inter (1080p) [Not 24/7]
-http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.dailymotion.com/franceinter
+#EXTINF:-1 tvg-id="FranceInter.fr",France Inter (1080p) [Not 24/7]
+http://ythls.onrender.com/channel/UCJldRgT_D7Am-ErRHQZ90uw.m3u8
+#EXTINF:-1 tvg-id="Franceinfo.fr",Franceinfo (720p)
+https://raw.githubusercontent.com/pshanmu3/dailymotion_to_m3u8/main/FranceInfo.m3u8
 #EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie (360p)
 http://mv2.tvfrancophonie.org/live/Stream1/playlist.m3u8
 #EXTINF:-1 tvg-id="Francophonie24.fr" status="online",Francophonie24 (1080p)
@@ -99,6 +103,10 @@ https://128989.gvideo.io/streams/128989_522806/playlist.m3u8
 http://live.creacast.com/iltv/smil:iltv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KTO.fr" status="online",KTO (404p) [Not 24/7]
 https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
+#EXTINF:-1 tvg-id="LEspritSorcierTV.fr",L'Esprit Sorcier TV (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34
+#EXTVLCOPT:http-referrer= https://player.castr.com/
+https://stream.castr.com/63b43410861d94a9eee067fb/live_947330308dd911edb85c8181cb9b11a8/index.m3u8
 #EXTINF:-1 tvg-id="LMTVSarthe.fr" status="error",LM TV Sarthe (1080p) [Not 24/7]
 http://free.fullspeed.tv/iptv-query?streaming-ip=https://www.twitch.tv/lmtvsarthe
 #EXTINF:-1 tvg-id="MaisonTravauxTV.fr" status="error",Maison & Travaux TV (480p) [Not 24/7]
