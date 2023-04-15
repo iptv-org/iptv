@@ -32,14 +32,9 @@ body:
     validations:
       required: true
 
-  - type: input
-    attributes:
-      label: Possible Replacement
-      placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
-
   - type: textarea
     attributes:
-      label: Notes
+      label: Notes (optional)
       placeholder: 'Anything else we should know?'
 
   - type: checkboxes
