@@ -7,12 +7,6 @@ const playlist = {}
 class Playlist {
   constructor(items = [], options = {}) {
     this.header = {}
-    if (options.public) {
-      let guides = items
-        .map(item => (item.guides.length ? item.guides[0].url : null))
-        .filter(i => i)
-      this.header['x-tvg-url'] = _.uniq(guides).sort().join(',')
-    }
 
     this.links = []
     for (const item of items) {
@@ -29,7 +23,6 @@ class Playlist {
       } else {
         attrs = {
           'tvg-id': stream.get('tvg_id'),
-          status: stream.get('status'),
           'user-agent': stream.get('user_agent') || undefined
         }
       }
