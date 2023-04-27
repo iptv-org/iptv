@@ -32,13 +32,7 @@ main()
 async function loadStreams() {
   await db.streams.load()
   let streams = await db.streams.find({})
-  streams = _.filter(streams, stream => stream.status !== 'error')
-  const levels = { online: 1, blocked: 2, timeout: 3, error: 4, default: 5 }
-  streams = orderBy(
-    streams,
-    ['channel', s => levels[s.status] || levels['default'], 'height', 'frame_rate', 'url'],
-    ['asc', 'asc', 'desc', 'desc', 'asc']
-  )
+  streams = orderBy(streams, ['channel', 'url'], ['asc', 'asc'])
   streams = _.uniqBy(streams, stream => stream.channel || _.uniqueId())
 
   await api.channels.load()
@@ -53,10 +47,6 @@ async function loadStreams() {
   let languages = await api.languages.all()
   languages = _.keyBy(languages, 'code')
 
-  await api.guides.load()
-  let guides = await api.guides.all()
-  guides = _.groupBy(guides, 'channel')
-
   streams = streams.map(stream => {
     const channel = channels[stream.channel] || null
     const filename = file.getFilename(stream.filepath)
@@ -64,14 +54,12 @@ async function loadStreams() {
     const defaultBroadcastArea = code ? [`c/${code.toUpperCase()}`] : []
 
     if (channel) {
-      stream.guides = Array.isArray(guides[channel.id]) ? guides[channel.id] : []
       stream.categories = channel.categories.map(id => categories[id]).filter(i => i)
       stream.languages = channel.languages.map(id => languages[id]).filter(i => i)
       stream.broadcast_area = channel.broadcast_area
       stream.is_nsfw = channel.is_nsfw
       stream.logo = channel.logo
     } else {
-      stream.guides = []
       stream.categories = []
       stream.languages = []
       stream.broadcast_area = defaultBroadcastArea
