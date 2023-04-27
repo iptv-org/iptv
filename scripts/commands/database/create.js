@@ -18,6 +18,7 @@ main()
 async function findStreams() {
   logger.info(`loading channels...`)
   await api.channels.load()
+  const channels = _.keyBy(await api.channels.all(), 'id')
 
   logger.info(`looking for streams...`)
   await db.streams.load()
@@ -30,7 +31,7 @@ async function findStreams() {
       item.filepath = filepath
 
       const stream = store.create()
-      const channel = await api.channels.find({ id: item.tvg.id })
+      const channel = channels[item.tvg.id]
 
       stream.set('channel', { channel: channel ? channel.id : null })
       stream.set('title', { title: item.name })
@@ -51,7 +52,6 @@ async function saveToDatabase(streams = []) {
   logger.info('saving to the database...')
 
   await db.streams.reset()
-  for (const stream of streams) {
-    await db.streams.insert(stream.data())
-  }
+  const data = streams.map(stream => stream.data())
+  await db.streams.insert(data)
 }
