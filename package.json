@@ -14,7 +14,7 @@
     "playlist:lint": "npx m3u-linter -c m3u-linter.json",
     "readme:update": "node scripts/commands/readme/update.js",
     "update": "npm run api:load && npm run db:create && npm run playlist:generate && npm run readme:update",
-    "check": "npm run playlist:lint && npm run playlist:validate",
+    "check": "npm run api:load && npm run playlist:lint && npm run playlist:validate",
     "test": "jest --runInBand"
   },
   "jest": {
