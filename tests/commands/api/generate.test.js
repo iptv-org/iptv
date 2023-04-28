@@ -5,12 +5,12 @@ beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.mkdirSync('tests/__data__/output/database')
   fs.copyFileSync(
-    'tests/__data__/input/database/db_export.streams.db',
+    'tests/__data__/input/database/api_generate.streams.db',
     'tests/__data__/output/database/streams.db'
   )
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.api npm run db:export',
+    'DB_DIR=tests/__data__/output/database DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.api npm run api:generate',
     { encoding: 'utf8' }
   )
 })
