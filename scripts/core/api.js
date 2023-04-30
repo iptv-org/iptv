@@ -1,7 +1,7 @@
 const _ = require('lodash')
 const file = require('./file')
 
-const DATA_DIR = process.env.DATA_DIR || './scripts/data'
+const DATA_DIR = process.env.DATA_DIR || './scripts/tmp/data'
 
 class API {
   constructor(filepath) {
