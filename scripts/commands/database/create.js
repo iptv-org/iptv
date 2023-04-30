@@ -1,4 +1,4 @@
-const { db, file, parser, store, logger, api } = require('../../core')
+const { db, file, parser, store, logger } = require('../../core')
 const { program } = require('commander')
 const _ = require('lodash')
 
@@ -8,21 +8,7 @@ const options = program
   .opts()
 
 async function main() {
-  logger.info('starting...')
-
-  await saveToDatabase(await findStreams())
-}
-
-main()
-
-async function findStreams() {
-  logger.info(`loading channels...`)
-  await api.channels.load()
-  const channels = _.keyBy(await api.channels.all(), 'id')
-
   logger.info(`looking for streams...`)
-  await db.streams.load()
-
   const streams = []
   const files = await file.list(`${options.inputDir}/**/*.m3u`)
   for (const filepath of files) {
@@ -31,9 +17,8 @@ async function findStreams() {
       item.filepath = filepath
 
       const stream = store.create()
-      const channel = channels[item.tvg.id]
 
-      stream.set('channel', { channel: channel ? channel.id : null })
+      stream.set('channel', { channel: item.tvg.id })
       stream.set('title', { title: item.name })
       stream.set('filepath', { filepath: item.filepath })
       stream.set('url', { url: item.url })
@@ -45,13 +30,11 @@ async function findStreams() {
   }
   logger.info(`found ${streams.length} streams`)
 
-  return streams
-}
-
-async function saveToDatabase(streams = []) {
   logger.info('saving to the database...')
-
+  await db.streams.load()
   await db.streams.reset()
   const data = streams.map(stream => stream.data())
   await db.streams.insert(data)
 }
+
+main()
