@@ -11,7 +11,7 @@
     "playlist:lint": "npx m3u-linter -c m3u-linter.json",
     "playlist:deploy": "npx gh-pages -a -m \"Deploy to GitHub Pages\" -d .gh-pages -r https://$GITHUB_TOKEN@github.com/iptv-org/iptv.git -x",
     "readme:update": "node scripts/commands/readme/update.js",
-    "format": "npm run api:load && npm run db:create && npm run playlist:format",
+    "format": "npm run db:create && npm run playlist:format",
     "check": "npm run api:load && npm run playlist:lint && npm run playlist:validate",
     "update": "npm run api:load && npm run db:create && npm run playlist:generate && npm run api:generate && npm run readme:update",
     "deploy": "npm run playlist:deploy && npm run api:deploy",
