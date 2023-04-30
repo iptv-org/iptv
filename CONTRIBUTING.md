@@ -83,20 +83,10 @@ Also, if necessary, you can specify custom HTTP User-Agent and Referrer via the 
 http://example.com/stream.m3u8
 ```
 
-Each stream also have a `status` attribute which is updated daily by the [iptv-bot](https://github.com/apps/iptv-bot). The attribute can have one of the following values:
-
-- `online` - stream was successfully loaded
-- `blocked` - server returned HTTP code [403 Forbidden](https://en.wikipedia.org/wiki/HTTP_403)
-- `timeout` - request time exceeded 60 seconds
-- `error` - stream could not be loaded for some other reason
-
 ## Project Structure
 
 - `.github/`
   - `ISSUE_TEMPLATE/`: issue templates for the repository.
-  - `workflows/`
-    - `auto-update.yml`: GitHub workflow that launches daily playlist updates (at 0:00 and 12:00 UTC).
-    - `check.yml`: GitHub workflow that checks every pull request for syntax errors and blocked channels.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
 - `.readme/`
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
