@@ -10,7 +10,7 @@ beforeEach(() => {
     'tests/__data__/output/streams.db'
   )
 
-  const stdout = execSync(
+  execSync(
     'DB_DIR=tests/__data__/output DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.gh-pages LOGS_DIR=tests/__data__/output/logs/generators npm run playlist:generate',
     { encoding: 'utf8' }
   )
