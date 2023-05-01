@@ -2,7 +2,7 @@ const { file, markdown, parser, logger, api } = require('../../core')
 const { create: createTable } = require('../../core/table')
 const { program } = require('commander')
 
-const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/generators'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/tmp/logs/generators'
 
 const options = program
   .option('-c, --config <config>', 'Set path to config file', '.readme/config.json')
