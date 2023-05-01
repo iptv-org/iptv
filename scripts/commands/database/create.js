@@ -18,12 +18,12 @@ async function main() {
 
       const stream = store.create()
 
-      stream.set('channel', { channel: item.tvg.id })
-      stream.set('title', { title: item.name })
-      stream.set('filepath', { filepath: item.filepath })
-      stream.set('url', { url: item.url })
-      stream.set('http_referrer', { http_referrer: item.http.referrer })
-      stream.set('user_agent', { user_agent: item.http['user-agent'] })
+      stream.set('channel', item.tvg.id)
+      stream.set('title', item.name)
+      stream.set('filepath', item.filepath)
+      stream.set('url', item.url)
+      stream.set('http_referrer', item.http.referrer)
+      stream.set('user_agent', item.http['user-agent'])
 
       streams.push(stream)
     }
