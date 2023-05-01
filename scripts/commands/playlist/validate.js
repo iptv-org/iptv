@@ -30,6 +30,7 @@ async function main() {
     const basename = file.basename(filepath)
     const [__, country] = basename.match(/([a-z]{2})(|_.*)\.m3u/i) || [null, null]
 
+    const buffer = {}
     const fileLog = []
     const playlist = await parser.parsePlaylist(filepath)
     for (const item of playlist.items) {
@@ -39,6 +40,16 @@ async function main() {
           line: item.line,
           message: `"${item.tvg.id}" is not in the database`
         })
+      }
+
+      if (item.url && buffer[item.url]) {
+        fileLog.push({
+          type: 'warning',
+          line: item.line,
+          message: `"${item.url}" is already on the playlist`
+        })
+      } else {
+        buffer[item.url] = true
       }
 
       const channel_id = id.generate(item.name, country)
