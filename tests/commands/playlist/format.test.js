@@ -6,16 +6,16 @@ const glob = require('glob')
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.copyFileSync(
-    'tests/__data__/input/database/playlist_update.streams.db',
+    'tests/__data__/input/database/playlist_format.streams.db',
     'tests/__data__/output/streams.db'
   )
 
-  const stdout = execSync('DB_DIR=tests/__data__/output npm run playlist:update', {
+  const stdout = execSync('DB_DIR=tests/__data__/output npm run playlist:format', {
     encoding: 'utf8'
   })
 })
 
-it('can update playlists', () => {
+it('can format playlists', () => {
   const files = glob
     .sync('tests/__data__/expected/streams/*.m3u')
     .map(f => f.replace('tests/__data__/expected/', ''))
