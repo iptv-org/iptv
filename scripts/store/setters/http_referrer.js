@@ -1,3 +1,3 @@
-module.exports = function ({ http_referrer }) {
+module.exports = function (http_referrer) {
   return http_referrer || null
 }

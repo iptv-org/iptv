@@ -1,4 +1,5 @@
 const { create: createPlaylist } = require('../../core/playlist')
+const { normalize: normalizeUrl } = require('../../core/url')
 const { db, logger, file } = require('../../core')
 const { orderBy } = require('natural-orderby')
 const _ = require('lodash')
@@ -7,6 +8,12 @@ async function main() {
   logger.info('loading streams...')
   await db.streams.load()
   let streams = await db.streams.find({})
+
+  streams = streams.map(stream => {
+    stream.url = normalizeUrl(stream.url)
+
+    return stream
+  })
 
   logger.info('sorting links...')
   streams = orderBy(
