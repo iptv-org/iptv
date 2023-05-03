@@ -1,7 +1,7 @@
 const nedb = require('nedb-promises')
 const file = require('./file')
 
-const DB_DIR = process.env.DB_DIR || './scripts/database'
+const DB_DIR = process.env.DB_DIR || './scripts/tmp/database'
 
 class Database {
   constructor(filepath) {
