@@ -4,7 +4,7 @@ const logger = require('./logger')
 const file = require('./file')
 
 const PUBLIC_DIR = process.env.PUBLIC_DIR || '.gh-pages'
-const LOGS_DIR = process.env.LOGS_DIR || 'scripts/logs/generators'
+const LOGS_DIR = process.env.LOGS_DIR || 'scripts/tmp/logs/generators'
 
 const generator = {}
 
