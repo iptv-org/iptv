@@ -3,16 +3,18 @@
   "scripts": {
     "api:load": "./scripts/commands/api/load.sh",
     "api:generate": "node scripts/commands/api/generate.js",
-    "api:deploy": "npx gh-pages -a -m \"Deploy to iptv-org/api\" -d .api -r https://$GITHUB_TOKEN@github.com/iptv-org/api.git -x",
+    "api:deploy": "npx gh-pages-clean && npx gh-pages -a -m \"Deploy to iptv-org/api\" -d .api -r https://$GITHUB_TOKEN@github.com/iptv-org/api.git -x",
     "db:create": "node scripts/commands/database/create.js",
+    "playlist:format": "node scripts/commands/playlist/format.js",
     "playlist:generate": "node scripts/commands/playlist/generate.js",
     "playlist:validate": "node scripts/commands/playlist/validate.js",
     "playlist:lint": "npx m3u-linter -c m3u-linter.json",
-    "playlist:deploy": "npx gh-pages -a -m \"Deploy to GitHub Pages\" -d .gh-pages -r https://$GITHUB_TOKEN@github.com/iptv-org/iptv.git -x",
+    "playlist:deploy": "npx gh-pages-clean && npx gh-pages -m \"Deploy to GitHub Pages\" -d .gh-pages -r https://$GITHUB_TOKEN@github.com/iptv-org/iptv.git -x",
     "readme:update": "node scripts/commands/readme/update.js",
+    "format": "npm run db:create && npm run playlist:format",
+    "check": "npm run api:load && npm run playlist:lint && npm run playlist:validate",
     "update": "npm run api:load && npm run db:create && npm run playlist:generate && npm run api:generate && npm run readme:update",
     "deploy": "npm run playlist:deploy && npm run api:deploy",
-    "check": "npm run api:load && npm run playlist:lint && npm run playlist:validate",
     "test": "jest --runInBand"
   },
   "jest": {
