@@ -806,7 +806,7 @@ Links to other useful IPTV-related resources can be found in the [iptv-org/aweso
 
 ## Discussions
 
-If you have a question or an idea, you can post it in the [Discussions](https://github.com/iptv-org/iptv/discussions) tab.
+If you have a question or an idea, you can post it in the [Discussions](https://github.com/orgs/iptv-org/discussions) tab.
 
 ## FAQ
 
