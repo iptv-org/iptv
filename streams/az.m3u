@@ -31,8 +31,10 @@ https://edge1.socialsmart.tv/aznews/smil/aznews/720p/chunks.m3u8
 https://swow1.socialsmart.tv/aznews/smil:aznews.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BakuTV.az",Baku TV (720p)
 https://rtmp.baku.tv/live/bakutv_720p.m3u8
-#EXTINF:-1 tvg-id="CBC.az",CBC (720p)
-http://cbctvlive.flashmediacast.com:1935/CBCTVLive/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="CBC.az",CBC (720p)  [Geo-blocked]
+http://api.canlitvplayer.com/str.yodacdn.net/cbc/mono.m3u8?token=37c73919564746534a6a85ed9337ae487a29cd5f-6ff7674e65450e3c6650c43aa4442988-1664284043-1664273243
+#EXTINF:-1 tvg-id="CBCSport.az",CBC SPORT
+https://mn-nl.mncdn.com/cbcsports_live/cbcsports/chunklist.m3u8
 #EXTINF:-1 tvg-id="ELTV.az",EL TV (260p)
 http://85.132.53.162:1935/live/eltv/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalTuran.fr",Kanal Turan (576p)
@@ -53,3 +55,5 @@ https://yayin30.haber100.com/live/agrotv2/playlist.m3u8
 http://api.canlitvplayer.com/str.yodacdn.net/shtv/mono.m3u8?token=49b46a963601772e25ced2b2886605de86b3c411-4d908a3ca4eb8248cbbcafc51e12d454-1664271581-1664260781
 #EXTINF:-1 tvg-id="MuzTV.az", MUZ TV [Geo-blocked]
 http://api.canlitvplayer.com/str.yodacdn.net/mtvaz/mono.m3u8?token=52078ae03437564a6f7037aed547f047c0466f3e-d3d765684657c8fc3a0cafb695d79af3-1664271354-1664260554
+#EXTINF:-1 tvg-id="XezerTV.az", Xezer TV [Geo-blocked]
+http://api.canlitvplayer.com/str.yodacdn.net/xazar/mono.m3u8?token=63b6e4cb904ad72bf2973b5bbc8b131565c3d5e4-47d40521abf1587ac287e63cf7ec127d-1664271737-1664260937
