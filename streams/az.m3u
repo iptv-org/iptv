@@ -1,4 +1,12 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="AzTV.az",Az TV (1080p)
+https://str.yodacdn.net/aztv/index.m3u8
+#EXTINF:-1 tvg-id="IdmanTV.az",İdman TV (576p)
+http://109.205.166.68/server124/idman_az/index.m3u8
+#EXTINF:-1 tvg-id="MedeniyyetTV.az",Medeniyyet TV (406p)
+https://str.yodacdn.net/medeniyyet/index.m3u8
+#EXTINF:-1 tvg-id="IctimaiTV.az",Ictimai TV
+http://109.205.166.68/server124/ictimai_tv/index.m3u8
 #EXTINF:-1 tvg-id="AlvinChannelTV.az",Alvin Channel TV (360p) [Not 24/7]
 https://cdn10-alvinchannel.yayin.com.tr/alvinchannel/alvinchannel/playlist.m3u8
 #EXTINF:-1 tvg-id="APATv.az",APA TV (720p)
@@ -8,7 +16,7 @@ http://85.132.81.184:8080/arb/live/index.m3u8
 #EXTINF:-1 tvg-id="ARB.az",ARB (576p)
 http://109.205.166.68/server124/arb/index.m3u8
 #EXTINF:-1 tvg-id="ARBGunes.az",ARB Günəş [Geo-blocked]
-http://149.255.152.199/arbgunes.m3u8
+http://api.canlitvplayer.com/str.yodacdn.net/arbgunesh/mono.m3u8?token=4d996b7055f5897a540176bed647fd5efa4b8ed5-b04e2e8f43c06d5f8a20fc02d41e3db9-1664271479-1664260679
 #EXTINF:-1 tvg-id="AzadTV.az",Azad TV (ATV) (720p)
 http://85.132.81.184:8080/atv/index.m3u8
 #EXTINF:-1 tvg-id="AzadTV.az",Azad TV (ATV) (720p)
@@ -21,35 +29,27 @@ http://85.132.81.184:8080/atv-4/index.m3u8
 https://edge1.socialsmart.tv/aznews/smil/aznews/720p/chunks.m3u8
 #EXTINF:-1 tvg-id="AznewsTV.az",AZ News (720p)
 https://swow1.socialsmart.tv/aznews/smil:aznews.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="AzTV.az",Az TV (1080p)
-https://str.yodacdn.net/aztv/index.m3u8
 #EXTINF:-1 tvg-id="BakuTV.az",Baku TV (720p)
 https://rtmp.baku.tv/live/bakutv_720p.m3u8
 #EXTINF:-1 tvg-id="CBC.az",CBC (720p)
 http://cbctvlive.flashmediacast.com:1935/CBCTVLive/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ELTV.az",EL TV (260p)
 http://85.132.53.162:1935/live/eltv/playlist.m3u8
-#EXTINF:-1 tvg-id="IctimaiTV.az",Ictimai TV
-http://109.205.166.68/server124/ictimai_tv/index.m3u8
-#EXTINF:-1 tvg-id="IdmanTV.az",İdman TV (576p)
-http://109.205.166.68/server124/idman_az/index.m3u8
 #EXTINF:-1 tvg-id="KanalTuran.fr",Kanal Turan (576p)
 https://donvolga.com/Turan-TV/index.m3u8
 #EXTINF:-1 tvg-id="KepezTV.az",Kəpəz TV (540p) [Not 24/7]
 http://85.132.81.184:8080/arbkepez/live/index.m3u8
-#EXTINF:-1 tvg-id="MedeniyyetTV.az",Medeniyyet TV (406p)
-https://str.yodacdn.net/medeniyyet/index.m3u8
 #EXTINF:-1 tvg-id="MuganTV.az",Mugan TV (1080p) [Not 24/7]
 https://cdn10-mugantv.yayin.com.tr/mugantv/mugantv/playlist.m3u8
 #EXTINF:-1 tvg-id="QafqazTV.az",Qafqaz TV [Geo-blocked]
 https://str1.yodacdn.net/qafkaz/playlist.m3u8
 #EXTINF:-1 tvg-id="RealTV.az",Real TV [Geo-blocked]
 https://str.yodacdn.net/real/playlist.m3u8
-#EXTINF:8  tvg-id="AlZahraTV.ir"tvg-logo="https://i.imgur.com/KsZoXBR.png",ZAHRA TV
+#EXTINF:-1 tvg-id="AlZahraTV.ir", AL-ZAHRA TV
 https://mn-nl.mncdn.com/alzahra/alzahra_hd.smil/playlist.m3u8
-#EXTINF:9 tvg-id="AgroTV.tr" tvg-logo="https://i.imgur.com/ls9NLa4.png",AGRO TV AZERBAIJAN
+#EXTINF:-1 tvg-id="AgroTV.tr",AGRO TV AZERBAIJAN [Geo-blocked]
 https://yayin30.haber100.com/live/agrotv2/chunklist_w27305036.m3u8
-#EXTINF:9 tvg-id="" tvg-logo="https://i.imgur.com/ls9NLa4.png", STV 
+#EXTINF:-1 tvg-id="", Sahiyya TV [Geo-blocked]
 http://api.canlitvplayer.com/str.yodacdn.net/shtv/mono.m3u8?token=49b46a963601772e25ced2b2886605de86b3c411-4d908a3ca4eb8248cbbcafc51e12d454-1664271581-1664260781
-#EXTINF:1 tvg-logo="https://yoda.az/logos/mtv.png" 	tvg-id="MuzTV.az", MUZ TV
+#EXTINF:-1 tvg-id="MuzTV.az", MUZ TV [Geo-blocked]
 https://str.yodacdn.net/mtvaz/playlist.m3u8
