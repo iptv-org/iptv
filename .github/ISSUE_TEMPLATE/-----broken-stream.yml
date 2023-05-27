@@ -11,9 +11,17 @@ body:
 
   - type: input
     attributes:
-      label: Broken Link
-      description: Please specify the broken link from a playlist
-      placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
+      label: Stream Title
+      description: Specify the exact title of the stream
+      placeholder: 'BBC One (720p) [Not 24/7]'
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Playlist Link
+      description: Provide a link to the playlist where you found this stream
+      placeholder: 'https://iptv-org.github.io/iptv/index.category.m3u'
     validations:
       required: true
 
