@@ -4,9 +4,7 @@ const { paginateRest } = require('@octokit/plugin-paginate-rest')
 const CustomOctokit = Octokit.plugin(paginateRest)
 const _ = require('lodash')
 
-const octokit = new CustomOctokit({
-  auth: process.env.GITHUB_TOKEN
-})
+const octokit = new CustomOctokit()
 
 const DATA_DIR = process.env.DATA_DIR || './tmp/data'
 const OWNER = 'iptv-org'
