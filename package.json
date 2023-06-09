@@ -5,6 +5,7 @@
     "api:generate": "node scripts/commands/api/generate.js",
     "api:deploy": "npx gh-pages-clean && npx gh-pages -a -m \"Deploy to iptv-org/api\" -d .api -r https://$GITHUB_TOKEN@github.com/iptv-org/api.git -x",
     "db:create": "node scripts/commands/database/create.js",
+    "issue:check": "node scripts/commands/issue/check.js",
     "playlist:format": "node scripts/commands/playlist/format.js",
     "playlist:generate": "node scripts/commands/playlist/generate.js",
     "playlist:validate": "node scripts/commands/playlist/validate.js",
@@ -28,6 +29,8 @@
   "license": "MIT",
   "dependencies": {
     "@alex_neo/jest-expect-message": "^1.0.5",
+    "@octokit/core": "^4.2.1",
+    "@octokit/plugin-paginate-rest": "^7.0.0",
     "chalk": "^4.1.2",
     "commander": "^8.3.0",
     "dayjs": "^1.10.7",
