@@ -33,6 +33,12 @@ body:
     validations:
       required: true
 
+  - type: input
+    attributes:
+      label: Possible Replacement (optional)
+      description: If you have a working link to this broadcast which is not yet on the playlist let us know
+      placeholder: 'https://example.com/playlist.m3u8'
+
   - type: textarea
     attributes:
       label: Notes (optional)
