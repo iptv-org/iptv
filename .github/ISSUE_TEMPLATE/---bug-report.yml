@@ -1,0 +1,12 @@
+name: 🐞 Bug Report
+description: Report an error in this repository
+title: 'Fix: '
+labels: ['🐞 bug']
+
+body:
+  - type: textarea
+    attributes:
+      label: Describe your issue
+      description: Please describe the error in as much detail as possible so that we can fix it quickly.
+    validations:
+      required: true
