@@ -11,10 +11,12 @@
     "playlist:lint": "npx m3u-linter -c m3u-linter.json",
     "playlist:deploy": "npx gh-pages-clean && npx gh-pages -m \"Deploy to GitHub Pages\" -d .gh-pages -r https://$GITHUB_TOKEN@github.com/iptv-org/iptv.git -x",
     "readme:update": "node scripts/commands/readme/update.js",
+    "report:create": "node scripts/commands/report/create.js",
     "format": "npm run db:create && npm run playlist:format",
     "check": "npm run api:load && npm run playlist:lint && npm run playlist:validate",
     "update": "npm run api:load && npm run db:create && npm run playlist:generate && npm run api:generate && npm run readme:update",
     "deploy": "npm run playlist:deploy && npm run api:deploy",
+    "report": "npm run api:load && npm run report:create",
     "test": "jest --runInBand"
   },
   "jest": {
@@ -28,6 +30,8 @@
   "license": "MIT",
   "dependencies": {
     "@alex_neo/jest-expect-message": "^1.0.5",
+    "@octokit/core": "^4.2.1",
+    "@octokit/plugin-paginate-rest": "^7.0.0",
     "chalk": "^4.1.2",
     "commander": "^8.3.0",
     "dayjs": "^1.10.7",
