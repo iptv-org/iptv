@@ -11,17 +11,9 @@ body:
 
   - type: input
     attributes:
-      label: Stream Title
-      description: Specify the exact title of the stream
-      placeholder: 'BBC One (720p) [Not 24/7]'
-    validations:
-      required: true
-
-  - type: input
-    attributes:
-      label: Playlist Link
-      description: Provide a link to the playlist where you found this stream
-      placeholder: 'https://iptv-org.github.io/iptv/index.category.m3u'
+      label: Broken Link
+      description: Please specify the broken link from a playlist
+      placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
     validations:
       required: true
 
@@ -34,11 +26,17 @@ body:
         - Stuck at a single frame
         - I see visual artifacts
         - Shows looped video
-        - Shows the wrong channel
+        - No sound
         - Displays a message asking to renew subscription
         - Other
     validations:
       required: true
+
+  - type: input
+    attributes:
+      label: Possible Replacement (optional)
+      description: If you have a working link to this broadcast which is not yet on the playlist let us know
+      placeholder: 'https://example.com/playlist.m3u8'
 
   - type: textarea
     attributes:
