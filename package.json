@@ -1,6 +1,8 @@
 {
   "name": "iptv",
   "scripts": {
+    "act:check": "act pull_request -W .github/workflows/check.yml",
+    "act:update": "act workflow_dispatch -W .github/workflows/update.yml",
     "api:load": "./scripts/commands/api/load.sh",
     "api:generate": "node scripts/commands/api/generate.js",
     "api:deploy": "npx gh-pages-clean && npx gh-pages -a -m \"Deploy to iptv-org/api\" -d .api -r https://$GITHUB_TOKEN@github.com/iptv-org/api.git -x",
