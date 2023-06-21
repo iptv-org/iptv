@@ -187,12 +187,12 @@ If the channel has a another stream and this is broadcasting as an international
 #EXTINF:-1 tvg-id="VisionLatina.us",Visión Latina
 ```
 
-Based on [#5818](https://github.com/iptv-org/iptv/discussions/5818).
+Based on [#5818](https://web.archive.org/web/20230212214215/https://github.com/iptv-org/iptv/discussions/5818) and [#420](https://github.com/orgs/iptv-org/discussions/420).
 
 ### There are source for verify call sign and coverage area for some TV stations?
 There are websites to consult the location and characteristics of the station. FCC has [complete official information](https://www.fcc.gov/media/television/tv-service-contour-data-points) about call letters in the United States. You can also consult other websites such as [FCCData](https://fccdata.org/) for US, Canada, Mexico, UK, Australia and Japan.
 
-Based on [#9312](https://github.com/iptv-org/iptv/discussions/9312).
+Based on [#9312](https://web.archive.org/web/20230212214215/https://github.com/iptv-org/iptv/discussions/9312).
 
 ### Why attributes of channels of this playlist like "tvg-country", "tvg-language", "tvg-logo" are missing?
 The reason is to reduce the workload when adding streams in the list. Since "tvg-id" links to the [Database](https://github.com/iptv-org/database) repository, each channel has unique attributes like image, name (in English and local speak), country (or countries) broadcasted, category and language.
@@ -202,7 +202,7 @@ You can add multiple streams with a single id (in the "tvg-id" parameter), inste
 ```
 #EXTINF:-1 tvg-id="CCTV3.cn",CCTV-3综艺 (1080p)
 ```
-Based on [#2086](https://github.com/iptv-org/iptv/issues/2086) (countries), [#3490](https://github.com/iptv-org/iptv/discussions/3490) (duplicated tvg-id) and [#6516](https://github.com/iptv-org/iptv/issues/6516) (use of Database).
+Based on [#2086](https://github.com/iptv-org/iptv/issues/2086) (countries), [#142](https://github.com/orgs/iptv-org/discussions/142) (duplicated tvg-id) and [#6516](https://github.com/iptv-org/iptv/issues/6516) (use of Database).
 
 ### Why some streams have an empty id?
 Because the stream does not have enough information available. If you appear to know additional data on these, let us know its official name, the language it broadcasts and the country where it originates.
