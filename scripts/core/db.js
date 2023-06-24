@@ -1,7 +1,10 @@
 const nedb = require('nedb-promises')
+const fs = require('fs-extra')
 const file = require('./file')
 
 const DB_DIR = process.env.DB_DIR || './scripts/tmp/database'
+
+fs.ensureDirSync(DB_DIR)
 
 class Database {
   constructor(filepath) {
