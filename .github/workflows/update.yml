@@ -6,6 +6,8 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v3
       - uses: tibdex/github-app-token@v1
@@ -68,6 +70,6 @@ jobs:
           git config user.name "iptv-bot[bot]"
           git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "[Bot] Update README.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify
+          git commit -m "[Bot] Update README.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify || exit 0
           git status
           git push
