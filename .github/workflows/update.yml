@@ -72,5 +72,5 @@ jobs:
           git add README.md
           git commit -m "[Bot] Update README.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify || exit 0
           git status
-          git remote set-url origin https://github.com/iptv-org/iptv.git
+          git remote set-url origin https://${{ steps.create-app-token.outputs.token }}@github.com/iptv-org/iptv.git
           git push --set-upstream origin master
