@@ -7,14 +7,13 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - uses: tibdex/github-app-token@v1
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: actions/checkout@v3
-        if: ${{ env.ACT }}
       - uses: actions/checkout@v3
         if: ${{ !env.ACT }}
         with:
@@ -39,16 +38,35 @@ jobs:
         run: npm run api:generate
       - name: update readme.md
         run: npm run readme:update
-      - name: update git config
-        run: |
-          git config user.name "iptv-bot[bot]"
-          git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
       - name: deploy to github pages
-        if: ${{ !env.ACT }}
-        run: GITHUB_TOKEN=${{ steps.create-app-token.outputs.token }} npm run deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          repository-name: iptv-org/iptv
+          branch: gh-pages
+          folder: .gh-pages
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to GitHub Pages'
+          clean: false
+      - name: deploy to iptv-org/api
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          repository-name: iptv-org/api
+          branch: gh-pages
+          folder: .api
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to iptv-org/api'
+          clean: false
       - name: commit changes
         if: ${{ !env.ACT }}
         run: |
+          git config user.name "iptv-bot[bot]"
+          git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
           git add README.md
           git commit -m "[Bot] Update README.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify
           git status
