@@ -68,7 +68,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
-          commit_message: "[Bot] Update README.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow."
+          commit_message: "[Bot] Update README.md"
           branch: master
           commit_options: '--no-verify'
           file_pattern: README.md
