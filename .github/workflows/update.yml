@@ -40,6 +40,18 @@ jobs:
         run: npm run api:generate
       - name: update readme.md
         run: npm run readme:update
+      - name: commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          commit_message: "[Bot] Update README.md"
+          branch: master
+          commit_options: '--no-verify'
+          file_pattern: README.md
+          repository: .
+          commit_user_name: iptv-bot[bot]
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>
       - name: deploy to github pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
@@ -64,14 +76,3 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to iptv-org/api'
           clean: false
-      - name: commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
-        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          commit_message: "[Bot] Update README.md"
-          branch: master
-          commit_options: '--no-verify'
-          file_pattern: README.md
-          repository: iptv-org/iptv
-          commit_user_name: iptv-bot[bot]
-          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
