@@ -5,7 +5,7 @@
     "act:update": "act workflow_dispatch -W .github/workflows/update.yml",
     "api:load": "./scripts/commands/api/load.sh",
     "api:generate": "node scripts/commands/api/generate.js",
-    "api:deploy": "npx gh-pages-clean && npx gh-pages -a -m \"Deploy to iptv-org/api\" -d .api -r https://$GITHUB_TOKEN@github.com/iptv-org/api.git -x",
+    "api:deploy": "npx gh-pages-clean && npx gh-pages -a -m \"Deploy to iptv-org/api\" -d .api -r https://$GITHUB_TOKEN@github.com/iptv-org/api.git",
     "db:create": "node scripts/commands/database/create.js",
     "playlist:format": "node scripts/commands/playlist/format.js",
     "playlist:generate": "node scripts/commands/playlist/generate.js",
