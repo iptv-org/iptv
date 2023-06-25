@@ -65,12 +65,13 @@ jobs:
           commit-message: '[Bot] Deploy to iptv-org/api'
           clean: false
       - name: commit changes
-        if: ${{ !env.ACT }}
-        run: |
-          git config user.name "iptv-bot[bot]"
-          git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
-          git add README.md
-          git commit -m "[Bot] Update README.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify || exit 0
-          git status
-          git remote set-url origin https://${{ steps.create-app-token.outputs.token }}@github.com/iptv-org/iptv.git
-          git push --set-upstream origin master
+        uses: stefanzweifel/git-auto-commit-action@v4
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          commit_message: "[Bot] Update README.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow."
+          branch: master
+          commit_options: '--no-verify'
+          file_pattern: README.md
+          repository: iptv-org/iptv
+          commit_user_name: iptv-bot[bot]
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
