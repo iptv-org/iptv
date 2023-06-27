@@ -32,39 +32,47 @@ async function main() {
 
     const buffer = {}
     const fileLog = []
-    const playlist = await parser.parsePlaylist(filepath)
-    for (const item of playlist.items) {
-      if (item.tvg.id && !api.channels.find({ id: item.tvg.id })) {
-        fileLog.push({
-          type: 'warning',
-          line: item.line,
-          message: `"${item.tvg.id}" is not in the database`
-        })
-      }
+    try {
+      const playlist = await parser.parsePlaylist(filepath)
+      for (const item of playlist.items) {
+        if (item.tvg.id && !api.channels.find({ id: item.tvg.id })) {
+          fileLog.push({
+            type: 'warning',
+            line: item.line,
+            message: `"${item.tvg.id}" is not in the database`
+          })
+        }
 
-      if (item.url && buffer[item.url]) {
-        fileLog.push({
-          type: 'warning',
-          line: item.line,
-          message: `"${item.url}" is already on the playlist`
-        })
-      } else {
-        buffer[item.url] = true
-      }
+        if (item.url && buffer[item.url]) {
+          fileLog.push({
+            type: 'warning',
+            line: item.line,
+            message: `"${item.url}" is already on the playlist`
+          })
+        } else {
+          buffer[item.url] = true
+        }
 
-      const channel_id = id.generate(item.name, country)
-      const found = blocklist.find(
-        blocked =>
-          item.tvg.id.toLowerCase() === blocked.channel.toLowerCase() ||
-          channel_id.toLowerCase() === blocked.channel.toLowerCase()
-      )
-      if (found) {
-        fileLog.push({
-          type: 'error',
-          line: item.line,
-          message: `"${found.name}" is on the blocklist due to claims of copyright holders (${found.ref})`
-        })
+        const channel_id = id.generate(item.name, country)
+        const found = blocklist.find(
+          blocked =>
+            item.tvg.id.toLowerCase() === blocked.channel.toLowerCase() ||
+            channel_id.toLowerCase() === blocked.channel.toLowerCase()
+        )
+        if (found) {
+          fileLog.push({
+            type: 'error',
+            line: item.line,
+            message: `"${found.name}" is on the blocklist due to claims of copyright holders (${found.ref})`
+          })
+        }
       }
+    } catch (err) {
+      fileLog.push({
+        type: 'error',
+        line: 0,
+        message: err.message.toLowerCase()
+      })
     }
 
     if (fileLog.length) {
