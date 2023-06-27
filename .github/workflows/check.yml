@@ -1,0 +1,38 @@
+name: check
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - uses: tj-actions/changed-files@v35
+        id: files
+        with:
+          files: streams/*.m3u
+      - uses: actions/setup-node@v3
+        if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
+        with:
+          node-version: 16
+          cache: 'npm'
+      - name: download data from api
+        if: steps.files.outputs.any_changed == 'true'
+        run: |
+          mkdir -p scripts/tmp/data
+          curl -L -o scripts/tmp/data/blocklist.json https://iptv-org.github.io/api/blocklist.json
+          curl -L -o scripts/tmp/data/channels.json https://iptv-org.github.io/api/channels.json
+      - name: install dependencies
+        if: steps.files.outputs.any_changed == 'true'
+        run: npm install
+      - name: validate
+        if: steps.files.outputs.any_changed == 'true'
+        run: |
+          npm run playlist:lint -- ${{ steps.files.outputs.all_changed_files }}
+          npm run playlist:validate -- ${{ steps.files.outputs.all_changed_files }}
