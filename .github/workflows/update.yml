@@ -1,0 +1,78 @@
+name: update
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: tibdex/github-app-token@v1
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - uses: actions/checkout@v3
+        if: ${{ !env.ACT }}
+        with:
+          token: ${{ steps.create-app-token.outputs.token }}
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - name: install dependencies
+        run: npm install
+      - name: load api data
+        run: npm run api:load
+      - name: validate playlists
+        run: |
+          npm run playlist:lint
+          npm run playlist:validate
+      - name: setup database
+        run: npm run db:create
+      - name: generate playlists
+        run: npm run playlist:generate
+      - name: generate streams.json
+        run: npm run api:generate
+      - name: update readme.md
+        run: npm run readme:update
+      - name: commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          commit_message: "[Bot] Update README.md"
+          branch: master
+          commit_options: '--no-verify'
+          file_pattern: README.md
+          repository: .
+          commit_user_name: iptv-bot[bot]
+          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit_author: iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>
+      - name: deploy to github pages
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          repository-name: iptv-org/iptv
+          branch: gh-pages
+          folder: .gh-pages
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to GitHub Pages'
+          clean: true
+      - name: deploy to iptv-org/api
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        with:
+          repository-name: iptv-org/api
+          branch: gh-pages
+          folder: .api
+          token: ${{ steps.create-app-token.outputs.token }}
+          git-config-name: iptv-bot[bot]
+          git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
+          commit-message: '[Bot] Deploy to iptv-org/api'
+          clean: false
