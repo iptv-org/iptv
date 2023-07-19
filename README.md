@@ -134,7 +134,7 @@ Same thing, but split up into separate files:
     <tr><td align="left">Chinese</td><td align="right">184</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/zho.m3u</code></td></tr>
     <tr><td align="left">Croatian</td><td align="right">13</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/hrv.m3u</code></td></tr>
     <tr><td align="left">Czech</td><td align="right">34</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/ces.m3u</code></td></tr>
-    <tr><td align="left">Danish</td><td align="right">18</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/dan.m3u</code></td></tr>
+    <tr><td align="left">Danish</td><td align="right">16</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/dan.m3u</code></td></tr>
     <tr><td align="left">Dhanwar (Nepal)</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/dhw.m3u</code></td></tr>
     <tr><td align="left">Dhivehi</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/div.m3u</code></td></tr>
     <tr><td align="left">Dimili</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/zza.m3u</code></td></tr>
@@ -231,7 +231,7 @@ Same thing, but split up into separate files:
     <tr><td align="left">Wolof</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/wol.m3u</code></td></tr>
     <tr><td align="left">Yucatec Maya</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/yua.m3u</code></td></tr>
     <tr><td align="left">Yue Chinese</td><td align="right">10</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/yue.m3u</code></td></tr>
-    <tr><td align="left">Undefined</td><td align="right">1345</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
+    <tr><td align="left">Undefined</td><td align="right">1347</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
