@@ -16,6 +16,10 @@ async function main() {
     let channels = await api.channels.all()
     channels = _.keyBy(channels, 'id')
 
+    await api.blocklist.load()
+    let blocklist = await api.blocklist.all()
+    blocklist = _.keyBy(blocklist, 'channel')
+
     await api.streams.load()
     let streams = await api.streams.all()
     streams = _.keyBy(streams, 'channel')
@@ -30,6 +34,7 @@ async function main() {
       }
 
       if (!r.channel || !r.channel.id) result.status = 'error'
+      else if (blocklist[r.channel.id]) result.status = 'blocked'
       else if (!channels[r.channel.id]) result.status = 'invalid_id'
       else if (streams[r.channel.id]) result.status = 'fullfilled'
       else if (buffer[r.channel.id] && !r.channel.url) result.status = 'duplicate'
