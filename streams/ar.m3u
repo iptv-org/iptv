@@ -115,9 +115,9 @@ https://iptv.ixfo.com.ar:30443/live/c6digital/playlist.m3u8
 https://stream.arcast.live/canal7jujuy/ngrp:canal7jujuy_all/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal7Neuquen.ar",Canal 7 Neuquén (1080p)
 https://stream.arcast.com.ar/c7nq/ngrp:c7nq_all/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal7Salta.ar",Canal 7 Salta (720p)
-https://panel.dattalive.com/8074/8074/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal7TV.ar",Canal 7 TV (720p)
+#EXTINF:-1 tvg-id="Canal7Salta.ar",Canal 7 Salta (1080p)
+https://vivo.solumedia.com:19360/cooperativa/cooperativa.m3u8
+#EXTINF:-1 tvg-id="Canal7TV.ar",Canal 7 Santiago del Estero (720p)
 https://stream.arcast.com.ar/envivo/castv/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal8MardelPlata.ar",Canal 8 Mar del Plata (720p)
 https://stream.arcast.com.ar/c8mdp/ngrp:c8mdp_all/playlist.m3u8
@@ -144,8 +144,11 @@ https://stream.arcast.live/canal10/ngrp:canal10_all/playlist.m3u8
 https://g4.mc-slo.transport.edge-access.net/a10/ngrp:canal10junin-100056_all/Playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10Goya.ar",Canal 10 Goya (576p)
 https://streamcasthd.com:19360/canal10goya/canal10goya.m3u8
-#EXTINF:-1 tvg-id="Canal10MardelPlata.ar",Canal 10 Mar del Plata (720p)
-https://g5.mc-slo.transport.edge-access.net/a15/ngrp:canal10mdq-100044_all/Playlist.m3u8?sense=true
+#EXTINF:-1 tvg-id="Canal10MardelPlata.ar" user-agent="iPhone",Canal 10 Mar del Plata (720p)
+#EXTVLCOPT:http-user-agent=iPhone
+https://g5.mc-slo.transport.edge-access.net/a15/ngrp:canal10mdq-100044_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="Canal10MardelPlata.ar",Canal 10 Mar del Plata (720p) [Not 24/7]
+https://ythls.onrender.com/channel/UCUM1n1Cb_cbnYTY45GvtyJw.m3u8
 #EXTINF:-1 tvg-id="Canal10Neuquen.ar",Canal 10 Neuquén (480p)
 https://stmv1.srvstm.com/tv10/tv10/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10Nortevision.ar",Canal 10 Nortevision (576p)
@@ -269,6 +272,8 @@ https://stream.arcast.live/cpe/ngrp:cpe_all/playlist.m3u8
 #EXTINF:-1 tvg-id="CronicaTV.ar" user-agent="iPhone",Crónica TV (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g1.mc-hor.transport.edge-access.net/a10/ngrp:cronicatv_video1-100044_all/Playlist.m3u8
+#EXTINF:-1 tvg-id="CronicaTV.ar",Crónica TV (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCT7KFGv6s2a-rh2Jq8ZdM1g.m3u8
 #EXTINF:-1 tvg-id="CrossingCanalIPTV.ar",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
 https://vivo.solumedia.com:19360/crossing/crossing.m3u8
 #EXTINF:-1 tvg-id="CVisionTV.ar",CVisión TV (720p)
@@ -318,6 +323,8 @@ https://stmv.video.gmpro.top/global/global/playlist.m3u8
 https://panel.dattalive.com/8064/8064/playlist.m3u8
 #EXTINF:-1 tvg-id="IPNoticias.ar",IP Noticias (1080p)
 https://d1nmqgphjn0y4.cloudfront.net/live/ip/live.isml/5ee6e167-1167-4a85-9d8d-e08a3f55cff3.m3u8
+#EXTINF:-1 tvg-id="IPNoticias.ar",IP Noticias (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UC1bBjOZieJWHbsFA0LwjjJA
 #EXTINF:-1 tvg-id="LaNacionPlus.ar",La Nación+ (720p) [Not 24/7]
 https://ythls.onrender.com/channel/UCba3hpU7EFBSk817y9qZkiA.m3u8
 #EXTINF:-1 tvg-id="LapachoTVCanal11.ar",Lapacho TV Canal 11 (720p)
@@ -342,8 +349,6 @@ https://panel.dattalive.com/MetropolitanaFM/MetropolitanaFM/playlist.m3u8
 https://streamtv12.ddns.net:5443/LiveApp/streams/193945633734205616732920.m3u8
 #EXTINF:-1 tvg-id="MileniumTV.ar",Milenium TV (720p)
 https://stmv5.livecastv.com/milleniumtv/milleniumtv/playlist.m3u8
-#EXTINF:-1 tvg-id="Mirador.ar",Mirador (720p)
-https://5fb24b460df87.streamlock.net/live-cont.ar/mirador/playlist.m3u8
 #EXTINF:-1 tvg-id="MisionesCuatro.ar",Misiones Cuatro (480p)
 https://streamlov.alsolnet.com/misionescuatro/live/playlist.m3u8
 #EXTINF:-1 tvg-id="MultivisionFederal.ar",Multivisión Federal (720p) [Not 24/7]
@@ -434,7 +439,7 @@ https://cnnsanjuan.com:9999/live/telesol/playlist.m3u8
 https://ythls.onrender.com/channel/UCG7dtDLsyjkyrfoo5oGtcXw.m3u8
 #EXTINF:-1 tvg-id="TelevideoRegional.ar",Televideo Regional (480p)
 https://inliveserver.com:1936/8050_1/8050_1/playlist.m3u8
-#EXTINF:-1 tvg-id="TeloCuentoyQue.ar",Te Lo Cuento (360p)
+#EXTINF:-1 tvg-id="TeloCuentoyQue.ar",Te Lo Cuento y Que...!!! (360p)
 https://stmv1.cnarlatam.com/telocuento/telocuento/playlist.m3u8
 #EXTINF:-1 tvg-id="TelpinTVCanal2HD.ar",Telpin Canal 2 (720p) [Not 24/7]
 https://wowza.telpin.com.ar:1935/telpintv/smil:ttv.stream.smil/playlist.m3u8
@@ -446,6 +451,8 @@ http://live-edge01.telecentro.net.ar/live/smil:trm.smil/playlist.m3u8
 https://inliveserver.com:1936/14044/14044/playlist.m3u8
 #EXTINF:-1 tvg-id="TN.ar",TN Todo Noticias (1080p)
 https://live-01-01-tn.vodgc.net/TN24/index.m3u8
+#EXTINF:-1 tvg-id="TN.ar",TN Todo Noticias (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCj6PcyLvpnIRT_2W_mwa9Aw.m3u8
 #EXTINF:-1 tvg-id="TRU.ar",Televisora Regional Unimar (410p) [Not 24/7]
 https://vivo.solumedia.com:19360/trutv/trutv.m3u8
 #EXTINF:-1 tvg-id="TVManaArgentina.ar",TV Maná Argentina (576p) [Not 24/7]
@@ -570,3 +577,17 @@ https://vivo.solumedia.com:19360/corrientes/corrientes.m3u8
 https://ythls.onrender.com/channel/UCOkh97CpojxaoUris4jkiRQ.m3u8
 #EXTINF:-1 tvg-id="TelefeNoticias.us",Telefe Noticias (720p) [Not 24/7]
 https://siloh-mcdn.plutotv.net/lilo/production/LATAM/Telefe/master.m3u8
+#EXTINF:-1 tvg-id="TelefeNoticias.us",Telefe Noticias (720p) [Not 24/7]
+https://ythls.onrender.com/channel/UChxGASjdNEYHhVKpl667Huw.m3u8
+#EXTINF:-1 tvg-id="CanalSiete.ar",Canal Siete (720p) [Not 24/7]
+https://vivo.solumedia.com:19360/canalsiete/canalsiete.m3u8
+#EXTINF:-1 tvg-id="SenateTV.ar",Senado TV (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCStm2uvQKowSXrnCzTWAn6Q.m3u8
+#EXTINF:-1 tvg-id="Canal5Tucuman.ar",Canal 5 Tucumán (480p)
+https://videohd.live:19360/8090/8090.m3u8
+#EXTINF:-1 tvg-id="OneRadioTV.ar",OneRadio TV (1080p) [Not 24/7]
+https://stmvideo2.livecastv.com/oneradio/oneradio/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioMitre.ar",Radio Mitre (720p) [Not 24/7]
+https://live-05-13-mitre.vodgc.net/live-05-13-mitre.vodgc.net/index.m3u8
+#EXTINF:-1 tvg-id="SanPedroTV.ar",San Pedro TV (1080p) [Not 24/7]
+https://iptv.ixfo.com.ar:30443/live/sanpedrotv/playlist.m3u8
