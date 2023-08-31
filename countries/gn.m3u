@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="ABNAfrica.us" tvg-logo="https://i.imgur.com/1S4Y4xC.png" group-title="Religious",ABN Africa (480p)
 https://rtmp2.abnvideos.com/hls/abnafrica.m3u8
+#EXTINF:-1 tvg-id="AfrikInfoTV.gn" tvg-logo="https://www.lyngsat-logo.com/logo/tv/aa/afrik-info-tv-gn.png" group-title="News",AfrikInfo TV (480p) [Not 24/7]
+https://cageu.bozztv.com/ssh101/ssh101/my23a2r/playlist.m3u8
 #EXTINF:-1 tvg-id="AngelTVAfrica.in" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Religious",Angel TV Africa (720p)
 https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelafrica_all/playlist.m3u8
 #EXTINF:-1 tvg-id="BblackAfrica.fr" tvg-logo="https://i.imgur.com/s1kLdBG.png" group-title="Undefined",BBLACK! AFRICA
@@ -13,16 +15,22 @@ https://tgn.bozztv.com/ssh101/ssh101/canal2live/playlist.m3u8
 https://5be2f59e715dd.streamlock.net/CNBC/smil:CNBCSandton.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="EspaceTV.gn" tvg-logo="https://i.imgur.com/R5tbzFI.png" group-title="Undefined",Espace TV (720p) [Not 24/7]
 https://ythls.onrender.com/channel/UCMsFKwxfosayYR73hhFyf2Q.m3u8
-#EXTINF:-1 tvg-id="EvasionTV.gn" tvg-logo="https://i.imgur.com/TTWl2Iy.png" group-title="General",Evasion TV
+#EXTINF:-1 tvg-id="EvasionTV.gn" tvg-logo="https://i.imgur.com/TTWl2Iy.png" group-title="General",Evasion TV [Geo-blocked]
 https://ssh101.bozztv.com/ssh101/evasiontv/playlist.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Guinée TV1 (576p)
+https://live.kgsols.com/push/5738602793391390dff3dac4991d158c.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="HausaTV.ir" tvg-logo="https://i.ibb.co/fxXrKjN/IMG-20230629-141854.jpg" group-title="Culture;Documentary",Hausa TV (432p)
 https://live1.presstv.ir/live/hausatvha/index.m3u8
 #EXTINF:-1 tvg-id="KalacTV.gn" tvg-logo="https://i.imgur.com/FgKJiHZ.png" group-title="Undefined",Kalac TV (1080p)
 https://streaming1.medi1tv.com/live/smil:medi1fr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RefletTV.ci" tvg-logo="https://i.imgur.com/EauXR22.png" group-title="Undefined",REFLET TV (1080p)
 https://edge-a3.evrideo.tv/8f37c9f0-fe22-44f4-b64a-76ad11730daf_1000026630_HLS/manifest.m3u8
-#EXTINF:-1 tvg-id="RTG1.gn" tvg-logo="https://i.imgur.com/fQ9rtAh.png" group-title="General",RTG (240p) [Not 24/7]
-https://dcunilive38-lh.akamaihd.net/i/dclive_1@690091/master.m3u8
+#EXTINF:-1 tvg-id="RTG1.gn" tvg-logo="https://i.imgur.com/fQ9rtAh.png" group-title="General",RTG 1 (240p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://player.castr.com/live_e05d20809c3611edadb72177341481c3
+https://stream.castr.com/6358a30fa50e3ae11b6d0424/live_e05d20809c3611edadb72177341481c3/index.m3u8
+#EXTINF:-1 tvg-id="RTG2.gn" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 2 (240p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://player.castr.com/live_cbde16509c3611ed91f289dac03ffaaf
+https://stream.castr.com/6358a30fa50e3ae11b6d0424/live_cbde16509c3611ed91f289dac03ffaaf/index.m3u8
 #EXTINF:-1 tvg-id="RTPAfrica.pt" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/RTP_%C3%81frica_2016_%28Reduced_Version%29.svg/512px-RTP_%C3%81frica_2016_%28Reduced_Version%29.svg.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP África (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtpafrica.smil/playlist.m3u8
@@ -32,3 +40,5 @@ https://tbn-jw.cdn.vustreams.com/live/tbn-africa/live.isml/cc850928-d0d8-4336-84
 https://ingest2-video.streaming-pro.com/tele7_ABR/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVIAfrica.pt" tvg-logo="https://i.ibb.co/vBbSHB4/Tvi-africa.png" group-title="General",TVI África (480p) [Not 24/7]
 https://video-auth4.iol.pt/live_tvi_africa/live_tvi_africa/edge_servers/tviafrica-480p/playlist.m3u8
+#EXTINF:-1 tvg-id="WestAfricaTV.gn" tvg-logo="https://i.imgur.com/f77MWJ8.png" group-title="Undefined",West Africa TV (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCxXEr1iy6EJssFRI9uYmiuw.m3u8
