@@ -1,7 +1,7 @@
-name: 🛠 Broken Stream
-description: Report a broken stream
+name: 🚧 Report broken stream
+description: Report a broken or unstable stream
 title: 'Broken: '
-labels: ['🛠 broken stream']
+labels: ['broken stream']
 
 body:
   - type: markdown
@@ -45,7 +45,8 @@ body:
 
   - type: checkboxes
     attributes:
-      label: Please confirm the following
+      label: Contributing Guide
+      description: 'Please read this guide before posting your request'
       options:
-        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#report-a-broken-stream)
+        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
           required: true

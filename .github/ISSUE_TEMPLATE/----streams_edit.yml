@@ -1,0 +1,48 @@
+name: ✏️ Edit stream description
+description: Request to edit stream description
+title: 'Edit: '
+labels: ['streams:edit']
+
+body:
+  - type: input
+    attributes:
+      label: Stream URL (required)
+      description: Link to the stream from a playlist
+      placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        What exactly needs to be changed?
+
+  - type: input
+    attributes:
+      label: Channel ID 
+      description: Channel ID from [iptv-org.github.io](https://iptv-org.github.io/).
+      placeholder: 'BBCAmericaEast.us'
+
+  - type: dropdown
+    attributes:
+      label: Label
+      description: Is there any reason why the broadcast may not work?
+      options:
+        - 'None'
+        - 'Not 24/7'
+        - 'Geo-blocked'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Notes (optional)
+      placeholder: 'Anything else we should know?'
+
+  - type: checkboxes
+    attributes:
+      label: Contributing Guide
+      description: 'Please read this guide before posting your request'
+      options:
+        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
+          required: true
