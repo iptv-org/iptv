@@ -14,7 +14,7 @@ Before posting your request, make sure that:
 - Channel ID is valid. A complete list of all supported channels and their IDs can be found on [iptv-org.github.io](https://iptv-org.github.io/).
 - The link you want to add works stably. To check this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
 - The link is not already in the playlist. This can be done by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- The link does not lead to Xtream Codes server. [Why don't you accept links to Xtream Codes server?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server?)
+- The link does not lead to Xtream Codes server. [Why don't you accept links to Xtream Codes server?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server)
 - If you know that the broadcast only works in certain countries or it is periodically interrupted, do not forget to indicate this in the request.
 
 An issue without a valid channel ID or working link to the stream will be closed immediately.
@@ -53,7 +53,7 @@ Please keep in mind that we only accept removal requests from channel copyright 
 If you want to add a new stream link to playlists, please do the following:
 
 - Make sure that the link you want to add works stably. To do this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
-- Make sure the link does not lead to Xtream Codes server. [How to distinguish a link to an Xtream Codes server from a regular one?](FAQ.md#how-to-distinguish-a-link-to-an-xtream-codes-server-from-a-regular-one?)
+- Make sure the link does not lead to Xtream Codes server. [How to distinguish a link to an Xtream Codes server from a regular one?](FAQ.md#how-to-distinguish-a-link-to-an-xtream-codes-server-from-a-regular-one)
 - Find in our [database](https://iptv-org.github.io/) the ID of the channel you want to add. If this particular channel is not in the database, then first leave a request to add it [here](https://github.com/iptv-org/database/issues/new/choose) and once the request is approved, you can proceed further.
 - Then open the [/streams](/streams) folder and select the file corresponding to the country of this channel (for example, for `TF1.fr` it will be `fr.m3u`) and then insert the description of the stream and a link to it at the very end of the file. For more info, see [Stream Description Scheme](#stream-description-scheme).
 - If you know that the broadcast only works in certain countries, do not forget to add the `[Geo-blocked]` label to the stream description.
