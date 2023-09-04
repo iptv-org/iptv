@@ -36,6 +36,10 @@ Before posting your report, make sure that:
 
 An issue should contain a report for only one channel, otherwise it will be closed immediately.
 
+### Bug report
+
+Please use this form only if you have found a bug in one of the scripts or the repository as a whole. To report broken link or an error in the stream description, use one of the methods described above.
+
 ### Removal request
 
 To request the removal of a link to a channel from repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=--removal-request.yml&title=Remove%3A+) and if your request is approved the link will be removed within 1 business day. The channel will also be added to our [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) to avoid its appearance in our playlists in the future.
