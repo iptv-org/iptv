@@ -1,0 +1,45 @@
+name: ➕ Add stream link
+description: Request to add a new stream link into the playlist
+title: 'Add: '
+labels: ['streams:add']
+
+body:
+  - type: input
+    attributes:
+      label: Channel ID
+      description: Unique channel ID from [iptv-org.github.io](https://iptv-org.github.io/). If you can't find the channel you want in the list, please let us know through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=channels_add.yml&title=Add%3A+) before posting your request.
+      placeholder: 'BBCAmericaEast.us'
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Stream URL
+      description: Link to the stream
+      placeholder: 'https://example.com/playlist.m3u8'
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Label
+      description: Is there any reason why the broadcast may not work?
+      options:
+        - 'None'
+        - 'Not 24/7'
+        - 'Geo-blocked'
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Notes (optional)
+      description: 'Anything else we should know about this broadcast?'
+
+  - type: checkboxes
+    attributes:
+      label: Contributing Guide
+      description: 'Please read this guide before posting your request'
+      options:
+        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
+          required: true
