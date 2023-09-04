@@ -1,7 +1,5 @@
 # Contributing Guide
 
-Before submitting your contribution, please make sure to take a moment and read through the following guidelines:
-
 - [Issue Reporting Guidelines](#issue-reporting-guidelines)
 - [Pull Request Guidelines](#pull-request-guidelines)
 - [Stream Description Scheme](#stream-description-scheme)
@@ -9,46 +7,83 @@ Before submitting your contribution, please make sure to take a moment and read 
 
 ## Issue Reporting Guidelines
 
-### Request a Channel
+### Add stream link
 
-To request a channel, create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=channel+request&template=------channel-request.yml&title=Add%3A+) and complete all details requested. Understand that our community of volunteers will try to help you, but if a public link cannot be found, there is little we can do. (**IMPORTANT:** an issue without a valid channel ID or containing a request for more than one channel will be closed immediately)
+Before posting your request, make sure that:
 
-### Report a Broken Stream
+- Channel ID is valid. A complete list of all supported channels and their IDs can be found on [iptv-org.github.io](https://iptv-org.github.io/).
+- The link you want to add works stably. To check this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
+- The link is not already in the playlist. This can be done by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
+- The link does not lead to Xtream Codes server. [Why don't you accept links to Xtream Codes server?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server?)
+- If you know that the broadcast only works in certain countries or it is periodically interrupted, do not forget to indicate this in the request.
 
-To report a broadcast that is not working, create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=🛠+broken+stream&template=-----broken-stream.yml&title=Broken%3A+) with a description of the channel. (**IMPORTANT:** an issue should contain a report for only one channel, otherwise it will be closed immediately)
+An issue without a valid channel ID or working link to the stream will be closed immediately.
 
-### Content Removal Request
+### Edit stream description
 
-If you find any content in the repository that you own and you would like us to remove, please create an [issue](https://github.com/iptv-org/iptv/issues/new?labels=❌+removal+request&template=--removal-request.yml&title=Remove%3A+) and provide all necessary information. If the request is granted, the specified content will be removed from the repository within one business day.
+Before posting your request, make sure that:
+
+- The link is still in our playlists. This can be verified by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
+
+An issue without a valid link will be closed immediately.
+
+### Report broken link
+
+Before posting your report, make sure that:
+
+- The link is still in our playlists. This can be verified by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
+- The link is not blocked in your country. To check this, you can use either a [VPN](https://en.wikipedia.org/wiki/Virtual_private_network) or services such as [streamtest.in](https://streamtest.in/).
+
+An issue should contain a report for only one channel, otherwise it will be closed immediately.
+
+### Bug report
+
+Please use this form only if you have found a bug in one of the scripts or the repository as a whole. To report broken link or an error in the stream description, use one of the methods described above.
+
+### Removal request
+
+To request the removal of a link to a channel from repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=--removal-request.yml&title=Remove%3A+) and if your request is approved the link will be removed within 1 business day. The channel will also be added to our [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) to avoid its appearance in our playlists in the future.
+
+Please keep in mind that we only accept removal requests from channel copyright holders and their official representatives, any other requests will be closed immediately.
 
 ## Pull Request Guidelines
 
-### Add or Replace a Stream
+### Add stream link
 
-If you would like to replace a broken stream or add a new one, please do the following:
+If you want to add a new stream link to playlists, please do the following:
 
-- make sure that the link you want to add works by using a program like [VLC media player](https://www.videolan.org/vlc/index.html)
-- check if the channel is working outside your country by using a VPN or use a service like [streamtest.in](https://streamtest.in/)
-- find out from which country the channel is being broadcasted. This information can usually be found on [lyngsat.com](https://www.lyngsat.com/search.html) or [wikipedia.org](https://www.wikipedia.org/)
-- find the corresponding [ISO_3166-2 code](https://en.wikipedia.org/wiki/ISO_3166-2) for the country
-- open the `/streams` folder and find the file that has the same code in its name and open it
-- if broken, find the broken link in this file and replace it with working one
-- if new, at the very end of this file add a link to the channel with a description
-- if the broadcast is not available outside of a certain country, add the label `[Geo-blocked]` to the end of the channel name
-- if the broadcast is not available 24 hours a day, add the label `[Not 24/7]`
-- commit all changes and send a pull request
+- Make sure that the link you want to add works stably. To do this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
+- Make sure the link does not lead to Xtream Codes server. [How to distinguish a link to an Xtream Codes server from a regular one?](FAQ.md#how-to-distinguish-a-link-to-an-xtream-codes-server-from-a-regular-one?)
+- Find in our [database](https://iptv-org.github.io/) the ID of the channel you want to add. If this particular channel is not in the database, then first leave a request to add it [here](https://github.com/iptv-org/database/issues/new/choose) and once the request is approved, you can proceed further.
+- Then open the [/streams](/streams) folder and select the file corresponding to the country of this channel (for example, for `TF1.fr` it will be `fr.m3u`) and then insert the description of the stream and a link to it at the very end of the file. For more info, see [Stream Description Scheme](#stream-description-scheme).
+- If you know that the broadcast only works in certain countries, do not forget to add the `[Geo-blocked]` label to the stream description.
+- For broadcasts that may be periodically interrupted, there is the label `[Not 24/7]`.
+- Finally, commit all changes and submit a pull request.
+
+If the request is approved by other community members, then the link will appear in the playlist on the next update.
+
+### Remove broken link
+
+If you find a link in the playlist that does not work, follow the steps below:
+
+- Verify that the link is indeed not working and has not just been [geo-blocked](https://en.wikipedia.org/wiki/Geo-blocking). To do this, you can either use a [VPN](https://en.wikipedia.org/wiki/Virtual_private_network) or services such as [streamtest.in](https://streamtest.in/).
+- If the link works, but only when using a VPN, then tag it with [Geo-blocked]. For more info, see [Stream Description Scheme](#stream-description-scheme)
+- If it turns out that the link works but not 24/7, then add the [Not 24/7] label to it.
+- If the link is still not working, then continue.
+- Use a [search](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) to find which file this link is stored in, open it and delete the link along with the description.
+- Commit the changes and make a pull request.
 
 ### Update README.md
 
-- open `.readme/template.md`
-- make the necessary changes
-- commit all changes and send a pull request
+- Open `.readme/template.md`.
+- Make the necessary changes.
+- Commit all changes and send a pull request.
 
 ### Update this Guide
 
-- open `.github/CONTRIBUTING.md`
-- make the necessary changes
-- commit all changes and send a pull request
+- Open `.github/CONTRIBUTING.md`.
+- Make the necessary changes.
+- Commit all changes and send a pull request.
 
 ## Stream Description Scheme
 
@@ -59,13 +94,13 @@ For a stream to be approved, its description must follow this template:
 STREAM_URL
 ```
 
-| Attribute      | Description                                                                                                                                                                                                                              | Required | Valid values                                                                                        |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------------------------- |
-| `CHANNEL_ID`   | Channel ID.                                                                                                                                                                                                                              | Optional | Full list of supported channels could be found on [iptv-org.github.io](https://iptv-org.github.io/) |
-| `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `(`, `)`, `[`, `]`. It is recommended to use the name listed on [lyngsat](https://www.lyngsat.com/search.html) or [wikipedia](https://www.wikipedia.org/) if possible. | Required | -                                                                                                   |
-| `RESOLUTION`   | Maximum stream resolution.                                                                                                                                                                                                               | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc                                                        |
-| `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users.                                                                                                                                               | Optional | `Geo-blocked` or `Not 24/7`                                                                         |
-| `STREAM_URL`   | Stream URL.                                                                                                                                                                                                                              | Required | -                                                                                                   |
+| Attribute      | Description                                                                                | Required | Valid values                                                                                                               |
+| -------------- | ------------------------------------------------------------------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------- |
+| `CHANNEL_ID`   | Channel ID.                                                                                | Optional | Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). |
+| `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `(`, `)`, `[`, `]`.      | Required | -                                                                                                                          |
+| `RESOLUTION`   | Maximum stream resolution                                                                  | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc                                                                               |
+| `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users. | Optional | `Geo-blocked` or `Not 24/7`                                                                                                |
+| `STREAM_URL`   | Stream URL.                                                                                | Required | -                                                                                                                          |
 
 Example:
 
