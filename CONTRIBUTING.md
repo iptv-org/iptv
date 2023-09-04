@@ -42,7 +42,7 @@ Please use this form only if you have found a bug in one of the scripts or the r
 
 ### Removal request
 
-To request the removal of a link to a channel from repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=--removal-request.yml&title=Remove%3A+) and if your request is approved the link will be removed within 1 business day. The channel will also be added to our [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) to avoid its appearance in our playlists in the future.
+To request the removal of a link to a channel from repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=-removal-request.yml&title=Remove%3A+) and if your request is approved the link will be removed within 1 business day. The channel will also be added to our [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) to avoid its appearance in our playlists in the future.
 
 Please keep in mind that we only accept removal requests from channel copyright holders and their official representatives, any other requests will be closed immediately.
 
