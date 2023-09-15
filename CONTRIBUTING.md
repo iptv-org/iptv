@@ -1,89 +1,67 @@
 # Contributing Guide
 
-- [Issue Reporting Guidelines](#issue-reporting-guidelines)
-- [Pull Request Guidelines](#pull-request-guidelines)
+- [How to?](#how-to)
 - [Stream Description Scheme](#stream-description-scheme)
 - [Project Structure](#project-structure)
+- [Scripts](#scripts)
 
-## Issue Reporting Guidelines
+## How to?
 
-### Add stream link
+### How to add a new stream link to a playlists?
 
-Before posting your request, make sure that:
+You have several options:
 
-- Channel ID is valid. A complete list of all supported channels and their IDs can be found on [iptv-org.github.io](https://iptv-org.github.io/).
-- The link you want to add works stably. To check this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
-- The link is not already in the playlist. This can be done by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- The link does not lead to Xtream Codes server. [Why don't you accept links to Xtream Codes server?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server)
+1. Create a new [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=-----streams_add.yml&title=Add%3A+) and provide all the required information. If the request is approved, the link will be added to the playlist in the next update.
+
+2. Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls).
+
+Regardless of which option you choose, before posting your request please do the following:
+
+- Make sure the link you want to add works stably. To check this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
+- Make sure the link is not already in the playlist. This can be done by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
+- Find the ID of the channel you want to add in our [database](https://iptv-org.github.io/). If this particular channel is not in the database, then leave a request to add it [here](https://github.com/iptv-org/database/issues/new/choose) and wait until it is approved before continuing.
+- Make sure the channel is not blacklisted. This can be done by checking the [blocklist.csv](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) file.
+- The link does not lead to the Xtream Codes server. [Why don't you accept links to Xtream Codes server?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server)
 - If you know that the broadcast only works in certain countries or it is periodically interrupted, do not forget to indicate this in the request.
 
-An issue without a valid channel ID or working link to the stream will be closed immediately.
+A requests without a valid channel ID or working link to the stream will be closed immediately.
 
-### Edit stream description
+Note all links in playlists are sorted automatically by scripts so there is no need to sort them manually. For more info, see [Scripts](#scripts).
 
-Before posting your request, make sure that:
+### How to add a link to YouTube live?
 
-- The link is still in our playlists. This can be verified by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
+You can use one of the services like [abskmj/youtube-hls-m3u8](https://github.com/abskmj/youtube-hls-m3u8) that allow you to create permanent link to the broadcast that can be opened in most players.
+
+### How to distinguish a link to an Xtream Codes server from a regular one?
+
+Most of them have this form:
+
+`http(s)://{hostname}:{port}/{username}/{password}/{channelID}` (port is often `25461`)
+
+To make sure that the link leads to the Xtream Codes server, copy the `hostname`, `port`, `username` and `password` into the link below and try to open it in a browser:
+
+`http(s)://{hostname}:{port}/panel_api.php?username={username}&password={password}`
+
+If the link answers, you're with an Xtream Codes server.
+
+### How to report a broken stream?
+
+Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&projects=&template=---broken-stream.yml&title=Broken%3A+) and as soon as a working replacement appears, we will add it to the playlist or at least remove the non-working one.
+
+The only thing before publishing your report is to make sure that:
+
+- The link is still in our playlists. You can verify this by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
+- The link really doesn't work and is not just [geo-blocked](https://en.wikipedia.org/wiki/Geo-blocking). To check this, you can either use a [VPN](https://en.wikipedia.org/wiki/Virtual_private_network) or services such as [streamtest.in](https://streamtest.in/).
 
 An issue without a valid link will be closed immediately.
 
-### Report broken link
+### How do I remove my channel from playlist?
 
-Before posting your report, make sure that:
+To request removal of a link to a channel from the repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=-removal-request.yml&title=Remove%3A+) and wait for the request to be reviewed (this usually takes no more than 1 business day). And if the request is approved, links to the channel will be immediately removed from the repository.
 
-- The link is still in our playlists. This can be verified by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- The link is not blocked in your country. To check this, you can use either a [VPN](https://en.wikipedia.org/wiki/Virtual_private_network) or services such as [streamtest.in](https://streamtest.in/).
+The channel will also be added to our [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) to avoid its appearance in our playlists in the future.
 
-An issue should contain a report for only one channel, otherwise it will be closed immediately.
-
-### Bug report
-
-Please use this form only if you have found a bug in one of the scripts or the repository as a whole. To report broken link or an error in the stream description, use one of the methods described above.
-
-### Removal request
-
-To request the removal of a link to a channel from repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=-removal-request.yml&title=Remove%3A+) and if your request is approved the link will be removed within 1 business day. The channel will also be added to our [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) to avoid its appearance in our playlists in the future.
-
-Please keep in mind that we only accept removal requests from channel copyright holders and their official representatives, any other requests will be closed immediately.
-
-## Pull Request Guidelines
-
-### Add stream link
-
-If you want to add a new stream link to playlists, please do the following:
-
-- Make sure that the link you want to add works stably. To do this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
-- Make sure the link does not lead to Xtream Codes server. [How to distinguish a link to an Xtream Codes server from a regular one?](FAQ.md#how-to-distinguish-a-link-to-an-xtream-codes-server-from-a-regular-one)
-- Find in our [database](https://iptv-org.github.io/) the ID of the channel you want to add. If this particular channel is not in the database, then first leave a request to add it [here](https://github.com/iptv-org/database/issues/new/choose) and once the request is approved, you can proceed further.
-- Then open the [/streams](/streams) folder and select the file corresponding to the country of this channel (for example, for `TF1.fr` it will be `fr.m3u`) and then insert the description of the stream and a link to it at the very end of the file. For more info, see [Stream Description Scheme](#stream-description-scheme).
-- If you know that the broadcast only works in certain countries, do not forget to add the `[Geo-blocked]` label to the stream description.
-- For broadcasts that may be periodically interrupted, there is the label `[Not 24/7]`.
-- Finally, commit all changes and submit a pull request.
-
-If the request is approved by other community members, then the link will appear in the playlist on the next update.
-
-### Remove broken link
-
-If you find a link in the playlist that does not work, follow the steps below:
-
-- Verify that the link is indeed not working and has not just been [geo-blocked](https://en.wikipedia.org/wiki/Geo-blocking). To do this, you can either use a [VPN](https://en.wikipedia.org/wiki/Virtual_private_network) or services such as [streamtest.in](https://streamtest.in/).
-- If the link works, but only when using a VPN, then tag it with [Geo-blocked]. For more info, see [Stream Description Scheme](#stream-description-scheme)
-- If it turns out that the link works but not 24/7, then add the [Not 24/7] label to it.
-- If the link is still not working, then continue.
-- Use a [search](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) to find which file this link is stored in, open it and delete the link along with the description.
-- Commit the changes and make a pull request.
-
-### Update README.md
-
-- Open `.readme/template.md`.
-- Make the necessary changes.
-- Commit all changes and send a pull request.
-
-### Update this Guide
-
-- Open `.github/CONTRIBUTING.md`.
-- Make the necessary changes.
-- Commit all changes and send a pull request.
+Please note that we only accept removal requests from channel owners and their official representatives, all other requests will be closed immediately.
 
 ## Stream Description Scheme
 
@@ -97,7 +75,7 @@ STREAM_URL
 | Attribute      | Description                                                                                | Required | Valid values                                                                                                               |
 | -------------- | ------------------------------------------------------------------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------- |
 | `CHANNEL_ID`   | Channel ID.                                                                                | Optional | Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). |
-| `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `(`, `)`, `[`, `]`.      | Required | -                                                                                                                          |
+| `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                | Required | -                                                                                                                          |
 | `RESOLUTION`   | Maximum stream resolution                                                                  | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc                                                                               |
 | `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users. | Optional | `Geo-blocked` or `Not 24/7`                                                                                                |
 | `STREAM_URL`   | Stream URL.                                                                                | Required | -                                                                                                                          |
@@ -109,7 +87,7 @@ Example:
 https://example.com/playlist.m3u8
 ```
 
-Also, if necessary, you can specify custom HTTP User-Agent and Referrer via the `#EXTVLCOPT` tag:
+Also, if necessary, you can specify custom [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) and [Referrer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) via the `#EXTVLCOPT` tag:
 
 ```xml
 #EXTINF:-1 tvg-id="ExampleTV.us",Example TV
@@ -134,3 +112,29 @@ http://example.com/stream.m3u8
 - `tests/`: contains tests to check the scripts.
 - `CONTRIBUTING.md`: file you are currently reading.
 - `README.md`: project description generated from the contents of the `.readme/` folder.
+
+## Scripts
+
+For scripts to work, you must have [Node.js](https://nodejs.org/en) installed on your computer.
+
+To run scripts use the `npm run <script-name>` command.
+
+- `act:check`: allows to run the [check](https://github.com/iptv-org/iptv/blob/master/.github/workflows/check.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
+- `act:update`: allows to test the [update](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
+- `api:load`: downloads the latest channel and stream data from the [iptv-org/api](https://github.com/iptv-org/api).
+- `api:generate`: generates a JSON file with all streams for the [iptv-org/api](https://github.com/iptv-org/api) repository.
+- `api:deploy`: allows to manually upload a JSON file created via `api:generate` to the [iptv-org/api](https://github.com/iptv-org/api) repository. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
+- `db:create`: сreates a temporary file `temp/database/streams.db` containing all links from the [/streams]() folder.
+- `playlist:update`: triggers an update of internal playlists. The process involves processing requests from issues, URL normalization, and sorting links by channel name, quality, and label.
+- `playlist:validate`: сhecks ids and links in internal playlists for errors.
+- `playlist:lint`: сhecks internal playlists for syntax errors.
+- `playlist:generate`: generates all public playlists.
+- `playlist:deploy`: allows to manually publish all generated via `playlist:generate` playlists. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
+- `readme:update`: updates the list of playlists in [README.md](README.md).
+- `report:create`: shows a list of all current requests and their status.
+- `format`: (shorthand) sequentially runs the `db:create` and `db:create` commands.
+- `check`: (shorthand) sequentially runs the `api:load`, `playlist:lint` and `playlist:validate` commands.
+- `update`: (shorthand) sequentially runs the `api:load`, `db:create`, `playlist:generate`, `api:generate` and `readme:update` commands.
+- `deploy`: (shorthand) sequentially runs the `playlist:deploy` and `api:deploy` commands.
+- `report`: (shorthand) sequentially runs the `api:load` and `report:create` commands.
+- `test`: runs a test of all the scripts described above.
