@@ -1,5 +1,5 @@
-const { execSync } = require('child_process')
-const fs = require('fs-extra')
+import { execSync } from 'child_process'
+import fs from 'fs-extra'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -10,7 +10,7 @@ beforeEach(() => {
   )
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.api npm run api:generate',
+    'DB_DIR=tests/__data__/output/database API_DIR=tests/__data__/output/.api npm run api:generate',
     { encoding: 'utf8' }
   )
 })
@@ -19,7 +19,7 @@ it('can create streams.json', () => {
   expect(content(`output/.api/streams.json`)).toMatchObject(content(`expected/.api/streams.json`))
 })
 
-function content(filepath) {
+function content(filepath: string) {
   return JSON.parse(
     fs.readFileSync(`tests/__data__/${filepath}`, {
       encoding: 'utf8'
