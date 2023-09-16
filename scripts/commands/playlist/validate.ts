@@ -5,6 +5,7 @@ import chalk from 'chalk'
 import { transliterate } from 'transliteration'
 import _ from 'lodash'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
+import path from 'path'
 
 program.argument('[filepath]', 'Path to file to validate').parse(process.argv)
 
@@ -40,7 +41,7 @@ async function main() {
     const log = new Collection()
     const buffer = new Dictionary()
     try {
-      const relativeFilepath = filepath.replace(STREAMS_DIR, '')
+      const relativeFilepath = filepath.replace(path.normalize(STREAMS_DIR), '')
       const playlist = await parser.parse(relativeFilepath)
       playlist.streams.forEach((stream: Stream) => {
         const channelNotInDatabase =
