@@ -5,7 +5,7 @@ export class File {
   content: string
 
   constructor(filepath: string, content?: string) {
-    this.filepath = filepath
+    this.filepath = path.normalize(filepath)
     this.content = content || ''
   }
 
