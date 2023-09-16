@@ -7,7 +7,7 @@ export class Storage {
   rootDir: string
 
   constructor(rootDir?: string) {
-    this.rootDir = rootDir || './'
+    this.rootDir = path.normalize(rootDir || './')
   }
 
   list(pattern: string): Promise<string[]> {
