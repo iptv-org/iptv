@@ -1,9 +1,12 @@
 import { execSync } from 'child_process'
 
 it('can create report', () => {
-  const stdout = execSync('DATA_DIR=tests/__data__/input/data npm run report:create', {
-    encoding: 'utf8'
-  })
+  const stdout = execSync(
+    'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/streams_report npm run report:create',
+    {
+      encoding: 'utf8'
+    }
+  )
 
   expect(
     stdout.includes(`
