@@ -6,11 +6,9 @@ on:
 jobs:
   main:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v3
-      - uses: getsentry/action-github-app-token@v2
+      - uses: tibdex/github-app-token@v2
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
