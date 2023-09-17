@@ -8,11 +8,13 @@ const FIELDS = new Dictionary({
   'Stream URL': 'stream_url',
   'Stream URL (optional)': 'stream_url',
   'Stream URL (required)': 'stream_url',
+  'Broken Link': 'stream_url',
   Label: 'label',
   Quality: 'quality',
   'Channel Name': 'channel_name',
   'HTTP User-Agent': 'user_agent',
   'HTTP Referrer': 'http_referrer',
+  'What happened to the stream?': 'reason',
   Reason: 'reason',
   Notes: 'notes',
   'Notes (optional)': 'notes'
