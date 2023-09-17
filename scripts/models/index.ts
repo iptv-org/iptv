@@ -1,3 +1,4 @@
+export * from './issue'
 export * from './playlist'
 export * from './blocked'
 export * from './stream'
