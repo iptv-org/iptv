@@ -1,6 +1,6 @@
-import { DB_DIR, DATA_DIR, STREAMS_DIR } from '../../constants'
-import { Database, Storage, Logger, Collection, Dictionary, IssueLoader } from '../../core'
-import { Stream, Playlist, Channel } from '../../models'
+import { DATA_DIR, STREAMS_DIR } from '../../constants'
+import { Storage, Logger, Collection, Dictionary, IssueLoader, PlaylistParser } from '../../core'
+import { Stream, Playlist, Channel, Issue } from '../../models'
 
 let processedIssues = new Collection()
 let streams: Collection
@@ -10,18 +10,18 @@ async function main() {
   const logger = new Logger({ disabled: true })
   const loader = new IssueLoader()
 
-  logger.info('loading streams...')
-  const db = new Database(DB_DIR)
-  const docs = await db.load('streams.db')
-  const dbStreams = await docs.find({})
-
-  streams = new Collection(dbStreams as any[]).map(data => new Stream(data))
-
-  const storage = new Storage(DATA_DIR)
-  const channelsContent = await storage.json('channels.json')
+  logger.info('loading channels from api...')
+  const dataStorage = new Storage(DATA_DIR)
+  const channelsContent = await dataStorage.json('channels.json')
   groupedChannels = new Collection(channelsContent)
     .map(data => new Channel(data))
     .keyBy((channel: Channel) => channel.id)
+
+  logger.info('loading streams...')
+  const streamsStorage = new Storage(STREAMS_DIR)
+  const parser = new PlaylistParser({ storage: streamsStorage })
+  const files = await streamsStorage.list('**/*.m3u')
+  streams = await parser.parse(files)
 
   logger.info('removing broken streams...')
   await removeStreams(loader)
@@ -32,25 +32,7 @@ async function main() {
   logger.info('add new streams...')
   await addStreams(loader)
 
-  logger.info('normalizing links...')
-  streams = streams.map(stream => {
-    stream.normalizeURL()
-    return stream
-  })
-
-  logger.info('sorting links...')
-  streams = streams.orderBy(
-    [
-      (stream: Stream) => stream.name,
-      (stream: Stream) => parseInt(stream.quality.replace('p', '')),
-      (stream: Stream) => stream.label,
-      (stream: Stream) => stream.url
-    ],
-    ['asc', 'desc', 'asc', 'asc']
-  )
-
   logger.info('saving...')
-  const streamsStorage = new Storage(STREAMS_DIR)
   const groupedStreams = streams.groupBy((stream: Stream) => stream.filepath)
   for (let filepath of groupedStreams.keys()) {
     const streams = groupedStreams.get(filepath) || []
@@ -69,19 +51,22 @@ main()
 
 async function removeStreams(loader: IssueLoader) {
   const issues = await loader.load({ labels: ['streams:remove', 'approved'] })
-  issues.forEach((data: Dictionary) => {
+  issues.forEach((issue: Issue) => {
+    const data = issue.data
     if (data.missing('stream_url')) return
 
     const removed = streams.remove((_stream: Stream) => _stream.url === data.get('stream_url'))
     if (removed.notEmpty()) {
-      processedIssues.add(data.get('issue_number'))
+      processedIssues.add(issue.number)
     }
   })
 }
 
 async function editStreams(loader: IssueLoader) {
   const issues = await loader.load({ labels: ['streams:edit', 'approved'] })
-  issues.forEach((data: Dictionary) => {
+  issues.forEach((issue: Issue) => {
+    const data = issue.data
+
     if (data.missing('stream_url')) return
 
     let stream = streams.first(
@@ -111,13 +96,14 @@ async function editStreams(loader: IssueLoader) {
     streams.remove((_stream: Stream) => _stream.channel === stream.channel)
     streams.add(stream)
 
-    processedIssues.add(data.get('issue_number'))
+    processedIssues.add(issue.number)
   })
 }
 
 async function addStreams(loader: IssueLoader) {
   const issues = await loader.load({ labels: ['streams:add', 'approved'] })
-  issues.forEach((data: Dictionary) => {
+  issues.forEach((issue: Issue) => {
+    const data = issue.data
     if (data.missing('channel_id') || data.missing('stream_url')) return
     if (streams.includes((_stream: Stream) => _stream.url === data.get('stream_url'))) return
 
@@ -138,6 +124,6 @@ async function addStreams(loader: IssueLoader) {
     })
 
     streams.add(stream)
-    processedIssues.add(data.get('issue_number'))
+    processedIssues.add(issue.number)
   })
 }
