@@ -15,8 +15,6 @@ it('can format playlists', () => {
     }
   )
 
-  expect(stdout).toBe(`OUTPUT=closes #14151, closes #14110, closes #14179, closes #14178\n`)
-
   const files = glob
     .sync('tests/__data__/expected/streams_update/*.m3u')
     .map(f => f.replace('tests/__data__/expected/streams_update/', ''))
@@ -26,6 +24,10 @@ it('can format playlists', () => {
       content(`expected/streams_update/${filepath}`)
     )
   })
+
+  expect(stdout).toBe(
+    `OUTPUT=closes #14151, closes #14140, closes #14139, closes #14110, closes #14179, closes #14178\n`
+  )
 })
 
 function content(filepath: string) {
