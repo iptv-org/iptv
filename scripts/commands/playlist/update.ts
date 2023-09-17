@@ -35,9 +35,8 @@ async function main() {
   logger.info('saving...')
   const groupedStreams = streams.groupBy((stream: Stream) => stream.filepath)
   for (let filepath of groupedStreams.keys()) {
-    const streams = groupedStreams.get(filepath) || []
-
-    if (!streams.length) return
+    let streams = groupedStreams.get(filepath) || []
+    streams = streams.filter((stream: Stream) => stream.removed === false)
 
     const playlist = new Playlist(streams, { public: false })
     await streamsStorage.save(filepath, playlist.toString())
@@ -55,8 +54,9 @@ async function removeStreams(loader: IssueLoader) {
     const data = issue.data
     if (data.missing('stream_url')) return
 
-    const removed = streams.remove((_stream: Stream) => _stream.url === data.get('stream_url'))
-    if (removed.notEmpty()) {
+    const found: Stream = streams.first((_stream: Stream) => _stream.url === data.get('stream_url'))
+    if (found) {
+      found.removed = true
       processedIssues.add(issue.number)
     }
   })
@@ -92,9 +92,6 @@ async function editStreams(loader: IssueLoader) {
     if (data.has('user_agent')) stream.userAgent = data.get('user_agent')
     if (data.has('http_referrer')) stream.httpReferrer = data.get('http_referrer')
     if (data.has('channel_name')) stream.name = data.get('channel_name')
-
-    streams.remove((_stream: Stream) => _stream.channel === stream.channel)
-    streams.add(stream)
 
     processedIssues.add(issue.number)
   })
