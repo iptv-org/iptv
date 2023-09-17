@@ -123,21 +123,22 @@ For scripts to work, you must have [Node.js](https://nodejs.org/en) installed on
 To run scripts use the `npm run <script-name>` command.
 
 - `act:check`: allows to run the [check](https://github.com/iptv-org/iptv/blob/master/.github/workflows/check.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
+- `act:format`: allows to test the [format](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
 - `act:update`: allows to test the [update](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
 - `api:load`: downloads the latest channel and stream data from the [iptv-org/api](https://github.com/iptv-org/api).
 - `api:generate`: generates a JSON file with all streams for the [iptv-org/api](https://github.com/iptv-org/api) repository.
 - `api:deploy`: allows to manually upload a JSON file created via `api:generate` to the [iptv-org/api](https://github.com/iptv-org/api) repository. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
-- `db:create`: сreates a temporary file `temp/database/streams.db` containing all links from the [/streams]() folder.
-- `playlist:update`: triggers an update of internal playlists. The process involves processing approved requests from issues, URL normalization, and sorting links by channel name, quality, and label.
+- `playlist:format`: formats internal playlists. The process includes [URL normalization](https://en.wikipedia.org/wiki/URI_normalization), duplicate removal, removing invalid id's and sorting links by channel name, quality, and label.
+- `playlist:update`: triggers an update of internal playlists. The process involves processing approved requests from issues.
+- `playlist:generate`: generates all public playlists.
 - `playlist:validate`: сhecks ids and links in internal playlists for errors.
 - `playlist:lint`: сhecks internal playlists for syntax errors.
-- `playlist:generate`: generates all public playlists.
 - `playlist:deploy`: allows to manually publish all generated via `playlist:generate` playlists. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
 - `readme:update`: updates the list of playlists in [README.md](README.md).
 - `report:create`: shows a list of all current requests and their status.
-- `format`: (shorthand) sequentially runs the `db:create` and `db:create` commands.
+- `format`: (shorthand) sequentially runs the `api:load` and `playlist:format` commands.
 - `check`: (shorthand) sequentially runs the `api:load`, `playlist:lint` and `playlist:validate` commands.
-- `update`: (shorthand) sequentially runs the `api:load`, `db:create`, `playlist:generate`, `api:generate` and `readme:update` commands.
+- `update`: (shorthand) sequentially runs the `api:load`, `playlist:generate`, `api:generate` and `readme:update` commands.
 - `deploy`: (shorthand) sequentially runs the `playlist:deploy` and `api:deploy` commands.
 - `report`: (shorthand) sequentially runs the `api:load` and `report:create` commands.
 - `test`: runs a test of all the scripts described above.
@@ -148,5 +149,6 @@ To automate the run of the scripts described above, we use the [GitHub Actions w
 
 Each workflow includes its own set of scripts that can be run either manually or in response to an event.
 
-- `check`: sequentially runs the `playlist:check` and `playlist:validate` scripts when a new pull request appears, and blocks the merge if it detects an error in it.
-- `update`: every day at 0:00 UTC sequentially runs `api:load`, `db:create`, `playlist:update`, `playlist:lint`, `playlist:validate`, `playlist:generate`, `api:generate` and `readme:update` scripts and deploys the output files if successful.
+- `check`: sequentially runs the `api:load`, `playlist:check` and `playlist:validate` scripts when a new pull request appears, and blocks the merge if it detects an error in it.
+- `format`: sequentially runs `api:load`, `playlist:format`, `playlist:lint` and `playlist:validate` scripts.
+- `update`: every day at 0:00 UTC sequentially runs `api:load`, `playlist:update`, `playlist:lint`, `playlist:validate`, `playlist:generate`, `api:generate` and `readme:update` scripts and deploys the output files if successful.
