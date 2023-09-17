@@ -10,10 +10,12 @@ export class Storage {
     this.rootDir = path.normalize(rootDir || './')
   }
 
-  list(pattern: string): Promise<string[]> {
-    return glob(pattern, {
+  async list(pattern: string): Promise<string[]> {
+    const files = await glob(pattern, {
       cwd: this.rootDir
     })
+
+    return files.sort()
   }
 
   async createDir(dir: string): Promise<void> {
