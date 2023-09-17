@@ -1,4 +1,3 @@
-export * from './database'
 export * from './logger'
 export * from './playlistParser'
 export * from './numberParser'
