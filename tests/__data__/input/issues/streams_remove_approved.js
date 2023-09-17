@@ -9,7 +9,7 @@ export default [
     id: 1884653836,
     node_id: 'I_kwDOCWUK8M5wVYkM',
     number: 14151,
-    title: 'Broken: VTV',
+    title: 'Remove: VTV',
     user: {
       login: 'kaikyoofers',
       id: 67206080,
@@ -31,15 +31,6 @@ export default [
       site_admin: false
     },
     labels: [
-      {
-        id: 1707513547,
-        node_id: 'MDU6TGFiZWwxNzA3NTEzNTQ3',
-        url: 'https://api.github.com/repos/iptv-org/iptv/labels/broken%20stream',
-        name: 'broken stream',
-        color: 'FBCA04',
-        default: false,
-        description: 'Stream is not working properly'
-      },
       {
         id: 2043160604,
         node_id: 'MDU6TGFiZWwyMDQzMTYwNjA0',
@@ -79,7 +70,7 @@ export default [
     closed_at: null,
     author_association: 'CONTRIBUTOR',
     active_lock_reason: null,
-    body: '### Broken Link\n\nhttps://ythls.onrender.com/channel/UC40TUSUx490U5uR1lZt3Ajgm3u8\n\n### What happened to the stream?\n\nNot loading\n\n### Possible Replacement (optional)\n\nhttps://ythls.onrender.com/channel/UC40TUSUx490U5uR1lZt3Ajg.m3u8\n\n### Notes (optional)\n\nOne link (VTV.br) is misspelled.\n\n### Contributing Guide\n\n- [x] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    body: '### Stream URL\n\nhttps://ythls.onrender.com/channel/UC40TUSUx490U5uR1lZt3Ajgm3u8\n\n### Reason\n\nNot loading\n\n### Notes (optional)\n\nOne link (VTV.br) is misspelled.\n\n### Contributing Guide\n\n- [x] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/14151/reactions',
       total_count: 0,
@@ -163,6 +154,15 @@ export default [
         color: '5373a2',
         default: false,
         description: ''
+      },
+      {
+        id: 5932506810,
+        node_id: 'LA_kwDOCWUK8M8AAAABYZreug',
+        url: 'https://api.github.com/repos/iptv-org/iptv/labels/streams:remove',
+        name: 'streams:add',
+        color: '5373a2',
+        default: false,
+        description: ''
       }
     ],
     state: 'open',
@@ -176,7 +176,7 @@ export default [
     closed_at: null,
     author_association: 'NONE',
     active_lock_reason: null,
-    body: '### Broken Link\n\nhttp://l6.cloudskep.com/rikcy/rikhd/playlist.m3u8\n\n### What happened to the stream?\n\nNot loading\n\n### Possible Replacement (optional)\n\n_No response_\n\n### Notes (optional)\n\nToken needed...\r\nSame issue with RIK 1 and 2. May happen in the future with ANT1 Cyprus, Sigma and Omega.\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    body: '### Broken Link\n\nhttp://l6.cloudskep.com/rikcy/rikhd/playlist.m3u8\n\n### What happened to the stream?\n\nNot loading\n\n### Possible Replacement (optional)\n\nhttp://l6.cloudskep.com/rikcy/rikhd/playlist2.m3u8\n\n### Notes (optional)\n\nToken needed...\r\nSame issue with RIK 1 and 2. May happen in the future with ANT1 Cyprus, Sigma and Omega.\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/14140/reactions',
       total_count: 0,
