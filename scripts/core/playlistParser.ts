@@ -1,6 +1,8 @@
 import parser from 'iptv-playlist-parser'
-import { Playlist, Stream } from '../models'
+import { Stream } from '../models'
 import { Collection, Storage } from './'
+import path from 'path'
+import { STREAMS_DIR } from '../constants'
 
 export class PlaylistParser {
   storage: Storage
@@ -9,7 +11,19 @@ export class PlaylistParser {
     this.storage = storage
   }
 
-  async parse(filepath: string): Promise<Playlist> {
+  async parse(files: string[]): Promise<Collection> {
+    let streams = new Collection()
+
+    for (let filepath of files) {
+      const relativeFilepath = filepath.replace(path.normalize(STREAMS_DIR), '')
+      const _streams: Collection = await this.parseFile(relativeFilepath)
+      streams = streams.concat(_streams)
+    }
+
+    return streams
+  }
+
+  async parseFile(filepath: string): Promise<Collection> {
     const streams = new Collection()
 
     const content = await this.storage.read(filepath)
@@ -32,7 +46,7 @@ export class PlaylistParser {
       streams.add(stream)
     })
 
-    return new Playlist(streams)
+    return streams
   }
 }
 

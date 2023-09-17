@@ -3,14 +3,9 @@ import fs from 'fs-extra'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
-  fs.mkdirSync('tests/__data__/output/database')
-  fs.copyFileSync(
-    'tests/__data__/input/database/api_generate.streams.db',
-    'tests/__data__/output/database/streams.db'
-  )
 
   const stdout = execSync(
-    'DB_DIR=tests/__data__/output/database API_DIR=tests/__data__/output/.api npm run api:generate',
+    'STREAMS_DIR=tests/__data__/input/streams_generate API_DIR=tests/__data__/output/.api npm run api:generate',
     { encoding: 'utf8' }
   )
 })

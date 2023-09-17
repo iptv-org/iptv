@@ -1,16 +1,16 @@
-import { API_DIR, DB_DIR } from '../../constants'
-import { Logger, Database, Collection, Storage } from '../../core'
+import { API_DIR, STREAMS_DIR } from '../../constants'
+import { Logger, PlaylistParser, Storage } from '../../core'
 import { Stream } from '../../models'
 
 async function main() {
   const logger = new Logger()
 
-  logger.info(`loading streams...`)
-  const db = new Database(DB_DIR)
-  const dbStreams = await db.load('streams.db')
-  const docs = await dbStreams.find({})
-
-  const streams = new Collection(docs as any[])
+  logger.info('loading streams...')
+  const streamsStorage = new Storage(STREAMS_DIR)
+  const parser = new PlaylistParser({ storage: streamsStorage })
+  const files = await streamsStorage.list('**/*.m3u')
+  let streams = await parser.parse(files)
+  streams = streams
     .map(data => new Stream(data))
     .orderBy((stream: Stream) => stream.channel)
     .map((stream: Stream) => stream.toJSON())
@@ -18,8 +18,8 @@ async function main() {
   logger.info(`found ${streams.count()} streams`)
 
   logger.info('saving to .api/streams.json...')
-  const storage = new Storage(API_DIR)
-  await storage.save('streams.json', streams.toJSON())
+  const apiStorage = new Storage(API_DIR)
+  await apiStorage.save('streams.json', streams.toJSON())
 }
 
 main()

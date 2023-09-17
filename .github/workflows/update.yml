@@ -33,8 +33,6 @@ jobs:
         run: npm install
       - name: load api data
         run: npm run api:load
-      - name: setup database
-        run: npm run db:create
       - name: update internal playlists
         run: npm run playlist:update --silent >> $GITHUB_OUTPUT
         id: playlist-update

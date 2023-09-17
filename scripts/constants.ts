@@ -5,7 +5,6 @@ export const README_DIR = process.env.README_DIR || './.readme'
 export const API_DIR = process.env.API_DIR || './.api'
 export const DATA_DIR = process.env.DATA_DIR || './temp/data'
 export const LOGS_DIR = process.env.LOGS_DIR || './temp/logs'
-export const DB_DIR = process.env.DB_DIR || './temp/database'
 export const TESTING = process.env.NODE_ENV === 'test' ? true : false
 export const OWNER = 'iptv-org'
 export const REPO = 'iptv'
