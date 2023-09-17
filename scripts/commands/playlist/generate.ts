@@ -36,8 +36,10 @@ async function main() {
   const subdivisions = new Collection(subdivisionsContent).map(data => new Subdivision(data))
 
   logger.info('loading streams...')
-  const streams = await loadStreams({ channels, categories, languages })
-  logger.info(`found ${streams.count()} streams`)
+  let streams = await loadStreams({ channels, categories, languages })
+  let totalStreams = streams.count()
+  streams = streams.uniqBy((stream: Stream) => stream.channel || _.uniqueId())
+  logger.info(`found ${totalStreams} streams (including ${streams.count()} unique)`)
 
   const generatorsLogger = new Logger({
     stream: await new Storage(LOGS_DIR).createStream(`generators.log`)
@@ -104,7 +106,6 @@ async function loadStreams({
 
   streams = streams
     .orderBy([(stream: Stream) => stream.channel, (stream: Stream) => stream.url], ['asc', 'asc'])
-    .uniqBy((stream: Stream) => stream.channel || _.uniqueId())
     .map((stream: Stream) => {
       const channel: Channel | undefined = groupedChannels.get(stream.channel)
 
