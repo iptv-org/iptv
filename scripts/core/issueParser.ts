@@ -5,7 +5,6 @@ import _ from 'lodash'
 const FIELDS = new Dictionary({
   'Channel ID': 'channel_id',
   'Channel ID (required)': 'channel_id',
-  'Broken Link': 'stream_url',
   'Stream URL': 'stream_url',
   'Stream URL (optional)': 'stream_url',
   'Stream URL (required)': 'stream_url',
@@ -15,8 +14,6 @@ const FIELDS = new Dictionary({
   'HTTP User-Agent': 'user_agent',
   'HTTP Referrer': 'http_referrer',
   Reason: 'reason',
-  'What happened to the stream?': 'reason',
-  'Possible Replacement (optional)': 'possible_replacement',
   Notes: 'notes',
   'Notes (optional)': 'notes'
 })
