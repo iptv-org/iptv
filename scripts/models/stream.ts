@@ -29,6 +29,7 @@ export class Stream {
   languages: Collection
   isNSFW: boolean
   groupTitle: string
+  removed: boolean = false
 
   constructor({
     channel,
