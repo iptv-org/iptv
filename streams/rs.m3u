@@ -17,6 +17,8 @@ https://vod1.laki.eu/svetplus/video.m3u8
 http://51.15.154.138/providus/live2805_hq/index.m3u8
 #EXTINF:-1 tvg-id="KurirTV.rs",Kurir TV (360p)
 https://kurir-tv.haste-cdn.net/providus/live2805.m3u8
+#EXTINF:-1 tvg-id="",Marsh TV (720p)
+http://cdn.dovecher.tv:8081/live/marsh/playlist.m3u8
 #EXTINF:-1 tvg-id="MelosTV.rs",Melos TV (576p)
 https://vod1.laki.eu/melos/video.m3u8
 #EXTINF:-1 tvg-id="MISTelevizija.rs",MIS Televizija (720p) [Not 24/7]
@@ -47,8 +49,6 @@ https://muzzik-live.morescreens.com/mts-5/playlist.m3u8
 http://92.60.237.32:1935/live/nisville/playlist.m3u8
 #EXTINF:-1 tvg-id="NTV.rs",NTV (576p)
 https://vod1.laki.eu/ntv/video.m3u8
-#EXTINF:-1 tvg-id="PiKanal.rs",TV Pi Canal Pirot (576p) [Not 24/7]
-https://stream.pikanal.rs/pikanal/pgm.m3u8
 #EXTINF:-1 tvg-id="PinkExtra.rs",Pink Extra (576p)
 http://109.105.201.198/PINKEXTRA/playlist.m3u8
 #EXTINF:-1 tvg-id="PinkFamily.rs",Pink Family (576p)
@@ -95,18 +95,22 @@ https://vod1.laki.eu/rtspoletarac/playlist.m3u8
 https://vod1.laki.eu/rtstrezor/playlist.m3u8
 #EXTINF:-1 tvg-id="RTSZivot.rs",RTS Zivot (576p)
 https://vod1.laki.eu/rtszivot/playlist.m3u8
-#EXTINF:-1 tvg-id="RTV1.rs",RTV 1 (576p) [Not 24/7]
-mmsh://212.200.255.151/rtv1
 #EXTINF:-1 tvg-id="RTV1.rs",RTV 1 (576p)
 rtsp://212.200.255.151/rtv1
+#EXTINF:-1 tvg-id="RTV1.rs",RTV 1 (576p) [Not 24/7]
+mmsh://212.200.255.151/rtv1
 #EXTINF:-1 tvg-id="RTV2.rs",RTV 2 (576p) [Not 24/7]
 mmsh://212.200.255.151/rtv2
 #EXTINF:-1 tvg-id="RTV2.rs",RTV 2 (576p) [Not 24/7]
 rtsp://212.200.255.151/rtv2
+#EXTINF:-1 tvg-id="TVAS.rs",RTV AS (576p)
+https://srv1.adriatelekom.com/TVAS/index.m3u8
 #EXTINF:-1 tvg-id="RTVBap.rs",RTV Bap (480p)
 https://53be5ef2d13aa.streamlock.net/rtvbap/uzivo/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVNoviPazar.rs",RTV Novi Pazar
 https://rtvnp.rs/hls/rtvnp.m3u8
+#EXTINF:-1 tvg-id="",RTV Tesla (576p)
+https://vod1.laki.eu/teslatv/video.m3u8
 #EXTINF:-1 tvg-id="SandzakTV.rs",Sandzak TV (576p)
 https://vod1.laki.eu/sandzak/video.m3u8
 #EXTINF:-1 tvg-id="SATTV.rs",SAT TV (576p)
@@ -117,12 +121,12 @@ https://53be5ef2d13aa.streamlock.net/soskanalplus/soskanalplus.stream/playlist.m
 https://vod1.laki.eu/studiob/video.m3u8
 #EXTINF:-1 tvg-id="SuperSatTV.rs",SuperSat TV (576p)
 https://vod1.laki.eu/supersat/video.m3u8
+#EXTINF:-1 tvg-id="",Top TV (576p)
+https://vod1.laki.eu/toptv/video.m3u8
 #EXTINF:-1 tvg-id="ToxicFolk.rs",Toxic Folk (1080p)
 http://82.118.0.14:8000/play/6/index.m3u8
 #EXTINF:-1 tvg-id="ToxicRap.rs",Toxic Rap (1080p)
 http://82.118.0.14:8000/play/7/index.m3u8
-#EXTINF:-1 tvg-id="TVAS.rs",RTV AS (576p)
-https://srv1.adriatelekom.com/TVAS/index.m3u8
 #EXTINF:-1 tvg-id="TVBelleAmie.rs",TV Belle Amie (540p)
 http://92.60.238.10:1935/live/belleamie/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBor.rs",TV Bor (576p)
@@ -143,6 +147,8 @@ https://vod1.laki.eu/tvmag/video.m3u8
 https://vod1.laki.eu/palmaplus/video.m3u8
 #EXTINF:-1 tvg-id="TVPancevo.rs",TV Pancevo (576p)
 https://vod1.laki.eu/rtvpancevo/video.m3u8
+#EXTINF:-1 tvg-id="PiKanal.rs",TV Pi Canal Pirot (576p) [Not 24/7]
+https://stream.pikanal.rs/pikanal/pgm.m3u8
 #EXTINF:-1 tvg-id="TVPirot.rs",TV Pirot (240p) [Not 24/7]
 https://5bc45691ca49f.streamlock.net/tvpirot/uzivo/playlist.m3u8
 #EXTINF:-1 tvg-id="TVYUEco.rs",TV YU Eco (576p)
@@ -151,11 +157,3 @@ https://vod1.laki.eu/yueco/video.m3u8
 https://vod1.laki.eu/tvuna/playlist.m3u8
 #EXTINF:-1 tvg-id="ZicoTV.rs",Zico TV (540p)
 https://ub1doy938d.gjirafa.net/live/mtAOO7iGIzVAs3PFPnAFubierryMwW3V/y1k0kk.m3u8
-#EXTINF:-1 tvg-id="",Dox TV (576p)
-https://vod1.laki.eu/dox/index.m3u8
-#EXTINF:-1 tvg-id="",Marsh TV (720p)
-http://cdn.dovecher.tv:8081/live/marsh/playlist.m3u8
-#EXTINF:-1 tvg-id="",RTV Tesla (576p)
-https://vod1.laki.eu/teslatv/video.m3u8
-#EXTINF:-1 tvg-id="",Top TV (576p)
-https://vod1.laki.eu/toptv/video.m3u8

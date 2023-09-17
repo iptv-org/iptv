@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="BTV.sk",BTV (480p)
 https://fs3.kabelko.sk/9011/index.m3u8?token=btv
+#EXTINF:-1 tvg-id="MarkizaDajto.sk",DajTo (960p)
+http://213.81.133.133:8080/dajto/index.m3u8
 #EXTINF:-1 tvg-id="DuckTV.sk",Duck TV (720p)
 https://tvup-fast-ottera-mmm-ducktv.secure2.footprint.net/DexaYJdJXkLqFxTK_DuckTVHDSAMS/DuckTVHDSAMS.stream/DuckTVHDSAMS/DuckTVHDSAMS_720p_AAC.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Dvojka.sk",Dvojka (960p)
@@ -15,28 +17,30 @@ https://n4.stv.livebox.sk/stv-tv/fe09ae603df84846978c9d960f699900/stv1.smil/play
 https://lifetv.mpks.sk/s.m3u8
 #EXTINF:-1 tvg-id="Markiza.sk",Markíza (720p)
 http://83.167.253.107/hdmi1_ext
-#EXTINF:-1 tvg-id="MarkizaDajto.sk",DajTo (960p)
-http://213.81.133.133:8080/dajto/index.m3u8
-#EXTINF:-1 tvg-id="NZTV.sk",TV Nové Zámky (486p) [Not 24/7]
-http://s1.media-planet.sk/live/novezamky/BratuMarian.m3u8
-#EXTINF:-1 tvg-id="NZTV.sk",TV Nové Zámky (486p)
-http://s1.media-planet.sk/live/novezamky/lihattv.m3u8
-#EXTINF:-1 tvg-id="NZTV.sk",TV Nové Zámky (486p)
-http://s1.media-planet.sk/live/novezamky/playlist.m3u8
+#EXTINF:-1 tvg-id="TVRaj.sk",Raj TV (720p) [Not 24/7]
+https://ottst05.flexitv.sk/2827-tv-pc.m3u8
 #EXTINF:-1 tvg-id="RegioTV.sk",Régió TV (406p)
 http://tv.geniusnet.sk:8081/regiotv/pl.m3u8
 #EXTINF:-1 tvg-id="Senzi.sk",Senzi (720p)
 http://lb.streaming.sk/senzi/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="TV8.sk",Televízia OSEM (360p)
-http://109.74.145.11:1935/tv8/mp4:tv8.stream_360p/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleviziaMocenok.sk",Televízia Močenok (720p)
+https://5ca49f2417d90.streamlock.net/mocenok/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TV8.sk",Televízia OSEM (576p)
 http://109.74.145.11:1935/tv8/ngrp:tv8.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="TV8.sk",Televízia OSEM (360p)
+http://109.74.145.11:1935/tv8/mp4:tv8.stream_360p/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBratislava.sk",TV Bratislava (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCoLgBFFbzGgYJpmcdV0GT4w.m3u8
 #EXTINF:-1 tvg-id="TVBrezova.sk",TV Brezová (540p)
 http://95.105.193.219:88/hls/tvb.m3u8
 #EXTINF:-1 tvg-id="TVCentral.sk",TV Central (540p)
 https://arenasportslovakia.ddns.net/hls/cetv2.m3u8
 #EXTINF:-1 tvg-id="TVDK.sk",TV DK (486p) [Not 24/7]
 http://80.94.54.11:1935/live/dolnykubin1/playlist.m3u8
+#EXTINF:-1 tvg-id="TVDK.sk",TV DK (486p) [Not 24/7]
+https://5ca49f2417d90.streamlock.net/live/dolnykubin1/playlist.m3u8
+#EXTINF:-1 tvg-id="TVHronka.sk",TV Hronka (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCdsKjmExW-0pFskKYbjNIQg.m3u8
 #EXTINF:-1 tvg-id="TVLiptov.sk",TV Liptov (1080p)
 http://95.105.255.137:1935/tvturiec/tvliptov.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVLocAll.sk",TV LocAll (406p)
@@ -45,12 +49,18 @@ http://tv.geniusnet.sk:8081/localltv/pl.m3u8
 https://stream.tvlux.sk/lux/ngrp:lux.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMyjava.sk",TV Myjava (540p)
 http://95.105.193.219:88/hls/tvm.m3u8
+#EXTINF:-1 tvg-id="TVNitricka.sk",TV Nitrička (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCnEQCNDsMtPlrVwCrRViaeQ.m3u8
+#EXTINF:-1 tvg-id="NZTV.sk",TV Nové Zámky (486p)
+http://s1.media-planet.sk/live/novezamky/lihattv.m3u8
+#EXTINF:-1 tvg-id="NZTV.sk",TV Nové Zámky (486p)
+http://s1.media-planet.sk/live/novezamky/playlist.m3u8
+#EXTINF:-1 tvg-id="NZTV.sk",TV Nové Zámky (486p) [Not 24/7]
+http://s1.media-planet.sk/live/novezamky/BratuMarian.m3u8
 #EXTINF:-1 tvg-id="TVNRSR.sk",TV NRSR (720p) [Not 24/7]
 https://n11.stv.livebox.sk/stv-tv/stv4.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPoprad.sk",TV Poprad (1080p) [Not 24/7]
 http://213.81.153.221:8080/poprad
-#EXTINF:-1 tvg-id="TVRaj.sk",Raj TV (720p) [Not 24/7]
-https://ottst05.flexitv.sk/2827-tv-pc.m3u8
 #EXTINF:-1 tvg-id="TVReduta.sk",TV Reduta (486p)
 https://5ca49f2417d90.streamlock.net/live/reduta/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRomana.sk",TV Romana (720p)
@@ -63,23 +73,13 @@ http://95.105.193.219:88/hls/tvsen.m3u8
 http://88.212.7.11/live/test_severka_web_player/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSkalica.sk",TV Skalica (540p)
 http://95.105.193.219:88/hls/tvs.m3u8
-#EXTINF:-1 tvg-id="TVT.sk",TVT (486p)
-https://5ca49f2417d90.streamlock.net/live/turzovka/playlist.m3u8
-#EXTINF:-1 tvg-id="TVVega.sk",TV Vega (576p) [Not 24/7]
-http://88.212.7.11/live/test_tv_vega_web_player/playlist.m3u8
-#EXTINF:-1 tvg-id="VIOTV.sk",VIO TV (480p)
-http://slovanet-livestream.ceelabs.com:1935/live/VioTV.stream_transcoded/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleviziaMocenok.sk",Televízia Močenok (720p)
-https://5ca49f2417d90.streamlock.net/mocenok/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVStaraTura.sk",TV Stará Turá (540p)
 http://95.105.193.219:88/hls/tvst.m3u8
-#EXTINF:-1 tvg-id="TVBratislava.sk",TV Bratislava (1080p) [Not 24/7]
-https://ythls.onrender.com/channel/UCoLgBFFbzGgYJpmcdV0GT4w.m3u8
-#EXTINF:-1 tvg-id="TVHronka.sk",TV Hronka (1080p) [Not 24/7]
-https://ythls.onrender.com/channel/UCdsKjmExW-0pFskKYbjNIQg.m3u8
-#EXTINF:-1 tvg-id="TVNitricka.sk",TV Nitrička (1080p) [Not 24/7]
-https://ythls.onrender.com/channel/UCnEQCNDsMtPlrVwCrRViaeQ.m3u8
-#EXTINF:-1 tvg-id="TVDK.sk",TV DK (486p) [Not 24/7]
-https://5ca49f2417d90.streamlock.net/live/dolnykubin1/playlist.m3u8
+#EXTINF:-1 tvg-id="TVVega.sk",TV Vega (576p) [Not 24/7]
+http://88.212.7.11/live/test_tv_vega_web_player/playlist.m3u8
+#EXTINF:-1 tvg-id="TVT.sk",TVT (486p)
+https://5ca49f2417d90.streamlock.net/live/turzovka/playlist.m3u8
+#EXTINF:-1 tvg-id="VIOTV.sk",VIO TV (480p)
+http://slovanet-livestream.ceelabs.com:1935/live/VioTV.stream_transcoded/playlist.m3u8
 #EXTINF:-1 tvg-id="ZapadoslovenskaTV.sk",Západoslovenská TV (1080p)
 https://live.zstv.sk/memfs/5b0f9dd2-8f77-4fe5-9527-bc11bb8b18e5.m3u8
