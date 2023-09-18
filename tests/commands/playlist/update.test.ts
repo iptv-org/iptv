@@ -9,7 +9,7 @@ beforeEach(() => {
 
 it('can format playlists', () => {
   const stdout = execSync(
-    'DEBUG=true DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/output/streams npm run playlist:update --silent',
+    'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/output/streams npm run playlist:update --silent',
     {
       encoding: 'utf8'
     }
