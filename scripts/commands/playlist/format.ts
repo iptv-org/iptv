@@ -1,5 +1,6 @@
+import { Logger, Storage, Collection } from '@freearhey/core'
 import { STREAMS_DIR, DATA_DIR } from '../../constants'
-import { Storage, Logger, PlaylistParser, Collection } from '../../core'
+import { PlaylistParser } from '../../core'
 import { Stream, Playlist, Channel } from '../../models'
 import { program } from 'commander'
 

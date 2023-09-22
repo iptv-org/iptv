@@ -1,7 +1,8 @@
+import { Collection } from '@freearhey/core'
 import { restEndpointMethods } from '@octokit/plugin-rest-endpoint-methods'
 import { paginateRest } from '@octokit/plugin-paginate-rest'
 import { Octokit } from '@octokit/core'
-import { Collection, IssueParser } from './'
+import { IssueParser } from './'
 import { TESTING, OWNER, REPO } from '../constants'
 
 const CustomOctokit = Octokit.plugin(paginateRest, restEndpointMethods)
@@ -14,23 +15,22 @@ export class IssueLoader {
     if (TESTING) {
       switch (labels) {
         case 'streams:add':
-          issues = (await import('../../tests/__data__/input/issues/streams_add')).default
+          issues = require('../../tests/__data__/input/issues/streams_add.js')
           break
         case 'streams:edit':
-          issues = (await import('../../tests/__data__/input/issues/streams_edit')).default
+          issues = require('../../tests/__data__/input/issues/streams_edit.js')
           break
         case 'broken stream':
-          issues = (await import('../../tests/__data__/input/issues/broken_stream')).default
+          issues = require('../../tests/__data__/input/issues/broken_stream.js')
           break
         case 'streams:add,approved':
-          issues = (await import('../../tests/__data__/input/issues/streams_add_approved')).default
+          issues = require('../../tests/__data__/input/issues/streams_add_approved.js')
           break
         case 'streams:edit,approved':
-          issues = (await import('../../tests/__data__/input/issues/streams_edit_approved')).default
+          issues = require('../../tests/__data__/input/issues/streams_edit_approved.js')
           break
         case 'streams:remove,approved':
-          issues = (await import('../../tests/__data__/input/issues/streams_remove_approved'))
-            .default
+          issues = require('../../tests/__data__/input/issues/streams_remove_approved.js')
           break
       }
     } else {

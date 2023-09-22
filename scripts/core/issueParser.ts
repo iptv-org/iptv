@@ -1,4 +1,4 @@
-import { Dictionary } from './'
+import { Dictionary } from '@freearhey/core'
 import { Issue } from '../models'
 import _ from 'lodash'
 
