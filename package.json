@@ -20,6 +20,7 @@
     "update": "npm run api:load && npm run playlist:generate && npm run api:generate && npm run readme:update",
     "deploy": "npm run playlist:deploy && npm run api:deploy",
     "report": "npm run api:load && npm run report:create",
+    "lint": "npx eslint ./scripts/**/*.ts ./tests/**/*.ts",
     "test": "jest --runInBand",
     "ts-node": "node --no-warnings=ExperimentalWarning --experimental-specifier-resolution=node --loader ts-node/esm"
   },
@@ -68,5 +69,10 @@
     "transliteration": "^2.3.5",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
+    "@typescript-eslint/parser": "^6.7.2",
+    "eslint": "^8.49.0"
   }
 }
