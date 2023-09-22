@@ -14,7 +14,7 @@ export class PlaylistParser {
   async parse(files: string[]): Promise<Collection> {
     let streams = new Collection()
 
-    for (let filepath of files) {
+    for (const filepath of files) {
       const relativeFilepath = filepath.replace(path.normalize(STREAMS_DIR), '')
       const _streams: Collection = await this.parseFile(relativeFilepath)
       streams = streams.concat(_streams)

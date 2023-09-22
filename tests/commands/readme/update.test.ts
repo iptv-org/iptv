@@ -14,7 +14,7 @@ beforeEach(() => {
     'tests/__data__/output/.readme/template.md'
   )
 
-  const stdout = execSync(
+  execSync(
     'DATA_DIR=tests/__data__/input/data LOGS_DIR=tests/__data__/input/logs README_DIR=tests/__data__/output/.readme npm run readme:update',
     { encoding: 'utf8' }
   )

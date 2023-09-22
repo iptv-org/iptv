@@ -4,7 +4,7 @@ export type LogItem = {
 }
 
 export class LogParser {
-  parse(content: string): any[] {
+  parse(content: string): LogItem[] {
     if (!content) return []
     const lines = content.split('\n')
 
