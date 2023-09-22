@@ -40,6 +40,8 @@ export class IssueParser {
       data.set(id, value)
     })
 
-    return new Issue({ number: issue.number, data })
+    const labels = issue.labels.map(label => label.name)
+
+    return new Issue({ number: issue.number, labels, data })
   }
 }
