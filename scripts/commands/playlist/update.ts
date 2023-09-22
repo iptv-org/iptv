@@ -1,5 +1,6 @@
+import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
-import { Storage, Logger, Collection, Dictionary, IssueLoader, PlaylistParser } from '../../core'
+import { IssueLoader, PlaylistParser } from '../../core'
 import { Stream, Playlist, Channel, Issue } from '../../models'
 
 let processedIssues = new Collection()
