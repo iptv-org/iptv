@@ -17,7 +17,9 @@ export class LanguagesGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    let streams = this.streams.orderBy(stream => stream.getTitle()).filter(stream => stream.isSFW())
+    const streams = this.streams
+      .orderBy(stream => stream.getTitle())
+      .filter(stream => stream.isSFW())
 
     let languages = new Collection()
     streams.forEach((stream: Stream) => {
