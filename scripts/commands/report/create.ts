@@ -27,22 +27,25 @@ async function main() {
   const streams = await parser.parse(files)
   const groupedStreams = streams.groupBy((stream: Stream) => stream.url)
 
-  logger.info('loading issue from github...')
-  const issues = await loader.load({ labels: ['streams:add'] })
-
   logger.info('creating report...')
+  let report = new Collection()
+
+  logger.info('checking streams:add requests...')
+  const addRequests = await loader.load({ labels: ['streams:add'] })
   const buffer = new Dictionary()
-  const report = issues.map((issue: Issue) => {
+  addRequests.forEach((issue: Issue) => {
     const channelId = issue.data.get('channel_id') || undefined
     const streamUrl = issue.data.get('stream_url') || undefined
 
     const result = new Dictionary({
       issueNumber: issue.number,
+      type: 'streams:add',
       channelId,
       status: undefined
     })
 
-    if (!channelId || !streamUrl) result.set('status', 'error')
+    if (!channelId) result.set('status', 'missing_id')
+    else if (!streamUrl) result.set('status', 'missing_link')
     else if (groupedBlocklist.has(channelId)) result.set('status', 'blocked')
     else if (groupedChannels.missing(channelId)) result.set('status', 'invalid_id')
     else if (groupedStreams.has(streamUrl)) result.set('status', 'fullfilled')
@@ -51,8 +54,50 @@ async function main() {
 
     buffer.set(streamUrl, true)
 
-    return result.data()
+    report.add(result.data())
   })
+
+  logger.info('checking streams:edit requests...')
+  const editRequests = await loader.load({ labels: ['streams:edit'] })
+  editRequests.forEach((issue: Issue) => {
+    const channelId = issue.data.get('channel_id') || undefined
+    const streamUrl = issue.data.get('stream_url') || undefined
+
+    const result = new Dictionary({
+      issueNumber: issue.number,
+      type: 'streams:edit',
+      channelId,
+      status: undefined
+    })
+
+    if (!streamUrl) result.set('status', 'missing_link')
+    else if (groupedStreams.missing(streamUrl)) result.set('status', 'invalid_link')
+    else if (channelId && groupedChannels.missing(channelId)) result.set('status', 'invalid_id')
+    else result.set('status', 'pending')
+
+    report.add(result.data())
+  })
+
+  logger.info('checking broken streams reports...')
+  const brokenStreamReports = await loader.load({ labels: ['broken stream'] })
+  brokenStreamReports.forEach((issue: Issue) => {
+    const streamUrl = issue.data.get('stream_url') || undefined
+
+    const result = new Dictionary({
+      issueNumber: issue.number,
+      type: 'broken stream',
+      channelId: undefined,
+      status: undefined
+    })
+
+    if (!streamUrl) result.set('status', 'missing_link')
+    else if (groupedStreams.missing(streamUrl)) result.set('status', 'invalid_link')
+    else result.set('status', 'pending')
+
+    report.add(result.data())
+  })
+
+  report = report.orderBy(item => item.issueNumber)
 
   console.table(report.all())
 }
