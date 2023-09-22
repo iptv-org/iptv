@@ -1,6 +1,5 @@
-import { Dictionary } from './'
+import { Dictionary } from '@freearhey/core'
 import { Issue } from '../models'
-import _ from 'lodash'
 
 const FIELDS = new Dictionary({
   'Channel ID': 'channel_id',
@@ -21,7 +20,7 @@ const FIELDS = new Dictionary({
 })
 
 export class IssueParser {
-  parse(issue: any): Issue {
+  parse(issue: { number: number; body: string; labels: { name: string }[] }): Issue {
     const fields = issue.body.split('###')
 
     const data = new Dictionary()
