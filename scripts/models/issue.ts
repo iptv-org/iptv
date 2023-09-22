@@ -1,4 +1,4 @@
-import { Dictionary } from '../core'
+import { Dictionary } from '@freearhey/core'
 
 type IssueProps = {
   number: number

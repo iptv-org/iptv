@@ -1,4 +1,4 @@
-import { Collection } from '../core'
+import { Collection } from '@freearhey/core'
 
 type ChannelProps = {
   id: string
