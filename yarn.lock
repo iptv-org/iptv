@@ -301,6 +301,20 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
+"@freearhey/core@^0.1.2":
+  version "0.1.2"
+  resolved "https://registry.npmjs.org/@freearhey/core/-/core-0.1.2.tgz"
+  integrity sha512-o6FaLHiKED0JkUXxqHcUUM2P+Jd4kvE96p0MZlLjhCFAPii/lVr5mTwrHehKMzve/r7AbDUX7kyNLNG8Qec6uw==
+  dependencies:
+    "@types/fs-extra" "^11.0.2"
+    "@types/lodash" "^4.14.198"
+    fs-extra "^11.1.1"
+    glob "^10.3.4"
+    lodash "^4.17.21"
+    natural-orderby "^3.0.2"
+    normalize-url "^6.1.0"
+    signale "^1.4.0"
+
 "@isaacs/cliui@^8.0.2":
   version "8.0.2"
   resolved "https://registry.npmjs.org/@isaacs/cliui/-/cliui-8.0.2.tgz"
@@ -742,10 +756,10 @@
   dependencies:
     "@babel/types" "^7.20.7"
 
-"@types/fs-extra@^11.0.1":
-  version "11.0.1"
-  resolved "https://registry.npmjs.org/@types/fs-extra/-/fs-extra-11.0.1.tgz"
-  integrity sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==
+"@types/fs-extra@^11.0.1", "@types/fs-extra@^11.0.2":
+  version "11.0.2"
+  resolved "https://registry.npmjs.org/@types/fs-extra/-/fs-extra-11.0.2.tgz"
+  integrity sha512-c0hrgAOVYr21EX8J0jBMXGLMgJqVf/v6yxi0dLaJboW9aQPh16Id+z6w2Tx1hm+piJOLv8xPfVKZCLfjPw/IMQ==
   dependencies:
     "@types/jsonfile" "*"
     "@types/node" "*"
@@ -2339,6 +2353,11 @@ normalize-path@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz"
   integrity sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==
+
+normalize-url@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.npmjs.org/normalize-url/-/normalize-url-6.1.0.tgz"
+  integrity sha512-DlL+XwOy3NxAQ8xuC0okPgK46iuVNAK01YN7RueYBqqFeGsBjV9XmCAzAdgt+667bCl5kPh9EqKKDwnaPG1I7A==
 
 normalize-url@^7.2.0:
   version "7.2.0"

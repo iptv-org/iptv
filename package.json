@@ -25,9 +25,9 @@
   },
   "jest": {
     "transform": {
-      "^.*test.(ts|js)$": "ts-jest"
+      "^.+\\.ts$": "ts-jest"
     },
-    "testRegex": "tests/(.*?/)?.*test.(ts|js)$",
+    "testRegex": "tests/(.*?/)?.*test.ts$",
     "setupFilesAfterEnv": [
       "jest-expect-message"
     ]
@@ -40,8 +40,8 @@
   "author": "Arhey",
   "private": true,
   "license": "MIT",
-  "type": "module",
   "dependencies": {
+    "@freearhey/core": "^0.1.2",
     "@octokit/core": "^4.2.1",
     "@octokit/plugin-paginate-rest": "^7.1.2",
     "@octokit/plugin-rest-endpoint-methods": "^7.1.3",

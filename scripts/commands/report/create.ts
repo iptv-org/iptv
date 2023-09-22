@@ -1,5 +1,6 @@
+import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
-import { Collection, Dictionary, IssueLoader, Storage, Logger, PlaylistParser } from '../../core'
+import { IssueLoader, PlaylistParser } from '../../core'
 import { Blocked, Channel, Issue, Stream } from '../../models'
 
 async function main() {

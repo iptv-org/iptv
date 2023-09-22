@@ -1,4 +1,5 @@
-import { Logger, Storage, PlaylistParser, Collection, File, Dictionary } from '../../core'
+import { Logger, Storage, Collection, Dictionary, File } from '@freearhey/core'
+import { PlaylistParser } from '../../core'
 import { Channel, Stream, Blocked } from '../../models'
 import { program } from 'commander'
 import chalk from 'chalk'
