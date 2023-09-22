@@ -26,15 +26,13 @@ export class CategoriesGenerator implements Generator {
     const streams = this.streams.orderBy([(stream: Stream) => stream.getTitle()])
 
     this.categories.forEach(async (category: Category) => {
-      let categoryStreams = streams
+      const categoryStreams = streams
         .filter((stream: Stream) => stream.hasCategory(category))
         .map((stream: Stream) => {
-          const groupTitle = stream.categories
-            ? stream.categories
-                .map((category: Category) => category.name)
-                .sort()
-                .join(';')
-            : ''
+          const streamCategories = stream.categories
+            .map((category: Category) => category.name)
+            .sort()
+          const groupTitle = stream.categories ? streamCategories.join(';') : ''
           stream.groupTitle = groupTitle
 
           return stream
@@ -48,7 +46,7 @@ export class CategoriesGenerator implements Generator {
 
     const undefinedStreams = streams.filter((stream: Stream) => stream.noCategories())
     const playlist = new Playlist(undefinedStreams, { public: true })
-    const filepath = `categories/undefined.m3u`
+    const filepath = 'categories/undefined.m3u'
     await this.storage.save(filepath, playlist.toString())
     this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
   }
