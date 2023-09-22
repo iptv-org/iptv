@@ -11,7 +11,7 @@ const octokit = new CustomOctokit()
 export class IssueLoader {
   async load({ labels }: { labels: string[] | string }) {
     labels = Array.isArray(labels) ? labels.join(',') : labels
-    let issues: any[] = []
+    let issues: object[] = []
     if (TESTING) {
       switch (labels) {
         case 'streams:add':

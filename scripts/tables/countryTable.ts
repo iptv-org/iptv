@@ -48,7 +48,7 @@ export class CountryTable implements Table {
         } else if (countryCode === 'INT') {
           data.add([
             'ZZ',
-            `🌍 International`,
+            '🌍 International',
             logItem.count,
             `<code>https://iptv-org.github.io/iptv/${logItem.filepath}</code>`
           ])
