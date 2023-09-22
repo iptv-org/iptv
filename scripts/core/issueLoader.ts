@@ -16,6 +16,12 @@ export class IssueLoader {
         case 'streams:add':
           issues = (await import('../../tests/__data__/input/issues/streams_add')).default
           break
+        case 'streams:edit':
+          issues = (await import('../../tests/__data__/input/issues/streams_edit')).default
+          break
+        case 'broken stream':
+          issues = (await import('../../tests/__data__/input/issues/broken_stream')).default
+          break
         case 'streams:add,approved':
           issues = (await import('../../tests/__data__/input/issues/streams_add_approved')).default
           break
