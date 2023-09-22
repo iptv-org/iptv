@@ -1,5 +1,5 @@
 import { Generator } from './generator'
-import { Collection, Storage, Logger } from '../core'
+import { Collection, Storage, Logger } from '@freearhey/core'
 import { Stream, Playlist, Region } from '../models'
 import { PUBLIC_DIR } from '../constants'
 

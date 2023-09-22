@@ -1,7 +1,6 @@
-import { File, PlaylistParser, Storage } from '../../core'
+import { Logger, Storage, Collection, File } from '@freearhey/core'
+import { PlaylistParser } from '../../core'
 import { Stream, Category, Channel, Language, Country, Region, Subdivision } from '../../models'
-import { Collection } from '../../core/collection'
-import { Logger } from '../../core/logger'
 import _ from 'lodash'
 import {
   CategoriesGenerator,
@@ -124,7 +123,7 @@ async function loadStreams({
         if (channel.logo) stream.logo = channel.logo
       } else {
         const file = new File(stream.filepath)
-        const [_, countryCode] = file.getFilename().match(/^([a-z]{2})(_|$)/) || [null, null]
+        const [_, countryCode] = file.name().match(/^([a-z]{2})(_|$)/) || [null, null]
         const defaultBroadcastArea = countryCode ? [`c/${countryCode.toUpperCase()}`] : []
 
         stream.broadcastArea = new Collection(defaultBroadcastArea)
