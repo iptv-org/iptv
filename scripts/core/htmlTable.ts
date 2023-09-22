@@ -19,19 +19,19 @@ export class HTMLTable {
     let output = '<table>\n'
 
     output += '  <thead>\n    <tr>'
-    for (let column of this.columns) {
+    for (const column of this.columns) {
       output += `<th align="left">${column.name}</th>`
     }
     output += '</tr>\n  </thead>\n'
 
     output += '  <tbody>\n'
-    for (let item of this.data) {
+    for (const item of this.data) {
       output += '    <tr>'
       let i = 0
-      for (let prop in item) {
+      for (const prop in item) {
         const column = this.columns[i]
-        let nowrap = column.nowrap ? ` nowrap` : ''
-        let align = column.align ? ` align="${column.align}"` : ''
+        const nowrap = column.nowrap ? ' nowrap' : ''
+        const align = column.align ? ` align="${column.align}"` : ''
         output += `<td${align}${nowrap}>${item[prop]}</td>`
         i++
       }

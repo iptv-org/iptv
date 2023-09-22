@@ -141,6 +141,7 @@ To run scripts use the `npm run <script-name>` command.
 - `update`: (shorthand) sequentially runs the `api:load`, `playlist:generate`, `api:generate` and `readme:update` commands.
 - `deploy`: (shorthand) sequentially runs the `playlist:deploy` and `api:deploy` commands.
 - `report`: (shorthand) sequentially runs the `api:load` and `report:create` commands.
+- `lint`: сhecks the scripts for syntax errors.
 - `test`: runs a test of all the scripts described above.
 
 ## Workflows

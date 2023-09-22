@@ -1,4 +1,4 @@
-import { URL, Collection } from '../core'
+import { URL, Collection } from '@freearhey/core'
 import { Category, Language } from './index'
 
 type StreamProps = {
@@ -86,7 +86,7 @@ export class Stream {
   }
 
   noCategories(): boolean {
-    return this.categories.empty()
+    return this.categories.isEmpty()
   }
 
   hasCategory(category: Category): boolean {
@@ -94,7 +94,7 @@ export class Stream {
   }
 
   noLanguages(): boolean {
-    return this.languages.empty()
+    return this.languages.isEmpty()
   }
 
   hasLanguage(language: Language): boolean {
@@ -102,7 +102,7 @@ export class Stream {
   }
 
   noBroadcastArea(): boolean {
-    return this.broadcastArea.empty()
+    return this.broadcastArea.isEmpty()
   }
 
   isInternational(): boolean {
