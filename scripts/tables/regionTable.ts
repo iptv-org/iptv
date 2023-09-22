@@ -1,4 +1,5 @@
-import { Storage, HTMLTable, Collection, LogParser, LogItem, File } from '../core'
+import { Storage, Collection, File } from '@freearhey/core'
+import { HTMLTable, LogParser, LogItem } from '../core'
 import { Region } from '../models'
 import { DATA_DIR, LOGS_DIR, README_DIR } from '../constants'
 import { Table } from './table'
@@ -13,7 +14,7 @@ export class RegionTable implements Table {
 
     const parser = new LogParser()
     const logsStorage = new Storage(LOGS_DIR)
-    const generatorsLog = await logsStorage.read('generators.log')
+    const generatorsLog = await logsStorage.load('generators.log')
 
     let data = new Collection()
     parser
@@ -21,7 +22,7 @@ export class RegionTable implements Table {
       .filter((logItem: LogItem) => logItem.filepath.includes('regions/'))
       .forEach((logItem: LogItem) => {
         const file = new File(logItem.filepath)
-        const regionCode = file.getFilename().toUpperCase()
+        const regionCode = file.name().toUpperCase()
         const region: Region = regions.first((region: Region) => region.code === regionCode)
 
         if (region) {

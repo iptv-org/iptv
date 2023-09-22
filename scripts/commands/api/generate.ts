@@ -1,5 +1,6 @@
+import { Logger, Storage } from '@freearhey/core'
 import { API_DIR, STREAMS_DIR } from '../../constants'
-import { Logger, PlaylistParser, Storage } from '../../core'
+import { PlaylistParser } from '../../core'
 import { Stream } from '../../models'
 
 async function main() {
