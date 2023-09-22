@@ -1,4 +1,4 @@
-import { Collection } from '../core'
+import { Collection } from '@freearhey/core'
 import { Stream } from '../models'
 
 type PlaylistOptions = {
@@ -17,10 +17,10 @@ export class Playlist {
   }
 
   toString() {
-    let output = `#EXTM3U\n`
+    let output = '#EXTM3U\n'
 
     this.streams.forEach((stream: Stream) => {
-      output += stream.toString(this.options) + `\n`
+      output += stream.toString(this.options) + '\n'
     })
 
     return output
