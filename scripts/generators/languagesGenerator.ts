@@ -1,5 +1,5 @@
 import { Generator } from './generator'
-import { Collection, Storage, Logger } from '../core'
+import { Collection, Storage, Logger } from '@freearhey/core'
 import { Playlist, Language, Stream } from '../models'
 import { PUBLIC_DIR } from '../constants'
 
@@ -17,7 +17,9 @@ export class LanguagesGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    let streams = this.streams.orderBy(stream => stream.getTitle()).filter(stream => stream.isSFW())
+    const streams = this.streams
+      .orderBy(stream => stream.getTitle())
+      .filter(stream => stream.isSFW())
 
     let languages = new Collection()
     streams.forEach((stream: Stream) => {
