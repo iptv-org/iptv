@@ -1,5 +1,5 @@
 import { Generator } from './generator'
-import { Collection, Storage, Logger } from '../core'
+import { Collection, Storage, Logger } from '@freearhey/core'
 import { Country, Region, Subdivision, Stream, Playlist } from '../models'
 import { PUBLIC_DIR } from '../constants'
 
@@ -29,10 +29,10 @@ export class CountriesGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    let streams = this.streams
+    const streams = this.streams
       .orderBy([stream => stream.getTitle()])
       .filter((stream: Stream) => stream.isSFW())
-    let regions = this.regions.filter((region: Region) => region.code !== 'INT')
+    const regions = this.regions.filter((region: Region) => region.code !== 'INT')
 
     this.countries.forEach(async (country: Country) => {
       const countrySubdivisions = this.subdivisions.filter(
@@ -77,7 +77,7 @@ export class CountriesGenerator implements Generator {
     const internationalStreams = streams.filter(stream => stream.isInternational())
     if (internationalStreams.notEmpty()) {
       const playlist = new Playlist(internationalStreams, { public: true })
-      const filepath = `countries/int.m3u`
+      const filepath = 'countries/int.m3u'
       await this.storage.save(filepath, playlist.toString())
       this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
     }
