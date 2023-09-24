@@ -1,5 +1,6 @@
+import { Logger } from '@freearhey/core'
 import { CategoryTable, CountryTable, LanguageTable, RegionTable } from '../../tables'
-import { Logger, Markdown } from '../../core'
+import { Markdown } from '../../core'
 import { README_DIR } from '../../constants'
 import path from 'path'
 
