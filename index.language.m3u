@@ -133,6 +133,8 @@ https://cdn.jwplayer.com/live/events/r2qgHu7W.m3u8
 https://raw.githubusercontent.com/Sphinxroot/HSL/main/DM/fr/FranceBleuElsass.m3u8
 #EXTINF:-1 tvg-id="AddisTV.et" tvg-logo="https://i.imgur.com/kqHWrZ9.png" group-title="Amharic",Addis TV (720p)
 https://rrsatrtmp.tulix.tv/addis1/addis1multi.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AfricaTV1.et" tvg-logo="https://i.imgur.com/soDiTxg.jpeg" group-title="Amharic",Africa TV 1 (720p)
+http://africatv.live.net.sa:1935/live/africatv/playlist.m3u8
 #EXTINF:-1 tvg-id="DebubTV.et" tvg-logo="https://i.imgur.com/6TG5bYg.png" group-title="Amharic",Debub TV (720p) [Not 24/7]
 https://ythls.onrender.com/channel/UCnCYLFMXiN_bX-kCbn_fuIg.m3u8
 #EXTINF:-1 tvg-id="MerejaTV.et" tvg-logo="https://i.imgur.com/PaAacxF.png" group-title="Amharic",Mereja TV (1080p) [Not 24/7]
@@ -1464,12 +1466,6 @@ https://livecdn.fptplay.net/hda3/animaxport_hls.smil/playlist.m3u8
 https://origin1.noisypeak.com/4XhPa5v93P3za6G0cMyV/playlist.m3u8
 #EXTINF:-1 tvg-id="BeautifulLifeTV.tw" tvg-logo="https://i.imgur.com/hkwcBM9.png" group-title="Chinese",Beautiful Life TV
 https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
-#EXTINF:-1 tvg-id="CCTVWomensFashion.cn" tvg-logo="https://i.imgur.com/FVbP0aP.png" group-title="Chinese",CCTV-女性时尚 (576p)
-http://223.110.245.153/ott.js.chinamobile.com/PLTV/3/224/3221227026/index.m3u8
-#EXTINF:-1 tvg-id="CCTVPlus1.cn" tvg-logo="https://i.imgur.com/U8d4Is6.png" group-title="Chinese",CCTV+ 1 (600p) [Not 24/7]
-https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CCTVPlus2.cn" tvg-logo="https://i.imgur.com/qSg862A.png" group-title="Chinese",CCTV+ 2 (600p) [Not 24/7]
-https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CCTV1.cn" tvg-logo="https://i.imgur.com/TpA3cUl.png" group-title="Chinese",CCTV-1综合 (1080p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225618/index.m3u8
 #EXTINF:-1 tvg-id="CCTV2.cn" tvg-logo="https://i.imgur.com/ILamhwU.png" group-title="Chinese",CCTV-2财经 (1080p)
@@ -1502,6 +1498,12 @@ http://39.134.115.163:8080/PLTV/88888910/224/3221225638/index.m3u8
 http://hwrr.jx.chinamobile.com:8080/PLTV/88888888/224/3221225641/index.m3u8
 #EXTINF:-1 tvg-id="CCTV17.cn" tvg-logo="https://i.imgur.com/jSQURxS.png" group-title="Chinese",CCTV-17农业农村 (1080p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225908/index.m3u8
+#EXTINF:-1 tvg-id="CCTVWomensFashion.cn" tvg-logo="https://i.imgur.com/FVbP0aP.png" group-title="Chinese",CCTV-女性时尚 (576p)
+http://223.110.245.153/ott.js.chinamobile.com/PLTV/3/224/3221227026/index.m3u8
+#EXTINF:-1 tvg-id="CCTVPlus1.cn" tvg-logo="https://i.imgur.com/U8d4Is6.png" group-title="Chinese",CCTV+ 1 (600p) [Not 24/7]
+https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL1.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CCTVPlus2.cn" tvg-logo="https://i.imgur.com/qSg862A.png" group-title="Chinese",CCTV+ 2 (600p) [Not 24/7]
+https://cd-live-stream.news.cctvplus.com/live/smil:CHANNEL2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CCM.hk" tvg-logo="https://i.imgur.com/1VhXilw.png" group-title="Chinese",Celestial Classic 天映经典 (Celestial Classic Movies) (Indonesian Subtitle) (576p)
 http://210.210.155.37/qwr9ew/s/s31/index.m3u8
 #EXTINF:-1 tvg-id="CelestialMovies.hk" tvg-logo="https://i.imgur.com/Mb5ssnu.png" group-title="Chinese",Celestial Movies (Indonesian Subtitle) (576p)
@@ -1530,7 +1532,7 @@ https://pulltv1.wanfudaluye.com/live/tv1.m3u8
 https://pulltv2.wanfudaluye.com/live/tv2.m3u8
 #EXTINF:-1 tvg-id="DAAITV.id" tvg-logo="https://i.imgur.com/YC7JCHo.png" group-title="Chinese",DAAI TV (720p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/683cc426c19442a4ba31c53be5c963bb/index.m3u8
-#EXTINF:-1 tvg-id="DragonTVInternational.cn" tvg-logo="https://i.imgur.com/Ee8O9YN.png" group-title="Chinese",Dragon TV International (360p)
+#EXTINF:-1 tvg-id="DragonTVInternational.cn" tvg-logo="https://i.imgur.com/WqM6xnF.png" group-title="Chinese",Dragon TV International (360p)
 http://210.210.155.37/x6bnqe/s/s29/index.m3u8
 #EXTINF:-1 tvg-id="EBCFinancialNews.tw" tvg-logo="https://i.imgur.com/uFDkOhV.png" group-title="Chinese",EBC Financial News (東森財經新聞台) (1080p) [Not 24/7]
 http://seb.sason.top/sc/dscjxw_fhd.m3u8
@@ -1633,12 +1635,8 @@ http://61.238.6.49:8000/bysid/96
 http://210.210.155.37/x6bnqe/s/s94/index2.m3u8
 #EXTINF:-1 tvg-id="ZhejiangSatelliteTVInternational.cn" tvg-logo="https://i.imgur.com/XOL1Hph.png" group-title="Chinese",Zhejiang TV International
 https://hw-m-l.cztv.com/channels/lantian/channel10/1080p.m3u8
-#EXTINF:-1 tvg-id="DongxiangTV.cn" tvg-logo="https://i.imgur.com/GEDcQuU.png" group-title="Chinese",东乡电视台
-http://117.156.28.119/270000001111/1110000131/index.m3u8
 #EXTINF:-1 tvg-id="DragonTV.cn" tvg-logo="https://i.imgur.com/WqM6xnF.png" group-title="Chinese",东方卫视 (1080p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225658/index.m3u8
-#EXTINF:-1 tvg-id="ChinaWeatherTV.cn" tvg-logo="https://i.imgur.com/YPYVoyX.png" group-title="Chinese",中国天气 (576p) [Not 24/7]
-http://112.25.48.68/live/program/live/zgqx/1300000/mnf.m3u8
 #EXTINF:-1 tvg-id="YouManCartoonChannel.cn" tvg-logo="https://i.imgur.com/GZInf2W.png" group-title="Chinese",优漫卡通 (576p)
 http://183.207.249.15/PLTV/4/224/3221225933/index.m3u8
 #EXTINF:-1 tvg-id="BeijingSatelliteTV.cn" tvg-logo="https://i.imgur.com/vsktAez.png" group-title="Chinese",北京衛視 (1080p) [Geo-blocked]
@@ -1653,7 +1651,7 @@ http://39.134.115.163:8080/PLTV/88888910/224/3221225733/index.m3u8
 http://scgctvshow.sctv.com/hdlive/sctv7/index.m3u8
 #EXTINF:-1 tvg-id="TianjinTV.cn" tvg-logo="https://i.imgur.com/Bg24eaH.png" group-title="Chinese",天津卫视 (1080p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225698/index.m3u8
-#EXTINF:-1 tvg-id="AnhuiSatelliteTV.cn" tvg-logo="https://i.imgur.com/sgfXb6z.png" group-title="Chinese",安徽卫视 (1080p)
+#EXTINF:-1 tvg-id="AnhuiSatelliteTV.cn" tvg-logo="https://i.imgur.com/n5LABhB.png" group-title="Chinese",安徽卫视 (1080p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225691/index.m3u8
 #EXTINF:-1 tvg-id="ShandongTVSportsChannel.cn" tvg-logo="https://i.imgur.com/zX4RxvG.png" group-title="Chinese",山东体育 (1080p) [Geo-blocked]
 http://livealone302.iqilu.com/iqilu/typd.m3u8
@@ -1679,7 +1677,7 @@ http://39.134.115.163:8080/PLTV/88888910/224/3221225731/index.m3u8
 http://223.110.245.139/PLTV/4/224/3221227002/index.m3u8
 #EXTINF:-1 tvg-id="XuzhouEconomicLifeChannel.cn" tvg-logo="https://i.imgur.com/LcJZVV5.png" group-title="Chinese",徐州經濟生活 (1080p)
 http://223.110.245.167/ott.js.chinamobile.com/PLTV/3/224/3221225947/index.m3u8
-#EXTINF:-1 tvg-id="FangshanTV.cn" tvg-logo="https://i.imgur.com/YyYArWr.png" group-title="Chinese",房山电视台 (576p)
+#EXTINF:-1 tvg-id="FangshanTV.cn" tvg-logo="https://i.imgur.com/WJeOjFE.png" group-title="Chinese",房山电视台 (576p)
 https://live.funhillrm.com/2/playlist.m3u8
 #EXTINF:-1 tvg-id="DunhuangTV.cn" tvg-logo="https://i.imgur.com/RpGKOQd.jpg" group-title="Chinese",敦煌电视台 (1080p)
 http://117.156.28.119/270000001111/1110000028/index.m3u8
@@ -1743,8 +1741,6 @@ http://39.134.115.163:8080/PLTV/88888910/224/3221225692/index.m3u8
 http://112.25.48.68/live/program/live/jykt/1300000/mnf.m3u8
 #EXTINF:-1 tvg-id="QinghaiTV.cn" tvg-logo="https://i.imgur.com/Nyuxo8S.png" group-title="Chinese",青海卫视 (576p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225727/index.m3u8
-#EXTINF:-1 tvg-id="FashionShoppingChannel.cn" tvg-logo="https://i.imgur.com/M6Nm3Hw.png" group-title="Chinese",风尚购物 (1080p)
-http://183.207.248.71/cntv/live1/fengshanggw/fengshanggw
 #EXTINF:-1 tvg-id="HKSTV.hk" tvg-logo="https://i.imgur.com/UhwlxwL.png" group-title="Chinese",香港衛視 (576p) [Not 24/7]
 http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
 #EXTINF:-1 tvg-id="HighChannelTV.cn" tvg-logo="https://upload.wikimedia.org/wikipedia/zh/2/28/%E7%94%98%E8%82%83%E5%8D%AB%E8%A7%86.png" group-title="Chinese",高台电视台 (1080p)
@@ -4421,8 +4417,6 @@ https://dai2-playlistserver.aws.syncbak.com/playlist/18497172/master.m3u8?access
 https://livevideo01.king5.com/hls/live/2006665/live/live.m3u8
 #EXTINF:-1 tvg-id="KUSADT1.us" tvg-logo="https://i.imgur.com/Z4UD1O7.png" group-title="English",NBC 9 Denver CO (KUSA) (1080p)
 https://livevideo.tegnadigital.com/kusa/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4efbd693/KUSA/elvs/live.m3u8
-#EXTINF:-1 tvg-id="WBIRDT1.us" tvg-logo="https://i.imgur.com/FfScxXb.png" group-title="English",NBC 10 Knoxville TN (WBIR-TV) (1080p)
-https://livevideo01.wbir.com/hls/live/2016515/newscasts/live-2000.m3u8
 #EXTINF:-1 tvg-id="WXIADT1.us" tvg-logo="https://i.imgur.com/divkttQ.png" group-title="English",NBC 11 Atlanta GA (11Alive)
 https://livevideo.tegnadigital.com/wxia/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4efbd693/WXIA/elvs/live.m3u8
 #EXTINF:-1 tvg-id="WMTVDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="English",NBC 15 Madison WI (WMTV) (720p)
@@ -5619,6 +5613,8 @@ http://ott-cdn.ucom.am/s80/index.m3u8
 https://cdn.hklive.tv/xxxx/32/index.m3u8
 #EXTINF:-1 tvg-id="RTHKTV33.hk" tvg-logo="https://i.imgur.com/2MProun.png" group-title="English",RTHK TV 33 (港台電視33) (720p)
 https://live.astradamy.com/hk33/index.m3u8
+#EXTINF:-1 tvg-id="RTNChicago.us" tvg-logo="https://i.ibb.co/wwchqYk/889dc1-937ba3d8d4ed4331a668a1c544766318-mv2.png" group-title="English",RTN Chicago (720p) [Not 24/7]
+https://5bb3298db4821.streamlock.net/3707/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="RwandaTV.rw" tvg-logo="https://i.imgur.com/4nbGvxW.png" group-title="English",RTV Rwanda (480p) [Not 24/7]
 http://197.243.19.131:1935/rtv/rtv/chunklist.m3u8
 #EXTINF:-1 tvg-id="RushbyAMC.us" tvg-logo="https://i.imgur.com/yngqRL8.png" group-title="English",Rush by AMC (1080p)
@@ -9778,8 +9774,8 @@ https://5ce9406b73c33.streamlock.net/RSD/ngrp:livestream_all/playlist.m3u8
 https://stream2.xdevel.com/video1s3-7/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioZetaTV.it" tvg-logo="https://i.imgur.com/K2xLMin.png" group-title="Italian",Radio Zeta TV (1080p)
 https://streamcdnb1-dd782ed59e2a4e86aabf6fc508674b59.msvdn.net/live/S9346184/XEx1LqlYbNic/playlist_video.m3u8
-#EXTINF:-1 tvg-id="Rai1.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Rai_1_-_Logo_2016.svg/512px-Rai_1_-_Logo_2016.svg.png" group-title="Italian",Rai 1 (302p) [Geo-blocked]
-http://stream.tvtap.net:8081/live/it-rai1.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Rai1.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Rai_1_-_Logo_2016.svg/512px-Rai_1_-_Logo_2016.svg.png" group-title="Italian",Rai 1 (576p) [Geo-blocked]
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
 #EXTINF:-1 tvg-id="Rai2.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Rai_2_-_Logo_2016.svg/512px-Rai_2_-_Logo_2016.svg.png" group-title="Italian",Rai 2 (302p) [Geo-blocked]
 http://stream.tvtap.net:8081/live/it-rai2.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Rai3.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Rai_3_-_Logo_2016.svg/512px-Rai_3_-_Logo_2016.svg.png" group-title="Italian",Rai 3 (432p) [Geo-blocked]
@@ -10433,8 +10429,6 @@ http://bbstv.clouducs.com:1935/bbstv-live/livestream/playlist.m3u8
 https://btn.nowcdn.co.kr/btn/btnlive2m/playlist.m3u8
 #EXTINF:-1 tvg-id="Cchannel.kr" tvg-logo="https://i.ibb.co/GC73Fxt/logo.png" group-title="Korean",C Channel (1080p) [Not 24/7]
 https://ythls.onrender.com/channel/UC9Ac9DjBEmNqjAYxf8V1HPA.m3u8
-#EXTINF:-1 tvg-id="CGNTV.kr" tvg-logo="https://i.imgur.com/ID70Wy1.png" group-title="Korean",CGNTV (720p)
-https://cgntvliveweb-998.acs.wecandeo.com/ms/2850/998/index.m3u8
 #EXTINF:-1 tvg-id="ChannelA.kr" tvg-logo="https://i.imgur.com/W9laHPD.png" group-title="Korean",Channel A [Geo-blocked]
 http://channelalive.ktcdn.co.kr/chalivepc/_definst_/atv2/playlist.m3u8
 #EXTINF:-1 tvg-id="CJOnStyle.kr" tvg-logo="https://i.imgur.com/JiSfEBv.png" group-title="Korean",CJ OnStyle (540p)
@@ -12320,32 +12314,30 @@ http://painelvj.com.br/tvaguaboa2/tvaguaboa2.sdp/playlist.m3u8
 https://stmv1.srvstm.com/wtvbrasil/wtvbrasil/playlist.m3u8
 #EXTINF:-1 tvg-id="MusicChannelHungary.hu" tvg-logo="https://i.imgur.com/pzU6FrQ.png" group-title="Romanian",1Music Channel Hungary (576p)
 http://1music.hu/1music.m3u8
+#EXTINF:-1 tvg-id="A7TV.ro" tvg-logo="https://i.imgur.com/RmFg8BN.png" group-title="Romanian",A7TV (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCWZxOfINa92_vDXXsHZygKA.m3u8
 #EXTINF:-1 tvg-id="AcasaTV.md" tvg-logo="https://i.imgur.com/k8qpvHb.png" group-title="Romanian",Acasa TV (576p)
 http://hls.protv.md/acasatv/acasatv.m3u8
-#EXTINF:-1 tvg-id="AgroTV.ro" tvg-logo="https://i.imgur.com/S7X1PiC.png" group-title="Romanian",AgroTV (404p) [Not 24/7]
-https://stream1.1616.ro:1945/agro/livestream/playlist.m3u8?wowzatokenhash=NqSD4qaHc94SbTW05NBB-lXC78ZiAOIbnbUBOHj1DAM=
+#EXTINF:-1 tvg-id="AgroTV.ro" tvg-logo="https://i.imgur.com/S7X1PiC.png" group-title="Romanian",AgroTV (360p) [Not 24/7]
+https://agrotv.streamnet.ro/mobile_tv/agrotv.m3u8
 #EXTINF:-1 tvg-id="AlephBusiness.ro" tvg-logo="https://i.imgur.com/IqvZBeo.png" group-title="Romanian",Aleph Business (720p)
 https://stream-aleph.m.ro/Aleph/ngrp:Alephbiz9X16.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="AlephNews.ro" tvg-logo="https://i.imgur.com/qPRQZMI.png" group-title="Romanian",Aleph News (720p)
 https://stream-aleph.m.ro/Aleph/ngrp:Alephnewsmain.stream_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AlfaOmegaTV.ro" tvg-logo="https://i.imgur.com/StJg6Pu.png" group-title="Romanian",Alfa Omega TV (540p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlfaOmegaTV.ro" tvg-logo="https://i.imgur.com/StJg6Pu.png" group-title="Romanian",Alfa Omega TV (720p) [Not 24/7]
 http://s5.alfaomega.tv:1935/alfaomega/alfaomega1.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="Antena1.ro" tvg-logo="https://i.imgur.com/EPmwuuv.png" group-title="Romanian",Antena 1
-https://rundle.deta.dev/hls/LIVE$Antena1/6.m3u8/Level(19012010)?end=END&start=LIVE
-#EXTINF:-1 tvg-id="AntenaInternational.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/ro/1/13/Antena_Interna%C8%9Bional_Logo_2016.png" group-title="Romanian",Antena International
-https://rundle.deta.dev/hls/LIVE$AntenaInternational/6.m3u8/Level(19012010)?end=END&start=LIVE
+#EXTINF:-1 tvg-id="AngelusTV.ro" tvg-logo="https://i.ibb.co/R20QJ3L/angelus-tv-lgoo.png" group-title="Romanian",Angelus TV (720p)
+https://transmisiuni.ro/media/oracatolica/playlist.m3u8
 #EXTINF:-1 tvg-id="AntenaMonden.ro" tvg-logo="https://i.imgur.com/NF5qJMh.png" group-title="Romanian",Antena Monden (720p)
 https://stream1.antenaplay.ro/live/AntenaMonden/playlist.m3u8
-#EXTINF:-1 tvg-id="AntenaStars.ro" tvg-logo="https://i.imgur.com/lSSyfcO.png" group-title="Romanian",Antena Stars
-https://rundle.deta.dev/hls/LIVE$AntenaStars/6.m3u8/Level(19012010)?end=END&start=LIVE
 #EXTINF:-1 tvg-id="AntenaSport.ro" tvg-logo="https://i.imgur.com/jp8VX4E.png" group-title="Romanian",AntenaSport (720p) [Not 24/7]
-https://stream1.antenaplay.ro/dfs/farasecrete5/playlist.m3u8
-#EXTINF:-1 tvg-id="ArcadiaTelevision.ro" tvg-logo="https://i.imgur.com/lA4GYwJ.png" group-title="Romanian",Arcadia Television (1080p)
-http://www.arcadiatelevision.ro/ro/assets/vids/stream-9/stream.php/2500.m3u8
+https://stream1.antenaplay.ro/as/asrolive1/playlist.m3u8
+#EXTINF:-1 tvg-id="ArcadiaTelevision.ro" tvg-logo="https://i.imgur.com/lA4GYwJ.png" group-title="Romanian",Arcadia Television (1080p) [Not 24/7]
+https://office.softer.ro/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ArdealTV.ro" tvg-logo="https://i.imgur.com/5XwtFKd.png" group-title="Romanian",Ardeal TV (720p)
 http://89.36.196.28:1936/live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ArgesTV.ro" tvg-logo="https://i.imgur.com/qufz6nk.png" group-title="Romanian",Arges TV (720p)
-https://btutzctahuf0wjoq.cdn.streamingserver.io/hls/eczswx1nuka5c87tk4tenns3q4wwvy.m3u8
+https://btutzctahuf0wjoq.cdn.streamingserver.io/hls/yjvam8hlp2g3u08z02tv0yz66rq3cy.m3u8
 #EXTINF:-1 tvg-id="AtomicAcademyTV.ro" tvg-logo="https://i.imgur.com/ZbrDIbZ.png" group-title="Romanian",Atomic Academy TV (480p)
 https://atomic.streamnet.ro/academia.m3u8
 #EXTINF:-1 tvg-id="AtomicTV.ro" tvg-logo="https://i.imgur.com/O4uI0Uy.png" group-title="Romanian",Atomic TV (360p)
@@ -12354,26 +12346,30 @@ https://atomic.streamnet.ro/atomictv.m3u8
 https://origin1.noisypeak.com/4XhPa5v93P3za6G0cMyV/playlist.m3u8
 #EXTINF:-1 tvg-id="BanatTV.ro" tvg-logo="https://i.imgur.com/yVsocid.png" group-title="Romanian",Banat TV (720p)
 https://www.btv.ro/hls/banat-tv.m3u8
-#EXTINF:-1 tvg-id="BucovinaTV.ro" tvg-logo="https://i.imgur.com/7QHdiTO.png" group-title="Romanian",Bucovina TV (480p)
+#EXTINF:-1 tvg-id="BucovinaTV.ro" tvg-logo="https://i.imgur.com/7QHdiTO.png" group-title="Romanian",Bucovina TV (480p) [Not 24/7]
 http://46.4.14.12:9999/btvsvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="BusuiocTV.md" tvg-logo="https://i.imgur.com/CQtfBPu.png" group-title="Romanian",Busuioc TV (540p)
 https://busuioctv.iforward.eu/hls/busuioc.m3u8
+#EXTINF:-1 tvg-id="Canal33.ro" tvg-logo="https://i.imgur.com/3Jdw6Sq.png" group-title="Romanian",Canal 33 (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UChXVCKn5sa-e-bNXjX47lJw.m3u8
 #EXTINF:-1 tvg-id="CardioTVSRC.ro" tvg-logo="https://i.imgur.com/6Ab3KD6.png" group-title="Romanian",Cardio TV SRC (720p)
 https://5947cbf6e693a.streamlock.net/live/play2/playlist.m3u8
 #EXTINF:-1 tvg-id="CaTine.ro" tvg-logo="https://i.imgur.com/GFm1P51.png" group-title="Romanian",CaTine (720p)
 https://stream1.antenaplay.ro/live/CaTine/playlist.m3u8
-#EXTINF:-1 tvg-id="CineMaraton.ro" tvg-logo="https://i.imgur.com/BY8UZa0.png" group-title="Romanian",Cinemaraton
-https://rundle.deta.dev/hls/LIVE$CineMaraton/6.m3u8/Level(19012010)?end=END&start=LIVE
 #EXTINF:-1 tvg-id="ColumnaTV.ro" tvg-logo="https://i.imgur.com/C5dIgsc.png" group-title="Romanian",Columna TV (720p)
-http://142.132.136.139:1935/columnatv/live/playlist.m3u8
+http://live.columnatv.ro:1935/columnatv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ComedyPlay.ro" tvg-logo="https://i.imgur.com/Vt7fObg.png" group-title="Romanian",Comedy Play (720p)
 https://stream1.antenaplay.ro/live/ComedyPlay/playlist.m3u8
 #EXTINF:-1 tvg-id="CorneaTV.ro" tvg-logo="https://i.imgur.com/cn89fLa.jpg" group-title="Romanian",Cornea TV (720p) [Not 24/7]
 http://89.149.30.158:1935/CorneaTV/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="CredoTV.ro" tvg-logo="https://i.imgur.com/RD4TgcM.png" group-title="Romanian",Credo TV (720p) [Not 24/7]
-http://cdn.credonet.tv:1935/ctv/smil:livecredo.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Digi24.ro" tvg-logo="https://i.imgur.com/H3km8ic.png" group-title="Romanian",Digi 24
+http://cdn.credonet.tv:1935/ctv/livecredo/playlist.m3u8
+#EXTINF:-1 tvg-id="Digi24.ro" tvg-logo="https://i.imgur.com/H3km8ic.png" group-title="Romanian",Digi 24 (576p)
 https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
+#EXTINF:-1 tvg-id="DobrogeaTV.ro" tvg-logo="https://i.ibb.co/5vqQn2V/fb-logo.png" group-title="Romanian",Dobrogea TV (720p) [Not 24/7]
+https://ythls.onrender.com/channel/UCmYNKMD89Xaxnqg2t-LeZgQ.m3u8
+#EXTINF:-1 tvg-id="DottoTV.ro" tvg-logo="https://i.imgur.com/pfs882Z.png" group-title="Romanian",Dotto TV (720p)
+https://dotto.edvr.ro/live/index.m3u8
 #EXTINF:-1 tvg-id="DrochiaTV.md" tvg-logo="https://i.imgur.com/O6YZ0D5.png" group-title="Romanian",Drochia (1080p) [Not 24/7]
 https://hls.drochia.tv/tv/web.m3u8
 #EXTINF:-1 tvg-id="EbS.be" tvg-logo="https://i.imgur.com/DIIRPNN.png" group-title="Romanian",EbS Live (Europe by Satellite) (1080p)
@@ -12384,49 +12380,55 @@ https://euc-live.fl.freecaster.net/live/eucom/ebsp.m3u8
 http://188.173.24.23:9093
 #EXTINF:-1 tvg-id="EuronewsRomania.ro" tvg-logo="https://i.imgur.com/jUOVUXt.png" group-title="Romanian",Euronews Romania (1080p)
 https://ythls.onrender.com/channel/UCbATDExtWstHnwWELZnXNZA.m3u8
-#EXTINF:-1 tvg-id="FilmBoxPremiumRomania.ro" tvg-logo="https://i.imgur.com/RydfsE9.png" group-title="Romanian",Film Box
+#EXTINF:-1 tvg-id="ExclusivTV.ro" tvg-logo="https://i.ibb.co/Dbf4sY9/Exclusiv-TV.jpg" group-title="Romanian",Exclusiv TV (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCXxTnMoETkhNTmsqZc0JMhQ.m3u8
+#EXTINF:-1 tvg-id="TVSE.ro" tvg-logo="https://i.imgur.com/r4zKU1e.png" group-title="Romanian",Exploris (576p) [Not 24/7]
+http://89.38.8.130:39419
+#EXTINF:-1 tvg-id="FilmBoxPremiumRomania.ro" tvg-logo="https://i.imgur.com/RydfsE9.png" group-title="Romanian",FilmBox Romania (576p)
 http://94.230.240.17:8080/film_box/index.m3u8
-#EXTINF:-1 tvg-id="HappyChannel.ro" tvg-logo="https://i.imgur.com/kpFaiku.png" group-title="Romanian",Happy Channel
-https://rundle.deta.dev/hls/LIVE$HappyChannel/6.m3u8/Level(19012010)?end=END&start=LIVE
-#EXTINF:-1 tvg-id="HD365TV.ro" tvg-logo="https://i.imgur.com/2cLx4ja.png" group-title="Romanian",HD 365
+#EXTINF:-1 tvg-id="HD365TV.ro" tvg-logo="https://i.imgur.com/2cLx4ja.png" group-title="Romanian",HD365 TV (576p)
 https://testcam.go.ro:8080/hls/hd365.m3u8
 #EXTINF:-1 tvg-id="HelloTaste.ro" tvg-logo="https://i.imgur.com/jMrPm9p.png" group-title="Romanian",Hello Taste (720p)
 https://stream1.antenaplay.ro/live/HelloTaste/playlist.m3u8
-#EXTINF:-1 tvg-id="Hunedoara1.ro" tvg-logo="https://i.imgur.com/9bz15ad.png" group-title="Romanian",Hunedoara 1 (480p)
+#EXTINF:-1 tvg-id="Hunedoara1.ro" tvg-logo="https://i.imgur.com/9bz15ad.png" group-title="Romanian",Hunedoara 1 (480p) [Not 24/7]
 https://testcam.go.ro:8080/hls/hd1.m3u8
-#EXTINF:-1 tvg-id="IasiTVLife.ro" tvg-logo="https://i.imgur.com/HY7EL5e.png" group-title="Romanian",IasiTV Life (720p)
+#EXTINF:-1 tvg-id="IasiTVLife.ro" tvg-logo="https://i.imgur.com/HY7EL5e.png" group-title="Romanian",IasiTV Life (1080p) [Not 24/7]
 https://tv.streambox.ro/hls/itv/index.m3u8
 #EXTINF:-1 tvg-id="ImpactTVDance.ro" tvg-logo="https://i.imgur.com/G5mNdpE.png" group-title="Romanian",Impact TV Dance (1080p)
-http://tvradioimpact.go.ro:8080/tmp_hls/tvimpact/index.m3u8
+https://online.tvimpact.live/hls/dancetv.m3u8
 #EXTINF:-1 tvg-id="ImpactTVManele.ro" tvg-logo="https://i.imgur.com/G5mNdpE.png" group-title="Romanian",Impact TV Manele (1080p)
 https://online.tvimpact.live/hls/impact_tv.m3u8
-#EXTINF:-1 tvg-id="IneditTV.ro" tvg-logo="https://i.imgur.com/HcFpNwA.png" group-title="Romanian",Inedit TV (720p)
+#EXTINF:-1 tvg-id="IneditTV.ro" tvg-logo="https://i.imgur.com/HcFpNwA.png" group-title="Romanian",Inedit TV (720p) [Not 24/7]
 http://edge8.imcr.ro:1359/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="InfoTVRomania.ro" tvg-logo="https://i.imgur.com/rLzapB3.png" group-title="Romanian",Info TV România (1080p)
 https://vmi347009.contaboserver.net/live/stream/index.m3u8
 #EXTINF:-1 tvg-id="InformatiaTV.ro" tvg-logo="https://i.imgur.com/P1ZbVRg.png" group-title="Romanian",Informatia TV (360p)
 http://89.34.224.16/informatia.m3u8
-#EXTINF:-1 tvg-id="IntermediaTV.ro" tvg-logo="https://i.imgur.com/cNXM4Mu.png" group-title="Romanian",Intermedia TV (576p)
+#EXTINF:-1 tvg-id="IntermediaTV.ro" tvg-logo="https://i.imgur.com/cNXM4Mu.png" group-title="Romanian",Intermedia TV (576p) [Not 24/7]
 http://46.4.14.12:9999/intermedia1/playlist.m3u8
 #EXTINF:-1 tvg-id="JOBTV.ro" tvg-logo="https://i.imgur.com/UzcZNe3.png" group-title="Romanian",JOB TV (720p)
 https://jobtvvideo.space/hls/stream/index.m3u8
 #EXTINF:-1 tvg-id="KanalDRomania.ro" tvg-logo="https://i.imgur.com/15ILp0P.png" group-title="Romanian",Kanal D Romania (360p)
 https://stream1.kanald.ro/iphone/knd-live.m3u8
-#EXTINF:-1 tvg-id="KapitalTV.ro" tvg-logo="https://i.imgur.com/Q1PYwkZ.png" group-title="Romanian",Kapital TV (576p)
+#EXTINF:-1 tvg-id="KapitalTV.ro" tvg-logo="https://i.imgur.com/Q1PYwkZ.png" group-title="Romanian",Kapital TV (576p) [Not 24/7]
 https://testcam.go.ro:8080/hls/livestream.m3u8
-#EXTINF:-1 tvg-id="KissTV.ro" tvg-logo="https://i.imgur.com/NKfVymH.png" group-title="Romanian",Kiss TV (720p)
-https://tv.broadcasting.ro/memfs/a629c031-2170-4ee9-a36d-87a891aa3131.m3u8
+#EXTINF:-1 tvg-id="KissTV.ro" tvg-logo="https://i.imgur.com/NKfVymH.png" group-title="Romanian",Kiss TV (1080p)
+https://tv.broadcasting.ro/kisstv/a629c031-2170-4ee9-a36d-87a891aa3131.m3u8
 #EXTINF:-1 tvg-id="LightChannel.ro" tvg-logo="https://i.imgur.com/qskVMhF.png" group-title="Romanian",Light Channel (480p) [Not 24/7]
 http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
 #EXTINF:-1 tvg-id="LiraTV.es" tvg-logo="https://i.imgur.com/hBswXYZ.png" group-title="Romanian",LiraTV (720p)
-https://cloud3.streaminglivehd.com:1936/Liratv/Liratv/playlist.m3u8
+https://cloud2.streaminglivehd.com:1936/liratv/liratv/playlist.m3u8
 #EXTINF:-1 tvg-id="M9TVRomania.ro" tvg-logo="https://i.imgur.com/hRBNoVD.png" group-title="Romanian",M9TV (768p)
 https://testcam.go.ro:8080/hls/m9tv.m3u8
 #EXTINF:-1 tvg-id="MagicTV.ro" tvg-logo="https://i.imgur.com/sFIqiw4.png" group-title="Romanian",Magic TV (720p)
-https://tv.broadcasting.ro/memfs/925f90db-5c88-4190-a53d-5163cdffe6f4.m3u8
-#EXTINF:-1 tvg-id="MeteoTVTV.ro" tvg-logo="https://i.imgur.com/URCiHUs.png" group-title="Romanian",Meteo TV.TV (1080p)
-http://80.86.106.207:8000/play/1/index.m3u8
-#EXTINF:-1 tvg-id="MetropolaTV.ro" tvg-logo="https://i.imgur.com/Gzq05v8.png" group-title="Romanian",Metropola TV (1080p)
+https://tv.broadcasting.ro/magictv/925f90db-5c88-4190-a53d-5163cdffe6f4.m3u8
+#EXTINF:-1 tvg-id="MariaTVRomania.ro" tvg-logo="https://i.ibb.co/yFWsxNc/channels4-profile.jpg" group-title="Romanian",Maria TV România (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCMXP2cd--EkenT6FaE9rAjw.m3u8
+#EXTINF:-1 tvg-id="MediCOOLTV.ro" tvg-logo="https://i.ibb.co/PZzYqbK/MEDICOOL.png" group-title="Romanian",MediCOOL TV (720p)
+https://stream1.antenaplay.ro/live/MediCOOLTV/chunklist.m3u8
+#EXTINF:-1 tvg-id="MeteoTVTV.ro" tvg-logo="https://i.imgur.com/URCiHUs.png" group-title="Romanian",Meteo TV.TV (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCme7pPv6AZoSMsFbSYK0esg.m3u8
+#EXTINF:-1 tvg-id="MetropolaTV.ro" tvg-logo="https://i.imgur.com/Gzq05v8.png" group-title="Romanian",Metropola TV (1080p) [Not 24/7]
 http://81.196.109.35:1935/MetropolaTV/Metro/playlist.m3u8
 #EXTINF:-1 tvg-id="Mireasa.ro" tvg-logo="https://i.imgur.com/XiBna64.png" group-title="Romanian",Mireasa (720p)
 https://stream1.antenaplay.ro/live/MireasaExtra/playlist.m3u8
@@ -12447,6 +12449,8 @@ https://rtmp.digitalbroadcast.ro/moozhits/moozhits.m3u8
 #EXTINF:-1 tvg-id="MoozRo.ro" tvg-logo="https://i.imgur.com/Ft24x5T.png" group-title="Romanian",MoozRo (576p)
 #EXTVLCOPT:http-referrer=https://mooz.tv/live-ro/#MoozRo
 https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8
+#EXTINF:-1 tvg-id="MuscelTV.ro" tvg-logo="https://i.ibb.co/Bq9CHyn/Musceltv1.png" group-title="Romanian",Muscel TV (1080p)
+http://188.27.135.199:8099/hls/musceltv/index.m3u8
 #EXTINF:-1 tvg-id="N4.md" tvg-logo="https://i.imgur.com/W9UwCv7.png" group-title="Romanian",N4 (360p) [Not 24/7]
 https://web.sats.gstv.tech/cpl11/da8df281-1165-440a-8c86-959f71b695b6/N4web.m3u8
 #EXTINF:-1 tvg-id="NasulTV.ro" tvg-logo="https://i.imgur.com/iL2aOxY.png" group-title="Romanian",Naşul TV (720p) [Not 24/7]
@@ -12454,48 +12458,59 @@ https://5ab29cc78f681.streamlock.net/NasulTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="NorocTV.md" tvg-logo="https://i.imgur.com/XvYqpqG.png" group-title="Romanian",Noroc TV (576p) [Not 24/7]
 http://live.noroc.tv/hls/noroctv_chisinau.m3u8
 #EXTINF:-1 tvg-id="NovaTVBrasov.ro" tvg-logo="https://i.imgur.com/6IeHlF9.png" group-title="Romanian",Nova TV Brasov (576p) [Not 24/7]
-http://novapress.ro:1935/live/nova/playlist.m3u8
+http://novapress.ro:2022/live/nova/playlist.m3u8
 #EXTINF:-1 tvg-id="ObservatorNews.ro" tvg-logo="https://i.imgur.com/iv18ul9.png" group-title="Romanian",Observator News (720p)
 https://live1ag.antenaplay.ro/live_ObservatorNews/live_ObservatorNews.m3u8
+#EXTINF:-1 tvg-id="PloiestiTV.ro" tvg-logo="https://i.imgur.com/Y3p5ghv.png" group-title="Romanian",Ploiesti TV (1080p)
+https://v1.mediastreaming.ro/stream/hls/ploiestitv.m3u8
 #EXTINF:-1 tvg-id="AutoMotorundSport.de" tvg-logo="https://i.imgur.com/GGIV06c.png" group-title="Romanian",Pluto TV Auto Motor Sport (720p)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f760c3d41aa2d0007bfde19/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=1&deviceId=5f760c3d41aa2d0007bfde19&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=DE&serverSideAds=false&sid=c676a4b5-65d2-474a-b477-c04f8b88e727&terminate=false&userId=
 #EXTINF:-1 tvg-id="PrimaTV.ro" tvg-logo="https://i.imgur.com/p2umWAT.png" group-title="Romanian",Prima TV (404p) [Not 24/7]
 https://stream1.1616.ro:1945/prima/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ProTVNews.ro" tvg-logo="https://i.imgur.com/kZ8nkLC.png" group-title="Romanian",Pro TV News (1080p)
 https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0
+#EXTINF:-1 tvg-id="PROFI24TV.ro" tvg-logo="https://i.ibb.co/vJG0Tb8/Logonoubun-2.jpg" group-title="Romanian",PROFI 24 TV (576p)
+https://profi24-u3391.vm.elestio.app/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ProfitTV.ro" tvg-logo="https://i.imgur.com/uPmPAED.png" group-title="Romanian",Profit.ro (404p)
 https://stream1.1616.ro:1945/profit/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="PublikaTV.md" tvg-logo="https://i.imgur.com/Vyx6wo5.png" group-title="Romanian",Publika TV (540p)
 https://livebeta.publika.md/LIVE/P/1500.m3u8
 #EXTINF:-1 tvg-id="QubTV.ro" tvg-logo="https://i.imgur.com/GvyF2Wh.png" group-title="Romanian",Qub TV (720p)
 https://live.djemba.ro/live/qubtvlive/playlist.m3u8
-#EXTINF:-1 tvg-id="RapsodiaTV.ro" tvg-logo="https://i.ibb.co/TH1T2Y2/Rapsodia-TV.png" group-title="Romanian",Rapsodia TV
+#EXTINF:-1 tvg-id="RapsodiaTV.ro" tvg-logo="https://i.ibb.co/TH1T2Y2/Rapsodia-TV.png" group-title="Romanian",Rapsodia TV (576p)
 http://92.86.248.141:8080/ram/playlist.m3u8
-#EXTINF:-1 tvg-id="RealitateaTV.ro" tvg-logo="https://i.imgur.com/xhn6wVy.png" group-title="Romanian",Realitatea FM (Studio) (576p) [Not 24/7]
-https://live.realitatea.net/livertmp/plus/playlist.m3u8
+#EXTINF:-1 tvg-id="RealitateaTV.ro" tvg-logo="https://i.imgur.com/xhn6wVy.png" group-title="Romanian",Realitatea FM (Studio) (1080p) [Not 24/7]
+https://edge.realitatea.net/realitatea/radio_fq/playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaTV.md" tvg-logo="https://i.imgur.com/Ul4IIfX.png" group-title="Romanian",Realitatea Live (406p)
 https://realitatealive.md/tv/rlive.m3u8
-#EXTINF:-1 tvg-id="RealitateaPlus.ro" tvg-logo="https://i.imgur.com/p8O3H7K.png" group-title="Romanian",Realitatea Plus (720p)
+#EXTINF:-1 tvg-id="RealitateaPlus.ro" tvg-logo="https://i.imgur.com/p8O3H7K.png" group-title="Romanian",Realitatea Plus (720p) [Not 24/7]
 https://edge.realitatea.net/realitatea/plus_fq/playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaSportiva.ro" tvg-logo="https://i.imgur.com/BaEyZto.png" group-title="Romanian",Realitatea Sportivă (720p)
 https://streamx.realitatea.net/realitatea/sportiva_md/playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaStar.ro" tvg-logo="https://i.imgur.com/bNdpyAZ.png" group-title="Romanian",Realitatea Star (720p)
 https://streamx.realitatea.net/realitatea/star_md/playlist.m3u8
 #EXTINF:-1 tvg-id="RockTV.ro" tvg-logo="https://i.imgur.com/F69gAWa.png" group-title="Romanian",Rock TV (720p)
-https://tv.broadcasting.ro/memfs/85c83a80-4f71-4f2d-a8d6-43f676896bcb.m3u8
+https://tv.broadcasting.ro/rocktv/85c83a80-4f71-4f2d-a8d6-43f676896bcb.m3u8
 #EXTINF:-1 tvg-id="RomaniaTV.ro" tvg-logo="https://i.imgur.com/ZIfEp5I.png" group-title="Romanian",Romania TV (576p)
+#EXTVLCOPT:http-referrer=https://www.romaniatv.net/live
 https://livestream.romaniatv.net/clients/romaniatv/playlist.m3u8
 #EXTINF:-1 tvg-id="ROTVValencia.es" tvg-logo="https://i.imgur.com/0TDnVQ4.png" group-title="Romanian",ROTV Valencia (720p)
 https://rotv.romediavalencia.com:3839/live/rotvlive.m3u8
-#EXTINF:-1 tvg-id="RadioTelevizuneaDiasporei.ro" tvg-logo="https://i.imgur.com/jA1DnDu.png" group-title="Romanian",RTV Diasporei (720p)
+#EXTINF:-1 tvg-id="RTNChicago.us" tvg-logo="https://i.ibb.co/wwchqYk/889dc1-937ba3d8d4ed4331a668a1c544766318-mv2.png" group-title="Romanian",RTN Chicago (720p) [Not 24/7]
+https://5bb3298db4821.streamlock.net/3707/live1/playlist.m3u8
+#EXTINF:-1 tvg-id="RTVDiamant.uk" tvg-logo="https://i.ibb.co/XS9szYh/Cropped-logoq-1-1.png" group-title="Romanian",RTV Diamant (1080p) [Not 24/7]
+https://vdo.delhost.eu:3472/stream/play.m3u8
+#EXTINF:-1 tvg-id="RadioTelevizuneaDiasporei.ro" tvg-logo="https://i.imgur.com/jA1DnDu.png" group-title="Romanian",RTV Diasporei (720p) [Not 24/7]
 https://video2.lhdserver.es/diasporei/live.m3u8
+#EXTINF:-1 tvg-id="SenatulRomaniei.ro" tvg-logo="https://i.ibb.co/RT7XvxH/unnamed.jpg" group-title="Romanian",Senatul României (720p) [Not 24/7]
+https://ythls.onrender.com/channel/UCpZswGPkx4fBwaZ_U5scXDw.m3u8
 #EXTINF:-1 tvg-id="SmartTV.ro" tvg-logo="https://i.imgur.com/3QUH7WS.png" group-title="Romanian",Smart TV (720p)
 https://stream-aleph.m.ro/Aleph/ngrp:Smartv.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="SorTV.md" tvg-logo="https://i.imgur.com/BcfZgD8.png" group-title="Romanian",Sor TV (720p)
 http://188.237.212.16:8888/live/cameraFeed.m3u8
 #EXTINF:-1 tvg-id="SperantaTV.ro" tvg-logo="https://i.imgur.com/Yu17vJg.png" group-title="Romanian",Speranta TV (1080p)
 https://customer-x8zydurm357k8j9p.cloudflarestream.com/0dd00c080ff4cbe839a12c923610a55c/manifest/video.m3u8
-#EXTINF:-1 tvg-id="SuperTV.ro" tvg-logo="https://i.imgur.com/pzxUE0O.png" group-title="Romanian",Super TV (1084p)
+#EXTINF:-1 tvg-id="SuperTV.ro" tvg-logo="https://i.imgur.com/pzxUE0O.png" group-title="Romanian",Super TV (576p)
 http://iptv.supertv.ro:8000/play/a001/index.m3u8
 #EXTINF:-1 tvg-id="Tele7ABCHD.ro" tvg-logo="https://i.imgur.com/CheqyWH.png" group-title="Romanian",Tele7ABC HD (720p)
 https://live.tele7abc.ro/hls/stream/index.m3u8
@@ -12503,20 +12518,24 @@ https://live.tele7abc.ro/hls/stream/index.m3u8
 https://live.tele7music.ro/hls/stream/index.m3u8
 #EXTINF:-1 tvg-id="TeleM.md" tvg-logo="https://i.imgur.com/AUWuwbM.png" group-title="Romanian",TeleM (576p)
 https://tv.streambox.ro/hls/telem/index.m3u8
-#EXTINF:-1 tvg-id="TeleMBotosani.ro" tvg-logo="https://i.imgur.com/3EZ8CmJ.png" group-title="Romanian",TeleM Botosani (540p)
+#EXTINF:-1 tvg-id="TeleMBotosani.ro" tvg-logo="https://i.imgur.com/3EZ8CmJ.png" group-title="Romanian",TeleM Botosani (540p) [Not 24/7]
 http://89.137.197.15:8080/testing/pl5/playlist/ram/playlist.m3u8
-#EXTINF:-1 tvg-id="Telestar1.ro" tvg-logo="https://i.imgur.com/qSd8DTI.png" group-title="Romanian",Telestar1 (360p)
+#EXTINF:-1 tvg-id="TeleMIasi.ro" tvg-logo="https://i.imgur.com/LYvJHhS.png" group-title="Romanian",TeleM Iași (576p)
+https://tv.streambox.ro/hls/telem/index.m3u8
+#EXTINF:-1 tvg-id="Telestar1.ro" tvg-logo="https://i.imgur.com/qSd8DTI.png" group-title="Romanian",Telestar1 (360p) [Not 24/7]
 http://89.47.97.15/telestar/telestar.m3u8
-#EXTINF:-1 tvg-id="TezaurTV.ro" tvg-logo="https://i.imgur.com/t5eDZxU.png" group-title="Romanian",Tezaur TV (576p)
+#EXTINF:-1 tvg-id="TezaurTV.ro" tvg-logo="https://i.imgur.com/t5eDZxU.png" group-title="Romanian",Tezaur TV (576p) [Not 24/7]
 https://testcam.go.ro:8080/hls/tezaurtv.m3u8
 #EXTINF:-1 tvg-id="TezaurTV.md" tvg-logo="https://i.imgur.com/eAagwLW.png" group-title="Romanian",Tezaur TV (1080p)
 http://tezaur.mlbfan.org/tezaur/index.m3u8
+#EXTINF:-1 tvg-id="TraditionalTV.ro" tvg-logo="https://i.ibb.co/G5bNH48/Traditional-TV-HD.png" group-title="Romanian",Traditional TV (1080p)
+http://83.103.149.75:8085/udp/239.30.0.9:4000
+#EXTINF:-1 tvg-id="TrinitasTV.ro" tvg-logo="https://i.imgur.com/mOPEttN.png" group-title="Romanian",Trinitas TV (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCcqFHIDYfKsaJ5KXZjzW7ZQ.m3u8
 #EXTINF:-1 tvg-id="TVArad.ro" tvg-logo="https://i.imgur.com/4yZV72X.png" group-title="Romanian",TV Arad (720p)
 https://live.djemba.ro/live/tvaradlive/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBuzau.ro" tvg-logo="https://i.imgur.com/GhFmUVO.png" group-title="Romanian",TV Buzau (576p)
 http://95.77.16.67:8080
-#EXTINF:-1 tvg-id="TVSE.ro" tvg-logo="https://i.imgur.com/r4zKU1e.png" group-title="Romanian",TV SE (576p) [Not 24/7]
-http://89.38.8.130:39419
 #EXTINF:-1 tvg-id="TVSUD.ro" tvg-logo="https://i.imgur.com/m3Slmbe.png" group-title="Romanian",TV SUD (576p)
 https://stream.leetweb.ro/WebRTCApp/streams/118334672595255049029831.m3u8
 #EXTINF:-1 tvg-id="TVPlusSuceava.ro" tvg-logo="https://i.imgur.com/6T7w975.png" group-title="Romanian",TVPlus Suceava (576p)
@@ -12547,12 +12566,8 @@ https://mn-nl.mncdn.com/tvrtgmures_new/smil:tvrtgmures_new.smil/index.m3u8
 https://mn-nl.mncdn.com/tvrtimisoara_new/smil:tvrtimisoara_new.smil/index.m3u8
 #EXTINF:-1 tvg-id="TVSat.ro" tvg-logo="https://i.imgur.com/54GHZMv.png" group-title="Romanian",TVSat (576p) [Not 24/7]
 http://89.38.8.130:39443
-#EXTINF:-1 tvg-id="UTV.ro" tvg-logo="https://i.imgur.com/aBdz9IT.png" group-title="Romanian",UTV
-https://rundle.deta.dev/hls/LIVE$UTV.ro/6.m3u8/Level(19012010)?end=END&start=LIVE
 #EXTINF:-1 tvg-id="VoceaBasarabieiTV.md" tvg-logo="https://i.imgur.com/irP8QLs.png" group-title="Romanian",Vocea Basarabiei TV (720p) [Not 24/7]
 https://storage.voceabasarabiei.md/hls/vocea_basarabiei.m3u8
-#EXTINF:-1 tvg-id="ZUTV.ro" tvg-logo="https://i.imgur.com/1gtkGhB.png" group-title="Romanian",ZU TV
-https://rundle.deta.dev/hls/LIVE$ZuTelevision/6.m3u8/Level(19012010)?end=END&start=LIVE
 #EXTINF:-1 tvg-id="KanalD2.ro" tvg-logo="https://i.imgur.com/0SMSIm9.png" group-title="Romany",Kanal D2 (360p)
 https://stream2.kanald.ro/iphone/knd-live.m3u8
 #EXTINF:-1 tvg-id="1HDMusicTelevision.ru" tvg-logo="https://i.imgur.com/4Ww7CsR.png" group-title="Russian",1HD Music Television (404p) [Not 24/7]
@@ -17265,6 +17280,8 @@ https://canalzoom.itex.com.co:3027/live/canalzoombr1live.m3u8
 https://lb00zdigital.streamprolive.com/mnt/hls/live.m3u8
 #EXTINF:-1 tvg-id="AboodTV.tz" tvg-logo="https://i.imgur.com/vYEUncC.jpg" group-title="Swahili",Abood TV (240p) [Not 24/7]
 https://goliveafrica.media:9998/live/644db46d1b776/index.m3u8
+#EXTINF:-1 tvg-id="AfricaTV2.tz" tvg-logo="https://i.imgur.com/GXa37c7.png" group-title="Swahili",Africa TV 2 (720p)
+http://africatv.live.net.sa:1935/live/africatv2/playlist.m3u8
 #EXTINF:-1 tvg-id="CitizenExtra.ke" tvg-logo="https://i.imgur.com/16d8NJd.jpg" group-title="Swahili",Citizen Extra (720p)
 https://74937.global.ssl.fastly.net/5ea49827ff3b5d7b22708777/live_40c5808063f711ec89a87b62db2ecab5/index.m3u8
 #EXTINF:-1 tvg-id="CMTvKenya.ke" tvg-logo="https://i.imgur.com/ewHBokK.jpg" group-title="Swahili",CMTv Kenya (576p) [Not 24/7]
@@ -17309,6 +17326,8 @@ https://vod.tv7.fi/tv7-se/smil:tv7-se.smil/playlist.m3u8
 http://cdn-kanal10.crossnet.net:1935/kanal10/kanal10asia/playlist.m3u8
 #EXTINF:-1 tvg-id="KotiTV.fi" tvg-logo="https://i.imgur.com/zkXpvJ8.png" group-title="Swedish",KotiTV (720p) [Not 24/7]
 https://kotitv.digitacdn.net/amlst:kotitv.amlst/playlist.m3u8
+#EXTINF:-1 tvg-id="LifeStyleTV.se" tvg-logo="https://i.imgur.com/0mreWrM.jpg" group-title="Swedish",LifeStyleTV (1080p)
+https://app.viloud.tv/hls/channel/711fd3f3a4728449889ee22ba72958ff.m3u8
 #EXTINF:-1 tvg-id="MissionAsia.se" tvg-logo="https://i.imgur.com/B5mKwF6.png" group-title="Swedish",Mission Asia (1080p)
 https://livecdn.live247stream.com/missionasia/tv/playlist.m3u8
 #EXTINF:-1 tvg-id="MTV3.fi" tvg-logo="https://i.imgur.com/OJWDnUx.png" group-title="Swedish",MTV3 (720p)
@@ -18796,10 +18815,6 @@ https://adultswim-vodlive.cdn.turner.com/tim-and-eric/stream.m3u8
 https://adultswim-vodlive.cdn.turner.com/tim-and-eric/stream_de.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Adult Swim Williams Stream (1080p) [Geo-blocked]
 https://adultswim-vodlive.cdn.turner.com/live/williams-stream/stream_html5.m3u8
-#EXTINF:-1 tvg-id="AfricaTV1.ng" tvg-logo="" group-title="Undefined",Africa TV 1 (720p)
-http://africatv.live.net.sa:1935/live/africatv/playlist.m3u8
-#EXTINF:-1 tvg-id="AfricaTV2.ng" tvg-logo="" group-title="Undefined",Africa TV 2 (720p)
-http://africatv.live.net.sa:1935/live/africatv2/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Africanews Français (720p) [Not 24/7]
 https://ythls.onrender.com/channel/UC25EuGAePOPvPrUA5cmu3dQ.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",AFV Family
@@ -18983,6 +18998,8 @@ http://223.110.245.165/ott.js.chinamobile.com/PLTV/3/224/3221225534/index.m3u8
 http://223.110.245.170/PLTV/3/224/3221225534/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",CCTV-老故事 (576p)
 http://223.110.245.145/ott.js.chinamobile.com/PLTV/3/224/3221227043/index.m3u8
+#EXTINF:-1 tvg-id="CGNTV.kr" tvg-logo="" group-title="Undefined",CGNTV (720p)
+https://cgntvliveweb-998.acs.wecandeo.com/ms/2850/998/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",CHILL LATINO
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=1085
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Cinema Hausa (720p)
@@ -19333,8 +19350,6 @@ https://raw.githubusercontent.com/Sphinxroot/HSL/main/DM/fr/LeMedia.m3u8
 https://origin3.afxp.telemedia.co.za/PremiumFree/lifetv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Lifestyle by Binge
 https://e46fa4a445464f8a9150fa7d510eb85c.mediatailor.us-west-2.amazonaws.com/v1/master/2d2d0d97b0e548f025b2598a69b55bf30337aa0e/npp/TGHMDGWK71ARM14CUY4P/hls3/now_-1m_15s/m.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",LifeStyleTV (1080p)
-https://app.viloud.tv/hls/channel/711fd3f3a4728449889ee22ba72958ff.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Lite FM (720p) [Not 24/7]
 https://ythls.onrender.com/channel/UCzDknC7OXx6l9eEsgugjU2w.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",LOL (720p)
@@ -20385,6 +20400,8 @@ http://112.25.48.68/live/program/live/dnwshd/4000000/mnf.m3u8
 http://117.169.120.140:8080/live/dongnanstv/.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",东南卫视 (1080p)
 http://223.110.254.205:6610/cntv/live1/n-dongnanstv/n-dongnanstv/1.m3u8
+#EXTINF:-1 tvg-id="DongxiangTV.cn" tvg-logo="" group-title="Undefined",东乡电视台
+http://117.156.28.119/270000001111/1110000131/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",东至影视 (576p) [Not 24/7]
 http://223.247.33.124:1935/live/yingshi/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",东至文化资讯 (576p) [Not 24/7]
@@ -20395,6 +20412,8 @@ http://223.247.33.124:1935/live/zonghe/playlist.m3u8
 http://223.110.245.161/ott.js.chinamobile.com/PLTV/3/224/3221227027/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",中国交通 (576p)
 http://ott.js.chinamobile.com/PLTV/3/224/3221227027/index.m3u8
+#EXTINF:-1 tvg-id="ChinaWeatherTV.cn" tvg-logo="" group-title="Undefined",中国天气 (576p) [Not 24/7]
+http://112.25.48.68/live/program/live/zgqx/1300000/mnf.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",中国教育1 (1080p) [Not 24/7]
 http://39.134.39.39/PLTV/88888888/224/3221226282/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",中国气象 (576p) [Not 24/7]
@@ -21181,6 +21200,8 @@ http://58.222.151.43:1935/live/xwzhpc/playlist.m3u8
 http://visit.jjbctv.com:1935/live/xwzhpc/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",静宁综合 (1080p)
 http://117.156.28.119/270000001111/1110000147/index.m3u8
+#EXTINF:-1 tvg-id="FashionShoppingChannel.cn" tvg-logo="" group-title="Undefined",风尚购物 (1080p)
+http://183.207.248.71/cntv/live1/fengshanggw/fengshanggw
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",餘姚姚江文化 (576p) [Not 24/7]
 https://l.cztvcloud.com/channels/lantian/SXyuyao2/720p.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",高清电影 (1080p)
