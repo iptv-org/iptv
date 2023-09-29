@@ -6,7 +6,7 @@ labels: ['streams:add']
 body:
   - type: input
     attributes:
-      label: Channel ID
+      label: Channel ID (required)
       description: Unique channel ID from [iptv-org.github.io](https://iptv-org.github.io/). If you can't find the channel you want in the list, please let us know through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=channels_add.yml&title=Add%3A+) before posting your request.
       placeholder: 'BBCAmericaEast.us'
     validations:
@@ -20,7 +20,7 @@ body:
 
   - type: input
     attributes:
-      label: Stream URL
+      label: Stream URL (required)
       description: Link to the stream
       placeholder: 'https://example.com/playlist.m3u8'
     validations:
@@ -59,7 +59,7 @@ body:
 
   - type: textarea
     attributes:
-      label: Notes (optional)
+      label: Notes
       description: 'Anything else we should know about this broadcast?'
 
   - type: checkboxes
