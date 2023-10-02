@@ -108,7 +108,7 @@ http://example.com/stream.m3u8
   - `supported-categories.md`: list of supported categories.
   - `supported-regions.md`: list of supported regions.
   - `template.md`: template for `README.md`.
-- `scripts/`: contains all the scripts used in GitHub workflows.
+- `scripts/`: contains all scripts used in the repository.
 - `streams/`: contains all streams broken down by the country from which they are broadcast.
 - `tests/`: contains tests to check the scripts.
 - `CONTRIBUTING.md`: file you are currently reading.
