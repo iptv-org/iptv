@@ -248,6 +248,8 @@ https://svs.itworkscdn.net/almasiralive/almasira.smil/playlist.m3u8
 https://svs.itworkscdn.net/almasiramubacherlive/almasira.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AlMayadeenTV.lb" tvg-logo="https://i.imgur.com/GtQOKeW.png" group-title="Arabic",Al Mayadeen (576p)
 https://mdnlv.cdn.octivid.com/almdn/smil:mpegts.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AlNajahNews.ps" tvg-logo="https://i.imgur.com/c2bwn4G.png" group-title="Arabic",Al Najah News (720p)
+https://streaming.najah.edu:8443/hls/AlNajah.m3u8
 #EXTINF:-1 tvg-id="AlQaheraNews.eg" tvg-logo="https://i.imgur.com/37t7yfO.png" group-title="Arabic",Al Qahera News (1080p) [Not 24/7]
 https://ythls.onrender.com/channel/UCcu3RolEOalAMef4Lt3uZLg.m3u8
 #EXTINF:-1 tvg-id="AlQamarTV.ae" tvg-logo="https://i.imgur.com/zkBT0C8.png" group-title="Arabic",Al Qamar TV (360p)
@@ -522,6 +524,8 @@ https://video1.getstreamhosting.com:1936/8320/8320/playlist.m3u8
 https://account20.livebox.co.in/charleshls/live.m3u8
 #EXTINF:-1 tvg-id="HekayaTV.ps" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/71/Nothing_whitespace_blank.png" group-title="Arabic",Hekaya TV (720p)
 https://streaming.zaytonatube.com:8081/Hekaya_New_ST/hekayans/playlist.m3u8
+#EXTINF:-1 tvg-id="Hettin.ps" tvg-logo="https://i.imgur.com/hlAe6Ea.png" group-title="Arabic",Hettin
+https://live.hettin.tv/stream/hls/hettin.m3u8
 #EXTINF:-1 tvg-id="HodHodArabicTV.ir" tvg-logo="https://i.imgur.com/UGu9xGP.png" group-title="Arabic",HodHod Arabic TV (540p)
 https://nl2.livekadeh.com/hls2/hodhodarabic.m3u8
 #EXTINF:-1 tvg-id="I24NewsArabic.il" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/LOGO_i24NEWS.png/512px-LOGO_i24NEWS.png" group-title="Arabic",I24 News Arabic (720p)
@@ -1217,7 +1221,7 @@ https://us170.jagobd.com:447/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF
 https://ythls.onrender.com/channel/UCdF5Q5QVbYstYrTfpgUl0ZA.m3u8
 #EXTINF:-1 tvg-id="ZeeBiharJharkhand.in" tvg-logo="https://i.imgur.com/e26mQ7x.png" group-title="Bhojpuri",Zee Bihar Jharkhand (720p)
 https://d3dxf2v5wg5rcy.cloudfront.net/out/v1/349f643193e347609b16671d8e0bfb4a/index.m3u8
-#EXTINF:-1 tvg-id="B1TV.ba" tvg-logo="https://i.imgur.com/60t5epe.png" group-title="Bosnian",B1 TV (1080p)
+#EXTINF:-1 tvg-id="B1TV.ba" tvg-logo="https://i.imgur.com/60t5epe.png" group-title="Bosnian",B1 TV (1080p) [Not 24/7]
 http://wowza.bihnet.net:88/hls/b1-live.m3u8
 #EXTINF:-1 tvg-id="BHRT.ba" tvg-logo="https://i.imgur.com/01bZ5rw.png" group-title="Bosnian",BHRT (720p) [Geo-blocked]
 https://bhrtstream.bhtelecom.ba/bhrtportal.m3u8
@@ -1227,7 +1231,7 @@ https://euc-live.fl.freecaster.net/live/eucom/ebsp.m3u8
 https://ythls.onrender.com/channel/UCCg4AIJUdOL0A_90Mcj1ilA.m3u8
 #EXTINF:-1 tvg-id="Kanal6.ba" tvg-logo="https://i.imgur.com/GGhvR0l.png" group-title="Bosnian",Kanal 6 (288p)
 https://restreamer1.tnt.ba/hls/kanal6.m3u8
-#EXTINF:-1 tvg-id="RTVGlasDrine.ba" tvg-logo="https://i.imgur.com/9NgxOdb.png" group-title="Bosnian",RTV Glas Drine (404p)
+#EXTINF:-1 tvg-id="RTVGlasDrine.ba" tvg-logo="https://i.imgur.com/9NgxOdb.png" group-title="Bosnian",RTV Glas Drine (404p) [Not 24/7]
 http://glasdrine.cutuk.net:8081/433ssdsw/GlasDrineSD/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVHB.ba" tvg-logo="https://i.imgur.com/cH7UQuX.png" group-title="Bosnian",RTV Herceg-Bosne (576p) [Not 24/7]
 https://prd-hometv-live-open.spectar.tv/ERO_1_083/playlist.m3u8
@@ -1777,25 +1781,35 @@ https://euc-live.fl.freecaster.net/live/eucom/ebs.m3u8
 https://euc-live.fl.freecaster.net/live/eucom/ebsp.m3u8
 #EXTINF:-1 tvg-id="HRT1.hr" tvg-logo="https://i.imgur.com/lDSctzX.png" group-title="Croatian",HRT 1 (720p)
 https://webtvstream.bhtelecom.ba/hls9/hrt1_1200.m3u8
+#EXTINF:-1 tvg-id="HRT2.hr" tvg-logo="https://i.imgur.com/yyePcl1.png" group-title="Croatian",HRT 2 (720p)
+https://webtvstream.bhtelecom.ba/hls9/hrt2_1200.m3u8
+#EXTINF:-1 tvg-id="HRT3.hr" tvg-logo="https://i.imgur.com/f1RUsfN.png" group-title="Croatian",HRT 3 (720p)
+https://webtvstream.bhtelecom.ba/hls9/hrt3_1200.m3u8
 #EXTINF:-1 tvg-id="KlapeiTambureTV.hr" tvg-logo="https://i.imgur.com/sKj3dgc.png" group-title="Croatian",Klape i Tambure TV (1080p)
 https://stream.cmctv.hr:49998/kit/live.m3u8
 #EXTINF:-1 tvg-id="KlasikTV.hr" tvg-logo="https://i.imgur.com/gN0iP9m.png" group-title="Croatian",Klasik TV (576p) [Not 24/7]
 https://178.253.194.105/klasiktv/playlist.m3u8
+#EXTINF:-1 tvg-id="LaudatoTV.hr" tvg-logo="https://i.imgur.com/nUAsUcR.png" group-title="Croatian",Laudato TV (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCMNltXN6fWur0K8Z1oubFPA.m3u8
 #EXTINF:-1 tvg-id="LibertasTV.hr" tvg-logo="https://i.imgur.com/4R4fhbd.png" group-title="Croatian",Libertas TV (1080p)
 https://stream.luci.xyz/hls/LTV.m3u8
-#EXTINF:-1 tvg-id="OTV.hr" tvg-logo="https://i.imgur.com/67zVdu2.png" group-title="Croatian",OTV (720p)
+#EXTINF:-1 tvg-id="OTV.hr" tvg-logo="https://i.imgur.com/67zVdu2.png" group-title="Croatian",OTV (720p) [Not 24/7]
 https://stream.agatin.hr:3559/live/otvlive.m3u8
-#EXTINF:-1 tvg-id="RadioTelevizijaBanovina.hr" tvg-logo="https://i.imgur.com/gCFgC5D.png" group-title="Croatian",Radio Televizija Banovina (720p)
+#EXTINF:-1 tvg-id="RadioTelevizijaBanovina.hr" tvg-logo="https://i.imgur.com/gCFgC5D.png" group-title="Croatian",Radio Televizija Banovina (1080p) [Not 24/7]
 https://pool.alter-media.hr:1936/live/myStream/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="RTLCroatia.hr" tvg-logo="https://i.imgur.com/akAa45j.png" group-title="Croatian",RTL Croatia (1080p)
 https://d1cs5tlhj75jxe.cloudfront.net/rtl/playlist.m3u8
 #EXTINF:-1 tvg-id="RTLKockica.hr" tvg-logo="https://i.imgur.com/C7H5bJs.png" group-title="Croatian",RTL Kockica (1080p)
 https://d1rzyyum8t0q1e.cloudfront.net/rtl-kockica/playlist.m3u8
+#EXTINF:-1 tvg-id="STV.hr" tvg-logo="https://i.imgur.com/Z3yRl17.png" group-title="Croatian",STV (720p)
+http://89.201.163.244:8080/hls/hdmi.m3u8
+#EXTINF:-1 tvg-id="TrendTV.hr" tvg-logo="https://i.imgur.com/4SmNISY.jpg" group-title="Croatian",Trend TV (480p)
+http://185.62.75.22:1935/trend/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVJadran.hr" tvg-logo="https://i.imgur.com/UWMHnOG.png" group-title="Croatian",TV Jadran (720p) [Not 24/7]
 https://tvjadran.stream.agatin.hr:3412/live/tvjadranlive.m3u8
-#EXTINF:-1 tvg-id="TVNova.hr" tvg-logo="https://i.imgur.com/gFjJ7YB.png" group-title="Croatian",TV Nova
+#EXTINF:-1 tvg-id="TVNova.hr" tvg-logo="https://i.imgur.com/gFjJ7YB.png" group-title="Croatian",TV Nova (720p)
 https://stream.agatin.hr:3727/live/tvnovalive.m3u8
-#EXTINF:-1 tvg-id="TVZapad.hr" tvg-logo="https://i.imgur.com/cgCeX12.png" group-title="Croatian",TV Zapad (1080p)
+#EXTINF:-1 tvg-id="TVZapad.hr" tvg-logo="https://i.imgur.com/cgCeX12.png" group-title="Croatian",TV Zapad (1080p) [Not 24/7]
 http://webtv.zapad.tv:8080/memfs/1ad23803-84c3-41c7-aa91-fce4c7eac52e.m3u8
 #EXTINF:-1 tvg-id="CSFilm.cz" tvg-logo="https://i.imgur.com/BAAuBB2.png" group-title="Czech",CS Film (1080p)
 https://st01-2.iptv.joj.sk/106-tv-pc.m3u8
@@ -2688,33 +2702,33 @@ https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_e
 #EXTINF:-1 tvg-id="BBCOneEastMidlands.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One East Midlands (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_midlands/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneYorkshire.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One East Yorkshire (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_east_yorkshire/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_east_yorkshire/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneEngland.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One HD (720p) [Geo-blocked]
-https://vs-cmaf-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_hd/iptv_hd_abr_v1.mpd
+https://vs-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="BBCOneLondon.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One London (720p) [Geo-blocked]
-https://vs-cmaf-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_london/iptv_hd_abr_v1.mpd
+https://vs-cmaf-push-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_london/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="BBCOneNorthEastCumbria.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One North East (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_north_east/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_east/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneNorthWest.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One North West (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_north_west/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneNorthernIreland.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/BBC_One_Northern_Ireland_2021.svg/512px-BBC_One_Northern_Ireland_2021.svg.png" group-title="English",BBC One Northern Ireland HD (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_northern_ireland_hd/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneScotland.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/c/c1/BBC_One_Scotland_2021.png" group-title="English",BBC One Scotland HD (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_scotland_hd/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_scotland_hd/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneSouth.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One South (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_south/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneSouthEast.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One South East (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_south_east/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south_east/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneSouthWest.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One South West (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_south_west/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneWales.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/BBC_One_Wales_2021.svg/512px-BBC_One_Wales_2021.svg.png" group-title="English",BBC One Wales (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_wales_hd/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_wales_hd/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneWest.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One West (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_west/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneWestMidlands.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One West Midlands (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_west_midlands/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_west_midlands/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCOneYorksLincs.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/BBC_One_logo_2021.svg/512px-BBC_One_logo_2021.svg.png" group-title="English",BBC One Yorks (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_one_yorks/pc_hd_abr_v2.mpd
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_one_yorks/pc_hd_abr_v2.mpd
 #EXTINF:-1 tvg-id="BBCParliament.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/BBC_Parliament_Logo.svg/512px-BBC_Parliament_Logo.svg.png" group-title="English",BBC Parliament (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_parliament/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="BBCRedButton1.uk" tvg-logo="https://i.imgur.com/JX6txXq.png" group-title="English",BBC Red Button 1 (720p) [Geo-blocked]
@@ -2766,7 +2780,7 @@ https://ve-cmaf-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uk_sport_s
 #EXTINF:-1 tvg-id="BBCRedButton24.uk" tvg-logo="https://i.imgur.com/g2Aga13.png" group-title="English",BBC Red Button 24 (720p) [Geo-blocked]
 https://ve-cmaf-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uk_sport_stream_24/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="BBCScotland.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/BBC_Scotland_2021_%28channel%29.svg/512px-BBC_Scotland_2021_%28channel%29.svg.png" group-title="English",BBC Scotland HD (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_scotland_hd/iptv_hd_abr_v1.mpd
+https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_scotland_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="BBCThree.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/BBC_Three_2022.svg/512px-BBC_Three_2022.svg.png" group-title="English",BBC Three HD (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_three_hd/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="BBCTorontoGaundaPunjab.ca" tvg-logo="https://i.imgur.com/uSX4YXL.png" group-title="English",BBC Toronto Gaunda Punjab (720p) [Not 24/7]
@@ -7454,7 +7468,7 @@ http://lakay.online/public/telelabrise/index.m3u8
 https://raw.githubusercontent.com/azgaresncf/strm2hls/main/streams/tvctklive.m3u8
 #EXTINF:-1 tvg-id="Teva.fr" tvg-logo="https://i.imgur.com/kDW0hN5.png" group-title="French",Téva
 https://raw.githubusercontent.com/Sphinxroot/HSL/main/teva.m3u8
-#EXTINF:-1 tvg-id="TF1.fr" tvg-logo="https://i.imgur.com/QxHt9NC.png" group-title="French",TF 1
+#EXTINF:-1 tvg-id="TF1.fr" tvg-logo="https://i.imgur.com/QxHt9NC.png" group-title="French",TF1 (1080p)
 http://livetv.ktv.zone/3/play.m3u8
 #EXTINF:-1 tvg-id="TF1SeriesFilms.fr" tvg-logo="https://i.imgur.com/4CJIDKQ.png" group-title="French",TF1 Series Films
 http://livetv.ktv.zone/22/play.m3u8
@@ -11170,7 +11184,7 @@ https://hls.avang.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="AyenehTV.ir" tvg-logo="https://i.imgur.com/aHdixeT.png" group-title="Persian",Ayeneh TV (720p) [Not 24/7]
 https://livestream.5centscdn.com/cls040318/b0d2763968fd0bdd2dc0d44ba2abf9ce.sdp/index.m3u8
 #EXTINF:-1 tvg-id="BBCPersian.uk" tvg-logo="https://i.imgur.com/4uTMnPb.png" group-title="Persian",BBC Persian (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=3/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_dash_live.mpd
+https://vs-cmaf-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_dash_live.mpd
 #EXTINF:-1 tvg-id="BravoFarsiTV.ir" tvg-logo="https://i.ibb.co/yynxRTS/Bravo-Farsi.jpg" group-title="Persian",Bravo Farsi TV (360p)
 https://bravoohls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="CafeTradeTV.us" tvg-logo="https://i.ibb.co/GW4cMfc/cafe-trade-tv.png" group-title="Persian",Cafe Trade TV (720p)
@@ -12511,6 +12525,8 @@ http://89.254.128.5:22280/8tv_hd/index.m3u8
 http://95.46.208.8:24433/art
 #EXTINF:-1 tvg-id="9Volna.ru" tvg-logo="https://i.imgur.com/zmnSoBA.png" group-title="Russian",9 Волна (576p) [Geo-blocked]
 http://cdn-01.bonus-tv.ru:8080/9volna/playlist.m3u8
+#EXTINF:-1 tvg-id="Channel12.ru" tvg-logo="https://i.imgur.com/OA9hm6e.png" group-title="Russian",12 канал (1080p)
+https://12channel.bonus-tv.ru/cdn/12channel/playlist.m3u8
 #EXTINF:-1 tvg-id="360deg.ru" tvg-logo="https://i.imgur.com/VTJqdoX.png" group-title="Russian",360° (1080p) [Not 24/7]
 https://edge2-tv-ll.facecast.io/evacoder_hls_hi/CkxfR1xNUAJwTgtXTBZTAJli/index.m3u8
 #EXTINF:-1 tvg-id="black.ru" tvg-logo="https://i.imgur.com/Q4A6ci4.png" group-title="Russian",.black Russia (480p) [Geo-blocked]
@@ -13170,8 +13186,6 @@ https://d3ojytvj4doga3.cloudfront.net/app-23764-1566/ngrp:Jq3SvH9h_all/playlist.
 https://rtvbn.tv:8080/live/index.m3u8
 #EXTINF:-1 tvg-id="DMSat.rs" tvg-logo="https://i.imgur.com/D6wcA2i.png" group-title="Serbian",DM Sat (576p)
 https://vod1.laki.eu/dmsat/video.m3u8
-#EXTINF:-1 tvg-id="DoxTV.hr" tvg-logo="https://i.imgur.com/kELjMlN.png" group-title="Serbian",Dox TV (576p)
-https://vod1.laki.eu/dox/index.m3u8
 #EXTINF:-1 tvg-id="EbSPlus.be" tvg-logo="https://i.imgur.com/7V012zQ.png" group-title="Serbian",EbS+ Live (Europe by Satellite) (1080p)
 https://euc-live.fl.freecaster.net/live/eucom/ebsp.m3u8
 #EXTINF:-1 tvg-id="eduTV.rs" tvg-logo="https://i.imgur.com/dWQC2tn.png" group-title="Serbian",eduTV (576p)
@@ -13246,7 +13260,9 @@ http://109.105.201.198/PINKZABAVA/playlist.m3u8
 http://14.202.204.202:8000/play/a00i/index.m3u8
 #EXTINF:-1 tvg-id="RedTV.rs" tvg-logo="https://i.imgur.com/cpN7NrL.png" group-title="Serbian",Red TV (720p)
 https://live.rednet.rs/providus/redtv_multi.m3u8
-#EXTINF:-1 tvg-id="RTRSTV.ba" tvg-logo="https://i.imgur.com/v1KocpV.png" group-title="Serbian",RTRS TV [Geo-blocked]
+#EXTINF:-1 tvg-id="RTRSPlus.ba" tvg-logo="https://i.imgur.com/Psiv0gq.png" group-title="Serbian",RTRS Plus (576p) [Not 24/7]
+https://pluslive.rtrs.tv/plus/plus/playlist.m3u8
+#EXTINF:-1 tvg-id="RTRSTV.ba" tvg-logo="https://i.imgur.com/v1KocpV.png" group-title="Serbian",RTRS TV (576p) [Not 24/7]
 https://uzivo.rtrs.tv/tv/live/index.m3u8
 #EXTINF:-1 tvg-id="RTS1.rs" tvg-logo="https://i.imgur.com/ECdm4TR.png" group-title="Serbian",RTS 1 (720p) [Not 24/7]
 https://webtvstream.bhtelecom.ba/rts1.m3u8
@@ -18808,8 +18824,6 @@ https://livestream.almanasa.tv:8027/news/ch17/ch17_1080.m3u8
 http://63b03f7689049.streamlock.net:1935/live/16/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Althaqalayn TV
 http://77.36.160.164:1935/live4/thaghalayn/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",An-Najah (720p)
-https://streaming.najah.edu:8443/hls/AlNajah.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Astro AWANI (720p) [Not 24/7]
 https://ythls.onrender.com/channel/UC5dYmq91e5_g54krpO06NJw.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Atmósfera TV (1080p)
@@ -18829,7 +18843,7 @@ https://bbceu-doctorwho-3-fr.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",BBC Drama
 https://bbceu-bbcdrama-2-it.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",BBC Red Button One (720p) [Geo-blocked]
-https://vs-cmaf-pushb-uk.live.cf.md.bbci.co.uk/x=3/i=urn:bbc:pips:service:red_button_one/iptv_hd_abr_v1.mpd
+https://vs-cmaf-pushb-uk.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:red_button_one/iptv_hd_abr_v1.mpd
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",BBLACK! CLASSIK
 http://livevideo.vedge.infomaniak.com/livecast/ik:bblackclassik/manifest.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Berita RTM (720p) [Not 24/7]
@@ -19164,8 +19178,6 @@ https://streamer12.xploretv.si/__cl/cg:prod/__c/A1_SI_HBOHD_ott/__op/dash-defaul
 http://37.193.6.155:34040/udp/239.1.9.2:1234
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Health Media TV (720p)
 https://6n3yowknl9ok-hls-live.5centscdn.com/HMN/271ddf829afeece44d8732757fba1a66.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Hettin
-https://live.hettin.tv/stream/hls/hettin.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",History Channel (1080p)
 https://streamer12.xploretv.si/__cl/cg:prod/__c/A1_SI_HISTORYHD_ott/__op/dash-default/__dci/__f/index.m3u8?admin=xploreTv_test_user&redirect=true
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",History Film Channel
@@ -19856,6 +19868,8 @@ https://cdn3.wowza.com/1/YStGZlJRdktzZkdK/VXROZWNW/hls/live/playlist.m3u8
 http://cdnlive.irib.ir/live-channels/smil:sahar3/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Sawt Alaqila TV (1080p) [Geo-blocked]
 https://livestream.almanasa.tv:8001/islamic/ch7/ch7_1080.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",SBTV (1080p) [Not 24/7]
+https://live.leveex.hr/hls/live.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",SDETV (576p)
 http://223.110.245.149/ott.js.chinamobile.com/PLTV/3/224/3221227019/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",SEATV-Radio (720p)
@@ -19960,8 +19974,6 @@ https://rightsboosterltd-scl-1-nl.samsung.wurl.tv/playlist.m3u8
 https://rightsboosterltd-scl-1-se.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",StudioQualita
 https://ythls.onrender.com/channel/UC4ZNntU3CyEIH8RGH0n_5bw.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",STV (720p)
-http://89.201.163.244:8080/hls/hdmi.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Sud Radio
 https://raw.githubusercontent.com/Sphinxroot/HSL/main/DM/fr/SudRadio.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Super Radyo DZBB (720p) [Not 24/7]
@@ -20080,8 +20092,6 @@ https://e46fa4a445464f8a9150fa7d510eb85c.mediatailor.us-west-2.amazonaws.com/v1/
 https://nrpus.bozztv.com/36bay2/gusa-moviemagictv/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Travel Escape
 https://fuel-streaming-prod01.fuelmedia.io/v1/sem/37163a43-9415-4c31-99cd-8430fac7d656.m3u8?did=ngIZ23
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Trend TV (480p)
-http://185.62.75.22:1935/trend/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Trigger
 https://origin2.afxp.telemedia.co.za/abr/trigger/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",TRK 555 (720p)
