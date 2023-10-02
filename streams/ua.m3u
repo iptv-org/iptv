@@ -19,7 +19,7 @@ http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
 https://atr-live.cdn-01.cosmonova.net.ua/hls/atr_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="Avers.ua",Avers (480p)
 https://avers.pp.ua/hls/efir.m3u8
-#EXTINF:-1 tvg-id="BamBarBiaTV.ua",BamBarBia TV (720p)
+#EXTINF:-1 tvg-id="BamBarBiaTV.ua",BamBarBia TV (720p) [Not 24/7]
 http://cdn1.live-tv.od.ua:8081/bbb/bbbtv-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="BlackSeaTV.ua",Black Sea TV (432p)
 https://stream.skyvision.com.ua/blackseatv/stream/main/playlist.m3u8
@@ -93,8 +93,8 @@ https://ythls.onrender.com/channel/UCU7r0DqO0cGc5qeHXrXufYA.m3u8
 https://5d23269b3ec0c.streamlock.net/WEB_Ukraine24/ngrp:Ukraine24.stream-adaptive/playlist.m3u8
 #EXTINF:-1 tvg-id="TSN.ua",TCH (1080p) [Not 24/7]
 https://ythls.onrender.com/channel/UCXoJ8kY9zpLBEz-8saaT3ew.m3u8
-#EXTINF:-1 tvg-id="TISTV.ua",TIS TV (480p)
-http://cdn10.live-tv.od.ua:8081/riood/tisod-abr-lq/riood/tisod504/playlist.m3u8
+#EXTINF:-1 tvg-id="TISTV.ua",TIS TV (720p)
+https://cdn10.live-tv.cloud/riood/tisod-abr/riood/tisod720/playlist.m3u8
 #EXTINF:-1 tvg-id="TRKIldana.ua" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",TRK Ildana (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 https://pravdatytkyiv.cdn-01.cosmonova.net.ua/hls/pradva-tut-ildana_ua_hi/index.m3u8
@@ -154,10 +154,6 @@ https://ythls.onrender.com/channel/UC5V8mErVFOpcQXEb3y9IMZw.m3u8
 http://80.91.177.102:1935/live/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="Svarozhichi.ua",Сварожичи (720p)
 http://tv.tv-project.com:1935/live/live1/playlist.m3u8
-#EXTINF:-1 tvg-id="STB.ua",СТБ
-http://188.35.9.11:11021/j
-#EXTINF:-1 tvg-id="TVDom.ua",ТВ Дом
-http://46.149.48.21:1234
 #EXTINF:-1 tvg-id="TVA.ua",ТВА (Чернiвцi) (576p)
 http://hls.cdn.ua/tva.ua_live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVA.ua",ТВА (Чернiвцi) (576p)
@@ -174,3 +170,25 @@ http://46.46.112.223/live/livestream1.m3u8
 http://46.175.163.130/ks_plus/index.m3u8
 #EXTINF:-1 tvg-id="ChPinfo.ua",ЧП Инфо (576p)
 http://edge3.iptv.macc.com.ua/life/magnolia_3/index.m3u8
+#EXTINF:-1 tvg-id="TusoTV.ua" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Тюсо (720p) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
+https://tuso.cdn-01.cosmonova.net.ua/hls/tuso_ua.m3u8
+#EXTINF:-1 tvg-id="TelekanalRAI.ua",Telekanal RAI (480p) 
+https://stream.rai.ua/rai/stream.m3u8
+#EXTINF:-1 tvg-id="SferaTV.ua" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Сфера-ТВ (720p) 
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
+https://cdn10.live-tv.cloud/sferarv/sferarv-abr/playlist.m3u8
+#EXTINF:-1 tvg-id="KanalCentr.ua",Kanal Centr (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCQeGq915GhiFlOE-fuoXGKQ.m3u8
+#EXTINF:-1 tvg-id="UkraineWorldNews.ua",Ukraine World News (1440p) [Not 24/7]
+https://ythls.onrender.com/channel/UCGRhTiknVzrL-Rfy4N1tPTA.m3u8
+#EXTINF:-1 tvg-id="MyUkrainaTV.ua",Ми-Україна (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCEduOt4TK8TtOaznB45TrhA.m3u8
+#EXTINF:-1 tvg-id="Lugansk24.ua",Lugansk 24 (1084p) 
+https://tv.gtrklnr.ru/hls/Lugansk24.m3u8
+#EXTINF:-1 tvg-id="TVRivne1.ua",TV Rivne 1 (720p) 
+https://cdn1.live-tv.cloud/rivne1/rivne1-abr/playlist.m3u8
+#EXTINF:-1 tvg-id="PORTMONETV.ua",PORT-MONE.TV (720p) [Not 24/7]
+https://ythls.onrender.com/channel/UC2XLtyLSZ3XSAxvULZoV23g.m3u8
+#EXTINF:-1 tvg-id="UNIANTV.ua",УНІАН (1080p) [Not 24/7]
+https://ythls.onrender.com/channel/UCKCVeAihEfJr-pGH7B73Wyg.m3u8
