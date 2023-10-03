@@ -580,6 +580,8 @@ https://edge.vedge.infomaniak.com/livecast/ik:generation-tv/manifest.m3u8
 http://37.48.120.77:8080/hls/ghtvonline.m3u8
 #EXTINF:-1 tvg-id="GigantFM.nl" tvg-logo="https://i.imgur.com/LwEHfjD.png" group-title="Undefined",Gigant FM (720p)
 https://video.uitzending.tv:19360/gigantfm/gigantfm.m3u8
+#EXTINF:-1 tvg-id="GipsyTvWien.at" tvg-logo="https://i.imgur.com/OGfQhbN.jpg" group-title="General",GipsyTv Wien (720p) [Not 24/7]
+https://ythls.onrender.com/channel/UCDQ8ziK0-ANT-F906M71dJg.m3u8
 #EXTINF:-1 tvg-id="GORTV.nl" tvg-logo="https://i.imgur.com/zAFt893.png" group-title="Music",GO-RTV (720p)
 http://593aed234297b.streamlock.net:1935/gotvsjoerd/gotvsjoerd/playlist.m3u8
 #EXTINF:-1 tvg-id="GOTV.nl" tvg-logo="https://i.imgur.com/c5jmJtt.png" group-title="Undefined",GO-TV (720p)
@@ -732,10 +734,8 @@ https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8
 https://d3awaj0f2u3w26.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-gy7euubgydp20-ssai-prd/8fd3efae-4468-4ca0-9486-c6cdcb7b65d7/2.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",L'EQUIPE 21 TV 2
 https://d2l55nvfkhk4sg.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-jg7go1lqzgpny-ssai-prd/435d04a5-ab47-47c5-a2c1-bae01ae6d0c1/2.m3u8
-#EXTINF:-1 tvg-id="LEspritSorcierTV.fr" tvg-logo="https://i.imgur.com/zyh8yub.png" group-title="Documentary;Education" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34",L'Esprit Sorcier TV (1080p)
-#EXTVLCOPT:http-referrer= https://player.castr.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36 Edg/112.0.1722.34
-https://stream.castr.com/63b43410861d94a9eee067fb/live_947330308dd911edb85c8181cb9b11a8/index.m3u8
+#EXTINF:-1 tvg-id="LEspritSorcierTV.fr" tvg-logo="https://i.imgur.com/zyh8yub.png" group-title="Documentary;Education",L'Esprit Sorcier TV (1080p)
+https://194270.global.ssl.fastly.net/63b43410861d94a9eee067fb/live_947330308dd911edb85c8181cb9b11a8/index.m3u8
 #EXTINF:-1 tvg-id="LTV.de" tvg-logo="https://cdn.hd-plus.de/senderlogos/bright-cropped/24496-1.png" group-title="Undefined",L-TV (720p)
 https://live2.telvi.de/hls/l-tv_s1.m3u8
 #EXTINF:-1 tvg-id="La2.es" tvg-logo="https://i.imgur.com/3NwzqoB.png" group-title="Documentary",La 2 (1080p) [Geo-blocked]
@@ -1697,7 +1697,11 @@ https://raw.githubusercontent.com/Sphinxroot/HSL/main/DM/fr/SudRadio.m3u8
 https://ythls.onrender.com/channel/UC4u2o6tyE4vTrErXY9AN6Rw.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Supertoons TV
 https://kedoo-supertoonstv-3-fr.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="SwamijiTV.at" tvg-logo="https://i.imgur.com/nrLcuzs.png" group-title="Outdoor",Swamiji TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SwamijiTVAmerican.at" tvg-logo="https://i.imgur.com/nrLcuzs.png" group-title="Outdoor",Swamiji TV American (1080p) [Not 24/7]
+https://stream.swamiji.tv/YogaIPTV/smil:YogaStreamUS.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SwamijiTVAustralian.at" tvg-logo="https://i.imgur.com/nrLcuzs.png" group-title="Outdoor",Swamiji TV Australian (1080p) [Not 24/7]
+https://stream.swamiji.tv/YogaIPTV/smil:YogaStreamAU.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SwamijiTVEuropean.at" tvg-logo="https://i.imgur.com/nrLcuzs.png" group-title="Outdoor",Swamiji TV European (1080p) [Not 24/7]
 https://stream.swamiji.tv/YogaIPTV/smil:YogaStream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SWR3VisualRadio.de" tvg-logo="https://i.imgur.com/PxSgxRO.jpg" group-title="Undefined",SWR 3 Visual Radio (720p)
 https://swrswr3vr-hls.akamaized.net/hls/live/2018683/swr3vr/master.m3u8
