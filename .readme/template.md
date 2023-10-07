@@ -6,6 +6,7 @@ Collection of publicly available IPTV (Internet Protocol television) channels fr
 
 - 🚀 [How to use?](#how-to-use)
 - 📺 [Playlists](#playlists)
+- 🗓 [EPG](#epg)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
 - 📚 [Resources](#resources)
@@ -114,6 +115,10 @@ Same thing, but split up into separate files:
 #include "./.readme/_regions.md"
 
 </details>
+
+## EPG
+
+[Electronic Program Guide](https://en.wikipedia.org/wiki/Electronic_program_guide) for most of the channels can be downloaded using utilities published in the [iptv-org/epg](https://github.com/iptv-org/epg) repository.
 
 ## Database
 
