@@ -20,14 +20,8 @@ jobs:
       - uses: actions/setup-node@v3
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
-          node-version: 16
+          node-version: 18
           cache: 'npm'
-      - name: download data from api
-        if: steps.files.outputs.any_changed == 'true'
-        run: |
-          mkdir -p temp/data
-          curl -L -o temp/data/blocklist.json https://iptv-org.github.io/api/blocklist.json
-          curl -L -o temp/data/channels.json https://iptv-org.github.io/api/channels.json
       - name: install dependencies
         if: steps.files.outputs.any_changed == 'true'
         run: npm install
