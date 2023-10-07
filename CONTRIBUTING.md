@@ -101,6 +101,7 @@ http://example.com/stream.m3u8
 
 - `.github/`
   - `ISSUE_TEMPLATE/`: issue templates for the repository.
+  - `workflows`: contains [GitHub actions](https://docs.github.com/en/actions/quickstart) workflows.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
 - `.readme/`
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
@@ -136,11 +137,10 @@ To run scripts use the `npm run <script-name>` command.
 - `playlist:deploy`: allows to manually publish all generated via `playlist:generate` playlists. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
 - `readme:update`: updates the list of playlists in [README.md](README.md).
 - `report:create`: shows a list of all current requests and their status.
-- `format`: (shorthand) sequentially runs the `api:load` and `playlist:format` commands.
-- `check`: (shorthand) sequentially runs the `api:load`, `playlist:lint` and `playlist:validate` commands.
-- `update`: (shorthand) sequentially runs the `api:load`, `playlist:generate`, `api:generate` and `readme:update` commands.
-- `deploy`: (shorthand) sequentially runs the `playlist:deploy` and `api:deploy` commands.
-- `report`: (shorthand) sequentially runs the `api:load` and `report:create` commands.
+- `check`: (shorthand) sequentially runs the `playlist:lint` and `playlist:validate` scripts.
+- `format`: (shorthand) runs the `playlist:format` script.
+- `update`: (shorthand) sequentially runs the `playlist:generate`, `api:generate` and `readme:update` scripts.
+- `deploy`: (shorthand) sequentially runs the `playlist:deploy` and `api:deploy` scripts.
 - `lint`: сhecks the scripts for syntax errors.
 - `test`: runs a test of all the scripts described above.
 
