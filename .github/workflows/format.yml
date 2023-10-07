@@ -31,11 +31,6 @@ jobs:
         id: files
         with:
           files: streams/*.m3u
-      - name: download data from api
-        run: |
-          mkdir -p temp/data
-          curl -L -o temp/data/blocklist.json https://iptv-org.github.io/api/blocklist.json
-          curl -L -o temp/data/channels.json https://iptv-org.github.io/api/channels.json
       - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
