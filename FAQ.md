@@ -6,10 +6,6 @@ Start by asking our community for help via [Discussions](https://github.com/orgs
 
 But keep in mind that not all TV channels are available for viewing online, and in this case there is little we can do about it.
 
-### Does the playlist have a channel guide?
-
-Yes. See [iptv-org/epg](https://github.com/iptv-org/epg) for more info.
-
 ### Are you planning to include a Video On Demand (VOD) to the playlist?
 
 No.
