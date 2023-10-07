@@ -29,8 +29,6 @@ jobs:
           cache: 'npm'
       - name: install dependencies
         run: npm install
-      - name: load api data
-        run: npm run api:load
       - name: update internal playlists
         run: npm run playlist:update --silent >> $GITHUB_OUTPUT
         id: playlist-update
