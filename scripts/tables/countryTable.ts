@@ -23,10 +23,12 @@ export class CountryTable implements Table {
     let data = new Collection()
     parser
       .parse(generatorsLog)
-      .filter(
-        (logItem: LogItem) =>
-          logItem.filepath.includes('countries/') || logItem.filepath.includes('subdivisions/')
-      )
+      .filter((logItem: LogItem) => {
+        const isCountry = logItem.filepath.includes('countries/')
+        const isSubdivision = logItem.filepath.includes('subdivisions/')
+
+        if (isCountry || isSubdivision) return true
+      })
       .forEach((logItem: LogItem) => {
         const file = new File(logItem.filepath)
         const code = file.name().toUpperCase()
