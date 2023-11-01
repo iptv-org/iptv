@@ -40,7 +40,8 @@ export class PlaylistParser {
         line: item.line,
         url: item.url,
         httpReferrer: item.http.referrer,
-        userAgent: item.http['user-agent']
+        userAgent: item.http['user-agent'],
+        timeshift: item.tvg.shift
       })
 
       streams.add(stream)
