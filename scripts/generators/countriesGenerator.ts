@@ -39,39 +39,36 @@ export class CountriesGenerator implements Generator {
         (subdivision: Subdivision) => subdivision.country === country.code
       )
 
-      const countrySubdivisionsCodes = countrySubdivisions.map(
-        (subdivision: Subdivision) => `s/${subdivision.code}`
-      )
-
       const countryAreaCodes = regions
         .filter((region: Region) => region.countries.includes(country.code))
         .map((region: Region) => `r/${region.code}`)
-        .concat(countrySubdivisionsCodes)
         .add(`c/${country.code}`)
 
       const countryStreams = streams.filter(stream =>
         stream.broadcastArea.intersects(countryAreaCodes)
       )
 
-      if (countryStreams.isEmpty()) return
-
-      const playlist = new Playlist(countryStreams, { public: true })
-      const filepath = `countries/${country.code.toLowerCase()}.m3u`
-      await this.storage.save(filepath, playlist.toString())
-      this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
-
+      let hasSubdivisions = false
       countrySubdivisions.forEach(async (subdivision: Subdivision) => {
         const subdivisionStreams = streams.filter(stream =>
           stream.broadcastArea.includes(`s/${subdivision.code}`)
         )
 
         if (subdivisionStreams.isEmpty()) return
+        hasSubdivisions = true
 
         const playlist = new Playlist(subdivisionStreams, { public: true })
         const filepath = `subdivisions/${subdivision.code.toLowerCase()}.m3u`
         await this.storage.save(filepath, playlist.toString())
         this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
       })
+
+      if (countryStreams.count() > 0 || hasSubdivisions) {
+        const playlist = new Playlist(countryStreams, { public: true })
+        const filepath = `countries/${country.code.toLowerCase()}.m3u`
+        await this.storage.save(filepath, playlist.toString())
+        this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
+      }
     })
 
     const internationalStreams = streams.filter(stream => stream.isInternational())
