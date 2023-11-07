@@ -187,8 +187,8 @@ https://tv1.isi-broadcast.tech/CN-TV_CANAL/index.m3u8
 https://radio.congoplanet.com/Congo_Planet_TV.sdp/Congo_Planet_TV/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Congo Planet Télévision Pop (1080p)
 https://radio.congoplanet.com/Congo_Planet_TV_Pop.sdp/Congo_Planet_TV_Pop/playlist.m3u8
-#EXTINF:-1 tvg-id="CopticTV.eg" tvg-logo="https://www.ctvchannel.tv/images/CTV-logo-white.png" group-title="Religious",Coptic TV (720p) [Not 24/7]
-https://5aafcc5de91f1.streamlock.net/ctvchannel.tv/ctv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CopticTV.eg" tvg-logo="https://www.ctvchannel.tv/images/CTV-logo-white.png" group-title="Religious",Coptic TV (720p)
+https://58cc65c534c67.streamlock.net/ctvchannel.tv/ctv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ChurchofUgandaFamilyTelevision.ug" tvg-logo="https://pbs.twimg.com/profile_images/1455134164353757187/RYfGkxkO_400x400.jpg" group-title="Family;Religious",COU Family Television (720p)
 https://media.streambrothers.com:19360/8028/8028.m3u8
 #EXTINF:-1 tvg-id="CozaTV.ng" tvg-logo="https://i.imgur.com/QVBdpuF.png" group-title="Undefined",Coza TV (576p)
@@ -226,7 +226,8 @@ https://atechgroupuk.site/DTV.m3u8
 #EXTINF:-1 tvg-id="EcclesiaTV.ci" tvg-logo="https://i.imgur.com/mgabVFd.png" group-title="Undefined",Ecclesia TV (320p)
 https://video1.getstreamhosting.com:1936/8252/8252/playlist.m3u8
 #EXTINF:-1 tvg-id="EchoroukNews.dz" tvg-logo="https://i.imgur.com/TNtjYcw.png" group-title="News",Echorouk News (576p) [Not 24/7]
-https://bledflix-echorouk-news.b-cdn.net/master.m3u8
+#EXTVLCOPT:http-referrer=https://echorouk.dzsecurity.net
+https://echorouk-live-tv.dzsecurity.net/fullres/EchoroukNews_First/playlist.m3u8
 #EXTINF:-1 tvg-id="EchoroukTV.dz" tvg-logo="https://i.imgur.com/FtrSAqu.png" group-title="Undefined",Echorouk TV (576p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://echorouk.dzsecurity.net
 https://echorouk-live-tv.dzsecurity.net/fullres/EchoroukTV_First/playlist.m3u8
@@ -474,8 +475,8 @@ http://194.163.135.238:5080/WebRTCApp/streams/590264631485484547459082.m3u8
 https://nci-live.secure2.footprint.net/nci/nci.isml/.m3u8
 #EXTINF:-1 tvg-id="NdurumeniTV.ke" tvg-logo="https://i.imgur.com/OvmySNw.jpg" group-title="Religious",Ndurumeni TV (480p) [Not 24/7]
 https://goliveafrica.media:9998/live/6389d571d20af/index.m3u8
-#EXTINF:-1 tvg-id="Nessma.tn" tvg-logo="https://i.imgur.com/9fCWIT4.png" group-title="Undefined",Nessma (576p)
-https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/dzflix/nessma.m3u8
+#EXTINF:-1 tvg-id="Nessma.tn" tvg-logo="https://i.imgur.com/9fCWIT4.png" group-title="Undefined",Nessma (1080p)
+https://shls-live-ak.akamaized.net/out/v1/119ae95bbc91462093918a7c6ba11415/index.m3u8
 #EXTINF:-1 tvg-id="NewFrontiersTV.ng" tvg-logo="https://i.imgur.com/dYRIJjh.png" group-title="Undefined",New Frontiers TV (1080p)
 https://media2.streambrothers.com:1936/8044/8044/playlist.m3u8
 #EXTINF:-1 tvg-id="NewVisionTV.ng" tvg-logo="https://www.lyngsat.com/logo/tv/nn/new-vision-tv-ng.png" group-title="Undefined",New Vision TV (360p)
@@ -533,8 +534,8 @@ http://connectiktv.ddns.net:5000/playtv/@playtv/playlist.m3u8
 http://connectiktv.ddns.me:8080/live/61f1a681f3a0e-1/index.m3u8
 #EXTINF:-1 tvg-id="PlusTVAfrica.ng" tvg-logo="https://i.imgur.com/6RT3yao.png" group-title="Undefined",Plus TV Africa (720p) [Not 24/7]
 https://5c0740dba62b3.streamlock.net/plustv/myStream/playlist.m3u8
-#EXTINF:-1 tvg-id="PSTVHD.cd" tvg-logo="https://i.imgur.com/xQlkuAa.png" group-title="Undefined",PSTV HD (480p) [Not 24/7]
-http://51.254.199.122:8080/PSTV/index.m3u8
+#EXTINF:-1 tvg-id="PSTVHD.cd" tvg-logo="https://i.imgur.com/xQlkuAa.png" group-title="Undefined",PSTV HD (480p)
+https://tv2.isi-broadcast.tech/ISI-BROADCAST/HDLIVE1/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Pulse (720p)
 https://origin3.afxp.telemedia.co.za/PremiumFree/pulse/playlist.m3u8
 #EXTINF:-1 tvg-id="PuntlandTV.so" tvg-logo="https://i.imgur.com/C8EvQUo.png" group-title="Undefined",Puntland TV (720p)
