@@ -37,7 +37,7 @@ async function main() {
   logger.info('loading streams...')
   let streams = await loadStreams({ channels, categories, languages })
   let totalStreams = streams.count()
-  streams = streams.uniqBy((stream: Stream) => stream.channel || _.uniqueId())
+  streams = streams.uniqBy((stream: Stream) => (stream.channel || _.uniqueId()) + stream.timeshift)
   logger.info(`found ${totalStreams} streams (including ${streams.count()} unique)`)
 
   const generatorsLogger = new Logger({
@@ -104,7 +104,15 @@ async function loadStreams({
   let streams = await parser.parse(files)
 
   streams = streams
-    .orderBy([(stream: Stream) => stream.channel, (stream: Stream) => stream.url], ['asc', 'asc'])
+    .orderBy(
+      [
+        (stream: Stream) => stream.channel,
+        (stream: Stream) => stream.timeshift,
+        (stream: Stream) => parseInt(stream.quality.replace('p', '')),
+        (stream: Stream) => stream.label
+      ],
+      ['asc', 'asc', 'desc', 'asc']
+    )
     .map((stream: Stream) => {
       const channel: Channel | undefined = groupedChannels.get(stream.channel)
 
