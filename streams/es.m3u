@@ -7,8 +7,6 @@ https://play.cdn.enetres.net/9E9557EFCEBB43A89CEC8FBD3C500247022/028/playlist.m3
 https://rtv-murcia-live.globalmest.com/principal/smil:principal.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="8LaMarinaTV.es",8 La Marina TV (576p)
 https://streaming005.gestec-video.com/hls/canal24.m3u8
-#EXTINF:-1 tvg-id="987tv.es",987tv (1080p) [Not 24/7]
-https://ythlsgo.onrender.com/UC41bdA6AiwEb34_S7KcMHOw.m3u8
 #EXTINF:-1 tvg-id="9laLomaTV.es",9 la Loma TV (1080p)
 https://9laloma.tv/live.m3u8
 #EXTINF:-1 tvg-id="12tv.es",12TV Alicante (720p)
@@ -28,10 +26,12 @@ https://limited38.todostreaming.es/live/101tv-web101tv.m3u8
 https://streaming101tv.es/hls/webronda.m3u8
 #EXTINF:-1 tvg-id="101tvSevilla.es",101tv Sevilla (1080p)
 https://streaming101tv.es/hls/websevilla.m3u8
-#EXTINF:-1 tvg-id="APunt.es",À Punt (720p)
-https://bcovlive-a.akamaihd.net/469e448f034b4d46afa4bcac53297d60/eu-central-1/6057955885001/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="987tv.es",987tv (1080p) [Not 24/7]
+https://ythlsgo.onrender.com/UC41bdA6AiwEb34_S7KcMHOw.m3u8
 #EXTINF:-1 tvg-id="APunt.es",À Punt (720p)
 https://bcovlive-a.akamaihd.net/1e7e91116b104391a4f22e13a694d94f/eu-central-1/6057955885001/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="APunt.es",À Punt (720p)
+https://bcovlive-a.akamaihd.net/469e448f034b4d46afa4bcac53297d60/eu-central-1/6057955885001/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="ActivaTV.es",Activa TV (720p)
 https://streamtv.mediasector.es/hls/activatv/index.m3u8
 #EXTINF:-1 tvg-id="AfortunadasTV.es",Afortunadas TV (720p)
@@ -52,9 +52,9 @@ http://cpd.bailen.tv:8080/Playlist_CANAL_24H/playlist.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://liveingesta318.cdnmedia.tv/badalonatvlive/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Beteve.es",Betevé (1080p)
-https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/protocol/https/uiConfId/42816492/a.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
-#EXTINF:-1 tvg-id="Beteve.es",Betevé (1080p)
 https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
+#EXTINF:-1 tvg-id="Beteve.es",Betevé (1080p)
+https://cdnapisec.kaltura.com/p/2346171/sp/234617100/playManifest/entryId/1_n6442jz0/format/applehttp/protocol/https/uiConfId/42816492/a.m3u8?referrer=aHR0cHM6Ly9iZXRldmUuY2F0
 #EXTINF:-1 tvg-id="BiosferaTV.es",Biosfera TV (720p) [Not 24/7]
 https://tvdatta.com:3021/live/biosferatvlive.m3u8
 #EXTINF:-1 tvg-id="BonDiaTV.es",Bon Dia TV (1080p)
@@ -218,13 +218,13 @@ https://video3.lhdserver.es/empordatv2/live.m3u8
 #EXTINF:-1 tvg-id="ErloTelebista.es",Erlo Telebista (720p)
 https://5940924978228.streamlock.net/8159/8159/master.m3u8
 #EXTINF:-1 tvg-id="Esport3.es",Esport3 (1080p) [Geo-blocked]
-https://directes-tv-es.ccma.cat/live-origin/esport3-hls/master.m3u8
-#EXTINF:-1 tvg-id="Esport3.es",Esport3 (1080p) [Geo-blocked]
 https://directes-tv-cat.ccma.cat/live-origin/esport3-hls/master.m3u8
-#EXTINF:-1 tvg-id="EsteponaTelevision.es",Estepona Televisión (720p)
-https://cloudvideo.servers10.com:8081/8022/index.m3u8
+#EXTINF:-1 tvg-id="Esport3.es",Esport3 (1080p) [Geo-blocked]
+https://directes-tv-es.ccma.cat/live-origin/esport3-hls/master.m3u8
 #EXTINF:-1 tvg-id="EsteCanalTV.es",Este Canal TV (576p)
 http://synclosdragos1.syncsolutions.es:8008/live3/emision/index.m3u8
+#EXTINF:-1 tvg-id="EsteponaTelevision.es",Estepona Televisión (720p)
+https://cloudvideo.servers10.com:8081/8022/index.m3u8
 #EXTINF:-1 tvg-id="EsTuTele.es",EsTuTele (720p)
 #EXTVLCOPT:http-referrer=https://player.streamingconnect.com/
 https://cloud.streamingconnect.tv/hls/estutele/estutele.m3u8
@@ -277,30 +277,30 @@ https://16escalones-live2.flumotion.com/chunks.m3u8
 https://fast-channels.atresmedia.com/648c271d2bfab0e4177a0d61/648c271d2bfab0e4177a0d61.m3u8
 #EXTINF:-1 tvg-id="KrolusTV.es",Krolus TV (1080p)
 https://vcnkrolustv.teleosmedia.com/linear/krolustv/krolustv/playlist.m3u8
-#EXTINF:-1 tvg-id="La1.es",La 1 (720p) [Not 24/7]
-https://rtvelivestream.akamaized.net/rtvesec/la1/la1_main_dvr.m3u8
 #EXTINF:-1 tvg-id="La1.es",La 1 (720p)
 https://ztnr.rtve.es/ztnr/1688877.m3u8
-#EXTINF:-1 tvg-id="La1Canarias.es",La 1 Canarias (720p) [Not 24/7]
-https://rtvelivestream-clnx.rtve.es/rtvesec/can/la1_can_main_720.m3u8
+#EXTINF:-1 tvg-id="La1.es",La 1 (720p) [Not 24/7]
+https://rtvelivestream.akamaized.net/rtvesec/la1/la1_main_dvr.m3u8
 #EXTINF:-1 tvg-id="La1Canarias.es",La 1 Canarias (720p)
 https://ztnr.rtve.es/ztnr/5190066.m3u8
-#EXTINF:-1 tvg-id="La1Catalunya.es",La 1 Catalunya (720p) [Not 24/7]
-https://rtvelivestream-clnx.rtve.es/rtvesec/cat/la1_cat_main_dvr.m3u8
+#EXTINF:-1 tvg-id="La1Canarias.es",La 1 Canarias (720p) [Not 24/7]
+https://rtvelivestream-clnx.rtve.es/rtvesec/can/la1_can_main_720.m3u8
 #EXTINF:-1 tvg-id="La1Catalunya.es",La 1 Catalunya (720p)
 https://ztnr.rtve.es/ztnr/3293681.m3u8
-#EXTINF:-1 tvg-id="La2.es",La 2 (1080p) [Not 24/7]
-https://rtvelivestream-clnx.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
+#EXTINF:-1 tvg-id="La1Catalunya.es",La 1 Catalunya (720p) [Not 24/7]
+https://rtvelivestream-clnx.rtve.es/rtvesec/cat/la1_cat_main_dvr.m3u8
 #EXTINF:-1 tvg-id="La2.es",La 2 (1080p)
 https://ztnr.rtve.es/ztnr/1688885.m3u8
-#EXTINF:-1 tvg-id="La2Canarias.es",La 2 Canarias (720p) [Not 24/7]
-https://rtvelivestream.akamaized.net/rtvesec/can/la2_can_main_dvr.m3u8
+#EXTINF:-1 tvg-id="La2.es",La 2 (1080p) [Not 24/7]
+https://rtvelivestream-clnx.rtve.es/rtvesec/la2/la2_main_dvr.m3u8
 #EXTINF:-1 tvg-id="La2Canarias.es",La 2 Canarias (720p)
 https://ztnr.rtve.es/ztnr/5468585.m3u8
-#EXTINF:-1 tvg-id="La2Catalunya.es",La 2 Catalunya (720p) [Not 24/7]
-https://rtvelivestream.akamaized.net/rtvesec/cat/la2_cat_main_dvr.m3u8
+#EXTINF:-1 tvg-id="La2Canarias.es",La 2 Canarias (720p) [Not 24/7]
+https://rtvelivestream.akamaized.net/rtvesec/can/la2_can_main_dvr.m3u8
 #EXTINF:-1 tvg-id="La2Catalunya.es",La 2 Catalunya (720p)
 https://ztnr.rtve.es/ztnr/3987218.m3u8
+#EXTINF:-1 tvg-id="La2Catalunya.es",La 2 Catalunya (720p) [Not 24/7]
+https://rtvelivestream.akamaized.net/rtvesec/cat/la2_cat_main_dvr.m3u8
 #EXTINF:-1 tvg-id="La8Mediterraneo.es",La 8 Mediterráneo (1080p) [Not 24/7]
 https://streaming004.gestec-video.com/hls/8TV.m3u8
 #EXTINF:-1 tvg-id="LaFabricaTV.es",La Fábrica TV (720p) [Not 24/7]
@@ -373,6 +373,8 @@ https://canadaremar2.todostreaming.es/live/peque-pequetv.m3u8
 http://51.254.47.72:1935/piera/smil:piera.smil/master.m3u8
 #EXTINF:-1 tvg-id="PlatziTV.es",Platzi TV (1080p)
 https://mdstrm.com/live-stream-playlist/629a63ae8df27c082901f78b.m3u8
+#EXTINF:-1 tvg-id="POPWorldTV.es",POP World TV (720p)
+https://janus.xpbroadcasting.com:8443/hls/popworld.m3u8
 #EXTINF:-1 tvg-id="PopularTVCantabria.es",Popular TV Cantabria (576p) [Not 24/7]
 https://limited12.todostreaming.es/live/ptvcantabria-livestream.m3u8
 #EXTINF:-1 tvg-id="PopularTVMelilla.es",Popular TV Melilla (1080p) [Not 24/7]
@@ -382,8 +384,6 @@ https://5940924978228.streamlock.net/8009/8009/master.m3u8
 #EXTINF:-1 tvg-id="PopularTVMurcia.es",Popular TV Murcia (1080p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.streamingconnect.com/
 https://cloud.fastchannel.es/mic/manifiest/populartvrm.m3u8
-#EXTINF:-1 tvg-id="POPWorldTV.es",POP World TV (720p)
-https://janus.xpbroadcasting.com:8443/hls/popworld.m3u8
 #EXTINF:-1 tvg-id="PTVAlmeria.es",PTV Almería (1080p)
 https://streamer.zapitv.com/ptv_almeria/index.m3u8
 #EXTINF:-1 tvg-id="PTVCordoba.es",PTV Córdoba (1080p)
@@ -433,20 +433,18 @@ https://cdnlivevlc.codev8.net/rtvcelive/smil:channel1.smil/playlist.m3u8
 https://cloudvideo.servers10.com:8081/8254/index.m3u8
 #EXTINF:-1 tvg-id="SevillaFCTV.es",Sevilla FC TV (360p) [Not 24/7]
 https://open.http.mp.streamamg.com/p/3001314/sp/300131400/playManifest/entryId/0_ye0b8tc0/format/applehttp/protocol/https/uiConfId/30026292/a.m3u8
-#EXTINF:-1 tvg-id="SolidariaTV.es",Solidaria TV (720p)
-https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8
 #EXTINF:-1 tvg-id="SolMusica.es",Sol Música (720p)
 https://d2glyu450vvghm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-21u4g5cjglv02/sm.m3u8
-#EXTINF:-1 tvg-id="SophiaTV.es",Sophia TV (720p)
-https://bild-und-ton.stream/sophiatv-es/smil:sophia-tv-es.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SolidariaTV.es",Solidaria TV (720p)
+https://canadaremar2.todostreaming.es/live/solidariatv-webhd.m3u8
 #EXTINF:-1 tvg-id="SpektraTV.es",SpektraTV (720p)
 https://cloudvideo.servers10.com:8081/8136/index.m3u8
 #EXTINF:-1 tvg-id="STZTelebista.es",STZ Telebista (1080p)
 https://cloudvideo.servers10.com:8081/stztelebista/index.m3u8
 #EXTINF:-1 tvg-id="SX3.es",SX3 (1080p) [Geo-blocked]
-https://directes-tv-es.ccma.cat/live-origin/super3-hls/master.m3u8
-#EXTINF:-1 tvg-id="SX3.es",SX3 (1080p) [Geo-blocked]
 https://directes-tv-cat.ccma.cat/live-origin/super3-hls/master.m3u8
+#EXTINF:-1 tvg-id="SX3.es",SX3 (1080p) [Geo-blocked]
+https://directes-tv-es.ccma.cat/live-origin/super3-hls/master.m3u8
 #EXTINF:-1 tvg-id="Tac12.es" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Tac12 (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://ingest1-video.streaming-pro.com/nimble/tac12/playlist.m3u8
@@ -494,7 +492,7 @@ https://cdn318.fractalmedia.es/318/live/hls/tvc/master.m3u8
 #EXTINF:-1 tvg-id="Torrevision.es",Torrevisión (270p)
 https://api.new.livestream.com/accounts/2614936/events/10365077/live.m3u8
 #EXTINF:-1 tvg-id="TPA7.es",TPA 7 (576p)
-https://cdnlive.codev8.net/rtpalive/smil:directo/playlist.m3u8?DVR
+https://cdnlive.codev8.net/rtpalive/smil:directo/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="TreceTV.es",Trece TV (576p)
 https://live-edge-bhs-1.cdn.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/playlist.m3u8
 #EXTINF:-1 tvg-id="TreceTV.es",Trece TV (576p)
@@ -520,8 +518,6 @@ https://streaming007.gestec-video.com/hls/artequatreTVA.m3u8
 https://liveingesta318.cdnmedia.tv/berguedatvlive/smil:migracion.smil/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="TVCarmona.es",TV Carmona (360p) [Not 24/7]
 https://ythlsgo.onrender.com/channel/UCRniQmtUlHJedl36F0Mehvw.m3u8
-#EXTINF:-1 tvg-id="TVCentroAndalucia.es",TVCentro Andalucía (720p) [Not 24/7]
-https://5fa5de1a545ae.streamlock.net/8052/8052/playlist.m3u8
 #EXTINF:-1 tvg-id="TVCostaBrava.es" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",TV Costa Brava (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://liveingesta318.cdnmedia.tv/costabravatvlive/smil:live.smil/playlist.m3u8
@@ -536,7 +532,7 @@ https://hellin-hls-live.flumotion.com/playlist.m3u8
 https://liveingesta318.cdnmedia.tv/tvhospitaletlive/smil:tvhospitalet.smil/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="TVRipolles.es" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",TV Ripollès (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
-https://liveingesta318.cdnmedia.tv/tvripolleslive/smil:live.smil/playlist.m3u8?DVR
+https://liveingesta318.cdnmedia.tv/tvripolleslive/smil:live.smil/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="TVSabadellValles.es" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",TV Sabadell-Vallès (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://ingest1-video.streaming-pro.com/canaltaronja/sabadell/playlist.m3u8
@@ -544,6 +540,8 @@ https://ingest1-video.streaming-pro.com/canaltaronja/sabadell/playlist.m3u8
 https://emision.arpamedia.es:4343/hls/tvsanvicenteweb.m3u8
 #EXTINF:-1 tvg-id="TVVegaBaja.es",TV Vega Baja (720p)
 https://streaming.tvt.es:8080/hls/tvb_interno/live.m3u8
+#EXTINF:-1 tvg-id="TVCentroAndalucia.es",TVCentro Andalucía (720p) [Not 24/7]
+https://5fa5de1a545ae.streamlock.net/8052/8052/playlist.m3u8
 #EXTINF:-1 tvg-id="TelevisiondeGalicia.es",TVG (720p)
 https://europa-crtvg.flumotion.com/crtvg/europa_high/playlist.m3u8
 #EXTINF:-1 tvg-id="TVG2.es",TVG2 (720p) [Not 24/7]
@@ -593,10 +591,10 @@ https://streamtv2.elitecomunicacion.cloud:3144/live/verbenatvlive.m3u8
 https://tv.radiocast.es:5443/vinxtv/streams/vinxtvlive.m3u8
 #EXTINF:-1 tvg-id="Vision6TV.es",Visión 6 TV (720p) [Not 24/7]
 https://secure3.todostreaming.es/live/visionseis-livestream.m3u8
-#EXTINF:-1 tvg-id="Vivamovil.es",Vivamóvil (720p)
-https://5d8d85cf2c308.streamlock.net:1936/AlcalaTV/endirecto/playlist.m3u8
 #EXTINF:-1 tvg-id="VivaMurciaTV.es",Viva Murcia TV (720p)
 http://185.36.211.142:8080/tmp_hls/viva/index.m3u8
+#EXTINF:-1 tvg-id="Vivamovil.es",Vivamóvil (720p)
+https://5d8d85cf2c308.streamlock.net:1936/AlcalaTV/endirecto/playlist.m3u8
 #EXTINF:-1 tvg-id="VOTV.es" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",VOTV (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://ingest2-video.streaming-pro.com/votv/streaming_web/playlist.m3u8
