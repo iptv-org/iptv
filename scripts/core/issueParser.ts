@@ -10,6 +10,8 @@ const FIELDS = new Dictionary({
   'Broken Link': 'stream_url',
   Label: 'label',
   Quality: 'quality',
+  Timeshift: 'timeshift',
+  'Timeshift (optional)': 'timeshift',
   'Channel Name': 'channel_name',
   'HTTP User-Agent': 'user_agent',
   'HTTP Referrer': 'http_referrer',
