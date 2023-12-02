@@ -702,12 +702,14 @@ https://live-ratnik.cdnvideo.ru/ratnik/ratnik.sdp/playlist.m3u8
 http://80.91.177.102:1935/live/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="TV3.ru" tvg-logo="https://i.imgur.com/JLAvq8O.png" group-title="Entertainment",ТВ-3 (1080p) [Geo-blocked]
 https://okkotv-live.cdnvideo.ru/channel/TV3_OTT_HD.m3u8
-#EXTINF:-1 tvg-id="TNT.ru" tvg-logo="https://i.imgur.com/T4A6rEI.png" group-title="Entertainment",ТНТ
-https://edge02.odtv.az/o8/tnt/playlist.m3u8
-#EXTINF:-1 tvg-id="TNT4.ru" tvg-logo="https://i.imgur.com/gBokU5i.png" group-title="Entertainment",ТНТ4
-https://edge02.odtv.az/o7/tnt4/playlist.m3u8
-#EXTINF:-1 tvg-id="Che.ru" tvg-logo="https://i.imgur.com/ZOcDGpB.png" group-title="Entertainment",Че!
-https://edge02.odtv.az/o5/chetv/playlist.m3u8
+#EXTINF:-1 tvg-id="TNT4.ru" tvg-logo="https://i.imgur.com/gBokU5i.png" group-title="Entertainment" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",ТНТ4 (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s100/index.m3u8
+#EXTINF:-1 tvg-id="TNT.ru" tvg-logo="https://i.imgur.com/T4A6rEI.png" group-title="Entertainment",ТНТ (1080p) [Geo-blocked]
+https://okkotv-live.cdnvideo.ru/channel/TNT_OTT_HD.m3u8
+#EXTINF:-1 tvg-id="Che.ru" tvg-logo="https://i.imgur.com/ZOcDGpB.png" group-title="Entertainment" user-agent="WINK/1.44.1 (AndroidTV/9) HlsWinkPlayer",Че! (540p) [Geo-blocked]
+#EXTVLCOPT:http-user-agent=WINK/1.44.1 (AndroidTV/9) HlsWinkPlayer
+https://zabava-htlive.cdn.ngenix.net/hls/CH_PERETZ/variant.m3u8
 #EXTINF:-1 tvg-id="U.ru" tvg-logo="https://i.imgur.com/KDZvt0Q.png" group-title="Entertainment",Ю (576p) [Geo-blocked]
 https://strm.yandex.ru/kal/utv/utv0.m3u8
 #EXTINF:-1 tvg-id="GeniusGoGoGo.tw" tvg-logo="https://i.imgur.com/GGdnGqH.png" group-title="Entertainment",天才衝衝衝 (1080p)
