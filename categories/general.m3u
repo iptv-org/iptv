@@ -1994,6 +1994,8 @@ http://95.105.193.219:88/hls/tvb.m3u8
 https://brics.bonus-tv.ru/cdn/brics/chinese/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBRICSEnglish.in" tvg-logo="https://i.imgur.com/8rKNuS6.png" group-title="General",TV BRICS English (1080p)
 https://brics.bonus-tv.ru/cdn/brics/english/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBRICSRussian.ru" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS HD
+http://moobl.ru/hls/TV_brics_hd.m3u8
 #EXTINF:-1 tvg-id="TVBRICSPortuguese.br" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS Portuguese (1080p)
 https://brics.bonus-tv.ru/cdn/brics/portuguese/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBrno1.cz" tvg-logo="https://i.imgur.com/8Xm3WSn.png" group-title="General",TV Brno 1 (1080p)
@@ -2420,23 +2422,24 @@ https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus3.smil/playlist.m3u8
 https://www.gtk.tv/hls/gtyar.m3u8
 #EXTINF:-1 tvg-id="GuberniaSamara.ru" tvg-logo="https://i.imgur.com/IlL57Rm.png" group-title="General",Губерния (Самара) (576p)
 http://live.guberniatv.cdnvideo.ru/guberniatv/guberniatv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="Zvezda.ru" tvg-logo="https://i.imgur.com/4PAcpfM.png" group-title="General",Звезда (1080p) [Not 24/7]
-https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8
+#EXTINF:-1 tvg-id="Zvezda.ru" tvg-logo="https://i.imgur.com/4PAcpfM.png" group-title="General",Звезда
+http://moobl.ru/hls/Zvezda.m3u8
 #EXTINF:-1 tvg-id="LDPRTV.ru" tvg-logo="https://i.imgur.com/gCmCRfe.png" group-title="General",ЛДПР ТВ (1080p)
 http://46.46.143.222:1935/live/mp4:ldpr.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Lipeckoevremya.ru" tvg-logo="https://i.imgur.com/a42jk7b.png" group-title="General",Липецкое время (576p) [Not 24/7]
 http://serv25.vintera.tv:8081/liptime/liptime/playlist.m3u8
-#EXTINF:-1 tvg-id="Mir.ru" tvg-logo="https://i.imgur.com/AqWaJT8.png" group-title="General",Мир (1080p) [Geo-blocked]
-https://strm.yandex.ru/kal/mir24/mir0.m3u8
+#EXTINF:-1 tvg-id="Mir.ru" tvg-logo="https://i.imgur.com/AqWaJT8.png" group-title="General",МИР
+http://moobl.ru/hls/MIR.m3u8
 #EXTINF:-1 tvg-id="MirPlus2.ru" tvg-logo="https://i.imgur.com/AqWaJT8.png" group-title="General",Мир +2 (540p) [Not 24/7]
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv2_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="MirPlus4.ru" tvg-logo="https://i.imgur.com/AqWaJT8.png" group-title="General",Мир +4 (540p) [Not 24/7]
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv3_2500/playlist.m3u8
 #EXTINF:-1 tvg-id="MirPlus7.ru" tvg-logo="https://i.imgur.com/AqWaJT8.png" group-title="General",Мир +7 (540p)
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv7_2500/playlist.m3u8
-#EXTINF:-1 tvg-id="NTV.ru" tvg-logo="https://i.imgur.com/9r1BKzK.png" group-title="General" user-agent="WINK/1.44.1 (AndroidTV/9) HlsWinkPlayer",НТВ (540p) [Geo-blocked]
-#EXTVLCOPT:http-user-agent=WINK/1.44.1 (AndroidTV/9) HlsWinkPlayer
-https://zabava-htlive.cdn.ngenix.net/hls/CH_NTV/variant.m3u8
+#EXTINF:-1 tvg-id="NTV.ru" tvg-logo="https://i.imgur.com/9r1BKzK.png" group-title="General",НТВ
+http://moobl.ru/hls/NTV.m3u8
+#EXTINF:-1 tvg-id="NTVHD.ru" tvg-logo="https://i.imgur.com/9r1BKzK.png" group-title="General",НТВ HD
+http://moobl.ru/hls/NTV_hd.m3u8
 #EXTINF:-1 tvg-id="NTVBelarus.by" tvg-logo="https://i.imgur.com/QLuUIeB.png" group-title="General",НТВ-Беларусь
 http://82.209.197.187:8080/udp/239.0.100.6:1234
 #EXTINF:-1 tvg-id="NTKTV.ua" tvg-logo="https://www.ntktv.ua/bitrix/templates/ntk_copy/images/logo.png" group-title="General",НТК ТВ (1080p) [Not 24/7]
@@ -2451,10 +2454,18 @@ http://europe3.livetv.az/russia/pervyj_kanal/playlist.m3u8
 https://1tvkz-stream.daitsuna.net/1tvkz/1tvkz/playlist.m3u8
 #EXTINF:-1 tvg-id="Channel5.ru" tvg-logo="https://i.imgur.com/KPXMa3U.png" group-title="General",Пятый канал
 http://europe3.livetv.az/russia/5kanal/playlist.m3u8
-#EXTINF:-1 tvg-id="RENTV.ru" tvg-logo="https://i.imgur.com/0Tu5lte.png" group-title="General",РЕН ТВ (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/Rentv_HD_OTT.m3u8
+#EXTINF:-1 tvg-id="RENTV.ru" tvg-logo="https://i.imgur.com/0Tu5lte.png" group-title="General",РЕН ТВ
+http://moobl.ru/hls/Rentv.m3u8
+#EXTINF:-1 tvg-id="RENTVHD.ru" tvg-logo="https://i.imgur.com/0Tu5lte.png" group-title="General",РЕН ТВ HD
+http://moobl.ru/hls/Rentv_HD.m3u8
+#EXTINF:-1 tvg-id="RENTVInternational.ru" tvg-logo="https://i.imgur.com/gBjk9oF.png" group-title="General",Рен ТВ International
+http://moobl.ru/hls/Rentv_international.m3u8
 #EXTINF:-1 tvg-id="Russia1.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/11-%D0%B9_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F-1.svg/512px-11-%D0%B9_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F-1.svg.png" group-title="General",Россия 1
 http://europe3.livetv.az/russia/rossiya_1/playlist.m3u8
+#EXTINF:-1 tvg-id="Russia1HD.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/11-%D0%B9_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F-1.svg/512px-11-%D0%B9_%D0%BB%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F-1.svg.png" group-title="General",Россия HD
+http://moobl.ru/hls/Russia_1_hd.m3u8
+#EXTINF:-1 tvg-id="RTRPlanetaEurope.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/RTR-Planeta_Logo.svg/512px-RTR-Planeta_Logo.svg.png" group-title="General",РТР-Планета Европа
+http://moobl.ru/hls/RTR_Planeta_Eu.m3u8
 #EXTINF:-1 tvg-id="STV.by" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg/512px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%B1%D0%B5%D0%BB%D0%BE%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B3%D0%BE_%D1%82%D0%B5%D0%BB%D0%B5%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%C2%AB%D0%A1%D0%A2%D0%92%C2%BB.svg.png" group-title="General",СТБ (720p)
 https://ctv.dc.beltelecom.by/ctv/ctv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="SferaTV.ua" tvg-logo="https://i.imgur.com/S1h1t0G.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Сфера-ТВ (720p)
