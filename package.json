@@ -4,17 +4,17 @@
     "act:check": "act pull_request -W .github/workflows/check.yml",
     "act:format": "act workflow_dispatch -W .github/workflows/format.yml",
     "act:update": "act workflow_dispatch -W .github/workflows/update.yml",
-    "api:load": "node --no-warnings --loader ts-node scripts/commands/api/load.ts",
-    "api:generate": "node --no-warnings --loader ts-node scripts/commands/api/generate.ts",
+    "api:load": "ts-node --esm scripts/commands/api/load.ts",
+    "api:generate": "ts-node --esm scripts/commands/api/generate.ts",
     "api:deploy": "npx gh-pages-clean && npx gh-pages -a -m \"Deploy to iptv-org/api\" -d .api -r https://$GITHUB_TOKEN@github.com/iptv-org/api.git",
-    "playlist:format": "node --no-warnings --loader ts-node scripts/commands/playlist/format.ts",
-    "playlist:update": "node --no-warnings --loader ts-node scripts/commands/playlist/update.ts",
-    "playlist:generate": "node --no-warnings --loader ts-node scripts/commands/playlist/generate.ts",
-    "playlist:validate": "node --no-warnings --loader ts-node scripts/commands/playlist/validate.ts",
+    "playlist:format": "ts-node --esm scripts/commands/playlist/format.ts",
+    "playlist:update": "ts-node --esm scripts/commands/playlist/update.ts",
+    "playlist:generate": "ts-node --esm scripts/commands/playlist/generate.ts",
+    "playlist:validate": "ts-node --esm scripts/commands/playlist/validate.ts",
     "playlist:lint": "npx m3u-linter -c m3u-linter.json",
     "playlist:deploy": "npx gh-pages-clean && npx gh-pages -m \"Deploy to GitHub Pages\" -d .gh-pages -r https://$GITHUB_TOKEN@github.com/iptv-org/iptv.git",
-    "readme:update": "node --no-warnings --loader ts-node scripts/commands/readme/update.ts",
-    "report:create": "node --no-warnings --loader ts-node scripts/commands/report/create.ts",
+    "readme:update": "ts-node --esm scripts/commands/readme/update.ts",
+    "report:create": "ts-node --esm scripts/commands/report/create.ts",
     "check": "npm run playlist:lint && npm run playlist:validate",
     "format": "npm run playlist:format",
     "update": "npm run playlist:generate && npm run api:generate && npm run readme:update",
@@ -61,6 +61,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
-    "eslint": "^8.49.0"
+    "eslint": "^8.49.0",
+    "ts-node": "^10.9.2"
   }
 }
