@@ -2,13 +2,13 @@
   "compilerOptions": {
     "strict": true,
     "target": "es2020",
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
     "typeRoots": [
       "./scripts/types",
       "./node_modules/@types"
-    ],
-    "esModuleInterop": true
+    ]
   },
   "ts-node": {
     "esm": true,
