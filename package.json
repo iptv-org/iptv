@@ -23,6 +23,9 @@
     "test": "jest --runInBand",
     "postinstall": "npm run api:load"
   },
+  "engines": {
+    "node": ">=18.0.0 <18.19.0"
+  },
   "jest": {
     "transform": {
       "^.+\\.ts$": "ts-jest"
