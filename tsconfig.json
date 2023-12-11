@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es2020",
+    "module": "nodeNext",
+    "moduleResolution": "nodeNext",
+    "typeRoots": [
+      "./scripts/types",
+      "./node_modules/@types"
+    ],
+    "esModuleInterop": true
+  },
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true
+  },
+  "files": [
+    "node_modules/jest-expect-message/types/index.d.ts"
+  ]
+}

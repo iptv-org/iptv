@@ -2,15 +2,13 @@ name: update
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 0 * * *'
 jobs:
   main:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v3
-      - uses: tibdex/github-app-token@v1
+      - uses: tibdex/github-app-token@v1.8.2
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
@@ -20,39 +18,45 @@ jobs:
         if: ${{ !env.ACT }}
         with:
           token: ${{ steps.create-app-token.outputs.token }}
+      - name: setup git
+        run: |
+          git config user.name "iptv-bot[bot]"
+          git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
       - uses: actions/setup-node@v3
+        if: ${{ !env.ACT }}
         with:
           node-version: 18
           cache: 'npm'
       - name: install dependencies
         run: npm install
-      - name: load api data
-        run: npm run api:load
-      - name: validate playlists
+      - name: update internal playlists
+        run: npm run playlist:update --silent >> $GITHUB_OUTPUT
+        id: playlist-update
+      - name: check internal playlists
         run: |
           npm run playlist:lint
           npm run playlist:validate
-      - name: setup database
-        run: npm run db:create
-      - name: generate playlists
+      - name: generate public playlists
         run: npm run playlist:generate
-      - name: generate streams.json
+      - name: generate .api/streams.json
         run: npm run api:generate
       - name: update readme.md
         run: npm run readme:update
-      - name: commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+      - run: git status
+      - name: commit changes to /streams
+        run: |
+          git add streams
+          git status
+          git commit --allow-empty -m "[Bot] Update /streams" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." -m "${{ steps.playlist-update.outputs.OUTPUT }}" --no-verify
+      - name: commit changes to readme.md
+        run: |
+          git add README.md
+          git status
+          git commit --allow-empty -m "[Bot] Update README.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify
+      - name: push all changes to the repository
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
-        with:
-          commit_message: "[Bot] Update README.md"
-          branch: master
-          commit_options: '--no-verify'
-          file_pattern: README.md
-          repository: .
-          commit_user_name: iptv-bot[bot]
-          commit_user_email: 84861620+iptv-bot[bot]@users.noreply.github.com
-          commit_author: iptv-bot[bot] <84861620+iptv-bot[bot]@users.noreply.github.com>
-      - name: deploy to github pages
+        run: git push
+      - name: deploy public playlists to github pages
         uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
@@ -64,7 +68,7 @@ jobs:
           git-config-email: 84861620+iptv-bot[bot]@users.noreply.github.com
           commit-message: '[Bot] Deploy to GitHub Pages'
           clean: true
-      - name: deploy to iptv-org/api
+      - name: move .api/streams.json to iptv-org/api
         uses: JamesIves/github-pages-deploy-action@4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:

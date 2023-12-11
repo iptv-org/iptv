@@ -1,10 +1,17 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="8TV.lv",8TV (1080p)
 http://89.254.128.5:22280/8tv_hd/index.m3u8
+#EXTINF:-1 tvg-id="",Latvijas Radio 2 (240p)
+https://5a44e5b800a41.streamlock.net/liveVLR2/mp4:LR2/playlist.m3u8
+#EXTINF:-1 tvg-id="",Latvijas Radio 3 Klasika (240p)
+https://5a44e5b800a41.streamlock.net/liveVLR3/mp4:Klasika/playlist.m3u8
 #EXTINF:-1 tvg-id="LatvijasSlagerkanals.lv",Latvijas Šlāgerkanāls (720p)
 https://stream.onlive-media.com/live/streams/smk.m3u8
-#EXTINF:-1 tvg-id="LoloTV.lv",LoLo TV (576p)
-https://venera.greenhosting.ru/LoLoLV/video.m3u8
+#EXTINF:-1 tvg-id="LoloTV.lv",Lolo TV (576p)
+https://void.greenhosting.ru/PingvinsLV_Mpeg4/video.m3u8
+#EXTINF:-1 tvg-id="MovifyKino.lv",Movify Kino (576p)
+#EXTVLCOPT:http-referrer=https://void.greenhosting.ru/
+https://void.greenhosting.ru/MovifyKino_Mpeg4/index.m3u8
 #EXTINF:-1 tvg-id="MuzikasVideoKanals.lv",Mūzikas Video Kanāls (720p)
 https://stream.onlive-media.com/live/streams/mvk.m3u8
 #EXTINF:-1 tvg-id="ReTV.lv",Re TV (1080p)
@@ -15,7 +22,8 @@ https://air.star.lv/TV_Jurmala_multistream/index.m3u8
 https://player.tvnet.lv/stream/amlst:61659/playlist.m3u8
 #EXTINF:-1 tvg-id="VidusdaugavasTelevizija.lv",Vidusdaugavas Televīzija (576p)
 https://straume.vdtv.lv/vdtv2/index.m3u8
-#EXTINF:-1 tvg-id="",Latvijas Radio 2 (240p)
-https://5a44e5b800a41.streamlock.net/liveVLR2/mp4:LR2/playlist.m3u8
-#EXTINF:-1 tvg-id="",Latvijas Radio 3 Klasika (240p)
-https://5a44e5b800a41.streamlock.net/liveVLR3/mp4:Klasika/playlist.m3u8
+#EXTINF:-1 tvg-id="Gribuvisuzinat.lv",Хочу всё знать (576p)
+#EXTVLCOPT:http-referrer=https://void.greenhosting.ru/
+https://void.greenhosting.ru/HochuVjeZnat_Mpeg4/index.m3u8
+#EXTINF:-1 tvg-id="1Plus2.lv",1+2
+http://89.254.128.5:22280/1_2/mono.m3u8

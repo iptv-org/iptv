@@ -1,0 +1,55 @@
+name: format
+on:
+  workflow_dispatch:
+  # pull_request:
+  #   types:
+  #     - closed
+jobs:
+  main:
+    # if: ${{ github.event.pull_request.merged == true }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - uses: tibdex/github-app-token@v1.8.2
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - uses: actions/checkout@v3
+        if: ${{ !env.ACT }}
+        with:
+          fetch-depth: 2
+          token: ${{ steps.create-app-token.outputs.token }}
+      - name: setup git
+        run: |
+          git config user.name "iptv-bot[bot]"
+          git config user.email "84861620+iptv-bot[bot]@users.noreply.github.com"
+      - uses: tj-actions/changed-files@v35
+        id: files
+        with:
+          files: streams/*.m3u
+      - uses: actions/setup-node@v3
+        if: ${{ !env.ACT }}
+        with:
+          node-version: 18
+          cache: 'npm'
+      - name: install dependencies
+        run: npm install
+      - name: format internal playlists
+        run: npm run playlist:format
+      - name: check internal playlists
+        run: |
+          npm run playlist:lint
+          npm run playlist:validate
+      - run: git status
+      - name: commit changes to /streams
+        run: |
+          git add streams
+          git status
+          git commit -m "[Bot] Format /streams" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [format](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify
+      - name: push all changes to the repository
+        if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
+        run: git push

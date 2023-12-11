@@ -1,0 +1,19 @@
+name: 🐞 Bug Report
+description: Report an error in this repository
+labels: ['bug']
+
+body:
+  - type: textarea
+    attributes:
+      label: Describe your issue
+      description: Please describe the error in as much detail as possible so that we can fix it quickly.
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Contributing Guide
+      description: 'Please read this guide before posting your request'
+      options:
+        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
+          required: true

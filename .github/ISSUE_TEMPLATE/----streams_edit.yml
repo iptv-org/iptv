@@ -1,0 +1,79 @@
+name: ✏️ Edit stream description
+description: Request to edit stream description
+title: 'Edit: '
+labels: ['streams:edit']
+
+body:
+  - type: input
+    attributes:
+      label: Stream URL (required)
+      description: Link to the stream from a playlist
+      placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        What exactly needs to be changed?
+
+  - type: input
+    attributes:
+      label: Channel ID 
+      description: Channel ID from [iptv-org.github.io](https://iptv-org.github.io/).
+      placeholder: 'BBCAmericaEast.us'
+
+  - type: input
+    attributes:
+      label: Channel Name
+      description: "Full name of the channel. May contain any characters except: `,`, `[`, `]`."
+      placeholder: 'BBC America East'
+
+  - type: dropdown
+    attributes:
+      label: Quality
+      description: Maximum video resolution available on the link
+      options:
+        - 2160p
+        - 1280p
+        - 1080p
+        - 720p
+        - 576p
+        - 480p
+        - 360p
+
+  - type: dropdown
+    attributes:
+      label: Label
+      description: Is there any reason why the broadcast may not work?
+      options:
+        - 'Not 24/7'
+        - 'Geo-blocked'
+
+  - type: input
+    attributes:
+      label: Timeshift
+      placeholder: '0'
+
+  - type: input
+    attributes:
+      label: HTTP User Agent
+      placeholder: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246'
+
+  - type: input
+    attributes:
+      label: HTTP Referrer
+      placeholder: 'https://example.com/'
+
+  - type: textarea
+    attributes:
+      label: Notes
+      placeholder: 'Anything else we should know?'
+
+  - type: checkboxes
+    attributes:
+      label: Contributing Guide
+      description: 'Please read this guide before posting your request'
+      options:
+        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
+          required: true

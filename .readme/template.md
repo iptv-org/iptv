@@ -6,6 +6,7 @@ Collection of publicly available IPTV (Internet Protocol television) channels fr
 
 - 🚀 [How to use?](#how-to-use)
 - 📺 [Playlists](#playlists)
+- 🗓 [EPG](#epg)
 - 🗄 [Database](#database)
 - 👨‍💻 [API](#api)
 - 📚 [Resources](#resources)
@@ -115,6 +116,10 @@ Same thing, but split up into separate files:
 
 </details>
 
+## EPG
+
+[Electronic Program Guide](https://en.wikipedia.org/wiki/Electronic_program_guide) for most of the channels can be downloaded using utilities published in the [iptv-org/epg](https://github.com/iptv-org/epg) repository.
+
 ## Database
 
 All channel data is taken from the [iptv-org/database](https://github.com/iptv-org/database) repository. If you find any errors please open a new [issue](https://github.com/iptv-org/database/issues) there.
@@ -129,7 +134,7 @@ Links to other useful IPTV-related resources can be found in the [iptv-org/aweso
 
 ## Discussions
 
-If you have a question or an idea, you can post it in the [Discussions](https://github.com/orgs/iptv-org/discussions) tab.
+If you need help finding a channel, have a question or idea, welcome to the [Discussions](https://github.com/orgs/iptv-org/discussions).
 
 ## FAQ
 

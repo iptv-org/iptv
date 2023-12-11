@@ -1,0 +1,50 @@
+name: ©️ Copyright removal request
+description: Request to remove content
+labels: ['removal request']
+body:
+  - type: input
+    attributes:
+      label: Your full legal name
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Are you the copyright holder or authorized to act on the copyright owner's behalf?
+      description: We cannot process your request unless it is submitted by the copyright owner or an agent authorized to act on behalf of the copyright owner.
+      options:
+        - Yes, I am the copyright holder.
+        - Yes, I am authorized to act on the copyright owner's behalf.
+        - No.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Please describe the nature of your copyright ownership or authorization to act on the owner's behalf.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Please provide a detailed description of the original copyrighted work that has allegedly been infringed. If possible, include a URL to where it is posted online.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What content should be removed? Please specify the URL for each item or, if it is an entire file, the file's URL.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Any additional information we need to know?
+
+  - type: checkboxes
+    attributes:
+      label: Contributing Guide
+      description: 'Please read this guide before posting your request'
+      options:
+        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
+          required: true

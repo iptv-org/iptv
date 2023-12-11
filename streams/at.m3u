@@ -9,24 +9,22 @@ https://stream.openplayout.org/hls/dorftv/live.m3u8
 http://stream.fs1.tv:8080/hls/webstream.m3u8
 #EXTINF:-1 tvg-id="FS1Salzburg.at",FS1 Salzburg (720p) [Not 24/7]
 https://stream.fs1.tv/hls/webstream.m3u8
-#EXTINF:-1 tvg-id="GoTV.at",GoTV (576p)
+#EXTINF:-1 tvg-id="FUELTV.at",FUEL TV (1080p)
+https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/fuel-tv/606c2f67-acff-4152-975a-e5bfef54eb61/2.m3u8
+#EXTINF:-1 tvg-id="GoTV.at",GoTV (576p) [Not 24/7]
 https://nstream17.gotv.at:1443/live/gotvlive/manifest.mpd
 #EXTINF:-1 tvg-id="HitradioO3.at",Hitradio Ö3 (720p) [Not 24/7]
 https://studiocam-oe3.mdn.ors.at/out/u/studiocam_oe3/q6a/manifest_1.m3u8
-#EXTINF:-1 tvg-id="Kronehit.at",Kronehit (1080p)
-https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8
-#EXTINF:-1 tvg-id="KroneTV.at",Krone.TV (360p)
-https://kronetv.mdn.ors.at/out/u/kronetv-nodrm.m3u8
 #EXTINF:-1 tvg-id="KTV.at",K-TV (720p)
 https://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
+#EXTINF:-1 tvg-id="KroneTV.at",Krone.TV (360p)
+https://kronetv.mdn.ors.at/out/u/kronetv-nodrm.m3u8
+#EXTINF:-1 tvg-id="Kronehit.at",Kronehit (1080p)
+https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="KurierTV.at",Kurier TV (720p)
 https://schautv.mdn.ors.at/out/u/schautv-nodrm.m3u8
-#EXTINF:-1 tvg-id="LandleTV.at",Ländle Tv (1080p)
+#EXTINF:-1 tvg-id="LandleTV.at",Ländle TV (1080p) [Not 24/7]
 https://streaming13.huberwebmedia.at/LiveApp/streams/985585225397790082777809.m3u8
-#EXTINF:-1 tvg-id="M4.at",M4 (1090p) [Not 24/7]
-https://5a32c05065c79.streamlock.net/live/stream/playlist.m3u8
-#EXTINF:-1 tvg-id="M4TV.at",M4TV [Geo-blocked]
-https://streaming.m4tv.at/live/m4tv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Oe24TV.at",oe24 TV (1080p)
 https://varoe24live.sf.apa.at/oe24-live1/oe24.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OktoTV.at",Okto TV (1080p)
@@ -45,11 +43,17 @@ http://p3-6.mov.at:1935/live/weekstream/master.m3u8
 https://ms01.w24.at/R9/smil:liveeventR9.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RedBullTV.at",Red Bull TV (1080p)
 https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8
-#EXTINF:-1 tvg-id="RTV.at",RTV (1080p)
+#EXTINF:-1 tvg-id="RTV.at",RTV (1080p) [Not 24/7]
 http://iptv.rtv-ooe.at/stream.m3u8
-#EXTINF:-1 tvg-id="ServusTV.at",ServusTV [Geo-blocked]
+#EXTINF:-1 tvg-id="SchladmingDachsteinTV.at",Schladming-Dachstein TV (720p)
+https://m317.video-stream-hosting.de/gzSoftware-live/_definst_/smil:livestream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ServusTV.at",ServusTV (1080p) [Geo-blocked]
 https://stv-live.akamaized.net/hls/live/2031011/lingeoSTVATwebPri/master.m3u8
-#EXTINF:-1 tvg-id="SwamijiTV.at",Swamiji TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="SwamijiTVAmerican.at",Swamiji TV American (1080p) [Not 24/7]
+https://stream.swamiji.tv/YogaIPTV/smil:YogaStreamUS.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SwamijiTVAustralian.at",Swamiji TV Australian (1080p) [Not 24/7]
+https://stream.swamiji.tv/YogaIPTV/smil:YogaStreamAU.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="SwamijiTVEuropean.at",Swamiji TV European (1080p) [Not 24/7]
 https://stream.swamiji.tv/YogaIPTV/smil:YogaStream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TirolTV.at",Tirol TV (720p) [Not 24/7]
 https://streaming14.huberwebmedia.at/LiveApp/streams/livestream.m3u8
@@ -61,5 +65,3 @@ http://89.187.168.245:8080/live/sUPPERchannel2/index.m3u8
 https://live1.markenfunk.com/t1/ngrp:live_all/playlist.m3u8
 #EXTINF:-1 tvg-id="W24.at",W24 (720p) [Not 24/7]
 https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SchladmingDachsteinTV.at",Schladming-Dachstein TV (720p)
-https://m317.video-stream-hosting.de/gzSoftware-live/_definst_/smil:livestream.smil/playlist.m3u8
