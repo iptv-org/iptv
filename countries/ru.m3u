@@ -28,7 +28,7 @@ http://moobl.ru/hls/312_kino.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",312 Музыка
 http://moobl.ru/hls/312_music.m3u8
 #EXTINF:-1 tvg-id="360.ru" tvg-logo="https://i.imgur.com/VTJqdoX.png" group-title="General",360° (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/dash/360hd/playlist.mpd
+https://strm.yandex.ru/kal/360tv/360tv0.m3u8
 #EXTINF:-1 tvg-id="360News.ru" tvg-logo="https://i.imgur.com/YXDeX8q.png" group-title="News",360° Новости
 http://moobl.ru/hls/360_news.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",360° Новости HD
@@ -37,10 +37,6 @@ http://moobl.ru/hls/360_news_hd.m3u8
 https://strm.yandex.ru/kal/360news/360news0.m3u8
 #EXTINF:-1 tvg-id="365daysTV.ru" tvg-logo="https://i.imgur.com/NfnAiTR.png" group-title="Documentary",365 Дней ТВ
 http://moobl.ru/hls/365_dnej.m3u8
-#EXTINF:-1 tvg-id="black.ru" tvg-logo="https://i.imgur.com/Q4A6ci4.png" group-title="Entertainment",.black Russia (480p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/Sony_Turbo.m3u8
-#EXTINF:-1 tvg-id="red.ru" tvg-logo="https://i.imgur.com/GET9Qut.png" group-title="Entertainment",.red Russia (480p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/Sony_ET.m3u8
 #EXTINF:-1 tvg-id="scifi.ru" tvg-logo="https://i.imgur.com/nSSUHcg.png" group-title="Science",.sci-fi
 http://moobl.ru/hls/SciFi.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",.sci-fi HD
@@ -104,8 +100,6 @@ https://bloomberg.com/media-manifest/streams/eu-event.m3u8
 https://bloomberg.com/media-manifest/streams/eu.m3u8
 #EXTINF:-1 tvg-id="Bollywood.ru" tvg-logo="https://i.imgur.com/YLQRnXt.png" group-title="Movies",Bollywood
 http://ucdn.beetv.kz/btv/live/hls/000001419.m3u8
-#EXTINF:-1 tvg-id="Bolt.ru" tvg-logo="https://i.imgur.com/YdIHXOR.png" group-title="Movies;Series",Bolt (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/Bolt_HD.m3u8
 #EXTINF:-1 tvg-id="BRIDGE.ru" tvg-logo="https://i.imgur.com/qYObfrG.png" group-title="Music",Bridge
 http://moobl.ru/hls/Bridge_tv.m3u8
 #EXTINF:-1 tvg-id="BRIDGEClassic.ru" tvg-logo="https://i.imgur.com/JJTQq81.png" group-title="Classic;Music",Bridge Classic (1080p) [Geo-blocked]
@@ -140,8 +134,6 @@ https://tbs01-edge11.itdc.ge/davinci/index.m3u8
 http://moobl.ru/hls/DTX_hd.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Duck TV
 http://moobl.ru/hls/DUCKTV.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Duck TV (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/DuckTV.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Duck TV HD
 http://moobl.ru/hls/DUCKTV_HD.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",E TV HD
@@ -165,8 +157,9 @@ http://moobl.ru/hls/Extreme_sports.m3u8
 http://94.230.240.17:8080/fan/index.m3u8
 #EXTINF:-1 tvg-id="FashionTVEurope.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/512px-Fashion_TV_logo.svg.png" group-title="Lifestyle",Fashion TV
 https://fashiontv-fashiontv-5-nl.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="FashionTV.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/512px-Fashion_TV_logo.svg.png" group-title="Lifestyle",Fashion TV (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/Fashion_TV_HD.m3u8
+#EXTINF:-1 tvg-id="FashionTV.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/512px-Fashion_TV_logo.svg.png" group-title="Lifestyle" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Fashion TV Russia (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s30/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",FightBox HD
 http://moobl.ru/hls/FightBox_hd.m3u8
 #EXTINF:-1 tvg-id="FilmBox.ru" tvg-logo="https://i.imgur.com/cXatYqt.png" group-title="Movies",Filmbox
@@ -195,10 +188,6 @@ http://moobl.ru/hls/Hollywood_hd.m3u8
 http://moobl.ru/hls/JimJam.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",KBS World
 https://ytnmmd.mmdlive.lldns.net/ytnmmd/1fd65186a3f64875af501b3340a92931/manifest.m3u8
-#EXTINF:-1 tvg-id="KHL.ru" tvg-logo="https://i.imgur.com/RgdHdOV.png" group-title="Sports",KHL (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/dash/khl_hd_2/playlist.mpd
-#EXTINF:-1 tvg-id="KHLPrime.ru" tvg-logo="https://i.imgur.com/pwxT0ON.png" group-title="Sports",KHL Prime (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/dash/khl_prime_hd/playlist.mpd
 #EXTINF:-1 tvg-id="Kino24.ru" tvg-logo="https://i.imgur.com/QAdDARF.png" group-title="Movies",Kino 24
 http://moobl.ru/hls/Kino_24.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Kulinar TV Show
@@ -251,7 +240,7 @@ http://185.57.68.33:8091/232/tracks-v1a1/index.m3u8
 #EXTINF:-1 tvg-id="RTDocumentaryRussian.ru" tvg-logo="https://i.imgur.com/aeu5zIC.png" group-title="Documentary",RT Documentary Russian (1080p)
 https://hls.rt.com/hls/rtdru.m3u8
 #EXTINF:-1 tvg-id="RTGTV.ru" tvg-logo="https://i.imgur.com/ZMKPAho.png" group-title="Travel",RTG (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/RTG_HD.m3u8
+https://strm.yandex.ru/kal/rtg/rtg0.m3u8
 #EXTINF:-1 tvg-id="RTVi.ru" tvg-logo="https://i.imgur.com/1AEhXyS.png" group-title="General",RTVI
 https://ucdn.beetv.kz/btv/live/hls/000000039.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",RTД
@@ -278,8 +267,6 @@ http://serv30.vintera.tv:8081/sochi/sochi_stream/playlist.m3u8
 http://moobl.ru/hls/Song_tv_armenia_hd.m3u8
 #EXTINF:-1 tvg-id="SONGTVRussia.ru" tvg-logo="https://i.imgur.com/nM7LbmV.png" group-title="Music",Song TV Russia HD
 http://moobl.ru/hls/Song_tv_russia_hd.m3u8
-#EXTINF:-1 tvg-id="StarCinema.ru" tvg-logo="https://i.imgur.com/5sis895.png" group-title="Movies",Star Cinema (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/Star_Cinema_HD.m3u8
 #EXTINF:-1 tvg-id="StarFamily.ru" tvg-logo="https://i.imgur.com/eGuGHnZ.png" group-title="Movies",Star Family
 http://89.254.128.5:22280/star_family_hd/video.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Star Family HD
@@ -300,8 +287,6 @@ https://strm.yandex.ru/kal/sovsec/sovsec0.m3u8
 http://trk555.tv:8888/live
 #EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5Monde Europe (1080p) [Geo-blocked]
 https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
-#EXTINF:-1 tvg-id="vijuTV1000action.ru" tvg-logo="https://i.imgur.com/TMmyuzh.png" group-title="Movies",TV1000 Action Russia (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/TV1000_Action_HD.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",TV Brics
 https://rusbrics.mediacdn.ru/cdn/brics/russian/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBRICSRussian.ru" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS HD
@@ -318,16 +303,18 @@ http://tvoetv.space:8080/tvoetv/index.m3u8
 https://strm.yandex.ru/kal/udar/udar0.m3u8
 #EXTINF:-1 tvg-id="UniverTV.ru" tvg-logo="https://i.imgur.com/r3u0mxr.png" group-title="Undefined",Univer TV (1080p)
 https://cdn.universmotri.ru/live/smil:univer.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="vijuExplore.ru" tvg-logo="https://i.imgur.com/EGIpLPu.png" group-title="Documentary",Viju Explore Russia (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/Viasat_Explore_HD.m3u8
+#EXTINF:-1 tvg-id="vijuExplore.ru" tvg-logo="https://i.imgur.com/EGIpLPu.png" group-title="Documentary",viju Explore (720p)
+https://bl.uma.media/live/485546/HLS/4614144_3/2/1/playlist.m3u8
 #EXTINF:-1 tvg-id="vijuHistory.ru" tvg-logo="https://i.imgur.com/FqWkeXb.png" group-title="Documentary",viju History
 http://europe3.livetv.az/russia/viasat_history/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Viju History HD
 http://moobl.ru/hls/Viju_History_hd.m3u8
+#EXTINF:-1 tvg-id="vijuNature.ru" tvg-logo="https://i.imgur.com/8BPZ18l.png" group-title="Documentary",viju Nature (720p)
+https://bl.uma.media/live/485545/HLS/4614144_3/2/1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Viju Nature HD
 http://moobl.ru/hls/Viju_Nature_hd.m3u8
-#EXTINF:-1 tvg-id="vijuNature.ru" tvg-logo="https://i.imgur.com/8BPZ18l.png" group-title="Documentary",Viju Nature Russia (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/Viasat_Nature_ad_HD.m3u8
+#EXTINF:-1 tvg-id="vijuTV1000action.ru" tvg-logo="https://i.imgur.com/TMmyuzh.png" group-title="Movies",viju TV 1000 Action (720p)
+https://bl.uma.media/live/485541/HLS/4614144_3/2/1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Viju TV1000 Action HD
 http://moobl.ru/hls/Viju_TV1000_Action_HD.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Viju TV1000 HD
@@ -338,14 +325,20 @@ http://moobl.ru/hls/Viju_TV1000_russkoe_kino_HD.m3u8
 http://europe3.livetv.az/russia/tv1000_russkoe_kino/playlist.m3u8
 #EXTINF:-1 tvg-id="vijuTV1000russkoe.ru" tvg-logo="https://i.imgur.com/Meak2y4.png" group-title="Movies",viju Русское кино
 http://82.209.197.187:8080/udp/239.0.100.82:1234
+#EXTINF:-1 tvg-id="vijuPlusComedy.ru" tvg-logo="https://i.imgur.com/YoNOFu7.png" group-title="Comedy",viju+ Comedy (720p)
+https://bl.uma.media/live/485539/HLS/4614144_3/2/1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Viju+ Comedy HD
 http://moobl.ru/hls/Viju_plus_Comedy_hd.m3u8
+#EXTINF:-1 tvg-id="vijuPlusMegahit.ru" tvg-logo="https://i.imgur.com/oIQNddV.png" group-title="Movies",viju+ Megahit (720p)
+https://bl.uma.media/live/485537/HLS/4614144_3/2/1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Viju+ Megahit HD
 http://moobl.ru/hls/Viju_plus_Megahit_hd.m3u8
 #EXTINF:-1 tvg-id="vijuPlusPlanet.ru" tvg-logo="https://i.imgur.com/9Weqdsk.png" group-title="Documentary",Viju+ Planet
 http://moobl.ru/hls/Viju_plus_Planet.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Viju+ Planet HD
 http://moobl.ru/hls/Viju_plus_Planet_hd.m3u8
+#EXTINF:-1 tvg-id="vijuPlusPremiere.ru" tvg-logo="https://i.imgur.com/klRvhR5.png" group-title="Movies",viju+ Premiere (720p)
+https://bl.uma.media/live/485536/HLS/4614144_3/2/1/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Viju+ Premiere HD
 http://moobl.ru/hls/Viju_plus_Premiere_hd.m3u8
 #EXTINF:-1 tvg-id="vijuPlusSerial.ru" tvg-logo="https://i.imgur.com/8yXZET5.png" group-title="Series",Viju+ Serial
@@ -354,16 +347,10 @@ http://94.229.250.73:8008/play/a003
 http://moobl.ru/hls/Viju_plus_Serial_hd.m3u8
 #EXTINF:-1 tvg-id="vijuPlusSport.ru" tvg-logo="https://i.imgur.com/fXESG0l.png" group-title="Sports",viju+ Sport
 http://europe3.livetv.az/russia/viasat_sport/playlist.m3u8
-#EXTINF:-1 tvg-id="vijuPlusComedy.ru" tvg-logo="https://i.imgur.com/YoNOFu7.png" group-title="Comedy",ViP Comedy Russia (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/VIP_Comedy_HD.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",VIP FAMILY
 http://moobl.ru/hls/VIP_family.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",VIP HIT
 http://moobl.ru/hls/VIP_hit.m3u8
-#EXTINF:-1 tvg-id="vijuPlusMegahit.ru" tvg-logo="https://i.imgur.com/oIQNddV.png" group-title="Movies",VIP Megahit Russia (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/VIP_Megahit_HD.m3u8
-#EXTINF:-1 tvg-id="vijuPlusPremiere.ru" tvg-logo="https://i.imgur.com/klRvhR5.png" group-title="Movies",VIP Premiere Russia (1080p) [Geo-blocked]
-https://okkotv-live.cdnvideo.ru/channel/VIP_Premiere_HD.m3u8
 #EXTINF:-1 tvg-id="VIVARussia.ru" tvg-logo="https://i.imgur.com/OFhQQCD.png" group-title="Music",VIVA Russia (1080p)
 http://autopilot.catcast.tv/content/39575/index.m3u8
 #EXTINF:-1 tvg-id="WorldFashionChannel.ru" tvg-logo="https://i.imgur.com/ewH0rNd.png" group-title="Lifestyle",World Fashion Channel Russia (1080p)
