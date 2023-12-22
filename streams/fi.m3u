@@ -9,12 +9,17 @@ https://vod.tv7.fi/tv7-se/smil:tv7-se.smil/playlist.m3u8
 https://inezsecondary.digitacdn.net/live/_definst_/inez/amlst:inezlive.amlst/master.m3u8
 #EXTINF:-1 tvg-id="AlfaTV.fi",IRR-TV (576p) [Not 24/7]
 https://irrtv.digitacdn.net/live/_definst_/irrtv/amlst:irrtv.amlst/playlist.m3u8
+#EXTINF:-1 tvg-id="JRTVJarviradio.fi",JRTV Järviradio (720p)
+https://streamer.radiotaajuus.fi/memfs/47f113bf-04ea-493b-a9d4-52945fd9db31.m3u8
 #EXTINF:-1 tvg-id="KotiTV.fi",KotiTV (720p) [Not 24/7]
 https://kotitv.digitacdn.net/amlst:kotitv.amlst/playlist.m3u8
 #EXTINF:-1 tvg-id="Kutonen.fi",Kutonen (720p)
 https://live-fi.tvkaista.net/kutonen/live.m3u8
 #EXTINF:-1 tvg-id="MTV3.fi",MTV3 (720p)
 https://live-fi.tvkaista.net/mtv3/live.m3u8
+#EXTINF:-1 tvg-id="MTV3.fi",MTV3 (576p)
+#EXTVLCOPT:http-referrer=http://195.222.7.17:8002/
+http://195.222.7.17:8002/ch352
 #EXTINF:-1 tvg-id="MTVUutiset.fi",MTV Uutiset (720p)
 https://live.streaming.a2d.tv/asset/20025962.isml/.m3u8
 #EXTINF:-1 tvg-id="NarTV.fi",NärTV (360p)
@@ -39,8 +44,3 @@ https://yletv.akamaized.net/hls/live/622366/yletv2fin/playlist.m3u8
 https://yletv.akamaized.net/hls/live/622367/yletvteemafemfin/playlist.m3u8
 #EXTINF:-1 tvg-id="NebesaTV7.ru",Небеса ТВ7 (720p)
 https://vod.tv7.fi/tv7-ru/tv7-ru.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="MTV3.fi",MTV3 (576p)
-#EXTVLCOPT:http-referrer=http://195.222.7.17:8002/
-http://195.222.7.17:8002/ch352
-#EXTINF:-1 tvg-id="JRTVJarviradio.fi",JRTV Järviradio (720p)
-https://streamer.radiotaajuus.fi/memfs/47f113bf-04ea-493b-a9d4-52945fd9db31.m3u8
