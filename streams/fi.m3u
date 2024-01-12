@@ -1,8 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AVA.fi",AVA (720p)
-https://live-fi.tvkaista.net/ava/live.m3u8
+https://live-fi.tvkaista.net/ava/live.m3u8?src=iptvorg
 #EXTINF:-1 tvg-id="Frii.fi",Frii (720p)
-https://live-fi.tvkaista.net/frii/live.m3u8
+https://live-fi.tvkaista.net/frii/live.m3u8?src=iptvorg
 #EXTINF:-1 tvg-id="HimlenTV7.fi",Himlen TV7 (720p)
 https://vod.tv7.fi/tv7-se/smil:tv7-se.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AlfaTV.fi",IRR-TV (576p) [Not 24/7]
@@ -12,9 +12,9 @@ https://streamer.radiotaajuus.fi/memfs/47f113bf-04ea-493b-a9d4-52945fd9db31.m3u8
 #EXTINF:-1 tvg-id="KotiTV.fi",KotiTV (720p) [Not 24/7]
 https://kotitv.digitacdn.net/amlst:kotitv.amlst/playlist.m3u8
 #EXTINF:-1 tvg-id="Kutonen.fi",Kutonen (720p)
-https://live-fi.tvkaista.net/kutonen/live.m3u8
+https://live-fi.tvkaista.net/kutonen/live.m3u8?src=iptvorg
 #EXTINF:-1 tvg-id="MTV3.fi",MTV3 (720p)
-https://live-fi.tvkaista.net/mtv3/live.m3u8
+https://live-fi.tvkaista.net/mtv3/live.m3u8?src=iptvorg
 #EXTINF:-1 tvg-id="MTV3.fi",MTV3 (576p)
 #EXTVLCOPT:http-referrer=http://195.222.7.17:8002/
 http://195.222.7.17:8002/ch352
@@ -22,25 +22,35 @@ http://195.222.7.17:8002/ch352
 https://live.streaming.a2d.tv/asset/20025962.isml/.m3u8
 #EXTINF:-1 tvg-id="NarTV.fi",NärTV (360p)
 https://streaming.nartv.fi/live/ngrp:NAR_TV.stream_all/playlist.m3u8
+#EXTINF:-1 tvg-id="NationalGeographic.fi",National Geographic (Finland) (720p)
+https://live-fi.tvkaista.net/national-geographic/live.m3u8?src=iptvorg
 #EXTINF:-1 tvg-id="NavahangTV.fi",Navahang TV (720p)
 https://hls.navahang.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="Nelonen.fi",Nelonen (720p)
+https://live-fi.tvkaista.net/nelonen/live.m3u8?src=iptvorg
 #EXTINF:-1 tvg-id="NopolaNews.fi",Nopola News (1080p) [Not 24/7]
 https://virta2.nopolanews.fi:8443/live/smil:Stream1.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Sub.fi",Sub (720p)
-https://live-fi.tvkaista.net/sub/live.m3u8
+https://live-fi.tvkaista.net/sub/live.m3u8?src=iptvorg
 #EXTINF:-1 tvg-id="TaevasTV7.fi",Taevas TV7 (720p)
 https://vod.tv7.fi/tv7-ee/smil:tv7-ee.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TaivasTV7.fi",Taivas TV7 (720p)
 https://vod.tv7.fi/tv7-fi/smil:tv7-fi.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5.fi",TV5 (720p) [Not 24/7]
-https://live-fi.tvkaista.net/tv5/live.m3u8
+https://live-fi.tvkaista.net/tv5/live.m3u8?src=iptvorg
 #EXTINF:-1 tvg-id="YleTV1.fi",YLE TV 1 (720p) [Geo-blocked]
 https://yletv.akamaized.net/hls/live/622365/yletv1fin/playlist.m3u8
 #EXTINF:-1 tvg-id="YleTV2.fi",YLE TV 2 (720p) [Geo-blocked]
 https://yletv.akamaized.net/hls/live/622366/yletv2fin/playlist.m3u8
 #EXTINF:-1 tvg-id="YleTeemaFem.fi",YLE TV Teema & Fem (720p) [Geo-blocked]
 https://yletv.akamaized.net/hls/live/622367/yletvteemafemfin/playlist.m3u8
-#EXTINF:-1 tvg-id="YleX.fi",YleX (720p)
+#EXTINF:-1 tvg-id="YleTV1.fi",YLE TV 1 (720p) [Global version, some programs blocked]
+https://yletvworld.akamaized.net/hls/live/622540/yletv1w/index.m3u8
+#EXTINF:-1 tvg-id="YleTV2.fi",YLE TV 2 (720p) [Global version, some programs blocked]
+https://yletvworld.akamaized.net/hls/live/622541/yletv2w/index.m3u8
+#EXTINF:-1 tvg-id="YleTeemaFem.fi",YLE TV Teema & Fem (720p) [Global version, some programs blocked]
+https://yletvworld.akamaized.net/hls/live/622547/yletvteemafemw/index.m3u8
+#EXTINF:-1 tvg-id="YleX.fi",YleX Studio Live (720p)
 https://ylestudiolive.akamaized.net/hls/live/2007826/ylestudiolive-YleX/master.m3u8
 #EXTINF:-1 tvg-id="NebesaTV7.ru",Небеса ТВ7 (720p)
 https://vod.tv7.fi/tv7-ru/tv7-ru.smil/playlist.m3u8
