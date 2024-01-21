@@ -363,8 +363,9 @@ https://bozztv.com/inim03/live1/giniko_canalalgerie/chunks.m3u8
 https://shls-cartoon-net-prod-dub.shahid.net/out/v1/dc4aa87372374325a66be458f29eab0f/index.m3u8
 #EXTINF:-1 tvg-id="CayTV.tr" tvg-logo="https://i.imgur.com/ndupxwu.png" group-title="Undefined",Cay TV (720p) [Not 24/7]
 http://stream2.taksimbilisim.com:1935/caytv/bant1/CAYTV.m3u8
-#EXTINF:-1 tvg-id="CBC.az" tvg-logo="https://i.imgur.com/wVT0dwO.png" group-title="News",CBC (720p)
-http://cbctvlive.flashmediacast.com:1935/CBCTVLive/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="CBC.az" tvg-logo="https://i.imgur.com/wVT0dwO.png" group-title="News" user-agent="ExoPlayer2/2.37",CBC
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/cbc/playlist.m3u8
 #EXTINF:-1 tvg-id="CBC.eg" tvg-logo="https://i.imgur.com/8apNaLP.png" group-title="Undefined",CBC (720p) [Not 24/7]
 https://ythls.armelin.one/channel/UCUHq39HXLyAjjMPIjsNRLpw.m3u8
 #EXTINF:-1 tvg-id="CBCSofra.eg" tvg-logo="https://i.imgur.com/YAdk2WR.png" group-title="Undefined",CBC Sofra (720p) [Not 24/7]

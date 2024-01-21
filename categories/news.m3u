@@ -202,8 +202,9 @@ https://d1841z6ti5nz2v.cloudfront.net/Canal21DO/f260159f04ed124e08b9ee0364dd4ca7
 http://181.188.144.141/tmp_hls/ant_tv/index.m3u8
 #EXTINF:-1 tvg-id="APATv.az" tvg-logo="https://i.imgur.com/2CSW4V4.png" group-title="News",APA TV (720p)
 http://rtmp.apa.tv/@pagroup!23.m3u8
-#EXTINF:-1 tvg-id="ARB24.az" tvg-logo="https://i.imgur.com/mtvIFyq.png" group-title="News",ARB 24 (1080p)
-http://85.132.81.184:8080/arb/live/index.m3u8
+#EXTINF:-1 tvg-id="ARB24.az" tvg-logo="https://i.imgur.com/mtvIFyq.png" group-title="News" user-agent="ExoPlayer2/2.37",ARB 24 HD
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o7/arb24/playlist.m3u8
 #EXTINF:-1 tvg-id="ArgusNews.in" tvg-logo="https://i.imgur.com/cGjRe01.png" group-title="News",Argus News (1080p)
 https://live.argusnews.in/hls/argustv.m3u8
 #EXTINF:-1 tvg-id="ArirangTV.kr" tvg-logo="https://i.imgur.com/Asu5pE9.png" group-title="General;News",Arirang TV (1080p)
@@ -330,8 +331,9 @@ https://ythls.armelin.one/channel/UCno6OgN7-NDmRTNBgqWevlw.m3u8
 https://vdo.miserver.pro:3102/stream/play.m3u8
 #EXTINF:-1 tvg-id="CausaComunTV.py" tvg-logo="https://i.imgur.com/8LZvYn1.jpg" group-title="News",Causa Común TV (614p)
 https://cageu.bozztv.com/ssh101/ssh101/causacomuntv/playlist.m3u8
-#EXTINF:-1 tvg-id="CBC.az" tvg-logo="https://i.imgur.com/wVT0dwO.png" group-title="News",CBC (720p)
-http://cbctvlive.flashmediacast.com:1935/CBCTVLive/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="CBC.az" tvg-logo="https://i.imgur.com/wVT0dwO.png" group-title="News" user-agent="ExoPlayer2/2.37",CBC
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/cbc/playlist.m3u8
 #EXTINF:-1 tvg-id="CBCNewsNetwork.ca" tvg-logo="https://i.imgur.com/SjTdhvJ.png" group-title="News",CBC News (720p)
 https://dai2.xumo.com/amagi_hls_data_xumo1212A-redboxcbcnews/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="KCCIDT1.us" tvg-logo="https://i.imgur.com/6xjshQj.png" group-title="News",CBS 8 Des Moines IA (KCCI) (720p)
@@ -532,8 +534,9 @@ https://ythls.armelin.one/channel/UCbATDExtWstHnwWELZnXNZA.m3u8
 https://d1ei8ofhgfmkac.cloudfront.net/app-19518-1306/ngrp:QoZfNjsg_all/playlist.m3u8
 #EXTINF:-1 tvg-id="EuronewsSpanish.fr" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="News",Euronews Spanish
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=2577
-#EXTINF:-1 tvg-id="EuronewsRussian.fr" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="News",Euronews по-русски [Not 24/7]
-https://ythls.armelin.one/channel/UCFzJjgVicCtFxJ5B0P_ei8A.m3u8
+#EXTINF:-1 tvg-id="EuronewsRussian.fr" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="News" user-agent="ExoPlayer2/2.37",Euronews по-русски
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o1/euronews/playlist.m3u8
 #EXTINF:-1 tvg-id="Europe1.fr" tvg-logo="https://i.imgur.com/tztG1MX.png" group-title="News",Europe1
 https://raw.githubusercontent.com/Sphinxroot/HSL/main/DM/fr/Europe1.m3u8
 #EXTINF:-1 tvg-id="ExitosaTV.pe" tvg-logo="https://i.imgur.com/pu0BSB7.png" group-title="News",Exitosa (720p)
@@ -1501,18 +1504,14 @@ https://ythls.armelin.one/channel/UCfWo0Z5PKYd86JfQ5ZE5cWg.m3u8
 https://5db313b643fd8.streamlock.net/ZerounoTVEventi/ZerounoTVEventi/playlist.m3u8
 #EXTINF:-1 tvg-id="Belarus24.by" tvg-logo="https://i.imgur.com/BP7tY6F.png" group-title="News",Беларусь 24 (1080p)
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus24.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Izvestia.ru" tvg-logo="https://i.imgur.com/r5HzA6J.png" group-title="News",Известия
-http://moobl.ru/hls/Izvestia.m3u8
 #EXTINF:-1 tvg-id="MyUkrainaTV.ua" tvg-logo="https://i.imgur.com/OD84Oga.png" group-title="News",Ми-Україна (1080p) [Not 24/7]
 https://ythls.armelin.one/channel/UCEduOt4TK8TtOaznB45TrhA.m3u8
 #EXTINF:-1 tvg-id="Mir24.ru" tvg-logo="https://i.imgur.com/dj9c8Yd.png" group-title="News",Мир 24 (1080p)
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8
-#EXTINF:-1 tvg-id="Mir24HD.ru" tvg-logo="https://i.imgur.com/dj9c8Yd.png" group-title="News",МИР 24 HD
-http://moobl.ru/hls/MIR_24_hd.m3u8
 #EXTINF:-1 tvg-id="CurrentTimeTV.cz" tvg-logo="https://i.imgur.com/hKo8ApU.png" group-title="News",Настоящее Время (720p)
 http://81.94.196.204/tsstreamer/CurrentTime_HD.ts
 #EXTINF:-1 tvg-id="Russia24.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Rossiya-24_Logo.svg/512px-Rossiya-24_Logo.svg.png" group-title="News",Россия 24
-http://moobl.ru/hls/Russia_24.m3u8
+http://135.181.115.81/russia/rossiya24/playlist.m3u8
 #EXTINF:-1 tvg-id="Reporter.ua" tvg-logo="https://i.imgur.com/LyA3kBR.png" group-title="News",Телеканал Репортер Одесса (720p)
 http://cdn1.live-tv.od.ua:8081/31chod/31chod-abr/31chod/31chod/playlist.m3u8
 #EXTINF:-1 tvg-id="Ternopil1.ua" tvg-logo="https://i.imgur.com/f5EtIzV.png" group-title="News",Тернопіль 1 (720p)
