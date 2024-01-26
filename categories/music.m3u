@@ -68,6 +68,8 @@ http://stream.backustv.ru/live/btv3/index.m3u8
 https://dai2.xumo.com/amagi_hls_data_xumo1212A-redboxbaeble/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="BalkanikaTV.bg" tvg-logo="https://i.imgur.com/ak4jyZu.png" group-title="Music",Balkanika TV (270p)
 rtsp://stream.teracomm.bg/balkanika
+#EXTINF:-1 tvg-id="Bandamax.mx" tvg-logo="https://i.imgur.com/4DfnOTA.png" group-title="Music",Bandamax
+https://linear-400.frequency.stream/mt/studio/400/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTV.gr" tvg-logo="https://i.imgur.com/TZ1unwF.png" group-title="Music",Baraza TV (1080p)
 https://eco.streams.ovh/BarazaTV/BarazarazaTV/BarazaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTVDeepHouse.gr" tvg-logo="https://i.imgur.com/TZ1unwF.png" group-title="Music",Baraza TV Deep House (720p)
@@ -251,8 +253,6 @@ https://vs.sednastream.com:1936/folklorit/folklorit/playlist.m3u8
 https://cdne.folxplay.tv/folx-trz/streams/ch-4/master.m3u8
 #EXTINF:-1 tvg-id="FolxSlovenija.si" tvg-logo="https://i.imgur.com/RK1IASU.png" group-title="Music",Folx Slovenija (1080p)
 https://cdne.folxplay.tv/folx-trz/streams/ch-5/master.m3u8
-#EXTINF:-1 tvg-id="FreshTV.am" tvg-logo="https://i.imgur.com/gcFSxrm.png" group-title="Music",Fresh TV (720p)
-https://freshtv.catcast.tv/content/33718/index.m3u8
 #EXTINF:-1 tvg-id="FullMusica.co" tvg-logo="https://i.imgur.com/3WxC59H.jpg" group-title="Music",Full Música (720p)
 https://eu1.servers10.com:8081/8060/index.m3u8
 #EXTINF:-1 tvg-id="FunRadio.fr" tvg-logo="https://i.imgur.com/wgxuYsQ.png" group-title="Music",Fun Radio
@@ -343,8 +343,8 @@ https://stream.cmctv.hr:49998/kit/live.m3u8
 https://kmtvnow-samsung-us.plex.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KoolLondonRadio.uk" tvg-logo="https://i.imgur.com/Jf7gydO.png" group-title="Music",Kool London Radio (720p)
 http://w10.streamgb.com:1935/kool/kool/playlist.m3u8
-#EXTINF:-1 tvg-id="KpopTVPlay.br" tvg-logo="https://i.imgur.com/Tf0vweF.png" group-title="Music",KpopTV Play (720p) [Not 24/7]
-https://srv1.zcast.com.br/kpoptv/kpoptv/playlist.m3u8
+#EXTINF:-1 tvg-id="KpopTVPlay.br" tvg-logo="https://i.imgur.com/Tf0vweF.png" group-title="Music",KpopTV Play
+http://250weu.bozztv.com/ssh101/ssh101/kpoptv/playlist.m3u8
 #EXTINF:-1 tvg-id="KralPopTV.tr" tvg-logo="https://i.imgur.com/ch365lh.png" group-title="Music",KRAL Pop TV (720p)
 https://dogus-live.daioncdn.net/kralpoptv/playlist.m3u8
 #EXTINF:-1 tvg-id="KralTV.tr" tvg-logo="https://i.imgur.com/GeEDOPN.png" group-title="Music",KRAL TV (720p)
@@ -1112,10 +1112,10 @@ http://rtmp.one.by:2300
 http://lova.me/hls/hithd.m3u8
 #EXTINF:-1 tvg-id="RadioShanson.ru" tvg-logo="https://i.imgur.com/lbqM3K2.png" group-title="Music",Радио Шансон (720p) [Not 24/7]
 http://chanson-video.hostingradio.ru:8080/hls/chansonabr/live.m3u8
-#EXTINF:-1 tvg-id="StranaFM.ru" tvg-logo="https://i.imgur.com/WsPlKJJ.png" group-title="Music",Страна FM (720p) [Not 24/7]
-http://live.stranafm.cdnvideo.ru/stranafm/stranafm_hd.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="TNTMusic.ru" tvg-logo="https://i.imgur.com/RenuH4S.png" group-title="Music",ТНТ Music (1080p) [Geo-blocked]
-https://strm.yandex.ru/kal/tntmusic/tntmusic0.m3u8
+#EXTINF:-1 tvg-id="StranaFM.ru" tvg-logo="https://i.imgur.com/WsPlKJJ.png" group-title="Music",Страна ФМ
+https://live-stranafm.cdnvideo.ru/stranafm/smil:stranafm.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TNTMusic.ru" tvg-logo="https://i.imgur.com/RenuH4S.png" group-title="Music",ТНТ MUSIC
+https://cdn-01.bonus-tv.ru/tntmusic/playlist.m3u8
 #EXTINF:-1 tvg-id="Music.kg" tvg-logo="https://www.utrk.kg/img/stream/45.png" group-title="Music",УТРК Музыка (720p)
 https://64e5ed58c00d4.streamlock.net/live/smil:music.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru" tvg-logo="https://i.imgur.com/NBWyJJQ.png" group-title="Music",Шансон-ТВ
