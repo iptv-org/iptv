@@ -82,6 +82,16 @@ async function main() {
           message: `"${stream.name}" is on the blocklist due to claims of copyright holders (${blocked.ref})`
         })
       }
+
+      const chNSFW = stream.channel && !channels.first((channel: Channel) => channel.categories === "XXX")
+      if(chNSFW) {
+        log.add({
+          type: 'error',
+          line: stream.line,
+          message: `Since January 30th, 2024, NSFW channels are no longer allowed in our playlists. Please see https://github.com/iptv-org/iptv/issues/15723 for further information.`
+        })
+      }
+
     })
 
     if (log.notEmpty()) {
