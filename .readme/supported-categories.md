@@ -29,4 +29,3 @@
 | Sports        | Programming is sports                                                 |
 | Travel        | Programming is travel related                                         |
 | Weather       | Programming is focused on weather                                     |
-| XXX           | Programming is adult oriented and x-rated                             |
