@@ -65,8 +65,6 @@ async function main() {
   }).generate()
   logger.info('generating index.m3u...')
   await new IndexGenerator({ streams, logger: generatorsLogger }).generate()
-  logger.info('generating index.nsfw.m3u...')
-  await new IndexNsfwGenerator({ streams, logger: generatorsLogger }).generate()
   logger.info('generating index.category.m3u...')
   await new IndexCategoryGenerator({ streams, logger: generatorsLogger }).generate()
   logger.info('generating index.country.m3u...')

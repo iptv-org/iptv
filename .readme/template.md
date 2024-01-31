@@ -24,20 +24,14 @@ Simply insert one of the links below into [any video player](https://github.com/
 
 ## Playlists
 
-There are several versions of playlists that differ in the way they are grouped.
+There are several versions of playlists that differ in the way they are grouped. As of January 30th, 2024, we have stopped distributing NSFW channels. For more information, please look at [this issue](https://github.com/iptv-org/iptv/issues/15723).
 
 ### Main playlist
 
-Playlist includes all known channels except adult channels.
+This playlist includes all known channels available in this repository.
 
 ```
 https://iptv-org.github.io/iptv/index.m3u
-```
-
-And here is the full version:
-
-```
-https://iptv-org.github.io/iptv/index.nsfw.m3u
 ```
 
 ### Grouped by category
