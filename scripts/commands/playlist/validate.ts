@@ -83,7 +83,7 @@ async function main() {
         })
       }
 
-      const chNSFW = stream.channel && !channels.first((channel: Channel) => (channel.id === stream.channel) && (channel.categories === "XXX"))
+      const chNSFW = stream.channel && !channels.first((channel: Channel) => (channel.id === stream.channel) && (stream.categories === "XXX"))
       if(chNSFW) {
         log.add({
           type: 'error',
