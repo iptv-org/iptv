@@ -79,7 +79,7 @@ async function main() {
         log.add({
           type: 'error',
           line: stream.line,
-          message: `"${stream.name}" is on the blocklist due to claims of copyright holders (${blocked.ref})`
+          message: `"${stream.name}" is on the blocklist due to claims of copyright holders or NSFW content (${blocked.ref})`
         })
       }
     })
