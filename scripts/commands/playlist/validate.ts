@@ -83,8 +83,7 @@ async function main() {
         })
       }
 
-      const chNSFW = stream.channel && !channels.first((channel: Channel) => (channel.id === stream.channel) && (channel.isNSFW === true))
-      if(chNSFW) {
+      if(stream.isNSFW === true) {
         log.add({
           type: 'error',
           line: stream.line,
