@@ -17,7 +17,7 @@ it('show an error if channel name in the blocklist', () => {
   } catch (error) {
     expect((error as ExecError).status).toBe(1)
     expect((error as ExecError).stdout).toContain(
-      'us_blocked.m3u\n 2     error    "Fox Sports 2 Asia (Thai)" is on the blocklist due to claims of copyright holders (https://github.com/iptv-org/iptv/issues/0000)\n\n1 problems (1 errors, 0 warnings)\n'
+      'us_blocked.m3u\n 2     error    "Fox Sports 2 Asia (Thai)" is on the blocklist due to claims of copyright holders or NSFW content (https://github.com/iptv-org/iptv/issues/0000)\n\n1 problems (1 errors, 0 warnings)\n'
     )
   }
 })
