@@ -223,8 +223,6 @@ https://wifiexpert-1.energeek.cl/energeek/radio/playlist.m3u8
 http://178.33.224.197:1935/euroindiemusic/euroindiemusic/playlist.m3u8
 #EXTINF:-1 tvg-id="EurolatinaTV.es" tvg-logo="https://i.imgur.com/s2KcWnr.png" group-title="Culture;Music",Eurolatina TV (720p) [Not 24/7]
 https://media2.streambrothers.com:1936/8150/8150/playlist.m3u8
-#EXTINF:-1 tvg-id="EuropaPlusTV.ru" tvg-logo="https://i.imgur.com/GLc4qrc.png" group-title="Music",Europa Plus TV
-http://135.181.115.81/russia/evropaplus/playlist.m3u8
 #EXTINF:-1 tvg-id="EvaStream.cl" tvg-logo="https://i.imgur.com/neJGp9C.png" group-title="Music",Eva Stream (Corporación Eva) (480p) [Not 24/7]
 https://mediacpstreamchile.com:1936/evavision/evavision/playlist.m3u8
 #EXTINF:-1 tvg-id="EvavisionPachanga.cl" tvg-logo="https://i.imgur.com/neJGp9C.png" group-title="Music",Evavisión Pachanga (Corporación Eva) (720p)
@@ -485,6 +483,8 @@ https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8
 https://webcam.mosaiquefm.net:1936/mosatv/studio/playlist.m3u8
 #EXTINF:-1 tvg-id="MouvTV.fr" tvg-logo="https://i.imgur.com/64nzKEu.jpg" group-title="Music",Mouv
 https://raw.githubusercontent.com/Sphinxroot/HSL/main/DM/fr/Mouv.m3u8
+#EXTINF:-1 tvg-id="MTV90s.uk" tvg-logo="https://i.imgur.com/au5zhwP.png" group-title="Music",MTV 90's
+https://code.vthanhtivi.pw/getlink/eazie/243116/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVBeats.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/512px-MTV_2021_%28brand_version%29.svg.png" group-title="Music",MTV Beats (1080p)
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/MTV_Beats_HD_voot_MOB/Fallback/index.m3u8
 #EXTINF:-1 tvg-id="MTVHits.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/MTV_Hits_2021.svg/512px-MTV_Hits_2021.svg.png" group-title="Music",MTV Hits France (720p)
@@ -1132,8 +1132,9 @@ https://live-stranafm.cdnvideo.ru/stranafm/smil:stranafm.smil/playlist.m3u8
 https://cdn-01.bonus-tv.ru/tntmusic/playlist.m3u8
 #EXTINF:-1 tvg-id="Music.kg" tvg-logo="https://www.utrk.kg/img/stream/45.png" group-title="Music",УТРК Музыка (720p)
 https://64e5ed58c00d4.streamlock.net/live/smil:music.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="ShansonTV.ru" tvg-logo="https://i.imgur.com/NBWyJJQ.png" group-title="Music",Шансон-ТВ
-http://135.181.115.81/russia/shanson/playlist.m3u8
+#EXTINF:-1 tvg-id="ShansonTV.ru" tvg-logo="https://i.imgur.com/NBWyJJQ.png" group-title="Music" user-agent="ExoPlayer2/2.37",Шансон ТВ
+#EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
+https://edge02.odtv.az/o7/shansontv/playlist.m3u8
 #EXTINF:-1 tvg-id="DAR21.am" tvg-logo="https://i.imgur.com/F7YP7cX.png" group-title="Music" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",ԴԱՐ21 (480p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s10/index.m3u8
