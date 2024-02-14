@@ -66,7 +66,7 @@ Same thing, but split up into separate files:
     <tr><td>Entertainment</td><td align="right">400</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/entertainment.m3u</code></td></tr>
     <tr><td>Family</td><td align="right">43</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/family.m3u</code></td></tr>
     <tr><td>General</td><td align="right">1401</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/general.m3u</code></td></tr>
-    <tr><td>Kids</td><td align="right">200</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/kids.m3u</code></td></tr>
+    <tr><td>Kids</td><td align="right">201</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/kids.m3u</code></td></tr>
     <tr><td>Legislative</td><td align="right">174</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/legislative.m3u</code></td></tr>
     <tr><td>Lifestyle</td><td align="right">80</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/lifestyle.m3u</code></td></tr>
     <tr><td>Movies</td><td align="right">289</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/movies.m3u</code></td></tr>
@@ -74,15 +74,15 @@ Same thing, but split up into separate files:
     <tr><td>News</td><td align="right">765</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/news.m3u</code></td></tr>
     <tr><td>Outdoor</td><td align="right">44</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/outdoor.m3u</code></td></tr>
     <tr><td>Relax</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/relax.m3u</code></td></tr>
-    <tr><td>Religious</td><td align="right">548</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/religious.m3u</code></td></tr>
+    <tr><td>Religious</td><td align="right">549</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/religious.m3u</code></td></tr>
     <tr><td>Science</td><td align="right">23</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/science.m3u</code></td></tr>
     <tr><td>Series</td><td align="right">161</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/series.m3u</code></td></tr>
     <tr><td>Shop</td><td align="right">80</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/shop.m3u</code></td></tr>
-    <tr><td>Sports</td><td align="right">214</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/sports.m3u</code></td></tr>
+    <tr><td>Sports</td><td align="right">215</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/sports.m3u</code></td></tr>
     <tr><td>Travel</td><td align="right">26</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/travel.m3u</code></td></tr>
     <tr><td>Weather</td><td align="right">13</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/weather.m3u</code></td></tr>
     <tr><td>XXX</td><td align="right">0</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/xxx.m3u</code></td></tr>
-    <tr><td>Undefined</td><td align="right">5214</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/undefined.m3u</code></td></tr>
+    <tr><td>Undefined</td><td align="right">5216</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
@@ -125,7 +125,7 @@ Same thing, but split up into separate files:
     <tr><td align="left">Bengali</td><td align="right">80</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/ben.m3u</code></td></tr>
     <tr><td align="left">Bhojpuri</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/bho.m3u</code></td></tr>
     <tr><td align="left">Bosnian</td><td align="right">14</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/bos.m3u</code></td></tr>
-    <tr><td align="left">Bulgarian</td><td align="right">35</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/bul.m3u</code></td></tr>
+    <tr><td align="left">Bulgarian</td><td align="right">36</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/bul.m3u</code></td></tr>
     <tr><td align="left">Burmese</td><td align="right">20</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/mya.m3u</code></td></tr>
     <tr><td align="left">Catalan</td><td align="right">53</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/cat.m3u</code></td></tr>
     <tr><td align="left">Central Kurdish</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/ckb.m3u</code></td></tr>
@@ -139,7 +139,7 @@ Same thing, but split up into separate files:
     <tr><td align="left">Dholuo</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/luo.m3u</code></td></tr>
     <tr><td align="left">Dimili</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/zza.m3u</code></td></tr>
     <tr><td align="left">Dutch</td><td align="right">202</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/nld.m3u</code></td></tr>
-    <tr><td align="left">English</td><td align="right">2186</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/eng.m3u</code></td></tr>
+    <tr><td align="left">English</td><td align="right">2187</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/eng.m3u</code></td></tr>
     <tr><td align="left">Estonian</td><td align="right">10</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/est.m3u</code></td></tr>
     <tr><td align="left">Ewe</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/ewe.m3u</code></td></tr>
     <tr><td align="left">Faroese</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/fao.m3u</code></td></tr>
@@ -149,7 +149,7 @@ Same thing, but split up into separate files:
     <tr><td align="left">Galician</td><td align="right">15</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/glg.m3u</code></td></tr>
     <tr><td align="left">Galolen</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/gal.m3u</code></td></tr>
     <tr><td align="left">Georgian</td><td align="right">9</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/kat.m3u</code></td></tr>
-    <tr><td align="left">German</td><td align="right">294</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/deu.m3u</code></td></tr>
+    <tr><td align="left">German</td><td align="right">296</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/deu.m3u</code></td></tr>
     <tr><td align="left">Gikuyu</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/kik.m3u</code></td></tr>
     <tr><td align="left">Goan Konkani</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/gom.m3u</code></td></tr>
     <tr><td align="left">Greek</td><td align="right">134</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/ell.m3u</code></td></tr>
@@ -239,7 +239,7 @@ Same thing, but split up into separate files:
     <tr><td align="left">Wolof</td><td align="right">4</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/wol.m3u</code></td></tr>
     <tr><td align="left">Yucatec Maya</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/yua.m3u</code></td></tr>
     <tr><td align="left">Yue Chinese</td><td align="right">9</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/yue.m3u</code></td></tr>
-    <tr><td align="left">Undefined</td><td align="right">1348</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
+    <tr><td align="left">Undefined</td><td align="right">1349</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
@@ -300,7 +300,7 @@ Same thing, but split up into separate files:
     <tr><td>🇦🇲 Armenia</td><td align="right">49</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/am.m3u</code></td></tr>
     <tr><td>🇦🇼 Aruba</td><td align="right">17</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/aw.m3u</code></td></tr>
     <tr><td>🇦🇺 Australia</td><td align="right">68</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/au.m3u</code></td></tr>
-    <tr><td>🇦🇹 Austria</td><td align="right">57</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/at.m3u</code></td></tr>
+    <tr><td>🇦🇹 Austria</td><td align="right">59</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/at.m3u</code></td></tr>
     <tr><td>🇦🇿 Azerbaijan</td><td align="right">45</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/az.m3u</code></td></tr>
     <tr><td>🇧🇸 Bahamas</td><td align="right">13</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/bs.m3u</code></td></tr>
     <tr><td>🇧🇭 Bahrain</td><td align="right">40</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/bh.m3u</code></td></tr>
@@ -345,7 +345,7 @@ Same thing, but split up into separate files:
     <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sao Paulo</td><td align="right">24</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/br-sp.m3u</code></td></tr>
     <tr><td>🇻🇬 British Virgin Islands</td><td align="right">12</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/vg.m3u</code></td></tr>
     <tr><td>🇧🇳 Brunei</td><td align="right">26</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/bn.m3u</code></td></tr>
-    <tr><td>🇧🇬 Bulgaria</td><td align="right">44</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/bg.m3u</code></td></tr>
+    <tr><td>🇧🇬 Bulgaria</td><td align="right">45</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/bg.m3u</code></td></tr>
     <tr><td>🇧🇫 Burkina Faso</td><td align="right">22</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/bf.m3u</code></td></tr>
     <tr><td>🇧🇮 Burundi</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/bi.m3u</code></td></tr>
     <tr><td>🇰🇭 Cambodia</td><td align="right">32</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/kh.m3u</code></td></tr>
@@ -700,7 +700,7 @@ Same thing, but split up into separate files:
     <tr><td>🇹🇯 Tajikistan</td><td align="right">13</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/tj.m3u</code></td></tr>
     <tr><td>🇹🇿 Tanzania</td><td align="right">28</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/tz.m3u</code></td></tr>
     <tr><td>🇹🇭 Thailand</td><td align="right">97</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/th.m3u</code></td></tr>
-    <tr><td>🇹🇬 Togo</td><td align="right">23</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/tg.m3u</code></td></tr>
+    <tr><td>🇹🇬 Togo</td><td align="right">24</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/tg.m3u</code></td></tr>
     <tr><td>🇹🇰 Tokelau</td><td align="right">6</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/tk.m3u</code></td></tr>
     <tr><td>🇹🇴 Tonga</td><td align="right">6</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/to.m3u</code></td></tr>
     <tr><td>🇹🇹 Trinidad and Tobago</td><td align="right">14</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/tt.m3u</code></td></tr>
@@ -715,7 +715,7 @@ Same thing, but split up into separate files:
     <tr><td>🇦🇪 United Arab Emirates</td><td align="right">81</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ae.m3u</code></td></tr>
     <tr><td>🇬🇧 United Kingdom</td><td align="right">208</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/uk.m3u</code></td></tr>
     <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wales</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/gb-wls.m3u</code></td></tr>
-    <tr><td>🇺🇸 United States</td><td align="right">1800</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/us.m3u</code></td></tr>
+    <tr><td>🇺🇸 United States</td><td align="right">1801</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/us.m3u</code></td></tr>
     <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alabama</td><td align="right">3</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/us-al.m3u</code></td></tr>
     <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alaska</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/us-ak.m3u</code></td></tr>
     <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arizona</td><td align="right">13</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/us-az.m3u</code></td></tr>
@@ -802,22 +802,22 @@ Same thing, but split up into separate files:
     <tr><th align="left">Region</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
-    <tr><td align="left">Africa</td><td align="right">508</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/afr.m3u</code></td></tr>
-    <tr><td align="left">Americas</td><td align="right">4132</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/amer.m3u</code></td></tr>
+    <tr><td align="left">Africa</td><td align="right">509</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/afr.m3u</code></td></tr>
+    <tr><td align="left">Americas</td><td align="right">4133</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/amer.m3u</code></td></tr>
     <tr><td align="left">Arab world</td><td align="right">399</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/arab.m3u</code></td></tr>
     <tr><td align="left">Asia</td><td align="right">2994</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/asia.m3u</code></td></tr>
     <tr><td align="left">Asia-Pacific</td><td align="right">1989</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/apac.m3u</code></td></tr>
     <tr><td align="left">Association of Southeast Asian Nations</td><td align="right">411</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/asean.m3u</code></td></tr>
-    <tr><td align="left">Balkan</td><td align="right">666</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/balkan.m3u</code></td></tr>
+    <tr><td align="left">Balkan</td><td align="right">667</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/balkan.m3u</code></td></tr>
     <tr><td align="left">Benelux</td><td align="right">238</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/benelux.m3u</code></td></tr>
     <tr><td align="left">Caribbean</td><td align="right">272</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/carib.m3u</code></td></tr>
     <tr><td align="left">Central America</td><td align="right">396</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/cenamer.m3u</code></td></tr>
-    <tr><td align="left">Central and Eastern Europe</td><td align="right">1098</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/cee.m3u</code></td></tr>
+    <tr><td align="left">Central and Eastern Europe</td><td align="right">1099</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/cee.m3u</code></td></tr>
     <tr><td align="left">Central Asia</td><td align="right">67</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/cas.m3u</code></td></tr>
     <tr><td align="left">Commonwealth of Independent States</td><td align="right">485</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/cis.m3u</code></td></tr>
-    <tr><td align="left">Europe</td><td align="right">3337</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/eur.m3u</code></td></tr>
-    <tr><td align="left">Europe, the Middle East and Africa</td><td align="right">4197</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/emea.m3u</code></td></tr>
-    <tr><td align="left">European Union</td><td align="right">2195</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/eu.m3u</code></td></tr>
+    <tr><td align="left">Europe</td><td align="right">3340</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/eur.m3u</code></td></tr>
+    <tr><td align="left">Europe, the Middle East and Africa</td><td align="right">4201</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/emea.m3u</code></td></tr>
+    <tr><td align="left">European Union</td><td align="right">2198</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/eu.m3u</code></td></tr>
     <tr><td align="left">Hispanic America</td><td align="right">1869</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/hispam.m3u</code></td></tr>
     <tr><td align="left">Latin America</td><td align="right">2177</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/latam.m3u</code></td></tr>
     <tr><td align="left">Latin America and the Caribbean</td><td align="right">2208</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/lac.m3u</code></td></tr>
@@ -825,17 +825,17 @@ Same thing, but split up into separate files:
     <tr><td align="left">Middle East</td><td align="right">671</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/mideast.m3u</code></td></tr>
     <tr><td align="left">Middle East and North Africa</td><td align="right">722</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/mena.m3u</code></td></tr>
     <tr><td align="left">Nordics</td><td align="right">96</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/nord.m3u</code></td></tr>
-    <tr><td align="left">North America</td><td align="right">2820</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/noram.m3u</code></td></tr>
-    <tr><td align="left">Northern America</td><td align="right">1946</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/nam.m3u</code></td></tr>
+    <tr><td align="left">North America</td><td align="right">2821</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/noram.m3u</code></td></tr>
+    <tr><td align="left">Northern America</td><td align="right">1947</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/nam.m3u</code></td></tr>
     <tr><td align="left">Northern Europe</td><td align="right">133</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/neur.m3u</code></td></tr>
     <tr><td align="left">Oceania</td><td align="right">83</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/oce.m3u</code></td></tr>
     <tr><td align="left">South America</td><td align="right">1321</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/southam.m3u</code></td></tr>
     <tr><td align="left">South Asia</td><td align="right">600</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/sas.m3u</code></td></tr>
     <tr><td align="left">Southeast Asia</td><td align="right">423</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/sea.m3u</code></td></tr>
     <tr><td align="left">Southern Europe</td><td align="right">1097</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/ser.m3u</code></td></tr>
-    <tr><td align="left">Sub-Saharan Africa</td><td align="right">418</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/ssa.m3u</code></td></tr>
-    <tr><td align="left">West Africa</td><td align="right">176</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/wafr.m3u</code></td></tr>
-    <tr><td align="left">Western Europe</td><td align="right">1020</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/wer.m3u</code></td></tr>
+    <tr><td align="left">Sub-Saharan Africa</td><td align="right">419</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/ssa.m3u</code></td></tr>
+    <tr><td align="left">West Africa</td><td align="right">177</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/wafr.m3u</code></td></tr>
+    <tr><td align="left">Western Europe</td><td align="right">1022</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/wer.m3u</code></td></tr>
   </tbody>
 </table>
 
