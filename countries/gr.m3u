@@ -39,8 +39,9 @@ https://rtmp.streams.ovh:1936/barazarelax/barazazararelax/barazarelax/playlist.m
 https://eco.streams.ovh/BarazaTV/BarazaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="BarazaTVRelaxing.gr" tvg-logo="https://i.imgur.com/TZ1unwF.png" group-title="Music",Baraza TV Relaxing (720p)
 https://rtmp.streams.ovh:1936/barazarelax/barazarelax/playlist.m3u8
-#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC News (European feed) (1080p)
-http://livetv.ktv.zone/60/play.m3u8
+#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",BBC World News (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s24/index.m3u8
 #EXTINF:-1 tvg-id="BCI24News.gr" tvg-logo="https://i.imgur.com/VN8FkmS.png" group-title="News",BCI 24 News (720p)
 https://eu1.vectromdigital.com:1936/bci24news/bci24news/playlist.m3u8
 #EXTINF:-1 tvg-id="BestTV.gr" tvg-logo="https://i.imgur.com/AeeeDUc.png" group-title="Undefined",Best TV (720p) [Not 24/7]
@@ -226,8 +227,8 @@ http://wpso.com:1936/hls/music1.m3u8
 http://eu1.vectromdigital.com:1935/topchannel/topchannel/playlist.m3u8
 #EXTINF:-1 tvg-id="TRT.gr" tvg-logo="https://i.imgur.com/g0jPOcC.png" group-title="News",TRT (360p)
 https://www.hellasnet.tv/rest2.live.hn/u2r.trt/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5 Monde Europe
-http://livetv.ktv.zone/61/play.m3u8
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5Monde Europe (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
 #EXTINF:-1 tvg-id="TV100.gr" tvg-logo="https://i.imgur.com/OBH2DfE.png" group-title="Undefined",TV 100 (576p) [Not 24/7]
 https://live.fm100.gr/hls/tv100/index.m3u8
 #EXTINF:-1 tvg-id="TVFilopoli.gr" tvg-logo="https://i.imgur.com/lmuw8ff.png" group-title="Undefined",TV Filopoli (360p) [Not 24/7]

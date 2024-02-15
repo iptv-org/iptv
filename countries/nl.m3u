@@ -15,8 +15,9 @@ https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angeleurope_all/play
 https://takeoff.jetstre.am/?account=OmroepAssen&file=OmroepAssenTV/playlist.m3u8&output=playlist.m3u8&protocol=https&service=webdav&type=live
 #EXTINF:-1 tvg-id="AT5.nl" tvg-logo="https://i.imgur.com/iAiSlEL.png" group-title="Undefined",AT5
 https://takeoff.jetstre.am/?account=atvijf&file=live&output=playlist.m3u8&protocol=https&service=wowza&type=live
-#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC News (European feed) (1080p)
-http://livetv.ktv.zone/60/play.m3u8
+#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",BBC World News (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s24/index.m3u8
 #EXTINF:-1 tvg-id="BEATTV.nl" tvg-logo="https://i.imgur.com/egK33Dj.png" group-title="Entertainment;Music",BE@TTV (1080p)
 https://tv.beatfm.nl/live.m3u8
 #EXTINF:-1 tvg-id="BloombergTVEMEALiveEvent.uk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV EMEA Live Event (720p)
@@ -88,8 +89,8 @@ https://live.jintv.org/medialive/jintv.m3u8
 http://ms7.mx-cd.net/tv/Omroep_de_Kempen.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KetnetJunior.be" tvg-logo="https://i.imgur.com/eDYaphB.png" group-title="Kids",Ketnet Junior (720p)
 https://content.uplynk.com/channel/e11a05356cc44198977436418ad71832.m3u8
-#EXTINF:-1 tvg-id="KTO.fr" tvg-logo="https://i.imgur.com/EY6TsdV.png" group-title="Undefined",KTO
-http://livetv.ktv.zone/236/play.m3u8
+#EXTINF:-1 tvg-id="KTO.fr" tvg-logo="https://i.imgur.com/EY6TsdV.png" group-title="Undefined",KTO (404p) [Not 24/7]
+https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
 #EXTINF:-1 tvg-id="L1TV.nl" tvg-logo="https://i.imgur.com/SDD5KS5.png" group-title="Undefined",L1mburg TV (720p) [Not 24/7]
 https://d34pj260kw1xmk.cloudfront.net/live/l1/tv/index.m3u8
 #EXTINF:-1 tvg-id="LangstraatTV.nl" tvg-logo="https://i.imgur.com/xchUfks.png" group-title="General",Langstraat TV (720p)
@@ -337,8 +338,8 @@ https://stream.studiorhedenlive.nl/hlstv/stream.m3u8
 https://ms7.mx-cd.net/tv/71-1356094/Tommy_Teleshopping.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TravelxpNetherlands.in" tvg-logo="https://i.imgur.com/8KQirah.png" group-title="Undefined",Travelxp Netherlands
 https://travelxp-travelxp-3-nl.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5 Monde Europe
-http://livetv.ktv.zone/61/play.m3u8
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5Monde Europe (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
 #EXTINF:-1 tvg-id="TVEllef.nl" tvg-logo="https://i.imgur.com/FaCd2QY.png" group-title="Undefined",TV Ellef (1080p)
 http://cdn22.streampartner.nl/tvellef/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVValkenburg.nl" tvg-logo="https://i.imgur.com/dovKWQl.png" group-title="Undefined",TV Valkenburg (720p) [Not 24/7]

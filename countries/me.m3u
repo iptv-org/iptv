@@ -3,8 +3,9 @@
 https://live-hls-web-ajb.getaj.net/AJB/index.m3u8
 #EXTINF:-1 tvg-id="AngelTVEurope.in" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Religious",Angel TV Europe (720p)
 https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angeleurope_all/playlist.m3u8
-#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC News (European feed) (1080p)
-http://livetv.ktv.zone/60/play.m3u8
+#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",BBC World News (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s24/index.m3u8
 #EXTINF:-1 tvg-id="BloombergTVEMEALiveEvent.uk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV EMEA Live Event (720p)
 https://bloomberg.com/media-manifest/streams/eu-event.m3u8
 #EXTINF:-1 tvg-id="BloombergTVEurope.uk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV Europe (720p)
@@ -20,8 +21,8 @@ https://edge02.odtv.az/o4/extremesport/playlist.m3u8
 https://fashiontv-fashiontv-5-nl.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TelevizijaTV7.me" tvg-logo="https://i.imgur.com/BzA57wA.png" group-title="Undefined",Televizija TV7 (360p)
 http://uk4.streamingpulse.com:1935/tehnikatv777/tehnikatv777/playlist.m3u8
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5 Monde Europe
-http://livetv.ktv.zone/61/play.m3u8
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5Monde Europe (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
 #EXTINF:-1 tvg-id="TVTeuta.me" tvg-logo="https://i.imgur.com/sWVqBuW.png" group-title="General",TV Teuta (720p)
 https://teutastream.com/tvteuta/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="TVCG1.me" tvg-logo="https://i.imgur.com/QORHrXu.png" group-title="Undefined",TVCG 1 (720p) [Not 24/7]

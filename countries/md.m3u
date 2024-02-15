@@ -5,8 +5,9 @@ http://hls.protv.md/acasatv/acasatv.m3u8
 https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angeleurope_all/playlist.m3u8
 #EXTINF:-1 tvg-id="BaltiTV.md" tvg-logo="https://i.imgur.com/S1vEqZp.png" group-title="Undefined",Bălţi TV (1080p) [Geo-blocked]
 http://77.89.199.174:8000/play/1024/index.m3u8
-#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC News (European feed) (1080p)
-http://livetv.ktv.zone/60/play.m3u8
+#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",BBC World News (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s24/index.m3u8
 #EXTINF:-1 tvg-id="BloombergTVEMEALiveEvent.uk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV EMEA Live Event (720p)
 https://bloomberg.com/media-manifest/streams/eu-event.m3u8
 #EXTINF:-1 tvg-id="BloombergTVEurope.uk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV Europe (720p)
@@ -50,8 +51,8 @@ http://188.237.212.16:8888/live/cameraFeed.m3u8
 https://tv.streambox.ro/hls/telem/index.m3u8
 #EXTINF:-1 tvg-id="TezaurTV.md" tvg-logo="https://i.imgur.com/eAagwLW.png" group-title="Music",Tezaur TV (1080p)
 http://tezaur.mlbfan.org/tezaur/index.m3u8
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5 Monde Europe
-http://livetv.ktv.zone/61/play.m3u8
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5Monde Europe (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
 #EXTINF:-1 tvg-id="TVRMoldova.md" tvg-logo="https://i.imgur.com/wDe9gL2.png" group-title="General",TVR Moldova (720p) [Not 24/7]
 https://mn-nl.mncdn.com/tvrmoldova_new/smil:tvrmoldova_new.smil/index.m3u8
 #EXTINF:-1 tvg-id="VoceaBasarabieiTV.md" tvg-logo="https://i.imgur.com/irP8QLs.png" group-title="Undefined",Vocea Basarabiei TV (720p) [Not 24/7]

@@ -51,8 +51,9 @@ https://stream02.welocal.stream/stream/fhd-augsburgtv_104951/ngrp:stream_all/pla
 http://badentv-stream2.siebnich.info/rtplive/btv.stream/live.m3u8
 #EXTINF:-1 tvg-id="BadenTVSud.de" tvg-logo="https://badentvsued.s3.welocal.cloud/sources/60631840dfa86.png" group-title="Undefined",Baden TV Süd (480p)
 https://cdn.icu.de/rtplive/smil:btvsued.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC News (European feed) (1080p)
-http://livetv.ktv.zone/60/play.m3u8
+#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",BBC World News (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s24/index.m3u8
 #EXTINF:-1 tvg-id="BibelTV.de" tvg-logo="https://i.imgur.com/RLwmrk3.png" group-title="Undefined",Bibel TV (720p)
 https://bibint01.iptv-playoutcenter.de/bibint01/bibint01.stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="BibelTVImpuls.de" tvg-logo="https://i.imgur.com/k4tbW3W.png" group-title="Undefined",Bibel TV Impuls (720p)
@@ -409,8 +410,6 @@ https://stream.rockantenne.de/rockantenne/stream/mp3
 https://live.creacast.com/rockland-radio/smil:rockland-radio.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTDE.de" tvg-logo="https://i.imgur.com/v1PIbB2.png" group-title="News",RT DE (1080p) [Not 24/7]
 https://rt-ger.rttv.com/dvr/rtdeutsch/playlist.m3u8
-#EXTINF:-1 tvg-id="RTLSuper.de" tvg-logo="https://i.imgur.com/KbdK8t9.png" group-title="Undefined",RTL Super
-http://livetv.ktv.zone/55/play.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen1.de" tvg-logo="https://i.imgur.com/OodehFV.png" group-title="Undefined",Saarland Fernsehen 1 (1080p)
 https://saarland1.iptv-playoutcenter.de/saarland1/saarland1.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen2.de" tvg-logo="https://i.imgur.com/Yv7j4ia.png" group-title="Undefined",Saarland Fernsehen 2 (720p) [Not 24/7]
@@ -476,8 +475,8 @@ https://adultswim-vodlive.cdn.turner.com/live/test-5/stream_de.m3u8
 https://5889e7d0d6e28.streamlock.net/tide-live/_definst_/smil:livestream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="tiviTURK.de" tvg-logo="https://i.ibb.co/9TDs8q8/IFE6LHH.jpg" group-title="Undefined",tiviTÜRK (720p) [Not 24/7]
 https://stream.tiviturk.de/live/tiviturk.m3u8
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5 Monde Europe
-http://livetv.ktv.zone/61/play.m3u8
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5Monde Europe (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
 #EXTINF:-1 tvg-id="TV38SudostNiedersachen.de" tvg-logo="https://i.imgur.com/ob9JJPU.png" group-title="Undefined",TV38 Südost-Niedersachen (1080p)
 https://h057.video-stream-hosting.de/tv38-live/_definst_/smil:livestream.smil/playlist.m3u8?ref=
 #EXTINF:-1 tvg-id="TVBerlin.de" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Tv.berlin_2009.svg/512px-Tv.berlin_2009.svg.png" group-title="Undefined",TV Berlin (720p)
@@ -494,8 +493,6 @@ https://tvoberfranken.iptv-playoutcenter.de/tvoberfranken/tvoberfranken.stream_1
 https://tvaktuellr.iptv-playoutcenter.de/tvaktuellr/tvaktuellr.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="VolksmusikTV.de" tvg-logo="https://i.imgur.com/EsWuCJ3.png" group-title="Music",Volksmusik TV (1080p)
 https://vmtv.iptv-playoutcenter.de/vmtv/vmtv1/playlist.m3u8
-#EXTINF:-1 tvg-id="Voxup.de" tvg-logo="https://i.imgur.com/tUTspbW.png" group-title="Undefined",Voxup
-http://livetv.ktv.zone/54/play.m3u8
 #EXTINF:-1 tvg-id="WDR1Live.de" tvg-logo="https://i.imgur.com/RbqDMYx.png" group-title="Undefined",WDR 1 Live (720p)
 https://wdrfs247.akamaized.net/hls/live/681509/wdr_msl4_fs247/index.m3u8
 #EXTINF:-1 tvg-id="WDRFernsehenAachen.de" tvg-logo="https://i.imgur.com/qn5Vmdu.png" group-title="Undefined",WDR Fernsehen Aachen (720p) [Geo-blocked]

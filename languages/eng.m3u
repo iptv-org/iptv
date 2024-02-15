@@ -467,8 +467,6 @@ https://bcovlive-a.akamaihd.net/cde8d9416f6d4f1da0a4e8cfde6e8b2c/us-east-1/62407
 https://cdn-main.lolokoko.tv/BBCHD.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCFour.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/BBC_Four_logo_2021.svg/512px-BBC_Four_logo_2021.svg.png" group-title="Undefined",BBC Four HD (720p) [Geo-blocked]
 https://vs-cmaf-pushb-uk.live.fastly.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_four_hd/iptv_hd_abr_v1.mpd
-#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC News (European feed) (1080p)
-http://livetv.ktv.zone/60/play.m3u8
 #EXTINF:-1 tvg-id="BBCNewsAsiaPacific.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC News Asia Pacific (720p)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs15
 #EXTINF:-1 tvg-id="BBCNews.uk" tvg-logo="https://i.imgur.com/vSz2WEp.png" group-title="News",BBC News HD (720p) [Geo-blocked]
@@ -577,6 +575,9 @@ https://ve-uhd-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uhd_stream_
 https://ve-uhd-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uhd_stream_04/iptv_uhd_v1.mpd
 #EXTINF:-1 tvg-id="BBCUHD5.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/BBC_Logo_2021.svg/2880px-BBC_Logo_2021.svg.png" group-title="Undefined",BBC UHD 5 (2160p) [Geo-blocked] [Not 24/7]
 https://ve-uhd-push-uk-live.akamaized.net/x=3/i=urn:bbc:pips:service:uhd_stream_05/iptv_uhd_v1.mpd
+#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",BBC World News (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s24/index.m3u8
 #EXTINF:-1 tvg-id="BBCNewsSouthAsia.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC World News South Asia
 http://103.199.161.254/Content/bbcworld/Live/Channel(BBCworld)/Stream(01)/index.m3u8
 #EXTINF:-1 tvg-id="BblackCaribbean.fr" tvg-logo="https://i.imgur.com/GyZQCjq.png" group-title="Undefined",Bblack! Caribbean
@@ -1462,8 +1463,8 @@ https://lnc-fox-sports2.tubi.video/index.m3u8
 https://lnc-fox-sports-espanol2.tubi.video/index.m3u8
 #EXTINF:-1 tvg-id="FoxWeather.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Fox_Weather_logo.svg/512px-Fox_Weather_logo.svg.png" group-title="Weather",Fox Weather
 https://dai2.xumo.com/amagi_hls_data_xumo1212A-foxweather-xumo/CDN/master.m3u8
-#EXTINF:-1 tvg-id="France24English.fr" tvg-logo="https://i.imgur.com/B76eSg2.png" group-title="News",France 24 English
-http://livetv.ktv.zone/57/play.m3u8
+#EXTINF:-1 tvg-id="France24English.fr" tvg-logo="https://i.imgur.com/B76eSg2.png" group-title="News",France 24 English (1080p)
+http://n1.klowdtv.net/live2/france24_720p/chunks.m3u8
 #EXTINF:-1 tvg-id="FreeSpeechTV.us" tvg-logo="https://i.imgur.com/Qq6heRq.png" group-title="Undefined",Free Speech TV (720p)
 https://edge.fstv-live-linear-channel.top.comcast.net/Content/HLS_HLSv3/Live/channel(b168a609-19c1-2203-ae1d-6b9726f05e67)/index.m3u8
 #EXTINF:-1 tvg-id="FreebieTV.us" tvg-logo="https://i.imgur.com/KbmXdjm.png" group-title="Undefined",Freebie TV (720p) [Not 24/7]
