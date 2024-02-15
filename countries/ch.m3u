@@ -1,16 +1,13 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="3sat.de" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/3sat_2019.svg/512px-3sat_2019.svg.png" group-title="Undefined",3sat (720p) [Geo-blocked]
 https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8
-#EXTINF:-1 tvg-id="AlJazeeraEnglish.uk" tvg-logo="" group-title="Undefined",Al Jazeera English
-http://livetv.ktv.zone/168/play.m3u8
 #EXTINF:-1 tvg-id="AlpenlandTV.ch" tvg-logo="https://i.imgur.com/NPB6ciB.png" group-title="Undefined",Alpenland TV (720p)
 https://edge14.vedge.infomaniak.com/livecast/ik:alpen-wellelivestream/playlist.m3u8
 #EXTINF:-1 tvg-id="AngelTVEurope.in" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Religious",Angel TV Europe (720p)
 https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angeleurope_all/playlist.m3u8
-#EXTINF:-1 tvg-id="ARTE.fr" tvg-logo="" group-title="Undefined",Arte
-http://livetv.ktv.zone/9/play.m3u8
-#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News",BBC News (European feed) (1080p)
-http://livetv.ktv.zone/60/play.m3u8
+#EXTINF:-1 tvg-id="BBCNewsEurope.uk" tvg-logo="https://i.imgur.com/REuN9RR.png" group-title="News" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",BBC World News (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s24/index.m3u8
 #EXTINF:-1 tvg-id="BloombergTVEMEALiveEvent.uk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV EMEA Live Event (720p)
 https://bloomberg.com/media-manifest/streams/eu-event.m3u8
 #EXTINF:-1 tvg-id="BloombergTVEurope.uk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV Europe (720p)
@@ -52,8 +49,6 @@ https://cdn3.wowza.com/1/T2NXeHF6UGlGbHY3/WFluRldQ/hls/live/playlist.m3u8
 https://edge02.odtv.az/o4/extremesport/playlist.m3u8
 #EXTINF:-1 tvg-id="FashionTVEurope.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/512px-Fashion_TV_logo.svg.png" group-title="Lifestyle",Fashion TV
 https://fashiontv-fashiontv-5-nl.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="FranceInfo.fr" tvg-logo="" group-title="Undefined",France Info
-http://livetv.ktv.zone/29/play.m3u8
 #EXTINF:-1 tvg-id="GOTVCanale163.it" tvg-logo="https://i.imgur.com/11V0QSp.png" group-title="Undefined",GO-TV Canale 163 (720p)
 https://6zklxkbbdw9b-hls-live.mariatvcdn.it/msmotor/2f759512164fc6fe4acbed6a5648993a.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="GrandGeneveTV.fr" tvg-logo="https://i.imgur.com/44oyrTB.png" group-title="Undefined",Grand Genève TV (1080p) [Not 24/7]
@@ -62,16 +57,10 @@ https://ythls.armelin.one/channel/UCXFfYlxx1CDljLyXwXFbL1A.m3u8
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/60afa1508284e60007163c08/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=35fcc6e0-e986-11eb-a0af-c3b401f46211&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=a8b6a6bb-4f8c-438e-a638-d4cfa72ae69a
 #EXTINF:-1 tvg-id="Kanal9.ch" tvg-logo="https://i.imgur.com/TNciMh2.png" group-title="Undefined",Kanal 9 auf Deutsch (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:livesd2/master.m3u8
-#EXTINF:-1 tvg-id="KTO.fr" tvg-logo="https://i.imgur.com/EY6TsdV.png" group-title="Undefined",KTO
-http://livetv.ktv.zone/236/play.m3u8
-#EXTINF:-1 tvg-id="EquipeTV.fr" tvg-logo="" group-title="Undefined",L'Équipe TV
-http://livetv.ktv.zone/23/play.m3u8
-#EXTINF:-1 tvg-id="LaChaineParlementaire.fr" tvg-logo="" group-title="Undefined",La Chaine Parlementaire
-http://livetv.ktv.zone/15/play.m3u8
+#EXTINF:-1 tvg-id="KTO.fr" tvg-logo="https://i.imgur.com/EY6TsdV.png" group-title="Undefined",KTO (404p) [Not 24/7]
+https://live-kto.akamaized.net/hls/live/2033284/KTO/master.m3u8
 #EXTINF:-1 tvg-id="LaTele.ch" tvg-logo="https://i.imgur.com/DdCfl4n.png" group-title="Undefined",La Télé (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:latele/playlist.m3u8
-#EXTINF:-1 tvg-id="LCI.fr" tvg-logo="https://i.imgur.com/DED8EXs.png" group-title="News",LCI
-http://livetv.ktv.zone/28/play.m3u8
 #EXTINF:-1 tvg-id="LemanBleu.ch" tvg-logo="https://i.imgur.com/6ijbSTr.png" group-title="Undefined",Léman Bleu (1080p)
 http://livevideo.infomaniak.com/streaming/livecast/naxoo/playlist.m3u8
 #EXTINF:-1 tvg-id="LFMTV.ch" tvg-logo="https://i.imgur.com/0ZiJm7H.png" group-title="Undefined",LFM TV (1080p)
@@ -118,18 +107,10 @@ https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f8eb8a8b2619a0007
 https://h030.video-stream-hosting.de/quantisana-live/_definst_/smil:livestream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Radio3i.ch" tvg-logo="https://i.imgur.com/0Kmh49G.png" group-title="Undefined",Radio 3i (720p)
 https://vstream-cdn.ch/hls/radio3i.m3u8
-#EXTINF:-1 tvg-id="RAI1.it" tvg-logo="" group-title="Undefined",Rai 1
-http://livetv.ktv.zone/130/play.m3u8
 #EXTINF:-1 tvg-id="RakutenTVFamilyMovies.ch" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Family;Movies",Rakuten TV Family Switzerland (720p)
 https://a24daf1125344b9cab66eed2fcff8821.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-ch_RakutenFamily-1/playlist.m3u8
-#EXTINF:-1 tvg-id="RMCdecouverte.fr" tvg-logo="" group-title="Undefined",RMC Découverte
-http://livetv.ktv.zone/26/play.m3u8
 #EXTINF:-1 tvg-id="RoyalTV.ch" tvg-logo="https://i.imgur.com/1tK2xsc.png" group-title="Undefined",Royal TV (720p)
 http://source2.primetime.ch:2981/play/royaltv/index.m3u8
-#EXTINF:-1 tvg-id="RSI1.ch" tvg-logo="" group-title="Undefined",RSI La 1
-http://livetv.ktv.zone/129/play.m3u8
-#EXTINF:-1 tvg-id="RSI2.ch" tvg-logo="" group-title="Undefined",RSI La 2
-http://livetv.ktv.zone/137/play.m3u8
 #EXTINF:-1 tvg-id="RTFrance.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/RT-France-logo.svg/512px-RT-France-logo.svg.png" group-title="News",RT France (1080p) [Geo-blocked]
 https://rt-fra.rttv.com/dvr/rtfrance/playlist.m3u8
 #EXTINF:-1 tvg-id="RTVIslam.ch" tvg-logo="https://i.ibb.co/LSJqLJw/RTV-LOGO.png" group-title="Religious",RTV Islam (1080p)
@@ -140,10 +121,6 @@ http://live.rtvpendimi.com:8081/hls/RTVPendimi/index.m3u8
 https://streameurope.ch/live/shivalivetv.m3u8
 #EXTINF:-1 tvg-id="SivanTV.ch" tvg-logo="https://i.ibb.co/b3HG9wm/Logo-site.png" group-title="Religious",Sivan TV (1080p)
 http://sivantv.livebox.co.in/sivantvhls/sivan.m3u8
-#EXTINF:-1 tvg-id="SRF1.ch" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/SRF_1_logo.svg/512px-SRF_1_logo.svg.png" group-title="Undefined",SRF 1
-http://livetv.ktv.zone/128/play.m3u8
-#EXTINF:-1 tvg-id="SRF2.ch" tvg-logo="" group-title="Undefined",SRF 2
-http://livetv.ktv.zone/136/play.m3u8
 #EXTINF:-1 tvg-id="SyriTV.ch" tvg-logo="https://i.imgur.com/AtK1v9z.png" group-title="Undefined",Syri TV (720p) [Not 24/7]
 http://live.syri.tv:6969/live/syriblue/hd/23.ts
 #EXTINF:-1 tvg-id="Tele1.ch" tvg-logo="https://i.imgur.com/WIfBbLj.png" group-title="Undefined",Tele 1 (1080p)
@@ -160,10 +137,8 @@ https://edge.vedge.infomaniak.com/livecast/telebielinguech/playlist.m3u8
 https://vstream-cdn.ch/hls/teleticino.m3u8
 #EXTINF:-1 tvg-id="TeleZuri.ch" tvg-logo="https://i.imgur.com/f8kzNT1.png" group-title="Undefined",TeleZüri (720p)
 https://klive.kaltura.com/env/cluster-1-d.live.nvp1/live/hls/p/1719221/e/1_se36k3uk/tl/main/st/0/t/d4y_3ZXUos_JzAX3LwBI3w/index-s32.m3u8
-#EXTINF:-1 tvg-id="NT1.fr" tvg-logo="" group-title="Undefined",TFX
-http://livetv.ktv.zone/13/play.m3u8
-#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5 Monde Europe
-http://livetv.ktv.zone/61/play.m3u8
+#EXTINF:-1 tvg-id="TV5MondeEurope.fr" tvg-logo="https://i.imgur.com/rPAbMSu.png" group-title="General",TV5Monde Europe (1080p) [Geo-blocked]
+https://ott.tv5monde.com/Content/HLS/Live/channel(europe)/variant.m3u8
 #EXTINF:-1 tvg-id="TV8MontBlanc.fr" tvg-logo="https://i.imgur.com/dOXRNVj.png" group-title="Undefined",TV8 Mont Blanc
 https://raw.githubusercontent.com/Sphinxroot/HSL/main/DM/fr/TV8MontBlanc.m3u8
 #EXTINF:-1 tvg-id="TVM3.ch" tvg-logo="https://i.imgur.com/zNJlFMg.png" group-title="Undefined",TVM3 (1080p)
