@@ -21,4 +21,4 @@ Yes, if it is a [visual radio](https://en.wikipedia.org/wiki/Visual_radio) in wh
 
 ### Why don't you accept links to Xtream Codes server?
 
-Xtream Codes streams tend to be very unstable, and often links to them fail very quickly, so it's easier for us to initially exclude them from the playlist than to search for expired ones every day. Furthermore, it is the main source of pirated streams. Usually, when a server is made available online (for various reasons), it is using the username and password of an client *without his authorization*.
+Xtream Codes streams tend to be very unstable, and often links to them fail very quickly, so it's easier for us to initially exclude them from the playlist than to search for expired ones every day. Furthermore, it is the main source of pirated streams. Usually, when a server is made available online (for various reasons), it is using the username and password of an client *without his consent*.
