@@ -2,11 +2,9 @@
 #EXTINF:-1 tvg-id="88Stereo.cr",88 Stereo (720p) [Not 24/7]
 http://k3.usastreams.com/CableLatino/88stereo/playlist.m3u8
 #EXTINF:-1 tvg-id="OPA.cr",¡OPA! (1080p)
-https://cageu.bozztv.com/ssh101/ssh101/opacanal38/playlist.m3u8
+https://opa.usastreams.com:3101/live/canalopalive.m3u8
 #EXTINF:-1 tvg-id="AgrotendenciaTV.cr",Agrotendencia TV (1080p)
 https://5fc584f3f19c9.streamlock.net/agrotendencia/videoagrotendencia_hls1/playlist.m3u8
-#EXTINF:-1 tvg-id="Trivision36.cr",Anexión TV Canal 36 (1080p)
-https://liveingesta118.cdnmedia.tv/trivision36live/smil:dvrlive.smil/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="AntenaSeisTV.cr",Antena Seis TV (720p) [Geo-blocked]
 http://inliveserver.com:1935/14510/14510/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal1.cr",Canal 1 (720p)
@@ -23,7 +21,7 @@ https://d2t46xrpai3it5.cloudfront.net/Canal4CR/e78ef5ae92191a83ba896fbe4bfda83e.
 https://d2t46xrpai3it5.cloudfront.net/Canal6CR/201cac55f42a87a46e2d27a75e0c7c84.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal8.cr",Canal 8 (720p) [Not 24/7]
 https://mdstrm.com/live-stream-playlist/5a7b1e63a8da282c34d65445.m3u8
-#EXTINF:-1 tvg-id="CanalNueve.cr",Canal 9 (720p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Canal9.cr",Canal 9 (720p) [Geo-blocked]
 http://201.201.149.86:8080/livestream/stream.m3u8
 #EXTINF:-1 tvg-id="Canal11.cr",Canal 11 (720p) [Not 24/7]
 https://d2t46xrpai3it5.cloudfront.net/Repretel11/b3e2798525101c45f84a48573676853a.sdp/playlist.m3u8
@@ -45,12 +43,14 @@ https://panel2.streamingtv-mediacp.online:1936/rudcmzwtnh/rudcmzwtnh/playlist.m3
 https://cloudvideo.servers10.com:8081/8030/index.m3u8
 #EXTINF:-1 tvg-id="CristoVisionCanal31.cr",Cristo Visión Canal 31 (720p)
 https://3a310f6ec721e6b362fcd22772b57f36a2fe6bb2.tabeelcr.com:8080/cristovision31/iptv.m3u8
-#EXTINF:-1 tvg-id="Enlace.cr",Enlace
-https://livecdn.enlace.plus/enlace/smil:enlace-fhd.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Enlace.cr",Enlace (720p)
+https://livecdn.enlace.plus/enlace/smil:enlace-hd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="EnlaceJuvenil.cr",Enlace Juvenil (720p)
 https://11554-1.b.cdn13.com/EJTV/smil:ejtv-hd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ExtremaTV.cr",Extrema TV (720p)
 https://627bb251f23c7.streamlock.net:444/ExtremaTV/ExtremaTV/playlist.m3u8
+#EXTINF:-1 tvg-id="FaroPuntarenasTV.cr",Faro Puntarenas TV (720p) [Not 24/7]
+https://rpn3.bozztv.com/ssh101/ssh101/faroptv/playlist.m3u8
 #EXTINF:-1 tvg-id="GarabitoTV.cr",Garabito TV (720p)
 https://59ef525c24caa.streamlock.net/garabitoTV/garabitotv/playlist.m3u8
 #EXTINF:-1 tvg-id="GuatusoTV.cr",Guatuso TV (720p)
@@ -91,6 +91,8 @@ https://250weu.bozztv.com/ssh101/ssh101/tvretropalmares/playlist.m3u8
 https://rpn3.bozztv.com/ssh101/ssh101/retroxtvhd/playlist.m3u8
 #EXTINF:-1 tvg-id="RTTV.cr",RTTV (720p) [Not 24/7]
 https://cloudvideo.servers10.com:19360/8212/8212.m3u8
+#EXTINF:-1 tvg-id="",RTV Chirripó (720p)
+https://lstv.duckdns.org:449/hls/rtchirripo.m3u8
 #EXTINF:-1 tvg-id="SanJoseTV.cr",San José TV (1080p)
 https://rtmp.info/sanjosetv/envivo/playlist.m3u8
 #EXTINF:-1 tvg-id="SanVitoTelevision.cr",San Vito Televisión (720p)
@@ -111,7 +113,7 @@ https://5d16127744872.streamlock.net/TVUNO/TVUNO/playlist.m3u8
 https://59ef525c24caa.streamlock.net/telebrunca/telebrunca/playlist.m3u8
 #EXTINF:-1 tvg-id="Telefides.cr",Telefides (720p)
 https://s2.cwebtv.net:4433/telefides/telefides/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleredTelevision.cr",Telered (720p)
+#EXTINF:-1 tvg-id="TeleredTelevision.cr",Telered (720p) [Not 24/7]
 https://video20.klm99.com:3558/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="Telesistema.cr",Telesistema (480p) [Not 24/7]
 https://59ef525c24caa.streamlock.net/ARBtv/ARBtv/playlist.m3u8
@@ -122,8 +124,15 @@ https://s1.tvdatta.com:3582/live/telesurlive.m3u8
 https://cdn01.teletica.com/TeleticaLiveStreamCR/Stream/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="TicaTVPlus.cr",Tica TV+ (288p)
 https://593b04c4c5670.streamlock.net/portalfoxmix/portalfoxmix/.m3u8
+#EXTINF:-1 tvg-id="TreceCostaRicaTelevision.cr",Trece Costa Rica Televisión (720p) [Not 24/7]
+https://rpn3.bozztv.com/ssh101/ssh101/sinart13/playlist.m3u8
+#EXTINF:-1 tvg-id="Trivision36.cr" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Trivisión 36 (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
+https://liveingesta118.cdnmedia.tv/trivision36live/smil:dvrlive.smil/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="TVCurre.cr",TV Curré (720p) [Not 24/7]
 http://k6.usastreams.online/Tvcurre/Tvcurre/playlist.m3u8
+#EXTINF:-1 tvg-id="TVSantaCruz.cr",TV Santa Cruz (720p) [Not 24/7]
+https://rtmp.info/tvsantacruz/envivo/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSurCanal9.cr",TV Sur Canal 9 (620p) [Not 24/7]
 http://tv.ticosmedia.com:1935/TVSUR/TVSUR/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSurCanal14.cr",TV Sur Canal 14 (1080p)
