@@ -69,8 +69,9 @@ http://181.78.24.67:8010/play/a03p/index.m3u8
 https://www.televinterserver.com:19360/crtvcholuteca/crtvcholuteca.m3u8
 #EXTINF:-1 tvg-id="CTVInternacional.hn" tvg-logo="https://i.imgur.com/BcmQhry.png" group-title="Undefined",CTV Internacional (1080p)
 https://mediacp.us:8081/ctvhn/index.m3u8
-#EXTINF:-1 tvg-id="CubavisionInternacional.cu" tvg-logo="https://i.imgur.com/QJ9lVj2.png" group-title="General",Cubavisión Internacional (504p)
-https://tvup-live.secure2.footprint.net/cubavision/cubavision.mpd
+#EXTINF:-1 tvg-id="CubavisionInternacional.cu" tvg-logo="https://i.imgur.com/QJ9lVj2.png" group-title="General",Cubavisión Internacional (720p)
+#EXTVLCOPT:http-referrer=https://teveo.cu/
+https://cdn.teveo.cu/live/video/A36pWmuWvZBQskuZ/ngrp:gppfydfzpSUn9Udy.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CVATV.hn" tvg-logo="https://i.imgur.com/R8P5enu.jpg" group-title="General",CVA TV (480p) [Not 24/7]
 http://190.124.161.21:8086/cvatv/live.m3u8
 #EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx" tvg-logo="https://i.imgur.com/aksM8pa.png" group-title="Movies",De Película (576p)
