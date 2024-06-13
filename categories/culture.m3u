@@ -196,8 +196,10 @@ https://5c483b9d1019c.streamlock.net/8022/8022/playlist.m3u8
 https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGCultural.es" tvg-logo="https://i.imgur.com/dvkzH8n.png" group-title="Culture",TVG Cultural (720p)
 https://cultural-crtvg.flumotion.com/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRCultural.ro" tvg-logo="https://i.imgur.com/U9i70C9.png" group-title="Culture",TVR Cultural (720p)
-https://mn-nl.mncdn.com/tvr_cultural/tvrcultural/index.m3u8
+#EXTINF:-1 tvg-id="TVRCultural.ro" tvg-logo="https://i.imgur.com/U9i70C9.png" group-title="Culture" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Cultural (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrcultural.cdn.zitec.com/live/tvrcultural/main.m3u8
 #EXTINF:-1 tvg-id="U24Television.ug" tvg-logo="https://i.imgur.com/bhDinx7.jpg" group-title="Culture",U24 Television (480p) [Not 24/7]
 https://cdn1.rea.cdn.moderntv.eu/readymedia/stream/U24/5-20-hls/live.m3u8
 #EXTINF:-1 tvg-id="UChileTV.cl" tvg-logo="https://i.ibb.co/dGpwrLX/UChile-TV-logo-2020.png" group-title="Culture;Education",UChile TV (720p)

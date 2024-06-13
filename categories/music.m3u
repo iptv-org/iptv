@@ -541,8 +541,6 @@ https://strm.yandex.ru/kal/musicboxgold/musicboxgold0.m3u8
 http://103.199.160.85/Content/musicindia/Live/Channel(MusicIndia)/index.m3u8
 #EXTINF:-1 tvg-id="MusicJapanTV.jp" tvg-logo="https://i.imgur.com/HmCI5mk.png" group-title="Music",Music Japan TV (544p)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs06
-#EXTINF:-1 tvg-id="MusicPlus.pl" tvg-shift="Yes" tvg-logo="https://telewizjamusicplus.pl/wp-content/uploads/2024/03/Music-Note-Logo-1-pink.png" group-title="Music",Music+ (1080p)
-https://hugh.cdn.rumble.cloud/live/4gf18j5s/slot-79/3fqc-ohua/chunklist_DVR.m3u8
 #EXTINF:-1 tvg-id="MusicTop.ar" tvg-logo="https://cdn.mitvstatic.com/channels/ar_musictop_m.png" group-title="Music",MusicTop (720p)
 http://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MuzangalaTV.ao" tvg-logo="https://i.imgur.com/fBeaJoS.png" group-title="Music",Muzangala TV (1080p)
@@ -1077,8 +1075,10 @@ https://cloud3.streaminglivehd.com:1936/8068/8068/playlist.m3u8
 https://62fc643fbf1aa.streamlock.net/TVperuanisima/TVperuanisima/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGMusigal.es" tvg-logo="https://i.imgur.com/KgbNv4G.png" group-title="Music",TVG Musigal (480p)
 https://musigal-crtvg.flumotion.com/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRFolclor.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TVR_Folclor_Logo_2023.svg/320px-TVR_Folclor_Logo_2023.svg.png" group-title="General;Music",TVR Folclor (720p)
-https://mn-nl.mncdn.com/tvr_folclor/tvr_folclor/chunklist.m3u8
+#EXTINF:-1 tvg-id="TVRFolclor.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TVR_Folclor_Logo_2023.svg/320px-TVR_Folclor_Logo_2023.svg.png" group-title="General;Music" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Folclor (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrfolclor.cdn.zitec.com/live/tvrfolclor/main.m3u8
 #EXTINF:-1 tvg-id="TVSMusicNetwork.us" tvg-logo="https://i.imgur.com/pXOyNEy.png" group-title="Music",TVS Music Network (720p)
 https://bozztv.com/gusa/gusa-tvsmusic/index.m3u8
 #EXTINF:-1 tvg-id="TVUNO.pe" tvg-logo="https://i.imgur.com/dht94P4.png" group-title="Music",TVUNO (720p)

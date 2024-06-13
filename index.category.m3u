@@ -756,8 +756,10 @@ https://5c483b9d1019c.streamlock.net/8022/8022/playlist.m3u8
 https://streaming.procergs.com.br:8443/tve/stve/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGCultural.es" tvg-logo="https://i.imgur.com/dvkzH8n.png" group-title="Culture",TVG Cultural (720p)
 https://cultural-crtvg.flumotion.com/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRCultural.ro" tvg-logo="https://i.imgur.com/U9i70C9.png" group-title="Culture",TVR Cultural (720p)
-https://mn-nl.mncdn.com/tvr_cultural/tvrcultural/index.m3u8
+#EXTINF:-1 tvg-id="TVRCultural.ro" tvg-logo="https://i.imgur.com/U9i70C9.png" group-title="Culture" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Cultural (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrcultural.cdn.zitec.com/live/tvrcultural/main.m3u8
 #EXTINF:-1 tvg-id="U24Television.ug" tvg-logo="https://i.imgur.com/bhDinx7.jpg" group-title="Culture",U24 Television (480p) [Not 24/7]
 https://cdn1.rea.cdn.moderntv.eu/readymedia/stream/U24/5-20-hls/live.m3u8
 #EXTINF:-1 tvg-id="UChileTV.cl" tvg-logo="https://i.ibb.co/dGpwrLX/UChile-TV-logo-2020.png" group-title="Culture",UChile TV (720p)
@@ -5277,32 +5279,52 @@ https://5ca3e84a76d30.streamlock.net/gpacifico3/obregon.smil/playlist.m3u8
 https://ythls.armelin.one/channel/UCwVQAPo6tjC5w5yBBh0WEdA.m3u8
 #EXTINF:-1 tvg-id="TVQ.gt" tvg-logo="https://i.imgur.com/RnZU9q3.png" group-title="General",TVQ (720p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/9b8beac9026c450fb81ed895539c4665/index.m3u8
-#EXTINF:-1 tvg-id="TVR1.ro" tvg-logo="https://i.imgur.com/QeuEpJM.png" group-title="General",TVR 1 (720p) [Not 24/7]
-https://mn-nl.mncdn.com/tvr1_hd_live/smil:tvr1_hd_live.smil/index.m3u8
-#EXTINF:-1 tvg-id="TVR2.ro" tvg-logo="https://i.imgur.com/hqfokUn.png" group-title="General",TVR 2 (720p) [Not 24/7]
-https://mn-nl.mncdn.com/tvr2_test/smil:tvr2_test.smil/index.m3u8
-#EXTINF:-1 tvg-id="TVR3.ro" tvg-logo="https://i.imgur.com/KqijVn9.png" group-title="General",TVR 3 (720p)
-https://mn-nl.mncdn.com/tvr3_test/smil:tvr3_test.smil/index.m3u8
+#EXTINF:-1 tvg-id="TVR1.ro" tvg-logo="https://i.imgur.com/QeuEpJM.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 1 (1080p) [Not 24/7] [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvr1.cdn.zitec.com/live/tvr1/main.m3u8
+#EXTINF:-1 tvg-id="TVR2.ro" tvg-logo="https://i.imgur.com/hqfokUn.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 2 (1080p) [Not 24/7] [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvr2.cdn.zitec.com/live/tvr2/main.m3u8
+#EXTINF:-1 tvg-id="TVR3.ro" tvg-logo="https://i.imgur.com/KqijVn9.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 3 (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvr3.cdn.zitec.com/live/tvr3/main.m3u8
 #EXTINF:-1 tvg-id="TVRCanal11.cl" tvg-logo="https://pbs.twimg.com/profile_images/977084032386240512/68KB7DYh_400x400.jpg" group-title="General",TVR Canal 11 Curicó (1080p)
 https://unlimited6-cl.dps.live/tvrcurico/tvrcurico.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRCluj.ro" tvg-logo="https://i.imgur.com/RkDra93.png" group-title="General",TVR Cluj (720p)
-https://mn-nl.mncdn.com/tvrcluj_new/smil:tvrcluj_new.smil/index.m3u8
-#EXTINF:-1 tvg-id="TVRCraiova.ro" tvg-logo="https://i.imgur.com/vxWbQiy.png" group-title="General",TVR Craiova (720p)
-https://mn-nl.mncdn.com/tvrcraiova_new/smil:tvrcraiova_new.smil/index.m3u8
-#EXTINF:-1 tvg-id="TVRFolclor.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TVR_Folclor_Logo_2023.svg/320px-TVR_Folclor_Logo_2023.svg.png" group-title="General",TVR Folclor (720p)
-https://mn-nl.mncdn.com/tvr_folclor/tvr_folclor/chunklist.m3u8
-#EXTINF:-1 tvg-id="TVRIasi.ro" tvg-logo="https://i.imgur.com/Kxkihds.png" group-title="General",TVR Iasi (720p)
-https://mn-nl.mncdn.com/tvriasi_new/smil:tvriasi_new.smil/index.m3u8
-#EXTINF:-1 tvg-id="TVRInternational.ro" tvg-logo="https://i.imgur.com/w28wcHs.png" group-title="General",TVR International (720p)
-https://mn-nl.mncdn.com/tvri_test/smil:tvri_test.smil/index.m3u8
+#EXTINF:-1 tvg-id="TVRCluj.ro" tvg-logo="https://i.imgur.com/RkDra93.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Cluj (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrcluj.cdn.zitec.com/live/tvrcluj/main.m3u8
+#EXTINF:-1 tvg-id="TVRCraiova.ro" tvg-logo="https://i.imgur.com/vxWbQiy.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Craiova (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrcraiova.cdn.zitec.com/live/tvrcraiova/main.m3u8
+#EXTINF:-1 tvg-id="TVRFolclor.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TVR_Folclor_Logo_2023.svg/320px-TVR_Folclor_Logo_2023.svg.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Folclor (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrfolclor.cdn.zitec.com/live/tvrfolclor/main.m3u8
+#EXTINF:-1 tvg-id="TVRIasi.ro" tvg-logo="https://i.imgur.com/Kxkihds.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Iasi (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvriasi.cdn.zitec.com/live/tvriasi/main.m3u8
+#EXTINF:-1 tvg-id="TVRInternational.ro" tvg-logo="https://i.imgur.com/w28wcHs.png" group-title="General",TVR International (1080p)
+https://tvr-tvri.cdn.zitec.com/live/tvri/main.m3u8
 #EXTINF:-1 tvg-id="TVRMoldova.md" tvg-logo="https://i.imgur.com/wDe9gL2.png" group-title="General",TVR Moldova (720p) [Not 24/7]
 https://mn-nl.mncdn.com/tvrmoldova_new/smil:tvrmoldova_new.smil/index.m3u8
-#EXTINF:-1 tvg-id="TVRSport.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/TVR_Sport_Logo_2023.svg/320px-TVR_Sport_Logo_2023.svg.png" group-title="General",TVR Sport (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRSport.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/TVR_Sport_Logo_2023.svg/320px-TVR_Sport_Logo_2023.svg.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Sport (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrsport.cdn.zitec.com/live/tvrsport/main.m3u8
-#EXTINF:-1 tvg-id="TVRTarguMures.ro" tvg-logo="https://i.imgur.com/9Hptdqj.png" group-title="General",TVR Targu-Mures (720p)
+#EXTINF:-1 tvg-id="TVRTarguMures.ro" tvg-logo="https://i.imgur.com/9Hptdqj.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Targu-Mures (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://mn-nl.mncdn.com/tvrtgmures_new/smil:tvrtgmures_new.smil/index.m3u8
-#EXTINF:-1 tvg-id="TVRTimisoara.ro" tvg-logo="https://i.imgur.com/0x6Edei.png" group-title="General",TVR Timisoara (720p)
-https://mn-nl.mncdn.com/tvrtimisoara_new/smil:tvrtimisoara_new.smil/index.m3u8
+#EXTINF:-1 tvg-id="TVRTimisoara.ro" tvg-logo="https://i.imgur.com/0x6Edei.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Timisoara (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrtimisoara.cdn.zitec.com/live/tvrtimisoara/main.m3u8
 #EXTINF:-1 tvg-id="TVReus.es" tvg-logo="https://i.imgur.com/Ee0C8UH.jpg" group-title="General",TVReus (720p) [Not 24/7]
 https://eu1.servers10.com:8081/8166/index.m3u8
 #EXTINF:-1 tvg-id="TVRINasional.id" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/512px-TVRILogo2019.svg.png" group-title="General",TVRI Nasional (720p)
@@ -7743,8 +7765,6 @@ https://strm.yandex.ru/kal/musicboxgold/musicboxgold0.m3u8
 http://103.199.160.85/Content/musicindia/Live/Channel(MusicIndia)/index.m3u8
 #EXTINF:-1 tvg-id="MusicJapanTV.jp" tvg-logo="https://i.imgur.com/HmCI5mk.png" group-title="Music",Music Japan TV (544p)
 http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs06
-#EXTINF:-1 tvg-id="MusicPlus.pl" tvg-shift="Yes" tvg-logo="https://telewizjamusicplus.pl/wp-content/uploads/2024/03/Music-Note-Logo-1-pink.png" group-title="Music",Music+ (1080p)
-https://hugh.cdn.rumble.cloud/live/4gf18j5s/slot-79/3fqc-ohua/chunklist_DVR.m3u8
 #EXTINF:-1 tvg-id="MusicTop.ar" tvg-logo="https://cdn.mitvstatic.com/channels/ar_musictop_m.png" group-title="Music",MusicTop (720p)
 http://live-edge01.telecentro.net.ar/live/smil:musictop.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MuzangalaTV.ao" tvg-logo="https://i.imgur.com/fBeaJoS.png" group-title="Music",Muzangala TV (1080p)
@@ -8279,8 +8299,10 @@ https://cloud3.streaminglivehd.com:1936/8068/8068/playlist.m3u8
 https://62fc643fbf1aa.streamlock.net/TVperuanisima/TVperuanisima/playlist.m3u8
 #EXTINF:-1 tvg-id="TVGMusigal.es" tvg-logo="https://i.imgur.com/KgbNv4G.png" group-title="Music",TVG Musigal (480p)
 https://musigal-crtvg.flumotion.com/playlist.m3u8
-#EXTINF:-1 tvg-id="TVRFolclor.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TVR_Folclor_Logo_2023.svg/320px-TVR_Folclor_Logo_2023.svg.png" group-title="Music",TVR Folclor (720p)
-https://mn-nl.mncdn.com/tvr_folclor/tvr_folclor/chunklist.m3u8
+#EXTINF:-1 tvg-id="TVRFolclor.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/TVR_Folclor_Logo_2023.svg/320px-TVR_Folclor_Logo_2023.svg.png" group-title="Music" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Folclor (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrfolclor.cdn.zitec.com/live/tvrfolclor/main.m3u8
 #EXTINF:-1 tvg-id="TVSMusicNetwork.us" tvg-logo="https://i.imgur.com/pXOyNEy.png" group-title="Music",TVS Music Network (720p)
 https://bozztv.com/gusa/gusa-tvsmusic/index.m3u8
 #EXTINF:-1 tvg-id="TVUNO.pe" tvg-logo="https://i.imgur.com/dht94P4.png" group-title="Music",TVUNO (720p)
@@ -9992,8 +10014,10 @@ https://bcovlive-a.akamaihd.net/628aecb4fccb4c52b4f9c8d5cc57fb73/us-west-2/60580
 https://obs.friendshipchurch.eu/tvn/mystream.m3u8
 #EXTINF:-1 tvg-id="TVPWorld.pl" tvg-logo="https://i.imgur.com/lB4MgRI.png" group-title="News",TVP
 http://78.129.193.20/tsstreamer/TVP_SD.ts
-#EXTINF:-1 tvg-id="TVRInfo.ro" tvg-logo="https://i.imgur.com/7oE7ThR.png" group-title="News",TVR Info (720p)
-https://mn-nl.mncdn.com/tvrinfo/tvrinfo_mjuypp/index.m3u8
+#EXTINF:-1 tvg-id="TVRInfo.ro" tvg-logo="https://i.imgur.com/7oE7ThR.png" group-title="News" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Info (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrinfo.cdn.zitec.com/live/tvrinfo/main.m3u8
 #EXTINF:-1 tvg-id="TwentyFourNews.in" tvg-logo="https://i.imgur.com/eS2fVDh.png" group-title="News",Twenty Four News (396p)
 https://segment.yuppcdn.net/110322/channel24/playlist.m3u8
 #EXTINF:-1 tvg-id="UGFTV.ci" tvg-logo="https://i.ibb.co/2k6HkKH/channels4-profile.jpg" group-title="News",UGF TV (720p) [Not 24/7]
@@ -10472,6 +10496,8 @@ https://ythls.armelin.one/channel/UC9Ac9DjBEmNqjAYxf8V1HPA.m3u8
 https://genexservicios.com:19360/canal13jujuy/canal13jujuy.m3u8
 #EXTINF:-1 tvg-id="Canal21.ni" tvg-logo="https://i.imgur.com/ypG437l.png" group-title="Religious",Canal 21 (720p)
 https://stmvideo2.livecastv.com/canal21nic3/canal21nic3/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal27.gt" tvg-logo="https://i.imgur.com/eA4vt8A.png" group-title="Religious",Canal 27 (1080p)
+https://live.canal27.tv:3633/live/canal27live.m3u8
 #EXTINF:-1 tvg-id="Canal29TVA.bo" tvg-logo="https://i.imgur.com/y3bymuv.jpg" group-title="Religious",Canal 29 TVA (1080p)
 https://vdo.grupolimalive.com:3089/live/tvelive.m3u8
 #EXTINF:-1 tvg-id="Canal30TVBethel.gt" tvg-logo="https://i.imgur.com/PP4U1JL.png" group-title="Religious",Canal 30 TV Bethel (720p) [Not 24/7]
@@ -10594,6 +10620,8 @@ https://eu1.servers10.com:8081/wegqaafnsa/index.m3u8
 https://wescottcc.piksel.tech/hls/live/2041478/adp/playlist.m3u8
 #EXTINF:-1 tvg-id="DynamicGospelTV.tg" tvg-logo="https://i.imgur.com/e36BNNK.jpg" group-title="Religious",Dynamic Gospel TV (480p) [Not 24/7]
 https://rpn3.bozztv.com/ssh101/ssh101/tvdynamicstream/playlist.m3u8
+#EXTINF:-1 tvg-id="EbenezerTV.hn" tvg-logo="https://i.imgur.com/IC30j61.png" group-title="Religious",Ebenezer TV (1080p)
+https://5e85d90130e77.streamlock.net/6010/ngrp:6010_all/playlist.m3u8
 #EXTINF:-1 tvg-id="EBNTV.ke" tvg-logo="https://i.imgur.com/NvxqoEn.png" group-title="Religious",EBN TV (720p) [Not 24/7]
 https://goliveafrica.media:9998/live/65d8475d1e6cb/index.m3u8
 #EXTINF:-1 tvg-id="EchtJetztTV.de" tvg-logo="https://i.ibb.co/ccNRGVj/download-10.png" group-title="Religious",EchtJetzt TV (720p)
@@ -10650,6 +10678,8 @@ https://cdn3.wowza.com/1/ZHdrMWt1NjlDSzFu/bzdDVG10/hls/live/playlist.m3u8
 https://cdn3.wowza.com/1/WjduMm1tYnlwNXQx/M01NV3Uz/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="EWTN.us" tvg-logo="https://i.imgur.com/sua70RO.png" group-title="Religious",EWTN United States (720p)
 https://cdn3.wowza.com/1/QjRzVXJtVml5SUVx/WGJRSWxz/hls/live/playlist.m3u8
+#EXTINF:-1 tvg-id="ExpresionTV.gt" tvg-logo="https://i.imgur.com/lFek4Pj.png" group-title="Religious",Expresión TV (1080p)
+https://ssh101.bozztv.com/ssh101/expresiongrany/playlist.m3u8
 #EXTINF:-1 tvg-id="ExtremaTV.cr" tvg-logo="https://i.imgur.com/E9AuhOU.png" group-title="Religious",Extrema TV (720p)
 https://627bb251f23c7.streamlock.net:444/ExtremaTV/ExtremaTV/playlist.m3u8
 #EXTINF:-1 tvg-id="FadakTV.uk" tvg-logo="https://i.imgur.com/MBZ4sSA.png" group-title="Religious",Fadak TV (1080p) [Not 24/7]
@@ -12439,7 +12469,9 @@ http://cdn.tvmatic.net/fight.m3u8
 https://bcovlive-a.akamaihd.net/74f665e9ff8447639d4de4b8b458d8ae/us-east-1/6058004209001/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="TVQSports.gt" tvg-logo="https://i.imgur.com/CQpuBeQ.png" group-title="Sports",TVQ Sports (720p)
 https://dacastmmd.mmdlive.lldns.net/dacastmmd/1b6bbade53634f5a847b953c9adfd102/index.m3u8
-#EXTINF:-1 tvg-id="TVRSport.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/TVR_Sport_Logo_2023.svg/320px-TVR_Sport_Logo_2023.svg.png" group-title="Sports",TVR Sport (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRSport.ro" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/TVR_Sport_Logo_2023.svg/320px-TVR_Sport_Logo_2023.svg.png" group-title="Sports" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Sport (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrsport.cdn.zitec.com/live/tvrsport/main.m3u8
 #EXTINF:-1 tvg-id="TVRISport.id" tvg-logo="https://i.postimg.cc/rFKcGqwx/TVRI-Sport-2022.png" group-title="Sports",TVRI Sport (720p)
 http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRI4)/index.m3u8
@@ -13393,8 +13425,6 @@ https://stream01.msolutionbrasil.com.br/hls/canal25/live.m3u8
 https://common01.todostreaming.es/live/tvbarbastro-livestream.m3u8
 #EXTINF:-1 tvg-id="Canal26.mx" tvg-logo="https://i.imgur.com/PAvnVN9.png" group-title="Undefined",Canal 26 Aguascalientes (1080p)
 https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal27.gt" tvg-logo="https://i.imgur.com/eA4vt8A.png" group-title="Undefined",Canal 27 (1080p)
-https://live.canal27.tv:3633/live/canal27live.m3u8
 #EXTINF:-1 tvg-id="Canal28.mx" tvg-logo="https://i.imgur.com/lr4MZFg.png" group-title="Undefined",Canal 28 (720p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_bf24d4208d8611eeb116dbe87aa63be0
 https://stream.castr.com/653d77dcde70014f52ad1e19/live_bf24d4208d8611eeb116dbe87aa63be0/rewind-3600.m3u8
@@ -14313,8 +14343,6 @@ https://amg02723-oneplanetmedia-amg02723c1-klowdtv-us-2003.playouts.now.amagi.tv
 https://ov.ottera.tv/live/master.m3u8?channel=earth_et
 #EXTINF:-1 tvg-id="EawazTV.ca" tvg-logo="https://i.imgur.com/vB4yzen.png" group-title="Undefined",Eawaz TV (720p) [Not 24/7]
 https://streamer12.vdn.dstreamone.net/saazoawaz/saazoawaz/playlist.m3u8
-#EXTINF:-1 tvg-id="EbenezerTV.hn" tvg-logo="https://i.imgur.com/IC30j61.png" group-title="Undefined",Ebenezer TV (1080p)
-https://5e85d90130e77.streamlock.net/6010/ngrp:6010_all/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Ebony TV (1080p) [Geo-blocked]
 https://lnc-ebony-tv.tubi.video/playlist.m3u8
 #EXTINF:-1 tvg-id="EBS1TV.kr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/EBS_1TV_Logo.svg/512px-EBS_1TV_Logo.svg.png" group-title="Undefined",EBS 1 (400p) [Not 24/7]
@@ -14529,8 +14557,6 @@ https://584943999.r.worldssl.net/584943999/_definst_/vzivo/playlist.m3u8
 https://alchimie-explorebytvplayer-fr-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSE.ro" tvg-logo="https://i.imgur.com/r4zKU1e.png" group-title="Undefined",Exploris (576p) [Not 24/7]
 http://89.38.8.130:39419
-#EXTINF:-1 tvg-id="ExpresionTV.gt" tvg-logo="https://i.imgur.com/lFek4Pj.png" group-title="Undefined",Expresión TV (1080p)
-https://ssh101.bozztv.com/ssh101/expresiongrany/playlist.m3u8
 #EXTINF:-1 tvg-id="ExprezionTV.cl" tvg-logo="https://i.imgur.com/3w9hrzT.png" group-title="Undefined",Exprezión TV (720p)
 https://srv3.zcast.com.br/expreszion/expreszion/playlist.m3u8
 #EXTINF:-1 tvg-id="ExtremaTV.us" tvg-logo="https://i.imgur.com/Z1QVkqu.png" group-title="Undefined",Extrema TV (720p)
@@ -20155,6 +20181,10 @@ http://85.186.146.34:8080
 https://unlimited1-us.dps.live/tvr/tvr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVR.fr" tvg-logo="https://www.tvr.bzh/favicon-1024.png" group-title="Undefined",TVR (Bretagne) (720p)
 https://streamtv.cdn.dvmr.fr/TVR/ngrp:tvr.stream_all/master.m3u8
+#EXTINF:-1 tvg-id="TVRMoldova.ro" tvg-logo="" group-title="Undefined" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Moldova (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
+https://tvr-tvrmoldova.cdn.zitec.com/live/tvrmoldova/main.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",TVR Sicilia HD (1080p) [Not 24/7]
 https://ssh101.bozztv.com/ssh101/televita/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRIAceh.id" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/512px-TVRILogo2019.svg.png" group-title="Undefined",TVRI Aceh (720p)
