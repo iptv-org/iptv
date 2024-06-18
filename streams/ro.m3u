@@ -15,6 +15,8 @@ http://s5.alfaomega.tv:1935/alfaomega/smil:alfaomegatv/playlist.m3u8
 https://transmisiuni.ro/media/oracatolica/playlist.m3u8
 #EXTINF:-1 tvg-id="Antena1.ro",Antena 1 (1080p)
 https://live1ag.antenaplay.ro/live_a1ro/live_a1ro.m3u8
+#EXTINF:-1 tvg-id="Antena3CNN.ro",Antena 3 CNN
+https://live3vox.antenaplay.ro/a3free/a3free.m3u8
 #EXTINF:-1 tvg-id="AntenaMonden.ro",Antena Monden (720p)
 https://stream1.antenaplay.ro/live/AntenaMonden/playlist.m3u8
 #EXTINF:-1 tvg-id="AntenaSport.ro",AntenaSport (720p) [Not 24/7]
@@ -39,8 +41,6 @@ https://shls-live-ak.akamaized.net/out/v1/485100a2150e4f69a338a5c99ca5648e/index
 https://shls-live-ak.akamaized.net/out/v1/fb7b452f58f2412a9ae26b22dd30bd6b/index.m3u8
 #EXTINF:-1 tvg-id="BucovinaTV.ro",Bucovina TV (480p) [Not 24/7]
 http://46.4.14.12:9999/btvsvlive/playlist.m3u8
-#EXTINF:-1 tvg-id="KanalD.ro",Kanal D (480p)
-https://stream1.kanald.ro/iphone/knd-live.m3u8
 #EXTINF:-1 tvg-id="CardioTVSRC.ro",Cardio TV SRC (720p)
 https://5947cbf6e693a.streamlock.net/live/play2/playlist.m3u8
 #EXTINF:-1 tvg-id="CaTine.ro",CaTine (720p)
@@ -87,10 +87,10 @@ http://46.4.14.12:9999/intermedia1/playlist.m3u8
 http://83.103.150.198:8080
 #EXTINF:-1 tvg-id="JOBTV.ro",JOB TV (720p)
 https://jobtvvideo.space/hls/stream/index.m3u8
+#EXTINF:-1 tvg-id="KanalD.ro",Kanal D (480p)
+https://stream1.kanald.ro/iphone/knd-live.m3u8
 #EXTINF:-1 tvg-id="KanalD2.ro",Kanal D2 (360p)
 https://stream2.kanald.ro/iphone/knd-live.m3u8
-#EXTINF:-1 tvg-id="KanalD.ro",Kanal D Romania (360p)
-https://stream1.kanald.ro/iphone/knd-live.m3u8
 #EXTINF:-1 tvg-id="KapitalTV.ro",Kapital TV (576p) [Not 24/7]
 https://testcam.go.ro:8080/hls/livestream.m3u8
 #EXTINF:-1 tvg-id="KissTV.ro",Kiss TV (1080p)
@@ -227,16 +227,12 @@ https://tvr-tvriasi.cdn.zitec.com/live/tvriasi/main.m3u8
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrinfo.cdn.zitec.com/live/tvrinfo/main.m3u8
-#EXTINF:-1 tvg-id="TVRInfo.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Info (1080p) [Geo-blocked]
-#EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
-https://tvr-tvrinfo.cdn.zitec.com/live/tvrinfo/main.m3u8
-#EXTINF:-1 tvg-id="TVRMoldova.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Moldova (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRInternational.ro",TVR International (1080p)
+https://tvr-tvri.cdn.zitec.com/live/tvri/main.m3u8
+#EXTINF:-1 tvg-id="" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Moldova (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrmoldova.cdn.zitec.com/live/tvrmoldova/main.m3u8
-#EXTINF:-1 tvg-id="TVRInternational.ro",TVR International (1080p)
-https://tvr-tvri.cdn.zitec.com/live/tvri/main.m3u8
 #EXTINF:-1 tvg-id="TVRSport.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Sport (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
@@ -251,5 +247,3 @@ https://mn-nl.mncdn.com/tvrtgmures_new/smil:tvrtgmures_new.smil/index.m3u8
 https://tvr-tvrtimisoara.cdn.zitec.com/live/tvrtimisoara/main.m3u8
 #EXTINF:-1 tvg-id="TVSat.ro",TVSat (576p) [Not 24/7]
 http://89.38.8.130:39443
-#EXTINF:-1 tvg-id="Antena3CNN.ro",Antena 3 CNN
-https://live3vox.antenaplay.ro/a3free/a3free.m3u8
