@@ -12,8 +12,6 @@ https://video1.in-news.ru/360/index.m3u8
 #EXTINF:-1 tvg-id="KTOKUDA.ru",#КТОКУДА
 http://camera.global-x.ru/MirUvlecheniy/index.m3u8
 #EXTINF:-1 tvg-id="BackusTVDark.ru",BackusTV Dark (720p) [Not 24/7]
-http://stream.backustv.ru/content/39864/index.m3u8
-#EXTINF:-1 tvg-id="BackusTVDark.ru",BackusTV Dark (720p) [Not 24/7]
 http://stream.backustv.ru/live/btv2/index.m3u8
 #EXTINF:-1 tvg-id="BackusTVMusic.ru",BackusTV Music (720p) [Not 24/7]
 http://stream.backustv.ru/live/btv3/index.m3u8
@@ -29,8 +27,6 @@ http://dancehits80.denvs.ru:8080/index.m3u8
 http://sirius.greenhosting.ru/Kino24Ru/video.m3u8
 #EXTINF:-1 tvg-id="",Kulinar TV Show
 https://api.alpaca.t62a.com/hls/9110/index.m3u8
-#EXTINF:-1 tvg-id="MCMTop.ru",MCM Top (Russia)
-http://live-3.otcnet.ru/mcmtop/index.m3u8
 #EXTINF:-1 tvg-id="MosObrTV.ru",MOSOBR.TV (720p)
 http://retj.educom.ru/mosobrtv/tv1/index.m3u8
 #EXTINF:-1 tvg-id="MosObrTV.ru",MOSOBR.TV (720p) [Not 24/7]
@@ -51,8 +47,6 @@ http://serv30.vintera.tv:8081/sochi/sochi24_tv/playlist.m3u8
 http://serv30.vintera.tv:8081/sochi/sochi_stream/playlist.m3u8
 #EXTINF:-1 tvg-id="SONGTVRussia.ru",SONGTV Russia (720p)
 https://songtv.hls.iptvdc.com/web-russia/index.m3u8
-#EXTINF:-1 tvg-id="StarFamily.ru",Star Family
-http://89.254.128.5:22280/star_family_hd/video.m3u8
 #EXTINF:-1 tvg-id="",TRK 555 (720p)
 http://trk555.tv:8888/live
 #EXTINF:-1 tvg-id="",TVOE TV HD
@@ -65,11 +59,10 @@ https://cdn.universmotri.ru/live/smil:mbr.smil/playlist.m3u8
 http://82.209.197.187:8080/udp/239.0.100.141:1234
 #EXTINF:-1 tvg-id="vijuTV1000russkoe.ru",viju Русское кино
 http://82.209.197.187:8080/udp/239.0.100.82:1234
-#EXTINF:-1 tvg-id="VIVARussia.ru",VIVA Russia (1080p)
-https://rpn3.bozztv.com/ssh101/ssh101/vivarussia/playlist.m3u8
 #EXTINF:-1 tvg-id="VIVARussia.ru",VIVA Russia (1080p) [Not 24/7]
-#EXTVLCOPT:http-referrer=https://dlive.tv/
-https://cloudfront.prdv3.dlivecdn.com/viva-russia/1703952590/src/live.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.4044.138 Safari/537.36
+#EXTVLCOPT:http-referrer=https://goodgame.ru
+https://hls.goodgame.ru/hls/180805.m3u8
 #EXTINF:-1 tvg-id="AISTTV.ru",Аист ТВ
 http://live2-aisttv.cdnvideo.ru/aisttv2/aisttv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Aris24.ru",Арис 24 (720p) [Not 24/7]
@@ -98,8 +91,6 @@ https://www.gtk.tv/hls/gtyar.m3u8
 http://live.guberniatv.cdnvideo.ru/guberniatv/guberniatv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="TVRain.ru",Дождь (1080p)
 https://1527562093.rsc.cdn77.org/transcode/ngrp:ses_all/playlist.m3u8
-#EXTINF:-1 tvg-id="Eurasia.ru",Евразия (Орск) (720p)
-http://infochhdcdn.trkeurasia.ru/orsk-infochhd/infochhd/playlist.m3u8
 #EXTINF:-1 tvg-id="Eurasia.ru",Евразия (Орск) (720p)
 https://infochh.trkeurasia.ru/hlsinfoch/infochhd.m3u8
 #EXTINF:-1 tvg-id="Enisey.ru",Енисей (1080p) [Not 24/7]
@@ -232,14 +223,10 @@ http://live.rusevertv.ru/streams.rs.m3u8
 https://sitv.ru/hls/stv.m3u8
 #EXTINF:-1 tvg-id="SamaraGIS.ru",Самара ГИС (1080p) [Not 24/7]
 http://45.67.57.9:8080/new/new/playlist.m3u8
-#EXTINF:-1 tvg-id="Saratov24.ru",Саратов 24 (1080p) [Not 24/7]
-https://saratov24.tv/online/playlist.php
 #EXTINF:-1 tvg-id="SvoyoTV.ru",Своё HD
 http://live.stv24.tv:8080/svoetv/HQ_video.m3u8
-#EXTINF:-1 tvg-id="SelengaTV.ru",Селенга ТВ (576p)
-http://90.188.37.86/live/playlist.m3u8
 #EXTINF:-1 tvg-id="SolnechnogorskoeTV.ru",Солнечногорское ТВ (360p) [Geo-blocked]
-http://hls.solntv.cdnvideo.ru/solntv/solntv.sdp/playlist.m3u8
+http://hls-solntv.cdnvideo.ru/solntv/solntv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Solnce.ru",Солнце
 http://tv.mediacdn.ru/live/disney/playlist.m3u8
 #EXTINF:-1 tvg-id="Soyuz.ru",Союз (576p)
@@ -274,6 +261,8 @@ https://hls.tv.3angels.ru/stream.m3u8
 http://82.209.197.187:8080/udp/239.0.100.101:1234
 #EXTINF:-1 tvg-id="HuzurTV.ru",Хузур ТВ (1080p) [Not 24/7]
 https://hls-mycdn08724960135.cdnvideo.ru/mycdn08724960135/stream1/playlist.m3u8
+#EXTINF:-1 tvg-id="TsargradTV.ru",Царьград ТВ
+https://evtccc0y6kd.a.trbcdn.net/livemaster/bzm8x_live-i5ang56kd2.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TsentrKrasnoyarsk.ru",Центр (Красноярск)
 https://stream.tck.tv/hd.m3u8
 #EXTINF:-1 tvg-id="ShansonTV.ru",Шансон ТВ (576p) [Geo-blocked]
