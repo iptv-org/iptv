@@ -59,11 +59,10 @@ https://cdn.universmotri.ru/live/smil:mbr.smil/playlist.m3u8
 http://82.209.197.187:8080/udp/239.0.100.141:1234
 #EXTINF:-1 tvg-id="vijuTV1000russkoe.ru",viju Русское кино
 http://82.209.197.187:8080/udp/239.0.100.82:1234
-#EXTINF:-1 tvg-id="VIVARussia.ru",VIVA Russia (1080p)
-https://rpn3.bozztv.com/ssh101/ssh101/vivarussia/playlist.m3u8
 #EXTINF:-1 tvg-id="VIVARussia.ru",VIVA Russia (1080p) [Not 24/7]
-#EXTVLCOPT:http-referrer=https://dlive.tv/
-https://cloudfront.prdv3.dlivecdn.com/viva-russia/1703952590/src/live.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.4044.138 Safari/537.36
+#EXTVLCOPT:http-referrer=https://goodgame.ru
+https://hls.goodgame.ru/hls/180805.m3u8
 #EXTINF:-1 tvg-id="AISTTV.ru",Аист ТВ
 http://live2-aisttv.cdnvideo.ru/aisttv2/aisttv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Aris24.ru",Арис 24 (720p) [Not 24/7]
