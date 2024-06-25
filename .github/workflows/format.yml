@@ -34,7 +34,7 @@ jobs:
       - uses: actions/setup-node@v3
         if: ${{ !env.ACT }}
         with:
-          node-version: 18
+          node-version: 20
           cache: 'npm'
       - name: install dependencies
         run: npm install
