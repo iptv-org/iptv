@@ -41,6 +41,8 @@ https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8
 https://public.apsny.camera/tv_abaza_tv_to_site/index.m3u8
 #EXTINF:-1 tvg-id="AcasaTV.md" tvg-logo="https://i.imgur.com/k8qpvHb.png" group-title="Entertainment",Acasa TV (576p)
 http://hls.protv.md/acasatv/acasatv.m3u8
+#EXTINF:-1 tvg-id="AgroTVAzerbaijan.az" tvg-logo="https://i.imgur.com/hPC48jL.png" group-title="Outdoor",Agro TV Azerbaijan (1080p) [Not 24/7]
+https://yayin30.haber100.com/live/agrotv2/playlist.m3u8
 #EXTINF:-1 tvg-id="AlauTV.kz" tvg-logo="https://i.imgur.com/gK6ZRzp.png" group-title="Undefined",Alau TV (576p)
 https://otv.wotom.net/alau/stream.m3u8
 #EXTINF:-1 tvg-id="AlvinChannelTV.az" tvg-logo="https://i.imgur.com/m6CM7VU.png" group-title="General",Alvin Channel TV (360p) [Not 24/7]
@@ -148,7 +150,7 @@ http://gohoski.fvds.ru:3000/mediabay/144/playlist.m3u8
 https://live.teleradiocom.tj/7/3m.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",E!
 https://cdn-01.bonus-tv.ru/gsl/playlist.m3u8
-#EXTINF:-1 tvg-id="ELTV.az" tvg-logo="https://i.imgur.com/tTlokZ2.png" group-title="General",EL TV (260p)
+#EXTINF:-1 tvg-id="ELTV.az" tvg-logo="https://i.imgur.com/tTlokZ2.png" group-title="General",EL TV (260p) [Not 24/7]
 http://85.132.53.162:1935/live/eltv/playlist.m3u8
 #EXTINF:-1 tvg-id="Ertis.kz" tvg-logo="https://i.imgur.com/tghMiwW.png" group-title="Undefined",Ertis (1080p) [Not 24/7]
 https://stream.kaztrk.kz/regional/pavlodartv/index.m3u8
@@ -166,7 +168,7 @@ http://stream01.vnet.am/ParamountChannel/mono.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined" user-agent="ExoPlayer2/2.37",Ictimai TV
 #EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
 https://edge02.odtv.az/o1/ictimai/playlist.m3u8
-#EXTINF:-1 tvg-id="IctimaiTV.az" tvg-logo="https://i.imgur.com/HzY4VMo.png" group-title="General",Ictimai TV
+#EXTINF:-1 tvg-id="IctimaiTV.az" tvg-logo="https://i.imgur.com/HzY4VMo.png" group-title="General",Ictimai TV [Geo-blocked]
 http://109.205.166.68/server124/ictimai_tv/index.m3u8
 #EXTINF:-1 tvg-id="IdmanTV.az" tvg-logo="https://i.imgur.com/fM9FOrZ.png" group-title="Sports" user-agent="ExoPlayer2/2.37",Idman
 #EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
@@ -293,6 +295,8 @@ https://stream.kaztrk.kz/regional/karagandytv/index.m3u8
 https://stream.kaztrk.kz/regional/semeytv/index.m3u8
 #EXTINF:-1 tvg-id="ShoppingLive.ru" tvg-logo="https://i.imgur.com/EMmGnjV.png" group-title="Shop",Shopping Live (576p) [Not 24/7]
 http://serv30.vintera.tv:8081/shoppinglive/shoppinglive_stream/playlist.m3u8
+#EXTINF:-1 tvg-id="ShowPlusTV.az" tvg-logo="https://i.imgur.com/Je2DGSG.jpg" group-title="Entertainment",Show Plus TV (720p)
+https://glb.bozztv.com/glb/ssh101/showplus/index.m3u8
 #EXTINF:-1 tvg-id="Sochi24.ru" tvg-logo="https://i.imgur.com/iwWxkl6.png" group-title="General;News",Sochi 24 HD
 http://serv30.vintera.tv:8081/sochi/sochi24_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SochiLiveHD.ru" tvg-logo="https://online-red.com/images/tv/sochi-live.png" group-title="General",Sochi Live HD (720p) [Not 24/7]
@@ -681,7 +685,8 @@ https://yaroslavl.mediacdn.ru/cdn/pervyaroslavsk/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Плюс ТВ
 http://178.124.179.122:8088/PlusTV/index.m3u8
 #EXTINF:-1 tvg-id="Pobeda.ru" tvg-logo="https://i.imgur.com/4KiYSln.png" group-title="Undefined",Победа
-https://streaming.televizor-24-tochka.ru/live/43.m3u8
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.goodstream.cyou/live/43.m3u8
 #EXTINF:-1 tvg-id="Poehali.ru" tvg-logo="https://i.imgur.com/mxsBZaC.png" group-title="Entertainment",Поехали!
 http://streaming.tv-teleport.ru/MTV_Live_HD/index.m3u8
 #EXTINF:-1 tvg-id="PremialnoeHD.ru" tvg-logo="https://i.imgur.com/ck4aLBP.png" group-title="Movies",Премиальное HD
@@ -732,10 +737,10 @@ http://s18209.cdn.ngenix.net/hls/CH_R01_ROSSIA24/playlist.m3u8
 #EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
 https://edge02.odtv.az/o1/rtrkultura/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Россия РТР
-https://streaming.televizor-24-tochka.ru/live/211.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Россия РТР
 #EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
 https://streaming.goodstream.cyou/live/211.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Россия РТР
+https://streaming.televizor-24-tochka.ru/live/211.m3u8
 #EXTINF:-1 tvg-id="RostovPapa.ru" tvg-logo="https://i.imgur.com/2JYkoSa.png" group-title="Undefined",Ростов-папа (1080p)
 https://live-rostovpapa.cdnvideo.ru/rostovpapa/rostovpapa.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="RTRPlanetaCIS.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/RTR-Planeta_Logo.svg/512px-RTR-Planeta_Logo.svg.png" group-title="General",РТР Планета СНГ

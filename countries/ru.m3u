@@ -437,7 +437,8 @@ http://5.164.24.83/tula/1tv_low/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Первый Ярославский
 https://yaroslavl.mediacdn.ru/cdn/pervyaroslavsk/playlist.m3u8
 #EXTINF:-1 tvg-id="Pobeda.ru" tvg-logo="https://i.imgur.com/4KiYSln.png" group-title="Undefined",Победа
-https://streaming.televizor-24-tochka.ru/live/43.m3u8
+#EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
+https://streaming.goodstream.cyou/live/43.m3u8
 #EXTINF:-1 tvg-id="Poehali.ru" tvg-logo="https://i.imgur.com/mxsBZaC.png" group-title="Entertainment",Поехали!
 http://streaming.tv-teleport.ru/MTV_Live_HD/index.m3u8
 #EXTINF:-1 tvg-id="PremialnoeHD.ru" tvg-logo="https://i.imgur.com/ck4aLBP.png" group-title="Movies",Премиальное HD
@@ -488,10 +489,10 @@ http://s18209.cdn.ngenix.net/hls/CH_R01_ROSSIA24/playlist.m3u8
 #EXTVLCOPT:http-user-agent=ExoPlayer2/2.37
 https://edge02.odtv.az/o1/rtrkultura/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Россия РТР
-https://streaming.televizor-24-tochka.ru/live/211.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Россия РТР
 #EXTVLCOPT:http-referrer=https://televizor24tochka.ru/
 https://streaming.goodstream.cyou/live/211.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Россия РТР
+https://streaming.televizor-24-tochka.ru/live/211.m3u8
 #EXTINF:-1 tvg-id="RostovPapa.ru" tvg-logo="https://i.imgur.com/2JYkoSa.png" group-title="Undefined",Ростов-папа (1080p)
 https://live-rostovpapa.cdnvideo.ru/rostovpapa/rostovpapa.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="RTRPlanetaEurope.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/RTR-Planeta_Logo.svg/512px-RTR-Planeta_Logo.svg.png" group-title="General",РТР Планета Евро
