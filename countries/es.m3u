@@ -9,9 +9,9 @@ https://rtv-murcia-live.globalmest.com/principal/smil:principal.smil/playlist.m3
 https://streaming005.gestec-video.com/hls/canal24.m3u8
 #EXTINF:-1 tvg-id="9laLomaTV.es" tvg-logo="https://i.imgur.com/WQP3el2.png" group-title="General",9 la Loma TV (1080p)
 https://9laloma.tv/live.m3u8
-#EXTINF:-1 tvg-id="12tv.es" tvg-logo="https://i.imgur.com/VSTgXsh.png" group-title="General",12TV Alicante (720p)
-#EXTVLCOPT:http-referrer=https://player.streamingconnect.com/
-https://cloud.fastchannel.es/mic/manifiest/hls/12tv/12tv.m3u8
+#EXTINF:-1 tvg-id="12tv.es" tvg-logo="https://i.imgur.com/VSTgXsh.png" group-title="General",12tv
+#EXTVLCOPT:http-referrer=https://www.12tv.es/
+https://cloud.streamingconnect.tv/hls/12tv/12tv2.m3u8
 #EXTINF:-1 tvg-id="24HorasInternacional.es" tvg-logo="https://i.imgur.com/IUVRm5L.png" group-title="News",24 Horas Internacional [Geo-blocked]
 https://rtvelivestream.akamaized.net/rtvesec/24h/24h_main_dvr.m3u8
 #EXTINF:-1 tvg-id="28kanala.es" tvg-logo="https://i.imgur.com/DyvK28q.png" group-title="General",28 kanala (720p) [Not 24/7]
@@ -584,8 +584,12 @@ https://cloud.fastchannel.es/mic/manifiest/hls/televigo/televigo.m3u8
 https://ythls.armelin.one/channel/UCoFs7RGrmWQkqU5KNNGvCjA.m3u8
 #EXTINF:-1 tvg-id="TelevisionAranda.es" tvg-logo="https://i.imgur.com/FwIIdKG.png" group-title="Undefined",Televisión Aranda (720p)
 https://cloud.streamingconnect.tv/hls/telearanda/telearanda.m3u8
+#EXTINF:-1 tvg-id="TelevisionCanaria.es" tvg-logo="https://i.imgur.com/KtG2gvH.png" group-title="Undefined",Televisión Canaria (720p) [Geo-blocked]
+https://streaming.noumm.es/noumm_live/televisioncanaria/master.m3u8
 #EXTINF:-1 tvg-id="TelevisionConsciente.es" tvg-logo="https://i.imgur.com/6QVHKPw.png" group-title="Religious",Televisión Consciente (1080p)
 https://cdn318.fractalmedia.es/318/live/hls/tvc/master.m3u8
+#EXTINF:-1 tvg-id="TGRTEurope.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/TGRT_EU.png/512px-TGRT_EU.png" group-title="General",TGRT Europe (1080p)
+https://canli.tgrteu.com/tgrteu.m3u8
 #EXTINF:-1 tvg-id="ThePetCollective.es" tvg-logo="https://i.imgur.com/F4hEPMK.png" group-title="Family",The Pet Collective
 https://the-pet-collective-international-es.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Torrevision.es" tvg-logo="https://i.imgur.com/3Kb01OO.png" group-title="Undefined",Torrevisión (270p)
@@ -611,8 +615,6 @@ https://streaming007.gestec-video.com/hls/artequatreTVA.m3u8
 #EXTINF:-1 tvg-id="TVBergueda.es" tvg-logo="https://i.imgur.com/U5OVi3L.png" group-title="Undefined" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",TV Berguedà (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://liveingesta318.cdnmedia.tv/berguedatvlive/smil:migracion.smil/playlist.m3u8?DVR=
-#EXTINF:-1 tvg-id="TelevisionCanaria.es" tvg-logo="https://i.imgur.com/KtG2gvH.png" group-title="Undefined",TV Canaria (720p) [Not 24/7]
-https://ythls.armelin.one/channel/UCTQrUTmzCWIfG6h4EVCdOCQ.m3u8
 #EXTINF:-1 tvg-id="TVCarmona.es" tvg-logo="https://i.imgur.com/0QIls2H.jpg" group-title="Undefined",TV Carmona (360p) [Not 24/7]
 https://ythls.armelin.one/channel/UCRniQmtUlHJedl36F0Mehvw.m3u8
 #EXTINF:-1 tvg-id="TVCostaBrava.es" tvg-logo="https://i.imgur.com/i6EnVZa.png" group-title="Undefined" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",TV Costa Brava (1080p)
