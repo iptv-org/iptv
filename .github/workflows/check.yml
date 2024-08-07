@@ -20,7 +20,7 @@ jobs:
       - uses: actions/setup-node@v3
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
-          node-version: 18
+          node-version: 20
           cache: 'npm'
       - name: install dependencies
         if: steps.files.outputs.any_changed == 'true'
