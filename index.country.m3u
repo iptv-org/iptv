@@ -2955,8 +2955,9 @@ https://vod2live.univtec.com/manifest/4c41c0d8-e2e4-43cc-bd43-79afe715e1b3.m3u8
 https://ott3.streann.com/loadbalancer/services/public/channels/5d23d5882cdce61dae029fd8/playlist.m3u8
 #EXTINF:-1 tvg-id="VTVCanal17.bo" tvg-logo="https://i.imgur.com/TUhFzql.png" group-title="Bolivia",VTV Canal 17 (720p) [Not 24/7]
 https://solo.disfrutaenlared.com:1936/vtvcanal/vtvcanal/playlist.m3u8
-#EXTINF:-1 tvg-id="XTOTV.bo" tvg-logo="https://i.imgur.com/MLwLlWl.png" group-title="Bolivia",XTOTV (404p) [Not 24/7]
-http://www.channel.tevemi.com:1935/XtoTv/XtoTv/playlist.m3u8
+#EXTINF:-1 tvg-id="XTOTV.bo" tvg-logo="https://i.imgur.com/MLwLlWl.png" group-title="Bolivia",XTOTV (1280p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://www.sccbolivia.com/
+http://190.104.15.135/0.ts
 #EXTINF:-1 tvg-id="Bonairetv.bq" tvg-logo="https://i.ibb.co/rG8pHh9/bonaire-tv-logo-596x150.png" group-title="Bonaire",Bonaire.tv (1080p) [Not 24/7]
 https://media.streambrothers.com:1936/8506/8506/playlist.m3u8
 #EXTINF:-1 tvg-id="DutchCaribbeanTV.bq" tvg-logo="https://i.imgur.com/Ohf9Z9l.png" group-title="Bonaire",Dutch Caribbean TV (720p) [Not 24/7]
@@ -9831,7 +9832,7 @@ https://dai.google.com/linear/hls/event/sFuxwI37R9KMTs-KywMcBg/master.m3u8
 #EXTINF:-1 tvg-id="NuevoTiempo.br" tvg-logo="https://i.imgur.com/exdDHml.png" group-title="El Salvador",Nuevo Tiempo (720p) [Not 24/7]
 https://stream.live.novotempo.com/tv/smil:tvnuevotiempo.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="OrbitaFM.sv" tvg-logo="https://i.imgur.com/KTgTjQi.png" group-title="El Salvador",Órbita FM (720p)
-https://rpn3.bozztv.com/ssh101/ssh101/OrbitaFM953/playlist.m3u8
+https://fl1003.bozztv.com/ssh101/OrbitaFM953/index.m3u8
 #EXTINF:-1 tvg-id="OrbitaTV.sv" tvg-logo="https://i.imgur.com/cPnWSOw.png" group-title="El Salvador",Órbita TV (720p)
 https://ssh101.bozztv.com/ssh101/OrbitaTV25/playlist.m3u8
 #EXTINF:-1 tvg-id="PandamaxChannel.cl" tvg-logo="https://pandamax.cl/assets/img/pandalogo2.png" group-title="El Salvador",Pandamax Channel (1080p)
@@ -9882,6 +9883,8 @@ https://linear-418.frequency.stream/mt/studio/418/hls/master/playlist.m3u8
 https://cdnesmain.telesur.ultrabase.net/mbliveMain/hd/playlist.m3u8
 #EXTINF:-1 tvg-id="Tevex.cl" tvg-logo="https://i.imgur.com/FnInQRd.png" group-title="El Salvador",Tevex (720p) [Not 24/7]
 https://v4.tustreaming.cl/tevexinter/index.m3u8
+#EXTINF:-1 tvg-id="TigoSports.sv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Tigo_Sports_logo.svg/512px-Tigo_Sports_logo.svg.png" group-title="El Salvador",Tigo Sports TV El Salvador (720p) [Geo-blocked]
+https://channel03.tigosports.com.sv/out/v1/31f36d52d558475ca18799d8ca5e4b40/index.m3u8
 #EXTINF:-1 tvg-id="TribunaTV.sv" tvg-logo="https://i.imgur.com/C5vHpd0.png" group-title="El Salvador",TribunaTV (720p) [Not 24/7]
 https://cloudflare.streamgato.us:3204/live/tribunatvlive.m3u8
 #EXTINF:-1 tvg-id="TropicalMoonCumbiaTV.pa" tvg-logo="https://i.imgur.com/jL1kLyS.png" group-title="El Salvador",Tropical Moon Cumbia TV (720p)

@@ -2095,7 +2095,7 @@ https://mediacpstreamchile.com:1936/opinionsur/opinionsur/playlist.m3u8
 #EXTINF:-1 tvg-id="ORBITTV.do" tvg-logo="https://i.imgur.com/lizQs3n.png" group-title="Undefined",ORBIT TV (480p) [Not 24/7]
 https://ss3.domint.net:3134/otv_str/orbittv/playlist.m3u8
 #EXTINF:-1 tvg-id="OrbitaFM.sv" tvg-logo="https://i.imgur.com/KTgTjQi.png" group-title="Undefined",Órbita FM (720p)
-https://rpn3.bozztv.com/ssh101/ssh101/OrbitaFM953/playlist.m3u8
+https://fl1003.bozztv.com/ssh101/OrbitaFM953/index.m3u8
 #EXTINF:-1 tvg-id="OrbitaTV.sv" tvg-logo="https://i.imgur.com/cPnWSOw.png" group-title="Undefined",Órbita TV (720p)
 https://ssh101.bozztv.com/ssh101/OrbitaTV25/playlist.m3u8
 #EXTINF:-1 tvg-id="OrigenTV.cl" tvg-logo="https://i.imgur.com/0SaYdA2.png" group-title="Undefined",Origen TV (480p)
@@ -3021,6 +3021,8 @@ https://unlimited1-us.dps.live/thema/thema.smil/playlist.m3u8
 https://593b04c4c5670.streamlock.net/portalfoxmix/portalfoxmix/.m3u8
 #EXTINF:-1 tvg-id="TierraMiaTV.ar" tvg-logo="https://i.imgur.com/LQCaoH9.png" group-title="Undefined",Tierra Mía TV (720p)
 http://live-edge01.telecentro.net.ar/live/smil:trm.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="TigoSports.sv" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Tigo_Sports_logo.svg/512px-Tigo_Sports_logo.svg.png" group-title="Sports",Tigo Sports TV El Salvador (720p) [Geo-blocked]
+https://channel03.tigosports.com.sv/out/v1/31f36d52d558475ca18799d8ca5e4b40/index.m3u8
 #EXTINF:-1 tvg-id="TIVTelevision.ar" tvg-logo="https://i.imgur.com/gsgXGEj.png" group-title="Undefined",TIV Televisión (480p)
 https://inliveserver.com:1936/14044/14044/playlist.m3u8
 #EXTINF:-1 tvg-id="TLEstrella.bo" tvg-logo="https://www.lyngsat.com/logo/tv/tt/tl-estrella-bo.png" group-title="Undefined",TL Estrella (720p) [Not 24/7]
@@ -3615,8 +3617,9 @@ https://tv.portalexpress.es:3220/live/xleveladminlive.m3u8
 https://stmv.streamingvip.click/xpressojovenradiotv/xpressojovenradiotv/playlist.m3u8
 #EXTINF:-1 tvg-id="XtiNetwork.mx" tvg-logo="https://i.imgur.com/kmon7tS.jpg" group-title="Entertainment",Xti Network (288p)
 https://stream8.mexiserver.com:1936/xtinetwork/xtinetwork/playlist.m3u8
-#EXTINF:-1 tvg-id="XTOTV.bo" tvg-logo="https://i.imgur.com/MLwLlWl.png" group-title="Undefined",XTOTV (404p) [Not 24/7]
-http://www.channel.tevemi.com:1935/XtoTv/XtoTv/playlist.m3u8
+#EXTINF:-1 tvg-id="XTOTV.bo" tvg-logo="https://i.imgur.com/MLwLlWl.png" group-title="Undefined",XTOTV (1280p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://www.sccbolivia.com/
+http://190.104.15.135/0.ts
 #EXTINF:-1 tvg-id="XtremaAccion.ar" tvg-logo="https://i.imgur.com/z5NwizH.png" group-title="Movies",Xtrema Accion
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1434
 https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
