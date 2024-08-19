@@ -13,8 +13,6 @@ http://s5.alfaomega.tv:1935/alfaomega/alfaomega1.sdp/playlist.m3u8
 http://s5.alfaomega.tv:1935/alfaomega/smil:alfaomegatv/playlist.m3u8
 #EXTINF:-1 tvg-id="AngelusTV.ro",Angelus TV (720p)
 https://transmisiuni.ro/media/oracatolica/playlist.m3u8
-#EXTINF:-1 tvg-id="Antena1.ro",Antena 1 (1080p)
-https://live1ag.antenaplay.ro/live_a1ro/live_a1ro.m3u8
 #EXTINF:-1 tvg-id="Antena3CNN.ro",Antena 3 CNN
 https://live3vox.antenaplay.ro/a3free/a3free.m3u8
 #EXTINF:-1 tvg-id="AntenaMonden.ro",Antena Monden (720p)
@@ -59,6 +57,10 @@ https://5bb3298db4821.streamlock.net/ctv/livecredo/playlist.m3u8
 https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
 #EXTINF:-1 tvg-id="DottoTV.ro",Dotto TV (720p)
 https://dotto.edvr.ro/live/index.m3u8
+#EXTINF:-1 tvg-id="DisneyJunior.ro",Disney Junior Romania (576i)
+http://193.106.124.204:3000/play/a02b
+#EXTINF:-1 tvg-id="DisneyChannel.ro",Disney Channel Romania (576i)
+http://193.106.124.204:3000/play/a036
 #EXTINF:-1 tvg-id="EMITV.ro",EMI TV (1080p)
 http://188.173.24.23:9093
 #EXTINF:-1 tvg-id="TVSE.ro",Exploris (576p) [Not 24/7]
@@ -79,8 +81,6 @@ https://online.tvimpact.live/hls/impact_tv.m3u8
 http://edge8.imcr.ro:1359/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="InfoTVRomania.ro",Info TV România (1080p)
 https://vmi347009.contaboserver.net/live/stream/index.m3u8
-#EXTINF:-1 tvg-id="InformatiaTV.ro",Informatia TV (360p)
-http://89.34.224.16/informatia.m3u8
 #EXTINF:-1 tvg-id="IntermediaTV.ro",Intermedia TV (576p) [Not 24/7]
 http://46.4.14.12:9999/intermedia1/playlist.m3u8
 #EXTINF:-1 tvg-id="IntermediaTV.ro",Intermedia TV (576p) [Not 24/7]
@@ -99,14 +99,12 @@ https://tv.broadcasting.ro/kisstv/a629c031-2170-4ee9-a36d-87a891aa3131.m3u8
 http://streamer1.streamhost.org:1935/salive/GMIlcbgM/playlist.m3u8
 #EXTINF:-1 tvg-id="LiraTV.es",LiraTV (720p)
 https://cloud2.streaminglivehd.com:1936/liratv/liratv/playlist.m3u8
-#EXTINF:-1 tvg-id="M9TVRomania.ro",M9TV (768p)
-https://testcam.go.ro:8080/hls/m9tv.m3u8
 #EXTINF:-1 tvg-id="MagicTV.ro",Magic TV (720p)
 https://tv.broadcasting.ro/magictv/925f90db-5c88-4190-a53d-5163cdffe6f4.m3u8
 #EXTINF:-1 tvg-id="MediCOOLTV.ro",MediCOOL TV (720p)
 https://stream1.antenaplay.ro/live/MediCOOLTV/chunklist.m3u8
 #EXTINF:-1 tvg-id="MetropolaTV.ro",Metropola TV (1080p) [Not 24/7]
-http://81.196.109.35:1935/MetropolaTV/Metro/playlist.m3u8
+https://www.livemetropolatv.ro/MetropolaTV/Metro/playlist.m3u8
 #EXTINF:-1 tvg-id="Mireasa.ro",Mireasa (720p)
 https://stream1.antenaplay.ro/live/MireasaExtra/playlist.m3u8
 #EXTINF:-1 tvg-id="MISATV.ro",MISA TV (720p)
@@ -186,11 +184,13 @@ http://83.103.149.75:8085/udp/239.30.0.9:4000
 #EXTINF:-1 tvg-id="TVArad.ro",TV Arad (720p)
 https://live.djemba.ro/live/tvaradlive/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBuzau.ro",TV Buzau (576p)
-http://95.77.16.67:8080
+http://78.96.33.89:8080/
 #EXTINF:-1 tvg-id="TVSUD.ro",TV SUD (576p)
 https://stream.leetweb.ro/WebRTCApp/streams/118334672595255049029831.m3u8
 #EXTINF:-1 tvg-id="TVPlusSuceava.ro",TVPlus Suceava (576p)
 http://85.186.146.34:8080
+#EXTINF:-1 tvg-id="TVPlusSuceava.ro",TVPlus Suceava (576p)
+http://85.186.22.140/testing/pl5/playlist/ram/playlist.m3u8
 #EXTINF:-1 tvg-id="TVR1.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 1 (1080p) [Not 24/7] [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
