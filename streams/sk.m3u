@@ -1,8 +1,14 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="24.sk",:24 (1080p)
+http://88.212.7.10/live/test_trojka_25p/playlist.m3u8
+#EXTINF:-1 tvg-id="Sport.sk",:Šport (1080p)
+http://88.212.7.10/live/test_rtvs_sport_hevc/playlist.m3u8
 #EXTINF:-1 tvg-id="BTV.sk",BTV (480p)
 https://fs3.kabelko.sk/9011/index.m3u8?token=btv
 #EXTINF:-1 tvg-id="MarkizaDajto.sk",DajTo (960p)
 http://213.81.133.133:8080/dajto/index.m3u8
+#EXTINF:-1 tvg-id="MarkizaDoma.sk",Doma (1080p)
+http://88.212.7.11/live/test_doma_hd_hevc/playlist.m3u8
 #EXTINF:-1 tvg-id="ducktv.sk",Duck TV (720p)
 https://tvup-fast-ottera-mmm-ducktv.secure2.footprint.net/DexaYJdJXkLqFxTK_DuckTVHDSAMS/DuckTVHDSAMS.stream/DuckTVHDSAMS/DuckTVHDSAMS_720p_AAC.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Dvojka.sk",Dvojka (960p)
@@ -79,9 +85,3 @@ https://5ca49f2417d90.streamlock.net/live/turzovka/playlist.m3u8
 http://slovanet-livestream.ceelabs.com:1935/live/VioTV.stream_transcoded/playlist.m3u8
 #EXTINF:-1 tvg-id="ZapadoslovenskaTV.sk",Západoslovenská TV (1080p)
 https://live.zstv.sk/memfs/5b0f9dd2-8f77-4fe5-9527-bc11bb8b18e5.m3u8
-#EXTINF:-1 tvg-id="MarkizaDoma.sk",Doma (1080p)
-http://88.212.7.11/live/test_doma_hd_hevc/playlist.m3u8
-#EXTINF:-1 tvg-id="Sport.sk",:Šport (1080p)
-http://88.212.7.10/live/test_rtvs_sport_hevc/playlist.m3u8
-#EXTINF:-1 tvg-id="24.sk",:24 (1080p)
-http://88.212.7.10/live/test_trojka_25p/playlist.m3u8
