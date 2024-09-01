@@ -55,12 +55,12 @@ http://cdn.credonet.tv:1935/ctv/livecredo/playlist.m3u8
 https://5bb3298db4821.streamlock.net/ctv/livecredo/playlist.m3u8
 #EXTINF:-1 tvg-id="Digi24.ro",Digi 24 (576p)
 https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
-#EXTINF:-1 tvg-id="DottoTV.ro",Dotto TV (720p)
-https://dotto.edvr.ro/live/index.m3u8
-#EXTINF:-1 tvg-id="DisneyJunior.ro",Disney Junior Romania (576i)
-http://193.106.124.204:3000/play/a02b
 #EXTINF:-1 tvg-id="DisneyChannel.ro",Disney Channel Romania (576i)
 http://193.106.124.204:3000/play/a036
+#EXTINF:-1 tvg-id="DisneyJunior.ro",Disney Junior Romania (576i)
+http://193.106.124.204:3000/play/a02b
+#EXTINF:-1 tvg-id="DottoTV.ro",Dotto TV (720p)
+https://dotto.edvr.ro/live/index.m3u8
 #EXTINF:-1 tvg-id="EMITV.ro",EMI TV (1080p)
 http://188.173.24.23:9093
 #EXTINF:-1 tvg-id="TVSE.ro",Exploris (576p) [Not 24/7]
@@ -184,13 +184,13 @@ http://83.103.149.75:8085/udp/239.30.0.9:4000
 #EXTINF:-1 tvg-id="TVArad.ro",TV Arad (720p)
 https://live.djemba.ro/live/tvaradlive/playlist.m3u8
 #EXTINF:-1 tvg-id="TVBuzau.ro",TV Buzau (576p)
-http://78.96.33.89:8080/
+http://78.96.33.89:8080
 #EXTINF:-1 tvg-id="TVSUD.ro",TV SUD (576p)
 https://stream.leetweb.ro/WebRTCApp/streams/118334672595255049029831.m3u8
 #EXTINF:-1 tvg-id="TVPlusSuceava.ro",TVPlus Suceava (576p)
-http://85.186.146.34:8080
-#EXTINF:-1 tvg-id="TVPlusSuceava.ro",TVPlus Suceava (576p)
 http://85.186.22.140/testing/pl5/playlist/ram/playlist.m3u8
+#EXTINF:-1 tvg-id="TVPlusSuceava.ro",TVPlus Suceava (576p)
+http://85.186.146.34:8080
 #EXTINF:-1 tvg-id="TVR1.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 1 (1080p) [Not 24/7] [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
