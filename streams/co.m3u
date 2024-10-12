@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AgendaAlDiaTV.co",Agenda Al Día TV (720p)
 https://cp.panelchs.com:1936/8156/8156/playlist.m3u8
-#EXTINF:-1 tvg-id="Amordiscos.co",Amordiscos (540p)
+#EXTINF:-1 tvg-id="Amordiscos.co",Amordiscos (540p) [Geo-blocked]
 https://canal.mediaserver.com.co/live/canalamordiscos.m3u8
 #EXTINF:-1 tvg-id="ANCTelevision.co",ANC Televisión (480p) [Not 24/7]
 https://canal.mediaserver.com.co/live/ANCTELEVISION.m3u8
@@ -26,8 +26,6 @@ https://tvlatina.live:1936/8012/8012/playlist.m3u8
 #EXTINF:-1 tvg-id="Cablenoticias.co",Cablenoticias (1080p)
 https://5ea86ddd14ce7.streamlock.net/live/cable09061970/playlist.m3u8
 #EXTINF:-1 tvg-id="CaliTV.co",Cali TV (540p) [Not 24/7]
-http://vbox.cehis.net/live-calitv/calitv1/playlist.m3u8
-#EXTINF:-1 tvg-id="CaliTV.co",Cali TV (540p) [Not 24/7]
 https://5ab772334c39c.streamlock.net/live-calitv/calitv1/playlist.m3u8
 #EXTINF:-1 tvg-id="CampoTelevision.co",Campo Televisión (720p)
 https://video17.virtualtronics.com/streamer/canalcampotv.m3u8
@@ -45,13 +43,15 @@ https://movil.ejeserver.com/live/canal8tv.m3u8
 https://video.ejeserver.com/live/canal8tv.m3u8
 #EXTINF:-1 tvg-id="Canal9.co",Canal 9 Cosespu (720p)
 https://video2.lhdserver.es/canal9cosespu/live.m3u8
+#EXTINF:-1 tvg-id="Canal10SOLTV.co",Canal 10 SOL TV (1080p) 
+http://190.211.140.89:8081/SVTranscoder/SOLTVabr.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal14Codazzi.co",Canal 14 Codazzi (720p) [Not 24/7]
 https://eu1.servers10.com:8081/8056/index.m3u8
 #EXTINF:-1 tvg-id="Canal55TelemoriscoTV.co",Canal 55 Telemorisco TV (720p)
 http://canal.mediaserver.com.co/live/telemorisco.m3u8
 #EXTINF:-1 tvg-id="CanalCapital.co",Canal Capital (1080p)
-https://play.cdn.enetres.net/C99D9A0676F3401589C768D47D31605C021/021/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalDos.co",Canal Dos
+https://cdns.livewave.co:8081/ccapitallive/index.m3u8
+#EXTINF:-1 tvg-id="CanalDos.co",Canal Dos Yopal (720p)
 http://131.221.41.94/hls/canal2.m3u8
 #EXTINF:-1 tvg-id="CanalDos.co",Canal Dos Yopal (720p) [Not 24/7]
 https://canaldos.internetinalambrico.com.co:1936/live/canal2.stream/playlist.m3u8
@@ -70,14 +70,14 @@ https://movil.ejeserver.com/live/nets.m3u8
 #EXTINF:-1 tvg-id="CanalNets.co",Canal Nets (720p) [Not 24/7]
 https://video.ejeserver.com/live/nets.m3u8
 #EXTINF:-1 tvg-id="CanalPyC.co",Canal PyC (480p) [Not 24/7]
-https://rpn3.bozztv.com/ssh101/ssh101/pyctelevision/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalRegionalFTV.co",Canal Regional FTV (720p)
+https://glb.bozztv.com/glb/ssh101/pyctelevision/index.m3u8
+#EXTINF:-1 tvg-id="CanalRegionalFTV.co",Canal Regional FTV (720p) [Not 24/7]
 https://tvlatina.live:1936/8024/8024/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalSantaMartaTV.co",Canal Santa Marta TV (720p) [Not 24/7]
-https://videosenlared.fullstreaming.ar:3046/live/yevothnflive.m3u8
+https://streaming.amelbasoluciones.co:19360/santamartalive/santamartalive.m3u8
 #EXTINF:-1 tvg-id="CanalTelefamilia.co",Canal Telefamilia (360p) [Not 24/7]
 https://stmv2.voxtvhd.com.br/telefamilia/telefamilia/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalTelePalmar.co",Canal TelePalmar (480p)
+#EXTINF:-1 tvg-id="CanalTelePalmar.co",Canal TelePalmar (480p) [Not 24/7]
 https://play.amelbasoluciones.co:3976/live/telepalmartvlive.m3u8
 #EXTINF:-1 tvg-id="CanalTRO.co" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Canal TRO (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
@@ -85,8 +85,6 @@ https://liveingesta118.cdnmedia.tv/canaltro2live/smil:live.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CanalTROPlus.co" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Canal TRO Plus (1080p) [Geo-blocked]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://liveingesta118.cdnmedia.tv/canaltro2live/smil:troplus.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalVIP.co",Canal VIP (1080p)
-https://play.cdn.enetres.net/B9E570CFE54949C7ABB985D4F8F77F7F021/02267/playlist.m3u8
 #EXTINF:-1 tvg-id="CaracolNoticiasAhora.co",Caracol Noticias Ahora (720p)
 https://mdstrm.com/live-stream-playlist/632391734be92a791e2750e6.m3u8
 #EXTINF:-1 tvg-id="CaracolTV.co",Caracol TV (720p) [Geo-blocked]
@@ -97,7 +95,7 @@ https://cp.panelchs.com:1936/8160/8160/playlist.m3u8
 https://cp.panelchs.com:1936/8096/8096/playlist.m3u8
 #EXTINF:-1 tvg-id="CNCHDOnline.co",CNC HD Online (1080p) [Geo-blocked]
 https://hvtraficonew.ddns.net/pastocnc6/cnc6/playlist.m3u8
-#EXTINF:-1 tvg-id="CNCMedellin.co",CNC Medellín (720p)
+#EXTINF:-1 tvg-id="CNCMedellin.co",CNC Medellín (720p) [Geo-blocked]
 http://cncmedellin.ddns.net:1935/canalcnc/canalcnc_360p/playlist.m3u8
 #EXTINF:-1 tvg-id="CNCPasto.co",CNC Pasto (720p) [Geo-blocked]
 https://hvtraficonew.ddns.net/pastocnc9/cnc9/playlist.m3u8
@@ -121,14 +119,15 @@ https://video.ejeserver.com/live/cncsantander.m3u8
 https://servers.amelbasoluciones.co:19360/cnctulualive/cnctulualive.m3u8
 #EXTINF:-1 tvg-id="Cosmovision.co",Cosmovision (720p)
 https://videohls2.cosmovision.tv/hls/sd.m3u8
-#EXTINF:-1 tvg-id="Cristovision.co",Cristovisión (480p)
-https://151972.global.ssl.fastly.net/60a5a559e3414ce54aa8a44d/live_66dad780017a11ee87ff5592d1e02764/index.m3u8
-#EXTINF:-1 tvg-id="CTV.co",CTV Barranquilla (1080p)
+#EXTINF:-1 tvg-id="Cristovision.co" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Cristovisión (480p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
+https://liveingesta118.cdnmedia.tv/cristovisiontvlive/smil:rtmp01.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="CTV.co",CTV Barranquilla (1080p) [Not 24/7]
 https://59a564764e2b6.streamlock.net/ctvbarranquilla/ctv/playlist.m3u8
 #EXTINF:-1 tvg-id="Eduvision.co",Eduvision (1080p)
 https://stmv3.voxtvhd.com.br/conex2/conex2/playlist.m3u8
 #EXTINF:-1 tvg-id="Eureka.co",Eureka (1080p)
-https://play.cdn.enetres.net/C99D9A0676F3401589C768D47D31605C022/022/playlist.m3u8
+https://cdns.livewave.co:8081/eurekalive/index.m3u8
 #EXTINF:-1 tvg-id="FamiliChannel.co",Famili Channel (720p)
 https://cp.panelchs.com:1936/8012/8012/playlist.m3u8
 #EXTINF:-1 tvg-id="FrecuenciaFTV.co",Frecuencia F TV (1080p)
@@ -155,12 +154,6 @@ https://movil.ejeserver.com/live/masmusica.m3u8
 https://video.ejeserver.com/live/masmusica.m3u8
 #EXTINF:-1 tvg-id="MelodyChannel.co",Melody Channel Colombia (540p)
 https://canal.mediaserver.com.co/live/MelodyChannel.m3u8
-#EXTINF:-1 tvg-id="MemoriasTV.co",Memorias TV (480p)
-https://stmv6.voxtvhd.com.br/memoriastv/memoriastv/playlist.m3u8
-#EXTINF:-1 tvg-id="MemoriasTVClassic.co",Memorias TV Classic (480p)
-https://rpn3.bozztv.com/ssh101/ssh101/memoriasc2/playlist.m3u8
-#EXTINF:-1 tvg-id="MemoriasTVFilm.co",Memorias TV Film (480p)
-https://rpn3.bozztv.com/ssh101/ssh101/memoriasfilm/playlist.m3u8
 #EXTINF:-1 tvg-id="MiGenteTV.co",Mi Gente TV (720p) [Geo-blocked]
 https://byecableiptvnew3.ddns.net/ENVIVOMIGENTE/index.m3u8
 #EXTINF:-1 tvg-id="MoniTV.co",MoniTV (720p) [Not 24/7]
@@ -170,7 +163,7 @@ https://vcp.myplaytv.com/moviefe/moviefe/playlist.m3u8
 #EXTINF:-1 tvg-id="MulticanalTelevision.co",Multicanal Televisión (720p)
 https://ssh101.bozztv.com/ssh101/KIOCApP/playlist.m3u8
 #EXTINF:-1 tvg-id="Noticiero90Minutos.co",Noticiero 90 Minutos (720p) [Not 24/7]
-https://live-edge-bhs-1.cdn.enetres.net/184784E1D210401F8041E3E1266822CC021/playlist.m3u8
+https://cdns.livewave.co:8081/90minutoslive/index.m3u8
 #EXTINF:-1 tvg-id="NSTV.co",NSTV (1080p)
 https://cp.panelchs.com:1936/8162/8162/playlist.m3u8
 #EXTINF:-1 tvg-id="OasisTV.co",Oasis TV (720p) [Not 24/7]
@@ -179,7 +172,7 @@ https://5e85d90130e77.streamlock.net/6020/6020/playlist.m3u8
 https://stmv4.voxtvhd.com.br/ondastereo/ondastereo/playlist.m3u8
 #EXTINF:-1 tvg-id="PSTelevision.co",PS Televisión (720p) [Not 24/7]
 https://xhateaec.com/livestreams/19.crKOSL8FRzpid0MA.m3u8
-#EXTINF:-1 tvg-id="PSCTelevision.co",PSC Televisión (720p)
+#EXTINF:-1 tvg-id="PSCTelevision.co",PSC Televisión (720p) [Not 24/7]
 https://stmv4.voxtvhd.com.br/psctv/psctv/playlist.m3u8
 #EXTINF:-1 tvg-id="RCNXtra.co",RCN Xtra (1080p)
 https://latv-rcn-xtra-1-mx.tcl.wurl.tv/playlist.m3u8
@@ -200,7 +193,7 @@ https://livetv.305streamhd.com:3111/live/suramtvlive.m3u8
 #EXTINF:-1 tvg-id="TamesisTeVe.co",Támesis TeVe (614p) [Not 24/7]
 https://tvlatina.live:1936/8018/8018/playlist.m3u8
 #EXTINF:-1 tvg-id="TDIColombia.co",TDI Colombia (720p) [Not 24/7]
-https://play.amelbasoluciones.co:3971/live/tdicolombiatvlive.m3u8
+https://streaming.amelbasoluciones.co:8081/tdicolombia/index.m3u8
 #EXTINF:-1 tvg-id="TeleAmiga.co" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Tele Amiga (480p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://liveingesta118.cdnmedia.tv/teleamigatvlive/smil:dvrlive.smil/playlist.m3u8
@@ -211,8 +204,6 @@ https://video.ejeserver.com/live/telesanjacinto.m3u8
 #EXTINF:-1 tvg-id="TeleVid.co" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Tele Vid (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://liveingesta118.cdnmedia.tv/televidtvlive/smil:dvrlive.smil/playlist.m3u8?DVR=
-#EXTINF:-1 tvg-id="Teleantioquia.co",Teleantioquia (1080p)
-https://d1xgz5r2yxvjwj.cloudfront.net/out/v1/49d5fdc5370d4f43aab4930ec7a9cbf8/index.m3u8
 #EXTINF:-1 tvg-id="Teleantioquia.co" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",Teleantioquia (360p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://liveingesta118.cdnmedia.tv/teleantioquialive/smil:dvrlive.smil/playlist.m3u8
@@ -232,7 +223,7 @@ https://liveingesta118.cdnmedia.tv/telecaribetvlive/smil:rtmp02.smil/playlist.m3
 https://cp.panelchs.com:1936/8094/8094/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleislas.co",Teleislas (486p) [Not 24/7]
 https://5ab772334c39c.streamlock.net/live-teleislas/teleislas/playlist.m3u8
-#EXTINF:-1 tvg-id="TelemusicaTV.co",Telemúsica TV (540p)
+#EXTINF:-1 tvg-id="TelemusicaTV.co",Telemúsica TV (540p) [Geo-blocked] 
 https://canal.mediaserver.com.co/live/telemusica.m3u8
 #EXTINF:-1 tvg-id="Telepacifico.co",Telepacífico (1080p) [Not 24/7]
 https://stream.logicideas.media/telepacifico-live/smil:live.smil/playlist.m3u8
@@ -266,8 +257,6 @@ https://stmv1.voxtvhd.com.br/tvpenol/tvpenol/playlist.m3u8
 https://asucap.com/livestream/asucap_envivo.m3u8
 #EXTINF:-1 tvg-id="TVNGlobal.co",TVN Global (720p)
 https://tvlatina.live:1936/8006/8006/playlist.m3u8
-#EXTINF:-1 tvg-id="UAOPlay.co",UAO Play (720p)
-https://play.cdn.enetres.net/184784E1D210401F8041E3E1266822CC023/028/playlist.m3u8
 #EXTINF:-1 tvg-id="VeoTelevision.co",Veo Televisión (720p) [Not 24/7]
 https://movil.ejeserver.com/live/veotv.m3u8
 #EXTINF:-1 tvg-id="VeoTelevision.co",Veo Televisión (720p) [Not 24/7]
