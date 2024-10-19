@@ -43,8 +43,9 @@ http://gohoski.fvds.ru:3000/mediabay/645/playlist.m3u8
 https://streamer1.connectto.com/ARTN_mobile/index.m3u8
 #EXTINF:-1 tvg-id="AtamekenBusiness.kz" tvg-logo="https://i.imgur.com/CfRvm8i.png" group-title="Business",Atameken Business (1080p) [Not 24/7]
 http://live-atameken.cdnvideo.ru/atameken/atameken.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="ATR.ua" tvg-logo="https://i.imgur.com/lRJAXC7.png" group-title="Culture",ATR
-http://45.153.35.237:8000/play/a020
+#EXTINF:-1 tvg-id="ATR.ua" tvg-logo="https://i.imgur.com/lRJAXC7.png" group-title="Culture" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",ATR (720p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
+https://atr-live.cdn-01.cosmonova.net.ua/hls/atr_ua_hi/index.m3u8
 #EXTINF:-1 tvg-id="BabyFirst.us" tvg-logo="https://i.imgur.com/WxLHBwu.png" group-title="Kids",BabyFirst (1080p)
 https://lte.wiseplayout.com/WiseM3U8_12/master.m3u8
 #EXTINF:-1 tvg-id="BaltiTV.md" tvg-logo="https://i.imgur.com/S1vEqZp.png" group-title="Undefined",Bălţi TV (1080p) [Geo-blocked]
