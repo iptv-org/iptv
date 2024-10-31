@@ -1,0 +1,54 @@
+name: Generate index.m3u
+
+on:
+  push:
+    branches:
+      - master  # Run on pushes to the master branch
+  workflow_dispatch:  # Allow manual triggering of the workflow
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'  # Use the latest Python version
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+
+      - name: Run script to generate index.m3u
+        run: |
+          echo "import os" > generate_index.py
+          echo "" >> generate_index.py
+          echo "# Define base URL for the GitHub raw content" >> generate_index.py
+          echo "base_url = 'https://raw.githubusercontent.com/ums91/umsiptv/master/streams/'" >> generate_index.py
+          echo "index_file_path = 'streams/index.m3u'" >> generate_index.py
+          echo "" >> generate_index.py
+          echo "# Get list of all .m3u files in streams directory" >> generate_index.py
+          echo "m3u_files = [f for f in os.listdir('streams') if f.endswith('.m3u')]" >> generate_index.py
+          echo "" >> generate_index.py
+          echo "# Write to index.m3u file" >> generate_index.py
+          echo "with open(index_file_path, 'w') as index_file:" >> generate_index.py
+          echo "    index_file.write('#EXTM3U\\n')" >> generate_index.py
+          echo "    for m3u_file in m3u_files:" >> generate_index.py
+          echo "        index_file.write(f'#EXTINF:-1, {m3u_file.split('.')[0].capitalize()} Playlist\\n')" >> generate_index.py
+          echo "        index_file.write(f'{base_url}{m3u_file}\\n\\n')" >> generate_index.py
+          echo "" >> generate_index.py
+          echo "print('index.m3u has been created with all .m3u file links.')" >> generate_index.py
+
+          python generate_index.py
+
+      - name: Commit and push changes
+        run: |
+          git config --global user.email "omargoroo91@gmail.com"
+          git config --global user.name "ums91"
+          git add streams/index.m3u
+          git commit -m "Update index.m3u with all .m3u file links" || echo "No changes to commit"
+          git push
