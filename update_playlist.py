@@ -16,16 +16,22 @@ index_response = requests.get(index_url)
 
 # Ensure the requests are successful
 if fancode_response.status_code == 200 and index_response.status_code == 200:
-    fancode_links = fancode_response.text
-    index_links = index_response.text
+    fancode_links = fancode_response.text.strip()
+    index_links = index_response.text.strip()
 
-    # Check if Fancode Live links already exist at the top of index.m3u
-    if fancode_links.strip() in index_links:
-        # If they exist, replace them with the new Fancode_Live.m3u content
-        updated_playlist = fancode_links.strip() + '\n' + index_links[len(fancode_links.strip()):].strip()
+    # Split the index.m3u content based on markers #S1 and #S2
+    if "#S1" in index_links and "#S2" in index_links:
+        before_s1, rest = index_links.split("#S1", 1)
+        between_s1_s2, after_s2 = rest.split("#S2", 1)
+
+        # Replace content between #S1 and #S2 with new Fancode links
+        updated_playlist = (
+            before_s1.strip() + "\n#S1\n" + fancode_links + "\n#S2\n" + after_s2.strip()
+        )
     else:
-        # If not, prepend the new Fancode_Live.m3u content at the top
-        updated_playlist = fancode_links.strip() + '\n' + index_links.strip()
+        # If markers are not found, raise an error
+        print("Error: #S1 and/or #S2 markers are missing in index.m3u.")
+        exit()
 
     # Set up GitHub repository and file path
     repo_name = 'ums91/umsiptv'
@@ -39,9 +45,9 @@ if fancode_response.status_code == 200 and index_response.status_code == 200:
         print(f"Error fetching file: {e}")
         exit()
 
-    # Update the file with new contents (replace or prepend Fancode_Live.m3u links)
+    # Update the file with new contents
     try:
-        commit_message = "Update Fancode Live m3u links in index.m3u"
+        commit_message = "Update Fancode Live m3u links between #S1 and #S2"
         repo.update_file(file.path, commit_message, updated_playlist, file.sha, branch="addinm3u")
         print("Playlist updated successfully.")
     except Exception as e:
