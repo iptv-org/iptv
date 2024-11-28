@@ -1,11 +1,17 @@
+import os
 import requests
 
 # URLs for the source and target playlists
 source_url = "https://raw.githubusercontent.com/byte-capsule/FanCode-Hls-Fetcher/main/Fancode_Live.m3u"
 target_url = "https://raw.githubusercontent.com/ums91/umsiptv/refs/heads/addinm3u/streams/index.m3u"
 
-# GitHub token for authentication (replace with your token)
-github_token = "YOUR_GITHUB_PERSONAL_ACCESS_TOKEN"
+# Get GitHub token from environment variables
+github_token = os.getenv("GITHUB_TOKEN")
+if not github_token:
+    print("Error: GITHUB_TOKEN is not set.")
+    exit(1)
+
+# GitHub repository details
 repo_owner = "ums91"
 repo_name = "umsiptv"
 file_path = "streams/index.m3u"
@@ -33,7 +39,7 @@ updated_content = source_content + "\n" + target_content
 api_url = f"https://api.github.com/repos/{repo_owner}/{repo_name}/contents/{file_path}"
 
 # Fetch the current file's SHA
-headers = {"Authorization": f"token {github_token}"}
+headers = {"Authorization": f"Bearer {github_token}"}
 response = requests.get(api_url, headers=headers)
 if response.status_code != 200:
     print(f"Failed to fetch file metadata: {response.status_code}")
