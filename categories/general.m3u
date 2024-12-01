@@ -73,7 +73,7 @@ https://www.streaming101tv.es:19360/antequera/antequera.m3u8
 #EXTINF:-1 tvg-id="101tvAxarquia.es" tvg-logo="https://i.imgur.com/GzI3RC4.png" group-title="General",101tv Axarquia (480p)
 https://www.streaming101tv.es:19360/axarquia/axarquia.m3u8
 #EXTINF:-1 tvg-id="101tvCadiz.es" tvg-logo="https://i.imgur.com/GzI3RC4.png" group-title="General",101tv Cádiz (1080p)
-https://streaming101tv.es/hls/webcadiz.m3u8
+https://streaming101tv.es:19360/cadiz/cadiz.m3u8
 #EXTINF:-1 tvg-id="101tvRonda.es" tvg-logo="https://i.imgur.com/GzI3RC4.png" group-title="General",101tv Ronda (1080p)
 https://streaming101tv.es/hls/webronda.m3u8
 #EXTINF:-1 tvg-id="101tvSevilla.es" tvg-logo="https://i.imgur.com/GzI3RC4.png" group-title="General",101tv Sevilla (1080p)
@@ -344,8 +344,8 @@ https://video.makrodigital.com/americaestereoibarra/americaestereoibarra/playlis
 https://video.makrodigital.com/americaestereoquito/americaestereoquito/playlist.m3u8
 #EXTINF:-1 tvg-id="AmericaEstereoTulcan.ec" tvg-logo="https://i.imgur.com/gUqKymM.png" group-title="General",América Estéreo Tulcán (614p)
 https://video.makrodigital.com/americaestereotulcan/americaestereotulcan/playlist.m3u8
-#EXTINF:-1 tvg-id="AmericaTeVe.pr" tvg-logo="https://i.imgur.com/K9o3mLP.png" group-title="Entertainment;General",América TeVé (720p)
-https://tgn2.bozztv.com/americateve/americateve1/americateve--1/playlist.m3u8
+#EXTINF:-1 tvg-id="AmericaTeVe.pr" tvg-logo="https://i.imgur.com/K9o3mLP.png" group-title="Entertainment;General",América TeVé (1080p)
+https://live.gideo.video/americateve2/master.m3u8
 #EXTINF:-1 tvg-id="AmericaTV.ar" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png/512px-Am%C3%A9rica_TV_%28Nuevo_logo_Junio_2020%29.png" group-title="General",América TV (1080p) [Not 24/7]
 https://ythls.armelin.one/channel/UC6NVDkuzY2exMOVFw4i9oHw.m3u8
 #EXTINF:-1 tvg-id="AMGATV.us" tvg-logo="https://i.imgur.com/NTlC6e7.png" group-title="General",Amga TV (720p) [Not 24/7]
@@ -1837,8 +1837,8 @@ https://ythls.armelin.one/channel/UCfJtBtmhnIyfUB6RqXeImMw.m3u8
 https://vcp7.myplaytv.com/glowtv/glowtv/playlist.m3u8
 #EXTINF:-1 tvg-id="GMATV.ph" tvg-logo="https://i.imgur.com/uAqFMLy.png" group-title="General",GMA TV (1080p) [Not 24/7]
 https://ythls.armelin.one/channel/UCKL5hAuzgFQsyrsQKgU0Qng.m3u8
-#EXTINF:-1 tvg-id="GMM25.th" tvg-logo="https://i.imgur.com/uARba6N.png" group-title="General",GMM 25 (1080p)
-https://bcovlive-a.akamaihd.net/fb7ac9cc4e1140238e3077ffd29337fe/ap-southeast-1/6415628290001/playlist.m3u8
+#EXTINF:-1 tvg-id="GMM25.th" tvg-logo="https://i.imgur.com/uARba6N.png" group-title="General",GMM 25 (720p)
+https://hls-nginx.v2h-cdn.com/hls/gmm25myStream.m3u8
 #EXTINF:-1 tvg-id="GnomiTV.gr" tvg-logo="https://i.ibb.co/ZNCXr79/gnomi-logo.png" group-title="General",Gnomi TV (720p)
 https://channel.streams.ovh:1936/gnomitv/gnomitv/playlist.m3u8
 #EXTINF:-1 tvg-id="GOTVCanale163.it" tvg-logo="https://i.imgur.com/11V0QSp.png" group-title="General",GO-TV Canale 163 (720p)
@@ -2746,6 +2746,8 @@ https://streamlov.alsolnet.com/misionescuatro/live/playlist.m3u8
 https://video.mhzrt.hu/live/mitv/playlist.m3u8
 #EXTINF:-1 tvg-id="MithilaNepalTV.np" tvg-logo="https://i.ibb.co/CWn3fH9/1689333550464.jpg" group-title="General",Mithila Nepal TV (1080p)
 http://150.107.205.212:1935/live/mithila/playlist.m3u8?DVR=
+#EXTINF:-1 tvg-id="MyanmarInternationalTV.mm" tvg-logo="https://i.imgur.com/ClmWqE5.png" group-title="General",MITV (480p)
+https://5a13fe32ef748.streamlock.net/mmplay/mitv/playlist.m3u8
 #EXTINF:-1 tvg-id="MiTV.do" tvg-logo="https://i.imgur.com/qsyjdR8.png" group-title="General",MiTV (720p) [Not 24/7]
 https://ss2.domint.net:3204/mitv_str/mitv/playlist.m3u8
 #EXTINF:-1 tvg-id="MKKWebTV.br" tvg-logo="https://i.imgur.com/A8Yhtid.png" group-title="General",MKK Web TV (720p) [Not 24/7]
@@ -2781,10 +2783,20 @@ https://stream.moranettv.hu/live/index.m3u8
 https://soportedvb.click:3257/live/morrotvlive.m3u8
 #EXTINF:-1 tvg-id="MosaikCristal.fr" tvg-logo="https://i.imgur.com/YY7vIQG.png" group-title="General",Mosaik Cristal
 https://ythls.armelin.one/channel/UCQC0xLG_W0QpqAXQ4-yhwBA.m3u8
+#EXTINF:-1 tvg-id="MRT1.mk" tvg-logo="https://i.imgur.com/EkkyAE0.png" group-title="General",MRT 1 (480p)
+https://s1.teve.mk/tvstanici/6/playlist.m3u8
+#EXTINF:-1 tvg-id="MRTV.mm" tvg-logo="https://i.imgur.com/uyv7oJH.png" group-title="General",MRTV (720p)
+https://5a13fe32ef748.streamlock.net/mmplay/mrtv/playlist.m3u8
 #EXTINF:-1 tvg-id="MSJTV.kh" tvg-logo="https://i.imgur.com/TilslGU.png" group-title="General",MSJ TV (720p)
 http://124.248.165.18:1935/live/myStream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="MtavariArkhi.ge" tvg-logo="https://i.imgur.com/tLtGnJW.png" group-title="General",Mtavari Arkhi (480p)
+https://bozztv.com/36bay2/mtavariarxi/playlist.m3u8
 #EXTINF:-1 tvg-id="MTM.mk" tvg-logo="https://i.ibb.co/HCRZVVz/images-4.png" group-title="General",MTM 1 [Geo-blocked]
 https://vipottbpkstream.vip.hr/Content/onevip-hls/Live/Channel(MTM)/index.m3u8
+#EXTINF:-1 tvg-id="MTR.sk" tvg-logo="https://www.mtr.sk/img/logo-mtr-0.png" group-title="General",MTR (1080p)
+https://cdnsk003.panaccess.com/local/Ruzomberok/index.m3u8
+#EXTINF:-1 tvg-id="MTurkTV.tr" tvg-logo="https://i.imgur.com/xj1gvrq.png" group-title="General",MTürk TV (1080p)
+https://edge1.socialsmart.tv/muglaturk/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="MuganTV.az" tvg-logo="https://i.imgur.com/HMT5vZA.png" group-title="General",Mugan TV (1080p) [Not 24/7]
 https://cdn10-mugantv.yayin.com.tr/mugantv/mugantv/playlist.m3u8
 #EXTINF:-1 tvg-id="MultimediosBajio.mx" tvg-logo="https://i.imgur.com/4IGzNdq.png" group-title="General",Multimedios Bajío (720p) [Not 24/7]
