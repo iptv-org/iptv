@@ -70,7 +70,7 @@ module.exports = [
     closed_at: null,
     author_association: 'CONTRIBUTOR',
     active_lock_reason: null,
-    body: '### Stream URL\n\nhttps://ythls.onrender.com/channel/UC40TUSUx490U5uR1lZt3Ajgm3u8\n\n### Reason\n\nNot loading\n\n### Notes (optional)\n\nOne link (VTV.br) is misspelled.\n\n### Contributing Guide\n\n- [x] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    body: '### Stream URL\n\nhttps://ythls.onrender.com/channel/UC40TUSUx490U5uR1lZt3Ajg.m3u8\n\n### Reason\n\nNot loading\n\n### Notes (optional)\n\nOne link (VTV.br) is misspelled.\n\n### Contributing Guide\n\n- [x] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/14151/reactions',
       total_count: 0,
