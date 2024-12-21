@@ -2,6 +2,7 @@ import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
 import { IssueLoader, PlaylistParser } from '../../core'
 import { Stream, Playlist, Channel, Issue } from '../../models'
+import validUrl from 'valid-url'
 
 let processedIssues = new Collection()
 let streams: Collection
@@ -105,6 +106,7 @@ async function addStreams(loader: IssueLoader) {
     const data = issue.data
     if (data.missing('channel_id') || data.missing('stream_url')) return
     if (streams.includes((_stream: Stream) => _stream.url === data.get('stream_url'))) return
+    if (!validUrl.isUri(data.get('stream_url'))) return
 
     const channel = groupedChannels.get(data.get('channel_id'))
 
