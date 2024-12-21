@@ -53,8 +53,13 @@ export class PlaylistParser {
 
 function parseTitle(title: string): { name: string; label: string; quality: string } {
   const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
-  const [, quality] = title.match(/ \(([0-9]+p)\)/) || [null, '']
-  const name = title.replace(` (${quality})`, '').replace(` [${label}]`, '')
+  title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
+  const [, quality] = title.match(/ \(([0-9]+p)\)$/) || [null, '']
+  title = title.replace(new RegExp(` \\(${quality}\\)$`), '')
 
-  return { name, label, quality }
+  return { name: title, label, quality }
+}
+
+function escapeRegExp(text) {
+  return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
 }
