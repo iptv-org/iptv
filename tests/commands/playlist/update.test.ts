@@ -26,7 +26,7 @@ it('can format playlists', () => {
   })
 
   expect(stdout).toBe(
-    'OUTPUT=closes #14151, closes #14140, closes #14139, closes #14110, closes #14179, closes #14178\n'
+    'OUTPUT=closes #14151, closes #14140, closes #14139, closes #14110, closes #14178\n'
   )
 })
 

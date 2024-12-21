@@ -70,7 +70,7 @@ module.exports = [
     closed_at: null,
     author_association: 'COLLABORATOR',
     active_lock_reason: null,
-    body: '### Channel ID\n\nManoramaNews.in\n\n### Stream URL\n\nhttps://ythls.onrender.com/channel/UCP0uG-mcMImgKnJz-VjJZmQ.m3u8\n\n### Label\n\nNot 24/7\n\n### Timeshift\n\n-4\n\n### Notes (optional)\n\nSource: https://github.com/iptv-org/iptv/issues/14007#issuecomment-1686942043\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    body: '### Channel ID\n\nManoramaNews.in\n\n### Stream URL\n\n(https://mitelefe.com/Api/Videos/GetSourceUrl/694564/0/HLS / https://ssl.cloud.telefe.com/Api/Videos/GetSourceUrl/694564/0/HLS)\n\n### Label\n\nNot 24/7\n\n### Timeshift\n\n-4\n\n### Notes (optional)\n\nSource: https://github.com/iptv-org/iptv/issues/14007#issuecomment-1686942043\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/14179/reactions',
       total_count: 0,
