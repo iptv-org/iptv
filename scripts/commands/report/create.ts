@@ -82,7 +82,7 @@ async function main() {
   logger.info('checking broken streams reports...')
   const brokenStreamReports = await loader.load({ labels: ['broken stream'] })
   brokenStreamReports.forEach((issue: Issue) => {
-    const streamUrl = issue.data.get('stream_url') || undefined
+    const brokenLinks = issue.data.get('broken_links') || undefined
 
     const result = new Dictionary({
       issueNumber: issue.number,
@@ -91,8 +91,8 @@ async function main() {
       status: undefined
     })
 
-    if (!streamUrl) result.set('status', 'missing_link')
-    else if (groupedStreams.missing(streamUrl)) result.set('status', 'invalid_link')
+    if (!brokenLinks) result.set('status', 'missing_link')
+    else if (groupedStreams.missing(brokenLinks)) result.set('status', 'invalid_link')
     else result.set('status', 'pending')
 
     report.add(result.data())
