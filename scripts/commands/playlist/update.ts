@@ -54,13 +54,20 @@ async function removeStreams(loader: IssueLoader) {
   const issues = await loader.load({ labels: ['streams:remove', 'approved'] })
   issues.forEach((issue: Issue) => {
     const data = issue.data
-    if (data.missing('stream_url')) return
+    if (data.missing('broken_links')) return
 
-    const found: Stream = streams.first((_stream: Stream) => _stream.url === data.get('stream_url'))
-    if (found) {
-      found.removed = true
-      processedIssues.add(issue.number)
-    }
+    const brokenLinks = data.get('broken_links').split(/\r?\n/).filter(Boolean)
+
+    let changed = false
+    brokenLinks.forEach(link => {
+      const found: Stream = streams.first((_stream: Stream) => _stream.url === link.trim())
+      if (found) {
+        found.removed = true
+        changed = true
+      }
+    })
+
+    if (changed) processedIssues.add(issue.number)
   })
 }
 
