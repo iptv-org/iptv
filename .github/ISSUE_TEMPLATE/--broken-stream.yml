@@ -9,10 +9,10 @@ body:
       value: |
         Please fill out the issue template as much as you can so we could efficiently process your request
 
-  - type: input
+  - type: textarea
     attributes:
-      label: Broken Link
-      description: Please specify the broken link from a playlist
+      label: Broken Links
+      description: Please specify the broken links from the playlist (one per line)
       placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
     validations:
       required: true
