@@ -7,7 +7,8 @@ const FIELDS = new Dictionary({
   'Stream URL': 'stream_url',
   'Stream URL (optional)': 'stream_url',
   'Stream URL (required)': 'stream_url',
-  'Broken Link': 'stream_url',
+  'Broken Link': 'broken_links',
+  'Broken Links': 'broken_links',
   Label: 'label',
   Quality: 'quality',
   Timeshift: 'timeshift',
@@ -27,8 +28,10 @@ export class IssueParser {
 
     const data = new Dictionary()
     fields.forEach((field: string) => {
-      let [_label, , _value] = field.split(/\r?\n/)
+      let parsed = field.split(/\r?\n/).filter(Boolean)
+      let _label = parsed.shift()
       _label = _label ? _label.trim() : ''
+      let _value = parsed.join('\r\n')
       _value = _value ? _value.trim() : ''
 
       if (!_label || !_value) return data
