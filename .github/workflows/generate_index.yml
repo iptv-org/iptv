@@ -25,34 +25,34 @@ jobs:
 
       - name: Run script to generate index.m3u
         run: |
-          echo "import os" > generate_index.py
-          echo "" >> generate_index.py
-          echo "# Define base URL for the GitHub raw content" >> generate_index.py
-          echo "base_url = 'https://raw.githubusercontent.com/ums91/umsiptv/master/streams/'" >> generate_index.py
-          echo "index_file_path = 'streams/index.m3u'" >> generate_index.py
-          echo "" >> generate_index.py
-          echo "# Get list of all .m3u files in streams directory" >> generate_index.py
-          echo "m3u_files = [f for f in os.listdir('streams') if f.endswith('.m3u')]" >> generate_index.py
+          echo "import os" > ums.py
+          echo "" >> ums.py
+          echo "# Define base URL for the GitHub raw content" >> ums.py
+          echo "base_url = 'https://raw.githubusercontent.com/ums91/umsiptv/master/streams/'" >> ums.py
+          echo "index_file_path = 'streams/index.m3u'" >> ums.py
+          echo "" >> ums.py
+          echo "# Get list of all .m3u files in streams directory" >> ums.py
+          echo "m3u_files = [f for f in os.listdir('streams') if f.endswith('.m3u')]" >> ums.py
           echo "" >> generate_index.py
           echo "# Write to index.m3u file" >> generate_index.py
-          echo "with open(index_file_path, 'w') as index_file:" >> generate_index.py
-          echo "    index_file.write('#EXTM3U\\n')" >> generate_index.py
-          echo "    for m3u_file in m3u_files:" >> generate_index.py
-          echo "        index_file.write(f'#EXTINF:-1, {m3u_file.split('.')[0].capitalize()} Playlist\\n')" >> generate_index.py
-          echo "        index_file.write(f'{base_url}{m3u_file}\\n')" >> generate_index.py
-          echo "        with open(os.path.join('streams', m3u_file), 'r') as f:" >> generate_index.py
-          echo "            content = f.read()" >> generate_index.py
-          echo "            index_file.write(content)" >> generate_index.py
-          echo "            index_file.write('\\n')" >> generate_index.py
-          echo "" >> generate_index.py
-          echo "print('index.m3u has been created with all .m3u file links and content.')" >> generate_index.py
+          echo "with open(index_file_path, 'w') as index_file:" >> ums.py
+          echo "    index_file.write('#EXTM3U\\n')" >> ums.py
+          echo "    for m3u_file in m3u_files:" >> ums.py
+          echo "        index_file.write(f'#EXTINF:-1, {m3u_file.split('.')[0].capitalize()} Playlist\\n')" >> ums.py
+          echo "        index_file.write(f'{base_url}{m3u_file}\\n')" >> ums.py
+          echo "        with open(os.path.join('streams', m3u_file), 'r') as f:" >> ums.py
+          echo "            content = f.read()" >> ums.py
+          echo "            index_file.write(content)" >> ums.py
+          echo "            index_file.write('\\n')" >> ums.py
+          echo "" >> ums.py
+          echo "print('index.m3u has been created with all .m3u file links and content.')" >> ums.py
 
-          python generate_index.py
+          python ums.py
 
       - name: Commit and push changes
         run: |
-          git config --global user.email "your-email@example.com"
-          git config --global user.name "Your Name"
+          git config --global user.email "omargoroo91@gmail.com"
+          git config --global user.name "ums91"
           git add streams/index.m3u
           git commit -m "Update index.m3u with all .m3u file links and content" || echo "No changes to commit"
           git push
