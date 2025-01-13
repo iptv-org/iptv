@@ -25,7 +25,7 @@ https://ss9.domint.net:3040/ame_str/amecanal47/playlist.m3u8
 #EXTINF:-1 tvg-id="AnimeZoneTV.do",Anime Zone TV (480p)
 http://animezonetv.net/hls/stream.m3u8
 #EXTINF:-1 tvg-id="Antena7.do",Antena 7
-https://tv.tvabierta.net/memfs/34079422-238e-481b-8a30-669d743fbdfb_output_0.m3u8
+https://u.tvabierta.net/memfs/8aefe158-abbf-498b-825c-02695a69fa7f_output_0.m3u8
 #EXTINF:-1 tvg-id="Antena7.do",Antena 7 (480p) [Not 24/7] [Geo-blocked]
 https://alba-do-antena7-antena7.stream.mediatiquestream.com/index.m3u8
 #EXTINF:-1 tvg-id="Antena21.do",Antena 21
@@ -49,7 +49,7 @@ https://vdo1.streamgato.us:3977/live/lavozsincensuratvlive.m3u8
 #EXTINF:-1 tvg-id="BonaoTV.do",Bonao TV (720p)
 https://ss5.domint.net:3026/btv_str/bonao/playlist.m3u8
 #EXTINF:-1 tvg-id="BonchesLatinosTV.do",Bonches Latinos TV (720p)
-https://tv.boncheslatinos.com:3754/live/latinostvnylive.m3u8
+https://ss5.domint.net:3030/aba_str/bonche/playlist.m3u8
 #EXTINF:-1 tvg-id="Boreal.do",Boreal (720p)
 https://cdn.borealtelevision.com:3712/live/borealtelevisionhdlive.m3u8
 #EXTINF:-1 tvg-id="",Cacique TV
@@ -89,11 +89,11 @@ https://ss5.domint.net:3174/car_str/carivision/playlist.m3u8
 #EXTINF:-1 tvg-id="CascaraTV.do",Cáscara TV (1080p)
 https://ss3.domint.net:3144/ctv_str/cascaratv/playlist.m3u8
 #EXTINF:-1 tvg-id="CDN.do",CDN (720p)
-https://dacastmmd.mmdlive.lldns.net/dacastmmd/5f85ae10c62d4be3a5edbf483cb04f25/playlist.m3u8
+https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/ae3e71b4-52af-d834-7388-fc75f9401a03.m3u8
 #EXTINF:-1 tvg-id="CDNDeportes.do",CDN Deporte (720p)
-https://fl1002.bozztv.com/ssh101/cdndeportes/index.m3u8
+https://rtmp-live-ingest-us-east-1-universe-dacast-com.akamaized.net/transmuxv1/streams/bc949011-1dd8-4d10-596c-f6910d4a9cf7.m3u8
 #EXTINF:-1 tvg-id="",Cenovision TV (720p)
-https://5790d294af2dc.streamlock.net/cenovision/hdmi/playlist.m3u8
+https://5790d294af2dc.streamlock.net/cenovision/cenovision/playlist.m3u8
 #EXTINF:-1 tvg-id="ChinolaTV.do",Chinola TV (480p)
 https://tv.wracanal10.com:3300/live/chinolatvlive.m3u8
 #EXTINF:-1 tvg-id="CibaenaTV.do",Cibaeña TV (720p)
@@ -120,8 +120,6 @@ https://u.tvabierta.net/memfs/1d58d166-adc9-4cbe-921d-07da03925317_output_0.m3u8
 https://ssh101-fl.bozztv.com/ssh101/ctv8hd/index.m3u8
 #EXTINF:-1 tvg-id="Coral39.do",Coral 39 (720p)
 https://ssh101.bozztv.com/ssh101/rctvhd21/playlist.m3u8
-#EXTINF:-1 tvg-id="Coral39.do",Coral 39 (480p)
-http://51.81.93.29:8084/hls/coral39.m3u8
 #EXTINF:-1 tvg-id="CotubanamaTV.do",Cotubanama TV (1080p)
 https://host.streamingnation.live/p/3588/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="",Cotui TV (720p)
@@ -153,7 +151,8 @@ https://glb.bozztv.com/glb/ssh101/el70tv/index.m3u8
 #EXTINF:-1 tvg-id="El75TV.do",El 75 (720p)
 https://television.essastream.com:3502/live/bebetotelevisionlive.m3u8
 #EXTINF:-1 tvg-id="ElNuevoDiarioTV.do",El Nuevo Diario TV (480p)
-https://glb.bozztv.com/glb/ssh101/0048/index.m3u8
+#EXTVLCOPT:http-referrer=https://nuevodiario01.streamprolive.com/i/cp/hls/player.html
+https://nuevodiario01.streamprolive.com/hls/live.m3u8
 #EXTINF:-1 tvg-id="ElPuertoTV.do",El PuertoTV (720p)
 https://5bf8041cb3fed.streamlock.net/PuertoTV/PuertoTV/playlist.m3u8
 #EXTINF:-1 tvg-id="Enntivision.do",Enntivisión (720p)
@@ -244,8 +243,6 @@ https://live.obslivestream.com/makaomux/tracks-v2a1/playlist.m3u8
 https://vdopanel.jlahozconsulting.com/p/3303/live/makinalive.m3u8
 #EXTINF:-1 tvg-id="",Marka TV
 https://5790d294af2dc.streamlock.net/markatv/markatv/playlist.m3u8
-#EXTINF:-1 tvg-id="",Masacre TV
-https://cdn.gleidyhost.com:3466/live/masacretvlive.m3u8
 #EXTINF:-1 tvg-id="",Mega TV
 https://vdo1.streamgato.us:3711/live/megatvlive.m3u8
 #EXTINF:-1 tvg-id="MegaVisionTV.do",Megavision Canal 43 (480p) [Not 24/7]
@@ -317,8 +314,6 @@ https://rdn.essastream.com:3544/live/puntacanatvlive.m3u8
 https://ss5.domint.net:3042/ptv_str/puntotv/playlist.m3u8
 #EXTINF:-1 tvg-id="",Punto TV (720p)
 https://vdo1.streamgato.us:3599/live/puntotvlive.m3u8
-#EXTINF:-1 tvg-id="",R television TV (720p)
-https://cnn2.hostlagarto.com:3325/live/rtelevisionlive.m3u8
 #EXTINF:-1 tvg-id="RETV.do",R&E TV (480p) [Not 24/7]
 https://multimedia.tmcreativos.com:1936/ekhmygctur/ekhmygctur/playlist.m3u8
 #EXTINF:-1 tvg-id="",Radio TV 809 Digital
@@ -356,7 +351,7 @@ https://streamunoapp.com:3809/live/siembratvlive.m3u8
 #EXTINF:-1 tvg-id="SimavisionCanal18.do",Sima Vision TV (720p)
 https://soportedvb.click:3668/live/simavisiontvlive.m3u8
 #EXTINF:-1 tvg-id="SiTV.do",SiTV (720p)
-https://f.gmsiptv.com/memfs/d085f31a-955c-43a8-ac83-d5fe30f623db_output_0.m3u8
+https://u.tvabierta.net/memfs/d085f31a-955c-43a8-ac83-d5fe30f623db_output_0.m3u8?session=ShF2xvmisEAu8LVKpzzWRh
 #EXTINF:-1 tvg-id="",Solucion TV (720p)
 https://ss5.domint.net:3044/sotv_str/soluciontv/playlist.m3u8
 #EXTINF:-1 tvg-id="SomosTopoPointTV.do",Somos Topo Point TV (1080p) [Not 24/7]
@@ -373,8 +368,8 @@ https://ss2.domint.net:3132/stv_str/supremateve/playlist.m3u8
 https://tvdatta.com:3602/stream/play.m3u8
 #EXTINF:-1 tvg-id="TeleAntillas.do",Tele Antillas (480p)
 http://135.148.169.193:5080/LiveApp/streams/tantillas.m3u8
-#EXTINF:-1 tvg-id="",Tele Dajabon TV (720p)
-https://fl1002.bozztv.com/ssh101/teledajabon/index.m3u8
+#EXTINF:-1 tvg-id="",Tele Universal TV (720p)
+https://vdo2.streamgato.us:3466/live/teleuniversaldclive.m3u8
 #EXTINF:-1 tvg-id="",Tele Dominicana TV (720p)
 https://vdopanel.jlahozconsulting.com/p/3417/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="",Tele Jaravacoa TV (720p)
@@ -392,7 +387,7 @@ https://vdo2.streamgato.us:3841/live/telecanal28tvlive.m3u8
 #EXTINF:-1 tvg-id="TeleCaribe.do",TeleCaribe TV
 https://cloudflare.streamgato.us:3413/live/telecaribehdlive.m3u8?DVR=
 #EXTINF:-1 tvg-id="Telecentro.do",Telecentro (480p)
-https://s1.tvabierta.net/memfs/0b378ba7-8f79-4ad0-a0d3-834790cd58c0_output_0.m3u8
+https://u.tvabierta.net/memfs/966badef-a62a-4386-9db4-0665ff13ae37_output_0.m3u8
 #EXTINF:-1 tvg-id="TeleCibaoHD.do",TeleCibao (720p) [Not 24/7]
 https://vdo2.streamgato.us:3713/live/telecibaotvlive.m3u8
 #EXTINF:-1 tvg-id="Telecontacto.do",Telecontacto
@@ -422,7 +417,7 @@ https://inliveserver.com:1936/18506/18506/playlist.m3u8
 #EXTINF:-1 tvg-id="Telesantodomingo.do",Telesantodomingo (720p)
 https://vdopanel.jlahozconsulting.com/p/3668/live/santodomingolive.m3u8
 #EXTINF:-1 tvg-id="Telesistema11.do",Telesistema (480p)
-https://live-c.cf.dmcdn.net/sec2(S5yJd-T_wk-G19udBY0xU9LzYRwb1sIwF4umm2pE8EcHrccJpFxbefxoY7Ns9nSdcNaVL0sZ7ns81BV9mqv4vOnumzbdHg0Ek0HuGNLZ9MNI9CyaJ5CYA2JPcdB24hpN)/dm/3/x80ac48/d/live-240.m3u8#cell=lcfc
+https://live-c2.cf.dmcdn.net/sec2(KtGwiCToH9L0_1Foy_9YcsHfEQ3YI1ezcIaF0l41zr0KWjHiXOYlv_Qxtkz16ugf1SZxbf1vpnCOVk4gxSerH44rB5yJSaiw8tr0Pq_DoSXkHntnZqnrwv21zAaobGMO)/cloud/3/x80ac48/d/live-720.m3u8
 #EXTINF:-1 tvg-id="TelesurCanal10.do",Telesur Canal 10 (720p)
 https://ss3.domint.net:3124/tls_str/telesur/playlist.m3u8
 #EXTINF:-1 tvg-id="Teletur.do",Teletur (1080p)
@@ -433,9 +428,12 @@ http://server3.prostudionetwork.com:1945/teleunion/TU/playlist.m3u8
 https://teleuniversotv.streamgato.us:3110/live/teleuniversotvlive.m3u8
 #EXTINF:-1 tvg-id="Telever.do",Telever (1080p) [Not 24/7]
 https://vdo1.streamgato.us:3342/live/televercanal12live.m3u8
+#EXTINF:-1 tvg-id="",Televiaducto 3 (720p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://player.castr.com/live_76112a202cd411ef87bac55efba9cb2e
+https://stream.castr.com/5da89a909db964293ad13301/live_76112a202cd411ef87bac55efba9cb2e/index.fmp4.m3u8
 #EXTINF:-1 tvg-id="",Televiaducto 14 (720p) [Not 24/7]
-#EXTVLCOPT:http-referrer=https://player.castr.com/live_ad12f91017a111ef808c37cdf9d9abf0
-https://stream.castr.com/5ec16b5935bd933ad25fdd37/live_ad12f91017a111ef808c37cdf9d9abf0/index.fmp4.m3u8
+#EXTVLCOPT:http-referrer=https://player.castr.com/live_569ad240b0b911efa498833d767149d5
+https://stream.castr.com/5ec16b5935bd933ad25fdd37/live_569ad240b0b911efa498833d767149d5/index.fmp4.m3u8
 #EXTINF:-1 tvg-id="Televida.do",Televida (720p)
 https://glb.bozztv.com/glb/ssh101/televida/index.m3u8
 #EXTINF:-1 tvg-id="TelevisiondelEste.do",Televisión del Este (720p)
@@ -461,7 +459,7 @@ hhttps://fl1002.bozztv.com/ssh101/rctvhdtra/tracks-v1a1/mono.m3u8
 https://stream.gia.tv/giatvplayout7/giatv-208314/playlist.m3u8
 #EXTINF:-1 tvg-id="TuMusicaHD.do",Tu Música HD (1080p)
 https://cloudflare.streamgato.us:3125/live/megacinetvlive.m3u8
-#EXTINF:-1 tvg-id="",Turismo TV (720p)
+#EXTINF:-1 tvg-id="",Turismo HD (720p)
 https://stream.gia.tv/giatvplayout7/giatv-208343/playlist.m3u8
 #EXTINF:-1 tvg-id="TV10SanJuan.do",TV 10 San Juan (720p)
 https://59d39900ebfb8.streamlock.net/TV10SanJuan/TV10SanJuan/playlist.m3u8
@@ -484,7 +482,7 @@ https://ss5.domint.net:3032/vozz_str/vozzmedia/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPlata.do",TV Plata (720p)
 https://ss9.domint.net:3032/tvp_str/tvp2111/playlist.m3u8
 #EXTINF:-1 tvg-id="",TV QUISQUEYA (720p)
-https://fl1002.bozztv.com/ssh101/tvquisquelive92/playlist.m3u8
+https://cloud5.livescast.com:19360/canaltvquisqueya/canaltvquisqueya.m3u8
 #EXTINF:-1 tvg-id="TVVision.do",TV Visión (720p) [Not 24/7]
 https://cloudflare.streamgato.us:3691/live/tvvisionlive.m3u8
 #EXTINF:-1 tvg-id="TVO.do",TVO (720p)
@@ -500,7 +498,7 @@ https://5790d294af2dc.streamlock.net/vallenuevotv/vallenuevotv/playlist.m3u8
 #EXTINF:-1 tvg-id="Vallevision.do",Vallevision Canal 10 (720p) [Not 24/7]
 https://streaming.telecablecentral.com.do/Vallevision/ValleHD/playlist.m3u8
 #EXTINF:-1 tvg-id="VegaTeve.do",VegaTeve (1080p) [Not 24/7]
-https://kali.vdopanel.com:3396/live/arseniolive.m3u8
+https://cloud6.livescast.com:3797/live/vegatevelive.m3u8
 #EXTINF:-1 tvg-id="VegavisionCanal18.do",Vegavisión Canal 18 (720p)
 https://rdn.essastream.com:3400/live/canal18hdlive.m3u8
 #EXTINF:-1 tvg-id="VillaAltagraciaTV.do",VillaAltagracia TV
