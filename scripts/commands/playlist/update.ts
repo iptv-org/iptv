@@ -95,13 +95,11 @@ async function editStreams(loader: IssueLoader) {
       stream.name = channel.name
     }
 
-    if (data.has('channel_name')) stream.name = data.get('channel_name')
     if (data.has('label')) stream.label = data.get('label')
     if (data.has('quality')) stream.quality = data.get('quality')
     if (data.has('timeshift')) stream.timeshift = data.get('timeshift')
     if (data.has('user_agent')) stream.userAgent = data.get('user_agent')
     if (data.has('http_referrer')) stream.httpReferrer = data.get('http_referrer')
-    if (data.has('channel_name')) stream.name = data.get('channel_name')
 
     processedIssues.add(issue.number)
   })
