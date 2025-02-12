@@ -508,7 +508,7 @@ Same thing, but split up into separate files:
     <tr><td>🇭🇹 Haiti</td><td align="right">50</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ht.m3u</code></td></tr>
     <tr><td>🇭🇳 Honduras</td><td align="right">149</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/hn.m3u</code></td></tr>
     <tr><td>🇭🇰 Hong Kong</td><td align="right">17</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/hk.m3u</code></td></tr>
-    <tr><td>🇭🇺 Hungary</td><td align="right">128</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/hu.m3u</code></td></tr>
+    <tr><td>🇭🇺 Hungary</td><td align="right">158</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/hu.m3u</code></td></tr>
     <tr><td>🇮🇸 Iceland</td><td align="right">22</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/is.m3u</code></td></tr>
     <tr><td>🇮🇳 India</td><td align="right">320</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/in.m3u</code></td></tr>
     <tr><td>🇮🇩 Indonesia</td><td align="right">151</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/id.m3u</code></td></tr>
