@@ -1,5 +1,6 @@
 import { Dictionary } from '@freearhey/core'
 import { Issue } from '../models'
+import { IssueData } from './issueData'
 
 const FIELDS = new Dictionary({
   'Channel ID': 'channel_id',
@@ -46,6 +47,6 @@ export class IssueParser {
 
     const labels = issue.labels.map(label => label.name)
 
-    return new Issue({ number: issue.number, labels, data })
+    return new Issue({ number: issue.number, labels, data: new IssueData(data) })
   }
 }
