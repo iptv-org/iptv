@@ -29,7 +29,7 @@ export class IssueParser {
 
     const data = new Dictionary()
     fields.forEach((field: string) => {
-      let parsed = field.split(/\r?\n/).filter(Boolean)
+      const parsed = field.split(/\r?\n/).filter(Boolean)
       let _label = parsed.shift()
       _label = _label ? _label.trim() : ''
       let _value = parsed.join('\r\n')
