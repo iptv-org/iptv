@@ -15,7 +15,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        What exactly needs to be changed?
+        What exactly needs to be changed? To delete an existing value without replacement use the `~` symbol.
 
   - type: input
     attributes:
@@ -35,6 +35,7 @@ body:
         - 576p
         - 480p
         - 360p
+        - '~'
 
   - type: dropdown
     attributes:
@@ -43,6 +44,7 @@ body:
       options:
         - 'Not 24/7'
         - 'Geo-blocked'
+        - '~'
 
   - type: input
     attributes:
