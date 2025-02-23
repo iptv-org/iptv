@@ -1,15 +1,15 @@
-import { Dictionary } from '@freearhey/core'
+import { IssueData } from '../core'
 
 type IssueProps = {
   number: number
   labels: string[]
-  data: Dictionary
+  data: IssueData
 }
 
 export class Issue {
   number: number
   labels: string[]
-  data: Dictionary
+  data: IssueData
 
   constructor({ number, labels, data }: IssueProps) {
     this.number = number
