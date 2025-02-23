@@ -1,5 +1,6 @@
 import { Dictionary } from '@freearhey/core'
 import { Issue } from '../models'
+import { IssueData } from './issueData'
 
 const FIELDS = new Dictionary({
   'Channel ID': 'channel_id',
@@ -28,7 +29,7 @@ export class IssueParser {
 
     const data = new Dictionary()
     fields.forEach((field: string) => {
-      let parsed = field.split(/\r?\n/).filter(Boolean)
+      const parsed = field.split(/\r?\n/).filter(Boolean)
       let _label = parsed.shift()
       _label = _label ? _label.trim() : ''
       let _value = parsed.join('\r\n')
@@ -46,6 +47,6 @@ export class IssueParser {
 
     const labels = issue.labels.map(label => label.name)
 
-    return new Issue({ number: issue.number, labels, data })
+    return new Issue({ number: issue.number, labels, data: new IssueData(data) })
   }
 }
