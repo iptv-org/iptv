@@ -25,7 +25,9 @@ it('can format playlists', () => {
     )
   })
 
-  expect(stdout).toBe('OUTPUT=closes #14151, closes #14140, closes #14110, closes #14178\n')
+  expect(stdout).toBe(
+    'OUTPUT=closes #14151, closes #14140, closes #14110, closes #14120, closes #14178\n'
+  )
 })
 
 function content(filepath: string) {
