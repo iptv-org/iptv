@@ -15,22 +15,25 @@ export class IssueLoader {
     if (TESTING) {
       switch (labels) {
         case 'streams:add':
-          issues = require('../../tests/__data__/input/issues/streams_add.js')
+          issues = (await import('../../tests/__data__/input/issues/streams_add.js')).default
           break
         case 'streams:edit':
-          issues = require('../../tests/__data__/input/issues/streams_edit.js')
+          issues = (await import('../../tests/__data__/input/issues/streams_edit.js')).default
           break
         case 'broken stream':
-          issues = require('../../tests/__data__/input/issues/broken_stream.js')
+          issues = (await import('../../tests/__data__/input/issues/broken_stream.js')).default
           break
         case 'streams:add,approved':
-          issues = require('../../tests/__data__/input/issues/streams_add_approved.js')
+          issues = (await import('../../tests/__data__/input/issues/streams_add_approved.js'))
+            .default
           break
         case 'streams:edit,approved':
-          issues = require('../../tests/__data__/input/issues/streams_edit_approved.js')
+          issues = (await import('../../tests/__data__/input/issues/streams_edit_approved.js'))
+            .default
           break
         case 'streams:remove,approved':
-          issues = require('../../tests/__data__/input/issues/streams_remove_approved.js')
+          issues = (await import('../../tests/__data__/input/issues/streams_remove_approved.js'))
+            .default
           break
       }
     } else {
