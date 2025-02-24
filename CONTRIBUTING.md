@@ -29,10 +29,6 @@ A requests without a valid channel ID or working link to the stream will be clos
 
 Note all links in playlists are sorted automatically by scripts so there is no need to sort them manually. For more info, see [Scripts](#scripts).
 
-### How to add a link to YouTube live?
-
-You can use one of the services like [abskmj/youtube-hls-m3u8](https://github.com/abskmj/youtube-hls-m3u8) that allow you to create permanent link to the broadcast that can be opened in most players.
-
 ### How to distinguish a link to an Xtream Codes server from a regular one?
 
 Most of them have this form:
