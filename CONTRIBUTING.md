@@ -133,7 +133,7 @@ To run scripts use the `npm run <script-name>` command.
 - `playlist:lint`: сhecks internal playlists for syntax errors.
 - `playlist:deploy`: allows to manually publish all generated via `playlist:generate` playlists. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
 - `readme:update`: updates the list of playlists in [README.md](README.md).
-- `report:create`: shows a list of all current requests and their status.
+- `report:create`: creates a report on current issues.
 - `check`: (shorthand) sequentially runs the `playlist:lint` and `playlist:validate` scripts.
 - `format`: (shorthand) runs the `playlist:format` script.
 - `update`: (shorthand) sequentially runs the `playlist:generate`, `api:generate` and `readme:update` scripts.
