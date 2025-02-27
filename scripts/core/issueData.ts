@@ -27,6 +27,6 @@ export class IssueData {
   getArray(key: string): string[] {
     const deleteSymbol = '~'
 
-    return this._data.get(key) === deleteSymbol ? [] : this._data.get(key).split(';')
+    return this._data.get(key) === deleteSymbol ? [] : this._data.get(key).split('\r\n')
   }
 }
