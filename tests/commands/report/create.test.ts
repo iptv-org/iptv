@@ -21,6 +21,7 @@ it('can create report', () => {
 │ 5       │ 14178       │ 'streams:add'    │ 'TV3.my'                   │ 'https://live-streams-ssai-01.tonton.com.my/live/2dd2b7cd-1b34-4871-b669-57b5c9beca23/live.isml/.m3u8' │ 'blocked'     │
 │ 6       │ 16120       │ 'broken stream'  │ undefined                  │ 'http://190.61.102.67:2000/play/a038/index.m3u8'                                                       │ 'wrong_link'  │
 │ 7       │ 19956       │ 'channel search' │ 'CNBCe.tr'                 │ undefined                                                                                              │ 'invalid_id'  │
+│ 8       │ 19957       │ 'channel search' │ '13thStreet.au'            │ undefined                                                                                              │ 'closed'      │
 └─────────┴─────────────┴──────────────────┴────────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────┘`)
   ).toBe(true)
 })
