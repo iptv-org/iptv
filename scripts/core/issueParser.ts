@@ -25,11 +25,11 @@ const FIELDS = new Dictionary({
 
 export class IssueParser {
   parse(issue: { number: number; body: string; labels: { name: string }[] }): Issue {
-    const fields = issue.body.split('###')
+    const fields = typeof issue.body === 'string' ? issue.body.split('###') : []
 
     const data = new Dictionary()
     fields.forEach((field: string) => {
-      const parsed = field.split(/\r?\n/).filter(Boolean)
+      const parsed = typeof field === 'string' ? field.split(/\r?\n/).filter(Boolean) : []
       let _label = parsed.shift()
       _label = _label ? _label.trim() : ''
       let _value = parsed.join('\r\n')
