@@ -141,6 +141,10 @@ async function main() {
     else if (channelSearchRequestsBuffer.has(channelId)) result.set('status', 'duplicate')
     else if (blocklistGroupedByChannel.has(channelId)) result.set('status', 'blocked')
     else if (streamsGroupedByChannel.has(channelId)) result.set('status', 'fulfilled')
+    else {
+      const channelData = channelsGroupedById.get(channelId)
+      if (channelData.length && channelData[0].closed) result.set('status', 'closed')
+    }
 
     channelSearchRequestsBuffer.set(channelId, true)
 
