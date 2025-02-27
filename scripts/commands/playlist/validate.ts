@@ -1,9 +1,8 @@
-import { Logger, Storage, Collection, Dictionary, File } from '@freearhey/core'
+import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
 import { PlaylistParser } from '../../core'
 import { Channel, Stream, Blocked } from '../../models'
 import { program } from 'commander'
 import chalk from 'chalk'
-import { transliterate } from 'transliteration'
 import _ from 'lodash'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
 
@@ -42,15 +41,12 @@ async function main() {
     const streams = groupedStreams.get(filepath)
     if (!streams) continue
 
-    const file = new File(filepath)
-    const [, countryCode] = file.basename().match(/([a-z]{2})(|_.*)\.m3u/i) || [null, '']
-
     const log = new Collection()
     const buffer = new Dictionary()
     streams.forEach((stream: Stream) => {
-      const channelNotInDatabase =
+      const invalidId =
         stream.channel && !channels.first((channel: Channel) => channel.id === stream.channel)
-      if (channelNotInDatabase) {
+      if (invalidId) {
         log.add({
           type: 'warning',
           line: stream.line,
@@ -58,8 +54,8 @@ async function main() {
         })
       }
 
-      const alreadyOnPlaylist = stream.url && buffer.has(stream.url)
-      if (alreadyOnPlaylist) {
+      const duplicate = stream.url && buffer.has(stream.url)
+      if (duplicate) {
         log.add({
           type: 'warning',
           line: stream.line,
@@ -69,29 +65,22 @@ async function main() {
         buffer.set(stream.url, true)
       }
 
-      const channelId = generateChannelId(stream.name, countryCode)
-      const blocked = blocklist.first(
-        blocked =>
-          stream.channel.toLowerCase() === blocked.channel.toLowerCase() ||
-          channelId.toLowerCase() === blocked.channel.toLowerCase()
-      )
+      const blocked = blocklist.first(blocked => stream.channel === blocked.channel)
       if (blocked) {
-        log.add({
-          type: 'error',
-          line: stream.line,
-          message: `"${stream.name}" is on the blocklist due to claims of copyright holders or NSFW content (${blocked.ref})`
-        })
+        if (blocked.reason === 'dmca') {
+          log.add({
+            type: 'error',
+            line: stream.line,
+            message: `"${stream.channel}" is on the blocklist due to claims of copyright holders (${blocked.ref})`
+          })
+        } else if (blocked.reason === 'nsfw') {
+          log.add({
+            type: 'error',
+            line: stream.line,
+            message: `"${stream.channel}" is on the blocklist due to NSFW content (${blocked.ref})`
+          })
+        }
       }
-
-      const channel_NSFW = stream.channel && channels.first((channel: Channel) => (channel.id === stream.channel) && (channel.isNSFW === true))
-      if(channel_NSFW) {
-        log.add({
-          type: 'error',
-          line: stream.line,
-          message: `Since January 30th, 2024, NSFW channels are no longer allowed in our playlists. Please see https://github.com/iptv-org/iptv/issues/15723 for further information.`
-        })
-      }
-
     })
 
     if (log.notEmpty()) {
@@ -124,17 +113,3 @@ async function main() {
 }
 
 main()
-
-function generateChannelId(name: string, code: string) {
-  if (!name || !code) return ''
-
-  name = name.replace(/ *\([^)]*\) */g, '')
-  name = name.replace(/ *\[[^)]*\] */g, '')
-  name = name.replace(/\+/gi, 'Plus')
-  name = name.replace(/[^a-z\d]+/gi, '')
-  name = name.trim()
-  name = transliterate(name)
-  code = code.toLowerCase()
-
-  return `${name}.${code}`
-}
