@@ -9,33 +9,14 @@ const CustomOctokit = Octokit.plugin(paginateRest, restEndpointMethods)
 const octokit = new CustomOctokit()
 
 export class IssueLoader {
-  async load({ labels }: { labels: string[] | string }) {
-    labels = Array.isArray(labels) ? labels.join(',') : labels
+  async load(props?: { labels: string | string[] }) {
+    let labels = ''
+    if (props && props.labels) {
+      labels = Array.isArray(props.labels) ? props.labels.join(',') : props.labels
+    }
     let issues: object[] = []
     if (TESTING) {
-      switch (labels) {
-        case 'streams:add':
-          issues = (await import('../../tests/__data__/input/issues/streams_add.js')).default
-          break
-        case 'streams:edit':
-          issues = (await import('../../tests/__data__/input/issues/streams_edit.js')).default
-          break
-        case 'broken stream':
-          issues = (await import('../../tests/__data__/input/issues/broken_stream.js')).default
-          break
-        case 'streams:add,approved':
-          issues = (await import('../../tests/__data__/input/issues/streams_add_approved.js'))
-            .default
-          break
-        case 'streams:edit,approved':
-          issues = (await import('../../tests/__data__/input/issues/streams_edit_approved.js'))
-            .default
-          break
-        case 'streams:remove,approved':
-          issues = (await import('../../tests/__data__/input/issues/streams_remove_approved.js'))
-            .default
-          break
-      }
+      issues = (await import('../../tests/__data__/input/issues/all.js')).default
     } else {
       issues = await octokit.paginate(octokit.rest.issues.listForRepo, {
         owner: OWNER,
