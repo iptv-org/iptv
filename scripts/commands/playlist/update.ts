@@ -7,10 +7,14 @@ import validUrl from 'valid-url'
 let processedIssues = new Collection()
 let streams: Collection
 let groupedChannels: Dictionary
+let issues: Collection
 
 async function main() {
   const logger = new Logger({ disabled: true })
   const loader = new IssueLoader()
+
+  logger.info('loading issues...')
+  issues = await loader.load()
 
   logger.info('loading channels from api...')
   const dataStorage = new Storage(DATA_DIR)
@@ -51,8 +55,10 @@ async function main() {
 main()
 
 async function removeStreams(loader: IssueLoader) {
-  const issues = await loader.load({ labels: ['streams:remove', 'approved'] })
-  issues.forEach((issue: Issue) => {
+  const requests = issues.filter(
+    issue => issue.labels.includes('streams:remove') && issue.labels.includes('approved')
+  )
+  requests.forEach((issue: Issue) => {
     const data = issue.data
     if (data.missing('broken_links')) return
 
@@ -72,8 +78,10 @@ async function removeStreams(loader: IssueLoader) {
 }
 
 async function editStreams(loader: IssueLoader) {
-  const issues = await loader.load({ labels: ['streams:edit', 'approved'] })
-  issues.forEach((issue: Issue) => {
+  const requests = issues.filter(
+    issue => issue.labels.includes('streams:edit') && issue.labels.includes('approved')
+  )
+  requests.forEach((issue: Issue) => {
     const data = issue.data
 
     if (data.missing('stream_url')) return
@@ -106,8 +114,10 @@ async function editStreams(loader: IssueLoader) {
 }
 
 async function addStreams(loader: IssueLoader) {
-  const issues = await loader.load({ labels: ['streams:add', 'approved'] })
-  issues.forEach((issue: Issue) => {
+  const requests = issues.filter(
+    issue => issue.labels.includes('streams:add') && issue.labels.includes('approved')
+  )
+  requests.forEach((issue: Issue) => {
     const data = issue.data
     if (data.missing('channel_id') || data.missing('stream_url')) return
     if (streams.includes((_stream: Stream) => _stream.url === data.getString('stream_url'))) return
