@@ -36,15 +36,17 @@ export class CountryTable implements Table {
           const subdivision = subdivisions.first(
             (subdivision: Subdivision) => subdivision.code === code
           )
-          const country = countries.first(
-            (country: Country) => country.code === subdivision.country
-          )
-          data.add([
-            `${country.name}/${subdivision.name}`,
-            `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${subdivision.name}`,
-            logItem.count,
-            `<code>https://iptv-org.github.io/iptv/${logItem.filepath}</code>`
-          ])
+          if (subdivision) {
+            const country = countries.first(
+              (country: Country) => country.code === subdivision.country
+            )
+            data.add([
+              `${country.name}/${subdivision.name}`,
+              `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${subdivision.name}`,
+              logItem.count,
+              `<code>https://iptv-org.github.io/iptv/${logItem.filepath}</code>`
+            ])
+          }
         } else if (countryCode === 'INT') {
           data.add([
             'ZZ',

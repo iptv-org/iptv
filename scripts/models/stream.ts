@@ -147,7 +147,7 @@ export class Stream {
 
   toJSON() {
     return {
-      channel: this.channel,
+      channel: this.channel || null,
       url: this.url,
       timeshift: this.timeshift || null,
       http_referrer: this.httpReferrer || null,
