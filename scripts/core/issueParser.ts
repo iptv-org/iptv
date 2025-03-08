@@ -16,6 +16,7 @@ const FIELDS = new Dictionary({
   'Timeshift (optional)': 'timeshift',
   'Channel Name': 'channel_name',
   'HTTP User-Agent': 'user_agent',
+  'HTTP User Agent': 'user_agent',
   'HTTP Referrer': 'http_referrer',
   'What happened to the stream?': 'reason',
   Reason: 'reason',
