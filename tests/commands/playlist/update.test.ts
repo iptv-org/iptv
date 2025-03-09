@@ -26,7 +26,7 @@ it('can format playlists', () => {
   })
 
   expect(stdout).toBe(
-    'OUTPUT=closes #14151, closes #14140, closes #14110, closes #14120, closes #14175, closes #14174, closes #14173, closes #14172, closes #14171, closes #14170, closes #14169, closes #14164, closes #14162, closes #14160, closes #14159, closes #14158, closes #14155, closes #14153, closes #14152, closes #14105, closes #14104, closes #14057, closes #14034, closes #13964, closes #13893, closes #13881, closes #13793, closes #13751, closes #13715\n'
+    'OUTPUT=closes #14151, closes #14140, closes #14110, closes #14120, closes #14175, closes #14105, closes #14104, closes #14057, closes #14034, closes #13964, closes #13893, closes #13881, closes #13793, closes #13751, closes #13715\n'
   )
 })
 
