@@ -84,7 +84,14 @@ Example:
 https://example.com/playlist.m3u8
 ```
 
-Also, if necessary, you can specify custom [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) and [Referrer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) via the `#EXTVLCOPT` tag:
+Also, if necessary, you can specify custom [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) and [HTTP Referrer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) through additional attributes:
+
+```xml
+#EXTINF:-1 tvg-id="ExampleTV.us" http-referrer="http://example.com/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)",Example TV
+http://example.com/stream.m3u8
+```
+
+or via `#EXTVLCOPT` tag:
 
 ```xml
 #EXTINF:-1 tvg-id="ExampleTV.us",Example TV
