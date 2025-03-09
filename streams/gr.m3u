@@ -127,7 +127,7 @@ http://web.onair-radio.eu:1935/groovytv/groovytv/playlist.m3u8
 https://l5.cloudskep.com/hellenictv/htv/playlist.m3u8
 #EXTINF:-1 tvg-id="HighTV.gr",High TV (720p) [Not 24/7]
 http://live.streams.ovh:1935/hightv/hightv/playlist.m3u8
-#EXTINF:-1 tvg-id="IoanninaTV.gr",Ioannina TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="IoanninaTV.gr" http-referrer="https://nick.gr/itv/",Ioannina TV (1080p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://nick.gr/itv/
 https://raw.githubusercontent.com/iptvnikolas/Nikki-TVM3U8/main/ioanninatv.m3u8
 #EXTINF:-1 tvg-id="IonianTV.gr",Ionian Channel (1080p) [Not 24/7]
@@ -220,7 +220,7 @@ http://livestar.siliconweb.com/starvod/star4/star4.m3u8
 https://livestar.siliconweb.com/starvod/star_int/star_int.m3u8
 #EXTINF:-1 tvg-id="StarKentrikisElladas.gr",Star Kentrikis Elladas (1080p)
 https://telmacosa.s.llnwi.net/starcgr/default/index.m3u8
-#EXTINF:-1 tvg-id="StarKentrikisElladas.gr",Star Kentrikis Elladas (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="StarKentrikisElladas.gr" http-referrer="https://player.castr.com",Star Kentrikis Elladas (720p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.castr.com
 https://stream.castr.com/651d8d36a57bf232bc830464/live_01fd9e80636111eebd0da35d4eac7f71/index.m3u8
 #EXTINF:-1 tvg-id="StartTV.gr",Start TV (480p)
