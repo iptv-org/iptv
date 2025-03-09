@@ -12,8 +12,6 @@ const FIELDS = new Dictionary({
   'Broken Links': 'broken_links',
   Label: 'label',
   Quality: 'quality',
-  Timeshift: 'timeshift',
-  'Timeshift (optional)': 'timeshift',
   'Channel Name': 'channel_name',
   'HTTP User-Agent': 'user_agent',
   'HTTP Referrer': 'http_referrer',
