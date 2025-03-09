@@ -5,7 +5,7 @@ http://www.coninfo.net:1935/tvcinco/live1/playlist.m3u8
 http://coninfo.net:1935/13maxhd/live13maxtvnuevo/playlist.m3u8
 #EXTINF:-1 tvg-id="13MaxTelevision.ar",13Max Televisión (720p)
 http://coninfo.net:1935/13maxhd/live13maxtvnuevo_720p/playlist.m3u8
-#EXTINF:-1 tvg-id="247CanaldeNoticias.ar",24/7 Canal de Noticias
+#EXTINF:-1 tvg-id="247CanaldeNoticias.ar" http-referrer="https://cn247.tv/",24/7 Canal de Noticias
 #EXTVLCOPT:http-referrer=https://cn247.tv/
 https://panel.host-live.com:19360/cn247tv/passthru.m3u8
 #EXTINF:-1 tvg-id="247CanaldeNoticias.ar",24/7 Canal de Noticias (720p)
@@ -14,7 +14,7 @@ https://59c5c86e10038.streamlock.net/6605140/6605140/playlist.m3u8
 https://panel.dattalive.com/6605140/6605140/playlist.m3u8
 #EXTINF:-1 tvg-id="247CanaldeNoticias.ar",24/7 Canal de Noticias (720p)
 https://panel.dattalive.com/6605140/smil:6605140.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="A24.ar" user-agent="iPhone",A24 (720p)
+#EXTINF:-1 tvg-id="A24.ar" http-user-agent="iPhone",A24 (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g1.vxral-hor.transport.edge-access.net/a15/ngrp:a24-100056_all/a24-100056.m3u8
 #EXTINF:-1 tvg-id="AiredeSantaFe.ar",Aire de Santa Fe (1080p)
@@ -25,7 +25,9 @@ https://sc1.stweb.tv/airedigital/live/playlist.m3u8
 https://alternatv.ar/stream/hls/live.m3u8
 #EXTINF:-1 tvg-id="Am1020.ar",Am1020 (360p) [Geo-blocked]
 http://51.79.83.93:9998/live/am1020/playlist.m3u8
-#EXTINF:-1 tvg-id="AmericaTV.ar" user-agent="iPhone",América TV (720p)
+#EXTINF:-1 tvg-id="AmericaTV.ar",America TV (480p)
+http://190.2.212.209:8050/play/a0pb
+#EXTINF:-1 tvg-id="AmericaTV.ar" http-user-agent="iPhone",América TV (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://raw.githubusercontent.com/MachineSystems/archived_m3u8/main/america_hls.m3u8
 #EXTINF:-1 tvg-id="ANIMESTATION.ar",ANIMESTATION (Argentina) (720p)
@@ -140,12 +142,12 @@ https://videostream.shockmedia.com.ar:19360/canal9santacruz/canal9santacruz.m3u8
 https://unlimited1-us.dps.live/televidaar/televidaar.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10Cordoba.ar",Canal 10 Córdoba (1080p)
 https://stream.arcast.live/canal10/ngrp:canal10_all/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal10deJunin.ar" user-agent="iPhone",Canal 10 de Junín (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal10deJunin.ar" http-user-agent="iPhone",Canal 10 de Junín (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=iPhone
 https://g4.mc-slo.transport.edge-access.net/a10/ngrp:canal10junin-100056_all/Playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10Goya.ar",Canal 10 Goya (576p)
 https://streamcasthd.com:19360/canal10goya/canal10goya.m3u8
-#EXTINF:-1 tvg-id="Canal10MardelPlata.ar" user-agent="iPhone",Canal 10 Mar del Plata (720p)
+#EXTINF:-1 tvg-id="Canal10MardelPlata.ar" http-user-agent="iPhone",Canal 10 Mar del Plata (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g5.mc-slo.transport.edge-access.net/a15/ngrp:canal10mdq-100044_all/Playlist.m3u8
 #EXTINF:-1 tvg-id="Canal10Neuquen.ar",Canal 10 Neuquén (480p)
@@ -164,7 +166,7 @@ https://restreamer.el10tv.com/memfs/725003c4-79c2-4565-8311-f429db4f7777.m3u8
 https://vivo.solumedia.com:19360/dadaproductora/dadaproductora.m3u8
 #EXTINF:-1 tvg-id="Canal11LaRioja.ar",Canal 11 La Rioja (Fénix Multiplataforma) (360p)
 http://stmv4.questreaming.com/fenixlarioja/fenixlarioja/playlist.m3u8
-#EXTINF:-1 tvg-id="DoceMisiones.ar" user-agent="iPhone",Canal 12 Misiones (720p)
+#EXTINF:-1 tvg-id="DoceMisiones.ar" http-user-agent="iPhone",Canal 12 Misiones (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g4.vxral-slo.transport.edge-access.net/a05/ngrp:c12_live01-100129_all/Playlist.m3u8
 #EXTINF:-1 tvg-id="Canal12Web.ar",Canal 12 Puerto Madryn (720p) [Not 24/7]
@@ -211,17 +213,17 @@ https://panel.dattalive.com/canal907/canal907/playlist.m3u8
 https://vivo.solumedia.com:19360/canalblu/canalblu.m3u8
 #EXTINF:-1 tvg-id="CanalCoop.ar",Canal Coop (576p)
 https://panel.dattalive.com/8138/8138/playlist.m3u8
-#EXTINF:-1 tvg-id="CanaldelaCiudad.ar" user-agent="iPhone",Canal de la Ciudad (720p)
+#EXTINF:-1 tvg-id="CanaldelaCiudad.ar" http-user-agent="iPhone",Canal de la Ciudad (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a08/ngrp:gcba_video4-100042_all/Playlist.m3u8
 #EXTINF:-1 tvg-id="CanaldelaCiudad.ar",Canal de la Ciudad (360p) [Not 24/7]
 http://168.197.196.98:82/stream/channelid/1330348835?profile=pass
 #EXTINF:-1 tvg-id="CanalE.ar",Canal E (720p)
 https://unlimited1-us.dps.live/perfiltv/perfiltv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="CanalLuz.ar" user-agent="iPhone",Canal Luz (1080p)
+#EXTINF:-1 tvg-id="CanalLuz.ar" http-user-agent="iPhone",Canal Luz (1080p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g2.vxral-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8
-#EXTINF:-1 tvg-id="CanalLuz.ar" user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",Canal Luz (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="CanalLuz.ar" http-user-agent="Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36",Canal Luz (1080p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPad; CPU OS 9_3_5 like Mac OS X) AppleWebKit/601.1.46 (KHTML, like Gecko) Mobile/13G36
 https://g1.mc-slo.transport.edge-access.net/a11/ngrp:canal_luz01-100009_all/Playlist.m3u8?sense=true
 #EXTINF:-1 tvg-id="CanalOrbe21.ar",Canal Orbe 21 (720p)
@@ -260,7 +262,7 @@ https://live-01-07-ciudad.vodgc.net/live-01-07-ciudad.vodgc.net/index.m3u8
 https://tv.initium.net.ar:3235/live/grupocitylive.m3u8
 #EXTINF:-1 tvg-id="CiudadTVResistencia.ar",Ciudad TV Resistencia (Chaco) (720p) [Not 24/7]
 http://coninfo.net:1935/chacodxdtv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="CMElCanaldelaMusica.ar" user-agent="iPhone",CM El Canal de la Música (720p)
+#EXTINF:-1 tvg-id="CMElCanaldelaMusica.ar" http-user-agent="iPhone",CM El Canal de la Música (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 http://g5.vxral-slo.transport.edge-access.net/a09/ngrp:CM_CanaldelaMusica-100044_all/Playlist.m3u8
 #EXTINF:-1 tvg-id="Canal3Pinamar.ar",CN3 Pinamar (720p) [Not 24/7]
@@ -275,7 +277,7 @@ https://mediacp.hostradios.com.ar:19360/canal7/canal7.m3u8
 https://tv.mediacp.eu:19360/cosmos/cosmos.m3u8
 #EXTINF:-1 tvg-id="CPEtv.ar",CPEtv (720p)
 https://stream.arcast.live/cpe/ngrp:cpe_all/playlist.m3u8
-#EXTINF:-1 tvg-id="CronicaTV.ar" user-agent="iPhone",Crónica TV (720p)
+#EXTINF:-1 tvg-id="CronicaTV.ar" http-user-agent="iPhone",Crónica TV (720p)
 #EXTVLCOPT:http-user-agent=iPhone
 https://g1.mc-hor.transport.edge-access.net/a10/ngrp:cronicatv_video1-100044_all/Playlist.m3u8
 #EXTINF:-1 tvg-id="CrossingCanalIPTV.ar",Crossing TV (Crossing Contenidos) (720p) [Not 24/7]
@@ -506,15 +508,15 @@ https://stmv5.livecastv.com/manualtman/manualtman/playlist.m3u8
 https://5f700d5b2c46f.streamlock.net/vtvmendoza/vtvmendoza/playlist.m3u8
 #EXTINF:-1 tvg-id="X24.ar",X24 (360p)
 http://srv1.zcast.com.ar/x24hd/x24hd/playlist.m3u8
-#EXTINF:-1 tvg-id="XtremaAccion.ar",Xtrema Accion
+#EXTINF:-1 tvg-id="XtremaAccion.ar" http-referrer="https://xtrematv.com/?p=1434",Xtrema Accion
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1434
 https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
-#EXTINF:-1 tvg-id="XtremaAnimal.ar",Xtrema Animal
+#EXTINF:-1 tvg-id="XtremaAnimal.ar" http-referrer="https://xtrematv.com/?p=1504",Xtrema Animal
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1504
 https://stmv6.voxtvhd.com.br/xtremaanimal/xtremaanimal/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaAnime.ar",Xtrema Anime (360p)
 https://stmv1.cnarlatam.com/xtremaanime/xtremaanime/playlist.m3u8
-#EXTINF:-1 tvg-id="XtremaCartoons.ar",Xtrema Cartoons
+#EXTINF:-1 tvg-id="XtremaCartoons.ar" http-referrer="https://xtrematv.com/?p=1390",Xtrema Cartoons
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1390
 https://stmv6.voxtvhd.com.br/xtremacartoons/xtremacartoons/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaCartoons.ar",Xtrema Cartoons (360p)
@@ -523,7 +525,7 @@ https://stmv1.cnarlatam.com/cineinfantil/cineinfantil/playlist.m3u8
 https://stmv1.cnarlatam.com/cineaccion/cineaccion/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaAsia.ar",Xtrema Cine Asia (268p)
 https://stmv1.cnarlatam.com/cineasia/cineasia/playlist.m3u8
-#EXTINF:-1 tvg-id="XtremaCineClasico.ar",Xtrema Cine Clasico
+#EXTINF:-1 tvg-id="XtremaCineClasico.ar" http-referrer="https://xtrematv.com/?p=1460",Xtrema Cine Clasico
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1460
 https://stmv6.voxtvhd.com.br/cineclasico/cineclasico/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaComedy.ar",Xtrema Cine Comedy (344p)
@@ -546,10 +548,8 @@ https://stmv1.cnarlatam.com/retroinfantil/retroinfantil/playlist.m3u8
 https://stmv1.cnarlatam.com/xtremaretroseries/xtremaretroseries/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaSeries.ar",Xtrema Series (360p)
 https://stmv1.cnarlatam.com/xtremaseries/xtremaseries/playlist.m3u8
-#EXTINF:-1 tvg-id="XtremaTerror.ar",Xtrema Terror
+#EXTINF:-1 tvg-id="XtremaTerror.ar" http-referrer="https://xtrematv.com/?p=1456",Xtrema Terror
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1456
 https://stmv6.voxtvhd.com.br/cineterror/cineterror/playlist.m3u8
 #EXTINF:-1 tvg-id="ZondaTV.ar",Zonda TV (432p) [Geo-blocked]
 https://cnnsanjuan.com:9999/zonda/zonda/playlist.m3u8
-#EXTINF:-1 tvg-id="AmericaTV.ar",America TV (480p)
-http://190.2.212.209:8050/play/a0pb

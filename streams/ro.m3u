@@ -111,13 +111,13 @@ https://stream1.antenaplay.ro/live/MireasaExtra/playlist.m3u8
 https://vid4.misatv.ro:5050/MSTV/romanian/playlist.m3u8
 #EXTINF:-1 tvg-id="",Moinesti FM (720p)
 https://video.moinestifm.ro/hls/moinestifm.m3u8
-#EXTINF:-1 tvg-id="MoozDance.ro",MoozDance (576p)
+#EXTINF:-1 tvg-id="MoozDance.ro" http-referrer="https://mooz.tv/live-ro/#MoozDance",MoozDance (576p)
 #EXTVLCOPT:http-referrer=https://mooz.tv/live-ro/#MoozDance
 https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8
-#EXTINF:-1 tvg-id="MoozHits.ro",MoozHits (576p)
+#EXTINF:-1 tvg-id="MoozHits.ro" http-referrer="https://mooz.tv/live-ro/#MoozHits",MoozHits (576p)
 #EXTVLCOPT:http-referrer=https://mooz.tv/live-ro/#MoozHits
 https://rtmp.digitalbroadcast.ro/moozhits/moozhits.m3u8
-#EXTINF:-1 tvg-id="MoozRo.ro",MoozRo (576p)
+#EXTINF:-1 tvg-id="MoozRo.ro" http-referrer="https://mooz.tv/live-ro/#MoozRo",MoozRo (576p)
 #EXTVLCOPT:http-referrer=https://mooz.tv/live-ro/#MoozRo
 https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8
 #EXTINF:-1 tvg-id="MuscelTV.ro",Muscel TV (1080p)
@@ -154,7 +154,7 @@ https://stream.realitatea.net/realitatea/sportiva_md/playlist.m3u8
 https://stream.realitatea.net/realitatea/star_md/playlist.m3u8
 #EXTINF:-1 tvg-id="RockTV.ro",Rock TV (720p)
 https://tv.broadcasting.ro/rocktv/85c83a80-4f71-4f2d-a8d6-43f676896bcb.m3u8
-#EXTINF:-1 tvg-id="RomaniaTV.ro",Romania TV (576p)
+#EXTINF:-1 tvg-id="RomaniaTV.ro" http-referrer="https://www.romaniatv.net/live",Romania TV (576p)
 #EXTVLCOPT:http-referrer=https://www.romaniatv.net/live
 https://livestream.romaniatv.net/clients/romaniatv/playlist.m3u8
 #EXTINF:-1 tvg-id="ROTVValencia.es",ROTV Valencia (720p)
@@ -193,53 +193,53 @@ https://stream.leetweb.ro/WebRTCApp/streams/118334672595255049029831.m3u8
 http://85.186.22.140/testing/pl5/playlist/ram/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPlusSuceava.ro",TVPlus Suceava (576p)
 http://85.186.146.34:8080
-#EXTINF:-1 tvg-id="TVR1.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 1 (1080p) [Not 24/7] [Geo-blocked]
+#EXTINF:-1 tvg-id="TVR1.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 1 (1080p) [Not 24/7] [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvr1.cdn.zitec.com/live/tvr1/main.m3u8
-#EXTINF:-1 tvg-id="TVR2.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 2 (1080p) [Not 24/7] [Geo-blocked]
+#EXTINF:-1 tvg-id="TVR2.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 2 (1080p) [Not 24/7] [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvr2.cdn.zitec.com/live/tvr2/main.m3u8
-#EXTINF:-1 tvg-id="TVR3.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 3 (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVR3.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR 3 (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvr3.cdn.zitec.com/live/tvr3/main.m3u8
-#EXTINF:-1 tvg-id="TVRCluj.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Cluj (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRCluj.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Cluj (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrcluj.cdn.zitec.com/live/tvrcluj/main.m3u8
-#EXTINF:-1 tvg-id="TVRCraiova.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Craiova (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRCraiova.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Craiova (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrcraiova.cdn.zitec.com/live/tvrcraiova/main.m3u8
-#EXTINF:-1 tvg-id="TVRCultural.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Cultural (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRCultural.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Cultural (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrcultural.cdn.zitec.com/live/tvrcultural/main.m3u8
-#EXTINF:-1 tvg-id="TVRFolclor.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Folclor (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRFolclor.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Folclor (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrfolclor.cdn.zitec.com/live/tvrfolclor/main.m3u8
-#EXTINF:-1 tvg-id="TVRIasi.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Iasi (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRIasi.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Iasi (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvriasi.cdn.zitec.com/live/tvriasi/main.m3u8
-#EXTINF:-1 tvg-id="TVRInfo.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Info (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRInfo.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Info (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrinfo.cdn.zitec.com/live/tvrinfo/main.m3u8
 #EXTINF:-1 tvg-id="TVRInternational.ro",TVR International (1080p)
 https://tvr-tvri.cdn.zitec.com/live/tvri/main.m3u8
-#EXTINF:-1 tvg-id="TVRSport.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Sport (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRSport.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Sport (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrsport.cdn.zitec.com/live/tvrsport/main.m3u8
-#EXTINF:-1 tvg-id="TVRTarguMures.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Targu-Mures (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRTarguMures.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Targu-Mures (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://mn-nl.mncdn.com/tvrtgmures_new/smil:tvrtgmures_new.smil/index.m3u8
-#EXTINF:-1 tvg-id="TVRTimisoara.ro" user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Timisoara (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="TVRTimisoara.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Timisoara (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
 https://tvr-tvrtimisoara.cdn.zitec.com/live/tvrtimisoara/main.m3u8

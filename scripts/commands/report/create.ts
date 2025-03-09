@@ -38,8 +38,8 @@ async function main() {
   const addRequests = issues.filter(issue => issue.labels.includes('streams:add'))
   const addRequestsBuffer = new Dictionary()
   addRequests.forEach((issue: Issue) => {
-    const channelId = issue.data.getString('channel_id') || undefined
-    const streamUrl = issue.data.getString('stream_url')
+    const channelId = issue.data.getString('channelId') || undefined
+    const streamUrl = issue.data.getString('streamUrl')
 
     const result = new Dictionary({
       issueNumber: issue.number,
@@ -65,8 +65,8 @@ async function main() {
   logger.info('checking streams:edit requests...')
   const editRequests = issues.filter(issue => issue.labels.find(label => label === 'streams:edit'))
   editRequests.forEach((issue: Issue) => {
-    const channelId = issue.data.getString('channel_id') || undefined
-    const streamUrl = issue.data.getString('stream_url') || undefined
+    const channelId = issue.data.getString('channelId') || undefined
+    const streamUrl = issue.data.getString('streamUrl') || undefined
 
     const result = new Dictionary({
       issueNumber: issue.number,
@@ -88,7 +88,7 @@ async function main() {
     issue.labels.find(label => label === 'broken stream')
   )
   brokenStreamReports.forEach((issue: Issue) => {
-    const brokenLinks = issue.data.getArray('broken_links') || []
+    const brokenLinks = issue.data.getArray('brokenLinks') || []
 
     if (!brokenLinks.length) {
       const result = new Dictionary({
@@ -126,7 +126,7 @@ async function main() {
   )
   const channelSearchRequestsBuffer = new Dictionary()
   channelSearchRequests.forEach((issue: Issue) => {
-    const channelId = issue.data.getString('channel_id')
+    const channelId = issue.data.getString('channelId')
 
     const result = new Dictionary({
       issueNumber: issue.number,

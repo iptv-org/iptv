@@ -51,7 +51,7 @@ http://65.21.85.175:8000/play/a012/index.m3u8?token=livetv
 http://77.235.1.17/vip_comedy/index.m3u8
 #EXTINF:-1 tvg-id="vijuPlusPremiere.ru",viju+ Premiere (1080p)
 http://77.235.1.17/vip_premier/index.m3u8
-#EXTINF:-1 tvg-id="VIVARussia.ru" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.4044.138 Safari/537.36",VIVA Russia (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="VIVARussia.ru" http-referrer="https://goodgame.ru" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.4044.138 Safari/537.36",VIVA Russia (1080p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://goodgame.ru
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.4044.138 Safari/537.36
 https://hls.goodgame.ru/hls/180805.m3u8
@@ -165,7 +165,7 @@ http://osnmedia.servicecdn.ru/streams/17603_88089/playlist.m3u8
 http://213.172.73.133:8081/nimble_live/9009_Остросюжетное_HD/playlist.m3u8
 #EXTINF:-1 tvg-id="ChannelOne.ru",Первый канал
 https://edge1.1internet.tv/dash-live2/streams/1tv-dvr/1tvdash.mpd
-#EXTINF:-1 tvg-id="Pobeda.ru",Победа (720p)
+#EXTINF:-1 tvg-id="Pobeda.ru" http-referrer="https://pobeda.tv/",Победа (720p)
 #EXTVLCOPT:http-referrer=https://pobeda.tv/
 https://pkvc-hls3.cdnvideo.ru/Pobeda/smil:Pobeda.smil/chunklist_b5128000_slru.m3u8
 #EXTINF:-1 tvg-id="PremialnoeHD.ru",Премиальное HD
