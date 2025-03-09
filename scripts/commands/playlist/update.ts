@@ -105,7 +105,6 @@ async function editStreams(loader: IssueLoader) {
 
     if (data.has('label')) stream.label = data.getString('label')
     if (data.has('quality')) stream.quality = data.getString('quality')
-    if (data.has('timeshift')) stream.timeshift = data.getString('timeshift')
     if (data.has('user_agent')) stream.userAgent = data.getString('user_agent')
     if (data.has('http_referrer')) stream.httpReferrer = data.getString('http_referrer')
 
@@ -132,7 +131,6 @@ async function addStreams(loader: IssueLoader) {
       url: data.getString('stream_url'),
       label: data.getString('label'),
       quality: data.getString('quality'),
-      timeshift: data.getString('timeshift'),
       userAgent: data.getString('user_agent'),
       httpReferrer: data.getString('http_referrer'),
       filepath: `${channel.country.toLowerCase()}.m3u`,

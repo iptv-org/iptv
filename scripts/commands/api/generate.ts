@@ -13,7 +13,7 @@ async function main() {
   let streams = await parser.parse(files)
   streams = streams
     .map(data => new Stream(data))
-    .orderBy([(stream: Stream) => stream.channel, (stream: Stream) => stream.timeshift])
+    .orderBy([(stream: Stream) => stream.channel])
     .map((stream: Stream) => stream.toJSON())
 
   logger.info(`found ${streams.count()} streams`)

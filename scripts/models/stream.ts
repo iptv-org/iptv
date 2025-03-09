@@ -11,7 +11,6 @@ type StreamProps = {
   label?: string
   quality?: string
   userAgent?: string
-  timeshift?: string
 }
 
 export class Stream {
@@ -31,7 +30,6 @@ export class Stream {
   isNSFW: boolean
   groupTitle: string
   removed: boolean = false
-  timeshift: string
 
   constructor({
     channel,
@@ -42,8 +40,7 @@ export class Stream {
     name,
     quality,
     url,
-    userAgent,
-    timeshift
+    userAgent
   }: StreamProps) {
     this.channel = channel || ''
     this.filepath = filepath
@@ -60,7 +57,6 @@ export class Stream {
     this.languages = new Collection()
     this.isNSFW = false
     this.groupTitle = 'Undefined'
-    this.timeshift = timeshift || ''
   }
 
   normalizeURL() {
@@ -149,7 +145,6 @@ export class Stream {
     return {
       channel: this.channel || null,
       url: this.url,
-      timeshift: this.timeshift || null,
       http_referrer: this.httpReferrer || null,
       user_agent: this.userAgent || null
     }
@@ -157,10 +152,6 @@ export class Stream {
 
   toString(options: { public: boolean }) {
     let output = `#EXTINF:-1 tvg-id="${this.channel}"`
-
-    if (this.timeshift) {
-      output += ` tvg-shift="${this.timeshift}"`
-    }
 
     if (options.public) {
       output += ` tvg-logo="${this.logo}" group-title="${this.groupTitle}"`
