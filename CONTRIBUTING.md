@@ -65,14 +65,13 @@ Please note that we only accept removal requests from channel owners and their o
 For a stream to be approved, its description must follow this template:
 
 ```
-#EXTINF:-1 tvg-id="CHANNEL_ID" tvg-shift="TIMESHIFT",CHANNEL_NAME (RESOLUTION) [LABEL]
+#EXTINF:-1 tvg-id="CHANNEL_ID",CHANNEL_NAME (RESOLUTION) [LABEL]
 STREAM_URL
 ```
 
 | Attribute      | Description                                                                                | Required | Valid values                                                                                                               |
 | -------------- | ------------------------------------------------------------------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------- |
 | `CHANNEL_ID`   | Channel ID.                                                                                | Optional | Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). |
-| `TIMESHIFT`    | Indicates the shift of the program schedule.                                               | Optional | `-2`, `-1`, `1`, `2` etc                                                                                                   |
 | `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                | Required | -                                                                                                                          |
 | `RESOLUTION`   | Maximum stream resolution.                                                                 | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc                                                                               |
 | `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users. | Optional | `Geo-blocked` or `Not 24/7`                                                                                                |
@@ -81,7 +80,7 @@ STREAM_URL
 Example:
 
 ```xml
-#EXTINF:-1 tvg-id="ExampleTV.ua" tvg-shift="4",Example TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ExampleTV.ua",Example TV (720p) [Not 24/7]
 https://example.com/playlist.m3u8
 ```
 
