@@ -137,6 +137,7 @@ To run scripts use the `npm run <script-name>` command.
 - `playlist:generate`: generates all public playlists.
 - `playlist:validate`: сhecks ids and links in internal playlists for errors.
 - `playlist:lint`: сhecks internal playlists for syntax errors.
+- `playlist:test`: tests links in internal playlists.
 - `playlist:deploy`: allows to manually publish all generated via `playlist:generate` playlists. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
 - `readme:update`: updates the list of playlists in [README.md](README.md).
 - `report:create`: creates a report on current issues.
