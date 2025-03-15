@@ -5,7 +5,7 @@ https://hls.4utv.live/hls/stream.m3u8
 https://kanal24.blutv.com/blutv_kanal24_live/live.m3u8
 #EXTINF:-1 tvg-id="24TV.tr",24 TV (1080p)
 http://185.234.111.229:8000/play/a059
-#EXTINF:-1 tvg-id="24TV.tr" http-user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",24 TV (1080p)
+#EXTINF:-1 tvg-id="24TV.tr" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",24 TV (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://mn-nl.mncdn.com/kanal24/smil:kanal24.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="24TV.tr",24 TV (576p)
@@ -502,7 +502,7 @@ https://livetv.powerapp.com.tr/plove/love.smil/playlist.m3u8
 https://livetv.powerapp.com.tr/pplustv/pplustv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTurkTV.tr",Power Turk (1080p) [Not 24/7]
 https://livetv.powerapp.com.tr/powerturkTV/powerturkhd.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="PowerTurkTV.tr" http-user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Power Turk (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PowerTurkTV.tr" user-agent="Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36",Power Turk (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 Macintosh; Intel Mac OS X 10_14_5 AppleWebKit/537.36 KHTML, like Gecko Chrome/76.0.3809.25 Safari/537.36
 https://mn-nl.mncdn.com/blutv_powerturk/smil:powerturk_sd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="PowerTurkAkustik.tr",Power Türk Akustik (1080p)
@@ -575,8 +575,6 @@ https://live.kwikmotion.com/syriatvlive/syriatv.smil/playlist_dvr.m3u8
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=6017
 #EXTINF:-1 tvg-id="SyriaTV.tr",Syria TV (1080p)
 https://svs.itworkscdn.net/syriatvlive/syriatv.smil/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="TabiiSpor6.tr",Tabii Spor 6 (720p) [Geo-blocked]
-https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TarimTV.tr",Tarim TV (1080p)
 https://content.tvkur.com/l/c7e1da7mm25p552d9u9g/master.m3u8
 #EXTINF:-1 tvg-id="TatlisesTV.tr",Tatlises TV (1080p) [Not 24/7]
@@ -661,7 +659,7 @@ https://tv-trtdiyanetcocuk.medya.trt.com.tr/master.m3u8
 https://tv-e-okul00.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTEBALise.tr",TRT EBA Lise (720p)
 https://tv-e-okul02.medya.trt.com.tr/master.m3u8
-#EXTINF:-1 tvg-id="",TRT EBA Ortaokul (720p)
+#EXTINF:-1 tvg-id="TRTEBAOrtaokul.tr",TRT EBA Ortaokul (720p)
 https://tv-e-okul01.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTHaber.tr",TRT Haber (1080p)
 http://185.234.111.229:8000/play/a00d
@@ -695,12 +693,6 @@ http://185.234.111.229:8000/play/a003
 https://tv-trtworld.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TurkHaberTV.tr",TürkHaber (720p)
 https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TurksatSaat.tr",Turksat Saat
-http://185.234.111.229:8000/play/a01f
-#EXTINF:-1 tvg-id="TurksatTanitim.tr",Turksat Tanitim
-http://185.234.111.229:8000/play/a01d
-#EXTINF:-1 tvg-id="TurksatTanitim.tr",Turksat Tanitim
-http://185.234.111.229:8000/play/a01e
 #EXTINF:-1 tvg-id="TV1.tr",TV 1 (720p)
 https://edge1.socialsmart.tv/tv1/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="TV4.tr",TV4 (720p)
@@ -759,7 +751,7 @@ https://live.artidijitalmedya.com/artidijital_urfanatiktv/urfanatiktv/playlist.m
 https://uskudarunv.mediatriple.net/uskudarunv/uskudar1/playlist.m3u8
 #EXTINF:-1 tvg-id="UUTV2.tr",ÜÜ TV Üsküdar Üniversitesi TV (1080p) [Not 24/7]
 https://uskudarunv.mediatriple.net/uskudarunv/uskudar2/playlist.m3u8
-#EXTINF:-1 tvg-id="VTV.tr" http-referrer="https://www.vtv.net.tr/",V TV (720p)
+#EXTINF:-1 tvg-id="VTV.tr",V TV (720p)
 #EXTVLCOPT:http-referrer=https://www.vtv.net.tr/
 https://serdar.tiviplayer.com/player/m3u8/65aae71c9b93f0965aaed3a92660d98b/65aae71c9b93f0965aaed3a92660d98b.m3u8
 #EXTINF:-1 tvg-id="VavTV.tr",Vav TV (1080p)
@@ -784,3 +776,19 @@ https://cdn-yildiz.yayin.com.tr/yildiz/yildiz/playlist.m3u8
 https://stream.yol.tv:9443/medialive/yol.m3u8
 #EXTINF:-1 tvg-id="ZarokTV.tr",Zarok TV (720p)
 https://zindikurmanci.zaroktv.com.tr/hls/stream.m3u8
+#EXTINF:-1 tvg-id="TabiiSpor6.tr",Tabii Spor 6 (720p) [Geo-blocked]
+https://vbtob9hyq58eiophct5qctxr2.medya.trt.com.tr/master.m3u8
+#EXTINF:-1 tvg-id="TurksatTanitim.tr",Turksat Tanitim
+http://185.234.111.229:8000/play/a01d
+#EXTINF:-1 tvg-id="TurksatTanitim.tr",Turksat Tanitim
+http://185.234.111.229:8000/play/a01e
+#EXTINF:-1 tvg-id="TurksatSaat.tr",Turksat Saat
+http://185.234.111.229:8000/play/a01f
+#EXTINF:-1 tvg-id="TYTTurk.tr",TYT Turk (720p)
+https://cdn4.yayin.com.tr/tytturk/index.m3u8
+#EXTINF:-1 tvg-id="TRTWorld.tr",TRT World (1080p)
+http://92.114.85.72:8000/play/a02v
+#EXTINF:-1 tvg-id="TRTWorld.tr",TRT World (576p)
+http://92.114.85.72:8000/play/a0a9
+#EXTINF:-1 tvg-id="CGTNDocumentary.tr",CGTN Documentary
+https://mn-nl.mncdn.com/dogusdyg_drone/cgtn/playlist.m3u8
