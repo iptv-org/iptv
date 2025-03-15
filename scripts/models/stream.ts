@@ -8,10 +8,9 @@ type StreamProps = {
   line: number
   channel?: string
   httpReferrer?: string
+  httpUserAgent?: string
   label?: string
   quality?: string
-  userAgent?: string
-  timeshift?: string
 }
 
 export class Stream {
@@ -23,7 +22,7 @@ export class Stream {
   name: string
   quality: string
   url: string
-  userAgent: string
+  httpUserAgent: string
   logo: string
   broadcastArea: Collection
   categories: Collection
@@ -31,7 +30,6 @@ export class Stream {
   isNSFW: boolean
   groupTitle: string
   removed: boolean = false
-  timeshift: string
 
   constructor({
     channel,
@@ -42,8 +40,7 @@ export class Stream {
     name,
     quality,
     url,
-    userAgent,
-    timeshift
+    httpUserAgent
   }: StreamProps) {
     this.channel = channel || ''
     this.filepath = filepath
@@ -53,14 +50,13 @@ export class Stream {
     this.name = name
     this.quality = quality || ''
     this.url = url
-    this.userAgent = userAgent || ''
+    this.httpUserAgent = httpUserAgent || ''
     this.logo = ''
     this.broadcastArea = new Collection()
     this.categories = new Collection()
     this.languages = new Collection()
     this.isNSFW = false
     this.groupTitle = 'Undefined'
-    this.timeshift = timeshift || ''
   }
 
   normalizeURL() {
@@ -140,7 +136,7 @@ export class Stream {
       name: this.name,
       quality: this.quality,
       url: this.url,
-      userAgent: this.userAgent,
+      httpUserAgent: this.httpUserAgent,
       line: this.line
     }
   }
@@ -149,25 +145,24 @@ export class Stream {
     return {
       channel: this.channel || null,
       url: this.url,
-      timeshift: this.timeshift || null,
-      http_referrer: this.httpReferrer || null,
-      user_agent: this.userAgent || null
+      referrer: this.httpReferrer || null,
+      user_agent: this.httpUserAgent || null
     }
   }
 
   toString(options: { public: boolean }) {
     let output = `#EXTINF:-1 tvg-id="${this.channel}"`
 
-    if (this.timeshift) {
-      output += ` tvg-shift="${this.timeshift}"`
-    }
-
     if (options.public) {
       output += ` tvg-logo="${this.logo}" group-title="${this.groupTitle}"`
     }
 
-    if (this.userAgent) {
-      output += ` user-agent="${this.userAgent}"`
+    if (this.httpReferrer) {
+      output += ` http-referrer="${this.httpReferrer}"`
+    }
+
+    if (this.httpUserAgent) {
+      output += ` http-user-agent="${this.httpUserAgent}"`
     }
 
     output += `,${this.getTitle()}`
@@ -176,8 +171,8 @@ export class Stream {
       output += `\n#EXTVLCOPT:http-referrer=${this.httpReferrer}`
     }
 
-    if (this.userAgent) {
-      output += `\n#EXTVLCOPT:http-user-agent=${this.userAgent}`
+    if (this.httpUserAgent) {
+      output += `\n#EXTVLCOPT:http-user-agent=${this.httpUserAgent}`
     }
 
     output += `\n${this.url}`

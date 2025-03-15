@@ -60,9 +60,9 @@ async function removeStreams(loader: IssueLoader) {
   )
   requests.forEach((issue: Issue) => {
     const data = issue.data
-    if (data.missing('broken_links')) return
+    if (data.missing('brokenLinks')) return
 
-    const brokenLinks = data.getString('broken_links').split(/\r?\n/).filter(Boolean)
+    const brokenLinks = data.getString('brokenLinks').split(/\r?\n/).filter(Boolean)
 
     let changed = false
     brokenLinks.forEach(link => {
@@ -84,20 +84,20 @@ async function editStreams(loader: IssueLoader) {
   requests.forEach((issue: Issue) => {
     const data = issue.data
 
-    if (data.missing('stream_url')) return
+    if (data.missing('streamUrl')) return
 
     let stream = streams.first(
-      (_stream: Stream) => _stream.url === data.getString('stream_url')
+      (_stream: Stream) => _stream.url === data.getString('streamUrl')
     ) as Stream
 
     if (!stream) return
 
-    if (data.has('channel_id')) {
-      const channel = groupedChannels.get(data.getString('channel_id'))
+    if (data.has('channelId')) {
+      const channel = groupedChannels.get(data.getString('channelId'))
 
       if (!channel) return
 
-      stream.channel = data.getString('channel_id')
+      stream.channel = data.getString('channelId')
       stream.filepath = `${channel.country.toLowerCase()}.m3u`
       stream.line = -1
       stream.name = channel.name
@@ -105,9 +105,8 @@ async function editStreams(loader: IssueLoader) {
 
     if (data.has('label')) stream.label = data.getString('label')
     if (data.has('quality')) stream.quality = data.getString('quality')
-    if (data.has('timeshift')) stream.timeshift = data.getString('timeshift')
-    if (data.has('user_agent')) stream.userAgent = data.getString('user_agent')
-    if (data.has('http_referrer')) stream.httpReferrer = data.getString('http_referrer')
+    if (data.has('httpUserAgent')) stream.httpUserAgent = data.getString('httpUserAgent')
+    if (data.has('httpReferrer')) stream.httpReferrer = data.getString('httpReferrer')
 
     processedIssues.add(issue.number)
   })
@@ -119,25 +118,24 @@ async function addStreams(loader: IssueLoader) {
   )
   requests.forEach((issue: Issue) => {
     const data = issue.data
-    if (data.missing('channel_id') || data.missing('stream_url')) return
-    if (streams.includes((_stream: Stream) => _stream.url === data.getString('stream_url'))) return
-    if (!validUrl.isUri(data.getString('stream_url'))) return
+    if (data.missing('channelId') || data.missing('streamUrl')) return
+    if (streams.includes((_stream: Stream) => _stream.url === data.getString('streamUrl'))) return
+    if (!validUrl.isUri(data.getString('streamUrl'))) return
 
-    const channel = groupedChannels.get(data.getString('channel_id'))
+    const channel = groupedChannels.get(data.getString('channelId'))
 
     if (!channel) return
 
     const stream = new Stream({
-      channel: data.getString('channel_id'),
-      url: data.getString('stream_url'),
+      channel: data.getString('channelId'),
+      url: data.getString('streamUrl'),
       label: data.getString('label'),
       quality: data.getString('quality'),
-      timeshift: data.getString('timeshift'),
-      userAgent: data.getString('user_agent'),
-      httpReferrer: data.getString('http_referrer'),
+      httpUserAgent: data.getString('httpUserAgent'),
+      httpReferrer: data.getString('httpReferrer'),
       filepath: `${channel.country.toLowerCase()}.m3u`,
       line: -1,
-      name: data.getString('channel_name') || channel.name
+      name: data.getString('channelName') || channel.name
     })
 
     streams.add(stream)
