@@ -10,17 +10,24 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - uses: tj-actions/changed-files@v35
+      - name: changed files
         id: files
-        with:
-          files: streams/*.m3u
-      - uses: actions/setup-node@v3
+        run: |
+          FILES=streams/*.m3u
+          ANY_CHANGED=false
+          ALL_CHANGED_FILES=$(git diff --name-only "${FILES}" | tr '\n' ' ')
+          if [ -n "${ALL_CHANGED_FILES}" ]; then
+            ANY_CHANGED=true
+          fi
+          echo "all_changed_files=$ALL_CHANGED_FILES" >> "$GITHUB_OUTPUT"
+          echo "any_changed=$ANY_CHANGED" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-node@v4
         if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
         with:
-          node-version: 20
+          node-version: 22
           cache: 'npm'
       - name: install dependencies
         if: steps.files.outputs.any_changed == 'true'
