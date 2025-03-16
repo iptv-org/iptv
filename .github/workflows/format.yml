@@ -1,13 +1,16 @@
 name: format
 on:
   workflow_dispatch:
-  pull_request:
-    types: [closed]
-    branches:
-      - master
+  # pull_request:
+  #   types: [closed]
+  #   branches:
+  #     - master
+  # schedule:
+  #   - cron: "0 12 * * *"
 jobs:
   on_trigger:
-    if: github.event_name == 'workflow_dispatch'
+    # if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' }}
+    if: ${{ github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
