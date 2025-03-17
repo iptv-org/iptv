@@ -105,7 +105,6 @@ async function loadStreams({
     .orderBy(
       [
         (stream: Stream) => stream.channel,
-        (stream: Stream) => stream.timeshift,
         (stream: Stream) => parseInt(stream.quality.replace('p', '')),
         (stream: Stream) => stream.label
       ],
