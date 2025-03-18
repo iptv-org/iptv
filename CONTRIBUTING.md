@@ -65,14 +65,13 @@ Please note that we only accept removal requests from channel owners and their o
 For a stream to be approved, its description must follow this template:
 
 ```
-#EXTINF:-1 tvg-id="CHANNEL_ID" tvg-shift="TIMESHIFT",CHANNEL_NAME (RESOLUTION) [LABEL]
+#EXTINF:-1 tvg-id="CHANNEL_ID",CHANNEL_NAME (RESOLUTION) [LABEL]
 STREAM_URL
 ```
 
 | Attribute      | Description                                                                                | Required | Valid values                                                                                                               |
 | -------------- | ------------------------------------------------------------------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------- |
 | `CHANNEL_ID`   | Channel ID.                                                                                | Optional | Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). |
-| `TIMESHIFT`    | Indicates the shift of the program schedule.                                               | Optional | `-2`, `-1`, `1`, `2` etc                                                                                                   |
 | `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                | Required | -                                                                                                                          |
 | `RESOLUTION`   | Maximum stream resolution.                                                                 | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc                                                                               |
 | `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users. | Optional | `Geo-blocked` or `Not 24/7`                                                                                                |
@@ -81,11 +80,18 @@ STREAM_URL
 Example:
 
 ```xml
-#EXTINF:-1 tvg-id="ExampleTV.ua" tvg-shift="4",Example TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ExampleTV.ua",Example TV (720p) [Not 24/7]
 https://example.com/playlist.m3u8
 ```
 
-Also, if necessary, you can specify custom [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) and [Referrer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) via the `#EXTVLCOPT` tag:
+Also, if necessary, you can specify custom [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) and [HTTP Referrer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) through additional attributes:
+
+```xml
+#EXTINF:-1 tvg-id="ExampleTV.us" http-referrer="http://example.com/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)",Example TV
+http://example.com/stream.m3u8
+```
+
+or via `#EXTVLCOPT` tag:
 
 ```xml
 #EXTINF:-1 tvg-id="ExampleTV.us",Example TV
@@ -131,6 +137,7 @@ To run scripts use the `npm run <script-name>` command.
 - `playlist:generate`: generates all public playlists.
 - `playlist:validate`: сhecks ids and links in internal playlists for errors.
 - `playlist:lint`: сhecks internal playlists for syntax errors.
+- `playlist:test`: tests links in internal playlists.
 - `playlist:deploy`: allows to manually publish all generated via `playlist:generate` playlists. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
 - `readme:update`: updates the list of playlists in [README.md](README.md).
 - `report:create`: creates a report on current issues.
