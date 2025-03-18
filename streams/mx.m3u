@@ -87,7 +87,7 @@ https://stream.oursnetworktv.com/latin/encoder91/playlist.m3u8
 https://5fc584f3f19c9.streamlock.net/canal22/smil:canal22.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal26.mx",Canal 26 Aguascalientes (1080p)
 https://60417ddeaf0d9.streamlock.net/telemetrika3/smil:telemetrika3.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="Canal28.mx",Canal 28 (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="Canal28.mx" http-referrer="https://player.castr.com/live_bf24d4208d8611eeb116dbe87aa63be0",Canal 28 (720p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_bf24d4208d8611eeb116dbe87aa63be0
 https://stream.castr.com/653d77dcde70014f52ad1e19/live_bf24d4208d8611eeb116dbe87aa63be0/rewind-3600.m3u8
 #EXTINF:-1 tvg-id="Canal30Cintalapa.mx",Canal 30 Cintalapa (720p) [Not 24/7]
@@ -104,7 +104,7 @@ https://5e50264bd6766.streamlock.net/canal44/videocanal44/playlist.m3u8
 https://stream.oursnetworktv.com/latin/encoder28/playlist.m3u8
 #EXTINF:-1 tvg-id="XEJTDT.mx",Canal 50.1 Juárez (XEJ-TDT) (614p)
 https://stream.oursnetworktv.com/latin/juarez50/playlist.m3u8
-#EXTINF:-1 tvg-id="XHSPRTDT1.mx",Canal Catorce
+#EXTINF:-1 tvg-id="XHSPRTDT1.mx" http-referrer="https://www.canalcatorce.tv/",Canal Catorce
 #EXTVLCOPT:http-referrer=https://www.canalcatorce.tv/
 https://s5.mexside.net:1936/canal14/canal14/playlist.m3u8
 #EXTINF:-1 tvg-id="CanaldelCongreso451.mx",Canal del Congreso 45.1 (480p) [Not 24/7]
@@ -147,7 +147,7 @@ https://s5.mexside.net:1936/elsonorense/elsonorense/playlist.m3u8
 https://5ca9af4645e15.streamlock.net/teleradio/smil:teleradio.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Foro.mx",Foro TV (1080p)
 https://channel02-notusa.akamaized.net/hls/live/2023914/event01/index.m3u8
-#EXTINF:-1 tvg-id="GikTVMX.mx",GikTVMx (480p)
+#EXTINF:-1 tvg-id="GikTVMX.mx" http-referrer="https://giktvmx.g3radio.mx",GikTVMx (480p)
 #EXTVLCOPT:http-referrer=https://giktvmx.g3radio.mx
 https://pistream.ddns.net/hls/stream.m3u8
 #EXTINF:-1 tvg-id="GoldenEdgePanregional.mx",Golden Edge Panregional (576p)
@@ -282,6 +282,8 @@ https://5fa5de1a545ae.streamlock.net/4982/4982/playlist.m3u8
 https://servilive.com:3263/live/channel12live.m3u8
 #EXTINF:-1 tvg-id="TELE4Ojocaliente.mx",TELE 4 Ojocaliente (720p)
 https://stream.oursnetworktv.com/latin/encoder53/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleYucatan.mx",Tele Yucatan [Geo-blocked]
+https://5ca3e84a76d30.streamlock.net/teleyucatan/videoteleyucatan/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleFormula.mx",TeleFórmula (720p) [Geo-blocked]
 https://mdstrm.com/live-stream-playlist/62f2c855f7981b5a5a2d8763.m3u8
 #EXTINF:-1 tvg-id="TeleHit.mx",Telehit (1080p)
@@ -388,5 +390,3 @@ https://stream.oursnetworktv.com/latin/encoder73/playlist.m3u8
 https://stream8.mexiserver.com:1936/xtinetwork/xtinetwork/playlist.m3u8
 #EXTINF:-1 tvg-id="ZAZ.mx",ZAZ
 https://cloud.fastchannel.es/mic/manifiest/hls/zaztv/zaztv.m3u8
-#EXTINF:-1 tvg-id="TeleYucatan.mx",Tele Yucatan [Geo-blocked]
-https://5ca3e84a76d30.streamlock.net:443/teleyucatan/videoteleyucatan/playlist.m3u8
