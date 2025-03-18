@@ -1,8 +1,6 @@
 import { Collection, Storage } from '@freearhey/core'
 import parser from 'iptv-playlist-parser'
 import { Stream } from '../models'
-import path from 'path'
-import { STREAMS_DIR } from '../constants'
 
 export class PlaylistParser {
   storage: Storage
@@ -15,8 +13,7 @@ export class PlaylistParser {
     let streams = new Collection()
 
     for (const filepath of files) {
-      const relativeFilepath = filepath.replace(path.normalize(STREAMS_DIR), '')
-      const _streams: Collection = await this.parseFile(relativeFilepath)
+      const _streams: Collection = await this.parseFile(filepath)
       streams = streams.concat(_streams)
     }
 
@@ -40,8 +37,7 @@ export class PlaylistParser {
         line: item.line,
         url: item.url,
         httpReferrer: item.http.referrer,
-        userAgent: item.http['user-agent'],
-        timeshift: item.tvg.shift
+        httpUserAgent: item.http['user-agent']
       })
 
       streams.add(stream)
