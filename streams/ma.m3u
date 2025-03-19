@@ -1,26 +1,20 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2MMonde.ma" http-referrer="http://www.radio2m.ma/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",2M Monde (360p)
-#EXTVLCOPT:http-referrer=http://www.radio2m.ma/
+#EXTINF:-1 tvg-id="2MMonde.ma" http-referrer="https://2m.ma" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",2M Monde (360p)
+#EXTVLCOPT:http-referrer=https://2m.ma
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
 https://cdn-globecast.akamaized.net/live/eds/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8
-#EXTINF:-1 tvg-id="AlAoulaInter.ma" http-referrer="https://snrtlive.ma/",Al Aoula International (360p)
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8
-#EXTINF:-1 tvg-id="AlAoula.ma" http-referrer="https://snrtlive.ma/",Al Aoula Laâyoune (360p)
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/al_aoula_laayoune/hls_snrt/index.m3u8
-#EXTINF:-1 tvg-id="AlMaghribia.ma" http-referrer="https://snrtlive.ma/",Al Maghribia (360p)
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/al_maghribia_snrt/hls_snrt/index.m3u8
-#EXTINF:-1 tvg-id="Arryadia.ma" http-referrer="https://snrtlive.ma/",Arryadia (360p) [Not 24/7]
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/arriadia/hls_snrt/index.m3u8
-#EXTINF:-1 tvg-id="Assadissa.ma" http-referrer="https://snrtlive.ma/",Assadissa (360p)
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/assadissa/hls_snrt/index.m3u8
-#EXTINF:-1 tvg-id="Athaqafia.ma" http-referrer="https://snrtlive.ma/",Athaqafia (360p)
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/arrabiaa/hls_snrt/index.m3u8
+#EXTINF:-1 tvg-id="AlAoulaInter.ma",Al Aoula International (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_aloula_w1dqfwm/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="AlAoula.ma",Al Aoula Laâyoune (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_laayoune_pgagr52/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="AlMaghribia.ma",Al Maghribia (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_almaghribia_83tz85q/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="Arryadia.ma",Arryadia (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_arryadia_k2tgcj0/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="Assadissa.ma",Assadissa (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_assadissa_7b7u5n1/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="Athaqafia.ma",Athaqafia (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_arrabia_hthcj4p/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="ChadaTV.ma",Chada TV (720p)
 https://chadatv.vedge.infomaniak.com/livecast/chadatv/playlist.m3u8
 #EXTINF:-1 tvg-id="Medi1TVAfrique.ma",Medi 1 TV Afrique (1080p) [Not 24/7]
@@ -35,6 +29,5 @@ https://streaming2.medi1tv.com/live/smil:medi1ar.smil/playlist.m3u8
 https://streaming1.medi1tv.com/live/smil:medi1tv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Medi1TVMaghreb.ma",Medi 1 TV Maghreb (1080p) [Not 24/7]
 https://streaming2.medi1tv.com/live/smil:medi1tv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="TamazightTV.ma" http-referrer="https://snrtlive.ma/",Tamazight (360p)
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/tamazight_tv8_snrt/hls_snrt/index.m3u8
+#EXTINF:-1 tvg-id="TamazightTV.ma",Tamazight (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_tamazight_tccybxt/playlist_dvr.m3u8
