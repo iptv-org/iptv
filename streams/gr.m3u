@@ -279,3 +279,7 @@ https://vod.streams.ovh:3037/stream/play.m3u8
 http://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
 #EXTINF:-1 tvg-id="NationalGeographic.gr",National Geographic (1080p)
 http://62.210.211.188:2095/play/a00d
+#EXTINF:-1 tvg-id="ANT1.gr" http-referrer="http://watch.antennaplus.gr" http-user-agent="Chrome",ANT1 (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=http://watch.antennaplus.gr
+#EXTVLCOPT:http-user-agent=Chrome
+https://mcdn.antennaplus.gr/live/media0/Ant1/HLS/Ant1.m3u8
