@@ -47,10 +47,10 @@ https://hse24extra.akamaized.net/hls/live/2006596/hse24extra/playlist.m3u8
 https://hse24trend.akamaized.net/hls/live/2006597/hse24trend/playlist.m3u8
 #EXTINF:-1 tvg-id="HSE.de" tvg-logo="https://i.imgur.com/IecRNCk.png" group-title="Shop",HSE (1080p)
 https://hse24.akamaized.net/hls/live/2006663/hse24/playlist.m3u8
-#EXTINF:-1 tvg-id="HSN.us" tvg-logo="https://i.imgur.com/rnZN7rD.png" group-title="Shop",HSN
-https://qvc-amd-live.akamaized.net/hls/live/2034113/lshsn1us/master.m3u8
 #EXTINF:-1 tvg-id="HSN2.us" tvg-logo="https://i.imgur.com/R6oC2A3.png" group-title="Shop",HSN2
 https://qvc-amd-live.akamaized.net/hls/live/2034113/lshsn2us/master.m3u8
+#EXTINF:-1 tvg-id="HSN.us" tvg-logo="https://i.imgur.com/rnZN7rD.png" group-title="Shop",HSN (720p)
+https://a-cdn.klowdtv.com/live2/hsn_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="HSNWest.us" tvg-logo="https://m.media-amazon.com/images/I/419RyCp4+WL.png" group-title="Shop",HSN West
 https://qvc-amd-live.akamaized.net/hls/live/2034113/lshsn1uswest/master.m3u8
 #EXTINF:-1 tvg-id="HyundaiHomeShopping.kr" tvg-logo="https://i.imgur.com/NJpECmq.png" group-title="Shop",Hyundai Home Shopping (720p)
@@ -105,8 +105,6 @@ https://livestream.nsmall.com/IPHONE/nsmallMobile.m3u8
 https://shoppstream.nsmall.com/IPHONE/mobile.m3u8
 #EXTINF:-1 tvg-id="OnTV4U.us" tvg-logo="https://i.imgur.com/NcEygU5.png" group-title="Shop",ONTV4U (1080p)
 https://stirr.b-cdn.net/stirr/playlist.m3u8
-#EXTINF:-1 tvg-id="QVC.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/QVC_logo_2019.svg/512px-QVC_logo_2019.svg.png" group-title="Shop",QVC
-https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc1us/master.m3u8
 #EXTINF:-1 tvg-id="QVC2.us" tvg-logo="https://i.imgur.com/NxbDjfI.png" group-title="Shop",QVC 2
 https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc2us/master.m3u8
 #EXTINF:-1 tvg-id="QVC3.us" tvg-logo="https://i.imgur.com/edswdOO.png" group-title="Shop",QVC 3 (1080p)
@@ -117,6 +115,8 @@ https://qvcde-live.akamaized.net/hls/live/2097104/qvc/master.m3u8
 https://qrg.akamaized.net/hls/live/2017383/lsqvc1it/master.m3u8
 #EXTINF:-1 tvg-id="QVC.jp" tvg-logo="https://i.imgur.com/xWSzQ34.png" group-title="Shop",QVC Japan (720p)
 https://cdn-live1.qvc.jp/iPhone/1501/1501.m3u8
+#EXTINF:-1 tvg-id="QVC.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/QVC_logo_2019.svg/512px-QVC_logo_2019.svg.png" group-title="Shop",QVC Live (720p) [Not 24/7]
+https://a-cdn.klowdtv.com/live2/qvclive_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="QVCStyle.de" tvg-logo="https://i.imgur.com/DwdkHGj.png" group-title="Shop",QVC Style Germany (540p)
 https://qvcde-live.akamaized.net/hls/live/2097104/qby/master.m3u8
 #EXTINF:-1 tvg-id="QVC.uk" tvg-logo="https://i.imgur.com/6TWUVrh.png" group-title="Shop",QVC UK (540p)
@@ -167,7 +167,7 @@ https://livefta.malimarcdn.com/ftaedge00/uniquely.sdp/playlist.m3u8
 https://liveout.catenoid.net/live-05-wshopping/wshopping_1500k/playlist.m3u8
 #EXTINF:-1 tvg-id="Magnat.ru" tvg-logo="https://i.imgur.com/r485aZL.png" group-title="Shop",Магнат ТВ
 https://s1.tv-nano.com/Magnat_HD_5119705/video.m3u8
-#EXTINF:-1 tvg-id="TUSO.ua" tvg-logo="https://i.imgur.com/kb4B9wN.png" group-title="Shop" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Тюсо (720p)
+#EXTINF:-1 tvg-id="TUSO.ua" tvg-logo="https://i.imgur.com/kb4B9wN.png" group-title="Shop" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0",Тюсо (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 https://tuso.cdn-01.cosmonova.net.ua/hls/tuso_ua.m3u8
 #EXTINF:-1 tvg-id="Yuvelirochka.ru" tvg-logo="https://i.imgur.com/IcWtXCZ.png" group-title="Shop",Ювелирочка ТВ (576p)

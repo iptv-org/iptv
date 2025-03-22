@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2MMonde.ma" tvg-logo="https://i.imgur.com/MvpntzA.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",2M Monde (360p)
-#EXTVLCOPT:http-referrer=http://www.radio2m.ma/
+#EXTINF:-1 tvg-id="2MMonde.ma" tvg-logo="https://i.imgur.com/MvpntzA.png" group-title="General" http-referrer="https://2m.ma" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",2M Monde (360p)
+#EXTVLCOPT:http-referrer=https://2m.ma
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
 https://cdn-globecast.akamaized.net/live/eds/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8
 #EXTINF:-1 tvg-id="ABNAfrica.us" tvg-logo="https://yt3.googleusercontent.com/BhFbqwxiQN89UGI2cpoffye2UuKtblDDUwJHce0fzjpdrMkb0CtKf_42ZVTiLX2Ulwbjey4YZQ=s512-c-k-c0x00ffffff-no-rj" group-title="Religious",ABN Africa (480p)
@@ -13,8 +13,8 @@ https://shls-live-enc.edgenextcdn.net/out/v1/0044dd4b001a466c941ad77b04a574a2/in
 https://edge12.vedge.infomaniak.com/livecast/ik:africa24/manifest.m3u8
 #EXTINF:-1 tvg-id="Africa24English.fr" tvg-logo="https://i.imgur.com/YWIJdai.png" group-title="News",Africa 24 English (1080p)
 https://edge17.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8
-#EXTINF:-1 tvg-id="AfricanewsEnglish.fr" tvg-logo="https://i.imgur.com/5UxU4zc.png" group-title="News",Africanews
-https://rakuten-africanews-1-pt.samsung.wurl.tv/manifest/playlist.m3u8
+#EXTINF:-1 tvg-id="AfricanewsEnglish.fr" tvg-logo="https://i.imgur.com/5UxU4zc.png" group-title="News",AfricaNews English (720p)
+https://rakuten-africanews-1-dk.samsung.wurl.tv/manifest/playlist.m3u8
 #EXTINF:-1 tvg-id="AfricanewsFrench.fr" tvg-logo="https://i.imgur.com/5UxU4zc.png" group-title="News",AfricaNews Français (720p)
 https://rakuten-africanews-2-be.samsung.wurl.tv/manifest/playlist.m3u8
 #EXTINF:-1 tvg-id="AlArabiyaPrograms.ae" tvg-logo="https://i.imgur.com/Hoc3cfO.png" group-title="Undefined",Al Arabiya Programs (1080p)
@@ -25,8 +25,9 @@ https://alarabyta.cdn.octivid.com/alaraby2n/smil:alaraby2n.stream.smil/chunklist
 https://alarabyta.cdn.octivid.com/alaraby/smil:alaraby.stream.smil/chunklist.m3u8
 #EXTINF:-1 tvg-id="AlHayatTV.us" tvg-logo="https://i.imgur.com/M8ZuzeB.png" group-title="Religious",Al Hayat TV (720p)
 http://media.islamexplained.com:1935/live/_definst_mp4:ahme.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="AlJazeera.qa" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="News",Al Jazeera (1080p)
-https://live-hls-apps-aja-fa.getaj.net/AJA/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeera.qa" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="News" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Al Jazeera (480p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s23/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraDocumentary.qa" tvg-logo="https://i.imgur.com/5dNJlLo.png" group-title="News",Al Jazeera Documentary (1080p) [Geo-blocked]
 https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraMubasher24.qa" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aljazeera_Mubasher.svg/512px-Aljazeera_Mubasher.svg.png" group-title="News",Al Jazeera Mubasher 24 (1080p)
@@ -45,14 +46,14 @@ https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelafrica_all/play
 https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelarabia_all/playlist.m3u8
 #EXTINF:-1 tvg-id="BabAlHara.sa" tvg-logo="https://i.imgur.com/QtlnZbq.png" group-title="Series",Bab Al Hara (1080p)
 https://shls-live-enc.edgenextcdn.net/out/v1/948c54279b594944adde578c95f1d7d1/index.m3u8
-#EXTINF:-1 tvg-id="BBCArabic.uk" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="News",BBC Arabic (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
+#EXTINF:-1 tvg-id="BBCArabic.uk" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="News",BBC Arabic (540p)
+https://vs-hls-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8
 #EXTINF:-1 tvg-id="BblackAfrica.fr" tvg-logo="https://i.imgur.com/s1kLdBG.png" group-title="Music",Bblack! Africa (1080p)
 http://livevideo.vedge.infomaniak.com/livecast/ik:bblackafrica/manifest.m3u8
 #EXTINF:-1 tvg-id="BloombergTVEMEALiveEvent.uk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV EMEA Live Event (720p)
 https://bloomberg.com/media-manifest/streams/eu-event.m3u8
-#EXTINF:-1 tvg-id="CGTNArabic.cn" tvg-logo="https://i.imgur.com/AkFFrS7.png" group-title="News",CGTN Arabic (1080p) [Not 24/7]
-https://arabic-livews.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNArabic.cn" tvg-logo="https://i.imgur.com/AkFFrS7.png" group-title="News",CGTN Arabic (576p) [Not 24/7]
+https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8
 #EXTINF:-1 tvg-id="CNBCAfrica.za" tvg-logo="https://i.imgur.com/BnNYzWI.png" group-title="Business",CNBC Africa (480p)
 https://5be2f59e715dd.streamlock.net/CNBC/smil:CNBCSandton.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CNBCArabiya.ae" tvg-logo="https://i.imgur.com/opBXx1K.png" group-title="Business",CNBC Arabiya (1080p)
@@ -67,8 +68,8 @@ https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
 https://cdn3.wowza.com/1/ZVBYYXFLLzE0c3NC/Qk1FMURC/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ForYouTV.cm" tvg-logo="https://i.imgur.com/1oMboXL.png" group-title="News",For You TV (480p)
 https://stream.az-multimedia.com:3793/live/foryoutvlive.m3u8
-#EXTINF:-1 tvg-id="France24Arabic.fr" tvg-logo="https://i.imgur.com/o1Vz78r.png" group-title="News",France 24 Arabic (1080p)
-https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8
+#EXTINF:-1 tvg-id="France24Arabic.fr" tvg-logo="https://i.imgur.com/o1Vz78r.png" group-title="News",France 24 Arabic (360p)
+https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_500.m3u8
 #EXTINF:-1 tvg-id="GODTVAfrica.za" tvg-logo="https://i.imgur.com/hW4g2oe.png" group-title="Religious",GOD TV Africa (576p)
 https://webstreaming.viewmedia.tv/web_006/Stream/playlist.m3u8
 #EXTINF:-1 tvg-id="IBNTVAfrica.tz" tvg-logo="https://i.imgur.com/eKy2ocd.png" group-title="Religious",IBN TV Africa (720p)
@@ -111,8 +112,8 @@ https://vo-live.cdb.cdn.orange.com/Content/Channel/NationalGeographicHDChannel/H
 https://hls.pmchd.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-logo="https://i.imgur.com/kuYMKgG.png" group-title="Music",PMC Royale (720p) [Not 24/7]
 https://rohls.pmc.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="QwestTV.fr" tvg-logo="https://i.imgur.com/DjgNNHK.png" group-title="Music",QwestTV
-https://amg00447-qwesttv-qwestjazz-cineverse-ve12d.amagi.tv/playlist/amg00447-qwesttv-qwestjazz-cineverse/playlist.m3u8
+#EXTINF:-1 tvg-id="QwestTV.fr" tvg-logo="https://i.imgur.com/DjgNNHK.png" group-title="Music",Qwest TV (1080p)
+https://qwestjazz-rakuten.amagi.tv/hls/amagi_hls_data_rakutenAA-qwestjazz-rakuten/CDN/master.m3u8
 #EXTINF:-1 tvg-id="Ramez.sa" tvg-logo="https://i.imgur.com/aCJeVSr.png" group-title="Comedy;Entertainment",Ramez (1080p)
 https://shls-live-enc.edgenextcdn.net/out/v1/0ef83323c0374a1187c182645db2a45f/index.m3u8
 #EXTINF:-1 tvg-id="RefletTV.ci" tvg-logo="https://i.imgur.com/EauXR22.png" group-title="General",REFLET TV (1080p)
@@ -121,20 +122,24 @@ https://edge-a3.evrideo.tv/8f37c9f0-fe22-44f4-b64a-76ad11730daf_1000026630_HLS/m
 https://origin3.afxp.telemedia.co.za/PremiumFree/romanza/playlist.m3u8
 #EXTINF:-1 tvg-id="RTArabic.ru" tvg-logo="https://i.imgur.com/G8vGrn1.png" group-title="News",RT Arabic (1080p) [Geo-blocked]
 https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8
-#EXTINF:-1 tvg-id="RTPAfrica.pt" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/RTP_%C3%81frica_2016_%28Reduced_Version%29.svg/512px-RTP_%C3%81frica_2016_%28Reduced_Version%29.svg.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP África (504p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTPAfrica.pt" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/RTP_%C3%81frica_2016_%28Reduced_Version%29.svg/512px-RTP_%C3%81frica_2016_%28Reduced_Version%29.svg.png" group-title="General" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0",RTP África (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtpafrica.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SkyNewsArabia.ae" tvg-logo="https://i.imgur.com/SvjU4h6.png" group-title="News",Sky News Arabia (1080p) [Not 24/7]
-https://stream.skynewsarabia.com/ott/ott.m3u8
+#EXTINF:-1 tvg-id="SkyNewsArabia.ae" tvg-logo="https://i.imgur.com/SvjU4h6.png" group-title="News",Sky News Arabia (720p) [Not 24/7]
+https://stream.skynewsarabia.com/hls/sna.m3u8
 #EXTINF:-1 tvg-id="SkyNewsArabiaVertical.ae" tvg-logo="https://i.imgur.com/FjtzQQs.png" group-title="News",Sky News Arabia (Portrait) (1280p) [Not 24/7]
 https://stream.skynewsarabia.com/vertical/vertical.m3u8
 #EXTINF:-1 tvg-id="TBNAfrica.za" tvg-logo="https://i.imgur.com/6VjLFmR.png" group-title="Undefined",TBN Africa (1080p)
 https://tbn-jw.cdn.vustreams.com/live/tbn-africa/live.isml/master.m3u8
-#EXTINF:-1 tvg-id="TRTArabi.tr" tvg-logo="https://i.imgur.com/dEfI2M9.png" group-title="News",TRT Arabi (1080p)
-http://185.234.111.229:8000/play/a002
+#EXTINF:-1 tvg-id="TRTArabi.tr" tvg-logo="https://i.imgur.com/dEfI2M9.png" group-title="News",TRT Arabi (1080p) [Not 24/7]
+https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TVBRICSAfrica.za" tvg-logo="https://admango.cdn.mangomolo.com/analytics/uploads/188/666abcee75.jpeg" group-title="General",TV BRICS Africa (1080p)
 https://cdn.freevisiontv.co.za/sttv/smil:brics.stream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVIAfrica.pt" tvg-logo="https://i.ibb.co/vBbSHB4/Tvi-africa.png" group-title="General",TVI África (480p) [Not 24/7]
 https://video-auth4.iol.pt/live_tvi_africa/live_tvi_africa/edge_servers/tviafrica-480p/playlist.m3u8
 #EXTINF:-1 tvg-id="Wanasah.ae" tvg-logo="https://i.imgur.com/nLtiXNf.png" group-title="Music",Wanasah (1080p)
 https://shls-wanasah-prod-dub.shahid.net/out/v1/c84ef3128e564b74a6a796e8b6287de6/index.m3u8
+#EXTINF:-1 tvg-id="ZeeAflam.ae" tvg-logo="https://i.imgur.com/nUmsyGt.png" group-title="Movies",Zee Aflam (720p) [Geo-blocked]
+https://weyyak-live.akamaized.net/weyyak_zee_aflam/index.m3u8
+#EXTINF:-1 tvg-id="ZeeAlwan.ae" tvg-logo="https://i.imgur.com/fBL7YrC.png" group-title="Entertainment;Series",Zee Alwan (720p) [Geo-blocked]
+https://weyyak-live.akamaized.net/weyyak_zee_alwan/index.m3u8

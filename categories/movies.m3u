@@ -25,8 +25,6 @@ https://live.relentlessinnovations.net:1936/afghannobel/afghannobel/playlist.m3u
 https://shls-live-enc.edgenextcdn.net/out/v1/0044dd4b001a466c941ad77b04a574a2/index.m3u8
 #EXTINF:-1 tvg-id="AfriwoodBlockbuster.za" tvg-logo="https://i.imgur.com/aESdqiB.png" group-title="Movies",Afriwood Blockbuster (720p)
 https://origin3.afxp.telemedia.co.za/PremiumFree/afriwoodbb/playlist.m3u8
-#EXTINF:-1 tvg-id="AleKinoPlus.pl" tvg-logo="https://i.imgur.com/iZMsGnC.png" group-title="Movies",Ale Kino+ (1080p)
-http://178.219.128.68:64889/ALEKINOHD
 #EXTINF:-1 tvg-id="AlfaDramas.gr" tvg-logo="https://i.imgur.com/wnVEvRM.png" group-title="Movies",Alfa Dramas (226p) [Not 24/7]
 https://www.hellasnet.tv/rest2.live.hn/w2r.alf/playlist.m3u8
 #EXTINF:-1 tvg-id="AlternaTV.ar" tvg-logo="https://alternatv.ar/alternatv.png" group-title="Culture;Documentary;Entertainment;General;Movies;Music",AlternaTV (720p)
@@ -37,14 +35,13 @@ http://109.233.89.166/AMC_HD/index.m3u8
 http://vegafibratv.com:8085/AMC/index.m3u8
 #EXTINF:-1 tvg-id="AMCEast.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/512px-AMC_logo_2019.svg.png" group-title="Movies",AMC East (1080p)
 http://fl5.moveonjoy.com/AMC_NETWORK/index.m3u8
-#EXTINF:-1 tvg-id="AmediaPremium.ru" tvg-logo="https://i.imgur.com/UUjehw9.png" group-title="Movies;Series",Amedia Premium
-http://stream01.vnet.am/AmediaPremium/mono.m3u8
+#EXTINF:-1 tvg-id="AmediaPremium.ru" tvg-logo="https://i.imgur.com/UUjehw9.png" group-title="Movies;Series" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Amedia Premium (480p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s64/index.m3u8
 #EXTINF:-1 tvg-id="AmericanHorrors.us" tvg-logo="https://image.roku.com/developer_channels/prod/16f5571a82819e8992a748c70b256cbe63105f4b546b73d129668dc2cb701d91.png" group-title="Movies",American Horrors (480p)
 http://107.167.7.162:8081/playlist/amhor/playlist.m3u8
 #EXTINF:-1 tvg-id="AtresplayerMulticine.es" tvg-logo="https://i.imgur.com/FizKu1X.png" group-title="Movies",Atresplayer Multicine (1080p)
 https://fast-channels.atresmedia.com/648ef18c1756b0e41daf83cc/648ef18c1756b0e41daf83cc.m3u8
-#EXTINF:-1 tvg-id="ATVKinoman.am" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/9c/Atvnew.png/revision/latest/scale-to-width-down/512" group-title="Movies",ATV Kinoman HD
-http://stream02.vnet.am/Kinoman/mono.m3u8
 #EXTINF:-1 tvg-id="AuroraMediaFilms.gt" tvg-logo="https://i.imgur.com/DVC5w6H.png" group-title="Movies",Aurora Media Films (720p)
 https://cdn.streamhispanatv.net:3417/live/auroramflive.m3u8
 #EXTINF:-1 tvg-id="AVAFamily.ir" tvg-logo="https://i.imgur.com/QwBGLzK.png" group-title="Movies",AVA Family (720p) [Not 24/7]
@@ -65,8 +62,8 @@ https://st.biztv.uz/hls/c_hi/index.m3u8
 https://minerva-bizzarromovies-1-it.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="BlackCinema.us" tvg-logo="https://i.imgur.com/FKBp987.png" group-title="Movies",Black Cinema
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/58af4c093a41ca9d4ecabe96/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c271cb5-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=93605d96-6c9d-457d-a2b4-d26d07474db9
-#EXTINF:-1 tvg-id="BloodyDisgusting.us" tvg-logo="https://i.imgur.com/cKEwuQc.png" group-title="Movies",Bloody Disgusting TV
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01201-cinedigmenterta-bloodydisgus-cineverse/playlist.m3u8
+#EXTINF:-1 tvg-id="BloodyDisgusting.us" tvg-logo="https://i.imgur.com/cKEwuQc.png" group-title="Movies",Bloody Disgusting (1080p)
+https://bloodydisgusting-tcl.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="BollywoodClassic.ro" tvg-logo="https://i.imgur.com/ugPo6ca.png" group-title="Classic;Movies",Bollywood Classic (1080p)
 https://shls-live-ak.akamaized.net/out/v1/485100a2150e4f69a338a5c99ca5648e/index.m3u8
 #EXTINF:-1 tvg-id="BollywoodHD.ro" tvg-logo="https://i.imgur.com/scDKOLS.png" group-title="Movies",Bollywood HD (1080p)
@@ -77,8 +74,6 @@ http://185.189.225.150:85/BOM/index.m3u8
 https://bravoohls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="CanalCineDios.co" tvg-logo="https://i.imgur.com/S4xqZgV.png" group-title="Movies",Canal Cine Dios (480p)
 https://canal.mediaserver.com.co/live/cinedios.m3u8
-#EXTINF:-1 tvg-id="CanalPlusFilm.pl" tvg-logo="https://i.imgur.com/2yMtcJw.png" group-title="Movies",Canal+ Film (1080p)
-http://178.219.128.68:64889/CANAFILMHD
 #EXTINF:-1 tvg-id="CBSEuropa.pl" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d4/CBS_Europa.png" group-title="Movies",CBS Europa (1080p)
 http://195.189.60.33:9011/play/a005
 #EXTINF:-1 tvg-id="CCTV6.cn" tvg-logo="https://i.imgur.com/rFiaef7.png" group-title="Movies",CCTV6 (1080p)
@@ -88,7 +83,7 @@ http://117.161.133.51:81/gitv_live/G_FENGYUNJC-CQ/G_FENGYUNJC-CQ.m3u8?p=GITV
 #EXTINF:-1 tvg-id="Charge.us" tvg-logo="https://i.imgur.com/1rxmu2u.png" group-title="Movies",Charge! (720p)
 https://content.uplynk.com/channel/37eb732888614810b512fdd82604244e.m3u8
 #EXTINF:-1 tvg-id="CHCAction.cn" tvg-logo="https://i.imgur.com/AuiVcyh.png" group-title="Movies",CHC Action
-http://180.213.174.225:9901/tsfile/live/1027_1.m3u8?key=txiptv&playlive=1&authid=0
+http://180.213.174.225:9901/tsfile/live/1027_1.m3u8?authid=0&key=txiptv&playlive=1
 #EXTINF:-1 tvg-id="Cine5.tr" tvg-logo="https://i.imgur.com/AmcOAIY.png" group-title="Movies",Cine5 (720p)
 https://cdn-cine5tv.yayin.com.tr/cine5tv/cine5tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Cine34.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Cine34_logo.svg/512px-Cine34_logo.svg.png" group-title="Movies",Cine 34 [Geo-blocked]
@@ -117,10 +112,10 @@ https://origin3.afxp.telemedia.co.za/PremiumFree/cinemahausa/playlist.m3u8
 https://cinemaone-abscbn-ono.amagi.tv/index.m3u8
 #EXTINF:-1 tvg-id="CinemaSegreto.it" tvg-logo="https://i.imgur.com/CD0sMAa.png" group-title="Movies",Cinema Segreto
 https://minerva-cinemasegreto-1-it.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="CinemaWorld.my" tvg-logo="https://i.imgur.com/D2qNVZ7.png" group-title="Movies",CinemaWorld (576p)
-http://210.210.155.37/dr9445/h/h04/index.m3u8
-#EXTINF:-1 tvg-id="Cinevault80s.us" tvg-logo="https://i.imgur.com/xaCyyDd.png" group-title="Movies",Cinevault 80s (720p)
-https://apollo.production-public.tubi.io/live/ac-cinevault-80s.m3u8
+#EXTINF:-1 tvg-id="CinemaWorld.my" tvg-logo="https://i.imgur.com/D2qNVZ7.png" group-title="Movies",CinemaWorld (576p) [Geo-blocked]
+http://210.210.155.35/dr9445/h/h04/index.m3u8
+#EXTINF:-1 tvg-id="Cinevault80s.us" tvg-logo="https://i.imgur.com/xaCyyDd.png" group-title="Movies",Cinevault 80s (540p) [Geo-blocked]
+https://gsn-cinevault-80s-2-us.roku.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="ClassicCinema.us" tvg-logo="https://i.imgur.com/FJoPnTb.png" group-title="Movies",Classic Cinema (240p) [Not 24/7]
 https://bozztv.com/gusa/gusa-classiccinema/index.m3u8
 #EXTINF:-1 tvg-id="ClassicMoviesChannel.us" tvg-logo="https://i.imgur.com/pQJxov2.png" group-title="Movies",Classic Movies Channel
@@ -139,7 +134,7 @@ http://fl2.moveonjoy.com/CRAVE_2/index.m3u8
 http://fl3.moveonjoy.com/CRAVE_3/index.m3u8
 #EXTINF:-1 tvg-id="Crave4.ca" tvg-logo="https://i.imgur.com/MyH3Q2p.png" group-title="Movies",Crave 4
 http://fl2.moveonjoy.com/CRAVE_4/index.m3u8
-#EXTINF:-1 tvg-id="CSFilm.cz" tvg-logo="https://i.imgur.com/BAAuBB2.png" group-title="Movies",CS Film (720p)
+#EXTINF:-1 tvg-id="CSFilm.cz" tvg-logo="https://i.imgur.com/BAAuBB2.png" group-title="Movies" http-referrer="https://media.joj.sk/",CS Film (720p)
 #EXTVLCOPT:http-referrer=https://media.joj.sk/
 https://live.cdn.joj.sk/live/andromeda/cs_film-720.m3u8
 #EXTINF:-1 tvg-id="DePeliculaLatinAmerica.mx" tvg-logo="https://i.imgur.com/aksM8pa.png" group-title="Movies",De Película (576p)
@@ -180,8 +175,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/58
 https://amg01768-flou-flou-canelatv-yri41.amagi.tv/playlist/amg01768-flou-flou-canelatv/playlist.m3u8
 #EXTINF:-1 tvg-id="FreedomMovieSphere.ug" tvg-logo="https://i.imgur.com/jEyrlPp.jpg" group-title="Movies",Freedom Movie Sphere (720p)
 https://panel.freedomflixtv.org:3311/stream/play.m3u8
-#EXTINF:-1 tvg-id="FXMovieChannel.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/FXM_Logo.svg/512px-FXM_Logo.svg.png" group-title="Movies",FX Movie Channel (720p)
-https://tvpass.org/live/FXMovieChannel/hd
+#EXTINF:-1 tvg-id="FXMovieChannel.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/FXM_Logo.svg/512px-FXM_Logo.svg.png" group-title="Movies",FX Movie Channel (360p)
+https://tvpass.org/live/FXMovieChannel/sd
 #EXTINF:-1 tvg-id="FXMEast.us" tvg-logo="https://comteco.com.bo/img/upload/canales/svCJXa.png" group-title="Movies",FXM East
 http://fl2.moveonjoy.com/FX_MOVIE/index.m3u8
 #EXTINF:-1 tvg-id="GhostTV.br" tvg-logo="https://i.imgur.com/ZVO8GVI.png" group-title="Movies",Ghost TV (712p) [Not 24/7]
@@ -190,18 +185,26 @@ https://stmv.video.expressolider.com.br/ghostv/ghostv/playlist.m3u8
 https://linear-411.frequency.stream/dist/vix/411/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="GrandCinema.tr" tvg-logo="https://www.lyngsat.com/logo/tv/gg/grand-cinema.png" group-title="Movies",Grand Cinema
 https://gcinemahls.wns.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="GREATmovies.uk" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3709.png" group-title="Movies",GREAT! movies (1080p)
+https://amg01753-narrativeuk-amg01753c3-lg-gb-1833.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatmovies-lggb/playlist.m3u8
+#EXTINF:-1 tvg-id="GREATMystery.uk" tvg-logo="https://image-cdn.suggestedtv.com/api/client/v1/image/ac0cfdfd-868c-4894-8dd9-dbe9f1a18a74?tenant=GREAT&mode=fit&width=300&height=73&format=png" group-title="Movies",GREAT! Mystery (1080p)
+https://linear-861.frequency.stream/dist/lg-uk/861/hls/master/playlist.m3u8
+#EXTINF:-1 tvg-id="GREATromance.uk" tvg-logo="https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb3643.png" group-title="Movies",GREAT! romance (1080p)
+https://amg01753-narrativeuk-amg01753c2-lg-gb-1832.playouts.now.amagi.tv/playlist/amg01753-narrativeuk-greatchristmas-lggb/playlist.m3u8
 #EXTINF:-1 tvg-id="GroovyTV.gr" tvg-logo="https://i.imgur.com/ZYNQuf1.png" group-title="Movies",Groovy TV (360p)
 http://web.onair-radio.eu:1935/groovytv/groovytv/playlist.m3u8
 #EXTINF:-1 tvg-id="HallmarkMoviesMore.us" tvg-logo="https://i.imgur.com/JMn9sxk.png" group-title="Movies",Hallmark Movies & More
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/628e685ba3811100070551a8/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c291886-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=58dbb587-5d0d-412d-ae10-107ee9caac5a
-#EXTINF:-1 tvg-id="HallmarkMoviesMysteriesEast.us" tvg-logo="https://i.imgur.com/GPRGA9C.png" group-title="Movies",Hallmark Movies Mysteries East
-http://fl2.moveonjoy.com/HALLMARK_MOVIES_MYSTERIES/index.m3u8
+#EXTINF:-1 tvg-id="HallmarkMoviesMysteriesEast.us" tvg-logo="https://i.imgur.com/GPRGA9C.png" group-title="Movies",Hallmark Movies & Mysteries East (360p)
+https://tvpass.org/live/HallmarkMoviesMysteriesEast/sd
 #EXTINF:-1 tvg-id="HBC.eg" tvg-logo="https://i.imgur.com/fPphLl1.png" group-title="Movies",HBC
 https://ffs3.gulfsat.com/hbc/index.m3u8
+#EXTINF:-1 tvg-id="Hero.fi" tvg-logo="https://i.imgur.com/4t5JQLY.png" group-title="Movies",Hero (720p)
+https://live-fi.tvkaista.net/hero/live.m3u8?hd=true
 #EXTINF:-1 tvg-id="Hollywood.ru" tvg-logo="https://i.imgur.com/1j7cT2I.png" group-title="Movies",Hollywood
 http://stream01.vnet.am/ParamountChannel/mono.m3u8
-#EXTINF:-1 tvg-id="IFCEast.us" tvg-logo="https://i.imgur.com/bQdkyF9.png" group-title="Movies",IFC East (720p)
-https://tvpass.org/live/IFCEast/hd
+#EXTINF:-1 tvg-id="IFCEast.us" tvg-logo="https://i.imgur.com/bQdkyF9.png" group-title="Movies",IFC East (360p)
+https://tvpass.org/live/IFCEast/sd
 #EXTINF:-1 tvg-id="iFilm2.ir" tvg-logo="https://upload.wikimedia.org/wikipedia/fa/c/ce/Ifilm2logo.png" group-title="Movies",iFilm 2
 https://live.presstv.ir/hls/ifilm2.m3u8
 #EXTINF:-1 tvg-id="iFilmArabic.ir" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b9/IFILM.png" group-title="Movies",iFilm Arabic
@@ -212,7 +215,7 @@ https://live.presstv.ir/hls/ifilmen.m3u8
 https://live.presstv.ir/hls/ifilmfa.m3u8
 #EXTINF:-1 tvg-id="IndywoodTV.in" tvg-logo="https://i.ibb.co/jT3NCPp/logo-tv.png" group-title="Movies;News",Indywood TV (720p)
 https://43wrzjnpqoxe-hls-live.wmncdn.net/indywood/indywoodtv/index.m3u8
-#EXTINF:-1 tvg-id="JOJCinema.sk" tvg-logo="https://i.imgur.com/5Auduch.png" group-title="Movies",JOJ Cinema (720p)
+#EXTINF:-1 tvg-id="JOJCinema.sk" tvg-logo="https://i.imgur.com/5Auduch.png" group-title="Movies" http-referrer="https://media.joj.sk/",JOJ Cinema (720p)
 #EXTVLCOPT:http-referrer=https://media.joj.sk/
 https://live.cdn.joj.sk/live/andromeda/cinema-720.m3u8
 #EXTINF:-1 tvg-id="KairaliWe.in" tvg-logo="https://i.imgur.com/zXpROBj.png" group-title="Movies",Kairali We (396p)
@@ -235,14 +238,14 @@ https://178.253.194.105/klasiktv/playlist.m3u8
 http://tv.cootel.com.kh:8077/streams/d/Komsan/playlist.m3u8
 #EXTINF:-1 tvg-id="KuriakosCine.pt" tvg-logo="https://i.imgur.com/CZViCwB.jpg" group-title="Movies",Kuriakos Cine (1080p)
 https://w2.manasat.com/kcine/smil:kcine.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="LifetimeMoviesEast.us" tvg-logo="https://i.imgur.com/BWmqYTO.png" group-title="Movies",Lifetime Movies East
-http://fl2.moveonjoy.com/LIFETIME_MOVIE_NETWORK/index.m3u8
+#EXTINF:-1 tvg-id="LifetimeMoviesEast.us" tvg-logo="https://i.imgur.com/BWmqYTO.png" group-title="Movies",Lifetime Movies East (360p)
+https://tvpass.org/live/LifetimeMoviesEast/sd
 #EXTINF:-1 tvg-id="MadeInHollywood.us" tvg-logo="https://i.imgur.com/p16HNIM.png" group-title="Movies",Made in Hollywood
 https://connection3-ent-nz.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="MahaMovie.in" tvg-logo="https://i.imgur.com/hpShFDL.png" group-title="Movies",Maha Movie (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0q7/index.m3u8
-#EXTINF:-1 tvg-id="MaverickBlackCinema.us" tvg-logo="https://i.imgur.com/OEamqFg.png" group-title="Movies",Maverick Black Cinema (1080p)
-https://maverick-maverick-black-cinema-3-us.roku.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MaverickBlackCinema.us" tvg-logo="https://i.imgur.com/OEamqFg.png" group-title="Movies",Maverick Black Cinema (720p)
+https://apollo.production-public.tubi.io/live/ac-maverick-black-cinema.m3u8
 #EXTINF:-1 tvg-id="MAX4.hu" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Max4_logo.png/375px-Max4_logo.png" group-title="Movies",MAX4 (576p)
 http://146.59.85.40:89/max4/index.m3u8
 #EXTINF:-1 tvg-id="MBC2.ae" tvg-logo="https://i.imgur.com/n9mSHuP.png" group-title="Movies",MBC 2 (480p)
@@ -269,17 +272,17 @@ https://shls-live-enc.edgenextcdn.net/out/v1/46079e838e65490c8299f902a7731168/in
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5efb60a9e426140007c78e4b/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a02e4-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=b6350812-05fd-4d36-ad04-51b5df6a9ed0
 #EXTINF:-1 tvg-id="MoviesThriller.sa" tvg-logo="https://i.imgur.com/JWihdcl.png" group-title="Movies",Movies Thriller (1080p)
 https://shls-live-enc.edgenextcdn.net/out/v1/f6d718e841f8442f8374de47f18c93a7/index.m3u8
-#EXTINF:-1 tvg-id="MovieSphere.us" tvg-logo="https://i.imgur.com/h1ejU90.png" group-title="Movies",MovieSphere by Lionsgate
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/645e7828e1979c00087b75b4/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a02e5-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=6ee42393-c7a0-4d1d-82c7-0121c35ec03e
-#EXTINF:-1 tvg-id="MovifyKino.lv" tvg-logo="https://kabeloperatori.neplpadome.lv/lv/assets/images/Programmu%20logo/Picture1111123.png" group-title="Classic;Movies",Movify Kino (576p)
+#EXTINF:-1 tvg-id="MovieSphere.us" tvg-logo="https://i.imgur.com/h1ejU90.png" group-title="Movies",MovieSphere (720p)
+https://livetv-fa.tubi.video/moviesphere/playlist.m3u8
+#EXTINF:-1 tvg-id="MovifyKino.lv" tvg-logo="https://kabeloperatori.neplpadome.lv/lv/assets/images/Programmu%20logo/Picture1111123.png" group-title="Classic;Movies" http-referrer="https://void.greenhosting.ru/",Movify Kino (576p)
 #EXTVLCOPT:http-referrer=https://void.greenhosting.ru/
 https://void.greenhosting.ru/MovifyKino_Mpeg4/index.m3u8
 #EXTINF:-1 tvg-id="MyCinema.id" tvg-logo="https://i.imgur.com/BTmcTQO.png" group-title="Movies",My Cinema (1080p)
 http://210.210.155.37/uq2663/h/h192/index.m3u8
 #EXTINF:-1 tvg-id="MyCinemaAsia.id" tvg-logo="https://i.imgur.com/4XVZLW0.png" group-title="Movies",My Cinema Asia (1080p) [Geo-blocked]
 http://210.210.155.37/uq2663/h/h193/index.m3u8
-#EXTINF:-1 tvg-id="MyTimeMovieNetworkEast.us" tvg-logo="https://i.imgur.com/HYgxPVQ.png" group-title="Movies",MyTime Movie Network
-https://mytime-tcl.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="MyTimeMovieNetworkEast.us" tvg-logo="https://i.imgur.com/HYgxPVQ.png" group-title="Movies",MyTime Movie Network (720p) [Geo-blocked]
+https://livetv-fa.tubi.video/my-time/playlist.m3u8
 #EXTINF:-1 tvg-id="MyTimeMovieNetwork.br" tvg-logo="https://i.imgur.com/aiGQtzI.png" group-title="Movies",MyTime Movie Network Brazil (720p)
 https://appletree-mytime-samsungbrazil.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="MyTimeMovieNetwork.mx" tvg-logo="https://i.imgur.com/pw4NZK1.png" group-title="Movies",MyTime Movie Network Mexico (720p)
@@ -334,14 +337,14 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/561d7d484dc7c8770484914a/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2ac632-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=9bd2e9c0-393b-484b-b5bc-b1869a276513
 #EXTINF:-1 tvg-id="PlutoTVCine.fr" tvg-logo="https://i.imgur.com/xnAUYDp.png" group-title="Movies",Pluto TV Ciné
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f8ed0f17564a300082b676a/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e052a64-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=aaa3f7a8-585d-4916-bff9-f90769b38333
-#EXTINF:-1 tvg-id="PlutoTVCineAccion.es" tvg-logo="https://i.imgur.com/PXhCzXn.png" group-title="Movies",Pluto TV Cine Acción (720p)
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5d8d164d92e97a5e107638d2/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5d8d164d92e97a5e107638d2&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=904&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVCineAccion.es" tvg-logo="https://i.imgur.com/PXhCzXn.png" group-title="Movies",Pluto TV Cine Acción (240p)
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5d8d164d92e97a5e107638d2/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
 #EXTINF:-1 tvg-id="PlutoTVCineClasico.es" tvg-logo="https://i.imgur.com/hCA5BRr.png" group-title="Movies",Pluto TV Cine Clásico (720p)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61373bb45168fe000773eecd/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&is_lat=1&platform=web&rdid=channel&tags=ROKU_CONTENT_TAGS
 #EXTINF:-1 tvg-id="PlutoTVCineDrama.br" tvg-logo="https://i.imgur.com/lf5oME7.png" group-title="Movies",Pluto TV Cine Drama (720p)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f1210d14ae1f80007bafb1d/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
-#EXTINF:-1 tvg-id="PlutoTVCineEstelar.es" tvg-logo="https://i.imgur.com/v3BO4nW.png" group-title="Movies",Pluto TV Cine Estelar (720p)
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5dcde437229eff00091b6c30/master.m3u8?advertisingId=&appName=web&appVersion=5.14.0-0f5ca04c21649b8c8aad4e56266a23b96d73b83a&app_name=web&clientDeviceType=0&clientID=6fbead95-26b1-415d-998f-1bdef62d10be&clientModelNumber=na&deviceDNT=false&deviceId=6fbead95-26b1-415d-998f-1bdef62d10be&deviceLat=19.4358&deviceLon=-99.1441&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=88.0.4324.150&marketingRegion=VE&serverSideAds=false&sessionID=b8e5a857-714a-11eb-b532-0242ac110002&sid=b8e5a857-714a-11eb-b532-0242ac110002&userId=
+#EXTINF:-1 tvg-id="PlutoTVCineEstelar.es" tvg-logo="https://i.imgur.com/v3BO4nW.png" group-title="Movies",Pluto TV Cine Estelar (684p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5cf968040ab7d8f181e6a68b/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5cf968040ab7d8f181e6a68b&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=901&terminate=false&userId=
 #EXTINF:-1 tvg-id="PlutoTVCineFamilia.br" tvg-logo="https://i.imgur.com/r9UhBfV.png" group-title="Movies",Pluto TV Cine Família (720p) [Not 24/7]
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f171f032cd22e0007f17f3d/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
 #EXTINF:-1 tvg-id="PlutoTVCineRetro.fr" tvg-logo="https://i.imgur.com/y27HHe1.png" group-title="Movies",Pluto TV Ciné Rétro
@@ -384,8 +387,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5c5c3b948002db3c3e0b262e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84aec791-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=5500aa67-c527-4db6-868b-d37341c34286
 #EXTINF:-1 tvg-id="PlutoTVMovies.uk" tvg-logo="https://i.imgur.com/i51xfAn.png" group-title="Movies",Pluto TV Movies (England) (684p)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5ad8d3a31b95267e225e4e09/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5ad8d3a31b95267e225e4e09&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=50&terminate=false&userId=
-#EXTINF:-1 tvg-id="PlutoTVNovelasDrama.us" tvg-logo="https://i.imgur.com/boOwYKj.png" group-title="Movies",Pluto TV Novelas Drama (720p)
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e84dbf4a838b60007ffbba1/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e84dbf4a838b60007ffbba1&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=942&terminate=false&userId=
+#EXTINF:-1 tvg-id="PlutoTVNovelasDrama.us" tvg-logo="https://i.imgur.com/boOwYKj.png" group-title="Movies",Pluto TV Novelas Drama (720p) [Not 24/7]
+https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5e84dbf4a838b60007ffbba1/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
 #EXTINF:-1 tvg-id="PlutoTVNovelasThriller.us" tvg-logo="https://i.imgur.com/WJnHkEm.png" group-title="Movies",Pluto TV Novelas Thriller (720p)
 https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5e84dc59026b9b000766f9a2/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5e84dc59026b9b000766f9a2&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=943&terminate=false&userId=
 #EXTINF:-1 tvg-id="PlutoTVReaction.us" tvg-logo="https://i.imgur.com/H9k3OXN.png" group-title="Movies",Pluto TV Reaction
@@ -396,8 +399,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5d
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60812fc8539963000707d1e1/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e05c6a4-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=d84357a9-e5ec-4c91-a037-9a426fa2cdff
 #EXTINF:-1 tvg-id="PlutoTVRomance.us" tvg-logo="https://i.imgur.com/GJBxfyf.png" group-title="Movies",Pluto TV Romance
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5a66795ef91fef2c7031c599/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b1459-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=195653a1-6a75-4cb6-b94d-0fe4a7594dba
-#EXTINF:-1 tvg-id="PlutoTVRomance.uk" tvg-logo="https://i.imgur.com/0jHyTvu.png" group-title="Movies",Pluto TV Romance (720p)
-https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/60812fc8539963000707d1e1/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c8bf321-e98a-11eb-a932-2f3c780ff9ff&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=7ebb5004-1cd6-44bb-990a-082fdcdcba6d
+#EXTINF:-1 tvg-id="PlutoTVRomance.uk" tvg-logo="https://i.imgur.com/0jHyTvu.png" group-title="Movies",Pluto TV Romance (684p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5a66795ef91fef2c7031c599/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5a66795ef91fef2c7031c599&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=70&terminate=false&userId=
 #EXTINF:-1 tvg-id="PlutoTVSciFi.de" tvg-logo="https://i.imgur.com/Zkl2Tin.png" group-title="Movies",Pluto TV Sci-Fi
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60ed498c4248a400077c0b9d/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=84aeeea0-4b92-11ef-aece-533610f1ea34&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=91571e99-b22e-454e-9622-6abd1ff79fd1
 #EXTINF:-1 tvg-id="PlutoTVSciFi.fr" tvg-logo="https://i.imgur.com/2nKPaeK.png" group-title="Movies",Pluto TV Sci-Fi
@@ -408,8 +411,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5b
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ba3fb9c4b078e0f37ad34e8/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b3b64-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=a26dc013-1780-409c-9a56-09ae4538fe40
 #EXTINF:-1 tvg-id="PlutoTVStaffPicks.us" tvg-logo="https://i.imgur.com/JzwO8IO.png" group-title="Movies",Pluto TV Staff Picks
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f4d863b98b41000076cd061/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b3b65-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=c2fde2b7-d78e-4906-abf2-3c433f73ec5b
-#EXTINF:-1 tvg-id="PlutoTVTelemundoTelenovelas.us" tvg-logo="https://i.imgur.com/l5BDImW.png" group-title="Movies",Pluto TV Telemundo Telenovelas (720p)
-https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5cf96cc422df39f1a338d165/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVTelemundoTelenovelas.us" tvg-logo="https://i.imgur.com/l5BDImW.png" group-title="Movies",Pluto TV Telemundo Telenovelas (480p)
+https://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5cf96cc422df39f1a338d165/master.m3u8?advertisingId=&appName=web&appStoreUrl=&appVersion=DNT&app_name=&architecture=&buildVersion=&deviceDNT=0&deviceId=5cf96cc422df39f1a338d165&deviceLat=&deviceLon=&deviceMake=web&deviceModel=web&deviceType=web&deviceVersion=DNT&includeExtendedEvents=false&marketingRegion=US&serverSideAds=false&sid=940&terminate=false&userId=
 #EXTINF:-1 tvg-id="PlutoTVTerror.us" tvg-logo="https://i.imgur.com/eWtoHDM.png" group-title="Movies",Pluto TV Terror
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5c6dc88fcd232425a6e0f06e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2b3b67-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=bbd5d7ff-a6cc-4ad9-bb5f-d0f36c75fc29
 #EXTINF:-1 tvg-id="PlutoTVThrillers.fr" tvg-logo="https://i.imgur.com/c7idSqx.png" group-title="Movies",Pluto TV Thrillers
@@ -424,8 +427,8 @@ http://109.233.89.166/Polsat_Film_HD/index.m3u8
 https://sirius.greenhosting.ru/Pro100tvRu/video.m3u8
 #EXTINF:-1 tvg-id="QTV3.cn" tvg-logo="https://www.tvchinese.net/uploads/tv/qdtv3.jpg" group-title="Movies",QTV-3
 http://video10.qtv.com.cn/drm/qtv3at/manifest.m3u8
-#EXTINF:-1 tvg-id="RaiMovie.it" tvg-logo="https://i.imgur.com/0FjxXU9.png" group-title="Movies",Rai Movie (1080p)
-http://188.60.179.180:8000/play/xxRaiMOviexx
+#EXTINF:-1 tvg-id="RaiMovie.it" tvg-logo="https://i.imgur.com/0FjxXU9.png" group-title="Movies",Rai Movie (576p) [Geo-blocked]
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002
 #EXTINF:-1 tvg-id="RakutenTVActionMovies.es" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Movies",Rakuten Action Movies
 https://rakuten-actionmovies-2-es.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RakutenTVActionMovies.it" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Movies",Rakuten Action Movies
@@ -440,10 +443,10 @@ https://rakuten-tvshows-2-es.samsung.wurl.tv/playlist.m3u8
 https://rakuten-tvshows-6-it.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RakutenTVFamilyMovies.es" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Family;Movies",Rakuten Family
 https://rakuten-family-2-es.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.fr" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Family;Movies",Rakuten Family
-https://rakuten-family-16-be.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RakutenTVFamilyMovies.it" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Family;Movies",Rakuten Family
 https://rakuten-family-6-it.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.fr" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Family;Movies",Rakuten Family (720p)
+https://rakuten-family-7-fr.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RakutenTVFamilyMovies.fi" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Family;Movies",Rakuten Family (Finland) (720p)
 https://rakuten-family-12-fi.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RakutenTVSpotlight.es" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Movies",Rakuten Spotlight
@@ -484,13 +487,13 @@ https://stv-live.akamaized.net/hls/live/2031011/lingeoSTVATwebPri/master.m3u8
 https://slonehls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="SL2.ir" tvg-logo="https://i.imgur.com/BVuUx5R.jpg" group-title="Movies",SL 2 (720p)
 https://sltwohls.wns.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="SofyTV.ch" tvg-logo="https://i.imgur.com/Srxa6cR.png" group-title="Movies",Sofy TV
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg00535-largofilmsltdli-sofytvnl-samsungnl/playlist.m3u8
-#EXTINF:-1 tvg-id="SonyCanalNovelas.us" tvg-logo="https://i.imgur.com/yijitpa.png" group-title="Movies",Sony Canal Novelas
-https://a89829b8dca2471ab52ea9a57bc28a35.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/CanelaTV_SonyCanalNovelas/playlist.m3u8
+#EXTINF:-1 tvg-id="SofyTV.ch" tvg-logo="https://i.imgur.com/Srxa6cR.png" group-title="Movies",Sofy TV (720p)
+https://sofy-ger-samsung.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="SonyCanalNovelas.us" tvg-logo="https://i.imgur.com/yijitpa.png" group-title="Movies",Sony Canal Novelas (1080p)
+https://spt-novelas-2-us.roku.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="StarChannelCentralAmerica.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/512px-Star_Channel_2020.svg.png" group-title="Movies;Series",Star Channel Central America
 https://streamer1.nexgen.bz/STAR/index.m3u8
-#EXTINF:-1 tvg-id="StarGold.in" tvg-logo="https://i.imgur.com/xC460sj.png" group-title="Movies" user-agent="stream",Star Gold HD (1080p)
+#EXTINF:-1 tvg-id="StarGold.in" tvg-logo="https://i.imgur.com/xC460sj.png" group-title="Movies" http-user-agent="stream",Star Gold HD (1080p)
 #EXTVLCOPT:http-user-agent=stream
 http://103.81.104.118/hls/stream19.m3u8
 #EXTINF:-1 tvg-id="StarzEncoreActionEast.us" tvg-logo="https://i.imgur.com/wIf4X0i.png" group-title="Movies",Starz Encore Action East
@@ -505,8 +508,8 @@ https://srv4.zcast.com.br/telavivatv/telavivatv/playlist.m3u8
 https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/tf1plus/tf1sf.m3u8
 #EXTINF:-1 tvg-id="TheAsylum.fr" tvg-logo="https://i.imgur.com/dx9tt1B.png" group-title="Movies",The Asylum
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f8ece1a89d79800072510e6/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e052a62-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=1739a4c5-d7e2-41f4-aa40-91bb650267c5
-#EXTINF:-1 tvg-id="TheFilmDetective.us" tvg-logo="https://i.imgur.com/yfOwmsP.png" group-title="Movies",The Film Detective
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01201-cinedigmenterta-filmdetective-cineverse/playlist.m3u8
+#EXTINF:-1 tvg-id="TheFilmDetective.us" tvg-logo="https://i.imgur.com/yfOwmsP.png" group-title="Movies",The Film Detective (720p)
+https://filmdetective-plex.amagi.tv/hls/amagi_hls_data_plexAAAAA-filmdetective-plex/CDN/master.m3u8
 #EXTINF:-1 tvg-id="TVCinec.br" tvg-logo="https://i.imgur.com/Svm5pun.png" group-title="Movies",TV Cinec (240p) [Not 24/7]
 http://tv01.logicahost.com.br:1935/tvcinec/tvcinec/live.m3u8
 #EXTINF:-1 tvg-id="TVLandDrama.us" tvg-logo="https://i.imgur.com/y1rXIAS.png" group-title="Movies",TV Land Drama
@@ -539,16 +542,15 @@ http://77.235.1.17/vip_premier/index.m3u8
 https://weyyak-live.akamaized.net/weyyak_action/index.m3u8
 #EXTINF:-1 tvg-id="WeyyakDrama.ae" tvg-logo="https://content.weyyak.com/d995517f-bc87-ea11-831d-02d662556796/poster-image" group-title="Movies",Weyyak Drama (720p) [Geo-blocked]
 https://weyyak-live.akamaized.net/weyyak_drama/index.m3u8
-#EXTINF:-1 tvg-id="WildSideTV.fr" tvg-logo="https://i.imgur.com/cQkfRhH.png" group-title="Movies",Wild Side TV
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60b4d6c806ad2a00073b3108/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e0614c0-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=d329ef28-8c5a-4451-bc8a-ab7d7083f320
+#EXTINF:-1 tvg-id="WildSideTV.fr" tvg-logo="https://i.imgur.com/cQkfRhH.png" group-title="Movies",Wildside TV (720p)
+https://versatile-wildsidetv-1-fr.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="WuTangCollection.us" tvg-logo="https://i.imgur.com/sz55sBl.png" group-title="Movies",Wu Tang Collection (720p)
 https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=73
-#EXTINF:-1 tvg-id="XtremaAccion.ar" tvg-logo="https://i.imgur.com/z5NwizH.png" group-title="Movies",Xtrema Accion
-#EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1434
-https://stmv6.voxtvhd.com.br/cineaccion/cineaccion/playlist.m3u8
+#EXTINF:-1 tvg-id="XtremaAccion.ar" tvg-logo="https://i.imgur.com/z5NwizH.png" group-title="Movies",Xtrema Cine Acción (268p)
+https://stmv1.cnarlatam.com/cineaccion/cineaccion/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaAsia.ar" tvg-logo="https://i.imgur.com/xX1tfJz.png" group-title="Movies",Xtrema Cine Asia (268p)
 https://stmv1.cnarlatam.com/cineasia/cineasia/playlist.m3u8
-#EXTINF:-1 tvg-id="XtremaCineClasico.ar" tvg-logo="https://i.imgur.com/j91M4Yf.png" group-title="Classic;Movies",Xtrema Cine Clasico
+#EXTINF:-1 tvg-id="XtremaCineClasico.ar" tvg-logo="https://i.imgur.com/j91M4Yf.png" group-title="Classic;Movies" http-referrer="https://xtrematv.com/?p=1460",Xtrema Cine Clasico
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1460
 https://stmv6.voxtvhd.com.br/cineclasico/cineclasico/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaComedy.ar" tvg-logo="https://i.imgur.com/aNUufoq.png" group-title="Comedy;Movies",Xtrema Cine Comedy (344p)
@@ -567,14 +569,16 @@ https://stmv1.cnarlatam.com/cinelatino/cinelatino/playlist.m3u8
 https://stmv1.cnarlatam.com/cinesuspenso/cinesuspenso/playlist.m3u8
 #EXTINF:-1 tvg-id="XtremaSeries.ar" tvg-logo="https://i.imgur.com/J7ZZIQN.png" group-title="Movies",Xtrema Series (360p)
 https://stmv1.cnarlatam.com/xtremaseries/xtremaseries/playlist.m3u8
-#EXTINF:-1 tvg-id="XtremaTerror.ar" tvg-logo="https://i.imgur.com/FcaTUym.png" group-title="Movies",Xtrema Terror
+#EXTINF:-1 tvg-id="XtremaTerror.ar" tvg-logo="https://i.imgur.com/FcaTUym.png" group-title="Movies" http-referrer="https://xtrematv.com/?p=1456",Xtrema Terror
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1456
 https://stmv6.voxtvhd.com.br/cineterror/cineterror/playlist.m3u8
+#EXTINF:-1 tvg-id="ZeeAflam.ae" tvg-logo="https://i.imgur.com/nUmsyGt.png" group-title="Movies",Zee Aflam (720p) [Geo-blocked]
+https://weyyak-live.akamaized.net/weyyak_zee_aflam/index.m3u8
 #EXTINF:-1 tvg-id="Domkino.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png/512px-%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_%D0%BA%D0%B0%D0%BD%D0%B0%D0%BB%D0%B0_%D0%94%D0%BE%D0%BC_%D0%9A%D0%B8%D0%BD%D0%BE.png" group-title="Movies",Дом Кино
 https://stream01.vnet.am/DomKino/mono.m3u8
 #EXTINF:-1 tvg-id="DomkinoPremium.ru" tvg-logo="https://i.imgur.com/rJpQtvK.png" group-title="Movies",Дом Кино Премиум HD
 http://31.148.48.15/Dom_Kino_Premium_HD/index.m3u8
-#EXTINF:-1 tvg-id="Dorama.ru" tvg-logo="https://i.imgur.com/ZH5LuXU.png" group-title="Movies" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Дорама (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="Dorama.ru" tvg-logo="https://i.imgur.com/ZH5LuXU.png" group-title="Movies" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Дорама (480p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s95/index.m3u8
 #EXTINF:-1 tvg-id="Kinopokaz.ru" tvg-logo="https://i.imgur.com/nNjMyAq.png" group-title="Movies",Кинопоказ
@@ -589,12 +593,15 @@ http://213.172.73.133:8081/nimble_live/9008_Премиальное_HD/playlist.m
 http://31.148.48.15/Russkiy_Bestseller/index.m3u8
 #EXTINF:-1 tvg-id="STRK.ru" tvg-logo="https://i.imgur.com/mLZDuIF.png" group-title="Movies",СТРК (720p) [Not 24/7]
 http://sochinskayatrk.ru/hdtv/hls/strc_hd/playlist.m3u8
-#EXTINF:-1 tvg-id="ArmeniaPremium.am" tvg-logo="https://i.imgur.com/removed.png" group-title="Movies" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",ԱՐՄԵՆԻԱ 1 ՊՐԵՄԻՈՒՄ (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ArmeniaPremium.am" tvg-logo="https://i.imgur.com/removed.png" group-title="Movies" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",ԱՐՄԵՆԻԱ 1 ՊՐԵՄԻՈՒՄ (480p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s83/index.m3u8
-#EXTINF:-1 tvg-id="ArmeniaHayKino.am" tvg-logo="https://i.imgur.com/removed.png" group-title="Movies" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",ԱՐՄԵՆԻԱ-ՀԱՅԿԻՆՈ (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ArmeniaHayKino.am" tvg-logo="https://i.imgur.com/removed.png" group-title="Movies" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",ԱՐՄԵՆԻԱ-ՀԱՅԿԻՆՈ (480p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s22/index.m3u8
-#EXTINF:-1 tvg-id="ArmeniaSinemaks.am" tvg-logo="https://i.imgur.com/removed.png" group-title="Movies" user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",ՍԻՆԵՄԱՆ (U6) (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="ATVKinoman.am" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/9/9c/Atvnew.png/revision/latest/scale-to-width-down/512" group-title="Movies" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",ԿԻՆՈՄԱՆ (480p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s94/index.m3u8
+#EXTINF:-1 tvg-id="ArmeniaSinemaks.am" tvg-logo="https://i.imgur.com/removed.png" group-title="Movies" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",ՍԻՆԵՄԱՆ (U6) (480p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s66/index.m3u8

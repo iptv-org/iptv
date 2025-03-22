@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2MMonde.ma" tvg-logo="https://i.imgur.com/MvpntzA.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",2M Monde (360p)
-#EXTVLCOPT:http-referrer=http://www.radio2m.ma/
+#EXTINF:-1 tvg-id="2MMonde.ma" tvg-logo="https://i.imgur.com/MvpntzA.png" group-title="General" http-referrer="https://2m.ma" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",2M Monde (360p)
+#EXTVLCOPT:http-referrer=https://2m.ma
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
 https://cdn-globecast.akamaized.net/live/eds/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8
 #EXTINF:-1 tvg-id="AbalfadhlTV.ir" tvg-logo="https://i.ibb.co/cCmjqtQ/logo-2.png" group-title="Religious",Abalfadhl TV (720p)
@@ -11,6 +11,8 @@ https://mediaserver.abnvideos.com/streams/abnsat.m3u8
 https://vo-live-media.cdb.cdn.orange.com/Content/Channel/AbuDhabiSportsChannel1/HLS/index.m3u8
 #EXTINF:-1 tvg-id="AfaqTV.iq" tvg-logo="https://i.imgur.com/t7CaTu3.png" group-title="General",Afaq TV
 http://63b03f7689049.streamlock.net:1935/live/1/playlist.m3u8
+#EXTINF:-1 tvg-id="AfarinBaxcha.iq" tvg-logo="https://afarin.tv/images/baxcha.png" group-title="Kids",Afarin Baxcha (1080p)
+https://5dcabf026b188.streamlock.net/afarinTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="AfarinTV.iq" tvg-logo="https://i.imgur.com/6MnXD7g.png" group-title="Kids",Afarin TV (720p) [Not 24/7]
 https://65f16f0fdfc51.streamlock.net/afarinTV/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="Aflam.sa" tvg-logo="https://i.imgur.com/cTLj7Yt.png" group-title="Movies",Aflam (1080p)
@@ -39,8 +41,9 @@ https://cdn.catiacast.video/abr/8d2ffb0aba244e8d9101a9488a7daa05/playlist.m3u8
 https://cdn.catiacast.video/abr/78054972db7708422595bc96c6e024ac/playlist.m3u8
 #EXTINF:-1 tvg-id="AlJanoubTV.iq" tvg-logo="https://i.imgur.com/rxDh6W1.png" group-title="News",Al Janoub TV
 http://63b03f7689049.streamlock.net:1935/live/18/playlist.m3u8
-#EXTINF:-1 tvg-id="AlJazeera.qa" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="News",Al Jazeera (1080p)
-https://live-hls-apps-aja-fa.getaj.net/AJA/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeera.qa" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="News" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Al Jazeera (480p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s23/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraDocumentary.qa" tvg-logo="https://i.imgur.com/5dNJlLo.png" group-title="News",Al Jazeera Documentary (1080p) [Geo-blocked]
 https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraMubasher24.qa" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Aljazeera_Mubasher.svg/512px-Aljazeera_Mubasher.svg.png" group-title="News",Al Jazeera Mubasher 24 (1080p)
@@ -53,12 +56,14 @@ https://live-hls-apps-ajm2-fa.getaj.net/AJM2/index.m3u8
 http://63b03f7689049.streamlock.net:1935/live/3/playlist.m3u8
 #EXTINF:-1 tvg-id="AlQamarTV.ae" tvg-logo="https://i.imgur.com/zkBT0C8.png" group-title="Undefined",Al Qamar TV (1080p)
 https://streamer3.premio.link/alqamar/playlist.m3u8
-#EXTINF:-1 tvg-id="AlRabiaaTV.iq" tvg-logo="https://i.imgur.com/3a98qcO.png" group-title="General",Al Rabiaa TV (1080p)
+#EXTINF:-1 tvg-id="AlRabiaaTV.iq" tvg-logo="https://i.imgur.com/3a98qcO.png" group-title="General" http-referrer="https://player.castr.com/live_c6c4040053cd11ee95b47153d2861736",Al Rabiaa TV (1080p)
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_c6c4040053cd11ee95b47153d2861736
 https://stream.castr.com/65045e4aba85cfe0025e4a60/live_c6c4040053cd11ee95b47153d2861736/index.fmp4.m3u8
 #EXTINF:-1 tvg-id="AlRasheedTV.iq" tvg-logo="https://i.imgur.com/ltyRjPK.png" group-title="General",Al Rasheed TV (1080p) [Not 24/7]
 https://media1.livaat.com/static/AL-RASHEED-HD/playlist.m3u8
-#EXTINF:-1 tvg-id="AlAimmaTV.iq" tvg-logo="https://alaimma.tv/alaimma-logo.png" group-title="Religious",Al-Aimma TV (1080p)
+#EXTINF:-1 tvg-id="AlShabab.iq" tvg-logo="" group-title="Undefined",Al Shabab TV (1080p)
+http://149.100.11.244:8001/play/a07n/index.m3u8
+#EXTINF:-1 tvg-id="AlAimmaTV.iq" tvg-logo="https://alaimma.tv/alaimma-logo.png" group-title="Religious" http-referrer="https://alaimma.tv",Al-Aimma TV (1080p)
 #EXTVLCOPT:http-referrer=https://alaimma.tv
 http://stream.alaimma.tv/hls/alaimma/h3b1rd584cpq8p60okoj01rnfigdcnia.m3u8
 #EXTINF:-1 tvg-id="AlJawadainTV.iq" tvg-logo="https://i.imgur.com/Eo3UYCK.png" group-title="Religious",Al-Jawadain TV (1080p) [Not 24/7]
@@ -79,7 +84,7 @@ https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038900/MBN_Alhurra_Worldsaf
 https://mbn-ingest-worldsafe.akamaized.net/hls/live/2038899/MBN_Iraq_Worldsafe_HLS/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Alqanat9 TV (1080p)
 https://cdn.bestream.io:19360/alqanat9/alqanat9.m3u8
-#EXTINF:-1 tvg-id="Alquran.iq" tvg-shift="0" tvg-logo="https://i.imgur.com/lqVwrAF.png" group-title="Religious",Alquran (1080p)
+#EXTINF:-1 tvg-id="Alquran.iq" tvg-logo="https://i.imgur.com/lqVwrAF.png" group-title="Religious",Alquran (1080p)
 https://ktvlive.online/stream/hls/ch1.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Althaqalayn TV
 http://63b03f7689049.streamlock.net:1935/live/16/playlist.m3u8
@@ -87,23 +92,22 @@ http://63b03f7689049.streamlock.net:1935/live/16/playlist.m3u8
 http://77.36.160.164:1935/live4/thaghalayn/playlist.m3u8
 #EXTINF:-1 tvg-id="AngelTVArabia.in" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Religious",Angel TV Arabia (720p)
 https://cdn3.wowza.com/5/TDJ0aWNkNXFxWWta/angeltvcloud/ngrp:angelarabia_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AnwarTV2.iq" tvg-logo="https://i.imgur.com/yHZXPcn.png" group-title="News",Anwar TV2 (720p)
-#EXTVLCOPT:http-referrer=https://odysee.com/
-https://cloud.odysee.live/content/f92670235a1ce2bce4cf77671cc4dcc2188baa1d/master.m3u8
+#EXTINF:-1 tvg-id="AnwarTV2.iq" tvg-logo="https://i.imgur.com/yHZXPcn.png" group-title="News",Anwar TV2 (288p)
+http://63b03f7689049.streamlock.net:1935/live/13/playlist.m3u8
 #EXTINF:-1 tvg-id="BabAlHara.sa" tvg-logo="https://i.imgur.com/QtlnZbq.png" group-title="Series",Bab Al Hara (1080p)
 https://shls-live-enc.edgenextcdn.net/out/v1/948c54279b594944adde578c95f1d7d1/index.m3u8
 #EXTINF:-1 tvg-id="BayyinatTV.iq" tvg-logo="https://i.imgur.com/PVQKsjE.png" group-title="Religious",Bayyinat TV (404p)
 https://nl2.livekadeh.com/hls2/Bayyinat.m3u8
-#EXTINF:-1 tvg-id="BBCArabic.uk" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="News",BBC Arabic (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.mpd
+#EXTINF:-1 tvg-id="BBCArabic.uk" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="News",BBC Arabic (540p)
+https://vs-hls-pushb-ww.live.cf.md.bbci.co.uk/x=4/i=urn:bbc:pips:service:bbc_arabic_tv/pc_hd_abr_v2.m3u8
 #EXTINF:-1 tvg-id="BeitolAbbasTVChannel.iq" tvg-logo="https://i.imgur.com/s8PfUQy.png" group-title="Religious",BeitolAbbas TV Channel (720p)
 https://live.beitolabbas.tv/live/beitolabbastv.m3u8
 #EXTINF:-1 tvg-id="BeladiSatelliteTV.iq" tvg-logo="https://i.imgur.com/xpBwbma.png" group-title="Undefined",Beladi Satellite TV (540p)
 http://95.216.180.111:1935/live/68/playlist.m3u8
 #EXTINF:-1 tvg-id="BloombergTVEMEALiveEvent.uk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV EMEA Live Event (720p)
 https://bloomberg.com/media-manifest/streams/eu-event.m3u8
-#EXTINF:-1 tvg-id="CGTNArabic.cn" tvg-logo="https://i.imgur.com/AkFFrS7.png" group-title="News",CGTN Arabic (1080p) [Not 24/7]
-https://arabic-livews.cgtn.com/hls/LSveq57bErWLinBnxosqjisZ220802LSTefTAS9zc9mpU08y3np9TH220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNArabic.cn" tvg-logo="https://i.imgur.com/AkFFrS7.png" group-title="News",CGTN Arabic (576p) [Not 24/7]
+https://news.cgtn.com/resource/live/arabic/cgtn-a.m3u8
 #EXTINF:-1 tvg-id="Channel8.iq" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Channel8corp.png/480px-Channel8corp.png" group-title="News",Channel 8 Kurdish (720p)
 https://live.channel8.com/Channel8-Kurdish/index.fmp4.m3u8
 #EXTINF:-1 tvg-id="CNBCArabiya.ae" tvg-logo="https://i.imgur.com/opBXx1K.png" group-title="Business",CNBC Arabiya (1080p)
@@ -120,8 +124,8 @@ https://dminnvllta.cdn.mgmlcdn.com/dubaione/smil:dubaione.stream.smil/chunklist.
 https://dwamdstream103.akamaized.net/hls/live/2015526/dwstream103/index.m3u8
 #EXTINF:-1 tvg-id="EWTNAfricaAsia.us" tvg-logo="https://i.imgur.com/F8ZM25a.png" group-title="Religious",EWTN Africa Asia (720p)
 https://cdn3.wowza.com/1/ZVBYYXFLLzE0c3NC/Qk1FMURC/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="France24Arabic.fr" tvg-logo="https://i.imgur.com/o1Vz78r.png" group-title="News",France 24 Arabic (1080p)
-https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8
+#EXTINF:-1 tvg-id="France24Arabic.fr" tvg-logo="https://i.imgur.com/o1Vz78r.png" group-title="News",France 24 Arabic (360p)
+https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_500.m3u8
 #EXTINF:-1 tvg-id="GaliKurdistan.iq" tvg-logo="https://i.imgur.com/Jd9DywP.png" group-title="News",Gali Kurdistan (720p) [Not 24/7]
 https://live.bradosti.net/live/GaliKurdistan_playlist.m3u8
 #EXTINF:-1 tvg-id="HadiTV3.iq" tvg-logo="https://i.imgur.com/TXzEtF8.png" group-title="Religious",Hadi TV Azeri and Russian (720p)
@@ -218,12 +222,12 @@ https://shls-live-enc.edgenextcdn.net/out/v1/0ef83323c0374a1187c182645db2a45f/in
 https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8
 #EXTINF:-1 tvg-id="RudawTV.iq" tvg-logo="https://i.imgur.com/Zo3IWOn.png" group-title="News",Rudaw TV (1080p)
 https://svs.itworkscdn.net/rudawlive/rudawlive.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SkyNewsArabia.ae" tvg-logo="https://i.imgur.com/SvjU4h6.png" group-title="News",Sky News Arabia (1080p) [Not 24/7]
-https://stream.skynewsarabia.com/ott/ott.m3u8
+#EXTINF:-1 tvg-id="SkyNewsArabia.ae" tvg-logo="https://i.imgur.com/SvjU4h6.png" group-title="News",Sky News Arabia (720p) [Not 24/7]
+https://stream.skynewsarabia.com/hls/sna.m3u8
 #EXTINF:-1 tvg-id="SkyNewsArabiaVertical.ae" tvg-logo="https://i.imgur.com/FjtzQQs.png" group-title="News",Sky News Arabia (Portrait) (1280p) [Not 24/7]
 https://stream.skynewsarabia.com/vertical/vertical.m3u8
-#EXTINF:-1 tvg-id="TRTArabi.tr" tvg-logo="https://i.imgur.com/dEfI2M9.png" group-title="News",TRT Arabi (1080p)
-http://185.234.111.229:8000/play/a002
+#EXTINF:-1 tvg-id="TRTArabi.tr" tvg-logo="https://i.imgur.com/dEfI2M9.png" group-title="News",TRT Arabi (1080p) [Not 24/7]
+https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TVEInternacionalEuropeAsia.es" tvg-logo="https://i.imgur.com/ow1HArj.png" group-title="Undefined",TVE Internacional Europe-Asia [Geo-blocked]
 https://rtvelivestream.akamaized.net/rtvesec/int/tvei_eu_main.m3u8
 #EXTINF:-1 tvg-id="UTV.iq" tvg-logo="https://i.imgur.com/9qFHjnu.png" group-title="Undefined",UTV (1080p)
@@ -236,3 +240,7 @@ https://shls-wanasah-prod-dub.shahid.net/out/v1/c84ef3128e564b74a6a796e8b6287de6
 https://5a3ed7a72ed4b.streamlock.net/zagrostv/SMIL:myStream.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Zarok TV Sorani (720p)
 https://zindisorani.zaroktv.com.tr/hls/stream.m3u8
+#EXTINF:-1 tvg-id="ZeeAflam.ae" tvg-logo="https://i.imgur.com/nUmsyGt.png" group-title="Movies",Zee Aflam (720p) [Geo-blocked]
+https://weyyak-live.akamaized.net/weyyak_zee_aflam/index.m3u8
+#EXTINF:-1 tvg-id="ZeeAlwan.ae" tvg-logo="https://i.imgur.com/fBL7YrC.png" group-title="Entertainment;Series",Zee Alwan (720p) [Geo-blocked]
+https://weyyak-live.akamaized.net/weyyak_zee_alwan/index.m3u8

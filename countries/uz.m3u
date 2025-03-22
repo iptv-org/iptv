@@ -7,10 +7,10 @@ https://st.biztv.uz/hls/c_hi/index.m3u8
 https://st.biztv.uz/hls/m_hi/index.m3u8
 #EXTINF:-1 tvg-id="BIZTV.uz" tvg-logo="https://biztv.uz/static/media/logo.5f993187.png" group-title="Entertainment",BIZ TV (1080p)
 https://st.biztv.uz/hls/stream_hi/index.m3u8
-#EXTINF:-1 tvg-id="Bolajon.uz" tvg-logo="https://i.imgur.com/s7o0ifu.png" group-title="Kids",Bolajon (486p)
-https://st1-allplay-uz.b-cdn.net/3/iptv-58/index.m3u8
-#EXTINF:-1 tvg-id="CGTNRussian.cn" tvg-logo="https://i.imgur.com/nDWkCmL.png" group-title="News",CGTN Русский (1080p)
-https://russian-livews.cgtn.com/hls/LSvexABhNipibK5KRuUkvHZ7220802LSTeze9o8tdFXMHsb1VosgoT220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="Bolajon.uz" tvg-logo="https://i.imgur.com/s7o0ifu.png" group-title="Kids",Bolajon (480p)
+http://gohoski.fvds.ru:3000/mediabay/148/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNRussian.cn" tvg-logo="https://i.imgur.com/nDWkCmL.png" group-title="News",CGTN Русский (576p)
+https://news.cgtn.com/resource/live/russian/cgtn-r.m3u8
 #EXTINF:-1 tvg-id="Dunyoboylab.uz" tvg-logo="https://i.imgur.com/KArB5U6.png" group-title="General",Dunyo bo'ylab (480p)
 http://gohoski.fvds.ru:3000/mediabay/144/playlist.m3u8
 #EXTINF:-1 tvg-id="EWTNAfricaAsia.us" tvg-logo="https://i.imgur.com/F8ZM25a.png" group-title="Religious",EWTN Africa Asia (720p)
@@ -19,8 +19,8 @@ https://cdn3.wowza.com/1/ZVBYYXFLLzE0c3NC/Qk1FMURC/hls/live/playlist.m3u8
 http://gohoski.fvds.ru:3000/mediabay/146/playlist.m3u8
 #EXTINF:-1 tvg-id="Mahalla.uz" tvg-logo="https://i.imgur.com/GtABiJI.png" group-title="Undefined",Mahalla (480p)
 http://gohoski.fvds.ru:3000/mediabay/394/playlist.m3u8
-#EXTINF:-1 tvg-id="Milliy.uz" tvg-logo="https://i.imgur.com/v4FBm26.png" group-title="General",Milliy TV (480p)
-http://gohoski.fvds.ru:3000/mediabay/391/playlist.m3u8
+#EXTINF:-1 tvg-id="Milliy.uz" tvg-logo="https://i.imgur.com/v4FBm26.png" group-title="General",Milliy (480p) [Not 24/7]
+http://milliy.tv/hls/index.m3u8
 #EXTINF:-1 tvg-id="Navo.uz" tvg-logo="https://i.imgur.com/7dZ64y9.png" group-title="General",Navo (480p)
 http://gohoski.fvds.ru:3000/mediabay/254/playlist.m3u8
 #EXTINF:-1 tvg-id="NickelodeonCIS.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/512px-Nickelodeon_2009_logo.svg.png" group-title="Kids",Nickelodeon
@@ -37,14 +37,16 @@ http://gohoski.fvds.ru:3000/mediabay/136/playlist.m3u8
 https://rtvelivestream.akamaized.net/rtvesec/int/tvei_eu_main.m3u8
 #EXTINF:-1 tvg-id="Yoshlar.uz" tvg-logo="https://i.imgur.com/s4xfUSx.png" group-title="General",Yoshlar (480p)
 http://gohoski.fvds.ru:3000/mediabay/134/playlist.m3u8
-#EXTINF:-1 tvg-id="Detskimir.ru" tvg-logo="https://i.imgur.com/bBVEP0S.png" group-title="Kids",Детский мир
-http://stream01.vnet.am/CartoonNetwork/mono.m3u8
+#EXTINF:-1 tvg-id="Detskimir.ru" tvg-logo="https://i.imgur.com/bBVEP0S.png" group-title="Kids" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Детский мир (480p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s58/index.m3u8
 #EXTINF:-1 tvg-id="CarouselInternational.ru" tvg-logo="https://i.imgur.com/DnlngRZ.png" group-title="Kids",Карусель Int
 http://stream02.vnet.am/Karusel/mono.m3u8
 #EXTINF:-1 tvg-id="MTV.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/MTV-2021.svg/512px-MTV-2021.svg.png" group-title="Entertainment",МТВ (Волгоград) (720p) [Not 24/7]
 http://hls.volgograd1vtv.cdnvideo.ru/volgograd1vtv/volgograd1vtv.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="NTVMir.ru" tvg-logo="https://i.imgur.com/pUcV46F.png" group-title="Culture",НТВ Мир
-http://stream02.vnet.am/HTB/mono.m3u8
+#EXTINF:-1 tvg-id="NTVMir.ru" tvg-logo="https://i.imgur.com/pUcV46F.png" group-title="Culture" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",НТВ Мир (480p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s17/index.m3u8
 #EXTINF:-1 tvg-id="RTRPlanetaCIS.ru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/RTR-Planeta_Logo.svg/512px-RTR-Planeta_Logo.svg.png" group-title="General",РТР Планета СНГ
 https://player.smotrim.ru/iframe/stream/live_id/3b73bf76-7245-4981-a865-38478e21df1f
 #EXTINF:-1 tvg-id="UTRK.kg" tvg-logo="https://i.ibb.co/VJ7cPRH/Xp5clCA.png" group-title="General",УТРК (480p) [Not 24/7]

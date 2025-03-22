@@ -91,15 +91,13 @@ https://d25ykpi2vxhoyc.cloudfront.net/delmar-cdn/dmtv/playlist.m3u8
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/elsegundo/G0014_002/playlist.m3u8
 #EXTINF:-1 tvg-id="CityofFairfieldChannel26.us" tvg-logo="https://i.imgur.com/fiqaiUe.png" group-title="General",Fairfield Government Access Channel 26 (Fairfield CA) (720p) [Geo-blocked]
 https://reflect-fairfield-ca.cablecast.tv/live-8/live/live.m3u8
-#EXTINF:-1 tvg-id="KVCRDT2.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e8/FNX_Web_Logo.png" group-title="Culture",FNX [Geo-blocked]
+#EXTINF:-1 tvg-id="KVCRDT2.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e8/FNX_Web_Logo.png" group-title="Culture" http-referrer="https://fnx.org/",FNX [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://fnx.org/
 https://castus-vod-dev.s3.amazonaws.com/vod_clients/kvcr/live/ch1/video.m3u8
 #EXTINF:-1 tvg-id="KFONTV.us" tvg-logo="https://i.imgur.com/MQHYm3V.png" group-title="General",Fontana Community Television (720p) [Geo-blocked]
 https://reflect-watchkfon-fontana.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-id="KTVUDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/512px-Fox_Networks_Group_US_logo.svg.png" group-title="General",FOX 2 San Francisco CA (KTVU) (720p)
 https://apollo.production-public.tubi.io/live/ac-ktvu.m3u8
-#EXTINF:-1 tvg-id="KTTVDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/512px-Fox_Networks_Group_US_logo.svg.png" group-title="General",FOX 11 Los Angeles CA (KTTV) (720p)
-https://apollo.production-public.tubi.io/live/ac-kttv.m3u8
 #EXTINF:-1 tvg-id="CMAC1.us" tvg-logo="https://i.imgur.com/PYhdQy9.png" group-title="General",Fresno CMAC 1 Public Channel (720p)
 https://reflect-vod-cmac.cablecast.tv/live-11/live/live.m3u8
 #EXTINF:-1 tvg-id="CMAC2.us" tvg-logo="https://i.imgur.com/O0sYOED.png" group-title="Education",Fresno CMAC 2 Education Channel (720p)
@@ -122,30 +120,36 @@ https://cdn3.wowza.com/5/M0lyamVmM2JWcjhQ/huntingtonbeach/G0088_005/playlist.m3u
 https://59d39900ebfb8.streamlock.net/8478/8478/playlist.m3u8
 #EXTINF:-1 tvg-id="ICTV.us" tvg-logo="https://i.imgur.com/2NM5HI0.png" group-title="General",Irvine Community Television (720p)
 https://cdn3.wowza.com/5/WDIrTW5sM1JEY1NN/irvine/G0016_010/playlist.m3u8
-#EXTINF:-1 tvg-id="KABCDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/KABC-TV-Logo-2021.png/512px-KABC-TV-Logo-2021.png" group-title="General",KABC-DT1 (720p)
-https://tvpass.org/live/abc-kabc-los-angeles-ca/hd
+#EXTINF:-1 tvg-id="KABCDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/KABC-TV-Logo-2021.png/512px-KABC-TV-Logo-2021.png" group-title="General",KABC-DT1 (360p)
+https://tvpass.org/live/abc-kabc-los-angeles-ca/sd
 #EXTINF:-1 tvg-id="KBEV.us" tvg-logo="https://i.imgur.com/YFVrphZ.png" group-title="Education",KBEV Spectrum Channel 6 [Beverly Hills] (1080p)
 https://s3-us-west-2.amazonaws.com/beverly-hills-high-school.castus-vod/live/ch1/video.m3u8
 #EXTINF:-1 tvg-id="KCAT.us" tvg-logo="https://i.imgur.com/ZAypRkk.png" group-title="Education",KCAT Public Media TV (1080p)
 https://reflect-kcat-live.cablecast.tv/live-2/live/live.m3u8
-#EXTINF:-1 tvg-id="KCBSDT1.us" tvg-logo="https://i.imgur.com/RIFC1Y6.jpg" group-title="General",KCBS-DT1 (1080p)
-https://tvpass.org/live/cbs-kcbs-los-angeles-ca/hd
+#EXTINF:-1 tvg-id="KCBSDT1.us" tvg-logo="https://i.imgur.com/RIFC1Y6.jpg" group-title="General",KCBS-DT1 (360p)
+https://tvpass.org/live/cbs-kcbs-los-angeles-ca/sd
 #EXTINF:-1 tvg-id="KernCountyTV.us" tvg-logo="https://i.imgur.com/AJcuBCF.png" group-title="Legislative",Kern County Television
 https://cdn3.wowza.com/5/dk84U1p2UUdoMGxT/kern/G0169_003/playlist.m3u8
-#EXTINF:-1 tvg-id="KFMBDT1.us" tvg-logo="https://i.imgur.com/QJyt4n4.jpg" group-title="General",KFMB CBS 8
-https://livevideo.tegnadigital.com/kfmb/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4efbd693/KFMB/elvs/live.m3u8
-#EXTINF:-1 tvg-id="KFMBDT2.us" tvg-logo="https://i.imgur.com/GCB3vun.png" group-title="Entertainment",KFMB-DT2 (720p)
-https://tvpass.org/live/cw-kfmbtv2-san-diego-ca/hd
+#EXTINF:-1 tvg-id="KetchupTV.us" tvg-logo="https://i.imgur.com/XRGioQX.png" group-title="Kids",Ketchup TV (720p)
+https://stream.ads.ottera.tv/playlist.m3u8?network_id=13171
+#EXTINF:-1 tvg-id="KFMBDT1.us" tvg-logo="https://i.imgur.com/QJyt4n4.jpg" group-title="General",KFMB-DT1 (1080p)
+https://livevideo01.cbs8.com/hls/live/2014967/elvs/live.m3u8
+#EXTINF:-1 tvg-id="KFMBDT2.us" tvg-logo="https://i.imgur.com/GCB3vun.png" group-title="Entertainment",KFMB-DT2 (360p)
+https://tvpass.org/live/cw-kfmbtv2-san-diego-ca/sd
+#EXTINF:-1 tvg-id="KNBCDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="General",KNBC-DT1 (360p)
+https://tvpass.org/live/nbc-knbc-los-angeles-ca/sd
 #EXTINF:-1 tvg-id="KQSLDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/TLN_2015.png/512px-TLN_2015.png" group-title="Religious",KQSL Channel 8 (720p)
 https://uni01rtmp.tulix.tv/kqsltv/kqsltv/playlist.m3u8
 #EXTINF:-1 tvg-id="KRCADT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Estrella_TV_2020_Logo.svg/512px-Estrella_TV_2020_Logo.svg.png" group-title="General",KRCA-TV Estrella Los Angeles (720p)
 https://content.uplynk.com/channel/829a8c85f9e840c6bed963856c231428.m3u8
 #EXTINF:-1 tvg-id="KSBYDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="General",KSBY News San Louis Obispo CA (720p)
 https://content.uplynk.com/channel/5545aa8a7e5a480d85fd1cff8d0cf610.m3u8
+#EXTINF:-1 tvg-id="KTTVDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Fox_Networks_Group_US_logo.svg/512px-Fox_Networks_Group_US_logo.svg.png" group-title="General",KTTV-DT1 (360p)
+https://tvpass.org/live/fox-kttv-los-angeles-ca/sd
 #EXTINF:-1 tvg-id="KVVBLD1.us" tvg-logo="https://i.imgur.com/IXC8PXf.png" group-title="Entertainment",KVVB-TV 33 Victor Valley (1080p) [Not 24/7]
 https://2-fss-2.streamhoster.com/pl_138/amlst:201950-1309230/playlist.m3u8
-#EXTINF:-1 tvg-id="KXTVDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ABC-2021-LOGO.svg/512px-ABC-2021-LOGO.svg.png" group-title="General",KXTV ABC 10 (Sacramento CA)
-https://livevideo.tegnadigital.com/kxtv/v1/master/f9c1bf9ffd6ac86b6173a7c169ff6e3f4efbd693/KXTV/elvs/live.m3u8
+#EXTINF:-1 tvg-id="KXTVDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ABC-2021-LOGO.svg/512px-ABC-2021-LOGO.svg.png" group-title="General",KXTV-DT1 (1080p)
+https://livevideo01.abc10.com/hls/live/2014547/elvs/live.m3u8
 #EXTINF:-1 tvg-id="LACityView35.us" tvg-logo="https://i.imgur.com/3PnD83G.png" group-title="Legislative",LA CityView 35 (1080p)
 https://reflect-losangeles.cablecast.tv/live-3/live/live.m3u8
 #EXTINF:-1 tvg-id="CityTVLakewood.us" tvg-logo="https://i.imgur.com/e1shzv9.png" group-title="General",Lakewood CityTV (720p)
@@ -198,14 +202,12 @@ https://cdn3.wowza.com/5/WDIrTW5sM1JEY1NN/napatv/G0360_003/playlist.m3u8
 https://cdn3.wowza.com/5/WDIrTW5sM1JEY1NN/napatv/G0360_004/playlist.m3u8
 #EXTINF:-1 tvg-id="KCRADT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="General",NBC 3 Sacramento CA (KCRA) (720p)
 https://apollo.production-public.tubi.io/live/ac-kcra.m3u8
-#EXTINF:-1 tvg-id="KNBCDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="General",NBC 4 Los Angeles CA (KNBC) [Geo-blocked]
-https://amg00884-nbcuniversal-nbcla-pcr-xumo-ksnf2.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="KNSDDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="General",NBC 7 San Diego CA (KNSD) [Geo-blocked]
-https://amg00884-nbcuniversal-nbcsd-pcr-xumo-o4a18.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KSBWDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="General",NBC 8 Salinas CA (KSBW) (720p)
 https://apollo.production-public.tubi.io/live/ac-ksbw.m3u8
 #EXTINF:-1 tvg-id="KNTVDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="General",NBC 11 San Jose CA (KNTV) [Geo-blocked]
 https://amg00884-nbcuniversal-nbcsf-pcr-xumo-xetsp.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="KNSDDT1.us" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/NBC_logo_2022_%28vertical%29.svg/512px-NBC_logo_2022_%28vertical%29.svg.png" group-title="General",NBC West (San Diego) (1080p) [Not 24/7]
+https://nbculocallive.akamaized.net/hls/live/2037098/sandiego/stream1/master.m3u8
 #EXTINF:-1 tvg-id="NCMEducationalKidsChannel.us" tvg-logo="https://i.imgur.com/3YPvfPn.png" group-title="Education;Kids",NCM Educational & Kids Channel
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/nevco/G0644_005/playlist.m3u8
 #EXTINF:-1 tvg-id="NCMGovernmentPoliticsChannel.us" tvg-logo="https://i.imgur.com/3YPvfPn.png" group-title="Legislative",NCM Government & Politics

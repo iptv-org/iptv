@@ -1,6 +1,6 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="2MMonde.ma" tvg-logo="https://i.imgur.com/MvpntzA.png" group-title="General" user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",2M Monde (360p)
-#EXTVLCOPT:http-referrer=http://www.radio2m.ma/
+#EXTINF:-1 tvg-id="2MMonde.ma" tvg-logo="https://i.imgur.com/MvpntzA.png" group-title="General" http-referrer="https://2m.ma" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",2M Monde (360p)
+#EXTVLCOPT:http-referrer=https://2m.ma
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0
 https://cdn-globecast.akamaized.net/live/eds/2m_monde/hls_video_ts_tuhawxpiemz257adfc/2m_monde.m3u8
 #EXTINF:-1 tvg-id="3ABNFrench.us" tvg-logo="https://i.imgur.com/B5gsM7m.png" group-title="Religious",3ABN French
@@ -37,19 +37,17 @@ http://connectiktv.ddns.me:8080/live/61f1b992a6e8a-1/index.m3u8
 http://69.64.57.208/africable/playlist.m3u8
 #EXTINF:-1 tvg-id="AfricanewsFrench.fr" tvg-logo="https://i.imgur.com/5UxU4zc.png" group-title="News",AfricaNews Français (720p)
 https://rakuten-africanews-2-be.samsung.wurl.tv/manifest/playlist.m3u8
-#EXTINF:-1 tvg-id="AfriqueMedia.cm" tvg-logo="https://i.imgur.com/spQgX7X.png" group-title="News",Afrique Média (480p) [Not 24/7]
+#EXTINF:-1 tvg-id="AfriqueMedia.cm" tvg-logo="https://i.imgur.com/spQgX7X.png" group-title="News" http-referrer="https://odysee.com/",Afrique Média (480p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://odysee.com/
 https://cloud.odysee.live/content/fe06b3cdc9412e359368b2455b6ea5e93856e382/master.m3u8
 #EXTINF:-1 tvg-id="AfrocultureTV.ci" tvg-logo="https://i.imgur.com/bjaZ3kO.png" group-title="Culture",Afroculture TV (1080p)
 https://helga.iptv2022.com/sh/Afroculture/index.m3u8
 #EXTINF:-1 tvg-id="AL24News.dz" tvg-logo="https://i.imgur.com/vyVEXYL.png" group-title="News",AL24 News (1080p)
 https://cdn.live.easybroadcast.io/abr_corp/66_al24_u4yga6h/playlist.m3u8
-#EXTINF:-1 tvg-id="AlAoulaInter.ma" tvg-logo="https://i.imgur.com/nq53d2N.png" group-title="General",Al Aoula International (360p)
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/al_aoula_inter/hls_snrt/al_aoula_inter.m3u8
-#EXTINF:-1 tvg-id="AlAoula.ma" tvg-logo="https://i.imgur.com/nq53d2N.png" group-title="General",Al Aoula Laâyoune (360p)
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/al_aoula_laayoune/hls_snrt/index.m3u8
+#EXTINF:-1 tvg-id="AlAoulaInter.ma" tvg-logo="https://i.imgur.com/nq53d2N.png" group-title="General",Al Aoula International (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_aloula_w1dqfwm/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="AlAoula.ma" tvg-logo="https://i.imgur.com/nq53d2N.png" group-title="General",Al Aoula Laâyoune (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_laayoune_pgagr52/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="AlFaydaTV.sn" tvg-logo="https://i.imgur.com/FUb56OW.jpeg" group-title="Religious",Al Fayda TV (720p)
 https://helga.iptv2022.com/sh/AL_AYDA_TV_DAKAR/index.m3u8
 #EXTINF:-1 tvg-id="AlpedHuezTV.fr" tvg-logo="https://i.imgur.com/090tCQ5.png" group-title="General",Alpe d’Huez TV (720p) [Not 24/7]
@@ -74,9 +72,8 @@ https://live.ams.com.kh/app/stream/playlist.m3u8
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6192416c06d23b0007379766/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e0662e6-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=9bf91fcc-8ee0-4cc6-90c2-822e386de523
 #EXTINF:-1 tvg-id="arte.fr" tvg-logo="https://i.imgur.com/ecXMjNl.png" group-title="Entertainment",Arte (720p) [Geo-blocked]
 https://artesimulcast.akamaized.net/hls/live/2031003/artelive_fr/index.m3u8
-#EXTINF:-1 tvg-id="Assadissa.ma" tvg-logo="https://i.imgur.com/un6qTGO.png" group-title="Religious",Assadissa (360p)
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-https://cdn-globecast.akamaized.net/live/eds/assadissa/hls_snrt/index.m3u8
+#EXTINF:-1 tvg-id="Assadissa.ma" tvg-logo="https://i.imgur.com/un6qTGO.png" group-title="Religious",Assadissa (480p)
+https://cdn.live.easybroadcast.io/abr_corp/73_assadissa_7b7u5n1/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="AssembleeNationale.fr" tvg-logo="https://i.imgur.com/Eta6gUq.png" group-title="Legislative",Assemblée Nationale (1080p) [Not 24/7]
 http://anorigin.vodalys.com/live/live36/index36_12856975.m3u8?DVR=
 #EXTINF:-1 tvg-id="CanaldelAssemblee.ca" tvg-logo="https://i.imgur.com/jAtq0U8.png" group-title="Undefined",Assemblée Nationale du Québec
@@ -89,7 +86,7 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c8d16110-566c-4e95-a1df-55d175e9e201/manifest.m3u8
 #EXTINF:-1 tvg-id="BaladeMondeTV.cd" tvg-logo="https://i.imgur.com/bM0gD4q.jpeg" group-title="Culture",Balade Monde TV (720p) [Not 24/7]
 https://helga.iptv2022.com/BALADE_MODE_TV/index.m3u8
-#EXTINF:-1 tvg-id="BalafonTV.cm" tvg-logo="https://i.imgur.com/EqOzhYw.png" group-title="News",Balafon TV (1080p) [Not 24/7]
+#EXTINF:-1 tvg-id="BalafonTV.cm" tvg-logo="https://i.imgur.com/EqOzhYw.png" group-title="News" http-referrer="https://odysee.com/",Balafon TV (1080p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://odysee.com/
 https://cloud.odysee.live/content/d174f640b38d9d2f3967fd5e1b47b58c58f911a1/master.m3u8
 #EXTINF:-1 tvg-id="BATIRTV.ci" tvg-logo="https://i.imgur.com/Zpi0WxU.jpg" group-title="Business",BÂTIR-TV (576p)
@@ -106,54 +103,50 @@ https://live-hls-qunv.livepush.io/live_cdn/em8A-kbzIfHqu73/index.m3u8
 https://bel-live-hls.akamaized.net/hls/live/2038650/BEL-Live-HLS/master.m3u8
 #EXTINF:-1 tvg-id="BAMTV.be" tvg-logo="https://i.imgur.com/9UmR6cs.png" group-title="Culture",Bel'Afrika Media TV (1080p)
 https://goccn.cloud/hls/belafrikatv/index.m3u8
-#EXTINF:-1 tvg-id="MuseumTVFrench.fr" tvg-logo="https://i.imgur.com/WbjURLo.png" group-title="Culture",BelAiR TV (Museum TV Paris)
-https://rakutenaa-museumtv-fr-rakuten-nilyp.amagi.tv/playlist/rakutenAA-museumtv-fr-rakuten/playlist.m3u8
 #EXTINF:-1 tvg-id="BenieTV.ci" tvg-logo="https://i.imgur.com/7FXi05e.jpeg" group-title="Religious",Benie TV (720p)
 https://voozmedia.fun/benietv/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="BeninWebTV.bj" tvg-logo="https://i.imgur.com/CYy4n0N.png" group-title="News",Bénin Web TV (720p)
 https://stream.beninwebtv.bj/2/live/stream.m3u8
 #EXTINF:-1 tvg-id="BF1.bf" tvg-logo="https://i.imgur.com/9xx1Tss.png" group-title="General",BF1 (540p) [Not 24/7]
 https://547f72e6652371c3.mediapackage.us-east-1.amazonaws.com/out/v1/7e66f389bec3463dac81e8d55e680431/index.m3u8
-#EXTINF:-1 tvg-id="BFMAlsace.fr" tvg-logo="https://i.imgur.com/iRsbEpg.png" group-title="General" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Alsace (1080p)
+#EXTINF:-1 tvg-id="BFMAlsace.fr" tvg-logo="https://i.imgur.com/iRsbEpg.png" group-title="General" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Alsace (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_ALSACE/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMBusiness.fr" tvg-logo="https://i.imgur.com/psqIHn4.png" group-title="Business;News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Business (1080p)
+#EXTINF:-1 tvg-id="BFMBusiness.fr" tvg-logo="https://i.imgur.com/psqIHn4.png" group-title="Business;News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Business (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_BUSINESS/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMDICIAlpesduSud.fr" tvg-logo="https://i.imgur.com/bV77l68.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM DICI Alpes du Sud (1080p)
+#EXTINF:-1 tvg-id="BFMDICIAlpesduSud.fr" tvg-logo="https://i.imgur.com/bV77l68.png" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM DICI Alpes du Sud (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_DICI_ALPESDUSUD/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMDICIHauteProvence.fr" tvg-logo="https://i.imgur.com/bV77l68.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM DICI Haute-Provence (1080p)
+#EXTINF:-1 tvg-id="BFMDICIHauteProvence.fr" tvg-logo="https://i.imgur.com/bV77l68.png" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM DICI Haute-Provence (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_DICI_HAUTEPROVENCE/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMGrandLille.fr" tvg-logo="https://i.imgur.com/HE5xP0r.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Grand Lille (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFMGRANDLILLE/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMGrandLittoral.fr" tvg-logo="https://i.imgur.com/j7F9MwH.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Grand Littoral (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
-https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFMGRANDLITTORAL/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMLyon.fr" tvg-logo="https://i.imgur.com/0uiiZRo.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Lyon (1080p)
+#EXTINF:-1 tvg-id="BFMGrandLille.fr" tvg-logo="https://i.imgur.com/HE5xP0r.png" group-title="News",BFM Grand Lille (720p)
+https://live.creacast.com/grandlilletv/smil:grandlilletv.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="BFMGrandLittoral.fr" tvg-logo="https://i.imgur.com/j7F9MwH.png" group-title="News",BFM Grand Littoral (720p)
+https://live.creacast.com/grandlittoral/smil:grandlittoral.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="BFMLyon.fr" tvg-logo="https://i.imgur.com/0uiiZRo.png" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Lyon (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_LYON/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMMarseille.fr" tvg-logo="https://i.imgur.com/h7t0l6q.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Marseille (1080p)
+#EXTINF:-1 tvg-id="BFMMarseille.fr" tvg-logo="https://i.imgur.com/h7t0l6q.png" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Marseille (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_MARSEILLEPROV/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMCotedAzur.fr" tvg-logo="https://i.imgur.com/iiVFvIw.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Nice Côte d'Azur (1080p)
+#EXTINF:-1 tvg-id="BFMCotedAzur.fr" tvg-logo="https://i.imgur.com/iiVFvIw.png" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Nice Côte d'Azur (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_NICECOTEDAZUR/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMNormandie.fr" tvg-logo="https://i.imgur.com/WWWQ44G.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Normandie (1080p)
+#EXTINF:-1 tvg-id="BFMNormandie.fr" tvg-logo="https://i.imgur.com/WWWQ44G.png" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Normandie (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_NORMANDIE/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMParisIledeFrance.fr" tvg-logo="https://i.imgur.com/WJuJkag.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Paris Île-de-France (1080p)
+#EXTINF:-1 tvg-id="BFMParisIledeFrance.fr" tvg-logo="https://i.imgur.com/WJuJkag.png" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Paris Île-de-France (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_PARIS/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMTechCo.fr" tvg-logo="https://i.imgur.com/FQ0FpXV.png" group-title="News;Science" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Tech & Co (1080p)
+#EXTINF:-1 tvg-id="BFMTechCo.fr" tvg-logo="https://i.imgur.com/FQ0FpXV.png" group-title="News;Science" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Tech & Co (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TECHANDCO/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMVar.fr" tvg-logo="https://i.imgur.com/vp1oVj3.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Toulon Var (1080p)
+#EXTINF:-1 tvg-id="BFMVar.fr" tvg-logo="https://i.imgur.com/vp1oVj3.png" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Toulon Var (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TOULONVAR/index.m3u8?end=END&start=LIVE
-#EXTINF:-1 tvg-id="BFMTV.fr" tvg-logo="https://i.imgur.com/YJCcczD.png" group-title="News" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM TV (1080p)
+#EXTINF:-1 tvg-id="BFMTV.fr" tvg-logo="https://i.imgur.com/YJCcczD.png" group-title="News" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM TV (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TV/index.m3u8?end=END&start=LIVE
 #EXTINF:-1 tvg-id="BIPTV.fr" tvg-logo="https://i.imgur.com/YQjm4U5.png" group-title="Undefined",BIP TV (480p) [Not 24/7]
@@ -184,8 +177,8 @@ https://dhx-caillou-1-es.samsung.wurl.tv/playlist.m3u8
 https://live.creacast.com/bluediamond/stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal9.ch" tvg-logo="https://i.imgur.com/TNciMh2.png" group-title="Undefined",Canal 9 en Français (1080p)
 https://livehd.vedge.infomaniak.com/livecast/livehd/master.m3u8
-#EXTINF:-1 tvg-id="Canal32.fr" tvg-logo="https://i.imgur.com/lAsE6kN.png" group-title="General",Canal 32 (1080p)
-http://livevideo.vedge.infomaniak.com/livecast/ik:canal32/manifest.m3u8
+#EXTINF:-1 tvg-id="Canal32.fr" tvg-logo="https://i.imgur.com/lAsE6kN.png" group-title="General",Canal 32 (480p)
+https://edge13.vedge.infomaniak.com/livecast/ik:canal32/manifest.m3u8
 #EXTINF:-1 tvg-id="CanaldeVie.cm" tvg-logo="https://i.ibb.co/kQHTpgv/unnamed-4.jpg" group-title="Religious",Canal de Vie (360p)
 https://edge13.vedge.infomaniak.com/livecast/ik:canaldevie/playlist.m3u8
 #EXTINF:-1 tvg-id="CFTUDT.ca" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/Savoir_tv_logo.png" group-title="Education",Canal Savoir (360p)
@@ -216,8 +209,8 @@ http://51.254.199.122:8080/cdirectTV/index.m3u8
 https://strhlslb01.streamakaci.tv/cen/cen-multi/playlist.m3u8
 #EXTINF:-1 tvg-id="CentralTV.fr" tvg-logo="https://i.imgur.com/2DU22BN.png" group-title="Undefined",Central TV (614p) [Not 24/7]
 http://cdn2.ujjina.com:1935/iptvcentraltv/livecentraltvtv/playlist.m3u8
-#EXTINF:-1 tvg-id="CGTNFrench.cn" tvg-logo="https://i.imgur.com/BwhledK.png" group-title="News",CGTN Français (1080p) [Not 24/7]
-https://francais-livews.cgtn.com/hls/LSvev95OuFZtKLc6CeKEFYXj220802LSTeV6PO0Ut9r71Uq3k5goCA220802cd/playlist.m3u8
+#EXTINF:-1 tvg-id="CGTNFrench.cn" tvg-logo="https://i.imgur.com/BwhledK.png" group-title="News",CGTN Français (576p) [Not 24/7]
+https://news.cgtn.com/resource/live/french/cgtn-f.m3u8
 #EXTINF:-1 tvg-id="ChamberTV.lu" tvg-logo="https://i.imgur.com/0QHb3bc.png" group-title="Legislative",Chamber TV (1080p)
 https://media02.webtvlive.eu/chd-edge/smil:chamber_tv_hd.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ChampionTV.ci" tvg-logo="https://i.imgur.com/WjHSrHN.png" group-title="Business",Champion TV (480p)
@@ -234,8 +227,8 @@ http://69.64.57.208/cherifla/playlist.m3u8
 https://voozmedia.fun/stream/christlive/playlist.m3u8
 #EXTINF:-1 tvg-id="CISTV.gn" tvg-logo="https://i.imgur.com/7KdUOqY.png" group-title="Culture;Sports",CIS TV (360p)
 http://185.59.221.131:8081/live/cistv/playlist.m3u8
-#EXTINF:-1 tvg-id="ClubbingTV.fr" tvg-logo="https://i.imgur.com/8giAFx5.png" group-title="Music",Clubbing TV
-https://clubbingtv-samsungnz.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="ClubbingTV.fr" tvg-logo="https://i.imgur.com/8giAFx5.png" group-title="Music",Clubbing TV (720p)
+https://clubbingtv-rakuten.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="CNA.dz" tvg-logo="https://i.imgur.com/Ki3ySUE.png" group-title="Religious",CNA (Chaîne Nord Africaine) (360p) [Not 24/7]
 https://live.creacast.com/cna/smil:cna.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="CNews.fr" tvg-logo="https://i.imgur.com/sSNhk2g.png" group-title="News",CNews (1080p) [Geo-blocked]
@@ -310,8 +303,8 @@ https://helga.iptv2022.com/sh/Espoir_TV/index.m3u8
 https://livetvsteam.com:1936/etelebenin/etelebenin/playlist.m3u8
 #EXTINF:-1 tvg-id="ETV.gp" tvg-logo="https://i.imgur.com/m5E2VP0.png" group-title="General",ETV (1080p)
 https://edge.vedge.infomaniak.com/livecast/ik:etvgp/manifest.m3u8
-#EXTINF:-1 tvg-id="EuronewsFrench.fr" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="News",Euronews
-https://rakuten-euronews-10-be.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="EuronewsFrench.fr" tvg-logo="https://i.imgur.com/8t9mdg9.png" group-title="News",Euronews Français (720p)
+https://euronews-euronews-french-3-us.plex.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Evtele.cg" tvg-logo="https://i.imgur.com/iBlXl2T.png" group-title="Culture",Ev-télé (720p) [Not 24/7]
 https://tgn.bozztv.com/ssh101/ssh101/evtele/playlist.m3u8
 #EXTINF:-1 tvg-id="EvasionTV.gn" tvg-logo="https://i.imgur.com/TTWl2Iy.png" group-title="General",Evasion TV (720p)
@@ -322,7 +315,7 @@ https://stream.berosat.live:19360/evi-tv/evi-tv.m3u8
 https://cdn3.wowza.com/1/YW5wSWZiRGd2eFlU/bGV0aVBq/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ExcelDiscoveryTV.cm" tvg-logo="https://i.ibb.co/wQkmLSg/Channels4-profile-9.jpg" group-title="Religious",Excel Discovery TV (480p) [Not 24/7]
 http://connectiktv.ddns.me:8080/live/61f6352d2b4d5-1/index.m3u8
-#EXTINF:-1 tvg-id="FaceTv.cd" tvg-logo="https://i.imgur.com/IjrFG0K.png" group-title="General",Face Tv (720p)
+#EXTINF:-1 tvg-id="FaceTv.cd" tvg-logo="https://i.imgur.com/IjrFG0K.png" group-title="General" http-referrer="https://player.castr.com/live_e691e400276e11ed9134c99c0b3a3c51",Face Tv (720p)
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_e691e400276e11ed9134c99c0b3a3c51
 https://stream.castr.com/630bd81fa9990f542884f80e/live_e691e400276e11ed9134c99c0b3a3c51/index.m3u8
 #EXTINF:-1 tvg-id="FailArmy.fr" tvg-logo="https://i.imgur.com/CoDZXtv.png" group-title="Comedy",FailArmy
@@ -335,18 +328,18 @@ https://cageu.bozztv.com/ssh101/ssh101/fassotv1/playlist.m3u8
 https://59d39900ebfb8.streamlock.net/FIDELETV/FIDELETV/playlist.m3u8
 #EXTINF:-1 tvg-id="ForYouTV.cm" tvg-logo="https://i.imgur.com/1oMboXL.png" group-title="News",For You TV (480p)
 https://stream.az-multimedia.com:3793/live/foryoutvlive.m3u8
-#EXTINF:-1 tvg-id="France2.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/France_2_2018.svg/512px-France_2_2018.svg.png" group-title="General",France 2 (1080p)
-http://69.64.57.208/france2/mono.m3u8
+#EXTINF:-1 tvg-id="France2.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/France_2_2018.svg/512px-France_2_2018.svg.png" group-title="General",France 2 (1080p) [Geo-blocked]
+https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/francetv/france2.m3u8
 #EXTINF:-1 tvg-id="France3.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/France_3_2018.svg/512px-France_3_2018.svg.png" group-title="General",France 3 (1080p) [Geo-blocked]
 https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/francetv/france3.m3u8
 #EXTINF:-1 tvg-id="France4.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/France_4_2018.svg/512px-France_4_2018.svg.png" group-title="Kids",France 4 (1080p) [Geo-blocked]
 https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/francetv/france4.m3u8
-#EXTINF:-1 tvg-id="France5.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/France_5_2018.svg/512px-France_5_2018.svg.png" group-title="General",France 5 (1080p)
-http://69.64.57.208/france5/mono.m3u8
-#EXTINF:-1 tvg-id="France24French.fr" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="News",France 24 French (1080p)
-https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_5000.m3u8
-#EXTINF:-1 tvg-id="Francophonie24.fr" tvg-logo="https://i.imgur.com/uM1v1sd.png" group-title="Documentary",Francophonie24 (1080p)
-https://5421175365ea3.streamlock.net/live/smil:switch.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="France5.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/France_5_2018.svg/512px-France_5_2018.svg.png" group-title="General",France 5 (1080p) [Geo-blocked]
+https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/francetv/france5.m3u8
+#EXTINF:-1 tvg-id="France24French.fr" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="News",France 24 French (360p)
+https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_500.m3u8
+#EXTINF:-1 tvg-id="Francophonie24.fr" tvg-logo="https://i.imgur.com/uM1v1sd.png" group-title="Documentary",Francophonie (360p)
+http://mv2.tvfrancophonie.org/live/Stream1/playlist.m3u8
 #EXTINF:-1 tvg-id="FunRadio.fr" tvg-logo="https://i.imgur.com/wgxuYsQ.png" group-title="Music",Fun Radio (720p)
 https://livevideo.infomaniak.com/streaming/livecast/funradiovisionhd/playlist.m3u8
 #EXTINF:-1 tvg-id="FunVision.be" tvg-logo="https://i.imgur.com/AhkKr7Y.png" group-title="Music",Fun Radio Vision (720p) [Not 24/7]
@@ -469,8 +462,8 @@ https://tnt-television.com/LBFD_RTV/index.m3u8
 https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/btv/py/lci1.m3u8
 #EXTINF:-1 tvg-id="LCN.ca" tvg-logo="https://i.imgur.com/iKDLgOG.png" group-title="News",LCN [Geo-blocked]
 https://tvalive.akamaized.net/hls/live/2014213/tvan01/tvan01.m3u8
-#EXTINF:-1 tvg-id="LeFigaroTVIledeFrance.fr" tvg-logo="https://i.imgur.com/a8RuRUQ.png" group-title="General",Le Figaro IDF (1080p)
-https://figarotv-live.freecaster.com/live/freecaster/figarotv.m3u8
+#EXTINF:-1 tvg-id="LeFigaroTVIledeFrance.fr" tvg-logo="https://i.imgur.com/a8RuRUQ.png" group-title="General",Le Figaro IDF (720p)
+https://static.lefigaro.fr/secom/tnt.m3u8
 #EXTINF:-1 tvg-id="Lemiracledelamour.fr" tvg-logo="https://i.imgur.com/3Xz4hjD.png" group-title="Series",Le miracle de l'amour
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60549c238c3f21000753d3e0/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e05c6a1-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=21b0efd4-95cf-47d3-8340-8a9081e64732
 #EXTINF:-1 tvg-id="LeaderGospel.cm" tvg-logo="https://i.ibb.co/ygf91Ng/Screenshot-20230807-141328.jpg" group-title="Religious",Leader Gospel (480p) [Not 24/7]
@@ -519,7 +512,7 @@ https://goccn.cloud/hls/Madertv/index.m3u8
 https://edge12.vedge.infomaniak.com/livecast/ik:madrasfmtv/manifest.m3u8
 #EXTINF:-1 tvg-id="ManaEgliseOnline.pt" tvg-logo="https://i.imgur.com/xQYly8O.png" group-title="Religious",Maná Église Online (1080p) [Not 24/7]
 https://w2.manasat.com/eglise-online/smil:eglise-online.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="MandikoTV.cd" tvg-logo="https://i.imgur.com/jsBWsdK.png" group-title="General",Mandiko TV (614p) [Not 24/7]
+#EXTINF:-1 tvg-id="MandikoTV.cd" tvg-logo="https://i.imgur.com/jsBWsdK.png" group-title="General" http-referrer="https://player.castr.com/live_b072ea703a7111edbfe74bb80437147b",Mandiko TV (614p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_b072ea703a7111edbfe74bb80437147b
 https://stream.castr.com/632c52e09206c19bee72a6d6/live_b072ea703a7111edbfe74bb80437147b/index.m3u8
 #EXTINF:-1 tvg-id="Matele.be" tvg-logo="https://i.imgur.com/rw72POr.png" group-title="General",MaTele (1080p) [Not 24/7]
@@ -560,20 +553,22 @@ https://chlivemta1.akamaized.net/hls/live/2008145/mta2/playlist.m3u8
 https://chlivemta.akamaized.net/hls/live/2010555/mtaafrica1/playlist.m3u8
 #EXTINF:-1 tvg-id="MTA5Africa.uk" tvg-logo="https://i.imgur.com/9Cobb2i.png" group-title="Religious",MTA5 Africa (1080p)
 https://chlivemta.akamaized.net/hls/live/2010555/mtaafrica2/playlist.m3u8
-#EXTINF:-1 tvg-id="MTV.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/MTV-2021.svg/512px-MTV-2021.svg.png" group-title="Entertainment",MTV (1080p)
-http://213.246.39.14:8070/MTV/index.m3u8
+#EXTINF:-1 tvg-id="MTV.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/MTV-2021.svg/512px-MTV-2021.svg.png" group-title="Entertainment",MTV France (720p) [Not 24/7]
+http://190.2.155.162:8080/mtvfrance/mpegts
+#EXTINF:-1 tvg-id="MuseumTVFrench.fr" tvg-logo="https://i.imgur.com/WbjURLo.png" group-title="Culture",Museum TV (1080p)
+https://live2.creacast.com/museum-france/smil:museum-france.smil/master.m3u8
 #EXTINF:-1 tvg-id="MyTVChannel.cm" tvg-logo="https://i.imgur.com/vh2373L.png" group-title="Undefined",My TV Channel (720p) [Not 24/7]
 http://connectiktv.ddns.net:5000/mytvchannel/@mytvchannel/playlist.m3u8
-#EXTINF:-1 tvg-id="MyZenTV.fr" tvg-logo="https://i.imgur.com/fIi8o0C.png" group-title="Relax",Myzen TV [Geo-blocked]
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-samsungen-samsungit/playlist.m3u8
+#EXTINF:-1 tvg-id="MyZenTV.fr" tvg-logo="https://i.imgur.com/fIi8o0C.png" group-title="Relax",MyZen TV (1080p)
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-en-plex/playlist.m3u8
 #EXTINF:-1 tvg-id="NagoTV.us" tvg-logo="https://i.imgur.com/cjFVtxK.png" group-title="Entertainment;Music",Nago TV (240p)
 https://lakay.online/public/nagotv/index.fmp4.m3u8
 #EXTINF:-1 tvg-id="NancyWebTV.fr" tvg-logo="https://i.imgur.com/a1OO1t6.png" group-title="General",Nancy Web TV (394p) [Not 24/7]
 https://edge.vedge.infomaniak.com/livecast/ik:nancy-webtv/manifest.m3u8
 #EXTINF:-1 tvg-id="NaturalTV.tr" tvg-logo="https://i.imgur.com/rfcJ674.png" group-title="Culture",Natural TV (720p) [Not 24/7]
 http://broadcasttr.com:1935/naturaltv/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="NauticalChannel.it" tvg-logo="https://i.imgur.com/2ByDyzL.png" group-title="Sports",Nautical Channel
-https://streams2.sofast.tv/vglive-sk-231198/index.m3u8
+#EXTINF:-1 tvg-id="NauticalChannel.it" tvg-logo="https://i.imgur.com/2ByDyzL.png" group-title="Sports",Nautical Channel (720p)
+https://a-cdn.klowdtv.com/live2/nautical_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="NazalisHDTV.cg" tvg-logo="https://i.imgur.com/SrdRtqn.png" group-title="Entertainment",Nazali's HDTV (1080p)
 http://194.163.135.238:5080/WebRTCApp/streams/590264631485484547459082.m3u8
 #EXTINF:-1 tvg-id="NCI.ci" tvg-logo="https://i.imgur.com/I3pv69r.png" group-title="General",NCI (1080p)
@@ -678,8 +673,8 @@ https://stream.it-innov.com/powertv/index.fmp4.m3u8
 https://live4.presstv.ir/live/smil:presstvfr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ProximiteWebTV.ga" tvg-logo="https://i.imgur.com/vu14I3r.png" group-title="General",Proximité Web TV (480p) [Not 24/7]
 https://helga.iptv2022.com/sh/PROXIMITE_WEB_TV/index.m3u8
-#EXTINF:-1 tvg-id="PSTVHD.cd" tvg-logo="https://i.imgur.com/xQlkuAa.png" group-title="General",PSTV HD (480p)
-https://tnt-television.com/PSTV_TVHD/index.m3u8
+#EXTINF:-1 tvg-id="PSTVHD.cd" tvg-logo="https://i.imgur.com/xQlkuAa.png" group-title="General",PSTV HD (480p) [Not 24/7]
+http://51.254.199.122:8080/PSTV/index.m3u8
 #EXTINF:-1 tvg-id="PublicSnTV.sn" tvg-logo="https://i.imgur.com/P4higEz.jpg" group-title="News",PublicSn TV (720p)
 https://goccn.cloud/hls/publictv/index.m3u8
 #EXTINF:-1 tvg-id="RadioContact.be" tvg-logo="https://i.imgur.com/32mmGvB.png" group-title="Music",Radio Contact (1080p)
@@ -710,8 +705,8 @@ https://acwstream.com/acw/hbrtvh/index.fmp4.m3u8
 https://watch.haitilive.net/freehb/rtvs/index.m3u8
 #EXTINF:-1 tvg-id="RadioTVBasseTerre.gp" tvg-logo="https://i.imgur.com/1gGz3Uw.jpg" group-title="General",Radio TV Basse-Terre (720p)
 https://vdo.ssl-stream.com:3412/stream/play.m3u8
-#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.fr" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Family;Movies",Rakuten Family
-https://rakuten-family-16-be.samsung.wurl.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="RakutenTVFamilyMovies.fr" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Family;Movies",Rakuten Family (720p)
+https://rakuten-family-7-fr.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RakutenTVSpotlight.fr" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Movies",Rakuten Spotlight France (720p)
 https://rakuten-spotlight-7-eu.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="RakutenTVActionMovies.fr" tvg-logo="https://i.imgur.com/NJYEYE3.png" group-title="Movies",Rakuten TV Films Action (720p)
@@ -742,14 +737,14 @@ https://d36bxc1bknkxrk.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 https://rt-fra.rttv.com/dvr/rtfrance/playlist.m3u8
 #EXTINF:-1 tvg-id="RTJVA.tg" tvg-logo="https://i.imgur.com/Ja3HVLB.jpg" group-title="Religious",RT JVA (720p) [Not 24/7]
 https://cdn140m.panaccess.com/HLS/RTVJA/index.m3u8
-#EXTINF:-1 tvg-id="RTB.bf" tvg-logo="https://i.imgur.com/BFfLV0y.png" group-title="Undefined",RTB [Not 24/7]
-https://edge20.vedge.infomaniak.com/livecast/ik:rtblive1_8/manifest.m3u8
+#EXTINF:-1 tvg-id="RTB.bf" tvg-logo="https://i.imgur.com/BFfLV0y.png" group-title="Undefined",RTB (360p) [Not 24/7]
+https://edge.vedge.infomaniak.com/livecast/ik:rtbtvlive1/manifest.m3u8
 #EXTINF:-1 tvg-id="RTBZenith.bf" tvg-logo="https://i.imgur.com/U47xIzr.png" group-title="Culture",RTB Zénith (360p) [Geo-blocked]
 https://edge20.vedge.infomaniak.com/livecast/ik:zenith/playlist.m3u8
-#EXTINF:-1 tvg-id="RTG1.gn" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 1 (240p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTG1.gn" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General" http-referrer="https://player.castr.com/live_e05d20809c3611edadb72177341481c3",RTG 1 (240p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_e05d20809c3611edadb72177341481c3
 https://stream.castr.com/6358a30fa50e3ae11b6d0424/live_e05d20809c3611edadb72177341481c3/index.m3u8
-#EXTINF:-1 tvg-id="RTG2.gn" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 2 (240p) [Not 24/7]
+#EXTINF:-1 tvg-id="RTG2.gn" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General" http-referrer="https://player.castr.com/live_cbde16509c3611ed91f289dac03ffaaf",RTG 2 (240p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_cbde16509c3611ed91f289dac03ffaaf
 https://stream.castr.com/6358a30fa50e3ae11b6d0424/live_cbde16509c3611ed91f289dac03ffaaf/index.m3u8
 #EXTINF:-1 tvg-id="RTHTV1.us" tvg-logo="https://i.imgur.com/4z0FiEA.png" group-title="General",RTH-TV1 (1080p)
@@ -798,11 +793,11 @@ https://bild-und-ton.stream/sophiatv-fr/smil:sophia-tv-fr.smil/playlist.m3u8
 https://wmoy82n4y2a7-hls-live.5centscdn.com/sostv/live.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="SouthPark.fr" tvg-logo="https://i.imgur.com/qA3KsTh.png" group-title="Animation",South Park
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/618e34ac4a270700077b1f32/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e0662e4-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=0d7bbd81-5b0c-45a3-b97c-c2ac8161fb85
-#EXTINF:-1 tvg-id="SouvenirsfromEarthTV.de" tvg-logo="https://i.ibb.co/Qf1Ys8S/SOUVENIRS-FROM-EARTH.png" group-title="Culture",Souvenirs from Earth TV
+#EXTINF:-1 tvg-id="SouvenirsfromEarthTV.de" tvg-logo="https://i.ibb.co/Qf1Ys8S/SOUVENIRS-FROM-EARTH.png" group-title="Culture" http-referrer="https://player.castr.com/live_f3bc1800279a11ec89f80341acd6773a",Souvenirs from Earth TV
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_f3bc1800279a11ec89f80341acd6773a
 https://stream.castr.com/615c867def76d75817460129/live_f3bc1800279a11ec89f80341acd6773a/index.m3u8
-#EXTINF:-1 tvg-id="SportenFrance.fr" tvg-logo="https://i.imgur.com/1IXQoWq.png" group-title="Sports",Sport En France (1080p)
-https://sp1564435593.mytvchain.info/live/sp1564435593/index.m3u8
+#EXTINF:-1 tvg-id="SportenFrance.fr" tvg-logo="https://i.imgur.com/1IXQoWq.png" group-title="Sports",Sport En France (360p)
+https://sp1564435593.mytvchain.info/live/sp1564435593_360/index.m3u8
 #EXTINF:-1 tvg-id="SSMTV.cd" tvg-logo="https://i.imgur.com/692r6TF.png" group-title="Religious",SSM TV (576p)
 https://tnt-television.com/SSM-STREAM1/index.m3u8
 #EXTINF:-1 tvg-id="StingrayClassica.ca" tvg-logo="https://i.imgur.com/nh1k5RC.png" group-title="Music",Stingray Classica (1080p)
@@ -829,7 +824,7 @@ http://185.59.221.131:8081/live/teleafrica/playlist.m3u8
 https://tv2.fastcast4u.com:3238/live/radiotelebostonlive.m3u8
 #EXTINF:-1 tvg-id="TeleCongo.cg" tvg-logo="https://i.imgur.com/r4B5zq4.png" group-title="General",Télé Congo (720p)
 http://51.254.199.122:8080/telecongo/index.m3u8
-#EXTINF:-1 tvg-id="TeleCulturelleMedias.ca" tvg-logo="https://i.imgur.com/xabicXU.png" group-title="Culture",Tele Culturelle Medias (1080p)
+#EXTINF:-1 tvg-id="TeleCulturelleMedias.ca" tvg-logo="https://i.imgur.com/xabicXU.png" group-title="Culture" http-referrer="https://player.castr.com/live_79b37a4032dd11ed85c9d9bece7b557e",Tele Culturelle Medias (1080p)
 #EXTVLCOPT:http-referrer=https://player.castr.com/live_79b37a4032dd11ed85c9d9bece7b557e
 https://stream.castr.com/631f9bb9ecbe28ce6910385a/live_79b37a4032dd11ed85c9d9bece7b557e/index.m3u8
 #EXTINF:-1 tvg-id="TeleHaiti.ht" tvg-logo="https://i.imgur.com/Hso9j58.png" group-title="General",Tele Haiti (1088p) [Not 24/7]
@@ -840,8 +835,8 @@ https://5790d294af2dc.streamlock.net/8124/8124/playlist.m3u8
 https://pacific.zekletech.com:2002/live/acw_01/index.m3u8
 #EXTINF:-1 tvg-id="TelePam.us" tvg-logo="https://i.ibb.co/xMYMyHh/telepammmm.png" group-title="General",Tele Pam (1080p)
 https://watch.haitilive.net/app/2020/telepam/index.fmp4.m3u8
-#EXTINF:-1 tvg-id="TeleSahel.ne" tvg-logo="https://i.imgur.com/vboq428.png" group-title="General",Télé Sahel (576p)
-http://69.64.57.208/telesahel/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleSahel.ne" tvg-logo="https://i.imgur.com/vboq428.png" group-title="General",Télé Sahel (480p) [Geo-blocked]
+https://iptv--iptv.repl.co/French/tele_sahel
 #EXTINF:-1 tvg-id="TeleTchad.td" tvg-logo="https://i.imgur.com/udSzfHD.png" group-title="General",Tele Tchad (1080p)
 https://strhlslb01.streamakaci.tv/str_tchad_tchad/str_tchad_multi/playlist.m3u8
 #EXTINF:-1 tvg-id="CIVMDT.ca" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/T%C3%A9l%C3%A9-Qu%C3%A9bec_logo.svg/512px-T%C3%A9l%C3%A9-Qu%C3%A9bec_logo.svg.png" group-title="Education",Télé-Québec (720p)
@@ -882,6 +877,8 @@ https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/tf1plus/tfx.m3
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f8ece1a89d79800072510e6/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e052a62-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=1739a4c5-d7e2-41f4-aa40-91bb650267c5
 #EXTINF:-1 tvg-id="ThePetCollective.fr" tvg-logo="https://i.imgur.com/bcspFAU.png" group-title="Family",The Pet Collective
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f8ecd336d64c9000754cdf1/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e052a60-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=6ad13452-4038-4ee5-9d1d-60ffd7bdf4ed
+#EXTINF:-1 tvg-id="TiVi5Monde.fr" tvg-logo="https://i.imgur.com/fVVKpmk.png" group-title="Undefined",TiVi5Monde (1080p)
+http://154.197.91.168:7001/play/a0dz/index.m3u8
 #EXTINF:-1 tvg-id="TM1TV.ml" tvg-logo="https://i.imgur.com/83BgaBa.png" group-title="General",TM1 (360p) [Not 24/7]
 http://69.64.57.208/tm1/playlist.m3u8
 #EXTINF:-1 tvg-id="TMtv.sn" tvg-logo="https://i.imgur.com/6KyWG6A.jpeg" group-title="Culture",TM.tv (360p)
@@ -890,20 +887,20 @@ https://helga.iptv2022.com/sh/Tamasheq_TV/index.m3u8
 http://hls.tmacaraibes.com/live/index.m3u8
 #EXTINF:-1 tvg-id="TMC.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/54/TMC_logo.svg/512px-TMC_logo.svg.png" group-title="General",TMC (720p) [Geo-blocked]
 https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/tf1plus/tmc.m3u8
-#EXTINF:-1 tvg-id="TNTV.pf" tvg-logo="https://i.imgur.com/e5eVHam.png" group-title="General",TNTV (1080p)
-https://tntv-samsung-fr.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="TNTV.pf" tvg-logo="https://i.imgur.com/e5eVHam.png" group-title="General",TNTV (720p) [Not 24/7]
+https://bcovlive-a.akamaihd.net/34b9e8a6345d4ee8acb351730d1dbe89/us-west-2/5816339219001/playlist.m3u8
 #EXTINF:-1 tvg-id="Toonami.fr" tvg-logo="https://i.imgur.com/U7qh4yF.png" group-title="Animation",Toonami (1080p) [Geo-blocked]
 https://adultswim-vodlive.cdn.turner.com/live/toonami/stream_de.m3u8
 #EXTINF:-1 tvg-id="TortuesNinjaTV.fr" tvg-logo="https://i.imgur.com/d2ACbkV.png" group-title="Kids",Tortues Ninja TV
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f8ecc1b37867f00071469e9/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e050351-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=8626ec32-5f10-4aef-bfdb-f5495f6d4ff1
 #EXTINF:-1 tvg-id="TR24Television.cm" tvg-logo="https://i.ibb.co/fQrBY1M/tr24-telepack.jpg" group-title="Entertainment",TR24 (720p)
 https://stream.it-innov.com/tr24/index.m3u8
-#EXTINF:-1 tvg-id="TraceLatina.fr" tvg-logo="https://i.imgur.com/CUVAi4u.png" group-title="Music",Trace Latina
-http://185.234.217.27:8002/play/a02f/index.m3u8
-#EXTINF:-1 tvg-id="TraceSportStars.fr" tvg-logo="https://i.imgur.com/FabFP5A.png" group-title="Sports",Trace Sports Stars
-https://trace-sportstars-samsungnz.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="TraceUrban.fr" tvg-logo="https://i.imgur.com/DLIbUMx.png" group-title="Music",Trace Urban
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01076-lightningintern-traceurban-samsungnz/playlist.m3u8
+#EXTINF:-1 tvg-id="TraceLatina.fr" tvg-logo="https://i.imgur.com/CUVAi4u.png" group-title="Music",Trace Latina (720p)
+https://amg01131-tracetv-tracelatina-klowdtv-v10em.amagi.tv/playlist/amg01131-tracetv-tracelatina-klowdtv/playlist.m3u8
+#EXTINF:-1 tvg-id="TraceSportStars.fr" tvg-logo="https://i.imgur.com/FabFP5A.png" group-title="Sports",Trace Sport Stars (1080p) [Geo-blocked]
+http://tracesportstars-samsunges.amagi.tv/hls/amagi_hls_data_samsunguk-tracesport-samsungspain/CDN/playlist.m3u8
+#EXTINF:-1 tvg-id="TraceUrban.fr" tvg-logo="https://i.imgur.com/DLIbUMx.png" group-title="Music",Trace Urban (720p)
+https://amg01131-tracetv-traceurban-klowdtv-utiqd.amagi.tv/playlist/amg01131-tracetv-traceurban-klowdtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TV2.dz" tvg-logo="https://i.imgur.com/VEb631f.png" group-title="General",TV2 (480p)
 https://tgn.bozztv.com/dvrfl05/gin-canalalgerie/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="TV2.tg" tvg-logo="https://i.imgur.com/dUU0rzZ.png" group-title="General",TV 2 (720p) [Not 24/7]
@@ -984,8 +981,8 @@ http://69.64.57.208/walftv/playlist.m3u8
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60afa749ac7f3200078adb40/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e05edb4-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=53334da2-2bf6-4492-9d72-20248eaff31c
 #EXTINF:-1 tvg-id="Weo.fr" tvg-logo="https://i.imgur.com/qtpclVj.png" group-title="General",Wéo (Hauts-de-France) (480p) [Not 24/7]
 https://live.digiteka.com/1/WGQ1NnhEN0lzM0NU/dk1EOHhw/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="WildSideTV.fr" tvg-logo="https://i.imgur.com/cQkfRhH.png" group-title="Movies",Wild Side TV
-http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60b4d6c806ad2a00073b3108/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e0614c0-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=d329ef28-8c5a-4451-bc8a-ab7d7083f320
+#EXTINF:-1 tvg-id="WildSideTV.fr" tvg-logo="https://i.imgur.com/cQkfRhH.png" group-title="Movies",Wildside TV (720p)
+https://versatile-wildsidetv-1-fr.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="XilamTV.fr" tvg-logo="https://yt3.googleusercontent.com/ytc/AIdro_k6spR1AVLZ0ISqrFP-Z9JeBMHPpAc9T-pmFlG6_lSkNw=s160-c-k-c0x00ffffff-no-rj" group-title="Animation",XilamTV (1080p)
 https://xilam-animation-1-fr.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Yaquelaveritequicompte.fr" tvg-logo="https://i.imgur.com/MDHN2Vc.png" group-title="Entertainment",Y'a que la vérité qui compte

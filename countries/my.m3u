@@ -7,7 +7,7 @@ https://d2idp3hzkhjpih.cloudfront.net/out/v1/4b85d9c2bf97413eb0c9fd875599b837/in
 https://488b9e074624.ap-south-1.playback.live-video.net/api/video/v1/ap-south-1.533267421985.channel.B7bB1wHJRCnw.m3u8
 #EXTINF:-1 tvg-id="BBCNewsAsiaPacific.uk" tvg-logo="https://i.imgur.com/vSz2WEp.png" group-title="News",BBC News Asia Pacific (720p)
 https://cdn4.skygo.mn/live/disk1/BBC_News/HLSv3-FTA/BBC_News.m3u8
-#EXTINF:-1 tvg-id="BeritaRTM.my" tvg-logo="https://i.imgur.com/1Xzxsgl.png" group-title="Undefined",Berita RTM [Geo-blocked]
+#EXTINF:-1 tvg-id="BeritaRTM.my" tvg-logo="https://i.imgur.com/1Xzxsgl.png" group-title="Undefined" http-referrer="https://rtm-player.glueapi.io/",Berita RTM [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:berita/playlist.m3u8?id=5
 #EXTINF:-1 tvg-id="BloombergTVAsia.hk" tvg-logo="https://i.imgur.com/OuogLHx.png" group-title="Business",Bloomberg TV Asia (720p)
@@ -16,8 +16,8 @@ https://bloomberg.com/media-manifest/streams/asia.m3u8
 https://bloomberg.com/media-manifest/streams/asia-event.m3u8
 #EXTINF:-1 tvg-id="CCTV4Asia.cn" tvg-logo="https://i.imgur.com/tWt4Wou.png" group-title="General",CCTV-4 Asia (480p)
 http://210.210.155.37/qwr9ew/s/s19/index.m3u8
-#EXTINF:-1 tvg-id="CinemaWorld.my" tvg-logo="https://i.imgur.com/D2qNVZ7.png" group-title="Movies",CinemaWorld (576p)
-http://210.210.155.37/dr9445/h/h04/index.m3u8
+#EXTINF:-1 tvg-id="CinemaWorld.my" tvg-logo="https://i.imgur.com/D2qNVZ7.png" group-title="Movies",CinemaWorld (576p) [Geo-blocked]
+http://210.210.155.35/dr9445/h/h04/index.m3u8
 #EXTINF:-1 tvg-id="CNBCAsia.sg" tvg-logo="https://i.imgur.com/Mn8Rsup.png" group-title="Business",CNBC Asia HD (720p) [Geo-blocked]
 https://cdn09jtedge.indihometv.com/joss/134/cnbcasia/index.m3u8
 #EXTINF:-1 tvg-id="CrimePlusInvestigationAsia.sg" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/C%26I_logo.svg/512px-C%26I_logo.svg.png" group-title="Entertainment",Crime + Investigation Asia HD (720p) [Geo-blocked]
@@ -34,16 +34,16 @@ https://cdn3.wowza.com/1/QmVNUVhTNTZSS3Uz/YWQ0aHpi/hls/live/playlist.m3u8
 http://seb.sason.top/ptv/ftv.php?id=ms
 #EXTINF:-1 tvg-id="KPlus.sg" tvg-logo="https://i.imgur.com/RbS0q71.png" group-title="Entertainment",K+ (Indonesian subtitle) (576p)
 http://210.210.155.37/uq2663/h/h08/index.m3u8
-#EXTINF:-1 tvg-id="Kanal10Asia.se" tvg-logo="https://i.imgur.com/tY7IJva.png" group-title="Religious",Kanal 10 Asia (540p)
-http://cdn-kanal10.crossnet.net:1935/kanal10/kanal10asia/playlist.m3u8
-#EXTINF:-1 tvg-id="Okey.my" tvg-logo="https://i.imgur.com/V2jREQ5.png" group-title="General",Okey RTM [Geo-blocked]
+#EXTINF:-1 tvg-id="Kanal10Asia.se" tvg-logo="https://i.imgur.com/tY7IJva.png" group-title="Religious",Kanal 10 Asia (540p) [Not 24/7]
+https://cdn-kanal10.crossnet.net/kanal10/ngrp:kanal10asia_all/playlist.m3u8
+#EXTINF:-1 tvg-id="Okey.my" tvg-logo="https://i.imgur.com/V2jREQ5.png" group-title="General" http-referrer="https://rtm-player.glueapi.io/",Okey RTM [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=3
 #EXTINF:-1 tvg-id="ONE.sg" tvg-logo="https://i.imgur.com/ea0iGfA.png" group-title="Entertainment",One TV Asia (576p) [Geo-blocked]
 http://210.210.155.37/uq2663/h/h143/index.m3u8
 #EXTINF:-1 tvg-id="RaiItaliaAsia.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Rai_Italia_-_Logo_2017.svg/512px-Rai_Italia_-_Logo_2017.svg.png" group-title="Undefined",RAI Italia Asia (576p)
 http://210.210.155.37/x6bnqe/s/s63/index2.m3u8
-#EXTINF:-1 tvg-id="ParlimenMalaysia.my" tvg-logo="https://playtv.unifi.com.my:7047/CPS/images/universal/film/logo/202208/20220810/20220810211708829sbp.png" group-title="Legislative",RTM Parlimen (Dewan Negara) [Geo-blocked]
+#EXTINF:-1 tvg-id="ParlimenMalaysia.my" tvg-logo="https://playtv.unifi.com.my:7047/CPS/images/universal/film/logo/202208/20220810/20220810211708829sbp.png" group-title="Legislative" http-referrer="https://rtm-player.glueapi.io/",RTM Parlimen (Dewan Negara) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:negara/playlist.m3u8?id=8
 #EXTINF:-1 tvg-id="TV1.my" tvg-logo="https://i.imgur.com/wSyPmiY.png" group-title="Undefined",RTM TV 1 [Geo-blocked]
@@ -58,7 +58,7 @@ https://tonton-live-switch-ssar.akamaized.net/stream-tv3/master.m3u8?bpkio_servi
 https://ott.tv5monde.com/Content/HLS/Live/channel(seasie)/variant.m3u8
 #EXTINF:-1 tvg-id="TV5MondePacific.fr" tvg-logo="https://i.imgur.com/mfZOYZI.png" group-title="Undefined",TV5Monde Pacifique (1080p) [Geo-blocked]
 https://ott.tv5monde.com/Content/HLS/Live/channel(pacifique)/variant.m3u8
-#EXTINF:-1 tvg-id="TV6.my" tvg-logo="https://i.imgur.com/bK8UH9D.png" group-title="Undefined",TV6 [Geo-blocked]
+#EXTINF:-1 tvg-id="TV6.my" tvg-logo="https://i.imgur.com/bK8UH9D.png" group-title="Undefined" http-referrer="https://rtm-player.glueapi.io/",TV6 [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/playlist.m3u8?id=6
 #EXTINF:-1 tvg-id="TV9.my" tvg-logo="https://i.imgur.com/Krh1F8d.png" group-title="Undefined",TV9

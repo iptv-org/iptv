@@ -1,7 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AstroNet.ar" tvg-logo="https://i.imgur.com/SNbLfau.png" group-title="Science",AstroNet (360p)
 https://stmv1.cnarlatam.com/astronet/astronet/playlist.m3u8
-#EXTINF:-1 tvg-id="BFMTechCo.fr" tvg-logo="https://i.imgur.com/FQ0FpXV.png" group-title="News;Science" user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Tech & Co (1080p)
+#EXTINF:-1 tvg-id="BFMTechCo.fr" tvg-logo="https://i.imgur.com/FQ0FpXV.png" group-title="News;Science" http-user-agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36",BFM Tech & Co (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36
 https://ncdn-live-bfm.pfd.sfr.net/shls/LIVE$BFM_TECHANDCO/index.m3u8?end=END&start=LIVE
 #EXTINF:-1 tvg-id="BRTVScienceEducationChannel.cn" tvg-logo="https://i.imgur.com/q0qvOUe.png" group-title="Education;Science",BRTV Science & Education Channel
@@ -14,8 +14,8 @@ https://vcp.myplaytv.com/explosioncreativa/explosioncreativa/playlist.m3u8
 https://stmv5.voxtvhd.com.br/hiperconectados/hiperconectados/playlist.m3u8
 #EXTINF:-1 tvg-id="IlmvaTabiat.tj" tvg-logo="https://i.imgur.com/MDULX7X.png" group-title="Science",Ilm va Tabiat (1080p)
 https://live.teleradiocom.tj/15/3m.m3u8
-#EXTINF:-1 tvg-id="InWonder.nl" tvg-logo="https://i.imgur.com/7kOhGef.png" group-title="Science",InWonder
-https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg00861-terninternation-inwondernz-samsungnz/playlist.m3u8
+#EXTINF:-1 tvg-id="InWonder.nl" tvg-logo="https://i.imgur.com/7kOhGef.png" group-title="Science",InWonder (720p)
+https://inwonder-samsungau.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="NatureTV.br" tvg-logo="https://i.imgur.com/g7pLORX.png" group-title="Documentary;Science",Nature TV (720p)
 https://stmv1.srvif.com/nattv/nattv/playlist.m3u8
 #EXTINF:-1 tvg-id="NovaTVAgrotour.br" tvg-logo="https://i.imgur.com/cgN2hfm.png" group-title="Documentary;Science",Nova TV Agrotour (360p)
@@ -36,14 +36,15 @@ https://tv.initium.net.ar:3939/live/tectvmainlive.m3u8
 https://stmv1.cnarlatam.com/techscience365/techscience365/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleAmbienteTV.it" tvg-logo="https://i.imgur.com/c7w7DRL.png" group-title="Culture;Science",TeleAmbiente TV (720p)
 https://5f22d76e220e1.streamlock.net/teleambiente/teleambiente/playlist.m3u8
-#EXTINF:-1 tvg-id="XtremaAnimal.ar" tvg-logo="https://i.imgur.com/HQxKLlK.png" group-title="Documentary;Science",Xtrema Animal
+#EXTINF:-1 tvg-id="XtremaAnimal.ar" tvg-logo="https://i.imgur.com/HQxKLlK.png" group-title="Documentary;Science" http-referrer="https://xtrematv.com/?p=1504",Xtrema Animal
 #EXTVLCOPT:http-referrer=https://xtrematv.com/?p=1504
 https://stmv6.voxtvhd.com.br/xtremaanimal/xtremaanimal/playlist.m3u8
-#EXTINF:-1 tvg-id="PervyyKosmicheskiy.ru" tvg-logo="https://i.imgur.com/N1Ze5IE.png" group-title="Science",Первый космический
-http://stream01.vnet.am/Evrika/mono.m3u8
+#EXTINF:-1 tvg-id="PervyyKosmicheskiy.ru" tvg-logo="https://i.imgur.com/N1Ze5IE.png" group-title="Science" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",Космический (480p) [Not 24/7]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
+http://ott-cdn.ucom.am/s44/index.m3u8
 #EXTINF:-1 tvg-id="BilimIlim.kg" tvg-logo="https://i.ibb.co/qswtSWm/428598841-309456895457301-6206911287895397651-n-1.png" group-title="Kids;Science",ЭлТР Билим Илим (480p) [Not 24/7]
 http://gohoski.fvds.ru:3000/mediabay/611/index.m3u8
 #EXTINF:-1 tvg-id="ShandongTVAgriculturalScienceChannel.cn" tvg-logo="https://i.imgur.com/EY2zH06.png" group-title="Science",山东农科 (406p) [Geo-blocked]
 http://livealone302.iqilu.com/iqilu/nkpd.m3u8
-#EXTINF:-1 tvg-id="ChuzhouScienceEducationChannel.cn" tvg-logo="https://i.imgur.com/9JfZJRv.png" group-title="Education;Science",滁州科教 (450p)
-http://183.167.193.45:1935/live/cztvkj/playlist.m3u8
+#EXTINF:-1 tvg-id="ChuzhouScienceEducationChannel.cn" tvg-logo="https://i.imgur.com/9JfZJRv.png" group-title="Education;Science",滁州市广播电视台 科教频道 (400p)
+http://live.cztv.cc:85/live/sjpd.m3u8
