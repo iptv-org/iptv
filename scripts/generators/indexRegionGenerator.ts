@@ -28,14 +28,14 @@ export class IndexRegionGenerator implements Generator {
       .orderBy((stream: Stream) => stream.getTitle())
       .filter((stream: Stream) => stream.isSFW())
       .forEach((stream: Stream) => {
-        if (stream.noBroadcastArea()) {
+        if (!stream.hasBroadcastArea()) {
           const streamClone = stream.clone()
           streamClone.groupTitle = 'Undefined'
           groupedStreams.push(streamClone)
           return
         }
 
-        this.getStreamRegions(stream).forEach((region: Region) => {
+        stream.getBroadcastRegions().forEach((region: Region) => {
           const streamClone = stream.clone()
           streamClone.groupTitle = region.name
           groupedStreams.push(streamClone)
@@ -50,34 +50,6 @@ export class IndexRegionGenerator implements Generator {
     const playlist = new Playlist(groupedStreams, { public: true })
     const filepath = 'index.region.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
-  }
-
-  getStreamRegions(stream: Stream) {
-    let streamRegions = new Collection()
-    stream.broadcastArea.forEach(broadcastAreaCode => {
-      const [type, code] = broadcastAreaCode.split('/')
-      switch (type) {
-        case 'r':
-          const groupedRegions = this.regions.keyBy((region: Region) => region.code)
-          streamRegions.add(groupedRegions.get(code))
-          break
-        case 's':
-          const [countryCode] = code.split('-')
-          const subdivisionRegions = this.regions.filter((region: Region) =>
-            region.countries.includes(countryCode)
-          )
-          streamRegions = streamRegions.concat(subdivisionRegions)
-          break
-        case 'c':
-          const countryRegions = this.regions.filter((region: Region) =>
-            region.countries.includes(code)
-          )
-          streamRegions = streamRegions.concat(countryRegions)
-          break
-      }
-    })
-
-    return streamRegions
+    this.logger.info(JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }))
   }
 }
