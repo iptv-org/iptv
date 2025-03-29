@@ -6,9 +6,9 @@ labels: ['streams:add']
 body:
   - type: input
     attributes:
-      label: Channel ID (required)
-      description: Unique channel ID from [iptv-org.github.io](https://iptv-org.github.io/). If you can't find the channel you want in the list, please let us know through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=channels_add.yml&title=Add%3A+) before posting your request.
-      placeholder: 'BBCAmericaEast.us'
+      label: Stream ID (required)
+      description: "ID of the stream consisting of `<channel_id>` or `<channel_id>@<feed_id>`. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). If you can't find the channel you want in the list, please let us know through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=channels_add.yml&title=Add%3A+) before posting your request."
+      placeholder: 'BBCAmerica.us@East'
     validations:
       required: true
 
@@ -28,9 +28,12 @@ body:
         - 2160p
         - 1280p
         - 1080p
+        - 1080i
         - 720p
         - 576p
+        - 576i
         - 480p
+        - 480i
         - 360p
 
   - type: dropdown
