@@ -4,24 +4,26 @@ import * as glob from 'glob'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
-
-  execSync(
-    'STREAMS_DIR=tests/__data__/input/streams_generate DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.gh-pages LOGS_DIR=tests/__data__/output/logs npm run playlist:generate',
-    { encoding: 'utf8' }
-  )
 })
 
 it('can generate playlists and logs', () => {
+  execSync(
+    'STREAMS_DIR=tests/__data__/input/playlist_generate DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.gh-pages LOGS_DIR=tests/__data__/output/logs npm run playlist:generate',
+    { encoding: 'utf8' }
+  )
+
   const playlists = glob
-    .sync('tests/__data__/expected/.gh-pages/**/*.m3u')
-    .map((file: string) => file.replace('tests/__data__/expected/', ''))
+    .sync('tests/__data__/expected/playlist_generate/.gh-pages/**/*.m3u')
+    .map((file: string) => file.replace('tests/__data__/expected/playlist_generate/', ''))
 
   playlists.forEach((filepath: string) => {
-    expect(content(`output/${filepath}`), filepath).toBe(content(`expected/${filepath}`))
+    expect(content(`output/${filepath}`), filepath).toBe(
+      content(`expected/playlist_generate/${filepath}`)
+    )
   })
 
   expect(content('output/logs/generators.log').split('\n').sort()).toStrictEqual(
-    content('expected/logs/generators.log').split('\n').sort()
+    content('expected/playlist_generate/logs/generators.log').split('\n').sort()
   )
 })
 
