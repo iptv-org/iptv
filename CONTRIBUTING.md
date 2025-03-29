@@ -20,14 +20,22 @@ Regardless of which option you choose, before posting your request please do the
 
 - Make sure the link you want to add works stably. To check this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
 - Make sure the link is not already in the playlist. This can be done by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- Find the ID of the channel you want to add in our [database](https://iptv-org.github.io/). If this particular channel is not in the database, then leave a request to add it [here](https://github.com/iptv-org/database/issues/new/choose) and wait until it is approved before continuing.
-- Make sure the channel is not blocklisted. This can be done by checking the [blocklist.csv](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) file.
+- Find the ID of the channel you want on [iptv-org.github.io](https://iptv-org.github.io/). If your desired channel is not on the list you can leave a request to add it [here](https://github.com/iptv-org/database/issues/new/choose).
+- Make sure the channel is not blocklisted. It can also be done through [iptv-org.github.io](https://iptv-org.github.io/).
 - The link does not lead to the Xtream Codes server. [Why don't you accept links to Xtream Codes server?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server)
 - If you know that the broadcast only works in certain countries or it is periodically interrupted, do not forget to indicate this in the request.
 
-A requests without a valid channel ID or working link to the stream will be closed immediately.
+A requests without a valid stream ID or working link to the stream will be closed immediately.
 
 Note all links in playlists are sorted automatically by scripts so there is no need to sort them manually. For more info, see [Scripts](#scripts).
+
+### How to fix the stream description?
+
+Most of the stream description (channel name, categories, languages, broadcast area, logo) we load from the [iptv-org/database](https://github.com/iptv-org/database) using the stream ID.
+
+So first of all, make sure that the desired stream has the correct ID. A full list of all supported channels and their corresponding IDs can be found on [iptv-org.github.io](https://iptv-org.github.io/). To change the stream ID of any link in the playlist, just fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams%3Aedit&projects=&template=2_streams_edit.yml&title=Edit%3A+).
+
+If, however, you have found an error in the database itself, this is the place to go: [How to edit channel description?](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md#how-to-edit-channel-description)
 
 ### How to distinguish a link to an Xtream Codes server from a regular one?
 
@@ -52,6 +60,37 @@ The only thing before publishing your report is to make sure that:
 
 An issue without a valid link will be closed immediately.
 
+### How to find a broken stream?
+
+For starters, you can just try to open the playlist in [VLC player](https://www.videolan.org/vlc/). The player outputs all errors to the log (Tools -> Messages) so you'll be able to determine pretty accurately why a link isn't working.
+
+Another way to test links is to use the NPM script. To do this, first make sure you have [Node.js](https://nodejs.org/en) installed on your system. Then go to the `iptv` folder using [Console](https://en.wikipedia.org/wiki/Windows_Console) (or [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>) if you have macOS) and run the command:
+
+```sh
+npm run playlist:test path/to/playlist.m3u
+```
+
+This command will run an automatic check of all links in the playlist and display their status:
+
+```sh
+npm run playlist:test streams/fr.m3u
+
+streams/fr.m3u
+┌─────┬───────────────────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────────────────┐
+│     │ tvg-id                    │ url                                                                                                  │ status                    │
+├─────┼───────────────────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────────────────┤
+│  0  │ 6ter.fr                   │ https://origin-caf900c010ea8046.live.6cloud.fr/out/v1/29c7a579af3348b48230f76cd75699a5/dash_short... │ LOADING...                │
+│  1  │ 20MinutesTV.fr            │ https://lives.digiteka.com/stream/86d3e867-a272-496b-8412-f59aa0104771/index.m3u8                    │ FFMPEG_STREAMS_NOT_FOUND  │
+│  2  │                           │ https://video1.getstreamhosting.com:1936/8420/8420/playlist.m3u8                                     │ OK                        │
+│  3  │ ADNTVPlus.fr              │ https://samsunguk-adn-samsung-fre-qfrlc.amagi.tv/playlist/samsunguk-adn-samsung-fre/playlist.m3u8    │ HTTP_FORBIDDEN            │
+│  4  │ Africa24.fr               │ https://edge12.vedge.infomaniak.com/livecast/ik:africa24/manifest.m3u8                               │ OK                        │
+│  5  │ Africa24English.fr        │ https://edge17.vedge.infomaniak.com/livecast/ik:africa24sport/manifest.m3u8                          │ OK                        │
+│  6  │ AfricanewsEnglish.fr      │ https://37c774660687468c821a51190046facf.mediatailor.us-east-1.amazonaws.com/v1/master/04fd913bb2... │ HTTP_GATEWAY_TIMEOUT      │
+│  7  │ AlpedHuezTV.fr            │ https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8                                   │ HTTP_NOT_FOUND            │
+```
+
+After that, all you have to do is report any broken streams you find.
+
 ### How do I remove my channel from playlist?
 
 To request removal of a link to a channel from the repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=-removal-request.yml&title=Remove%3A+) and wait for the request to be reviewed (this usually takes no more than 1 business day). And if the request is approved, links to the channel will be immediately removed from the repository.
@@ -65,22 +104,22 @@ Please note that we only accept removal requests from channel owners and their o
 For a stream to be approved, its description must follow this template:
 
 ```
-#EXTINF:-1 tvg-id="CHANNEL_ID",CHANNEL_NAME (RESOLUTION) [LABEL]
+#EXTINF:-1 tvg-id="STREAM_ID",CHANNEL_NAME (RESOLUTION) [LABEL]
 STREAM_URL
 ```
 
-| Attribute      | Description                                                                                | Required | Valid values                                                                                                               |
-| -------------- | ------------------------------------------------------------------------------------------ | -------- | -------------------------------------------------------------------------------------------------------------------------- |
-| `CHANNEL_ID`   | Channel ID.                                                                                | Optional | Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). |
-| `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                | Required | -                                                                                                                          |
-| `RESOLUTION`   | Maximum stream resolution.                                                                 | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc                                                                               |
-| `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users. | Optional | `Geo-blocked` or `Not 24/7`                                                                                                |
-| `STREAM_URL`   | Stream URL.                                                                                | Required | -                                                                                                                          |
+| Attribute      | Description                                                                                                                                  | Required | Valid values                                 |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------- |
+| `STREAM_ID`    | ID of the stream. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
+| `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                                                                  | Required | -                                            |
+| `RESOLUTION`   | Maximum stream resolution.                                                                                                                   | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
+| `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users.                                                   | Optional | `Geo-blocked` or `Not 24/7`                  |
+| `STREAM_URL`   | Stream URL.                                                                                                                                  | Required | -                                            |
 
 Example:
 
 ```xml
-#EXTINF:-1 tvg-id="ExampleTV.ua",Example TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ExampleTV.ua@HD",Example TV (720p) [Not 24/7]
 https://example.com/playlist.m3u8
 ```
 
