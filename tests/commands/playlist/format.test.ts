@@ -4,7 +4,7 @@ import { glob } from 'glob'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
-  fs.copySync('tests/__data__/input/streams_format', 'tests/__data__/output/streams')
+  fs.copySync('tests/__data__/input/playlist_format', 'tests/__data__/output/streams')
 })
 
 it('can format playlists', () => {
@@ -13,12 +13,12 @@ it('can format playlists', () => {
   })
 
   const files = glob
-    .sync('tests/__data__/expected/streams_format/*.m3u')
-    .map(f => f.replace('tests/__data__/expected/streams_format/', ''))
+    .sync('tests/__data__/expected/playlist_format/*.m3u')
+    .map(f => f.replace('tests/__data__/expected/playlist_format/', ''))
 
   files.forEach(filepath => {
     expect(content(`output/streams/${filepath}`), filepath).toBe(
-      content(`expected/streams_format/${filepath}`)
+      content(`expected/playlist_format/${filepath}`)
     )
   })
 })
