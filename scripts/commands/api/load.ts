@@ -12,7 +12,9 @@ async function main() {
     client.download('countries.json'),
     client.download('languages.json'),
     client.download('regions.json'),
-    client.download('subdivisions.json')
+    client.download('subdivisions.json'),
+    client.download('feeds.json'),
+    client.download('timezones.json')
   ]
 
   await Promise.all(requests)

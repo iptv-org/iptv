@@ -1,6 +1,7 @@
-import { Collection } from '@freearhey/core'
+import { Collection, Dictionary } from '@freearhey/core'
+import { Subdivision } from '.'
 
-type RegionProps = {
+type RegionData = {
   code: string
   name: string
   countries: string[]
@@ -9,11 +10,43 @@ type RegionProps = {
 export class Region {
   code: string
   name: string
-  countries: Collection
+  countryCodes: Collection
+  countries?: Collection
+  subdivisions?: Collection
 
-  constructor({ code, name, countries }: RegionProps) {
-    this.code = code
-    this.name = name
-    this.countries = new Collection(countries)
+  constructor(data: RegionData) {
+    this.code = data.code
+    this.name = data.name
+    this.countryCodes = new Collection(data.countries)
+  }
+
+  withCountries(countriesGroupedByCode: Dictionary): this {
+    this.countries = this.countryCodes.map((code: string) => countriesGroupedByCode.get(code))
+
+    return this
+  }
+
+  withSubdivisions(subdivisions: Collection): this {
+    this.subdivisions = subdivisions.filter(
+      (subdivision: Subdivision) => this.countryCodes.indexOf(subdivision.countryCode) > -1
+    )
+
+    return this
+  }
+
+  getSubdivisions(): Collection {
+    return this.subdivisions || new Collection()
+  }
+
+  getCountries(): Collection {
+    return this.countries || new Collection()
+  }
+
+  includesCountryCode(code: string): boolean {
+    return this.countryCodes.includes((countryCode: string) => countryCode === code)
+  }
+
+  isWorldwide(): boolean {
+    return this.code === 'INT'
   }
 }

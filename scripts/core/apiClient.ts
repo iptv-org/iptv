@@ -41,7 +41,7 @@ export class ApiClient {
   }
 
   async download(filename: string) {
-    const stream = await this.storage.createStream(`/temp/data/${filename}`)
+    const stream = await this.storage.createStream(`temp/data/${filename}`)
 
     const bar = this.progressBar.create(0, 0, { filename })
 

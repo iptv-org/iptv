@@ -11,6 +11,7 @@ export class RegionTable implements Table {
     const dataStorage = new Storage(DATA_DIR)
     const regionsContent = await dataStorage.json('regions.json')
     const regions = new Collection(regionsContent).map(data => new Region(data))
+    const regionsGroupedByCode = regions.keyBy((region: Region) => region.code)
 
     const parser = new LogParser()
     const logsStorage = new Storage(LOGS_DIR)
@@ -19,22 +20,35 @@ export class RegionTable implements Table {
     let data = new Collection()
     parser
       .parse(generatorsLog)
-      .filter((logItem: LogItem) => logItem.filepath.includes('regions/'))
+      .filter((logItem: LogItem) => logItem.type === 'region')
       .forEach((logItem: LogItem) => {
         const file = new File(logItem.filepath)
         const regionCode = file.name().toUpperCase()
-        const region: Region = regions.first((region: Region) => region.code === regionCode)
+        const region: Region = regionsGroupedByCode.get(regionCode)
 
         if (region) {
           data.add([
             region.name,
+            region.name,
+            logItem.count,
+            `<code>https://iptv-org.github.io/iptv/${logItem.filepath}</code>`
+          ])
+        } else {
+          data.add([
+            'ZZZ',
+            'Undefined',
             logItem.count,
             `<code>https://iptv-org.github.io/iptv/${logItem.filepath}</code>`
           ])
         }
       })
 
-    data = data.orderBy(item => item[0])
+    data = data
+      .orderBy(item => item[0])
+      .map(item => {
+        item.shift()
+        return item
+      })
 
     const table = new HTMLTable(data.all(), [
       { name: 'Region', align: 'left' },
