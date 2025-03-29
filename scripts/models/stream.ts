@@ -1,62 +1,164 @@
-import { URL, Collection } from '@freearhey/core'
-import { Category, Language } from './index'
-
-type StreamProps = {
-  name: string
-  url: string
-  filepath: string
-  line: number
-  channel?: string
-  httpReferrer?: string
-  httpUserAgent?: string
-  label?: string
-  quality?: string
-}
+import { URL, Collection, Dictionary } from '@freearhey/core'
+import { Feed, Channel, Category, Region, Subdivision, Country, Language } from './index'
+import parser from 'iptv-playlist-parser'
 
 export class Stream {
-  channel: string
-  filepath: string
-  line: number
-  httpReferrer: string
-  label: string
   name: string
-  quality: string
   url: string
-  httpUserAgent: string
-  logo: string
-  broadcastArea: Collection
-  categories: Collection
-  languages: Collection
-  isNSFW: boolean
+  id?: string
   groupTitle: string
+  channelId?: string
+  channel?: Channel
+  feedId?: string
+  feed?: Feed
+  filepath?: string
+  line: number
+  label?: string
+  quality?: string
+  httpReferrer?: string
+  httpUserAgent?: string
   removed: boolean = false
 
-  constructor({
-    channel,
-    filepath,
-    line,
-    httpReferrer,
-    label,
-    name,
-    quality,
-    url,
-    httpUserAgent
-  }: StreamProps) {
-    this.channel = channel || ''
-    this.filepath = filepath
-    this.line = line
-    this.httpReferrer = httpReferrer || ''
-    this.label = label || ''
+  constructor(data: parser.PlaylistItem) {
+    if (!data.name) throw new Error('"name" property is required')
+    if (!data.url) throw new Error('"url" property is required')
+
+    const [channelId, feedId] = data.tvg.id.split('@')
+    const { name, label, quality } = parseTitle(data.name)
+
+    this.id = data.tvg.id || undefined
+    this.feedId = feedId || undefined
+    this.channelId = channelId || undefined
+    this.line = data.line
+    this.label = label || undefined
     this.name = name
-    this.quality = quality || ''
-    this.url = url
-    this.httpUserAgent = httpUserAgent || ''
-    this.logo = ''
-    this.broadcastArea = new Collection()
-    this.categories = new Collection()
-    this.languages = new Collection()
-    this.isNSFW = false
+    this.quality = quality || undefined
+    this.url = data.url
+    this.httpReferrer = data.http.referrer || undefined
+    this.httpUserAgent = data.http['user-agent'] || undefined
     this.groupTitle = 'Undefined'
+  }
+
+  withChannel(channelsGroupedById: Dictionary): this {
+    if (!this.channelId) return this
+
+    this.channel = channelsGroupedById.get(this.channelId)
+
+    return this
+  }
+
+  withFeed(feedsGroupedByChannelId: Dictionary): this {
+    if (!this.channelId) return this
+
+    const channelFeeds = feedsGroupedByChannelId.get(this.channelId) || []
+    if (this.feedId) this.feed = channelFeeds.find((feed: Feed) => feed.id === this.feedId)
+    if (!this.feed) this.feed = channelFeeds.find((feed: Feed) => feed.isMain)
+
+    return this
+  }
+
+  setId(id: string): this {
+    this.id = id
+
+    return this
+  }
+
+  setChannelId(channelId: string): this {
+    this.channelId = channelId
+
+    return this
+  }
+
+  setFeedId(feedId: string | undefined): this {
+    this.feedId = feedId
+
+    return this
+  }
+
+  setLabel(label: string): this {
+    this.label = label
+
+    return this
+  }
+
+  setQuality(quality: string): this {
+    this.quality = quality
+
+    return this
+  }
+
+  setHttpUserAgent(httpUserAgent: string): this {
+    this.httpUserAgent = httpUserAgent
+
+    return this
+  }
+
+  setHttpReferrer(httpReferrer: string): this {
+    this.httpReferrer = httpReferrer
+
+    return this
+  }
+
+  setFilepath(filepath: string): this {
+    this.filepath = filepath
+
+    return this
+  }
+
+  updateFilepath(): this {
+    if (!this.channel) return this
+
+    this.filepath = `${this.channel.countryCode.toLowerCase()}.m3u`
+
+    return this
+  }
+
+  getFilepath(): string {
+    return this.filepath || ''
+  }
+
+  getHttpReferrer(): string {
+    return this.httpReferrer || ''
+  }
+
+  getHttpUserAgent(): string {
+    return this.httpUserAgent || ''
+  }
+
+  getQuality(): string {
+    return this.quality || ''
+  }
+
+  hasQuality(): boolean {
+    return !!this.quality
+  }
+
+  getHorizontalResolution(): number {
+    if (!this.hasQuality()) return 0
+
+    return parseInt(this.getQuality().replace(/p|i/, ''))
+  }
+
+  updateName(): this {
+    if (!this.channel) return this
+
+    this.name = this.channel.name
+    if (this.feed && !this.feed.isMain) {
+      this.name += ` ${this.feed.name}`
+    }
+
+    return this
+  }
+
+  updateId(): this {
+    if (!this.channel) return this
+    if (this.feed) {
+      this.id = `${this.channel.id}@${this.feed.id}`
+    } else {
+      this.id = this.channel.id
+    }
+
+    return this
   }
 
   normalizeURL() {
@@ -81,36 +183,75 @@ export class Stream {
     return !!this.channel
   }
 
-  hasCategories(): boolean {
-    return this.categories.notEmpty()
+  getBroadcastRegions(): Collection {
+    return this.feed ? this.feed.getBroadcastRegions() : new Collection()
   }
 
-  noCategories(): boolean {
-    return this.categories.isEmpty()
+  getBroadcastCountries(): Collection {
+    return this.feed ? this.feed.getBroadcastCountries() : new Collection()
   }
 
-  hasCategory(category: Category): boolean {
-    return this.categories.includes((_category: Category) => _category.id === category.id)
-  }
-
-  noLanguages(): boolean {
-    return this.languages.isEmpty()
-  }
-
-  hasLanguage(language: Language): boolean {
-    return this.languages.includes((_language: Language) => _language.code === language.code)
-  }
-
-  noBroadcastArea(): boolean {
-    return this.broadcastArea.isEmpty()
-  }
-
-  isInternational(): boolean {
-    return this.broadcastArea.includes('r/INT')
+  hasBroadcastArea(): boolean {
+    return this.feed ? this.feed.hasBroadcastArea() : false
   }
 
   isSFW(): boolean {
-    return this.isNSFW === false
+    return this.channel ? this.channel.isSFW() : true
+  }
+
+  hasCategories(): boolean {
+    return this.channel ? this.channel.hasCategories() : false
+  }
+
+  hasCategory(category: Category): boolean {
+    return this.channel ? this.channel.hasCategory(category) : false
+  }
+
+  getCategoryNames(): string[] {
+    return this.getCategories()
+      .map((category: Category) => category.name)
+      .sort()
+      .all()
+  }
+
+  getCategories(): Collection {
+    return this.channel ? this.channel.getCategories() : new Collection()
+  }
+
+  getLanguages(): Collection {
+    return this.feed ? this.feed.getLanguages() : new Collection()
+  }
+
+  hasLanguages() {
+    return this.feed ? this.feed.hasLanguages() : false
+  }
+
+  hasLanguage(language: Language) {
+    return this.feed ? this.feed.hasLanguage(language) : false
+  }
+
+  getBroadcastAreaCodes(): Collection {
+    return this.feed ? this.feed.broadcastAreaCodes : new Collection()
+  }
+
+  isBroadcastInSubdivision(subdivision: Subdivision): boolean {
+    return this.feed ? this.feed.isBroadcastInSubdivision(subdivision) : false
+  }
+
+  isBroadcastInCountry(country: Country): boolean {
+    return this.feed ? this.feed.isBroadcastInCountry(country) : false
+  }
+
+  isBroadcastInRegion(region: Region): boolean {
+    return this.feed ? this.feed.isBroadcastInRegion(region) : false
+  }
+
+  isInternational(): boolean {
+    return this.feed ? this.feed.isInternational() : false
+  }
+
+  getLogo(): string {
+    return this?.channel?.logo || ''
   }
 
   getTitle(): string {
@@ -127,15 +268,25 @@ export class Stream {
     return title
   }
 
+  getLabel(): string {
+    return this.label || ''
+  }
+
+  getId(): string {
+    return this.id || ''
+  }
+
   data() {
     return {
+      id: this.id,
       channel: this.channel,
+      feed: this.feed,
       filepath: this.filepath,
-      httpReferrer: this.httpReferrer,
       label: this.label,
       name: this.name,
       quality: this.quality,
       url: this.url,
+      httpReferrer: this.httpReferrer,
       httpUserAgent: this.httpUserAgent,
       line: this.line
     }
@@ -143,7 +294,8 @@ export class Stream {
 
   toJSON() {
     return {
-      channel: this.channel || null,
+      channel: this.channelId || null,
+      feed: this.feedId || null,
       url: this.url,
       referrer: this.httpReferrer || null,
       user_agent: this.httpUserAgent || null
@@ -151,10 +303,10 @@ export class Stream {
   }
 
   toString(options: { public: boolean }) {
-    let output = `#EXTINF:-1 tvg-id="${this.channel}"`
+    let output = `#EXTINF:-1 tvg-id="${this.getId()}"`
 
     if (options.public) {
-      output += ` tvg-logo="${this.logo}" group-title="${this.groupTitle}"`
+      output += ` tvg-logo="${this.getLogo()}" group-title="${this.groupTitle}"`
     }
 
     if (this.httpReferrer) {
@@ -179,4 +331,17 @@ export class Stream {
 
     return output
   }
+}
+
+function parseTitle(title: string): { name: string; label: string; quality: string } {
+  const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
+  title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
+  const [, quality] = title.match(/ \(([0-9]+p)\)$/) || [null, '']
+  title = title.replace(new RegExp(` \\(${quality}\\)$`), '')
+
+  return { name: title, label, quality }
+}
+
+function escapeRegExp(text) {
+  return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
 }
