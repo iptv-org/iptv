@@ -57,7 +57,7 @@ async function main() {
   streams = streams.orderBy(
     [
       (stream: Stream) => stream.name,
-      (stream: Stream) => stream.getHorizontalResolution(),
+      (stream: Stream) => stream.getVerticalResolution(),
       (stream: Stream) => stream.getLabel(),
       (stream: Stream) => stream.url
     ],

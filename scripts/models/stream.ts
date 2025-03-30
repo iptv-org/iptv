@@ -14,7 +14,8 @@ export class Stream {
   filepath?: string
   line: number
   label?: string
-  quality?: string
+  verticalResolution?: number
+  isInterlaced?: boolean
   httpReferrer?: string
   httpUserAgent?: string
   removed: boolean = false
@@ -25,6 +26,7 @@ export class Stream {
 
     const [channelId, feedId] = data.tvg.id.split('@')
     const { name, label, quality } = parseTitle(data.name)
+    const { verticalResolution, isInterlaced } = parseQuality(quality)
 
     this.id = data.tvg.id || undefined
     this.feedId = feedId || undefined
@@ -32,7 +34,8 @@ export class Stream {
     this.line = data.line
     this.label = label || undefined
     this.name = name
-    this.quality = quality || undefined
+    this.verticalResolution = verticalResolution || undefined
+    this.isInterlaced = isInterlaced || undefined
     this.url = data.url
     this.httpReferrer = data.http.referrer || undefined
     this.httpUserAgent = data.http['user-agent'] || undefined
@@ -52,7 +55,7 @@ export class Stream {
 
     const channelFeeds = feedsGroupedByChannelId.get(this.channelId) || []
     if (this.feedId) this.feed = channelFeeds.find((feed: Feed) => feed.id === this.feedId)
-    if (!this.feed) this.feed = channelFeeds.find((feed: Feed) => feed.isMain)
+    if (!this.feedId && !this.feed) this.feed = channelFeeds.find((feed: Feed) => feed.isMain)
 
     return this
   }
@@ -82,7 +85,10 @@ export class Stream {
   }
 
   setQuality(quality: string): this {
-    this.quality = quality
+    const { verticalResolution, isInterlaced } = parseQuality(quality)
+
+    this.verticalResolution = verticalResolution || undefined
+    this.isInterlaced = isInterlaced || undefined
 
     return this
   }
@@ -113,6 +119,16 @@ export class Stream {
     return this
   }
 
+  getChannelId(): string {
+    return this.channelId || ''
+  }
+
+  getFeedId(): string {
+    if (this.feedId) return this.feedId
+    if (this.feed) return this.feed.id
+    return ''
+  }
+
   getFilepath(): string {
     return this.filepath || ''
   }
@@ -126,14 +142,25 @@ export class Stream {
   }
 
   getQuality(): string {
-    return this.quality || ''
+    if (!this.verticalResolution) return ''
+
+    let quality = this.verticalResolution.toString()
+
+    if (this.isInterlaced) quality += 'i'
+    else quality += 'p'
+
+    return quality
+  }
+
+  hasId(): boolean {
+    return !!this.id
   }
 
   hasQuality(): boolean {
-    return !!this.quality
+    return !!this.verticalResolution
   }
 
-  getHorizontalResolution(): number {
+  getVerticalResolution(): number {
     if (!this.hasQuality()) return 0
 
     return parseInt(this.getQuality().replace(/p|i/, ''))
@@ -257,8 +284,8 @@ export class Stream {
   getTitle(): string {
     let title = `${this.name}`
 
-    if (this.quality) {
-      title += ` (${this.quality})`
+    if (this.getQuality()) {
+      title += ` (${this.getQuality()})`
     }
 
     if (this.label) {
@@ -284,7 +311,8 @@ export class Stream {
       filepath: this.filepath,
       label: this.label,
       name: this.name,
-      quality: this.quality,
+      verticalResolution: this.verticalResolution,
+      isInterlaced: this.isInterlaced,
       url: this.url,
       httpReferrer: this.httpReferrer,
       httpUserAgent: this.httpUserAgent,
@@ -333,7 +361,11 @@ export class Stream {
   }
 }
 
-function parseTitle(title: string): { name: string; label: string; quality: string } {
+function parseTitle(title: string): {
+  name: string
+  label: string
+  quality: string
+} {
   const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
   title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
   const [, quality] = title.match(/ \(([0-9]+p)\)$/) || [null, '']
@@ -344,4 +376,13 @@ function parseTitle(title: string): { name: string; label: string; quality: stri
 
 function escapeRegExp(text) {
   return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
+}
+
+function parseQuality(quality: string): { verticalResolution: number; isInterlaced: boolean } {
+  let [, verticalResolutionString] = quality.match(/^(\d+)/) || [null, undefined]
+  const isInterlaced = /i$/i.test(quality)
+  let verticalResolution = 0
+  if (verticalResolutionString) verticalResolution = parseInt(verticalResolutionString)
+
+  return { verticalResolution, isInterlaced }
 }
