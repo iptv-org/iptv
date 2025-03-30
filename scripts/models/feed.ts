@@ -122,17 +122,15 @@ export class Feed {
     return this
   }
 
-  withBroadcastRegions(regions: Collection, regionsGroupedByCode: Dictionary): this {
+  withBroadcastRegions(regions: Collection): this {
     if (!this.broadcastCountries) return this
     const countriesCodes = this.broadcastCountries.map((country: Country) => country.code)
 
-    const broadcastRegions = regions.filter((region: Region) =>
-      region.countryCodes.intersects(countriesCodes)
-    )
+    this.broadcastRegions = regions.filter((region: Region) => {
+      if (region.code === 'INT') return false
 
-    if (this.isInternational()) broadcastRegions.add(regionsGroupedByCode.get('INT'))
-
-    this.broadcastRegions = broadcastRegions
+      return region.countryCodes.intersects(countriesCodes)
+    })
 
     return this
   }
