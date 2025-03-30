@@ -89,7 +89,7 @@ async function main() {
         regionsGroupedByCode,
         subdivisionsGroupedByCode
       )
-      .withBroadcastRegions(regions, regionsGroupedByCode)
+      .withBroadcastRegions(regions)
       .withBroadcastSubdivisions(subdivisionsGroupedByCode)
   )
   const feedsGroupedByChannelId = feeds.groupBy((feed: Feed) =>
@@ -106,14 +106,16 @@ async function main() {
   const files = await storage.list('**/*.m3u')
   let streams = await parser.parse(files)
   const totalStreams = streams.count()
-  streams = streams.uniqBy((stream: Stream) => stream.getId() || uniqueId())
+  streams = streams.uniqBy((stream: Stream) =>
+    stream.hasId() ? stream.getChannelId() + stream.getFeedId() : uniqueId()
+  )
   logger.info(`found ${totalStreams} streams (including ${streams.count()} unique)`)
 
   logger.info('sorting streams...')
   streams = streams.orderBy(
     [
       (stream: Stream) => stream.getId(),
-      (stream: Stream) => stream.getHorizontalResolution(),
+      (stream: Stream) => stream.getVerticalResolution(),
       (stream: Stream) => stream.getLabel()
     ],
     ['asc', 'asc', 'desc']

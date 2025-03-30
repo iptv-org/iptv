@@ -26,7 +26,7 @@ export class IndexRegionGenerator implements Generator {
     let groupedStreams = new Collection()
     this.streams
       .orderBy((stream: Stream) => stream.getTitle())
-      .filter((stream: Stream) => stream.isSFW())
+      .filter((stream: Stream) => stream.isSFW() && !stream.isInternational())
       .forEach((stream: Stream) => {
         if (!stream.hasBroadcastArea()) {
           const streamClone = stream.clone()
