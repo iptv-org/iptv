@@ -3,15 +3,17 @@ import fs from 'fs-extra'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
-
-  execSync(
-    'STREAMS_DIR=tests/__data__/input/streams_generate API_DIR=tests/__data__/output/.api npm run api:generate',
-    { encoding: 'utf8' }
-  )
 })
 
 it('can create streams.json', () => {
-  expect(content('output/.api/streams.json')).toMatchObject(content('expected/.api/streams.json'))
+  execSync(
+    'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/api_generate API_DIR=tests/__data__/output/.api npm run api:generate',
+    { encoding: 'utf8' }
+  )
+
+  expect(content('output/.api/streams.json')).toMatchObject(
+    content('expected/api_generate/.api/streams.json')
+  )
 })
 
 function content(filepath: string) {

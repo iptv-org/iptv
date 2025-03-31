@@ -11,15 +11,15 @@ export class StreamTester {
 
   async test(stream: Stream) {
     if (TESTING) {
-      const results = (await import('../../tests/__data__/input/test_results/all.js')).default
+      const results = (await import('../../tests/__data__/input/playlist_test/results.js')).default
 
       return results[stream.url]
     } else {
       return this.checker.checkStream({
         url: stream.url,
         http: {
-          referrer: stream.httpReferrer,
-          'user-agent': stream.httpUserAgent
+          referrer: stream.getHttpReferrer(),
+          'user-agent': stream.getHttpUserAgent()
         }
       })
     }

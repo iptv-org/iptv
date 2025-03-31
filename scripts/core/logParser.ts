@@ -1,4 +1,5 @@
 export type LogItem = {
+  type: string
   filepath: string
   count: number
 }

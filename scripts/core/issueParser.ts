@@ -3,11 +3,10 @@ import { Issue } from '../models'
 import { IssueData } from './issueData'
 
 const FIELDS = new Dictionary({
+  'Stream ID': 'streamId',
   'Channel ID': 'channelId',
-  'Channel ID (required)': 'channelId',
+  'Feed ID': 'feedId',
   'Stream URL': 'streamUrl',
-  'Stream URL (optional)': 'streamUrl',
-  'Stream URL (required)': 'streamUrl',
   'Broken Link': 'brokenLinks',
   'Broken Links': 'brokenLinks',
   Label: 'label',
@@ -18,8 +17,7 @@ const FIELDS = new Dictionary({
   'HTTP Referrer': 'httpReferrer',
   'What happened to the stream?': 'reason',
   Reason: 'reason',
-  Notes: 'notes',
-  'Notes (optional)': 'notes'
+  Notes: 'notes'
 })
 
 export class IssueParser {
@@ -30,7 +28,7 @@ export class IssueParser {
     fields.forEach((field: string) => {
       const parsed = typeof field === 'string' ? field.split(/\r?\n/).filter(Boolean) : []
       let _label = parsed.shift()
-      _label = _label ? _label.trim() : ''
+      _label = _label ? _label.replace(/ \(optional\)| \(required\)/, '').trim() : ''
       let _value = parsed.join('\r\n')
       _value = _value ? _value.trim() : ''
 

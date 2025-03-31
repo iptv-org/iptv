@@ -366,10 +366,10 @@
     "@eslint/core" "^0.12.0"
     levn "^0.4.1"
 
-"@freearhey/core@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/@freearhey/core/-/core-0.2.1.tgz"
-  integrity sha512-kEdIxZClykKhGpgyCSlkwuVuSCCAWr3J5YvOUMJQDPgVAYvT5VbD8MYKPm+OwNi9T4HFmF6qqY90qwKJPoOXCA==
+"@freearhey/core@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.npmjs.org/@freearhey/core/-/core-0.7.0.tgz"
+  integrity sha512-HXkKPYGY7ife7JAc1q/Qxzy0WUdSnyt3rHThCShZHgnH3rz0tpkjHFW7LNegB3he0IKn/Zc95/YSOQ97Fq8ctA==
   dependencies:
     "@types/fs-extra" "^11.0.2"
     "@types/lodash" "^4.14.198"
@@ -382,6 +382,7 @@
     node-gzip "^1.1.2"
     normalize-url "^6.1.0"
     object-treeify "^2.1.1"
+    run-script-os "^1.1.6"
     signale "^1.4.0"
 
 "@humanfs/core@^0.19.1":
@@ -3434,6 +3435,11 @@ run-parallel@^1.1.9:
   integrity sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==
   dependencies:
     queue-microtask "^1.2.2"
+
+run-script-os@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.npmjs.org/run-script-os/-/run-script-os-1.1.6.tgz"
+  integrity sha512-ql6P2LzhBTTDfzKts+Qo4H94VUKpxKDFz6QxxwaUZN0mwvi7L3lpOI7BqPCq7lgDh3XLl0dpeXwfcVIitlrYrw==
 
 semver@^6.3.0:
   version "6.3.1"
