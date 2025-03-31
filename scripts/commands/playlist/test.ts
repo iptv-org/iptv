@@ -1,7 +1,7 @@
 import { Logger, Storage, Collection } from '@freearhey/core'
-import { ROOT_DIR, STREAMS_DIR } from '../../constants'
+import { ROOT_DIR, STREAMS_DIR, DATA_DIR } from '../../constants'
 import { PlaylistParser, StreamTester, CliTable } from '../../core'
-import { Stream } from '../../models'
+import { Stream, Feed, Channel } from '../../models'
 import { program } from 'commander'
 import { eachLimit } from 'async-es'
 import commandExists from 'command-exists'
@@ -38,8 +38,6 @@ const logger = new Logger()
 const tester = new StreamTester()
 
 async function main() {
-  const storage = new Storage(ROOT_DIR)
-
   if (await isOffline()) {
     logger.error(chalk.red('Internet connection is required for the script to work'))
 
@@ -56,9 +54,25 @@ async function main() {
     return
   }
 
+  logger.info('loading channels from api...')
+  const dataStorage = new Storage(DATA_DIR)
+  const channelsData = await dataStorage.json('channels.json')
+  const channels = new Collection(channelsData).map(data => new Channel(data))
+  const channelsGroupedById = channels.keyBy((channel: Channel) => channel.id)
+  const feedsData = await dataStorage.json('feeds.json')
+  const feeds = new Collection(feedsData).map(data =>
+    new Feed(data).withChannel(channelsGroupedById)
+  )
+  const feedsGroupedByChannelId = feeds.groupBy(feed => feed.channel)
+
   logger.info('loading streams...')
-  const parser = new PlaylistParser({ storage })
-  const files = program.args.length ? program.args : await storage.list(`${STREAMS_DIR}/*.m3u`)
+  const rootStorage = new Storage(ROOT_DIR)
+  const parser = new PlaylistParser({
+    storage: rootStorage,
+    channelsGroupedById,
+    feedsGroupedByChannelId
+  })
+  const files = program.args.length ? program.args : await rootStorage.list(`${STREAMS_DIR}/*.m3u`)
   streams = await parser.parse(files)
 
   logger.info(`found ${streams.count()} streams`)
@@ -89,7 +103,7 @@ async function main() {
 main()
 
 async function runTest(stream: Stream) {
-  const key = stream.filepath + stream.channel + stream.url
+  const key = stream.filepath + stream.getId() + stream.url
   results[key] = chalk.white('LOADING...')
 
   const result = await tester.test(stream)
@@ -125,11 +139,11 @@ function drawTable() {
       ]
     })
     streams.forEach((stream: Stream, index: number) => {
-      const status = results[stream.filepath + stream.channel + stream.url] || chalk.gray('PENDING')
+      const status = results[stream.filepath + stream.getId() + stream.url] || chalk.gray('PENDING')
 
       const row = {
         '': index,
-        'tvg-id': stream.channel.length > 25 ? stream.channel.slice(0, 22) + '...' : stream.channel,
+        'tvg-id': stream.getId().length > 25 ? stream.getId().slice(0, 22) + '...' : stream.getId(),
         url: stream.url.length > 100 ? stream.url.slice(0, 97) + '...' : stream.url,
         status
       }
