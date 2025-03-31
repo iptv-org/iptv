@@ -1,29 +1,20 @@
 import { Generator } from './generator'
 import { Collection, Storage, Logger } from '@freearhey/core'
-import { Stream, Playlist, Country, Subdivision, Region } from '../models'
+import { Stream, Playlist, Country } from '../models'
 import { PUBLIC_DIR } from '../constants'
 
 type IndexCountryGeneratorProps = {
   streams: Collection
-  regions: Collection
-  countries: Collection
-  subdivisions: Collection
   logger: Logger
 }
 
 export class IndexCountryGenerator implements Generator {
   streams: Collection
-  countries: Collection
-  regions: Collection
-  subdivisions: Collection
   storage: Storage
   logger: Logger
 
-  constructor({ streams, regions, countries, subdivisions, logger }: IndexCountryGeneratorProps) {
+  constructor({ streams, logger }: IndexCountryGeneratorProps) {
     this.streams = streams
-    this.countries = countries
-    this.regions = regions
-    this.subdivisions = subdivisions
     this.storage = new Storage(PUBLIC_DIR)
     this.logger = logger
   }
@@ -32,10 +23,10 @@ export class IndexCountryGenerator implements Generator {
     let groupedStreams = new Collection()
 
     this.streams
-      .orderBy(stream => stream.getTitle())
-      .filter(stream => stream.isSFW())
-      .forEach(stream => {
-        if (stream.noBroadcastArea()) {
+      .orderBy((stream: Stream) => stream.getTitle())
+      .filter((stream: Stream) => stream.isSFW())
+      .forEach((stream: Stream) => {
+        if (!stream.hasBroadcastArea()) {
           const streamClone = stream.clone()
           streamClone.groupTitle = 'Undefined'
           groupedStreams.add(streamClone)
@@ -48,7 +39,7 @@ export class IndexCountryGenerator implements Generator {
           groupedStreams.add(streamClone)
         }
 
-        this.getStreamBroadcastCountries(stream).forEach((country: Country) => {
+        stream.getBroadcastCountries().forEach((country: Country) => {
           const streamClone = stream.clone()
           streamClone.groupTitle = country.name
           groupedStreams.add(streamClone)
@@ -65,40 +56,6 @@ export class IndexCountryGenerator implements Generator {
     const playlist = new Playlist(groupedStreams, { public: true })
     const filepath = 'index.country.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
-  }
-
-  getStreamBroadcastCountries(stream: Stream) {
-    const groupedRegions = this.regions.keyBy((region: Region) => region.code)
-    const groupedCountries = this.countries.keyBy((country: Country) => country.code)
-    const groupedSubdivisions = this.subdivisions.keyBy(
-      (subdivision: Subdivision) => subdivision.code
-    )
-
-    let broadcastCountries = new Collection()
-
-    stream.broadcastArea.forEach(broadcastAreaCode => {
-      const [type, code] = broadcastAreaCode.split('/')
-      switch (type) {
-        case 'c':
-          broadcastCountries.add(code)
-          break
-        case 'r':
-          if (code !== 'INT' && groupedRegions.has(code)) {
-            broadcastCountries = broadcastCountries.concat(groupedRegions.get(code).countries)
-          }
-          break
-        case 's':
-          if (groupedSubdivisions.has(code)) {
-            broadcastCountries.add(groupedSubdivisions.get(code).country)
-          }
-          break
-      }
-    })
-
-    return broadcastCountries
-      .uniq()
-      .map(code => groupedCountries.get(code))
-      .filter(Boolean)
+    this.logger.info(JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }))
   }
 }
