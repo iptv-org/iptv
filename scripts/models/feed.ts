@@ -109,12 +109,18 @@ export class Feed {
 
     this.broadcastRegionCodes.forEach((code: string) => {
       const region: Region = regionsGroupedByCode.get(code)
-      broadcastCountries = broadcastCountries.concat(region.countryCodes)
+      if (region) {
+        region.countryCodes.forEach((countryCode: string) => {
+          broadcastCountries.add(countriesGroupedByCode.get(countryCode))
+        })
+      }
     })
 
     this.broadcastSubdivisionCodes.forEach((code: string) => {
       const subdivision: Subdivision = subdivisionsGroupedByCode.get(code)
-      broadcastCountries.add(countriesGroupedByCode.get(subdivision.countryCode))
+      if (subdivision) {
+        broadcastCountries.add(countriesGroupedByCode.get(subdivision.countryCode))
+      }
     })
 
     this.broadcastCountries = broadcastCountries.uniq().filter(Boolean)

@@ -26,8 +26,15 @@ export class IndexRegionGenerator implements Generator {
     let groupedStreams = new Collection()
     this.streams
       .orderBy((stream: Stream) => stream.getTitle())
-      .filter((stream: Stream) => stream.isSFW() && !stream.isInternational())
+      .filter((stream: Stream) => stream.isSFW())
       .forEach((stream: Stream) => {
+        if (stream.isInternational()) {
+          const streamClone = stream.clone()
+          streamClone.groupTitle = 'International'
+          groupedStreams.push(streamClone)
+          return
+        }
+
         if (!stream.hasBroadcastArea()) {
           const streamClone = stream.clone()
           streamClone.groupTitle = 'Undefined'
@@ -43,7 +50,8 @@ export class IndexRegionGenerator implements Generator {
       })
 
     groupedStreams = groupedStreams.orderBy((stream: Stream) => {
-      if (stream.groupTitle === 'Undefined') return 'ZZ'
+      if (stream.groupTitle === 'International') return 'ZZ'
+      if (stream.groupTitle === 'Undefined') return 'ZZZ'
       return stream.groupTitle
     })
 
