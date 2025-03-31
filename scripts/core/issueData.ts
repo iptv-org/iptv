@@ -18,7 +18,7 @@ export class IssueData {
     return Boolean(this._data.get(key))
   }
 
-  getString(key: string): string {
+  getString(key: string): string | undefined {
     const deleteSymbol = '~'
 
     return this._data.get(key) === deleteSymbol ? '' : this._data.get(key)

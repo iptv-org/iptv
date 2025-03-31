@@ -26,14 +26,14 @@ export class IndexCategoryGenerator implements Generator {
 
     let groupedStreams = new Collection()
     streams.forEach((stream: Stream) => {
-      if (stream.noCategories()) {
+      if (!stream.hasCategories()) {
         const streamClone = stream.clone()
         streamClone.groupTitle = 'Undefined'
         groupedStreams.add(streamClone)
         return
       }
 
-      stream.categories.forEach((category: Category) => {
+      stream.getCategories().forEach((category: Category) => {
         const streamClone = stream.clone()
         streamClone.groupTitle = category.name
         groupedStreams.push(streamClone)
@@ -48,6 +48,6 @@ export class IndexCategoryGenerator implements Generator {
     const playlist = new Playlist(groupedStreams, { public: true })
     const filepath = 'index.category.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
+    this.logger.info(JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }))
   }
 }

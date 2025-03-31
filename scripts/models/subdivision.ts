@@ -1,4 +1,7 @@
-type SubdivisionProps = {
+import { Dictionary } from '@freearhey/core'
+import { Country } from '.'
+
+type SubdivisionData = {
   code: string
   name: string
   country: string
@@ -7,11 +10,18 @@ type SubdivisionProps = {
 export class Subdivision {
   code: string
   name: string
-  country: string
+  countryCode: string
+  country?: Country
 
-  constructor({ code, name, country }: SubdivisionProps) {
-    this.code = code
-    this.name = name
-    this.country = country
+  constructor(data: SubdivisionData) {
+    this.code = data.code
+    this.name = data.name
+    this.countryCode = data.country
+  }
+
+  withCountry(countriesGroupedByCode: Dictionary): this {
+    this.country = countriesGroupedByCode.get(this.countryCode)
+
+    return this
   }
 }
