@@ -326,7 +326,8 @@ export class Stream {
       feed: this.feedId || null,
       url: this.url,
       referrer: this.httpReferrer || null,
-      user_agent: this.httpUserAgent || null
+      user_agent: this.httpUserAgent || null,
+      quality: this.getQuality() || null
     }
   }
 
