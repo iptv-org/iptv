@@ -22,7 +22,7 @@
 | News          | Programming is mostly news                                            |
 | Outdoor       | Programming related to outdoor activities like fishing, hunting, etc. |
 | Relax         | Programming is calm sounding and beautiful views                      |
-| Religious     | Religious Programming                                                 |
+| Religious     | Religious programming                                                 |
 | Science       | Science and Technology                                                |
 | Series        | Channels that only show series                                        |
 | Shop          | Programming is for shopping                                           |
