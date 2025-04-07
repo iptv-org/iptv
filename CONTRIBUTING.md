@@ -104,7 +104,7 @@ Please note that we only accept removal requests from channel owners and their o
 For a stream to be approved, its description must follow this template:
 
 ```
-#EXTINF:-1 tvg-id="STREAM_ID",CHANNEL_NAME (RESOLUTION) [LABEL]
+#EXTINF:-1 tvg-id="STREAM_ID",CHANNEL_NAME (QUALITY) [LABEL]
 STREAM_URL
 ```
 
@@ -112,7 +112,7 @@ STREAM_URL
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------- |
 | `STREAM_ID`    | ID of the stream. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
 | `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                                                                  | Required | -                                            |
-| `RESOLUTION`   | Maximum stream resolution.                                                                                                                   | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
+| `QUALITY`      | Maximum stream quality.                                                                                                                      | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
 | `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users.                                                   | Optional | `Geo-blocked` or `Not 24/7`                  |
 | `STREAM_URL`   | Stream URL.                                                                                                                                  | Required | -                                            |
 
@@ -149,7 +149,6 @@ http://example.com/stream.m3u8
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
   - `preview.png`: image displayed in the `README.md`.
   - `supported-categories.md`: list of supported categories.
-  - `supported-regions.md`: list of supported regions.
   - `template.md`: template for `README.md`.
 - `scripts/`: contains all scripts used in the repository.
 - `streams/`: contains all streams broken down by the country from which they are broadcast.
