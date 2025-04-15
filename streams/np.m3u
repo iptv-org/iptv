@@ -1,23 +1,301 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="CapitalTVHD.np",Capital TV (1080p)
-https://streaming.tvnepal.com:19360/capitaltv/capitaltv.m3u8
-#EXTINF:-1 tvg-id="DivyaDarshanTV.np",Divya Darshan TV (720p)
-http://live.divyadarshantv.com/hls/stream.m3u8
-#EXTINF:-1 tvg-id="HamroKisanTV.np",Hamro Kisan TV (1080p) [Not 24/7]
-https://realtvlive.servep2p.com/livetv/KSNTV/playlist.m3u8
-#EXTINF:-1 tvg-id="HimalayaTV.np",Himalaya TV
-http://103.213.31.243:8081/livepull/ottHIMALAYA480.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="IndigenousTelevision.np",Indigenous Television (720p)
-https://np.truestreamz.com/broadcaster/INDIGENOUSmob.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="JanataTV.np",Janata TV (1080p) [Not 24/7]
-https://streaming.tvnepal.com:19360/janatatv/janatatv.m3u8
-#EXTINF:-1 tvg-id="KantipurTV.np",Kantipur TV (1080p)
-https://ktvhdsg.ekantipur.com:8443/high_quality_85840165/hd/playlist.m3u8
-#EXTINF:-1 tvg-id="KantipurTV.np",Kantipur TV (1080p)
-https://ktvhdsg.ekantipur.com:8443/ktv_desktop_02347834/hd/playlist.m3u8
-#EXTINF:-1 tvg-id="MithilaNepalTV.np",Mithila Nepal TV (1080p)
-http://150.107.205.212:1935/live/mithila/playlist.m3u8?DVR=
-#EXTINF:-1 tvg-id="ParyawaranTV.np",Paryawaran TV (1080p)
-https://webtv-stream.nettv.com.np/broadcaster/Paryawaran.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="ZeeNepal.np",Zee Nepal (720p)
-http://43.245.85.211:5563/live/zeenepaltv/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1041" tvg-chno="1050" tvg-name="kantipur-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/41/image" group-title="HD", Kantipur HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/kantipurhdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1042" tvg-chno="1051" tvg-name="ap1-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/42/image" group-title="HD", AP1 HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ap1hdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1047" tvg-chno="1052" tvg-name="himalaya-tv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/47/image" group-title="HD", Himalaya TV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://lb-webtv.nettv.com.np/ott_abr/himalayahdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1012" tvg-chno="1053" tvg-name="nepal-tv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/12/image" group-title="HD", Nepal TV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvnepalhdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1043" tvg-chno="1054" tvg-name="ntv-news-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/43/image" group-title="HD", NTV News HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvnewshdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1044" tvg-chno="1055" tvg-name="ntv-plus-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/44/image" group-title="HD", NTV Plus HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvplushdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10267" tvg-chno="1056" tvg-name="prime-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/267/image" group-title="HD", Prime HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/primetvabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1051" tvg-chno="1058" tvg-name="janata-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/51/image" group-title="HD", Janata HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/jantahdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1054" tvg-chno="1059" tvg-name="mountain-tv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/54/image" group-title="HD", Mountain TV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/mountainabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10643" tvg-chno="1062" tvg-name="metv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/643/image" group-title="HD", METV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/METVHDabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10638" tvg-chno="1063" tvg-name="ntv-itahari-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/638/image" group-title="HD", NTV Itahari HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvitshariabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1061" tvg-chno="1064" tvg-name="ntv-kohalpur-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/61/image" group-title="HD", NTV Kohalpur HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvkohalpurabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1057" tvg-chno="1066" tvg-name="business-plus-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/57/image" group-title="HD", Business Plus HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/businessplusabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1049" tvg-chno="1074" tvg-name="abc-news-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/49/image" group-title="HD", ABC News HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/abcnewsabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1053" tvg-chno="1076" tvg-name="tv-today-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/53/image" group-title="HD", TV Today HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/tvtodayabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1048" tvg-chno="1079" tvg-name="image-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/48/image" group-title="HD", Image HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/imageabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10532" tvg-chno="1088" tvg-name="bm-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/532/image" group-title="HD", BM HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/iptvlive_abr/BMHDabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10805" tvg-chno="10155" tvg-name="gnn-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/805/image" group-title="HD", GNN HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/prabhutvabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1066" tvg-chno="10600" tvg-name="j-music-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/66/image" group-title="HD", J MUSIC HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/iptvlive_abr/Jmusichdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1072" tvg-chno="10900" tvg-name="bhakti-darshan-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/72/image" group-title="HD", Bhakti Darshan HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/bhaktidarsanabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1041" tvg-chno="1050" tvg-name="kantipur-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/41/image" group-title="Nepali", Kantipur HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/kantipurhdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1042" tvg-chno="1051" tvg-name="ap1-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/42/image" group-title="Nepali", AP1 HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ap1hdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1047" tvg-chno="1052" tvg-name="himalaya-tv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/47/image" group-title="Nepali", Himalaya TV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://lb-webtv.nettv.com.np/ott_abr/himalayahdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1012" tvg-chno="1053" tvg-name="nepal-tv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/12/image" group-title="Nepali", Nepal TV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvnepalhdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1043" tvg-chno="1054" tvg-name="ntv-news-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/43/image" group-title="Nepali", NTV News HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvnewshdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1044" tvg-chno="1055" tvg-name="ntv-plus-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/44/image" group-title="Nepali", NTV Plus HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvplushdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10267" tvg-chno="1056" tvg-name="prime-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/267/image" group-title="Nepali", Prime HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/primetvabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1051" tvg-chno="1058" tvg-name="janata-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/51/image" group-title="Nepali", Janata HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/jantahdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1054" tvg-chno="1059" tvg-name="mountain-tv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/54/image" group-title="Nepali", Mountain TV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/mountainabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10925" tvg-chno="1061" tvg-name="himalaya-premium-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/925/image" group-title="Nepali", Himalaya Premium HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://lb-webtv.nettv.com.np/ott_abr/hpremiumhdabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10643" tvg-chno="1062" tvg-name="metv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/643/image" group-title="Nepali", METV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/METVHDabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10638" tvg-chno="1063" tvg-name="ntv-itahari-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/638/image" group-title="Nepali", NTV Itahari HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvitshariabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1061" tvg-chno="1064" tvg-name="ntv-kohalpur-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/61/image" group-title="Nepali", NTV Kohalpur HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/ntvkohalpurabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1057" tvg-chno="1066" tvg-name="business-plus-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/57/image" group-title="Nepali", Business Plus HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/businessplusabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1046" tvg-chno="1071" tvg-name="news-24" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/46/image" group-title="Nepali", News 24
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/news24abr.sstream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1050" tvg-chno="1073" tvg-name="sagarmatha-tv" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/50/image" group-title="Nepali", Sagarmatha TV
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/sagarmathaabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1049" tvg-chno="1074" tvg-name="abc-news-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/49/image" group-title="Nepali", ABC News HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/abcnewsabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1045" tvg-chno="1075" tvg-name="avenues-tv" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/45/image" group-title="Nepali", Avenues TV
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/avenuesabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1053" tvg-chno="1076" tvg-name="tv-today-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/53/image" group-title="Nepali", TV Today HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/tvtodayabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1056" tvg-chno="1077" tvg-name="btv-business" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/56/image" group-title="Nepali", BTV Business
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/btvnepalabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1055" tvg-chno="1078" tvg-name="nari-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/55/image" group-title="Nepali", Nari HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/tvfilmyabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1048" tvg-chno="1079" tvg-name="image-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/48/image" group-title="Nepali", Image HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/imageabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10532" tvg-chno="1088" tvg-name="bm-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/532/image" group-title="Nepali", BM HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/iptvlive_abr/BMHDabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10238" tvg-chno="10100" tvg-name="bodhi-tv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/238/image" group-title="Nepali", Bodhi TV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/iptvlive_abr/bodhitvabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10272" tvg-chno="10105" tvg-name="kalika-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/272/image" group-title="Nepali", Kalika HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/iptvlive_abr/kalikatvabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10324" tvg-chno="10111" tvg-name="bhadgaun-television" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/324/image" group-title="Nepali", Bhadgaun Television
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/iptvlive_abr/bhadgaunabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10502" tvg-chno="10132" tvg-name="birat-television" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/502/image" group-title="Nepali", Birat Television
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/iptvlive_abr/birattvabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10805" tvg-chno="10155" tvg-name="gnn-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/805/image" group-title="Nepali", GNN HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/prabhutvabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="10882" tvg-chno="10181" tvg-name="pokhara-tv-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/882/image" group-title="Nepali", Pokhara TV HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/ott_abr/PokharaTVabr.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="1066" tvg-chno="10600" tvg-name="j-music-hd" tvg-country="np" tvg-logo="https://resources.geniustv.geniussystems.com.np/livetv/channels/66/image" group-title="Nepali", J MUSIC HD
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.manifest_type=hls
+#EXTVLCOPT:http-user-agent=NepTV/2.0.1 (Linux;Android 16) ExoPlayerLib/2.19.1
+https://np3.sunilprasad.com.np/iptvlive_abr/Jmusichdabr.stream/playlist.m3u8
