@@ -7,14 +7,16 @@ type ExecError = {
 
 it('show an error if channel id in the blocklist', () => {
   try {
-    execSync(
+    const stdout = execSync(
       'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/playlist_validate npm run playlist:validate -- us_blocked.m3u',
       {
         encoding: 'utf8'
       }
     )
+    if (process.env.DEBUG === 'true') console.log(stdout)
     process.exit(1)
   } catch (error) {
+    if (process.env.DEBUG === 'true') console.log((error as ExecError).stdout)
     expect((error as ExecError).status).toBe(1)
     expect((error as ExecError).stdout).toContain(`us_blocked.m3u
  2     error    "FoxSports2.us" is on the blocklist due to claims of copyright holders (https://github.com/iptv-org/iptv/issues/0002)
@@ -31,6 +33,7 @@ it('show a warning if channel has wrong id', () => {
       encoding: 'utf8'
     }
   )
+  if (process.env.DEBUG === 'true') console.log(stdout)
 
   expect(stdout).toContain(
     'wrong_id.m3u\n 2     warning  "qib22lAq1L.us" is not in the database\n\n1 problems (0 errors, 1 warnings)\n'
