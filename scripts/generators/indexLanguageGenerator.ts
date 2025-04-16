@@ -22,17 +22,17 @@ export class IndexLanguageGenerator implements Generator {
   async generate(): Promise<void> {
     let groupedStreams = new Collection()
     this.streams
-      .orderBy(stream => stream.getTitle())
-      .filter(stream => stream.isSFW())
-      .forEach(stream => {
-        if (stream.noLanguages()) {
+      .orderBy((stream: Stream) => stream.getTitle())
+      .filter((stream: Stream) => stream.isSFW())
+      .forEach((stream: Stream) => {
+        if (!stream.hasLanguages()) {
           const streamClone = stream.clone()
           streamClone.groupTitle = 'Undefined'
           groupedStreams.add(streamClone)
           return
         }
 
-        stream.languages.forEach((language: Language) => {
+        stream.getLanguages().forEach((language: Language) => {
           const streamClone = stream.clone()
           streamClone.groupTitle = language.name
           groupedStreams.add(streamClone)
@@ -47,6 +47,6 @@ export class IndexLanguageGenerator implements Generator {
     const playlist = new Playlist(groupedStreams, { public: true })
     const filepath = 'index.language.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
+    this.logger.info(JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }))
   }
 }

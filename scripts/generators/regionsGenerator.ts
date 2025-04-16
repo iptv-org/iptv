@@ -1,53 +1,61 @@
 import { Generator } from './generator'
 import { Collection, Storage, Logger } from '@freearhey/core'
-import { Playlist, Subdivision, Region } from '../models'
+import { Playlist, Region, Stream } from '../models'
 import { PUBLIC_DIR } from '../constants'
 
 type RegionsGeneratorProps = {
   streams: Collection
   regions: Collection
-  subdivisions: Collection
   logger: Logger
 }
 
 export class RegionsGenerator implements Generator {
   streams: Collection
   regions: Collection
-  subdivisions: Collection
   storage: Storage
   logger: Logger
 
-  constructor({ streams, regions, subdivisions, logger }: RegionsGeneratorProps) {
+  constructor({ streams, regions, logger }: RegionsGeneratorProps) {
     this.streams = streams
     this.regions = regions
-    this.subdivisions = subdivisions
     this.storage = new Storage(PUBLIC_DIR)
     this.logger = logger
   }
 
   async generate(): Promise<void> {
     const streams = this.streams
-      .orderBy(stream => stream.getTitle())
-      .filter(stream => stream.isSFW())
+      .orderBy((stream: Stream) => stream.getTitle())
+      .filter((stream: Stream) => stream.isSFW())
 
     this.regions.forEach(async (region: Region) => {
-      if (region.code === 'INT') return
+      if (region.isWorldwide()) return
 
-      const regionSubdivisionsCodes = this.subdivisions
-        .filter((subdivision: Subdivision) => region.countries.indexOf(subdivision.country) > -1)
-        .map((subdivision: Subdivision) => `s/${subdivision.code}`)
-
-      const regionCodes = region.countries
-        .map((code: string) => `c/${code}`)
-        .concat(regionSubdivisionsCodes)
-        .add(`r/${region.code}`)
-
-      const regionStreams = streams.filter(stream => stream.broadcastArea.intersects(regionCodes))
+      const regionStreams = streams.filter((stream: Stream) => stream.isBroadcastInRegion(region))
 
       const playlist = new Playlist(regionStreams, { public: true })
       const filepath = `regions/${region.code.toLowerCase()}.m3u`
       await this.storage.save(filepath, playlist.toString())
-      this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
+      this.logger.info(
+        JSON.stringify({ type: 'region', filepath, count: playlist.streams.count() })
+      )
     })
+
+    const internationalStreams = streams.filter((stream: Stream) => stream.isInternational())
+    const internationalPlaylist = new Playlist(internationalStreams, { public: true })
+    const internationalFilepath = 'regions/int.m3u'
+    await this.storage.save(internationalFilepath, internationalPlaylist.toString())
+    this.logger.info(
+      JSON.stringify({
+        type: 'region',
+        filepath: internationalFilepath,
+        count: internationalPlaylist.streams.count()
+      })
+    )
+
+    const undefinedStreams = streams.filter((stream: Stream) => !stream.hasBroadcastArea())
+    const playlist = new Playlist(undefinedStreams, { public: true })
+    const filepath = 'regions/undefined.m3u'
+    await this.storage.save(filepath, playlist.toString())
+    this.logger.info(JSON.stringify({ type: 'region', filepath, count: playlist.streams.count() }))
   }
 }
