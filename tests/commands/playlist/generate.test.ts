@@ -7,10 +7,12 @@ beforeEach(() => {
 })
 
 it('can generate playlists and logs', () => {
-  execSync(
+  const stdout = execSync(
     'STREAMS_DIR=tests/__data__/input/playlist_generate DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.gh-pages LOGS_DIR=tests/__data__/output/logs npm run playlist:generate',
     { encoding: 'utf8' }
   )
+
+  if (process.env.DEBUG === 'true') console.log(stdout)
 
   const playlists = glob
     .sync('tests/__data__/expected/playlist_generate/.gh-pages/**/*.m3u')
