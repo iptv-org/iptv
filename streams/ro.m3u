@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="A7TV.ro",A7TV (1080p)
+http://62.233.57.226:8001/play/a00j00
 #EXTINF:-1 tvg-id="AgroTV.ro",AgroTV (404p) [Not 24/7]
 https://stream1.1616.ro:1945/agro/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="AgroTV.ro",AgroTV (360p) [Not 24/7]
@@ -53,6 +55,8 @@ http://89.149.30.158:1935/CorneaTV/myStream/playlist.m3u8
 http://cdn.credonet.tv:1935/ctv/livecredo/playlist.m3u8
 #EXTINF:-1 tvg-id="CredoTV.ro",Credo TV (720p) [Not 24/7]
 https://5bb3298db4821.streamlock.net/ctv/livecredo/playlist.m3u8
+#EXTINF:-1 tvg-id="Digi24.ro",Digi 24 (1080p)
+http://62.233.57.226:8001/play/a00k00
 #EXTINF:-1 tvg-id="Digi24.ro",Digi 24 (576p)
 https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.ro",Disney Channel Romania (576i)
@@ -245,7 +249,6 @@ https://mn-nl.mncdn.com/tvrtgmures_new/smil:tvrtgmures_new.smil/index.m3u8
 https://tvr-tvrtimisoara.cdn.zitec.com/live/tvrtimisoara/main.m3u8
 #EXTINF:-1 tvg-id="TVSat.ro",TVSat (576p) [Not 24/7]
 http://89.38.8.130:39443
-#EXTINF:-1 tvg-id="Digi24.ro",Digi 24 (1080p)
-http://62.233.57.226:8001/play/a00k00
-#EXTINF:-1 tvg-id="A7TV.ro",A7TV (1080p)
-http://62.233.57.226:8001/play/a00j00
+#EXTINF:-1 tvg-id="SuperTV.ro" http-referrer="https://supertv.ro",Super TV (1080i) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://supertv.ro
+https://live.supertv.ro/live/supertv/playlist.m3u8

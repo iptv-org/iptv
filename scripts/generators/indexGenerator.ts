@@ -27,6 +27,6 @@ export class IndexGenerator implements Generator {
     const playlist = new Playlist(sfwStreams, { public: true })
     const filepath = 'index.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(JSON.stringify({ filepath, count: playlist.streams.count() }))
+    this.logger.info(JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }))
   }
 }

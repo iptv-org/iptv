@@ -3,8 +3,6 @@
 https://123tv-mx1.flex-cdn.net/index.m3u8
 #EXTINF:-1 tvg-id="3sat.de",3sat (720p) [Geo-blocked]
 https://zdf-hls-18.akamaized.net/hls/live/2016501/dach/high/master.m3u8
-#EXTINF:-1 tvg-id="AlexBerlin.de",Alex Berlin (1080p) [Not 24/7]
-https://alex-stream.rosebud-media.de/live/alexlivetv40.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AllgauTV.de",Allgäu TV (1080p)
 https://stream01.welocal.stream/stream/fhd-allgaeutv_25679/ngrp:stream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="AltenburgTV.de",Altenburg TV (1080p)
@@ -197,6 +195,8 @@ https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.de",Nick Germany (1080p) [Geo-blocked]
 https://0d26a00dfbb1.airspace-cdn.cbsivideo.com/nick1999/master/nick1999.m3u8
+#EXTINF:-1 tvg-id="Nickelodeon.de",Nickelodeon
+https://ma.anixa.tv/clips/stream/nickelodeon/playlist.php
 #EXTINF:-1 tvg-id="Nickelodeon.de",Nickelodeon Deutschland [Geo-blocked]
 https://unilivemtveu-lh.akamaihd.net/i/nickde_1@448749/master.m3u8
 #EXTINF:-1 tvg-id="NiederbayernTV.de",Niederbayern TV (720p)
@@ -214,13 +214,7 @@ https://hls1.wtnet.de/noa4hh/apple/wifi6500.m3u8
 #EXTINF:-1 tvg-id="noa4Norderstedt.de",Noa 4 Norderstedt (1080p)
 https://hls1.wtnet.de/noa4/apple/wifi6500.m3u8
 #EXTINF:-1 tvg-id="NRWision.de",NRWision (1080p)
-https://fms.nrwision.de/live/livestreamHD.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="NRWision.de",NRWISION (1080p)
-https://fms.nrwision.de/live/livestreamHD.stream_source/playlist.m3u8
-#EXTINF:-1 tvg-id="NRWision.de",NRWision (720p)
-https://fms.nrwision.de/live/livestreamHD.stream_1080p/playlist.m3u8
-#EXTINF:-1 tvg-id="NRWision.de",NRWision (360p)
-https://fms.nrwision.de/live/livestreamHD.stream_360p/playlist.m3u8
+https://fms.nrwision.de/live/ngrp:livestreamHD.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="OberpfalzTV.de",Oberpfalz TV (1080p)
 https://oberpfalztv.iptv-playoutcenter.de/oberpfalztv/oberpfalztv.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="Oeins.de",oeins (Oldenburg) (1080p) [Not 24/7]
@@ -371,17 +365,12 @@ https://live.creacast.com/rockland-radio/smil:rockland-radio.smil/playlist.m3u8
 https://rt-ger.rttv.com/dvr/rtdeutsch/playlist.m3u8
 #EXTINF:-1 tvg-id="RTDE.de",RT DE (1080p) [Not 24/7]
 https://rt-ger.rttv.com/live/rtdeutsch/playlist.m3u8
-#EXTINF:-1 tvg-id="RTL.de",RTL (576p)
-https://s6.hopslan.com/rtlc1/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="RTL.de",RTL (Germany) (576p)
 http://178.219.128.68:64888/RTL
 #EXTINF:-1 tvg-id="RTLSuper.de",RTL Super (576p)
 http://178.219.128.68:64888/SUPERTL
 #EXTINF:-1 tvg-id="RTLZwei.de",RTL Zwei (1080p)
 http://178.219.128.68:64888/RTL2
-#EXTINF:-1 tvg-id="RTLZwei.de" http-referrer="https://www.2ix2.com/rtl2-live/",RTL Zwei (576p)
-#EXTVLCOPT:http-referrer=https://www.2ix2.com/rtl2-live/
-https://s6.hopslan.com/rtl2x1/index.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen1.de",Saarland Fernsehen 1 (1080p)
 https://saarland1.iptv-playoutcenter.de/saarland1/saarland1.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen2.de",Saarland Fernsehen 2 (720p) [Not 24/7]
@@ -492,6 +481,8 @@ https://wdrlokalzeit.akamaized.net/hls/live/2018025-b/wdrlz_muensterland/master.
 https://wdrlokalzeit.akamaized.net/hls/live/2018020-b/wdrlz_siegen/master.m3u8
 #EXTINF:-1 tvg-id="WDRFernsehenWuppertal.de",WDR Fernsehen Wuppertal (720p) [Geo-blocked]
 https://wdrlokalzeit.akamaized.net/hls/live/2018028-b/wdrlz_wuppertal/master.m3u8
+#EXTINF:-1 tvg-id="WELT.de",WELT
+https://s6.hopslan.com/n24X/index.m3u8
 #EXTINF:-1 tvg-id="WeltderWunderTV.de",Welt der Wunder TV (576p)
 https://wdw.iptv-playoutcenter.de/wdw/wdw1/playlist.m3u8
 #EXTINF:-1 tvg-id="Wir24TV.de",Wir24 TV (1080p) [Geo-blocked]
@@ -510,7 +501,9 @@ https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
 https://ef56ef401101403a8b06f1dec29ef1eb.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-de_ZeeOne/playlist.m3u8
 #EXTINF:-1 tvg-id="ZweiMusicTelevision.de",ZWEI2 Music (1080p)
 https://cdne.folxplay.tv/folx-trz/streams/ch-2/master.m3u8
-#EXTINF:-1 tvg-id="WELT.de",WELT
-https://s6.hopslan.com/n24X/index.m3u8
-#EXTINF:-1 tvg-id="Nickelodeon.de",Nickelodeon
-https://ma.anixa.tv/clips/stream/nickelodeon/playlist.php
+#EXTINF:-1 tvg-id="MCTV.de",MC TV (720p)
+https://rrr.sz.xlcdn.com/?account=mceutv&file=mc2&type=live&service=wowza&protocol=https&output=playlist.m3u8
+#EXTINF:-1 tvg-id="RFH.de",RFH (1080p)
+https://h056.video-stream-hosting.de/medienasa-live/_definst_/mp4:RFH_high/index.m3u8
+#EXTINF:-1 tvg-id="AlexBerlin.de",Alex Berlin (1080p)
+https://alex-stream.rosebud-media.de/bounce/alexlivetv50.smil/index.m3u8

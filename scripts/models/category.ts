@@ -1,4 +1,4 @@
-type CategoryProps = {
+type CategoryData = {
   id: string
   name: string
 }
@@ -7,8 +7,8 @@ export class Category {
   id: string
   name: string
 
-  constructor({ id, name }: CategoryProps) {
-    this.id = id
-    this.name = name
+  constructor(data: CategoryData) {
+    this.id = data.id
+    this.name = data.name
   }
 }
