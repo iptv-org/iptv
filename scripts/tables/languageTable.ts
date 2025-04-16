@@ -11,6 +11,7 @@ export class LanguageTable implements Table {
     const dataStorage = new Storage(DATA_DIR)
     const languagesContent = await dataStorage.json('languages.json')
     const languages = new Collection(languagesContent).map(data => new Language(data))
+    const languagesGroupedByCode = languages.keyBy((language: Language) => language.code)
 
     const parser = new LogParser()
     const logsStorage = new Storage(LOGS_DIR)
@@ -19,13 +20,11 @@ export class LanguageTable implements Table {
     let data = new Collection()
     parser
       .parse(generatorsLog)
-      .filter((logItem: LogItem) => logItem.filepath.includes('languages/'))
+      .filter((logItem: LogItem) => logItem.type === 'language')
       .forEach((logItem: LogItem) => {
         const file = new File(logItem.filepath)
         const languageCode = file.name()
-        const language: Language = languages.first(
-          (language: Language) => language.code === languageCode
-        )
+        const language: Language = languagesGroupedByCode.get(languageCode)
 
         data.add([
           language ? language.name : 'ZZ',

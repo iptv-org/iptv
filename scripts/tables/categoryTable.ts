@@ -11,6 +11,7 @@ export class CategoryTable implements Table {
     const dataStorage = new Storage(DATA_DIR)
     const categoriesContent = await dataStorage.json('categories.json')
     const categories = new Collection(categoriesContent).map(data => new Category(data))
+    const categoriesGroupedById = categories.keyBy((category: Category) => category.id)
 
     const parser = new LogParser()
     const logsStorage = new Storage(LOGS_DIR)
@@ -19,13 +20,12 @@ export class CategoryTable implements Table {
     let data = new Collection()
     parser
       .parse(generatorsLog)
-      .filter((logItem: LogItem) => logItem.filepath.includes('categories/'))
+      .filter((logItem: LogItem) => logItem.type === 'category')
       .forEach((logItem: LogItem) => {
         const file = new File(logItem.filepath)
         const categoryId = file.name()
-        const category: Category = categories.first(
-          (category: Category) => category.id === categoryId
-        )
+        const category: Category = categoriesGroupedById.get(categoryId)
+
         data.add([
           category ? category.name : 'ZZ',
           category ? category.name : 'Undefined',

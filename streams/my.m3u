@@ -14,18 +14,20 @@ http://210.210.155.35/dr9445/h/h04/index.m3u8
 http://210.210.155.37/uq2663/h/h22/index.m3u8
 #EXTINF:-1 tvg-id="MaahTV.my",Maah TV (720p) [Not 24/7]
 https://hls.maahtv.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="Okey.my" http-referrer="https://rtm-player.glueapi.io/",Okey RTM [Geo-blocked]
+#EXTINF:-1 tvg-id="Okey.my" http-referrer="https://rtm-player.glueapi.io/",Okey [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:okey/playlist.m3u8?id=3
-#EXTINF:-1 tvg-id="ParlimenMalaysia.my" http-referrer="https://rtm-player.glueapi.io/",RTM Parlimen (Dewan Negara) [Geo-blocked]
+#EXTINF:-1 tvg-id="RTMASEAN.my",RTM ASEAN
+https://d25tgymtnqzu8s.cloudfront.net/event/smil:event1/chunklist_b2596000_slENG.m3u8
+#EXTINF:-1 tvg-id="RTMParlimenDewanNegara.my" http-referrer="https://rtm-player.glueapi.io/",RTM Parlimen (Dewan Negara) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:negara/playlist.m3u8?id=8
-#EXTINF:-1 tvg-id="ParlimenMalaysia.my" http-referrer="https://rtm-player.glueapi.io/",RTM Parlimen (Dewan Rakyat) [Geo-blocked]
+#EXTINF:-1 tvg-id="RTMParlimenDewanRakyat.my" http-referrer="https://rtm-player.glueapi.io/",RTM Parlimen (Dewan Rakyat) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://rtm-player.glueapi.io/
 https://d25tgymtnqzu8s.cloudfront.net/smil:rakyat/playlist.m3u8?id=7
-#EXTINF:-1 tvg-id="TV1.my",RTM TV 1 [Geo-blocked]
+#EXTINF:-1 tvg-id="TV1.my",TV1 [Geo-blocked]
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv1/manifest.mpd
-#EXTINF:-1 tvg-id="TV2.my",RTM TV 2 [Geo-blocked]
+#EXTINF:-1 tvg-id="TV2.my",TV2 [Geo-blocked]
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv2/manifest.mpd
 #EXTINF:-1 tvg-id="SukanRTM.my",Sukan RTM [Geo-blocked]
 https://d25tgymtnqzu8s.cloudfront.net/smil:sukan/manifest.mpd
@@ -42,7 +44,9 @@ https://tonton-live-switch-ssar.akamaized.net/stream-tv3/master.m3u8?bpkio_servi
 https://d25tgymtnqzu8s.cloudfront.net/smil:tv6/playlist.m3u8?id=6
 #EXTINF:-1 tvg-id="TV9.my",TV9
 https://tonton-live-switch-ssar.akamaized.net/stream-tv9/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311
+#EXTINF:-1 tvg-id="8TV.my",8TV
+https://tonton-live-switch-ssar.akamaized.net/stream-8tv/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311
+#EXTINF:-1 tvg-id="NTV7.my",NTV7
+https://tonton-live-switch-ssar.akamaized.net/stream-ntv7/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311
 #EXTINF:-1 tvg-id="TVIKIM.my",TVIKIM
 https://edge-sg1.vediostream.com/abr/tvikim/playlist.m3u8
-#EXTINF:-1 tvg-id="RTMASEAN.my",RTM ASEAN
-https://d25tgymtnqzu8s.cloudfront.net/event/smil:event1/chunklist_b2596000_slENG.m3u8
