@@ -1,16 +1,6 @@
-import { Logger, Storage, Collection } from '@freearhey/core'
-import { PlaylistParser } from '../../core'
-import {
-  Stream,
-  Category,
-  Channel,
-  Language,
-  Country,
-  Region,
-  Subdivision,
-  Feed,
-  Timezone
-} from '../../models'
+import { Logger, Storage } from '@freearhey/core'
+import { PlaylistParser, DataProcessor, DataLoader } from '../../core'
+import { Stream } from '../../models'
 import { uniqueId } from 'lodash'
 import {
   CategoriesGenerator,
@@ -24,86 +14,36 @@ import {
   IndexRegionGenerator
 } from '../../generators'
 import { DATA_DIR, LOGS_DIR, STREAMS_DIR } from '../../constants'
+import type { DataProcessorData } from '../../types/dataProcessor'
+import type { DataLoaderData } from '../../types/dataLoader'
 
 async function main() {
   const logger = new Logger()
-  const dataStorage = new Storage(DATA_DIR)
   const generatorsLogger = new Logger({
     stream: await new Storage(LOGS_DIR).createStream(`generators.log`)
   })
 
   logger.info('loading data from api...')
-  const categoriesData = await dataStorage.json('categories.json')
-  const countriesData = await dataStorage.json('countries.json')
-  const languagesData = await dataStorage.json('languages.json')
-  const regionsData = await dataStorage.json('regions.json')
-  const subdivisionsData = await dataStorage.json('subdivisions.json')
-  const timezonesData = await dataStorage.json('timezones.json')
-  const channelsData = await dataStorage.json('channels.json')
-  const feedsData = await dataStorage.json('feeds.json')
-
-  logger.info('preparing data...')
-  const subdivisions = new Collection(subdivisionsData).map(data => new Subdivision(data))
-  const subdivisionsGroupedByCode = subdivisions.keyBy(
-    (subdivision: Subdivision) => subdivision.code
-  )
-  const subdivisionsGroupedByCountryCode = subdivisions.groupBy(
-    (subdivision: Subdivision) => subdivision.countryCode
-  )
-  let regions = new Collection(regionsData).map(data =>
-    new Region(data).withSubdivisions(subdivisions)
-  )
-  const regionsGroupedByCode = regions.keyBy((region: Region) => region.code)
-  const categories = new Collection(categoriesData).map(data => new Category(data))
-  const categoriesGroupedById = categories.keyBy((category: Category) => category.id)
-  const languages = new Collection(languagesData).map(data => new Language(data))
-  const languagesGroupedByCode = languages.keyBy((language: Language) => language.code)
-  const countries = new Collection(countriesData).map(data =>
-    new Country(data)
-      .withRegions(regions)
-      .withLanguage(languagesGroupedByCode)
-      .withSubdivisions(subdivisionsGroupedByCountryCode)
-  )
-  const countriesGroupedByCode = countries.keyBy((country: Country) => country.code)
-  regions = regions.map((region: Region) => region.withCountries(countriesGroupedByCode))
-
-  const timezones = new Collection(timezonesData).map(data =>
-    new Timezone(data).withCountries(countriesGroupedByCode)
-  )
-  const timezonesGroupedById = timezones.keyBy((timezone: Timezone) => timezone.id)
-
-  const channels = new Collection(channelsData).map(data =>
-    new Channel(data)
-      .withCategories(categoriesGroupedById)
-      .withCountry(countriesGroupedByCode)
-      .withSubdivision(subdivisionsGroupedByCode)
-  )
-  const channelsGroupedById = channels.keyBy((channel: Channel) => channel.id)
-  const feeds = new Collection(feedsData).map(data =>
-    new Feed(data)
-      .withChannel(channelsGroupedById)
-      .withLanguages(languagesGroupedByCode)
-      .withTimezones(timezonesGroupedById)
-      .withBroadcastCountries(
-        countriesGroupedByCode,
-        regionsGroupedByCode,
-        subdivisionsGroupedByCode
-      )
-      .withBroadcastRegions(regions)
-      .withBroadcastSubdivisions(subdivisionsGroupedByCode)
-  )
-  const feedsGroupedByChannelId = feeds.groupBy((feed: Feed) =>
-    feed.channel ? feed.channel.id : uniqueId()
-  )
+  const processor = new DataProcessor()
+  const dataStorage = new Storage(DATA_DIR)
+  const loader = new DataLoader({ storage: dataStorage })
+  const data: DataLoaderData = await loader.load()
+  const {
+    categories,
+    countries,
+    regions,
+    channelsKeyById,
+    feedsGroupedByChannelId
+  }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
-  const storage = new Storage(STREAMS_DIR)
+  const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
-    storage,
-    channelsGroupedById,
+    storage: streamsStorage,
+    channelsKeyById,
     feedsGroupedByChannelId
   })
-  const files = await storage.list('**/*.m3u')
+  const files = await streamsStorage.list('**/*.m3u')
   let streams = await parser.parse(files)
   const totalStreams = streams.count()
   streams = streams.uniqBy((stream: Stream) =>
