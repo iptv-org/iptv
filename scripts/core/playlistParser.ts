@@ -1,12 +1,22 @@
-import { Collection, Storage } from '@freearhey/core'
+import { Collection, Storage, Dictionary } from '@freearhey/core'
 import parser from 'iptv-playlist-parser'
 import { Stream } from '../models'
 
+type PlaylistPareserProps = {
+  storage: Storage
+  feedsGroupedByChannelId: Dictionary
+  channelsGroupedById: Dictionary
+}
+
 export class PlaylistParser {
   storage: Storage
+  feedsGroupedByChannelId: Dictionary
+  channelsGroupedById: Dictionary
 
-  constructor({ storage }: { storage: Storage }) {
+  constructor({ storage, feedsGroupedByChannelId, channelsGroupedById }: PlaylistPareserProps) {
     this.storage = storage
+    this.feedsGroupedByChannelId = feedsGroupedByChannelId
+    this.channelsGroupedById = channelsGroupedById
   }
 
   async parse(files: string[]): Promise<Collection> {
@@ -21,41 +31,18 @@ export class PlaylistParser {
   }
 
   async parseFile(filepath: string): Promise<Collection> {
-    const streams = new Collection()
-
     const content = await this.storage.load(filepath)
     const parsed: parser.Playlist = parser.parse(content)
 
-    parsed.items.forEach((item: parser.PlaylistItem) => {
-      const { name, label, quality } = parseTitle(item.name)
-      const stream = new Stream({
-        channel: item.tvg.id,
-        name,
-        label,
-        quality,
-        filepath,
-        line: item.line,
-        url: item.url,
-        httpReferrer: item.http.referrer,
-        httpUserAgent: item.http['user-agent']
-      })
+    const streams = new Collection(parsed.items).map((data: parser.PlaylistItem) => {
+      const stream = new Stream(data)
+        .withFeed(this.feedsGroupedByChannelId)
+        .withChannel(this.channelsGroupedById)
+        .setFilepath(filepath)
 
-      streams.add(stream)
+      return stream
     })
 
     return streams
   }
-}
-
-function parseTitle(title: string): { name: string; label: string; quality: string } {
-  const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
-  title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
-  const [, quality] = title.match(/ \(([0-9]+p)\)$/) || [null, '']
-  title = title.replace(new RegExp(` \\(${quality}\\)$`), '')
-
-  return { name: title, label, quality }
-}
-
-function escapeRegExp(text) {
-  return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
 }
