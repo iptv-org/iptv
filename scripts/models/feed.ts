@@ -1,16 +1,6 @@
 import { Collection, Dictionary } from '@freearhey/core'
 import { Country, Language, Region, Channel, Subdivision } from './index'
-
-type FeedData = {
-  channel: string
-  id: string
-  name: string
-  is_main: boolean
-  broadcast_area: Collection
-  languages: Collection
-  timezones: Collection
-  video_format: string
-}
+import type { FeedData } from '../types/feed'
 
 export class Feed {
   channelId: string
@@ -30,6 +20,8 @@ export class Feed {
   timezoneIds: Collection
   timezones?: Collection
   videoFormat: string
+  guides?: Collection
+  streams?: Collection
 
   constructor(data: FeedData) {
     this.channelId = data.channel
@@ -61,40 +53,58 @@ export class Feed {
     })
   }
 
-  withChannel(channelsGroupedById: Dictionary): this {
-    this.channel = channelsGroupedById.get(this.channelId)
+  withChannel(channelsKeyById: Dictionary): this {
+    this.channel = channelsKeyById.get(this.channelId)
 
     return this
   }
 
-  withLanguages(languagesGroupedByCode: Dictionary): this {
+  withStreams(streamsGroupedById: Dictionary): this {
+    this.streams = new Collection(streamsGroupedById.get(`${this.channelId}@${this.id}`))
+
+    if (this.isMain) {
+      this.streams = this.streams.concat(new Collection(streamsGroupedById.get(this.channelId)))
+    }
+
+    return this
+  }
+
+  withGuides(guidesGroupedByStreamId: Dictionary): this {
+    this.guides = new Collection(guidesGroupedByStreamId.get(`${this.channelId}@${this.id}`))
+
+    if (this.isMain) {
+      this.guides = this.guides.concat(new Collection(guidesGroupedByStreamId.get(this.channelId)))
+    }
+
+    return this
+  }
+
+  withLanguages(languagesKeyByCode: Dictionary): this {
     this.languages = this.languageCodes
-      .map((code: string) => languagesGroupedByCode.get(code))
+      .map((code: string) => languagesKeyByCode.get(code))
       .filter(Boolean)
 
     return this
   }
 
-  withTimezones(timezonesGroupedById: Dictionary): this {
-    this.timezones = this.timezoneIds
-      .map((id: string) => timezonesGroupedById.get(id))
-      .filter(Boolean)
+  withTimezones(timezonesKeyById: Dictionary): this {
+    this.timezones = this.timezoneIds.map((id: string) => timezonesKeyById.get(id)).filter(Boolean)
 
     return this
   }
 
-  withBroadcastSubdivisions(subdivisionsGroupedByCode: Dictionary): this {
+  withBroadcastSubdivisions(subdivisionsKeyByCode: Dictionary): this {
     this.broadcastSubdivisions = this.broadcastSubdivisionCodes.map((code: string) =>
-      subdivisionsGroupedByCode.get(code)
+      subdivisionsKeyByCode.get(code)
     )
 
     return this
   }
 
   withBroadcastCountries(
-    countriesGroupedByCode: Dictionary,
-    regionsGroupedByCode: Dictionary,
-    subdivisionsGroupedByCode: Dictionary
+    countriesKeyByCode: Dictionary,
+    regionsKeyByCode: Dictionary,
+    subdivisionsKeyByCode: Dictionary
   ): this {
     let broadcastCountries = new Collection()
 
@@ -104,22 +114,22 @@ export class Feed {
     }
 
     this.broadcastCountryCodes.forEach((code: string) => {
-      broadcastCountries.add(countriesGroupedByCode.get(code))
+      broadcastCountries.add(countriesKeyByCode.get(code))
     })
 
     this.broadcastRegionCodes.forEach((code: string) => {
-      const region: Region = regionsGroupedByCode.get(code)
+      const region: Region = regionsKeyByCode.get(code)
       if (region) {
         region.countryCodes.forEach((countryCode: string) => {
-          broadcastCountries.add(countriesGroupedByCode.get(countryCode))
+          broadcastCountries.add(countriesKeyByCode.get(countryCode))
         })
       }
     })
 
     this.broadcastSubdivisionCodes.forEach((code: string) => {
-      const subdivision: Subdivision = subdivisionsGroupedByCode.get(code)
+      const subdivision: Subdivision = subdivisionsKeyByCode.get(code)
       if (subdivision) {
-        broadcastCountries.add(countriesGroupedByCode.get(subdivision.countryCode))
+        broadcastCountries.add(countriesKeyByCode.get(subdivision.countryCode))
       }
     })
 
@@ -196,5 +206,23 @@ export class Feed {
     if (this.isInternational()) return false
 
     return this.getBroadcastRegions().includes((_region: Region) => _region.code === region.code)
+  }
+
+  getGuides(): Collection {
+    if (!this.guides) return new Collection()
+
+    return this.guides
+  }
+
+  getStreams(): Collection {
+    if (!this.streams) return new Collection()
+
+    return this.streams
+  }
+
+  getFullName(): string {
+    if (!this.channel) return ''
+
+    return `${this.channel.name} ${this.name}`
   }
 }
