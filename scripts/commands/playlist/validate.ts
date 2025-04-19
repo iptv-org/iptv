@@ -1,10 +1,11 @@
 import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
-import { PlaylistParser } from '../../core'
-import { Channel, Stream, Blocked, Feed } from '../../models'
+import { DataLoader, DataProcessor, PlaylistParser } from '../../core'
+import { DataProcessorData } from '../../types/dataProcessor'
+import { DATA_DIR, STREAMS_DIR } from '../../constants'
+import { DataLoaderData } from '../../types/dataLoader'
+import { BlocklistRecord, Stream } from '../../models'
 import { program } from 'commander'
 import chalk from 'chalk'
-import { uniqueId } from 'lodash'
-import { DATA_DIR, STREAMS_DIR } from '../../constants'
 
 program.argument('[filepath]', 'Path to file to validate').parse(process.argv)
 
@@ -18,26 +19,21 @@ async function main() {
   const logger = new Logger()
 
   logger.info('loading data from api...')
+  const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
-  const channelsData = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsData).map(data => new Channel(data))
-  const channelsGroupedById = channels.keyBy((channel: Channel) => channel.id)
-  const feedsData = await dataStorage.json('feeds.json')
-  const feeds = new Collection(feedsData).map(data =>
-    new Feed(data).withChannel(channelsGroupedById)
-  )
-  const feedsGroupedByChannelId = feeds.groupBy((feed: Feed) =>
-    feed.channel ? feed.channel.id : uniqueId()
-  )
-  const blocklistContent = await dataStorage.json('blocklist.json')
-  const blocklist = new Collection(blocklistContent).map(data => new Blocked(data))
-  const blocklistGroupedByChannelId = blocklist.keyBy((blocked: Blocked) => blocked.channelId)
+  const loader = new DataLoader({ storage: dataStorage })
+  const data: DataLoaderData = await loader.load()
+  const {
+    channelsKeyById,
+    feedsGroupedByChannelId,
+    blocklistRecordsGroupedByChannelId
+  }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
     storage: streamsStorage,
-    channelsGroupedById,
+    channelsKeyById,
     feedsGroupedByChannelId
   })
   const files = program.args.length ? program.args : await streamsStorage.list('**/*.m3u')
@@ -55,11 +51,11 @@ async function main() {
     const buffer = new Dictionary()
     streams.forEach((stream: Stream) => {
       if (stream.channelId) {
-        const channel = channelsGroupedById.get(stream.channelId)
+        const channel = channelsKeyById.get(stream.channelId)
         if (!channel) {
           log.add({
             type: 'warning',
-            line: stream.line,
+            line: stream.getLine(),
             message: `"${stream.id}" is not in the database`
           })
         }
@@ -69,29 +65,32 @@ async function main() {
       if (duplicate) {
         log.add({
           type: 'warning',
-          line: stream.line,
+          line: stream.getLine(),
           message: `"${stream.url}" is already on the playlist`
         })
       } else {
         buffer.set(stream.url, true)
       }
 
-      const blocked = stream.channel ? blocklistGroupedByChannelId.get(stream.channel.id) : false
-      if (blocked) {
-        if (blocked.reason === 'dmca') {
+      const blocklistRecords = stream.channel
+        ? new Collection(blocklistRecordsGroupedByChannelId.get(stream.channel.id))
+        : new Collection()
+
+      blocklistRecords.forEach((blocklistRecord: BlocklistRecord) => {
+        if (blocklistRecord.reason === 'dmca') {
           log.add({
             type: 'error',
-            line: stream.line,
-            message: `"${blocked.channelId}" is on the blocklist due to claims of copyright holders (${blocked.ref})`
+            line: stream.getLine(),
+            message: `"${blocklistRecord.channelId}" is on the blocklist due to claims of copyright holders (${blocklistRecord.ref})`
           })
-        } else if (blocked.reason === 'nsfw') {
+        } else if (blocklistRecord.reason === 'nsfw') {
           log.add({
             type: 'error',
-            line: stream.line,
-            message: `"${blocked.channelId}" is on the blocklist due to NSFW content (${blocked.ref})`
+            line: stream.getLine(),
+            message: `"${blocklistRecord.channelId}" is on the blocklist due to NSFW content (${blocklistRecord.ref})`
           })
         }
-      }
+      })
     })
 
     if (log.notEmpty()) {

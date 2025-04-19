@@ -1,38 +1,33 @@
+import { DataLoader, DataProcessor, IssueLoader, PlaylistParser } from '../../core'
 import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
+import type { DataProcessorData } from '../../types/dataProcessor'
+import { Stream, Playlist, Channel, Issue } from '../../models'
+import type { DataLoaderData } from '../../types/dataLoader'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
-import { IssueLoader, PlaylistParser } from '../../core'
-import { Stream, Playlist, Channel, Feed, Issue } from '../../models'
 import validUrl from 'valid-url'
-import { uniqueId } from 'lodash'
 
 let processedIssues = new Collection()
 
 async function main() {
   const logger = new Logger({ disabled: true })
-  const loader = new IssueLoader()
+  const issueLoader = new IssueLoader()
 
   logger.info('loading issues...')
-  const issues = await loader.load()
+  const issues = await issueLoader.load()
 
-  logger.info('loading channels from api...')
+  logger.info('loading data from api...')
+  const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
-  const channelsData = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsData).map(data => new Channel(data))
-  const channelsGroupedById = channels.keyBy((channel: Channel) => channel.id)
-  const feedsData = await dataStorage.json('feeds.json')
-  const feeds = new Collection(feedsData).map(data =>
-    new Feed(data).withChannel(channelsGroupedById)
-  )
-  const feedsGroupedByChannelId = feeds.groupBy((feed: Feed) =>
-    feed.channel ? feed.channel.id : uniqueId()
-  )
+  const dataLoader = new DataLoader({ storage: dataStorage })
+  const data: DataLoaderData = await dataLoader.load()
+  const { channelsKeyById, feedsGroupedByChannelId }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
     storage: streamsStorage,
     feedsGroupedByChannelId,
-    channelsGroupedById
+    channelsKeyById
   })
   const files = await streamsStorage.list('**/*.m3u')
   const streams = await parser.parse(files)
@@ -44,7 +39,7 @@ async function main() {
   await editStreams({
     streams,
     issues,
-    channelsGroupedById,
+    channelsKeyById,
     feedsGroupedByChannelId
   })
 
@@ -52,7 +47,7 @@ async function main() {
   await addStreams({
     streams,
     issues,
-    channelsGroupedById,
+    channelsKeyById,
     feedsGroupedByChannelId
   })
 
@@ -101,12 +96,12 @@ async function removeStreams({ streams, issues }: { streams: Collection; issues:
 async function editStreams({
   streams,
   issues,
-  channelsGroupedById,
+  channelsKeyById,
   feedsGroupedByChannelId
 }: {
   streams: Collection
   issues: Collection
-  channelsGroupedById: Dictionary
+  channelsKeyById: Dictionary
   feedsGroupedByChannelId: Dictionary
 }) {
   const requests = issues.filter(
@@ -129,7 +124,7 @@ async function editStreams({
       stream
         .setChannelId(channelId)
         .setFeedId(feedId)
-        .withChannel(channelsGroupedById)
+        .withChannel(channelsKeyById)
         .withFeed(feedsGroupedByChannelId)
         .updateId()
         .updateName()
@@ -143,8 +138,8 @@ async function editStreams({
 
     if (data.has('label')) stream.setLabel(label)
     if (data.has('quality')) stream.setQuality(quality)
-    if (data.has('httpUserAgent')) stream.setHttpUserAgent(httpUserAgent)
-    if (data.has('httpReferrer')) stream.setHttpReferrer(httpReferrer)
+    if (data.has('httpUserAgent')) stream.setUserAgent(httpUserAgent)
+    if (data.has('httpReferrer')) stream.setReferrer(httpReferrer)
 
     processedIssues.add(issue.number)
   })
@@ -153,12 +148,12 @@ async function editStreams({
 async function addStreams({
   streams,
   issues,
-  channelsGroupedById,
+  channelsKeyById,
   feedsGroupedByChannelId
 }: {
   streams: Collection
   issues: Collection
-  channelsGroupedById: Dictionary
+  channelsKeyById: Dictionary
   feedsGroupedByChannelId: Dictionary
 }) {
   const requests = issues.filter(
@@ -168,51 +163,32 @@ async function addStreams({
     const data = issue.data
     if (data.missing('streamId') || data.missing('streamUrl')) return
     if (streams.includes((_stream: Stream) => _stream.url === data.getString('streamUrl'))) return
-    const stringUrl = data.getString('streamUrl') || ''
-    if (!isUri(stringUrl)) return
+    const streamUrl = data.getString('streamUrl') || ''
+    if (!isUri(streamUrl)) return
 
     const streamId = data.getString('streamId') || ''
-    const [channelId] = streamId.split('@')
+    const [channelId, feedId] = streamId.split('@')
 
-    const channel: Channel = channelsGroupedById.get(channelId)
+    const channel: Channel = channelsKeyById.get(channelId)
     if (!channel) return
 
-    const label = data.getString('label') || ''
-    const quality = data.getString('quality') || ''
-    const httpUserAgent = data.getString('httpUserAgent') || ''
-    const httpReferrer = data.getString('httpReferrer') || ''
+    const label = data.getString('label') || null
+    const quality = data.getString('quality') || null
+    const httpUserAgent = data.getString('httpUserAgent') || null
+    const httpReferrer = data.getString('httpReferrer') || null
 
     const stream = new Stream({
-      tvg: {
-        id: streamId,
-        name: '',
-        url: '',
-        logo: '',
-        rec: '',
-        shift: ''
-      },
+      channel: channelId,
+      feed: feedId,
       name: data.getString('channelName') || channel.name,
-      url: stringUrl,
-      group: {
-        title: ''
-      },
-      http: {
-        'user-agent': httpUserAgent,
-        referrer: httpReferrer
-      },
-      line: -1,
-      raw: '',
-      timeshift: '',
-      catchup: {
-        type: '',
-        source: '',
-        days: ''
-      }
+      url: streamUrl,
+      user_agent: httpUserAgent,
+      referrer: httpReferrer,
+      quality,
+      label
     })
-      .withChannel(channelsGroupedById)
+      .withChannel(channelsKeyById)
       .withFeed(feedsGroupedByChannelId)
-      .setLabel(label)
-      .setQuality(quality)
       .updateName()
       .updateFilepath()
 

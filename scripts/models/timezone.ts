@@ -18,8 +18,8 @@ export class Timezone {
     this.countryCodes = new Collection(data.countries)
   }
 
-  withCountries(countriesGroupedByCode: Dictionary): this {
-    this.countries = this.countryCodes.map((code: string) => countriesGroupedByCode.get(code))
+  withCountries(countriesKeyByCode: Dictionary): this {
+    this.countries = this.countryCodes.map((code: string) => countriesKeyByCode.get(code))
 
     return this
   }

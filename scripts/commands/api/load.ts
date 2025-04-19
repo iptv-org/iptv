@@ -1,23 +1,24 @@
-import { Logger } from '@freearhey/core'
-import { ApiClient } from '../../core'
+import { DATA_DIR } from '../../constants'
+import { Storage } from '@freearhey/core'
+import { DataLoader } from '../../core'
 
 async function main() {
-  const logger = new Logger()
-  const client = new ApiClient({ logger })
+  const storage = new Storage(DATA_DIR)
+  const loader = new DataLoader({ storage })
 
-  const requests = [
-    client.download('blocklist.json'),
-    client.download('categories.json'),
-    client.download('channels.json'),
-    client.download('countries.json'),
-    client.download('languages.json'),
-    client.download('regions.json'),
-    client.download('subdivisions.json'),
-    client.download('feeds.json'),
-    client.download('timezones.json')
-  ]
-
-  await Promise.all(requests)
+  await Promise.all([
+    loader.download('blocklist.json'),
+    loader.download('categories.json'),
+    loader.download('channels.json'),
+    loader.download('countries.json'),
+    loader.download('languages.json'),
+    loader.download('regions.json'),
+    loader.download('subdivisions.json'),
+    loader.download('feeds.json'),
+    loader.download('timezones.json'),
+    loader.download('guides.json'),
+    loader.download('streams.json')
+  ])
 }
 
 main()
