@@ -12,7 +12,7 @@
 
 You have several options:
 
-1. Create a new [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=-----streams_add.yml&title=Add%3A+) and provide all the required information. If the request is approved, the link will be added to the playlist in the next update.
+1. Create a new [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and provide all the required information. If the request is approved, the link will be added to the playlist in the next update.
 
 2. Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls).
 
@@ -51,7 +51,7 @@ If the link answers, you're with an Xtream Codes server.
 
 ### How to report a broken stream?
 
-Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&projects=&template=---broken-stream.yml&title=Broken%3A+) and as soon as a working replacement appears, we will add it to the playlist or at least remove the non-working one.
+Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream,streams:remove&projects=&template=3_broken-stream.yml&title=Broken%3A+) and as soon as a working replacement appears, we will add it to the playlist or at least remove the non-working one.
 
 The only thing before publishing your report is to make sure that:
 
@@ -93,7 +93,7 @@ After that, all you have to do is report any broken streams you find.
 
 ### How do I remove my channel from playlist?
 
-To request removal of a link to a channel from the repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=-removal-request.yml&title=Remove%3A+) and wait for the request to be reviewed (this usually takes no more than 1 business day). And if the request is approved, links to the channel will be immediately removed from the repository.
+To request removal of a link to a channel from the repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=6_copyright-claim.yml&title=Remove%3A+) and wait for the request to be reviewed (this usually takes no more than 1 business day). And if the request is approved, links to the channel will be immediately removed from the repository.
 
 The channel will also be added to our [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) to avoid its appearance in our playlists in the future.
 
