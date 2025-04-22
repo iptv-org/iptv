@@ -1,15 +1,20 @@
 import { execSync } from 'child_process'
+import os from 'os'
 
-it('can create report', () => {
-  const stdout = execSync(
-    'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/report_create npm run report:create',
-    {
-      encoding: 'utf8'
-    }
-  )
+let ENV_VAR = 'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/report_create'
+if (os.platform() === 'win32') {
+  ENV_VAR =
+    'SET "DATA_DIR=tests/__data__/input/data" && SET "STREAMS_DIR=tests/__data__/input/report_create" &&'
+}
 
-  expect(
-    stdout.includes(`
+describe('report:create', () => {
+  it('can create report', () => {
+    const cmd = `${ENV_VAR} npm run report:create`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+
+    expect(
+      stdout.includes(`
 ┌─────────┬─────────────┬──────────────────┬─────────────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────┐
 │ (index) │ issueNumber │ type             │ streamId                    │ streamUrl                                                                                                 │ status        │
 ├─────────┼─────────────┼──────────────────┼─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────┤
@@ -20,5 +25,6 @@ it('can create report', () => {
 │ 4       │ 16120       │ 'broken stream'  │ undefined                   │ 'http://190.61.102.67:2000/play/a038/index.m3u8'                                                          │ 'wrong_link'  │
 │ 5       │ 19956       │ 'channel search' │ 'CNBCe.tr'                  │ undefined                                                                                                 │ 'invalid_id'  │
 └─────────┴─────────────┴──────────────────┴─────────────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────┘`)
-  ).toBe(true)
+    ).toBe(true)
+  })
 })
