@@ -1,3 +1,4 @@
+import { pathToFileURL } from 'node:url'
 import { execSync } from 'child_process'
 import * as fs from 'fs-extra'
 import { glob } from 'glob'
@@ -25,8 +26,8 @@ describe('playlist:update', () => {
       .map(f => f.replace('tests/__data__/expected/playlist_update/', ''))
 
     files.forEach(filepath => {
-      expect(content(`output/streams/${filepath}`), filepath).toBe(
-        content(`expected/playlist_update/${filepath}`)
+      expect(content(`tests/__data__/output/streams/${filepath}`), filepath).toBe(
+        content(`tests/__data__/expected/playlist_update/${filepath}`)
       )
     })
 
@@ -37,7 +38,5 @@ describe('playlist:update', () => {
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(`tests/__data__/${filepath}`, {
-    encoding: 'utf8'
-  })
+  return fs.readFileSync(pathToFileURL(filepath), { encoding: 'utf8' })
 }
