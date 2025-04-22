@@ -1,3 +1,4 @@
+import { pathToFileURL } from 'node:url'
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
 import path from 'path'
@@ -36,9 +37,5 @@ describe('readme:update', () => {
 })
 
 function content(filepath: string) {
-  const data = fs.readFileSync(path.resolve(filepath), {
-    encoding: 'utf8'
-  })
-
-  return JSON.stringify(data)
+  return JSON.stringify(fs.readFileSync(pathToFileURL(filepath), { encoding: 'utf8' }))
 }
