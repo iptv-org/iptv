@@ -1,5 +1,4 @@
 import { execSync } from 'child_process'
-import path from 'node:path'
 import os from 'node:os'
 
 type ExecError = {
@@ -19,12 +18,8 @@ describe('playlist:test', () => {
       execSync(cmd, { encoding: 'utf8' })
     } catch (error) {
       if (process.env.DEBUG === 'true') console.log(cmd, error)
-      expect((error as ExecError).stdout).toContain(slash('playlist_test/ag.m3u'))
+      expect((error as ExecError).stdout).toContain('playlist_test/ag.m3u')
       expect((error as ExecError).stdout).toContain('2 problems (1 errors, 1 warnings)')
     }
   })
 })
-
-function slash(filepath: string) {
-  return filepath.split(path.sep).join(path.posix.sep)
-}
