@@ -20,9 +20,12 @@ describe('playlist:format', () => {
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
-    const files = glob
-      .sync('tests/__data__/expected/playlist_format/*.m3u')
-      .map(f => f.replace('tests/__data__/expected/playlist_format/', ''))
+    const files = glob.sync('tests/__data__/expected/playlist_format/*.m3u').map(filepath => {
+      const fileUrl = pathToFileURL(filepath).toString()
+      const pathToRemove = pathToFileURL('tests/__data__/expected/playlist_format/').toString()
+
+      return fileUrl.replace(pathToRemove, '')
+    })
 
     files.forEach(filepath => {
       expect(content(`tests/__data__/output/streams/${filepath}`), filepath).toBe(

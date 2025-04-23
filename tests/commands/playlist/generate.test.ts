@@ -23,7 +23,12 @@ describe('playlist:generate', () => {
 
     const playlists = glob
       .sync('tests/__data__/expected/playlist_generate/.gh-pages/**/*.m3u')
-      .map((file: string) => file.replace('tests/__data__/expected/playlist_generate/', ''))
+      .map(filepath => {
+        const fileUrl = pathToFileURL(filepath).toString()
+        const pathToRemove = pathToFileURL('tests/__data__/expected/playlist_generate/').toString()
+
+        return fileUrl.replace(pathToRemove, '')
+      })
 
     playlists.forEach((filepath: string) => {
       expect(content(`tests/__data__/output/${filepath}`), filepath).toBe(
