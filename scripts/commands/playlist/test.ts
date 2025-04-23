@@ -159,7 +159,7 @@ function onFinish() {
 
   drawTable()
 
-  logger.error(`\n${errors + warnings} problems (${errors} errors, ${warnings} warnings)`)
+  console.log(chalk.red(`\n${errors + warnings} problems (${errors} errors, ${warnings} warnings)`))
 
   if (errors > 0) {
     process.exit(1)
