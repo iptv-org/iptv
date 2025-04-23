@@ -109,16 +109,18 @@ async function main() {
     }
   }
 
-  console.log(
-    chalk.red(
-      `\n${
-        errors.count() + warnings.count()
-      } problems (${errors.count()} errors, ${warnings.count()} warnings)`
+  if (errors.count() || warnings.count()) {
+    console.log(
+      chalk.red(
+        `\n${
+          errors.count() + warnings.count()
+        } problems (${errors.count()} errors, ${warnings.count()} warnings)`
+      )
     )
-  )
 
-  if (errors.count()) {
-    process.exit(1)
+    if (errors.count()) {
+      process.exit(1)
+    }
   }
 }
 
