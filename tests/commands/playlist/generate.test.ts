@@ -1,8 +1,8 @@
 import { pathToFileURL } from 'node:url'
 import { execSync } from 'child_process'
+import os, { EOL } from 'node:os'
 import * as fs from 'fs-extra'
 import * as glob from 'glob'
-import os from 'os'
 
 let ENV_VAR =
   'STREAMS_DIR=tests/__data__/input/playlist_generate DATA_DIR=tests/__data__/input/data PUBLIC_DIR=tests/__data__/output/.gh-pages LOGS_DIR=tests/__data__/output/logs'
@@ -36,8 +36,8 @@ describe('playlist:generate', () => {
       )
     })
 
-    expect(content('tests/__data__/output/logs/generators.log').split('\n').sort()).toStrictEqual(
-      content('tests/__data__/expected/playlist_generate/logs/generators.log').split('\n').sort()
+    expect(content('tests/__data__/output/logs/generators.log').split(EOL).sort()).toStrictEqual(
+      content('tests/__data__/expected/playlist_generate/logs/generators.log').split(EOL).sort()
     )
   })
 })
