@@ -352,14 +352,14 @@ export class Stream {
     output += `,${this.getTitle()}`
 
     if (this.referrer) {
-      output += `\n#EXTVLCOPT:http-referrer=${this.referrer}`
+      output += `\r\n#EXTVLCOPT:http-referrer=${this.referrer}`
     }
 
     if (this.userAgent) {
-      output += `\n#EXTVLCOPT:http-user-agent=${this.userAgent}`
+      output += `\r\n#EXTVLCOPT:http-user-agent=${this.userAgent}`
     }
 
-    output += `\n${this.url}`
+    output += `\r\n${this.url}`
 
     return output
   }
