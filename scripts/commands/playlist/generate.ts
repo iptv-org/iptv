@@ -1,27 +1,25 @@
-import { Logger, Storage } from '@freearhey/core'
 import { PlaylistParser, DataProcessor, DataLoader } from '../../core'
+import type { DataProcessorData } from '../../types/dataProcessor'
+import { DATA_DIR, LOGS_DIR, STREAMS_DIR } from '../../constants'
+import type { DataLoaderData } from '../../types/dataLoader'
+import { Logger, Storage, File } from '@freearhey/core'
 import { Stream } from '../../models'
 import { uniqueId } from 'lodash'
 import {
+  IndexCategoryGenerator,
+  IndexLanguageGenerator,
+  IndexCountryGenerator,
+  IndexRegionGenerator,
   CategoriesGenerator,
   CountriesGenerator,
   LanguagesGenerator,
   RegionsGenerator,
-  IndexGenerator,
-  IndexCategoryGenerator,
-  IndexCountryGenerator,
-  IndexLanguageGenerator,
-  IndexRegionGenerator
+  IndexGenerator
 } from '../../generators'
-import { DATA_DIR, LOGS_DIR, STREAMS_DIR } from '../../constants'
-import type { DataProcessorData } from '../../types/dataProcessor'
-import type { DataLoaderData } from '../../types/dataLoader'
 
 async function main() {
   const logger = new Logger()
-  const generatorsLogger = new Logger({
-    stream: await new Storage(LOGS_DIR).createStream(`generators.log`)
-  })
+  const logFile = new File('generators.log')
 
   logger.info('loading data from api...')
   const processor = new DataProcessor()
@@ -29,19 +27,19 @@ async function main() {
   const loader = new DataLoader({ storage: dataStorage })
   const data: DataLoaderData = await loader.load()
   const {
+    feedsGroupedByChannelId,
+    channelsKeyById,
     categories,
     countries,
-    regions,
-    channelsKeyById,
-    feedsGroupedByChannelId
+    regions
   }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
     storage: streamsStorage,
-    channelsKeyById,
-    feedsGroupedByChannelId
+    feedsGroupedByChannelId,
+    channelsKeyById
   })
   const files = await streamsStorage.list('**/*.m3u')
   let streams = await parser.parse(files)
@@ -62,42 +60,46 @@ async function main() {
   )
 
   logger.info('generating categories/...')
-  await new CategoriesGenerator({ categories, streams, logger: generatorsLogger }).generate()
+  await new CategoriesGenerator({ categories, streams, logFile }).generate()
 
   logger.info('generating countries/...')
   await new CountriesGenerator({
     countries,
     streams,
-    logger: generatorsLogger
+    logFile
   }).generate()
 
   logger.info('generating languages/...')
-  await new LanguagesGenerator({ streams, logger: generatorsLogger }).generate()
+  await new LanguagesGenerator({ streams, logFile }).generate()
 
   logger.info('generating regions/...')
   await new RegionsGenerator({
     streams,
     regions,
-    logger: generatorsLogger
+    logFile
   }).generate()
 
   logger.info('generating index.m3u...')
-  await new IndexGenerator({ streams, logger: generatorsLogger }).generate()
+  await new IndexGenerator({ streams, logFile }).generate()
 
   logger.info('generating index.category.m3u...')
-  await new IndexCategoryGenerator({ streams, logger: generatorsLogger }).generate()
+  await new IndexCategoryGenerator({ streams, logFile }).generate()
 
   logger.info('generating index.country.m3u...')
   await new IndexCountryGenerator({
     streams,
-    logger: generatorsLogger
+    logFile
   }).generate()
 
   logger.info('generating index.language.m3u...')
-  await new IndexLanguageGenerator({ streams, logger: generatorsLogger }).generate()
+  await new IndexLanguageGenerator({ streams, logFile }).generate()
 
   logger.info('generating index.region.m3u...')
-  await new IndexRegionGenerator({ streams, regions, logger: generatorsLogger }).generate()
+  await new IndexRegionGenerator({ streams, regions, logFile }).generate()
+
+  logger.info('saving generators.log...')
+  const logStorage = new Storage(LOGS_DIR)
+  logStorage.saveFile(logFile)
 }
 
 main()
