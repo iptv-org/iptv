@@ -93,11 +93,11 @@ Same thing, but split up into separate files:
 
 ### Grouped by region
 
+Playlists in which channels are grouped by the region for which they are broadcasted.
+
 <details>
 <summary>Expand</summary>
 <br>
-
-Playlists in which channels are grouped by the region for which they are broadcasted.
 
 ```
 https://iptv-org.github.io/iptv/index.region.m3u

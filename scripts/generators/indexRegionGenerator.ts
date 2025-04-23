@@ -1,25 +1,26 @@
-import { Generator } from './generator'
-import { Collection, Storage, Logger } from '@freearhey/core'
+import { Collection, Storage, File } from '@freearhey/core'
 import { Stream, Playlist, Region } from '../models'
 import { PUBLIC_DIR } from '../constants'
+import { Generator } from './generator'
+import { EOL } from 'node:os'
 
 type IndexRegionGeneratorProps = {
   streams: Collection
   regions: Collection
-  logger: Logger
+  logFile: File
 }
 
 export class IndexRegionGenerator implements Generator {
   streams: Collection
   regions: Collection
   storage: Storage
-  logger: Logger
+  logFile: File
 
-  constructor({ streams, regions, logger }: IndexRegionGeneratorProps) {
+  constructor({ streams, regions, logFile }: IndexRegionGeneratorProps) {
     this.streams = streams
     this.regions = regions
     this.storage = new Storage(PUBLIC_DIR)
-    this.logger = logger
+    this.logFile = logFile
   }
 
   async generate(): Promise<void> {
@@ -58,6 +59,8 @@ export class IndexRegionGenerator implements Generator {
     const playlist = new Playlist(groupedStreams, { public: true })
     const filepath = 'index.region.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }))
+    this.logFile.append(
+      JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }) + EOL
+    )
   }
 }
