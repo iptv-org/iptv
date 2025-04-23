@@ -1,44 +1,41 @@
+import { DataLoader, DataProcessor, IssueLoader, PlaylistParser } from '../../core'
 import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
+import { DataProcessorData } from '../../types/dataProcessor'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
-import { IssueLoader, PlaylistParser } from '../../core'
-import { Blocked, Channel, Issue, Stream, Feed } from '../../models'
-import { uniqueId } from 'lodash'
+import { DataLoaderData } from '../../types/dataLoader'
+import { Issue, Stream } from '../../models'
 
 async function main() {
   const logger = new Logger()
-  const loader = new IssueLoader()
+  const issueLoader = new IssueLoader()
   let report = new Collection()
 
   logger.info('loading issues...')
-  const issues = await loader.load()
+  const issues = await issueLoader.load()
 
   logger.info('loading data from api...')
+  const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
-  const channelsData = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsData).map(data => new Channel(data))
-  const channelsGroupedById = channels.keyBy((channel: Channel) => channel.id)
-  const feedsData = await dataStorage.json('feeds.json')
-  const feeds = new Collection(feedsData).map(data =>
-    new Feed(data).withChannel(channelsGroupedById)
-  )
-  const feedsGroupedByChannelId = feeds.groupBy((feed: Feed) =>
-    feed.channel ? feed.channel.id : uniqueId()
-  )
-  const blocklistContent = await dataStorage.json('blocklist.json')
-  const blocklist = new Collection(blocklistContent).map(data => new Blocked(data))
-  const blocklistGroupedByChannelId = blocklist.keyBy((blocked: Blocked) => blocked.channelId)
+  const dataLoader = new DataLoader({ storage: dataStorage })
+  const data: DataLoaderData = await dataLoader.load()
+  const {
+    channelsKeyById,
+    feedsGroupedByChannelId,
+    blocklistRecordsGroupedByChannelId
+  }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
     storage: streamsStorage,
-    channelsGroupedById,
+    channelsKeyById,
     feedsGroupedByChannelId
   })
   const files = await streamsStorage.list('**/*.m3u')
   const streams = await parser.parse(files)
   const streamsGroupedByUrl = streams.groupBy((stream: Stream) => stream.url)
   const streamsGroupedByChannelId = streams.groupBy((stream: Stream) => stream.channelId)
+  const streamsGroupedById = streams.groupBy((stream: Stream) => stream.getId())
 
   logger.info('checking broken streams reports...')
   const brokenStreamReports = issues.filter(issue =>
@@ -94,8 +91,8 @@ async function main() {
 
     if (!channelId) result.status = 'missing_id'
     else if (!streamUrl) result.status = 'missing_link'
-    else if (blocklistGroupedByChannelId.has(channelId)) result.status = 'blocked'
-    else if (channelsGroupedById.missing(channelId)) result.status = 'wrong_id'
+    else if (blocklistRecordsGroupedByChannelId.has(channelId)) result.status = 'blocked'
+    else if (channelsKeyById.missing(channelId)) result.status = 'wrong_id'
     else if (streamsGroupedByUrl.has(streamUrl)) result.status = 'on_playlist'
     else if (addRequestsBuffer.has(streamUrl)) result.status = 'duplicate'
     else result.status = 'pending'
@@ -124,7 +121,7 @@ async function main() {
 
     if (!streamUrl) result.status = 'missing_link'
     else if (streamsGroupedByUrl.missing(streamUrl)) result.status = 'invalid_link'
-    else if (channelId && channelsGroupedById.missing(channelId)) result.status = 'invalid_id'
+    else if (channelId && channelsKeyById.missing(channelId)) result.status = 'invalid_id'
 
     report.add(result)
   })
@@ -147,16 +144,16 @@ async function main() {
     }
 
     if (!channelId) result.status = 'missing_id'
-    else if (channelsGroupedById.missing(channelId)) result.status = 'invalid_id'
-    else if (channelSearchRequestsBuffer.has(channelId)) result.status = 'duplicate'
-    else if (blocklistGroupedByChannelId.has(channelId)) result.status = 'blocked'
-    else if (streamsGroupedByChannelId.has(channelId)) result.status = 'fulfilled'
+    else if (channelsKeyById.missing(channelId)) result.status = 'invalid_id'
+    else if (channelSearchRequestsBuffer.has(streamId)) result.status = 'duplicate'
+    else if (blocklistRecordsGroupedByChannelId.has(channelId)) result.status = 'blocked'
+    else if (streamsGroupedById.has(streamId)) result.status = 'fulfilled'
     else {
-      const channelData = channelsGroupedById.get(channelId)
+      const channelData = channelsKeyById.get(channelId)
       if (channelData.length && channelData[0].closed) result.status = 'closed'
     }
 
-    channelSearchRequestsBuffer.set(channelId, true)
+    channelSearchRequestsBuffer.set(streamId, true)
 
     report.add(result)
   })
