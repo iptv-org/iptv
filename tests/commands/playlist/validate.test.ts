@@ -17,31 +17,29 @@ describe('playlist:validate', () => {
   it('show an error if channel id in the blocklist', () => {
     const cmd = `${ENV_VAR} npm run playlist:validate -- us_blocked.m3u`
     try {
-      const stdout = execSync(cmd, { encoding: 'utf8' })
-      if (process.env.DEBUG === 'true') console.log(cmd, stdout)
-      checkStdout(stdout)
+      execSync(cmd, { encoding: 'utf8' })
     } catch (error) {
-      // NOTE: for Windows only
       if (process.env.DEBUG === 'true') console.log(cmd, error)
-      checkStdout((error as ExecError).stdout)
+      expect((error as ExecError).stdout).toContain('us_blocked.m3u')
+      expect((error as ExecError).stdout).toContain(
+        '2     error    "FoxSports2.us" is on the blocklist due to claims of copyright holders (https://github.com/iptv-org/iptv/issues/0002)'
+      )
+      expect((error as ExecError).stdout).toContain(
+        '4     error    "TVN.pl" is on the blocklist due to NSFW content (https://github.com/iptv-org/iptv/issues/0003)'
+      )
+      expect((error as ExecError).stdout).toContain('2 problems (2 errors, 0 warnings)')
     }
   })
 
   it('show a warning if channel has wrong id', () => {
     const cmd = `${ENV_VAR} npm run playlist:validate -- wrong_id.m3u`
-    const stdout = execSync(cmd, { encoding: 'utf8' })
-    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
-
-    expect(stdout).toContain(
-      'wrong_id.m3u\n 2     warning  "qib22lAq1L.us" is not in the database\n\n1 problems (0 errors, 1 warnings)\n'
-    )
+    try {
+      execSync(cmd, { encoding: 'utf8' })
+    } catch (error) {
+      if (process.env.DEBUG === 'true') console.log(cmd, error)
+      expect((error as ExecError).stdout).toContain(
+        'wrong_id.m3u\n 2     warning  "qib22lAq1L.us" is not in the database\n\n1 problems (0 errors, 1 warnings)\n'
+      )
+    }
   })
 })
-
-function checkStdout(stdout: string) {
-  expect(stdout).toContain(`us_blocked.m3u
- 2     error    "FoxSports2.us" is on the blocklist due to claims of copyright holders (https://github.com/iptv-org/iptv/issues/0002)
- 4     error    "TVN.pl" is on the blocklist due to NSFW content (https://github.com/iptv-org/iptv/issues/0003)
-
-2 problems (2 errors, 0 warnings)`)
-}
