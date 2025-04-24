@@ -12,7 +12,7 @@
 
 You have several options:
 
-1. Create a new [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=-----streams_add.yml&title=Add%3A+) and provide all the required information. If the request is approved, the link will be added to the playlist in the next update.
+1. Create a new [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and provide all the required information. If the request is approved, the link will be added to the playlist in the next update.
 
 2. Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls).
 
@@ -51,7 +51,7 @@ If the link answers, you're with an Xtream Codes server.
 
 ### How to report a broken stream?
 
-Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream&projects=&template=---broken-stream.yml&title=Broken%3A+) and as soon as a working replacement appears, we will add it to the playlist or at least remove the non-working one.
+Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=broken+stream,streams:remove&projects=&template=3_broken-stream.yml&title=Broken%3A+) and as soon as a working replacement appears, we will add it to the playlist or at least remove the non-working one.
 
 The only thing before publishing your report is to make sure that:
 
@@ -93,7 +93,7 @@ After that, all you have to do is report any broken streams you find.
 
 ### How do I remove my channel from playlist?
 
-To request removal of a link to a channel from the repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=-removal-request.yml&title=Remove%3A+) and wait for the request to be reviewed (this usually takes no more than 1 business day). And if the request is approved, links to the channel will be immediately removed from the repository.
+To request removal of a link to a channel from the repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=6_copyright-claim.yml&title=Remove%3A+) and wait for the request to be reviewed (this usually takes no more than 1 business day). And if the request is approved, links to the channel will be immediately removed from the repository.
 
 The channel will also be added to our [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) to avoid its appearance in our playlists in the future.
 
@@ -104,7 +104,7 @@ Please note that we only accept removal requests from channel owners and their o
 For a stream to be approved, its description must follow this template:
 
 ```
-#EXTINF:-1 tvg-id="STREAM_ID",CHANNEL_NAME (RESOLUTION) [LABEL]
+#EXTINF:-1 tvg-id="STREAM_ID",CHANNEL_NAME (QUALITY) [LABEL]
 STREAM_URL
 ```
 
@@ -112,7 +112,7 @@ STREAM_URL
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------- |
 | `STREAM_ID`    | ID of the stream. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
 | `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                                                                  | Required | -                                            |
-| `RESOLUTION`   | Maximum stream resolution.                                                                                                                   | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
+| `QUALITY`      | Maximum stream quality.                                                                                                                      | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
 | `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users.                                                   | Optional | `Geo-blocked` or `Not 24/7`                  |
 | `STREAM_URL`   | Stream URL.                                                                                                                                  | Required | -                                            |
 
@@ -149,7 +149,6 @@ http://example.com/stream.m3u8
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
   - `preview.png`: image displayed in the `README.md`.
   - `supported-categories.md`: list of supported categories.
-  - `supported-regions.md`: list of supported regions.
   - `template.md`: template for `README.md`.
 - `scripts/`: contains all scripts used in the repository.
 - `streams/`: contains all streams broken down by the country from which they are broadcast.
@@ -177,6 +176,7 @@ To run scripts use the `npm run <script-name>` command.
 - `playlist:validate`: сhecks ids and links in internal playlists for errors.
 - `playlist:lint`: сhecks internal playlists for syntax errors.
 - `playlist:test`: tests links in internal playlists.
+- `playlist:edit`: utility for quick streams mapping.
 - `playlist:deploy`: allows to manually publish all generated via `playlist:generate` playlists. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
 - `readme:update`: updates the list of playlists in [README.md](README.md).
 - `report:create`: creates a report on current issues.

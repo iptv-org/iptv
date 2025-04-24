@@ -16,15 +16,15 @@ export class HTMLTable {
   }
 
   toString() {
-    let output = '<table>\n'
+    let output = '<table>\r\n'
 
-    output += '  <thead>\n    <tr>'
+    output += '  <thead>\r\n    <tr>'
     for (const column of this.columns) {
       output += `<th align="left">${column.name}</th>`
     }
-    output += '</tr>\n  </thead>\n'
+    output += '</tr>\r\n  </thead>\r\n'
 
-    output += '  <tbody>\n'
+    output += '  <tbody>\r\n'
     for (const item of this.data) {
       output += '    <tr>'
       let i = 0
@@ -35,9 +35,9 @@ export class HTMLTable {
         output += `<td${align}${nowrap}>${item[prop]}</td>`
         i++
       }
-      output += '</tr>\n'
+      output += '</tr>\r\n'
     }
-    output += '  </tbody>\n'
+    output += '  </tbody>\r\n'
 
     output += '</table>'
 
