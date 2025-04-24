@@ -1,7 +1,7 @@
 import { Storage, Collection, Logger, Dictionary } from '@freearhey/core'
 import { DataLoader, DataProcessor, PlaylistParser } from '../../core'
-import { Channel, Feed, Playlist, Stream } from '../../models'
 import type { ChannelSearchableData } from '../../types/channel'
+import { Channel, Feed, Playlist, Stream } from '../../models'
 import { DataProcessorData } from '../../types/dataProcessor'
 import { DataLoaderData } from '../../types/dataLoader'
 import { select, input } from '@inquirer/prompts'

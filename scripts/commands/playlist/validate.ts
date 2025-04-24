@@ -94,14 +94,14 @@ async function main() {
     })
 
     if (log.notEmpty()) {
-      logger.info(`\n${chalk.underline(filepath)}`)
+      console.log(`\n${chalk.underline(filepath)}`)
 
       log.forEach((logItem: LogItem) => {
         const position = logItem.line.toString().padEnd(6, ' ')
         const type = logItem.type.padEnd(9, ' ')
         const status = logItem.type === 'error' ? chalk.red(type) : chalk.yellow(type)
 
-        logger.info(` ${chalk.gray(position)}${status}${logItem.message}`)
+        console.log(` ${chalk.gray(position)}${status}${logItem.message}`)
       })
 
       errors = errors.concat(log.filter((logItem: LogItem) => logItem.type === 'error'))
@@ -109,16 +109,18 @@ async function main() {
     }
   }
 
-  logger.error(
-    chalk.red(
-      `\n${
-        errors.count() + warnings.count()
-      } problems (${errors.count()} errors, ${warnings.count()} warnings)`
+  if (errors.count() || warnings.count()) {
+    console.log(
+      chalk.red(
+        `\n${
+          errors.count() + warnings.count()
+        } problems (${errors.count()} errors, ${warnings.count()} warnings)`
+      )
     )
-  )
 
-  if (errors.count()) {
-    process.exit(1)
+    if (errors.count()) {
+      process.exit(1)
+    }
   }
 }
 

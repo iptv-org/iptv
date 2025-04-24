@@ -1,19 +1,20 @@
-import { Generator } from './generator'
-import { Collection, Storage, Logger } from '@freearhey/core'
+import { Collection, Storage, File } from '@freearhey/core'
 import { Playlist, Language, Stream } from '../models'
 import { PUBLIC_DIR } from '../constants'
+import { Generator } from './generator'
+import { EOL } from 'node:os'
 
-type LanguagesGeneratorProps = { streams: Collection; logger: Logger }
+type LanguagesGeneratorProps = { streams: Collection; logFile: File }
 
 export class LanguagesGenerator implements Generator {
   streams: Collection
   storage: Storage
-  logger: Logger
+  logFile: File
 
-  constructor({ streams, logger }: LanguagesGeneratorProps) {
+  constructor({ streams, logFile }: LanguagesGeneratorProps) {
     this.streams = streams
     this.storage = new Storage(PUBLIC_DIR)
-    this.logger = logger
+    this.logFile = logFile
   }
 
   async generate(): Promise<void> {
@@ -38,8 +39,8 @@ export class LanguagesGenerator implements Generator {
         const playlist = new Playlist(languageStreams, { public: true })
         const filepath = `languages/${language.code}.m3u`
         await this.storage.save(filepath, playlist.toString())
-        this.logger.info(
-          JSON.stringify({ type: 'language', filepath, count: playlist.streams.count() })
+        this.logFile.append(
+          JSON.stringify({ type: 'language', filepath, count: playlist.streams.count() }) + EOL
         )
       })
 
@@ -50,8 +51,8 @@ export class LanguagesGenerator implements Generator {
     const playlist = new Playlist(undefinedStreams, { public: true })
     const filepath = 'languages/undefined.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(
-      JSON.stringify({ type: 'language', filepath, count: playlist.streams.count() })
+    this.logFile.append(
+      JSON.stringify({ type: 'language', filepath, count: playlist.streams.count() }) + EOL
     )
   }
 }

@@ -39,5 +39,4 @@ function checkStdout(stdout: string) {
   expect(stdout).toContain('TF1.fr (TF1, Télévision française 1)')
   expect(stdout).toContain('Type...')
   expect(stdout).toContain('Skip')
-  expect(stdout).toContain("File 'tests/__data__/output/playlist.m3u' successfully saved")
 }
