@@ -144,8 +144,8 @@ export class Feed {
 
     this.broadcastRegions = regions.filter((region: Region) => {
       if (region.code === 'INT') return false
-
-      return region.countryCodes.intersects(countriesCodes)
+      const intersected = region.countryCodes.intersects(countriesCodes)
+      return intersected.notEmpty()
     })
 
     return this
