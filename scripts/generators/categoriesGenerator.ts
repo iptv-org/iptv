@@ -1,25 +1,26 @@
-import { Generator } from './generator'
-import { Collection, Storage, Logger } from '@freearhey/core'
+import { Collection, Storage, Logger, File } from '@freearhey/core'
 import { Stream, Category, Playlist } from '../models'
 import { PUBLIC_DIR } from '../constants'
+import { Generator } from './generator'
+import { EOL } from 'node:os'
 
 type CategoriesGeneratorProps = {
   streams: Collection
   categories: Collection
-  logger: Logger
+  logFile: File
 }
 
 export class CategoriesGenerator implements Generator {
   streams: Collection
   categories: Collection
   storage: Storage
-  logger: Logger
+  logFile: File
 
-  constructor({ streams, categories, logger }: CategoriesGeneratorProps) {
+  constructor({ streams, categories, logFile }: CategoriesGeneratorProps) {
     this.streams = streams
     this.categories = categories
     this.storage = new Storage(PUBLIC_DIR)
-    this.logger = logger
+    this.logFile = logFile
   }
 
   async generate() {
@@ -37,8 +38,8 @@ export class CategoriesGenerator implements Generator {
       const playlist = new Playlist(categoryStreams, { public: true })
       const filepath = `categories/${category.id}.m3u`
       await this.storage.save(filepath, playlist.toString())
-      this.logger.info(
-        JSON.stringify({ type: 'category', filepath, count: playlist.streams.count() })
+      this.logFile.append(
+        JSON.stringify({ type: 'category', filepath, count: playlist.streams.count() }) + EOL
       )
     })
 
@@ -46,8 +47,8 @@ export class CategoriesGenerator implements Generator {
     const playlist = new Playlist(undefinedStreams, { public: true })
     const filepath = 'categories/undefined.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(
-      JSON.stringify({ type: 'category', filepath, count: playlist.streams.count() })
+    this.logFile.append(
+      JSON.stringify({ type: 'category', filepath, count: playlist.streams.count() }) + EOL
     )
   }
 }

@@ -48,16 +48,20 @@ https://streaming01.gestec-video.com/hls/artequatreAlacanti.m3u8
 http://217.182.77.27/live/alcarriatv-livestream.m3u8
 #EXTINF:-1 tvg-id="AlcarriaTV.es",Alcarria TV (576p) [Not 24/7]
 https://cls.alcarria.tv/alcarriatv/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="AMC.es",AMC (Spain) (720p)
+#EXTINF:-1 tvg-id="AMC.us@Spain",AMC (Spain) (720p)
 http://vegafibratv.com:8085/AMC/index.m3u8
 #EXTINF:-1 tvg-id="Antena3.es",Antena 3 (720p)
 http://185.189.225.150:85/Antena3HD/index.m3u8
+#EXTINF:-1 tvg-id="Antena3.es",Antena 3 (480p)
+http://181.78.109.48:8000/play/a00f/index.m3u8
 #EXTINF:-1 tvg-id="AquiNoHayQuienViva.es",Aqui No Hay Quien Viva (720p)
 https://fast-channels.atresmedia.com/648ef3951756b0e425af83cc/648ef3951756b0e425af83cc.m3u8
 #EXTINF:-1 tvg-id="ArabiTV.es",Arabí TV (1080p)
 https://streamtv2.elitecomunicacion.cloud:3956/live/arabitvlive.m3u8
 #EXTINF:-1 tvg-id="AragonTV.es",Aragón TV (720p) [Not 24/7]
 https://cartv.streaming.aranova.es/hls/live/aragontv_canal1.m3u8
+#EXTINF:-1 tvg-id="Atreseries.es",Atreseries (480p)
+http://181.78.109.48:8000/play/a00l/index.m3u8
 #EXTINF:-1 tvg-id="AtresplayerClasicos.es",Atresplayer Clasicos (1080p)
 https://fast-channels.atresmedia.com/648ef12c2bfab0e4507e0d61/648ef12c2bfab0e4507e0d61.m3u8
 #EXTINF:-1 tvg-id="AtresplayerComedia.es",Atresplayer Comedia (1080p)
@@ -66,7 +70,11 @@ https://fast-channels.atresmedia.com/648ef23d2bfab0e4557e0d61/648ef23d2bfab0e455
 https://fast-channels.atresmedia.com/648ef3162bfab0e4587e0d61/648ef3162bfab0e4587e0d61.m3u8
 #EXTINF:-1 tvg-id="AtresplayerMulticine.es",Atresplayer Multicine (1080p)
 https://fast-channels.atresmedia.com/648ef18c1756b0e41daf83cc/648ef18c1756b0e41daf83cc.m3u8
-#EXTINF:-1 tvg-id="BabyTV.es",BabyTV (Spain) (1080p)
+#EXTINF:-1 tvg-id="AXN.es",AXN (1080p)
+http://181.78.109.48:8000/play/a05u/index.m3u8
+#EXTINF:-1 tvg-id="AXN.es",AXN (480p)
+http://181.78.109.48:8000/play/a023/index.m3u8
+#EXTINF:-1 tvg-id="BabyTV.uk@Spain",BabyTV (Spain) (1080p)
 http://185.189.225.150:85/BabyTV/index.m3u8
 #EXTINF:-1 tvg-id="BailenTV.es",Bailén TV (720p) [Not 24/7]
 http://cpd.bailen.tv:8080/Playlist_CANAL_24H/playlist.m3u8
@@ -391,6 +399,8 @@ https://shls-live-ak.akamaized.net/out/v1/b06a89a463764d3688cda337d40dc5bf/index
 https://streaming013.gestec-video.com/hls/negociostv.m3u8
 #EXTINF:-1 tvg-id="Neox.es",Neox (576p)
 http://185.189.225.150:85/neox/index.m3u8
+#EXTINF:-1 tvg-id="Nickelodeon.es",Nickelodeon (480p)
+http://181.78.109.48:8000/play/a05a/index.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.es",Nickelodeon (Spain) (576p)
 http://185.189.225.150:85/nickelodeon/index.m3u8
 #EXTINF:-1 tvg-id="NoroesteTV.es",Noroeste TV (1080p) [Not 24/7]
@@ -581,7 +591,7 @@ https://liveingesta318.cdnmedia.tv/berguedatvlive/smil:migracion.smil/playlist.m
 #EXTINF:-1 tvg-id="TVCostaBrava.es" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160",TV Costa Brava (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
 https://liveingesta318.cdnmedia.tv/costabravatvlive/smil:live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="",Tv Famypanc HD (1080p)
+#EXTINF:-1 tvg-id="FamypancTV.es@HD",Tv Famypanc HD (1080p)
 https://panel.host-live.com:19360/8042/8042.m3u8
 #EXTINF:-1 tvg-id="TVFerrol.es",TV Ferrol (576p)
 https://directo.tvferrol.es/tv.m3u8
@@ -679,13 +689,3 @@ https://janus.xpbroadcasting.com:8443/hls/xptvUS.m3u8
 #EXTINF:-1 tvg-id="ZafraTV.es" http-referrer="https://player.streamingconnect.com/",Zafra TV (1080p)
 #EXTVLCOPT:http-referrer=https://player.streamingconnect.com/
 https://cloud.fastchannel.es/mic/manifiest/hls/radiotvzafra/radiotvzafra.m3u8
-#EXTINF:-1 tvg-id="Atreseries.es",Atreseries (480p)
-http://181.78.109.48:8000/play/a00l/index.m3u8
-#EXTINF:-1 tvg-id="Antena3.es",Antena 3 (480p)
-http://181.78.109.48:8000/play/a00f/index.m3u8
-#EXTINF:-1 tvg-id="AXN.es",AXN (1080p)
-http://181.78.109.48:8000/play/a05u/index.m3u8
-#EXTINF:-1 tvg-id="AXN.es",AXN (480p)
-http://181.78.109.48:8000/play/a023/index.m3u8
-#EXTINF:-1 tvg-id="Nickelodeon.es",Nickelodeon (480p)
-http://181.78.109.48:8000/play/a05a/index.m3u8

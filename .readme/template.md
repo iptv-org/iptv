@@ -36,11 +36,11 @@ https://iptv-org.github.io/iptv/index.m3u
 
 ### Grouped by category
 
+Playlists in which channels are grouped by category. A list of all supported categories with descriptions can be found [here](.readme/supported-categories.md).
+
 <details>
 <summary>Expand</summary>
 <br>
-
-Playlist in which each channel has its _category_ as a group title:
 
 ```
 https://iptv-org.github.io/iptv/index.category.m3u
@@ -55,11 +55,11 @@ Same thing, but split up into separate files:
 
 ### Grouped by language
 
+Playlists in which channels are grouped by the language in which they are broadcast.
+
 <details>
 <summary>Expand</summary>
 <br>
-
-Playlist in which each channel has its _language_ as a group title:
 
 ```
 https://iptv-org.github.io/iptv/index.language.m3u
@@ -74,11 +74,11 @@ Same thing, but split up into separate files:
 
 ### Grouped by country
 
+Playlists in which channels are grouped by country for which they are broadcasted.
+
 <details>
 <summary>Expand</summary>
 <br>
-
-Playlist in which each channel has its _country_ as a group title:
 
 ```
 https://iptv-org.github.io/iptv/index.country.m3u
@@ -93,11 +93,11 @@ Same thing, but split up into separate files:
 
 ### Grouped by region
 
+Playlists in which channels are grouped by the region for which they are broadcasted.
+
 <details>
 <summary>Expand</summary>
 <br>
-
-Playlist in which each channel has its _region_ as a group title:
 
 ```
 https://iptv-org.github.io/iptv/index.region.m3u
