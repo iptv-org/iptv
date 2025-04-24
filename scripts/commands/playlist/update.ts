@@ -9,7 +9,7 @@ import validUrl from 'valid-url'
 let processedIssues = new Collection()
 
 async function main() {
-  const logger = new Logger({ disabled: true })
+  const logger = new Logger({ level: -999 })
   const issueLoader = new IssueLoader()
 
   logger.info('loading issues...')
