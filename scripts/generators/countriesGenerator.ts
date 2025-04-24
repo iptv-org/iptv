@@ -1,25 +1,26 @@
-import { Generator } from './generator'
-import { Collection, Storage, Logger } from '@freearhey/core'
 import { Country, Subdivision, Stream, Playlist } from '../models'
+import { Collection, Storage, File } from '@freearhey/core'
 import { PUBLIC_DIR } from '../constants'
+import { Generator } from './generator'
+import { EOL } from 'node:os'
 
 type CountriesGeneratorProps = {
   streams: Collection
   countries: Collection
-  logger: Logger
+  logFile: File
 }
 
 export class CountriesGenerator implements Generator {
   streams: Collection
   countries: Collection
   storage: Storage
-  logger: Logger
+  logFile: File
 
-  constructor({ streams, countries, logger }: CountriesGeneratorProps) {
+  constructor({ streams, countries, logFile }: CountriesGeneratorProps) {
     this.streams = streams
     this.countries = countries
     this.storage = new Storage(PUBLIC_DIR)
-    this.logger = logger
+    this.logFile = logFile
   }
 
   async generate(): Promise<void> {
@@ -36,8 +37,8 @@ export class CountriesGenerator implements Generator {
       const playlist = new Playlist(countryStreams, { public: true })
       const filepath = `countries/${country.code.toLowerCase()}.m3u`
       await this.storage.save(filepath, playlist.toString())
-      this.logger.info(
-        JSON.stringify({ type: 'country', filepath, count: playlist.streams.count() })
+      this.logFile.append(
+        JSON.stringify({ type: 'country', filepath, count: playlist.streams.count() }) + EOL
       )
 
       country.getSubdivisions().forEach(async (subdivision: Subdivision) => {
@@ -50,8 +51,8 @@ export class CountriesGenerator implements Generator {
         const playlist = new Playlist(subdivisionStreams, { public: true })
         const filepath = `subdivisions/${subdivision.code.toLowerCase()}.m3u`
         await this.storage.save(filepath, playlist.toString())
-        this.logger.info(
-          JSON.stringify({ type: 'subdivision', filepath, count: playlist.streams.count() })
+        this.logFile.append(
+          JSON.stringify({ type: 'subdivision', filepath, count: playlist.streams.count() }) + EOL
         )
       })
     })
@@ -60,12 +61,12 @@ export class CountriesGenerator implements Generator {
     const undefinedPlaylist = new Playlist(undefinedStreams, { public: true })
     const undefinedFilepath = 'countries/undefined.m3u'
     await this.storage.save(undefinedFilepath, undefinedPlaylist.toString())
-    this.logger.info(
+    this.logFile.append(
       JSON.stringify({
         type: 'country',
         filepath: undefinedFilepath,
         count: undefinedPlaylist.streams.count()
-      })
+      }) + EOL
     )
   }
 }

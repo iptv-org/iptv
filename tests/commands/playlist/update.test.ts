@@ -1,37 +1,45 @@
+import { pathToFileURL } from 'node:url'
 import { execSync } from 'child_process'
 import * as fs from 'fs-extra'
 import { glob } from 'glob'
+import os from 'os'
+
+let ENV_VAR = 'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/output/streams'
+if (os.platform() === 'win32') {
+  ENV_VAR =
+    'SET "DATA_DIR=tests/__data__/input/data" && SET "STREAMS_DIR=tests/__data__/output/streams" &&'
+}
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
   fs.copySync('tests/__data__/input/playlist_update', 'tests/__data__/output/streams')
 })
 
-it('can update playlists', () => {
-  const stdout = execSync(
-    'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/output/streams npm run playlist:update --silent',
-    {
-      encoding: 'utf8'
-    }
-  )
+describe('playlist:update', () => {
+  it('can update playlists', () => {
+    const cmd = `${ENV_VAR} npm run playlist:update --silent`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
-  const files = glob
-    .sync('tests/__data__/expected/playlist_update/*.m3u')
-    .map(f => f.replace('tests/__data__/expected/playlist_update/', ''))
+    const files = glob.sync('tests/__data__/expected/playlist_update/*.m3u').map(filepath => {
+      const fileUrl = pathToFileURL(filepath).toString()
+      const pathToRemove = pathToFileURL('tests/__data__/expected/playlist_update/').toString()
 
-  files.forEach(filepath => {
-    expect(content(`output/streams/${filepath}`), filepath).toBe(
-      content(`expected/playlist_update/${filepath}`)
+      return fileUrl.replace(pathToRemove, '')
+    })
+
+    files.forEach(filepath => {
+      expect(content(`tests/__data__/output/streams/${filepath}`), filepath).toBe(
+        content(`tests/__data__/expected/playlist_update/${filepath}`)
+      )
+    })
+
+    expect(stdout).toBe(
+      'OUTPUT=closes #14151, closes #14150, closes #14110, closes #14120, closes #14175, closes #14105, closes #14104, closes #14057, closes #14034, closes #13964, closes #13893, closes #13881, closes #13793, closes #13751, closes #13715\n'
     )
   })
-
-  expect(stdout).toBe(
-    'OUTPUT=closes #14151, closes #14150, closes #14110, closes #14120, closes #14175, closes #14105, closes #14104, closes #14057, closes #14034, closes #13964, closes #13893, closes #13881, closes #13793, closes #13751, closes #13715\n'
-  )
 })
 
 function content(filepath: string) {
-  return fs.readFileSync(`tests/__data__/${filepath}`, {
-    encoding: 'utf8'
-  })
+  return fs.readFileSync(pathToFileURL(filepath), { encoding: 'utf8' })
 }
