@@ -1,22 +1,23 @@
-import { Collection, Logger, Storage } from '@freearhey/core'
+import { Collection, File, Storage } from '@freearhey/core'
 import { Stream, Playlist } from '../models'
-import { Generator } from './generator'
 import { PUBLIC_DIR } from '../constants'
+import { Generator } from './generator'
+import { EOL } from 'node:os'
 
 type IndexNsfwGeneratorProps = {
   streams: Collection
-  logger: Logger
+  logFile: File
 }
 
 export class IndexNsfwGenerator implements Generator {
   streams: Collection
   storage: Storage
-  logger: Logger
+  logFile: File
 
-  constructor({ streams, logger }: IndexNsfwGeneratorProps) {
+  constructor({ streams, logFile }: IndexNsfwGeneratorProps) {
     this.streams = streams
     this.storage = new Storage(PUBLIC_DIR)
-    this.logger = logger
+    this.logFile = logFile
   }
 
   async generate(): Promise<void> {
@@ -25,6 +26,8 @@ export class IndexNsfwGenerator implements Generator {
     const playlist = new Playlist(allStreams, { public: true })
     const filepath = 'index.nsfw.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }))
+    this.logFile.append(
+      JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }) + EOL
+    )
   }
 }
