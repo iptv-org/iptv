@@ -1,13 +1,15 @@
 import { Logger, Storage, Collection } from '@freearhey/core'
 import { ROOT_DIR, STREAMS_DIR, DATA_DIR } from '../../constants'
-import { PlaylistParser, StreamTester, CliTable } from '../../core'
-import { Stream, Feed, Channel } from '../../models'
+import { PlaylistParser, StreamTester, CliTable, DataProcessor, DataLoader } from '../../core'
+import { Stream } from '../../models'
 import { program } from 'commander'
 import { eachLimit } from 'async-es'
 import commandExists from 'command-exists'
 import chalk from 'chalk'
 import os from 'node:os'
 import dns from 'node:dns'
+import type { DataLoaderData } from '../../types/dataLoader'
+import type { DataProcessorData } from '../../types/dataProcessor'
 
 const cpus = os.cpus()
 
@@ -54,22 +56,18 @@ async function main() {
     return
   }
 
-  logger.info('loading channels from api...')
+  logger.info('loading data from api...')
+  const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
-  const channelsData = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsData).map(data => new Channel(data))
-  const channelsGroupedById = channels.keyBy((channel: Channel) => channel.id)
-  const feedsData = await dataStorage.json('feeds.json')
-  const feeds = new Collection(feedsData).map(data =>
-    new Feed(data).withChannel(channelsGroupedById)
-  )
-  const feedsGroupedByChannelId = feeds.groupBy(feed => feed.channel)
+  const loader = new DataLoader({ storage: dataStorage })
+  const data: DataLoaderData = await loader.load()
+  const { channelsKeyById, feedsGroupedByChannelId }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
   const rootStorage = new Storage(ROOT_DIR)
   const parser = new PlaylistParser({
     storage: rootStorage,
-    channelsGroupedById,
+    channelsKeyById,
     feedsGroupedByChannelId
   })
   const files = program.args.length ? program.args : await rootStorage.list(`${STREAMS_DIR}/*.m3u`)
@@ -156,15 +154,24 @@ function drawTable() {
   }
 }
 
-function onFinish() {
+function onFinish(error) {
   clearInterval(interval)
+
+  if (error) {
+    console.error(error)
+    process.exit(1)
+  }
 
   drawTable()
 
-  logger.error(`\n${errors + warnings} problems (${errors} errors, ${warnings} warnings)`)
+  if (errors > 0 || warnings > 0) {
+    console.log(
+      chalk.red(`\n${errors + warnings} problems (${errors} errors, ${warnings} warnings)`)
+    )
 
-  if (errors > 0) {
-    process.exit(1)
+    if (errors > 0) {
+      process.exit(1)
+    }
   }
 
   process.exit(0)
