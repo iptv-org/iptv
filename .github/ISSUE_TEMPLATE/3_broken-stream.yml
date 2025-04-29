@@ -10,6 +10,7 @@ body:
         Please fill out the issue template as much as you can so we could efficiently process your request
 
   - type: textarea
+    id: stream_url
     attributes:
       label: Broken Links
       description: Please specify the broken links from the playlist (one per line)
@@ -18,6 +19,7 @@ body:
       required: true
 
   - type: dropdown
+    id: reason
     attributes:
       label: What happened to the stream?
       options:
@@ -33,6 +35,7 @@ body:
       required: true
 
   - type: textarea
+    id: notes
     attributes:
       label: Notes (optional)
       placeholder: 'Anything else we should know?'
