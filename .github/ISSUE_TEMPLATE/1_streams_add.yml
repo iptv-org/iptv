@@ -5,6 +5,7 @@ labels: ['streams:add']
 
 body:
   - type: input
+    id: stream_id
     attributes:
       label: Stream ID (required)
       description: "ID of the stream consisting of `<channel_id>` or `<channel_id>@<feed_id>`. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). If you can't find the channel you want in the list, please let us know through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=channels_add.yml&title=Add%3A+) before posting your request."
@@ -13,6 +14,7 @@ body:
       required: true
 
   - type: input
+    id: stream_url
     attributes:
       label: Stream URL (required)
       description: Link to the stream
@@ -21,6 +23,7 @@ body:
       required: true
 
   - type: dropdown
+    id: quality
     attributes:
       label: Quality
       description: Maximum video resolution available on the link
@@ -37,6 +40,7 @@ body:
         - 360p
 
   - type: dropdown
+    id: label
     attributes:
       label: Label
       description: Is there any reason why the broadcast may not work?
@@ -45,16 +49,19 @@ body:
         - 'Geo-blocked'
 
   - type: input
+    id: http_user_agent
     attributes:
       label: HTTP User Agent
       placeholder: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246'
 
   - type: input
+    id: http_referrer
     attributes:
       label: HTTP Referrer
       placeholder: 'https://example.com/'
 
   - type: textarea
+    id: notes
     attributes:
       label: Notes
       description: 'Anything else we should know about this broadcast?'
