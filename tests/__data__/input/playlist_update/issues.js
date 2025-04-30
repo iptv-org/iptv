@@ -1761,7 +1761,7 @@ module.exports = [
     closed_at: null,
     author_association: 'COLLABORATOR',
     active_lock_reason: null,
-    body: '### Stream URL\n\nhttps://servilive.com:3126/live/tele2000live.m3u8\n\n### Stream ID (required)\n\nBBCAmerica.us@East\n\n### Quality\n\n720p\n\n### Label\n\n~\n\n### HTTP User-Agent\n\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246\n\n### HTTP Referrer\n\n~\n\n### Notes\n\n_No response_\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    body: '### Stream URL (required)\n\nhttps://servilive.com:3126/live/tele2000live.m3u8\n\n### New Stream URL\n\nhttps://xui-backend.energeek.cl/live/9/playlist.m3u8?username=ZZDemoIPTVGH&password=mdo96EuqMkTR\n\n### Stream ID\n\nBBCAmerica.us@East\n\n### Quality\n\n720p\n\n### Label\n\n~\n\n### HTTP User-Agent\n\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246\n\n### HTTP Referrer\n\n~\n\n### Notes\n\n_No response_\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/14110/reactions',
       total_count: 0,
@@ -1928,7 +1928,7 @@ module.exports = [
     closed_at: null,
     author_association: 'CONTRIBUTOR',
     active_lock_reason: null,
-    body: '### Broken Link\n\nhttps://ythls.onrender.com/channel/UC40TUSUx490U5uR1lZt3Ajg.m3u8\n\n### Reason\n\nNot loading\n\n### Notes (optional)\n\nOne link (VTV.br) is misspelled.\n\n### Contributing Guide\n\n- [x] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    body: '### Stream URL\n\nhttps://ythls.onrender.com/channel/UC40TUSUx490U5uR1lZt3Ajg.m3u8\n\n### What happened to the stream?\n\nNot loading\n\n### Notes (optional)\n\nOne link (VTV.br) is misspelled.\n\n### Contributing Guide\n\n- [x] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/14151/reactions',
       total_count: 0,
@@ -2025,7 +2025,7 @@ module.exports = [
     closed_at: null,
     author_association: 'NONE',
     active_lock_reason: null,
-    body: '### Broken Links\n\nhttp://l6.cloudskep.com/rikcy/rikhd/playlist.m3u8\r\n\r\nhttp://l6.cloudskep.com/rikcy/rik2/playlist.m3u8\n\n### What happened to the stream?\n\nNot loading\n\n### Possible Replacement (optional)\n\nhttp://l6.cloudskep.com/rikcy/rikhd/playlist2.m3u8\n\n### Notes (optional)\n\nToken needed...\r\nSame issue with RIK 1 and 2. May happen in the future with ANT1 Cyprus, Sigma and Omega.\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    body: '### Stream URL\n\nhttp://l6.cloudskep.com/rikcy/rikhd/playlist.m3u8\r\n\r\nhttp://l6.cloudskep.com/rikcy/rik2/playlist.m3u8\n\n### What happened to the stream?\n\nNot loading\n\n### Possible Replacement (optional)\n\nhttp://l6.cloudskep.com/rikcy/rikhd/playlist2.m3u8\n\n### Notes (optional)\n\nToken needed...\r\nSame issue with RIK 1 and 2. May happen in the future with ANT1 Cyprus, Sigma and Omega.\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/14150/reactions',
       total_count: 0,
@@ -2122,7 +2122,7 @@ module.exports = [
     closed_at: null,
     author_association: 'NONE',
     active_lock_reason: null,
-    body: '### Broken Link\n\nhttp://190.61.102.67:2000/play/a038/index.m3u8\n\n### What happened to the stream?\n\nNot loading\n\n### Possible Replacement (optional)\n\n_No response_\n\n### Notes (optional)\n\nReplacement For A Broken Stream To A New Stream For Canal 5 (MX) Please\n\n### Please confirm the following\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#report-a-broken-stream)',
+    body: '### Stream URL\n\nhttp://190.61.102.67:2000/play/a038/index.m3u8\n\n### What happened to the stream?\n\nNot loading\n\n### Possible Replacement (optional)\n\n_No response_\n\n### Notes (optional)\n\nReplacement For A Broken Stream To A New Stream For Canal 5 (MX) Please\n\n### Please confirm the following\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#report-a-broken-stream)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/16120/reactions',
       total_count: 0,
