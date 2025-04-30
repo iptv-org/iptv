@@ -2,6 +2,7 @@ import { Feed, Channel, Category, Region, Subdivision, Country, Language } from 
 import { URL, Collection, Dictionary } from '@freearhey/core'
 import type { StreamData } from '../types/stream'
 import parser from 'iptv-playlist-parser'
+import { IssueData } from '../core'
 
 export class Stream {
   name?: string
@@ -37,6 +38,24 @@ export class Stream {
     this.verticalResolution = verticalResolution || undefined
     this.isInterlaced = isInterlaced || undefined
     this.label = data.label || undefined
+  }
+
+  update(issueData: IssueData): this {
+    const data = {
+      label: issueData.getString('label'),
+      quality: issueData.getString('quality'),
+      httpUserAgent: issueData.getString('httpUserAgent'),
+      httpReferrer: issueData.getString('httpReferrer'),
+      newStreamUrl: issueData.getString('newStreamUrl')
+    }
+
+    if (data.label !== undefined) this.label = data.label
+    if (data.quality !== undefined) this.setQuality(data.quality)
+    if (data.httpUserAgent !== undefined) this.userAgent = data.httpUserAgent
+    if (data.httpReferrer !== undefined) this.referrer = data.httpReferrer
+    if (data.newStreamUrl !== undefined) this.url = data.newStreamUrl
+
+    return this
   }
 
   fromPlaylistItem(data: parser.PlaylistItem): this {
@@ -98,29 +117,11 @@ export class Stream {
     return this
   }
 
-  setLabel(label: string): this {
-    this.label = label
-
-    return this
-  }
-
   setQuality(quality: string): this {
     const { verticalResolution, isInterlaced } = parseQuality(quality)
 
     this.verticalResolution = verticalResolution || undefined
     this.isInterlaced = isInterlaced || undefined
-
-    return this
-  }
-
-  setUserAgent(userAgent: string): this {
-    this.userAgent = userAgent
-
-    return this
-  }
-
-  setReferrer(referrer: string): this {
-    this.referrer = referrer
 
     return this
   }
@@ -387,7 +388,7 @@ function parseQuality(quality: string | null): {
   isInterlaced: boolean | null
 } {
   if (!quality) return { verticalResolution: null, isInterlaced: null }
-  let [, verticalResolutionString] = quality.match(/^(\d+)/) || [null, undefined]
+  const [, verticalResolutionString] = quality.match(/^(\d+)/) || [null, undefined]
   const isInterlaced = /i$/i.test(quality)
   let verticalResolution = 0
   if (verticalResolutionString) verticalResolution = parseInt(verticalResolutionString)
