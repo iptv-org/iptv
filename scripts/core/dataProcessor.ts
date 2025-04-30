@@ -68,7 +68,7 @@ export class DataProcessor {
     )
     const channelsKeyById = channels.keyBy((channel: Channel) => channel.id)
 
-    let feeds = new Collection(data.feeds).map(data =>
+    const feeds = new Collection(data.feeds).map(data =>
       new Feed(data)
         .withChannel(channelsKeyById)
         .withLanguages(languagesKeyByCode)

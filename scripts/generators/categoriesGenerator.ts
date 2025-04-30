@@ -1,4 +1,4 @@
-import { Collection, Storage, Logger, File } from '@freearhey/core'
+import { Collection, Storage, File } from '@freearhey/core'
 import { Stream, Category, Playlist } from '../models'
 import { PUBLIC_DIR } from '../constants'
 import { Generator } from './generator'
