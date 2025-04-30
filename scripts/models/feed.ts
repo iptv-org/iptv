@@ -1,5 +1,5 @@
-import { Collection, Dictionary } from '@freearhey/core'
 import { Country, Language, Region, Channel, Subdivision } from './index'
+import { Collection, Dictionary } from '@freearhey/core'
 import type { FeedData } from '../types/feed'
 
 export class Feed {
@@ -106,7 +106,7 @@ export class Feed {
     regionsKeyByCode: Dictionary,
     subdivisionsKeyByCode: Dictionary
   ): this {
-    let broadcastCountries = new Collection()
+    const broadcastCountries = new Collection()
 
     if (this.isInternational()) {
       this.broadcastCountries = broadcastCountries
