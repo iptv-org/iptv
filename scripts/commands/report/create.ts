@@ -37,17 +37,17 @@ async function main() {
   const streamsGroupedByChannelId = streams.groupBy((stream: Stream) => stream.channelId)
   const streamsGroupedById = streams.groupBy((stream: Stream) => stream.getId())
 
-  logger.info('checking broken streams reports...')
-  const brokenStreamReports = issues.filter(issue =>
-    issue.labels.find((label: string) => label === 'broken stream')
+  logger.info('checking streams:remove requests...')
+  const removeRequests = issues.filter(issue =>
+    issue.labels.find((label: string) => label === 'streams:remove')
   )
-  brokenStreamReports.forEach((issue: Issue) => {
-    const brokenLinks = issue.data.getArray('brokenLinks') || []
+  removeRequests.forEach((issue: Issue) => {
+    const streamUrls = issue.data.getArray('streamUrl') || []
 
-    if (!brokenLinks.length) {
+    if (!streamUrls.length) {
       const result = {
         issueNumber: issue.number,
-        type: 'broken stream',
+        type: 'streams:remove',
         streamId: undefined,
         streamUrl: undefined,
         status: 'missing_link'
@@ -55,10 +55,10 @@ async function main() {
 
       report.add(result)
     } else {
-      for (const streamUrl of brokenLinks) {
+      for (const streamUrl of streamUrls) {
         const result = {
           issueNumber: issue.number,
-          type: 'broken stream',
+          type: 'streams:remove',
           streamId: undefined,
           streamUrl: truncate(streamUrl),
           status: 'pending'

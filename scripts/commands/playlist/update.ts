@@ -32,7 +32,7 @@ async function main() {
   const files = await streamsStorage.list('**/*.m3u')
   const streams = await parser.parse(files)
 
-  logger.info('removing broken streams...')
+  logger.info('removing streams...')
   await removeStreams({ streams, issues })
 
   logger.info('edit stream description...')
@@ -73,12 +73,12 @@ async function removeStreams({ streams, issues }: { streams: Collection; issues:
   )
   requests.forEach((issue: Issue) => {
     const data = issue.data
-    if (data.missing('brokenLinks')) return
+    if (data.missing('streamUrl')) return
 
-    const brokenLinks = data.getString('brokenLinks') || ''
+    const streamUrls = data.getString('streamUrl') || ''
 
     let changed = false
-    brokenLinks
+    streamUrls
       .split(/\r?\n/)
       .filter(Boolean)
       .forEach(link => {
@@ -131,15 +131,7 @@ async function editStreams({
         .updateFilepath()
     }
 
-    const label = data.getString('label') || ''
-    const quality = data.getString('quality') || ''
-    const httpUserAgent = data.getString('httpUserAgent') || ''
-    const httpReferrer = data.getString('httpReferrer') || ''
-
-    if (data.has('label')) stream.setLabel(label)
-    if (data.has('quality')) stream.setQuality(quality)
-    if (data.has('httpUserAgent')) stream.setUserAgent(httpUserAgent)
-    if (data.has('httpReferrer')) stream.setReferrer(httpReferrer)
+    stream.update(data)
 
     processedIssues.add(issue.number)
   })
