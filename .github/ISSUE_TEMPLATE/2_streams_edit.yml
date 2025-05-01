@@ -1,4 +1,4 @@
-name: ✏️ Edit stream description
+name: ✏️ Edit stream
 description: Request to edit stream description
 title: 'Edit: '
 labels: ['streams:edit']
@@ -8,7 +8,7 @@ body:
     id: stream_url
     attributes:
       label: Stream URL (required)
-      description: Link to the stream from a playlist
+      description: Link to the stream to be updated
       placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
     validations:
       required: true
@@ -17,6 +17,13 @@ body:
     attributes:
       value: |
         What exactly needs to be changed? To delete an existing value without replacement use the `~` symbol.
+
+  - type: input
+    id: new_stream_url
+    attributes:
+      label: New Stream URL
+      description: New link to the stream
+      placeholder: 'https://servilive.com:3126/live/tele2000live.m3u8'
 
   - type: input
     id: stream_id
