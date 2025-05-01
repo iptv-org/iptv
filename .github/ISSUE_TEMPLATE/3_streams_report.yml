@@ -1,19 +1,19 @@
-name: 🚧 Report broken stream
+name: 🚧 Report a stream
 description: Report a broken or unstable stream
-title: 'Broken: '
-labels: ['broken stream', 'streams:remove']
+title: 'Report: '
+labels: ['streams:remove']
 
 body:
   - type: markdown
     attributes:
       value: |
-        Please fill out the issue template as much as you can so we could efficiently process your request
+        Please fill out the form as much as you can so we could efficiently process your request. To suggest a new replacement link, use this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+).
 
   - type: textarea
     id: stream_url
     attributes:
-      label: Broken Links
-      description: Please specify the broken links from the playlist (one per line)
+      label: Stream URL
+      description: List all links in question (one per line)
       placeholder: 'https://lnc-kdfw-fox-aws.tubi.video/index.m3u8'
     validations:
       required: true
