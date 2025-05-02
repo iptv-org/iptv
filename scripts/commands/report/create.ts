@@ -42,7 +42,7 @@ async function main() {
     issue.labels.find((label: string) => label === 'streams:remove')
   )
   removeRequests.forEach((issue: Issue) => {
-    const streamUrls = issue.data.getArray('streamUrl') || []
+    const streamUrls = issue.data.has('streamUrl') ? issue.data.getArray('streamUrl') : []
 
     if (!streamUrls.length) {
       const result = {
