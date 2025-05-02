@@ -1,26 +1,64 @@
-import { URL, Collection, Dictionary } from '@freearhey/core'
 import { Feed, Channel, Category, Region, Subdivision, Country, Language } from './index'
+import { URL, Collection, Dictionary } from '@freearhey/core'
+import type { StreamData } from '../types/stream'
 import parser from 'iptv-playlist-parser'
+import { IssueData } from '../core'
 
 export class Stream {
-  name: string
+  name?: string
   url: string
   id?: string
-  groupTitle: string
   channelId?: string
   channel?: Channel
   feedId?: string
   feed?: Feed
   filepath?: string
-  line: number
+  line?: number
   label?: string
   verticalResolution?: number
   isInterlaced?: boolean
-  httpReferrer?: string
-  httpUserAgent?: string
+  referrer?: string
+  userAgent?: string
+  groupTitle: string = 'Undefined'
   removed: boolean = false
 
-  constructor(data: parser.PlaylistItem) {
+  constructor(data?: StreamData) {
+    if (!data) return
+
+    const id = data.channel && data.feed ? [data.channel, data.feed].join('@') : data.channel
+    const { verticalResolution, isInterlaced } = parseQuality(data.quality)
+
+    this.id = id || undefined
+    this.channelId = data.channel || undefined
+    this.feedId = data.feed || undefined
+    this.name = data.name || undefined
+    this.url = data.url
+    this.referrer = data.referrer || undefined
+    this.userAgent = data.user_agent || undefined
+    this.verticalResolution = verticalResolution || undefined
+    this.isInterlaced = isInterlaced || undefined
+    this.label = data.label || undefined
+  }
+
+  update(issueData: IssueData): this {
+    const data = {
+      label: issueData.getString('label'),
+      quality: issueData.getString('quality'),
+      httpUserAgent: issueData.getString('httpUserAgent'),
+      httpReferrer: issueData.getString('httpReferrer'),
+      newStreamUrl: issueData.getString('newStreamUrl')
+    }
+
+    if (data.label !== undefined) this.label = data.label
+    if (data.quality !== undefined) this.setQuality(data.quality)
+    if (data.httpUserAgent !== undefined) this.userAgent = data.httpUserAgent
+    if (data.httpReferrer !== undefined) this.referrer = data.httpReferrer
+    if (data.newStreamUrl !== undefined) this.url = data.newStreamUrl
+
+    return this
+  }
+
+  fromPlaylistItem(data: parser.PlaylistItem): this {
     if (!data.name) throw new Error('"name" property is required')
     if (!data.url) throw new Error('"url" property is required')
 
@@ -37,15 +75,16 @@ export class Stream {
     this.verticalResolution = verticalResolution || undefined
     this.isInterlaced = isInterlaced || undefined
     this.url = data.url
-    this.httpReferrer = data.http.referrer || undefined
-    this.httpUserAgent = data.http['user-agent'] || undefined
-    this.groupTitle = 'Undefined'
+    this.referrer = data.http.referrer || undefined
+    this.userAgent = data.http['user-agent'] || undefined
+
+    return this
   }
 
-  withChannel(channelsGroupedById: Dictionary): this {
+  withChannel(channelsKeyById: Dictionary): this {
     if (!this.channelId) return this
 
-    this.channel = channelsGroupedById.get(this.channelId)
+    this.channel = channelsKeyById.get(this.channelId)
 
     return this
   }
@@ -78,12 +117,6 @@ export class Stream {
     return this
   }
 
-  setLabel(label: string): this {
-    this.label = label
-
-    return this
-  }
-
   setQuality(quality: string): this {
     const { verticalResolution, isInterlaced } = parseQuality(quality)
 
@@ -93,16 +126,8 @@ export class Stream {
     return this
   }
 
-  setHttpUserAgent(httpUserAgent: string): this {
-    this.httpUserAgent = httpUserAgent
-
-    return this
-  }
-
-  setHttpReferrer(httpReferrer: string): this {
-    this.httpReferrer = httpReferrer
-
-    return this
+  getLine(): number {
+    return this.line || -1
   }
 
   setFilepath(filepath: string): this {
@@ -133,12 +158,12 @@ export class Stream {
     return this.filepath || ''
   }
 
-  getHttpReferrer(): string {
-    return this.httpReferrer || ''
+  getReferrer(): string {
+    return this.referrer || ''
   }
 
-  getHttpUserAgent(): string {
-    return this.httpUserAgent || ''
+  getUserAgent(): string {
+    return this.userAgent || ''
   }
 
   getQuality(): string {
@@ -196,14 +221,6 @@ export class Stream {
 
   clone(): Stream {
     return Object.assign(Object.create(Object.getPrototypeOf(this)), this)
-  }
-
-  hasName(): boolean {
-    return !!this.name
-  }
-
-  noName(): boolean {
-    return !this.name
   }
 
   hasChannel() {
@@ -281,8 +298,12 @@ export class Stream {
     return this?.channel?.logo || ''
   }
 
+  getName(): string {
+    return this.name || ''
+  }
+
   getTitle(): string {
-    let title = `${this.name}`
+    let title = `${this.getName()}`
 
     if (this.getQuality()) {
       title += ` (${this.getQuality()})`
@@ -303,30 +324,13 @@ export class Stream {
     return this.id || ''
   }
 
-  data() {
-    return {
-      id: this.id,
-      channel: this.channel,
-      feed: this.feed,
-      filepath: this.filepath,
-      label: this.label,
-      name: this.name,
-      verticalResolution: this.verticalResolution,
-      isInterlaced: this.isInterlaced,
-      url: this.url,
-      httpReferrer: this.httpReferrer,
-      httpUserAgent: this.httpUserAgent,
-      line: this.line
-    }
-  }
-
   toJSON() {
     return {
       channel: this.channelId || null,
       feed: this.feedId || null,
       url: this.url,
-      referrer: this.httpReferrer || null,
-      user_agent: this.httpUserAgent || null,
+      referrer: this.referrer || null,
+      user_agent: this.userAgent || null,
       quality: this.getQuality() || null
     }
   }
@@ -338,25 +342,25 @@ export class Stream {
       output += ` tvg-logo="${this.getLogo()}" group-title="${this.groupTitle}"`
     }
 
-    if (this.httpReferrer) {
-      output += ` http-referrer="${this.httpReferrer}"`
+    if (this.referrer) {
+      output += ` http-referrer="${this.referrer}"`
     }
 
-    if (this.httpUserAgent) {
-      output += ` http-user-agent="${this.httpUserAgent}"`
+    if (this.userAgent) {
+      output += ` http-user-agent="${this.userAgent}"`
     }
 
     output += `,${this.getTitle()}`
 
-    if (this.httpReferrer) {
-      output += `\n#EXTVLCOPT:http-referrer=${this.httpReferrer}`
+    if (this.referrer) {
+      output += `\r\n#EXTVLCOPT:http-referrer=${this.referrer}`
     }
 
-    if (this.httpUserAgent) {
-      output += `\n#EXTVLCOPT:http-user-agent=${this.httpUserAgent}`
+    if (this.userAgent) {
+      output += `\r\n#EXTVLCOPT:http-user-agent=${this.userAgent}`
     }
 
-    output += `\n${this.url}`
+    output += `\r\n${this.url}`
 
     return output
   }
@@ -379,8 +383,12 @@ function escapeRegExp(text) {
   return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
 }
 
-function parseQuality(quality: string): { verticalResolution: number; isInterlaced: boolean } {
-  let [, verticalResolutionString] = quality.match(/^(\d+)/) || [null, undefined]
+function parseQuality(quality: string | null): {
+  verticalResolution: number | null
+  isInterlaced: boolean | null
+} {
+  if (!quality) return { verticalResolution: null, isInterlaced: null }
+  const [, verticalResolutionString] = quality.match(/^(\d+)/) || [null, undefined]
   const isInterlaced = /i$/i.test(quality)
   let verticalResolution = 0
   if (verticalResolutionString) verticalResolution = parseInt(verticalResolutionString)

@@ -5,18 +5,18 @@ import { Stream } from '../models'
 type PlaylistPareserProps = {
   storage: Storage
   feedsGroupedByChannelId: Dictionary
-  channelsGroupedById: Dictionary
+  channelsKeyById: Dictionary
 }
 
 export class PlaylistParser {
   storage: Storage
   feedsGroupedByChannelId: Dictionary
-  channelsGroupedById: Dictionary
+  channelsKeyById: Dictionary
 
-  constructor({ storage, feedsGroupedByChannelId, channelsGroupedById }: PlaylistPareserProps) {
+  constructor({ storage, feedsGroupedByChannelId, channelsKeyById }: PlaylistPareserProps) {
     this.storage = storage
     this.feedsGroupedByChannelId = feedsGroupedByChannelId
-    this.channelsGroupedById = channelsGroupedById
+    this.channelsKeyById = channelsKeyById
   }
 
   async parse(files: string[]): Promise<Collection> {
@@ -35,9 +35,10 @@ export class PlaylistParser {
     const parsed: parser.Playlist = parser.parse(content)
 
     const streams = new Collection(parsed.items).map((data: parser.PlaylistItem) => {
-      const stream = new Stream(data)
+      const stream = new Stream()
+        .fromPlaylistItem(data)
         .withFeed(this.feedsGroupedByChannelId)
-        .withChannel(this.channelsGroupedById)
+        .withChannel(this.channelsKeyById)
         .setFilepath(filepath)
 
       return stream

@@ -1,15 +1,20 @@
 import { execSync } from 'child_process'
+import os from 'os'
 
-it('can create report', () => {
-  const stdout = execSync(
-    'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/report_create npm run report:create',
-    {
-      encoding: 'utf8'
-    }
-  )
+let ENV_VAR = 'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/report_create'
+if (os.platform() === 'win32') {
+  ENV_VAR =
+    'SET "DATA_DIR=tests/__data__/input/data" && SET "STREAMS_DIR=tests/__data__/input/report_create" &&'
+}
 
-  expect(
-    stdout.includes(`
+describe('report:create', () => {
+  it('can create report', () => {
+    const cmd = `${ENV_VAR} npm run report:create`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+
+    expect(
+      stdout.includes(`
 ┌─────────┬─────────────┬──────────────────┬─────────────────────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────┬───────────────┐
 │ (index) │ issueNumber │ type             │ streamId                    │ streamUrl                                                                                                 │ status        │
 ├─────────┼─────────────┼──────────────────┼─────────────────────────────┼───────────────────────────────────────────────────────────────────────────────────────────────────────────┼───────────────┤
@@ -17,8 +22,9 @@ it('can create report', () => {
 │ 1       │ 14135       │ 'streams:add'    │ 'BBCWorldNews.uk@SouthAsia' │ 'http://103.199.161.254/Content/bbcworld/Live/Channel%28BBCworld%29/Stream%2801%29/index.m3u8'            │ 'wrong_id'    │
 │ 2       │ 14177       │ 'streams:add'    │ 'TUTV.us'                   │ 'https://livestream.telvue.com/templeuni1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8'             │ 'on_playlist' │
 │ 3       │ 14178       │ 'streams:add'    │ 'TV3.my'                    │ 'https://live-streams-ssai-01.tonton.com.my/live/2dd2b7cd-1b34-4871-b669-57b5c9beca23/live.isml/.m3u8...' │ 'blocked'     │
-│ 4       │ 16120       │ 'broken stream'  │ undefined                   │ 'http://190.61.102.67:2000/play/a038/index.m3u8'                                                          │ 'wrong_link'  │
+│ 4       │ 16120       │ 'streams:remove' │ undefined                   │ 'http://190.61.102.67:2000/play/a038/index.m3u8'                                                          │ 'wrong_link'  │
 │ 5       │ 19956       │ 'channel search' │ 'CNBCe.tr'                  │ undefined                                                                                                 │ 'invalid_id'  │
 └─────────┴─────────────┴──────────────────┴─────────────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────┘`)
-  ).toBe(true)
+    ).toBe(true)
+  })
 })
