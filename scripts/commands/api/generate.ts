@@ -1,30 +1,25 @@
-import { Logger, Storage, Collection } from '@freearhey/core'
+import { DataLoader, DataProcessor, PlaylistParser } from '../../core'
+import type { DataProcessorData } from '../../types/dataProcessor'
 import { API_DIR, STREAMS_DIR, DATA_DIR } from '../../constants'
-import { PlaylistParser } from '../../core'
-import { Stream, Channel, Feed } from '../../models'
-import { uniqueId } from 'lodash'
+import type { DataLoaderData } from '../../types/dataLoader'
+import { Logger, Storage } from '@freearhey/core'
+import { Stream } from '../../models'
 
 async function main() {
   const logger = new Logger()
 
-  logger.info('loading api data...')
+  logger.info('loading data from api...')
+  const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
-  const channelsData = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsData).map(data => new Channel(data))
-  const channelsGroupedById = channels.keyBy((channel: Channel) => channel.id)
-  const feedsData = await dataStorage.json('feeds.json')
-  const feeds = new Collection(feedsData).map(data =>
-    new Feed(data).withChannel(channelsGroupedById)
-  )
-  const feedsGroupedByChannelId = feeds.groupBy((feed: Feed) =>
-    feed.channel ? feed.channel.id : uniqueId()
-  )
+  const dataLoader = new DataLoader({ storage: dataStorage })
+  const data: DataLoaderData = await dataLoader.load()
+  const { channelsKeyById, feedsGroupedByChannelId }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
     storage: streamsStorage,
-    channelsGroupedById,
+    channelsKeyById,
     feedsGroupedByChannelId
   })
   const files = await streamsStorage.list('**/*.m3u')

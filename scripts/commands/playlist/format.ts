@@ -1,33 +1,28 @@
-import { Logger, Storage, Collection } from '@freearhey/core'
+import { Logger, Storage } from '@freearhey/core'
 import { STREAMS_DIR, DATA_DIR } from '../../constants'
-import { PlaylistParser } from '../../core'
-import { Stream, Playlist, Channel, Feed } from '../../models'
+import { DataLoader, DataProcessor, PlaylistParser } from '../../core'
+import { Stream, Playlist } from '../../models'
 import { program } from 'commander'
-import { uniqueId } from 'lodash'
+import { DataLoaderData } from '../../types/dataLoader'
+import { DataProcessorData } from '../../types/dataProcessor'
 
 program.argument('[filepath]', 'Path to file to validate').parse(process.argv)
 
 async function main() {
-  const streamsStorage = new Storage(STREAMS_DIR)
   const logger = new Logger()
 
   logger.info('loading data from api...')
+  const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
-  const channelsData = await dataStorage.json('channels.json')
-  const channels = new Collection(channelsData).map(data => new Channel(data))
-  const channelsGroupedById = channels.keyBy((channel: Channel) => channel.id)
-  const feedsData = await dataStorage.json('feeds.json')
-  const feeds = new Collection(feedsData).map(data =>
-    new Feed(data).withChannel(channelsGroupedById)
-  )
-  const feedsGroupedByChannelId = feeds.groupBy(feed =>
-    feed.channel ? feed.channel.id : uniqueId()
-  )
+  const loader = new DataLoader({ storage: dataStorage })
+  const data: DataLoaderData = await loader.load()
+  const { channelsKeyById, feedsGroupedByChannelId }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
+  const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
     storage: streamsStorage,
-    channelsGroupedById,
+    channelsKeyById,
     feedsGroupedByChannelId
   })
   const files = program.args.length ? program.args : await streamsStorage.list('**/*.m3u')
@@ -46,7 +41,7 @@ async function main() {
 
   logger.info('removing wrong id...')
   streams = streams.map((stream: Stream) => {
-    if (!stream.channel || channelsGroupedById.missing(stream.channel.id)) {
+    if (!stream.channel || channelsKeyById.missing(stream.channel.id)) {
       stream.id = ''
     }
 
