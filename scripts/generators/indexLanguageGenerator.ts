@@ -1,22 +1,23 @@
-import { Generator } from './generator'
-import { Collection, Storage, Logger } from '@freearhey/core'
+import { Collection, Storage, File } from '@freearhey/core'
 import { Stream, Playlist, Language } from '../models'
 import { PUBLIC_DIR } from '../constants'
+import { Generator } from './generator'
+import { EOL } from 'node:os'
 
 type IndexLanguageGeneratorProps = {
   streams: Collection
-  logger: Logger
+  logFile: File
 }
 
 export class IndexLanguageGenerator implements Generator {
   streams: Collection
   storage: Storage
-  logger: Logger
+  logFile: File
 
-  constructor({ streams, logger }: IndexLanguageGeneratorProps) {
+  constructor({ streams, logFile }: IndexLanguageGeneratorProps) {
     this.streams = streams
     this.storage = new Storage(PUBLIC_DIR)
-    this.logger = logger
+    this.logFile = logFile
   }
 
   async generate(): Promise<void> {
@@ -47,6 +48,8 @@ export class IndexLanguageGenerator implements Generator {
     const playlist = new Playlist(groupedStreams, { public: true })
     const filepath = 'index.language.m3u'
     await this.storage.save(filepath, playlist.toString())
-    this.logger.info(JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }))
+    this.logFile.append(
+      JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }) + EOL
+    )
   }
 }
