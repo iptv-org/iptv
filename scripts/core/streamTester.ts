@@ -18,8 +18,8 @@ export class StreamTester {
       return this.checker.checkStream({
         url: stream.url,
         http: {
-          referrer: stream.getHttpReferrer(),
-          'user-agent': stream.getHttpUserAgent()
+          referrer: stream.getReferrer(),
+          'user-agent': stream.getUserAgent()
         }
       })
     }

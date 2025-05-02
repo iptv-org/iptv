@@ -17,10 +17,10 @@ export class Playlist {
   }
 
   toString() {
-    let output = '#EXTM3U\n'
+    let output = '#EXTM3U\r\n'
 
     this.streams.forEach((stream: Stream) => {
-      output += stream.toString(this.options) + '\n'
+      output += stream.toString(this.options) + '\r\n'
     })
 
     return output
