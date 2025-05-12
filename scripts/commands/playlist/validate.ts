@@ -1,7 +1,7 @@
 import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
 import { DataLoader, DataProcessor, PlaylistParser } from '../../core'
 import { DataProcessorData } from '../../types/dataProcessor'
-import { DATA_DIR, STREAMS_DIR } from '../../constants'
+import { DATA_DIR, ROOT_DIR } from '../../constants'
 import { DataLoaderData } from '../../types/dataLoader'
 import { BlocklistRecord, Stream } from '../../models'
 import { program } from 'commander'
@@ -30,13 +30,13 @@ async function main() {
   }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
-  const streamsStorage = new Storage(STREAMS_DIR)
+  const rootStorage = new Storage(ROOT_DIR)
   const parser = new PlaylistParser({
-    storage: streamsStorage,
+    storage: rootStorage,
     channelsKeyById,
     feedsGroupedByChannelId
   })
-  const files = program.args.length ? program.args : await streamsStorage.list('**/*.m3u')
+  const files = program.args.length ? program.args : await rootStorage.list('streams/**/*.m3u')
   const streams = await parser.parse(files)
   logger.info(`found ${streams.count()} streams`)
 
