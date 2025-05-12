@@ -6,11 +6,10 @@ type ExecError = {
   stdout: string
 }
 
-let ENV_VAR =
-  'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/playlist_validate'
+let ENV_VAR = 'DATA_DIR=tests/__data__/input/data ROOT_DIR=tests/__data__/input/playlist_validate'
 if (os.platform() === 'win32') {
   ENV_VAR =
-    'SET "DATA_DIR=tests/__data__/input/data" && SET "STREAMS_DIR=tests/__data__/input/playlist_validate" &&'
+    'SET "DATA_DIR=tests/__data__/input/data" && SET "ROOT_DIR=tests/__data__/input/playlist_validate" &&'
 }
 
 describe('playlist:validate', () => {
