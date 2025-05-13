@@ -13,12 +13,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - run: git diff HEAD~1
       - name: changed files
         id: files
         run: |
           ANY_CHANGED=false
-          ALL_CHANGED_FILES=$(git diff --name-only origin/master HEAD -- streams/ | tr '\n' ' ')
+          ALL_CHANGED_FILES=$(git diff --name-only master HEAD -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
             ANY_CHANGED=true
           fi
