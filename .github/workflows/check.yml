@@ -17,7 +17,7 @@ jobs:
         id: files
         run: |
           ANY_CHANGED=false
-          ALL_CHANGED_FILES=$(git diff --name-only origin/master HEAD streams/ | tr '\n' ' ')
+          ALL_CHANGED_FILES=$(git diff --name-only origin/master..HEAD -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
             ANY_CHANGED=true
           fi
