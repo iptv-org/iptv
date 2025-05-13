@@ -13,10 +13,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - run: git fetch origin master:master
       - name: changed files
         id: files
         run: |
+          git fetch origin master:master
           ANY_CHANGED=false
           ALL_CHANGED_FILES=$(git diff --name-only master -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
