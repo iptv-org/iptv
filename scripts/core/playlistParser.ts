@@ -23,6 +23,8 @@ export class PlaylistParser {
     let streams = new Collection()
 
     for (const filepath of files) {
+      if (!this.storage.existsSync(filepath)) continue
+
       const _streams: Collection = await this.parseFile(filepath)
       streams = streams.concat(_streams)
     }
