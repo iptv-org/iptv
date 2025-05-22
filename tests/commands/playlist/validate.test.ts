@@ -41,4 +41,9 @@ describe('playlist:validate', () => {
       )
     }
   })
+
+  it('skip the file if it does not exist', () => {
+    const cmd = `${ENV_VAR} npm run playlist:validate -- missing.m3u`
+    execSync(cmd, { encoding: 'utf8' })
+  })
 })
