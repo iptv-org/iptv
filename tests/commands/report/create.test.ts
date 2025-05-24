@@ -24,6 +24,7 @@ describe('report:create', () => {
 │ 3       │ 14178       │ 'streams:add'    │ 'TV3.my'                    │ 'https://live-streams-ssai-01.tonton.com.my/live/2dd2b7cd-1b34-4871-b669-57b5c9beca23/live.isml/.m3u8...' │ 'blocked'     │
 │ 4       │ 16120       │ 'streams:remove' │ undefined                   │ 'http://190.61.102.67:2000/play/a038/index.m3u8'                                                          │ 'wrong_link'  │
 │ 5       │ 19956       │ 'channel search' │ 'CNBCe.tr'                  │ undefined                                                                                                 │ 'invalid_id'  │
+│ 6       │ 20956       │ 'channel search' │ 'IONTV.us'                  │ undefined                                                                                                 │ 'fulfilled'   │
 └─────────┴─────────────┴──────────────────┴─────────────────────────────┴───────────────────────────────────────────────────────────────────────────────────────────────────────────┴───────────────┘`)
     ).toBe(true)
   })
