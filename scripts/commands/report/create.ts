@@ -133,7 +133,7 @@ async function main() {
   const channelSearchRequestsBuffer = new Dictionary()
   channelSearchRequests.forEach((issue: Issue) => {
     const streamId = issue.data.getString('channelId') || ''
-    const [channelId] = streamId.split('@')
+    const [channelId, feedId] = streamId.split('@')
 
     const result = {
       issueNumber: issue.number,
@@ -148,6 +148,7 @@ async function main() {
     else if (channelSearchRequestsBuffer.has(streamId)) result.status = 'duplicate'
     else if (blocklistRecordsGroupedByChannelId.has(channelId)) result.status = 'blocked'
     else if (streamsGroupedById.has(streamId)) result.status = 'fulfilled'
+    else if (!feedId && streamsGroupedByChannelId.has(channelId)) result.status = 'fulfilled'
     else {
       const channelData = channelsKeyById.get(channelId)
       if (channelData.length && channelData[0].closed) result.status = 'closed'
