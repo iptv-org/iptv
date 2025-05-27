@@ -12,7 +12,7 @@
 
 You have several options:
 
-1. Create a new [issue](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and provide all the required information. If the request is approved, the link will be added to the playlist in the next update.
+1. Create a new request using this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and if approved, the link will automatically be added to the playlist on the next update.
 
 2. Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls).
 
