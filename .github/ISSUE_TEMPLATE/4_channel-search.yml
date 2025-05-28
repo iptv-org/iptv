@@ -18,3 +18,11 @@ body:
     attributes:
       label: Notes
       description: 'Any additional information that may help find a link to the stream faster?'
+  
+  - type: checkboxes
+    attributes:
+      label: Contributing Guide
+      description: 'Please read this guide before posting your request'
+      options:
+        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
+          required: true
