@@ -73,10 +73,10 @@ https://streaming101tv.es/hls/webronda.m3u8
 https://streaming101tv.es/hls/websevilla.m3u8
 #EXTINF:-1 tvg-id="111TV.it" tvg-logo="https://i.imgur.com/kVREx1Q.png" group-title="General",111 TV (720p)
 https://5db313b643fd8.streamlock.net/111TV/111TV/playlist.m3u8
-#EXTINF:-1 tvg-id="24.sk" tvg-logo="https://i.imgur.com/tTCuczU.png" group-title="News",:24 (1080p)
-http://88.212.15.27/live/test_trojka_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="Sport.sk" tvg-logo="https://i.imgur.com/oAtcxNZ.png" group-title="Sports",:Šport (1080p)
 http://88.212.15.27/live/test_rtvs_sport_hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="24.sk" tvg-logo="https://i.imgur.com/tTCuczU.png" group-title="News",:24 (1080p)
+http://88.212.15.27/live/test_trojka_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="A1TV.nl" tvg-logo="https://i.imgur.com/JZ1oTM2.png" group-title="General",A1 TV (1080p) [Not 24/7]
 https://stream.a1mediagroep.nl/hls/a1tv.m3u8
 #EXTINF:-1 tvg-id="A2iTV.it" tvg-logo="https://i.imgur.com/YlDFir7.jpg" group-title="General",A2i TV (1080p)
@@ -85,7 +85,7 @@ https://stream.sen-gt.com/A2itv/myStream/playlist.m3u8
 http://62.233.57.226:8001/play/a00j00
 #EXTINF:-1 tvg-id="APunt.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Logotip_d%27%C3%80_Punt_%282017-%29.svg/512px-Logotip_d%27%C3%80_Punt_%282017-%29.svg.png" group-title="General",A Punt
 https://bcovlive-a.akamaihd.net/8499d938ef904e39b58a4adec2ddeada/eu-west-1/6057955885001/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="ABChannel.it" tvg-logo="https://i.imgur.com/SVkDShV.png" group-title="Undefined",AB Channel (720p)
+#EXTINF:-1 tvg-id="ABChannel.it" tvg-logo="https://i.imgur.com/SVkDShV.png" group-title="Undefined",AB Channel (720p) [Geo-blocked]
 https://tsw.streamingwebtv24.it:1936/abchanneltv/abchanneltv/playlist.m3u8
 #EXTINF:-1 tvg-id="AcheloosTV.gr" tvg-logo="https://i.imgur.com/5SVMxcu.png" group-title="General",Acheloos TV (576p)
 https://acheloostv.streamings.gr/live/stream/index.m3u8
@@ -123,6 +123,8 @@ https://restr2.bgtv.bg/agro/hls/agro.m3u8
 https://stream1.1616.ro:1945/agro/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="AigaioTV.gr" tvg-logo="https://i.imgur.com/7LfuDJi.png" group-title="General",Aigaio TV (360p)
 https://250weu.bozztv.com/ssh101/ssh101/aigaiotv/playlist.m3u8
+#EXTINF:-1 tvg-id="AlHayatTV.us@SD" tvg-logo="https://i.imgur.com/M8ZuzeB.png" group-title="Religious",Al Hayat TV (720p)
+https://cdn3.wowza.com/5/OE5HREpIcEkySlNT/alhayat-live/ngrp:livestream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraBalkans.ba" tvg-logo="https://i.imgur.com/vMzCr8O.png" group-title="News",Al Jazeera Balkans (1080p)
 https://live-hls-apps-ajb-v3-fa.getaj.net/AJB/index.m3u8
 #EXTINF:-1 tvg-id="AlacantiTV.es" tvg-logo="https://i.imgur.com/pcWU6e1.png" group-title="General",Alacantí TV (576p) [Not 24/7]
@@ -1109,8 +1111,6 @@ https://secure.todostreaming.es/live/nerja-livestream.m3u8
 https://5c0956165db0b.streamlock.net/ftv/directo/.m3u8
 #EXTINF:-1 tvg-id="FunRadio.fr" tvg-logo="https://i.imgur.com/wgxuYsQ.png" group-title="Music",Fun Radio (720p)
 https://livevideo.infomaniak.com/streaming/livecast/funradiovisionhd/playlist.m3u8
-#EXTINF:-1 tvg-id="FX2.fr" tvg-logo="https://www.lyngsat.com/logo/tv/ff/fx-2-fr.png" group-title="Entertainment",FX2 Farsi
-https://toonixhls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="FX.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/330px-FX_International_logo.svg.png" group-title="Undefined",FX (1080p) [Geo-blocked]
 https://saran-live.ercdn.net/fx/index.m3u8
 #EXTINF:-1 tvg-id="Galaxy.gr" tvg-logo="https://i.imgur.com/YgGSEeT.png" group-title="Undefined",Galaxy (432p) [Geo-blocked]
@@ -1443,8 +1443,6 @@ https://api.alpaca.t62a.com/hls/9103/index.m3u8
 http://rtmp1.40e.hu:8000/live/ktv.m3u8
 #EXTINF:-1 tvg-id="KempenTV.nl" tvg-logo="https://i.imgur.com/ZiPL9ar.png" group-title="General",KempenTV (480p)
 http://ms7.mx-cd.net/tv/Omroep_de_Kempen.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="KhaterehTV.de" tvg-logo="https://www.lyngsat.com/logo/tv/kk/khatereh-tv-de.png" group-title="Culture",Khatereh TV (720p)
-https://castor.streamthatvideo.co:8081/khaterehtv/index.m3u8
 #EXTINF:-1 tvg-id="KibrisGencTV.cy" tvg-logo="https://i.imgur.com/eBdQn9h.png" group-title="News",Kibris Genç TV (720p) [Not 24/7]
 https://sc-kuzeykibrissmarttv.ercdn.net/kibrisgenctv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="KibrisKanalT.cy" tvg-logo="https://i.imgur.com/4bA4pXT.png" group-title="General",Kibris Kanal T (576p) [Not 24/7]
@@ -2455,7 +2453,7 @@ https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f28009b1
 https://vysilani.zaktv.cz/broadcast/hls/ptv/index.m3u8
 #EXTINF:-1 tvg-id="PMC.ae" tvg-logo="https://i.imgur.com/AbrHI7K.png" group-title="Music",PMC (1080p)
 https://hls.pmc.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-logo="https://www.lyngsat.com/logo/tv/pp/pmc-royale-ch.png" group-title="Music",PMC Royale (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="PMCRoyale.ae" tvg-logo="https://www.lyngsat.com/logo/tv/pp/pmc-royale-ch.png" group-title="Music",PMC Royale (720p)
 https://rohls.pmc.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="PodiumTV2.nl" tvg-logo="https://i.imgur.com/bAhMhuz.jpg" group-title="Undefined",Podium.TV 2 (1080p) [Not 24/7]
 https://rrr.sz.xlcdn.com/?account=ndc_mediagroep&file=NDC2&output=playlist.m3u8&service=wowza&type=live
@@ -3062,8 +3060,8 @@ https://raw.githubusercontent.com/azgaresncf/strm2hls/main/streams/Sardegna1.m3u
 https://svs.itworkscdn.net/sat7arabiclive/sat7arabic.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="Sat7Kids.cy" tvg-logo="https://i.imgur.com/M0ik0i2.png" group-title="Kids;Religious",Sat 7 Kids (1080p)
 https://svs.itworkscdn.net/sat7kidslive/sat7kids.smil/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="Sat7Pars.cy" tvg-logo="https://i.imgur.com/VTLQeul.png" group-title="Religious",Sat 7 Pars (720p)
-https://svs.itworkscdn.net/sat7parslive/sat7pars.smil/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="Sat7Pars.cy" tvg-logo="https://i.imgur.com/VTLQeul.png" group-title="Religious",Sat7 Pars (1080p)
+https://svs.itworkscdn.net/sat7parslive/sat7pars.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="Sat7Turk.cy" tvg-logo="https://i.imgur.com/cKQIK4i.png" group-title="Undefined",Sat 7 Türk (720p)
 https://svs.itworkscdn.net/sat7turklive/sat7turk.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="SAYHi.pl" tvg-logo="https://i.imgur.com/xR151dE.png" group-title="Music",SAYHi (1080i)

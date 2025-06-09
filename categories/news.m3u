@@ -144,7 +144,7 @@ https://d39iawgzv3h0yo.cloudfront.net/out/v1/1ef4344a3b4a41908915d58ac7bd5e23/in
 http://185.234.111.229:8000/play/a05m
 #EXTINF:-1 tvg-id="AL24News.dz" tvg-logo="https://i.imgur.com/vyVEXYL.png" group-title="News",AL24 News (1080p)
 https://cdn.live.easybroadcast.io/abr_corp/66_al24_u4yga6h/playlist.m3u8
-#EXTINF:-1 tvg-id="AlAlam.ir" tvg-logo="https://i.imgur.com/Zdi31dy.png" group-title="News",Al Alam (360p) [Not 24/7]
+#EXTINF:-1 tvg-id="AlAlam.ir" tvg-logo="https://i.imgur.com/Zdi31dy.png" group-title="News",Al Alam (360p)
 https://live2.alalam.ir/alalam.m3u8
 #EXTINF:-1 tvg-id="Alarabiya.ae" tvg-logo="https://i.imgur.com/NXFkYFj.png" group-title="News",Al Arabiya (1080p)
 https://live.alarabiya.net/alarabiapublish/alarabiya.smil/playlist.m3u8
@@ -296,7 +296,7 @@ https://vs-cmaf-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_c
 #EXTINF:-1 tvg-id="BBCNews.uk@NorthAmerica" tvg-logo="https://i.imgur.com/vSz2WEp.png" group-title="News",BBC News (North America) (1080p)
 https://d2vnbkvjbims7j.cloudfront.net/containerA/LTN/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCPersian.uk" tvg-logo="https://i.imgur.com/4uTMnPb.png" group-title="News",BBC Persian (720p)
-https://vs-cmaf-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persian_tv/pc_hd_abr_v2_akamai_dash_live.mpd
+https://vs-hls-pushb-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_persian_tv/t=3840/v=pv14/b=5070016/main.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk@Europe" tvg-logo="https://i.imgur.com/vSz2WEp.png" group-title="News" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148",BBC World News (480p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML,like Gecko) Mobile/15E148
 http://ott-cdn.ucom.am/s24/index.m3u8
@@ -562,8 +562,6 @@ https://5a1178b42cc03.streamlock.net/8182/8182/playlist.m3u8
 http://seb.sason.top/sc/dscjxw_fhd.m3u8
 #EXTINF:-1 tvg-id="EBCNews.tw" tvg-logo="https://i.imgur.com/QFZs80p.png" group-title="News",EBC News (東森新聞台) (1080p) [Not 24/7]
 http://seb.sason.top/sc/dsxw_fhd.m3u8
-#EXTINF:-1 tvg-id="EchoroukNews.dz@SD" tvg-logo="https://i.imgur.com/TNtjYcw.png" group-title="News",Echorouk News
-https://live20.bozztv.com/gin-36bay3/ga-echorouknews/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="EcotelTV.ec" tvg-logo="https://i.imgur.com/pVlZUSV.png" group-title="News",Ecotel (720p) [Not 24/7]
 https://ecotel.streamseguro.com/hls/ecoteltv.m3u8
 #EXTINF:-1 tvg-id="Eemland1.nl" tvg-logo="https://i.imgur.com/q3fd7GC.png" group-title="News",Eemland 1 (720p)
@@ -585,8 +583,6 @@ https://d2xqbi89ghm9hh.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68
 https://cdn3.wowza.com/5/cHYzekYzM2kvTVFH/elsegundo/G0014_002/playlist.m3u8
 #EXTINF:-1 tvg-id="EnlightNews.in" tvg-logo="https://i.imgur.com/GhiGi5A.png" group-title="News",Enlight News (1080p)
 https://live.enlightnews.com/live/enlightnews/tracks-v1a1/index.m3u8
-#EXTINF:-1 tvg-id="EnnaharTV.dz@SD" tvg-logo="https://i.imgur.com/C0TCA1s.png" group-title="News",Ennahar TV
-https://live20.bozztv.com/gin-36bay3/ga-ennahartv/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="EntertainmentTonight.us" tvg-logo="https://i.imgur.com/TXamgdB.png" group-title="Entertainment;News",Entertainment Tonight (720p)
 https://cbsta49f-cbsta49f-ms.global.ssl.fastly.net/amagi7b98-AmagiMixible/master/amagi7b98-AmagiMixible.m3u8
 #EXTINF:-1 tvg-id="ERTNews.gr" tvg-logo="https://i.imgur.com/AqJKDy1.png" group-title="News",ERT News (1080p)
@@ -783,14 +779,16 @@ https://informatia.streamnet.ro/mobile_tv/informatiatv.m3u8
 https://freespeech.akamaized.net/hls/live/2016712/live1/playlist.m3u8
 #EXTINF:-1 tvg-id="INH24x7.in" tvg-logo="https://i.imgur.com/Es3QiVx.png" group-title="News",INH 24x7 (360p)
 https://7epd6o8edk9b-hls-live.wmncdn.net/inh24/live.stream/playlist.m3u8
-#EXTINF:-1 tvg-id="IranInternational.uk" tvg-logo="https://i.imgur.com/55RpaF3.png" group-title="News",Iran International (1080p)
+#EXTINF:-1 tvg-id="IranInternational.uk" tvg-logo="https://i.imgur.com/55RpaF3.png" group-title="News",Iran International (720p)
 https://dev-live.livetvstream.co.uk/LS-63503-4/index.m3u8
-#EXTINF:-1 tvg-id="IranPress.ir" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%D9%84%D9%88%DA%AF%D9%88_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_%D9%BE%D8%B1%D8%B3.jpg/240px-%D9%84%D9%88%DA%AF%D9%88_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_%D9%BE%D8%B1%D8%B3.jpg" group-title="News",Iran Press (480p) [Not 24/7]
-https://ip2stream.iranpress.com/hls/ip2.m3u8
-#EXTINF:-1 tvg-id="IRINN2.ir" tvg-logo="https://i.imgur.com/8tzsC9h.png" group-title="News",IRIB2
-https://lenz.splus.ir/PLTV/88888888/224/3221227020/index.m3u8
+#EXTINF:-1 tvg-id="IranPress.ir" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/%D9%84%D9%88%DA%AF%D9%88_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_%D9%BE%D8%B1%D8%B3.jpg/240px-%D9%84%D9%88%DA%AF%D9%88_%D8%A7%DB%8C%D8%B1%D8%A7%D9%86_%D9%BE%D8%B1%D8%B3.jpg" group-title="News",Iran Press (720p)
+https://live.presstv.ir/hls/presstv_5_482/index.m3u8
+#EXTINF:-1 tvg-id="IraneFardaTV.uk" tvg-logo="https://i.imgur.com/ixgcgZY.png" group-title="News",IraneFarda TV (720p)
+https://hls.iranfarda.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="IRINN.ir@SD" tvg-logo="https://i.imgur.com/8tzsC9h.png" group-title="News",IRINN
 https://live20.bozztv.com/dvrfl05/gin-irinn/index.m3u8
+#EXTINF:-1 tvg-id="IRINN2.ir" tvg-logo="https://i.imgur.com/8tzsC9h.png" group-title="News",IRINN2
+https://lenz.splus.ir/PLTV/88888888/224/3221227020/index.m3u8
 #EXTINF:-1 tvg-id="IsraelParsTV.il" tvg-logo="https://i.imgur.com/UM5Gf4L.png" group-title="News",Israel Pars TV (540p)
 https://live.pars-israel.com/iptv/stream.m3u8
 #EXTINF:-1 tvg-id="IT3.ua" tvg-logo="https://i.imgur.com/8rNbbY7.png" group-title="News",IT-3 (720p)
@@ -1267,7 +1265,7 @@ https://skynewsau-live.akamaized.net/hls/live/2002690/skynewsau-extra2/master.m3
 #EXTINF:-1 tvg-id="SkyNewsExtra3.au" tvg-logo="https://i.imgur.com/ZsPb8nL.png" group-title="News",Sky News Extra 3 (1080p)
 https://skynewsau-live.akamaized.net/hls/live/2002691/skynewsau-extra3/master.m3u8
 #EXTINF:-1 tvg-id="SNNTV.ir" tvg-logo="https://i.imgur.com/V8DYqMJ.png" group-title="News",SNN TV (720p) [Not 24/7]
-https://live2.snn.ir/hls/snn.m3u8
+https://live2.snn.ir/hls/snn2_hd720/index.m3u8
 #EXTINF:-1 tvg-id="Sochi24.ru" tvg-logo="https://i.imgur.com/iwWxkl6.png" group-title="General;News",Sochi 24 HD
 http://serv30.vintera.tv:8081/sochi/sochi24_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="SPILebanon.lb" tvg-logo="https://spilebanon.com/img/spi-logo.jpg" group-title="News",SPI LEBANON
@@ -1370,8 +1368,6 @@ http://92.114.85.72:8000/play/a02v
 https://stream.truso.tv/elblag/myStream_aac/playlist.m3u8
 #EXTINF:-1 tvg-id="TurkHaberTV.tr" tvg-logo="https://i.imgur.com/2AcRKdL.png" group-title="News",TürkHaber (720p)
 https://edge1.socialsmart.tv/turkhaber/bant1/playlist.m3u8
-#EXTINF:-1 tvg-id="TV3.dz" tvg-logo="https://i.imgur.com/EQTGCbm.png" group-title="News",TV3
-http://69.64.57.208/canalalgerie/playlist.m3u8
 #EXTINF:-1 tvg-id="TV5MondeInfo.fr" tvg-logo="https://i.imgur.com/AJx5Fy2.png" group-title="News",TV5Monde Info (1080p) [Geo-blocked]
 https://ott.tv5monde.com/Content/HLS/Live/channel(info)/variant.m3u8
 #EXTINF:-1 tvg-id="TV9Kannada.in" tvg-logo="https://i.imgur.com/S3Ded70.png" group-title="News",TV9 Kannada (720p) [Not 24/7]
