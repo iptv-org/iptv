@@ -12,5 +12,6 @@ https://cdn-globecast.akamaized.net/live/eds/libya_al_watanya/hls_roku/index.m3u
 https://amsart-live.ercdn.net/salamtv/salamtv.m3u8
 #EXTINF:-1 tvg-id="TanasuhTV.ly",Tanasuh TV (1080p)
 https://tip.stream.tanasuh.tv:4434/live/smil:tanasuhtv.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="WasatTV.ly",Wasat TV (1080p)
+#EXTINF:-1 tvg-id="WasatTV.ly" http-referrer="https://alwasat.ly/",Wasat TV (1080p)
+#EXTVLCOPT:http-referrer=https://alwasat.ly/
 https://alwasattv.hibridcdn.net/alwasattv/alwasat_abr/playlist.m3u8
