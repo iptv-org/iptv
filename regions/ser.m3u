@@ -133,9 +133,6 @@ http://151.0.207.99:1935/AlmaTv/AlmaTv/playlist.m3u8
 https://starmenajo.com/hls/almahriah/index.m3u8
 #EXTINF:-1 tvg-id="AlphaTV.gr" tvg-logo="https://i.imgur.com/6twzd38.png" group-title="General",Alpha TV (720p) [Not 24/7]
 http://alphatvlive.siliconweb.com/1/Y2Rsd1lUcUVoajcv/UVdCN25h/hls/live/playlist.m3u8
-#EXTINF:-1 tvg-id="AlphaTVCyprus.cy" tvg-logo="https://i.imgur.com/No45vwk.png" group-title="General" http-referrer="http://player.cloudskep.com/alphatmp/alphacy",Alpha TV Cyprus (720p) [Geo-blocked]
-#EXTVLCOPT:http-referrer=http://player.cloudskep.com/alphatmp/alphacy
-http://l4.cloudskep.com/alphatmp/acy/playlist.m3u8
 #EXTINF:-1 tvg-id="AltasTV.tr" tvg-logo="https://i.imgur.com/XaJ7fp6.png" group-title="General",Altas TV (1080p)
 https://edge1.socialsmart.tv/altastv/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="AltoAdigeTV.it" tvg-logo="https://i.imgur.com/yt7JJrn.png" group-title="General",Alto Adige TV (720p)
@@ -1172,8 +1169,6 @@ https://live.artidijitalmedya.com/artidijital_olayturk/olayturk/playlist.m3u8
 https://liveingesta118.cdnmedia.tv/olottvlive/smil:live.smil/playlist.m3u8?DVR=
 #EXTINF:-1 tvg-id="OlympicChannel.es@SD" tvg-logo="https://i.imgur.com/wPQVVtj.png" group-title="Sports",Olympic Channel [Geo-blocked]
 https://ocshls-2-olympicchannel.akamaized.net/ocshls/OCTV_32.m3u8
-#EXTINF:-1 tvg-id="OmegaChannel.cy" tvg-logo="https://i.ibb.co/QrSzNn6/31087.png" group-title="General",Omega Channel (1080p)
-http://l1.cloudskep.com/tst/omcy/playlist.m3u8
 #EXTINF:-1 tvg-id="OMONOIATV.cy" tvg-logo="https://i.imgur.com/nLLDMgR.png" group-title="Sports",OMONOIA TV (684p)
 http://62.233.57.226:8001/play/a00b00
 #EXTINF:-1 tvg-id="On4TV.tr" tvg-logo="https://i.imgur.com/qGRa1KI.png" group-title="General",On4 TV (1080p)
@@ -1289,6 +1284,8 @@ https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f1ac2591
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/61373bb45168fe000773eecd/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&is_lat=1&platform=web&rdid=channel&tags=ROKU_CONTENT_TAGS
 #EXTINF:-1 tvg-id="PlutoTVCineEstelar.us@Spain" tvg-logo="https://i.imgur.com/v3BO4nW.png" group-title="Movies",Pluto TV Cine Estelar (720p)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/5f1ac1f1b66c76000790ef27/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&is_lat=1&platform=web&rdid=channel&tags=ROKU_CONTENT_TAGS
+#EXTINF:-1 tvg-id="PlutoTVCineEstelar.us@SpainPlus" tvg-logo="https://i.imgur.com/v3BO4nW.png" group-title="Movies",Pluto TV Cine Estelar Spain+
+http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f59f50cc36a94000749fd3f/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=b44aff04-778d-11eb-9fe3-3bf7f4412392&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=236222be-74f0-4d28-b58b-70f75ce8319a&userId=&serverSideAds=false
 #EXTINF:-1 tvg-id="PlutoTVCinemaItaliano.us@Italy" tvg-logo="https://i.imgur.com/w3lUi4t.png" group-title="Movies",Pluto TV Cinema Italiano Italy (720p)
 https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/608aa7d8359b270007861489/master.m3u8?advertisingId={PSID}&appVersion=unknown&deviceDNT={TARGETOPT}&deviceId={PSID}&deviceLat=0&deviceLon=0&deviceMake=samsung&deviceModel=samsung&deviceType=samsung-tvplus&deviceVersion=unknown&embedPartner=samsung-tvplus&profileFloor=&profileLimit=&samsung_app_domain={APP_DOMAIN}&samsung_app_name={APP_NAME}&us_privacy=1YNY
 #EXTINF:-1 tvg-id="PlutoTVCocina.us@Spain" tvg-logo="https://i.imgur.com/LRtfQla.png" group-title="Cooking",Pluto TV Cocina (720p)
@@ -1353,7 +1350,7 @@ https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/608030eff4b6f70007e16
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60016a60a8e3520008e0d331/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&is_lat=1&platform=web&rdid=channel&tags=ROKU_CONTENT_TAGS
 #EXTINF:-1 tvg-id="PlutoTVTelenovelas.us@Spain" tvg-logo="https://i.imgur.com/GrtNJki.png" group-title="Series",Pluto TV Telenovelas (720p)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/60b4c06717da110007ee1af6/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&serverSideAds=false&studio_id=viacom&tags=ROKU_CONTENT_TAGS
-#EXTINF:-1 tvg-id="PlutoTVThrillers.us@Spain" tvg-logo="https://i.imgur.com/ULKvDN7.png" group-title="Series",Pluto TV Thrillers Spain
+#EXTINF:-1 tvg-id="PlutoTVThrillers.us@Spain" tvg-logo="https://i.imgur.com/ULKvDN7.png" group-title="Movies",Pluto TV Thrillers Spain
 http://service-stitcher.clusters.pluto.tv/stitch/hls/channel/5f1ac8a87cd38d000745d7cf/master.m3u8?advertisingId=&appName=web&appVersion=unknown&appStoreUrl=&architecture=&buildVersion=&clientTime=0&deviceDNT=0&deviceId=b44a3bb2-778d-11eb-9fe3-3bf7f4412392&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&sid=bec2cd61-c8bf-4269-8475-9b5cdf24d1f0&userId=&serverSideAds=false
 #EXTINF:-1 tvg-id="PlutoTVToonsClasico.us@Spain" tvg-logo="https://i.imgur.com/gQcuJSE.png" group-title="Kids",Pluto TV Toons Clásico (720p)
 https://service-stitcher.clusters.pluto.tv/v1/stitch/embed/hls/channel/609e7e423e9173000706a681/master.m3u8?advertisingId=channel&appName=rokuchannel&appVersion=1.0&bmodel=bm1&channel_id=channel&content=channel&content_rating=ROKU_ADS_CONTENT_RATING&content_type=livefeed&coppa=false&deviceDNT=1&deviceId=channel&deviceMake=rokuChannel&deviceModel=web&deviceType=rokuChannel&deviceVersion=1.0&embedPartner=rokuChannel&genre=ROKU_ADS_CONTENT_GENRE&is_lat=1&platform=web&rdid=channel&studio_id=viacom&tags=ROKU_CONTENT_TAGS
@@ -1502,7 +1499,9 @@ http://188.60.179.180:8000/play/xxRaiMOviexx
 https://rainews1-live.akamaized.net/hls/live/598326/rainews1/rainews1/playlist.m3u8
 #EXTINF:-1 tvg-id="RaiPremium.it" tvg-logo="https://i.imgur.com/40g5Urz.png" group-title="Undefined",Rai Premium (1080p)
 http://188.60.179.180:8000/play/a0oy
-#EXTINF:-1 tvg-id="RaiScuola.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Rai_Scuola_-_Logo_2017.svg/512px-Rai_Scuola_-_Logo_2017.svg.png" group-title="Undefined",Rai Scuola (576p) [Geo-blocked]
+#EXTINF:-1 tvg-id="RaiScuola.it@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Rai_Scuola_-_Logo_2017.svg/512px-Rai_Scuola_-_Logo_2017.svg.png" group-title="Education",Rai Scuola
+https://cachehsi1a.netplus.ch/live/eds/raiscuola/browser-dash/raiscuola.mpd
+#EXTINF:-1 tvg-id="RaiScuola.it" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Rai_Scuola_-_Logo_2017.svg/512px-Rai_Scuola_-_Logo_2017.svg.png" group-title="Education",Rai Scuola (576p) [Geo-blocked]
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747011
 #EXTINF:-1 tvg-id="RaiSport.it" tvg-logo="https://i.imgur.com/6PEevOM.png" group-title="Sports" http-referrer="https://www.raisport.rai.it",Rai Sport
 #EXTVLCOPT:http-referrer=https://www.raisport.rai.it
@@ -1581,12 +1580,6 @@ https://99d8b4b6.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdX
 https://video03.logicahost.com.br/rfptv/rfptv/playlist.m3u8
 #EXTINF:-1 tvg-id="RiberaTV.es" tvg-logo="https://i.imgur.com/mPvSubP.png" group-title="General",Ribera TV (576p)
 https://common01.todostreaming.es/live/ribera-livestream.m3u8
-#EXTINF:-1 tvg-id="RIK1.cy" tvg-logo="https://i.imgur.com/31eq4lS.png" group-title="Undefined",RIK 1
-http://l6.cloudskep.com/tvb6/rik1-1/mpeg.2ts
-#EXTINF:-1 tvg-id="RIK2.cy" tvg-logo="https://i.imgur.com/EZUDmtI.png" group-title="Undefined",RIK 2
-http://l6.cloudskep.com/tvb6/rik2-1/mpeg.2ts
-#EXTINF:-1 tvg-id="RIKHD.cy" tvg-logo="https://i.imgur.com/xQnHaPy.png" group-title="Undefined",RIK HD (720p)
-http://l6.cloudskep.com/tvb6/rikhd1/mpeg.2ts
 #EXTINF:-1 tvg-id="TVR.es" tvg-logo="https://i.ibb.co/nRq3YfT/Logo-Rioja-Televisi-n-S-A.png" group-title="General",Rioja Televisión (360p) [Not 24/7]
 https://5924d3ad0efcf.streamlock.net/riojatv/riojatvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="RISETV.gr" tvg-logo="https://i.ibb.co/1ZbXtD1/480px-RISE-FINAL-LOGO-1.png" group-title="Entertainment",Rise TV (240p)
@@ -1866,7 +1859,7 @@ https://live.mariatvcdn.com/telebelluno/a3b80388da9801906adf885282e73bc3.sdp/mon
 https://tbilbo.dyndns.org/hls/stream.m3u8
 #EXTINF:-1 tvg-id="TeleChiara.it" tvg-logo="https://i.imgur.com/LpXeY4v.png" group-title="General",Telechiara (720p)
 http://fms.tvavicenza.it:1935/telechiara/diretta/playlist.m3u8
-#EXTINF:-1 tvg-id="Telecinco.es" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Telecinco.svg/512px-Telecinco.svg.png" group-title="Undefined",Telecinco (720p)
+#EXTINF:-1 tvg-id="Telecinco.es" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Telecinco.svg/512px-Telecinco.svg.png" group-title="General",Telecinco (720p)
 http://185.189.225.150:85/TeleCincoHD/index.m3u8
 #EXTINF:-1 tvg-id="TelecolorLombardia.it" tvg-logo="https://i.imgur.com/QfJqBno.png" group-title="Undefined",Telecolor Lombardia (1080p) [Not 24/7]
 https://1aadf145546f475282c5b4e658c0ac4b.msvdn.net/live/324149/hlbAWtl/playlist.m3u8
