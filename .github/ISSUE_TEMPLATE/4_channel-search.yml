@@ -5,6 +5,7 @@ labels: ['channel search']
 
 body:
   - type: input
+    id: stream_id
     attributes:
       label: Channel ID (required)
       description: Unique channel ID from [iptv-org.github.io](https://iptv-org.github.io/). If you can't find the channel you want in the list, please let us know through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=channels_add.yml&title=Add%3A+) before posting your request.
@@ -13,6 +14,15 @@ body:
       required: true
 
   - type: textarea
+    id: notes
     attributes:
       label: Notes
       description: 'Any additional information that may help find a link to the stream faster?'
+  
+  - type: checkboxes
+    attributes:
+      label: Contributing Guide
+      description: 'Please read this guide before posting your request'
+      options:
+        - label: I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)
+          required: true
