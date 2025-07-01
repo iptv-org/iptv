@@ -6,11 +6,10 @@ type ExecError = {
   stdout: string
 }
 
-let ENV_VAR =
-  'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/playlist_validate'
+let ENV_VAR = 'DATA_DIR=tests/__data__/input/data ROOT_DIR=tests/__data__/input/playlist_validate'
 if (os.platform() === 'win32') {
   ENV_VAR =
-    'SET "DATA_DIR=tests/__data__/input/data" && SET "STREAMS_DIR=tests/__data__/input/playlist_validate" &&'
+    'SET "DATA_DIR=tests/__data__/input/data" && SET "ROOT_DIR=tests/__data__/input/playlist_validate" &&'
 }
 
 describe('playlist:validate', () => {
@@ -41,5 +40,10 @@ describe('playlist:validate', () => {
         'wrong_id.m3u\n 2     warning  "qib22lAq1L.us" is not in the database\n\n1 problems (0 errors, 1 warnings)\n'
       )
     }
+  })
+
+  it('skip the file if it does not exist', () => {
+    const cmd = `${ENV_VAR} npm run playlist:validate -- missing.m3u`
+    execSync(cmd, { encoding: 'utf8' })
   })
 })
