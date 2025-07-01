@@ -14,8 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
       - uses: tibdex/github-app-token@v1.8.2
         if: ${{ !env.ACT }}
         id: create-app-token
@@ -25,7 +23,6 @@ jobs:
       - uses: actions/checkout@v4
         if: ${{ !env.ACT }}
         with:
-          fetch-depth: 2
           token: ${{ steps.create-app-token.outputs.token }}
       - uses: actions/setup-node@v4
         if: ${{ !env.ACT }}
@@ -47,9 +44,9 @@ jobs:
       - name: changed files
         id: files_after
         run: |
-          FILES=streams/*.m3u
+          git fetch origin master:master
           ANY_CHANGED=false
-          ALL_CHANGED_FILES=$(git diff --name-only "${FILES}" | tr '\n' ' ')
+          ALL_CHANGED_FILES=$(git diff --name-only master -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
             ANY_CHANGED=true
           fi
@@ -71,8 +68,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
       - uses: tibdex/github-app-token@v1.8.2
         if: ${{ !env.ACT }}
         id: create-app-token
@@ -82,14 +77,13 @@ jobs:
       - uses: actions/checkout@v4
         if: ${{ !env.ACT }}
         with:
-          fetch-depth: 2
           token: ${{ steps.create-app-token.outputs.token }}
       - name: changed files
         id: files
         run: |
-          FILES=streams/*.m3u
+          git fetch origin master:master
           ANY_CHANGED=false
-          ALL_CHANGED_FILES=$(git diff --name-only "${FILES}" | tr '\n' ' ')
+          ALL_CHANGED_FILES=$(git diff --name-only master -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
             ANY_CHANGED=true
           fi
@@ -122,9 +116,8 @@ jobs:
       - name: changed files
         id: files_after
         run: |
-          FILES=streams/*.m3u
           ANY_CHANGED=false
-          ALL_CHANGED_FILES=$(git diff --name-only "${FILES}" | tr '\n' ' ')
+          ALL_CHANGED_FILES=$(git diff --name-only origin/master HEAD streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
             ANY_CHANGED=true
           fi
