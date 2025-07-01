@@ -11,14 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
       - name: changed files
         id: files
         run: |
-          FILES=streams/*.m3u
+          git fetch origin master:master
           ANY_CHANGED=false
-          ALL_CHANGED_FILES=$(git diff --name-only "${FILES}" | tr '\n' ' ')
+          ALL_CHANGED_FILES=$(git diff --name-only master -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
             ANY_CHANGED=true
           fi
