@@ -1,0 +1,37 @@
+name: Generate index.m3u with Fancode
+
+on:
+  push:
+    branches:
+      - addinm3u   # Trigger on pushes to addinm3u branch
+  workflow_dispatch:       # Allow manual run from GitHub UI
+
+jobs:
+  build-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install pip (optional)
+        run: python -m pip install --upgrade pip
+
+      - name: Step 1 – Run ums.py to generate base index.m3u
+        run: python ums.py
+
+      - name: Step 2 – Run update_playlist.py to add Fancode links
+        run: python update_playlist.py
+
+      - name: Commit and push updated index.m3u (if changed)
+        run: |
+          git config --global user.email "omargoroo91@gmail.com"
+          git config --global user.name "ums91"
+          git add streams/index.m3u
+          git diff --cached --quiet || git commit -m "Update index.m3u with Fancode links"
+          git push
