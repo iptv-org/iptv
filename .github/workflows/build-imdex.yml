@@ -19,10 +19,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install pip & requests
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests PyGithub
 
       - name: Step 1 – Run ums.py to generate index.m3u
         run: python ums.py
