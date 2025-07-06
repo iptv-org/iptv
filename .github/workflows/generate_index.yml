@@ -34,7 +34,7 @@ jobs:
           echo "# Get list of all .m3u files in streams directory" >> ums.py
           echo "m3u_files = [f for f in os.listdir('streams') if f.endswith('.m3u')]" >> ums.py
           echo "" >> ums.py
-          echo "# Write to index.m3u file" >> generate_index.py
+          echo "# Write to index.m3u file" >> ums.py
           echo "with open(index_file_path, 'w') as index_file:" >> ums.py
           echo "    index_file.write('#EXTM3U\\n')" >> ums.py
           echo "    for m3u_file in m3u_files:" >> ums.py
