@@ -36,6 +36,8 @@ jobs:
 
       - name: 🪄 Step 2 – Replace S1/S2 block with fresh Fancode links + playlist.m3u
         run: python update_playlist.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: ✅ Commit & push updated index.m3u (if changed)
         run: |
