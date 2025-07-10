@@ -1,10 +1,10 @@
 name: Generate index.m3u with Fancode
 
 on:
+  workflow_dispatch:  # Allow manual run anytime
   push:
     branches:
-      - addinm3u
-  workflow_dispatch:
+      - addinm3u       # Also run on pushes to addinm3u
 
 jobs:
   build-index:
@@ -45,4 +45,5 @@ jobs:
           git config --global user.name "ums91"
           git add streams/index.m3u
           git diff --cached --quiet || git commit -m "Update index.m3u with Fancode links"
+          git pull --rebase origin addinm3u
           git push
