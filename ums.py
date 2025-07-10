@@ -32,21 +32,32 @@ sonyliv_content = fetch_m3u("SonyLiv", sonyliv_url)
 with open(index_file_path, "w", encoding="utf-8") as index_file:
     print(f"📝 Writing to {index_file_path}")
 
-    # ✅ Step 1: Fancode on top
+    # Step 1: Fancode on top
     index_file.write(f"#EXTM3U\n\n")
     index_file.write("#EXTINF:-1, Fancode Playlist\n")
     index_file.write(fancode_content + "\n\n")
 
-    # ✅ Step 2: SonyLiv next
+    # Step 2: SonyLiv next
     index_file.write("#EXTINF:-1, SonyLiv Playlist\n")
     index_file.write(sonyliv_content + "\n\n")
 
-    # ✅ Step 3: S1/S2 marker block for live Fancode updates
+    # Step 2.5: Insert playlist.m3u content from repo root here
+    playlist_path = "playlist.m3u"
+    try:
+        print(f"📂 Adding: {playlist_path}")
+        with open(playlist_path, "r", encoding="utf-8") as f:
+            playlist_content = f.read().strip()
+        index_file.write("#EXTINF:-1, Playlist Root File\n")
+        index_file.write(playlist_content + "\n\n")
+    except Exception as e:
+        print(f"⚠️ Error reading {playlist_path}: {e}")
+
+    # Step 3: S1/S2 marker block for live Fancode updates
     index_file.write("#S1\n")
     index_file.write("#EXTINF:-1, Fancode Placeholder for update\nhttp://placeholder.fancode/stream.m3u8\n")
     index_file.write("#S2\n\n")
 
-    # ✅ Step 4: Local .m3u files
+    # Step 4: Local .m3u files inside streams/
     for m3u_file in m3u_files:
         title = m3u_file.split('.')[0].capitalize()
         file_path = os.path.join("streams", m3u_file)
@@ -59,4 +70,4 @@ with open(index_file_path, "w", encoding="utf-8") as index_file:
         except Exception as e:
             print(f"⚠️ Error reading {m3u_file}: {e}")
 
-print("🎉 index.m3u created with Fancode, SonyLiv, #S1/#S2, and local playlists.")
+print("🎉 index.m3u created with Fancode, SonyLiv, playlist.m3u, #S1/#S2, and local playlists.")
