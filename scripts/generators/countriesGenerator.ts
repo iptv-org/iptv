@@ -17,7 +17,7 @@ export class CountriesGenerator implements Generator {
   logFile: File
 
   constructor({ streams, countries, logFile }: CountriesGeneratorProps) {
-    this.streams = streams
+    this.streams = streams.clone()
     this.countries = countries
     this.storage = new Storage(PUBLIC_DIR)
     this.logFile = logFile
