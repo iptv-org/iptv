@@ -27,7 +27,14 @@ jobs:
       - name: 🧱 Step 1 – Generate index.m3u (with S1/S2 markers)
         run: python ums.py
 
-      - name: 🪄 Step 2 – Replace S1/S2 block with fresh Fancode links
+      - name: 🔍 Check for playlist.m3u
+        run: |
+          if [ ! -f "playlist.m3u" ]; then
+            echo "❌ playlist.m3u not found! Make sure it exists in the repository."
+            exit 1
+          fi
+
+      - name: 🪄 Step 2 – Replace S1/S2 block with fresh Fancode links + playlist.m3u
         run: python update_playlist.py
 
       - name: ✅ Commit & push updated index.m3u (if changed)
