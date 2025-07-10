@@ -19,14 +19,25 @@ if fancode_response.status_code == 200 and index_response.status_code == 200:
     fancode_links = fancode_response.text.strip()
     index_links = index_response.text.strip()
 
+    # Read local playlist.m3u content
+    try:
+        with open('playlist.m3u', 'r', encoding='utf-8') as f:
+            local_playlist_links = f.read().strip()
+    except Exception as e:
+        print(f"Error reading local playlist.m3u file: {e}")
+        exit()
+
+    # Combine fancode links and local playlist links
+    combined_links = fancode_links + '\n' + local_playlist_links
+
     # Split the index.m3u content based on markers #S1 and #S2
     if "#S1" in index_links and "#S2" in index_links:
         before_s1, rest = index_links.split("#S1", 1)
         between_s1_s2, after_s2 = rest.split("#S2", 1)
 
-        # Replace content between #S1 and #S2 with new Fancode links
+        # Replace content between #S1 and #S2 with combined links
         updated_playlist = (
-            before_s1.strip() + "\n#S1\n" + fancode_links + "\n#S2\n" + after_s2.strip()
+            before_s1.strip() + "\n#S1\n" + combined_links + "\n#S2\n" + after_s2.strip()
         )
     else:
         # If markers are not found, raise an error
@@ -47,7 +58,7 @@ if fancode_response.status_code == 200 and index_response.status_code == 200:
 
     # Update the file with new contents
     try:
-        commit_message = "Update Fancode Live m3u links between #S1 and #S2"
+        commit_message = "Update Fancode Live m3u links and add custom playlist links between #S1 and #S2"
         repo.update_file(file.path, commit_message, updated_playlist, file.sha, branch="addinm3u")
         print("Playlist updated successfully.")
     except Exception as e:
