@@ -21,6 +21,7 @@ async function main() {
   const {
     channelsKeyById,
     feedsGroupedByChannelId,
+    logosGroupedByStreamId,
     blocklistRecordsGroupedByChannelId
   }: DataProcessorData = processor.process(data)
 
@@ -29,7 +30,8 @@ async function main() {
   const parser = new PlaylistParser({
     storage: streamsStorage,
     channelsKeyById,
-    feedsGroupedByChannelId
+    feedsGroupedByChannelId,
+    logosGroupedByStreamId
   })
   const files = await streamsStorage.list('**/*.m3u')
   const streams = await parser.parse(files)
@@ -151,7 +153,7 @@ async function main() {
     else if (!feedId && streamsGroupedByChannelId.has(channelId)) result.status = 'fulfilled'
     else {
       const channelData = channelsKeyById.get(channelId)
-      if (channelData.length && channelData[0].closed) result.status = 'closed'
+      if (channelData && channelData.isClosed) result.status = 'closed'
     }
 
     channelSearchRequestsBuffer.set(streamId, true)

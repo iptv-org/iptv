@@ -17,7 +17,7 @@ export class IndexRegionGenerator implements Generator {
   logFile: File
 
   constructor({ streams, regions, logFile }: IndexRegionGeneratorProps) {
-    this.streams = streams
+    this.streams = streams.clone()
     this.regions = regions
     this.storage = new Storage(PUBLIC_DIR)
     this.logFile = logFile
