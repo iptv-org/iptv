@@ -24,8 +24,10 @@ export class IssueData {
     return this._data.get(key) === deleteSymbol ? '' : this._data.get(key)
   }
 
-  getArray(key: string): string[] {
+  getArray(key: string): string[] | undefined {
     const deleteSymbol = '~'
+
+    if (this._data.missing(key)) return undefined
 
     return this._data.get(key) === deleteSymbol ? [] : this._data.get(key).split('\r\n')
   }

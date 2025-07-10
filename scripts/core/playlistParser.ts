@@ -5,17 +5,25 @@ import { Stream } from '../models'
 type PlaylistPareserProps = {
   storage: Storage
   feedsGroupedByChannelId: Dictionary
+  logosGroupedByStreamId: Dictionary
   channelsKeyById: Dictionary
 }
 
 export class PlaylistParser {
   storage: Storage
   feedsGroupedByChannelId: Dictionary
+  logosGroupedByStreamId: Dictionary
   channelsKeyById: Dictionary
 
-  constructor({ storage, feedsGroupedByChannelId, channelsKeyById }: PlaylistPareserProps) {
+  constructor({
+    storage,
+    feedsGroupedByChannelId,
+    logosGroupedByStreamId,
+    channelsKeyById
+  }: PlaylistPareserProps) {
     this.storage = storage
     this.feedsGroupedByChannelId = feedsGroupedByChannelId
+    this.logosGroupedByStreamId = logosGroupedByStreamId
     this.channelsKeyById = channelsKeyById
   }
 
@@ -41,6 +49,7 @@ export class PlaylistParser {
         .fromPlaylistItem(data)
         .withFeed(this.feedsGroupedByChannelId)
         .withChannel(this.channelsKeyById)
+        .withLogos(this.logosGroupedByStreamId)
         .setFilepath(filepath)
 
       return stream
