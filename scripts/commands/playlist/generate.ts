@@ -15,7 +15,8 @@ import {
   LanguagesGenerator,
   RegionsGenerator,
   IndexGenerator,
-  SourcesGenerator
+  SourcesGenerator,
+  RawGenerator
 } from '../../generators'
 
 async function main() {
@@ -48,6 +49,9 @@ async function main() {
   let streams = await parser.parse(files)
   const totalStreams = streams.count()
   logger.info(`found ${totalStreams} streams`)
+
+  logger.info('generating raw/...')
+  await new RawGenerator({ streams, logFile }).generate()
 
   logger.info('filtering streams...')
   streams = streams.uniqBy((stream: Stream) =>
