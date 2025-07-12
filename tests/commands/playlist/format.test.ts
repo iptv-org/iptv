@@ -4,9 +4,10 @@ import * as fs from 'fs-extra'
 import { glob } from 'glob'
 import os from 'os'
 
-let ENV_VAR = 'STREAMS_DIR=tests/__data__/output/streams'
+let ENV_VAR = 'STREAMS_DIR=tests/__data__/output/streams DATA_DIR=tests/__data__/input/data'
 if (os.platform() === 'win32') {
-  ENV_VAR = 'SET "STREAMS_DIR=tests/__data__/output/streams" &&'
+  ENV_VAR =
+    'SET "STREAMS_DIR=tests/__data__/output/streams" && SET "DATA_DIR=tests/__data__/input/data" &&'
 }
 
 beforeEach(() => {

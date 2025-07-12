@@ -15,7 +15,7 @@ export class IndexGenerator implements Generator {
   logFile: File
 
   constructor({ streams, logFile }: IndexGeneratorProps) {
-    this.streams = streams
+    this.streams = streams.clone()
     this.storage = new Storage(PUBLIC_DIR)
     this.logFile = logFile
   }
@@ -24,6 +24,12 @@ export class IndexGenerator implements Generator {
     const sfwStreams = this.streams
       .orderBy(stream => stream.getTitle())
       .filter((stream: Stream) => stream.isSFW())
+      .map((stream: Stream) => {
+        const groupTitle = stream.getCategoryNames().join(';')
+        if (groupTitle) stream.groupTitle = groupTitle
+
+        return stream
+      })
 
     const playlist = new Playlist(sfwStreams, { public: true })
     const filepath = 'index.m3u'

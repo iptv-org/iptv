@@ -1515,7 +1515,7 @@ module.exports = [
     closed_at: null,
     author_association: 'NONE',
     active_lock_reason: null,
-    body: '### Stream ID\r\n\r\nBeanoTV.uk\r\n\r\n### Stream URL (optional)\r\n\r\nhttps://a5b4bacecd47433dad06d3189fc7422e.mediatailor.us-east-1.amazonaws.com/v1/manifest/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BeanoTV/b1f233d5-847c-437d-aa4f-f73e67a85323/2.m3u8\r\n\r\n### Notes (optional)\r\n\r\n_No response_\r\n\r\n### Please confirm the following\r\n\r\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#request-a-channel)',
+    body: '### Stream ID\r\n\r\nBeanoTV.uk\r\n\r\n### Stream URL (optional)\r\n\r\nhttps://a5b4bacecd47433dad06d3189fc7422e.mediatailor.us-east-1.amazonaws.com/v1/manifest/04fd913bb278d8775298c26fdca9d9841f37601f/RakutenTV-eu_BeanoTV/b1f233d5-847c-437d-aa4f-f73e67a85323/2.m3u8|Referer="https://referer.xyz/"|User-Agent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"|Origin="https://origin.xyz"\r\n\r\n### Directives (optional)\r\n\r\n#EXTVLCOPT:http-referrer=http://imn.iq\r\n\r\n#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\r\n\r\n#KODIPROP:inputstream=inputstream.adaptive\r\n\r\n#KODIPROP:inputstream.adaptive.manifest_type=mpd\r\n\r\n#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha\r\n\r\n#KODIPROP:inputstream.adaptive.license_key=https://drm.ors.at/acquire-license/widevine?BrandGuid=13f2e056-53fe-4469-ba6d-999970dbe549&userToken=v9ZVSksv4S7rT55o10dmYNRa4asye3z05eWCFxD%2FFYIlTJEpuf6tF8asPcyQOFq0h5opS%2B6WoMxnshWkihpHq5qrdrBEZ69piE94J9Feh385snGOqK3PYO7tLLjxmsCAe%2B9%2BNnurSSO5RCAIRsL125nSj1eOR%2F1GSKOgGH80HK2FDLiePxPkeaAxuWzacNBB%2FqnIGGxfe3GlmN65cU9F8WEpKFDlaxW%2Fv3ZSLAp3%2BZEq1aZXJ6Oz%2Fi0diD0EybH7|Content-Type=application/octet-stream|R{SSM}|\r\n\r\n### Notes (optional)\r\n\r\n_No response_\r\n\r\n### Please confirm the following\r\n\r\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#request-a-channel)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/13751/reactions',
       total_count: 0,
@@ -1664,7 +1664,7 @@ module.exports = [
       {
         id: 5923508587,
         node_id: 'LA_kwDOCWUK8M8AAAABYRGRaw',
-        url: 'https://api.github.com/repos/iptv-org/iptv/labels/streams:add',
+        url: 'https://api.github.com/repos/iptv-org/iptv/labels/streams:edit',
         name: 'streams:edit',
         color: '017ff9',
         default: false,
@@ -1743,7 +1743,7 @@ module.exports = [
       {
         id: 5923508587,
         node_id: 'LA_kwDOCWUK8M8AAAABYRGRaw',
-        url: 'https://api.github.com/repos/iptv-org/iptv/labels/streams:add',
+        url: 'https://api.github.com/repos/iptv-org/iptv/labels/streams:edit',
         name: 'streams:edit',
         color: '017ff9',
         default: false,
@@ -1761,7 +1761,7 @@ module.exports = [
     closed_at: null,
     author_association: 'COLLABORATOR',
     active_lock_reason: null,
-    body: '### Stream URL (required)\n\nhttps://servilive.com:3126/live/tele2000live.m3u8\n\n### New Stream URL\n\nhttps://xui-backend.energeek.cl/live/9/playlist.m3u8?username=ZZDemoIPTVGH&password=mdo96EuqMkTR\n\n### Stream ID\n\nBBCAmerica.us@East\n\n### Quality\n\n720p\n\n### Label\n\n~\n\n### HTTP User-Agent\n\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246\n\n### HTTP Referrer\n\n~\n\n### Notes\n\n_No response_\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    body: '### Stream URL (required)\n\nhttps://servilive.com:3126/live/tele2000live.m3u8\n\n### New Stream URL\n\nhttps://xui-backend.energeek.cl/live/9/playlist.m3u8?username=ZZDemoIPTVGH&password=mdo96EuqMkTR|Referer="https://referer.xyz/"|User-Agent="Mozilla/5.0 (iPhone; CPU iPhone OS 17_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1"|Origin="https://origin.xyz"\n\n### Stream ID\n\nBBCAmerica.us@East\n\n### Quality\n\n720p\n\n### Label\n\n~\n\n### HTTP User-Agent\n\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246\n\n### HTTP Referrer\n\n~\n\n### Directives (optional)\r\n\r\n#EXTVLCOPT:http-referrer=http://imn.iq\r\n\r\n#EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148\r\n\r\n#KODIPROP:inputstream=inputstream.adaptive\r\n\r\n#KODIPROP:inputstream.adaptive.manifest_type=mpd\r\n\r\n#KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha\r\n\r\n#KODIPROP:inputstream.adaptive.license_key=https://drm.ors.at/acquire-license/widevine?BrandGuid=13f2e056-53fe-4469-ba6d-999970dbe549&userToken=v9ZVSksv4S7rT55o10dmYNRa4asye3z05eWCFxD%2FFYIlTJEpuf6tF8asPcyQOFq0h5opS%2B6WoMxnshWkihpHq5qrdrBEZ69piE94J9Feh385snGOqK3PYO7tLLjxmsCAe%2B9%2BNnurSSO5RCAIRsL125nSj1eOR%2F1GSKOgGH80HK2FDLiePxPkeaAxuWzacNBB%2FqnIGGxfe3GlmN65cU9F8WEpKFDlaxW%2Fv3ZSLAp3%2BZEq1aZXJ6Oz%2Fi0diD0EybH7|Content-Type=application/octet-stream|R{SSM}|\n\n### Notes\n\n_No response_\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/14110/reactions',
       total_count: 0,
@@ -1822,7 +1822,7 @@ module.exports = [
       {
         id: 5923508587,
         node_id: 'LA_kwDOCWUK8M8AAAABYRGRaw',
-        url: 'https://api.github.com/repos/iptv-org/iptv/labels/streams:add',
+        url: 'https://api.github.com/repos/iptv-org/iptv/labels/streams:edit',
         name: 'streams:edit',
         color: '017ff9',
         default: false,

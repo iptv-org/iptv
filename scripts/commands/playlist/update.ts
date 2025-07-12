@@ -20,13 +20,15 @@ async function main() {
   const dataStorage = new Storage(DATA_DIR)
   const dataLoader = new DataLoader({ storage: dataStorage })
   const data: DataLoaderData = await dataLoader.load()
-  const { channelsKeyById, feedsGroupedByChannelId }: DataProcessorData = processor.process(data)
+  const { channelsKeyById, feedsGroupedByChannelId, logosGroupedByStreamId }: DataProcessorData =
+    processor.process(data)
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
     storage: streamsStorage,
     feedsGroupedByChannelId,
+    logosGroupedByStreamId,
     channelsKeyById
   })
   const files = await streamsStorage.list('**/*.m3u')
@@ -168,6 +170,7 @@ async function addStreams({
     const quality = data.getString('quality') || null
     const httpUserAgent = data.getString('httpUserAgent') || null
     const httpReferrer = data.getString('httpReferrer') || null
+    const directives = data.getArray('directives') || []
 
     const stream = new Stream({
       channel: channelId,
@@ -176,6 +179,7 @@ async function addStreams({
       url: streamUrl,
       user_agent: httpUserAgent,
       referrer: httpReferrer,
+      directives,
       quality,
       label
     })

@@ -17,7 +17,7 @@ export class CategoriesGenerator implements Generator {
   logFile: File
 
   constructor({ streams, categories, logFile }: CategoriesGeneratorProps) {
-    this.streams = streams
+    this.streams = streams.clone()
     this.categories = categories
     this.storage = new Storage(PUBLIC_DIR)
     this.logFile = logFile
@@ -30,7 +30,8 @@ export class CategoriesGenerator implements Generator {
       const categoryStreams = streams
         .filter((stream: Stream) => stream.hasCategory(category))
         .map((stream: Stream) => {
-          stream.groupTitle = stream.getCategoryNames().join(';')
+          const groupTitle = stream.getCategoryNames().join(';')
+          if (groupTitle) stream.groupTitle = groupTitle
 
           return stream
         })

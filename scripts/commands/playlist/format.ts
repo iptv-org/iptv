@@ -16,14 +16,16 @@ async function main() {
   const dataStorage = new Storage(DATA_DIR)
   const loader = new DataLoader({ storage: dataStorage })
   const data: DataLoaderData = await loader.load()
-  const { channelsKeyById, feedsGroupedByChannelId }: DataProcessorData = processor.process(data)
+  const { channelsKeyById, feedsGroupedByChannelId, logosGroupedByStreamId }: DataProcessorData =
+    processor.process(data)
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
     storage: streamsStorage,
     channelsKeyById,
-    feedsGroupedByChannelId
+    feedsGroupedByChannelId,
+    logosGroupedByStreamId
   })
   const files = program.args.length ? program.args : await streamsStorage.list('**/*.m3u')
   let streams = await parser.parse(files)

@@ -26,6 +26,7 @@ async function main() {
   const {
     channelsKeyById,
     feedsGroupedByChannelId,
+    logosGroupedByStreamId,
     blocklistRecordsGroupedByChannelId
   }: DataProcessorData = processor.process(data)
 
@@ -34,7 +35,8 @@ async function main() {
   const parser = new PlaylistParser({
     storage: rootStorage,
     channelsKeyById,
-    feedsGroupedByChannelId
+    feedsGroupedByChannelId,
+    logosGroupedByStreamId
   })
   const files = program.args.length ? program.args : await rootStorage.list('streams/**/*.m3u')
   const streams = await parser.parse(files)

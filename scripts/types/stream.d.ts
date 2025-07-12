@@ -7,4 +7,5 @@ export type StreamData = {
   user_agent: string | null
   quality: string | null
   label: string | null
+  directives: string[]
 }

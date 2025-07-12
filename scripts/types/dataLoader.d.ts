@@ -13,6 +13,7 @@ export type DataLoaderData = {
   blocklist: object | object[]
   channels: object | object[]
   feeds: object | object[]
+  logos: object | object[]
   timezones: object | object[]
   guides: object | object[]
   streams: object | object[]

@@ -16,7 +16,8 @@ const FIELDS = new Dictionary({
   'HTTP Referrer': 'httpReferrer',
   'What happened to the stream?': 'reason',
   Reason: 'reason',
-  Notes: 'notes'
+  Notes: 'notes',
+  Directives: 'directives'
 })
 
 export class IssueParser {

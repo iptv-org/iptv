@@ -15,7 +15,7 @@ export class IndexCategoryGenerator implements Generator {
   logFile: File
 
   constructor({ streams, logFile }: IndexCategoryGeneratorProps) {
-    this.streams = streams
+    this.streams = streams.clone()
     this.storage = new Storage(PUBLIC_DIR)
     this.logFile = logFile
   }

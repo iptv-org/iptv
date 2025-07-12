@@ -6,9 +6,9 @@ type ExecError = {
   stdout: string
 }
 
-let ENV_VAR = 'ROOT_DIR=tests/__data__/input'
+let ENV_VAR = 'ROOT_DIR=tests/__data__/input DATA_DIR=tests/__data__/input/data'
 if (os.platform() === 'win32') {
-  ENV_VAR = 'SET "ROOT_DIR=tests/__data__/input" &&'
+  ENV_VAR = 'SET "ROOT_DIR=tests/__data__/input" && SET "DATA_DIR=tests/__data__/input/data" &&'
 }
 
 describe('playlist:test', () => {

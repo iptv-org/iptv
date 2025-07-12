@@ -1,8 +1,9 @@
-import { Feed, Channel, Category, Region, Subdivision, Country, Language } from './index'
+import { Feed, Channel, Category, Region, Subdivision, Country, Language, Logo } from './index'
 import { URL, Collection, Dictionary } from '@freearhey/core'
 import type { StreamData } from '../types/stream'
 import parser from 'iptv-playlist-parser'
 import { IssueData } from '../core'
+import path from 'node:path'
 
 export class Stream {
   name?: string
@@ -12,6 +13,7 @@ export class Stream {
   channel?: Channel
   feedId?: string
   feed?: Feed
+  logos: Collection = new Collection()
   filepath?: string
   line?: number
   label?: string
@@ -21,6 +23,7 @@ export class Stream {
   userAgent?: string
   groupTitle: string = 'Undefined'
   removed: boolean = false
+  directives: Collection = new Collection()
 
   constructor(data?: StreamData) {
     if (!data) return
@@ -38,6 +41,7 @@ export class Stream {
     this.verticalResolution = verticalResolution || undefined
     this.isInterlaced = isInterlaced || undefined
     this.label = data.label || undefined
+    this.directives = new Collection(data.directives)
   }
 
   update(issueData: IssueData): this {
@@ -46,7 +50,8 @@ export class Stream {
       quality: issueData.getString('quality'),
       httpUserAgent: issueData.getString('httpUserAgent'),
       httpReferrer: issueData.getString('httpReferrer'),
-      newStreamUrl: issueData.getString('newStreamUrl')
+      newStreamUrl: issueData.getString('newStreamUrl'),
+      directives: issueData.getArray('directives')
     }
 
     if (data.label !== undefined) this.label = data.label
@@ -54,11 +59,43 @@ export class Stream {
     if (data.httpUserAgent !== undefined) this.userAgent = data.httpUserAgent
     if (data.httpReferrer !== undefined) this.referrer = data.httpReferrer
     if (data.newStreamUrl !== undefined) this.url = data.newStreamUrl
+    if (data.directives !== undefined) this.directives = new Collection(data.directives)
 
     return this
   }
 
   fromPlaylistItem(data: parser.PlaylistItem): this {
+    function parseTitle(title: string): {
+      name: string
+      label: string
+      quality: string
+    } {
+      const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
+      title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
+      const [, quality] = title.match(/ \(([0-9]+p)\)$/) || [null, '']
+      title = title.replace(new RegExp(` \\(${quality}\\)$`), '')
+
+      return { name: title, label, quality }
+    }
+
+    function parseDirectives(string: string) {
+      let directives = new Collection()
+
+      if (!string) return directives
+
+      const supportedDirectives = ['#EXTVLCOPT', '#KODIPROP']
+      const lines = string.split('\r\n')
+      const regex = new RegExp(`^${supportedDirectives.join('|')}`, 'i')
+
+      lines.forEach((line: string) => {
+        if (regex.test(line)) {
+          directives.add(line.trim())
+        }
+      })
+
+      return directives
+    }
+
     if (!data.name) throw new Error('"name" property is required')
     if (!data.url) throw new Error('"url" property is required')
 
@@ -77,6 +114,7 @@ export class Stream {
     this.url = data.url
     this.referrer = data.http.referrer || undefined
     this.userAgent = data.http['user-agent'] || undefined
+    this.directives = parseDirectives(data.raw)
 
     return this
   }
@@ -95,6 +133,12 @@ export class Stream {
     const channelFeeds = feedsGroupedByChannelId.get(this.channelId) || []
     if (this.feedId) this.feed = channelFeeds.find((feed: Feed) => feed.id === this.feedId)
     if (!this.feedId && !this.feed) this.feed = channelFeeds.find((feed: Feed) => feed.isMain)
+
+    return this
+  }
+
+  withLogos(logosGroupedByStreamId: Dictionary): this {
+    if (this.id) this.logos = new Collection(logosGroupedByStreamId.get(this.id))
 
     return this
   }
@@ -128,6 +172,12 @@ export class Stream {
 
   getLine(): number {
     return this.line || -1
+  }
+
+  getFilename(): string {
+    if (!this.filepath) return ''
+
+    return path.basename(this.filepath)
   }
 
   setFilepath(filepath: string): this {
@@ -294,8 +344,35 @@ export class Stream {
     return this.feed ? this.feed.isInternational() : false
   }
 
-  getLogo(): string {
-    return this?.channel?.logo || ''
+  getLogos(): Collection {
+    function format(logo: Logo): number {
+      const levelByFormat = { SVG: 0, PNG: 3, APNG: 1, WebP: 1, AVIF: 1, JPEG: 2, GIF: 1 }
+
+      return logo.format ? levelByFormat[logo.format] : 0
+    }
+
+    function size(logo: Logo): number {
+      return Math.abs(512 - logo.width) + Math.abs(512 - logo.height)
+    }
+
+    return this.logos.orderBy([format, size], ['desc', 'asc'], false)
+  }
+
+  getLogo(): Logo | undefined {
+    return this.getLogos().first()
+  }
+
+  hasLogo(): boolean {
+    return this.getLogos().notEmpty()
+  }
+
+  getLogoUrl(): string {
+    let logo: Logo | undefined
+
+    if (this.hasLogo()) logo = this.getLogo()
+    else logo = this?.channel?.getLogo()
+
+    return logo ? logo.url : ''
   }
 
   getName(): string {
@@ -339,7 +416,7 @@ export class Stream {
     let output = `#EXTINF:-1 tvg-id="${this.getId()}"`
 
     if (options.public) {
-      output += ` tvg-logo="${this.getLogo()}" group-title="${this.groupTitle}"`
+      output += ` tvg-logo="${this.getLogoUrl()}" group-title="${this.groupTitle}"`
     }
 
     if (this.referrer) {
@@ -352,31 +429,14 @@ export class Stream {
 
     output += `,${this.getTitle()}`
 
-    if (this.referrer) {
-      output += `\r\n#EXTVLCOPT:http-referrer=${this.referrer}`
-    }
-
-    if (this.userAgent) {
-      output += `\r\n#EXTVLCOPT:http-user-agent=${this.userAgent}`
-    }
+    this.directives.forEach((prop: string) => {
+      output += `\r\n${prop}`
+    })
 
     output += `\r\n${this.url}`
 
     return output
   }
-}
-
-function parseTitle(title: string): {
-  name: string
-  label: string
-  quality: string
-} {
-  const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
-  title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
-  const [, quality] = title.match(/ \(([0-9]+p)\)$/) || [null, '']
-  title = title.replace(new RegExp(` \\(${quality}\\)$`), '')
-
-  return { name: title, label, quality }
 }
 
 function escapeRegExp(text) {

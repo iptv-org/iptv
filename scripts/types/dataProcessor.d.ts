@@ -5,6 +5,7 @@ export type DataProcessorData = {
   subdivisionsGroupedByCountryCode: Dictionary
   feedsGroupedByChannelId: Dictionary
   guidesGroupedByStreamId: Dictionary
+  logosGroupedByStreamId: Dictionary
   subdivisionsKeyByCode: Dictionary
   countriesKeyByCode: Dictionary
   languagesKeyByCode: Dictionary
