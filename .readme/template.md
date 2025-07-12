@@ -129,7 +129,7 @@ https://iptv-org.github.io/iptv/sources/<FILENAME>.m3u
 Also, any of our internal playlists are available in raw form (without any filtering or sorting) at this link:
 
 ```
-https://raw.githubusercontent.com/iptv-org/iptv/refs/heads/master/streams/<FILENAME>.m3u
+https://iptv-org.github.io/iptv/raw/<FILENAME>.m3u
 ```
 
 ## EPG
