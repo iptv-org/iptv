@@ -131,6 +131,12 @@ https://iptv-org.github.io/iptv/sources/<FILENAME>.m3u
 
 </details>
 
+Also, any of our internal playlists are available in raw form (without any filtering or sorting) at this link:
+
+```
+https://iptv-org.github.io/iptv/raw/<FILENAME>.m3u
+```
+
 ## Database
 
 All channel data is taken from the [iptv-org/database](https://github.com/iptv-org/database) repository. If you find any errors please open a new [issue](https://github.com/iptv-org/database/issues) there.
