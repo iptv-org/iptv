@@ -1,5 +1,5 @@
 import { Collection, Dictionary } from '@freearhey/core'
-import { Category, Country, Feed, Guide, Stream, Subdivision } from './index'
+import { Category, Country, Feed, Guide, Logo, Stream, Subdivision } from './index'
 import type { ChannelData, ChannelSearchableData, ChannelSerializedData } from '../types/channel'
 
 export class Channel {
@@ -19,9 +19,10 @@ export class Channel {
   launched?: string
   closed?: string
   replacedBy?: string
+  isClosed: boolean
   website?: string
-  logo: string
   feeds?: Collection
+  logos: Collection = new Collection()
 
   constructor(data?: ChannelData) {
     if (!data) return
@@ -40,7 +41,7 @@ export class Channel {
     this.closed = data.closed || undefined
     this.replacedBy = data.replaced_by || undefined
     this.website = data.website || undefined
-    this.logo = data.logo
+    this.isClosed = !!data.closed || !!data.replaced_by
   }
 
   withSubdivision(subdivisionsKeyByCode: Dictionary): this {
@@ -67,6 +68,12 @@ export class Channel {
 
   withFeeds(feedsGroupedByChannelId: Dictionary): this {
     this.feeds = new Collection(feedsGroupedByChannelId.get(this.id))
+
+    return this
+  }
+
+  withLogos(logosGroupedByChannelId: Dictionary): this {
+    if (this.id) this.logos = new Collection(logosGroupedByChannelId.get(this.id))
 
     return this
   }
@@ -142,6 +149,35 @@ export class Channel {
     return this.isNSFW === false
   }
 
+  getLogos(): Collection {
+    function feed(logo: Logo): number {
+      if (!logo.feed) return 1
+      if (logo.feed.isMain) return 1
+
+      return 0
+    }
+
+    function format(logo: Logo): number {
+      const levelByFormat = { SVG: 0, PNG: 3, APNG: 1, WebP: 1, AVIF: 1, JPEG: 2, GIF: 1 }
+
+      return logo.format ? levelByFormat[logo.format] : 0
+    }
+
+    function size(logo: Logo): number {
+      return Math.abs(512 - logo.width) + Math.abs(512 - logo.height)
+    }
+
+    return this.logos.orderBy([feed, format, size], ['desc', 'desc', 'asc'], false)
+  }
+
+  getLogo(): Logo | undefined {
+    return this.getLogos().first()
+  }
+
+  hasLogo(): boolean {
+    return this.getLogos().notEmpty()
+  }
+
   getSearchable(): ChannelSearchableData {
     return {
       id: this.id,
@@ -171,8 +207,7 @@ export class Channel {
       launched: this.launched,
       closed: this.closed,
       replacedBy: this.replacedBy,
-      website: this.website,
-      logo: this.logo
+      website: this.website
     }
   }
 
@@ -192,7 +227,6 @@ export class Channel {
     this.closed = data.closed
     this.replacedBy = data.replacedBy
     this.website = data.website
-    this.logo = data.logo
 
     return this
   }

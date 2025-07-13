@@ -14,7 +14,9 @@ import {
   CountriesGenerator,
   LanguagesGenerator,
   RegionsGenerator,
-  IndexGenerator
+  IndexGenerator,
+  SourcesGenerator,
+  RawGenerator
 } from '../../generators'
 
 async function main() {
@@ -28,6 +30,7 @@ async function main() {
   const data: DataLoaderData = await loader.load()
   const {
     feedsGroupedByChannelId,
+    logosGroupedByStreamId,
     channelsKeyById,
     categories,
     countries,
@@ -39,15 +42,21 @@ async function main() {
   const parser = new PlaylistParser({
     storage: streamsStorage,
     feedsGroupedByChannelId,
+    logosGroupedByStreamId,
     channelsKeyById
   })
   const files = await streamsStorage.list('**/*.m3u')
   let streams = await parser.parse(files)
   const totalStreams = streams.count()
+  logger.info(`found ${totalStreams} streams`)
+
+  logger.info('generating raw/...')
+  await new RawGenerator({ streams, logFile }).generate()
+
+  logger.info('filtering streams...')
   streams = streams.uniqBy((stream: Stream) =>
     stream.hasId() ? stream.getChannelId() + stream.getFeedId() : uniqueId()
   )
-  logger.info(`found ${totalStreams} streams (including ${streams.count()} unique)`)
 
   logger.info('sorting streams...')
   streams = streams.orderBy(
@@ -78,6 +87,9 @@ async function main() {
     regions,
     logFile
   }).generate()
+
+  logger.info('generating sources/...')
+  await new SourcesGenerator({ streams, logFile }).generate()
 
   logger.info('generating index.m3u...')
   await new IndexGenerator({ streams, logFile }).generate()

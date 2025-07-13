@@ -110,6 +110,28 @@ Same thing, but split up into separate files:
 
 </details>
 
+### Grouped by sources
+
+Playlists in which channels are grouped by broadcast source.
+
+<details>
+<summary>Expand</summary>
+<br>
+
+To use the playlist, simply replace `<FILENAME>` in the link below with the name of one of the files in the [streams](streams) folder.
+
+```
+https://iptv-org.github.io/iptv/sources/<FILENAME>.m3u
+```
+
+</details>
+
+Also, any of our internal playlists are available in raw form (without any filtering or sorting) at this link:
+
+```
+https://iptv-org.github.io/iptv/raw/<FILENAME>.m3u
+```
+
 ## EPG
 
 [Electronic Program Guide](https://en.wikipedia.org/wiki/Electronic_program_guide) for most of the channels can be downloaded using utilities published in the [iptv-org/epg](https://github.com/iptv-org/epg) repository.
