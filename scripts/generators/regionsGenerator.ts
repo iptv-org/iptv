@@ -17,7 +17,7 @@ export class RegionsGenerator implements Generator {
   logFile: File
 
   constructor({ streams, regions, logFile }: RegionsGeneratorProps) {
-    this.streams = streams
+    this.streams = streams.clone()
     this.regions = regions
     this.storage = new Storage(PUBLIC_DIR)
     this.logFile = logFile

@@ -114,13 +114,13 @@ For a stream to be approved, its description must follow this template:
 STREAM_URL
 ```
 
-| Attribute      | Description                                                                                                                                  | Required | Valid values                                 |
-| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------- |
-| `STREAM_ID`    | ID of the stream. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
-| `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                                                                  | Required | -                                            |
-| `QUALITY`      | Maximum stream quality.                                                                                                                      | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
-| `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users.                                                   | Optional | `Geo-blocked` or `Not 24/7`                  |
-| `STREAM_URL`   | Stream URL.                                                                                                                                  | Required | -                                            |
+| Attribute      | Description                                                                                                                                                                | Required | Valid values                                 |
+| -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------- |
+| `STREAM_ID`    | Stream ID consisting of channel ID and feed ID. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
+| `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                                                                                                | Required | -                                            |
+| `QUALITY`      | Maximum stream quality.                                                                                                                                                    | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
+| `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users.                                                                                 | Optional | `Geo-blocked` or `Not 24/7`                  |
+| `STREAM_URL`   | Stream URL.                                                                                                                                                                | Required | -                                            |
 
 Example:
 
@@ -136,12 +136,23 @@ Also, if necessary, you can specify custom [HTTP User-Agent](https://developer.m
 http://example.com/stream.m3u8
 ```
 
-or via `#EXTVLCOPT` tag:
+or use player-specific directives:
+
+_VLC_
 
 ```xml
-#EXTINF:-1 tvg-id="ExampleTV.us",Example TV
+#EXTINF:-1 tvg-id="ExampleTV.us@VLC",Example TV
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+http://example.com/stream.m3u8
+```
+
+_Kodi_
+
+```xml
+#EXTINF:-1 tvg-id="ExampleTV.us@Kodi",Example TV
+#KODIPROP:inputstream=inputstream.adaptive
+#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://example.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 http://example.com/stream.m3u8
 ```
 
