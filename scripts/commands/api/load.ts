@@ -15,6 +15,7 @@ async function main() {
     loader.download('regions.json'),
     loader.download('subdivisions.json'),
     loader.download('feeds.json'),
+    loader.download('logos.json'),
     loader.download('timezones.json'),
     loader.download('guides.json'),
     loader.download('streams.json')

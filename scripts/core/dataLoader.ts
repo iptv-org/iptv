@@ -47,6 +47,7 @@ export class DataLoader {
       blocklist,
       channels,
       feeds,
+      logos,
       timezones,
       guides,
       streams
@@ -59,6 +60,7 @@ export class DataLoader {
       this.storage.json('blocklist.json'),
       this.storage.json('channels.json'),
       this.storage.json('feeds.json'),
+      this.storage.json('logos.json'),
       this.storage.json('timezones.json'),
       this.storage.json('guides.json'),
       this.storage.json('streams.json')
@@ -73,6 +75,7 @@ export class DataLoader {
       blocklist,
       channels,
       feeds,
+      logos,
       timezones,
       guides,
       streams

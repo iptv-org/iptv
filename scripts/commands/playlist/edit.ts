@@ -49,11 +49,20 @@ export default async function main(filepath: string) {
   const dataStorage = new Storage(DATA_DIR)
   const loader = new DataLoader({ storage: dataStorage })
   const data: DataLoaderData = await loader.load()
-  const { channels, channelsKeyById, feedsGroupedByChannelId }: DataProcessorData =
-    processor.process(data)
+  const {
+    channels,
+    channelsKeyById,
+    feedsGroupedByChannelId,
+    logosGroupedByStreamId
+  }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
-  const parser = new PlaylistParser({ storage, feedsGroupedByChannelId, channelsKeyById })
+  const parser = new PlaylistParser({
+    storage,
+    feedsGroupedByChannelId,
+    logosGroupedByStreamId,
+    channelsKeyById
+  })
   parsedStreams = await parser.parseFile(filepath)
   const streamsWithoutId = parsedStreams.filter((stream: Stream) => !stream.id)
 
