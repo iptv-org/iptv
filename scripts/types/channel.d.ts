@@ -21,7 +21,6 @@ export type ChannelSerializedData = {
   closed?: string
   replacedBy?: string
   website?: string
-  logo: string
 }
 
 export type ChannelData = {
@@ -39,7 +38,6 @@ export type ChannelData = {
   closed: string
   replaced_by: string
   website: string
-  logo: string
 }
 
 export type ChannelSearchableData = {

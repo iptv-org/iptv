@@ -12,7 +12,7 @@ export class LanguagesGenerator implements Generator {
   logFile: File
 
   constructor({ streams, logFile }: LanguagesGeneratorProps) {
-    this.streams = streams
+    this.streams = streams.clone()
     this.storage = new Storage(PUBLIC_DIR)
     this.logFile = logFile
   }

@@ -15,7 +15,7 @@ export class IndexNsfwGenerator implements Generator {
   logFile: File
 
   constructor({ streams, logFile }: IndexNsfwGeneratorProps) {
-    this.streams = streams
+    this.streams = streams.clone()
     this.storage = new Storage(PUBLIC_DIR)
     this.logFile = logFile
   }
