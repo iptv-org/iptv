@@ -129,7 +129,7 @@ async function editStreams({
         .withChannel(channelsKeyById)
         .withFeed(feedsGroupedByChannelId)
         .updateId()
-        .updateName()
+        .updateTitle()
         .updateFilepath()
     }
 
@@ -173,11 +173,11 @@ async function addStreams({
     const directives = data.getArray('directives') || []
 
     const stream = new Stream({
-      channel: channelId,
-      feed: feedId,
-      name: data.getString('channelName') || channel.name,
+      channelId,
+      feedId,
+      title: channel.name,
       url: streamUrl,
-      user_agent: httpUserAgent,
+      userAgent: httpUserAgent,
       referrer: httpReferrer,
       directives,
       quality,
@@ -185,7 +185,7 @@ async function addStreams({
     })
       .withChannel(channelsKeyById)
       .withFeed(feedsGroupedByChannelId)
-      .updateName()
+      .updateTitle()
       .updateFilepath()
 
     streams.add(stream)

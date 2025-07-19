@@ -10,7 +10,6 @@ const FIELDS = new Dictionary({
   'New Stream URL': 'newStreamUrl',
   Label: 'label',
   Quality: 'quality',
-  'Channel Name': 'channelName',
   'HTTP User-Agent': 'httpUserAgent',
   'HTTP User Agent': 'httpUserAgent',
   'HTTP Referrer': 'httpReferrer',
