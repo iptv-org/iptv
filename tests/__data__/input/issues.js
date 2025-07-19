@@ -2284,5 +2284,114 @@ module.exports = [
     timeline_url: 'https://api.github.com/repos/iptv-org/iptv/issues/20956/timeline',
     performed_via_github_app: null,
     state_reason: null
+  },
+  {
+    url: 'https://api.github.com/repos/iptv-org/iptv/issues/25157',
+    repository_url: 'https://api.github.com/repos/iptv-org/iptv',
+    labels_url: 'https://api.github.com/repos/iptv-org/iptv/issues/25157/labels{/name}',
+    comments_url: 'https://api.github.com/repos/iptv-org/iptv/issues/25157/comments',
+    events_url: 'https://api.github.com/repos/iptv-org/iptv/issues/25157/events',
+    html_url: 'https://github.com/iptv-org/iptv/issues/25157',
+    id: 3245640024,
+    node_id: 'I_kwDOCWUK8M7BdIlY',
+    number: 25157,
+    title: 'Add: OnTime Sports SD',
+    user: {
+      login: 'zezopm300',
+      id: 215159878,
+      node_id: 'U_kgDODNMURg',
+      avatar_url: 'https://avatars.githubusercontent.com/u/215159878?v=4',
+      gravatar_id: '',
+      url: 'https://api.github.com/users/zezopm300',
+      html_url: 'https://github.com/zezopm300',
+      followers_url: 'https://api.github.com/users/zezopm300/followers',
+      following_url: 'https://api.github.com/users/zezopm300/following{/other_user}',
+      gists_url: 'https://api.github.com/users/zezopm300/gists{/gist_id}',
+      starred_url: 'https://api.github.com/users/zezopm300/starred{/owner}{/repo}',
+      subscriptions_url: 'https://api.github.com/users/zezopm300/subscriptions',
+      organizations_url: 'https://api.github.com/users/zezopm300/orgs',
+      repos_url: 'https://api.github.com/users/zezopm300/repos',
+      events_url: 'https://api.github.com/users/zezopm300/events{/privacy}',
+      received_events_url: 'https://api.github.com/users/zezopm300/received_events',
+      type: 'User',
+      user_view_type: 'public',
+      site_admin: false
+    },
+    labels: [
+      {
+        id: 5923508587,
+        node_id: 'LA_kwDOCWUK8M8AAAABYRGRaw',
+        url: 'https://api.github.com/repos/iptv-org/iptv/labels/streams:add',
+        name: 'streams:add',
+        color: '017ff9',
+        default: false,
+        description: 'Request to add a new link to a playlist'
+      }
+    ],
+    state: 'open',
+    locked: false,
+    assignee: null,
+    assignees: [],
+    milestone: null,
+    comments: 0,
+    created_at: '2025-07-19T20:44:05Z',
+    updated_at: '2025-07-19T20:44:05Z',
+    closed_at: null,
+    author_association: 'NONE',
+    type: null,
+    active_lock_reason: null,
+    sub_issues_summary: { total: 0, completed: 0, percent_completed: 0 },
+    body:
+      '### Stream ID (required)\n' +
+      '\n' +
+      'OnTimeSports.eg@SD\n' +
+      '\n' +
+      '### Stream URL (required)\n' +
+      '\n' +
+      ' OnTime Sports SD.mu38\n' +
+      '\n' +
+      '### Quality\n' +
+      '\n' +
+      'None\n' +
+      '\n' +
+      '### Label\n' +
+      '\n' +
+      'None\n' +
+      '\n' +
+      '### HTTP User Agent\n' +
+      '\n' +
+      '_No response_\n' +
+      '\n' +
+      '### HTTP Referrer\n' +
+      '\n' +
+      '_No response_\n' +
+      '\n' +
+      '### Directives\n' +
+      '\n' +
+      '_No response_\n' +
+      '\n' +
+      '### Notes\n' +
+      '\n' +
+      '_No response_\n' +
+      '\n' +
+      '### Contributing Guide\n' +
+      '\n' +
+      '- [x] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    closed_by: null,
+    reactions: {
+      url: 'https://api.github.com/repos/iptv-org/iptv/issues/25157/reactions',
+      total_count: 0,
+      '+1': 0,
+      '-1': 0,
+      laugh: 0,
+      hooray: 0,
+      confused: 0,
+      heart: 0,
+      rocket: 0,
+      eyes: 0
+    },
+    timeline_url: 'https://api.github.com/repos/iptv-org/iptv/issues/25157/timeline',
+    performed_via_github_app: null,
+    state_reason: null
   }
 ]
