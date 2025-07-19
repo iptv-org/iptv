@@ -1682,7 +1682,7 @@ module.exports = [
     closed_at: null,
     author_association: 'COLLABORATOR',
     active_lock_reason: null,
-    body: '### Stream URL\n\nhttps://livestream.telvue.com/templeuni1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8\n\n### Stream ID\n\nboo.us\n\n### Channel Name\n\nBBC America\n\n### Quality\n\n720p\n\n### Label\n\nGeo-blocked\n\n### HTTP User-Agent\n\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246\n\n### HTTP Referrer\n\n_No response_\n\n### Notes\n\n_No response_\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
+    body: '### Stream URL\n\nhttps://livestream.telvue.com/templeuni1/f7b44cfafd5c52223d5498196c8a2e7b.sdp/playlist.m3u8\n\n### Stream ID\n\nboo.us\n\n### Quality\n\n720p\n\n### Label\n\nGeo-blocked\n\n### HTTP User-Agent\n\nMozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 Edge/12.246\n\n### HTTP Referrer\n\n_No response_\n\n### Notes\n\n_No response_\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)',
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/14120/reactions',
       total_count: 0,
