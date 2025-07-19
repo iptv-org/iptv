@@ -14,6 +14,7 @@
 | Entertainment | Channels with a variety of entertainment programs                     |
 | Family        | Programming that is be suitable for all members of a family           |
 | General       | Provides a variety of different programming                           |
+| Interactive   | Programming that allows viewers to actively engage with the content   |
 | Kids          | Programming targeted to children                                      |
 | Legislative   | Programming specific to the operation of government                   |
 | Lifestyle     | Programs related to health, fitness, leisure, fashion, decor, etc.    |
