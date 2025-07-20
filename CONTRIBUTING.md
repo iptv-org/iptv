@@ -165,7 +165,6 @@ http://example.com/stream.m3u8
 - `.readme/`
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
   - `preview.png`: image displayed in the `README.md`.
-  - `supported-categories.md`: list of supported categories.
   - `template.md`: template for `README.md`.
 - `scripts/`: contains all scripts used in the repository.
 - `streams/`: contains all streams broken down by the country from which they are broadcast.
