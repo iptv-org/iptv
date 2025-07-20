@@ -36,7 +36,7 @@ https://iptv-org.github.io/iptv/index.m3u
 
 ### Grouped by category
 
-Playlists in which channels are grouped by category. A list of all supported categories with descriptions can be found [here](.readme/supported-categories.md).
+Playlists in which channels are grouped by category.
 
 <details>
 <summary>Expand</summary>
