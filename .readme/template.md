@@ -91,6 +91,19 @@ Same thing, but split up into separate files:
 
 </details>
 
+### Grouped by subdivision
+
+Playlists in which channels are grouped by subdivision for which they are broadcasted.
+
+<details>
+<summary>Expand</summary>
+<br>
+
+<!-- prettier-ignore -->
+#include "./.readme/_subdivisions.md"
+
+</details>
+
 ### Grouped by region
 
 Playlists in which channels are grouped by the region for which they are broadcasted.
