@@ -145,7 +145,6 @@ Same thing, but split up into separate files:
   <tbody>
     <tr><td>🇨🇲 Cameroon</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cm.m3u</code></td></tr>
     <tr><td>🇨🇦 Canada</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ca.m3u</code></td></tr>
-    <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ontario</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ca-on.m3u</code></td></tr>
     <tr><td>🇨🇻 Cape Verde</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cv.m3u</code></td></tr>
     <tr><td>🇨🇬 Republic of the Congo</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cg.m3u</code></td></tr>
     <tr><td>🇷🇪 Réunion</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/re.m3u</code></td></tr>
@@ -158,6 +157,27 @@ Same thing, but split up into separate files:
     <tr><td>Undefined</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
   </tbody>
 </table>
+
+</details>
+
+### Grouped by subdivision
+
+<details>
+<summary>Expand</summary>
+<br>
+
+<!-- prettier-ignore -->
+<details>
+<summary>Canada</summary>
+<table>
+  <thead>
+    <tr><th align="left">Subdivision</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Ontario</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ca-on.m3u</code></td></tr>
+  </tbody>
+</table>
+</details>
 
 </details>
 

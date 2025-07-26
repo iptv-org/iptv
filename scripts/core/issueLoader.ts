@@ -23,6 +23,7 @@ export class IssueLoader {
         repo: REPO,
         per_page: 100,
         labels,
+        status: 'open',
         headers: {
           'X-GitHub-Api-Version': '2022-11-28'
         }

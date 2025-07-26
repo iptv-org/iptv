@@ -133,9 +133,9 @@ export class Channel {
     return streams
   }
 
-  getStreamNames(): Collection {
+  getStreamTitles(): Collection {
     return this.getStreams()
-      .map((stream: Stream) => stream.getName())
+      .map((stream: Stream) => stream.getTitle())
       .uniq()
   }
 
@@ -184,7 +184,7 @@ export class Channel {
       name: this.name,
       altNames: this.altNames.all(),
       guideNames: this.getGuideNames().all(),
-      streamNames: this.getStreamNames().all(),
+      streamTitles: this.getStreamTitles().all(),
       feedFullNames: this.getFeedFullNames().all()
     }
   }

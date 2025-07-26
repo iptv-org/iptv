@@ -4,7 +4,7 @@ import type { DataProcessorData } from '../../types/dataProcessor'
 import { Stream, Playlist, Channel, Issue } from '../../models'
 import type { DataLoaderData } from '../../types/dataLoader'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
-import validUrl from 'valid-url'
+import { isURI } from '../../utils'
 
 let processedIssues = new Collection()
 
@@ -129,7 +129,7 @@ async function editStreams({
         .withChannel(channelsKeyById)
         .withFeed(feedsGroupedByChannelId)
         .updateId()
-        .updateName()
+        .updateTitle()
         .updateFilepath()
     }
 
@@ -158,7 +158,7 @@ async function addStreams({
     if (data.missing('streamId') || data.missing('streamUrl')) return
     if (streams.includes((_stream: Stream) => _stream.url === data.getString('streamUrl'))) return
     const streamUrl = data.getString('streamUrl') || ''
-    if (!isUri(streamUrl)) return
+    if (!isURI(streamUrl)) return
 
     const streamId = data.getString('streamId') || ''
     const [channelId, feedId] = streamId.split('@')
@@ -173,11 +173,11 @@ async function addStreams({
     const directives = data.getArray('directives') || []
 
     const stream = new Stream({
-      channel: channelId,
-      feed: feedId,
-      name: data.getString('channelName') || channel.name,
+      channelId,
+      feedId,
+      title: channel.name,
       url: streamUrl,
-      user_agent: httpUserAgent,
+      userAgent: httpUserAgent,
       referrer: httpReferrer,
       directives,
       quality,
@@ -185,14 +185,10 @@ async function addStreams({
     })
       .withChannel(channelsKeyById)
       .withFeed(feedsGroupedByChannelId)
-      .updateName()
+      .updateTitle()
       .updateFilepath()
 
     streams.add(stream)
     processedIssues.add(issue.number)
   })
-}
-
-function isUri(string: string) {
-  return validUrl.isUri(encodeURI(string))
 }

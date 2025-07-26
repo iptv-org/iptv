@@ -31,7 +31,7 @@ Note all links in playlists are sorted automatically by scripts so there is no n
 
 ### How to fix the stream description?
 
-Most of the stream description (channel name, categories, languages, broadcast area, logo) we load from the [iptv-org/database](https://github.com/iptv-org/database) using the stream ID.
+Most of the stream description (channel name, feed name, categories, languages, broadcast area, logo) we load from the [iptv-org/database](https://github.com/iptv-org/database) using the stream ID.
 
 So first of all, make sure that the desired stream has the correct ID. A full list of all supported channels and their corresponding IDs can be found on [iptv-org.github.io](https://iptv-org.github.io/). To change the stream ID of any link in the playlist, just fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams%3Aedit&projects=&template=2_streams_edit.yml&title=Edit%3A+).
 
@@ -110,14 +110,14 @@ Please note that we only accept removal requests from channel owners and their o
 For a stream to be approved, its description must follow this template:
 
 ```
-#EXTINF:-1 tvg-id="STREAM_ID",CHANNEL_NAME (QUALITY) [LABEL]
+#EXTINF:-1 tvg-id="STREAM_ID",STREAM_TITLE (QUALITY) [LABEL]
 STREAM_URL
 ```
 
 | Attribute      | Description                                                                                                                                                                | Required | Valid values                                 |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------- |
 | `STREAM_ID`    | Stream ID consisting of channel ID and feed ID. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
-| `CHANNEL_NAME` | Full name of the channel. May contain any characters except: `,`, `[`, `]`.                                                                                                | Required | -                                            |
+| `STREAM_TITLE` | Stream title consisting of channel name and feed name. May contain any characters except: `,`, `[`, `]`.                                                                   | Required | -                                            |
 | `QUALITY`      | Maximum stream quality.                                                                                                                                                    | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
 | `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users.                                                                                 | Optional | `Geo-blocked` or `Not 24/7`                  |
 | `STREAM_URL`   | Stream URL.                                                                                                                                                                | Required | -                                            |
@@ -125,7 +125,7 @@ STREAM_URL
 Example:
 
 ```xml
-#EXTINF:-1 tvg-id="ExampleTV.ua@HD",Example TV (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="ExampleTV.us@East",Example TV East (720p) [Not 24/7]
 https://example.com/playlist.m3u8
 ```
 
@@ -165,7 +165,6 @@ http://example.com/stream.m3u8
 - `.readme/`
   - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
   - `preview.png`: image displayed in the `README.md`.
-  - `supported-categories.md`: list of supported categories.
   - `template.md`: template for `README.md`.
 - `scripts/`: contains all scripts used in the repository.
 - `streams/`: contains all streams broken down by the country from which they are broadcast.

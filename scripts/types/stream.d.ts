@@ -1,10 +1,10 @@
 export type StreamData = {
-  channel: string | null
-  feed: string | null
-  name: string | null
+  channelId: string | null
+  feedId: string | null
+  title: string | null
   url: string
   referrer: string | null
-  user_agent: string | null
+  userAgent: string | null
   quality: string | null
   label: string | null
   directives: string[]

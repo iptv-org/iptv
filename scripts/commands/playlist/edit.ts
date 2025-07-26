@@ -73,7 +73,7 @@ export default async function main(filepath: string) {
   logger.info('creating search index...')
   const items = channels.map((channel: Channel) => channel.getSearchable()).all()
   const searchIndex = sjs.createIndex(items, {
-    searchable: ['name', 'altNames', 'guideNames', 'streamNames', 'feedFullNames']
+    searchable: ['name', 'altNames', 'guideNames', 'streamTitles', 'feedFullNames']
   })
 
   logger.info('starting...\n')
@@ -100,7 +100,7 @@ async function selectChannel(
   feedsGroupedByChannelId: Dictionary,
   channelsKeyById: Dictionary
 ): Promise<string> {
-  const query = escapeRegex(stream.getName())
+  const query = escapeRegex(stream.getTitle())
   const similarChannels = searchIndex
     .search(query)
     .map((item: ChannelSearchableData) => channelsKeyById.get(item.id))
@@ -108,7 +108,7 @@ async function selectChannel(
   const url = stream.url.length > 50 ? stream.url.slice(0, 50) + '...' : stream.url
 
   const selected: ChoiceValue = await select({
-    message: `Select channel ID for "${stream.name}" (${url}):`,
+    message: `Select channel ID for "${stream.title}" (${url}):`,
     choices: getChannelChoises(new Collection(similarChannels)),
     pageSize: 10
   })

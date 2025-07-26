@@ -4,6 +4,7 @@ import { DataProcessorData } from '../../types/dataProcessor'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
 import { DataLoaderData } from '../../types/dataLoader'
 import { Issue, Stream } from '../../models'
+import { isURI } from '../../utils'
 
 async function main() {
   const logger = new Logger()
@@ -44,7 +45,7 @@ async function main() {
     issue.labels.find((label: string) => label === 'streams:remove')
   )
   removeRequests.forEach((issue: Issue) => {
-    const streamUrls = issue.data.has('streamUrl') ? issue.data.getArray('streamUrl') : []
+    const streamUrls = issue.data.getArray('streamUrl') || []
 
     if (!streamUrls.length) {
       const result = {
@@ -93,6 +94,7 @@ async function main() {
 
     if (!channelId) result.status = 'missing_id'
     else if (!streamUrl) result.status = 'missing_link'
+    else if (!isURI(streamUrl)) result.status = 'invalid_link'
     else if (blocklistRecordsGroupedByChannelId.has(channelId)) result.status = 'blocked'
     else if (channelsKeyById.missing(channelId)) result.status = 'wrong_id'
     else if (streamsGroupedByUrl.has(streamUrl)) result.status = 'on_playlist'

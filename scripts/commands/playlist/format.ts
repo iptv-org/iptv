@@ -53,7 +53,7 @@ async function main() {
   logger.info('sorting links...')
   streams = streams.orderBy(
     [
-      (stream: Stream) => stream.name,
+      (stream: Stream) => stream.title,
       (stream: Stream) => stream.getVerticalResolution(),
       (stream: Stream) => stream.getLabel(),
       (stream: Stream) => stream.url
