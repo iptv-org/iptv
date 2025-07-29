@@ -6,7 +6,7 @@ import type { DataLoaderData } from '../../types/dataLoader'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
 import { isURI } from '../../utils'
 
-let processedIssues = new Collection()
+const processedIssues = new Collection()
 
 async function main() {
   const logger = new Logger({ level: -999 })
@@ -55,7 +55,7 @@ async function main() {
 
   logger.info('saving...')
   const groupedStreams = streams.groupBy((stream: Stream) => stream.getFilepath())
-  for (let filepath of groupedStreams.keys()) {
+  for (const filepath of groupedStreams.keys()) {
     let streams = groupedStreams.get(filepath) || []
     streams = streams.filter((stream: Stream) => stream.removed === false)
 
@@ -114,7 +114,7 @@ async function editStreams({
 
     if (data.missing('streamUrl')) return
 
-    let stream: Stream = streams.first(
+    const stream: Stream = streams.first(
       (_stream: Stream) => _stream.url === data.getString('streamUrl')
     )
     if (!stream) return
