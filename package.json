@@ -21,7 +21,7 @@
     "format": "npm run playlist:format",
     "update": "npm run playlist:generate && npm run api:generate && npm run readme:update",
     "deploy": "npm run playlist:deploy && npm run api:deploy",
-    "lint": "npx eslint ./scripts/**/*.ts ./tests/**/*.ts",
+    "lint": "npx eslint \"scripts/**/*.{ts,js}\" \"tests/**/*.{ts,js}\"",
     "test": "jest --runInBand",
     "postinstall": "npm run api:load"
   },

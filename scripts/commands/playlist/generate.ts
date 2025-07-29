@@ -9,13 +9,14 @@ import {
   IndexCategoryGenerator,
   IndexLanguageGenerator,
   IndexCountryGenerator,
+  SubdivisionsGenerator,
   IndexRegionGenerator,
   CategoriesGenerator,
   CountriesGenerator,
   LanguagesGenerator,
   RegionsGenerator,
-  IndexGenerator,
   SourcesGenerator,
+  IndexGenerator,
   RawGenerator
 } from '../../generators'
 
@@ -32,6 +33,7 @@ async function main() {
     feedsGroupedByChannelId,
     logosGroupedByStreamId,
     channelsKeyById,
+    subdivisions,
     categories,
     countries,
     regions
@@ -71,6 +73,9 @@ async function main() {
   logger.info('generating categories/...')
   await new CategoriesGenerator({ categories, streams, logFile }).generate()
 
+  logger.info('generating languages/...')
+  await new LanguagesGenerator({ streams, logFile }).generate()
+
   logger.info('generating countries/...')
   await new CountriesGenerator({
     countries,
@@ -78,8 +83,12 @@ async function main() {
     logFile
   }).generate()
 
-  logger.info('generating languages/...')
-  await new LanguagesGenerator({ streams, logFile }).generate()
+  logger.info('generating subdivisions/...')
+  await new SubdivisionsGenerator({
+    subdivisions,
+    streams,
+    logFile
+  }).generate()
 
   logger.info('generating regions/...')
   await new RegionsGenerator({
