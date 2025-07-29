@@ -23,7 +23,7 @@ export class SourcesGenerator implements Generator {
   async generate() {
     const files: Dictionary = this.streams.groupBy((stream: Stream) => stream.getFilename())
 
-    for (let filename of files.keys()) {
+    for (const filename of files.keys()) {
       if (!filename) continue
 
       let streams = new Collection(files.get(filename))

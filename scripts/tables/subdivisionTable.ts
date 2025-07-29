@@ -33,9 +33,9 @@ export class SubdivisionTable implements Table {
 
       if (!parsedCountrySubdivisions.length) return
 
-      output += `\r\n<details>\r\n\<summary>${country.name}</summary>\r\n`
+      output += `\r\n<details>\r\n<summary>${country.name}</summary>\r\n`
 
-      let data = new Collection()
+      const data = new Collection()
 
       parsedCountrySubdivisions.forEach((logItem: LogItem) => {
         const file = new File(logItem.filepath)

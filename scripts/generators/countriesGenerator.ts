@@ -1,4 +1,4 @@
-import { Country, Subdivision, Stream, Playlist } from '../models'
+import { Country, Stream, Playlist } from '../models'
 import { Collection, Storage, File } from '@freearhey/core'
 import { PUBLIC_DIR } from '../constants'
 import { Generator } from './generator'
