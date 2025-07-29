@@ -35,7 +35,7 @@ export class Stream {
     this.id = id || undefined
     this.channelId = data.channelId || undefined
     this.feedId = data.feedId || undefined
-    this.title = data.title || undefined
+    this.title = data.title || ''
     this.url = data.url
     this.referrer = data.referrer || undefined
     this.userAgent = data.userAgent || undefined
@@ -81,7 +81,7 @@ export class Stream {
     }
 
     function parseDirectives(string: string) {
-      let directives = new Collection()
+      const directives = new Collection()
 
       if (!string) return directives
 

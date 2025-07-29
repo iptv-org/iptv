@@ -23,7 +23,7 @@ export class RawGenerator implements Generator {
   async generate() {
     const files = this.streams.groupBy((stream: Stream) => stream.getFilename())
 
-    for (let filename of files.keys()) {
+    for (const filename of files.keys()) {
       const streams = new Collection(files.get(filename)).map((stream: Stream) => {
         const groupTitle = stream.getCategoryNames().join(';')
         if (groupTitle) stream.groupTitle = groupTitle

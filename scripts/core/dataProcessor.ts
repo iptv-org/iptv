@@ -78,7 +78,7 @@ export class DataProcessor {
     const feedsGroupedByChannelId = feeds.groupBy((feed: Feed) => feed.channelId)
     const feedsGroupedById = feeds.groupBy((feed: Feed) => feed.id)
 
-    let logos = new Collection(data.logos).map(data => new Logo(data).withFeed(feedsGroupedById))
+    const logos = new Collection(data.logos).map(data => new Logo(data).withFeed(feedsGroupedById))
     const logosGroupedByChannelId = logos.groupBy((logo: Logo) => logo.channelId)
     const logosGroupedByStreamId = logos.groupBy((logo: Logo) => logo.getStreamId())
 
