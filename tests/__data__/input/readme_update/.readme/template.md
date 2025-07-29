@@ -96,6 +96,17 @@ Same thing, but split up into separate files:
 
 </details>
 
+### Grouped by subdivision
+
+<details>
+<summary>Expand</summary>
+<br>
+
+<!-- prettier-ignore -->
+#include "tests/__data__/output/.readme/_subdivisions.md"
+
+</details>
+
 ### Grouped by region
 
 <details>

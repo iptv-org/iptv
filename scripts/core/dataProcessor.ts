@@ -25,7 +25,7 @@ export class DataProcessor {
     const languages = new Collection(data.languages).map(data => new Language(data))
     const languagesKeyByCode = languages.keyBy((language: Language) => language.code)
 
-    const subdivisions = new Collection(data.subdivisions).map(data => new Subdivision(data))
+    let subdivisions = new Collection(data.subdivisions).map(data => new Subdivision(data))
     const subdivisionsKeyByCode = subdivisions.keyBy((subdivision: Subdivision) => subdivision.code)
     const subdivisionsGroupedByCountryCode = subdivisions.groupBy(
       (subdivision: Subdivision) => subdivision.countryCode
@@ -41,6 +41,10 @@ export class DataProcessor {
         .withSubdivisions(subdivisionsGroupedByCountryCode)
     )
     const countriesKeyByCode = countries.keyBy((country: Country) => country.code)
+
+    subdivisions = subdivisions.map((subdivision: Subdivision) =>
+      subdivision.withCountry(countriesKeyByCode)
+    )
 
     const timezones = new Collection(data.timezones).map(data =>
       new Timezone(data).withCountries(countriesKeyByCode)
@@ -74,7 +78,7 @@ export class DataProcessor {
     const feedsGroupedByChannelId = feeds.groupBy((feed: Feed) => feed.channelId)
     const feedsGroupedById = feeds.groupBy((feed: Feed) => feed.id)
 
-    let logos = new Collection(data.logos).map(data => new Logo(data).withFeed(feedsGroupedById))
+    const logos = new Collection(data.logos).map(data => new Logo(data).withFeed(feedsGroupedById))
     const logosGroupedByChannelId = logos.groupBy((logo: Logo) => logo.channelId)
     const logosGroupedByStreamId = logos.groupBy((logo: Logo) => logo.getStreamId())
 
