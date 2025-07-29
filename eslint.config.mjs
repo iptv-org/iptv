@@ -46,5 +46,9 @@ export default [
       quotes: ['error', 'single'],
       semi: ['error', 'never']
     }
+  },
+
+  {
+    ignores: ['tests/__data__/**']
   }
 ]
