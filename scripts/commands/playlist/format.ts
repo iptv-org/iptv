@@ -53,7 +53,7 @@ async function main() {
   logger.info('sorting links...')
   streams = streams.orderBy(
     [
-      (stream: Stream) => stream.name,
+      (stream: Stream) => stream.title,
       (stream: Stream) => stream.getVerticalResolution(),
       (stream: Stream) => stream.getLabel(),
       (stream: Stream) => stream.url
@@ -63,7 +63,7 @@ async function main() {
 
   logger.info('saving...')
   const groupedStreams = streams.groupBy((stream: Stream) => stream.getFilepath())
-  for (let filepath of groupedStreams.keys()) {
+  for (const filepath of groupedStreams.keys()) {
     const streams = groupedStreams.get(filepath) || []
 
     if (!streams.length) return
