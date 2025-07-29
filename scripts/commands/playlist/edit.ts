@@ -136,7 +136,7 @@ async function selectChannel(
 }
 
 async function selectFeed(channelId: string, feedsGroupedByChannelId: Dictionary): Promise<string> {
-  const channelFeeds = new Collection(feedsGroupedByChannelId.get(channelId)) || new Collection()
+  const channelFeeds = new Collection(feedsGroupedByChannelId.get(channelId))
   const choices = getFeedChoises(channelFeeds)
 
   const selected: ChoiceValue = await select({
