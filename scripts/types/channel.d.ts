@@ -45,6 +45,6 @@ export type ChannelSearchableData = {
   name: string
   altNames: string[]
   guideNames: string[]
-  streamNames: string[]
+  streamTitles: string[]
   feedFullNames: string[]
 }

@@ -1,5 +1,11 @@
 import { Logger } from '@freearhey/core'
-import { CategoryTable, CountryTable, LanguageTable, RegionTable } from '../../tables'
+import {
+  CategoryTable,
+  CountryTable,
+  LanguageTable,
+  RegionTable,
+  SubdivisionTable
+} from '../../tables'
 import { Markdown } from '../../core'
 import { README_DIR } from '../../constants'
 import path from 'path'
@@ -9,10 +15,12 @@ async function main() {
 
   logger.info('creating category table...')
   await new CategoryTable().make()
-  logger.info('creating country table...')
-  await new CountryTable().make()
   logger.info('creating language table...')
   await new LanguageTable().make()
+  logger.info('creating country table...')
+  await new CountryTable().make()
+  logger.info('creating subdivision table...')
+  await new SubdivisionTable().make()
   logger.info('creating region table...')
   await new RegionTable().make()
 

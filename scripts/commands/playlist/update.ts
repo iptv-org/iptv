@@ -4,9 +4,9 @@ import type { DataProcessorData } from '../../types/dataProcessor'
 import { Stream, Playlist, Channel, Issue } from '../../models'
 import type { DataLoaderData } from '../../types/dataLoader'
 import { DATA_DIR, STREAMS_DIR } from '../../constants'
-import validUrl from 'valid-url'
+import { isURI } from '../../utils'
 
-let processedIssues = new Collection()
+const processedIssues = new Collection()
 
 async function main() {
   const logger = new Logger({ level: -999 })
@@ -55,7 +55,7 @@ async function main() {
 
   logger.info('saving...')
   const groupedStreams = streams.groupBy((stream: Stream) => stream.getFilepath())
-  for (let filepath of groupedStreams.keys()) {
+  for (const filepath of groupedStreams.keys()) {
     let streams = groupedStreams.get(filepath) || []
     streams = streams.filter((stream: Stream) => stream.removed === false)
 
@@ -114,7 +114,7 @@ async function editStreams({
 
     if (data.missing('streamUrl')) return
 
-    let stream: Stream = streams.first(
+    const stream: Stream = streams.first(
       (_stream: Stream) => _stream.url === data.getString('streamUrl')
     )
     if (!stream) return
@@ -129,7 +129,7 @@ async function editStreams({
         .withChannel(channelsKeyById)
         .withFeed(feedsGroupedByChannelId)
         .updateId()
-        .updateName()
+        .updateTitle()
         .updateFilepath()
     }
 
@@ -158,7 +158,7 @@ async function addStreams({
     if (data.missing('streamId') || data.missing('streamUrl')) return
     if (streams.includes((_stream: Stream) => _stream.url === data.getString('streamUrl'))) return
     const streamUrl = data.getString('streamUrl') || ''
-    if (!isUri(streamUrl)) return
+    if (!isURI(streamUrl)) return
 
     const streamId = data.getString('streamId') || ''
     const [channelId, feedId] = streamId.split('@')
@@ -173,11 +173,11 @@ async function addStreams({
     const directives = data.getArray('directives') || []
 
     const stream = new Stream({
-      channel: channelId,
-      feed: feedId,
-      name: data.getString('channelName') || channel.name,
+      channelId,
+      feedId,
+      title: channel.name,
       url: streamUrl,
-      user_agent: httpUserAgent,
+      userAgent: httpUserAgent,
       referrer: httpReferrer,
       directives,
       quality,
@@ -185,14 +185,10 @@ async function addStreams({
     })
       .withChannel(channelsKeyById)
       .withFeed(feedsGroupedByChannelId)
-      .updateName()
+      .updateTitle()
       .updateFilepath()
 
     streams.add(stream)
     processedIssues.add(issue.number)
   })
-}
-
-function isUri(string: string) {
-  return validUrl.isUri(encodeURI(string))
 }

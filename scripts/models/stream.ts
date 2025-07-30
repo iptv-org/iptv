@@ -6,7 +6,7 @@ import { IssueData } from '../core'
 import path from 'node:path'
 
 export class Stream {
-  name?: string
+  title: string
   url: string
   id?: string
   channelId?: string
@@ -28,16 +28,17 @@ export class Stream {
   constructor(data?: StreamData) {
     if (!data) return
 
-    const id = data.channel && data.feed ? [data.channel, data.feed].join('@') : data.channel
+    const id =
+      data.channelId && data.feedId ? [data.channelId, data.feedId].join('@') : data.channelId
     const { verticalResolution, isInterlaced } = parseQuality(data.quality)
 
     this.id = id || undefined
-    this.channelId = data.channel || undefined
-    this.feedId = data.feed || undefined
-    this.name = data.name || undefined
+    this.channelId = data.channelId || undefined
+    this.feedId = data.feedId || undefined
+    this.title = data.title || ''
     this.url = data.url
     this.referrer = data.referrer || undefined
-    this.userAgent = data.user_agent || undefined
+    this.userAgent = data.userAgent || undefined
     this.verticalResolution = verticalResolution || undefined
     this.isInterlaced = isInterlaced || undefined
     this.label = data.label || undefined
@@ -65,21 +66,22 @@ export class Stream {
   }
 
   fromPlaylistItem(data: parser.PlaylistItem): this {
-    function parseTitle(title: string): {
-      name: string
+    function parseName(name: string): {
+      title: string
       label: string
       quality: string
     } {
+      let title = name
       const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
       title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
       const [, quality] = title.match(/ \(([0-9]+p)\)$/) || [null, '']
       title = title.replace(new RegExp(` \\(${quality}\\)$`), '')
 
-      return { name: title, label, quality }
+      return { title, label, quality }
     }
 
     function parseDirectives(string: string) {
-      let directives = new Collection()
+      const directives = new Collection()
 
       if (!string) return directives
 
@@ -100,7 +102,7 @@ export class Stream {
     if (!data.url) throw new Error('"url" property is required')
 
     const [channelId, feedId] = data.tvg.id.split('@')
-    const { name, label, quality } = parseTitle(data.name)
+    const { title, label, quality } = parseName(data.name)
     const { verticalResolution, isInterlaced } = parseQuality(quality)
 
     this.id = data.tvg.id || undefined
@@ -108,7 +110,7 @@ export class Stream {
     this.channelId = channelId || undefined
     this.line = data.line
     this.label = label || undefined
-    this.name = name
+    this.title = title
     this.verticalResolution = verticalResolution || undefined
     this.isInterlaced = isInterlaced || undefined
     this.url = data.url
@@ -241,12 +243,12 @@ export class Stream {
     return parseInt(this.getQuality().replace(/p|i/, ''))
   }
 
-  updateName(): this {
+  updateTitle(): this {
     if (!this.channel) return this
 
-    this.name = this.channel.name
+    this.title = this.channel.name
     if (this.feed && !this.feed.isMain) {
-      this.name += ` ${this.feed.name}`
+      this.title += ` ${this.feed.name}`
     }
 
     return this
@@ -375,12 +377,12 @@ export class Stream {
     return logo ? logo.url : ''
   }
 
-  getName(): string {
-    return this.name || ''
+  getTitle(): string {
+    return this.title || ''
   }
 
-  getTitle(): string {
-    let title = `${this.getName()}`
+  getFullTitle(): string {
+    let title = `${this.getTitle()}`
 
     if (this.getQuality()) {
       title += ` (${this.getQuality()})`
@@ -405,6 +407,7 @@ export class Stream {
     return {
       channel: this.channelId || null,
       feed: this.feedId || null,
+      title: this.title,
       url: this.url,
       referrer: this.referrer || null,
       user_agent: this.userAgent || null,
@@ -427,7 +430,7 @@ export class Stream {
       output += ` http-user-agent="${this.userAgent}"`
     }
 
-    output += `,${this.getTitle()}`
+    output += `,${this.getFullTitle()}`
 
     this.directives.forEach((prop: string) => {
       output += `\r\n${prop}`

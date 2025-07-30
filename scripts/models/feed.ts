@@ -190,8 +190,15 @@ export class Feed {
 
   isBroadcastInSubdivision(subdivision: Subdivision): boolean {
     if (this.isInternational()) return false
+    if (this.broadcastSubdivisionCodes.includes(subdivision.code)) return true
+    if (
+      this.broadcastSubdivisionCodes.isEmpty() &&
+      subdivision.country &&
+      this.isBroadcastInCountry(subdivision.country)
+    )
+      return true
 
-    return this.broadcastSubdivisionCodes.includes(subdivision.code)
+    return false
   }
 
   isBroadcastInCountry(country: Country): boolean {

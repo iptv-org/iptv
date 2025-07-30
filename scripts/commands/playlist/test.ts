@@ -18,7 +18,7 @@ const LIVE_UPDATE_MAX_STREAMS = 100
 
 let errors = 0
 let warnings = 0
-let results = {}
+const results = {}
 let interval
 let streams = new Collection()
 let isLiveUpdateEnabled = true
