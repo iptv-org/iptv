@@ -1,4 +1,4 @@
-import { Country, Subdivision, Stream, Playlist } from '../models'
+import { Country, Stream, Playlist } from '../models'
 import { Collection, Storage, File } from '@freearhey/core'
 import { PUBLIC_DIR } from '../constants'
 import { Generator } from './generator'
@@ -40,21 +40,6 @@ export class CountriesGenerator implements Generator {
       this.logFile.append(
         JSON.stringify({ type: 'country', filepath, count: playlist.streams.count() }) + EOL
       )
-
-      country.getSubdivisions().forEach(async (subdivision: Subdivision) => {
-        const subdivisionStreams = streams.filter((stream: Stream) =>
-          stream.isBroadcastInSubdivision(subdivision)
-        )
-
-        if (subdivisionStreams.isEmpty()) return
-
-        const playlist = new Playlist(subdivisionStreams, { public: true })
-        const filepath = `subdivisions/${subdivision.code.toLowerCase()}.m3u`
-        await this.storage.save(filepath, playlist.toString())
-        this.logFile.append(
-          JSON.stringify({ type: 'subdivision', filepath, count: playlist.streams.count() }) + EOL
-        )
-      })
     })
 
     const undefinedStreams = streams.filter((stream: Stream) => !stream.hasBroadcastArea())
