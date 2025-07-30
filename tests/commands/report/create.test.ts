@@ -1,11 +1,6 @@
 import { execSync } from 'child_process'
-import os from 'os'
 
-let ENV_VAR = 'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/report_create'
-if (os.platform() === 'win32') {
-  ENV_VAR =
-    'SET "DATA_DIR=tests/__data__/input/data" && SET "STREAMS_DIR=tests/__data__/input/report_create" &&'
-}
+const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/report_create'
 
 describe('report:create', () => {
   it('can create report', () => {
