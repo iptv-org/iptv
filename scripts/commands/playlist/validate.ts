@@ -44,7 +44,7 @@ async function main() {
 
   let errors = new Collection()
   let warnings = new Collection()
-  let streamsGroupedByFilepath = streams.groupBy((stream: Stream) => stream.getFilepath())
+  const streamsGroupedByFilepath = streams.groupBy((stream: Stream) => stream.getFilepath())
   for (const filepath of streamsGroupedByFilepath.keys()) {
     const streams = streamsGroupedByFilepath.get(filepath)
     if (!streams) continue

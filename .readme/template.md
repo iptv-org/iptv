@@ -36,7 +36,7 @@ https://iptv-org.github.io/iptv/index.m3u
 
 ### Grouped by category
 
-Playlists in which channels are grouped by category. A list of all supported categories with descriptions can be found [here](.readme/supported-categories.md).
+Playlists in which channels are grouped by category.
 
 <details>
 <summary>Expand</summary>
@@ -88,6 +88,19 @@ Same thing, but split up into separate files:
 
 <!-- prettier-ignore -->
 #include "./.readme/_countries.md"
+
+</details>
+
+### Grouped by subdivision
+
+Playlists in which channels are grouped by subdivision for which they are broadcasted.
+
+<details>
+<summary>Expand</summary>
+<br>
+
+<!-- prettier-ignore -->
+#include "./.readme/_subdivisions.md"
 
 </details>
 
