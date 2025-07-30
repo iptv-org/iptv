@@ -1,8 +1,7 @@
 import { Subdivision, Stream, Playlist } from '../models'
 import { Collection, Storage, File } from '@freearhey/core'
-import { PUBLIC_DIR } from '../constants'
+import { PUBLIC_DIR, EOL } from '../constants'
 import { Generator } from './generator'
-import { EOL } from 'node:os'
 
 type SubdivisionsGeneratorProps = {
   streams: Collection

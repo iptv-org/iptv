@@ -1,8 +1,7 @@
 import { Collection, File, Storage } from '@freearhey/core'
 import { Stream, Playlist } from '../models'
-import { PUBLIC_DIR } from '../constants'
+import { PUBLIC_DIR, EOL } from '../constants'
 import { Generator } from './generator'
-import { EOL } from 'node:os'
 
 type IndexGeneratorProps = {
   streams: Collection
