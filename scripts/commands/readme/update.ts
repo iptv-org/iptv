@@ -24,10 +24,10 @@ async function main() {
   logger.info('creating region table...')
   await new RegionTable().make()
 
-  logger.info('updating readme.md...')
+  logger.info('updating playlists.md...')
   const configPath = path.join(README_DIR, 'config.json')
-  const readme = new Markdown(configPath)
-  readme.compile()
+  const playlists = new Markdown(configPath)
+  playlists.compile()
 }
 
 main()
