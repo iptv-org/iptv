@@ -40,7 +40,7 @@ jobs:
         run: npm run playlist:generate
       - name: generate .api/streams.json
         run: npm run api:generate
-      - name: update readme.md
+      - name: update readme
         run: npm run readme:update
       - run: git status
       - name: commit changes to /streams
@@ -48,11 +48,11 @@ jobs:
           git add streams
           git status
           git commit --allow-empty -m "[Bot] Update /streams" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." -m "${{ steps.playlist-update.outputs.OUTPUT }}" --no-verify
-      - name: commit changes to readme.md
+      - name: commit changes to playlists.md
         run: |
-          git add README.md
+          git add PLAYLISTS.md
           git status
-          git commit --allow-empty -m "[Bot] Update README.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify
+          git commit --allow-empty -m "[Bot] Update PLAYLISTS.md" -m "Committed by [iptv-bot](https://github.com/apps/iptv-bot) via [update](https://github.com/iptv-org/iptv/actions/runs/${{ github.run_id }}) workflow." --no-verify
       - name: push all changes to the repository
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         run: git push
