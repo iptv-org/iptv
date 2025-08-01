@@ -163,14 +163,15 @@ http://example.com/stream.m3u8
   - `workflows`: contains [GitHub actions](https://docs.github.com/en/actions/quickstart) workflows.
   - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
 - `.readme/`
-  - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `README.md` file.
+  - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `PLAYLISTS.md` file.
   - `preview.png`: image displayed in the `README.md`.
-  - `template.md`: template for `README.md`.
+  - `template.md`: template for `PLAYLISTS.md`.
 - `scripts/`: contains all scripts used in the repository.
 - `streams/`: contains all streams broken down by the country from which they are broadcast.
 - `tests/`: contains tests to check the scripts.
 - `CONTRIBUTING.md`: file you are currently reading.
-- `README.md`: project description generated from the contents of the `.readme/` folder.
+- `PLAYLISTS.md`: auto-updated list of available playlists.
+- `README.md`: project description.
 
 ## Scripts
 
