@@ -1,8 +1,7 @@
 import { Collection, Storage, File } from '@freearhey/core'
 import { Playlist, Region, Stream } from '../models'
-import { PUBLIC_DIR } from '../constants'
+import { PUBLIC_DIR, EOL } from '../constants'
 import { Generator } from './generator'
-import { EOL } from 'node:os'
 
 type RegionsGeneratorProps = {
   streams: Collection
