@@ -23,8 +23,8 @@ describe('readme:update', () => {
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
-    expect(content('tests/__data__/output/readme.md')).toEqual(
-      content('tests/__data__/expected/readme_update/_readme.md')
+    expect(content('tests/__data__/output/playlists.md')).toEqual(
+      content('tests/__data__/expected/readme_update/playlists.md')
     )
   })
 })
