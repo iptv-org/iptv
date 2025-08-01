@@ -3,7 +3,7 @@
 https://albportal.net/albkanalemusic.m3u8
 #EXTINF:-1 tvg-id="CNA.al",CNA (1080p)
 https://live1.mediadesk.al/cnatvlive.m3u8
-#EXTINF:-1 tvg-id="MCNTV.al",MCN TV (720p)
+#EXTINF:-1 tvg-id="MCNTV.al" http-referrer="https://mcn24.tv/hls/" http-user-agent="Mozilla/5.0",MCN TV (720p)
 #EXTVLCOPT:http-referrer=https://mcn24.tv/hls/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://mcn24.tv/hidden_stream/mcntv.m3u8
