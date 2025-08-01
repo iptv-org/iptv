@@ -3,53 +3,23 @@
 https://albportal.net/albkanalemusic.m3u8
 #EXTINF:-1 tvg-id="CNA.al",CNA (1080p)
 https://live1.mediadesk.al/cnatvlive.m3u8
-#EXTINF:-1 tvg-id="FolkloritTV.al",Folklorit TV (1080p) [Not 24/7]
-https://vs.sednastream.com:1936/folklorit/folklorit/playlist.m3u8
-#EXTINF:-1 tvg-id="MCNTV.al",MCN TV (1080p) [Not 24/7]
-http://141.95.145.70:8088/hls/mcn.m3u8
+#EXTINF:-1 tvg-id="MCNTV.al" http-referrer="https://mcn24.tv/hls/" http-user-agent="Mozilla/5.0",MCN TV (720p)
+#EXTVLCOPT:http-referrer=https://mcn24.tv/hls/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://mcn24.tv/hidden_stream/mcntv.m3u8
 #EXTINF:-1 tvg-id="News24.al",News 24 (392p) [Not 24/7]
 https://tv.balkanweb.com/news24/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="News24.al",News 24 Albania (392p)
 http://tv.balkanweb.com:8081/news24/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="OraNews.al",Ora News (720p)
 https://live1.mediadesk.al/oranews.m3u8
-#EXTINF:-1 tvg-id="PanoramaTV.al",Panorama TV (720p) [Not 24/7]
-http://198.244.188.94/panorama/livestream/playlist.m3u8
+#EXTINF:-1 tvg-id="PanoramaTV.al",Panorama TV (720p)
+https://tv.panorama.com.al/panorama/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ReportTV.al",Report TV (720p)
 https://deb10stream.duckdns.org/hls/stream.m3u8
-#EXTINF:-1 tvg-id="Syri.al",Syri (720p) [Not 24/7]
-https://stream.syritv.al/SyriTV/index.m3u8
-#EXTINF:-1 tvg-id="TopChannel.al",Top News (720p)
-https://trueodin.serv00.net/?t=topnewsal
-#EXTINF:-1 tvg-id="TropojaTelevizion.al",Tropoja TV (1080p)
-https://live.prostream.al/al/smil:tropojatv.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="VizionPlus.al",Vizion Plus (1080p)
-https://fe.tring.al/delta/105/out/u/rdghfhsfhfshs.m3u8
-#EXTINF:-1 tvg-id="ZjarrTV.al",Zjarr TV (720p) [Not 24/7]
-https://cdn.jwplayer.com/live/events/r2qgHu7W.m3u8
+https://tringliveviz.akamaized.net/delta/105/out/u/qwaszxerdfcvrtryuy.m3u8
+#EXTINF:-1 tvg-id="ZjarrTV.al",Zjarr TV (360p)
+https://zjarr.future.al/hls/playlist.m3u8
 #EXTINF:-1 tvg-id="EuronewsAlbania.al",Euronews Albania
 https://gjirafa-video-live.gjirafa.net/gjvideo-live/2dw-zuf-1c9-pxu/index.m3u8
-#EXTINF:-1 tvg-id="3Plus.al",3 Plus (1080i)
-http://77.83.120.135:8001/play/a19e
-#EXTINF:-1 tvg-id="KlanPlus.al",Klan Plus (1080i)
-http://77.83.120.135:8001/play/a0w9
-#EXTINF:-1 tvg-id="RTSHMuzike.al",RTSH Muzike (576i)
-http://77.83.120.135:8001/play/a1a0
-#EXTINF:-1 tvg-id="FaxNews.al",Fax News (576i)
-http://77.83.120.135:8001/play/FaxNews
-#EXTINF:-1 tvg-id="RTSH24.al",RTSH 24 (1080i)
-http://77.83.120.135:8001/play/RTSH24
-#EXTINF:-1 tvg-id="ABCNews.al",ABC News (1080i)
-http://77.83.120.135:8001/play/a00c
-#EXTINF:-1 tvg-id="TVKlan.al",TV Klan (1080i)
-http://77.83.120.135:8001/play/a16b
-#EXTINF:-1 tvg-id="RTSHShqip.al",RTSH Shqip (576i)
-http://77.83.120.135:8001/play/a19y
-#EXTINF:-1 tvg-id="Syri.al",Syri (720p)
-http://77.83.120.135:8001/play/Sportalb
-#EXTINF:-1 tvg-id="Syri.al",Syri (720p)
-http://77.83.120.135:8001/play/SyriTV
-#EXTINF:-1 tvg-id="RTSHShqip.al",RTSH Shqip (576i)
-http://77.83.120.135:8001/play/a10m
-#EXTINF:-1 tvg-id="RTSH3.al",RTSH 3 (576i)
-http://77.83.120.135:8001/play/a0qo
