@@ -7,7 +7,7 @@ token = os.getenv('GITHUB_TOKEN')
 g = Github(token)
 
 # URLs for the M3U playlists
-fancode_url = 'https://raw.githubusercontent.com/byte-capsule/FanCode-Hls-Fetcher/main/Fancode_Live.m3u'
+fancode_url = 'https://raw.githubusercontent.com/Jitendraunatti/fancode/refs/heads/main/data/fancode.m3u'
 index_url = 'https://raw.githubusercontent.com/ums91/umsiptv/addinm3u/streams/index.m3u'
 
 # Fetch the M3U files
