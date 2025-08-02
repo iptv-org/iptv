@@ -2,7 +2,7 @@ import os
 import requests
 
 # External M3U URLs
-fancode_url = 'https://raw.githubusercontent.com/byte-capsule/FanCode-Hls-Fetcher/main/Fancode_Live.m3u'
+fancode_url = 'https://raw.githubusercontent.com/Jitendraunatti/fancode/refs/heads/main/data/fancode.m3u'
 sonyliv_url = 'https://raw.githubusercontent.com/SArun61/IPTV/refs/heads/main/SonyLiv.m3u'
 
 index_file_path = "streams/index.m3u"
