@@ -558,6 +558,7 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><td>Ghor</td><td align="right">48</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/af-gho.m3u</code></td></tr>
     <tr><td>Helmand</td><td align="right">48</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/af-hel.m3u</code></td></tr>
     <tr><td>Herat</td><td align="right">48</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/af-her.m3u</code></td></tr>
+    <tr><td>Jowzjan</td><td align="right">48</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/af-jow.m3u</code></td></tr>
     <tr><td>Kandahar</td><td align="right">48</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/af-kan.m3u</code></td></tr>
     <tr><td>Khost</td><td align="right">48</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/af-kho.m3u</code></td></tr>
     <tr><td>Jowzjan</td><td align="right">48</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/af-jow.m3u</code></td></tr>
@@ -2518,11 +2519,11 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><th align="left">Subdivision</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
+    <tr><td>HaDarom</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/il-d.m3u</code></td></tr>
     <tr><td>HaMerkaz</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/il-m.m3u</code></td></tr>
     <tr><td>HaDarom</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/il-d.m3u</code></td></tr>
     <tr><td>Hefa</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/il-ha.m3u</code></td></tr>
     <tr><td>HaTsafon</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/il-z.m3u</code></td></tr>
-    <tr><td>Tel Aviv</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/il-ta.m3u</code></td></tr>
     <tr><td>Yerushalayim</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/il-jm.m3u</code></td></tr>
   </tbody>
 </table>
@@ -2645,6 +2646,7 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><td>Niigata</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-15.m3u</code></td></tr>
     <tr><td>Okinawa</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-47.m3u</code></td></tr>
     <tr><td>Osaka</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-27.m3u</code></td></tr>
+    <tr><td>Okayama</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-33.m3u</code></td></tr>
     <tr><td>Saitama</td><td align="right">17</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-11.m3u</code></td></tr>
     <tr><td>Saga</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-41.m3u</code></td></tr>
     <tr><td>Shiga</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-25.m3u</code></td></tr>
@@ -2656,6 +2658,7 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><td>Wakayama</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-30.m3u</code></td></tr>
     <tr><td>Tokyo</td><td align="right">17</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-13.m3u</code></td></tr>
     <tr><td>Toyama</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-16.m3u</code></td></tr>
+    <tr><td>Wakayama</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-30.m3u</code></td></tr>
     <tr><td>Yamagata</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-06.m3u</code></td></tr>
     <tr><td>Yamanashi</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-19.m3u</code></td></tr>
     <tr><td>Yamaguchi</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jp-35.m3u</code></td></tr>
@@ -2680,7 +2683,10 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><td>Az Zarqa'</td><td align="right">76</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jo-az.m3u</code></td></tr>
     <tr><td>Irbid</td><td align="right">76</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jo-ir.m3u</code></td></tr>
     <tr><td>Jarash</td><td align="right">76</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jo-ja.m3u</code></td></tr>
+    <tr><td>At Tafilah</td><td align="right">76</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jo-at.m3u</code></td></tr>
+    <tr><td>Ma'an</td><td align="right">76</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jo-mn.m3u</code></td></tr>
     <tr><td>Madaba</td><td align="right">76</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jo-md.m3u</code></td></tr>
+    <tr><td>Irbid</td><td align="right">76</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/jo-ir.m3u</code></td></tr>
   </tbody>
 </table>
 </details>
@@ -2891,7 +2897,6 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><th align="left">Subdivision</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
-    <tr><td>Baalbek-Hermel</td><td align="right">83</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/lb-bh.m3u</code></td></tr>
     <tr><td>Aakkar</td><td align="right">83</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/lb-ak.m3u</code></td></tr>
     <tr><td>Beqaa</td><td align="right">83</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/lb-bi.m3u</code></td></tr>
     <tr><td>Beyrouth</td><td align="right">83</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/lb-ba.m3u</code></td></tr>
@@ -3105,7 +3110,6 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><th align="left">Subdivision</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
-    <tr><td>Addu City</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/mv-01.m3u</code></td></tr>
     <tr><td>Faadhippolhu</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/mv-03.m3u</code></td></tr>
     <tr><td>Felidhu Atoll</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/mv-04.m3u</code></td></tr>
     <tr><td>Hahdhunmathi</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/mv-05.m3u</code></td></tr>
@@ -3317,6 +3321,7 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><th align="left">Subdivision</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
+    <tr><td>Kosrae</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/fm-ksa.m3u</code></td></tr>
     <tr><td>Chuuk</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/fm-trk.m3u</code></td></tr>
     <tr><td>Kosrae</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/fm-ksa.m3u</code></td></tr>
     <tr><td>Yap</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/fm-yap.m3u</code></td></tr>
@@ -3863,6 +3868,8 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><td>Melekeok</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pw-212.m3u</code></td></tr>
     <tr><td>Ngardmau</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pw-222.m3u</code></td></tr>
     <tr><td>Ngaraard</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pw-214.m3u</code></td></tr>
+    <tr><td>Ngardmau</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pw-222.m3u</code></td></tr>
+    <tr><td>Melekeok</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pw-212.m3u</code></td></tr>
   </tbody>
 </table>
 </details>
@@ -3921,6 +3928,7 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><td>Central</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-cpm.m3u</code></td></tr>
     <tr><td>Bougainville</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-nsb.m3u</code></td></tr>
     <tr><td>East New Britain</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-ebr.m3u</code></td></tr>
+    <tr><td>Eastern Highlands</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-ehg.m3u</code></td></tr>
     <tr><td>East Sepik</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-esw.m3u</code></td></tr>
     <tr><td>Madang</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-mpm.m3u</code></td></tr>
     <tr><td>Eastern Highlands</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-ehg.m3u</code></td></tr>
@@ -3932,7 +3940,6 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><td>West New Britain</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-wbk.m3u</code></td></tr>
     <tr><td>West Sepik</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-san.m3u</code></td></tr>
     <tr><td>Western Highlands</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-whm.m3u</code></td></tr>
-    <tr><td>Western</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/pg-wpd.m3u</code></td></tr>
   </tbody>
 </table>
 </details>
@@ -5269,8 +5276,8 @@ Playlists in which channels are grouped by subdivision for which they are broadc
   </thead>
   <tbody>
     <tr><td>Ha'apai</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/to-02.m3u</code></td></tr>
-    <tr><td>Niuas</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/to-03.m3u</code></td></tr>
     <tr><td>Tongatapu</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/to-04.m3u</code></td></tr>
+    <tr><td>Niuas</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/to-03.m3u</code></td></tr>
   </tbody>
 </table>
 </details>
@@ -5431,10 +5438,10 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><th align="left">Subdivision</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
-    <tr><td>Ahal</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/tm-a.m3u</code></td></tr>
     <tr><td>Balkan</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/tm-b.m3u</code></td></tr>
-    <tr><td>Lebap</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/tm-l.m3u</code></td></tr>
+    <tr><td>Ahal</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/tm-a.m3u</code></td></tr>
     <tr><td>Dasoguz</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/tm-d.m3u</code></td></tr>
+    <tr><td>Lebap</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/tm-l.m3u</code></td></tr>
     <tr><td>Mary</td><td align="right">16</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/tm-m.m3u</code></td></tr>
   </tbody>
 </table>
@@ -5608,6 +5615,7 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><th align="left">Subdivision</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
   </thead>
   <tbody>
+    <tr><td>Ash Shariqah</td><td align="right">86</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ae-sh.m3u</code></td></tr>
     <tr><td>'Ajman</td><td align="right">86</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ae-aj.m3u</code></td></tr>
     <tr><td>Abu Zaby</td><td align="right">86</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ae-az.m3u</code></td></tr>
     <tr><td>Al Fujayrah</td><td align="right">86</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ae-fu.m3u</code></td></tr>
@@ -5740,8 +5748,8 @@ Playlists in which channels are grouped by subdivision for which they are broadc
   </thead>
   <tbody>
     <tr><td>Shefa</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/vu-see.m3u</code></td></tr>
-    <tr><td>Tafea</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/vu-tae.m3u</code></td></tr>
     <tr><td>Torba</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/vu-tob.m3u</code></td></tr>
+    <tr><td>Tafea</td><td align="right">7</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/vu-tae.m3u</code></td></tr>
   </tbody>
 </table>
 </details>
@@ -5886,7 +5894,9 @@ Playlists in which channels are grouped by subdivision for which they are broadc
     <tr><td>Ibb</td><td align="right">55</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ye-ib.m3u</code></td></tr>
     <tr><td>Sa'dah</td><td align="right">55</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ye-sd.m3u</code></td></tr>
     <tr><td>Ma'rib</td><td align="right">55</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ye-ma.m3u</code></td></tr>
+    <tr><td>Hajjah</td><td align="right">55</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ye-hj.m3u</code></td></tr>
     <tr><td>San'a'</td><td align="right">55</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ye-sn.m3u</code></td></tr>
+    <tr><td>Sa'dah</td><td align="right">55</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ye-sd.m3u</code></td></tr>
     <tr><td>Ta'izz</td><td align="right">55</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ye-ta.m3u</code></td></tr>
     <tr><td>Shabwah</td><td align="right">55</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ye-sh.m3u</code></td></tr>
   </tbody>

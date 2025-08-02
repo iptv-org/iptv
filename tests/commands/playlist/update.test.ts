@@ -2,13 +2,8 @@ import { pathToFileURL } from 'node:url'
 import { execSync } from 'child_process'
 import * as fs from 'fs-extra'
 import { glob } from 'glob'
-import os from 'os'
 
-let ENV_VAR = 'DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/output/streams'
-if (os.platform() === 'win32') {
-  ENV_VAR =
-    'SET "DATA_DIR=tests/__data__/input/data" && SET "STREAMS_DIR=tests/__data__/output/streams" &&'
-}
+const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/output/streams'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
@@ -29,7 +24,7 @@ describe('playlist:update', () => {
     })
 
     files.forEach(filepath => {
-      expect(content(`tests/__data__/output/streams/${filepath}`), filepath).toBe(
+      expect(content(`tests/__data__/output/streams/${filepath}`)).toBe(
         content(`tests/__data__/expected/playlist_update/${filepath}`)
       )
     })

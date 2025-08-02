@@ -4,6 +4,7 @@ import tsParser from '@typescript-eslint/parser'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import js from '@eslint/js'
+import stylistic from '@stylistic/eslint-plugin'
 import { FlatCompat } from '@eslint/eslintrc'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -18,7 +19,8 @@ export default [
   ...compat.extends('eslint:recommended', 'plugin:@typescript-eslint/recommended'),
   {
     plugins: {
-      '@typescript-eslint': typescriptEslint
+      '@typescript-eslint': typescriptEslint,
+      '@stylistic': stylistic
     },
 
     languageOptions: {
@@ -42,7 +44,7 @@ export default [
         }
       ],
 
-      'linebreak-style': ['error', 'windows'],
+      '@stylistic/linebreak-style': ['error', 'windows'],
       quotes: ['error', 'single'],
       semi: ['error', 'never']
     }

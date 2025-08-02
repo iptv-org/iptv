@@ -1,8 +1,15 @@
 import { ApiClient } from './apiClient'
 import { Storage } from '@freearhey/core'
 import cliProgress, { MultiBar } from 'cli-progress'
-import numeral from 'numeral'
 import type { DataLoaderProps, DataLoaderData } from '../types/dataLoader'
+
+const formatBytes = (bytes: number) => {
+  if (bytes === 0) return '0 B'
+  const k = 1024
+  const sizes = ['B', 'KB', 'MB', 'GB']
+  const i = Math.floor(Math.log(bytes) / Math.log(k))
+  return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i]
+}
 
 export class DataLoader {
   client: ApiClient
@@ -21,8 +28,8 @@ export class DataLoader {
         const filename = payload.filename.padEnd(18, ' ')
         const barsize = options.barsize || 40
         const percent = (params.progress * 100).toFixed(2)
-        const speed = payload.speed ? numeral(payload.speed).format('0.0 b') + '/s' : 'N/A'
-        const total = numeral(params.total).format('0.0 b')
+        const speed = payload.speed ? formatBytes(payload.speed) + '/s' : 'N/A'
+        const total = formatBytes(params.total)
         const completeSize = Math.round(params.progress * barsize)
         const incompleteSize = barsize - completeSize
         const bar =

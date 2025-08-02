@@ -4,7 +4,7 @@ import { DATA_DIR, LOGS_DIR, STREAMS_DIR } from '../../constants'
 import type { DataLoaderData } from '../../types/dataLoader'
 import { Logger, Storage, File } from '@freearhey/core'
 import { Stream } from '../../models'
-import { uniqueId } from 'lodash'
+import uniqueId from 'lodash.uniqueid'
 import {
   IndexCategoryGenerator,
   IndexLanguageGenerator,

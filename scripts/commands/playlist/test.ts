@@ -4,8 +4,8 @@ import { PlaylistParser, StreamTester, CliTable, DataProcessor, DataLoader } fro
 import { Stream } from '../../models'
 import { program } from 'commander'
 import { eachLimit } from 'async-es'
-import commandExists from 'command-exists'
 import chalk from 'chalk'
+import child_process from 'node:child_process'
 import os from 'node:os'
 import dns from 'node:dns'
 import type { DataLoaderData } from '../../types/dataLoader'
@@ -46,10 +46,12 @@ async function main() {
     return
   }
 
-  if (!commandExists.sync('ffprobe')) {
+  try {
+    child_process.execSync('ffprobe -version', { stdio: 'ignore' })
+  } catch {
     logger.error(
       chalk.red(
-        'For the script to work, the “ffprobe” library must be installed (https://ffmpeg.org/download.html)'
+        'For the script to work, the "ffprobe" library must be installed (https://ffmpeg.org/download.html)'
       )
     )
 

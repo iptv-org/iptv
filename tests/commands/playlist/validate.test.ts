@@ -1,16 +1,11 @@
 import { execSync } from 'child_process'
-import os from 'os'
 
 type ExecError = {
   status: number
   stdout: string
 }
 
-let ENV_VAR = 'DATA_DIR=tests/__data__/input/data ROOT_DIR=tests/__data__/input/playlist_validate'
-if (os.platform() === 'win32') {
-  ENV_VAR =
-    'SET "DATA_DIR=tests/__data__/input/data" && SET "ROOT_DIR=tests/__data__/input/playlist_validate" &&'
-}
+const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/data ROOT_DIR=tests/__data__/input/playlist_validate'
 
 describe('playlist:validate', () => {
   it('show an error if channel id in the blocklist', () => {
