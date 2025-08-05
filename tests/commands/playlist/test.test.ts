@@ -1,15 +1,11 @@
 import { execSync } from 'child_process'
-import os from 'node:os'
 
 type ExecError = {
   status: number
   stdout: string
 }
 
-let ENV_VAR = 'ROOT_DIR=tests/__data__/input DATA_DIR=tests/__data__/input/data'
-if (os.platform() === 'win32') {
-  ENV_VAR = 'SET "ROOT_DIR=tests/__data__/input" && SET "DATA_DIR=tests/__data__/input/data" &&'
-}
+const ENV_VAR = 'cross-env ROOT_DIR=tests/__data__/input DATA_DIR=tests/__data__/input/data'
 
 describe('playlist:test', () => {
   it('shows an error if the playlist contains a broken link', () => {
