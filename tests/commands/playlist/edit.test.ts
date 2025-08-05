@@ -1,16 +1,12 @@
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
-import os from 'os'
 
 type ExecError = {
   status: number
   stdout: string
 }
 
-let ENV_VAR = 'DATA_DIR=tests/__data__/input/data'
-if (os.platform() === 'win32') {
-  ENV_VAR = 'SET "DATA_DIR=tests/__data__/input/data" &&'
-}
+const ENV_VAR = 'cross-env DATA_DIR=tests/__data__/input/data'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
