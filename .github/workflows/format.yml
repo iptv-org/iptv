@@ -25,7 +25,6 @@ jobs:
         with:
           token: ${{ steps.create-app-token.outputs.token }}
       - uses: actions/setup-node@v4
-        if: ${{ !env.ACT }}
         with:
           node-version: 22
           cache: 'npm'
@@ -44,7 +43,6 @@ jobs:
       - name: changed files
         id: files_after
         run: |
-          git fetch origin master:master
           ANY_CHANGED=false
           ALL_CHANGED_FILES=$(git diff --name-only master -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
@@ -81,7 +79,6 @@ jobs:
       - name: changed files
         id: files
         run: |
-          git fetch origin master:master
           ANY_CHANGED=false
           ALL_CHANGED_FILES=$(git diff --name-only master -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
@@ -90,7 +87,7 @@ jobs:
           echo "all_changed_files=$ALL_CHANGED_FILES" >> "$GITHUB_OUTPUT"
           echo "any_changed=$ANY_CHANGED" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
-        if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
+        if: ${{ steps.files.outputs.any_changed == 'true' }}
         with:
           node-version: 22
           cache: 'npm'
@@ -117,7 +114,7 @@ jobs:
         id: files_after
         run: |
           ANY_CHANGED=false
-          ALL_CHANGED_FILES=$(git diff --name-only origin/master HEAD streams/ | tr '\n' ' ')
+          ALL_CHANGED_FILES=$(git diff --name-only master -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
             ANY_CHANGED=true
           fi
