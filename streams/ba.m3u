@@ -1,10 +1,17 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="AlJazeeraBalkans.ba",Al Jazeera Balkans (1080p)
 https://live-hls-apps-ajb-v3-fa.getaj.net/AJB/index.m3u8
+#EXTINF:-1 tvg-id="AlJazeeraBalkans.ba",Al Jazeera Balkans (1080p)
+https://live-hls-web-ajb-fa.thehlive.com/AJB/index.m3u8
+#EXTINF:-1 tvg-id="ArenaSport1.ba@SD",Arena Sport 1 (720p)
+http://91.132.74.5:8000/play/a00k
 #EXTINF:-1 tvg-id="BHRT.ba",BHRT (720p) [Geo-blocked]
 https://bhrtstream.bhtelecom.ba/bhrtportal.m3u8
 #EXTINF:-1 tvg-id="BHRT.ba",BHRT (270p) [Geo-blocked]
 https://bhrtstream.bhtelecom.ba/hls15/bhrtportal.m3u8
+#EXTINF:-1 tvg-id="BHT1.ba" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.10 Safari/605.1.1",BHT 1 (720p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.10 Safari/605.1.1
+https://webtvstream.bhtelecom.ba/hls13/bhrtportal_hd_1200.m3u8
 #EXTINF:-1 tvg-id="BNTV.ba",BN TV (480p)
 https://rtvbn.tv:8080/live/index.m3u8
 #EXTINF:-1 tvg-id="Kanal6.ba",Kanal 6 (288p)
@@ -13,6 +20,8 @@ https://restreamer1.tnt.ba/hls/kanal6.m3u8
 https://webtvstream.bhtelecom.ba/malta.m3u8
 #EXTINF:-1 tvg-id="MariaPlusVisionMedjugorje.ba",María+Visión Medjugorje (720p)
 https://1601580044.rsc.cdn77.org/live/_jcn_/amlst:Italiasette/playlist.m3u8
+#EXTINF:-1 tvg-id="NovaTV.ba@SD",Nova TV (1080p)
+http://91.132.74.5:8000/play/a005
 #EXTINF:-1 tvg-id="NTVICKakanj.ba",NTV IC Kakanj (720p)
 https://lon.rtsp.me/dEqnY-myGj84bKrieCIPfA/1743271667/hls/3dH3YAD6.m3u8
 #EXTINF:-1 tvg-id="RTRSplus.ba",RTRS Plus (576p) [Not 24/7]
@@ -35,12 +44,3 @@ https://live.tv-m.net/hls/stream.m3u8
 https://restreamer1.tnt.ba/hls/tntkids.m3u8
 #EXTINF:-1 tvg-id="TVSlonExtra.ba",TV Slon Extra (1080p) [Not 24/7]
 http://31.47.0.130:8082
-#EXTINF:-1 tvg-id="AlJazeeraBalkans.ba",Al Jazeera Balkans (1080p)
-https://live-hls-web-ajb-fa.thehlive.com/AJB/index.m3u8
-#EXTINF:-1 tvg-id="BHT1.ba" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.10 Safari/605.1.1",BHT 1 (720p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.10 Safari/605.1.1
-https://webtvstream.bhtelecom.ba/hls13/bhrtportal_hd_1200.m3u8
-#EXTINF:-1 tvg-id="ArenaSport1.ba@SD",Arena Sport 1 (720p)
-http://91.132.74.5:8000/play/a00k
-#EXTINF:-1 tvg-id="NovaTV.ba@SD",Nova TV (1080p)
-http://91.132.74.5:8000/play/a005

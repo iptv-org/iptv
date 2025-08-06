@@ -15,6 +15,8 @@ http://s5.alfaomega.tv:1935/alfaomega/alfaomega1.sdp/playlist.m3u8
 http://s5.alfaomega.tv:1935/alfaomega/smil:alfaomegatv/playlist.m3u8
 #EXTINF:-1 tvg-id="AngelusTV.ro",Angelus TV (720p)
 https://transmisiuni.ro/media/oracatolica/playlist.m3u8
+#EXTINF:-1 tvg-id="Antena1.ro",Antena 1 (720p) [Not 24/7]
+https://live1ag.antenaplay.ro/live_a1ro/live_a1ro.m3u8
 #EXTINF:-1 tvg-id="AntenaMonden.ro",Antena Monden (720p)
 https://stream1.antenaplay.ro/live/AntenaMonden/playlist.m3u8
 #EXTINF:-1 tvg-id="AntenaSport.ro",AntenaSport (720p) [Not 24/7]
@@ -33,6 +35,10 @@ https://atomic.streamnet.ro/academia.m3u8
 https://atomic.streamnet.ro/atomictv.m3u8
 #EXTINF:-1 tvg-id="BanatTV.ro",Banat TV (720p)
 https://www.btv.ro/hls/banat-tv.m3u8
+#EXTINF:-1 tvg-id="BollywoodClassic.ro@SD",Bollywood Classic
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-classic/manifest.m3u8
+#EXTINF:-1 tvg-id="BollywoodHD.ro@SD",Bollywood HD
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8
 #EXTINF:-1 tvg-id="BucovinaTV.ro",Bucovina TV (480p) [Not 24/7]
 http://46.4.14.12:9999/btvsvlive/playlist.m3u8
 #EXTINF:-1 tvg-id="CardioTVSRC.ro",Cardio TV SRC (720p)
@@ -50,8 +56,6 @@ http://cdn.credonet.tv:1935/ctv/livecredo/playlist.m3u8
 #EXTINF:-1 tvg-id="CredoTV.ro",Credo TV (720p) [Not 24/7]
 https://5bb3298db4821.streamlock.net/ctv/livecredo/playlist.m3u8
 #EXTINF:-1 tvg-id="Digi24.ro@SD",Digi 24 (720p)
-https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
-#EXTINF:-1 tvg-id="Digi24.ro",Digi 24 (576p)
 https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.ro",Disney Channel Romania (576i)
 http://193.106.124.204:3000/play/a036
@@ -79,6 +83,8 @@ https://online.tvimpact.live/hls/impact_tv.m3u8
 http://edge8.imcr.ro:1359/live/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="InfoTVRomania.ro",Info TV România (1080p)
 https://vmi347009.contaboserver.net/live/stream/index.m3u8
+#EXTINF:-1 tvg-id="InformatiaTV.ro@SD",Informatia TV
+https://informatia.streamnet.ro/mobile_tv/informatiatv.m3u8
 #EXTINF:-1 tvg-id="IntermediaTV.ro",Intermedia TV (576p) [Not 24/7]
 http://46.4.14.12:9999/intermedia1/playlist.m3u8
 #EXTINF:-1 tvg-id="IntermediaTV.ro",Intermedia TV (576p) [Not 24/7]
@@ -107,8 +113,12 @@ https://www.livemetropolatv.ro/MetropolaTV/Metro/playlist.m3u8
 https://stream1.antenaplay.ro/live/MireasaExtra/playlist.m3u8
 #EXTINF:-1 tvg-id="MISATV.ro",MISA TV (720p)
 https://vid4.misatv.ro:5050/MSTV/romanian/playlist.m3u8
+#EXTINF:-1 tvg-id="MISATV.ro@SD",MISA TV
+https://vidl.misatv.ro:5050/MSTV/romanian_720p_baseline/playlist.m3u8
 #EXTINF:-1 tvg-id="",Moinesti FM (720p)
 https://video.moinestifm.ro/hls/moinestifm.m3u8
+#EXTINF:-1 tvg-id="MoinestiTV.ro",Moinesti TV (720p)
+https://flus.moinestifm.ro/ro.moinesti/index.m3u8
 #EXTINF:-1 tvg-id="MoozDance.ro" http-referrer="https://mooz.tv/live-ro/#MoozDance",MoozDance (576p)
 #EXTVLCOPT:http-referrer=https://mooz.tv/live-ro/#MoozDance
 https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8
@@ -134,6 +144,8 @@ https://stream1.1616.ro:1945/prima/livestream/playlist.m3u8
 https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0
 #EXTINF:-1 tvg-id="PROFI24TV.ro",PROFI 24 TV (576p)
 https://profi24-u3391.vm.elestio.app/hls/stream.m3u8
+#EXTINF:-1 tvg-id="PROFI24TV.ro@SD",PROFI 24 TV
+https://owncast-jjg42-u20330.vm.elestio.app/hls/0/stream.m3u8
 #EXTINF:-1 tvg-id="ProfitNews.ro",Profit News (404p)
 https://stream1.1616.ro:1945/profit/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="ProfitNews.ro",Profit News (404p) [Not 24/7]
@@ -169,14 +181,21 @@ https://stream-aleph.m.ro/Aleph/ngrp:Smartv.stream_all/playlist.m3u8
 https://customer-x8zydurm357k8j9p.cloudflarestream.com/0dd00c080ff4cbe839a12c923610a55c/manifest/video.m3u8
 #EXTINF:-1 tvg-id="SuperTV.ro",Super TV (576p)
 http://iptv.supertv.ro:8000/play/a001/index.m3u8
+#EXTINF:-1 tvg-id="SuperTV.ro" http-referrer="https://supertv.ro",Super TV (1080i) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://supertv.ro
+https://live.supertv.ro/live/supertv/playlist.m3u8
 #EXTINF:-1 tvg-id="Tele7ABCHD.ro",Tele7ABC HD (720p)
 https://live.tele7abc.ro/hls/stream/index.m3u8
 #EXTINF:-1 tvg-id="Tele7music.ro",Tele7music (720p)
 https://live.tele7music.ro/hls/stream/index.m3u8
 #EXTINF:-1 tvg-id="TeleMBotosani.ro",TeleM Botosani (540p) [Not 24/7]
 http://89.137.197.15:8080/testing/pl5/playlist/ram/playlist.m3u8
+#EXTINF:-1 tvg-id="TeleMoldovaPlus.ro@SD",TeleMoldova + [Geo-blocked]
+https://vdo.ssl-stream.com:3247/stream/play.m3u8
 #EXTINF:-1 tvg-id="Telestar1.ro",Telestar1 (360p) [Not 24/7]
 http://89.47.97.15/telestar/telestar.m3u8
+#EXTINF:-1 tvg-id="Telestar1.ro@SD",Telestar1
+https://dvb.tennet.ro/mobile_tv/telestar.m3u8
 #EXTINF:-1 tvg-id="TezaurTV.ro",Tezaur TV (576p) [Not 24/7]
 https://testcam.go.ro:8080/hls/tezaurtv.m3u8
 #EXTINF:-1 tvg-id="TraditionalTV.ro",Traditional TV (1080p)
@@ -243,24 +262,3 @@ https://mn-nl.mncdn.com/tvrtgmures_new/smil:tvrtgmures_new.smil/index.m3u8
 https://tvr-tvrtimisoara.cdn.zitec.com/live/tvrtimisoara/main.m3u8
 #EXTINF:-1 tvg-id="TVSat.ro",TVSat (576p) [Not 24/7]
 http://89.38.8.130:39443
-#EXTINF:-1 tvg-id="SuperTV.ro" http-referrer="https://supertv.ro",Super TV (1080i) [Not 24/7]
-#EXTVLCOPT:http-referrer=https://supertv.ro
-https://live.supertv.ro/live/supertv/playlist.m3u8
-#EXTINF:-1 tvg-id="Antena1.ro",Antena 1 (720p) [Not 24/7]
-https://live1ag.antenaplay.ro/live_a1ro/live_a1ro.m3u8
-#EXTINF:-1 tvg-id="MoinestiTV.ro",Moinesti TV (720p)
-https://flus.moinestifm.ro/ro.moinesti/index.m3u8
-#EXTINF:-1 tvg-id="InformatiaTV.ro@SD",Informatia TV
-https://informatia.streamnet.ro/mobile_tv/informatiatv.m3u8
-#EXTINF:-1 tvg-id="MISATV.ro@SD",MISA TV
-https://vidl.misatv.ro:5050/MSTV/romanian_720p_baseline/playlist.m3u8
-#EXTINF:-1 tvg-id="PROFI24TV.ro@SD",PROFI 24 TV
-https://owncast-jjg42-u20330.vm.elestio.app/hls/0/stream.m3u8
-#EXTINF:-1 tvg-id="Telestar1.ro@SD",Telestar1
-https://dvb.tennet.ro/mobile_tv/telestar.m3u8
-#EXTINF:-1 tvg-id="BollywoodClassic.ro@SD",Bollywood Classic
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-classic/manifest.m3u8
-#EXTINF:-1 tvg-id="BollywoodHD.ro@SD",Bollywood HD
-https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/bollywood-hd/manifest.m3u8
-#EXTINF:-1 tvg-id="TeleMoldovaPlus.ro@SD",TeleMoldova + [Geo-blocked]
-https://vdo.ssl-stream.com:3247/stream/play.m3u8
