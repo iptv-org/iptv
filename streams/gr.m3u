@@ -21,8 +21,12 @@ http://d1nfykbwa3n98t.cloudfront.net/out/v1/6e5667da5a6843899a337dea72adb61b/ant
 #EXTVLCOPT:http-referrer=http://watch.antennaplus.gr
 #EXTVLCOPT:http-user-agent=Chrome
 https://mcdn.antennaplus.gr/live/media0/Ant1/HLS/Ant1.m3u8
+#EXTINF:-1 tvg-id="ANT1.gr@HD",ANT1 HD (1080p)
+http://31.121.110.30:4000/play/a028/index.m3u8
 #EXTINF:-1 tvg-id="ART.gr",APT (1080p)
 https://hugh.cdn.rumble.cloud/live/k5e12sb4/slot-82/fdd0-tbln/chunklist_DVR.m3u8
+#EXTINF:-1 tvg-id="ARTTV.gr",ART TV
+https://rtmp.win:3696/live/arttvgrlive.m3u8
 #EXTINF:-1 tvg-id="AstraTV.gr",Astra TV (480p) [Not 24/7]
 https://ssh101.bozztv.com/ssh101/astratv/playlist.m3u8
 #EXTINF:-1 tvg-id="AtticaTV.gr",Attica TV (1080p)
@@ -63,6 +67,10 @@ https://ssh101.bozztv.com/ssh101/diavatatvweb/playlist.m3u8
 https://5d00db0e0fcd5.streamlock.net/7322/7322/playlist.m3u8
 #EXTINF:-1 tvg-id="DipsoTV.gr",Dipso TV (720p) [Not 24/7]
 https://live.cast-control.eu/ekpdipso/ekpdipso/playlist.m3u8
+#EXTINF:-1 tvg-id="EcclesiaTV.gr",Ecclesia TV (1080p)
+https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8
+#EXTINF:-1 tvg-id="EgnatiaTV.gr",Egnatia TV (576p)
+https://video.streams.ovh:1936/egnatiatv/egnatiatv/index.m3u8
 #EXTINF:-1 tvg-id="EllasTV.gr",Ellas TV (1080p)
 http://ellastv.gotdns.com:88/freetv/promo/index.m3u8
 #EXTINF:-1 tvg-id="EllinikosFM.gr",Ellinikos FM (720p)
@@ -79,8 +87,12 @@ https://channel.streams.ovh:1936/epsilontv/epsilontv/playlist.m3u8
 http://88.99.254.101/ert1/mono.m3u8
 #EXTINF:-1 tvg-id="ERT2.gr",ERT2
 http://88.99.254.101/ert2/mono.m3u8
+#EXTINF:-1 tvg-id="ERT2.gr@HD",ERT2 HD (1080p)
+http://31.121.110.30:4000/play/a02a/index.m3u8
 #EXTINF:-1 tvg-id="ERT3.gr",ERT3
 http://88.99.254.101/ert3/mono.m3u8
+#EXTINF:-1 tvg-id="ERT3.gr@HD",ERT3 HD (1080p)
+http://31.121.110.30:4000/play/a029/index.m3u8
 #EXTINF:-1 tvg-id="ERTNews.gr",ERT News (1080p)
 http://ertflix.s.llnwi.net/ertlive/ertnews/default/index.m3u8
 #EXTINF:-1 tvg-id="ERTNews.gr",ERT News (1080p)
@@ -97,6 +109,8 @@ http://cbd537474fbad4634b64787657ff6456.msvdn.net/sports2/ert_sports2_main/maina
 https://cbd537474fbad4634b64787657ff6456.msvdn.net/ertworld/ert_world_main/mainabr/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="ERTWorld.gr",ERT World (720p)
 https://ert-live-bcbs15228.siliconweb.com/media/ert_world/ert_world.m3u8
+#EXTINF:-1 tvg-id="ExtacyTV.gr@SD",Extacy TV
+https://fr.crystalweb.net:1936/extacytv/extacytv/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV.gr",Faros TV (540p) [Geo-blocked]
 https://s1.cystream.net/live/faros1/playlist.m3u8
 #EXTINF:-1 tvg-id="FarosTV2.gr",Faros TV2 (480p) [Geo-blocked]
@@ -146,6 +160,8 @@ https://ellastvmax.better-than.tv/freetv/madworldtv/index.m3u8
 https://itv.streams.ovh/magictv/magictv/playlist.m3u8
 #EXTINF:-1 tvg-id="MesogeiosTV.gr",Mesogeios TV (404p)
 https://til.pp.ua:3872/live/mesogeiostvlive.m3u8
+#EXTINF:-1 tvg-id="MessatidaTV.gr",Messatida TV (450p) [Not 24/7]
+https://vod.streams.ovh:3037/stream/play.m3u8
 #EXTINF:-1 tvg-id="MGRTV.gr",MGR TV (1080p) [Not 24/7]
 https://vod.streams.ovh:3876/stream/play.m3u8
 #EXTINF:-1 tvg-id="NaftemporikiTV.gr",Naftemporiki TV (1080p)
@@ -231,6 +247,8 @@ https://raw.githubusercontent.com/azgaresncf/strm2hls/main/streams/thessaliatv.m
 https://cdn.onestreaming.com/thrakinettv/thrakinettv/playlist.m3u8
 #EXTINF:-1 tvg-id="Tilemousiki.gr",Tilemousiki (480p) [Not 24/7]
 http://wpso.com:1936/hls/music1.m3u8
+#EXTINF:-1 tvg-id="Tilemousiki.gr@SD",Tilemousiki
+https://live20.bozztv.com/akamaissh101/ssh101/tilemousiki/playlist.m3u8
 #EXTINF:-1 tvg-id="TopChannel.gr",Top Channel (720p)
 http://eu1.vectromdigital.com:1935/topchannel/topchannel/playlist.m3u8
 #EXTINF:-1 tvg-id="TRT.gr",TRT (360p)
@@ -263,25 +281,7 @@ https://streamer-cache.grnet.gr/parliament/parltv.sdp/master.m3u8
 https://streamer-cache.grnet.gr/parliament/hls/webtv2.m3u8
 #EXTINF:-1 tvg-id="HellenicParliamentTV3.gr",Βουλή Τηλεόραση 3 (540p) [Not 24/7]
 https://streamer-cache.grnet.gr/parliament/hls/webtv3.m3u8
-#EXTINF:-1 tvg-id="EgnatiaTV.gr",Egnatia TV (576p)
-https://video.streams.ovh:1936/egnatiatv/egnatiatv/index.m3u8
-#EXTINF:-1 tvg-id="EcclesiaTV.gr",Ecclesia TV (1080p)
-https://liveopen.siliconweb.com/openTvLive/openEcclessia/playlist.m3u8
 #EXTINF:-1 tvg-id="KritiTV.gr",Κρήτη TV (720p) [Not 24/7]
 http://live.cretetv.gr:1935/cretetv/myStream/f1tv.m3u8
-#EXTINF:-1 tvg-id="MessatidaTV.gr",Messatida TV (450p) [Not 24/7]
-https://vod.streams.ovh:3037/stream/play.m3u8
 #EXTINF:-1 tvg-id="RIKSat.cy",ΡΙΚ Sat (720p) [Not 24/7]
 http://l3.cloudskep.com/cybcsat/abr/playlist.m3u8
-#EXTINF:-1 tvg-id="ARTTV.gr",ART TV
-https://rtmp.win:3696/live/arttvgrlive.m3u8
-#EXTINF:-1 tvg-id="Tilemousiki.gr@SD",Tilemousiki
-https://live20.bozztv.com/akamaissh101/ssh101/tilemousiki/playlist.m3u8
-#EXTINF:-1 tvg-id="ExtacyTV.gr@SD",Extacy TV
-https://fr.crystalweb.net:1936/extacytv/extacytv/playlist.m3u8
-#EXTINF:-1 tvg-id="ANT1.gr@HD",ANT1 HD (1080p)
-http://31.121.110.30:4000/play/a028/index.m3u8
-#EXTINF:-1 tvg-id="ERT3.gr@HD",ERT3 HD (1080p)
-http://31.121.110.30:4000/play/a029/index.m3u8
-#EXTINF:-1 tvg-id="ERT2.gr@HD",ERT2 HD (1080p)
-http://31.121.110.30:4000/play/a02a/index.m3u8
