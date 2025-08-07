@@ -5,8 +5,9 @@ import { Stream, Playlist } from '../../models'
 import { program } from 'commander'
 import { DataLoaderData } from '../../types/dataLoader'
 import { DataProcessorData } from '../../types/dataProcessor'
+import path from 'node:path'
 
-program.argument('[filepath]', 'Path to file to validate').parse(process.argv)
+program.argument('[filepath...]', 'Path to file to format').parse(process.argv)
 
 async function main() {
   const logger = new Logger()
@@ -27,7 +28,8 @@ async function main() {
     feedsGroupedByChannelId,
     logosGroupedByStreamId
   })
-  const files = program.args.length ? program.args : await streamsStorage.list('**/*.m3u')
+  let files = program.args.length ? program.args : await streamsStorage.list('**/*.m3u')
+  files = files.map((filepath: string) => path.basename(filepath))
   let streams = await parser.parse(files)
 
   logger.info(`found ${streams.count()} streams`)

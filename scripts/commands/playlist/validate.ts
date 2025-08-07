@@ -7,7 +7,7 @@ import { BlocklistRecord, Stream } from '../../models'
 import { program } from 'commander'
 import chalk from 'chalk'
 
-program.argument('[filepath]', 'Path to file to validate').parse(process.argv)
+program.argument('[filepath...]', 'Path to file to validate').parse(process.argv)
 
 type LogItem = {
   type: string
