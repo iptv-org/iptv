@@ -24,7 +24,7 @@ let streams = new Collection()
 let isLiveUpdateEnabled = true
 
 program
-  .argument('[filepath]', 'Path to file to validate')
+  .argument('[filepath...]', 'Path to file to test')
   .option(
     '-p, --parallel <number>',
     'Batch size of streams to test concurrently',
