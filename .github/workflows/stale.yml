@@ -1,0 +1,24 @@
+name: stale
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+permissions:
+  issues: write
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: tibdex/github-app-token@v1.8.2
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+      - uses: actions/stale@v9
+        with:
+          repo-token: ${{ steps.create-app-token.outputs.token }}
+          days-before-stale: 180
+          days-before-close: 7
+          stale-issue-label: 'stale'
+          any-of-issue-labels: 'channel search'
+          close-issue-message: 'This request has been closed because it has been inactive for more than 180 days.'
