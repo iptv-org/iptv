@@ -342,10 +342,6 @@ export class Stream {
     return this.feed ? this.feed.isBroadcastInRegion(region) : false
   }
 
-  isInternational(): boolean {
-    return this.feed ? this.feed.isInternational() : false
-  }
-
   getLogos(): Collection {
     function format(logo: Logo): number {
       const levelByFormat = { SVG: 0, PNG: 3, APNG: 1, WebP: 1, AVIF: 1, JPEG: 2, GIF: 1 }
