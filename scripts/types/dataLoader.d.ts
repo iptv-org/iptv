@@ -17,4 +17,5 @@ export type DataLoaderData = {
   timezones: object | object[]
   guides: object | object[]
   streams: object | object[]
+  cities: object | object[]
 }
