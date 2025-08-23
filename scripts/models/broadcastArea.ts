@@ -31,6 +31,7 @@ export class BroadcastArea {
           const city: City = citiesKeyByCode.get(code)
           if (!city) return
           citiesIncluded.add(city)
+          if (city.subdivision) subdivisionsIncluded.add(city.subdivision)
         }
         case 's': {
           const subdivision: Subdivision = subdivisionsKeyByCode.get(code)
