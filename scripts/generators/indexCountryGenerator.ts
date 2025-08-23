@@ -26,7 +26,12 @@ export class IndexCountryGenerator implements Generator {
       .orderBy((stream: Stream) => stream.getTitle())
       .filter((stream: Stream) => stream.isSFW())
       .forEach((stream: Stream) => {
-        if (!stream.hasBroadcastArea()) return
+        if (!stream.hasBroadcastArea()) {
+          const streamClone = stream.clone()
+          streamClone.groupTitle = 'Undefined'
+          groupedStreams.add(streamClone)
+          return
+        }
 
         stream.getBroadcastCountries().forEach((country: Country) => {
           const streamClone = stream.clone()
@@ -35,7 +40,11 @@ export class IndexCountryGenerator implements Generator {
         })
       })
 
-    groupedStreams = groupedStreams.orderBy((stream: Stream) => stream.groupTitle)
+    groupedStreams = groupedStreams.orderBy((stream: Stream) => {
+      if (stream.groupTitle === 'Undefined') return 'ZZZ'
+
+      return stream.groupTitle
+    })
 
     const playlist = new Playlist(groupedStreams, { public: true })
     const filepath = 'index.country.m3u'
