@@ -40,17 +40,5 @@ export class CountriesGenerator implements Generator {
         JSON.stringify({ type: 'country', filepath, count: playlist.streams.count() }) + EOL
       )
     })
-
-    const undefinedStreams = streams.filter((stream: Stream) => !stream.hasBroadcastArea())
-    const undefinedPlaylist = new Playlist(undefinedStreams, { public: true })
-    const undefinedFilepath = 'countries/undefined.m3u'
-    await this.storage.save(undefinedFilepath, undefinedPlaylist.toString())
-    this.logFile.append(
-      JSON.stringify({
-        type: 'country',
-        filepath: undefinedFilepath,
-        count: undefinedPlaylist.streams.count()
-      }) + EOL
-    )
   }
 }
