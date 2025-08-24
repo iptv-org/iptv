@@ -1,4 +1,4 @@
-import { Country, Language, Region, Channel, Subdivision, BroadcastArea } from './index'
+import { Country, Language, Region, Channel, Subdivision, BroadcastArea, City } from './index'
 import { Collection, Dictionary } from '@freearhey/core'
 import type { FeedData } from '../types/feed'
 
@@ -120,6 +120,12 @@ export class Feed {
     )
   }
 
+  isBroadcastInCity(city: City): boolean {
+    if (!this.broadcastArea) return false
+
+    return this.broadcastArea.includesCity(city)
+  }
+
   isBroadcastInSubdivision(subdivision: Subdivision): boolean {
     if (!this.broadcastArea) return false
 
@@ -129,13 +135,19 @@ export class Feed {
   isBroadcastInCountry(country: Country): boolean {
     if (!this.broadcastArea) return false
 
-    return this.broadcastArea?.includesCountry(country)
+    return this.broadcastArea.includesCountry(country)
   }
 
   isBroadcastInRegion(region: Region): boolean {
     if (!this.broadcastArea) return false
 
-    return this.broadcastArea?.includesRegion(region)
+    return this.broadcastArea.includesRegion(region)
+  }
+
+  isInternational(): boolean {
+    if (!this.broadcastArea) return false
+
+    return this.broadcastArea.codes.join(',').includes('r/')
   }
 
   getGuides(): Collection {
