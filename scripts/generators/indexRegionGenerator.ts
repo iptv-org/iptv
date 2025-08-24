@@ -31,6 +31,8 @@ export class IndexRegionGenerator implements Generator {
         if (!stream.hasBroadcastArea()) return
 
         stream.getBroadcastRegions().forEach((region: Region) => {
+          if (region.isWorldwide()) return
+
           const streamClone = stream.clone()
           streamClone.groupTitle = region.name
           groupedStreams.push(streamClone)

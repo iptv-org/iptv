@@ -1,4 +1,14 @@
-import { Feed, Channel, Category, Region, Subdivision, Country, Language, Logo } from './index'
+import {
+  Feed,
+  Channel,
+  Category,
+  Region,
+  Subdivision,
+  Country,
+  Language,
+  Logo,
+  City
+} from './index'
 import { URL, Collection, Dictionary } from '@freearhey/core'
 import type { StreamData } from '../types/stream'
 import parser from 'iptv-playlist-parser'
@@ -330,6 +340,10 @@ export class Stream {
     return this.feed ? this.feed.broadcastAreaCodes : new Collection()
   }
 
+  isBroadcastInCity(city: City): boolean {
+    return this.feed ? this.feed.isBroadcastInCity(city) : false
+  }
+
   isBroadcastInSubdivision(subdivision: Subdivision): boolean {
     return this.feed ? this.feed.isBroadcastInSubdivision(subdivision) : false
   }
@@ -340,6 +354,10 @@ export class Stream {
 
   isBroadcastInRegion(region: Region): boolean {
     return this.feed ? this.feed.isBroadcastInRegion(region) : false
+  }
+
+  isInternational(): boolean {
+    return this.feed ? this.feed.isInternational() : false
   }
 
   getLogos(): Collection {

@@ -31,18 +31,19 @@ export class BroadcastArea {
           const city: City = citiesKeyByCode.get(code)
           if (!city) return
           citiesIncluded.add(city)
-          if (city.subdivision) subdivisionsIncluded.add(city.subdivision)
+          regionsIncluded = regionsIncluded.concat(city.getRegions())
         }
         case 's': {
           const subdivision: Subdivision = subdivisionsKeyByCode.get(code)
           if (!subdivision) return
-          citiesIncluded = citiesIncluded.concat(subdivision.getCities())
           subdivisionsIncluded.add(subdivision)
+          regionsIncluded = regionsIncluded.concat(subdivision.getRegions())
         }
         case 'c': {
           const country: Country = countriesKeyByCode.get(code)
           if (!country) return
           countriesIncluded.add(country)
+          regionsIncluded = regionsIncluded.concat(country.getRegions())
         }
         case 'r': {
           const region: Region = regionsKeyByCode.get(code)
