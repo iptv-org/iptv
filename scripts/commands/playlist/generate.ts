@@ -16,6 +16,7 @@ import {
   LanguagesGenerator,
   RegionsGenerator,
   SourcesGenerator,
+  CitiesGenerator,
   IndexGenerator,
   RawGenerator
 } from '../../generators'
@@ -36,7 +37,8 @@ async function main() {
     subdivisions,
     categories,
     countries,
-    regions
+    regions,
+    cities
   }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
@@ -86,6 +88,13 @@ async function main() {
   logger.info('generating subdivisions/...')
   await new SubdivisionsGenerator({
     subdivisions,
+    streams,
+    logFile
+  }).generate()
+
+  logger.info('generating cities/...')
+  await new CitiesGenerator({
+    cities,
     streams,
     logFile
   }).generate()

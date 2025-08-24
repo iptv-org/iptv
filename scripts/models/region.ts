@@ -78,6 +78,10 @@ export class Region {
     return this.countryCodes.includes((countryCode: string) => countryCode === code)
   }
 
+  isWorldwide(): boolean {
+    return ['INT', 'WW'].includes(this.code)
+  }
+
   serialize(): RegionSerializedData {
     return {
       code: this.code,
