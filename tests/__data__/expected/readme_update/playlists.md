@@ -1,12 +1,14 @@
-# Playlists
+## Playlists
+
+There are several versions of playlists that differ in the way they are grouped. As of January 30th, 2024, we have stopped distributing NSFW channels. For more information, please look at [this issue](https://github.com/iptv-org/iptv/issues/15723).
 
 ### Grouped by category
+
+Playlists in which channels are grouped by category.
 
 <details>
 <summary>Expand</summary>
 <br>
-
-Playlist in which each channel has its _category_ as a group title:
 
 ```
 https://iptv-org.github.io/iptv/index.category.m3u
@@ -56,11 +58,11 @@ Same thing, but split up into separate files:
 
 ### Grouped by language
 
+Playlists in which channels are grouped by the language in which they are broadcast.
+
 <details>
 <summary>Expand</summary>
 <br>
-
-Playlist in which each channel has its _language_ as a group title:
 
 ```
 https://iptv-org.github.io/iptv/index.language.m3u
@@ -84,114 +86,77 @@ Same thing, but split up into separate files:
 
 </details>
 
-### Grouped by country
+### Grouped by broadcast area
+
+Playlists in which channels are grouped by broadcast area.
 
 <details>
 <summary>Expand</summary>
-<br>
 
-Playlist in which each channel has its _country_ as a group title:
+#### Countries
 
 ```
-https://iptv-org.github.io/iptv/index.country.m3u
+https://iptv-org.github.io/iptv/index.countries.m3u
 ```
 
 Same thing, but split up into separate files:
 
 <!-- prettier-ignore -->
-<table>
-  <thead>
-    <tr><th align="left">Country</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>🇨🇲 Cameroon</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cm.m3u</code></td></tr>
-    <tr><td>🇨🇦 Canada</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ca.m3u</code></td></tr>
-    <tr><td>🇨🇻 Cape Verde</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cv.m3u</code></td></tr>
-    <tr><td>🇨🇬 Republic of the Congo</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/cg.m3u</code></td></tr>
-    <tr><td>🇷🇪 Réunion</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/re.m3u</code></td></tr>
-    <tr><td>🇷🇴 Romania</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ro.m3u</code></td></tr>
-    <tr><td>🇷🇺 Russia</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/ru.m3u</code></td></tr>
-    <tr><td>🇷🇼 Rwanda</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/rw.m3u</code></td></tr>
-    <tr><td>🇧🇱 Saint Barthélemy</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/bl.m3u</code></td></tr>
-    <tr><td>🇸🇭 Saint Helena</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/sh.m3u</code></td></tr>
-    <tr><td>🇰🇳 Saint Kitts and Nevis</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/kn.m3u</code></td></tr>
-    <tr><td>Undefined</td><td align="right">2</td><td nowrap><code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code></td></tr>
-  </tbody>
-</table>
+- 🇦🇩 Andorra <code>https://iptv-org.github.io/iptv/countries/ad.m3u</code>
+  - Canillo <code>https://iptv-org.github.io/iptv/subdivisions/ad-02.m3u</code>
+    - Canillo <code>https://iptv-org.github.io/iptv/cities/adcan.m3u</code>
+- 🇨🇲 Cameroon <code>https://iptv-org.github.io/iptv/countries/cm.m3u</code>
+- 🇨🇦 Canada <code>https://iptv-org.github.io/iptv/countries/ca.m3u</code>
+  - Ontario <code>https://iptv-org.github.io/iptv/subdivisions/ca-on.m3u</code>
+- 🇨🇻 Cape Verde <code>https://iptv-org.github.io/iptv/countries/cv.m3u</code>
+- 🇭🇰 Hong Kong <code>https://iptv-org.github.io/iptv/countries/hk.m3u</code>
+  - Sai Kung <code>https://iptv-org.github.io/iptv/cities/hk9sk.m3u</code>
+- 🇨🇬 Republic of the Congo <code>https://iptv-org.github.io/iptv/countries/cg.m3u</code>
+- 🇷🇪 Réunion <code>https://iptv-org.github.io/iptv/countries/re.m3u</code>
+- 🇷🇴 Romania <code>https://iptv-org.github.io/iptv/countries/ro.m3u</code>
+- 🇷🇺 Russia <code>https://iptv-org.github.io/iptv/countries/ru.m3u</code>
+- 🇷🇼 Rwanda <code>https://iptv-org.github.io/iptv/countries/rw.m3u</code>
+- 🇧🇱 Saint Barthélemy <code>https://iptv-org.github.io/iptv/countries/bl.m3u</code>
+- 🇸🇭 Saint Helena <code>https://iptv-org.github.io/iptv/countries/sh.m3u</code>
+- 🇰🇳 Saint Kitts and Nevis <code>https://iptv-org.github.io/iptv/countries/kn.m3u</code>
+- 🌐 International <code>https://iptv-org.github.io/iptv/countries/int.m3u</code>
+- Undefined <code>https://iptv-org.github.io/iptv/countries/undefined.m3u</code>
 
-</details>
-
-### Grouped by subdivision
-
-<details>
-<summary>Expand</summary>
-<br>
-
-<!-- prettier-ignore -->
-<details>
-<summary>Canada</summary>
-<table>
-  <thead>
-    <tr><th align="left">Subdivision</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Ontario</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/subdivisions/ca-on.m3u</code></td></tr>
-  </tbody>
-</table>
-</details>
-
-</details>
-
-### Grouped by region
-
-<details>
-<summary>Expand</summary>
-<br>
-
-Playlist in which each channel has its _region_ as a group title:
+#### Regions
 
 ```
-https://iptv-org.github.io/iptv/index.region.m3u
+https://iptv-org.github.io/iptv/index.regions.m3u
 ```
 
 Same thing, but split up into separate files:
 
 <!-- prettier-ignore -->
-<table>
-  <thead>
-    <tr><th align="left">Region</th><th align="left">Channels</th><th align="left">Playlist</th></tr>
-  </thead>
-  <tbody>
-    <tr><td align="left">Africa</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/afr.m3u</code></td></tr>
-    <tr><td align="left">Americas</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/amer.m3u</code></td></tr>
-    <tr><td align="left">Arab world</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/arab.m3u</code></td></tr>
-    <tr><td align="left">Asia</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/asia.m3u</code></td></tr>
-    <tr><td align="left">Asia-Pacific</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/apac.m3u</code></td></tr>
-    <tr><td align="left">Association of Southeast Asian Nations</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/asean.m3u</code></td></tr>
-    <tr><td align="left">Caribbean</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/carib.m3u</code></td></tr>
-    <tr><td align="left">Central America</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/cenamer.m3u</code></td></tr>
-    <tr><td align="left">Central Asia</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/cas.m3u</code></td></tr>
-    <tr><td align="left">Commonwealth of Independent States</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/cis.m3u</code></td></tr>
-    <tr><td align="left">Europe</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/eur.m3u</code></td></tr>
-    <tr><td align="left">Europe, the Middle East and Africa</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/emea.m3u</code></td></tr>
-    <tr><td align="left">Hispanic America</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/hispam.m3u</code></td></tr>
-    <tr><td align="left">Latin America</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/latam.m3u</code></td></tr>
-    <tr><td align="left">Latin America and the Caribbean</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/lac.m3u</code></td></tr>
-    <tr><td align="left">Maghreb</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/maghreb.m3u</code></td></tr>
-    <tr><td align="left">Middle East</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/mideast.m3u</code></td></tr>
-    <tr><td align="left">Middle East and North Africa</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/mena.m3u</code></td></tr>
-    <tr><td align="left">Nordics</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/nord.m3u</code></td></tr>
-    <tr><td align="left">North America</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/noram.m3u</code></td></tr>
-    <tr><td align="left">Northern America</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/nam.m3u</code></td></tr>
-    <tr><td align="left">Oceania</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/oce.m3u</code></td></tr>
-    <tr><td align="left">South America</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/southam.m3u</code></td></tr>
-    <tr><td align="left">South Asia</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/sas.m3u</code></td></tr>
-    <tr><td align="left">Sub-Saharan Africa</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/ssa.m3u</code></td></tr>
-    <tr><td align="left">West Africa</td><td align="right">0</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/wafr.m3u</code></td></tr>
-    <tr><td align="left">Worldwide</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/int.m3u</code></td></tr>
-    <tr><td align="left">Undefined</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/regions/undefined.m3u</code></td></tr>
-  </tbody>
-</table>
+- Africa <code>https://iptv-org.github.io/iptv/regions/afr.m3u</code>
+- Americas <code>https://iptv-org.github.io/iptv/regions/amer.m3u</code>
+- Arab world <code>https://iptv-org.github.io/iptv/regions/arab.m3u</code>
+- Asia <code>https://iptv-org.github.io/iptv/regions/asia.m3u</code>
+- Asia-Pacific <code>https://iptv-org.github.io/iptv/regions/apac.m3u</code>
+- Association of Southeast Asian Nations <code>https://iptv-org.github.io/iptv/regions/asean.m3u</code>
+- Caribbean <code>https://iptv-org.github.io/iptv/regions/carib.m3u</code>
+- Central America <code>https://iptv-org.github.io/iptv/regions/cenamer.m3u</code>
+- Central Asia <code>https://iptv-org.github.io/iptv/regions/cas.m3u</code>
+- Commonwealth of Independent States <code>https://iptv-org.github.io/iptv/regions/cis.m3u</code>
+- Europe <code>https://iptv-org.github.io/iptv/regions/eur.m3u</code>
+- Europe, the Middle East and Africa <code>https://iptv-org.github.io/iptv/regions/emea.m3u</code>
+- Hispanic America <code>https://iptv-org.github.io/iptv/regions/hispam.m3u</code>
+- Latin America <code>https://iptv-org.github.io/iptv/regions/latam.m3u</code>
+- Latin America and the Caribbean <code>https://iptv-org.github.io/iptv/regions/lac.m3u</code>
+- Maghreb <code>https://iptv-org.github.io/iptv/regions/maghreb.m3u</code>
+- Middle East <code>https://iptv-org.github.io/iptv/regions/mideast.m3u</code>
+- Middle East and North Africa <code>https://iptv-org.github.io/iptv/regions/mena.m3u</code>
+- Nordics <code>https://iptv-org.github.io/iptv/regions/nord.m3u</code>
+- North America <code>https://iptv-org.github.io/iptv/regions/noram.m3u</code>
+- Northern America <code>https://iptv-org.github.io/iptv/regions/nam.m3u</code>
+- Oceania <code>https://iptv-org.github.io/iptv/regions/oce.m3u</code>
+- South America <code>https://iptv-org.github.io/iptv/regions/southam.m3u</code>
+- South Asia <code>https://iptv-org.github.io/iptv/regions/sas.m3u</code>
+- Sub-Saharan Africa <code>https://iptv-org.github.io/iptv/regions/ssa.m3u</code>
+- West Africa <code>https://iptv-org.github.io/iptv/regions/wafr.m3u</code>
 
 </details>
 

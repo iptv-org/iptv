@@ -1,32 +1,35 @@
-import { Storage, Collection, File } from '@freearhey/core'
+import { Storage, Collection, File, Dictionary } from '@freearhey/core'
 import { HTMLTable, LogParser, LogItem } from '../core'
+import { LOGS_DIR, README_DIR } from '../constants'
 import { Category } from '../models'
-import { DATA_DIR, LOGS_DIR, README_DIR } from '../constants'
 import { Table } from './table'
 
-export class CategoryTable implements Table {
-  constructor() {}
+type CategoriesTableProps = {
+  categoriesKeyById: Dictionary
+}
+
+export class CategoriesTable implements Table {
+  categoriesKeyById: Dictionary
+
+  constructor({ categoriesKeyById }: CategoriesTableProps) {
+    this.categoriesKeyById = categoriesKeyById
+  }
 
   async make() {
-    const dataStorage = new Storage(DATA_DIR)
-    const categoriesContent = await dataStorage.json('categories.json')
-    const categories = new Collection(categoriesContent).map(data => new Category(data))
-    const categoriesGroupedById = categories.keyBy((category: Category) => category.id)
-
     const parser = new LogParser()
     const logsStorage = new Storage(LOGS_DIR)
     const generatorsLog = await logsStorage.load('generators.log')
 
-    let data = new Collection()
+    let items = new Collection()
     parser
       .parse(generatorsLog)
       .filter((logItem: LogItem) => logItem.type === 'category')
       .forEach((logItem: LogItem) => {
         const file = new File(logItem.filepath)
         const categoryId = file.name()
-        const category: Category = categoriesGroupedById.get(categoryId)
+        const category: Category = this.categoriesKeyById.get(categoryId)
 
-        data.add([
+        items.add([
           category ? category.name : 'ZZ',
           category ? category.name : 'Undefined',
           logItem.count,
@@ -34,14 +37,14 @@ export class CategoryTable implements Table {
         ])
       })
 
-    data = data
+    items = items
       .orderBy(item => item[0])
       .map(item => {
         item.shift()
         return item
       })
 
-    const table = new HTMLTable(data.all(), [
+    const table = new HTMLTable(items.all(), [
       { name: 'Category' },
       { name: 'Channels', align: 'right' },
       { name: 'Playlist', nowrap: true }

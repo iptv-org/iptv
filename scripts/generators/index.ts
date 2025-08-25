@@ -1,4 +1,5 @@
 export * from './categoriesGenerator'
+export * from './citiesGenerator'
 export * from './countriesGenerator'
 export * from './indexCategoryGenerator'
 export * from './indexCountryGenerator'

@@ -28,32 +28,18 @@ export class IndexRegionGenerator implements Generator {
       .orderBy((stream: Stream) => stream.getTitle())
       .filter((stream: Stream) => stream.isSFW())
       .forEach((stream: Stream) => {
-        if (stream.isInternational()) {
-          const streamClone = stream.clone()
-          streamClone.groupTitle = 'International'
-          groupedStreams.push(streamClone)
-          return
-        }
-
-        if (!stream.hasBroadcastArea()) {
-          const streamClone = stream.clone()
-          streamClone.groupTitle = 'Undefined'
-          groupedStreams.push(streamClone)
-          return
-        }
+        if (!stream.hasBroadcastArea()) return
 
         stream.getBroadcastRegions().forEach((region: Region) => {
+          if (region.isWorldwide()) return
+
           const streamClone = stream.clone()
           streamClone.groupTitle = region.name
           groupedStreams.push(streamClone)
         })
       })
 
-    groupedStreams = groupedStreams.orderBy((stream: Stream) => {
-      if (stream.groupTitle === 'International') return 'ZZ'
-      if (stream.groupTitle === 'Undefined') return 'ZZZ'
-      return stream.groupTitle
-    })
+    groupedStreams = groupedStreams.orderBy((stream: Stream) => stream.groupTitle)
 
     const playlist = new Playlist(groupedStreams, { public: true })
     const filepath = 'index.region.m3u'

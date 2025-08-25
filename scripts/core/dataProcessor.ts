@@ -1,3 +1,4 @@
+import { DataProcessorData } from '../types/dataProcessor'
 import { DataLoaderData } from '../types/dataLoader'
 import { Collection } from '@freearhey/core'
 import {
@@ -11,14 +12,16 @@ import {
   Region,
   Stream,
   Guide,
+  City,
   Feed,
   Logo
 } from '../models'
 
 export class DataProcessor {
-  constructor() {}
+  process(data: DataLoaderData): DataProcessorData {
+    let regions = new Collection(data.regions).map(data => new Region(data))
+    let regionsKeyByCode = regions.keyBy((region: Region) => region.code)
 
-  process(data: DataLoaderData) {
     const categories = new Collection(data.categories).map(data => new Category(data))
     const categoriesKeyById = categories.keyBy((category: Category) => category.id)
 
@@ -26,25 +29,23 @@ export class DataProcessor {
     const languagesKeyByCode = languages.keyBy((language: Language) => language.code)
 
     let subdivisions = new Collection(data.subdivisions).map(data => new Subdivision(data))
-    const subdivisionsKeyByCode = subdivisions.keyBy((subdivision: Subdivision) => subdivision.code)
-    const subdivisionsGroupedByCountryCode = subdivisions.groupBy(
+    let subdivisionsKeyByCode = subdivisions.keyBy((subdivision: Subdivision) => subdivision.code)
+    let subdivisionsGroupedByCountryCode = subdivisions.groupBy(
       (subdivision: Subdivision) => subdivision.countryCode
     )
 
-    let regions = new Collection(data.regions).map(data => new Region(data))
-    const regionsKeyByCode = regions.keyBy((region: Region) => region.code)
+    let countries = new Collection(data.countries).map(data => new Country(data))
+    let countriesKeyByCode = countries.keyBy((country: Country) => country.code)
 
-    const countries = new Collection(data.countries).map(data =>
-      new Country(data)
+    const cities = new Collection(data.cities).map(data =>
+      new City(data)
         .withRegions(regions)
-        .withLanguage(languagesKeyByCode)
-        .withSubdivisions(subdivisionsGroupedByCountryCode)
+        .withCountry(countriesKeyByCode)
+        .withSubdivision(subdivisionsKeyByCode)
     )
-    const countriesKeyByCode = countries.keyBy((country: Country) => country.code)
-
-    subdivisions = subdivisions.map((subdivision: Subdivision) =>
-      subdivision.withCountry(countriesKeyByCode)
-    )
+    const citiesKeyByCode = cities.keyBy((city: City) => city.code)
+    const citiesGroupedByCountryCode = cities.groupBy((city: City) => city.countryCode)
+    const citiesGroupedBySubdivisionCode = cities.groupBy((city: City) => city.subdivisionCode)
 
     const timezones = new Collection(data.timezones).map(data =>
       new Timezone(data).withCountries(countriesKeyByCode)
@@ -56,27 +57,12 @@ export class DataProcessor {
       (blocklistRecord: BlocklistRecord) => blocklistRecord.channelId
     )
 
-    let channels = new Collection(data.channels).map(data =>
-      new Channel(data)
-        .withCategories(categoriesKeyById)
-        .withCountry(countriesKeyByCode)
-        .withSubdivision(subdivisionsKeyByCode)
-        .withCategories(categoriesKeyById)
-    )
+    let channels = new Collection(data.channels).map(data => new Channel(data))
+    let channelsKeyById = channels.keyBy((channel: Channel) => channel.id)
 
-    const channelsKeyById = channels.keyBy((channel: Channel) => channel.id)
-
-    const feeds = new Collection(data.feeds).map(data =>
-      new Feed(data)
-        .withChannel(channelsKeyById)
-        .withLanguages(languagesKeyByCode)
-        .withTimezones(timezonesKeyById)
-        .withBroadcastCountries(countriesKeyByCode, regionsKeyByCode, subdivisionsKeyByCode)
-        .withBroadcastRegions(regions)
-        .withBroadcastSubdivisions(subdivisionsKeyByCode)
-    )
-    const feedsGroupedByChannelId = feeds.groupBy((feed: Feed) => feed.channelId)
-    const feedsGroupedById = feeds.groupBy((feed: Feed) => feed.id)
+    let feeds = new Collection(data.feeds).map(data => new Feed(data))
+    let feedsGroupedByChannelId = feeds.groupBy((feed: Feed) => feed.channelId)
+    let feedsGroupedById = feeds.groupBy((feed: Feed) => feed.id)
 
     const logos = new Collection(data.logos).map(data => new Logo(data).withFeed(feedsGroupedById))
     const logosGroupedByChannelId = logos.groupBy((logo: Logo) => logo.channelId)
@@ -90,11 +76,60 @@ export class DataProcessor {
     const guides = new Collection(data.guides).map(data => new Guide(data))
     const guidesGroupedByStreamId = guides.groupBy((guide: Guide) => guide.getStreamId())
 
-    regions = regions.map((region: Region) => region.withCountries(countriesKeyByCode))
+    regions = regions.map((region: Region) =>
+      region
+        .withCountries(countriesKeyByCode)
+        .withRegions(regions)
+        .withSubdivisions(subdivisions)
+        .withCities(cities)
+    )
+    regionsKeyByCode = regions.keyBy((region: Region) => region.code)
+
+    countries = countries.map((country: Country) =>
+      country
+        .withCities(citiesGroupedByCountryCode)
+        .withSubdivisions(subdivisionsGroupedByCountryCode)
+        .withRegions(regions)
+        .withLanguage(languagesKeyByCode)
+    )
+    countriesKeyByCode = countries.keyBy((country: Country) => country.code)
+
+    subdivisions = subdivisions.map((subdivision: Subdivision) =>
+      subdivision
+        .withCities(citiesGroupedBySubdivisionCode)
+        .withCountry(countriesKeyByCode)
+        .withRegions(regions)
+    )
+    subdivisionsKeyByCode = subdivisions.keyBy((subdivision: Subdivision) => subdivision.code)
+    subdivisionsGroupedByCountryCode = subdivisions.groupBy(
+      (subdivision: Subdivision) => subdivision.countryCode
+    )
 
     channels = channels.map((channel: Channel) =>
-      channel.withFeeds(feedsGroupedByChannelId).withLogos(logosGroupedByChannelId)
+      channel
+        .withFeeds(feedsGroupedByChannelId)
+        .withLogos(logosGroupedByChannelId)
+        .withCategories(categoriesKeyById)
+        .withCountry(countriesKeyByCode)
+        .withSubdivision(subdivisionsKeyByCode)
+        .withCategories(categoriesKeyById)
     )
+    channelsKeyById = channels.keyBy((channel: Channel) => channel.id)
+
+    feeds = feeds.map((feed: Feed) =>
+      feed
+        .withChannel(channelsKeyById)
+        .withLanguages(languagesKeyByCode)
+        .withTimezones(timezonesKeyById)
+        .withBroadcastArea(
+          citiesKeyByCode,
+          subdivisionsKeyByCode,
+          countriesKeyByCode,
+          regionsKeyByCode
+        )
+    )
+    feedsGroupedByChannelId = feeds.groupBy((feed: Feed) => feed.channelId)
+    feedsGroupedById = feeds.groupBy((feed: Feed) => feed.id)
 
     return {
       blocklistRecordsGroupedByChannelId,
@@ -111,6 +146,7 @@ export class DataProcessor {
       regionsKeyByCode,
       blocklistRecords,
       channelsKeyById,
+      citiesKeyByCode,
       subdivisions,
       categories,
       countries,
@@ -119,6 +155,7 @@ export class DataProcessor {
       channels,
       regions,
       streams,
+      cities,
       guides,
       feeds,
       logos

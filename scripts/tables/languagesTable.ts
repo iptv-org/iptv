@@ -1,18 +1,21 @@
-import { Storage, Collection, File } from '@freearhey/core'
+import { Storage, Collection, File, Dictionary } from '@freearhey/core'
 import { HTMLTable, LogParser, LogItem } from '../core'
+import { LOGS_DIR, README_DIR } from '../constants'
 import { Language } from '../models'
-import { DATA_DIR, LOGS_DIR, README_DIR } from '../constants'
 import { Table } from './table'
 
-export class LanguageTable implements Table {
-  constructor() {}
+type LanguagesTableProps = {
+  languagesKeyByCode: Dictionary
+}
+
+export class LanguagesTable implements Table {
+  languagesKeyByCode: Dictionary
+
+  constructor({ languagesKeyByCode }: LanguagesTableProps) {
+    this.languagesKeyByCode = languagesKeyByCode
+  }
 
   async make() {
-    const dataStorage = new Storage(DATA_DIR)
-    const languagesContent = await dataStorage.json('languages.json')
-    const languages = new Collection(languagesContent).map(data => new Language(data))
-    const languagesGroupedByCode = languages.keyBy((language: Language) => language.code)
-
     const parser = new LogParser()
     const logsStorage = new Storage(LOGS_DIR)
     const generatorsLog = await logsStorage.load('generators.log')
@@ -24,7 +27,7 @@ export class LanguageTable implements Table {
       .forEach((logItem: LogItem) => {
         const file = new File(logItem.filepath)
         const languageCode = file.name()
-        const language: Language = languagesGroupedByCode.get(languageCode)
+        const language: Language = this.languagesKeyByCode.get(languageCode)
 
         data.add([
           language ? language.name : 'ZZ',

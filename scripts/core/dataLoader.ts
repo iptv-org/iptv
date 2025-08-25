@@ -57,7 +57,8 @@ export class DataLoader {
       logos,
       timezones,
       guides,
-      streams
+      streams,
+      cities
     ] = await Promise.all([
       this.storage.json('countries.json'),
       this.storage.json('regions.json'),
@@ -70,7 +71,8 @@ export class DataLoader {
       this.storage.json('logos.json'),
       this.storage.json('timezones.json'),
       this.storage.json('guides.json'),
-      this.storage.json('streams.json')
+      this.storage.json('streams.json'),
+      this.storage.json('cities.json')
     ])
 
     return {
@@ -85,7 +87,8 @@ export class DataLoader {
       logos,
       timezones,
       guides,
-      streams
+      streams,
+      cities
     }
   }
 
