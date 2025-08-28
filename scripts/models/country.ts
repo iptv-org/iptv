@@ -12,6 +12,7 @@ export class Country {
   language?: Language
   subdivisions?: Collection
   regions?: Collection
+  cities?: Collection
 
   constructor(data?: CountryData) {
     if (!data) return
@@ -23,15 +24,19 @@ export class Country {
   }
 
   withSubdivisions(subdivisionsGroupedByCountryCode: Dictionary): this {
-    this.subdivisions = subdivisionsGroupedByCountryCode.get(this.code) || new Collection()
+    this.subdivisions = new Collection(subdivisionsGroupedByCountryCode.get(this.code))
 
     return this
   }
 
   withRegions(regions: Collection): this {
-    this.regions = regions.filter(
-      (region: Region) => region.code !== 'INT' && region.includesCountryCode(this.code)
-    )
+    this.regions = regions.filter((region: Region) => region.includesCountryCode(this.code))
+
+    return this
+  }
+
+  withCities(citiesGroupedByCountryCode: Dictionary): this {
+    this.cities = new Collection(citiesGroupedByCountryCode.get(this.code))
 
     return this
   }
@@ -52,6 +57,10 @@ export class Country {
 
   getSubdivisions(): Collection {
     return this.subdivisions || new Collection()
+  }
+
+  getCities(): Collection {
+    return this.cities || new Collection()
   }
 
   serialize(): CountrySerializedData {
