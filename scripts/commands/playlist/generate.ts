@@ -10,7 +10,6 @@ import {
   IndexLanguageGenerator,
   IndexCountryGenerator,
   SubdivisionsGenerator,
-  IndexRegionGenerator,
   CategoriesGenerator,
   CountriesGenerator,
   LanguagesGenerator,
@@ -123,9 +122,6 @@ async function main() {
 
   logger.info('generating index.language.m3u...')
   await new IndexLanguageGenerator({ streams, logFile }).generate()
-
-  logger.info('generating index.region.m3u...')
-  await new IndexRegionGenerator({ streams, regions, logFile }).generate()
 
   logger.info('saving generators.log...')
   const logStorage = new Storage(LOGS_DIR)

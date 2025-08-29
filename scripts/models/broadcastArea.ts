@@ -32,23 +32,27 @@ export class BroadcastArea {
           if (!city) return
           citiesIncluded.add(city)
           regionsIncluded = regionsIncluded.concat(city.getRegions())
+          break
         }
         case 's': {
           const subdivision: Subdivision = subdivisionsKeyByCode.get(code)
           if (!subdivision) return
           subdivisionsIncluded.add(subdivision)
           regionsIncluded = regionsIncluded.concat(subdivision.getRegions())
+          break
         }
         case 'c': {
           const country: Country = countriesKeyByCode.get(code)
           if (!country) return
           countriesIncluded.add(country)
           regionsIncluded = regionsIncluded.concat(country.getRegions())
+          break
         }
         case 'r': {
           const region: Region = regionsKeyByCode.get(code)
           if (!region) return
           regionsIncluded = regionsIncluded.concat(region.getRegions())
+          break
         }
       }
     })
