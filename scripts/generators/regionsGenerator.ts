@@ -28,8 +28,6 @@ export class RegionsGenerator implements Generator {
       .filter((stream: Stream) => stream.isSFW())
 
     this.regions.forEach(async (region: Region) => {
-      if (region.isWorldwide()) return
-
       const regionStreams = streams.filter((stream: Stream) => stream.isBroadcastInRegion(region))
 
       const playlist = new Playlist(regionStreams, { public: true })

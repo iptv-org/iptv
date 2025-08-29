@@ -26,13 +26,6 @@ export class IndexCountryGenerator implements Generator {
       .orderBy((stream: Stream) => stream.getTitle())
       .filter((stream: Stream) => stream.isSFW())
       .forEach((stream: Stream) => {
-        if (stream.isInternational()) {
-          const streamClone = stream.clone()
-          streamClone.groupTitle = 'International'
-          groupedStreams.add(streamClone)
-          return
-        }
-
         if (!stream.hasBroadcastArea()) {
           const streamClone = stream.clone()
           streamClone.groupTitle = 'Undefined'
@@ -45,6 +38,12 @@ export class IndexCountryGenerator implements Generator {
           streamClone.groupTitle = country.name
           groupedStreams.add(streamClone)
         })
+
+        if (stream.isInternational()) {
+          const streamClone = stream.clone()
+          streamClone.groupTitle = 'International'
+          groupedStreams.add(streamClone)
+        }
       })
 
     groupedStreams = groupedStreams.orderBy((stream: Stream) => {
