@@ -50,7 +50,7 @@ Playlists in which channels are grouped by broadcast area.
 #### Countries
 
 ```
-https://iptv-org.github.io/iptv/index.countries.m3u
+https://iptv-org.github.io/iptv/index.country.m3u
 ```
 
 Same thing, but split up into separate files:
@@ -59,12 +59,6 @@ Same thing, but split up into separate files:
 #include "./.readme/_countries.md"
 
 #### Regions
-
-```
-https://iptv-org.github.io/iptv/index.regions.m3u
-```
-
-Same thing, but split up into separate files:
 
 <!-- prettier-ignore -->
 #include "./.readme/_regions.md"
