@@ -28,8 +28,6 @@ export class RegionsGenerator implements Generator {
       .filter((stream: Stream) => stream.isSFW())
 
     this.regions.forEach(async (region: Region) => {
-      if (region.isWorldwide()) return
-
       const regionStreams = streams.filter((stream: Stream) => stream.isBroadcastInRegion(region))
 
       const playlist = new Playlist(regionStreams, { public: true })
@@ -39,25 +37,5 @@ export class RegionsGenerator implements Generator {
         JSON.stringify({ type: 'region', filepath, count: playlist.streams.count() }) + EOL
       )
     })
-
-    const internationalStreams = streams.filter((stream: Stream) => stream.isInternational())
-    const internationalPlaylist = new Playlist(internationalStreams, { public: true })
-    const internationalFilepath = 'regions/int.m3u'
-    await this.storage.save(internationalFilepath, internationalPlaylist.toString())
-    this.logFile.append(
-      JSON.stringify({
-        type: 'region',
-        filepath: internationalFilepath,
-        count: internationalPlaylist.streams.count()
-      }) + EOL
-    )
-
-    const undefinedStreams = streams.filter((stream: Stream) => !stream.hasBroadcastArea())
-    const playlist = new Playlist(undefinedStreams, { public: true })
-    const filepath = 'regions/undefined.m3u'
-    await this.storage.save(filepath, playlist.toString())
-    this.logFile.append(
-      JSON.stringify({ type: 'region', filepath, count: playlist.streams.count() }) + EOL
-    )
   }
 }
