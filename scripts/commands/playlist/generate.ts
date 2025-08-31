@@ -10,12 +10,12 @@ import {
   IndexLanguageGenerator,
   IndexCountryGenerator,
   SubdivisionsGenerator,
-  IndexRegionGenerator,
   CategoriesGenerator,
   CountriesGenerator,
   LanguagesGenerator,
   RegionsGenerator,
   SourcesGenerator,
+  CitiesGenerator,
   IndexGenerator,
   RawGenerator
 } from '../../generators'
@@ -36,7 +36,8 @@ async function main() {
     subdivisions,
     categories,
     countries,
-    regions
+    regions,
+    cities
   }: DataProcessorData = processor.process(data)
 
   logger.info('loading streams...')
@@ -90,6 +91,13 @@ async function main() {
     logFile
   }).generate()
 
+  logger.info('generating cities/...')
+  await new CitiesGenerator({
+    cities,
+    streams,
+    logFile
+  }).generate()
+
   logger.info('generating regions/...')
   await new RegionsGenerator({
     streams,
@@ -114,9 +122,6 @@ async function main() {
 
   logger.info('generating index.language.m3u...')
   await new IndexLanguageGenerator({ streams, logFile }).generate()
-
-  logger.info('generating index.region.m3u...')
-  await new IndexRegionGenerator({ streams, regions, logFile }).generate()
 
   logger.info('saving generators.log...')
   const logStorage = new Storage(LOGS_DIR)
