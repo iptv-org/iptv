@@ -8,6 +8,7 @@ export class Subdivision {
   countryCode: string
   country?: Country
   parentCode?: string
+  parent?: Subdivision
   regions?: Collection
   cities?: Collection
 
@@ -36,6 +37,14 @@ export class Subdivision {
 
   withCities(citiesGroupedBySubdivisionCode: Dictionary): this {
     this.cities = new Collection(citiesGroupedBySubdivisionCode.get(this.code))
+
+    return this
+  }
+
+  withParent(subdivisionsKeyByCode: Dictionary): this {
+    if (!this.parentCode) return this
+
+    this.parent = subdivisionsKeyByCode.get(this.parentCode)
 
     return this
   }
