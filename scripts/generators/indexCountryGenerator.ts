@@ -33,17 +33,17 @@ export class IndexCountryGenerator implements Generator {
           return
         }
 
-        if (stream.isInternational()) {
-          const streamClone = stream.clone()
-          streamClone.groupTitle = 'International'
-          groupedStreams.add(streamClone)
-        }
-
         stream.getBroadcastCountries().forEach((country: Country) => {
           const streamClone = stream.clone()
           streamClone.groupTitle = country.name
           groupedStreams.add(streamClone)
         })
+
+        if (stream.isInternational()) {
+          const streamClone = stream.clone()
+          streamClone.groupTitle = 'International'
+          groupedStreams.add(streamClone)
+        }
       })
 
     groupedStreams = groupedStreams.orderBy((stream: Stream) => {
