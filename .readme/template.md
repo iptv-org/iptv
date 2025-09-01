@@ -40,13 +40,14 @@ Same thing, but split up into separate files:
 
 </details>
 
-### Grouped by country
+### Grouped by broadcast area
 
-Playlists in which channels are grouped by country for which they are broadcasted.
+Playlists in which channels are grouped by broadcast area.
 
 <details>
 <summary>Expand</summary>
-<br>
+
+#### Countries
 
 ```
 https://iptv-org.github.io/iptv/index.country.m3u
@@ -57,34 +58,7 @@ Same thing, but split up into separate files:
 <!-- prettier-ignore -->
 #include "./.readme/_countries.md"
 
-</details>
-
-### Grouped by subdivision
-
-Playlists in which channels are grouped by subdivision for which they are broadcasted.
-
-<details>
-<summary>Expand</summary>
-<br>
-
-<!-- prettier-ignore -->
-#include "./.readme/_subdivisions.md"
-
-</details>
-
-### Grouped by region
-
-Playlists in which channels are grouped by the region for which they are broadcasted.
-
-<details>
-<summary>Expand</summary>
-<br>
-
-```
-https://iptv-org.github.io/iptv/index.region.m3u
-```
-
-Same thing, but split up into separate files:
+#### Regions
 
 <!-- prettier-ignore -->
 #include "./.readme/_regions.md"

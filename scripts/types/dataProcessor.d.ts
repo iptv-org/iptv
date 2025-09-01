@@ -15,6 +15,7 @@ export type DataProcessorData = {
   regionsKeyByCode: Dictionary
   blocklistRecords: Collection
   channelsKeyById: Dictionary
+  citiesKeyByCode: Dictionary
   subdivisions: Collection
   categories: Collection
   countries: Collection
@@ -23,6 +24,8 @@ export type DataProcessorData = {
   channels: Collection
   regions: Collection
   streams: Collection
+  cities: Collection
   guides: Collection
   feeds: Collection
+  logos: Collection
 }
