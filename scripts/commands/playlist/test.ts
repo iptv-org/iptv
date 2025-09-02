@@ -5,21 +5,16 @@ import { Stream } from '../../models'
 import { program } from 'commander'
 import { eachLimit } from 'async-es'
 import chalk from 'chalk'
-import child_process from 'node:child_process'
-import os from 'node:os'
-import dns from 'node:dns'
 import type { DataLoaderData } from '../../types/dataLoader'
 import type { DataProcessorData } from '../../types/dataProcessor'
-
-const cpus = os.cpus()
 
 const LIVE_UPDATE_INTERVAL = 5000
 const LIVE_UPDATE_MAX_STREAMS = 100
 
 let errors = 0
 let warnings = 0
-const results = {}
-let interval
+const results: { [key: string]: string } = {}
+let interval: string | number | NodeJS.Timeout | undefined
 let streams = new Collection()
 let isLiveUpdateEnabled = true
 
@@ -28,8 +23,8 @@ program
   .option(
     '-p, --parallel <number>',
     'Batch size of streams to test concurrently',
-    cpus.length,
-    (value: string) => parseInt(value)
+    (value: string) => parseInt(value),
+    10
   )
   .option('-x, --proxy <url>', 'Use the specified proxy')
   .parse(process.argv)
@@ -40,24 +35,6 @@ const logger = new Logger()
 const tester = new StreamTester()
 
 async function main() {
-  if (await isOffline()) {
-    logger.error(chalk.red('Internet connection is required for the script to work'))
-
-    return
-  }
-
-  try {
-    child_process.execSync('ffprobe -version', { stdio: 'ignore' })
-  } catch {
-    logger.error(
-      chalk.red(
-        'For the script to work, the "ffprobe" library must be installed (https://ffmpeg.org/download.html)'
-      )
-    )
-
-    return
-  }
-
   logger.info('loading data from api...')
   const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
@@ -158,7 +135,7 @@ function drawTable() {
   }
 }
 
-function onFinish(error) {
+function onFinish(error: any) {
   clearInterval(interval)
 
   if (error) {
@@ -181,11 +158,3 @@ function onFinish(error) {
   process.exit(0)
 }
 
-async function isOffline() {
-  return new Promise((resolve, reject) => {
-    dns.lookup('info.cern.ch', err => {
-      if (err) resolve(true)
-      reject(false)
-    })
-  }).catch(() => {})
-}
