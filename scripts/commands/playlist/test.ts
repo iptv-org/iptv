@@ -5,6 +5,7 @@ import { Stream } from '../../models'
 import { program } from 'commander'
 import { eachLimit } from 'async-es'
 import chalk from 'chalk'
+import os from 'node:os'
 import type { DataLoaderData } from '../../types/dataLoader'
 import type { DataProcessorData } from '../../types/dataProcessor'
 
@@ -24,7 +25,7 @@ program
     '-p, --parallel <number>',
     'Batch size of streams to test concurrently',
     (value: string) => parseInt(value),
-    10
+    os.cpus().length
   )
   .option('-x, --proxy <url>', 'Use the specified proxy')
   .parse(process.argv)
