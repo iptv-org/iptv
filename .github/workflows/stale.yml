@@ -19,6 +19,7 @@ jobs:
           repo-token: ${{ steps.create-app-token.outputs.token }}
           days-before-stale: 180
           days-before-close: 7
+          operations-per-run: 500
           stale-issue-label: 'stale'
           any-of-issue-labels: 'channel search'
           close-issue-message: 'This request has been closed because it has been inactive for more than 180 days.'
