@@ -88,7 +88,7 @@ async function runTest(stream: Stream) {
   const result = await tester.test(stream)
 
   let status = ''
-  const errorStatusCodes = ['HTTP_NOT_FOUND']
+  const errorStatusCodes = ['ENOTFOUND']
   if (result.status.ok) status = chalk.green('OK')
   else if (errorStatusCodes.includes(result.status.code)) {
     status = chalk.red(result.status.code)
@@ -157,4 +157,3 @@ function onFinish(error: any) {
 
   process.exit(0)
 }
-
