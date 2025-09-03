@@ -18,9 +18,9 @@ export class BroadcastArea {
     countriesKeyByCode: Dictionary,
     regionsKeyByCode: Dictionary
   ): this {
-    let citiesIncluded = new Collection()
-    let subdivisionsIncluded = new Collection()
-    let countriesIncluded = new Collection()
+    const citiesIncluded = new Collection()
+    const subdivisionsIncluded = new Collection()
+    const countriesIncluded = new Collection()
     let regionsIncluded = new Collection()
 
     this.codes.forEach((value: string) => {
