@@ -99,6 +99,7 @@ export class DataProcessor {
         .withCities(citiesGroupedBySubdivisionCode)
         .withCountry(countriesKeyByCode)
         .withRegions(regions)
+        .withParent(subdivisionsKeyByCode)
     )
     subdivisionsKeyByCode = subdivisions.keyBy((subdivision: Subdivision) => subdivision.code)
     subdivisionsGroupedByCountryCode = subdivisions.groupBy(

@@ -1,25 +1,23 @@
 import { Logger, Storage, Collection } from '@freearhey/core'
 import { ROOT_DIR, STREAMS_DIR, DATA_DIR } from '../../constants'
 import { PlaylistParser, StreamTester, CliTable, DataProcessor, DataLoader } from '../../core'
+import type { TestResult } from '../../core/streamTester'
 import { Stream } from '../../models'
-import { program } from 'commander'
+import { program, OptionValues } from 'commander'
 import { eachLimit } from 'async-es'
 import chalk from 'chalk'
-import child_process from 'node:child_process'
 import os from 'node:os'
 import dns from 'node:dns'
 import type { DataLoaderData } from '../../types/dataLoader'
 import type { DataProcessorData } from '../../types/dataProcessor'
-
-const cpus = os.cpus()
 
 const LIVE_UPDATE_INTERVAL = 5000
 const LIVE_UPDATE_MAX_STREAMS = 100
 
 let errors = 0
 let warnings = 0
-const results = {}
-let interval
+const results: { [key: string]: string } = {}
+let interval: string | number | NodeJS.Timeout | undefined
 let streams = new Collection()
 let isLiveUpdateEnabled = true
 
@@ -28,33 +26,26 @@ program
   .option(
     '-p, --parallel <number>',
     'Batch size of streams to test concurrently',
-    cpus.length,
-    (value: string) => parseInt(value)
+    (value: string) => parseInt(value),
+    os.cpus().length
   )
   .option('-x, --proxy <url>', 'Use the specified proxy')
+  .option(
+    '-t, --timeout <number>',
+    'The number of milliseconds before the request will be aborted',
+    (value: string) => parseInt(value),
+    30000
+  )
   .parse(process.argv)
 
-const options = program.opts()
+const options: OptionValues = program.opts()
 
 const logger = new Logger()
-const tester = new StreamTester()
+const tester = new StreamTester({ options })
 
 async function main() {
   if (await isOffline()) {
     logger.error(chalk.red('Internet connection is required for the script to work'))
-
-    return
-  }
-
-  try {
-    child_process.execSync('ffprobe -version', { stdio: 'ignore' })
-  } catch {
-    logger.error(
-      chalk.red(
-        'For the script to work, the "ffprobe" library must be installed (https://ffmpeg.org/download.html)'
-      )
-    )
-
     return
   }
 
@@ -108,10 +99,10 @@ async function runTest(stream: Stream) {
   const key = stream.filepath + stream.getId() + stream.url
   results[key] = chalk.white('LOADING...')
 
-  const result = await tester.test(stream)
+  const result: TestResult = await tester.test(stream)
 
   let status = ''
-  const errorStatusCodes = ['HTTP_NOT_FOUND']
+  const errorStatusCodes = ['ENOTFOUND', 'HTTP_404_NOT_FOUND']
   if (result.status.ok) status = chalk.green('OK')
   else if (errorStatusCodes.includes(result.status.code)) {
     status = chalk.red(result.status.code)
@@ -158,7 +149,7 @@ function drawTable() {
   }
 }
 
-function onFinish(error) {
+function onFinish(error: any) {
   clearInterval(interval)
 
   if (error) {
