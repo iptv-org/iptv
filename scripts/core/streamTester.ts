@@ -1,6 +1,6 @@
 import { Stream } from '../models'
 import { TESTING } from '../constants'
-import MediainfoFactory from 'mediainfo.js'
+import mediaInfoFactory from 'mediainfo.js'
 
 export class StreamTester {
   constructor() {}
@@ -35,7 +35,7 @@ export class StreamTester {
           }
         }
 
-        const mediainfo = await MediainfoFactory({ format: 'object' })
+        const mediainfo = await mediaInfoFactory({ format: 'object' })
         const buffer = await res.arrayBuffer()
         const result = await mediainfo.analyzeData(
           () => buffer.byteLength,
