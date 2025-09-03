@@ -1,6 +1,7 @@
 import { Logger, Storage, Collection } from '@freearhey/core'
 import { ROOT_DIR, STREAMS_DIR, DATA_DIR } from '../../constants'
 import { PlaylistParser, StreamTester, CliTable, DataProcessor, DataLoader } from '../../core'
+import type { TestResult } from '../../core/streamTester'
 import { Stream } from '../../models'
 import { program, OptionValues } from 'commander'
 import { eachLimit } from 'async-es'
@@ -92,7 +93,7 @@ async function runTest(stream: Stream) {
   const key = stream.filepath + stream.getId() + stream.url
   results[key] = chalk.white('LOADING...')
 
-  const result = await tester.test(stream)
+  const result: TestResult = await tester.test(stream)
 
   let status = ''
   const errorStatusCodes = ['HTTP_404_NOT_FOUND']
