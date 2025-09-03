@@ -62,7 +62,7 @@ https://live-hls-apps-aja-fa.getaj.net/AJA/index.m3u8
 https://live-hls-apps-ajd-fa.getaj.net/AJD/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraDocumentary.qa@HD" tvg-logo="https://i.imgur.com/5dNJlLo.png" group-title="Documentary",Al Jazeera Documentary (1080p)
 http://213.57.91.138:8000/play/a06h
-#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="News",Al Jazeera English (1080p)
+#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="https://upload.wikimedia.org/wikipedia/ms/thumb/f/f2/Aljazeera_eng.svg/512px-Aljazeera_eng.svg.png" group-title="News",Al Jazeera English (1080p)
 https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraMubasher.qa" tvg-logo="https://i.imgur.com/DfJI4t5.png" group-title="News",Al Jazeera Mubasher (1080p)
 https://live-hls-apps-ajm-fa.getaj.net/AJM/index.m3u8
@@ -90,6 +90,10 @@ https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/pl
 #EXTINF:-1 tvg-id="Arryadia.ma@SD" tvg-logo="https://i.imgur.com/XjzK3gZ.png" group-title="Sports" http-referrer="https://snrt.player.easybroadcast.io/",Arryadia (480p)
 #EXTVLCOPT:http-referrer=https://snrt.player.easybroadcast.io/
 https://cdn.live.easybroadcast.io/abr_corp/73_arryadia_k2tgcj0/corp/73_arryadia_k2tgcj0_480p/chunks_dvr.m3u8
+#EXTINF:-1 tvg-id="Arryadia.ma@TNT" tvg-logo="https://i.imgur.com/XjzK3gZ.png" group-title="Sports" http-referrer="https://snrtlive.ma/" http-user-agent="ExoPlayer",Arryadia TNT (480p)
+#EXTVLCOPT:http-referrer=https://snrtlive.ma/
+#EXTVLCOPT:http-user-agent=ExoPlayer
+https://cdn.live.easybroadcast.io/ts_corp/73_arryadia-tnt_zcmwjdc/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="AsharqDiscovery.sa" tvg-logo="https://i.imgur.com/Czxi7yk.png" group-title="Documentary;Education",Asharq Discovery (1080p)
 https://svs.itworkscdn.net/asharqdiscoverylive/asharqd.smil/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="AsharqDocumentary.sa" tvg-logo="https://i.imgur.com/v6VsFEt.png" group-title="Documentary",Asharq Documentary (1080p)
@@ -101,8 +105,6 @@ https://cdn.live.easybroadcast.io/abr_corp/73_assadissa_7b7u5n1/corp/73_assadiss
 #EXTVLCOPT:http-referrer=https://snrtlive.ma/
 #EXTVLCOPT:http-user-agent=ExoPlayer
 https://cdn.live.easybroadcast.io/ts_corp/73_arrabia_hthcj4p/playlist_dvr.m3u8
-#EXTINF:-1 tvg-id="BabAlHara.sa" tvg-logo="https://i.imgur.com/QtlnZbq.png" group-title="Series",Bab Al Hara (1080p)
-https://shls-live-enc.edgenextcdn.net/out/v1/948c54279b594944adde578c95f1d7d1/index.m3u8
 #EXTINF:-1 tvg-id="BahrainInternational.bh" tvg-logo="https://i.imgur.com/t6Lmntr.png" group-title="General",Bahrain International (720p) [Not 24/7]
 https://5c7b683162943.streamlock.net/live/ngrp:bahraininternational_all/playlist.m3u8
 #EXTINF:-1 tvg-id="BBCArabic.uk" tvg-logo="https://i.imgur.com/ScyTG6P.png" group-title="News",BBC Arabic (720p)
@@ -119,6 +121,8 @@ https://viamotionhsi.netplus.ch/live/eds/bvn/browser-HLS8/bvn.m3u8
 https://5caf24a595d94.streamlock.net:1937/pvyugfkzkc/pvyugfkzkc/playlist.m3u8
 #EXTINF:-1 tvg-id="Canal2International.cm" tvg-logo="https://i.imgur.com/BzA2z7m.png" group-title="General",Canal 2 International
 http://69.64.57.208/canal2international/playlist.m3u8
+#EXTINF:-1 tvg-id="Canal2Movies.cm@SD" tvg-logo="https://i.imgur.com/WLqwk3t.png" group-title="Movies",Canal 2 Movies
+https://stream.ecable.tv/canal2m/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="CGTN.cn" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/CGTN.svg/512px-CGTN.svg.png" group-title="News",CGTN (1080p)
 https://amg00405-rakutentv-cgtn-rakuten-i9tar.amagi.tv/master.m3u8
 #EXTINF:-1 tvg-id="CGTNArabic.cn" tvg-logo="https://i.imgur.com/AkFFrS7.png" group-title="News",CGTN Arabic (1080p) [Not 24/7]
@@ -199,8 +203,6 @@ http://mytv.dothome.co.kr/ch/catv/7.php
 https://samaflix.com:12103/channel2/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="LibyaAlWataniya.ly" tvg-logo="https://i.imgur.com/KSUny9D.jpeg" group-title="General",Libya Al Wataniya (360p)
 https://cdn-globecast.akamaized.net/live/eds/libya_al_watanya/hls_roku/index.m3u8
-#EXTINF:-1 tvg-id="Majid.ae@SD" tvg-logo="https://i.imgur.com/TzOKMMy.png" group-title="Kids",Majid (1080p) [Geo-blocked]
-https://vo-live-media.cdb.cdn.orange.com/Content/Channel/MajidChildrenChannel/HLS/index.m3u8
 #EXTINF:-1 tvg-id="MBC1.ae" tvg-logo="https://i.imgur.com/CiA3plN.png" group-title="General",MBC 1 (1080p)
 https://mbc1-enc.edgenextcdn.net/out/v1/0965e4d7deae49179172426cbfb3bc5e/index.m3u8
 #EXTINF:-1 tvg-id="MBC2.ae" tvg-logo="https://i.imgur.com/n9mSHuP.png" group-title="Movies",MBC 2 (576p)
@@ -265,10 +267,6 @@ https://3ea22335.wurl.com/master/f36d25e7e52f1ba8d7e56eb859c636563214f541/UmFrdX
 https://edge-a3.evrideo.tv/8f37c9f0-fe22-44f4-b64a-76ad11730daf_1000026630_HLS/manifest.m3u8
 #EXTINF:-1 tvg-id="RomanzaPlusAfrica.ke" tvg-logo="https://i.imgur.com/HYg75w2.png" group-title="Undefined",Romanza+ Africa (720p)
 https://origin3.afxp.telemedia.co.za/PremiumFree/romanza/playlist.m3u8
-#EXTINF:-1 tvg-id="RoyaKids.jo@SD" tvg-logo="https://i.imgur.com/acuCGF8.png" group-title="Kids",Roya Kids
-https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids/playlist.m3u8
-#EXTINF:-1 tvg-id="RoyaKidsOriginals.jo" tvg-logo="https://i.imgur.com/acuCGF8.png" group-title="Kids",Roya Kids Originals (1080p)
-https://playlist.fasttvcdn.com/pl/ptllxjd03j6g9oxxjdfapg/roya-kids-originals/playlist.m3u8
 #EXTINF:-1 tvg-id="RTArabic.ru" tvg-logo="https://i.imgur.com/G8vGrn1.png" group-title="News",RT Arabic (1080p) [Geo-blocked]
 https://rt-arb.rttv.com/dvr/rtarab/playlist.m3u8
 #EXTINF:-1 tvg-id="RTDocumentary.ru@English" tvg-logo="https://i.imgur.com/aeu5zIC.png" group-title="Documentary",RT Documentary (1080p)
@@ -302,6 +300,8 @@ https://cdn.live.easybroadcast.io/ts_corp/73_tamazight_tccybxt/playlist_dvr.m3u8
 https://kilolink.pulsarstarsolutions.com/live/smil:tanasuhtv.smil/manifest.m3u8
 #EXTINF:-1 tvg-id="TBNAfrica.za" tvg-logo="https://i.imgur.com/6VjLFmR.png" group-title="Undefined",TBN Africa (1080p)
 https://tbn-jw.cdn.vustreams.com/live/tbn-africa/live.isml/master.m3u8
+#EXTINF:-1 tvg-id="Telesur.ve@English" tvg-logo="https://i.imgur.com/P50VjRX.png" group-title="News",Telesur English (1080p) [Not 24/7]
+https://github.com/BellezaEmporium/IPTV_Exception/raw/master/channels/ve/telesur_eng.m3u8
 #EXTINF:-1 tvg-id="TRTArabi.tr" tvg-logo="https://i.imgur.com/dEfI2M9.png" group-title="News",TRT Arabi (1080p) [Not 24/7]
 https://tv-trtarabi.medya.trt.com.tr/master.m3u8
 #EXTINF:-1 tvg-id="TRTWorld.tr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/TRT_World.svg/512px-TRT_World.svg.png" group-title="News",TRT World (1080p)

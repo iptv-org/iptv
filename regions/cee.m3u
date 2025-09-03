@@ -57,7 +57,7 @@ https://restr2.bgtv.bg/agro/hls/agro.m3u8
 https://agrotv.streamnet.ro/mobile_tv/agrotv.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraBalkans.ba" tvg-logo="https://i.imgur.com/vMzCr8O.png" group-title="News",Al Jazeera Balkans (1080p)
 https://live-hls-apps-ajb-v3-fa.getaj.net/AJB/index.m3u8
-#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="News",Al Jazeera English (1080p)
+#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="https://upload.wikimedia.org/wikipedia/ms/thumb/f/f2/Aljazeera_eng.svg/512px-Aljazeera_eng.svg.png" group-title="News",Al Jazeera English (1080p)
 https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-id="AlbKanaleMusicTV.al" tvg-logo="https://i.imgur.com/JdKxscs.png" group-title="Music",AlbKanale Music TV (720p)
 https://albportal.net/albkanalemusic.m3u8
@@ -437,8 +437,6 @@ https://fdvr02.vnet.am/Fox/mono.m3u8
 https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/master_5000.m3u8
 #EXTINF:-1 tvg-id="FREEDOM.ua" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/FreeDOMUAlogo.svg/512px-FreeDOMUAlogo.svg.png" group-title="News",Freedom (FREEДOM) (UATV) (720p)
 https://freedom.cdn-01.cosmonova.net.ua/mobile-app/main/freedom/master.m3u8
-#EXTINF:-1 tvg-id="Friday.ru@SD" tvg-logo="https://i.imgur.com/UfmlXxe.png" group-title="Entertainment",Friday!
-https://vod.tuva.ru/friday/index.m3u8
 #EXTINF:-1 tvg-id="FUELTV.at" tvg-logo="https://i.imgur.com/I8mviBy.png" group-title="Sports",FUEL TV (1080p)
 https://amg01074-fueltv-fueltvemeaen-rakuten-b6j62.amagi.tv/hls/amagi_hls_data_rakutenAA-fueltvemeaen/CDN/master.m3u8
 #EXTINF:-1 tvg-id="FUELTV.at@Poland" tvg-logo="https://i.imgur.com/I8mviBy.png" group-title="Sports",FUEL TV
@@ -562,7 +560,9 @@ https://stream.jc1.cz/hls/jc1.m3u8
 https://sktv.plainrock127.xyz/get.php?x=STV1
 #EXTINF:-1 tvg-id="Jihoceskatelevize.cz" tvg-logo="https://i.imgur.com/Hi8hZzl.png" group-title="General",Jihočeská televize (1080p)
 https://vysilani.zaktv.cz/broadcast/hls/jtv/index.m3u8
-#EXTINF:-1 tvg-id="JimJam.ro" tvg-logo="https://i.imgur.com/ODhkYyx.png" group-title="Kids" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0",JimJam
+#EXTINF:-1 tvg-id="JimJam.ro" tvg-logo="https://i.imgur.com/ODhkYyx.png" group-title="Kids" http-referrer="https://canale-tv.com/" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0",JimJam (576p)
+#EXTVLCOPT:http-referrer=https://canale-tv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0
 https://saruman1.tharen.cfd/jimy/usergenq3n0lz7kr.m3u8
 #EXTINF:-1 tvg-id="JOBTV.ro@SD" tvg-logo="https://i.imgur.com/UzcZNe3.png" group-title="Business",JOB TV (1080p)
 https://jobtvserver.eu/hls/stream.m3u8
@@ -597,7 +597,7 @@ https://edge2.iptv.macc.com.ua/life/k1_2/index.m3u8
 http://212.28.87.173:8000/play/a10y/index.m3u8
 #EXTINF:-1 tvg-id="Kanal0.bg" tvg-logo="https://i.imgur.com/mycxET5.jpg" group-title="General" http-referrer="rn-tv.com",Kanal 0
 #EXTVLCOPT:http-referrer=rn-tv.com
-https://old2.rn-tv.com/k0/stream.m3u8
+https://old.rn-tv.com/k0/stream.m3u8
 #EXTINF:-1 tvg-id="Kanal5.mk" tvg-logo="https://i.imgur.com/Qw7N3S2.png" group-title="General",Kanal 5 (360p)
 https://s2.teve.mk/tvstanici/2/playlist.m3u8
 #EXTINF:-1 tvg-id="Kanal6.ba" tvg-logo="https://i.imgur.com/GGhvR0l.png" group-title="General",Kanal 6 (288p)
@@ -761,8 +761,6 @@ http://89.38.8.130:39435
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/65bcc9c8d77d450008b34c6b/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=2c7b17f4-35fc-11ef-a031-2b5d494037a2&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=4ef65ab7-424b-4423-93e5-e94da98d875f
 #EXTINF:-1 tvg-id="MoraNetTV.hu" tvg-logo="https://i.imgur.com/yT0RmKi.png" group-title="General",Móra-Net TV (576p)
 https://stream.moranettv.hu/live/index.m3u8
-#EXTINF:-1 tvg-id="MoskvaDoveriye.ru@SD" tvg-logo="https://i.imgur.com/QDqDQzt.png" group-title="General",Moskva. Doveriye
-http://178.217.72.66:8080/Moskva_Doverie/index.m3u8
 #EXTINF:-1 tvg-id="Motorvision.de@SD" tvg-logo="https://i.imgur.com/v4kj8pI.png" group-title="Auto",Motorvision
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6093f2ae4dd5ab0007d1ff9d/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b1e7523-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=3105f589-5bf9-41ef-8229-51bdf3abb1d2
 #EXTINF:-1 tvg-id="MRT1.mk" tvg-logo="https://i.imgur.com/EkkyAE0.png" group-title="General",MRT 1 (480p)
@@ -883,8 +881,6 @@ https://live.palitranews.ge/hls/palitratv/index.m3u8
 https://stream.nmih.hu:4102/live.m3u8
 #EXTINF:-1 tvg-id="PanoramaTV.al" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Panorama_logo.svg/512px-Panorama_logo.svg.png" group-title="News",Panorama TV (720p)
 https://tv.panorama.com.al/panorama/livestream/playlist.m3u8
-#EXTINF:-1 tvg-id="Patriot.ru@SD" tvg-logo="https://patriotkanal.ru/assets/cached/2025/02/resize/264_112_q100_patriot-only-logo.png" group-title="Movies",Patriot (576i)
-http://catchup.videoline.ru/asvtv/index.m3u8
 #EXTINF:-1 tvg-id="PeaceTVAlbanian.xk" tvg-logo="https://i.imgur.com/cK3KATX.png" group-title="Religious",Peace TV Albanian (360p) [Not 24/7]
 http://82.114.67.178:8081/hls/PeaceTV.m3u8
 #EXTINF:-1 tvg-id="PeaceTVEnglish.ae" tvg-logo="https://i.imgur.com/rjgCM2B.png" group-title="Religious",Peace TV English (1080p)
@@ -1153,8 +1149,6 @@ https://rightsboosterltd-scl-1-nl.samsung.wurl.tv/playlist.m3u8
 http://194.143.148.28:8080/CTC_LOVE/index.m3u8
 #EXTINF:-1 tvg-id="STV.hr" tvg-logo="https://i.imgur.com/Z3yRl17.png" group-title="General",STV (720p)
 http://89.201.163.244:8080/hls/hdmi.m3u8
-#EXTINF:-1 tvg-id="Subbota.ru@SD" tvg-logo="https://i.imgur.com/nsk8PpB.png" group-title="Undefined",Subbota!
-http://hls2.hd-tv.club/2_super/index.m3u8
 #EXTINF:-1 tvg-id="SuperExpressTV.pl" tvg-logo="https://i.imgur.com/HuIsALV.png" group-title="News",Super Express TV (1080i)
 https://s-pl-01.mediatool.tv/playout/sepl-abr/index.m3u8
 #EXTINF:-1 tvg-id="SuperTV.ro" tvg-logo="https://i.imgur.com/pzxUE0O.png" group-title="Music",Super TV (576p)
@@ -1189,6 +1183,8 @@ https://vdo.ssl-stream.com:3247/stream/play.m3u8
 https://cloudfront44.lexanetwork.com:1344/relay02/livestream004.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="Telestar1.ro@SD" tvg-logo="https://i.imgur.com/BTKh5ef.png" group-title="Undefined",Telestar1
 https://dvb.tennet.ro/mobile_tv/telestar.m3u8
+#EXTINF:-1 tvg-id="Telesur.ve@English" tvg-logo="https://i.imgur.com/P50VjRX.png" group-title="News",Telesur English (1080p) [Not 24/7]
+https://github.com/BellezaEmporium/IPTV_Exception/raw/master/channels/ve/telesur_eng.m3u8
 #EXTINF:-1 tvg-id="TeleviziaMocenok.sk" tvg-logo="https://i.imgur.com/psb8GxZ.png" group-title="General",Televízia Močenok (720p)
 https://5ca49f2417d90.streamlock.net/mocenok/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TV8.sk" tvg-logo="https://i.imgur.com/Z7URrp1.png" group-title="Undefined",Televízia OSEM (576p)
@@ -1833,6 +1829,8 @@ http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mirtv7_2500/playlist.m3u8
 http://mirbelogorya.ru:8080/mirbelogorya/index.m3u8
 #EXTINF:-1 tvg-id="Moskva24.ru" tvg-logo="https://i.imgur.com/gXbUMVy.png" group-title="General",Москва 24
 https://player.smotrim.ru/iframe/stream/live_id/efab3cbe-a29c-45f0-9596-5cb4f1ce7fbe
+#EXTINF:-1 tvg-id="MoskvaDoveriye.ru@SD" tvg-logo="https://i.imgur.com/QDqDQzt.png" group-title="General",Москва. Доверие
+http://178.217.72.66:8080/Moskva_Doverie/index.m3u8
 #EXTINF:-1 tvg-id="MosObrTV.ru" tvg-logo="https://i.imgur.com/t6PmOD5.png" group-title="Education",МосОбрТВ (720p)
 http://retc.educom.ru/mosobrtv/tv1/index.m3u8
 #EXTINF:-1 tvg-id="MosfilmGoldCollection.ru" tvg-logo="https://i.imgur.com/95Y8jb6.png" group-title="Movies",Мосфильм Золотая Коллекция
@@ -1929,6 +1927,8 @@ http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
 https://v4.proofix.ru/0mir/index.m3u8
 #EXTINF:-1 tvg-id="OTR.ru" tvg-logo="https://i.imgur.com/VaWlnjZ.png" group-title="General",ОТР
 http://178.217.72.66:8080/OTR/index.m3u8
+#EXTINF:-1 tvg-id="Patriot.ru@SD" tvg-logo="https://patriotkanal.ru/assets/cached/2025/02/resize/264_112_q100_patriot-only-logo.png" group-title="Movies",Патриот (576i)
+http://catchup.videoline.ru/asvtv/index.m3u8
 #EXTINF:-1 tvg-id="PervyygorodskoyOdessa.ua" tvg-logo="https://i.imgur.com/8qdc6aO.png" group-title="General",Первый городской (Одесса) (1080p) [Not 24/7]
 http://91.194.79.46:8081/stream1/channel1/playlist.m3u8
 #EXTINF:-1 tvg-id="PerviyInformationniy.by" tvg-logo="https://i.imgur.com/eIiXRAI.png" group-title="News",Первый информационный (1080p)
@@ -1964,6 +1964,8 @@ https://prodvizhenie.bonus-tv.ru/cdn/prodvizhenie/playlist.m3u8
 https://cdn-01.bonus-tv.ru/prosveschenie_edge/playlist.m3u8
 #EXTINF:-1 tvg-id="FridayInternational.ru" tvg-logo="https://i.imgur.com/N2z3EZC.png" group-title="Entertainment",Пятница International
 https://fdvr02.vnet.am/Pyatnica/mono.m3u8
+#EXTINF:-1 tvg-id="Friday.ru@SD" tvg-logo="https://i.imgur.com/UfmlXxe.png" group-title="Entertainment",Пятница!
+https://vod.tuva.ru/friday/index.m3u8
 #EXTINF:-1 tvg-id="GovoritMoskva.ru" tvg-logo="https://i.imgur.com/z2mxf3E.png" group-title="News",Радио Говорит Москва (404p) [Not 24/7]
 http://video.govoritmoskva.ru:8080/live/rufmbk-1/index.m3u8
 #EXTINF:-1 tvg-id="RadioHit.ru" tvg-logo="https://i.imgur.com/5xKqV1s.png" group-title="Music",Радио Хит (Орск) (720p)
@@ -2091,6 +2093,8 @@ https://cdn4.skygo.mn/live/disk1/STS/HLSv3-FTA/STS.m3u8
 https://fdvr02.vnet.am/DisneyChannel/mono.m3u8
 #EXTINF:-1 tvg-id="StudiyaFakt.ru@SD" tvg-logo="https://i.imgur.com/y73pRGZ.png" group-title="Undefined",Студия Факт
 https://042auhsnh0x.a.trbcdn.net/livemaster/rmhtb_live-7td9v6w34o6.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Subbota.ru@SD" tvg-logo="https://i.imgur.com/nsk8PpB.png" group-title="Undefined",Суббота!
+http://hls2.hd-tv.club/2_super/index.m3u8
 #EXTINF:-1 tvg-id="SuperGeroi.ru" tvg-logo="https://i.imgur.com/c0zZUR1.png" group-title="Kids",СуперГерои
 http://178.124.179.122:8088/Malish/index.m3u8
 #EXTINF:-1 tvg-id="Surgut24.ru" tvg-logo="https://i.imgur.com/OxvqXMt.png" group-title="Undefined",Сургут 24 (720p) [Not 24/7]

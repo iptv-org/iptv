@@ -55,7 +55,7 @@ https://live.artidijitalmedya.com/artidijital_aksutv/aksutv/playlist.m3u8
 https://cdn3.wowza.com/5/OE5HREpIcEkySlNT/alhayat-live/ngrp:livestream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraBalkans.ba" tvg-logo="https://i.imgur.com/vMzCr8O.png" group-title="News",Al Jazeera Balkans (1080p)
 https://live-hls-apps-ajb-v3-fa.getaj.net/AJB/index.m3u8
-#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="News",Al Jazeera English (1080p)
+#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="https://upload.wikimedia.org/wikipedia/ms/thumb/f/f2/Aljazeera_eng.svg/512px-Aljazeera_eng.svg.png" group-title="News",Al Jazeera English (1080p)
 https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-id="AlRafidainTV.tr" tvg-logo="https://i.imgur.com/rjXDCN5.png" group-title="Religious",Al Rafidain (720p) [Not 24/7]
 https://arrafidain.tvplayer.online/arrafidaintv/source/playlist.m3u8
@@ -548,7 +548,9 @@ https://muzzik-live.morescreens.com/mts-4/playlist.m3u8
 https://e85541db4ae943d9b5a09477d6b1d8ab.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Jail/playlist.m3u8
 #EXTINF:-1 tvg-id="JazzTV.mk" tvg-logo="https://i.imgur.com/CbQlSFX.png" group-title="Music",Jazz TV (1080p) [Not 24/7]
 https://stream.nasatv.com.mk/jazztv/hls/jazztv_live.m3u8
-#EXTINF:-1 tvg-id="JimJam.ro" tvg-logo="https://i.imgur.com/ODhkYyx.png" group-title="Kids" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0",JimJam
+#EXTINF:-1 tvg-id="JimJam.ro" tvg-logo="https://i.imgur.com/ODhkYyx.png" group-title="Kids" http-referrer="https://canale-tv.com/" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0",JimJam (576p)
+#EXTVLCOPT:http-referrer=https://canale-tv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0
 https://saruman1.tharen.cfd/jimy/usergenq3n0lz7kr.m3u8
 #EXTINF:-1 tvg-id="JOBTV.ro@SD" tvg-logo="https://i.imgur.com/UzcZNe3.png" group-title="Business",JOB TV (1080p)
 https://jobtvserver.eu/hls/stream.m3u8
@@ -556,7 +558,7 @@ https://jobtvserver.eu/hls/stream.m3u8
 http://185.234.111.229:8000/play/a01g
 #EXTINF:-1 tvg-id="Kanal0.bg" tvg-logo="https://i.imgur.com/mycxET5.jpg" group-title="General" http-referrer="rn-tv.com",Kanal 0
 #EXTVLCOPT:http-referrer=rn-tv.com
-https://old2.rn-tv.com/k0/stream.m3u8
+https://old.rn-tv.com/k0/stream.m3u8
 #EXTINF:-1 tvg-id="Kanal3.tr" tvg-logo="https://i.imgur.com/eXErSv0.png" group-title="General",Kanal 3 (1080p)
 http://185.234.111.229:8000/play/a013
 #EXTINF:-1 tvg-id="Kanal5.mk" tvg-logo="https://i.imgur.com/Qw7N3S2.png" group-title="General",Kanal 5 (360p)
@@ -1127,6 +1129,8 @@ http://89.137.197.15:8080/testing/pl5/playlist/ram/playlist.m3u8
 https://vdo.ssl-stream.com:3247/stream/play.m3u8
 #EXTINF:-1 tvg-id="Telestar1.ro@SD" tvg-logo="https://i.imgur.com/BTKh5ef.png" group-title="Undefined",Telestar1
 https://dvb.tennet.ro/mobile_tv/telestar.m3u8
+#EXTINF:-1 tvg-id="Telesur.ve@English" tvg-logo="https://i.imgur.com/P50VjRX.png" group-title="News",Telesur English (1080p) [Not 24/7]
+https://github.com/BellezaEmporium/IPTV_Exception/raw/master/channels/ve/telesur_eng.m3u8
 #EXTINF:-1 tvg-id="Televizija5.ba" tvg-logo="https://i.imgur.com/znpvJys.png" group-title="Undefined",Televizija 5 (576p)
 https://balkanmedia.dynu.net/hls/tv5web.m3u8
 #EXTINF:-1 tvg-id="TelevizijaM.ba" tvg-logo="https://i.imgur.com/jT95ZEI.png" group-title="General",Televizija M (1080p)

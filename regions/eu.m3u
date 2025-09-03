@@ -87,7 +87,7 @@ https://stream.a1mediagroep.nl/hls/a1tv.m3u8
 https://stream.sen-gt.com/A2itv/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="A7TV.ro@SD" tvg-logo="https://i.imgur.com/RmFg8BN.png" group-title="General",A7TV (1080p)
 https://a7tvlive.ro/A7TV/A7TV/playlist.m3u8
-#EXTINF:-1 tvg-id="APunt.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Logotip_d%27%C3%80_Punt_%282017-%29.svg/512px-Logotip_d%27%C3%80_Punt_%282017-%29.svg.png" group-title="General",A Punt
+#EXTINF:-1 tvg-id="APunt.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Logotip_d%27%C3%80_Punt_%282017-%29.svg/512px-Logotip_d%27%C3%80_Punt_%282017-%29.svg.png" group-title="General;Public",A Punt
 https://bcovlive-a.akamaihd.net/8499d938ef904e39b58a4adec2ddeada/eu-west-1/6057955885001/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="AB1.fr@SD" tvg-logo="https://i.imgur.com/9C7UsOe.png" group-title="Entertainment",AB1
 https://viamotionhsi.netplus.ch/live/eds/ab1/browser-HLS8/ab1.m3u8
@@ -131,7 +131,7 @@ https://agrotv.streamnet.ro/mobile_tv/agrotv.m3u8
 https://cdn3.wowza.com/5/OE5HREpIcEkySlNT/alhayat-live/ngrp:livestream_all/playlist.m3u8
 #EXTINF:-1 tvg-id="AlJazeeraBalkans.ba" tvg-logo="https://i.imgur.com/vMzCr8O.png" group-title="News",Al Jazeera Balkans (1080p)
 https://live-hls-apps-ajb-v3-fa.getaj.net/AJB/index.m3u8
-#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="https://i.imgur.com/7bRVpnu.png" group-title="News",Al Jazeera English (1080p)
+#EXTINF:-1 tvg-id="AlJazeera.qa@English" tvg-logo="https://upload.wikimedia.org/wikipedia/ms/thumb/f/f2/Aljazeera_eng.svg/512px-Aljazeera_eng.svg.png" group-title="News",Al Jazeera English (1080p)
 https://live-hls-apps-aje-fa.getaj.net/AJE/index.m3u8
 #EXTINF:-1 tvg-id="AlacantiTV.es" tvg-logo="https://i.imgur.com/pcWU6e1.png" group-title="General",Alacantí TV (576p) [Not 24/7]
 https://streaming01.gestec-video.com/hls/artequatreAlacanti.m3u8
@@ -1409,7 +1409,9 @@ https://stream.jc1.cz/hls/jc1.m3u8
 https://sktv.plainrock127.xyz/get.php?x=STV1
 #EXTINF:-1 tvg-id="Jihoceskatelevize.cz" tvg-logo="https://i.imgur.com/Hi8hZzl.png" group-title="General",Jihočeská televize (1080p)
 https://vysilani.zaktv.cz/broadcast/hls/jtv/index.m3u8
-#EXTINF:-1 tvg-id="JimJam.ro" tvg-logo="https://i.imgur.com/ODhkYyx.png" group-title="Kids" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0",JimJam
+#EXTINF:-1 tvg-id="JimJam.ro" tvg-logo="https://i.imgur.com/ODhkYyx.png" group-title="Kids" http-referrer="https://canale-tv.com/" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0",JimJam (576p)
+#EXTVLCOPT:http-referrer=https://canale-tv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0
 https://saruman1.tharen.cfd/jimy/usergenq3n0lz7kr.m3u8
 #EXTINF:-1 tvg-id="JinTV.nl" tvg-logo="https://i.imgur.com/37ajg2j.png" group-title="Culture",Jin TV
 https://live.jintv.org/medialive/jintv.m3u8
@@ -1460,7 +1462,7 @@ https://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
 https://strm.hdtvizlecanli.com/live/kabel1.m3u8
 #EXTINF:-1 tvg-id="Kanal0.bg" tvg-logo="https://i.imgur.com/mycxET5.jpg" group-title="General" http-referrer="rn-tv.com",Kanal 0
 #EXTVLCOPT:http-referrer=rn-tv.com
-https://old2.rn-tv.com/k0/stream.m3u8
+https://old.rn-tv.com/k0/stream.m3u8
 #EXTINF:-1 tvg-id="Kanal12SprembergTV.de" tvg-logo="https://i.ibb.co/1LzJz7Y/Channels4-profile-7.jpg" group-title="General",Kanal12 Spremberg TV (404p) [Not 24/7]
 https://58de7a369a9c4.streamlock.net/sprembergtv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="KanalA.si" tvg-logo="https://i.imgur.com/JHNpcqF.png" group-title="General",Kanal A
@@ -3464,6 +3466,8 @@ https://5e73cf528f404.streamlock.net/TeleEstense/livestream/playlist.m3u8
 https://webtv.pugliaservice.it:1936/telesud-webtv/telesud-webtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TelesudTrapani.it" tvg-logo="https://i.imgur.com/JNohS1G.png" group-title="Undefined",Telesud Trapani (720p) [Not 24/7]
 http://5cbd3bc28341f.streamlock.net:1935/telesud/live/playlist.m3u8
+#EXTINF:-1 tvg-id="Telesur.ve@English" tvg-logo="https://i.imgur.com/P50VjRX.png" group-title="News",Telesur English (1080p) [Not 24/7]
+https://github.com/BellezaEmporium/IPTV_Exception/raw/master/channels/ve/telesur_eng.m3u8
 #EXTINF:-1 tvg-id="TeleTerni.it" tvg-logo="https://i.imgur.com/U1BjkEl.png" group-title="Undefined",TeleTerni (720p)
 https://diretta.teleterni.it:8080/show/show.m3u8
 #EXTINF:-1 tvg-id="Teletricolore.it" tvg-logo="https://i.imgur.com/GajzIN6.png" group-title="Undefined",Teletricolore (480p) [Not 24/7]
