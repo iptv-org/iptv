@@ -6,6 +6,7 @@ import { program } from 'commander'
 import { eachLimit } from 'async-es'
 import chalk from 'chalk'
 import os from 'node:os'
+import dns from 'node:dns'
 import type { DataLoaderData } from '../../types/dataLoader'
 import type { DataProcessorData } from '../../types/dataProcessor'
 
@@ -36,6 +37,11 @@ const logger = new Logger()
 const tester = new StreamTester()
 
 async function main() {
+  if (await isOffline()) {
+    logger.error(chalk.red('Internet connection is required for the script to work'))
+    return
+  }
+
   logger.info('loading data from api...')
   const processor = new DataProcessor()
   const dataStorage = new Storage(DATA_DIR)
@@ -157,4 +163,13 @@ function onFinish(error: any) {
   }
 
   process.exit(0)
+}
+
+async function isOffline() {
+  return new Promise((resolve, reject) => {
+    dns.lookup('info.cern.ch', err => {
+      if (err) resolve(true)
+      reject(false)
+    })
+  }).catch(() => {})
 }
