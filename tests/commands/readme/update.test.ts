@@ -16,7 +16,7 @@ describe('readme:update', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
 
     expect(content('tests/__data__/output/PLAYLISTS.md')).toEqual(
-      content('tests/__data__/expected/readme_update/PLAYLISTS.md')
+      content('tests/__data__/expected/readme_update/playlists.md')
     )
   })
 })
