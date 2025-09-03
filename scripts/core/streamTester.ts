@@ -19,6 +19,7 @@ export type StreamTesterProps = {
 
 export class StreamTester {
   client: AxiosInstance
+  options: OptionValues
 
   constructor({ options }: StreamTesterProps) {
     const proxyParser = new ProxyParser()
@@ -42,6 +43,7 @@ export class StreamTester {
     }
 
     this.client = axios.create(request)
+    this.options = options
   }
 
   async test(stream: Stream): Promise<TestResult> {
@@ -51,10 +53,8 @@ export class StreamTester {
       return results[stream.url as keyof typeof results]
     } else {
       try {
-        const timeout = 10000
-
         const res = await this.client(stream.url, {
-          signal: AbortSignal.timeout(timeout),
+          signal: AbortSignal.timeout(this.options.timeout),
           headers: {
             'User-Agent': stream.getUserAgent() || 'Mozilla/5.0',
             Referer: stream.getReferrer()

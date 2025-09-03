@@ -30,6 +30,12 @@ program
     os.cpus().length
   )
   .option('-x, --proxy <url>', 'Use the specified proxy')
+  .option(
+    '-t, --timeout <number>',
+    'The number of milliseconds before the request will be aborted',
+    (value: string) => parseInt(value),
+    30000
+  )
   .parse(process.argv)
 
 const options: OptionValues = program.opts()
@@ -96,7 +102,7 @@ async function runTest(stream: Stream) {
   const result: TestResult = await tester.test(stream)
 
   let status = ''
-  const errorStatusCodes = ['HTTP_404_NOT_FOUND']
+  const errorStatusCodes = ['ENOTFOUND', 'HTTP_404_NOT_FOUND']
   if (result.status.ok) status = chalk.green('OK')
   else if (errorStatusCodes.includes(result.status.code)) {
     status = chalk.red(result.status.code)
