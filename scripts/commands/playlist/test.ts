@@ -2,7 +2,7 @@ import { Logger, Storage, Collection } from '@freearhey/core'
 import { ROOT_DIR, STREAMS_DIR, DATA_DIR } from '../../constants'
 import { PlaylistParser, StreamTester, CliTable, DataProcessor, DataLoader } from '../../core'
 import { Stream } from '../../models'
-import { program } from 'commander'
+import { program, OptionValues } from 'commander'
 import { eachLimit } from 'async-es'
 import chalk from 'chalk'
 import os from 'node:os'
@@ -31,10 +31,10 @@ program
   .option('-x, --proxy <url>', 'Use the specified proxy')
   .parse(process.argv)
 
-const options = program.opts()
+const options: OptionValues = program.opts()
 
 const logger = new Logger()
-const tester = new StreamTester()
+const tester = new StreamTester({ options })
 
 async function main() {
   if (await isOffline()) {
@@ -95,7 +95,7 @@ async function runTest(stream: Stream) {
   const result = await tester.test(stream)
 
   let status = ''
-  const errorStatusCodes = ['ENOTFOUND']
+  const errorStatusCodes = ['HTTP_404_NOT_FOUND']
   if (result.status.ok) status = chalk.green('OK')
   else if (errorStatusCodes.includes(result.status.code)) {
     status = chalk.red(result.status.code)
