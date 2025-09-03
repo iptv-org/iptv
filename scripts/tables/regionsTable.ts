@@ -1,5 +1,5 @@
-import { Storage, Collection, File } from '@freearhey/core'
-import { HTMLTable, LogParser, LogItem } from '../core'
+import { Storage, Collection } from '@freearhey/core'
+import { LogParser, LogItem } from '../core'
 import { LOGS_DIR, README_DIR } from '../constants'
 import { Region } from '../models'
 import { Table } from './table'

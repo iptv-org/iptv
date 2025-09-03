@@ -48,7 +48,7 @@ export class CountriesTable implements Table {
         (logItem: LogItem) => logItem.filepath === `countries/${country.code.toLowerCase()}.m3u`
       )
 
-      let countryItem = {
+      const countryItem = {
         index: country.name,
         count: 0,
         link: `https://iptv-org.github.io/iptv/countries/${country.code.toLowerCase()}.m3u`,
@@ -77,7 +77,7 @@ export class CountriesTable implements Table {
               logItem.filepath === `subdivisions/${subdivision.code.toLowerCase()}.m3u`
           )
 
-          let subdivisionItem = {
+          const subdivisionItem = {
             index: subdivision.name,
             name: subdivision.name,
             count: 0,
@@ -148,7 +148,7 @@ export class CountriesTable implements Table {
     }
 
     const undefinedLogItem = logCountries.find(
-      (logItem: LogItem) => logItem.filepath === `countries/undefined.m3u`
+      (logItem: LogItem) => logItem.filepath === 'countries/undefined.m3u'
     )
 
     if (undefinedLogItem) {
@@ -170,12 +170,12 @@ export class CountriesTable implements Table {
         item.children
           .orderBy(item => item.index)
           .forEach(item => {
-            row += `\r\n\  - ${item.name} <code>${item.link}</code>`
+            row += `\r\n  - ${item.name} <code>${item.link}</code>`
 
             item.children
               .orderBy(item => item.index)
               .forEach(item => {
-                row += `\r\n\    - ${item.name} <code>${item.link}</code>`
+                row += `\r\n    - ${item.name} <code>${item.link}</code>`
               })
           })
 
