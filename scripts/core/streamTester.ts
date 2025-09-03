@@ -1,9 +1,41 @@
 import { Stream } from '../models'
 import { TESTING } from '../constants'
 import mediaInfoFactory from 'mediainfo.js'
+import axios, { AxiosInstance, AxiosProxyConfig, AxiosRequestConfig } from 'axios'
+import { ProxyParser } from './proxyParser.js'
+import { OptionValues } from 'commander'
+import { SocksProxyAgent } from 'socks-proxy-agent'
+
+type StreamTesterProps = {
+  options: OptionValues
+}
 
 export class StreamTester {
-  constructor() {}
+  client: AxiosInstance
+
+  constructor({ options }: StreamTesterProps) {
+    const proxyParser = new ProxyParser()
+    let request: AxiosRequestConfig = {
+      responseType: 'arraybuffer'
+    }
+
+    if (options.proxy !== undefined) {
+      const proxy = proxyParser.parse(options.proxy) as AxiosProxyConfig
+
+      if (
+        proxy.protocol &&
+        ['socks', 'socks5', 'socks5h', 'socks4', 'socks4a'].includes(String(proxy.protocol))
+      ) {
+        const socksProxyAgent = new SocksProxyAgent(options.proxy)
+
+        request = { ...request, ...{ httpAgent: socksProxyAgent, httpsAgent: socksProxyAgent } }
+      } else {
+        request = { ...request, ...{ proxy } }
+      }
+    }
+
+    this.client = axios.create(request)
+  }
 
   async test(stream: Stream) {
     if (TESTING) {
@@ -12,31 +44,18 @@ export class StreamTester {
       return results[stream.url as keyof typeof results]
     } else {
       try {
-        const controller = new AbortController()
         const timeout = 10000
-        const timeoutId = setTimeout(() => controller.abort(), timeout)
 
-        const res = await fetch(stream.url, {
-          signal: controller.signal,
+        const res = await this.client(stream.url, {
+          signal: AbortSignal.timeout(timeout),
           headers: {
             'User-Agent': stream.getUserAgent() || 'Mozilla/5.0',
             Referer: stream.getReferrer()
           }
         })
 
-        clearTimeout(timeoutId)
-
-        if (!res.ok) {
-          return {
-            status: {
-              ok: false,
-              code: `HTTP_${res.status}`
-            }
-          }
-        }
-
         const mediainfo = await mediaInfoFactory({ format: 'object' })
-        const buffer = await res.arrayBuffer()
+        const buffer = await res.data
         const result = await mediainfo.analyzeData(
           () => buffer.byteLength,
           (size: any, offset: number | undefined) =>
@@ -60,8 +79,16 @@ export class StreamTester {
         }
       } catch (error: any) {
         let code = 'UNKNOWN_ERROR'
-        if (error.name === 'AbortError') {
+        if (error.name === 'CanceledError') {
           code = 'TIMEOUT'
+        } else if (error.name === 'AxiosError') {
+          if (error.response) {
+            const status = error.response?.status
+            const statusText = error.response?.statusText.toUpperCase().replace(/\s+/, '_')
+            code = `HTTP_${status}_${statusText}`
+          } else {
+            code = `AXIOS_${error.code}`
+          }
         } else if (error.cause) {
           const cause = error.cause as Error & { code?: string }
           if (cause.code) {
