@@ -6,7 +6,14 @@ import { ProxyParser } from './proxyParser.js'
 import { OptionValues } from 'commander'
 import { SocksProxyAgent } from 'socks-proxy-agent'
 
-type StreamTesterProps = {
+export type TestResult = {
+  status: {
+    ok: boolean
+    code: string
+  }
+}
+
+export type StreamTesterProps = {
   options: OptionValues
 }
 
@@ -37,7 +44,7 @@ export class StreamTester {
     this.client = axios.create(request)
   }
 
-  async test(stream: Stream) {
+  async test(stream: Stream): Promise<TestResult> {
     if (TESTING) {
       const results = (await import('../../tests/__data__/input/playlist_test/results.js')).default
 
