@@ -1,5 +1,7 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="2M.ma@SD",2M
+https://viamotionhsi.netplus.ch/live/eds/2mmaroc/browser-dash/2mmaroc.mpd
+#EXTINF:-1 tvg-id="2M.ma@SD",2M
 https://viamotionhsi.netplus.ch/live/eds/2mmaroc/browser-HLS8/2mmaroc.m3u8
 #EXTINF:-1 tvg-id="2MMonde.ma@SD" http-referrer="https://2m.ma" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0",2M Monde
 #EXTVLCOPT:http-referrer=https://2m.ma
@@ -23,17 +25,21 @@ https://cdn.live.easybroadcast.io/abr_corp/73_almaghribia_83tz85q/corp/73_almagh
 #EXTVLCOPT:http-referrer=https://snrtlive.ma/
 #EXTVLCOPT:http-user-agent=ExoPlayer
 https://cdn.live.easybroadcast.io/ts_corp/73_almaghribia_83tz85q/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="AlMaghribia.ma@SD",Al Maghribia
+https://viamotionhsi.netplus.ch/live/eds/almaghribia/browser-dash/almaghribia.mpd
+#EXTINF:-1 tvg-id="AlMaghribia.ma@SD",Al Maghribia
+https://viamotionhsi.netplus.ch/live/eds/almaghribia/browser-HLS8/almaghribia.m3u8
 #EXTINF:-1 tvg-id="Arryadia.ma@SD" http-referrer="https://snrt.player.easybroadcast.io/",Arryadia (480p)
 #EXTVLCOPT:http-referrer=https://snrt.player.easybroadcast.io/
 https://cdn.live.easybroadcast.io/abr_corp/73_arryadia_k2tgcj0/corp/73_arryadia_k2tgcj0_480p/chunks_dvr.m3u8
-#EXTINF:-1 tvg-id="Arryadia.ma@TNT" http-referrer="https://snrtlive.ma/" http-user-agent="ExoPlayer",Arryadia TNT (480p) [Not 24/7]
-#EXTVLCOPT:http-referrer=https://snrtlive.ma/
-#EXTVLCOPT:http-user-agent=ExoPlayer
-https://cdn.live.easybroadcast.io/ts_corp/73_arryadia-tnt_zcmwjdc/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="Arryadia.ma@SD" http-referrer="https://snrtlive.ma/" http-user-agent="ExoPlayer",Arryadia (480p)
 #EXTVLCOPT:http-referrer=https://snrtlive.ma/
 #EXTVLCOPT:http-user-agent=ExoPlayer
 https://cdn.live.easybroadcast.io/ts_corp/73_arryadia_k2tgcj0/playlist_dvr.m3u8
+#EXTINF:-1 tvg-id="Arryadia.ma@TNT" http-referrer="https://snrtlive.ma/" http-user-agent="ExoPlayer",Arryadia TNT (480p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://snrtlive.ma/
+#EXTVLCOPT:http-user-agent=ExoPlayer
+https://cdn.live.easybroadcast.io/ts_corp/73_arryadia-tnt_zcmwjdc/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="Assadissa.ma@SD" http-referrer="https://snrt.player.easybroadcast.io/",Assadissa (480p)
 #EXTVLCOPT:http-referrer=https://snrt.player.easybroadcast.io/
 https://cdn.live.easybroadcast.io/abr_corp/73_assadissa_7b7u5n1/corp/73_assadissa_7b7u5n1_480p/chunks_dvr.m3u8
@@ -73,9 +79,3 @@ https://136044159.r.cdnsun.net/storychannel.m3u8
 https://cdn.live.easybroadcast.io/ts_corp/73_tamazight_tccybxt/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="TamazightTV.ma@SD",Tamazight TV
 https://fl1002.bozztv.com/ga-tamazight8/index.m3u8
-#EXTINF:-1 tvg-id="AlMaghribia.ma@SD",Al Maghribia
-https://viamotionhsi.netplus.ch/live/eds/almaghribia/browser-HLS8/almaghribia.m3u8
-#EXTINF:-1 tvg-id="AlMaghribia.ma@SD",Al Maghribia
-https://viamotionhsi.netplus.ch/live/eds/almaghribia/browser-dash/almaghribia.mpd
-#EXTINF:-1 tvg-id="2M.ma@SD",2M
-https://viamotionhsi.netplus.ch/live/eds/2mmaroc/browser-dash/2mmaroc.mpd
