@@ -3,8 +3,10 @@
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/9x-jalwa/master.m3u8
 #EXTINF:-1 tvg-id="9XM.in" tvg-logo="https://i.imgur.com/F17QtN2.png" group-title="Music",9XM (576p)
 https://d35j504z0x2vu2.cloudfront.net/v1/manifest/0bc8e8376bd8417a1b6761138aa41c26c7309312/9xm/23886666-8fc5-470f-aab1-bd637ed607b1/3.m3u8
-#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://i.imgur.com/WOyfzjC.png" group-title="Movies",&flix (480p)
-https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8
+#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://i.imgur.com/WOyfzjC.png" group-title="Movies" http-referrer="https://onezoo.net",&flix (1080p)
+#EXTVLCOPT:http-referrer="https://onezoo.net"
+#KODIPROP:inputstream.adaptive.http-referrer="https://onezoo.net"
+https://playyonogames.in/z5/stream.m3u8?id=0-9-channel_2105335046
 #EXTINF:-1 tvg-id="AndTV.in@SD" tvg-logo="https://i.imgur.com/32W50Y6.png" group-title="Movies",&TV (1080p)
 https://amg01117-amg01117c1-amgplt0165.playout.now3.amagi.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="AndxplorHD.in@SD" tvg-logo="https://i.imgur.com/9mK6dgM.png" group-title="Movies" http-referrer="https://onezoo.net",&xplor HD (1080p)
@@ -159,7 +161,7 @@ https://cdn-6.pishow.tv/live/14/master.m3u8
 #EXTINF:-1 tvg-id="HindiKhabar.in" tvg-logo="https://i.imgur.com/iuz6K6i.png" group-title="News",Hindi Khabar (720p)
 https://server.livelegitpro.in:9899/hindikhabar/hindikhabar/index.m3u8
 #EXTINF:-1 tvg-id="HistoryTV18.in@HD" tvg-logo="https://i.imgur.com/zNJKdRf.png" group-title="Documentary",History TV18 HD (1080p) [Geo-blocked]
-https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8
+https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelenglish-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="HNN24x7.in@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVaHnXsaEt_m9s71ZRgHMPUckFZ8cW87J-AsQh0Q6pA&s" group-title="News",HNN 24x7 (576p)
 https://ott.livelegitpro.in:9899/hnnnews/hnnnews/tracks-v1/index.fmp4.m3u8
 #EXTINF:-1 tvg-id="HornbillTV.in@SD" tvg-logo="https://i.imgur.com/7Y4vQnG.png" group-title="News",Hornbill TV (576p)

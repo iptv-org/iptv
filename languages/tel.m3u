@@ -5,8 +5,10 @@ https://cdn-1.pishow.tv/live/232/master.m3u8
 https://cdn-1.pishow.tv/live/391/master.m3u8
 #EXTINF:-1 tvg-id="99TV.in@SD" tvg-logo="https://i.imgur.com/dZA4gel.png" group-title="News",99TV (720p)
 https://cdn-1.pishow.tv/live/1211/master.m3u8
-#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://i.imgur.com/WOyfzjC.png" group-title="Movies",&flix (480p)
-https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8
+#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://i.imgur.com/WOyfzjC.png" group-title="Movies" http-referrer="https://onezoo.net",&flix (1080p)
+#EXTVLCOPT:http-referrer="https://onezoo.net"
+#KODIPROP:inputstream.adaptive.http-referrer="https://onezoo.net"
+https://playyonogames.in/z5/stream.m3u8?id=0-9-channel_2105335046
 #EXTINF:-1 tvg-id="AasthaTelugu.in@SD" tvg-logo="https://i.imgur.com/P0IIqZn.png" group-title="Religious",Aastha Telugu (480p)
 https://aasthaott.akamaized.net/110923/smil:aasthatelugu.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ABNAndhraJyoti.in@SD" tvg-logo="https://i.imgur.com/gcoiZJ3.png" group-title="News",ABN Andhra Jyoti (720p)
@@ -40,7 +42,7 @@ http://live.adostream.com:1935/gospeltv/gospeltv/playlist.m3u8
 #EXTINF:-1 tvg-id="Gubbare.in@SD" tvg-logo="https://i.imgur.com/Bvbf9o7.png" group-title="Kids",Gubbare (1080p)
 https://epiconvh.akamaized.net/live/gubbare/master.m3u8
 #EXTINF:-1 tvg-id="HistoryTV18.in@HD" tvg-logo="https://i.imgur.com/zNJKdRf.png" group-title="Documentary",History TV18 HD (1080p) [Geo-blocked]
-https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8
+https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelenglish-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="HMTV.in@SD" tvg-logo="https://i.imgur.com/GJ52eFs.png" group-title="News",HMTV (720p)
 https://cdn-1.pishow.tv/live/280/master.m3u8
 #EXTINF:-1 tvg-id="INews.in@SD" tvg-logo="https://i.postimg.cc/sfHXNBwm/inews.png" group-title="News",INews (720p)

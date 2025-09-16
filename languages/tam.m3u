@@ -1,8 +1,10 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="7SMusic.in" tvg-logo="https://i.imgur.com/zDiIhdN.png" group-title="Music",7S Music (576p) [Not 24/7]
 http://103.199.161.254/Content/7smusic/Live/Channel(7smusic)/index.m3u8
-#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://i.imgur.com/WOyfzjC.png" group-title="Movies",&flix (480p)
-https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8
+#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://i.imgur.com/WOyfzjC.png" group-title="Movies" http-referrer="https://onezoo.net",&flix (1080p)
+#EXTVLCOPT:http-referrer="https://onezoo.net"
+#KODIPROP:inputstream.adaptive.http-referrer="https://onezoo.net"
+https://playyonogames.in/z5/stream.m3u8?id=0-9-channel_2105335046
 #EXTINF:-1 tvg-id="AasthaTamil.in@SD" tvg-logo="https://i.imgur.com/YQK9ewf.png" group-title="Religious",Aastha Tamil (480p)
 https://aasthaott.akamaized.net/110923/smil:aasthatamil.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AathavanTV.uk" tvg-logo="https://i.imgur.com/LEVEhTH.png" group-title="Entertainment",Aathavan TV (720p) [Not 24/7]
@@ -28,7 +30,7 @@ https://epiconvh.akamaized.net/live/gubbare/master.m3u8
 #EXTINF:-1 tvg-id="HebronTV.in@SD" tvg-logo="https://i0.wp.com/hebrontv.in/wp-content/uploads/2023/11/hebron-.png?w=512" group-title="Religious",Hebron TV (432p)
 https://account20.livebox.co.in/charleshls/live.m3u8
 #EXTINF:-1 tvg-id="HistoryTV18.in@HD" tvg-logo="https://i.imgur.com/zNJKdRf.png" group-title="Documentary",History TV18 HD (1080p) [Geo-blocked]
-https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8
+https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelenglish-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="IBCBakthi.uk@SD" tvg-logo="https://i.imgur.com/ZNEz5Wx.png" group-title="Religious",IBC Bakthi (1080p)
 https://ibc.massstream.net/IBC2/index.m3u8
 #EXTINF:-1 tvg-id="IBCTamil.uk@SD" tvg-logo="https://i.postimg.cc/K8kgN7bt/ibctamil.png" group-title="General",IBC Tamil (1080p)
@@ -74,7 +76,7 @@ https://live.wmncdn.net/nambikkaitv/live.stream/index.m3u8
 #EXTINF:-1 tvg-id="NDTVGoodTimes.in@SD" tvg-logo="https://i.imgur.com/7cruYvo.png" group-title="Lifestyle",NDTV Good Times (1080p)
 https://amg01448-samsungin-ndtvgoodtimes-samsungin-ad-gp.amagi.tv/playlist/amg01448-samsungin-ndtvgoodtimes-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="NethraTV.lk@SD" tvg-logo="https://i.imgur.com/vSrIN1U.jpg" group-title="General",Nethra TV (360p)
-https://edge3-moblive.yuppcdn.net/transsd/smil:chii02.smil/playlist.m3u8?dvr
+https://edge3-moblive.yuppcdn.net/transsd/smil:chii02.smil/playlist.m3u8?dvr=
 #EXTINF:-1 tvg-id="News7Tamil.in@SD" tvg-logo="https://i.imgur.com/UjlbR4o.png" group-title="News",News 7 Tamil (576p)
 https://segment.yuppcdn.net/240122/news7/playlist.m3u8
 #EXTINF:-1 tvg-id="NewsJ.in@SD" tvg-logo="https://i.imgur.com/RqeF8RR.png" group-title="News",News J (720p) [Not 24/7]
@@ -104,7 +106,7 @@ https://galaxyott.live/hls/sanaplus.m3u8
 #EXTINF:-1 tvg-id="SanaTV.in@SD" tvg-logo="https://i.imgur.com/CR7DGBv.png" group-title="Entertainment",Sana TV (576p) [Not 24/7]
 https://galaxyott.live/hls/sanatv.m3u8
 #EXTINF:-1 tvg-id="ShakthiTV.lk@SD" tvg-logo="https://i.imgur.com/RX6IwK8.png" group-title="Undefined",Shakthi TV (360p)
-https://edge4-moblive.yuppcdn.net/transsd/smil:saktv10.smil/playlist.m3u8?dvr
+https://edge4-moblive.yuppcdn.net/transsd/smil:saktv10.smil/playlist.m3u8?dvr=
 #EXTINF:-1 tvg-id="SirippoliTV.in@SD" tvg-logo="https://i.imgur.com/nsplwFc.png" group-title="Comedy",Sirippoli TV (576p)
 https://segment.yuppcdn.net/240122/siripoli/playlist.m3u8
 #EXTINF:-1 tvg-id="SivanTV.ch" tvg-logo="https://i.ibb.co/b3HG9wm/Logo-site.png" group-title="Religious",Sivan TV (1080p)
@@ -116,7 +118,7 @@ https://cdn.jwplayer.com/videos/1m0nMXhZ-3SDdwqdV.m3u8
 #EXTINF:-1 tvg-id="StarSports1Tamil.in@HD" tvg-logo="https://i.imgur.com/dfLSnsZ.png" group-title="Sports",Star Sports 1 Tamil HD
 https://live20.bozztv.com/akamaissh101/ssh101/vboxsungosttamil/playlist.m3u8
 #EXTINF:-1 tvg-id="StarTamilTelevision.lk@SD" tvg-logo="https://i.imgur.com/fjHcr9z.jpg" group-title="Movies",Star Tamil Television (360p)
-https://edge4-moblive.yuppcdn.net/trans1sd/smil:strtml19.smil/playlist.m3u8?dvr
+https://edge4-moblive.yuppcdn.net/trans1sd/smil:strtml19.smil/playlist.m3u8?dvr=
 #EXTINF:-1 tvg-id="SVBC2.in@SD" tvg-logo="https://i.imgur.com/NtmRt1A.png" group-title="Religious",SVBC 2 (576p)
 https://yuppftalive.akamaized.net/080823/svbc2tamil/playlist.m3u8
 #EXTINF:-1 tvg-id="TamilVisionTV.ca" tvg-logo="https://i.imgur.com/DodsLuW.png" group-title="Undefined",Tamil Vision TV (1080p)
@@ -135,8 +137,8 @@ https://6n3yope4d9ok-hls-live.5centscdn.com/vaanavil/TV.stream/playlist.m3u8
 https://vasanth.pc.cdn.bitgravity.com/vasanth/secure/live/feed01/playlist.m3u8
 #EXTINF:-1 tvg-id="Vasantham.sg" tvg-logo="https://i.imgur.com/vqVEcuT.png" group-title="Undefined",Vasantham [Geo-blocked]
 https://d39v9xz8f7n8tk.cloudfront.net/hls/clr4ctv_vsnthm/master.m3u8
-#EXTINF:-1 tvg-id="VasanthamTV.lk@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/18/Vasanthamtv_channel.jpg" group-title="Undefined",Vasantham TV (360p)
-https://edge3-moblive.yuppcdn.net/trans1sd/smil:vatv07.smil/playlist.m3u8?dvr
+#EXTINF:-1 tvg-id="VasanthamTV.lk" tvg-logo="https://upload.wikimedia.org/wikipedia/en/1/18/Vasanthamtv_channel.jpg" group-title="Undefined",Vasantham TV (720p)
+https://j78dp2pnlq5r-hls-live.comcities.net/ITNDigital/20a317b0496a4930b375290505e5d628.sdp/playlist_dvr.m3u8
 #EXTINF:-1 tvg-id="Velicham.in" tvg-logo="https://i.imgur.com/y1voO3k.png" group-title="Entertainment",Velicham (360p) [Not 24/7]
 https://rtmp.smartstream.video/velichamtv/velichamtv/playlist.m3u8
 #EXTINF:-1 tvg-id="VendharTV.in@SD" tvg-logo="https://i.imgur.com/okesED3.png" group-title="Undefined",Vendhar TV (720p) [Not 24/7]

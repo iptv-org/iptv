@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",DD Podhigai
+https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/1324a5ee-c108-423f-ae78-c83b2fd31065/2.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Vathanam TV
 http://95.216.167.183:5080/LiveApp/streams/443106610169904881506470.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Toonz Kids (Indonesian dub) (360p)
@@ -9,6 +11,8 @@ http://c0.cdn.trinity-tv.net/stream/zfmjgma9zn46fa797ez9fgkw7msh9mj4tppspg23gey6
 https://tgn.bozztv.com/gin-dvrfl05/ga-zeealwan/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Toonz Kids (Indonesian dub) (576p)
 http://210.210.155.37/x6bnqe/s/s81/01.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Nickelodeon Sonic Hindi (1080p)
+https://prod-sports-north-gm.jiocinema.com/bpk-tv/Sonic_Nickelodeon_voot_MOB/Fallback/index.m3u8
 #EXTINF:-1 tvg-id="6TVTelugu.in@SD" tvg-logo="https://i.imgur.com/l3EcRnZ.png" group-title="News",6 TV Telugu (720p)
 https://cdn-1.pishow.tv/live/232/master.m3u8
 #EXTINF:-1 tvg-id="7SMusic.in" tvg-logo="https://i.imgur.com/zDiIhdN.png" group-title="Music",7S Music (576p) [Not 24/7]
@@ -70,8 +74,10 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/db8d4eca72d64748a00d0631debf542d/in
 https://livetv.tarangplus.in/alankar-origin/live/playlist.m3u8
 #EXTINF:-1 tvg-id="AmritaTV.in@SD" tvg-logo="https://i.imgur.com/WdSjlPl.png" group-title="Entertainment",Amrita TV (720p)
 https://d2lzf5tle3ge1s.cloudfront.net/master.m3u8
-#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://i.imgur.com/WOyfzjC.png" group-title="Movies",&flix (480p)
-https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8
+#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://i.imgur.com/WOyfzjC.png" group-title="Movies" http-referrer="https://onezoo.net",&flix (1080p)
+#EXTVLCOPT:http-referrer="https://onezoo.net"
+#KODIPROP:inputstream.adaptive.http-referrer="https://onezoo.net"
+https://playyonogames.in/z5/stream.m3u8?id=0-9-channel_2105335046
 #EXTINF:-1 tvg-id="Andpictures.in@SD" tvg-logo="https://i.imgur.com/VYh3V8E.png" group-title="Movies" http-referrer="https://onezoo.net",&pictures (1080p)
 #EXTVLCOPT:http-referrer="https://onezoo.net"
 #KODIPROP:inputstream.adaptive.http-referrer="https://onezoo.net"
@@ -240,8 +246,6 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/40492a64c1db4a1385ba1a397d357d3a/in
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0811cd8c37ca4c409d5385a6cd2fa18b/index.m3u8
 #EXTINF:-1 tvg-id="DDOdia.in" tvg-logo="https://i.imgur.com/Rw61ile.png" group-title="General",DD Odia
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/245d9a9e-4820-43b1-af33-4a3017d09f52/2.m3u8
-#EXTINF:-1 tvg-id="DDPodhigai.in" tvg-logo="" group-title="Undefined",DD Podhigai
-https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/1324a5ee-c108-423f-ae78-c83b2fd31065/2.m3u8
 #EXTINF:-1 tvg-id="DDPunjabi.in" tvg-logo="https://i.imgur.com/WVtl6n2.png" group-title="Culture",DD Punjabi
 https://d3eyhgoylams0m.cloudfront.net/v1/manifest/93ce20f0f52760bf38be911ff4c91ed02aa2fd92/ed7bd2c7-8d10-4051-b397-2f6b90f99acb/20c8ad14-a158-4a42-8889-e032d070856e/2.m3u8
 #EXTINF:-1 tvg-id="DDRajasthan.in@SD" tvg-logo="https://i.imgur.com/t8KCi4L.png" group-title="General",DD Rajasthan (720p)
@@ -375,7 +379,7 @@ https://highmedia.livebox.co.in/HIGHNEWShls/LIVE.m3u8
 #EXTINF:-1 tvg-id="HindiKhabar.in" tvg-logo="https://i.imgur.com/iuz6K6i.png" group-title="News",Hindi Khabar (720p)
 https://server.livelegitpro.in:9899/hindikhabar/hindikhabar/index.m3u8
 #EXTINF:-1 tvg-id="HistoryTV18.in@HD" tvg-logo="https://i.imgur.com/zNJKdRf.png" group-title="Documentary",History TV18 HD (1080p) [Geo-blocked]
-https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8
+https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelenglish-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="HMTV.in@SD" tvg-logo="https://i.imgur.com/GJ52eFs.png" group-title="News",HMTV (720p)
 https://cdn-1.pishow.tv/live/280/master.m3u8
 #EXTINF:-1 tvg-id="HNN24x7.in@SD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVaHnXsaEt_m9s71ZRgHMPUckFZ8cW87J-AsQh0Q6pA&s" group-title="News",HNN 24x7 (576p)
@@ -621,8 +625,6 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6cd2f649739a45ca9de1daf81cc7d0f2/index.m3u8
 #EXTINF:-1 tvg-id="NewsTamil24x7.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/News_Tamil_24x7.png" group-title="News",News Tamil 24x7 (1080p)
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/news-tamil-24x7/index.m3u8
-#EXTINF:-1 tvg-id="NickelodeonSonic.in" tvg-logo="" group-title="Undefined",Nickelodeon Sonic Hindi (1080p)
-https://prod-sports-north-gm.jiocinema.com/bpk-tv/Sonic_Nickelodeon_voot_MOB/Fallback/index.m3u8
 #EXTINF:-1 tvg-id="NickHDPlus.in@SD" tvg-logo="https://i.imgur.com/nJPbTet.png" group-title="Kids",Nick HD+ (1080p) [Not 24/7]
 http://116.90.120.149:8000/play/a0cw/index.m3u8
 #EXTINF:-1 tvg-id="NickJr.in" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Nick_Jr._logo_2009.svg/512px-Nick_Jr._logo_2009.svg.png" group-title="Kids",Nick Jr India (1080p)

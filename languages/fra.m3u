@@ -26,7 +26,7 @@ https://video1.getstreamhosting.com:1936/8420/8420/playlist.m3u8
 #EXTINF:-1 tvg-id="APlusIvoire.ci" tvg-logo="https://i.imgur.com/yOW0vyP.png" group-title="Culture",A+ Ivoire (720p)
 http://69.64.57.208/atv/playlist.m3u8
 #EXTINF:-1 tvg-id="AB1.fr@SD" tvg-logo="https://i.imgur.com/9C7UsOe.png" group-title="Entertainment",AB1
-https://viamotionhsi.netplus.ch/live/eds/ab1/browser-HLS8/ab1.m3u8
+https://viamotionhsi.netplus.ch/live/eds/ab1/browser-dash/ab1.mpd
 #EXTINF:-1 tvg-id="AB3.be@HD" tvg-logo="https://i.postimg.cc/RZ2N611D/ab3.png" group-title="Entertainment",AB3 HD
 https://viamotionhsi.netplus.ch/live/eds/ab3/browser-HLS8/ab3.m3u8
 #EXTINF:-1 tvg-id="ACTV.tg" tvg-logo="https://i.postimg.cc/wMPdf2BK/actv.png" group-title="Religious",AC TV (480p) [Not 24/7]
@@ -77,7 +77,7 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/61
 #EXTINF:-1 tvg-id="AngelaAnaconda.us@France" tvg-logo="https://i.imgur.com/OpGc8uF.png" group-title="Kids",Angela Anaconda
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/611e73687fcd580007d1f052/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e063bd1-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=28121508-e373-4b45-8f21-c48bbc48ecda
 #EXTINF:-1 tvg-id="Animaux.fr@SD" tvg-logo="https://i.imgur.com/FM9FVAG.png" group-title="Education",Animaux
-https://viamotionhsi.netplus.ch/live/eds/animaux/browser-HLS8/animaux.m3u8
+https://viamotionhsi.netplus.ch/live/eds/animaux/browser-dash/animaux.mpd
 #EXTINF:-1 tvg-id="AntenneA.cd" tvg-logo="https://i.imgur.com/tgxrcv7.png" group-title="General",Antenne A
 http://51.254.199.122:8080/antenne_a-plus/index.m3u8
 #EXTINF:-1 tvg-id="AntenneReunion.fr" tvg-logo="https://i.imgur.com/EPIMMaB.png" group-title="General",Antenne Réunion (720p) [Not 24/7]
@@ -334,8 +334,8 @@ https://viamotionhsi.netplus.ch/live/eds/france4hd/browser-dash/france4hd.mpd
 http://69.64.57.208/france5/mono.m3u8
 #EXTINF:-1 tvg-id="France5.fr@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/France_5_2018.svg/512px-France_5_2018.svg.png" group-title="General",France 5 HD (720p)
 https://viamotionhsi.netplus.ch/live/eds/france5hd/browser-dash/france5hd.mpd
-#EXTINF:-1 tvg-id="France24.fr@French" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="News",France 24 French (1080p)
-https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_5000.m3u8
+#EXTINF:-1 tvg-id="France24.fr@French" tvg-logo="https://i.imgur.com/u8N6uoj.png" group-title="News",France 24
+https://viamotionhsi.netplus.ch/live/eds/france24/browser-HLS8/france24.m3u8
 #EXTINF:-1 tvg-id="Francophonie24.fr" tvg-logo="https://i.imgur.com/uM1v1sd.png" group-title="Documentary",Francophonie (360p)
 http://mv2.tvfrancophonie.org/live/Stream1/playlist.m3u8
 #EXTINF:-1 tvg-id="FunRadio.fr" tvg-logo="https://i.imgur.com/wgxuYsQ.png" group-title="Music",Fun Radio (720p)
@@ -354,8 +354,8 @@ https://tnt-television.com/Geopolis_tv/index.m3u8
 https://g2qd3exjy7an-hls-live.5centscdn.com/gtvghana/ghanaweb.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="GuideLoveTV.ci" tvg-logo="https://i.ibb.co/9gS2Y4G/guidelove-logo.png" group-title="Lifestyle",Guide Love TV (720p)
 https://video1.getstreamhosting.com:1936/8056/8056/playlist.m3u8
-#EXTINF:-1 tvg-id="Gulli.fr@SD" tvg-logo="https://i.imgur.com/kqYssbW.png" group-title="Kids",Gulli
-https://origin-caf900c010ea8046.live.6cloud.fr/out/v1/c65696b42ca34e97a9b5f54758d6dd50/cmaf/hlsfmp4_short_q2hyb21h_gulli_sd_index.m3u8
+#EXTINF:-1 tvg-id="Gulli.fr" tvg-logo="https://i.imgur.com/kqYssbW.png" group-title="Kids",Gulli (720p)
+https://viamotionhsi.netplus.ch/live/eds/gulli/browser-HLS8/gulli.m3u8
 #EXTINF:-1 tvg-id="HANDICAPTV.fr" tvg-logo="https://i.imgur.com/vXbAeD0.png" group-title="Lifestyle",HANDICAP TV France
 https://srv.webtvmanager.fr:3697/stream/play.m3u8
 #EXTINF:-1 tvg-id="Heleneetlesgarcons.us@France" tvg-logo="https://i.imgur.com/EjjzjF9.png" group-title="Series",Hélène et les garçons
@@ -445,7 +445,7 @@ https://tnt-television.com/LBFD_RTV/index.m3u8
 #EXTINF:-1 tvg-id="LCI.fr" tvg-logo="https://i.imgur.com/DED8EXs.png" group-title="News",LCI (720p)
 https://raw.githubusercontent.com/ipstreet312/freeiptv/master/ressources/btv/py/lci1.m3u8
 #EXTINF:-1 tvg-id="LCI.fr@HD" tvg-logo="https://i.imgur.com/DED8EXs.png" group-title="News",LCI HD
-https://viamotionhsi.netplus.ch/live/eds/lci/browser-HLS8/lci.m3u8
+https://viamotionhsi.netplus.ch/live/eds/lci/browser-dash/lci.mpd
 #EXTINF:-1 tvg-id="LCN.ca" tvg-logo="https://i.imgur.com/iKDLgOG.png" group-title="News",LCN [Geo-blocked]
 https://tvalive.akamaized.net/hls/live/2014213/tvan01/tvan01.m3u8
 #EXTINF:-1 tvg-id="LCP.fr@SD" tvg-logo="https://i.imgur.com/k7UImOJ.png" group-title="Legislative",LCP
@@ -458,8 +458,8 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60
 https://lnmlive.com/hls/stream.m3u8
 #EXTINF:-1 tvg-id="LegislativeAssemblyofOntario.ca" tvg-logo="https://i.imgur.com/n24MrsX.png" group-title="Legislative",Legislative Assembly of Ontario
 https://temp3.isilive.ca/live/_definst_/ontla/house-en/playlist.m3u8
-#EXTINF:-1 tvg-id="LemanBleu.ch" tvg-logo="https://i.postimg.cc/QCKvxn5f/lemanbleu.png" group-title="News",Léman Bleu (1080p)
-http://livevideo.infomaniak.com/streaming/livecast/naxoo/playlist.m3u8
+#EXTINF:-1 tvg-id="LemanBleu.ch@SD" tvg-logo="https://i.postimg.cc/QCKvxn5f/lemanbleu.png" group-title="News",Leman Bleu (1080p)
+https://viamotionhsi.netplus.ch/live/eds/lemanbleu/browser-HLS8/lemanbleu.m3u8
 #EXTINF:-1 tvg-id="LesAnneesfac.us@France" tvg-logo="https://i.imgur.com/M1OjaB0.png" group-title="Series",Les Années fac
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60afae68a7fc50000737186d/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e05edb5-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=f7ccca4e-2376-4b24-b7e1-561c50fd11f1
 #EXTINF:-1 tvg-id="LesCordier.us@France" tvg-logo="https://i.imgur.com/JmAYoJH.png" group-title="Series",Les Cordier
@@ -700,8 +700,8 @@ https://edge14.vedge.infomaniak.com/livecast/ik:rhonetv/manifest.m3u8
 https://edge12.vedge.infomaniak.com/livecast/ik:livehautetension/manifest.m3u8
 #EXTINF:-1 tvg-id="RLPROTV.cd" tvg-logo="https://i.imgur.com/PIBtCEN.jpeg" group-title="Documentary",RL PRO TV
 https://stream.berosat.live:19360/rlpro-tv/rlpro-tv.m3u8
-#EXTINF:-1 tvg-id="RMCDecouverte.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/b/b3/RMC_D%C3%A9couverte_logo_2017.svg/langfr-350px-RMC_D%C3%A9couverte_logo_2017.svg.png" group-title="Undefined",RMC Découverte (1080p)
-https://d2mt8for1pddy4.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-6uronj7gzvy4j/index.m3u8
+#EXTINF:-1 tvg-id="RMCDecouverte.fr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/b/b3/RMC_D%C3%A9couverte_logo_2017.svg/langfr-350px-RMC_D%C3%A9couverte_logo_2017.svg.png" group-title="Undefined",RMC Decouverte (1080p)
+https://viamotionhsi.netplus.ch/live/eds/rmcdecouverte/browser-HLS8/rmcdecouverte.m3u8
 #EXTINF:-1 tvg-id="RMCStory.fr" tvg-logo="https://i.postimg.cc/MpjZFqGF/rmcstory.png" group-title="Undefined",RMC Story (1080p)
 https://d36bxc1bknkxrk.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-3ewcp19zjaxpt/index.m3u8
 #EXTINF:-1 tvg-id="RTFrance.fr" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/RT-France-logo.svg/512px-RT-France-logo.svg.png" group-title="News",RT France (1080p) [Geo-blocked]
@@ -723,7 +723,7 @@ http://69.64.57.208:8080/rti2/playlist.m3u8
 #EXTINF:-1 tvg-id="RTILa3.ci@SD" tvg-logo="https://i.imgur.com/HdNshgF.png" group-title="Music;Sports",RTI La 3 (1080p) [Not 24/7]
 http://69.64.57.208/la3/index.m3u8
 #EXTINF:-1 tvg-id="RTL9.lu@SD" tvg-logo="https://i.imgur.com/nFqjVNW.png" group-title="Entertainment",RTL9
-https://viamotionhsi.netplus.ch/live/eds/rtl9/browser-HLS8/rtl9.m3u8
+https://viamotionhsi.netplus.ch/live/eds/rtl9/browser-dash/rtl9.mpd
 #EXTINF:-1 tvg-id="RTLZwee.lu" tvg-logo="https://i.imgur.com/7SmCtyy.png" group-title="General",RTL Zwee (1080p)
 https://live-edge.rtl.lu/channel2/smil:channel2/playlist.m3u8
 #EXTINF:-1 tvg-id="RTLTVI.be" tvg-logo="https://i.imgur.com/2CimAAN.png" group-title="Undefined",RTL-TVI (1080p) [Not 24/7]
@@ -801,8 +801,8 @@ http://69.64.57.208/telesahel/playlist.m3u8
 https://strhlslb01.streamakaci.tv/str_tchad_tchad/str_tchad_multi/playlist.m3u8
 #EXTINF:-1 tvg-id="CIVMDT.ca" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/T%C3%A9l%C3%A9-Qu%C3%A9bec_logo.svg/512px-T%C3%A9l%C3%A9-Qu%C3%A9bec_logo.svg.png" group-title="Education",Télé-Québec (720p)
 https://bcovlive-a.akamaihd.net/4b1c462c86094bae93b65adc84e43afc/us-west-2/6101674910001/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleBielingue.ch" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/TeleBielingue_Logo.svg/512px-TeleBielingue_Logo.svg.png" group-title="Undefined",TeleBielingue (720p)
-https://edge20.vedge.infomaniak.com/livecast/ik:telebielinguech/manifest.m3u8
+#EXTINF:-1 tvg-id="TeleBielingue.ch@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/TeleBielingue_Logo.svg/512px-TeleBielingue_Logo.svg.png" group-title="Undefined",TeleBielingue (1080p)
+https://viamotionhsi.netplus.ch/live/eds/telebielingue/browser-HLS8/telebielingue.m3u8
 #EXTINF:-1 tvg-id="TeleGohelle.fr" tvg-logo="https://i.imgur.com/Oa3Pwbf.png" group-title="General",TéléGohelle
 https://videas.agglo-lenslievin.fr/index.m3u8
 #EXTINF:-1 tvg-id="TelemastersTV.us" tvg-logo="https://i.imgur.com/grDBcTs.jpg" group-title="General",Telemasters TV (720p)
@@ -871,8 +871,8 @@ https://d1hz1p2gea2zy4.cloudfront.net/live/rmgtv/RMG-TRENDSZFR-LIVE/index.m3u8
 https://alpha.tv.online.tm/hls/ch007.m3u8
 #EXTINF:-1 tvg-id="TV1.dz@SD" tvg-logo="https://i.imgur.com/F0DOrxX.png" group-title="General",TV1 Algerian Television (1080p)
 http://149.62.177.98:8000/play/a00i/index.m3u8
-#EXTINF:-1 tvg-id="TV2.dz@SD" tvg-logo="https://i.imgur.com/VEb631f.png" group-title="General",TV2 Canal Algérie (1080p)
-http://149.62.177.98:8000/play/a01s/index.m3u8
+#EXTINF:-1 tvg-id="TV2.dz@SD" tvg-logo="https://i.imgur.com/VEb631f.png" group-title="General",TV2
+https://viamotionhsi.netplus.ch/live/eds/canalalgerie/browser-dash/canalalgerie.mpd
 #EXTINF:-1 tvg-id="TV3V.fr@SD" tvg-logo="https://i.ibb.co/X2yd0zL/logo-tv3v.jpg" group-title="General",TV3V (720p)
 https://tv3v.live-kd.com/live/tv3v/livestream/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeAsia.fr" tvg-logo="https://i.imgur.com/FRsRXRR.png" group-title="Undefined",TV5 Monde Asia (Asie) (1080p) [Geo-blocked]
@@ -945,8 +945,8 @@ https://cdn-globecast.akamaized.net/live/eds/vision4/hls_video/index.m3u8
 https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8
 #EXTINF:-1 tvg-id="VoxAfrica.uk" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/6/63/Voxafrica-1.png/512px-Voxafrica-1.png" group-title="Undefined",VoxAfrica
 http://69.64.57.208/voxafrica/playlist.m3u8
-#EXTINF:-1 tvg-id="W9.fr@SD" tvg-logo="https://i.imgur.com/reYeMuE.png" group-title="Entertainment",W9 [Geo-blocked]
-https://viamotionhsi.netplus.ch/live/eds/w9/browser-HLS8/w9.m3u8
+#EXTINF:-1 tvg-id="W9.fr@SD" tvg-logo="https://i.imgur.com/reYeMuE.png" group-title="Entertainment",W9
+https://viamotionhsi.netplus.ch/live/eds/w9/browser-dash/w9.mpd
 #EXTINF:-1 tvg-id="WalfTV.sn" tvg-logo="https://i.imgur.com/IrBAqIJ.png" group-title="General",Walf TV (360p)
 http://69.64.57.208/walftv/playlist.m3u8
 #EXTINF:-1 tvg-id="WalkerTexasRanger.us@France" tvg-logo="https://i.imgur.com/0N7EhuD.png" group-title="Series",Walker Texas Ranger
