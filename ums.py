@@ -3,7 +3,8 @@ import requests
 
 # External M3U URLs
 fancode_url = 'https://raw.githubusercontent.com/Jitendraunatti/fancode/refs/heads/main/data/fancode.m3u'
-sonyliv_url = 'https://raw.githubusercontent.com/SArun61/IPTV/refs/heads/main/SonyLiv.m3u'
+sonyliv_url = 'https://raw.githubusercontent.com/imdhiru/bloginstall-iptv/refs/heads/main/Sony-liv.m3u'
+#'https://raw.githubusercontent.com/SArun61/IPTV/refs/heads/main/SonyLiv.m3u'
 
 index_file_path = "streams/index.m3u"
 
