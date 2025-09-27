@@ -73,6 +73,20 @@ http://cdn19.live247stream.com/channely/tv/playlist.m3u8
 https://cdn-1.pishow.tv/live/1451/master.m3u8
 #EXTINF:-1 tvg-id="CNBCTV18.in@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/CNBC_TV18.png" group-title="Business",CNBC TV18 (1080p)
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/cnbc-tv18/master.m3u8
+#EXTINF:-1 tvg-id="Colors.in@SD" tvg-logo="https://i.imgur.com/M8uCJ0D.png" group-title="Entertainment" http-referrer="https://playyonogames.in/",Colors (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=144&extension=.m3u8
+#EXTINF:-1 tvg-id="ColorsCineplex.in@SD" tvg-logo="https://i.imgur.com/Hvvjfk5.png" group-title="Movies",Colors Cineplex (1080p)
+https://nonprod-sports-cohort.jiocinema.com/bpk-tv/JC_ColorsCineplexHD/JCHLS/index.m3u8
+#EXTINF:-1 tvg-id="ColorsCineplexBollywood.in@SD" tvg-logo="https://i.imgur.com/EbHSQAJ.png" group-title="Movies",Colors Cineplex Bollywood (576p)
+https://nonprod-sports-cohort.jiocinema.com/bpk-tv/JC_ColorsCineplexBollywood/JCHLS/index.m3u8
+#EXTINF:-1 tvg-id="ColorsCineplexSuperhits.in@SD" tvg-logo="" group-title="Movies",Colors Cineplex Superhits (576p)
+https://nonprod-sports-cohort.jiocinema.com/bpk-tv/JC_ColorsCineplexSuperhit/JCHLS/index.m3u8
+#EXTINF:-1 tvg-id="ColorsRishteyAsia.in@SD" tvg-logo="https://i.imgur.com/YKWfMZo.png" group-title="General" http-referrer="https://playyonogames.in/",Colors Rishtey Asia (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=279&format=.m3u8
 #EXTINF:-1 tvg-id="Dabangg.in@SD" tvg-logo="https://i.imgur.com/6ChpxLy.png" group-title="Entertainment",Dabangg (720p)
 https://cdn-apse1-prod.tsv2.amagi.tv/linear/amg01448-samsungin-dabanggin-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="DangalTV.in@SD" tvg-logo="https://i.imgur.com/6JTb3cd.png" group-title="General",Dangal TV (720p)
@@ -117,8 +131,10 @@ https://cdn-4.pishow.tv/live/8/master.m3u8
 https://cdn-1.pishow.tv/live/36/master.m3u8
 #EXTINF:-1 tvg-id="DDUttarakhand.in@SD" tvg-logo="https://i.imgur.com/GzBsbos.png" group-title="General",DD Uttarakhand (720p)
 https://cdn-1.pishow.tv/live/17/master.m3u8
-#EXTINF:-1 tvg-id="Dhamaal.in" tvg-logo="https://i.imgur.com/J6D56EF.png" group-title="Music",Dhamaal (1080p) [Not 24/7]
-https://live.hungama.com/linear/dhamaal/playlist.m3u8
+#EXTINF:-1 tvg-id="Dhamaal.in@SD" tvg-logo="https://i.imgur.com/J6D56EF.png" group-title="Music" http-referrer="https://playyonogames.in/",Dhamaal (576p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=535&format=.m3u8
 #EXTINF:-1 tvg-id="DheeranTV.in" tvg-logo="https://i.imgur.com/jSedjXf.png" group-title="Religious",Dheeran TV (576p)
 https://live.we2live.in/dheerantv/dheerantv/playlist.m3u8
 #EXTINF:-1 tvg-id="Dhinchaak.in" tvg-logo="https://i.imgur.com/oqqChlH.png" group-title="Movies",Dhinchaak (576p) [Not 24/7]
@@ -353,13 +369,31 @@ https://nxtlive.net/sliv/stream.php?id=0898545986&e=.m3u8
 #EXTVLCOPT:http-referrer=https://nxtlive.net/
 #KODIPROP:inputstream.adaptive.stream_headers=referer==https://nxtlive.net/
 https://nxtlive.net/sliv/stream.php?id=0657898986&e=.m3u8
+#EXTINF:-1 tvg-id="StarBharat.in@HD" tvg-logo="https://i.imgur.com/Q8ajPij.png" group-title="Entertainment",Star Bharat HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starbharathd/master.m3u8
 #EXTINF:-1 tvg-id="StarGold.in" tvg-logo="https://i.imgur.com/xC460sj.png" group-title="Movies" http-user-agent="stream",Star Gold HD (1080p)
 #EXTVLCOPT:http-user-agent=stream
 http://103.81.104.118/hls/stream19.m3u8
+#EXTINF:-1 tvg-id="StarGold.in@HD" tvg-logo="https://i.imgur.com/xC460sj.png" group-title="Movies",Star Gold HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/stargoldhd/master.m3u8
+#EXTINF:-1 tvg-id="StarGoldRomance.in@SD" tvg-logo="https://i.imgur.com/gSWv9U3.png" group-title="Movies",Star Gold Romance (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/stargoldromance/master.m3u8
+#EXTINF:-1 tvg-id="StarGoldSelect.in@HD" tvg-logo="https://i.imgur.com/U7eiuqv.png" group-title="Movies",Star Gold Select HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/stargold2hd/master.m3u8
 #EXTINF:-1 tvg-id="StarGoldThrills.in@SD" tvg-logo="https://i.imgur.com/azqtpYh.png" group-title="Movies",Star Gold Thrills (576p)
 http://116.90.120.149:8000/play/a0c0/index.m3u8
+#EXTINF:-1 tvg-id="StarMovies.in@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/STAR_Movies_logo.svg/512px-STAR_Movies_logo.svg.png" group-title="Movies",Star Movies HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starmovieshd/master.m3u8
+#EXTINF:-1 tvg-id="StarMoviesSelect.in@HD" tvg-logo="https://i.imgur.com/bnzDNCF.png" group-title="Movies",Star Movies Select HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starmoviesselecthd/master.m3u8
 #EXTINF:-1 tvg-id="StarSports1Hindi.in@HD" tvg-logo="https://i.imgur.com/RGeLxjv.png" group-title="Sports",Star Sports 1 Hindi HD (1080p)
 http://116.90.120.149:8000/play/a0bv/index.m3u8
+#EXTINF:-1 tvg-id="StarUtsav.in@SD" tvg-logo="https://i.imgur.com/H1jhHDl.png" group-title="Undefined",Star Utsav (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/starutsav/master.m3u8
+#EXTINF:-1 tvg-id="StarUtsavMovies.in@SD" tvg-logo="https://i.imgur.com/k5QHfH2.png" group-title="Movies",Star Utsav Movies (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/starutsavmovies/master.m3u8
+#EXTINF:-1 tvg-id="StarPlus.in@HD" tvg-logo="https://i.imgur.com/xWxNy3L.png" group-title="Entertainment",StarPlus HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starplushd/master.m3u8
 #EXTINF:-1 tvg-id="SteelbirdMusic.in@SD" tvg-logo="https://i.imgur.com/Egijzx3.png" group-title="Music",Steelbird Music (720p) [Not 24/7]
 https://cdn2.in/SteelbirdMusicTVhls/live.m3u8
 #EXTINF:-1 tvg-id="SubhartiTV.in@SD" tvg-logo="https://i.imgur.com/9hdNFtt.png" group-title="Undefined",Subharti TV (576p)

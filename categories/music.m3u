@@ -138,8 +138,8 @@ https://cloudvideo.servers10.com:8081/8004/index.m3u8
 https://cmc-ono.amagi.tv/hls/amagi_hls_data_cmcAAAAAA-cmc-ono/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="CaltexTV.ir" tvg-logo="https://i.imgur.com/qegiypT.png" group-title="Music",Caltex Music
 https://video.caltexmusic.com/hls/caltextv.m3u8
-#EXTINF:-1 tvg-id="Canal3KMKTV.cr@SD" tvg-logo="https://i.imgur.com/sgRDRBK.jpg" group-title="Music",Canal 3 KMK TV (1280p) [Not 24/7]
-https://s3.tvdatta.com:3030/live/kmk3live.m3u8
+#EXTINF:-1 tvg-id="Canal3KMKTV.cr@SD" tvg-logo="https://i.imgur.com/sgRDRBK.jpg" group-title="Music",Canal 3 KMK TV (576i) [Not 24/7]
+https://live20.bozztv.com/giatv/giatv-KMKTV/KMKTV/chunks.m3u8
 #EXTINF:-1 tvg-id="CantinaTV.ve" tvg-logo="https://i.imgur.com/JWMk2fP.png" group-title="Music",Cantina TV (1080p)
 https://vcp.myplaytv.com/cantinatv/cantinatv/playlist.m3u8
 #EXTINF:-1 tvg-id="CCTV15.cn" tvg-logo="https://i.imgur.com/CCV0eRG.png" group-title="Music",CCTV15音乐
@@ -218,8 +218,10 @@ https://jmp2.uk/stvp-CHAJ0500413A
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/13456/13456_264_live.m3u8
 #EXTINF:-1 tvg-id="DeluxeRap.de" tvg-logo="https://i.imgur.com/s3h67hx.png" group-title="Music",Deluxe Rap (1080p)
 https://sdn-global-live-streaming-packager-cache.3qsdn.com/65183/65183_264_live.m3u8
-#EXTINF:-1 tvg-id="Dhamaal.in" tvg-logo="https://i.imgur.com/J6D56EF.png" group-title="Music",Dhamaal (1080p) [Not 24/7]
-https://live.hungama.com/linear/dhamaal/playlist.m3u8
+#EXTINF:-1 tvg-id="Dhamaal.in@SD" tvg-logo="https://i.imgur.com/J6D56EF.png" group-title="Music" http-referrer="https://playyonogames.in/",Dhamaal (576p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=535&format=.m3u8
 #EXTINF:-1 tvg-id="DhoomMusic.in@SD" tvg-logo="https://i.imgur.com/ai9gpjy.png" group-title="Music",Dhoom Music (720p)
 https://cdn-1.pishow.tv/live/1456/master.m3u8
 #EXTINF:-1 tvg-id="DijlahTarab.iq" tvg-logo="https://i.imgur.com/UJqDWVB.png" group-title="Music",Dijlah Tarab (1080p)
@@ -950,6 +952,8 @@ https://cdnlive.myspirit.tv/LS-ATL-43240-2/index.m3u8
 https://live2.tensila.com/knut-v-1.choice/hls/master.m3u8
 #EXTINF:-1 tvg-id="StarFolkTV.mk" tvg-logo="https://i.imgur.com/fM7FUgk.png" group-title="Music",Star Folk (1080p)
 https://live.muzickatv.mk/live/StarMusic.m3u8
+#EXTINF:-1 tvg-id="StarMaaMusic.in@SD" tvg-logo="https://i.imgur.com/vxP9L8p.png" group-title="Music",Star Maa Music (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/maamusic/master.m3u8
 #EXTINF:-1 tvg-id="StarPlusTelevizija.mk" tvg-logo="https://i.imgur.com/01yz22a.png" group-title="Music",Star Plus Music (1080p) [Not 24/7]
 https://live.muzickatv.mk/live/StarMusic2.m3u8
 #EXTINF:-1 tvg-id="SteelbirdMusic.in@SD" tvg-logo="https://i.imgur.com/Egijzx3.png" group-title="Music",Steelbird Music (720p) [Not 24/7]
@@ -1008,6 +1012,10 @@ https://cloudvideo.servers10.com:8081/stztelebista/index.m3u8
 https://vcp8.myplaytv.com:1936/superq/superq/playlist.m3u8
 #EXTINF:-1 tvg-id="SuperTV.ro" tvg-logo="https://i.imgur.com/pzxUE0O.png" group-title="Music",Super TV (576p)
 http://iptv.supertv.ro:8000/play/a001/index.m3u8
+#EXTINF:-1 tvg-id="SuryaMusic.in@SD" tvg-logo="https://i.imgur.com/9vcdaKw.png" group-title="Music" http-referrer="https://playyonogames.in/",Surya Music (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=747&format=.m3u8
 #EXTINF:-1 tvg-id="T2TV.ir" tvg-logo="https://i.imgur.com/Wu8MBb7.png" group-title="Music",T2 TV
 https://t2hls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="Tarab.sa" tvg-logo="https://assets.mbcmood.com/channels/1738059679TARAB_Logo.png" group-title="Music",Tarab (1080p)
@@ -1102,6 +1110,10 @@ https://rpn.bozztv.com/gusa/gusa-tvsmusic/index.m3u8
 https://streamtv.onliv3.online:1936/karibtv/karibtv/playlist.m3u8
 #EXTINF:-1 tvg-id="TZiK.fr" tvg-logo="https://i.imgur.com/TAagRkn.png" group-title="Music",TZiK [Not 24/7]
 https://54627d4fc5996.streamlock.net/tzik/tzik/chunklist.m3u8
+#EXTINF:-1 tvg-id="UdayaMusic.in@SD" tvg-logo="https://i.imgur.com/Lp1OuB9.png" group-title="Music" http-referrer="https://playyonogames.in/",Udaya Music (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=744&format=.m3u8
 #EXTINF:-1 tvg-id="UrbanoTV.cr" tvg-logo="https://i.imgur.com/KVVU9PI.png" group-title="Music",Urbano TV (720p)
 https://59ef525c24caa.streamlock.net/tvurbano/tvurbano/playlist.m3u8
 #EXTINF:-1 tvg-id="V2BEATTV.uk" tvg-logo="https://i.imgur.com/PXGqyLn.png" group-title="Music",V2BEAT (720p) [Not 24/7]
@@ -1154,6 +1166,8 @@ https://content.uplynk.com/channel/36953f5b6546464590d2fcd954bc89cf.m3u8
 https://d3b2epqdk0p7vd.cloudfront.net/out/v1/8a448b5e16384af4a3c8146a7b049c32/index.m3u8
 #EXTINF:-1 tvg-id="VideoTourChannel.cr" tvg-logo="https://i.imgur.com/zEi8eMC.png" group-title="Music",Video Tour Channel (480p) [Not 24/7]
 http://k4.usastreams.com/videotour/videotour/playlist.m3u8
+#EXTINF:-1 tvg-id="VijayTakkar.in@SD" tvg-logo="https://i.imgur.com/bqqcEu7.png" group-title="Music",Vijay Takkar (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/vijaytakkar/master.m3u8
 #EXTINF:-1 tvg-id="VintageMusic.cr" tvg-logo="" group-title="Music",Vintage Music (720p)
 https://59ef525c24caa.streamlock.net/vmtv/tvvintage/playlist.m3u8
 #EXTINF:-1 tvg-id="VIPTV.aw" tvg-logo="https://i.imgur.com/6N0qITv.png" group-title="Music",VIP TV (720p)

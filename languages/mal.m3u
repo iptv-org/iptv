@@ -3,6 +3,10 @@
 https://d2lzf5tle3ge1s.cloudfront.net/master.m3u8
 #EXTINF:-1 tvg-id="AnandTV.uk" tvg-logo="https://i.imgur.com/5VOPFzs.png" group-title="General",Anand TV (720p) [Not 24/7]
 https://live-anandtv.anandmedia.net/anandtvapp/anandtv/index.m3u8
+#EXTINF:-1 tvg-id="Asianet.in@HD" tvg-logo="https://i.imgur.com/Wv7MOzg.png" group-title="Entertainment",Asianet HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/asianethd/master.m3u8
+#EXTINF:-1 tvg-id="AsianetMovies.in@HD" tvg-logo="https://i.imgur.com/cps67hs.png" group-title="Movies",Asianet Movies HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/asianetmovieshd/master.m3u8
 #EXTINF:-1 tvg-id="AsianetNews.in" tvg-logo="https://i.imgur.com/LrHGfdC.png" group-title="News",Asianet News (360p)
 https://vidcdn.vidgyor.com/asianet-origin/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-id="AsianetPlus.in@SD" tvg-logo="https://i.imgur.com/qg1IhV8.png" group-title="Entertainment",Asianet Plus (1080p)
@@ -23,8 +27,10 @@ https://5a1178b42cc03.streamlock.net/8250/8250/playlist.m3u8
 https://5a1178b42cc03.streamlock.net/8182/8182/playlist.m3u8
 #EXTINF:-1 tvg-id="EnlightNews.in" tvg-logo="https://i.imgur.com/GhiGi5A.png" group-title="News",Enlight News (1080p)
 https://live.enlightnews.com/live/enlightnews/tracks-v1a1/index.m3u8
-#EXTINF:-1 tvg-id="FlowersTV.in" tvg-logo="https://i.imgur.com/vpoiA6i.png" group-title="Entertainment",Flowers TV (576p)
-http://103.199.161.254/Content/flowers/Live/Channel(Flowers)/index.m3u8
+#EXTINF:-1 tvg-id="FlowersTV.in@SD" tvg-logo="https://i.imgur.com/vpoiA6i.png" group-title="Entertainment" http-referrer="https://playyonogames.in/",Flowers TV (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=634&format=.m3u8
 #EXTINF:-1 tvg-id="FlowersTVUSA.us" tvg-logo="https://upload.wikimedia.org/wikipedia/ml/1/1c/Flowers-Onam.png" group-title="Culture",Flowers TV USA
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/flowers_nim_https/050522/flowers/playlist.m3u8
 #EXTINF:-1 tvg-id="FoxTV.in" tvg-logo="https://i.imgur.com/cvpDeYH.png" group-title="General",Fox TV (720p) [Not 24/7]
@@ -47,8 +53,14 @@ https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccda
 https://yupplivefragcp5.yuppcdn.net/030523/smil:jeevan.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="KairaliNews.in@SD" tvg-logo="https://i.imgur.com/GfrEhbx.png" group-title="News",Kairali News (720p)
 https://cdn-3.pishow.tv/live/1469/master.m3u8
-#EXTINF:-1 tvg-id="KairaliWe.in" tvg-logo="https://i.imgur.com/zXpROBj.png" group-title="Movies",Kairali We (396p)
-https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/wetv_nim_https/050522/wetv/playlist.m3u8
+#EXTINF:-1 tvg-id="KairaliTV.in@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Kairali_TV.svg/512px-Kairali_TV.svg.png" group-title="General" http-referrer="https://playyonogames.in/",Kairali TV (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=710&format=.m3u8
+#EXTINF:-1 tvg-id="KairaliWe.in@SD" tvg-logo="https://i.imgur.com/zXpROBj.png" group-title="Movies" http-referrer="https://playyonogames.in/",Kairali We (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=731&format=.m3u8
 #EXTINF:-1 tvg-id="KalikaTV.in" tvg-logo="https://i.imgur.com/XWXFoJA.png" group-title="Music",Kalika TV (576p) [Not 24/7]
 http://185.105.4.244:1935/livesp/kalika/playlist.m3u8
 #EXTINF:-1 tvg-id="KappaTV.in@SD" tvg-logo="https://i.imgur.com/e9qTjgB.png" group-title="Lifestyle",Kappa TV (576p)
@@ -131,6 +143,18 @@ https://nxtlive.net/sliv/stream.php?id=0657898986&e=.m3u8
 http://41.205.93.154/STARSPORTS1/index.m3u8
 #EXTINF:-1 tvg-id="Starnet.in" tvg-logo="https://i.imgur.com/J3jB7Kr.png" group-title="General",Starnet (480p)
 https://5a1178b42cc03.streamlock.net/8220/8220/playlist.m3u8
+#EXTINF:-1 tvg-id="SuryaComedy.in@SD" tvg-logo="https://i.imgur.com/dNI0Vm5.png" group-title="Comedy" http-referrer="https://playyonogames.in/",Surya Comedy (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=1662&format=.m3u8
+#EXTINF:-1 tvg-id="SuryaMovies.in@SD" tvg-logo="https://i.imgur.com/FkSCjIo.png" group-title="Movies" http-referrer="https://playyonogames.in/",Surya Movies (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=1754&format=.m3u8
+#EXTINF:-1 tvg-id="SuryaMusic.in@SD" tvg-logo="https://i.imgur.com/9vcdaKw.png" group-title="Music" http-referrer="https://playyonogames.in/",Surya Music (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=747&format=.m3u8
 #EXTINF:-1 tvg-id="SuryaTV.in@SD" tvg-logo="https://i.imgur.com/NqXpFXU.png" group-title="Entertainment",Surya TV (1080p)
 https://livestream10.sunnxt.com/DolbyVision/SuryaTV_HDR/SuryaTV_HDR_Endpoints/SuryaTV-HDR10-IN-index.m3u8
 #EXTINF:-1 tvg-id="Swantham.in" tvg-logo="https://i.imgur.com/ye6v4GP.png" group-title="Entertainment",Swantham (720p)
