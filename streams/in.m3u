@@ -263,8 +263,10 @@ https://cdn-1.pishow.tv/live/36/master.m3u8
 https://cdn-1.pishow.tv/live/17/master.m3u8
 #EXTINF:-1 tvg-id="DesiChannel.in",Desi Channel (720p)
 https://live.wmncdn.net/desichannel/7e2dd0aed46b70a5c77f4affdb702e4b.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="Dhamaal.in",Dhamaal (1080p) [Not 24/7]
-https://live.hungama.com/linear/dhamaal/playlist.m3u8
+#EXTINF:-1 tvg-id="Dhamaal.in@SD" http-referrer="https://playyonogames.in/",Dhamaal (576p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=535&format=.m3u8
 #EXTINF:-1 tvg-id="DheeranTV.in",Dheeran TV (576p)
 https://live.we2live.in/dheerantv/dheerantv/playlist.m3u8
 #EXTINF:-1 tvg-id="Dhinchaak.in",Dhinchaak (576p) [Not 24/7]
@@ -327,8 +329,10 @@ https://epiconvh.akamaized.net/live/filamchi/master.m3u8
 https://a.jsrdn.com/broadcast/7ef91d3d7a/+0000/c.m3u8
 #EXTINF:-1 tvg-id="FirstIndiaNews.in",First India News (360p) [Not 24/7]
 https://xlbor37ydvaj-hls-live.wmncdn.net/firstindianewstv1/live.stream/index.m3u8
-#EXTINF:-1 tvg-id="FlowersTV.in",Flowers TV (576p)
-http://103.199.161.254/Content/flowers/Live/Channel(Flowers)/index.m3u8
+#EXTINF:-1 tvg-id="FlowersTV.in@SD" http-referrer="https://playyonogames.in/",Flowers TV (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=634&format=.m3u8
 #EXTINF:-1 tvg-id="FoodFood.in",Food Food (576p) [Not 24/7]
 http://14.199.164.20:4001/play/a0qx/index.m3u8
 #EXTINF:-1 tvg-id="FoxTV.in",Fox TV (720p) [Not 24/7]
@@ -457,8 +461,10 @@ https://knews.livebox.co.in/youtubehls/live.m3u8
 https://live.hungama.com/linear/kadak-hits/playlist.m3u8
 #EXTINF:-1 tvg-id="KairaliNews.in@SD",Kairali News (720p)
 https://cdn-3.pishow.tv/live/1469/master.m3u8
-#EXTINF:-1 tvg-id="KairaliWe.in",Kairali We (396p)
-https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/wetv_nim_https/050522/wetv/playlist.m3u8
+#EXTINF:-1 tvg-id="KairaliWe.in@SD" http-referrer="https://playyonogames.in/",Kairali We (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=731&format=.m3u8
 #EXTINF:-1 tvg-id="KalaignarMurasu.in",Kalaignar Murasu (576p) [Not 24/7]
 https://segment.yuppcdn.net/050522/murasu/playlist.m3u8
 #EXTINF:-1 tvg-id="KalaignarSeithigal.in",Kalaignar Seithikal (576p) [Not 24/7]
@@ -636,7 +642,7 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/6cd2f649739a45ca9de1daf81cc7d0f2/in
 #EXTINF:-1 tvg-id="NewsTamil24x7.in@SD",News Tamil 24x7 (1080p)
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/news-tamil-24x7/index.m3u8
 #EXTINF:-1 tvg-id="NickHDPlus.in@SD",Nick HD+ (1080p) [Not 24/7]
-http://116.90.120.149:8000/play/a0cw/index.m3u8
+https://nonprod-sports-cohort.jiocinema.com/bpk-tv/JC_NickHD/JCHLS/index.m3u8
 #EXTINF:-1 tvg-id="NickJr.in",Nick Jr India (1080p)
 https://prod-sports-north-gm.jiocinema.com/bpk-tv/Nick_Junior_voot_MOB/Fallback/index.m3u8
 #EXTINF:-1 tvg-id="",Nickelodeon Sonic Hindi (1080p)
@@ -1105,3 +1111,139 @@ https://livestream10.sunnxt.com/DolbyVision/SunTV_HDR/SunTV_HDR_Endpoints/SunTV-
 http://116.90.120.149:8000/play/a0c0/index.m3u8
 #EXTINF:-1 tvg-id="StarSports1Hindi.in@HD",Star Sports 1 Hindi HD (1080p)
 http://116.90.120.149:8000/play/a0bv/index.m3u8
+#EXTINF:-1 tvg-id="StarMoviesSelect.in@HD",Star Movies Select HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starmoviesselecthd/master.m3u8
+#EXTINF:-1 tvg-id="StarMovies.in@HD",Star Movies HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starmovieshd/master.m3u8
+#EXTINF:-1 tvg-id="DisneyInternationalHD.in@SD",Disney International HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/disneyinternationalhd/master.m3u8
+#EXTINF:-1 tvg-id="PravahPicture.in@HD",Pravah Picture HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starpravahpicturehd/master.m3u8
+#EXTINF:-1 tvg-id="StarPravah.in@HD",Star Pravah HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starpravahhd/master.m3u8
+#EXTINF:-1 tvg-id="JalshaMovies.in@HD",Jalsha Movies HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/jalshamovieshd/master.m3u8
+#EXTINF:-1 tvg-id="StarJalsha.in@HD",Star Jalsha HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starjalshahd/master.m3u8
+#EXTINF:-1 tvg-id="StarUtsavMovies.in@SD",Star Utsav Movies (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/starutsavmovies/master.m3u8
+#EXTINF:-1 tvg-id="StarUtsav.in@SD",Star Utsav (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/starutsav/master.m3u8
+#EXTINF:-1 tvg-id="StarGoldThrills.in@SD",Star Gold Thrills (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/stargoldthrills/master.m3u8
+#EXTINF:-1 tvg-id="StarGoldRomance.in@SD",Star Gold Romance (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/stargoldromance/master.m3u8
+#EXTINF:-1 tvg-id="StarGoldSelect.in@HD",Star Gold Select HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/stargold2hd/master.m3u8
+#EXTINF:-1 tvg-id="StarGold.in@HD",Star Gold HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/stargoldhd/master.m3u8
+#EXTINF:-1 tvg-id="StarBharat.in@HD",Star Bharat HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starbharathd/master.m3u8
+#EXTINF:-1 tvg-id="StarPlus.in@HD",StarPlus HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starplushd/master.m3u8
+#EXTINF:-1 tvg-id="AsianetMovies.in@HD",Asianet Movies HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/asianetmovieshd/master.m3u8
+#EXTINF:-1 tvg-id="Asianet.in@HD",Asianet HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/asianethd/master.m3u8
+#EXTINF:-1 tvg-id="StarSuvarnaPlus.in@SD",Star Suvarna Plus (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/suvarnaplus/master.m3u8
+#EXTINF:-1 tvg-id="StarSuvarna.in@SD",Star Suvarna (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/suvarna/master.m3u8
+#EXTINF:-1 tvg-id="StarMaaGold.in@SD",Star Maa Gold (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/maagold/master.m3u8
+#EXTINF:-1 tvg-id="StarMaaMusic.in@SD",Star Maa Music (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/maamusic/master.m3u8
+#EXTINF:-1 tvg-id="StarMaaMovies.in@HD",Star Maa Movies HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/maamovieshd/master.m3u8
+#EXTINF:-1 tvg-id="StarMaa.in@HD",Star Maa HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/maahd/master.m3u8
+#EXTINF:-1 tvg-id="VijayTakkar.in@SD",Vijay Takkar (576p)
+https://live.dinesh29.com.np/stream/jiotvplus/vijaytakkar/master.m3u8
+#EXTINF:-1 tvg-id="VijaySuper.in@HD",Vijay Super HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/vijaysuperhd/master.m3u8
+#EXTINF:-1 tvg-id="StarVijay.in@HD",Star Vijay HD (1080p)
+https://live.dinesh29.com.np/stream/jiotvplus/starvijayhd/master.m3u8
+#EXTINF:-1 tvg-id="ColorsCineplexBollywood.in@SD",Colors Cineplex Bollywood (576p)
+https://nonprod-sports-cohort.jiocinema.com/bpk-tv/JC_ColorsCineplexBollywood/JCHLS/index.m3u8
+#EXTINF:-1 tvg-id="ColorsCineplexSuperhits.in@SD",Colors Cineplex Superhits (576p)
+https://nonprod-sports-cohort.jiocinema.com/bpk-tv/JC_ColorsCineplexSuperhit/JCHLS/index.m3u8
+#EXTINF:-1 tvg-id="ColorsCineplex.in@SD",Colors Cineplex (1080p)
+https://nonprod-sports-cohort.jiocinema.com/bpk-tv/JC_ColorsCineplexHD/JCHLS/index.m3u8
+#EXTINF:-1 tvg-id="Sonic.in@SD",Sonic (576p)
+https://playyonogames.in/jio/app/ts_live_815.m3u8
+#EXTINF:-1 tvg-id="SunBangla.in@SD" http-referrer="https://playyonogames.in/",Sun Bangla (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=1669&format=.m3u8
+#EXTINF:-1 tvg-id="ColorsInfinity.in@SD" http-referrer="https://playyonogames.in/",Colors Infinity (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=1158&format=.m3u8
+#EXTINF:-1 tvg-id="ColorsSuper.in@SD" http-referrer="https://playyonogames.in/",Colors Super (720p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=785&format=.m3u8
+#EXTINF:-1 tvg-id="ColorsKannada.in@SD" http-referrer="https://playyonogames.in/",Colors Kannada (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=757&format=.m3u8
+#EXTINF:-1 tvg-id="ColorsBangla.in@SD" http-referrer="https://playyonogames.in/",Colors Bangla (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=756&format=.m3u8
+#EXTINF:-1 tvg-id="ColorsMarathi.in@SD" http-referrer="https://playyonogames.in/",Colors Marathi (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=755&format=.m3u8
+#EXTINF:-1 tvg-id="KairaliTV.in@SD" http-referrer="https://playyonogames.in/",Kairali TV (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=710&format=.m3u8
+#EXTINF:-1 tvg-id="Rang.in@SD" http-referrer="https://playyonogames.in/",Rang (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=623&format=.m3u8
+#EXTINF:-1 tvg-id="ColorsTamil.in@SD" http-referrer="https://playyonogames.in/",Colors Tamil (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=429&format=.m3u8
+#EXTINF:-1 tvg-id="VissaTV.in@SD",Vissa TV (1080p) [Not 24/7]
+https://livestream.rajtvnet.in/hlslive/Admin/px08241089/live/Vissa_Tv/master_1.m3u8
+#EXTINF:-1 tvg-id="ColorsRishteyAsia.in@SD" http-referrer="https://playyonogames.in/",Colors Rishtey Asia (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=279&format=.m3u8
+#EXTINF:-1 tvg-id="ColorsGujarati.in@SD" http-referrer="https://playyonogames.in/",Colors Gujarati (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=196&format=.m3u8
+#EXTINF:-1 tvg-id="Colors.in@SD" http-referrer="https://playyonogames.in/",Colors (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=144&extension=.m3u8
+#EXTINF:-1 tvg-id="SuryaComedy.in@SD" http-referrer="https://playyonogames.in/",Surya Comedy (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=1662&format=.m3u8
+#EXTINF:-1 tvg-id="SuryaMusic.in@SD" http-referrer="https://playyonogames.in/",Surya Music (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=747&format=.m3u8
+#EXTINF:-1 tvg-id="SuryaMovies.in@SD" http-referrer="https://playyonogames.in/",Surya Movies (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=1754&format=.m3u8
+#EXTINF:-1 tvg-id="UdayaMusic.in@SD" http-referrer="https://playyonogames.in/",Udaya Music (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=744&format=.m3u8
+#EXTINF:-1 tvg-id="UdayaMovies.in@SD" http-referrer="https://playyonogames.in/",Udaya Movies (576p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=678&format=.m3u8
+#EXTINF:-1 tvg-id="UdayaTV.in@SD" http-referrer="https://playyonogames.in/",Udaya TV (1080p)
+#EXTVLCOPT:http-referrer=https://playyonogames.in/
+#KODIPROP:inputstream.adaptive.http-referrer=https://playyonogames.in/
+https://playyonogames.in/live.php?id=901&format=.m3u8
+#EXTINF:-1 tvg-id="VasanthTV.in@SD",Vasanth TV (720p)
+https://cdn-3.pishow.tv/live/1247/master.m3u8
