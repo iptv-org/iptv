@@ -1,17 +1,16 @@
-import { Storage, Collection, Logger, Dictionary } from '@freearhey/core'
-import { DataLoader, DataProcessor, PlaylistParser } from '../../core'
-import type { ChannelSearchableData } from '../../types/channel'
-import { Channel, Feed, Playlist, Stream } from '../../models'
-import { DataProcessorData } from '../../types/dataProcessor'
-import { DataLoaderData } from '../../types/dataLoader'
+import { loadData, data, searchChannels } from '../../api'
+import { Collection, Logger } from '@freearhey/core'
 import { select, input } from '@inquirer/prompts'
-import { DATA_DIR } from '../../constants'
+import { Playlist, Stream } from '../../models'
+import { Storage } from '@freearhey/storage-js'
+import { PlaylistParser } from '../../core'
 import nodeCleanup from 'node-cleanup'
-import sjs from '@freearhey/search-js'
+import * as sdk from '@iptv-org/sdk'
+import { truncate } from '../../utils'
 import { Command } from 'commander'
 import readline from 'readline'
 
-type ChoiceValue = { type: string; value?: Feed | Channel }
+type ChoiceValue = { type: string; value?: sdk.Models.Feed | sdk.Models.Channel }
 type Choice = { name: string; short?: string; value: ChoiceValue; default?: boolean }
 
 if (process.platform === 'win32') {
@@ -32,7 +31,7 @@ program.argument('<filepath>', 'Path to *.channels.xml file to edit').parse(proc
 const filepath = program.args[0]
 const logger = new Logger()
 const storage = new Storage()
-let parsedStreams = new Collection()
+let parsedStreams = new Collection<Stream>()
 
 main(filepath)
 nodeCleanup(() => {
@@ -45,42 +44,24 @@ export default async function main(filepath: string) {
   }
 
   logger.info('loading data from api...')
-  const processor = new DataProcessor()
-  const dataStorage = new Storage(DATA_DIR)
-  const loader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await loader.load()
-  const {
-    channels,
-    channelsKeyById,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId
-  }: DataProcessorData = processor.process(data)
+  await loadData()
 
   logger.info('loading streams...')
   const parser = new PlaylistParser({
-    storage,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId,
-    channelsKeyById
+    storage
   })
   parsedStreams = await parser.parseFile(filepath)
-  const streamsWithoutId = parsedStreams.filter((stream: Stream) => !stream.id)
+  const streamsWithoutId = parsedStreams.filter((stream: Stream) => !stream.tvgId)
 
   logger.info(
     `found ${parsedStreams.count()} streams (including ${streamsWithoutId.count()} without ID)`
   )
 
-  logger.info('creating search index...')
-  const items = channels.map((channel: Channel) => channel.getSearchable()).all()
-  const searchIndex = sjs.createIndex(items, {
-    searchable: ['name', 'altNames', 'guideNames', 'streamTitles', 'feedFullNames']
-  })
-
   logger.info('starting...\n')
 
   for (const stream of streamsWithoutId.all()) {
     try {
-      stream.id = await selectChannel(stream, searchIndex, feedsGroupedByChannelId, channelsKeyById)
+      stream.tvgId = await selectChannel(stream)
     } catch (err) {
       logger.info(err.message)
       break
@@ -88,28 +69,20 @@ export default async function main(filepath: string) {
   }
 
   streamsWithoutId.forEach((stream: Stream) => {
-    if (stream.id === '-') {
-      stream.id = ''
+    if (stream.channel === '-') {
+      stream.channel = ''
     }
   })
 }
 
-async function selectChannel(
-  stream: Stream,
-  searchIndex,
-  feedsGroupedByChannelId: Dictionary,
-  channelsKeyById: Dictionary
-): Promise<string> {
-  const query = escapeRegex(stream.getTitle())
-  const similarChannels = searchIndex
-    .search(query)
-    .map((item: ChannelSearchableData) => channelsKeyById.get(item.id))
-
-  const url = stream.url.length > 50 ? stream.url.slice(0, 50) + '...' : stream.url
+async function selectChannel(stream: Stream): Promise<string> {
+  const query = escapeRegex(stream.title)
+  const similarChannels = searchChannels(query)
+  const url = truncate(stream.url, 50)
 
   const selected: ChoiceValue = await select({
     message: `Select channel ID for "${stream.title}" (${url}):`,
-    choices: getChannelChoises(new Collection(similarChannels)),
+    choices: getChannelChoises(similarChannels),
     pageSize: 10
   })
 
@@ -119,14 +92,14 @@ async function selectChannel(
     case 'type': {
       const typedChannelId = await input({ message: '  Channel ID:' })
       if (!typedChannelId) return ''
-      const selectedFeedId = await selectFeed(typedChannelId, feedsGroupedByChannelId)
+      const selectedFeedId = await selectFeed(typedChannelId)
       if (selectedFeedId === '-') return typedChannelId
       return [typedChannelId, selectedFeedId].join('@')
     }
     case 'channel': {
       const selectedChannel = selected.value
       if (!selectedChannel) return ''
-      const selectedFeedId = await selectFeed(selectedChannel.id, feedsGroupedByChannelId)
+      const selectedFeedId = await selectFeed(selectedChannel.id)
       if (selectedFeedId === '-') return selectedChannel.id
       return [selectedChannel.id, selectedFeedId].join('@')
     }
@@ -135,8 +108,8 @@ async function selectChannel(
   return ''
 }
 
-async function selectFeed(channelId: string, feedsGroupedByChannelId: Dictionary): Promise<string> {
-  const channelFeeds = new Collection(feedsGroupedByChannelId.get(channelId))
+async function selectFeed(channelId: string): Promise<string> {
+  const channelFeeds = new Collection(data.feedsGroupedByChannel.get(channelId))
   const choices = getFeedChoises(channelFeeds)
 
   const selected: ChoiceValue = await select({
@@ -159,11 +132,11 @@ async function selectFeed(channelId: string, feedsGroupedByChannelId: Dictionary
   return ''
 }
 
-function getChannelChoises(channels: Collection): Choice[] {
+function getChannelChoises(channels: Collection<sdk.Models.Channel>): Choice[] {
   const choises: Choice[] = []
 
-  channels.forEach((channel: Channel) => {
-    const names = new Collection([channel.name, ...channel.altNames.all()]).uniq().join(', ')
+  channels.forEach((channel: sdk.Models.Channel) => {
+    const names = new Collection([channel.name, ...channel.alt_names]).uniq().join(', ')
 
     choises.push({
       value: {
@@ -181,19 +154,19 @@ function getChannelChoises(channels: Collection): Choice[] {
   return choises
 }
 
-function getFeedChoises(feeds: Collection): Choice[] {
+function getFeedChoises(feeds: Collection<sdk.Models.Feed>): Choice[] {
   const choises: Choice[] = []
 
-  feeds.forEach((feed: Feed) => {
+  feeds.forEach((feed: sdk.Models.Feed) => {
     let name = `${feed.id} (${feed.name})`
-    if (feed.isMain) name += ' [main]'
+    if (feed.is_main) name += ' [main]'
 
     choises.push({
       value: {
         type: 'feed',
         value: feed
       },
-      default: feed.isMain,
+      default: feed.is_main,
       name,
       short: feed.id
     })

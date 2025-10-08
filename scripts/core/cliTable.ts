@@ -1,5 +1,5 @@
-import { Table } from 'console-table-printer'
 import { ComplexOptions } from 'console-table-printer/dist/src/models/external-table'
+import { Table } from 'console-table-printer'
 
 export class CliTable {
   table: Table

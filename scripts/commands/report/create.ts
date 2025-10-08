@@ -1,10 +1,10 @@
-import { DataLoader, DataProcessor, IssueLoader, PlaylistParser } from '../../core'
-import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
-import { DataProcessorData } from '../../types/dataProcessor'
-import { DATA_DIR, STREAMS_DIR } from '../../constants'
-import { DataLoaderData } from '../../types/dataLoader'
+import { Logger, Collection, Dictionary } from '@freearhey/core'
+import { IssueLoader, PlaylistParser } from '../../core'
+import { Storage } from '@freearhey/storage-js'
+import { isURI, truncate } from '../../utils'
+import { STREAMS_DIR } from '../../constants'
 import { Issue, Stream } from '../../models'
-import { isURI } from '../../utils'
+import { data, loadData } from '../../api'
 
 async function main() {
   const logger = new Logger()
@@ -15,29 +15,17 @@ async function main() {
   const issues = await issueLoader.load()
 
   logger.info('loading data from api...')
-  const processor = new DataProcessor()
-  const dataStorage = new Storage(DATA_DIR)
-  const dataLoader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await dataLoader.load()
-  const {
-    channelsKeyById,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId,
-    blocklistRecordsGroupedByChannelId
-  }: DataProcessorData = processor.process(data)
+  await loadData()
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
-    storage: streamsStorage,
-    channelsKeyById,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId
+    storage: streamsStorage
   })
   const files = await streamsStorage.list('**/*.m3u')
   const streams = await parser.parse(files)
   const streamsGroupedByUrl = streams.groupBy((stream: Stream) => stream.url)
-  const streamsGroupedByChannelId = streams.groupBy((stream: Stream) => stream.channelId)
+  const streamsGroupedByChannel = streams.groupBy((stream: Stream) => stream.channel)
   const streamsGroupedById = streams.groupBy((stream: Stream) => stream.getId())
 
   logger.info('checking streams:remove requests...')
@@ -95,8 +83,8 @@ async function main() {
     if (!channelId) result.status = 'missing_id'
     else if (!streamUrl) result.status = 'missing_link'
     else if (!isURI(streamUrl)) result.status = 'invalid_link'
-    else if (blocklistRecordsGroupedByChannelId.has(channelId)) result.status = 'blocked'
-    else if (channelsKeyById.missing(channelId)) result.status = 'wrong_id'
+    else if (data.blocklistRecordsGroupedByChannel.has(channelId)) result.status = 'blocked'
+    else if (data.channelsKeyById.missing(channelId)) result.status = 'wrong_id'
     else if (streamsGroupedByUrl.has(streamUrl)) result.status = 'on_playlist'
     else if (addRequestsBuffer.has(streamUrl)) result.status = 'duplicate'
     else result.status = 'pending'
@@ -125,7 +113,7 @@ async function main() {
 
     if (!streamUrl) result.status = 'missing_link'
     else if (streamsGroupedByUrl.missing(streamUrl)) result.status = 'invalid_link'
-    else if (channelId && channelsKeyById.missing(channelId)) result.status = 'invalid_id'
+    else if (channelId && data.channelsKeyById.missing(channelId)) result.status = 'invalid_id'
 
     report.add(result)
   })
@@ -148,14 +136,14 @@ async function main() {
     }
 
     if (!channelId) result.status = 'missing_id'
-    else if (channelsKeyById.missing(channelId)) result.status = 'invalid_id'
+    else if (data.channelsKeyById.missing(channelId)) result.status = 'invalid_id'
     else if (channelSearchRequestsBuffer.has(streamId)) result.status = 'duplicate'
-    else if (blocklistRecordsGroupedByChannelId.has(channelId)) result.status = 'blocked'
+    else if (data.blocklistRecordsGroupedByChannel.has(channelId)) result.status = 'blocked'
     else if (streamsGroupedById.has(streamId)) result.status = 'fulfilled'
-    else if (!feedId && streamsGroupedByChannelId.has(channelId)) result.status = 'fulfilled'
+    else if (!feedId && streamsGroupedByChannel.has(channelId)) result.status = 'fulfilled'
     else {
-      const channelData = channelsKeyById.get(channelId)
-      if (channelData && channelData.isClosed) result.status = 'closed'
+      const channelData = data.channelsKeyById.get(channelId)
+      if (channelData && channelData.isClosed()) result.status = 'closed'
     }
 
     channelSearchRequestsBuffer.set(streamId, true)
@@ -163,16 +151,9 @@ async function main() {
     report.add(result)
   })
 
-  report = report.orderBy(item => item.issueNumber).filter(item => item.status !== 'pending')
+  report = report.sortBy(item => item.issueNumber).filter(item => item.status !== 'pending')
 
   console.table(report.all())
 }
 
 main()
-
-function truncate(string: string, limit: number = 100) {
-  if (!string) return string
-  if (string.length < limit) return string
-
-  return string.slice(0, limit) + '...'
-}
