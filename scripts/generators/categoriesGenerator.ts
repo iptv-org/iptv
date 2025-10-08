@@ -1,17 +1,19 @@
-import { Collection, Storage, File } from '@freearhey/core'
-import { Stream, Category, Playlist } from '../models'
+import { Storage, File } from '@freearhey/storage-js'
 import { PUBLIC_DIR, EOL } from '../constants'
+import { Collection } from '@freearhey/core'
+import { Stream, Playlist } from '../models'
 import { Generator } from './generator'
+import * as sdk from '@iptv-org/sdk'
 
 type CategoriesGeneratorProps = {
-  streams: Collection
-  categories: Collection
+  streams: Collection<Stream>
+  categories: Collection<sdk.Models.Category>
   logFile: File
 }
 
 export class CategoriesGenerator implements Generator {
-  streams: Collection
-  categories: Collection
+  streams: Collection<Stream>
+  categories: Collection<sdk.Models.Category>
   storage: Storage
   logFile: File
 
@@ -23,13 +25,17 @@ export class CategoriesGenerator implements Generator {
   }
 
   async generate() {
-    const streams = this.streams.orderBy([(stream: Stream) => stream.getTitle()])
+    const streams = this.streams.sortBy([(stream: Stream) => stream.title])
 
-    this.categories.forEach(async (category: Category) => {
+    this.categories.forEach(async (category: sdk.Models.Category) => {
       const categoryStreams = streams
         .filter((stream: Stream) => stream.hasCategory(category))
         .map((stream: Stream) => {
-          const groupTitle = stream.getCategoryNames().join(';')
+          const groupTitle = stream
+            .getCategories()
+            .map(category => category.name)
+            .sort()
+            .join(';')
           if (groupTitle) stream.groupTitle = groupTitle
 
           return stream
@@ -43,7 +49,7 @@ export class CategoriesGenerator implements Generator {
       )
     })
 
-    const undefinedStreams = streams.filter((stream: Stream) => !stream.hasCategories())
+    const undefinedStreams = streams.filter((stream: Stream) => stream.getCategories().isEmpty())
     const playlist = new Playlist(undefinedStreams, { public: true })
     const filepath = 'categories/undefined.m3u'
     await this.storage.save(filepath, playlist.toString())
