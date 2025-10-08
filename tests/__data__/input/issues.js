@@ -2194,7 +2194,7 @@ module.exports = [
     author_association: 'NONE',
     sub_issues_summary: { total: 0, completed: 0, percent_completed: 0 },
     active_lock_reason: null,
-    body: '### Channel ID (required)\n\n13thStreet.au\n\n### Notes\n\n_No response_',
+    body: '### Stream ID (required)\n\n13thStreet.au\n\n### Notes\n\n_No response_',
     closed_by: null,
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/19957/reactions',
@@ -2267,7 +2267,7 @@ module.exports = [
     author_association: 'NONE',
     sub_issues_summary: { total: 0, completed: 0, percent_completed: 0 },
     active_lock_reason: null,
-    body: '### Channel ID (required)\n\nIONTV.us\n\n### Notes\n\n_No response_',
+    body: '### Stream ID (required)\n\nIONTV.us\n\n### Notes\n\n_No response_',
     closed_by: null,
     reactions: {
       url: 'https://api.github.com/repos/iptv-org/iptv/issues/20956/reactions',
