@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: changed files
+      - name: Get list of changed files
         id: files
         run: |
           git fetch origin master:master
@@ -23,14 +23,19 @@ jobs:
           echo "all_changed_files=$ALL_CHANGED_FILES" >> "$GITHUB_OUTPUT"
           echo "any_changed=$ANY_CHANGED" >> "$GITHUB_OUTPUT"
       - uses: actions/setup-node@v4
-        if: ${{ !env.ACT && steps.files.outputs.any_changed == 'true' }}
+        if: steps.files.outputs.any_changed == 'true'
         with:
           node-version: 22
           cache: 'npm'
-      - name: install dependencies
+      - name: Setup .npmrc for GitHub Packages
+        run: |
+          echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" >> .npmrc
+          echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
+          echo "always-auth=true" >> .npmrc
+      - name: Install dependencies
         if: steps.files.outputs.any_changed == 'true'
         run: npm install
-      - name: validate
+      - name: Validate changed files
         if: steps.files.outputs.any_changed == 'true'
         run: |
           npm run playlist:lint -- ${{ steps.files.outputs.all_changed_files }}
