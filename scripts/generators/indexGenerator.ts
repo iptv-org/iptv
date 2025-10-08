@@ -1,15 +1,16 @@
-import { Collection, File, Storage } from '@freearhey/core'
-import { Stream, Playlist } from '../models'
+import { Storage, File } from '@freearhey/storage-js'
 import { PUBLIC_DIR, EOL } from '../constants'
+import { Stream, Playlist } from '../models'
+import { Collection } from '@freearhey/core'
 import { Generator } from './generator'
 
 type IndexGeneratorProps = {
-  streams: Collection
+  streams: Collection<Stream>
   logFile: File
 }
 
 export class IndexGenerator implements Generator {
-  streams: Collection
+  streams: Collection<Stream>
   storage: Storage
   logFile: File
 
@@ -21,10 +22,14 @@ export class IndexGenerator implements Generator {
 
   async generate(): Promise<void> {
     const sfwStreams = this.streams
-      .orderBy(stream => stream.getTitle())
+      .sortBy(stream => stream.title)
       .filter((stream: Stream) => stream.isSFW())
       .map((stream: Stream) => {
-        const groupTitle = stream.getCategoryNames().join(';')
+        const groupTitle = stream
+          .getCategories()
+          .map(category => category.name)
+          .sort()
+          .join(';')
         if (groupTitle) stream.groupTitle = groupTitle
 
         return stream

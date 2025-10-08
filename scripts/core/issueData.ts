@@ -1,8 +1,8 @@
 import { Dictionary } from '@freearhey/core'
 
 export class IssueData {
-  _data: Dictionary
-  constructor(data: Dictionary) {
+  _data: Dictionary<string>
+  constructor(data: Dictionary<string>) {
     this._data = data
   }
 
@@ -29,6 +29,8 @@ export class IssueData {
 
     if (this._data.missing(key)) return undefined
 
-    return this._data.get(key) === deleteSymbol ? [] : this._data.get(key).split('\r\n')
+    const value = this._data.get(key)
+
+    return !value || value === deleteSymbol ? [] : value.split('\r\n')
   }
 }

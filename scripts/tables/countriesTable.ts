@@ -1,39 +1,21 @@
-import { Storage, Collection, Dictionary } from '@freearhey/core'
-import { City, Country, Subdivision } from '../models'
 import { LOGS_DIR, README_DIR } from '../constants'
+import { Storage } from '@freearhey/storage-js'
+import { Collection } from '@freearhey/core'
 import { LogParser, LogItem } from '../core'
+import * as sdk from '@iptv-org/sdk'
 import { Table } from './table'
+import { data } from '../api'
 
-type CountriesTableProps = {
-  countriesKeyByCode: Dictionary
-  subdivisionsKeyByCode: Dictionary
-  countries: Collection
-  subdivisions: Collection
-  cities: Collection
+type ListItem = {
+  index: string
+  count: number
+  link: string
+  name: string
+  children: Collection<ListItem>
 }
 
 export class CountriesTable implements Table {
-  countriesKeyByCode: Dictionary
-  subdivisionsKeyByCode: Dictionary
-  countries: Collection
-  subdivisions: Collection
-  cities: Collection
-
-  constructor({
-    countriesKeyByCode,
-    subdivisionsKeyByCode,
-    countries,
-    subdivisions,
-    cities
-  }: CountriesTableProps) {
-    this.countriesKeyByCode = countriesKeyByCode
-    this.subdivisionsKeyByCode = subdivisionsKeyByCode
-    this.countries = countries
-    this.subdivisions = subdivisions
-    this.cities = cities
-  }
-
-  async make() {
+  async create() {
     const parser = new LogParser()
     const logsStorage = new Storage(LOGS_DIR)
     const generatorsLog = await logsStorage.load('generators.log')
@@ -43,15 +25,16 @@ export class CountriesTable implements Table {
     const logCities = parsed.filter((logItem: LogItem) => logItem.type === 'city')
 
     let items = new Collection()
-    this.countries.forEach((country: Country) => {
+    data.countries.forEach((country: sdk.Models.Country) => {
+      const countryCode = country.code
       const countriesLogItem = logCountries.find(
-        (logItem: LogItem) => logItem.filepath === `countries/${country.code.toLowerCase()}.m3u`
+        (logItem: LogItem) => logItem.filepath === `countries/${countryCode.toLowerCase()}.m3u`
       )
 
-      const countryItem = {
+      const countryItem: ListItem = {
         index: country.name,
         count: 0,
-        link: `https://iptv-org.github.io/iptv/countries/${country.code.toLowerCase()}.m3u`,
+        link: `https://iptv-org.github.io/iptv/countries/${countryCode.toLowerCase()}.m3u`,
         name: `${country.flag} ${country.name}`,
         children: new Collection()
       }
@@ -60,38 +43,41 @@ export class CountriesTable implements Table {
         countryItem.count = countriesLogItem.count
       }
 
-      const countrySubdivisions = this.subdivisions.filter(
-        (subdivision: Subdivision) => subdivision.countryCode === country.code
+      const countrySubdivisions = data.subdivisions.filter(
+        (subdivision: sdk.Models.Subdivision) => subdivision.country === countryCode
       )
-      const countryCities = this.cities.filter((city: City) => city.countryCode === country.code)
-      if (countrySubdivisions.notEmpty()) {
-        this.subdivisions.forEach((subdivision: Subdivision) => {
-          if (subdivision.countryCode !== country.code) return
+      const countryCities = data.cities.filter(
+        (city: sdk.Models.City) => city.country === countryCode
+      )
+      if (countrySubdivisions.isNotEmpty()) {
+        data.subdivisions.forEach((subdivision: sdk.Models.Subdivision) => {
+          if (subdivision.country !== countryCode) return
+
+          const subdivisionCode = subdivision.code
           const subdivisionCities = countryCities.filter(
-            (city: City) =>
-              (city.subdivisionCode && city.subdivisionCode === subdivision.code) ||
-              city.countryCode === subdivision.countryCode
+            (city: sdk.Models.City) =>
+              (city.subdivision && city.subdivision === subdivisionCode) ||
+              city.country === subdivision.country
           )
           const subdivisionsLogItem = logSubdivisions.find(
             (logItem: LogItem) =>
-              logItem.filepath === `subdivisions/${subdivision.code.toLowerCase()}.m3u`
+              logItem.filepath === `subdivisions/${subdivisionCode.toLowerCase()}.m3u`
           )
 
-          const subdivisionItem = {
+          const subdivisionItem: ListItem = {
             index: subdivision.name,
             name: subdivision.name,
             count: 0,
-            link: `https://iptv-org.github.io/iptv/subdivisions/${subdivision.code.toLowerCase()}.m3u`,
-            children: new Collection()
+            link: `https://iptv-org.github.io/iptv/subdivisions/${subdivisionCode.toLowerCase()}.m3u`,
+            children: new Collection<ListItem>()
           }
 
           if (subdivisionsLogItem) {
             subdivisionItem.count = subdivisionsLogItem.count
           }
 
-          subdivisionCities.forEach((city: City) => {
-            if (city.countryCode !== country.code || city.subdivisionCode !== subdivision.code)
-              return
+          subdivisionCities.forEach((city: sdk.Models.City) => {
+            if (city.country !== countryCode || city.subdivision !== subdivisionCode) return
             const citiesLogItem = logCities.find(
               (logItem: LogItem) => logItem.filepath === `cities/${city.code.toLowerCase()}.m3u`
             )
@@ -102,16 +88,17 @@ export class CountriesTable implements Table {
               index: city.name,
               name: city.name,
               count: citiesLogItem.count,
-              link: `https://iptv-org.github.io/iptv/${citiesLogItem.filepath}`
+              link: `https://iptv-org.github.io/iptv/${citiesLogItem.filepath}`,
+              children: new Collection<ListItem>()
             })
           })
 
-          if (subdivisionItem.count > 0 || subdivisionItem.children.notEmpty()) {
+          if (subdivisionItem.count > 0 || subdivisionItem.children.isNotEmpty()) {
             countryItem.children.add(subdivisionItem)
           }
         })
-      } else if (countryCities.notEmpty()) {
-        countryCities.forEach((city: City) => {
+      } else if (countryCities.isNotEmpty()) {
+        countryCities.forEach((city: sdk.Models.City) => {
           const citiesLogItem = logCities.find(
             (logItem: LogItem) => logItem.filepath === `cities/${city.code.toLowerCase()}.m3u`
           )
@@ -128,7 +115,7 @@ export class CountriesTable implements Table {
         })
       }
 
-      if (countryItem.count > 0 || countryItem.children.notEmpty()) {
+      if (countryItem.count > 0 || countryItem.children.isNotEmpty()) {
         items.add(countryItem)
       }
     })
@@ -138,7 +125,7 @@ export class CountriesTable implements Table {
     )
 
     if (internationalLogItem) {
-      items.push({
+      items.add({
         index: 'ZZ',
         name: '🌐 International',
         count: internationalLogItem.count,
@@ -152,7 +139,7 @@ export class CountriesTable implements Table {
     )
 
     if (undefinedLogItem) {
-      items.push({
+      items.add({
         index: 'ZZZ',
         name: 'Undefined',
         count: undefinedLogItem.count,
@@ -161,20 +148,20 @@ export class CountriesTable implements Table {
       })
     }
 
-    items = items.orderBy(item => item.index)
+    items = items.sortBy(item => item.index)
 
     const output = items
-      .map(item => {
+      .map((item: ListItem) => {
         let row = `- ${item.name} <code>${item.link}</code>`
 
         item.children
-          .orderBy(item => item.index)
-          .forEach(item => {
+          .sortBy((item: ListItem) => item.index)
+          .forEach((item: ListItem) => {
             row += `\r\n  - ${item.name} <code>${item.link}</code>`
 
             item.children
-              .orderBy(item => item.index)
-              .forEach(item => {
+              .sortBy((item: ListItem) => item.index)
+              .forEach((item: ListItem) => {
                 row += `\r\n    - ${item.name} <code>${item.link}</code>`
               })
           })

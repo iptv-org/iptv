@@ -1,3 +1,3 @@
 export interface Table {
-  make(): void
+  create(): void
 }

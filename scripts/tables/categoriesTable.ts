@@ -1,54 +1,61 @@
-import { Storage, Collection, File, Dictionary } from '@freearhey/core'
-import { HTMLTable, LogParser, LogItem } from '../core'
+import { HTMLTable, HTMLTableItem, LogParser, LogItem, HTMLTableColumn } from '../core'
+import { Storage, File } from '@freearhey/storage-js'
 import { LOGS_DIR, README_DIR } from '../constants'
-import { Category } from '../models'
+import { Collection } from '@freearhey/core'
+import * as sdk from '@iptv-org/sdk'
 import { Table } from './table'
-
-type CategoriesTableProps = {
-  categoriesKeyById: Dictionary
-}
+import { data } from '../api'
 
 export class CategoriesTable implements Table {
-  categoriesKeyById: Dictionary
-
-  constructor({ categoriesKeyById }: CategoriesTableProps) {
-    this.categoriesKeyById = categoriesKeyById
-  }
-
-  async make() {
+  async create() {
     const parser = new LogParser()
     const logsStorage = new Storage(LOGS_DIR)
     const generatorsLog = await logsStorage.load('generators.log')
 
-    let items = new Collection()
+    let items = new Collection<HTMLTableItem>()
     parser
       .parse(generatorsLog)
       .filter((logItem: LogItem) => logItem.type === 'category')
       .forEach((logItem: LogItem) => {
+        if (logItem.filepath.includes('undefined')) {
+          items.add([
+            'ZZ',
+            'Undefined',
+            logItem.count.toString(),
+            `<code>https://iptv-org.github.io/iptv/${logItem.filepath}</code>`
+          ])
+
+          return
+        }
+
         const file = new File(logItem.filepath)
         const categoryId = file.name()
-        const category: Category = this.categoriesKeyById.get(categoryId)
+        const category: sdk.Models.Category | undefined = data.categoriesKeyById.get(categoryId)
+
+        if (!category) return
 
         items.add([
-          category ? category.name : 'ZZ',
-          category ? category.name : 'Undefined',
-          logItem.count,
+          category.name,
+          category.name,
+          logItem.count.toString(),
           `<code>https://iptv-org.github.io/iptv/${logItem.filepath}</code>`
         ])
       })
 
     items = items
-      .orderBy(item => item[0])
+      .sortBy(item => item[0])
       .map(item => {
         item.shift()
         return item
       })
 
-    const table = new HTMLTable(items.all(), [
+    const columns = new Collection<HTMLTableColumn>([
       { name: 'Category' },
       { name: 'Channels', align: 'right' },
       { name: 'Playlist', nowrap: true }
     ])
+
+    const table = new HTMLTable(items, columns)
 
     const readmeStorage = new Storage(README_DIR)
     await readmeStorage.save('_categories.md', table.toString())
