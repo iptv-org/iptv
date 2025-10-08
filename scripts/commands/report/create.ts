@@ -6,6 +6,20 @@ import { STREAMS_DIR } from '../../constants'
 import { Issue, Stream } from '../../models'
 import { data, loadData } from '../../api'
 
+const status = {
+  PENDING: 'pending',
+  FULFILLED: 'fulfilled',
+  MISSING_CHANNEL_ID: 'missing_channel_id',
+  INVALID_CHANNEL_ID: 'invalid_channel_id',
+  MISSING_STREAM_URL: 'missing_stream_url',
+  INVALID_STREAM_URL: 'invalid_stream_url',
+  NONEXISTENT_LINK: 'nonexistent_link',
+  CHANNEL_BLOCKED: 'channel_blocked',
+  CHANNEL_CLOSED: 'channel_closed',
+  DUPLICATE_LINK: 'duplicate_link',
+  DUPLICATE_REQUEST: 'duplicate_request'
+}
+
 async function main() {
   const logger = new Logger()
   const issueLoader = new IssueLoader()
@@ -41,7 +55,7 @@ async function main() {
         type: 'streams:remove',
         streamId: undefined,
         streamUrl: undefined,
-        status: 'missing_link'
+        status: status.NONEXISTENT_LINK
       }
 
       report.add(result)
@@ -52,11 +66,11 @@ async function main() {
           type: 'streams:remove',
           streamId: undefined,
           streamUrl: truncate(streamUrl),
-          status: 'pending'
+          status: status.PENDING
         }
 
         if (streamsGroupedByUrl.missing(streamUrl)) {
-          result.status = 'wrong_link'
+          result.status = status.NONEXISTENT_LINK
         }
 
         report.add(result)
@@ -77,17 +91,18 @@ async function main() {
       type: 'streams:add',
       streamId: streamId || undefined,
       streamUrl: truncate(streamUrl),
-      status: 'pending'
+      status: status.PENDING
     }
 
-    if (!channelId) result.status = 'missing_id'
-    else if (!streamUrl) result.status = 'missing_link'
-    else if (!isURI(streamUrl)) result.status = 'invalid_link'
-    else if (data.blocklistRecordsGroupedByChannel.has(channelId)) result.status = 'blocked'
-    else if (data.channelsKeyById.missing(channelId)) result.status = 'wrong_id'
-    else if (streamsGroupedByUrl.has(streamUrl)) result.status = 'on_playlist'
-    else if (addRequestsBuffer.has(streamUrl)) result.status = 'duplicate'
-    else result.status = 'pending'
+    if (!channelId) result.status = status.MISSING_CHANNEL_ID
+    else if (!streamUrl) result.status = status.MISSING_STREAM_URL
+    else if (!isURI(streamUrl)) result.status = status.INVALID_STREAM_URL
+    else if (data.blocklistRecordsGroupedByChannel.has(channelId))
+      result.status = status.CHANNEL_BLOCKED
+    else if (data.channelsKeyById.missing(channelId)) result.status = status.INVALID_CHANNEL_ID
+    else if (streamsGroupedByUrl.has(streamUrl)) result.status = status.DUPLICATE_LINK
+    else if (addRequestsBuffer.has(streamUrl)) result.status = status.DUPLICATE_REQUEST
+    else result.status = status.PENDING
 
     addRequestsBuffer.set(streamUrl, true)
 
@@ -108,12 +123,13 @@ async function main() {
       type: 'streams:edit',
       streamId: streamId || undefined,
       streamUrl: truncate(streamUrl),
-      status: 'pending'
+      status: status.PENDING
     }
 
-    if (!streamUrl) result.status = 'missing_link'
-    else if (streamsGroupedByUrl.missing(streamUrl)) result.status = 'invalid_link'
-    else if (channelId && data.channelsKeyById.missing(channelId)) result.status = 'invalid_id'
+    if (!streamUrl) result.status = status.MISSING_STREAM_URL
+    else if (streamsGroupedByUrl.missing(streamUrl)) result.status = status.NONEXISTENT_LINK
+    else if (channelId && data.channelsKeyById.missing(channelId))
+      result.status = status.INVALID_CHANNEL_ID
 
     report.add(result)
   })
@@ -124,7 +140,7 @@ async function main() {
   )
   const channelSearchRequestsBuffer = new Dictionary()
   channelSearchRequests.forEach((issue: Issue) => {
-    const streamId = issue.data.getString('channelId') || ''
+    const streamId = issue.data.getString('streamId') || issue.data.getString('channelId') || ''
     const [channelId, feedId] = streamId.split('@')
 
     const result = {
@@ -132,18 +148,19 @@ async function main() {
       type: 'channel search',
       streamId: streamId || undefined,
       streamUrl: undefined,
-      status: 'pending'
+      status: status.PENDING
     }
 
-    if (!channelId) result.status = 'missing_id'
-    else if (data.channelsKeyById.missing(channelId)) result.status = 'invalid_id'
-    else if (channelSearchRequestsBuffer.has(streamId)) result.status = 'duplicate'
-    else if (data.blocklistRecordsGroupedByChannel.has(channelId)) result.status = 'blocked'
-    else if (streamsGroupedById.has(streamId)) result.status = 'fulfilled'
-    else if (!feedId && streamsGroupedByChannel.has(channelId)) result.status = 'fulfilled'
+    if (!channelId) result.status = status.MISSING_CHANNEL_ID
+    else if (data.channelsKeyById.missing(channelId)) result.status = status.INVALID_CHANNEL_ID
+    else if (channelSearchRequestsBuffer.has(streamId)) result.status = status.DUPLICATE_REQUEST
+    else if (data.blocklistRecordsGroupedByChannel.has(channelId))
+      result.status = status.CHANNEL_BLOCKED
+    else if (streamsGroupedById.has(streamId)) result.status = status.FULFILLED
+    else if (!feedId && streamsGroupedByChannel.has(channelId)) result.status = status.FULFILLED
     else {
       const channelData = data.channelsKeyById.get(channelId)
-      if (channelData && channelData.isClosed()) result.status = 'closed'
+      if (channelData && channelData.isClosed()) result.status = status.CHANNEL_CLOSED
     }
 
     channelSearchRequestsBuffer.set(streamId, true)
@@ -151,7 +168,7 @@ async function main() {
     report.add(result)
   })
 
-  report = report.sortBy(item => item.issueNumber).filter(item => item.status !== 'pending')
+  report = report.sortBy(item => item.issueNumber).filter(item => item.status !== status.PENDING)
 
   console.table(report.all())
 }
