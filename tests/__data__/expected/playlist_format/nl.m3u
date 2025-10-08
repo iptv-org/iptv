@@ -1,9 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="NPO1.nl@SD",NPO 1 (342p) [Geo-blocked]
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo1/npo1.isml/.m3u8
-#EXTINF:-1 tvg-id="NPO2.nl",NPO 2 (342p)
+#EXTINF:-1 tvg-id="NPO2.nl@SD",NPO 2 (342p)
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo2/npo2.isml/.m3u8
-#EXTINF:-1 tvg-id="NPO2.nl" http-referrer="http://imn.iq" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",NPO 2 (302p) [Geo-blocked]
+#EXTINF:-1 tvg-id="NPO2.nl@SD" http-referrer="http://imn.iq" http-user-agent="Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148",NPO 2 (302p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=http://imn.iq
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (iPhone; CPU iPhone OS 12_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148
 #KODIPROP:inputstream=inputstream.adaptive
@@ -11,5 +11,5 @@ http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo2/npo2.i
 #KODIPROP:inputstream.adaptive.license_type=com.widevine.alpha
 #KODIPROP:inputstream.adaptive.license_key=https://drm.ors.at/acquire-license/widevine?BrandGuid=13f2e056-53fe-4469-ba6d-999970dbe549&userToken=v9ZVSksv4S7rT55o10dmYNRa4asye3z05eWCFxD%2FFYIlTJEpuf6tF8asPcyQOFq0h5opS%2B6WoMxnshWkihpHq5qrdrBEZ69piE94J9Feh385snGOqK3PYO7tLLjxmsCAe%2B9%2BNnurSSO5RCAIRsL125nSj1eOR%2F1GSKOgGH80HK2FDLiePxPkeaAxuWzacNBB%2FqnIGGxfe3GlmN65cU9F8WEpKFDlaxW%2Fv3ZSLAp3%2BZEq1aZXJ6Oz%2Fi0diD0EybH7|Content-Type=application/octet-stream|R{SSM}|
 http://stream.tvtap.net:8081/live/nl-npo2.stream/playlist.m3u8?|Referer="https://referer.xyz/"|User-Agent="Mozilla/5.0+(iPhone;+CPU+iPhone+OS+17_7+like+Mac+OS+X)+AppleWebKit/605.1.15+(KHTML,+like+Gecko)+Version/18.0+Mobile/15E148+Safari/604.1"|Origin="https://origin.xyz"
-#EXTINF:-1 tvg-id="NPO2.nl",NPO 2 [Geo-blocked]
+#EXTINF:-1 tvg-id="NPO2.nl@SD",NPO 2 [Geo-blocked]
 http://resolver.streaming.api.nos.nl/livestream?url=/live/npo/tvlive/npo2/npo22.isml/.m3u8
