@@ -67,6 +67,10 @@ https://euw32.playlist.ttvnw.net/v1/playlist/CtMEHCWSOLVBIjzQRcYCDzxENBPC6QqL19T
 https://informatia.streamnet.ro/mobile_tv/informatiatv.m3u8
 #EXTINF:-1 tvg-id="IntermediaTV.ro",Intermedia TV (576p) [Not 24/7]
 http://83.103.150.198:8080
+#EXTINF:-1 tvg-id="JimJam.ro" http-referrer="https://canale-tv.com/" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0",JimJam (576p)
+#EXTVLCOPT:http-referrer=https://canale-tv.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0
+https://saruman1.tharen.cfd/jimy/usergenq3n0lz7kr.m3u8
 #EXTINF:-1 tvg-id="JOBTV.ro@SD",JOB TV (1080p)
 https://jobtvserver.eu/hls/stream.m3u8
 #EXTINF:-1 tvg-id="KanalD.ro",Kanal D (480p)
@@ -181,6 +185,10 @@ https://tvr-tvriasi.cdn.zitec.com/live/tvriasi/main.m3u8
 https://tvr-tvrinfo.cdn.zitec.com/live/tvrinfo/main.m3u8
 #EXTINF:-1 tvg-id="TVRInternational.ro",TVR International (1080p)
 https://tvr-tvri.cdn.zitec.com/live/tvri/main.m3u8
+#EXTINF:-1 tvg-id="TVRInternational.ro@SD",TVR International
+https://viamotionhsi.netplus.ch/live/eds/tvrinternational/browser-dash/tvrinternational.mpd
+#EXTINF:-1 tvg-id="TVRInternational.ro@SD",TVR International
+https://viamotionhsi.netplus.ch/live/eds/tvrinternational/browser-HLS8/tvrinternational.m3u8
 #EXTINF:-1 tvg-id="TVRSport.ro" http-referrer="https://www.tvrplus.ro/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0",TVR Sport (1080p) [Geo-blocked]
 #EXTVLCOPT:http-referrer=https://www.tvrplus.ro/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; rv:126.0) Gecko/20100101 Firefox/126.0
@@ -195,11 +203,3 @@ https://mn-nl.mncdn.com/tvrtgmures_new/smil:tvrtgmures_new.smil/index.m3u8
 https://tvr-tvrtimisoara.cdn.zitec.com/live/tvrtimisoara/main.m3u8
 #EXTINF:-1 tvg-id="TVSat.ro",TVSat (576p) [Not 24/7]
 http://89.38.8.130:39443
-#EXTINF:-1 tvg-id="TVRInternational.ro@SD",TVR International
-https://viamotionhsi.netplus.ch/live/eds/tvrinternational/browser-HLS8/tvrinternational.m3u8
-#EXTINF:-1 tvg-id="TVRInternational.ro@SD",TVR International
-https://viamotionhsi.netplus.ch/live/eds/tvrinternational/browser-dash/tvrinternational.mpd
-#EXTINF:-1 tvg-id="JimJam.ro" http-referrer="https://canale-tv.com/" http-user-agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0",JimJam (576p)
-#EXTVLCOPT:http-referrer=https://canale-tv.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:109.0) Gecko/20100101 Firefox/117.0
-https://saruman1.tharen.cfd/jimy/usergenq3n0lz7kr.m3u8
