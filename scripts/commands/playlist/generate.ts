@@ -1,10 +1,10 @@
-import { PlaylistParser, DataProcessor, DataLoader } from '../../core'
-import type { DataProcessorData } from '../../types/dataProcessor'
-import { DATA_DIR, LOGS_DIR, STREAMS_DIR } from '../../constants'
-import type { DataLoaderData } from '../../types/dataLoader'
-import { Logger, Storage, File } from '@freearhey/core'
-import { Stream } from '../../models'
+import { LOGS_DIR, STREAMS_DIR } from '../../constants'
+import { Storage, File } from '@freearhey/storage-js'
+import { PlaylistParser } from '../../core'
+import { loadData, data } from '../../api'
+import { Logger } from '@freearhey/core'
 import uniqueId from 'lodash.uniqueid'
+import { Stream } from '../../models'
 import {
   IndexCategoryGenerator,
   IndexLanguageGenerator,
@@ -25,28 +25,12 @@ async function main() {
   const logFile = new File('generators.log')
 
   logger.info('loading data from api...')
-  const processor = new DataProcessor()
-  const dataStorage = new Storage(DATA_DIR)
-  const loader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await loader.load()
-  const {
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId,
-    channelsKeyById,
-    subdivisions,
-    categories,
-    countries,
-    regions,
-    cities
-  }: DataProcessorData = processor.process(data)
+  await loadData()
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
-    storage: streamsStorage,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId,
-    channelsKeyById
+    storage: streamsStorage
   })
   const files = await streamsStorage.list('**/*.m3u')
   let streams = await parser.parse(files)
@@ -57,19 +41,19 @@ async function main() {
   await new RawGenerator({ streams, logFile }).generate()
 
   logger.info('filtering streams...')
-  streams = streams.uniqBy((stream: Stream) =>
-    stream.hasId() ? stream.getChannelId() + stream.getFeedId() : uniqueId()
-  )
+  streams = streams.uniqBy((stream: Stream) => stream.getId() || uniqueId())
 
   logger.info('sorting streams...')
-  streams = streams.orderBy(
+  streams = streams.sortBy(
     [
       (stream: Stream) => stream.getId(),
       (stream: Stream) => stream.getVerticalResolution(),
-      (stream: Stream) => stream.getLabel()
+      (stream: Stream) => stream.label
     ],
     ['asc', 'asc', 'desc']
   )
+
+  const { categories, countries, subdivisions, cities, regions } = data
 
   logger.info('generating categories/...')
   await new CategoriesGenerator({ categories, streams, logFile }).generate()

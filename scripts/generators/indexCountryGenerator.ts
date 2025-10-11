@@ -1,15 +1,17 @@
-import { Collection, Storage, File } from '@freearhey/core'
-import { Stream, Playlist, Country } from '../models'
+import { Storage, File } from '@freearhey/storage-js'
 import { PUBLIC_DIR, EOL } from '../constants'
+import { Stream, Playlist } from '../models'
+import { Collection } from '@freearhey/core'
 import { Generator } from './generator'
+import * as sdk from '@iptv-org/sdk'
 
 type IndexCountryGeneratorProps = {
-  streams: Collection
+  streams: Collection<Stream>
   logFile: File
 }
 
 export class IndexCountryGenerator implements Generator {
-  streams: Collection
+  streams: Collection<Stream>
   storage: Storage
   logFile: File
 
@@ -20,20 +22,22 @@ export class IndexCountryGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    let groupedStreams = new Collection()
+    let groupedStreams = new Collection<Stream>()
 
     this.streams
-      .orderBy((stream: Stream) => stream.getTitle())
+      .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
       .forEach((stream: Stream) => {
-        if (!stream.hasBroadcastArea()) {
+        const broadcastAreaCountries = stream.getBroadcastCountries()
+
+        if (stream.getBroadcastAreaCodes().isEmpty()) {
           const streamClone = stream.clone()
           streamClone.groupTitle = 'Undefined'
           groupedStreams.add(streamClone)
           return
         }
 
-        stream.getBroadcastCountries().forEach((country: Country) => {
+        broadcastAreaCountries.forEach((country: sdk.Models.Country) => {
           const streamClone = stream.clone()
           streamClone.groupTitle = country.name
           groupedStreams.add(streamClone)
@@ -46,7 +50,7 @@ export class IndexCountryGenerator implements Generator {
         }
       })
 
-    groupedStreams = groupedStreams.orderBy((stream: Stream) => {
+    groupedStreams = groupedStreams.sortBy((stream: Stream) => {
       if (stream.groupTitle === 'International') return 'ZZ'
       if (stream.groupTitle === 'Undefined') return 'ZZZ'
 

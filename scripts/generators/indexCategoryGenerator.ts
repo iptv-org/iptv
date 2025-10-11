@@ -1,15 +1,17 @@
-import { Collection, Storage, File } from '@freearhey/core'
-import { Stream, Playlist, Category } from '../models'
+import { Storage, File } from '@freearhey/storage-js'
 import { PUBLIC_DIR, EOL } from '../constants'
+import { Stream, Playlist } from '../models'
+import { Collection } from '@freearhey/core'
 import { Generator } from './generator'
+import * as sdk from '@iptv-org/sdk'
 
 type IndexCategoryGeneratorProps = {
-  streams: Collection
+  streams: Collection<Stream>
   logFile: File
 }
 
 export class IndexCategoryGenerator implements Generator {
-  streams: Collection
+  streams: Collection<Stream>
   storage: Storage
   logFile: File
 
@@ -20,27 +22,26 @@ export class IndexCategoryGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    const streams = this.streams
-      .orderBy(stream => stream.getTitle())
-      .filter(stream => stream.isSFW())
+    const streams = this.streams.sortBy(stream => stream.title).filter(stream => stream.isSFW())
 
-    let groupedStreams = new Collection()
+    let groupedStreams = new Collection<Stream>()
     streams.forEach((stream: Stream) => {
-      if (!stream.hasCategories()) {
+      const streamCategories = stream.getCategories()
+      if (streamCategories.isEmpty()) {
         const streamClone = stream.clone()
         streamClone.groupTitle = 'Undefined'
         groupedStreams.add(streamClone)
         return
       }
 
-      stream.getCategories().forEach((category: Category) => {
+      streamCategories.forEach((category: sdk.Models.Category) => {
         const streamClone = stream.clone()
         streamClone.groupTitle = category.name
-        groupedStreams.push(streamClone)
+        groupedStreams.add(streamClone)
       })
     })
 
-    groupedStreams = groupedStreams.orderBy(stream => {
+    groupedStreams = groupedStreams.sortBy(stream => {
       if (stream.groupTitle === 'Undefined') return 'ZZ'
       return stream.groupTitle
     })

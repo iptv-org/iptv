@@ -1,9 +1,10 @@
-import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
-import { DataLoader, DataProcessor, PlaylistParser } from '../../core'
-import { DataProcessorData } from '../../types/dataProcessor'
-import { DATA_DIR, ROOT_DIR } from '../../constants'
-import { DataLoaderData } from '../../types/dataLoader'
-import { BlocklistRecord, Stream } from '../../models'
+import { Logger, Collection, Dictionary } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
+import { PlaylistParser } from '../../core'
+import { data, loadData } from '../../api'
+import { ROOT_DIR } from '../../constants'
+import { Stream } from '../../models'
+import * as sdk from '@iptv-org/sdk'
 import { program } from 'commander'
 import chalk from 'chalk'
 
@@ -19,24 +20,12 @@ async function main() {
   const logger = new Logger()
 
   logger.info('loading data from api...')
-  const processor = new DataProcessor()
-  const dataStorage = new Storage(DATA_DIR)
-  const loader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await loader.load()
-  const {
-    channelsKeyById,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId,
-    blocklistRecordsGroupedByChannelId
-  }: DataProcessorData = processor.process(data)
+  await loadData()
 
   logger.info('loading streams...')
   const rootStorage = new Storage(ROOT_DIR)
   const parser = new PlaylistParser({
-    storage: rootStorage,
-    channelsKeyById,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId
+    storage: rootStorage
   })
   const files = program.args.length ? program.args : await rootStorage.list('streams/**/*.m3u')
   const streams = await parser.parse(files)
@@ -49,16 +38,16 @@ async function main() {
     const streams = streamsGroupedByFilepath.get(filepath)
     if (!streams) continue
 
-    const log = new Collection()
-    const buffer = new Dictionary()
+    const log = new Collection<LogItem>()
+    const buffer = new Dictionary<boolean>()
     streams.forEach((stream: Stream) => {
-      if (stream.channelId) {
-        const channel = channelsKeyById.get(stream.channelId)
+      if (stream.channel) {
+        const channel = data.channelsKeyById.get(stream.channel)
         if (!channel) {
           log.add({
             type: 'warning',
             line: stream.getLine(),
-            message: `"${stream.id}" is not in the database`
+            message: `"${stream.tvgId}" is not in the database`
           })
         }
       }
@@ -74,28 +63,30 @@ async function main() {
         buffer.set(stream.url, true)
       }
 
-      const blocklistRecords = stream.channel
-        ? new Collection(blocklistRecordsGroupedByChannelId.get(stream.channel.id))
-        : new Collection()
+      if (stream.channel) {
+        const blocklistRecords = new Collection(
+          data.blocklistRecordsGroupedByChannel.get(stream.channel)
+        )
 
-      blocklistRecords.forEach((blocklistRecord: BlocklistRecord) => {
-        if (blocklistRecord.reason === 'dmca') {
-          log.add({
-            type: 'error',
-            line: stream.getLine(),
-            message: `"${blocklistRecord.channelId}" is on the blocklist due to claims of copyright holders (${blocklistRecord.ref})`
-          })
-        } else if (blocklistRecord.reason === 'nsfw') {
-          log.add({
-            type: 'error',
-            line: stream.getLine(),
-            message: `"${blocklistRecord.channelId}" is on the blocklist due to NSFW content (${blocklistRecord.ref})`
-          })
-        }
-      })
+        blocklistRecords.forEach((blocklistRecord: sdk.Models.BlocklistRecord) => {
+          if (blocklistRecord.reason === 'dmca') {
+            log.add({
+              type: 'error',
+              line: stream.getLine(),
+              message: `"${blocklistRecord.channel}" is on the blocklist due to claims of copyright holders (${blocklistRecord.ref})`
+            })
+          } else if (blocklistRecord.reason === 'nsfw') {
+            log.add({
+              type: 'error',
+              line: stream.getLine(),
+              message: `"${blocklistRecord.channel}" is on the blocklist due to NSFW content (${blocklistRecord.ref})`
+            })
+          }
+        })
+      }
     })
 
-    if (log.notEmpty()) {
+    if (log.isNotEmpty()) {
       console.log(`\n${chalk.underline(filepath)}`)
 
       log.forEach((logItem: LogItem) => {

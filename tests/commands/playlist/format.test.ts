@@ -3,7 +3,8 @@ import { execSync } from 'child_process'
 import * as fs from 'fs-extra'
 import { glob } from 'glob'
 
-const ENV_VAR = 'cross-env STREAMS_DIR=tests/__data__/output/streams DATA_DIR=tests/__data__/input/data'
+const ENV_VAR =
+  'cross-env STREAMS_DIR=tests/__data__/output/streams DATA_DIR=tests/__data__/input/data'
 
 beforeEach(() => {
   fs.emptyDirSync('tests/__data__/output')
