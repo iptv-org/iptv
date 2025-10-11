@@ -6,12 +6,12 @@ type PlaylistOptions = {
 }
 
 export class Playlist {
-  streams: Collection
+  streams: Collection<Stream>
   options: {
     public: boolean
   }
 
-  constructor(streams: Collection, options?: PlaylistOptions) {
+  constructor(streams: Collection<Stream>, options?: PlaylistOptions) {
     this.streams = streams
     this.options = options || { public: false }
   }

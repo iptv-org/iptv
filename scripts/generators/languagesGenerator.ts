@@ -1,12 +1,14 @@
-import { Collection, Storage, File } from '@freearhey/core'
-import { Playlist, Language, Stream } from '../models'
+import { Storage, File } from '@freearhey/storage-js'
 import { PUBLIC_DIR, EOL } from '../constants'
+import { Playlist, Stream } from '../models'
+import { Collection } from '@freearhey/core'
 import { Generator } from './generator'
+import * as sdk from '@iptv-org/sdk'
 
-type LanguagesGeneratorProps = { streams: Collection; logFile: File }
+type LanguagesGeneratorProps = { streams: Collection<Stream>; logFile: File }
 
 export class LanguagesGenerator implements Generator {
-  streams: Collection
+  streams: Collection<Stream>
   storage: Storage
   logFile: File
 
@@ -17,20 +19,20 @@ export class LanguagesGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    const streams = this.streams
-      .orderBy((stream: Stream) => stream.getTitle())
+    const streams: Collection<Stream> = this.streams
+      .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
 
-    let languages = new Collection()
+    const languages = new Collection<sdk.Models.Language>()
     streams.forEach((stream: Stream) => {
-      languages = languages.concat(stream.getLanguages())
+      languages.concat(stream.getLanguages())
     })
 
     languages
       .filter(Boolean)
-      .uniqBy((language: Language) => language.code)
-      .orderBy((language: Language) => language.name)
-      .forEach(async (language: Language) => {
+      .uniqBy((language: sdk.Models.Language) => language.code)
+      .sortBy((language: sdk.Models.Language) => language.name)
+      .forEach(async (language: sdk.Models.Language) => {
         const languageStreams = streams.filter((stream: Stream) => stream.hasLanguage(language))
 
         if (languageStreams.isEmpty()) return
@@ -43,8 +45,7 @@ export class LanguagesGenerator implements Generator {
         )
       })
 
-    const undefinedStreams = streams.filter((stream: Stream) => !stream.hasLanguages())
-
+    const undefinedStreams = streams.filter((stream: Stream) => stream.getLanguages().isEmpty())
     if (undefinedStreams.isEmpty()) return
 
     const playlist = new Playlist(undefinedStreams, { public: true })
