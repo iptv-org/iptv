@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
+permissions:
+  packages: read
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -24,7 +26,7 @@ jobs:
           cache: 'npm'
       - name: Setup .npmrc for GitHub Packages
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
           echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
           echo "always-auth=true" >> .npmrc
       - name: Install dependencies

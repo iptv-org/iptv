@@ -1,9 +1,9 @@
 {
   "name": "iptv",
   "scripts": {
-    "act:check": "act pull_request -W .github/workflows/check.yml --secret-file .secrets",
-    "act:format": "act workflow_dispatch -W .github/workflows/format.yml --secret-file .secrets",
-    "act:update": "act workflow_dispatch -W .github/workflows/update.yml --secret-file .secrets",
+    "act:check": "gh act pull_request -W .github/workflows/check.yml",
+    "act:format": "gh act workflow_dispatch -W .github/workflows/format.yml",
+    "act:update": "gh act workflow_dispatch -W .github/workflows/update.yml",
     "api:load": "tsx scripts/commands/api/load.ts",
     "api:generate": "tsx scripts/commands/api/generate.ts",
     "api:deploy": "npx gh-pages-clean && npx gh-pages -a -m \"Deploy to iptv-org/api\" -d .api -r https://$GITHUB_TOKEN@github.com/iptv-org/api.git",

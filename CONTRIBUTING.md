@@ -181,9 +181,9 @@ For scripts to work, you must have [Node.js](https://nodejs.org/en) installed on
 
 To run scripts use the `npm run <script-name>` command.
 
-- `act:check`: allows to run the [check](https://github.com/iptv-org/iptv/blob/master/.github/workflows/check.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
-- `act:format`: allows to test the [format](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
-- `act:update`: allows to test the [update](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/act](https://github.com/nektos/act).
+- `act:check`: allows to run the [check](https://github.com/iptv-org/iptv/blob/master/.github/workflows/check.yml) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
+- `act:format`: allows to test the [format](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
+- `act:update`: allows to test the [update](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
 - `api:load`: downloads the latest channel and stream data from the [iptv-org/api](https://github.com/iptv-org/api).
 - `api:generate`: generates a JSON file with all streams for the [iptv-org/api](https://github.com/iptv-org/api) repository.
 - `api:deploy`: allows to manually upload a JSON file created via `api:generate` to the [iptv-org/api](https://github.com/iptv-org/api) repository. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
