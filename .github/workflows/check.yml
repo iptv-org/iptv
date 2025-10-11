@@ -28,8 +28,9 @@ jobs:
           node-version: 22
           cache: 'npm'
       - name: Setup .npmrc for GitHub Packages
+        if: steps.files.outputs.any_changed == 'true'
         run: |
-          echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> .npmrc
           echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
           echo "always-auth=true" >> .npmrc
       - name: Install dependencies
