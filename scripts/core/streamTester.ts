@@ -1,16 +1,23 @@
-import { Stream } from '../models'
-import { TESTING } from '../constants'
-import mediaInfoFactory from 'mediainfo.js'
-import axios, { AxiosInstance, AxiosProxyConfig, AxiosRequestConfig } from 'axios'
-import { ProxyParser } from './proxyParser.js'
-import { OptionValues } from 'commander'
+import axios, { AxiosInstance, AxiosProxyConfig, AxiosRequestConfig, AxiosResponse } from 'axios'
 import { SocksProxyAgent } from 'socks-proxy-agent'
+import { ProxyParser } from './proxyParser.js'
+import mediaInfoFactory from 'mediainfo.js'
+import { OptionValues } from 'commander'
+import { TESTING } from '../constants'
+import { Stream } from '../models'
 
-export type TestResult = {
+export type StreamTesterResult = {
   status: {
     ok: boolean
     code: string
   }
+}
+
+export type StreamTesterError = {
+  name: string
+  code?: string
+  cause?: Error & { code?: string }
+  response?: AxiosResponse
 }
 
 export type StreamTesterProps = {
@@ -46,7 +53,7 @@ export class StreamTester {
     this.options = options
   }
 
-  async test(stream: Stream): Promise<TestResult> {
+  async test(stream: Stream): Promise<StreamTesterResult> {
     if (TESTING) {
       const results = (await import('../../tests/__data__/input/playlist_test/results.js')).default
 
@@ -56,8 +63,8 @@ export class StreamTester {
         const res = await this.client(stream.url, {
           signal: AbortSignal.timeout(this.options.timeout),
           headers: {
-            'User-Agent': stream.getUserAgent() || 'Mozilla/5.0',
-            Referer: stream.getReferrer()
+            'User-Agent': stream.user_agent || 'Mozilla/5.0',
+            Referer: stream.referrer
           }
         })
 
@@ -65,8 +72,7 @@ export class StreamTester {
         const buffer = await res.data
         const result = await mediainfo.analyzeData(
           () => buffer.byteLength,
-          (size: any, offset: number | undefined) =>
-            Buffer.from(buffer).subarray(offset, offset + size)
+          (size: number, offset: number) => Buffer.from(buffer).subarray(offset, offset + size)
         )
 
         if (result && result.media && result.media.track.length > 0) {
@@ -84,7 +90,9 @@ export class StreamTester {
             }
           }
         }
-      } catch (error: any) {
+      } catch (err: unknown) {
+        const error = err as StreamTesterError
+
         let code = 'UNKNOWN_ERROR'
         if (error.name === 'CanceledError') {
           code = 'TIMEOUT'
@@ -97,7 +105,7 @@ export class StreamTester {
             code = `AXIOS_${error.code}`
           }
         } else if (error.cause) {
-          const cause = error.cause as Error & { code?: string }
+          const cause = error.cause
           if (cause.code) {
             code = cause.code
           } else {

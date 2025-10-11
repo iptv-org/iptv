@@ -1,6 +1,6 @@
 import { Dictionary } from '@freearhey/core'
-import { Issue } from '../models'
 import { IssueData } from './issueData'
+import { Issue } from '../models'
 
 const FIELDS = new Dictionary({
   'Stream ID': 'streamId',
@@ -23,7 +23,7 @@ export class IssueParser {
   parse(issue: { number: number; body: string; labels: { name: string }[] }): Issue {
     const fields = typeof issue.body === 'string' ? issue.body.split('###') : []
 
-    const data = new Dictionary()
+    const data = new Dictionary<string>()
     fields.forEach((field: string) => {
       const parsed = typeof field === 'string' ? field.split(/\r?\n/).filter(Boolean) : []
       let _label = parsed.shift()
@@ -33,7 +33,7 @@ export class IssueParser {
 
       if (!_label || !_value) return data
 
-      const id: string = FIELDS.get(_label)
+      const id = FIELDS.get(_label)
       const value: string = _value === '_No response_' || _value === 'None' ? '' : _value
 
       if (!id) return

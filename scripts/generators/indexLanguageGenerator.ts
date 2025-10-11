@@ -1,15 +1,17 @@
-import { Collection, Storage, File } from '@freearhey/core'
-import { Stream, Playlist, Language } from '../models'
+import { Storage, File } from '@freearhey/storage-js'
 import { PUBLIC_DIR, EOL } from '../constants'
+import { Stream, Playlist } from '../models'
+import { Collection } from '@freearhey/core'
 import { Generator } from './generator'
+import * as sdk from '@iptv-org/sdk'
 
 type IndexLanguageGeneratorProps = {
-  streams: Collection
+  streams: Collection<Stream>
   logFile: File
 }
 
 export class IndexLanguageGenerator implements Generator {
-  streams: Collection
+  streams: Collection<Stream>
   storage: Storage
   logFile: File
 
@@ -20,26 +22,27 @@ export class IndexLanguageGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    let groupedStreams = new Collection()
+    let groupedStreams = new Collection<Stream>()
     this.streams
-      .orderBy((stream: Stream) => stream.getTitle())
+      .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
       .forEach((stream: Stream) => {
-        if (!stream.hasLanguages()) {
+        const streamLanguages = stream.getLanguages()
+        if (streamLanguages.isEmpty()) {
           const streamClone = stream.clone()
           streamClone.groupTitle = 'Undefined'
           groupedStreams.add(streamClone)
           return
         }
 
-        stream.getLanguages().forEach((language: Language) => {
+        streamLanguages.forEach((language: sdk.Models.Language) => {
           const streamClone = stream.clone()
           streamClone.groupTitle = language.name
           groupedStreams.add(streamClone)
         })
       })
 
-    groupedStreams = groupedStreams.orderBy((stream: Stream) => {
+    groupedStreams = groupedStreams.sortBy((stream: Stream) => {
       if (stream.groupTitle === 'Undefined') return 'ZZ'
       return stream.groupTitle
     })

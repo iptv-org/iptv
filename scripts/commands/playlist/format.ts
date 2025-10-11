@@ -1,10 +1,10 @@
-import { Logger, Storage } from '@freearhey/core'
-import { STREAMS_DIR, DATA_DIR } from '../../constants'
-import { DataLoader, DataProcessor, PlaylistParser } from '../../core'
+import { Collection, Logger } from '@freearhey/core'
 import { Stream, Playlist } from '../../models'
+import { Storage } from '@freearhey/storage-js'
+import { STREAMS_DIR } from '../../constants'
+import { PlaylistParser } from '../../core'
+import { loadData } from '../../api'
 import { program } from 'commander'
-import { DataLoaderData } from '../../types/dataLoader'
-import { DataProcessorData } from '../../types/dataProcessor'
 import path from 'node:path'
 
 program.argument('[filepath...]', 'Path to file to format').parse(process.argv)
@@ -13,20 +13,12 @@ async function main() {
   const logger = new Logger()
 
   logger.info('loading data from api...')
-  const processor = new DataProcessor()
-  const dataStorage = new Storage(DATA_DIR)
-  const loader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await loader.load()
-  const { channelsKeyById, feedsGroupedByChannelId, logosGroupedByStreamId }: DataProcessorData =
-    processor.process(data)
+  await loadData()
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
-    storage: streamsStorage,
-    channelsKeyById,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId
+    storage: streamsStorage
   })
   let files = program.args.length ? program.args : await streamsStorage.list('**/*.m3u')
   files = files.map((filepath: string) => path.basename(filepath))
@@ -45,19 +37,33 @@ async function main() {
 
   logger.info('removing wrong id...')
   streams = streams.map((stream: Stream) => {
-    if (!stream.channel || channelsKeyById.missing(stream.channel.id)) {
-      stream.id = ''
+    const channel = stream.getChannel()
+    if (channel) return stream
+
+    stream.tvgId = ''
+    stream.channel = ''
+    stream.feed = ''
+
+    return stream
+  })
+
+  logger.info('adding the missing feed id...')
+  streams = streams.map((stream: Stream) => {
+    const feed = stream.getFeed()
+    if (feed) {
+      stream.feed = feed.id
+      stream.tvgId = stream.getId()
     }
 
     return stream
   })
 
   logger.info('sorting links...')
-  streams = streams.orderBy(
+  streams = streams.sortBy(
     [
       (stream: Stream) => stream.title,
       (stream: Stream) => stream.getVerticalResolution(),
-      (stream: Stream) => stream.getLabel(),
+      (stream: Stream) => stream.label,
       (stream: Stream) => stream.url
     ],
     ['asc', 'desc', 'asc', 'asc']
@@ -66,9 +72,9 @@ async function main() {
   logger.info('saving...')
   const groupedStreams = streams.groupBy((stream: Stream) => stream.getFilepath())
   for (const filepath of groupedStreams.keys()) {
-    const streams = groupedStreams.get(filepath) || []
+    const streams = new Collection(groupedStreams.get(filepath))
 
-    if (!streams.length) return
+    if (streams.isEmpty()) return
 
     const playlist = new Playlist(streams, { public: false })
     await streamsStorage.save(filepath, playlist.toString())
