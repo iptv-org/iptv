@@ -4,9 +4,7 @@ on:
   # schedule:
   #   - cron: "0 12 * * *"
 jobs:
-  on_trigger:
-    # if: ${{ github.event_name == 'workflow_dispatch' || github.event_name == 'schedule' }}
-    if: ${{ github.event_name == 'workflow_dispatch' }}
+  main:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -26,7 +24,7 @@ jobs:
           cache: 'npm'
       - name: Setup .npmrc for GitHub Packages
         run: |
-          echo "//npm.pkg.github.com/:_authToken=$GITHUB_TOKEN" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> .npmrc
           echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
           echo "always-auth=true" >> .npmrc
       - name: Install dependencies
