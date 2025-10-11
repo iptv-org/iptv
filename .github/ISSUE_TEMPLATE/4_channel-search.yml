@@ -7,9 +7,9 @@ body:
   - type: input
     id: stream_id
     attributes:
-      label: Channel ID (required)
-      description: Unique channel ID from [iptv-org.github.io](https://iptv-org.github.io/). If you can't find the channel you want in the list, please let us know through this [form](https://github.com/iptv-org/database/issues/new?assignees=&labels=channels%3Aadd&projects=&template=channels_add.yml&title=Add%3A+) before posting your request.
-      placeholder: 'BBCAmericaEast.us'
+      label: Stream ID (required)
+      description: Unique ID of the channel and feed from [iptv-org.github.io](https://iptv-org.github.io/). If you cannot find the channel or feed you are looking for in the list, please let us know via one of the [forms](https://github.com/iptv-org/database/issues/new/choose) before posting your request.
+      placeholder: 'BBCAmerica.us@East'
     validations:
       required: true
 

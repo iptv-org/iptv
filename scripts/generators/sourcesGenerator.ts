@@ -1,15 +1,16 @@
-import { Collection, Storage, File, type Dictionary } from '@freearhey/core'
-import { Stream, Playlist } from '../models'
+import { Collection, Dictionary } from '@freearhey/core'
+import { Storage, File } from '@freearhey/storage-js'
 import { PUBLIC_DIR, EOL } from '../constants'
+import { Stream, Playlist } from '../models'
 import { Generator } from './generator'
 
 type SourcesGeneratorProps = {
-  streams: Collection
+  streams: Collection<Stream>
   logFile: File
 }
 
 export class SourcesGenerator implements Generator {
-  streams: Collection
+  streams: Collection<Stream>
   storage: Storage
   logFile: File
 
@@ -20,14 +21,19 @@ export class SourcesGenerator implements Generator {
   }
 
   async generate() {
-    const files: Dictionary = this.streams.groupBy((stream: Stream) => stream.getFilename())
+    const files: Dictionary<Stream[]> = this.streams.groupBy((stream: Stream) =>
+      stream.getFilename()
+    )
 
     for (const filename of files.keys()) {
       if (!filename) continue
 
-      let streams = new Collection(files.get(filename))
-      streams = streams.map((stream: Stream) => {
-        const groupTitle = stream.getCategoryNames().join(';')
+      const streams = new Collection<Stream>(files.get(filename)).map((stream: Stream) => {
+        const groupTitle = stream
+          .getCategories()
+          .map(category => category.name)
+          .sort()
+          .join(';')
         if (groupTitle) stream.groupTitle = groupTitle
 
         return stream
