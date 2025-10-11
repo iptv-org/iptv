@@ -1,15 +1,16 @@
-import { Logger, Storage, Collection } from '@freearhey/core'
-import { ROOT_DIR, STREAMS_DIR, DATA_DIR } from '../../constants'
-import { PlaylistParser, StreamTester, CliTable, DataProcessor, DataLoader } from '../../core'
+import { PlaylistParser, StreamTester, CliTable } from '../../core'
 import type { TestResult } from '../../core/streamTester'
-import { Stream } from '../../models'
+import { ROOT_DIR, STREAMS_DIR } from '../../constants'
+import { Logger, Collection } from '@freearhey/core'
 import { program, OptionValues } from 'commander'
-import { eachLimit } from 'async-es'
+import { Storage } from '@freearhey/storage-js'
+import { Stream } from '../../models'
+import { loadData } from '../../api'
+import { eachLimit } from 'async'
+import dns from 'node:dns'
 import chalk from 'chalk'
 import os from 'node:os'
-import dns from 'node:dns'
-import type { DataLoaderData } from '../../types/dataLoader'
-import type { DataProcessorData } from '../../types/dataProcessor'
+import { truncate } from '../../utils'
 
 const LIVE_UPDATE_INTERVAL = 5000
 const LIVE_UPDATE_MAX_STREAMS = 100
@@ -18,7 +19,7 @@ let errors = 0
 let warnings = 0
 const results: { [key: string]: string } = {}
 let interval: string | number | NodeJS.Timeout | undefined
-let streams = new Collection()
+let streams = new Collection<Stream>()
 let isLiveUpdateEnabled = true
 
 program
@@ -50,20 +51,12 @@ async function main() {
   }
 
   logger.info('loading data from api...')
-  const processor = new DataProcessor()
-  const dataStorage = new Storage(DATA_DIR)
-  const loader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await loader.load()
-  const { channelsKeyById, feedsGroupedByChannelId, logosGroupedByStreamId }: DataProcessorData =
-    processor.process(data)
+  await loadData()
 
   logger.info('loading streams...')
   const rootStorage = new Storage(ROOT_DIR)
   const parser = new PlaylistParser({
-    storage: rootStorage,
-    channelsKeyById,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId
+    storage: rootStorage
   })
   const files = program.args.length ? program.args : await rootStorage.list(`${STREAMS_DIR}/*.m3u`)
   streams = await parser.parse(files)
@@ -79,7 +72,7 @@ async function main() {
     }, LIVE_UPDATE_INTERVAL)
   }
 
-  await eachLimit(
+  eachLimit(
     streams.all(),
     options.parallel,
     async (stream: Stream) => {
@@ -96,7 +89,7 @@ async function main() {
 main()
 
 async function runTest(stream: Stream) {
-  const key = stream.filepath + stream.getId() + stream.url
+  const key = stream.getUniqKey()
   results[key] = chalk.white('LOADING...')
 
   const result: TestResult = await tester.test(stream)
@@ -121,7 +114,7 @@ function drawTable() {
 
   const streamsGrouped = streams.groupBy((stream: Stream) => stream.filepath)
   for (const filepath of streamsGrouped.keys()) {
-    const streams: Stream[] = streamsGrouped.get(filepath)
+    const streams: Stream[] = streamsGrouped.get(filepath) || []
 
     const table = new CliTable({
       columns: [
@@ -132,12 +125,14 @@ function drawTable() {
       ]
     })
     streams.forEach((stream: Stream, index: number) => {
-      const status = results[stream.filepath + stream.getId() + stream.url] || chalk.gray('PENDING')
+      const key = stream.getUniqKey()
+      const status = results[key] || chalk.gray('PENDING')
+      const tvgId = stream.getTvgId()
 
       const row = {
         '': index,
-        'tvg-id': stream.getId().length > 25 ? stream.getId().slice(0, 22) + '...' : stream.getId(),
-        url: stream.url.length > 100 ? stream.url.slice(0, 97) + '...' : stream.url,
+        'tvg-id': truncate(tvgId, 25),
+        url: truncate(stream.url, 100),
         status
       }
       table.append(row)
@@ -149,7 +144,7 @@ function drawTable() {
   }
 }
 
-function onFinish(error: any) {
+function onFinish(error: Error) {
   clearInterval(interval)
 
   if (error) {

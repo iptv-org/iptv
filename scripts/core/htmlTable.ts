@@ -1,16 +1,18 @@
-type Column = {
+import { Collection } from '@freearhey/core'
+
+export type HTMLTableColumn = {
   name: string
   nowrap?: boolean
   align?: string
 }
 
-type DataItem = string[]
+export type HTMLTableItem = string[]
 
 export class HTMLTable {
-  data: DataItem[]
-  columns: Column[]
+  data: Collection<HTMLTableItem>
+  columns: Collection<HTMLTableColumn>
 
-  constructor(data: DataItem[], columns: Column[]) {
+  constructor(data: Collection<HTMLTableItem>, columns: Collection<HTMLTableColumn>) {
     this.data = data
     this.columns = columns
   }
@@ -19,24 +21,26 @@ export class HTMLTable {
     let output = '<table>\r\n'
 
     output += '  <thead>\r\n    <tr>'
-    for (const column of this.columns) {
+    this.columns.forEach((column: HTMLTableColumn) => {
       output += `<th align="left">${column.name}</th>`
-    }
+    })
+
     output += '</tr>\r\n  </thead>\r\n'
 
     output += '  <tbody>\r\n'
-    for (const item of this.data) {
+    this.data.forEach((item: HTMLTableItem) => {
       output += '    <tr>'
       let i = 0
       for (const prop in item) {
-        const column = this.columns[i]
+        const column = this.columns.all()[i]
         const nowrap = column.nowrap ? ' nowrap' : ''
         const align = column.align ? ` align="${column.align}"` : ''
         output += `<td${align}${nowrap}>${item[prop]}</td>`
         i++
       }
       output += '</tr>\r\n'
-    }
+    })
+
     output += '  </tbody>\r\n'
 
     output += '</table>'

@@ -1,58 +1,41 @@
-import { Collection, Storage, Dictionary } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
+import { Collection } from '@freearhey/core'
 import parser from 'iptv-playlist-parser'
 import { Stream } from '../models'
 
 type PlaylistPareserProps = {
   storage: Storage
-  feedsGroupedByChannelId: Dictionary
-  logosGroupedByStreamId: Dictionary
-  channelsKeyById: Dictionary
 }
 
 export class PlaylistParser {
   storage: Storage
-  feedsGroupedByChannelId: Dictionary
-  logosGroupedByStreamId: Dictionary
-  channelsKeyById: Dictionary
 
-  constructor({
-    storage,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId,
-    channelsKeyById
-  }: PlaylistPareserProps) {
+  constructor({ storage }: PlaylistPareserProps) {
     this.storage = storage
-    this.feedsGroupedByChannelId = feedsGroupedByChannelId
-    this.logosGroupedByStreamId = logosGroupedByStreamId
-    this.channelsKeyById = channelsKeyById
   }
 
-  async parse(files: string[]): Promise<Collection> {
-    let streams = new Collection()
+  async parse(files: string[]): Promise<Collection<Stream>> {
+    const parsed = new Collection<Stream>()
 
     for (const filepath of files) {
       if (!this.storage.existsSync(filepath)) continue
-
-      const _streams: Collection = await this.parseFile(filepath)
-      streams = streams.concat(_streams)
+      const _parsed: Collection<Stream> = await this.parseFile(filepath)
+      parsed.concat(_parsed)
     }
 
-    return streams
+    return parsed
   }
 
-  async parseFile(filepath: string): Promise<Collection> {
+  async parseFile(filepath: string): Promise<Collection<Stream>> {
     const content = await this.storage.load(filepath)
     const parsed: parser.Playlist = parser.parse(content)
 
-    const streams = new Collection(parsed.items).map((data: parser.PlaylistItem) => {
-      const stream = new Stream()
-        .fromPlaylistItem(data)
-        .withFeed(this.feedsGroupedByChannelId)
-        .withChannel(this.channelsKeyById)
-        .withLogos(this.logosGroupedByStreamId)
-        .setFilepath(filepath)
+    const streams = new Collection<Stream>()
+    parsed.items.forEach((data: parser.PlaylistItem) => {
+      const stream = Stream.fromPlaylistItem(data)
+      stream.filepath = filepath
 
-      return stream
+      streams.add(stream)
     })
 
     return streams

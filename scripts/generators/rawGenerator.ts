@@ -1,15 +1,16 @@
-import { Collection, Storage, File } from '@freearhey/core'
-import { Stream, Playlist } from '../models'
+import { Storage, File } from '@freearhey/storage-js'
 import { PUBLIC_DIR, EOL } from '../constants'
+import { Stream, Playlist } from '../models'
+import { Collection } from '@freearhey/core'
 import { Generator } from './generator'
 
 type RawGeneratorProps = {
-  streams: Collection
+  streams: Collection<Stream>
   logFile: File
 }
 
 export class RawGenerator implements Generator {
-  streams: Collection
+  streams: Collection<Stream>
   storage: Storage
   logFile: File
 
@@ -24,7 +25,11 @@ export class RawGenerator implements Generator {
 
     for (const filename of files.keys()) {
       const streams = new Collection(files.get(filename)).map((stream: Stream) => {
-        const groupTitle = stream.getCategoryNames().join(';')
+        const groupTitle = stream
+          .getCategories()
+          .map(category => category.name)
+          .sort()
+          .join(';')
         if (groupTitle) stream.groupTitle = groupTitle
 
         return stream

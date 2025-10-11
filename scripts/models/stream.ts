@@ -1,61 +1,21 @@
-import {
-  Feed,
-  Channel,
-  Category,
-  Region,
-  Subdivision,
-  Country,
-  Language,
-  Logo,
-  City
-} from './index'
-import { URL, Collection, Dictionary } from '@freearhey/core'
-import type { StreamData } from '../types/stream'
+import { Collection } from '@freearhey/core'
 import parser from 'iptv-playlist-parser'
+import { normalizeURL } from '../utils'
+import * as sdk from '@iptv-org/sdk'
 import { IssueData } from '../core'
+import { data } from '../api'
 import path from 'node:path'
 
-export class Stream {
-  title: string
-  url: string
-  id?: string
-  channelId?: string
-  channel?: Channel
-  feedId?: string
-  feed?: Feed
-  logos: Collection = new Collection()
+export class Stream extends sdk.Models.Stream {
+  directives: Collection<string>
   filepath?: string
   line?: number
-  label?: string
-  verticalResolution?: number
-  isInterlaced?: boolean
-  referrer?: string
-  userAgent?: string
   groupTitle: string = 'Undefined'
   removed: boolean = false
-  directives: Collection = new Collection()
+  tvgId?: string
+  label: string | null
 
-  constructor(data?: StreamData) {
-    if (!data) return
-
-    const id =
-      data.channelId && data.feedId ? [data.channelId, data.feedId].join('@') : data.channelId
-    const { verticalResolution, isInterlaced } = parseQuality(data.quality)
-
-    this.id = id || undefined
-    this.channelId = data.channelId || undefined
-    this.feedId = data.feedId || undefined
-    this.title = data.title || ''
-    this.url = data.url
-    this.referrer = data.referrer || undefined
-    this.userAgent = data.userAgent || undefined
-    this.verticalResolution = verticalResolution || undefined
-    this.isInterlaced = isInterlaced || undefined
-    this.label = data.label || undefined
-    this.directives = new Collection(data.directives)
-  }
-
-  update(issueData: IssueData): this {
+  updateWithIssue(issueData: IssueData): this {
     const data = {
       label: issueData.getString('label'),
       quality: issueData.getString('quality'),
@@ -66,16 +26,20 @@ export class Stream {
     }
 
     if (data.label !== undefined) this.label = data.label
-    if (data.quality !== undefined) this.setQuality(data.quality)
-    if (data.httpUserAgent !== undefined) this.userAgent = data.httpUserAgent
+    if (data.quality !== undefined) this.quality = data.quality
+    if (data.httpUserAgent !== undefined) this.user_agent = data.httpUserAgent
     if (data.httpReferrer !== undefined) this.referrer = data.httpReferrer
     if (data.newStreamUrl !== undefined) this.url = data.newStreamUrl
-    if (data.directives !== undefined) this.directives = new Collection(data.directives)
+    if (data.directives !== undefined) this.setDirectives(data.directives)
 
     return this
   }
 
-  fromPlaylistItem(data: parser.PlaylistItem): this {
+  static fromPlaylistItem(data: parser.PlaylistItem): Stream {
+    function escapeRegExp(text) {
+      return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
+    }
+
     function parseName(name: string): {
       title: string
       label: string
@@ -84,14 +48,14 @@ export class Stream {
       let title = name
       const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
       title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
-      const [, quality] = title.match(/ \(([0-9]+p)\)$/) || [null, '']
+      const [, quality] = title.match(/ \(([0-9]+[p|i])\)$/) || [null, '']
       title = title.replace(new RegExp(` \\(${quality}\\)$`), '')
 
       return { title, label, quality }
     }
 
-    function parseDirectives(string: string) {
-      const directives = new Collection()
+    function parseDirectives(string: string): Collection<string> {
+      const directives = new Collection<string>()
 
       if (!string) return directives
 
@@ -113,293 +77,329 @@ export class Stream {
 
     const [channelId, feedId] = data.tvg.id.split('@')
     const { title, label, quality } = parseName(data.name)
-    const { verticalResolution, isInterlaced } = parseQuality(quality)
 
-    this.id = data.tvg.id || undefined
-    this.feedId = feedId || undefined
-    this.channelId = channelId || undefined
-    this.line = data.line
-    this.label = label || undefined
-    this.title = title
-    this.verticalResolution = verticalResolution || undefined
-    this.isInterlaced = isInterlaced || undefined
-    this.url = data.url
-    this.referrer = data.http.referrer || undefined
-    this.userAgent = data.http['user-agent'] || undefined
-    this.directives = parseDirectives(data.raw)
+    const stream = new Stream({
+      channel: channelId || null,
+      feed: feedId || null,
+      title: title,
+      quality: quality || null,
+      url: data.url,
+      referrer: data.http.referrer || null,
+      user_agent: data.http['user-agent'] || null
+    })
 
-    return this
+    stream.tvgId = data.tvg.id
+    stream.line = data.line
+    stream.label = label || null
+    stream.directives = parseDirectives(data.raw)
+
+    return stream
   }
 
-  withChannel(channelsKeyById: Dictionary): this {
-    if (!this.channelId) return this
+  isSFW(): boolean {
+    const channel = this.getChannel()
 
-    this.channel = channelsKeyById.get(this.channelId)
+    if (!channel) return true
 
-    return this
+    return !channel.is_nsfw
   }
 
-  withFeed(feedsGroupedByChannelId: Dictionary): this {
-    if (!this.channelId) return this
+  getUniqKey(): string {
+    const filepath = this.getFilepath()
+    const tvgId = this.getTvgId()
 
-    const channelFeeds = feedsGroupedByChannelId.get(this.channelId) || []
-    if (this.feedId) this.feed = channelFeeds.find((feed: Feed) => feed.id === this.feedId)
-    if (!this.feedId && !this.feed) this.feed = channelFeeds.find((feed: Feed) => feed.isMain)
-
-    return this
-  }
-
-  withLogos(logosGroupedByStreamId: Dictionary): this {
-    if (this.id) this.logos = new Collection(logosGroupedByStreamId.get(this.id))
-
-    return this
-  }
-
-  setId(id: string): this {
-    this.id = id
-
-    return this
-  }
-
-  setChannelId(channelId: string): this {
-    this.channelId = channelId
-
-    return this
-  }
-
-  setFeedId(feedId: string | undefined): this {
-    this.feedId = feedId
-
-    return this
-  }
-
-  setQuality(quality: string): this {
-    const { verticalResolution, isInterlaced } = parseQuality(quality)
-
-    this.verticalResolution = verticalResolution || undefined
-    this.isInterlaced = isInterlaced || undefined
-
-    return this
-  }
-
-  getLine(): number {
-    return this.line || -1
-  }
-
-  getFilename(): string {
-    if (!this.filepath) return ''
-
-    return path.basename(this.filepath)
-  }
-
-  setFilepath(filepath: string): this {
-    this.filepath = filepath
-
-    return this
-  }
-
-  updateFilepath(): this {
-    if (!this.channel) return this
-
-    this.filepath = `${this.channel.countryCode.toLowerCase()}.m3u`
-
-    return this
-  }
-
-  getChannelId(): string {
-    return this.channelId || ''
-  }
-
-  getFeedId(): string {
-    if (this.feedId) return this.feedId
-    if (this.feed) return this.feed.id
-    return ''
-  }
-
-  getFilepath(): string {
-    return this.filepath || ''
-  }
-
-  getReferrer(): string {
-    return this.referrer || ''
-  }
-
-  getUserAgent(): string {
-    return this.userAgent || ''
-  }
-
-  getQuality(): string {
-    if (!this.verticalResolution) return ''
-
-    let quality = this.verticalResolution.toString()
-
-    if (this.isInterlaced) quality += 'i'
-    else quality += 'p'
-
-    return quality
-  }
-
-  hasId(): boolean {
-    return !!this.id
-  }
-
-  hasQuality(): boolean {
-    return !!this.verticalResolution
+    return filepath + tvgId + this.url
   }
 
   getVerticalResolution(): number {
-    if (!this.hasQuality()) return 0
+    if (!this.quality) return 0
 
-    return parseInt(this.getQuality().replace(/p|i/, ''))
+    const [, verticalResolutionString] = this.quality.match(/^(\d+)/) || ['', '0']
+
+    return parseInt(verticalResolutionString)
   }
 
-  updateTitle(): this {
-    if (!this.channel) return this
+  getBroadcastCountries(): Collection<sdk.Models.Country> {
+    const countries = new Collection<sdk.Models.Country>()
 
-    this.title = this.channel.name
-    if (this.feed && !this.feed.isMain) {
-      this.title += ` ${this.feed.name}`
+    const feed = this.getFeed()
+    if (!feed) return countries
+
+    feed
+      .getBroadcastArea()
+      .getLocations()
+      .forEach((location: sdk.Models.BroadcastAreaLocation) => {
+        let country: sdk.Models.Country | undefined
+        switch (location.type) {
+          case 'country': {
+            country = data.countriesKeyByCode.get(location.code)
+            break
+          }
+          case 'subdivision': {
+            const subdivision = data.subdivisionsKeyByCode.get(location.code)
+            if (!subdivision) break
+            country = data.countriesKeyByCode.get(subdivision.country)
+            break
+          }
+          case 'city': {
+            const city = data.citiesKeyByCode.get(location.code)
+            if (!city) break
+            country = data.countriesKeyByCode.get(city.country)
+            break
+          }
+        }
+
+        if (country) countries.add(country)
+      })
+
+    return countries.uniqBy((country: sdk.Models.Country) => country.code)
+  }
+
+  getBroadcastSubdivisions(): Collection<sdk.Models.Subdivision> {
+    const subdivisions = new Collection<sdk.Models.Subdivision>()
+
+    const feed = this.getFeed()
+    if (!feed) return subdivisions
+
+    feed
+      .getBroadcastArea()
+      .getLocations()
+      .forEach((location: sdk.Models.BroadcastAreaLocation) => {
+        switch (location.type) {
+          case 'subdivision': {
+            const subdivision = data.subdivisionsKeyByCode.get(location.code)
+            if (!subdivision) break
+            subdivisions.add(subdivision)
+            if (!subdivision.parent) break
+            const parentSubdivision = data.subdivisionsKeyByCode.get(subdivision.parent)
+            if (!parentSubdivision) break
+            subdivisions.add(parentSubdivision)
+            break
+          }
+          case 'city': {
+            const city = data.citiesKeyByCode.get(location.code)
+            if (!city || !city.subdivision) break
+            const subdivision = data.subdivisionsKeyByCode.get(city.subdivision)
+            if (!subdivision) break
+            subdivisions.add(subdivision)
+            if (!subdivision.parent) break
+            const parentSubdivision = data.subdivisionsKeyByCode.get(subdivision.parent)
+            if (!parentSubdivision) break
+            subdivisions.add(parentSubdivision)
+            break
+          }
+        }
+      })
+
+    return subdivisions.uniqBy((subdivision: sdk.Models.Subdivision) => subdivision.code)
+  }
+
+  getBroadcastCities(): Collection<sdk.Models.City> {
+    const cities = new Collection<sdk.Models.City>()
+
+    const feed = this.getFeed()
+    if (!feed) return cities
+
+    feed
+      .getBroadcastArea()
+      .getLocations()
+      .forEach((location: sdk.Models.BroadcastAreaLocation) => {
+        if (location.type !== 'city') return
+
+        const city = data.citiesKeyByCode.get(location.code)
+
+        if (city) cities.add(city)
+      })
+
+    return cities.uniqBy((city: sdk.Models.City) => city.code)
+  }
+
+  getBroadcastRegions(): Collection<sdk.Models.Region> {
+    const regions = new Collection<sdk.Models.Region>()
+
+    const feed = this.getFeed()
+    if (!feed) return regions
+
+    feed
+      .getBroadcastArea()
+      .getLocations()
+      .forEach((location: sdk.Models.BroadcastAreaLocation) => {
+        switch (location.type) {
+          case 'region': {
+            const region = data.regionsKeyByCode.get(location.code)
+            if (!region) break
+            regions.add(region)
+
+            const relatedRegions = data.regions.filter((_region: sdk.Models.Region) =>
+              new Collection<string>(_region.countries)
+                .intersects(new Collection<string>(region.countries))
+                .isNotEmpty()
+            )
+            regions.concat(relatedRegions)
+            break
+          }
+          case 'country': {
+            const country = data.countriesKeyByCode.get(location.code)
+            if (!country) break
+            const countryRegions = data.regions.filter((_region: sdk.Models.Region) =>
+              new Collection<string>(_region.countries).includes(
+                (code: string) => code === country.code
+              )
+            )
+            regions.concat(countryRegions)
+            break
+          }
+          case 'subdivision': {
+            const subdivision = data.subdivisionsKeyByCode.get(location.code)
+            if (!subdivision) break
+            const subdivisionRegions = data.regions.filter((_region: sdk.Models.Region) =>
+              new Collection<string>(_region.countries).includes(
+                (code: string) => code === subdivision.country
+              )
+            )
+            regions.concat(subdivisionRegions)
+            break
+          }
+          case 'city': {
+            const city = data.citiesKeyByCode.get(location.code)
+            if (!city) break
+            const cityRegions = data.regions.filter((_region: sdk.Models.Region) =>
+              new Collection<string>(_region.countries).includes(
+                (code: string) => code === city.country
+              )
+            )
+            regions.concat(cityRegions)
+            break
+          }
+        }
+      })
+
+    return regions.uniqBy((region: sdk.Models.Region) => region.code)
+  }
+
+  isInternational(): boolean {
+    const feed = this.getFeed()
+    if (!feed) return false
+
+    const broadcastAreaCodes = feed.getBroadcastArea().codes
+    if (broadcastAreaCodes.join(';').includes('r/')) return true
+    if (broadcastAreaCodes.filter(code => code.includes('c/')).length > 1) return true
+
+    return false
+  }
+
+  hasCategory(category: sdk.Models.Category): boolean {
+    const channel = this.getChannel()
+
+    if (!channel) return false
+
+    const found = channel.categories.find((id: string) => id === category.id)
+
+    return !!found
+  }
+
+  hasLanguage(language: sdk.Models.Language): boolean {
+    const found = this.getLanguages().find(
+      (_language: sdk.Models.Language) => _language.code === language.code
+    )
+
+    return !!found
+  }
+
+  setDirectives(directives: string[]): this {
+    this.directives = new Collection(directives).filter((directive: string) =>
+      /^(#KODIPROP|#EXTVLCOPT)/.test(directive)
+    )
+
+    return this
+  }
+
+  updateTvgId(): this {
+    if (!this.channel) return this
+    if (this.feed) {
+      this.tvgId = `${this.channel}@${this.feed}`
+    } else {
+      this.tvgId = this.channel
     }
 
     return this
   }
 
-  updateId(): this {
-    if (!this.channel) return this
-    if (this.feed) {
-      this.id = `${this.channel.id}@${this.feed.id}`
-    } else {
-      this.id = this.channel.id
+  updateFilepath(): this {
+    const channel = this.getChannel()
+    if (!channel) return this
+
+    this.filepath = `${channel.country.toLowerCase()}.m3u`
+
+    return this
+  }
+
+  updateTitle(): this {
+    const channel = this.getChannel()
+
+    if (!channel) return this
+
+    const feed = this.getFeed()
+
+    this.title = channel.name
+    if (feed && !feed.is_main) {
+      this.title += ` ${feed.name}`
     }
 
     return this
   }
 
   normalizeURL() {
-    const url = new URL(this.url)
-
-    this.url = url.normalize().toString()
+    this.url = normalizeURL(this.url)
   }
 
-  clone(): Stream {
-    return Object.assign(Object.create(Object.getPrototypeOf(this)), this)
-  }
+  getLogos(): Collection<sdk.Models.Logo> {
+    const logos = super.getLogos()
 
-  hasChannel() {
-    return !!this.channel
-  }
+    if (logos.isEmpty()) return new Collection()
 
-  getBroadcastRegions(): Collection {
-    return this.feed ? this.feed.getBroadcastRegions() : new Collection()
-  }
-
-  getBroadcastCountries(): Collection {
-    return this.feed ? this.feed.getBroadcastCountries() : new Collection()
-  }
-
-  hasBroadcastArea(): boolean {
-    return this.feed ? this.feed.hasBroadcastArea() : false
-  }
-
-  isSFW(): boolean {
-    return this.channel ? this.channel.isSFW() : true
-  }
-
-  hasCategories(): boolean {
-    return this.channel ? this.channel.hasCategories() : false
-  }
-
-  hasCategory(category: Category): boolean {
-    return this.channel ? this.channel.hasCategory(category) : false
-  }
-
-  getCategoryNames(): string[] {
-    return this.getCategories()
-      .map((category: Category) => category.name)
-      .sort()
-      .all()
-  }
-
-  getCategories(): Collection {
-    return this.channel ? this.channel.getCategories() : new Collection()
-  }
-
-  getLanguages(): Collection {
-    return this.feed ? this.feed.getLanguages() : new Collection()
-  }
-
-  hasLanguages() {
-    return this.feed ? this.feed.hasLanguages() : false
-  }
-
-  hasLanguage(language: Language) {
-    return this.feed ? this.feed.hasLanguage(language) : false
-  }
-
-  getBroadcastAreaCodes(): Collection {
-    return this.feed ? this.feed.broadcastAreaCodes : new Collection()
-  }
-
-  isBroadcastInCity(city: City): boolean {
-    return this.feed ? this.feed.isBroadcastInCity(city) : false
-  }
-
-  isBroadcastInSubdivision(subdivision: Subdivision): boolean {
-    return this.feed ? this.feed.isBroadcastInSubdivision(subdivision) : false
-  }
-
-  isBroadcastInCountry(country: Country): boolean {
-    return this.feed ? this.feed.isBroadcastInCountry(country) : false
-  }
-
-  isBroadcastInRegion(region: Region): boolean {
-    return this.feed ? this.feed.isBroadcastInRegion(region) : false
-  }
-
-  isInternational(): boolean {
-    return this.feed ? this.feed.isInternational() : false
-  }
-
-  getLogos(): Collection {
-    function format(logo: Logo): number {
+    function format(logo: sdk.Models.Logo): number {
       const levelByFormat = { SVG: 0, PNG: 3, APNG: 1, WebP: 1, AVIF: 1, JPEG: 2, GIF: 1 }
 
       return logo.format ? levelByFormat[logo.format] : 0
     }
 
-    function size(logo: Logo): number {
+    function size(logo: sdk.Models.Logo): number {
       return Math.abs(512 - logo.width) + Math.abs(512 - logo.height)
     }
 
-    return this.logos.orderBy([format, size], ['desc', 'asc'], false)
+    return logos.sortBy([format, size], ['desc', 'asc'], false)
   }
 
-  getLogo(): Logo | undefined {
-    return this.getLogos().first()
+  getFilepath(): string {
+    return this.filepath || ''
   }
 
-  hasLogo(): boolean {
-    return this.getLogos().notEmpty()
+  getFilename(): string {
+    return path.basename(this.getFilepath())
   }
 
-  getLogoUrl(): string {
-    let logo: Logo | undefined
+  getLine(): number {
+    return this.line || -1
+  }
 
-    if (this.hasLogo()) logo = this.getLogo()
-    else logo = this?.channel?.getLogo()
+  getTvgId(): string {
+    if (this.tvgId) return this.tvgId
+
+    return this.getId()
+  }
+
+  getTvgLogo(): string {
+    const logo = this.getLogos().first()
 
     return logo ? logo.url : ''
   }
 
-  getTitle(): string {
-    return this.title || ''
-  }
-
   getFullTitle(): string {
-    let title = `${this.getTitle()}`
+    let title = `${this.title}`
 
-    if (this.getQuality()) {
-      title += ` (${this.getQuality()})`
+    if (this.quality) {
+      title += ` (${this.quality})`
     }
 
     if (this.label) {
@@ -409,39 +409,21 @@ export class Stream {
     return title
   }
 
-  getLabel(): string {
-    return this.label || ''
-  }
+  toString(options: { public?: boolean } = {}) {
+    options = { ...{ public: false }, ...options }
 
-  getId(): string {
-    return this.id || ''
-  }
-
-  toJSON() {
-    return {
-      channel: this.channelId || null,
-      feed: this.feedId || null,
-      title: this.title,
-      url: this.url,
-      referrer: this.referrer || null,
-      user_agent: this.userAgent || null,
-      quality: this.getQuality() || null
-    }
-  }
-
-  toString(options: { public: boolean }) {
-    let output = `#EXTINF:-1 tvg-id="${this.getId()}"`
+    let output = `#EXTINF:-1 tvg-id="${this.getTvgId()}"`
 
     if (options.public) {
-      output += ` tvg-logo="${this.getLogoUrl()}" group-title="${this.groupTitle}"`
+      output += ` tvg-logo="${this.getTvgLogo()}" group-title="${this.groupTitle}"`
     }
 
     if (this.referrer) {
       output += ` http-referrer="${this.referrer}"`
     }
 
-    if (this.userAgent) {
-      output += ` http-user-agent="${this.userAgent}"`
+    if (this.user_agent) {
+      output += ` http-user-agent="${this.user_agent}"`
     }
 
     output += `,${this.getFullTitle()}`
@@ -454,21 +436,26 @@ export class Stream {
 
     return output
   }
-}
 
-function escapeRegExp(text) {
-  return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
-}
+  toObject(): sdk.Types.StreamData {
+    let feedId = this.feed
+    if (!feedId) {
+      const feed = this.getFeed()
+      if (feed) feedId = feed.id
+    }
 
-function parseQuality(quality: string | null): {
-  verticalResolution: number | null
-  isInterlaced: boolean | null
-} {
-  if (!quality) return { verticalResolution: null, isInterlaced: null }
-  const [, verticalResolutionString] = quality.match(/^(\d+)/) || [null, undefined]
-  const isInterlaced = /i$/i.test(quality)
-  let verticalResolution = 0
-  if (verticalResolutionString) verticalResolution = parseInt(verticalResolutionString)
+    return {
+      channel: this.channel,
+      feed: feedId,
+      title: this.title,
+      url: this.url,
+      quality: this.quality,
+      user_agent: this.user_agent,
+      referrer: this.referrer
+    }
+  }
 
-  return { verticalResolution, isInterlaced }
+  clone(): Stream {
+    return Object.assign(Object.create(Object.getPrototypeOf(this)), this)
+  }
 }
