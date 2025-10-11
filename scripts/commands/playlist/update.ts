@@ -1,9 +1,10 @@
-import { DataLoader, DataProcessor, IssueLoader, PlaylistParser } from '../../core'
-import { Logger, Storage, Collection, Dictionary } from '@freearhey/core'
-import type { DataProcessorData } from '../../types/dataProcessor'
-import { Stream, Playlist, Channel, Issue } from '../../models'
-import type { DataLoaderData } from '../../types/dataLoader'
-import { DATA_DIR, STREAMS_DIR } from '../../constants'
+import { IssueLoader, PlaylistParser } from '../../core'
+import { Playlist, Issue, Stream } from '../../models'
+import { loadData, data as apiData } from '../../api'
+import { Logger, Collection } from '@freearhey/core'
+import { Storage } from '@freearhey/storage-js'
+import { STREAMS_DIR } from '../../constants'
+import * as sdk from '@iptv-org/sdk'
 import { isURI } from '../../utils'
 
 const processedIssues = new Collection()
@@ -16,20 +17,12 @@ async function main() {
   const issues = await issueLoader.load()
 
   logger.info('loading data from api...')
-  const processor = new DataProcessor()
-  const dataStorage = new Storage(DATA_DIR)
-  const dataLoader = new DataLoader({ storage: dataStorage })
-  const data: DataLoaderData = await dataLoader.load()
-  const { channelsKeyById, feedsGroupedByChannelId, logosGroupedByStreamId }: DataProcessorData =
-    processor.process(data)
+  await loadData()
 
   logger.info('loading streams...')
   const streamsStorage = new Storage(STREAMS_DIR)
   const parser = new PlaylistParser({
-    storage: streamsStorage,
-    feedsGroupedByChannelId,
-    logosGroupedByStreamId,
-    channelsKeyById
+    storage: streamsStorage
   })
   const files = await streamsStorage.list('**/*.m3u')
   const streams = await parser.parse(files)
@@ -40,23 +33,19 @@ async function main() {
   logger.info('edit stream description...')
   await editStreams({
     streams,
-    issues,
-    channelsKeyById,
-    feedsGroupedByChannelId
+    issues
   })
 
   logger.info('add new streams...')
   await addStreams({
     streams,
-    issues,
-    channelsKeyById,
-    feedsGroupedByChannelId
+    issues
   })
 
   logger.info('saving...')
   const groupedStreams = streams.groupBy((stream: Stream) => stream.getFilepath())
   for (const filepath of groupedStreams.keys()) {
-    let streams = groupedStreams.get(filepath) || []
+    let streams = new Collection(groupedStreams.get(filepath))
     streams = streams.filter((stream: Stream) => stream.removed === false)
 
     const playlist = new Playlist(streams, { public: false })
@@ -69,10 +58,17 @@ async function main() {
 
 main()
 
-async function removeStreams({ streams, issues }: { streams: Collection; issues: Collection }) {
+async function removeStreams({
+  streams,
+  issues
+}: {
+  streams: Collection<Stream>
+  issues: Collection<Issue>
+}) {
   const requests = issues.filter(
     issue => issue.labels.includes('streams:remove') && issue.labels.includes('approved')
   )
+
   requests.forEach((issue: Issue) => {
     const data = issue.data
     if (data.missing('streamUrl')) return
@@ -97,14 +93,10 @@ async function removeStreams({ streams, issues }: { streams: Collection; issues:
 
 async function editStreams({
   streams,
-  issues,
-  channelsKeyById,
-  feedsGroupedByChannelId
+  issues
 }: {
-  streams: Collection
-  issues: Collection
-  channelsKeyById: Dictionary
-  feedsGroupedByChannelId: Dictionary
+  streams: Collection<Stream>
+  issues: Collection<Issue>
 }) {
   const requests = issues.filter(
     issue => issue.labels.includes('streams:edit') && issue.labels.includes('approved')
@@ -123,17 +115,12 @@ async function editStreams({
     const [channelId, feedId] = streamId.split('@')
 
     if (channelId) {
-      stream
-        .setChannelId(channelId)
-        .setFeedId(feedId)
-        .withChannel(channelsKeyById)
-        .withFeed(feedsGroupedByChannelId)
-        .updateId()
-        .updateTitle()
-        .updateFilepath()
+      stream.channel = channelId
+      stream.feed = feedId
+      stream.updateTvgId().updateTitle().updateFilepath()
     }
 
-    stream.update(data)
+    stream.updateWithIssue(data)
 
     processedIssues.add(issue.number)
   })
@@ -141,14 +128,10 @@ async function editStreams({
 
 async function addStreams({
   streams,
-  issues,
-  channelsKeyById,
-  feedsGroupedByChannelId
+  issues
 }: {
-  streams: Collection
-  issues: Collection
-  channelsKeyById: Dictionary
-  feedsGroupedByChannelId: Dictionary
+  streams: Collection<Stream>
+  issues: Collection<Issue>
 }) {
   const requests = issues.filter(
     issue => issue.labels.includes('streams:add') && issue.labels.includes('approved')
@@ -163,30 +146,27 @@ async function addStreams({
     const streamId = data.getString('streamId') || ''
     const [channelId, feedId] = streamId.split('@')
 
-    const channel: Channel = channelsKeyById.get(channelId)
+    const channel: sdk.Models.Channel | undefined = apiData.channelsKeyById.get(channelId)
     if (!channel) return
 
-    const label = data.getString('label') || null
+    const label = data.getString('label') || ''
     const quality = data.getString('quality') || null
     const httpUserAgent = data.getString('httpUserAgent') || null
     const httpReferrer = data.getString('httpReferrer') || null
     const directives = data.getArray('directives') || []
 
     const stream = new Stream({
-      channelId,
-      feedId,
+      channel: channelId,
+      feed: feedId,
       title: channel.name,
       url: streamUrl,
-      userAgent: httpUserAgent,
+      user_agent: httpUserAgent,
       referrer: httpReferrer,
-      directives,
-      quality,
-      label
+      quality
     })
-      .withChannel(channelsKeyById)
-      .withFeed(feedsGroupedByChannelId)
-      .updateTitle()
-      .updateFilepath()
+
+    stream.label = label
+    stream.setDirectives(directives).updateTitle().updateFilepath()
 
     streams.add(stream)
     processedIssues.add(issue.number)

@@ -1,17 +1,19 @@
-import { City, Stream, Playlist } from '../models'
-import { Collection, Storage, File } from '@freearhey/core'
+import { Storage, File } from '@freearhey/storage-js'
 import { PUBLIC_DIR, EOL } from '../constants'
+import { Stream, Playlist } from '../models'
+import { Collection } from '@freearhey/core'
 import { Generator } from './generator'
+import * as sdk from '@iptv-org/sdk'
 
 type CitiesGeneratorProps = {
-  streams: Collection
-  cities: Collection
+  streams: Collection<Stream>
+  cities: Collection<sdk.Models.City>
   logFile: File
 }
 
 export class CitiesGenerator implements Generator {
-  streams: Collection
-  cities: Collection
+  streams: Collection<Stream>
+  cities: Collection<sdk.Models.City>
   storage: Storage
   logFile: File
 
@@ -24,20 +26,29 @@ export class CitiesGenerator implements Generator {
 
   async generate(): Promise<void> {
     const streams = this.streams
-      .orderBy((stream: Stream) => stream.getTitle())
+      .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
 
-    this.cities.forEach(async (city: City) => {
-      const cityStreams = streams.filter((stream: Stream) => stream.isBroadcastInCity(city))
+    const streamsGroupedByCityCode = {}
+    streams.forEach((stream: Stream) => {
+      stream.getBroadcastCities().forEach((city: sdk.Models.City) => {
+        if (streamsGroupedByCityCode[city.code]) {
+          streamsGroupedByCityCode[city.code].add(stream)
+        } else {
+          streamsGroupedByCityCode[city.code] = new Collection<Stream>([stream])
+        }
+      })
+    })
 
-      if (cityStreams.isEmpty()) return
+    for (const cityCode in streamsGroupedByCityCode) {
+      const cityStreams = streamsGroupedByCityCode[cityCode]
 
       const playlist = new Playlist(cityStreams, { public: true })
-      const filepath = `cities/${city.code.toLowerCase()}.m3u`
+      const filepath = `cities/${cityCode.toLowerCase()}.m3u`
       await this.storage.save(filepath, playlist.toString())
       this.logFile.append(
         JSON.stringify({ type: 'city', filepath, count: playlist.streams.count() }) + EOL
       )
-    })
+    }
   }
 }

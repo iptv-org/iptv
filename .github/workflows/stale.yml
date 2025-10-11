@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '0 0 * * *'
 permissions:
+  actions: write
   issues: write
 jobs:
   stale:
