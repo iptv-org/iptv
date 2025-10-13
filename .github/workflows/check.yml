@@ -6,6 +6,8 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
+permissions:
+  packages: read
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -30,7 +32,7 @@ jobs:
       - name: Setup .npmrc for GitHub Packages
         if: steps.files.outputs.any_changed == 'true'
         run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_AUTH_TOKEN }}" >> .npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
           echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
           echo "always-auth=true" >> .npmrc
       - name: Install dependencies
