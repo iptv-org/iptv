@@ -140,8 +140,10 @@ https://soportedvb.click:3620/live/deultimominutomedialive.m3u8
 https://vdopanel.jlahozconsulting.com:3869/hybrid/play.m3u8
 #EXTINF:-1 tvg-id="DeltaTVCanal50.do@SD",Delta TV Canal 50
 https://rdn.essastream.com:3949/live/deltatv50live.m3u8
-#EXTINF:-1 tvg-id="Digital15.do@SD",Digital 15 (480p)
-http://181.188.216.5:18000/play/a0aw/index.m3u8
+#EXTINF:-1 tvg-id="Digital15.do@SD" http-referrer="https://telemicro.com.do/players/5tv/",Digital 15 (1080p)
+#EXTVLCOPT:http-referrer=https://telemicro.com.do/players/5tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36
+https://live4.telemicro.com.do/live/digital15cast_1080p/playlist.m3u8
 #EXTINF:-1 tvg-id="Digital809TV.do@SD",Digital809 TV (720p)
 https://inliveserver.com:1936/digital809tv/digital809tv/playlist.m3u8
 #EXTINF:-1 tvg-id="DigitalVision63.do@SD",Digital Vision 63 (720p) [Geo-blocked]
