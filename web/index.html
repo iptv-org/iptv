@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IPTV WebGPU Player</title>
+  <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>IPTV WebGPU Player</h1>
+      <div id="webgpu-status"></div>
+    </header>
+    
+    <main>
+      <aside id="stream-selector">
+        <h2>Stream Selector</h2>
+        <div id="country-filter">
+          <label for="country-select">Country:</label>
+          <select id="country-select">
+            <option value="">Loading...</option>
+          </select>
+        </div>
+        <div id="stream-search">
+          <input type="text" id="search-input" placeholder="Search streams...">
+        </div>
+        <ul id="stream-list"></ul>
+      </aside>
+      
+      <section id="player-section">
+        <div id="canvas-container">
+          <canvas id="webgpu-canvas"></canvas>
+          <video id="video-source" crossorigin="anonymous" style="display:none;"></video>
+        </div>
+        <div id="controls">
+          <button id="play-btn" disabled>Play</button>
+          <button id="pause-btn" disabled>Pause</button>
+          <div id="shader-controls">
+            <label for="brightness">Brightness:</label>
+            <input type="range" id="brightness" min="0.5" max="2" step="0.1" value="1">
+            <label for="contrast">Contrast:</label>
+            <input type="range" id="contrast" min="0.5" max="2" step="0.1" value="1">
+            <label for="saturation">Saturation:</label>
+            <input type="range" id="saturation" min="0" max="2" step="0.1" value="1">
+          </div>
+        </div>
+        <div id="now-playing">
+          <span id="current-stream">No stream selected</span>
+        </div>
+      </section>
+    </main>
+  </div>
+  
+  <script type="module" src="./src/main.ts"></script>
+</body>
+</html>
