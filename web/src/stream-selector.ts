@@ -1,4 +1,5 @@
 import { Stream, CountryFile, getCountryList, fetchM3U } from './m3u-parser'
+import { StreamSelectorRenderer } from './stream-selector-renderer'
 
 /**
  * Stream selector component for browsing and selecting IPTV streams
@@ -6,7 +7,10 @@ import { Stream, CountryFile, getCountryList, fetchM3U } from './m3u-parser'
 export class StreamSelector {
   private countrySelect: HTMLSelectElement
   private searchInput: HTMLInputElement
-  private streamList: HTMLUListElement
+  private streamList: HTMLElement
+  private renderer: StreamSelectorRenderer | null = null
+  private canvas: HTMLCanvasElement | null = null
+
   private countries: CountryFile[]
   private streams: Stream[] = []
   private filteredStreams: Stream[] = []
@@ -27,7 +31,7 @@ export class StreamSelector {
     
     this.countrySelect = countrySelect as HTMLSelectElement
     this.searchInput = searchInput as HTMLInputElement
-    this.streamList = streamList as HTMLUListElement
+    this.streamList = streamList as HTMLElement
     
     this.init()
   }
@@ -35,9 +39,59 @@ export class StreamSelector {
   /**
    * Initialize the stream selector
    */
-  private init(): void {
+  private async init(): Promise<void> {
     this.populateCountrySelect()
     this.setupEventListeners()
+    await this.setupRenderer()
+  }
+
+  private async setupRenderer(): Promise<void> {
+    // Replace UL with Canvas container
+    this.streamList.innerHTML = ''
+    this.streamList.style.position = 'relative'
+
+    // Create canvas
+    this.canvas = document.createElement('canvas')
+    this.canvas.style.width = '100%'
+    this.canvas.style.height = '100%'
+    this.canvas.style.display = 'block'
+    this.streamList.appendChild(this.canvas)
+
+    // Create status overlay
+    const statusOverlay = document.createElement('div')
+    statusOverlay.id = 'status-overlay'
+    statusOverlay.style.position = 'absolute'
+    statusOverlay.style.top = '0'
+    statusOverlay.style.left = '0'
+    statusOverlay.style.width = '100%'
+    statusOverlay.style.height = '100%'
+    statusOverlay.style.pointerEvents = 'none'
+    statusOverlay.style.display = 'flex'
+    statusOverlay.style.justifyContent = 'center'
+    statusOverlay.style.alignItems = 'center'
+    statusOverlay.style.color = 'white'
+    statusOverlay.style.fontSize = '1.2em'
+    this.streamList.appendChild(statusOverlay)
+
+    // Create renderer
+    try {
+      this.renderer = new StreamSelectorRenderer(this.canvas)
+      await this.renderer.init()
+
+      // Handle clicks on canvas
+      this.canvas.addEventListener('click', (e) => {
+        const rect = this.canvas!.getBoundingClientRect()
+        const y = e.clientY - rect.top
+
+        const stream = this.renderer!.getStreamAt(y)
+        if (stream) {
+          this.onStreamSelect?.(stream)
+        }
+      })
+    } catch (e) {
+      console.error('WebGPU Stream Selector init failed', e)
+      this.streamList.textContent = 'WebGPU not supported or failed to init.'
+    }
   }
 
   /**
@@ -65,24 +119,32 @@ export class StreamSelector {
   /**
    * Handle country selection change
    */
+  private updateStatus(message: string): void {
+    const overlay = document.getElementById('status-overlay')
+    if (overlay) {
+      overlay.textContent = message
+    }
+  }
+
   private async onCountryChange(): Promise<void> {
     const filename = this.countrySelect.value
     if (!filename) {
       this.streams = []
       this.filteredStreams = []
-      this.renderStreamList()
+      this.renderer?.setStreams([])
+      this.updateStatus('Select a country to view streams')
       return
     }
 
     try {
-      this.streamList.innerHTML = '<li class="loading">Loading streams...</li>'
+      this.updateStatus('Loading streams...')
       const url = `${this.baseUrl}${filename}`
       this.streams = await fetchM3U(url)
       this.filteredStreams = this.streams
       this.applySearch()
     } catch (error) {
       console.error('Failed to load streams:', error)
-      this.streamList.innerHTML = '<li class="error">Failed to load streams. Please try again.</li>'
+      this.updateStatus('Failed to load streams. Please try again.')
     }
   }
 
@@ -108,71 +170,15 @@ export class StreamSelector {
       )
     }
     
-    this.renderStreamList()
-  }
-
-  /**
-   * Render the stream list
-   */
-  private renderStreamList(): void {
-    this.streamList.innerHTML = ''
-    
     if (this.filteredStreams.length === 0) {
-      const li = document.createElement('li')
-      li.className = 'empty'
-      li.textContent = this.streams.length === 0 
-        ? 'No streams loaded' 
-        : 'No streams match your search'
-      this.streamList.appendChild(li)
-      return
+      this.updateStatus(this.streams.length === 0 ? 'No streams loaded' : 'No streams match your search')
+    } else {
+      this.updateStatus('')
     }
 
-    // Limit to first 100 streams for performance
+    // Limit to 100 items to fit in texture atlas
     const displayStreams = this.filteredStreams.slice(0, 100)
-    
-    for (const stream of displayStreams) {
-      const li = document.createElement('li')
-      li.dataset.streamId = stream.id
-      
-      const nameDiv = document.createElement('div')
-      nameDiv.className = 'stream-name'
-      nameDiv.textContent = stream.name
-      
-      const qualityDiv = document.createElement('div')
-      qualityDiv.className = 'stream-quality'
-      qualityDiv.textContent = stream.quality || 'Unknown quality'
-      
-      li.appendChild(nameDiv)
-      li.appendChild(qualityDiv)
-      
-      li.addEventListener('click', () => this.selectStream(stream, li))
-      
-      this.streamList.appendChild(li)
-    }
-    
-    if (this.filteredStreams.length > 100) {
-      const li = document.createElement('li')
-      li.className = 'more-info'
-      li.textContent = `Showing 100 of ${this.filteredStreams.length} streams. Use search to filter.`
-      this.streamList.appendChild(li)
-    }
-  }
-
-  /**
-   * Select a stream
-   */
-  private selectStream(stream: Stream, element: HTMLLIElement): void {
-    // Remove active class from all items
-    const activeItems = this.streamList.querySelectorAll('li.active')
-    activeItems.forEach(item => item.classList.remove('active'))
-    
-    // Add active class to selected item
-    element.classList.add('active')
-    
-    // Notify callback
-    if (this.onStreamSelect) {
-      this.onStreamSelect(stream)
-    }
+    this.renderer?.setStreams(displayStreams)
   }
 
   /**
