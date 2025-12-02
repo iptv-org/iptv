@@ -141,7 +141,7 @@ export class VideoPlayer {
           enableWorker: true
         })
         
-        this.hls.on(Hls.Events.ERROR, (_event, data) => {
+        this.hls.on(Hls.Events.ERROR, (_event: any, data: any) => {
           console.error('HLS error:', data)
           if (data.fatal) {
             this.currentStreamDisplay.textContent = `Error: ${data.details}`

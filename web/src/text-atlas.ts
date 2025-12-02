@@ -5,6 +5,7 @@ export class TextAtlas {
   private canvas: OffscreenCanvas
   private context: OffscreenCanvasRenderingContext2D
   public texture: GPUTexture | null = null
+  public flagTexture: GPUTexture | null = null
   public readonly width = 2048
   public readonly height = 4096
   public readonly itemHeight = 40
@@ -12,6 +13,7 @@ export class TextAtlas {
 
   // Map of text string to its index in the atlas (row index)
   private textMap = new Map<string, number>()
+  private flagMap = new Map<string, number>()
   private nextIndex = 0
 
   constructor() {
@@ -25,6 +27,38 @@ export class TextAtlas {
     this.context.fillStyle = 'white'
 
     this.maxItems = Math.floor(this.height / this.itemHeight)
+  }
+
+  /**
+   * Load flag sprite sheet
+   */
+  async loadFlags(device: GPUDevice, url: string = '/flags.png'): Promise<void> {
+    const response = await fetch(url)
+    const blob = await response.blob()
+    const imageBitmap = await createImageBitmap(blob)
+
+    this.flagTexture = device.createTexture({
+      size: [imageBitmap.width, imageBitmap.height, 1],
+      format: 'rgba8unorm',
+      usage: GPUTextureUsage.TEXTURE_BINDING | GPUTextureUsage.COPY_DST | GPUTextureUsage.RENDER_ATTACHMENT,
+    })
+
+    device.queue.copyExternalImageToTexture(
+      { source: imageBitmap },
+      { texture: this.flagTexture },
+      [imageBitmap.width, imageBitmap.height]
+    )
+
+    // Simplified: assuming a known layout for the flag sprite
+    const codes = ['us', 'gb', 'de', 'fr', 'es', 'it', 'br', 'mx', 'ca', 'au', 'jp', 'kr', 'in', 'ru', 'cn']
+    codes.forEach((code, i) => this.flagMap.set(code, i))
+  }
+
+  /**
+   * Get flag index for country code
+   */
+  getFlagIndex(countryCode?: string): number {
+    return this.flagMap.get(countryCode || '') ?? -1
   }
 
   /**
