@@ -33,25 +33,47 @@ export class TextAtlas {
    * Load flag sprite sheet
    */
   async loadFlags(device: GPUDevice, url: string = '/flags.png'): Promise<void> {
-    const response = await fetch(url)
-    const blob = await response.blob()
-    const imageBitmap = await createImageBitmap(blob)
+    try {
+      const response = await fetch(url)
+      if (!response.ok) {
+        throw new Error('Failed to load flags image')
+      }
+      const blob = await response.blob()
+      const imageBitmap = await createImageBitmap(blob)
 
-    this.flagTexture = device.createTexture({
-      size: [imageBitmap.width, imageBitmap.height, 1],
-      format: 'rgba8unorm',
-      usage: GPUTextureUsage.TEXTURE_BINDING | GPUTextureUsage.COPY_DST | GPUTextureUsage.RENDER_ATTACHMENT,
-    })
+      this.flagTexture = device.createTexture({
+        size: [imageBitmap.width, imageBitmap.height, 1],
+        format: 'rgba8unorm',
+        usage: GPUTextureUsage.TEXTURE_BINDING | GPUTextureUsage.COPY_DST | GPUTextureUsage.RENDER_ATTACHMENT,
+      })
 
-    device.queue.copyExternalImageToTexture(
-      { source: imageBitmap },
-      { texture: this.flagTexture },
-      [imageBitmap.width, imageBitmap.height]
-    )
+      device.queue.copyExternalImageToTexture(
+        { source: imageBitmap },
+        { texture: this.flagTexture },
+        [imageBitmap.width, imageBitmap.height]
+      )
 
-    // Simplified: assuming a known layout for the flag sprite
-    const codes = ['us', 'gb', 'de', 'fr', 'es', 'it', 'br', 'mx', 'ca', 'au', 'jp', 'kr', 'in', 'ru', 'cn']
-    codes.forEach((code, i) => this.flagMap.set(code, i))
+      // Simplified: assuming a known layout for the flag sprite
+      const codes = ['us', 'gb', 'de', 'fr', 'es', 'it', 'br', 'mx', 'ca', 'au', 'jp', 'kr', 'in', 'ru', 'cn']
+      codes.forEach((code, i) => this.flagMap.set(code, i))
+    } catch (e) {
+      console.warn('Failed to load flags atlas, using fallback', e)
+      
+      // Create a 1x1 white texture as fallback
+      this.flagTexture = device.createTexture({
+        size: [1, 1, 1],
+        format: 'rgba8unorm',
+        usage: GPUTextureUsage.TEXTURE_BINDING | GPUTextureUsage.COPY_DST | GPUTextureUsage.RENDER_ATTACHMENT,
+      })
+      
+      const whitePixel = new Uint8Array([255, 255, 255, 255])
+      device.queue.writeTexture(
+        { texture: this.flagTexture },
+        whitePixel,
+        { bytesPerRow: 4, rowsPerImage: 1 },
+        { width: 1, height: 1 }
+      )
+    }
   }
 
   /**

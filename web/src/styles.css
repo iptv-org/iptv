@@ -146,12 +146,28 @@ main {
 #canvas-container {
   flex: 1;
   background: #000;
-  border-radius: 12px;
+  border-radius: 20px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 400px;
+  border: 10px solid #2d2d2d;
+  box-shadow: 
+    inset 0 0 20px rgba(0,0,0,0.8),
+    0 0 0 2px #4a4a4a,
+    0 10px 20px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+#canvas-container::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  width: 40px;
+  height: 4px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 2px;
 }
 
 #webgpu-canvas {
