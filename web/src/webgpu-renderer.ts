@@ -18,9 +18,12 @@ export class WebGPURenderer {
   private computeBindGroup: GPUBindGroup | null = null
   private videoTexture: GPUTexture | null = null
   private processedTexture: GPUTexture | null = null
+  private videoTextureView: GPUTextureView | null = null
+  private processedTextureView: GPUTextureView | null = null
   private canvas: HTMLCanvasElement
   private video: HTMLVideoElement | null = null
   private animationId: number | null = null
+  private bindGroupsDirty: boolean = true
   private shaderParams: ShaderParams = {
     brightness: 1.0,
     contrast: 1.0,
@@ -234,7 +237,6 @@ export class WebGPURenderer {
             edgeColor = adjusted + edge;
           }
           
-          textureStorageBarrier();
           textureStore(outputTexture, vec2i(global_id.xy), 
                        vec4f(clamp(edgeColor, vec3f(0.0), vec3f(1.0)), color.a));
         }
@@ -347,8 +349,53 @@ export class WebGPURenderer {
                GPUTextureUsage.STORAGE_BINDING
       })
 
+      // Create texture views once when textures are created
+      this.videoTextureView = this.videoTexture.createView()
+      this.processedTextureView = this.processedTexture.createView()
+
+      // Mark bind groups as dirty so they get recreated
+      this.bindGroupsDirty = true
+
       this.resizeCanvas()
     }
+  }
+
+  /**
+   * Create or update bind groups when textures change
+   */
+  private updateBindGroups(): void {
+    if (!this.bindGroupsDirty) return
+    if (!this.device || !this.videoTextureView || !this.processedTextureView || 
+        !this.uniformBuffer || !this.sampler) return
+
+    // Create compute bind group
+    if (this.computePipeline) {
+      this.computeBindGroup = this.device.createBindGroup({
+        label: 'Compute bind group',
+        layout: this.computePipeline.getBindGroupLayout(0),
+        entries: [
+          { binding: 0, resource: this.videoTextureView },
+          { binding: 1, resource: this.processedTextureView },
+          { binding: 2, resource: { buffer: this.uniformBuffer } }
+        ]
+      })
+    }
+
+    // Create render bind group
+    if (this.pipeline) {
+      const textureViewToRender = this.computePipeline ? this.processedTextureView : this.videoTextureView
+      this.bindGroup = this.device.createBindGroup({
+        label: 'Render bind group',
+        layout: this.pipeline.getBindGroupLayout(0),
+        entries: [
+          { binding: 0, resource: this.sampler },
+          { binding: 1, resource: textureViewToRender },
+          { binding: 2, resource: { buffer: this.uniformBuffer } }
+        ]
+      })
+    }
+
+    this.bindGroupsDirty = false
   }
 
   /**
@@ -363,6 +410,10 @@ export class WebGPURenderer {
     this.createVideoTexture()
     if (!this.videoTexture || !this.processedTexture) return
 
+    // Update bind groups if textures changed
+    this.updateBindGroups()
+    if (!this.bindGroup) return
+
     // Copy video frame to texture
     this.device.queue.copyExternalImageToTexture(
       { source: this.video, flipY: false },
@@ -371,17 +422,7 @@ export class WebGPURenderer {
     )
 
     // Run compute shader if pipeline is available
-    if (this.computePipeline) {
-      this.computeBindGroup = this.device.createBindGroup({
-        label: 'Compute bind group',
-        layout: this.computePipeline.getBindGroupLayout(0),
-        entries: [
-          { binding: 0, resource: this.videoTexture.createView() },
-          { binding: 1, resource: this.processedTexture.createView() },
-          { binding: 2, resource: { buffer: this.uniformBuffer } }
-        ]
-      })
-
+    if (this.computePipeline && this.computeBindGroup) {
       const commandEncoder = this.device.createCommandEncoder()
       const computePass = commandEncoder.beginComputePass()
       computePass.setPipeline(this.computePipeline)
@@ -393,18 +434,6 @@ export class WebGPURenderer {
       computePass.end()
       this.device.queue.submit([commandEncoder.finish()])
     }
-
-    // Create bind group for rendering
-    const textureToRender = this.computePipeline ? this.processedTexture : this.videoTexture
-    this.bindGroup = this.device.createBindGroup({
-      label: 'Render bind group',
-      layout: this.pipeline.getBindGroupLayout(0),
-      entries: [
-        { binding: 0, resource: this.sampler },
-        { binding: 1, resource: textureToRender.createView() },
-        { binding: 2, resource: { buffer: this.uniformBuffer } }
-      ]
-    })
 
     // Render
     const commandEncoder = this.device.createCommandEncoder()
