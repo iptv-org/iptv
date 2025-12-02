@@ -1,0 +1,21 @@
+{
+  "name": "iptv-webgpu-player",
+  "version": "1.0.0",
+  "description": "WebGPU-powered IPTV stream player with compute shader processing",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "hls.js": "^1.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@webgpu/types": "^0.1.66",
+    "typescript": "^5.0.0",
+    "vite": "^5.0.0"
+  },
+  "license": "MIT"
+}
