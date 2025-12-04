@@ -3,8 +3,6 @@ on:
   workflow_dispatch:
   # schedule:
   #   - cron: "0 12 * * *"
-permissions:
-  packages: read
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -24,11 +22,6 @@ jobs:
         with:
           node-version: 22
           cache: 'npm'
-      - name: Setup .npmrc for GitHub Packages
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
-          echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
-          echo "always-auth=true" >> .npmrc
       - name: Install dependencies
         run: npm install
       - name: Format internal playlists
@@ -41,7 +34,7 @@ jobs:
         id: files_after
         run: |
           ANY_CHANGED=false
-          ALL_CHANGED_FILES=$(git diff --name-only master -- streams/ | tr '\n' ' ')
+          ALL_CHANGED_FILES=$(git diff --diff-filter=ACMRT --name-only master -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
             ANY_CHANGED=true
           fi
