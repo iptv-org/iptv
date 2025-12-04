@@ -1,5 +1,5 @@
 import { PlaylistParser, StreamTester, CliTable } from '../../core'
-import type { TestResult } from '../../core/streamTester'
+import type { StreamTesterResult } from '../../core/streamTester'
 import { ROOT_DIR, STREAMS_DIR } from '../../constants'
 import { Logger, Collection } from '@freearhey/core'
 import { program, OptionValues } from 'commander'
@@ -92,10 +92,10 @@ async function runTest(stream: Stream) {
   const key = stream.getUniqKey()
   results[key] = chalk.white('LOADING...')
 
-  const result: TestResult = await tester.test(stream)
+  const result: StreamTesterResult = await tester.test(stream)
 
   let status = ''
-  const errorStatusCodes = ['ENOTFOUND', 'HTTP_404_NOT_FOUND']
+  const errorStatusCodes = ['ENOTFOUND', 'HTTP_404_NOT_FOUND', 'HTTP_404_UNKONWN_ERROR']
   if (result.status.ok) status = chalk.green('OK')
   else if (errorStatusCodes.includes(result.status.code)) {
     status = chalk.red(result.status.code)
@@ -144,7 +144,7 @@ function drawTable() {
   }
 }
 
-function onFinish(error: Error) {
+function onFinish(error: Error | null | undefined) {
   clearInterval(interval)
 
   if (error) {

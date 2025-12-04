@@ -25,7 +25,9 @@ export class LanguagesGenerator implements Generator {
 
     const languages = new Collection<sdk.Models.Language>()
     streams.forEach((stream: Stream) => {
-      languages.concat(stream.getLanguages())
+      stream.getLanguages().forEach((language: sdk.Models.Language) => {
+        languages.add(language)
+      })
     })
 
     languages
