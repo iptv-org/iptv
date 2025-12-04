@@ -15,9 +15,6 @@
     "playlist:export": "tsx scripts/commands/playlist/export.ts",
     "readme:update": "tsx scripts/commands/readme/update.ts",
     "report:create": "tsx scripts/commands/report/create.ts",
-    "check": "npm run playlist:lint && npm run playlist:validate",
-    "format": "npm run playlist:format",
-    "update": "npm run playlist:generate && npm run api:generate && npm run readme:update",
     "lint": "npx eslint \"scripts/**/*.{ts,js}\" \"tests/**/*.{ts,js}\"",
     "test": "jest --runInBand",
     "postinstall": "npm run api:load"
