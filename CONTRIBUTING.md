@@ -20,9 +20,10 @@ Regardless of which option you choose, before posting your request please do the
 
 - Make sure the link you want to add works stably. To check this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
 - Make sure the link is not already in the playlist. This can be done by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
+- Make sure the link does not lead to the Xtream Codes server. [Why don't you accept links to Xtream Codes server?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server)
+- Make sure that the link leads directly to the broadcast, without unnecessary redirects.
 - Find the ID of the channel you want on [iptv-org.github.io](https://iptv-org.github.io/). If your desired channel is not on the list you can leave a request to add it [here](https://github.com/iptv-org/database/issues/new/choose).
 - Make sure the channel is not blocklisted. It can also be done through [iptv-org.github.io](https://iptv-org.github.io/).
-- The link does not lead to the Xtream Codes server. [Why don't you accept links to Xtream Codes server?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server)
 - If you know that the broadcast only works in certain countries or it is periodically interrupted, do not forget to indicate this in the request.
 
 A requests without a valid stream ID or working link to the stream will be closed immediately.
@@ -129,30 +130,12 @@ Example:
 https://example.com/playlist.m3u8
 ```
 
-Also, if necessary, you can specify custom [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) and [HTTP Referrer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) through additional attributes:
+Also, if necessary, you can specify custom [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) and [HTTP Referrer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) through `#EXTVLCOPT` directive:
 
 ```xml
-#EXTINF:-1 tvg-id="ExampleTV.us" http-referrer="http://example.com/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64)",Example TV
-http://example.com/stream.m3u8
-```
-
-or use player-specific directives:
-
-_VLC_
-
-```xml
-#EXTINF:-1 tvg-id="ExampleTV.us@VLC",Example TV
+#EXTINF:-1 tvg-id="ExampleTV.us",Example TV
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
-http://example.com/stream.m3u8
-```
-
-_Kodi_
-
-```xml
-#EXTINF:-1 tvg-id="ExampleTV.us@Kodi",Example TV
-#KODIPROP:inputstream=inputstream.adaptive
-#KODIPROP:inputstream.adaptive.stream_headers=Referer=http://example.com/&amp;User-Agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 http://example.com/stream.m3u8
 ```
 
@@ -185,8 +168,6 @@ To run scripts use the `npm run <script-name>` command.
 - `act:format`: allows to test the [format](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
 - `act:update`: allows to test the [update](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
 - `api:load`: downloads the latest channel and stream data from the [iptv-org/api](https://github.com/iptv-org/api).
-- `api:generate`: generates a JSON file with all streams for the [iptv-org/api](https://github.com/iptv-org/api) repository.
-- `api:deploy`: allows to manually upload a JSON file created via `api:generate` to the [iptv-org/api](https://github.com/iptv-org/api) repository. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
 - `playlist:format`: formats internal playlists. The process includes [URL normalization](https://en.wikipedia.org/wiki/URI_normalization), duplicate removal, removing invalid id's and sorting links by channel name, quality, and label.
 - `playlist:update`: triggers an update of internal playlists. The process involves processing approved requests from issues.
 - `playlist:generate`: generates all public playlists.
@@ -194,13 +175,9 @@ To run scripts use the `npm run <script-name>` command.
 - `playlist:lint`: сhecks internal playlists for syntax errors.
 - `playlist:test`: tests links in internal playlists.
 - `playlist:edit`: utility for quick streams mapping.
-- `playlist:deploy`: allows to manually publish all generated via `playlist:generate` playlists. To run the script you must provide your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens) with write access to the repository.
+- `playlist:export`: creates a JSON file with all streams for the [iptv-org/api](https://github.com/iptv-org/api) repository.
 - `readme:update`: updates the list of playlists in [README.md](README.md).
 - `report:create`: creates a report on current issues.
-- `check`: (shorthand) sequentially runs the `playlist:lint` and `playlist:validate` scripts.
-- `format`: (shorthand) runs the `playlist:format` script.
-- `update`: (shorthand) sequentially runs the `playlist:generate`, `api:generate` and `readme:update` scripts.
-- `deploy`: (shorthand) sequentially runs the `playlist:deploy` and `api:deploy` scripts.
 - `lint`: сhecks the scripts for syntax errors.
 - `test`: runs a test of all the scripts described above.
 
@@ -212,4 +189,4 @@ Each workflow includes its own set of scripts that can be run either manually or
 
 - `check`: sequentially runs the `api:load`, `playlist:check` and `playlist:validate` scripts when a new pull request appears, and blocks the merge if it detects an error in it.
 - `format`: sequentially runs `api:load`, `playlist:format`, `playlist:lint` and `playlist:validate` scripts.
-- `update`: every day at 0:00 UTC sequentially runs `api:load`, `playlist:update`, `playlist:lint`, `playlist:validate`, `playlist:generate`, `api:generate` and `readme:update` scripts and deploys the output files if successful.
+- `update`: every day at 0:00 UTC sequentially runs `api:load`, `playlist:update`, `playlist:lint`, `playlist:validate`, `playlist:generate`, `playlist:export` and `readme:update` scripts and deploys the output files if successful.

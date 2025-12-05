@@ -6,8 +6,6 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
   cancel-in-progress: true
-permissions:
-  packages: read
 jobs:
   check:
     runs-on: ubuntu-latest
@@ -18,7 +16,7 @@ jobs:
         run: |
           git fetch origin master:master
           ANY_CHANGED=false
-          ALL_CHANGED_FILES=$(git diff --name-only master -- streams/ | tr '\n' ' ')
+          ALL_CHANGED_FILES=$(git diff --diff-filter=ACMRT --name-only master -- streams/ | tr '\n' ' ')
           if [ -n "${ALL_CHANGED_FILES}" ]; then
             ANY_CHANGED=true
           fi
@@ -29,12 +27,6 @@ jobs:
         with:
           node-version: 22
           cache: 'npm'
-      - name: Setup .npmrc for GitHub Packages
-        if: steps.files.outputs.any_changed == 'true'
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
-          echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
-          echo "always-auth=true" >> .npmrc
       - name: Install dependencies
         if: steps.files.outputs.any_changed == 'true'
         run: npm install

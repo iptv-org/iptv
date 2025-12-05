@@ -19,13 +19,6 @@ body:
         What exactly needs to be changed? To delete an existing value without replacement use the `~` symbol.
 
   - type: input
-    id: new_stream_url
-    attributes:
-      label: New Stream URL
-      description: New link to the stream
-      placeholder: 'https://servilive.com:3126/live/tele2000live.m3u8'
-
-  - type: input
     id: stream_id
     attributes:
       label: Stream ID
@@ -71,13 +64,6 @@ body:
     attributes:
       label: HTTP Referrer
       placeholder: 'https://example.com/'
-
-  - type: textarea
-    id: directives
-    attributes:
-      label: Directives
-      description: 'List of directives telling players how to play the stream. Supported `#KODIPROP` and `#EXTVLCOPT`.'
-      placeholder: '#KODIPROP:inputstream=inputstream.adaptive'
 
   - type: textarea
     id: notes

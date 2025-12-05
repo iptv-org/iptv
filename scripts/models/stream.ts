@@ -7,7 +7,6 @@ import { data } from '../api'
 import path from 'node:path'
 
 export class Stream extends sdk.Models.Stream {
-  directives: Collection<string>
   filepath?: string
   line?: number
   groupTitle: string = 'Undefined'
@@ -19,18 +18,14 @@ export class Stream extends sdk.Models.Stream {
     const data = {
       label: issueData.getString('label'),
       quality: issueData.getString('quality'),
-      httpUserAgent: issueData.getString('httpUserAgent'),
-      httpReferrer: issueData.getString('httpReferrer'),
-      newStreamUrl: issueData.getString('newStreamUrl'),
-      directives: issueData.getArray('directives')
+      httpUserAgent: issueData.getString('http_user_agent'),
+      httpReferrer: issueData.getString('http_referrer')
     }
 
     if (data.label !== undefined) this.label = data.label
     if (data.quality !== undefined) this.quality = data.quality
     if (data.httpUserAgent !== undefined) this.user_agent = data.httpUserAgent
     if (data.httpReferrer !== undefined) this.referrer = data.httpReferrer
-    if (data.newStreamUrl !== undefined) this.url = data.newStreamUrl
-    if (data.directives !== undefined) this.setDirectives(data.directives)
 
     return this
   }
@@ -54,24 +49,6 @@ export class Stream extends sdk.Models.Stream {
       return { title, label, quality }
     }
 
-    function parseDirectives(string: string): Collection<string> {
-      const directives = new Collection<string>()
-
-      if (!string) return directives
-
-      const supportedDirectives = ['#EXTVLCOPT', '#KODIPROP']
-      const lines = string.split('\r\n')
-      const regex = new RegExp(`^${supportedDirectives.join('|')}`, 'i')
-
-      lines.forEach((line: string) => {
-        if (regex.test(line)) {
-          directives.add(line.trim())
-        }
-      })
-
-      return directives
-    }
-
     if (!data.name) throw new Error('"name" property is required')
     if (!data.url) throw new Error('"url" property is required')
 
@@ -91,7 +68,6 @@ export class Stream extends sdk.Models.Stream {
     stream.tvgId = data.tvg.id
     stream.line = data.line
     stream.label = label || null
-    stream.directives = parseDirectives(data.raw)
 
     return stream
   }
@@ -235,7 +211,9 @@ export class Stream extends sdk.Models.Stream {
                 .intersects(new Collection<string>(region.countries))
                 .isNotEmpty()
             )
-            regions.concat(relatedRegions)
+            relatedRegions.forEach(region => {
+              regions.add(region)
+            })
             break
           }
           case 'country': {
@@ -246,7 +224,9 @@ export class Stream extends sdk.Models.Stream {
                 (code: string) => code === country.code
               )
             )
-            regions.concat(countryRegions)
+            countryRegions.forEach(region => {
+              regions.add(region)
+            })
             break
           }
           case 'subdivision': {
@@ -257,7 +237,9 @@ export class Stream extends sdk.Models.Stream {
                 (code: string) => code === subdivision.country
               )
             )
-            regions.concat(subdivisionRegions)
+            subdivisionRegions.forEach(region => {
+              regions.add(region)
+            })
             break
           }
           case 'city': {
@@ -268,7 +250,9 @@ export class Stream extends sdk.Models.Stream {
                 (code: string) => code === city.country
               )
             )
-            regions.concat(cityRegions)
+            cityRegions.forEach(region => {
+              regions.add(region)
+            })
             break
           }
         }
@@ -304,14 +288,6 @@ export class Stream extends sdk.Models.Stream {
     )
 
     return !!found
-  }
-
-  setDirectives(directives: string[]): this {
-    this.directives = new Collection(directives).filter((directive: string) =>
-      /^(#KODIPROP|#EXTVLCOPT)/.test(directive)
-    )
-
-    return this
   }
 
   updateTvgId(): this {
@@ -418,19 +394,15 @@ export class Stream extends sdk.Models.Stream {
       output += ` tvg-logo="${this.getTvgLogo()}" group-title="${this.groupTitle}"`
     }
 
+    output += `,${this.getFullTitle()}`
+
     if (this.referrer) {
-      output += ` http-referrer="${this.referrer}"`
+      output += `\r\n#EXTVLCOPT:http-referrer=${this.referrer}`
     }
 
     if (this.user_agent) {
-      output += ` http-user-agent="${this.user_agent}"`
+      output += `\r\n#EXTVLCOPT:http-user-agent=${this.user_agent}`
     }
-
-    output += `,${this.getFullTitle()}`
-
-    this.directives.forEach((prop: string) => {
-      output += `\r\n${prop}`
-    })
 
     output += `\r\n${this.url}`
 
