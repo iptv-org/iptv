@@ -61,13 +61,6 @@ body:
       placeholder: 'https://example.com/'
 
   - type: textarea
-    id: directives
-    attributes:
-      label: Directives
-      description: 'List of directives telling players how to play the stream. Supported `#KODIPROP` and `#EXTVLCOPT`.'
-      placeholder: '#KODIPROP:inputstream=inputstream.adaptive'
-
-  - type: textarea
     id: notes
     attributes:
       label: Notes

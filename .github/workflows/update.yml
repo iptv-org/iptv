@@ -3,8 +3,6 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * *'
-permissions:
-  packages: read
 jobs:
   main:
     runs-on: ubuntu-latest
@@ -24,11 +22,6 @@ jobs:
         with:
           node-version: 22
           cache: 'npm'
-      - name: Setup .npmrc for GitHub Packages
-        run: |
-          echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
-          echo "@iptv-org:registry=https://npm.pkg.github.com/" >> .npmrc
-          echo "always-auth=true" >> .npmrc
       - name: Install dependencies
         run: npm install
       - name: Update internal playlists
@@ -40,8 +33,8 @@ jobs:
           npm run playlist:validate
       - name: Generate public playlists
         run: npm run playlist:generate
-      - name: Generate .api/streams.json
-        run: npm run api:generate
+      - name: Create .api/streams.json
+        run: npm run playlist:export
       - name: Update readme
         run: npm run readme:update
       - name: Setup git

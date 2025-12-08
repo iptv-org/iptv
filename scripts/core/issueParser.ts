@@ -3,20 +3,18 @@ import { IssueData } from './issueData'
 import { Issue } from '../models'
 
 const FIELDS = new Dictionary({
-  'Stream ID': 'streamId',
-  'Channel ID': 'channelId',
-  'Feed ID': 'feedId',
-  'Stream URL': 'streamUrl',
-  'New Stream URL': 'newStreamUrl',
+  'Stream ID': 'stream_id',
+  'Channel ID': 'channel_id',
+  'Feed ID': 'feed_id',
+  'Stream URL': 'stream_url',
   Label: 'label',
   Quality: 'quality',
-  'HTTP User-Agent': 'httpUserAgent',
-  'HTTP User Agent': 'httpUserAgent',
-  'HTTP Referrer': 'httpReferrer',
+  'HTTP User-Agent': 'http_user_agent',
+  'HTTP User Agent': 'http_user_agent',
+  'HTTP Referrer': 'http_referrer',
   'What happened to the stream?': 'reason',
   Reason: 'reason',
-  Notes: 'notes',
-  Directives: 'directives'
+  Notes: 'notes'
 })
 
 export class IssueParser {

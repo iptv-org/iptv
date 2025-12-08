@@ -31,8 +31,8 @@ async function main() {
   const streams = await parser.parse(files)
   logger.info(`found ${streams.count()} streams`)
 
-  let errors = new Collection()
-  let warnings = new Collection()
+  const errors = new Collection()
+  const warnings = new Collection()
   const streamsGroupedByFilepath = streams.groupBy((stream: Stream) => stream.getFilepath())
   for (const filepath of streamsGroupedByFilepath.keys()) {
     const streams = streamsGroupedByFilepath.get(filepath)
@@ -97,8 +97,10 @@ async function main() {
         console.log(` ${chalk.gray(position)}${status}${logItem.message}`)
       })
 
-      errors = errors.concat(log.filter((logItem: LogItem) => logItem.type === 'error'))
-      warnings = warnings.concat(log.filter((logItem: LogItem) => logItem.type === 'warning'))
+      log.forEach((logItem: LogItem) => {
+        if (logItem.type === 'error') errors.add(logItem)
+        else if (logItem.type === 'warning') warnings.add(logItem)
+      })
     }
   }
 

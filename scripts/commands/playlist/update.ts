@@ -71,9 +71,9 @@ async function removeStreams({
 
   requests.forEach((issue: Issue) => {
     const data = issue.data
-    if (data.missing('streamUrl')) return
+    if (data.missing('stream_url')) return
 
-    const streamUrls = data.getString('streamUrl') || ''
+    const streamUrls = data.getString('stream_url') || ''
 
     let changed = false
     streamUrls
@@ -104,14 +104,14 @@ async function editStreams({
   requests.forEach((issue: Issue) => {
     const data = issue.data
 
-    if (data.missing('streamUrl')) return
+    if (data.missing('stream_url')) return
 
     const stream: Stream = streams.first(
-      (_stream: Stream) => _stream.url === data.getString('streamUrl')
+      (_stream: Stream) => _stream.url === data.getString('stream_url')
     )
     if (!stream) return
 
-    const streamId = data.getString('streamId') || ''
+    const streamId = data.getString('stream_id') || ''
     const [channelId, feedId] = streamId.split('@')
 
     if (channelId) {
@@ -138,12 +138,12 @@ async function addStreams({
   )
   requests.forEach((issue: Issue) => {
     const data = issue.data
-    if (data.missing('streamId') || data.missing('streamUrl')) return
-    if (streams.includes((_stream: Stream) => _stream.url === data.getString('streamUrl'))) return
-    const streamUrl = data.getString('streamUrl') || ''
+    if (data.missing('stream_id') || data.missing('stream_url')) return
+    if (streams.includes((_stream: Stream) => _stream.url === data.getString('stream_url'))) return
+    const streamUrl = data.getString('stream_url') || ''
     if (!isURI(streamUrl)) return
 
-    const streamId = data.getString('streamId') || ''
+    const streamId = data.getString('stream_id') || ''
     const [channelId, feedId] = streamId.split('@')
 
     const channel: sdk.Models.Channel | undefined = apiData.channelsKeyById.get(channelId)
@@ -151,9 +151,8 @@ async function addStreams({
 
     const label = data.getString('label') || ''
     const quality = data.getString('quality') || null
-    const httpUserAgent = data.getString('httpUserAgent') || null
-    const httpReferrer = data.getString('httpReferrer') || null
-    const directives = data.getArray('directives') || []
+    const httpUserAgent = data.getString('http_user_agent') || null
+    const httpReferrer = data.getString('http_referrer') || null
 
     const stream = new Stream({
       channel: channelId,
@@ -166,7 +165,7 @@ async function addStreams({
     })
 
     stream.label = label
-    stream.setDirectives(directives).updateTitle().updateFilepath()
+    stream.updateTitle().updateFilepath()
 
     streams.add(stream)
     processedIssues.add(issue.number)
