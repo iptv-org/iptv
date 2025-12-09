@@ -4,13 +4,13 @@ import { ROOT_DIR, STREAMS_DIR } from '../../constants'
 import { Logger, Collection } from '@freearhey/core'
 import { program, OptionValues } from 'commander'
 import { Storage } from '@freearhey/storage-js'
-import { Stream } from '../../models'
+import { Playlist, Stream } from '../../models'
+import { truncate } from '../../utils'
 import { loadData } from '../../api'
 import { eachLimit } from 'async'
 import dns from 'node:dns'
 import chalk from 'chalk'
 import os from 'node:os'
-import { truncate } from '../../utils'
 
 const LIVE_UPDATE_INTERVAL = 5000
 const LIVE_UPDATE_MAX_STREAMS = 100
@@ -21,6 +21,7 @@ const results: { [key: string]: string } = {}
 let interval: string | number | NodeJS.Timeout | undefined
 let streams = new Collection<Stream>()
 let isLiveUpdateEnabled = true
+const errorStatusCodes = ['ENOTFOUND', 'HTTP_404_NOT_FOUND', 'HTTP_404_UNKONWN_ERROR']
 
 program
   .argument('[filepath...]', 'Path to file to test')
@@ -37,12 +38,14 @@ program
     (value: string) => parseInt(value),
     30000
   )
+  .option('--fix', 'Remove all broken links found from files')
   .parse(process.argv)
 
 const options: OptionValues = program.opts()
 
 const logger = new Logger()
 const tester = new StreamTester({ options })
+const rootStorage = new Storage(ROOT_DIR)
 
 async function main() {
   if (await isOffline()) {
@@ -54,7 +57,6 @@ async function main() {
   await loadData()
 
   logger.info('loading streams...')
-  const rootStorage = new Storage(ROOT_DIR)
   const parser = new PlaylistParser({
     storage: rootStorage
   })
@@ -94,8 +96,9 @@ async function runTest(stream: Stream) {
 
   const result: StreamTesterResult = await tester.test(stream)
 
+  stream.statusCode = result.status.code
+
   let status = ''
-  const errorStatusCodes = ['ENOTFOUND', 'HTTP_404_NOT_FOUND', 'HTTP_404_UNKONWN_ERROR']
   if (result.status.ok) status = chalk.green('OK')
   else if (errorStatusCodes.includes(result.status.code)) {
     status = chalk.red(result.status.code)
@@ -144,12 +147,30 @@ function drawTable() {
   }
 }
 
-function onFinish(error: Error | null | undefined) {
+async function removeBrokenLinks() {
+  const streamsGrouped = streams.groupBy((stream: Stream) => stream.filepath)
+  for (const filepath of streamsGrouped.keys()) {
+    let streams: Collection<Stream> = new Collection(streamsGrouped.get(filepath))
+
+    streams = streams.filter((stream: Stream) =>
+      !stream.statusCode ? true : !errorStatusCodes.includes(stream.statusCode)
+    )
+
+    const playlist = new Playlist(streams, { public: false })
+    await rootStorage.save(filepath, playlist.toString())
+  }
+}
+
+async function onFinish(error: Error | null | undefined) {
   clearInterval(interval)
 
   if (error) {
     console.error(error)
     process.exit(1)
+  }
+
+  if (options.fix) {
+    await removeBrokenLinks()
   }
 
   drawTable()

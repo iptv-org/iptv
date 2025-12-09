@@ -90,13 +90,13 @@ streams/fr.m3u
 │  7  │ AlpedHuezTV.fr            │ https://edge.vedge.infomaniak.com/livecast/ik:adhtv/chunklist.m3u8                                   │ HTTP_NOT_FOUND            │
 ```
 
-After that, all you have to do is report any broken streams you find.
+Also, if you add the `--fix` option to the command, the script will automatically remove all broken streams it finds from your local copy of playlists:
 
-### How to replace a broken stream?
+```sh
+npm run playlist:test streams/fr.m3u --- --fix
+```
 
-This can be done either by filling out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams%3Aedit&projects=&template=2_streams_edit.yml&title=Edit%3A+).
-
-Either by directly updating the files in the [/streams](/streams) folder and then creating a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests).
+After that, all you need to do is report the broken streams you found via the [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:remove&projects=&template=3_streams_report.yml&title=Broken%3A+) or create a [pull request](https://github.com/iptv-org/iptv/pulls) with updated playlists.
 
 ### How to remove my channel from playlist?
 
