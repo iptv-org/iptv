@@ -13,6 +13,7 @@ export class Stream extends sdk.Models.Stream {
   removed: boolean = false
   tvgId?: string
   label: string | null
+  statusCode?: string
 
   updateWithIssue(issueData: IssueData): this {
     const data = {
