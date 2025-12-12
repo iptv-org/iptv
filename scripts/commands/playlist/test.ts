@@ -21,7 +21,15 @@ const results: { [key: string]: string } = {}
 let interval: string | number | NodeJS.Timeout | undefined
 let streams = new Collection<Stream>()
 let isLiveUpdateEnabled = true
-const errorStatusCodes = ['ENOTFOUND', 'HTTP_404_NOT_FOUND', 'HTTP_404_UNKONWN_ERROR']
+const errorStatusCodes = [
+  'ENOTFOUND',
+  'ENETUNREACH',
+  'ECONNREFUSED',
+  'HTTP_404_NOT_FOUND',
+  'HTTP_404_UNKONWN_ERROR',
+  'HTTP_403_FORBIDDEN',
+  'HTTP_401_UNAUTHORIZED'
+]
 
 program
   .argument('[filepath...]', 'Path to file to test')
@@ -98,17 +106,12 @@ async function runTest(stream: Stream) {
 
   stream.statusCode = result.status.code
 
-  let status = ''
-  if (result.status.ok) status = chalk.green('OK')
-  else if (errorStatusCodes.includes(result.status.code)) {
-    status = chalk.red(result.status.code)
+  if (stream.statusCode === 'OK') return
+  if (errorStatusCodes.includes(stream.statusCode) && !stream.label) {
     errors++
   } else {
-    status = chalk.yellow(result.status.code)
     warnings++
   }
-
-  results[key] = status
 }
 
 function drawTable() {
@@ -130,7 +133,6 @@ function drawTable() {
     })
     streams.forEach((stream: Stream, index: number) => {
       const key = stream.getUniqKey()
-      const status = results[key] || chalk.gray('PENDING')
       const tvgId = stream.getTvgId()
 
       const row = {
@@ -138,7 +140,7 @@ function drawTable() {
         'tvg-id': truncate(tvgId, 25),
         url: truncate(stream.url, 100),
         label: stream.label,
-        status
+        status: getStatus(stream)
       }
       table.append(row)
     })
@@ -154,9 +156,7 @@ async function removeBrokenLinks() {
   for (const filepath of streamsGrouped.keys()) {
     let streams: Collection<Stream> = new Collection(streamsGrouped.get(filepath))
 
-    streams = streams.filter((stream: Stream) =>
-      !stream.statusCode || stream.label ? true : !errorStatusCodes.includes(stream.statusCode)
-    )
+    streams = streams.filter((stream: Stream) => !isBroken(stream))
 
     const playlist = new Playlist(streams, { public: false })
     await rootStorage.save(filepath, playlist.toString())
@@ -197,4 +197,21 @@ async function isOffline() {
       reject(false)
     })
   }).catch(() => {})
+}
+
+function getStatus(stream: Stream): string {
+  if (!stream.statusCode) return chalk.gray('PENDING')
+  if (stream.statusCode === 'OK') return chalk.green(stream.statusCode)
+  if (errorStatusCodes.includes(stream.statusCode) && !stream.label)
+    return chalk.red(stream.statusCode)
+
+  return chalk.yellow(stream.statusCode)
+}
+
+function isBroken(stream: Stream): boolean {
+  if (!stream.statusCode) return false
+  if (stream.label) return false
+  if (!errorStatusCodes.includes(stream.statusCode)) return false
+
+  return true
 }
