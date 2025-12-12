@@ -124,6 +124,7 @@ function drawTable() {
         { name: '', alignment: 'center', minLen: 3, maxLen: 3 },
         { name: 'tvg-id', alignment: 'left', color: 'green', minLen: 25, maxLen: 25 },
         { name: 'url', alignment: 'left', color: 'green', minLen: 100, maxLen: 100 },
+        { name: 'label', alignment: 'left', color: 'yellow', minLen: 15, maxLen: 15 },
         { name: 'status', alignment: 'left', minLen: 25, maxLen: 25 }
       ]
     })
@@ -136,6 +137,7 @@ function drawTable() {
         '': index,
         'tvg-id': truncate(tvgId, 25),
         url: truncate(stream.url, 100),
+        label: stream.label,
         status
       }
       table.append(row)
@@ -153,7 +155,7 @@ async function removeBrokenLinks() {
     let streams: Collection<Stream> = new Collection(streamsGrouped.get(filepath))
 
     streams = streams.filter((stream: Stream) =>
-      !stream.statusCode ? true : !errorStatusCodes.includes(stream.statusCode)
+      !stream.statusCode || stream.label ? true : !errorStatusCodes.includes(stream.statusCode)
     )
 
     const playlist = new Playlist(streams, { public: false })
