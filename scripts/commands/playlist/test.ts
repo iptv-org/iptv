@@ -17,7 +17,6 @@ const LIVE_UPDATE_MAX_STREAMS = 100
 
 let errors = 0
 let warnings = 0
-const results: { [key: string]: string } = {}
 let interval: string | number | NodeJS.Timeout | undefined
 let streams = new Collection<Stream>()
 let isLiveUpdateEnabled = true
@@ -99,11 +98,8 @@ async function main() {
 main()
 
 async function runTest(stream: Stream) {
-  const key = stream.getUniqKey()
-  results[key] = chalk.white('LOADING...')
-
+  stream.statusCode = 'LOADING...'
   const result: StreamTesterResult = await tester.test(stream)
-
   stream.statusCode = result.status.code
 
   if (stream.statusCode === 'OK') return
@@ -205,6 +201,7 @@ async function isOffline() {
 
 function getColor(stream: Stream): string {
   if (!stream.statusCode) return 'gray'
+  if (stream.statusCode === 'LOADING...') return 'white'
   if (stream.statusCode === 'OK') return 'green'
   if (errorStatusCodes.includes(stream.statusCode) && !stream.label) return 'red'
 
