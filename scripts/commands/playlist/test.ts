@@ -127,20 +127,24 @@ function drawTable() {
         { name: '', alignment: 'center', minLen: 3, maxLen: 3 },
         { name: 'tvg-id', alignment: 'left', color: 'green', minLen: 25, maxLen: 25 },
         { name: 'url', alignment: 'left', color: 'green', minLen: 100, maxLen: 100 },
-        { name: 'label', alignment: 'left', color: 'yellow', minLen: 15, maxLen: 15 },
+        { name: 'label', alignment: 'left', color: 'yellow', minLen: 13, maxLen: 13 },
         { name: 'status', alignment: 'left', minLen: 25, maxLen: 25 }
       ]
     })
+
     streams.forEach((stream: Stream, index: number) => {
-      const key = stream.getUniqKey()
-      const tvgId = stream.getTvgId()
+      const tvgId = truncate(stream.getTvgId(), 25)
+      const url = truncate(stream.url, 100)
+      const color = getColor(stream)
+      const label = stream.label || ''
+      const status = stream.statusCode || 'PENDING'
 
       const row = {
         '': index,
-        'tvg-id': truncate(tvgId, 25),
-        url: truncate(stream.url, 100),
-        label: stream.label,
-        status: getStatus(stream)
+        'tvg-id': chalk[color](tvgId),
+        url: chalk[color](url),
+        label: chalk[color](label),
+        status: chalk[color](status)
       }
       table.append(row)
     })
@@ -199,13 +203,12 @@ async function isOffline() {
   }).catch(() => {})
 }
 
-function getStatus(stream: Stream): string {
-  if (!stream.statusCode) return chalk.gray('PENDING')
-  if (stream.statusCode === 'OK') return chalk.green(stream.statusCode)
-  if (errorStatusCodes.includes(stream.statusCode) && !stream.label)
-    return chalk.red(stream.statusCode)
+function getColor(stream: Stream): string {
+  if (!stream.statusCode) return 'gray'
+  if (stream.statusCode === 'OK') return 'green'
+  if (errorStatusCodes.includes(stream.statusCode) && !stream.label) return 'red'
 
-  return chalk.yellow(stream.statusCode)
+  return 'yellow'
 }
 
 function isBroken(stream: Stream): boolean {
