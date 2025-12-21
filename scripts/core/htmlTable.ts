@@ -18,33 +18,26 @@ export class HTMLTable {
   }
 
   toString() {
-    let output = '<table>\r\n'
+    const columns = this.columns.all()
+    const headers = columns.map(col => `<th align="left">${col.name}</th>`).join('')
+    const rows = this.data.map(item => {
+      const cells = columns.map((col, i) => {
+        const nowrap = col.nowrap ? ' nowrap' : ''
+        const align = col.align ? ` align="${col.align}"` : ''
+        return `<td${align}${nowrap}>${item[i]}</td>`
+      }).join('')
+      return `    <tr>${cells}</tr>`
+    }).join('\r\n')
 
-    output += '  <thead>\r\n    <tr>'
-    this.columns.forEach((column: HTMLTableColumn) => {
-      output += `<th align="left">${column.name}</th>`
-    })
-
-    output += '</tr>\r\n  </thead>\r\n'
-
-    output += '  <tbody>\r\n'
-    this.data.forEach((item: HTMLTableItem) => {
-      output += '    <tr>'
-      let i = 0
-      for (const prop in item) {
-        const column = this.columns.all()[i]
-        const nowrap = column.nowrap ? ' nowrap' : ''
-        const align = column.align ? ` align="${column.align}"` : ''
-        output += `<td${align}${nowrap}>${item[prop]}</td>`
-        i++
-      }
-      output += '</tr>\r\n'
-    })
-
-    output += '  </tbody>\r\n'
-
-    output += '</table>'
-
-    return output
+    return [
+      '<table>',
+      '  <thead>',
+      `    <tr>${headers}</tr>`,
+      '  </thead>',
+      '  <tbody>',
+      rows,
+      '  </tbody>',
+      '</table>'
+    ].join('\r\n')
   }
 }
