@@ -401,8 +401,8 @@ https://stream.berosat.live:19360/jos-tv-stream/jos-tv-stream.m3u8
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60afa1508284e60007163c08/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=8e05edb3-1f2c-11ef-86d8-5d587df108c6&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=a0ee8bde-7a09-45e2-b51d-4cf3012304cd
 #EXTINF:-1 tvg-id="KabackTV.gn@SD" tvg-logo="https://i.imgur.com/oIe98p4.png" group-title="General",Kaback TV (720p)
 https://guineetvdirect.online:3842/live/kabacktvlive.m3u8
-#EXTINF:-1 tvg-id="KajouTV.us@SD" tvg-logo="https://i.imgur.com/2XzghdT.png" group-title="Culture",Kajou TV
-https://dvrfl03.bozztv.com/hdirect/hdirect-kajoutv/index.m3u8
+#EXTINF:-1 tvg-id="KajouTV.us" tvg-logo="https://i.imgur.com/2XzghdT.png" group-title="Culture",Kajou TV (720p) [Not 24/7]
+https://video1.getstreamhosting.com:1936/8055/8055/playlist.m3u8
 #EXTINF:-1 tvg-id="KalacTV.gn@SD" tvg-logo="https://i.imgur.com/FgKJiHZ.png" group-title="General",Kalac TV (1080p)
 https://edge13.vedge.infomaniak.com/livecast/ik:kalactv/chunklist_w280736538.m3u8
 #EXTINF:-1 tvg-id="Kanal9.ch@SD" tvg-logo="https://i.imgur.com/TNciMh2.png" group-title="General",Kanal 9 auf Deutsch (1080p)
@@ -741,8 +741,12 @@ https://edge12.vedge.infomaniak.com/livecast/ik:rtblive1_8/manifest.m3u8
 https://edge20.vedge.infomaniak.com/livecast/ik:rtbguiriko-1/manifest.m3u8
 #EXTINF:-1 tvg-id="RTD4.dj@SD" tvg-logo="https://i.imgur.com/CERPj3J.png" group-title="General",RTD 4
 http://dvrfl05.bozztv.com/gin-rtddjibouti/index.m3u8
-#EXTINF:-1 tvg-id="RTG1.gn@SD" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 1
+#EXTINF:-1 tvg-id="RTG1.gn@SD" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 1 (360p)
 http://69.64.57.208/rtg/playlist.m3u8
+#EXTINF:-1 tvg-id="RTG2.gn@SD" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 2 (720p)
+#EXTVLCOPT:http-referrer=https://player.castr.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://stream.castr.com/6358a30fa50e3ae11b6d0424/live_e05d20809c3611edadb72177341481c3/index.m3u8
 #EXTINF:-1 tvg-id="RTHTV1.us@SD" tvg-logo="https://i.imgur.com/4z0FiEA.png" group-title="General",RTH-TV1 (1080p)
 https://2-fss-2.streamhoster.com/pl_120/amlst:206708-4203440/playlist.m3u8
 #EXTINF:-1 tvg-id="RTHTV2Gospel.us" tvg-logo="https://i.imgur.com/4z0FiEA.png" group-title="Religious",RTH-TV2 Gospel (720p)

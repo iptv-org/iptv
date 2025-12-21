@@ -1538,8 +1538,6 @@ https://streaming-1.eltorotv.com/lb0/eltorotv-streaming-web/index.m3u8
 https://live-01-02-eltrece.vodgc.net/eltrecetv/index.m3u8
 #EXTINF:-1 tvg-id="ELTV.az@SD" tvg-logo="https://i.imgur.com/tTlokZ2.png" group-title="General",EL TV (260p) [Not 24/7]
 http://85.132.53.162:1935/live/eltv/playlist.m3u8
-#EXTINF:-1 tvg-id="ElWatania1.tn@SD" tvg-logo="https://i.imgur.com/gNr2V14.png" group-title="General",El Watania 1
-https://viamotionhsi.netplus.ch/live/eds/tunisienationale/browser-dash/tunisienationale.mpd
 #EXTINF:-1 tvg-id="EliasPinaTV.do@SD" tvg-logo="https://i.imgur.com/VqxSsZD.png" group-title="General",Elias Pina TV (720p) [Not 24/7]
 https://cloud2.streaminglivehd.com:1936/8078/8078/playlist.m3u8
 #EXTINF:-1 tvg-id="EliveTVBrescia.it@SD" tvg-logo="https://i.imgur.com/gZxjLph.png" group-title="General",Elive TV Brescia (720p) [Not 24/7]
@@ -1851,12 +1849,12 @@ https://dash4.antik.sk/live/test_hr_tizen/playlist.m3u8
 #EXTINF:-1 tvg-id="HRT1.hr@SD" tvg-logo="https://i.imgur.com/lDSctzX.png" group-title="General",HRT 1 (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
 https://webtvstream.bhtelecom.ba/hrt1.m3u8
-#EXTINF:-1 tvg-id="HRT1.hr@HD" tvg-logo="https://i.imgur.com/lDSctzX.png" group-title="General",HRT 1 HD (1080p)
+#EXTINF:-1 tvg-id="HRT1.hr@HD" tvg-logo="https://i.imgur.com/lDSctzX.png" group-title="General",HRT 1 HD (1080p) [Geo-blocked]
 https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT1/default/index.mpd
 #EXTINF:-1 tvg-id="HRT2.hr@SD" tvg-logo="https://i.imgur.com/yyePcl1.png" group-title="General",HRT 2 (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36
 https://webtvstream.bhtelecom.ba/hrt2.m3u8
-#EXTINF:-1 tvg-id="HRT2.hr@HD" tvg-logo="https://i.imgur.com/yyePcl1.png" group-title="General",HRT 2 HD (1080p)
+#EXTINF:-1 tvg-id="HRT2.hr@HD" tvg-logo="https://i.imgur.com/yyePcl1.png" group-title="General",HRT 2 HD (1080p) [Geo-blocked]
 https://bpcdnmanprod.nexttv.ht.hr/bpk-tv/HRT2/default/index.mpd
 #EXTINF:-1 tvg-id="HTRTV.nl@SD" tvg-logo="https://i.imgur.com/IlwVHX0.png" group-title="General",HTR TV (720p)
 https://ms7.mx-cd.net/tv/286-3043214/HTR_Media_TV.smil/playlist.m3u8
@@ -2578,6 +2576,8 @@ https://d18fcxaqfnwjhj.cloudfront.net/CDN_Ingest/MCN6_MAIN.smil/Playlist.m3u8
 #EXTVLCOPT:http-referrer=https://mcn24.tv/hls/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0
 https://mcn24.tv/hidden_stream/mcntv.m3u8
+#EXTINF:-1 tvg-id="MCOTHD.th@HD" tvg-logo="https://i.imgur.com/ejPxGmU.png" group-title="General",MCOT HD
+https://mcothd-streaming-edge-cdn.mcot.net/tencentmcot/smil:tencentmcot.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="MCOTHD.th@SD" tvg-logo="https://i.imgur.com/ejPxGmU.png" group-title="General",MCOT HD
 https://lb1-live-mv.v2h-cdn.com/hls/ffbb/gdhk/gdhk.m3u8
 #EXTINF:-1 tvg-id="MDF1.de@SD" tvg-logo="https://i.imgur.com/IFGXK6u.png" group-title="General",MDF.1 (1080p)
@@ -3473,8 +3473,16 @@ https://cdn.amelbasoluciones.co:8081/rtcurabalive/index.m3u8
 https://dvrfl06.bozztv.com/astv-djibouti/index.m3u8
 #EXTINF:-1 tvg-id="RTD4.dj@SD" tvg-logo="https://i.imgur.com/CERPj3J.png" group-title="General",RTD 4
 http://dvrfl05.bozztv.com/gin-rtddjibouti/index.m3u8
-#EXTINF:-1 tvg-id="RTG1.gn@SD" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 1
+#EXTINF:-1 tvg-id="RTG1.gn@HD" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 1 (1080p)
+#EXTVLCOPT:http-referrer=https://player.castr.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://stream.castr.com/6358a30fa50e3ae11b6d0424/live_cbde16509c3611ed91f289dac03ffaaf/index.m3u8
+#EXTINF:-1 tvg-id="RTG1.gn@SD" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 1 (360p)
 http://69.64.57.208/rtg/playlist.m3u8
+#EXTINF:-1 tvg-id="RTG2.gn@SD" tvg-logo="https://i.imgur.com/E1sMcXz.png" group-title="General",RTG 2 (720p)
+#EXTVLCOPT:http-referrer=https://player.castr.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0
+https://stream.castr.com/6358a30fa50e3ae11b6d0424/live_e05d20809c3611edadb72177341481c3/index.m3u8
 #EXTINF:-1 tvg-id="RTHTV1.us@SD" tvg-logo="https://i.imgur.com/4z0FiEA.png" group-title="General",RTH-TV1 (1080p)
 https://2-fss-2.streamhoster.com/pl_120/amlst:206708-4203440/playlist.m3u8
 #EXTINF:-1 tvg-id="RTI1.ci@SD" tvg-logo="https://i.imgur.com/TybQZQS.png" group-title="General",RTI 1 (1080p) [Not 24/7]
