@@ -21,11 +21,16 @@ export class HTMLTable {
     const columns = this.columns.all()
     const headers = columns.map(col => `<th align="left">${col.name}</th>`).join('')
     const rows = this.data.map(item => {
-      const cells = columns.map((col, i) => {
-        const nowrap = col.nowrap ? ' nowrap' : ''
-        const align = col.align ? ` align="${col.align}"` : ''
-        return `<td${align}${nowrap}>${item[i]}</td>`
-      }).join('')
+      let cells = ''
+      let i = 0
+      for (const prop in item) {
+        const column = columns[i]
+        const nowrap = column.nowrap ? ' nowrap' : ''
+        const align = column.align ? ` align="${column.align}"` : ''
+        const value = this.escape(item[prop])
+        cells += `<td${align}${nowrap}>${value}</td>`
+        i++
+      }
       return `    <tr>${cells}</tr>`
     }).join('\r\n')
 
@@ -39,5 +44,14 @@ export class HTMLTable {
       '  </tbody>',
       '</table>'
     ].join('\r\n')
+  }
+
+  escape(str: string): string {
+    return str
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;')
+      .replace(/'/g, '&#039;')
   }
 }
