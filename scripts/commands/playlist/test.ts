@@ -29,7 +29,7 @@ const errorStatusCodes = [
   'HTTP_401_UNAUTHORIZED',
   'HTTP_404_',
   'HTTP_404_NOT_FOUND',
-  'HTTP_404_UNKONWN_ERROR',
+  'HTTP_404_UNKNOWN_ERROR',
   'HTTP_410_GONE'
 ]
 
