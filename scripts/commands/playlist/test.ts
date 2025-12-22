@@ -25,6 +25,7 @@ const errorStatusCodes = [
   'ENOTFOUND',
   'ENETUNREACH',
   'EPROTO',
+  'HTTP_400_BAD_REQUEST',
   'HTTP_401_UNAUTHORIZED',
   'HTTP_404_',
   'HTTP_404_NOT_FOUND',
