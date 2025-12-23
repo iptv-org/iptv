@@ -673,8 +673,9 @@ https://tvsw6-hls.secdn.net/tvsw6-chorigin/play/prod-2859eecc9b514f2bb955290066e
 https://1206618505.rsc.cdn77.org/LS-ATL-59020-1/playlist.m3u8
 #EXTINF:-1 tvg-id="HudaTV.eg@SD" tvg-logo="https://i.imgur.com/1UUjU26.png" group-title="Religious",Huda TV (720p) [Not 24/7]
 https://cdn.bestream.io:19360/elfaro1/elfaro1.m3u8
-#EXTINF:-1 tvg-id="IAmChannel.id@SD" tvg-logo="https://i.imgur.com/Gg6OcGT.png" group-title="Religious",I AM CHANNEL (576p) [Not 24/7]
-http://iamchannel.org:1935/tes/1/playlist.m3u8
+#EXTINF:-1 tvg-id="IAmChannel.id@SD" tvg-logo="https://i.imgur.com/Gg6OcGT.png" group-title="Religious",I Am Channel (576p)
+#EXTVLCOPT:http-referrer=https://iamchannel.org/
+https://61146e7ab7a66.streamlock.net:8089/tes/1/chunklist.m3u8
 #EXTINF:-1 tvg-id="IBCBakthi.uk@SD" tvg-logo="https://i.imgur.com/ZNEz5Wx.png" group-title="Religious",IBC Bakthi (1080p)
 https://ibc.massstream.net/IBC2/index.m3u8
 #EXTINF:-1 tvg-id="IBNTV.tz@SD" tvg-logo="https://i.imgur.com/hkV51ij.png" group-title="Religious",IBN TV (480p)
@@ -1135,6 +1136,9 @@ https://qvmstream.tulix.tv/720p/720p/playlist.m3u8
 https://lenz.splus.ir/PLTV/88888888/224/3221226144/index.m3u8
 #EXTINF:-1 tvg-id="RadioHogar.pa@SD" tvg-logo="https://i.imgur.com/P4A1Zwl.jpg" group-title="Religious",Radio Hogar (720p)
 https://www.streaming507.net:19360/videoradiohogar/videoradiohogar.m3u8
+#EXTINF:-1 tvg-id="RadioKitaTV.id@SD" tvg-logo="https://i.imgur.com/Dz3BzBe.png" group-title="Religious",Radio Kita TV (1080p)
+#EXTVLCOPT:http-referrer=https://radiokita.tv/
+https://streaming.yufid.com/hls/radiokitatv.m3u8
 #EXTINF:-1 tvg-id="RadioSublimeGraciaTV.ar@SD" tvg-logo="https://i.ibb.co/P9jgTz4/c49b986afb751882bcbee57f9c9b20d7-350x210.png" group-title="Religious",Radio Sublime Gracia TV (720p)
 https://5f700d5b2c46f.streamlock.net/sublime/sublime/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioTele4VEH.ht@SD" tvg-logo="https://i.imgur.com/AnOjqaS.png" group-title="Religious",Radio Télé 4VEH (720p)
