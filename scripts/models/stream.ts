@@ -392,7 +392,17 @@ export class Stream extends sdk.Models.Stream {
     let output = `#EXTINF:-1 tvg-id="${this.getTvgId()}"`
 
     if (options.public) {
-      output += ` tvg-logo="${this.getTvgLogo()}" group-title="${this.groupTitle}"`
+      output += ` tvg-logo="${this.getTvgLogo()}"`
+
+      if (this.referrer) {
+        output += ` http-referrer="${this.referrer}"`
+      }
+
+      if (this.user_agent) {
+        output += ` http-user-agent="${this.user_agent}"`
+      }
+
+      output += ` group-title="${this.groupTitle}"`
     }
 
     output += `,${this.getFullTitle()}`
