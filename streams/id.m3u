@@ -83,6 +83,8 @@ https://hgmtv.com:19360/garudatvlivestreaming/garudatvlivestreaming.m3u8
 https://v3.siar.us/humabetangtv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="IAmChannel.id@SD",I AM CHANNEL (576p) [Not 24/7]
 http://iamchannel.org:1935/tes/1/playlist.m3u8
+#EXTINF:-1 tvg-id="iBerkah.id@SD",iBerkah (1080p)
+https://play.accolamedia.id/accola/iberkah.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="",IDTV (720p) [Not 24/7]
 https://b1world.beritasatumedia.com/Beritasatu/B1World_manifest.m3u8
 #EXTINF:-1 tvg-id="IDXChannel.id@SD",IDX Channel (720p) [Geo-blocked]
@@ -94,8 +96,6 @@ https://streaming.radiosalamjambi.com/izzahtv.m3u8
 #EXTINF:-1 tvg-id="JambiTV.id@SD",Jambi TV (480p) [Not 24/7]
 #EXTVLCOPT:http-referrer=https://jambitv.co.id/live-tv/
 https://ams.juraganstreaming.com:5443/JambiTV/streams/livestream.m3u8
-#EXTINF:-1 tvg-id="JawaPosTV.id@SD",Jawa Pos TV (720p) [Not 24/7]
-https://jawapostv.siar.us/jawapostv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="JawaPosTV.id@SD",Jawa Pos TV (720p)
 http://122.248.43.242:1935/JAWAPOSTVSBY/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="JawaPosTV.id@Bali",Jawa Pos TV Bali (576p)
@@ -345,3 +345,9 @@ https://allcutv.rctiplus.id/mnctv2023.m3u8
 #EXTINF:-1 tvg-id="RCTI.id@SD",RCTI
 #EXTVLCOPT:http-referrer=https://www.rctiplus.com/
 https://allcutv.rctiplus.id/rcti2023.m3u8
+#EXTINF:-1 tvg-id="RadioKitaTV.id@SD",Radio Kita TV (1080p)
+#EXTVLCOPT:http-referrer=https://radiokita.tv/
+https://streaming.yufid.com/hls/radiokitatv.m3u8
+#EXTINF:-1 tvg-id="IAmChannel.id@SD",I Am Channel (576p)
+#EXTVLCOPT:http-referrer=https://iamchannel.org/
+https://61146e7ab7a66.streamlock.net:8089/tes/1/chunklist.m3u8
