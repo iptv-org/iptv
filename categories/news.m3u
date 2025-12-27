@@ -708,7 +708,7 @@ https://dash4.antik.sk/live/test_france24_france/playlist.m3u8
 #EXTINF:-1 tvg-id="France24.fr@Arabic" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/512px-France_24_logo_%282013%29.svg.png" group-title="News",France 24 Arabic (1080p)
 https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_5000.m3u8
 #EXTINF:-1 tvg-id="France24.fr@English" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/512px-France_24_logo_%282013%29.svg.png" group-title="News",France 24 English (1080p)
-https://live.france24.com/hls/live/2037218-b/F24_EN_HI_HLS/master_5000.m3u8
+https://amg00106-france24-france24-samsunguk-qvpp8.amagi.tv/playlist/amg00106-france24-france24-samsunguk/playlist.m3u8
 #EXTINF:-1 tvg-id="France24.fr@Spanish" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/France_24_logo_%282013%29.svg/512px-France_24_logo_%282013%29.svg.png" group-title="News",France 24 Español (1080p)
 https://live.france24.com/hls/live/2037220-b/F24_ES_HI_HLS/master_5000.m3u8
 #EXTINF:-1 tvg-id="Franceinfo.fr@SD" tvg-logo="https://i.imgur.com/eITXz6A.png" group-title="News",Franceinfo
@@ -841,10 +841,8 @@ https://indiatodaylive.akamaized.net/hls/live/2014320/indiatoday/indiatodaylive/
 https://pl-indiatvnews.akamaized.net/out/v1/db79179b608641ceaa5a4d0dd0dca8da/index.m3u8
 #EXTINF:-1 tvg-id="IndiaTVAapKiAdalat.in@SD" tvg-logo="https://play-lh.googleusercontent.com/2IlBX3IQHna8g4g-56vwGWb14K38spcviIh3i7uJCJ32ydfhcKZdOsacgijPkPeerEA" group-title="Documentary;News",India TV Aap Ki Adalat (1080p) [Geo-blocked]
 https://amg01550-amg01550c6-samsung-in-4679.playouts.now.amagi.tv/playlist/amg01550-indiatvfast-indiatvakasamsung-samsungin/playlist.m3u8
-#EXTINF:-1 tvg-id="IndiaTVSpeedNews.in@HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Speed_News.png" http-referrer="https://www.indiatvspeednews.com/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" group-title="News",India TV Speed News (1080p)
-#EXTVLCOPT:http-referrer=https://www.indiatvspeednews.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0
-https://poclive-indiatvnews.akamaized.net/hlslive/Admin/px0219297/live/janya/master.m3u8
+#EXTINF:-1 tvg-id="IndiaTVSpeedNews.in@HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Speed_News.png" group-title="News",India TV Speed News (1080p)
+https://cc-lyf4c0hwzg5dd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lyf4c0hwzg5dd/v1/vglive-sk-479089/main.m3u8
 #EXTINF:-1 tvg-id="IndywoodTV.in@SD" tvg-logo="https://i.ibb.co/jT3NCPp/logo-tv.png" group-title="Movies;News",Indywood TV (720p)
 https://43wrzjnpqoxe-hls-live.wmncdn.net/indywood/indywoodtv/index.m3u8
 #EXTINF:-1 tvg-id="iNews.id@SD" tvg-logo="https://i.imgur.com/M2R3lfg.png" http-referrer="https://www.rctiplus.com/" group-title="News",iNews
@@ -1034,8 +1032,9 @@ https://stitcher-ipv4.pluto.tv/v1/stitch/embed/hls/channel/652e922db4b047000825f
 https://5db313b643fd8.streamlock.net/MinformoTV/MinformoTV/playlist.m3u8
 #EXTINF:-1 tvg-id="MirameTV.es@SD" tvg-logo="https://i.imgur.com/LK4pLgT.png" group-title="News",Mírame TV (360p) [Not 24/7]
 https://bit.controlstreams.com:5443/LiveApp/streams/mirametv.m3u8
-#EXTINF:-1 tvg-id="MirrorNow.in@SD" tvg-logo="https://i.imgur.com/N96LwKG.png" group-title="News",Mirror Now (720p)
-https://pubads.g.doubleclick.net/ssai/event/DXkHhH2QSnma-HnE3QJqlA/master.m3u8
+#EXTINF:-1 tvg-id="MirrorNow.in@SD" tvg-logo="https://i.imgur.com/N96LwKG.png" http-referrer="https://www.timesnownews.com/" group-title="News",Mirror Now (720p)
+#EXTVLCOPT:http-referrer=https://www.timesnownews.com/
+https://dai.google.com/linear/hls/event/ClPOullTQky5vGPf7fMZ8g/master.m3u8
 #EXTINF:-1 tvg-id="MiSURtv.mx@SD" tvg-logo="https://i.imgur.com/qStNac7.png" group-title="News",MiSURtv (1080p)
 https://stream8.mexiserver.com:1936/misurtv/misurtv/playlist.m3u8
 #EXTINF:-1 tvg-id="MongolianNewsChannel.mn@SD" tvg-logo="https://i.imgur.com/gMVqbwU.png" group-title="News",MNC (720p)
@@ -1107,6 +1106,8 @@ https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12JH_CENT_A1/
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5fff49cfb5cd4f0007c2b0dc/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a5103-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=c438c5e4-4d4e-4037-8b44-c6782c44b796
 #EXTINF:-1 tvg-id="News12Westchester.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/News_12_logo_2019.png/512px-News_12_logo_2019.png" group-title="News",News12 Westchester [Geo-blocked]
 https://mdc.ott.alticeusa.net/live4.ott.optimum.net/live4-uploads/N12WH_A1/index_new.m3u8?omap=https
+#EXTINF:-1 tvg-id="News18Bangla.in@SD" tvg-logo="https://i.imgur.com/l6Ndjnh.png" group-title="News",News18 Bangla (1080p)
+https://n18syndication.akamaized.net/bpk-tv/News18_Bangla_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-id="News18BiharJharkhand.in@SD" tvg-logo="https://i.imgur.com/FQ3zDZE.png" group-title="News",News18 Bihar Jharkhand (1080p)
 https://n18syndication.akamaized.net/bpk-tv/News18_Bihar_Jharkhand_NW18_MOB/output01/master.m3u8
 #EXTINF:-1 tvg-id="News18Gujarati.in@SD" tvg-logo="https://i.imgur.com/eOE40nk.png" group-title="News",News18 Gujarati (1080p)
