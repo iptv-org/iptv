@@ -21,13 +21,16 @@ let interval: string | number | NodeJS.Timeout | undefined
 let streams = new Collection<Stream>()
 let isLiveUpdateEnabled = true
 const errorStatusCodes = [
+  'ECONNREFUSED',
   'ENOTFOUND',
   'ENETUNREACH',
-  'ECONNREFUSED',
+  'EPROTO',
+  'HTTP_400_BAD_REQUEST',
+  'HTTP_401_UNAUTHORIZED',
+  'HTTP_404_',
   'HTTP_404_NOT_FOUND',
-  'HTTP_404_UNKONWN_ERROR',
-  'HTTP_403_FORBIDDEN',
-  'HTTP_401_UNAUTHORIZED'
+  'HTTP_404_UNKNOWN_ERROR',
+  'HTTP_410_GONE'
 ]
 
 program
