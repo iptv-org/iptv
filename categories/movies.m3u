@@ -13,15 +13,17 @@ http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5c
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f4d86f519358a00072b978e/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c265961-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=71f86833-3dd6-41ac-a9b8-4a4ec8873306
 #EXTINF:-1 tvg-id="312Kino.kg@SD" tvg-logo="https://i.ibb.co/3m9LrLj/k7gIibH.png" group-title="Movies",312 Кино (406p)
 http://176.126.166.43:1935/live/312kino/playlist.m3u8
-#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDFLIX/images/LOGO_HD/LOGO_HD_image.png" group-title="Movies",&flix (1080p)
+#EXTINF:-1 tvg-id="Andflix.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDFLIX/images/LOGO_HD/LOGO_HD_image.png" group-title="Movies",&flix (480p)
+https://edge3-moblive.yuppcdn.net/drm/smil:nflixdrm.smil/index.m3u8
+#EXTINF:-1 tvg-id="Andflix.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDFLIX/images/LOGO_HD/LOGO_HD_image.png" group-title="Movies",&flix HD (1080p)
 http://66.102.120.18:8000/play/a022/index.m3u8
 #EXTINF:-1 tvg-id="Andpictures.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDPICTURES/images/LOGO_HD/LOGO_HD_image.png" group-title="Movies",&pictures (1080p)
 http://66.102.120.18:8000/play/a01t/index.m3u8
 #EXTINF:-1 tvg-id="AndpriveHD.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDPRIVE_HD/images/LOGO_HD/LOGO_HD_image.png" group-title="Movies",&prive HD (1080p)
 http://163.61.227.29:8000/play/a01h/index.m3u8
-#EXTINF:-1 tvg-id="AndTV.in@SD" tvg-logo="https://i.imgur.com/32W50Y6.png" group-title="Movies",&TV (576p)
+#EXTINF:-1 tvg-id="AndTV.in@SD" tvg-logo="https://i.postimg.cc/NjPB5gtG/andtv.png" group-title="Movies",&TV (576p)
 http://103.182.170.32:8888/play/a03v
-#EXTINF:-1 tvg-id="AndTV.in@International" tvg-logo="https://i.imgur.com/32W50Y6.png" group-title="Movies",&TV International (1080p)
+#EXTINF:-1 tvg-id="AndTV.in@International" tvg-logo="https://i.postimg.cc/NjPB5gtG/andtv.png" group-title="Movies",&TV International (1080p)
 https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
 #EXTINF:-1 tvg-id="AndxplorHD.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDXPLOR_HD/images/LOGO_HD/LOGO_HD_image.png" group-title="Movies",&xplor HD (1080p)
 http://66.102.120.18:8000/play/a012/index.m3u8
@@ -75,8 +77,6 @@ https://cdnb4u.wiseplayout.com/B4U_Bhojpuri/master.m3u8
 https://cdnb4u.wiseplayout.com/B4U_Kadak/master.m3u8
 #EXTINF:-1 tvg-id="B4UMovies.in@India" tvg-logo="https://i.imgur.com/M9kMFJl.png" group-title="Movies",B4U Movies
 https://mumt02.tangotv.in/B4UMOVIES/index.m3u8
-#EXTINF:-1 tvg-id="BflixMovies.in@SD" tvg-logo="https://i.imgur.com/5CtiQ45.png" group-title="Movies",Bflix Movies (576p)
-http://163.61.227.29:8000/play/a05s/index.m3u8
 #EXTINF:-1 tvg-id="BhojpuriCinema.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BHOJPURI_CINEMA/images/LOGO_HD/image.png" group-title="Movies",Bhojpuri Cinema (720p)
 https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8
 #EXTINF:-1 tvg-id="BIZCinema.uz@SD" tvg-logo="https://biztv.uz/static/media/biz-cinema.286b83dc.png" group-title="Movies",BIZ Cinema (1080p)
@@ -380,8 +380,6 @@ https://cdn-4.pishow.tv/live/233/master.m3u8
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5cb0cae7a461406ffe3f5213/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a7819-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=8a4a0712-cb24-4d05-b429-1b98c1f73f74
 #EXTINF:-1 tvg-id="ParamountNetwork.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/512px-Paramount_Network.svg.png" group-title="Movies;Series",Paramount Network East
 https://fl1.moveonjoy.com/PARAMOUNT_NETWORK/index.m3u8
-#EXTINF:-1 tvg-id="ParamountNetwork.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/512px-Paramount_Network.svg.png" group-title="Movies;Series",Paramount Network Spain (1080p)
-http://176.65.146.237:8401/play/a09i/index.m3u8
 #EXTINF:-1 tvg-id="ParamountPlusPicks.us@SD" tvg-logo="https://images.pluto.tv/channels/5ff8c708653d080007361b14/featuredImage.jpg" group-title="Movies",Paramount+ Picks
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5ff8c708653d080007361b14/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2a9f20-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=86df5336-6268-4928-9b7d-3af618ca807b
 #EXTINF:-1 tvg-id="PelisyPopcorn.us@SD" tvg-logo="https://i.imgur.com/jP19sGt.png" group-title="Movies",Pelis y Popcorn

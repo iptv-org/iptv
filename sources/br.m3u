@@ -11,8 +11,9 @@ http://45.162.230.234:1935/agrobrasiltv/agrobrasiltv/playlist.m3u8
 https://5b01a3d32b65c.streamlock.net:1936/tvalpha/tvalpha/playlist.m3u8
 #EXTINF:-1 tvg-id="AmazonSat.br@SD" tvg-logo="https://i.imgur.com/7rjCS5i.png" group-title="Undefined",Amazon Sat (1080p)
 https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
-#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" group-title="Classic;Series",AWTV (1080p)
-https://acesso.ecast.site:3070/live/awtvlive.m3u8
+#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" http-referrer="https://awtv.com.br" group-title="Classic;Series",AWTV (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://awtv.com.br
+https://awtv.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="BDCTV.br@SD" tvg-logo="https://i.imgur.com/6ckHV6k.jpeg" group-title="Entertainment",BDC TV (576p)
 https://video01.kshost.com.br/bdctv/bdctv/playlist.m3u8
 #EXTINF:-1 tvg-id="BemTV.br@SD" tvg-logo="https://i.imgur.com/ifGQGJx.png" group-title="General",Bem TV (720p)
@@ -91,6 +92,9 @@ https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8
 https://stmv1.srvif.com/gospelf/gospelf/playlist.m3u8
 #EXTINF:-1 tvg-id="IMPDTV.br@SD" tvg-logo="https://i.imgur.com/23m7LHH.png" group-title="Religious",IMPD TV (720p)
 https://58a4464faef53.streamlock.net/impd/ngrp:impd_all/playlist.m3u8
+#EXTINF:-1 tvg-id="IMPDTVWorldwide.br@SD" tvg-logo="https://i.imgur.com/9dW3AUQ.png" http-referrer="https://igrejamundial.nuvemplay.live" group-title="Religious",IMPD TV Worldwide (1080p)
+#EXTVLCOPT:http-referrer=https://igrejamundial.nuvemplay.live
+https://igrejamundial.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ISTV.br@SD" tvg-logo="https://i.imgur.com/RUKVrOH.png" group-title="Education",ISTV (720p) [Not 24/7]
 https://stmv1.srvstm.com/sistema7933/sistema7933/playlist.m3u8
 #EXTINF:-1 tvg-id="JovemPanNews.br@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Jovem_Pan_logo_2018.svg/512px-Jovem_Pan_logo_2018.svg.png" group-title="News",Jovem Pan News (JP News) (1080p) [Not 24/7]

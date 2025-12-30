@@ -125,8 +125,9 @@ https://stmv3.voxtvhd.com.br/australtv/australtv/playlist.m3u8
 https://live.obslivestream.com/autenticatvmux/index.m3u8
 #EXTINF:-1 tvg-id="AvivamientoTV.co@SD" tvg-logo="https://i.imgur.com/ydoBp3b.png" group-title="Religious",Avivamiento TV (1080p) [Not 24/7]
 https://s1.abntelevision.com/avivamientoabr/stream/avivamientohd/avivamientohd/playlist.m3u8
-#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" group-title="Classic;Series",AWTV (1080p)
-https://acesso.ecast.site:3070/live/awtvlive.m3u8
+#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" http-referrer="https://awtv.com.br" group-title="Classic;Series",AWTV (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://awtv.com.br
+https://awtv.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="AysenTV.cl@SD" tvg-logo="https://i.imgur.com/DmdBf9S.png" group-title="General",Aysen TV (720p)
 https://v1.tustreaming.cl/aysentv/index.m3u8
 #EXTINF:-1 tvg-id="AzaharesRadiovisualMultimedia.ar@SD" tvg-logo="https://i.imgur.com/g1BFoSs.png" group-title="Music",Azahares Radio Multimedia (720p)
@@ -654,6 +655,9 @@ https://rpn.bozztv.com/ignitelive/ignitetv/ignitetv/tracks-v1a1/mono.m3u8
 https://cloudvideo.servers10.com:8081/impactotv/index.m3u8
 #EXTINF:-1 tvg-id="IMPDTV.br@SD" tvg-logo="https://i.imgur.com/23m7LHH.png" group-title="Religious",IMPD TV (720p)
 https://58a4464faef53.streamlock.net/impd/ngrp:impd_all/playlist.m3u8
+#EXTINF:-1 tvg-id="IMPDTVWorldwide.br@SD" tvg-logo="https://i.imgur.com/9dW3AUQ.png" http-referrer="https://igrejamundial.nuvemplay.live" group-title="Religious",IMPD TV Worldwide (1080p)
+#EXTVLCOPT:http-referrer=https://igrejamundial.nuvemplay.live
+https://igrejamundial.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ImperialTV.bo@SD" tvg-logo="https://i.ibb.co/8XHSVWY/IMG-20210613-153444.png" group-title="General",Imperial TV
 https://play.agenciastreaming.com:19360/8122/8122.m3u8
 #EXTINF:-1 tvg-id="INTV.bo@SD" tvg-logo="https://i.imgur.com/4eNH7JS.png" group-title="General",IN TV

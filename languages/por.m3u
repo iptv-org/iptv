@@ -15,8 +15,9 @@ https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
 https://janya-digimix.akamaized.net/vglive-sk-382409/portuese/ngrp:angelportuguese_all/playlist.m3u8
 #EXTINF:-1 tvg-id="ARTV.pt@SD" tvg-logo="https://i.postimg.cc/qBtbT4bX/artv.png" group-title="Legislative",ARTV Canal Parlamento (720p) [Not 24/7]
 https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8
-#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" group-title="Classic;Series",AWTV (1080p)
-https://acesso.ecast.site:3070/live/awtvlive.m3u8
+#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" http-referrer="https://awtv.com.br" group-title="Classic;Series",AWTV (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://awtv.com.br
+https://awtv.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="BabyFirst.us@US" tvg-logo="https://i.imgur.com/WxLHBwu.png" group-title="Kids",BabyFirst
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c8d16110-566c-4e95-a1df-55d175e9e201/manifest.m3u8
 #EXTINF:-1 tvg-id="BDCTV.br@SD" tvg-logo="https://i.imgur.com/6ckHV6k.jpeg" group-title="Entertainment",BDC TV (576p)
@@ -109,6 +110,9 @@ https://stmv1.srvif.com/gospelcartoon/gospelcartoon/playlist.m3u8
 https://stmv1.srvif.com/gospelf/gospelf/playlist.m3u8
 #EXTINF:-1 tvg-id="IMPDTV.br@SD" tvg-logo="https://i.imgur.com/23m7LHH.png" group-title="Religious",IMPD TV (720p)
 https://58a4464faef53.streamlock.net/impd/ngrp:impd_all/playlist.m3u8
+#EXTINF:-1 tvg-id="IMPDTVWorldwide.br@SD" tvg-logo="https://i.imgur.com/9dW3AUQ.png" http-referrer="https://igrejamundial.nuvemplay.live" group-title="Religious",IMPD TV Worldwide (1080p)
+#EXTVLCOPT:http-referrer=https://igrejamundial.nuvemplay.live
+https://igrejamundial.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ISTV.br@SD" tvg-logo="https://i.imgur.com/RUKVrOH.png" group-title="Education",ISTV (720p) [Not 24/7]
 https://stmv1.srvstm.com/sistema7933/sistema7933/playlist.m3u8
 #EXTINF:-1 tvg-id="JimJamEurope.uk@SD" tvg-logo="https://i.imgur.com/ODhkYyx.png" group-title="Kids",JimJam Europe

@@ -11,8 +11,9 @@ https://5b01a3d32b65c.streamlock.net:1936/tvalpha/tvalpha/playlist.m3u8
 https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
 #EXTINF:-1 tvg-id="AngelTV.in@Portuguese" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="Religious",Angel TV Portuguese (720p)
 https://janya-digimix.akamaized.net/vglive-sk-382409/portuese/ngrp:angelportuguese_all/playlist.m3u8
-#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" group-title="Classic;Series",AWTV (1080p)
-https://acesso.ecast.site:3070/live/awtvlive.m3u8
+#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" http-referrer="https://awtv.com.br" group-title="Classic;Series",AWTV (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://awtv.com.br
+https://awtv.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="BDCTV.br@SD" tvg-logo="https://i.imgur.com/6ckHV6k.jpeg" group-title="Entertainment",BDC TV (576p)
 https://video01.kshost.com.br/bdctv/bdctv/playlist.m3u8
 #EXTINF:-1 tvg-id="BemTV.br@SD" tvg-logo="https://i.imgur.com/ifGQGJx.png" group-title="General",Bem TV (720p)

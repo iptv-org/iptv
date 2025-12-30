@@ -3,8 +3,9 @@
 https://fast-tailor.3catdirectes.cat/v1/channel/ccma-channel2/hls.m3u8
 #EXTINF:-1 tvg-id="ARTFLIXMovieClassics.us@SD" tvg-logo="https://i.imgur.com/5pOZQB4.png" group-title="Classic;Movies",Artflix Movie Classics (720p)
 https://amogonetworx-artflix-1-nl.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" group-title="Classic;Series",AWTV (1080p)
-https://acesso.ecast.site:3070/live/awtvlive.m3u8
+#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" http-referrer="https://awtv.com.br" group-title="Classic;Series",AWTV (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://awtv.com.br
+https://awtv.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="BeverlyHillbillies.us@US" tvg-logo="https://i.imgur.com/OV9hT93.png" group-title="Classic",Beverly Hillbillies
 http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/5f7796e470510900070d4e3d/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c271cb4-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=69bf4a83-189f-4b22-bbe6-f2e09a47e049
 #EXTINF:-1 tvg-id="BlackClassics.us@SD" tvg-logo="https://i.imgur.com/2nNpGqy.png" group-title="Classic",Black Classics

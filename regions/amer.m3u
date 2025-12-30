@@ -525,8 +525,9 @@ https://mgv-awapa.akamaized.net/hls/live/2104282/MGV_CHANNEL15/master.m3u8
 https://a-cdn.klowdtv.com/live1/awe_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="AWEEncore.us@SD" tvg-logo="https://i.imgur.com/0utwZ63.png" group-title="General",AWE Encore (720p) [Geo-blocked]
 https://a-cdn.herringnetwork.com/affiliate/awee/playlist.m3u8
-#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" group-title="Classic;Series",AWTV (1080p)
-https://acesso.ecast.site:3070/live/awtvlive.m3u8
+#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" http-referrer="https://awtv.com.br" group-title="Classic;Series",AWTV (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://awtv.com.br
+https://awtv.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="AXSTV.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/AXS_TV_logo.svg/512px-AXS_TV_logo.svg.png" group-title="Music",AXS TV
 https://fl1.moveonjoy.com/Axs_TV/index.m3u8
 #EXTINF:-1 tvg-id="AyenehTV.us@SD" tvg-logo="https://i.imgur.com/F0AevIQ.png" group-title="Culture;Education",Ayeneh TV
@@ -2528,6 +2529,9 @@ https://edge1.lifestreamcdn.com/live/impactroku1/index.m3u8
 https://cloudvideo.servers10.com:8081/impactotv/index.m3u8
 #EXTINF:-1 tvg-id="IMPDTV.br@SD" tvg-logo="https://i.imgur.com/23m7LHH.png" group-title="Religious",IMPD TV (720p)
 https://58a4464faef53.streamlock.net/impd/ngrp:impd_all/playlist.m3u8
+#EXTINF:-1 tvg-id="IMPDTVWorldwide.br@SD" tvg-logo="https://i.imgur.com/9dW3AUQ.png" http-referrer="https://igrejamundial.nuvemplay.live" group-title="Religious",IMPD TV Worldwide (1080p)
+#EXTVLCOPT:http-referrer=https://igrejamundial.nuvemplay.live
+https://igrejamundial.nuvemplay.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="ImperialTV.bo@SD" tvg-logo="https://i.ibb.co/8XHSVWY/IMG-20210613-153444.png" group-title="General",Imperial TV
 https://play.agenciastreaming.com:19360/8122/8122.m3u8
 #EXTINF:-1 tvg-id="ImpossibleQuizShow.us@SD" tvg-logo="https://i.imgur.com/9EWffqx.png" group-title="Series",Impossible Quiz Show (1080p)

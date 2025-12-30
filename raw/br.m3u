@@ -11,10 +11,6 @@ https://server.flixtv.com.br/agrobrasiltv/agrobrasiltv/playlist.m3u8
 https://5b01a3d32b65c.streamlock.net:1936/tvalpha/tvalpha/playlist.m3u8
 #EXTINF:-1 tvg-id="AmazonSat.br@SD" tvg-logo="https://i.imgur.com/7rjCS5i.png" group-title="Undefined",Amazon Sat (1080p)
 https://amazonsat.brasilstream.com.br/hls/amazonsat/index.m3u8
-#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" group-title="Classic;Series",AWTV (1080p)
-https://acesso.ecast.site:3070/live/awtvlive.m3u8
-#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" group-title="Classic;Series",AWTV (1080p)
-https://streaming.cloudecast.com/hls/awtv/index.m3u8
 #EXTINF:-1 tvg-id="BDCTV.br@SD" tvg-logo="https://i.imgur.com/6ckHV6k.jpeg" group-title="Entertainment",BDC TV (576p)
 https://video01.kshost.com.br/bdctv/bdctv/playlist.m3u8
 #EXTINF:-1 tvg-id="BemTV.br@SD" tvg-logo="https://i.imgur.com/ifGQGJx.png" group-title="General",Bem TV (720p)
@@ -418,3 +414,9 @@ http://unitvaovivo.ufrgs.br:8080/live.ogg
 https://sistemavrt.vrtchannel.tv.br:3473/stream/play.m3u8
 #EXTINF:-1 tvg-id="VV8TV.br@SD" tvg-logo="https://i.imgur.com/TxHWAeD.png" group-title="General",VV8 TV (720p)
 https://video01.kshost.com.br/seap8272/seap8272/playlist.m3u8
+#EXTINF:-1 tvg-id="IMPDTVWorldwide.br@SD" tvg-logo="https://i.imgur.com/9dW3AUQ.png" http-referrer="https://igrejamundial.nuvemplay.live" group-title="Religious",IMPD TV Worldwide (1080p)
+#EXTVLCOPT:http-referrer=https://igrejamundial.nuvemplay.live
+https://igrejamundial.nuvemplay.live/hls/stream.m3u8
+#EXTINF:-1 tvg-id="AWTV.br@HD" tvg-logo="https://i.imgur.com/2tdMyef.png" http-referrer="https://awtv.com.br" group-title="Classic;Series",AWTV (1080p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://awtv.com.br
+https://awtv.nuvemplay.live/hls/stream.m3u8
