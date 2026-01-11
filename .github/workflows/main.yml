@@ -1,0 +1,58 @@
+name: Sync upstream (daily)
+
+on:
+  schedule:
+    - cron: "0 8 * * *" # 08:00 UTC = 03:00 America/Montreal (hiver)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/iptv-org/iptv.git
+          git remote -v
+
+      - name: Fetch upstream
+        run: |
+          git fetch upstream master
+
+      - name: Create sync branch
+        run: |
+          git checkout -B upstream-sync
+
+      - name: Merge upstream into sync branch
+        run: |
+          git merge upstream/master --no-edit
+
+      - name: Push sync branch to fork
+        run: |
+          git push origin upstream-sync --force-with-lease
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: upstream-sync
+          base: master
+          title: "Sync from upstream (iptv-org/iptv)"
+          body: |
+            Synchronisation automatique quotidienne depuis https://github.com/iptv-org/iptv (branche master).
+            Horaire: 03:00 Montréal (hiver) / 08:00 UTC.
+          labels: |
+            upstream-sync
