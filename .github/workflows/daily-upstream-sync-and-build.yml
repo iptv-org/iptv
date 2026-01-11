@@ -1,0 +1,72 @@
+name: Daily sync upstream + build combined playlist
+
+on:
+  schedule:
+    - cron: "0 8 * * *" # 08:00 UTC = 03:00 America/Montreal (hiver)
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync_build_pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout fork
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add upstream remote
+        run: |
+          git remote add upstream https://github.com/iptv-org/iptv.git
+          git remote -v
+
+      - name: Fetch upstream
+        run: |
+          git fetch upstream master
+
+      - name: Create/update work branch
+        run: |
+          git checkout -B upstream-sync
+
+      - name: Merge upstream into work branch
+        run: |
+          git merge upstream/master --no-edit
+
+      - name: Build combined playlist
+        run: |
+          bash scripts/build-combined-m3u.sh
+
+      - name: Commit generated playlist (if changed)
+        run: |
+          git add custom2/combined.m3u
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "chore: rebuild combined playlist"
+          fi
+
+      - name: Push work branch
+        run: |
+          git push origin upstream-sync --force-with-lease
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: upstream-sync
+          base: master
+          title: "Daily upstream sync + rebuild combined.m3u"
+          body: |
+            - Sync depuis https://github.com/iptv-org/iptv (master)
+            - Regénération de custom2/combined.m3u = index.m3u + custom2/my.m3u
+          labels: |
+            upstream-sync
+            playlist
