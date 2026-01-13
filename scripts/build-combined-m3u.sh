@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-UPSTREAM_PLAYLIST="index.m3u"
+UPSTREAM_PLAYLIST="streams/ca.m3u"
 MY_PLAYLIST="custom2/my.m3u"
 OUT_PLAYLIST="custom2/combined.m3u"
 
