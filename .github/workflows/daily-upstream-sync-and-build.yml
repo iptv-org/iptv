@@ -53,15 +53,11 @@ jobs:
             git commit -m "chore: rebuild combined playlist"
           fi
 
-      - name: Push work branch
-        run: |
-          git push origin upstream-sync --force-with-lease
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: upstream-sync
+          branch: bot/daily-sync
           base: master
           title: "Daily upstream sync + rebuild combined.m3u"
           body: |
@@ -70,3 +66,4 @@ jobs:
           labels: |
             upstream-sync
             playlist
+          commit-message: "chore: rebuild combined playlist"
