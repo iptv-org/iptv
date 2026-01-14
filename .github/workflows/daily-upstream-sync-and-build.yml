@@ -32,12 +32,9 @@ jobs:
         run: |
           git fetch upstream master
 
-      - name: Create/update work branch
+      - name: Merge upstream into local branch
         run: |
-          git checkout -B upstream-sync
-
-      - name: Merge upstream into work branch
-        run: |
+          git checkout master
           git merge upstream/master --no-edit
 
       - name: Build combined playlist
