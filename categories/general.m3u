@@ -1505,8 +1505,9 @@ https://redirector.dps.live/hls-video/c54ac2799874375c81c1672abb700870537c5223/e
 https://rtmp.edentv.bj/hls/stream.m3u8
 #EXTINF:-1 tvg-id="EduPlusTV.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3610-294x165-FFFFFF.jpg" group-title="General",Edu+ TV
 https://vdopanel.jlahozconsulting.com:3720/hybrid/play.m3u8
-#EXTINF:-1 tvg-id="EfarinaTV.id@SD" tvg-logo="https://i.imgur.com/iYTimXh.png" group-title="General",Efarina TV (720p)
-https://live.efarinatv.net/hls/stream123/index.m3u8
+#EXTINF:-1 tvg-id="EfarinaTV.id@SD" tvg-logo="https://i.imgur.com/iYTimXh.png" http-referrer="https://live.efarinatv.net/" group-title="General",Efarina TV (720p)
+#EXTVLCOPT:http-referrer=https://live.efarinatv.net/
+https://live.efarinatv.com/hls/bgtaufikganteng.m3u8
 #EXTINF:-1 tvg-id="EGMChannel.cl@SD" tvg-logo="https://i.imgur.com/RXRKPvs.png" group-title="General",EGM Channel (480p)
 https://paneltv.online:1936/8186/8186/playlist.m3u8
 #EXTINF:-1 tvg-id="El9TV.es@SD" tvg-logo="https://i.imgur.com/QyW5VyW.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160" group-title="General",El 9 TV (1080p)
@@ -2302,9 +2303,9 @@ https://live2.telvi.de/hls/l-tv_s1.m3u8
 http://live.sloode.com:1935/labtv_live/labtv/playlist.m3u8
 #EXTINF:-1 tvg-id="La1.es@SD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 (720p)
 https://ztnr.rtve.es/ztnr/1688877.m3u8
-#EXTINF:-1 tvg-id="La1Canarias.es@SD" tvg-logo="https://i.imgur.com/RqUJ4oj.png" group-title="General;Public",La 1 Canarias (720p)
+#EXTINF:-1 tvg-id="La1Canarias.es@SD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 Canarias (720p)
 https://ztnr.rtve.es/ztnr/5190066.m3u8
-#EXTINF:-1 tvg-id="La1Catalunya.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Logo_La_1.svg/330px-Logo_La_1.svg.png" group-title="General;Public",La 1 Catalunya (720p)
+#EXTINF:-1 tvg-id="La1Catalunya.es@SD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 Catalunya (720p)
 https://ztnr.rtve.es/ztnr/3293681.m3u8
 #EXTINF:-1 tvg-id="La1.es@HEVC" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 HEVC (1080p)
 http://176.65.146.237:8401/play/a095/index.m3u8
@@ -2312,7 +2313,7 @@ http://176.65.146.237:8401/play/a095/index.m3u8
 http://176.65.146.237:8401/play/a09u/index.m3u8
 #EXTINF:-1 tvg-id="La2.es@SD" tvg-logo="https://i.ibb.co/rfsr9PSh/La-2.png" group-title="General;Public",La 2 (1080p)
 https://d4g9wh8d4wiaw.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-crbrakk0yedqb/La2ES.m3u8
-#EXTINF:-1 tvg-id="La2Canarias.es@SD" tvg-logo="https://i.imgur.com/iwDi3ND.png" group-title="General;Public",La 2 Canarias (720p)
+#EXTINF:-1 tvg-id="La2Canarias.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Logo_La_2_Canarias.png/512px-Logo_La_2_Canarias.png" group-title="General;Public",La 2 Canarias (720p)
 https://ztnr.rtve.es/ztnr/5468585.m3u8
 #EXTINF:-1 tvg-id="La2Catalunya.es@SD" tvg-logo="https://i.ibb.co/Lztt9rgr/La-2-Catalunya.png" group-title="General;Public",La 2 Catalunya (720p)
 https://ztnr.rtve.es/ztnr/3987218.m3u8
@@ -3054,7 +3055,7 @@ https://d3j015sg8r68y.cloudfront.net/nlpo/clr-nlpo/omroepvenray/index.m3u8
 #EXTINF:-1 tvg-id="OmroepZeeland.nl@SD" tvg-logo="https://i.imgur.com/3c3QUSn.png" group-title="General",Omroep Zeeland (1080p)
 https://d3isaxd2t6q8zm.cloudfront.net/live/omroepzeeland/tv/index.m3u8
 #EXTINF:-1 tvg-id="OmropFryslan.nl@SD" tvg-logo="https://i.imgur.com/khacDTU.png" group-title="General",Omrop Fryslân (1080p) [Not 24/7]
-https://d3pvma9xb2775h.cloudfront.net/live/omropfryslan/stream04/index.m3u8
+https://s-d15f8b0b.b.cdn.bluebillywig.com/live/omropfryslan/f8f68bd5/index.m3u8
 #EXTINF:-1 tvg-id="On4TV.tr@SD" tvg-logo="https://i.imgur.com/qGRa1KI.png" group-title="General",On4 TV (1080p)
 https://edge1.socialsmart.tv/on4/bant1/playlist.m3u8
 #EXTINF:-1 tvg-id="OncuTV.tr@SD" tvg-logo="https://i.imgur.com/TGPNYrD.jpg" group-title="General",Öncü TV (1024p) [Not 24/7]

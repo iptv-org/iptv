@@ -258,8 +258,9 @@ https://dutatv.siar.us/dutatv/live/playlist.m3u8
 https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/master.m3u8
 #EXTINF:-1 tvg-id="EACNewsTV.kh@SD" tvg-logo="https://i.imgur.com/EuYhS9Z.png" group-title="News",EAC News TV
 https://live-evg17.tv360.metfone.com.kh/LiveApp/streams/eacnews.m3u8
-#EXTINF:-1 tvg-id="EfarinaTV.id@SD" tvg-logo="https://i.imgur.com/iYTimXh.png" group-title="General",Efarina TV (720p)
-https://live.efarinatv.net/hls/stream123/index.m3u8
+#EXTINF:-1 tvg-id="EfarinaTV.id@SD" tvg-logo="https://i.imgur.com/iYTimXh.png" http-referrer="https://live.efarinatv.net/" group-title="General",Efarina TV (720p)
+#EXTVLCOPT:http-referrer=https://live.efarinatv.net/
+https://live.efarinatv.com/hls/bgtaufikganteng.m3u8
 #EXTINF:-1 tvg-id="eGGNetwork.my@SD" tvg-logo="https://i.imgur.com/VyYo7NF.png" group-title="Sports",Egg Network (720p)
 http://210.210.155.37/uq2663/h/h22/index.m3u8
 #EXTINF:-1 tvg-id="ElshintaTV.id@SD" tvg-logo="https://i.imgur.com/x5uoy2H.png" group-title="General",Elshinta TV
