@@ -15,7 +15,7 @@ jobs:
         with:
           app_id: ${{ secrets.APP_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
-      - uses: actions/stale@v9
+      - uses: actions/stale@v10
         with:
           repo-token: ${{ steps.create-app-token.outputs.token }}
           days-before-stale: 180
