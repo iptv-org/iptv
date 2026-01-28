@@ -1,6 +1,9 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="24KZ.kz@SD",24KZ
 https://tvcdn01.oktv.kz/tv/24kz/index.m3u8
+#EXTINF:-1 tvg-id="31Kanal.kz@SD",31 Kanal
+#EXTVLCOPT:http-referrer=https://31.kz/
+https://streams.adapto.kz/hls/live/31kz/main_stream.m3u8
 #EXTINF:-1 tvg-id="AbaiTV.kz@SD",Abai TV (720p)
 https://abaitv-stream.qazcdn.com/abaitv/abaitv/playlist.m3u8
 #EXTINF:-1 tvg-id="AlauTV.kz@SD",Alau TV (576p)
@@ -23,6 +26,9 @@ https://stream.kaztrk.kz/regional/kokshetautv/index.m3u8
 http://212.42.111.152:8080/hls/manas.m3u8
 #EXTINF:-1 tvg-id="Mangystay.kz@SD",Mańǵystaý (540p) [Not 24/7]
 https://stream.kaztrk.kz/regional/mangystautv/index.m3u8
+#EXTINF:-1 tvg-id="MuzzOne.kz@SD",MuzzOne
+#EXTVLCOPT:http-referrer=https://muzzone.tv/
+https://streams.adapto.kz/hls/live/muzzone/main_stream.m3u8
 #EXTINF:-1 tvg-id="Ontustik.kz@SD",Ontústik (360p)
 https://stream.kaztrk.kz/regional/shymkenttv/index.m3u8
 #EXTINF:-1 tvg-id="QazaqstanInternational.kz@SD",Qazaqstan International (1080p)
@@ -51,9 +57,3 @@ http://89.218.30.37/ktklive/live.hq/playlist.m3u8
 https://tvcdn01.oktv.kz/tv/mtrk/playlist.m3u8
 #EXTINF:-1 tvg-id="Novoetelevidenie.kz@SD",Новое телевидение (576p) [Not 24/7]
 http://serv25.vintera.tv:8081/novoetv/nov_tv/playlist.m3u8
-#EXTINF:-1 tvg-id="31Kanal.kz@SD",31 Kanal
-#EXTVLCOPT:http-referrer=https://31.kz/
-https://streams.adapto.kz/hls/live/31kz/main_stream.m3u8
-#EXTINF:-1 tvg-id="MuzzOne.kz@SD",MuzzOne
-#EXTVLCOPT:http-referrer=https://muzzone.tv/
-https://streams.adapto.kz/hls/live/muzzone/main_stream.m3u8
