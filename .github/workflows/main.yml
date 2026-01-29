@@ -36,6 +36,10 @@ jobs:
         run: |
           git checkout -B upstream-sync
 
+      - name: Remove upstream workflows
+        run: |
+        rm -rf .github/workflows
+
       - name: Merge upstream into sync branch
         run: |
           git merge upstream/master --no-edit
