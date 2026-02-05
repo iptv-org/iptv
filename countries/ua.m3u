@@ -21,8 +21,6 @@ http://cdn10.live-tv.od.ua:8081/7tvod/7tvod-abr/7tvod/7tvod/playlist.m3u8
 http://langate.tv/promin/live_720/index.m3u8
 #EXTINF:-1 tvg-id="Crimea24.ru@SD" tvg-logo="https://i.imgur.com/k4C0uvp.png" group-title="News",Crimea 24 (576i)
 https://cdn.1tvcrimea.ru/24tvcrimea.m3u8
-#EXTINF:-1 tvg-id="CurrentTimeTV.cz@SD" tvg-logo="https://i.imgur.com/hKo8ApU.png" group-title="News",Current Time TV
-https://dash3.antik.sk/live/test_current_time_atktv/playlist.m3u8
 #EXTINF:-1 tvg-id="DniproTV.ua@SD" tvg-logo="https://i.imgur.com/mbPTVh1.png" group-title="General",DniproTV (1080p)
 http://vcdn1.produck.company:1935/out/dtv/playlist.m3u8
 #EXTINF:-1 tvg-id="EspresoTV.ua@SD" tvg-logo="https://i.imgur.com/xNatV8K.png" group-title="News",Espreso TV
@@ -61,8 +59,6 @@ https://live.m2.tv/hls3/stream.m3u8
 http://93.78.206.172:8080/stream3/stream.m3u8
 #EXTINF:-1 tvg-id="PershiyXTVMedia.ua@SD" tvg-logo="https://i.imgur.com/M7oDym3.png" group-title="News",Pershiy XTV Media (576p)
 https://hls.xtvmedia.pp.ua:8443/hls/trk1tv.m3u8
-#EXTINF:-1 tvg-id="PerviyKrymskiy.ru@SD" tvg-logo="https://i.imgur.com/i6hg7QG.png" group-title="General",Perviy Krymskiy (720p)
-https://live1.1tvcrimea.ru/1tvcrimea.m3u8
 #EXTINF:-1 tvg-id="PTV.ua@SD" tvg-logo="https://i.imgur.com/WDHoSVz.png" group-title="News",PTV (720p)
 https://cdn10.live-tv.cloud/hrpl/hrpl-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="RenomeTV.ua@SD" tvg-logo="https://i.imgur.com/qL1uNlW.png" group-title="General",Renome (576p)
@@ -110,6 +106,8 @@ https://streaming.televizor-24-tochka.ru/live/29.m3u8
 https://live.trkmillet.ru/millet/index.m3u8
 #EXTINF:-1 tvg-id="HopeChannelUkraine.ua@SD" tvg-logo="https://i.imgur.com/mUx2P29.png" group-title="Religious",Надия/Новый канал (576p) [Not 24/7]
 http://nadiya.home-net.com.ua/mob/mystream.m3u8
+#EXTINF:-1 tvg-id="CurrentTimeTV.cz@SD" tvg-logo="https://i.imgur.com/hKo8ApU.png" group-title="News",Настоящее время
+https://dash3.antik.sk/live/test_current_time_atktv/playlist.m3u8
 #EXTINF:-1 tvg-id="NTKTV.ua@SD" tvg-logo="https://www.ntktv.ua/bitrix/templates/ntk_copy/images/logo.png" group-title="General",НТК ТВ (1080p) [Not 24/7]
 https://stream.ntktv.ua/s/ntk/ntk.m3u8
 #EXTINF:-1 tvg-id="NTN.ua@SD" tvg-logo="https://i.imgur.com/AmyCNJv.png" group-title="General",НТН (576p) [Not 24/7]
@@ -124,13 +122,17 @@ http://ftp.orbita.dn.ua/hls/orbita.m3u8
 http://91.193.128.233:1935/live/otv.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="PervyygorodskoyOdessa.ua@SD" tvg-logo="https://i.imgur.com/8qdc6aO.png" group-title="General",Первый городской (Одесса) (1080p) [Not 24/7]
 http://91.194.79.46:8081/stream1/channel1/playlist.m3u8
-#EXTINF:-1 tvg-id="PervyyRespublikanskiy.ru@SD" tvg-logo="https://i.imgur.com/Hrdq55E.png" group-title="News",Первый Республиканский
+#EXTINF:-1 tvg-id="PerviyKrymskiy.ru@SD" tvg-logo="https://i.imgur.com/i6hg7QG.png" group-title="General",Первый Крымский (720p)
+https://live1.1tvcrimea.ru/1tvcrimea.m3u8
+#EXTINF:-1 tvg-id="PervyyRespublikanskiy.ru@SD" tvg-logo="" group-title="News",Первый Республиканский
 https://streaming.televizor-24-tochka.ru/live/27.m3u8
 #EXTINF:-1 tvg-id="PravdaTUT.ua@SD" tvg-logo="https://i.imgur.com/gvgFoFB.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0" group-title="Undefined",ПравдаТУТ (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
 https://pravdatytkievshina.cdn-02.cosmonova.net.ua/hls/pravdatytkievshina_ua.m3u8
 #EXTINF:-1 tvg-id="Svarozhychy.ua@SD" tvg-logo="https://i.imgur.com/VnAgQA4.png" group-title="Entertainment",Сварожичи (720p)
 http://80.91.177.102:1935/live/live1/playlist.m3u8
+#EXTINF:-1 tvg-id="Simferopol24.ru@SD" tvg-logo="" group-title="General",Симферополь 24
+https://simf.1tvcrimea.ru/simferopol24.m3u8
 #EXTINF:-1 tvg-id="SferaTV.ua@SD" tvg-logo="https://i.imgur.com/S1h1t0G.png" group-title="General",Сфера ТВ
 http://cdn10.live-tv.od.ua:8081/sferarv/sferarv-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="Tavriya.ru@SD" tvg-logo="https://i.imgur.com/gqung6i.png" group-title="General",Таврия
