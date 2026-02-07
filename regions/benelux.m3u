@@ -133,8 +133,9 @@ https://stream.eldo.lu/data/live/tele/eldotv/1080p.m3u8
 https://raw.githubusercontent.com/Sibprod/streams/main/ressources/dm/py/hls/emcieurope.m3u8
 #EXTINF:-1 tvg-id="ERTWorld.gr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/ChannelLogo-ERTWORLD1.png/512px-ChannelLogo-ERTWORLD1.png" group-title="General",ERT World (720p)
 https://ert-live-bcbs15228.siliconweb.com/media/ert_world/ert_world.m3u8
-#EXTINF:-1 tvg-id="ETBBasque.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/ETB_Basque_2022_logo.svg/512px-ETB_Basque_2022_logo.svg.png" group-title="Culture;Public",ETB Basque (480p)
-https://multimedia.eitb.eus/live-content/eitbbasque-hls/master.m3u8
+#EXTINF:-1 tvg-id="ETBBasque.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/ETB_Basque_2022_logo.svg/512px-ETB_Basque_2022_logo.svg.png" http-referrer="https://www.eitb.eus/" group-title="Culture;Public",ETB Basque (720p)
+#EXTVLCOPT:http-referrer=https://www.eitb.eus/
+https://multimedia.eitb.eus/live-content/etbbasqueeus-hls/master.m3u8
 #EXTINF:-1 tvg-id="EuroIndieMusicChartTV.it@SD" tvg-logo="https://i.imgur.com/lF0iofX.png" group-title="Music",Euro Indie Music Chart TV (360p)
 http://178.33.224.197:1935/euroindiemusic/euroindiemusic/playlist.m3u8
 #EXTINF:-1 tvg-id="EuronewsEnglish.fr@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Euro_News.png" group-title="News",Euronews
@@ -350,6 +351,8 @@ https://iptv.peer.biz/live/peertv-en.m3u8
 https://iptv.peer.biz/live/peertv.m3u8
 #EXTINF:-1 tvg-id="PetangeInfoTV.lu@SD" tvg-logo="https://i.imgur.com/qeaD5Az.png" group-title="General",Pétange Info TV (720p)
 https://streamer20.multimedia.blue/Eltrona/PetangeTV/playlist.m3u8
+#EXTINF:-1 tvg-id="PlayCrime.be@SD" tvg-logo="https://i.imgur.com/hPh8tRq.png" group-title="Undefined",Play Crime (1080p) [Geo-blocked]
+https://playmedia-playcrime-goplay-dash.amagi.tv/master.mpd
 #EXTINF:-1 tvg-id="PodiumTV.nl@SD" tvg-logo="https://i.postimg.cc/BbNMxrDS/podiumtv.png" group-title="Undefined",Podium.TV (1080p) [Not 24/7]
 https://rrr.sz.xlcdn.com/?account=ndc_mediagroep&file=NDC1&output=playlist.m3u8&service=wowza&type=live
 #EXTINF:-1 tvg-id="PodiumTV2.nl@SD" tvg-logo="https://i.imgur.com/bAhMhuz.jpg" group-title="Undefined",Podium.TV 2 (1080p) [Not 24/7]
@@ -512,7 +515,7 @@ https://samson.streamerr.co:8081/sleutelstad/index.m3u8
 https://d3eq9mufmyqgh4.cloudfront.net/nlpo/clr-nlpo/slotstadtv/index.m3u8
 #EXTINF:-1 tvg-id="SOL2.nl@SD" tvg-logo="https://i.imgur.com/VEbhJRA.png" group-title="General",SOL 2 (1080p)
 https://live.streamteam.eu:8443/sol2playout/sol2/live/playlist.m3u8
-#EXTINF:-1 tvg-id="SpaceLivepoweredbysen.uk@SD" tvg-logo="https://tvpnlogopeu.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/GB3800007C5_20251209T004625SQUARE.png" group-title="Relax;Travel",Space Live powered by sen (1080p)
+#EXTINF:-1 tvg-id="SpaceLivepoweredbysen.uk@SD" tvg-logo="https://static.frequency.com/studio/itv/channels/1224-400x200.png" group-title="Relax;Travel",Space Live powered by sen (1080p)
 https://linear-1224.frequency.stream/dist/lg-uk/1224/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="SRCTV.nl@SD" tvg-logo="https://i.postimg.cc/4yzYKcKV/srctv.png" group-title="General",SRC TV (720p)
 http://highvolume155.streampartner.nl/adminsrc/adminsrc/playlist.m3u8
@@ -602,6 +605,8 @@ https://wowza2.videostreamingwowza.com/eeldevrieszuidlaren/eeldevrieszuidlaren/p
 https://cdnapi.kaltura.com/p/2503451/sp/250345100/playManifest/entryId/1_gb6tjmle/protocol/https/format/applehttp/a.m3u8
 #EXTINF:-1 tvg-id="UStad.nl@SD" tvg-logo="https://i.imgur.com/9F8ieEz.png" group-title="Undefined",UStad (1080p)
 http://media.rtvutrecht.nl/live/rtvutrecht/ustad/index.m3u8
+#EXTINF:-1 tvg-id="VantageDance.ee@HD" tvg-logo="https://vantagetv.ee/vantage_dance.png" group-title="Music",Vantage Dance (720p)
+https://hls.vantagetv.ee/vdance_stream/main_stream.m3u8
 #EXTINF:-1 tvg-id="VantageMusic.ee@HD" tvg-logo="https://vantagetv.ee/vantage_music.png" group-title="Music",Vantage Music (720p) [Geo-blocked]
 https://hls.vantagetv.ee/vmusic_stream/main_stream.m3u8
 #EXTINF:-1 tvg-id="VechtdalTV.nl@SD" tvg-logo="https://i.postimg.cc/4xswf3pq/vechtdaltv.png" group-title="Undefined",Vechtdal TV (480p)
@@ -624,6 +629,8 @@ https://dpp-live-events.medialaancdn.be/events/hls/aes/webstream1.m3u8
 https://takeoff.jetstre.am/?account=weeff&file=weeffradio&output=playlist.m3u8&protocol=https&service=wowza&type=live
 #EXTINF:-1 tvg-id="WeertFMTV.nl@SD" tvg-logo="https://i.postimg.cc/cLL97H6Y/weertfmtv.png" group-title="General",WeertFM TV (720p)
 https://ms2.mx-cd.net/tv/151-573495/WeertFM_TV.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="WildEarth.za@SD" tvg-logo="https://i.imgur.com/Vhv5gjN.png" group-title="Documentary;Education;Outdoor;Relax",WildEarth [Geo-blocked]
+https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01290-wildearthmediap-wildearth-samsungnl/playlist.m3u8
 #EXTINF:-1 tvg-id="WION.in@SD" tvg-logo="https://i.imgur.com/Wc5Z3iS.png" group-title="News",WION (1080p)
 https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
 #EXTINF:-1 tvg-id="WOS.nl@SD" tvg-logo="https://i.imgur.com/L7MUBIo.png" group-title="Undefined",WOS TV (1080p)
