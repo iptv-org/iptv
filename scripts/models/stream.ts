@@ -303,6 +303,8 @@ export class Stream extends sdk.Models.Stream {
   }
 
   updateFilepath(): this {
+    if (this.filepath) return this
+
     const channel = this.getChannel()
     if (!channel) return this
 
