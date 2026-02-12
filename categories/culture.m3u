@@ -74,7 +74,7 @@ https://5d8d85cf2c308.streamlock.net:1936/Condavision/endirecto/playlist.m3u8
 https://video0.rogohosting.com:19360/8006/8006.m3u8
 #EXTINF:-1 tvg-id="DDBharati.in@SD" tvg-logo="https://i.imgur.com/4tfUIEo.png" group-title="Culture",DD Bharati (576p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/67cec794d8b14f9ba21f73924ac65797/index.m3u8
-#EXTINF:-1 tvg-id="DDMizoram.in@SD" tvg-logo="https://i.imgur.com/I5zT1DG.png" group-title="Culture;News",DD MIZORAM (576p)
+#EXTINF:-1 tvg-id="DDMizoram.in@SD" tvg-logo="https://i.imgur.com/I5zT1DG.png" group-title="Culture;News",DD Mizoram (576p)
 http://103.78.149.54:8000/play/a02b/index.m3u8
 #EXTINF:-1 tvg-id="DDPunjabi.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_PUNJABI/images/LOGO_HD/image.png" group-title="Culture",DD Punjabi (576p)
 http://103.78.149.54:8000/play/a00o/index.m3u8
@@ -302,8 +302,9 @@ https://stream.cp.ets-sistemi.it:1936/profservtv/profservtv/playlist.m3u8
 https://embedlp.becdn.net/womantv.m3u8
 #EXTINF:-1 tvg-id="YemenShababChannel.ye@SD" tvg-logo="https://i.imgur.com/H5Oi2NS.png" group-title="Culture",Yemen Shabab Channel (1080p)
 https://starmenajo.com/hls/yemenshabab/index.m3u8
-#EXTINF:-1 tvg-id="zenith.fr@HD" tvg-logo="https://znth.tv/static/site_app/thy%20logo.svg" group-title="Culture;General",zenith
-https://srv.zenith-tv.fr:8888/zenithwchl/main_stream.m3u8
+#EXTINF:-1 tvg-id="zenith.fr@HD" tvg-logo="https://znth.tv/static/site_app/thy%20logo.svg" http-referrer="https://znth.tv" group-title="Culture;General",zenith (1080p)
+#EXTVLCOPT:http-referrer=https://znth.tv
+https://srv.zenith-tv.fr:8888/zenithwchl/index.m3u8
 #EXTINF:-1 tvg-id="Belarus3.by@SD" tvg-logo="https://i.imgur.com/JkcDycn.png" group-title="Culture",Беларусь 3 (1080p) [Not 24/7]
 https://ngtrk.dc.beltelecom.by/ngtrk/smil:belarus3.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NTVMir.ru@SD" tvg-logo="https://i.imgur.com/pUcV46F.png" group-title="Culture",НТВ Мир
