@@ -24,35 +24,35 @@ Same thing, but split up into separate files:
   <tbody>
     <tr><td>Animation</td><td align="right">58</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/animation.m3u</code></td></tr>
     <tr><td>Auto</td><td align="right">17</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/auto.m3u</code></td></tr>
-    <tr><td>Business</td><td align="right">70</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/business.m3u</code></td></tr>
-    <tr><td>Classic</td><td align="right">48</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/classic.m3u</code></td></tr>
-    <tr><td>Comedy</td><td align="right">65</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/comedy.m3u</code></td></tr>
+    <tr><td>Business</td><td align="right">69</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/business.m3u</code></td></tr>
+    <tr><td>Classic</td><td align="right">46</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/classic.m3u</code></td></tr>
+    <tr><td>Comedy</td><td align="right">64</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/comedy.m3u</code></td></tr>
     <tr><td>Cooking</td><td align="right">29</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/cooking.m3u</code></td></tr>
-    <tr><td>Culture</td><td align="right">154</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/culture.m3u</code></td></tr>
-    <tr><td>Documentary</td><td align="right">112</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/documentary.m3u</code></td></tr>
+    <tr><td>Culture</td><td align="right">153</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/culture.m3u</code></td></tr>
+    <tr><td>Documentary</td><td align="right">107</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/documentary.m3u</code></td></tr>
     <tr><td>Education</td><td align="right">176</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/education.m3u</code></td></tr>
-    <tr><td>Entertainment</td><td align="right">600</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/entertainment.m3u</code></td></tr>
-    <tr><td>Family</td><td align="right">50</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/family.m3u</code></td></tr>
-    <tr><td>General</td><td align="right">2299</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/general.m3u</code></td></tr>
+    <tr><td>Entertainment</td><td align="right">588</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/entertainment.m3u</code></td></tr>
+    <tr><td>Family</td><td align="right">49</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/family.m3u</code></td></tr>
+    <tr><td>General</td><td align="right">2283</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/general.m3u</code></td></tr>
     <tr><td>Interactive</td><td align="right">1</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/interactive.m3u</code></td></tr>
-    <tr><td>Kids</td><td align="right">210</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/kids.m3u</code></td></tr>
-    <tr><td>Legislative</td><td align="right">176</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/legislative.m3u</code></td></tr>
-    <tr><td>Lifestyle</td><td align="right">87</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/lifestyle.m3u</code></td></tr>
-    <tr><td>Movies</td><td align="right">360</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/movies.m3u</code></td></tr>
-    <tr><td>Music</td><td align="right">591</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/music.m3u</code></td></tr>
-    <tr><td>News</td><td align="right">879</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/news.m3u</code></td></tr>
-    <tr><td>Outdoor</td><td align="right">40</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/outdoor.m3u</code></td></tr>
+    <tr><td>Kids</td><td align="right">208</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/kids.m3u</code></td></tr>
+    <tr><td>Legislative</td><td align="right">175</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/legislative.m3u</code></td></tr>
+    <tr><td>Lifestyle</td><td align="right">86</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/lifestyle.m3u</code></td></tr>
+    <tr><td>Movies</td><td align="right">352</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/movies.m3u</code></td></tr>
+    <tr><td>Music</td><td align="right">586</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/music.m3u</code></td></tr>
+    <tr><td>News</td><td align="right">867</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/news.m3u</code></td></tr>
+    <tr><td>Outdoor</td><td align="right">39</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/outdoor.m3u</code></td></tr>
     <tr><td>Public</td><td align="right">42</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/public.m3u</code></td></tr>
     <tr><td>Relax</td><td align="right">8</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/relax.m3u</code></td></tr>
     <tr><td>Religious</td><td align="right">675</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/religious.m3u</code></td></tr>
-    <tr><td>Science</td><td align="right">21</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/science.m3u</code></td></tr>
-    <tr><td>Series</td><td align="right">193</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/series.m3u</code></td></tr>
+    <tr><td>Science</td><td align="right">20</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/science.m3u</code></td></tr>
+    <tr><td>Series</td><td align="right">190</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/series.m3u</code></td></tr>
     <tr><td>Shop</td><td align="right">82</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/shop.m3u</code></td></tr>
-    <tr><td>Sports</td><td align="right">268</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/sports.m3u</code></td></tr>
+    <tr><td>Sports</td><td align="right">259</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/sports.m3u</code></td></tr>
     <tr><td>Travel</td><td align="right">38</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/travel.m3u</code></td></tr>
     <tr><td>Weather</td><td align="right">15</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/weather.m3u</code></td></tr>
     <tr><td>XXX</td><td align="right">0</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/xxx.m3u</code></td></tr>
-    <tr><td>Undefined</td><td align="right">4944</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/undefined.m3u</code></td></tr>
+    <tr><td>Undefined</td><td align="right">4867</td><td nowrap><code>https://iptv-org.github.io/iptv/categories/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
@@ -125,7 +125,7 @@ Same thing, but split up into separate files:
     <tr><td align="left">Dutch</td><td align="right">173</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/nld.m3u</code></td></tr>
     <tr><td align="left">Dyula</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/dyu.m3u</code></td></tr>
     <tr><td align="left">Egyptian Arabic</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/arz.m3u</code></td></tr>
-    <tr><td align="left">English</td><td align="right">2282</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/eng.m3u</code></td></tr>
+    <tr><td align="left">English</td><td align="right">2131</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/eng.m3u</code></td></tr>
     <tr><td align="left">Estonian</td><td align="right">8</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/est.m3u</code></td></tr>
     <tr><td align="left">Ewe</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/ewe.m3u</code></td></tr>
     <tr><td align="left">Faroese</td><td align="right">2</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/fao.m3u</code></td></tr>
@@ -235,7 +235,7 @@ Same thing, but split up into separate files:
     <tr><td align="left">South African Sign Language</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/sfs.m3u</code></td></tr>
     <tr><td align="left">South Ndebele</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/nbl.m3u</code></td></tr>
     <tr><td align="left">Southern Samo</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/sbd.m3u</code></td></tr>
-    <tr><td align="left">Spanish</td><td align="right">1545</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/spa.m3u</code></td></tr>
+    <tr><td align="left">Spanish</td><td align="right">1537</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/spa.m3u</code></td></tr>
     <tr><td align="left">Standard Arabic</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/arb.m3u</code></td></tr>
     <tr><td align="left">Sundanese</td><td align="right">3</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/sun.m3u</code></td></tr>
     <tr><td align="left">Swahili</td><td align="right">17</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/swa.m3u</code></td></tr>
@@ -277,7 +277,7 @@ Same thing, but split up into separate files:
     <tr><td align="left">Yue Chinese</td><td align="right">6</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/yue.m3u</code></td></tr>
     <tr><td align="left">Zarma</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/dje.m3u</code></td></tr>
     <tr><td align="left">Zulu</td><td align="right">1</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/zul.m3u</code></td></tr>
-    <tr><td align="left">Undefined</td><td align="right">3648</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
+    <tr><td align="left">Undefined</td><td align="right">3644</td><td align="left" nowrap><code>https://iptv-org.github.io/iptv/languages/undefined.m3u</code></td></tr>
   </tbody>
 </table>
 
@@ -967,8 +967,6 @@ Same thing, but split up into separate files:
   - Wales <code>https://iptv-org.github.io/iptv/subdivisions/gb-wls.m3u</code>
 - 🇺🇸 United States <code>https://iptv-org.github.io/iptv/countries/us.m3u</code>
   - Alabama <code>https://iptv-org.github.io/iptv/subdivisions/us-al.m3u</code>
-    - Birmingham <code>https://iptv-org.github.io/iptv/cities/usbhm.m3u</code>
-    - Dothan <code>https://iptv-org.github.io/iptv/cities/usdhn.m3u</code>
     - Mobile <code>https://iptv-org.github.io/iptv/cities/usmob.m3u</code>
   - Alaska <code>https://iptv-org.github.io/iptv/subdivisions/us-ak.m3u</code>
     - Juneau <code>https://iptv-org.github.io/iptv/cities/usjnu.m3u</code>
@@ -1102,13 +1100,11 @@ Same thing, but split up into separate files:
   - Georgia <code>https://iptv-org.github.io/iptv/subdivisions/us-ga.m3u</code>
     - Athens <code>https://iptv-org.github.io/iptv/cities/usahn.m3u</code>
     - Atlanta <code>https://iptv-org.github.io/iptv/cities/usatl.m3u</code>
-    - Augusta <code>https://iptv-org.github.io/iptv/cities/usags.m3u</code>
     - Cleveland <code>https://iptv-org.github.io/iptv/cities/uscqv.m3u</code>
     - Duluth <code>https://iptv-org.github.io/iptv/cities/usdga.m3u</code>
     - Kingsland <code>https://iptv-org.github.io/iptv/cities/usknl.m3u</code>
     - Macon <code>https://iptv-org.github.io/iptv/cities/usmcn.m3u</code>
     - Monroe <code>https://iptv-org.github.io/iptv/cities/usmoe.m3u</code>
-    - Savannah <code>https://iptv-org.github.io/iptv/cities/ussav.m3u</code>
   - Hawaii <code>https://iptv-org.github.io/iptv/subdivisions/us-hi.m3u</code>
     - Honolulu <code>https://iptv-org.github.io/iptv/cities/ushnl.m3u</code>
     - Kahului <code>https://iptv-org.github.io/iptv/cities/usogg.m3u</code>
@@ -1117,9 +1113,7 @@ Same thing, but split up into separate files:
     - Chicago <code>https://iptv-org.github.io/iptv/cities/uschi.m3u</code>
     - West Frankfort <code>https://iptv-org.github.io/iptv/cities/uskft.m3u</code>
   - Indiana <code>https://iptv-org.github.io/iptv/subdivisions/us-in.m3u</code>
-    - Fort Wayne <code>https://iptv-org.github.io/iptv/cities/usfwa.m3u</code>
     - Indianapolis <code>https://iptv-org.github.io/iptv/cities/usind.m3u</code>
-    - South Bend <code>https://iptv-org.github.io/iptv/cities/ussbn.m3u</code>
   - Iowa <code>https://iptv-org.github.io/iptv/subdivisions/us-ia.m3u</code>
     - Des Moines <code>https://iptv-org.github.io/iptv/cities/usdsm.m3u</code>
     - Ottumwa <code>https://iptv-org.github.io/iptv/cities/usotm.m3u</code>
@@ -1147,7 +1141,6 @@ Same thing, but split up into separate files:
     - Leominster <code>https://iptv-org.github.io/iptv/cities/uslmr.m3u</code>
     - Lexington <code>https://iptv-org.github.io/iptv/cities/uslxi.m3u</code>
     - Natick <code>https://iptv-org.github.io/iptv/cities/usnak.m3u</code>
-    - Springfield <code>https://iptv-org.github.io/iptv/cities/ussfy.m3u</code>
     - Worcester <code>https://iptv-org.github.io/iptv/cities/usorh.m3u</code>
   - Michigan <code>https://iptv-org.github.io/iptv/subdivisions/us-mi.m3u</code>
     - Battle Creek <code>https://iptv-org.github.io/iptv/cities/usbtl.m3u</code>
@@ -1160,7 +1153,6 @@ Same thing, but split up into separate files:
   - Mississippi <code>https://iptv-org.github.io/iptv/subdivisions/us-ms.m3u</code>
     - Columbus <code>https://iptv-org.github.io/iptv/cities/usubs.m3u</code>
     - Gulfport <code>https://iptv-org.github.io/iptv/cities/usgpt.m3u</code>
-    - Jackson <code>https://iptv-org.github.io/iptv/cities/usjan.m3u</code>
   - Missouri <code>https://iptv-org.github.io/iptv/subdivisions/us-mo.m3u</code>
     - Cape Girardeau <code>https://iptv-org.github.io/iptv/cities/uscgi.m3u</code>
     - Columbia <code>https://iptv-org.github.io/iptv/cities/uscou.m3u</code>
@@ -1171,7 +1163,6 @@ Same thing, but split up into separate files:
     - Lincoln <code>https://iptv-org.github.io/iptv/cities/uslnk.m3u</code>
     - Omaha <code>https://iptv-org.github.io/iptv/cities/usoma.m3u</code>
   - Nevada <code>https://iptv-org.github.io/iptv/subdivisions/us-nv.m3u</code>
-    - Henderson <code>https://iptv-org.github.io/iptv/cities/ushnz.m3u</code>
     - Las Vegas <code>https://iptv-org.github.io/iptv/cities/uslas.m3u</code>
   - New Hampshire <code>https://iptv-org.github.io/iptv/subdivisions/us-nh.m3u</code>
     - Derry <code>https://iptv-org.github.io/iptv/cities/usdnp.m3u</code>
@@ -1185,10 +1176,7 @@ Same thing, but split up into separate files:
     - Trenton <code>https://iptv-org.github.io/iptv/cities/usttn.m3u</code>
   - New Mexico <code>https://iptv-org.github.io/iptv/subdivisions/us-nm.m3u</code>
     - Albuquerque <code>https://iptv-org.github.io/iptv/cities/usabq.m3u</code>
-    - Roswell <code>https://iptv-org.github.io/iptv/cities/usrow.m3u</code>
   - New York <code>https://iptv-org.github.io/iptv/subdivisions/us-ny.m3u</code>
-    - Albany <code>https://iptv-org.github.io/iptv/cities/usalb.m3u</code>
-    - Buffalo <code>https://iptv-org.github.io/iptv/cities/usbuf.m3u</code>
     - New York City <code>https://iptv-org.github.io/iptv/cities/usnyc.m3u</code>
   - North Carolina <code>https://iptv-org.github.io/iptv/subdivisions/us-nc.m3u</code>
     - Charlotte <code>https://iptv-org.github.io/iptv/cities/usclt.m3u</code>
@@ -1225,9 +1213,7 @@ Same thing, but split up into separate files:
   - Tennessee <code>https://iptv-org.github.io/iptv/subdivisions/us-tn.m3u</code>
     - Chattanooga <code>https://iptv-org.github.io/iptv/cities/uscha.m3u</code>
     - Jackson <code>https://iptv-org.github.io/iptv/cities/usmkl.m3u</code>
-    - Knoxville <code>https://iptv-org.github.io/iptv/cities/ustys.m3u</code>
     - Memphis <code>https://iptv-org.github.io/iptv/cities/usmem.m3u</code>
-    - Nashville <code>https://iptv-org.github.io/iptv/cities/usbna.m3u</code>
   - Texas <code>https://iptv-org.github.io/iptv/subdivisions/us-tx.m3u</code>
     - Austin <code>https://iptv-org.github.io/iptv/cities/usaus.m3u</code>
     - Corpus Christi <code>https://iptv-org.github.io/iptv/cities/uscrp.m3u</code>
@@ -1237,7 +1223,6 @@ Same thing, but split up into separate files:
     - Fredericksburg <code>https://iptv-org.github.io/iptv/cities/usfxg.m3u</code>
     - Galveston <code>https://iptv-org.github.io/iptv/cities/usgls.m3u</code>
     - Houston <code>https://iptv-org.github.io/iptv/cities/ushou.m3u</code>
-    - San Antonio <code>https://iptv-org.github.io/iptv/cities/ussat.m3u</code>
     - Snyder <code>https://iptv-org.github.io/iptv/cities/ussnk.m3u</code>
     - Waco <code>https://iptv-org.github.io/iptv/cities/usact.m3u</code>
     - Weslaco <code>https://iptv-org.github.io/iptv/cities/uswko.m3u</code>
