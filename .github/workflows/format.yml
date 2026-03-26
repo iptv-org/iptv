@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: tibdex/github-app-token@v1.8.2
+      - uses: tibdex/github-app-token@0d49dd721133f900ebd5e0dff2810704e8defbc6 # v1.8.2
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
