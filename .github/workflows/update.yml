@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: tibdex/github-app-token@v1.8.2
+      - uses: tibdex/github-app-token@0d49dd721133f900ebd5e0dff2810704e8defbc6 # v1.8.2
         if: ${{ !env.ACT }}
         id: create-app-token
         with:
@@ -55,7 +55,7 @@ jobs:
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         run: git push
       - name: Deploy public playlists to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@164583b9e44b4fc5910e78feb607ea7c98d3c7b9 # 4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           repository-name: iptv-org/iptv
@@ -67,7 +67,7 @@ jobs:
           commit-message: '[Bot] Deploy to GitHub Pages'
           clean: true
       - name: Move .api/streams.json to iptv-org/api
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@164583b9e44b4fc5910e78feb607ea7c98d3c7b9 # 4.1.1
         if: ${{ !env.ACT && github.ref == 'refs/heads/master' }}
         with:
           repository-name: iptv-org/api
