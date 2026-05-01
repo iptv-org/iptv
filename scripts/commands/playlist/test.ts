@@ -9,6 +9,7 @@ import { truncate } from '../../utils'
 import { loadData } from '../../api'
 import { eachLimit } from 'async'
 import dns from 'node:dns'
+import path from 'node:path'
 import chalk from 'chalk'
 import os from 'node:os'
 
@@ -153,8 +154,12 @@ function drawTable() {
 }
 
 async function removeBrokenLinks() {
+  const allowedDir = path.resolve(ROOT_DIR, STREAMS_DIR)
   const streamsGrouped = streams.groupBy((stream: Stream) => stream.filepath)
   for (const filepath of streamsGrouped.keys()) {
+    const resolvedPath = path.resolve(ROOT_DIR, filepath)
+    if (!resolvedPath.startsWith(allowedDir + path.sep)) continue
+
     let streams: Collection<Stream> = new Collection(streamsGrouped.get(filepath))
 
     streams = streams.filter((stream: Stream) => !isBroken(stream))
