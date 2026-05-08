@@ -37,7 +37,8 @@ https://live.m2.tv/hls3/stream.m3u8
 http://93.78.206.172:8080/stream3/stream.m3u8
 #EXTINF:-1 tvg-id="PershiyXTVMedia.ua@SD" tvg-logo="https://i.imgur.com/M7oDym3.png" group-title="News",Pershiy XTV Media (576p)
 https://hls.xtvmedia.pp.ua:8443/hls/trk1tv.m3u8
-#EXTINF:-1 tvg-id="Pershyi.ua@SD" tvg-logo="https://i.imgur.com/osTQLED.png" group-title="General",Pershyi (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="Pershyi.ua" tvg-logo="https://i.imgur.com/osTQLED.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.109 Safari/537.36" group-title="General",Pershyi (1080p) [Geo-blocked]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.109 Safari/537.36
 https://ext.cdn.nashnet.tv/228.0.2.45/index.m3u8
 #EXTINF:-1 tvg-id="RenomeTV.ua@SD" tvg-logo="https://i.imgur.com/qL1uNlW.png" group-title="General",Renome (576p)
 http://85.238.112.40:8810/hls_sec/online/list-renome.m3u8
@@ -45,12 +46,12 @@ http://85.238.112.40:8810/hls_sec/online/list-renome.m3u8
 http://cdn10.live-tv.od.ua:8081/sk1zt/sk1zt720p/playlist.m3u8
 #EXTINF:-1 tvg-id="Skrypinua.ua@SD" tvg-logo="https://i.imgur.com/XtG3rfj.png" group-title="Undefined",Skrypin.ua (1080p) [Not 24/7]
 https://open-cdn.lanet.tv/play/skrypin.m3u8
-#EXTINF:-1 tvg-id="SuspilneKrym.ua@SD" tvg-logo="https://i.imgur.com/m7znCes.png" group-title="General",Suspilne. Krym (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SuspilneKrym.ua" tvg-logo="https://i.imgur.com/m7znCes.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.109 Safari/537.36" group-title="General",Suspilne. Krym (1080p) [Geo-blocked]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.109 Safari/537.36
 https://ext.cdn.nashnet.tv/228.0.0.71/index.m3u8
-#EXTINF:-1 tvg-id="SuspilneKultura.ua@SD" tvg-logo="https://i.imgur.com/hHMJV8e.png" group-title="Culture",Suspilne. Kultura (1080p) [Geo-blocked]
+#EXTINF:-1 tvg-id="SuspilneKultura.ua" tvg-logo="https://i.imgur.com/hHMJV8e.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.109 Safari/537.36" group-title="Culture",Suspilne. Kultura (1080p) [Geo-blocked]
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.7499.109 Safari/537.36
 https://ext.cdn.nashnet.tv/228.0.0.141/index.m3u8
-#EXTINF:-1 tvg-id="SuspilneSport.ua@SD" tvg-logo="https://i.imgur.com/16IhU0M.png" group-title="Sports",Suspilne. Sport (1080p) [Geo-blocked]
-https://cdnua05.hls.tv/934/hls/8743361621b245838bee193c9ec28322/4856/stream.m3u8
 #EXTINF:-1 tvg-id="TBNUkraine.us@SD" tvg-logo="https://i.imgur.com/PhbrGyM.png" group-title="Undefined",TBN Україна (720p)
 https://5d23269b3ec0c.streamlock.net/WEB_Ukraine24/ngrp:Ukraine24.stream-adaptive/playlist.m3u8
 #EXTINF:-1 tvg-id="TelekanalRAI.ua@SD" tvg-logo="https://i.imgur.com/Ouv51WB.png" group-title="General",Telekanal RAI (480p)
@@ -147,3 +148,5 @@ https://cdn15.live-tv.cloud/ua_infinitas_tv/7tvod-abr/playlist.m3u8
 https://cdn15.live-tv.cloud/ua_infinitas_tv/hrpl-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="FirstBusiness.ua@SD" tvg-logo="https://i.imgur.com/0wotE9n.png" group-title="Business",First Business (720p)
 https://lowa8026-cmyk.github.io/Ukraine/FirstBussines.m3u8
+#EXTINF:-1 tvg-id="Televsesvit.ua@SD" tvg-logo="https://i.imgur.com/ygexoKO.png" group-title="Undefined",Televsesvit (1080p)
+https://televsesvit.cdn-04.cosmonova.net.ua/hls/televsesvit_ua_hi/index.m3u8
