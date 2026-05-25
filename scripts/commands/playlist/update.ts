@@ -81,6 +81,10 @@ async function loadStreams() {
   const files = await streamsStorage.list('**/*.m3u')
 
   streams = await parser.parse(files)
+  streams = streams.map((stream: Stream) => {
+    stream.setGuides(apiData.guidesGroupedByStreamId.get(stream.getId()))
+    return stream
+  })
 }
 
 async function processIssues(issues: Collection<Issue>) {
@@ -132,7 +136,7 @@ async function removeStream(issue: Issue) {
   if (changed) {
     processedIssues.add(issue)
   } else {
-    log.error(`None of the URLs specified in the request were found in the playlists`)
+    log.error('None of the URLs specified in the request were found in the playlists')
     skippedIssues.add(issue)
   }
 }
@@ -161,6 +165,8 @@ async function editStream(issue: Issue) {
   cacheData()
 
   stream.updateWithIssue(data)
+
+  stream.setGuides(apiData.guidesGroupedByStreamId.get(stream.getId()))
 
   const errors = new Collection<Error>()
   errors.concat(stream.validate())
@@ -259,6 +265,8 @@ async function addStream(issue: Issue) {
   })
 
   stream.updateTitle().updateFilepath()
+
+  stream.setGuides(apiData.guidesGroupedByStreamId.get(stream.getId()))
 
   streams.add(stream)
 

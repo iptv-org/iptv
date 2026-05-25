@@ -13,6 +13,15 @@ export class Stream extends sdk.Models.Stream {
   removed: boolean = false
   tvgId?: string
   statusCode?: string
+  guides = new Collection<sdk.Models.Guide>()
+
+  setGuides(guides?: sdk.Models.Guide[]) {
+    this.guides = new Collection(guides)
+  }
+
+  getGuides(): Collection<sdk.Models.Guide> {
+    return this.guides
+  }
 
   validate(): Collection<Error> {
     const errors = new Collection<Error>()
@@ -80,12 +89,12 @@ export class Stream extends sdk.Models.Stream {
       quality: quality || null,
       url: data.url,
       referrer: data.http.referrer || null,
-      user_agent: data.http['user-agent'] || null
+      user_agent: data.http['user-agent'] || null,
+      label: label || null
     })
 
     stream.tvgId = data.tvg.id
     stream.line = data.line
-    stream.label = label || null
 
     return stream
   }

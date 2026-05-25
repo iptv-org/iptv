@@ -34,6 +34,10 @@ async function main() {
   })
   const files = await streamsStorage.list('**/*.m3u')
   let streams = await parser.parse(files)
+  streams = streams.map((stream: Stream) => {
+    stream.setGuides(data.guidesGroupedByStreamId.get(stream.getId()))
+    return stream
+  })
   const totalStreams = streams.count()
   logger.info(`found ${totalStreams} streams`)
 
@@ -62,32 +66,16 @@ async function main() {
   await new LanguagesGenerator({ streams, logFile }).generate()
 
   logger.info('generating countries/...')
-  await new CountriesGenerator({
-    countries,
-    streams,
-    logFile
-  }).generate()
+  await new CountriesGenerator({ countries, streams, logFile }).generate()
 
   logger.info('generating subdivisions/...')
-  await new SubdivisionsGenerator({
-    subdivisions,
-    streams,
-    logFile
-  }).generate()
+  await new SubdivisionsGenerator({ subdivisions, streams, logFile }).generate()
 
   logger.info('generating cities/...')
-  await new CitiesGenerator({
-    cities,
-    streams,
-    logFile
-  }).generate()
+  await new CitiesGenerator({ cities, streams, logFile }).generate()
 
   logger.info('generating regions/...')
-  await new RegionsGenerator({
-    streams,
-    regions,
-    logFile
-  }).generate()
+  await new RegionsGenerator({ streams, regions, logFile }).generate()
 
   logger.info('generating sources/...')
   await new SourcesGenerator({ streams, logFile }).generate()
@@ -99,10 +87,7 @@ async function main() {
   await new IndexCategoryGenerator({ streams, logFile }).generate()
 
   logger.info('generating index.country.m3u...')
-  await new IndexCountryGenerator({
-    streams,
-    logFile
-  }).generate()
+  await new IndexCountryGenerator({ streams, logFile }).generate()
 
   logger.info('generating index.language.m3u...')
   await new IndexLanguageGenerator({ streams, logFile }).generate()
