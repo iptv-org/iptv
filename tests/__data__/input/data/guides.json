@@ -1,1 +1,117 @@
-[]
+[
+  {
+    "channel": "AndorraTV.ad",
+    "feed": "SD",
+    "site": "sky.co.uk",
+    "site_id": "#",
+    "site_name": "Andorra TV",
+    "lang": "es",
+    "sources": [
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.xml",
+        "format": "XML"
+      },
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.xml.gz",
+        "format": "GZIP"
+      },
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.json",
+        "format": "JSON"
+      }
+    ]
+  },
+  {
+    "channel": "AlJazeera.qa",
+    "feed": "Arabic",
+    "site": "bbc.uk.com",
+    "site_id": "#",
+    "site_name": "Al Jazeera",
+    "lang": "en",
+    "sources": [
+      {
+        "host": "example2.com",
+        "url": "https://example2.com/guide.xml",
+        "format": "XML"
+      }
+    ]
+  },
+  {
+    "channel": "Zoo.ad",
+    "feed": "HD",
+    "site": "sky.co.uk",
+    "site_id": "#",
+    "site_name": "Zoo",
+    "lang": "es",
+    "sources": [
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.xml",
+        "format": "XML"
+      },
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.xml.gz",
+        "format": "GZIP"
+      }
+    ]
+  },
+  {
+    "channel": "NPO2.nl",
+    "feed": "SD",
+    "site": "sky.co.uk",
+    "site_id": "#",
+    "site_name": "NPO 2",
+    "lang": "dk",
+    "sources": [
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.xml",
+        "format": "XML"
+      },
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.xml.gz",
+        "format": "GZIP"
+      }
+    ]
+  },
+  {
+    "channel": "TFX.fr",
+    "feed": "SD",
+    "site": "sky.co.uk",
+    "site_id": "#",
+    "site_name": "TFX",
+    "lang": "fr",
+    "sources": [
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.xml",
+        "format": "XML"
+      },
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.xml.gz",
+        "format": "GZIP"
+      }
+    ]
+  },
+  {
+    "channel": "Tele2000.br",
+    "feed": "SD",
+    "site": "tele2000.br",
+    "site_id": "#",
+    "site_name": "Tele 2000",
+    "lang": "pt",
+    "sources": [
+      {
+        "host": "example2.com",
+        "url": "https://example2.com/guide.xml",
+        "format": "XML"
+      }
+    ]
+  }
+]
