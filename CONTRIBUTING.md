@@ -20,7 +20,7 @@ Regardless of which option you choose, before posting your request please do the
 
 - Make sure the link you want to add is stable, and works properly. To check this, open it in one of your usual players (for example, [VLC media player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
 - Make sure the link is not already in the playlist. This can be done by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- Make sure the link does not lead to a Xtream Codes server. [Why don't you accept links to Xtream Codes servers?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server). If you're unsure, please check [How to distinguish a link to an Xtream Codes server from a regular one?](#how-to-distinguish-a-link-to-an-xtream-codes-server-from-a-regular-one)
+- Make sure the link does not lead to a Xtream Codes server. [Why don't you accept links to Xtream Codes servers?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-servers). If you're unsure, please check [How to distinguish a link to an Xtream Codes server from a regular one?](#how-to-distinguish-a-link-to-an-xtream-codes-server-from-a-regular-one)
 - Make sure that the link leads directly to the broadcast, without unnecessary redirects.
 - Find the ID of the channel you want on [iptv-org.github.io](https://iptv-org.github.io/). If your desired channel is not on the list, you must add it via a request [here](https://github.com/iptv-org/database/issues/new/choose).
 - Make sure the channel is not blacklisted. It can also be done through [iptv-org.github.io](https://iptv-org.github.io/).
