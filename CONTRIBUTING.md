@@ -8,7 +8,7 @@
 
 ## How to?
 
-### How to add a new stream link to a playlists?
+### How to add a new stream link to a playlist?
 
 You have several options:
 
@@ -18,25 +18,25 @@ You have several options:
 
 Regardless of which option you choose, before posting your request please do the following:
 
-- Make sure the link you want to add works stably. To check this, open it in one of the players (for example, [VLC player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
+- Make sure the link you want to add is stable, and works properly. To check this, open it in one of your usual players (for example, [VLC media player](https://www.videolan.org/vlc/index.html)) and watch the broadcast for at least a minute (some test streams are interrupted after 15-30 seconds).
 - Make sure the link is not already in the playlist. This can be done by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- Make sure the link does not lead to the Xtream Codes server. [Why don't you accept links to Xtream Codes server?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server)
+- Make sure the link does not lead to a Xtream Codes server. [Why don't you accept links to Xtream Codes servers?](FAQ.md#why-dont-you-accept-links-to-xtream-codes-server). If you're unsure, please check [How to distinguish a link to an Xtream Codes server from a regular one?](#how-to-distinguish-a-link-to-an-xtream-codes-server-from-a-regular-one)
 - Make sure that the link leads directly to the broadcast, without unnecessary redirects.
-- Find the ID of the channel you want on [iptv-org.github.io](https://iptv-org.github.io/). If your desired channel is not on the list you can leave a request to add it [here](https://github.com/iptv-org/database/issues/new/choose).
-- Make sure the channel is not blocklisted. It can also be done through [iptv-org.github.io](https://iptv-org.github.io/).
+- Find the ID of the channel you want on [iptv-org.github.io](https://iptv-org.github.io/). If your desired channel is not on the list, you must add it via a request [here](https://github.com/iptv-org/database/issues/new/choose).
+- Make sure the channel is not blacklisted. It can also be done through [iptv-org.github.io](https://iptv-org.github.io/).
 - If you know that the broadcast only works in certain countries or it is periodically interrupted, do not forget to indicate this in the request.
 
-A requests without a valid stream ID or working link to the stream will be closed immediately.
+A request without a valid stream ID or working link to the stream will be closed immediately.
 
 Note all links in playlists are sorted automatically by scripts so there is no need to sort them manually. For more info, see [Scripts](#scripts).
 
 ### How to fix the stream description?
 
-Most of the stream description (channel name, feed name, categories, languages, broadcast area, logo) we load from the [iptv-org/database](https://github.com/iptv-org/database) using the stream ID.
+Most of the stream description (channel name, feed name, categories, languages, broadcast area, logo) is loaded from [iptv-org/database](https://github.com/iptv-org/database) using the stream ID.
 
-So first of all, make sure that the desired stream has the correct ID. A full list of all supported channels and their corresponding IDs can be found on [iptv-org.github.io](https://iptv-org.github.io/). To change the stream ID of any link in the playlist, just fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams%3Aedit&projects=&template=2_streams_edit.yml&title=Edit%3A+).
+First of all, make sure that the desired stream has the correct ID. A full list of all supported channels and their corresponding IDs can be found on [iptv-org.github.io](https://iptv-org.github.io/). To change the stream ID of any link in the playlist, just fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams%3Aedit&projects=&template=2_streams_edit.yml&title=Edit%3A+).
 
-If, however, you have found an error in the database itself, this is the place to go: [How to edit channel description?](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md#how-to-edit-channel-description)
+If, however, you have found an error in the database itself, please refer to: [How to edit channel description?](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md#how-to-edit-channel-description)
 
 ### How to distinguish a link to an Xtream Codes server from a regular one?
 
@@ -63,7 +63,7 @@ An issue without a valid link will be closed immediately.
 
 ### How to find a broken stream?
 
-For starters, you can just try to open the playlist in [VLC player](https://www.videolan.org/vlc/). The player outputs all errors to the log (Tools -> Messages) so you'll be able to determine pretty accurately why a link isn't working.
+For starters, you can just try to open the playlist in [VLC media player](https://www.videolan.org/vlc/). The player outputs all errors to the log (Tools -> Messages) so you'll be able to determine pretty accurately why a link isn't working.
 
 Another way to test links is to use the NPM script. To do this, first make sure you have [Node.js](https://nodejs.org/en) installed on your system. Then go to the `iptv` folder using [Console](https://en.wikipedia.org/wiki/Windows_Console) (or [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>) if you have macOS) and run the command:
 
@@ -150,7 +150,7 @@ http://example.com/stream.m3u8
   - `preview.png`: image displayed in the `README.md`.
   - `template.md`: template for `PLAYLISTS.md`.
 - `scripts/`: contains all scripts used in the repository.
-- `streams/`: contains all streams broken down by the country from which they are broadcast.
+- `streams/`: contains all streams broken down by country from which they are broadcasted.
 - `tests/`: contains tests to check the scripts.
 - `CONTRIBUTING.md`: file you are currently reading.
 - `PLAYLISTS.md`: auto-updated list of available playlists.
@@ -168,7 +168,7 @@ To run scripts use the `npm run <script-name>` command.
 - `act:format`: allows to test the [format](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
 - `act:update`: allows to test the [update](https://github.com/iptv-org/iptv/blob/master/.github/workflows/update.yml) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
 - `api:load`: downloads the latest channel and stream data from the [iptv-org/api](https://github.com/iptv-org/api).
-- `playlist:format`: formats internal playlists. The process includes [URL normalization](https://en.wikipedia.org/wiki/URI_normalization), duplicate removal, removing invalid id's and sorting links by channel name, quality, and label.
+- `playlist:format`: formats internal playlists. The process includes [URL normalization](https://en.wikipedia.org/wiki/URI_normalization), duplicate removal, removing invalid ids and sorting links by channel name, quality, and label.
 - `playlist:update`: triggers an update of internal playlists. The process involves processing approved requests from issues.
 - `playlist:generate`: generates all public playlists.
 - `playlist:validate`: сhecks ids and links in internal playlists for errors.
