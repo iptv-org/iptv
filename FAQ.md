@@ -13,7 +13,7 @@ No.
 ### Why is the channel on the iptv-org.github.io but not in the playlist?
 
 The site is an extensive database of all existing TV channels in the world, and does not represent a list of streams in our possession. Only those of them for which we have working stream links are included in the playlists.
-You may still check [iptv-org.github.io](https://iptv-org.github.io) with the "feeds:>1" parameter in the search bar to check all available feeds.
+You may still check [iptv-org.github.io](https://iptv-org.github.io) with the "streams:>0" parameter in the search bar to check all available streams.
 
 ### Can I add a radio broadcast?
 
