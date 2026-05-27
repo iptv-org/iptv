@@ -14,6 +14,7 @@ const data = {
   feedsKeyByStreamId: new Dictionary<sdk.Models.Feed>(),
   feedsGroupedByChannel: new Dictionary<sdk.Models.Feed[]>(),
   blocklistRecordsGroupedByChannel: new Dictionary<sdk.Models.BlocklistRecord[]>(),
+  guidesGroupedByStreamId: new Dictionary<sdk.Models.Guide[]>(),
   categories: new Collection<sdk.Models.Category>(),
   countries: new Collection<sdk.Models.Country>(),
   subdivisions: new Collection<sdk.Models.Subdivision>(),
@@ -37,7 +38,8 @@ async function loadData() {
     subdivisions,
     cities,
     regions,
-    blocklist
+    blocklist,
+    guides
   } = dataManager.getProcessedData()
 
   const searchableData = channels.map((channel: sdk.Models.Channel) => channel.getSearchable())
@@ -57,6 +59,9 @@ async function loadData() {
   data.blocklistRecordsGroupedByChannel = blocklist.groupBy(
     (blocklistRecord: sdk.Models.BlocklistRecord) => blocklistRecord.channel
   )
+  data.guidesGroupedByStreamId = guides
+    .filter((guide: sdk.Models.Guide) => !!guide.sources.length)
+    .groupBy((guide: sdk.Models.Guide) => guide.getStreamId())
   data.categories = categories
   data.countries = countries
   data.subdivisions = subdivisions
