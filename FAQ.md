@@ -12,12 +12,13 @@ No.
 
 ### Why is the channel on the iptv-org.github.io but not in the playlist?
 
-The site contains a list of all TV channels in the world and only those of them for which we have working stream links are included in the playlists.
+The site is an extensive database of all existing TV channels in the world, and does not represent a list of streams in our possession. Only those of them for which we have working stream links are included in the playlists.
+You may still check [iptv-org.github.io](https://iptv-org.github.io) with the "feeds:>1" parameter in the search bar to check all available feeds.
 
 ### Can I add a radio broadcast?
 
 Yes, if it is a [visual radio](https://en.wikipedia.org/wiki/Visual_radio) in which a video and audio are shown at the same time.
 
-### Why don't you accept links to Xtream Codes server?
+### Why don't you accept links to Xtream Codes servers?
 
 Xtream Codes streams tend to be very unstable, and often links to them fail very quickly, so it's easier for us to initially exclude them from the playlist than to search for expired ones every day.
