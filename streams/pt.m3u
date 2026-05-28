@@ -2,7 +2,7 @@
 #EXTINF:-1 tvg-id="ADBTV.pt@SD",ADB TV (1080p)
 https://live-tv.waytv.pt/adbtv/adbtv/playlist.m3u8
 #EXTINF:-1 tvg-id="ARTV.pt@SD",ARTV Canal Parlamento (720p) [Not 24/7]
-https://playout172.livextend.cloud/liveiframe/_definst_/liveartvabr/playlist.m3u8
+https://playout175.livextend.cloud/livenlin4/_definst_/2liveartvpub2/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.pt@SD",Disney Channel (1080p)
 http://151.80.18.177:86/Disney_Channel_HD/index.m3u8
 #EXTINF:-1 tvg-id="Famatv.pt@SD",Famatv (1080p) [Not 24/7]
@@ -28,7 +28,7 @@ https://stmv5.samcast.com.br/nasciparacantartv/nasciparacantartv/playlist.m3u8
 #EXTINF:-1 tvg-id="ONFM.pt@SD",ON FM (720p)
 https://5ce9406b73c33.streamlock.net/ONFM/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="PortoCanal.pt@SD",Porto Canal (720p)
-https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/smil:pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
+https://pull-live-156-1.global.ssl.fastly.net/pc5865dc25400thmb-ea6bf03b14fa318f7133/pc1-jhrgyuoqe5865db-68tkgb14fa318f7133f03.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioSines.pt@SD",Rádio Sines (720p) [Geo-blocked]
 https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RFPtv.pt@SD",RFPtv (360p)
@@ -63,14 +63,10 @@ https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPNoticias.pt@SD",RTP Noticias (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/livetvhlsDVR/rtpndvr.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="SIC.pt@SD",SIC (1080p) [Geo-blocked]
-https://sic.live.impresa.pt/sic.m3u8
 #EXTINF:-1 tvg-id="SIC.pt@SD",SIC (1080p)
 https://d1zx6l1dn8vaj5.cloudfront.net/out/v1/b89cc37caa6d418eb423cf092a2ef970/index.m3u8
 #EXTINF:-1 tvg-id="SICAltaDefinicao.pt@SD",SIC Alta Definição (1080p)
 https://production-fast-sic.content.okast.tv/fa2e8c4385712f9aa54bbe52b1bd9b6b/channels/d9070446-8448-455e-8075-773b1ba12562/fc831b20-f252-4e7d-8cc5-2d05f4d43c1c/media_.m3u8
-#EXTINF:-1 tvg-id="SICNoticias.pt@SD",SIC Notícias (1080p) [Geo-blocked]
-https://sicnot.live.impresa.pt/sicnot.m3u8
 #EXTINF:-1 tvg-id="SICReplay.pt@SD",SIC Replay (1080p)
 https://production-fast-sic.content.okast.tv/fa2e8c4385712f9a7dce4ff2dcebac2e/channels/d9070446-8448-455e-8075-773b1ba12562/d47eae0f-ad77-414a-9a1d-2a6628ba18c3/media_.m3u8
 #EXTINF:-1 tvg-id="TVMana1.pt@SD",TV Maná 1 (1080p)
@@ -88,10 +84,10 @@ https://w1.manasat.com/tvmana-leste/smil:tvmana-leste.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVI.pt@SD",TVI (720p)
 https://raw.githubusercontent.com/thomraider12/canaistvpt/main/m3u8s/tvi.m3u8
 #EXTINF:-1 tvg-id="TVIFiccao.pt@SD",TVI Ficção (720p)
-https://video-auth2.iol.pt/live_tvi_ficcao/live_tvi_ficcao/edge_servers/tvificcao-720p/playlist.m3u8
+https://video-auth1.iol.pt/live_tvi_ficcao/live_tvi_ficcao/edge_servers/tvificcao-720p/chunks.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NS8yOC8yMDI2IDk6ODo0MSBBTSZoYXNoX3ZhbHVlPVhPTC9Wa0JYOEZXcnpJMXg2bTF0cHc9PSZ2YWxpZG1pbnV0ZXM9MTQ0MCZpZD0yZmI1MWI1OC1jNzA5LTQ1YTktYTExMy00YTgyYTMyNWE2OTI=
 #EXTINF:-1 tvg-id="TVIReality.pt@SD",TVI Reality (720p) [Not 24/7]
-https://video-auth4.iol.pt/live_tvi_reality/live_tvi_reality/edge_servers/tvireality-720_passthrough/playlist.m3u8
+https://video-auth4.iol.pt/live_tvi_reality/live_tvi_reality/edge_servers/tvireality-720_passthrough/chunks.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NS8yOC8yMDI2IDk6ODo0MSBBTSZoYXNoX3ZhbHVlPU9sclREZEFwREp3RnFyZ3lKaFZ6U3c9PSZ2YWxpZG1pbnV0ZXM9MTQ0MCZpZD1kOTBlMzgyNi00YTRiLTQwYTAtYjU2Ni0wMzUzMjFmOTIwMzU=
 #EXTINF:-1 tvg-id="VPlusTVI.pt@SD",V+ TVI (720p)
-https://video-auth2.iol.pt/live_vmais/live_vmais/edge_servers/vmais-720p/playlist.m3u8
+https://video-auth2.iol.pt/edge_servers/vmais-720p/chunks.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9NS8yOC8yMDI2IDk6ODo0MCBBTSZoYXNoX3ZhbHVlPUJCWEtGYWtRMEFIbEdDUGEvTWpUOXc9PSZ2YWxpZG1pbnV0ZXM9MTQ0MCZpZD1kZWNkM2NmYS01ZWVlLTRlNzMtYTkxOC01MjgxYzM2ZjQ1OGQ=
 #EXTINF:-1 tvg-id="WayTV.pt@SD",Way TV
-https://stream-hls.castr-cdn.com/5d714f6a0bd97874e36f14e4/live_057ee4605c1711efbd4135c4457c726c/index.fmp4.m3u8
+https://wayonecloud.b-cdn.net/waytv/waytv1/playlist.m3u8
