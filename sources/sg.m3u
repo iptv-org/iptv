@@ -31,10 +31,12 @@ https://amg02159-amg02159c7-samsung-in-4001.playouts.now.amagi.tv/playlist/amg02
 https://tglmp04.akamaized.net/out/v1/898b1cbac7c747e3b1f3deb460e9b67e/manifest.mpd
 #EXTINF:-1 tvg-id="NickelodeonAsia.sg@Indonesia" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="Kids",Nickelodeon Asia Indonesia (720p)
 http://202.169.224.202:8800/udp/239.9.1.17:1234
-#EXTINF:-1 tvg-id="ROCKAction.sg@SD" tvg-logo="https://i.imgur.com/l6lmlqG.png" group-title="Entertainment",ROCK Action (720p)
-https://cdn10jtedge.indihometv.com/atm/DASH/ROCK_ACTION/manifest.mpd
-#EXTINF:-1 tvg-id="ROCKEntertainment.sg@SD" tvg-logo="https://i.imgur.com/PWzq0aU.png" group-title="Entertainment",ROCK Entertainment (720p)
-http://cdn10jtedge.indihometv.com/atm/DASH/rock_entertainment/manifest.mpd
+#EXTINF:-1 tvg-id="ROCKAction.sg@SD" tvg-logo="https://i.imgur.com/l6lmlqG.png" http-referrer="maxstream.tv/tv-channels" group-title="Entertainment",ROCK Action (720p)
+#EXTVLCOPT:http-referrer=maxstream.tv/tv-channels
+https://indihuy.streamized.net/atm/DASH/ROCK_ACTION/manifest.mpd
+#EXTINF:-1 tvg-id="ROCKEntertainment.sg@SD" tvg-logo="https://i.imgur.com/PWzq0aU.png" http-referrer="maxstream.tv/tv-channels" group-title="Entertainment",ROCK Entertainment (720p)
+#EXTVLCOPT:http-referrer=maxstream.tv/tv-channels
+http://indihuy.streamized.net/atm/DASH/rock_entertainment/manifest.mpd
 #EXTINF:-1 tvg-id="Suria.sg@SD" tvg-logo="https://i.imgur.com/9xWAwzy.png" group-title="Undefined",Suria
 https://app.viloud.tv/hls/channel/f0aa5d1d897c28bc8abed7afa90979c7.m3u8
 #EXTINF:-1 tvg-id="TechStorm.sg@SD" tvg-logo="https://i.imgur.com/fAprFBJ.png" group-title="Undefined",Tech Storm (720p) [Geo-blocked]

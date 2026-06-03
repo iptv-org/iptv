@@ -1397,6 +1397,8 @@ https://d32gxr3r1ksq2p.cloudfront.net/master.m3u8
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/euronews/euronews-en.m3u8?ads.vf=OUBOiYANcV0
 #EXTINF:-1 tvg-id="EuronewsEnglish.fr@HD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Euro_News.png" group-title="News",Euronews English HD
 https://dash4.antik.sk/live/test_euronews/playlist.m3u8
+#EXTINF:-1 tvg-id="EuropaEuropa.ar@SD" tvg-logo="https://i.imgur.com/w5SOfyJ.png" group-title="Series",Europa Europa
+http://181.119.93.83:8000/play/a1sr/index.m3u8
 #EXTINF:-1 tvg-id="EWTN.us@English" tvg-logo="https://i.imgur.com/sua70RO.png" group-title="Religious",EWTN (720p) [Geo-blocked]
 https://cdn3.wowza.com/1/QjRzVXJtVml5SUVx/WGJRSWxz/hls/live/playlist.m3u8
 #EXTINF:-1 tvg-id="EWTN.us@AfricaAsia" tvg-logo="https://i.imgur.com/sua70RO.png" group-title="Religious",EWTN Africa-Asia (720p)
@@ -2315,8 +2317,9 @@ https://sendlive.online/hls/mmtv.m3u8
 #EXTINF:-1 tvg-id="MNBWorld.mn@SD" tvg-logo="https://i.imgur.com/PHlj84Q.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="General",MNB World (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
 https://cdn4.skygo.mn/live/disk1/MNB_World/DASH-FTA/MNB_World.mpd
-#EXTINF:-1 tvg-id="MNCTV.id@SD" tvg-logo="https://i.imgur.com/SK8pjQy.png" group-title="General",MNCTV (720p)
-https://cdn10jtedge.indihometv.com/atm/DASH/mnctv/manifest.mpd
+#EXTINF:-1 tvg-id="MNCTV.id@SD" tvg-logo="https://i.imgur.com/SK8pjQy.png" http-referrer="maxstream.tv/tv-channels" group-title="General",MNCTV (720p)
+#EXTVLCOPT:http-referrer=maxstream.tv/tv-channels
+https://indihuy.streamized.net/atm/DASH/mnctv/manifest.mpd
 #EXTINF:-1 tvg-id="MNX.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MNX_HD/images/LOGO_HD/image.png" group-title="Movies",MNX HD (1080p)
 http://149.71.34.166:8000/play/a05u/index.m3u8
 #EXTINF:-1 tvg-id="MCPSSTV.us@SD" tvg-logo="https://i.imgur.com/qo5sk1g.png" group-title="Education",Mobile County Public Schools TV Network (MCPSS)
@@ -2701,8 +2704,6 @@ https://s-pl-01.mediatool.tv/playout/ntv-abr/index.m3u8
 https://tonton-live-switch-ssar.akamaized.net/stream-ntv7/master.m3u8?bpkio_serviceid=6c0958d82a830a02ca0936d9cfab8311
 #EXTINF:-1 tvg-id="NTVPlus.ca@SD" tvg-logo="https://i.imgur.com/YEUhPBv.png" group-title="Undefined",NTV+
 https://2-fss-1.streamhoster.com/pl_122/201748-1431018-1/chunklist.m3u8
-#EXTINF:-1 tvg-id="NudgeSportsChannel.ph@HD" tvg-logo="https://i.imgur.com/TW0hapZ.png" group-title="Sports",Nudge Sports Channel (1080p)
-https://streams.comclark.com/live_input/nudge_sports/playlist.m3u8
 #EXTINF:-1 tvg-id="NuViewTV.za@SD" tvg-logo="https://i.imgur.com/dYRJ7F0.png" group-title="Entertainment",NuView TV (360p)
 https://viewmedia7219.bozztv.com/wmedia/viewmedia100/web_002/Stream/playlist.m3u8
 #EXTINF:-1 tvg-id="NWInfo2.tg@SD" tvg-logo="https://i.imgur.com/0W4GqFD.png" group-title="News",NW Info 2 EN (576p)
@@ -3092,10 +3093,12 @@ https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26
 https://webstreaming-8.viewmedia.tv/web_119/Stream/playlist.m3u8
 #EXTINF:-1 tvg-id="Roar.us@SD" tvg-logo="https://iili.io/FxYNwOB.md.png" group-title="Entertainment",Roar (1080p)
 https://fast-channels.sinclairstoryline.com/TBD/index.m3u8
-#EXTINF:-1 tvg-id="ROCKAction.sg@SD" tvg-logo="https://i.imgur.com/l6lmlqG.png" group-title="Entertainment",ROCK Action (720p)
-https://cdn10jtedge.indihometv.com/atm/DASH/ROCK_ACTION/manifest.mpd
-#EXTINF:-1 tvg-id="ROCKEntertainment.sg@SD" tvg-logo="https://i.imgur.com/PWzq0aU.png" group-title="Entertainment",ROCK Entertainment (720p)
-http://cdn10jtedge.indihometv.com/atm/DASH/rock_entertainment/manifest.mpd
+#EXTINF:-1 tvg-id="ROCKAction.sg@SD" tvg-logo="https://i.imgur.com/l6lmlqG.png" http-referrer="maxstream.tv/tv-channels" group-title="Entertainment",ROCK Action (720p)
+#EXTVLCOPT:http-referrer=maxstream.tv/tv-channels
+https://indihuy.streamized.net/atm/DASH/ROCK_ACTION/manifest.mpd
+#EXTINF:-1 tvg-id="ROCKEntertainment.sg@SD" tvg-logo="https://i.imgur.com/PWzq0aU.png" http-referrer="maxstream.tv/tv-channels" group-title="Entertainment",ROCK Entertainment (720p)
+#EXTVLCOPT:http-referrer=maxstream.tv/tv-channels
+http://indihuy.streamized.net/atm/DASH/rock_entertainment/manifest.mpd
 #EXTINF:-1 tvg-id="RockyHillChannel16.us@SD" tvg-logo="https://i.imgur.com/2ZDcH2L.png" group-title="Legislative",Rocky Hill Government Access Channel 16 (480p)
 https://securestream9.champds.com/LIVE/RockyHillCTLIVE/RockyHillCTLIVE.m3u8
 #EXTINF:-1 tvg-id="RomedyNow.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ROMEDY_NOW/images/LOGO_HD/image.png" group-title="Movies",Romedy Now (576p)
@@ -3698,8 +3701,6 @@ https://lightning-tracesport-samsungau.amagi.tv/playlist.m3u8
 https://d2l4tng0wskzvn.cloudfront.net/Trace_GB.m3u8
 #EXTINF:-1 tvg-id="TraceUrban.fr@SD" tvg-logo="https://i.imgur.com/DLIbUMx.png" group-title="Music",Trace Urban (Australia) (1080p)
 https://lightning-traceurban-samsungau.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="TraceUrban.fr@HD" tvg-logo="https://i.imgur.com/DLIbUMx.png" group-title="Music",Trace Urban HD (1080p)
-http://103.213.31.109:90/TraceUrbanHD/playlist.m3u8
 #EXTINF:-1 tvg-id="Trailers.es@UK" tvg-logo="https://i.imgur.com/RwZ1hCN.png" group-title="News",Trailers (1080p)
 https://amg01821-lovetvchannels-lovemagazineuk-samsungse-p1sf1.amagi.tv/playlist/amg01821-lovetvchannels-lovemagazineuk-samsungse/playlist.m3u8
 #EXTINF:-1 tvg-id="TravelPlusAdventure.ru@SD" tvg-logo="https://i.imgur.com/AlpdXC4.png" group-title="Travel",Travel+Adventure (1080p)

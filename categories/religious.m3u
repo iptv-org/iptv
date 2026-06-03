@@ -957,8 +957,9 @@ https://livemtaasia.akamaized.net/hls/live/2039224/mta6asia/playlist.m3u8
 https://livemtaasia.akamaized.net/hls/live/2039224/mtaasia2/playlist.m3u8
 #EXTINF:-1 tvg-id="MTA8America.uk@SD" tvg-logo="https://i.imgur.com/CF6X9wB.png" group-title="Religious",MTA8 America (1080p)
 https://chlivemta.akamaized.net/hls/live/2016718/mta8/playlist.m3u8
-#EXTINF:-1 tvg-id="MTATV.id@SD" tvg-logo="https://i.imgur.com/3kGs7k0.png" group-title="Religious",MTA TV (540p)
-https://cdn10jtedge.indihometv.com/atm/DASH/mtatv/manifest.mpd
+#EXTINF:-1 tvg-id="MTATV.id@SD" tvg-logo="https://i.imgur.com/3kGs7k0.png" http-referrer="maxstream.tv/tv-channels" group-title="Religious",MTA TV
+#EXTVLCOPT:http-referrer=maxstream.tv/tv-channels
+https://indihuy.streamized.net/atm/DASH/mtatv/manifest.mpd
 #EXTINF:-1 tvg-id="MercyandTruthMinistriesTelevision.jm@SD" tvg-logo="https://i.imgur.com/krcVhrx.png" group-title="Religious",MTM TV (720p)
 https://angel.btbn.tv:5443/mtmtv/streams/live.m3u8
 #EXTINF:-1 tvg-id="MTNATV.cl@SD" tvg-logo="https://i.imgur.com/v7SA92F.png" group-title="Religious",MTNA TV

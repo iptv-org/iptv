@@ -1679,8 +1679,9 @@ https://reflect-jacksonville.cablecast.tv/live-7/live/live.m3u8
 https://langleyproductions-jail-1-eu.rakuten.wurl.tv/playlist.m3u8
 #EXTINF:-1 tvg-id="Jail.pl@Poland" tvg-logo="" group-title="Undefined",Jail
 https://e85541db4ae943d9b5a09477d6b1d8ab.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RakutenTV-eu_Jail/playlist.m3u8
-#EXTINF:-1 tvg-id="JakTV.id@SD" tvg-logo="https://i.imgur.com/xyLLLOi.png" group-title="Undefined",Jak TV (720p)
-https://cdn10jtedge.indihometv.com/atm/DASH/JAK_TV/manifest.mpd
+#EXTINF:-1 tvg-id="JakTV.id@SD" tvg-logo="https://i.imgur.com/xyLLLOi.png" http-referrer="maxstream.tv/tv-channels" group-title="Undefined",Jak TV (720p)
+#EXTVLCOPT:http-referrer=maxstream.tv/tv-channels
+https://indihuy.streamized.net/atm/DASH/JAK_TV/manifest.mpd
 #EXTINF:-1 tvg-id="" tvg-logo="" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" group-title="Undefined",Janataa TV Kannada (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
 https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/janataa-tv-kannada/index.m3u8?ads.vf=CVzrhUWs7jq
@@ -2382,6 +2383,8 @@ https://livecdn.live247stream.com/praise/tv/playlist.m3u8
 https://livetv.tarangplus.in/prarthana-origin/live/playlist.m3u8
 #EXTINF:-1 tvg-id="PravasiChannel.in@SD" tvg-logo="https://i.imgur.com/1dHarb7.png" group-title="Undefined",Pravasi Channel (1080p)
 https://m6gdavepdn93-hls-live.5centscdn.com/pravasi/d0dbe915091d400bd8ee7f27f0791303.sdp/playlist.m3u8
+#EXTINF:-1 tvg-id="PravdaTUTLviv.ua@SD" tvg-logo="https://i.imgur.com/IloW37o.png" group-title="Undefined",PravdaTUT Lviv (1080p)
+https://iptv.prosto.tv/ch192/tracks-v1a1/mono.m3u8?21yo=1&live=1&ip=104.28.156.59&id=742347&secret=vu2y5m72&e=1782901327&st=bflIqYjnSIr75ACfgV-mug
 #EXTINF:-1 tvg-id="Priamyi.ua@SD" tvg-logo="https://i.imgur.com/sEdzw80.png" http-user-agent="curl/8.16.0" group-title="Undefined",Priamyi (1080p)
 #EXTVLCOPT:http-user-agent=curl/8.16.0
 https://ext.cdn.nashnet.tv/228.0.0.122/index.m3u8
@@ -4282,8 +4285,9 @@ https://tvtouringw.iptv-playoutcenter.de/tvtouringw/tvtouringw.stream_1/playlist
 https://5cf4a2c2512a2.streamlock.net/tvmax/tvmax/playlist.m3u8
 #EXTINF:-1 tvg-id="TVMu.id@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/id/d/d0/TvMu.png" group-title="Undefined",TV Mu (720p) [Not 24/7]
 https://e.siar.us/live/tvmu.m3u8
-#EXTINF:-1 tvg-id="TVMUI.id@SD" tvg-logo="https://i.imgur.com/vWtViyC.png" group-title="Undefined",TV MUI (540p)
-https://cdn10jtedge.indihometv.com/atm/DASH/muitv/manifest.mpd
+#EXTINF:-1 tvg-id="TVMUI.id@SD" tvg-logo="https://i.imgur.com/vWtViyC.png" http-referrer="maxstream.tv/tv-channels" group-title="Undefined",TV MUI
+#EXTVLCOPT:http-referrer=maxstream.tv/tv-channels
+https://indihuy.streamized.net/atm/DASH/muitv/manifest.mpd
 #EXTINF:-1 tvg-id="TVNiksic.me@SD" tvg-logo="https://i.imgur.com/51fGwzn.png" group-title="Undefined",TV Niksic (720p)
 https://tv.rtv-niksic.me/hls/stream.m3u8
 #EXTINF:-1 tvg-id="TVOkazje.pl@SD" tvg-logo="https://i.imgur.com/DbALkkV.png" group-title="Undefined",TV Okazje (1080p) [Geo-blocked]
@@ -4441,8 +4445,12 @@ https://estreams.tv.nej.cz/dash/CH_TVP2_Portable.ism/playlist.mpd
 https://tvpi.travny.workers.dev/tvpdokument.m3u
 #EXTINF:-1 tvg-id="TVPInfo.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/28/TVP_info_%282024%29.png" group-title="Undefined",TVP Info (1080p)
 https://lowa8026-cmyk.github.io/tvpvod/399699.m3u8
+#EXTINF:-1 tvg-id="TVPNauka.pl@SD" tvg-logo="https://i.imgur.com/ga5Z8jf.png" group-title="Undefined",TVP Nauka (1080p)
+https://tvpi.travny.workers.dev/tvpnauka.m3u
 #EXTINF:-1 tvg-id="TVPPolonia.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/TVP_Polonia_Logo_2020.svg/960px-TVP_Polonia_Logo_2020.svg.png" group-title="Undefined",TVP Polonia (1080p)
 https://lowa8026-cmyk.github.io/tvpvod/399723.m3u8
+#EXTINF:-1 tvg-id="TVPRozrywka.pl@SD" tvg-logo="https://i.imgur.com/05Vx5px.png" group-title="Undefined",TVP Rozrywka (1080p)
+https://tvpi.travny.workers.dev/tvprozrywka.m3u
 #EXTINF:-1 tvg-id="TVPlusSuceava.ro@SD" tvg-logo="https://i.imgur.com/f4fzoLe.png" group-title="Undefined",TVPlus Suceava (576p)
 http://85.186.22.140/testing/pl5/playlist/ram/playlist.m3u8
 #EXTINF:-1 tvg-id="TVR.cl@SD" tvg-logo="https://i.postimg.cc/prDRDZw3/TVR-Logo.png" group-title="Undefined",TVR (1080p) [Not 24/7]
@@ -4488,9 +4496,6 @@ https://amg00886-uktvmedialimite-uktvplayuncovered-samsunguk-pxi83.amagi.tv/play
 https://amg00886-uktvmedialimite-uktvplayfullthrottle-samsunguk-36uja.amagi.tv/playlist/amg00886-uktvmedialimite-uktvplayfullthrottle-samsunguk/playlist.m3u8
 #EXTINF:-1 tvg-id="UW.uk@SD" tvg-logo="https://i.imgur.com/puBkpGj.png" group-title="Undefined",U&W
 http://92.114.85.72:8000/play/a0bj
-#EXTINF:-1 tvg-id="UBTVBrawijaya.id@SD" tvg-logo="https://i.imgur.com/BQIi7ko.png" http-referrer="https://tv.ub.ac.id" group-title="Undefined",UBTV Brawijaya (480p)
-#EXTVLCOPT:http-referrer=https://tv.ub.ac.id
-https://ubmedcom.siar.us/live/ubmedcom.m3u8
 #EXTINF:-1 tvg-id="UESTV.cl@SD" tvg-logo="https://i.imgur.com/tAyiNZV.png" group-title="Undefined",UESTV (720p)
 https://tls-cl.cdnz.cl/uestv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",UFC (1080p)

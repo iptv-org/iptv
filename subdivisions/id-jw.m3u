@@ -21,8 +21,9 @@ https://b.webcache.maxindo.net.id/dhamma/dhamma.m3u8
 https://dhohotv.siar.us/dhohotv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ElshintaTV.id@SD" tvg-logo="https://i.imgur.com/x5uoy2H.png" group-title="General",Elshinta TV
 https://ams.juraganstreaming.com:5443/LiveApp/streams/elshintatv.m3u8
-#EXTINF:-1 tvg-id="JakTV.id@SD" tvg-logo="https://i.imgur.com/xyLLLOi.png" group-title="Undefined",Jak TV (720p)
-https://cdn10jtedge.indihometv.com/atm/DASH/JAK_TV/manifest.mpd
+#EXTINF:-1 tvg-id="JakTV.id@SD" tvg-logo="https://i.imgur.com/xyLLLOi.png" http-referrer="maxstream.tv/tv-channels" group-title="Undefined",Jak TV (720p)
+#EXTVLCOPT:http-referrer=maxstream.tv/tv-channels
+https://indihuy.streamized.net/atm/DASH/JAK_TV/manifest.mpd
 #EXTINF:-1 tvg-id="JawaPosTV.id@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Jawa_Pos_TV_2024.svg/960px-Jawa_Pos_TV_2024.svg.png" group-title="General",Jawa Pos TV (720p)
 http://122.248.43.242:1935/JAWAPOSTVSBY/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="JawaPosTV.id@Jakarta" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Jawa_Pos_TV_2024.svg/960px-Jawa_Pos_TV_2024.svg.png" group-title="General",Jawa Pos TV Jakarta (720p)
@@ -110,8 +111,5 @@ https://ott-balancer.tvri.go.id/live/eds/Jateng/hls/Jateng.m3u8
 https://ott-balancer.tvri.go.id/live/eds/Jatim/hls/Jatim.m3u8
 #EXTINF:-1 tvg-id="TVRI.id@Yogyakarta" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/TVRILogo2019.svg/960px-TVRILogo2019.svg.png" group-title="General",TVRI Yogyakarta (720p)
 https://ott-balancer.tvri.go.id/live/eds/Jogjakarta/hls/Jogjakarta.m3u8
-#EXTINF:-1 tvg-id="UBTVBrawijaya.id@SD" tvg-logo="https://i.imgur.com/BQIi7ko.png" http-referrer="https://tv.ub.ac.id" group-title="Undefined",UBTV Brawijaya (480p)
-#EXTVLCOPT:http-referrer=https://tv.ub.ac.id
-https://ubmedcom.siar.us/live/ubmedcom.m3u8
 #EXTINF:-1 tvg-id="UGTV.id@SD" tvg-logo="https://i.imgur.com/iEKDH26.png" group-title="Undefined",UGTV (720p)
 https://cdn.gunadarma.ac.id/streams/ugtv/ingestugtv.m3u8
