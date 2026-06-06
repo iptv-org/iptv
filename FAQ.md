@@ -7,7 +7,7 @@ Start by asking our community for help via [Discussions](https://github.com/orgs
 Keep in mind that not all TV channels have some publicly available source for viewing online, and in this case there is little we can do about it.
 
 ### My favorite channel has disappeared from the playlist. Would you add it back?
-Make sure the channel wasn't [blocklisted](https://iptv-org.github.io/?q=is_blocked%3Atrue) recently and see [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
+Make sure the channel wasn't [blocklisted](https://iptv-org.github.io/?q=is_blocked%3Atrue) recently and see the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
 The repository simply contains user-submitted links to publicly available video stream URLs, note that we have no control over the stream sources. Unfortunately, if there's no alternate source that have been intentionally made public there is little we can do about it.
 
 ### Why do I see a channel that is not intended for my country?
