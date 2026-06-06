@@ -84,7 +84,7 @@ If you can change ```channelID``` numeric value within range of hundreds or thou
 - If it doesn't launch, open your browser and press F12, go to the Network tab and filter the search for m3u or mpd.<img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/245bdb7a-534d-4bde-af38-3a81a766347e" />
 
 
-Switch to Headers tab and scroll down to copy user-agent and refferer if needed (see [Stream Description Scheme](#stream-description-scheme)).
+Switch to Headers tab and scroll down to copy the user-agent and the referer if needed (see the [Stream Description Scheme](#stream-description-scheme)).
 <img width="880" height="567" alt="image" src="https://github.com/user-attachments/assets/d9ea4ba0-82b1-4217-b851-bcfef94a1f38" />
 
 - Watch the broadcast for at least a few minutes. Make sure playback is stable and not abrupting at some point.
