@@ -112,7 +112,7 @@ If, however, you have found an error in the database itself, please refer to: [H
 
 ### How to report a broken stream?
 
-Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:remove&projects=&template=3_streams_report.yml&title=Broken%3A+) and as soon as a working replacement appears, we will add it to the playlist or at least remove the non-working one.
+Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:remove&projects=&template=3_streams_report.yml&title=Broken%3A+) and we'll verify and remove it.
 
 The only thing before publishing your report is to make sure that:
 
