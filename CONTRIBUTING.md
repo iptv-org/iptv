@@ -206,7 +206,7 @@ There are two types of playlists that can be found in [streams/](https://github.
 Please consider that both playlists are not meant to be used by viewers and intended to stay that way for the ease of maintanance.
 All links in playlists are sorted automatically according to the information used from our [Database](https://iptv-org.github.io/) so there is no need to sort them manually. For more info, see [Scripts](#scripts).
 
-Each palylist file must
+Each playlist file must
 - Have an .m3u extension
 - Start from an ```#EXTM3U``` string
 - Strictly follow the [Stream Description Scheme](#stream-description-scheme) and pass linter checks from [check workflow](https://github.com/iptv-org/iptv/blob/master/.github/workflows/check.yml)
