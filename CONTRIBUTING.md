@@ -27,7 +27,7 @@
 Before submitting new streams you should verify the following:
 
 - Make sure the link has not been submitted into the repository before. This can be done by searching the [repository](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) or [iptv-org website](https://iptv-org.github.io/).
-- Each submitted link must have a registered ID that is properly assigned for the provided feed. You can check available IDs in [**iptv-org** Database](https://iptv-org.github.io). If it's not present yet please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md). Otherwise your stream links won't be delivered into automated playlists and won't be sorted out properly.
+- Each submitted stream link must have a registered Channel & Feed ID (eg: Channel@Feed) in the [iptv-org's Database](https://iptv-org.github.io). If it's not present, please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md) to add it. Otherwise, your stream links won't be delivered into automated playlists and won't be sorted out properly.
 - User-submitted links to stream URLs shall be intended to be publicly available by stream provider and the copyright holders.
 
 🤚 A request without a valid stream ID or working link to the stream will be closed immediately.
