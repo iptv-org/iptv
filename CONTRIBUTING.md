@@ -204,7 +204,7 @@ There are two types of playlists that can be found in [streams/](https://github.
 - By country origin playlists - imply that a studio broadcasting the channel has a headquarter in a select country. That doesn't necessarily imply that a stream is intended to be broadcasted for that select country.
 - By source playlists - imply that all of containing stream come from the same server or infrastructure and broadcast on behalf of the same provider.
 Please consider that both playlists are not meant to be used by viewers and intended to stay that way for the ease of maintanance.
-All links in playlists are sorted automatically according to the information used from [Database](https://iptv-org.github.io/) so there is no need to sort them manually. For more info, see [Scripts](#scripts).
+All links in playlists are sorted automatically according to the information used from our [Database](https://iptv-org.github.io/) so there is no need to sort them manually. For more info, see [Scripts](#scripts).
 
 Each palylist file must
 - Have an .m3u extension
