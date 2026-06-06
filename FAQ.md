@@ -1,7 +1,7 @@
 # Frequently Asked Questions
 
 ### My favorite channel is not on the playlist.
-Make sure the channel is not in the [blocklisted](https://iptv-org.github.io/?q=is_blocked%3Atrue) and see [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details. Some channels or content may not be provided in this repository due to copyright or GitHub terms of service issues.
+Make sure the channel is not [blocklisted](https://iptv-org.github.io/?q=is_blocked%3Atrue), see the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details. Some channels or content may not be provided in this repository due to copyright or GitHub terms of service issues.
 Start by asking our community for help via [Discussions](https://github.com/orgs/iptv-org/discussions). It is quite possible that someone already has a link to the channel you need and they just haven't added it to our playlists yet.
 
 Keep in mind that not all TV channels have some publicly available source for viewing online, and in this case there is little we can do about it.
