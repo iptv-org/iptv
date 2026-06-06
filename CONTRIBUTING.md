@@ -20,7 +20,7 @@
 
 ## Introduction
 
-**iptv-org** is more than just a repository for sharing currently available links in a playlist format. After years of commitment and moderation practices it has evolved into a knowledge base for [streams](https://github.com/iptv-org/iptv/tree/master/streams), [feeds and their descriptions](https://iptv-org.github.io/), [program guide sources](https://github.com/iptv-org/epg) and even the [API](https://github.com/iptv-org/api) updated daily for semi-automated distribution and moderation. Thus, to keep all available data in order, strict structural requirements must be followed and some contribution standards must be set.
+**iptv-org** is more than just a repository for sharing currently available links in a playlist format. After years of commitment and moderation practices it has evolved into a knowledge base for [streams](https://github.com/iptv-org/iptv/tree/master/streams), [feeds and their descriptions](https://iptv-org.github.io/), [program guide sources](https://github.com/iptv-org/epg) and even the [API](https://github.com/iptv-org/api) updated daily for semi-automated distribution and moderation. Thus, to keep all available data in order, strict structural requirements must be followed and some contribution standards must be set. Learn more in the following topic [How iptv-org works](https://github.com/orgs/iptv-org/discussions/1318)
 
 ## Requirements
 
@@ -81,15 +81,15 @@ If changing channelID to almost any value within a range of hundreds or thousand
 ### Testing
 
 - Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
-- If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.<img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/245bdb7a-534d-4bde-af38-3a81a766347e" />
-
-
-Switch to Headers tab and scroll down to copy the user-agent and the referer if needed (see the [Stream Description Scheme](#stream-description-scheme)).
-<img width="880" height="567" alt="image" src="https://github.com/user-attachments/assets/d9ea4ba0-82b1-4217-b851-bcfef94a1f38" />
+- If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.
+  <img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/2eec24df-21a4-4a77-8a96-4f967baf2548" />
+  
+  Switch to Headers tab and scroll down to copy the user-agent and the referer if needed (see the [Stream Description Scheme](#stream-description-scheme)).
+  <img width="660" height="425" alt="image" src="https://github.com/user-attachments/assets/6e0c4453-3e56-4ad3-86a7-c9430c33c188" />
 
 - Watch the broadcast for at least a few minutes. Make sure playback is stable and does not stop abruptly at some point.
 - Try restarting the stream. Make sure it's not looping on a repeating segment and is still available.
-- Try starting a stream simultaneously on a different device or network (e.g. mobile network or via proxy/VPN).
+- Try starting a stream simultaneously on a different device or network (e.g. mobile network or via [proxy](https://en.wikipedia.org/wiki/Proxy_server) or [VPN](https://en.wikipedia.org/wiki/Virtual_private_network)).
 - Alternatively, you can use https://streamtest.in/tools/stream-test.
 - To check if the stream link is geo-blocked you can use https://check-host.net/check-http and make sure the link provided is not returning errors globally.
 
@@ -97,7 +97,14 @@ Switch to Headers tab and scroll down to copy the user-agent and the referer if 
 ### How to submit a new stream?
 You have several options:
 
-- Create a new request using this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and if approved, the link will automatically be added to the playlist on the next update.
+- Create a new request by manually filling this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and if approved, the link will automatically be added to the playlist on the next update.
+- Use https://iptv-org.github.io/ to submit a stream for appropriate feed of the channel. To do that find a channel and press the feed link.
+  <img width="892" height="70" alt="image" src="https://github.com/user-attachments/assets/c1bee428-d8a5-4c80-b961-43f1f25e2be4" />
+
+  Then press a ➕ sign if it is required to add an additional feed first or press 3 dots over appropriate feed and choose Add Stream.
+  <img width="770" height="387" alt="image" src="https://github.com/user-attachments/assets/097087a1-da7e-4159-849d-baef552a0918" />
+  
+  This will submit a filled form that will be reviewed the same way.
 - Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls).
 Follow the [Playlist Structure](#playlist-structure) if you have considered that way.
 If you're adding an alternative link please do not replace any other link that might be working for some.
@@ -117,7 +124,7 @@ Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labe
 The only thing before publishing your report is to make sure that:
 
 - The link is still in our playlists. You can verify this by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- The link really doesn't work and is not just [geo-blocked](https://en.wikipedia.org/wiki/Geo-blocking). To check this, you can either use a [VPN](https://en.wikipedia.org/wiki/Virtual_private_network) or services such as [streamtest.in](https://streamtest.in/).
+- The link really doesn't work and is not just [geo-blocked](https://en.wikipedia.org/wiki/Geo-blocking). To double-check this, please follow our [Testing](#testing) guidelines.
 
 An issue without a valid link will be closed immediately.
 
