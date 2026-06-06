@@ -55,7 +55,7 @@ Make sure you can find the origin of the broadcast using your favourite search e
 - ```rtmp://10.113.179.1:port/prefix/channel```
 - ```http://10.113.179.1:port/play/a16j```
 
-❌ Links with expiring sessions will have one or more of cryptic looking parts either in main part of the link or within arguments like so: 
+❌ Links with expiring sessions may contain one or more arguments that will have a hash or random numeric value like so: 
 - ```?nimblesessionid=21683442```
 - ```&authid=```
 - ```&key=txiptv```
