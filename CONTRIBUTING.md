@@ -20,7 +20,7 @@
 
 ## Introduction
 
-IPTV-ORG is more than just a repository for sharing currently available links in a playlist format. After years of commitment and moderation practices it has evolved into knowledge base for [streams](https://github.com/iptv-org/iptv/tree/master/streams), [feeds and it's descriptions](https://iptv-org.github.io/), [program guide sources](https://github.com/iptv-org/epg) and even the [API](https://github.com/iptv-org/api) updated daily for semi-automated distribution and moderation. Thus, to keep all available data in order strict structural requirements must be held and some contribution standards must be set.
+**iptv-org** is more than just a repository for sharing currently available links in a playlist format. After years of commitment and moderation practices it has evolved into knowledge base for [streams](https://github.com/iptv-org/iptv/tree/master/streams), [feeds and it's descriptions](https://iptv-org.github.io/), [program guide sources](https://github.com/iptv-org/epg) and even the [API](https://github.com/iptv-org/api) updated daily for semi-automated distribution and moderation. Thus, to keep all available data in order strict structural requirements must be held and some contribution standards must be set.
 
 ## Requirements
 
