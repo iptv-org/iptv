@@ -10,6 +10,10 @@ Keep in mind that not all TV channels have some publicly available source for vi
 Make sure the channel wasn't [blocklisted](https://iptv-org.github.io/?q=is_blocked%3Atrue) recently and see [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
 The repository simply contains user-submitted links to publicly available video stream URLs, note that we have no control over the stream sources. Unfortunately, if there's no alternate source that have been intentionally made public there is little we can do about it.
 
+### Why do I see a channel that is not intended for my country?
+See the Playlist Strucutre section of the [Contributing Guide.md](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#playlist-structure)
+If you believe there's still an issue with automated sorting you can request to edit the feed info in [Database](https://github.com/iptv-org/database/issues) 
+
 ### Are you planning to include a Video On Demand (VOD) to the playlist?
 
 No.
