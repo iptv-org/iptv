@@ -35,7 +35,7 @@ Before submitting new streams you should verify the following:
 - The same treatment goes for channels that are known to partially or fully broadcast NSFW content (nudity & extreme acts), see the [Channel blocklist](https://iptv-org.github.io/?q=is_nsfw%3Atrue), the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) and https://github.com/iptv-org/iptv/issues/15723 for more details.
 - User-submitted links must not have any effective restrictions that limit viewers by authorization, by viewer count or by designated IP.
 - Test period links are not permitted.
-- User-submitted links must open in VLC media player (see [FAQ](https://github.com/iptv-org/iptv/blob/master/FAQ.md) for details).
+- User-submitted links must open in VLC media player (see the [FAQ](https://github.com/iptv-org/iptv/blob/master/FAQ.md) for more details).
 - If the host server requires a specific user-agent and/or a referer, is geo-blocked or may have downtimes, you should represent that in your contribution (see the [Stream Description Scheme](#stream-description-scheme)).
 - If possible please provide an adaptive link that covers every available resolution for a broadcast.
 - Follow the [Playlist Structure](#playlist-structure) in case of contributing by pull requests.
