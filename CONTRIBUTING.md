@@ -31,7 +31,7 @@ Before submitting new streams you should verify the following:
 - User-submitted links to stream URLs shall be intended to be publicly available by it's host and the copyright holders.
 
 🤚 A request without a valid stream ID or working link to the stream will be closed immediately.
-- Channels falling under DMCA strikes or broadcasting copyright content (such as Champion Leagues) at any time will not accepted, see [Channel blocklist](https://iptv-org.github.io/?q=is_blocked%3Atrue) and [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
+- Channels falling under DMCA strikes or broadcasting copyright content (such as the Champions League) at any time will not be accepted, see the [Channel blocklist](https://iptv-org.github.io/?q=is_blocked%3Atrue) and the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
 - Channels broadcasting NSFW content (nudity) at any time will not accepted, see [Channel blocklist](https://iptv-org.github.io/?q=is_nsfw%3Atrue), [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) and https://github.com/iptv-org/iptv/issues/15723 for details.
 - User-submitted links must not have any effective restrictions that limit viewers by authorization, by viewer count or by designated IP.
 - Test period links are not permitted.
