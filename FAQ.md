@@ -23,9 +23,14 @@ You may still check [iptv-org.github.io with the "streams:>0" parameter](https:/
 
 Yes, if it is a [visual radio](https://en.wikipedia.org/wiki/Visual_radio) in which a video and audio are shown at the same time.
 
+### How do I find a new working link?
+
+Find publicly available stream using your favourite search engine or by searching across Github.
+Carefully read Validation section of the [Contributing Guide.md](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#Validation)
+
 ### Why isn't my link accepted?
 
-See the Requirements and Validation sections of [Contributing Guide.md](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#Requirements)
+See the Requirements and Validation sections of the [Contributing Guide.md](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#Requirements)
 
 ### Why do you not accept links that work in my player of choice or in a browser?
 
