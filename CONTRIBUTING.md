@@ -88,7 +88,7 @@ Switch to Headers tab and scroll down to copy user-agent and refferer if needed 
 <img width="880" height="567" alt="image" src="https://github.com/user-attachments/assets/d9ea4ba0-82b1-4217-b851-bcfef94a1f38" />
 
 - Watch the broadcast for at least a few minutes. Make sure playback is stable and not abrupting at some point.
-- Attempt to relaunch a stream. Make sure it's not looping repeating segment.
+- Attempt to relaunch a stream. Make sure it's not looping on a repeating segment.
 - Attempt to launch a stream simultaneously on a different network (for example on mobile network or make use of proxy or VPN).
 - Alternatively, you can use https://streamtest.in/tools/stream-test.
 - To check if the stream link is geo-blocked you can use https://check-host.net/check-http and make sure the link provided is not returning errors globally.
