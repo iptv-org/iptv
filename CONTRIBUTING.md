@@ -43,7 +43,7 @@ Before submitting new streams you should verify the following:
 ## Validation
 ### How do I know if the stream is eligible?
 
-Make sure you can find origin of the broadcast using your favourite search engine or following the domain of broadcast. If you used to see the channel under paywalls or subscription offers it may likely be a copyright infringement. If you see a service with a probe period and available plans or you have found unrecognizable link in someone else's playlist it's likely to expire soon. Streams or services that have publicly available videoplayer are likely to perform publicly-intended broadcasts. Odds are your link will still be  session protected and only available to you.
+Make sure you can find the origin of the broadcast using your favourite search engine or by following the domain of broadcast. If you used to see the channel under paywalls or subscription offers, it may likely be a copyright infringement. If you see a service with a probe period and available plans or you have found an unrecognizable link in someone else's playlist, it's likely to expire soon. Streams or services that have publicly available videoplayers are likely to perform publicly-intended broadcasts. Odds are your link will still be session protected and will only be available to you.
 
 ### Examples
 
