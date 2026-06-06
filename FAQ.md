@@ -12,7 +12,7 @@ The repository simply contains user-submitted links to publicly available video 
 
 ### Why do I see a channel that is not intended for my country?
 See the Playlist Strucutre section of the [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md#playlist-structure)
-If you believe there's still an issue with automated sorting you can request to edit the feed info in [Database](https://github.com/iptv-org/database/issues) 
+If you still believe the broadcast area or language is wrong, you can request to edit the feed info in our [Database](https://github.com/iptv-org/database/issues)
 
 ### Are you planning to include a Video On Demand (VOD) to the playlist?
 
