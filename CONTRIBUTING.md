@@ -99,7 +99,7 @@ You have several options:
 
 - Create a new request using this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and if approved, the link will automatically be added to the playlist on the next update.
 - Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls).
-See [Playlist Structure](#playlist-structure) if you have considered that way.
+Follow the [Playlist Structure](#playlist-structure) if you have considered that way.
 If you're adding an alternative link please do not replace any other link that might be working for some.
 
 ### How to fix the stream description?
