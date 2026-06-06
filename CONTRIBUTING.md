@@ -200,7 +200,7 @@ http://example.com/stream.m3u8
 ```
 
 ## Playlist Structure
-There are two types of playlists that can be found in [streams/](https://github.com/iptv-org/iptv/tree/master/streams) directory:
+There are two types of playlists that can be found in the [streams/](https://github.com/iptv-org/iptv/tree/master/streams) directory:
 - By country origin playlists - imply that a studio broadcasting the channel has a headquarter in a select country. That doesn't necessarily imply that a stream is intended to be broadcasted for that select country.
 - By source playlists - imply that all of containing stream come from the same server or infrastructure and broadcast on behalf of the same provider.
 Please consider that both playlists are not meant to be used by viewers and intended to stay that way for the ease of maintanance.
