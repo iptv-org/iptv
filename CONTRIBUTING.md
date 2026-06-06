@@ -20,19 +20,19 @@
 
 ## Introduction
 
-**iptv-org** is more than just a repository for sharing currently available links in a playlist format. After years of commitment and moderation practices it has evolved into knowledge base for [streams](https://github.com/iptv-org/iptv/tree/master/streams), [feeds and it's descriptions](https://iptv-org.github.io/), [program guide sources](https://github.com/iptv-org/epg) and even the [API](https://github.com/iptv-org/api) updated daily for semi-automated distribution and moderation. Thus, to keep all available data in order strict structural requirements must be held and some contribution standards must be set.
+**iptv-org** is more than just a repository for sharing currently available links in a playlist format. After years of commitment and moderation practices it has evolved into a knowledge base for [streams](https://github.com/iptv-org/iptv/tree/master/streams), [feeds and their descriptions](https://iptv-org.github.io/), [program guide sources](https://github.com/iptv-org/epg) and even the [API](https://github.com/iptv-org/api) updated daily for semi-automated distribution and moderation. Thus, to keep all available data in order, strict structural requirements must be followed and some contribution standards must be set.
 
 ## Requirements
 
 Before submitting new streams you should verify the following:
 
 - Make sure the link has not been submitted into the repository before. This can be done by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- Each submitted link must have a registered ID that is properly assigned for the provided feed. You can check available IDs in [IPTV-ORG Database](https://iptv-org.github.io). If it's not present yet please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md). Otherwise your stream links won't be delivered into automated playlists and won't be sorted out properly.
-- User-submitted links to stream URLs shall be intended to be publicly available by it's host and the copyright holders.
+- Each submitted link must have a registered ID that is properly assigned for the provided feed. You can check available IDs in [**iptv-org** Database](https://iptv-org.github.io). If it's not present yet please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md). Otherwise your stream links won't be delivered into automated playlists and won't be sorted out properly.
+- User-submitted links to stream URLs shall be intended to be publicly available by stream provider and the copyright holders.
 
 🤚 A request without a valid stream ID or working link to the stream will be closed immediately.
-- Channels falling under DMCA strikes or broadcasting copyright content (such as the Champions League) at any time will not be accepted, see the [Channel blocklist](https://iptv-org.github.io/?q=is_blocked%3Atrue) and the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
-- The same treatment goes for channels that are known to partially or fully broadcast NSFW content (nudity & extreme acts), see the [Channel blocklist](https://iptv-org.github.io/?q=is_nsfw%3Atrue), the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) and https://github.com/iptv-org/iptv/issues/15723 for more details.
+- Channels under DMCA takedown notices or broadcasting copyrighted content (such as the Champions League) at any time will not be accepted, see the [Channel blocklist](https://iptv-org.github.io/?q=is_blocked%3Atrue) and the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
+- The same applies to channels that are known to partially or fully broadcast NSFW content (nudity & extreme acts), see the [Channel blocklist](https://iptv-org.github.io/?q=is_nsfw%3Atrue), the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) and https://github.com/iptv-org/iptv/issues/15723 for more details.
 - User-submitted links must not have any effective restrictions that limit viewers by authorization, by viewer count or by designated IP.
 - Test period links are not permitted.
 - User-submitted links must open in VLC media player (see the [FAQ](https://github.com/iptv-org/iptv/blob/master/FAQ.md) for more details).
@@ -81,15 +81,15 @@ If changing channelID to almost any value within a range of hundreds or thousand
 ### Testing
 
 - Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
-- If it doesn't launch, open your browser and press F12, go to the Network tab and filter the search for m3u or mpd.<img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/245bdb7a-534d-4bde-af38-3a81a766347e" />
+- If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.<img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/245bdb7a-534d-4bde-af38-3a81a766347e" />
 
 
 Switch to Headers tab and scroll down to copy the user-agent and the referer if needed (see the [Stream Description Scheme](#stream-description-scheme)).
 <img width="880" height="567" alt="image" src="https://github.com/user-attachments/assets/d9ea4ba0-82b1-4217-b851-bcfef94a1f38" />
 
-- Watch the broadcast for at least a few minutes. Make sure playback is stable and not abrupting at some point.
-- Attempt to relaunch a stream. Make sure it's not looping on a repeating segment.
-- Attempt to launch a stream simultaneously on a different network (for example on mobile network or make use of proxy or VPN).
+- Watch the broadcast for at least a few minutes. Make sure playback is stable and does not stop abruptly at some point.
+- Try restarting the stream. Make sure it's not looping on a repeating segment and is still available.
+- Try starting a stream simultaneously on a different device or network (e.g. mobile network or via proxy/VPN).
 - Alternatively, you can use https://streamtest.in/tools/stream-test.
 - To check if the stream link is geo-blocked you can use https://check-host.net/check-http and make sure the link provided is not returning errors globally.
 
@@ -177,7 +177,7 @@ STREAM_URL
 
 | Attribute      | Description                                                                                                                                                                | Required | Valid values                                 |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------- |
-| `STREAM_ID`    | Stream ID consisting of channel ID and feed ID. Full list of supported channels with corresponding ID could be found on [iptv-org.github.io](https://iptv-org.github.io/). | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
+| `STREAM_ID`    | Stream ID consisting of channel ID and feed ID. Full list of supported channels with corresponding ID can be found on [iptv-org.github.io](https://iptv-org.github.io/). | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
 | `STREAM_TITLE` | Stream title consisting of channel name and feed name. May contain any characters except: `,`, `[`, `]`.                                                                   | Required | -                                            |
 | `QUALITY`      | Maximum stream quality.                                                                                                                                                    | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
 | `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users.                                                                                 | Optional | `Geo-blocked` or `Not 24/7`                  |
@@ -203,7 +203,7 @@ http://example.com/stream.m3u8
 There are two types of playlists that can be found in the [streams/](https://github.com/iptv-org/iptv/tree/master/streams) directory:
 - Playlists by country of origin — indicate that the studio broadcasting the channel is headquartered in a particular country. This does not necessarily mean that the stream is intended for viewers in that same country.
 - Playlists by source - imply that all the containing streams comes from the same server or infrastructure and broadcast on behalf of the same provider.
-Please consider that both playlists are not meant to be used by viewers and intended to stay that way for the ease of maintanance.
+Please note that both playlist types are not intended for end users and are meant to remain that way for ease of maintenance.
 All links in playlists are sorted automatically according to the information used from our [Database](https://iptv-org.github.io/) so there is no need to sort them manually. For more info, see [Scripts](#scripts).
 
 Each playlist file must
@@ -244,14 +244,14 @@ To run scripts use the `npm run <script-name>` command.
 - `playlist:format`: formats internal playlists. The process includes [URL normalization](https://en.wikipedia.org/wiki/URI_normalization), duplicate removal, removing invalid ids and sorting links by channel name, quality, and label.
 - `playlist:update`: triggers an update of internal playlists. The process involves processing approved requests from issues.
 - `playlist:generate`: generates all public playlists.
-- `playlist:validate`: сhecks ids and links in internal playlists for errors.
-- `playlist:lint`: сhecks internal playlists for syntax errors.
+- `playlist:validate`: checks ids and links in internal playlists for errors.
+- `playlist:lint`: checks internal playlists for syntax errors.
 - `playlist:test`: tests links in internal playlists.
 - `playlist:edit`: utility for quick streams mapping.
 - `playlist:export`: creates a JSON file with all streams for the [iptv-org/api](https://github.com/iptv-org/api) repository.
 - `readme:update`: updates the list of playlists in [README.md](README.md).
 - `report:create`: creates a report on current issues.
-- `lint`: сhecks the scripts for syntax errors.
+- `lint`: checks the scripts for syntax errors.
 - `test`: runs a test of all the scripts described above.
 
 ## Workflows
@@ -260,6 +260,6 @@ To automate the run of the scripts described above, we use the [GitHub Actions w
 
 Each workflow includes its own set of scripts that can be run either manually or in response to an event.
 
-- `check`: sequentially runs the `api:load`, `playlist:check` and `playlist:validate` scripts when a new pull request appears, and blocks the merge if it detects an error in it.
+- `check`: sequentially runs the `api:load`, `playlist:check` and `playlist:validate` scripts when a new pull request appears, and blocks the merge if it detects an error.
 - `format`: sequentially runs `api:load`, `playlist:format`, `playlist:lint` and `playlist:validate` scripts.
 - `update`: every day at 0:00 UTC sequentially runs `api:load`, `playlist:update`, `playlist:lint`, `playlist:validate`, `playlist:generate`, `playlist:export` and `readme:update` scripts and deploys the output files if successful.
