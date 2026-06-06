@@ -64,7 +64,7 @@ Make sure you can find origin of the broadcast using your favourite search engin
 - ```&e=1783194414```
 - ```&st=Lz1QtjfblUmkawUbk1Mx6w```
 
-There might be notable examples when a session must be created but it doesn't impose any meaningful limits, for ex
+There might be notable examples when a session must be created but it doesn't impose any meaningful limits, eg. :
 
 ```https://bl.rutube.ru/livestream/id/index.m3u8?e=2070278263&s=sessiontoken&scheme=https```
 
