@@ -208,7 +208,7 @@ All links in playlists are sorted automatically according to the information use
 
 Each playlist file must
 - Have an .m3u extension
-- Start from an ```#EXTM3U``` string
+- Start with a ```#EXTM3U``` header
 - Strictly follow the [Stream Description Scheme](#stream-description-scheme) and pass linter checks from [check workflow](https://github.com/iptv-org/iptv/blob/master/.github/workflows/check.yml)
 - Use CRLF file endings and use UTF-8 encoding without BOM
 
