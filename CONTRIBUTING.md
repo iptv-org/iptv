@@ -76,7 +76,7 @@ where there only limitation is that the session will expire in 2035. You can che
 - ```http://cdn.domain.com/credentialhash/channelID/index.m3u8```
 - ```http://cdn.domain.com/channelID/mpegts?token=CTkHfXdAqvPcwq```
 
-If you can change ```channelID``` numeric value within range of hundreds or thousands channels and still have a stream then it comes from leaked account or trial period account.
+If changing channelID to almost any value within a range of hundreds or thousands of IDs results in a valid stream from a different channel, then it likely comes from a leaked account or a trial account
 
 ### Testing
 
