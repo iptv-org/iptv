@@ -81,7 +81,7 @@ If you can change ```channelID``` numeric value within range of hundreds or thou
 ### Testing
 
 - Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
-- If it doesn't launch open your browser and press F12, go to the Network tab and filter the search for m3u or mpd.<img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/245bdb7a-534d-4bde-af38-3a81a766347e" />
+- If it doesn't launch, open your browser and press F12, go to the Network tab and filter the search for m3u or mpd.<img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/245bdb7a-534d-4bde-af38-3a81a766347e" />
 
 
 Switch to Headers tab and scroll down to copy user-agent and refferer if needed (see [Stream Description Scheme](#stream-description-scheme)).
