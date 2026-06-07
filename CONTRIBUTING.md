@@ -182,7 +182,7 @@ If changing channelID to almost any value within a range of hundreds or thousand
 - Try restarting the stream. Make sure it's not looping on a repeating segment and is still available.
 - Alternatively, you can use services like [streamtest.in](https://streamtest.in/tools/stream-test).
 - Alternatively, you can use https://streamtest.in/tools/stream-test.
-- To check if the stream link is geo-blocked you can use https://check-host.net/check-http and make sure the link provided is not returning errors globally.
+- To check if the stream link is geo-blocked you can use services like [check-host.net](https://check-host.net/check-http).
 
 ## Stream Description Scheme
 
