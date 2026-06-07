@@ -111,7 +111,8 @@ The channel will also be added to our [blocklist](https://github.com/iptv-org/da
 
 Please note that we only accept removal requests from channel owners and their official representatives, all other requests will be closed immediately.
 
-## Link Requirements
+## Link Requirements
+
 
 Before submitting new streams you should verify the following:
 
@@ -127,7 +128,8 @@ Before submitting new streams you should verify the following:
 - If possible please provide an adaptive link that covers every available resolution for a broadcast.
 - Follow the [Playlist Structure](#playlist-structure) in case of contributing by pull requests.
 
-## Stream Validation
+## Stream Validation
+
 ### How do I know if the stream is eligible?
 
 Make sure you can find the origin of the broadcast using your favourite search engine or by following the domain of broadcast. If you used to see the channel under paywalls or subscription offers, it may likely be a copyright infringement. If you see a service with a probe period and available plans or you have found an unrecognizable link in someone else's playlist, it's likely to expire soon. Streams or services that have publicly available videoplayers are likely to perform publicly-intended broadcasts. Odds are your link will still be session protected and will only be available to you.
@@ -167,7 +169,7 @@ where there only limitation is that the session will expire in 2035. You can che
 If changing channelID to almost any value within a range of hundreds or thousands of IDs results in a valid stream from a different channel, then it likely comes from a leaked account or a trial account
 
 ### Testing
-
+- If it doesn't launch, try open the link in your browser. Press F12, go to the "Network" tab, and filter requests for `m3u` or `mpd`.
 - Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
 - If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.
   <img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/2eec24df-21a4-4a77-8a96-4f967baf2548" />
