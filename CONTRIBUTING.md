@@ -63,6 +63,8 @@ Make sure you can find the origin of the broadcast using your favourite search e
 - ```&secret=f8z1l7gk```
 - ```&e=1783194414```
 - ```&st=Lz1QtjfblUmkawUbk1Mx6w```
+- ```&token=```
+- ```&hmac=```
 
 There might be notable examples when a session must be created but it doesn't impose any meaningful limits, eg. :
 
