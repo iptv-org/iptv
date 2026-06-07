@@ -1,17 +1,17 @@
 # Contributing Guide
 
 - [Introduction](#introduction)
-- [Requirements](#requirements)
-- [Validation](#validation)
-  - [How do I know if the stream is eligible?](#how-do-i-know-if-the-stream-is-eligible)
-  - [Examples](#examples)
-  - [Testing](#testing)
 - [Contribution](#contribution)
   - [Submitting a new stream](#how-to-submit-a-new-stream)
   - [Fixing descriptions](#how-to-fix-the-stream-description)
   - [Reporting of broken streams](#how-to-report-a-broken-stream)
   - [Finding of broken streams](#how-to-find-a-broken-stream)
   - [Removing infrighting content](#how-to-remove-my-channel-from-playlist)
+- [Requirements](#requirements)
+- [Validation](#validation)
+  - [How do I know if the stream is eligible?](#how-do-i-know-if-the-stream-is-eligible)
+  - [Examples](#examples)
+  - [Testing](#testing)
 - [Stream Description Scheme](#stream-description-scheme)
 - [Playlist Structure](#playlist-structure)
 - [Project Structure](#project-structure)
@@ -22,81 +22,13 @@
 
 **iptv-org** is more than just a repository for sharing currently available links in a playlist format. After years of commitment and moderation practices it has evolved into a knowledge base for [streams](https://github.com/iptv-org/iptv/tree/master/streams), [feeds and their descriptions](https://iptv-org.github.io/), [program guide sources](https://github.com/iptv-org/epg) and even the [API](https://github.com/iptv-org/api) updated daily for semi-automated distribution and moderation. Thus, to keep all available data in order, strict structural requirements must be followed and some contribution standards must be set. Learn more in the following topic [How iptv-org works](https://github.com/orgs/iptv-org/discussions/1318)
 
-## Requirements
-
-Before submitting new streams you should verify the following:
-
-- Make sure the link has not been submitted into the repository before. This can be done by searching the [repository](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) or [iptv-org website](https://iptv-org.github.io/).
-- Each submitted stream link must have a registered Channel & Feed ID (eg: Channel@Feed) in the [iptv-org's Database](https://iptv-org.github.io). If it's not present, please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md) to add it. Otherwise, your stream links won't be delivered into automated playlists and won't be sorted out properly.
-- User-submitted links to stream URLs shall be intended to be publicly available by stream provider and the copyright holders.
-
-🤚 A request without a valid stream ID or working link to the stream will be closed immediately.
-- Channels under DMCA takedown notices or broadcasting copyrighted content (such as the Champions League) at any time will not be accepted, see the [Channel blocklist](https://iptv-org.github.io/?q=is_blocked%3Atrue) and the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
-- The same applies to channels that are known to partially or fully broadcast NSFW content (nudity & extreme acts), see the [Channel blocklist](https://iptv-org.github.io/?q=is_nsfw%3Atrue), the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) and https://github.com/iptv-org/iptv/issues/15723 for more details.
-- User-submitted links must not have any effective restrictions that limit viewers by authorization, by viewer count or by designated IP.
-- Test period links are not permitted.
-- User-submitted links must open in VLC media player (see the [FAQ](https://github.com/iptv-org/iptv/blob/master/FAQ.md) for more details).
-- If the host server requires a specific user-agent and/or a referer, is geo-blocked or may have downtimes, you should represent that in your contribution (see the [Stream Description Scheme](#stream-description-scheme)).
-- If possible please provide an adaptive link that covers every available resolution for a broadcast.
-- Follow the [Playlist Structure](#playlist-structure) in case of contributing by pull requests.
-
-## Validation
-### How do I know if the stream is eligible?
-
-Make sure you can find the origin of the broadcast using your favourite search engine or by following the domain of broadcast. If you used to see the channel under paywalls or subscription offers, it may likely be a copyright infringement. If you see a service with a probe period and available plans or you have found an unrecognizable link in someone else's playlist, it's likely to expire soon. Streams or services that have publicly available videoplayers are likely to perform publicly-intended broadcasts. Odds are your link will still be session protected and will only be available to you.
-
-### Examples
-
-✅ Valid links usually have a format like so
-
-- ```https://cdn.domain.com/channelname/chunks or playlist or any other name.m3u8 or mpd```
-- ```https://cdn.domain.com.com/live?stream=channelname```
-- ```http://10.113.179.1:port/udp/238.1.1.1:port```
-- ```rtmp://10.113.179.1:port/prefix/channel```
-- ```http://10.113.179.1:port/play/a16j```
-
-❌ Links with expiring sessions may contain one or more arguments that will have a hash or random numeric value like so: 
-- ```?nimblesessionid=21683442```
-- ```&authid=```
-- ```&key=txiptv```
-- ```&ip=10.113.179.1```
-- ```&secret=f8z1l7gk```
-- ```&e=1783194414```
-- ```&st=Lz1QtjfblUmkawUbk1Mx6w```
-- ```&token=```
-- ```&hmac=```
-
-There might be notable examples when a session must be created but it doesn't impose any meaningful limits, eg. :
-
-```https://bl.rutube.ru/livestream/id/index.m3u8?e=2070278263&s=sessiontoken&scheme=https```
-
-where there only limitation is that the session will expire in 2035. You can check unix timestamps [here](https://www.epochconverter.com/).
-
-
-❌ Links from subscription based services often be in a form like so:
-- ```https://sketchydomain.xyz:port/username/password/channelID```
-- ```http://cdn.domain.com/credentialhash/channelID/index.m3u8```
-- ```http://cdn.domain.com/channelID/mpegts?token=CTkHfXdAqvPcwq```
-
-If changing channelID to almost any value within a range of hundreds or thousands of IDs results in a valid stream from a different channel, then it likely comes from a leaked account or a trial account
-
-### Testing
-
-- Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
-- If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.
-  <img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/2eec24df-21a4-4a77-8a96-4f967baf2548" />
-  
-  Switch to Headers tab and scroll down to copy the user-agent and the referer if needed (see the [Stream Description Scheme](#stream-description-scheme)).
-  <img width="660" height="425" alt="image" src="https://github.com/user-attachments/assets/6e0c4453-3e56-4ad3-86a7-c9430c33c188" />
-
-- Watch the broadcast for at least a few minutes. Make sure playback is stable and does not stop abruptly at some point.
-- Try restarting the stream. Make sure it's not looping on a repeating segment and is still available.
-- Try starting a stream simultaneously on a different device or network (e.g. mobile network or via [proxy](https://en.wikipedia.org/wiki/Proxy_server) or [VPN](https://en.wikipedia.org/wiki/Virtual_private_network)).
-- Alternatively, you can use https://streamtest.in/tools/stream-test.
-- To check if the stream link is geo-blocked you can use https://check-host.net/check-http and make sure the link provided is not returning errors globally.
-
 ## Contribution
 ### How to submit a new stream?
+
+Before submitting a new stream make sure to acknowledge the [Requirements](#requirements) section and follow the [Validation](#validation) section of this Guide.
+
+🤚 Requests that do not comply with those sections will be closed immediately!
+
 You have several options:
 
 - Create a new request by manually filling this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and if approved, the link will automatically be added to the playlist on the next update.
@@ -108,7 +40,7 @@ You have several options:
   
   This will submit a filled form that will be reviewed the same way.
 - Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls).
-Follow the [Playlist Structure](#playlist-structure) if you have considered that way.
+Follow the [Playlist Structure](#playlist-structure) and [Stream Description Scheme](#stream-description-scheme) if you have considered that way.
 If you're adding an alternative link please do not replace any other link that might be working for some.
 
 ### How to fix the stream description?
@@ -174,6 +106,76 @@ To request removal of a link to a channel from the repository, you need to fill 
 The channel will also be added to our [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) to avoid its appearance in our playlists in the future.
 
 Please note that we only accept removal requests from channel owners and their official representatives, all other requests will be closed immediately.
+
+## Requirements
+
+Before submitting new streams you should verify the following:
+
+- Make sure the link has not been submitted into the repository before. This can be done by searching the [repository](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) or [iptv-org website](https://iptv-org.github.io/).
+- Each submitted stream link must have a registered Channel & Feed ID (eg: Channel@Feed) in the [iptv-org's Database](https://iptv-org.github.io). If it's not present, please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md) to add it. Otherwise, your stream links won't be delivered into automated playlists and won't be sorted out properly.
+- User-submitted links to stream URLs shall be intended to be publicly available by stream provider and the copyright holders.
+- Channels under DMCA takedown notices or broadcasting copyrighted content (such as the Champions League) at any time will not be accepted, see the [Channel blocklist](https://iptv-org.github.io/?q=is_blocked%3Atrue) and the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
+- The same applies to channels that are known to partially or fully broadcast NSFW content (nudity & extreme acts), see the [Channel blocklist](https://iptv-org.github.io/?q=is_nsfw%3Atrue), the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) and https://github.com/iptv-org/iptv/issues/15723 for more details.
+- User-submitted links must not have any effective restrictions that limit viewers by authorization, by viewer count or by designated IP.
+- Test period links are not permitted.
+- User-submitted links must open in VLC media player (see the [FAQ](https://github.com/iptv-org/iptv/blob/master/FAQ.md) for more details).
+- If the host server requires a specific user-agent and/or a referer, is geo-blocked or may have downtimes, you should represent that in your contribution (see the [Stream Description Scheme](#stream-description-scheme)).
+- If possible please provide an adaptive link that covers every available resolution for a broadcast.
+- Follow the [Playlist Structure](#playlist-structure) in case of contributing by pull requests.
+
+## Validation
+### How do I know if the stream is eligible?
+
+Make sure you can find the origin of the broadcast using your favourite search engine or by following the domain of broadcast. If you used to see the channel under paywalls or subscription offers, it may likely be a copyright infringement. If you see a service with a probe period and available plans or you have found an unrecognizable link in someone else's playlist, it's likely to expire soon. Streams or services that have publicly available videoplayers are likely to perform publicly-intended broadcasts. Odds are your link will still be session protected and will only be available to you.
+
+### Examples
+
+✅ Valid links usually have a format like so
+
+- ```https://cdn.domain.com/channelname/chunks or playlist or any other name.m3u8 or mpd```
+- ```https://cdn.domain.com.com/live?stream=channelname```
+- ```http://10.113.179.1:port/udp/238.1.1.1:port```
+- ```rtmp://10.113.179.1:port/prefix/channel```
+- ```http://10.113.179.1:port/play/a16j```
+
+❌ Links with expiring sessions may contain one or more arguments that will have a hash or random numeric value like so: 
+- ```?nimblesessionid=21683442```
+- ```&authid=```
+- ```&key=txiptv```
+- ```&ip=10.113.179.1```
+- ```&secret=f8z1l7gk```
+- ```&e=1783194414```
+- ```&st=Lz1QtjfblUmkawUbk1Mx6w```
+- ```&token=9f192891-eca5-2435-b9cb-147f376cdc1e```
+- ```&hmac=3295a8e67dcf75af313061a17c3dad11```
+
+There might be notable examples when a session must be created but it doesn't impose any meaningful limits, eg. :
+
+```https://bl.rutube.ru/livestream/id/index.m3u8?e=2070278263&s=sessiontoken&scheme=https```
+
+where there only limitation is that the session will expire in 2035. You can check unix timestamps [here](https://www.epochconverter.com/).
+
+❌ Links from subscription based services often be in a form like so:
+- ```https://sketchydomain.xyz:port/username/password/channelID```
+- ```http://cdn.domain.com/credentialhash/channelID/index.m3u8```
+- ```http://cdn.domain.com/channelID/mpegts?token=CTkHfXdAqvPcwq```
+
+If changing channelID to almost any value within a range of hundreds or thousands of IDs results in a valid stream from a different channel, then it likely comes from a leaked account or a trial account
+
+### Testing
+
+- Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
+- If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.
+  <img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/2eec24df-21a4-4a77-8a96-4f967baf2548" />
+  
+  Switch to Headers tab and scroll down to copy the user-agent and the referer if needed (see the [Stream Description Scheme](#stream-description-scheme)).
+  <img width="660" height="425" alt="image" src="https://github.com/user-attachments/assets/6e0c4453-3e56-4ad3-86a7-c9430c33c188" />
+
+- Watch the broadcast for at least a few minutes. Make sure playback is stable and does not stop abruptly at some point.
+- Try restarting the stream. Make sure it's not looping on a repeating segment and is still available.
+- Try starting a stream simultaneously on a different device or network (e.g. mobile network or via [proxy](https://en.wikipedia.org/wiki/Proxy_server) or [VPN](https://en.wikipedia.org/wiki/Virtual_private_network)).
+- Alternatively, you can use https://streamtest.in/tools/stream-test.
+- To check if the stream link is geo-blocked you can use https://check-host.net/check-http and make sure the link provided is not returning errors globally.
 
 ## Stream Description Scheme
 
