@@ -51,7 +51,7 @@ Most of the stream description (channel name, feed name, categories, languages, 
 
 First of all, make sure that the desired stream has the correct ID. A full list of all supported channels and their corresponding IDs can be found on [iptv-org.github.io](https://iptv-org.github.io/). To change the stream ID of any link in the playlist, just fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams%3Aedit&projects=&template=2_streams_edit.yml&title=Edit%3A+).
 
-If, however, you have found an error in the database itself, please refer to: [How to edit channel description?](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md#how-to-edit-channel-description)
+If, however, you have found an error in the database itself, please refer to: [How to edit a database entry?](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md#how-to-edit-a-database-entry)
 
 ### Reporting of broken streams
 
