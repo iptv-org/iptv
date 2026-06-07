@@ -175,8 +175,17 @@ If changing channelID to almost any value within a range of hundreds or thousand
 - If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.
   <img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/2eec24df-21a4-4a77-8a96-4f967baf2548" />
   
-  Switch to Headers tab and scroll down to copy the user-agent and the referer if needed (see the [Stream Description Scheme](#stream-description-scheme)).
-  <img width="660" height="425" alt="image" src="https://github.com/user-attachments/assets/6e0c4453-3e56-4ad3-86a7-c9430c33c188" />
+  Switch to "Headers" tab, scroll down and copy the "User-Agent" and the "Referer".
+ <img width="660" height="425" alt="image" src="https://github.com/user-attachments/assets/6e0c4453-3e56-4ad3-86a7-c9430c33c188" />
+ 
+ Next, open any text editor of your choice and paste the link with the parameters you found into it, like this:
+ 
+ ```txt
+#EXTM3U
+#EXTINF:-1,Example TV
+#EXTVLCOPT:http-referrer=https://example.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
+https://example.com/playlist.m3u8
 
 - Watch the broadcast for at least a few minutes. Make sure playback is stable and does not stop abruptly at some point.
 - Try restarting the stream. Make sure it's not looping on a repeating segment and is still available.
