@@ -168,7 +168,8 @@ where there only limitation is that the session will expire in 2035. You can che
 
 If changing channelID to almost any value within a range of hundreds or thousands of IDs results in a valid stream from a different channel, then it likely comes from a leaked account or a trial account
 
-### Stream Testing
+### Stream Testing
+
 - If it doesn't launch, try open the link in your browser. Press F12, go to the "Network" tab, and filter requests for `m3u` or `mpd`.
 - Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
 - If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.
@@ -179,7 +180,7 @@ If changing channelID to almost any value within a range of hundreds or thousand
 
 - Watch the broadcast for at least a few minutes. Make sure playback is stable and does not stop abruptly at some point.
 - Try restarting the stream. Make sure it's not looping on a repeating segment and is still available.
-- Try starting a stream simultaneously on a different device or network (e.g. mobile network or via [proxy](https://en.wikipedia.org/wiki/Proxy_server) or [VPN](https://en.wikipedia.org/wiki/Virtual_private_network)).
+- Alternatively, you can use services like [streamtest.in](https://streamtest.in/tools/stream-test).
 - Alternatively, you can use https://streamtest.in/tools/stream-test.
 - To check if the stream link is geo-blocked you can use https://check-host.net/check-http and make sure the link provided is not returning errors globally.
 
