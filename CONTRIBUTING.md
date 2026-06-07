@@ -11,7 +11,7 @@
 - [Stream Validation](#stream-validation)
   - [How do I know if the stream is eligible?](#how-do-i-know-if-the-stream-is-eligible)
   - [Examples](#examples)
-  - [Testing](#testing)
+  - [Stream Testing](#stream-testing)
 - [Stream Description Scheme](#stream-description-scheme)
 - [Playlist Structure](#playlist-structure)
 - [Project Structure](#project-structure)
@@ -168,7 +168,7 @@ where there only limitation is that the session will expire in 2035. You can che
 
 If changing channelID to almost any value within a range of hundreds or thousands of IDs results in a valid stream from a different channel, then it likely comes from a leaked account or a trial account
 
-### Testing
+### Stream Testing
 - If it doesn't launch, try open the link in your browser. Press F12, go to the "Network" tab, and filter requests for `m3u` or `mpd`.
 - Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
 - If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.
