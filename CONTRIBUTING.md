@@ -23,7 +23,7 @@
 **iptv-org** is more than just a repository for sharing currently available links in a playlist format. After years of commitment and moderation practices it has evolved into a knowledge base for [streams](https://github.com/iptv-org/iptv/tree/master/streams), [feeds and their descriptions](https://iptv-org.github.io/), [program guide sources](https://github.com/iptv-org/epg) and even the [API](https://github.com/iptv-org/api) updated daily for semi-automated distribution and moderation. Thus, to keep all available data in order, strict structural requirements must be followed and some contribution standards must be set. Learn more in the following topic [How iptv-org works](https://github.com/orgs/iptv-org/discussions/1318)
 
 ## Contribution
-### How to submit a new stream?
+### Submitting a new stream
 
 Before submitting a new stream make sure to acknowledge the [Requirements](#requirements) section and follow the [Validation](#validation) section of this Guide.
 
@@ -43,7 +43,7 @@ You have several options:
 Follow the [Playlist Structure](#playlist-structure) and [Stream Description Scheme](#stream-description-scheme) if you have considered that way.
 If you're adding an alternative link please do not replace any other link that might be working for some.
 
-### How to fix the stream description?
+### Fixing descriptions
 
 Most of the stream description (channel name, feed name, categories, languages, broadcast area, logo) is loaded from [iptv-org/database](https://github.com/iptv-org/database) using the stream ID.
 
@@ -51,7 +51,7 @@ First of all, make sure that the desired stream has the correct ID. A full list 
 
 If, however, you have found an error in the database itself, please refer to: [How to edit channel description?](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md#how-to-edit-channel-description)
 
-### How to report a broken stream?
+### Reporting of broken streams
 
 Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:remove&projects=&template=3_streams_report.yml&title=Broken%3A+) and we'll verify and remove it.
 
@@ -62,7 +62,7 @@ The only thing before publishing your report is to make sure that:
 
 An issue without a valid link will be closed immediately.
 
-### How to find a broken stream?
+### Finding of broken streams
 
 Follow the [Testing](#testing) guide. [VLC media player](https://www.videolan.org/vlc/) outputs all errors to the log (Tools -> Messages) so you'll be able to determine pretty accurately why a link isn't working.
 
