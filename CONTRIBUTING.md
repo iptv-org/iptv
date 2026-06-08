@@ -116,8 +116,8 @@ Please note that we only accept removal requests from channel owners and their o
 
 Before submitting new streams you should verify the following:
 
-- Make sure the link has not been submitted into the repository before. This can be done by searching the [repository](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) or [iptv-org website](https://iptv-org.github.io/).
-- Each submitted stream link must have a registered Channel & Feed ID (eg: Channel@Feed) in the [iptv-org's Database](https://iptv-org.github.io). If it's not present, please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md) to add it. Otherwise, your stream links won't be delivered into automated playlists and won't be sorted out properly.
+- Make sure the link has not been submitted into the repository before. This can be done by searching the [repository](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) or the [website](https://iptv-org.github.io/).
+- Each submitted stream link must have a registered Channel & Feed ID (eg: `ChannelID@FeedID`) in our database. A complete list of channels and feeds can be found at [iptv-org.github.io](https://iptv-org.github.io). If it's not present, please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md) to add it. Streams submitted by PRs without valid ID will not reach mainstream playlists targeting a category, language or broadcast area.
 - User-submitted links to stream URLs shall be intended to be publicly available by stream provider and the copyright holders.
 - Channels under DMCA takedown notices or broadcasting copyrighted content (such as the Champions League) at any time will not be accepted, see the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
 - The same applies to channels that are known to partially or fully broadcast [NSFW](https://en.wikipedia.org/wiki/Not_safe_for_work) content.
@@ -213,7 +213,7 @@ STREAM_URL
 Example:
 
 ```xml
-#EXTINF:-1 tvg-id="ExampleTV.us@East",Example TV East (720p) [Geo-blocked] [Not 24/7]
+#EXTINF:-1 tvg-id="ExampleTV.us@East",Example TV East (720p) [Geo-blocked]
 https://example.com/playlist.m3u8
 ```
 
