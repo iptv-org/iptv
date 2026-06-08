@@ -120,7 +120,7 @@ Before submitting new streams you should verify the following:
 - Each submitted stream link must have a registered Channel & Feed ID (eg: Channel@Feed) in the [iptv-org's Database](https://iptv-org.github.io). If it's not present, please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md) to add it. Otherwise, your stream links won't be delivered into automated playlists and won't be sorted out properly.
 - User-submitted links to stream URLs shall be intended to be publicly available by stream provider and the copyright holders.
 - Channels under DMCA takedown notices or broadcasting copyrighted content (such as the Champions League) at any time will not be accepted, see the [Channel blocklist](https://iptv-org.github.io/?q=is_blocked%3Atrue) and the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
-- The same applies to channels that are known to partially or fully broadcast NSFW content (nudity & extreme acts), see the [Channel blocklist](https://iptv-org.github.io/?q=is_nsfw%3Atrue), the [History of related issues](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) and https://github.com/iptv-org/iptv/issues/15723 for more details.
+- The same applies to channels that are known to partially or fully broadcast [NSFW](https://en.wikipedia.org/wiki/Not_safe_for_work) content.
 - User-submitted links must not have any effective restrictions that limit viewers by authorization, by viewer count or by designated IP.
 - Test period links are not permitted.
 - User-submitted links must open in VLC media player (see the [FAQ](https://github.com/iptv-org/iptv/blob/master/FAQ.md) for more details).
