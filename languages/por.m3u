@@ -188,8 +188,6 @@ https://load-balancer.azotosolutions.com/cdnedge19/smil:live19.smil/playlist.m3u
 https://lon.rtsp.me/r3ZnG6WN2HIRxPARhAirIQ/1713628621/hls/9QdykDAy.m3u8
 #EXTINF:-1 tvg-id="RBATV.br@SD" tvg-logo="https://i.imgur.com/ZWFxlU1.png" group-title="General",RBATV (720p)
 https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8
-#EXTINF:-1 tvg-id="Record.br@SD" tvg-logo="https://i.imgur.com/sz9gTTr.png" group-title="General",Record (720p) [Geo-Blocked]
-https://viamotionhsi.netplus.ch/live/eds/rederecordinternacional/browser-HLS8/rederecordinternacional.m3u8
 #EXTINF:-1 tvg-id="RecordNews.br@SD" tvg-logo="https://i.imgur.com/HZDRG0K.png" group-title="News",Record News (720p)
 https://rnw-rn.otteravision.com/rnw/rn/rnw_rn.m3u8
 #EXTINF:-1 tvg-id="RecordTVBelem.br@SD" tvg-logo="https://i.imgur.com/gEEiN10.png" group-title="General",Record TV Belem (720p) [Geo-blocked]
@@ -206,6 +204,8 @@ https://playplusrjo-lh.akamaihd.net/i/pp_rj@377859/index_720_av-p.m3u8
 https://playpluspoa-lh.akamaihd.net/i/pp_poa@377864/index_720_av-p.m3u8
 #EXTINF:-1 tvg-id="RecordTVSaoPaulo.br@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/pt/thumb/1/10/Logotipo_da_Record.png/960px-Logotipo_da_Record.png" group-title="General",Record TV SP (720p) [Geo-blocked]
 https://playplusspo-lh.akamaihd.net/i/pp_sp@350176/index_720_av-p.m3u8
+#EXTINF:-1 tvg-id="Record.br@SD" tvg-logo="https://i.imgur.com/sz9gTTr.png" group-title="General",RecordTV
+https://cdn.jmvstream.com/w/LVW-10842/LVW10842_513N26MDBL/chunklist.m3u8
 #EXTINF:-1 tvg-id="RecordTVInteriorSP.br@SD" tvg-logo="https://i.imgur.com/VcHy0fu.png" group-title="General",RecordTV Interior SP
 http://200.77.176.130:8000/udp/224.0.0.4:49152
 #EXTINF:-1 tvg-id="RedBullTV.at@BR" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Red_Bull_TV.png" group-title="Outdoor;Sports",Red Bull TV BR (1080p)
@@ -258,9 +258,9 @@ https://streaming-live.rtp.pt/liverepeater/smil:rtpmadeira.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPMemoria.pt@SD" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtpmemoria_2026.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" group-title="General",RTP Memória (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtpmem.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="RTPMundo.pt@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/RTP_Mundo.svg/1920px-RTP_Mundo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" group-title="General",RTP Mundo (1080p) [Geo-Blocked]
+#EXTINF:-1 tvg-id="RTPMundo.pt@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/RTP_Mundo.svg/1920px-RTP_Mundo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" group-title="General",RTP Mundo (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
-https://viamotionhsi.netplus.ch/live/eds/rtpi/browser-HLS8/rtpi.m3u8
+https://streaming-live.rtp.pt/liverepeater/smil:rtpi.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="RTPNoticias.pt@HD" tvg-logo="https://cdn-images.rtp.pt/common/img/channels/logos/color/horizontal/rtpnoticias_2026.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" group-title="News",RTP Noticias (720p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/livetvhlsDVR/rtpnHDdvr.smil/playlist.m3u8
