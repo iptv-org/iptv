@@ -9,8 +9,14 @@
       content="Catálogo de canais IPTV públicos (iptv-org) com player HLS."
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <!-- hls.js para reprodução de HLS em navegadores sem suporte nativo. -->
-    <script defer src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
+    <!-- hls.js para reprodução de HLS em navegadores sem suporte nativo.
+         integrity (SRI) garante que o CDN não sirva um script adulterado. -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"
+      integrity="sha384-w6Gb3fXHb5e1LUYa/hYA5Q41bEDglN5ZPCG7Jvnoo8/X90oGnlPqBlBJCe38mEMm"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="topbar">

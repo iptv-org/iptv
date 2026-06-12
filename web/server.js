@@ -10,6 +10,9 @@ import proxy from './lib/proxy.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const PORT = process.env.PORT || 3000
+// Token opcional para proteger o /api/reload. Se definido, o header
+// `x-reload-token` precisa bater. Se não definido, o endpoint fica desabilitado.
+const RELOAD_TOKEN = process.env.RELOAD_TOKEN
 
 const app = express()
 app.disable('x-powered-by')
@@ -29,12 +32,18 @@ app.get('/api/channels', (req, res) => {
 })
 
 // Recarrega os dados da API pública sob demanda (sem reiniciar o servidor).
+// Protegido por token: sem RELOAD_TOKEN definido, ou com token incorreto,
+// responde 403 — evita abuso forçando downloads externos repetidos.
 app.post('/api/reload', async (req, res) => {
+  if (!RELOAD_TOKEN || req.get('x-reload-token') !== RELOAD_TOKEN) {
+    res.status(403).json({ ok: false, error: 'Forbidden' })
+    return
+  }
   try {
     const result = await data.load()
     res.json({ ok: true, ...result, loadedAt: data.meta().loadedAt })
-  } catch (err) {
-    res.status(502).json({ ok: false, error: err.message })
+  } catch {
+    res.status(502).json({ ok: false, error: 'Falha ao recarregar dados' })
   }
 })
 

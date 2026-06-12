@@ -49,7 +49,7 @@ IPTV_API_BASE=https://sua-instancia/api npm start
 
 ## Como rodar
 
-Pré-requisitos: **Node.js 18+** (testado no Node 22).
+Pré-requisitos: **Node.js 18.11+** (o script `dev` usa `node --watch`; testado no Node 22).
 
 ```sh
 cd web
@@ -69,7 +69,7 @@ Para mudar a porta: `PORT=8080 npm start`.
 | --- | --- |
 | `GET /api/meta` | Total + categorias, países e idiomas (com contagem) para os filtros |
 | `GET /api/channels` | Lista filtrada/paginada. Query: `search`, `category`, `country`, `language`, `nsfw=1`, `page`, `limit` |
-| `POST /api/reload` | Recarrega os dados da API pública sem reiniciar o servidor |
+| `POST /api/reload` | Recarrega os dados da API pública sem reiniciar o servidor. Protegido: exige `RELOAD_TOKEN` (env) e o header `x-reload-token`; sem o token definido o endpoint responde `403` |
 | `GET /stream?url=…&ref=…&ua=…` | Proxy do stream (uso interno do player) |
 
 ## Segurança
@@ -81,9 +81,13 @@ Para mudar a porta: `PORT=8080 npm start`.
 - **Validação de URL.** Logos e streams só são aceitos com protocolo `http`/`https`;
   esquemas como `javascript:` ou `data:` são rejeitados.
 - **Proxy com allowlist + anti-SSRF.** O proxy só acessa hosts presentes no
-  dataset (mais hosts referenciados por playlists já confiáveis) e bloqueia
-  destinos internos/privados (`localhost`, `127.0.0.0/8`, `10/8`, `192.168/16`,
-  `172.16/12`, `169.254/16`, IPv6 loopback/ULA), evitando virar um proxy aberto.
+  dataset (mais hosts referenciados por playlists já confiáveis, com teto de
+  crescimento) e bloqueia destinos internos/privados (`localhost`, `127.0.0.0/8`,
+  `10/8`, `192.168/16`, `172.16/12`, `169.254/16`, IPv6 loopback/ULA), evitando
+  virar um proxy aberto. Cada salto de **redirect** é revalidado contra a
+  allowlist, impedindo SSRF via `Location`.
+- **Endpoint de reload protegido.** `POST /api/reload` exige `RELOAD_TOKEN`.
+- **Timeout de rede.** As buscas à API pública têm timeout, evitando travamento.
 
 ## Limitações conhecidas
 

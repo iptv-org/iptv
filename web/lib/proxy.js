@@ -15,11 +15,26 @@ import net from 'node:net'
 const DEFAULT_UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
 const FETCH_TIMEOUT_MS = 15000
+const MAX_REDIRECTS = 5
+const MAX_DYNAMIC_HOSTS = 5000
 
 // Hosts descobertos em tempo de execução a partir de playlists confiáveis
 // (ex.: segmentos hospedados em CDN diferente da playlist). Cresce só a partir
-// de conteúdo já autorizado.
+// de conteúdo já autorizado e tem um teto para não expandir indefinidamente.
 const dynamicHosts = new Set()
+
+/** Memoriza um host referenciado por uma playlist confiável, respeitando o teto. */
+function rememberDynamicHost(host) {
+  if (!host) return
+  const h = host.toLowerCase()
+  if (!dynamicHosts.has(h) && dynamicHosts.size >= MAX_DYNAMIC_HOSTS) return
+  dynamicHosts.add(h)
+}
+
+/** Limpa a allowlist dinâmica (útil em testes ou reload). */
+function resetDynamicHosts() {
+  dynamicHosts.clear()
+}
 
 /** Verifica se um IP literal pertence a uma faixa privada/reservada. */
 function isPrivateIp(host) {
@@ -59,6 +74,30 @@ function proxyUrl(target, { referrer, userAgent }) {
   return `/stream?${params.toString()}`
 }
 
+/**
+ * Faz fetch revalidando cada salto de redirect contra a allowlist. Sem isso, um
+ * host autorizado poderia redirecionar para um destino interno/privado (SSRF).
+ */
+async function fetchValidated(initialUrl, { headers, signal, allowlist }) {
+  let current = initialUrl
+  for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
+    const res = await fetch(current, { headers, redirect: 'manual', signal })
+    // Não é um redirect → resposta final.
+    if (res.status < 300 || res.status >= 400) return res
+    const location = res.headers.get('location')
+    if (!location) return res
+    const next = new URL(location, current)
+    if (next.protocol !== 'http:' && next.protocol !== 'https:') {
+      throw new Error('Redirect para protocolo não suportado')
+    }
+    if (!isAllowed(next.hostname, allowlist)) {
+      throw new Error('Redirect para host não permitido')
+    }
+    current = next.toString()
+  }
+  throw new Error('Muitos redirects')
+}
+
 /** Detecta se o conteúdo é uma playlist HLS (m3u8). */
 function isPlaylist(contentType, url) {
   const ct = (contentType || '').toLowerCase()
@@ -78,7 +117,7 @@ function rewritePlaylist(text, baseUrl, headers) {
       const abs = new URL(ref, base).toString()
       const host = new URL(abs).hostname
       // Confia em hosts referenciados por uma playlist já autorizada.
-      dynamicHosts.add(host)
+      rememberDynamicHost(host)
       return proxyUrl(abs, headers)
     } catch {
       return ref
@@ -147,10 +186,10 @@ function createHandler(getAllowlist) {
     const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS)
 
     try {
-      const upstream = await fetch(target, {
+      const upstream = await fetchValidated(target, {
         headers: outboundHeaders,
-        redirect: 'follow',
-        signal: controller.signal
+        signal: controller.signal,
+        allowlist: getAllowlist()
       })
 
       const contentType = upstream.headers.get('content-type') || ''
@@ -192,4 +231,4 @@ function createHandler(getAllowlist) {
   }
 }
 
-export default { createHandler }
+export default { createHandler, resetDynamicHosts }

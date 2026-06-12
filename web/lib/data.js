@@ -3,6 +3,7 @@
 // novo carregamento (reload) reflete o conteúdo atualizado.
 
 const API_BASE = process.env.IPTV_API_BASE || 'https://iptv-org.github.io/api'
+const FETCH_TIMEOUT_MS = 15000
 
 // Arquivos da API pública que consumimos.
 const FILES = ['streams', 'channels', 'categories', 'countries', 'languages', 'logos', 'feeds']
@@ -17,9 +18,23 @@ const state = {
   loadedAt: null
 }
 
-/** Faz o download de um arquivo JSON da API pública (lado servidor, sem CORS). */
+/**
+ * Faz o download de um arquivo JSON da API pública (lado servidor, sem CORS).
+ * Usa um timeout para não travar a inicialização nem o /api/reload em caso de
+ * rede pendurada.
+ */
 async function fetchJson(name) {
-  const res = await fetch(`${API_BASE}/${name}.json`)
+  const controller = new AbortController()
+  const timeout = setTimeout(() => controller.abort(), FETCH_TIMEOUT_MS)
+  let res
+  try {
+    res = await fetch(`${API_BASE}/${name}.json`, { signal: controller.signal })
+  } catch (err) {
+    if (err?.name === 'AbortError') throw new Error(`Timeout ao baixar ${name}.json`)
+    throw err
+  } finally {
+    clearTimeout(timeout)
+  }
   if (!res.ok) throw new Error(`Falha ao baixar ${name}.json (HTTP ${res.status})`)
   return res.json()
 }
@@ -147,6 +162,7 @@ async function load() {
     return {
       id: `${s.channel || 'unknown'}@${s.feed || ''}#${index}`,
       channel: s.channel || null,
+      channelName: channel ? channel.name : '',
       feed: s.feed || null,
       name: s.title || (channel ? channel.name : 'Sem nome'),
       url,
@@ -201,7 +217,7 @@ function query({ search, category, country, language, includeNsfw, page = 1, lim
     list = list.filter(
       s =>
         s.name.toLowerCase().includes(term) ||
-        (s.channel && s.channel.toLowerCase().includes(term))
+        (s.channelName && s.channelName.toLowerCase().includes(term))
     )
   }
 

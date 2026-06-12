@@ -146,7 +146,8 @@ async function init() {
       'Todos'
     )
     $('meta-info').textContent = `${meta.total.toLocaleString('pt-BR')} streams no total`
-  } catch {
+  } catch (err) {
+    console.warn('Falha ao carregar metadados:', err)
     /* segue mesmo sem metadados */
   }
 
