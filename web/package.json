@@ -1,0 +1,16 @@
+{
+  "name": "iptv-web",
+  "version": "1.0.0",
+  "description": "Site que consome os dados públicos do iptv-org e os apresenta como uma plataforma de IPTV (catálogo + player HLS).",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}

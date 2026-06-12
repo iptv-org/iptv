@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>IPTV Web — iptv-org</title>
+    <meta
+      name="description"
+      content="Catálogo de canais IPTV públicos (iptv-org) com player HLS."
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- hls.js para reprodução de HLS em navegadores sem suporte nativo. -->
+    <script defer src="https://cdn.jsdelivr.net/npm/hls.js@1.5.13/dist/hls.min.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">▶</span>
+        <span class="brand-name">IPTV Web</span>
+      </div>
+      <div class="search">
+        <input
+          id="search"
+          type="search"
+          placeholder="Buscar canal…"
+          autocomplete="off"
+          aria-label="Buscar canal"
+        />
+      </div>
+      <button id="theme-toggle" class="icon-btn" title="Alternar tema" aria-label="Alternar tema">
+        🌓
+      </button>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" id="sidebar">
+        <div class="filter-block">
+          <label for="filter-category">Categoria</label>
+          <select id="filter-category"><option value="">Todas</option></select>
+        </div>
+        <div class="filter-block">
+          <label for="filter-country">País</label>
+          <select id="filter-country"><option value="">Todos</option></select>
+        </div>
+        <div class="filter-block">
+          <label for="filter-language">Idioma</label>
+          <select id="filter-language"><option value="">Todos</option></select>
+        </div>
+        <label class="checkbox">
+          <input type="checkbox" id="filter-nsfw" />
+          <span>Mostrar conteúdo adulto</span>
+        </label>
+        <p class="meta" id="meta-info"></p>
+      </aside>
+
+      <main class="content">
+        <!-- Player (oculto até escolher um canal). -->
+        <section id="player-panel" class="player-panel" hidden>
+          <div class="player-wrap">
+            <video id="video" controls playsinline></video>
+            <div id="player-status" class="player-status"></div>
+          </div>
+          <div class="player-info">
+            <h2 id="player-title"></h2>
+            <div id="player-badges" class="badges"></div>
+            <button id="player-close" class="btn">Fechar player</button>
+          </div>
+        </section>
+
+        <section class="results">
+          <div id="grid" class="grid" aria-live="polite"></div>
+          <div id="empty" class="empty" hidden>Nenhum canal encontrado.</div>
+          <div class="pager">
+            <button id="prev" class="btn" disabled>← Anterior</button>
+            <span id="page-info" class="page-info"></span>
+            <button id="next" class="btn" disabled>Próximo →</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
