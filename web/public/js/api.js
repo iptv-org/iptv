@@ -17,6 +17,17 @@ export async function getChannels(params = {}) {
   return res.json()
 }
 
+/** Busca o guia "Agora/A seguir" (EPG) de um stream. Best-effort. */
+export async function getEpg(streamId) {
+  try {
+    const res = await fetch(`/api/epg?stream=${encodeURIComponent(streamId)}`)
+    if (!res.ok) return { available: false }
+    return res.json()
+  } catch {
+    return { available: false }
+  }
+}
+
 /**
  * Monta a URL do proxy para um stream, repassando os headers necessários.
  * Toda reprodução passa pelo proxy (resolve CORS, mixed-content e headers).

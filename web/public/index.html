@@ -8,6 +8,10 @@
       name="description"
       content="Catálogo de canais IPTV públicos (iptv-org) com player HLS."
     />
+    <meta name="theme-color" content="#0f1115" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./icon.svg" />
     <link rel="stylesheet" href="./css/styles.css" />
     <!-- hls.js para reprodução de HLS em navegadores sem suporte nativo.
          integrity (SRI) garante que o CDN não sirva um script adulterado. -->
@@ -53,9 +57,14 @@
           <select id="filter-language"><option value="">Todos</option></select>
         </div>
         <label class="checkbox">
+          <input type="checkbox" id="filter-favorites" />
+          <span>⭐ Só favoritos <span id="fav-count" class="count-pill"></span></span>
+        </label>
+        <label class="checkbox">
           <input type="checkbox" id="filter-nsfw" />
           <span>Mostrar conteúdo adulto</span>
         </label>
+        <button id="continue-watching" class="btn btn-ghost" hidden>▶ Continuar assistindo</button>
         <p class="meta" id="meta-info"></p>
       </aside>
 
@@ -69,7 +78,16 @@
           <div class="player-info">
             <h2 id="player-title"></h2>
             <div id="player-badges" class="badges"></div>
-            <button id="player-close" class="btn">Fechar player</button>
+            <div id="player-epg" class="epg" hidden></div>
+            <div class="player-actions">
+              <button id="player-pip" class="btn btn-ghost" title="Picture-in-Picture">
+                🖼️ PiP
+              </button>
+              <button id="player-share" class="btn btn-ghost" title="Copiar link do canal">
+                🔗 Compartilhar
+              </button>
+              <button id="player-close" class="btn">Fechar</button>
+            </div>
           </div>
         </section>
 
@@ -86,5 +104,13 @@
     </div>
 
     <script type="module" src="./js/app.js"></script>
+    <script>
+      // Registra o service worker (PWA / cache do app shell).
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('./sw.js').catch(() => {})
+        })
+      }
+    </script>
   </body>
 </html>

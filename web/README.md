@@ -4,6 +4,20 @@ Site que consome os dados **públicos** do projeto [iptv-org](https://github.com
 e os apresenta como uma plataforma de IPTV: catálogo de canais com logos, busca,
 filtros (categoria, país, idioma) e player HLS no navegador.
 
+## Funcionalidades
+
+- 📺 **Catálogo** com logos, busca e filtros por categoria, país e idioma.
+- ▶️ **Player HLS** (hls.js + fallback nativo no Safari) via proxy.
+- ⭐ **Favoritos** e aba "Só favoritos" (salvos no navegador).
+- 🕘 **Continuar assistindo** — reabre o último canal.
+- 🗓️ **EPG "Agora/A seguir"** (best-effort, a partir das fontes XMLTV do `guides.json`).
+- 🖼️ **Picture-in-Picture** e 🔗 **compartilhar canal** (link auto-contido).
+- 📱 **PWA** — instalável, com cache do app shell para carregamento rápido/offline.
+- 🌗 Tema claro/escuro e layout responsivo.
+
+Veja [`RESOURCES.md`](RESOURCES.md) para o contexto curado (fontes de EPG,
+datasets, bibliotecas) e próximos passos.
+
 > Apenas canais **públicos e gratuitos** (licença CC0). Nenhum conteúdo é
 > armazenado — o site apenas organiza e reproduz links já publicamente
 > disponíveis. Não é, e não deve ser usado como, um serviço de retransmissão de
@@ -16,11 +30,13 @@ web/
 ├── server.js          Express: serve o front-end, /api/* e o proxy /stream
 ├── lib/
 │   ├── data.js        Busca os JSON da API pública, normaliza e cacheia em memória
-│   └── proxy.js       Proxy de streams (CORS, mixed-content, headers, anti-SSRF)
-└── public/            Front-end estático (vanilla JS + hls.js)
+│   ├── proxy.js       Proxy de streams (CORS, mixed-content, headers, anti-SSRF)
+│   └── epg.js         EPG "Agora/A seguir" (XMLTV, best-effort, com cache)
+└── public/            Front-end estático (vanilla JS + hls.js) + PWA
     ├── index.html
+    ├── manifest.webmanifest · sw.js · icon.svg
     ├── css/styles.css
-    └── js/{app,ui,player,api,dom}.js
+    └── js/{app,ui,player,api,dom,store}.js
 ```
 
 **Por que um back-end?** Um site puramente front-end falha na maioria dos
@@ -69,6 +85,7 @@ Para mudar a porta: `PORT=8080 npm start`.
 | --- | --- |
 | `GET /api/meta` | Total + categorias, países e idiomas (com contagem) para os filtros |
 | `GET /api/channels` | Lista filtrada/paginada. Query: `search`, `category`, `country`, `language`, `nsfw=1`, `page`, `limit` |
+| `GET /api/epg` | Guia "Agora/A seguir" de um stream. Query: `stream=<channel@feed>`. Best-effort; `{ available: false }` quando não há guia |
 | `POST /api/reload` | Recarrega os dados da API pública sem reiniciar o servidor. Protegido: exige `RELOAD_TOKEN` (env) e o header `x-reload-token`; sem o token definido o endpoint responde `403` |
 | `GET /stream?url=…&ref=…&ua=…` | Proxy do stream (uso interno do player) |
 
@@ -82,10 +99,12 @@ Para mudar a porta: `PORT=8080 npm start`.
   esquemas como `javascript:` ou `data:` são rejeitados.
 - **Proxy com allowlist + anti-SSRF.** O proxy só acessa hosts presentes no
   dataset (mais hosts referenciados por playlists já confiáveis, com teto de
-  crescimento) e bloqueia destinos internos/privados (`localhost`, `127.0.0.0/8`,
-  `10/8`, `192.168/16`, `172.16/12`, `169.254/16`, IPv6 loopback/ULA), evitando
-  virar um proxy aberto. Cada salto de **redirect** é revalidado contra a
-  allowlist, impedindo SSRF via `Location`.
+  crescimento) e bloqueia destinos internos/privados/especiais: `localhost`,
+  `127.0.0.0/8`, `10/8`, `192.168/16`, `172.16/12`, `169.254/16`, CGNAT
+  `100.64/10`, TEST-NET, multicast/reservados, e **IPv6** (loopback `::1`,
+  IPv4-mapeado `::ffff:…`, ULA, link-local) — inclusive quando o hostname chega
+  entre colchetes. Cada salto de **redirect** é revalidado, impedindo SSRF via
+  `Location`.
 - **Endpoint de reload protegido.** `POST /api/reload` exige `RELOAD_TOKEN`.
 - **Timeout de rede.** As buscas à API pública têm timeout, evitando travamento.
 

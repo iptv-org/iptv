@@ -21,6 +21,18 @@ function showStatus(message) {
   }
 }
 
+/** Alterna o modo Picture-in-Picture (quando suportado pelo navegador). */
+export async function togglePip() {
+  const v = video()
+  if (!document.pictureInPictureEnabled || !v) return
+  try {
+    if (document.pictureInPictureElement) await document.exitPictureInPicture()
+    else await v.requestPictureInPicture()
+  } catch {
+    /* gesto do usuário ausente ou sem suporte: ignora */
+  }
+}
+
 /** Destrói qualquer instância anterior do hls.js e zera o vídeo. */
 export function destroy() {
   if (hls) {
