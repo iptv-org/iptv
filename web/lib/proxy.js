@@ -11,6 +11,7 @@
 
 import { Readable } from 'node:stream'
 import net from 'node:net'
+import dns from 'node:dns/promises'
 
 const DEFAULT_UA =
   'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36'
@@ -49,14 +50,26 @@ function isPrivateIp(host) {
   const family = net.isIP(h)
   if (family === 0) return false // não é um IP literal
 
-  // IPv6: extrai um eventual IPv4 embutido (::ffff:127.0.0.1) para checar abaixo.
+  // IPv6: extrai um eventual IPv4 embutido para checar abaixo.
   if (family === 6) {
     if (h === '::1' || h === '::') return true // loopback / unspecified
-    if (h.startsWith('fe80:')) return true // link-local
+    if (/^fe[89ab][0-9a-f]?:/i.test(h)) return true // link-local fe80::/10
     if (h.startsWith('fc') || h.startsWith('fd')) return true // ULA (fc00::/7)
-    const mapped = h.match(/(?:::ffff:)(\d+\.\d+\.\d+\.\d+)$/i)
-    if (mapped) h = mapped[1] // segue para as checagens IPv4
-    else return false
+    // IPv4-mapeado, tanto na forma com pontos (::ffff:127.0.0.1) quanto hex
+    // (::ffff:7f00:1). Variações mapeadas não reconhecidas falham fechado.
+    const dotted = h.match(/^::ffff:(\d+\.\d+\.\d+\.\d+)$/i)
+    const hex = h.match(/^::ffff:([0-9a-f]{1,4}):([0-9a-f]{1,4})$/i)
+    if (dotted) {
+      h = dotted[1]
+    } else if (hex) {
+      const hi = parseInt(hex[1], 16)
+      const lo = parseInt(hex[2], 16)
+      h = `${(hi >> 8) & 255}.${hi & 255}.${(lo >> 8) & 255}.${lo & 255}`
+    } else if (h.startsWith('::ffff:')) {
+      return true // fail-closed
+    } else {
+      return false
+    }
   }
 
   // IPv4 privados/reservados/especiais.
@@ -80,7 +93,9 @@ function isPrivateIp(host) {
  */
 function isAllowed(host, allowlist) {
   if (!host) return false
-  const lower = host.toLowerCase()
+  // Normaliza ponto final (FQDN absoluto): "localhost." e "host." equivalem a
+  // "localhost"/"host" para o resolvedor, então não podem burlar as checagens.
+  const lower = host.toLowerCase().replace(/\.+$/, '')
   if (lower === 'localhost' || lower.endsWith('.localhost')) return false
   if (isPrivateIp(lower)) return false
   return allowlist.has(lower) || dynamicHosts.has(lower)
@@ -95,12 +110,33 @@ function proxyUrl(target, { referrer, userAgent }) {
 }
 
 /**
- * Faz fetch revalidando cada salto de redirect contra a allowlist. Sem isso, um
- * host autorizado poderia redirecionar para um destino interno/privado (SSRF).
+ * Resolve um hostname e indica se algum endereço aponta para IP privado.
+ * Mitiga DNS rebinding: um domínio allowlistado cujo registro DNS aponte para
+ * um IP interno é bloqueado. (IPs literais já são cobertos por isPrivateIp.)
+ */
+async function resolvesToPrivate(hostname) {
+  let h = hostname
+  if (h.startsWith('[') && h.endsWith(']')) h = h.slice(1, -1)
+  if (net.isIP(h) !== 0) return false // IP literal: coberto por isPrivateIp
+  try {
+    const records = await dns.lookup(h, { all: true })
+    return records.some(record => isPrivateIp(record.address))
+  } catch {
+    return false // falha de resolução: deixa o fetch tratar o erro
+  }
+}
+
+/**
+ * Faz fetch revalidando cada salto de redirect contra a allowlist e resolvendo
+ * o DNS para barrar destinos que apontem a IP privado. Sem isso, um host
+ * autorizado poderia redirecionar (ou rebind) para um destino interno (SSRF).
  */
 async function fetchValidated(initialUrl, { headers, signal, allowlist }) {
   let current = initialUrl
   for (let hop = 0; hop <= MAX_REDIRECTS; hop++) {
+    if (await resolvesToPrivate(new URL(current).hostname)) {
+      throw new Error('Destino resolve para IP privado')
+    }
     const res = await fetch(current, { headers, redirect: 'manual', signal })
     // Não é um redirect → resposta final.
     if (res.status < 300 || res.status >= 400) return res
@@ -251,4 +287,4 @@ function createHandler(getAllowlist) {
   }
 }
 
-export default { createHandler, resetDynamicHosts, isPrivateIp }
+export default { createHandler, resetDynamicHosts, isPrivateIp, resolvesToPrivate }

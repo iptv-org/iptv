@@ -23,11 +23,15 @@ function writeJson(key, value) {
 
 // --- Favoritos (mapa id -> objeto do canal, para render offline) ---
 
-// Migra formato antigo (array de ids) se existir; senão usa objeto {id: channel}.
+// Migra formato antigo (array de ids) preservando os favoritos, e protege
+// contra valores inesperados (null/string) que quebrariam Object.entries.
 const rawFav = readJson(FAV_KEY, {})
-const favorites = new Map(
-  Array.isArray(rawFav) ? [] : Object.entries(rawFav)
-)
+const normalizedFav = Array.isArray(rawFav)
+  ? Object.fromEntries(rawFav.map(id => [String(id), { id: String(id) }]))
+  : rawFav && typeof rawFav === 'object'
+    ? rawFav
+    : {}
+const favorites = new Map(Object.entries(normalizedFav))
 
 function persistFavorites() {
   writeJson(FAV_KEY, Object.fromEntries(favorites))

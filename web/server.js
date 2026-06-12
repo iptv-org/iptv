@@ -10,12 +10,14 @@ import data from './lib/data.js'
 import proxy from './lib/proxy.js'
 import epg from './lib/epg.js'
 
-/** Compara dois tokens em tempo constante (evita timing attack). */
+/**
+ * Compara dois tokens em tempo constante (evita timing attack). Compara hashes
+ * de tamanho fixo para não vazar nem o comprimento do token.
+ */
 function safeEqual(a, b) {
-  const bufA = Buffer.from(String(a))
-  const bufB = Buffer.from(String(b))
-  if (bufA.length !== bufB.length) return false
-  return crypto.timingSafeEqual(bufA, bufB)
+  const hashA = crypto.createHash('sha256').update(String(a)).digest()
+  const hashB = crypto.createHash('sha256').update(String(b)).digest()
+  return crypto.timingSafeEqual(hashA, hashB)
 }
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
