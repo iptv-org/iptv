@@ -36,20 +36,40 @@ function resetDynamicHosts() {
   dynamicHosts.clear()
 }
 
-/** Verifica se um IP literal pertence a uma faixa privada/reservada. */
+/**
+ * Verifica se um IP literal pertence a uma faixa privada/reservada/especial.
+ * Aceita o hostname como vem de URL.hostname (IPv6 chega entre colchetes, ex.
+ * "[::1]"), normaliza e cobre também IPv4 embutido em IPv6 (::ffff:127.0.0.1).
+ */
 function isPrivateIp(host) {
-  if (net.isIP(host) === 0) return false // não é um IP literal
-  // IPv4 privados/reservados e loopback.
-  if (/^127\./.test(host)) return true
-  if (/^10\./.test(host)) return true
-  if (/^192\.168\./.test(host)) return true
-  if (/^172\.(1[6-9]|2\d|3[01])\./.test(host)) return true
-  if (/^169\.254\./.test(host)) return true // link-local / metadata cloud
-  if (/^0\./.test(host)) return true
-  // IPv6 loopback / link-local / ULA.
-  const h = host.toLowerCase()
-  if (h === '::1' || h === '::') return true
-  if (h.startsWith('fe80:') || h.startsWith('fc') || h.startsWith('fd')) return true
+  // URL.hostname devolve IPv6 entre colchetes; remove para o net.isIP funcionar.
+  let h = host.toLowerCase()
+  if (h.startsWith('[') && h.endsWith(']')) h = h.slice(1, -1)
+
+  const family = net.isIP(h)
+  if (family === 0) return false // não é um IP literal
+
+  // IPv6: extrai um eventual IPv4 embutido (::ffff:127.0.0.1) para checar abaixo.
+  if (family === 6) {
+    if (h === '::1' || h === '::') return true // loopback / unspecified
+    if (h.startsWith('fe80:')) return true // link-local
+    if (h.startsWith('fc') || h.startsWith('fd')) return true // ULA (fc00::/7)
+    const mapped = h.match(/(?:::ffff:)(\d+\.\d+\.\d+\.\d+)$/i)
+    if (mapped) h = mapped[1] // segue para as checagens IPv4
+    else return false
+  }
+
+  // IPv4 privados/reservados/especiais.
+  if (/^127\./.test(h)) return true // loopback
+  if (/^10\./.test(h)) return true // privado
+  if (/^192\.168\./.test(h)) return true // privado
+  if (/^172\.(1[6-9]|2\d|3[01])\./.test(h)) return true // privado
+  if (/^169\.254\./.test(h)) return true // link-local / metadata cloud
+  if (/^100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\./.test(h)) return true // CGNAT 100.64/10
+  if (/^(0|192\.0\.0|192\.0\.2|198\.51\.100|203\.0\.113)\./.test(h)) return true // reservados/TEST-NET
+  if (/^198\.1[89]\./.test(h)) return true // benchmark 198.18/15
+  if (/^(22[4-9]|23\d)\./.test(h)) return true // multicast 224.0.0.0/4
+  if (/^(24\d|25[0-5])\./.test(h)) return true // reservado 240.0.0.0/4 (inclui broadcast)
   return false
 }
 
@@ -61,9 +81,9 @@ function isPrivateIp(host) {
 function isAllowed(host, allowlist) {
   if (!host) return false
   const lower = host.toLowerCase()
-  if (lower === 'localhost') return false
+  if (lower === 'localhost' || lower.endsWith('.localhost')) return false
   if (isPrivateIp(lower)) return false
-  return allowlist.has(host) || dynamicHosts.has(host)
+  return allowlist.has(lower) || dynamicHosts.has(lower)
 }
 
 /** Monta a URL do próprio proxy preservando os headers necessários. */
@@ -231,4 +251,4 @@ function createHandler(getAllowlist) {
   }
 }
 
-export default { createHandler, resetDynamicHosts }
+export default { createHandler, resetDynamicHosts, isPrivateIp }

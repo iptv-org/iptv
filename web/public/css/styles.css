@@ -311,3 +311,104 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---- Melhorias: favoritos, EPG, ações do player ---- */
+.card {
+  position: relative;
+}
+.fav-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg-elev);
+  color: var(--text-dim);
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.fav-btn:hover {
+  border-color: var(--accent);
+}
+.fav-btn.active {
+  color: #ffc83d;
+  border-color: #ffc83d;
+}
+
+.count-pill {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover {
+  border-color: var(--accent);
+}
+
+#continue-watching {
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.player-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* EPG (Agora/A seguir) */
+.epg {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.epg-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-dim);
+}
+.epg-row.now {
+  color: var(--text);
+}
+.epg-tag {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 1px 6px;
+  border-radius: 999px;
+  background: var(--border);
+  color: var(--text-dim);
+  flex-shrink: 0;
+}
+.epg-row.now .epg-tag {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+.epg-time {
+  font-variant-numeric: tabular-nums;
+  flex-shrink: 0;
+}
+.epg-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

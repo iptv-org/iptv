@@ -1,8 +1,10 @@
-// Orquestração: estado da UI, eventos, busca/filtros com debounce, paginação,
-// player e tema.
+// Orquestração: estado da UI, eventos, busca/filtros, paginação, player,
+// favoritos, continuar assistindo, EPG, Picture-in-Picture, compartilhamento
+// (deep link) e tema.
 
-import { getMeta, getChannels } from './api.js'
-import { renderGrid, fillSelect, renderPlayerInfo } from './ui.js'
+import { getMeta, getChannels, getEpg } from './api.js'
+import { renderGrid, fillSelect, renderPlayerInfo, renderEpg } from './ui.js'
+import { favoriteChannels, favoritesCount, setLastChannel, getLastChannel } from './store.js'
 import * as player from './player.js'
 
 const state = {
@@ -11,14 +13,30 @@ const state = {
   country: '',
   language: '',
   nsfw: false,
+  favoritesOnly: false,
   page: 1,
   pages: 1
 }
 
+let currentChannel = null
 const $ = id => document.getElementById(id)
 
 // ---- Carregamento da grade ----
 async function load() {
+  // Modo "só favoritos": render client-side a partir do armazenamento local.
+  if (state.favoritesOnly) {
+    const term = state.search.trim().toLowerCase()
+    const items = favoriteChannels().filter(
+      c => !term || c.name.toLowerCase().includes(term)
+    )
+    renderGrid($('grid'), $('empty'), items, openPlayer, onFavoriteToggled)
+    if (items.length === 0) $('empty').textContent = 'Nenhum favorito ainda.'
+    $('page-info').textContent = `${items.length} favorito(s)`
+    $('prev').disabled = true
+    $('next').disabled = true
+    return
+  }
+
   try {
     const data = await getChannels({
       search: state.search,
@@ -30,7 +48,8 @@ async function load() {
       limit: 60
     })
     state.pages = data.pages || 1
-    renderGrid($('grid'), $('empty'), data.items, openPlayer)
+    renderGrid($('grid'), $('empty'), data.items, openPlayer, onFavoriteToggled)
+    $('empty').textContent = 'Nenhum canal encontrado.'
     $('page-info').textContent = data.total
       ? `Página ${data.page} de ${data.pages} · ${data.total} canais`
       : ''
@@ -42,17 +61,114 @@ async function load() {
   }
 }
 
+function onFavoriteToggled() {
+  updateFavCount()
+  // Em modo favoritos, recarrega para refletir remoções imediatamente.
+  if (state.favoritesOnly) load()
+}
+
+function updateFavCount() {
+  const n = favoritesCount()
+  $('fav-count').textContent = n ? `(${n})` : ''
+}
+
 // ---- Player ----
-function openPlayer(channel) {
+async function openPlayer(channel) {
+  currentChannel = channel
   $('player-panel').hidden = false
   renderPlayerInfo(channel)
   player.play(channel)
+  setLastChannel(channel)
+  refreshContinueButton()
   $('player-panel').scrollIntoView({ behavior: 'smooth', block: 'start' })
+
+  // EPG (best-effort) — só se o canal tiver id de stream conhecido.
+  if (channel.channel) {
+    const streamId = `${channel.channel}@${channel.feed || ''}`
+    const epg = await getEpg(streamId)
+    // Garante que ainda estamos no mesmo canal antes de renderizar.
+    if (currentChannel === channel) renderEpg(epg)
+  }
 }
 
 function closePlayer() {
   player.destroy()
+  currentChannel = null
   $('player-panel').hidden = true
+  clearChannelHash()
+}
+
+// ---- Compartilhamento (deep link auto-contido no hash) ----
+function buildShareUrl(channel) {
+  const minimal = {
+    id: channel.id,
+    channel: channel.channel,
+    feed: channel.feed,
+    name: channel.name,
+    url: channel.url,
+    referrer: channel.referrer || null,
+    userAgent: channel.userAgent || null,
+    isHls: !!channel.isHls,
+    quality: channel.quality || null,
+    label: channel.label || null,
+    categories: channel.categories || [],
+    country: channel.country || null
+  }
+  const encoded = btoa(unescape(encodeURIComponent(JSON.stringify(minimal))))
+  return `${location.origin}${location.pathname}#c=${encoded}`
+}
+
+function clearChannelHash() {
+  if (location.hash.startsWith('#c=')) {
+    history.replaceState(null, '', location.pathname + location.search)
+  }
+}
+
+async function sharePlayer() {
+  if (!currentChannel) return
+  const url = buildShareUrl(currentChannel)
+  history.replaceState(null, '', url)
+  try {
+    await navigator.clipboard.writeText(url)
+    flashShare('🔗 Link copiado!')
+  } catch {
+    flashShare('🔗 Link na barra de endereço')
+  }
+}
+
+function flashShare(msg) {
+  const btn = $('player-share')
+  const original = btn.textContent
+  btn.textContent = msg
+  setTimeout(() => (btn.textContent = original), 1800)
+}
+
+/** Abre um canal a partir de um deep link (#c=...), se presente. */
+function openFromHash() {
+  if (!location.hash.startsWith('#c=')) return false
+  try {
+    const json = decodeURIComponent(escape(atob(location.hash.slice(3))))
+    const channel = JSON.parse(json)
+    if (channel && channel.url) {
+      openPlayer(channel)
+      return true
+    }
+  } catch {
+    /* hash inválido: ignora */
+  }
+  return false
+}
+
+// ---- Continuar assistindo ----
+function refreshContinueButton() {
+  const last = getLastChannel()
+  const btn = $('continue-watching')
+  if (last) {
+    btn.hidden = false
+    btn.textContent = `▶ Continuar: ${last.name}`
+  } else {
+    btn.hidden = true
+  }
 }
 
 // ---- Filtros e busca ----
@@ -83,6 +199,8 @@ function initTheme() {
 // ---- Inicialização ----
 async function init() {
   initTheme()
+  updateFavCount()
+  refreshContinueButton()
 
   // Eventos de filtro.
   $('search').addEventListener(
@@ -108,6 +226,14 @@ async function init() {
     state.nsfw = e.target.checked
     resetToFirstPageAndLoad()
   })
+  $('filter-favorites').addEventListener('change', e => {
+    state.favoritesOnly = e.target.checked
+    // Desabilita filtros do servidor enquanto em modo favoritos.
+    for (const id of ['filter-category', 'filter-country', 'filter-language']) {
+      $(id).disabled = e.target.checked
+    }
+    resetToFirstPageAndLoad()
+  })
 
   // Paginação.
   $('prev').addEventListener('click', () => {
@@ -125,7 +251,14 @@ async function init() {
     }
   })
 
+  // Player.
   $('player-close').addEventListener('click', closePlayer)
+  $('player-pip').addEventListener('click', () => player.togglePip())
+  $('player-share').addEventListener('click', sharePlayer)
+  $('continue-watching').addEventListener('click', () => {
+    const last = getLastChannel()
+    if (last) openPlayer(last)
+  })
 
   // Metadados (categorias, países, idiomas) para os filtros.
   try {
@@ -146,11 +279,12 @@ async function init() {
       'Todos'
     )
     $('meta-info').textContent = `${meta.total.toLocaleString('pt-BR')} streams no total`
-  } catch (err) {
-    console.warn('Falha ao carregar metadados:', err)
-    /* segue mesmo sem metadados */
+  } catch {
+    console.warn('Falha ao carregar metadados')
   }
 
+  // Deep link de canal (#c=...) tem prioridade sobre a grade inicial.
+  openFromHash()
   await load()
 }
 

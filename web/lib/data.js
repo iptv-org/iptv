@@ -6,7 +6,16 @@ const API_BASE = process.env.IPTV_API_BASE || 'https://iptv-org.github.io/api'
 const FETCH_TIMEOUT_MS = 15000
 
 // Arquivos da API pública que consumimos.
-const FILES = ['streams', 'channels', 'categories', 'countries', 'languages', 'logos', 'feeds']
+const FILES = [
+  'streams',
+  'channels',
+  'categories',
+  'countries',
+  'languages',
+  'logos',
+  'feeds',
+  'guides'
+]
 
 // Estado em memória, preenchido por load().
 const state = {
@@ -15,6 +24,7 @@ const state = {
   countries: [], // [{ code, name, flag, count }]
   languages: [], // [{ code, name, count }]
   hosts: new Set(), // allowlist de hostnames vistos no dataset (usado pelo proxy)
+  guidesByStreamId: new Map(), // "channel@feed" -> { siteId, sources } para EPG
   loadedAt: null
 }
 
@@ -91,9 +101,28 @@ function pickLogo(candidates, feedId) {
 
 /** (Re)carrega e normaliza todos os dados da API pública. */
 async function load() {
-  const [streams, channels, categories, countries, languages, logos, feeds] = await Promise.all(
-    FILES.map(fetchJson)
-  )
+  const [streams, channels, categories, countries, languages, logos, feeds, guides] =
+    await Promise.all(FILES.map(fetchJson))
+
+  // Guias (EPG) por "channel@feed": guarda as fontes XMLTV e os ids que podem
+  // aparecer no atributo `channel` do XMLTV. Guias gerados pelo iptv-org usam o
+  // id do stream ("Canal.cc@Feed") ou o id do canal ("Canal.cc"); o site_id é
+  // só um fallback. Casamos contra todos.
+  const guidesByStreamId = new Map()
+  for (const guide of guides) {
+    if (!guide.channel) continue
+    const sources = (guide.sources || [])
+      .filter(src => src.url && (src.format === 'XML' || src.format === 'GZIP'))
+      .map(src => ({ url: src.url, format: src.format }))
+    if (sources.length === 0) continue
+    const key = `${guide.channel}@${guide.feed}`
+    const ids = [key, guide.channel]
+    if (guide.site_id && guide.site_id !== '#') ids.push(guide.site_id)
+    // Mantém só o primeiro guia por stream (evita duplicatas).
+    if (!guidesByStreamId.has(key)) {
+      guidesByStreamId.set(key, { ids, sources })
+    }
+  }
 
   // Índices de apoio (lookup O(1)).
   const channelById = new Map(channels.map(c => [c.id, c]))
@@ -197,6 +226,7 @@ async function load() {
 
   state.streams = normalized
   state.hosts = hosts
+  state.guidesByStreamId = guidesByStreamId
   state.loadedAt = new Date().toISOString()
 
   return { total: normalized.length }
@@ -245,4 +275,12 @@ function getHosts() {
   return state.hosts
 }
 
-export default { load, query, meta, getHosts, hostOf, splitInlineHeaders }
+/**
+ * Retorna o guia (EPG) de um stream ("channel@feed"), ou null se não houver.
+ * @returns {{ ids: string[], sources: {url:string,format:string}[] } | null}
+ */
+function getGuideForStream(streamId) {
+  return state.guidesByStreamId.get(streamId) || null
+}
+
+export default { load, query, meta, getHosts, getGuideForStream, hostOf, splitInlineHeaders }
