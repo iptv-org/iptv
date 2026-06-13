@@ -125,6 +125,7 @@ Apontam direto para o `Dockerfile`. Defina `PORT` conforme a plataforma
 | `PORT` | `3000` | Porta (a plataforma costuma definir) |
 | `HOST` | `0.0.0.0` | Interface de escuta |
 | `IPTV_API_BASE` | API pública do iptv-org | Origem dos dados |
+| `TRUST_PROXY` | `0` | Confiar no `X-Forwarded-*` (ative `1` atrás de proxy reverso) |
 | `REFRESH_INTERVAL_MIN` | `360` | Atualização automática do dataset (min; `0` desliga) |
 | `STREAM_RATE_MAX` | `600` | Limite de req/min por IP no `/stream` |
 | `RELOAD_TOKEN` | — | Habilita `POST /api/reload` (header `x-reload-token`) |

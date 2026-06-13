@@ -29,12 +29,14 @@ const HOST = process.env.HOST || '0.0.0.0'
 const RELOAD_TOKEN = process.env.RELOAD_TOKEN
 // Atualização automática do dataset (minutos). 0 desabilita. Padrão: 6 h.
 const REFRESH_INTERVAL_MIN = parseInt(process.env.REFRESH_INTERVAL_MIN || '360', 10)
+// Confia no X-Forwarded-* (IP/protocolo reais) só quando atrás de um proxy
+// reverso confiável. Em execução direta, deixe desligado — senão um cliente
+// poderia forjar X-Forwarded-For e burlar o rate-limit por IP.
+const TRUST_PROXY = process.env.TRUST_PROXY === '1' || process.env.TRUST_PROXY === 'true'
 
 const app = express()
 app.disable('x-powered-by')
-// Atrás do proxy da plataforma (Render/Fly/etc.): confia no X-Forwarded-* para
-// obter o IP real (usado no rate-limit) e o protocolo correto.
-app.set('trust proxy', 1)
+app.set('trust proxy', TRUST_PROXY ? 1 : 0)
 
 // --- Headers de segurança ----------------------------------------------------
 app.use((req, res, next) => {
@@ -142,12 +144,22 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 // --- Dados / inicialização ---------------------------------------------------
 
+// Garante que recargas concorrentes (POST /api/reload + refresh periódico) não
+// disparem data.load() em paralelo nem intercalem os resets de cache.
+let reloadInFlight = null
+
 /** Recarrega o dataset e refresca a confiança dinâmica do proxy e o cache EPG. */
 async function reloadData() {
-  const result = await data.load()
-  proxy.resetDynamicHosts()
-  epg.clearCache()
-  return result
+  if (reloadInFlight) return reloadInFlight
+  reloadInFlight = (async () => {
+    const result = await data.load()
+    proxy.resetDynamicHosts()
+    epg.clearCache()
+    return result
+  })().finally(() => {
+    reloadInFlight = null
+  })
+  return reloadInFlight
 }
 
 async function start() {

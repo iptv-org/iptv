@@ -21,6 +21,9 @@ services:
         value: production
       - key: REFRESH_INTERVAL_MIN
         value: "360"
+      # O Render serve atrás de proxy reverso: confie no X-Forwarded-* (IP real).
+      - key: TRUST_PROXY
+        value: "1"
       # Defina um valor secreto no painel para habilitar o /api/reload.
       - key: RELOAD_TOKEN
         sync: false

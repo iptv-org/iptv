@@ -11,6 +11,8 @@ primary_region = "gru"  # São Paulo; troque conforme preferir
   NODE_ENV = "production"
   PORT = "8080"
   REFRESH_INTERVAL_MIN = "360"
+  # Fly serve atrás de proxy: confie no X-Forwarded-* (IP real no rate-limit).
+  TRUST_PROXY = "1"
 
 [http_service]
   internal_port = 8080
