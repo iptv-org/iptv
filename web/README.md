@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/logo.png" alt="IPTV Web" width="320" />
+</p>
+
 # IPTV Web
 
 Site que consome os dados **públicos** do projeto [iptv-org](https://github.com/iptv-org/iptv)
