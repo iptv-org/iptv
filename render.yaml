@@ -1,0 +1,26 @@
+# Blueprint do Render (https://render.com) — deploy do site IPTV (web/) via Docker.
+#
+# Como usar:
+#   1. Faça push deste repositório para o seu GitHub.
+#   2. No Render: New > Blueprint e selecione este repositório.
+#   3. O Render detecta este arquivo na raiz e cria o serviço automaticamente.
+#
+# `rootDir: web` torna os caminhos relativos a web/: usa web/Dockerfile e só
+# redeploya quando algo em web/ muda.
+services:
+  - type: web
+    name: iptv-web
+    runtime: docker
+    rootDir: web
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: REFRESH_INTERVAL_MIN
+        value: "360"
+      # Defina um valor secreto no painel para habilitar o /api/reload.
+      - key: RELOAD_TOKEN
+        sync: false

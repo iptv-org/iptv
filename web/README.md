@@ -100,9 +100,9 @@ docker run -p 3000:3000 iptv-web
 ### Render (1 clique, free tier)
 
 1. Faça push deste repositório para o seu GitHub.
-2. No [Render](https://render.com): **New → Blueprint**, selecione o repo. O
-   [`web/render.yaml`](render.yaml) configura o serviço (mova-o para a raiz do
-   repo, ou aponte o *Root Directory* do serviço para `web/`).
+2. No [Render](https://render.com): **New → Blueprint** e selecione o repo. O
+   `render.yaml` na **raiz** do repositório configura o serviço automaticamente
+   (`rootDir: web`, build via `web/Dockerfile`).
 3. Deploy. O healthcheck `/healthz` confirma quando estiver no ar.
 
 ### Fly.io
