@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/logo.png" alt="IPTV Web" width="320" />
+  <img src="public/banner.png" alt="IPTV Web" width="760" />
 </p>
 
 # IPTV Web

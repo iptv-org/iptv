@@ -2,7 +2,7 @@
 // básico. NÃO cacheia respostas de /api/* nem /stream (dados ao vivo) — só os
 // arquivos estáticos da interface.
 
-const CACHE = 'iptv-web-v2'
+const CACHE = 'iptv-web-v3'
 const SHELL = [
   './',
   './index.html',
@@ -15,7 +15,8 @@ const SHELL = [
   './js/store.js',
   './manifest.webmanifest',
   './icon.svg',
-  './logo.png'
+  './logo.png',
+  './icon.png'
 ]
 // Nova versão do cache porque o app shell mudou (logo no header).
 
