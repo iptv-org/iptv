@@ -1,6 +1,7 @@
 // Servidor Express: serve o front-end estático, expõe a API normalizada
 // (/api/*) e o proxy de streams (/stream). Os dados vêm da API pública do
-// iptv-org (ver lib/data.js).
+// iptv-org (ver lib/data.js). Preparado para produção: healthcheck, headers de
+// segurança, rate-limit no proxy, atualização periódica e shutdown gracioso.
 
 import express from 'express'
 import path from 'node:path'
@@ -22,12 +23,67 @@ function safeEqual(a, b) {
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const PORT = process.env.PORT || 3000
+const HOST = process.env.HOST || '0.0.0.0'
 // Token opcional para proteger o /api/reload. Se definido, o header
 // `x-reload-token` precisa bater. Se não definido, o endpoint fica desabilitado.
 const RELOAD_TOKEN = process.env.RELOAD_TOKEN
+// Atualização automática do dataset (minutos). 0 desabilita. Padrão: 6 h.
+const REFRESH_INTERVAL_MIN = parseInt(process.env.REFRESH_INTERVAL_MIN || '360', 10)
 
 const app = express()
 app.disable('x-powered-by')
+// Atrás do proxy da plataforma (Render/Fly/etc.): confia no X-Forwarded-* para
+// obter o IP real (usado no rate-limit) e o protocolo correto.
+app.set('trust proxy', 1)
+
+// --- Headers de segurança ----------------------------------------------------
+app.use((req, res, next) => {
+  res.setHeader('X-Content-Type-Options', 'nosniff')
+  res.setHeader('Referrer-Policy', 'no-referrer')
+  res.setHeader('X-Frame-Options', 'SAMEORIGIN')
+  next()
+})
+
+// --- Rate-limit simples (janela fixa por IP) para o proxy --------------------
+// O /stream é a superfície de abuso pública; limitamos por IP. O limite é
+// generoso para não atrapalhar a reprodução HLS (muitos segmentos por minuto).
+const RATE_WINDOW_MS = 60_000
+const RATE_MAX = parseInt(process.env.STREAM_RATE_MAX || '600', 10)
+const rateHits = new Map()
+
+function rateLimit(req, res, next) {
+  const now = Date.now()
+  const ip = req.ip || 'unknown'
+  const rec = rateHits.get(ip)
+  if (!rec || now > rec.reset) {
+    rateHits.set(ip, { count: 1, reset: now + RATE_WINDOW_MS })
+    return next()
+  }
+  if (rec.count >= RATE_MAX) {
+    res.status(429).json({ error: 'Muitas requisições, tente novamente em instantes' })
+    return
+  }
+  rec.count++
+  next()
+}
+
+// Limpeza periódica das janelas expiradas (evita crescimento do mapa).
+const rateSweep = setInterval(() => {
+  const now = Date.now()
+  for (const [ip, rec] of rateHits) if (now > rec.reset) rateHits.delete(ip)
+}, RATE_WINDOW_MS)
+rateSweep.unref()
+
+// --- Healthcheck -------------------------------------------------------------
+app.get('/healthz', (req, res) => {
+  const meta = data.meta()
+  const ok = meta.total > 0
+  res.status(ok ? 200 : 503).json({
+    status: ok ? 'ok' : 'starting',
+    streams: meta.total,
+    loadedAt: meta.loadedAt
+  })
+})
 
 // --- API normalizada ---------------------------------------------------------
 
@@ -69,11 +125,7 @@ app.post('/api/reload', async (req, res) => {
     return
   }
   try {
-    const result = await data.load()
-    // Refresca também a confiança dinâmica do proxy e o cache de EPG, para que
-    // um reload realmente reflita só o dataset atual.
-    proxy.resetDynamicHosts()
-    epg.clearCache()
+    const result = await reloadData()
     res.json({ ok: true, ...result, loadedAt: data.meta().loadedAt })
   } catch {
     res.status(502).json({ ok: false, error: 'Falha ao recarregar dados' })
@@ -82,21 +134,50 @@ app.post('/api/reload', async (req, res) => {
 
 // --- Proxy de streams --------------------------------------------------------
 
-app.get('/stream', proxy.createHandler(() => data.getHosts()))
+app.get('/stream', rateLimit, proxy.createHandler(() => data.getHosts()))
 
 // --- Front-end estático ------------------------------------------------------
 
 app.use(express.static(path.join(__dirname, 'public')))
 
-// --- Inicialização -----------------------------------------------------------
+// --- Dados / inicialização ---------------------------------------------------
+
+/** Recarrega o dataset e refresca a confiança dinâmica do proxy e o cache EPG. */
+async function reloadData() {
+  const result = await data.load()
+  proxy.resetDynamicHosts()
+  epg.clearCache()
+  return result
+}
 
 async function start() {
   console.log('Carregando dados da API pública do iptv-org...')
   const { total } = await data.load()
   console.log(`Pronto: ${total} streams normalizados.`)
-  app.listen(PORT, () => {
-    console.log(`IPTV Web rodando em http://localhost:${PORT}`)
+
+  // Atualização periódica do dataset (mantém o catálogo fresco em produção).
+  if (REFRESH_INTERVAL_MIN > 0) {
+    const timer = setInterval(() => {
+      reloadData()
+        .then(r => console.log(`Dataset atualizado: ${r.total} streams.`))
+        .catch(err => console.error('Falha ao atualizar dataset:', err.message))
+    }, REFRESH_INTERVAL_MIN * 60_000)
+    timer.unref()
+  }
+
+  const server = app.listen(PORT, HOST, () => {
+    console.log(`IPTV Web rodando em http://${HOST}:${PORT}`)
   })
+
+  // Shutdown gracioso (plataformas enviam SIGTERM ao reciclar o container).
+  const shutdown = signal => {
+    console.log(`Recebido ${signal}, encerrando...`)
+    server.close(() => process.exit(0))
+    // Força a saída se as conexões não fecharem a tempo.
+    setTimeout(() => process.exit(0), 10_000).unref()
+  }
+  process.on('SIGTERM', () => shutdown('SIGTERM'))
+  process.on('SIGINT', () => shutdown('SIGINT'))
 }
 
 start().catch(err => {

@@ -1,0 +1,28 @@
+# Configuração do Fly.io (https://fly.io). Deploy via Docker.
+# Como usar: dentro de web/, rode `fly launch --no-deploy` (ajusta o app name),
+# depois `fly deploy`.
+app = "iptv-web"
+primary_region = "gru"  # São Paulo; troque conforme preferir
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "8080"
+  REFRESH_INTERVAL_MIN = "360"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [http_service.checks]
+    [http_service.checks.health]
+      method = "GET"
+      path = "/healthz"
+      interval = "30s"
+      timeout = "5s"
+      grace_period = "40s"
