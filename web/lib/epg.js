@@ -138,14 +138,21 @@ async function getNowNext(guide) {
   for (const source of guide.sources) {
     const key = `${source.url}|${guide.ids[0]}`
     const cached = resultCache.get(key)
-    if (cached && Date.now() - cached.at < RESULT_TTL_MS) return cached.programs
+    // Só usa o cache quando há programas: assim uma fonte vazia não impede
+    // tentar as fontes seguintes até o TTL expirar (o XMLTV bruto ainda é
+    // cacheado por getRaw, então não há novo download).
+    if (cached && cached.programs.length > 0 && Date.now() - cached.at < RESULT_TTL_MS) {
+      return cached.programs
+    }
 
     const raw = await getRaw(source)
     if (!raw) continue
 
     const programs = pickNowNext(extractPrograms(raw, guide.ids))
-    resultCache.set(key, { at: Date.now(), programs })
-    if (programs.length > 0) return programs
+    if (programs.length > 0) {
+      resultCache.set(key, { at: Date.now(), programs })
+      return programs
+    }
   }
   return []
 }

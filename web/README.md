@@ -102,9 +102,11 @@ Para mudar a porta: `PORT=8080 npm start`.
   crescimento) e bloqueia destinos internos/privados/especiais: `localhost`,
   `127.0.0.0/8`, `10/8`, `192.168/16`, `172.16/12`, `169.254/16`, CGNAT
   `100.64/10`, TEST-NET, multicast/reservados, e **IPv6** (loopback `::1`,
-  IPv4-mapeado `::ffff:…`, ULA, link-local) — inclusive quando o hostname chega
-  entre colchetes. Cada salto de **redirect** é revalidado, impedindo SSRF via
-  `Location`.
+  IPv4-mapeado `::ffff:…` (com e sem pontos), ULA, link-local `fe80::/10`) —
+  inclusive quando o hostname chega entre colchetes ou com ponto final
+  (`localhost.`). Cada salto de **redirect** é revalidado e o **DNS é resolvido**
+  para barrar domínios que apontem a IP privado (mitiga *DNS rebinding*),
+  impedindo SSRF via `Location` ou rebind.
 - **Endpoint de reload protegido.** `POST /api/reload` exige `RELOAD_TOKEN`.
 - **Timeout de rede.** As buscas à API pública têm timeout, evitando travamento.
 

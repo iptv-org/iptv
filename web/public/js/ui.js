@@ -47,6 +47,11 @@ function card(channel, onPlay, onFavorite) {
     favBtn.textContent = active ? '★' : '☆'
     if (onFavorite) onFavorite(channel, active)
   })
+  // Impede que Enter/Espaço no botão de favorito borbulhe para o card e
+  // também abra o player.
+  favBtn.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ') e.stopPropagation()
+  })
 
   const node = el(
     'div',
@@ -57,6 +62,7 @@ function card(channel, onPlay, onFavorite) {
   const trigger = () => onPlay(channel)
   node.addEventListener('click', trigger)
   node.addEventListener('keydown', e => {
+    if (e.target !== node) return // ignora teclas vindas de filhos (ex.: estrela)
     if (e.key === 'Enter' || e.key === ' ') {
       e.preventDefault()
       trigger()

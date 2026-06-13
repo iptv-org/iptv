@@ -23,8 +23,16 @@ self.addEventListener('install', event => {
 })
 
 self.addEventListener('activate', event => {
+  // Remove só versões antigas DESTE app (prefixo iptv-web-), preservando caches
+  // de outros fluxos que compartilhem a mesma origin.
   event.waitUntil(
-    caches.keys().then(keys => Promise.all(keys.filter(k => k !== CACHE).map(k => caches.delete(k))))
+    caches
+      .keys()
+      .then(keys =>
+        Promise.all(
+          keys.filter(k => k.startsWith('iptv-web-') && k !== CACHE).map(k => caches.delete(k))
+        )
+      )
   )
   self.clients.claim()
 })
@@ -45,7 +53,8 @@ self.addEventListener('fetch', event => {
         .then(res => {
           if (res.ok) {
             const copy = res.clone()
-            caches.open(CACHE).then(cache => cache.put(request, copy))
+            // waitUntil mantém o SW vivo até a gravação concluir.
+            event.waitUntil(caches.open(CACHE).then(cache => cache.put(request, copy)))
           }
           return res
         })
