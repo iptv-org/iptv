@@ -116,8 +116,10 @@ Please note that we only accept removal requests from channel owners and their o
 
 Before submitting new streams you should verify the following:
 
-- Make sure the link has not been submitted into the repository before. This can be done by searching the [repository](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) or the [website](https://iptv-org.github.io/).
-- Each submitted stream link must have a registered Channel & Feed ID (eg: `ChannelID@FeedID`) in our database. A complete list of channels and feeds can be found at [iptv-org.github.io](https://iptv-org.github.io). If it's not present, please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md) to add it. Streams submitted by PRs without valid ID will not reach mainstream playlists targeting a category, language or broadcast area.
+- Make sure the link has not been submitted into the repository before. This can be done by searching the [repository](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) or the [website](https://iptv-org.github.io/).
+
+- Each submitted stream link must have a registered Channel & Feed ID (eg: `ChannelID@FeedID`) in our database. A complete list of channels and feeds can be found at [iptv-org.github.io](https://iptv-org.github.io). If it's not present, please follow the [Database Contributing Guide](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md) to add it. Streams submitted by PRs without valid ID will not reach mainstream playlists targeting a category, language or broadcast area.
+
 - User-submitted links to stream URLs shall be intended to be publicly available by stream provider and the copyright holders.
 - Channels under DMCA takedown notices or broadcasting copyrighted content (such as the Champions League) at any time will not be accepted, see the [blocklist](https://github.com/iptv-org/database/blob/master/data/blocklist.csv) for details.
 - The same applies to channels that are known to partially or fully broadcast [NSFW](https://en.wikipedia.org/wiki/Not_safe_for_work) content.
@@ -180,24 +182,24 @@ If changing channelID to almost any value within a range of hundreds or thousand
  
  Next, open any text editor of your choice and paste the link with the parameters you found into it, like this:
  
- ```txt
+ ```m3u
 #EXTM3U
 #EXTINF:-1,Example TV
 #EXTVLCOPT:http-referrer=https://example.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
 https://example.com/playlist.m3u8
+```
 
 - Watch the broadcast for at least a few minutes. Make sure playback is stable and does not stop abruptly at some point.
 - Try restarting the stream. Make sure it's not looping on a repeating segment and is still available.
 - Alternatively, you can use services like [streamtest.in](https://streamtest.in/tools/stream-test).
-- Alternatively, you can use https://streamtest.in/tools/stream-test.
 - To check if the stream link is geo-blocked you can use services like [check-host.net](https://check-host.net/check-http).
 
 ## Stream Description Scheme
 
 For a stream to be approved, its description must follow this template:
 
-```
+```m3u
 #EXTINF:-1 tvg-id="STREAM_ID",STREAM_TITLE (QUALITY) [LABEL]
 STREAM_URL
 ```
@@ -212,14 +214,14 @@ STREAM_URL
 
 Example:
 
-```xml
+```m3u
 #EXTINF:-1 tvg-id="ExampleTV.us@East",Example TV East (720p) [Geo-blocked]
 https://example.com/playlist.m3u8
 ```
 
 Also, if necessary, you can specify custom [HTTP User-Agent](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/User-Agent) and [HTTP Referrer](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referer) through `#EXTVLCOPT` directive:
 
-```xml
+```m3u
 #EXTINF:-1 tvg-id="ExampleTV.us",Example TV
 #EXTVLCOPT:http-referrer=http://example.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64)
