@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CineStream - Explore</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "inverse-on-surface": "#313030",
+                      "tertiary-fixed-dim": "#a7c8ff",
+                      "secondary-fixed-dim": "#c8c6c6",
+                      "outline": "#af8782",
+                      "on-primary-container": "#fff7f6",
+                      "on-background": "#e5e2e1",
+                      "on-secondary-fixed-variant": "#474747",
+                      "surface-tint": "#ffb4aa",
+                      "surface-container-highest": "#353534",
+                      "on-primary-fixed": "#410001",
+                      "on-tertiary-container": "#f8f9ff",
+                      "on-error": "#690005",
+                      "tertiary-container": "#0072d7",
+                      "primary-fixed-dim": "#ffb4aa",
+                      "on-surface-variant": "#e9bcb6",
+                      "on-secondary-container": "#b6b5b4",
+                      "surface-dim": "#131313",
+                      "tertiary": "#a7c8ff",
+                      "surface-container-lowest": "#0e0e0e",
+                      "on-tertiary": "#003061",
+                      "inverse-surface": "#e5e2e1",
+                      "surface-bright": "#3a3939",
+                      "on-primary": "#690003",
+                      "tertiary-fixed": "#d5e3ff",
+                      "surface-container": "#201f1f",
+                      "on-tertiary-fixed-variant": "#004689",
+                      "background": "#131313",
+                      "secondary-fixed": "#e4e2e1",
+                      "on-tertiary-fixed": "#001b3c",
+                      "surface-container-low": "#1c1b1b",
+                      "error": "#ffb4ab",
+                      "primary-container": "#e50914",
+                      "on-error-container": "#ffdad6",
+                      "primary-fixed": "#ffdad5",
+                      "surface-variant": "#353534",
+                      "outline-variant": "#5e3f3b",
+                      "on-primary-fixed-variant": "#930007",
+                      "inverse-primary": "#c0000c",
+                      "on-secondary-fixed": "#1b1c1c",
+                      "surface": "#131313",
+                      "secondary": "#c8c6c6",
+                      "secondary-container": "#474747",
+                      "on-secondary": "#303030",
+                      "error-container": "#93000a",
+                      "surface-container-high": "#2a2a2a",
+                      "on-surface": "#e5e2e1",
+                      "primary": "#ffb4aa"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "container-max": "1440px",
+                      "unit": "8px",
+                      "margin-tablet": "32px",
+                      "margin-desktop": "64px",
+                      "margin-mobile": "16px"
+              },
+              "fontFamily": {
+                      "label-sm": [
+                              "Inter"
+                      ],
+                      "display-lg": [
+                              "Inter"
+                      ],
+                      "label-md": [
+                              "Inter"
+                      ],
+                      "display-lg-mobile": [
+                              "Inter"
+                      ],
+                      "headline-md": [
+                              "Inter"
+                      ],
+                      "headline-lg": [
+                              "Inter"
+                      ],
+                      "body-md": [
+                              "Inter"
+                      ],
+                      "body-lg": [
+                              "Inter"
+                      ]
+              },
+              "fontSize": {
+                      "label-sm": [
+                              "12px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.04em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "800"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "letterSpacing": "-0.01em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .glass-panel {
+            background: rgba(32, 31, 31, 0.4);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .glass-card {
+            background: linear-gradient(180deg, rgba(53, 53, 52, 0.6) 0%, rgba(28, 27, 27, 0.8) 100%);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+        
+        .glass-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            border-color: rgba(229, 9, 20, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.5), inset 0 0 20px rgba(229, 9, 20, 0.1);
+        }
+        
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: theme('colors.surface-dim');
+        }
+        ::-webkit-scrollbar-thumb {
+            background: theme('colors.surface-variant');
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: theme('colors.outline-variant');
+        }
+      </style>
+</head>
+<body class="antialiased min-h-screen flex overflow-x-hidden bg-[#131313] text-on-surface">
+<!-- Ambient Light Leak Background -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<div class="absolute -top-1/4 -right-1/4 w-1/2 h-1/2 bg-primary-container rounded-full mix-blend-screen filter blur-[150px] opacity-10"></div>
+<div class="absolute -bottom-1/4 -left-1/4 w-1/2 h-1/2 bg-tertiary-container rounded-full mix-blend-screen filter blur-[150px] opacity-5"></div>
+</div>
+<!-- SideNavBar (Desktop Only) -->
+<nav class="hidden md:flex bg-surface-container-low/90 backdrop-blur-2xl dark:bg-surface-container-low/90 fixed left-0 top-0 h-screen w-64 z-40 border-r border-outline-variant shadow-md flex-col p-4 gap-4">
+<!-- Brand Header -->
+<div class="flex items-center gap-4 mb-8 mt-4 px-2">
+<div class="w-10 h-10 rounded-lg bg-gradient-to-br from-primary-container to-on-primary-fixed flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-white" style="font-variation-settings: 'FILL' 1;">play_circle</span>
+</div>
+<div>
+<h1 class="font-headline-md text-headline-md text-primary font-extrabold tracking-tight">CineStream</h1>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Premium IPTV</p>
+</div>
+</div>
+<!-- Main Navigation -->
+<div class="flex flex-col gap-2 flex-grow">
+<!-- Active Tab: Search (since this is Explore/Search) -->
+<a class="flex items-center gap-4 px-4 py-3 bg-primary-container text-on-primary-container rounded-lg font-bold font-label-md text-label-md scale-98 transition-transform" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">search</span>
+<span>Search</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container rounded-lg font-label-md text-label-md hover:bg-surface-bright transition-all duration-300" href="#">
+<span class="material-symbols-outlined">home</span>
+<span>Home</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container rounded-lg font-label-md text-label-md hover:bg-surface-bright transition-all duration-300" href="#">
+<span class="material-symbols-outlined">movie</span>
+<span>Movies</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container rounded-lg font-label-md text-label-md hover:bg-surface-bright transition-all duration-300" href="#">
+<span class="material-symbols-outlined">tv</span>
+<span>TV Shows</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-secondary-container hover:text-on-secondary-container rounded-lg font-label-md text-label-md hover:bg-surface-bright transition-all duration-300" href="#">
+<span class="material-symbols-outlined">sports_esports</span>
+<span>Sports</span>
+</a>
+</div>
+<!-- Upgrade CTA -->
+<div class="mt-auto mb-4 relative overflow-hidden rounded-xl bg-surface-container-high border border-outline-variant p-4 text-center group cursor-pointer hover:border-primary-container transition-colors">
+<div class="absolute inset-0 bg-gradient-to-br from-primary-container/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined text-primary mb-2" style="font-variation-settings: 'FILL' 1;">workspace_premium</span>
+<p class="font-label-md text-label-md text-on-surface mb-3">Upgrade to Pro</p>
+<button class="w-full bg-primary-container text-white rounded-lg py-2 font-label-md text-label-md font-bold hover:bg-inverse-primary transition-colors">
+                Upgrade Now
+            </button>
+</div>
+<!-- Footer Links -->
+<div class="flex flex-col gap-2 pt-4 border-t border-outline-variant">
+<a class="flex items-center gap-4 px-4 py-2 text-on-surface-variant hover:text-on-surface rounded-lg font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span>Settings</span>
+</a>
+<a class="flex items-center gap-4 px-4 py-2 text-on-surface-variant hover:text-error rounded-lg font-label-md text-label-md transition-colors" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Logout</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="flex-1 ml-0 md:ml-64 relative z-10 min-h-screen flex flex-col">
+<!-- Search Header Area -->
+<header class="w-full px-margin-mobile md:px-margin-desktop py-8 md:py-12 glass-panel sticky top-0 z-30 border-b-0 border-t-0 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)]">
+<div class="max-w-container-max mx-auto">
+<div class="relative group w-full max-w-3xl mx-auto">
+<!-- Glow effect on focus -->
+<div class="absolute -inset-0.5 bg-gradient-to-r from-primary-container to-outline-variant rounded-xl blur opacity-0 group-focus-within:opacity-30 transition duration-500"></div>
+<div class="relative flex items-center w-full bg-surface-container-high/80 rounded-xl border border-outline-variant focus-within:border-primary/50 overflow-hidden backdrop-blur-xl">
+<div class="pl-6 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-on-surface-variant text-2xl">search</span>
+</div>
+<input class="w-full bg-transparent border-none py-5 pl-4 pr-6 text-on-surface font-body-lg text-body-lg placeholder-on-surface-variant/50 focus:ring-0" placeholder="Search channels, movies, series..." type="text"/>
+<!-- Mic button -->
+<button class="pr-6 flex items-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-2xl">mic</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Discovery Content -->
+<div class="flex-1 px-margin-mobile md:px-margin-desktop py-12 pb-24 max-w-container-max mx-auto w-full">
+<div class="mb-10 flex items-end justify-between">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight mb-2">Discover Contents</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Browse our massive library by category</p>
+</div>
+</div>
+<!-- Bento Grid / Cards Array -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Card 1: Categories -->
+<a class="glass-card rounded-xl p-8 flex flex-col h-48 group relative overflow-hidden" href="#">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-primary/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-auto border border-outline-variant group-hover:border-primary/30 z-10 transition-colors">
+<span class="material-symbols-outlined text-primary text-2xl">category</span>
+</div>
+<div class="z-10 mt-4">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Categories</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 group-hover:text-on-surface transition-colors">Movies, News, Sports...</p>
+</div>
+</a>
+<!-- Card 2: Cities -->
+<a class="glass-card rounded-xl p-8 flex flex-col h-48 group relative overflow-hidden" href="#">
+<div class="absolute top-0 right-0 w-32 h-32 bg-tertiary/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-tertiary/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-auto border border-outline-variant group-hover:border-tertiary/30 z-10 transition-colors">
+<span class="material-symbols-outlined text-tertiary text-2xl">location_city</span>
+</div>
+<div class="z-10 mt-4">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Cities</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 group-hover:text-on-surface transition-colors">Local channels by city</p>
+</div>
+</a>
+<!-- Card 3: Countries -->
+<a class="glass-card rounded-xl p-8 flex flex-col h-48 group relative overflow-hidden" href="#">
+<div class="absolute top-0 right-0 w-32 h-32 bg-secondary/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-secondary/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-auto border border-outline-variant group-hover:border-secondary/30 z-10 transition-colors">
+<span class="material-symbols-outlined text-secondary text-2xl">public</span>
+</div>
+<div class="z-10 mt-4">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Countries</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 group-hover:text-on-surface transition-colors">Global broadcasts</p>
+</div>
+</a>
+<!-- Card 4: Languages -->
+<a class="glass-card rounded-xl p-8 flex flex-col h-48 group relative overflow-hidden" href="#">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-primary-container/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-auto border border-outline-variant group-hover:border-primary-container/30 z-10 transition-colors">
+<span class="material-symbols-outlined text-primary-container text-2xl">translate</span>
+</div>
+<div class="z-10 mt-4">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Languages</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 group-hover:text-on-surface transition-colors">Filter by audio</p>
+</div>
+</a>
+<!-- Card 5: Regions -->
+<a class="glass-card rounded-xl p-8 flex flex-col h-48 group relative overflow-hidden" href="#">
+<div class="absolute top-0 right-0 w-32 h-32 bg-error/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-error/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-auto border border-outline-variant group-hover:border-error/30 z-10 transition-colors">
+<span class="material-symbols-outlined text-error text-2xl">map</span>
+</div>
+<div class="z-10 mt-4">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Regions</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 group-hover:text-on-surface transition-colors">Continental groupings</p>
+</div>
+</a>
+<!-- Card 6: Sources -->
+<a class="glass-card rounded-xl p-8 flex flex-col h-48 group relative overflow-hidden" href="#">
+<div class="absolute top-0 right-0 w-32 h-32 bg-on-tertiary-fixed-variant/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-on-tertiary-fixed-variant/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-auto border border-outline-variant group-hover:border-on-tertiary-fixed-variant/30 z-10 transition-colors">
+<span class="material-symbols-outlined text-tertiary-fixed text-2xl">router</span>
+</div>
+<div class="z-10 mt-4">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Sources</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 group-hover:text-on-surface transition-colors">Network providers</p>
+</div>
+</a>
+<!-- Card 7: Subdivisions -->
+<a class="glass-card rounded-xl p-8 flex flex-col h-48 group relative overflow-hidden" href="#">
+<div class="absolute top-0 right-0 w-32 h-32 bg-outline/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-outline/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-auto border border-outline-variant group-hover:border-outline/30 z-10 transition-colors">
+<span class="material-symbols-outlined text-outline text-2xl">grid_view</span>
+</div>
+<div class="z-10 mt-4">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Subdivisions</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 group-hover:text-on-surface transition-colors">States &amp; Provinces</p>
+</div>
+</a>
+<!-- Card 8: Raw -->
+<a class="glass-card rounded-xl p-8 flex flex-col h-48 group relative overflow-hidden" href="#">
+<div class="absolute top-0 right-0 w-32 h-32 bg-surface-tint/10 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-surface-tint/20 transition-colors"></div>
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center mb-auto border border-outline-variant group-hover:border-surface-tint/30 z-10 transition-colors">
+<span class="material-symbols-outlined text-surface-tint text-2xl">data_object</span>
+</div>
+<div class="z-10 mt-4">
+<h3 class="font-headline-md text-headline-md text-on-surface font-bold">Raw</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1 group-hover:text-on-surface transition-colors">Direct stream links</p>
+</div>
+</a>
+</div>
+<!-- Trending searches section (Added for depth) -->
+<div class="mt-16">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold mb-4">Trending Now</h3>
+<div class="flex flex-wrap gap-3">
+<button class="px-6 py-2 rounded-full bg-surface-container-high border border-outline-variant text-on-surface font-label-md hover:bg-surface-bright hover:border-primary transition-colors">Action Movies 2024</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high border border-outline-variant text-on-surface font-label-md hover:bg-surface-bright hover:border-primary transition-colors">Live Sports UK</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high border border-outline-variant text-on-surface font-label-md hover:bg-surface-bright hover:border-primary transition-colors">Anime Subs</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high border border-outline-variant text-on-surface font-label-md hover:bg-surface-bright hover:border-primary transition-colors">US News Live</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high border border-outline-variant text-on-surface font-label-md hover:bg-surface-bright hover:border-primary transition-colors">Documentary</button>
+</div>
+</div>
+</div>
+</main>
+<script>
+        // Simple subtle interaction script
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.glass-card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left;
+                    const y = e.clientY - rect.top;
+                    
+                    // Subtle spotlight effect on hover
+                    card.style.background = `radial-gradient(circle at ${x}px ${y}px, rgba(53, 53, 52, 0.8) 0%, rgba(28, 27, 27, 0.9) 100%)`;
+                });
+                
+                card.addEventListener('mouseleave', () => {
+                    card.style.background = 'linear-gradient(180deg, rgba(53, 53, 52, 0.6) 0%, rgba(28, 27, 27, 0.8) 100%)';
+                });
+            });
+        });
+    </script>
+</body></html>
