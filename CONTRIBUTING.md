@@ -26,7 +26,7 @@
 ### Submitting a new stream
 
 
-Before submitting a new stream make sure to acknowledge the [Requirements](#requirements) section and follow the [Validation](#validation) section of this Guide.
+Before submitting a new stream make sure to acknowledge the [Link Requirements](#link-requirements) section and follow the [Stream Validation](#stream-validation) section of this Guide.
 
 🤚 Requests that do not comply with those sections will be closed immediately!
 
@@ -61,14 +61,14 @@ Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labe
 The only thing before publishing your report is to make sure that:
 
 - The link is still in our playlists. You can verify this by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- The link really doesn't work and is not just [geo-blocked](https://en.wikipedia.org/wiki/Geo-blocking). To double-check this, please follow our [Testing](#testing) guidelines.
+- The link really doesn't work and is not just [geo-blocked](https://en.wikipedia.org/wiki/Geo-blocking). To double-check this, please follow our [Stream Testing](#stream-testing) guidelines.
 
 An issue without a valid link will be closed immediately.
 
 ### Finding of broken streams
 
 
-Follow the [Testing](#testing) guide. [VLC media player](https://www.videolan.org/vlc/) outputs all errors to the log (Tools -> Messages) so you'll be able to determine pretty accurately why a link isn't working.
+Follow the [Stream Testing](#stream-testing) guide. [VLC media player](https://www.videolan.org/vlc/) outputs all errors to the log (Tools -> Messages) so you'll be able to determine pretty accurately why a link isn't working.
 
 Another way to test links is to use the NPM script. To do this, first make sure you have [Node.js](https://nodejs.org/en) installed on your system. Clone this repository, then go to the `iptv` folder using [Console](https://en.wikipedia.org/wiki/Windows_Console) (or [Terminal](<https://en.wikipedia.org/wiki/Terminal_(macOS)>) if you have macOS) and run the command:
 
