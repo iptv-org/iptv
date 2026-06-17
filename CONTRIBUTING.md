@@ -6,7 +6,7 @@
   - [Fixing descriptions](#fixing-descriptions)
   - [Reporting of broken streams](#reporting-of-broken-streams)
   - [Finding of broken streams](#finding-of-broken-streams)
-  - [Removing infrighting content](#removing-infrighting-content)
+  - [Removing infringing content](#removing-infringing-content)
 - [Link Requirements](#link-requirements)
 - [Stream Validation](#stream-validation)
   - [How do I know if the stream is eligible?](#how-do-i-know-if-the-stream-is-eligible)
@@ -41,7 +41,7 @@ You have several options:
   
   This will submit a filled form that will be reviewed the same way.
 - Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls).
-Follow the [Playlist Structure](#playlist-structure) and [Stream Description Scheme](#stream-description-scheme) if you have considered that way.
+Follow the [Playlist Structure](#playlist-structure) and [Stream Description Scheme](#stream-description-scheme) if you choose this method.
 If you're adding an alternative link please do not replace any other link that might be working for some.
 
 ### Fixing descriptions
@@ -103,7 +103,7 @@ npm run playlist:test streams/fr.m3u --- --fix
 
 After that, all you need to do is report the broken streams you found via the [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:remove&projects=&template=3_streams_report.yml&title=Broken%3A+) or create a [pull request](https://github.com/iptv-org/iptv/pulls) with updated playlists.
 
-### Removing infrighting content
+### Removing infringing content
 
 To request removal of a link to a channel from the repository, you need to fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=removal+request&projects=&template=6_copyright-claim.yml&title=Remove%3A+) and wait for the request to be reviewed (this usually takes no more than 1 business day). And if the request is approved, links to the channel will be immediately removed from the repository.
 
@@ -174,7 +174,6 @@ If changing channelID to almost any value within a range of hundreds or thousand
 
 - If it doesn't launch, try open the link in your browser. Press F12, go to the "Network" tab, and filter requests for `m3u` or `mpd`.
 - Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
-- If it doesn't launch, open your browser and press F12, go to the Network tab, and filter requests for m3u or mpd.
   <img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/2eec24df-21a4-4a77-8a96-4f967baf2548" />
   
   Switch to "Headers" tab, scroll down and copy the "User-Agent" and the "Referer".
