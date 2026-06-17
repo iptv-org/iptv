@@ -36,8 +36,8 @@ You have several options:
 - Use https://iptv-org.github.io/ to submit a stream for appropriate feed of the channel. To do that find a channel and press the feed link.
   <img width="892" height="70" alt="image" src="https://github.com/user-attachments/assets/c1bee428-d8a5-4c80-b961-43f1f25e2be4" />
 
-  Then press a ➕ sign if it is required to add an additional feed first or press 3 dots over appropriate feed and choose Add Stream.
-  <img width="770" height="387" alt="image" src="https://github.com/user-attachments/assets/097087a1-da7e-4159-849d-baef552a0918" />
+  Then press 3 dots over feed and choose Add Stream.
+  <img width="770" height="387" alt="image" src="https://github.com/user-attachments/assets/859da8ff-4849-460a-8d33-36c19e66f9ae" />
   
   This will submit a filled form that will be reviewed the same way.
 - Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls).
@@ -242,20 +242,21 @@ Each playlist file must
 
 ## Project Structure
 
-- `.github/`
-  - `ISSUE_TEMPLATE/`: issue templates for the repository.
-  - `workflows`: contains [GitHub actions](https://docs.github.com/en/actions/quickstart) workflows.
-  - `CODE_OF_CONDUCT.md`: rules you shouldn't break if you don't want to get banned.
-- `.readme/`
-  - `config.json`: config for the `markdown-include` package, which is used to compile everything into one `PLAYLISTS.md` file.
-  - `preview.png`: image displayed in the `README.md`.
-  - `template.md`: template for `PLAYLISTS.md`.
-- `scripts/`: contains all scripts used in the repository.
-- `streams/`: contains all streams broken down by country from which they are broadcasted.
-- `tests/`: contains tests to check the scripts.
-- `CONTRIBUTING.md`: file you are currently reading.
-- `PLAYLISTS.md`: auto-updated list of available playlists.
-- `README.md`: project description.
+iptv/
+├── .github/
+│   ├── ISSUE_TEMPLATE/     # Templates for submitting issues/requests
+│   ├── workflows/          # contains [GitHub actions](https://docs.github.com/en/actions/quickstart) workflows.
+│   └── CODE_OF_CONDUCT.md  # Community guidelines and rules
+├── .readme/
+│   ├── config.json         # config for the `markdown-include` package, which is used to compile everything into one `PLAYLISTS.md` file.
+│   ├── preview.png         # image displayed in the `README.md`.
+│   └── template.md         # template for `PLAYLISTS.md`.
+├── scripts/                # contains all scripts used in the repository.
+├── streams/                # contains all streams broken down by country from which they are broadcasted.
+├── tests/                  # contains tests to check the scripts.
+├── CONTRIBUTING.md         # This contributor guide, the file you are currently reading.
+├── PLAYLISTS.md            # Automatically generated index of all available playlists
+└── README.md               # The primary landing page and project description
 
 ## Scripts
 
