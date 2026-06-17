@@ -242,6 +242,7 @@ Each playlist file must
 
 ## Project Structure
 
+```
 iptv/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/     # Templates for submitting issues/requests
@@ -257,7 +258,7 @@ iptv/
 ├── CONTRIBUTING.md         # This contributor guide, the file you are currently reading.
 ├── PLAYLISTS.md            # Automatically generated index of all available playlists
 └── README.md               # The primary landing page and project description
-
+```
 ## Scripts
 
 These scripts are created to automate routine processes in the repository and make it a bit easier to maintain.
