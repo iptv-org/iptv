@@ -52,7 +52,7 @@ First of all, make sure that the desired stream has the correct ID. A full list 
 
 If, however, you have found an error in the database itself, please refer to: [How to edit a database entry?](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md#how-to-edit-a-database-entry)
 
-### Reporting of broken streams
+### Reporting broken streams
 
 Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:remove&projects=&template=3_streams_report.yml&title=Broken%3A+) and we'll verify and remove it.
 
@@ -63,7 +63,7 @@ The only thing before publishing your report is to make sure that:
 
 An issue without a valid link will be closed immediately.
 
-### Finding of broken streams
+### Finding broken streams
 
 Follow the [Stream Testing](#stream-testing) guide. [VLC media player](https://www.videolan.org/vlc/) outputs all errors to the log (Tools -> Messages) so you'll be able to determine pretty accurately why a link isn't working.
 
@@ -130,13 +130,13 @@ Before submitting new streams you should verify the following:
 
 ### How do I know if the stream is eligible?
 
-Make sure you can find the origin of the broadcast using your favourite search engine or by following the domain of broadcast. If you used to see the channel under paywalls or subscription offers, it may likely be a copyright infringement. If you see a service with a probe period and available plans or you have found a link having unreadable parts of it in someone else's playlist, it's likely to expire soon. We typically look for pages with publicly accessible video players, as these are more likely to host broadcasts intended for public viewing. However, even in such cases, the underlying stream URLs are often protected and may only be accessible within your authenticated session. Examples of valid streams are shown below.
+Make sure you can find the origin of the broadcast using your favourite search engine or by following the domain of broadcast. If you used to see the channel under paywalls or subscription offers, it may likely involve a copyright infringement. If you see a service with a time trial or you have found a link having unreadable parts of it in someone else's playlist, it's likely to expire soon. We typically look for pages with publicly accessible video players, as these are more likely to host broadcasts intended for public viewing. However, even in such cases, the underlying stream URLs are often protected and may only be accessible within your authenticated session. Examples of valid streams are shown below.
 
 ### Examples
 
 ✅ Valid links usually have a format like so
 
-- ```https://cdn.domain.com/channelname/chunks or playlist or any other name.m3u8 or mpd```
+- 
 - ```https://cdn.domain.com.com/live?stream=channelname```
 - ```http://10.113.179.1:port/udp/238.1.1.1:port```
 - ```rtmp://10.113.179.1:port/prefix/channel```
@@ -157,18 +157,18 @@ There might be notable examples when a session must be created but it doesn't im
 
 ```https://bl.rutube.ru/livestream/id/index.m3u8?e=2070278263&s=sessiontoken&scheme=https```
 
-where there only limitation is that the session will expire in 2035. You can check unix timestamps [here](https://www.epochconverter.com/).
+where the only limitation is that the session will expire in 2035. You can check unix timestamps [here](https://www.epochconverter.com/).
 
 ❌ Links from subscription based services often be in a form like so:
 - ```https://sketchydomain.xyz:port/username/password/channelID```
 - ```http://cdn.domain.com/credentialhash/channelID/index.m3u8```
 - ```http://cdn.domain.com/channelID/mpegts?token=CTkHfXdAqvPcwq```
 
-If changing channelID to almost any value within a range of hundreds or thousands of IDs results in a valid stream from a different channel, then it likely comes from a leaked account or a trial account
+If changing channelID to almost any value within a range of hundreds or thousands of IDs results in a valid stream from a different channel, then it likely comes from a leaked account or a trial account.
 
 ### Stream Testing
 
-- If it doesn't launch, try open the link in your browser. Press F12, go to the "Network" tab, and filter requests for `m3u` or `mpd`.
+- If it doesn't launch, try opening the link in your browser. Press F12, go to the "Network" tab, and filter requests for `m3u` or `mpd`.
 - Open [VLC media player](https://www.videolan.org/vlc/index.html) and make use of your link.
   <img width="338" height="256" alt="image" src="https://github.com/user-attachments/assets/2eec24df-21a4-4a77-8a96-4f967baf2548" />
   
