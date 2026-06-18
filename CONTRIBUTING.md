@@ -5,7 +5,7 @@
   - [Submitting a new stream](#submitting-a-new-stream)
   - [Fixing descriptions](#fixing-descriptions)
   - [Reporting broken streams](#reporting-broken-streams)
-  - [Finding of broken streams](#finding-of-broken-streams)
+  - [Finding broken streams](#finding-broken-streams)
   - [Removing infringing content](#removing-infringing-content)
 - [Link Requirements](#link-requirements)
 - [Stream Validation](#stream-validation)
