@@ -23,8 +23,8 @@
 **iptv-org** is more than just a repository for sharing currently available links in a playlist format. After years of commitment and moderation practices it has evolved into a knowledge base for [streams](https://github.com/iptv-org/iptv/tree/master/streams), [channels](https://iptv-org.github.io/), [program guide sources](https://github.com/iptv-org/epg) and the [API](https://github.com/iptv-org/api) for developers. And to keep all this data organized, we need to follow strict structural requirements and set certain standards for participants.
 
 ## Contribution
-### Submitting a new stream
 
+### Submitting a new stream
 
 Before submitting a new stream make sure to acknowledge the [Link Requirements](#link-requirements) section and follow the [Stream Validation](#stream-validation) section of this Guide.
 
@@ -46,7 +46,6 @@ If you're adding an alternative link please do not replace any other link that m
 
 ### Fixing descriptions
 
-
 Most of the stream description (channel name, feed name, categories, languages, broadcast area, logo) is loaded from [iptv-org/database](https://github.com/iptv-org/database) using the stream ID.
 
 First of all, make sure that the desired stream has the correct ID. A full list of all supported channels and their corresponding IDs can be found on [iptv-org.github.io](https://iptv-org.github.io/). To change the stream ID of any link in the playlist, just fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams%3Aedit&projects=&template=2_streams_edit.yml&title=Edit%3A+).
@@ -54,7 +53,6 @@ First of all, make sure that the desired stream has the correct ID. A full list 
 If, however, you have found an error in the database itself, please refer to: [How to edit a database entry?](https://github.com/iptv-org/database/blob/master/CONTRIBUTING.md#how-to-edit-a-database-entry)
 
 ### Reporting of broken streams
-
 
 Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:remove&projects=&template=3_streams_report.yml&title=Broken%3A+) and we'll verify and remove it.
 
@@ -66,7 +64,6 @@ The only thing before publishing your report is to make sure that:
 An issue without a valid link will be closed immediately.
 
 ### Finding of broken streams
-
 
 Follow the [Stream Testing](#stream-testing) guide. [VLC media player](https://www.videolan.org/vlc/) outputs all errors to the log (Tools -> Messages) so you'll be able to determine pretty accurately why a link isn't working.
 
@@ -227,6 +224,7 @@ http://example.com/stream.m3u8
 ```
 
 ## Playlist Structure
+
 There are two types of playlists that can be found in the [streams/](https://github.com/iptv-org/iptv/tree/master/streams) directory:
 - Playlists by country of origin — indicate that the studio broadcasting the channel is headquartered in a particular country. This does not necessarily mean that the stream is intended for viewers in that same country.
 - Playlists by source - imply that all the containing streams comes from the same server or infrastructure and broadcast on behalf of the same provider.
