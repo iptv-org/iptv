@@ -4,7 +4,7 @@
 - [Contribution](#contribution)
   - [Submitting a new stream](#submitting-a-new-stream)
   - [Fixing descriptions](#fixing-descriptions)
-  - [Reporting of broken streams](#reporting-of-broken-streams)
+  - [Reporting broken streams](#reporting-broken-streams)
   - [Finding of broken streams](#finding-of-broken-streams)
   - [Removing infringing content](#removing-infringing-content)
 - [Link Requirements](#link-requirements)
