@@ -201,7 +201,7 @@ STREAM_URL
 
 | Attribute      | Description                                                                                                                                                                | Required | Valid values                                 |
 | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- | -------------------------------------------- |
-| `STREAM_ID`    | Stream ID consisting of channel ID and feed ID. Full list of supported channels with corresponding ID can be found on [iptv-org.github.io](https://iptv-org.github.io/). | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
+| `STREAM_ID`    | Stream ID consisting of channel ID and feed ID. Full list of supported channels with corresponding ID can be found on [iptv-org.github.io](https://iptv-org.github.io/).  | Optional | `<channel_id>` or `<channel_id>@<feed_id>`   |
 | `STREAM_TITLE` | Stream title consisting of channel name and feed name. May contain any characters except: `,`, `[`, `]`.                                                                   | Required | -                                            |
 | `QUALITY`      | Maximum stream quality.                                                                                                                                                    | Optional | `2160p`, `1080p`, `720p`, `480p`, `360p` etc |
 | `LABEL`        | Specified in cases where the broadcast for some reason may not be available to some users.                                                                                 | Optional | `Geo-blocked` or `Not 24/7`                  |
