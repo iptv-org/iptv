@@ -113,7 +113,6 @@ Please note that we only accept removal requests from channel owners and their o
 
 ## Link Requirements
 
-
 Before submitting new streams you should verify the following:
 
 - Make sure the link has not been submitted into the repository before. This can be done by searching the [repository](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) or the [website](https://iptv-org.github.io/).
