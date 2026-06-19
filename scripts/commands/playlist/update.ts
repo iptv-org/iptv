@@ -1,4 +1,4 @@
-import { getStreamInfo, loadIssues, createThread } from '../../utils'
+import { getStreamInfo, loadIssues, createThread, loadStreamData } from '../../utils'
 import { STREAMS_DIR, LOGS_DIR } from '../../constants'
 import { Playlist, Issue, Stream } from '../../models'
 import { loadData, data as apiData } from '../../api'
@@ -241,14 +241,24 @@ async function addStream(issue: Issue) {
   const httpReferrer = data.getString('http_referrer') || null
 
   let quality = data.getString('quality') || null
-  if (!quality) {
-    const streamInfo = await getStreamInfo(streamUrl, { httpUserAgent, httpReferrer })
+  let label = data.getString('label') || null
+  if (!quality || !label) {
+    const { data: streamData, error } = await loadStreamData(streamUrl, {
+      httpUserAgent,
+      httpReferrer
+    })
 
-    if (streamInfo) {
-      const height = streamInfo?.resolution?.height
+    if (error?.code === 403 && !label) {
+      label = `Geo-blocked`
+    }
 
-      if (height) {
-        quality = `${height}p`
+    if (streamData && !quality) {
+      const streamInfo = getStreamInfo(streamUrl, streamData)
+      if (streamInfo) {
+        const height = streamInfo?.resolution?.height
+        if (height) {
+          quality = `${height}p`
+        }
       }
     }
   }
@@ -261,7 +271,7 @@ async function addStream(issue: Issue) {
     user_agent: httpUserAgent,
     referrer: httpReferrer,
     quality,
-    label: data.getString('label') || ''
+    label
   })
 
   stream.updateTitle().updateFilepath()

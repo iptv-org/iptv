@@ -1,10 +1,10 @@
+import { getStreamInfo, loadStreamData } from '../../utils'
 import { Collection, Logger } from '@freearhey/core'
 import { OptionValues, program } from 'commander'
 import { Stream, Playlist } from '../../models'
 import { Storage } from '@freearhey/storage-js'
 import { STREAMS_DIR } from '../../constants'
 import { PlaylistParser } from '../../core'
-import { getStreamInfo } from '../../utils'
 import { loadData, data } from '../../api'
 import cliProgress from 'cli-progress'
 import { eachLimit } from 'async'
@@ -83,7 +83,7 @@ async function main() {
     return stream
   })
 
-  logger.info('adding the missing quality...')
+  logger.info('adding the missing quality and label...')
   const progressBar = new cliProgress.SingleBar({
     clearOnComplete: true,
     format: '[{bar}] {percentage}% | {value}/{total}'
@@ -91,21 +91,28 @@ async function main() {
   progressBar.start(streams.count(), 0)
   await eachLimit(streams.all(), options.parallel, async (stream: Stream) => {
     progressBar.increment()
-    if (stream.quality) return
+    if (stream.quality && stream.label) return
 
-    const streamInfo = await getStreamInfo(stream.url, {
+    const { data: streamData, error } = await loadStreamData(stream.url, {
       httpUserAgent: stream.user_agent,
       httpReferrer: stream.referrer,
       timeout: options.timeout,
       proxy: options.proxy
     })
 
-    if (streamInfo) {
-      const height = streamInfo?.resolution?.height
+    if (error?.code === 403 && !stream.label) {
+      stream.label = 'Geo-blocked'
+    }
 
-      if (height) {
-        stream.quality = `${height}p`
-      }
+    if (stream.quality) return
+    if (!streamData) return
+
+    const streamInfo = getStreamInfo(stream.url, streamData)
+    if (!streamInfo) return
+
+    const height = streamInfo?.resolution?.height
+    if (height) {
+      stream.quality = `${height}p`
     }
   })
   progressBar.stop()

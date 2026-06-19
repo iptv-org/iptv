@@ -44,7 +44,18 @@ type StreamInfo = {
   codecs: string
 }
 
-export async function getStreamInfo(
+function getStreamType(url: string): string | undefined {
+  if (url.includes('.m3u8')) return 'HLS'
+  if (url.includes('.mpd')) return 'DASH'
+  return undefined
+}
+
+type HTTPError = {
+  code: number
+  message: string
+}
+
+export async function loadStreamData(
   url: string,
   options: {
     httpUserAgent?: string | null
@@ -52,10 +63,21 @@ export async function getStreamInfo(
     timeout?: number
     proxy?: string
   }
-): Promise<StreamInfo | undefined> {
+): Promise<{ data: string | undefined; error: HTTPError | undefined }> {
   let data: string | undefined
+  let error: HTTPError | undefined
   if (TESTING) {
-    if (url.includes('.m3u8')) {
+    if (
+      [
+        'srt://stream.alabbassia.com:8890?mode=caller&latency=200&streamid=read:live/alabbassia',
+        'https://60efd7a2b4d02.streamlock.net/a_steiermark/ngrp:livestream_all/playlist.m3u8'
+      ].includes(url)
+    ) {
+      error = {
+        code: 403,
+        message: 'Forbidden'
+      }
+    } else if (url.includes('.m3u8')) {
       data = fs.readFileSync(
         path.resolve(__dirname, '../tests/__data__/input/playlist_update/playlist.m3u8'),
         'utf8'
@@ -96,16 +118,27 @@ export async function getStreamInfo(
       const response = await axios(url, request)
 
       data = response.data
-    } catch {
-      // do nothing
+    } catch (err) {
+      if (err.response) {
+        error = {
+          code: err.status,
+          message: err.message
+        }
+      }
     }
   }
 
-  if (!data) return undefined
+  return { data, error }
+}
+
+export function getStreamInfo(url: string, data: string): StreamInfo | undefined {
+  if (!url || !data) return undefined
+
+  const type = getStreamType(url)
 
   let info: StreamInfo | undefined
 
-  if (url.includes('.m3u8')) {
+  if (type === 'HLS') {
     setOptions({ silent: true })
 
     try {
@@ -126,7 +159,7 @@ export async function getStreamInfo(
     } catch {
       // do nothing
     }
-  } else if (url.includes('.mpd')) {
+  } else if (type === 'DASH') {
     const manifest = parseManifest(data, {
       manifestUri: url,
       eventHandler: ({ type, message }) => console.log(`${type}: ${message}`)

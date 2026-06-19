@@ -107,6 +107,10 @@ export class Stream extends sdk.Models.Stream {
     return !channel.is_nsfw
   }
 
+  isGeoBlocked(): boolean {
+    return this.label === 'Geo-blocked'
+  }
+
   getUniqKey(): string {
     const filepath = this.getFilepath()
     const tvgId = this.getTvgId()
