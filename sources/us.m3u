@@ -141,6 +141,8 @@ https://2nbyjjx7y53k-hls-live.5centscdn.com/cls040318/b0d2763968fd0bdd2dc0d44ba2
 https://reflect-batv.cablecast.tv/live-5/live/live.m3u8
 #EXTINF:-1 tvg-id="BATVGovernmentTV.us@SD" tvg-logo="https://i.imgur.com/VPGIfVh.png" group-title="Legislative",Bloomfield Access Government TV (480p)
 https://reflect-batv.cablecast.tv/live-3/live/live.m3u8
+#EXTINF:-1 tvg-id="BBCAmerica.us@East" tvg-logo="https://i.imgur.com/pTiiPz0.png" group-title="Entertainment",BBC America (720p)
+http://23.239.31.26:8989/bbcamerica/index.m3u8
 #EXTINF:-1 tvg-id="BeachTVCSULB.us@SD" tvg-logo="https://i.imgur.com/EJjfSWi.png" group-title="Travel",Beach TV CSULB (160p) [Not 24/7]
 http://stream04.amp.csulb.edu:1935/Beach_TV/smil:BeachTV.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BeachTVFloridaAlabama.us@SD" tvg-logo="https://i.imgur.com/weypM9C.png" group-title="Travel",Beach TV Florida & Alabama (720p)
@@ -237,6 +239,9 @@ https://rpn.bozztv.com/gusa/gusa-chefchampion/index.m3u8
 https://rpn.bozztv.com/gusa/gusa-chefrock/index.m3u8
 #EXTINF:-1 tvg-id="ChristianYouthChannelCYC.us@SD" tvg-logo="https://i.imgur.com/61eV77C.png" group-title="Kids;Religious",Christian Youth Channel (CYC) (1080p)
 http://media3.smc-host.com:1935/cycnow.com/smil:cyc.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Cinecanal.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Movies",Cinecanal (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/cinecanal.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="CineLife.us@SD" tvg-logo="https://i.imgur.com/RIUNuMQ.png" group-title="Lifestyle",CineLife (1080p)
 https://magnolia-cinelife.amagi.tv/hls/amagi_hls_data_magnoliaA-cinelife-oando/CDN/playlist.m3u8
 #EXTINF:-1 tvg-id="CityofMonroeGovernmentChannel.us@SD" tvg-logo="https://i.imgur.com/gS4x0uX.png" group-title="Legislative",City of Monroe Government Channel
@@ -335,8 +340,8 @@ https://fnx.lls.pbs.org/index.m3u8
 http://84.17.50.102/fox/index.m3u8
 #EXTINF:-1 tvg-id="FoxDeportes.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/FOX_Deportes_logo.png/960px-FOX_Deportes_logo.png" group-title="Sports",Fox Deportes (1280p)
 https://cors-proxy.cooks.fyi/http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8
-#EXTINF:-1 tvg-id="FoxNewsChannel.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="News",Fox News Channel (480p)
-http://41.205.93.154/FOX-NEWS/index.m3u8
+#EXTINF:-1 tvg-id="FoxNewsChannel.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="News",Fox News Channel (720p)
+http://138.121.15.230:9002/FOX-NEWS/index.m3u8
 #EXTINF:-1 tvg-id="FoxNewsRadio.us@SD" tvg-logo="https://radio.foxnews.com/wp-content/uploads/2017/10/default_logo-150x150.png" group-title="News",Fox News Radio (720p)
 https://radiovid.foxnews.com/hls/live/661547/RADIOVID/index.m3u8
 #EXTINF:-1 tvg-id="FoxSports1.us@HD" tvg-logo="https://i.imgur.com/O9BapV9.png" group-title="Sports",Fox Sports 1 (1280p)
@@ -351,8 +356,9 @@ https://1657061170.rsc.cdn77.org/HLS/FTF-LINEAR.m3u8
 http://23.237.104.106:8080/USA_FUSE/index.m3u8
 #EXTINF:-1 tvg-id="FX.us@East" tvg-logo="https://i.imgur.com/ZScwrpi.png" group-title="Entertainment",FX (1080p)
 http://23.237.104.106:8080/USA_FX/index.m3u8
-#EXTINF:-1 tvg-id="FXX.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/FXX_Logo.svg/960px-FXX_Logo.svg.png" group-title="Entertainment",FXX (720p)
-https://cdn.telecloud.tv/CH3255/index.m3u8
+#EXTINF:-1 tvg-id="FXLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Entertainment",FX Latin America (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/fx.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="GanjeHozourTV.us@SD" tvg-logo="https://i.imgur.com/TnQYtKh.png" group-title="General",Ganj e Hozour TV (1080p)
 https://media.parvizshahbazi.com/ganjehozour/Main_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="GCNAmerica.us@SD" tvg-logo="https://i.imgur.com/DWSWrtV.png" group-title="Religious",Global Christian Network America (GCN) (720p)

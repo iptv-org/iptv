@@ -391,8 +391,6 @@ http://88b9da48.kazmazpaz.ru/iptv/XVU58NBPX2LUMP/19169/index.m3u8
 https://amg01314-amg01314c8-distrotv-us-10218.playouts.now.amagi.tv/playlist/amg01314-cgtn-cgtndiscoveringchina-distrotvus/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" group-title="Kids",Disney Channel
 http://81.15.109.89:8001/play/DisneyChannel2
-#EXTINF:-1 tvg-id="DisneyChannel.de@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" group-title="Kids",Disney Channel HD (720p)
-https://cdn.telecloud.tv/CH4019/index.m3u8
 #EXTINF:-1 tvg-id="DisneyJunior.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="Kids",Disney Junior (576p)
 http://81.15.109.89:8001/play/DisneyJunior
 #EXTINF:-1 tvg-id="DisneyXD.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a8/2015_Disney_XD_logo.svg" group-title="Kids",Disney XD
@@ -647,6 +645,9 @@ https://video11.videa.hu/static/live/8.2966061.2530409.1.5.590.590/index.m3u8
 https://streamer12.xploretv.si/__cl/cg:prod/__c/A1_SI_HISTORYHD_ott/__op/dash-default/__dci/__f/index.m3u8?admin=xploreTv_test_user&redirect=true
 #EXTINF:-1 tvg-id="HitradioO3.at@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hitradio_%C3%963.svg/960px-Hitradio_%C3%963.svg.png" group-title="Music",Hitradio O3 (720p)
 https://studiocam-oe3.mdn.ors.at/orf/studiocam_oe3/q6a/manifest.mpd
+#EXTINF:-1 tvg-id="HomeTV.pl@SD" tvg-logo="https://i.imgur.com/qAFR1Cr.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Undefined",Home TV
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://81.15.109.89:8001/play/HomeTV
 #EXTINF:-1 tvg-id="HopeChannelGerman.de@SD" tvg-logo="https://i.imgur.com/I9BbJR0.png" group-title="Religious",Hope Channel German (1080p)
 https://customer-x8zydurm357k8j9p.cloudflarestream.com/5b46490d20cdd87fcac238b0027813e0/manifest/video.m3u8
 #EXTINF:-1 tvg-id="HorseCountryTV.uk@SD" tvg-logo="https://i.imgur.com/1x6zYZr.png" group-title="Outdoor",Horse & Country TV (1080p)
@@ -741,7 +742,7 @@ https://58de7a369a9c4.streamlock.net/sprembergtv/live/playlist.m3u8
 https://streamer01.xploretv.si/__cl/cg:prod/__c/A1_SI_AKANALHD_ott/__op/dash-default/__dci/__f/index.m3u8?admin=xploreTv_test_user&redirect=true
 #EXTINF:-1 tvg-id="KanalZEROTV.pl@HD" tvg-logo="https://i.ibb.co/LzgJ7hzR/KANA-ZERO.jpg" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="News",Kanal ZERO TV
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://81.15.109.89:8001/play/FilmCafe
+http://81.15.109.89:8001/play/MTV90s
 #EXTINF:-1 tvg-id="KanizsaTV.hu@SD" tvg-logo="https://i.imgur.com/l02znlE.png" group-title="General",Kanizsa TV (400p)
 https://cloudfront44.lexanetwork.com:1344/freerelay/kanizsavtv.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="KaposTV.hu@SD" tvg-logo="https://i.imgur.com/ZMrj2C5.png" group-title="General",Kapos TV (1080p)
@@ -1780,6 +1781,8 @@ https://5f22d76e220e1.streamlock.net/taurianovatv/taurianovatv/playlist.m3u8
 https://s-pl-01.mediatool.tv/playout/tbn-abr/tracks-v1a1/mono.ts.m3u8
 #EXTINF:-1 tvg-id="TeatroTV.it@SD" tvg-logo="https://i.imgur.com/GbyLSc2.png" group-title="Culture",Teatro TV (720p)
 https://m.iostream.it/hls/teatrotv/teatrotv.m3u8
+#EXTINF:-1 tvg-id="TeenNick.pl@SD" tvg-logo="https://i.imgur.com/KZq73CE.png" group-title="Kids",TeenNick (1080p)
+http://91.146.94.234:10001/play/a08o
 #EXTINF:-1 tvg-id="Tele5.pl@SD" tvg-logo="https://i.imgur.com/36ZNsIL.png" group-title="Undefined",Tele5 (576p)
 http://78.130.250.2:8023/play/a05s/index.m3u8
 #EXTINF:-1 tvg-id="TeleAbruzzo.it@SD" tvg-logo="https://i.imgur.com/XymK2PR.png" group-title="Undefined",Tele Abruzzo (384p)
@@ -2256,6 +2259,8 @@ https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
 https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
 #EXTINF:-1 tvg-id="ZDFneo.de@SD" tvg-logo="https://i.imgur.com/1JIIGgL.png" group-title="Undefined",ZDFneo (720p) [Geo-blocked]
 https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
+#EXTINF:-1 tvg-id="ZeeCinema.in@UK" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png" group-title="Movies",Zee Cinema UK (576p)
+http://41.223.30.230/ZEECINEMA/index.m3u8
 #EXTINF:-1 tvg-id="ZeeOne.uk@UK" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Zee_One_Logo_2025.png" group-title="Entertainment",Zee One (1080p)
 https://amg17931-zee-amg17931c6-samsung-au-8872.playouts.now.amagi.tv/playlist/amg17931-asiatvusaltdfast-zeeworld-samsungau/playlist.m3u8
 #EXTINF:-1 tvg-id="ZeeOne.uk@German" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/2/24/Zee_One_Logo_2025.png" group-title="Entertainment",Zee One German (720p)

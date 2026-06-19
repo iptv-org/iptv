@@ -343,8 +343,6 @@ https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccda
 https://fnx.lls.pbs.org/index.m3u8
 #EXTINF:-1 tvg-id="FoxDeportes.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/FOX_Deportes_logo.png/960px-FOX_Deportes_logo.png" group-title="Sports",Fox Deportes (1280p)
 https://cors-proxy.cooks.fyi/http://23.237.104.106:8080/USA_FOX_DEPORTES/index.m3u8
-#EXTINF:-1 tvg-id="FoxNewsChannel.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="News",Fox News Channel (480p)
-http://41.205.93.154/FOX-NEWS/index.m3u8
 #EXTINF:-1 tvg-id="FoxNewsChannel.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="News",Fox News Channel (144p)
 http://247preview.foxnews.com/hls/live/2020027/fncv3preview/primary.m3u8
 #EXTINF:-1 tvg-id="FoxNewsRadio.us@SD" tvg-logo="https://radio.foxnews.com/wp-content/uploads/2017/10/default_logo-150x150.png" group-title="News",Fox News Radio (720p)
@@ -1167,8 +1165,6 @@ https://timelesstv1-301f.kxcdn.com/hls/TimelessTV.m3u8
 https://mmn1-301f.kxcdn.com/hls/MMN-HLS.m3u8
 #EXTINF:-1 tvg-id="MeTV.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/5/55/MeTV_Logo.svg/960px-MeTV_Logo.svg.png" group-title="Entertainment",MeTV (720p)
 https://82934cf9c8696bd2.mediapackage.us-east-1.amazonaws.com/out/v1/23685237ffbb4047a8143ac2166ead44/index.m3u8
-#EXTINF:-1 tvg-id="FXX.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/FXX_Logo.svg/960px-FXX_Logo.svg.png" group-title="Entertainment",FXX (720p)
-https://cdn.telecloud.tv/CH3255/index.m3u8
 #EXTINF:-1 tvg-id="ParamountNetwork.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png" group-title="Movies;Series",Paramount Network (720p)
 http://rezofoot.tv/PARAMOUNT-CHANNEL/index.m3u8
 #EXTINF:-1 tvg-id="Lifetime.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Lifetime_2020.svg/960px-Logo_Lifetime_2020.svg.png" group-title="Entertainment",Lifetime (720p)
@@ -1240,3 +1236,17 @@ http://23.237.104.106:8080/USA_SHOWTIME_FAMILY/index.m3u8
 http://23.237.104.106:8080/USA_BEIN/index.m3u8
 #EXTINF:-1 tvg-id="WeTV.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/We_TV_logo_2014.svg/960px-We_TV_logo_2014.svg.png" group-title="Series",We TV (720p)
 https://streamer1.nexgen.bz/WE_TV/index.m3u8
+#EXTINF:-1 tvg-id="FXLatinAmerica.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Entertainment",FX Latin America (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/fx.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="Cinecanal.us@Panregional" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="Movies",Cinecanal (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/cinecanal.stream/playlist.m3u8
+#EXTINF:-1 tvg-id="TheQIndia.us@SD" tvg-logo="https://dtil.tmsimg.com/assets/s144002_ld_h15_aa.png?lock=720x540" group-title="Undefined",The Q India (576p)
+https://mumt05.tangotv.in/87NeALx2THEQ/index.m3u8
+#EXTINF:-1 tvg-id="AccuWeatherNOW.us@SD" tvg-logo="https://i.imgur.com/M8wbVYK.png" group-title="Weather",AccuWeather NOW (720p)
+http://23.239.31.26:8989/accuweather/index.m3u8
+#EXTINF:-1 tvg-id="FoxNewsChannel.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Fox_News_Channel_logo.svg/960px-Fox_News_Channel_logo.svg.png" group-title="News",Fox News Channel (720p)
+http://138.121.15.230:9002/FOX-NEWS/index.m3u8
+#EXTINF:-1 tvg-id="BBCAmerica.us@East" tvg-logo="https://i.imgur.com/pTiiPz0.png" group-title="Entertainment",BBC America (720p)
+http://23.239.31.26:8989/bbcamerica/index.m3u8
