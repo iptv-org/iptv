@@ -152,6 +152,7 @@ Make sure you can find the origin of the broadcast using your favourite search e
 - ```&st=Lz1QtjfblUmkawUbk1Mx6w```
 - ```&token=9f192891-eca5-2435-b9cb-147f376cdc1e```
 - ```&hmac=3295a8e67dcf75af313061a17c3dad11```
+- ```wmsAuthSign=c2bWU9Ni8yMC8yMDIVydmVyX3Rp2IDc6MDk6MjAgUmFsaWRtaWE0maGFzaF92YWx1ZTE5SkNSQkhqUG5JZVRRPT0md51dGVzPTMwJmlkPTZhMzZlNT1lRzlsZG4rOXYwZTIzNDk```
 
 There might be notable examples when a session must be created but it doesn't impose any meaningful limits, eg. :
 
