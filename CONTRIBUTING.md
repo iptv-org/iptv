@@ -15,12 +15,12 @@
 You have several options:
 
 1. Create a new request using this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and, if approved, the link will automatically be added to the playlist on the next update.
-2. Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls). See [Playlist structure](./.github/docs/playlist-structure.md).
+2. Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls). See [Playlist Structure](./.github/docs/playlist-structure.md).
 
 Regardless of which option you choose, please perform the following checks before posting your request:
 
 - Make sure the link is not already in the playlist by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- Make sure the link you want to add is stable and works properly. See [Stream testing](./.github/docs/stream-testing.md).
+- Make sure the link you want to add is stable and works properly. See [Stream Testing](./.github/docs/stream-testing.md).
 - Make sure the link does not lead to a [Xtream Codes](./.github/docs/xtream-codes.md) server. [Why don't you accept links to Xtream Codes servers?](./FAQ.md#why-dont-you-accept-links-to-xtream-codes-servers).
 - Make sure the link is not [tokenized](./.github/docs/tokenized-links.md).
 - Make sure the link leads directly to the broadcast without unnecessary redirects.
@@ -49,7 +49,7 @@ Fill out this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labe
 The only thing before publishing your report is to make sure that:
 
 - The link is still in our playlists. You can verify this by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
-- The link is completely broken and is not just [geo-blocked](https://en.wikipedia.org/wiki/Geo-blocking). See [Stream testing](./.github/docs/stream-testing.md).
+- The link is completely broken and is not just [geo-blocked](https://en.wikipedia.org/wiki/Geo-blocking). See [Stream Testing](./.github/docs/stream-testing.md).
 
 **IMPORTANT:** An issue without a valid stream link will be closed immediately.
 
@@ -72,7 +72,7 @@ The channel will also be added to our [blocklist](https://github.com/iptv-org/da
   - `preview.png`: Image displayed in the `README.md`.
   - `template.md`: Template configuration for `PLAYLISTS.md`.
 - `scripts/`: Contains internal utility scripts used in the repository. See [Scripts](./.github/docs/scripts.md).
-- `streams/`: Contains internal playlists with all streams. See [Playlist structure](./.github/docs/playlist-structure.md).
+- `streams/`: Contains internal playlists with all streams. See [Playlist Structure](./.github/docs/playlist-structure.md).
 - `tests/`: Contains test suites to validate project scripts.
 - `CONTRIBUTING.md`: The file you are currently reading.
 - `PLAYLISTS.md`: Automatically updated list of available playlists.
