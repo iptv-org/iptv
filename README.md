@@ -1,80 +1,80 @@
 # IPTV [![update](https://github.com/iptv-org/iptv/actions/workflows/update.yml/badge.svg)](https://github.com/iptv-org/iptv/actions/workflows/update.yml)
 
-Collection of publicly available IPTV (Internet Protocol television) channels from all over the world.
+从世界各地自动抓取iptv(Internet Protocol television)直播视频流
 
 ## Table of contents
 
-- 🚀 [How to use?](#how-to-use)
-- 📺 [Playlists](#playlists)
+- 🚀 [如何使用](#how-to-use)
+- 📺 [播放列表](#playlists)
 - 🗓 [EPG](#epg)
-- 🗄 [Database](#database)
+- 🗄 [数据库](#database)
 - 👨‍💻 [API](#api)
-- 📚 [Resources](#resources)
-- 💬 [Discussions](#discussions)
-- ❓ [FAQ](#faq)
-- 🛠 [Contribution](#contribution)
-- ⚖ [Legal](#legal)
-- © [License](#license)
+- 📚 [资源库](#resources)
+- 💬 [讨论区](#discussions)
+- ❓ [疑问](#faq)
+- 🛠 [贡献](#contribution)
+- ⚖ [法律问题](#legal)
+- © [协议](#license)
 
-## How to use?
+## 如何使用?
 
-Simply paste the link to one of the playlists into [any video player](https://github.com/iptv-org/awesome-iptv#apps) that supports live streaming and press _Open_.
+只需要粘贴下面m3mu视频链接到[任意支持m3mu链接的视频播放器](https://github.com/iptv-org/awesome-iptv#apps) 即可直接播放直播视频流
 
-![VLC Network Panel](https://github.com/iptv-org/iptv/raw/master/.readme/preview.png)
+![VLC添加网络视频源界面](https://github.com/iptv-org/iptv/raw/master/.readme/preview.png)
 
-## Playlists
+## 相关m3mu直播流列表
 
-The main playlist containing all channels available in the repository can be found at:
+相关收集的所有直播源都整理到了以下获取m3mu直播源的链接里面:
 
 ```
 https://iptv-org.github.io/iptv/index.m3u
 ```
 
-Links to other playlists can be found in the [PLAYLISTS.md](PLAYLISTS.md) file.
+想要其他源请访问[PLAYLISTS.md](PLAYLISTS.md) 文件
 
 ## EPG
 
-[Electronic Program Guide](https://en.wikipedia.org/wiki/Electronic_program_guide) for most of the channels can be downloaded using utilities published in the [iptv-org/epg](https://github.com/iptv-org/epg) repository.
+[wiki上的电子界面指南](https://en.wikipedia.org/wiki/Electronic_program_guide) 拥有着大量的视频源 [iptv-org/epg](https://github.com/iptv-org/epg) 供您下载
 
-## Database
+## 数据库
 
-All channel data is taken from the [iptv-org/database](https://github.com/iptv-org/database) repository. If you find any errors please open a new [issue](https://github.com/iptv-org/database/issues) there.
+相关的数据库请点击[iptv-org/数据库](https://github.com/iptv-org/database)  如果数据库中有任何错误，请将错误反馈至 [issue](https://github.com/iptv-org/database/issues) 区
 
 ## API
 
-The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
+如果想使用api,请点击 [iptv-org/api](https://github.com/iptv-org/api) 去了解更多
 
-## Resources
+## 资源库
 
-Links to other useful IPTV-related resources can be found in the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
+想寻找有用的iptv资源库请点击 [iptv-org/资源库-iptv](https://github.com/iptv-org/awesome-iptv) 去了解更多
 
-## Discussions
+## 讨论区
 
-If you have a question or idea, welcome to the [Discussions](https://github.com/orgs/iptv-org/discussions).
+如果您有疑问或者更好的提议请去往 [建议区](https://github.com/orgs/iptv-org/discussions).
 
-## FAQ
+## 疑问
 
-The answers to the most popular questions can be found in the [FAQ.md](FAQ.md) file.
+想寻找更受欢迎的视频流频道请去往 [FAQ.md](FAQ.md) 文件里面寻找
 
-## Contribution
+## 贡献
 
-Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sending an issue or making a pull request.
+如果想了解关于贡献的更多问题，请阅读 [Contributing Guide](CONTRIBUTING.md) 区 
 
-And thank you to everyone who has already contributed!
+然后欢迎并感谢所有对此项目做出贡献的志愿者
 
-### Backers
+### 支持者
 
 <a href="https://opencollective.com/iptv-org"><img src="https://opencollective.com/iptv-org/backers.svg?width=890" /></a>
 
-### Contributors
+### 贡献者
 
 <a href="https://github.com/iptv-org/iptv/graphs/contributors"><img src="https://opencollective.com/iptv-org/contributors.svg?width=890" /></a>
 
-## Legal
+## 法律问题
 
-No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, which to the best of our knowledge have been intentionally made publicly by the copyright holders. If any links in these playlists infringe on your rights as a copyright holder, they may be removed by opening an [issue](https://github.com/iptv-org/iptv/issues/new?template=6_copyright-claim.yml). However, note that we have **no control** over the destination of the link, and just removing the link from the playlist will not remove its contents from the web. Note that linking does not directly infringe copyright because no copy is made on the site providing the link, and thus this is **not** a valid reason to send a DMCA notice to GitHub. To remove this content from the web, you should contact the web host that's actually hosting the content (**not** GitHub, nor the maintainers of this repository).
+本仓库不存储任何视频文件。它仅收录用户提交的、指向公开可用视频流地址的链接，据我们所知，这些资源均由权利人主动公开发布。如本列表中的任何链接侵犯了您的著作权，请通过提交 [议题](https://github.com/iptv-org/iptv/issues/new?template=6_copyright-claim.yml) 申请移除。但请注意，我们对链接所指向的内容及其托管方均无任何控制能力；仅从本列表中移除链接，并不能使其内容从互联网上消失。此外，提供链接本身并不构成直接侵权，因为链接提供方并未复制相关作品，因此这并非向 GitHub 发送 DMCA 通知的有效理由。如需彻底删除该内容，请直接联系实际托管该内容的网络服务提供商（而非 GitHub 或本仓库的维护者）。
 
-## License
+## 协议
 
 [![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](LICENSE)
 
