@@ -55,8 +55,9 @@ http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub
 http://38.75.136.137:98/gslb/dsdqpub/nxss.m3u8?auth=testpub
 #EXTINF:-1 tvg-id="CEACOMTV.bo@SD" tvg-logo="https://i.imgur.com/hutdRfk.png" group-title="General;Lifestyle;Music;News",CEACOM TV (1080p) [Not 24/7]
 https://eu1.servers10.com:8081/ceacom/index.m3u8
-#EXTINF:-1 tvg-id="CineLife.us@SD" tvg-logo="https://i.imgur.com/RIUNuMQ.png" group-title="Lifestyle",CineLife (1080p)
-https://magnolia-cinelife.amagi.tv/hls/amagi_hls_data_magnoliaA-cinelife-oando/CDN/playlist.m3u8
+#EXTINF:-1 tvg-id="CineLife.us@SD" tvg-logo="https://i.imgur.com/RIUNuMQ.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" group-title="Lifestyle",CineLife (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0
+https://d35j504z0x2vu2.cloudfront.net/v1/master/0bc8e8376bd8417a1b6761138aa41c26c7309312/cinelife/playlist.m3u8?ads.vf=rfg60ruFgWy
 #EXTINF:-1 tvg-id="CoolTV.hu@SD" tvg-logo="https://i.imgur.com/rXJtthd.png" group-title="Lifestyle",Cool TV (1080p)
 http://146.59.85.40:89/coolhd/index.m3u8
 #EXTINF:-1 tvg-id="CottageLife.ca@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Cottage_Life_Logo.svg/960px-Cottage_Life_Logo.svg.png" group-title="Lifestyle;Outdoor",Cottage Life (720p)
@@ -119,8 +120,6 @@ https://video1.getstreamhosting.com:1936/8056/8056/playlist.m3u8
 https://srv.webtvmanager.fr:3697/stream/play.m3u8
 #EXTINF:-1 tvg-id="HangulatTV.hu@SD" tvg-logo="https://play-lh.googleusercontent.com/uBasB1USS1zI0tdHUbhUg356TwmworMA5P_7UGnhvg3z6LXX6n1bEk7Qj3cE3-yuToA" group-title="Lifestyle",Hangulat TV (720p)
 https://iptv01.eurocable.co.hu/EC-HANGULATTV/index.m3u8
-#EXTINF:-1 tvg-id="HealthMediaTV.us@SD" tvg-logo="https://i.imgur.com/x3lIyG9.png" group-title="Lifestyle",Health Media TV (720p)
-https://6n3yowknl9ok-hls-live.5centscdn.com/HMN/271ddf829afeece44d8732757fba1a66.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="HGTV.nz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/HGTV_US_Logo_2015.svg/960px-HGTV_US_Logo_2015.svg.png" group-title="Lifestyle",HGTV (1080p)
 https://i.mjh.nz/.r/sky-hgtv.m3u8
 #EXTINF:-1 tvg-id="HobbyMaker.uk@SD" tvg-logo="https://i.imgur.com/VWHp5Tl.png" group-title="Lifestyle",Hobby Maker (720p)
@@ -145,6 +144,8 @@ https://brightstar-sls-pull-secure.akamaized.net/brightstarsls/stream.m3u8
 https://dnmfq3sh1jipj.cloudfront.net/DisneyLocalish.m3u8
 #EXTINF:-1 tvg-id="LogosTVSalud.es@SD" tvg-logo="https://i.imgur.com/qkHrttj.png" group-title="Lifestyle",Logos TV Salud (720p) [Not 24/7]
 https://streamer1.streamhost.org/salive/logossaludH/playlist.m3u8
+#EXTINF:-1 tvg-id="Loupe.br@SD" tvg-logo="https://i.imgur.com/T6tsw0O.png" group-title="Lifestyle",Loupe (1080p)
+https://gpa-vja-samsungtvplus-br.otteravision.com/gpa/vja/vja.m3u8
 #EXTINF:-1 tvg-id="LuxeTV.lu@SD" tvg-logo="https://i.imgur.com/24ehonx.png" group-title="Lifestyle",Luxe TV (1080p)
 http://103.154.3.101:5001/live/1736.m3u8
 #EXTINF:-1 tvg-id="MaisonTravauxTV.fr@SD" tvg-logo="https://i.imgur.com/uYpc6nE.png" group-title="Lifestyle",Maison & Travaux TV (288p)
@@ -228,9 +229,6 @@ https://wmoy82n4y2a7-hls-live.5centscdn.com/sostv/live.stream/playlist.m3u8
 https://jmp2.uk/plu-61c18ec6ac860c0007684981.m3u8
 #EXTINF:-1 tvg-id="SuperyachtTV.mc@SD" tvg-logo="https://i.imgur.com/cgjgjE1.png" group-title="Lifestyle",Superyacht TV (1080p)
 https://sy.wns.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="TheBeachChannel.us@SD" tvg-logo="https://i.imgur.com/KShaqAp.png" http-referrer="https://player.castr.com/" group-title="Lifestyle",The Beach Channel (720p) [Not 24/7]
-#EXTVLCOPT:http-referrer=https://player.castr.com/
-https://stream.castr.com/67320cbb6b3df3c4694581ce/live_a80e55b0a03411efa6eeb56ae1378053/index.m3u8
 #EXTINF:-1 tvg-id="TheDesignNetwork.us@Poland" tvg-logo="https://i.imgur.com/J5YJ3r3.png" group-title="Lifestyle",The Design Network (1080p)
 https://amg00441-amg00441c1-rakuten-us-6050.playouts.now.amagi.tv/playlist/amg00441-thedesignnetworkllcfast-thedesignnetwork-rakutenus/playlist.m3u8
 #EXTINF:-1 tvg-id="TheDesignNetwork.us@SD" tvg-logo="https://i.imgur.com/J5YJ3r3.png" group-title="Lifestyle",The Design Network (1080p)
