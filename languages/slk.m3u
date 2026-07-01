@@ -11,16 +11,17 @@ http://88.212.15.19/live/test_arenasport/playlist.m3u8
 #EXTINF:-1 tvg-id="ArenaSport2.sk@SD" tvg-logo="https://i.imgur.com/Yq3Jf19.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Sports",Arena Sport 2
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://88.212.15.19/live/test_arenasport_dva/playlist.m3u8
-#EXTINF:-1 tvg-id="Dvojka.sk@SD" tvg-logo="https://i.imgur.com/ft10wQn.png" group-title="Documentary",Dvojka STV2 (720p) [Not 24/7]
-https://n5.stv.livebox.sk/stv-tv/addfd31846e34200883cc2b4e9e6c855/stv2.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Dvojka.sk@SD" tvg-logo="https://i.imgur.com/ft10wQn.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" group-title="Documentary",Dvojka
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+http://88.212.15.19/live/test_dvojka_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="EbS.be@SD" tvg-logo="https://i.imgur.com/DIIRPNN.png" group-title="Legislative",EBS (1080p)
 https://streams.prd.commavservices.eu/live/ebs/index.m3u8
 #EXTINF:-1 tvg-id="EbSPlus.be@SD" tvg-logo="https://i.imgur.com/7V012zQ.png" group-title="Legislative",EBS Plus (1080p)
 https://streams.prd.commavservices.eu/live/ebsplus/index.m3u8
-#EXTINF:-1 tvg-id="Jednotka.sk@SD" tvg-logo="https://i.imgur.com/aqVki9i.png" group-title="General",Jednotka STV1 (720p) [Not 24/7]
-https://n4.stv.livebox.sk/stv-tv/fe09ae603df84846978c9d960f699900/stv1.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="JimJamEurope.uk@SD" tvg-logo="https://i.imgur.com/ODhkYyx.png" group-title="Kids",JimJam Europe (720p)
-https://cors-proxy.cooks.fyi/http://212.5.144.156:8080/jimjam/index.m3u8
+#EXTINF:-1 tvg-id="Jednotka.sk@SD" tvg-logo="https://i.imgur.com/aqVki9i.png" group-title="General",Jednotka
+http://88.212.15.19/live/test_jednotka_25p/playlist.m3u8
+#EXTINF:-1 tvg-id="JimJamEurope.uk@SD" tvg-logo="https://i.imgur.com/ODhkYyx.png" group-title="Kids",JimJam Europe (576p)
+http://158.160.149.81:8080/269/index.m3u8
 #EXTINF:-1 tvg-id="LifeTv.sk@SD" tvg-logo="https://i.imgur.com/jO8kAY2.png" group-title="Religious",LifeTv (1080p)
 https://lifetv.mpks.sk/s.m3u8
 #EXTINF:-1 tvg-id="ManaCirkevOnline.pt@SD" tvg-logo="https://i.imgur.com/tYhXeRq.png" group-title="Religious",Maná Cirkev Online (1080p) [Not 24/7]
