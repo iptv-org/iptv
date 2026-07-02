@@ -179,14 +179,16 @@ https://dk4ogs46bjxcw.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a
 https://d2s8iafdyzconc.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-6x2p3ho0vw00a/Noovo_Comedies_Home.m3u8
 #EXTINF:-1 tvg-id="",Noovo Téléréalités (1080p)
 https://d29qczaufx5vc3.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-dxg2k6h0o2l6i/Noovo_Telerealites.m3u8
-#EXTINF:-1 tvg-id="",Now TV 94.3FM Winnipeg (CHNW-FM) (616p)
-https://videostream.jpbgdigital.com/CHNWTV.m3u8
 #EXTINF:-1 tvg-id="CKNOFM.ca@SD",Now TV 102.3FM Edmonton (CKNO-FM) (616p)
 https://videostream.jpbgdigital.com/NOWTV.m3u8
 #EXTINF:-1 tvg-id="NTVPlus.ca@SD",NTV+
 https://2-fss-1.streamhoster.com/pl_122/201748-1431018-1/chunklist.m3u8
 #EXTINF:-1 tvg-id="OlympicChannel.es@SD",Olympic Channel [Geo-blocked]
 https://ocshls-2-olympicchannel.akamaized.net/ocshls/OCTV_32.m3u8
+#EXTINF:-1 tvg-id="OlympicChannel.es@SD",Olympics Channel (1080p) [Geo-blocked]
+https://ocshls-2-olympicchannel.akamaized.net/ocshls/OCTV_1.m3u8
+#EXTINF:-1 tvg-id="OlympicChannel.es@SD",Olympics Channel (720p) [Geo-blocked]
+https://ocshls-2-olympicchannel.akamaized.net/ocshls/OCTV_2.m3u8
 #EXTINF:-1 tvg-id="OntarioParliamentaryNetwork.ca@SD",Ontario Parliamentary Network (720p)
 https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en/playlist.m3u8
 #EXTINF:-1 tvg-id="OntarioParliamentaryNetwork.ca@SD",Ontario Parliamentary Network
@@ -244,8 +246,9 @@ https://bcovlive-a.akamaihd.net/rf86f817779524249abf842af6d16f55f/us-east-1/1536
 https://hls.uvagut.tv/hls/uvagut/playlist.m3u8
 #EXTINF:-1 tvg-id="WataneMaaTV.ca@SD",Watan-e-Maa TV (720p)
 https://5caf24a595d94.streamlock.net:1937/8132/8132/playlist.m3u8
-#EXTINF:-1 tvg-id="WCGtv.ca@SD",WCGtv Public (720p)
-https://wowzastream.westmancom.com/wcgtvlive/wcgtvPSA.stream/master.m3u8
+#EXTINF:-1 tvg-id="WCGtv.ca@SD",WCGtv Public (1080p)
+#EXTVLCOPT:http-referrer=https://wcgtv.ca/internetchannel/watch-live-embed?streamId=1&site=1
+https://wcgtv.ca/live-10/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-id="ZeeTVCanada.ca@SD",Zee TV Canada (1080p)
 https://origin-cae-m462953.toober.com/4c3caf7294b3/c8bf99484885/playlist.m3u8
 #EXTINF:-1 tvg-id="TPlusE.ca@SD",T+E (720p)
@@ -270,5 +273,15 @@ https://fastly.live.brightcove.com/6369851620112/us-east-1/15364602001/eyJhbGciO
 https://dbcanada.sonarbanglatv.com/azantv/atv/index.m3u8
 #EXTINF:-1 tvg-id="DoyelTV.ca@SD",Doyel TV
 https://3d46w.doyeltv.com/memfs/aa3aa6f7-ec12-41a2-8183-a891e157bbf8.m3u8
+#EXTINF:-1 tvg-id="",CBC Kids Channel (1080p) [Geo-blocked]
+https://amagi-streams.akamaized.net/hls/live/2120483/cbckids/master.m3u8
+#EXTINF:-1 tvg-id="",Schitt’s Creek Channel (1080p) [Geo-blocked]
+https://amagi-streams.akamaized.net/hls/live/2120484/schittscreek/master.m3u8
+#EXTINF:-1 tvg-id="",CFJC Kamloops BC (720p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://cfjctoday.com/
+https://videostream.jpbgdigital.com/CFJCTV.m3u8
+#EXTINF:-1 tvg-id="",CKPG Prince George BC (720p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://ckpgtoday.ca/
+https://videostream.jpbgdigital.com/CKPGTV.m3u8
 #EXTINF:-1 tvg-id="HauntTV.ca@SD",HauntTV (720p)
 http://206.212.244.63/87/index.m3u8
