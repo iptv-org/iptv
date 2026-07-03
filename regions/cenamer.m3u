@@ -295,6 +295,8 @@ http://181.78.8.199:8000/play/a0dn/index.m3u8
 http://190.11.225.124:5000/live/disney_hd/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyJrLatinAmerica.ar@NorthHD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="Animation;Kids",Disney Jr. Latin America North HD (1080p)
 http://190.11.225.124:5000/live/disney_jr_hd/playlist.m3u8
+#EXTINF:-1 tvg-id="DocuBox.nl@SD" tvg-logo="https://i.imgur.com/pX4U9OG.png" group-title="Documentary",DocuBox
+https://dash3.antik.sk/live/test_docubox_medium_atk/playlist.m3u8
 #EXTINF:-1 tvg-id="DocumentaryPlus.us@International" tvg-logo="https://i.imgur.com/x57klfS.png" group-title="Documentary",Documentary+ International (1080p)
 https://1d153317c8db4250b3789601274e2402.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-887-DOCUMENTARYINTERNATIONAL-DOCUMENTARYPLUS/mt/documentaryplus/887/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="DreamWorksChannelLatinAmerica.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/fr/thumb/5/55/960px-DreamWorks_Animation_SKG_logo_with_fishing_boy.png/330px-1024px-DreamWorks_Animation_SKG_logo_with_fishing_boy.png" group-title="Animation",DreamWorks Channel Latin America (1080p)
@@ -804,9 +806,8 @@ https://5e85d90130e77.streamlock.net/6006/6006/playlist.m3u8
 https://stmv2.srvif.com/rsvhonduras/rsvhonduras/playlist.m3u8
 #EXTINF:-1 tvg-id="RTDocumentary.ru@English" tvg-logo="https://i.imgur.com/aeu5zIC.png" group-title="Documentary",RT Documentary English (1080p) [Geo-blocked]
 https://rt-rtd.rttv.com/dvr/rtdoc/playlist.m3u8
-#EXTINF:-1 tvg-id="RTenEspanol.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/960px-Russia-today-logo.svg.png" http-referrer="https://odysee.com/" group-title="News",RT en Español (1080p)
-#EXTVLCOPT:http-referrer=https://odysee.com/
-https://cloud.odysee.live/content/9f638b94d11d879726ae55dd5a0923621b96a45b/master.m3u8
+#EXTINF:-1 tvg-id="RTenEspanol.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Russia-today-logo.svg/960px-Russia-today-logo.svg.png" group-title="News",RT en Espanol (1080p)
+http://179.60.51.134:8888/RT/index.m3u8
 #EXTINF:-1 tvg-id="RTPMundo.pt@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/RTP_Mundo.svg/1920px-RTP_Mundo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0" group-title="General",RTP Mundo (504p) [Not 24/7]
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:93.0) Gecko/20100101 Firefox/93.0
 https://streaming-live.rtp.pt/liverepeater/smil:rtpi.smil/playlist.m3u8
@@ -922,8 +923,6 @@ http://181.78.121.15:8000/play/a001/index.m3u8
 http://200.115.120.1:8000/play/ca085/index.m3u8
 #EXTINF:-1 tvg-id="Telenorte.ni@SD" tvg-logo="https://i.imgur.com/rvxjAO6.png" group-title="General",Telenorte (480p)
 http://astrasvip.com:1935/Telenorte/Telenorte/playlist.m3u8
-#EXTINF:-1 tvg-id="TeleOnce.gt@SD" tvg-logo="https://i.imgur.com/nmlBLpI.png" group-title="General",TeleOnce (576p)
-http://45.5.119.43:4000/play/a0jk/index.m3u8
 #EXTINF:-1 tvg-id="Telerayo.hn@SD" tvg-logo="https://i.imgur.com/jLQsU1u.png" group-title="Entertainment",Telerayo (1080p)
 https://s.emisoras.tv:8081/telerayo/index.m3u8
 #EXTINF:-1 tvg-id="TeleredTelevision.cr@SD" tvg-logo="https://i.imgur.com/cIvfnsa.jpg" http-referrer="https://teleredtelevision.com/" group-title="General",Telered Television (576p) [Geo-blocked]
@@ -979,8 +978,6 @@ https://streamer1.nexgen.bz/TNC_SPORTS/index.m3u8
 https://live.sli.ke/live/npnhm84gz9/master.m3u8
 #EXTINF:-1 tvg-id="Totovision.gt@SD" tvg-logo="https://totovision.net/wp-content/uploads/2022/05/cropped-LOGO-PAGINA-22.png" group-title="Music",Totovision
 https://cdn.streamhispanatv.net:3652/live/totovisiongtlive.m3u8
-#EXTINF:-1 tvg-id="TreceVision.gt@SD" tvg-logo="https://i.imgur.com/C1yVU3J.png" group-title="Undefined",TreceVision (576p)
-http://45.5.119.43:4000/play/a0jj/index.m3u8
 #EXTINF:-1 tvg-id="TribunaTV.sv@SD" tvg-logo="https://i.imgur.com/C5vHpd0.png" group-title="News",TribunaTV (720p) [Not 24/7]
 https://cloudflare.streamgato.us:3300/live/tribunatvlive.m3u8
 #EXTINF:-1 tvg-id="Trivision36.cr@SD" tvg-logo="https://i.imgur.com/aadWnIx.jpg" http-referrer="https://player.instantvideocloud.net/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160" group-title="General",Trivision 36 (720p)

@@ -17,8 +17,16 @@ https://amagi-streams.akamaized.net/hls/live/2110960/cbcnewsbc/master.m3u8
 https://amagi-streams.akamaized.net/hls/live/2110962/cbcexplore/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",CBC News Toronto (1080p) [Geo-blocked]
 https://amagi-streams.akamaized.net/hls/live/2110961/cbctoronto/master.m3u8
-#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Now TV 94.3FM Winnipeg (CHNW-FM) (616p)
-https://videostream.jpbgdigital.com/CHNWTV.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",CBC Kids Channel (1080p) [Geo-blocked]
+https://amagi-streams.akamaized.net/hls/live/2120483/cbckids/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Schitt’s Creek Channel (1080p) [Geo-blocked]
+https://amagi-streams.akamaized.net/hls/live/2120484/schittscreek/master.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" http-referrer="https://cfjctoday.com/" group-title="Undefined",CFJC Kamloops BC (720p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://cfjctoday.com/
+https://videostream.jpbgdigital.com/CFJCTV.m3u8
+#EXTINF:-1 tvg-id="" tvg-logo="" http-referrer="https://ckpgtoday.ca/" group-title="Undefined",CKPG Prince George BC (720p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://ckpgtoday.ca/
+https://videostream.jpbgdigital.com/CKPGTV.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",CNV/Montreal
 https://media1.radioservers.biz:1936/cnv/cnv/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Legislative Assembly of Ontario Committees (room 1)
@@ -193,8 +201,8 @@ http://user.scalecdn.co:8080/live/54706135/09221986/3092.m3u8
 https://eu1.vectromdigital.com:1936/netvtoronto/netvtoronto/playlist.m3u8
 #EXTINF:-1 tvg-id="NTVPlus.ca@SD" tvg-logo="https://i.imgur.com/YEUhPBv.png" group-title="Undefined",NTV+
 https://2-fss-1.streamhoster.com/pl_122/201748-1431018-1/chunklist.m3u8
-#EXTINF:-1 tvg-id="OlympicChannel.es@SD" tvg-logo="https://i.imgur.com/wPQVVtj.png" group-title="Sports",Olympic Channel [Geo-blocked]
-https://ocshls-2-olympicchannel.akamaized.net/ocshls/OCTV_32.m3u8
+#EXTINF:-1 tvg-id="OlympicChannel.es@SD" tvg-logo="https://i.imgur.com/wPQVVtj.png" group-title="Sports",Olympics Channel (1080p) [Geo-blocked]
+https://ocshls-2-olympicchannel.akamaized.net/ocshls/OCTV_1.m3u8
 #EXTINF:-1 tvg-id="OntarioParliamentaryNetwork.ca@SD" tvg-logo="https://i.imgur.com/xKXs6ER.png" group-title="Legislative",Ontario Parliamentary Network (720p)
 https://origin-http-delivery.isilive.ca/live/_definst_/ontla/house-en/playlist.m3u8
 #EXTINF:-1 tvg-id="PamirTV.ca@SD" tvg-logo="https://i.imgur.com/sCBbBOj.png" group-title="Culture;Music",Pamir TV (1080p) [Not 24/7]
@@ -248,7 +256,8 @@ https://fastly.live.brightcove.com/6369851620112/us-east-1/15364602001/eyJhbGciO
 https://hls.uvagut.tv/hls/uvagut/playlist.m3u8
 #EXTINF:-1 tvg-id="WataneMaaTV.ca@SD" tvg-logo="https://i.ibb.co/1rDrKJG/Watan-E-Maa-Tv-Logo-300-Dpi.png" group-title="General",Watan-e-Maa TV (720p)
 https://5caf24a595d94.streamlock.net:1937/8132/8132/playlist.m3u8
-#EXTINF:-1 tvg-id="WCGtv.ca@SD" tvg-logo="https://i.imgur.com/q7UPbEG.png" group-title="Undefined",WCGtv Public (720p)
-https://wowzastream.westmancom.com/wcgtvlive/wcgtvPSA.stream/master.m3u8
+#EXTINF:-1 tvg-id="WCGtv.ca@SD" tvg-logo="https://i.imgur.com/q7UPbEG.png" http-referrer="https://wcgtv.ca/internetchannel/watch-live-embed?streamId=1&site=1" group-title="Undefined",WCGtv Public (1080p)
+#EXTVLCOPT:http-referrer=https://wcgtv.ca/internetchannel/watch-live-embed?streamId=1&site=1
+https://wcgtv.ca/live-10/live/stream-1/live.m3u8
 #EXTINF:-1 tvg-id="ZeeTVCanada.ca@SD" tvg-logo="https://i.imgur.com/mARKUZ9.png" group-title="Undefined",Zee TV Canada (1080p)
 https://origin-cae-m462953.toober.com/4c3caf7294b3/c8bf99484885/playlist.m3u8
