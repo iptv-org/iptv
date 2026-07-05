@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  matchcast-api:
+    build: ./server
+    ports:
+      - "5000:5000"
+    environment:
+      - NODE_ENV=production
+    restart: always
