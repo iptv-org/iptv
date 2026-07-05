@@ -1,0 +1,18 @@
+{
+  "name": "matchcast-server",
+  "version": "1.0.0",
+  "description": "MatchCast IPTV streaming backend server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
