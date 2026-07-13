@@ -1,4 +1,7 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="AKTV.id@SD" tvg-logo="https://i.imgur.com/DUY5WXf.png" http-referrer="https://aktvuhfdigital.tv/Livestream/aktv" group-title="General",AKTV (1080p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://aktvuhfdigital.tv/Livestream/aktv
+https://akativi.siar.us/live/akativi.m3u8
 #EXTINF:-1 tvg-id="AsthaTV.id@HD" tvg-logo="https://asthatv.com/wp-content/uploads/2026/02/Logo-Astha.png" group-title="Undefined",Astha TV (1080p) [Not 24/7]
 https://hgmtv.com:19360/asthatv/asthatv.m3u8
 #EXTINF:-1 tvg-id="AstroBlitarTV.id@SD" tvg-logo="https://i.imgur.com/rORKbGw.png" http-referrer="https://abtelevisi.com/" group-title="General",Astro Blitar TV (720p)
@@ -36,7 +39,7 @@ http://122.248.43.242:1935/JAWAPOSTVMAGELANG/_definst_/myStream/playlist.m3u8
 http://122.248.43.242:1935/JAWAPOSTVSEMARANG/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="JogjaTV.id@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/40/Jogjatvnew.png" group-title="General",Jogja TV (720p) [Not 24/7]
 https://stream.jogjatv.co.id/jtvlive/stream/index.m3u8
-#EXTINF:-1 tvg-id="JTV.id@SD" tvg-logo="https://i.imgur.com/mIDWIQk.png" group-title="General",JTV (480p)
+#EXTINF:-1 tvg-id="JTV.id@SD" tvg-logo="https://i.imgur.com/mIDWIQk.png" group-title="General",JTV (720p)
 http://122.248.43.242:1935/JTVSURABAYA/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="JTV.id@Kediri" tvg-logo="https://i.imgur.com/mIDWIQk.png" group-title="General",JTV Kediri
 http://122.248.43.242:1935/JTVKEDIRI/_definst_/myStream/playlist.m3u8
@@ -49,13 +52,15 @@ http://122.248.43.242:1935/JTVMALANG/_definst_/myStream/playlist.m3u8
 #EXTINF:-1 tvg-id="KTV.id@SD" tvg-logo="https://i.imgur.com/j3wtaDc.png" http-referrer="https://youtv.live/" group-title="General",KTV (720p)
 #EXTVLCOPT:http-referrer=https://youtv.live/
 https://flv.intechmedia.net/live/ch118.m3u8
-#EXTINF:-1 tvg-id="MaduTV.id@SD" tvg-logo="https://i.imgur.com/cKpgbgW.png" group-title="General",Madu TV (576p)
+#EXTINF:-1 tvg-id="MaduTV.id@SD" tvg-logo="https://i.imgur.com/cKpgbgW.png" http-referrer="https://madu.tv/live-streaming/" group-title="General",Madu TV (1080p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://madu.tv/live-streaming/
 https://re1.siar.us/madutv/hd720/playlist.m3u8
 #EXTINF:-1 tvg-id="MatrixTVYogyakarta.id@HD" tvg-logo="https://stream.matrixtv.id/logo" http-referrer="https://stream.matrixtv.id/" group-title="Undefined",Matrix TV Yogyakarta (720p)
 #EXTVLCOPT:http-referrer=https://stream.matrixtv.id/
 https://stream.matrixtv.id/hls/0/stream.m3u8
-#EXTINF:-1 tvg-id="MGSTV.id@SD" tvg-logo="https://i.imgur.com/MYU7dsZ.png" group-title="General",MGS TV (720p) [Not 24/7]
-https://cdn.gunadarma.ac.id/streams/mgstv/ingestmgstv.m3u8
+#EXTINF:-1 tvg-id="MGSTV.id@SD" tvg-logo="https://i.imgur.com/MYU7dsZ.png" http-referrer="https://mgstv.co.id/live-streaming/" group-title="General",MGSTV (360p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://mgstv.co.id/live-streaming/
+https://mgstv.siar.us/live/mgstv.m3u8
 #EXTINF:-1 tvg-id="MQTV.id@SD" tvg-logo="https://i.imgur.com/d8dQo6E.png" group-title="Religious",MQTV (720p) [Not 24/7]
 https://5bf7b725107e5.streamlock.net/mqtv/mqtv/playlist.m3u8
 #EXTINF:-1 tvg-id="OnlineTVNusantara.id@SD" tvg-logo="https://i.imgur.com/E9CCIpP.jpg" group-title="Culture;General;Music;News",Online TV Nusantara (720p) [Not 24/7]
@@ -65,7 +70,8 @@ https://5bf7b725107e5.streamlock.net/onlinetvnusantara/onlinetvnusantara/playlis
 https://pjtv28uhf.siar.us/live/pjtv28uhf.m3u8
 #EXTINF:-1 tvg-id="RadarTasikmalayaTV.id@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/1/1a/Logo_Radar_Tasikmalaya_TV.png" group-title="Undefined",Radar Tasikmalaya TV (720p) [Not 24/7]
 https://v2.siar.us/radartasikmalaya/live/playlist.m3u8
-#EXTINF:-1 tvg-id="RCTV.id@SD" tvg-logo="https://i.imgur.com/CyIlt0y.png" group-title="Undefined",RCTV (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="RCTV.id@SD" tvg-logo="https://i.imgur.com/CyIlt0y.png" http-referrer="https://www.radarcirebon.tv/livestreaming/" group-title="Undefined",RCTV (720p) [Not 24/7]
+#EXTVLCOPT:http-referrer=https://www.radarcirebon.tv/livestreaming/
 https://v10.siar.us/rctv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="SaktiTV.id@SD" tvg-logo="https://i.imgur.com/IDNjMfQ.png" group-title="Undefined",Sakti TV (720p)
 https://saktitv.siar.us/saktitv/live/playlist.m3u8
