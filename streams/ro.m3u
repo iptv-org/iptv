@@ -13,16 +13,8 @@ https://aom-live.maghost.ro/aomTV/streams/OOztu5o9Fx6dh9mD1711027803849.m3u8
 http://s5.alfaomega.tv:1935/alfaomega/smil:alfaomegatv/playlist.m3u8
 #EXTINF:-1 tvg-id="AngelusTV.ro@SD",Angelus TV (1080p)
 https://video.angelustv.ro/hls/angelustv.m3u8
-#EXTINF:-1 tvg-id="Antena1.ro@SD",Antena 1 (1080p) [Not 24/7]
-https://hls.rundletv.eu.org/LIVE$Antena1/6.m3u8/Level/300720051?end=END&start=LIVE
 #EXTINF:-1 tvg-id="AntenaMonden.ro@SD",Antena Monden (720p)
 https://stream1.antenaplay.ro/live/AntenaMonden/playlist.m3u8
-#EXTINF:-1 tvg-id="AntenaStars.ro@SD",Antena Stars (1280p)
-https://hls.rundletv.eu.org/LIVE$AntenaStars/6.m3u8/Level/300720051?end=END&start=LIVE
-#EXTINF:-1 tvg-id="AntenaSport.ro@SD",AntenaSport (1280p) [Not 24/7]
-https://hls.rundletv.eu.org/LIVE$AntenaSport/6.m3u8/Level/300720051?end=END&start=LIVE
-#EXTINF:-1 tvg-id="ArdealTV.ro@SD",Ardeal TV (480p)
-https://frn.rtsp.me/wzhx8pmNF7-kstp_J0AdjA/1695647213/hls/yZ9ED27Q.m3u8
 #EXTINF:-1 tvg-id="ArgesTV.ro@SD",Arges TV (720p)
 https://btutzctahuf0wjoq.cdn.streamingserver.io/hls/yjvam8hlp2g3u08z02tv0yz66rq3cy.m3u8
 #EXTINF:-1 tvg-id="AtomicAcademyTV.ro@SD",Atomic Academy TV (480p)
@@ -33,30 +25,52 @@ https://atomic.streamnet.ro/atomictv.m3u8
 https://www.btv.ro/hls/banat-tv.m3u8
 #EXTINF:-1 tvg-id="BollywoodClassic.ro@SD",Bollywood Classic (1080p)
 http://103.213.31.109:90/BollywoodClassic/playlist.m3u8
+#EXTINF:-1 tvg-id="BollywoodClassic.ro@HD",Bollywood Classic
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+https://dokagents.site/live/bollyc/mono.m3u8
 #EXTINF:-1 tvg-id="BollywoodHD.ro@SD",Bollywood HD (1080p)
 http://103.213.31.109:90/BollywoodHD/playlist.m3u8
 #EXTINF:-1 tvg-id="BollywoodHD.ro@Russia",Bollywood HD Russia (576p)
 https://xykt-fix.github.io/cinerama_edge01/hls/BOLLYWOOD_RU/Movie009.m3u8
 #EXTINF:-1 tvg-id="BucovinaTV.ro@SD",Bucovina TV (576i)
 https://www.bucovinatv.ro/proxy/video/playlist.m3u8
-#EXTINF:-1 tvg-id="CaTine.ro@SD",CaTine (720p)
-https://stream1.antenaplay.ro/live/CaTine/playlist.m3u8
+#EXTINF:-1 tvg-id="ColumnaTV.ro@SD",Columna TV
+https://cdn.streamnet.pro/columnatv/live/playlist.m3u8
+#EXTINF:-1 tvg-id="ComedyCentral.ro@SD",Comedy Central
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://82.78.243.219:45739/play/a00f/index.m3u8
 #EXTINF:-1 tvg-id="ComedyPlay.ro@SD",Comedy Play (720p)
 https://stream1.antenaplay.ro/live/ComedyPlay/playlist.m3u8
 #EXTINF:-1 tvg-id="CredoTV.ro@SD",Credo TV (720p) [Not 24/7]
 http://cdn.credonet.tv:1935/ctv/livecredo/playlist.m3u8
 #EXTINF:-1 tvg-id="CredoTV.ro@SD",Credo TV (720p) [Not 24/7]
 https://5bb3298db4821.streamlock.net/ctv/livecredo/playlist.m3u8
+#EXTINF:-1 tvg-id="CredoTV.ro@SD",Credo TV
+https://651c69fa2ff4e.streamlock.net/ctv/_definst_/livecredo/playlist.m3u8
 #EXTINF:-1 tvg-id="Digi24.ro@SD",Digi 24 (720p)
 https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
+#EXTINF:-1 tvg-id="DigiSport1.ro@HD",Digi Sport 1 HD
+http://91.201.172.14:35005
+#EXTINF:-1 tvg-id="DigiSport2.ro@HD",Digi Sport 2 HD
+http://91.201.172.14:35006
+#EXTINF:-1 tvg-id="DigiSport3.ro@HD",Digi Sport 3 HD
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://82.78.243.219:45739/play/a01m/index.m3u8
+#EXTINF:-1 tvg-id="DigiSport4.ro@SD",Digi Sport 4
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://82.78.243.219:45739/play/a00v/index.m3u8
+#EXTINF:-1 tvg-id="DisneyChannel.ro@SD",Disney Channel
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+http://82.78.243.219:45739/play/a00y/index.m3u8
 #EXTINF:-1 tvg-id="DottoTV.ro@SD",Dotto TV (1080p)
 https://live.dottotv.ro/index.m3u8
 #EXTINF:-1 tvg-id="TVSE.ro@SD",Exploris (576p) [Not 24/7]
 http://89.38.8.130:39419
-#EXTINF:-1 tvg-id="HD365TV.ro@SD",HD365 TV (576p)
-https://testcam.go.ro:8080/hls/hd365.m3u8
 #EXTINF:-1 tvg-id="HelloTaste.ro@SD",Hello Taste (720p)
 https://stream1.antenaplay.ro/live/HelloTaste/playlist.m3u8
+#EXTINF:-1 tvg-id="History.ro@SD",History
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+http://82.78.243.219:45739/play/a01f/index.m3u8
 #EXTINF:-1 tvg-id="Hunedoara1.ro@SD",Hunedoara 1 (480p) [Not 24/7]
 https://netstreaming.eu/hd1.m3u8
 #EXTINF:-1 tvg-id="IasiTVLife.ro@SD",IasiTV Life (1080p) [Not 24/7]
@@ -67,12 +81,12 @@ https://online.tvimpact.live/hls/dancetv.m3u8
 https://online.tvimpact.live/hls/impact_tv.m3u8
 #EXTINF:-1 tvg-id="InformatiaTV.ro@SD",Informatia TV
 https://informatia.streamnet.ro/mobile_tv/informatiatv.m3u8
-#EXTINF:-1 tvg-id="IntermediaTV.ro@SD",Intermedia TV (576p) [Not 24/7]
-http://83.103.150.198:8080
 #EXTINF:-1 tvg-id="JOBTV.ro@SD",JOB TV (1080p)
 https://jobtvserver.eu/hls/stream.m3u8
 #EXTINF:-1 tvg-id="KanalD.ro@SD",Kanal D (480p)
 https://stream1.kanald.ro/iphone/knd-live.m3u8
+#EXTINF:-1 tvg-id="KanalD2.ro@SD",Kanal D2 (1080i)
+https://stream2.kanald.ro/iphone/knd2-live.m3u8
 #EXTINF:-1 tvg-id="KissTV.ro@SD",Kiss TV (1080p)
 https://tv.broadcasting.ro/kisstv/a629c031-2170-4ee9-a36d-87a891aa3131.m3u8
 #EXTINF:-1 tvg-id="LightChannel.ro@SD",Light Channel (480p) [Not 24/7]
@@ -89,30 +103,26 @@ https://www.livemetropolatv.ro/MetropolaTV/Metro/playlist.m3u8
 https://stream1.antenaplay.ro/live/MireasaExtra/playlist.m3u8
 #EXTINF:-1 tvg-id="MISATV.ro@SD",MISA TV
 https://vidl.misatv.ro:5050/MSTV/romanian_720p_baseline/playlist.m3u8
-#EXTINF:-1 tvg-id="MoozDance.ro@SD",Mooz Dance
-https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8
-#EXTINF:-1 tvg-id="MoozHits.ro@SD",Mooz Hits
-https://rtmp.digitalbroadcast.ro/moozhits/moozhits.m3u8
-#EXTINF:-1 tvg-id="MoozRo.ro@SD",Mooz Ro!
-https://rtmp.digitalbroadcast.ro/moozro/moozro.m3u8
 #EXTINF:-1 tvg-id="MuscelTV.ro@SD",Muscel TV (720p)
 https://cdn.streamnet.pro/musceltv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="NasulTV.ro@SD",Nasul TV (720p) [Not 24/7]
 https://live.nasul.tv/live/stream.m3u8
+#EXTINF:-1 tvg-id="Nickelodeon.ro@SD",Nickelodeon
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+http://82.78.243.219:45739/play/a00o/index.m3u8
 #EXTINF:-1 tvg-id="NovaTVBrasov.ro@SD",Nova TV Brasov (576p) [Not 24/7]
 http://novapress.ro:2022/live/nova/playlist.m3u8
 #EXTINF:-1 tvg-id="ObservatorNews.ro@SD",Observator News (720p)
 https://live1ag.antenaplay.ro/live_ObservatorNews/live_ObservatorNews.m3u8
 #EXTINF:-1 tvg-id="PROTVNews.ro@SD",Pro TV News (1080p)
 https://cmero-ott-live.ssl.cdn.cra.cz/channels/cme-ro-voyo-news/playlist.m3u8?offsetSeconds=0&url=0
-#EXTINF:-1 tvg-id="PROFI24TV.ro@SD",PROFI 24 TV
-https://owncast-jjg42-u20330.vm.elestio.app/hls/0/stream.m3u8
-#EXTINF:-1 tvg-id="ProfitNews.ro@SD",Profit News (404p) [Not 24/7]
-https://stream1.profit.ro:1945/profit/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="RadioFxNet.ro@HD",Radio Fx Net (720p)
 https://streamlov.alsolnet.com/radiofxnet/live/playlist.m3u8
 #EXTINF:-1 tvg-id="RapsodiaTV.ro@SD",Rapsodia TV (576p)
 http://92.86.248.141:8080/ram/playlist.m3u8
+#EXTINF:-1 tvg-id="RealitateaPlus.ro@SD",Realitatea Plus (720p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+https://dokagents.site/live/realitateatv/mono.m3u8
 #EXTINF:-1 tvg-id="RealitateaPlus.ro@SD",Realitatea Plus (720p)
 https://stream.realitatea.net/realitatea/plus_md/ts:playlist.m3u8
 #EXTINF:-1 tvg-id="RealitateaSportiva.ro@SD",Realitatea Sportiva (720p)
@@ -121,6 +131,9 @@ https://stream.realitatea.net/realitatea/sportiva_md/ts:playlist.m3u8
 https://stream.realitatea.net/realitatea/star_md/ts:playlist.m3u8
 #EXTINF:-1 tvg-id="RockTV.ro@SD",Rock TV (720p)
 https://tv.broadcasting.ro/rocktv/85c83a80-4f71-4f2d-a8d6-43f676896bcb.m3u8
+#EXTINF:-1 tvg-id="RomaniaTV.ro@SD",Romania TV (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
+https://dokagents.site/live/romaniatv/mono.m3u8
 #EXTINF:-1 tvg-id="RomaniaTV.ro@SD",Romania TV (576p)
 #EXTVLCOPT:http-referrer=https://www.romaniatv.net/live
 https://livestream.romaniatv.net/clients/romaniatv/playlist.m3u8
@@ -145,6 +158,9 @@ https://vdo.ssl-stream.com:3247/stream/play.m3u8
 https://dvb.tennet.ro/mobile_tv/telestar.m3u8
 #EXTINF:-1 tvg-id="TraditionalTV.ro@SD",Traditional TV (1080p)
 http://83.103.149.75:8085/udp/239.30.0.9:4000
+#EXTINF:-1 tvg-id="TV1000.ro@SD",TV1000
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+http://82.78.243.219:45739/play/a01b/index.m3u8
 #EXTINF:-1 tvg-id="TVBuzau.ro@SD",TV Buzau (576p)
 http://78.96.33.89:8080
 #EXTINF:-1 tvg-id="TVSUD.ro@SD",TV SUD (1080p) [Geo-blocked]
@@ -187,61 +203,3 @@ https://tvr-tgmures.lg.mncdn.com/tvrtgmures/smil:tvrtgmures.smil/playlist.m3u8
 https://tvr-timisoara.lg.mncdn.com/tvrtimisoara/smil:tvrtimisoara.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSat.ro@SD",TVSat (576p) [Not 24/7]
 http://89.38.8.130:39443
-#EXTINF:-1 tvg-id="KanalD2.ro@SD",Kanal D2 (1080i)
-https://stream2.kanald.ro/iphone/knd2-live.m3u8
-#EXTINF:-1 tvg-id="BollywoodClassic.ro@HD",Bollywood Classic
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-https://dokagents.site/live/bollyc/mono.m3u8
-#EXTINF:-1 tvg-id="ProCinema.ro@SD",Pro Cinema
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-https://dokagents.site/live/procinema/mono.m3u8
-#EXTINF:-1 tvg-id="ProArena.ro@SD",Pro Arena
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-https://dokagents.site/live/proarena/mono.m3u8
-#EXTINF:-1 tvg-id="FilmNow.ro@SD",Film Now
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-https://dokagents.site/live/filmnow/mono.m3u8
-#EXTINF:-1 tvg-id="CineMaraton.ro@SD",CineMaraton
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-https://dokagents.site/live/cinemaraton/mono.m3u8
-#EXTINF:-1 tvg-id="Diva.ro@SD",Diva
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-https://dokagents.site/live/diva/mono.m3u8
-#EXTINF:-1 tvg-id="RealitateaPlus.ro@SD",Realitatea Plus (720p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-https://dokagents.site/live/realitateatv/mono.m3u8
-#EXTINF:-1 tvg-id="RomaniaTV.ro@SD",Romania TV (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-https://dokagents.site/live/romaniatv/mono.m3u8
-#EXTINF:-1 tvg-id="PrimaTV.ro@HD",Prima TV HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-https://dokagents.site/live/primatv/mono.m3u8
-#EXTINF:-1 tvg-id="ComedyCentral.ro@SD",Comedy Central
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://82.78.243.219:45739/play/a00f/index.m3u8
-#EXTINF:-1 tvg-id="Nickelodeon.ro@SD",Nickelodeon
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://82.78.243.219:45739/play/a00o/index.m3u8
-#EXTINF:-1 tvg-id="TV1000.ro@SD",TV1000
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-http://82.78.243.219:45739/play/a01b/index.m3u8
-#EXTINF:-1 tvg-id="History.ro@SD",History
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-http://82.78.243.219:45739/play/a01f/index.m3u8
-#EXTINF:-1 tvg-id="DigiSport1.ro@HD",Digi Sport 1 HD
-http://91.201.172.14:35005
-#EXTINF:-1 tvg-id="DigiSport2.ro@HD",Digi Sport 2 HD
-http://91.201.172.14:35006
-#EXTINF:-1 tvg-id="ColumnaTV.ro@SD",Columna TV
-https://cdn.streamnet.pro/columnatv/live/playlist.m3u8
-#EXTINF:-1 tvg-id="CredoTV.ro@SD",Credo TV
-https://651c69fa2ff4e.streamlock.net/ctv/_definst_/livecredo/playlist.m3u8
-#EXTINF:-1 tvg-id="DisneyChannel.ro@SD",Disney Channel
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-http://82.78.243.219:45739/play/a00y/index.m3u8
-#EXTINF:-1 tvg-id="DigiSport3.ro@HD",Digi Sport 3 HD
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://82.78.243.219:45739/play/a01m/index.m3u8
-#EXTINF:-1 tvg-id="DigiSport4.ro@SD",Digi Sport 4
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
-http://82.78.243.219:45739/play/a00v/index.m3u8
