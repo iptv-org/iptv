@@ -8,6 +8,7 @@ import { Playlist, Stream } from '../../models'
 import { truncate } from '../../utils'
 import { loadData } from '../../api'
 import { eachLimit } from 'async'
+import { confirm } from '@inquirer/prompts'
 import dns from 'node:dns'
 import chalk from 'chalk'
 import os from 'node:os'
@@ -172,20 +173,36 @@ async function onFinish(error: Error | null | undefined) {
     process.exit(1)
   }
 
-  if (options.fix) {
-    await removeBrokenLinks()
-  }
-
   drawTable()
 
   if (errors > 0 || warnings > 0) {
     console.log(
       chalk.red(`\n${errors + warnings} problems (${errors} errors, ${warnings} warnings)`)
     )
+  }
 
-    if (errors > 0) {
-      process.exit(1)
+  if (options.fix) {
+    await removeBrokenLinks()
+    console.log(chalk.green('\nBroken links removed successfully.'))
+  } else if (errors > 0) {
+    console.log() 
+    
+    try {
+      const shouldFix = await confirm({ 
+        message: `Found ${errors} broken links. Do you want to remove them now?`,
+        default: false 
+      })
+      
+      if (shouldFix) {
+        await removeBrokenLinks()
+        console.log(chalk.green('\nBroken links removed successfully.'))
+      } else {
+        console.log(chalk.yellow('\nNo changes made.'))
+      }
+    } catch (err) {
+      console.log(chalk.yellow('\n\nPrompt interrupted by user. No files were modified.'))
     }
+    process.exit(0)
   }
 
   process.exit(0)
