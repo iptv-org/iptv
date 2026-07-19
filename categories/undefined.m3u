@@ -277,6 +277,8 @@ https://tvdatta.com:3578/live/antenaunolive.m3u8
 https://jmp2.uk/plu-638e10de75c3a30007092693.m3u8
 #EXTINF:-1 tvg-id="AnNinhTV.vn@HD" tvg-logo="https://static.wikia.nocookie.net/logos/images/1/1a/ANTV_2023.png/revision/latest/scale-to-width-down/512?path-prefix=vi" group-title="Undefined",ANTV (1080p)
 https://liveh12.vtvprime.vn/hls/ANNINHTV/index.m3u8
+#EXTINF:-1 tvg-id="AP1TV.np@SD" tvg-logo="" group-title="Undefined",AP1 TV (720p)
+http://maxotts.maxdigitaltv.com/x-media/C22/master.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",APTN Beyond (720p)
 https://jmp2.uk/plu-68b9afd66985e192657a2b7f.m3u8
 #EXTINF:-1 tvg-id="AraBel.fr@SD" tvg-logo="https://www.arabel.fm/wp-content/uploads/2021/10/Logo-AraBel.png" group-title="Undefined",AraBel (180p)
@@ -599,8 +601,6 @@ http://23.237.104.106:8080/USA_BTN/index.m3u8
 https://shd-gcp-live.edgenextcdn.net/live/bitmovin-big-time-plus/924283f994779a311c1389698ff7e736/index.m3u8
 #EXTINF:-1 tvg-id="Bigtime.pl@SD" tvg-logo="https://images-3.rakuten.tv/storage/global-live-channel/translation/artwork/1fe37ff8-c6b7-4123-8c68-653d657b4c5f-width200-quality90.jpeg" group-title="Undefined",Bigtime
 https://103f01c3ff79408e83c9212f8a374ecc.mediatailor.us-east-1.amazonaws.com/v1/master/0fb304b2320b25f067414d481a779b77db81760d/RakutenTV-eu_BjgtjmeDarmoweFilmy/playlist.m3u8
-#EXTINF:-1 tvg-id="Bigudi.ua@SD" tvg-logo="https://i.imgur.com/dy9ZKG1.png" group-title="Undefined",Bigudi (576p)
-http://176.122.125.10:8080/bigudi/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Billboard TV (1080p)
 https://d2zmd59prfyzho.cloudfront.net/Billboard_TV.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Billiards+ (1080p)
@@ -2713,8 +2713,8 @@ https://d1si3n1st4nkgb.cloudfront.net/10502/88896051/hls/master.m3u8?ads.xumo_ch
 https://jmp2.uk/plu-68d113f9184f1a0620c8101c.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Meet Marry Murder
 https://jmp2.uk/plu-691b453846ca5e6d1665f03b.m3u8
-#EXTINF:-1 tvg-id="Mega.ua@SD" tvg-logo="https://i.imgur.com/Hsr0EvO.png" group-title="Undefined",Mega (1080p)
-http://176.122.125.10:8080/mega/index.m3u8
+#EXTINF:-1 tvg-id="Mega.ua@SD" tvg-logo="https://i.imgur.com/Hsr0EvO.png" group-title="Undefined",Mega (720p)
+https://cdn15.live-tv.cloud/ua_infinitas_tv/mega-abr/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" http-referrer="https://www.meganoticias.cl/" group-title="Undefined",Meganoticias (1080p)
 #EXTVLCOPT:http-referrer=https://www.meganoticias.cl/
 https://ythls.armelin.one/channel/UCkccyEbqhhM3uKOI6Shm-4Q.m3u8
@@ -3771,8 +3771,9 @@ https://jmp2.uk/plu-634926e4b51d2d00077819a2.m3u8
 https://jmp2.uk/plu-699c192688133556bd253602.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Renegade
 https://jmp2.uk/plu-699c1998d5b4d030870ff998.m3u8
-#EXTINF:-1 tvg-id="Rengoni.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" group-title="Undefined",Rengoni (396p)
-https://d1msejlow1t3l4.cloudfront.net/fta/rengonitv/playlist.m3u8
+#EXTINF:-1 tvg-id="Rengoni.in@SD" tvg-logo="https://dtil.tmsimg.com/assets/s143722_ld_h15_aa.png?lock=720x540" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36" group-title="Undefined",Rengoni (576p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
+http://103.175.73.12:8080/live/709/master.m3u8
 #EXTINF:-1 tvg-id="RennsteigTV.de@SD" tvg-logo="https://www.rennsteig.tv/wp-content/uploads/rennsteig-tv-claim-300.png" group-title="Undefined",Rennsteig TV (720p)
 http://wowza.telvi.de/rennsteigtv/stream_720p/playlist.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Reno Duo
@@ -4389,7 +4390,7 @@ http://80.194.62.172:50002/stream/channelid/1848745953
 https://primetv-prod.akamaized.net/v1/prime-freeview-aes128.m3u8
 #EXTINF:-1 tvg-id="SkyOpen.nz@Plus1" tvg-logo="https://i.imgur.com/eYyYojh.png" group-title="Undefined",Sky open +1 (576p) [Geo-blocked]
 https://linear-p.media.skyone.co.nz/primeplus1.clear.m3u8
-#EXTINF:-1 tvg-id="SkyShowtime1.fi@SD" tvg-logo="https://i.imgur.com/Dw9Yv9P.png" group-title="Undefined",SkyShowtime 1
+#EXTINF:-1 tvg-id="SkyShowtime1.fi@Poland" tvg-logo="https://i.imgur.com/Dw9Yv9P.png" group-title="Undefined",SkyShowtime 1 Poland
 http://91.146.94.234:10001/play/a0bg
 #EXTINF:-1 tvg-id="Slice.ca@SD" tvg-logo="https://i.imgur.com/9UzQpum.png" group-title="Undefined",Slice (720p)
 http://40.160.24.55/SLICE/index.m3u8
@@ -5057,8 +5058,9 @@ https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/9d
 http://stream.mcquack.net/402/index.m3u8
 #EXTINF:-1 tvg-id="" tvg-logo="" group-title="Undefined",Test My Ride (1080p)
 https://streams2.sofast.tv/sofastplayout/WiseM3U8_21/master.m3u8
-#EXTINF:-1 tvg-id="TET.ua@SD" tvg-logo="https://i.imgur.com/Wu6wtbe.png" group-title="Undefined",TET (1080p)
-http://176.122.125.10:8080/tethd/index.m3u8
+#EXTINF:-1 tvg-id="TET.ua@SD" tvg-logo="https://i.imgur.com/Wu6wtbe.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36" group-title="Undefined",TET (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+http://stream.mcquack.net/338/index.m3u8
 #EXTINF:-1 tvg-id="Teva.fr@SD" tvg-logo="https://i.imgur.com/kDW0hN5.png" group-title="Undefined",Teva (1080p)
 http://145.239.5.177/356/index.m3u8
 #EXTINF:-1 tvg-id="tv2.tr@SD" tvg-logo="https://i.imgur.com/rsoSLih.png" group-title="Undefined",Teve2 (1080p)
