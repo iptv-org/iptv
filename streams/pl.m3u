@@ -58,7 +58,7 @@ https://cdn-s-lb2.pluscdn.pl/lv/1511888/322/hls/bd3b0bfe/masterlist.m3u8
 https://lb2-e3-20.pluscdn.pl/lv/1511888/322/dash/52a9b70b/live.mpd
 #EXTINF:-1 tvg-id="PolsatSport1.pl@SD",Polsat Sport 1 (1080p) [Geo-blocked]
 http://cdn-s-lb2.pluscdn.pl/lv/1544303/939/dash/7f74b079/live.mpd
-#EXTINF:-1 tvg-id="PolsatSport2.pl@SD",Polsat Sport 2
+#EXTINF:-1 tvg-id="PolsatSport2.pl",Polsat Sport 2 (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://91.146.94.234:10001/play/a06z
 #EXTINF:-1 tvg-id="PolsatSportPremium1.pl@SD",Polsat Sport Premium 1 (1080p) [Not 24/7]
@@ -187,3 +187,23 @@ http://91.146.94.234:10001/play/a07b
 #EXTINF:-1 tvg-id="FILMBOXPlusOne.pl@Magyar",FILMBOX+ One Magyar
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://88.212.15.19/live/test_filmbox_plus_hun_atk_1200/playlist.m3u8
+#EXTINF:-1 tvg-id="PolsatSport1.pl@SD",Polsat Sport 1 (1080p)
+http://91.146.94.234:10001/play/a0c4
+#EXTINF:-1 tvg-id="PolsatSportFight.pl@SD",Polsat Sport Fight
+http://91.146.94.234:10001/play/a070
+#EXTINF:-1 tvg-id="TVPSport.pl@SD",TVP Sport (1080p)
+http://91.146.94.234:10001/play/a07f
+#EXTINF:-1 tvg-id="TVP2.pl@SD",TVP2
+http://91.146.94.234:10001/play/a09f
+#EXTINF:-1 tvg-id="FILMBOXPlusOne.pl@Romania",FILMBOX+ One Romania (576p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://aes.m3u8simplu.workers.dev/filmbox/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusHits.pl@Romania",FILMBOX+ Hits Romania (576p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://aes.m3u8simplu.workers.dev/filmboxpremium/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusLoveCrime.pl@Romania",FILMBOX+ Love & Crime Romania (576p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://aes.m3u8simplu.workers.dev/filmboxstars/index.m3u8
+#EXTINF:-1 tvg-id="FILMBOXPlusEmotion.pl@Romania",FILMBOX+ Emotion Romania (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
+https://aes.m3u8simplu.workers.dev/filmboxextra/index.m3u8
