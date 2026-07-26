@@ -41,10 +41,6 @@ https://5bb3298db4821.streamlock.net/ctv/livecredo/playlist.m3u8
 https://651c69fa2ff4e.streamlock.net/ctv/_definst_/livecredo/playlist.m3u8
 #EXTINF:-1 tvg-id="Digi24.ro@SD",Digi 24 (720p)
 https://edge-ar.rcs-rds.ro/digi24ar/index.m3u8
-#EXTINF:-1 tvg-id="DigiSport1.ro@HD",Digi Sport 1 HD
-http://91.201.172.14:35005
-#EXTINF:-1 tvg-id="DigiSport2.ro@HD",Digi Sport 2 HD
-http://91.201.172.14:35006
 #EXTINF:-1 tvg-id="DottoTV.ro@SD",Dotto TV (1080p)
 https://live.dottotv.ro/index.m3u8
 #EXTINF:-1 tvg-id="TVSE.ro@SD",Exploris (576p) [Not 24/7]
@@ -319,3 +315,15 @@ https://aes.m3u8simplu.workers.dev/nationalplus/index.m3u8
 #EXTVLCOPT:http-referrer=https://mooz.tv/live-ro/#MoozDance
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
 https://rtmp.digitalbroadcast.ro/moozdance/moozdance.m3u8
+#EXTINF:-1 tvg-id="DigiSport1.ro@SD",Digi Sport 1 (720p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+https://aes.m3u8simplu.workers.dev/digi1/index.m3u8
+#EXTINF:-1 tvg-id="DigiSport2.ro@SD",Digi Sport 2 (720p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+https://aes.m3u8simplu.workers.dev/digi2/index.m3u8
+#EXTINF:-1 tvg-id="NationalTV.ro@SD",National TV (576p)
+https://aes.m3u8simplu.workers.dev/nationaltv/index.m3u8
+#EXTINF:-1 tvg-id="EtnoTV.ro@SD",Etno TV (1080p)
+https://aes.m3u8simplu.workers.dev/etno/index.m3u8
+#EXTINF:-1 tvg-id="FavoritTV.ro@SD",Favorit TV (1440p)
+https://aes.m3u8simplu.workers.dev/favorit/index.m3u8
