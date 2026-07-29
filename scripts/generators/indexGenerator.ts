@@ -1,5 +1,5 @@
 import { Storage, File } from '@freearhey/storage-js'
-import { PUBLIC_DIR, EOL } from '../constants'
+import { PUBLIC_DIR, ROOT_DIR, EOL } from '../constants'
 import { Stream, Playlist } from '../models'
 import { Collection } from '@freearhey/core'
 import { Generator } from './generator'
@@ -38,6 +38,10 @@ export class IndexGenerator implements Generator {
     const playlist = new Playlist(sfwStreams, { public: true })
     const filepath = 'index.m3u'
     await this.storage.save(filepath, playlist.toString())
+
+    const rootStorage = new Storage(ROOT_DIR)
+    await rootStorage.save(filepath, playlist.toString())
+
     this.logFile.append(
       JSON.stringify({ type: 'index', filepath, count: playlist.streams.count() }) + EOL
     )
