@@ -21,9 +21,8 @@ export class IndexGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    const sfwStreams = this.streams
+    const allStreams = this.streams
       .sortBy(stream => stream.title)
-      .filter((stream: Stream) => stream.isSFW())
       .map((stream: Stream) => {
         const groupTitle = stream
           .getCategories()
@@ -35,7 +34,7 @@ export class IndexGenerator implements Generator {
         return stream
       })
 
-    const playlist = new Playlist(sfwStreams, { public: true })
+    const playlist = new Playlist(allStreams, { public: true })
     const filepath = 'index.m3u'
     await this.storage.save(filepath, playlist.toString())
 
