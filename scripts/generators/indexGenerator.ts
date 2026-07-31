@@ -28,16 +28,16 @@ export class IndexGenerator implements Generator {
 
       // Very simple approximation for West vs East coast based on string matching or we could use the stream title
       let locationRank = 5
-      const subdivisions = stream.getBroadcastSubdivisions()
+      const subdivisions = stream.getBroadcastSubdivisions().all()
       const westCoast = ['US-CA', 'US-WA', 'US-OR', 'US-NV']
       const eastCoast = ['US-ME', 'US-NH', 'US-MA', 'US-RI', 'US-CT', 'US-NY', 'US-NJ', 'US-PA', 'US-DE', 'US-MD', 'US-VA', 'US-NC', 'US-SC', 'US-GA', 'US-FL']
 
-      const isWestCoast = subdivisions.all().some(s => westCoast.includes(s.code))
-      const isEastCoast = subdivisions.all().some(s => eastCoast.includes(s.code))
+      const isWestCoast = subdivisions.some(s => westCoast.includes(s.code))
+      const isEastCoast = subdivisions.some(s => eastCoast.includes(s.code))
 
       if (isWestCoast) {
         locationRank = 1
-      } else if (subdivisions.all().length > 0) {
+      } else if (subdivisions.length > 0) {
         locationRank = isEastCoast ? 3 : 2 // Other specific US regions in the middle
       } else {
         locationRank = 4 // No specific region
