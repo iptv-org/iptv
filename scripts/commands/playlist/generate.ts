@@ -2,9 +2,10 @@ import { LOGS_DIR, STREAMS_DIR } from '../../constants'
 import { Storage, File } from '@freearhey/storage-js'
 import { PlaylistParser } from '../../core'
 import { loadData, data } from '../../api'
-import { Logger } from '@freearhey/core'
+import { Logger, Collection } from '@freearhey/core'
 import uniqueId from 'lodash.uniqueid'
 import { Stream } from '../../models'
+import axios from 'axios'
 import {
   IndexCategoryGenerator,
   IndexLanguageGenerator,
@@ -19,6 +20,16 @@ import {
   IndexGenerator,
   RawGenerator
 } from '../../generators'
+import async from 'async'
+
+async function checkStreamActive(url: string): Promise<boolean> {
+  try {
+    const response = await axios.head(url, { timeout: 3000 });
+    return response.status >= 200 && response.status < 400;
+  } catch (error) {
+    return false;
+  }
+}
 
 async function main() {
   const logger = new Logger()
@@ -40,6 +51,19 @@ async function main() {
   })
   const totalStreams = streams.count()
   logger.info(`found ${totalStreams} streams`)
+
+  logger.info('pinging streams to verify they are active...')
+  const activeStreams: Stream[] = []
+
+  await async.eachLimit(streams.all(), 50, async (stream) => {
+    const isActive = await checkStreamActive(stream.url);
+    if (isActive) {
+      activeStreams.push(stream);
+    }
+  });
+
+  streams = new Collection(activeStreams)
+  logger.info(`found ${streams.count()} active streams out of ${totalStreams}`)
 
   logger.info('generating raw/...')
   await new RawGenerator({ streams, logFile }).generate()
