@@ -5,7 +5,6 @@ import { loadData, data } from '../../api'
 import { Logger, Collection } from '@freearhey/core'
 import uniqueId from 'lodash.uniqueid'
 import { Stream } from '../../models'
-import axios from 'axios'
 import {
   IndexCategoryGenerator,
   IndexLanguageGenerator,
@@ -20,16 +19,6 @@ import {
   IndexGenerator,
   RawGenerator
 } from '../../generators'
-import async from 'async'
-
-async function checkStreamActive(url: string): Promise<boolean> {
-  try {
-    const response = await axios.head(url, { timeout: 3000 });
-    return response.status >= 200 && response.status < 400;
-  } catch (error) {
-    return false;
-  }
-}
 
 async function main() {
   const logger = new Logger()
@@ -52,19 +41,6 @@ async function main() {
   const totalStreams = streams.count()
   logger.info(`found ${totalStreams} streams`)
 
-  logger.info('pinging streams to verify they are active...')
-  const activeStreams: Stream[] = []
-
-  await async.eachLimit(streams.all(), 50, async (stream) => {
-    const isActive = await checkStreamActive(stream.url);
-    if (isActive) {
-      activeStreams.push(stream);
-    }
-  });
-
-  streams = new Collection(activeStreams)
-  logger.info(`found ${streams.count()} active streams out of ${totalStreams}`)
-
   logger.info('generating raw/...')
   await new RawGenerator({ streams, logFile }).generate()
 
@@ -77,6 +53,8 @@ async function main() {
     ],
     ['asc', 'desc', 'desc']
   )
+
+  const allStreams = streams.clone()
 
   logger.info('filtering streams...')
   streams = streams.uniqBy((stream: Stream) => stream.getId() || uniqueId())
@@ -105,7 +83,7 @@ async function main() {
   await new SourcesGenerator({ streams, logFile }).generate()
 
   logger.info('generating index.m3u...')
-  await new IndexGenerator({ streams, logFile }).generate()
+  await new IndexGenerator({ streams: allStreams, logFile }).generate()
 
   logger.info('generating index.category.m3u...')
   await new IndexCategoryGenerator({ streams, logFile }).generate()
