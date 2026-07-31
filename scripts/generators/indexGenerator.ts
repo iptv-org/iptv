@@ -24,7 +24,8 @@ export class IndexGenerator implements Generator {
     const getSortKey = (stream: Stream): string => {
       let categoryRank = 4 // Default to entertainment or other
       if (stream.hasCategory({ id: 'news', name: 'news' })) categoryRank = 1
-      else if (stream.hasCategory({ id: 'sports', name: 'sports' })) categoryRank = 3
+      else if (stream.hasCategory({ id: 'sports', name: 'sports' })) categoryRank = 2
+      else if (stream.hasCategory({ id: 'entertainment', name: 'entertainment' })) categoryRank = 3
 
       // Very simple approximation for West vs East coast based on string matching or we could use the stream title
       let locationRank = 5
