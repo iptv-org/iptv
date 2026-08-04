@@ -55,7 +55,7 @@
     "@typescript-eslint/eslint-plugin": "^8.38.0",
     "@typescript-eslint/parser": "^8.38.0",
     "async": "^3.2.6",
-    "axios": "^1.15.2",
+    "axios": "1.18.0",
     "chalk": "^5.4.1",
     "cli-progress": "^3.12.0",
     "commander": "^14.0.0",
@@ -80,6 +80,9 @@
   },
   "overrides": {
     "esbuild": "0.23.1",
-    "@xmldom/xmldom": ">=0.8.13 <1.0.0"
+    "@xmldom/xmldom": ">=0.8.13 <1.0.0",
+    "ip-address": "10.3.1",
+    "form-data": "4.0.6",
+    "brace-expansion": "5.0.9"
   }
 }
