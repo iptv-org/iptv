@@ -138,6 +138,8 @@ http://45.171.108.253:8888/RTS/index.m3u8
 http://45.224.97.181:9999/RTS/index.m3u8
 #EXTINF:-1 tvg-id="RTS.ec@SD",RTS (1080p)
 http://177.234.249.178:8888/RTS/index.m3u8
+#EXTINF:-1 tvg-id="RTS.ec@SD",RTS (720p)
+http://157.100.248.242:8080/RTSHD/index.m3u8
 #EXTINF:-1 tvg-id="RTS.ec@SD",RTS (480p)
 https://d2w3o8zn50cs1k.cloudfront.net/ts:abr.m3u8
 #EXTINF:-1 tvg-id="RTU.ec@SD",RTU (1080p) [Not 24/7]
@@ -148,10 +150,14 @@ http://45.224.97.181:9999/RTU/index.m3u8
 https://sv72.ecuaradiotv.net/rtvhd/live/manifest.m3u8
 #EXTINF:-1 tvg-id="SonoOndaTV.ec@SD",Sono Onda TV (720p)
 https://live.obslivestream.com/sonoondatv/index.m3u8
+#EXTINF:-1 tvg-id="StudioPlusTV.ec@SD",Studio + TV (720p)
+https://cloudvideo.servers10.com:8081/8184/index.m3u8
 #EXTINF:-1 tvg-id="TCTelevision.ec@SD",TC Television (1080p)
 http://45.224.97.181:9999/TC/index.m3u8
 #EXTINF:-1 tvg-id="TCTelevision.ec@SD",TC Television (1080p)
 http://177.234.249.178:8888/TC/index.m3u8
+#EXTINF:-1 tvg-id="TCTelevision.ec@SD",TC Television
+http://177.234.218.66:8084/play/a089/index.m3u8
 #EXTINF:-1 tvg-id="Teleamazonas.ec@Quito",Teleamazonas (1080p)
 http://45.171.108.253:8888/TELEAMAZONAS/index.m3u8
 #EXTINF:-1 tvg-id="Teleamazonas.ec@Quito",Teleamazonas (1080p)
@@ -159,9 +165,13 @@ http://45.224.97.181:9999/Teleamazonas/index.m3u8
 #EXTINF:-1 tvg-id="Teleamazonas.ec@SD",Teleamazonas (1080p)
 https://teleamazonas-live.cdn.vustreams.com/live/fd4ab346-b4e3-4628-abf0-b5a1bc192428/live.isml/playlist.m3u8
 #EXTINF:-1 tvg-id="Teleamazonas.ec@Quito",Teleamazonas (720p)
+http://157.100.248.242:8080/TeleamazonasHD/index.m3u8
+#EXTINF:-1 tvg-id="Teleamazonas.ec@Quito",Teleamazonas (720p)
 http://179.60.51.134:8888/TELEAMAZONAS/index.m3u8
 #EXTINF:-1 tvg-id="Teleamazonas.ec@Quito",Teleamazonas Quito (1080p) [Geo-blocked]
 https://teleamazonas-live.cdn.vustreams.com/live/fd4ab346-b4e3-4628-abf0-b5a1bc192428/live.isml/fd4ab346-b4e3-4628-abf0-b5a1bc192428.m3u8
+#EXTINF:-1 tvg-id="Telecosta.ec@SD",Telecosta
+https://telecosta.botlife.app/memfs/6ba9dc9a-aff4-4e4e-9466-a9f0c714b60b.m3u8
 #EXTINF:-1 tvg-id="Telemar.ec@SD",Telemar (720p)
 https://cloudpro.servidoresdestream.com:8081/8020/index.m3u8
 #EXTINF:-1 tvg-id="Telerama.ec@SD",Telerama (240p) [Not 24/7]
@@ -179,8 +189,12 @@ https://streamingav.asambleanacional.gob.ec/hls/stream.m3u8
 https://cdn.mycloudstream.io/hls/live/broadcast/uwcedjt2/index.m3u8
 #EXTINF:-1 tvg-id="TVC.ec@SD",TVC (1080p)
 http://45.224.97.181:9999/TVC/index.m3u8
+#EXTINF:-1 tvg-id="TVC.ec@SD",TVC (720p)
+http://157.100.248.242:8080/TVCHD/index.m3u8
 #EXTINF:-1 tvg-id="TVC.ec@SD",TVC (480i)
 https://d2m7i0pvomh4vg.cloudfront.net/ts:abr.m3u8
+#EXTINF:-1 tvg-id="TvOro.ec@SD",TvOro (1080p)
+http://45.187.0.19:9090/tvusa/index.m3u8
 #EXTINF:-1 tvg-id="UEBITVOnline.ec@SD",UEBI TV Online (720p) [Not 24/7]
 https://ventaxtv.com:3575/live/uebilive.m3u8
 #EXTINF:-1 tvg-id="UNIANDESTV.ec@SD",UNIANDES TV (720p) [Not 24/7]
@@ -195,17 +209,3 @@ https://cloud37.ecuatel.com/vostv/live/manifest.m3u8
 https://7.innovatestream.pe:19360/ecuadortest/ecuadortest.m3u8
 #EXTINF:-1 tvg-id="ZaracayTV.ec@SD",Zaracay TV (1080p) [Not 24/7]
 https://video2.makrodigital.com/zaracay/zaracay/playlist.m3u8
-#EXTINF:-1 tvg-id="TCTelevision.ec@SD",TC Television
-http://177.234.218.66:8084/play/a089/index.m3u8
-#EXTINF:-1 tvg-id="TvOro.ec@SD",TvOro (1080p)
-http://45.187.0.19:9090/tvusa/index.m3u8
-#EXTINF:-1 tvg-id="Telecosta.ec@SD",Telecosta
-https://telecosta.botlife.app/memfs/6ba9dc9a-aff4-4e4e-9466-a9f0c714b60b.m3u8
-#EXTINF:-1 tvg-id="Teleamazonas.ec@Quito",Teleamazonas (720p)
-http://157.100.248.242:8080/TeleamazonasHD/index.m3u8
-#EXTINF:-1 tvg-id="RTS.ec@SD",RTS (720p)
-http://157.100.248.242:8080/RTSHD/index.m3u8
-#EXTINF:-1 tvg-id="TVC.ec@SD",TVC (720p)
-http://157.100.248.242:8080/TVCHD/index.m3u8
-#EXTINF:-1 tvg-id="StudioPlusTV.ec@SD",Studio + TV
-https://cloudvideo.servers10.com:8081/8184/index.m3u8
