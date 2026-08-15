@@ -17,7 +17,7 @@ const { body, labels } = program.opts()
 
 const logsStorage = new Storage(LOGS_DIR)
 let streams = new Collection<Stream>()
-const errors: string[] = []
+let errors: string[] = []
 
 async function main() {
   const logger = new Logger()
@@ -30,53 +30,24 @@ async function main() {
 
   const data = parseIssueBody(body)
   if (labels.includes('streams:add')) {
-    if (data.missing('stream_id')) {
+    const streamId = data.getString('stream_id')
+    if (!streamId) {
       errors.push('The request is missing the "Stream ID"')
       done()
+    } else {
+      errors = errors.concat(validateStreamId(streamId))
     }
 
     const streamUrl = data.getString('stream_url')
     if (!streamUrl) {
       errors.push('The request is missing the "Stream URL"')
       done()
-    } else if (!isURI(streamUrl) || !hasValidDomain(streamUrl)) {
-      errors.push(`The stream URL "${streamUrl}" is invalid`)
-    }
+    } else {
+      errors = errors.concat(validateStreamUrl(streamUrl))
 
-    if (streams.includes((_stream: Stream) => _stream.url === streamUrl)) {
-      errors.push(`The stream with the URL "${streamUrl}" is already included in the playlists`)
-    }
-
-    const streamId = data.getString('stream_id') || ''
-    const [channelId, feedId] = streamId.split('@')
-
-    const channel: sdk.Models.Channel | undefined = apiData.channelsKeyById.get(channelId)
-    if (!channel) {
-      errors.push(`There is no channel with the ID "${channelId}" in the database`)
-      done()
-    }
-
-    const blocklistRecords: sdk.Models.BlocklistRecord[] | undefined =
-      apiData.blocklistRecordsGroupedByChannel.get(channelId)
-    if (blocklistRecords) {
-      blocklistRecords.forEach((record: sdk.Models.BlocklistRecord) => {
-        if (record.reason === 'dmca') {
-          errors.push(
-            `The channel "${channelId}" has been added to our blocklist due to the claims of the copyright holder: ${record.ref}`
-          )
-        } else if (record.reason === 'nsfw') {
-          errors.push(
-            `The channel "${channelId}" has been added to our blocklist due to NSFW content: ${record.ref}`
-          )
-        }
-      })
-    }
-
-    const feed: sdk.Models.Feed | undefined = apiData.feedsKeyByStreamId.get(streamId)
-    if (!feed) {
-      errors.push(
-        `There is no feed with the ID "${feedId}" for the "${channelId}" channel in the database`
-      )
+      if (streams.includes((_stream: Stream) => _stream.url === streamUrl)) {
+        errors.push(`The stream with the URL "${streamUrl}" is already included in the playlists`)
+      }
     }
   } else if (labels.includes('streams:remove')) {
     const streamUrls = data.getString('stream_url') || ''
@@ -89,9 +60,7 @@ async function main() {
       .split(/\r?\n/)
       .filter(Boolean)
       .forEach((link: string) => {
-        if (!isURI(link) || !hasValidDomain(link)) {
-          errors.push(`The stream URL "${link}" is invalid`)
-        }
+        errors = errors.concat(validateStreamUrl(link))
 
         const found: Stream = streams.first((_stream: Stream) => _stream.url === link.trim())
         if (!found) {
@@ -104,18 +73,76 @@ async function main() {
     if (!streamUrl) {
       errors.push('The request is missing the "Stream URL"')
       done()
-    } else if (!isURI(streamUrl) || !hasValidDomain(streamUrl)) {
-      errors.push(`The stream URL "${streamUrl}" is invalid`)
-      done()
+    } else {
+      const stream: Stream = streams.first((_stream: Stream) => _stream.url === streamUrl)
+      if (!stream) {
+        errors.push(`The stream with the URL "${streamUrl}" is missing from the playlists`)
+      }
     }
 
-    const stream: Stream = streams.first((_stream: Stream) => _stream.url === streamUrl)
-    if (!stream) {
-      errors.push(`The stream with the URL "${streamUrl}" is missing from the playlists`)
+    const streamId = data.getString('stream_id')
+    if (streamId) {
+      errors = errors.concat(validateStreamId(streamId))
     }
   }
 
   done()
+}
+
+function validateStreamUrl(streamUrl: string): string[] {
+  const errors: string[] = []
+
+  if (!isURI(streamUrl) || !hasValidDomain(streamUrl)) {
+    errors.push(`The stream URL "${streamUrl}" is invalid`)
+  }
+
+  return errors
+}
+
+function validateStreamId(streamId: string): string[] {
+  const errors: string[] = []
+
+  const [channelId, feedId] = streamId.split('@')
+
+  if (!channelId) {
+    errors.push('The request is missing the channel ID')
+    return errors
+  } else {
+    const channel: sdk.Models.Channel | undefined = apiData.channelsKeyById.get(channelId)
+    if (!channel) {
+      errors.push(`There is no channel with the ID "${channelId}" in the database`)
+      return errors
+    }
+  }
+
+  const blocklistRecords: sdk.Models.BlocklistRecord[] | undefined =
+    apiData.blocklistRecordsGroupedByChannel.get(channelId)
+  if (blocklistRecords) {
+    blocklistRecords.forEach((record: sdk.Models.BlocklistRecord) => {
+      if (record.reason === 'dmca') {
+        errors.push(
+          `The channel "${channelId}" has been added to our blocklist due to the claims of the copyright holder: ${record.ref}`
+        )
+      } else if (record.reason === 'nsfw') {
+        errors.push(
+          `The channel "${channelId}" has been added to our blocklist due to NSFW content: ${record.ref}`
+        )
+      }
+    })
+  }
+
+  if (!feedId) {
+    errors.push('The request is missing the feed ID')
+  } else {
+    const feed: sdk.Models.Feed | undefined = apiData.feedsKeyByStreamId.get(streamId)
+    if (!feed) {
+      errors.push(
+        `There is no feed with the ID "${feedId}" for the "${channelId}" channel in the database`
+      )
+    }
+  }
+
+  return errors
 }
 
 function done() {
