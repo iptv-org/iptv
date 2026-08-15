@@ -43,6 +43,19 @@ jobs:
             --body "$RAW_BODY" \
             --labels "$LABEL_STRING"
 
+      - name: Handle valid request
+        if: success()
+        env:
+          GH_TOKEN: ${{ steps.create-app-token.outputs.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          if [ "${{ env.ACT }}" = "true" ]; then
+            echo "[MOCK] Add label: check:passed"
+            echo "[MOCK] Remove label if exists: check:failed"
+          else
+            gh issue edit $ISSUE_NUMBER --add-label "check:passed" --remove-label "check:failed"
+          fi
+
       - name: Handle invalid request
         if: failure() && steps.validator.outcome == 'failure'
         env:
@@ -54,6 +67,9 @@ jobs:
           if [ "${{ env.ACT }}" = "true" ]; then
             echo "[MOCK] Post comment:"
             echo "$COMMENT_MSG"
+            echo "[MOCK] Add label: check:failed"
+            echo "[MOCK] Remove label if exists: check:passed"
           else
             gh issue comment $ISSUE_NUMBER --body "$COMMENT_MSG"
+            gh issue edit $ISSUE_NUMBER --add-label "check:failed" --remove-label "check:passed"
           fi
