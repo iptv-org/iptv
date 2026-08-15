@@ -109,7 +109,7 @@ async function removeStream(issue: Issue) {
   const log = createThread(issue, 'streams/remove')
   log.start()
 
-  const data = issue.data
+  const data = issue.dataSet
   if (data.missing('stream_url')) {
     log.error('The request is missing the "Stream URL"')
     skippedIssues.add(issue)
@@ -145,7 +145,7 @@ async function editStream(issue: Issue) {
   const log = createThread(issue, 'streams/edit')
   log.start()
 
-  const data = issue.data
+  const data = issue.dataSet
 
   const streamUrl = data.getString('stream_url')
 
@@ -157,7 +157,7 @@ async function editStream(issue: Issue) {
 
   const stream: Stream = streams.first((_stream: Stream) => _stream.url === streamUrl)
   if (!stream) {
-    log.error(`The stream with the URL "${streamUrl}" is already in the playlists`)
+    log.error(`The stream with the URL "${streamUrl}" is missing from the playlists`)
     skippedIssues.add(issue)
     return
   }
@@ -189,7 +189,7 @@ async function addStream(issue: Issue) {
   const log = createThread(issue, 'streams/add')
   log.start()
 
-  const data = issue.data
+  const data = issue.dataSet
   if (data.missing('stream_id')) {
     log.error('The request is missing the "Stream ID"')
     skippedIssues.add(issue)

@@ -3,17 +3,17 @@ import { DataSet } from '../core'
 type IssueProps = {
   number: number
   labels: string[]
-  data: DataSet
+  dataSet: DataSet
 }
 
 export class Issue {
   number: number
   labels: string[]
-  data: DataSet
+  dataSet: DataSet
 
-  constructor({ number, labels, data }: IssueProps) {
+  constructor({ number, labels, dataSet }: IssueProps) {
     this.number = number
     this.labels = labels
-    this.data = data
+    this.dataSet = dataSet
   }
 }

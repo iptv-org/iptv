@@ -49,7 +49,7 @@ async function main() {
     issue.labels.find((label: string) => label === 'streams:remove')
   )
   removeRequests.forEach((issue: Issue) => {
-    const streamUrls = issue.data.getArray('stream_url') || []
+    const streamUrls = issue.dataSet.getArray('stream_url') || []
 
     if (!streamUrls.length) {
       const result = {
@@ -84,8 +84,8 @@ async function main() {
   const addRequests = issues.filter(issue => issue.labels.includes('streams:add'))
   const addRequestsBuffer = new Dictionary()
   addRequests.forEach((issue: Issue) => {
-    const streamId = issue.data.getString('stream_id') || ''
-    const streamUrl = issue.data.getString('stream_url') || ''
+    const streamId = issue.dataSet.getString('stream_id') || ''
+    const streamUrl = issue.dataSet.getString('stream_url') || ''
     const [channelId] = streamId.split('@')
 
     const result = {
@@ -116,8 +116,8 @@ async function main() {
     issue.labels.find((label: string) => label === 'streams:edit')
   )
   editRequests.forEach((issue: Issue) => {
-    const streamId = issue.data.getString('stream_id') || ''
-    const streamUrl = issue.data.getString('stream_url') || ''
+    const streamId = issue.dataSet.getString('stream_id') || ''
+    const streamUrl = issue.dataSet.getString('stream_url') || ''
     const [channelId] = streamId.split('@')
 
     const result = {

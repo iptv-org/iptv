@@ -15,6 +15,20 @@ import { orderBy } from 'es-toolkit'
 import path from 'node:path'
 import fs from 'node:fs'
 
+export function hasValidDomain(string: string): boolean {
+  const FORBIDDEN_DOMAINS = ['iptv-org.github.io']
+  try {
+    const parsedUrl = new URL(string)
+    const hostname = parsedUrl.hostname
+    const isForbidden = FORBIDDEN_DOMAINS.some(
+      domain => hostname === domain || hostname.endsWith(`.${domain}`)
+    )
+    return !isForbidden
+  } catch {
+    return false
+  }
+}
+
 export function isURI(string: string): boolean {
   try {
     const url = new URL(string)
@@ -174,10 +188,13 @@ export async function loadIssues(props?: { labels: string | string[] }) {
     })
   }
 
-  return new Collection(issues).map(parseIssue)
+  return new Collection(issues).map(({ number, body, labels }) => {
+    const dataSet = parseIssueBody(body)
+    return new Issue({ number, labels: labels.map(l => l.name), dataSet })
+  })
 }
 
-function parseIssue(issue: { number: number; body: string; labels: { name: string }[] }): Issue {
+export function parseIssueBody(body: string): DataSet {
   const FIELDS = new Dictionary({
     'Stream ID': 'stream_id',
     'Channel ID': 'channel_id',
@@ -193,7 +210,7 @@ function parseIssue(issue: { number: number; body: string; labels: { name: strin
     Notes: 'notes'
   })
 
-  const fields = typeof issue.body === 'string' ? issue.body.split('###') : []
+  const fields = typeof body === 'string' ? body.split('###') : []
 
   const data = new Dictionary<string>()
   fields.forEach((field: string) => {
@@ -213,9 +230,7 @@ function parseIssue(issue: { number: number; body: string; labels: { name: strin
     data.set(id, value)
   })
 
-  const labels = issue.labels.map(label => label.name)
-
-  return new Issue({ number: issue.number, labels, data: new DataSet(data) })
+  return new DataSet(data)
 }
 
 export async function loadDiscussions() {
