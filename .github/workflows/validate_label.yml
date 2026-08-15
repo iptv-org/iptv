@@ -1,0 +1,40 @@
+name: Validate Label
+on:
+  issues:
+    types: [labeled]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v6
+
+      - uses: tibdex/github-app-token@v1.8.2
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Block self-approval
+        if: |
+          github.event.label.name == 'approved' && 
+          github.actor == github.event.issue.user.login
+        env:
+          GH_TOKEN: ${{ steps.create-app-token.outputs.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          if [ "${{ env.ACT }}" = "true" ]; then
+            echo "[MOCK] Post comment: A request cannot be approved by its author."
+            echo "[MOCK] Remove label: approved"
+          else
+            gh issue comment $ISSUE_NUMBER --body "A request cannot be approved by its author."
+            gh issue edit $ISSUE_NUMBER --remove-label "approved"
+          fi
+          
+          exit 1

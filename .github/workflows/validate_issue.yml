@@ -1,0 +1,75 @@
+name: Validate Issue
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    if: |
+      contains(github.event.issue.labels.*.name, 'streams:add') ||
+      contains(github.event.issue.labels.*.name, 'streams:remove') ||
+      contains(github.event.issue.labels.*.name, 'streams:edit')
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@v6
+
+      - uses: tibdex/github-app-token@v1.8.2
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run issue:validate
+        id: validator
+        env:
+          RAW_BODY: ${{ github.event.issue.body }}
+          LABEL_STRING: ${{ join(github.event.issue.labels.*.name, ',') }}
+        run: |
+          npm run issue:validate -- \
+            --body "$RAW_BODY" \
+            --labels "$LABEL_STRING"
+
+      - name: Handle valid request
+        if: success()
+        env:
+          GH_TOKEN: ${{ steps.create-app-token.outputs.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          if [ "${{ env.ACT }}" = "true" ]; then
+            echo "[MOCK] Add label: check:passed"
+            echo "[MOCK] Remove label if exists: check:failed"
+          else
+            gh issue edit $ISSUE_NUMBER --add-label "check:passed" --remove-label "check:failed"
+          fi
+
+      - name: Handle invalid request
+        if: failure() && steps.validator.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ steps.create-app-token.outputs.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          COMMENT_MSG=$(cat temp/logs/errors.txt) 
+          
+          if [ "${{ env.ACT }}" = "true" ]; then
+            echo "[MOCK] Post comment:"
+            echo "$COMMENT_MSG"
+            echo "[MOCK] Add label: check:failed"
+            echo "[MOCK] Remove label if exists: check:passed"
+          else
+            gh issue comment $ISSUE_NUMBER --body "$COMMENT_MSG"
+            gh issue edit $ISSUE_NUMBER --add-label "check:failed" --remove-label "check:passed"
+          fi

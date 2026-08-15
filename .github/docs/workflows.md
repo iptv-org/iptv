@@ -15,3 +15,11 @@ Sequentially runs the `api:load`, `playlist:format`, `playlist:lint`, and `playl
 ## update
 
 Runs every day at 0:00 UTC. It sequentially executes the `api:load`, `playlist:update`, `playlist:lint`, `playlist:validate`, `playlist:generate`, `playlist:export`, and `readme:update` scripts, then automatically deploys the updated files if successful.
+
+## validate_issue
+
+Runs when an issue is opened or edited. It checks the requests for errors using `issue:validate` script and, if any are found, the bot posts them in the comments.
+
+## validate_label
+
+Triggers when a new label is added to an issue. It checks the label, and if it's incorrect, the bot deletes it and leaves a comment explaining why.

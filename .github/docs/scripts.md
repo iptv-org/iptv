@@ -7,6 +7,8 @@ For the scripts to work, you must have [Node.js](https://nodejs.org/en) installe
 - [act:check](#actcheck)
 - [act:format](#actformat)
 - [act:update](#actupdate)
+- [act:validate_issue](#actvalidate_issue)
+- [act:validate_label](#actvalidate_label)
 - [api:load](#apiload)
 - [playlist:format](#playlistformat)
 - [playlist:update](#playlistupdate)
@@ -43,6 +45,22 @@ Runs the [update](./workflows.md#update) workflow locally. Depends on [nektos/gh
 
 ```sh
 npm run act:update
+```
+
+## act:validate_issue
+
+Runs the [validate_issue](./workflows.md#validate_issue) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
+
+```sh
+npm run act:validate_issue -- -e .github/mocks/events/issue_opened.json
+```
+
+## act:validate_label
+
+Runs the [validate_label](./workflows.md#validate_label) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
+
+```sh
+npm run act:validate_label -- -e .github/mocks/events/issue_approved.json --actor Bob
 ```
 
 ## api:load
