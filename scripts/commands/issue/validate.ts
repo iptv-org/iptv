@@ -78,9 +78,11 @@ async function main() {
       }
     }
 
-    const streamId = data.getString('stream_id')
-    if (streamId) {
-      errors = errors.concat(validateStreamId(streamId))
+    if (!data.isDeleted('stream_id')) {
+      const streamId = data.getString('stream_id')
+      if (streamId) {
+        errors = errors.concat(validateStreamId(streamId))
+      }
     }
   }
 
