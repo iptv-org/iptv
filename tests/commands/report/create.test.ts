@@ -25,6 +25,7 @@ describe('report:create', () => {
 │ 8       │ 19957       │ 'channel search' │ '13thStreet.au'             │ undefined                                                                                              │ 'channel_closed'     │
 │ 9       │ 20956       │ 'channel search' │ 'IONTV.us'                  │ undefined                                                                                              │ 'fulfilled'          │
 │ 10      │ 25157       │ 'streams:add'    │ 'OnTimeSports.eg@SD'        │ 'OnTime Sports SD.mu38'                                                                                │ 'invalid_stream_url' │
+│ 11      │ 39097       │ 'streams:edit'   │ '~'                         │ 'https://jmp2.uk/plu-5a74b8e1e22a61737979c6bf.m3u8'                                                    │ 'nonexistent_link'   │
 └─────────┴─────────────┴──────────────────┴─────────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────┘`)
     ).toBe(true)
   })
