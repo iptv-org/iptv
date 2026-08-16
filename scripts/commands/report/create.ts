@@ -140,35 +140,57 @@ async function main() {
   const channelSearchRequests = discussions.filter(
     (discussion: Discussion) => discussion.category === 'Channel Search'
   )
-  const channelSearchRequestsBuffer = new Dictionary()
+
+  const requestsWithFeed = new Set<string>()
+
   channelSearchRequests.forEach((discussion: Discussion) => {
     const streamId =
       discussion.data.getString('stream_id') || discussion.data.getString('channel_id') || ''
     const [channelId, feedId] = streamId.split('@')
 
-    const result = {
+    if (channelId && feedId) {
+      requestsWithFeed.add(channelId)
+    }
+  })
+
+  const seenStreamIds = new Set<string>()
+
+  channelSearchRequests.forEach((discussion: Discussion) => {
+    const streamId =
+      discussion.data.getString('stream_id') || discussion.data.getString('channel_id') || ''
+    const [channelId, feedId] = streamId.split('@')
+    const channelData = channelId ? data.channelsKeyById.get(channelId) : null
+
+    const isExactDuplicate = streamId && seenStreamIds.has(streamId)
+    const overlappedByFeeds = !feedId && channelId && requestsWithFeed.has(channelId)
+
+    const rules = [
+      { status: status.MISSING_CHANNEL_ID, when: !channelId },
+      { status: status.INVALID_CHANNEL_ID, when: data.channelsKeyById.missing(channelId) },
+      { status: status.DUPLICATE_REQUEST, when: isExactDuplicate || overlappedByFeeds },
+      {
+        status: status.CHANNEL_BLOCKED,
+        when: data.blocklistRecordsGroupedByChannel.has(channelId)
+      },
+      { status: status.FULFILLED, when: streamsGroupedById.has(streamId) },
+      { status: status.FULFILLED, when: !feedId && streamsGroupedByChannel.has(channelId) },
+      { status: status.CHANNEL_CLOSED, when: channelData && channelData.isClosed() }
+    ]
+
+    const matchedRule = rules.find(rule => rule.when)
+    const finalStatus = matchedRule ? matchedRule.status : status.PENDING
+
+    if (streamId) {
+      seenStreamIds.add(streamId)
+    }
+
+    report.add({
       issueNumber: discussion.number,
       type: 'channel search',
       streamId: streamId || undefined,
       streamUrl: undefined,
-      status: status.PENDING
-    }
-
-    if (!channelId) result.status = status.MISSING_CHANNEL_ID
-    else if (data.channelsKeyById.missing(channelId)) result.status = status.INVALID_CHANNEL_ID
-    else if (channelSearchRequestsBuffer.has(streamId)) result.status = status.DUPLICATE_REQUEST
-    else if (data.blocklistRecordsGroupedByChannel.has(channelId))
-      result.status = status.CHANNEL_BLOCKED
-    else if (streamsGroupedById.has(streamId)) result.status = status.FULFILLED
-    else if (!feedId && streamsGroupedByChannel.has(channelId)) result.status = status.FULFILLED
-    else {
-      const channelData = data.channelsKeyById.get(channelId)
-      if (channelData && channelData.isClosed()) result.status = status.CHANNEL_CLOSED
-    }
-
-    channelSearchRequestsBuffer.set(streamId, true)
-
-    report.add(result)
+      status: finalStatus
+    })
   })
 
   report = report.sortBy(item => item.issueNumber).filter(item => item.status !== status.PENDING)
