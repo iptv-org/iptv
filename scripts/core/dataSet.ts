@@ -14,23 +14,25 @@ export class DataSet {
     return this._data.missing(key) || this._data.get(key) === undefined
   }
 
+  isDeleted(key: string): boolean {
+    const deleteSymbol = '~'
+
+    return this._data.get(key) === deleteSymbol
+  }
+
   getBoolean(key: string): boolean {
     return Boolean(this._data.get(key))
   }
 
   getString(key: string): string | undefined {
-    const deleteSymbol = '~'
-
-    return this._data.get(key) === deleteSymbol ? '' : this._data.get(key)
+    return this._data.get(key)
   }
 
   getArray(key: string): string[] | undefined {
-    const deleteSymbol = '~'
-
     if (this._data.missing(key)) return undefined
 
     const value = this._data.get(key)
 
-    return !value || value === deleteSymbol ? [] : value.split('\r\n')
+    return !value || this.isDeleted(key) ? [] : value.split('\r\n')
   }
 }

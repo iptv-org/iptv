@@ -5,8 +5,8 @@ import { Logger, Collection } from '@freearhey/core'
 import { program, OptionValues } from 'commander'
 import { Storage } from '@freearhey/storage-js'
 import { Playlist, Stream } from '../../models'
+import { loadData, data } from '../../api'
 import { truncate } from '../../utils'
-import { loadData } from '../../api'
 import { eachLimit } from 'async'
 import dns from 'node:dns'
 import chalk from 'chalk'
@@ -70,6 +70,10 @@ async function main() {
   })
   const files = program.args.length ? program.args : await rootStorage.list(`${STREAMS_DIR}/*.m3u`)
   streams = await parser.parse(files)
+  streams = streams.map((stream: Stream) => {
+    stream.setGuides(data.guidesGroupedByStreamId.get(stream.getId()))
+    return stream
+  })
 
   logger.info(`found ${streams.count()} streams`)
   if (streams.count() > LIVE_UPDATE_MAX_STREAMS) isLiveUpdateEnabled = false

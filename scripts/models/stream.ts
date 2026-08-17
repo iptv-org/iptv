@@ -33,20 +33,28 @@ export class Stream extends sdk.Models.Stream {
   }
 
   updateWithIssue(dataSet: DataSet): this {
-    const streamId = dataSet.getString('stream_id') || ''
-    const [channelId, feedId] = streamId.split('@')
-
-    if (channelId) {
-      this.channel = channelId
-      this.feed = feedId
+    if (dataSet.isDeleted('stream_id')) {
+      this.channel = ''
+      this.feed = ''
       this.updateTvgId().updateTitle().updateFilepath()
+    } else if (dataSet.has('stream_id')) {
+      const streamId = dataSet.getString('stream_id') || ''
+      const [channelId, feedId] = streamId.split('@')
+
+      if (channelId) {
+        this.channel = channelId
+        this.feed = feedId
+        this.updateTvgId().updateTitle().updateFilepath()
+      }
     }
 
     const data = {
-      label: dataSet.getString('label'),
-      quality: dataSet.getString('quality'),
-      httpUserAgent: dataSet.getString('http_user_agent'),
-      httpReferrer: dataSet.getString('http_referrer')
+      label: dataSet.isDeleted('label') ? '' : dataSet.getString('label'),
+      quality: dataSet.isDeleted('quality') ? '' : dataSet.getString('quality'),
+      httpUserAgent: dataSet.isDeleted('http_user_agent')
+        ? ''
+        : dataSet.getString('http_user_agent'),
+      httpReferrer: dataSet.isDeleted('http_referrer') ? '' : dataSet.getString('http_referrer')
     }
 
     if (data.label !== undefined) this.label = data.label
@@ -318,8 +326,9 @@ export class Stream extends sdk.Models.Stream {
   }
 
   updateTvgId(): this {
-    if (!this.channel) return this
-    if (this.feed) {
+    if (!this.channel) {
+      this.tvgId = ''
+    } else if (this.feed) {
       this.tvgId = `${this.channel}@${this.feed}`
     } else {
       this.tvgId = this.channel

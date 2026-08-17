@@ -53,7 +53,13 @@ async function main() {
 
     const log = new Collection<LogItem>()
     streams.forEach((stream: Stream) => {
-      if (stream.channel) {
+      if (!stream.channel) {
+        log.add({
+          type: 'warning',
+          line: stream.getLine(),
+          message: `"${stream.url}" is missing a channel ID`
+        })
+      } else {
         const channel = data.channelsKeyById.get(stream.channel)
         if (!channel) {
           log.add({
@@ -61,6 +67,23 @@ async function main() {
             line: stream.getLine(),
             message: `"${stream.tvgId}" is not in the database`
           })
+        }
+
+        if (!stream.feed) {
+          log.add({
+            type: 'warning',
+            line: stream.getLine(),
+            message: `"${stream.url}" is missing a feed ID`
+          })
+        } else {
+          const feed = data.feedsKeyByStreamId.get(stream.getId())
+          if (!feed) {
+            log.add({
+              type: 'warning',
+              line: stream.getLine(),
+              message: `There is no feed with the ID "${stream.feed}" in the database for the "${stream.channel}" channel`
+            })
+          }
         }
       }
 

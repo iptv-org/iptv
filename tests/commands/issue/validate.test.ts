@@ -43,7 +43,7 @@ describe('issue:validate', () => {
   })
 
   it('can handle streams:edit request', () => {
-    const body = issues.find(issue => issue.number === 14120)?.body
+    const body = issues.find(issue => issue.number === 39097)?.body
     const cmd = `${ENV_VAR} npm run issue:validate --- --body="${body}" --labels="approved,streams:edit"`
 
     try {

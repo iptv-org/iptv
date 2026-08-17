@@ -60,8 +60,6 @@ async function main() {
       .split(/\r?\n/)
       .filter(Boolean)
       .forEach((link: string) => {
-        errors = errors.concat(validateStreamUrl(link))
-
         const found: Stream = streams.first((_stream: Stream) => _stream.url === link.trim())
         if (!found) {
           errors.push(`The stream with the URL "${link}" is missing from the playlists`)
@@ -80,9 +78,11 @@ async function main() {
       }
     }
 
-    const streamId = data.getString('stream_id')
-    if (streamId) {
-      errors = errors.concat(validateStreamId(streamId))
+    if (!data.isDeleted('stream_id')) {
+      const streamId = data.getString('stream_id')
+      if (streamId) {
+        errors = errors.concat(validateStreamId(streamId))
+      }
     }
   }
 

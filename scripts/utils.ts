@@ -244,9 +244,9 @@ export async function loadDiscussions() {
     })
 
     const query = `
-      query ($owner: String!, $repo: String!, $cursor: String) {
+      query ($owner: String!, $repo: String!, $cursor: String, $orderBy: DiscussionOrder) {
         repository(owner: $owner, name: $repo) {
-          discussions(first: 100, after: $cursor, states: OPEN) {
+          discussions(first: 100, after: $cursor, states: OPEN, orderBy: $orderBy) {
             nodes {
               number
               body
@@ -265,7 +265,11 @@ export async function loadDiscussions() {
 
     const result = await octokit.graphql.paginate(query, {
       owner: 'iptv-org',
-      repo: 'iptv'
+      repo: 'iptv',
+      orderBy: {
+        field: 'CREATED_AT',
+        direction: 'ASC'
+      }
     })
 
     discussions = result.repository.discussions.nodes

@@ -113,5 +113,25 @@
         "format": "XML"
       }
     ]
+  },
+  {
+    "channel": "ABSTV.ag",
+    "feed": "SD",
+    "site": "example.com",
+    "site_id": "#",
+    "site_name": "ABS TV",
+    "lang": "es",
+    "sources": [
+      {
+        "host": "example2.com",
+        "url": "https://example2.com/guide.xml",
+        "format": "XML"
+      },
+      {
+        "host": "example.com",
+        "url": "https://example.com/guide.xml.gz",
+        "format": "GZIP"
+      }
+    ]
   }
 ]
