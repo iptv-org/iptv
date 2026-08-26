@@ -21,7 +21,7 @@ Regardless of which option you choose, please perform the following checks befor
 
 - Make sure the link is not already in the playlist by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
 - Make sure the link you want to add is stable and works properly. See [Stream Testing](./.github/docs/stream-testing.md).
-- Make sure the link does not lead to a [Xtream Codes](./.github/docs/xtream-codes.md) server. [Why don't you accept links to Xtream Codes servers?](./FAQ.md#why-dont-you-accept-links-to-xtream-codes-servers).
+- Make sure the link does not lead to a [Xtream Codes](./.github/docs/xtreme-codes.md) server. [Why don't you accept links to Xtream Codes servers?](./FAQ.md#why-dont-you-accept-links-to-xtream-codes-servers).
 - Make sure the link is not [tokenized](./.github/docs/tokenized-links.md).
 - Make sure the link leads directly to the broadcast without unnecessary redirects.
 - Make sure the channel is in our database. This can be verified through [iptv-org.github.io](https://iptv-org.github.io/). If your desired channel is not on the list, you first must add it via a [request](https://github.com/iptv-org/database/issues/new?template=01_channels_add.yml).
