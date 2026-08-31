@@ -101,4 +101,12 @@ describe('playlist:validate', () => {
     const stdout = execSync(cmd, { encoding: 'utf8' })
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
   })
+
+  it('accepts a playlist without optional metadata attributes', () => {
+    const cmd = `${ENV_VAR} npm run playlist:validate -- missing_metadata.m3u`
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+    expect(stdout).toContain('missing_metadata.m3u')
+    expect(stdout).toContain('is missing a channel ID')
+  })
 })
