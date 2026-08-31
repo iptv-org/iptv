@@ -51,6 +51,10 @@ export function getStoragePath(filepath: string, rootDir: string): string {
     return relative
   }
 
+  if (path.isAbsolute(filepath) || filepath === '..' || filepath.startsWith(`..${path.sep}`)) {
+    throw new Error(`Filepath "${filepath}" is outside the storage directory`)
+  }
+
   return filepath
 }
 
