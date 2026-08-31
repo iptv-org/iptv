@@ -44,6 +44,16 @@ export function normalizeURL(url: string): string {
   return decodeURIComponent(normalized).replace(/\s/g, '+').toString()
 }
 
+export function getStoragePath(filepath: string, rootDir: string): string {
+  const relative = path.relative(path.resolve(rootDir), path.resolve(filepath))
+
+  if (relative && relative !== '..' && !relative.startsWith(`..${path.sep}`)) {
+    return relative
+  }
+
+  return filepath
+}
+
 export function truncate(string: string, limit: number = 100) {
   if (!string) return string
   if (string.length < limit) return string

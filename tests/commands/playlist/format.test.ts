@@ -30,6 +30,17 @@ describe('playlist:format', () => {
       )
     })
   })
+  it('formats playlists in nested directories', () => {
+    fs.emptyDirSync('tests/__data__/output')
+    fs.copySync('tests/__data__/input/playlist_paths', 'tests/__data__/output/streams')
+
+    const cmd =
+      'cross-env STREAMS_DIR=tests/__data__/output/streams DATA_DIR=tests/__data__/input/data npm run playlist:format'
+    execSync(cmd, { encoding: 'utf8' })
+
+    const output = content('tests/__data__/output/streams/nested/nested.m3u')
+    expect(output.indexOf(',Alpha (720p)')).toBeLessThan(output.indexOf(',Zulu (720p)'))
+  })
 })
 
 function content(filepath: string) {
