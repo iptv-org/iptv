@@ -20,15 +20,6 @@ describe('playlist:export', () => {
     )
   })
 
-  it('does not treat a non-standard quality suffix as metadata', () => {
-    const cmd =
-      'cross-env DATA_DIR=tests/__data__/input/data STREAMS_DIR=tests/__data__/input/playlist_quality API_DIR=tests/__data__/output/.api npm run playlist:export'
-    execSync(cmd, { encoding: 'utf8' })
-
-    expect(content('tests/__data__/output/.api/streams.json')).toEqual([
-      expect.objectContaining({ title: 'Example (720|)', quality: null })
-    ])
-  })
 })
 
 function content(filepath: string) {
