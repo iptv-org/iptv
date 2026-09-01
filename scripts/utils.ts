@@ -46,7 +46,15 @@ export function normalizeURL(url: string): string {
 
 export function getStoragePath(filepath: string, rootDir: string): string {
   const root = path.resolve(rootDir)
-  const target = path.resolve(path.isAbsolute(filepath) ? filepath : path.join(root, filepath))
+  const candidate = path.resolve(filepath)
+  const candidateRelative = path.relative(root, candidate)
+  const target =
+    path.isAbsolute(filepath) ||
+    (candidateRelative !== '..' &&
+      !candidateRelative.startsWith(`..${path.sep}`) &&
+      !path.isAbsolute(candidateRelative))
+      ? candidate
+      : path.resolve(root, filepath)
   const relative = path.relative(root, target)
 
   if (relative === '..' || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) {
