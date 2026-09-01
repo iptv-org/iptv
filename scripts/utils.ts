@@ -45,17 +45,15 @@ export function normalizeURL(url: string): string {
 }
 
 export function getStoragePath(filepath: string, rootDir: string): string {
-  const relative = path.relative(path.resolve(rootDir), path.resolve(filepath))
+  const root = path.resolve(rootDir)
+  const target = path.resolve(path.isAbsolute(filepath) ? filepath : path.join(root, filepath))
+  const relative = path.relative(root, target)
 
-  if (relative && relative !== '..' && !relative.startsWith(`..${path.sep}`)) {
-    return relative
-  }
-
-  if (path.isAbsolute(filepath) || filepath === '..' || filepath.startsWith(`..${path.sep}`)) {
+  if (relative === '..' || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) {
     throw new Error(`Filepath "${filepath}" is outside the storage directory`)
   }
 
-  return filepath
+  return relative
 }
 
 export function truncate(string: string, limit: number = 100) {
