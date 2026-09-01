@@ -56,9 +56,8 @@ http://stream.mcquack.net/175/index.m3u8
 http://89.104.114.24:8080/art/index.m3u8
 #EXTINF:-1 tvg-id="ARTNTV.us@SD" tvg-logo="" group-title="General",ARTN TV (1080p) [Not 24/7]
 https://streamer1.connectto.com/ARTN_mobile/index.m3u8
-#EXTINF:-1 tvg-id="ATR.ua@SD" tvg-logo="https://i.imgur.com/lRJAXC7.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0" group-title="Culture",ATR (720p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:97.0) Gecko/20100101 Firefox/97.0
-https://atr-live.cdn-01.cosmonova.net.ua/hls/atr_ua_hi/index.m3u8
+#EXTINF:-1 tvg-id="ATR.ua@SD" tvg-logo="https://i.imgur.com/lRJAXC7.png" group-title="Culture",ATR (1080p)
+http://stream.mcquack.net/244/index.m3u8
 #EXTINF:-1 tvg-id="Avto24.ru@SD" tvg-logo="https://i.imgur.com/GXSXmN2.png" group-title="Auto",Avto24 (576p)
 http://stream.mcquack.net/78/index.m3u8
 #EXTINF:-1 tvg-id="BabyFirst.us@US" tvg-logo="https://i.imgur.com/WxLHBwu.png" group-title="Kids",BabyFirst (720p)
@@ -285,9 +284,10 @@ http://89.218.30.37/ktklive/live.hq/playlist.m3u8
 http://stream.mcquack.net/179/index.m3u8
 #EXTINF:-1 tvg-id="KulinarTV.ru@SD" tvg-logo="https://smotret.tv/images/kulinar-tv.webp" group-title="Cooking",Kulinar TV (576p)
 https://api.alpaca.t62a.com/hls/9110/stream0.m3u8
-#EXTINF:-1 tvg-id="KvartalTV.ua@SD" tvg-logo="https://i.imgur.com/6ZYWizP.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36" group-title="Entertainment",Kvartal TV
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
-http://158.101.222.193:88/georgia_play.php?id=kvartal95
+#EXTINF:-1 tvg-id="KvartalTV.ua@SD" tvg-logo="https://i.imgur.com/6ZYWizP.png" http-referrer="http://live.tvstitch.com/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36" group-title="Entertainment",Kvartal TV (720p)
+#EXTVLCOPT:http-referrer=http://live.tvstitch.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/152.0.0.0 Safari/537.36
+http://777905.live.tvstitch.com/playlist.m3u8?source=aHR0cDovLzE3Ni4xMjIuMTAzLjUxOjcwMDAvY2g2NS90cmFja3MtdjJhMS9tb25vLm0zdTg%2FbGl2ZT0xJmlwPTE3OC4xMzYuNDIuMjIwJmlkPTk0ODg2NSZzZWNyZXQ9bjF1N3VpMDYmc3NsPTEmMjF5bz0wJmU9MTc5MDcxMDcwMCZzdD1MXzZYc2M4elNra3RCaWYyVzU1dWF3&master=180
 #EXTINF:-1 tvg-id="KvartalTVInternational.ua@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d5/Kvartal_TV_International_%28HD_Logo%29.png" group-title="Entertainment",Kvartal TV International
 https://dash2.antik.sk/live/kvartal_tv/playlist.m3u8
 #EXTINF:-1 tvg-id="KVNTV.ru@SD" tvg-logo="https://i.imgur.com/Vw3LFLX.png" group-title="Comedy",KVN TV (576p)
@@ -1200,12 +1200,8 @@ https://hls.tv.3angels.ru/stream.m3u8
 http://31.148.48.15/Detskiy/index.m3u8
 #EXTINF:-1 tvg-id="Ural24.ru@SD" tvg-logo="https://i.imgur.com/eoI4KuB.png" group-title="General",Урал 24 (Челябинск) (1080p)
 https://vgtrkregion-reg.cdnvideo.ru/vgtrk/chelyabinsk/ural24-hd/index.m3u8
-#EXTINF:-1 tvg-id="UTRK.kg@SD" tvg-logo="https://i.ibb.co/VJ7cPRH/Xp5clCA.png" group-title="General",УТРК (480p) [Not 24/7]
-https://st2.mediabay.tv/KG_KTRK-UTRK/index.m3u8
 #EXTINF:-1 tvg-id="AlaToo24.kg@SD" tvg-logo="https://i.imgur.com/vBPmUQA.png" group-title="News",УТРК Ала-Тоо 24 (480p) [Not 24/7]
 https://st2.mediabay.tv/KG_KTRK-Ala-too/playlist.m3u8
-#EXTINF:-1 tvg-id="Balastan.kg@SD" tvg-logo="https://i.imgur.com/D5ylCiX.png" group-title="Kids",УТРК Баластан (480p) [Not 24/7]
-https://st2.mediabay.tv/KG_KTRK-Balastan/index.m3u8
 #EXTINF:-1 tvg-id="Music.kg@SD" tvg-logo="https://www.utrk.kg/img/stream/45.png" group-title="Music",УТРК Музыка (480p) [Not 24/7]
 https://st2.mediabay.tv/KG_KTRK-Muzika/index.m3u8
 #EXTINF:-1 tvg-id="Sport.kg@SD" tvg-logo="https://i.imgur.com/ORCu0w0.png" group-title="Sports",УТРК Спорт (480p) [Not 24/7]
