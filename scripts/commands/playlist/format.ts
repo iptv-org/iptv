@@ -114,11 +114,12 @@ async function main() {
   streams = streams.sortBy(
     [
       (stream: Stream) => stream.title,
+      (stream: Stream) => (stream.isGeoBlocked ? -1 : 0),
+      (stream: Stream) => (stream.isNot247 ? -1 : 0),
       (stream: Stream) => stream.getVerticalResolution(),
-      (stream: Stream) => stream.label,
       (stream: Stream) => stream.url
     ],
-    ['asc', 'desc', 'asc', 'asc']
+    ['asc', 'desc', 'desc', 'desc', 'asc']
   )
 
   logger.info('saving...')

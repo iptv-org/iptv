@@ -261,8 +261,11 @@ async function addStream(issue: Issue) {
     user_agent: httpUserAgent,
     referrer: httpReferrer,
     quality,
-    label: data.getString('label') || ''
+    label: null
   })
+
+  stream.isNot247 = data.has('live_247') ? !data.getBoolean('live_247') : false
+  stream.isGeoBlocked = data.has('geo_blocked') ? data.getBoolean('geo_blocked') : false
 
   stream.updateTitle().updateFilepath()
 
