@@ -11,7 +11,9 @@ export class DataSet {
   }
 
   missing(key: string): boolean {
-    return this._data.missing(key) || this._data.get(key) === undefined
+    const keys = Array.isArray(key) ? key : [key]
+
+    return keys.every(_key => this._data.get(_key) === undefined)
   }
 
   isDeleted(key: string): boolean {
@@ -20,8 +22,12 @@ export class DataSet {
     return this._data.get(key) === deleteSymbol
   }
 
-  getBoolean(key: string): boolean {
-    return Boolean(this._data.get(key))
+  getBoolean(key: string): boolean | undefined {
+    const value = this._data.get(key)
+
+    if (value === undefined || value === '') return undefined
+
+    return value === 'TRUE'
   }
 
   getString(key: string): string | undefined {

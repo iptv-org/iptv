@@ -234,7 +234,8 @@ export function parseIssueBody(body: string): DataSet {
     'Channel ID': 'channel_id',
     'Feed ID': 'feed_id',
     'Stream URL': 'stream_url',
-    Label: 'label',
+    'Live 24/7': 'live_247',
+    'Geo-blocked': 'geo_blocked',
     Quality: 'quality',
     'HTTP User-Agent': 'http_user_agent',
     'HTTP User Agent': 'http_user_agent',
@@ -257,7 +258,16 @@ export function parseIssueBody(body: string): DataSet {
     if (!_label || !_value) return data
 
     const id = FIELDS.get(_label)
-    const value: string = _value === '_No response_' || _value === 'None' ? '' : _value
+    let value: string = ''
+    if (_value === '_No response_' || _value === 'None') {
+      value = ''
+    } else if (_value === 'Yes') {
+      value = 'TRUE'
+    } else if (_value === 'No') {
+      value = 'FALSE'
+    } else {
+      value = _value
+    }
 
     if (!id) return
 

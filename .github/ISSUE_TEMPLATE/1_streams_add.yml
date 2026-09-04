@@ -23,6 +23,28 @@ body:
       required: true
 
   - type: dropdown
+    id: live_247
+    attributes:
+      label: Live 24/7 (required)
+      description: Is this stream active 24 hours a day?
+      options:
+        - 'Yes'
+        - 'No'
+    validations:
+      required: true
+
+  - type: dropdown
+    id: geo_blocked
+    attributes:
+      label: Geo-blocked (required)
+      description: Is this stream blocked in any country?
+      options:
+        - 'No'
+        - 'Yes'
+    validations:
+      required: true
+
+  - type: dropdown
     id: quality
     attributes:
       label: Quality
@@ -39,15 +61,6 @@ body:
         - 480p
         - 480i
         - 360p
-
-  - type: dropdown
-    id: label
-    attributes:
-      label: Label
-      description: Is there any reason why the broadcast may not work?
-      options:
-        - 'Not 24/7'
-        - 'Geo-blocked'
 
   - type: input
     id: http_user_agent

@@ -14,6 +14,8 @@ export class Stream extends sdk.Models.Stream {
   tvgId?: string
   statusCode?: string
   guides = new Collection<sdk.Models.Guide>()
+  isNot247?: boolean
+  isGeoBlocked?: boolean
 
   setGuides(guides?: sdk.Models.Guide[]) {
     this.guides = new Collection(guides)
@@ -48,40 +50,44 @@ export class Stream extends sdk.Models.Stream {
       }
     }
 
-    const data = {
-      label: dataSet.isDeleted('label') ? '' : dataSet.getString('label'),
-      quality: dataSet.isDeleted('quality') ? '' : dataSet.getString('quality'),
-      httpUserAgent: dataSet.isDeleted('http_user_agent')
-        ? ''
-        : dataSet.getString('http_user_agent'),
-      httpReferrer: dataSet.isDeleted('http_referrer') ? '' : dataSet.getString('http_referrer')
-    }
+    const live247 = dataSet.getBoolean('live_247')
+    const geoBlocked = dataSet.getBoolean('geo_blocked')
 
-    if (data.label !== undefined) this.label = data.label
-    if (data.quality !== undefined) this.quality = data.quality
-    if (data.httpUserAgent !== undefined) this.user_agent = data.httpUserAgent
-    if (data.httpReferrer !== undefined) this.referrer = data.httpReferrer
+    if (live247 !== undefined) this.isNot247 = !live247
+    if (geoBlocked !== undefined) this.isGeoBlocked = geoBlocked
+
+    const quality = dataSet.isDeleted('quality') ? '' : dataSet.getString('quality')
+    const httpUserAgent = dataSet.isDeleted('http_user_agent')
+      ? ''
+      : dataSet.getString('http_user_agent')
+    const httpReferrer = dataSet.isDeleted('http_referrer')
+      ? ''
+      : dataSet.getString('http_referrer')
+
+    if (quality !== undefined) this.quality = quality
+    if (httpUserAgent !== undefined) this.user_agent = httpUserAgent
+    if (httpReferrer !== undefined) this.referrer = httpReferrer
 
     return this
   }
 
   static fromPlaylistItem(data: parser.PlaylistItem): Stream {
-    function escapeRegExp(text) {
+    function escapeRegExp(text: string) {
       return text.replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&')
     }
 
     function parseName(name: string): {
       title: string
-      label: string
+      labels: string[]
       quality: string
     } {
       let title = name
-      const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
-      title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
+      const [, labels] = title.match(/ \[(.*)\]$/) || [null, '']
+      title = title.replace(new RegExp(` \\[${escapeRegExp(labels)}\\]$`), '')
       const [, quality] = title.match(/ \(([0-9]+[pi])\)$/) || [null, '']
       title = title.replace(new RegExp(` \\(${quality}\\)$`), '')
 
-      return { title, label, quality }
+      return { title, labels: labels.split(';'), quality }
     }
 
     if (!data.name) throw new Error('"name" property is required')
@@ -89,7 +95,7 @@ export class Stream extends sdk.Models.Stream {
 
     const tvgId = data.tvg?.id || ''
     const [channelId, feedId] = tvgId.split('@')
-    const { title, label, quality } = parseName(data.name)
+    const { title, labels, quality } = parseName(data.name)
 
     const stream = new Stream({
       channel: channelId || null,
@@ -99,11 +105,13 @@ export class Stream extends sdk.Models.Stream {
       url: data.url,
       referrer: data.http?.referrer || null,
       user_agent: data.http?.['user-agent'] || null,
-      label: label || null
+      label: null
     })
 
     stream.tvgId = tvgId
     stream.line = data.line
+    stream.isNot247 = labels.includes('Not 24/7')
+    stream.isGeoBlocked = labels.includes('Geo-blocked')
 
     return stream
   }
@@ -417,11 +425,26 @@ export class Stream extends sdk.Models.Stream {
       title += ` (${this.quality})`
     }
 
-    if (this.label) {
-      title += ` [${this.label}]`
+    const labels = this.getLabels()
+
+    if (labels.length) {
+      title += ` [${labels.join(';')}]`
     }
 
     return title
+  }
+
+  getLabels(): string[] {
+    const labels: string[] = []
+    if (this.isNot247 === true) {
+      labels.push('Not 24/7')
+    }
+
+    if (this.isGeoBlocked === true) {
+      labels.push('Geo-blocked')
+    }
+
+    return labels
   }
 
   toString(options: { public?: boolean } = {}) {
@@ -471,7 +494,7 @@ export class Stream extends sdk.Models.Stream {
       title: this.title,
       url: this.url,
       quality: this.quality,
-      label: this.label,
+      labels: this.getLabels(),
       user_agent: this.user_agent,
       referrer: this.referrer
     }
