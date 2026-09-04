@@ -39,9 +39,18 @@ export function isURI(string: string): boolean {
 }
 
 export function normalizeURL(url: string): string {
-  const normalized = normalizeUrl(url, { stripWWW: false })
+  let normalized: string
+  try {
+    normalized = normalizeUrl(url, { stripWWW: false })
+  } catch {
+    return url.replace(/\s/g, '+')
+  }
 
-  return decodeURIComponent(normalized).replace(/\s/g, '+').toString()
+  try {
+    return decodeURIComponent(normalized).replace(/\s/g, '+')
+  } catch {
+    return normalized.replace(/\s/g, '+')
+  }
 }
 
 export function truncate(string: string, limit: number = 100) {

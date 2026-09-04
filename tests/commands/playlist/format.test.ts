@@ -30,6 +30,19 @@ describe('playlist:format', () => {
       )
     })
   })
+
+  it('keeps links with malformed percent escapes', () => {
+    fs.emptyDirSync('tests/__data__/output')
+    fs.copySync('tests/__data__/input/playlist_normalize', 'tests/__data__/output/streams')
+
+    const cmd =
+      'cross-env STREAMS_DIR=tests/__data__/output/streams DATA_DIR=tests/__data__/input/data npm run playlist:format'
+    execSync(cmd, { encoding: 'utf8' })
+
+    expect(content('tests/__data__/output/streams/bad_encoding.m3u')).toContain(
+      'http://example.com/a%ZZ'
+    )
+  })
 })
 
 function content(filepath: string) {
