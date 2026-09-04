@@ -93,7 +93,8 @@ export class Stream extends sdk.Models.Stream {
     if (!data.name) throw new Error('"name" property is required')
     if (!data.url) throw new Error('"url" property is required')
 
-    const [channelId, feedId] = data.tvg.id.split('@')
+    const tvgId = data.tvg?.id || ''
+    const [channelId, feedId] = tvgId.split('@')
     const { title, labels, quality } = parseName(data.name)
 
     const stream = new Stream({
@@ -102,12 +103,12 @@ export class Stream extends sdk.Models.Stream {
       title: title,
       quality: quality || null,
       url: data.url,
-      referrer: data.http.referrer || null,
-      user_agent: data.http['user-agent'] || null,
+      referrer: data.http?.referrer || null,
+      user_agent: data.http?.['user-agent'] || null,
       label: null
     })
 
-    stream.tvgId = data.tvg.id
+    stream.tvgId = tvgId
     stream.line = data.line
     stream.isNot247 = labels.includes('Not 24/7')
     stream.isGeoBlocked = labels.includes('Geo-blocked')
