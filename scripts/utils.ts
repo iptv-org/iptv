@@ -53,24 +53,29 @@ export function normalizeURL(url: string): string {
   }
 }
 
+function isInsideDirectory(rootDir: string, target: string): boolean {
+  const relative = path.relative(rootDir, target)
+
+  return (
+    relative !== '' &&
+    relative !== '..' &&
+    !relative.startsWith(`..${path.sep}`) &&
+    !path.isAbsolute(relative)
+  )
+}
+
 export function getStoragePath(filepath: string, rootDir: string): string {
   const root = path.resolve(rootDir)
-  const candidate = path.resolve(filepath)
-  const candidateRelative = path.relative(root, candidate)
-  const target =
-    path.isAbsolute(filepath) ||
-    (candidateRelative !== '..' &&
-      !candidateRelative.startsWith(`..${path.sep}`) &&
-      !path.isAbsolute(candidateRelative))
-      ? candidate
-      : path.resolve(root, filepath)
-  const relative = path.relative(root, target)
+  const fromWorkspace = path.resolve(filepath)
+  const target = isInsideDirectory(root, fromWorkspace)
+    ? fromWorkspace
+    : path.resolve(root, filepath)
 
-  if (relative === '..' || relative.startsWith(`..${path.sep}`) || path.isAbsolute(relative)) {
+  if (!isInsideDirectory(root, target)) {
     throw new Error(`Filepath "${filepath}" is outside the storage directory`)
   }
 
-  return relative
+  return path.relative(root, target).split(path.sep).join('/')
 }
 
 export function truncate(string: string, limit: number = 100) {
