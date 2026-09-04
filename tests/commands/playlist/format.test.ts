@@ -30,6 +30,7 @@ describe('playlist:format', () => {
       )
     })
   })
+
   it('formats playlists in nested directories', () => {
     const cmd = `${ENV_VAR} npm run playlist:format`
     execSync(cmd, { encoding: 'utf8' })
@@ -38,6 +39,19 @@ describe('playlist:format', () => {
     expect(output).toContain(',Alpha (720p)')
     expect(output).toContain(',Zulu (720p)')
     expect(output.indexOf(',Alpha (720p)')).toBeLessThan(output.indexOf(',Zulu (720p)'))
+  })
+
+  it('keeps links with malformed percent escapes', () => {
+    fs.emptyDirSync('tests/__data__/output')
+    fs.copySync('tests/__data__/input/playlist_normalize', 'tests/__data__/output/streams')
+
+    const cmd =
+      'cross-env STREAMS_DIR=tests/__data__/output/streams DATA_DIR=tests/__data__/input/data npm run playlist:format'
+    execSync(cmd, { encoding: 'utf8' })
+
+    expect(content('tests/__data__/output/streams/bad_encoding.m3u')).toContain(
+      'http://example.com/a%ZZ'
+    )
   })
 })
 
