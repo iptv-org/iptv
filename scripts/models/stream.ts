@@ -78,7 +78,7 @@ export class Stream extends sdk.Models.Stream {
       let title = name
       const [, label] = title.match(/ \[(.*)\]$/) || [null, '']
       title = title.replace(new RegExp(` \\[${escapeRegExp(label)}\\]$`), '')
-      const [, quality] = title.match(/ \(([0-9]+[p|i])\)$/) || [null, '']
+      const [, quality] = title.match(/ \(([0-9]+[pi])\)$/) || [null, '']
       title = title.replace(new RegExp(` \\(${quality}\\)$`), '')
 
       return { title, label, quality }
