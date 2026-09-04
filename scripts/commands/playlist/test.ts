@@ -58,6 +58,7 @@ const rootStorage = new Storage(ROOT_DIR)
 async function main() {
   if (await isOffline()) {
     logger.error(chalk.red('Internet connection is required for the script to work'))
+    process.exitCode = 1
     return
   }
 
@@ -195,13 +196,10 @@ async function onFinish(error: Error | null | undefined) {
   process.exit(0)
 }
 
-async function isOffline() {
-  return new Promise((resolve, reject) => {
-    dns.lookup('info.cern.ch', err => {
-      if (err) resolve(true)
-      reject(false)
-    })
-  }).catch(() => {})
+async function isOffline(): Promise<boolean> {
+  return new Promise(resolve => {
+    dns.lookup('info.cern.ch', err => resolve(Boolean(err)))
+  })
 }
 
 function getColor(stream: Stream): string {
