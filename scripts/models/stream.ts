@@ -53,8 +53,8 @@ export class Stream extends sdk.Models.Stream {
     const live247 = dataSet.getBoolean('live_247')
     const geoBlocked = dataSet.getBoolean('geo_blocked')
 
-    if (live247) this.isNot247 = live247
-    if (geoBlocked) this.isGeoBlocked = geoBlocked
+    if (live247 !== undefined) this.isNot247 = !live247
+    if (geoBlocked !== undefined) this.isGeoBlocked = geoBlocked
 
     const quality = dataSet.isDeleted('quality') ? '' : dataSet.getString('quality')
     const httpUserAgent = dataSet.isDeleted('http_user_agent')
@@ -435,7 +435,7 @@ export class Stream extends sdk.Models.Stream {
   }
 
   getLabels(): string[] {
-    let labels: string[] = []
+    const labels: string[] = []
     if (this.isNot247 === true) {
       labels.push('Not 24/7')
     }

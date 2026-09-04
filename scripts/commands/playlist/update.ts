@@ -264,8 +264,11 @@ async function addStream(issue: Issue) {
     label: null
   })
 
-  stream.isNot247 = data.has('live_247') ? !data.getBoolean('live_247') : false
-  stream.isGeoBlocked = data.has('geo_blocked') ? data.getBoolean('geo_blocked') : false
+  const live247 = data.getBoolean('live_247')
+  const geoBlocked = data.getBoolean('geo_blocked')
+
+  stream.isNot247 = live247 === undefined ? false : !live247
+  stream.isGeoBlocked = geoBlocked === true
 
   stream.updateTitle().updateFilepath()
 

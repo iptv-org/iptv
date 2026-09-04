@@ -52,7 +52,7 @@ async function main() {
       (stream: Stream) => (stream.isNot247 ? -1 : 0),
       (stream: Stream) => stream.getVerticalResolution()
     ],
-    ['asc', 'desc', 'desc', 'desc', 'asc']
+    ['asc', 'desc', 'desc', 'desc']
   )
 
   logger.info('filtering streams...')

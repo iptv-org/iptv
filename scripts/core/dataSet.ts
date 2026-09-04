@@ -23,9 +23,11 @@ export class DataSet {
   }
 
   getBoolean(key: string): boolean | undefined {
-    if (this.missing(key)) return undefined
+    const value = this._data.get(key)
 
-    return this._data.get(key) === 'TRUE' ? true : false
+    if (value === undefined || value === '') return undefined
+
+    return value === 'TRUE'
   }
 
   getString(key: string): string | undefined {
