@@ -15,17 +15,18 @@
 You have several options:
 
 1. Create a new request using this [form](https://github.com/iptv-org/iptv/issues/new?assignees=&labels=streams:add&projects=&template=1_streams_add.yml&title=Add%3A+) and, if approved, the link will automatically be added to the playlist on the next update.
-2. Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls). See [Playlist Structure](./docs/playlist-structure.md).
+2. Add the link to the playlist directly using a [pull request](https://github.com/iptv-org/iptv/pulls). See [Playlists](./docs/playlists.md).
 
 Regardless of which option you choose, please perform the following checks before posting your request:
 
+- Make sure you are using a valid [stream ID](./docs/stream-id.md).
+- Make sure the channel is not on our blocklist. The easiest way to do this is through [iptv-org.github.io](https://iptv-org.github.io/).
 - Make sure the link is not already in the playlist by [searching](https://github.com/search?q=repo%3Aiptv-org%2Fiptv+http%3A%2F%2Fexample.com&type=code) the repository.
 - Make sure the link you want to add is stable and works properly. See [Stream Testing](./docs/stream-testing.md).
+- Make sure the link is not [geo-blocked](./docs/geo-blocking.md). If it is, do not forget to mention this in your request.
 - Make sure the link does not lead to a [Xtream Codes](./docs/xtream-codes.md) server. [Why don't you accept links to Xtream Codes servers?](./FAQ.md#why-dont-you-accept-links-to-xtream-codes-servers).
 - Make sure the link is not [tokenized](./docs/tokenized-links.md).
 - Make sure the link leads directly to the broadcast without unnecessary redirects.
-- Make sure the channel is in our database. This can be verified through [iptv-org.github.io](https://iptv-org.github.io/). If your desired channel is not on the list, you first must add it via a [request](https://github.com/iptv-org/database/issues/new?template=01_channels_add.yml).
-- Make sure the channel isn't on our blocklist. This can also be verified through [iptv-org.github.io](https://iptv-org.github.io/).
 
 If the broadcast only works in certain countries or is periodically interrupted, please indicate this in your request.
 
