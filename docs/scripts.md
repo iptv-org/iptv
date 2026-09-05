@@ -10,6 +10,7 @@ For the scripts to work, you must have [Node.js](https://nodejs.org/en) installe
 - [act:validate_issue](#actvalidate_issue)
 - [act:validate_label](#actvalidate_label)
 - [api:load](#apiload)
+- [issue:validate](#issuevalidate)
 - [playlist:format](#playlistformat)
 - [playlist:update](#playlistupdate)
 - [playlist:generate](#playlistgenerate)
@@ -69,6 +70,14 @@ Downloads the latest channel and stream data from the [iptv-org/api](https://git
 
 ```sh
 npm run api:load
+```
+
+## issue:validate
+
+Checks the request for errors and, if any are found, saves a list of them to the file `temp/logs/errors.txt`
+
+```sh
+npm run issue:validate --body="### Stream URL..." --labels="streams:add"
 ```
 
 ## playlist:format
