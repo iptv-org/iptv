@@ -1,0 +1,17 @@
+version: 2
+updates:
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    groups:
+      actions-minor-patch:
+        update-types: ["minor", "patch"]
+    commit-message:
+      prefix: "ci"
+    ignore:
+      # Held deliberately, matching iptv-org-database. The action is archived
+      # upstream, so moving off it should be a considered migration to
+      # actions/create-github-app-token, not an automated version bump.
+      - dependency-name: "tibdex/github-app-token"
