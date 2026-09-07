@@ -5,7 +5,6 @@ To make sure a stream link is working properly, just follow these simple steps:
 1. Open it in a media player that supports [HLS](https://en.wikipedia.org/wiki/HTTP_Live_Streaming) or [DASH](https://en.wikipedia.org/wiki/Dynamic_Adaptive_Streaming_over_HTTP) streams. In the examples below, we will use [VLC media player](https://www.videolan.org/vlc/index.html).
 2. Watch the broadcast for at least a minute. Make sure playback is stable and doesn't stop abruptly (some test streams cut off after 15–30 seconds).
 3. Try restarting the stream. Make sure it isn't looping on a repeating segment and remains available.
-4. Make sure the stream works for others too. You can verify this by using services like [check-host.net](https://check-host.net/) or a [VPN](https://en.wikipedia.org/wiki/Virtual_private_network).
 
 If the stream isn't playing, try opening the player's error log. You can usually find the exact cause there. In VLC, it is located under `Tools -> Messages`.
 
