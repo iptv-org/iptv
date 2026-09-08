@@ -56,7 +56,9 @@ async function main() {
   )
 
   logger.info('filtering streams...')
-  streams = streams.uniqBy((stream: Stream) => stream.getId() || uniqueId())
+  streams = streams
+    .filter((stream: Stream) => !!stream.getId())
+    .uniqBy((stream: Stream) => stream.getId() || uniqueId())
 
   const { categories, countries, subdivisions, cities, regions } = data
 
