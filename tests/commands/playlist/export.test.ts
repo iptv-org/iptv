@@ -1,3 +1,4 @@
+import { describe, beforeEach, it, expect } from 'vitest'
 import { pathToFileURL } from 'node:url'
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
@@ -19,7 +20,6 @@ describe('playlist:export', () => {
       content('tests/__data__/expected/playlist_export/.api/streams.json')
     )
   })
-
 })
 
 function content(filepath: string) {

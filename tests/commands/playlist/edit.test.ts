@@ -1,3 +1,4 @@
+import { describe, beforeEach, it, expect } from 'vitest'
 import { execSync } from 'child_process'
 import fs from 'fs-extra'
 

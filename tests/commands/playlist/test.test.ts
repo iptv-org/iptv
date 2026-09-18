@@ -1,3 +1,4 @@
+import { describe, beforeEach, it, expect } from 'vitest'
 import child_process, { execSync } from 'node:child_process'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -60,8 +61,7 @@ describe('playlist:test', () => {
 
   it('fails when the network is unavailable', () => {
     const preload = path.resolve('tests/__data__/input/offline_dns.cjs').replaceAll('\\', '/')
-    const cmd =
-      `cross-env NODE_OPTIONS="--require=${preload}" npm run playlist:test -- streams/af.m3u`
+    const cmd = `cross-env NODE_OPTIONS="--require=${preload}" npm run playlist:test -- streams/af.m3u`
 
     try {
       execSync(cmd, { encoding: 'utf8' })

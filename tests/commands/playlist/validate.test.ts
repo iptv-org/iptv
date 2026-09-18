@@ -1,3 +1,4 @@
+import { describe, it, expect } from 'vitest'
 import { execSync } from 'child_process'
 
 type ExecError = {
@@ -38,6 +39,7 @@ describe('playlist:validate', () => {
       )
     } catch (error) {
       if (process.env.DEBUG === 'true') console.log(cmd, error)
+      process.exit(0)
     }
   })
 
@@ -46,11 +48,14 @@ describe('playlist:validate', () => {
     try {
       const stdout = execSync(cmd, { encoding: 'utf8' })
       if (process.env.DEBUG === 'true') console.log(cmd, stdout)
-      expect(stdout).toContain(
-        'wrong_channel_id.m3u\n 2     warning  "qib22lAq1L.us" is not in the database\n\n1 problems (0 errors, 1 warnings)\n'
-      )
+      expect(stdout).toContain(`wrong_channel_id.m3u
+ 2     warning  "qib22lAq1L.us@SD" is not in the database
+ 2     warning  There is no feed with the ID "SD" in the database for the "qib22lAq1L.us" channel
+
+2 problems (0 errors, 2 warnings)`)
     } catch (error) {
       if (process.env.DEBUG === 'true') console.log(cmd, error)
+      process.exit(0)
     }
   })
 
@@ -64,6 +69,7 @@ describe('playlist:validate', () => {
       )
     } catch (error) {
       if (process.env.DEBUG === 'true') console.log(cmd, error)
+      process.exit(0)
     }
   })
 
@@ -77,6 +83,7 @@ describe('playlist:validate', () => {
       )
     } catch (error) {
       if (process.env.DEBUG === 'true') console.log(cmd, error)
+      process.exit(0)
     }
   })
 
@@ -108,5 +115,19 @@ describe('playlist:validate', () => {
     if (process.env.DEBUG === 'true') console.log(cmd, stdout)
     expect(stdout).toContain('missing_metadata.m3u')
     expect(stdout).toContain('is missing a channel ID')
+  })
+
+  it('shows only errors if log level is error', () => {
+    const cmd = `${ENV_VAR} npm run playlist:validate -- --log-level=error log_level.m3u`
+    try {
+      const stdout = execSync(cmd, { encoding: 'utf8' })
+      if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+      process.exit(0)
+    } catch (error) {
+      if (process.env.DEBUG === 'true') console.log(cmd, error)
+      expect((error as ExecError).stdout).toContain(
+        'log_level.m3u\n 2     error    \"new: https://streamer2.nexgen.bz/07-CHANNEL7/index.m3u8\" is not a valid URL\n\n1 problems (1 errors, 0 warnings)\n'
+      )
+    }
   })
 })
