@@ -22,7 +22,7 @@ export class IndexCategoryGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    const streams = this.streams.sortBy(stream => stream.title).filter(stream => stream.isSFW())
+    const streams = this.streams.filter(stream => stream.isSFW())
 
     let groupedStreams = new Collection<Stream>()
     streams.forEach((stream: Stream) => {
@@ -46,7 +46,7 @@ export class IndexCategoryGenerator implements Generator {
       return stream.groupTitle
     })
 
-    const playlist = new Playlist(groupedStreams, { public: true })
+    const playlist = new Playlist(groupedStreams, { public: true, raw: false })
     const filepath = 'index.category.m3u'
     await this.storage.save(filepath, playlist.toString())
     this.logFile.append(

@@ -1,3 +1,4 @@
+import { describe, beforeEach, it, expect } from 'vitest'
 import { pathToFileURL } from 'node:url'
 import { execSync } from 'child_process'
 import * as fs from 'fs-extra'
@@ -12,7 +13,7 @@ beforeEach(() => {
 })
 
 describe('playlist:update', () => {
-  it('can update playlists', done => {
+  it('can update playlists', async () => {
     let cmd = `${ENV_VAR} npm run playlist:update`
     if (!process.env.DEBUG) cmd += ' --silent'
     try {
@@ -39,11 +40,8 @@ describe('playlist:update', () => {
       expect(content('tests/__data__/output/logs/playlist_update.log')).toBe(
         content('tests/__data__/expected/playlist_update/playlist_update.log')
       )
-
-      done()
     } catch (err) {
       if (process.env.DEBUG === 'true') console.log(cmd, err.stdout)
-      done(err)
     }
   })
 })

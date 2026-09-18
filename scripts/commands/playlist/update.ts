@@ -68,7 +68,7 @@ async function saveStreams() {
     let filteredStreams = new Collection<Stream>(groupedStreams.get(filepath))
     filteredStreams = filteredStreams.filter((stream: Stream) => stream.removed === false)
 
-    const playlist = new Playlist(filteredStreams, { public: false })
+    const playlist = new Playlist(filteredStreams, { public: false, raw: true })
     await streamsStorage.save(filepath, playlist.toString())
   }
 }

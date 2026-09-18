@@ -44,20 +44,35 @@ async function main() {
   logger.info('generating raw/...')
   await new RawGenerator({ streams, logFile }).generate()
 
+  logger.info('create unique names...')
+  const channelCountries = new Map<string, Set<string>>()
+  streams.forEach((stream: Stream) => {
+    if (!channelCountries.has(stream.channelName)) {
+      channelCountries.set(stream.channelName, new Set())
+    }
+    channelCountries.get(stream.channelName)!.add(stream.countryName)
+  })
+  for (const stream of streams.all()) {
+    const countries = channelCountries.get(stream.channelName)
+    stream.hasUniqueName = countries ? countries.size === 1 : false
+  }
+
   logger.info('sorting streams...')
   streams = streams.sortBy(
     [
-      (stream: Stream) => stream.getId(),
+      (stream: Stream) => stream.channelUniqueName,
+      (stream: Stream) => (stream.hasMainFeed ? 1 : 0),
+      (stream: Stream) => stream.feedName,
       (stream: Stream) => (stream.isGeoBlocked ? -1 : 0),
       (stream: Stream) => (stream.isNot247 ? -1 : 0),
       (stream: Stream) => stream.getVerticalResolution()
     ],
-    ['asc', 'desc', 'desc', 'desc']
+    ['asc', 'desc', 'asc', 'desc', 'desc', 'desc']
   )
 
   logger.info('filtering streams...')
   streams = streams
-    .filter((stream: Stream) => !!stream.getId())
+    .filter((stream: Stream) => stream.hasChannel() && stream.hasFeed())
     .uniqBy((stream: Stream) => stream.getId() || uniqueId())
 
   const { categories, countries, subdivisions, cities, regions } = data

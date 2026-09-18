@@ -25,9 +25,7 @@ export class CitiesGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    const streams = this.streams
-      .sortBy((stream: Stream) => stream.title)
-      .filter((stream: Stream) => stream.isSFW())
+    const streams = this.streams.filter((stream: Stream) => stream.isSFW())
 
     const streamsGroupedByCityCode = {}
     streams.forEach((stream: Stream) => {
@@ -43,7 +41,7 @@ export class CitiesGenerator implements Generator {
     for (const cityCode in streamsGroupedByCityCode) {
       const cityStreams = streamsGroupedByCityCode[cityCode]
 
-      const playlist = new Playlist(cityStreams, { public: true })
+      const playlist = new Playlist(cityStreams, { public: true, raw: false })
       const filepath = `cities/${cityCode.toLowerCase()}.m3u`
       await this.storage.save(filepath, playlist.toString())
       this.logFile.append(

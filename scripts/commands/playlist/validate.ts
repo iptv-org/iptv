@@ -1,4 +1,5 @@
 import { Logger, Collection, Dictionary } from '@freearhey/core'
+import { OptionValues, program } from 'commander'
 import { Storage } from '@freearhey/storage-js'
 import { PlaylistParser } from '../../core'
 import { data, loadData } from '../../api'
@@ -6,10 +7,14 @@ import { ROOT_DIR } from '../../constants'
 import { isURI } from '../../utils.js'
 import { Stream } from '../../models'
 import * as sdk from '@iptv-org/sdk'
-import { program } from 'commander'
 import chalk from 'chalk'
 
-program.argument('[filepath...]', 'Path to file to validate').parse(process.argv)
+program
+  .argument('[filepath...]', 'Path to file to validate')
+  .option('--log-level <level>', 'Specify the minimum log level (error or warning)')
+  .parse(process.argv)
+
+const options: OptionValues = program.opts()
 
 type LogItem = {
   type: string
@@ -51,7 +56,7 @@ async function main() {
     const streams = streamsGroupedByFilepath.get(filepath)
     if (!streams) continue
 
-    const log = new Collection<LogItem>()
+    let log = new Collection<LogItem>()
     streams.forEach((stream: Stream) => {
       if (!stream.channel) {
         log.add({
@@ -129,6 +134,12 @@ async function main() {
         })
       }
     })
+
+    if (options.logLevel === 'error') {
+      log = log.filter(i => ['error'].includes(i.type))
+    } else if (options.logLevel === 'warning') {
+      log = log.filter(i => ['warning', 'error'].includes(i.type))
+    }
 
     if (log.isNotEmpty()) {
       console.log(`\n${chalk.underline(filepath)}`)

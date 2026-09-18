@@ -1,3 +1,4 @@
+import { describe, beforeEach, it, expect } from 'vitest'
 import issues from '../../__data__/input/issues'
 import { pathToFileURL } from 'node:url'
 import { execFileSync } from 'child_process'
@@ -54,6 +55,20 @@ describe('issue:validate', () => {
     } catch {
       expect(content('tests/__data__/output/logs/errors.txt')).toBe(
         content('tests/__data__/expected/issue_validate/logs/streams_edit.txt')
+      )
+    }
+  })
+
+  it('can handle streams:edit request without changes', () => {
+    const body = issues.find(issue => issue.number === 39098)?.body
+
+    try {
+      const stdout = runIssueValidate(body, 'approved,streams:edit')
+      if (process.env.DEBUG === 'true') console.log(stdout)
+      throw new Error('Failed')
+    } catch {
+      expect(content('tests/__data__/output/logs/errors.txt')).toBe(
+        content('tests/__data__/expected/issue_validate/logs/streams_edit_no_changes.txt')
       )
     }
   })

@@ -10,7 +10,7 @@ export class DataSet {
     return this._data.has(key)
   }
 
-  missing(key: string): boolean {
+  missing(key: string | string[]): boolean {
     const keys = Array.isArray(key) ? key : [key]
 
     return keys.every(_key => this._data.get(_key) === undefined)

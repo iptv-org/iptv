@@ -24,7 +24,6 @@ export class IndexLanguageGenerator implements Generator {
   async generate(): Promise<void> {
     let groupedStreams = new Collection<Stream>()
     this.streams
-      .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
       .forEach((stream: Stream) => {
         const streamLanguages = stream.getLanguages()
@@ -47,7 +46,7 @@ export class IndexLanguageGenerator implements Generator {
       return stream.groupTitle
     })
 
-    const playlist = new Playlist(groupedStreams, { public: true })
+    const playlist = new Playlist(groupedStreams, { public: true, raw: false })
     const filepath = 'index.language.m3u'
     await this.storage.save(filepath, playlist.toString())
     this.logFile.append(

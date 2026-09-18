@@ -1,3 +1,4 @@
+import { describe, beforeEach, it, expect } from 'vitest'
 import { pathToFileURL } from 'node:url'
 import { execSync } from 'child_process'
 import { EOL } from 'node:os'

@@ -19,23 +19,13 @@
     "readme:update": "tsx scripts/commands/readme/update.ts",
     "report:create": "tsx scripts/commands/report/create.ts",
     "lint": "npx eslint \"scripts/**/*.{ts,js}\" \"tests/**/*.{ts,js}\"",
-    "test": "jest --runInBand",
+    "test": "npx vitest run --no-file-parallelism",
     "postinstall": "npm run api:load"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.ts$": "@swc/jest"
-    },
-    "testRegex": "tests/(.*?/)?.*test.ts$",
-    "setupFilesAfterEnv": [
-      "jest-expect-message"
-    ]
   },
   "author": "Arhey",
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "@alex_neo/jest-expect-message": "^1.0.5",
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.32.0",
     "@freearhey/core": "^0.14.3",
@@ -48,11 +38,9 @@
     "@octokit/plugin-rest-endpoint-methods": "^16.0.0",
     "@octokit/types": "^14.1.0",
     "@stylistic/eslint-plugin": "^5.2.2",
-    "@swc/jest": "^0.2.39",
     "@types/async": "^3.2.25",
     "@types/cli-progress": "^3.11.6",
     "@types/fs-extra": "^11.0.4",
-    "@types/jest": "^30.0.0",
     "@types/lodash.uniqueid": "^4.0.9",
     "@types/node-cleanup": "^2.1.5",
     "@typescript-eslint/eslint-plugin": "^8.38.0",
@@ -70,8 +58,6 @@
     "globals": "^16.3.0",
     "hls-parser": "^0.16.0",
     "iptv-playlist-parser": "^0.15.1",
-    "jest": "^30.0.5",
-    "jest-expect-message": "^1.1.3",
     "lodash.uniqueid": "^4.0.1",
     "m3u-linter": "^0.4.3",
     "mediainfo.js": "^0.3.6",
@@ -79,7 +65,8 @@
     "node-cleanup": "^2.1.2",
     "normalize-url": "^8.1.0",
     "socks-proxy-agent": "^8.0.5",
-    "tsx": "^4.20.3"
+    "tsx": "^4.20.3",
+    "vitest": "^5.0.1"
   },
   "overrides": {
     "esbuild": "0.23.1",

@@ -84,6 +84,20 @@ async function main() {
         errors = errors.concat(validateStreamId(streamId))
       }
     }
+
+    if (
+      data.missing([
+        'stream_id',
+        'quality',
+        'live_247',
+        'geo_blocked',
+        'http_user_agent',
+        'http_referrer'
+      ])
+    ) {
+      errors.push('The request does not contain any changes')
+      done()
+    }
   }
 
   done()

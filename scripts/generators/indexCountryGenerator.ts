@@ -25,7 +25,6 @@ export class IndexCountryGenerator implements Generator {
     let groupedStreams = new Collection<Stream>()
 
     this.streams
-      .sortBy((stream: Stream) => stream.title)
       .filter((stream: Stream) => stream.isSFW())
       .forEach((stream: Stream) => {
         const broadcastAreaCountries = stream.getBroadcastCountries()
@@ -57,7 +56,7 @@ export class IndexCountryGenerator implements Generator {
       return stream.groupTitle
     })
 
-    const playlist = new Playlist(groupedStreams, { public: true })
+    const playlist = new Playlist(groupedStreams, { public: true, raw: false })
     const filepath = 'index.country.m3u'
     await this.storage.save(filepath, playlist.toString())
     this.logFile.append(
