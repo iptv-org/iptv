@@ -31,7 +31,7 @@ jobs:
       - name: Check internal playlists
         run: |
           npm run playlist:lint
-          npm run playlist:validate
+          npm run playlist:validate --- --log-level=error
       - name: Get list of changed files
         id: files_after
         run: |

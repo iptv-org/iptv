@@ -36,4 +36,4 @@ jobs:
         if: steps.files.outputs.any_changed == 'true'
         run: |
           npm run playlist:lint -- ${{ steps.files.outputs.all_changed_files }}
-          npm run playlist:validate -- ${{ steps.files.outputs.all_changed_files }}
+          npm run playlist:validate -- --log-level=error ${{ steps.files.outputs.all_changed_files }}

@@ -34,7 +34,7 @@ jobs:
       - name: Check internal playlists
         run: |
           npm run playlist:lint
-          npm run playlist:validate
+          npm run playlist:validate --- --log-level=error
       - name: Generate public playlists
         run: npm run playlist:generate
       - name: Create .api/streams.json
