@@ -128,7 +128,7 @@ async function main() {
 
     if (streams.isEmpty()) return
 
-    const playlist = new Playlist(streams, { public: false })
+    const playlist = new Playlist(streams, { public: false, raw: true })
     await streamsStorage.save(filepath, playlist.toString())
   }
 }

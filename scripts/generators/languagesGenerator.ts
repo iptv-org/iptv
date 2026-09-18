@@ -19,9 +19,7 @@ export class LanguagesGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    const streams: Collection<Stream> = this.streams
-      .sortBy((stream: Stream) => stream.title)
-      .filter((stream: Stream) => stream.isSFW())
+    const streams: Collection<Stream> = this.streams.filter((stream: Stream) => stream.isSFW())
 
     const languages = new Collection<sdk.Models.Language>()
     streams.forEach((stream: Stream) => {
@@ -39,7 +37,7 @@ export class LanguagesGenerator implements Generator {
 
         if (languageStreams.isEmpty()) return
 
-        const playlist = new Playlist(languageStreams, { public: true })
+        const playlist = new Playlist(languageStreams, { public: true, raw: false })
         const filepath = `languages/${language.code}.m3u`
         await this.storage.save(filepath, playlist.toString())
         this.logFile.append(
@@ -50,7 +48,7 @@ export class LanguagesGenerator implements Generator {
     const undefinedStreams = streams.filter((stream: Stream) => stream.getLanguages().isEmpty())
     if (undefinedStreams.isEmpty()) return
 
-    const playlist = new Playlist(undefinedStreams, { public: true })
+    const playlist = new Playlist(undefinedStreams, { public: true, raw: false })
     const filepath = 'languages/undefined.m3u'
     await this.storage.save(filepath, playlist.toString())
     this.logFile.append(

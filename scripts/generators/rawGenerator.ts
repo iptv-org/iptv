@@ -34,7 +34,7 @@ export class RawGenerator implements Generator {
 
         return stream
       })
-      const playlist = new Playlist(streams, { public: true })
+      const playlist = new Playlist(streams, { public: true, raw: true })
       const filepath = `raw/${filename}`
       await this.storage.save(filepath, playlist.toString())
       this.logFile.append(

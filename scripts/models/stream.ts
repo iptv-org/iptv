@@ -5,6 +5,7 @@ import * as sdk from '@iptv-org/sdk'
 import { DataSet } from '../core'
 import { data } from '../api'
 import path from 'node:path'
+import { PlaylistOptions } from './playlist'
 
 export class Stream extends sdk.Models.Stream {
   filepath?: string
@@ -16,6 +17,12 @@ export class Stream extends sdk.Models.Stream {
   guides = new Collection<sdk.Models.Guide>()
   isNot247?: boolean
   isGeoBlocked?: boolean
+  hasMainFeed?: boolean = false
+  hasUniqueName?: boolean = false
+  channelName?: string
+  feedName?: string
+  countryName?: string
+  channelUniqueName?: string
 
   setGuides(guides?: sdk.Models.Guide[]) {
     this.guides = new Collection(guides)
@@ -112,6 +119,17 @@ export class Stream extends sdk.Models.Stream {
     stream.line = data.line
     stream.isNot247 = labels.includes('Not 24/7')
     stream.isGeoBlocked = labels.includes('Geo-blocked')
+
+    const feed = stream.getFeed()
+    stream.hasMainFeed = feed?.is_main
+    stream.feedName = feed?.name
+
+    const channel = stream.getChannel()
+    stream.channelName = channel?.name
+
+    const country = channel?.getCountry()
+    stream.countryName = country?.name
+    stream.channelUniqueName = `${channel?.name} (${country?.name})`
 
     return stream
   }
@@ -316,6 +334,14 @@ export class Stream extends sdk.Models.Stream {
     return false
   }
 
+  hasChannel(): boolean {
+    return !!this.channel && !!this.getChannel()
+  }
+
+  hasFeed(): boolean {
+    return !!this.feed && !!this.getFeed()
+  }
+
   hasCategory(category: sdk.Models.Category): boolean {
     const channel = this.getChannel()
 
@@ -418,8 +444,25 @@ export class Stream extends sdk.Models.Stream {
     return logo ? logo.url : ''
   }
 
-  getFullTitle(): string {
-    let title = `${this.title}`
+  getTitle(options: PlaylistOptions): string {
+    const raw = options.raw || false
+    let title = ''
+    if (raw) {
+      title += this.title
+    } else {
+      if (!this.hasUniqueName) {
+        title += this.channelUniqueName
+      } else {
+        title += this.channelName
+      }
+      if (this.feedName && !this.hasMainFeed) title += ' ' + this.feedName
+    }
+
+    return title
+  }
+
+  getFullTitle(options: PlaylistOptions): string {
+    let title = this.getTitle(options)
 
     if (this.quality) {
       title += ` (${this.quality})`
@@ -447,8 +490,8 @@ export class Stream extends sdk.Models.Stream {
     return labels
   }
 
-  toString(options: { public?: boolean } = {}) {
-    options = { ...{ public: false }, ...options }
+  toString(options: PlaylistOptions = {}) {
+    options = { ...{ public: false, raw: false }, ...options }
 
     let output = `#EXTINF:-1 tvg-id="${this.getTvgId()}"`
 
@@ -466,7 +509,7 @@ export class Stream extends sdk.Models.Stream {
       output += ` group-title="${this.groupTitle}"`
     }
 
-    output += `,${this.getFullTitle()}`
+    output += `,${this.getFullTitle(options)}`
 
     if (this.referrer) {
       output += `\r\n#EXTVLCOPT:http-referrer=${this.referrer}`

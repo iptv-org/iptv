@@ -25,7 +25,7 @@ export class CategoriesGenerator implements Generator {
   }
 
   async generate() {
-    const streams = this.streams.sortBy([(stream: Stream) => stream.title])
+    const streams = this.streams
 
     this.categories.forEach(async (category: sdk.Models.Category) => {
       const categoryStreams = streams
@@ -41,7 +41,7 @@ export class CategoriesGenerator implements Generator {
           return stream
         })
 
-      const playlist = new Playlist(categoryStreams, { public: true })
+      const playlist = new Playlist(categoryStreams, { public: true, raw: false })
       const filepath = `categories/${category.id}.m3u`
       await this.storage.save(filepath, playlist.toString())
       this.logFile.append(
@@ -50,7 +50,7 @@ export class CategoriesGenerator implements Generator {
     })
 
     const undefinedStreams = streams.filter((stream: Stream) => stream.getCategories().isEmpty())
-    const playlist = new Playlist(undefinedStreams, { public: true })
+    const playlist = new Playlist(undefinedStreams, { public: true, raw: false })
     const filepath = 'categories/undefined.m3u'
     await this.storage.save(filepath, playlist.toString())
     this.logFile.append(

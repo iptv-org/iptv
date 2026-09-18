@@ -164,7 +164,7 @@ async function removeBrokenLinks() {
 
     streams = streams.filter((stream: Stream) => !isBroken(stream))
 
-    const playlist = new Playlist(streams, { public: false })
+    const playlist = new Playlist(streams, { public: false, raw: true })
     await rootStorage.save(filepath, playlist.toString())
   }
 }

@@ -2,17 +2,18 @@ import { Collection } from '@freearhey/core'
 import * as sdk from '@iptv-org/sdk'
 import { Stream } from '../models'
 
-type PlaylistOptions = {
+export type PlaylistOptions = {
   public?: boolean
+  raw?: boolean
 }
 
 export class Playlist {
   streams: Collection<Stream>
-  public: boolean
+  options?: PlaylistOptions
 
   constructor(streams: Collection<Stream>, options?: PlaylistOptions) {
     this.streams = streams
-    this.public = options?.public === true
+    this.options = options
   }
 
   getGuides(): Collection<sdk.Models.Guide> {
@@ -59,7 +60,7 @@ export class Playlist {
     output += '\r\n'
 
     this.streams.forEach((stream: Stream) => {
-      output += stream.toString({ public: this.public }) + '\r\n'
+      output += stream.toString(this.options) + '\r\n'
     })
 
     return output

@@ -25,9 +25,7 @@ export class CountriesGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    const streams = this.streams
-      .sortBy((stream: Stream) => stream.title)
-      .filter((stream: Stream) => stream.isSFW())
+    const streams = this.streams.filter((stream: Stream) => stream.isSFW())
 
     const streamsGroupedByCountryCode = {}
     streams.forEach((stream: Stream) => {
@@ -43,7 +41,7 @@ export class CountriesGenerator implements Generator {
     for (const countryCode in streamsGroupedByCountryCode) {
       const countryStreams = streamsGroupedByCountryCode[countryCode]
 
-      const playlist = new Playlist(countryStreams, { public: true })
+      const playlist = new Playlist(countryStreams, { public: true, raw: false })
       const filepath = `countries/${countryCode.toLowerCase()}.m3u`
       await this.storage.save(filepath, playlist.toString())
       this.logFile.append(
@@ -52,7 +50,10 @@ export class CountriesGenerator implements Generator {
     }
 
     const internationalStreams = streams.filter((stream: Stream) => stream.isInternational())
-    const internationalPlaylist = new Playlist(internationalStreams, { public: true })
+    const internationalPlaylist = new Playlist(internationalStreams, {
+      public: true,
+      displayUniqueName: true
+    })
     const internationalFilepath = 'countries/int.m3u'
     await this.storage.save(internationalFilepath, internationalPlaylist.toString())
     this.logFile.append(
@@ -66,7 +67,7 @@ export class CountriesGenerator implements Generator {
     const undefinedStreams = streams.filter((stream: Stream) =>
       stream.getBroadcastAreaCodes().isEmpty()
     )
-    const undefinedPlaylist = new Playlist(undefinedStreams, { public: true })
+    const undefinedPlaylist = new Playlist(undefinedStreams, { public: true, raw: false })
     const undefinedFilepath = 'countries/undefined.m3u'
     await this.storage.save(undefinedFilepath, undefinedPlaylist.toString())
     this.logFile.append(

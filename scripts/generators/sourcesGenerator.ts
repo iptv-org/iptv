@@ -38,7 +38,7 @@ export class SourcesGenerator implements Generator {
 
         return stream
       })
-      const playlist = new Playlist(streams, { public: true })
+      const playlist = new Playlist(streams, { public: true, raw: false })
       const filepath = `sources/${filename}`
       await this.storage.save(filepath, playlist.toString())
       this.logFile.append(

@@ -25,9 +25,7 @@ export class RegionsGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    const streams = this.streams
-      .sortBy((stream: Stream) => stream.title)
-      .filter((stream: Stream) => stream.isSFW())
+    const streams = this.streams.filter((stream: Stream) => stream.isSFW())
 
     const streamsGroupedByRegionCode = {}
     streams.forEach((stream: Stream) => {
@@ -43,7 +41,7 @@ export class RegionsGenerator implements Generator {
     for (const regionCode in streamsGroupedByRegionCode) {
       const regionStreams = streamsGroupedByRegionCode[regionCode]
 
-      const playlist = new Playlist(regionStreams, { public: true })
+      const playlist = new Playlist(regionStreams, { public: true, raw: false })
       const filepath = `regions/${regionCode.toLowerCase()}.m3u`
       await this.storage.save(filepath, playlist.toString())
       this.logFile.append(

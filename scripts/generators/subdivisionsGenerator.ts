@@ -25,9 +25,7 @@ export class SubdivisionsGenerator implements Generator {
   }
 
   async generate(): Promise<void> {
-    const streams = this.streams
-      .sortBy((stream: Stream) => stream.title)
-      .filter((stream: Stream) => stream.isSFW())
+    const streams = this.streams.filter((stream: Stream) => stream.isSFW())
 
     const streamsGroupedBySubdivisionCode = {}
     streams.forEach((stream: Stream) => {
@@ -43,7 +41,7 @@ export class SubdivisionsGenerator implements Generator {
     for (const subdivisionCode in streamsGroupedBySubdivisionCode) {
       const subdivisionStreams = streamsGroupedBySubdivisionCode[subdivisionCode]
 
-      const playlist = new Playlist(subdivisionStreams, { public: true })
+      const playlist = new Playlist(subdivisionStreams, { public: true, raw: false })
       const filepath = `subdivisions/${subdivisionCode.toLowerCase()}.m3u`
       await this.storage.save(filepath, playlist.toString())
       this.logFile.append(
