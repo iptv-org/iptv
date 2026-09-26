@@ -1510,8 +1510,6 @@ https://stream-us-east-1.getpublica.com/playlist.m3u8?network_id=2246
 https://d368vp0qqzvkid.cloudfront.net/11603/88889713/hls/master.m3u8?ads.xumo_channelId=88889713a&ads.xumo_ifaType=&ads.xumo_providerId=3820&ads.xumo_providerName=NBCNBOS
 #EXTINF:-1 tvg-id="Telemundo.us@WCAU",WCAU-DT1 (1080p)
 https://d368vp0qqzvkid.cloudfront.net/11603/88889705/hls/master.m3u8?ads.xumo_channelId=88889705a&ads.xumo_ifaType=&ads.xumo_providerId=3819&ads.xumo_providerName=NBCNPHI
-#EXTINF:-1 tvg-id="WeTV.us@East",We TV (720p)
-http://170.254.17.2/WE_TV/index.m3u8
 #EXTINF:-1 tvg-id="WeatherNation.us@SD",WeatherNation (1080p)
 https://d2ferbiwcx1539.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-8zd06wicndthf-ssai-prd/WNNationalSamsung/WNNationalSamsung.m3u8
 #EXTINF:-1 tvg-id="PBS.us@WEDQ",WEDQ-DT4 (1080p)
@@ -1658,8 +1656,6 @@ http://45.190.13.8/TUDNHD/index.m3u8
 http://tvsen7.aynascope.net/fx/index.m3u8
 #EXTINF:-1 tvg-id="NickJr.us@East",Nick Jr. (720p)
 http://tvsen7.aynascope.net/nickjr/index.m3u8
-#EXTINF:-1 tvg-id="Nicktoons.us@East",Nicktoons (720p)
-http://tvsen7.aynascope.net/nicktoons/index.m3u8
 #EXTINF:-1 tvg-id="KartoonChannel.us@SD",Kartoon Channel! (1080p)
 https://hlspackager.akamaized.net/live/DB/KARTOON_CHANNEL/HLS/KARTOON_CHANNEL.m3u8
 #EXTINF:-1 tvg-id="FuboSportsNetwork.us@SD",Fubo Sports Network (720p)
@@ -1840,8 +1836,6 @@ http://45.162.64.114/ADULT_SWIM/index.m3u8
 http://23.237.104.106:8080/USA_MTV/index.m3u8
 #EXTINF:-1 tvg-id="AspireTVLife.us@SD",Aspire TV Life (1080p)
 https://uptv-aspiretvlife-klowdtv.amagi.tv/playlist.m3u8
-#EXTINF:-1 tvg-id="HBOHits.us@East",HBO Hits (720p)
-http://tvsen7.aynascope.net/hbo2/index.m3u8
 #EXTINF:-1 tvg-id="HBOHits.us@EastHD",HBO Hits East HD (720p)
 http://4.30.180.36:8420/hbo2/index.m3u8?token=test
 #EXTINF:-1 tvg-id="HBOMovies.us@East",HBO Movies (720p)
@@ -1876,7 +1870,7 @@ http://138.121.15.230:9002/ADULT-SWIM/index.m3u8
 http://4.30.180.36:8420/laff/index.m3u8?token=test
 #EXTINF:-1 tvg-id="PBS.us@WNET",PBS WNET (720p)
 http://4.30.180.36:8420/wnethd/index.m3u8?token=test
-#EXTINF:-1 tvg-id="NickJr.us@East",Nick Jr. (720p)
+#EXTINF:-1 tvg-id="NickJr.us@EastHD",Nick Jr. East HD (720p)
 http://4.30.180.36:8420/nickjr/index.m3u8?token=test
 #EXTINF:-1 tvg-id="History.us@East",History (720p)
 http://4.30.180.36:8420/history/index.m3u8?token=test
@@ -1918,7 +1912,7 @@ https://streaming-live-fcdn.api.prd.univisionnow.com/unieast/unieast.isml/hls/un
 https://streaming-live-fcdn.api.prd.univisionnow.com/uniwest/uniwest.isml/hls/uniwest.m3u8
 #EXTINF:-1 tvg-id="OutdoorChannel.us@HD",Outdoor Channel HD (720p)
 http://107.167.16.138/OutdoorChannel/index.m3u8?token=test
-#EXTINF:-1 tvg-id="NickJr.us@East",Nick Jr. (720p)
+#EXTINF:-1 tvg-id="NickJr.us@EastHD",Nick Jr. East HD (720p)
 http://107.167.16.138/nickjr/index.m3u8?token=test
 #EXTINF:-1 tvg-id="History.us@East",History (720p)
 http://107.167.16.138/history/index.m3u8?token=test
@@ -1977,3 +1971,13 @@ https://vodcdn.bamboo-cloud.com/livehls/6aac8803063044569e156563/master.m3u8
 http://23.237.104.106:8080/USA_WE_TV/index.m3u8
 #EXTINF:-1 tvg-id="DSports.us@Panregional",DSports (720p)
 http://15.204.146.163:8002/play/a00g/index.m3u8
+#EXTINF:-1 tvg-id="Nicktoons.us@East",Nicktoons (1080p)
+https://sra72yz.s.gy/NICKTOONS_HD.m3u8
+#EXTINF:-1 tvg-id="NickJr.us@EastHD",Nick Jr. East HD (1080p)
+https://sra72yz.s.gy/NICK_JR_HD.m3u8
+#EXTINF:-1 tvg-id="HBODrama.us@East",HBO Drama (1080p)
+https://sra72yz.s.gy/HBO_DRAMA_HD.m3u8
+#EXTINF:-1 tvg-id="CinemaxAction.us@EastHD",Cinemax Action East HD (1080p)
+https://sra72yz.s.gy/CINEMAX_ACTION_HD.m3u8
+#EXTINF:-1 tvg-id="AXNLatinAmerica.us@South",AXN Latin America South (1080p)
+http://181.78.12.119:16123/play/ch46/index.m3u8
