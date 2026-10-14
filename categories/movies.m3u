@@ -61,6 +61,8 @@ http://88.212.15.19/live/test_amc_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="AMCEurope.uk@Hungary" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="Movies",AMC Europe Hungary
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 http://88.212.15.19/live/amc_hun/index.m3u8
+#EXTINF:-1 tvg-id="AMCEurope.uk@Poland" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" group-title="Movies",AMC Europe Poland (576i)
+http://57.128.231.171:8080/318/index.m3u8
 #EXTINF:-1 tvg-id="AMCEurope.uk@Romania" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png" http-referrer="https://cool-tv.net/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18" group-title="Movies",AMC Europe Romania
 #EXTVLCOPT:http-referrer=https://cool-tv.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
@@ -90,8 +92,6 @@ http://45.70.201.81:8000/play/a010/index.m3u8
 http://170.83.16.50/AXN/index.m3u8
 #EXTINF:-1 tvg-id="AXN.pt@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Movies",AXN (Portugal) (1080p)
 http://188.115.15.121:8000/play/a02z
-#EXTINF:-1 tvg-id="AXN.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" group-title="Movies",AXN (Spain) (1080p)
-http://193.254.245.162/AXN/index.m3u8
 #EXTINF:-1 tvg-id="AXNAdria.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",AXN Adria
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://5.57.74.130:8000/play/a0at/index.m3u8
@@ -342,6 +342,8 @@ http://88.212.15.17/live/test_cinemax2_hd_hevc/playlist.m3u8
 http://88.212.15.17/live/test_cinemax_hd_hevc/playlist.m3u8
 #EXTINF:-1 tvg-id="Cinemax.us@West" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Cinemax_2016.svg/960px-Cinemax_2016.svg.png" group-title="Movies",Cinemax (United States) West (720p)
 http://23.237.104.106:8080/USA_CINEMAX_WEST/index.m3u8
+#EXTINF:-1 tvg-id="CinemaxAsia.sg@HD" tvg-logo="https://i.imgur.com/c8crJfA.png" group-title="Movies",Cinemax Asia HD (1080p)
+http://125.227.210.55:1001/VideoInput/play.ts
 #EXTINF:-1 tvg-id="CinemaxClassics.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/6/66/Cinemax_Classics_Logo.png/960px-Cinemax_Classics_Logo.png" group-title="Movies",Cinemax Classics (1080p)
 http://23.237.104.106:8080/USA_5STARMAX/index.m3u8
 #EXTINF:-1 tvg-id="CinemaxHits.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Cinemax_Hits_Logo.png/960px-Cinemax_Hits_Logo.png" group-title="Movies",Cinemax Hits (1080p)
@@ -649,6 +651,8 @@ http://88.212.15.17/live/test_hbo_hd_hevc/playlist.m3u8
 http://tvsen7.aynascope.net/hbo/index.m3u8
 #EXTINF:-1 tvg-id="HBOAsia.sg@HD" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/HBO_Asia.png/960px-HBO_Asia.png" group-title="Movies",HBO Asia HD (1080p)
 https://2x2.me/yTKXaE
+#EXTINF:-1 tvg-id="HBOAsia.sg@Taiwan" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/HBO_Asia.png/960px-HBO_Asia.png" group-title="Movies",HBO Asia Taiwan (1080p)
+http://125.227.210.55:1003/VideoInput/play.ts
 #EXTINF:-1 tvg-id="HBOHits.us@East" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/HBO_Hits_Logo.svg/960px-HBO_Hits_Logo.svg.png" group-title="Movies;Series",HBO Hits (720p)
 http://tvsen7.aynascope.net/hbo2/index.m3u8
 #EXTINF:-1 tvg-id="HBOHitsAsia.sg@HD" tvg-logo="https://i.imgur.com/CTjmocc.png" group-title="Movies",HBO Hits Asia HD (1080p)
@@ -961,8 +965,8 @@ https://d3o593mz1glx8d.cloudfront.net/OuterSphere_US.m3u8
 https://live21.bozztv.com/akamaissh101/ssh101/pantallaclasics/playlist.m3u8
 #EXTINF:-1 tvg-id="ParamountMovieChannel.us@SD" tvg-logo="https://i.imgur.com/sj5h9bl.png" group-title="Movies",Paramount Movie Channel
 https://jmp2.uk/plu-5cb0cae7a461406ffe3f5213.m3u8
-#EXTINF:-1 tvg-id="ParamountNetwork.us@East" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png" group-title="Movies;Series",Paramount Network (432p)
-http://193.254.245.162/PARAMOUNT-CHANNEL/index.m3u8
+#EXTINF:-1 tvg-id="ParamountNetwork.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Paramount_Network.svg/960px-Paramount_Network.svg.png" group-title="Movies;Series",Paramount Network (1080p)
+http://57.128.210.196:8080/212/index.m3u8
 #EXTINF:-1 tvg-id="ParamountPlusPicks.us@SD" tvg-logo="https://images.pluto.tv/channels/5ff8c708653d080007361b14/featuredImage.jpg" group-title="Movies",Paramount+ Picks
 https://jmp2.uk/plu-5ff8c708653d080007361b14.m3u8
 #EXTINF:-1 tvg-id="Patriot.ru@SD" tvg-logo="https://patriotkanal.ru/assets/cached/2025/02/resize/264_112_q100_patriot-only-logo.png" group-title="Movies",Patriot (720p)
@@ -1283,6 +1287,8 @@ https://jmp2.uk/plu-68c01785b3900870ec7480e4.m3u8
 https://jmp2.uk/plu-65786888b228b7000843ad9a.m3u8
 #EXTINF:-1 tvg-id="PocketFilms.in@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/p_pktflm.png" group-title="Movies",Pocket Films
 https://vglivessai.akamaized.net/sg/v1/manifest/611d79b11b77e2f571934fd80ca1413453772ac7/b8ada260-bb81-472b-b7c1-3a79213a84b8/e02a0ce5-6c42-4cca-bb53-e5cfecff74a9/0.m3u8
+#EXTINF:-1 tvg-id="PolsatFilm.pl@SD" tvg-logo="https://i.imgur.com/wGH6shZ.png" group-title="Movies",Polsat Film (1080p)
+http://57.128.210.196:8080/205/index.m3u8
 #EXTINF:-1 tvg-id="PolsatFilm.pl@HD" tvg-logo="https://i.imgur.com/wGH6shZ.png" group-title="Movies",Polsat Film HD
 http://92.63.196.180:8080/live/74173747597177/7vfxky4rjx3j/10208.m3u8?token=Q0FaWEpZFFsXAwNWUFMEBwJXAwMDVlpTBgVTVwEHAQNeWgoACVVXVQAVGEZGFUdTUl9qWwIVAlBSAQBdGENHQ10RbVBdEwxDAgANUAJVFxoRRlxfAxUCUU4RQA1QQwheTQ9eFRtUThVQRVoFWT5RU0VbVldEDVYUDl8cRlsPbVRdDlNXXRMMQwQVGEZcEkUUCVxAXgobGgMLR0IFQAQQClYWXlUVE1UOQFlAFkxDDxRjfhceRFJAFQddQw1bDxAKGg4BTAETGkNcRGsWUBJBRFZTWFcUFQJDUhEcRlkASm9bDFxXXFJCCFpZR0YPQwQUHxBYXQheTA4QbEANUEMIXk0PXkQ=
 #EXTINF:-1 tvg-id="PopcornCentral.mx@SD" tvg-logo="https://i.imgur.com/ULGVjyC.png" group-title="Movies",Popcorn Central (1080p)
@@ -1301,6 +1307,8 @@ https://mumt04.tangotv.in/m18aqlK4PUBLICMOVIES/index.m3u8
 https://vglivessai.akamaized.net/ptnr-yupptv/title-Punjabi_Shorts/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8
 #EXTINF:-1 tvg-id="QTV3.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/qdtv3.jpg" group-title="Movies",QTV-3
 http://video10.qtv.com.cn/drm/qtv3at/manifest.m3u8
+#EXTINF:-1 tvg-id="Quadro.ru@4K" tvg-logo="https://i.imgur.com/P4c53HA.png" group-title="Movies",Quadro (2160p)
+http://57.128.231.171:8080/316/index.m3u8
 #EXTINF:-1 tvg-id="RajDigitalPlus.in@SD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_DIGITAL_PLUS/images/LOGO_HD/image.png" group-title="Movies",Raj Digital Plus (1080p)
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8
 #EXTINF:-1 tvg-id="RakutenTVActionMovies.es@Spain" tvg-logo="https://i.imgur.com/Meew6eX.png" group-title="Movies",Rakuten TV Action Movies (1080p)
@@ -1369,6 +1377,8 @@ https://0145451975a64b35866170fd2e8fa486.mediatailor.eu-west-1.amazonaws.com/v1/
 https://jmp2.uk/plu-634f307c7a068e00072c9982.m3u8
 #EXTINF:-1 tvg-id="Rawhide.us@CA" tvg-logo="https://images.pluto.tv/channels/65660223635c3c00086c2578/colorLogoPNG.png" group-title="Movies;Series",Rawhide (United States) CA
 https://jmp2.uk/plu-65660223635c3c00086c2578.m3u8
+#EXTINF:-1 tvg-id="RetroPlus3.cl@SD" tvg-logo="https://i.imgur.com/i0rZsgG.png" group-title="Movies",Retro Plus 3 (1080p)
+http://181.119.97.124:8080/play/retroplus_3/index.m3u8
 #EXTINF:-1 tvg-id="RodnoeKino.ru@SD" tvg-logo="https://i.imgur.com/H70LxoZ.png" group-title="Movies",Rodnoe Kino (576p)
 http://stream.mcquack.net/242/index.m3u8
 #EXTINF:-1 tvg-id="RotanaCinemaEgypt.eg@SD" tvg-logo="https://i.imgur.com/dGlKoLW.png" http-referrer="https://rotana.net/" group-title="Movies",Rotana Cinema Egypt (1080p) [Geo-blocked]
@@ -1468,8 +1478,6 @@ http://znty.dyndns.org:5010/hls/foxm.m3u8
 #EXTINF:-1 tvg-id="StarMovies.si@SD" tvg-logo="https://i.imgur.com/JcoAgDF.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3" group-title="Movies",Star Movies (Slovenia)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://92.36.202.5:10001/play/a01o
-#EXTINF:-1 tvg-id="StarMoviesSelect.in@HD" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES_SELECT_HD/images/LOGO_HD/image.png" group-title="Movies",Star Movies Select HD (1080p)
-http://103.151.60.162:2122/play/a02l/index.m3u8?hls
 #EXTINF:-1 tvg-id="StarTamilTelevision.lk@SD" tvg-logo="https://i.imgur.com/fjHcr9z.jpg" group-title="Movies",Star Tamil Television (360p)
 https://edge4-moblive.yuppcdn.net/trans1sd/smil:strtml19.smil/playlist.m3u8?dvr=
 #EXTINF:-1 tvg-id="StarTrekMovies.se@SE" tvg-logo="https://images.pluto.tv/channels/6400c281dff38e00083f59da/colorLogoPNG.png" group-title="Movies",Star Trek Movies
@@ -1635,6 +1643,8 @@ http://stream.mcquack.net/202/index.m3u8
 https://dethich.pw/thvl3/index.m3u8
 #EXTINF:-1 tvg-id="WarnerChannel.us@Colombia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Warner_TV_logo.svg/960px-Warner_TV_logo.svg.png" group-title="Movies",Warner Channel Colombia (1080p)
 http://38.134.250.110:8000/play/a029/index.m3u8
+#EXTINF:-1 tvg-id="WarnerTV.cz@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/c/c7/WarnerTV_2021.svg/revision/latest/scale-to-width-down/1000?cb=20230818123400" group-title="Movies",Warner TV
+http://88.212.15.17/live/warner_tv/index.m3u8
 #EXTINF:-1 tvg-id="WarnerTVAsia.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warner2018LA.png/960px-Warner2018LA.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="Movies",Warner TV Asia (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
 https://cdn4.skygo.mn/live/disk1/Warner/HLSv3-FTA/Warner.m3u8
