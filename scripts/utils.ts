@@ -175,22 +175,26 @@ export async function getStreamInfo(
       // do nothing
     }
   } else if (url.includes('.mpd')) {
-    const manifest = parseManifest(data, {
-      manifestUri: url,
-      eventHandler: ({ type, message }) => console.log(`${type}: ${message}`)
-    })
+    try {
+      const manifest = parseManifest(data, {
+        manifestUri: url,
+        eventHandler: ({ type, message }) => console.log(`${type}: ${message}`)
+      })
 
-    const playlist = orderBy(manifest.playlists, [p => p.attributes.BANDWIDTH], ['desc'])[0]
+      const playlist = orderBy(manifest.playlists, [p => p.attributes.BANDWIDTH], ['desc'])[0]
 
-    if (playlist) {
-      const attr = playlist.attributes
+      if (playlist) {
+        const attr = playlist.attributes
 
-      info = {
-        resolution: { width: attr.RESOLUTION.width, height: attr.RESOLUTION.height },
-        bandwidth: attr.BANDWIDTH,
-        frameRate: attr['FRAME-RATE'],
-        codecs: attr.CODECS
+        info = {
+          resolution: { width: attr.RESOLUTION.width, height: attr.RESOLUTION.height },
+          bandwidth: attr.BANDWIDTH,
+          frameRate: attr['FRAME-RATE'],
+          codecs: attr.CODECS
+        }
       }
+    } catch {
+      // do nothing
     }
   }
 
