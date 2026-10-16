@@ -117,6 +117,14 @@ describe('playlist:validate', () => {
     expect(stdout).toContain('is missing a channel ID')
   })
 
+  it('does not report a playlist as a duplicate of itself', () => {
+    const cmd =
+      'cross-env DATA_DIR=tests/__data__/input/data ROOT_DIR=tests/__data__/input/playlist_validate_paths npm run playlist:validate -- ./streams/example.m3u'
+    const stdout = execSync(cmd, { encoding: 'utf8' })
+    if (process.env.DEBUG === 'true') console.log(cmd, stdout)
+    expect(stdout).not.toContain('is already in')
+  })
+
   it('shows only errors if log level is error', () => {
     const cmd = `${ENV_VAR} npm run playlist:validate -- --log-level=error log_level.m3u`
     try {
