@@ -7,9 +7,11 @@ For the scripts to work, you must have [Node.js](https://nodejs.org/en) installe
 - [act:check](#actcheck)
 - [act:format](#actformat)
 - [act:update](#actupdate)
+- [act:validate_discussion](#actvalidate_discussion)
 - [act:validate_issue](#actvalidate_issue)
 - [act:validate_label](#actvalidate_label)
 - [api:load](#apiload)
+- [discussion:validate](#discussionvalidate)
 - [issue:validate](#issuevalidate)
 - [playlist:format](#playlistformat)
 - [playlist:update](#playlistupdate)
@@ -48,6 +50,14 @@ Runs the [update](./workflows.md#update) workflow locally. Depends on [nektos/gh
 npm run act:update
 ```
 
+## act:validate_discussion
+
+Runs the [validate_discussion](./workflows.md#validate_discussion) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
+
+```sh
+npm run act:validate_discussion -- -e .github/mocks/events/discussion_opened.json -s GITHUB_TOKEN=github_pat_***
+```
+
 ## act:validate_issue
 
 Runs the [validate_issue](./workflows.md#validate_issue) workflow locally. Depends on [nektos/gh-act](https://github.com/nektos/gh-act).
@@ -70,6 +80,14 @@ Downloads the latest channel and stream data from the [iptv-org/api](https://git
 
 ```sh
 npm run api:load
+```
+
+## discussion:validate
+
+Checks the request for errors and saves the result to the file `temp/logs/result.json`
+
+```sh
+npm run discussion:validate --number=123 --body="### Stream URL..."
 ```
 
 ## issue:validate
