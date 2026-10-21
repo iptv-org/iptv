@@ -2630,5 +2630,18 @@ module.exports = [
     timeline_url: 'https://api.github.com/repos/iptv-org/iptv/issues/39098/timeline',
     performed_via_github_app: null,
     state_reason: null
+  },
+  {
+    url: 'https://api.github.com/repos/iptv-org/iptv/issues/39099',
+    html_url: 'https://github.com/iptv-org/iptv/issues/39099',
+    number: 39099,
+    title: 'Edit: RIK 2',
+    labels: [
+      {
+        name: 'streams:edit'
+      }
+    ],
+    state: 'open',
+    body: '### Stream URL\n\nhttp://l6.cloudskep.com/rikcy/rik2/playlist.m3u8\n\n### Stream ID\n\n~\n\n### Quality\n\n_No response_\n\n### Live 24/7\n\nNone\n\n### Geo-blocked\n\nNone\n\n### HTTP User-Agent\n\n_No response_\n\n### HTTP Referrer\n\n_No response_\n\n### Notes\n\n_No response_\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)'
   }
 ]
