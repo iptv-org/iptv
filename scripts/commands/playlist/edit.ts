@@ -189,7 +189,7 @@ function getFeedChoises(feeds: Collection<sdk.Models.Feed>): Choice[] {
 
 function save(filepath: string) {
   if (!storage.existsSync(filepath)) return
-  const playlist = new Playlist(parsedStreams)
+  const playlist = new Playlist(parsedStreams, { public: false, raw: true })
   storage.saveSync(filepath, playlist.toString())
   logger.info(`\nFile '${filepath}' successfully saved`)
 }
