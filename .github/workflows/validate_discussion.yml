@@ -1,0 +1,66 @@
+name: Validate Discussions
+
+on:
+  discussion:
+    types: [created, edited]
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    if: github.event.discussion.category.name == 'Channel Search'
+    steps:
+      - name: Checkout repository code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - uses: tibdex/github-app-token@0d49dd721133f900ebd5e0dff2810704e8defbc6 # v1.8.2
+        if: ${{ !env.ACT }}
+        id: create-app-token
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run discussion:validate
+        id: validator
+        continue-on-error: true
+        env:
+          RAW_BODY: ${{ github.event.discussion.body }}
+          DISC_NUMBER: ${{ github.event.discussion.number }}
+          GITHUB_TOKEN: ${{ steps.create-app-token.outputs.token || secrets.GITHUB_TOKEN }}
+        run: |
+          npm run discussion:validate -- \
+            --number "$DISC_NUMBER" \
+            --body "$RAW_BODY"
+
+      - name: Handle Discussion Result
+        if: always() && hashFiles('temp/logs/result.json') != ''
+        env:
+          GH_TOKEN: ${{ steps.create-app-token.outputs.token }}
+          DISC_NUMBER: ${{ github.event.discussion.number }}
+        run: |
+          COMMENT=$(jq -r '.comment // empty' temp/logs/result.json)
+          LABEL=$(jq -r '.label // empty' temp/logs/result.json)
+
+          if [ "${{ env.ACT }}" = "true" ]; then
+            echo "[MOCK] Comment: $COMMENT"
+            echo "[MOCK] Label: $LABEL"
+          else
+            if [ -n "$COMMENT" ] && [ "$COMMENT" != "null" ]; then
+              gh discussion comment $DISC_NUMBER --body "$COMMENT"
+            fi
+
+            if [ -n "$LABEL" ] && [ "$LABEL" != "null" ]; then
+              gh discussion edit $DISC_NUMBER --add-label "$LABEL"
+            fi
+          fi

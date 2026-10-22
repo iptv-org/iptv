@@ -23,11 +23,13 @@ describe('report:create', () => {
 │ 4       │ 14179       │ 'streams:add'    │ 'ManoramaNews.in'           │ '(https://mitelefe.com/Api/Videos/GetSourceUrl/694564/0/HLS / https://ssl.cloud.telefe.com/Api/Vid...' │ 'invalid_stream_url' │
 │ 5       │ 15175       │ 'streams:add'    │ 'Channel7.bz@SD'            │ 'new: https://streamer2.nexgen.bz/07-CHANNEL7/index.m3u8'                                              │ 'invalid_stream_url' │
 │ 6       │ 16120       │ 'streams:remove' │ undefined                   │ 'http://190.61.102.67:2000/play/a038/index.m3u8'                                                       │ 'nonexistent_link'   │
-│ 7       │ 19956       │ 'channel search' │ 'CNBCe.tr'                  │ undefined                                                                                              │ 'invalid_channel_id' │
-│ 8       │ 19957       │ 'channel search' │ '13thStreet.au'             │ undefined                                                                                              │ 'channel_closed'     │
-│ 9       │ 20956       │ 'channel search' │ 'IONTV.us'                  │ undefined                                                                                              │ 'fulfilled'          │
-│ 10      │ 25157       │ 'streams:add'    │ 'OnTimeSports.eg@SD'        │ 'OnTime Sports SD.mu38'                                                                                │ 'invalid_stream_url' │
-│ 11      │ 39097       │ 'streams:edit'   │ '~'                         │ 'https://jmp2.uk/plu-5a74b8e1e22a61737979c6bf.m3u8'                                                    │ 'nonexistent_link'   │
+│ 7       │ 19957       │ 'channel search' │ '13thStreet.au'             │ undefined                                                                                              │ 'channel_closed'     │
+│ 8       │ 19958       │ 'channel search' │ 'CNBCe.tr@SD'               │ undefined                                                                                              │ 'duplicate_request'  │
+│ 9       │ 19959       │ 'channel search' │ 'CNBCe.com'                 │ undefined                                                                                              │ 'invalid_channel_id' │
+│ 10      │ 19960       │ 'channel search' │ 'CNBCe.tr'                  │ undefined                                                                                              │ 'duplicate_request'  │
+│ 11      │ 20956       │ 'channel search' │ 'IONTV.us'                  │ undefined                                                                                              │ 'fulfilled'          │
+│ 12      │ 25157       │ 'streams:add'    │ 'OnTimeSports.eg@SD'        │ 'OnTime Sports SD.mu38'                                                                                │ 'invalid_stream_url' │
+│ 13      │ 39097       │ 'streams:edit'   │ '~'                         │ 'https://jmp2.uk/plu-5a74b8e1e22a61737979c6bf.m3u8'                                                    │ 'nonexistent_link'   │
 └─────────┴─────────────┴──────────────────┴─────────────────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────┴──────────────────────┘`).trim()
       )
     ).toBe(true)

@@ -134,7 +134,7 @@ describe('playlist:validate', () => {
     } catch (error) {
       if (process.env.DEBUG === 'true') console.log(cmd, error)
       expect((error as ExecError).stdout).toContain(
-        'log_level.m3u\n 2     error    \"new: https://streamer2.nexgen.bz/07-CHANNEL7/index.m3u8\" is not a valid URL\n\n1 problems (1 errors, 0 warnings)\n'
+        'log_level.m3u\n 2     error    "new: https://streamer2.nexgen.bz/07-CHANNEL7/index.m3u8" is not a valid URL\n\n1 problems (1 errors, 0 warnings)\n'
       )
     }
   })
