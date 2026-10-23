@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U x-tvg-url="https://epg.kanya.io/us/guide.xml.gz"
 #EXTINF:-1 tvg-id="AfghanistanInternational.uk@SD",Afghanistan International (720p)
 https://hls.afintl.com/hls/stream.m3u8
 #EXTINF:-1 tvg-id="AfrobeatTVEntertainment.uk@SD",Afrobeats (1080p)
@@ -198,8 +198,6 @@ https://chlivemta.akamaized.net/hls/live/2016718/mta8/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVGlobal.uk@SD",MTV Global (576p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 https://shift03.isp.bg/MTVEurope/index.m3u8
-#EXTINF:-1 tvg-id="MTVGlobal.uk@SD",MTV Global [Not 24/7]
-http://315e5a5d.ottrast.com/iptv/MM4E93NGF5LADZ/12055/index.m3u8
 #EXTINF:-1 tvg-id="MTVGlobal.uk@SD",MTV Global
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://85.14.32.26:8800/udp/239.100.10.67:5000
@@ -391,12 +389,6 @@ https://cdn.stmify.com/bbc/stream/BBC_THREE/hevc_iptv_mse_v0.mpd
 https://cdn.stmify.com/bbc/stream/BBC_TWO/hevc_iptv_mse_v0.mpd
 #EXTINF:-1 tvg-id="BabyTV.uk@LatinAmerica",BabyTV Latin America (1080p)
 http://38.44.109.41:8003/play/a0eh
-#EXTINF:-1 tvg-id="BBCEarth.uk@Poland",BBC Earth (1080p)
-http://57.128.231.171:8080/307/index.m3u8
-#EXTINF:-1 tvg-id="BBCBrit.uk@Poland",BBC Brit (1080p)
-http://57.128.231.171:8080/309/index.m3u8
-#EXTINF:-1 tvg-id="BBCLifestyle.uk@Poland",BBC Lifestyle Poland (1080p)
-http://57.128.231.171:8080/305/index.m3u8
 #EXTINF:-1 tvg-id="BBCTwo.uk@Wales",BBC Two Wales
 https://cdn.stmify.com/bbc/stream/BBC_TWO_WALES/hevc_iptv_mse_v0.mpd
 #EXTINF:-1 tvg-id="Now90s00s.uk@Poland",Now 90s00s (576p)
@@ -443,28 +435,12 @@ http://45.132.87.69:8080/cartoon_network/index.m3u8
 http://88.212.15.17/live/test_cartoon_network_tizen/playlist.m3u8
 #EXTINF:-1 tvg-id="CartoonitoCEE.uk@Czechia",Cartoonito CEE Czechia
 http://88.212.15.17/live/test_boomerang_tizen/playlist.m3u8
-#EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Poland",Cartoon Network CEE Poland (1080p)
-http://57.128.231.171:8080/293/index.m3u8
-#EXTINF:-1 tvg-id="CartoonitoCEE.uk@Poland",Cartoonito CEE Poland (1080p)
-http://57.128.231.171:8080/303/index.m3u8
-#EXTINF:-1 tvg-id="CNBCEurope.uk@SD",CNBC Europe (1080p)
-http://57.128.231.171:8080/234/index.m3u8
-#EXTINF:-1 tvg-id="DiscoveryScienceEurope.uk@Poland",Discovery Science Europe Poland (1080p)
-http://57.128.231.171:8080/279/index.m3u8
-#EXTINF:-1 tvg-id="BBCFirst.uk@Poland",BBC First (1080p)
-http://57.128.231.171:8080/306/index.m3u8
-#EXTINF:-1 tvg-id="BabyTV.uk@UK",BabyTV (1080p)
-http://57.128.231.171:8080/310/index.m3u8
-#EXTINF:-1 tvg-id="AMCEurope.uk@Poland",AMC Europe Poland (576i)
-http://57.128.231.171:8080/318/index.m3u8
 #EXTINF:-1 tvg-id="ViasatEpicDrama.uk@Poland",Viasat Epic Drama Poland (1080p)
 http://92.114.85.87:8001/play/a00x/index.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Poland",Cartoon Network CEE Poland
 http://92.114.85.87:8007/play/a009
 #EXTINF:-1 tvg-id="CartoonitoCEE.uk@Poland",Cartoonito CEE Poland (1080p)
 http://92.114.85.87:8007/play/a008
-#EXTINF:-1 tvg-id="EnglishClubGlobal.uk@SD",English Club Global
-https://raw.githubusercontent.com/racitonsen/RacIPTV/refs/heads/main/streams/english-club-global.m3u8
 #EXTINF:-1 tvg-id="SkySportsF1.uk@SD",Sky Sports F1 (720p)
 #EXTVLCOPT:http-referrer=https://stmify.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/155.0.0.0 Safari/537.36
