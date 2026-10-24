@@ -46,11 +46,22 @@ export function normalizeURL(url: string): string {
     return url.replace(/\s/g, '+')
   }
 
+  let decoded: string
   try {
-    return decodeURIComponent(normalized).replace(/\s/g, '+')
+    // decodeURI keeps escapes like %2F, %3F and %23, which would change the URL if decoded
+    decoded = decodeURI(normalized)
   } catch {
-    return normalized.replace(/\s/g, '+')
+    decoded = normalized
   }
+
+  // "+" means a space only in the query; in the path it is a plus sign
+  const queryStart = decoded.indexOf('?')
+  if (queryStart === -1) return decoded.replace(/\s/g, '%20')
+
+  return (
+    decoded.slice(0, queryStart).replace(/\s/g, '%20') +
+    decoded.slice(queryStart).replace(/\s/g, '+')
+  )
 }
 
 function isInsideDirectory(rootDir: string, target: string): boolean {
