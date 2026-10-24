@@ -205,7 +205,7 @@ npm run playlist:export
 
 ## readme:update
 
-Updates the configuration and list of available streams in [PLAYLISTS.md](PLAYLISTS.md).
+Updates the configuration and list of available streams in [PLAYLISTS.md](../PLAYLISTS.md).
 
 ```sh
 npm run readme:update
