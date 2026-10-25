@@ -99,8 +99,8 @@ export function truncate(string: string, limit: number = 100) {
 type StreamInfo = {
   resolution: { width: number; height: number }
   bandwidth: number
-  frameRate: number
-  codecs: string
+  frameRate?: number
+  codecs?: string
 }
 
 export async function getStreamInfo(
@@ -162,6 +162,10 @@ export async function getStreamInfo(
 
   if (!data) return undefined
 
+  return parseStreamInfo(url, data)
+}
+
+export function parseStreamInfo(url: string, data: string): StreamInfo | undefined {
   let info: StreamInfo | undefined
 
   if (url.includes('.m3u8')) {
@@ -173,7 +177,7 @@ export async function getStreamInfo(
       if (playlist && playlist.isMasterPlaylist && playlist.variants.length) {
         const v = orderBy(playlist.variants, ['bandwidth'], ['desc'])[0]
 
-        if (v && v.resolution && v.frameRate && v.codecs) {
+        if (v && v.resolution) {
           info = {
             resolution: { width: v.resolution.width, height: v.resolution.height },
             bandwidth: v.bandwidth,
