@@ -73,7 +73,7 @@ The channel will also be added to our [blocklist](https://github.com/iptv-org/da
   - `preview.png`: Image displayed in the `README.md`.
   - `template.md`: Template configuration for `PLAYLISTS.md`.
 - `scripts/`: Contains internal utility scripts used in the repository. See [Scripts](./docs/scripts.md).
-- `streams/`: Contains internal playlists with all streams. See [Playlist Structure](./docs/playlist-structure.md).
+- `streams/`: Contains internal playlists with all streams. See [Playlists](./docs/playlists.md).
 - `tests/`: Contains test suites to validate project scripts.
 - `CONTRIBUTING.md`: The file you are currently reading.
 - `PLAYLISTS.md`: Automatically updated list of available playlists.
