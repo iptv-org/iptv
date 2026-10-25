@@ -201,8 +201,9 @@ https://iptv.bitred.cl/ELGOURMET_HD/index.m3u8
 http://15.204.246.24:8080/elnueveHD/index.m3u8
 #EXTINF:-1 tvg-id="ElSiete.ar@SD" tvg-logo="https://i.imgur.com/yKb7nfP.png" group-title="General",El Siete (1080p)
 https://edgectc.com/CANAL7_MZA/index.m3u8
-#EXTINF:-1 tvg-id="ElTrece.ar@SD" tvg-logo="https://i.imgur.com/TrgBAdA.png" group-title="General",El Trece (1080p)
-http://15.204.246.24:8080/eltreceHD/index.m3u8
+#EXTINF:-1 tvg-id="ElTrece.ar@SD" tvg-logo="https://i.imgur.com/TrgBAdA.png" http-referrer="https://vodgc.net" group-title="General",El Trece (1080p)
+#EXTVLCOPT:http-referrer=https://vodgc.net
+https://livetrx01.vodgc.net/eltrecetv/index.m3u8
 #EXTINF:-1 tvg-id="Encuentro.ar@SD" tvg-logo="https://i.imgur.com/uBBZR1X.png" group-title="Culture",Encuentro (720p)
 http://138.59.227.20:8000/play/a05s/index.m3u8
 #EXTINF:-1 tvg-id="ESPNPremium.ar@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png" group-title="Sports",ESPN Premium (Argentina) HD (1080p)
@@ -314,9 +315,7 @@ http://45.171.64.30:6060/play/a04n/index.m3u8
 https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/space.stream/playlist.m3u8
 #EXTINF:-1 tvg-id="T5Satelital.ar@SD" tvg-logo="https://i.imgur.com/ZcD0rUP.png" group-title="Undefined",T5 Satelital
 https://stream.t5satelital.blog/hls/t5satelitalweb.m3u8
-#EXTINF:-1 tvg-id="TelePosadas.ar@HD" tvg-logo="" group-title="General",Tele Posadas (576p) [Not 24/7]
-https://lbgo.bozztv.com/giatv/giatv-teleposadastv/teleposadastv/playlist.m3u8
-#EXTINF:-1 tvg-id="TelePosadas.ar@SD" tvg-logo="https://i.imgur.com/sfUBb7I.jpeg" group-title="General",Tele Posadas SD (576p) [Not 24/7]
+#EXTINF:-1 tvg-id="TelePosadas.ar@SD" tvg-logo="https://i.imgur.com/sfUBb7I.jpeg" group-title="General",Tele Posadas (576p) [Not 24/7]
 https://iptv.ixfo.com.ar:30443/live/TelePosadasTv/playlist.m3u8
 #EXTINF:-1 tvg-id="Telecinco.ar@SD" tvg-logo="https://i.imgur.com/ZDenyAE.png" group-title="Undefined",Telecinco (240p)
 https://videohd.live:19360/8016/8016.m3u8

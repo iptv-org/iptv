@@ -1,7 +1,7 @@
-#EXTM3U x-tvg-url="https://epg.kanya.io/us/guide.xml.gz"
+#EXTM3U
 #EXTINF:-1 tvg-id="3ABNInternational.us@SD" tvg-logo="https://i.imgur.com/IecOZHR.png" group-title="Religious",3ABN International (720p)
 https://3abn.bozztv.com/3abn2/Int_live/smil:Int_live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="24Horas.es@SD" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="News;Public",24 Horas (Spain) (720p)
+#EXTINF:-1 tvg-id="24Horas.es@SD" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="News;Public",24 Horas (720p)
 https://ztnr.rtve.es/ztnr/1694255.m3u8
 #EXTINF:-1 tvg-id="AndTV.in@International" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png" group-title="Movies",&TV International (1080p)
 https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
@@ -49,7 +49,7 @@ https://edge1.socialsmart.tv/aznews/smil/playlist.m3u8
 #EXTINF:-1 tvg-id="BaichengTV.cn@SD" tvg-logo="https://www.tvchinese.net/uploads/tv/baicheng.jpg" group-title="General",Baicheng TV [Geo-blocked]
 https://stream2.jlntv.cn/baicheng1/sd/live.m3u8
 #EXTINF:-1 tvg-id="BBCNews.uk@AsiaPacific" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BBC_NEWS/images/LOGO_HD/image.png" group-title="News",BBC News Asia Pacific (576p)
-https://thinkkast.dpdns.org/thinkkast/bbcworld_news_sd/versiglia/index.m3u8
+http://103.151.60.162:2122/play/a0fl/index.m3u8?hls
 #EXTINF:-1 tvg-id="BBSTV.kr@SD" tvg-logo="https://i.imgur.com/01UmXRe.png" group-title="Religious",BBS TV (South Korea) (1080p)
 http://bbstv.clouducs.com:1935/bbstv-live/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="BeautifulLifeTV.tw@SD" tvg-logo="https://i.imgur.com/hkwcBM9.png" group-title="Religious",Beautiful Life TV
@@ -229,6 +229,8 @@ https://pulltv1.wanfudaluye.com/live/tv1.m3u8
 http://nmk.ioapk.com:5050/4gtv-live106/index.m3u8
 #EXTINF:-1 tvg-id="DaliTV.tw@SD" tvg-logo="https://i.imgur.com/pFIMLsA.png" group-title="General",Dali TV (720p)
 http://www.dalitv.com.tw:4568/live/dali/index.m3u8
+#EXTINF:-1 tvg-id="DGTV.au@HD" tvg-logo="https://dg.church/tile-dgtv.jpg" group-title="Religious",DG:TV (1080p)
+https://mdn.dg.church/673ac57a073a4-1/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveringChina.cn@SD" tvg-logo="https://i.imgur.com/wr2bLaA.png" group-title="Culture;Documentary",Discovering China (1080p)
 https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryAsiaTaiwan.tw@SD" tvg-logo="https://i.imgur.com/foLICwL.png" group-title="Entertainment",Discovery Asia Taiwan (1080p)
@@ -582,8 +584,6 @@ https://cdn4.skygo.mn/live/disk1/NeigMGL/HLSv3-FTA/NeigMGL.m3u8
 https://vodcdn.bamboo-cloud.com/livehls/6ab37c6c7e057f9063071c85/master.m3u8
 #EXTINF:-1 tvg-id="NewsoftheWorld.us@Global" tvg-logo="https://i.imgur.com/MfyRQCs.png" group-title="News",News of the World (720p)
 https://nowhls.wns.live/hls/stream.m3u8
-#EXTINF:-1 tvg-id="NHKGeneralTV.jp@SD" tvg-logo="https://i.imgur.com/fAZ2BEZ.png" group-title="General",NHK General TV (720p)
-https://nhk4.mov3.co/hls/nhk.m3u8
 #EXTINF:-1 tvg-id="NHKWorldPremium.jp@SD" tvg-logo="https://i.imgur.com/4ESi2La.png" group-title="Entertainment",NHK World Premium (720p)
 https://media-tyo.hls.nhkworld.jp/hls/wp/live/master.m3u8
 #EXTINF:-1 tvg-id="NHKWorldJapan.jp@SD" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/NHK_World_Japan.png" group-title="Culture;News",NHK World-Japan (1080p)
@@ -594,10 +594,6 @@ https://freem3u.xyz/api/live/play.m3u8?vid=106
 http://nonghyup.flive.skcdn.com/nonghyup/_definst_/nhlive/playlist.m3u8
 #EXTINF:-1 tvg-id="NingxiaSatelliteChannel.cn@SD" tvg-logo="https://i.imgur.com/nUQE4Ib.png" group-title="Entertainment",Ningxia Satellite Channel (576p)
 http://39.134.115.163:8080/PLTV/88888910/224/3221225726/index.m3u8
-#EXTINF:-1 tvg-id="NipponTV.jp@JOAXDTV" tvg-logo="https://i.imgur.com/IxD8V5X.png" http-referrer="https://mov3.co/ntv.html" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="General",Nippon TV (576p)
-#EXTVLCOPT:http-referrer=https://mov3.co/ntv.html
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://ntv5.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="NowMediaTelevision.us@HD" tvg-logo="https://i.imgur.com/8m8gy0n.png" group-title="Lifestyle;News",NowMedia Television (1080p)
 https://stream-204968.castr.net/64e0c91d08bff3041638aee3/live_a4243540d4b911f0b624bda5e9a32aa9/index.m3u8
 #EXTINF:-1 tvg-id="NowMediaTelevision.us@Spanish" tvg-logo="https://i.imgur.com/8m8gy0n.png" group-title="Lifestyle;News",NowMedia Television Spanish (1080p)
@@ -746,11 +742,7 @@ https://lbs-us1.suprememastertv.com/720p.m3u8
 http://88.212.15.17/live/svoboda/index.m3u8
 #EXTINF:-1 tvg-id="TaiwanIndigenousTV.tw@SD" tvg-logo="https://i.imgur.com/QqIdVqz.png" group-title="General",Taiwan Indigenous TV (720p)
 https://streamipcfapp.akamaized.net/live/_definst_/live_720/key_b1500.m3u8
-#EXTINF:-1 tvg-id="TBSTV.jp@JORXDTV" tvg-logo="https://i.imgur.com/dUn2GRn.png" http-referrer="https://mov3.co/tbs.html" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="General",TBS TV (Japan) (540p)
-#EXTVLCOPT:http-referrer=https://mov3.co/tbs.html
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://tbs5.mov3.co/hls/tbs.m3u8
-#EXTINF:-1 tvg-id="TBSTV.kr@SD" tvg-logo="https://i.imgur.com/iOnWS6V.png" group-title="Undefined",TBS TV (South Korea) (720p)
+#EXTINF:-1 tvg-id="TBSTV.kr@SD" tvg-logo="https://i.imgur.com/iOnWS6V.png" group-title="Undefined",TBS TV (720p)
 https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TDMEntertainment.mo@SD" tvg-logo="https://i.imgur.com/7ml2bfx.png" group-title="Entertainment",TDM Entertainment (720p)
 https://live3.tdm.com.mo/ch6/hd_ch6.live/playlist.m3u8
@@ -798,6 +790,8 @@ https://cdn4.skygo.mn/live/disk1/TV9HD/DASH-FTA/TV9HD.mpd
 #EXTINF:-1 tvg-id="TV25.mn@SD" tvg-logo="https://www.mongolsat.mn/assets/img/channel/5.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36" group-title="General",TV 25 (1080p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
 https://cdn4.skygo.mn/live/disk1/MN25/DASH-FTA/MN25.mpd
+#EXTINF:-1 tvg-id="TVBozsikeHamburgHD.de@HD" tvg-logo="https://radiobozsike.com/img/icons/android-chrome-512x512.png" group-title="Music",TV Bozsike Hamburg HD (1080p)
+https://rtmp.radiobozsike.com/hls/stream1.m3u8
 #EXTINF:-1 tvg-id="TVBRICSChinese.cn@SD" tvg-logo="https://i.imgur.com/896132Z.png" group-title="General",TV BRICS Chinese (1080p)
 https://chibrics.mediacdn.ru/cdn/brics/chinese/playlist.m3u8
 #EXTINF:-1 tvg-id="TVChosun2.kr@SD" tvg-logo="https://i.imgur.com/Ev5JoBJ.png" http-referrer="http://broadcast.tvchosun.com/onair/on2.cstv" group-title="Undefined",TV Chosun 2 (720p)
@@ -806,10 +800,6 @@ http://onair2.cdn.tvchosun.com/origin2/_definst_/tvchosun_s3/playlist.m3u8
 #EXTINF:-1 tvg-id="TVChosun.kr@SD" tvg-logo="https://i.imgur.com/62EwaCG.png" http-referrer="http://broadcast.tvchosun.com/onair/on.cstv" group-title="General",TV Chosun (720p)
 #EXTVLCOPT:http-referrer=http://broadcast.tvchosun.com/onair/on.cstv
 http://onair.cdn.tvchosun.com/origin1/_definst_/tvchosun_s1/playlist.m3u8
-#EXTINF:-1 tvg-id="TVTokyo.jp@JOTXDTV" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/TV_Tokyo_%28Japanese%29_2023.svg/960px-TV_Tokyo_%28Japanese%29_2023.svg.png" http-referrer="https://mov3.co/tvtokyo.html" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="General",TV Tokyo (576p)
-#EXTVLCOPT:http-referrer=https://mov3.co/tvtokyo.html
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://tvtokyo.mov3.co/hls/tvtokyo.m3u8
 #EXTINF:-1 tvg-id="TVBSNews.tw@SD" tvg-logo="https://i.imgur.com/171lwfg.png" group-title="News",TVBS News [Geo-blocked]
 http://seb.sason.top/sc/tvbsxw_fhd.m3u8
 #EXTINF:-1 tvg-id="TVBSAsia.tw@SD" tvg-logo="https://i.imgur.com/4S1rkhm.png" group-title="Entertainment",TVBS-Asia (1080p)

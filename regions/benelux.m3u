@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://epg.kanya.io/us/guide.xml.gz"
+#EXTM3U
 #EXTINF:-1 tvg-id="1Plus1International.ua@SD" tvg-logo="https://i.imgur.com/LOY0rtp.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="General",1+1 International
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://158.101.222.193:88/georgia_play.php?id=1plus1international
@@ -10,7 +10,7 @@ https://d3472rjicrodic.cloudfront.net/nlpo/clr-nlpo/709d5260/index.m3u8
 https://ms7.mx-cd.net/dtv-11/198-989148/1Twente_TV.smil/chunklist_w954512639_b4292608_slNLD.m3u8
 #EXTINF:-1 tvg-id="3ABNInternational.us@SD" tvg-logo="https://i.imgur.com/IecOZHR.png" group-title="Religious",3ABN International (720p)
 https://3abn.bozztv.com/3abn2/Int_live/smil:Int_live.smil/playlist.m3u8
-#EXTINF:-1 tvg-id="24Horas.es@SD" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="News;Public",24 Horas (Spain) (720p)
+#EXTINF:-1 tvg-id="24Horas.es@SD" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="News;Public",24 Horas (720p)
 https://ztnr.rtve.es/ztnr/1694255.m3u8
 #EXTINF:-1 tvg-id="360TuneBox.nl@SD" tvg-logo="https://i.imgur.com/1Fyezng.png" group-title="Music",360TuneBox (1080p)
 https://dash3.antik.sk/live/test_360_tunebox_medium_atk/playlist.m3u8
@@ -127,6 +127,8 @@ https://m1b2.worldcast.tv/dancetelevisionone/2/dancetelevisionone.m3u8
 https://eu-nl-012.worldcast.tv/dancetelevisiontwo/dancetelevisiontwo.m3u8
 #EXTINF:-1 tvg-id="DenHaagTV.nl@SD" tvg-logo="https://i.imgur.com/gkzlRED.jpg" group-title="General",Den Haag TV (1080p) [Not 24/7]
 http://wowza5.video-streams.nl:1935/denhaag/denhaag/playlist.m3u8
+#EXTINF:-1 tvg-id="DGTV.au@HD" tvg-logo="https://dg.church/tile-dgtv.jpg" group-title="Religious",DG:TV (1080p)
+https://mdn.dg.church/673ac57a073a4-1/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveringChina.cn@SD" tvg-logo="https://i.imgur.com/wr2bLaA.png" group-title="Culture;Documentary",Discovering China (1080p)
 https://fastlive.cctvplus.com/out/v1/8442c3bfd4c64a3984389328f6087879/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryChannel.nl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/960px-2019_Discovery_logo.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36" group-title="Entertainment",Discovery Channel (Netherlands) (360p)
@@ -717,6 +719,8 @@ http://5.180.164.197:8080/TV5MONDE/index.m3u8
 http://5.78.65.164/TV5Monde/index.m3u8
 #EXTINF:-1 tvg-id="TV1000RussianKinoGlobal.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/TV1000_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B5_%D0%BA%D0%B8%D0%BD%D0%BE_2014.png/1280px-TV1000_%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%BE%D0%B5_%D0%BA%D0%B8%D0%BD%D0%BE_2014.png" group-title="Movies",TV1000 Russian Kino Global
 http://213.91.179.28:8000/play/a0bx
+#EXTINF:-1 tvg-id="TVBozsikeHamburgHD.de@HD" tvg-logo="https://radiobozsike.com/img/icons/android-chrome-512x512.png" group-title="Music",TV Bozsike Hamburg HD (1080p)
+https://rtmp.radiobozsike.com/hls/stream1.m3u8
 #EXTINF:-1 tvg-id="TVEllef.nl@SD" tvg-logo="https://i.imgur.com/FaCd2QY.png" group-title="Undefined",TV Ellef (1080p)
 http://cdn22.streampartner.nl/tvellef/livestream/playlist.m3u8
 #EXTINF:-1 tvg-id="TVLux.be@SD" tvg-logo="https://i.imgur.com/ljbdWkC.png" group-title="Undefined",TV Lux (Belgium) (1080p)

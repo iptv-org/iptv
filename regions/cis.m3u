@@ -1,4 +1,4 @@
-#EXTM3U x-tvg-url="https://epg.kanya.io/us/guide.xml.gz"
+#EXTM3U
 #EXTINF:-1 tvg-id="1Plus1International.ua@SD" tvg-logo="https://i.imgur.com/LOY0rtp.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36" group-title="General",1+1 International
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36
 http://158.101.222.193:88/georgia_play.php?id=1plus1international
@@ -16,7 +16,7 @@ https://cdn-dvr.ntv.ru/5_minut_tishiny/index.m3u8
 http://91.214.48.158:4022/udp/224.2.2.4:10000
 #EXTINF:-1 tvg-id="15PlusMusic.ru@HD" tvg-logo="https://i.imgur.com/kj21hwd.png" group-title="Music",15+ Music (1080p)
 https://live.15plusmg.ru/memfs/ce3366b1-bf25-4e24-96bb-1adf0d44bd3d.m3u8
-#EXTINF:-1 tvg-id="24Horas.es@SD" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="News;Public",24 Horas (Spain) (720p)
+#EXTINF:-1 tvg-id="24Horas.es@SD" tvg-logo="https://i.ibb.co/21sXZ3GT/24h.png" group-title="News;Public",24 Horas (720p)
 https://ztnr.rtve.es/ztnr/1694255.m3u8
 #EXTINF:-1 tvg-id="24KZ.kz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/24KZ_logo.svg/1280px-24KZ_logo.svg.png" group-title="News",24KZ (576p)
 https://fs.uplink.kz/24KZ/mono.m3u8?token=onlinetv
@@ -388,6 +388,8 @@ https://stream8.cinerama.uz/1033/tracks-v1a1/mono.m3u8
 https://autopilot.catcast.tv/content/38720/index.m3u8
 #EXTINF:-1 tvg-id="DetvoraPlus.ru@HD" tvg-logo="https://interra-cdn-europe1.b-cdn.net/logo-detvora.png" group-title="Animation;Family;Kids",Detvora+ (1080p)
 https://cdn.rostelekom-tv.xyz/live/WAYU4PTJ_VVz4wAQ.m3u8
+#EXTINF:-1 tvg-id="DGTV.au@HD" tvg-logo="https://dg.church/tile-dgtv.jpg" group-title="Religious",DG:TV (1080p)
+https://mdn.dg.church/673ac57a073a4-1/index.m3u8
 #EXTINF:-1 tvg-id="Dikayaokhota.ru@HD" tvg-logo="https://i.imgur.com/EOue13e.png" group-title="Outdoor",Dikaya okhota HD (1080p)
 http://stream.mcquack.net/274/index.m3u8
 #EXTINF:-1 tvg-id="Dikayarybalka.ru@HD" tvg-logo="https://i.imgur.com/e3BFVgt.png" group-title="Outdoor",Dikaya rybalka HD (1080p)
@@ -807,7 +809,7 @@ https://live1.1tvcrimea.ru/milletlive.m3u8
 https://stream8.cinerama.uz/1014/tracks-v1a1/playlist.m3u8
 #EXTINF:-1 tvg-id="MiMiTV.uz@SD" tvg-logo="https://i.imgur.com/NmQglPa.png" group-title="Kids",MiMi TV (720p)
 https://fl.biztv.media/MiMiTV_720/playlist.m3u8
-#EXTINF:-1 tvg-id="Ministerstvoidey.ru@SD" tvg-logo="https://i.imgur.com/3P0uvHD.png" group-title="Culture",Ministerstvo idey (1080p)
+#EXTINF:-1 tvg-id="Ministerstvoidey.ru@SD" tvg-logo="https://minidey.ru/media/images/minidey_banner.png" group-title="Culture",Ministerstvo idey (1080p)
 https://live-minidey.cdnvideo.ru/minidey-srt/minidey/playlist.m3u8
 #EXTINF:-1 tvg-id="Mir24.ru@SD" tvg-logo="https://i.imgur.com/dj9c8Yd.png" group-title="News",Mir 24 (1080p)
 http://hls.mirtv.cdnvideo.ru/mirtv-parampublish/mir24_2500/playlist.m3u8
@@ -1519,6 +1521,8 @@ http://178.134.1.158:8081/TVXXI/index.m3u8
 http://stream.mcquack.net/152/index.m3u8
 #EXTINF:-1 tvg-id="TVBahoriston.tj@SD" tvg-logo="https://i.imgur.com/Dacai5z.png" group-title="Kids",TV Bahoriston (1080p)
 https://live.teleradiocom.tj/3/3m.m3u8
+#EXTINF:-1 tvg-id="TVBozsikeHamburgHD.de@HD" tvg-logo="https://radiobozsike.com/img/icons/android-chrome-512x512.png" group-title="Music",TV Bozsike Hamburg HD (1080p)
+https://rtmp.radiobozsike.com/hls/stream1.m3u8
 #EXTINF:-1 tvg-id="TVBRICSRussian.ru@SD" tvg-logo="https://i.imgur.com/vLpm8tN.png" group-title="General",TV BRICS Russian (1080p)
 http://185.23.80.23:8080/TVBRICS/index.m3u8
 #EXTINF:-1 tvg-id="TVCentr.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/7/72/TV_Tsentr_2013_Logo.svg" group-title="Undefined",TV Centr (576p)

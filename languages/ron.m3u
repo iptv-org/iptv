@@ -61,8 +61,8 @@ https://www.bucovinatv.ro/proxy/video/playlist.m3u8
 https://live77cdn2.antenaplay.ro/live2_aws4_sdi13/live2_aws4_sdi13.m3u8
 #EXTINF:-1 tvg-id="CinemaratonPlus.ro@HD" tvg-logo="https://assets.antenaplay.ro/2026/03/10/RMNdkVBCTNfsogsYqHaB.png" group-title="Movies",Cinemaraton Plus (1080i)
 https://hls02ns.antenaplay.ro/hls/cinemaraton-plus-hd/index.m3u8
-#EXTINF:-1 tvg-id="CineWow.ro@SD" tvg-logo="https://cdn.gamma.app/tfnglu66dwji8hw/d36b2d5c45a544749b3739d46fb119cc/original/CineWow.png" group-title="Movies",CineWow (576p)
-http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-aleph-news/live_hq?offsetSeconds=0
+#EXTINF:-1 tvg-id="CineWow.ro@SD" tvg-logo="https://cdn.gamma.app/tfnglu66dwji8hw/d36b2d5c45a544749b3739d46fb119cc/original/CineWow.png" group-title="Movies",CineWow
+https://hls02ns.antenaplay.ro/hls/bollywood-clasic-sd/index.m3u8
 #EXTINF:-1 tvg-id="ColumnaTV.ro@SD" tvg-logo="https://i.imgur.com/C5dIgsc.png" group-title="General",Columna TV
 https://cdn.streamnet.pro/columnatv/live/playlist.m3u8
 #EXTINF:-1 tvg-id="ComedyPlay.ro@SD" tvg-logo="https://i.imgur.com/6kAeVOk.png" group-title="Comedy",Comedy Play (576i)
@@ -120,6 +120,8 @@ https://nosignal1.antenaplay.ro/hls/fb-hits-sd/index.m3u8
 https://nosignal1.antenaplay.ro/hls/fb-one-sd/index.m3u8
 #EXTINF:-1 tvg-id="HtMusicChannel.ro@SD" tvg-logo="https://i.imgur.com/sqC2hqV.png" group-title="Music",H!t Music Channel (Romania)
 http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-mooz-dance/live_hq?offsetSeconds=0
+#EXTINF:-1 tvg-id="HalloweenNonStop.ro@SD" tvg-logo="https://assets.antenaplay.ro/2026/10/18/ODGTMKI8mciV9cmCOxgn.png" group-title="Movies",Halloween Non Stop (720p)
+https://live4dai.antenaplay.ro/live2_srt/live2_srt.m3u8
 #EXTINF:-1 tvg-id="HappyChannel.ro@SD" tvg-logo="https://i.imgur.com/kpFaiku.png" group-title="Entertainment",Happy Channel
 https://live4dai.antenaplay.ro/live2_aws4_sdi12/live2_aws4_sdi12_600k.m3u8
 #EXTINF:-1 tvg-id="HD365TV.ro@SD" tvg-logo="https://i.imgur.com/2cLx4ja.png" group-title="General",HD365 TV
@@ -272,6 +274,8 @@ https://radiolive.trm.md:8001/hls_rmt/tineret.m3u8
 https://media.3netmedia.ro/hls/stream.m3u8
 #EXTINF:-1 tvg-id="RadioRomaniaAntenaSatelor.ro@720p" tvg-logo="https://www.antenasatelor.ro/templates/default/images/custom/logo-main.svg" group-title="Music",Radio Romania Antena Satelor (720p) [Not 24/7]
 https://stream3.srr.ro/live/AntenaSatelor/playlist.m3u8
+#EXTINF:-1 tvg-id="RadioRomaniaIasi.ro@SD" tvg-logo="https://www.radioiasi.ro/wp-content/themes/radioiasi/images/custom/logo-iasi.svg" group-title="General;Music",Radio Romania Iasi (576i) [Not 24/7]
+https://stream3.srr.ro/live/radio-iasi/chunklist_w1565024915.m3u8
 #EXTINF:-1 tvg-id="RadioRomaniaOlteniaCraiova.ro@SD" tvg-logo="https://www.rador.ro/wp-content/uploads/2017/06/logo-radio-oltenia-craiova.png" group-title="General;Music",Radio Romania Oltenia-Craiova (576p) [Not 24/7]
 https://stream3.srr.ro/live/Radio-Oltenia/chunklist_w1200239883.m3u8
 #EXTINF:-1 tvg-id="RadioRomaniaResita.ro@SD" tvg-logo="https://www.radioresita.ro/wp-content/themes/radioresita/images/custom/logo-main.svg" group-title="General;Music",Radio Romania Resita (576p) [Not 24/7]
@@ -341,8 +345,10 @@ http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-inedit-tv/live_hq?offsetSeconds
 https://hls01ns.antenaplay.ro/hls/tralala-hd/index.m3u8
 #EXTINF:-1 tvg-id="TravelMix.ro@SD" tvg-logo="https://i.imgur.com/4dMeEQO.png" group-title="Travel",Travel Mix (576p)
 http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-travel-mix/live_hq?offsetSeconds=0
-#EXTINF:-1 tvg-id="TVAS.ro@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/06/TV_AS.png/revision/latest/scale-to-width-down/1000?cb=20241117150631" group-title="Music",TV AS (576p)
-http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-tv-as/live_hq?offsetSeconds=0
+#EXTINF:-1 tvg-id="TVArad.ro@SD" tvg-logo="https://i.imgur.com/4yZV72X.png" group-title="General",TV Arad (576i)
+https://live.djemba.ro/memfs/1b01c281-126d-4787-9d51-9e06c96bb9f9.m3u8
+#EXTINF:-1 tvg-id="TVAS.ro@SD" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/0/06/TV_AS.png/revision/latest/scale-to-width-down/1000?cb=20241117150631" group-title="Music",TV AS
+https://hls01ns.antenaplay.ro/hls/tv-as-sd/index.m3u8
 #EXTINF:-1 tvg-id="TVBuzau.ro@SD" tvg-logo="https://i.imgur.com/GhFmUVO.png" group-title="General",TV Buzau (576p)
 http://78.96.33.89:8080
 #EXTINF:-1 tvg-id="TVPaprika.ro@SD" tvg-logo="https://i.imgur.com/3fuXBHT.png" http-referrer="https://cool-tv.net/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18" group-title="Lifestyle;Travel",TV Paprika (Romania)
@@ -387,8 +393,8 @@ https://tvr-tgmures.lg.mncdn.com/tvrtgmures/smil:tvrtgmures.smil/playlist.m3u8
 https://tvr-timisoara.lg.mncdn.com/tvrtimisoara/smil:tvrtimisoara.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="TVSat.ro@SD" tvg-logo="https://i.imgur.com/54GHZMv.png" group-title="Undefined",TVSat (576p) [Not 24/7]
 http://89.38.8.130:39443
-#EXTINF:-1 tvg-id="UTV.ro@SD" tvg-logo="https://i.imgur.com/aBdz9IT.png" group-title="Undefined",UTV (Romania) (576p)
-http://rpprod.hbbtv.cdn.cra.cz:8080/hbbTV/cme-ro-kapital/live_hq?offsetSeconds=0
+#EXTINF:-1 tvg-id="UTV.ro@HD" tvg-logo="https://i.imgur.com/aBdz9IT.png" group-title="Undefined",UTV (Romania) HD (1080i)
+https://vip-acasatv.online:25463/lrZuGxAuP3/6782859900/714.m3u8
 #EXTINF:-1 tvg-id="ViasatEpicDrama.uk@Romania" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e1/Viasat_Epic_Drama_2026.svg" http-referrer="https://cool-tv.net/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18" group-title="Series",Viasat Epic Drama Romania
 #EXTVLCOPT:http-referrer=https://cool-tv.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
