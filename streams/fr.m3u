@@ -33,8 +33,6 @@ https://stream2.mandarine.media/brionnaistv/brionnaistv/playlist.m3u8
 https://raw.githubusercontent.com/Paradise-91/ParaTV/refs/heads/main/streams/canalplus/cstar-dm.m3u8
 #EXTINF:-1 tvg-id="Caillou.fr@SD",Caillou
 https://do7nccdsswstc.cloudfront.net/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-1aso0bc668saa/a5233c83-f772-4a81-959a-45ec7877ef61/5.m3u8
-#EXTINF:-1 tvg-id="CanalPlusCinemas.fr@SD",Canal+ Cinemas (720p)
-http://151.80.18.177:86/Canal+_cinema_HD/index.m3u8
 #EXTINF:-1 tvg-id="CannesLerinsTV.fr@SD",Cannes Lérins TV (1080p)
 https://vdo2.pro-fhi.net:3628/live/uppodsfqlive.m3u8
 #EXTINF:-1 tvg-id="CinePlusClassic.fr@SD",Cine+ Classic
@@ -286,8 +284,6 @@ http://45.14.84.37/tv5monde/index.m3u8
 https://ert-ucdn.broadpeak-aas.com/bpk-tv/TV5/default/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeFranceBelgiumSwitzerlandMonaco.fr@SD",TV5Monde France Belgique Suisse Monaco (1080p) [Geo-blocked]
 https://ott.tv5monde.com/Content/HLS/Live/channel(fbs)/variant.m3u8
-#EXTINF:-1 tvg-id="TV5MondeFranceBelgiumSwitzerlandMonaco.fr@SD",TV5Monde France Belgium Switzerland Monaco
-http://5.78.65.164/TV5Monde/index.m3u8
 #EXTINF:-1 tvg-id="TV5MondeInfo.fr@SD",TV5Monde Info (1080p) [Geo-blocked]
 https://ott.tv5monde.com/Content/HLS/Live/channel(info)/variant.m3u8
 #EXTINF:-1 tvg-id="TV5MondeLatinAmerica.fr@SD",TV5Monde Latin America (720p)
@@ -369,9 +365,6 @@ https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/misc/europe-1-
 http://5.180.164.197:8080/W9/index.m3u8
 #EXTINF:-1 tvg-id="LCP.fr@SD",LCP (477p)
 https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/publicsenat/publicsenat-dm.m3u8
-#EXTINF:-1 tvg-id="Franceinfo.fr@SD",Franceinfo (1080p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
-https://raw.githubusercontent.com/Paradise-91/ParaTV/main/streams/francetv/franceinfo.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.fr@SD",Nickelodeon (504p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
 http://151.80.18.177:86/Nickelodeon_FR/index.m3u8
@@ -425,3 +418,9 @@ http://149.62.177.107:9999/TMC/index.m3u8
 http://149.62.177.107:9999/6ter/index.m3u8
 #EXTINF:-1 tvg-id="LCI.fr@SD",LCI
 http://149.62.177.107:9999/LCI/index.m3u8
+#EXTINF:-1 tvg-id="Eurosport1.fr@Spain",Eurosport 1 Spain (576p)
+http://45.134.141.161:2200/ARG/Eurosport_1_HD/index.m3u8
+#EXTINF:-1 tvg-id="Eurosport2.fr@Spain",Eurosport 2 Spain (1080p)
+http://45.134.141.161:2200/ARG/Eurosport_2_HD/index.m3u8
+#EXTINF:-1 tvg-id="Franceinfo.fr@SD",Franceinfo (1080p)
+http://149.62.177.107:9999/franceinfo:/index.m3u8
