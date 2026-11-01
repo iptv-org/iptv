@@ -1,79 +1,105 @@
-# IPTV [![update](https://github.com/iptv-org/iptv/actions/workflows/update.yml/badge.svg)](https://github.com/iptv-org/iptv/actions/workflows/update.yml)
+# IPTV Custom Curation
 
-Collection of publicly available IPTV (Internet Protocol television) channels from all over the world.
+This branch is a curated IPTV fork focused on quality, organization, and maintainability.
 
-## Table of contents
+The goal is to keep this repository useful for real users by organizing channels into intentional categories, documenting legal use, and improving the overall quality of the collection.
 
-- 🚀 [How to use?](#how-to-use)
-- 📺 [Playlists](#playlists)
-- 🗓 [EPG](#epg)
-- 🗄 [Database](#database)
-- 👨‍💻 [API](#api)
-- 📚 [Resources](#resources)
-- 💬 [Discussions](#discussions)
-- ❓ [FAQ](#faq)
-- 🛠 [Contribution](#contribution)
-- ⚖ [Legal](#legal)
-- © [License](#license)
+## What this branch adds
 
-## How to use?
+- curated channel categories
+- clearer metadata and source organization
+- improved documentation for maintainers
+- a cleaner structure for future updates
+- legal and usage guidance for public stream sources
 
-Simply paste the link to one of the playlists into [any video player](https://github.com/iptv-org/awesome-iptv#apps) that supports live streaming and press _Open_.
+## Repository structure
 
-![VLC Network Panel](https://github.com/iptv-org/iptv/raw/master/.readme/preview.png)
-
-## Playlists
-
-The main playlist containing all channels available in the repository can be found at:
-
+```text
+.
+├── README.md
+├── docs/
+│   ├── curation-rules.md
+│   └── legal.md
+├── custom/
+│   └── collections/
+│       ├── README.md
+│       ├── news.m3u
+│       └── sports.m3u
+├── streams/
+├── scripts/
+├── tests/
+├── package.json
+├── LICENSE
+└── CONTRIBUTING.md
 ```
-https://iptv-org.github.io/iptv/index.m3u
-```
 
-Links to other playlists can be found in the [PLAYLISTS.md](PLAYLISTS.md) file.
+## How to use
 
-## EPG
+1. Browse the curated collections in `custom/collections/`.
+2. Pick a playlist category that matches your interest.
+3. Load the playlist into a compatible IPTV player.
+4. Keep the source URLs updated and verify they still work.
 
-[Electronic Program Guide](https://en.wikipedia.org/wiki/Electronic_program_guide) for most of the channels can be downloaded using utilities published in the [iptv-org/epg](https://github.com/iptv-org/epg) repository.
+## Curated collections
 
-## Database
+This branch focuses on categories such as:
 
-All channel data is taken from the [iptv-org/database](https://github.com/iptv-org/database) repository. If you find any errors please open a new [issue](https://github.com/iptv-org/database/issues) there.
+- news
+- sports
+- entertainment
+- movies
+- kids
+- documentaries
+- regional/local channels
 
-## API
+You can extend this structure as needed, but the goal is to keep the repo organized and maintainable.
 
-The API documentation can be found in the [iptv-org/api](https://github.com/iptv-org/api) repository.
+## Maintenance rules
 
-## Resources
+Please follow these rules before adding new content:
 
-Links to other useful IPTV-related resources can be found in the [iptv-org/awesome-iptv](https://github.com/iptv-org/awesome-iptv) repository.
+- confirm the stream source is active and valid
+- avoid duplicate entries
+- keep channel names consistent
+- group channels by type or region
+- prefer quality over quantity
+- document any source-specific notes in the relevant collection file
 
-## Discussions
+## Legal note
 
-If you have a question or idea, welcome to the [Discussions](https://github.com/orgs/iptv-org/discussions).
+This repository is intended for legally available public IPTV links and personal, lawful usage.
 
-## FAQ
+Do not add:
 
-The answers to the most popular questions can be found in the [FAQ.md](FAQ.md) file.
+- pirated streams
+- unauthorized re-broadcasts
+- content without clear rights or permission
+
+See the legal guide for more details: `docs/legal.md`
 
 ## Contribution
 
-Please make sure to read the [Contributing Guide](CONTRIBUTING.md) before sending an issue or making a pull request.
+If you want to improve the project:
 
-And thank you to everyone who has already contributed!
+1. create a new branch
+2. add or improve a collection
+3. validate the playlist formatting
+4. open a pull request with a clear description
 
-### Backers
+## Recommended validation
 
-<a href="https://opencollective.com/iptv-org"><img src="https://opencollective.com/iptv-org/backers.svg?width=890" /></a>
-
-### Contributors
-
-<a href="https://github.com/iptv-org/iptv/graphs/contributors"><img src="https://opencollective.com/iptv-org/contributors.svg?width=890" /></a>
-
-## Legal
-
-No video files are stored in this repository. The repository simply contains user-submitted links to publicly available video stream URLs, which to the best of our knowledge have been intentionally made publicly by the copyright holders. If any links in these playlists infringe on your rights as a copyright holder, they may be removed by opening an [issue](https://github.com/iptv-org/iptv/issues/new?template=6_copyright-claim.yml). However, note that we have **no control** over the destination of the link, and just removing the link from the playlist will not remove its contents from the web. Note that linking does not directly infringe copyright because no copy is made on the site providing the link, and thus this is **not** a valid reason to send a DMCA notice to GitHub. To remove this content from the web, you should contact the web host that's actually hosting the content (**not** GitHub, nor the maintainers of this repository).
+```bash
+npm install
+npm run lint
+npm run test
+npm run playlist:validate
+npm run playlist:lint
+```
 
 ## License
 
-[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](LICENSE)
+This project remains under the repository license and follows the original project terms.
+
+---
+
+This custom branch is intentionally focused on IPTV organization and curation. If you later want a separate movies/series repository, that should be a separate project rather than mixed into this one.
