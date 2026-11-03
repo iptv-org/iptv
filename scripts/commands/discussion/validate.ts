@@ -86,7 +86,7 @@ async function main() {
     for (const filePath of files) {
       const content = await streamsStorage.load(filePath)
       const lines = content.split(/\r?\n/)
-      const lineIndex = lines.findIndex(line => line.includes(streamId))
+      const lineIndex = lines.findIndex(line => line.includes(`tvg-id="${streamId}"`))
       if (lineIndex !== -1) {
         const permalink = `https://github.com/${repo}/blob/${sha}/streams/${filePath}#L${lineIndex + 1}-L${lineIndex + 2}`
         comment = `A link to the "${streamId}" stream is already in the playlist: ${permalink}`
