@@ -28,7 +28,9 @@ describe('discussion:validate', () => {
     const result = readResultJson()
     expect(result.status).toBe('fulfilled')
     expect(result.label).toBe('check:failed')
-    expect(result.comment).toContain('https://github.com/test-owner/test-repo/blob/main/')
+    expect(result.comment).toContain(
+      'https://github.com/test-owner/test-repo/blob/main/streams/br.m3u#L4-L5'
+    )
     expect(result.close).toBe('true')
   })
 
