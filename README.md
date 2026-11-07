@@ -22,6 +22,8 @@ Simply paste the link to one of the playlists into [any video player](https://gi
 
 ![VLC Network Panel](https://github.com/iptv-org/iptv/raw/master/.readme/preview.png)
 
+For step-by-step instructions for specific players, see [Using playlists in media players](docs/players.md).
+
 ## Playlists
 
 The main playlist containing all channels available in the repository can be found at:
