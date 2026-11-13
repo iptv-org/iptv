@@ -25,7 +25,7 @@ export class CategoriesGenerator implements Generator {
   }
 
   async generate() {
-    const streams = this.streams
+    const streams = this.streams.filter((stream: Stream) => stream.isSFW())
 
     this.categories.forEach(async (category: sdk.Models.Category) => {
       const categoryStreams = streams

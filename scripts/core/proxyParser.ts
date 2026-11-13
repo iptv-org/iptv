@@ -22,8 +22,8 @@ export class ProxyParser {
 
     if (parsed.username || parsed.password) {
       result.auth = {}
-      if (parsed.username) result.auth.username = parsed.username
-      if (parsed.password) result.auth.password = parsed.password
+      if (parsed.username) result.auth.username = decodeURIComponent(parsed.username)
+      if (parsed.password) result.auth.password = decodeURIComponent(parsed.password)
     }
 
     return result

@@ -43,8 +43,8 @@ Another difference from internal playlists is that public playlists include only
 Additionally, if the link includes a valid [stream ID](./stream-id.md), the channel logo, category, broadcast country and language will be added to the description. For example:
 
 ```
-#EXTM3U x-tvg-url="https://example.com/guide.xml”
-#EXTINF:-1 tvg-id="ExampleTV.us@SD” tvg-logo="https://example.com/logo.png” group-title="Movies”,Example TV (720p)
+#EXTM3U x-tvg-url="https://example.com/guide.xml"
+#EXTINF:-1 tvg-id="ExampleTV.us@SD" tvg-logo="https://example.com/logo.png" group-title="Movies",Example TV (720p)
 https://example.com/playlist.m3u8
 ```
 

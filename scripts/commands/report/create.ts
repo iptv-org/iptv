@@ -130,7 +130,11 @@ async function main() {
 
     if (!streamUrl) result.status = status.MISSING_STREAM_URL
     else if (streamsGroupedByUrl.missing(streamUrl)) result.status = status.NONEXISTENT_LINK
-    else if (channelId && data.channelsKeyById.missing(channelId))
+    else if (
+      channelId &&
+      !issue.dataSet.isDeleted('stream_id') &&
+      data.channelsKeyById.missing(channelId)
+    )
       result.status = status.INVALID_CHANNEL_ID
 
     report.add(result)

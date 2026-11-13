@@ -46,11 +46,22 @@ export function normalizeURL(url: string): string {
     return url.replace(/\s/g, '+')
   }
 
+  let decoded: string
   try {
-    return decodeURIComponent(normalized).replace(/\s/g, '+')
+    // decodeURI keeps escapes like %2F, %3F and %23, which would change the URL if decoded
+    decoded = decodeURI(normalized)
   } catch {
-    return normalized.replace(/\s/g, '+')
+    decoded = normalized
   }
+
+  // "+" means a space only in the query; in the path it is a plus sign
+  const queryStart = decoded.indexOf('?')
+  if (queryStart === -1) return decoded.replace(/\s/g, '%20')
+
+  return (
+    decoded.slice(0, queryStart).replace(/\s/g, '%20') +
+    decoded.slice(queryStart).replace(/\s/g, '+')
+  )
 }
 
 function isInsideDirectory(rootDir: string, target: string): boolean {
@@ -88,8 +99,8 @@ export function truncate(string: string, limit: number = 100) {
 type StreamInfo = {
   resolution: { width: number; height: number }
   bandwidth: number
-  frameRate: number
-  codecs: string
+  frameRate?: number
+  codecs?: string
 }
 
 export async function getStreamInfo(
@@ -151,6 +162,10 @@ export async function getStreamInfo(
 
   if (!data) return undefined
 
+  return parseStreamInfo(url, data)
+}
+
+export function parseStreamInfo(url: string, data: string): StreamInfo | undefined {
   let info: StreamInfo | undefined
 
   if (url.includes('.m3u8')) {
@@ -162,7 +177,7 @@ export async function getStreamInfo(
       if (playlist && playlist.isMasterPlaylist && playlist.variants.length) {
         const v = orderBy(playlist.variants, ['bandwidth'], ['desc'])[0]
 
-        if (v && v.resolution && v.frameRate && v.codecs) {
+        if (v && v.resolution) {
           info = {
             resolution: { width: v.resolution.width, height: v.resolution.height },
             bandwidth: v.bandwidth,
@@ -175,22 +190,26 @@ export async function getStreamInfo(
       // do nothing
     }
   } else if (url.includes('.mpd')) {
-    const manifest = parseManifest(data, {
-      manifestUri: url,
-      eventHandler: ({ type, message }) => console.log(`${type}: ${message}`)
-    })
+    try {
+      const manifest = parseManifest(data, {
+        manifestUri: url,
+        eventHandler: ({ type, message }) => console.log(`${type}: ${message}`)
+      })
 
-    const playlist = orderBy(manifest.playlists, [p => p.attributes.BANDWIDTH], ['desc'])[0]
+      const playlist = orderBy(manifest.playlists, [p => p.attributes.BANDWIDTH], ['desc'])[0]
 
-    if (playlist) {
-      const attr = playlist.attributes
+      if (playlist) {
+        const attr = playlist.attributes
 
-      info = {
-        resolution: { width: attr.RESOLUTION.width, height: attr.RESOLUTION.height },
-        bandwidth: attr.BANDWIDTH,
-        frameRate: attr['FRAME-RATE'],
-        codecs: attr.CODECS
+        info = {
+          resolution: { width: attr.RESOLUTION.width, height: attr.RESOLUTION.height },
+          bandwidth: attr.BANDWIDTH,
+          frameRate: attr['FRAME-RATE'],
+          codecs: attr.CODECS
+        }
       }
+    } catch {
+      // do nothing
     }
   }
 

@@ -4,7 +4,7 @@ import { Storage } from '@freearhey/storage-js'
 import { PlaylistParser } from '../../core'
 import { data, loadData } from '../../api'
 import { ROOT_DIR } from '../../constants'
-import { isURI } from '../../utils.js'
+import { getStoragePath, isURI } from '../../utils.js'
 import { Stream } from '../../models'
 import * as sdk from '@iptv-org/sdk'
 import chalk from 'chalk'
@@ -34,7 +34,7 @@ async function main() {
 
   logger.info('loading streams...')
   const selectedFiles = program.args.length
-    ? program.args
+    ? program.args.map((filepath: string) => getStoragePath(filepath, ROOT_DIR))
     : await rootStorage.list('streams/**/*.m3u')
   const selectedStreams = await parser.parse(selectedFiles)
   logger.info(`found ${selectedStreams.count()} streams`)

@@ -21,9 +21,9 @@ export class SourcesGenerator implements Generator {
   }
 
   async generate() {
-    const files: Dictionary<Stream[]> = this.streams.groupBy((stream: Stream) =>
-      stream.getFilename()
-    )
+    const files: Dictionary<Stream[]> = this.streams
+      .filter((stream: Stream) => stream.isSFW())
+      .groupBy((stream: Stream) => stream.getFilename())
 
     for (const filename of files.keys()) {
       if (!filename) continue

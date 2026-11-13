@@ -30,6 +30,19 @@ describe('playlist:edit', () => {
       checkStdout((error as ExecError).stdout)
     }
   })
+
+  it('keeps the stream titles when saving the playlist', () => {
+    const cmd = `${ENV_VAR} npm run playlist:edit --- tests/__data__/output/playlist.m3u`
+    try {
+      execSync(cmd, { encoding: 'utf8' })
+    } catch {
+      // NOTE: for Windows only
+    }
+
+    const content = fs.readFileSync('tests/__data__/output/playlist.m3u', 'utf8')
+    expect(content).toContain('tvg-id="HewadTV.af",Hewad TV (720p) [Not 24/7]')
+    expect(content).toContain('tvg-id="",Télévision française 1 (480p)')
+  })
 })
 
 function checkStdout(stdout: string) {
