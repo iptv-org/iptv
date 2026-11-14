@@ -41,7 +41,7 @@ export function isURI(string: string): boolean {
 export function normalizeURL(url: string): string {
   let normalized: string
   try {
-    normalized = normalizeUrl(url, { stripWWW: false })
+    normalized = normalizeUrl(url, { stripWWW: false, sortQueryParameters: false })
   } catch {
     return url.replace(/\s/g, '+')
   }

@@ -67,6 +67,9 @@ describe('playlist:format', () => {
     expect(output).toContain('http://example.com/TVP%20Wilno%20HD/index.m3u8')
     expect(output).toContain('http://example.com/a%2Fb/index.m3u8')
     expect(output).toContain('http://example.com/index.m3u8?id=1%232')
+    expect(output).toContain(
+      'http://example.com/index.m3u8?name=TV%2B&url=http%3A%2F%2Fexample.org%2Fa.m3u8%3Fk%3D1%26exp%3D2'
+    )
   })
 })
 
