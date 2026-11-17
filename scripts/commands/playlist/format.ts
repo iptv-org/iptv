@@ -9,6 +9,7 @@ import { loadData, data } from '../../api'
 import cliProgress from 'cli-progress'
 import { eachLimit } from 'async'
 import os from 'node:os'
+import { sortStreams } from '../../core/sortStreams'
 
 program
   .argument('[filepath...]', 'Path to file to format')
@@ -110,16 +111,7 @@ async function main() {
   progressBar.stop()
 
   logger.info('sorting links...')
-  streams = streams.sortBy(
-    [
-      (stream: Stream) => stream.title,
-      (stream: Stream) => (stream.isGeoBlocked ? -1 : 0),
-      (stream: Stream) => (stream.isNot247 ? -1 : 0),
-      (stream: Stream) => stream.getVerticalResolution(),
-      (stream: Stream) => stream.url
-    ],
-    ['asc', 'desc', 'desc', 'desc', 'asc']
-  )
+  streams = sortStreams(streams)
 
   logger.info('saving...')
   const groupedStreams = streams.groupBy((stream: Stream) => stream.getFilepath())
