@@ -6,9 +6,11 @@ import { Logger, Collection } from '@freearhey/core'
 import { Storage } from '@freearhey/storage-js'
 import { PlaylistParser } from '../../core'
 import * as sdk from '@iptv-org/sdk'
+import { sortStreams } from '../../core/sortStreams'
 
 const processedIssues = new Collection<Issue>()
 const skippedIssues = new Collection<Issue>()
+const changedFiles = new Set<string>()
 const logger = new Logger({ level: 5 })
 
 let streams = new Collection<Stream>()
@@ -67,6 +69,7 @@ async function saveStreams() {
   for (const filepath of groupedStreams.keys()) {
     let filteredStreams = new Collection<Stream>(groupedStreams.get(filepath))
     filteredStreams = filteredStreams.filter((stream: Stream) => stream.removed === false)
+    if (changedFiles.has(filepath)) filteredStreams = sortStreams(filteredStreams)
 
     const playlist = new Playlist(filteredStreams, { public: false, raw: true })
     await streamsStorage.save(filepath, playlist.toString())
@@ -126,6 +129,7 @@ async function removeStream(issue: Issue) {
       const found: Stream = streams.first((_stream: Stream) => _stream.url === link.trim())
       if (found) {
         found.removed = true
+        changedFiles.add(found.getFilepath())
         changed = true
         log.info(`The stream with the URL "${link}" has been removed from the playlists`)
       } else {
@@ -164,6 +168,7 @@ async function editStream(issue: Issue) {
 
   cacheData()
 
+  const previousFilepath = stream.getFilepath()
   stream.updateWithIssue(data)
 
   stream.setGuides(apiData.guidesGroupedByStreamId.get(stream.getId()))
@@ -182,6 +187,8 @@ async function editStream(issue: Issue) {
 
   log.info('The stream description has been updated')
 
+  changedFiles.add(previousFilepath)
+  changedFiles.add(stream.getFilepath())
   processedIssues.add(issue)
 }
 
@@ -290,5 +297,6 @@ async function addStream(issue: Issue) {
 
   log.info('The stream has been added to playlists')
 
+  changedFiles.add(stream.getFilepath())
   processedIssues.add(issue)
 }
