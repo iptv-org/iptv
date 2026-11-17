@@ -130,8 +130,6 @@ https://ssai.aniview.com/api/v1/hls/stream.m3u8?AVS_SSAIID=67c0c39764ad6f7dab07a
 #EXTINF:-1 tvg-id="France3.fr@National",France 3
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://85.14.32.26:8800/udp/239.100.10.144:5000
-#EXTINF:-1 tvg-id="France3.fr@CotedAzur",France 3 Cote d'Azur (1080p)
-http://89.187.185.76:8080/France3/index.m3u8
 #EXTINF:-1 tvg-id="France3.fr@Lorraine",France 3 Lorraine (1080p)
 http://5.180.164.197:8080/FRANCE3/index.m3u8
 #EXTINF:-1 tvg-id="France24.fr@French",France 24 (1080p)
@@ -260,8 +258,6 @@ http://45.84.187.172:3001/udp/239.10.10.76:5000
 https://test.946985.filegear-sg.me/proxy/749755700e4ed9c6
 #EXTINF:-1 tvg-id="MonteCarloDigitalTelevision.fr@HD",Monte Carlo Digital Television (1080p)
 https://fl718492-exthls-p1.flovp.com/fl718492/live/live.m3u8
-#EXTINF:-1 tvg-id="MyZenTV.fr@SD",MyZen TV (1080p)
-https://cdn-ue1-prod.tsv2.amagi.tv/linear/amg01255-secomcofites-my-myzen-en-plex/playlist.m3u8
 #EXTINF:-1 tvg-id="NRJHits.fr@SD",NRJ Hits
 https://test.946985.filegear-sg.me/proxy/a23981548880f405
 #EXTINF:-1 tvg-id="P2MTV.fr@SD",P2M TV (720p)
@@ -385,10 +381,6 @@ https://streamer01.myvideoplace.tv/streamer02/hls/MDS_VIA_PAD_301117.m3u8
 https://srv.webtvmanager.fr:3970/live/viatelepaeselive.m3u8
 #EXTINF:-1 tvg-id="VosgesTV.fr@SD",Vosges Télévision (576p) [Not 24/7]
 https://vosgestv.live-kd.com/live/vosgestv/vosgestv/playlist.m3u8
-#EXTINF:-1 tvg-id="W9.fr@SD",W9 (1086p)
-http://5.180.164.197:8080/W9/index.m3u8
-#EXTINF:-1 tvg-id="W9.fr@SD",W9 (1080p)
-https://origin-m6web.live.6cloud.fr/out/v1/6play/6play-w9/cmaf_q2hyb21h/hls-short-hd.m3u8
 #EXTINF:-1 tvg-id="W9.fr@SD",W9 (720p)
 https://origin-m6web.live.6cloud.fr/out/v1/6play/6play-w9/cmaf_q2hyb21h/hls-short-hd720.m3u8
 #EXTINF:-1 tvg-id="zenith.fr@HD",zenith (1080p)
@@ -489,3 +481,57 @@ https://r.eu.cdn-redge.media/livehls/oeu/mt/live/france_3/live.livx/playlist.m3u
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/nickelodeon/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="NickelodeonJunior.fr@SD",Nickelodeon Junior (720p)
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/nickelodeon_junior/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="ComedyCentral.fr@HD",Comedy Central HD (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/comedy_central_en/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="TV5MondeInfo.fr@SD",TV5Monde Info (1080p)
+http://c9851ec-rbm-hilv-fsly.cdn.redbee.live/L4/b21193ce/2ee2c40a.isml/.m3u8
+#EXTINF:-1 tvg-id="TF1.fr@SD",TF1
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tf1/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="France3.fr@CotedAzur",France 3 Cote d'Azur (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/france_3_nice/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="ParisPremiere.fr@SD",Paris Premiere (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/paris_premiere/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="AB1.fr@SD",AB1 (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/ab1/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="TMC.fr@SD",TMC (1080p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tmc_fr/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="W9.fr@SD",W9 (1080p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/w9_fr/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="Action.fr@SD",Action (540p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/action/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="Teva.fr@SD",Teva (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/teva/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="SerieClub.fr@SD",Serie Club (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/serie_club/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="MyZenTV.fr@SD",MyZen TV (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/myzen_tv/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="M6Music.fr@SD",M6 Music (1080p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/m6_music_hits/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="TV5MondeFranceBelgiumSwitzerlandMonaco.fr@SD",TV5Monde France Belgium Switzerland Monaco (720p)
+https://n-5-2.eu.cdn-redge.media/livehls/oeu/mt/live/tv5_monde_fbs/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="Animaux.fr@SD",Animaux (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/animaux/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="Mangas.fr@SD",Mangas (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/mangas/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="Melody.fr@SD",Melody (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/melody/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="ChassePeche.fr@SD",Chasse & Peche (540p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/chasse_et_peche/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="UshuaiaTV.fr@SD",Ushuaia TV (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/ushuaia/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="TVBreizh.fr@SD",TV Breizh (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/tv_breizh/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="CrimeDistrict.fr@SD",Crime District (540p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/crime_district/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="ScienceVieTV.fr@SD",Science & Vie TV (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/science_et_vie/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="HistoireTV.fr@SD",Histoire TV (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/histoire/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="ToutelHistoire.fr@SD",Toute l'Histoire (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/toute_lhistoire/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="Automotolachaine.fr@SD",Automoto la chaine (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/automoto/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="LEquipe.fr@SD",L'Equipe (1080p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/l_equipe/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="CStar.fr@SD",C Star (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/cstar/live.livx/playlist.m3u8
