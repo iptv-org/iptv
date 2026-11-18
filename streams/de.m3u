@@ -41,6 +41,12 @@ https://augsburgtv.iptv-playoutcenter.de/augsburgtv/augsburgtv.stream_1/playlist
 https://9e754fa707344ccca6d84955c8fcaf36.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RlaxxTV-eu_AutenticHistory/playlist.m3u8
 #EXTINF:-1 tvg-id="AutenticTravel.de@SD",Autentic Travel (1080p)
 https://cb0c87cc605942ff9766a4e6744bbadc.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/RlaxxTV-eu_AutenticTravel/playlist.m3u8
+#EXTINF:-1 tvg-id="AXNBlack.de@SD",AXN Black
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://46.244.99.71:8181/stream/35/index.m3u8
+#EXTINF:-1 tvg-id="AXNWhite.de@HD",AXN White
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://46.244.99.71:8181/stream/50/index.m3u8
 #EXTINF:-1 tvg-id="BadenTV.de@SD",Baden TV (1080p) [Not 24/7]
 http://badentv-stream2.siebnich.info/rtplive/btv.stream/live.m3u8
 #EXTINF:-1 tvg-id="BadenTV.de@SD",Baden TV (1080p) [Not 24/7]
@@ -95,6 +101,8 @@ http://178.27.12.3:9981/stream/channelid/269948147?profile=pass
 http://109.85.181.77:9981/stream/channelid/652495718?profile=pass
 #EXTINF:-1 tvg-id="DMAX.de@SD",DMAX (576p) [Geo-blocked]
 http://5.180.164.197:8080/DMAX/index.m3u8
+#EXTINF:-1 tvg-id="DMAX.de@HD",DMAX HD (576p)
+https://s6.hopslan.com/dmaxX/index.m3u8
 #EXTINF:-1 tvg-id="DMF.de@SD",DMF (1080p) [Not 24/7]
 https://d-m-f.iptv-playoutcenter.de/dmf/dmf1/playlist.m3u8
 #EXTINF:-1 tvg-id="Dokusat.de@SD",Dokusat (1080p)
@@ -204,8 +212,12 @@ https://mdrtvsahls.akamaized.net/hls/live/2016879/mdrtvsa/index.m3u8
 https://mdrtvthhls.akamaized.net/hls/live/2016880/mdrtvth/index.m3u8
 #EXTINF:-1 tvg-id="MoreThanSportsTV.de@SD",More Than Sports TV (1080p)
 https://mts1.iptv-playoutcenter.de/mts/mts-web/playlist.m3u8
+#EXTINF:-1 tvg-id="Motorvision.de@SD",Motorvision (1080i)
+https://mvg-mv.otteravision.com/mvg/mv/mv_1080p.m3u8
 #EXTINF:-1 tvg-id="Motorvision.de@SD",Motorvision TV (720p)
 https://stream.ads.ottera.tv/playlist.m3u8?network_id=535
+#EXTINF:-1 tvg-id="MotorvisionPlus.de@SD",Motorvision+ (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/motorvision_en/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="MTV.de@SD",MTV
 https://ma.anixa.tv/clips/stream/mtv/playlist.php
 #EXTINF:-1 tvg-id="MunchenTV.de@SD",München TV (1080p) [Not 24/7]
@@ -224,12 +236,18 @@ https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_mv/master.m3u8
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_nds/master.m3u8
 #EXTINF:-1 tvg-id="NDRFernsehen.de@SchleswigHolstein",NDR Schleswig-Holstein (720p)
 https://mcdn.ndr.de/ndr/hls/ndr_fs/ndr_sh/master.m3u8
+#EXTINF:-1 tvg-id="NickJr.de@SD",Nick Jr.
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://94.130.48.67:8042/stream/111/index.m3u8
 #EXTINF:-1 tvg-id="NickComedyCentralPlus1.de@SD",Nick/Comedy Central +1
 http://90.183.52.46:4000/play/a046/index.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.de@SD",Nickelodeon
 https://ma.anixa.tv/clips/stream/nickelodeon/playlist.php
 #EXTINF:-1 tvg-id="Nickelodeon.de@SD",Nickelodeon Deutschland [Geo-blocked]
 https://unilivemtveu-lh.akamaihd.net/i/nickde_1@448749/master.m3u8
+#EXTINF:-1 tvg-id="Nicktoons.de@SD",Nicktoons
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://94.130.48.67:8042/stream/112/index.m3u8
 #EXTINF:-1 tvg-id="NiederbayernTV.de@SD",Niederbayern TV (720p)
 https://stream03.welocal.stream/stream/sat-nby/ngrp:sat-nby.stream_all/index.m3u8
 #EXTINF:-1 tvg-id="NiederbayernTVDeggendorfStraubing.de@SD",Niederbayern TV Deggendorf & Straubing (1080p)
@@ -393,6 +411,8 @@ https://s6.hopslan.com/superX/index.m3u8
 https://dash4.antik.sk/live/test_rtl_zwei_tizen/playlist.m3u8
 #EXTINF:-1 tvg-id="RTLZwei.de@HD",RTL Zwei HD (576p)
 https://s6.hopslan.com/rtl2q/index.m3u8
+#EXTINF:-1 tvg-id="RTLup.de@SD",RTLup (576p)
+https://s6.hopslan.com/rtltupz/index.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen1.de@SD",Saarland Fernsehen 1 (1080p)
 https://saarland1.iptv-playoutcenter.de/saarland1/saarland1.stream_1/playlist.m3u8
 #EXTINF:-1 tvg-id="SaarlandFernsehen2.de@SD",Saarland Fernsehen 2 (720p) [Not 24/7]
@@ -405,6 +425,24 @@ https://58de7a369a9c4.streamlock.net/salvetv/ngrp:stream_720p_web/playlist.m3u8
 https://h056.video-stream-hosting.de/easycast7-live/_definst_/mp4:livestreamhd20/playlist.m3u8?ref=
 #EXTINF:-1 tvg-id="SenderNeuJerusalem.de@SD",Sender Neu Jerusalem (576p)
 https://bild-und-ton.stream/snj-de/snj-de.smil/.m3u8
+#EXTINF:-1 tvg-id="SkySportF1.de@SD",Sky Sport F1
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://94.130.48.67:8042/stream/51/index.m3u8
+#EXTINF:-1 tvg-id="SkySportGolf.de@SD",Sky Sport Golf
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://94.130.48.67:8042/stream/56/index.m3u8
+#EXTINF:-1 tvg-id="SkySportMix.de@SD",Sky Sport Mix
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://94.130.48.67:8042/stream/53/index.m3u8
+#EXTINF:-1 tvg-id="SkySportNews.de@SD",Sky Sport News
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://94.130.48.67:8042/stream/49/index.m3u8
+#EXTINF:-1 tvg-id="SkySportTennis.de@SD",Sky Sport Tennis
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://94.130.48.67:8042/stream/55/index.m3u8
+#EXTINF:-1 tvg-id="SkySportTopEvent.de@SD",Sky Sport Top Event
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://94.130.48.67:8042/stream/50/index.m3u8
 #EXTINF:-1 tvg-id="SonnenklarTV.de@SD",Sonnenklar TV (1080p)
 http://euvia.cdn.ses-ps.com/HLS-Live/index.m3u8
 #EXTINF:-1 tvg-id="SonusFM.de@SD",Sonus FM TV (1080p) [Not 24/7]
@@ -419,6 +457,8 @@ https://bild-und-ton.stream/sophiatv-es/smil:sophia-tv-es.smil/playlist.m3u8
 https://bild-und-ton.stream/sophiatv-fr/smil:sophia-tv-fr.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="SophiaTV.it@SD",Sophia TV Italy (720p)
 https://bild-und-ton.stream/sophiatv-it/smil:sophia-tv-it.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="Sport1.de@SD",Sport1 (540p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/sport1/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="SRFernsehen.de@SD",SR Fernsehen (720p)
 https://srfs.akamaized.net/hls/live/689649/srfsgeo/index.m3u8
 #EXTINF:-1 tvg-id="SRF.de@SD",SRF (1080p)
@@ -462,6 +502,8 @@ https://tvaktuellr.iptv-playoutcenter.de/tvaktuellr/tvaktuellr.stream_1/playlist
 #EXTINF:-1 tvg-id="TVRUS.de@SD",TVRUS
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://213.91.179.28:8000/play/a082
+#EXTINF:-1 tvg-id="TVRUSPlus.de@HD",TVRUS+ (576p)
+http://91.235.255.32:8001/1:0:1:6AC:3138:13E:820000:0:0:0
 #EXTINF:-1 tvg-id="TVRUSPlus.de@HD",TVRUS+
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.3
 http://83.228.75.166:8000/play/a0aq
@@ -471,6 +513,8 @@ https://srde.akamaized.net/hls/live/2031842/visualradio-unserding/index.m3u8
 https://vmtv.iptv-playoutcenter.de/vmtv/vmtv1/playlist.m3u8
 #EXTINF:-1 tvg-id="VOX.de@SD",VOX
 https://dash4.antik.sk/live/test_vox_tizen/playlist.m3u8
+#EXTINF:-1 tvg-id="Voxup.de@SD",Voxup (576p)
+https://s6.hopslan.com/voxupz/index.m3u8
 #EXTINF:-1 tvg-id="WDR1Live.de@SD",WDR 1 Live (720p)
 https://wdrfs247.akamaized.net/hls/live/681509/wdr_msl4_fs247/index.m3u8
 #EXTINF:-1 tvg-id="WDR1Live.de@SD",WDR 1 Live (720p)
@@ -509,8 +553,14 @@ https://live.yoltv.com/hls/stream.m3u8
 https://dash4.antik.sk/live/test_zdf_avc_25p/playlist.m3u8
 #EXTINF:-1 tvg-id="ZDF.de@SD",ZDF (720p) [Geo-blocked]
 https://zdf-hls-15.akamaized.net/hls/live/2016498/de/high/master.m3u8
+#EXTINF:-1 tvg-id="ZDF.de@HD",ZDF HD (540p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/zdf/live.livx/playlist.m3u8
+#EXTINF:-1 tvg-id="ZDFinfo.de@SD",ZDFinfo (720p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/zdfinfo/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="ZDFinfo.de@SD",ZDFinfo (720p) [Geo-blocked]
 https://zdf-hls-17.akamaized.net/hls/live/2016500/de/high/master.m3u8
+#EXTINF:-1 tvg-id="ZDFneo.de@SD",ZDFneo (1080p)
+https://r.eu.cdn-redge.media/livehls/oeu/mt/live/zdfneo/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="ZDFneo.de@SD",ZDFneo (720p)
 http://5.180.164.197:8080/ZDFNEO/index.m3u8
 #EXTINF:-1 tvg-id="ZDFneo.de@SD",ZDFneo
@@ -519,53 +569,3 @@ http://178.27.12.3:9981/stream/channelid/1351813628?profile=pass
 https://zdf-hls-16.akamaized.net/hls/live/2016499/de/high/master.m3u8
 #EXTINF:-1 tvg-id="ZweiMusicTelevision.de@SD",Zwei Music Television
 https://zweiapp.b-cdn.net/1080p/index.m3u8
-#EXTINF:-1 tvg-id="Motorvision.de@SD",Motorvision (1080i)
-https://mvg-mv.otteravision.com/mvg/mv/mv_1080p.m3u8
-#EXTINF:-1 tvg-id="TVRUSPlus.de@HD",TVRUS+ (576p)
-http://91.235.255.32:8001/1:0:1:6AC:3138:13E:820000:0:0:0
-#EXTINF:-1 tvg-id="AXNBlack.de@SD",AXN Black
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://46.244.99.71:8181/stream/35/index.m3u8
-#EXTINF:-1 tvg-id="AXNWhite.de@HD",AXN White
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://46.244.99.71:8181/stream/50/index.m3u8
-#EXTINF:-1 tvg-id="NickJr.de@SD",Nick Jr.
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/111/index.m3u8
-#EXTINF:-1 tvg-id="Nicktoons.de@SD",Nicktoons
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/112/index.m3u8
-#EXTINF:-1 tvg-id="Voxup.de@SD",Voxup (576p)
-https://s6.hopslan.com/voxupz/index.m3u8
-#EXTINF:-1 tvg-id="RTLup.de@SD",RTLup (576p)
-https://s6.hopslan.com/rtltupz/index.m3u8
-#EXTINF:-1 tvg-id="DMAX.de@HD",DMAX HD (576p)
-https://s6.hopslan.com/dmaxX/index.m3u8
-#EXTINF:-1 tvg-id="SkySportNews.de@SD",Sky Sport News
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/49/index.m3u8
-#EXTINF:-1 tvg-id="SkySportF1.de@SD",Sky Sport F1
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/51/index.m3u8
-#EXTINF:-1 tvg-id="SkySportTopEvent.de@SD",Sky Sport Top Event
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/50/index.m3u8
-#EXTINF:-1 tvg-id="SkySportMix.de@SD",Sky Sport Mix
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/53/index.m3u8
-#EXTINF:-1 tvg-id="SkySportTennis.de@SD",Sky Sport Tennis
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/55/index.m3u8
-#EXTINF:-1 tvg-id="SkySportGolf.de@SD",Sky Sport Golf
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://94.130.48.67:8042/stream/56/index.m3u8
-#EXTINF:-1 tvg-id="Sport1.de@SD",Sport1 (540p)
-https://r.eu.cdn-redge.media/livehls/oeu/mt/live/sport1/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="ZDFneo.de@SD",ZDFneo (1080p)
-https://r.eu.cdn-redge.media/livehls/oeu/mt/live/zdfneo/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="ZDFinfo.de@SD",ZDFinfo (720p)
-https://r.eu.cdn-redge.media/livehls/oeu/mt/live/zdfinfo/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="ZDF.de@HD",ZDF HD (540p)
-https://r.eu.cdn-redge.media/livehls/oeu/mt/live/zdf/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="MotorvisionPlus.de@SD",Motorvision+ (720p)
-https://r.eu.cdn-redge.media/livehls/oeu/mt/live/motorvision_en/live.livx/playlist.m3u8

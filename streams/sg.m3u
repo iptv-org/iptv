@@ -11,11 +11,16 @@ https://freem3u.xyz/api/live/play.m3u8?vid=215
 http://202.150.165.66:8088/play/301-AXN/index.m3u8
 #EXTINF:-1 tvg-id="AXNAsia.sg@Taiwan",AXN Asia Taiwan (1080p)
 http://125.227.210.55:4050/VideoInput/play.ts
+#EXTINF:-1 tvg-id="AXNAsia.sg@Thailand",AXN Asia Thailand
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://103.253.74.210:7070/stream/89/index.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkAsia.sg@SD",Cartoon Network Asia (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
 https://cdn4.skygo.mn/live/disk1/Cartoon_Network/HLSv3-FTA/Cartoon_Network.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkAsia.sg@SD",Cartoon Network Asia
 http://202.150.165.66:8088/play/200-CartoonNetwork/index.m3u8
+#EXTINF:-1 tvg-id="CartoonNetworkAsia.sg@Thailand",Cartoon Network Asia Thailand
+http://103.253.74.210:7070/stream/118/index.m3u8
 #EXTINF:-1 tvg-id="CartoonitoAsia.sg@SD",Cartoonito Asia (720p)
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
 http://cdn4.skygo.mn/live/disk1/Boomerang/HLSv3-FTA/Boomerang.m3u8
@@ -63,25 +68,20 @@ http://202.150.165.66:8088/play/101-HBOSignature/index.m3u8
 https://amg02159-amg02159c7-samsung-in-4001.playouts.now.amagi.tv/playlist/amg02159-kcglobal-kcm-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="meWATCHLIVE1.sg@SD",meWATCH LIVE 1 (1080p)
 https://tglmp04.akamaized.net/out/v1/898b1cbac7c747e3b1f3deb460e9b67e/manifest.mpd
-#EXTINF:-1 tvg-id="Suria.sg@SD",Suria [Geo-blocked]
-https://d11h6a6nhl9kj9.cloudfront.net/hls/clr4ctv_suria/master.m3u8
-#EXTINF:-1 tvg-id="TechStorm.sg@SD",Tech Storm (720p) [Geo-blocked]
-https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(abe4ead2-1a88-4330-9f41-382fcf94bba2)/index.m3u8
-#EXTINF:-1 tvg-id="ZeeTVAsiaPacific.sg@SD",Zee TV Asia Pacific (720p)
-https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeTVHDAPAC.m3u8
-#EXTINF:-1 tvg-id="ZooMoo.sg@SD",ZooMoo (1080p)
-http://168.196.127.137:6001/play/a03k/index.m3u8
-#EXTINF:-1 tvg-id="AXNAsia.sg@Thailand",AXN Asia Thailand
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://103.253.74.210:7070/stream/89/index.m3u8
-#EXTINF:-1 tvg-id="TLCSoutheastAsia.sg@SD",TLC Southeast Asia
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
-http://103.253.74.210:7070/stream/108/index.m3u8
 #EXTINF:-1 tvg-id="NickJrAsia.sg@SD",Nick Jr. Asia
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
 http://103.253.74.210:7070/stream/116/index.m3u8
 #EXTINF:-1 tvg-id="NickelodeonAsia.sg@SD",Nickelodeon Asia
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
 http://103.253.74.210:7070/stream/117/index.m3u8
-#EXTINF:-1 tvg-id="CartoonNetworkAsia.sg@Thailand",Cartoon Network Asia Thailand
-http://103.253.74.210:7070/stream/118/index.m3u8
+#EXTINF:-1 tvg-id="Suria.sg@SD",Suria [Geo-blocked]
+https://d11h6a6nhl9kj9.cloudfront.net/hls/clr4ctv_suria/master.m3u8
+#EXTINF:-1 tvg-id="TechStorm.sg@SD",Tech Storm (720p) [Geo-blocked]
+https://cdn-telkomsel-01.akamaized.net/Content/HLS/Live/channel(abe4ead2-1a88-4330-9f41-382fcf94bba2)/index.m3u8
+#EXTINF:-1 tvg-id="TLCSoutheastAsia.sg@SD",TLC Southeast Asia
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
+http://103.253.74.210:7070/stream/108/index.m3u8
+#EXTINF:-1 tvg-id="ZeeTVAsiaPacific.sg@SD",Zee TV Asia Pacific (720p)
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ZeeTVHDAPAC.m3u8
+#EXTINF:-1 tvg-id="ZooMoo.sg@SD",ZooMoo (1080p)
+http://168.196.127.137:6001/play/a03k/index.m3u8

@@ -1,13 +1,22 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="CartoonNetwork.jp@HD",Cartoon Network HD
+http://103.255.250.188:5002/cs25.m3u8?channel=zhongying&gid=cs25&token=guoziyun
 #EXTINF:-1 tvg-id="CGNTVJapan.jp@SD",CGNTV Japan (1080p)
 #EXTVLCOPT:http-referrer=http://japan.cgntv.net/HD_player_jp.html
 https://d2p4mrcwl6ly4.cloudfront.net/out/v1/8d50f69fdbbf411a8d302743e4263716/CGNWebLiveJP.m3u8
+#EXTINF:-1 tvg-id="DisneyChannel.jp@SD",Disney Channel
+http://103.255.250.188:5002/bs24.m3u8?channel=zhongying&gid=bs24&token=guoziyun
+#EXTINF:-1 tvg-id="FujiTV.jp@JOCXDTV",Fuji TV [Not 24/7]
+#EXTVLCOPT:http-referrer=https://mov3.co/
+https://fujitv4.mov3.co/hls/fujitv.m3u8
 #EXTINF:-1 tvg-id="",Gaki no Tsukai (English Subs) (720p)
 https://hamada.gaki-no-tsukai.stream/hls/test.m3u8
 #EXTINF:-1 tvg-id="GSTV.jp@SD",GSTV (720p)
 https://japaneast.av.mk.io/mediakindcdn-mediakind/ca01a143-f823-4432-b670-c22ff9643ce4/index.qfm/manifest(format=m3u8-cmaf)
 #EXTINF:-1 tvg-id="",JOJG-DTV (1080p)
 https://tv-stream-test.daydreamer-json.cc/fe8bf835820fb530467f75a9cb761504/hevc/playlist.m3u8
+#EXTINF:-1 tvg-id="MTV.jp@SD",MTV
+http://103.255.250.188:5002/cs18.m3u8?channel=zhongying&gid=cs18&token=guoziyun
 #EXTINF:-1 tvg-id="NHKGeneralTV.jp@JOJGDTV",NHK General TV JOJG-DTV (1080i)
 https://tv-stream-test.daydreamer-json.cc/fe8bf835820fb530467f75a9cb761504/master.m3u8
 #EXTINF:-1 tvg-id="NHKWorldPremium.jp@SD",NHK World Premium (720p)
@@ -36,28 +45,19 @@ https://nhk.lls.pbs.org/index.m3u8
 https://ntv5.mov3.co/hls/ntv.m3u8
 #EXTINF:-1 tvg-id="QVC.jp@SD",QVC (1080p)
 https://d1flvb4iqlercm.cloudfront.net/live/live_1080p_2nd.m3u8
+#EXTINF:-1 tvg-id="SakuranboTV.jp@JOCYDTV",Sakuranbo TV (1080i)
+https://tv-stream-test.daydreamer-json.cc/stream/bd2dd29080c36c9b01338d329156febe/master.m3u8
 #EXTINF:-1 tvg-id="ShopChannel.jp@SD",Shop Channel (1080p) [Not 24/7]
 https://stream3.shopch.jp/HLS/master.m3u8
-#EXTINF:-1 tvg-id="TVTokyo.jp@JOTXDTV",TV Tokyo
-#EXTVLCOPT:http-referrer=https://mov3.co/
-https://tvtokyo.mov3.co/hls/tvtokyo.m3u8
-#EXTINF:-1 tvg-id="Weathernews.jp@SD",Weathernews (720p)
-https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8
-#EXTINF:-1 tvg-id="TVUYamagata.jp@JOWIDTV",TV-U Yamagata (1080i)
-https://tv-stream-test.daydreamer-json.cc/stream/1668b5a43560598b385ccf33fd2d5f43/master.m3u8
 #EXTINF:-1 tvg-id="TVAsahi.jp@JOEXDTV",TV Asahi [Not 24/7]
 #EXTVLCOPT:http-referrer=https://mov3.co/
 https://tvasahi.mov3.co/hls/tvasahi.m3u8
-#EXTINF:-1 tvg-id="FujiTV.jp@JOCXDTV",Fuji TV [Not 24/7]
+#EXTINF:-1 tvg-id="TVTokyo.jp@JOTXDTV",TV Tokyo
 #EXTVLCOPT:http-referrer=https://mov3.co/
-https://fujitv4.mov3.co/hls/fujitv.m3u8
+https://tvtokyo.mov3.co/hls/tvtokyo.m3u8
+#EXTINF:-1 tvg-id="TVUYamagata.jp@JOWIDTV",TV-U Yamagata (1080i)
+https://tv-stream-test.daydreamer-json.cc/stream/1668b5a43560598b385ccf33fd2d5f43/master.m3u8
+#EXTINF:-1 tvg-id="Weathernews.jp@SD",Weathernews (720p)
+https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index.m3u8
 #EXTINF:-1 tvg-id="YTSYamagataTV.jp@JOYIDTV",YTS Yamagata TV (1080i)
 https://tv-stream-test.daydreamer-json.cc/stream/407fd00ebd2a059c9cd1ea3fa7156097/master.m3u8
-#EXTINF:-1 tvg-id="SakuranboTV.jp@JOCYDTV",Sakuranbo TV (1080i)
-https://tv-stream-test.daydreamer-json.cc/stream/bd2dd29080c36c9b01338d329156febe/master.m3u8
-#EXTINF:-1 tvg-id="MTV.jp@SD",MTV
-http://103.255.250.188:5002/cs18.m3u8?token=guoziyun&gid=cs18&channel=zhongying
-#EXTINF:-1 tvg-id="CartoonNetwork.jp@HD",Cartoon Network HD
-http://103.255.250.188:5002/cs25.m3u8?token=guoziyun&gid=cs25&channel=zhongying
-#EXTINF:-1 tvg-id="DisneyChannel.jp@SD",Disney Channel
-http://103.255.250.188:5002/bs24.m3u8?token=guoziyun&gid=bs24&channel=zhongying
