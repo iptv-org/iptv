@@ -15,13 +15,23 @@ https://az.tvstream.az/hls/stream9/index.m3u8
 http://185.32.44.154:80/aztv/index.m3u8
 #EXTINF:-1 tvg-id="AzTV.az@SD" tvg-logo="https://yoda.az/logos/aztv.svg",Az TV
 https://stream8.cinerama.uz/1455/tracks-v1a1/mono.m3u8
-#EXTINF:-1 tvg-id="AzadTV.az@SD",Azad TV (1080p)
+#EXTINF:-1 tvg-id="İdman.az@HD" tvg-logo="https://yoda.az/logos/idman.svg",İdman TV HD
+http://172.110.210.14:80/gQUkHt52/jAZUsz6/2021633
+#EXTINF:-1 tvg-id="İdman.az@SD" tvg-logo="https://yoda.az/logos/idman.svg",İdman TV
+http://185.32.44.154:80/idmanaz/index.m3u8
+#EXTINF:-1 tvg-id="İdman.az@HD" tvg-logo="https://yoda.az/logos/idman.svg",İdman TV
+#EXTVLCOPT:http-referrer=https://tvstream.az/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36
+https://idman.tvstream.az/hls/stream4/stream.m3u8
+#EXTINF:-1 tvg-id="Medeniyyet.az@SD" tvg-logo="https://yoda.az/logos/medeniyyet.svg",Medeniyyet TV
+http://185.32.44.154:80/medeniyyet/index.m3u8
+#EXTINF:-1 tvg-id="AzadTV.az@HD" tvg-logo="https://yoda.az/logos/atv.svg",Azad TV HD
 https://lives.atv.az:5443/ATV_TV_STREAM/streams/atvcanli.m3u8
-#EXTINF:-1 tvg-id="AzStarTV.ca@SD",Azstar TV HD
+#EXTINF:-1 tvg-id="AzStarTV.ca@SD" tvg-logo="https://azstartv.com/images/logo.png",Azstar TV HD
 https://live.livestreamtv.ca/azstar/amlst:azstar/playlist.m3u8
 #EXTINF:-1 tvg-id="BakuTV.az@SD" tvg-logo="https://yoda.az/logos/bakutv.webp",Baku.TV
 https://rtmp.baku.tv/hls/bakutv.m3u8
-#EXTINF:-1 tvg-id="Baku@HD" tvg-logo="https://yoda.az/logos/bakutv.webp",Baku TV (1080p)
+#EXTINF:-1 tvg-id="Baku@HD" tvg-logo="https://yoda.az/logos/bakutv.webp",Baku TV HD
 https://rtmp.baku.tv/hls/bakutv_1080p.m3u8
 #EXTINF:-1 tvg-id="CBCSport.az@HD",CBC Sport HD [Geo-blocked]
 https://cbcsports-live.lg.mncdn.com/cbcsports_live/cbcsports/playlist.m3u8
