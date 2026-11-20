@@ -403,9 +403,12 @@ export class Stream extends sdk.Models.Stream {
   }
 
   getLogos(): Collection<sdk.Models.Logo> {
-    const logos = super.getLogos()
+    let logos = super.getLogos()
 
     if (logos.isEmpty()) return new Collection()
+
+    const logosInUse = logos.filter((logo: sdk.Models.Logo) => logo.in_use)
+    if (logosInUse.isNotEmpty()) logos = logosInUse
 
     function format(logo: sdk.Models.Logo): number {
       const levelByFormat = { SVG: 0, PNG: 3, APNG: 1, WebP: 1, AVIF: 1, JPEG: 2, GIF: 1 }
