@@ -58,6 +58,7 @@ async function main() {
   })
 
   logger.info('removing duplicates...')
+  const filepaths = streams.map((stream: Stream) => stream.getFilepath()).uniq()
   streams = streams.uniqBy(stream => stream.url)
 
   logger.info('removing wrong id...')
@@ -115,11 +116,8 @@ async function main() {
 
   logger.info('saving...')
   const groupedStreams = streams.groupBy((stream: Stream) => stream.getFilepath())
-  for (const filepath of groupedStreams.keys()) {
+  for (const filepath of filepaths.all()) {
     const streams = new Collection(groupedStreams.get(filepath))
-
-    if (streams.isEmpty()) return
-
     const playlist = new Playlist(streams, { public: false, raw: true })
     await streamsStorage.save(filepath, playlist.toString())
   }

@@ -71,6 +71,19 @@ describe('playlist:format', () => {
       'http://example.com/index.m3u8?name=TV%2B&url=http%3A%2F%2Fexample.org%2Fa.m3u8%3Fk%3D1%26exp%3D2'
     )
   })
+
+  it('removes a duplicate that was the only stream in its file', () => {
+    fs.emptyDirSync('tests/__data__/output')
+    fs.copySync('tests/__data__/input/playlist_format_duplicates', 'tests/__data__/output/streams')
+
+    const cmd = `${ENV_VAR} npm run playlist:format`
+    execSync(cmd, { encoding: 'utf8' })
+
+    expect(content('tests/__data__/output/streams/a.m3u')).toContain(
+      'https://example.com/alpha.m3u8?a=1&b=2'
+    )
+    expect(content('tests/__data__/output/streams/b.m3u')).toBe('#EXTM3U\r\n')
+  })
 })
 
 function content(filepath: string) {
