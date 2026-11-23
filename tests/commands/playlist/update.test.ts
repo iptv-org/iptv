@@ -53,6 +53,14 @@ describe('playlist:update', () => {
     expect(content(filepath)).toBe(original)
   })
 
+  it('keeps the main feed in the stream ID when an edit gives only the channel ID', () => {
+    execSync(`${ENV_VAR} npm run playlist:update --silent`, { encoding: 'utf8' })
+
+    expect(content('tests/__data__/output/streams/uk.m3u')).toContain(
+      '#EXTINF:-1 tvg-id="BBCNews.uk@SD",BBC News (720p) [Not 24/7]'
+    )
+  })
+
   it('can update playlists', async () => {
     let cmd = `${ENV_VAR} npm run playlist:update`
     if (!process.env.DEBUG) cmd += ' --silent'
