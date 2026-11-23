@@ -52,7 +52,7 @@ export class Stream extends sdk.Models.Stream {
 
       if (channelId) {
         this.channel = channelId
-        this.feed = feedId
+        this.feed = feedId || this.getChannel()?.getMainFeed()?.id || null
         this.updateTvgId().updateTitle().updateFilepath()
       }
     }

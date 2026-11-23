@@ -2643,5 +2643,21 @@ module.exports = [
     ],
     state: 'open',
     body: '### Stream URL\n\nhttp://l6.cloudskep.com/rikcy/rik2/playlist.m3u8\n\n### Stream ID\n\n~\n\n### Quality\n\n_No response_\n\n### Live 24/7\n\nNone\n\n### Geo-blocked\n\nNone\n\n### HTTP User-Agent\n\n_No response_\n\n### HTTP Referrer\n\n_No response_\n\n### Notes\n\n_No response_\n\n### Contributing Guide\n\n- [X] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)'
+  },
+  {
+    url: 'https://api.github.com/repos/iptv-org/iptv/issues/59575',
+    html_url: 'https://github.com/iptv-org/iptv/issues/59575',
+    number: 59575,
+    title: 'Edit: BBC News HD',
+    labels: [
+      {
+        name: 'approved'
+      },
+      {
+        name: 'streams:edit'
+      }
+    ],
+    state: 'open',
+    body: '### Stream URL (required)\n\nhttp://1111296894.rsc.cdn77.org/LS-ATL-54548-6/index.m3u8\n\n### Stream ID\n\nBBCNews.uk\n\n### Live 24/7\n\n_No response_\n\n### Geo-blocked\n\n_No response_\n\n### Quality\n\n_No response_\n\n### HTTP User Agent\n\n_No response_\n\n### HTTP Referrer\n\n_No response_\n\n### Notes\n\n_No response_\n\n### Contributing Guide\n\n- [x] I have read [Contributing Guide](https://github.com/iptv-org/iptv/blob/master/CONTRIBUTING.md)'
   }
 ]
