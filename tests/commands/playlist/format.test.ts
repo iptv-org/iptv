@@ -70,6 +70,9 @@ describe('playlist:format', () => {
     expect(output).toContain(
       'http://example.com/index.m3u8?name=TV%2B&url=http%3A%2F%2Fexample.org%2Fa.m3u8%3Fk%3D1%26exp%3D2'
     )
+    expect(output).toContain('http://example.com/a%2520b/index.m3u8')
+    expect(output).toContain('http://example.com/index.m3u8?token=50%25off')
+    expect(output).toContain('http://example.com/a%ZZ/index.m3u8?token=50%25off')
   })
 
   it('removes a duplicate that was the only stream in its file', () => {
