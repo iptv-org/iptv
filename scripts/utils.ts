@@ -59,10 +59,12 @@ function sortQueryParameters(url: string): string {
 }
 
 export function normalizeURL(url: string): string {
+  // decodeURI, here and inside normalize-url, would turn %25 into a bare "%", so it is swapped
+  // for a placeholder that is put back once the link is decoded
   let normalized: string
   try {
     normalized = sortQueryParameters(
-      normalizeUrl(url, { stripWWW: false, sortQueryParameters: false })
+      normalizeUrl(url.replace(/%25/gi, '\uE000'), { stripWWW: false, sortQueryParameters: false })
     )
   } catch {
     return url.replace(/\s/g, '+')
@@ -75,6 +77,7 @@ export function normalizeURL(url: string): string {
   } catch {
     decoded = normalized
   }
+  decoded = decoded.replace(/\uE000|%EE%80%80/gi, '%25')
 
   // "+" means a space only in the query; in the path it is a plus sign
   const queryStart = decoded.indexOf('?')
