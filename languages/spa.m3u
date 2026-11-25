@@ -1071,8 +1071,8 @@ https://cdn3.wowza.com/5/UWpORHhLSEs5SkJs/cerritos/G0010_002/playlist.m3u8
 http://player.cetelmon.tv/protecteddfd43c2f3a8b41f3f28582bf8993aca6/992_high.m3u8
 #EXTINF:-1 tvg-id="CGTNSpanish.cn@SD" tvg-logo="https://i.imgur.com/Poz3xfi.png" group-title="News",CGTN Spanish (1080p)
 https://espanol-liveali.cgtn.com/hls/LSveOGBaBw41Ea7ukkVAUdKQ220802LSTexu6xAuFH8VZNBLE1ZNEa220802cd/playlist.m3u8
-#EXTINF:-1 tvg-id="ChacraTV.ar@SD" tvg-logo="https://i.imgur.com/gy7AEfO.png" group-title="Outdoor",Chacra TV
-https://5f700d5b2c46f.streamlock.net/chacratv/chacratv/playlist.m3u8
+#EXTINF:-1 tvg-id="ChacraTV.ar@SD" tvg-logo="https://i.imgur.com/gy7AEfO.png" group-title="Outdoor",Chacra TV (1080p)
+https://media.cdnvid.com/public/1tgsjc7hs1kv.m3u8
 #EXTINF:-1 tvg-id="ChamameTV.ar@SD" tvg-logo="https://i.imgur.com/JigzJck.png" group-title="Music",Chamame TV
 https://srv4.zcast.com.br/chamametv/chamametv/playlist.m3u8
 #EXTINF:-1 tvg-id="CharapaTV.pe@SD" tvg-logo="https://i.imgur.com/tFRmMkf.png" group-title="General",Charapa TV (720p)
@@ -1416,8 +1416,6 @@ http://38.224.231.176:8000/play/a01j/index.m3u8
 http://38.134.250.110:8000/play/a003/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryScienceLatinAmerica.us@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Discovery_science_new_logo_2017.png/960px-Discovery_science_new_logo_2017.png" group-title="Science",Discovery Science Latin America (720p)
 http://45.171.64.30:6060/play/a007/index.m3u8
-#EXTINF:-1 tvg-id="DiscoveryScienceLatinAmerica.us@ColombiaPeru" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Discovery_science_new_logo_2017.png/960px-Discovery_science_new_logo_2017.png" group-title="Science",Discovery Science Latin America ColombiaPeru (720p)
-http://45.134.141.161:2200/ARG/Discovery_Science_HD/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryTheaterLatinAmerica.us@SD" tvg-logo="https://i.imgur.com/AqR0Jkn.png" group-title="Undefined",Discovery Theater Latin America (1080p)
 http://181.224.200.5:2277/play/a0bj/index.m3u8
 #EXTINF:-1 tvg-id="DiscoveryTurboLatinAmerica.us@Panregional" tvg-logo="https://i.imgur.com/1pQPxu3.png" group-title="Auto",Discovery Turbo Latin America (1080p)
@@ -1670,8 +1668,9 @@ https://barinaslive1.boldmss.com/ESPN/ESPN.isml/ESPN.m3u8
 https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/espn-mux/chunks.m3u8
 #EXTINF:-1 tvg-id="ESPNLatinAmerica.us@Colombia" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" group-title="Sports",ESPN Latin America Colombia (1080p)
 http://181.78.211.244:8005/play/a08q/index.m3u8
-#EXTINF:-1 tvg-id="ESPNLatinAmerica.us@Mexico" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" group-title="Sports",ESPN Latin America Mexico (1080p)
-http://168.228.44.241:9997/play/a06p/index.m3u8
+#EXTINF:-1 tvg-id="ESPNLatinAmerica.us@Mexico" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" group-title="Sports",ESPN Latin America Mexico
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+https://lilac19.pontiscloud.com/live/gt/ESPN/index.m3u8
 #EXTINF:-1 tvg-id="ESPNPremium.ar@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png" group-title="Sports",ESPN Premium
 http://45.134.141.161:2200/ARG/ESPN_Premium_Argentina_HD/tracks-v1a1/mono.m3u8
 #EXTINF:-1 tvg-id="ESPNPremium.ar@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png" group-title="Sports",ESPN Premium HD (1080p)
@@ -2756,7 +2755,7 @@ https://ntvcanal7.com.ar:81/dash/stream.mpd
 #EXTINF:-1 tvg-id="NortenaTv.ve@HD" tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjxdsPdnBB5hs1XZHDHtf0p8T861Vl1UlHE1ljD_IEtI9KlFtEAYsesMHh8RLuW6nIFLY&usqp=CAU" group-title="Entertainment",Nortena Tv (576p)
 https://lbgo.bozztv.com/ssh101/ssh101/nortenatv1234/playlist.m3u8
 #EXTINF:-1 tvg-id="Nortevision.es@SD" tvg-logo="https://i.imgur.com/C5SYw7B.png" group-title="Undefined",Nortevision (1080p)
-http://amaru.dyndns.org:8870/0.m3u8
+http://amaru.dyndns.org:8870/1.m3u8
 #EXTINF:-1 tvg-id="Noticias16.do@SD" tvg-logo="" group-title="News",Noticias 16 (720p) [Not 24/7]
 https://edge.essastream.com/noticias16/playlist.m3u8
 #EXTINF:-1 tvg-id="NoticiasRCN.co@SD" tvg-logo="https://i.imgur.com/FMX4QCM.png" group-title="News",Noticias RCN (720p)
@@ -3836,7 +3835,7 @@ https://183.giatvcdn.com/ssh101/ssh101/tele6/playlist.m3u8
 http://200.122.223.13:55000/play/tele-amiga-ses-6/index.m3u8
 #EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://i.imgur.com/G1pJZkC.png" group-title="General",Tele Antillas (480p)
 https://hls.tvabierta.net/hls/010.m3u8
-#EXTINF:-1 tvg-id="TeleAzul.do@HD" tvg-logo="https://imgur.com/a/cU7MHiu.jpg" group-title="General",Tele Azul (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleAzul.do@HD" tvg-logo="https://i.imgur.com/MR127FE.jpeg" group-title="General",Tele Azul (720p) [Not 24/7]
 https://cdn.streamingcpanel.com:3327/live/teleazullive.m3u8
 #EXTINF:-1 tvg-id="TeleDajabonTV.do@HD" tvg-logo="https://www.vivalivetv.com/public/files/shows/0/1/3822-294x165-FFFFFF.jpg" group-title="General",Tele Dajabon TV (720p) [Not 24/7]
 https://5790d294af2dc.streamlock.net/dajabon/dajabon/playlist.m3u8

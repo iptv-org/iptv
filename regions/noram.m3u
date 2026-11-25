@@ -1828,8 +1828,9 @@ http://tvsen7.aynascope.net/espn/index.m3u8
 http://85.237.89.160:9590/usa-s/ESPN-HD/index.m3u8
 #EXTINF:-1 tvg-id="ESPNDeportes.us@HD" tvg-logo="https://imgx.fubo.tv/station_logos/espn-hd-deportes_c.png" group-title="Sports",ESPN Deportes HD (720p)
 http://168.228.44.241:9998/play/a0dz/index.m3u8
-#EXTINF:-1 tvg-id="ESPNLatinAmerica.us@Mexico" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" group-title="Sports",ESPN Latin America Mexico (1080p)
-http://168.228.44.241:9997/play/a06p/index.m3u8
+#EXTINF:-1 tvg-id="ESPNLatinAmerica.us@Mexico" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" group-title="Sports",ESPN Latin America Mexico
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36
+https://lilac19.pontiscloud.com/live/gt/ESPN/index.m3u8
 #EXTINF:-1 tvg-id="ESPNU.us@HD" tvg-logo="https://i.imgur.com/HiBrysh.png" group-title="Sports",ESPNU HD (720p)
 http://85.237.89.160:9590/usa-s/ESPN-U-HD/index.m3u8
 #EXTINF:-1 tvg-id="eSportsMaxTV.ve@SD" tvg-logo="https://i.imgur.com/OprRgQN.png" group-title="Animation",eSports Max TV (1080p)
@@ -2676,7 +2677,7 @@ https://securestream10.champds.com/LIVE/KOCTCALIVE/KOCTCALIVE.m3u8
 #EXTINF:-1 tvg-id="KOCTChannel19.us@SD" tvg-logo="https://i.imgur.com/6C71KwP.png" group-title="Education",KOCT Channel 19 (720p)
 https://securestream10.champds.com/LIVE/KOCTCALIVE2/KOCTCALIVE2.m3u8
 #EXTINF:-1 tvg-id="KoreanCentralTelevision.kp@HD" tvg-logo="https://i.imgur.com/p02AEOF.png" group-title="General",Korean Central Television (1080p) [Not 24/7]
-https://live.koryocdn.org/kctv/index.m3u8
+https://stream.intchoson.com/kctv/index.m3u8
 #EXTINF:-1 tvg-id="KoreanCentralTelevision.kp@SD" tvg-logo="https://i.imgur.com/p02AEOF.png" http-referrer="https://kcnawatch.org/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.4044.138 Safari/537.36" group-title="General",Korean Central Television SD (576p)
 #EXTVLCOPT:http-referrer=https://kcnawatch.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.4044.138 Safari/537.36
@@ -3144,7 +3145,7 @@ https://reflect-mcsb-vod.cablecast.tv/live-16/live/live.m3u8
 https://mtchls.wns.live/hls/stream.m3u8
 #EXTINF:-1 tvg-id="MTV.fr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/MTV_2021_%28brand_version%29.svg/960px-MTV_2021_%28brand_version%29.svg.png" group-title="Entertainment",MTV (France) (720p)
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/mtv/live.livx/playlist.m3u8
-#EXTINF:-1 tvg-id="MTV.in@International" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MTV/images/LOGO_HD/image.png" http-referrer="https://bhoomtv.org/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36" group-title="Entertainment",MTV (India) International (576p)
+#EXTINF:-1 tvg-id="MTV.in@International" tvg-logo="https://dtil.tmsimg.com/assets/s143558_ld_h15_aa.png?lock=720x540" http-referrer="https://bhoomtv.org/" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36" group-title="Entertainment",MTV (India) International (576p)
 #EXTVLCOPT:http-referrer=https://bhoomtv.org/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
 https://yupp-music.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2cf5/index.m3u8
@@ -4739,7 +4740,7 @@ https://stream.oursnetworktv.com/latin/encoder53/playlist.m3u8
 https://183.giatvcdn.com/ssh101/ssh101/tele6/playlist.m3u8
 #EXTINF:-1 tvg-id="TeleAntillas.do@SD" tvg-logo="https://i.imgur.com/G1pJZkC.png" group-title="General",Tele Antillas (480p)
 https://hls.tvabierta.net/hls/010.m3u8
-#EXTINF:-1 tvg-id="TeleAzul.do@HD" tvg-logo="https://imgur.com/a/cU7MHiu.jpg" group-title="General",Tele Azul (720p) [Not 24/7]
+#EXTINF:-1 tvg-id="TeleAzul.do@HD" tvg-logo="https://i.imgur.com/MR127FE.jpeg" group-title="General",Tele Azul (720p) [Not 24/7]
 https://cdn.streamingcpanel.com:3327/live/teleazullive.m3u8
 #EXTINF:-1 tvg-id="TeleBoston.us@SD" tvg-logo="https://i.imgur.com/xeTtup8.png" group-title="Entertainment",Tele Boston (480p)
 https://tv2.fastcast4u.com:3238/live/radiotelebostonlive.m3u8
