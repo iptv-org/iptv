@@ -143,7 +143,7 @@ http://149.100.11.252:8000/play/a056/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36
 https://cdn4.skygo.mn/live/disk1/Cartoon_Network/HLSv3-FTA/Cartoon_Network.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkAsia.sg@Thailand" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation;Kids",Cartoon Network Asia Thailand
-http://103.253.74.210:7070/stream/118/index.m3u8
+http://103.148.210.190:8000/play/a14r
 #EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Hungary" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation;Kids",Cartoon Network CEE
 http://193.33.39.108:9007/play/a00l
 #EXTINF:-1 tvg-id="CartoonNetworkCEE.uk@Bulgary" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png" group-title="Animation;Kids",Cartoon Network CEE Bulgary
@@ -256,9 +256,6 @@ http://109.85.181.77:9981/stream/channelid/652495718?profile=pass
 http://88.212.7.14/live/disney_channel_hun/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.jp@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg" group-title="Kids",Disney Channel (Japan)
 http://103.255.250.188:5002/bs24.m3u8?channel=zhongying&gid=bs24&token=guoziyun
-#EXTINF:-1 tvg-id="DisneyChannel.nl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36" group-title="Kids",Disney Channel (Netherlands) (360p)
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
-https://lb.iptvnetwork.net/ls28/10014/playlist.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.pl@HD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" group-title="Kids",Disney Channel (Poland) HD (1080p)
 http://185.227.34.179:8080/disney-channel-hd/index.m3u8
 #EXTINF:-1 tvg-id="DisneyChannel.pt@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/3/3d/2022_Disney_Channel_logo.svg" group-title="Kids",Disney Channel (Portugal) (1080p)
@@ -506,6 +503,9 @@ https://stream8.cinerama.uz/1440/tracks-v1a1/mono.m3u8
 https://cdn10jtedge.indihometv.com/atm/DASH/mykids/manifest.mpd
 #EXTINF:-1 tvg-id="NCMEducationalKidsChannel.us@SD" tvg-logo="https://i.imgur.com/3YPvfPn.png" group-title="Education;Kids",NCM Educational & Kids Channel
 https://reflect-npa.cablecast.tv/live-9/live/live.m3u8
+#EXTINF:-1 tvg-id="NickJrClub.au@AU" tvg-logo="https://images.pluto.tv/channels/5f121460b73ac6000719fbaf/colorLogoPNG_1748348856602.png" http-user-agent="otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56" group-title="Kids",Nick Jr Club [Geo-blocked]
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+https://i.mjh.nz/.r/10-nick-jr.m3u8
 #EXTINF:-1 tvg-id="NickJr.hr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nick_Jr._logo_2023_(outline).svg/960px-Nick_Jr._logo_2023_(outline).svg.png" group-title="Kids",Nick Jr. (Croatia) (576p)
 http://5.175.174.49:1234/stream/maxtvhr/nickjrhr/master.m3u8
 #EXTINF:-1 tvg-id="NickJr.cz@SD" tvg-logo="https://i.imgur.com/KT4tdQs.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" group-title="Kids",Nick Jr. (Czech Republic)
@@ -521,6 +521,8 @@ http://88.212.7.14/live/nick_junior_hun/index.m3u8
 http://102.129.186.182:81/nick/index.m3u8
 #EXTINF:-1 tvg-id="NickJr.pl@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nick_Jr._logo_2023_(outline).svg/960px-Nick_Jr._logo_2023_(outline).svg.png" group-title="Kids",Nick Jr. (Poland) (576i)
 http://92.114.85.87:8013/play/a004/index.m3u8
+#EXTINF:-1 tvg-id="NickJr.ro@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nick_Jr._logo_2023_(outline).svg/960px-Nick_Jr._logo_2023_(outline).svg.png" group-title="Kids",Nick Jr. (Romania) (576i)
+http://91.235.165.117:8001/play/a038/index.m3u8
 #EXTINF:-1 tvg-id="NickJr.ru@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nick_Jr._logo_2023_(outline).svg/960px-Nick_Jr._logo_2023_(outline).svg.png" group-title="Kids",Nick Jr. (Russia) (576p)
 http://stream.mcquack.net/220/index.m3u8
 #EXTINF:-1 tvg-id="NickJr.us@East" tvg-logo="https://i.imgur.com/KT4tdQs.png" group-title="Kids",Nick Jr. (United States) (720p)
@@ -592,6 +594,8 @@ http://85.237.89.159:3342/ar-s/Nickelodeon/index.m3u8
 #EXTINF:-1 tvg-id="NickelodeonAsia.sg@SD" tvg-logo="https://i.imgur.com/E84jnP8.png" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36" group-title="Kids",Nickelodeon Asia
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/156.0.0.0 Safari/537.36
 http://103.253.74.210:7070/stream/117/index.m3u8
+#EXTINF:-1 tvg-id="NickelodeonAsia.sg@Indonesia" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="Kids",Nickelodeon Asia Indonesia (720p)
+http://103.165.207.108:8000/play/a00v/index.m3u8
 #EXTINF:-1 tvg-id="NickelodeonCIS.kz@SD" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="Kids",Nickelodeon CIS (1080p)
 https://stream8.cinerama.uz/1500/playlist.m3u8
 #EXTINF:-1 tvg-id="NickelodeonClasico.us@LatAm" tvg-logo="https://images.pluto.tv/channels/5ddd7c348520b40009c347e2/colorLogoPNG_1750157294622.png" group-title="Kids",Nickelodeon Clasico (720p)
@@ -602,6 +606,8 @@ https://jmp2.uk/plu-6824ce10c5d53e1351ceb8d1.m3u8
 https://jmp2.uk/plu-67f3eb800a1beb98767ca748.m3u8
 #EXTINF:-1 tvg-id="Nickelodeonenespanol.us@SD" tvg-logo="https://images.pluto.tv/channels/5d8d08395f39465da6fb3ec4/colorLogoPNG.png" group-title="Kids",Nickelodeon en espanol
 https://jmp2.uk/plu-5d8d08395f39465da6fb3ec4.m3u8
+#EXTINF:-1 tvg-id="NickelodeonFlanders.be@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nickelodeon_2009_logo.svg/960px-Nickelodeon_2009_logo.svg.png" group-title="Kids",Nickelodeon Flanders
+http://93.92.17.139:9981/stream/channelid/788918401?profile=pass
 #EXTINF:-1 tvg-id="NickelodeonJunior.fr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Nickelodeon_Junior.png/960px-Nickelodeon_Junior.png" group-title="Kids",Nickelodeon Junior (720p)
 https://r.eu.cdn-redge.media/livehls/oeu/mt/live/nickelodeon_junior/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="NickelodeonLatinAmerica.us@Panregional" tvg-logo="https://i.imgur.com/E84jnP8.png" group-title="Kids",Nickelodeon Latin America (1080p)
@@ -623,6 +629,9 @@ https://bob.x1colegal.com/hls/stream.m3u8
 #EXTINF:-1 tvg-id="NickToons90s.au@AU" tvg-logo="https://images.pluto.tv/channels/64805525536e0c0008a19ca8/colorLogoPNG.png" http-user-agent="otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56" group-title="Kids",NickToons 90s [Geo-blocked]
 #EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
 https://i.mjh.nz/.r/10-nicktoons-90s.m3u8
+#EXTINF:-1 tvg-id="NickToons.au@AU" tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Nicktoons_Logo_2023.svg/1920px-Nicktoons_Logo_2023.svg.png" http-user-agent="otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56" group-title="Kids",NickToons [Geo-blocked]
+#EXTVLCOPT:http-user-agent=otg/1.5.1 (AppleTv Apple TV 4; tvOS16.0; appletv.client) libcurl/7.58.0 OpenSSL/1.0.2o zlib/1.2.11 clib/1.8.56
+https://i.mjh.nz/.r/10-nicktoons.m3u8
 #EXTINF:-1 tvg-id="Nicktoons.cz@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/d/d8/Nicktoons_UK_Logo_2014.png" group-title="Kids",Nicktoons (Czech Republic)
 http://88.212.15.50/live/test_nicktoons/playlist.m3u8
 #EXTINF:-1 tvg-id="Nicktoons.fr@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/be/Nicktoons_Logo_2023.svg" group-title="Kids",Nicktoons (France) (720p)
