@@ -133,8 +133,6 @@ https://jmp2.uk/plu-61b793ccf571b80007b7a610.m3u8
 https://turnerlive.warnermediacdn.com/hls/live/2023185/aswest/noslate/VIDEO_1_5128000.m3u8
 #EXTINF:-1 tvg-id="AERadioTV.cl@SD" tvg-logo="https://i.imgur.com/425dj2i.jpeg" group-title="Music",AE Radio TV (720p) [Not 24/7]
 https://tls-cl.cdnz.cl/aeradio/live/playlist.m3u8
-#EXTINF:-1 tvg-id="AFVEspanol.us@SD" tvg-logo="https://i.imgur.com/HUK4WXC.png" group-title="Comedy",AFV Espanol (720p) [Not 24/7]
-https://linear-46.frequency.stream/dist/plex/46/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="AgapeTV.sv@SD" tvg-logo="https://i.imgur.com/DsGmrnc.png" group-title="Religious",Agape TV (720p)
 https://5fc584f3f19c9.streamlock.net/agape/smil:agape.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="AGRFMTV.py@SD" tvg-logo="https://i.imgur.com/tg6EjTU.png" group-title="General",AGR FM TV (720p)
@@ -2180,14 +2178,12 @@ https://2-fss-1.streamhoster.com/pl_122/200226-1427780-1/playlist.m3u8
 http://45.4.1.201:8000/play/a1ai/index.m3u8
 #EXTINF:-1 tvg-id="L1Max.pe@SD" tvg-logo="https://i.imgur.com/2fziU2B.png" group-title="Sports",L1 Max (1080p)
 http://190.93.224.42/LIGA-1-MAX/index.m3u8
-#EXTINF:-1 tvg-id="La1.es@SD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 (1086p)
-https://cdn.stmify.com/zapitv/stream/LA_1/la1_4k.mpd
-#EXTINF:-1 tvg-id="La1.es@UHD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 UHD (2160p)
-http://185.47.212.25:8080/tdp_HD/index.m3u8
-#EXTINF:-1 tvg-id="La1Canarias.es@SD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 Canarias (720p)
-https://ztnr.rtve.es/ztnr/5190066.m3u8
-#EXTINF:-1 tvg-id="La1Catalunya.es@SD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 Catalunya (720p)
-https://ztnr.rtve.es/ztnr/3293681.m3u8
+#EXTINF:-1 tvg-id="La1.es@SD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 (1080p) [Geo-blocked]
+https://rtvelivestream.rtve.es/rtvesec/la1/la1_main_dvr.m3u8
+#EXTINF:-1 tvg-id="La1Canarias.es@SD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 Canarias (720p) [Geo-blocked]
+https://rtvelivestream.rtve.es/rtvesec/can/la1_can_main.m3u8
+#EXTINF:-1 tvg-id="La1Catalunya.es@SD" tvg-logo="https://i.ibb.co/MxJNPHsn/La-1.png" group-title="General;Public",La 1 Catalunya (720p) [Geo-blocked]
+https://rtvelivestream.rtve.es/rtvesec/cat/la1_cat_main.m3u8
 #EXTINF:-1 tvg-id="La2.es@SD" tvg-logo="https://i.ibb.co/rfsr9PSh/La-2.png" group-title="General;Public",La 2 (1080p)
 https://cdn.jsdelivr.net/gh/Ignac16/voxel-tv@main/src/constants/channels/la2.m3u8
 #EXTINF:-1 tvg-id="La2Canarias.es@SD" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Logo_La_2_Canarias.png/960px-Logo_La_2_Canarias.png" group-title="General;Public",La 2 Canarias (720p)
@@ -3617,8 +3613,8 @@ https://5d0d1d7a6be9e.streamlock.net/sicom/canal1/playlist.m3u8
 https://streamunoapp.com:3809/live/siembratvlive.m3u8
 #EXTINF:-1 tvg-id="SiembraTV.ve@SD" tvg-logo="https://i.imgur.com/zRX91Xr.png" group-title="General",Siembra TV (Venezuela) (720p) [Not 24/7]
 https://cloud2.streaminglivehd.com:1936/siembratv/siembratv/playlist.m3u8
-#EXTINF:-1 tvg-id="SigloXXITV.bo@SD" tvg-logo="https://i.imgur.com/d1N2WzD.png" group-title="General",Siglo XXI TV (576p)
-http://190.181.61.93:8000/play/a00b/index.m3u8
+#EXTINF:-1 tvg-id="SigloXXITV.bo@SD" tvg-logo="https://i.imgur.com/d1N2WzD.png" group-title="General",Siglo XXI TV (720p)
+https://edge.enhdtv.com/sigloxxi/index.m3u8
 #EXTINF:-1 tvg-id="SILTV.gt@SD" tvg-logo="https://i.imgur.com/tWZXRVu.png" http-referrer="https://www.facebook.com/Siltv32" http-user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome" group-title="General",SIL TV (1080p)
 #EXTVLCOPT:http-referrer=https://www.facebook.com/Siltv32
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, como Gecko) Chrome
@@ -4814,8 +4810,8 @@ https://videoserver.tmcreativos.com:19360/visionnoticias/visionnoticias.m3u8
 https://cloudvideo.servers10.com:8081/8198/index.m3u8
 #EXTINF:-1 tvg-id="Volver.ar@SD" tvg-logo="https://i.imgur.com/PYvSZMb.png" group-title="Undefined",Volver (576p)
 http://138.121.113.175:8000/play/a04r/index.m3u8
-#EXTINF:-1 tvg-id="VosTV.bo@SD" tvg-logo="https://i.imgur.com/Cm1Xjeq.png" group-title="Undefined",Vos TV (Bolivia) (720p)
-http://15.204.246.24:8080/VOSTVHD/index.m3u8
+#EXTINF:-1 tvg-id="VosTV.bo@SD" tvg-logo="https://i.imgur.com/Cm1Xjeq.png" group-title="Undefined",Vos TV (Bolivia) (1080p)
+https://edge.enhdtv.com/vostv/index.m3u8
 #EXTINF:-1 tvg-id="VosTV.ni@SD" tvg-logo="https://i.imgur.com/Lbi87xv.png" group-title="General",Vos TV (Nicaragua) (720p) [Not 24/7]
 http://ott.streann.com:8080/loadbalancer/services/public/channels/59e60c4997381ef50d15c041/playlist.m3u8
 #EXTINF:-1 tvg-id="VosyTV.ec@SD" tvg-logo="https://i.imgur.com/294FDCB.png" group-title="Music",Vos y TV (720p) [Not 24/7]
