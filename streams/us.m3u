@@ -1,4 +1,4 @@
-#EXTM3U
+#EXTM3U x-tvg-url="https://epg.kanya.io/us/guide.xml.gz"
 #EXTINF:-1 tvg-id="3ABNLatino.us@SD",3ABN Latino (1080p)
 http://138.59.177.78:9999/play/a0a3/index.m3u8
 #EXTINF:-1 tvg-id="6WiseTv.us@SD",6 Wise Tv (720p)
@@ -384,6 +384,10 @@ https://turnerlive.warnermediacdn.com/hls/live/2023160/tooneast/noslate/VIDEO_3_
 #EXTINF:-1 tvg-id="CartoonNetworkLatinAmerica.us@SouthAtlanticHD",Cartoon Network Latin America
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 VLC/3.0.18 LibVLC/3.0.18
 https://bantel-cdn1.iptvperu.tv:1936/btnscrtn/cartoonnetwork.stream/chunks.m3u8
+#EXTINF:-1 tvg-id="CartoonNetworkLatinAmerica.us@Brazil",Cartoon Network Latin America Brazil
+https://cdn-1.netplaygo.com.br/CARTOON_NETWORK/tracks-v1a1/mono.m3u8
+#EXTINF:-1 tvg-id="CartoonNetworkLatinAmerica.us@Brazil",Cartoon Network Latin America Brazil
+https://cdn-1.netplaygo.com.br/CARTOON_NETWORK/tracks-v1a3/mono.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkLatinAmerica.us@Brazil",Cartoon Network Latin America Brazil (720p) [Geo-blocked]
 http://15.204.246.24:8080/CartoonNetworkHD/index.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkLatinAmerica.us@NorthAtlantic",Cartoon Network Latin America North Atlantic (1080p)
@@ -741,9 +745,9 @@ https://qvc-amd-live.akamaized.net/hls/live/2034113/lsqvc6us/master.m3u8
 https://mumt05.tangotv.in/87NeALx2EWTN/index.m3u8
 #EXTINF:-1 tvg-id="EWTN.us@AfricaAsia",EWTN Africa-Asia (576p)
 https://samitaorigin.tangotv.in/EWTN/SAMITAORIGIN/index.m3u8
-#EXTINF:-1 tvg-id="EWTN.us@SpainLatinAmerica",EWTN Spain & Latin America (480p)
+#EXTINF:-1 tvg-id="EWTN.us@LatinAmerica",EWTN Latin America (480p)
 http://45.167.1.138:8000/play/a01m
-#EXTINF:-1 tvg-id="EWTN.us@SpainLatinAmerica",EWTN Spain & Latin America (480p)
+#EXTINF:-1 tvg-id="EWTN.us@LatinAmerica",EWTN Latin America (480p)
 http://45.228.234.9:8000/play/a06v/index.m3u8
 #EXTINF:-1 tvg-id="ExtremaTV.us@SD",Extrema TV (720p)
 http://livestreamcdn.net:1935/ExtremaTV/ExtremaTV/playlist.m3u8
@@ -759,6 +763,8 @@ https://securestream11.champds.com/LIVE/FultonCoGALIVE/FultonCoGALIVE.m3u8
 http://45.70.201.81:8000/play/a00x/index.m3u8
 #EXTINF:-1 tvg-id="FilmRiseClassicTV.us@SD",FilmRise Classic TV (720p)
 https://d2tv4k5moji5m7.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lu4pzh9l4b57p/master.m3u8
+#EXTINF:-1 tvg-id="FINTECHTV.us@HD",FINTECH.TV (1080p)
+https://ftv247iovescdn1.fintech.tv/hls/main.m3u8
 #EXTINF:-1 tvg-id="FlowersTVUSA.us@SD",Flowers TV USA (396p)
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/flowers_nim_https/050522/flowers/playlist.m3u8
 #EXTINF:-1 tvg-id="FMHKids.us@SD",FMH Kids (720p)
@@ -1293,6 +1299,8 @@ http://15.204.246.24:8080/MTVHD/index.m3u8
 https://streaming.onnethn.com/MTV/playlist.m3u8
 #EXTINF:-1 tvg-id="MTVLatinAmerica.us@Panregional",MTV Latin America
 http://181.78.79.131:8000/play/a0nc
+#EXTINF:-1 tvg-id="MTVLive.us@SD",MTV Live (1080p)
+http://23.237.104.106:8080/USA_MTV_LIVE/index.m3u8
 #EXTINF:-1 tvg-id="MuslimNetworkTV.us@SD",Muslim Network TV
 https://afghantv.app/hls2/muslimnetwork/index.m3u8
 #EXTINF:-1 tvg-id="NashuaETV.us@SD",Nashua ETV Channel 22 Nashua NH (720p)
@@ -1385,6 +1393,8 @@ https://tvsen6.aynaott.com/nfl/index.m3u8
 http://212.5.144.156:8080/nickjr/index.m3u8
 #EXTINF:-1 tvg-id="NickJr.us@East",Nick Jr. (720p)
 http://tvsen7.aynascope.net/nickjr/index.m3u8
+#EXTINF:-1 tvg-id="NickJr.us@East",Nick Jr. (720p) [Not 24/7]
+https://chunk.tvnow247.today/api/proxy/playlist?token=eyJjaGFubmVsSWQiOiIzMjkiLCJjaGFpbiI6InIyIiwidHMiOjE3OTU1Mzc2NjY0OTZ9
 #EXTINF:-1 tvg-id="NickJrLatinAmerica.us@Panregional",Nick Jr. Latin America (1080p)
 https://streaming.onnethn.com/NICK_JR/playlist.m3u8
 #EXTINF:-1 tvg-id="Nickelodeon.us@East",Nickelodeon
@@ -1554,6 +1564,8 @@ https://eu1.servers10.com:8081/8230/index.m3u8
 https://rally-tv-live.akamaized.net/hls/live/2117704/RallyTV-Pri/master.m3u8
 #EXTINF:-1 tvg-id="RealAmericasVoice.us@KPVMLD",Real America's Voice KPVM-LD (1080p)
 https://2-fss-2.streamhoster.com/pl_118/206858-4404454-1/playlist.m3u8
+#EXTINF:-1 tvg-id="RealLifeNetwork.us@HD",Real Life Network (1080p)
+https://300abc84139140e9b7942f8bfa6edc1a.mediatailor.us-west-2.amazonaws.com/v1/master/ba62fe743df0fe93366eba3a257d792884136c7f/LINEAR-1170-REALLIFENETWORK-FREECAST/mt/freecast/1170/hls/master/playlist.m3u8
 #EXTINF:-1 tvg-id="RetroTV.us@East",Retro TV (720p) [Geo-blocked]
 https://freecast-lukentvlive.vgcdn.net/out/v1/665e9f91614b43b0a0654e9317f1d9f3/index.m3u8
 #EXTINF:-1 tvg-id="RetroTV.us@East",Retro TV (720p) [Geo-blocked]

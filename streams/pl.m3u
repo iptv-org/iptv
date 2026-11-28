@@ -52,6 +52,8 @@ http://92.114.85.87:8019/play/a009/index.m3u8
 http://92.114.85.87:8017/play/a004/index.m3u8
 #EXTINF:-1 tvg-id="CBeebies.pl@SD",CBeebies (360p)
 https://gist.githubusercontent.com/xykt-fix/e01ce187bbad74d0a0c5a86e0fc1b885/raw/eb00491161b819c2321733e929a27aeb2972b416/cbeeb-stream.m3u8
+#EXTINF:-1 tvg-id="CrimePlusInvestigationPolsat.pl@SD",Crime + Investigation Polsat (1080p)
+http://185.227.34.179:8080/ci_polsat_hd/index.m3u8
 #EXTINF:-1 tvg-id="CrimePlusInvestigationPolsat.pl@SD",Crime + Investigation Polsat (576i)
 http://92.114.85.87:8015/play/a00d/index.m3u8
 #EXTINF:-1 tvg-id="DiscoPoloMusic.pl@SD",Disco Polo Music (1080p)
@@ -234,6 +236,10 @@ http://91.228.35.249:8001/1:0:1:C24:1E78:71:820000:0:0:0:
 http://57.128.210.196:8080/192/index.m3u8
 #EXTINF:-1 tvg-id="PolsatSportFight.pl@SD",Polsat Sport Fight
 http://92.114.85.87:8016/play/a00b/index.m3u8
+#EXTINF:-1 tvg-id="PolsatSportPremium1.pl@SD",Polsat Sport Premium 1
+http://46.149.222.219:18002/polsatsportpremium1
+#EXTINF:-1 tvg-id="PolsatSportPremium2.pl@SD",Polsat Sport Premium 2
+http://46.149.222.219:18002/polsatsportpremium2
 #EXTINF:-1 tvg-id="PolsatViasatExplore.pl@SD",Polsat Viasat Explore
 http://92.114.85.87:8014/play/a00g/index.m3u8
 #EXTINF:-1 tvg-id="PolsatViasatHistory.pl@SD",Polsat Viasat History (1080p)
@@ -336,16 +342,22 @@ http://92.114.85.87:8010/play/a00n/index.m3u8
 https://tvk.smnt.pl/memfs/cf3a66ef-133a-4579-86da-5995ab23ae2a.m3u8
 #EXTINF:-1 tvg-id="TVKStella.pl@SD",TVK Stella (576p)
 https://stream.tvkstella.pl/stella/stella.m3u8
+#EXTINF:-1 tvg-id="TVN.pl@SD",TVN (720p)
+http://91.226.96.110:5555/tvn/index.m3u8
 #EXTINF:-1 tvg-id="TVN.pl@SD",TVN [Not 24/7]
 https://bingbang.kotmiuaczek.workers.dev/?id=3342
 #EXTINF:-1 tvg-id="TVP1.pl@SD",TVP1 (1080p)
 http://91.226.96.110:5555/tvp1/index.m3u8
 #EXTINF:-1 tvg-id="TVP1.pl@SD",TVP1
 http://92.114.85.87:8009/play/a009/index.m3u8
+#EXTINF:-1 tvg-id="TVP2.pl@SD",TVP2
+http://46.149.222.219:18002/tvp2hd
 #EXTINF:-1 tvg-id="TVPPolonia.pl@SD",TVP Polonia (576p)
 https://n-5-2.eu.cdn-redge.media/livehls/oeu/mt/live/tvp_polonia/live.livx/playlist.m3u8
 #EXTINF:-1 tvg-id="TVPRozrywka.pl@SD",TVP Rozrywka (576p)
 http://185.227.34.179:8080/tvp-rozrywka/index.m3u8
+#EXTINF:-1 tvg-id="TVPSport.pl@SD",TVP Sport (720p)
+http://91.226.96.110:5555/tvpsport/index.m3u8
 #EXTINF:-1 tvg-id="TVPSport.pl@SD",TVP Sport (1080p) [Not 24/7]
 rtsp://213.189.46.75/wmt-14963-1.sdp
 #EXTINF:-1 tvg-id="TVS.pl@SD",TVS
