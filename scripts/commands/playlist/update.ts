@@ -6,7 +6,6 @@ import { Logger, Collection } from '@freearhey/core'
 import { Storage } from '@freearhey/storage-js'
 import { PlaylistParser } from '../../core'
 import * as sdk from '@iptv-org/sdk'
-import { sortStreams } from '../../core/sortStreams'
 
 const processedIssues = new Collection<Issue>()
 const skippedIssues = new Collection<Issue>()
@@ -69,7 +68,6 @@ async function saveStreams() {
   for (const filepath of groupedStreams.keys()) {
     let filteredStreams = new Collection<Stream>(groupedStreams.get(filepath))
     filteredStreams = filteredStreams.filter((stream: Stream) => stream.removed === false)
-    if (changedFiles.has(filepath)) filteredStreams = sortStreams(filteredStreams)
 
     const playlist = new Playlist(filteredStreams, { public: false, raw: true })
     await streamsStorage.save(filepath, playlist.toString())
